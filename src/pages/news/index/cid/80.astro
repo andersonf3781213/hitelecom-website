@@ -1,0 +1,32 @@
+---
+/**
+ * 新闻中心-行业资讯（英文）：/news/index/cid/80.html
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import NewsShell from '../../../../components/news/NewsShell.astro';
+import NewsList from '../../../../components/news/NewsList.astro';
+import { optimizedSrc } from '../../../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+    { '@type': 'ListItem', position: 2, name: 'News', item: 'https://www.hitelecom.com/news.html' },
+    { '@type': 'ListItem', position: 3, name: 'Industry News', item: 'https://www.hitelecom.com/news/index/cid/80.html' },
+  ],
+};
+const pageBanner = await optimizedSrc('news/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="en"
+  title="Industry News | IoT, 4G & NB-IoT Sensor Market Insights - Hitelecom"
+  description="Industry news on industrial IoT sensors, outdoor 4G and NB-IoT deployments, smart water, smart city and environmental monitoring trends tracked by Hitelecom."
+>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <NewsList locale="en" cat="ind" />
+  </NewsShell>
+</BaseLayout>

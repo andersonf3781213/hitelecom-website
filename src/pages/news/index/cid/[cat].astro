@@ -1,0 +1,40 @@
+---
+/**
+ * 新闻中心-成功案例/技术博客（英文）：/news/index/cid/{case|blog}.html
+ * 仅在对应内容集合有条目时生成（无内容不产出空页面，保持与原站 1:1）
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import NewsShell from '../../../../components/news/NewsShell.astro';
+import NewsList from '../../../../components/news/NewsList.astro';
+import { getExtraNewsCats, getNewsContent } from '../../../../data/news';
+import { optimizedSrc } from '../../../../utils/images';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = async () =>
+  (await getExtraNewsCats('en')).map((cat) => ({ params: { cat } }));
+
+const { cat } = Astro.params as { cat: 'case' | 'blog' };
+const d = await getNewsContent('en');
+const catName = d.catNames[cat];
+const pageBanner = await optimizedSrc('news/banner.jpg', { width: 1920, quality: 82 });
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+    { '@type': 'ListItem', position: 2, name: 'News', item: 'https://www.hitelecom.com/news.html' },
+    { '@type': 'ListItem', position: 3, name: catName, item: `https://www.hitelecom.com/news/index/cid/${cat}.html` },
+  ],
+};
+const desc =
+  cat === 'case'
+    ? 'Hitelecom success stories: outdoor 4G and NB-IoT sensor deployments in smart water, smart city, energy and industrial monitoring projects.'
+    : 'Hitelecom tech blog: engineering notes on industrial IoT sensors, low-power design, 4G/NB-IoT connectivity and large-scale deployments.';
+---
+
+<BaseLayout preloadImage={pageBanner} locale="en" title={`${catName} | Hitelecom Industrial IoT Sensors`} description={desc}>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <NewsList locale="en" cat={cat} />
+  </NewsShell>
+</BaseLayout>

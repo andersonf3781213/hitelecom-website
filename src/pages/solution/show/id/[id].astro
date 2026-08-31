@@ -1,0 +1,253 @@
+---
+/**
+ * 方案详情页（英文）：/solution/show/id/{id}.html
+ * 与原站 1:1：横幅 → 面包屑 → 方案介绍 → 拓扑图 → 方案特点 → 系统功能 → 相关产品 → 应用场景
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import SolutionShell from '../../../../components/solution/SolutionShell.astro';
+import ProductCard from '../../../../components/product/ProductCard.astro';
+import Img from '../../../../components/Img.astro';
+import { solutionDetails, solutionSeo } from '../../../../data/solution';
+import { productContent } from '../../../../data/product';
+import { l } from '../../../../i18n';
+import { optimizedSrc } from '../../../../utils/images';
+import { ORG_ID, SITE_URL } from '../../../../utils/jsonld';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = () =>
+  Object.keys(solutionDetails.en).map((id) => ({ params: { id } }));
+
+const { id } = Astro.params;
+const d = solutionDetails.en[id];
+const seo = solutionSeo.en[id];
+const banner = await optimizedSrc(d.banner, { width: 1920, quality: 82 });
+
+// 相关产品：290=GIS 定制卡、291=Digital Twin 定制卡（对应产品列表 256 的 nbd 卡）
+const custom256 = productContent.en.lists['256'].products;
+const allProducts = Object.values(productContent.en.lists).flatMap((x) => x.products);
+const relatedCards = d.related
+  .map((rid) => (rid === '290' ? custom256[1] : rid === '291' ? custom256[0] : allProducts.find((p) => p.id === rid)))
+  .filter(Boolean);
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Solution', item: 'https://www.hitelecom.com/solution.html' },
+    { '@type': 'ListItem', position: 3, name: seo.name },
+  ],
+};
+const pageUrl = `${SITE_URL}/solution/show/id/${id}.html`;
+const serviceLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${pageUrl}#service`,
+  name: seo.name,
+  description: seo.desc,
+  url: pageUrl,
+  serviceType: 'IoT Solution',
+  provider: { '@id': ORG_ID },
+  areaServed: 'Worldwide',
+  inLanguage: 'en',
+};
+---
+
+<BaseLayout locale="en" preloadImage={banner} title={seo.title} description={seo.desc}>
+  <SolutionShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify([breadcrumbLd, serviceLd])} />
+
+    {/* 横幅 */}
+    <div class="clearfix nybanner">
+      <div class="nybanner_img" style={`background-image:url(${banner});`}></div>
+    </div>
+
+    {/* 页面主标题（SEO/GEO：原站详情页无可见方案名标题，视觉隐藏 h1 不影响 1:1） */}
+    <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0">{seo.name} - Hitelecom IoT Solution</h1>
+
+    {/* 面包屑 + 返回 */}
+    <div class="clearfix so_info_1">
+      <div class="indexmid">
+        <div class="so_info_1_mid reveal">
+          <div class="so_info_1_mid_left">
+            <a href={l('/', 'en')}>Home</a> / <span>Solution</span>
+          </div>
+          <div class="so_info_1_mid_right">
+            <a href={l('/solution/', 'en')}>Return</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* 方案介绍 */}
+    <div class="clearfix so_info_2">
+      <div class="indexmid">
+        <div class="clearfix so_1_1">
+          <ul>
+            <li style="margin-top:0"></li>
+            {d.intro.map((sec) => (
+              <li class="reveal">
+                <div class="so_1_1_mid">
+                  <div class="so_1_1_mid_left">
+                    <Img src={sec.img} alt={sec.h} widths={[640, 960, 1280]} sizes="(max-width: 810px) 100vw, 56vw" quality={82} />
+                  </div>
+                  <div class="so_1_1_mid_right">
+                    <div class="cell_mid"><div class="cell_h">
+                      <div class="so_1_1_mid_right_mid">
+                        <div class="so_1_1_mid_right_mid_1 reveal"></div>
+                        <div class="so_1_1_mid_right_mid_2 reveal">{sec.h}</div>
+                        <div class="so_1_1_mid_right_mid_3 reveal">{sec.p}</div>
+                      </div>
+                    </div></div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {/* 方案拓扑图 */}
+    <div class="clearfix so_info_3">
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.archHeading}</div>
+        <div class="clearfix so_info_3_1 reveal"></div>
+        <div class="clearfix so_info_3_2 reveal">
+          {d.archImgs.map((img, i) => (
+            <Img src={img} alt={`${seo.name} ${d.archHeading}`} class={i === 0 ? 'on' : ''}
+              widths={[800, 1200, 1600]} sizes="(max-width: 810px) 96vw, 76vw" quality={92} />
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* 方案特点 */}
+    <div class="clearfix so_info_4">
+      <div class="indexmid">
+        <div class="index_1_1 textw reveal">{d.featHeading}</div>
+        <div class="clearfix so_info_4_1">
+          <ul>
+            {d.features.map((f, i) => (
+              <li class="reveal">
+                <div class="so_info_4_1_mid">
+                  <div class="so_info_4_1_mid_left"><span>{String(i + 1).padStart(2, '0')}.</span></div>
+                  <div class="so_info_4_1_mid_right">
+                    <div class="so_info_4_1_mid_right_1">{f.h}</div>
+                    <div class="so_info_4_1_mid_right_2">{f.p}</div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {/* 系统功能 */}
+    <div class="clearfix so_info_5">
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.sysHeading}</div>
+        <div class="clearfix xtgnlist">
+          <ul>
+            {d.system.map((s) => (
+              <li class="reveal">
+                <div class="xtgnlist_mid">
+                  <div class="xtgnlist_mid_left">
+                    <Img src={s.img} alt={s.h} natural loading="lazy" />
+                  </div>
+                  <div class="xtgnlist_mid_right">
+                    <div class="xtgnlist_mid_right_1">{s.h}</div>
+                    <div class="xtgnlist_mid_right_2">{s.p}</div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {/* 相关产品推荐 */}
+    <div class="clearfix so_info_5">
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.relHeading}</div>
+        <div class="clearfix so_info_5_1 reveal">
+          <div class="pro_2_mid_right_1">
+            <ul class="pro_rel_track" id="rel-track">
+              {relatedCards.map((p) => p && <ProductCard locale="en" product={p} />)}
+            </ul>
+            <div class="pro_rel_pag" id="rel-pag"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* 应用场景（横滑） */}
+    <div class="clearfix so_info_6">
+      <div class="index_2_top">
+        <Img src="common/wave.png" alt="" width={1920} height={256} />
+      </div>
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.scenHeading}</div>
+        <div class="clearfix so_info_6_1 reveal">
+          <div class="sol_scen_track" id="scen-track">
+            {d.scenarios.map((s) => (
+              <div class="sol_scen_item">
+                <div class="so_info_6_1_mid">
+                  <div class="so_info_6_1_mid_1">
+                    <Img src={s.img} alt={s.h} widths={[400, 640, 900]} sizes="(max-width: 810px) 46vw, 30vw" quality={82} />
+                  </div>
+                  <div class="so_info_6_1_mid_2">
+                    <div class="so_info_6_1_mid_2_1">{s.h}</div>
+                    <div class="so_info_6_1_mid_2_2">{s.p}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div class="so_info_6_1_left css3" id="scen-l"><span></span></div>
+          <div class="so_info_6_1_right css3" id="scen-r"><span></span></div>
+        </div>
+      </div>
+    </div>
+  </SolutionShell>
+</BaseLayout>
+
+<script>
+  // 横滑轨（相关产品 + 应用场景）：按单张步进，复刻原站 Swiper slidesPerGroup:1 行为
+  const setupTrack = (track: HTMLElement | null, pag: HTMLElement | null) => {
+    if (!track) return { goTo: (_i: number) => {}, curIdx: () => 0 };
+    const gap = () => parseFloat(getComputedStyle(track).gap) || 20;
+    const step = () => (track.children[0] as HTMLElement).getBoundingClientRect().width + gap();
+    const perView = () => Math.max(1, Math.round((track.clientWidth + gap()) / step()));
+    const maxIdx = () => Math.max(0, track.children.length - perView());
+    const goTo = (i: number) => {
+      const idx = Math.max(0, Math.min(i, maxIdx()));
+      track.scrollTo({ left: idx * step(), behavior: 'smooth' });
+    };
+    const curIdx = () => Math.round(track.scrollLeft / step());
+    if (pag) {
+      const buildDots = () => {
+        pag.innerHTML = '';
+        for (let i = 0; i <= maxIdx(); i++) {
+          const dot = document.createElement('span');
+          if (i === Math.min(curIdx(), maxIdx())) dot.classList.add('on');
+          dot.addEventListener('click', () => goTo(i));
+          pag.appendChild(dot);
+        }
+      };
+      buildDots();
+      window.addEventListener('resize', buildDots);
+      track.addEventListener('scroll', () => {
+        const i = Math.min(curIdx(), maxIdx());
+        pag.querySelectorAll('span').forEach((d, k) => d.classList.toggle('on', k === i));
+      }, { passive: true });
+    }
+    return { goTo, curIdx };
+  };
+  setupTrack(document.getElementById('rel-track'), document.getElementById('rel-pag'));
+  const scenTrack = setupTrack(document.getElementById('scen-track'), null);
+  document.getElementById('scen-l')?.addEventListener('click', () => scenTrack.goTo(scenTrack.curIdx() - 1));
+  document.getElementById('scen-r')?.addEventListener('click', () => scenTrack.goTo(scenTrack.curIdx() + 1));
+</script>

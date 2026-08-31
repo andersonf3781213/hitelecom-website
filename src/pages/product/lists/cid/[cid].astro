@@ -1,0 +1,91 @@
+---
+/**
+ * 产品列表页（英文）：/product/lists/cid/{cid}.html
+ * 覆盖 4 个主分类 + 14 个子分类，数据见 src/data/product.ts
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import ProductShell from '../../../../components/product/ProductShell.astro';
+import CategoryTabs from '../../../../components/product/CategoryTabs.astro';
+import ListSidebar from '../../../../components/product/ListSidebar.astro';
+import ProductCard from '../../../../components/product/ProductCard.astro';
+import { productContent, listParent, productTabs, listSeo, productPath, getMergedProducts } from '../../../../data/product';
+import { optimizedSrc } from '../../../../utils/images';
+import { l } from '../../../../i18n';
+import { breadcrumbLd, itemListLd, SITE_URL } from '../../../../utils/jsonld';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = () =>
+  Object.keys(productContent.en.lists).map((cid) => ({ params: { cid } }));
+
+const { cid } = Astro.params;
+const pc = await getMergedProducts('en');
+const page = pc.lists[cid];
+const parent = listParent[cid];
+const tabLabel = productTabs.en.find((t) => t.key === parent)?.label ?? 'Products';
+const subLabel = page.subcats.find((s) => s.cid === cid && s.name !== 'All')?.name;
+const pageTitle = subLabel
+  ? `${subLabel} - ${tabLabel} | Hitelecom Industrial IoT Sensors`
+  : `${tabLabel} | Outdoor 4G & NB-IoT IoT Products - Hitelecom`;
+const pageDesc = subLabel
+  ? `Hitelecom ${subLabel.toLowerCase()} products: outdoor 4G and NB-IoT industrial IoT sensor terminals with IoT cloud integration, OEM/ODM supported.`
+  : `Hitelecom ${tabLabel}: industrial IoT sensor terminals, outdoor 4G & NB-IoT connectivity, IoT cloud integration and OEM/ODM customization.`;
+const seoOverride = listSeo.en[cid];
+const banner = await optimizedSrc(page.bannerImg, { width: 1920 });
+// 侧栏用：各子分类 → 其产品（传感器名称，直达详情页）
+const enLists = pc.lists;
+const sideProds = Object.fromEntries(
+  page.subcats.map((s) => [s.cid, (enLists[s.cid]?.products ?? []).map((p) => ({ id: p.id, name: p.name }))])
+);
+
+// GEO：面包屑 + 产品清单语义化（无详情页的定制条目不进入 ItemList）
+const catName = subLabel ?? tabLabel;
+const pageUrl = `${SITE_URL}/product/lists/cid/${cid}.html`;
+const bcLd = breadcrumbLd([
+  { name: 'Home', url: `${SITE_URL}/` },
+  { name: 'Product', url: `${SITE_URL}/product.html` },
+  ...(subLabel ? [{ name: tabLabel, url: `${SITE_URL}/product/lists/cid/${parent}.html` }] : []),
+  { name: catName },
+]);
+const listLd = itemListLd(
+  page.products.filter((p) => p.id).map((p) => ({ name: p.name, url: `${SITE_URL}${l(productPath(p.id), 'en')}` })),
+  pageUrl,
+  `Hitelecom ${catName}`,
+);
+---
+
+<BaseLayout locale="en" preloadImage={banner} title={seoOverride?.title ?? pageTitle} description={seoOverride?.desc ?? pageDesc}>
+  <ProductShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify([bcLd, listLd])} />
+    <h1 class="sr-only">{subLabel ?? tabLabel}</h1>
+    {/* 内页横幅（纯图片，与原站一致无文字） */}
+    <div class="clearfix nybanner">
+      <div class="nybanner_img" style={`background-image:url(${banner});background-position:center top;`}></div>
+      <div class="nybanner_jj">
+        <div class="cell_mid"><div class="cell_h"><div class="indexmid">
+          <div class="nybanner_jj_mid">
+            <div class="nybanner_jj_mid_1 reveal"></div>
+            <div class="nybanner_jj_mid_2 reveal"></div>
+          </div>
+        </div></div></div>
+      </div>
+      <div id="cate"></div>
+    </div>
+
+    <CategoryTabs locale="en" active={parent} />
+
+    <div class="clearfix pro_2">
+      <div class="indexmid">
+        <div class="pro_2_mid">
+          <ListSidebar locale="en" subcats={page.subcats} sideProds={sideProds} parentCid={parent} />
+          <div class="pro_2_mid_right">
+            <div class="clearfix pro_2_mid_right_2">
+              <ul class={`hi${cid}`}>
+                {page.products.map((p) => <ProductCard locale="en" product={p} />)}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ProductShell>
+</BaseLayout>

@@ -1,0 +1,32 @@
+---
+/**
+ * 支持服务页（中文，第 2 页）：/zh/service/page/2.html
+ * 与原站 /zh.php/service?page=2 一致：文档下载区为第 2 页卡片（3 张），分页 2 高亮
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import ServiceShell from '../../../../components/service/ServiceShell.astro';
+import ServiceBody from '../../../../components/service/ServiceBody.astro';
+import { optimizedSrc } from '../../../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh.html' },
+    { '@type': 'ListItem', position: 2, name: '支持服务', item: 'https://www.hitelecom.com/zh/service.html' },
+  ],
+};
+const pageBanner = await optimizedSrc('service/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="zh"
+  title="文档下载 | 物联网传感器产品彩页 - 宏太智慧"
+  description="下载宏太智慧物联网传感器产品资料：雷达测距、温度、压力传感器彩页，覆盖户外4G与NB-IoT监测方案，支持宏太云平台集成。"
+>
+  <ServiceShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <ServiceBody locale="zh" page={2} />
+  </ServiceShell>
+</BaseLayout>

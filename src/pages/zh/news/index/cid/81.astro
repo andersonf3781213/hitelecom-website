@@ -1,0 +1,32 @@
+---
+/**
+ * 新闻中心-展会信息（中文）：/zh/news/index/cid/81.html
+ */
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import NewsShell from '../../../../../components/news/NewsShell.astro';
+import NewsList from '../../../../../components/news/NewsList.astro';
+import { optimizedSrc } from '../../../../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh.html' },
+    { '@type': 'ListItem', position: 2, name: '新闻中心', item: 'https://www.hitelecom.com/zh/news.html' },
+    { '@type': 'ListItem', position: 3, name: '展会信息', item: 'https://www.hitelecom.com/zh/news/index/cid/81.html' },
+  ],
+};
+const pageBanner = await optimizedSrc('news/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="zh"
+  title="展会信息 | 物联网展会与行业活动动态 - 宏太智慧"
+  description="宏太智慧展会信息：IOTE 国际物联网展等行业展会动态，展示户外4G、NB-IoT 传感器与宏太云平台。"
+>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <NewsList locale="zh" cat="exh" />
+  </NewsShell>
+</BaseLayout>

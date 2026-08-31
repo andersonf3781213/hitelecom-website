@@ -1,0 +1,84 @@
+---
+/**
+ * 解决方案列表页（中文，第 2 页）：/zh/solution/page/2.html
+ * 与原站 /zh.php/solution?page=2 一致：66 智慧景区 + 67 智慧水务
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import SolutionShell from '../../../../components/solution/SolutionShell.astro';
+import Img from '../../../../components/Img.astro';
+import { solutionIndex } from '../../../../data/solution';
+import { l } from '../../../../i18n';
+import { optimizedSrc } from '../../../../utils/images';
+import { breadcrumbLd, SITE_URL } from '../../../../utils/jsonld';
+
+const d = solutionIndex.zh;
+const banner = await optimizedSrc(d.bannerImg, { width: 1920, quality: 82 });
+const cards = d.cards.slice(6);
+const bcLd = breadcrumbLd([
+  { name: '首页', url: `${SITE_URL}/zh.html` },
+  { name: '解决方案', url: `${SITE_URL}/zh/solution.html` },
+  { name: '第2页' },
+]);
+---
+
+<BaseLayout
+  locale="zh"
+  preloadImage={banner}
+  title="物联网解决方案 | 智慧景区、智慧水务 - 宏太智慧"
+  description="宏太智慧物联网解决方案：基于户外4G传感器与NB-IoT传感终端，覆盖智慧景区（文物姿态监测、烟雾告警、客流分析）与智慧水务（水位监测、泄漏检测、水质安全），支持IoT云平台集成。"
+>
+  <SolutionShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(bcLd)} />
+    {/* 全屏横幅 */}
+    <div class="clearfix nybanner">
+      <div class="nybanner_img" style={`background-image:url(${banner});`}></div>
+      <div class="nybanner_jj">
+        <div class="cell_mid"><div class="cell_h"><div class="indexmid">
+          <div class="nybanner_jj_mid">
+            <div class="nybanner_jj_mid_1 reveal">{d.bannerSub}</div>
+            <h1 class="nybanner_jj_mid_2 reveal">{d.bannerTitle}</h1>
+          </div>
+        </div></div></div>
+      </div>
+    </div>
+
+    {/* 方案卡片（左右交替） */}
+    <div class="clearfix so_1">
+      <div class="indexmid">
+        <div class="clearfix so_1_1">
+          <ul>
+            {cards.map((c) => (
+              <li class="reveal">
+                <a href={l(`/solution/show/id/${c.id}`, 'zh')}>
+                  <div class="so_1_1_mid">
+                    <div class="so_1_1_mid_left">
+                      <Img src={c.img} alt={c.title} widths={[560, 900]} sizes="(max-width: 810px) 100vw, 42vw" quality={82} loading="lazy" />
+                    </div>
+                    <div class="so_1_1_mid_right">
+                      <div class="cell_mid"><div class="cell_h">
+                        <div class="so_1_1_mid_right_mid">
+                          <div class="so_1_1_mid_right_mid_1 reveal">SOLUTION</div>
+                          <div class="so_1_1_mid_right_mid_2 reveal">{c.title}</div>
+                          <div class="so_1_1_mid_right_mid_3 reveal">{c.desc}</div>
+                        </div>
+                      </div></div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        {/* 分页（与原站一致：第 2 页激活，第 1 页可点） */}
+        <div class="clearfix pro_2_mid_right_3 reveal">
+          <ul class="pagination">
+            <li><a href={l('/solution/', 'zh')}>&laquo;</a></li>
+            <li><a href={l('/solution/', 'zh')}>1</a></li>
+            <li class="active"><span>2</span></li>
+            <li class="disabled"><span>&raquo;</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </SolutionShell>
+</BaseLayout>
