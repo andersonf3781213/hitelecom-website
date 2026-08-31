@@ -1,0 +1,108 @@
+---
+/**
+ * 关于我们 - 联系我们（纯静态，verbatim HTML）
+ */
+import { getAboutSection } from '../../data/about';
+import { enhanceContentHtml, normalizeBody } from '../../utils/content';
+import { site } from '../../data/site';
+import type { Locale } from '../../i18n';
+import markerImg from '../../assets/images/content/about/img49.png';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+---
+
+<Fragment set:html={await enhanceContentHtml(normalizeBody(await getAboutSection(locale, 'contact')), 'About Hitelecom')} />
+
+<Fragment slot="head">
+  <!-- 高德地图 v1.3（与原站一致，同步加载：该旧版 API 内部用 document.write 注入资源，异步加载会失效）。
+       Key 在 src/data/site.ts 的 amapKey 配置；未配置则不加载地图脚本。 -->
+  {site.amapKey ? (
+    <Fragment>
+      <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main.css?v=1.0" />
+      <script is:inline src={`https://webapi.amap.com/maps?v=1.3&key=${site.amapKey}&plugin=AMap.ToolBar`}></script>
+    </Fragment>
+  ) : null}
+</Fragment>
+
+<script is:inline define:vars={{ mapLang: locale === 'zh' ? 'zh_cn' : 'en', markerIcon: markerImg.src, hasKey: !!site.amapKey, addrText: locale === 'zh' ? '上海市松江区车阳路116号1幢2层' : '2nd Floor, Building 1, No. 116 Cheyang Road, Songjiang District, Shanghai' }}>
+window.addEventListener('load', function () {
+  var canvas = document.getElementById('map_canvas');
+  if (!canvas) return;
+  if (!hasKey || typeof AMap === 'undefined') {
+    // 未配置高德 Key：静态地址卡降级，版式与地图容器一致，不出现空白灰块
+    canvas.style.cssText += ';display:flex;align-items:center;justify-content:center;background:#f2f5f9;color:#3a4a5f;font-size:15px;line-height:1.8;text-align:center;padding:20px;box-sizing:border-box;';
+    canvas.textContent = addrText;
+    return;
+  }
+  try {
+    var map = new AMap.Map('map_canvas', { zoom: 16, scrollWheel: false, center: ['121.288993', '30.986739'], lang: mapLang });
+    var marker = new AMap.Marker({ map: map, position: ['121.288993', '30.986739'], icon: markerIcon });
+    map.setCenter(marker.getPosition());
+    map.addControl(new AMap.ToolBar());
+  } catch (e) {}
+});
+</script>
+
+<script is:inline define:vars={{
+  mailTo: 'sales@hitelecom.com',
+  formEndpoint: site.formEndpoint,
+  thanksUrl: locale === 'zh' ? '/zh/about/thanks.html' : '/about/thanks.html',
+  msgName: locale === 'zh' ? '姓名不能为空' : 'Name cannot be empty',
+  msgPhone: locale === 'zh' ? '电话不能为空' : 'Phone cannot be empty',
+  msgEmail: locale === 'zh' ? '邮箱不能为空' : 'Email cannot be empty',
+  msgFail: locale === 'zh' ? '提交失败，请稍后再试或直接发邮件至 sales@hitelecom.com' : 'Submission failed. Please retry or email sales@hitelecom.com directly.',
+  mailSubject: locale === 'zh' ? '【在线留言】' : 'Website Feedback - ',
+  labels: locale === 'zh'
+    ? ['姓名', '电话', '邮箱', '留言']
+    : ['Name', 'Phone', 'Email', 'Message'],
+}}>
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('form1');
+  if (!form) return;
+  function val(id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; }
+  /* 双模式提交：
+     1) site.ts 配置了 formEndpoint（Web3Forms/Formspree）→ fetch 真实发送，成功跳感谢页；
+     2) 未配置 → mailto 回退，打开访客邮件客户端（功能不缺失、无死链）。 */
+  window.showAddr = function () {
+    if (!val('name')) { alert(msgName); return false; }
+    if (!val('phone')) { alert(msgPhone); return false; }
+    if (!val('email')) { alert(msgEmail); return false; }
+    var lines = [
+      labels[0] + ': ' + val('name'),
+      labels[1] + ': ' + val('phone'),
+      labels[2] + ': ' + val('email'),
+      labels[3] + ': ' + val('message'),
+    ];
+    if (val('company')) lines.unshift('Company: ' + val('company'));
+    if (val('types')) lines.push('Intentions: ' + val('types'));
+    if (formEndpoint) {
+      var fd = new FormData();
+      fd.append('subject', mailSubject + val('name'));
+      fd.append('from_name', val('name'));
+      fd.append('name', val('name'));
+      fd.append('phone', val('phone'));
+      fd.append('email', val('email'));
+      fd.append('message', lines.join('\n'));
+      fetch(formEndpoint, { method: 'POST', body: fd, headers: { Accept: 'application/json' } })
+        .then(function (r) { window.location.href = r.ok ? thanksUrl : thanksUrl + '?sent=0'; })
+        .catch(function () { alert(msgFail); });
+      return false;
+    }
+    var href = 'mailto:' + mailTo
+      + '?subject=' + encodeURIComponent(mailSubject + val('name'))
+      + '&body=' + encodeURIComponent(lines.join('\n'));
+    window.location.href = href;
+    return false;
+  };
+  /* Intentions 单选（partner 页） */
+  document.querySelectorAll('.pa_5_1 ul li dl dd').forEach(function (dd) {
+    dd.addEventListener('click', function () {
+      dd.classList.add('on');
+      Array.prototype.forEach.call(dd.parentElement.children, function (x) { if (x !== dd) x.classList.remove('on'); });
+      var t = document.getElementById('types');
+      if (t) t.value = dd.getAttribute('lang') || '';
+    });
+  });
+});
+</script>

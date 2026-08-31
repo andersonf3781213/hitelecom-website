@@ -1,0 +1,32 @@
+---
+/**
+ * 支持服务页（中文，第 1 页）：/zh/service.html
+ * 与原站中文 1:1：横幅 + 锚点选项卡 + 技术支持六卡 + 软件下载 + 文档下载（8 卡 + 分页）+ 售后表单
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ServiceShell from '../../components/service/ServiceShell.astro';
+import ServiceBody from '../../components/service/ServiceBody.astro';
+import { optimizedSrc } from '../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh.html' },
+    { '@type': 'ListItem', position: 2, name: '支持服务', item: 'https://www.hitelecom.com/zh/service.html' },
+  ],
+};
+const pageBanner = await optimizedSrc('service/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="zh"
+  title="支持服务 | 软硬件定制、宏太云平台与售后服务 - 宏太智慧"
+  description="宏太智慧支持服务：工业物联网传感器软硬件定制，宏太云平台远程配置与告警推送，产品彩页文档下载与快速响应售后服务，支撑户外4G与NB-IoT项目落地。"
+>
+  <ServiceShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <ServiceBody locale="zh" page={1} />
+  </ServiceShell>
+</BaseLayout>

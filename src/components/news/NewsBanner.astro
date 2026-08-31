@@ -1,0 +1,27 @@
+---
+/**
+ * 新闻中心横幅（中英共用）：中文站原站多一行小字"新闻中心"（h1），英文站仅 NEWS CENTER
+ */
+import { getNewsContent } from '../../data/news';
+import { optimizedSrc } from '../../utils/images';
+import type { Locale } from '../../i18n';
+
+interface Props { locale: Locale; heading?: boolean }
+const { locale, heading = true } = Astro.props;
+const d = await getNewsContent(locale);
+const banner = await optimizedSrc(d.bannerImg, { width: 1920, quality: 82 });
+---
+
+<div class="clearfix nybanner">
+  <div class="nybanner_img" style={`background-image:url(${banner});`}></div>
+  <div class="nybanner_jj">
+    <div class="cell_mid"><div class="cell_h"><div class="indexmid">
+      <div class="nybanner_jj_mid">
+        {d.bannerSub
+          ? <>{heading ? <h1 class="nybanner_jj_mid_1 reveal">{d.bannerSub}</h1> : <div class="nybanner_jj_mid_1 reveal">{d.bannerSub}</div>}<div class="nybanner_jj_mid_2 reveal">{d.bannerTitle}</div></>
+          : (heading ? <h1 class="nybanner_jj_mid_2 reveal">{d.bannerTitle}</h1> : <div class="nybanner_jj_mid_2 reveal">{d.bannerTitle}</div>)}
+      </div>
+    </div></div></div>
+  </div>
+  <div id="cate"></div>
+</div>

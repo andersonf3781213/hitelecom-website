@@ -1,0 +1,196 @@
+---
+/**
+ * 全站基础布局：SEO Head + Header + Footer + 浮动联系栏
+ * 纯静态 HTML 输出，不依赖客户端渲染，爬虫可读全部内容。
+ */
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { site, defaultSeo } from '../data/site';
+import { htmlLang, alternateUrl, type Locale } from '../i18n';
+
+interface Props {
+  locale: Locale;
+  title?: string;
+  description?: string;
+  keywords?: string;
+  /** 首屏关键图（构建期优化后的地址），用于 preload 加速首屏 */
+  preloadImage?: string;
+  /** 浅色页面：头部始终使用实色样式（不随滚动切换） */
+  headerSolid?: boolean;
+  /** 自定义 robots（如感谢页 'noindex, follow'）；缺省不输出，走搜索引擎默认 */
+  robots?: string;
+}
+
+const { locale, title, description, keywords, preloadImage, headerSolid = false, robots } = Astro.props;
+const seo = defaultSeo[locale];
+// SEO 长度收敛（验收报告：67 页 description >160、24 页 title >70）：
+// 超长时在词边界截断并补省略号，避免被 Google 截在中途；CJK 按字符截断。
+// 注意按 HTML 转义后的长度计算（& → &amp; 会让渲染结果变长）。
+const escLen = (x: string) =>
+  x.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').length;
+const clampSeo = (s: string, max: number) => {
+  if (escLen(s) <= max) return s;
+  let cut = s;
+  while (cut.length && escLen(cut) + 1 > max) cut = cut.slice(0, -1);
+  const sp = cut.lastIndexOf(' ');
+  if (sp > cut.length * 0.6) cut = cut.slice(0, sp);
+  cut = cut.replace(/[\s,;:、，；：·—-]+$/, '');
+  while (cut.length && escLen(cut) + 1 > max) cut = cut.slice(0, -1);
+  return cut + '…';
+};
+const pageTitle = clampSeo(title ?? seo.title, 70);
+const pageDesc = clampSeo(description ?? seo.description, locale === 'zh' ? 90 : 158);
+const pageKeywords = keywords ?? seo.keywords;
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const altLocale: Locale = locale === 'en' ? 'zh' : 'en';
+const altUrl = new URL(alternateUrl(Astro.url.pathname, altLocale), Astro.site).href;
+const ogImage = new URL('/images/og-cover.jpg', Astro.site).href;
+
+// 结构化数据（GEO/SEO 核心）：Organization + WebSite 实体图
+// Organization 字段按客户确认的核心词条文档书写：主打户外/工业 4G + NB-IoT
+// 传感终端（50+ 配置），LoRa/LoRaWAN 为部分型号与私有化部署的辅助能力。
+// knowsAbout 帮助搜索引擎与 AI 答案引擎建立实体领域认知。
+const orgId = 'https://www.hitelecom.com/#organization';
+const siteJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': orgId,
+      name: 'Hitelecom',
+      alternateName: [site.companyEn, site.companyZh],
+      url: 'https://www.hitelecom.com/',
+      logo: new URL('/assets/img/icon-512.png', Astro.site).href,
+      description: seo.description,
+      email: site.emailLd,
+      telephone: site.phone,
+      foundingDate: '2012',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '2nd Floor, Building 1, No. 116 Cheyang Road',
+        addressLocality: 'Songjiang District, Shanghai',
+        addressCountry: 'CN',
+      },
+      areaServed: 'Worldwide',
+      hasCredential: [
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Quality Management System Certification', name: 'ISO 9001' },
+        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Quality Management System Certification', name: 'IATF 16949' },
+      ],
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Industrial IoT Sensors & Solutions',
+        url: 'https://www.hitelecom.com/product.html',
+      },
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: site.phone,
+        email: site.emailLd,
+        contactType: 'sales',
+        areaServed: 'Worldwide',
+        availableLanguage: ['English', 'Chinese'],
+      },
+      knowsAbout: [
+        'industrial IoT sensor terminals',
+        'cellular IoT sensors',
+        '4G and NB-IoT sensing',
+        'LoRa and LoRaWAN sensor networks',
+        'temperature and humidity sensors and data loggers',
+        'air quality, TVOC and custom gas sensing',
+        'wireless pressure sensors',
+        'soil moisture, temperature, EC and NPK sensors',
+        'tilt and vibration monitoring',
+        'radar level and distance monitoring',
+        'asset tracking sensors',
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.hitelecom.com/#website',
+      url: 'https://www.hitelecom.com/',
+      name: 'Hitelecom',
+      publisher: { '@id': orgId },
+      inLanguage: ['en', 'zh-CN'],
+    },
+  ],
+};
+---
+
+<!doctype html>
+<html lang={htmlLang[locale]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDesc} />
+    <meta name="keywords" content={pageKeywords} />
+    <meta name="format-detection" content="telephone=no" />
+    {robots && <meta name="robots" content={robots} />}
+
+    <!-- 规范地址 + 多语言互链（Google SEO 核心） -->
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={htmlLang[locale]} href={canonical} />
+    <link rel="alternate" hreflang={htmlLang[altLocale]} href={altUrl} />
+    <link rel="alternate" hreflang="x-default" href={new URL(alternateUrl(Astro.url.pathname, 'en'), Astro.site).href} />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.companyEn} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDesc} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDesc} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- 字体：本地自托管子集（与原站一致 Poppins + 阿里巴巴普惠体），
+         零第三方请求、不阻塞渲染；中文页额外预载普惠体子集 -->
+    <link rel="preload" href="/fonts/Poppins-Medium-subset.woff2" as="font" type="font/woff2" crossorigin />
+    {locale === 'zh' && (
+      <link rel="preload" href="/fonts/Alibaba-PuHuiTi-R-subset.woff2" as="font" type="font/woff2" crossorigin />
+    )}
+
+    <!-- 首屏关键大图 preload：黄金 3 秒 -->
+    {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
+
+    <!-- 结构化数据：企业 + 站点实体 -->
+    <script type="application/ld+json" set:html={JSON.stringify(siteJsonLd)} />
+
+    <!-- JS 可用标记：无 JS 时所有内容依然完整可见 -->
+    <script is:inline>
+      document.documentElement.classList.add('js');
+    </script>
+    <slot name="head" />
+  </head>
+  <body>
+    <Header locale={locale} solid={headerSolid} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer locale={locale} />
+    <Sidebar locale={locale} />
+
+    <!-- 全站交互脚本：原生 JS、按需 deferred，不影响首屏 -->
+    <script>
+      // —— 滚动渐入（IntersectionObserver，仅增强不影响内容呈现）——
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              e.target.classList.add('in');
+              io.unobserve(e.target);
+            }
+          }
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -6% 0px' },
+      );
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>

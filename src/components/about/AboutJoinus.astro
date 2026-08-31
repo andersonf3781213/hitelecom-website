@@ -1,0 +1,51 @@
+---
+/**
+ * 关于我们 - 加入我们：员工风采居中轮播(#abl/#abr) + 点击弹相册灯箱(jobmask) + 招聘职位手风琴
+ */
+import { getAboutSection } from '../../data/about';
+import { enhanceContentHtml, normalizeBody } from '../../utils/content';
+import type { Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+---
+
+<Fragment set:html={await enhanceContentHtml(normalizeBody(await getAboutSection(locale, 'joinus')), 'About Hitelecom')} />
+
+<script is:inline>
+document.addEventListener('DOMContentLoaded', function () {
+  /* 员工风采：居中 + 循环（slide 宽度由 CSS 控制，原站 speed:1000） */
+  __car('.jo_2_1 .swiper-container-banner2d', { nav: ['#abl', '#abr'], loop: true, centered: true, speed: 1000 });
+
+  /* 相册灯箱：点击 showphotos，读取隐藏列表；空列表不弹出（与原站一致） */
+  var mask = document.querySelector('.jobmask');
+  var maskWrap = mask ? mask.querySelector('.swiper-container-banner2d222 .swiper-wrapper') : null;
+  var maskCar = null;
+  document.querySelectorAll('.showphotos').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var box = document.getElementById(el.getAttribute('data-id'));
+      if (!box || !box.innerHTML.trim()) return false;
+      maskWrap.innerHTML = box.innerHTML;
+      mask.style.display = 'block';
+      document.body.classList.add('ovh');
+      maskCar = __car('.swiper-container-banner2d222', { nav: ['#abl222', '#abr222'], centered: true, perView: 1, speed: 1000 });
+    });
+  });
+  var closeBtn = mask ? mask.querySelector('.jobmask_close') : null;
+  if (closeBtn) closeBtn.addEventListener('click', function () {
+    mask.style.display = 'none';
+    document.body.classList.remove('ovh');
+    maskWrap.innerHTML = '';
+  });
+
+  /* 招聘职位手风琴：点击 li 切换 .on，互斥 */
+  document.querySelectorAll('.jo_3_2 ul li').forEach(function (li) {
+    var head = li.querySelector('.jo_3_2_mid:not(.jjcon)') || li;
+    head.addEventListener('click', function () {
+      var on = li.classList.contains('on');
+      document.querySelectorAll('.jo_3_2 ul li.on').forEach(function (x) { x.classList.remove('on'); });
+      if (!on) li.classList.add('on');
+    });
+  });
+});
+</script>

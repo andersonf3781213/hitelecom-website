@@ -1,0 +1,13 @@
+---
+/**
+ * 支持服务页面外壳：产品区公共样式 + 支持服务专属样式，包进 .pclone 作用域
+ * 用法：<BaseLayout><ServiceShell> ...支持服务页内容... </ServiceShell></BaseLayout>
+ */
+import '../../styles/product.css';
+import '../../styles/service.css';
+---
+
+<slot name="head" slot="head" />
+<div class="pclone">
+  <slot />
+</div>

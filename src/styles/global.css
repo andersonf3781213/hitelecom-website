@@ -1,0 +1,159 @@
+/* ============================================================
+   Hitelecom 全站基础样式
+   设计令牌与原站一致：主色 #2790e5，深色底 #121c2b
+   ============================================================ */
+
+/* ============================================================
+   自托管字体（与原站一致）
+   - Poppins Medium：英文/数字展示标题（原站同款字重 500，粗体由浏览器合成）
+   - Alibaba PuHuiTi R：全站正文 + 中文（原站同款，已按常用 3756 汉字子集化，
+     4.5MB → 约 555KB；子集外生僻字自动回退系统中文字体，不影响排版）
+   ============================================================ */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Medium-subset.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Alibaba PuHuiTi R';
+  src: url('/fonts/Alibaba-PuHuiTi-R-subset.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --brand: #2790e5;
+  --brand-deep: #1b6fbd;
+  --ink: #121c2b;
+  --text: #2f374b;
+  --muted: #555f73;
+  --faint: #8a94a8;
+  --line: #e6ecf3;
+  --bg: #ffffff;
+  --container: 1440px;
+  --header-h: 86px;
+  --font:
+    'Poppins', 'Alibaba PuHuiTi R', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  /* 纯系统字体栈（不含任何 webfont）：EN 页面上的零星中文（语言名“中文”、
+     ICP 备案号）与箭头符号 → 用它渲染，避免为几个字下载 555KB 中文字体。
+     注：Poppins Medium 源字体本身没有 → 字形，原站的箭头也是靠普惠体兜底的。 */
+  --font-sys:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* 不走 webfont 的系统字体渲染（用途见 --font-sys 注释） */
+.nf { font-family: var(--font-sys); }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+/* 关键修复：hidden 属性必须压过组件里的 display 设置，
+   否则全屏遮罩（搜索/移动菜单）会隐形覆盖页面、拦截所有点击 */
+[hidden] { display: none !important; }
+ul, ol { list-style: none; }
+button { font: inherit; background: none; border: 0; cursor: pointer; color: inherit; }
+input { font: inherit; }
+
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: clamp(20px, 3.5vw, 56px);
+}
+
+/* 区块标题体系（与原站 index_1_1 / index_1_2 一致） */
+.section-title {
+  font-size: clamp(1.875rem, 1.2rem + 1.8vw, 3rem);
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  line-height: 1.25;
+}
+.section-subtitle {
+  color: #333;
+  font-size: clamp(0.95rem, 0.85rem + 0.4vw, 1.25rem);
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.12em;
+  margin-top: 0.6em;
+  max-width: 72ch;
+  margin-inline: auto;
+}
+html[lang='zh-CN'] .section-subtitle { letter-spacing: 0.06em; }
+
+/* 蓝色胶囊按钮（Readmore） */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9em;
+  background: var(--brand);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.9em 2.2em;
+  font-size: 0.95rem;
+  line-height: 1;
+  transition: background 0.35s var(--ease), transform 0.35s var(--ease);
+}
+.btn-pill:hover { background: var(--brand-deep); }
+.btn-pill .arrow { transition: transform 0.4s var(--ease); }
+.btn-pill:hover .arrow { transform: translateX(6px); }
+
+/* 描边按钮（深色背景上，如 CTA） */
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9em;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.95em 2.4em;
+  font-size: 1rem;
+  line-height: 1;
+  transition: background 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+.btn-ghost:hover { background: var(--brand); border-color: var(--brand); }
+.btn-ghost .arrow { transition: transform 0.4s var(--ease); }
+.btn-ghost:hover .arrow { transform: translateX(6px); }
+
+/* 滚动渐入动画：JS 不可用时内容直接可见（SEO / 无障碍友好） */
+.reveal { transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
+html.js .reveal { opacity: 0; transform: translateY(36px); }
+html.js .reveal.in { opacity: 1; transform: none; }
+html.js .reveal-d1 { transition-delay: 0.08s; }
+html.js .reveal-d2 { transition-delay: 0.16s; }
+html.js .reveal-d3 { transition-delay: 0.24s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { transition: none; }
+}
+
+/* 视觉隐藏但可被屏幕阅读器/搜索引擎读取（用于无可见标题页的 h1） */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}

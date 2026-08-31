@@ -1,0 +1,54 @@
+# Hitelecom — 全站允许抓取
+User-agent: *
+Allow: /
+
+# —— AI 搜索 / 答案引擎：明确欢迎（GEO）——
+# OpenAI（ChatGPT 搜索与训练）
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Microsoft Copilot / Bing
+User-agent: Bingbot
+Allow: /
+
+# Google AI 训练（不影响传统搜索排名）
+User-agent: Google-Extended
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Common Crawl（多家 AI 训练数据源）
+User-agent: CCBot
+Allow: /
+
+# 字节跳动（豆包 / Doubao）
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://www.hitelecom.com/sitemap-index.xml

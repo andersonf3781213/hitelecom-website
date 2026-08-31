@@ -1,0 +1,31 @@
+---
+/**
+ * 关于我们 - 品质与可靠（中文）：/zh/about/quality.html */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AboutShell from '../../../components/about/AboutShell.astro';
+import AboutQuality from '../../../components/about/AboutQuality.astro';
+import { contentImageSrc } from '../../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh.html' },
+    { '@type': 'ListItem', position: 2, name: '关于我们', item: 'https://www.hitelecom.com/zh/about.html' },
+    { '@type': 'ListItem', position: 3, name: '品质与可靠', item: 'https://www.hitelecom.com/zh/about/quality.html' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="zh"
+  title="品质与可靠 | 工业物联网传感器制造 - 宏太智慧"
+  description="宏太智慧品质方针：车规级 SMT 产线，MPM/KOHYOUNG/OMRON 设备，TQM 全面质量管理，符合 RoHS、REACH 与无卤要求，保障工业物联网传感器品质。"
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <AboutQuality locale="zh" />
+  </AboutShell>
+</BaseLayout>

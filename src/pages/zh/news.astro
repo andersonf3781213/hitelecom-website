@@ -1,0 +1,31 @@
+---
+/**
+ * 新闻中心（中文，公司新闻）：/zh/news.html
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NewsShell from '../../components/news/NewsShell.astro';
+import NewsList from '../../components/news/NewsList.astro';
+import { optimizedSrc } from '../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh.html' },
+    { '@type': 'ListItem', position: 2, name: '新闻中心', item: 'https://www.hitelecom.com/zh/news.html' },
+  ],
+};
+const pageBanner = await optimizedSrc('news/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="zh"
+  title="新闻中心 | 工业物联网传感器公司新闻 - 宏太智慧"
+  description="宏太智慧公司新闻：工业物联网传感器新品发布、户外4G与NB-IoT终端动态、体系认证与宏太云平台进展。"
+>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <NewsList locale="zh" cat="company" />
+  </NewsShell>
+</BaseLayout>

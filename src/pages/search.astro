@@ -1,0 +1,17 @@
+---
+/**
+ * 站内搜索页（英文）：/search.html
+ * 修复原站 /search/ 死链：静态索引 + 浏览器端过滤，无需后端。
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchPage from '../components/SearchPage.astro';
+---
+
+<BaseLayout
+  headerSolid
+  locale="en"
+  title="Site Search - Hitelecom Industrial IoT Sensors"
+  description="Search Hitelecom industrial IoT sensors, data loggers, solutions and news: outdoor 4G & NB-IoT sensor terminals, IoT cloud platform."
+>
+  <SearchPage locale="en" />
+</BaseLayout>

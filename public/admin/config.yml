@@ -1,0 +1,432 @@
+# ============================================================================
+# Hitelecom 官网内容管理后台（Sveltia CMS）
+# 后台入口：https://www.hitelecom.com/admin/
+#
+# 内容模型（与 src/content/config.ts 的集合 schema 一一对应）：
+#   新闻：src/content/news/{en,zh}/<id>.md   —— 每篇一个文件，正文支持直接粘贴 HTML
+#   关于我们：src/content/about/{en,zh}/{intro,quality,partner,joinus,contact}.md
+#
+# 图片去向（纳入 Astro 图片管线，构建时自动 WebP + 宽高注入）：
+#   正文插图 → src/assets/images/content/   （文中引用写作 /images/news-body/xxx）
+#   新闻卡片图 → src/assets/images/news/    （frontmatter img 字段）
+# ============================================================================
+
+# —— 仓库后端：按实际托管平台选择一种，详见《编辑指南.md》第 1 节 ——
+backend:
+  name: github            # GitHub 托管用 github；GitLab 用 gitlab；自建网关用 git-gateway
+  repo: your-org/hitelecom-website   # TODO: 改成实际仓库（格式 组织/仓库名）
+  branch: main
+  # 多人协作编辑冲突少可开 editorial_workflow：
+  # publish_mode: editorial_workflow
+
+site_url: https://www.hitelecom.com
+logo_url: https://www.hitelecom.com/assets/img/icon-512.png
+locale: zh
+
+# 正文插图默认上传目录（Markdown 编辑器里拖拽/粘贴的图片）
+media_folder: src/assets/images/content/news-body
+public_path: /images/news-body
+
+collections:
+  # ================= 新闻（英文站） =================
+  - name: news-en
+    label: 新闻 · 英文站
+    folder: src/content/news/en
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    summary: "{{date}} · {{title}}"
+    sortable_fields: [date, title]
+    view_filters:
+      - { label: 公司新闻, field: cat, pattern: company }
+      - { label: 展会信息, field: cat, pattern: exh }
+      - { label: 行业资讯, field: cat, pattern: ind }
+    fields:
+      - { label: 标题, name: title, widget: string }
+      - { label: 日期, name: date, widget: string, hint: "保持原站格式：hitelecom 2025.01.01" }
+      - label: 分类
+        name: cat
+        widget: select
+        options:
+          - { label: Company News 公司新闻, value: company }
+          - { label: Exhibition 展会信息, value: exh }
+          - { label: Industry News 行业资讯, value: ind }
+      - label: 列表卡片图
+        name: img
+        widget: image
+        required: false
+        media_folder: /src/assets/images/news
+        public_path: /images/news
+        hint: 新闻列表/详情页头图；上传后自动进入图片优化管线
+      - { label: 列表摘要, name: excerpt, widget: text, required: false }
+      - label: 头条轮播位次
+        name: slide
+        widget: number
+        required: false
+        value_type: int
+        hint: 填数字则进入分类顶部轮播（0=第一张）；留空则不显示
+      - label: 网格位次
+        name: grid
+        widget: number
+        required: false
+        value_type: int
+        hint: 在分类网格中的位置（0=第一个）；留空则不进网格
+      - label: 上一篇/下一篇
+        name: pn
+        widget: list
+        collapsed: true
+        summary: "{{fields.label}} → {{fields.id}}"
+        fields:
+          - { label: 样式类, name: cls, widget: select, options: [prevleft, nextright] }
+          - { label: 文章 id, name: id, widget: string }
+          - { label: 卡片图, name: img, widget: string, hint: "如 news/xxx.png" }
+          - { label: 标签, name: label, widget: select, options: [Prev, Next, 上一篇, 下一篇] }
+          - { label: 标题, name: title, widget: string }
+      - label: 相关推荐
+        name: related
+        widget: list
+        collapsed: true
+        summary: "{{fields.id}}"
+        field: { label: 文章 id, name: id, widget: string }
+      - label: 正文
+        name: body
+        widget: markdown
+        hint: 可直接粘贴 HTML（原站文章即 HTML）；插入的图片自动优化
+
+  # ================= 新闻（中文站） =================
+  - name: news-zh
+    label: 新闻 · 中文站
+    folder: src/content/news/zh
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    summary: "{{date}} · {{title}}"
+    sortable_fields: [date, title]
+    view_filters:
+      - { label: 公司新闻, field: cat, pattern: company }
+      - { label: 展会信息, field: cat, pattern: exh }
+      - { label: 行业资讯, field: cat, pattern: ind }
+    fields:
+      - { label: 标题, name: title, widget: string }
+      - { label: 日期, name: date, widget: string, hint: "保持原站格式：hitelecom 2025.01.01" }
+      - label: 分类
+        name: cat
+        widget: select
+        options:
+          - { label: 公司新闻, value: company }
+          - { label: 展会信息, value: exh }
+          - { label: 行业资讯, value: ind }
+      - label: 列表卡片图
+        name: img
+        widget: image
+        required: false
+        media_folder: /src/assets/images/news
+        public_path: /images/news
+      - { label: 列表摘要, name: excerpt, widget: text, required: false }
+      - { label: 头条轮播位次, name: slide, widget: number, required: false, value_type: int }
+      - { label: 网格位次, name: grid, widget: number, required: false, value_type: int }
+      - label: 上一篇/下一篇
+        name: pn
+        widget: list
+        collapsed: true
+        summary: "{{fields.label}} → {{fields.id}}"
+        fields:
+          - { label: 样式类, name: cls, widget: select, options: [prevleft, nextright] }
+          - { label: 文章 id, name: id, widget: string }
+          - { label: 卡片图, name: img, widget: string, hint: "如 news/xxx.png" }
+          - { label: 标签, name: label, widget: select, options: [Prev, Next, 上一篇, 下一篇] }
+          - { label: 标题, name: title, widget: string }
+      - label: 相关推荐
+        name: related
+        widget: list
+        collapsed: true
+        summary: "{{fields.id}}"
+        field: { label: 文章 id, name: id, widget: string }
+      - label: 正文
+        name: body
+        widget: markdown
+        hint: 可直接粘贴 HTML（原站文章即 HTML）；插入的图片自动优化
+
+  # ================= 关于我们 =================
+  - name: about-en
+    label: 关于我们 · 英文站
+    files:
+      - { label: 公司简介, name: intro, file: src/content/about/en/intro.md,
+          fields: [{ label: 内容, name: body, widget: markdown, hint: 支持直接粘贴 HTML }] }
+      - { label: 品质保障, name: quality, file: src/content/about/en/quality.md,
+          fields: [{ label: 内容, name: body, widget: markdown }] }
+      - { label: 合作伙伴, name: partner, file: src/content/about/en/partner.md,
+          fields: [{ label: 内容, name: body, widget: markdown }] }
+      - { label: 加入我们, name: joinus, file: src/content/about/en/joinus.md,
+          fields: [{ label: 内容, name: body, widget: markdown }] }
+      - { label: 联系我们, name: contact, file: src/content/about/en/contact.md,
+          fields: [{ label: 内容, name: body, widget: markdown }] }
+  - name: about-zh
+    label: 关于我们 · 中文站
+    files:
+      - { label: 公司简介, name: intro, file: src/content/about/zh/intro.md,
+          fields: [{ label: 内容, name: body, widget: markdown, hint: 支持直接粘贴 HTML }] }
+      - { label: 品质保障, name: quality, file: src/content/about/zh/quality.md,
+          fields: [{ label: 内容, name: body, widget: markdown }] }
+      - { label: 合作伙伴, name: partner, file: src/content/about/zh/partner.md,
+          fields: [{ label: 内容, name: body, widget: markdown }] }
+      - { label: 加入我们, name: joinus, file: src/content/about/zh/joinus.md,
+          fields: [{ label: 内容, name: body, widget: markdown }] }
+      - { label: 联系我们, name: contact, file: src/content/about/zh/contact.md,
+          fields: [{ label: 内容, name: body, widget: markdown }] }
+
+  # ================= 新品（英文站）：文件名即 URL —— tilt-sensor.md → /product/tilt-sensor.html =================
+  - name: products-en
+    label: 新品 · 英文站
+    folder: src/content/products/en
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    summary: "{{series}}"
+    fields:
+      - { label: 系列标题, name: series, widget: string, hint: "如 H SERIES · Multi-Gas Detector" }
+      - { label: 卖点短句, name: tagline, widget: string, hint: "如 Precision | Multi-Gas | Ultra-Low Power" }
+      - { label: 一句话描述, name: desc, widget: text }
+      - { label: GEO 直答摘要, name: summary, widget: text, required: false, hint: "40–60 词，AI 摘录用" }
+      - { label: 列表卡片名称, name: cardName, widget: string }
+      - { label: 列表卡片通信方式, name: cardConn, widget: string, hint: "如 4G / NB-IoT / LoRa" }
+      - label: 列表卡片图
+        name: cardImg
+        widget: image
+        media_folder: /src/assets/images/products
+        public_path: /images/products
+      - label: 详情页首屏大图
+        name: heroImg
+        widget: image
+        required: false
+        media_folder: /src/assets/images/products
+        public_path: /images/products
+        hint: 留空则用卡片图
+      - { label: 规格书 PDF, name: pdf, widget: file, required: false, media_folder: /public/downloads, public_path: /downloads }
+      - { label: 面包屑分类名, name: crumbCat, widget: string, hint: "如 Gas Monitoring" }
+      - { label: 所属列表, name: listCid, widget: select, options: [{ label: "IoT Sensors 传感器", value: "261" }, { label: "IoT Gateways 网关", value: "258" }, { label: "Weather Station 气象站", value: "257" }, { label: "Customized 定制", value: "256" }], default: "261" }
+      - { label: 返回列表地址, name: returnCid, widget: string, default: "261" }
+      - { label: 型号 sku, name: sku, widget: string, required: false, hint: "如 H200/H300/H500" }
+      - label: 特性
+        name: features
+        widget: list
+        collapsed: true
+        summary: "{{fields.text}}"
+        fields:
+          - { label: 图标, name: icon, widget: image, required: false, media_folder: /src/assets/images/products, public_path: /images/products }
+          - { label: 文案, name: text, widget: string }
+      - { label: 规格区标题, name: specsTitle, widget: string, default: "Technical Specifications" }
+      - { label: 规格区描述, name: specsDesc, widget: text, required: false }
+      - label: 规格表
+        name: specs
+        widget: list
+        collapsed: true
+        summary: "{{fields.name}}"
+        fields:
+          - { label: 参数名, name: name, widget: string }
+          - { label: 参数值, name: value, widget: string }
+      - { label: 场景区标题, name: scenariosHeading, widget: string, required: false }
+      - label: 应用场景
+        name: scenarios
+        widget: list
+        collapsed: true
+        summary: "{{fields.label}}"
+        fields:
+          - { label: 场景图, name: img, widget: image, media_folder: /src/assets/images/products, public_path: /images/products }
+          - { label: 场景名, name: label, widget: string }
+      - label: 相关推荐
+        name: related
+        widget: list
+        collapsed: true
+        required: false
+        summary: "{{fields.id}}"
+        field: { label: 产品 id 或 slug, name: id, widget: string, hint: "内置系列填数字 id（如 282），CMS 新品填文件名 slug" }
+      - label: GEO 结构化规格
+        name: specsStructured
+        widget: list
+        collapsed: true
+        required: false
+        summary: "{{fields.name}}"
+        fields:
+          - { label: 参数名, name: name, widget: string }
+          - { label: 参数值, name: value, widget: string }
+          - { label: 单位, name: unitText, widget: string, required: false }
+          - { label: 最小值, name: minValue, widget: number, required: false }
+          - { label: 最大值, name: maxValue, widget: number, required: false }
+      - label: GEO 应用领域
+        name: applications
+        widget: list
+        collapsed: true
+        required: false
+        summary: "{{fields.name}}"
+        fields:
+          - { label: 领域名, name: name, widget: string }
+          - { label: 一句话说明, name: desc, widget: text }
+      - { label: 认证, name: certifications, widget: list, required: false, collapsed: true, field: { label: 认证名, name: c, widget: string }, hint: "按实际持有填写，勿虚报" }
+      - label: FAQ
+        name: faqs
+        widget: list
+        collapsed: true
+        required: false
+        summary: "{{fields.q}}"
+        fields:
+          - { label: 问题, name: q, widget: string }
+          - { label: 回答, name: a, widget: text }
+      - { label: 内容更新日期, name: dateModified, widget: string, required: false, hint: "格式 2026-08-31" }
+      - { label: 正文（Overview 附加节）, name: body, widget: markdown, required: false, hint: "可直接粘贴 HTML" }
+
+  # ================= 新品（中文站） =================
+  - name: products-zh
+    label: 新品 · 中文站
+    folder: src/content/products/zh
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    summary: "{{series}}"
+    fields:
+      - { label: 系列标题, name: series, widget: string, hint: "如 H系列 · 多气体检测仪" }
+      - { label: 卖点短句, name: tagline, widget: string }
+      - { label: 一句话描述, name: desc, widget: text }
+      - { label: GEO 直答摘要, name: summary, widget: text, required: false }
+      - { label: 列表卡片名称, name: cardName, widget: string }
+      - { label: 列表卡片通信方式, name: cardConn, widget: string }
+      - label: 列表卡片图
+        name: cardImg
+        widget: image
+        media_folder: /src/assets/images/products
+        public_path: /images/products
+      - label: 详情页首屏大图
+        name: heroImg
+        widget: image
+        required: false
+        media_folder: /src/assets/images/products
+        public_path: /images/products
+      - { label: 规格书 PDF, name: pdf, widget: file, required: false, media_folder: /public/downloads, public_path: /downloads }
+      - { label: 面包屑分类名, name: crumbCat, widget: string }
+      - { label: 所属列表, name: listCid, widget: select, options: [{ label: "传感器", value: "261" }, { label: "网关", value: "258" }, { label: "气象站", value: "257" }, { label: "定制", value: "256" }], default: "261" }
+      - { label: 返回列表地址, name: returnCid, widget: string, default: "261" }
+      - { label: 型号 sku, name: sku, widget: string, required: false }
+      - label: 特性
+        name: features
+        widget: list
+        collapsed: true
+        summary: "{{fields.text}}"
+        fields:
+          - { label: 图标, name: icon, widget: image, required: false, media_folder: /src/assets/images/products, public_path: /images/products }
+          - { label: 文案, name: text, widget: string }
+      - { label: 规格区标题, name: specsTitle, widget: string, default: "技术规格" }
+      - { label: 规格区描述, name: specsDesc, widget: text, required: false }
+      - label: 规格表
+        name: specs
+        widget: list
+        collapsed: true
+        summary: "{{fields.name}}"
+        fields:
+          - { label: 参数名, name: name, widget: string }
+          - { label: 参数值, name: value, widget: string }
+      - { label: 场景区标题, name: scenariosHeading, widget: string, required: false }
+      - label: 应用场景
+        name: scenarios
+        widget: list
+        collapsed: true
+        summary: "{{fields.label}}"
+        fields:
+          - { label: 场景图, name: img, widget: image, media_folder: /src/assets/images/products, public_path: /images/products }
+          - { label: 场景名, name: label, widget: string }
+      - label: 相关推荐
+        name: related
+        widget: list
+        collapsed: true
+        required: false
+        summary: "{{fields.id}}"
+        field: { label: 产品 id 或 slug, name: id, widget: string }
+      - label: GEO 结构化规格
+        name: specsStructured
+        widget: list
+        collapsed: true
+        required: false
+        summary: "{{fields.name}}"
+        fields:
+          - { label: 参数名, name: name, widget: string }
+          - { label: 参数值, name: value, widget: string }
+          - { label: 单位, name: unitText, widget: string, required: false }
+          - { label: 最小值, name: minValue, widget: number, required: false }
+          - { label: 最大值, name: maxValue, widget: number, required: false }
+      - label: GEO 应用领域
+        name: applications
+        widget: list
+        collapsed: true
+        required: false
+        summary: "{{fields.name}}"
+        fields:
+          - { label: 领域名, name: name, widget: string }
+          - { label: 一句话说明, name: desc, widget: text }
+      - { label: 认证, name: certifications, widget: list, required: false, collapsed: true, field: { label: 认证名, name: c, widget: string }, hint: "按实际持有填写，勿虚报" }
+      - label: FAQ
+        name: faqs
+        widget: list
+        collapsed: true
+        required: false
+        summary: "{{fields.q}}"
+        fields:
+          - { label: 问题, name: q, widget: string }
+          - { label: 回答, name: a, widget: text }
+      - { label: 内容更新日期, name: dateModified, widget: string, required: false, hint: "格式 2026-08-31" }
+      - { label: 正文（产品概述附加节）, name: body, widget: markdown, required: false, hint: "可直接粘贴 HTML" }
+
+  # ================= 成功案例 =================
+  - name: cases-en
+    label: 成功案例 · 英文站
+    folder: src/content/cases/en
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    summary: "{{date}} · {{title}}"
+    fields: &caseblog-fields
+      - { label: 标题, name: title, widget: string }
+      - { label: 日期, name: date, widget: string, hint: "格式：hitelecom 2026.01.01" }
+      - label: 列表卡片图
+        name: img
+        widget: image
+        required: false
+        media_folder: /src/assets/images/news
+        public_path: /images/news
+      - { label: 列表摘要, name: excerpt, widget: text, required: false }
+      - { label: 头条轮播位次, name: slide, widget: number, required: false, value_type: int }
+      - { label: 网格位次, name: grid, widget: number, required: false, value_type: int }
+      - { label: 相关推荐, name: related, widget: list, required: false, collapsed: true, field: { label: 文章 id, name: id, widget: string } }
+      - { label: 正文, name: body, widget: markdown, hint: "可直接粘贴 HTML；有内容后新闻中心自动出现 Success Stories 选项卡" }
+  - name: cases-zh
+    label: 成功案例 · 中文站
+    folder: src/content/cases/zh
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    summary: "{{date}} · {{title}}"
+    fields: *caseblog-fields
+
+  # ================= 技术博客 =================
+  - name: blog-en
+    label: 技术博客 · 英文站
+    folder: src/content/blog/en
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    summary: "{{date}} · {{title}}"
+    fields: *caseblog-fields
+  - name: blog-zh
+    label: 技术博客 · 中文站
+    folder: src/content/blog/zh
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    summary: "{{date}} · {{title}}"
+    fields: *caseblog-fields

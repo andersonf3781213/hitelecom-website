@@ -1,0 +1,53 @@
+---
+/**
+ * 中文首页（挂载于 /zh/）
+ * 各区块内容维护见 src/data/home.ts
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/home/Hero.astro';
+import Intro from '../../components/home/Intro.astro';
+import Showcase from '../../components/home/Showcase.astro';
+import Solutions from '../../components/home/Solutions.astro';
+import News from '../../components/home/News.astro';
+import Partners from '../../components/home/Partners.astro';
+import Cta from '../../components/home/Cta.astro';
+import { optimizedSrc } from '../../utils/images';
+import { homeContent } from '../../data/home';
+import { l } from '../../i18n';
+
+const preloadImage = await optimizedSrc('hero/bg-sensors.jpg', { width: 1920 });
+
+// 首页专属结构化数据：产品线 + 解决方案清单（均为页面可见内容）
+const c = homeContent.zh;
+const abs = (href: string) => new URL(l(href, 'zh'), 'https://www.hitelecom.com').href;
+const homeItemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: '宏太通信物联网产品与解决方案',
+  itemListElement: [
+    ...c.showcase.map((s, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: s.title,
+      url: abs(s.href),
+    })),
+    ...c.solutions.items.map((s, i) => ({
+      '@type': 'ListItem',
+      position: c.showcase.length + i + 1,
+      name: s.label,
+      url: abs(s.href),
+    })),
+  ],
+};
+---
+
+<BaseLayout locale="zh" preloadImage={preloadImage}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(homeItemListLd)} />
+  <Hero locale="zh" />
+  <Intro locale="zh" />
+  <Showcase locale="zh" />
+  <Solutions locale="zh" />
+  <News locale="zh" />
+  <Partners locale="zh" />
+  <Cta locale="zh" />
+</BaseLayout>

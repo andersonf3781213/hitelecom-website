@@ -1,0 +1,240 @@
+---
+/**
+ * 支持服务页主体（中英共用，page=1|2 仅文档下载区卡片与分页不同）
+ * 与原站 1:1：横幅 → 锚点选项卡 → 技术支持六卡 → 软件区（宏太云）
+ * → 文档下载（深色背景 + 分页）→ 售后表单
+ */
+import Img from '../Img.astro';
+import { serviceContent } from '../../data/service';
+import { site } from '../../data/site';
+import { l, type Locale } from '../../i18n';
+import { optimizedSrc } from '../../utils/images';
+
+interface Props { locale: Locale; page: 1 | 2 }
+const { locale, page } = Astro.props;
+const d = serviceContent[locale];
+const banner = await optimizedSrc(d.bannerImg, { width: 1920, quality: 82 });
+const docs = page === 1 ? d.docsP1 : d.docsP2;
+const listHref = l('/service/', locale);
+const p2Href = l('/service/page/2', locale);
+const mailSubject = locale === 'zh' ? '售后服务 - ' : 'After-Sales Service - ';
+const formJs = {
+  mailTo: site.emailLd,
+  formEndpoint: site.formEndpoint,
+  thanksUrl: locale === 'zh' ? '/zh/about/thanks.html' : '/about/thanks.html',
+  msgName: locale === 'zh' ? '姓名不能为空' : 'Name cannot be empty',
+  msgPhone: locale === 'zh' ? '电话不能为空' : 'Phone cannot be empty',
+  msgEmail: locale === 'zh' ? '邮箱不能为空' : 'Email cannot be empty',
+  msgFail: locale === 'zh' ? '提交失败，请稍后再试或直接发邮件至 sales@hitelecom.com' : 'Submission failed. Please retry or email sales@hitelecom.com directly.',
+  labels: locale === 'zh' ? ['姓名', '电话', '邮箱', '留言'] : ['Name', 'Phone', 'Email', 'Message'],
+};
+---
+
+{/* 全屏横幅 */}
+<div class="clearfix nybanner">
+  <div class="nybanner_img" style={`background-image:url(${banner});`}></div>
+  <div class="nybanner_jj">
+    <div class="cell_mid"><div class="cell_h"><div class="indexmid">
+      <div class="nybanner_jj_mid">
+        {d.bannerSub
+          ? <><h1 class="nybanner_jj_mid_1 reveal">{d.bannerSub}</h1><div class="nybanner_jj_mid_2 reveal">{d.bannerTitle}</div></>
+          : <h1 class="nybanner_jj_mid_2 reveal">{d.bannerTitle}</h1>}
+      </div>
+    </div></div></div>
+  </div>
+  <div id="cate"></div>
+</div>
+
+{/* 锚点选项卡 */}
+<div class="clearfix pro_1 pro_1_ser">
+  <div class="indexmid">
+    <div class="pro_1_mid">
+      <ul class="u4">
+        {d.tabs.map((t) => (
+          <li class="reveal">
+            <a class="css3" href={page === 1 ? t.anchor : `${listHref}${t.anchor}`}>{t.label}</a>
+          </li>
+        ))}
+      </ul>
+      <select id="changeurl">
+        {d.tabs.map((t) => (
+          <option value={page === 1 ? t.anchor : `${listHref}${t.anchor}`}>{t.label}</option>
+        ))}
+      </select>
+    </div>
+  </div>
+</div>
+
+{/* ser_1 技术支持 */}
+<div class="clearfix ser_1" id="page1">
+  <div class="indexmid">
+    <div class="index_1_1 reveal">{d.techHeading}</div>
+    <div class="clearfix ser_1_1">
+      <ul>
+        {d.techCards.map((c) => (
+          <li class="reveal">
+            <div class="ser_1_1_1">
+              <Img src={c.img} alt={c.title} widths={[480, 720, 960]} sizes="(max-width: 810px) 100vw, 32vw" quality={82} />
+            </div>
+            <div class="ser_1_1_2">
+              <div class="ser_1_1_2_1">{c.title}</div>
+              <div class="ser_1_1_2_2">{c.desc}</div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{/* ser_2 软件（宏太云） */}
+<div class="clearfix ser_2" id="page2">
+  <div class="index_2_top">
+    <Img src="service/index-img10.png" alt="" width={1920} height={256} loading="lazy" />
+  </div>
+  <div class="indexmid">
+    <div class="index_1_1 reveal">{d.softHeading}</div>
+    <div class="clearfix ser_2_1 reveal">
+      <div class="ser_2_1_left">
+        <div class="ser_2_1_left_1">{d.softSub1}</div>
+        <div class="ser_2_1_left_2">{d.softSub2}</div>
+        <div class="ser_2_1_left_3">
+          <ul>
+            {d.softBullets.map((b) => (
+              <li>
+                <div class="ser_2_1_left_3_mid">
+                  <div class="ser_2_1_left_3_mid_left">
+                    <Img src={b.icon} alt="" natural loading="lazy" />
+                  </div>
+                  <div class="ser_2_1_left_3_mid_right">{b.text}</div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div class="ser_2_1_right">
+        <Img src={d.softRightImg} alt={d.softSub2} widths={[640, 960, 1280]} sizes="(max-width: 900px) 100vw, 53vw" quality={88} />
+      </div>
+    </div>
+    <div class="clearfix ser_2_2 reveal">
+      <ul>
+        {d.platforms.map((p) => (
+          <li>
+            <div class="ser_2_2_mid">
+              <div class="ser_2_2_mid_1">
+                <Img src={p.icon} alt={p.label} natural loading="lazy" />
+              </div>
+              <div class="ser_2_2_mid_2">{p.label}</div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{/* ser_3 文档下载（深色背景） */}
+<div class="clearfix ser_3" id="page3">
+  <div class="indexmid">
+    <div class="index_1_1 textw reveal">{d.docsHeading}</div>
+    <div class="clearfix ser_3_1">
+      <ul>
+        {docs.map((doc) => (
+          <li class="reveal">
+            <div class="ser_3_1_mid">
+              <div class="ser_3_1_mid_left hi">{doc.name}</div>
+              <div class="ser_3_1_mid_right">
+                <div class="ser_3_1_mid_right_left">{doc.type}</div>
+                <div class="ser_3_1_mid_right_right">
+                  <dl>
+                    <dd><a href={doc.file} target="_blank" rel="noopener">{locale === 'zh' ? '预览' : 'View'}</a></dd>
+                    <dd><a href={doc.file} download={doc.downName}>{locale === 'zh' ? '下载' : 'Down'}</a></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div class="clearfix pro_2_mid_right_3 pro_2_mid_right_3_wh reveal">
+      <ul class="pagination">
+        {page === 1 ? (
+          <>
+            <li class="disabled"><span>&laquo;</span></li>
+            <li class="active"><span>1</span></li>
+            <li><a href={`${p2Href}#page3`}>2</a></li>
+            <li><a href={`${p2Href}#page3`}>&raquo;</a></li>
+          </>
+        ) : (
+          <>
+            <li><a href={`${listHref}#page3`}>&laquo;</a></li>
+            <li><a href={`${listHref}#page3`}>1</a></li>
+            <li class="active"><span>2</span></li>
+            <li class="disabled"><span>&raquo;</span></li>
+          </>
+        )}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{/* ser_4 售后表单 */}
+<div class="clearfix ser_4" id="page4">
+  <div class="indexmid">
+    <div class="index_1_1 reveal">{d.formHeading}</div>
+    <div class="clearfix ser_4_1 reveal">
+      <form id="form1" name="form1" method="post" action="javascript:;">
+        <ul>
+          <li><div><input type="text" value="" id="name" name="name" placeholder={d.formPh.name} /></div></li>
+          <li><div><input type="text" value="" id="phone" name="phone" placeholder={d.formPh.phone} /></div></li>
+          <li><div><input type="text" value="" id="email" name="email" placeholder={d.formPh.email} /></div></li>
+          <li><div><textarea id="message" name="message" placeholder={d.formPh.message}></textarea></div></li>
+        </ul>
+      </form>
+    </div>
+    <div class="clearfix ser_4_2 reveal">
+      <a href="javascript:;" id="svc-submit">
+        <span>{d.submit}</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+{/* 移动端选项卡跳转 + 售后表单双模式提交（与联系/伙伴页一致：
+     配置 formEndpoint 则真实发送并跳感谢页；否则 mailto 回退，无死链） */}
+<script define:vars={{ mailSubject, formJs }}>
+  document.getElementById('changeurl')?.addEventListener('change', (e) => {
+    const v = e.target.value;
+    if (v) window.location.href = v;
+  });
+  document.getElementById('svc-submit')?.addEventListener('click', () => {
+    const g = (id) => (document.getElementById(id)?.value || '').trim();
+    if (!g('name')) { alert(formJs.msgName); return; }
+    if (!g('phone')) { alert(formJs.msgPhone); return; }
+    if (!g('email')) { alert(formJs.msgEmail); return; }
+    const lines = [
+      formJs.labels[0] + ': ' + g('name'),
+      formJs.labels[1] + ': ' + g('phone'),
+      formJs.labels[2] + ': ' + g('email'),
+      formJs.labels[3] + ': ' + g('message'),
+    ];
+    if (formJs.formEndpoint) {
+      const fd = new FormData();
+      fd.append('subject', mailSubject + g('name'));
+      fd.append('from_name', g('name'));
+      fd.append('name', g('name'));
+      fd.append('phone', g('phone'));
+      fd.append('email', g('email'));
+      fd.append('message', lines.join('\n'));
+      fetch(formJs.formEndpoint, { method: 'POST', body: fd, headers: { Accept: 'application/json' } })
+        .then((r) => { window.location.href = r.ok ? formJs.thanksUrl : formJs.thanksUrl + '?sent=0'; })
+        .catch(() => alert(formJs.msgFail));
+      return;
+    }
+    window.location.href = 'mailto:' + formJs.mailTo
+      + '?subject=' + encodeURIComponent(mailSubject + g('name'))
+      + '&body=' + encodeURIComponent(lines.join('\n'));
+  });
+</script>

@@ -1,0 +1,12 @@
+---
+/**
+ * 产品区页面外壳：引入 1:1 提取的产品样式，并把内容包进 .pclone 作用域
+ * 用法：<BaseLayout><ProductShell> ...产品页内容... </ProductShell></BaseLayout>
+ */
+import '../../styles/product.css';
+---
+
+<slot name="head" slot="head" />
+<div class="pclone">
+  <slot />
+</div>

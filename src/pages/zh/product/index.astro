@@ -1,0 +1,229 @@
+---
+/**
+ * IoT Cloud 落地页（中文）：/zh/product.html
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductShell from '../../../components/product/ProductShell.astro';
+import CategoryTabs from '../../../components/product/CategoryTabs.astro';
+import Img from '../../../components/Img.astro';
+import { productContent } from '../../../data/product';
+import { optimizedSrc } from '../../../utils/images';
+import { breadcrumbLd, SITE_URL } from '../../../utils/jsonld';
+import { l } from '../../../i18n';
+
+const locale = 'zh';
+const d = productContent.zh.cloud;
+const preloadImage = await optimizedSrc(d.banner.images[3], { width: 800 });
+const ctaBg = await optimizedSrc('cta/bg.jpg', { width: 1920 });
+const bcLd = breadcrumbLd([
+  { name: '首页', url: `${SITE_URL}/zh.html` },
+  { name: '产品中心' },
+  { name: d.banner.title },
+]);
+---
+
+<BaseLayout
+  locale="zh"
+  preloadImage={preloadImage}
+  title="宏太云 - 物联网云平台 | 设备接入与管理 - 宏太通信"
+  description="宏太云是智能数据集成平台，提供设备接入、远程监控与大数据分析，支持公有云、私有云、混合云与边缘云部署，开放 API/MQTT 集成。"
+>
+  <ProductShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(bcLd)} />
+    <div class="clearfix nybanner pro_banner_wrap">
+      <div class="nybanner_bg_pro"></div>
+      <div class="nybanner_bg_pro2"></div>
+      <div class="pro_banner_left">
+        <h1 class="pro_banner_left_1 reveal">{d.banner.title}</h1>
+        <div class="pro_banner_left_2 reveal">{d.banner.subtitle}</div>
+        <div class="pro_banner_left_3 reveal">{d.banner.desc}</div>
+      </div>
+      <div class="pro_banner_right">
+        <div class="pro_banner_right_1"><Img src={d.banner.images[0]} alt="" loading="eager" /></div>
+        <div class="pro_banner_right_1" id="c1"><Img src={d.banner.images[1]} alt="" loading="eager" /></div>
+        <div class="pro_banner_right_1" id="c2"><Img src={d.banner.images[2]} alt="" loading="eager" /></div>
+        <Img src={d.banner.images[3]} alt={d.banner.title} loading="eager" fetchpriority="high" />
+      </div>
+      <div id="cate"></div>
+    </div>
+
+    <CategoryTabs locale="zh" active="cloud" />
+
+    <div class="clearfix yun_1">
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.intro.heading}</div>
+        <div class="clearfix yun_1_1 reveal">
+          {d.intro.paras.map((p) => <p>{p}</p>)}
+        </div>
+        <div class="clearfix yun_1_2">
+          <ul>
+            {d.intro.cards.map((c) => (
+              <li class="reveal">
+                <div class="yun_1_2_mid">
+                  <div class="yun_1_2_mid_left">
+                    <Img src={c.img} alt={c.title} natural loading="lazy" />
+                  </div>
+                  <div class="yun_1_2_mid_right">
+                    <div class="yun_1_2_mid_right_1">{c.title}</div>
+                    <div class="yun_1_2_mid_right_2">{c.desc}</div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix index_2 yun_2">
+      <div class="index_2_top">
+        <Img src="common/wave.png" alt="" width={1920} height={256} />
+      </div>
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.features.heading}</div>
+        <div class="clearfix yun_2_1">
+          <ul>
+            {d.features.items.map((f) => (
+              <li class="reveal">
+                <div class="yun_2_1_mid">
+                  <div class="yun_2_1_mid_1"><Img src={f.img} alt="" natural loading="lazy" /></div>
+                  <div class="yun_2_1_mid_2">{f.text}</div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix yun_3">
+      <div class="yun_3_mid">
+        <div class="yun_3_top">
+          <div class="indexmid">
+            <div class="index_1_1 textw reveal">{d.architecture.heading}</div>
+            <div class="index_1_2 textw reveal"></div>
+          </div>
+        </div>
+        <Img src={d.architecture.img} alt={`${d.architecture.heading} - 宏太云`} widths={[1440, 1920]} sizes="100vw" quality={92} class="yun_3_img" />
+      </div>
+    </div>
+
+    <div class="clearfix yun_4">
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.core.heading}</div>
+        <div class="clearfix yun_1_1 reveal">
+          <div style="margin:0 auto; max-width:800px; text-align:center">{d.core.subtitle}</div>
+        </div>
+        <div class="clearfix yun_4_1">
+          <ul>
+            {d.core.items.map((c) => (
+              <li class="reveal">
+                <div class="yun_4_1_mid">
+                  <div class="yun_4_1_mid_left">
+                    <Img src={c.img} alt={c.title} natural loading="lazy" />
+                  </div>
+                  <div class="yun_4_1_mid_right">
+                    <div class="cell_mid"><div class="cell_h">
+                      <div class="yun_4_1_mid_right_mid">
+                        <div class="yun_4_1_mid_right_mid_1">{c.title}</div>
+                        <div class="yun_4_1_mid_right_mid_2" set:html={c.desc.replace(/\n/g, '<br />')} />
+                      </div>
+                    </div></div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix index_2 yun_5">
+      <div class="index_2_top">
+        <Img src="common/wave.png" alt="" width={1920} height={256} />
+      </div>
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.scenarios.heading}</div>
+        <div class="clearfix yun_5_1 reveal" id="scen-tabs">
+          <ul>
+            {d.scenarios.tabs.map((t, i) => (
+              <li class:list={[{ on: i === 0 }]}>
+                <a href="javascript:;" data-idx={i}>
+                  <div class="yun_5_1_1">
+                    <span>
+                      <Img src={t.icons[0]} alt="" width={60} height={60} />
+                      {t.icons[1] && <Img src={t.icons[1]} alt="" width={60} height={60} />}
+                    </span>
+                  </div>
+                  <div class="yun_5_1_2">{t.label}</div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="clearfix yun_5_2 reveal">
+          <div class="yun_5_2_left">
+            {d.scenarios.bgs.map((b, i) => (
+              <div class:list={['css3', 'qa_7_1_right_bg', { on: i === 0 }]} data-bg={i}>
+                <Img src={b} alt="" widths={[480, 760]} sizes="(max-width: 900px) 92vw, 40vw" />
+              </div>
+            ))}
+          </div>
+          <div class="yun_5_2_right">
+            <div class="scen-slides">
+              {d.scenarios.slides.map((s, i) => (
+                <div class:list={['scen-slide', { on: i === 0 }]} data-slide={i}>
+                  <div class="cjimg">
+                    <Img src={s.img} alt={s.title} widths={[480, 800]} sizes="(max-width: 900px) 92vw, 46vw" />
+                  </div>
+                  <div class="qa_7_1_left_1 qa_7_1_left_1_pro">{s.title}</div>
+                  <div class="qa_7_1_left_2">{s.desc}</div>
+                </div>
+              ))}
+            </div>
+            <div>
+              <div class="about_4_1_left_1_left css3" id="l1"></div>
+              <div class="about_4_1_left_1_right css3" id="r1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* CTA：立即体验云平台（原站 yun_6，视频背景替换为静态深蓝背景图） */}
+    <div class="clearfix yun_6" style={`background-image:url('${ctaBg}')`}>
+      <div class="indexmid">
+        <div class="index_1_1 textw reveal">{d.cta.title}</div>
+        <div class="index_1_2 textw reveal reveal-d1">{d.cta.subtitle}</div>
+        <div class="yun_6_1 reveal reveal-d2">
+          <ul>
+            <li>
+              <a target="_blank" rel="noopener" href="http://cloud.hitelecom.com" class="css3"><span>{d.cta.primary}</span></a>
+            </li>
+            <li>
+              <a href={l('/about/contact#feedback', locale)} class="css3"><span>{d.cta.secondary}</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ProductShell>
+</BaseLayout>
+
+
+<script>
+  const tabs = document.querySelectorAll('#scen-tabs li');
+  const setScen = (idx: number) => {
+    const key = String(idx);
+    tabs.forEach((x) => x.classList.toggle('on', x.querySelector('a')?.dataset.idx === key));
+    document.querySelectorAll('[data-bg]').forEach((b) => b.classList.toggle('on', (b as HTMLElement).dataset.bg === key));
+    document.querySelectorAll('[data-slide]').forEach((s) => s.classList.toggle('on', (s as HTMLElement).dataset.slide === key));
+  };
+  tabs.forEach((li) => {
+    li.querySelector('a')?.addEventListener('click', () => setScen(Number(li.querySelector('a')?.dataset.idx)));
+  });
+  // 原站 #l1/#r1 圆箭头：上一个 / 下一个场景
+  const curScen = () => Number(document.querySelector('#scen-tabs li.on a')?.getAttribute('data-idx') ?? 0);
+  document.getElementById('l1')?.addEventListener('click', () => setScen((curScen() + tabs.length - 1) % tabs.length));
+  document.getElementById('r1')?.addEventListener('click', () => setScen((curScen() + 1) % tabs.length));
+</script>

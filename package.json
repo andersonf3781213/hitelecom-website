@@ -1,0 +1,22 @@
+{
+  "name": "hitelecom-site",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Hitelecom B2B marketing website rebuilt with Astro (SSG, SEO-first, multilingual)",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "prune": "node scripts/prune-dist.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.2.6",
+    "@astrojs/sitemap": "^3.7.3"
+  },
+  "allowScripts": {
+    "sharp@0.34.5": true,
+    "esbuild@0.27.7": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.2": true
+  }
+}

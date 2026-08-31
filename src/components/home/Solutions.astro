@@ -1,0 +1,98 @@
+---
+/**
+ * 解决方案区块：天空背景 + 六张白色卡片（悬停图标翻转，与原站一致）
+ */
+import Img from '../Img.astro';
+import { homeContent } from '../../data/home';
+import { optimizedSrc } from '../../utils/images';
+import { l, type Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const { solutions } = homeContent[locale];
+const bg = await optimizedSrc('solutions/bg.jpg', { width: 1920 });
+---
+
+<section class="solutions" style={`--bg: url('${bg}')`} aria-labelledby="solutions-title">
+  <div class="container">
+    <h2 id="solutions-title" class="section-title light reveal">{solutions.title}</h2>
+    <p class="section-subtitle light reveal">{solutions.subtitle}</p>
+
+    <ul class="solutions-grid">
+      {solutions.items.map((item, i) => (
+        <li class:list={['reveal', `reveal-d${(i % 3) + 1}`]}>
+          <a class="solution-card" href={l(item.href, locale)}>
+            <span class="solution-icon">
+              <Img src={item.icon} alt="" width={120} height={120} />
+            </span>
+            <span class="solution-label">{item.label}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .solutions {
+    background-image: var(--bg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: clamp(70px, 8vw, 150px) 0;
+    overflow: hidden;
+  }
+  @media (min-width: 1024px) {
+    .solutions { background-attachment: fixed; } /* 原站视差效果 */
+  }
+  .section-title.light { color: #fff; }
+  .section-subtitle.light { color: rgba(255, 255, 255, 0.9); }
+
+  .solutions-grid {
+    margin-top: clamp(44px, 5vw, 90px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(10px, 1vw, 18px);
+  }
+  .solution-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 6px;
+    min-height: clamp(190px, 15.6vw, 300px);
+    padding: 28px 16px;
+    text-align: center;
+    transition: transform 0.45s var(--ease), box-shadow 0.45s var(--ease);
+  }
+  .solution-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 48px rgba(13, 60, 110, 0.25);
+  }
+  .solution-icon { display: block; perspective: 600px; }
+  .solution-icon :global(img) {
+    width: clamp(72px, 6.7vw, 120px);
+    height: auto;
+    margin-inline: auto;
+    transition: transform 0.5s var(--ease);
+  }
+  /* 原站悬停：图标水平翻转 180° */
+  .solution-card:hover .solution-icon :global(img) { transform: rotateY(180deg); }
+  .solution-label {
+    margin-top: 1.2em;
+    font-size: clamp(1rem, 0.9rem + 0.4vw, 1.35rem);
+    letter-spacing: 0.14em;
+    color: var(--text);
+  }
+  html[lang='zh-CN'] .solution-label { letter-spacing: 0.3em; }
+
+  @media (max-width: 980px) {
+    .solutions-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .solutions-grid { grid-template-columns: 1fr; }
+    .solution-card { min-height: 0; flex-direction: row; gap: 18px; justify-content: flex-start; text-align: left; padding: 20px 22px; }
+    .solution-label { margin-top: 0; }
+  }
+</style>

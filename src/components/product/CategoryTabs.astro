@@ -1,0 +1,40 @@
+---
+/**
+ * 产品中心顶部分类条（#cate 锚点）
+ * 与原站一致：桌面端一排胶囊 Tab，移动端折叠为下拉框
+ */
+import { productTabs } from '../../data/product';
+import { l, type Locale } from '../../i18n';
+
+interface Props { locale: Locale; active: string }
+const { locale, active } = Astro.props;
+const tabs = productTabs[locale];
+---
+
+<div class="clearfix pro_1 pro_1_ser">
+  <div class="indexmid">
+    <div class="pro_1_mid">
+      <ul>
+        {tabs.map((t) => (
+          <li class="reveal">
+            <a class:list={['css3', { on: t.key === active }]} href={l(t.href, locale) + '#cate'}>{t.label}</a>
+          </li>
+        ))}
+      </ul>
+      <select id="changeurl" aria-label={locale === 'zh' ? '切换产品分类' : 'Switch product category'}>
+        {tabs.map((t) => (
+          <option value={l(t.href, locale)} selected={t.key === active}>{t.label}</option>
+        ))}
+      </select>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 移动端分类下拉跳转
+  document.querySelectorAll<HTMLSelectElement>('#changeurl').forEach((sel) => {
+    sel.addEventListener('change', () => {
+      if (sel.value) window.location.href = sel.value;
+    });
+  });
+</script>

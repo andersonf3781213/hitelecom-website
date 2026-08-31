@@ -1,0 +1,120 @@
+---
+/**
+ * 列表页侧栏：产品搜索框 + 子分类筛选 + 各子分类下的传感器名称（直达详情页）
+ * 原站搜索走后端；静态版改为前端即时过滤卡片（输入即筛，体验更快）
+ */
+import { l, type Locale } from '../../i18n';
+import { productPath, type SubCat } from '../../data/product';
+
+interface SideProd { id: number | string; name: string }
+interface Props {
+  locale: Locale;
+  subcats: SubCat[];
+  /** 每个子分类 cid → 其下产品（用于左侧展开传感器名称） */
+  sideProds?: Record<string, SideProd[]>;
+  /** 当前家族根 cid（"All/全部" 项），该项不展开产品名 */
+  parentCid?: string;
+}
+const { locale, subcats, sideProds = {}, parentCid = '' } = Astro.props;
+---
+
+<div class="pro_2_mid_left">
+  <div class="pro_2_mid_left_mid">
+    <div class="pro_2_mid_left_mid_1 reveal">
+      <form id="pro-search" onsubmit="return false">
+        <input
+          type="text"
+          name="keyword"
+          id="keyword"
+          placeholder={locale === 'zh' ? '输入产品关键词' : 'Enter product keywords'}
+          class="wbk"
+        />
+        <input type="submit" value="" class="wbkbtn" />
+      </form>
+    </div>
+    <div class="pro_2_mid_left_mid_2 reveal">
+      <ul>
+        {subcats.map((s) => (
+          <li>
+            <a class:list={['css3', { on: s.on }]} href={l(`/product/lists/cid/${s.cid}`, locale) + '#cate'}>
+              {s.name}
+            </a>
+            {s.cid !== parentCid && (sideProds[s.cid]?.length ?? 0) > 0 && (
+              <ul class="sub-prods">
+                {sideProds[s.cid].map((p) => (
+                  <li>
+                    {p.id
+                      ? <a class="css3" href={l(productPath(p.id), locale)}>{p.name}</a>
+                      : <span class="css3 plain">{p.name}</span>}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* 传感器名称子列表：缩进、小字号、圆点标记， hover 与原站一致的黑色下划线 */
+  .pro_2_mid_left_mid_2 ul li .sub-prods {
+    margin: 0.2em 0 0.6em;
+    padding: 0;
+    list-style: none;
+  }
+  .pro_2_mid_left_mid_2 ul li .sub-prods li {
+    border-bottom: none;
+    line-height: 1.5;
+  }
+  .pro_2_mid_left_mid_2 ul li .sub-prods li a,
+  .pro_2_mid_left_mid_2 ul li .sub-prods li .plain {
+    display: block;
+    font-size: 0.8125em;
+    color: #8595a6;
+    padding: 0.35em 0 0.35em 1.2em;
+    position: relative;
+  }
+  .pro_2_mid_left_mid_2 ul li .sub-prods li .plain { cursor: default; }
+  .pro_2_mid_left_mid_2 ul li .sub-prods li a::before,
+  .pro_2_mid_left_mid_2 ul li .sub-prods li .plain::before {
+    content: '';
+    position: absolute;
+    left: 0.4em;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #c3cedb;
+    transform: translateY(-50%);
+  }
+  .pro_2_mid_left_mid_2 ul li .sub-prods li a:hover {
+    color: #000;
+  }
+  .pro_2_mid_left_mid_2 ul li .sub-prods li a:hover::before {
+    background: #000;
+  }
+  /* 移动端保持侧栏紧凑，不展开产品名 */
+  @media (max-width: 860px) {
+    .pro_2_mid_left_mid_2 ul li .sub-prods {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  // 前端即时筛选：按产品名称过滤右侧卡片
+  const kw = document.getElementById('keyword') as HTMLInputElement | null;
+  if (kw) {
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('.pro_2_mid_right_2 li[data-name]'));
+    const apply = () => {
+      const q = kw.value.trim().toLowerCase();
+      for (const c of cards) {
+        c.style.display = !q || (c.dataset.name ?? '').includes(q) ? '' : 'none';
+      }
+    };
+    kw.addEventListener('input', apply);
+    kw.form?.addEventListener('submit', (e) => { e.preventDefault(); apply(); });
+  }
+</script>

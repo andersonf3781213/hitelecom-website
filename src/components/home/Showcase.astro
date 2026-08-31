@@ -1,0 +1,86 @@
+---
+/**
+ * 产品图文区块：Cloud Platform / IoT Gateways / IoT Sensors
+ * 左右交替布局，标题左侧青色竖线，Readmore 蓝色胶囊按钮
+ */
+import Img from '../Img.astro';
+import { homeContent } from '../../data/home';
+import { l, type Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const { showcase } = homeContent[locale];
+---
+
+<section class="showcase" aria-label="Products">
+  <div class="wave-divider" aria-hidden="true">
+    <Img src="common/wave.png" alt="" width={1920} height={256} loading="lazy" />
+  </div>
+  <div class="container">
+    {showcase.map((item) => (
+      <article class:list={['showcase-row', { reverse: item.reverse }]}>
+        <div class="showcase-text reveal">
+          <h2 class="showcase-title">{item.title}</h2>
+          <p class="showcase-desc">{item.desc}</p>
+          <a class="btn-pill" href={l(item.href, locale)}>
+            {item.cta}
+            <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="showcase-media reveal reveal-d1">
+          <Img
+            src={item.image}
+            alt={item.imageAlt}
+            widths={[480, 760, 1100]}
+            sizes="(max-width: 900px) 92vw, 46vw"
+          />
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
+
+<style>
+  .showcase { padding: clamp(30px, 3vw, 60px) 0; overflow: hidden; position: relative; }
+  .wave-divider { position: absolute; top: 0; left: 0; width: 100%; z-index: 4; pointer-events: none; }
+  .wave-divider :global(img) { width: 100%; height: auto; display: block; }
+  .showcase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: clamp(40px, 6vw, 110px);
+    padding: clamp(44px, 5vw, 90px) 0;
+  }
+  .showcase-row.reverse .showcase-text { order: 2; }
+  .showcase-row.reverse .showcase-media { order: 1; }
+
+  .showcase-title {
+    font-size: clamp(1.7rem, 1.3rem + 1.6vw, 2.6rem);
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+    border-left: 4px solid #2bb3c0;
+    padding-left: 0.55em;
+  }
+  .showcase-desc {
+    color: var(--muted);
+    font-size: clamp(0.95rem, 0.9rem + 0.25vw, 1.08rem);
+    line-height: 2;
+    margin: 1.4em 0 2.2em;
+    padding-left: calc(0.55em * 1.6);
+  }
+  .showcase-text .btn-pill { margin-left: calc(0.55em * 1.6); }
+
+  .showcase-media :global(img) {
+    width: 100%;
+    height: auto;
+    transition: transform 0.7s var(--ease);
+  }
+  .showcase-media:hover :global(img) { transform: scale(1.03); }
+
+  @media (max-width: 900px) {
+    .showcase-row { grid-template-columns: 1fr; gap: 30px; padding: 40px 0; }
+    .showcase-row.reverse .showcase-text { order: 1; }
+    .showcase-row.reverse .showcase-media { order: 2; }
+  }
+</style>

@@ -1,0 +1,32 @@
+---
+/**
+ * 关于我们 - 联系我们（英文）：/about/contact.html
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AboutShell from '../../components/about/AboutShell.astro';
+import AboutContact from '../../components/about/AboutContact.astro';
+import { contentImageSrc } from '../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+    { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.hitelecom.com/about.html' },
+    { '@type': 'ListItem', position: 3, name: 'Contact', item: 'https://www.hitelecom.com/about/contact.html' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="en"
+  title="Contact Us | Hitelecom Industrial IoT Sensor Manufacturer"
+  description="Contact Hitelecom for industrial IoT sensors, outdoor 4G and NB-IoT terminals and OEM/ODM projects: +86-18616602589, sales@hitelecom.cn, Songjiang District, Shanghai."
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <AboutContact locale="en" />
+  </AboutShell>
+</BaseLayout>

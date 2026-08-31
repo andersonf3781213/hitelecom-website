@@ -1,0 +1,32 @@
+---
+/**
+ * 关于我们 - 加入我们（英文）：/about/joinus.html
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AboutShell from '../../components/about/AboutShell.astro';
+import AboutJoinus from '../../components/about/AboutJoinus.astro';
+import { contentImageSrc } from '../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+    { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.hitelecom.com/about.html' },
+    { '@type': 'ListItem', position: 3, name: 'Recruitment', item: 'https://www.hitelecom.com/about/joinus.html' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="en"
+  title="Careers | Join Hitelecom - Industrial IoT Sensor Company"
+  description="Careers at Hitelecom: join an industrial IoT sensor manufacturer in Shanghai working on outdoor 4G and NB-IoT sensing, low-carbon products and global IoT solutions."
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <AboutJoinus locale="en" />
+  </AboutShell>
+</BaseLayout>

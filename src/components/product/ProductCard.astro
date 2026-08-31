@@ -1,0 +1,52 @@
+---
+/**
+ * 产品卡片（列表页网格 + 详情页相关推荐共用）
+ * 与原站一致：灰蓝底、产品图、名称、通信方式标签、右下圆形箭头
+ * 无详情页的定制类条目（id 为空）渲染为静态 div，不产生死链
+ */
+import Img from '../Img.astro';
+import { l, type Locale } from '../../i18n';
+import { productPath, type ProductCard } from '../../data/product';
+
+interface Props { locale: Locale; product: ProductCard }
+const { locale, product } = Astro.props;
+---
+
+<li class={`reveal${product.id ? '' : ' nbd'}`} data-name={product.name.toLowerCase()}>
+  {product.id ? (
+    <a href={l(productPath(product.id), locale)}>
+      <div class="pro_2_mid_right_1_mid">
+        <div class="pro_2_mid_right_1_mid_1">
+          <Img src={product.img} alt={product.name} widths={[240, 400]} sizes="(max-width: 900px) 44vw, 20vw" />
+        </div>
+        <div class="pro_2_mid_right_1_mid_2">
+          <div class="pro_2_mid_right_1_mid_2_mid">
+            <div class="pro_2_mid_right_1_mid_2_1 hi">{product.name}</div>
+            <div class="pro_2_mid_right_1_mid_2_2 hi">{product.conn}</div>
+            <div class="pro_2_mid_right_1_mid_2_3"><span class="css3"></span></div>
+          </div>
+        </div>
+      </div>
+    </a>
+  ) : (
+    <div class="pro-card-static">
+      <div class="pro_2_mid_right_1_mid">
+        <div class="pro_2_mid_right_1_mid_1">
+          <Img src={product.img} alt={product.name} widths={[240, 400]} sizes="(max-width: 900px) 44vw, 20vw" />
+        </div>
+        <div class="pro_2_mid_right_1_mid_2">
+          <div class="pro_2_mid_right_1_mid_2_mid">
+            <div class="pro_2_mid_right_1_mid_2_1 hi">{product.name}</div>
+            <div class="pro_2_mid_right_1_mid_2_2 hi">{product.conn}</div>
+            <div class="pro_2_mid_right_1_mid_2_3"><span class="css3"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )}
+</li>
+
+<style>
+  /* 静态卡片（无详情页）：继承原 a 标签的块级布局，鼠标保持默认 */
+  .pro-card-static { display: block; cursor: default; }
+</style>

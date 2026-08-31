@@ -1,0 +1,63 @@
+---
+/**
+ * 表单提交感谢页（EN/ZH 共用）
+ * ?sent=0 时显示失败提示（表单服务未配置/出错时的兜底）
+ */
+import { site } from '../data/site';
+import { l, type Locale } from '../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const zh = locale === 'zh';
+const pre = zh ? '/zh' : '';
+---
+
+<div class="thx-page">
+  <div class="thx-in">
+    <div class="thx-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.1V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14l-3-3"/></svg>
+    </div>
+    <h1 id="thx-title">{zh ? '提交成功' : 'Thank you!'}</h1>
+    <p class="thx-desc" id="thx-desc">
+      {zh
+        ? '您的留言已收到，我们的销售工程师会尽快与您联系。'
+        : 'Your message has been received. Our sales engineers will get back to you shortly.'}
+    </p>
+    <p class="thx-alt">
+      {zh ? '急需协助？直接联系：' : 'Need urgent help? Reach us directly: '}
+      <a href={`mailto:${site.emailLd}`}>{site.emailLd}</a> · <a href={site.phoneHref}>{site.phone}</a>
+    </p>
+    <div class="thx-actions">
+      <a class="btn-pill" href={l('/', locale)}>{zh ? '返回首页' : 'Back to Home'}</a>
+      <a class="btn-pill ghost" href={`${pre}/product.html`}>{zh ? '浏览产品' : 'Browse Products'}</a>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ zh }}>
+  // 提交失败回跳（?sent=0）：替换为失败文案
+  if (new URLSearchParams(location.search).get('sent') === '0') {
+    document.getElementById('thx-title').textContent = zh ? '提交未成功' : 'Submission not completed';
+    document.getElementById('thx-desc').textContent = zh
+      ? '表单服务暂不可用，请直接发邮件或来电联系我们。'
+      : 'The form service is temporarily unavailable. Please email or call us directly.';
+  }
+</script>
+
+<style>
+  .thx-page { padding: clamp(130px, 15vw, 200px) 20px clamp(80px, 9vw, 130px); text-align: center; }
+  .thx-icon {
+    width: 88px; height: 88px; margin: 0 auto 1.2em;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    color: #fff; background: var(--brand);
+    box-shadow: 0 18px 40px rgba(39, 145, 230, 0.35);
+  }
+  .thx-page h1 { font-size: clamp(1.6rem, 3.4vw, 2.3rem); font-weight: 600; }
+  .thx-desc { color: #66707d; margin: 1em auto 0; max-width: 34em; line-height: 1.8; }
+  .thx-alt { color: #8595a6; font-size: 0.92rem; margin-top: 1.6em; }
+  .thx-alt a { color: var(--brand); }
+  .thx-actions { display: flex; gap: 14px; justify-content: center; margin-top: 2.4em; flex-wrap: wrap; }
+  .thx-actions .btn-pill.ghost { background: transparent; color: var(--ink); border: 1px solid #dbe2ea; }
+  .thx-actions .btn-pill.ghost:hover { border-color: var(--brand); color: var(--brand); }
+</style>

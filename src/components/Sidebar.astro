@@ -1,0 +1,206 @@
+---
+/**
+ * 右侧浮动联系栏：电话 / WhatsApp / 微信 / 回到顶部
+ * 与原站一致：悬停或点击弹出二维码名片（扫码添加）。
+ * 二维码图片位于 public/images/qr-*.png，同名覆盖即可更换。
+ */
+import { site } from '../data/site';
+import type { Locale } from '../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const zh = locale === 'zh';
+---
+
+<aside class="float-bar" aria-label="Quick contact">
+  <div class="float-item">
+    <button class="float-btn" type="button" aria-expanded="false" aria-label={zh ? '电话咨询' : 'Call us'}>
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+    </button>
+    <div class="pop" role="status">
+      <strong>{zh ? '电话咨询' : 'Call us'}</strong>
+      <a class="pop-line" href={site.phoneHref}>{site.phone}</a>
+    </div>
+  </div>
+
+  <div class="float-item">
+    <button class="float-btn" type="button" aria-expanded="false" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.2-.3.3-.5v-.5c0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3 1 2.6 1.1 2.8.1.2 1.9 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1a3 3 0 0 0 1.9-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.2-.3-.2-.6-.4Z"/></svg>
+    </button>
+    <div class="pop qr-pop" role="status">
+      <img src="/images/qr-whatsapp.png" alt={zh ? 'WhatsApp 二维码' : 'WhatsApp QR code'} width="150" height="150" loading="lazy" decoding="async" />
+      <strong>WhatsApp</strong>
+      <span class="pop-num">{site.phone}</span>
+      <a class="pop-link" href={site.whatsapp} target="_blank" rel="noopener">
+        {zh ? '打开对话' : 'Open chat'} <span class="nf" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="float-item">
+    <button class="float-btn" type="button" aria-expanded="false" aria-label={zh ? '微信咨询' : 'WeChat'}>
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9.5 4C5.9 4 3 6.5 3 9.6c0 1.8 1 3.4 2.5 4.4l-.6 1.9 2.2-1.1c.5.1 1 .2 1.5.2h.4A5.5 5.5 0 0 1 9 13a5.6 5.6 0 0 1 5.6-5.4h.5C14.4 5.5 12.2 4 9.5 4ZM7.4 8.2a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6Zm4.2 0a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6ZM21 13.2c0-2.7-2.5-4.9-5.6-4.9s-5.6 2.2-5.6 4.9 2.5 4.9 5.6 4.9c.6 0 1.2-.1 1.8-.3l2 1-.6-1.7A4.7 4.7 0 0 0 21 13.2Zm-7.5-.7a.7.7 0 1 1 0-1.4.7.7 0 0 1 0 1.4Zm3.8 0a.7.7 0 1 1 0-1.4.7.7 0 0 1 0 1.4Z"/></svg>
+    </button>
+    <div class="pop qr-pop" role="status">
+      <img src="/images/qr-wechat.png" alt={zh ? '微信二维码' : 'WeChat QR code'} width="150" height="137" loading="lazy" decoding="async" />
+      <strong>{zh ? '微信扫码咨询' : 'Scan to chat on WeChat'}</strong>
+      <button class="pop-line copy" type="button" data-copy={site.wechatId}>
+        {zh ? '微信号' : 'ID'}: {site.wechatId}
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      </button>
+      <span class="copy-ok" hidden>{zh ? '已复制' : 'Copied'}</span>
+    </div>
+  </div>
+
+  <button class="float-btn back-top" type="button" aria-label={zh ? '回到顶部' : 'Back to top'}>
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5m-7 7 7-7 7 7"/></svg>
+  </button>
+</aside>
+
+<script>
+  // 点击展开 / 收起联系卡片（触屏没有悬停，必须支持点击）
+  const items = Array.from(document.querySelectorAll('.float-item'));
+  const closeAll = (except?: Element) =>
+    items.forEach((it) => {
+      if (it === except) return;
+      it.classList.remove('on');
+      it.querySelector('button.float-btn')?.setAttribute('aria-expanded', 'false');
+    });
+
+  items.forEach((it) => {
+    it.querySelector('button.float-btn')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = it.classList.toggle('on');
+      it.querySelector('button.float-btn')?.setAttribute('aria-expanded', String(open));
+      if (open) closeAll(it);
+    });
+    it.querySelector('.pop')?.addEventListener('click', (e) => e.stopPropagation());
+  });
+  document.addEventListener('click', () => closeAll());
+
+  // 复制微信号
+  document.querySelectorAll('.copy').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const text = (btn as HTMLElement).dataset.copy || '';
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+      }
+      const ok = btn.parentElement?.querySelector('.copy-ok') as HTMLElement | null;
+      if (ok) {
+        ok.hidden = false;
+        setTimeout(() => (ok.hidden = true), 1600);
+      }
+    });
+  });
+
+  document.querySelector('.back-top')?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+<style>
+  .float-bar {
+    position: fixed;
+    right: clamp(12px, 1.6vw, 30px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .float-item { position: relative; }
+  .float-btn {
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--brand);
+    box-shadow: 0 8px 24px rgba(18, 28, 43, 0.14);
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.3s var(--ease);
+  }
+  .float-btn:hover,
+  .float-item.on .float-btn { background: var(--brand); color: #fff; transform: translateY(-2px); }
+
+  /* 联系信息卡片：悬停或点击展开 */
+  .pop {
+    position: absolute;
+    right: calc(100% + 14px);
+    top: 50%;
+    transform: translateY(-50%) translateX(8px);
+    background: var(--ink);
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 12px;
+    min-width: 190px;
+    box-shadow: 0 18px 44px rgba(18, 28, 43, 0.28);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s var(--ease);
+  }
+  .pop::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 7px solid transparent;
+    border-left-color: var(--ink);
+  }
+  .float-item:hover .pop,
+  .float-item.on .pop { opacity: 1; visibility: visible; transform: translateY(-50%); }
+  .pop strong { display: block; font-size: 0.8rem; opacity: 0.65; font-weight: 500; margin-bottom: 4px; }
+  .pop-line {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 0;
+    white-space: nowrap;
+  }
+  .pop-line:hover { color: var(--brand); }
+  .copy-ok { display: block; color: #7ee2a8; font-size: 0.78rem; margin-top: 4px; }
+
+  /* 二维码名片（与原站一致的白底卡片） */
+  .qr-pop {
+    background: #fff;
+    color: var(--ink);
+    text-align: center;
+    padding: 16px 18px 14px;
+    min-width: 0;
+  }
+  .qr-pop::after { border-left-color: #fff; }
+  .qr-pop img { width: 150px; height: auto; margin: 0 auto 8px; }
+  .qr-pop strong { color: var(--ink); opacity: 1; font-size: 0.88rem; margin-bottom: 2px; }
+  .qr-pop .pop-num { display: block; font-size: 0.86rem; font-weight: 600; margin-bottom: 4px; }
+  .qr-pop .pop-line { color: var(--ink); font-size: 0.84rem; }
+  .qr-pop .pop-line:hover { color: var(--brand); }
+  .qr-pop .pop-link {
+    display: inline-block;
+    margin-top: 6px;
+    color: var(--brand);
+    font-size: 0.86rem;
+    font-weight: 600;
+  }
+  .qr-pop .pop-link:hover { text-decoration: underline; }
+  .qr-pop .copy-ok { color: #16a34a; }
+
+  @media (max-width: 768px) {
+    .float-bar { top: auto; bottom: 18px; transform: none; }
+    .float-btn { width: 46px; height: 46px; }
+    .pop { padding: 12px 14px; min-width: 170px; }
+    .qr-pop img { width: 132px; }
+  }
+</style>

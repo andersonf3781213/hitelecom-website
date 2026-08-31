@@ -1,0 +1,70 @@
+---
+/**
+ * 全站统一图片组件
+ * - 构建时自动优化（WebP + 按需缩放）
+ * - 默认懒加载（首屏关键图请显式传 loading="eager"）
+ * - 自动注入 width/height，杜绝布局抖动
+ */
+import { Image } from 'astro:assets';
+import { resolveImage } from '../utils/images';
+
+interface Props {
+  src: string;                    // 相对 src/assets/images/ 的路径
+  alt: string;
+  width?: number;
+  height?: number;
+  widths?: number[];              // 响应式 srcset 尺寸
+  sizes?: string;
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  class?: string;
+  decoding?: 'async' | 'sync' | 'auto';
+  natural?: boolean;              // 原图直出（小图标保真，不做压缩/转格式）
+  quality?: number;               // WebP 质量（细节多的大图用，默认 Astro 中档）
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  widths,
+  sizes,
+  loading = 'lazy',
+  fetchpriority = 'auto',
+  decoding = 'async',
+  class: className,
+  natural = false,
+  quality,
+} = Astro.props;
+
+const image = await resolveImage(src);
+---
+
+{natural ? (
+  <img
+    src={image.src}
+    width={image.width}
+    height={image.height}
+    alt={alt}
+    loading={loading}
+    fetchpriority={fetchpriority}
+    decoding={decoding}
+    class={className}
+  />
+) : (
+
+<Image
+  src={image}
+  alt={alt}
+  width={width ?? (widths ? image.width : undefined)}
+  height={height ?? (widths ? image.height : undefined)}
+  widths={widths}
+  sizes={sizes}
+  quality={quality}
+  loading={loading}
+  fetchpriority={fetchpriority}
+  decoding={decoding}
+  class={className}
+/>
+)}

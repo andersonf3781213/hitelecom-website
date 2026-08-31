@@ -1,0 +1,30 @@
+---
+/**
+ * 关于我们 - 品质与可靠：qa_7 绿色之旅轮播（循环，箭头 #l1/#r1，联动右侧背景）
+ */
+import { getAboutSection } from '../../data/about';
+import { enhanceContentHtml, normalizeBody } from '../../utils/content';
+import type { Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+---
+
+<Fragment set:html={await enhanceContentHtml(normalizeBody(await getAboutSection(locale, 'quality')), 'About Hitelecom')} />
+
+<script is:inline>
+document.addEventListener('DOMContentLoaded', function () {
+  var bgs = document.querySelectorAll('.qa_7_1_right .qa_7_1_right_bg');
+  __car('.qa_7_1_left .swiper-container-banner2d', {
+    nav: ['#l1', '#r1'],
+    loop: true,
+    perView: 1,
+    speed: 1000,
+    onChange: function (i, sl) {
+      var n = sl.getAttribute('lang');
+      bgs.forEach(function (b, k) { b.classList.toggle('on', String(k) === String(n)); });
+    },
+  });
+  __car('.qa_5 .swiper-container-bannerp', { perView: 1, bullets: '#swiper-pagination-banner2', speed: 800 });
+});
+</script>

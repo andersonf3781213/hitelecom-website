@@ -1,0 +1,32 @@
+---
+/**
+ * 支持服务页（英文，第 1 页）：/service.html
+ * 与原站 1:1：横幅 + 锚点选项卡 + 技术支持六卡 + 软件区 + 文档下载（8 卡 + 分页）+ 售后表单
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ServiceShell from '../components/service/ServiceShell.astro';
+import ServiceBody from '../components/service/ServiceBody.astro';
+import { optimizedSrc } from '../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Service', item: 'https://www.hitelecom.com/service.html' },
+  ],
+};
+const pageBanner = await optimizedSrc('service/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="en"
+  title="Support & Service | IoT Hardware & Software Customization - Hitelecom"
+  description="Hitelecom support services for industrial IoT deployments: hardware and software customization, Hitelecom Cloud remote configuration and alerts, sensor brochures and responsive after-sale service for outdoor 4G and NB-IoT projects."
+>
+  <ServiceShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <ServiceBody locale="en" page={1} />
+  </ServiceShell>
+</BaseLayout>

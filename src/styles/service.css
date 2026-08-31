@@ -1,0 +1,120 @@
+/* ==========================================================================
+   支持服务区 1:1 复刻样式 —— 提取自原站 style.css，限定 .pclone 作用域
+   与 product.css 共用 nybanner / indexmid / index_1_1 / pro_1 / reveal 等公共规则，
+   本文件只包含支持服务页特有规则（ser_* / pro_1_ser）。
+   ========================================================================== */
+
+/* --- 选项卡（ Technical / Software / Document / After-Sale ） --- */
+.pclone .pro_1_ser { border-bottom:1px #d7d5d3 solid; }
+
+/* --- ser_1 技术支持六卡 --- */
+.pclone .ser_1_1 ul li { margin-bottom:1em; float:left; width:32%; margin-right:2%; }
+.pclone .ser_1_1 ul li:nth-child(3n) { margin-right:0 }
+.pclone .ser_1_1_1 { overflow:hidden }
+.pclone .ser_1_1_1 img { width:100%; }
+.pclone .ser_1_1_2 { padding:1.5625vw }
+.pclone .ser_1_1_2_1 { font-size:1.5em; }
+.pclone .ser_1_1_2_2 { line-height:1.5; margin-top:5px; min-height:5em; }
+.pclone .ser_1_1 { margin-top:3.64583333333333vw; margin-bottom:4vw; }
+.pclone .ser_1_1_1 img { transition: all 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; }
+.pclone .ser_1_1 ul li:hover .ser_1_1_1 img { transform: scale(1.08, 1.08); }
+
+/* --- ser_2 软件（宏太云） --- */
+.pclone .ser_2 { padding-bottom:8vw; overflow:hidden; position:relative; }
+.pclone .ser_2 .indexmid { position:relative; z-index:10; }
+.pclone .ser_2_1_right { float:right; width:53.28719723183391%; }
+.pclone .ser_2_1_left { margin-top:1.5625vw; float:left; width:36.57093425605536%; }
+.pclone .ser_2_1_left_1 { font-size:1.5em; }
+.pclone .ser_2_1_left_2 { font-size:2.25em; margin-top:.3em; }
+.pclone .ser_2_1_left_3 ul li { margin-bottom:1em; padding:.5em 1em; background-color:#eafaf1; position:relative; border-radius:3px; }
+.pclone .ser_2_1_left_3 ul li:after { transform: translate(-50%, -50%); content:''; position:absolute; right:-8px; width:8px; height:13px; top:50%; background-image:url(/images/css/ser/img10.png); background-position:center; background-repeat:no-repeat; }
+.pclone .ser_2_1_left_3_mid { position:relative; }
+.pclone .ser_2_1_left_3_mid_right { font-size:1.125em; transform: translate(-0%, -50%); left:3.5em; position:absolute; top:50%; }
+.pclone .ser_2_1_left_3 { margin-top:2vw; }
+.pclone .ser_2_1 { margin-top:5vw; }
+.pclone .ser_2_2 { margin-top:3.64583333333333vw; }
+.pclone .ser_2_2 ul li { background-color:#fff; position:relative; min-height:8.64583333333333vw; float:left; width:24.25%; margin-right:1%; text-align:center; box-shadow:0 0.9375em 1.875em rgba(0,0,0,0.1); margin-bottom:1em; }
+.pclone .ser_2_2 ul li:last-child { margin-right:0; }
+.pclone .ser_2_2_mid_1 { top:1.5625vw; position:absolute; width:100%; text-align:center; height:3.75vw; }
+.pclone .ser_2_2_mid_1 img { max-height:100%; }
+.pclone .ser_2_2_mid_2 { position:absolute; left:10%; width:80%; top:6vw; font-size:1.125em; }
+.pclone .ser_2_2_mid_1 img, .pclone .ser_2_1_left_3_mid_left img { transition: transform 0.3s; }
+.pclone .ser_2_2 ul li:hover .ser_2_2_mid_1 img, .pclone .ser_2_1_left_3 ul li:hover .ser_2_1_left_3_mid_left img { transform: rotateY(180deg); }
+
+/* --- ser_3 文档下载（深色固定背景） --- */
+.pclone .ser_3 { overflow:hidden; background-image:url(/images/css/ser/img18.jpg); color:#fff; background-position:center; background-repeat:no-repeat; background-size:cover; background-attachment:fixed; }
+.pclone .ser_3_1 ul li { background-color:rgba(33,160,255,0.28); overflow:hidden; border-radius:5px; padding:1.25em 1.875em; margin-top:1em; }
+.pclone .ser_3_1_mid { font-size:1.125em; position:relative; padding-right:350px; }
+.pclone .ser_3_1_mid_right { position:absolute; right:0; top:50%; transform: translate(-0%, -50%); }
+.pclone .ser_3_1_mid_right dl dd { display:inline-block; }
+.pclone .ser_3_1_mid_right dl dd a { display:block; color:#fff; position:relative; }
+.pclone .ser_3_1_mid_right_left { float:left; margin-right:5em; }
+.pclone .ser_3_1_mid_right_right { float:right }
+.pclone .ser_3_1_mid_right dl dd:nth-child(1) a:after { transform: translate(-0%, -50%); width:0.9444444444444444em; height:0.9444444444444444em; background-image:url(/images/css/ser/img19.png); background-position:center; background-repeat:no-repeat; background-size:cover; content:''; position:absolute; left:0; top:50%; }
+.pclone .ser_3_1_mid_right dl dd:nth-child(1) a { padding-left:1.5em; }
+.pclone .ser_3_1_mid_right dl dd:nth-child(2) a { padding-left:1.5em; }
+.pclone .ser_3_1_mid_right dl dd:nth-child(1) { margin-right:1em; }
+.pclone .ser_3_1_mid_right dl dd:nth-child(2) a:after { transform: translate(-0%, -50%); width:1.055555555555556em; height:0.8333333333333333em; background-image:url(/images/css/ser/img20.png); background-position:center; background-repeat:no-repeat; background-size:cover; content:''; position:absolute; left:0; top:50%; }
+.pclone .ser_3_1 { margin:2.5em 0; }
+
+/* --- 深色区白色分页（原站 pro_2_mid_right_3_wh 变体） --- */
+.pclone .pro_2_mid_right_3_wh ul li { border:1px #86949f solid; }
+.pclone .pro_2_mid_right_3_wh ul li a { color:#fff; }
+
+/* --- ser_4 售后表单 --- */
+.pclone .ser_4 { overflow:hidden; }
+.pclone .ser_4_1 ul li { float:left; width:32.52595155709343%; margin-right:1.21107266435986%; }
+.pclone .ser_4_1 ul li:nth-child(3), .pclone .ser_4_1 ul li:last-child { margin-right:0 }
+.pclone .ser_4_1 ul li:last-child { width:100%; margin-top:.9375vw; }
+.pclone .ser_4_1 ul li input { border:none; background:none; width:100%; }
+.pclone .ser_4_1 ul li div { font-size:1.125em; border:1px #d9d9d9 solid; padding:.75em .875em; }
+.pclone .ser_4_1 ul li textarea { height:200px; border:none; background:none; width:100%; }
+.pclone .ser_4_2 { margin-top:2.9375em; margin-bottom:5.875em; }
+.pclone .ser_4_1 { margin-top:4em; }
+.pclone .ser_4_2 a { height:2.875em; text-align:center; color:#fff; font-size:1.5em; border-radius:2.875em; line-height:2.875em; display:block; margin:0 auto; max-width:19.41666666666667em; overflow:hidden; position:relative }
+.pclone .ser_4_2 a span { position:relative; z-index:10; }
+.pclone .ser_4_2 a:after { transition: all .5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; content:''; background-image:url(/images/css/ser/img21.jpg); background-position:center; background-repeat:no-repeat; background-size:cover; position:absolute; left:0; top:0; width:100%; height:100%; }
+.pclone .ser_4_2 a:hover:after { width:150%; }
+
+/* --- 响应式 --- */
+@media screen and (max-width:1680px) {
+  .pclone .ser_2_2_mid_2 { font-size:1em; }
+  .pclone .ser_2_1_left_3_mid_left img { height:40px; }
+  .pclone .ser_2_1_left_3_mid_right { font-size:1em; }
+  .pclone .ser_2_1_left_2 { font-size:1.65em; }
+  .pclone .ser_2_1_left_1 { font-size:1.25em; }
+  .pclone .ser_1_1_2_1 { font-size:1.25em; }
+}
+@media screen and (max-width:1200px) {
+  .pclone .ser_2_1_left_2 { font-size:1.25em; }
+  .pclone .ser_2_1_left_1 { font-size:1.125em; }
+}
+@media screen and (max-width:950px) {
+  .pclone .ser_2_2_mid_2 { top:87px; }
+  .pclone .ser_2_2_mid_1 { height:45px; top:30px; }
+  .pclone .ser_2_2 ul li { min-height:140px; width:49%; margin-right:0 }
+  .pclone .ser_2_2 ul li:nth-child(2n) { float:right }
+}
+@media screen and (max-width:900px) {
+  .pclone .ser_2_1_left, .pclone .ser_2_1_right { width:100%; }
+  .pclone .ser_2_1_right { margin:1em 0; text-align:center }
+}
+@media screen and (max-width:810px) {
+  .pclone .ser_3_1 ul li { padding:1em; }
+  .pclone .ser_4_2 { margin-top:1em; margin-bottom:2.5em; }
+  .pclone .ser_4_2 a { font-size:1.125em; max-width:100%; }
+  .pclone .ser_4_1 ul li { width:100%; margin-right:0; margin-bottom:1em; }
+  .pclone .ser_4_1 { margin-top:2em; }
+  .pclone .ser_3_1_mid_right { padding-top:1em; position:static; transform: translate(-0%, -0%); }
+  .pclone .ser_3_1_mid { padding-right:0 }
+  .pclone .ser_1_1_2_2 { min-height:inherit }
+  .pclone .ser_1_1 ul li { width:100%; margin-right:0; }
+}
+@media screen and (max-width:480px) {
+  .pclone .ser_3 { background-attachment:inherit }
+  .pclone .ser_2_1_left_3_mid { overflow:hidden; min-height:40px; }
+  .pclone .ser_2_1_left_3_mid_left { float:left; position:absolute; left:0; }
+  .pclone .ser_2_1_left_3_mid_right { margin-top:8px; position:static; float:left; margin-left:50px; transform: translate(-0%, -0%); }
+  .pclone .ser_2_2 ul li { width:49%; margin-right:0 }
+  .pclone .ser_2_2 ul li:nth-child(2n) { float:right }
+}

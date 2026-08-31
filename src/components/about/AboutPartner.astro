@@ -1,0 +1,77 @@
+---
+/**
+ * 关于我们 - 生态合作伙伴（纯静态，verbatim HTML）
+ */
+import { getAboutSection } from '../../data/about';
+import { enhanceContentHtml, normalizeBody } from '../../utils/content';
+import { site } from '../../data/site';
+import type { Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+---
+
+<Fragment set:html={await enhanceContentHtml(normalizeBody(await getAboutSection(locale, 'partner')), 'About Hitelecom')} />
+
+<script is:inline define:vars={{
+  mailTo: 'sales@hitelecom.com',
+  formEndpoint: site.formEndpoint,
+  thanksUrl: locale === 'zh' ? '/zh/about/thanks.html' : '/about/thanks.html',
+  msgName: locale === 'zh' ? '姓名不能为空' : 'Name cannot be empty',
+  msgPhone: locale === 'zh' ? '电话不能为空' : 'Phone cannot be empty',
+  msgEmail: locale === 'zh' ? '邮箱不能为空' : 'Email cannot be empty',
+  msgFail: locale === 'zh' ? '提交失败，请稍后再试或直接发邮件至 sales@hitelecom.com' : 'Submission failed. Please retry or email sales@hitelecom.com directly.',
+  mailSubject: locale === 'zh' ? '【合作伙伴申请】' : 'Partner Application - ',
+  labels: locale === 'zh'
+    ? ['公司名称', '姓名', '电话', '职位', '邮箱', '合作意向', '留言']
+    : ['Company', 'Name', 'Phone', 'Position', 'Email', 'Intentions', 'Message'],
+}}>
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('form1');
+  if (!form) return;
+  /* 双模式提交：配置 formEndpoint 则真实发送并跳感谢页；否则 mailto 回退。 */
+  function val(id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; }
+  window.showAddr = function () {
+    if (!val('name')) { alert(msgName); return false; }
+    if (!val('phone')) { alert(msgPhone); return false; }
+    if (!val('email')) { alert(msgEmail); return false; }
+    var lines = [
+      labels[0] + ': ' + val('company'),
+      labels[1] + ': ' + val('name'),
+      labels[2] + ': ' + val('phone'),
+      labels[3] + ': ' + val('jobs'),
+      labels[4] + ': ' + val('email'),
+      labels[5] + ': ' + val('types'),
+      labels[6] + ': ' + val('message'),
+    ];
+    if (formEndpoint) {
+      var fd = new FormData();
+      fd.append('subject', mailSubject + (val('company') || val('name')));
+      fd.append('from_name', val('name'));
+      fd.append('company', val('company'));
+      fd.append('name', val('name'));
+      fd.append('phone', val('phone'));
+      fd.append('email', val('email'));
+      fd.append('message', lines.join('\n'));
+      fetch(formEndpoint, { method: 'POST', body: fd, headers: { Accept: 'application/json' } })
+        .then(function (r) { window.location.href = r.ok ? thanksUrl : thanksUrl + '?sent=0'; })
+        .catch(function () { alert(msgFail); });
+      return false;
+    }
+    var href = 'mailto:' + mailTo
+      + '?subject=' + encodeURIComponent(mailSubject + (val('company') || val('name')))
+      + '&body=' + encodeURIComponent(lines.join('\n'));
+    window.location.href = href;
+    return false;
+  };
+  /* Intentions 单选（partner 页） */
+  document.querySelectorAll('.pa_5_1 ul li dl dd').forEach(function (dd) {
+    dd.addEventListener('click', function () {
+      dd.classList.add('on');
+      Array.prototype.forEach.call(dd.parentElement.children, function (x) { if (x !== dd) x.classList.remove('on'); });
+      var t = document.getElementById('types');
+      if (t) t.value = dd.getAttribute('lang') || '';
+    });
+  });
+});
+</script>

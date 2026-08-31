@@ -1,0 +1,166 @@
+---
+/**
+ * 新闻中心：三张新闻卡片 + 更多按钮
+ * 版式 1:1 对应原站 index_4：白色悬浮卡片 + 长箭头 Readmore
+ * 新闻内容维护见 src/data/home.ts -> news.items
+ */
+import Img from '../Img.astro';
+import { homeContent } from '../../data/home';
+import { l, type Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const { news } = homeContent[locale];
+---
+
+<section class="news" aria-labelledby="news-title">
+  <div class="wave-divider" aria-hidden="true">
+    <Img src="common/wave.png" alt="" width={1920} height={256} loading="lazy" />
+  </div>
+  <div class="container">
+    <h2 id="news-title" class="section-title reveal">{news.title}</h2>
+    <p class="section-subtitle reveal">{news.subtitle}</p>
+
+    <ul class="news-grid">
+      {news.items.map((item, i) => (
+        <li class:list={['reveal', `reveal-d${i + 1}`]}>
+          <a class="news-card" href={l(item.href, locale)} aria-label={item.title}>
+            <div class="news-card-in">
+              <div class="news-media">
+                <Img
+                  src={item.image}
+                  alt={item.imageAlt}
+                  widths={[400, 640, 900]}
+                  sizes="(max-width: 640px) 92vw, 26vw"
+                />
+              </div>
+              <p class="news-meta">
+                <span class="news-source">{item.source}</span>
+                <time datetime={item.date.replaceAll('.', '-')}>{item.date}</time>
+              </p>
+              <h3 class="news-title">{item.title}</h3>
+              <p class="news-excerpt">{item.excerpt}</p>
+              <span class="news-more"><span>{news.cta}</span></span>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="news-all reveal">
+      <a class="btn-pill" href={l(news.moreHref, locale)}>
+        {news.cta}
+        <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+      </a>
+    </p>
+  </div>
+</section>
+
+<style>
+  .news { padding: clamp(70px, 8vw, 150px) 0 0; background: #fff; position: relative; }
+  .wave-divider { position: absolute; top: 0; left: 0; width: 100%; z-index: 4; pointer-events: none; }
+  .wave-divider :global(img) { width: 100%; height: auto; display: block; }
+
+  /* 原站 .index_4_1：三列，列宽 30.9028% + 列间距 3.6458% */
+  .news-grid {
+    margin-top: 4.6875vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.6458%;
+    row-gap: 4.6875vw;
+  }
+
+  /* 原站 li：白底 + 投影 + min-height:544px，内边距 .9375em */
+  .news-card {
+    display: block;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0.9375em 1.875em rgba(0, 0, 0, 0.1);
+    min-height: 544px;
+  }
+  .news-card-in { padding: 0.9375em; }
+
+  /* 原站 .index_4_1_mid_1：图片 hover 缓慢放大 1.08 */
+  .news-media { overflow: hidden; }
+  .news-media :global(img) {
+    width: 100%;
+    aspect-ratio: 721 / 472;
+    object-fit: cover;
+    transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .news-card:hover .news-media :global(img) { transform: scale(1.08); }
+
+  /* 原站 .index_4_1_mid_2：来源 + 日期，灰色大写 */
+  .news-meta {
+    color: #7f7f7f;
+    text-transform: uppercase;
+    margin: 1.5em 0 1em;
+    display: flex;
+    gap: 0.5em;
+  }
+
+  /* 原站 .index_4_1_mid_3：标题 1.5em 黑色，两行截断 */
+  .news-title {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  /* 原站 .index_4_1_mid_4：摘要两行截断 */
+  .news-excerpt {
+    color: #333;
+    line-height: 1.5;
+    margin: 1em 0 1.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  /* 原站 .index_4_1_mid_5：蓝色 Readmore + 细长箭头，hover 箭头左移 */
+  .news-more span {
+    padding-right: 4em;
+    color: #2791e6;
+    display: inline-block;
+    position: relative;
+  }
+  .news-more span::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.9375em;
+    height: 0.5625em;
+    background-image: url('../../assets/images/index/img24.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .news-card:hover .news-more span::after { right: 1em; }
+
+  /* 原站 .index_4_2：底部按钮容器 */
+  .news-all { text-align: center; margin: 4.6875vw 0; }
+
+  @media (max-width: 1680px) {
+    .news-card { min-height: 500px; }
+    .news-title { font-size: 1.25em; }
+  }
+  @media (max-width: 640px) {
+    .news-grid { grid-template-columns: 1fr; }
+    .news-title { font-size: 1.125em; }
+  }
+  @media (max-width: 480px) {
+    .news-card { min-height: inherit; }
+  }
+</style>

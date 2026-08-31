@@ -1,0 +1,49 @@
+---
+/**
+ * 中文 404 页：与英文 404 对应（/zh/404.html）
+ * 供语言切换/hreflang 指向，也可作为中文站点的错误兜底页
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { l } from '../../i18n';
+---
+
+<BaseLayout
+  headerSolid
+  locale="zh"
+  title="页面未找到 (404) - 宏太通信工业物联网传感器"
+  description="您访问的页面不存在。可通过下方入口浏览宏太通信工业物联网传感器、解决方案与支持服务。"
+>
+  <div class="nf-page">
+    <div class="nf-in">
+      <p class="nf-code">404</p>
+      <h1 class="nf-title">页面未找到</h1>
+      <p class="nf-desc">该页面可能已被移动或重命名，您可以访问以下常用入口：</p>
+      <ul class="nf-links">
+        <li><a class="btn-pill" href={l('/', 'zh')}>首页</a></li>
+        <li><a class="btn-pill ghost" href={l('/product/', 'zh')}>产品中心</a></li>
+        <li><a class="btn-pill ghost" href={l('/solution/', 'zh')}>解决方案</a></li>
+        <li><a class="btn-pill ghost" href={l('/about/contact', 'zh')}>联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .nf-page { padding: clamp(120px, 14vw, 190px) 20px clamp(70px, 8vw, 120px); text-align: center; }
+  .nf-code {
+    font-size: clamp(4.5rem, 12vw, 8rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--brand);
+    letter-spacing: 0.04em;
+  }
+  .nf-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 600; margin: 0.5em 0; }
+  .nf-desc { color: #66707d; margin-bottom: 2.2em; }
+  .nf-links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; list-style: none; }
+  .nf-links .btn-pill.ghost {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid #dbe2ea;
+  }
+  .nf-links .btn-pill.ghost:hover { border-color: var(--brand); color: var(--brand); }
+</style>

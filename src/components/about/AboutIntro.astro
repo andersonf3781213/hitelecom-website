@@ -1,0 +1,40 @@
+---
+/**
+ * 关于我们 - 公司简介：发展历程轮播(#l1/#r1) + 环境轮播(#l2/#r2 带 01OF03 计数) + 荣誉轮播(4列进度条)
+ */
+import { getAboutSection } from '../../data/about';
+import { enhanceContentHtml, normalizeBody } from '../../utils/content';
+import type { Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+---
+
+<Fragment set:html={await enhanceContentHtml(normalizeBody(await getAboutSection(locale, 'intro')), 'About Hitelecom')} />
+
+<script is:inline>
+document.addEventListener('DOMContentLoaded', function () {
+  /* 发展历程：slide 宽度由 CSS 控制，箭头 + 触摸（原站 speed:1000） */
+  __car('.swiper-container-banner2d', { nav: ['#l1', '#r1'], gap: 12, speed: 1000 });
+
+  /* 公司环境：整屏单张，计数器取 slide lang（原站 speed:1000） */
+  __car('.swiper-container-banner2d2', {
+    nav: ['#l2', '#r2'],
+    gap: 16,
+    perView: 1,
+    speed: 1000,
+    onChange: function (i, sl) {
+      var sp = document.querySelector('.about_5_1__nav_right span');
+      if (sp && sl.getAttribute('lang')) sp.textContent = sl.getAttribute('lang');
+    },
+  });
+
+  /* 荣誉资质：桌面 4 列/平板 3 列/手机 2 列 + #rrr 进度条（原站 speed:1000） */
+  __car('.swiper-container-banner2d2s', {
+    perView: function () { var w = window.innerWidth; return w <= 640 ? 2 : w <= 810 ? 3 : 4; },
+    gap: function () { return window.innerWidth <= 810 ? 16 : 50; },
+    progress: '#rrr',
+    speed: 1000,
+  });
+});
+</script>

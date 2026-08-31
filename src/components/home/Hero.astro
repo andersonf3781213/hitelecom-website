@@ -1,0 +1,311 @@
+---
+/**
+ * 首页 Hero 轮播（原站 indexbanner 1:1）
+ * - 三张幻灯片全部输出在 HTML 中（爬虫可读，无 JS 依赖）
+ * - 首屏背景图 WebP 化 + preload，设备图 fetchpriority=high
+ * - 原生 JS 驱动：自动播放 / 分页条 / 触屏滑动 / 悬停暂停
+ */
+import Img from '../Img.astro';
+import { homeContent } from '../../data/home';
+import { optimizedSrc } from '../../utils/images';
+import { l, type Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const { hero } = homeContent[locale];
+
+// 构建期优化三张背景图（WebP），首图交给布局 preload
+const bgSrcs = await Promise.all(
+  hero.slides.map((s) => optimizedSrc(s.bg, { width: 1920 })),
+);
+---
+
+<section class="hero" aria-roledescription="carousel" aria-label="Highlights">
+  <div class="hero-slides">
+    {hero.slides.map((slide, i) => (
+      <div
+        class:list={['hero-slide', { active: i === 0 }]}
+        style={`--bg: url('${bgSrcs[i]}')`}
+        aria-hidden={i !== 0}
+        role="group"
+        aria-roledescription="slide"
+        aria-label={`${i + 1} / ${hero.slides.length}`}
+      >
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="hero-text">
+            {i === 0 ? (
+              <h1 class="hero-title anim">{slide.eyebrow}<br />{slide.title}</h1>
+            ) : (
+              <h2 class="hero-title anim">{slide.eyebrow}<br />{slide.title}</h2>
+            )}
+            <p class="hero-desc anim">{slide.desc}</p>
+            <p class="anim">
+              <a class="hero-cta" href={l(slide.href, locale)}>
+                <span>{slide.cta}</span>
+              </a>
+            </p>
+          </div>
+          <div class="hero-device anim">
+            <Img
+              src={slide.device}
+              alt={slide.deviceAlt}
+              widths={[480, 760, 1100]}
+              sizes="(max-width: 860px) 88vw, 62vw"
+              quality={90}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              fetchpriority={i === 0 ? 'high' : 'low'}
+            />
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div class="hero-pagination" role="tablist" aria-label="Slides">
+    {hero.slides.map((_, i) => (
+      <button
+        type="button"
+        class:list={['hero-dot', { active: i === 0 }]}
+        data-index={i}
+        role="tab"
+        aria-selected={i === 0}
+        aria-label={`Slide ${i + 1}`}
+      ></button>
+    ))}
+  </div>
+
+  <noscript>
+    <style>
+      .hero { height: auto !important; }
+      .hero-slide { position: relative !important; opacity: 1 !important; visibility: visible !important; }
+      .hero-pagination { display: none !important; }
+    </style>
+  </noscript>
+</section>
+
+<script>
+  const hero = document.querySelector('.hero') as HTMLElement;
+  const slides = Array.from(hero.querySelectorAll('.hero-slide'));
+  const dots = Array.from(hero.querySelectorAll('.hero-dot'));
+  let cur = 0;
+  let timer: number | undefined;
+  const DURATION = 5200;
+
+  function goTo(i: number) {
+    if (i === cur) return;
+    slides[cur].classList.remove('active');
+    slides[cur].setAttribute('aria-hidden', 'true');
+    dots[cur].classList.remove('active');
+    dots[cur].setAttribute('aria-selected', 'false');
+    cur = (i + slides.length) % slides.length;
+    slides[cur].classList.add('active');
+    slides[cur].setAttribute('aria-hidden', 'false');
+    dots[cur].classList.add('active');
+    dots[cur].setAttribute('aria-selected', 'true');
+  }
+  const next = () => goTo(cur + 1);
+  const play = () => { stop(); timer = window.setInterval(next, DURATION); };
+  const stop = () => { if (timer) window.clearInterval(timer); };
+
+  dots.forEach((d) =>
+    d.addEventListener('click', () => { goTo(Number((d as HTMLElement).dataset.index)); play(); }),
+  );
+  hero.addEventListener('mouseenter', stop);
+  hero.addEventListener('mouseleave', play);
+
+  // 触屏滑动
+  let startX = 0;
+  hero.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; stop(); }, { passive: true });
+  hero.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 48) goTo(cur + (dx < 0 ? 1 : -1));
+    play();
+  }, { passive: true });
+
+  // 页面不可见时暂停，省电省资源
+  document.addEventListener('visibilitychange', () => (document.hidden ? stop() : play()));
+  play();
+</script>
+
+<style>
+  .hero {
+    position: relative;
+    height: 100vh;
+    min-height: 620px;
+    overflow: hidden;
+    background: #1e7fd6;
+  }
+  .hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.9s var(--ease), visibility 0s linear 0.9s;
+  }
+  .hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.9s var(--ease);
+    z-index: 2;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: var(--bg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.04);
+    transition: transform 6s var(--ease);
+  }
+  .hero-slide.active .hero-bg { transform: scale(1); }
+
+  /* 原站 .banner_img_jj_fsdj：内容层全宽覆盖，左侧文案 left:9.375% / 宽45% / 垂直居中 */
+  .hero-inner {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+  }
+  .hero-text {
+    position: absolute;
+    left: 9.375%;
+    width: 45%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+  @media (max-width: 1200px) {
+    .hero-text { left: 3.125vw; }
+  }
+  .hero-title {
+    font-size: clamp(2rem, 1.1rem + 2.7vw, 3.9rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.35em;
+  }
+  .hero-desc {
+    font-size: clamp(0.95rem, 0.9rem + 0.25vw, 1.125rem);
+    line-height: 1.9;
+    opacity: 0.92;
+    margin-bottom: 2.6em;
+    max-width: 46ch;
+  }
+
+  /* 原站 .remo 按钮：白色描边胶囊 + 滑动箭头 */
+  .hero-cta {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 999px;
+    font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.125rem);
+    line-height: 2.35em;
+    padding: 0 2.6em;
+    position: relative;
+    transition: background 0.35s var(--ease);
+  }
+  .hero-cta span { position: relative; padding-right: 1.6em; }
+  .hero-cta span::after {
+    content: '→';
+    /* Poppins 无 → 字形：用系统字体渲染，避免拉下中文字体 */
+    font-family: var(--font-sys);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: right 0.45s var(--ease);
+  }
+  .hero-cta:hover { background: rgba(255, 255, 255, 0.14); }
+  .hero-cta:hover span::after { right: -0.55em; }
+
+  /* 原站 .banner_img_jj_mid_fsdj_right：第1/2帧垂直居中（高80%），第3帧贴底宽62.29% */
+  .hero-device {
+    position: absolute;
+    right: 0;
+    top: 10%; /* 等价于 top:50% + translateY(-50%)，把 transform 留给入场动画 */
+    height: 80%;
+    width: 62.29%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  .hero-device :global(img) {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  /* 第3帧（云平台）：原站 bottom:0 + 图片撑满容器宽（桌面全尺寸通用） */
+  .hero-slide:nth-child(3) .hero-device {
+    top: auto;
+    bottom: 0;
+    height: auto;
+  }
+  .hero-slide:nth-child(3) .hero-device :global(img) {
+    width: 100%;
+    max-height: none;
+  }
+
+  /* 原站 @media(min-width:1440px)：第1/2帧也切换为贴底全宽显示（第2帧容器加宽至67.65625%） */
+  @media (min-width: 1440px) {
+    .hero-slide:nth-child(1) .hero-device,
+    .hero-slide:nth-child(2) .hero-device {
+      top: auto;
+      bottom: 0;
+      height: auto;
+    }
+    .hero-slide:nth-child(2) .hero-device { width: 67.65625%; }
+    .hero-slide:nth-child(1) .hero-device :global(img),
+    .hero-slide:nth-child(2) .hero-device :global(img) {
+      width: 100%;
+      max-height: none;
+    }
+  }
+
+  /* 入场动画（swiper-animate 复刻） */
+  .anim { opacity: 0; transform: translateY(44px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
+  .hero-device.anim { transform: translateX(60px); transition-duration: 1s; }
+  .hero-slide.active .anim { opacity: 1; transform: none; }
+  .hero-slide.active .anim:nth-child(1) { transition-delay: 0.15s; }
+  .hero-slide.active .anim:nth-child(2) { transition-delay: 0.32s; }
+  .hero-slide.active .anim:nth-child(3) { transition-delay: 0.49s; }
+  .hero-slide.active .hero-device.anim { transition-delay: 0.4s; }
+
+  .hero-pagination {
+    position: absolute;
+    z-index: 5;
+    bottom: clamp(22px, 4vh, 44px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: clamp(10px, 1.2vw, 20px);
+  }
+  .hero-dot {
+    width: clamp(64px, 7.3vw, 140px);
+    height: 2px;
+    background: rgba(255, 255, 255, 0.4);
+    position: relative;
+    overflow: hidden;
+    transition: background 0.4s;
+  }
+  .hero-dot.active::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    animation: dotProgress 5.2s linear;
+  }
+  @keyframes dotProgress { from { transform: scaleX(0); transform-origin: left; } to { transform: scaleX(1); } }
+
+  /* 原站 ≤810px：文案 top:20%、左右 3.125vw；插画置后弱化 */
+  @media (max-width: 860px) {
+    .hero { min-height: 560px; height: 92vh; }
+    .hero-text { left: 3.125vw; right: 3.125vw; width: auto; top: 20%; transform: none; }
+    .hero-device { width: 88%; opacity: 0.55; }
+    .hero-slide.active .hero-device.anim { opacity: 0.55; }
+    .hero-desc { max-width: 90%; margin-bottom: 1.8em; }
+  }
+</style>

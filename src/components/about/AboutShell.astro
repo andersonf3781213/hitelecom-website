@@ -1,0 +1,148 @@
+---
+/**
+ * About 区外壳：引入 1:1 复刻样式 + .pclone 作用域 + 共享轮播引擎/选项卡脚本
+ */
+import '../../styles/product.css';
+import '../../styles/about.css';
+---
+
+<slot name="head" slot="head" />
+<div class="pclone">
+  <slot />
+</div>
+
+<script>
+/* 通用轮播引擎（替代原站 Swiper，同名类名保持样式一致）
+   打包为外置模块：全站 about 页共享一份缓存文件，不再每页内联 6KB。
+   各板块 is:inline 的 DOMContentLoaded 调用在其后执行，window.__car 必然就绪。 */
+window.__car = function (sel, opts) {
+  var c = typeof sel === 'string' ? document.querySelector(sel) : sel;
+  if (!c) return null;
+  var w = c.querySelector('.swiper-wrapper');
+  var realSlides = Array.prototype.slice.call(w.children);
+  if (!realSlides.length) return null;
+  opts = opts || {};
+  var N = realSlides.length;
+  var loop = !!opts.loop && N > 1;
+  var K = 0;
+  if (loop) {
+    K = 2;
+    for (var k = 0; k < K; k++) {
+      w.appendChild(realSlides[k % N].cloneNode(true));
+      w.insertBefore(realSlides[N - 1 - k].cloneNode(true), w.firstChild);
+    }
+  }
+  var slides = Array.prototype.slice.call(w.children);
+  var p0 = K; // 当前位置（含克隆）
+  function gap() { return typeof opts.gap === 'function' ? opts.gap() : (opts.gap || 0); }
+  function pv() { return opts.perView ? (typeof opts.perView === 'function' ? opts.perView() : opts.perView) : 0; }
+  function maxTranslate() { return Math.max(0, w.scrollWidth - c.clientWidth); }
+  function stepX(i) { return slides[i].offsetLeft - slides[K].offsetLeft; }
+  function maxIdx() {
+    var mt = maxTranslate(), m = 0;
+    for (var i = 0; i < slides.length; i++) { if (slides[i].offsetLeft - slides[0].offsetLeft <= mt + 1) m = i; }
+    return m;
+  }
+  function realIdx(pp) { return ((pp - K) % N + N) % N; }
+  var bulletsEl = opts.bullets ? c.parentElement.querySelector(opts.bullets) || document.querySelector(opts.bullets) : null;
+  var progressEl = opts.progress ? document.querySelector(opts.progress) : null;
+  var progressFill = progressEl ? progressEl.querySelector('.swiper-pagination-progressbar-fill') : null;
+  if (progressEl && !progressFill) {
+    progressFill = document.createElement('span');
+    progressFill.className = 'swiper-pagination-progressbar-fill';
+    progressEl.appendChild(progressFill);
+  }
+  function buildBullets() {
+    if (!bulletsEl) return;
+    bulletsEl.innerHTML = '';
+    var n = loop ? N : maxIdx() + 1;
+    for (var i = 0; i < n; i++) {
+      (function (i) {
+        var b = document.createElement('span');
+        b.className = 'swiper-pagination-bullet' + (i === realIdx(p0) ? ' swiper-pagination-bullet-active' : '');
+        b.addEventListener('click', function () { go(K + i); });
+        bulletsEl.appendChild(b);
+      })(i);
+    }
+  }
+  function paintBullets() {
+    if (!bulletsEl) return;
+    Array.prototype.forEach.call(bulletsEl.children, function (b, k) {
+      b.classList.toggle('swiper-pagination-bullet-active', k === realIdx(p0));
+    });
+  }
+  function paintProgress() {
+    if (!progressFill) return;
+    /* 与原站 Swiper progressbar 一致：(当前停留位+1)/停留位总数，初始 1/6，到底 1 */
+    var n2 = maxIdx() + 1;
+    var pr = (Math.min(p0, maxIdx()) + 1) / n2;
+    progressFill.style.transform = 'translate3d(0,0,0) scaleX(' + pr + ')';
+  }
+  var jumpTimer = null;
+  var speed = opts.speed || 300; /* 原站 Swiper speed 参数（about 各轮播多为 1000ms） */
+  function go(pp, anim) {
+    if (anim === undefined) anim = true;
+    if (loop) { pp = Math.max(0, Math.min(pp, slides.length - 1)); }
+    else { pp = Math.max(0, Math.min(pp, maxIdx())); }
+    p0 = pp;
+    var x = opts.centered
+      ? slides[pp].offsetLeft - (c.clientWidth - slides[pp].offsetWidth) / 2
+      : Math.min(slides[pp].offsetLeft - slides[0].offsetLeft, maxTranslate());
+    w.style.transition = anim ? 'transform ' + speed + 'ms' : 'none';
+    w.style.transform = 'translate3d(' + (-x) + 'px,0,0)';
+    slides.forEach(function (s, k) { s.classList.toggle('swiper-slide-active', k === pp); });
+    paintBullets(); paintProgress();
+    if (opts.onChange) opts.onChange(realIdx(pp), realSlides[realIdx(pp)]);
+    /* 进入克隆区后，动画结束瞬移回真实位（无缝循环） */
+    if (loop) {
+      clearTimeout(jumpTimer);
+      if (pp < K || pp >= K + N) {
+        jumpTimer = setTimeout(function () {
+          go(pp + (pp < K ? N : -N), false);
+        }, anim ? speed + 50 : 0);
+      }
+    }
+  }
+  function layout() {
+    var n = pv();
+    if (n) {
+      var g = gap(), cw = c.clientWidth, sw = (cw - g * (n - 1)) / n;
+      slides.forEach(function (s) { s.style.width = sw + 'px'; s.style.marginRight = g + 'px'; });
+      slides[slides.length - 1].style.marginRight = '0px';
+    }
+    buildBullets(); go(p0, false);
+  }
+  if (opts.nav) {
+    var pv2 = document.querySelector(opts.nav[0]), nx = document.querySelector(opts.nav[1]);
+    if (pv2) pv2.addEventListener('click', function () { go(p0 - 1); });
+    if (nx) nx.addEventListener('click', function () { go(p0 + 1); });
+  }
+  /* 触摸 + 鼠标拖拽滑动（原站 Swiper 支持鼠标拖动） */
+  var sx = 0;
+  c.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });
+  c.addEventListener('touchend', function (e) {
+    var dx = e.changedTouches[0].clientX - sx;
+    if (dx < -40) go(p0 + 1); else if (dx > 40) go(p0 - 1);
+  }, { passive: true });
+  var mdown = false, moved = false;
+  c.addEventListener('dragstart', function (e) { e.preventDefault(); });
+  c.addEventListener('mousedown', function (e) { e.preventDefault(); mdown = true; moved = false; sx = e.clientX; });
+  c.addEventListener('mousemove', function (e) { if (mdown && Math.abs(e.clientX - sx) > 8) moved = true; });
+  c.addEventListener('mouseup', function (e) {
+    if (!mdown) return; mdown = false;
+    var dx = e.clientX - sx;
+    if (dx < -40) go(p0 + 1); else if (dx > 40) go(p0 - 1);
+  });
+  c.addEventListener('mouseleave', function () { mdown = false; });
+  /* 拖拽后阻止误触发点击 */
+  c.addEventListener('click', function (e) { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+  window.addEventListener('resize', layout);
+  layout();
+  return { go: go, layout: layout, get idx() { return realIdx(p0); } };
+};
+
+/* 选项卡下拉（移动端 select#changeurl） */
+document.addEventListener('change', function (e) {
+  if (e.target && e.target.id === 'changeurl' && e.target.value) location.href = e.target.value;
+});
+</script>

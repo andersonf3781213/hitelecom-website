@@ -1,0 +1,46 @@
+---
+/**
+ * 常见问题页主体（中英共用）：横幅 → 选项卡 → FAQ 手风琴（点击展开，原站行为：同时只开一条）
+ */
+import NewsBanner from './NewsBanner.astro';
+import NewsTabs from './NewsTabs.astro';
+import { getNewsContent } from '../../data/news';
+import type { Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const d = await getNewsContent(locale);
+---
+
+<NewsBanner locale={locale} />
+<NewsTabs locale={locale} active="faqs" />
+
+<div class="clearfix faqs_1">
+  <div class="indexmid">
+    <div class="clearfix faqs_1_1">
+      <ul>
+        {d.faqs.map((f) => (
+          <li class="reveal">
+            <div class="faqs_1_1_mid">
+              <div class="faqs_1_1_mid_1 daxie">{f.date}</div>
+              <div class="faqs_1_1_mid_2">{f.q}</div>
+              <div class="faqs_1_1_mid_3">{f.a}</div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div class="clearfix pro_2_mid_right_3 pro_2_mid_right_3_wh reveal"></div>
+  </div>
+</div>
+
+<script>
+  // FAQ 手风琴：点击切换展开，其余收起（与原站一致）
+  document.querySelectorAll<HTMLElement>('.faqs_1_1 li').forEach((li) => {
+    li.addEventListener('click', () => {
+      const on = li.classList.contains('on');
+      li.parentElement?.querySelectorAll('li.on').forEach((x) => x.classList.remove('on'));
+      if (!on) li.classList.add('on');
+    });
+  });
+</script>

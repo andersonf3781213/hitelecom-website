@@ -1,0 +1,44 @@
+---
+/**
+ * 新闻中心-常见问题（中文）：/zh/news/faqs.html
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import NewsShell from '../../../components/news/NewsShell.astro';
+import FaqsBody from '../../../components/news/FaqsBody.astro';
+import { getNewsContent } from '../../../data/news';
+import { optimizedSrc } from '../../../utils/images';
+
+const faqs = (await getNewsContent('zh')).faqs;
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh.html' },
+    { '@type': 'ListItem', position: 2, name: '新闻中心', item: 'https://www.hitelecom.com/zh/news.html' },
+    { '@type': 'ListItem', position: 3, name: '常见问题', item: 'https://www.hitelecom.com/zh/news/faqs.html' },
+  ],
+};
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+const pageBanner = await optimizedSrc('news/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="zh"
+  title="常见问题 | 工业物联网传感器问答 - 宏太智慧"
+  description="宏太智慧工业物联网传感器常见问题：电池续航、EMC 抗干扰设计、安装部署、测量精度、4G/NB-IoT/LoRa 通信与宏太云平台升级。"
+>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+    <FaqsBody locale="zh" />
+  </NewsShell>
+</BaseLayout>

@@ -1,0 +1,158 @@
+---
+/**
+ * 新闻详情主体（中英共用）：横幅 → 面包屑+返回 → 标题/日期/正文 → 上一篇/下一篇 → 相关推荐轮播
+ */
+import Img from '../Img.astro';
+import NewsBanner from './NewsBanner.astro';
+import { getNewsContent } from '../../data/news';
+import { enhanceContentHtml, normalizeBody } from '../../utils/content';
+import { l, type Locale } from '../../i18n';
+
+interface Props { locale: Locale; id: string }
+const { locale, id } = Astro.props;
+const d = await getNewsContent(locale);
+const det = d.details[id];
+const bodyHtml = await enhanceContentHtml(normalizeBody(det.body), det.title || 'Hitelecom News');
+const detailHref = (nid: string) => l(`/news/show/id/${nid}`, locale);
+const catHref: Record<string, string> = {
+  company: l('/news/', locale),
+  exh: l('/news/index/cid/81', locale),
+  ind: l('/news/index/cid/80', locale),
+};
+const relatedCards = det.related.map((rid) => d.index[rid]).filter(Boolean);
+---
+
+<NewsBanner locale={locale} heading={false} />
+
+{/* 面包屑 + 返回 */}
+<div class="clearfix so_info_1">
+  <div class="indexmid">
+    <div class="so_info_1_mid reveal">
+      <div class="so_info_1_mid_left">
+        <a href={l('/', locale)}>{d.crumbHome}</a> / <a href={l('/news/', locale)}>{d.crumbNews}</a> / <span>{d.catNames[det.cat]}</span>
+      </div>
+      <div class="so_info_1_mid_right">
+        <a href={catHref[det.cat]}>{d.returnLabel}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* 正文 */}
+<div class="clearfix news_info_1">
+  <div class="indexmid">
+    {det.title
+      ? <h1 class="news_info_1_1 reveal">{det.title}</h1>
+      : <div class="news_info_1_1 reveal"></div>}
+    <div class="daxie news_info_1_2 reveal">{det.date}</div>
+    <div class="clearfix news_info_1_3 reveal" set:html={bodyHtml} />
+
+    {/* 上一篇 / 下一篇 */}
+    {det.pn.length > 0 && (
+      <div class="clearfix news_info_1_4 reveal">
+        <ul>
+          {det.pn.map((p) => (
+            <li class={p.cls}>
+              <a href={detailHref(p.id)}>
+                <div class="news_info_1_4_mid">
+                  <div class="news_info_1_4_mid_left">
+                    {p.img && <Img src={p.img} alt={p.title} widths={[560, 1120]} sizes="(max-width: 640px) 0vw, 38vw" quality={82} />}
+                  </div>
+                  <div class="news_info_1_4_mid_right">
+                    <div class="news_info_1_4_mid_right_mid">
+                      <div class="news_info_1_4_mid_right_1">{p.label}</div>
+                      <div class="news_info_1_4_mid_right_2 hi">{p.title}</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </div>
+</div>
+
+{/* 相关推荐轮播 */}
+{relatedCards.length > 0 && (
+  <div class="clearfix news_info_2">
+    <div class="indexmid">
+      <div class="index_1_1 reveal">{d.relatedHeading}</div>
+      <div class="clearfix news_info_2_1 reveal">
+        <div class="clearfix news_1_1 reveal">
+          <div class="swiper-container swiper-container-bannerp" data-carousel="related">
+            <div class="swiper-wrapper">
+              {relatedCards.map((it) => (
+                <div class="swiper-slide" style="background-color:#fff;">
+                  <a href={detailHref(it.id)}>
+                    <div class="news_2_1_1">
+                      <Img src={it.img} alt={it.title || 'Hitelecom news'} widths={[480, 960]} sizes="(max-width: 480px) 100vw, (max-width: 810px) 50vw, 33vw" quality={85} />
+                    </div>
+                    <div class="news_2_1_2">
+                      <div class="news_2_1_2_1 daxie">{it.date}</div>
+                      <div class="news_2_1_2_2">{it.title}</div>
+                      <div class="news_2_1_2_3">{it.excerpt}</div>
+                      <div class="news_1_1_mid_right_mid_4"><span>{d.readmore}</span></div>
+                    </div>
+                  </a>
+                </div>
+              ))}
+            </div>
+            <div class="swiper-pagination swiper-pagination-banner2 swiper-pagination-bullets" id="npp"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+<script>
+  // 相关推荐轮播（复刻原站 swiper：桌面 3 张/间距 60，≤810px 2 张/间距 16，≤480px 1 张/间距 16）
+  document.querySelectorAll<HTMLElement>('[data-carousel="related"]').forEach((root) => {
+    const wrap = root.querySelector<HTMLElement>('.swiper-wrapper');
+    const slides = Array.from(root.querySelectorAll<HTMLElement>('.swiper-slide'));
+    const dotsBox = root.querySelector<HTMLElement>('#npp');
+    if (!wrap || !slides.length || !dotsBox) return;
+    let idx = 0, dots: HTMLElement[] = [];
+
+    const perView = () => (window.innerWidth <= 480 ? 1 : window.innerWidth <= 810 ? 2 : 3);
+    const gap = () => (window.innerWidth <= 810 ? 16 : 60);
+
+    function layout() {
+      const pv = perView(), g = gap();
+      const w = (root.clientWidth - g * (pv - 1)) / pv;
+      slides.forEach((s, i) => {
+        s.style.width = `${w}px`;
+        s.style.marginRight = i < slides.length - 1 ? `${g}px` : '0px';
+      });
+      const maxIdx = Math.max(0, slides.length - pv);
+      dotsBox.innerHTML = '';
+      dots = [];
+      for (let i = 0; i <= maxIdx; i++) {
+        const b = document.createElement('span');
+        b.className = 'swiper-pagination-bullet' + (i === idx ? ' swiper-pagination-bullet-active' : '');
+        b.addEventListener('click', () => go(i));
+        dotsBox.appendChild(b);
+        dots.push(b);
+      }
+      go(Math.min(idx, maxIdx));
+    }
+    function go(i: number) {
+      const maxIdx = dots.length - 1;
+      idx = Math.max(0, Math.min(i, maxIdx));
+      const step = (slides[0] as HTMLElement).offsetWidth + gap();
+      wrap.style.transition = 'transform .8s';
+      wrap.style.transform = `translateX(${-idx * step}px)`;
+      dots.forEach((b, j) => b.classList.toggle('swiper-pagination-bullet-active', j === idx));
+    }
+    let sx = 0;
+    root.addEventListener('touchstart', (e) => (sx = e.touches[0].clientX), { passive: true });
+    root.addEventListener('touchend', (e) => {
+      const dx = e.changedTouches[0].clientX - sx;
+      if (Math.abs(dx) > 40) go(idx + (dx < 0 ? 1 : -1));
+    }, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+</script>

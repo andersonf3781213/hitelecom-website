@@ -1,0 +1,13 @@
+---
+/**
+ * 新闻中心页面外壳：产品区公共样式 + 新闻专属样式，包进 .pclone 作用域
+ * 用法：<BaseLayout><NewsShell> ...新闻页内容... </NewsShell></BaseLayout>
+ */
+import '../../styles/product.css';
+import '../../styles/news.css';
+---
+
+<slot name="head" slot="head" />
+<div class="pclone">
+  <slot />
+</div>

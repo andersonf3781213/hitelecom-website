@@ -1,0 +1,31 @@
+---
+/**
+ * 关于我们 - 生态合作伙伴（中文）：/zh/about/partner.html */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AboutShell from '../../../components/about/AboutShell.astro';
+import AboutPartner from '../../../components/about/AboutPartner.astro';
+import { contentImageSrc } from '../../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh.html' },
+    { '@type': 'ListItem', position: 2, name: '关于我们', item: 'https://www.hitelecom.com/zh/about.html' },
+    { '@type': 'ListItem', position: 3, name: '生态合作伙伴', item: 'https://www.hitelecom.com/zh/about/partner.html' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="zh"
+  title="生态合作伙伴 | 物联网传感器渠道合作 - 宏太智慧"
+  description="加入宏太智慧合作伙伴网络：渠道优先战略，面向工业物联网传感器、户外4G与NB-IoT终端，提供培训、市场与技术支持。"
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <AboutPartner locale="zh" />
+  </AboutShell>
+</BaseLayout>

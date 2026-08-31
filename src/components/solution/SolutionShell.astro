@@ -1,0 +1,13 @@
+---
+/**
+ * 解决方案页面外壳：产品区公共样式 + 解决方案专属样式，包进 .pclone 作用域
+ * 用法：<BaseLayout><SolutionShell> ...解决方案页内容... </SolutionShell></BaseLayout>
+ */
+import '../../styles/product.css';
+import '../../styles/solution.css';
+---
+
+<slot name="head" slot="head" />
+<div class="pclone">
+  <slot />
+</div>

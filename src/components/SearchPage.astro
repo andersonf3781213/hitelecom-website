@@ -1,0 +1,145 @@
+---
+/**
+ * 站内搜索结果页主体（EN/ZH 共用）
+ * 构建期生成 /search-index.json，浏览器端按 ?q= 过滤渲染。
+ * 无 JS 时显示提示与热门入口，不产生 404。
+ */
+import type { Locale } from '../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const zh = locale === 'zh';
+
+const txt = zh
+  ? {
+      heading: '站内搜索',
+      placeholder: '输入产品、型号或关键词，如 NB-IoT、土壤、温湿度…',
+      btn: '搜索',
+      empty: '未找到相关内容，请更换关键词，或直接联系我们获取选型帮助。',
+      count: (n: number) => `共 ${n} 条结果`,
+      hint: '输入关键词开始搜索。',
+      contact: '联系我们',
+    }
+  : {
+      heading: 'Site Search',
+      placeholder: 'Search products, models or keywords, e.g. NB-IoT, soil, temperature…',
+      btn: 'Search',
+      empty: 'No results. Try another keyword, or contact us for selection help.',
+      count: (n: number) => `${n} result${n === 1 ? '' : 's'} found`,
+      hint: 'Type a keyword to search.',
+      contact: 'Contact us',
+    };
+const pre = zh ? '/zh' : '';
+---
+
+<div class="search-page">
+  <div class="search-page-in">
+    <h1>{txt.heading}</h1>
+    <form class="search-page-form" method="get" action={`${pre}/search.html`}>
+      <input type="search" name="q" value="" placeholder={txt.placeholder} autocomplete="off" id="sp-input" />
+      <button type="submit" class="btn-pill">{txt.btn}</button>
+    </form>
+    <p class="search-page-meta" id="sp-meta">{txt.hint}</p>
+    <ul class="search-page-results" id="sp-results"></ul>
+    <p class="search-page-empty" id="sp-empty" hidden>
+      {txt.empty}
+      <a href={`${pre}/about/contact.html`}>{txt.contact}</a>
+    </p>
+  </div>
+</div>
+
+<script define:vars={{ zh, emptyMeta: txt.hint }}>
+  const input = document.getElementById('sp-input');
+  const meta = document.getElementById('sp-meta');
+  const list = document.getElementById('sp-results');
+  const emptyBox = document.getElementById('sp-empty');
+
+  const q = new URLSearchParams(location.search).get('q') || '';
+  input.value = q;
+
+  const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const hl = (s, kw) => {
+    const e = esc(s);
+    if (!kw) return e;
+    return e.replace(new RegExp('(' + kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi'), '<mark>$1</mark>');
+  };
+
+  if (q.trim()) {
+    meta.textContent = zh ? '搜索中…' : 'Searching…';
+    fetch('/search-index.json')
+      .then((r) => r.json())
+      .then((idx) => {
+        const data = idx[zh ? 'zh' : 'en'] || [];
+        const kws = q.trim().toLowerCase().split(/\s+/);
+        const hits = data
+          .map((e) => {
+            const hay = (e.t + ' ' + e.d).toLowerCase();
+            let score = 0;
+            for (const k of kws) {
+              if (!hay.includes(k)) return null;
+              score += e.t.toLowerCase().includes(k) ? 3 : 1;
+            }
+            return { e, score };
+          })
+          .filter(Boolean)
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 50);
+        meta.textContent = (zh ? (n) => `共 ${n} 条结果` : (n) => `${n} result${n === 1 ? '' : 's'} found`)(hits.length);
+        emptyBox.hidden = hits.length > 0;
+        list.innerHTML = hits
+          .map(
+            ({ e }) => `<li>
+              <a href="${e.u}">
+                <span class="sp-cat">${esc(e.c)}</span>
+                <span class="sp-title">${hl(e.t, q.trim())}</span>
+                <span class="sp-desc">${hl(e.d.slice(0, 160), q.trim())}</span>
+              </a>
+            </li>`,
+          )
+          .join('');
+      })
+      .catch(() => {
+        meta.textContent = zh ? '搜索服务暂不可用，请稍后再试。' : 'Search is temporarily unavailable.';
+      });
+  }
+</script>
+
+<style>
+  .search-page { padding: clamp(110px, 12vw, 160px) 20px clamp(60px, 7vw, 110px); min-height: 60vh; }
+  .search-page-in { max-width: 860px; margin: 0 auto; }
+  .search-page h1 { font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 600; margin-bottom: 1em; }
+  .search-page-form { display: flex; gap: 12px; }
+  .search-page-form input {
+    flex: 1;
+    border: 1px solid #dbe2ea;
+    border-radius: 999px;
+    padding: 0.9em 1.4em;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.25s;
+  }
+  .search-page-form input:focus { border-color: var(--brand); }
+  .search-page-meta { color: #8595a6; font-size: 0.9rem; margin: 1.2em 0 0.4em; }
+  .search-page-results { list-style: none; }
+  .search-page-results li { border-bottom: 1px solid #eef1f5; }
+  .search-page-results a { display: block; padding: 1.1em 0.4em; transition: background 0.2s; }
+  .search-page-results a:hover { background: #f7f9fc; }
+  .sp-cat {
+    display: inline-block;
+    font-size: 0.72rem;
+    color: var(--brand);
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    padding: 0.1em 0.8em;
+    margin-bottom: 0.5em;
+  }
+  .sp-title { display: block; font-size: 1.08rem; font-weight: 600; color: var(--ink); }
+  .sp-desc { display: block; color: #66707d; font-size: 0.88rem; margin-top: 0.35em; line-height: 1.6; }
+  .search-page-results mark { background: #ffe9a8; color: inherit; padding: 0 0.1em; }
+  .search-page-empty { color: #66707d; margin-top: 2em; }
+  .search-page-empty a { color: var(--brand); text-decoration: underline; margin-left: 0.5em; }
+  @media (max-width: 640px) {
+    .search-page-form { flex-direction: column; }
+    .search-page-form button { align-self: flex-start; }
+  }
+</style>

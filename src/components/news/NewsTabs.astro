@@ -1,0 +1,42 @@
+---
+/**
+ * 新闻中心分类选项卡（中英共用）：桌面 ul.u4 + 移动端 select#changeurl
+ * active 为当前分类；FAQs 标签在原站上不带 css3 类，保持 1:1
+ */
+import { getNewsContent, type NewsCat } from '../../data/news';
+import { l, type Locale } from '../../i18n';
+
+interface Props { locale: Locale; active: NewsCat | 'faqs' }
+const { locale, active } = Astro.props;
+const d = await getNewsContent(locale);
+---
+
+<div class="clearfix pro_1 pro_1_ser">
+  <div class="indexmid">
+    <div class="pro_1_mid">
+      <ul class="u4">
+        {d.tabs.map((t) => (
+          <li class="reveal">
+            {t.key === 'faqs' ? (
+              <a href={`${l(t.href, locale)}#cate`} class={active === 'faqs' ? 'on' : undefined}>{t.label}</a>
+            ) : (
+              <a class={active === t.key ? 'css3 on' : 'css3'} href={`${l(t.href, locale)}#cate`}>{t.label}</a>
+            )}
+          </li>
+        ))}
+      </ul>
+      <select id="changeurl">
+        {d.tabs.map((t) => (
+          <option value={l(t.href, locale)} selected={active === t.key}>{t.label}</option>
+        ))}
+      </select>
+    </div>
+  </div>
+</div>
+<script>
+  // 移动端分类下拉：跳转对应分类页
+  document.getElementById('changeurl')?.addEventListener('change', (e) => {
+    const v = (e.target as HTMLSelectElement).value;
+    if (v) window.location.href = v;
+  });
+</script>
