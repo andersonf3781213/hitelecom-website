@@ -16,6 +16,7 @@ const { locale } = Astro.props;
 <script is:inline define:vars={{
   mailTo: 'sales@hitelecom.com',
   formEndpoint: site.formEndpoint,
+  formAccessKey: site.formAccessKey,
   thanksUrl: locale === 'zh' ? '/zh/about/thanks.html' : '/about/thanks.html',
   msgName: locale === 'zh' ? '姓名不能为空' : 'Name cannot be empty',
   msgPhone: locale === 'zh' ? '电话不能为空' : 'Phone cannot be empty',
@@ -44,8 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
       labels[5] + ': ' + val('types'),
       labels[6] + ': ' + val('message'),
     ];
-    if (formEndpoint) {
+    if (formEndpoint && formAccessKey) {
       var fd = new FormData();
+      fd.append('access_key', formAccessKey); // Web3Forms 官方格式：key 放请求体
       fd.append('subject', mailSubject + (val('company') || val('name')));
       fd.append('from_name', val('name'));
       fd.append('company', val('company'));

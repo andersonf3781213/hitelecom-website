@@ -1,0 +1,75 @@
+# ---------------------------------------------------------------
+# Hitelecom 官网 · Apache / 虚拟主机配置（由 scripts/make-redirects.mjs 生成，勿手改）
+# 用法：重命名为 .htaccess 放到 dist 解压后的站点根目录（需 AllowOverride All），
+# 或并入 httpd.conf / vhost 配置。
+# ---------------------------------------------------------------
+
+RewriteEngine On
+
+# === 1. 旧产品地址 301 ===
+RewriteRule ^product/show/id/270\.html$ /product/temperature-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/270\.html$ /zh/product/temperature-sensor.html [R=301,L]
+RewriteRule ^product/show/id/274\.html$ /product/pressure-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/274\.html$ /zh/product/pressure-sensor.html [R=301,L]
+RewriteRule ^product/show/id/275\.html$ /product/outdoor-4g-gateway-h68.html [R=301,L]
+RewriteRule ^zh/product/show/id/275\.html$ /zh/product/outdoor-4g-gateway-h68.html [R=301,L]
+RewriteRule ^product/show/id/276\.html$ /product/indoor-gateway-h66.html [R=301,L]
+RewriteRule ^zh/product/show/id/276\.html$ /zh/product/indoor-gateway-h66.html [R=301,L]
+RewriteRule ^product/show/id/277\.html$ /product/hydrology-monitoring-station.html [R=301,L]
+RewriteRule ^zh/product/show/id/277\.html$ /zh/product/hydrology-monitoring-station.html [R=301,L]
+RewriteRule ^product/show/id/278\.html$ /product/weather-station.html [R=301,L]
+RewriteRule ^zh/product/show/id/278\.html$ /zh/product/weather-station.html [R=301,L]
+RewriteRule ^product/show/id/280\.html$ /product/soil-moisture-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/280\.html$ /zh/product/soil-moisture-sensor.html [R=301,L]
+RewriteRule ^product/show/id/281\.html$ /product/liquid-level-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/281\.html$ /zh/product/liquid-level-sensor.html [R=301,L]
+RewriteRule ^product/show/id/282\.html$ /product/tilt-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/282\.html$ /zh/product/tilt-sensor.html [R=301,L]
+RewriteRule ^product/show/id/283\.html$ /product/radar-distance-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/283\.html$ /zh/product/radar-distance-sensor.html [R=301,L]
+RewriteRule ^product/show/id/284\.html$ /product/vibration-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/284\.html$ /zh/product/vibration-sensor.html [R=301,L]
+RewriteRule ^product/show/id/285\.html$ /product/air-quality-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/285\.html$ /zh/product/air-quality-sensor.html [R=301,L]
+RewriteRule ^product/show/id/286\.html$ /product/explosion-proof-temperature-pressure-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/286\.html$ /zh/product/explosion-proof-temperature-pressure-sensor.html [R=301,L]
+RewriteRule ^product/show/id/287\.html$ /product/coupling-isolator-h100.html [R=301,L]
+RewriteRule ^zh/product/show/id/287\.html$ /zh/product/coupling-isolator-h100.html [R=301,L]
+RewriteRule ^product/show/id/301\.html$ /product/temperature-humidity-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/301\.html$ /zh/product/temperature-humidity-sensor.html [R=301,L]
+RewriteRule ^product/show/id/302\.html$ /product/temperature-humidity-data-logger.html [R=301,L]
+RewriteRule ^zh/product/show/id/302\.html$ /zh/product/temperature-humidity-data-logger.html [R=301,L]
+RewriteRule ^product/show/id/303\.html$ /product/tvoc-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/303\.html$ /zh/product/tvoc-sensor.html [R=301,L]
+RewriteRule ^product/show/id/304\.html$ /product/asset-tracking-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/304\.html$ /zh/product/asset-tracking-sensor.html [R=301,L]
+RewriteRule ^product/show/id/305\.html$ /product/custom-gas-sensor.html [R=301,L]
+RewriteRule ^zh/product/show/id/305\.html$ /zh/product/custom-gas-sensor.html [R=301,L]
+
+# === 2. 缓存策略（与 public/_headers 等价，需 mod_expires + mod_headers） ===
+<IfModule mod_expires.c>
+    ExpiresActive On
+    # 带内容哈希的构建产物：一年
+    <LocationMatch "^/(_astro|fonts)/">
+        ExpiresDefault "access plus 1 year"
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </LocationMatch>
+    # public 下无哈希的静态图：7 天
+    <LocationMatch "^/(images|assets)/">
+        ExpiresDefault "access plus 7 days"
+    </LocationMatch>
+    # 可下载资料：1 天
+    <LocationMatch "^/downloads/">
+        ExpiresDefault "access plus 1 day"
+    </LocationMatch>
+    # HTML：协商缓存
+    <FilesMatch "\.html$">
+        ExpiresDefault "access plus 0 seconds"
+        Header set Cache-Control "public, max-age=0, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
+# === 3. 文本压缩（需 mod_deflate） ===
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/css application/javascript application/json image/svg+xml
+</IfModule>

@@ -22,12 +22,15 @@ export const site = {
 
   /**
    * 询盘表单提交端点（静态站无后端，需第三方表单服务）：
-   * 推荐 Web3Forms（免费，https://web3forms.com，用 sales@hitelecom.com 注册取得 access_key），
-   * 填入 'https://api.web3forms.com/submit?access_key=你的KEY' 后，
-   * 表单将真实发送到邮箱并跳转感谢页；留空则回退为打开访客邮件客户端（mailto）。
-   * 也可用 Formspree：填入 'https://formspree.io/f/你的ID'。
+   * 推荐 Web3Forms（免费，https://web3forms.com，用收件邮箱注册取得 Access Key）。
+   * 官方提交格式：POST https://api.web3forms.com/submit，请求体携带 access_key 字段
+   * （注意：不是 URL  query 参数——query 写法非官方文档格式，可能被拒）。
+   * 配置后表单真实发送到邮箱并跳转感谢页；留空则回退为打开访客邮件客户端（mailto）。
+   * 换 Formspree：formEndpoint 填 'https://formspree.io/f/你的ID'，formAccessKey 留空即可。
    */
-  formEndpoint: 'https://api.web3forms.com/submit?access_key=6cd14860-b673-4f14-af67-76ac66991e8f',
+  formEndpoint: 'https://api.web3forms.com/submit',
+  /** Web3Forms Access Key（与 formEndpoint 配套；当前收件邮箱 sales@hitelecom.cn） */
+  formAccessKey: '6cd14860-b673-4f14-af67-76ac66991e8f',
 
   /**
    * 高德地图 JS API Key（关于我们-联系我们页的地图）。

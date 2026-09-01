@@ -21,6 +21,7 @@ const mailSubject = locale === 'zh' ? '售后服务 - ' : 'After-Sales Service -
 const formJs = {
   mailTo: site.emailLd,
   formEndpoint: site.formEndpoint,
+  formAccessKey: site.formAccessKey,
   thanksUrl: locale === 'zh' ? '/zh/about/thanks.html' : '/about/thanks.html',
   msgName: locale === 'zh' ? '姓名不能为空' : 'Name cannot be empty',
   msgPhone: locale === 'zh' ? '电话不能为空' : 'Phone cannot be empty',
@@ -220,8 +221,9 @@ const formJs = {
       formJs.labels[2] + ': ' + g('email'),
       formJs.labels[3] + ': ' + g('message'),
     ];
-    if (formJs.formEndpoint) {
+    if (formJs.formEndpoint && formJs.formAccessKey) {
       const fd = new FormData();
+      fd.append('access_key', formJs.formAccessKey); // Web3Forms 官方格式：key 放请求体
       fd.append('subject', mailSubject + g('name'));
       fd.append('from_name', g('name'));
       fd.append('name', g('name'));

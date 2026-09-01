@@ -3,7 +3,7 @@
 基于 **Astro 7** 静态站点生成（SSG），为 B2B 营销场景重构：
 
 - **纯静态 HTML 输出**：不依赖客户端渲染，Google 爬虫可直接读取全部内容
-- **极致加载速度**：零框架 JS 运行时、图片构建期自动压缩为 WebP、首屏关键图 preload、全站约 2.7MB
+- **极致加载速度**：零框架 JS 运行时、图片构建期自动压缩为 WebP、首屏关键图 preload——**首屏传输约 131KB**（HTML+CSS+JS+字体+首屏图），首页整页含全部懒加载图约 3.6MB
 - **大图懒加载**：首屏以下图片全部 `loading="lazy"` + `decoding="async"`，并注入宽高防止布局抖动（CLS）
 - **全面 SEO**：语义化标签、meta/Open Graph/Twitter Card、canonical、hreflang 多语言互链、JSON-LD 结构化数据（Organization + WebSite 实体图 + 首页产品/方案 ItemList）、自动生成 `sitemap-index.xml`、`robots.txt`；关键词布局对标 Milesight / Dragino / RAKwireless 等头部友商
 - **GEO（AI 搜索优化）**：`public/llms.txt` 站点说明书、`robots.txt` 显式放行 GPTBot / OAI-SearchBot / PerplexityBot / ClaudeBot / Bingbot 等 AI 爬虫、结构化数据 `knowsAbout` 强化实体认知
@@ -19,12 +19,20 @@
 ```bash
 npm install        # 安装依赖
 npm run dev        # 本地开发（http://localhost:4321）
-npm run build      # 构建静态站点到 dist/
-npm run prune      # （可选）删除 dist 中未被任何页面引用的原始图片，部署包再小约 60MB
+npm run build      # 构建静态站点到 dist/（postbuild 钩子自动瘦身：删除未被引用的原始图片，约 60MB）
 npm run preview    # 本地预览构建结果
 ```
 
-构建产物默认就是"只含被引用资源"的页面与优化图片；`npm run prune` 适合在生成最终部署包前执行一次。
+`npm run build` 完成后会自动执行 `postbuild` → `scripts/prune-dist.mjs`（也可随时用 `npm run prune`
+单独再跑一遍，幂等无副作用），确保产物只含被页面实际引用的资源。
+
+### 产物体积说明（三个口径，勿混淆）
+
+- **首屏传输 ≈ 131KB**（HTML+CSS+JS+字体+首屏图）：决定「黄金 3 秒」体验的指标
+- **首页整页 ≈ 3.6MB**：含首屏以下所有懒加载图片，滚动到位才加载
+- **dist 总量 ≈ 92MB**：216 页全站产物 = 43MB 按需下载的 PDF 规格书（`downloads/`，访客不点击不产生流量）
+  + 42MB 全部图片的多尺寸响应式 WebP 变体（`_astro/`，每页只加载自己引用的几张）+ 约 9MB 页面与其他资源。
+  部署包体积 ≠ 访客加载量，不影响打开速度
 
 ## 目录结构与日常维护
 
@@ -98,3 +106,12 @@ public/
 
 `npm run build` 后将 `dist/` 目录上传到任意静态托管（Nginx / OSS / Vercel / Cloudflare Pages）。
 记得把 `astro.config.mjs` 里的 `site` 改为正式域名，保证 sitemap 与 canonical 正确。
+
+**旧产品地址的 301 重定向与缓存策略按平台选择**（详见 [deploy/README.md](./deploy/README.md)）：
+
+- Cloudflare Pages / Netlify：dist 根目录的 `_redirects`、`_headers` 自动生效，无需操作
+- Nginx（阿里云 ECS 等自托管）：使用 `deploy/nginx-hitelecom.conf`
+- Apache / 虚拟主机：使用 `deploy/apache.htaccess`（重命名为 `.htaccess`）
+- OSS 等无服务器重写的环境：dist 已内置 meta refresh 跳转页兜底，真 301 需在 CDN 层配置
+
+以上配置由 `node scripts/make-redirects.mjs` 统一生成，产品 URL 变更后重跑即可。
