@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_img13.png" alt="关于我们"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_img13.png" alt="宏太云 · 物联 · 传感"/></h1>
 						 
 					</Div>
 				</Div>
@@ -97,7 +97,7 @@
 					</div>
 					<div class="contact_1_mid_left_mid_3 reveal">
 						<p>
-							<img src="/images/about/static_img53.png">
+							<img alt="宏太通信联系二维码" src="/images/about/static_img53.png">
 							<br>关注微信
 						</p>
 					</div>

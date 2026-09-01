@@ -1,0 +1,20 @@
+# Cloudflare Pages 缓存策略（Netlify 同格式兼容）
+# 带内容哈希的构建产物：一年长缓存 + immutable，文件名变即自动失效
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# public 下无哈希的静态图：允许同名换图后较快生效（7 天）
+/images/*
+  Cache-Control: public, max-age=604800
+/assets/*
+  Cache-Control: public, max-age=604800
+
+# 可下载资料（PDF 规格书等可能更新）：1 天
+/downloads/*
+  Cache-Control: public, max-age=86400
+
+# HTML 页面：协商缓存，保证内容更新即时可见
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate

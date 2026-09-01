@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_img13.png" alt="关于我们"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_img13.png" alt="宏太云 · 物联 · 传感"/></h1>
 						 
 					</Div>
 				</Div>
@@ -110,7 +110,7 @@
 				  <div class="swiper-slide showphotos" style=" cursor:pointer;" lang="0" data-id="list95">
 				   		<div class="jo_2_1_mid">
 							<div class="jo_2_1_mid_1">
-								<img src="/images/about/up_7dcb6669d2e31accb8d755d0a62f426e.webp">
+								<img alt="宏太通信户外拓展训练" src="/images/about/up_7dcb6669d2e31accb8d755d0a62f426e.webp">
 							</div>
 							<div class="jo_2_1_mid_2 css3">
 								无奋斗不青春							</div>
@@ -120,7 +120,7 @@
 				  <div class="swiper-slide showphotos" style=" cursor:pointer;" lang="1" data-id="list98">
 				   		<div class="jo_2_1_mid">
 							<div class="jo_2_1_mid_1">
-								<img src="/images/about/up_00d2b485696efa7676d67e6383182eb9.webp">
+								<img alt="宏太通信团队户外团建活动" src="/images/about/up_00d2b485696efa7676d67e6383182eb9.webp">
 							</div>
 							<div class="jo_2_1_mid_2 css3">
 								崇明岛之旅							</div>
@@ -130,7 +130,7 @@
 				  <div class="swiper-slide showphotos" style=" cursor:pointer;" lang="2" data-id="list101">
 				   		<div class="jo_2_1_mid">
 							<div class="jo_2_1_mid_1">
-								<img src="/images/about/up_8af7929952d94aee6b72201b998aac8b.webp">
+								<img alt="宏太通信展会展台团队合影" src="/images/about/up_8af7929952d94aee6b72201b998aac8b.webp">
 							</div>
 							<div class="jo_2_1_mid_2 css3">
 								展会新风采							</div>
@@ -140,7 +140,7 @@
 				  <div class="swiper-slide showphotos" style=" cursor:pointer;" lang="3" data-id="list99">
 				   		<div class="jo_2_1_mid">
 							<div class="jo_2_1_mid_1">
-								<img src="/images/about/up_e261558312046bcf0b6abae9ca566b1d.webp">
+								<img alt="宏太通信五周年庆装饰的公司前台" src="/images/about/up_e261558312046bcf0b6abae9ca566b1d.webp">
 							</div>
 							<div class="jo_2_1_mid_2 css3">
 								焕然新生, 感恩有你							</div>
@@ -150,7 +150,7 @@
 				  <div class="swiper-slide showphotos" style=" cursor:pointer;" lang="4" data-id="list100">
 				   		<div class="jo_2_1_mid">
 							<div class="jo_2_1_mid_1">
-								<img src="/images/about/up_186e44c9267db8483f72169c3687e7d3.webp">
+								<img alt="宏太通信团队夜间聚餐庆祝活动" src="/images/about/up_186e44c9267db8483f72169c3687e7d3.webp">
 							</div>
 							<div class="jo_2_1_mid_2 css3">
 								享受美食时光							</div>
@@ -985,7 +985,7 @@
 <Div class="clearfix daxie" id="footer">
 	
 
-<div id="list95" style="display:none"><div class="swiper-slide" lang="0"><img src="/images/about/up_9ff826b6bb1d7c7485649f73fe4d1dfe.webp" alt=""></div><div class="swiper-slide" lang="1"><img src="/images/about/up_3af83093f81470b449e665c4dfc1280c.webp" alt=""></div></div><div id="list98" style="display:none"><div class="swiper-slide" lang="0"><img src="/images/about/up_7325c795c87963f0b0be4d7afcd20823.webp" alt=""></div><div class="swiper-slide" lang="1"><img src="/images/about/up_5b6a392031cbf249c655435fbcaaf5a3.webp" alt=""></div></div><div id="list101" style="display:none"></div><div id="list99" style="display:none"></div><div id="list100" style="display:none"></div><div class="jobmask">
+<div id="list95" style="display:none"><div class="swiper-slide" lang="0"><img src="/images/about/up_9ff826b6bb1d7c7485649f73fe4d1dfe.webp" alt="宏太通信员工庆祝活动合影"></div><div class="swiper-slide" lang="1"><img src="/images/about/up_3af83093f81470b449e665c4dfc1280c.webp" alt="宏太通信员工生日会合影"></div></div><div id="list98" style="display:none"><div class="swiper-slide" lang="0"><img src="/images/about/up_7325c795c87963f0b0be4d7afcd20823.webp" alt="上海宏太电子 2019 崇明岛之旅团队合影"></div><div class="swiper-slide" lang="1"><img src="/images/about/up_5b6a392031cbf249c655435fbcaaf5a3.webp" alt="宏太通信团队户外团建活动"></div></div><div id="list101" style="display:none"></div><div id="list99" style="display:none"></div><div id="list100" style="display:none"></div><div class="jobmask">
 	<div class="jobmask_close">
 		X
 	</div>

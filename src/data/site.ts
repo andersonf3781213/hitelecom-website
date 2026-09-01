@@ -27,7 +27,7 @@ export const site = {
    * 表单将真实发送到邮箱并跳转感谢页；留空则回退为打开访客邮件客户端（mailto）。
    * 也可用 Formspree：填入 'https://formspree.io/f/你的ID'。
    */
-  formEndpoint: '',
+  formEndpoint: 'https://api.web3forms.com/submit?access_key=6cd14860-b673-4f14-af67-76ac66991e8f',
 
   /**
    * 高德地图 JS API Key（关于我们-联系我们页的地图）。

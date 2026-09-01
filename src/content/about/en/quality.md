@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="About Hitelecom"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Cloud · IoT · Sensors"/></h1>
 						 
 					</Div>
 				</Div>
@@ -92,7 +92,7 @@
 				<p>Expertly designed and lean-manufactured, we deliver high-quality products and services that exceed expectations.&nbsp;</p><p>At Hongtai&#39;s electronics manufacturing facility, every step of production is carefully designed and strictly monitored to meet and surpass industry standards. With a commitment to Six Sigma quality at 30 PPM, we have established a continuous improvement quality management system. Regular reviews and process optimizations ensure our goal of exceptional quality is achieved.</p><p><br/></p>			</div>
 		</div>
 		<div class="clearfix qa_1_2 reveal">
-			<img src="/images/about/up_33f8ecc7bf8fbfcf1538a9c87e898b51.webp">
+			<img alt="Engineer inspecting PCB panels in the laboratory" src="/images/about/up_33f8ecc7bf8fbfcf1538a9c87e898b51.webp">
 		</div>
 	</div>
 </div> 
@@ -124,7 +124,7 @@
 																		<li>
 										<div class="qa_3_1_mid">
 											<Div class="qa_3_1_mid_1">
-												<img src="/images/about/up_d94a0df42445c6fbcf77d20de0969c73.webp">
+												<img alt="Technician soldering components on a PCB" src="/images/about/up_d94a0df42445c6fbcf77d20de0969c73.webp">
 											</Div>
 											<div class="qa_3_1_mid_jj_1 css3">
 												<div class="qa_3_1_mid_jj">
@@ -152,7 +152,7 @@
 																		<li>
 										<div class="qa_3_1_mid">
 											<Div class="qa_3_1_mid_1">
-												<img src="/images/about/up_0ff68ee5ee21bb828e5ba0dd7b20ff56.webp">
+												<img alt="SMT pick-and-place machines on the assembly line" src="/images/about/up_0ff68ee5ee21bb828e5ba0dd7b20ff56.webp">
 											</Div>
 											<div class="qa_3_1_mid_jj_1 css3">
 												<div class="qa_3_1_mid_jj">
@@ -199,7 +199,7 @@
 											<div class="qa_4_2_mid_1">
 												<div class="cell_mid">
 													<div  class="cell_h">
-														<img src="/images/about/up_1551d73dc647f7ef7f4c034c70f06bd3.jpg">
+														<img alt="MPM solder paste screen printer" src="/images/about/up_1551d73dc647f7ef7f4c034c70f06bd3.jpg">
 													</div>
 												</div>
 											</div>
@@ -218,7 +218,7 @@
 											<div class="qa_4_2_mid_1">
 												<div class="cell_mid">
 													<div  class="cell_h">
-														<img src="/images/about/up_b691ba179e8b6fd9f50bf5e838eaa38f.jpg">
+														<img alt="Koh Young KY8030 solder paste inspection machine" src="/images/about/up_b691ba179e8b6fd9f50bf5e838eaa38f.jpg">
 													</div>
 												</div>
 											</div>
@@ -237,7 +237,7 @@
 											<div class="qa_4_2_mid_1">
 												<div class="cell_mid">
 													<div  class="cell_h">
-														<img src="/images/about/up_5a4e0e074312dca7403899d7b15cb71b.jpg">
+														<img alt="Koh Young 3D solder paste inspection (SPI) machine" src="/images/about/up_5a4e0e074312dca7403899d7b15cb71b.jpg">
 													</div>
 												</div>
 											</div>
@@ -256,7 +256,7 @@
 											<div class="qa_4_2_mid_1">
 												<div class="cell_mid">
 													<div  class="cell_h">
-														<img src="/images/about/up_468621c1477a5202b83424859b0fca9c.webp">
+														<img alt="Rehm reflow soldering oven" src="/images/about/up_468621c1477a5202b83424859b0fca9c.webp">
 													</div>
 												</div>
 											</div>
@@ -275,7 +275,7 @@
 											<div class="qa_4_2_mid_1">
 												<div class="cell_mid">
 													<div  class="cell_h">
-														<img src="/images/about/up_467ee1a9f302751c62c181b898b4b25f.webp">
+														<img alt="High-speed SMT pick-and-place machines" src="/images/about/up_467ee1a9f302751c62c181b898b4b25f.webp">
 													</div>
 												</div>
 											</div>
@@ -316,7 +316,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_5cd3315cc09f1f18cc8fae819f11c81b.jpg">
+									<img alt="GigaDevice — Hitelecom component partner" src="/images/about/up_5cd3315cc09f1f18cc8fae819f11c81b.jpg">
 								</div>
 							</div>
 						</li>
@@ -324,7 +324,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_42118537ac56b8ded21d336cd41e1cab.jpg">
+									<img alt="STMicroelectronics — Hitelecom component partner" src="/images/about/up_42118537ac56b8ded21d336cd41e1cab.jpg">
 								</div>
 							</div>
 						</li>
@@ -332,7 +332,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_56547d4554c86773bd7946e5c62075c1.jpg">
+									<img alt="NXP Semiconductors — Hitelecom component partner" src="/images/about/up_56547d4554c86773bd7946e5c62075c1.jpg">
 								</div>
 							</div>
 						</li>
@@ -340,7 +340,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_614df29f7b1c439cccaa3ab35ab3e8e6.jpg">
+									<img alt="HDSC — Hitelecom component partner" src="/images/about/up_614df29f7b1c439cccaa3ab35ab3e8e6.jpg">
 								</div>
 							</div>
 						</li>
@@ -348,7 +348,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_8c93c59f532fa89a50e29599d77608e6.jpg">
+									<img alt="Renesas — Hitelecom component partner" src="/images/about/up_8c93c59f532fa89a50e29599d77608e6.jpg">
 								</div>
 							</div>
 						</li>
@@ -356,7 +356,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_e1e7a1a741afc8af0da065dcab01d140.jpg">
+									<img alt="TDK — Hitelecom component partner" src="/images/about/up_e1e7a1a741afc8af0da065dcab01d140.jpg">
 								</div>
 							</div>
 						</li>
@@ -364,7 +364,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_0f2e973fee69307b9b26f6cf0a05ebd4.jpg">
+									<img alt="muRata — Innovator in Electronics, Hitelecom component partner" src="/images/about/up_0f2e973fee69307b9b26f6cf0a05ebd4.jpg">
 								</div>
 							</div>
 						</li>
@@ -372,7 +372,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_2038498b1f33bdd16309af26916f7a9d.jpg">
+									<img alt="Analog Devices — Hitelecom component partner" src="/images/about/up_2038498b1f33bdd16309af26916f7a9d.jpg">
 								</div>
 							</div>
 						</li>
@@ -380,7 +380,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_d7f7d000d24767ce52f09e62f8d9fb5a.jpg">
+									<img alt="Texas Instruments — Hitelecom component partner" src="/images/about/up_d7f7d000d24767ce52f09e62f8d9fb5a.jpg">
 								</div>
 							</div>
 						</li>
@@ -388,7 +388,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_95fb54fc5097ead2bf72490771bab09d.jpg">
+									<img alt="Microchip — Hitelecom component partner" src="/images/about/up_95fb54fc5097ead2bf72490771bab09d.jpg">
 								</div>
 							</div>
 						</li>
@@ -396,7 +396,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_5e50988b00a1422e4c1c620f4040e3a8.jpg">
+									<img alt="SMIC — Hitelecom component partner" src="/images/about/up_5e50988b00a1422e4c1c620f4040e3a8.jpg">
 								</div>
 							</div>
 						</li>
@@ -404,7 +404,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_2e497c9d8d4ff112f29ea913981fa894.jpg">
+									<img alt="Sensirion — The Sensor Company, Hitelecom partner" src="/images/about/up_2e497c9d8d4ff112f29ea913981fa894.jpg">
 								</div>
 							</div>
 						</li>
@@ -423,7 +423,7 @@
 	<div class="indexmid">
 		<Div class="qa_6_mid">
 			<div class="qa_6_mid_left">
-				<img src="/images/about/up_f69d9bcdfa0aae6fa841fef95467c1f3.webp">
+				<img alt="Hitelecom quality management certificates and product conformity certificate" src="/images/about/up_f69d9bcdfa0aae6fa841fef95467c1f3.webp">
 			</div>
 			<div class="qa_6_mid_right">
 				<div class="qa_6_mid_right_1 reveal">
@@ -455,7 +455,7 @@
  				  					 
 				  <div class="swiper-slide" lang="0">
 				  	<div class="cjimg">
-						<img src="/images/about/up_4343f2f6b506c7d16d7eb8a25d9d3569.webp">
+						<img alt="Looking up at tree canopy against the sky" src="/images/about/up_4343f2f6b506c7d16d7eb8a25d9d3569.webp">
 					</div>
 				   		 <Div class="qa_7_1_left_1">
 						 	RoHS Compliance						 </Div>
@@ -465,7 +465,7 @@
 				  					 
 				  <div class="swiper-slide" lang="1">
 				  	<div class="cjimg">
-						<img src="/images/about/up_7d0bfe246419c5d58653bbe289701260.webp">
+						<img alt="Green planet — environmental responsibility" src="/images/about/up_7d0bfe246419c5d58653bbe289701260.webp">
 					</div>
 				   		 <Div class="qa_7_1_left_1">
 						 	EU REACH						 </Div>
@@ -475,7 +475,7 @@
 				  					 
 				  <div class="swiper-slide" lang="2">
 				  	<div class="cjimg">
-						<img src="/images/about/up_0492b0a599bdc5dfaa45769fd842b977.webp">
+						<img alt="Aerial view of river and green forest" src="/images/about/up_0492b0a599bdc5dfaa45769fd842b977.webp">
 					</div>
 				   		 <Div class="qa_7_1_left_1">
 						 	Halogen-free						 </Div>

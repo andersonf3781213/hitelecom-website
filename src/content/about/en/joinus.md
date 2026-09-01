@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="About Hitelecom"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Cloud · IoT · Sensors"/></h1>
 						 
 					</Div>
 				</Div>
@@ -110,7 +110,7 @@
 				  <div class="swiper-slide showphotos" style=" cursor:pointer;" lang="0" data-id="list95">
 				   		<div class="jo_2_1_mid">
 							<div class="jo_2_1_mid_1">
-								<img src="/images/about/up_7dcb6669d2e31accb8d755d0a62f426e.webp">
+								<img alt="Hitelecom outdoor team training in camouflage" src="/images/about/up_7dcb6669d2e31accb8d755d0a62f426e.webp">
 							</div>
 							<div class="jo_2_1_mid_2 css3">
 								No struggle, No youth							</div>
@@ -120,7 +120,7 @@
 				  <div class="swiper-slide showphotos" style=" cursor:pointer;" lang="1" data-id="list98">
 				   		<div class="jo_2_1_mid">
 							<div class="jo_2_1_mid_1">
-								<img src="/images/about/up_00d2b485696efa7676d67e6383182eb9.webp">
+								<img alt="Hitelecom team building activity in the park" src="/images/about/up_00d2b485696efa7676d67e6383182eb9.webp">
 							</div>
 							<div class="jo_2_1_mid_2 css3">
 								Chongming Island Tour							</div>
@@ -130,7 +130,7 @@
 				  <div class="swiper-slide showphotos" style=" cursor:pointer;" lang="2" data-id="list101">
 				   		<div class="jo_2_1_mid">
 							<div class="jo_2_1_mid_1">
-								<img src="/images/about/up_8af7929952d94aee6b72201b998aac8b.webp">
+								<img alt="Hitelecom team at their exhibition booth" src="/images/about/up_8af7929952d94aee6b72201b998aac8b.webp">
 							</div>
 							<div class="jo_2_1_mid_2 css3">
 								Exhibition Highlights							</div>
@@ -140,7 +140,7 @@
 				  <div class="swiper-slide showphotos" style=" cursor:pointer;" lang="3" data-id="list99">
 				   		<div class="jo_2_1_mid">
 							<div class="jo_2_1_mid_1">
-								<img src="/images/about/up_e261558312046bcf0b6abae9ca566b1d.webp">
+								<img alt="Hitelecom reception decorated for the 5th anniversary" src="/images/about/up_e261558312046bcf0b6abae9ca566b1d.webp">
 							</div>
 							<div class="jo_2_1_mid_2 css3">
 								A fresh start, Grateful for you.							</div>
@@ -150,7 +150,7 @@
 				  <div class="swiper-slide showphotos" style=" cursor:pointer;" lang="4" data-id="list100">
 				   		<div class="jo_2_1_mid">
 							<div class="jo_2_1_mid_1">
-								<img src="/images/about/up_186e44c9267db8483f72169c3687e7d3.webp">
+								<img alt="Hitelecom team dinner celebration at night" src="/images/about/up_186e44c9267db8483f72169c3687e7d3.webp">
 							</div>
 							<div class="jo_2_1_mid_2 css3">
 								Enjoy Culinary Moments							</div>
@@ -980,7 +980,7 @@
 <Div class="clearfix daxie" id="footer">
 	
 
-<div id="list95" style="display:none"><div class="swiper-slide" lang="0"><img src="/images/about/up_9ff826b6bb1d7c7485649f73fe4d1dfe.webp" alt=""></div><div class="swiper-slide" lang="1"><img src="/images/about/up_3af83093f81470b449e665c4dfc1280c.webp" alt=""></div></div><div id="list98" style="display:none"><div class="swiper-slide" lang="0"><img src="/images/about/up_7325c795c87963f0b0be4d7afcd20823.webp" alt=""></div><div class="swiper-slide" lang="1"><img src="/images/about/up_5b6a392031cbf249c655435fbcaaf5a3.webp" alt=""></div></div><div id="list101" style="display:none"></div><div id="list99" style="display:none"></div><div id="list100" style="display:none"></div><div class="jobmask">
+<div id="list95" style="display:none"><div class="swiper-slide" lang="0"><img src="/images/about/up_9ff826b6bb1d7c7485649f73fe4d1dfe.webp" alt="Hitelecom employees celebrating with teddy bears and balloons"></div><div class="swiper-slide" lang="1"><img src="/images/about/up_3af83093f81470b449e665c4dfc1280c.webp" alt="Hitelecom employee birthday party group photo"></div></div><div id="list98" style="display:none"><div class="swiper-slide" lang="0"><img src="/images/about/up_7325c795c87963f0b0be4d7afcd20823.webp" alt="Hitelecom 2019 Chongming Island team trip group photo"></div><div class="swiper-slide" lang="1"><img src="/images/about/up_5b6a392031cbf249c655435fbcaaf5a3.webp" alt="Hitelecom team building activity in the park"></div></div><div id="list101" style="display:none"></div><div id="list99" style="display:none"></div><div id="list100" style="display:none"></div><div class="jobmask">
 	<div class="jobmask_close">
 		X
 	</div>

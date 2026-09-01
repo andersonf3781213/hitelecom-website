@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_img13.png" alt="关于我们"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_img13.png" alt="宏太云 · 物联 · 传感"/></h1>
 						 
 					</Div>
 				</Div>
@@ -89,7 +89,7 @@
 								</div>
 							</div>
 							<div class="pa_1_2 reveal">
-								<img src="/images/about/up_4f168c726b8f09bdb135d70766180407.webp">
+								<img alt="宏太通信合作伙伴生态体系图" src="/images/about/up_4f168c726b8f09bdb135d70766180407.webp">
 							</div>
 	</div>
 </div>
@@ -106,7 +106,7 @@
 																		<li class="reveal">
 										<div class="pa_2_1_mid">
 											<div class="pa_2_1_mid_1">
-												<img src="/images/about/up_9737a9c520f0d9c03f7440c6ae57513f.webp">
+												<img alt="玻璃质感增长图表——渠道支持" src="/images/about/up_9737a9c520f0d9c03f7440c6ae57513f.webp">
 											</div>
 											<div class="pa_2_1_mid_2">
 												<div class="pa_2_1_mid_2_1">
@@ -120,7 +120,7 @@
 																		<li class="reveal">
 										<div class="pa_2_1_mid">
 											<div class="pa_2_1_mid_1">
-												<img src="/images/about/up_dfdd0d388b4b87b38116bb5a0338047d.webp">
+												<img alt="玻璃质感 AI 图标——智能物联网解决方案" src="/images/about/up_dfdd0d388b4b87b38116bb5a0338047d.webp">
 											</div>
 											<div class="pa_2_1_mid_2">
 												<div class="pa_2_1_mid_2_1">
@@ -134,7 +134,7 @@
 																		<li class="reveal">
 										<div class="pa_2_1_mid">
 											<div class="pa_2_1_mid_1">
-												<img src="/images/about/up_816edb8932e445ac4b9d827f3f9abed9.webp">
+												<img alt="玻璃质感循环图标——合作伙伴生态" src="/images/about/up_816edb8932e445ac4b9d827f3f9abed9.webp">
 											</div>
 											<div class="pa_2_1_mid_2">
 												<div class="pa_2_1_mid_2_1">
@@ -148,7 +148,7 @@
 																		<li class="reveal">
 										<div class="pa_2_1_mid">
 											<div class="pa_2_1_mid_1">
-												<img src="/images/about/up_b94bb9545f3167748fef0fbe5e23f4c0.webp">
+												<img alt="玻璃质感徽章图标——合作伙伴服务评级" src="/images/about/up_b94bb9545f3167748fef0fbe5e23f4c0.webp">
 											</div>
 											<div class="pa_2_1_mid_2">
 												<div class="pa_2_1_mid_2_1">
@@ -177,8 +177,8 @@
 									<li>
 										<div class="pa_3_1_mid">
 											<div class="pa_3_1_mid_1">
-												<img src="/images/about/static_img37.png">
-												<span><img src="/images/about/static_img42.png"></span>
+												<img alt="" src="/images/about/static_img37.png">
+												<span><img alt="" src="/images/about/static_img42.png"></span>
 											</div>
 											<div class="pa_3_1_mid_2">
 												合作项目咨询
@@ -188,8 +188,8 @@
 									<li>
 										<div class="pa_3_1_mid">
 											<div class="pa_3_1_mid_1">
-												<img src="/images/about/static_img38.png">
-												<span><img src="/images/about/static_img42.png"></span>
+												<img alt="" src="/images/about/static_img38.png">
+												<span><img alt="" src="/images/about/static_img42.png"></span>
 											</div>
 											<div class="pa_3_1_mid_2">
 												伙伴类型选择
@@ -199,8 +199,8 @@
 									<li>
 										<div class="pa_3_1_mid">
 											<div class="pa_3_1_mid_1">
-												<img src="/images/about/static_img39.png">
-												<span><img src="/images/about/static_img42.png"></span>
+												<img alt="" src="/images/about/static_img39.png">
+												<span><img alt="" src="/images/about/static_img42.png"></span>
 											</div>
 											<div class="pa_3_1_mid_2">
 												实地考察沟通
@@ -210,8 +210,8 @@
 									<li>
 										<div class="pa_3_1_mid">
 											<div class="pa_3_1_mid_1">
-												<img src="/images/about/static_img40.png">
-												<span><img src="/images/about/static_img42.png"></span>
+												<img alt="" src="/images/about/static_img40.png">
+												<span><img alt="" src="/images/about/static_img42.png"></span>
 											</div>
 											<div class="pa_3_1_mid_2">
 												合同协议签订
@@ -221,7 +221,7 @@
 									<li>
 										<div class="pa_3_1_mid">
 											<div class="pa_3_1_mid_1">
-												<img src="/images/about/static_img41.png">
+												<img alt="" src="/images/about/static_img41.png">
 											</div>
 											<div class="pa_3_1_mid_2">
 												业务合作开展
@@ -242,7 +242,7 @@
 							</div>
 	</div>
 	<div class="pa_4_1 reveal">
-		<img src="/images/about/static_img44.webp">
+		<img alt="标注中国市场的世界地图——宏太通信合作伙伴网络" src="/images/about/static_img44.webp">
 	</div>
 </div> 
 <div class="clearfix pa_5">

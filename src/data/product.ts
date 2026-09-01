@@ -1588,7 +1588,47 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Measuring Range",
+      "value": "-200°C to 800°C",
+      "unitText": "degree Celsius",
+      "minValue": -200.0,
+      "maxValue": 800.0
+     },
+     {
+      "name": "Accuracy",
+      "value": "±0.5°C (Customizable to 0.1°C)",
+      "unitText": "degree Celsius"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Connection",
+      "value": "Three-wire"
+     },
+     {
+      "name": "Frequency band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Battery Life",
+      "value": ">10 Years (1-Hour Reporting)",
+      "unitText": "year",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -1769,7 +1809,53 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Measuring Range",
+      "value": "0kPa ～ 1MPa/1.6MPa/3.5MPa/ 7Mpa/10MPa/20MPa/35MPa/100MPa"
+     },
+     {
+      "name": "Overload",
+      "value": "≤ 2 times full-scale pressure"
+     },
+     {
+      "name": "Stability",
+      "value": "±0.2% FS/year"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Operating temp",
+      "value": "-20℃～ 80℃",
+      "unitText": "degree Celsius",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "Storage temp",
+      "value": "-20℃～ 85℃",
+      "unitText": "degree Celsius",
+      "minValue": -20.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "Battery Life",
+      "value": ">10 Years (1-Hour Reporting)",
+      "unitText": "year",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -1954,7 +2040,56 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Conductivity",
+      "value": "0-1000us/cm (Accuracy ±3%)",
+      "unitText": "microsiemens per centimetre",
+      "minValue": 0.0,
+      "maxValue": 1000.0
+     },
+     {
+      "name": "pH range",
+      "value": "0-14 pH (Accuracy 0.01 pH)"
+     },
+     {
+      "name": "Humidity",
+      "value": "0%-100% (Accuracy ±3%, not suitable for permafrost layers)",
+      "unitText": "percent",
+      "minValue": 0.0,
+      "maxValue": 100.0
+     },
+     {
+      "name": "NPK",
+      "value": "0-1999 mg/kg (Accuracy ±2% F.s)",
+      "unitText": "milligram per kilogram",
+      "minValue": 0.0,
+      "maxValue": 1999.0
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Frequency band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41 LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Battery Life",
+      "value": ">10 Years (1-Hour Reporting)",
+      "unitText": "year",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -2127,7 +2262,54 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Range",
+      "value": "0-200M (customizable)"
+     },
+     {
+      "name": "Accuracy",
+      "value": "±0.5% FS (Higher Precision Customizable)",
+      "unitText": "percent"
+     },
+     {
+      "name": "Stability",
+      "value": "±0.2% FS/year"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Operating temp",
+      "value": "-20℃～ 70℃",
+      "unitText": "degree Celsius",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "Storage temp",
+      "value": "-20℃～ 80℃",
+      "unitText": "degree Celsius",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "Battery Life",
+      "value": ">10 Years (1-Hour Reporting)",
+      "unitText": "year",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -2583,7 +2765,57 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Range",
+      "value": "0.3-50m (customizable)",
+      "minValue": 0.3,
+      "maxValue": 50.0
+     },
+     {
+      "name": "Accuracy",
+      "value": "±1mm（customizable）",
+      "unitText": "millimetre"
+     },
+     {
+      "name": "Resolution",
+      "value": "1mm",
+      "unitText": "millimetre"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Operating temp",
+      "value": "-20℃～ 70℃",
+      "unitText": "degree Celsius",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "Storage temp",
+      "value": "-20℃～ 80℃",
+      "unitText": "degree Celsius",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "Battery Life",
+      "value": ">10 Years (1-Hour Reporting)",
+      "unitText": "year",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -2764,7 +2996,54 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Intensity",
+      "value": "0-100mm/s (customizable)"
+     },
+     {
+      "name": "Amplitude",
+      "value": "0-1000um (customizable)"
+     },
+     {
+      "name": "Accuracy",
+      "value": "1% 80Hz calibration",
+      "unitText": "percent"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Operating temp",
+      "value": "-20℃～ 70℃",
+      "unitText": "degree Celsius",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "Storage temp",
+      "value": "-20℃～ 80℃",
+      "unitText": "degree Celsius",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "Battery Life",
+      "value": ">10 Years (1-Hour Reporting)",
+      "unitText": "year",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -2937,7 +3216,59 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "CO2",
+      "value": "400ppm-5000ppm",
+      "unitText": "parts per million",
+      "minValue": 400.0,
+      "maxValue": 5000.0
+     },
+     {
+      "name": "Operating temp",
+      "value": "-40°~ +85°（精度±0.2° ）",
+      "unitText": "degree",
+      "minValue": -40.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "Humidity",
+      "value": "0%-100%（精度1%）",
+      "unitText": "percent",
+      "minValue": 0.0,
+      "maxValue": 100.0
+     },
+     {
+      "name": "Air Pressure",
+      "value": "30kpa-120kpa（精度：±0.1）",
+      "unitText": "kilopascal",
+      "minValue": 30.0,
+      "maxValue": 120.0
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Frequency band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41 LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Battery Life",
+      "value": ">10 Years (4-Hours Reporting)",
+      "unitText": "year",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -3126,7 +3457,63 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H68"
+     },
+     {
+      "name": "Frequency band",
+      "value": "CN470/EU868/IN865/RU864/US915/AU915"
+     },
+     {
+      "name": "Distance",
+      "value": "10000m"
+     },
+     {
+      "name": "Transmit Power",
+      "value": "20dBm~27dBm",
+      "unitText": "decibel-milliwatt",
+      "minValue": 20.0,
+      "maxValue": 27.0
+     },
+     {
+      "name": "Sensitivity",
+      "value": "-140dBm@0.292Kbps",
+      "unitText": "decibel-milliwatt"
+     },
+     {
+      "name": "Antenna",
+      "value": "External Fiberglass Antenna"
+     },
+     {
+      "name": "4G band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Operating temp",
+      "value": "-40°~ +85°",
+      "unitText": "degree",
+      "minValue": -40.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "Storage temp",
+      "value": "-40°~ +85°",
+      "unitText": "degree",
+      "minValue": -40.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -3319,7 +3706,63 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H66"
+     },
+     {
+      "name": "Frequency band",
+      "value": "CN470/EU868/IN865/RU864/US915/AU915"
+     },
+     {
+      "name": "Distance",
+      "value": "5000M"
+     },
+     {
+      "name": "Transmit Power",
+      "value": "20dBm~27dBm",
+      "unitText": "decibel-milliwatt",
+      "minValue": 20.0,
+      "maxValue": 27.0
+     },
+     {
+      "name": "Sensitivity",
+      "value": "-140dBm@0.292Kbps",
+      "unitText": "decibel-milliwatt"
+     },
+     {
+      "name": "Antenna",
+      "value": "External Fiberglass Antenna"
+     },
+     {
+      "name": "4G band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Operating temp",
+      "value": "-20℃～ 70℃",
+      "unitText": "degree Celsius",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "Storage temp",
+      "value": "-20℃～ 80℃",
+      "unitText": "degree Celsius",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -3492,7 +3935,41 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H700"
+     },
+     {
+      "name": "Measuring Range",
+      "value": "Customizable"
+     },
+     {
+      "name": "Accuracy",
+      "value": "Customizable"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Scope",
+      "value": "Urban · Rural · Plains · Mountainous Areas"
+     },
+     {
+      "name": "Frequency band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Power Supply",
+      "value": "Solar Power · Grid Electricity"
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -3677,7 +4154,41 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H600"
+     },
+     {
+      "name": "Measuring Range",
+      "value": "Customizable"
+     },
+     {
+      "name": "Accuracy",
+      "value": "Customizable"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Scope",
+      "value": "Urban · Rural · Plains · Mountainous Areas"
+     },
+     {
+      "name": "Frequency band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Power Supply",
+      "value": "Solar Power · Grid Electricity"
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -3862,7 +4373,60 @@ export const productContent ={
       "-40°~ +125°"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Measuring Range",
+      "value": "0kPa ～ 1MPa/1.6MPa/3.5MPa/ 7Mpa/ 10MPa/20MPa/35MPa/100MPa"
+     },
+     {
+      "name": "Pressure Accuracy",
+      "value": "±0.5%FS",
+      "unitText": "percent"
+     },
+     {
+      "name": "Temp Range",
+      "value": "-200°C to 800°C",
+      "unitText": "degree Celsius",
+      "minValue": -200.0,
+      "maxValue": 800.0
+     },
+     {
+      "name": "Temp Accuracy",
+      "value": "±0.5°C (Customizable to 0.1°C)",
+      "unitText": "degree Celsius"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Frequency band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     },
+     {
+      "name": "Operating temp",
+      "value": "-40°~ +125°",
+      "unitText": "degree",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     },
+     {
+      "name": "Storage temp",
+      "value": "-40°~ +125°",
+      "unitText": "degree",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -3995,7 +4559,47 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H100"
+     },
+     {
+      "name": "Accuracy",
+      "value": "Customizable"
+     },
+     {
+      "name": "EX Standards",
+      "value": "Complies with International Standards"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Frequency band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Operating temp",
+      "value": "-40°~ +125°",
+      "unitText": "degree",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     },
+     {
+      "name": "Storage temp",
+      "value": "-40°~ +125°",
+      "unitText": "degree",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -4136,7 +4740,43 @@ export const productContent ={
       "Ear Mount · Pole Clamp · Slot"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Measuring Range",
+      "value": "Humidity 0-100%RH, Temperature -20°C to +80°C"
+     },
+     {
+      "name": "Accuracy",
+      "value": "±0.2°C / ±2%RH (Typical)"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Probe",
+      "value": "Slotted sintered probe, cable-mounted"
+     },
+     {
+      "name": "Frequency band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Battery Life",
+      "value": ">10 Years (1-Hour Reporting)",
+      "unitText": "year",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Pole Clamp · Slot"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -4313,7 +4953,41 @@ export const productContent ={
       "Standalone · Hanging · Adhesive"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200L/H300L"
+     },
+     {
+      "name": "Storage Capacity",
+      "value": "80,000 Readings"
+     },
+     {
+      "name": "Accuracy",
+      "value": "±0.2°C / ±2%RH (Typical)"
+     },
+     {
+      "name": "Configuration",
+      "value": "NFC (Android/iOS App)"
+     },
+     {
+      "name": "Data Export",
+      "value": "USB, PDF/CSV Report"
+     },
+     {
+      "name": "Battery Life",
+      "value": "Multi-Year (Replaceable Battery)"
+     },
+     {
+      "name": "Protection",
+      "value": "IP65"
+     },
+     {
+      "name": "Installation",
+      "value": "Standalone · Hanging · Adhesive"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -4481,7 +5155,47 @@ export const productContent ={
       "Ear Mount · Duct Mount"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Measuring Range",
+      "value": "0-100,000 ppb",
+      "unitText": "parts per billion",
+      "minValue": 0.0,
+      "maxValue": 100000.0
+     },
+     {
+      "name": "Resolution",
+      "value": "1 ppb",
+      "unitText": "parts per billion"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Sensing Principle",
+      "value": "Electrochemical / PID (by gas)"
+     },
+     {
+      "name": "Frequency band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Battery Life",
+      "value": ">10 Years (1-Hour Reporting)",
+      "unitText": "year",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Ear Mount · Duct Mount"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -4649,7 +5363,44 @@ export const productContent ={
       "-20°C to +70°C"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Model",
+      "value": "H200T"
+     },
+     {
+      "name": "Positioning",
+      "value": "GPS / Beidou / LBS"
+     },
+     {
+      "name": "Communication",
+      "value": "4G / NB-IoT"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Battery Life",
+      "value": "Multi-Year (by Reporting Interval)"
+     },
+     {
+      "name": "Protection",
+      "value": "IP67"
+     },
+     {
+      "name": "Installation",
+      "value": "Magnet · Screw · Strap"
+     },
+     {
+      "name": "Operating Temperature",
+      "value": "-20°C to +70°C",
+      "unitText": "degree Celsius",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -4817,7 +5568,43 @@ export const productContent ={
       "Fixed · Ducted"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "Product Models",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Target Gases",
+      "value": "100+ Gases Customizable"
+     },
+     {
+      "name": "Measuring Range",
+      "value": "Per Gas (Customized)"
+     },
+     {
+      "name": "Protocol",
+      "value": "MQTT"
+     },
+     {
+      "name": "Sensing Principle",
+      "value": "Electrochemical / NDIR / PID"
+     },
+     {
+      "name": "Frequency band",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "Battery Life",
+      "value": ">10 Years (1-Hour Reporting)",
+      "unitText": "year",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Fixed · Ducted"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
@@ -6339,7 +7126,44 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "测量范围",
+      "value": "-200°C到800°C可定制",
+      "minValue": -200.0,
+      "maxValue": 800.0
+     },
+     {
+      "name": "测量精度",
+      "value": "±0.5°C（0.1°C可定制）",
+      "unitText": "摄氏度"
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "接线方式",
+      "value": "三线制"
+     },
+     {
+      "name": "工作频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "电池寿命",
+      "value": "＞10年（1小时上报周期）"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -6520,7 +7344,50 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "量程",
+      "value": "0kPa ～ 1MPa/1.6MPa/3.5MPa/ 7Mpa/10MPa/20MPa/35MPa/100MPa"
+     },
+     {
+      "name": "过载",
+      "value": "≤ 2 倍满量程压力"
+     },
+     {
+      "name": "稳定性",
+      "value": "±0.2%FS/ 年",
+      "unitText": "百分比"
+     },
+     {
+      "name": "通信协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "工作温度",
+      "value": "-20℃～ 80℃",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "贮存温度",
+      "value": "-20℃～ 85℃",
+      "minValue": -20.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "电池寿命",
+      "value": "＞10年（1小时上报周期）"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -6705,7 +7572,51 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "电导率",
+      "value": "0-1000us/cm（精度±3%）",
+      "minValue": 0.0,
+      "maxValue": 1000.0
+     },
+     {
+      "name": "PH值",
+      "value": "0-14PH（精度0.01PH）"
+     },
+     {
+      "name": "湿度测量",
+      "value": "0%-100%（精度3%，不适宜冻土层）",
+      "minValue": 0.0,
+      "maxValue": 100.0
+     },
+     {
+      "name": "NPK",
+      "value": "0-1999mg/kg（精度±2%F.s）",
+      "minValue": 0.0,
+      "maxValue": 1999.0
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "工作频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41 LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "电池寿命",
+      "value": "＞10年（1小时上报周期）"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -6878,7 +7789,53 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "量程",
+      "value": "0-200m (支持定制)",
+      "minValue": 0.0,
+      "maxValue": 200.0
+     },
+     {
+      "name": "精度",
+      "value": "±0.5%FS（更高精度定制）",
+      "unitText": "百分比"
+     },
+     {
+      "name": "稳定性",
+      "value": "±0.2%FS/ 年",
+      "unitText": "百分比"
+     },
+     {
+      "name": "通信协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "工作温度",
+      "value": "-20℃～ 70℃",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "贮存温度",
+      "value": "-20℃～ 80℃",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "电池寿命",
+      "value": "＞10年（1小时上报周期）"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -7332,7 +8289,53 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "测量范围",
+      "value": "0.3-50m (支持定制)",
+      "minValue": 0.3,
+      "maxValue": 50.0
+     },
+     {
+      "name": "精度",
+      "value": "±1mm（支持定制）",
+      "unitText": "毫米"
+     },
+     {
+      "name": "分辨率",
+      "value": "1mm",
+      "unitText": "毫米"
+     },
+     {
+      "name": "通信协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "工作温度",
+      "value": "-20℃～ 70℃",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "贮存温度",
+      "value": "-20℃～ 80℃",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "电池寿命",
+      "value": "＞10年（1小时上报周期）"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -7513,7 +8516,50 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "烈度",
+      "value": "0-100mm/s (支持定制)"
+     },
+     {
+      "name": "振幅",
+      "value": "0-1000um (支持定制)"
+     },
+     {
+      "name": "精度",
+      "value": "1% 80HZ 校准",
+      "unitText": "百分比"
+     },
+     {
+      "name": "通信协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "工作温度",
+      "value": "-20℃～ 70℃",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "贮存温度",
+      "value": "-20℃～ 80℃",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "电池寿命",
+      "value": "＞10年（1小时上报周期）"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -7686,7 +8732,53 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "CO2",
+      "value": "400ppm-5000ppm",
+      "minValue": 400.0,
+      "maxValue": 5000.0
+     },
+     {
+      "name": "温度",
+      "value": "-40°~ +85°（精度±0.2° ）",
+      "minValue": -40.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "湿度",
+      "value": "0%-100%（精度1%）",
+      "minValue": 0.0,
+      "maxValue": 100.0
+     },
+     {
+      "name": "大气压",
+      "value": "30kpa-120kpa（精度：±0.1）",
+      "minValue": 30.0,
+      "maxValue": 120.0
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "工作频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41 LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "电池寿命",
+      "value": "＞10年（4小时上报周期）"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -7875,7 +8967,60 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H68"
+     },
+     {
+      "name": "工作频段",
+      "value": "多频段选择：CN470/EU868/IN865/RU864/US915/AU915"
+     },
+     {
+      "name": "传输距离",
+      "value": "10000m"
+     },
+     {
+      "name": "发射功率",
+      "value": "20dBm~27dBm",
+      "minValue": 20.0,
+      "maxValue": 27.0
+     },
+     {
+      "name": "接收灵敏度",
+      "value": "-140dBm@0.292Kbps",
+      "unitText": "分贝毫瓦"
+     },
+     {
+      "name": "天线",
+      "value": "外置玻璃钢天线"
+     },
+     {
+      "name": "4G频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "工作温度",
+      "value": "-40°~ +85°",
+      "minValue": -40.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "存储温度",
+      "value": "-40°~ +85°",
+      "minValue": -40.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -8068,7 +9213,60 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H66"
+     },
+     {
+      "name": "工作频段",
+      "value": "多频段选择：CN470/EU868/IN865/RU864/US915/AU915"
+     },
+     {
+      "name": "传输距离",
+      "value": "5000M"
+     },
+     {
+      "name": "发射功率",
+      "value": "20dBm~27dBm",
+      "minValue": 20.0,
+      "maxValue": 27.0
+     },
+     {
+      "name": "接收灵敏度",
+      "value": "-140dBm@0.292Kbps",
+      "unitText": "分贝毫瓦"
+     },
+     {
+      "name": "天线",
+      "value": "外置玻璃钢天线"
+     },
+     {
+      "name": "4G频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "工作温度",
+      "value": "-20℃～ 70℃",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "存储温度",
+      "value": "-20℃～ 80℃",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -8241,7 +9439,41 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H700"
+     },
+     {
+      "name": "测量范围",
+      "value": "范围支持定制"
+     },
+     {
+      "name": "测量精度",
+      "value": "精度支持定制"
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "部署范围",
+      "value": "城市·农村·平原·山区"
+     },
+     {
+      "name": "工作频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "供电方式",
+      "value": "太阳能·市电"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -8426,7 +9658,41 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H600"
+     },
+     {
+      "name": "测量范围",
+      "value": "Customizable"
+     },
+     {
+      "name": "测量精度",
+      "value": "精度支持定制"
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "部署范围",
+      "value": "城市·农村·平原·山区"
+     },
+     {
+      "name": "工作频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "供电方式",
+      "value": "太阳能·市电"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -8611,7 +9877,56 @@ export const productContent ={
       "-40°~ +125°"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "压力范围",
+      "value": "0kPa ～ 1MPa/1.6MPa/3.5MPa/ 7Mpa/ 10MPa/20MPa/35MPa/100MPa"
+     },
+     {
+      "name": "压力精度",
+      "value": "±0.5%FS",
+      "unitText": "百分比"
+     },
+     {
+      "name": "温度范围",
+      "value": "-200°C到800°C可定制",
+      "minValue": -200.0,
+      "maxValue": 800.0
+     },
+     {
+      "name": "温度精度",
+      "value": "测量精度±0.5°C（0.1°C可定制）"
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "工作频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     },
+     {
+      "name": "工作温度",
+      "value": "-40°~ +125°",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     },
+     {
+      "name": "存储温度",
+      "value": "-40°~ +125°",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -8744,7 +10059,45 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H100"
+     },
+     {
+      "name": "精度范围",
+      "value": "按客户要求定制"
+     },
+     {
+      "name": "防爆标准",
+      "value": "符合国际标准"
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "工作频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "工作温度",
+      "value": "-40°~ +125°",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     },
+     {
+      "name": "存储温度",
+      "value": "-40°~ +125°",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -8885,7 +10238,41 @@ export const productContent ={
       "挂耳·抱杆·卡槽"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "测量范围",
+      "value": "湿度 0-100%RH，温度 -20°C～+80°C"
+     },
+     {
+      "name": "测量精度",
+      "value": "±0.2°C / ±2%RH（典型值）"
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "探头形式",
+      "value": "开槽烧结探头，线缆分体安装"
+     },
+     {
+      "name": "工作频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "电池寿命",
+      "value": "＞10年（1小时上报周期）"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·抱杆·卡槽"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -9062,7 +10449,41 @@ export const productContent ={
       "独立摆放·悬挂·背胶"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200L/H300L"
+     },
+     {
+      "name": "存储容量",
+      "value": "80,000 条读数"
+     },
+     {
+      "name": "测量精度",
+      "value": "±0.2°C / ±2%RH（典型值）"
+     },
+     {
+      "name": "配置方式",
+      "value": "NFC（Android/iOS App）"
+     },
+     {
+      "name": "数据导出",
+      "value": "USB，PDF/CSV 报告"
+     },
+     {
+      "name": "电池寿命",
+      "value": "多年续航（可更换电池）"
+     },
+     {
+      "name": "防护等级",
+      "value": "IP65"
+     },
+     {
+      "name": "安装方式",
+      "value": "独立摆放·悬挂·背胶"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -9230,7 +10651,44 @@ export const productContent ={
       "挂耳·管道安装"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "测量范围",
+      "value": "0-100,000 ppb",
+      "minValue": 0.0,
+      "maxValue": 100000.0
+     },
+     {
+      "name": "分辨率",
+      "value": "1 ppb",
+      "unitText": "十亿分之一"
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "检测原理",
+      "value": "电化学 / PID（按气体选型）"
+     },
+     {
+      "name": "工作频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "电池寿命",
+      "value": "＞10年（1小时上报周期）"
+     },
+     {
+      "name": "安装方式",
+      "value": "挂耳·管道安装"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -9398,7 +10856,43 @@ export const productContent ={
       "-20°C～+70°C"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200T"
+     },
+     {
+      "name": "定位方式",
+      "value": "GPS / 北斗 / LBS"
+     },
+     {
+      "name": "通讯方式",
+      "value": "4G / NB-IoT"
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "电池寿命",
+      "value": "多年续航（按上报周期）"
+     },
+     {
+      "name": "防护等级",
+      "value": "IP67"
+     },
+     {
+      "name": "安装方式",
+      "value": "磁吸·螺丝·扎带"
+     },
+     {
+      "name": "工作温度",
+      "value": "-20°C～+70°C",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {
@@ -9566,7 +11060,41 @@ export const productContent ={
       "固定式·管道式"
      ]
     ],
-    "certImgs": [],
+
+    "specsStructured": [
+     {
+      "name": "产品型号",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "目标气体",
+      "value": "100+ 种气体可定制"
+     },
+     {
+      "name": "测量范围",
+      "value": "按气体定制"
+     },
+     {
+      "name": "通讯协议",
+      "value": "MQTT"
+     },
+     {
+      "name": "检测原理",
+      "value": "电化学 / NDIR / PID"
+     },
+     {
+      "name": "工作频段",
+      "value": "LTE-TDD:B34/B38/B39/B40/B41LTE-FDD:B1/B3/B5/B8"
+     },
+     {
+      "name": "电池寿命",
+      "value": "＞10年（1小时上报周期）"
+     },
+     {
+      "name": "安装方式",
+      "value": "固定式·管道式"
+     }
+    ],    "certImgs": [],
     "scenariosHeading": "应用行业",
     "scenarios": [
      {

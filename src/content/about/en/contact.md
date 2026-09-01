@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="About Hitelecom"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Cloud · IoT · Sensors"/></h1>
 						 
 					</Div>
 				</Div>
@@ -97,11 +97,11 @@
 					</div>
 					<div class="clearfix contact_1_mid_left_mid_3 reveal">
 						<p>
-							<img width="104" src="/images/about/static_1.png">
+							<img width="104" alt="QR code for contacting Hitelecom" src="/images/about/static_1.png">
 							<br>Whatsapp
 						</p>
 						<p>
-							<img src="/images/about/static_img53.png">
+							<img alt="QR code for contacting Hitelecom" src="/images/about/static_img53.png">
 							<br>Wechat
 						</p>
 					</div>

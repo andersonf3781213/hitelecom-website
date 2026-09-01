@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_img13.png" alt="关于我们"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_img13.png" alt="宏太云 · 物联 · 传感"/></h1>
 						 
 					</Div>
 				</Div>
@@ -92,7 +92,7 @@
 				<p class="p1">精心设计，精益生产，提供超越期待的高质量产品和服务</p><p>在宏太的电子制造工厂，每一步生产流程都经过精心设计和严格监控，以确保我们的产品能够达到甚至超过行业标准。六西格玛30PPM内高质量追求，建立持续改进的质量管理体系，通过定期审查和优化工艺流程，最终实现卓越质量的目标。<br/><br/></p>			</div>
 		</div>
 		<div class="clearfix qa_1_2 reveal">
-			<img src="/images/about/up_33f8ecc7bf8fbfcf1538a9c87e898b51.webp">
+			<img alt="工程师在实验室检测 PCB 板" src="/images/about/up_33f8ecc7bf8fbfcf1538a9c87e898b51.webp">
 		</div>
 	</div>
 </div> 
@@ -127,7 +127,7 @@
 																		<li>
 										<div class="qa_3_1_mid">
 											<Div class="qa_3_1_mid_1">
-												<img src="/images/about/up_d94a0df42445c6fbcf77d20de0969c73.webp">
+												<img alt="技术人员在 PCB 板上焊接元件" src="/images/about/up_d94a0df42445c6fbcf77d20de0969c73.webp">
 											</Div>
 											<div class="qa_3_1_mid_jj_1 css3">
 												<div class="qa_3_1_mid_jj">
@@ -154,7 +154,7 @@
 																		<li>
 										<div class="qa_3_1_mid">
 											<Div class="qa_3_1_mid_1">
-												<img src="/images/about/up_0ff68ee5ee21bb828e5ba0dd7b20ff56.webp">
+												<img alt="SMT 贴片机生产线" src="/images/about/up_0ff68ee5ee21bb828e5ba0dd7b20ff56.webp">
 											</Div>
 											<div class="qa_3_1_mid_jj_1 css3">
 												<div class="qa_3_1_mid_jj">
@@ -204,7 +204,7 @@
 											<div class="qa_4_2_mid_1">
 												<div class="cell_mid">
 													<div  class="cell_h">
-														<img src="/images/about/up_1551d73dc647f7ef7f4c034c70f06bd3.jpg">
+														<img alt="MPM 锡膏印刷机" src="/images/about/up_1551d73dc647f7ef7f4c034c70f06bd3.jpg">
 													</div>
 												</div>
 											</div>
@@ -223,7 +223,7 @@
 											<div class="qa_4_2_mid_1">
 												<div class="cell_mid">
 													<div  class="cell_h">
-														<img src="/images/about/up_b691ba179e8b6fd9f50bf5e838eaa38f.jpg">
+														<img alt="Koh Young KY8030 锡膏检测设备" src="/images/about/up_b691ba179e8b6fd9f50bf5e838eaa38f.jpg">
 													</div>
 												</div>
 											</div>
@@ -242,7 +242,7 @@
 											<div class="qa_4_2_mid_1">
 												<div class="cell_mid">
 													<div  class="cell_h">
-														<img src="/images/about/up_5a4e0e074312dca7403899d7b15cb71b.jpg">
+														<img alt="Koh Young 3D 锡膏检测（SPI）设备" src="/images/about/up_5a4e0e074312dca7403899d7b15cb71b.jpg">
 													</div>
 												</div>
 											</div>
@@ -261,7 +261,7 @@
 											<div class="qa_4_2_mid_1">
 												<div class="cell_mid">
 													<div  class="cell_h">
-														<img src="/images/about/up_468621c1477a5202b83424859b0fca9c.webp">
+														<img alt="Rehm 回流焊炉" src="/images/about/up_468621c1477a5202b83424859b0fca9c.webp">
 													</div>
 												</div>
 											</div>
@@ -280,7 +280,7 @@
 											<div class="qa_4_2_mid_1">
 												<div class="cell_mid">
 													<div  class="cell_h">
-														<img src="/images/about/up_467ee1a9f302751c62c181b898b4b25f.webp">
+														<img alt="高速 SMT 贴片机组" src="/images/about/up_467ee1a9f302751c62c181b898b4b25f.webp">
 													</div>
 												</div>
 											</div>
@@ -322,7 +322,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_5cd3315cc09f1f18cc8fae819f11c81b.jpg">
+									<img alt="GigaDevice（兆易创新）——宏太通信元件合作伙伴" src="/images/about/up_5cd3315cc09f1f18cc8fae819f11c81b.jpg">
 								</div>
 							</div>
 						</li>
@@ -330,7 +330,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_42118537ac56b8ded21d336cd41e1cab.jpg">
+									<img alt="STMicroelectronics（意法半导体）——宏太通信元件合作伙伴" src="/images/about/up_42118537ac56b8ded21d336cd41e1cab.jpg">
 								</div>
 							</div>
 						</li>
@@ -338,7 +338,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_56547d4554c86773bd7946e5c62075c1.jpg">
+									<img alt="NXP（恩智浦）——宏太通信元件合作伙伴" src="/images/about/up_56547d4554c86773bd7946e5c62075c1.jpg">
 								</div>
 							</div>
 						</li>
@@ -346,7 +346,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_614df29f7b1c439cccaa3ab35ab3e8e6.jpg">
+									<img alt="HDSC（华大半导体）——宏太通信元件合作伙伴" src="/images/about/up_614df29f7b1c439cccaa3ab35ab3e8e6.jpg">
 								</div>
 							</div>
 						</li>
@@ -354,7 +354,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_8c93c59f532fa89a50e29599d77608e6.jpg">
+									<img alt="Renesas（瑞萨电子）——宏太通信元件合作伙伴" src="/images/about/up_8c93c59f532fa89a50e29599d77608e6.jpg">
 								</div>
 							</div>
 						</li>
@@ -362,7 +362,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_e1e7a1a741afc8af0da065dcab01d140.jpg">
+									<img alt="TDK——宏太通信元件合作伙伴" src="/images/about/up_e1e7a1a741afc8af0da065dcab01d140.jpg">
 								</div>
 							</div>
 						</li>
@@ -370,7 +370,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_0f2e973fee69307b9b26f6cf0a05ebd4.jpg">
+									<img alt="muRata（村田制作所）——宏太通信电子元件合作伙伴" src="/images/about/up_0f2e973fee69307b9b26f6cf0a05ebd4.jpg">
 								</div>
 							</div>
 						</li>
@@ -378,7 +378,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_2038498b1f33bdd16309af26916f7a9d.jpg">
+									<img alt="Analog Devices（ADI）——宏太通信元件合作伙伴" src="/images/about/up_2038498b1f33bdd16309af26916f7a9d.jpg">
 								</div>
 							</div>
 						</li>
@@ -386,7 +386,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_d7f7d000d24767ce52f09e62f8d9fb5a.jpg">
+									<img alt="Texas Instruments（德州仪器）——宏太通信元件合作伙伴" src="/images/about/up_d7f7d000d24767ce52f09e62f8d9fb5a.jpg">
 								</div>
 							</div>
 						</li>
@@ -394,7 +394,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_95fb54fc5097ead2bf72490771bab09d.jpg">
+									<img alt="Microchip（微芯科技）——宏太通信元件合作伙伴" src="/images/about/up_95fb54fc5097ead2bf72490771bab09d.jpg">
 								</div>
 							</div>
 						</li>
@@ -402,7 +402,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_5e50988b00a1422e4c1c620f4040e3a8.jpg">
+									<img alt="SMIC（中芯国际）——宏太通信元件合作伙伴" src="/images/about/up_5e50988b00a1422e4c1c620f4040e3a8.jpg">
 								</div>
 							</div>
 						</li>
@@ -410,7 +410,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img src="/images/about/up_2e497c9d8d4ff112f29ea913981fa894.jpg">
+									<img alt="Sensirion（盛思锐）——宏太通信传感器合作伙伴" src="/images/about/up_2e497c9d8d4ff112f29ea913981fa894.jpg">
 								</div>
 							</div>
 						</li>
@@ -429,7 +429,7 @@
 	<div class="indexmid">
 		<Div class="qa_6_mid">
 			<div class="qa_6_mid_left">
-				<img src="/images/about/up_f69d9bcdfa0aae6fa841fef95467c1f3.webp">
+				<img alt="宏太通信质量管理体系证书与产品合格证" src="/images/about/up_f69d9bcdfa0aae6fa841fef95467c1f3.webp">
 			</div>
 			<div class="qa_6_mid_right">
 				<div class="qa_6_mid_right_1 reveal">
@@ -462,7 +462,7 @@
  				  					 
 				  <div class="swiper-slide" lang="0">
 				  	<div class="cjimg">
-						<img src="/images/about/up_4343f2f6b506c7d16d7eb8a25d9d3569.webp">
+						<img alt="仰望树冠与天空" src="/images/about/up_4343f2f6b506c7d16d7eb8a25d9d3569.webp">
 					</div>
 				   		 <Div class="qa_7_1_left_1">
 						 	RoHS合规性						 </Div>
@@ -476,7 +476,7 @@
 				  					 
 				  <div class="swiper-slide" lang="1">
 				  	<div class="cjimg">
-						<img src="/images/about/up_7d0bfe246419c5d58653bbe289701260.webp">
+						<img alt="绿色星球——环保理念" src="/images/about/up_7d0bfe246419c5d58653bbe289701260.webp">
 					</div>
 				   		 <Div class="qa_7_1_left_1">
 						 	EU REACH						 </Div>
@@ -487,7 +487,7 @@
 				  					 
 				  <div class="swiper-slide" lang="2">
 				  	<div class="cjimg">
-						<img src="/images/about/up_0492b0a599bdc5dfaa45769fd842b977.webp">
+						<img alt="河流与绿色森林航拍景观" src="/images/about/up_0492b0a599bdc5dfaa45769fd842b977.webp">
 					</div>
 				   		 <Div class="qa_7_1_left_1">
 						 	无卤						 </Div>

@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_img13.png" alt="关于我们"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_img13.png" alt="宏太云 · 物联 · 传感"/></h1>
 						 
 					</Div>
 				</Div>
@@ -131,7 +131,7 @@
 	<Div class="indexmid">
 		<Div class="clearfix about_2_1">
 			<div class="about_2_1_right">
-				<img src="/images/about/up_4e043676a29b53a7135269cacadefd7b.webp">
+				<img alt="上海陆家嘴天际线——宏太通信总部所在地" src="/images/about/up_4e043676a29b53a7135269cacadefd7b.webp">
 			</div>
 			<Div class="about_2_1_left">
 				<div class="cell_mid">
@@ -252,7 +252,7 @@ Team work: 团队协作
 								推出云管端系列产品: Hicloud, Hitelecom, Hisenor
 							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_a5aa82f7fdfa590777ffd5e3835fc891.webp">
+								<img alt="商务人士触控云图标连接智能设备" src="/images/about/up_a5aa82f7fdfa590777ffd5e3835fc891.webp">
 							</Div>
 						</div>
 				  </div>
@@ -268,7 +268,7 @@ Team work: 团队协作
 								通过上海市高新技术企业称号复审<br>
 							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_79fb40fb3c9993aeef9cfde329dad51c.webp">
+								<img alt="现代化玻璃幕墙办公大楼" src="/images/about/up_79fb40fb3c9993aeef9cfde329dad51c.webp">
 							</Div>
 						</div>
 				  </div>
@@ -284,7 +284,7 @@ Team work: 团队协作
 								累计发货量超过100万pcs
 							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_6482879a38595652a4061e4ab9a64b81.webp">
+								<img alt="客户竖起大拇指" src="/images/about/up_6482879a38595652a4061e4ab9a64b81.webp">
 							</Div>
 						</div>
 				  </div>
@@ -301,7 +301,7 @@ Team work: 团队协作
 
 							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_06880ebe7ace4cb7282cbd13089145d1.webp">
+								<img alt="芯片之上的数字城市——物联网传感技术" src="/images/about/up_06880ebe7ace4cb7282cbd13089145d1.webp">
 							</Div>
 						</div>
 				  </div>
@@ -316,7 +316,7 @@ Team work: 团队协作
 							<div class="about_4_1_right_3_mid_3">
 								获得上海市高新技术企业称号							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_a5104b13712daeebd2bf7bbe8f19de1e.webp">
+								<img alt="商务团队讨论数据图表" src="/images/about/up_a5104b13712daeebd2bf7bbe8f19de1e.webp">
 							</Div>
 						</div>
 				  </div>
@@ -332,7 +332,7 @@ Team work: 团队协作
 								生产基地再次扩产通过ISO14000认证
 							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_71443115ba17cd3e9c08c00790bdf35f.webp">
+								<img alt="工程师在笔记本电脑上处理电子文档" src="/images/about/up_71443115ba17cd3e9c08c00790bdf35f.webp">
 							</Div>
 						</div>
 				  </div>
@@ -347,7 +347,7 @@ Team work: 团队协作
 							<div class="about_4_1_right_3_mid_3">
 								物联共享端到端超过10万pcs							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_03ad10a23f7acea89d767532677b3f82.webp">
+								<img alt="手指触控数字地球，连接物联网云服务" src="/images/about/up_03ad10a23f7acea89d767532677b3f82.webp">
 							</Div>
 						</div>
 				  </div>
@@ -363,7 +363,7 @@ Team work: 团队协作
 								推出4G cat.1系列产品<br>
 							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_d442314613a54334e853eb2ff35b5470.webp">
+								<img alt="宏太通信 4G Cat.1 系列产品发布会" src="/images/about/up_d442314613a54334e853eb2ff35b5470.webp">
 							</Div>
 						</div>
 				  </div>
@@ -379,7 +379,7 @@ Team work: 团队协作
 								产品成功进入墨西哥电信<br>
 							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_7f6ba4d0580cd31ede9914ce28dd6f3e.webp">
+								<img alt="商务握手——宏太通信产品进入墨西哥电信市场" src="/images/about/up_7f6ba4d0580cd31ede9914ce28dd6f3e.webp">
 							</Div>
 						</div>
 				  </div>
@@ -396,7 +396,7 @@ Team work: 团队协作
 
 							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_47f7ff8e7fb51884d2fb0797eb73a7de.webp">
+								<img alt="城市上空的世界连接地图——全球业务拓展" src="/images/about/up_47f7ff8e7fb51884d2fb0797eb73a7de.webp">
 							</Div>
 						</div>
 				  </div>
@@ -411,7 +411,7 @@ Team work: 团队协作
 							<div class="about_4_1_right_3_mid_3">
 								开始研发Copper/GPRS产品							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_d9dffdec3adfc8590991fc61fc1c8c34.webp">
+								<img alt="戴手套的手持处理器芯片与电路板" src="/images/about/up_d9dffdec3adfc8590991fc61fc1c8c34.webp">
 							</Div>
 						</div>
 				  </div>
@@ -426,7 +426,7 @@ Team work: 团队协作
 							<div class="about_4_1_right_3_mid_3">
 								宏太公司成立							</div>
 							<Div class="about_4_1_right_3_mid_4">
-								<img src="/images/about/up_fe5d25bad5ee23fe9040d78a39f13ec8.webp">
+								<img alt="城市夜景天际线" src="/images/about/up_fe5d25bad5ee23fe9040d78a39f13ec8.webp">
 							</Div>
 						</div>
 				  </div>
@@ -449,7 +449,7 @@ Team work: 团队协作
 		</Div>
 	</Div>
 	<div class="about_4_footer">
-		<img src="/images/about/static_img4.webp">
+		<img alt="" src="/images/about/static_img4.webp">
 	</div>
 </Div>
 <Div class="clearfix about_5">
@@ -467,7 +467,7 @@ Team work: 团队协作
  				  					 
 				  <div class="swiper-slide" lang="01">
 				   		 <div class="about_5_1_1">
-						 	<img src="/images/about/up_7fcd3f3932d1ac3f825a815e81015ccd.webp">
+						 	<img alt="宏太通信公司前台" src="/images/about/up_7fcd3f3932d1ac3f825a815e81015ccd.webp">
 						 </div>
 						 <div class="about_5_1_2">
 						 	<div class="about_5_1_2_left">
@@ -480,7 +480,7 @@ Team work: 团队协作
 				  					 
 				  <div class="swiper-slide" lang="02">
 				   		 <div class="about_5_1_1">
-						 	<img src="/images/about/up_8a9a2ae7dfb6e2f0fecbd8d1634e0ecf.webp">
+						 	<img alt="宏太通信会议室" src="/images/about/up_8a9a2ae7dfb6e2f0fecbd8d1634e0ecf.webp">
 						 </div>
 						 <div class="about_5_1_2">
 						 	<div class="about_5_1_2_left">
@@ -493,7 +493,7 @@ Team work: 团队协作
 				  					 
 				  <div class="swiper-slide" lang="03">
 				   		 <div class="about_5_1_1">
-						 	<img src="/images/about/up_362a08d0ea1f6b98e9b2adf284175c90.webp">
+						 	<img alt="宏太通信办公与研发工作区" src="/images/about/up_362a08d0ea1f6b98e9b2adf284175c90.webp">
 						 </div>
 						 <div class="about_5_1_2">
 						 	<div class="about_5_1_2_left">
@@ -555,7 +555,7 @@ Team work: 团队协作
  				  					 
 				  <div class="swiper-slide" lang="01">
 				   	<div class="about_6_2_1">
-						<img src="/images/about/up_55e8d7ea6e1f89a8c7fffdc57b4ec136.webp">
+						<img alt="宏太通信上海市高新技术企业证书" src="/images/about/up_55e8d7ea6e1f89a8c7fffdc57b4ec136.webp">
 					</div>
 					<div class="about_6_2_2">
 						高新企业					</div>
@@ -563,7 +563,7 @@ Team work: 团队协作
 				  					 
 				  <div class="swiper-slide" lang="02">
 				   	<div class="about_6_2_1">
-						<img src="/images/about/up_7e37a49da6ca3f7ba9f4c65c45cbe8b8.webp">
+						<img alt="实用新型专利证书" src="/images/about/up_7e37a49da6ca3f7ba9f4c65c45cbe8b8.webp">
 					</div>
 					<div class="about_6_2_2">
 						专利证书					</div>
@@ -571,7 +571,7 @@ Team work: 团队协作
 				  					 
 				  <div class="swiper-slide" lang="03">
 				   	<div class="about_6_2_1">
-						<img src="/images/about/up_a769b2fa0252659c432035481befc1fc.webp">
+						<img alt="计算机软件著作权登记证书" src="/images/about/up_a769b2fa0252659c432035481befc1fc.webp">
 					</div>
 					<div class="about_6_2_2">
 						软件著作					</div>
@@ -579,7 +579,7 @@ Team work: 团队协作
 				  					 
 				  <div class="swiper-slide" lang="04">
 				   	<div class="about_6_2_1">
-						<img src="/images/about/up_b6d04de84606f61cbcf67b1b0d9f3435.webp">
+						<img alt="IATF 16949 汽车行业质量管理体系认证证书" src="/images/about/up_b6d04de84606f61cbcf67b1b0d9f3435.webp">
 					</div>
 					<div class="about_6_2_2">
 						IATF16949					</div>
@@ -587,7 +587,7 @@ Team work: 团队协作
 				  					 
 				  <div class="swiper-slide" lang="05">
 				   	<div class="about_6_2_1">
-						<img src="/images/about/up_08bb34b3d5d2df0c89cc42f5289fecf8.webp">
+						<img alt="宏太通信产品 CE 认证证书" src="/images/about/up_08bb34b3d5d2df0c89cc42f5289fecf8.webp">
 					</div>
 					<div class="about_6_2_2">
 						CE 认证					</div>
@@ -595,7 +595,7 @@ Team work: 团队协作
 				  					 
 				  <div class="swiper-slide" lang="06">
 				   	<div class="about_6_2_1">
-						<img src="/images/about/up_c34f7bacf3b7a670e23804c57fea08c4.webp">
+						<img alt="产品检测报告" src="/images/about/up_c34f7bacf3b7a670e23804c57fea08c4.webp">
 					</div>
 					<div class="about_6_2_2">
 						检测报告					</div>
@@ -603,7 +603,7 @@ Team work: 团队协作
 				  					 
 				  <div class="swiper-slide" lang="07">
 				   	<div class="about_6_2_1">
-						<img src="/images/about/up_4b1823fc9fd0b25634779ed78ae5e503.webp">
+						<img alt="ISO 45001 职业健康安全管理体系认证证书" src="/images/about/up_4b1823fc9fd0b25634779ed78ae5e503.webp">
 					</div>
 					<div class="about_6_2_2">
 						ISO45001					</div>
@@ -611,7 +611,7 @@ Team work: 团队协作
 				  					 
 				  <div class="swiper-slide" lang="08">
 				   	<div class="about_6_2_1">
-						<img src="/images/about/up_92affa8599dcbcf437812dea59d58c51.webp">
+						<img alt="宏太通信产品 CE 认证证书" src="/images/about/up_92affa8599dcbcf437812dea59d58c51.webp">
 					</div>
 					<div class="about_6_2_2">
 						Red 认证					</div>
@@ -619,7 +619,7 @@ Team work: 团队协作
 				  					 
 				  <div class="swiper-slide" lang="09">
 				   	<div class="about_6_2_1">
-						<img src="/images/about/up_b1da6ee138db473e64f26648471d2883.webp">
+						<img alt="ISO 14001 环境管理体系认证证书" src="/images/about/up_b1da6ee138db473e64f26648471d2883.webp">
 					</div>
 					<div class="about_6_2_2">
 						ISO14001					</div>

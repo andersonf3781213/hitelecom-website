@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="About Hitelecom"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Cloud · IoT · Sensors"/></h1>
 						 
 					</Div>
 				</Div>
@@ -88,7 +88,7 @@
 								</div>
 							</div>
 							<div class="pa_1_2 reveal">
-								<img src="/images/about/up_5634dad366ca575373d0dad579d87835.webp">
+								<img alt="Hitelecom partner ecosystem diagram" src="/images/about/up_5634dad366ca575373d0dad579d87835.webp">
 							</div>
 	</div>
 </div>
@@ -105,7 +105,7 @@
 																		<li class="reveal">
 										<div class="pa_2_1_mid">
 											<div class="pa_2_1_mid_1">
-												<img src="/images/about/up_9737a9c520f0d9c03f7440c6ae57513f.webp">
+												<img alt="Glass bar chart with rising arrow — channel support" src="/images/about/up_9737a9c520f0d9c03f7440c6ae57513f.webp">
 											</div>
 											<div class="pa_2_1_mid_2">
 												<div class="pa_2_1_mid_2_1">
@@ -118,7 +118,7 @@
 																		<li class="reveal">
 										<div class="pa_2_1_mid">
 											<div class="pa_2_1_mid_1">
-												<img src="/images/about/up_dfdd0d388b4b87b38116bb5a0338047d.webp">
+												<img alt="Glass AI icon — intelligent IoT solutions" src="/images/about/up_dfdd0d388b4b87b38116bb5a0338047d.webp">
 											</div>
 											<div class="pa_2_1_mid_2">
 												<div class="pa_2_1_mid_2_1">
@@ -131,7 +131,7 @@
 																		<li class="reveal">
 										<div class="pa_2_1_mid">
 											<div class="pa_2_1_mid_1">
-												<img src="/images/about/up_816edb8932e445ac4b9d827f3f9abed9.webp">
+												<img alt="Glass recycling-cycle icon — partner ecosystem" src="/images/about/up_816edb8932e445ac4b9d827f3f9abed9.webp">
 											</div>
 											<div class="pa_2_1_mid_2">
 												<div class="pa_2_1_mid_2_1">
@@ -144,7 +144,7 @@
 																		<li class="reveal">
 										<div class="pa_2_1_mid">
 											<div class="pa_2_1_mid_1">
-												<img src="/images/about/up_b94bb9545f3167748fef0fbe5e23f4c0.webp">
+												<img alt="Glass badge icon — partner service rating" src="/images/about/up_b94bb9545f3167748fef0fbe5e23f4c0.webp">
 											</div>
 											<div class="pa_2_1_mid_2">
 												<div class="pa_2_1_mid_2_1">
@@ -172,8 +172,8 @@
 									<li>
 										<div class="pa_3_1_mid">
 											<div class="pa_3_1_mid_1">
-												<img src="/images/about/static_img37.png">
-												<span><img src="/images/about/static_img42.png"></span>
+												<img alt="" src="/images/about/static_img37.png">
+												<span><img alt="" src="/images/about/static_img42.png"></span>
 											</div>
 											<div class="pa_3_1_mid_2">
 												Project Inquiry
@@ -183,8 +183,8 @@
 									<li>
 										<div class="pa_3_1_mid">
 											<div class="pa_3_1_mid_1">
-												<img src="/images/about/static_img38.png">
-												<span><img src="/images/about/static_img42.png"></span>
+												<img alt="" src="/images/about/static_img38.png">
+												<span><img alt="" src="/images/about/static_img42.png"></span>
 											</div>
 											<div class="pa_3_1_mid_2">
 											 Partner Selection
@@ -194,8 +194,8 @@
 									<li>
 										<div class="pa_3_1_mid">
 											<div class="pa_3_1_mid_1">
-												<img src="/images/about/static_img39.png">
-												<span><img src="/images/about/static_img42.png"></span>
+												<img alt="" src="/images/about/static_img39.png">
+												<span><img alt="" src="/images/about/static_img42.png"></span>
 											</div>
 											<div class="pa_3_1_mid_2">
 												Site Survey
@@ -205,8 +205,8 @@
 									<li>
 										<div class="pa_3_1_mid">
 											<div class="pa_3_1_mid_1">
-												<img src="/images/about/static_img40.png">
-												<span><img src="/images/about/static_img42.png"></span>
+												<img alt="" src="/images/about/static_img40.png">
+												<span><img alt="" src="/images/about/static_img42.png"></span>
 											</div>
 											<div class="pa_3_1_mid_2">
 												Contract Signing
@@ -216,7 +216,7 @@
 									<li>
 										<div class="pa_3_1_mid">
 											<div class="pa_3_1_mid_1">
-												<img src="/images/about/static_img41.png">
+												<img alt="" src="/images/about/static_img41.png">
 											</div>
 											<div class="pa_3_1_mid_2">
 												Business Expansion
@@ -237,7 +237,7 @@
 							</div>
 	</div>
 	<div class="pa_4_1 reveal">
-		<img src="/images/about/static_img44.webp">
+		<img alt="World map highlighting Hitelecom's home market in China" src="/images/about/static_img44.webp">
 	</div>
 </div> 
 <div class="clearfix pa_5">
