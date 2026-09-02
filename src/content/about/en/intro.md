@@ -127,7 +127,7 @@
 	<Div class="indexmid">
 		<Div class="clearfix about_2_1">
 			<div class="about_2_1_right">
-				<img alt="Shanghai Lujiazui skyline — where Hitelecom is headquartered" src="/images/about/up_4e043676a29b53a7135269cacadefd7b.webp">
+				<img alt="Shanghai Lujiazui skyline" src="/images/about/up_4e043676a29b53a7135269cacadefd7b.webp">
 			</div>
 			<Div class="about_2_1_left">
 				<div class="cell_mid">
@@ -140,7 +140,7 @@
 								Company Overview
 							</div>
 							<Div class="about_2_1_left_mid_3 reveal">
-								Transform Data with IoT Sensors to the Cloud
+								Connect Field Data to the Cloud with Industrial IoT Sensors
 							</Div>
 							<div class="about_2_1_left_mid_4 reveal">
 								<p>Founded in Shanghai in 2012, Hitelecom designs and manufactures industrial IoT sensors, sensor terminals, gateways, and cloud-connected monitoring solutions.</p><p>Our portfolio supports remote measurement of temperature, humidity, pressure, soil conditions, tilt, vibration, distance, level, air quality, gas concentration, and asset location. Selected models connect over 4G LTE, NB-IoT, LoRa, or LoRaWAN and integrate with Hitelecom Cloud or customer platforms through MQTT and APIs.</p><p>We also provide private deployment and OEM/ODM services spanning hardware, firmware, power design, enclosures, mounting, branding, and production. Hitelecom solutions support industrial monitoring, smart water, structural health monitoring, smart agriculture, environmental monitoring, and asset tracking.</p>							</div>
@@ -224,7 +224,7 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2024							</div>
 							<div class="about_4_1_right_3_mid_3">
 								Launched the HiCloud, Hitelecom, and HiSensor product series							</div>
 							<Div class="about_4_1_right_3_mid_4">
@@ -239,7 +239,7 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2023							</div>
 							<div class="about_4_1_right_3_mid_3">
 								Renewed Shanghai High-Tech Enterprise Certification							</div>
 							<Div class="about_4_1_right_3_mid_4">
@@ -254,7 +254,7 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2022							</div>
 							<div class="about_4_1_right_3_mid_3">
 								Cumulative shipments exceeded one million units							</div>
 							<Div class="about_4_1_right_3_mid_4">
@@ -269,7 +269,7 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2021							</div>
 							<div class="about_4_1_right_3_mid_3">
 								Launched 4G wireless digital temperature sensors							</div>
 							<Div class="about_4_1_right_3_mid_4">
@@ -284,7 +284,7 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2020							</div>
 							<div class="about_4_1_right_3_mid_3">
 								Recognized as a Shanghai High-Tech Enterprise							</div>
 							<Div class="about_4_1_right_3_mid_4">
@@ -299,7 +299,7 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2019							</div>
 							<div class="about_4_1_right_3_mid_3">
 								Expanded the production facility and obtained ISO 14001 certification
 							</div>
@@ -315,7 +315,7 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2018							</div>
 							<div class="about_4_1_right_3_mid_3">
 								Cumulative IoT terminal shipments exceeded 100,000 units							</div>
 							<Div class="about_4_1_right_3_mid_4">
@@ -330,7 +330,7 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2017							</div>
 							<div class="about_4_1_right_3_mid_3">
 								Launched the 4G Cat. 1 product series							</div>
 							<Div class="about_4_1_right_3_mid_4">
@@ -345,9 +345,9 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2016							</div>
 							<div class="about_4_1_right_3_mid_3">
-								Entered the Mexican telecommunications market							</div>
+								Hitelecom products entered the network of Mexico Telecom							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Business handshake — Hitelecom enters the Mexican telecom market" src="/images/about/up_7f6ba4d0580cd31ede9914ce28dd6f3e.webp">
 							</Div>
@@ -360,7 +360,7 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2014							</div>
 							<div class="about_4_1_right_3_mid_3">
 								Expanded International Operations							</div>
 							<Div class="about_4_1_right_3_mid_4">
@@ -375,9 +375,9 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2013							</div>
 							<div class="about_4_1_right_3_mid_3">
-								Began R&D on copper-line and GPRS communication products							</div>
+								Began R&D on Copper and GPRS communication products							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Gloved hand holding a processor chip over a circuit board" src="/images/about/up_d9dffdec3adfc8590991fc61fc1c8c34.webp">
 							</Div>
@@ -390,7 +390,7 @@
 							
 							</div>
 							<div class="about_4_1_right_3_mid_2">
-															</div>
+															2012							</div>
 							<div class="about_4_1_right_3_mid_3">
 								Hitelecom was founded in Shanghai
 							</div>
@@ -424,7 +424,7 @@
 <Div class="clearfix about_5">
 	<Div class="indexmid">
 		<Div class="index_1_1 reveal">
-			Corporate Environment
+			Office and R&D
 		</Div>
 		<div class="daxie index_1_2 reveal about_3_1">
 			
@@ -507,14 +507,14 @@
 		<div class="about_6_1">
 			<div class="about_6_1_left">
 				<Div class="index_1_1 reveal">
-					Corporate Honors
+					Certifications and Intellectual Property
 				</Div>
 				<div class="daxie index_1_2 reveal about_3_1">
 					
 				</div>
 			</div>
 			<div class="about_6_1_right reveal">
-				 Hitelecom develops products in-house and operates its own electronics manufacturing facility. The management systems and product certifications shown below are listed with their scope as issued.
+				 Hitelecom develops products in-house and operates its own electronics manufacturing facility. The management system and product certifications obtained by Hitelecom are shown below.
 			</div>
 		</div>
 		<div class="about_6_2 reveal">

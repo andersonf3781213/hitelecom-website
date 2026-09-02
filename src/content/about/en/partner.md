@@ -269,7 +269,7 @@
 									</li>
 									<li>
 										<div>
-											<input type="text" id="jobs" name="jobs" placeholder="Position" value="">
+											<input type="text" id="jobs" name="jobs" placeholder="Job Title" value="">
 										</div>
 									</li>
 									<li>
@@ -280,7 +280,7 @@
 									<li>
 										<div>
 											<span>
-												Intentions
+												Partnership Interest
 											</span>
 											<dl>
 												<dd class="on" lang="Government">
@@ -302,12 +302,12 @@
 													Other
 												</dd>
 											</dl>
-											<input type="hidden" value="政府" id="types" name="types">
+											<input type="hidden" value="Government" id="types" name="types">
 										</div>
 									</li>
 									<li>
 										<div>
-											<textarea id="message" name="message" placeholder="Tell us about your organization and the cooperation you have in mind. We will respond within one business day."></textarea>
+											<textarea id="message" name="message" placeholder="Tell us about your organization and the cooperation you have in mind. We respond to most inquiries within one business day."></textarea>
 										</div>
 									</li>
 								</ul>

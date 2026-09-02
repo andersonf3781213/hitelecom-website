@@ -85,7 +85,7 @@
 							</div>
 			</div>
 			<div class="qa_1_1_right reveal">
-				<p>Expertly designed and lean-manufactured, we deliver high-quality products and services that exceed expectations.&nbsp;</p><p>At Hitelecom&#39;s electronics manufacturing facility, every step of production is carefully designed and strictly monitored to meet and surpass industry standards. With a target defect rate of 30 ppm, we operate a continuous-improvement quality management system with regular reviews and process optimization.</p><p><br/></p>			</div>
+				<p>Hitelecom designs and manufactures its products under a documented quality management system, with defined inspection and testing at each production stage.&nbsp;</p><p>At Hitelecom&#39;s electronics manufacturing facility, each production step follows documented work instructions and inspection criteria aligned with applicable industry standards. With a target defect rate of 30 ppm, we operate a continuous-improvement quality management system with regular reviews and process optimization.</p><p><br/></p>			</div>
 		</div>
 		<div class="clearfix qa_1_2 reveal">
 			<img alt="Engineer inspecting PCB panels in the laboratory" src="/images/about/up_33f8ecc7bf8fbfcf1538a9c87e898b51.webp">
@@ -102,7 +102,7 @@
 								
 							</div>
 							<Div class="qa_2_mid_1 reveal">
-								<p style="text-indent: 0em;">In our proprietary products, reliability is not just a promise—it is the core principle guiding the design and manufacturing of every component we produce. We understand the critical importance of durability and long-term stability for IoT devices, which is why we select high-quality materials, apply proven IoT design practices, and follow controlled manufacturing processes so our devices maintain performance under demanding temperature and humidity conditions.</p><p style="text-indent: 0em;">We also work long-term with qualified semiconductor laboratories, using custom burn-in test fixtures that simulate high temperature, moisture, and pressure conditions to verify device functionality, longevity, and moisture resistance under continuous power.</p><p style="text-indent: 0em;">By deeply understanding the reliability requirements, we provide robust support to our in-house design teams. Every product undergoes rigorous aging tests before leaving the factory to ensure its high stability. We are committed to delivering a reliable and intelligent experience for our clients, facilitating more convenient and efficient industrial operations.</p><p><br/></p>
+								<p style="text-indent: 0em;">For its proprietary products, Hitelecom designs for durability and long-term stability: selected materials, proven IoT design practices, and controlled manufacturing processes help devices maintain performance under demanding temperature and humidity conditions.</p><p style="text-indent: 0em;">We also work long-term with qualified semiconductor laboratories, using custom burn-in test fixtures that simulate high temperature, moisture, and pressure conditions to verify device functionality, longevity, and moisture resistance under continuous power.</p><p style="text-indent: 0em;">Every product undergoes an aging test before leaving the factory, supporting stable operation in the field.</p><p><br/></p>
 							</Div>
 		</Div>
 	</Div>
@@ -167,7 +167,7 @@
 														 
 													</div>
 													<div class="qa_3_1_mid_jj_2_jj">
-														<div class="clearfix c1">Our team includes experienced manufacturing professionals and core technicians with backgrounds at companies such as Foxconn and Quanta, with strength in advanced SMT and assembly processes. This expertise not only ensures the feasibility of our designs but also enhances production efficiency, enabling effective cost control and optimization. We deliver high-quality, cost-effective product solutions to our clients.
+														<div class="clearfix c1">Our team includes experienced manufacturing professionals and core technicians with backgrounds at companies such as Foxconn and Quanta, with strength in advanced SMT and assembly processes. This expertise supports design feasibility and enhances production efficiency, enabling effective cost control and optimization. We deliver high-quality, cost-effective product solutions to our clients.
 </div>
 <div class="clearfix c2"><p>Experienced Manufacturing Team</p><p>Advanced Manufacturing Equipment</p><p>Engineers from Foxconn and Quanta</p><p>Proficient in advanced electronic assembly</p></div>													</div>
 												</div>
@@ -185,7 +185,7 @@
 							</Div>
 							<div class="index_1_2 daxie reveal" id="qa_3_1">
 								<div class="qa_7_font" style="max-width:100%;">
-									 Hitelecom Electronics utilizes a leading-edge hardware platform and sophisticated precision equipment as the foundation for quality construction. We employ advanced production and inspection equipment to ensure high-quality assurance and recognition from many customers. Our high-precision placement equipment can achieve extremely accurate component placement, ensuring the correct positioning and optimal performance of every miniature component (01005 components and BGAs with a 0.35 mm pitch) on the circuit board. Simultaneously, our advanced inspection tools, such as 3D Solder Paste Inspection (SPI), Automated Optical Inspection (AOI), X-ray inspection systems, and functional testing equipment, are crucial for detecting and correcting any potential defects during the production process. This is vital for meeting the high standards of complex electronic products and ensuring product consistency and reliability.
+									 Hitelecom Electronics operates a production line equipped for precision assembly. High-precision placement equipment handles miniature components (01005 packages and BGAs with a 0.35 mm pitch) with accurate positioning on the circuit board. Simultaneously, our advanced inspection tools, such as 3D Solder Paste Inspection (SPI), Automated Optical Inspection (AOI), X-ray inspection systems, and functional testing equipment, are crucial for detecting and correcting any potential defects during the production process. This is vital for meeting the high standards of complex electronic products and for product consistency and reliability.
 								</div>
 							</div>
 							<Div class="clearfix qa_4_2 reveal">
@@ -297,7 +297,7 @@
 		</Div>
 		<div class="index_1_2 reveal">
 			<div class="qa_7_font" style="max-width:100% ">
-			 Hitelecom has established long-term partnerships with leading global chip manufacturers and raw material suppliers. Collaborating closely with the supply chain, we jointly enhance the quality of raw materials and components to ensure our products meet high standards from source to factory.
+			 Hitelecom has established long-term partnerships with leading global chip manufacturers and raw material suppliers. Collaborating closely with the supply chain, we jointly improve the quality of raw materials and components so that products meet defined standards from source to factory.
 
 			</div>
 		</div>
@@ -426,7 +426,7 @@
 					Rigorous Quality Control Procedures
 				</div>
 				<div class="qa_6_mid_right_2 reveal">
-					<p>The Hitelecom team adopts a Total Quality Management (TQM) philosophy, ensuring quality control at every stage of product development, manufacturing, sales, and service. Our objective is to prevent defects through process control, full-team participation, and continuous improvement. We have successfully obtained ISO 9001 and IATF 16949 quality management system certifications.</p>				</div>
+					<p>The Hitelecom team adopts a Total Quality Management (TQM) philosophy, with quality control at every stage of product development, manufacturing, sales, and service. Our objective is to prevent defects through process control, full-team participation, and continuous improvement. We have successfully obtained ISO 9001 and IATF 16949 quality management system certifications.</p>				</div>
 			</div>
 		</Div>
 	</div>
@@ -456,7 +456,7 @@
 				   		 <Div class="qa_7_1_left_1">
 						 	RoHS Compliance						 </Div>
 						 <div class="qa_7_1_left_2">
-						 	The RoHS Directive (Restriction of Hazardous Substances) restricts the use of certain hazardous substances in electrical and electronic equipment, including four heavy metals (lead, mercury, cadmium, and hexavalent chromium) and two brominated flame retardants (PBB and PBDE). Products supplied by Hitelecom comply with applicable RoHS requirements.						 </div>
+						 	The EU RoHS Directive restricts ten substances in electrical and electronic equipment: lead, mercury, cadmium, hexavalent chromium, PBB, PBDE, DEHP, BBP, DBP, and DIBP. Compliance depends on the product, configuration, and applicable exemption. Contact Hitelecom for the declaration or test report for a specific model.						 </div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="1">
@@ -466,7 +466,7 @@
 				   		 <Div class="qa_7_1_left_1">
 						 	EU REACH						 </Div>
 						 <div class="qa_7_1_left_2">
-						 	REACH (Registration, Evaluation, Authorisation and Restriction of Chemicals) is the EU regulation for the preventive management of chemicals placed on its market, covering their manufacture, import, and use. Hitelecom products comply with applicable REACH requirements. For the latest restricted-substance information, contact our sales team or partners.						 </div>
+						 	REACH is the EU framework for the registration, evaluation, authorisation, and restriction of chemicals. Product and supply-chain obligations depend on the materials, market role, and the current Candidate List. Contact Hitelecom for the latest declaration for a specific model.						 </div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="2">
@@ -476,7 +476,7 @@
 				   		 <Div class="qa_7_1_left_1">
 						 	Halogen-free						 </Div>
 						 <div class="qa_7_1_left_2">
-						 	Halogen-free materials contain no, or only trace levels of, halogen elements (fluorine, chlorine, bromine, iodine), which can release toxic gases when burned. Hitelecom uses halogen-free materials in product manufacturing and continues to expand the use of halogen-free alternatives, reducing potential toxic gas emissions in case of fire.						 </div>
+						 	Selected materials or product configurations may meet applicable halogen-free requirements. Request the relevant material declaration or test report for the product being specified.						 </div>
 				  </div>
 				   
 		  

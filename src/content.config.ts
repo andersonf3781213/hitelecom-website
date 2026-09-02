@@ -23,6 +23,8 @@ const news = defineCollection({
     title: z.string(),
     /** 原站日期格式，如 "hitelecom 2025.01.01" */
     date: z.string(),
+    /** 重大编辑后的真实修改日期（ISO），输出为 Article JSON-LD 的 dateModified */
+    updated: z.string().optional(),
     cat: z.enum(['company', 'exh', 'ind']),
     /** 列表卡片图（src/assets/images 下相对路径） */
     img: z.string().optional(),

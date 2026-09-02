@@ -50,8 +50,8 @@ const en = {
     slides: [
       {
         eyebrow: 'INDUSTRIAL IoT SENSORS',
-        title: '10+ Years of Battery Life',
-        desc: 'Low-power 4G, NB-IoT, and LoRa sensor terminals built for remote industrial monitoring.',
+        title: 'Low-Power Sensor Terminals',
+        desc: 'Battery-powered 4G, NB-IoT, and LoRa sensor terminals for long-term remote monitoring.',
         cta: 'Explore Sensors',
         href: '/product/lists/cid/261#cate',
         bg: 'hero/bg-sensors.jpg',

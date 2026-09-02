@@ -6,11 +6,29 @@
  */
 import Img from '../Img.astro';
 import { homeContent } from '../../data/home';
+import { getNewsContent } from '../../data/news';
 import { l, type Locale } from '../../i18n';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const { news } = homeContent[locale];
+
+/* 单一事实源：卡片只按 href 中的新闻 ID 从内容集合取 title/date/excerpt/img，
+   home.ts 的 items 仅作兜底，避免手工复制造成新旧文案不同步。 */
+const newsIndex = (await getNewsContent(locale)).index;
+const items = news.items.map((it) => {
+  const id = it.href.match(/id\/(\d+)/)?.[1];
+  const art = id ? newsIndex[id] : undefined;
+  if (!art) return it;
+  return {
+    ...it,
+    image: art.img || it.image,
+    imageAlt: art.title || it.imageAlt,
+    date: art.date ? art.date.replaceAll('-', '.') : it.date,
+    title: art.title || it.title,
+    excerpt: art.excerpt || it.excerpt,
+  };
+});
 ---
 
 <section class="news" aria-labelledby="news-title">
@@ -22,7 +40,7 @@ const { news } = homeContent[locale];
     <p class="section-subtitle reveal">{news.subtitle}</p>
 
     <ul class="news-grid">
-      {news.items.map((item, i) => (
+      {items.map((item, i) => (
         <li class:list={['reveal', `reveal-d${i + 1}`]}>
           <a class="news-card" href={l(item.href, locale)} aria-label={item.title}>
             <div class="news-card-in">

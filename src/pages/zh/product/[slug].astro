@@ -60,19 +60,7 @@ const productLd = {
   countryOfOrigin: { '@type': 'Country', name: 'CN' },
   url: pageUrl,
   additionalProperty,
-  offers: {
-    '@type': 'Offer',
-    url: pageUrl,
-    itemCondition: 'https://schema.org/NewCondition',
-    businessFunction: 'http://purl.org/goodrelations/v1#Sell',
-    seller: { '@id': 'https://www.hitelecom.com/#organization' },
-    areaServed: 'Worldwide',
-    priceSpecification: { '@type': 'PriceSpecification', valueAddedTaxIncluded: false },
-  },
-  audience: {
-    '@type': 'BusinessAudience',
-    audienceType: '基础设施监测、建筑施工、矿山、水务、铁路、水利、通信、制造业',
-  },
+  // B2B 询价产品：无公开价格时不输出 Offer；audience 不输出（避免统一受众误标）。
   ...(d.applications?.length ? { keywords: d.applications.map((a) => a.name).join(', ') } : {}),
   isSimilarTo: d.related
     .filter((rid) => productContent.zh.details[rid])

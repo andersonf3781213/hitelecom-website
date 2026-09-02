@@ -19,6 +19,8 @@ export interface NewsPn { cls: string; id: string; img: string; label: string; t
 export interface NewsDetail {
   title: string; date: string; body: string;
   cat: NewsCat;
+  /** 重大编辑后的真实修改日期（可选，ISO），用于 Article JSON-LD dateModified */
+  updated?: string;
   pn: NewsPn[]; related: string[];
 }
 
@@ -157,7 +159,7 @@ export async function getNewsContent(locale: Locale): Promise<NewsContent> {
     // Astro 5 的 entry.id 含扩展名（en/1345.md），URL 需去掉 .md
     const id = e.id.split('/')[1].replace(/\.md$/, '');
     const f = e.data;
-    details[id] = { title: f.title, date: f.date, body: e.body, cat: f.cat, pn: f.pn, related: f.related };
+    details[id] = { title: f.title, date: f.date, updated: (f as { updated?: string }).updated, body: e.body, cat: f.cat, pn: f.pn, related: f.related };
     // CMS 上传的卡片图保存为 "/images/news/xx.png"，归一化为 Img 组件的相对路径 "news/xx.png"
     const cardImg = (f.img ?? '').replace(/^\/images\//, '');
     const card: NewsListItem = {

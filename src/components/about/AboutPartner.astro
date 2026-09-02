@@ -25,7 +25,7 @@ const { locale } = Astro.props;
   mailSubject: locale === 'zh' ? '【合作伙伴申请】' : 'Partner Application - ',
   labels: locale === 'zh'
     ? ['公司名称', '姓名', '电话', '职位', '邮箱', '合作意向', '留言']
-    : ['Company', 'Name', 'Phone', 'Position', 'Email', 'Intentions', 'Message'],
+    : ['Company', 'Name', 'Phone', 'Job Title', 'Email', 'Partnership Interest', 'Message'],
 }}>
 document.addEventListener('DOMContentLoaded', function () {
   var form = document.getElementById('form1');

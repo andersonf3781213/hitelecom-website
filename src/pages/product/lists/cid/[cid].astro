@@ -42,7 +42,7 @@ const catName = subLabel ?? tabLabel;
 const pageUrl = `${SITE_URL}/product/lists/cid/${cid}.html`;
 const bcLd = breadcrumbLd([
   { name: 'Home', url: `${SITE_URL}/` },
-  { name: 'Product', url: `${SITE_URL}/product.html` },
+  { name: 'Products', url: `${SITE_URL}/product.html` },
   ...(subLabel ? [{ name: tabLabel, url: `${SITE_URL}/product/lists/cid/${parent}.html` }] : []),
   { name: catName },
 ]);

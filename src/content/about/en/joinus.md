@@ -293,7 +293,7 @@
 															1. Assist in auditing financial documents, organizing files, and managing invoices.<br>
 2. Assist in auditing accounting vouchers and adjusting accounts.<br>
 3. Issue VAT/general invoices accurately based on client requirements.<br>
-4. Responsible for project data statistics, aggregation, initial analysis, and compiling daily invoicing data.<br>
+4. Compile project data statistics, perform initial analysis, and prepare daily invoicing data.<br>
 5. Handle cash and bank payments and receipts, create accounting vouchers, reconcile bank statements, audit documents, and manage invoice issuance and custody.<br>
 6. Assist with the daily business transactions of the company, including contract and expense verification and accounting.<br>
 7. Check and process employee reimbursements according to the company's reimbursement management system.<br>
@@ -308,7 +308,7 @@
 															1. Associate degree or higher in accounting or related field, prior experience in financial invoicing preferred.<br>
 2. A junior accounting qualification is required.<br>
 3. Knowledgeable in taxation, with over one year of related work experience.<br>
-4. Detail-oriented, responsible, and numerically sensitive.<br>														</div>
+4. Detail-oriented and responsible, with strong numerical aptitude.<br>														</div>
 													</dd>
 													<dd>
 														<div class="jo_3_2_mid_con_3">
@@ -479,7 +479,7 @@
 															Responsibilities
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Responsible for the preparation of work instructions for product process inspection, final inspection, and process verification.<br>
+															1. Prepare work instructions for product process inspection, final inspection, and process verification.<br>
 2. Handle the verification, review, and disposition of non-conforming products during production, including determining, analyzing, and providing feedback on responsibility for non-conformities.<br>
 3. Conduct quality process audits to monitor production quality and data, investigate issues identified during inspections, analyze and provide feedback, and track corrective actions.<br>
 4. Oversee product quality monitoring, including the production process, finished goods, shipments, defect rates, and analysis and documentation of defects.<br>
@@ -489,7 +489,7 @@
 8. Monitor the progress and results of various process trials.<br>
 9. Monitor the quality performance of materials during production and collaborate with SQE to help suppliers continuously improve quality.<br>
 10. Organize and conduct quality meetings weekly to promptly communicate product quality issues and progress on quality improvement projects.<br>
-11. Responsible for coordinating second-party audit activities and tracking the implementation of corrective and preventive measures.<br>
+11. Coordinate second-party audit activities and track the implementation of corrective and preventive measures.<br>
 12. Complete other tasks assigned by management.<br>														</div>
 													</dd>
 													<dd>
@@ -680,8 +680,8 @@
 															Responsibilities
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Responsible for company brand visual design, brochures, advertising planning, website design, product packaging, manuals, layout production, and exhibition design to meet production standards, and coordinate prototyping and printing.<br>
-2. In charge of visual updates and maintenance for the company's web and app interfaces.<br>
+															1. Produce company brand visual design, brochures, advertising, website design, product packaging, manuals, layout production, and exhibition design, and coordinate prototyping and printing.<br>
+2. Manage visual updates and maintenance for the company's web and app interfaces.<br>
 3. Design and produce UI interfaces/icons based on product design requirements.<br>
 4. Classify and archive graphic materials as per established guidelines.<br>
 5. Complete other ad-hoc tasks assigned by management.<br>														</div>
@@ -691,7 +691,7 @@
 															Requirements
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Graduated in art or design-related fields, associate degree or higher, majors in graphic design, fine arts, advertising art, etc.<br>
+															1. Associate degree or higher in graphic design, fine arts, visual communication, or a related field.<br>
 2. 2+ years of experience in advertising or graphic design, proficient in Adobe Photoshop, Adobe Illustrator, and CorelDRAW, with strong professional skills and sound visual judgment.<br>
 3. Excellent learning ability, passionate about the design industry, able to apply fresh design concepts and techniques to work.<br>
 4. Detail-oriented, strong execution, cooperative, and efficient.<br>
@@ -743,7 +743,7 @@
 															Responsibilities
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Responsible for the development of application software for embedded systems, including interfacing with hardware and programming.<br>
+															1. Develop application software for embedded systems, including hardware interfacing and programming.<br>
 2. Complete the development of embedded software code and address technical issues during product development and production.<br>
 3. Develop custom software based on new customer requirements, including development, review, and version management.<br>
 4. Assist test engineers in creating test plans and identifying issues.<br>
@@ -754,7 +754,7 @@
 															Requirements
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Bachelor's degree or above in computer science, electronics, communications, or a related field, with 3+ years of embedded software development experience.<br>
+															1. Bachelor's degree or above in computer science, electronics, communications, or a related field, with 5+ years of embedded software development experience.<br>
 2. Proficient in C/C++, with hands-on experience in MCU- and RTOS-based embedded development.<br>
 3. Familiar with common embedded interface protocols and debugging methods.<br>
 4. Experienced with software version control and development documentation practices.<br>
@@ -807,8 +807,8 @@
 														</Div>
 														<div class="jo_3_2_mid_con_2">
 															1. Based on product/business requirements, develop actionable hardware technical plans, participate in requirement analysis, hardware system setup, and technical decision discussions, and complete specific R&D design.<br>
-2. Responsible for hardware platform selection, analyzing and selecting components according to the plan.<br>
-3. In charge of complete schematic design, circuit board debugging, signal and timing testing, coordinating with driver integration, and troubleshooting.<br>
+2. Select hardware platforms, analyzing and selecting components according to the plan.<br>
+3. Complete schematic design, circuit board debugging, and signal and timing testing; coordinate driver integration and troubleshooting.<br>
 4. Write, review, and archive hardware standards documents, design documents, and testing documents.<br>
 5. Guide and review PCB layout designs and participate in structural design reviews.<br>														</div>
 													</dd>
@@ -817,14 +817,14 @@
 															Requirements
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Bachelor's degree or above in Electrical Automation, Computer Science, Communications, Electronic Information, or related fields.<br>
+															1. Bachelor's degree or above in electrical engineering, automation, computer science, communications, electronic information, or a related field.<br>
 2. Proficient in common embedded peripheral interface protocols, such as GPIO, ADC, DAC, SPI, I2C, and UART, with expertise in analog and digital circuits.<br>
 3. Skilled in debugging embedded hardware and software and proficient in PCB layout design.<br>
 4. Familiar with TCP/IP protocols and MAC- and IP-layer packet structures; experience with Zigbee, 433 MHz, Wi-Fi, and Bluetooth protocols is preferred.<br>
 5. Skilled in PCB design and simulation software such as Altium Designer, PADS, Cadence Allegro, EasyEDA.<br>
 6. Design and development of sensor products, preparation of related technical documents, responsible for the control of the entire product realization process, and providing customized solutions.<br>
 7. Capable of independently completing circuit analysis, drawing PCB and circuit diagrams, schematics.<br>
-8. Priority given to candidates with rich experience in the development of sensor instruments and equipment.<br>														</div>
+8. Experience developing sensor instruments and equipment is a plus.<br>														</div>
 													</dd>
 													<dd>
 														<div class="jo_3_2_mid_con_3">
@@ -872,10 +872,10 @@
 															Responsibilities
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Execute specialized sales activities targeting industry customers and partners as per the company's sales objectives, achieving sales targets for the year, quarter, etc., and fulfilling tasks and designated KPIs as per performance evaluation criteria.<BR>
-2. Gain comprehensive knowledge of company products and services, apply sales strategies to proactively identify and expand target customer and industry partner resources, and seize business opportunities to meet sales goals.<BR>
+															1. Execute specialized sales activities targeting industry customers and partners as per the company's sales objectives, meeting annual and quarterly sales targets and the KPIs defined in the performance plan.<BR>
+2. Gain comprehensive knowledge of company products and services, apply sales strategies to identify and develop target customers and industry partners, turning business opportunities into sales results.<BR>
 3. Actively gather market feedback and competitor information, conduct regular summaries and analyses, provide feedback and data analysis to the product and R&D support teams, aiding in product optimization and competitive enhancement.<BR>
-4. Coordinate and integrate internal and external company resources, ensuring cross-team collaboration to convert business opportunities into contractual orders, achieving sales objectives.<BR>
+4. Coordinate internal and external resources and work across teams to convert business opportunities into signed orders.<BR>
 5. Complete other tasks and duties assigned by management.<BR>														</div>
 													</dd>
 													<dd>
@@ -887,7 +887,7 @@
 2. Over 3 years of sales experience, preferably with successful cases in smart water management, smart agriculture, smart cities, and industrial automation.<BR>
 3. Capable of independently conducting prospecting and consultative selling, from initial contact to signed contracts; an established industry network is a plus.<BR>
 4. Proficient in establishing strong relationships with clients, experienced in major account sales and strategic sales thinking, with strong communication and negotiation skills.<BR>
-5. Passionate about sales, extroverted, positive attitude, capable of gradually building cooperative relationships with new clients.<BR>
+5. Passionate about sales and confident in customer-facing communication, with a positive attitude and the ability to build cooperative relationships with new clients.<BR>
 6. Strong learning ability, enthusiastic, willing to embrace challenges, innovative, and able to quickly respond to customer and internal demands.<BR>
 7. Proficient in using Microsoft Office software.<BR>														</div>
 													</dd>
@@ -938,12 +938,12 @@
 														</Div>
 														<div class="jo_3_2_mid_con_2">
 															1. Assist in HR strategic planning and develop and improve the HR management system (policies, mechanisms, and related processes).<br>
-2. Responsible for recruitment, developing recruitment plans, exploring recruitment channels, and implementing hiring processes.<br>
+2. Own recruitment: develop recruitment plans, explore hiring channels, and implement hiring processes.<br>
 3. Manage personnel records, including onboarding, contract signing, probation, promotion, demotion, resignation, rewards and penalties, social security and housing fund matters, and labor disputes.<br>
 4. Oversee training matters, participate in the creation of training plans, and execute training objectives and assessments.<br>
 5. Involved in the formulation, implementation, and supervision of departmental systems, mechanisms, and performance evaluations.<br>
 6. Handle compensation and benefits administration, performance incentives, attendance monitoring, career development, and compensation changes related to internal transfers.<br>
-7. Register and update employee information timely as per company and department requirements, and compile relevant HR reports.<br>
+7. Update employee records promptly as required by company and department procedures, and compile relevant HR reports.<br>
 8. Develop employee communication plans, skilled in maintaining effective communication and coordinating interpersonal relationships.<br>
 9. Manage the declaration and claims processes for employee work-related injuries.<br>														</div>
 													</dd>
@@ -955,7 +955,7 @@
 															1. Bachelor's degree or higher in Human Resources Management, Business Administration, or related fields; capable of working under pressure with strong communication skills.<br>
 2. Over 5 years of experience in human resources or administrative management; proficient in transactional HR tasks and familiar with HR administrative workflows.<br>
 3. Knowledgeable about national and regional labor laws and regulations.<br>
-4. Steady and meticulous in work, with an active mind, strong learning ability, and responsibility; self-motivated with the ability to handle tasks independently.<br>														</div>
+4. Steady and meticulous, adaptable and proactive, with strong learning ability and a sense of responsibility; self-motivated and able to handle tasks independently.<br>														</div>
 													</dd>
 													<dd>
 														<div class="jo_3_2_mid_con_3">

@@ -147,7 +147,7 @@
 									</li>
 									<li>
 										<div>
-											<textarea id="message" name="message" placeholder="Tell us about your application, required quantity, connectivity, and deployment environment. We will respond within one business day."></textarea>
+											<textarea id="message" name="message" placeholder="Tell us about your application, required quantity, connectivity, and deployment environment. We respond to most inquiries within one business day."></textarea>
 										</div>
 									</li>
 								</ul>

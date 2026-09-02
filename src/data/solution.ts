@@ -248,12 +248,12 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/65-intro-0.jpg",
           "h": "Industry Challenges",
-          "p": "Smart agriculture leverages modern IT and intelligent technologies to enhance agricultural productivity and sustainability. Addressing challenges like limited land, climate change, and pest control, it integrates IoT, big data, AI, and cloud computing for precision farming, boosting crop yield and quality. By marrying agriculture with IT, smart agriculture enhances efficiency and sustainability, playing a pivotal role in future agricultural evolution."
+          "p": "Smart agriculture applies connected sensing to make farm operations more productive and resource-efficient. Facing limited land, climate variability, and pest pressure, growers can combine IoT sensors, weather data, and cloud analytics for more informed irrigation and crop management. Hitelecom provides the field sensing and connectivity layer for these systems."
         },
         {
           "img": "solution/65-intro-1.jpg",
           "h": "Solution Overview",
-          "p": "Smart Agriculture System leverages IoT, AI, and Big Data technologies, integrating soil sensors, weather stations, and temperature-humidity sensors through IoT to upload data to the cloud for centralized management and analysis. This real-time monitoring of farm environments and crop growth enables intelligent, digital comprehensive management of agricultural production, aiming to enhance efficiency, reduce resource waste, improve product quality and safety, and achieve sustainable development."
+          "p": "The Hitelecom smart agriculture solution combines soil sensors, weather stations, and temperature-humidity sensors, uploading field data to the cloud for centralized monitoring and analysis. Growers get continuous visibility of field conditions to support irrigation, fertilization, and crop management decisions."
         }
       ],
       "archHeading": "Solution Architecture",
@@ -294,7 +294,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/65-sys-2.png",
           "h": "Real-time Monitoring",
-          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping teams plan maintenance and reduce downtime."
+          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, giving growers timely information for irrigation and field decisions."
         },
         {
           "img": "solution/65-sys-3.png",
@@ -350,7 +350,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/64-intro-1.jpg",
           "h": "Solution Overview",
-          "p": "The Smart Education Solution System, designed to ensure campus safety and protect the well-being and assets of students and faculty, integrates advanced technologies and management philosophies into a comprehensive management system. Leveraging modern information technologies such as IoT, AI, and big data analytics, it provides a suite of safety management practices and technical solutions aimed at creating a secure and harmonious learning and living environment on campus. With ongoing technological advancements, Smart Education Solutions are set to expand and evolve across a broader spectrum of applications."
+          "p": "The Hitelecom smart campus solution supports campus safety management and the well-being of students and faculty by connecting environmental, safety, and energy monitoring into one operational picture. IoT sensing and data analytics give administrators timely information for a safer, better-managed learning and living environment."
         }
       ],
       "archHeading": "Solution Architecture",
@@ -391,12 +391,12 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/64-sys-2.png",
           "h": "Real-time Monitoring",
-          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping teams plan maintenance and reduce downtime."
+          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping administrators track facility status and respond to alerts."
         },
         {
           "img": "solution/64-sys-3.png",
           "h": "Alarm Notification",
-          "p": "Enables bulk configuration of alerts, centralized management, and automated alarm resolution. Supports multi-condition trigger alerts with timely notifications to relevant personnel, ensuring comprehensive monitoring of equipment operational status."
+          "p": "Enables bulk configuration of alerts, centralized management, and automated alert generation and escalation. Supports multi-condition trigger alerts with timely notifications to relevant personnel, giving staff a consolidated view of monitored conditions."
         }
       ],
       "relHeading": "Related Products",
@@ -438,7 +438,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/60-intro-1.jpg",
           "h": "Solution Overview",
-          "p": "The Smart Industrial Park System is an integrated information management platform designed to enhance operational efficiency, service quality, and sustainability of campuses through cutting-edge technologies. It integrates IoT, cloud computing, big data, and AI into various aspects of campus management for intelligent, digital management and services. As technology advances and its application deepens, the system will become more intelligent, interconnected, and focused on ecological balance and sustainable development. The development of smart industrial park systems not only improves management efficiency but also creates better living and working environments for businesses and residents, offering broad application prospects and social value."
+          "p": "The Hitelecom smart industrial park solution is an integrated monitoring platform for park operators. IoT sensors and cloud connectivity bring environmental, safety, energy, and asset data into one management view, supporting more efficient operations and maintenance. Hitelecom provides the sensor terminals, gateways, and cloud platform for these deployments."
         }
       ],
       "archHeading": "Solution Architecture",
@@ -525,7 +525,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/59-intro-1.jpg",
           "h": "Solution Overview",
-          "p": "A Smart Energy System is an integrated framework combining information, communication, automation, and energy management technologies to enable efficient, intelligent, and sustainable energy use. It optimizes energy production, transmission, distribution, and consumption through real-time monitoring, data analytics, and smart decision-making, facilitating an intelligent transformation of energy systems. By integrating advanced technologies and management philosophies, it not only enhances energy efficiency and reduces costs but also supports sustainable development goals, steering society towards a low-carbon, green future. As technology evolves and its applications deepen, Smart Energy Systems are set to play an increasingly crucial role in future energy management."
+          "p": "A Smart Energy System is an integrated framework combining information, communication, automation, and energy management technologies to enable efficient, intelligent, and sustainable energy use. It optimizes energy production, transmission, distribution, and consumption through real-time monitoring, data analytics, and informed decision-making, supporting the digital transformation of energy systems. By integrating advanced technologies and management philosophies, it not only enhances energy efficiency and reduces costs but also supports sustainable development goals, steering society towards a low-carbon, green future. As technology evolves and its applications deepen, Smart Energy Systems are set to play an increasingly crucial role in future energy management."
         }
       ],
       "archHeading": "Solution Architecture",
@@ -608,12 +608,12 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/57-intro-0.jpg",
           "h": "Industry Challenges",
-          "p": "The global economic growth and urbanization have led to challenges such as traffic congestion, environmental pollution, and resource scarcity. Smart cities, supported by advancements in IoT, big data, cloud computing, and AI, aim to address these challenges by enhancing sustainable urban development. These technologies enable real-time data collection and analysis, facilitating more scientific and efficient decision-making. Smart cities improve urban management and quality of life, promoting sustainable development."
+          "p": "Urban growth brings challenges such as traffic congestion, environmental pressure, and aging infrastructure. Connected sensing gives city operators real-time data on roads, utilities, structures, and the environment, supporting better-informed decisions. Hitelecom provides the field sensors and connectivity used in these monitoring deployments."
         },
         {
           "img": "solution/57-intro-1.jpg",
           "h": "Solution Overview",
-          "p": "Smart city systems leverage modern information technology and data analytics to enhance urban management efficiency, improve citizens' quality of life, and promote sustainable development. These systems utilize intelligent infrastructure, data-driven decision support, and efficient service systems for smart urban management and services. By enhancing the intelligence level of city management through IT, smart city systems effectively address urbanization challenges, improve residents' quality of life, and foster sustainable development. With ongoing technological advancements, smart city systems are set to play an increasingly vital role in future urban development."
+          "p": "The Hitelecom smart city solution connects infrastructure monitoring — manhole covers, bridges, pipelines, and environmental conditions — to a central platform. Operators receive alerts on abnormal conditions and can track infrastructure status across the city from one interface."
         }
       ],
       "archHeading": "Solution Architecture",
@@ -649,7 +649,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/57-sys-1.png",
           "h": "Real-time Monitoring",
-          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping teams plan maintenance and reduce downtime."
+          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping operators monitor infrastructure conditions and schedule inspections."
         },
         {
           "img": "solution/57-sys-2.png",
@@ -709,7 +709,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/66-intro-0.jpg",
           "h": "Industry Challenges",
-          "p": "In recent years, the global tourism industry has flourished, making travel an indispensable part of many people's lives. According to the World Tourism Organization (UNWTO), the continuous increase in international tourists has spurred the development and construction of various tourist attractions. This rapid growth demands higher standards for the management and services of these attractions. Smart tourism destinations utilize modern information technology, the Internet of Things (IoT), big data, and artificial intelligence to achieve comprehensive digital and intelligent management and services. Emerging in response to the swift expansion of the tourism industry and the diversification of tourist demands, smart destinations aim to enhance visitor experiences, improve management efficiency, and promote sustainable development. By applying modern information technology, smart destinations elevate the level of intelligence in tourism management, better meeting tourists' needs, optimizing resource allocation, and fostering the sustainable growth of the tourism sector."
+          "p": "In recent years, the global tourism industry has flourished, making travel an indispensable part of many people's lives. International travel has grown steadily over the long term, spurring the development of tourist attractions. This rapid growth demands higher standards for the management and services of these attractions. Smart tourism destinations utilize modern information technology, the Internet of Things (IoT), big data, and artificial intelligence to achieve comprehensive digital and intelligent management and services. Emerging in response to the swift expansion of the tourism industry and the diversification of tourist demands, smart destinations aim to enhance visitor experiences, improve management efficiency, and promote sustainable development. By applying modern information technology, smart destinations elevate the level of intelligence in tourism management, better meeting tourists' needs, optimizing resource allocation, and fostering the sustainable growth of the tourism sector."
         },
         {
           "img": "solution/66-intro-1.jpg",
@@ -755,7 +755,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/66-sys-2.png",
           "h": "Alarm Notification",
-          "p": "Enables bulk configuration of alerts, centralized management, and automated alarm resolution. Supports multi-condition trigger alerts with timely notifications to relevant personnel, ensuring comprehensive monitoring of equipment operational status."
+          "p": "Enables bulk configuration of alerts, centralized management, and automated alert generation and escalation. Supports multi-condition trigger alerts with timely notifications to relevant personnel, giving staff a consolidated view of monitored conditions."
         },
         {
           "img": "solution/66-sys-3.png",
@@ -781,7 +781,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/66-scen-1.jpg",
           "h": "Museums and Collections",
-          "p": "Track temperature, humidity, and smoke to protect exhibits and collections."
+          "p": "Track temperature, humidity, and smoke to support the conservation of exhibits and collections."
         },
         {
           "img": "solution/66-scen-2.jpg",
@@ -802,12 +802,12 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/67-intro-0.jpg",
           "h": "Industry Challenges",
-          "p": "Global water scarcity, intensified by population growth, urbanization, climate change, pollution, and overuse, demands efficient management. Traditional methods, limited by delayed data and inadequate decision-making support, falter in efficiency and emergency responsiveness, such as leak or pollution detection. Smart water management, pivotal in smart city strategies, employs advanced technology and analytics for effective resource stewardship and monitoring. Addressing the challenges of traditional systems, including safety and supply risks, smart solutions facilitate real-time monitoring and analysis, improving risk management and ensuring water service safety and reliability."
+          "p": "Global water scarcity, intensified by population growth, urbanization, climate change, pollution, and overuse, demands efficient management. Traditional methods, limited by delayed data and inadequate decision-making support, falter in efficiency and emergency responsiveness, such as leak or pollution detection. Smart water management, pivotal in smart city strategies, employs advanced technology and analytics for effective resource stewardship and monitoring. Addressing the challenges of traditional systems, including safety and supply risks, smart solutions enable real-time monitoring and analysis, improving risk management and supporting water service safety and reliability."
         },
         {
           "img": "solution/67-intro-1.jpg",
           "h": "Solution Overview",
-          "p": "Smart water management systems, leveraging IT and intelligent technologies like IoT, big data, cloud computing, and AI, are crucial for efficient water resource management in urban and regional areas. These systems aim to optimize water usage, ensure quality, minimize costs, and enhance user satisfaction by offering comprehensive monitoring and management solutions. They cover all aspects of water resource utilization, from development to protection, including reservoirs, rivers, and irrigation systems, to secure water supply, support agriculture and industry, and mitigate flood risks. With the integration of advanced technologies, these systems are set to play a pivotal role in sustainable water management, improving efficiency and safety while addressing future challenges."
+          "p": "Smart water management systems, leveraging IT and intelligent technologies like IoT, big data, cloud computing, and AI, are crucial for efficient water resource management in urban and regional areas. These systems help utilities optimize water usage, track quality, and manage costs through comprehensive monitoring. They cover all aspects of water resource utilization, from development to protection, including reservoirs, rivers, and irrigation systems, to secure water supply, support agriculture and industry, and mitigate flood risks. With the integration of advanced technologies, these systems are set to play a pivotal role in sustainable water management, improving efficiency and safety while addressing future challenges."
         }
       ],
       "archHeading": "Solution Architecture",
@@ -843,7 +843,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/67-sys-1.png",
           "h": "Real-time Monitoring",
-          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping teams plan maintenance and reduce downtime."
+          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping utilities identify abnormal levels, flow, or quality conditions."
         },
         {
           "img": "solution/67-sys-2.png",
@@ -853,7 +853,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/67-sys-3.png",
           "h": "Alarm Notification",
-          "p": "Enables bulk configuration of alerts, centralized management, and automated alarm resolution. Supports multi-condition trigger alerts with timely notifications to relevant personnel, ensuring comprehensive monitoring of equipment operational status."
+          "p": "Enables bulk configuration of alerts, centralized management, and automated alert generation and escalation. Supports multi-condition trigger alerts with timely notifications to relevant personnel, giving staff a consolidated view of monitored conditions."
         }
       ],
       "relHeading": "Related Products",
@@ -1635,7 +1635,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
 export const solutionSeo: Record<'en' | 'zh', Record<string, { name: string; title: string; desc: string }>> = {
  en: {
   "57": { name: "Smart City", title: "Smart City IoT Solution | Infrastructure | Hitelecom", desc: "Hitelecom smart city IoT solution: outdoor 4G and NB-IoT sensors for structural health monitoring, environmental monitoring and urban infrastructure management with IoT cloud integration." },
-  "58": { name: "Industrial IoT", title: "Industrial IoT Solution | Equipment Monitoring | Hitelecom", desc: "Hitelecom smart industrial IoT solution: industrial IoT sensors and outdoor 4G sensor terminals for real-time equipment monitoring, predictive maintenance and smart factory management." },
+  "58": { name: "Industrial IoT", title: "Industrial IoT Solution | Equipment Monitoring | Hitelecom", desc: "Hitelecom smart industrial IoT solution: industrial IoT sensors and outdoor 4G sensor terminals for real-time equipment monitoring, condition-based maintenance and smart factory management." },
   "59": { name: "Smart Energy", title: "Smart Energy IoT Solution | Condition Monitoring | Hitelecom", desc: "Hitelecom smart energy IoT solution: wireless pressure, temperature and radar level sensors with 4G/NB-IoT connectivity for remote energy monitoring and management." },
   "60": { name: "Smart Industrial Parks", title: "Smart Industrial Park IoT Solution | Hitelecom", desc: "Hitelecom smart park IoT solution: NB-IoT sensors and IoT cloud integration for park security, environmental monitoring and intelligent facility management." },
   "64": { name: "Smart Campus", title: "Smart Campus IoT Solution | Air Quality | Hitelecom", desc: "Hitelecom smart campus IoT solution: air quality sensors, temperature and humidity sensors with IoT cloud platform for safe, efficient campus management." },

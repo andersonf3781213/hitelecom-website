@@ -229,7 +229,7 @@ export const productContent ={
      },
      {
       "img": "product/cloud/feature-7.png",
-      "text": "Proprietary HiLink protocol"
+      "text": "HiLink Device Protocol"
      },
      {
       "img": "product/cloud/feature-8.png",
@@ -263,7 +263,7 @@ export const productContent ={
      {
       "img": "product/cloud/core-4.jpg",
       "title": "Data Visualization",
-      "desc": "Build dashboards of any size connected live to device data sources.\n\nView dashboards on video walls, PCs, tablets, and phones with real-time refresh.\n\nAlarms appear in real time, and configuration commands can be issued immediately.\n\nOptional GIS and digital-twin views can display device location, status, and movement history."
+      "desc": "Build dashboards for desktop, mobile, and large-display layouts, connected live to device data sources.\n\nView dashboards on video walls, PCs, tablets, and phones with real-time refresh.\n\nAlarms appear in near real time, and configuration commands can be issued from the dashboard, subject to device connectivity.\n\nOptional GIS and digital-twin views can display device location, status, and movement history."
      },
      {
       "img": "product/cloud/core-5.jpg",
@@ -306,7 +306,7 @@ export const productContent ={
        "product/cloud/scen-icon-4a.png",
        "product/cloud/scen-icon-4b.png"
       ],
-      "label": "Smart agriculture"
+      "label": "Smart Agriculture"
      }
     ],
     "bgs": [
@@ -319,22 +319,22 @@ export const productContent ={
      {
       "img": "product/cloud/scen-bg-1.jpg",
       "title": "Industrial IoT",
-      "desc": "Facilitating efficient connectivity and data exchange among devices, systems, and personnel to optimize production processes, enhance productivity, and improve resource utilization. Hitelecom's sensor terminals enable real-time monitoring of equipment status, supporting predictive maintenance and rapid fault response."
+      "desc": "Connect devices, systems, and teams to streamline production processes and improve resource utilization. Hitelecom sensor terminals provide real-time monitoring of equipment status, supporting condition-based maintenance and rapid fault response."
      },
      {
       "img": "product/cloud/scen-bg-2.jpg",
       "title": "Smart Energy",
-      "desc": "Hitelecom series sensing terminals optimize energy management by enabling real-time monitoring, data acquisition, and remote control. This reduces energy consumption, predicts faults, and minimizes manual effort and maintenance costs. IoT technology integrates seamlessly with existing energy systems, helping enterprises cut operating costs and meet sustainability goals."
+      "desc": "Hitelecom sensor terminals support energy management through real-time monitoring, data acquisition, and remote control. The data supports energy analysis and condition-based maintenance while reducing routine manual work. Hitelecom Cloud can integrate with existing energy systems through supported APIs and protocols, helping enterprises track operating costs and sustainability metrics."
      },
      {
       "img": "product/cloud/scen-bg-3.png",
       "title": "Smart Campus",
-      "desc": "IoT in smart campuses enables device interconnectivity and data sharing, enhancing management efficiency and resource utilization. Hitelecom sensing terminals enable real-time monitoring of the campus environment, safety, and energy use, optimizing teaching conditions, administrative efficiency, and campus security around the clock."
+      "desc": "IoT in smart campuses connects devices and shares data across facilities. Hitelecom sensor terminals provide real-time monitoring of the campus environment, safety conditions, and energy use, giving administrators a continuous operational picture."
      },
      {
       "img": "product/cloud/scen-bg-4.png",
       "title": "Smart Agriculture",
-      "desc": "Hitelecom series smart IoT devices provide precise environmental sensing, monitoring soil moisture, temperature, and light in real-time to optimize irrigation, fertilization, and pest control, significantly reducing labor costs. Integrated with weather stations and irrigation controllers, they close the loop from field sensing to automated farm management."
+      "desc": "Hitelecom smart IoT devices monitor soil moisture, temperature, and light in real time, providing data that supports irrigation and fertilization decisions and can reduce routine field labor. Integrated with weather stations and supported irrigation controllers, they connect field sensing to automated farm management."
      }
     ]
    },
@@ -349,7 +349,7 @@ export const productContent ={
    "banner": {
     "title": "Hitelecom App",
     "subtitle": "Remote Monitoring for Your Business — Anywhere",
-    "desc": "Hitelecom's app leverages the latest mobile technology to offer a simple, convenient remote monitoring solution. Access and manage your business systems in real time from anywhere via your mobile device.",
+    "desc": "The Hitelecom app is a simple, convenient remote monitoring tool. Access and manage your connected devices from anywhere on your mobile device.",
     "images": [
      "product/cloud/banner-1.png",
      "product/cloud/banner-2.png",
@@ -379,7 +379,7 @@ export const productContent ={
     ]
    },
    "features": {
-    "heading": "Product features",
+    "heading": "Product Features",
     "subtitle": "Register devices, configure sensors, manage user access, and monitor live data from one application.",
     "items": [
      {
@@ -404,8 +404,8 @@ export const productContent ={
      },
      {
       "img": "product/app/feature-5.png",
-      "title": "App Data Components",
-      "desc": "Our app's data components are engineered for flexibility and convenience, providing users with instant access to data dynamics through comprehensive charts and succinct reports."
+      "title": "Data Dashboards",
+      "desc": "View current readings, trends, and downloadable reports in one interface."
      },
      {
       "img": "product/app/feature-6.png",
@@ -415,22 +415,22 @@ export const productContent ={
      {
       "img": "product/app/feature-7.png",
       "title": "Alarm Management",
-      "desc": "Real-time device status monitoring with alerts pushed via app ensures prompt response and resolution, maintaining normal operation of equipment and safeguarding business continuity."
+      "desc": "Real-time device status monitoring with alerts pushed to the app helps teams respond more quickly to supported alerts and keep equipment running."
      },
      {
       "img": "product/app/feature-8.png",
       "title": "Multilingual Support",
-      "desc": "The standard interface supports Chinese and English. Additional languages are available as a customization."
+      "desc": "The standard interface supports Chinese and English. Additional interface languages are available through custom development."
      }
     ]
    },
    "app3": {
-    "heading": "Application scenarios",
+    "heading": "Application Scenarios",
     "subtitle": "Use connected field data to monitor operations, respond to alerts, and improve decisions across industries.",
     "items": [
      {
       "img": "product/app/scen-0bbcd0.jpg",
-      "label": "Smart agriculture"
+      "label": "Smart Agriculture"
      },
      {
       "img": "product/app/scen-214abe.jpg",
@@ -569,13 +569,13 @@ export const productContent ={
      },
      {
       "id": 301,
-      "name": "Temp & Humidity Sensor",
+      "name": "Temperature and Humidity Sensor",
       "conn": "NB-IoT | 4G LTE | LoRa",
       "img": "product/products/301.png"
      },
      {
       "id": 302,
-      "name": "T&H Data Logger",
+      "name": "Temperature and Humidity Data Logger",
       "conn": "NFC | USB",
       "img": "product/products/302.png"
      },
@@ -614,7 +614,7 @@ export const productContent ={
      },
      {
       "cid": "273",
-      "name": "outdoor",
+      "name": "Outdoor",
       "on": false
      }
     ],
@@ -709,13 +709,13 @@ export const productContent ={
       "id": "",
       "img": "product/products/custom-4.png",
       "name": "Hardware Customization",
-      "conn": "Customize sensors, controller, actuator, and smart devices"
+      "conn": "Custom sensors, controllers, actuators, and other connected devices"
      },
      {
       "id": "287",
       "img": "product/products/287.png",
       "name": "IoT Accessories",
-      "conn": "Explosion-Proof | 2.4 GHz | 5.8 GHz"
+      "conn": "Signal Coupling | 2.4 GHz | 5.8 GHz"
      },
      {
       "id": "286",
@@ -851,13 +851,13 @@ export const productContent ={
      },
      {
       "id": 301,
-      "name": "Temp & Humidity Sensor",
+      "name": "Temperature and Humidity Sensor",
       "conn": "NB-IoT | 4G LTE | LoRa",
       "img": "product/products/301.png"
      },
      {
       "id": 302,
-      "name": "T&H Data Logger",
+      "name": "Temperature and Humidity Data Logger",
       "conn": "NFC | USB",
       "img": "product/products/302.png"
      }
@@ -1268,7 +1268,7 @@ export const productContent ={
      },
      {
       "cid": "273",
-      "name": "outdoor",
+      "name": "Outdoor",
       "on": false
      }
     ],
@@ -1296,7 +1296,7 @@ export const productContent ={
      },
      {
       "cid": "273",
-      "name": "outdoor",
+      "name": "Outdoor",
       "on": true
      }
     ],
@@ -1429,13 +1429,13 @@ export const productContent ={
       "id": "",
       "img": "product/products/custom-4.png",
       "name": "Hardware Customization",
-      "conn": "Customize sensors, controller, actuator, and smart devices"
+      "conn": "Custom sensors, controllers, actuators, and other connected devices"
      },
      {
       "id": "287",
       "img": "product/products/287.png",
       "name": "IoT Accessories",
-      "conn": "Explosion-Proof | 2.4 GHz | 5.8 GHz"
+      "conn": "Signal Coupling | 2.4 GHz | 5.8 GHz"
      },
      {
       "id": "286",
@@ -1513,7 +1513,7 @@ export const productContent ={
    "270": {
     "series": "H Series · Temperature Sensor",
     "tagline": "Precision | Range | Ultra-Low Power",
-    "desc": "Hitelecom's temperature sensors offer remote monitoring, alerting, and high-precision measurement, ensuring timely and reliable temperature data across diverse applications",
+    "desc": "Hitelecom's temperature sensors offer remote monitoring, alerting, and high-precision measurement, delivering timely and reliable temperature data across diverse applications",
     "heroImg": "product/details/270-hero.png",
     "pdf": "/downloads/temperature-sensor-datasheet.pdf",
      "crumbCat": "Temperature",
@@ -1553,7 +1553,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Continuously innovating with micro-power processors and algorithmic optimization for up to 10 years of stable IoT sensor operation, reducing maintenance costs",
+    "specsDesc": "Micro-power processors and algorithmic optimization give the sensor a design life of up to 10 years at a one-hour reporting interval under specified test conditions, reducing routine maintenance.",
     "specs": [
      [
       "Product Models",
@@ -1581,7 +1581,7 @@ export const productContent ={
      ],
      [
       "Battery Life",
-      "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency."
+      "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
      ],
      [
       "Installation",
@@ -1620,7 +1620,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency.",
+      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval.",
       "unitText": "year",
       "minValue": 10.0
      },
@@ -1637,7 +1637,7 @@ export const productContent ={
      },
      {
       "img": "product/details/270-scen2.jpg",
-      "label": "Smart agriculture"
+      "label": "Smart Agriculture"
      },
      {
       "img": "product/details/270-scen3.jpg",
@@ -1671,12 +1671,12 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "The Hitelecom H Series temperature sensor is a wireless industrial temperature sensor for remote monitoring from -200°C to 800°C. It delivers ±0.5°C accuracy (customizable to ±0.1°C), runs over 10 years on battery at hourly reporting, and uploads readings over 4G or NB-IoT to Hitelecom Cloud or private platforms via MQTT.",
+    "summary": "The Hitelecom H Series temperature sensor is a wireless industrial temperature sensor for remote monitoring from -200°C to 800°C. It delivers ±0.5°C accuracy (customizable to ±0.1°C), is designed for more than 10 years of battery life at hourly reporting under specified test conditions, and uploads readings over 4G or NB-IoT to Hitelecom Cloud or private platforms via MQTT.",
     "sku": "H200/H300/H500",
     "applications": [
      {
       "name": "Data centers and server rooms",
-      "desc": "Tracks rack inlet and room temperature to prevent thermal shutdown and downtime."
+      "desc": "Tracks rack inlet and room temperature, helping operators identify conditions that may lead to thermal shutdown."
      },
      {
       "name": "Cold storage and food processing",
@@ -1724,12 +1724,12 @@ export const productContent ={
       "a": "Yes. Accuracy, probe length and cable, reporting interval and enclosure can be customized under Hitelecom's OEM/ODM program. Contact sales with your working conditions."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "274": {
     "series": "H Series · Pressure Sensor",
     "tagline": "Remote | Low-Power | Impact-Resistant",
-    "desc": "Hitelecom's pressure sensors deliver continuous precision, ensuring accurate cloud reporting of critical pressure data for complex industrial applications",
+    "desc": "Hitelecom's pressure sensors deliver continuous precision measurement with accurate cloud reporting of critical pressure data for complex industrial applications",
     "heroImg": "product/details/274-hero.png",
     "pdf": "/downloads/h300-pressure-sensor-datasheet.pdf",
      "crumbCat": "Pressure",
@@ -1769,7 +1769,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Integrating communication and sensing technologies with embedded energy-saving algorithms ensures our pressure sensors not only have an extended lifespan but also maintain high measurement stability, enhancing the reliability of the entire monitoring system.",
+    "specsDesc": "Integrated communication and sensing technologies with embedded energy-saving algorithms give the pressure sensor an extended service life and high measurement stability, supporting the reliability of the wider monitoring system.",
     "specs": [
      [
       "Product Models",
@@ -1801,7 +1801,7 @@ export const productContent ={
      ],
      [
       "Battery Life",
-      "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency."
+      "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
      ],
      [
       "Installation",
@@ -1846,7 +1846,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency.",
+      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval.",
       "unitText": "year",
       "minValue": 10.0
      },
@@ -1879,7 +1879,7 @@ export const productContent ={
      },
      {
       "img": "product/details/274-scen6.jpg",
-      "label": "Smart agriculture"
+      "label": "Smart Agriculture"
      },
      {
       "img": "product/details/274-scen7.jpg",
@@ -1901,7 +1901,7 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "The Hitelecom H Series pressure sensor is a wireless industrial pressure transmitter for pipelines, pumps and tanks. Ranges span 0-1 MPa up to 20 MPa with ±0.2% FS/year stability and 2× full-scale overload tolerance, reporting over 4G or NB-IoT with more than 10 years of battery life.",
+    "summary": "The Hitelecom H Series pressure sensor is a wireless industrial pressure transmitter for pipelines, pumps and tanks. Ranges span 0–1 MPa up to 20 MPa with ±0.2% FS/year stability and 2× full-scale overload tolerance, reporting over 4G or NB-IoT. The battery is designed for more than 10 years of life at a one-hour reporting interval under specified test conditions.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -1922,7 +1922,7 @@ export const productContent ={
      },
      {
       "name": "Industrial hydraulics",
-      "desc": "Follows hydraulic press and equipment pressure curves for predictive maintenance."
+      "desc": "Follows hydraulic press and equipment pressure curves to support condition-based maintenance."
      },
      {
       "name": "Tank and vessel monitoring",
@@ -1951,15 +1951,15 @@ export const productContent ={
      },
      {
       "q": "What power does it need on site?",
-      "a": "None. The internal battery supports over 10 years at hourly reporting, so the transmitter can be mounted where cabling is impractical."
+      "a": "None. The internal battery is designed for more than 10 years of life at a one-hour reporting interval under specified test conditions — actual life varies with network coverage, temperature, and reporting frequency — so the transmitter can be mounted where cabling is impractical."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "280": {
     "series": "H Series · Soil Sensor",
     "tagline": "Low Power | Precision | Multi-parameter",
-    "desc": "Hitelecom's soil sensor integrates multi-parameter monitoring, scheduled data sync, and precision measurement, ensuring comprehensive soil quality assessment and continuous monitoring for diverse agricultural applications",
+    "desc": "Hitelecom's soil sensor integrates multi-parameter monitoring, scheduled data sync, and precision measurement, supporting comprehensive soil quality assessment and continuous monitoring for diverse agricultural applications",
     "heroImg": "product/details/280-hero.png",
     "pdf": "/downloads/h300-soil-sensor-datasheet.pdf",
      "crumbCat": "Soil",
@@ -2031,7 +2031,7 @@ export const productContent ={
      ],
      [
       "Battery Life",
-      "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency."
+      "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
      ],
      [
       "Installation",
@@ -2079,7 +2079,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency.",
+      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval.",
       "unitText": "year",
       "minValue": 10.0
      },
@@ -2126,7 +2126,7 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "The Hitelecom H Series soil sensor is a multi-parameter wireless probe for agriculture and land monitoring. One device measures soil moisture, temperature, conductivity (EC), pH and NPK nutrients, reports over 4G or NB-IoT, and runs over 10 years on battery with an IP68 enclosure designed for permanent burial.",
+    "summary": "The Hitelecom H Series soil sensor is a multi-parameter wireless probe for agriculture and land monitoring. One device measures soil moisture, temperature, conductivity (EC), pH and NPK nutrients, reports over 4G or NB-IoT, and is designed for more than 10 years of battery life at a one-hour reporting interval under specified test conditions, with an IP68 enclosure designed for long-term burial.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -2164,7 +2164,7 @@ export const productContent ={
      },
      {
       "q": "Can the probe stay buried outdoors year-round?",
-      "a": "Yes. The IP68 enclosure is designed for permanent burial, and the battery lasts over 10 years at hourly reporting, which reduces routine maintenance between seasons."
+      "a": "Yes. The IP68 enclosure is designed for long-term burial, and the battery is designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, which reduces routine maintenance between seasons."
      },
      {
       "q": "How is soil data transmitted?",
@@ -2175,12 +2175,12 @@ export const productContent ={
       "a": "The EC channel covers 0–1,000 µS/cm, which suits most farmland; for highly saline soils or special media, contact Hitelecom for a customized range."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "281": {
     "series": "H Series · Radar Level Sensor",
     "tagline": "Precision | Range | Ultra-Low Power",
-    "desc": "Hitelecom's level sensor ensures precise monitoring, timely feedback, and high stability, guaranteeing accurate and continuous liquid level data across various industrial settings.",
+    "desc": "Hitelecom's level sensor provides precise monitoring, timely feedback, and high stability, delivering accurate and continuous liquid level data across various industrial settings.",
     "heroImg": "product/details/281-hero.png",
     "pdf": "/downloads/liquid-level-sensor-datasheet.pdf",
     "crumbCat": "Liquid Level",
@@ -2220,7 +2220,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Leveraging integrated sensing technology, real-time communication, and energy-efficient design, it ensures accuracy and continuity in liquid level data, adaptable to industrial applications from water treatment to chemical production lines.",
+    "specsDesc": "Integrated sensing technology, real-time communication, and an energy-efficient design support accurate, continuous liquid-level data across industrial applications from water treatment to chemical production lines.",
     "specs": [
      [
       "Product Models",
@@ -2252,7 +2252,7 @@ export const productContent ={
      ],
      [
       "Battery Life",
-      "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency."
+      "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
      ],
      [
       "Installation",
@@ -2298,7 +2298,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency.",
+      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval.",
       "unitText": "year",
       "minValue": 10.0
      },
@@ -2353,7 +2353,7 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "The Hitelecom H Series level sensor is a wireless liquid-level transmitter for reservoirs, rivers, tanks and wells. It covers 0-200 m (customizable) at ±0.5% FS accuracy with ±0.2% FS/year stability, runs over 10 years on battery, and reports over 4G or NB-IoT.",
+    "summary": "The Hitelecom H Series level sensor is a wireless liquid-level transmitter for reservoirs, rivers, tanks and wells. It covers 0–200 m (customizable) at ±0.5% FS accuracy with ±0.2% FS/year stability, is designed for more than 10 years of battery life at a one-hour reporting interval under specified test conditions, and reports over 4G or NB-IoT.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -2395,7 +2395,7 @@ export const productContent ={
      },
      {
       "q": "How is the sensor powered at remote sites?",
-      "a": "By internal battery — over 10 years at hourly reporting — so reservoirs and river stations need no solar panel or cabling."
+      "a": "By internal battery — designed for more than 10 years of life at a one-hour reporting interval under specified test conditions — so in suitable deployments reservoirs and river stations may not need a solar panel or cabling."
      },
      {
       "q": "How do we get the level data?",
@@ -2406,12 +2406,12 @@ export const productContent ={
       "a": "Yes. Range, probe cable length and mounting can be adapted to the installation; share your drawings or site photos with Hitelecom sales for a matching configuration."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "282": {
     "series": "H Series · Tilt Sensor",
     "tagline": "Precision | Multi-Axis | Ultra-Low Power",
-    "desc": "Hitelecom's inclinometer integrates ultra-high precision sensors, featuring remote monitoring, real-time alerts, and high-precision measurement, ensuring the accuracy and timeliness of tilt data, suitable for various complex industrial applications",
+    "desc": "Hitelecom's tilt sensor integrates ultra-high precision sensing elements, featuring remote monitoring, real-time alerts, and high-precision measurement for accurate and timely tilt data across complex industrial applications",
     "heroImg": "product/details/282-hero.png",
     "pdf": "/downloads/h310-ts180c-tilt-sensor-datasheet.pdf",
      "crumbCat": "Tilt Monitoring",
@@ -2451,7 +2451,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Featuring high-sensitivity sensors, real-time data synchronization, and a robust, durable design, this system ensures precise and reliable inclinometer monitoring. Optimized for up to 10 years of stable operation, significantly reducing maintenance costs.",
+    "specsDesc": "High-sensitivity sensing elements, real-time data synchronization, and a robust, durable design support precise and reliable tilt monitoring. Designed for up to 10 years of operation at a one-hour reporting interval under specified test conditions, reducing routine maintenance.",
     "specs": [
      [
       "Product Models",
@@ -2483,7 +2483,7 @@ export const productContent ={
      ],
      [
       "Battery Life",
-      "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency."
+      "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
      ],
      [
       "Installation",
@@ -2537,7 +2537,7 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "The Hitelecom H Series tilt sensor is a wireless IoT inclinometer for structural health monitoring. It measures X/Y axis tilt (three-axis optional) at ±0.005° accuracy and 0.001° resolution, runs over 10 years on battery at hourly reporting, and carries an IP68 rating for permanent outdoor deployment. Connectivity options are 4G, NB-IoT and LoRa.",
+    "summary": "The Hitelecom H Series tilt sensor is a wireless IoT inclinometer for structural health monitoring. It measures X/Y axis tilt (three-axis optional) at ±0.005° accuracy and 0.001° resolution, is designed for more than 10 years of battery life at hourly reporting under specified test conditions, and carries an IP68 rating for long-term outdoor deployment. Connectivity options are 4G, NB-IoT and LoRa.",
     "sku": "H200/H300/H500",
     "specsStructured": [
      {
@@ -2582,7 +2582,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "> 10 years at 1-hour reporting interval"
+      "value": "Designed for > 10 years at a 1-hour reporting interval under specified test conditions"
      },
      {
       "name": "Ingress Protection",
@@ -2603,7 +2603,7 @@ export const productContent ={
     "applications": [
      {
       "name": "Slope stability monitoring",
-      "desc": "Detects early-stage slope displacement on highways, open-pit mines and cut embankments before failure."
+      "desc": "Supports earlier identification of abnormal slope movement on highways, open-pit mines, and cut embankments."
      },
      {
       "name": "Railway infrastructure",
@@ -2651,13 +2651,13 @@ export const productContent ={
      },
      {
       "name": "Warehouse racking",
-      "desc": "Detects rack upright deflection from forklift impact before collapse occurs."
+      "desc": "Detects rack upright deflection from forklift impact, supporting earlier intervention before damage escalates."
      }
     ],
     "faqs": [
      {
       "q": "What structures can the H Series tilt sensor monitor?",
-      "a": "The H Series tilt sensor is deployed on slopes and embankments, railway infrastructure, tunnels, bridges, metro structures, construction sites and temporary works, sea dikes and dams, heritage buildings and ancient pagodas, urban trees, street light poles, transmission towers, telecom towers, and warehouse racking. Its IP68 rating and 10-year battery life make it suitable for permanent unattended outdoor installation."
+      "a": "The H Series tilt sensor is deployed on slopes and embankments, railway infrastructure, tunnels, bridges, metro structures, construction sites and temporary works, sea dikes and dams, heritage buildings and ancient pagodas, urban trees, street light poles, transmission towers, telecom towers, and warehouse racking. Its IP68 rating and long battery life suit it to long-term outdoor installation; battery life depends on reporting interval, network coverage, and site conditions."
      },
      {
       "q": "How accurate is the H Series tilt sensor?",
@@ -2665,7 +2665,7 @@ export const productContent ={
      },
      {
       "q": "How long does the battery last?",
-      "a": "Over 10 years at a one-hour reporting interval. Battery life scales with reporting frequency; more frequent reporting shortens service life proportionally. Most configurations run on battery without mains power or a solar panel — confirm power options for your configuration."
+      "a": "Designed for more than 10 years at a one-hour reporting interval under specified test conditions. Battery life scales with reporting frequency; more frequent reporting shortens service life. Most configurations run on battery without mains power or a solar panel — confirm power options for your configuration."
      },
      {
       "q": "Which wireless technology should I choose — 4G, NB-IoT or LoRa?",
@@ -2676,12 +2676,12 @@ export const productContent ={
       "a": "Yes. The sensor supports ear mount, pole clamp and slot installation. For protected structures, clamp and adhesive mounting avoid penetrating the fabric of the building. Contact Hitelecom for site-specific mounting guidance."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "283": {
     "series": "H Series · Radar Distance Sensor",
     "tagline": "Low Power | Precision | Millimeter-Level",
-    "desc": "Hitelecom's distance sensors feature millimeter-level precision, scheduled data collection, and strong anti-interference capabilities, ensuring accurate distance measurements and timely cloud updates, suitable for various complex environments",
+    "desc": "Hitelecom's distance sensors feature millimeter-level precision, scheduled data collection, and strong anti-interference capabilities, delivering accurate distance measurements and timely cloud updates across complex environments",
     "heroImg": "product/details/283-hero.png",
     "pdf": "/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf",
      "crumbCat": "Radar Distance",
@@ -2721,7 +2721,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Innovation-driven, the combination of high-precision radar distance-measuring sensors with advanced low-power processors and optimized embedded algorithms enables up to 10 years of stable, continuous operation, significantly reducing maintenance costs.",
+    "specsDesc": "High-precision radar distance measurement, advanced low-power processors, and optimized embedded algorithms give the sensor a design life of up to 10 years at a one-hour reporting interval under specified test conditions, reducing routine maintenance.",
     "specs": [
      [
       "Product Models",
@@ -2753,7 +2753,7 @@ export const productContent ={
      ],
      [
       "Battery Life",
-      "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency."
+      "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
      ],
      [
       "Installation",
@@ -2802,7 +2802,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency.",
+      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval.",
       "unitText": "year",
       "minValue": 10.0
      },
@@ -2857,7 +2857,7 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "The Hitelecom H Series ranging sensor is a wireless radar distance sensor with millimeter-level precision. It measures 0.3–50 m at ±1 mm accuracy and 1 mm resolution, resists interference in harsh industrial sites, and reports over 4G or NB-IoT with a 10-year battery.",
+    "summary": "The Hitelecom H Series ranging sensor is a wireless radar distance sensor with millimeter-level precision. It measures 0.3–50 m at ±1 mm accuracy and 1 mm resolution, resists interference in harsh industrial sites, and reports over 4G or NB-IoT, with a battery designed for more than 10 years of life at a one-hour reporting interval under specified test conditions.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -2899,19 +2899,19 @@ export const productContent ={
      },
      {
       "q": "How is it powered and connected?",
-      "a": "Internal battery for over 10 years at hourly reporting, with 4G or NB-IoT uplink via MQTT to Hitelecom Cloud or private platforms."
+      "a": "Internal battery designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, with 4G or NB-IoT uplink via MQTT to Hitelecom Cloud or private platforms."
      },
      {
       "q": "Can the range be extended beyond 50 m?",
       "a": "Yes, range and mounting are customizable. Tell Hitelecom your target distance and medium for a configuration proposal."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "284": {
     "series": "H Series · Vibration Sensor",
     "tagline": "Precision | Range | Ultra-Low Power",
-    "desc": "Hitelecom vibration sensors are designed for monitoring and analyzing mechanical equipment vibrations, serving as a crucial component in Industry 4.0 environments. They offer robust technical support for equipment health management and maintenance, aiming to enable predictive maintenance and reduce unplanned downtime.",
+    "desc": "Hitelecom vibration sensors monitor and analyze mechanical equipment vibration in Industry 4.0 environments, providing data that supports equipment health management and condition-based maintenance to help reduce unplanned downtime.",
     "heroImg": "product/details/284-hero.png",
     "pdf": "/downloads/vibration-sensor-datasheet.pdf",
     "crumbCat": "Vibration Monitoring",
@@ -2951,7 +2951,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Low-power processor and algorithm optimization ensure the sensor maintains stable operation for up to 10 years with minimal energy use during each cycle, effectively reducing energy consumption and maintenance costs.",
+    "specsDesc": "Low-power processors and algorithm optimization give the sensor a design life of up to 10 years at a one-hour reporting interval under specified test conditions, with minimal energy use in each measurement cycle.",
     "specs": [
      [
       "Product Models",
@@ -2983,7 +2983,7 @@ export const productContent ={
      ],
      [
       "Battery Life",
-      "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency."
+      "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
      ],
      [
       "Installation",
@@ -3029,7 +3029,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency.",
+      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval.",
       "unitText": "year",
       "minValue": 10.0
      },
@@ -3076,12 +3076,12 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "The Hitelecom H Series vibration sensor is a wireless monitor for rotating machinery and structural vibration in Industry 4.0. It measures vibration velocity 0–100 mm/s and displacement amplitude 0–1,000 µm (customizable) at ±1% accuracy (calibrated at 80 Hz), reports over 4G or NB-IoT, and runs over 10 years on battery.",
+    "summary": "The Hitelecom H Series vibration sensor is a wireless monitor for rotating machinery and structural vibration in Industry 4.0. It measures vibration velocity 0–100 mm/s and displacement amplitude 0–1,000 µm (customizable) at ±1% accuracy (calibrated at 80 Hz), reports over 4G or NB-IoT, and is designed for more than 10 years of battery life at a one-hour reporting interval under specified test conditions.",
     "sku": "H200/H300/H500",
     "applications": [
      {
       "name": "Industrial rotating equipment",
-      "desc": "Pumps, fans, motors and compressors get continuous vibration trending for predictive maintenance."
+      "desc": "Pumps, fans, motors, and compressors get continuous vibration trending that supports condition-based maintenance."
      },
      {
       "name": "Semiconductor facilities",
@@ -3113,19 +3113,19 @@ export const productContent ={
       "a": "Vibration velocity 0–100 mm/s and displacement amplitude 0–1,000 µm, both customizable, with ±1% accuracy calibrated at 80 Hz."
      },
      {
-      "q": "How does it help predictive maintenance?",
+      "q": "How does it support condition-based maintenance?",
       "a": "Continuous intensity and amplitude trends reveal bearing wear, imbalance and misalignment early, so maintenance can be scheduled by condition rather than calendar."
      },
      {
       "q": "How is the sensor installed and powered?",
-      "a": "Ear mount, pole clamp or slot installation, fully battery-powered with over 10 years of life at hourly reporting — no signal or power cabling."
+      "a": "Magnetic base, threaded, adhesive, or bracket mounting varies by model — confirm the mounting accessory for your configuration. Fully battery-powered, designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, with no signal or power cabling."
      },
      {
       "q": "Which data platform does it connect to?",
       "a": "It reports over 4G or NB-IoT via MQTT to Hitelecom Cloud or a customer platform, with threshold alarms for abnormal vibration."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "285": {
     "series": "H Series · Air Quality Sensor",
@@ -3146,7 +3146,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/285-f3.png",
-      "text": "Optimized PM2.5, NO₂, SO₂, NH₃, O₃ Level Monitoring"
+      "text": "Optional NO₂, SO₂, NH₃, and O₃ Channels (by Configuration)"
      },
      {
       "icon": "product/details/285-f4.png",
@@ -3170,7 +3170,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Innovative energy-saving technology featuring advanced low-power processors and algorithm optimization, enabling simultaneous collection of various air pollutants. Single-battery operation ensures a 10-year lifespan, significantly reducing maintenance costs.",
+    "specsDesc": "Low-power processors and algorithm optimization enable simultaneous collection of multiple air-quality channels. The battery is designed for more than 10 years of life at a four-hour reporting interval under specified test conditions; actual life varies by sensing configuration, network coverage, and environment.",
     "specs": [
      [
       "Product Models",
@@ -3194,7 +3194,7 @@ export const productContent ={
      ],
      [
       "Humidity",
-      "0–100% RH (±1% RH)"
+      "0–100% RH"
      ],
      [
       "Air Pressure",
@@ -3210,7 +3210,7 @@ export const productContent ={
      ],
      [
       "Battery Life",
-      "Designed for more than 10 years of battery life at a four-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency."
+      "Designed for more than 10 years of battery life at a four-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
      ],
      [
       "Installation",
@@ -3247,7 +3247,7 @@ export const productContent ={
      },
      {
       "name": "Humidity",
-      "value": "0–100% RH (±1% RH)",
+      "value": "0–100% RH",
       "unitText": "percent",
       "minValue": 0.0,
       "maxValue": 100.0
@@ -3269,7 +3269,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "Designed for more than 10 years of battery life at a four-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency.",
+      "value": "Designed for more than 10 years of battery life at a four-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval.",
       "unitText": "year",
       "minValue": 10.0
      },
@@ -3310,7 +3310,7 @@ export const productContent ={
      },
      {
       "img": "product/details/285-scen8.jpg",
-      "label": "Smart agriculture"
+      "label": "Smart Agriculture"
      }
     ],
     "related": [
@@ -3333,7 +3333,7 @@ export const productContent ={
      },
      {
       "name": "Office and school buildings",
-      "desc": "CO₂ and humidity readings drive ventilation for healthy indoor air."
+      "desc": "CO₂ and humidity readings can inform ventilation decisions when integrated with a supported control system."
      },
      {
       "name": "Hospitals",
@@ -3358,11 +3358,11 @@ export const productContent ={
     "faqs": [
      {
       "q": "Which parameters does the 6-in-1 sensor measure?",
-      "a": "CO₂ (400–5,000 ppm), PM2.5, TVOC, temperature (-40°C to +85°C, ±0.2°C), humidity (0–100% RH, ±1% RH), and air pressure (30–120 kPa, ±0.1 kPa), with optional NO₂, SO₂, NH₃, and O₃ channels by configuration."
+      "a": "CO₂ (400–5,000 ppm), PM2.5, TVOC, temperature (-40°C to +85°C, ±0.2°C), humidity (0–100% RH), and air pressure (30–120 kPa, ±0.1 kPa), with optional NO₂, SO₂, NH₃, and O₃ channels by configuration."
      },
      {
       "q": "How long can it run unattended?",
-      "a": "Over 10 years on battery at a four-hour reporting interval, with an IP68 enclosure for outdoor mounting."
+      "a": "Designed for more than 10 years of battery life at a four-hour reporting interval under specified test conditions — actual life varies with sensing configuration, network coverage, and environment — with an IP68 enclosure for outdoor mounting."
      },
      {
       "q": "How is air quality data delivered?",
@@ -3373,12 +3373,12 @@ export const productContent ={
       "a": "Yes. The 6-in-1 configuration is modular — tell Hitelecom which gases or particles you need and a matching channel set will be proposed."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "275": {
     "series": "H68 Series · Outdoor Gateway",
     "tagline": "IP68 | High Capacity | Wide Coverage",
-    "desc": "The H68 Series gateway features an IP68-rated, dust-tight and waterproof enclosure designed for long-term outdoor service in complex industrial environments. It supports plug-and-play deployment, and a power-off alarm notifies staff immediately if mains power is lost.",
+    "desc": "The H68 Series gateway features an IP68-rated, dust-tight and waterproof enclosure designed for long-term outdoor service in complex industrial environments. It supports plug-and-play deployment, and a power-loss alarm can be sent when backup power and backhaul remain available.",
     "heroImg": "product/details/275-hero.png",
     "pdf": "/downloads/outdoor-4g-gateway-h68-datasheet.pdf",
     "crumbCat": "Outdoor",
@@ -3398,7 +3398,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/275-f4.png",
-      "text": "Supports local deployment, ensuring high data security and reliability"
+      "text": "Supports local deployment for data control and reliability"
      },
      {
       "icon": "product/details/275-f5.png",
@@ -3414,11 +3414,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/275-f8.png",
-      "text": "Supports power-off intelligent alarms, ensuring critical business continuity and data security"
+      "text": "Can send a power-loss alert when backup power and backhaul remain available"
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "The H68 series supports long-distance transmission up to 10 kilometers, reaching up to 2 kilometers within urban areas. It integrates multiple protocols including 4G LTE, Ethernet, and Wi-Fi to ensure high reliability and continuity of data transmission.",
+    "specsDesc": "The H68 series supports long-distance transmission up to 10 kilometers, reaching up to 2 kilometers within urban areas. It integrates 4G LTE, Ethernet, and Wi-Fi connectivity options to support reliable, continuous data transmission.",
     "specs": [
      [
       "Product Models",
@@ -3621,12 +3621,12 @@ export const productContent ={
       "a": "Yes. The IP68 enclosure is dust-tight and waterproof, and the industrial design targets long-term outdoor service."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "276": {
     "series": "H66 Series · Indoor Gateway",
     "tagline": "Industrial | Long-Range | Full-Duplex",
-    "desc": "The H66 series gateway features a durable design for stable operation in variable industrial environments. It supports plug-and-play and includes a power-off alarm that notifies staff immediately if mains power is lost.",
+    "desc": "The H66 series gateway features a durable design for stable operation in variable industrial environments. It supports plug-and-play deployment, and a power-loss alarm can be sent when backup power and backhaul remain available.",
     "heroImg": "product/details/276-hero.png",
     "pdf": "/downloads/indoor-gateway-h66-datasheet.pdf",
     "crumbCat": "Indoor",
@@ -3646,7 +3646,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/276-f4.png",
-      "text": "Supports local deployment, ensuring high data security and reliability"
+      "text": "Supports local deployment for data control and reliability"
      },
      {
       "icon": "product/details/276-f5.png",
@@ -3662,7 +3662,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/276-f8.png",
-      "text": "Supports power-off intelligent alarms, ensuring critical business continuity and data security"
+      "text": "Can send a power-loss alert when backup power and backhaul remain available"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -3861,12 +3861,12 @@ export const productContent ={
       "a": "A full-duplex industrial gateway can serve large sensor fleets; actual capacity depends on reporting interval, payload, and network conditions — share your device count and Hitelecom will size the network."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "277": {
     "series": "H Series · Hydrology",
     "tagline": "Solar | Modular | Millimeter-Level",
-    "desc": "Integrates 2 to 12 sensor channels for environmental data collection, enabling real-time transmission to the Hitelecom Cloud Platform. Allows users to access hydrological and environmental data from anywhere via the internet, supporting remote monitoring and analysis.",
+    "desc": "Integrates 2 to 12 modular sensor channels for environmental data collection — the channel set (level, flow, water quality, weather, or air-quality sensors) is configured per project — with real-time transmission to the Hitelecom Cloud platform. Users can access hydrological and environmental data from anywhere via the internet, supporting remote monitoring and analysis.",
     "heroImg": "product/details/277-hero.png",
     "pdf": "/downloads/hydrology-monitoring-station-datasheet.pdf",
     "crumbCat": "12-Parameter",
@@ -3980,7 +3980,7 @@ export const productContent ={
     "scenarios": [
      {
       "img": "product/details/277-scen1.jpg",
-      "label": "Smart agriculture"
+      "label": "Smart Agriculture"
      },
      {
       "img": "product/details/277-scen2.jpg",
@@ -4079,7 +4079,7 @@ export const productContent ={
       "a": "Urban, rural, plains and mountainous areas; ear mount, pole clamp and slot installation options adapt to poles, walls and rails."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "278": {
     "series": "H Series · Weather Station",
@@ -4124,7 +4124,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Monitors various meteorological parameters, including temperature, humidity, wind speed/direction, atmospheric pressure, rainfall, PM2.5/10, CO₂, SO₂, solar radiation, etc., to identify pollution trends and sources, delivering reliable data support for environmental protection and urban planning.",
+    "specsDesc": "Monitors meteorological parameters including temperature, humidity, wind speed and direction, atmospheric pressure, rainfall, PM2.5/PM10, CO₂, SO₂, and solar radiation (channels by configuration), supporting analysis of environmental trends for environmental protection and urban planning applications.",
     "specs": [
      [
       "Product Models",
@@ -4198,7 +4198,7 @@ export const productContent ={
     "scenarios": [
      {
       "img": "product/details/278-scen1.jpg",
-      "label": "Smart agriculture"
+      "label": "Smart Agriculture"
      },
      {
       "img": "product/details/278-scen2.jpg",
@@ -4289,12 +4289,12 @@ export const productContent ={
       "a": "The H600 is configured for meteorological channels (wind, rain, radiation), while the H700 is configured for hydrological channels (water level, flow-related). Both share the same modular platform."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "286": {
     "series": "H Series · Explosion-Proof Temperature and Pressure Sensor",
     "tagline": "Reliability | Industrial | Low Power",
-    "desc": "Hitelecom's explosion-proof 2-in-1 sensor combines temperature and pressure monitoring in a single device for flammable and explosive atmospheres, reducing device count and installation complexity in hazardous areas.",
+    "desc": "Hitelecom's 2-in-1 sensor combines temperature and pressure monitoring in a single device designed for atmospheres where flammable gas or dust may be present, which can reduce device count and installation complexity in hazardous areas.",
     "heroImg": "product/details/286-hero.png",
     "pdf": "/downloads/explosion-proof-temperature-pressure-sensor-datasheet.pdf",
     "crumbCat": "Hardware",
@@ -4334,7 +4334,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "By integrating communication and sensing technologies with embedded energy-saving algorithms, we ensure that temperature and pressure sensors not only have an extended lifespan but also maintain high measurement stability, thereby enhancing the reliability of the entire monitoring system.",
+    "specsDesc": "Integrated communication and sensing technologies with embedded energy-saving algorithms give the transmitter an extended service life and high measurement stability, supporting the reliability of the wider monitoring system.",
     "specs": [
      [
       "Product Models",
@@ -4367,6 +4367,10 @@ export const productContent ={
      [
       "Installation",
       "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+     ],
+     [
+      "Hazardous-Area Certification",
+      "Certificate and marking confirmed per target market and zone — request before ordering"
      ],
      [
       "Operating Temperature",
@@ -4417,6 +4421,10 @@ export const productContent ={
       "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
      },
      {
+      "name": "Hazardous-Area Certification",
+      "value": "Certificate and marking confirmed per target market and zone — request before ordering"
+     },
+     {
       "name": "Operating Temperature",
       "value": "-40°C to +125°C",
       "unitText": "degree",
@@ -4449,7 +4457,7 @@ export const productContent ={
     "related": [
      "287"
     ],
-    "summary": "The Hitelecom H Series explosion-proof 2-in-1 transmitter combines temperature and pressure monitoring in one device for flammable and explosive environments. Pressure ranges cover 0-1 MPa to 20 MPa at ±0.5% FS, temperature spans -200°C to 800°C, and data reports over 4G or NB-IoT.",
+    "summary": "The Hitelecom H Series 2-in-1 transmitter combines temperature and pressure monitoring in one device designed for environments where flammable gas or dust may be present. Pressure ranges cover 0–1 MPa to 20 MPa at ±0.5% FS, temperature spans -200°C to 800°C, and data reports over 4G or NB-IoT. The applicable explosion-proof certificate must be confirmed for the target market and zone before ordering.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -4475,7 +4483,7 @@ export const productContent ={
     "faqs": [
      {
       "q": "Why a 2-in-1 temperature and pressure transmitter?",
-      "a": "One explosion-proof device replaces two instruments, halving installation points, cabling and maintenance in hazardous areas while keeping both variables on the same reporting schedule."
+      "a": "One device combines two measurements in a single instrument, which may reduce installation points, cabling, and maintenance in hazardous areas while keeping both variables on the same reporting schedule."
      },
      {
       "q": "What are the measuring ranges?",
@@ -4483,19 +4491,19 @@ export const productContent ={
      },
      {
       "q": "Is it certified for explosive atmospheres?",
-      "a": "The device is built for flammable and explosive environments; tell Hitelecom your zone classification and gas group so the matching explosion-proof configuration is confirmed before ordering."
+      "a": "The device is designed for atmospheres where flammable gas or dust may be present. Suitability depends on the certified configuration required for the target market, zone, gas or dust group, and temperature class — request the applicable certificate from Hitelecom before specifying the product."
      },
      {
       "q": "How does it transmit data?",
       "a": "Over 4G or NB-IoT with MQTT uplink to Hitelecom Cloud or private deployment, with threshold alarms on both channels."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "287": {
     "series": "H Series · Coupling Isolator",
-    "tagline": "Reliability | Safety | Explosion-Proof",
-    "desc": "In hazardous areas, the use of wireless high-frequency signals is increasingly prevalent, such as in oil and gas extraction, chemical plants, and mining. These environments contain flammable gases, vapors, or dust that could lead to explosions. Operating wireless equipment in such areas demands purpose-built explosion-proof design — precisely what the H100 coupling isolator delivers.",
+    "tagline": "Reliability | Safety | Hazardous-Area Design",
+    "desc": "In oil and gas extraction, chemical plants, and mining, flammable gases, vapors, or dust may be present, and wireless equipment in such areas requires purpose-built design. The H100 is a high-frequency signal-coupling device for these industrial installations. Suitability for a hazardous area depends on the certified configuration required for the target market, zone, gas or dust group, and temperature class — request the applicable certificate before specifying the product.",
     "heroImg": "product/details/287-hero.png",
     "pdf": "/downloads/coupling-isolator-h100-datasheet.pdf",
     "crumbCat": "Hardware",
@@ -4515,7 +4523,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/287-f4.png",
-      "text": "Complies with International Explosion-Proof Certification Standards"
+      "text": "Designed for Hazardous-Area Signal Coupling"
      },
      {
       "icon": "product/details/287-f5.png",
@@ -4527,7 +4535,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "This product is designed as an explosion-proof wireless communication device compliant with relevant standards, supporting 2.4 GHz and 5.8 GHz frequencies, featuring low-power design, high interference resistance, and secure encryption, suitable for harsh industrial environments.",
+    "specsDesc": "The H100 is a wireless signal-coupling device intended for hazardous-area installations, supporting 2.4 GHz and 5.8 GHz frequencies with a low-power design and high interference resistance, suitable for harsh industrial environments. The applicable certificate must be confirmed for the target market and zone before ordering.",
     "specs": [
      [
       "Product Models",
@@ -4539,7 +4547,7 @@ export const productContent ={
      ],
      [
       "Hazardous-Area Use",
-      "Explosion-proof coupling design; certification set confirmed per market and zone"
+      "Hazardous-area coupling design; the applicable certificate must be confirmed for the target market and zone before ordering"
      ],
      [
       "Operating Temperature",
@@ -4566,7 +4574,7 @@ export const productContent ={
      },
      {
       "name": "Hazardous-Area Use",
-      "value": "Explosion-proof coupling design; certification set confirmed per market and zone"
+      "value": "Hazardous-area coupling design; the applicable certificate must be confirmed for the target market and zone before ordering"
      },
      {
       "name": "Operating Temperature",
@@ -4605,7 +4613,7 @@ export const productContent ={
     "related": [
      "286"
     ],
-    "summary": "The Hitelecom H100 coupling isolator is an explosion-proof signal coupler that lets wireless high-frequency sensor signals cross hazardous-area boundaries in oil and gas, chemical and mining sites. Its explosion-proof coupling design is intended for hazardous-area use, with the certification set confirmed per market and zone. It works from -40°C to +125°C and installs by ear mount, pole clamp or slot.",
+    "summary": "The Hitelecom H100 coupling isolator is a high-frequency signal coupler that lets wireless 2.4 GHz / 5.8 GHz sensor signals cross hazardous-area boundaries in oil and gas, chemical, and mining sites. Suitability for a hazardous area depends on the certified configuration required for the target market, zone, gas or dust group, and temperature class — request the applicable certificate before specifying the product. It works from -40°C to +125°C and installs by ear mount, pole clamp, or slot.",
     "sku": "H100",
     "applications": [
      {
@@ -4618,7 +4626,7 @@ export const productContent ={
      },
      {
       "name": "Mining",
-      "desc": "Explosion-proof signal path for underground wireless sensor networks."
+      "desc": "Signal coupling path for underground wireless sensor networks in hazardous areas."
      },
      {
       "name": "Tank farms and terminals",
@@ -4631,11 +4639,11 @@ export const productContent ={
     "faqs": [
      {
       "q": "What problem does the coupling isolator solve?",
-      "a": "Standard wireless links should not cross explosion-proof boundaries without certified isolation. The H100 couples 2.4 GHz / 5.8 GHz sensor signals across the boundary, so battery-powered wireless sensors can serve hazardous areas without additional conduit penetrations."
+      "a": "Standard wireless links should not cross hazardous-area boundaries without certified isolation. The H100 couples 2.4 GHz / 5.8 GHz sensor signals across the boundary, so battery-powered wireless sensors can serve hazardous areas without additional conduit penetrations — subject to the certified configuration for the target market and zone."
      },
      {
       "q": "Which standards does it comply with?",
-      "a": "The certification set is confirmed per market and zone — share your requirements and Hitelecom will confirm the applicable certificates before delivery."
+      "a": "That depends on the certified configuration for your target market, zone, gas or dust group, and temperature class. Share your requirements and Hitelecom will provide the applicable certificate details before delivery."
      },
      {
       "q": "What environments can it handle?",
@@ -4646,12 +4654,12 @@ export const productContent ={
       "a": "Ear mount, pole clamp or slot installation — the same accessory family as other H Series field devices."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "301": {
     "series": "H Series · Temperature and Humidity Sensor",
     "tagline": "Precision | Climate | Ultra-Low Power",
-    "desc": "Hitelecom's temperature and humidity sensors deliver high-precision climate monitoring with remote alerting, keeping clean rooms, cabinets, museums and production lines within safe conditions around the clock",
+    "desc": "Hitelecom's temperature and humidity sensors deliver high-precision climate monitoring with remote alerting, giving clean rooms, cabinets, museums, and production lines continuous climate records and threshold alarms around the clock",
     "heroImg": "product/details/301-hero.png",
     "pdf": "/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
      "crumbCat": "Temperature",
@@ -4691,7 +4699,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Continuously innovating with micro-power processors and algorithmic optimization for up to 10 years of stable IoT sensor operation, reducing maintenance costs",
+    "specsDesc": "Micro-power processors and algorithmic optimization give the sensor a design life of up to 10 years at a one-hour reporting interval under specified test conditions, reducing routine maintenance.",
     "specs": [
      [
       "Product Models",
@@ -4719,7 +4727,7 @@ export const productContent ={
      ],
      [
       "Battery Life",
-      "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency."
+      "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
      ],
      [
       "Installation",
@@ -4754,7 +4762,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency.",
+      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval.",
       "unitText": "year",
       "minValue": 10.0
      },
@@ -4779,7 +4787,7 @@ export const productContent ={
      },
      {
       "img": "product/details/270-scen2.jpg",
-      "label": "Smart agriculture"
+      "label": "Smart Agriculture"
      },
      {
       "img": "product/details/285-scen1.jpg",
@@ -4805,7 +4813,7 @@ export const productContent ={
      "284",
      "285"
     ],
-    "summary": "The Hitelecom H Series temperature & humidity sensor is a wireless climate monitor for clean rooms, electrical cabinets, museums and production lines. Its slotted sintered probe reads 0-100% RH and -20°C to +80°C at ±0.2°C and ±2% RH typical accuracy, with over 10 years of battery life and 4G/NB-IoT cloud reporting.",
+    "summary": "The Hitelecom H Series temperature & humidity sensor is a wireless climate monitor for clean rooms, electrical cabinets, museums and production lines. Its slotted sintered probe reads 0-100% RH and -20°C to +80°C at ±0.2°C and ±2% RH typical accuracy, with a battery designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, and 4G/NB-IoT cloud reporting.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -4818,11 +4826,11 @@ export const productContent ={
      },
      {
       "name": "Museums and archives",
-      "desc": "Protects paper, textiles and relics from damp and condensation with continuous climate logging."
+      "desc": "Provides continuous climate records that support conservation decisions for paper, textiles, and relics."
      },
      {
       "name": "Food processing and storage",
-      "desc": "Watches humidity in processing halls and warehouses to prevent mold and condensation."
+      "desc": "Tracks humidity in processing halls and warehouses, alerting staff to conditions that can lead to mold and condensation."
      },
      {
       "name": "Electrical cabinets and enclosures",
@@ -4851,14 +4859,14 @@ export const productContent ={
      },
      {
       "q": "How long does the battery last?",
-      "a": "Over 10 years at a one-hour reporting interval; no mains wiring is needed at the installation point."
+      "a": "Designed for more than 10 years at a one-hour reporting interval under specified test conditions; actual life varies with network coverage, temperature, and reporting frequency. No mains wiring is needed at the installation point."
      },
      {
       "q": "Which wireless networks are supported?",
       "a": "4G and NB-IoT with MQTT uplink to Hitelecom Cloud, a customer cloud, or private deployment. LoRa is available for multi-sensor sites with a private gateway."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "302": {
     "series": "H Series · Temperature and Humidity Data Logger",
@@ -4903,7 +4911,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Continuously innovating with micro-power processors and algorithmic optimization for up to 10 years of stable IoT sensor operation, reducing maintenance costs",
+    "specsDesc": "A micro-power design with NFC tap-to-configure and one-click USB export; the replaceable battery supports multi-year logging between battery changes.",
     "specs": [
      [
       "Product Models",
@@ -5059,7 +5067,7 @@ export const productContent ={
       "a": "No — this logger is a local-record device: data stays on the logger until you export it via USB or read it via NFC, which suits cross-border shipments and audited deliveries where a live uplink is unnecessary."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "303": {
     "series": "H Series · TVOC Sensor",
@@ -5104,7 +5112,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Continuously innovating with micro-power processors and algorithmic optimization for up to 10 years of stable IoT sensor operation, reducing maintenance costs",
+    "specsDesc": "Micro-power processors and algorithmic optimization give the sensor a design life of up to 10 years at a one-hour reporting interval under specified test conditions, reducing routine maintenance.",
     "specs": [
      [
       "Product Models",
@@ -5132,7 +5140,7 @@ export const productContent ={
      ],
      [
       "Battery Life",
-      "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency."
+      "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
      ],
      [
       "Installation",
@@ -5171,7 +5179,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency.",
+      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval.",
       "unitText": "year",
       "minValue": 10.0
      },
@@ -5217,7 +5225,7 @@ export const productContent ={
      "284",
      "283"
     ],
-    "summary": "The Hitelecom H Series TVOC sensor is a wireless monitor for total volatile organic compounds from 0 to 100,000 ppb at 1 ppb resolution. Electrochemical or PID sensing per gas, remote alarms, and a battery designed for more than 10 years at a one-hour reporting interval support continuous monitoring in paint shops, chemical storage, and laboratories.",
+    "summary": "The Hitelecom H Series TVOC sensor is a wireless monitor for total volatile organic compounds from 0 to 100,000 ppb at 1 ppb resolution. The sensing principle is matched to the target compounds (confirm at ordering), with remote alarms and a battery designed for more than 10 years at a one-hour reporting interval under specified test conditions, supporting continuous monitoring in paint shops, chemical storage, and laboratories.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -5263,10 +5271,10 @@ export const productContent ={
      },
      {
       "q": "How is it powered and connected?",
-      "a": "Internal battery with over 10 years of life at hourly reporting, uploading over 4G or NB-IoT via MQTT to Hitelecom Cloud or private platforms."
+      "a": "Internal battery designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, uploading over 4G or NB-IoT via MQTT to Hitelecom Cloud or private platforms."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "304": {
     "series": "H Series · Asset Tracking Sensor",
@@ -5311,7 +5319,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Continuously innovating with micro-power processors and algorithmic optimization for up to 10 years of stable IoT sensor operation, reducing maintenance costs",
+    "specsDesc": "A micro-power design and configurable reporting intervals support multi-year battery operation; actual life depends on positioning mode, reporting interval, and network coverage.",
     "specs": [
      [
       "Product Model",
@@ -5470,12 +5478,12 @@ export const productContent ={
       "a": "Yes. Geofences are drawn on the platform, and the tracker pushes an alert when an asset crosses a boundary."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    },
    "305": {
     "series": "H Series · Custom Gas Sensor",
     "tagline": "100+ Gases | Fixed or Ducted | OEM/ODM",
-    "desc": "Pick the gas—we build the terminal around it. Hitelecom's custom gas sensors support 100+ gases including CO, H₂S, NH₃, O₃ and CH₄, in fixed or ducted enclosures for industrial monitoring",
+    "desc": "Pick the gas — Hitelecom builds the terminal around it. Custom gas sensors can be configured for more than 100 gases including CO, H₂S, NH₃, O₃, and CH₄, in fixed or ducted enclosures for industrial monitoring. Range, accuracy, sensing principle, and battery life depend on the selected gas and configuration",
     "heroImg": "product/details/305-hero.png",
     "pdf": "/downloads/custom-gas-sensor-datasheet.pdf",
     "crumbCat": "Air Quality",
@@ -5515,7 +5523,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "Continuously innovating with micro-power processors and algorithmic optimization for up to 10 years of stable IoT sensor operation, reducing maintenance costs",
+    "specsDesc": "Custom gas terminals combine micro-power processors with sensing principles matched to the target gas. Range, accuracy, and battery life depend on the selected gas, principle, and reporting interval — confirm per configuration.",
     "specs": [
      [
       "Product Models",
@@ -5543,7 +5551,7 @@ export const productContent ={
      ],
      [
       "Battery Life",
-      "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency."
+      "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
      ],
      [
       "Installation",
@@ -5578,7 +5586,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval. Actual battery life varies with network conditions, temperature, configuration, and reporting frequency.",
+      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval.",
       "unitText": "year",
       "minValue": 10.0
      },
@@ -5673,7 +5681,7 @@ export const productContent ={
       "a": "Wirelessly over 4G or NB-IoT via MQTT to Hitelecom Cloud or a private platform, with remotely configured alarm thresholds."
      }
     ],
-    "dateModified": "2026-08-30"
+    "dateModified": "2026-09-02"
    }
   }
  },

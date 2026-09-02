@@ -66,20 +66,8 @@ const productLd = {
   countryOfOrigin: { '@type': 'Country', name: 'CN' },
   url: pageUrl,
   additionalProperty,
-  // B2B 无公开报价，但必须有 offers 节点，否则 AI 判定为「非商品」
-  offers: {
-    '@type': 'Offer',
-    url: pageUrl,
-    itemCondition: 'https://schema.org/NewCondition',
-    businessFunction: 'http://purl.org/goodrelations/v1#Sell',
-    seller: { '@id': 'https://www.hitelecom.com/#organization' },
-    areaServed: 'Worldwide',
-    priceSpecification: { '@type': 'PriceSpecification', valueAddedTaxIncluded: false },
-  },
-  audience: {
-    '@type': 'BusinessAudience',
-    audienceType: 'Infrastructure monitoring, construction, mining, utilities, rail, water conservancy, telecom, manufacturing',
-  },
+  // B2B 询价产品：无公开价格时不输出 Offer（Google Product 文档要求价格字段，空 Offer 会产生结构化数据错误）。
+  // 出现真实、当前有效的报价条件时才在此加入 offers。audience 不输出——避免把不适用行业的统一受众写入结构化数据。
   ...(d.applications?.length ? { keywords: d.applications.map((a) => a.name).join(', ') } : {}),
   isSimilarTo: d.related
     .filter((rid) => productContent.en.details[rid])
@@ -117,7 +105,7 @@ const breadcrumbLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Product', item: 'https://www.hitelecom.com/product.html' },
+    { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://www.hitelecom.com/product.html' },
     { '@type': 'ListItem', position: 3, name: d.series },
   ],
 };
