@@ -147,7 +147,7 @@
 								将您的传统设备轻松上云
 							</Div>
 							<div class="about_2_1_left_mid_4 reveal">
-								<p>上海宏太通信技术有限公司， 是领先的通信与智能感知，AI+互联设备和物联整体方案提供商。<br/>于2012年在上海成立， 始终坚持云管端架构自主研发、 自主制造、 自主营销。运用前沿的人工智能和物联技术，令物理实体与数字体实时同步，致力于为客户提供便利，可靠，高效的通信网络和物联传感产品， 助推全场景数字化转型升级。<br/>HITELECOM产品涵盖各类智能体、 数字传感器、 智能变送器、 通信接入<span style="text-wrap: wrap;">、</span>云平台服务及物联整体解决方案，广泛应用于智慧<span style="text-wrap: wrap;">城市</span>、智慧<span style="text-wrap: wrap;">农业</span>、 智慧园区、 <span style="text-wrap: wrap;">智慧校园、</span>智慧能源、 智能制造等领域。为客户，行业，社会节能增效，推动智慧物联网产业持续繁荣发展。</p>							</div>
+								<p>上海宏太通信技术有限公司， 是领先的通信与智能感知，AI+互联设备和物联整体方案提供商。<br/>于2012年在上海成立， 始终坚持云管端架构自主研发、 自主制造、 自主营销。运用前沿的人工智能和物联技术，令物理实体与数字体实时同步，致力于为客户提供便利，可靠，高效的通信网络和物联传感产品， 助推全场景数字化转型升级。<br/>Hitelecom产品涵盖各类智能体、 数字传感器、 智能变送器、 通信接入<span style="text-wrap: wrap;">、</span>云平台服务及物联整体解决方案，广泛应用于智慧<span style="text-wrap: wrap;">城市</span>、智慧<span style="text-wrap: wrap;">农业</span>、 智慧园区、 <span style="text-wrap: wrap;">智慧校园、</span>智慧能源、 智能制造等领域。为客户，行业，社会节能增效，推动智慧物联网产业持续繁荣发展。</p>							</div>
 						</Div>
 					</Div>
 				</div>
@@ -170,7 +170,7 @@
 						<Div class="about_3_2_mid_left">
 							愿景						</Div>
 						<Div class="about_3_2_mid_right">
-							宏太的AIOT致力于连接物理与数字新世界，<br>
+							宏太的AIoT致力于连接物理与数字新世界，<br>
 让地球更低碳人类生活更加美好。						</Div>
 					</div>
 				</li>
@@ -196,7 +196,7 @@
 								<li class="reveal">
 					<div class="about_3_2_mid">
 						<Div class="about_3_2_mid_left">
-							AIOT						</Div>
+							AIoT						</Div>
 						<Div class="about_3_2_mid_right">
 							<div>
 Ambition: 追求卓越 <br>
@@ -329,7 +329,7 @@ Team work: 团队协作
 							<div class="about_4_1_right_3_mid_2">
 								2019							</div>
 							<div class="about_4_1_right_3_mid_3">
-								生产基地再次扩产通过ISO14000认证
+								生产基地再次扩产通过ISO 14001认证
 							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="工程师在笔记本电脑上处理电子文档" src="/images/about/up_71443115ba17cd3e9c08c00790bdf35f.webp">
@@ -582,7 +582,7 @@ Team work: 团队协作
 						<img alt="IATF 16949 汽车行业质量管理体系认证证书" src="/images/about/up_b6d04de84606f61cbcf67b1b0d9f3435.webp">
 					</div>
 					<div class="about_6_2_2">
-						IATF16949					</div>
+						IATF 16949					</div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="05">
@@ -606,7 +606,7 @@ Team work: 团队协作
 						<img alt="ISO 45001 职业健康安全管理体系认证证书" src="/images/about/up_4b1823fc9fd0b25634779ed78ae5e503.webp">
 					</div>
 					<div class="about_6_2_2">
-						ISO45001					</div>
+						ISO 45001					</div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="08">

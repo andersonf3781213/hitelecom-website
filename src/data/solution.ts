@@ -32,50 +32,50 @@ export const solutionIndex: Record<'en' | 'zh', { bannerImg: string; bannerSub: 
             {
                   "id": "58",
                   "img": "solution/card-58.jpg",
-                  "title": "Smart Industrial",
-                  "desc": "By installing sensors and smart communication devices on industrial production machinery, real-time data collection and exchange are achieved. Analyzing and processing this data optimizes production processes, enhances efficiency, reduces downtime, and facilitates lean, data-driven production management."
+                  "title": "Industrial IoT",
+                  "desc": "Connect temperature, pressure, vibration, air-quality, and other field sensors to cloud dashboards for remote condition monitoring, alerts, and maintenance planning."
             },
             {
                   "id": "65",
                   "img": "solution/card-65.jpg",
                   "title": "Smart Agriculture",
-                  "desc": "Smart agriculture solutions integrate IoT, AI, and big data technologies for crop growth monitoring, resource optimization, and precise control operations. These solutions enhance agricultural productivity, reduce resource wastage, and promote sustainable farming practices and stable crop yields."
+                  "desc": "Monitor soil moisture, temperature, EC, NPK, weather, and irrigation conditions to support data-driven water and crop management."
             },
             {
                   "id": "64",
                   "img": "solution/card-64.png",
                   "title": "Smart Campus",
-                  "desc": "Enhance teaching and administrative efficiency, optimize resource allocation, and strengthen security systems through real-time monitoring and smart management with deployed sensors. This significantly improves educational quality and campus operational efficiency."
+                  "desc": "Monitor indoor air, temperature, humidity, energy use, and critical facilities from a centralized platform with configurable alerts."
             },
             {
                   "id": "60",
                   "img": "solution/card-60.jpg",
-                  "title": "Smart Park",
-                  "desc": "Shaping the Future of Work and Living. Integrating cutting-edge IoT and sensor technologies for intelligent management of environment, energy, and security, creating an efficient, comfortable, and safe habitat."
+                  "title": "Smart Industrial Parks",
+                  "desc": "Connect environmental, energy, security, and equipment data across multi-building sites for centralized monitoring and operations."
             },
             {
                   "id": "59",
                   "img": "solution/card-59.png",
                   "title": "Smart Energy",
-                  "desc": "Smart energy solutions leverage advanced sensing technology and intelligent data analytics for real-time monitoring and predictive maintenance, enhancing energy efficiency towards a sustainable and efficient future."
+                  "desc": "Monitor temperature, pressure, vibration, and level across energy assets to support condition-based maintenance and reduce field visits."
             },
             {
                   "id": "57",
                   "img": "solution/card-57.jpg",
                   "title": "Smart City",
-                  "desc": "Smart City solutions integrate cloud computing, big data, and IoT technologies to enhance urban operational efficiency, enable intelligent management of infrastructure and services, improve living experiences, and promote sustainable environmental development."
+                  "desc": "Monitor structural tilt, environmental conditions, utility assets, and public infrastructure through outdoor sensor terminals and cloud-based alerts."
             },
             {
                   "id": "66",
                   "img": "solution/card-66b.jpg",
-                  "title": "Smart Scenic Area",
-                  "desc": "By deploying sensors throughout the site, we enable key cultural relic posture monitoring, smoke detection alerts, people flow analysis, enhancing security surveillance, and boosting operational efficiency and site management."
+                  "title": "Tourism and Heritage Sites",
+                  "desc": "Monitor structural tilt, environmental conditions, smoke, visitor flow, and selected assets to support conservation and site operations."
             },
             {
                   "id": "67",
                   "img": "solution/card-67.jpg",
                   "title": "Smart Water",
-                  "desc": "Smart Water Solutions integrate IoT, cloud computing, and data analytics for efficient water resource management and monitoring, optimizing water level monitoring, leak detection, and water quality safety, enhancing system reliability and economic performance."
+                  "desc": "Monitor water level, pressure, flow, leakage, and environmental conditions across reservoirs, pumping stations, pipelines, and drainage networks."
             }
       ],
   },
@@ -145,39 +145,39 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/58-intro-0.jpg",
-          "h": "Background Introduction",
-          "p": "Smart Industry Solutions, based on Industrial Internet, IoT, big data, and AI, are comprehensive solutions aimed at enhancing the intelligence and production efficiency of traditional manufacturing. These solutions emerge in response to global manufacturing transformation, addressing challenges such as cost pressures, changing market demands, and inefficient resource utilization."
+          "h": "Industry Challenges",
+          "p": "Manufacturers face cost pressure, unplanned downtime, and limited visibility into equipment condition. Industrial IoT addresses this by connecting field sensors to cloud dashboards for continuous monitoring, faster response, and data-driven decisions."
         },
         {
           "img": "solution/58-intro-1.jpg",
           "h": "Solution Overview",
-          "p": "Smart Industrial Real-Time Monitoring System enables production enterprises to conduct online equipment monitoring. By installing IoT smart terminals such as temperature and humidity sensors, pressure sensors, energy consumption sensors, air quality sensors, and weather stations on the equipment, it facilitates real-time viewing of the entire enterprise's equipment operation via a monitoring center or mobile app. This allows for immediate fault detection and maintenance, enhancing production efficiency, reducing costs, improving product quality, and strengthening competitive advantage."
+          "p": "Hitelecom's industrial monitoring solution connects temperature, humidity, pressure, vibration, and air-quality sensors on production equipment to Hitelecom Cloud. Teams see equipment status in real time from a monitoring center or mobile app, receive alerts on anomalies, and plan maintenance by condition rather than calendar."
         }
       ],
       "archHeading": "Solution Architecture",
       "archImgs": [
         "solution/58-arch-0.png"
       ],
-      "featHeading": "Features/Advantages",
+      "featHeading": "Key Advantages",
       "features": [
         {
-          "h": "Ultra-low Power Consumption",
-          "p": "Our R&D team utilizes low-power microprocessors, optimizing power management circuits and energy-saving algorithms. Additionally, we employ low-energy communication protocols to minimize energy consumption during data transmission, ensuring the device consumes minimal power across its entire service life."
+          "h": "Low-Power Design",
+          "p": "Selected sensor terminals use low-power processors, optimized power management, and configurable reporting intervals to extend field battery life."
         },
         {
-          "h": "Enhanced Protection",
-          "p": "IP68-rated for superior dust and waterproofing, tested under rigorous high and low temperature cycling. Ensures long-term, stable operation in various industrial and outdoor scenarios under high humidity and temperature conditions."
+          "h": "Outdoor-Ready Options",
+          "p": "Selected models are available with IP-rated enclosures for industrial and outdoor environments. Confirm the required ingress-protection rating for each configuration."
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "Supports multiple wireless communication protocols, including 4G LTE, NB-IoT, and LoRa, ensuring efficient and reliable connectivity between devices. Suitable for a wide range of applications from long-range, low-power to high-speed data transmission."
+          "h": "Flexible Connectivity",
+          "p": "Choose 4G LTE or NB-IoT for direct cellular uplink, or LoRa/LoRaWAN for private gateway-based networks, depending on the model and site."
         },
         {
-          "h": "Supports NFC",
-          "p": "Utilizes NFC technology for rapid device activation, seamless integration, and efficient maintenance, offering a user-friendly interaction experience. Simplifies device management and ensures convenience and security through near-field communication."
+          "h": "NFC Setup",
+          "p": "Selected devices support NFC activation and local configuration for faster deployment and maintenance."
         }
       ],
-      "sysHeading": "System Functionality",
+      "sysHeading": "System Capabilities",
       "system": [
         {
           "img": "solution/58-sys-0.png",
@@ -187,32 +187,32 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/58-sys-1.png",
           "h": "Real-time Monitoring",
-          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. Leveraging advanced data analytics and machine learning algorithms, the system identifies and predicts equipment failures, enhancing efficiency and minimizing downtime."
+          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping teams plan maintenance and reduce downtime."
         },
         {
           "img": "solution/58-sys-2.png",
-          "h": "Intelligent Interconnectivity",
-          "p": "Real-time activation of controllers for coordinated actions based on sensor data variations, enabling intelligent, unmanned operations across devices and regions."
+          "h": "Rule-Based Automation",
+          "p": "Controllers act on sensor data through configured rules, enabling automated responses across devices and sites."
         },
         {
           "img": "solution/58-sys-3.png",
-          "h": "Remote Upgrade",
-          "p": "Supports one-click remote mass firmware upgrades of network modules via cloud platform, ensuring all devices run the latest version for enhanced system stability."
+          "h": "Remote Firmware Updates",
+          "p": "Supports remote batch OTA firmware updates for supported devices, keeping deployments current and reducing site visits."
         }
       ],
-      "relHeading": "Other products that you may be interested in",
+      "relHeading": "Related Products",
       "related": [
         "270",
         "274",
         "280",
         "281"
       ],
-      "scenHeading": "Application scenarios",
+      "scenHeading": "Applications",
       "scenarios": [
         {
           "img": "solution/58-scen-0.jpg",
-          "h": "Industrial 4.0",
-          "p": "Production Automation and Data-Driven Intelligent Management"
+          "h": "Industry 4.0",
+          "p": "Data-driven production management and automation support"
         },
         {
           "img": "solution/58-scen-1.jpg",
@@ -232,12 +232,12 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/58-scen-4.jpg",
           "h": "Large Machinery",
-          "p": "Enhance Equipment Maintenance Efficiency, Optimize Resource Utilization"
+          "p": "Condition monitoring improves maintenance efficiency and resource utilization"
         },
         {
           "img": "solution/58-scen-5.jpg",
-          "h": "Industrial Plant",
-          "p": "Implement intelligent management to reduce failures and enhance competitiveness"
+          "h": "Industrial Plants",
+          "p": "Centralized monitoring reduces failures and unplanned downtime"
         }
       ]
     },
@@ -247,7 +247,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/65-intro-0.jpg",
-          "h": "Background Introduction",
+          "h": "Industry Challenges",
           "p": "Smart agriculture leverages modern IT and intelligent technologies to enhance agricultural productivity and sustainability. Addressing challenges like limited land, climate change, and pest control, it integrates IoT, big data, AI, and cloud computing for precision farming, boosting crop yield and quality. By marrying agriculture with IT, smart agriculture enhances efficiency and sustainability, playing a pivotal role in future agricultural evolution."
         },
         {
@@ -260,26 +260,26 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/65-arch-0.png"
       ],
-      "featHeading": "Features/Advantages",
+      "featHeading": "Key Advantages",
       "features": [
         {
-          "h": "Supports NFC",
-          "p": "Utilizes NFC technology for rapid device activation, seamless integration, and efficient maintenance, offering a user-friendly interaction experience. Simplifies device management and ensures convenience and security through near-field communication."
+          "h": "NFC Setup",
+          "p": "Selected devices support NFC activation and local configuration for faster deployment and maintenance."
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "Supports multiple wireless communication protocols, including 4G LTE, NB-IoT, and LoRa, ensuring efficient and reliable connectivity between devices. Suitable for a wide range of applications from long-range, low-power to high-speed data transmission."
+          "h": "Flexible Connectivity",
+          "p": "Choose 4G LTE or NB-IoT for direct cellular uplink, or LoRa/LoRaWAN for private gateway-based networks, depending on the model and site."
         },
         {
-          "h": "Enhanced Protection",
-          "p": "IP68-rated for superior dust and waterproofing, tested under rigorous high and low temperature cycling. Ensures long-term, stable operation in various industrial and outdoor scenarios under high humidity and temperature conditions."
+          "h": "Outdoor-Ready Options",
+          "p": "Selected models are available with IP-rated enclosures for industrial and outdoor environments. Confirm the required ingress-protection rating for each configuration."
         },
         {
-          "h": "Ultra-low Power Consumption",
-          "p": "Our R&D team utilizes low-power microprocessors, optimizing power management circuits and energy-saving algorithms. Additionally, we employ low-energy communication protocols to minimize energy consumption during data transmission, ensuring the device consumes minimal power across its entire service life."
+          "h": "Low-Power Design",
+          "p": "Selected sensor terminals use low-power processors, optimized power management, and configurable reporting intervals to extend field battery life."
         }
       ],
-      "sysHeading": "System Functionality",
+      "sysHeading": "System Capabilities",
       "system": [
         {
           "img": "solution/65-sys-0.png",
@@ -288,28 +288,28 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/65-sys-1.png",
-          "h": "Rapid Positioning",
-          "p": "Utilizing advanced diagnostic and positioning technology, it swiftly locates faulty equipment, significantly reducing repair times and operational costs. Enables equipment management, status monitoring, fault localization, and integration with electronic maps or digital twins."
+          "h": "Threshold Alerts",
+          "p": "Alerts trigger when configured thresholds are exceeded — for example soil moisture or temperature — so teams can respond before crops are stressed."
         },
         {
           "img": "solution/65-sys-2.png",
           "h": "Real-time Monitoring",
-          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. Leveraging advanced data analytics and machine learning algorithms, the system identifies and predicts equipment failures, enhancing efficiency and minimizing downtime."
+          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping teams plan maintenance and reduce downtime."
         },
         {
           "img": "solution/65-sys-3.png",
-          "h": "Remote Upgrade",
-          "p": "Supports one-click remote mass firmware upgrades of network modules via cloud platform, ensuring all devices run the latest version for enhanced system stability."
+          "h": "Remote Firmware Updates",
+          "p": "Supports remote batch OTA firmware updates for supported devices, keeping deployments current and reducing site visits."
         }
       ],
-      "relHeading": "Other products that you may be interested in",
+      "relHeading": "Related Products",
       "related": [
         "275",
         "276",
         "280",
         "281"
       ],
-      "scenHeading": "Application scenarios",
+      "scenHeading": "Applications",
       "scenarios": [
         {
           "img": "solution/65-scen-0.jpg",
@@ -323,8 +323,8 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/65-scen-2.jpg",
-          "h": "Digital Farm",
-          "p": "IoT Technology Integrates Data Analysis for Precision Management in Agricultural Production"
+          "h": "Connected Farm",
+          "p": "Connected sensors and data analysis support precision irrigation and crop management"
         },
         {
           "img": "solution/65-scen-3.jpg",
@@ -344,7 +344,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/64-intro-0.png",
-          "h": "Background Introduction",
+          "h": "Industry Challenges",
           "p": "Smart Campus refers to leveraging modern IT, especially the Internet, big data, AI, and IoT technologies, to interconnect various campus facilities (e.g., classrooms, labs, libraries) for real-time data transmission, enhancing management efficiency. With continuous advancements in IT and evolving educational philosophies, smart education is set to expand further, injecting new vitality into innovative educational development."
         },
         {
@@ -357,41 +357,41 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/64-arch-0.png"
       ],
-      "featHeading": "Features/Advantages",
+      "featHeading": "Key Advantages",
       "features": [
         {
-          "h": "4G/NB/LoRa",
-          "p": "Supports multiple wireless communication protocols, including 4G LTE, NB-IoT, and LoRa, ensuring efficient and reliable connectivity between devices. Suitable for a wide range of applications from long-range, low-power to high-speed data transmission."
+          "h": "Flexible Connectivity",
+          "p": "Choose 4G LTE or NB-IoT for direct cellular uplink, or LoRa/LoRaWAN for private gateway-based networks, depending on the model and site."
         },
         {
-          "h": "Supports NFC",
-          "p": "Utilizes NFC technology for rapid device activation, seamless integration, and efficient maintenance, offering a user-friendly interaction experience. Simplifies device management and ensures convenience and security through near-field communication."
+          "h": "NFC Setup",
+          "p": "Selected devices support NFC activation and local configuration for faster deployment and maintenance."
         },
         {
-          "h": "Enhanced Protection",
-          "p": "IP68-rated for superior dust and waterproofing, tested under rigorous high and low temperature cycling. Ensures long-term, stable operation in various industrial and outdoor scenarios under high humidity and temperature conditions."
+          "h": "Outdoor-Ready Options",
+          "p": "Selected models are available with IP-rated enclosures for industrial and outdoor environments. Confirm the required ingress-protection rating for each configuration."
         },
         {
-          "h": "Ultra-low Power Consumption",
-          "p": "Our R&D team utilizes low-power microprocessors, optimizing power management circuits and energy-saving algorithms. Additionally, we employ low-energy communication protocols to minimize energy consumption during data transmission, ensuring the device consumes minimal power across its entire service life."
+          "h": "Low-Power Design",
+          "p": "Selected sensor terminals use low-power processors, optimized power management, and configurable reporting intervals to extend field battery life."
         }
       ],
-      "sysHeading": "System Functionality",
+      "sysHeading": "System Capabilities",
       "system": [
         {
           "img": "solution/64-sys-0.png",
-          "h": "Dynamic Instruction",
-          "p": "System auto-adjusts cooling equipment in response to ambient temperature changes, dynamically generating commands for diverse device properties to meet real-time computation and task execution requirements."
+          "h": "Automated Control Rules",
+          "p": "Rules adjust connected equipment — for example cooling — when sensor readings cross configured thresholds, without manual intervention."
         },
         {
           "img": "solution/64-sys-1.png",
-          "h": "Intelligent Interconnectivity",
-          "p": "Real-time activation of controllers for coordinated actions based on sensor data variations, enabling intelligent, unmanned operations across devices and regions."
+          "h": "Rule-Based Automation",
+          "p": "Controllers act on sensor data through configured rules, enabling automated responses across devices and sites."
         },
         {
           "img": "solution/64-sys-2.png",
           "h": "Real-time Monitoring",
-          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. Leveraging advanced data analytics and machine learning algorithms, the system identifies and predicts equipment failures, enhancing efficiency and minimizing downtime."
+          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping teams plan maintenance and reduce downtime."
         },
         {
           "img": "solution/64-sys-3.png",
@@ -399,7 +399,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
           "p": "Enables bulk configuration of alerts, centralized management, and automated alarm resolution. Supports multi-condition trigger alerts with timely notifications to relevant personnel, ensuring comprehensive monitoring of equipment operational status."
         }
       ],
-      "relHeading": "Other products that you may be interested in",
+      "relHeading": "Related Products",
       "related": [
         "284",
         "283",
@@ -407,22 +407,22 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         "270",
         "285"
       ],
-      "scenHeading": "Application scenarios",
+      "scenHeading": "Applications",
       "scenarios": [
         {
           "img": "solution/64-scen-0.jpg",
-          "h": "School Leadership Office",
-          "p": "Utilizing IoT technology to achieve campus energy conservation, emission reduction, and environmental monitoring"
+          "h": "Campus Operations",
+          "p": "Monitor energy use, indoor air quality, and facility status across campus buildings"
         },
         {
           "img": "solution/64-scen-1.jpg",
-          "h": "safe campus",
-          "p": "Real time monitoring, strengthening campus safety and emergency management"
+          "h": "Campus Safety",
+          "p": "Real-time monitoring strengthens campus safety and emergency response"
         },
         {
           "img": "solution/64-scen-2.jpg",
-          "h": "Automotive Mechanic Training Room",
-          "p": "Realize intelligent monitoring and management of experimental facilities"
+          "h": "Training and Lab Rooms",
+          "p": "Monitor lab and workshop environmental conditions and equipment with configurable alerts"
         }
       ]
     },
@@ -432,39 +432,39 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/60-intro-0.jpg",
-          "h": "Background Introduction",
+          "h": "Industry Challenges",
           "p": "A smart park utilizes advanced information and internet technologies for intelligent management and optimization of resources, facilities, and services, enhancing operational efficiency, service quality, and sustainability. By integrating IoT, big data, cloud computing, and AI, it forms a smart, digital ecosystem. Beyond technology application, smart park construction explores and practices future urban living, enabling more efficient resource allocation, eco-friendly lifestyles, and intelligent service experiences."
         },
         {
           "img": "solution/60-intro-1.jpg",
           "h": "Solution Overview",
-          "p": "The Smart park System is an integrated information management platform designed to enhance operational efficiency, service quality, and sustainability of campuses through cutting-edge technologies. It integrates IoT, cloud computing, big data, and AI into various aspects of campus management for intelligent, digital management and services. As technology advances and its application deepens, the system will become more intelligent, interconnected, and focused on ecological balance and sustainable development. The development of Smart Campus Systems not only improves management efficiency but also creates better living and working environments for businesses and residents, offering broad application prospects and social value."
+          "p": "The Smart Industrial Park System is an integrated information management platform designed to enhance operational efficiency, service quality, and sustainability of campuses through cutting-edge technologies. It integrates IoT, cloud computing, big data, and AI into various aspects of campus management for intelligent, digital management and services. As technology advances and its application deepens, the system will become more intelligent, interconnected, and focused on ecological balance and sustainable development. The development of smart industrial park systems not only improves management efficiency but also creates better living and working environments for businesses and residents, offering broad application prospects and social value."
         }
       ],
       "archHeading": "Solution Architecture",
       "archImgs": [
         "solution/60-arch-0.png"
       ],
-      "featHeading": "Features/Advantages",
+      "featHeading": "Key Advantages",
       "features": [
         {
-          "h": "Ultra-low Power Consumption",
-          "p": "Our R&D team utilizes low-power microprocessors, optimizing power management circuits and energy-saving algorithms. Additionally, we employ low-energy communication protocols to minimize energy consumption during data transmission, ensuring the device consumes minimal power across its entire service life."
+          "h": "Low-Power Design",
+          "p": "Selected sensor terminals use low-power processors, optimized power management, and configurable reporting intervals to extend field battery life."
         },
         {
-          "h": "Supports NFC",
-          "p": "Utilizes NFC technology for rapid device activation, seamless integration, and efficient maintenance, offering a user-friendly interaction experience. Simplifies device management and ensures convenience and security through near-field communication."
+          "h": "NFC Setup",
+          "p": "Selected devices support NFC activation and local configuration for faster deployment and maintenance."
         },
         {
-          "h": "Enhanced Protection",
-          "p": "IP68-rated for superior dust and waterproofing, tested under rigorous high and low temperature cycling. Ensures long-term, stable operation in various industrial and outdoor scenarios under high humidity and temperature conditions."
+          "h": "Outdoor-Ready Options",
+          "p": "Selected models are available with IP-rated enclosures for industrial and outdoor environments. Confirm the required ingress-protection rating for each configuration."
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "Supports multiple wireless communication protocols, including 4G LTE, NB-IoT, and LoRa, ensuring efficient and reliable connectivity between devices. Suitable for a wide range of applications from long-range, low-power to high-speed data transmission."
+          "h": "Flexible Connectivity",
+          "p": "Choose 4G LTE or NB-IoT for direct cellular uplink, or LoRa/LoRaWAN for private gateway-based networks, depending on the model and site."
         }
       ],
-      "sysHeading": "System Functionality",
+      "sysHeading": "System Capabilities",
       "system": [
         {
           "img": "solution/60-sys-0.png",
@@ -473,28 +473,28 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/60-sys-1.png",
-          "h": "Rapid Positioning",
-          "p": "Utilizing advanced diagnostic and positioning technology, it swiftly locates faulty equipment, significantly reducing repair times and operational costs. Enables equipment management, status monitoring, fault localization, and integration with electronic maps or digital twins."
+          "h": "Fault Localization",
+          "p": "Diagnostics help locate faulty devices quickly, reducing repair time; supports device status monitoring and map-based views."
         },
         {
           "img": "solution/60-sys-2.png",
-          "h": "Intelligent Interconnectivity",
-          "p": "Real-time activation of controllers for coordinated actions based on sensor data variations, enabling intelligent, unmanned operations across devices and regions."
+          "h": "Rule-Based Automation",
+          "p": "Controllers act on sensor data through configured rules, enabling automated responses across devices and sites."
         },
         {
           "img": "solution/60-sys-3.png",
-          "h": "Remote Upgrade",
-          "p": "Supports one-click remote mass firmware upgrades of network modules via cloud platform, ensuring all devices run the latest version for enhanced system stability."
+          "h": "Remote Firmware Updates",
+          "p": "Supports remote batch OTA firmware updates for supported devices, keeping deployments current and reducing site visits."
         }
       ],
-      "relHeading": "Other products that you may be interested in",
+      "relHeading": "Related Products",
       "related": [
         "280",
         "281",
         "291",
         "290"
       ],
-      "scenHeading": "Application scenarios",
+      "scenHeading": "Applications",
       "scenarios": [
         {
           "img": "solution/60-scen-0.jpg",
@@ -508,8 +508,8 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/60-scen-2.jpg",
-          "h": "Office Building",
-          "p": "Modern office environment for intelligent management and operations"
+          "h": "Office Buildings",
+          "p": "Intelligent management and operations for modern office environments"
         }
       ]
     },
@@ -519,7 +519,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/59-intro-0.png",
-          "h": "Background Introduction",
+          "h": "Industry Challenges",
           "p": "With the rapid development of the global economy and increasing population, the demand for energy continues to rise. Traditional energy management models struggle to meet this growing demand. Smart energy, enhanced by IoT technology, improves the efficiency of energy management and utilization. The decreasing cost of IoT devices, along with advancements in sensors, communication technologies, and data processing capabilities, make IoT applications in smart energy more feasible and cost-effective. The development of smart energy not only helps increase energy efficiency and reduce costs but also supports sustainable development goals, driving society towards a low-carbon, green future."
         },
         {
@@ -532,26 +532,26 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/59-arch-0.png"
       ],
-      "featHeading": "Features/Advantages",
+      "featHeading": "Key Advantages",
       "features": [
         {
-          "h": "Supports NFC",
-          "p": "Utilizes NFC technology for rapid device activation, seamless integration, and efficient maintenance, offering a user-friendly interaction experience. Simplifies device management and ensures convenience and security through near-field communication."
+          "h": "NFC Setup",
+          "p": "Selected devices support NFC activation and local configuration for faster deployment and maintenance."
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "Supports multiple wireless communication protocols, including 4G LTE, NB-IoT, and LoRa, ensuring efficient and reliable connectivity between devices. Suitable for a wide range of applications from long-range, low-power to high-speed data transmission."
+          "h": "Flexible Connectivity",
+          "p": "Choose 4G LTE or NB-IoT for direct cellular uplink, or LoRa/LoRaWAN for private gateway-based networks, depending on the model and site."
         },
         {
-          "h": "Enhanced Protection",
-          "p": "IP68-rated for superior dust and waterproofing, tested under rigorous high and low temperature cycling. Ensures long-term, stable operation in various industrial and outdoor scenarios under high humidity and temperature conditions."
+          "h": "Outdoor-Ready Options",
+          "p": "Selected models are available with IP-rated enclosures for industrial and outdoor environments. Confirm the required ingress-protection rating for each configuration."
         },
         {
-          "h": "Ultra-low Power Consumption",
-          "p": "Our R&D team utilizes low-power microprocessors, optimizing power management circuits and energy-saving algorithms. Additionally, we employ low-energy communication protocols to minimize energy consumption during data transmission, ensuring the device consumes minimal power across its entire service life."
+          "h": "Low-Power Design",
+          "p": "Selected sensor terminals use low-power processors, optimized power management, and configurable reporting intervals to extend field battery life."
         }
       ],
-      "sysHeading": "System Functionality",
+      "sysHeading": "System Capabilities",
       "system": [
         {
           "img": "solution/59-sys-0.png",
@@ -560,21 +560,21 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/59-sys-1.png",
-          "h": "Dynamic Instruction",
-          "p": "System auto-adjusts cooling equipment in response to ambient temperature changes, dynamically generating commands for diverse device properties to meet real-time computation and task execution requirements."
+          "h": "Automated Control Rules",
+          "p": "Rules adjust connected equipment — for example cooling — when sensor readings cross configured thresholds, without manual intervention."
         },
         {
           "img": "solution/59-sys-2.png",
-          "h": "Intelligent Interconnectivity",
-          "p": "Real-time activation of controllers for coordinated actions based on sensor data variations, enabling intelligent, unmanned operations across devices and regions."
+          "h": "Rule-Based Automation",
+          "p": "Controllers act on sensor data through configured rules, enabling automated responses across devices and sites."
         },
         {
           "img": "solution/59-sys-3.png",
-          "h": "Remote Upgrade",
-          "p": "Supports one-click remote mass firmware upgrades of network modules via cloud platform, ensuring all devices run the latest version for enhanced system stability."
+          "h": "Remote Firmware Updates",
+          "p": "Supports remote batch OTA firmware updates for supported devices, keeping deployments current and reducing site visits."
         }
       ],
-      "relHeading": "Other products that you may be interested in",
+      "relHeading": "Related Products",
       "related": [
         "280",
         "281",
@@ -582,22 +582,22 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         "290",
         "282"
       ],
-      "scenHeading": "Application scenarios",
+      "scenHeading": "Applications",
       "scenarios": [
         {
           "img": "solution/59-scen-0.jpg",
-          "h": "Wind Energy Storage",
-          "p": "Enhance Efficiency, Reduce Costs, Achieve Predictive Maintenance"
+          "h": "Wind Power and Energy Storage",
+          "p": "Condition monitoring for turbines and storage systems supports maintenance planning"
         },
         {
           "img": "solution/59-scen-1.jpg",
-          "h": "New Energy Technology",
-          "p": "Real-time monitoring, precise control, and enhanced automation."
+          "h": "New Energy Installations",
+          "p": "Real-time monitoring and control for renewable energy installations"
         },
         {
           "img": "solution/59-scen-2.jpg",
-          "h": "power plant",
-          "p": "Improve mining efficiency and enhance safety supervision"
+          "h": "Power Plants",
+          "p": "Monitor temperature, pressure, vibration, and equipment condition to support maintenance planning."
         }
       ]
     },
@@ -607,7 +607,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/57-intro-0.jpg",
-          "h": "Background Introduction",
+          "h": "Industry Challenges",
           "p": "The global economic growth and urbanization have led to challenges such as traffic congestion, environmental pollution, and resource scarcity. Smart cities, supported by advancements in IoT, big data, cloud computing, and AI, aim to address these challenges by enhancing sustainable urban development. These technologies enable real-time data collection and analysis, facilitating more scientific and efficient decision-making. Smart cities improve urban management and quality of life, promoting sustainable development."
         },
         {
@@ -620,26 +620,26 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/57-arch-0.png"
       ],
-      "featHeading": "Features/Advantages",
+      "featHeading": "Key Advantages",
       "features": [
         {
-          "h": "Enhanced Protection",
-          "p": "IP68-rated for superior dust and waterproofing, tested under rigorous high and low temperature cycling. Ensures long-term, stable operation in various industrial and outdoor scenarios under high humidity and temperature conditions."
+          "h": "Outdoor-Ready Options",
+          "p": "Selected models are available with IP-rated enclosures for industrial and outdoor environments. Confirm the required ingress-protection rating for each configuration."
         },
         {
-          "h": "Ultra-low Power Consumption",
-          "p": "Our R&D team utilizes low-power microprocessors, optimizing power management circuits and energy-saving algorithms. Additionally, we employ low-energy communication protocols to minimize energy consumption during data transmission, ensuring the device consumes minimal power across its entire service life."
+          "h": "Low-Power Design",
+          "p": "Selected sensor terminals use low-power processors, optimized power management, and configurable reporting intervals to extend field battery life."
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "Supports multiple wireless communication protocols, including 4G LTE, NB-IoT, and LoRa, ensuring efficient and reliable connectivity between devices. Suitable for a wide range of applications from long-range, low-power to high-speed data transmission."
+          "h": "Flexible Connectivity",
+          "p": "Choose 4G LTE or NB-IoT for direct cellular uplink, or LoRa/LoRaWAN for private gateway-based networks, depending on the model and site."
         },
         {
-          "h": "Supports NFC",
-          "p": "Utilizes NFC technology for rapid device activation, seamless integration, and efficient maintenance, offering a user-friendly interaction experience. Simplifies device management and ensures convenience and security through near-field communication."
+          "h": "NFC Setup",
+          "p": "Selected devices support NFC activation and local configuration for faster deployment and maintenance."
         }
       ],
-      "sysHeading": "System Functionality",
+      "sysHeading": "System Capabilities",
       "system": [
         {
           "img": "solution/57-sys-0.png",
@@ -649,20 +649,20 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/57-sys-1.png",
           "h": "Real-time Monitoring",
-          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. Leveraging advanced data analytics and machine learning algorithms, the system identifies and predicts equipment failures, enhancing efficiency and minimizing downtime."
+          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping teams plan maintenance and reduce downtime."
         },
         {
           "img": "solution/57-sys-2.png",
-          "h": "Intelligent Interconnectivity",
-          "p": "Real-time activation of controllers for coordinated actions based on sensor data variations, enabling intelligent, unmanned operations across devices and regions."
+          "h": "Rule-Based Automation",
+          "p": "Controllers act on sensor data through configured rules, enabling automated responses across devices and sites."
         },
         {
           "img": "solution/57-sys-3.png",
-          "h": "Remote Upgrade",
-          "p": "Supports one-click remote mass firmware upgrades of network modules via cloud platform, ensuring all devices run the latest version for enhanced system stability."
+          "h": "Remote Firmware Updates",
+          "p": "Supports remote batch OTA firmware updates for supported devices, keeping deployments current and reducing site visits."
         }
       ],
-      "relHeading": "Other products that you may be interested in",
+      "relHeading": "Related Products",
       "related": [
         "286",
         "287",
@@ -673,32 +673,32 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         "283",
         "284"
       ],
-      "scenHeading": "Application scenarios",
+      "scenHeading": "Applications",
       "scenarios": [
         {
           "img": "solution/57-scen-0.jpg",
-          "h": "Intelligent Vehicle Networking",
-          "p": "Enhance Efficiency, Reduce Costs, Achieve Predictive Maintenance"
+          "h": "Connected Vehicle Infrastructure",
+          "p": "Monitor roadside and depot infrastructure conditions with outdoor sensor terminals"
         },
         {
           "img": "solution/57-scen-1.jpg",
           "h": "Logistics and Supply Chain",
-          "p": "Real-time monitoring, precise control, enhancing automation levels"
+          "p": "Track assets and monitor warehouse conditions across sites"
         },
         {
           "img": "solution/57-scen-2.jpg",
           "h": "Urban Pipelines",
-          "p": "Enhance Mining Efficiency and Strengthen Safety Supervision"
+          "p": "Monitor pressure, leakage, level, and operating conditions."
         },
         {
           "img": "solution/57-scen-3.jpg",
-          "h": "Hydropower Station",
-          "p": "Real-time Emission Monitoring to Reduce Environmental Pollution"
+          "h": "Hydropower Facilities",
+          "p": "Monitor water level and equipment conditions."
         },
         {
           "img": "solution/57-scen-4.jpg",
-          "h": "Residential Community",
-          "p": "Implement intelligent management to reduce failures and enhance competitiveness"
+          "h": "Residential Communities",
+          "p": "Monitor environmental conditions and utility assets in residential areas"
         }
       ]
     },
@@ -708,7 +708,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/66-intro-0.jpg",
-          "h": "Background Introduction",
+          "h": "Industry Challenges",
           "p": "In recent years, the global tourism industry has flourished, making travel an indispensable part of many people's lives. According to the World Tourism Organization (UNWTO), the continuous increase in international tourists has spurred the development and construction of various tourist attractions. This rapid growth demands higher standards for the management and services of these attractions. Smart tourism destinations utilize modern information technology, the Internet of Things (IoT), big data, and artificial intelligence to achieve comprehensive digital and intelligent management and services. Emerging in response to the swift expansion of the tourism industry and the diversification of tourist demands, smart destinations aim to enhance visitor experiences, improve management efficiency, and promote sustainable development. By applying modern information technology, smart destinations elevate the level of intelligence in tourism management, better meeting tourists' needs, optimizing resource allocation, and fostering the sustainable growth of the tourism sector."
         },
         {
@@ -721,36 +721,36 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/66-arch-0.png"
       ],
-      "featHeading": "Features/Advantages",
+      "featHeading": "Key Advantages",
       "features": [
         {
-          "h": "Ultra-low Power Consumption",
-          "p": "Our R&D team utilizes low-power microprocessors, optimizing power management circuits and energy-saving algorithms. Additionally, we employ low-energy communication protocols to minimize energy consumption during data transmission, ensuring the device consumes minimal power across its entire service life."
+          "h": "Low-Power Design",
+          "p": "Selected sensor terminals use low-power processors, optimized power management, and configurable reporting intervals to extend field battery life."
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "Supports multiple wireless communication protocols, including 4G LTE, NB-IoT, and LoRa, ensuring efficient and reliable connectivity between devices. Suitable for a wide range of applications from long-range, low-power to high-speed data transmission."
+          "h": "Flexible Connectivity",
+          "p": "Choose 4G LTE or NB-IoT for direct cellular uplink, or LoRa/LoRaWAN for private gateway-based networks, depending on the model and site."
         },
         {
-          "h": "Supports NFC",
-          "p": "Utilizes NFC technology for rapid device activation, seamless integration, and efficient maintenance, offering a user-friendly interaction experience. Simplifies device management and ensures convenience and security through near-field communication."
+          "h": "NFC Setup",
+          "p": "Selected devices support NFC activation and local configuration for faster deployment and maintenance."
         },
         {
-          "h": "Enhanced Protection",
-          "p": "IP68-rated for superior dust and waterproofing, tested under rigorous high and low temperature cycling. Ensures long-term, stable operation in various industrial and outdoor scenarios under high humidity and temperature conditions."
+          "h": "Outdoor-Ready Options",
+          "p": "Selected models are available with IP-rated enclosures for industrial and outdoor environments. Confirm the required ingress-protection rating for each configuration."
         }
       ],
-      "sysHeading": "System Functionality",
+      "sysHeading": "System Capabilities",
       "system": [
         {
           "img": "solution/66-sys-0.png",
-          "h": "Rapid Positioning",
-          "p": "Utilizing advanced diagnostic and positioning technology, it swiftly locates faulty equipment, significantly reducing repair times and operational costs. Enables equipment management, status monitoring, fault localization, and integration with electronic maps or digital twins."
+          "h": "Fault Localization",
+          "p": "Diagnostics help locate faulty devices quickly, reducing repair time; supports device status monitoring and map-based views."
         },
         {
           "img": "solution/66-sys-1.png",
-          "h": "Intelligent Interconnectivity",
-          "p": "Real-time activation of controllers for coordinated actions based on sensor data variations, enabling intelligent, unmanned operations across devices and regions."
+          "h": "Rule-Based Automation",
+          "p": "Controllers act on sensor data through configured rules, enabling automated responses across devices and sites."
         },
         {
           "img": "solution/66-sys-2.png",
@@ -759,11 +759,11 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/66-sys-3.png",
-          "h": "Remote Upgrade",
-          "p": "Supports one-click remote mass firmware upgrades of network modules via cloud platform, ensuring all devices run the latest version for enhanced system stability."
+          "h": "Remote Firmware Updates",
+          "p": "Supports remote batch OTA firmware updates for supported devices, keeping deployments current and reducing site visits."
         }
       ],
-      "relHeading": "Other products that you may be interested in",
+      "relHeading": "Related Products",
       "related": [
         "283",
         "282",
@@ -771,27 +771,27 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         "291",
         "281"
       ],
-      "scenHeading": "Application scenarios",
+      "scenHeading": "Applications",
       "scenarios": [
         {
           "img": "solution/66-scen-0.jpg",
-          "h": "Forbidden City",
-          "p": "Enhance efficiency, reduce costs, and enable predictive maintenance"
+          "h": "Historic Buildings",
+          "p": "Monitor temperature, humidity, and structural tilt to support conservation."
         },
         {
           "img": "solution/66-scen-1.jpg",
-          "h": "Confucius Temple",
-          "p": "Real-time Monitoring, Precise Control, Enhanced Automation"
+          "h": "Museums and Collections",
+          "p": "Track temperature, humidity, and smoke to protect exhibits and collections."
         },
         {
           "img": "solution/66-scen-2.jpg",
-          "h": "Terracotta Army",
-          "p": "Enhance Mining Efficiency, Strengthen Safety Supervision"
+          "h": "Archaeological Sites",
+          "p": "Monitor environmental conditions and structural movement at exposed sites."
         },
         {
           "img": "solution/66-scen-3.jpg",
-          "h": "Potala Palace",
-          "p": "Real-time Emission Monitoring to Reduce Environmental Pollution"
+          "h": "Visitor Areas",
+          "p": "Monitor visitor flow and environmental conditions to support site operations."
         }
       ]
     },
@@ -801,39 +801,39 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/67-intro-0.jpg",
-          "h": "Background Introduction",
+          "h": "Industry Challenges",
           "p": "Global water scarcity, intensified by population growth, urbanization, climate change, pollution, and overuse, demands efficient management. Traditional methods, limited by delayed data and inadequate decision-making support, falter in efficiency and emergency responsiveness, such as leak or pollution detection. Smart water management, pivotal in smart city strategies, employs advanced technology and analytics for effective resource stewardship and monitoring. Addressing the challenges of traditional systems, including safety and supply risks, smart solutions facilitate real-time monitoring and analysis, improving risk management and ensuring water service safety and reliability."
         },
         {
           "img": "solution/67-intro-1.jpg",
           "h": "Solution Overview",
-          "p": "Smart water management and water conservancy system, leveraging IT and intelligent technologies like IoT, big data, cloud computing, and AI, are crucial for efficient water resource management in urban and regional areas. These systems aim to optimize water usage, ensure quality, minimize costs, and enhance user satisfaction by offering comprehensive monitoring and management solutions. They cover all aspects of water resource utilization, from development to protection, including reservoirs, rivers, and irrigation systems, to secure water supply, support agriculture and industry, and mitigate flood risks. With the integration of advanced technologies, these systems are set to play a pivotal role in sustainable water management, improving efficiency and safety while addressing future challenges."
+          "p": "Smart water management systems, leveraging IT and intelligent technologies like IoT, big data, cloud computing, and AI, are crucial for efficient water resource management in urban and regional areas. These systems aim to optimize water usage, ensure quality, minimize costs, and enhance user satisfaction by offering comprehensive monitoring and management solutions. They cover all aspects of water resource utilization, from development to protection, including reservoirs, rivers, and irrigation systems, to secure water supply, support agriculture and industry, and mitigate flood risks. With the integration of advanced technologies, these systems are set to play a pivotal role in sustainable water management, improving efficiency and safety while addressing future challenges."
         }
       ],
       "archHeading": "Solution Architecture",
       "archImgs": [
         "solution/67-arch-0.png"
       ],
-      "featHeading": "Features/Advantages",
+      "featHeading": "Key Advantages",
       "features": [
         {
-          "h": "Ultra-low Power Consumption",
-          "p": "Our R&D team utilizes low-power microprocessors, optimizing power management circuits and energy-saving algorithms. Additionally, we employ low-energy communication protocols to minimize energy consumption during data transmission, ensuring the device consumes minimal power across its entire service life."
+          "h": "Low-Power Design",
+          "p": "Selected sensor terminals use low-power processors, optimized power management, and configurable reporting intervals to extend field battery life."
         },
         {
-          "h": "Enhanced Protection",
-          "p": "IP68-rated for superior dust and waterproofing, tested under rigorous high and low temperature cycling. Ensures long-term, stable operation in various industrial and outdoor scenarios under high humidity and temperature conditions."
+          "h": "Outdoor-Ready Options",
+          "p": "Selected models are available with IP-rated enclosures for industrial and outdoor environments. Confirm the required ingress-protection rating for each configuration."
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "Supports multiple wireless communication protocols, including 4G LTE, NB-IoT, and LoRa, ensuring efficient and reliable connectivity between devices. Suitable for a wide range of applications from long-range, low-power to high-speed data transmission."
+          "h": "Flexible Connectivity",
+          "p": "Choose 4G LTE or NB-IoT for direct cellular uplink, or LoRa/LoRaWAN for private gateway-based networks, depending on the model and site."
         },
         {
-          "h": "支持NFC",
-          "p": "Utilizes NFC technology for rapid device activation, seamless integration, and efficient maintenance, offering a user-friendly interaction experience. Simplifies device management and ensures convenience and security through near-field communication."
+          "h": "NFC Setup",
+          "p": "Selected devices support NFC activation and local configuration for faster deployment and maintenance."
         }
       ],
-      "sysHeading": "System Functionality",
+      "sysHeading": "System Capabilities",
       "system": [
         {
           "img": "solution/67-sys-0.png",
@@ -843,12 +843,12 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/67-sys-1.png",
           "h": "Real-time Monitoring",
-          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. Leveraging advanced data analytics and machine learning algorithms, the system identifies and predicts equipment failures, enhancing efficiency and minimizing downtime."
+          "p": "Hitelecom collects data via sensors and transmits it to the cloud platform for analysis. The platform analyzes trends and flags abnormal readings, helping teams plan maintenance and reduce downtime."
         },
         {
           "img": "solution/67-sys-2.png",
-          "h": "Intelligent Interconnectivity",
-          "p": "Real-time activation of controllers for coordinated actions based on sensor data variations, enabling intelligent, unmanned operations across devices and regions."
+          "h": "Rule-Based Automation",
+          "p": "Controllers act on sensor data through configured rules, enabling automated responses across devices and sites."
         },
         {
           "img": "solution/67-sys-3.png",
@@ -856,7 +856,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
           "p": "Enables bulk configuration of alerts, centralized management, and automated alarm resolution. Supports multi-condition trigger alerts with timely notifications to relevant personnel, ensuring comprehensive monitoring of equipment operational status."
         }
       ],
-      "relHeading": "Other products that you may be interested in",
+      "relHeading": "Related Products",
       "related": [
         "270",
         "274",
@@ -864,22 +864,22 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         "281",
         "291"
       ],
-      "scenHeading": "Application scenarios",
+      "scenHeading": "Applications",
       "scenarios": [
         {
           "img": "solution/67-scen-0.jpg",
-          "h": "Hydropower Dam",
-          "p": "Enhance Mining Efficiency and Strengthen Safety Supervision"
+          "h": "Hydropower Dams",
+          "p": "Monitor water level, displacement and tilt, and environmental conditions at dams."
         },
         {
           "img": "solution/67-scen-1.jpg",
-          "h": "Industrial Water Plant",
-          "p": "Enhance Efficiency, Reduce Costs, Enable Predictive Maintenance"
+          "h": "Industrial Water Plants",
+          "p": "Monitor process conditions and equipment status to support maintenance planning."
         },
         {
           "img": "solution/67-scen-2.jpg",
           "h": "Aquaculture",
-          "p": "Real-time Monitoring, Precise Control, Enhanced Automation"
+          "p": "Monitor water and environmental conditions for aquaculture operations."
         }
       ]
     }
@@ -891,7 +891,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/58-intro-0.jpg",
-          "h": "背景介绍",
+          "h": "行业挑战",
           "p": "智慧工业方案是基于工业互联网、物联网、大数据、人工智能等先进技术，旨在提升传统制造业的智能化水平和生产效率的一种综合解决方案。随着全球制造业的转型升级，企业面临着成本压力、市场需求变化、资源利用效率低下等挑战，智慧工业方案应运而生。"
         },
         {
@@ -904,26 +904,26 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/58-arch-0.png"
       ],
-      "featHeading": "方案特点",
+      "featHeading": "核心优势",
       "features": [
         {
-          "h": "超低功耗",
-          "p": "宏太研发团队选用低功耗微处理器，通过优化电源管理电路和节能算法，此外，我们还采用低能耗通信协议来减少在数据传输过程中的能量消耗，确保设备只在必要时消耗电能，实现超长数年持续运行。"
+          "h": "低功耗设计",
+          "p": "部分传感终端采用低功耗处理器、优化的电源管理与可配置上报间隔，延长现场电池续航。"
         },
         {
-          "h": "超强防护",
-          "p": "IP68级超强防尘和防水设计，并通过苛刻的高低温循环实验测试。满足工业户外各场景高温高湿下长期稳定运行。"
+          "h": "户外防护选项",
+          "p": "部分型号可选 IP 防护等级外壳，适用于工业与户外环境；请按具体配置确认所需防护等级。"
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "支持多种无线通信协议，包括4G LTE、NB-IoT和LoRa，确保设备间的高效、可靠连接，适用于远距离低功耗到高速数据传输的多样化应用需求。"
+          "h": "灵活通信",
+          "p": "按型号与现场条件选择 4G LTE 或 NB-IoT 蜂窝直连，或 LoRa/LoRaWAN 私有网关组网。"
         },
         {
-          "h": "支持NFC",
-          "p": "采用NFC技术实现设备的快速激活、无缝添加及高效维护，提供用户友好的交互体验。通过近场通信，简化设备管理流程，确保操作的便捷性和安全性。"
+          "h": "NFC 配置",
+          "p": "部分设备支持 NFC 激活与本地配置，加快部署与维护。"
         }
       ],
-      "sysHeading": "系统功能",
+      "sysHeading": "系统能力",
       "system": [
         {
           "img": "solution/58-sys-0.png",
@@ -933,20 +933,20 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/58-sys-1.png",
           "h": "实时监测",
-          "p": "宏太通过传感器采集数据，通信设备传输至云平台分析，利用先进的数据分析和机器算法，系统能够识别并预测设备故障，提高效率并减少停机时间。"
+          "p": "宏太通过传感器采集数据并传输至云平台分析，平台分析趋势并标记异常读数，帮助团队安排维护、减少停机。"
         },
         {
           "img": "solution/58-sys-2.png",
-          "h": "智能联动",
-          "p": "基于传感器数据变化，实时触发控制器执行联动操作，实现跨设备、跨地域的智能化无人值守运作"
+          "h": "规则联动",
+          "p": "控制器按配置的规则响应传感数据变化，实现跨设备、跨站点的自动化响应"
         },
         {
           "img": "solution/58-sys-3.png",
-          "h": "远程升级",
-          "p": "通过云平台支持一键远程批量升级联网模块固件，确保所有设备均运行最新版本，增强系统稳定性"
+          "h": "远程固件升级",
+          "p": "支持对设备进行远程批量 OTA 固件升级，保持版本最新并减少现场维护"
         }
       ],
-      "relHeading": "您可能感兴趣的其他产品",
+      "relHeading": "相关产品",
       "related": [
         "270",
         "274",
@@ -993,7 +993,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/65-intro-0.jpg",
-          "h": "背景介绍",
+          "h": "行业挑战",
           "p": "智慧农业是利用现代信息技术和智能化手段来提升农业生产效率和可持续发展的新型农业模式。随着全球人口的不断增长和资源的日益紧张，传统农业面临着诸多挑战，如土地资源有限、气候变化、病虫害防治等。智慧农业应运而生，它通过整合物联网、大数据、人工智能、云计算等技术，帮助农民实现精准农业管理，提高作物产量和质量。 智慧农业不仅提升了农业生产的效率和可持续性，还促进了农业与信息技术的深度融合。随着技术的不断进步和应用的普及，智慧农业将在未来的农业发展中扮演越来越重要的角色。"
         },
         {
@@ -1006,26 +1006,26 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/65-arch-0.png"
       ],
-      "featHeading": "方案特点",
+      "featHeading": "核心优势",
       "features": [
         {
-          "h": "支持NFC",
-          "p": "采用NFC技术实现设备的快速激活、无缝添加及高效维护，提供用户友好的交互体验。通过近场通信，简化设备管理流程，确保操作的便捷性和安全性。"
+          "h": "NFC 配置",
+          "p": "部分设备支持 NFC 激活与本地配置，加快部署与维护。"
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "支持多种无线通信协议，包括4G LTE、NB-IoT和LoRa，确保设备间的高效、可靠连接，适用于远距离低功耗到高速数据传输的多样化应用需求。"
+          "h": "灵活通信",
+          "p": "按型号与现场条件选择 4G LTE 或 NB-IoT 蜂窝直连，或 LoRa/LoRaWAN 私有网关组网。"
         },
         {
-          "h": "超强防护",
-          "p": "IP68级超强防尘和防水设计，并通过苛刻的高低温循环实验测试。满足工业户外各场景高温高湿下长期稳定运行。"
+          "h": "户外防护选项",
+          "p": "部分型号可选 IP 防护等级外壳，适用于工业与户外环境；请按具体配置确认所需防护等级。"
         },
         {
-          "h": "超低功耗",
-          "p": "宏太研发团队选用低功耗微处理器，通过优化电源管理电路和节能算法，此外，我们还采用低能耗通信协议来减少在数据传输过程中的能量消耗，确保设备只在必要时消耗电能，实现超长数年持续运行。"
+          "h": "低功耗设计",
+          "p": "部分传感终端采用低功耗处理器、优化的电源管理与可配置上报间隔，延长现场电池续航。"
         }
       ],
-      "sysHeading": "系统功能",
+      "sysHeading": "系统能力",
       "system": [
         {
           "img": "solution/65-sys-0.png",
@@ -1034,21 +1034,21 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/65-sys-1.png",
-          "h": "快速定位",
-          "p": "采用先进的诊断和定位技术，能够快速定位故障设备，显著降低维修时间及运维成本，可实现设备管理，状态检测，故障设备位置，电子地图或数字孪生"
+          "h": "阈值告警",
+          "p": "当土壤水分、温度等参数越过配置阈值时触发告警，帮助团队在作物受影响前响应。"
         },
         {
           "img": "solution/65-sys-2.png",
           "h": "实时监测",
-          "p": "宏太通过传感器采集数据，通信设备传输至云平台分析，利用先进的数据分析和机器算法，系统能够识别并预测设备故障，提高效率并减少停机时间。"
+          "p": "宏太通过传感器采集数据并传输至云平台分析，平台分析趋势并标记异常读数，帮助团队安排维护、减少停机。"
         },
         {
           "img": "solution/65-sys-3.png",
-          "h": "远程升级",
-          "p": "通过云平台支持一键远程批量升级联网模块固件，确保所有设备均运行最新版本，增强系统稳定性"
+          "h": "远程固件升级",
+          "p": "支持对设备进行远程批量 OTA 固件升级，保持版本最新并减少现场维护"
         }
       ],
-      "relHeading": "您可能感兴趣的其他产品",
+      "relHeading": "相关产品",
       "related": [
         "275",
         "276",
@@ -1069,8 +1069,8 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/65-scen-2.jpg",
-          "h": "数字农场",
-          "p": "物联技术整合数据分析，实现农业生产的精准管理"
+          "h": "互联农场",
+          "p": "互联传感与数据分析支持精准灌溉与作物管理"
         },
         {
           "img": "solution/65-scen-3.jpg",
@@ -1090,7 +1090,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/64-intro-0.png",
-          "h": "背景介绍",
+          "h": "行业挑战",
           "p": "智慧校园是指利用现代信息技术，特别是互联网、大数据、人工智能等技术手段，需求的变化以及社会对教育质量的不断追求，物联网技术的发展使得校园内的各类设备（如教室、实验室、图书馆等）能够互联互通，实时传输数据，提高管理效率。随着信息技术的不断进步和教育理念的不断更新，智慧教育会在更大范围内推广和应用，为教育的创新发展注入新的活力。"
         },
         {
@@ -1103,41 +1103,41 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/64-arch-0.png"
       ],
-      "featHeading": "方案特点",
+      "featHeading": "核心优势",
       "features": [
         {
-          "h": "4G/NB/LoRa",
-          "p": "支持多种无线通信协议，包括4G LTE、NB-IoT和LoRa，确保设备间的高效、可靠连接，适用于远距离低功耗到高速数据传输的多样化应用需求。"
+          "h": "灵活通信",
+          "p": "按型号与现场条件选择 4G LTE 或 NB-IoT 蜂窝直连，或 LoRa/LoRaWAN 私有网关组网。"
         },
         {
-          "h": "支持NFC",
-          "p": "采用NFC技术实现设备的快速激活、无缝添加及高效维护，提供用户友好的交互体验。通过近场通信，简化设备管理流程，确保操作的便捷性和安全性。"
+          "h": "NFC 配置",
+          "p": "部分设备支持 NFC 激活与本地配置，加快部署与维护。"
         },
         {
-          "h": "超强防护",
-          "p": "IP68级超强防尘和防水设计，并通过苛刻的高低温循环实验测试。满足工业户外各场景高温高湿下长期稳定运行。"
+          "h": "户外防护选项",
+          "p": "部分型号可选 IP 防护等级外壳，适用于工业与户外环境；请按具体配置确认所需防护等级。"
         },
         {
-          "h": "超低功耗",
-          "p": "宏太研发团队选用低功耗微处理器，通过优化电源管理电路和节能算法，此外，我们还采用低能耗通信协议来减少在数据传输过程中的能量消耗，确保设备只在必要时消耗电能，实现超长数年持续运行。"
+          "h": "低功耗设计",
+          "p": "部分传感终端采用低功耗处理器、优化的电源管理与可配置上报间隔，延长现场电池续航。"
         }
       ],
-      "sysHeading": "系统功能",
+      "sysHeading": "系统能力",
       "system": [
         {
           "img": "solution/64-sys-0.png",
-          "h": "动态指令",
-          "p": "环境温度变化时，系统自动调节制冷设备开关，动态生成指令应对不同设备属性，满足实时计算与任务执行需求"
+          "h": "自动化控制规则",
+          "p": "当传感读数越过配置阈值时，规则自动调节相连设备（如制冷），无需人工干预。"
         },
         {
           "img": "solution/64-sys-1.png",
-          "h": "智能联动",
-          "p": "基于传感器数据变化，实时触发控制器执行联动操作，实现跨设备、跨地域的智能化无人值守运作"
+          "h": "规则联动",
+          "p": "控制器按配置的规则响应传感数据变化，实现跨设备、跨站点的自动化响应"
         },
         {
           "img": "solution/64-sys-2.png",
           "h": "实时监测",
-          "p": "宏太通过传感器采集数据，通信设备传输至云平台分析，利用先进的数据分析和机器算法，系统能够识别并预测设备故障，提高效率并减少停机时间。"
+          "p": "宏太通过传感器采集数据并传输至云平台分析，平台分析趋势并标记异常读数，帮助团队安排维护、减少停机。"
         },
         {
           "img": "solution/64-sys-3.png",
@@ -1145,7 +1145,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
           "p": "实现批量配置告警，统管理，自动化消警流程支持多条件触发告警并及时通知相关人员，全方位监控设备运行状态"
         }
       ],
-      "relHeading": "您可能感兴趣的其他产品",
+      "relHeading": "相关产品",
       "related": [
         "284",
         "283",
@@ -1157,8 +1157,8 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "scenarios": [
         {
           "img": "solution/64-scen-0.jpg",
-          "h": "校领导办公室",
-          "p": "利用物联技术实现校园节能减排和环境监测"
+          "h": "校园运营",
+          "p": "监测各楼宇能耗、室内空气质量与设施状态"
         },
         {
           "img": "solution/64-scen-1.jpg",
@@ -1167,8 +1167,8 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/64-scen-2.jpg",
-          "h": "汽车机械师培训室",
-          "p": "实现实验设施的智能化监控与管理"
+          "h": "实训与实验室",
+          "p": "以可配置告警监测实验室与实训车间的环境条件和设备状态"
         }
       ]
     },
@@ -1178,7 +1178,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/60-intro-0.jpg",
-          "h": "背景介绍",
+          "h": "行业挑战",
           "p": "智慧园区是指利用先进的信息技术和互联网技术，对园区内的资源、设施和服务进行智能化管理和优化配置，从而提升园区的运营效率、服务质量和可持续发展能力。智慧园区通常结合物联网（IoT）、大数据、云计算、人工智能等技术，构建一个智能化、数字化的生态系统。智慧园区的建设不仅是技术的应用，更是对未来城市生活方式的一种探索和实践。通过智慧园区的建设，可以实现更高效的资源配置，更环保的生活方式，以及更智能的服务体验。"
         },
         {
@@ -1191,26 +1191,26 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/60-arch-0.png"
       ],
-      "featHeading": "方案特点",
+      "featHeading": "核心优势",
       "features": [
         {
-          "h": "超低功耗",
-          "p": "宏太研发团队选用低功耗微处理器，通过优化电源管理电路和节能算法，此外，我们还采用低能耗通信协议来减少在数据传输过程中的能量消耗，确保设备只在必要时消耗电能，实现超长数年持续运行。"
+          "h": "低功耗设计",
+          "p": "部分传感终端采用低功耗处理器、优化的电源管理与可配置上报间隔，延长现场电池续航。"
         },
         {
-          "h": "支持NFC",
-          "p": "采用NFC技术实现设备的快速激活、无缝添加及高效维护，提供用户友好的交互体验。通过近场通信，简化设备管理流程，确保操作的便捷性和安全性。"
+          "h": "NFC 配置",
+          "p": "部分设备支持 NFC 激活与本地配置，加快部署与维护。"
         },
         {
-          "h": "超强防护",
-          "p": "IP68级超强防尘和防水设计，并通过苛刻的高低温循环实验测试。满足工业户外各场景高温高湿下长期稳定运行。"
+          "h": "户外防护选项",
+          "p": "部分型号可选 IP 防护等级外壳，适用于工业与户外环境；请按具体配置确认所需防护等级。"
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "支持多种无线通信协议，包括4G LTE、NB-IoT和LoRa，确保设备间的高效、可靠连接，适用于远距离低功耗到高速数据传输的多样化应用需求。"
+          "h": "灵活通信",
+          "p": "按型号与现场条件选择 4G LTE 或 NB-IoT 蜂窝直连，或 LoRa/LoRaWAN 私有网关组网。"
         }
       ],
-      "sysHeading": "系统功能",
+      "sysHeading": "系统能力",
       "system": [
         {
           "img": "solution/60-sys-0.png",
@@ -1219,21 +1219,21 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/60-sys-1.png",
-          "h": "快速定位",
-          "p": "采用先进的诊断和定位技术，能够快速定位故障设备，显著降低维修时间及运维成本，可实现设备管理，状态检测，故障设备位置，电子地图或数字孪生"
+          "h": "故障定位",
+          "p": "诊断功能帮助快速定位故障设备，降低维修时间与运维成本；支持设备状态监测与地图视图。"
         },
         {
           "img": "solution/60-sys-2.png",
-          "h": "智能联动",
-          "p": "基于传感器数据变化，实时触发控制器执行联动操作，实现跨设备、跨地域的智能化无人值守运作"
+          "h": "规则联动",
+          "p": "控制器按配置的规则响应传感数据变化，实现跨设备、跨站点的自动化响应"
         },
         {
           "img": "solution/60-sys-3.png",
-          "h": "远程升级",
-          "p": "通过云平台支持一键远程批量升级联网模块固件，确保所有设备均运行最新版本，增强系统稳定性"
+          "h": "远程固件升级",
+          "p": "支持对设备进行远程批量 OTA 固件升级，保持版本最新并减少现场维护"
         }
       ],
-      "relHeading": "您可能感兴趣的其他产品",
+      "relHeading": "相关产品",
       "related": [
         "280",
         "281",
@@ -1265,7 +1265,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/59-intro-0.png",
-          "h": "背景介绍",
+          "h": "行业挑战",
           "p": "随着全球经济的快速发展和人口的增加，能源需求持续上升。传统的能源管理模式已难以满足日益增长的需求。智慧能源是通过物联网技术提升能源的管理和利用效率。物联网设备的成本持续下降，传感器、通信技术和数据处理能力的提升，使得物联网在智慧能源领域的应用变得更加可行和经济。智慧能源的发展不仅有助于提高能源利用效率，降低能源成本，还有助于实现可持续发展目标，推动社会向低碳、绿色的方向发展。"
         },
         {
@@ -1278,26 +1278,26 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/59-arch-0.png"
       ],
-      "featHeading": "方案特点",
+      "featHeading": "核心优势",
       "features": [
         {
-          "h": "支持NFC",
-          "p": "采用NFC技术实现设备的快速激活、无缝添加及高效维护，提供用户友好的交互体验。通过近场通信，简化设备管理流程，确保操作的便捷性和安全性。"
+          "h": "NFC 配置",
+          "p": "部分设备支持 NFC 激活与本地配置，加快部署与维护。"
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "支持多种无线通信协议，包括4G LTE、NB-IoT和LoRa，确保设备间的高效、可靠连接，适用于远距离低功耗到高速数据传输的多样化应用需求。"
+          "h": "灵活通信",
+          "p": "按型号与现场条件选择 4G LTE 或 NB-IoT 蜂窝直连，或 LoRa/LoRaWAN 私有网关组网。"
         },
         {
-          "h": "超强防护",
-          "p": "IP68级超强防尘和防水设计，并通过苛刻的高低温循环实验测试。满足工业户外各场景高温高湿下长期稳定运行。"
+          "h": "户外防护选项",
+          "p": "部分型号可选 IP 防护等级外壳，适用于工业与户外环境；请按具体配置确认所需防护等级。"
         },
         {
-          "h": "超低功耗",
-          "p": "宏太研发团队选用低功耗微处理器，通过优化电源管理电路和节能算法，此外，我们还采用低能耗通信协议来减少在数据传输过程中的能量消耗，确保设备只在必要时消耗电能，实现超长数年持续运行。"
+          "h": "低功耗设计",
+          "p": "部分传感终端采用低功耗处理器、优化的电源管理与可配置上报间隔，延长现场电池续航。"
         }
       ],
-      "sysHeading": "系统功能",
+      "sysHeading": "系统能力",
       "system": [
         {
           "img": "solution/59-sys-0.png",
@@ -1306,21 +1306,21 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/59-sys-1.png",
-          "h": "动态指令",
-          "p": "环境温度变化时，系统自动调节制冷设备开关，动态生成指令应对不同设备属性，满足实时计算与任务执行需求。"
+          "h": "自动化控制规则",
+          "p": "当传感读数越过配置阈值时，规则自动调节相连设备（如制冷），无需人工干预。"
         },
         {
           "img": "solution/59-sys-2.png",
-          "h": "智能联动",
-          "p": "基于传感器数据变化，实时触发控制器执行联动操作，实现跨设备、跨地域的智能化无人值守运作"
+          "h": "规则联动",
+          "p": "控制器按配置的规则响应传感数据变化，实现跨设备、跨站点的自动化响应"
         },
         {
           "img": "solution/59-sys-3.png",
-          "h": "远程升级",
-          "p": "通过云平台支持一键远程批量升级联网模块固件，确保所有设备均运行最新版本，增强系统稳定性"
+          "h": "远程固件升级",
+          "p": "支持对设备进行远程批量 OTA 固件升级，保持版本最新并减少现场维护"
         }
       ],
-      "relHeading": "您可能感兴趣的其他产品",
+      "relHeading": "相关产品",
       "related": [
         "280",
         "281",
@@ -1332,18 +1332,18 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "scenarios": [
         {
           "img": "solution/59-scen-0.jpg",
-          "h": "风能能源储存",
-          "p": "提升效率，降低成本，实现预测性维护"
+          "h": "风电与储能",
+          "p": "对风机与储能系统进行状态监测，支持维护计划制定。"
         },
         {
           "img": "solution/59-scen-1.jpg",
-          "h": "新能源技术",
-          "p": "实时监控，精确控制，提高自动化水平"
+          "h": "新能源场站",
+          "p": "对新能源设施进行实时监测与控制。"
         },
         {
           "img": "solution/59-scen-2.jpg",
           "h": "发电厂",
-          "p": "提高开采效率，增强安全监管"
+          "p": "监测温度、压力、振动与设备状态，支持维护计划制定。"
         }
       ]
     },
@@ -1353,7 +1353,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/57-intro-0.jpg",
-          "h": "背景介绍",
+          "h": "行业挑战",
           "p": "随着全球经济的发展，越来越多的人口涌入城市，城市化率不断提高。这一过程带来了经济增长的同时，也伴随着交通拥堵、环境污染、资源短缺等一系列城市管理和服务的挑战。智慧城市的构建旨在应对这些挑战，以提高城市的可持续发展能力。信息技术的快速发展，尤其是物联网、大数据、云计算、人工智能等技术的成熟，为智慧城市的建设提供了强有力的支持。这些技术的应用使得城市管理者能够实时收集和分析大量数据，从而做出更加科学和高效的决策。智慧城市通过信息技术的应用，提升了城市管理的智能化水平，能够更好地应对城市化带来的挑战，改善市民的生活质量，促进可持续发展。"
         },
         {
@@ -1366,26 +1366,26 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/57-arch-0.png"
       ],
-      "featHeading": "方案特点",
+      "featHeading": "核心优势",
       "features": [
         {
-          "h": "超强防护",
-          "p": "IP68级超强防尘和防水设计，并通过苛刻的高低温循环实验测试。满足工业户外各场景高温高湿下长期稳定运行。"
+          "h": "户外防护选项",
+          "p": "部分型号可选 IP 防护等级外壳，适用于工业与户外环境；请按具体配置确认所需防护等级。"
         },
         {
-          "h": "超低功耗",
-          "p": "宏太研发团队选用低功耗微处理器，通过优化电源管理电路和节能算法，此外，我们还采用低能耗通信协议来减少在数据传输过程中的能量消耗，确保设备只在必要时消耗电能，实现超长数年持续运行。"
+          "h": "低功耗设计",
+          "p": "部分传感终端采用低功耗处理器、优化的电源管理与可配置上报间隔，延长现场电池续航。"
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "支持多种无线通信协议，包括4G LTE、NB-IoT和LoRa，确保设备间的高效、可靠连接，适用于远距离低功耗到高速数据传输的多样化应用需求。"
+          "h": "灵活通信",
+          "p": "按型号与现场条件选择 4G LTE 或 NB-IoT 蜂窝直连，或 LoRa/LoRaWAN 私有网关组网。"
         },
         {
-          "h": "支持NFC",
-          "p": "采用NFC技术实现设备的快速激活、无缝添加及高效维护，提供用户友好的交互体验。通过近场通信，简化设备管理流程，确保操作的便捷性和安全性。"
+          "h": "NFC 配置",
+          "p": "部分设备支持 NFC 激活与本地配置，加快部署与维护。"
         }
       ],
-      "sysHeading": "系统功能",
+      "sysHeading": "系统能力",
       "system": [
         {
           "img": "solution/57-sys-0.png",
@@ -1395,20 +1395,20 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/57-sys-1.png",
           "h": "实时监测",
-          "p": "宏太通过传感器采集数据，通信设备传输至云平台分析，利用先进的数据分析和机器算法，系统能够识别并预测设备故障，提高效率并减少停机时间。"
+          "p": "宏太通过传感器采集数据并传输至云平台分析，平台分析趋势并标记异常读数，帮助团队安排维护、减少停机。"
         },
         {
           "img": "solution/57-sys-2.png",
-          "h": "智能联动",
-          "p": "基于传感器数据变化，实时触发控制器执行联动操作，实现跨设备、跨地域的智能化无人值守运作"
+          "h": "规则联动",
+          "p": "控制器按配置的规则响应传感数据变化，实现跨设备、跨站点的自动化响应"
         },
         {
           "img": "solution/57-sys-3.png",
-          "h": "远程升级",
-          "p": "通过云平台支持一键远程批量升级联网模块固件，确保所有设备均运行最新版本，增强系统稳定性"
+          "h": "远程固件升级",
+          "p": "支持对设备进行远程批量 OTA 固件升级，保持版本最新并减少现场维护"
         }
       ],
-      "relHeading": "您可能感兴趣的其他产品",
+      "relHeading": "相关产品",
       "related": [
         "286",
         "287",
@@ -1423,28 +1423,28 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "scenarios": [
         {
           "img": "solution/57-scen-0.jpg",
-          "h": "智能车联网",
-          "p": "提升效率，降低成本，实现预测性维护"
+          "h": "车联网基础设施",
+          "p": "以户外传感终端监测路侧与场站基础设施状态"
         },
         {
           "img": "solution/57-scen-1.jpg",
           "h": "物流与供应链",
-          "p": "实时监控，精确控制，提高自动化水平"
+          "p": "跨站点跟踪资产并监测仓储环境条件"
         },
         {
           "img": "solution/57-scen-2.jpg",
-          "h": "城市管道",
-          "p": "提高开采效率，增强安全监管"
+          "h": "城市管网",
+          "p": "监测压力、泄漏、液位与运行工况。"
         },
         {
           "img": "solution/57-scen-3.jpg",
-          "h": "水电站",
-          "p": "实时监控排放，降低环境污染"
+          "h": "水电设施",
+          "p": "监测水位与设备状态。"
         },
         {
           "img": "solution/57-scen-4.jpg",
-          "h": "小区",
-          "p": "实现智能化管理，减少故障增强竞争力"
+          "h": "住宅小区",
+          "p": "监测住宅小区的环境条件与公共设施。"
         }
       ]
     },
@@ -1454,7 +1454,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/66-intro-0.jpg",
-          "h": "背景介绍",
+          "h": "行业挑战",
           "p": "近年来，全球旅游业蓬勃发展，旅游成为许多人生活中不可或缺的一部分。根据世界旅游组织（UNWTO）的数据，国际旅游人数持续增长，带动了各类旅游景区的建设和发展。这种快速增长对景区的管理和服务提出了更高的要求。智慧景区是利用现代信息技术、物联网、大数据、人工智能等手段，对旅游景区进行全面数字化、智能化管理和服务的综合性系统。随着旅游业的迅速发展和游客需求的多样化，智慧景区应运而生，旨在提升游客体验、提高管理效率和促进可持续发展。智慧景区通过现代信息技术的应用，提升了旅游管理的智能化水平，能够更好地满足游客的需求，优化资源配置，促进旅游业的可持续发展。"
         },
         {
@@ -1467,36 +1467,36 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/66-arch-0.png"
       ],
-      "featHeading": "方案特点",
+      "featHeading": "核心优势",
       "features": [
         {
-          "h": "超低功耗",
-          "p": "宏太研发团队选用低功耗微处理器，通过优化电源管理电路和节能算法，此外，我们还采用低能耗通信协议来减少在数据传输过程中的能量消耗，确保设备只在必要时消耗电能，实现超长数年持续运行。"
+          "h": "低功耗设计",
+          "p": "部分传感终端采用低功耗处理器、优化的电源管理与可配置上报间隔，延长现场电池续航。"
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "支持多种无线通信协议，包括4G LTE、NB-IoT和LoRa，确保设备间的高效、可靠连接，适用于远距离低功耗到高速数据传输的多样化应用需求。"
+          "h": "灵活通信",
+          "p": "按型号与现场条件选择 4G LTE 或 NB-IoT 蜂窝直连，或 LoRa/LoRaWAN 私有网关组网。"
         },
         {
-          "h": "支持NFC",
-          "p": "采用NFC技术实现设备的快速激活、无缝添加及高效维护，提供用户友好的交互体验。通过近场通信，简化设备管理流程，确保操作的便捷性和安全性。"
+          "h": "NFC 配置",
+          "p": "部分设备支持 NFC 激活与本地配置，加快部署与维护。"
         },
         {
-          "h": "超强防护",
-          "p": "IP68级超强防尘和防水设计，并通过苛刻的高低温循环实验测试。满足工业户外各场景高温高湿下长期稳定运行。"
+          "h": "户外防护选项",
+          "p": "部分型号可选 IP 防护等级外壳，适用于工业与户外环境；请按具体配置确认所需防护等级。"
         }
       ],
-      "sysHeading": "系统功能",
+      "sysHeading": "系统能力",
       "system": [
         {
           "img": "solution/66-sys-0.png",
-          "h": "快速定位",
-          "p": "采用先进的诊断和定位技术，能够快速定位故障设备，显著降低维修时间及运维成本，可实现设备管理，状态检测，故障设备位置，电子地图或数字孪生"
+          "h": "故障定位",
+          "p": "诊断功能帮助快速定位故障设备，降低维修时间与运维成本；支持设备状态监测与地图视图。"
         },
         {
           "img": "solution/66-sys-1.png",
-          "h": "智能联动",
-          "p": "基于传感器数据变化，实时触发控制器执行联动操作，实现跨设备、跨地域的智能化无人值守运作"
+          "h": "规则联动",
+          "p": "控制器按配置的规则响应传感数据变化，实现跨设备、跨站点的自动化响应"
         },
         {
           "img": "solution/66-sys-2.png",
@@ -1505,11 +1505,11 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         },
         {
           "img": "solution/66-sys-3.png",
-          "h": "远程升级",
-          "p": "通过云平台支持一键远程批量升级联网模块固件，确保所有设备均运行最新版本，增强系统稳定性"
+          "h": "远程固件升级",
+          "p": "支持对设备进行远程批量 OTA 固件升级，保持版本最新并减少现场维护"
         }
       ],
-      "relHeading": "您可能感兴趣的其他产品",
+      "relHeading": "相关产品",
       "related": [
         "283",
         "282",
@@ -1521,23 +1521,23 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "scenarios": [
         {
           "img": "solution/66-scen-0.jpg",
-          "h": "故宫",
-          "p": "提升效率，降低成本，实现预测性维护"
+          "h": "历史建筑",
+          "p": "监测温湿度与结构倾角，支持保护性维护。"
         },
         {
           "img": "solution/66-scen-1.jpg",
-          "h": "夫子庙",
-          "p": "实时监控，精确控制，提高自动化水平"
+          "h": "博物馆与馆藏",
+          "p": "跟踪温湿度与烟雾，保护展品与馆藏。"
         },
         {
           "img": "solution/66-scen-2.jpg",
-          "h": "兵马俑",
-          "p": "提高开采效率，增强安全监管"
+          "h": "考古遗址",
+          "p": "监测露天遗址的环境条件与结构位移。"
         },
         {
           "img": "solution/66-scen-3.jpg",
-          "h": "布达拉宫",
-          "p": "实时监控排放，降低环境污染"
+          "h": "游客区域",
+          "p": "监测客流与环境条件，支持景区运营。"
         }
       ]
     },
@@ -1547,7 +1547,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "intro": [
         {
           "img": "solution/67-intro-0.jpg",
-          "h": "背景介绍",
+          "h": "行业挑战",
           "p": "全球范围内，水资源的短缺已成为一个严重问题。随着人口增长和城市化进程的加速，水需求不断增加，而水资源的供给却受到气候变化、污染和过度开发等因素的影响，导致水资源的紧张。在这种背景下，如何有效管理和利用水资源成为各国政府和城市管理者面临的重要课题。传统的水务管理方式往往依赖人工监测和管理，信息传递不及时，决策依据不足，导致水资源的浪费和管理效率低下。此外，传统系统难以实时响应突发事件，如水管漏水、污染事件等，影响了水务服务的质量和安全性。智慧水务、水利是智慧城市建设的重要组成部分，旨在通过现代信息技术与数据分析手段，实现对水资源的高效管理、监测与服务。随着全球水资源短缺、污染加剧和城市化进程加速，传统水务管理面临诸多挑战，智慧水务应运而生。随着城市化进程的加快，水务系统面临的安全风险也在增加，如水污染、供水中断、自然灾害等。智慧水务、水利通过实时监测和数据分析，可以提高对潜在风险的识别和响应能力，保障水务、水利系统的安全和稳定运行"
         },
         {
@@ -1560,26 +1560,26 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
       "archImgs": [
         "solution/67-arch-0.png"
       ],
-      "featHeading": "方案特点",
+      "featHeading": "核心优势",
       "features": [
         {
-          "h": "超低功耗",
-          "p": "宏太研发团队选用低功耗微处理器，通过优化电源管理电路和节能算法，此外，我们还采用低能耗通信协议来减少在数据传输过程中的能量消耗，确保设备只在必要时消耗电能，实现超长数年持续运行。"
+          "h": "低功耗设计",
+          "p": "部分传感终端采用低功耗处理器、优化的电源管理与可配置上报间隔，延长现场电池续航。"
         },
         {
-          "h": "超强防护",
-          "p": "IP68级超强防尘和防水设计，并通过苛刻的高低温循环实验测试。满足工业户外各场景高温高湿下长期稳定运行。"
+          "h": "户外防护选项",
+          "p": "部分型号可选 IP 防护等级外壳，适用于工业与户外环境；请按具体配置确认所需防护等级。"
         },
         {
-          "h": "4G/NB/LoRa",
-          "p": "支持多种无线通信协议，包括4G LTE、NB-IoT和LoRa，确保设备间的高效、可靠连接，适用于远距离低功耗到高速数据传输的多样化应用需求。"
+          "h": "灵活通信",
+          "p": "按型号与现场条件选择 4G LTE 或 NB-IoT 蜂窝直连，或 LoRa/LoRaWAN 私有网关组网。"
         },
         {
-          "h": "支持NFC",
-          "p": "采用NFC技术实现设备的快速激活、无缝添加及高效维护，提供用户友好的交互体验。通过近场通信，简化设备管理流程，确保操作的便捷性和安全性。"
+          "h": "NFC 配置",
+          "p": "部分设备支持 NFC 激活与本地配置，加快部署与维护。"
         }
       ],
-      "sysHeading": "系统功能",
+      "sysHeading": "系统能力",
       "system": [
         {
           "img": "solution/67-sys-0.png",
@@ -1589,12 +1589,12 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/67-sys-1.png",
           "h": "实时监测",
-          "p": "宏太通过传感器采集数据，通信设备传输至云平台分析，利用先进的数据分析和机器算法，系统能够识别并预测设备故障，提高效率并减少停机时间。"
+          "p": "宏太通过传感器采集数据并传输至云平台分析，平台分析趋势并标记异常读数，帮助团队安排维护、减少停机。"
         },
         {
           "img": "solution/67-sys-2.png",
-          "h": "智能联动",
-          "p": "基于传感器数据变化，实时触发控制器执行联动操作，实现跨设备、跨地域的智能化无人值守运作"
+          "h": "规则联动",
+          "p": "控制器按配置的规则响应传感数据变化，实现跨设备、跨站点的自动化响应"
         },
         {
           "img": "solution/67-sys-3.png",
@@ -1602,7 +1602,7 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
           "p": "实现批量配置告警，统管理，自动化消警流程支持多条件触发告警并及时通知相关人员，全方位监控设备运行状态"
         }
       ],
-      "relHeading": "您可能感兴趣的其他产品",
+      "relHeading": "相关产品",
       "related": [
         "270",
         "274",
@@ -1615,17 +1615,17 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
         {
           "img": "solution/67-scen-0.jpg",
           "h": "水电大坝",
-          "p": "提高开采效率，增强安全监管"
+          "p": "监测大坝水位、位移/倾角与环境条件。"
         },
         {
           "img": "solution/67-scen-1.jpg",
           "h": "工业水厂",
-          "p": "提升效率，降低成本，实现预测性维护"
+          "p": "监测工艺参数与设备状态，支持维护计划制定。"
         },
         {
           "img": "solution/67-scen-2.jpg",
           "h": "水产养殖",
-          "p": "实时监控，精确控制，提高自动化水平"
+          "p": "监测水质与环境条件，支持养殖管理。"
         }
       ]
     }
@@ -1634,14 +1634,14 @@ export const solutionDetails: Record<'en' | 'zh', Record<string, SolutionDetail>
 /** 方案详情页 SEO（标题/描述含核心关键词：outdoor 4G、NB-IoT、industrial IoT sensors 等） */
 export const solutionSeo: Record<'en' | 'zh', Record<string, { name: string; title: string; desc: string }>> = {
  en: {
-  "57": { name: "Smart City", title: "Smart City IoT Solution | Structural Health & Environment Monitoring - Hitelecom", desc: "Hitelecom smart city IoT solution: outdoor 4G and NB-IoT sensors for structural health monitoring, environmental monitoring and urban infrastructure management with IoT cloud integration." },
-  "58": { name: "Smart Industrial", title: "Smart Industrial IoT Solution | Real-time Factory Equipment Monitoring - Hitelecom", desc: "Hitelecom smart industrial IoT solution: industrial IoT sensors and outdoor 4G sensor terminals for real-time equipment monitoring, predictive maintenance and smart factory management." },
-  "59": { name: "Smart Energy", title: "Smart Energy IoT Solution | Wireless Sensor Monitoring - Hitelecom", desc: "Hitelecom smart energy IoT solution: wireless pressure, temperature and radar level sensors with 4G/NB-IoT connectivity for remote energy monitoring and management." },
-  "60": { name: "Smart Park", title: "Smart Park IoT Solution | NB-IoT Sensors & Cloud Platform - Hitelecom", desc: "Hitelecom smart park IoT solution: NB-IoT sensors and IoT cloud integration for park security, environmental monitoring and intelligent facility management." },
-  "64": { name: "Smart Campus", title: "Smart Campus IoT Solution | Air Quality & Environment Sensors - Hitelecom", desc: "Hitelecom smart campus IoT solution: air quality sensors, temperature and humidity sensors with IoT cloud platform for safe, efficient campus management." },
-  "65": { name: "Smart Agriculture", title: "Smart Agriculture IoT Solution | Soil Moisture Monitoring - Hitelecom", desc: "Hitelecom smart agriculture IoT solution: soil moisture sensors and outdoor 4G sensor terminals for precision agriculture and environmental monitoring." },
-  "66": { name: "Smart Scenic Area", title: "Smart Scenic Area IoT Solution | Hitelecom Industrial IoT Sensors", desc: "Hitelecom smart scenic area IoT solution: outdoor 4G and NB-IoT wireless sensors with IoT cloud integration for visitor safety, environment and facility monitoring." },
-  "67": { name: "Smart Water", title: "Smart Water IoT Solution | Radar Level & Pressure Monitoring - Hitelecom", desc: "Hitelecom smart water IoT solution: radar level sensors, wireless pressure sensors and NB-IoT terminals for remote water level, pressure and quality monitoring." }
+  "57": { name: "Smart City", title: "Smart City IoT Solution | Infrastructure | Hitelecom", desc: "Hitelecom smart city IoT solution: outdoor 4G and NB-IoT sensors for structural health monitoring, environmental monitoring and urban infrastructure management with IoT cloud integration." },
+  "58": { name: "Industrial IoT", title: "Industrial IoT Solution | Equipment Monitoring | Hitelecom", desc: "Hitelecom smart industrial IoT solution: industrial IoT sensors and outdoor 4G sensor terminals for real-time equipment monitoring, predictive maintenance and smart factory management." },
+  "59": { name: "Smart Energy", title: "Smart Energy IoT Solution | Condition Monitoring | Hitelecom", desc: "Hitelecom smart energy IoT solution: wireless pressure, temperature and radar level sensors with 4G/NB-IoT connectivity for remote energy monitoring and management." },
+  "60": { name: "Smart Industrial Parks", title: "Smart Industrial Park IoT Solution | Hitelecom", desc: "Hitelecom smart park IoT solution: NB-IoT sensors and IoT cloud integration for park security, environmental monitoring and intelligent facility management." },
+  "64": { name: "Smart Campus", title: "Smart Campus IoT Solution | Air Quality | Hitelecom", desc: "Hitelecom smart campus IoT solution: air quality sensors, temperature and humidity sensors with IoT cloud platform for safe, efficient campus management." },
+  "65": { name: "Smart Agriculture", title: "Smart Agriculture IoT Solution | Soil Monitoring | Hitelecom", desc: "Hitelecom smart agriculture IoT solution: soil moisture sensors and outdoor 4G sensor terminals for precision agriculture and environmental monitoring." },
+  "66": { name: "Tourism and Heritage Sites", title: "Tourism & Heritage Site IoT Monitoring | Hitelecom", desc: "Hitelecom smart scenic area IoT solution: outdoor 4G and NB-IoT wireless sensors with IoT cloud integration for visitor safety, environment and facility monitoring." },
+  "67": { name: "Smart Water", title: "Smart Water IoT Solution | Level & Pressure | Hitelecom", desc: "Hitelecom smart water IoT solution: radar level sensors, wireless pressure sensors and NB-IoT terminals for remote water level, pressure and quality monitoring." }
  },
  zh: {
   "57": { name: "智慧城市解决方案", title: "智慧城市物联网解决方案 | 结构健康与环境监测 - 宏太智慧", desc: "宏太智慧城市物联网解决方案：基于户外4G传感器与NB-IoT传感器，实现结构健康监测、环境监测与城市基础设施智能化管理，支持IoT云平台集成。" },

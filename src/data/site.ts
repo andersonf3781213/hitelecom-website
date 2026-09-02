@@ -13,7 +13,7 @@ export const site = {
   phoneHref: 'tel:+86-18616602589',
   whatsapp: 'https://wa.me/8618616602589',
   wechatId: '18616602589',
-  email: 'sales@hitelecom.cn',
+  email: 'sales@hitelecom.com',
   // 结构化数据专用邮箱：与 SEO/GEO 关键词文档的 Organization JSON-LD 逐字一致
   emailLd: 'sales@hitelecom.com',
 
@@ -29,7 +29,7 @@ export const site = {
    * 换 Formspree：formEndpoint 填 'https://formspree.io/f/你的ID'，formAccessKey 留空即可。
    */
   formEndpoint: 'https://api.web3forms.com/submit',
-  /** Web3Forms Access Key（与 formEndpoint 配套；当前收件邮箱 sales@hitelecom.cn） */
+  /** Web3Forms Access Key（与 formEndpoint 配套；当前收件邮箱 sales@hitelecom.com） */
   formAccessKey: '6cd14860-b673-4f14-af67-76ac66991e8f',
 
   /**
@@ -64,9 +64,9 @@ export const site = {
 export const defaultSeo = {
   en: {
     title:
-      'Hitelecom - Industrial IoT Sensors Manufacturer | Outdoor 4G & NB-IoT Sensor Terminals, IoT Cloud',
+      'Hitelecom | Industrial 4G & NB-IoT Sensors',
     description:
-      'Hitelecom designs and manufactures 50+ industrial IoT sensor terminal configurations and data loggers. Selected models support 4G, NB-IoT, LoRa and LoRaWAN, with Hitelecom Cloud, customer-cloud integration, private deployment and OEM/ODM development.',
+      'Hitelecom designs industrial 4G, NB-IoT and LoRa sensor terminals, data loggers and cloud integrations for remote monitoring, with OEM/ODM support.',
     keywords:
       'Hitelecom, industrial IoT sensors, outdoor 4G IoT sensors, NB-IoT sensors, cellular IoT sensor terminals, LoRa sensors, IoT cloud integration, industrial temperature sensors, temperature and humidity sensors, temperature and humidity data loggers, air quality sensors, TVOC sensors, wireless pressure sensors, soil moisture sensors, tilt sensors, vibration sensors, radar level sensors, radar distance sensors, asset tracking sensors, custom gas sensors, IoT sensors manufacturer China, OEM ODM IoT sensors',
   },

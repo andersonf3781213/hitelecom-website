@@ -30,48 +30,44 @@
 				 
 				<li class="reveal">
 					<a class="css3" href="/about.html">
-						Company Introduction
+						Company Overview
 					</a>
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/quality.html">
-						Quality And Reliability
+						Quality and Reliability
 					</a>
 				</li>
 				<li class="reveal">
 					<a class="css3 on" href="/about/partner.html">
-						Ecological Partners
+						Partners
 					</a>
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/joinus.html">
-						Recruitment
+						Careers
 					</a>
 				</li>
 				<li class="reveal">
-					<a class="css3" href="/about/contact.html">
-						Contact
-					</a>
+					<a class="css3" href="/about/contact.html"> Contact Us </a>
 				</li>
 				 
 			</ul>
 			<select id="changeurl">
 				 
 				<option  value="/about.html">
-					Company Introduction
+					Company Overview
 				</option> 
 				<option     value="/about/quality.html">
-					Quality And Reliability
+					Quality and Reliability
 				</option> 
 				<option  selected="selected"   value="/about/partner.html">
-					Ecological Partners
+					Partners
 				</option> 
 				<option   value="/about/joinus.html">
-					Recruitment
+					Careers
 				</option> 
-				<option   value="/about/contact.html">
-					Contact
-				</option> 
+				<option   value="/about/contact.html"> Contact Us </option> 
 				
 			</select>
 		</Div>
@@ -80,11 +76,11 @@
 <div class="clearfix pa_1">
 	<div class="indexmid">
 							<Div class="index_1_1 reveal">
-								Introduction to Channel System
+								Partner Program
 							</Div>
 							<div class="index_1_2 daxie reveal">
 								<div class="pa_1_1">
-									<p>With the rapid advancement of AIoT industrial IoT technology, we actively promote the &quot;channel-first&quot; partnership strategy, establishing and building a transparent and fair partner network. By deepening customer relationships through various sales channels, we aim to create a mutually beneficial and win-win industrial IoT ecosystem, ensuring that every partner thrives within this ecosystem.</p>
+									<p>With the rapid development of industrial IoT technology, we promote a channel-first partnership strategy and a transparent, fair partner network. By supporting partners across projects and channels, we aim to build a mutually beneficial industrial IoT ecosystem where every partner can grow.</p>
 								</div>
 							</div>
 							<div class="pa_1_2 reveal">
@@ -109,9 +105,10 @@
 											</div>
 											<div class="pa_2_1_mid_2">
 												<div class="pa_2_1_mid_2_1">
-													Marketing												</div>
+													Solution Support												</div>
 												<div class="pa_2_1_mid_2_2">
-													Providing partners with professional implementation solutions tailored to project requirements												</div>
+													
+											Get project-specific product selection, architecture, and implementation guidance.</div>
 											</div>
 										</div>
 									</li>
@@ -124,7 +121,8 @@
 												<div class="pa_2_1_mid_2_1">
 													Training												</div>
 												<div class="pa_2_1_mid_2_2">
-													Professional training enables partners to quickly understand technology, products, and solutions.												</div>
+													
+											Learn Hitelecom products, connectivity options, deployment methods, and common applications.</div>
 											</div>
 										</div>
 									</li>
@@ -135,9 +133,10 @@
 											</div>
 											<div class="pa_2_1_mid_2">
 												<div class="pa_2_1_mid_2_1">
-													Services												</div>
+													Technical Support												</div>
 												<div class="pa_2_1_mid_2_2">
-													Comprehensive services ensuring timely protection for project development												</div>
+													
+											Receive pre-sales, deployment, and after-sales support throughout the project.</div>
 											</div>
 										</div>
 									</li>
@@ -148,9 +147,10 @@
 											</div>
 											<div class="pa_2_1_mid_2">
 												<div class="pa_2_1_mid_2_1">
-													Ecosystem												</div>
+													Joint Market Development												</div>
 												<div class="pa_2_1_mid_2_2">
-													Growing Together with Partners and Building a New Industry Ecosystem												</div>
+													
+											Work together on qualified opportunities, customer engagement, and market development.</div>
 											</div>
 										</div>
 									</li>
@@ -162,7 +162,7 @@
 <div class="clearfix pa_3">
 	<div class="indexmid">
 							<Div class="index_1_1 textw reveal">
-								Collaboration process
+								Partnership Process
 							</Div>
 							<div class="index_1_2 textw daxie reveal">
 								
@@ -187,7 +187,7 @@
 												<span><img alt="" src="/images/about/static_img42.png"></span>
 											</div>
 											<div class="pa_3_1_mid_2">
-											 Partner Selection
+											 Qualification Review
 											</div>
 										</div>
 									</li>
@@ -209,7 +209,7 @@
 												<span><img alt="" src="/images/about/static_img42.png"></span>
 											</div>
 											<div class="pa_3_1_mid_2">
-												Contract Signing
+												Agreement
 											</div>
 										</div>
 									</li>
@@ -219,7 +219,7 @@
 												<img alt="" src="/images/about/static_img41.png">
 											</div>
 											<div class="pa_3_1_mid_2">
-												Business Expansion
+												Go-to-Market
 											</div>
 										</div>
 									</li>
@@ -230,10 +230,10 @@
 <div class="clearfix pa_4">
 	<div class="indexmid">
 							<Div class="index_1_1 reveal">
-								Departing from Shanghai  Global Sales Network
+								From Shanghai to Global Markets
 							</Div>
 							<div class="index_1_2 daxie reveal" style="font-size:16px; letter-spacing:0">
-							 Hitelecom is deeply rooted locally while adopting an open outlook and international strategic layout, ensuring that clients worldwide receive our professional services and quality products in collaboration with our partners
+							 Based in Shanghai, Hitelecom works with partners to support customers across international markets with products, technical expertise, and project coordination.
 							</div>
 	</div>
 	<div class="pa_4_1 reveal">
@@ -243,7 +243,7 @@
 <div class="clearfix pa_5">
 	<div class="indexmid">
 							<Div class="index_1_1 reveal">
-								Becoming a partner of Hitelecom
+								Become a Hitelecom Partner
 							</Div>
 							<div class="index_1_2 daxie reveal" style="font-size:16px; letter-spacing:0">
 								
@@ -283,23 +283,23 @@
 												Intentions
 											</span>
 											<dl>
-												<dd class="on" lang="政府">
+												<dd class="on" lang="Government">
 													Government
 												</dd>
-												<dd lang="教育">
+												<dd lang="Education">
 													Education
 												</dd>
-												<dd lang="企业">
-													Enterprise
+												<dd lang="Business">
+													Business
 												</dd>
-												<dd lang="酒店">
-													Hotel
+												<dd lang="Hospitality">
+													Hospitality
 												</dd>
-												<dd lang="园区">
-													Park
+												<dd lang="Industrial Park">
+													Industrial Park
 												</dd>
-												<dd lang="其他">
-													Others
+												<dd lang="Other">
+													Other
 												</dd>
 											</dl>
 											<input type="hidden" value="政府" id="types" name="types">
@@ -307,14 +307,14 @@
 									</li>
 									<li>
 										<div>
-											<textarea id="message" name="message" placeholder="If you need anything, please leave a message and we will reply to you within 24 hours..."></textarea>
+											<textarea id="message" name="message" placeholder="Tell us about your organization and the cooperation you have in mind. We will respond within one business day."></textarea>
 										</div>
 									</li>
 								</ul>
 							</div>
 							<div class="clearfix pa_5_2 reveal">
 								<a href="javascript:;" onClick="javascript:showAddr();">
-									<span>Submit</span>
+									<span>Submit Application</span>
 								</a>
 							</div>
 							</form>

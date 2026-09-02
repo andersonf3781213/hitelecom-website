@@ -30,28 +30,26 @@
 				 
 				<li class="reveal">
 					<a class="css3 on" href="/about.html">
-						Company Introduction
+						Company Overview
 					</a>
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/quality.html">
-						Quality And Reliability
+						Quality and Reliability
 					</a>
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/partner.html">
-						Ecological Partners
+						Partners
 					</a>
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/joinus.html">
-						Recruitment
+						Careers
 					</a>
 				</li>
 				<li class="reveal">
-					<a class="css3" href="/about/contact.html">
-						Contact
-					</a>
+					<a class="css3" href="/about/contact.html"> Contact Us </a>
 				</li>
 				 
 			</ul>
@@ -59,20 +57,18 @@
 			<select id="changeurl">
 				 
 				<option selected="selected"  value="/about.html">
-					Company Introduction
+					Company Overview
 				</option> 
 				<option    value="/about/quality.html">
-					Quality And Reliability
+					Quality and Reliability
 				</option> 
 				<option    value="/about/partner.html">
-					Ecological Partners
+					Partners
 				</option> 
 				<option   value="/about/joinus.html">
-					Recruitment
+					Careers
 				</option> 
-				<option   value="/about/contact.html">
-					Contact
-				</option> 
+				<option   value="/about/contact.html"> Contact Us </option> 
 				
 			</select>
 			
@@ -141,13 +137,13 @@
 							Hitelecom
 							</Div>
 							<div class="index_1_2 about_2_1_left_mid_2 daxie reveal">
-								Corporate Introduction
+								Company Overview
 							</div>
 							<Div class="about_2_1_left_mid_3 reveal">
 								Transform Data with IoT Sensors to the Cloud
 							</Div>
 							<div class="about_2_1_left_mid_4 reveal">
-								<p>HITELECOM Co., Ltd. is a leading provider of communication and intelligent perception solutions, specializing in AI+IoT devices and comprehensive IoT solutions.</p><p>Established in 2012 in Shanghai, the company focuses on independent R&amp;D, manufacturing, marketing<span style="text-wrap: wrap;">, sales, and service</span> based on a cloud-edge-end architecture.&nbsp;</p><p>Utilizing cutting-edge AI and IoT technologies, HITELECOM enables real-time synchronization of physical and digital entities.&nbsp;</p><p>we are committed to offering customers convenient, reliable, and efficient networks and IoT sensor products to drive digital transformation across various industries.</p><p>HITELECOM&#39;s product portfolio includes smart devices, digital sensors, intelligent transmitters, communication access, cloud platform services, and IoT solutions.</p><p>With applications in smart cities, digital farm, intelligent campuses, smart energy, and smart manufacturing, among others. contributing to energy efficiency, industry growth, and the continuous development of the smart IoT industry.</p>							</div>
+								<p>Founded in Shanghai in 2012, Hitelecom designs and manufactures industrial IoT sensors, sensor terminals, gateways, and cloud-connected monitoring solutions.</p><p>Our portfolio supports remote measurement of temperature, humidity, pressure, soil conditions, tilt, vibration, distance, level, air quality, gas concentration, and asset location. Selected models connect over 4G LTE, NB-IoT, LoRa, or LoRaWAN and integrate with Hitelecom Cloud or customer platforms through MQTT and APIs.</p><p>We also provide private deployment and OEM/ODM services spanning hardware, firmware, power design, enclosures, mounting, branding, and production. Hitelecom solutions support industrial monitoring, smart water, structural health monitoring, smart agriculture, environmental monitoring, and asset tracking.</p>							</div>
 						</Div>
 					</Div>
 				</div>
@@ -158,7 +154,7 @@
 <Div class="clearfix about_3">
 	<Div class="indexmid">
 		<Div class="index_1_1 textw reveal">
-			Corporate culture
+			Corporate Culture
 		</Div>
 		<div class="daxie index_1_2 textw reveal about_3_1">
 			
@@ -170,7 +166,7 @@
 						<Div class="about_3_2_mid_left">
 							Vision						</Div>
 						<Div class="about_3_2_mid_right">
-							Hitelecom's AIoT is dedicated to bridging the physical and digital worlds, Making the Earth more sustainable and enhancing the quality of human life.						</Div>
+							Connect the physical and digital worlds to make operations safer, more efficient, and more sustainable.						</Div>
 					</div>
 				</li>
 								<li class="reveal">
@@ -178,33 +174,18 @@
 						<Div class="about_3_2_mid_left">
 							Mission						</Div>
 						<Div class="about_3_2_mid_right">
-							Crafted IoT solutions, empowering businesses, industries, and society towards greater energy efficiency and efficient.						</Div>
+							Build reliable industrial IoT products and solutions that turn field data into practical decisions.						</Div>
 					</div>
 				</li>
 								<li class="reveal">
 					<div class="about_3_2_mid">
 						<Div class="about_3_2_mid_left">
-							value						</Div>
+							Values						</Div>
 						<Div class="about_3_2_mid_right">
-							Pursuing Excellence, Continuous Innovation; <br>Open Collaboration, Team Cooperation.						</Div>
+							Customer Focus · Engineering Excellence ·<br>Continuous Innovation · Open Collaboration						</Div>
 					</div>
 				</li>
-								<li class="reveal">
-					<div class="about_3_2_mid">
-						<Div class="about_3_2_mid_left">
-							AIOT						</Div>
-						<Div class="about_3_2_mid_right">
-							<div>
-Ambition<br>
-Open and win-win
-</div>
-<div>
-Innovation<br>
-Team work
-</div>						</Div>
-					</div>
-				</li>
-							</ul>
+								</ul>
 		</Div>
 	</Div>
 </Div>
@@ -232,7 +213,7 @@ Team work
 					Historical Events
 				</div>
 				<div class="about_4_1_right_2 reveal">
-					2024-2012				</div>
+					2012–Present				</div>
 				<Div class="about_4_1_right_3 reveal">
 					<div class="swiper-container swiper-container-banner2d">
 				<div class="swiper-wrapper">
@@ -245,7 +226,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								Launched of New Product Series: Hicloud, Hitelecom, Hisenor							</div>
+								Launched the HiCloud, Hitelecom, and HiSensor product series							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Businessman touching a cloud icon connecting smart devices" src="/images/about/up_a5aa82f7fdfa590777ffd5e3835fc891.webp">
 							</Div>
@@ -260,7 +241,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								Passed the Shanghai High-Tech Enterprise again							</div>
+								Renewed Shanghai High-Tech Enterprise Certification							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Modern glass office buildings" src="/images/about/up_79fb40fb3c9993aeef9cfde329dad51c.webp">
 							</Div>
@@ -275,7 +256,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								Over 1 million units shipped							</div>
+								Cumulative shipments exceeded one million units							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Customer giving a thumbs up" src="/images/about/up_6482879a38595652a4061e4ab9a64b81.webp">
 							</Div>
@@ -290,7 +271,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								Launch 4G Wireless Digital Temperature Sensors							</div>
+								Launched 4G wireless digital temperature sensors							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Digital city rising from a chip — IoT sensor technology" src="/images/about/up_06880ebe7ace4cb7282cbd13089145d1.webp">
 							</Div>
@@ -305,7 +286,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								Awarded the Shanghai High-Tech Enterprise title							</div>
+								Recognized as a Shanghai High-Tech Enterprise							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Business team reviewing data charts together" src="/images/about/up_a5104b13712daeebd2bf7bbe8f19de1e.webp">
 							</Div>
@@ -320,7 +301,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								Production base expanded again and certified by ISO 14000
+								Expanded the production facility and obtained ISO 14001 certification
 							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Engineer working on a laptop with digital documents" src="/images/about/up_71443115ba17cd3e9c08c00790bdf35f.webp">
@@ -336,7 +317,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								IoT Shared End-to-End Over 100,000 Units							</div>
+								Cumulative IoT terminal shipments exceeded 100,000 units							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Finger touching a digital globe linking IoT cloud services" src="/images/about/up_03ad10a23f7acea89d767532677b3f82.webp">
 							</Div>
@@ -351,7 +332,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								Launched the 4G Cat.1 Series Products							</div>
+								Launched the 4G Cat. 1 product series							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Hitelecom 4G Cat.1 series product launch event" src="/images/about/up_d442314613a54334e853eb2ff35b5470.webp">
 							</Div>
@@ -366,7 +347,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								Product successfully launched in the Mexican telecom market							</div>
+								Entered the Mexican telecommunications market							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Business handshake — Hitelecom enters the Mexican telecom market" src="/images/about/up_7f6ba4d0580cd31ede9914ce28dd6f3e.webp">
 							</Div>
@@ -381,7 +362,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								Continuous International Business Expansion							</div>
+								Expanded International Operations							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="World map with connection arcs over a city — global business expansion" src="/images/about/up_47f7ff8e7fb51884d2fb0797eb73a7de.webp">
 							</Div>
@@ -396,7 +377,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								Initiating R&D for Copper/GPRS Products							</div>
+								Began R&D on copper-line and GPRS communication products							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Gloved hand holding a processor chip over a circuit board" src="/images/about/up_d9dffdec3adfc8590991fc61fc1c8c34.webp">
 							</Div>
@@ -411,7 +392,7 @@ Team work
 							<div class="about_4_1_right_3_mid_2">
 															</div>
 							<div class="about_4_1_right_3_mid_3">
-								Hitelecom Corporation Established
+								Hitelecom was founded in Shanghai
 							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="City skyline at night" src="/images/about/up_fe5d25bad5ee23fe9040d78a39f13ec8.webp">
@@ -533,8 +514,7 @@ Team work
 				</div>
 			</div>
 			<div class="about_6_1_right reveal">
-				 Our company focuses on innovative R&D, holding numerous software copyrights and patent licenses, and is certified as a high-tech enterprise. 
-Hitelecom operates its own factory, featuring automotive-grade electronic production lines and fully ISO-certified, ensuring exceptional quality in products and services.
+				 Hitelecom develops products in-house and operates its own electronics manufacturing facility. The management systems and product certifications shown below are listed with their scope as issued.
 			</div>
 		</div>
 		<div class="about_6_2 reveal">
@@ -546,7 +526,7 @@ Hitelecom operates its own factory, featuring automotive-grade electronic produc
 						<img alt="Shanghai High-Tech Enterprise certificate awarded to Hitelecom" src="/images/about/up_55e8d7ea6e1f89a8c7fffdc57b4ec136.webp">
 					</div>
 					<div class="about_6_2_2">
-						Hi-Tech Enterprise					</div>
+						High-Tech Enterprise					</div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="02">
@@ -570,7 +550,7 @@ Hitelecom operates its own factory, featuring automotive-grade electronic produc
 						<img alt="IATF 16949 automotive quality management certificate" src="/images/about/up_b6d04de84606f61cbcf67b1b0d9f3435.webp">
 					</div>
 					<div class="about_6_2_2">
-						IATF16949					</div>
+						IATF 16949					</div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="05">
@@ -586,7 +566,7 @@ Hitelecom operates its own factory, featuring automotive-grade electronic produc
 						<img alt="Product test report" src="/images/about/up_c34f7bacf3b7a670e23804c57fea08c4.webp">
 					</div>
 					<div class="about_6_2_2">
-						Test report					</div>
+						Test Report					</div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="07">
@@ -594,7 +574,7 @@ Hitelecom operates its own factory, featuring automotive-grade electronic produc
 						<img alt="ISO 45001 Occupational Health and Safety Management System certificate" src="/images/about/up_4b1823fc9fd0b25634779ed78ae5e503.webp">
 					</div>
 					<div class="about_6_2_2">
-						ISO45001					</div>
+						ISO 45001					</div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="08">
@@ -602,7 +582,7 @@ Hitelecom operates its own factory, featuring automotive-grade electronic produc
 						<img alt="CE Verification of Conformity for Hitelecom products" src="/images/about/up_92affa8599dcbcf437812dea59d58c51.webp">
 					</div>
 					<div class="about_6_2_2">
-						Red Certification					</div>
+						RED Certification (EU Radio Equipment Directive)					</div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="09">
@@ -610,7 +590,7 @@ Hitelecom operates its own factory, featuring automotive-grade electronic produc
 						<img alt="ISO 14001 Environmental Management System certificate" src="/images/about/up_b1da6ee138db473e64f26648471d2883.webp">
 					</div>
 					<div class="about_6_2_2">
-						ISO14001					</div>
+						ISO 14001					</div>
 				  </div>
 				   
 		  

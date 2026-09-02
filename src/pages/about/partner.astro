@@ -13,7 +13,7 @@ const breadcrumbLd = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
     { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.hitelecom.com/about.html' },
-    { '@type': 'ListItem', position: 3, name: 'Ecological Partners', item: 'https://www.hitelecom.com/about/partner.html' },
+    { '@type': 'ListItem', position: 3, name: 'Partners', item: 'https://www.hitelecom.com/about/partner.html' },
   ],
 };
 const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
@@ -22,8 +22,8 @@ const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa
 <BaseLayout
   preloadImage={aboutBanner}
   locale="en"
-  title="Partner Program | IoT Sensor Channel & Ecological Partners - Hitelecom"
-  description="Join the Hitelecom partner network: channel-first strategy for industrial IoT sensors, outdoor 4G and NB-IoT terminals, with training, marketing and technical support for partners."
+  title="Partner Program | Industrial IoT Sensors"
+  description="Join Hitelecom's partner network for industrial IoT sensors, with product training, solution support, technical service and joint market development."
 >
   <AboutShell>
     <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />

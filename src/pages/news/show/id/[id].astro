@@ -18,7 +18,7 @@ const d = await getNewsContent('en');
 const det = d.details[id];
 const card = d.index[id];
 // 原站英文 1394 已按中文版补齐；SEO 标题兜底
-const pageTitle = det.title ? `${det.title} - Hitelecom` : 'News Center - Hitelecom';
+const pageTitle = det.title ? det.title : 'Hitelecom News | Industrial IoT Products and Events';
 // 部分文章在原站列表无摘要：退回正文纯文本截取，避免多页共用同一 description
 const bodyText = det.body
   .replace(/<[^>]+>/g, ' ')
@@ -29,7 +29,7 @@ const bodyText = det.body
   .replace(/\s+/g, ' ')
   .trim();
 const pageDesc = card?.excerpt || bodyText.slice(0, 160) || undefined;
-const isoDate = (det.date.match(/(\d{4})\.(\d{2})\.(\d{2})/) || []).slice(1).join('-') || undefined;
+const isoDate = (det.date.match(/(\d{4})[-.](\d{2})[-.](\d{2})/) || []).slice(1).join('-') || undefined;
 const articleImg = card?.img ? new URL(await optimizedSrc(card.img, { width: 900 }), Astro.site).href : undefined;
 
 const catUrl = { company: 'news.html', exh: 'news/index/cid/81.html', ind: 'news/index/cid/80.html' }[det.cat];

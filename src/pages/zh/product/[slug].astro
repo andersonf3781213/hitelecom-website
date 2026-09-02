@@ -63,7 +63,6 @@ const productLd = {
   offers: {
     '@type': 'Offer',
     url: pageUrl,
-    availability: 'https://schema.org/InStock',
     itemCondition: 'https://schema.org/NewCondition',
     businessFunction: 'http://purl.org/goodrelations/v1#Sell',
     seller: { '@id': 'https://www.hitelecom.com/#organization' },
@@ -79,15 +78,7 @@ const productLd = {
     .filter((rid) => productContent.zh.details[rid])
     .slice(0, 6)
     .map((rid) => ({ '@type': 'Product', '@id': `https://www.hitelecom.com/zh/product/${productSlugs[rid]}.html#product` })),
-  ...(d.certifications?.length
-    ? {
-        hasCertification: d.certifications.map((c) => ({
-          '@type': 'Certification',
-          name: c,
-          issuedBy: { '@type': 'Organization', name: c.startsWith('ISO') ? 'ISO' : 'Regulatory body' },
-        })),
-      }
-    : {}),
+  // 产品级不再声明 ISO 9001（体系认证属组织层级，见 BaseLayout）；IP 等级以规格表呈现
 };
 const webPageLd = {
   '@context': 'https://schema.org',
@@ -140,7 +131,7 @@ const breadcrumbLd = {
               <div class="pro_info_1_mask_4">
                 <div class="yun_6_1 reveal">
                   <ul>
-                    {d.pdf && <li><a href={d.pdf} target="_blank" rel="noopener" class="css3"><span>下载PDF</span></a></li>}
+                    {d.pdf && <li><a href={d.pdf} target="_blank" rel="noopener" class="css3"><span>下载规格书</span></a></li>}
                     <li><a href={l('/about/contact', 'zh')} class="css3"><span>联系我们</span></a></li>
                   </ul>
                 </div>
@@ -212,8 +203,7 @@ const breadcrumbLd = {
                   <div class="yun_6_1 reveal" id="spec-tabs">
                     <ul>
                       <li><a href="javascript:;" class="css3 on" data-tab="param"><span>技术参数</span></a></li>
-                      <li><a href="javascript:;" class="css3" data-tab="cert"><span>认证证书</span></a></li>
-                    </ul>
+                                          </ul>
                   </div>
                 </div>
               </div>
@@ -233,7 +223,6 @@ const breadcrumbLd = {
                 </tbody>
               </table>
             </div>
-            <div class="pro_info_3_mid_right_mid" data-pane="cert" hidden></div>
           </div>
         </div>
       </div>

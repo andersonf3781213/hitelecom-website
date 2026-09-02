@@ -230,7 +230,7 @@
 											<div class="qa_4_2_mid_2">
 												<div class="qa_4_2_mid_2_mid">
 													<div class="qa_4_2_mid_2_mid_1">
-														KOHYOUNG SPI 													</div>
+														Koh Young SPI 													</div>
 													<div class="qa_4_2_mid_2_mid_2">
 														三维锡膏在线检测系统													</div>
 												</div>
@@ -268,9 +268,9 @@
 											<div class="qa_4_2_mid_2">
 												<div class="qa_4_2_mid_2_mid">
 													<div class="qa_4_2_mid_2_mid_1">
-														RHEM Reflow<br>回流焊													</div>
+														REHM Reflow<br>回流焊													</div>
 													<div class="qa_4_2_mid_2_mid_2">
-														RHEM Reflow VS系列													</div>
+														REHM Reflow VS系列													</div>
 												</div>
 											</div>
 										</div>
@@ -436,7 +436,7 @@
 					严格的质量控制流程
 				</div>
 				<div class="qa_6_mid_right_2 reveal">
-					<p>宏太团队采用全面质量管理（TQM）的管理理念<br/></p><p>确保产品开发、生产、销售和服务的每一步都进行质量控制</p><p>通过全面参与和持续改进，目标是实现零缺陷的产品和服务</p><p>我们已成功通过ISO9001和IATF16949质量管理体系认证</p>				</div>
+					<p>宏太团队采用全面质量管理（TQM）的管理理念<br/></p><p>确保产品开发、生产、销售和服务的每一步都进行质量控制</p><p>通过全面参与和持续改进，目标是实现零缺陷的产品和服务</p><p>我们已成功通过ISO 9001 和 IATF 16949质量管理体系认证</p>				</div>
 			</div>
 		</Div>
 	</div>
@@ -449,7 +449,7 @@
 		</Div>
 		<div class="index_1_2 reveal">
 			<div class="qa_7_font">
-				 宏太作为现代制造业的一分子，我们对绿色地球可持续发展和人类健康肩负责任。正因如此，我们不仅遵守RoHS合规性、EU REACH法规和无卤要求，更通过ISO14000环境管理体系的认证，将环境保护的承诺融入我们的日常运营和长远规划之中。
+				 宏太作为现代制造业的一分子，我们对绿色地球可持续发展和人类健康肩负责任。正因如此，我们不仅遵守RoHS合规性、EU REACH法规和无卤要求，更通过ISO 14001环境管理体系的认证，将环境保护的承诺融入我们的日常运营和长远规划之中。
 
 
 			</div>

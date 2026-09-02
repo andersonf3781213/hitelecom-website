@@ -57,40 +57,40 @@ const staticConfig: Record<Locale, Pick<NewsContent,
   readmore: 'Read More',
   faqs: [
    {
-    date: 'hitelecom 2024.02.28',
+    date: 'Hitelecom · February 28, 2024',
     q: 'Many sensors rely on mains power or large batteries — does high energy consumption limit their operational lifespan?',
-    a: 'Hitelecom adopts ultra-low-power design and power-saving technologies, combined with edge computing, enabling most of our sensors to achieve over 10 years of operational longevity (depending on communication upload frequency), while significantly reducing maintenance costs and simplifying deployment in locations without mains power.',
+    a: 'Hitelecom sensor terminals use low-power processors, optimized power management, and configurable reporting intervals. Selected battery-powered models are designed for more than 10 years of service at a one-hour reporting interval; actual battery life depends on the model, reporting interval, network conditions, and operating temperature.',
    },
    {
-    date: 'hitelecom 2024.04.16',
+    date: 'Hitelecom · April 16, 2024',
     q: 'Can electromagnetic interference (EMI) compromise sensor accuracy and signal integrity?',
-    a: 'Hitelecom sensors feature EMC (Electromagnetic Compatibility) design, incorporating comprehensive anti-interference technology to enhance resistance to external disruptions and minimize electromagnetic interference with the environment. This ensures highly reliable data acquisition and stable communication, even in electrically noisy industrial environments.',
+    a: 'Selected models are designed and tested for EMC requirements applicable to their target environments. Ask for the relevant test report for your model.',
    },
    {
-    date: 'hitelecom 2024.06.26',
+    date: 'Hitelecom · June 26, 2024',
     q: 'Can inappropriate sensor placement compromise data accuracy and sensor effectiveness?',
-    a: 'Before deployment, a detailed on-site analysis will be conducted, and the Hitelecom engineering team will work with you to determine the optimal sensors location.',
+    a: 'Before deployment, our engineering team reviews your site conditions and works with you to determine the optimal sensor locations.',
    },
    {
-    date: 'hitelecom 2024.08.28',
+    date: 'Hitelecom · August 28, 2024',
     q: 'Can measurement accuracy drift due to temperature variations, electromagnetic interference, or other environmental factors?',
-    a: 'Hitelecom selects high-quality, high-precision sensors, customizes them according to specific customer requirements, and implements appropriate calibration in the sensor deployment environment.',
+    a: 'Hitelecom selects high-quality sensing elements, customizes configurations to customer requirements, and supports calibration matched to the deployment environment.',
    },
    {
-    date: 'hitelecom 2025.10.16',
+    date: 'Hitelecom · October 16, 2025',
     q: 'How can devices maintain stable network connectivity for data transmission in remote or complex environments?',
-    a: 'Hitelecom supports multiple communication protocols (Cat.1, NB-IoT, LoRa) to meet the mixed networking needs in complex environments. For data-sensitive scenarios, we offer private deployment solutions and further enhance connection stability and reliability through multi-network redundancy and automatic failover, ensuring field data reaches the platform even from remote sites.',
+    a: 'Hitelecom supports 4G Cat. 1, NB-IoT, and LoRa connectivity to fit complex sites. For data-sensitive scenarios, private deployment options keep field data flowing to your platform even from remote locations.',
    },
    {
-    date: 'hitelecom 2025.12.12',
+    date: 'Hitelecom · December 12, 2025',
     q: 'IoT devices and applications require regular updates to fix vulnerabilities and add features — how is this managed remotely?',
-    a: 'Hitelecom Cloud Platform features remote OTA capabilities, compatible with both iOS and Android devices, offering regular updates to establish a reliable remote device management and update protocol. Emphasizing secure and stable updates, it includes a robust version-management and rollback mechanism, so every update remains traceable and recoverable across large device fleets.',
+    a: 'Supported devices can receive OTA firmware updates through Hitelecom Cloud. Update scheduling, version tracking, and rollback options depend on the device and deployment configuration.',
    },
   ],
-  relatedHeading: 'More information you may be interested in',
+  relatedHeading: 'Related Articles',
   crumbHome: 'Home',
   crumbNews: 'News',
-  returnLabel: 'Return',
+  returnLabel: 'Back to News',
   catNames: { company: 'Company News', exh: 'Exhibition', ind: 'Industry News', case: 'Success Stories', blog: 'Tech Blog' },
  },
  zh: {
@@ -106,34 +106,34 @@ const staticConfig: Record<Locale, Pick<NewsContent,
   readmore: 'Read More',
   faqs: [
    {
-    date: 'hitelecom 2024.02.28',
+    date: '宏太 · 2024年2月28日',
     q: '许多传感器依赖外部或超大电池供电，高能耗会限制它们的使用寿命？',
-    a: '宏太采用超低功耗和电源节能技术，结合边缘计算，我们的大部分传感器可实现超过10年的持久运行(视通信上传频率决定)，同时显著提高能效。',
+    a: '宏太传感终端采用低功耗处理器、优化的电源管理与可配置上报间隔。部分电池型号按 1 小时上报间隔设计续航可超过 10 年；实际续航取决于型号、上报频率、网络状况与环境温度。',
    },
    {
-    date: 'hitelecom 2024.04.16',
+    date: '宏太 · 2024年4月16日',
     q: '电磁干扰可能影响传感器的测量准确性和信号完整性？',
-    a: '宏太传感器采用电磁兼容（EMC）设计，通过综合抗干扰技术，优化外部干扰的抵抗能力及减少了对环境的电磁干扰，确保了高度稳定与可靠的性能表现，满足严格的商业应用标准。',
+    a: '部分型号按目标应用场景的电磁兼容（EMC）要求设计并测试，可索取对应型号的检测报告。',
    },
    {
-    date: 'hitelecom 2024.06.26',
+    date: '宏太 · 2024年6月26日',
     q: '不恰当的传感器部署位置可能影响数据的准确性和传感器的有效性？',
     a: '在部署前进行详细的现场分析，宏太工程团队会与您确定最佳的传感器位置。',
    },
    {
-    date: 'hitelecom 2024.08.28',
+    date: '宏太 · 2024年8月28日',
     q: '传感器的测量数据可能因为多种因素（如温度变化、电磁干扰等）而失去精度？',
-    a: '宏太选择高质量高精度的传感器，根据客户的具体需求进行定制，并在传感器部署环境中实施适当的校准。',
+    a: '宏太选用高质量、高精度传感元件，按客户需求定制配置，并支持针对部署环境的校准。',
    },
    {
-    date: 'hitelecom 2025.10.16',
+    date: '宏太 · 2025年10月16日',
     q: '在偏远或复杂环境中，维持稳定的网络连接以传输数据可能是一个挑战？',
-    a: '宏太支持多通信协议（Cat.1, NB-IoT, LoRa），适应复杂环境下的混合组网需求。针对数据敏感场景，我们提供私有化部署方案，并通过设计网络冗余机制，显著提升连接稳定性与可靠性，确保业务连续性。',
+    a: '宏太支持 4G Cat.1、NB-IoT、LoRa 等通信方式，适应复杂环境组网。针对数据敏感场景，提供私有化部署方案，保障现场数据稳定到达平台。',
    },
    {
-    date: 'hitelecom 2025.12.12',
+    date: '宏太 · 2025年12月12日',
     q: '物联网设备和应用程序需要定期更新以修复漏洞、添加功能，且可能影响设备正常运行？',
-    a: '宏太云平台实现远程OTA功能，同时兼容iOS和Android设备，并定期推送更新，确立了一套可靠的远程设备管理与更新流程。此流程强调更新的安全性与稳定性，且配备回滚功能，以便在更新不成功时迅速恢复系统稳定。',
+    a: '支持的设备可通过宏太云平台接收 OTA 固件升级；升级计划、版本记录与回滚能力取决于具体型号与部署配置。',
    },
   ],
   relatedHeading: '您可能感兴趣的更多信息',
@@ -186,6 +186,16 @@ export async function getNewsContent(locale: Locale): Promise<NewsContent> {
     }
   }
 
+  // 上一篇/下一篇：标题一律按 ID 从索引同步（frontmatter pn 中常有旧标题复制残留）；
+  // EN 标签统一为 Previous / Next
+  for (const d of Object.values(details)) {
+    for (const p of d.pn ?? []) {
+      const t = index[p.id]?.title;
+      if (t) p.title = t;
+      if (locale === 'en' && /^prev/i.test(p.label)) p.label = 'Previous';
+    }
+  }
+
   const byPos = (a: { pos: number }, b: { pos: number }) => a.pos - b.pos;
   const strip = (list: (NewsListItem & { pos: number })[]): NewsListItem[] =>
     list.sort(byPos).map(({ pos: _pos, ...c }) => c);
@@ -214,6 +224,15 @@ export async function getNewsContent(locale: Locale): Promise<NewsContent> {
     details,
     index,
   };
+}
+
+const MONTHS_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+/** 新闻日期显示：ISO 日期（YYYY-MM-DD）按英文习惯渲染为 "January 1, 2025"，其他格式原样返回 */
+export function fmtNewsDate(date: string): string {
+  const m = date.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return date;
+  return `${MONTHS_EN[+m[2] - 1]} ${+m[3]}, ${m[1]}`;
 }
 
 /** 某语言下全部新闻 id（供 getStaticPaths） */

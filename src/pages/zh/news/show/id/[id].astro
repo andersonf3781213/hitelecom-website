@@ -27,7 +27,7 @@ const bodyText = det.body
   .replace(/\s+/g, ' ')
   .trim();
 const pageDesc = card?.excerpt || bodyText.slice(0, 160) || undefined;
-const isoDate = (det.date.match(/(\d{4})\.(\d{2})\.(\d{2})/) || []).slice(1).join('-') || undefined;
+const isoDate = (det.date.match(/(\d{4})[-.](\d{2})[-.](\d{2})/) || []).slice(1).join('-') || undefined;
 const articleImg = card?.img ? new URL(await optimizedSrc(card.img, { width: 900 }), Astro.site).href : undefined;
 
 const catUrl = { company: 'zh/news.html', exh: 'zh/news/index/cid/81.html', ind: 'zh/news/index/cid/80.html' }[det.cat];

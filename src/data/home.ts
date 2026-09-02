@@ -36,43 +36,43 @@ export interface NewsItem {
 const en = {
   nav: [
     { label: 'Home', href: '/' },
-    { label: 'Product', href: '/product/' },
-    { label: 'Solution', href: '/solution/' },
-    { label: 'Service', href: '/service/' },
+    { label: 'Products', href: '/product/' },
+    { label: 'Solutions', href: '/solution/' },
+    { label: 'Support', href: '/service/' },
     { label: 'News', href: '/news/' },
     { label: 'About', href: '/about/' },
   ],
   langSwitch: { label: 'Chinese', href: '/zh.html' },
-  showOnline: 'Show Online',
+  showOnline: 'View Cloud Demo',
   searchPlaceholder: 'Search products, solutions, news…',
 
   hero: {
     slides: [
       {
-        eyebrow: 'IOT SENSORS',
-        title: 'Ultra-Low Power',
-        desc: 'More than 10-Year operational lifespan, supporting for diverse applications and environments',
-        cta: 'Read More',
+        eyebrow: 'INDUSTRIAL IoT SENSORS',
+        title: '10+ Years of Battery Life',
+        desc: 'Low-power 4G, NB-IoT, and LoRa sensor terminals built for remote industrial monitoring.',
+        cta: 'Explore Sensors',
         href: '/product/lists/cid/261#cate',
         bg: 'hero/bg-sensors.jpg',
         device: 'hero/device-sensors.png',
         deviceAlt: 'Hitelecom ultra-low power IoT sensors',
       },
       {
-        eyebrow: 'IOT GATEWAYS',
+        eyebrow: 'IoT GATEWAYS',
         title: 'Durable & Reliable',
-        desc: 'Integrate LTE, 5G, NB-IoT, Wi-Fi, Ethernet and LoRa connectivity options, with OTA updates allowing for remote firmware and software upgrades',
-        cta: 'Read More',
+        desc: 'Connect LoRa sensor networks to the cloud over 4G LTE or Ethernet, with remote OTA updates.',
+        cta: 'Explore Gateways',
         href: '/product/lists/cid/258#cate',
         bg: 'hero/bg-gateways.jpg',
         device: 'hero/device-gateways.png',
         deviceAlt: 'Hitelecom industrial IoT gateways',
       },
       {
-        eyebrow: 'HITELECOM CLOUD',
+        eyebrow: 'IoT CLOUD PLATFORM',
         title: 'Remote Monitoring',
-        desc: 'A powerful cloud platform that enables real-time monitoring of devices, data analysis, system maintenance, and remote control.',
-        cta: 'Read More',
+        desc: 'Connect, monitor, analyze, and manage field devices from one cloud platform.',
+        cta: 'Explore IoT Cloud',
         href: '/product/#cate',
         bg: 'hero/bg-cloud.jpg',
         device: 'hero/device-cloud.png',
@@ -82,24 +82,24 @@ const en = {
   },
 
   intro: {
-    title: 'We are the IoT company',
+    title: 'Industrial IoT, from Sensor to Cloud',
     subtitle:
-      'Hitelecom is a leading Provider of IoT turnkey system solutions in China. We provide intelligent IoT sensors & devices, reliable gateways & controllers, powerful cloud platform, user-friendly App service, enabling our clients to optimize operations, increase efficiency, predict trends, and drive smart innovation while saving costs.',
+      'Hitelecom designs and manufactures industrial IoT sensors, gateways, and cloud-connected monitoring solutions. We support 4G LTE, NB-IoT, LoRa/LoRaWAN, customer-platform integration, private deployment, and OEM/ODM development.',
     features: [
-      { icon: 'features/icon-sensors.png', title: 'IoT Sensors', desc: 'Collect data,Temp, pressure, air quality, etc' },
-      { icon: 'features/icon-controllers.png', title: 'IoT Controllers', desc: 'Edge computing and control' },
-      { icon: 'features/icon-cloud.png', title: 'IoT Cloud', desc: 'Intelligent device connectivity, management, and maintenance' },
-      { icon: 'features/icon-gateways.png', title: 'IoT Gateways', desc: 'The Bridge between Devices and the Cloud' },
-      { icon: 'features/icon-customized.png', title: 'IoT Customized', desc: 'Custom embedded software and hardware' },
-      { icon: 'features/icon-app.png', title: 'IoT App', desc: 'Remote configuration, monitoring, alerting, and upgrading' },
+      { icon: 'features/icon-sensors.png', title: 'IoT Sensors', desc: 'Measure temperature, humidity, pressure, air quality, and other field conditions.' },
+      { icon: 'features/icon-controllers.png', title: 'IoT Controllers', desc: 'Local data processing and control for connected equipment.' },
+      { icon: 'features/icon-cloud.png', title: 'IoT Cloud', desc: 'Connect, monitor, configure, and maintain devices remotely.' },
+      { icon: 'features/icon-gateways.png', title: 'IoT Gateways', desc: 'Connect field devices to cloud or private platforms.' },
+      { icon: 'features/icon-customized.png', title: 'Custom IoT Development', desc: 'Custom hardware, firmware, enclosures, and platform integration.' },
+      { icon: 'features/icon-app.png', title: 'IoT App', desc: 'Configure devices, monitor data, receive alerts, and manage supported updates remotely.' },
     ] as Feature[],
   },
 
   showcase: [
     {
       title: 'Cloud Platform',
-      desc: 'One-stop cloud-native IoT platform, Integrated with device connectivity, device management, business analytics, and application enablement.',
-      cta: 'Read More',
+      desc: 'A cloud-native IoT platform for device connectivity, remote management, data visualization, alerts, and application integration.',
+      cta: 'Explore IoT Cloud',
       href: '/product/',
       image: 'sections/cloud-platform.png',
       imageAlt: 'Hitelecom cloud-native IoT platform illustration',
@@ -107,8 +107,8 @@ const en = {
     },
     {
       title: 'IoT Gateways',
-      desc: 'The bridge between sensors and the Cloud. provide protocol translation and data aggregation services. also supports local edge computing to minimize cloud upload volume.',
-      cta: 'Read More',
+      desc: 'Connect sensors to the cloud with protocol conversion, data aggregation, and optional edge processing.',
+      cta: 'Explore Gateways',
       href: '/product/lists/cid/258#cate',
       image: 'sections/iot-gateways.jpg',
       imageAlt: 'Hitelecom IoT gateways connect sensors to the cloud',
@@ -116,8 +116,8 @@ const en = {
     },
     {
       title: 'IoT Sensors',
-      desc: 'Perception, measurement, and collection of data from the physical world such as temperature, humidity, pressure, vibration, motion, and air quality',
-      cta: 'Read More',
+      desc: 'Measure temperature, humidity, pressure, vibration, motion, air quality, and other physical conditions.',
+      cta: 'Explore Sensors',
       href: '/product/lists/cid/261#cate',
       image: 'sections/iot-sensors.jpg',
       imageAlt: 'Hitelecom IoT sensors for data collection',
@@ -126,32 +126,32 @@ const en = {
   ] as ShowcaseItem[],
 
   solutions: {
-    title: 'Explore our IoT Solutions',
+    title: 'Explore Our IoT Solutions',
     subtitle:
-      'Real time monitoring, control, and decision-making driven by sensors and AIoT, achieving intelligent production, improving efficiency, quality, and sustainability',
+      'Monitor field conditions in real time, automate responses, and make faster operational decisions with connected sensors and cloud data.',
     items: [
-      { icon: 'solutions/icon-industrial.png', label: 'Industrial IoT Solution', href: '/solution/show/id/57' },
-      { icon: 'solutions/icon-agriculture.png', label: 'Agriculture IoT Solution', href: '/solution/show/id/64' },
-      { icon: 'solutions/icon-building.png', label: 'Building IoT Solution', href: '/solution/show/id/60' },
-      { icon: 'solutions/icon-campus.png', label: 'Campus IoT Solution', href: '/solution/show/id/67' },
-      { icon: 'solutions/icon-energy.png', label: 'Energy IoT Solution', href: '/solution/show/id/58' },
-      { icon: 'solutions/icon-healthcare.png', label: 'Healthcare IoT Solution', href: '/solution/show/id/59' },
+      { icon: 'solutions/icon-energy.png', label: 'Industrial Monitoring', href: '/solution/show/id/58' },
+      { icon: 'solutions/icon-agriculture.png', label: 'Smart Agriculture', href: '/solution/show/id/65' },
+      { icon: 'solutions/icon-campus.png', label: 'Smart Water', href: '/solution/show/id/67' },
+      { icon: 'solutions/icon-healthcare.png', label: 'Smart Energy', href: '/solution/show/id/59' },
+      { icon: 'solutions/icon-industrial.png', label: 'Smart City', href: '/solution/show/id/57' },
+      { icon: 'solutions/icon-building.png', label: 'Smart Industrial Parks', href: '/solution/show/id/60' },
     ] as SolutionItem[],
   },
 
   news: {
     title: 'News Center',
     subtitle:
-      "The Hitelecom's announcement of new product launches, updates on industry trends, and information regarding upcoming trade shows and exhibitions.",
-    cta: 'Read More',
+      'Company updates, product launches, industry insights, and upcoming events from Hitelecom.',
+    cta: 'View All News',
     moreHref: '/news/',
     items: [
       {
         image: 'news/news-iote-2024.png',
         imageAlt: 'Hitelecom at IOTE 2024 International IoT Expo Shenzhen',
-        source: 'hitelecom',
+        source: 'Hitelecom',
         date: '2024.08.28',
-        title: 'Hitelecom Debuts at IOTE 2024 International IoT Expo, Shenzhen',
+        title: 'Hitelecom Exhibits at IOTE Shenzhen 2024',
         excerpt:
           "The 22nd International IoT Exhibition (IOTE 2024) Shenzhen will be held from August 28th to 30th, 2024, at the Shenzhen World Exhibition & Convention Center (Bao'an). As a professional IoT product and service provider, Hitelecom will showcase its IoT industry solutions at booth 10B33 in Hall 10.",
         href: '/news/show/id/1377',
@@ -159,72 +159,72 @@ const en = {
       {
         image: 'news/news-pipeline.png',
         imageAlt: 'Underground utility networks investment',
-        source: 'hitelecom',
+        source: 'Hitelecom',
         date: '2024.03.09',
-        title: '4 Trillion RMB New Investment in Underground Utility Networks',
+        title: 'China Plans Major Upgrades to Urban Underground Utilities',
         excerpt:
           'On March 9, 2024, during the press conference on people\u2019s livelihood at the Second Session of the 14th National People\u2019s Congress, over 100,000 kilometers of underground pipelines will be upgraded, and flood-prone areas management will be initiated in 100 cities.',
         href: '/news/show/id/1379',
       },
       {
         image: 'news/news-iso9001.jpg',
-        imageAlt: 'Hitelecom ISO9001 quality system certification',
-        source: 'hitelecom',
+        imageAlt: 'Hitelecom ISO 9001 quality management certification',
+        source: 'Hitelecom',
         date: '2023.08.28',
-        title: 'ISO9001 Quality System Certification',
+        title: 'Hitelecom Achieves ISO 9001 Certification',
         excerpt:
-          'Our company is proud to announce that we have successfully passed the ISO 9001 Quality Management System certification. This achievement marks a significant step in our commitment to providing high-quality products and services.',
+          'Hitelecom has achieved ISO 9001 quality management system certification, covering the design and manufacture of IoT sensor products.',
         href: '/news/show/id/1357',
       },
     ] as NewsItem[],
   },
 
   partners: {
-    title: 'Ecosystem',
+    title: 'Partners',
     subtitle:
-      "Collaborating with partners, we're building a smarter IoT ecosystem for a future of enhanced efficiency and innovation",
+      'Working with technology and channel partners to deliver reliable IoT deployments worldwide.',
   },
 
   cta: {
-    title: 'Hitelecom, Developing a cloud platform tailored for your IoT needs',
+    title: 'Build Your IoT Solution with Hitelecom',
     subtitle:
-      'A one-stop suite of professional solutions for IoT sensors, communication transmission, Cloud platform, smart scenarios, and custom services.',
-    primary: { label: 'Try it now', href: 'http://cloud.hitelecom.com/' },
-    secondary: { label: 'Contact us', href: '/about/contact' },
+      'From sensors and connectivity to cloud integration and OEM/ODM development, we help turn field data into deployable solutions.',
+    primary: { label: 'View Cloud Demo', href: 'http://cloud.hitelecom.com/' },
+    secondary: { label: 'Discuss Your Project', href: '/about/contact' },
   },
 
   footer: {
     columns: [
       {
-        title: 'PRODUCT',
+        title: 'PRODUCTS',
         links: [
           { label: 'IoT Cloud', href: '/product/' },
-          { label: 'IoT APP', href: '/product/app' },
+          { label: 'IoT App', href: '/product/app' },
           { label: 'IoT Sensors', href: '/product/lists/cid/261' },
           { label: 'IoT Gateways', href: '/product/lists/cid/258' },
           { label: 'Weather Station', href: '/product/lists/cid/257' },
-          { label: 'Customized', href: '/product/lists/cid/256' },
+          { label: 'Custom Development', href: '/product/lists/cid/256' },
         ],
       },
       {
-        title: 'SOLUTION',
+        title: 'SOLUTIONS',
         links: [
-          { label: 'Smart Industrial', href: '/solution/show/id/58' },
+          { label: 'Industrial IoT', href: '/solution/show/id/58' },
           { label: 'Smart Agriculture', href: '/solution/show/id/65' },
           { label: 'Smart Campus', href: '/solution/show/id/64' },
-          { label: 'Smart Park', href: '/solution/show/id/60' },
+          { label: 'Smart Industrial Parks', href: '/solution/show/id/60' },
           { label: 'Smart Energy', href: '/solution/show/id/59' },
           { label: 'Smart City', href: '/solution/show/id/57' },
-          { label: 'Smart Scenic Area', href: '/solution/show/id/66' },
+          { label: 'Tourism and Heritage Sites', href: '/solution/show/id/66' },
           { label: 'Smart Water', href: '/solution/show/id/67' },
         ],
       },
       {
-        title: 'SERVICE',
+        title: 'SUPPORT',
         links: [
-          { label: 'Technical', href: '/service/#page1' },
+          { label: 'Technical Support', href: '/service/#page1' },
           { label: 'Software', href: '/service/#page2' },
-          { label: 'Document', href: '/service/#page3' },
+          { label: 'Downloads', href: '/service/#page3' },
           { label: 'After-Sales Service', href: '/service/#page4' },
         ],
       },
@@ -240,17 +240,17 @@ const en = {
       {
         title: 'ABOUT',
         links: [
-          { label: 'Company Introduction', href: '/about/' },
+          { label: 'Company Overview', href: '/about/' },
           { label: 'Quality & Reliability', href: '/about/quality' },
-          { label: 'Ecological Partners', href: '/about/partner' },
-          { label: 'Recruitment', href: '/about/joinus' },
-          { label: 'Contact', href: '/about/contact' },
+          { label: 'Partners', href: '/about/partner' },
+          { label: 'Careers', href: '/about/joinus' },
+          { label: 'Contact Us', href: '/about/contact' },
         ],
       },
     ],
     contactTitle: 'CONTACT',
     followTitle: 'FOLLOW US',
-    copyright: 'Copyright © 2018-2026 Hitelecom All Rights Reserved.',
+    copyright: '© 2018–2026 Hitelecom. All rights reserved.',
   },
 };
 
@@ -349,12 +349,12 @@ const zh: typeof en = {
     title: '为您量身定制的解决方案',
     subtitle: '以传感 + AI驱动实时监测、控制和决策，实现智能化生产，提高效率、质量和可持续性',
     items: [
-      { icon: 'solutions/icon-industrial.png', label: '智慧楼宇', href: '/solution/show/id/57' },
-      { icon: 'solutions/icon-agriculture.png', label: '智慧校园', href: '/solution/show/id/64' },
-      { icon: 'solutions/icon-building.png', label: '智慧消防', href: '/solution/show/id/60' },
+      { icon: 'solutions/icon-energy.png', label: '工业监测', href: '/solution/show/id/58' },
+      { icon: 'solutions/icon-agriculture.png', label: '智慧农业', href: '/solution/show/id/65' },
       { icon: 'solutions/icon-campus.png', label: '智慧水务', href: '/solution/show/id/67' },
-      { icon: 'solutions/icon-energy.png', label: '智慧工厂', href: '/solution/show/id/58' },
       { icon: 'solutions/icon-healthcare.png', label: '智慧能源', href: '/solution/show/id/59' },
+      { icon: 'solutions/icon-industrial.png', label: '智慧城市', href: '/solution/show/id/57' },
+      { icon: 'solutions/icon-building.png', label: '智慧园区', href: '/solution/show/id/60' },
     ],
   },
 

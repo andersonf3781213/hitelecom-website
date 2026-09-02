@@ -92,7 +92,7 @@
 							<li>
 								中国上海市松江区车阳路116号1栋2层							</li>
 							<li>
-								sales@hitelecom.cn							</li>
+								sales@hitelecom.com							</li>
 						</ul>
 					</div>
 					<div class="contact_1_mid_left_mid_3 reveal">
@@ -147,7 +147,7 @@
 									</li>
 									<li>
 										<div>
-											<textarea id="message" name="message" placeholder="如有需要请留言，我们将在24小时内给您回复..."></textarea>
+											<textarea id="message" name="message" placeholder="请告诉我们您的应用场景、数量需求、通信方式与部署环境，我们将在一个工作日内回复。"></textarea>
 										</div>
 									</li>
 								</ul>

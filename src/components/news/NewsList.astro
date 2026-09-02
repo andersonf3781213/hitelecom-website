@@ -6,7 +6,7 @@
 import Img from '../Img.astro';
 import NewsBanner from './NewsBanner.astro';
 import NewsTabs from './NewsTabs.astro';
-import { getNewsContent, type NewsCat } from '../../data/news';
+import { getNewsContent, fmtNewsDate, type NewsCat } from '../../data/news';
 import { l, type Locale } from '../../i18n';
 
 interface Props { locale: Locale; cat: NewsCat }
@@ -33,7 +33,7 @@ const detailHref = (id: string) => `${l(`/news/show/id/${id}`, locale)}`;
                   </div>
                   <div class="news_1_1_mid_right">
                     <div class="news_1_1_mid_right_mid">
-                      <div class="daxie news_1_1_mid_right_mid_1">{s.date}</div>
+                      <div class="daxie news_1_1_mid_right_mid_1">{fmtNewsDate(s.date)}</div>
                       <div class="news_1_1_mid_right_mid_2">{s.title}</div>
                       <div class="news_1_1_mid_right_mid_3">{s.excerpt}</div>
                       <div class="news_1_1_mid_right_mid_4"><span>{d.readmore}</span></div>
@@ -64,7 +64,7 @@ const detailHref = (id: string) => `${l(`/news/show/id/${id}`, locale)}`;
                 <Img src={it.img} alt={it.title || 'Hitelecom news'} widths={[480, 960]} sizes="(max-width: 640px) 100vw, (max-width: 810px) 49vw, 30vw" quality={85} />
               </div>
               <div class="news_2_1_2">
-                <div class="news_2_1_2_1 daxie">{it.date}</div>
+                <div class="news_2_1_2_1 daxie">{fmtNewsDate(it.date)}</div>
                 <div class="news_2_1_2_2">{it.title}</div>
                 <div class="news_2_1_2_3">{it.excerpt}</div>
                 <div class="news_1_1_mid_right_mid_4"><span>{d.readmore}</span></div>

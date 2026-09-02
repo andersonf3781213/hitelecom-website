@@ -84,7 +84,7 @@
 							</Div>
 							<div class="index_1_2 daxie reveal">
 								<div class="pa_1_1">
-									<p>随着AIOT工业物联网技术的飞速进步，我们积极推崇“渠道先行”的伙伴策略，建立和搭建一个透明、公正的合作伙伴网络。通过不同的销售渠道深化与客户关系，
+									<p>随着AIoT工业物联网技术的飞速进步，我们积极推崇“渠道先行”的伙伴策略，建立和搭建一个透明、公正的合作伙伴网络。通过不同的销售渠道深化与客户关系，
 共同打造一个互利共赢的工业物联网生态系统，确保每一位伙伴都能在这个生态中蓬勃发展。</p>
 								</div>
 							</div>
@@ -321,7 +321,7 @@
 									</li>
 									<li>
 										<div>
-											<textarea id="message" name="message" placeholder="如有需要请留言，我们将在24小时内给您回复..."></textarea>
+											<textarea id="message" name="message" placeholder="请告诉我们您的需求，我们将在一个工作日内回复。"></textarea>
 										</div>
 									</li>
 								</ul>

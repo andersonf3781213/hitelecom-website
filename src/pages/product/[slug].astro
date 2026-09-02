@@ -70,7 +70,6 @@ const productLd = {
   offers: {
     '@type': 'Offer',
     url: pageUrl,
-    availability: 'https://schema.org/InStock',
     itemCondition: 'https://schema.org/NewCondition',
     businessFunction: 'http://purl.org/goodrelations/v1#Sell',
     seller: { '@id': 'https://www.hitelecom.com/#organization' },
@@ -86,15 +85,7 @@ const productLd = {
     .filter((rid) => productContent.en.details[rid])
     .slice(0, 6)
     .map((rid) => ({ '@type': 'Product', '@id': `https://www.hitelecom.com/product/${productSlugs[rid] ?? rid}.html#product` })),
-  ...(d.certifications?.length
-    ? {
-        hasCertification: d.certifications.map((c) => ({
-          '@type': 'Certification',
-          name: c,
-          issuedBy: { '@type': 'Organization', name: c.startsWith('ISO') ? 'ISO' : 'Regulatory body' },
-        })),
-      }
-    : {}),
+  // 产品级不再声明 ISO 9001（体系认证属组织层级，见 BaseLayout）；IP 等级以规格表呈现
 };
 const webPageLd = {
   '@context': 'https://schema.org',
@@ -148,8 +139,8 @@ const breadcrumbLd = {
               <div class="pro_info_1_mask_4">
                 <div class="yun_6_1 reveal">
                   <ul>
-                    {d.pdf && <li><a href={d.pdf} target="_blank" rel="noopener" class="css3"><span>PDF</span></a></li>}
-                    <li><a href={l('/about/contact', 'en')} class="css3"><span>Contact us</span></a></li>
+                    {d.pdf && <li><a href={d.pdf} target="_blank" rel="noopener" class="css3"><span>Download Datasheet</span></a></li>}
+                    <li><a href={l('/about/contact', 'en')} class="css3"><span>Request a Quote</span></a></li>
                   </ul>
                 </div>
               </div>
@@ -176,10 +167,10 @@ const breadcrumbLd = {
         <div class="indexmid">
           <div class="so_info_1_mid reveal">
             <div class="so_info_1_mid_left">
-              <a href={l('/', 'en')}>Home</a> / <a href={l('/product/', 'en')}>Product</a> / <span>{d.crumbCat}</span>
+              <a href={l('/', 'en')}>Home</a> / <a href={l('/product/', 'en')}>Products</a> / <span>{d.crumbCat}</span>
             </div>
             <div class="so_info_1_mid_right">
-              <a href={l(`/product/lists/cid/${d.returnCid}`, 'en')}>Return</a>
+              <a href={l(`/product/lists/cid/${d.returnCid}`, 'en')}>Back to Products</a>
             </div>
           </div>
         </div>
@@ -222,8 +213,7 @@ const breadcrumbLd = {
                 <div class="pro_info_1_mask_4">
                   <div class="yun_6_1 reveal" id="spec-tabs">
                     <ul>
-                      <li><a href="javascript:;" class="css3 on" data-tab="param"><span>Parameter</span></a></li>
-                      <li><a href="javascript:;" class="css3" data-tab="cert"><span>Certificate</span></a></li>
+                      <li><a href="javascript:;" class="css3 on" data-tab="param"><span>Specifications</span></a></li>
                     </ul>
                   </div>
                 </div>
@@ -245,7 +235,6 @@ const breadcrumbLd = {
                 </tbody>
               </table>
             </div>
-            <div class="pro_info_3_mid_right_mid" data-pane="cert" hidden></div>
           </div>
         </div>
       </div>
@@ -301,7 +290,7 @@ const breadcrumbLd = {
       <section class="clearfix pro_apps" aria-labelledby="pro-apps-title">
         <div class="indexmid">
           <h2 class="index_1_1 reveal" id="pro-apps-title">Applications</h2>
-          <p class="pro_apps_intro reveal">The {d.series} is deployed across {d.applications.length} monitoring scenarios:</p>
+          <p class="pro_apps_intro reveal">This product supports the following monitoring applications:</p>
           <ul class="pro_apps_list">
             {d.applications.map((a) => (
               <li class="reveal">
@@ -334,7 +323,7 @@ const breadcrumbLd = {
     {/* 相关推荐 */}
     <div class="clearfix so_info_5">
       <div class="indexmid">
-        <div class="index_1_1 reveal">Other products that you may be interested in</div>
+        <div class="index_1_1 reveal">Related Products</div>
         <div class="clearfix so_info_5_1 reveal">
           <div class="pro_2_mid_right_1">
             <ul class="pro_rel_track" id="rel-track">

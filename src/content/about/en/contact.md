@@ -30,48 +30,44 @@
 				 
 				<li class="reveal">
 					<a class="css3" href="/about.html">
-						Company Introduction
+						Company Overview
 					</a>
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/quality.html">
-						Quality And Reliability
+						Quality and Reliability
 					</a>
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/partner.html">
-						Ecological Partners
+						Partners
 					</a>
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/joinus.html">
-						Recruitment
+						Careers
 					</a>
 				</li>
 				<li class="reveal">
-					<a class="css3 on" href="/about/contact.html">
-						Contact
-					</a>
+					<a class="css3 on" href="/about/contact.html"> Contact Us </a>
 				</li>
 				 
 			</ul>
 			<select id="changeurl">
 				 
 				<option  value="/about.html">
-					Company Introduction
+					Company Overview
 				</option> 
 				<option     value="/about/quality.html">
-					Quality And Reliability
+					Quality and Reliability
 				</option> 
 				<option    value="/about/partner.html">
-					Ecological Partners
+					Partners
 				</option> 
 				<option    value="/about/joinus.html">
-					Recruitment
+					Careers
 				</option> 
-				<option  selected="selected" value="/about/contact.html">
-					Contact
-				</option> 
+				<option  selected="selected" value="/about/contact.html"> Contact Us </option> 
 				
 			</select>
 		</Div>
@@ -83,7 +79,7 @@
 			<div class="contact_1_mid_left">
 				<div class="contact_1_mid_left_mid">
 					<div class="clearfix contact_1_mid_left_mid_1 daxie reveal">
-						Contact us
+						Contact Us
 					</div>
 					<div class="clearfix contact_1_mid_left_mid_2 reveal">
 						<ul>
@@ -92,17 +88,17 @@
 							<li>
 								2nd Floor, Building 1, No. 116 Cheyang Road, Songjiang District, Shanghai, China							</li>
 							<li>
-								sales@hitelecom.cn							</li>
+								sales@hitelecom.com							</li>
 						</ul>
 					</div>
 					<div class="clearfix contact_1_mid_left_mid_3 reveal">
 						<p>
 							<img width="104" alt="QR code for contacting Hitelecom" src="/images/about/static_1.png">
-							<br>Whatsapp
+							<br>WhatsApp
 						</p>
 						<p>
 							<img alt="QR code for contacting Hitelecom" src="/images/about/static_img53.png">
-							<br>Wechat
+							<br>WeChat
 						</p>
 					</div>
 				</div>
@@ -116,7 +112,7 @@
 <div class="clearfix pa_5 contact_2" id="feedback">
 	<div class="indexmid">
 							<Div class="index_1_1 textw reveal">
-								Feedback
+								Send an Inquiry
 							</Div>
 							<div class="index_1_2 textw daxie reveal" style="font-size:16px; letter-spacing:0">
 								
@@ -151,14 +147,14 @@
 									</li>
 									<li>
 										<div>
-											<textarea id="message" name="message" placeholder="If you need anything, please leave a message and we will reply to you within 24 hours..."></textarea>
+											<textarea id="message" name="message" placeholder="Tell us about your application, required quantity, connectivity, and deployment environment. We will respond within one business day."></textarea>
 										</div>
 									</li>
 								</ul>
 							</div>
 							<div class="clearfix pa_5_2 reveal">
 								<a href="javascript:;" onClick="javascript:showAddr();">
-									<span>Submit</span>
+									<span>Send Inquiry</span>
 								</a>
 							</div>
 							</form>
