@@ -9,6 +9,7 @@ import Img from '../../../components/Img.astro';
 import { productContent } from '../../../data/product';
 import { optimizedSrc } from '../../../utils/images';
 import { breadcrumbLd, SITE_URL } from '../../../utils/jsonld';
+import WaveDivider from '../../../components/WaveDivider.astro';
 
 const d = productContent.zh.app;
 const preloadImage = await optimizedSrc(d.banner.images[3], { width: 800 });
@@ -16,8 +17,7 @@ const bcLd = breadcrumbLd([
   { name: '首页', url: `${SITE_URL}/zh.html` },
   { name: '产品中心' },
   { name: d.banner.title },
-]);
----
+]);---
 
 <BaseLayout
   locale="zh"
@@ -66,7 +66,7 @@ const bcLd = breadcrumbLd([
 
     <div class="clearfix index_2 app_2">
       <div class="index_2_top">
-        <Img src="common/wave.png" alt="" width={1920} height={256} />
+        <WaveDivider />
       </div>
       <div class="indexmid">
         <div class="index_1_1 reveal">{d.features.heading}</div>
@@ -99,7 +99,7 @@ const bcLd = breadcrumbLd([
 
     <div class="clearfix index_2 app_3">
       <div class="index_2_top">
-        <Img src="common/wave.png" alt="" width={1920} height={256} />
+        <WaveDivider />
       </div>
       <div class="indexmid">
         <div class="index_1_1 reveal">{d.app3.heading}</div>

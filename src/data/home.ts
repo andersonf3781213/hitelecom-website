@@ -33,6 +33,8 @@ export interface NewsItem {
   title: string; excerpt: string; href: string;
 }
 
+import { site } from './site';
+
 const en = {
   nav: [
     { label: 'Home', href: '/' },
@@ -250,7 +252,7 @@ const en = {
     ],
     contactTitle: 'CONTACT',
     followTitle: 'FOLLOW US',
-    copyright: '© 2018–2026 Hitelecom. All rights reserved.',
+    copyright: `© 2018–2026 ${site.companyEn} All rights reserved.`,
   },
 };
 

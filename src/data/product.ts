@@ -271,7 +271,7 @@ export const productContent ={
       "desc": "Open APIs for integration with third-party devices and controllers.\n\nUse APIs or MQTT to send device data to customer data centers or platforms.\n\nCloud-to-cloud integration can consolidate supported third-party data in Hitelecom Cloud."
      },
      {
-      "img": "product/cloud/core-6.png",
+      "img": "product/cloud/core-6.webp",
       "title": "Rule-Based Automation",
       "desc": "Link devices with scene rules: for example, turn on cooling when temperature rises above a configured threshold, or trigger supported irrigation controllers when soil moisture falls below the configured threshold.\n\nCombined with Hitelecom's ultra-low-power IoT terminals, rule-based automation reduces routine manual intervention."
      }
@@ -5798,7 +5798,7 @@ export const productContent ={
       "desc": "开放API，支持第三方终端设备和控制器无缝对接\n\n支持透过MQTT方式，把终端设备的实时数据推送至客户数据中心或云平台\n\n支持云云对接，把客户使用的第三方平台的数据接入宏太云，满足一朵云管理所有设备"
      },
      {
-      "img": "product/cloud/core-6.png",
+      "img": "product/cloud/core-6.webp",
       "title": "智能联动",
       "desc": "支持设备场景联动：温度过高时打开降温设备或空调，\n土壤湿度低于设定门限时自动打开灌溉装置，形成智能联动。\n结合宏太超低功耗智能终端，减少日常人工干预。"
      }

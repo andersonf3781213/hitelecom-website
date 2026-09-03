@@ -3,6 +3,55 @@
    滚动渐入由 BaseLayout 全站 IntersectionObserver 统一处理（.reveal → .in）。 */
 (() => {
   "use strict";
+  /* ── 精准页内锚点跳转 ───────────────────────────────────────
+     content-visibility:auto 的区块首访未渲染时以估计高度占位，
+     原生平滑滚动按出发时的旧高度定终点 → 长距离首跳必然欠冲。
+     这里在滚动落定后按目标真实位置校正（≤2px 收敛，用户滚动即取消）。 */
+  const instantScrollTo = y => {
+    const root = document.documentElement;
+    const prev = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto"; /* 压过全局 scroll-behavior:smooth */
+    window.scrollTo(0, y);
+    root.style.scrollBehavior = prev;
+  };
+
+  const scrollToTargetPrecise = target => {
+    if (!target) return;
+    const pad = () => parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+    let cancelled = false;
+    let done = false;
+    const cleanup = () => {
+      window.removeEventListener("wheel", cancel);
+      window.removeEventListener("touchmove", cancel);
+    };
+    const cancel = () => { cancelled = true; cleanup(); };
+    window.addEventListener("wheel", cancel, { passive: true });
+    window.addEventListener("touchmove", cancel, { passive: true });
+
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    let attempts = 0;
+    const correct = () => {
+      if (cancelled || done) return;
+      const delta = target.getBoundingClientRect().top - pad();
+      if (Math.abs(delta) <= 2 || attempts >= 6) { done = true; cleanup(); return; }
+      attempts += 1;
+      if (Math.abs(delta) > 120 && attempts === 1) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        setTimeout(correct, 900); /* 大偏差先再平滑一次，后续即时微调 */
+      } else {
+        instantScrollTo(window.scrollY + delta);
+        setTimeout(correct, 260);
+      }
+    };
+    let began = false;
+    const begin = () => { if (!began) { began = true; setTimeout(correct, 60); } };
+    if ("onscrollend" in window) {
+      window.addEventListener("scrollend", begin, { once: true });
+      setTimeout(begin, 2400); /* 兜底：动画被打断、scrollend 未触发时 */
+    } else setTimeout(begin, 1300); /* Safari 无 scrollend */
+  };
+
   /* ── Keynote hero carousel ────────────────────────────────── */
   const keynoteStage = document.getElementById("keynote-stage");
   const keynoteHero = document.querySelector(".keynote-hero");
@@ -27,7 +76,7 @@
 
   const gotoKeynoteTarget = slide => {
     const target = slide && document.querySelector(slide.dataset.goto || "");
-    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    scrollToTargetPrecise(target);
   };
 
   const startKeynote = () => {
@@ -134,6 +183,23 @@
       });
     });
   }
+
+  /* ── 页内锚点链接统一走精准跳转（Start an inquiry / Explore devices 等） ── */
+  document.addEventListener("click", event => {
+    if (event.defaultPrevented || event.button !== 0 ||
+        event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target.closest('a[href^="#"]');
+    if (!link) return;
+    const hash = link.getAttribute("href");
+    if (!hash || hash.length < 2) return;
+    let id;
+    try { id = decodeURIComponent(hash.slice(1)); } catch { return; }
+    const target = document.getElementById(id);
+    if (!target) return;
+    event.preventDefault();
+    history.pushState(null, "", hash);
+    scrollToTargetPrecise(target);
+  });
 
   /* ── Quote form → Web3Forms 真实提交（未配置端点时回退 mailto） ── */
   const form = document.getElementById("quote-form");

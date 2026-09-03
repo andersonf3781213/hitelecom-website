@@ -113,3 +113,31 @@ body.v18-grid .site-footer .container { max-width: var(--container); padding-inl
 @media (max-width: 430px) {
   .v18home .product-module #products .fam-card { width: 152px; min-height: 62px; }
 }
+
+
+/* ---- content-visibility 占位高度校准（按三视口实测）----
+   content-visibility:auto 的区块首访未渲染时用 contain-intrinsic-size 估值占位，
+   原统一 900px 估值与实际差距大（hardware 实 1749px），导致长距离锚点平滑滚动
+   按旧高度定终点、首跳欠冲一屏。按实测校准后 JS 只需微调收尾。 */
+.v18home #hardware { contain-intrinsic-size: auto 1750px; }
+.v18home #software { contain-intrinsic-size: auto 1310px; }
+.v18home #factory { contain-intrinsic-size: auto 1200px; }
+.v18home #applications { contain-intrinsic-size: auto 1580px; }
+.v18home #contact { contain-intrinsic-size: auto 890px; }
+.v18home .product-module #products { contain-intrinsic-size: auto 1300px; }
+@media (max-width: 1100px) {
+  .v18home #hardware { contain-intrinsic-size: auto 2250px; }
+  .v18home #software { contain-intrinsic-size: auto 1340px; }
+  .v18home #factory { contain-intrinsic-size: auto 1730px; }
+  .v18home #applications { contain-intrinsic-size: auto 2380px; }
+  .v18home #contact { contain-intrinsic-size: auto 1260px; }
+  .v18home .product-module #products { contain-intrinsic-size: auto 1370px; }
+}
+@media (max-width: 760px) {
+  .v18home #hardware { contain-intrinsic-size: auto 2350px; }
+  .v18home #software { contain-intrinsic-size: auto 1440px; }
+  .v18home #factory { contain-intrinsic-size: auto 2330px; }
+  .v18home #applications { contain-intrinsic-size: auto 3660px; }
+  .v18home #contact { contain-intrinsic-size: auto 1060px; }
+  .v18home .product-module #products { contain-intrinsic-size: auto 1360px; }
+}

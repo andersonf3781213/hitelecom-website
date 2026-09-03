@@ -6,16 +6,16 @@
 import Img from '../Img.astro';
 import { homeContent, partnerLogos } from '../../data/home';
 import type { Locale } from '../../i18n';
+import WaveDivider from '../WaveDivider.astro';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
-const { partners } = homeContent[locale];
----
+const { partners } = homeContent[locale];---
 
 <section class="partners" aria-labelledby="partners-title">
   {/* 顶部浅蓝渐变装饰图（与原站 index_2_top/img10.png 一致） */}
   <div class="wave-divider" aria-hidden="true">
-    <Img src="common/wave.png" alt="" width={1920} height={256} loading="lazy" />
+    <WaveDivider />
   </div>
   <div class="container">
     <h2 id="partners-title" class="section-title reveal">{partners.title}</h2>

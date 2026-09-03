@@ -8,6 +8,7 @@ import Img from '../Img.astro';
 import { homeContent } from '../../data/home';
 import { getNewsContent } from '../../data/news';
 import { l, type Locale } from '../../i18n';
+import WaveDivider from '../WaveDivider.astro';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
@@ -28,12 +29,11 @@ const items = news.items.map((it) => {
     title: art.title || it.title,
     excerpt: art.excerpt || it.excerpt,
   };
-});
----
+});---
 
 <section class="news" aria-labelledby="news-title">
   <div class="wave-divider" aria-hidden="true">
-    <Img src="common/wave.png" alt="" width={1920} height={256} loading="lazy" />
+    <WaveDivider />
   </div>
   <div class="container">
     <h2 id="news-title" class="section-title reveal">{news.title}</h2>

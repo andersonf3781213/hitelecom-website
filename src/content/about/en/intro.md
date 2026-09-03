@@ -185,6 +185,21 @@
 							Customer Focus · Engineering Excellence ·<br>Continuous Innovation · Open Collaboration						</Div>
 					</div>
 				</li>
+								<li class="reveal">
+					<div class="about_3_2_mid">
+						<Div class="about_3_2_mid_left">
+							AIoT						</Div>
+						<Div class="about_3_2_mid_right">
+							<div>
+Ambition<br>
+Open and win-win
+</div>
+<div>
+Innovation<br>
+Teamwork
+</div>						</Div>
+					</div>
+				</li>
 								</ul>
 		</Div>
 	</Div>

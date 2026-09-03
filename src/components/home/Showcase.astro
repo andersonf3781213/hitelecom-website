@@ -6,15 +6,15 @@
 import Img from '../Img.astro';
 import { homeContent } from '../../data/home';
 import { l, type Locale } from '../../i18n';
+import WaveDivider from '../WaveDivider.astro';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
-const { showcase } = homeContent[locale];
----
+const { showcase } = homeContent[locale];---
 
 <section class="showcase" aria-label="Products">
   <div class="wave-divider" aria-hidden="true">
-    <Img src="common/wave.png" alt="" width={1920} height={256} loading="lazy" />
+    <WaveDivider />
   </div>
   <div class="container">
     {showcase.map((item) => (

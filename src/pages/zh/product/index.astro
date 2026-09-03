@@ -10,6 +10,7 @@ import { productContent } from '../../../data/product';
 import { optimizedSrc } from '../../../utils/images';
 import { breadcrumbLd, SITE_URL } from '../../../utils/jsonld';
 import { l } from '../../../i18n';
+import WaveDivider from '../../../components/WaveDivider.astro';
 
 const locale = 'zh';
 const d = productContent.zh.cloud;
@@ -19,8 +20,7 @@ const bcLd = breadcrumbLd([
   { name: '首页', url: `${SITE_URL}/zh.html` },
   { name: '产品中心' },
   { name: d.banner.title },
-]);
----
+]);---
 
 <BaseLayout
   locale="zh"
@@ -77,7 +77,7 @@ const bcLd = breadcrumbLd([
 
     <div class="clearfix index_2 yun_2">
       <div class="index_2_top">
-        <Img src="common/wave.png" alt="" width={1920} height={256} />
+        <WaveDivider />
       </div>
       <div class="indexmid">
         <div class="index_1_1 reveal">{d.features.heading}</div>
@@ -140,7 +140,7 @@ const bcLd = breadcrumbLd([
 
     <div class="clearfix index_2 yun_5">
       <div class="index_2_top">
-        <Img src="common/wave.png" alt="" width={1920} height={256} />
+        <WaveDivider />
       </div>
       <div class="indexmid">
         <div class="index_1_1 reveal">{d.scenarios.heading}</div>

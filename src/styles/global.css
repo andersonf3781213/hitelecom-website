@@ -22,6 +22,8 @@
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
+  /* V26：仅当页面真实渲染 CJK 字形时才下载（567KB），纯拉丁英文页零请求 */
+  unicode-range: U+2E80-9FFF, U+3000-303F, U+FF00-FFEF;
 }
 
 :root {

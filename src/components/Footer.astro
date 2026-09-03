@@ -76,7 +76,9 @@ const socialIcons: Record<string, string> = {
 
     <div class="footer-bottom">
       <p>{t.footer.copyright}</p>
-      <a class="nf" href={site.icpUrl} target="_blank" rel="noopener">{site.icp}</a>
+      {locale === 'zh'
+        ? <a class="nf" href={site.icpUrl} target="_blank" rel="noopener">{site.icp}</a>
+        : <a class="nf" href="https://iot67.com">iot67.com</a>}
     </div>
   </div>
 </footer>

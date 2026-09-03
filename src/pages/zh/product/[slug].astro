@@ -11,6 +11,7 @@ import { l } from '../../../i18n';
 import { optimizedSrc } from '../../../utils/images';
 import { enhanceContentHtml, normalizeBody } from '../../../utils/content';
 import type { GetStaticPaths } from 'astro';
+import WaveDivider from '../../../components/WaveDivider.astro';
 
 export const getStaticPaths: GetStaticPaths = () =>
   Object.values(productSlugs).map((slug) => ({ params: { slug } }));
@@ -101,8 +102,7 @@ const breadcrumbLd = {
     { '@type': 'ListItem', position: 2, name: '产品中心', item: 'https://www.hitelecom.com/zh/product.html' },
     { '@type': 'ListItem', position: 3, name: d.series },
   ],
-};
----
+};---
 
 <BaseLayout locale="zh" preloadImage={heroSrc} title={detailSeo.zh[id]?.title ?? `${d.series} | 宏太通信工业物联网传感器`} description={detailSeo.zh[id]?.desc ?? d.desc}>
   <ProductShell>
@@ -117,11 +117,15 @@ const breadcrumbLd = {
               <div class="pro_info_1_mask_2 reveal">{d.tagline}</div>
               <p class="pro_info_1_mask_3 reveal">{d.summary ?? d.desc}</p>
               <div class="pro_info_1_mask_4">
-                <div class="yun_6_1 reveal">
-                  <ul>
-                    {d.pdf && <li><a href={d.pdf} target="_blank" rel="noopener" class="css3"><span>下载规格书</span></a></li>}
-                    <li><a href={l('/about/contact', 'zh')} class="css3"><span>联系我们</span></a></li>
-                  </ul>
+                <div class="hero_cta reveal">
+                  <a href={l('/about/contact', 'zh')} class="hero_cta_btn hero_cta_primary">
+                    <span>联系我们</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                  {d.pdf && <a href={d.pdf} target="_blank" rel="noopener" class="hero_cta_btn hero_cta_ghost">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 19h16"/></svg>
+                    <span>下载规格书</span>
+                  </a>}
                 </div>
               </div>
             </div>
@@ -230,7 +234,7 @@ const breadcrumbLd = {
     {d.scenarios.length ? (
     <div class="clearfix index_2 pro_info_4">
       <div class="index_2_top">
-        <Img src="common/wave.png" alt="" width={1920} height={256} />
+        <WaveDivider />
       </div>
       <div class="indexmid">
         <div class="index_1_1 reveal">{d.scenariosHeading}</div>

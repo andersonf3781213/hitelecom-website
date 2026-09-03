@@ -13,6 +13,7 @@ import { l } from '../../../../i18n';
 import { optimizedSrc } from '../../../../utils/images';
 import { ORG_ID, SITE_URL } from '../../../../utils/jsonld';
 import type { GetStaticPaths } from 'astro';
+import WaveDivider from '../../../../components/WaveDivider.astro';
 
 export const getStaticPaths: GetStaticPaths = () =>
   Object.keys(solutionDetails.en).map((id) => ({ params: { id } }));
@@ -50,8 +51,7 @@ const serviceLd = {
   provider: { '@id': ORG_ID },
   areaServed: 'Worldwide',
   inLanguage: 'en',
-};
----
+};---
 
 <BaseLayout locale="en" preloadImage={banner} title={seo.title} description={seo.desc}>
   <SolutionShell>
@@ -186,7 +186,7 @@ const serviceLd = {
     {/* 应用场景（横滑） */}
     <div class="clearfix so_info_6">
       <div class="index_2_top">
-        <Img src="common/wave.png" alt="" width={1920} height={256} />
+        <WaveDivider />
       </div>
       <div class="indexmid">
         <div class="index_1_1 reveal">{d.scenHeading}</div>

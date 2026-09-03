@@ -1,0 +1,28 @@
+---
+/**
+ * 波浪分隔（白雾波形，1:1 复刻原 wave.png 的 alpha 轮廓）
+ * 原 1920×256 WebP 约 101KB、被 65 页引用 → 内联 SVG 约 1.1KB，零请求、无限缩放。
+ */
+const d =
+  'M0 0L1920 0L1920 141C1906 131 1866 94 1839 81C1812 68 1786 64 1759 61C1732 58 1706 61 1679 65C1652 69 1626 77 1599 84C1573 91 1546 101 1519 107C1493 113 1466 118 1439 121C1413 124 1386 126 1359 128C1333 130 1306 130 1279 131C1253 132 1226 132 1199 133C1173 134 1146 134 1119 135C1093 136 1066 136 1039 137C1013 138 986 140 960 141C933 142 906 144 880 145C853 146 826 148 800 149C773 150 746 152 720 154C693 156 666 156 640 158C613 160 586 162 560 163C533 164 506 165 480 166C453 167 426 169 400 171C373 173 346 175 320 176C293 177 267 178 240 179C213 180 187 182 160 183C133 184 107 186 80 187C53 188 13 190 0 191Z';
+---
+
+<svg
+  class="wave-svg"
+  viewBox="0 0 1920 256"
+  role="presentation"
+  aria-hidden="true"
+  focusable="false"
+  style="display:block;width:100%;height:auto"
+>
+  <linearGradient id="wave-g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="0.95"></stop>
+    <stop offset="0.4" stop-color="#fff" stop-opacity="0.85"></stop>
+    <stop offset="0.7" stop-color="#fff" stop-opacity="0.45"></stop>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+  </linearGradient>
+  <filter id="wave-b" x="-5%" y="-30%" width="110%" height="160%">
+    <feGaussianBlur stdDeviation="22"></feGaussianBlur>
+  </filter>
+  <path d={d} fill="url(#wave-g)" filter="url(#wave-b)"></path>
+</svg>

@@ -150,9 +150,10 @@
 .pclone .index_4_1 ul li,.pclone .news_2_1 ul li { min-height:inherit }
 }
 
-/* 1:1 字体还原：原站正文(含英文)统一 Alibaba PuHuiTi R，仅横幅大标题等显式 Poppins。
-   全站 --font 以 Poppins(Medium) 开头会使英文长文偏粗，新闻区长文按原站用普惠体渲染 */
+/* V26 字体优化：Poppins 在前——英文页不再触发 567KB 中文字体下载（配合
+   global.css @font-face 的 unicode-range，纯拉丁页面完全不会请求普惠体）。
+   中文正文仍是 CJK 字形，自动回退普惠体，行为不变。 */
 .pclone .pro_1, .pclone .news_1, .pclone .news_2, .pclone .so_info_1,
 .pclone .news_info_1, .pclone .news_info_2, .pclone .faqs_1 {
-  font-family: 'Alibaba PuHuiTi R', 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Alibaba PuHuiTi R', sans-serif;
 }
