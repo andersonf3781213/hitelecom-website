@@ -8,12 +8,12 @@ export const site = {
   companyEn: 'Shanghai Hitelecom Communication Technology Co., Ltd.',
   companyZh: '上海宏太通信技术有限公司',
 
-  // 联系方式（页脚 / 浮动栏 / 结构化数据共用）
+  // 联系方式（页脚 / 浮动栏 / 联系页展示共用；实际收件邮箱为 .cn）
   phone: '+86-18616602589',
   phoneHref: 'tel:+86-18616602589',
   whatsapp: 'https://wa.me/8618616602589',
   wechatId: '18616602589',
-  email: 'sales@hitelecom.com',
+  email: 'sales@hitelecom.cn',
   // 结构化数据专用邮箱：与 SEO/GEO 关键词文档的 Organization JSON-LD 逐字一致
   emailLd: 'sales@hitelecom.com',
 

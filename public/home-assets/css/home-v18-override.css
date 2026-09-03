@@ -47,7 +47,12 @@
       （body.v18-grid 由 BaseLayout 的 v18Grid 属性开启，仅作用于首页）。
    ============================================================ */
 .v18home .container { max-width: none; padding-inline: 0; }
-.v18home .section-title { color: inherit; text-align: left; }
+/* V18 原色号：浅色区块标题 #083b70（global.css 的 #000 泄漏屏蔽）；
+   工厂区标题有自身更高优先级规则 #0b3e73，不受影响 */
+.v18home .section-title { color: #083b70; text-align: left; }
+
+/* 锚点跳转时给固定页头留出高度（仅首页；scroll-padding 需设在滚动容器 html 上） */
+html:has(body.v18-grid) { scroll-padding-top: 94px; }
 
 body.v18-grid { --container: min(1280px, calc(100vw - 48px)); }
 @media (max-width: 1180px) { body.v18-grid { --container: min(100% - 40px, 1120px); } }
@@ -55,13 +60,33 @@ body.v18-grid { --container: min(1280px, calc(100vw - 48px)); }
 body.v18-grid #site-header .header-inner { max-width: none; padding-inline: calc((100vw - var(--container)) / 2); }
 body.v18-grid .site-footer .container { max-width: var(--container); padding-inline: 0; }
 
-/* ---- 产品阶段：CTA 行布局 + 详情入口 ghost 按钮 ---- */
-.v18home .product-module #products .st-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
-.v18home .product-module #products .btn-ghost {
-  background: transparent; color: #1b6fbd; border: 1.5px solid rgba(39,144,229,.45);
+/* ---- 产品阶段：CTA 行 = 主按钮 + 轻量文字链接（避免两个重按钮堆叠）---- */
+.v18home .product-module #products .st-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
+.v18home .product-module #products .st-detail {
+  display: inline-flex; align-items: center; gap: 7px;
+  color: #1b6fbd; font-size: .92rem; font-weight: 600; line-height: 1.2;
+  padding-bottom: 2px; border-bottom: 1.5px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
 }
-.v18home .product-module #products .btn-ghost:hover {
-  border-color: #2790e5; background: rgba(39,144,229,.08); transform: translateY(-1px);
+.v18home .product-module #products .st-detail .arr { transition: transform .25s cubic-bezier(.2,.75,.25,1); }
+.v18home .product-module #products .st-detail:hover { color: #2790e5; border-bottom-color: rgba(39,144,229,.55); }
+.v18home .product-module #products .st-detail:hover .arr { transform: translateX(4px); }
+
+/* ---- 首屏轮播：整帧可点跳转 + 杜绝图片原生拖拽/文本选择干扰手势 ---- */
+.v18home .keynote-stage { touch-action: pan-y; }
+.v18home .keynote-slide.is-active { cursor: pointer; }
+.v18home .keynote-slide img { -webkit-user-drag: none; user-select: none; }
+
+/* ---- 部署架构图：图例行同时是切换按钮（与上方三张部署卡联动）---- */
+.v18home .network-legend .legend-item {
+  padding: 5px 10px; border: 1px solid transparent; border-radius: 999px;
+  background: none; cursor: pointer; font: inherit; color: #697c92;
+  transition: color .2s ease, background .2s ease, border-color .2s ease;
+}
+.v18home .network-legend .legend-item:hover { color: var(--ink); background: rgba(39,144,229,.07); }
+.v18home .network-legend .legend-item[aria-pressed="true"] {
+  color: var(--ink); border-color: rgba(39,144,229,.4); background: #fff;
+  box-shadow: 0 6px 16px rgba(32,78,139,.08);
 }
 
 /* ---- 移动端（≤1100px 堆叠区间）：产品族选择器上移为横向滑动标签条 ----

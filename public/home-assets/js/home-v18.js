@@ -12,6 +12,8 @@
   let keynoteTimer;
   let keynoteHeld = false; /* V13 fix: hover/focus pause survives a tab switch */
   let pointerStartX = null;
+  let pointerStartY = null;
+  let swiped = false; /* 刚完成滑动手势时吞掉随后的 click，避免误跳转 */
 
   const showKeynoteSlide = index => {
     keynoteIndex = (index + keynoteSlides.length) % keynoteSlides.length;
@@ -21,6 +23,11 @@
       slide.setAttribute("aria-hidden", String(!active));
     });
     keynoteDots.forEach((dot, dotIndex) => dot.setAttribute("aria-pressed", String(dotIndex === keynoteIndex)));
+  };
+
+  const gotoKeynoteTarget = slide => {
+    const target = slide && document.querySelector(slide.dataset.goto || "");
+    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   const startKeynote = () => {
@@ -52,16 +59,38 @@
     keynoteStage.addEventListener("focusout", event => {
       if (!keynoteStage.contains(event.relatedTarget)) resumeKeynote();
     });
-    keynoteStage.addEventListener("pointerdown", event => { pointerStartX = event.clientX; }, { passive: true });
+    keynoteStage.addEventListener("pointerdown", event => {
+      pointerStartX = event.clientX; pointerStartY = event.clientY; swiped = false;
+    }, { passive: true });
+    keynoteStage.addEventListener("pointercancel", () => { pointerStartX = null; pointerStartY = null; }, { passive: true });
     keynoteStage.addEventListener("pointerup", event => {
       if (pointerStartX === null) return;
-      const delta = event.clientX - pointerStartX;
-      pointerStartX = null;
-      if (Math.abs(delta) > 48) {
-        showKeynoteSlide(keynoteIndex + (delta < 0 ? 1 : -1));
+      const deltaX = event.clientX - pointerStartX;
+      const deltaY = event.clientY - pointerStartY;
+      pointerStartX = null; pointerStartY = null;
+      /* 仅当明显横向意图（横向位移 >48px 且大于纵向位移）才切帧；
+         竖向滚屏的斜擦不再误触切换 */
+      if (Math.abs(deltaX) > 48 && Math.abs(deltaX) > Math.abs(deltaY)) {
+        swiped = true;
+        showKeynoteSlide(keynoteIndex + (deltaX < 0 ? 1 : -1));
         if (!keynoteHeld) startKeynote();
       }
     }, { passive: true });
+    /* 杜绝桌面端拖起首屏大图触发浏览器原生图片拖拽（手势被吞、像切换失灵） */
+    keynoteStage.addEventListener("dragstart", event => event.preventDefault());
+    /* 整帧点击 / 键盘 Enter·Space 跳转对应区块（第 1 帧→产品区，第 2 帧→IoT Cloud 区） */
+    keynoteSlides.forEach(slide => {
+      slide.addEventListener("click", () => {
+        if (swiped) { swiped = false; return; }
+        gotoKeynoteTarget(slide);
+      });
+      slide.addEventListener("keydown", event => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          gotoKeynoteTarget(slide);
+        }
+      });
+    });
     document.addEventListener("visibilitychange", () => {
       if (document.hidden) window.clearInterval(keynoteTimer);
       else if (!keynoteHeld) startKeynote();
@@ -90,14 +119,16 @@
     });
   }
 
-  /* ── Deployment architecture diagram modes ────────────────── */
+  /* ── Deployment architecture diagram modes ──────────────────
+     上方三张部署卡与图例行（Private/Public/Integration）同为切换控件，
+     任一点击都同步两组控件的 aria-pressed 并切换图形高亮模式。 */
   const networkFigure = document.getElementById("network-figure");
   const networkButtons = [...document.querySelectorAll("[data-network-mode]")];
   if (networkFigure && networkButtons.length) {
     networkButtons.forEach(button => {
       button.addEventListener("click", () => {
         const mode = button.dataset.networkMode;
-        networkButtons.forEach(item => item.setAttribute("aria-pressed", String(item === button)));
+        networkButtons.forEach(item => item.setAttribute("aria-pressed", String(item.dataset.networkMode === mode)));
         networkFigure.classList.remove("mode-private", "mode-public", "mode-integrate");
         networkFigure.classList.add(`mode-${mode}`);
       });
@@ -131,10 +162,10 @@
         if (formStatus) formStatus.textContent = "Sending your inquiry…";
         fetch(window.HITE_FORM_ENDPOINT, { method: "POST", body: fd, headers: { Accept: "application/json" } })
           .then(r => { window.location.href = r.ok ? "/about/thanks.html" : "/about/thanks.html?sent=0"; })
-          .catch(() => { if (formStatus) formStatus.textContent = "Submission failed. Please retry or email sales@hitelecom.com directly."; });
+          .catch(() => { if (formStatus) formStatus.textContent = "Submission failed. Please retry or email sales@hitelecom.cn directly."; });
       } else {
         if (formStatus) formStatus.textContent = "Opening your email application with the project brief…";
-        window.location.href = `mailto:sales@hitelecom.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines)}`;
+        window.location.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines)}`;
       }
     });
   }
