@@ -1,54 +1,71 @@
 ---
 /**
  * 英文首页（默认语言，挂载于 /）
- * 各区块内容维护见 src/data/home.ts
+ * V18 设计：主体见 src/components/home/HomeV18.astro
+ * headerSolid：首屏为浅色设计，导航栏固定使用实色样式（不随滚动切换）
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/home/Hero.astro';
-import Intro from '../components/home/Intro.astro';
-import Showcase from '../components/home/Showcase.astro';
-import Solutions from '../components/home/Solutions.astro';
-import News from '../components/home/News.astro';
-import Partners from '../components/home/Partners.astro';
-import Cta from '../components/home/Cta.astro';
-import { optimizedSrc } from '../utils/images';
-import { homeContent } from '../data/home';
-import { l } from '../i18n';
+import HomeV18 from '../components/home/HomeV18.astro';
+import { site } from '../data/site';
 
-// 首屏关键背景图 preload，保障“黄金 3 秒”
-const preloadImage = await optimizedSrc('hero/bg-sensors.jpg', { width: 1920 });
-
-// 首页专属结构化数据：产品线 + 解决方案清单（均为页面可见内容）
-const c = homeContent.en;
-const abs = (href: string) => new URL(l(href, 'en'), 'https://www.hitelecom.com').href;
+// 首页专属结构化数据（GEO/SEO）：页面可见的 12 大传感器家族 + 8 大应用领域
+const families = [
+  'Industrial Temperature Sensors', 'Temperature & Humidity Sensors',
+  'Temperature & Humidity Data Loggers', 'Air Quality Sensors', 'TVOC Sensors',
+  'Pressure Sensors', 'Soil Sensors', 'Tilt Sensors', 'Vibration Sensors',
+  'Radar Distance Sensors', 'Asset Tracking Sensors', 'Custom Gas Sensors',
+];
+const applications: Array<[string, string]> = [
+  ['Smart Cities — Structural health monitoring', '/solution/show/id/57.html'],
+  ['Smart Factories — Environment & equipment condition', '/solution/show/id/58.html'],
+  ['Smart Warehousing — Storage conditions & rack safety', '/solution.html'],
+  ['Smart Water — Pipeline, level & blockage monitoring', '/solution/show/id/67.html'],
+  ['Smart Heritage — Microclimate & artifact movement', '/solution/show/id/66.html'],
+  ['Smart Transportation — Assets, structures & roadside safety', '/solution.html'],
+  ['Cold Chain & Healthcare — Temperature records that travel', '/solution.html'],
+  ['Smart Sanitation — Bin fill-level & overflow monitoring', '/solution.html'],
+];
 const homeItemListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Hitelecom IoT Products and Solutions',
+  name: 'Hitelecom IoT Product Families and Applications',
   itemListElement: [
-    ...c.showcase.map((s, i) => ({
+    ...families.map((name, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      name: s.title,
-      url: abs(s.href),
+      name,
+      url: 'https://www.hitelecom.com/product.html',
     })),
-    ...c.solutions.items.map((s, i) => ({
+    ...applications.map(([name, href], i) => ({
       '@type': 'ListItem',
-      position: c.showcase.length + i + 1,
-      name: s.label,
-      url: abs(s.href),
+      position: families.length + i + 1,
+      name,
+      url: new URL(href, 'https://www.hitelecom.com').href,
     })),
   ],
 };
 ---
 
-<BaseLayout locale="en" preloadImage={preloadImage}>
+<BaseLayout locale="en" headerSolid>
+  <!-- 首页专属样式（V18 设计稿 + 品牌蓝覆盖层），仅本页加载 -->
+  <link slot="head" rel="stylesheet" href="/home-assets/css/home-v18.css" />
+  <link slot="head" rel="stylesheet" href="/home-assets/css/home-v18-override.css" />
+
+  <!-- 首屏 H1 衬线字体（Playfair 500，23KB）预载：黄金 3 秒 -->
+  <link slot="head" rel="preload" href="/fonts/playfair-500.woff2" as="font" type="font/woff2" crossorigin />
+
+  <!-- 首屏轮播第 1 帧设备图按断点预载（LCP），其余大图全部 lazy -->
+  <link slot="head" rel="preload" as="image" href="/home-assets/img/hero-devices-m-1200-v9.avif" media="(max-width: 760px)" fetchpriority="high" />
+  <link slot="head" rel="preload" as="image" href="/home-assets/img/hero-devices-1920-v10.avif" media="(min-width: 761px)" fetchpriority="high" />
+
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(homeItemListLd)} />
-  <Hero locale="en" />
-  <Intro locale="en" />
-  <Showcase locale="en" />
-  <Solutions locale="en" />
-  <News locale="en" />
-  <Partners locale="en" />
-  <Cta locale="en" />
+
+  <HomeV18 />
+
+  <!-- 询盘表单提交配置（Web3Forms），供 home-v18.js 读取；留空自动回退 mailto -->
+  <script is:inline define:vars={{ formEndpoint: site.formEndpoint, formAccessKey: site.formAccessKey }}>
+    window.HITE_FORM_ENDPOINT = formEndpoint;
+    window.HITE_FORM_KEY = formAccessKey;
+  </script>
+  <script src="/home-assets/js/home-v18.js" defer></script>
 </BaseLayout>
