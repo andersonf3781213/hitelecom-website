@@ -78,6 +78,18 @@
     });
   }
 
+  /* ── 移动端标签条：选中项自动滚入视野（横向滚动容器内）───────── */
+  const famGrid = document.querySelector("#products .fam-grid");
+  if (famGrid) {
+    document.querySelectorAll("#products .famr").forEach(radio => {
+      radio.addEventListener("change", () => {
+        if (!radio.checked) return;
+        const card = famGrid.querySelector(`.fam-card[for="${radio.id}"]`);
+        if (card) card.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      });
+    });
+  }
+
   /* ── Deployment architecture diagram modes ────────────────── */
   const networkFigure = document.getElementById("network-figure");
   const networkButtons = [...document.querySelectorAll("[data-network-mode]")];

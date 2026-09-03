@@ -68,6 +68,14 @@ if (statSync(astroDir, { throwIfNoEntry: false })) {
   }
 }
 
+// 3) 删除 Astro 构建中间目录 .prerender（预渲染副本，最终 HTML 不引用，部署无意义）
+import { rmSync } from 'node:fs';
+const prerenderDir = join(root, '.prerender');
+if (statSync(prerenderDir, { throwIfNoEntry: false })) {
+  rmSync(prerenderDir, { recursive: true, force: true });
+  console.log('[prune] 已删除构建中间目录 .prerender');
+}
+
 const mb = (n) => (n / 1048576).toFixed(2) + ' MiB';
 console.log(`[prune] 扫描 _astro 媒体文件 ${checked} 个，删除未引用 ${removed} 个，释放 ${mb(freed)}，保留 ${kept.length} 个`);
 if (removed > 0) console.log('[prune] 完成：产物中仅保留被 HTML/CSS/JS 实际引用的资源');

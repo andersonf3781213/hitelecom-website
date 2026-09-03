@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,6 +19,22 @@ export default defineConfig({
   },
 
   integrations: [
+    // 构建完成即瘦身 dist：删除未引用媒体与 .prerender 中间目录。
+    // 注册为集成钩子（而非仅靠 package.json postbuild），
+    // 保证 npx astro build --outDir ... 等任意调用方式都会触发。
+    {
+      name: 'hite-prune-dist',
+      hooks: {
+        'astro:build:done': ({ dir }) => {
+          const target = fileURLToPath(dir);
+          try {
+            execFileSync(process.execPath, ['scripts/prune-dist.mjs', target, '--yes'], { stdio: 'inherit' });
+          } catch (e) {
+            console.warn('[prune] 构建后清理失败（不影响产物）:', e?.message ?? e);
+          }
+        },
+      },
+    },
     // 自动生成 sitemap-index.xml，助力 Google 收录
     sitemap({
       // 旧数字产品地址仅为跳转页（noindex），不进 sitemap

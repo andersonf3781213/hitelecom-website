@@ -9,11 +9,20 @@ import HomeV18 from '../components/home/HomeV18.astro';
 import { site } from '../data/site';
 
 // 首页专属结构化数据（GEO/SEO）：页面可见的 12 大传感器家族 + 8 大应用领域
-const families = [
-  'Industrial Temperature Sensors', 'Temperature & Humidity Sensors',
-  'Temperature & Humidity Data Loggers', 'Air Quality Sensors', 'TVOC Sensors',
-  'Pressure Sensors', 'Soil Sensors', 'Tilt Sensors', 'Vibration Sensors',
-  'Radar Distance Sensors', 'Asset Tracking Sensors', 'Custom Gas Sensors',
+// 每个家族指向其语义化详情页（与卡片上的 View product details 一致）
+const families: Array<[string, string]> = [
+  ['Industrial Temperature Sensors', '/product/temperature-sensor.html'],
+  ['Temperature & Humidity Sensors', '/product/temperature-humidity-sensor.html'],
+  ['Temperature & Humidity Data Loggers', '/product/temperature-humidity-data-logger.html'],
+  ['Air Quality Sensors', '/product/air-quality-sensor.html'],
+  ['TVOC Sensors', '/product/tvoc-sensor.html'],
+  ['Pressure Sensors', '/product/pressure-sensor.html'],
+  ['Soil Sensors', '/product/soil-moisture-sensor.html'],
+  ['Tilt Sensors', '/product/tilt-sensor.html'],
+  ['Vibration Sensors', '/product/vibration-sensor.html'],
+  ['Radar Distance Sensors', '/product/radar-distance-sensor.html'],
+  ['Asset Tracking Sensors', '/product/asset-tracking-sensor.html'],
+  ['Custom Gas Sensors', '/product/custom-gas-sensor.html'],
 ];
 const applications: Array<[string, string]> = [
   ['Smart Cities — Structural health monitoring', '/solution/show/id/57.html'],
@@ -30,11 +39,11 @@ const homeItemListLd = {
   '@type': 'ItemList',
   name: 'Hitelecom IoT Product Families and Applications',
   itemListElement: [
-    ...families.map((name, i) => ({
+    ...families.map(([name, href], i) => ({
       '@type': 'ListItem',
       position: i + 1,
       name,
-      url: 'https://www.hitelecom.com/product.html',
+      url: new URL(href, 'https://www.hitelecom.com').href,
     })),
     ...applications.map(([name, href], i) => ({
       '@type': 'ListItem',
@@ -54,9 +63,12 @@ const homeItemListLd = {
   <!-- 首屏 H1 衬线字体（Playfair 500，23KB）预载：黄金 3 秒 -->
   <link slot="head" rel="preload" href="/fonts/playfair-500.woff2" as="font" type="font/woff2" crossorigin />
 
-  <!-- 首屏轮播第 1 帧设备图按断点预载（LCP），其余大图全部 lazy -->
-  <link slot="head" rel="preload" as="image" href="/home-assets/img/hero-devices-m-1200-v9.avif" media="(max-width: 760px)" fetchpriority="high" />
-  <link slot="head" rel="preload" as="image" href="/home-assets/img/hero-devices-1920-v10.avif" media="(min-width: 761px)" fetchpriority="high" />
+  <!-- 首屏轮播第 1 帧设备图按断点预载（LCP），其余大图全部 lazy。
+       桌面端用 imagesrcset：浏览器按 DPR 自选 1920/2560，与 <img> 决策一致，避免高分辨率屏重复下载 -->
+  <link slot="head" rel="preload" as="image" href="/home-assets/img/hero-devices-m-1200-v9.avif" type="image/avif" media="(max-width: 760px)" fetchpriority="high" />
+  <link slot="head" rel="preload" as="image" type="image/avif" media="(min-width: 761px)" fetchpriority="high"
+        imagesrcset="/home-assets/img/hero-devices-1920-v10.avif 1920w, /home-assets/img/hero-devices-2560-v10.avif 2560w"
+        imagesizes="100vw" />
 
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(homeItemListLd)} />
 

@@ -46,7 +46,10 @@ const pageTitle = clampSeo(title ?? seo.title, 70);
 const pageDesc = clampSeo(description ?? seo.description, locale === 'zh' ? 90 : 158);
 const pageKeywords = keywords ?? seo.keywords;
 
-const canonical = new URL(Astro.url.pathname, Astro.site).href;
+// build.format='file' 下首页 pathname 为 '/index.html'；
+// canonical/og:url 统一归一到根地址 '/'，与 sitemap、hreflang 保持一致
+const canonicalPath = Astro.url.pathname === '/index.html' ? '/' : Astro.url.pathname;
+const canonical = new URL(canonicalPath, Astro.site).href;
 const altLocale: Locale = locale === 'en' ? 'zh' : 'en';
 const altUrl = new URL(alternateUrl(Astro.url.pathname, altLocale), Astro.site).href;
 const ogImage = new URL('/images/og-cover.jpg', Astro.site).href;
