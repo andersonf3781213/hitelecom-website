@@ -73,6 +73,13 @@ location ^~ /images/ {
 location ^~ /assets/ {
     add_header Cache-Control "public, max-age=604800";
 }
+# V18 首页图片：带手动版本号、同名可换 → 7 天
+#（首页 CSS/JS 已进 Astro 管线带内容哈希，由上方 /_astro/ 规则覆盖）
+location ^~ /home-assets/img/ {
+    expires 7d;
+    add_header Cache-Control "public, max-age=604800" always;
+    access_log off;
+}
 # 可下载资料（PDF 规格书等可能更新）：1 天
 location ^~ /downloads/ {
     add_header Cache-Control "public, max-age=86400";
@@ -119,7 +126,7 @@ ${redirects.map(([f, t]) => `RewriteRule ^${f.slice(1).replace(/\./g, '\\.')}$ $
         Header set Cache-Control "public, max-age=31536000, immutable"
     </LocationMatch>
     # public 下无哈希的静态图：7 天
-    <LocationMatch "^/(images|assets)/">
+    <LocationMatch "^/(images|assets|home-assets/img)/">
         ExpiresDefault "access plus 7 days"
     </LocationMatch>
     # 可下载资料：1 天

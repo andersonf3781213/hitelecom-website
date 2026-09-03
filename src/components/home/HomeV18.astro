@@ -2,9 +2,9 @@
 /**
  * 首页 V18 设计主体（英文）
  * 文案与 UI 架构移植自设计稿 Hitelecom-v18（已做多轮事实修正）。
- * - 样式：/home-assets/css/home-v18.css（设计师原稿，已加 .v18home 作用域隔离）
- *         /home-assets/css/home-v18-override.css（品牌蓝覆盖层 + 字体方案 B，最后加载）
- * - 交互：/home-assets/js/home-v18.js（首屏轮播 / 产品选择器 / 部署架构图 / 询盘表单）
+ * - 样式：src/styles/home-v18.css（设计师原稿清理版，已加 .v18home 作用域隔离，Astro 管线哈希压缩）
+ *         src/styles/home-v18-override.css（品牌蓝覆盖层 + 字体方案 B，后加载）
+ * - 交互：src/scripts/home-v18.js（首屏轮播 / 产品选择器 / 部署架构图 / 询盘表单，Astro 管线打包）
  * - 图片：public/home-assets/img/，同名覆盖即可替换（首屏设备图待 H68 实拍替换）
  * - 滚动渐入使用全站约定 .reveal → .in（BaseLayout IntersectionObserver 统一驱动）
  */
@@ -55,7 +55,7 @@
       <div class="keynote-bridge">
         <div class="keynote-bridge-copy">
           <p>Hitelecom I<span class="keep-case">o</span>T Devices · Cloud · Apps</p>
-          <h2>Ultra-low power.<br>Flexible connectivity.<br>Your platform or ours.</h2>
+          <h2>Ultra-low power. <br>Flexible connectivity. <br>Your platform or ours.</h2>
           <p>Choose a field-ready terminal or create a dedicated device across 4G, NB-IoT, LoRa and LoRaWAN.</p>
           <div class="keynote-bridge-actions">
             <a class="button button-primary" href="#contact">Start an inquiry</a>
@@ -82,7 +82,7 @@
     <div class="product-homepage-heading">
       <div>
         <p class="eyeb">Product portfolio</p>
-        <h2>Choose what<br>to sense.</h2>
+        <h2>Choose what <br>to sense.</h2>
       </div>
       <p class="lead">Hitelecom offers a wide variety of sensing terminals, for temperature/humidity, pressure, air quality, inclination, vibration and more.</p>
     </div>
@@ -138,7 +138,7 @@
         <div class="hardware-feature-heading reveal">
           <div>
             <p class="eyebrow">Industrial design</p>
-            <h2 class="section-title" id="hardware-title">Designed for years.<br>Built for the elements.</h2>
+            <h2 class="section-title" id="hardware-title">Designed for years. <br>Built for the elements.</h2>
           </div>
           <p>Low-power architectures and environmental protection configured around the deployment—not a generic specification sheet.</p>
         </div>
@@ -147,7 +147,7 @@
           <article class="hardware-feature-card power-feature-card reveal">
             <div class="feature-copy">
               <p class="feature-kicker">Power</p>
-              <h3>Up to a decade.<br>On one cell.</h3>
+              <h3>Up to a decade. <br>On one cell.</h3>
               <p>Selected battery-powered sensor terminals combine deep sleep, adaptive sampling and configurable reporting to extend time in the field.</p>
             </div>
 
@@ -196,7 +196,7 @@
         <div class="software-top reveal">
           <div>
             <p class="eyebrow">Flexible deployment</p>
-            <h2 class="section-title" id="software-title">Your cloud.<br>Or ours.</h2>
+            <h2 class="section-title" id="software-title">Your cloud. <br>Or ours.</h2>
             <p class="section-intro">Private infrastructure, Hitelecom Cloud or direct integration with the platform you already operate.</p>
           </div>
 
@@ -333,7 +333,7 @@
         <div class="factory-layout">
           <div class="factory-side reveal">
             <p class="eyebrow">Mass Production · After Designed</p>
-            <h2 class="section-title" id="factory-title">We make them<br>ourselves.</h2>
+            <h2 class="section-title" id="factory-title">We make them <br>ourselves.</h2>
             <p class="factory-intro">From SMT Process to PCBA assembly, enclosure integration and final functional testing, Hitelecom builds connected terminals in our own facility—so design, test and production feedback stay in one loop.</p>
             <div class="factory-chips" aria-label="Manufacturing capabilities">
               <span>01005 capability</span>
@@ -410,7 +410,7 @@
         <div class="section-header-row reveal">
           <div>
             <p class="eyebrow">Applications</p>
-            <h2 class="section-title" id="applications-title">Where Hitelecom<br>is deployed.</h2>
+            <h2 class="section-title" id="applications-title">Where Hitelecom <br>is deployed.</h2>
           </div>
           <p class="section-intro">One hardware and connectivity system, configured around each environment.</p>
         </div>
@@ -635,7 +635,7 @@
         <div class="contact-card reveal">
           <div class="contact-copy">
             <p class="eyebrow eyebrow-light">Project inquiry</p>
-            <h2 id="contact-title">Tell us what<br>you need to sense.</h2>
+            <h2 id="contact-title">Tell us what <br>you need to sense.</h2>
             <p>You do not need a finished specification. A short project brief is enough to start.</p>
             <div class="contact-details">
               <a class="contact-detail" href="mailto:sales@hitelecom.cn">

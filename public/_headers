@@ -11,14 +11,10 @@
 /assets/*
   Cache-Control: public, max-age=604800
 
-# V18 首页资源（/home-assets）：图片同名可换 → 7 天；
-# CSS/JS 同名覆盖更新 → 协商缓存，保证改版即时生效
+# V18 首页图片（/home-assets/img）：同名可换 → 7 天
+# （CSS/JS 已进 Astro 管线，带内容哈希，走 /_astro/* 一年长缓存）
 /home-assets/img/*
   Cache-Control: public, max-age=604800
-/home-assets/css/*
-  Cache-Control: public, max-age=0, must-revalidate
-/home-assets/js/*
-  Cache-Control: public, max-age=0, must-revalidate
 
 # 可下载资料（PDF 规格书等可能更新）：1 天
 /downloads/*

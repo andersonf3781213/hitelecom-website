@@ -69,33 +69,11 @@ if (statSync(astroDir, { throwIfNoEntry: false })) {
 }
 
 // 3) 删除 Astro 构建中间目录 .prerender（预渲染副本，最终 HTML 不引用，部署无意义）
-import { rmSync, writeFileSync } from 'node:fs';
+import { rmSync } from 'node:fs';
 const prerenderDir = join(root, '.prerender');
 if (statSync(prerenderDir, { throwIfNoEntry: false })) {
   rmSync(prerenderDir, { recursive: true, force: true });
   console.log('[prune] 已删除构建中间目录 .prerender');
-}
-
-// 4) 仅对产物中的 /home-assets 设计师原稿 CSS/JS 做压缩（源码仓库保持可读，发布产物提速）
-//    使用 Astro 自带的 esbuild，离线可用、对 url()/媒体查询安全。
-try {
-  const { transformSync } = await import('esbuild');
-  const homeAssets = join(root, 'home-assets');
-  if (statSync(homeAssets, { throwIfNoEntry: false })) {
-    for (const f of walk(homeAssets)) {
-      const e = ext(f);
-      if (e !== '.css' && e !== '.js') continue;
-      const code = readFileSync(f, 'utf8');
-      const out = transformSync(code, { loader: e === '.css' ? 'css' : 'js', minify: true, charset: 'utf8' });
-      const saved = code.length - out.code.length;
-      if (saved > 0) {
-        writeFileSync(f, out.code);
-        console.log(`[prune] 压缩 ${basename(f)}: ${(code.length / 1024).toFixed(1)}KB → ${(out.code.length / 1024).toFixed(1)}KB`);
-      }
-    }
-  }
-} catch (e) {
-  console.warn('[prune] home-assets 压缩跳过（不影响产物）:', e?.message ?? e);
 }
 
 const mb = (n) => (n / 1048576).toFixed(2) + ' MiB';

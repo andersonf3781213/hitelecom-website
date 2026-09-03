@@ -55,7 +55,7 @@ RewriteRule ^zh/product/show/id/305\.html$ /zh/product/custom-gas-sensor.html [R
         Header set Cache-Control "public, max-age=31536000, immutable"
     </LocationMatch>
     # public 下无哈希的静态图：7 天
-    <LocationMatch "^/(images|assets)/">
+    <LocationMatch "^/(images|assets|home-assets/img)/">
         ExpiresDefault "access plus 7 days"
     </LocationMatch>
     # 可下载资料：1 天
