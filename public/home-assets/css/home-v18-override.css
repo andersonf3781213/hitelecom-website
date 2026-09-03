@@ -36,3 +36,21 @@
   font-weight: 700;
 }
 /* 首屏 keynote H1/H2 保持 Playfair（V18 原样式，不覆盖） */
+
+/* ============================================================
+   对齐修复（2026-09-03）
+   1) 屏蔽 global.css 通用类对 V18 首页的泄漏：
+      .container 的 padding-inline/max-width 会把内容推右 53px；
+      .section-title 的 text-align:center / color:#000 会让标题居中变黑。
+      V18 首页自带完整容器与标题体系，此处恢复其原样。
+   2) 首页网格对齐：页首 / 页脚跟随 V18 的 1280 内容网格
+      （body.v18-grid 由 BaseLayout 的 v18Grid 属性开启，仅作用于首页）。
+   ============================================================ */
+.v18home .container { max-width: none; padding-inline: 0; }
+.v18home .section-title { color: inherit; text-align: left; }
+
+body.v18-grid { --container: min(1280px, calc(100vw - 48px)); }
+@media (max-width: 1180px) { body.v18-grid { --container: min(100% - 40px, 1120px); } }
+@media (max-width: 760px) { body.v18-grid { --container: calc(100% - 30px); } }
+body.v18-grid #site-header .header-inner { max-width: none; padding-inline: calc((100vw - var(--container)) / 2); }
+body.v18-grid .site-footer .container { max-width: var(--container); padding-inline: 0; }

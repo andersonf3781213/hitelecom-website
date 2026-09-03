@@ -21,9 +21,11 @@ interface Props {
   headerSolid?: boolean;
   /** 自定义 robots（如感谢页 'noindex, follow'）；缺省不输出，走搜索引擎默认 */
   robots?: string;
+  /** V18 首页：页首/页脚与 1280 内容网格对齐（配合 home-v18-override.css） */
+  v18Grid?: boolean;
 }
 
-const { locale, title, description, keywords, preloadImage, headerSolid = false, robots } = Astro.props;
+const { locale, title, description, keywords, preloadImage, headerSolid = false, robots, v18Grid = false } = Astro.props;
 const seo = defaultSeo[locale];
 // SEO 长度收敛（验收报告：67 页 description >160、24 页 title >70）：
 // 超长时在词边界截断并补省略号，避免被 Google 截在中途；CJK 按字符截断。
@@ -168,7 +170,7 @@ const siteJsonLd = {
     </script>
     <slot name="head" />
   </head>
-  <body>
+  <body class:list={[{ 'v18-grid': v18Grid }]}>
     <Header locale={locale} solid={headerSolid} />
     <main id="main">
       <slot />
