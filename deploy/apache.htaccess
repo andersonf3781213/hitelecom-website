@@ -6,6 +6,10 @@
 
 RewriteEngine On
 
+# === 0. iot67.com 备用域 → 主域 301 ===
+RewriteCond %{HTTP_HOST} ^(www.)?iot67.com$ [NC]
+RewriteRule ^(.*)$ https://www.hitelecom.com/$1 [R=301,L]
+
 # === 1. 旧产品地址 301 ===
 RewriteRule ^product/show/id/270\.html$ /product/temperature-sensor.html [R=301,L]
 RewriteRule ^zh/product/show/id/270\.html$ /zh/product/temperature-sensor.html [R=301,L]

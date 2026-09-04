@@ -79,3 +79,6 @@ if (statSync(prerenderDir, { throwIfNoEntry: false })) {
 const mb = (n) => (n / 1048576).toFixed(2) + ' MiB';
 console.log(`[prune] 扫描 _astro 媒体文件 ${checked} 个，删除未引用 ${removed} 个，释放 ${mb(freed)}，保留 ${kept.length} 个`);
 if (removed > 0) console.log('[prune] 完成：产物中仅保留被 HTML/CSS/JS 实际引用的资源');
+
+// 4) Early Hints Link 预载头（postbuild 同一阶段完成，process.argv 透传 dist 目录）
+await import('./gen-early-hints.mjs');

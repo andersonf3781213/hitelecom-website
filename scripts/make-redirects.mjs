@@ -41,6 +41,10 @@ const cfLines = [
   '# Cloudflare Pages 301 重定向（本文件由 scripts/make-redirects.mjs 生成，勿手改）',
   '# 旧数字产品地址 → 语义 slug 地址；仅 CF Pages / Netlify 生效，其他平台用 deploy/ 下的配置',
   '',
+  '# iot67.com 备用域 → 主域 301（前提：该域已作为自定义域挂在同一 Pages 项目）',
+  'https://iot67.com/* https://www.hitelecom.com/:splat 301',
+  'https://www.iot67.com/* https://www.hitelecom.com/:splat 301',
+  '',
 ];
 for (const [from, to] of redirects) cfLines.push(`${from} ${to} 301`);
 cfLines.push('');
@@ -103,6 +107,8 @@ gzip_min_length 1k;
 #     include /etc/nginx/conf.d/hitelecom.conf;
 #     location / { try_files $uri $uri/ =404; }
 # }
+# 备用域 iot67.com → 主域 301（自托管时另加一个 server 块即可）：
+# server { listen 80; server_name iot67.com www.iot67.com; return 301 https://www.hitelecom.com$request_uri; }
 `;
 
 // ------------------------------------------------------------ Apache 配置
@@ -113,6 +119,10 @@ const apache = `# --------------------------------------------------------------
 # ---------------------------------------------------------------
 
 RewriteEngine On
+
+# === 0. iot67.com 备用域 → 主域 301 ===
+RewriteCond %{HTTP_HOST} ^(www\.)?iot67\.com$ [NC]
+RewriteRule ^(.*)$ https://www.hitelecom.com/$1 [R=301,L]
 
 # === 1. 旧产品地址 301 ===
 ${redirects.map(([f, t]) => `RewriteRule ^${f.slice(1).replace(/\./g, '\\.')}$ ${t} [R=301,L]`).join('\n')}

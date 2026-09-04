@@ -1,6 +1,10 @@
 # Cloudflare Pages 301 重定向（本文件由 scripts/make-redirects.mjs 生成，勿手改）
 # 旧数字产品地址 → 语义 slug 地址；仅 CF Pages / Netlify 生效，其他平台用 deploy/ 下的配置
 
+# iot67.com 备用域 → 主域 301（前提：该域已作为自定义域挂在同一 Pages 项目）
+https://iot67.com/* https://www.hitelecom.com/:splat 301
+https://www.iot67.com/* https://www.hitelecom.com/:splat 301
+
 /product/show/id/270.html /product/temperature-sensor.html 301
 /zh/product/show/id/270.html /zh/product/temperature-sensor.html 301
 /product/show/id/274.html /product/pressure-sensor.html 301
