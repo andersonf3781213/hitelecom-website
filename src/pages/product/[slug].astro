@@ -277,23 +277,8 @@ const breadcrumbLd = {
     </div>
     ) : null}
 
-    {/* 应用领域（GEO 主战场：每个领域一句「测什么、解决什么问题」，正文真实可见） */}
-    {d.applications?.length ? (
-      <section class="clearfix pro_apps" aria-labelledby="pro-apps-title">
-        <div class="indexmid">
-          <h2 class="index_1_1 reveal" id="pro-apps-title">Applications</h2>
-          <p class="pro_apps_intro reveal">This product supports the following monitoring applications:</p>
-          <ul class="pro_apps_list">
-            {d.applications.map((a) => (
-              <li class="reveal">
-                <h3>{a.name}</h3>
-                <p>{a.desc}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-    ) : null}
+    {/* 注：应用领域不再单设卡片区块——与原站对齐，仅保留 Application Scenarios
+        轮播（上方 pro_info_4）。d.applications 数据仍用于 JSON-LD 与 keywords。 */}
 
     {/* FAQ（GEO：AI 引用率最高的内容形态；正文与 JSON-LD 同步，不作弊） */}
     {d.faqs?.length ? (
