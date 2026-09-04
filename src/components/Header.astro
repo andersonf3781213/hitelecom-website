@@ -292,8 +292,10 @@ const pathname = Astro.url.pathname;
   .show-online:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(39, 144, 229, 0.35); }
   #site-header.scrolled .show-online { box-shadow: inset 0 0 0 1px var(--line); }
 
-  .menu-open { display: none; flex-direction: column; gap: 5px; width: 40px; height: 40px; }
-  .menu-open span { width: 22px; height: 2px; background: currentColor; border-radius: 2px; transition: 0.3s; }
+  /* 三线在按钮盒内水平垂直双居中（place-items 对 flex 主轴无效，须显式 justify-content）；
+     线宽/间距与旁侧语言胶囊视觉重量对齐 */
+  .menu-open { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 6px; width: 40px; height: 40px; }
+  .menu-open span { width: 24px; height: 2.5px; background: currentColor; border-radius: 2px; transition: 0.3s; }
 
   /* 搜索遮罩 */
   .search-mask {

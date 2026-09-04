@@ -552,6 +552,16 @@ transform: translate(-0%, -0%);}
 .pclone .yun_2_1 ul li {width:49%; margin-right:0}
 .pclone .yun_2_1 ul li:nth-child(4n) {margin-right:0}
 .pclone .index_1_1 {font-size:1.25em;}
+/* 产品分类网格（pro_2_mid_right_2）手机单列：一行一个产品，标题/标签不再截断。
+   卡片内部从 vw 绝对定位改为静态流，高度随内容自适应（沿用 ≤480 三列网格同款方案）。 */
+.pclone .pro_2_mid_right_2 ul li {width:100%; margin-right:0; margin-bottom:1em; float:none;}
+.pclone .pro_2_mid_right_2 ul li:nth-child(2n) {float:none;}
+.pclone .pro_2_mid_right_2 .pro_2_mid_right_1_mid {height:auto; padding:2em 0;}
+.pclone .pro_2_mid_right_2 .pro_2_mid_right_1_mid_1 {height:auto; position:static; text-align:center;}
+.pclone .pro_2_mid_right_2 .pro_2_mid_right_1_mid_1 img {height:auto; max-height:200px;}
+.pclone .pro_2_mid_right_2 .pro_2_mid_right_1_mid_2 {position:static; padding-top:1.5em;}
+/* 单列后标题宽度足够，通信标签允许换行完整显示 */
+.pclone .pro_2_mid_right_2 .pro_2_mid_right_1_mid_2_2.hi {white-space:normal;}
 }
 @media screen and (max-width:480px) {
 .pclone .yun_3_top {top:.5em;}
