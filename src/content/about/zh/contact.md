@@ -104,7 +104,9 @@
 				</div>
 			</div>
 			<div id="map_canvas">
-			
+			<img src="/images/about/contact-map.jpg" alt="宏太通信办公地址地图：上海市松江区车阳路116号" loading="lazy" />
+			<a class="map_more" href="https://www.openstreetmap.org/?mlat=30.9889&amp;mlon=121.2826#map=16/30.9889/121.2826" target="_blank" rel="noopener">查看大地图</a>
+			<span class="map_attr">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</span>
 			</div>
 		</div>
 	</div>

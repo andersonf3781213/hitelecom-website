@@ -509,3 +509,14 @@
 /* 表单隐私同意提示行（联系页/服务页表单） */
 .pclone .privacy-consent { font-size:0.85em; color:#8a94a6; margin-top:1em; }
 .pclone .privacy-consent a { color:#2791e6; }
+
+/* ===== 联系页静态地图（无高德 Key 时的默认方案；配 Key 后由 JS 隐藏、升级为交互地图） ===== */
+.pclone #map_canvas > img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.pclone #map_canvas .map_more { position:absolute; right:16px; top:16px; z-index:5; background:#fff; color:#1c2b3a; font-size:13px; font-weight:600; padding:9px 16px; border-radius:999px; box-shadow:0 6px 20px rgba(10,30,60,.18); text-decoration:none; transition:transform .25s, box-shadow .25s; }
+.pclone #map_canvas .map_more:hover { transform:translateY(-2px); box-shadow:0 10px 26px rgba(10,30,60,.24); color:#2791e6; }
+.pclone #map_canvas .map_attr { position:absolute; right:6px; bottom:6px; z-index:5; font-size:10px; color:#5a6675; background:rgba(255,255,255,.78); padding:1px 6px; border-radius:4px; }
+.pclone #map_canvas .map_attr a { color:inherit; }
+/* 高德 Key 生效时：隐藏静态图与浮层，让位交互地图 */
+.pclone #map_canvas.amap-on > img,
+.pclone #map_canvas.amap-on .map_more,
+.pclone #map_canvas.amap-on .map_attr { display:none; }
