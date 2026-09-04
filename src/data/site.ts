@@ -68,7 +68,7 @@ export const defaultSeo = {
     description:
       'Hitelecom designs industrial 4G, NB-IoT and LoRa sensor terminals, data loggers and cloud integrations for remote monitoring, with OEM/ODM support.',
     keywords:
-      'Hitelecom, industrial IoT sensors, outdoor 4G IoT sensors, NB-IoT sensors, cellular IoT sensor terminals, LoRa sensors, IoT cloud integration, industrial temperature sensors, temperature and humidity sensors, temperature and humidity data loggers, air quality sensors, TVOC sensors, wireless pressure sensors, soil moisture sensors, tilt sensors, vibration sensors, radar level sensors, radar distance sensors, asset tracking sensors, custom gas sensors, IoT sensors manufacturer China, OEM ODM IoT sensors',
+      'Hitelecom, industrial IoT sensors, outdoor 4G IoT sensors, NB-IoT sensors, cellular IoT sensor terminals, LoRa sensors, IoT cloud integration, industrial temperature sensors, temperature and humidity sensors, temperature and humidity data loggers, air quality sensors, TVOC sensors, wireless pressure sensors, soil moisture sensors, tilt sensors, vibration sensors, submersible level sensors, radar distance sensors, asset tracking sensors, custom gas sensors, IoT sensors manufacturer China, OEM ODM IoT sensors',
   },
   zh: {
     title:
@@ -76,6 +76,6 @@ export const defaultSeo = {
     description:
       '上海宏太通信技术有限公司（Hitelecom）设计与制造50余种工业物联网传感终端与记录仪配置，主打户外与工业4G、NB-IoT市场，部分型号支持LoRa/LoRaWAN，可接入宏太云、客户云平台或私有化部署（API/MQTT），覆盖工业监测、智慧水务、智慧城市、智慧农业，支持OEM/ODM定制。',
     keywords:
-      '宏太通信,Hitelecom,工业物联网传感器,户外4G传感器,NB-IoT传感器,蜂窝物联网传感终端,工业温度传感器,温湿度传感器,温湿度记录仪,空气质量传感器,TVOC传感器,无线压力传感器,土壤水分传感器,倾角传感器,振动传感器,雷达液位传感器,雷达测距传感器,资产定位终端,定制气体传感器,物联网云平台,传感器OEM,传感器ODM',
+      '宏太通信,Hitelecom,工业物联网传感器,户外4G传感器,NB-IoT传感器,蜂窝物联网传感终端,工业温度传感器,温湿度传感器,温湿度记录仪,空气质量传感器,TVOC传感器,无线压力传感器,土壤水分传感器,倾角传感器,振动传感器,投入式液位传感器,雷达测距传感器,资产定位终端,定制气体传感器,物联网云平台,传感器OEM,传感器ODM',
   },
 } as const;

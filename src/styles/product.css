@@ -684,8 +684,8 @@ min-height:inherit}
 @media (max-width:1024px){ .pclone .pro_apps_list {grid-template-columns:repeat(2, 1fr);} }
 @media (max-width:640px){ .pclone .pro_apps_list {grid-template-columns:1fr; gap:1em;} }
 
-/* ===== GEO：FAQ 小节 ===== */
-.pclone .pro_faq { padding:2.5vw 0 4vw; }
+/* ===== GEO：FAQ 小节（浅灰蓝底与上下白色区块分隔） ===== */
+.pclone .pro_faq { padding:2.5vw 0 4vw; background:#f3f7fb; border-top:1px solid #e6eef6; border-bottom:1px solid #e6eef6; }
 .pclone .pro_faq_list { margin-top:2.2em; }
 .pclone .pro_faq_item { border:1px solid #e8edf3; border-radius:0.75em; padding:1.4em 1.7em; margin-bottom:1.1em; background:#fff; }
 .pclone .pro_faq_item dt { font-size:1.05em; font-weight:600; color:#111; line-height:1.5; }

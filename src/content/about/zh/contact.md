@@ -157,6 +157,7 @@
 									<span>提 交</span>
 								</a>
 							</div>
+							<p class="privacy-consent">提交此表单即表示您同意我们的<a href="/zh/about/privacy">《隐私政策》</a>。</p>
 							</form>
 	</div>
 	 

@@ -8,7 +8,7 @@ import { getEntry } from 'astro:content';
  * 编辑入口：/admin 后台「关于我们」集合，或直接编辑对应 .md 文件。
  */
 
-export type AboutSection = 'intro' | 'quality' | 'partner' | 'joinus' | 'contact';
+export type AboutSection = 'intro' | 'quality' | 'partner' | 'joinus' | 'contact' | 'privacy';
 export type Locale = 'en' | 'zh';
 
 /** 取某语言某板块的原始 HTML 内容 */

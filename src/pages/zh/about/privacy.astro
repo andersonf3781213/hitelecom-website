@@ -1,0 +1,31 @@
+---
+/**
+ * 关于我们 - 隐私政策（中文）：/zh/about/privacy */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AboutShell from '../../../components/about/AboutShell.astro';
+import { getAboutSection } from '../../../data/about';
+import { enhanceContentHtml, normalizeBody, contentImageSrc } from '../../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh' },
+    { '@type': 'ListItem', position: 2, name: '关于我们', item: 'https://www.hitelecom.com/zh/about' },
+    { '@type': 'ListItem', position: 3, name: '隐私政策', item: 'https://www.hitelecom.com/zh/about/privacy' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="zh"
+  title="隐私政策 | 宏太通信"
+  description="宏太通信隐私政策：说明本网站如何收集、使用和保护您通过表单提交的个人信息，以及如何就隐私问题与我们联系。"
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <Fragment set:html={await enhanceContentHtml(normalizeBody(await getAboutSection('zh', 'privacy')), '宏太通信隐私政策')} />
+  </AboutShell>
+</BaseLayout>

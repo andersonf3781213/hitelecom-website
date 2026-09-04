@@ -1,0 +1,32 @@
+---
+/**
+ * 关于我们 - 隐私政策（英文）：/about/privacy
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AboutShell from '../../components/about/AboutShell.astro';
+import { getAboutSection } from '../../data/about';
+import { enhanceContentHtml, normalizeBody, contentImageSrc } from '../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+    { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.hitelecom.com/about' },
+    { '@type': 'ListItem', position: 3, name: 'Privacy Policy', item: 'https://www.hitelecom.com/about/privacy' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="en"
+  title="Privacy Policy | Hitelecom"
+  description="How Hitelecom collects, uses and protects personal information submitted through this website, and how to contact us about privacy."
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <Fragment set:html={await enhanceContentHtml(normalizeBody(await getAboutSection('en', 'privacy')), 'Hitelecom Privacy Policy')} />
+  </AboutShell>
+</BaseLayout>

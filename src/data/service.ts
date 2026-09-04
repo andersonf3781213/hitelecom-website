@@ -77,7 +77,7 @@ export const serviceContent: Record<'en' | 'zh', ServiceContent> = {
       { name: 'Hitelecom Cloud', type: 'Scenarios', file: '/downloads/hitelecom-cloud-scenarios.pdf', downName: 'Hitelecom-Cloud-Scenarios.pdf' },
       { name: 'Temperature Sensor', type: 'Brochure', file: '/downloads/temperature-sensor.jpg', downName: 'Temperature-Sensor-Brochure.jpg' },
       { name: 'Soil Sensor', type: 'Brochure', file: '/downloads/soil-sensor.jpg', downName: 'Soil-Sensor-Brochure.jpg' },
-      { name: 'Radar Level Sensor', type: 'Brochure', file: '/downloads/liquid-level-sensor.jpg', downName: 'Liquid-Level-Sensor-Brochure.jpg' },
+      { name: 'Submersible Level Sensor', type: 'Brochure', file: '/downloads/liquid-level-sensor.jpg', downName: 'Liquid-Level-Sensor-Brochure.jpg' },
       { name: 'Pressure Sensor', type: 'Brochure', file: '/downloads/pressure-sensor.jpg', downName: 'Pressure-Sensor-Brochure.jpg' },
       { name: 'Water Leakage Sensor (custom project)', type: 'Brochure', file: '/downloads/water-leakage-sensor.jpg', downName: 'Water-Leakage-Sensor-Brochure.jpg' },
       { name: 'Air Quality', type: 'Brochure', file: '/downloads/air-quality-sensor.jpg', downName: 'Air-Quality-Sensor-Brochure.jpg' },

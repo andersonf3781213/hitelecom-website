@@ -540,7 +540,7 @@ export const productContent ={
      {
       "id": "281",
       "img": "product/products/281.png",
-      "name": "Radar Level Sensor",
+      "name": "Submersible Level Sensor",
       "conn": "NB-IoT | 4G LTE | LoRa"
      },
      {
@@ -1122,7 +1122,7 @@ export const productContent ={
      {
       "id": "281",
       "img": "product/products/281.png",
-      "name": "Radar Level Sensor",
+      "name": "Submersible Level Sensor",
       "conn": "NB-IoT | 4G LTE | LoRa"
      }
     ]
@@ -2198,7 +2198,7 @@ export const productContent ={
     "dateModified": "2026-09-02"
    },
    "281": {
-    "series": "H Series · Radar Level Sensor",
+    "series": "H Series · Submersible Level Sensor",
     "tagline": "Precision | Range | Ultra-Low Power",
     "desc": "Hitelecom's level sensor provides precise monitoring, timely feedback, and high stability, delivering accurate and continuous liquid level data across various industrial settings.",
     "heroImg": "product/details/281-hero.png",
@@ -11445,8 +11445,8 @@ export const listSeo: Record<'en' | 'zh', Record<string, PageSeo>> = {
       desc: 'Multi-parameter soil sensors for moisture, temperature, EC, pH and NPK, with an IP68 enclosure designed for burial and 4G/NB-IoT reporting for irrigation.',
     },
     '268': {
-      title: 'Radar Level Sensors | Up to 200 m | Hitelecom',
-      desc: 'Radar level sensors with a 0–200 m range for rivers, reservoirs and tanks, with 4G/NB-IoT reporting, threshold alerts and Hitelecom Cloud integration.',
+      title: 'Submersible Level Sensors | Up to 200 m | Hitelecom',
+      desc: 'Submersible level sensors with a 0–200 m range for rivers, reservoirs and tanks, with 4G/NB-IoT reporting, threshold alerts and Hitelecom Cloud integration.',
     },
     '267': {
       title: 'High-Precision Tilt Sensors | 4G & NB-IoT | Hitelecom',
@@ -11508,7 +11508,7 @@ export const listSeo: Record<'en' | 'zh', Record<string, PageSeo>> = {
   zh: {
     '261': {
       title: '工业物联网传感器 | 户外4G/NB-IoT传感终端 - 宏太通信',
-      desc: '宏太通信工业物联网传感器：50余种户外4G传感器与NB-IoT传感终端配置，涵盖温度、压力、土壤水分、倾角、振动、雷达液位、雷达测距与空气质量/TVOC监测，支持宏太云接入与OEM/ODM定制。',
+      desc: '宏太通信工业物联网传感器：50余种户外4G传感器与NB-IoT传感终端配置，涵盖温度、压力、土壤水分、倾角、振动、投入式液位、雷达测距与空气质量/TVOC监测，支持宏太云接入与OEM/ODM定制。',
     },
     '263': {
       title: '工业温度传感器 | 户外4G/NB-IoT - 宏太通信',
@@ -11523,8 +11523,8 @@ export const listSeo: Record<'en' | 'zh', Record<string, PageSeo>> = {
       desc: '宏太通信土壤水分传感器：水分、温度、电导率、氮磷钾多参数监测，4G/NB-IoT接入宏太云，服务智慧农业，支持OEM/ODM定制。',
     },
     '268': {
-      title: '雷达液位传感器 | 户外4G/NB-IoT - 宏太通信',
-      desc: '宏太通信雷达液位传感器：精准稳定的液位监测终端，4G/NB-IoT通信，适用于智慧水务与工业液位监测，支持OEM/ODM定制。',
+      title: '投入式液位传感器 | 户外4G/NB-IoT - 宏太通信',
+      desc: '宏太通信投入式液位传感器：精准稳定的液位监测终端，4G/NB-IoT通信，适用于智慧水务与工业液位监测，支持OEM/ODM定制。',
     },
     '267': {
       title: '倾角传感器 | 户外4G/NB-IoT - 宏太通信',
@@ -11600,8 +11600,8 @@ export const detailSeo: Record<'en' | 'zh', Record<string, PageSeo>> = {
       desc: 'Soil sensor for moisture, temperature, EC, pH and NPK in one probe, with an IP68 enclosure designed for burial and 4G/NB-IoT reporting to Hitelecom Cloud.',
     },
     '281': {
-      title: 'Radar Level Sensor | Up to 200 m | Hitelecom',
-      desc: 'Radar level sensor for rivers, reservoirs and tanks, with a 0–200 m range and ±0.5% FS accuracy, with 4G/NB-IoT reporting and Hitelecom Cloud integration.',
+      title: 'Submersible Level Sensor | Up to 200 m | Hitelecom',
+      desc: 'Submersible level sensor for rivers, reservoirs and tanks, with a 0–200 m range and ±0.5% FS accuracy, with 4G/NB-IoT reporting and Hitelecom Cloud integration.',
     },
     '282': {
       title: 'Tilt Sensor (Inclinometer) | H Series | Hitelecom',
@@ -11678,8 +11678,8 @@ export const detailSeo: Record<'en' | 'zh', Record<string, PageSeo>> = {
       desc: '宏太土壤水分传感器集成水分、温度、电导率、氮磷钾多参数监测，定时同步、精准测量，支持4G/NB-IoT接入宏太云，服务智慧农业。',
     },
     '281': {
-      title: '雷达液位传感器 | H系列 - 宏太通信',
-      desc: '宏太雷达液位传感器精准监测、及时反馈、高稳定性，保障液位数据准确连续，支持户外4G/NB-IoT通信，适用于智慧水务与工业液位监测。',
+      title: '投入式液位传感器 | H系列 - 宏太通信',
+      desc: '宏太投入式液位传感器精准监测、及时反馈、高稳定性，保障液位数据准确连续，支持户外4G/NB-IoT通信，适用于智慧水务与工业液位监测。',
     },
     '282': {
       title: '倾角传感器 | H系列 - 宏太通信',

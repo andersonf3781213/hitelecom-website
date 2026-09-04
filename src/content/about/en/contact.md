@@ -157,6 +157,7 @@
 									<span>Send Inquiry</span>
 								</a>
 							</div>
+							<p class="privacy-consent">By submitting this form, you agree to our <a href="/about/privacy">Privacy Policy</a>.</p>
 							</form>
 	</div>
 	 

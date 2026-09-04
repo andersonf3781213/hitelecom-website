@@ -76,6 +76,7 @@ const socialIcons: Record<string, string> = {
 
     <div class="footer-bottom">
       <p>{t.footer.copyright}</p>
+      <a class="nf" href={l('/about/privacy', locale)}>{locale === 'zh' ? '隐私政策' : 'Privacy Policy'}</a>
       {locale === 'zh'
         ? <a class="nf" href={site.icpUrl} target="_blank" rel="noopener">{site.icp}</a>
         : <a class="nf" href="https://iot67.com">iot67.com</a>}
