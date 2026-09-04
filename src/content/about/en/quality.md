@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Cloud · IoT · Sensors"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Quality & Reliability"/></h1>
 						 
 					</Div>
 				</Div>
@@ -35,7 +35,7 @@
 				</li>
 				<li class="reveal">
 					<a class="css3 on" href="/about/quality">
-						Quality and Reliability
+						Quality &amp; Reliability
 					</a>
 				</li>
 				<li class="reveal">
@@ -59,7 +59,7 @@
 					Company Overview
 				</option> 
 				<option  selected="selected"    value="/about/quality">
-					Quality and Reliability
+					Quality &amp; Reliability
 				</option> 
 				<option    value="/about/partner">
 					Partners
@@ -85,7 +85,7 @@
 							</div>
 			</div>
 			<div class="qa_1_1_right reveal">
-				<p>Hitelecom designs and manufactures its products under a documented quality management system, with defined inspection and testing at each production stage.&nbsp;</p><p>At Hitelecom&#39;s electronics manufacturing facility, each production step follows documented work instructions and inspection criteria aligned with applicable industry standards. With a target defect rate of 30 ppm, we operate a continuous-improvement quality management system with regular reviews and process optimization.</p><p><br/></p>			</div>
+				<p>Hitelecom designs and manufactures its products under a documented quality management system, with defined inspection and testing at each production stage.&nbsp;</p><p>At Hitelecom&#39;s electronics manufacturing facility, each production step follows documented work instructions and inspection criteria aligned with applicable industry standards. We target a defect rate of 30 ppm and use regular reviews and process improvements to support that objective.</p><p><br/></p>			</div>
 		</div>
 		<div class="clearfix qa_1_2 reveal">
 			<img alt="Engineer inspecting PCB panels in the laboratory" src="/images/about/up_33f8ecc7bf8fbfcf1538a9c87e898b51.webp">
@@ -102,7 +102,7 @@
 								
 							</div>
 							<Div class="qa_2_mid_1 reveal">
-								<p style="text-indent: 0em;">For its proprietary products, Hitelecom designs for durability and long-term stability: selected materials, proven IoT design practices, and controlled manufacturing processes help devices maintain performance under demanding temperature and humidity conditions.</p><p style="text-indent: 0em;">We also work long-term with qualified semiconductor laboratories, using custom burn-in test fixtures that simulate high temperature, moisture, and pressure conditions to verify device functionality, longevity, and moisture resistance under continuous power.</p><p style="text-indent: 0em;">Every product undergoes an aging test before leaving the factory, supporting stable operation in the field.</p><p><br/></p>
+								<p style="text-indent: 0em;">For its proprietary products, Hitelecom designs for durability and long-term stability: carefully selected materials, proven IoT design practices, and controlled manufacturing processes help devices maintain performance under demanding temperature and humidity conditions.</p><p style="text-indent: 0em;">We also maintain long-term relationships with qualified semiconductor laboratories, using custom burn-in test fixtures that simulate high-temperature, high-humidity, and pressure conditions to verify device functionality, longevity, and moisture resistance under continuous power.</p><p style="text-indent: 0em;">Every product undergoes an aging test before leaving the factory, supporting stable operation in the field.</p><p><br/></p>
 							</Div>
 		</Div>
 	</Div>
@@ -169,7 +169,7 @@
 													<div class="qa_3_1_mid_jj_2_jj">
 														<div class="clearfix c1">Our team includes experienced manufacturing professionals and core technicians with backgrounds at companies such as Foxconn and Quanta, with strength in advanced SMT and assembly processes. This expertise supports design feasibility and enhances production efficiency, enabling effective cost control and optimization. We deliver high-quality, cost-effective product solutions to our clients.
 </div>
-<div class="clearfix c2"><p>Experienced Manufacturing Team</p><p>Advanced Manufacturing Equipment</p><p>Engineers from Foxconn and Quanta</p><p>Proficient in advanced electronic assembly</p></div>													</div>
+<div class="clearfix c2"><p>Experienced Manufacturing Team</p><p>Advanced Manufacturing Equipment</p><p>Engineers with experience at Foxconn and Quanta</p><p>Expertise in advanced electronics assembly</p></div>													</div>
 												</div>
 											</div>
 										</div>
@@ -261,7 +261,7 @@
 													<div class="qa_4_2_mid_2_mid_1">
 														REHM Reflow													</div>
 													<div class="qa_4_2_mid_2_mid_2">
-														Rehm Reflow VS Series													</div>
+														VS Series													</div>
 												</div>
 											</div>
 										</div>
@@ -360,7 +360,7 @@
 					   	<li class="">
 							<div class="cell_mid">
 								<div class="cell_h">
-									<img alt="muRata — Innovator in Electronics, Hitelecom component partner" src="/images/about/up_0f2e973fee69307b9b26f6cf0a05ebd4.jpg">
+									<img alt="Murata — Innovator in Electronics, Hitelecom component partner" src="/images/about/up_0f2e973fee69307b9b26f6cf0a05ebd4.jpg">
 								</div>
 							</div>
 						</li>
@@ -426,7 +426,7 @@
 					Rigorous Quality Control Procedures
 				</div>
 				<div class="qa_6_mid_right_2 reveal">
-					<p>The Hitelecom team adopts a Total Quality Management (TQM) philosophy, with quality control at every stage of product development, manufacturing, sales, and service. Our objective is to prevent defects through process control, full-team participation, and continuous improvement. We have successfully obtained ISO 9001 and IATF 16949 quality management system certifications.</p>				</div>
+					<p>The Hitelecom team adopts a Total Quality Management (TQM) philosophy, with quality control at every stage of product development, manufacturing, sales, and service. Our objective is to prevent defects through process control, company-wide participation, and continuous improvement. We have successfully obtained ISO 9001 and IATF 16949 quality management system certifications.</p>				</div>
 			</div>
 		</Div>
 	</div>

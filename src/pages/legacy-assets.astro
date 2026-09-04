@@ -21,6 +21,10 @@ for (const locale of ['en', 'zh'] as const) {
   }
 }
 const list = [...imgs].sort();
+
+// 历史上屏后弃用的 solution 系统卡图（方案页 system 卡以 natural 单尺寸渲染，
+// 故此处同样用 natural，保证衍生品文件名与历史 URL 一致）
+const naturalImgs = ['solution/59-sys-2.png', 'solution/64-sys-1.png'];
 ---
 
 <!doctype html>
@@ -35,6 +39,7 @@ const list = [...imgs].sort();
     {/* 与产品详情页轮播一致的 widths 组合，保证衍生品 hash 与历史 URL 一致 */}
     <div aria-hidden="true">
       {list.map((src) => <Img src={src} alt="" widths={[320, 560]} sizes="25vw" />)}
+      {naturalImgs.map((src) => <Img src={src} alt="" natural />)}
     </div>
   </body>
 </html>

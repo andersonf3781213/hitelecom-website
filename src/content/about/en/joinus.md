@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Cloud · IoT · Sensors"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Careers at Hitelecom"/></h1>
 						 
 					</Div>
 				</Div>
@@ -35,7 +35,7 @@
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/quality">
-						Quality and Reliability
+						Quality &amp; Reliability
 					</a>
 				</li>
 				<li class="reveal">
@@ -59,7 +59,7 @@
 					Company Overview
 				</option> 
 				<option     value="/about/quality">
-					Quality and Reliability
+					Quality &amp; Reliability
 				</option> 
 				<option    value="/about/partner">
 					Partners
@@ -241,7 +241,7 @@
 														</Div>
 														<div class="jo_3_2_mid_con_2">
 															1. 5+ years of production management experience, including 3+ years in the automotive or electronics industry.<br>
-2. Proficient in production processes and automotive electronics procedures, familiar with the IATF 16949 quality management system.<br>
+2. Proficiency in production processes and automotive electronics procedures, with familiarity with the IATF 16949 quality management system.<br>
 3. Knowledgeable in lean management methods such as 5S, SPC, and TPM.<br>														</div>
 													</dd>
 													<dd>
@@ -305,7 +305,7 @@
 															Requirements
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Associate degree or higher in accounting or related field, prior experience in financial invoicing preferred.<br>
+															1. An associate degree or higher in accounting or a related field; prior experience in financial invoicing preferred.<br>
 2. A junior accounting qualification is required.<br>
 3. Knowledgeable in taxation, with over one year of related work experience.<br>
 4. Detail-oriented and responsible, with strong numerical aptitude.<br>														</div>
@@ -358,7 +358,7 @@
 														<div class="jo_3_2_mid_con_2">
 															1. Communicate with customers via WeChat or messaging tools to address inquiries and facilitate order completion.<br>
 2. Independently manage customer follow-ups, negotiations, contracts, payments, and relationship maintenance.<br>
-3. Promptly, effectively, and properly handle customer issues, orders, and follow-up services.<br>
+3. Promptly, effectively, and properly handle customer inquiries and orders and provide appropriate follow-up support.<br>
 4. Complete other tasks assigned by management.<br>
 														</div>
 													</dd>
@@ -416,9 +416,9 @@
 															Responsibilities
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Follow work order schedules to timely complete tasks such as material picking, preparation, receipt, and issuance management for SMT and DIP production lines.<br>
+															1. Follow work-order schedules and complete material picking, preparation, receipt, and issuance tasks on time such as material picking, preparation, receipt, and issuance management for SMT and DIP production lines.<br>
 2. Conduct inventory checks, registration, and storage of new materials and returns.<br>
-3. Perform monthly material inventories to ensure the consistency of accounts, physical stock, and records, promptly investigate any discrepancies to ensure accuracy.<br>
+3. Perform monthly material inventories to reconcile system records with physical inventory and investigate discrepancies promptly, promptly investigate any discrepancies to ensure accuracy.<br>
 4. Ensure correct storage locations for each type of material.<br>
 5. Complete other tasks assigned by management.<br>														</div>
 													</dd>
@@ -479,12 +479,12 @@
 															Responsibilities
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Prepare work instructions for product process inspection, final inspection, and process verification.<br>
+															1. Prepare work instructions for in-process inspection, final inspection, and process verification.<br>
 2. Handle the verification, review, and disposition of non-conforming products during production, including determining, analyzing, and providing feedback on responsibility for non-conformities.<br>
 3. Conduct quality process audits to monitor production quality and data, investigate issues identified during inspections, analyze and provide feedback, and track corrective actions.<br>
 4. Oversee product quality monitoring, including the production process, finished goods, shipments, defect rates, and analysis and documentation of defects.<br>
-5. Organize relevant departments to investigate, analyze, handle, and verify the effectiveness of quality issues.<br>
-6. Coordinate with relevant departments to analyze customer complaints, drive improvements, write complaint handling reports, and establish a customer complaint ledger.<br>
+5. Organize relevant departments to investigate, analyze, handle, and verify the effectiveness of corrective actions.<br>
+6. Coordinate with relevant departments to analyze customer complaints, drive improvements, write complaint handling reports, and maintain a customer complaint log.<br>
 7. Communicate with engineering staff to establish inspection standards and specifications, and train and assess inspectors.<br>
 8. Monitor the progress and results of various process trials.<br>
 9. Monitor the quality performance of materials during production and collaborate with SQE to help suppliers continuously improve quality.<br>
@@ -500,7 +500,7 @@
 															1. Bachelor's degree or higher in a STEM field; experience as a quality internal auditor in the electronics industry preferred.<br>
 2. Proficient with quality analysis tools (the seven basic QC tools and applicable automotive core tools) and familiar with ISO 9001, IATF 16949, and related quality systems.<br>
 3. Strong logical thinking skills, knowledgeable in quality control, quality statistics, and quality management.<br>
-4. Excellent communication skills, team-oriented, meticulous thinker with strong analytical and problem-solving abilities.<br>
+4. Excellent communication skills, team-oriented, detail-oriented, with strong analytical and problem-solving skills with strong analytical and problem-solving abilities.<br>
 														</div>
 													</dd>
 													<dd>
@@ -549,8 +549,8 @@
 															Responsibilities
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Proficient in SMT machinery, maintaining equipment to meet production requirements.<br>
-2. Implement effective improvements and process anomaly resolutions, develop and execute training programs for process staff, and coordinate personnel according to the production schedule.<br>
+															1. Operate and maintain SMT equipment to meet production requirements.<br>
+2. Implement effective improvements and corrective actions for process abnormalities, develop and execute training programs for process staff, and coordinate personnel according to the production schedule.<br>
 3. Create and adjust machine programs for new models, maintain SMD equipment, establish maintenance schedules, and perform regular maintenance on production line equipment.<br>
 4. Supervise technicians to control material waste, achieving waste reduction targets.<br>
 5. Follow up on new product introductions and design issues, suggest improvements for quality and efficiency, and prepare for mass production.<br>
@@ -614,10 +614,10 @@
 														<div class="jo_3_2_mid_con_2">
 															1. Establish standards, procedures, plans, and specifications for reliability testing. <br>
 2. Develop product reliability tests, report issues to relevant personnel, and coordinate to ensure progress is communicated to project members. <br>
-3. Understand and master schematic diagrams and have some soldering experience. <br>
+3. Read and interpret schematic diagrams and have some soldering experience. <br>
 4. Be able to comprehend component datasheets. <br>
 5. Fully understand and master industry standards and regulations. <br>
-6. Set up testing platforms and master various testing software and equipment. <br>
+6. Set up testing platforms and use relevant test software and equipment proficiently. <br>
 7. Compile test reports, track and retest faults, assist in the analysis of test anomalies, and review test results. <br>
 8. Use schematic diagrams to troubleshoot and perform basic repairs on circuit boards. <br>
 9. Complete other tasks assigned by management. <br>														</div>
@@ -631,8 +631,8 @@
 2. Strong sense of responsibility and initiative, with excellent communication, coordination, and execution skills, good analytical and problem-solving abilities, and the ability to work under pressure. <br>
 3. A degree in electronics or a related field, with basic knowledge of electronic components and their characteristics and principles. <br>
 4. Experienced with the use of instruments and meters, with over one year of experience in electronic circuit design or product testing. <br>
-5. Familiar with reliability testing standards and has a strong quality awareness. <br>
-6. Knowledgeable in the reliability verification processes for electronic products, experienced in reliability assessments, analysis, and improvements based on products, with failure analysis capabilities. <br>														</div>
+5. Familiarity with reliability-testing standards and a strong commitment to quality. <br>
+6. Knowledgeable in the reliability verification processes for electronic products, experience in product reliability assessment, failure analysis, and corrective improvement, with failure analysis capabilities. <br>														</div>
 													</dd>
 													<dd>
 														<div class="jo_3_2_mid_con_3">
@@ -680,9 +680,9 @@
 															Responsibilities
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Produce company brand visual design, brochures, advertising, website design, product packaging, manuals, layout production, and exhibition design, and coordinate prototyping and printing.<br>
+															1. Create brand visuals, brochures, advertising, website design, product packaging, manuals, layout production, and exhibition design, and coordinate prototyping and printing.<br>
 2. Manage visual updates and maintenance for the company's web and app interfaces.<br>
-3. Design and produce UI interfaces/icons based on product design requirements.<br>
+3. Design user interfaces and icons based on product design requirements.<br>
 4. Classify and archive graphic materials as per established guidelines.<br>
 5. Complete other ad-hoc tasks assigned by management.<br>														</div>
 													</dd>
@@ -694,7 +694,7 @@
 															1. Associate degree or higher in graphic design, fine arts, visual communication, or a related field.<br>
 2. 2+ years of experience in advertising or graphic design, proficient in Adobe Photoshop, Adobe Illustrator, and CorelDRAW, with strong professional skills and sound visual judgment.<br>
 3. Excellent learning ability, passionate about the design industry, able to apply fresh design concepts and techniques to work.<br>
-4. Detail-oriented, strong execution, cooperative, and efficient.<br>
+4. Detail-oriented, collaborative, efficient, and able to execute projects reliably.<br>
 5. Applicants must provide a portfolio of graphic work.<br>														</div>
 													</dd>
 													<dd>
@@ -807,7 +807,7 @@
 														</Div>
 														<div class="jo_3_2_mid_con_2">
 															1. Based on product/business requirements, develop actionable hardware technical plans, participate in requirement analysis, hardware system setup, and technical decision discussions, and complete specific R&D design.<br>
-2. Select hardware platforms, analyzing and selecting components according to the plan.<br>
+2. Select hardware platforms and components according to the approved technical plan according to the plan.<br>
 3. Complete schematic design, circuit board debugging, and signal and timing testing; coordinate driver integration and troubleshooting.<br>
 4. Write, review, and archive hardware standards documents, design documents, and testing documents.<br>
 5. Guide and review PCB layout designs and participate in structural design reviews.<br>														</div>
@@ -821,7 +821,7 @@
 2. Proficient in common embedded peripheral interface protocols, such as GPIO, ADC, DAC, SPI, I2C, and UART, with expertise in analog and digital circuits.<br>
 3. Skilled in debugging embedded hardware and software and proficient in PCB layout design.<br>
 4. Familiar with TCP/IP protocols and MAC- and IP-layer packet structures; experience with Zigbee, 433 MHz, Wi-Fi, and Bluetooth protocols is preferred.<br>
-5. Skilled in PCB design and simulation software such as Altium Designer, PADS, Cadence Allegro, EasyEDA.<br>
+5. Skilled in PCB design and simulation software such as Altium Designer, PADS, Cadence Allegro, and EasyEDA.<br>
 6. Design and development of sensor products, preparation of related technical documents, responsible for the control of the entire product realization process, and providing customized solutions.<br>
 7. Capable of independently completing circuit analysis, drawing PCB and circuit diagrams, schematics.<br>
 8. Experience developing sensor instruments and equipment is a plus.<br>														</div>
@@ -883,12 +883,12 @@
 															Requirements
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Bachelor's degree or higher, familiar with IoT, network communications, automation, and related industries.<BR>
-2. Over 3 years of sales experience, preferably with successful cases in smart water management, smart agriculture, smart cities, and industrial automation.<BR>
+															1. A bachelor's degree or higher and familiarity with IoT, network communications, automation, and related industries.<BR>
+2. Over 3 years of sales experience, preferably with a proven sales track record in smart water management, smart agriculture, smart cities, and industrial automation.<BR>
 3. Capable of independently conducting prospecting and consultative selling, from initial contact to signed contracts; an established industry network is a plus.<BR>
-4. Proficient in establishing strong relationships with clients, experienced in major account sales and strategic sales thinking, with strong communication and negotiation skills.<BR>
+4. Proven ability to build client relationships, with experience in major account sales and strategic sales thinking, plus strong communication and negotiation skills.<BR>
 5. Passionate about sales and confident in customer-facing communication, with a positive attitude and the ability to build cooperative relationships with new clients.<BR>
-6. Strong learning ability, enthusiastic, willing to embrace challenges, innovative, and able to quickly respond to customer and internal demands.<BR>
+6. A quick learner who is proactive, adaptable, innovative, and able to respond quickly to customer and internal demands.<BR>
 7. Proficient in using Microsoft Office software.<BR>														</div>
 													</dd>
 													<dd>
@@ -941,10 +941,10 @@
 2. Own recruitment: develop recruitment plans, explore hiring channels, and implement hiring processes.<br>
 3. Manage personnel records, including onboarding, contract signing, probation, promotion, demotion, resignation, rewards and penalties, social security and housing fund matters, and labor disputes.<br>
 4. Oversee training matters, participate in the creation of training plans, and execute training objectives and assessments.<br>
-5. Involved in the formulation, implementation, and supervision of departmental systems, mechanisms, and performance evaluations.<br>
+5. Participate in the development, implementation, and supervision of departmental systems, mechanisms, and performance evaluations.<br>
 6. Handle compensation and benefits administration, performance incentives, attendance monitoring, career development, and compensation changes related to internal transfers.<br>
 7. Update employee records promptly as required by company and department procedures, and compile relevant HR reports.<br>
-8. Develop employee communication plans, skilled in maintaining effective communication and coordinating interpersonal relationships.<br>
+8. Develop employee communication plans, maintain effective communication, and coordinate interpersonal relationships.<br>
 9. Manage the declaration and claims processes for employee work-related injuries.<br>														</div>
 													</dd>
 													<dd>
@@ -952,7 +952,7 @@
 															Requirements
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Bachelor's degree or higher in Human Resources Management, Business Administration, or related fields; capable of working under pressure with strong communication skills.<br>
+															1. Bachelor's degree or higher in human resources management, business administration, or a related field; capable of working under pressure with strong communication skills.<br>
 2. Over 5 years of experience in human resources or administrative management; proficient in transactional HR tasks and familiar with HR administrative workflows.<br>
 3. Knowledgeable about national and regional labor laws and regulations.<br>
 4. Steady and meticulous, adaptable and proactive, with strong learning ability and a sense of responsibility; self-motivated and able to handle tasks independently.<br>														</div>

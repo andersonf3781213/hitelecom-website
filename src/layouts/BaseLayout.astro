@@ -34,8 +34,13 @@ const escLen = (x: string) =>
   x.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').length;
 const clampSeo = (s: string, max: number) => {
   if (escLen(s) <= max) return s;
-  let cut = s;
-  while (cut.length && escLen(cut) + 1 > max) cut = cut.slice(0, -1);
+  // 优先保留最后一个完整句（句号结尾、不超长），避免 description 以半句收尾
+  let limit = s.length;
+  while (limit > 0 && escLen(s.slice(0, limit)) > max) limit--;
+  const head = s.slice(0, limit);
+  const sentEnd = Math.max(head.lastIndexOf('. '), head.lastIndexOf('! '), head.lastIndexOf('? '));
+  if (sentEnd > max * 0.5) return head.slice(0, sentEnd + 1);
+  let cut = head;
   const sp = cut.lastIndexOf(' ');
   if (sp > cut.length * 0.6) cut = cut.slice(0, sp);
   cut = cut.replace(/[\s,;:、，；：·—-]+$/, '');

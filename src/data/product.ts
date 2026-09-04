@@ -609,12 +609,12 @@ export const productContent ={
      },
      {
       "cid": "272",
-      "name": "Indoor",
+      "name": "Indoor Gateway",
       "on": false
      },
      {
       "cid": "273",
-      "name": "Outdoor",
+      "name": "Outdoor Gateway",
       "on": false
      }
     ],
@@ -622,13 +622,13 @@ export const productContent ={
      {
       "id": "276",
       "img": "product/products/276.png",
-      "name": "Indoor",
+      "name": "Indoor Gateway",
       "conn": "LoRa | 4G LTE | Ethernet"
      },
      {
       "id": "275",
       "img": "product/products/275.png",
-      "name": "Outdoor",
+      "name": "Outdoor Gateway",
       "conn": "LoRa | 4G LTE | Ethernet"
      }
     ]
@@ -691,13 +691,13 @@ export const productContent ={
       "id": "",
       "img": "product/products/custom-1.png",
       "name": "Digital Twin",
-      "conn": "Customized Digital Twin and dynamic data visualization"
+      "conn": "Custom dashboards and dynamic data visualization"
      },
      {
       "id": "",
       "img": "product/products/custom-2.png",
       "name": "GIS Dashboard",
-      "conn": "Customized GIS and multidimensional data visualization"
+      "conn": "Custom maps and multidimensional data visualization"
      },
      {
       "id": "",
@@ -1263,12 +1263,12 @@ export const productContent ={
      },
      {
       "cid": "272",
-      "name": "Indoor",
+      "name": "Indoor Gateway",
       "on": true
      },
      {
       "cid": "273",
-      "name": "Outdoor",
+      "name": "Outdoor Gateway",
       "on": false
      }
     ],
@@ -1276,7 +1276,7 @@ export const productContent ={
      {
       "id": "276",
       "img": "product/products/276.png",
-      "name": "Indoor",
+      "name": "Indoor Gateway",
       "conn": "LoRa | 4G LTE | Ethernet"
      }
     ]
@@ -1291,12 +1291,12 @@ export const productContent ={
      },
      {
       "cid": "272",
-      "name": "Indoor",
+      "name": "Indoor Gateway",
       "on": false
      },
      {
       "cid": "273",
-      "name": "Outdoor",
+      "name": "Outdoor Gateway",
       "on": true
      }
     ],
@@ -1304,7 +1304,7 @@ export const productContent ={
      {
       "id": "275",
       "img": "product/products/275.png",
-      "name": "Outdoor",
+      "name": "Outdoor Gateway",
       "conn": "LoRa | 4G LTE | Ethernet"
      }
     ]
@@ -1389,13 +1389,13 @@ export const productContent ={
       "id": "",
       "img": "product/products/custom-1.png",
       "name": "Digital Twin",
-      "conn": "Customized Digital Twin and dynamic data visualization"
+      "conn": "Custom dashboards and dynamic data visualization"
      },
      {
       "id": "",
       "img": "product/products/custom-2.png",
       "name": "GIS Dashboard",
-      "conn": "Customized GIS and multidimensional data visualization"
+      "conn": "Custom maps and multidimensional data visualization"
      },
      {
       "id": "",
@@ -1521,7 +1521,7 @@ export const productContent ={
     "features": [
      {
       "icon": "product/details/270-f1.png",
-      "text": "Accuracy: ±0.5°C (Customizable to ±0.1°C)"
+      "text": "Accuracy: ±0.5°C (customizable to ±0.1°C)"
      },
      {
       "icon": "product/details/270-f2.png",
@@ -1537,7 +1537,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f5.png",
-      "text": "Energy-Efficient Tech for Long-Lasting Performance"
+      "text": "Low-Power Design for Long-Term Operation"
      },
      {
       "icon": "product/details/270-f6.png",
@@ -1545,11 +1545,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f7.png",
-      "text": "Remote Temperature Monitoring: Access Data Anywhere"
+      "text": "Remote Temperature Monitoring"
      },
      {
       "icon": "product/details/270-f8.png",
-      "text": "Intelligent Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -1565,7 +1565,7 @@ export const productContent ={
      ],
      [
       "Accuracy",
-      "±0.5°C (Customizable to ±0.1°C)"
+      "±0.5°C (customizable to ±0.1°C)"
      ],
      [
       "Protocol",
@@ -1585,7 +1585,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -1603,7 +1603,7 @@ export const productContent ={
      },
      {
       "name": "Accuracy",
-      "value": "±0.5°C (Customizable to ±0.1°C)",
+      "value": "±0.5°C (customizable to ±0.1°C)",
       "unitText": "degree Celsius"
      },
      {
@@ -1626,7 +1626,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -1645,7 +1645,7 @@ export const productContent ={
      },
      {
       "img": "product/details/270-scen4.jpg",
-      "label": "Medical monitoring"
+      "label": "Pharmaceutical and Healthcare Storage"
      },
      {
       "img": "product/details/270-scen5.jpg",
@@ -1653,7 +1653,7 @@ export const productContent ={
      },
      {
       "img": "product/details/270-scen6.jpg",
-      "label": "Smart industry"
+      "label": "Smart Manufacturing"
      },
      {
       "img": "product/details/270-scen7.jpg",
@@ -1720,7 +1720,7 @@ export const productContent ={
      },
      {
       "q": "How long does the battery last?",
-      "a": "The transmitter is designed for more than 10 years of battery life at a one-hour reporting interval — actual life varies with network conditions, temperature, and reporting frequency. The transmitter is fully battery-powered; only the short probe cable to the transmitter is needed."
+      "a": "The transmitter is designed for more than 10 years of battery life at a one-hour reporting interval — actual life varies with network conditions, temperature, and reporting frequency. The transmitter is fully battery-powered; only the probe cable is required — no mains or signal cable is needed at the installation point."
      },
      {
       "q": "How does the sensor report data?",
@@ -1728,7 +1728,7 @@ export const productContent ={
      },
      {
       "q": "Can the sensor be customized for our application?",
-      "a": "Yes. Accuracy, probe length and cable, reporting interval and enclosure can be customized under Hitelecom's OEM/ODM program. Contact sales with your working conditions."
+      "a": "Yes. Probe type, probe length, cable length, reporting interval, and enclosure can be customized under Hitelecom's OEM/ODM program. Contact sales with your working conditions."
      }
     ],
     "dateModified": "2026-09-02"
@@ -1760,7 +1760,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/274-f5.png",
-      "text": "Energy-Efficient Tech for Long-Lasting Performance"
+      "text": "Low-Power Design for Long-Term Operation"
      },
      {
       "icon": "product/details/274-f6.png",
@@ -1768,11 +1768,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/274-f7.png",
-      "text": "Remote Pressure Monitoring: Access Data Anywhere"
+      "text": "Remote Pressure Monitoring"
      },
      {
       "icon": "product/details/274-f8.png",
-      "text": "Smart Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -1812,7 +1812,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -1859,7 +1859,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -1878,11 +1878,11 @@ export const productContent ={
      },
      {
       "img": "product/details/274-scen4.jpg",
-      "label": "Smart industry"
+      "label": "Smart Manufacturing"
      },
      {
       "img": "product/details/274-scen5.jpg",
-      "label": "Scientific experiment"
+      "label": "Scientific Research"
      },
      {
       "img": "product/details/274-scen6.jpg",
@@ -1908,7 +1908,7 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "The Hitelecom H Series pressure sensor is a wireless industrial pressure transmitter for pipelines, pumps and tanks. Ranges span 0–1 MPa up to 20 MPa with ±0.2% FS/year stability and 2× full-scale overload tolerance, reporting over 4G or NB-IoT. The battery is designed for more than 10 years of life at a one-hour reporting interval under specified test conditions.",
+    "summary": "The Hitelecom H Series pressure sensor is a wireless industrial pressure transmitter for pipelines, pumps and tanks. Available full-scale ranges are 1, 1.6, 3.5, 7, 10, and 20 MPa with ±0.2% FS/year stability and 2× full-scale overload tolerance, reporting over 4G or NB-IoT. The battery is designed for more than 10 years of life at a one-hour reporting interval under specified test conditions.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -1953,7 +1953,7 @@ export const productContent ={
     "faqs": [
      {
       "q": "What pressure ranges are available?",
-      "a": "Standard ranges are 0-1 MPa, 1.6 MPa, 3.5 MPa, 7 MPa, 10 MPa and 20 MPa. The sensor tolerates 2× full-scale overload and holds ±0.2% FS per year long-term stability (a separate metric from measurement accuracy)."
+      "a": "Standard ranges are 0-1 MPa, 1.6 MPa, 3.5 MPa, 7 MPa, 10 MPa and 20 MPa. The sensor tolerates 2× full-scale overload and has long-term stability of ±0.2% FS/year (a separate metric from measurement accuracy)."
      },
      {
       "q": "Can it measure both gas and liquid pressure?",
@@ -1961,7 +1961,7 @@ export const productContent ={
      },
      {
       "q": "How does it report readings?",
-      "a": "Wirelessly over 4G or NB-IoT using MQTT, to Hitelecom Cloud, a customer cloud, or private deployment, with configurable thresholds and alerts."
+      "a": "It sends readings over 4G or NB-IoT via MQTT to Hitelecom Cloud, a customer cloud, or a private platform, with configurable thresholds and alerts."
      },
      {
       "q": "What power does it need on site?",
@@ -2005,11 +2005,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/280-f7.png",
-      "text": "Remote Soil Monitoring: Access Data Anywhere"
+      "text": "Remote Soil Monitoring"
      },
      {
       "icon": "product/details/280-f8.png",
-      "text": "Smart Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -2025,7 +2025,7 @@ export const productContent ={
      ],
      [
       "pH",
-      "0–14 pH (0.01 pH resolution)"
+      "0–14 (0.01 resolution)"
      ],
      [
       "Soil Moisture",
@@ -2033,7 +2033,7 @@ export const productContent ={
      ],
      [
       "NPK",
-      "0–1,999 mg/kg (±2% F.S.)"
+      "0–1,999 mg/kg (±2% FS)"
      ],
      [
       "Protocol",
@@ -2049,7 +2049,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -2067,7 +2067,7 @@ export const productContent ={
      },
      {
       "name": "pH",
-      "value": "0–14 pH (0.01 pH resolution)"
+      "value": "0–14 (0.01 resolution)"
      },
      {
       "name": "Soil Moisture",
@@ -2078,7 +2078,7 @@ export const productContent ={
      },
      {
       "name": "NPK",
-      "value": "0–1,999 mg/kg (±2% F.S.)",
+      "value": "0–1,999 mg/kg (±2% FS)",
       "unitText": "milligram per kilogram",
       "minValue": 0.0,
       "maxValue": 1999.0
@@ -2099,7 +2099,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -2180,7 +2180,7 @@ export const productContent ={
     "faqs": [
      {
       "q": "Which soil parameters does the H Series measure?",
-      "a": "Soil moisture (0–100%, ±3%), temperature, conductivity (0–1,000 µS/cm, ±3%), pH (0–14, 0.01 pH resolution) and NPK nutrients (0–1,999 mg/kg, ±2% F.S.) — all in a single probe."
+      "a": "Soil moisture (0–100%, ±3%), temperature, conductivity (0–1,000 µS/cm, ±3%), pH (0–14, 0.01 resolution) and NPK nutrients (0–1,999 mg/kg, ±2% FS) — all in a single probe."
      },
      {
       "q": "Can the probe stay buried outdoors year-round?",
@@ -2192,7 +2192,7 @@ export const productContent ={
      },
      {
       "q": "Is it suitable for alkaline or saline soils?",
-      "a": "The EC channel covers 0–1,000 µS/cm, which suits most farmland; for highly saline soils or special media, contact Hitelecom for a customized range."
+      "a": "The EC channel covers 0–1,000 µS/cm. For saline soils or special media, confirm the required EC range with Hitelecom."
      }
     ],
     "dateModified": "2026-09-02"
@@ -2232,11 +2232,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/281-f7.png",
-      "text": "Remote Level Monitoring: Access Data Anywhere"
+      "text": "Remote Level Monitoring"
      },
      {
       "icon": "product/details/281-f8.png",
-      "text": "Smart Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -2276,7 +2276,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -2324,7 +2324,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -2335,11 +2335,11 @@ export const productContent ={
      },
      {
       "img": "product/details/281-scen2.jpg",
-      "label": "Oceans and ships"
+      "label": "Marine and Shipboard Applications"
      },
      {
       "img": "product/details/281-scen3.jpg",
-      "label": "Hydrological"
+      "label": "Hydrological Monitoring"
      },
      {
       "img": "product/details/281-scen4.jpg",
@@ -2355,7 +2355,7 @@ export const productContent ={
      },
      {
       "img": "product/details/281-scen7.jpg",
-      "label": "Mine"
+      "label": "Mining"
      },
      {
       "img": "product/details/281-scen8.jpg",
@@ -2470,11 +2470,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/282-f7.png",
-      "text": "Remote Angle Monitoring: Access Data Anywhere"
+      "text": "Remote Angle Monitoring"
      },
      {
       "icon": "product/details/282-f8.png",
-      "text": "Smart Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -2514,7 +2514,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
     "certImgs": [],
@@ -2542,7 +2542,7 @@ export const productContent ={
      },
      {
       "img": "product/details/282-scen6.jpg",
-      "label": "Energy tower tilt"
+      "label": "Energy Infrastructure Tilt Monitoring"
      },
      {
       "img": "product/details/282-scen7.jpg",
@@ -2550,7 +2550,7 @@ export const productContent ={
      },
      {
       "img": "product/details/282-scen8.jpg",
-      "label": "Amusement park tilt"
+      "label": "Amusement-Ride and Park-Structure Monitoring"
      }
     ],
     "related": [
@@ -2564,7 +2564,7 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "The Hitelecom H Series tilt sensor is a wireless IoT inclinometer for structural health monitoring. It measures X/Y axis tilt (three-axis optional) at ±0.005° accuracy and 0.001° resolution, is designed for more than 10 years of battery life at hourly reporting under specified test conditions, and carries an IP68 rating for long-term outdoor deployment. Connectivity options are 4G, NB-IoT and LoRa.",
+    "summary": "The Hitelecom H Series tilt sensor is a wireless IoT inclinometer for structural health monitoring. It measures X- and Y-axis tilt (three-axis optional) at ±0.005° accuracy and 0.001° resolution, is designed for more than 10 years of battery life at hourly reporting under specified test conditions, and carries an IP68 rating for long-term outdoor deployment. Connectivity options are 4G, NB-IoT and LoRa.",
     "sku": "H200/H300/H500",
     "specsStructured": [
      {
@@ -2609,7 +2609,7 @@ export const productContent ={
      },
      {
       "name": "Battery Life",
-      "value": "Designed for > 10 years at a 1-hour reporting interval under specified test conditions"
+      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval under specified test conditions"
      },
      {
       "name": "Ingress Protection",
@@ -2617,7 +2617,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount · Pole clamp · Slot"
+      "value": "Mounting lugs · Pole clamp · Slotted mount"
      },
      {
       "name": "Configuration",
@@ -2703,11 +2703,11 @@ export const productContent ={
      },
      {
       "q": "Which wireless technology should I choose — 4G, NB-IoT or LoRa?",
-      "a": "Choose 4G where cellular coverage is reliable and higher data rates or firmware updates over the air are needed. Choose NB-IoT for deep-indoor or underground sites such as tunnels and basements where penetration matters more than bandwidth. Choose LoRa when deploying a dense cluster of sensors on one site with a private gateway and no per-device SIM cost."
+      "a": "Choose 4G where cellular coverage is reliable and higher data rates or firmware updates over the air are needed. NB-IoT may suit indoor or underground sites such as tunnels and basements where the local operator provides adequate coverage. Choose LoRa when deploying a dense cluster of sensors on one site with a private gateway and no per-device SIM cost."
      },
      {
       "q": "Can it be installed on heritage structures without drilling?",
-      "a": "Yes. The sensor supports ear mount, pole clamp and slot installation. For protected structures, clamp and adhesive mounting avoid penetrating the fabric of the building. Contact Hitelecom for site-specific mounting guidance."
+      "a": "Yes. The sensor supports mounting lugs, a pole clamp, or a slotted mount. For protected structures, clamp and adhesive mounting avoid penetrating the fabric of the building. Contact Hitelecom for site-specific mounting guidance."
      }
     ],
     "dateModified": "2026-09-02"
@@ -2715,7 +2715,7 @@ export const productContent ={
    "283": {
     "series": "H Series · Radar Distance Sensor",
     "tagline": "Low Power | Precision | Millimeter-Level",
-    "desc": "Hitelecom's distance sensors feature millimeter-level precision, scheduled data collection, and strong anti-interference capabilities, delivering accurate distance measurements and timely cloud updates across complex environments",
+    "desc": "Hitelecom's distance sensors feature millimeter-level precision, scheduled data collection, and high immunity to interference, delivering accurate distance measurements and timely cloud updates across complex environments",
     "heroImg": "product/details/283-hero.png",
     "pdf": "/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf",
      "crumbCat": "Radar Distance",
@@ -2747,11 +2747,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/283-f7.png",
-      "text": "Remote Distance Monitoring: Access Data Anywhere"
+      "text": "Remote Distance Monitoring"
      },
      {
       "icon": "product/details/283-f8.png",
-      "text": "Smart Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -2791,7 +2791,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -2842,7 +2842,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -2869,7 +2869,7 @@ export const productContent ={
      },
      {
       "img": "product/details/283-scen6.jpg",
-      "label": "Smart industry"
+      "label": "Smart Manufacturing"
      },
      {
       "img": "product/details/283-scen7.jpg",
@@ -2931,15 +2931,15 @@ export const productContent ={
     "faqs": [
      {
       "q": "What distance range and accuracy does it offer?",
-      "a": "0.3–50 m measuring range (customizable) with ±1 mm accuracy and 1 mm resolution — suitable for level-by-distance and displacement monitoring."
+      "a": "It offers a 0.3–50 m measuring range (customizable) with ±1 mm accuracy and 1 mm resolution — suitable for level-by-distance and displacement monitoring."
      },
      {
       "q": "Does dust or humidity affect the measurement?",
-      "a": "The radar-based measurement is designed for strong anti-interference in dusty, humid sites such as coal bunkers and manholes; the IP68 enclosure protects the device itself."
+      "a": "The radar-based measurement is designed to maintain measurement performance in dusty or humid sites such as coal bunkers and manholes; the IP68 enclosure protects the device itself."
      },
      {
       "q": "How is it powered and connected?",
-      "a": "Internal battery designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, with 4G or NB-IoT uplink via MQTT to Hitelecom Cloud or private platforms."
+      "a": "It uses an internal battery designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, with 4G or NB-IoT uplink via MQTT to Hitelecom Cloud or private platforms."
      },
      {
       "q": "Can the range be extended beyond 50 m?",
@@ -2983,11 +2983,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/284-f7.png",
-      "text": "Remote Vibration Monitoring: Access Data Anywhere"
+      "text": "Remote Vibration Monitoring"
      },
      {
       "icon": "product/details/284-f8.png",
-      "text": "Smart Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -3027,7 +3027,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -3075,7 +3075,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -3090,7 +3090,7 @@ export const productContent ={
      },
      {
       "img": "product/details/284-scen3.jpg",
-      "label": "Harbour"
+      "label": "Harbor"
      },
      {
       "img": "product/details/284-scen4.jpg",
@@ -3116,7 +3116,7 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "The Hitelecom H Series vibration sensor is a wireless monitor for rotating machinery and structural vibration in Industry 4.0. It measures vibration velocity 0–100 mm/s and displacement amplitude 0–1,000 µm (customizable) at ±1% accuracy (calibrated at 80 Hz), reports over 4G or NB-IoT, and is designed for more than 10 years of battery life at a one-hour reporting interval under specified test conditions.",
+    "summary": "The Hitelecom H Series vibration sensor is a wireless monitor for rotating machinery and structural vibration in Industry 4.0. It measures vibration velocity from 0 to 100 mm/s and displacement amplitude 0–1,000 µm (customizable) at ±1% accuracy (calibrated at 80 Hz), reports over 4G or NB-IoT, and is designed for more than 10 years of battery life at a one-hour reporting interval under specified test conditions.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -3160,11 +3160,11 @@ export const productContent ={
      },
      {
       "q": "How does it support condition-based maintenance?",
-      "a": "Continuous intensity and amplitude trends reveal bearing wear, imbalance and misalignment early, so maintenance can be scheduled by condition rather than calendar."
+      "a": "Continuous intensity and amplitude trends can help identify signs of bearing wear, imbalance, and misalignment early, so maintenance can be scheduled by condition rather than calendar."
      },
      {
       "q": "How is the sensor installed and powered?",
-      "a": "Magnetic base, threaded, adhesive, or bracket mounting varies by model — confirm the mounting accessory for your configuration. Fully battery-powered, designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, with no signal or power cabling."
+      "a": "Magnetic base, threaded, adhesive, or bracket mounting varies by model — confirm the mounting accessory for your configuration. The sensor is battery-powered and requires no signal or power cabling; it is designed for more than 10 years of life at a one-hour reporting interval under specified test conditions."
      },
      {
       "q": "Which data platform does it connect to?",
@@ -3208,11 +3208,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/285-f7.png",
-      "text": "Remote Air Monitoring: Access Data Anywhere"
+      "text": "Remote Air Monitoring"
      },
      {
       "icon": "product/details/285-f8.png",
-      "text": "Smart Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -3235,7 +3235,7 @@ export const productContent ={
       "NO₂, SO₂, NH₃, O₃ (by configuration)"
      ],
      [
-      "Operating Temperature",
+      "Temperature Measurement Range",
       "-40°C to +85°C (±0.2°C)"
      ],
      [
@@ -3260,7 +3260,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -3285,7 +3285,7 @@ export const productContent ={
       "value": "NO₂, SO₂, NH₃, O₃ (by configuration)"
      },
      {
-      "name": "Operating Temperature",
+      "name": "Temperature Measurement Range",
       "value": "-40°C to +85°C (±0.2°C)",
       "unitText": "degree",
       "minValue": -40.0,
@@ -3321,7 +3321,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -3352,7 +3352,7 @@ export const productContent ={
      },
      {
       "img": "product/details/285-scen7.jpg",
-      "label": "Smart industry"
+      "label": "Smart Manufacturing"
      },
      {
       "img": "product/details/285-scen8.jpg",
@@ -3414,7 +3414,7 @@ export const productContent ={
      },
      {
       "q": "How long can it run unattended?",
-      "a": "Designed for more than 10 years of battery life at a four-hour reporting interval under specified test conditions — actual life varies with sensing configuration, network coverage, and environment — with an IP68 enclosure for outdoor mounting."
+      "a": "Selected configurations are designed for 10+ years of battery life at a four-hour reporting interval under specified test conditions; actual life varies with sensing configuration, network coverage, and environment. The IP68 enclosure supports outdoor installation."
      },
      {
       "q": "How is air quality data delivered?",
@@ -3433,7 +3433,7 @@ export const productContent ={
     "desc": "The H68 Series gateway features an IP68-rated, dust-tight and waterproof enclosure designed for long-term outdoor service in complex industrial environments. It supports plug-and-play deployment, and a power-loss alarm can be sent when backup power and backhaul remain available.",
     "heroImg": "product/details/275-hero.png",
     "pdf": "/downloads/outdoor-4g-gateway-h68-datasheet.pdf",
-    "crumbCat": "Outdoor",
+    "crumbCat": "Outdoor Gateway",
     "returnCid": "273",
     "features": [
      {
@@ -3486,11 +3486,11 @@ export const productContent ={
      ],
      [
       "Transmit Power",
-      "20dBm~27dBm"
+      "20–27 dBm"
      ],
      [
       "Sensitivity",
-      "-140dBm@0.292Kbps"
+      "−140 dBm at 0.292 kbps"
      ],
      [
       "Antenna",
@@ -3506,15 +3506,15 @@ export const productContent ={
      ],
      [
       "Operating Temperature",
-      "-40°~ +85°"
+      "−40°C to +85°C"
      ],
      [
       "Storage Temperature",
-      "-40°~ +85°"
+      "−40°C to +85°C"
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -3533,14 +3533,14 @@ export const productContent ={
      },
      {
       "name": "Transmit Power",
-      "value": "20dBm~27dBm",
+      "value": "20–27 dBm",
       "unitText": "decibel-milliwatt",
       "minValue": 20.0,
       "maxValue": 27.0
      },
      {
       "name": "Sensitivity",
-      "value": "-140dBm@0.292Kbps",
+      "value": "−140 dBm at 0.292 kbps",
       "unitText": "decibel-milliwatt"
      },
      {
@@ -3557,32 +3557,32 @@ export const productContent ={
      },
      {
       "name": "Operating Temperature",
-      "value": "-40°~ +85°",
+      "value": "−40°C to +85°C",
       "unitText": "degree",
       "minValue": -40.0,
       "maxValue": 85.0
      },
      {
       "name": "Storage Temperature",
-      "value": "-40°~ +85°",
+      "value": "−40°C to +85°C",
       "unitText": "degree",
       "minValue": -40.0,
       "maxValue": 85.0
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
     "scenarios": [
      {
       "img": "product/details/275-scen1.jpg",
-      "label": "New Energy"
+      "label": "Renewable Energy"
      },
      {
       "img": "product/details/275-scen2.jpg",
-      "label": "Smart park"
+      "label": "Smart Industrial Parks"
      },
      {
       "img": "product/details/275-scen3.jpg",
@@ -3669,14 +3669,14 @@ export const productContent ={
      },
      {
       "q": "Which frequency bands are supported?",
-      "a": "CN470, EU868, IN865, RU864, US915 and AU915 — covering China, Europe, India, Russia, North America and Australia deployments."
+      "a": "CN470, EU868, IN865, RU864, US915 and AU915 — covering deployments in China, Europe, India, Russia, North America, and Australia."
      },
      {
       "q": "How does the gateway backhaul data?",
       "a": "Over 4G cellular (LTE-TDD B34/B38/B39/B40/B41, LTE-FDD B1/B3/B5/B8) with MQTT uplink to Hitelecom Cloud or a private platform."
      },
      {
-      "q": "Can it really stay outdoors for years?",
+      "q": "Is the H68 suitable for long-term outdoor installation?",
       "a": "Yes. The IP68 enclosure is dust-tight and waterproof, and the industrial design targets long-term outdoor service."
      }
     ],
@@ -3688,7 +3688,7 @@ export const productContent ={
     "desc": "The H66 series gateway features a durable design for stable operation in variable industrial environments. It supports plug-and-play deployment, and a power-loss alarm can be sent when backup power and backhaul remain available.",
     "heroImg": "product/details/276-hero.png",
     "pdf": "/downloads/indoor-gateway-h66-datasheet.pdf",
-    "crumbCat": "Indoor",
+    "crumbCat": "Indoor Gateway",
     "returnCid": "272",
     "features": [
      {
@@ -3741,11 +3741,11 @@ export const productContent ={
      ],
      [
       "Transmit Power",
-      "20dBm~27dBm"
+      "20–27 dBm"
      ],
      [
       "Sensitivity",
-      "-140dBm@0.292Kbps"
+      "−140 dBm at 0.292 kbps"
      ],
      [
       "Antenna",
@@ -3769,7 +3769,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -3788,14 +3788,14 @@ export const productContent ={
      },
      {
       "name": "Transmit Power",
-      "value": "20dBm~27dBm",
+      "value": "20–27 dBm",
       "unitText": "decibel-milliwatt",
       "minValue": 20.0,
       "maxValue": 27.0
      },
      {
       "name": "Sensitivity",
-      "value": "-140dBm@0.292Kbps",
+      "value": "−140 dBm at 0.292 kbps",
       "unitText": "decibel-milliwatt"
      },
      {
@@ -3826,7 +3826,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -3871,7 +3871,7 @@ export const productContent ={
      "285",
      "275"
     ],
-    "summary": "The Hitelecom H66 indoor gateway is an industrial full-duplex LoRa gateway for in-building sensor networks: up to 5 km range, -140 dBm sensitivity, regional bands from CN470 to US915, plug-and-play setup with emergency power-off alarm, 4G backhaul and MQTT uplink.",
+    "summary": "The Hitelecom H66 indoor gateway is an industrial full-duplex LoRa gateway for in-building sensor networks: up to 5 km range, -140 dBm sensitivity, regional bands from CN470 to US915, plug-and-play setup with a power-loss alert, 4G backhaul and MQTT uplink.",
     "sku": "H66",
     "applications": [
      {
@@ -3911,7 +3911,7 @@ export const productContent ={
     "faqs": [
      {
       "q": "What is the difference between the H66 and the H68?",
-      "a": "The H66 is the indoor model: plug-and-play with an emergency power-off alarm, up to 5 km range and an IP67 enclosure. The H68 is the outdoor model with up to 10 km range, IP68, and a design for long-term outdoor service."
+      "a": "The H66 is the indoor model: plug-and-play with a power-loss alert, up to 5 km range and an IP67 enclosure. The H68 is the outdoor model with up to 10 km range, IP68, and a design for long-term outdoor service."
      },
      {
       "q": "Which frequency bands does it support?",
@@ -3919,7 +3919,7 @@ export const productContent ={
      },
      {
       "q": "What happens if the power fails?",
-      "a": "The gateway raises an emergency power-off alarm over its 4G backhaul, so the operations team knows immediately that the sensor network is offline."
+      "a": "If backup power and the 4G backhaul remain available, the gateway can send a power-loss alert."
      },
      {
       "q": "How many sensors can one gateway serve?",
@@ -3930,7 +3930,7 @@ export const productContent ={
    },
    "277": {
     "series": "H Series · Hydrology",
-    "tagline": "Solar | Modular | Millimeter-Level",
+    "tagline": "Solar | Modular | 2–12 Channels",
     "desc": "Integrates 2 to 12 modular sensor channels for environmental data collection — the channel set (level, flow, water quality, weather, or air-quality sensors) is configured per project — with real-time transmission to the Hitelecom Cloud platform. Users can access hydrological and environmental data from anywhere via the internet, supporting remote monitoring and analysis.",
     "heroImg": "product/details/277-hero.png",
     "pdf": "/downloads/hydrology-monitoring-station-datasheet.pdf",
@@ -3947,7 +3947,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/277-f3.png",
-      "text": "Millimeter-level Detection Accuracy"
+      "text": "2–12 Configurable Sensor Channels"
      },
      {
       "icon": "product/details/277-f4.png",
@@ -3967,7 +3967,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/277-f8.png",
-      "text": "Intelligent Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -4003,7 +4003,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -4038,7 +4038,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -4061,7 +4061,7 @@ export const productContent ={
      },
      {
       "img": "product/details/277-scen5.jpg",
-      "label": "Electric power industry"
+      "label": "Power Utilities"
      },
      {
       "img": "product/details/277-scen6.jpg",
@@ -4069,7 +4069,7 @@ export const productContent ={
      },
      {
       "img": "product/details/277-scen7.jpg",
-      "label": "Contingency management"
+      "label": "Emergency Management"
      },
      {
       "img": "product/details/277-scen8.jpg",
@@ -4087,7 +4087,7 @@ export const productContent ={
      "285",
      "276"
     ],
-    "summary": "The Hitelecom H700 hydrology station is a modular, solar-powered monitoring terminal that integrates 2 to 12 sensor channels for water and environmental data. It transmits in real time to Hitelecom Cloud over 4G, serves urban, rural, plains and mountainous sites, and installs by ear mount, pole clamp or slot.",
+    "summary": "The Hitelecom H700 hydrology station is a modular, solar-powered monitoring terminal that integrates 2 to 12 sensor channels for water and environmental data. It transmits in real time to Hitelecom Cloud over 4G, can be deployed in urban and rural areas, including plains and mountainous terrain, and can be installed using mounting lugs, a pole clamp, or a slotted mount.",
     "sku": "H700",
     "applications": [
      {
@@ -4139,7 +4139,7 @@ export const productContent ={
      },
      {
       "q": "How is the station powered?",
-      "a": "By solar power or grid electricity, so both remote catchments and urban sites are covered."
+      "a": "The station can use solar or grid power, supporting both remote and urban installations."
      },
      {
       "q": "How does data reach the platform?",
@@ -4147,7 +4147,7 @@ export const productContent ={
      },
      {
       "q": "Where can it be deployed?",
-      "a": "Urban, rural, plains and mountainous areas; ear mount, pole clamp and slot installation options adapt to poles, walls and rails."
+      "a": "Urban, rural, plains and mountainous areas; mounting lugs, pole-clamp, and slotted-mount options adapt to poles, walls, and rails."
      }
     ],
     "dateModified": "2026-09-02"
@@ -4171,7 +4171,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/278-f3.png",
-      "text": "Custom Range, Specifications, and Service Life"
+      "text": "Configurable Sensor Channels and Power Options"
      },
      {
       "icon": "product/details/278-f4.png",
@@ -4191,7 +4191,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/278-f8.png",
-      "text": "Intelligent Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -4227,7 +4227,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -4262,7 +4262,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -4289,7 +4289,7 @@ export const productContent ={
      },
      {
       "img": "product/details/278-scen6.jpg",
-      "label": "Contingency management"
+      "label": "Emergency Management"
      },
      {
       "img": "product/details/278-scen7.jpg",
@@ -4307,7 +4307,7 @@ export const productContent ={
      "285",
      "276"
     ],
-    "summary": "The Hitelecom H600 weather station is a modular, solar-powered agrometeorological terminal integrating 2 to 12 sensors for air temperature and humidity, rainfall, wind, pressure and radiation channels. It reports in real time over 4G to Hitelecom Cloud for farms, campuses, cities and coastal sites.",
+    "summary": "The Hitelecom H600 weather station is a modular, solar-powered agrometeorological terminal configured with 2–12 sensor channels for air temperature, humidity, rainfall, wind, barometric pressure, and solar radiation. It reports in real time over 4G to Hitelecom Cloud for farms, campuses, cities and coastal sites.",
     "sku": "H600",
     "applications": [
      {
@@ -4360,7 +4360,7 @@ export const productContent ={
      },
      {
       "q": "Can it work in remote areas without infrastructure?",
-      "a": "Yes. Solar power plus 4G cellular means no trenching for power or data; the station is installed by ear mount, pole clamp or slot."
+      "a": "Yes. Solar power and cellular backhaul can reduce the need for power and data cabling; the station can be installed using mounting lugs, a pole clamp, or a slotted mount."
      },
      {
       "q": "How does it differ from the H700 hydrology station?",
@@ -4380,7 +4380,7 @@ export const productContent ={
     "features": [
      {
       "icon": "product/details/286-f1.png",
-      "text": "Accuracy: ±0.5°C (Customizable to ±0.1°C)"
+      "text": "Accuracy: ±0.5°C (customizable to ±0.1°C)"
      },
      {
       "icon": "product/details/286-f2.png",
@@ -4404,11 +4404,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/286-f7.png",
-      "text": "Remote Monitoring: Access Data Anywhere"
+      "text": "Remote Monitoring"
      },
      {
       "icon": "product/details/286-f8.png",
-      "text": "Smart Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -4424,7 +4424,7 @@ export const productContent ={
      ],
      [
       "Pressure Accuracy",
-      "±0.5%FS"
+      "±0.5% FS"
      ],
      [
       "Measured Temperature",
@@ -4432,7 +4432,7 @@ export const productContent ={
      ],
      [
       "Temperature Accuracy",
-      "±0.5°C (Customizable to ±0.1°C)"
+      "±0.5°C (customizable to ±0.1°C)"
      ],
      [
       "Protocol",
@@ -4444,7 +4444,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ],
      [
       "Hazardous-Area Certification",
@@ -4471,7 +4471,7 @@ export const productContent ={
      },
      {
       "name": "Pressure Accuracy",
-      "value": "±0.5%FS",
+      "value": "±0.5% FS",
       "unitText": "percent"
      },
      {
@@ -4483,7 +4483,7 @@ export const productContent ={
      },
      {
       "name": "Temperature Accuracy",
-      "value": "±0.5°C (Customizable to ±0.1°C)",
+      "value": "±0.5°C (customizable to ±0.1°C)",
       "unitText": "degree Celsius"
      },
      {
@@ -4496,7 +4496,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      },
      {
       "name": "Hazardous-Area Certification",
@@ -4535,7 +4535,7 @@ export const productContent ={
     "related": [
      "287"
     ],
-    "summary": "The Hitelecom H Series 2-in-1 transmitter combines temperature and pressure monitoring in one device designed for environments where flammable gas or dust may be present. Pressure ranges cover 0–1 MPa to 20 MPa at ±0.5% FS, temperature spans -200°C to 800°C, and data reports over 4G or NB-IoT. The applicable explosion-proof certificate must be confirmed for the target market and zone before ordering.",
+    "summary": "The Hitelecom H Series 2-in-1 transmitter combines temperature and pressure monitoring in one device designed for environments where flammable gas or dust may be present. Available full-scale pressure ranges are 1, 1.6, 3.5, 7, 10, and 20 MPa at ±0.5% FS, temperature spans -200°C to 800°C, and data reports over 4G or NB-IoT. The applicable explosion-proof certificate must be confirmed for the target market and zone before ordering.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -4593,7 +4593,7 @@ export const productContent ={
     "features": [
      {
       "icon": "product/details/287-f1.png",
-      "text": "High-frequency, low-attenuation, customizable"
+      "text": "High-Frequency, Low-Attenuation Signal Coupling"
      },
      {
       "icon": "product/details/287-f2.png",
@@ -4613,7 +4613,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/287-f6.png",
-      "text": "Features strong anti-interference capabilities"
+      "text": "High immunity to electromagnetic interference"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -4641,7 +4641,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -4674,7 +4674,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -4695,7 +4695,7 @@ export const productContent ={
     "related": [
      "286"
     ],
-    "summary": "The Hitelecom H100 coupling isolator is a high-frequency signal coupler that lets wireless 2.4 GHz / 5.8 GHz sensor signals cross hazardous-area boundaries in oil and gas, chemical, and mining sites. Suitability for a hazardous area depends on the certified configuration required for the target market, zone, gas or dust group, and temperature class — request the applicable certificate before specifying the product. It works from -40°C to +125°C and installs by ear mount, pole clamp, or slot.",
+    "summary": "The Hitelecom H100 coupling isolator is a high-frequency signal coupler that lets wireless 2.4 GHz / 5.8 GHz sensor signals cross hazardous-area boundaries in oil and gas, chemical, and mining sites. Suitability for a hazardous area depends on the certified configuration required for the target market, zone, gas or dust group, and temperature class — request the applicable certificate before specifying the product. It works from -40°C to +125°C and installs using mounting lugs, a pole clamp, or a slotted mount.",
     "sku": "H100",
     "applications": [
      {
@@ -4737,7 +4737,7 @@ export const productContent ={
      },
      {
       "q": "How is it installed?",
-      "a": "Ear mount, pole clamp or slot installation — the same accessory family as other H Series field devices."
+      "a": "Mounting lugs, a pole clamp, or a slotted mount — the same accessory family as other H Series field devices."
      }
     ],
     "dateModified": "2026-09-02"
@@ -4769,7 +4769,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f5.png",
-      "text": "Energy-Efficient Tech for Long-Lasting Performance"
+      "text": "Low-Power Design for Long-Term Operation"
      },
      {
       "icon": "product/details/270-f6.png",
@@ -4777,11 +4777,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f7.png",
-      "text": "Remote Climate Monitoring: Access Data Anywhere"
+      "text": "Remote Climate Monitoring"
      },
      {
       "icon": "product/details/270-f8.png",
-      "text": "Intelligent Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -4817,7 +4817,7 @@ export const productContent ={
      ],
      [
       "Installation",
-      "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      ]
     ],
 
@@ -4854,7 +4854,7 @@ export const productContent ={
      },
      {
       "name": "Installation",
-      "value": "Ear mount, pole clamp, or slot mounting (varies by configuration)"
+      "value": "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
      }
     ],    "certImgs": [],
     "scenariosHeading": "Application Scenarios",
@@ -4865,7 +4865,7 @@ export const productContent ={
      },
      {
       "img": "product/details/270-scen4.jpg",
-      "label": "Medical monitoring"
+      "label": "Pharmaceutical and Healthcare Storage"
      },
      {
       "img": "product/details/270-scen5.jpg",
@@ -4881,7 +4881,7 @@ export const productContent ={
      },
      {
       "img": "product/details/285-scen7.jpg",
-      "label": "Smart industry"
+      "label": "Smart Manufacturing"
      },
      {
       "img": "product/details/285-scen3.jpg",
@@ -4899,7 +4899,7 @@ export const productContent ={
      "284",
      "285"
     ],
-    "summary": "The Hitelecom H Series temperature & humidity sensor is a wireless climate monitor for clean rooms, electrical cabinets, museums and production lines. Its slotted sintered probe reads 0-100% RH and -20°C to +80°C at ±0.2°C and ±2% RH typical accuracy, with a battery designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, and 4G/NB-IoT cloud reporting.",
+    "summary": "The Hitelecom H Series temperature & humidity sensor is a wireless climate monitor for clean rooms, electrical cabinets, museums and production lines. Its slotted sintered probe measures 0–100% RH and −20°C to +80°C, with typical accuracies of ±2% RH and ±0.2°C, with a battery designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, and 4G/NB-IoT cloud reporting.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -4943,7 +4943,7 @@ export const productContent ={
     "faqs": [
      {
       "q": "What are the measuring range and accuracy?",
-      "a": "Humidity 0-100% RH, temperature -20°C to +80°C, with ±0.2°C and ±2% RH typical accuracy. The slotted sintered probe is cable-mounted, so it can be placed inside cabinets and ducts."
+      "a": "It measures 0–100% RH and −20°C to +80°C, with typical accuracies of ±2% RH and ±0.2°C. The slotted sintered probe is cable-mounted, so it can be placed inside cabinets and ducts."
      },
      {
       "q": "Does it support threshold alarms?",
@@ -4951,7 +4951,7 @@ export const productContent ={
      },
      {
       "q": "How long does the battery last?",
-      "a": "Designed for more than 10 years at a one-hour reporting interval under specified test conditions; actual life varies with network coverage, temperature, and reporting frequency. No mains wiring is needed at the installation point."
+      "a": "The selected battery configuration is designed for 10+ years at a one-hour reporting interval under specified test conditions; actual life varies with network coverage, temperature, and reporting frequency. No mains wiring is needed at the installation point."
      },
      {
       "q": "Which wireless networks are supported?",
@@ -4963,7 +4963,7 @@ export const productContent ={
    "302": {
     "series": "H Series · Temperature and Humidity Data Logger",
     "tagline": "NFC Setup | USB Export | High-Capacity Logging",
-    "desc": "Hitelecom's temperature and humidity data loggers store up to 80,000 readings with NFC tap-to-configure and one-click USB export, producing timestamped records that support audits in cold chain, pharmaceutical and food logistics.",
+    "desc": "Hitelecom's temperature and humidity data loggers store up to 80,000 readings with NFC configuration and one-click USB export, producing timestamped records that support audits in cold chain, pharmaceutical and food logistics.",
     "heroImg": "product/details/302-hero.png",
     "pdf": "/downloads/temperature-humidity-data-logger-datasheet.pdf",
     "crumbCat": "Temperature",
@@ -4987,7 +4987,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f5.png",
-      "text": "Energy-Efficient Tech for Long-Lasting Performance"
+      "text": "Low-Power Design for Long-Term Operation"
      },
      {
       "icon": "product/details/270-f6.png",
@@ -5003,7 +5003,7 @@ export const productContent ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "A micro-power design with NFC tap-to-configure and one-click USB export; the replaceable battery supports multi-year logging between battery changes.",
+    "specsDesc": "A micro-power design with NFC configuration and one-click USB export; the replaceable battery supports multi-year logging between battery changes.",
     "specs": [
      [
       "Product Models",
@@ -5085,7 +5085,7 @@ export const productContent ={
      },
      {
       "img": "product/details/270-scen4.jpg",
-      "label": "Medical monitoring"
+      "label": "Pharmaceutical and Healthcare Storage"
      },
      {
       "img": "product/details/285-scen3.jpg",
@@ -5093,7 +5093,7 @@ export const productContent ={
      },
      {
       "img": "product/details/285-scen7.jpg",
-      "label": "Smart industry"
+      "label": "Smart Manufacturing"
      },
      {
       "img": "product/details/285-scen6.jpg",
@@ -5110,7 +5110,7 @@ export const productContent ={
      "282",
      "283"
     ],
-    "summary": "The Hitelecom H Series temperature & humidity data logger stores up to 80,000 readings with ±0.2°C and ±2% RH typical accuracy. NFC tap-to-configure from Android or iOS, one-click USB export of PDF/CSV reports, free PC curve-analysis software and a replaceable multi-year battery provide records that support audits for cold chain, pharmaceutical and food logistics.",
+    "summary": "The Hitelecom H Series temperature & humidity data logger stores up to 80,000 readings with ±0.2°C and ±2% RH typical accuracy. NFC configuration using a compatible Android or iOS device, one-click USB export of PDF/CSV reports, free PC software for charting and data analysis and a replaceable multi-year battery provide records that support audits for cold chain, pharmaceutical and food logistics.",
     "sku": "H200L/H300L",
     "applications": [
      {
@@ -5154,15 +5154,15 @@ export const productContent ={
      },
      {
       "q": "How many readings can it store?",
-      "a": "Up to 80,000 readings. At a five-minute interval that covers roughly nine months of continuous logging."
+      "a": "Up to 80,000 readings. At a five-minute interval, that covers roughly nine months of continuous logging."
      },
      {
       "q": "Is the battery replaceable?",
-      "a": "Yes. The logger uses a replaceable battery with multi-year life, so the same device serves repeated trips for years."
+      "a": "Yes. The logger uses a replaceable battery with multi-year life, so the same logger can be reused for multiple trips over several years."
      },
      {
       "q": "Does it upload data over the air?",
-      "a": "No — this logger is a local-record device: data stays on the logger until you export it via USB or read it via NFC, which suits cross-border shipments and audited deliveries where a live uplink is unnecessary."
+      "a": "No — this is a standalone data logger: data stays on the logger until you export it via USB or read it via NFC, which suits cross-border shipments and audited deliveries where a live uplink is unnecessary."
      }
     ],
     "dateModified": "2026-09-02"
@@ -5194,7 +5194,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f5.png",
-      "text": "Energy-Efficient Tech for Long-Lasting Performance"
+      "text": "Low-Power Design for Long-Term Operation"
      },
      {
       "icon": "product/details/270-f6.png",
@@ -5202,11 +5202,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f7.png",
-      "text": "Remote VOC Monitoring: Access Data Anywhere"
+      "text": "Remote VOC Monitoring"
      },
      {
       "icon": "product/details/270-f8.png",
-      "text": "Intelligent Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -5290,7 +5290,7 @@ export const productContent ={
     "scenarios": [
      {
       "img": "product/details/285-scen7.jpg",
-      "label": "Smart industry"
+      "label": "Smart Manufacturing"
      },
      {
       "img": "product/details/283-scen5.jpg",
@@ -5323,7 +5323,7 @@ export const productContent ={
      "284",
      "283"
     ],
-    "summary": "The Hitelecom H Series TVOC sensor is a wireless monitor for total volatile organic compounds from 0 to 100,000 ppb at 1 ppb resolution. The sensing principle is matched to the target compounds (confirm at ordering), with remote alarms and a battery designed for more than 10 years at a one-hour reporting interval under specified test conditions, supporting continuous monitoring in paint shops, chemical storage, and laboratories.",
+    "summary": "The Hitelecom H Series TVOC sensor is a wireless monitor for total volatile organic compounds from 0 to 100,000 ppb at 1 ppb resolution. The sensing technology is selected for the target compounds and must be confirmed during ordering, with remote alarms and a battery designed for more than 10 years at a one-hour reporting interval under specified test conditions, supporting continuous monitoring in paint shops, chemical storage, and laboratories.",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -5367,7 +5367,7 @@ export const productContent ={
      },
      {
       "q": "Can it alarm when TVOC rises abnormally?",
-      "a": "Yes. Thresholds are configured remotely and the sensor pushes alarms through the cloud platform, so teams can start site escalation workflows before concentrations build up."
+      "a": "Yes. Thresholds are configured remotely and the sensor pushes alarms through the cloud platform, so teams can respond promptly when a configured threshold is exceeded."
      },
      {
       "q": "What is the protection rating?",
@@ -5375,7 +5375,7 @@ export const productContent ={
      },
      {
       "q": "How is it powered and connected?",
-      "a": "Internal battery designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, uploading over 4G or NB-IoT via MQTT to Hitelecom Cloud or private platforms."
+      "a": "It uses an internal battery designed for more than 10 years of life at a one-hour reporting interval under specified test conditions, uploading over 4G or NB-IoT via MQTT to Hitelecom Cloud or private platforms."
      }
     ],
     "dateModified": "2026-09-02"
@@ -5399,7 +5399,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f3.png",
-      "text": "LBS Fallback for Indoor Areas"
+      "text": "LBS Fallback Where Cellular Coverage Is Available"
      },
      {
       "icon": "product/details/270-f4.png",
@@ -5407,7 +5407,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f5.png",
-      "text": "Energy-Efficient Tech for Long-Lasting Performance"
+      "text": "Low-Power Design for Long-Term Operation"
      },
      {
       "icon": "product/details/270-f6.png",
@@ -5415,7 +5415,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f7.png",
-      "text": "Cloud Map & History Track Playback"
+      "text": "Cloud Map & Location History"
      },
      {
       "icon": "product/details/270-f8.png",
@@ -5504,7 +5504,7 @@ export const productContent ={
      },
      {
       "img": "product/details/285-scen7.jpg",
-      "label": "Smart industry"
+      "label": "Smart Manufacturing"
      },
      {
       "img": "product/details/285-scen2.jpg",
@@ -5533,7 +5533,7 @@ export const productContent ={
      "280",
      "285"
     ],
-    "summary": "The Hitelecom H Series asset tracking sensor combines GPS and BeiDou positioning (LBS fallback where satellite signal is weak, subject to network availability) with 4G or NB-IoT uplink. A multi-year battery, IP67 housing and magnet, screw or strap mounting keep pallets, tools and returnable crates visible across sites with geofence alerts.",
+    "summary": "The Hitelecom H Series asset tracking sensor combines GPS and BeiDou positioning (LBS fallback where satellite signal is weak, subject to network availability) with 4G or NB-IoT uplink. The tracker reports location and geofence events over 4G or NB-IoT, combining a multi-year battery, an IP67 enclosure, and magnet, screw, or strap mounting to keep pallets, tools and returnable crates visible across sites.",
     "sku": "H200T",
     "applications": [
      {
@@ -5572,7 +5572,7 @@ export const productContent ={
     "faqs": [
      {
       "q": "How does the tracker position assets?",
-      "a": "Outdoors it uses GPS or BeiDou satellite positioning; indoors or in urban canyons it falls back to LBS cell positioning, so assets stay traceable end to end."
+      "a": "Outdoors it uses GPS or BeiDou satellite positioning; indoors or in urban canyons, LBS cell positioning can provide an approximate fallback location, subject to network availability."
      },
      {
       "q": "What is the battery life?",
@@ -5580,7 +5580,7 @@ export const productContent ={
      },
      {
       "q": "How is it attached to assets?",
-      "a": "Three options: magnet for steel surfaces, screws for permanent mounting, or straps for pallets and odd shapes. IP67 protects against rain and dust."
+      "a": "Three options: magnet for steel surfaces, screws for permanent mounting, or straps for pallets and irregularly shaped assets. IP67 protects against rain and dust."
      },
      {
       "q": "Can it alert when an asset leaves a site?",
@@ -5592,7 +5592,7 @@ export const productContent ={
    "305": {
     "series": "H Series · Custom Gas Sensor",
     "tagline": "100+ Gases | Fixed or Ducted | OEM/ODM",
-    "desc": "Pick the gas — Hitelecom builds the terminal around it. Custom gas sensors can be configured for more than 100 gases including CO, H₂S, NH₃, O₃, and CH₄, in fixed or ducted enclosures for industrial monitoring. Range, accuracy, sensing principle, and battery life depend on the selected gas and configuration",
+    "desc": "Pick the gas — Hitelecom builds the terminal around it. Custom gas sensors can be configured for more than 100 gases including CO, H₂S, NH₃, O₃, and CH₄, in fixed or ducted enclosures for industrial monitoring. Range, accuracy, sensing principle, and battery life depend on the selected gas and configuration.",
     "heroImg": "product/details/305-hero.png",
     "pdf": "/downloads/custom-gas-sensor-datasheet.pdf",
     "crumbCat": "Air Quality",
@@ -5616,7 +5616,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f5.png",
-      "text": "Energy-Efficient Tech for Long-Lasting Performance"
+      "text": "Low-Power Design for Long-Term Operation"
      },
      {
       "icon": "product/details/270-f6.png",
@@ -5624,11 +5624,11 @@ export const productContent ={
      },
      {
       "icon": "product/details/270-f7.png",
-      "text": "Remote Gas Monitoring: Access Data Anywhere"
+      "text": "Remote Gas Monitoring"
      },
      {
       "icon": "product/details/270-f8.png",
-      "text": "Intelligent Alerts: Automatic alerts when configured thresholds are exceeded."
+      "text": "Configurable Threshold Alerts"
      }
     ],
     "specsTitle": "Technical Specifications",
@@ -5640,7 +5640,7 @@ export const productContent ={
      ],
      [
       "Target Gases",
-      "100+ Gases Customizable"
+      "100+ Configurable Target Gases"
      ],
      [
       "Measuring Range",
@@ -5675,7 +5675,7 @@ export const productContent ={
      },
      {
       "name": "Target Gases",
-      "value": "100+ Gases Customizable"
+      "value": "100+ Configurable Target Gases"
      },
      {
       "name": "Measuring Range",
@@ -5720,7 +5720,7 @@ export const productContent ={
      },
      {
       "img": "product/details/285-scen7.jpg",
-      "label": "Smart industry"
+      "label": "Smart Manufacturing"
      },
      {
       "img": "product/details/283-scen1.jpg",
@@ -5781,7 +5781,7 @@ export const productContent ={
     "faqs": [
      {
       "q": "Which gases can be detected?",
-      "a": "Over 100 gases including CO, H₂S, NH₃, O₃, CH₄, Cl₂, VOCs and more. Measuring range and principle (electrochemical, NDIR or PID) are matched to the target gas."
+      "a": "More than 100 target gases, including CO, H₂S, NH₃, O₃, CH₄, Cl₂, and VOCs. The sensing technology — electrochemical, NDIR, or PID — and measuring range are selected for the target gas."
      },
      {
       "q": "How do I order a custom gas sensor?",
@@ -7383,7 +7383,7 @@ export const productContent ={
     "features": [
      {
       "icon": "product/details/274-f1.png",
-      "text": "±0.5%FS（高精度定制）"
+      "text": "±0.5% FS（高精度定制）"
      },
      {
       "icon": "product/details/274-f2.png",
@@ -7431,7 +7431,7 @@ export const productContent ={
      ],
      [
       "稳定性",
-      "±0.2%FS/ 年"
+      "±0.2% FS/ 年"
      ],
      [
       "通信协议",
@@ -7470,7 +7470,7 @@ export const productContent ={
      },
      {
       "name": "稳定性",
-      "value": "±0.2%FS/ 年",
+      "value": "±0.2% FS/ 年",
       "unitText": "百分比"
      },
      {
@@ -7544,7 +7544,7 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "宏太 H 系列压力传感器是面向管路、泵站与储罐的无线压力变送终端：量程 0-1MPa 至 20MPa 多档可选，年稳定性 ±0.2%FS，抗 2 倍过载，4G / NB-IoT 上报，电池续航超 10 年。",
+    "summary": "宏太 H 系列压力传感器是面向管路、泵站与储罐的无线压力变送终端：量程 0-1MPa 至 20MPa 多档可选，年稳定性 ±0.2% FS，抗 2 倍过载，4G / NB-IoT 上报，电池续航超 10 年。",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -7589,7 +7589,7 @@ export const productContent ={
     "faqs": [
      {
       "q": "有哪些量程可选？",
-      "a": "标准量程 0-1MPa、1.6MPa、3.5MPa、7MPa、10MPa、20MPa 多档；可承受 2 倍满量程过载，年稳定性 ±0.2%FS。"
+      "a": "标准量程 0-1MPa、1.6MPa、3.5MPa、7MPa、10MPa、20MPa 多档；可承受 2 倍满量程过载，年稳定性 ±0.2% FS。"
      },
      {
       "q": "气体和液体都能测吗？",
@@ -7669,7 +7669,7 @@ export const productContent ={
      ],
      [
       "NPK",
-      "0–1,999 mg/kg（±2% F.S.）"
+      "0–1,999 mg/kg（±2% FS）"
      ],
      [
       "通讯协议",
@@ -7712,7 +7712,7 @@ export const productContent ={
      },
      {
       "name": "NPK",
-      "value": "0–1,999 mg/kg（±2% F.S.）",
+      "value": "0–1,999 mg/kg（±2% FS）",
       "minValue": 0.0,
       "maxValue": 1999.0
      },
@@ -7883,11 +7883,11 @@ export const productContent ={
      ],
      [
       "精度",
-      "±0.5%FS（更高精度定制）"
+      "±0.5% FS（更高精度定制）"
      ],
      [
       "稳定性",
-      "±0.2%FS/ 年"
+      "±0.2% FS/ 年"
      ],
      [
       "通信协议",
@@ -7924,12 +7924,12 @@ export const productContent ={
      },
      {
       "name": "精度",
-      "value": "±0.5%FS（更高精度定制）",
+      "value": "±0.5% FS（更高精度定制）",
       "unitText": "百分比"
      },
      {
       "name": "稳定性",
-      "value": "±0.2%FS/ 年",
+      "value": "±0.2% FS/ 年",
       "unitText": "百分比"
      },
      {
@@ -8003,7 +8003,7 @@ export const productContent ={
      "276",
      "275"
     ],
-    "summary": "宏太 H 系列液位传感器是面向水库、河道、储罐与井道的无线液位变送终端：量程 0-200 米可定制，精度 ±0.5%FS，年稳定性 ±0.2%FS，电池续航超 10 年，经 4G / NB-IoT 上报液位数据。",
+    "summary": "宏太 H 系列液位传感器是面向水库、河道、储罐与井道的无线液位变送终端：量程 0-200 米可定制，精度 ±0.5% FS，年稳定性 ±0.2% FS，电池续航超 10 年，经 4G / NB-IoT 上报液位数据。",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -8048,7 +8048,7 @@ export const productContent ={
     "faqs": [
      {
       "q": "H 系列液位传感器的量程是多少？",
-      "a": "标准 0-200 米，超出可定制；精度 ±0.5%FS，年稳定性 ±0.2%FS，适合长期无人值守监测。"
+      "a": "标准 0-200 米，超出可定制；精度 ±0.5% FS，年稳定性 ±0.2% FS，适合长期无人值守监测。"
      },
      {
       "q": "偏远站点怎么供电？",
@@ -9092,11 +9092,11 @@ export const productContent ={
      ],
      [
       "发射功率",
-      "20dBm~27dBm"
+      "20–27 dBm"
      ],
      [
       "接收灵敏度",
-      "-140dBm@0.292Kbps"
+      "−140 dBm at 0.292 kbps"
      ],
      [
       "天线",
@@ -9112,11 +9112,11 @@ export const productContent ={
      ],
      [
       "工作温度",
-      "-40°~ +85°"
+      "−40°C to +85°C"
      ],
      [
       "存储温度",
-      "-40°~ +85°"
+      "−40°C to +85°C"
      ],
      [
       "安装方式",
@@ -9139,13 +9139,13 @@ export const productContent ={
      },
      {
       "name": "发射功率",
-      "value": "20dBm~27dBm",
+      "value": "20–27 dBm",
       "minValue": 20.0,
       "maxValue": 27.0
      },
      {
       "name": "接收灵敏度",
-      "value": "-140dBm@0.292Kbps",
+      "value": "−140 dBm at 0.292 kbps",
       "unitText": "分贝毫瓦"
      },
      {
@@ -9162,13 +9162,13 @@ export const productContent ={
      },
      {
       "name": "工作温度",
-      "value": "-40°~ +85°",
+      "value": "−40°C to +85°C",
       "minValue": -40.0,
       "maxValue": 85.0
      },
      {
       "name": "存储温度",
-      "value": "-40°~ +85°",
+      "value": "−40°C to +85°C",
       "minValue": -40.0,
       "maxValue": 85.0
      },
@@ -9344,11 +9344,11 @@ export const productContent ={
      ],
      [
       "发射功率",
-      "20dBm~27dBm"
+      "20–27 dBm"
      ],
      [
       "接收灵敏度",
-      "-140dBm@0.292Kbps"
+      "−140 dBm at 0.292 kbps"
      ],
      [
       "天线",
@@ -9391,13 +9391,13 @@ export const productContent ={
      },
      {
       "name": "发射功率",
-      "value": "20dBm~27dBm",
+      "value": "20–27 dBm",
       "minValue": 20.0,
       "maxValue": 27.0
      },
      {
       "name": "接收灵敏度",
-      "value": "-140dBm@0.292Kbps",
+      "value": "−140 dBm at 0.292 kbps",
       "unitText": "分贝毫瓦"
      },
      {
@@ -9988,7 +9988,7 @@ export const productContent ={
      },
      {
       "icon": "product/details/286-f3.png",
-      "text": "±0.5%FS（高精度定制）"
+      "text": "±0.5% FS（高精度定制）"
      },
      {
       "icon": "product/details/286-f4.png",
@@ -10024,7 +10024,7 @@ export const productContent ={
      ],
      [
       "压力精度",
-      "±0.5%FS"
+      "±0.5% FS"
      ],
      [
       "温度范围",
@@ -10067,7 +10067,7 @@ export const productContent ={
      },
      {
       "name": "压力精度",
-      "value": "±0.5%FS",
+      "value": "±0.5% FS",
       "unitText": "百分比"
      },
      {
@@ -10123,7 +10123,7 @@ export const productContent ={
     "related": [
      "287"
     ],
-    "summary": "宏太 H 系列防爆温压一体变送器为易燃易爆环境将温度与压力监测合二为一：压力量程 0-1MPa 至 20MPa（±0.5%FS），温度 -200℃ 至 800℃，数据经 4G / NB-IoT 上报，减少现场设备数量与布线。",
+    "summary": "宏太 H 系列防爆温压一体变送器为易燃易爆环境将温度与压力监测合二为一：压力量程 0-1MPa 至 20MPa（±0.5% FS），温度 -200℃ 至 800℃，数据经 4G / NB-IoT 上报，减少现场设备数量与布线。",
     "sku": "H200/H300/H500",
     "applications": [
      {
@@ -10157,7 +10157,7 @@ export const productContent ={
      },
      {
       "q": "量程是多少？",
-      "a": "压力 0-1MPa / 1.6 / 3.5 / 7 / 10 / 20MPa（±0.5%FS）；温度 -200℃ 至 800℃（±0.5℃，可定制 ±0.1℃）。"
+      "a": "压力 0-1MPa / 1.6 / 3.5 / 7 / 10 / 20MPa（±0.5% FS）；温度 -200℃ 至 800℃（±0.5℃，可定制 ±0.1℃）。"
      },
      {
       "q": "有防爆认证吗？",
@@ -11430,7 +11430,7 @@ export const listSeo: Record<'en' | 'zh', Record<string, PageSeo>> = {
   en: {
     '261': {
       title: 'Industrial IoT Sensors | 4G, NB-IoT & LoRa | Hitelecom',
-      desc: 'Industrial sensor terminals for temperature, pressure, level, tilt, vibration and air quality, with 4G, NB-IoT and LoRa options and Hitelecom Cloud integration.',
+      desc: 'Explore Hitelecom sensors for temperature, pressure, level, tilt, vibration and air quality, with model-specific 4G, NB-IoT and LoRa options.',
     },
     '263': {
       title: 'Industrial Temperature Sensors | 4G & NB-IoT | Hitelecom',
@@ -11454,7 +11454,7 @@ export const listSeo: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '266': {
       title: 'Radar Distance Sensors | 4G & NB-IoT | Hitelecom',
-      desc: 'Radar distance sensors with a 0.3–50 m range and ±1 mm accuracy for silos, bunkers and manholes, with strong anti-interference and 4G/NB-IoT uplink.',
+      desc: 'Radar distance sensors with a 0.3–50 m range and ±1 mm accuracy for silos, bunkers and manholes, with high interference immunity and 4G/NB-IoT uplink.',
     },
     '271': {
       title: 'Industrial Vibration Sensors | 4G & NB-IoT | Hitelecom',
@@ -11637,7 +11637,7 @@ export const detailSeo: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '286': {
       title: 'Explosion-Proof Temperature & Pressure Sensor | Hitelecom',
-      desc: 'Explosion-proof 2-in-1 sensor for temperature (-200°C to +800°C) and pressure (up to 20 MPa) in hazardous areas, with 4G/NB-IoT reporting; certification per market.',
+      desc: 'Monitor temperature and pressure in hazardous-area projects with configurable 4G or NB-IoT reporting; confirm certification before selection.',
     },
     '287': {
       title: 'Explosion-Proof Coupling Isolator | H100 | Hitelecom',
@@ -11657,7 +11657,7 @@ export const detailSeo: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '304': {
       title: 'Asset Tracking Sensor | GPS & BeiDou | Hitelecom',
-      desc: 'Asset tracking sensor with GPS/BeiDou positioning, geofence alerts and movement history, reporting over 4G with multi-year battery life for pallets and crates.',
+      desc: 'Track pallets, tools and returnable assets with GPS/BeiDou positioning, geofences, movement history and 4G or NB-IoT reporting.',
     },
     '305': {
       title: 'Custom Gas Sensor | H Series | Hitelecom',

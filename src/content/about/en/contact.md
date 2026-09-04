@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Cloud · IoT · Sensors"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Contact Hitelecom"/></h1>
 						 
 					</Div>
 				</Div>
@@ -35,7 +35,7 @@
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/quality">
-						Quality and Reliability
+						Quality &amp; Reliability
 					</a>
 				</li>
 				<li class="reveal">
@@ -59,7 +59,7 @@
 					Company Overview
 				</option> 
 				<option     value="/about/quality">
-					Quality and Reliability
+					Quality &amp; Reliability
 				</option> 
 				<option    value="/about/partner">
 					Partners
@@ -88,7 +88,7 @@
 							<li>
 								2nd Floor, Building 1, No. 116 Cheyang Road, Songjiang District, Shanghai, China							</li>
 							<li>
-								sales@hitelecom.com							</li>
+								sales@hitelecom.cn							</li>
 						</ul>
 					</div>
 					<div class="clearfix contact_1_mid_left_mid_3 reveal">

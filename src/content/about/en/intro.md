@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Cloud · IoT · Sensors"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="About Hitelecom"/></h1>
 						 
 					</Div>
 				</Div>
@@ -35,7 +35,7 @@
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/quality">
-						Quality and Reliability
+						Quality &amp; Reliability
 					</a>
 				</li>
 				<li class="reveal">
@@ -60,7 +60,7 @@
 					Company Overview
 				</option> 
 				<option    value="/about/quality">
-					Quality and Reliability
+					Quality &amp; Reliability
 				</option> 
 				<option    value="/about/partner">
 					Partners
@@ -192,7 +192,7 @@
 						<Div class="about_3_2_mid_right">
 							<div>
 Ambition<br>
-Open and win-win
+Openness and Mutual Success
 </div>
 <div>
 Innovation<br>
@@ -256,7 +256,7 @@ Teamwork
 							<div class="about_4_1_right_3_mid_2">
 															2023							</div>
 							<div class="about_4_1_right_3_mid_3">
-								Renewed Shanghai High-Tech Enterprise Certification							</div>
+								Renewed Shanghai High-Tech Enterprise certification							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Modern glass office buildings" src="/images/about/up_79fb40fb3c9993aeef9cfde329dad51c.webp">
 							</Div>
@@ -377,7 +377,7 @@ Teamwork
 							<div class="about_4_1_right_3_mid_2">
 															2014							</div>
 							<div class="about_4_1_right_3_mid_3">
-								Expanded International Operations							</div>
+								Expanded international operations							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="World map with connection arcs over a city — global business expansion" src="/images/about/up_47f7ff8e7fb51884d2fb0797eb73a7de.webp">
 							</Div>
@@ -503,7 +503,7 @@ Teamwork
 					
 				</div>
 				<div class="about_5_1__nav_right">
-					<div><span>01</span>OF03</div>
+					<div><span>01</span> of 03</div>
 				</div>
 				 
 				
@@ -573,7 +573,7 @@ Teamwork
 						<img alt="CE Certificate of Conformity for Hitelecom products" src="/images/about/up_08bb34b3d5d2df0c89cc42f5289fecf8.webp">
 					</div>
 					<div class="about_6_2_2">
-						CE Certification					</div>
+						CE marking					</div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="06">
@@ -597,7 +597,7 @@ Teamwork
 						<img alt="CE Verification of Conformity for Hitelecom products" src="/images/about/up_92affa8599dcbcf437812dea59d58c51.webp">
 					</div>
 					<div class="about_6_2_2">
-						RED Certification (EU Radio Equipment Directive)					</div>
+						Compliance with the EU Radio Equipment Directive (RED)					</div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="09">

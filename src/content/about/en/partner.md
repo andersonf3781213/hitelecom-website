@@ -12,7 +12,7 @@
 			<div class="cell_h">
 				<Div class="indexmid">
 					<Div class="nybanner_jj_mid">
-						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Cloud · IoT · Sensors"/></h1>
+						<h1 class="nybanner_jj_mid_1 reveal"><img src="/images/about/static_images_img13.png" alt="Partner with Hitelecom"/></h1>
 						 
 					</Div>
 				</Div>
@@ -35,7 +35,7 @@
 				</li>
 				<li class="reveal">
 					<a class="css3" href="/about/quality">
-						Quality and Reliability
+						Quality &amp; Reliability
 					</a>
 				</li>
 				<li class="reveal">
@@ -59,7 +59,7 @@
 					Company Overview
 				</option> 
 				<option     value="/about/quality">
-					Quality and Reliability
+					Quality &amp; Reliability
 				</option> 
 				<option  selected="selected"   value="/about/partner">
 					Partners
@@ -290,16 +290,16 @@
 													Education
 												</dd>
 												<dd lang="Business">
-													Business
+													Commercial Organizations
 												</dd>
 												<dd lang="Hospitality">
 													Hospitality
 												</dd>
 												<dd lang="Industrial Park">
-													Industrial Park
+													Industrial Parks
 												</dd>
 												<dd lang="Other">
-													Other
+													Other Sectors
 												</dd>
 											</dl>
 											<input type="hidden" value="Government" id="types" name="types">

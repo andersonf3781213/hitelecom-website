@@ -29,7 +29,7 @@ export const site = {
    * 换 Formspree：formEndpoint 填 'https://formspree.io/f/你的ID'，formAccessKey 留空即可。
    */
   formEndpoint: 'https://api.web3forms.com/submit',
-  /** Web3Forms Access Key（与 formEndpoint 配套；当前收件邮箱 sales@hitelecom.com） */
+  /** Web3Forms Access Key（与 formEndpoint 配套；当前收件邮箱 sales@hitelecom.cn） */
   formAccessKey: '6cd14860-b673-4f14-af67-76ac66991e8f',
 
   /**
