@@ -1,0 +1,40 @@
+---
+/**
+ * 资源保留清单（/legacy-assets，noindex，不对用户展示，全站无任何入口链接）
+ *
+ * 为什么存在：Cloudflare Pages 每次部署都是全新构建，产物中「不再被任何页面引用」
+ * 的图片衍生品会被构建期瘦身删除。而访客浏览器/bfcache 里缓存的旧 HTML 仍引用
+ * 这些 URL —— 文件一删，旧页面就地裂图。
+ *
+ * 本页面引用「历史上曾被页面引用、后续改版可能弃用」的图片（目前为全部产品
+ * scenarios 场景图，含已切换数据源后不再上屏的那些），使它们的衍生品永远
+ * 留在构建产物中：旧缓存 HTML 引用的 URL 永久有效，新页面照常瘦身。
+ * 衍生品 hash 为内容寻址（已验证跨构建 100% 稳定），重新生成即恢复原 URL。
+ */
+import Img from '../components/Img.astro';
+import { productContent } from '../data/product';
+
+const imgs = new Set<string>();
+for (const locale of ['en', 'zh'] as const) {
+  for (const d of Object.values(productContent[locale].details)) {
+    for (const s of d.scenarios ?? []) if (s.img) imgs.add(s.img);
+  }
+}
+const list = [...imgs].sort();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Asset Manifest</title>
+  </head>
+  <body>
+    <p>Internal asset manifest. Not linked from anywhere; keeps legacy image derivatives available.</p>
+    {/* 与产品详情页轮播一致的 widths 组合，保证衍生品 hash 与历史 URL 一致 */}
+    <div aria-hidden="true">
+      {list.map((src) => <Img src={src} alt="" widths={[320, 560]} sizes="25vw" />)}
+    </div>
+  </body>
+</html>

@@ -37,8 +37,9 @@ export default defineConfig({
     },
     // 自动生成 sitemap-index.xml，助力 Google 收录
     sitemap({
-      // 旧数字产品地址仅为跳转页（noindex），不进 sitemap
-      filter: (page) => !page.includes('/product/show/id/'),
+      // 旧数字产品地址仅为跳转页（noindex），不进 sitemap；
+      // /legacy-assets 为构建期资源保留清单（noindex、无入口），同样不进 sitemap
+      filter: (page) => !page.includes('/product/show/id/') && !page.includes('/legacy-assets'),
       i18n: {
         defaultLocale: 'en',
         locales: { en: 'en', zh: 'zh-CN' },
