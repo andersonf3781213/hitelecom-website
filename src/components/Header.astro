@@ -75,7 +75,7 @@ const pathname = Astro.url.pathname;
     <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
   </button>
   <form class="search-form" action={l('/search/', locale)} method="get">
-    <input type="search" name="q" placeholder={t.searchPlaceholder} autocomplete="off" />
+    <input type="search" name="q" placeholder={t.searchPlaceholder} aria-label={locale === 'zh' ? '搜索产品、方案与新闻' : 'Search products, solutions and news'} autocomplete="off" />
     <button type="submit" class="btn-pill">
       {locale === 'zh' ? '搜索' : 'Search'}
       <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>

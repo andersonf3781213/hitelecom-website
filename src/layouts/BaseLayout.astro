@@ -87,11 +87,11 @@ const siteJsonLd = {
         addressCountry: 'CN',
       },
       areaServed: 'Worldwide',
-      hasCredential: [
-        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Quality Management System Certification', name: 'ISO 9001' },
-        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Environmental Management System Certification', name: 'ISO 14001' },
-        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Occupational Health and Safety Management System Certification', name: 'ISO 45001' },
-        { '@type': 'EducationalOccupationalCredential', credentialCategory: 'Quality Management System Certification', name: 'IATF 16949' },
+      hasCertification: [
+        { '@type': 'Certification', name: 'ISO 9001', certificationIdentification: 'Quality Management System' },
+        { '@type': 'Certification', name: 'ISO 14001', certificationIdentification: 'Environmental Management System' },
+        { '@type': 'Certification', name: 'ISO 45001', certificationIdentification: 'Occupational Health and Safety Management System' },
+        { '@type': 'Certification', name: 'IATF 16949', certificationIdentification: 'Automotive Quality Management System' },
       ],
       hasOfferCatalog: {
         '@type': 'OfferCatalog',

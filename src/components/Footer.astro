@@ -57,6 +57,7 @@ const socialIcons: Record<string, string> = {
                       src={s.icon === 'wechat' ? '/images/qr-wechat.png' : '/images/qr-whatsapp.png'}
                       alt={`${s.name} QR code`}
                       width="120"
+                      height={s.icon === 'wechat' ? 110 : 120}
                       loading="lazy"
                       decoding="async"
                     />

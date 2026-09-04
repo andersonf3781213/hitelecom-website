@@ -36,7 +36,7 @@ const pre = zh ? '/zh' : '';
   <div class="search-page-in">
     <h1>{txt.heading}</h1>
     <form class="search-page-form" method="get" action={`${pre}/search`}>
-      <input type="search" name="q" value="" placeholder={txt.placeholder} autocomplete="off" id="sp-input" />
+      <input type="search" name="q" value="" placeholder={txt.placeholder} aria-label={locale === 'zh' ? '搜索产品、方案与新闻' : 'Search products, solutions and news'} autocomplete="off" id="sp-input" />
       <button type="submit" class="btn-pill">{txt.btn}</button>
     </form>
     <p class="search-page-meta" id="sp-meta">{txt.hint}</p>

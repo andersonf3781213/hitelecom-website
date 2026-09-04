@@ -38,8 +38,14 @@ export default defineConfig({
     // 自动生成 sitemap-index.xml，助力 Google 收录
     sitemap({
       // 旧数字产品地址仅为跳转页（noindex），不进 sitemap；
-      // /legacy-assets 为构建期资源保留清单（noindex、无入口），同样不进 sitemap
-      filter: (page) => !page.includes('/product/show/id/') && !page.includes('/legacy-assets'),
+      // /legacy-assets 为构建期资源保留清单（noindex、无入口）；
+      // /search（薄内容）与 /thanks（表单回执，noindex）同样不进 sitemap——
+      // noindex 与 sitemap 收录是矛盾信号，二者必须一致
+      filter: (page) =>
+        !page.includes('/product/show/id/') &&
+        !page.includes('/legacy-assets') &&
+        !page.includes('/search') &&
+        !page.includes('/thanks'),
       i18n: {
         defaultLocale: 'en',
         locales: { en: 'en', zh: 'zh-CN' },

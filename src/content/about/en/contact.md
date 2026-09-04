@@ -104,9 +104,9 @@
 				</div>
 			</div>
 			<div id="map_canvas">
-			<img src="/images/about/contact-map.jpg" alt="Map of the Hitelecom office at No. 116 Cheyang Road, Songjiang District, Shanghai" loading="lazy" />
-			<a class="map_more" href="https://www.openstreetmap.org/?mlat=30.9889&amp;mlon=121.2826#map=16/30.9889/121.2826" target="_blank" rel="noopener">View larger map</a>
-			<span class="map_attr">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</span>
+			<img src="/images/about/contact-map.jpg" alt="Map of the Hitelecom office at No. 116 Cheyang Road, Songjiang District, Shanghai" width="1755" height="1275" loading="lazy" />
+			<a class="map_more" href="https://www.google.com/maps?q=30.986739,121.288993" target="_blank" rel="noopener">View larger map</a>
+			<span class="map_attr">© AutoNavi 高德地图</span>
 			</div>
 		</div>
 	</div>
