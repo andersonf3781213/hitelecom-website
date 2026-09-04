@@ -314,6 +314,20 @@ float:left; width:23.94463667820069%; margin-bottom:1.5em;}
 .pclone .pro_info_1_mask {color:#fff;
 position:absolute; left:0; top:0; width:100%; height:100%;}
 .pclone .pro_info_1_mask_4 .yun_6_1 {text-align:left}
+/* 首屏 CTA：主按钮（询盘，与页头 View Cloud Demo 同一设计语言）+ 次按钮（规格书下载，玻璃描边） */
+.pclone .hero_cta {display:flex; flex-wrap:wrap; gap:.875em; margin-top:2.5em;}
+.pclone .hero_cta_btn {display:inline-flex; align-items:center; justify-content:center; gap:.55em;
+  padding:.85em 1.7em; border-radius:999px; font-size:1.0625em; font-weight:500; line-height:1.2;
+  white-space:nowrap; transition:transform .3s ease, box-shadow .3s ease, background .3s ease, border-color .3s ease;}
+.pclone .hero_cta_btn svg {flex:none;}
+.pclone .hero_cta_primary {background:#fff; color:#2790e5;}
+.pclone .hero_cta_primary:hover {transform:translateY(-2px); box-shadow:0 10px 24px rgba(39,144,229,.35);}
+.pclone .hero_cta_ghost {color:#fff; border:1px solid rgba(255,255,255,.5); background:rgba(255,255,255,.08);}
+.pclone .hero_cta_ghost:hover {background:rgba(255,255,255,.18); border-color:#fff; transform:translateY(-2px);}
+@media (max-width:767px) {
+  .pclone .hero_cta {margin-top:1.75em;}
+  .pclone .hero_cta_btn {flex:1 1 100%; padding:.8em 1.2em; font-size:1em;}
+}
 .pclone .pro_info_1_mask_1 {font-size:1.5em;}
 .pclone .pro_info_1_mask_2 {margin-top:.3em; margin-bottom:.5em;
 font-size:3em; font-weight:bold}
