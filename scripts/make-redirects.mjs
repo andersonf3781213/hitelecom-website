@@ -31,9 +31,11 @@ const pairs = [...block[1].matchAll(/'([^']+)'\s*:\s*'([^']+)'/g)].map((m) => [m
 if (!pairs.length) throw new Error('productSlugs 为空');
 
 const redirects = [];
+// 目标地址为无扩展名形态（Pages canonical）：旧 .html 源地址 → 301 → /product/{slug}，
+// 避免 301 → .html → 308 → 无扩展名 的两跳链
 for (const [id, slug] of pairs) {
-  redirects.push([`/product/show/id/${id}.html`, `/product/${slug}.html`]);
-  redirects.push([`/zh/product/show/id/${id}.html`, `/zh/product/${slug}.html`]);
+  redirects.push([`/product/show/id/${id}.html`, `/product/${slug}`]);
+  redirects.push([`/zh/product/show/id/${id}.html`, `/zh/product/${slug}`]);
 }
 
 // ---------------------------------------------------------------- _redirects
@@ -103,7 +105,8 @@ gzip_min_length 1k;
 #     root /var/www/hitelecom;        # ← dist 解压目录
 #     index index.html;
 #     include /etc/nginx/conf.d/hitelecom.conf;
-#     location / { try_files $uri $uri/ =404; }
+#     # 无扩展名 URL 回退到 .html 文件（与 Cloudflare Pages 行为对齐）
+#     location / { try_files $uri $uri.html $uri/ =404; }
 # }
 # 备用域 iot67.com → 主域 301（自托管时另加一个 server 块即可）：
 # server { listen 80; server_name iot67.com www.iot67.com; return 301 https://www.hitelecom.com$request_uri; }
@@ -124,6 +127,11 @@ RewriteRule ^(.*)$ https://www.hitelecom.com/$1 [R=301,L]
 
 # === 1. 旧产品地址 301 ===
 ${redirects.map(([f, t]) => `RewriteRule ^${f.slice(1).replace(/\./g, '\\.')}$ ${t} [R=301,L]`).join('\n')}
+
+# === 1b. 无扩展名 URL → .html 文件（与 Cloudflare Pages 行为对齐） ===
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
 
 # === 2. 缓存策略（与 public/_headers 等价，需 mod_expires + mod_headers） ===
 <IfModule mod_expires.c>

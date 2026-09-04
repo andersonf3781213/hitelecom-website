@@ -30,13 +30,13 @@ const pageDesc = card?.excerpt || bodyText.slice(0, 160) || undefined;
 const isoDate = (det.date.match(/(\d{4})[-.](\d{2})[-.](\d{2})/) || []).slice(1).join('-') || undefined;
 const articleImg = card?.img ? new URL(await optimizedSrc(card.img, { width: 900 }), Astro.site).href : undefined;
 
-const catUrl = { company: 'zh/news.html', exh: 'zh/news/index/cid/81.html', ind: 'zh/news/index/cid/80.html' }[det.cat];
+const catUrl = { company: 'zh/news', exh: 'zh/news/index/cid/81', ind: 'zh/news/index/cid/80' }[det.cat];
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh.html' },
-    { '@type': 'ListItem', position: 2, name: '新闻中心', item: 'https://www.hitelecom.com/zh/news.html' },
+    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh' },
+    { '@type': 'ListItem', position: 2, name: '新闻中心', item: 'https://www.hitelecom.com/zh/news' },
     { '@type': 'ListItem', position: 3, name: d.catNames[det.cat], item: `https://www.hitelecom.com/${catUrl}` },
     ...(det.title ? [{ '@type': 'ListItem', position: 4, name: det.title }] : []),
   ],
@@ -51,7 +51,7 @@ const articleLd = det.title ? {
   inLanguage: 'zh-CN',
   author: { '@id': 'https://www.hitelecom.com/#organization' },
   publisher: { '@id': 'https://www.hitelecom.com/#organization' },
-  mainEntityOfPage: `https://www.hitelecom.com/zh/news/show/id/${id}.html`,
+  mainEntityOfPage: `https://www.hitelecom.com/zh/news/show/id/${id}`,
 } : null;
 ---
 

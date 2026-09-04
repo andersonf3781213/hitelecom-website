@@ -29,27 +29,27 @@
 			<ul class="u5">
 				 
 				<li class="reveal">
-					<a class="css3" href="/zh/about.html">
+					<a class="css3" href="/zh/about">
 						企业简介
 					</a>
 				</li>
 				<li class="reveal">
-					<a class="css3" href="/zh/about/quality.html">
+					<a class="css3" href="/zh/about/quality">
 						质量与可靠
 					</a>
 				</li>
 				<li class="reveal">
-					<a class="css3 on" href="/zh/about/partner.html">
+					<a class="css3 on" href="/zh/about/partner">
 						生态伙伴
 					</a>
 				</li>
 				<li class="reveal">
-					<a class="css3" href="/zh/about/joinus.html">
+					<a class="css3" href="/zh/about/joinus">
 						人才招聘
 					</a>
 				</li>
 				<li class="reveal">
-					<a class="css3" href="/zh/about/contact.html">
+					<a class="css3" href="/zh/about/contact">
 						联系我们
 					</a>
 				</li>
@@ -57,19 +57,19 @@
 			</ul>
 			<select id="changeurl">
 				 
-				<option  value="/zh/about.html">
+				<option  value="/zh/about">
 					企业简介
 				</option> 
-				<option     value="/zh/about/quality.html">
+				<option     value="/zh/about/quality">
 					质量与可靠
 				</option> 
-				<option  selected="selected"   value="/zh/about/partner.html">
+				<option  selected="selected"   value="/zh/about/partner">
 					生态伙伴
 				</option> 
-				<option   value="/zh/about/joinus.html">
+				<option   value="/zh/about/joinus">
 					人才招聘
 				</option> 
-				<option   value="/zh/about/contact.html">
+				<option   value="/zh/about/contact">
 					联系我们
 				</option> 
 				

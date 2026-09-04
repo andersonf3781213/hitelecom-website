@@ -43,13 +43,13 @@ export default defineConfig({
         defaultLocale: 'en',
         locales: { en: 'en', zh: 'zh-CN' },
       },
-      // 与 build.format='file' 对齐：URL 统一补 .html，保证 sitemap 地址可直接访问
+      // Cloudflare Pages 的 canonical 形态为无扩展名（/about.html 一律 308 → /about）：
+      // sitemap 统一输出无扩展名地址，与 canonical、hreflang、内链保持一致，
+      // Google 抓取零跳转
       serialize(item) {
         const fix = (href) => {
           const u = new URL(href);
-          if (u.pathname !== '/' && !u.pathname.endsWith('.html')) {
-            u.pathname = `${u.pathname.replace(/\/+$/, '')}.html`;
-          }
+          u.pathname = u.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
           return u.href;
         };
         item.url = fix(item.url);

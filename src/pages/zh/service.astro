@@ -1,6 +1,6 @@
 ---
 /**
- * 支持服务页（中文，第 1 页）：/zh/service.html
+ * 支持服务页（中文，第 1 页）：/zh/service
  * 与原站中文 1:1：横幅 + 锚点选项卡 + 技术支持六卡 + 软件下载 + 文档下载（8 卡 + 分页）+ 售后表单
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -12,8 +12,8 @@ const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh.html' },
-    { '@type': 'ListItem', position: 2, name: '支持服务', item: 'https://www.hitelecom.com/zh/service.html' },
+    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://www.hitelecom.com/zh' },
+    { '@type': 'ListItem', position: 2, name: '支持服务', item: 'https://www.hitelecom.com/zh/service' },
   ],
 };
 const pageBanner = await optimizedSrc('service/banner.jpg', { width: 1920, quality: 82 });

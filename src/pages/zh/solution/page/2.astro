@@ -1,6 +1,6 @@
 ---
 /**
- * 解决方案列表页（中文，第 2 页）：/zh/solution/page/2.html
+ * 解决方案列表页（中文，第 2 页）：/zh/solution/page/2
  * 与原站 /zh.php/solution?page=2 一致：66 智慧景区 + 67 智慧水务
  */
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
@@ -15,8 +15,8 @@ const d = solutionIndex.zh;
 const banner = await optimizedSrc(d.bannerImg, { width: 1920, quality: 82 });
 const cards = d.cards.slice(6);
 const bcLd = breadcrumbLd([
-  { name: '首页', url: `${SITE_URL}/zh.html` },
-  { name: '解决方案', url: `${SITE_URL}/zh/solution.html` },
+  { name: '首页', url: `${SITE_URL}/zh` },
+  { name: '解决方案', url: `${SITE_URL}/zh/solution` },
   { name: '第2页' },
 ]);
 ---

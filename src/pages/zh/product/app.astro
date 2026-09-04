@@ -1,6 +1,6 @@
 ---
 /**
- * IoT App 专页（中文）：/zh/product/app.html
+ * IoT App 专页（中文）：/zh/product/app
  */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ProductShell from '../../../components/product/ProductShell.astro';
@@ -14,7 +14,7 @@ import WaveDivider from '../../../components/WaveDivider.astro';
 const d = productContent.zh.app;
 const preloadImage = await optimizedSrc(d.banner.images[3], { width: 800 });
 const bcLd = breadcrumbLd([
-  { name: '首页', url: `${SITE_URL}/zh.html` },
+  { name: '首页', url: `${SITE_URL}/zh` },
   { name: '产品中心' },
   { name: d.banner.title },
 ]);---

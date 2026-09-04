@@ -46,9 +46,10 @@ const pageTitle = clampSeo(title ?? seo.title, 70);
 const pageDesc = clampSeo(description ?? seo.description, locale === 'zh' ? 90 : 158);
 const pageKeywords = keywords ?? seo.keywords;
 
-// build.format='file' 下首页 pathname 为 '/index.html'；
-// canonical/og:url 统一归一到根地址 '/'，与 sitemap、hreflang 保持一致
-const canonicalPath = Astro.url.pathname === '/index.html' ? '/' : Astro.url.pathname;
+// build.format='file' 下构建期 pathname 带 .html（如 '/about.html'、'/index.html'）；
+// Cloudflare Pages 的 canonical 形态为无扩展名（/about.html 一律 308 → /about），
+// canonical/og:url 统一归一到无扩展名地址，与 sitemap、hreflang、内链保持一致
+const canonicalPath = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
 const canonical = new URL(canonicalPath, Astro.site).href;
 const altLocale: Locale = locale === 'en' ? 'zh' : 'en';
 const altUrl = new URL(alternateUrl(Astro.url.pathname, altLocale), Astro.site).href;
@@ -88,7 +89,7 @@ const siteJsonLd = {
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Industrial IoT Sensors & Solutions',
-        url: 'https://www.hitelecom.com/product.html',
+        url: 'https://www.hitelecom.com/product',
       },
       contactPoint: {
         '@type': 'ContactPoint',

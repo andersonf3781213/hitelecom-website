@@ -227,7 +227,7 @@
         fd.append("message", lines);
         if (formStatus) formStatus.textContent = "Sending your inquiry…";
         fetch(window.HITE_FORM_ENDPOINT, { method: "POST", body: fd, headers: { Accept: "application/json" } })
-          .then(r => { window.location.href = r.ok ? "/about/thanks.html" : "/about/thanks.html?sent=0"; })
+          .then(r => { const t = location.pathname.startsWith("/zh") ? "/zh/about/thanks" : "/about/thanks"; window.location.href = r.ok ? t : `${t}?sent=0`; })
           .catch(() => { if (formStatus) formStatus.textContent = "Submission failed. Please retry or email sales@hitelecom.cn directly."; });
       } else {
         if (formStatus) formStatus.textContent = "Opening your email application with the project brief…";

@@ -35,7 +35,7 @@ const pre = zh ? '/zh' : '';
 <div class="search-page">
   <div class="search-page-in">
     <h1>{txt.heading}</h1>
-    <form class="search-page-form" method="get" action={`${pre}/search.html`}>
+    <form class="search-page-form" method="get" action={`${pre}/search`}>
       <input type="search" name="q" value="" placeholder={txt.placeholder} autocomplete="off" id="sp-input" />
       <button type="submit" class="btn-pill">{txt.btn}</button>
     </form>
@@ -43,7 +43,7 @@ const pre = zh ? '/zh' : '';
     <ul class="search-page-results" id="sp-results"></ul>
     <p class="search-page-empty" id="sp-empty" hidden>
       {txt.empty}
-      <a href={`${pre}/about/contact.html`}>{txt.contact}</a>
+      <a href={`${pre}/about/contact`}>{txt.contact}</a>
     </p>
   </div>
 </div>

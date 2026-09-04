@@ -1,6 +1,6 @@
 ---
 /**
- * 解决方案列表页（英文，第 2 页）：/solution/page/2.html
+ * 解决方案列表页（英文，第 2 页）：/solution/page/2
  * 与原站 /solution?page=2 一致：66 Smart Scenic Area + 67 Smart Water
  */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
@@ -16,7 +16,7 @@ const banner = await optimizedSrc(d.bannerImg, { width: 1920, quality: 82 });
 const cards = d.cards.slice(6);
 const bcLd = breadcrumbLd([
   { name: 'Home', url: `${SITE_URL}/` },
-  { name: 'Solution', url: `${SITE_URL}/solution.html` },
+  { name: 'Solution', url: `${SITE_URL}/solution` },
   { name: 'Page 2' },
 ]);
 ---

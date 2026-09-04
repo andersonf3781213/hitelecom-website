@@ -29,46 +29,46 @@
 			<ul class="u5">
 				 
 				<li class="reveal">
-					<a class="css3 on" href="/about.html">
+					<a class="css3 on" href="/about">
 						Company Overview
 					</a>
 				</li>
 				<li class="reveal">
-					<a class="css3" href="/about/quality.html">
+					<a class="css3" href="/about/quality">
 						Quality and Reliability
 					</a>
 				</li>
 				<li class="reveal">
-					<a class="css3" href="/about/partner.html">
+					<a class="css3" href="/about/partner">
 						Partners
 					</a>
 				</li>
 				<li class="reveal">
-					<a class="css3" href="/about/joinus.html">
+					<a class="css3" href="/about/joinus">
 						Careers
 					</a>
 				</li>
 				<li class="reveal">
-					<a class="css3" href="/about/contact.html"> Contact Us </a>
+					<a class="css3" href="/about/contact"> Contact Us </a>
 				</li>
 				 
 			</ul>
 			
 			<select id="changeurl">
 				 
-				<option selected="selected"  value="/about.html">
+				<option selected="selected"  value="/about">
 					Company Overview
 				</option> 
-				<option    value="/about/quality.html">
+				<option    value="/about/quality">
 					Quality and Reliability
 				</option> 
-				<option    value="/about/partner.html">
+				<option    value="/about/partner">
 					Partners
 				</option> 
-				<option   value="/about/joinus.html">
+				<option   value="/about/joinus">
 					Careers
 				</option> 
-				<option   value="/about/contact.html"> Contact Us </option> 
+				<option   value="/about/contact"> Contact Us </option> 
 				
 			</select>
 			

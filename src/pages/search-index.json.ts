@@ -1,7 +1,7 @@
 /**
  * 站内搜索索引（构建期生成）：/search-index.json
  * 覆盖：产品详情、产品卡片、新闻、解决方案；EN/ZH 分开。
- * 搜索页 /search.html 与 /zh/search.html 在浏览器端读取本文件做过滤。
+ * 搜索页 /search 与 /zh/search 在浏览器端读取本文件做过滤。
  */
 import type { APIRoute } from 'astro';
 import { getMergedProducts, productContent, productPath } from '../data/product';
@@ -49,7 +49,7 @@ async function buildLocale(locale: 'en' | 'zh'): Promise<Entry[]> {
     out.push({
       t: item.title,
       d: item.excerpt || '',
-      u: `${pre}/news/show/id/${id}.html`,
+      u: `${pre}/news/show/id/${id}`,
       c: isZh ? '新闻' : 'News',
     });
   }
@@ -59,14 +59,14 @@ async function buildLocale(locale: 'en' | 'zh'): Promise<Entry[]> {
     out.push({
       t: c.title,
       d: c.desc,
-      u: `${pre}/solution/show/id/${c.id}.html`,
+      u: `${pre}/solution/show/id/${c.id}`,
       c: isZh ? '解决方案' : 'Solution',
     });
   }
 
   // 云平台 / APP
-  out.push({ t: p.cloud.banner.title, d: strip(p.cloud.banner.desc), u: `${pre}/product.html`, c: isZh ? '产品' : 'Product' });
-  out.push({ t: p.app.banner.title, d: strip(p.app.banner.desc), u: `${pre}/product/app.html`, c: isZh ? '产品' : 'Product' });
+  out.push({ t: p.cloud.banner.title, d: strip(p.cloud.banner.desc), u: `${pre}/product`, c: isZh ? '产品' : 'Product' });
+  out.push({ t: p.app.banner.title, d: strip(p.app.banner.desc), u: `${pre}/product/app`, c: isZh ? '产品' : 'Product' });
 
   return out;
 }

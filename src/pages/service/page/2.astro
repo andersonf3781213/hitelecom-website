@@ -1,6 +1,6 @@
 ---
 /**
- * 支持服务页（英文，第 2 页）：/service/page/2.html
+ * 支持服务页（英文，第 2 页）：/service/page/2
  * 与原站 /service.html?page=2 一致：文档下载区为第 2 页卡片（3 张），分页 2 高亮
  */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
@@ -13,7 +13,7 @@ const breadcrumbLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Service', item: 'https://www.hitelecom.com/service.html' },
+    { '@type': 'ListItem', position: 2, name: 'Service', item: 'https://www.hitelecom.com/service' },
   ],
 };
 const pageBanner = await optimizedSrc('service/banner.jpg', { width: 1920, quality: 82 });

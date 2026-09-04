@@ -44,7 +44,7 @@ const en = {
     { label: 'News', href: '/news/' },
     { label: 'About', href: '/about/' },
   ],
-  langSwitch: { label: 'Chinese', href: '/zh.html' },
+  langSwitch: { label: 'Chinese', href: '/zh' },
   showOnline: 'View Cloud Demo',
   searchPlaceholder: 'Search products, solutions, news…',
 

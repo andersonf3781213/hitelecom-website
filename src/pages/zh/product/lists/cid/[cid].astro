@@ -38,11 +38,11 @@ const sideProds = Object.fromEntries(
 
 // GEO：面包屑 + 产品清单语义化（无详情页的定制条目不进入 ItemList）
 const catName = subLabel ?? tabLabel;
-const pageUrl = `${SITE_URL}/zh/product/lists/cid/${cid}.html`;
+const pageUrl = `${SITE_URL}/zh/product/lists/cid/${cid}`;
 const bcLd = breadcrumbLd([
-  { name: '首页', url: `${SITE_URL}/zh.html` },
-  { name: '产品中心', url: `${SITE_URL}/zh/product.html` },
-  ...(subLabel ? [{ name: tabLabel, url: `${SITE_URL}/zh/product/lists/cid/${parent}.html` }] : []),
+  { name: '首页', url: `${SITE_URL}/zh` },
+  { name: '产品中心', url: `${SITE_URL}/zh/product` },
+  ...(subLabel ? [{ name: tabLabel, url: `${SITE_URL}/zh/product/lists/cid/${parent}` }] : []),
   { name: catName },
 ]);
 const listLd = itemListLd(

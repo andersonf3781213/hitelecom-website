@@ -14,27 +14,27 @@ import '../styles/home-v18-override.css';
 // 首页专属结构化数据（GEO/SEO）：页面可见的 12 大传感器家族 + 8 大应用领域
 // 每个家族指向其语义化详情页（与卡片上的 View product details 一致）
 const families: Array<[string, string]> = [
-  ['Industrial Temperature Sensors', '/product/temperature-sensor.html'],
-  ['Temperature & Humidity Sensors', '/product/temperature-humidity-sensor.html'],
-  ['Temperature & Humidity Data Loggers', '/product/temperature-humidity-data-logger.html'],
-  ['Air Quality Sensors', '/product/air-quality-sensor.html'],
-  ['TVOC Sensors', '/product/tvoc-sensor.html'],
-  ['Pressure Sensors', '/product/pressure-sensor.html'],
-  ['Soil Sensors', '/product/soil-moisture-sensor.html'],
-  ['Tilt Sensors', '/product/tilt-sensor.html'],
-  ['Vibration Sensors', '/product/vibration-sensor.html'],
-  ['Radar Distance Sensors', '/product/radar-distance-sensor.html'],
-  ['Asset Tracking Sensors', '/product/asset-tracking-sensor.html'],
-  ['Custom Gas Sensors', '/product/custom-gas-sensor.html'],
+  ['Industrial Temperature Sensors', '/product/temperature-sensor'],
+  ['Temperature & Humidity Sensors', '/product/temperature-humidity-sensor'],
+  ['Temperature & Humidity Data Loggers', '/product/temperature-humidity-data-logger'],
+  ['Air Quality Sensors', '/product/air-quality-sensor'],
+  ['TVOC Sensors', '/product/tvoc-sensor'],
+  ['Pressure Sensors', '/product/pressure-sensor'],
+  ['Soil Sensors', '/product/soil-moisture-sensor'],
+  ['Tilt Sensors', '/product/tilt-sensor'],
+  ['Vibration Sensors', '/product/vibration-sensor'],
+  ['Radar Distance Sensors', '/product/radar-distance-sensor'],
+  ['Asset Tracking Sensors', '/product/asset-tracking-sensor'],
+  ['Custom Gas Sensors', '/product/custom-gas-sensor'],
 ];
 // 应用领域：仅收录有独立落地页的条目进 ItemList；
 // Warehousing / Transportation / Cold Chain / Sanitation 暂共用 solution.html，
 // 多名目同 URL 会被搜索引擎视为列表填充——页面卡片照常展示，只是不进结构化数据
 const applications: Array<[string, string]> = [
-  ['Smart Cities — Structural health monitoring', '/solution/show/id/57.html'],
-  ['Smart Factories — Environment & equipment condition', '/solution/show/id/58.html'],
-  ['Smart Water — Pipeline, level & blockage monitoring', '/solution/show/id/67.html'],
-  ['Smart Heritage — Microclimate & artifact movement', '/solution/show/id/66.html'],
+  ['Smart Cities — Structural health monitoring', '/solution/show/id/57'],
+  ['Smart Factories — Environment & equipment condition', '/solution/show/id/58'],
+  ['Smart Water — Pipeline, level & blockage monitoring', '/solution/show/id/67'],
+  ['Smart Heritage — Microclimate & artifact movement', '/solution/show/id/66'],
 ];
 const homeItemListLd = {
   '@context': 'https://schema.org',

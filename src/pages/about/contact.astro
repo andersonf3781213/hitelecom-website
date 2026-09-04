@@ -1,6 +1,6 @@
 ---
 /**
- * 关于我们 - 联系我们（英文）：/about/contact.html
+ * 关于我们 - 联系我们（英文）：/about/contact
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AboutShell from '../../components/about/AboutShell.astro';
@@ -12,8 +12,8 @@ const breadcrumbLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
-    { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.hitelecom.com/about.html' },
-    { '@type': 'ListItem', position: 3, name: 'Contact', item: 'https://www.hitelecom.com/about/contact.html' },
+    { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.hitelecom.com/about' },
+    { '@type': 'ListItem', position: 3, name: 'Contact', item: 'https://www.hitelecom.com/about/contact' },
   ],
 };
 const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;

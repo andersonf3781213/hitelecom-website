@@ -1,6 +1,6 @@
 ---
 /**
- * 解决方案列表页（中文）：/zh/solution.html
+ * 解决方案列表页（中文）：/zh/solution
  * 与原站中文 1:1：全屏横幅（解决方案 / SOLUTION）+ 六张方案卡片（左右交替、阴影白卡）
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -16,7 +16,7 @@ const banner = await optimizedSrc(d.bannerImg, { width: 1920, quality: 82 });
 // 与原站一致：每页 6 张卡，66/67 在第 2 页
 const cards = d.cards.slice(0, 6);
 const bcLd = breadcrumbLd([
-  { name: '首页', url: `${SITE_URL}/zh.html` },
+  { name: '首页', url: `${SITE_URL}/zh` },
   { name: '解决方案' },
 ]);
 ---
