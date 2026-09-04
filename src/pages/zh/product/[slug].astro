@@ -24,6 +24,11 @@ const relatedCards = d.related
   .filter(Boolean);
 const heroSrc = await optimizedSrc(d.heroImg, { width: 760 });
 const bodyHtml = d.body ? await enhanceContentHtml(normalizeBody(d.body), d.series) : '';
+// 应用场景轮播：优先 d.applications（名称+说明+图，说明文字正文可见——GEO 被引用概率最高的内容），
+// 回退旧 d.scenarios（仅图+标签）
+const scenItems = d.applications?.length
+  ? d.applications.map((a) => ({ img: a.img as string | undefined, title: a.name, desc: a.desc }))
+  : d.scenarios.map((s) => ({ img: s.img as string | undefined, title: s.label, desc: '' }));
 
 // ——— GEO：完整实体图（Product + Breadcrumb + WebPage + FAQPage）———
 const pageUrl = `https://www.hitelecom.com/zh/product/${slug}`;
@@ -230,8 +235,9 @@ const breadcrumbLd = {
       </section>
     ) : null}
 
-    {/* 应用场景（横向滑动；无场景时不渲染整节） */}
-    {d.scenarios.length ? (
+    {/* 应用场景/领域（横向滑动；无场景时不渲染整节）。
+        图文卡：场景图 + 名称 + 一句话说明；无匹配场景图的领域渲染为品牌色文字卡（同一轮播，不单设区块）。 */}
+    {scenItems.length ? (
     <div class="clearfix index_2 pro_info_4">
       <div class="index_2_top">
         <WaveDivider />
@@ -240,17 +246,26 @@ const breadcrumbLd = {
         <div class="index_1_1 reveal">{d.scenariosHeading}</div>
         <div class="clearfix pro_info_4_1 reveal">
           <div class="pro_scen_track" id="scen-track">
-            {d.scenarios.map((s) => (
+            {scenItems.map((s) => (
               <div class="pro_scen_item">
+                {s.img ? (
                 <div class="pro_info_4_1_mid">
                   <div class="pro_info_4_1_mid_1">
-                    <Img src={s.img} alt={s.label} widths={[320, 560]} sizes="(max-width: 900px) 60vw, 25vw" />
+                    <Img src={s.img} alt={s.title} widths={[320, 560]} sizes="(max-width: 900px) 60vw, 25vw" />
                   </div>
                   <div class="pro_info_4_1_mid_2">
-                    <div class="pro_info_4_1_mid_2_1">{s.label}</div>
-                    <div class="pro_info_4_1_mid_2_2"></div>
+                    <div class="pro_info_4_1_mid_2_1">{s.title}</div>
+                    {s.desc && <div class="pro_info_4_1_mid_2_2">{s.desc}</div>}
                   </div>
                 </div>
+                ) : (
+                <div class="pro_info_4_1_mid pro_scen_card_text">
+                  <div class="pro_info_4_1_mid_2">
+                    <div class="pro_info_4_1_mid_2_1">{s.title}</div>
+                    <div class="pro_info_4_1_mid_2_2">{s.desc}</div>
+                  </div>
+                </div>
+                )}
               </div>
             ))}
           </div>
@@ -264,9 +279,6 @@ const breadcrumbLd = {
       </div>
     </div>
     ) : null}
-
-    {/* 注：应用领域不再单设卡片区块——与原站对齐，仅保留应用场景轮播。
-        d.applications 数据仍用于 JSON-LD 与 keywords。 */}
 
     {/* 常见问题（GEO，正文与 JSON-LD 同步） */}
     {d.faqs?.length ? (

@@ -1676,31 +1676,38 @@ export const productContent ={
     "applications": [
      {
       "name": "Data centers and server rooms",
-      "desc": "Tracks rack inlet and room temperature, helping operators identify conditions that may lead to thermal shutdown."
+      "desc": "Tracks rack inlet and room temperature, helping operators identify conditions that may lead to thermal shutdown.",
+      "img": "product/details/270-scen3.jpg"
      },
      {
       "name": "Cold storage and food processing",
-      "desc": "Keeps chillers, freezers and processing lines within safe temperature bands to support HACCP monitoring."
+      "desc": "Keeps chillers, freezers and processing lines within safe temperature bands to support HACCP monitoring.",
+      "img": "product/details/270-scen5.jpg"
      },
      {
       "name": "Medical and laboratory monitoring",
-      "desc": "Watches refrigerators, incubators and clean rooms holding vaccines, blood and reagents."
+      "desc": "Watches refrigerators, incubators and clean rooms holding vaccines, blood and reagents.",
+      "img": "product/details/270-scen4.jpg"
      },
      {
       "name": "Greenhouse and livestock climate",
-      "desc": "Monitors house temperature for crop yield and animal welfare in smart agriculture."
+      "desc": "Monitors house temperature for crop yield and animal welfare in smart agriculture.",
+      "img": "product/details/270-scen2.jpg"
      },
      {
       "name": "Industrial process monitoring",
-      "desc": "Measures pipeline, boiler and equipment surface temperature on production lines."
+      "desc": "Measures pipeline, boiler and equipment surface temperature on production lines.",
+      "img": "product/details/270-scen6.jpg"
      },
      {
       "name": "Energy facilities",
-      "desc": "Monitors transformers, battery rooms and substation cabinets for overheating risks."
+      "desc": "Monitors transformers, battery rooms and substation cabinets for overheating risks.",
+      "img": "product/details/270-scen1.jpg"
      },
      {
       "name": "Public venues",
-      "desc": "Watches indoor climate in amusement parks and other high-traffic public buildings."
+      "desc": "Watches indoor climate in amusement parks and other high-traffic public buildings.",
+      "img": "product/details/270-scen7.jpg"
      }
     ],
     "certifications": [
@@ -1906,31 +1913,38 @@ export const productContent ={
     "applications": [
      {
       "name": "Water supply and pump stations",
-      "desc": "Monitors pipeline pressure to catch bursts, leaks and pump faults early."
+      "desc": "Monitors pipeline pressure to catch bursts, leaks and pump faults early.",
+      "img": "product/details/281-scen1.jpg"
      },
      {
       "name": "Chemical plants",
-      "desc": "Tracks process line pressure where wired transmitters are costly to retrofit."
+      "desc": "Tracks process line pressure where wired transmitters are costly to retrofit.",
+      "img": "product/details/274-scen1.jpg"
      },
      {
       "name": "Building water systems",
-      "desc": "Watches booster pump and riser pressure in high-rise secondary water supply."
+      "desc": "Watches booster pump and riser pressure in high-rise secondary water supply.",
+      "img": "product/details/274-scen3.jpg"
      },
      {
       "name": "Semiconductor fabs",
-      "desc": "Monitors specialty gas and utility lines with stable, repeatable readings."
+      "desc": "Monitors specialty gas and utility lines with stable, repeatable readings.",
+      "img": "product/details/274-scen2.jpg"
      },
      {
       "name": "Industrial hydraulics",
-      "desc": "Follows hydraulic press and equipment pressure curves to support condition-based maintenance."
+      "desc": "Follows hydraulic press and equipment pressure curves to support condition-based maintenance.",
+      "img": "product/details/274-scen4.jpg"
      },
      {
       "name": "Tank and vessel monitoring",
-      "desc": "Combines head pressure with level for inventory and safety control."
+      "desc": "Combines head pressure with level for inventory and safety control.",
+      "img": "product/details/287-scen3.jpg"
      },
      {
       "name": "Geological and exploration sites",
-      "desc": "Battery-powered pressure logging at remote boreholes without cabling."
+      "desc": "Battery-powered pressure logging at remote boreholes without cabling.",
+      "img": "product/details/274-scen8.jpg"
      }
     ],
     "certifications": [
@@ -2131,27 +2145,33 @@ export const productContent ={
     "applications": [
      {
       "name": "Farmland irrigation scheduling",
-      "desc": "Soil moisture trends tell growers exactly when and how much to irrigate, cutting water waste."
+      "desc": "Soil moisture trends tell growers exactly when and how much to irrigate, cutting water waste.",
+      "img": "product/details/280-scen1.jpg"
      },
      {
       "name": "Greenhouse fertigation",
-      "desc": "EC and NPK readings guide fertilizer dosing so nutrients stay in the root zone, not in runoff."
+      "desc": "EC and NPK readings guide fertilizer dosing so nutrients stay in the root zone, not in runoff.",
+      "img": "product/details/280-scen2.jpg"
      },
      {
       "name": "Urban parks and landscaping",
-      "desc": "Monitors lawn and tree-pit soil moisture for municipal greening maintenance crews."
+      "desc": "Monitors lawn and tree-pit soil moisture for municipal greening maintenance crews.",
+      "img": "product/details/280-scen3.jpg"
      },
      {
       "name": "Soil pollution and remediation tracking",
-      "desc": "Continuous pH and EC logging flags contamination plumes and verifies remediation progress."
+      "desc": "Continuous pH and EC logging flags contamination plumes and verifies remediation progress.",
+      "img": "product/details/280-scen4.jpg"
      },
      {
       "name": "Forest and grassland health",
-      "desc": "Long-term buried probes track soil drought stress ahead of visible canopy decline."
+      "desc": "Long-term buried probes track soil drought stress ahead of visible canopy decline.",
+      "img": "product/details/280-scen5.jpg"
      },
      {
       "name": "Research and field trials",
-      "desc": "Multi-parameter time series support agronomy research and variety trials."
+      "desc": "Multi-parameter time series support agronomy research and variety trials.",
+      "img": "product/details/280-scen6.jpg"
      }
     ],
     "certifications": [
@@ -2358,31 +2378,38 @@ export const productContent ={
     "applications": [
      {
       "name": "Reservoirs and dams",
-      "desc": "Continuous water-level logging for flood control and dispatch decisions."
+      "desc": "Continuous water-level logging for flood control and dispatch decisions.",
+      "img": "solution/67-scen-0.jpg"
      },
      {
       "name": "River and hydrological stations",
-      "desc": "Remote stage monitoring along rivers and channels without mains power."
+      "desc": "Remote stage monitoring along rivers and channels without mains power.",
+      "img": "product/details/281-scen3.jpg"
      },
      {
       "name": "Water supply and drainage",
-      "desc": "Tank, clear-well and network reservoir levels for utility operation."
+      "desc": "Tank, clear-well and network reservoir levels for utility operation.",
+      "img": "product/details/281-scen1.jpg"
      },
      {
       "name": "Industrial tanks",
-      "desc": "Inventory level in power-plant and metallurgy process tanks."
+      "desc": "Inventory level in power-plant and metallurgy process tanks.",
+      "img": "product/details/287-scen3.jpg"
      },
      {
       "name": "Mine water management",
-      "desc": "Watches sump and shaft water levels for mine safety."
+      "desc": "Watches sump and shaft water levels for mine safety.",
+      "img": "product/details/281-scen7.jpg"
      },
      {
       "name": "Marine and ship applications",
-      "desc": "Ballast and bilge level monitoring with battery-powered simplicity."
+      "desc": "Ballast and bilge level monitoring with battery-powered simplicity.",
+      "img": "product/details/281-scen2.jpg"
      },
      {
       "name": "Medical wastewater",
-      "desc": "Tracks collection-tank levels at hospital wastewater stations."
+      "desc": "Tracks collection-tank levels at hospital wastewater stations.",
+      "img": "product/details/281-scen5.jpg"
      }
     ],
     "certifications": [
@@ -2603,7 +2630,8 @@ export const productContent ={
     "applications": [
      {
       "name": "Slope stability monitoring",
-      "desc": "Supports earlier identification of abnormal slope movement on highways, open-pit mines, and cut embankments."
+      "desc": "Supports earlier identification of abnormal slope movement on highways, open-pit mines, and cut embankments.",
+      "img": "product/details/281-scen7.jpg"
      },
      {
       "name": "Railway infrastructure",
@@ -2615,7 +2643,8 @@ export const productContent ={
      },
      {
       "name": "Bridge deformation",
-      "desc": "Measures pier tilt, girder rotation and bearing displacement for bridge health monitoring."
+      "desc": "Measures pier tilt, girder rotation and bearing displacement for bridge health monitoring.",
+      "img": "product/details/282-scen1.jpg"
      },
      {
       "name": "Metro and subway structures",
@@ -2627,15 +2656,18 @@ export const productContent ={
      },
      {
       "name": "Sea dikes and dams",
-      "desc": "Continuous inclination monitoring of embankment dams, sea walls and reservoir slopes."
+      "desc": "Continuous inclination monitoring of embankment dams, sea walls and reservoir slopes.",
+      "img": "solution/67-scen-0.jpg"
      },
      {
       "name": "Heritage buildings and ancient pagodas",
-      "desc": "Non-invasive tilt tracking for protected historic structures where drilling is not permitted."
+      "desc": "Non-invasive tilt tracking for protected historic structures where drilling is not permitted.",
+      "img": "product/details/282-scen4.jpg"
      },
      {
       "name": "Tree tilt monitoring",
-      "desc": "Detects root failure and lean progression in urban trees ahead of typhoon season."
+      "desc": "Detects root failure and lean progression in urban trees ahead of typhoon season.",
+      "img": "product/details/280-scen3.jpg"
      },
      {
       "name": "Street light poles",
@@ -2643,7 +2675,8 @@ export const productContent ={
      },
      {
       "name": "Transmission towers",
-      "desc": "Monitors foundation settlement and tower inclination on power transmission lines."
+      "desc": "Monitors foundation settlement and tower inclination on power transmission lines.",
+      "img": "product/details/282-scen3.jpg"
      },
      {
       "name": "Telecom towers",
@@ -2651,7 +2684,8 @@ export const productContent ={
      },
      {
       "name": "Warehouse racking",
-      "desc": "Detects rack upright deflection from forklift impact, supporting earlier intervention before damage escalates."
+      "desc": "Detects rack upright deflection from forklift impact, supporting earlier intervention before damage escalates.",
+      "img": "product/details/282-scen2.jpg"
      }
     ],
     "faqs": [
@@ -2862,27 +2896,33 @@ export const productContent ={
     "applications": [
      {
       "name": "Manhole cover monitoring",
-      "desc": "Detects cover displacement and abnormal distance readings for municipal safety."
+      "desc": "Detects cover displacement and abnormal distance readings for municipal safety.",
+      "img": "product/details/283-scen1.jpg"
      },
      {
       "name": "Grain silo level",
-      "desc": "Measures material surface distance to compute fill level in grain silos."
+      "desc": "Measures material surface distance to compute fill level in grain silos.",
+      "img": "product/details/283-scen2.jpg"
      },
      {
       "name": "Coal mine bunkers",
-      "desc": "Monitors coal bunker fill height in dusty, humid underground conditions."
+      "desc": "Monitors coal bunker fill height in dusty, humid underground conditions.",
+      "img": "product/details/283-scen3.jpg"
      },
      {
       "name": "Water and wastewater plants",
-      "desc": "Open-channel and tank distance measurement for level control."
+      "desc": "Open-channel and tank distance measurement for level control.",
+      "img": "product/details/283-scen4.jpg"
      },
      {
       "name": "Chemical plant inventory",
-      "desc": "Non-contact distance measurement over corrosive or sealed tanks."
+      "desc": "Non-contact distance measurement over corrosive or sealed tanks.",
+      "img": "product/details/283-scen5.jpg"
      },
      {
       "name": "Smart building and logistics",
-      "desc": "Occupancy, dock and pallet-position distance sensing in facilities."
+      "desc": "Occupancy, dock and pallet-position distance sensing in facilities.",
+      "img": "product/details/283-scen7.jpg"
      }
     ],
     "certifications": [
@@ -3081,27 +3121,33 @@ export const productContent ={
     "applications": [
      {
       "name": "Industrial rotating equipment",
-      "desc": "Pumps, fans, motors, and compressors get continuous vibration trending that supports condition-based maintenance."
+      "desc": "Pumps, fans, motors, and compressors get continuous vibration trending that supports condition-based maintenance.",
+      "img": "product/details/284-scen2.jpg"
      },
      {
       "name": "Semiconductor facilities",
-      "desc": "Monitors vibration-sensitive process tools and clean-room equipment."
+      "desc": "Monitors vibration-sensitive process tools and clean-room equipment.",
+      "img": "product/details/284-scen1.jpg"
      },
      {
       "name": "Harbor and port machinery",
-      "desc": "Tracks crane and conveyor vibration for safe port operation."
+      "desc": "Tracks crane and conveyor vibration for safe port operation.",
+      "img": "product/details/284-scen3.jpg"
      },
      {
       "name": "Building and structural health",
-      "desc": "Watches structural response of buildings near construction or heavy traffic."
+      "desc": "Watches structural response of buildings near construction or heavy traffic.",
+      "img": "product/details/284-scen5.jpg"
      },
      {
       "name": "Energy installations",
-      "desc": "Monitors turbines, generators and transformers for abnormal vibration signatures."
+      "desc": "Monitors turbines, generators and transformers for abnormal vibration signatures.",
+      "img": "product/details/284-scen4.jpg"
      },
      {
       "name": "Logistics and transportation",
-      "desc": "Shock and vibration recording for sensitive goods in transit."
+      "desc": "Shock and vibration recording for sensitive goods in transit.",
+      "img": "product/details/284-scen6.jpg"
      }
     ],
     "certifications": [
@@ -3329,27 +3375,33 @@ export const productContent ={
     "applications": [
      {
       "name": "Smart city air monitoring",
-      "desc": "Grid-deployed micro stations track urban air quality trends block by block."
+      "desc": "Grid-deployed micro stations track urban air quality trends block by block.",
+      "img": "product/details/285-scen2.jpg"
      },
      {
       "name": "Office and school buildings",
-      "desc": "CO₂ and humidity readings can inform ventilation decisions when integrated with a supported control system."
+      "desc": "CO₂ and humidity readings can inform ventilation decisions when integrated with a supported control system.",
+      "img": "product/details/285-scen1.jpg"
      },
      {
       "name": "Hospitals",
-      "desc": "Watches ward and clinic air conditions where vulnerable people gather."
+      "desc": "Watches ward and clinic air conditions where vulnerable people gather.",
+      "img": "product/details/285-scen3.jpg"
      },
      {
       "name": "Data centers",
-      "desc": "Combines temperature, humidity and pressure for environmental compliance logging."
+      "desc": "Combines temperature, humidity and pressure for environmental compliance logging.",
+      "img": "product/details/285-scen6.jpg"
      },
      {
       "name": "Industrial parks",
-      "desc": "Fence-line monitoring of park air to spot abnormal emissions early."
+      "desc": "Fence-line monitoring of park air to spot abnormal emissions early.",
+      "img": "product/details/285-scen7.jpg"
      },
      {
       "name": "Transportation hubs",
-      "desc": "Air quality visibility in stations, tunnels and parking structures."
+      "desc": "Air quality visibility in stations, tunnels and parking structures.",
+      "img": "product/details/285-scen4.jpg"
      }
     ],
     "certifications": [
@@ -3573,31 +3625,38 @@ export const productContent ={
     "applications": [
      {
       "name": "Smart parks and campuses",
-      "desc": "One rooftop gateway can collect data from many sensors across a site."
+      "desc": "One rooftop gateway can collect data from many sensors across a site.",
+      "img": "product/details/275-scen2.jpg"
      },
      {
       "name": "Smart water networks",
-      "desc": "Aggregates meter and level sensor traffic across a service area."
+      "desc": "Aggregates meter and level sensor traffic across a service area.",
+      "img": "product/details/275-scen3.jpg"
      },
      {
       "name": "New energy sites",
-      "desc": "Covers solar farms and wind sites with long-range sensor backhaul."
+      "desc": "Covers solar farms and wind sites with long-range sensor backhaul.",
+      "img": "product/details/275-scen1.jpg"
      },
      {
       "name": "Industrial automation",
-      "desc": "Plant-wide sensor collection without per-sensor SIM cards."
+      "desc": "Plant-wide sensor collection without per-sensor SIM cards.",
+      "img": "product/details/275-scen4.jpg"
      },
      {
       "name": "Environmental monitoring",
-      "desc": "River, air and noise sensor networks over wide rural areas."
+      "desc": "River, air and noise sensor networks over wide rural areas.",
+      "img": "product/details/275-scen5.jpg"
      },
      {
       "name": "Smart city lighting and assets",
-      "desc": "City-block-scale coverage for municipal sensor networks."
+      "desc": "City-block-scale coverage for municipal sensor networks.",
+      "img": "product/details/275-scen6.jpg"
      },
      {
       "name": "Logistics yards",
-      "desc": "Yard-wide tracking and condition sensors through a single gateway."
+      "desc": "Yard-wide tracking and condition sensors through a single gateway.",
+      "img": "product/details/275-scen8.jpg"
      }
     ],
     "certifications": [
@@ -3817,27 +3876,33 @@ export const productContent ={
     "applications": [
      {
       "name": "Building management",
-      "desc": "Collects HVAC, metering and environment sensors across floors from a comms room."
+      "desc": "Collects HVAC, metering and environment sensors across floors from a comms room.",
+      "img": "product/details/276-scen1.jpg"
      },
      {
       "name": "Energy management",
-      "desc": "Aggregates sub-metering sensor traffic for factory and building energy audits."
+      "desc": "Aggregates sub-metering sensor traffic for factory and building energy audits.",
+      "img": "product/details/276-scen2.jpg"
      },
      {
       "name": "Logistics and warehousing",
-      "desc": "In-warehouse sensor collection for temperature, door and asset beacons."
+      "desc": "In-warehouse sensor collection for temperature, door and asset beacons.",
+      "img": "product/details/276-scen3.jpg"
      },
      {
       "name": "Industrial facilities",
-      "desc": "Shop-floor sensor networks without running data cables."
+      "desc": "Shop-floor sensor networks without running data cables.",
+      "img": "product/details/276-scen4.jpg"
      },
      {
       "name": "Water management",
-      "desc": "Pump-room and tank-level sensor aggregation inside utility buildings."
+      "desc": "Pump-room and tank-level sensor aggregation inside utility buildings.",
+      "img": "product/details/276-scen6.jpg"
      },
      {
       "name": "Transportation facilities",
-      "desc": "Sensor collection inside stations, tunnels and depots."
+      "desc": "Sensor collection inside stations, tunnels and depots.",
+      "img": "product/details/276-scen7.jpg"
      }
     ],
     "certifications": [
@@ -4031,15 +4096,18 @@ export const productContent ={
      },
      {
       "name": "Reservoir and lake management",
-      "desc": "Multi-parameter hydrology logging for dispatch and safety."
+      "desc": "Multi-parameter hydrology logging for dispatch and safety.",
+      "img": "solution/67-scen-0.jpg"
      },
      {
       "name": "Urban waterlogging watch",
-      "desc": "Rainfall plus level monitoring at flood-prone urban points."
+      "desc": "Rainfall plus level monitoring at flood-prone urban points.",
+      "img": "product/details/277-scen3.jpg"
      },
      {
       "name": "Smart agriculture",
-      "desc": "Irrigation district water and weather channels in one station."
+      "desc": "Irrigation district water and weather channels in one station.",
+      "img": "product/details/277-scen1.jpg"
      },
      {
       "name": "Environmental monitoring",
@@ -4047,15 +4115,18 @@ export const productContent ={
      },
      {
       "name": "Mountain torrent warning",
-      "desc": "Remote solar stations in mountainous catchments feed early-warning systems."
+      "desc": "Remote solar stations in mountainous catchments feed early-warning systems.",
+      "img": "product/details/277-scen2.jpg"
      },
      {
       "name": "Coastal and estuary sites",
-      "desc": "Tide and weather channels for coastal management."
+      "desc": "Tide and weather channels for coastal management.",
+      "img": "product/details/277-scen6.jpg"
      },
      {
       "name": "Emergency management",
-      "desc": "Rapidly deployed stations supply data during flood seasons."
+      "desc": "Rapidly deployed stations supply data during flood seasons.",
+      "img": "product/details/277-scen7.jpg"
      }
     ],
     "certifications": [
@@ -4241,31 +4312,38 @@ export const productContent ={
     "applications": [
      {
       "name": "Smart agriculture",
-      "desc": "Field weather drives irrigation, spraying windows and disease-warning models."
+      "desc": "Field weather drives irrigation, spraying windows and disease-warning models.",
+      "img": "product/details/278-scen1.jpg"
      },
      {
       "name": "Environmental monitoring",
-      "desc": "Long-term climate series for watershed and ecological programs."
+      "desc": "Long-term climate series for watershed and ecological programs.",
+      "img": "product/details/278-scen2.jpg"
      },
      {
       "name": "Smart campuses and schools",
-      "desc": "Campus weather for teaching, safety and facility management."
+      "desc": "Campus weather for teaching, safety and facility management.",
+      "img": "product/details/278-scen4.jpg"
      },
      {
       "name": "Urban management",
-      "desc": "Microclimate monitoring for city services and heat-island studies."
+      "desc": "Microclimate monitoring for city services and heat-island studies.",
+      "img": "product/details/278-scen5.jpg"
      },
      {
       "name": "Coastal and marine sites",
-      "desc": "Wind and pressure channels for coastal operation safety."
+      "desc": "Wind and pressure channels for coastal operation safety.",
+      "img": "product/details/278-scen3.jpg"
      },
      {
       "name": "Transportation and shipping",
-      "desc": "Local weather at ports, airports and highway sections."
+      "desc": "Local weather at ports, airports and highway sections.",
+      "img": "product/details/278-scen7.jpg"
      },
      {
       "name": "Emergency management",
-      "desc": "Deployable stations feed decision systems during severe weather."
+      "desc": "Deployable stations feed decision systems during severe weather.",
+      "img": "product/details/278-scen6.jpg"
      }
     ],
     "certifications": [
@@ -4462,19 +4540,23 @@ export const productContent ={
     "applications": [
      {
       "name": "Petrochemical plants",
-      "desc": "One device watches both process temperature and pressure in hazardous areas."
+      "desc": "One device watches both process temperature and pressure in hazardous areas.",
+      "img": "product/details/286-scen3.jpg"
      },
      {
       "name": "Oil and gas extraction",
-      "desc": "Wellhead and gathering-line monitoring without cabling in explosive atmospheres."
+      "desc": "Wellhead and gathering-line monitoring without cabling in explosive atmospheres.",
+      "img": "product/details/286-scen1.jpg"
      },
      {
       "name": "Mining operations",
-      "desc": "Temperature and pressure trending in gas-risk underground areas."
+      "desc": "Temperature and pressure trending in gas-risk underground areas.",
+      "img": "product/details/286-scen2.jpg"
      },
      {
       "name": "Chemical storage parks",
-      "desc": "Dual-parameter monitoring of storage and transfer equipment."
+      "desc": "Dual-parameter monitoring of storage and transfer equipment.",
+      "img": "product/details/283-scen5.jpg"
      }
     ],
     "certifications": [
@@ -4618,19 +4700,23 @@ export const productContent ={
     "applications": [
      {
       "name": "Oil and gas extraction",
-      "desc": "Couples wireless sensor signals out of wellhead hazardous zones."
+      "desc": "Couples wireless sensor signals out of wellhead hazardous zones.",
+      "img": "product/details/287-scen1.jpg"
      },
      {
       "name": "Chemical plants",
-      "desc": "Bridges wireless links between hazardous and safe areas without penetrating barriers."
+      "desc": "Bridges wireless links between hazardous and safe areas without penetrating barriers.",
+      "img": "product/details/287-scen3.jpg"
      },
      {
       "name": "Mining",
-      "desc": "Signal coupling path for underground wireless sensor networks in hazardous areas."
+      "desc": "Signal coupling path for underground wireless sensor networks in hazardous areas.",
+      "img": "product/details/287-scen2.jpg"
      },
      {
       "name": "Tank farms and terminals",
-      "desc": "Safe signal coupling across dike and zone boundaries."
+      "desc": "Safe signal coupling across dike and zone boundaries.",
+      "img": "product/details/283-scen5.jpg"
      }
     ],
     "certifications": [
@@ -4818,11 +4904,13 @@ export const productContent ={
     "applications": [
      {
       "name": "Data centers and server rooms",
-      "desc": "Tracks temperature and humidity at rack level to keep IT equipment within ASHRAE envelopes."
+      "desc": "Tracks temperature and humidity at rack level to keep IT equipment within ASHRAE envelopes.",
+      "img": "product/details/270-scen3.jpg"
      },
      {
       "name": "Medical and pharmaceutical storage",
-      "desc": "Monitors pharmacies, cold storage and wards where humidity affects drug stability."
+      "desc": "Monitors pharmacies, cold storage and wards where humidity affects drug stability.",
+      "img": "product/details/270-scen4.jpg"
      },
      {
       "name": "Museums and archives",
@@ -4830,19 +4918,23 @@ export const productContent ={
      },
      {
       "name": "Food processing and storage",
-      "desc": "Tracks humidity in processing halls and warehouses, alerting staff to conditions that can lead to mold and condensation."
+      "desc": "Tracks humidity in processing halls and warehouses, alerting staff to conditions that can lead to mold and condensation.",
+      "img": "product/details/270-scen5.jpg"
      },
      {
       "name": "Electrical cabinets and enclosures",
-      "desc": "Cable-mounted probe reaches inside cabinets to warn of condensation before corrosion starts."
+      "desc": "Cable-mounted probe reaches inside cabinets to warn of condensation before corrosion starts.",
+      "img": "product/details/285-scen7.jpg"
      },
      {
       "name": "Greenhouses",
-      "desc": "Combines temperature and humidity trends for ventilation and irrigation decisions."
+      "desc": "Combines temperature and humidity trends for ventilation and irrigation decisions.",
+      "img": "product/details/270-scen2.jpg"
      },
      {
       "name": "Offices and hospitals",
-      "desc": "Keeps indoor air comfort and hygiene within target ranges in public buildings."
+      "desc": "Keeps indoor air comfort and hygiene within target ranges in public buildings.",
+      "img": "product/details/285-scen1.jpg"
      }
     ],
     "certifications": [
@@ -5023,27 +5115,33 @@ export const productContent ={
     "applications": [
      {
       "name": "Cold chain transport",
-      "desc": "Trip-level temperature records for refrigerated trucks, reefer containers and last-mile boxes."
+      "desc": "Trip-level temperature records for refrigerated trucks, reefer containers and last-mile boxes.",
+      "img": "product/details/285-scen4.jpg"
      },
      {
       "name": "Pharmaceutical distribution",
-      "desc": "Audit-ready PDF/CSV evidence for vaccine, insulin and biologics shipments."
+      "desc": "Audit-ready PDF/CSV evidence for vaccine, insulin and biologics shipments.",
+      "img": "product/details/270-scen4.jpg"
      },
      {
       "name": "Food processing and storage",
-      "desc": "HACCP-friendly logging in processing halls, cold stores and display cabinets."
+      "desc": "HACCP-friendly logging in processing halls, cold stores and display cabinets.",
+      "img": "product/details/270-scen5.jpg"
      },
      {
       "name": "Hospitals and laboratories",
-      "desc": "Fridge, freezer and incubator logging for compliance checks."
+      "desc": "Fridge, freezer and incubator logging for compliance checks.",
+      "img": "product/details/285-scen3.jpg"
      },
      {
       "name": "Warehousing",
-      "desc": "Long-term ambient logging in bonded and general warehouses."
+      "desc": "Long-term ambient logging in bonded and general warehouses.",
+      "img": "product/details/276-scen3.jpg"
      },
      {
       "name": "Data centers and archives",
-      "desc": "Placement logging for rooms where wireless uplink is not required."
+      "desc": "Placement logging for rooms where wireless uplink is not required.",
+      "img": "product/details/285-scen6.jpg"
      }
     ],
     "certifications": [
@@ -5230,27 +5328,33 @@ export const productContent ={
     "applications": [
      {
       "name": "Paint shops and coating lines",
-      "desc": "Continuous TVOC tracking where solvents evaporate during spraying and curing."
+      "desc": "Continuous TVOC tracking where solvents evaporate during spraying and curing.",
+      "img": "product/details/283-scen6.jpg"
      },
      {
       "name": "Chemical storage areas",
-      "desc": "Early warning of vapor build-up around drums, tanks and cabinets."
+      "desc": "Early warning of vapor build-up around drums, tanks and cabinets.",
+      "img": "product/details/283-scen5.jpg"
      },
      {
       "name": "Laboratories",
-      "desc": "Fume-hood and room TVOC monitoring for researcher safety."
+      "desc": "Fume-hood and room TVOC monitoring for researcher safety.",
+      "img": "product/details/274-scen5.jpg"
      },
      {
       "name": "Printing and packaging plants",
-      "desc": "Solvent vapor monitoring near presses and laminators."
+      "desc": "Solvent vapor monitoring near presses and laminators.",
+      "img": "product/details/285-scen7.jpg"
      },
      {
       "name": "Indoor air quality programs",
-      "desc": "TVOC as the headline indicator for building health audits."
+      "desc": "TVOC as the headline indicator for building health audits.",
+      "img": "product/details/285-scen1.jpg"
      },
      {
       "name": "Wastewater and refuse facilities",
-      "desc": "Odor-related VOC trend monitoring at treatment plants."
+      "desc": "Odor-related VOC trend monitoring at treatment plants.",
+      "img": "product/details/283-scen4.jpg"
      }
     ],
     "certifications": [
@@ -5434,15 +5538,18 @@ export const productContent ={
     "applications": [
      {
       "name": "Pallet and crate pooling",
-      "desc": "Returnable transport items stay visible across suppliers, plants and warehouses."
+      "desc": "Returnable transport items stay visible across suppliers, plants and warehouses.",
+      "img": "product/details/276-scen3.jpg"
      },
      {
       "name": "Tool and equipment tracking",
-      "desc": "Find shared tools and portable equipment across large sites."
+      "desc": "Find shared tools and portable equipment across large sites.",
+      "img": "product/details/285-scen7.jpg"
      },
      {
       "name": "Logistics fleets",
-      "desc": "Position and geofence alerts for trailers, containers and dollies."
+      "desc": "Position and geofence alerts for trailers, containers and dollies.",
+      "img": "product/details/285-scen4.jpg"
      },
      {
       "name": "Construction sites",
@@ -5450,11 +5557,13 @@ export const productContent ={
      },
      {
       "name": "Utilities and municipal assets",
-      "desc": "Watches mobile pumps, valves and service equipment in the field."
+      "desc": "Watches mobile pumps, valves and service equipment in the field.",
+      "img": "product/details/283-scen4.jpg"
      },
      {
       "name": "Rental equipment",
-      "desc": "Locate rented machines and detect unauthorized movement."
+      "desc": "Locate rented machines and detect unauthorized movement.",
+      "img": "product/details/284-scen2.jpg"
      }
     ],
     "certifications": [
@@ -5637,27 +5746,33 @@ export const productContent ={
     "applications": [
      {
       "name": "Coal mines",
-      "desc": "CH₄ and CO monitoring underground where wired gas systems are hard to extend."
+      "desc": "CH₄ and CO monitoring underground where wired gas systems are hard to extend.",
+      "img": "product/details/283-scen3.jpg"
      },
      {
       "name": "Chemical plants",
-      "desc": "Point monitoring of process-specific gases along production and storage areas."
+      "desc": "Point monitoring of process-specific gases along production and storage areas.",
+      "img": "product/details/283-scen5.jpg"
      },
      {
       "name": "Water and wastewater plants",
-      "desc": "H₂S detection in wet wells, screens and sludge rooms."
+      "desc": "H₂S detection in wet wells, screens and sludge rooms.",
+      "img": "product/details/283-scen4.jpg"
      },
      {
       "name": "Cold storage and refrigeration",
-      "desc": "NH₃ leak detection for ammonia refrigeration plants."
+      "desc": "NH₃ leak detection for ammonia refrigeration plants.",
+      "img": "product/details/270-scen5.jpg"
      },
      {
       "name": "Manholes and confined spaces",
-      "desc": "Pre-entry and continuous gas checks in municipal confined spaces."
+      "desc": "Pre-entry and continuous gas checks in municipal confined spaces.",
+      "img": "product/details/283-scen1.jpg"
      },
      {
       "name": "Semiconductor and labs",
-      "desc": "Specialty gas leak monitoring tailored to the exact gas in use."
+      "desc": "Specialty gas leak monitoring tailored to the exact gas in use.",
+      "img": "product/details/274-scen2.jpg"
      }
     ],
     "certifications": [
@@ -7200,31 +7315,38 @@ export const productContent ={
     "applications": [
      {
       "name": "数据中心与机房",
-      "desc": "跟踪机柜进风与室温，防止过热宕机。"
+      "desc": "跟踪机柜进风与室温，防止过热宕机。",
+      "img": "product/details/270-scen3.jpg"
      },
      {
       "name": "冷库与食品加工",
-      "desc": "让冷库、速冻与加工线保持在安全温度区间，满足 HACCP 要求。"
+      "desc": "让冷库、速冻与加工线保持在安全温度区间，满足 HACCP 要求。",
+      "img": "product/details/270-scen5.jpg"
      },
      {
       "name": "医药与实验室",
-      "desc": "看守存放疫苗、血液与试剂的冰箱、培养箱和洁净室。"
+      "desc": "看守存放疫苗、血液与试剂的冰箱、培养箱和洁净室。",
+      "img": "product/details/270-scen4.jpg"
      },
      {
       "name": "大棚与畜禽养殖",
-      "desc": "监测棚室温度，服务作物产量与动物福利。"
+      "desc": "监测棚室温度，服务作物产量与动物福利。",
+      "img": "product/details/270-scen2.jpg"
      },
      {
       "name": "工业过程监测",
-      "desc": "测量产线管路、锅炉与设备表面温度。"
+      "desc": "测量产线管路、锅炉与设备表面温度。",
+      "img": "product/details/270-scen6.jpg"
      },
      {
       "name": "能源设施",
-      "desc": "监测变压器、电池室与变电站机柜的过温风险。"
+      "desc": "监测变压器、电池室与变电站机柜的过温风险。",
+      "img": "product/details/270-scen1.jpg"
      },
      {
       "name": "公共场馆",
-      "desc": "监测游乐园等人流密集场所的室内温度。"
+      "desc": "监测游乐园等人流密集场所的室内温度。",
+      "img": "product/details/270-scen7.jpg"
      }
     ],
     "certifications": [
@@ -7427,31 +7549,38 @@ export const productContent ={
     "applications": [
      {
       "name": "供水与泵站",
-      "desc": "监测管网压力，尽早发现爆管、渗漏与水泵故障。"
+      "desc": "监测管网压力，尽早发现爆管、渗漏与水泵故障。",
+      "img": "product/details/281-scen1.jpg"
      },
      {
       "name": "化工园区",
-      "desc": "在改造成本高的场合替代有线变送器，跟踪工艺管线压力。"
+      "desc": "在改造成本高的场合替代有线变送器，跟踪工艺管线压力。",
+      "img": "product/details/274-scen1.jpg"
      },
      {
       "name": "楼宇二次供水",
-      "desc": "监测高层增压泵与立管压力。"
+      "desc": "监测高层增压泵与立管压力。",
+      "img": "product/details/274-scen3.jpg"
      },
      {
       "name": "半导体工厂",
-      "desc": "以稳定低漂移读数监测特气与动力管线。"
+      "desc": "以稳定低漂移读数监测特气与动力管线。",
+      "img": "product/details/274-scen2.jpg"
      },
      {
       "name": "工业液压",
-      "desc": "跟踪液压机与设备压力曲线，服务预测性维护。"
+      "desc": "跟踪液压机与设备压力曲线，服务预测性维护。",
+      "img": "product/details/274-scen4.jpg"
      },
      {
       "name": "储罐容器",
-      "desc": "压位结合，服务库存与安全控制。"
+      "desc": "压位结合，服务库存与安全控制。",
+      "img": "product/details/287-scen3.jpg"
      },
      {
       "name": "地质勘探",
-      "desc": "电池供电的远程钻孔压力记录，无需布线。"
+      "desc": "电池供电的远程钻孔压力记录，无需布线。",
+      "img": "product/details/274-scen8.jpg"
      }
     ],
     "certifications": [
@@ -7647,27 +7776,33 @@ export const productContent ={
     "applications": [
      {
       "name": "农田灌溉调度",
-      "desc": "土壤水分趋势指导何时灌、灌多少，减少水资源浪费。"
+      "desc": "土壤水分趋势指导何时灌、灌多少，减少水资源浪费。",
+      "img": "product/details/280-scen1.jpg"
      },
      {
       "name": "大棚水肥一体化",
-      "desc": "EC 与 NPK 读数指导施肥量，让养分留在根区而不是流失。"
+      "desc": "EC 与 NPK 读数指导施肥量，让养分留在根区而不是流失。",
+      "img": "product/details/280-scen2.jpg"
      },
      {
       "name": "城市园林",
-      "desc": "监测草坪与树坑土壤墒情，服务市政绿化养护。"
+      "desc": "监测草坪与树坑土壤墒情，服务市政绿化养护。",
+      "img": "product/details/280-scen3.jpg"
      },
      {
       "name": "土壤污染与修复跟踪",
-      "desc": "连续 pH 与电导率记录标记污染扩散并验证修复进度。"
+      "desc": "连续 pH 与电导率记录标记污染扩散并验证修复进度。",
+      "img": "product/details/280-scen4.jpg"
      },
      {
       "name": "林草健康",
-      "desc": "长期埋设探头在树冠可见衰退前捕捉土壤干旱胁迫。"
+      "desc": "长期埋设探头在树冠可见衰退前捕捉土壤干旱胁迫。",
+      "img": "product/details/280-scen5.jpg"
      },
      {
       "name": "科研与田间试验",
-      "desc": "多参数时间序列支撑农艺研究与品种试验。"
+      "desc": "多参数时间序列支撑农艺研究与品种试验。",
+      "img": "product/details/280-scen6.jpg"
      }
     ],
     "certifications": [
@@ -7873,31 +8008,38 @@ export const productContent ={
     "applications": [
      {
       "name": "水库与大坝",
-      "desc": "连续水位记录，服务防汛调度决策。"
+      "desc": "连续水位记录，服务防汛调度决策。",
+      "img": "solution/67-scen-0.jpg"
      },
      {
       "name": "河道水文站",
-      "desc": "无市电的远程河道水位监测。"
+      "desc": "无市电的远程河道水位监测。",
+      "img": "product/details/281-scen3.jpg"
      },
      {
       "name": "供排水系统",
-      "desc": "水塔、清水池与管网水库液位，服务水务运营。"
+      "desc": "水塔、清水池与管网水库液位，服务水务运营。",
+      "img": "product/details/281-scen1.jpg"
      },
      {
       "name": "工业储罐",
-      "desc": "电厂、冶金工艺罐的库存液位。"
+      "desc": "电厂、冶金工艺罐的库存液位。",
+      "img": "product/details/287-scen3.jpg"
      },
      {
       "name": "矿山涌水管理",
-      "desc": "监测水仓与井下水位，服务矿山安全。"
+      "desc": "监测水仓与井下水位，服务矿山安全。",
+      "img": "product/details/281-scen7.jpg"
      },
      {
       "name": "船舶与海洋",
-      "desc": "压载舱与舱底液位监测，电池供电免布线。"
+      "desc": "压载舱与舱底液位监测，电池供电免布线。",
+      "img": "product/details/281-scen2.jpg"
      },
      {
       "name": "医疗废水",
-      "desc": "跟踪医院废水站集水池液位。"
+      "desc": "跟踪医院废水站集水池液位。",
+      "img": "product/details/281-scen5.jpg"
      }
     ],
     "certifications": [
@@ -8116,7 +8258,8 @@ export const productContent ={
     "applications": [
      {
       "name": "边坡稳定性监测",
-      "desc": "在公路边坡、露天矿山和路堑堤坝失稳前，捕捉早期位移征兆。"
+      "desc": "在公路边坡、露天矿山和路堑堤坝失稳前，捕捉早期位移征兆。",
+      "img": "product/details/281-scen7.jpg"
      },
      {
       "name": "铁路基础设施",
@@ -8128,7 +8271,8 @@ export const productContent ={
      },
      {
       "name": "桥梁变形监测",
-      "desc": "测量桥墩倾斜、主梁转角与支座位移，服务桥梁健康监测。"
+      "desc": "测量桥墩倾斜、主梁转角与支座位移，服务桥梁健康监测。",
+      "img": "product/details/282-scen1.jpg"
      },
      {
       "name": "地铁与地下结构",
@@ -8140,15 +8284,18 @@ export const productContent ={
      },
      {
       "name": "海堤与水坝",
-      "desc": "对堤坝、海塘和水库边坡进行连续倾斜监测。"
+      "desc": "对堤坝、海塘和水库边坡进行连续倾斜监测。",
+      "img": "solution/67-scen-0.jpg"
      },
      {
       "name": "古建筑与古塔",
-      "desc": "为禁止钻孔的文物保护建筑提供无损倾斜跟踪。"
+      "desc": "为禁止钻孔的文物保护建筑提供无损倾斜跟踪。",
+      "img": "product/details/282-scen4.jpg"
      },
      {
       "name": "树木倾斜监测",
-      "desc": "台风季前发现城市树木根系失效与倾斜发展趋势。"
+      "desc": "台风季前发现城市树木根系失效与倾斜发展趋势。",
+      "img": "product/details/280-scen3.jpg"
      },
      {
       "name": "路灯杆监测",
@@ -8156,7 +8303,8 @@ export const productContent ={
      },
      {
       "name": "输电塔监测",
-      "desc": "监测输电线路铁塔的基础沉降与塔身倾斜。"
+      "desc": "监测输电线路铁塔的基础沉降与塔身倾斜。",
+      "img": "product/details/282-scen3.jpg"
      },
      {
       "name": "通信塔监测",
@@ -8164,7 +8312,8 @@ export const productContent ={
      },
      {
       "name": "仓储货架监测",
-      "desc": "在叉车撞击导致垮塌前，检测货架立柱的挠度变形。"
+      "desc": "在叉车撞击导致垮塌前，检测货架立柱的挠度变形。",
+      "img": "product/details/282-scen2.jpg"
      }
     ],
     "faqs": [
@@ -8371,27 +8520,33 @@ export const productContent ={
     "applications": [
      {
       "name": "井盖监测",
-      "desc": "检测井盖位移与井内深度变化，服务市政安全。"
+      "desc": "检测井盖位移与井内深度变化，服务市政安全。",
+      "img": "product/details/283-scen1.jpg"
      },
      {
       "name": "粮仓料位",
-      "desc": "测量粮面距离换算料位，掌握库存。"
+      "desc": "测量粮面距离换算料位，掌握库存。",
+      "img": "product/details/283-scen2.jpg"
      },
      {
       "name": "煤矿煤仓",
-      "desc": "在粉尘潮湿的井下环境监测煤仓装填高度。"
+      "desc": "在粉尘潮湿的井下环境监测煤仓装填高度。",
+      "img": "product/details/283-scen3.jpg"
      },
      {
       "name": "水厂与污水厂",
-      "desc": "明渠与水池的距离测量，服务液位控制。"
+      "desc": "明渠与水池的距离测量，服务液位控制。",
+      "img": "product/details/283-scen4.jpg"
      },
      {
       "name": "化工罐区",
-      "desc": "对腐蚀性或密闭罐体做非接触式测距。"
+      "desc": "对腐蚀性或密闭罐体做非接触式测距。",
+      "img": "product/details/283-scen5.jpg"
      },
      {
       "name": "楼宇与物流",
-      "desc": "场景占位、月台与托盘位置的测距感知。"
+      "desc": "场景占位、月台与托盘位置的测距感知。",
+      "img": "product/details/283-scen7.jpg"
      }
     ],
     "certifications": [
@@ -8586,27 +8741,33 @@ export const productContent ={
     "applications": [
      {
       "name": "工业旋转设备",
-      "desc": "为泵、风机、电机与压缩机提供连续振动趋势，服务预测性维护。"
+      "desc": "为泵、风机、电机与压缩机提供连续振动趋势，服务预测性维护。",
+      "img": "product/details/284-scen2.jpg"
      },
      {
       "name": "半导体设施",
-      "desc": "监测对振动敏感的工艺设备与洁净室装置。"
+      "desc": "监测对振动敏感的工艺设备与洁净室装置。",
+      "img": "product/details/284-scen1.jpg"
      },
      {
       "name": "港口机械",
-      "desc": "跟踪吊机与输送设备振动，保障港口作业安全。"
+      "desc": "跟踪吊机与输送设备振动，保障港口作业安全。",
+      "img": "product/details/284-scen3.jpg"
      },
      {
       "name": "建筑结构健康",
-      "desc": "监测邻近施工或重载交通下建筑的结构响应。"
+      "desc": "监测邻近施工或重载交通下建筑的结构响应。",
+      "img": "product/details/284-scen5.jpg"
      },
      {
       "name": "能源装置",
-      "desc": "监测汽轮机、发电机与变压器的异常振动特征。"
+      "desc": "监测汽轮机、发电机与变压器的异常振动特征。",
+      "img": "product/details/284-scen4.jpg"
      },
      {
       "name": "物流运输",
-      "desc": "为运输中的敏感货物记录冲击与振动。"
+      "desc": "为运输中的敏感货物记录冲击与振动。",
+      "img": "product/details/284-scen6.jpg"
      }
     ],
     "certifications": [
@@ -8820,27 +8981,33 @@ export const productContent ={
     "applications": [
      {
       "name": "城市空气监测",
-      "desc": "网格化布点微站，逐街区跟踪城市空气质量趋势。"
+      "desc": "网格化布点微站，逐街区跟踪城市空气质量趋势。",
+      "img": "product/details/285-scen2.jpg"
      },
      {
       "name": "办公与校园",
-      "desc": "CO₂ 与湿度读数联动通风，保障室内空气健康。"
+      "desc": "CO₂ 与湿度读数联动通风，保障室内空气健康。",
+      "img": "product/details/285-scen1.jpg"
      },
      {
       "name": "医院",
-      "desc": "监测人群脆弱区域的空气状况。"
+      "desc": "监测人群脆弱区域的空气状况。",
+      "img": "product/details/285-scen3.jpg"
      },
      {
       "name": "数据中心",
-      "desc": "温湿度与气压组合，满足环境合规记录。"
+      "desc": "温湿度与气压组合，满足环境合规记录。",
+      "img": "product/details/285-scen6.jpg"
      },
      {
       "name": "工业园区",
-      "desc": "园区厂界空气监测，尽早发现异常排放。"
+      "desc": "园区厂界空气监测，尽早发现异常排放。",
+      "img": "product/details/285-scen7.jpg"
      },
      {
       "name": "交通枢纽",
-      "desc": "车站、隧道与停车场的空气质量可视。"
+      "desc": "车站、隧道与停车场的空气质量可视。",
+      "img": "product/details/285-scen4.jpg"
      }
     ],
     "certifications": [
@@ -9061,31 +9228,38 @@ export const productContent ={
     "applications": [
      {
       "name": "智慧园区",
-      "desc": "一面楼顶网关可汇聚园区大量传感器。"
+      "desc": "一面楼顶网关可汇聚园区大量传感器。",
+      "img": "product/details/275-scen2.jpg"
      },
      {
       "name": "智慧水务",
-      "desc": "汇聚服务区内的表计与液位传感器流量。"
+      "desc": "汇聚服务区内的表计与液位传感器流量。",
+      "img": "product/details/275-scen3.jpg"
      },
      {
       "name": "新能源场站",
-      "desc": "为光伏与风电场提供长距离传感回传。"
+      "desc": "为光伏与风电场提供长距离传感回传。",
+      "img": "product/details/275-scen1.jpg"
      },
      {
       "name": "工业自动化",
-      "desc": "全厂传感器汇聚，无需为每只传感器配 SIM 卡。"
+      "desc": "全厂传感器汇聚，无需为每只传感器配 SIM 卡。",
+      "img": "product/details/275-scen4.jpg"
      },
      {
       "name": "环境监测",
-      "desc": "覆盖广域农村的河道、空气与噪声传感网络。"
+      "desc": "覆盖广域农村的河道、空气与噪声传感网络。",
+      "img": "product/details/275-scen5.jpg"
      },
      {
       "name": "智慧城市",
-      "desc": "街区级覆盖，服务市政传感网络。"
+      "desc": "街区级覆盖，服务市政传感网络。",
+      "img": "product/details/275-scen6.jpg"
      },
      {
       "name": "物流场站",
-      "desc": "单网关覆盖整场追踪与状态传感。"
+      "desc": "单网关覆盖整场追踪与状态传感。",
+      "img": "product/details/275-scen8.jpg"
      }
     ],
     "certifications": [
@@ -9302,27 +9476,33 @@ export const productContent ={
     "applications": [
      {
       "name": "楼宇管理",
-      "desc": "从弱电间汇聚全楼层的暖通、计量与环境传感器。"
+      "desc": "从弱电间汇聚全楼层的暖通、计量与环境传感器。",
+      "img": "product/details/276-scen1.jpg"
      },
      {
       "name": "能源管理",
-      "desc": "汇聚分项计量传感流量，服务工厂与楼宇能耗审计。"
+      "desc": "汇聚分项计量传感流量，服务工厂与楼宇能耗审计。",
+      "img": "product/details/276-scen2.jpg"
      },
      {
       "name": "仓储物流",
-      "desc": "库内温度、门磁与资产信标的传感汇聚。"
+      "desc": "库内温度、门磁与资产信标的传感汇聚。",
+      "img": "product/details/276-scen3.jpg"
      },
      {
       "name": "工业现场",
-      "desc": "车间传感网络免布数据线。"
+      "desc": "车间传感网络免布数据线。",
+      "img": "product/details/276-scen4.jpg"
      },
      {
       "name": "水务管理",
-      "desc": "泵房与水箱液位传感器在站房内汇聚。"
+      "desc": "泵房与水箱液位传感器在站房内汇聚。",
+      "img": "product/details/276-scen6.jpg"
      },
      {
       "name": "交通设施",
-      "desc": "车站、隧道与车辆段内部的传感汇聚。"
+      "desc": "车站、隧道与车辆段内部的传感汇聚。",
+      "img": "product/details/276-scen7.jpg"
      }
     ],
     "certifications": [
@@ -9516,15 +9696,18 @@ export const productContent ={
      },
      {
       "name": "水库湖泊管理",
-      "desc": "多参数水文记录，服务调度与安全。"
+      "desc": "多参数水文记录，服务调度与安全。",
+      "img": "solution/67-scen-0.jpg"
      },
      {
       "name": "城市内涝监视",
-      "desc": "易涝点的雨量加液位组合监测。"
+      "desc": "易涝点的雨量加液位组合监测。",
+      "img": "product/details/277-scen3.jpg"
      },
      {
       "name": "智慧农业",
-      "desc": "灌区水文与气象通道一体采集。"
+      "desc": "灌区水文与气象通道一体采集。",
+      "img": "product/details/277-scen1.jpg"
      },
      {
       "name": "环境监测",
@@ -9532,15 +9715,18 @@ export const productContent ={
      },
      {
       "name": "山洪预警",
-      "desc": "山区集水区的太阳能远程站点接入预警系统。"
+      "desc": "山区集水区的太阳能远程站点接入预警系统。",
+      "img": "product/details/277-scen2.jpg"
      },
      {
       "name": "沿海与河口",
-      "desc": "潮位与气象通道服务海岸管理。"
+      "desc": "潮位与气象通道服务海岸管理。",
+      "img": "product/details/277-scen6.jpg"
      },
      {
       "name": "应急管理",
-      "desc": "汛期快速部署站点补齐数据。"
+      "desc": "汛期快速部署站点补齐数据。",
+      "img": "product/details/277-scen7.jpg"
      }
     ],
     "certifications": [
@@ -9726,31 +9912,38 @@ export const productContent ={
     "applications": [
      {
       "name": "智慧农业",
-      "desc": "田间气象驱动灌溉、施药窗口与病害预警模型。"
+      "desc": "田间气象驱动灌溉、施药窗口与病害预警模型。",
+      "img": "product/details/278-scen1.jpg"
      },
      {
       "name": "环境监测",
-      "desc": "长期气候序列服务流域与生态项目。"
+      "desc": "长期气候序列服务流域与生态项目。",
+      "img": "product/details/278-scen2.jpg"
      },
      {
       "name": "智慧校园",
-      "desc": "校园气象服务教学、安全与设施管理。"
+      "desc": "校园气象服务教学、安全与设施管理。",
+      "img": "product/details/278-scen4.jpg"
      },
      {
       "name": "城市管理",
-      "desc": "微气候监测服务市政与热岛研究。"
+      "desc": "微气候监测服务市政与热岛研究。",
+      "img": "product/details/278-scen5.jpg"
      },
      {
       "name": "沿海与海洋",
-      "desc": "风与气压通道保障沿海作业安全。"
+      "desc": "风与气压通道保障沿海作业安全。",
+      "img": "product/details/278-scen3.jpg"
      },
      {
       "name": "交通运输",
-      "desc": "港口、机场与公路路段的本地气象。"
+      "desc": "港口、机场与公路路段的本地气象。",
+      "img": "product/details/278-scen7.jpg"
      },
      {
       "name": "应急管理",
-      "desc": "可部署站点在强对流天气期为决策系统供数。"
+      "desc": "可部署站点在强对流天气期为决策系统供数。",
+      "img": "product/details/278-scen6.jpg"
      }
     ],
     "certifications": [
@@ -9935,19 +10128,23 @@ export const productContent ={
     "applications": [
      {
       "name": "石油化工",
-      "desc": "单台设备在防爆区内同时看守工艺温度与压力。"
+      "desc": "单台设备在防爆区内同时看守工艺温度与压力。",
+      "img": "product/details/286-scen3.jpg"
      },
      {
       "name": "油气开采",
-      "desc": "井口与集输管线的无布线温压监测。"
+      "desc": "井口与集输管线的无布线温压监测。",
+      "img": "product/details/286-scen1.jpg"
      },
      {
       "name": "矿山作业",
-      "desc": "瓦斯风险井下区域的温压趋势监测。"
+      "desc": "瓦斯风险井下区域的温压趋势监测。",
+      "img": "product/details/286-scen2.jpg"
      },
      {
       "name": "化工仓储",
-      "desc": "储运设备的双参数监测。"
+      "desc": "储运设备的双参数监测。",
+      "img": "product/details/283-scen5.jpg"
      }
     ],
     "certifications": [
@@ -10089,19 +10286,23 @@ export const productContent ={
     "applications": [
      {
       "name": "油气开采",
-      "desc": "把无线传感信号安全耦合出井口危险区。"
+      "desc": "把无线传感信号安全耦合出井口危险区。",
+      "img": "product/details/287-scen1.jpg"
      },
      {
       "name": "化工装置",
-      "desc": "在不穿透防爆隔断的前提下桥接危险区与安全区的无线链路。"
+      "desc": "在不穿透防爆隔断的前提下桥接危险区与安全区的无线链路。",
+      "img": "product/details/287-scen3.jpg"
      },
      {
       "name": "矿山井下",
-      "desc": "为井下无线传感网络提供防爆信号通道。"
+      "desc": "为井下无线传感网络提供防爆信号通道。",
+      "img": "product/details/287-scen2.jpg"
      },
      {
       "name": "罐区与码头",
-      "desc": "跨越防火堤与防爆分区的安全信号耦合。"
+      "desc": "跨越防火堤与防爆分区的安全信号耦合。",
+      "img": "product/details/283-scen5.jpg"
      }
     ],
     "certifications": [
@@ -10287,11 +10488,13 @@ export const productContent ={
     "applications": [
      {
       "name": "数据中心与机房",
-      "desc": "机柜级温湿度跟踪，让 IT 设备保持在安全运行区间。"
+      "desc": "机柜级温湿度跟踪，让 IT 设备保持在安全运行区间。",
+      "img": "product/details/270-scen3.jpg"
      },
      {
       "name": "医药仓储",
-      "desc": "监测药房、冷库与病房——湿度直接影响药品稳定性。"
+      "desc": "监测药房、冷库与病房——湿度直接影响药品稳定性。",
+      "img": "product/details/270-scen4.jpg"
      },
      {
       "name": "博物馆与档案馆",
@@ -10299,19 +10502,23 @@ export const productContent ={
      },
      {
       "name": "食品加工与仓储",
-      "desc": "监控加工车间与库房湿度，防霉防结露。"
+      "desc": "监控加工车间与库房湿度，防霉防结露。",
+      "img": "product/details/270-scen5.jpg"
      },
      {
       "name": "电气柜与箱变",
-      "desc": "线缆式探头伸入柜内，在凝露腐蚀发生前预警。"
+      "desc": "线缆式探头伸入柜内，在凝露腐蚀发生前预警。",
+      "img": "product/details/285-scen7.jpg"
      },
      {
       "name": "农业大棚",
-      "desc": "温湿度趋势联动通风与灌溉决策。"
+      "desc": "温湿度趋势联动通风与灌溉决策。",
+      "img": "product/details/270-scen2.jpg"
      },
      {
       "name": "办公楼与医院",
-      "desc": "让公共建筑的室内舒适度与卫生指标达标。"
+      "desc": "让公共建筑的室内舒适度与卫生指标达标。",
+      "img": "product/details/285-scen1.jpg"
      }
     ],
     "certifications": [
@@ -10492,27 +10699,33 @@ export const productContent ={
     "applications": [
      {
       "name": "冷链运输",
-      "desc": "为冷藏车、冷藏集装箱与末端保温箱提供行程级温度记录。"
+      "desc": "为冷藏车、冷藏集装箱与末端保温箱提供行程级温度记录。",
+      "img": "product/details/285-scen4.jpg"
      },
      {
       "name": "医药流通",
-      "desc": "为疫苗、胰岛素与生物制品运输提供可审计的 PDF/CSV 凭证。"
+      "desc": "为疫苗、胰岛素与生物制品运输提供可审计的 PDF/CSV 凭证。",
+      "img": "product/details/270-scen4.jpg"
      },
      {
       "name": "食品加工与仓储",
-      "desc": "契合 HACCP 的加工车间、冷库与陈列柜记录。"
+      "desc": "契合 HACCP 的加工车间、冷库与陈列柜记录。",
+      "img": "product/details/270-scen5.jpg"
      },
      {
       "name": "医院与实验室",
-      "desc": "冰箱、冷柜与培养箱的合规记录。"
+      "desc": "冰箱、冷柜与培养箱的合规记录。",
+      "img": "product/details/285-scen3.jpg"
      },
      {
       "name": "仓储物流",
-      "desc": "保税仓与普通仓库的长期环境记录。"
+      "desc": "保税仓与普通仓库的长期环境记录。",
+      "img": "product/details/276-scen3.jpg"
      },
      {
       "name": "机房与档案库房",
-      "desc": "无需无线上联场合的就地记录。"
+      "desc": "无需无线上联场合的就地记录。",
+      "img": "product/details/285-scen6.jpg"
      }
     ],
     "certifications": [
@@ -10696,27 +10909,33 @@ export const productContent ={
     "applications": [
      {
       "name": "喷漆房与涂装线",
-      "desc": "在喷涂与固化溶剂挥发区域连续跟踪 TVOC。"
+      "desc": "在喷涂与固化溶剂挥发区域连续跟踪 TVOC。",
+      "img": "product/details/283-scen6.jpg"
      },
      {
       "name": "化学品仓储",
-      "desc": "对桶装、罐区与储存柜周边蒸气积聚做早期预警。"
+      "desc": "对桶装、罐区与储存柜周边蒸气积聚做早期预警。",
+      "img": "product/details/283-scen5.jpg"
      },
      {
       "name": "实验室",
-      "desc": "通风橱与室内 TVOC 监测，保障实验人员安全。"
+      "desc": "通风橱与室内 TVOC 监测，保障实验人员安全。",
+      "img": "product/details/274-scen5.jpg"
      },
      {
       "name": "印刷包装厂",
-      "desc": "印刷机与复合机周边的溶剂蒸气监测。"
+      "desc": "印刷机与复合机周边的溶剂蒸气监测。",
+      "img": "product/details/285-scen7.jpg"
      },
      {
       "name": "室内空气质量项目",
-      "desc": "TVOC 作为楼宇健康审计的核心指标。"
+      "desc": "TVOC 作为楼宇健康审计的核心指标。",
+      "img": "product/details/285-scen1.jpg"
      },
      {
       "name": "污水与固废设施",
-      "desc": "处理厂区异味相关 VOC 趋势监测。"
+      "desc": "处理厂区异味相关 VOC 趋势监测。",
+      "img": "product/details/283-scen4.jpg"
      }
     ],
     "certifications": [
@@ -10899,15 +11118,18 @@ export const productContent ={
     "applications": [
      {
       "name": "托盘与周转箱循环",
-      "desc": "可循环运输器具在供应商、工厂与仓库之间全程可视。"
+      "desc": "可循环运输器具在供应商、工厂与仓库之间全程可视。",
+      "img": "product/details/276-scen3.jpg"
      },
      {
       "name": "工装与设备追踪",
-      "desc": "在大型厂区内快速找到共享工装与便携设备。"
+      "desc": "在大型厂区内快速找到共享工装与便携设备。",
+      "img": "product/details/285-scen7.jpg"
      },
      {
       "name": "物流车队",
-      "desc": "挂车、集装箱与牵引器具的位置与围栏告警。"
+      "desc": "挂车、集装箱与牵引器具的位置与围栏告警。",
+      "img": "product/details/285-scen4.jpg"
      },
      {
       "name": "建筑工地",
@@ -10915,11 +11137,13 @@ export const productContent ={
      },
      {
       "name": "市政与公用资产",
-      "desc": "看守野外作业的移动水泵、阀门与检修设备。"
+      "desc": "看守野外作业的移动水泵、阀门与检修设备。",
+      "img": "product/details/283-scen4.jpg"
      },
      {
       "name": "租赁设备",
-      "desc": "定位出租机械并发现未经授权的移动。"
+      "desc": "定位出租机械并发现未经授权的移动。",
+      "img": "product/details/284-scen2.jpg"
      }
     ],
     "certifications": [
@@ -11100,27 +11324,33 @@ export const productContent ={
     "applications": [
      {
       "name": "煤矿井下",
-      "desc": "在有线瓦斯系统难以延伸的点位监测 CH₄ 与 CO。"
+      "desc": "在有线瓦斯系统难以延伸的点位监测 CH₄ 与 CO。",
+      "img": "product/details/283-scen3.jpg"
      },
      {
       "name": "化工园区",
-      "desc": "针对生产与储存区域的特征气体做点式监测。"
+      "desc": "针对生产与储存区域的特征气体做点式监测。",
+      "img": "product/details/283-scen5.jpg"
      },
      {
       "name": "水厂与污水厂",
-      "desc": "进水泵房、格栅间与污泥间的 H₂S 检测。"
+      "desc": "进水泵房、格栅间与污泥间的 H₂S 检测。",
+      "img": "product/details/283-scen4.jpg"
      },
      {
       "name": "冷库与制冷",
-      "desc": "氨制冷机房的 NH₃ 泄漏检测。"
+      "desc": "氨制冷机房的 NH₃ 泄漏检测。",
+      "img": "product/details/270-scen5.jpg"
      },
      {
       "name": "窨井与受限空间",
-      "desc": "市政受限空间的进入前与连续气体检测。"
+      "desc": "市政受限空间的进入前与连续气体检测。",
+      "img": "product/details/283-scen1.jpg"
      },
      {
       "name": "半导体与实验室",
-      "desc": "按在用气体定制的特种气体泄漏监测。"
+      "desc": "按在用气体定制的特种气体泄漏监测。",
+      "img": "product/details/274-scen2.jpg"
      }
     ],
     "certifications": [
