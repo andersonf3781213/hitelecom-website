@@ -40,10 +40,8 @@ for (const [id, slug] of pairs) {
 const cfLines = [
   '# Cloudflare Pages 301 重定向（本文件由 scripts/make-redirects.mjs 生成，勿手改）',
   '# 旧数字产品地址 → 语义 slug 地址；仅 CF Pages / Netlify 生效，其他平台用 deploy/ 下的配置',
-  '',
-  '# iot67.com 备用域 → 主域 301（前提：该域已作为自定义域挂在同一 Pages 项目）',
-  'https://iot67.com/* https://www.hitelecom.com/:splat 301',
-  'https://www.iot67.com/* https://www.hitelecom.com/:splat 301',
+  '# 注意：iot67.com 备用域 → 主域 301 由 functions/_middleware.js 实现',
+  '#       （Pages 的 _redirects 不支持按域名条件跳转，源只能是相对路径）',
   '',
 ];
 for (const [from, to] of redirects) cfLines.push(`${from} ${to} 301`);
