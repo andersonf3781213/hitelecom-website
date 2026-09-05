@@ -7,27 +7,29 @@
 import Img from '../Img.astro';
 import { serviceContent } from '../../data/service';
 import { site } from '../../data/site';
+import { ui } from '../../data/ui';
 import { l, type Locale } from '../../i18n';
 import { optimizedSrc } from '../../utils/images';
 
 interface Props { locale: Locale; page: 1 | 2 }
 const { locale, page } = Astro.props;
 const d = serviceContent[locale];
+const u = ui[locale];
 const banner = await optimizedSrc(d.bannerImg, { width: 1920, quality: 82 });
 const docs = page === 1 ? d.docsP1 : d.docsP2;
 const listHref = l('/service/', locale);
 const p2Href = l('/service/page/2', locale);
-const mailSubject = locale === 'zh' ? '售后服务 - ' : 'After-Sales Service - ';
+const mailSubject = u.mailSubjectService;
 const formJs = {
   mailTo: site.email,
   formEndpoint: site.formEndpoint,
   formAccessKey: site.formAccessKey,
-  thanksUrl: locale === 'zh' ? '/zh/about/thanks' : '/about/thanks',
-  msgName: locale === 'zh' ? '姓名不能为空' : 'Name cannot be empty',
-  msgPhone: locale === 'zh' ? '电话不能为空' : 'Phone cannot be empty',
-  msgEmail: locale === 'zh' ? '邮箱不能为空' : 'Email cannot be empty',
-  msgFail: locale === 'zh' ? '提交失败，请稍后再试或直接发邮件至 sales@hitelecom.cn' : 'Submission failed. Please retry or email sales@hitelecom.cn directly.',
-  labels: locale === 'zh' ? ['姓名', '电话', '邮箱', '留言'] : ['Name', 'Phone', 'Email', 'Message'],
+  thanksUrl: l('/about/thanks', locale),
+  msgName: u.formMsgName,
+  msgPhone: u.formMsgPhone,
+  msgEmail: u.formMsgEmail,
+  msgFail: u.formMsgFail,
+  labels: u.formLabels,
 };
 ---
 
@@ -149,8 +151,8 @@ const formJs = {
                 <div class="ser_3_1_mid_right_left">{doc.type}</div>
                 <div class="ser_3_1_mid_right_right">
                   <dl>
-                    <dd><a href={doc.file} target="_blank" rel="noopener">{locale === 'zh' ? '预览' : 'View'}</a></dd>
-                    <dd><a href={doc.file} download={doc.downName}>{locale === 'zh' ? '下载' : 'Download'}</a></dd>
+                    <dd><a href={doc.file} target="_blank" rel="noopener">{u.docView}</a></dd>
+                    <dd><a href={doc.file} download={doc.downName}>{u.docDownload}</a></dd>
                   </dl>
                 </div>
               </div>

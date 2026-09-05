@@ -5,7 +5,8 @@
 import { getAboutSection } from '../../data/about';
 import { enhanceContentHtml, normalizeBody } from '../../utils/content';
 import { site } from '../../data/site';
-import type { Locale } from '../../i18n';
+import { ui } from '../../data/ui';
+import { l, type Locale } from '../../i18n';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
@@ -17,15 +18,13 @@ const { locale } = Astro.props;
   mailTo: 'sales@hitelecom.cn',
   formEndpoint: site.formEndpoint,
   formAccessKey: site.formAccessKey,
-  thanksUrl: locale === 'zh' ? '/zh/about/thanks' : '/about/thanks',
-  msgName: locale === 'zh' ? '姓名不能为空' : 'Name cannot be empty',
-  msgPhone: locale === 'zh' ? '电话不能为空' : 'Phone cannot be empty',
-  msgEmail: locale === 'zh' ? '邮箱不能为空' : 'Email cannot be empty',
-  msgFail: locale === 'zh' ? '提交失败，请稍后再试或直接发邮件至 sales@hitelecom.cn' : 'Submission failed. Please retry or email sales@hitelecom.cn directly.',
-  mailSubject: locale === 'zh' ? '【合作伙伴申请】' : 'Partner Application - ',
-  labels: locale === 'zh'
-    ? ['公司名称', '姓名', '电话', '职位', '邮箱', '合作意向', '留言']
-    : ['Company', 'Name', 'Phone', 'Job Title', 'Email', 'Partnership Interest', 'Message'],
+  thanksUrl: l('/about/thanks', locale),
+  msgName: ui[locale].formMsgName,
+  msgPhone: ui[locale].formMsgPhone,
+  msgEmail: ui[locale].formMsgEmail,
+  msgFail: ui[locale].formMsgFail,
+  mailSubject: ui[locale].mailSubjectPartner,
+  labels: ui[locale].formLabelsPartner,
 }}>
 document.addEventListener('DOMContentLoaded', function () {
   var form = document.getElementById('form1');

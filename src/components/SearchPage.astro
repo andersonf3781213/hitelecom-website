@@ -5,50 +5,41 @@
  * 无 JS 时显示提示与热门入口，不产生 404。
  */
 import type { Locale } from '../i18n';
+import { ui } from '../data/ui';
+import { l } from '../i18n';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
-const zh = locale === 'zh';
+const u = ui[locale];
 
-const txt = zh
-  ? {
-      heading: '站内搜索',
-      placeholder: '输入产品、型号或关键词，如 NB-IoT、土壤、温湿度…',
-      btn: '搜索',
-      empty: '未找到相关内容，请更换关键词，或直接联系我们获取选型帮助。',
-      count: (n: number) => `共 ${n} 条结果`,
-      hint: '输入关键词开始搜索。',
-      contact: '联系我们',
-    }
-  : {
-      heading: 'Site Search',
-      placeholder: 'Search products, models or keywords, e.g. NB-IoT, soil, temperature…',
-      btn: 'Search',
-      empty: 'No results. Try another keyword, or contact us for product selection support.',
-      count: (n: number) => `${n} result${n === 1 ? '' : 's'} found`,
-      hint: 'Type a keyword to search.',
-      contact: 'Contact us',
-    };
-const pre = zh ? '/zh' : '';
+const txt = {
+  heading: u.spHeading,
+  placeholder: u.spPlaceholder,
+  btn: u.spBtn,
+  empty: u.spEmpty,
+  count: u.spCount,
+  hint: u.spHint,
+  contact: u.spContact,
+};
 ---
 
 <div class="search-page">
   <div class="search-page-in">
     <h1>{txt.heading}</h1>
-    <form class="search-page-form" method="get" action={`${pre}/search`}>
-      <input type="search" name="q" value="" placeholder={txt.placeholder} aria-label={locale === 'zh' ? '搜索产品、方案与新闻' : 'Search products, solutions and news'} autocomplete="off" id="sp-input" />
+    <form class="search-page-form" method="get" action={l('/search/', locale)}>
+      <input type="search" name="q" value="" placeholder={txt.placeholder} aria-label={u.searchAriaLabel} autocomplete="off" id="sp-input" />
       <button type="submit" class="btn-pill">{txt.btn}</button>
     </form>
     <p class="search-page-meta" id="sp-meta">{txt.hint}</p>
     <ul class="search-page-results" id="sp-results"></ul>
     <p class="search-page-empty" id="sp-empty" hidden>
       {txt.empty}
-      <a href={`${pre}/about/contact`}>{txt.contact}</a>
+      <a href={l('/about/contact', locale)}>{txt.contact}</a>
     </p>
   </div>
 </div>
 
-<script define:vars={{ zh, emptyMeta: txt.hint }}>
+<script define:vars={{ locKey: locale, emptyMeta: txt.hint, searchingTxt: u.spSearching, unavailableTxt: locale === 'zh' ? '搜索服务暂不可用，请稍后再试。' : locale === 'es' ? 'La búsqueda no está disponible temporalmente.' : 'Search is temporarily unavailable.', countOne: u.spCount(1), countMany: u.spCount(0) }}>
   const input = document.getElementById('sp-input');
   const meta = document.getElementById('sp-meta');
   const list = document.getElementById('sp-results');
@@ -65,11 +56,11 @@ const pre = zh ? '/zh' : '';
   };
 
   if (q.trim()) {
-    meta.textContent = zh ? '搜索中…' : 'Searching…';
+    meta.textContent = searchingTxt;
     fetch('/search-index.json')
       .then((r) => r.json())
       .then((idx) => {
-        const data = idx[zh ? 'zh' : 'en'] || [];
+        const data = idx[locKey] || idx.en || [];
         const kws = q.trim().toLowerCase().split(/\s+/);
         const hits = data
           .map((e) => {
@@ -84,7 +75,7 @@ const pre = zh ? '/zh' : '';
           .filter(Boolean)
           .sort((a, b) => b.score - a.score)
           .slice(0, 50);
-        meta.textContent = (zh ? (n) => `共 ${n} 条结果` : (n) => `${n} result${n === 1 ? '' : 's'} found`)(hits.length);
+        meta.textContent = hits.length === 1 ? countOne : countMany.replace('0', String(hits.length));
         emptyBox.hidden = hits.length > 0;
         list.innerHTML = hits
           .map(
@@ -99,7 +90,7 @@ const pre = zh ? '/zh' : '';
           .join('');
       })
       .catch(() => {
-        meta.textContent = zh ? '搜索服务暂不可用，请稍后再试。' : 'Search is temporarily unavailable.';
+        meta.textContent = unavailableTxt;
       });
   }
 </script>

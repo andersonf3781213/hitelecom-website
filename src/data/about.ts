@@ -9,7 +9,8 @@ import { getEntry } from 'astro:content';
  */
 
 export type AboutSection = 'intro' | 'quality' | 'partner' | 'joinus' | 'contact' | 'privacy';
-export type Locale = 'en' | 'zh';
+import type { Locale as SiteLocale } from '../i18n';
+export type Locale = SiteLocale;
 
 /** 取某语言某板块的原始 HTML 内容 */
 export async function getAboutSection(locale: Locale, section: AboutSection): Promise<string> {

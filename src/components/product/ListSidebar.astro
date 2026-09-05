@@ -5,6 +5,7 @@
  */
 import { l, type Locale } from '../../i18n';
 import { productPath, type SubCat } from '../../data/product';
+import { ui } from '../../data/ui';
 
 interface SideProd { id: number | string; name: string }
 interface Props {
@@ -26,7 +27,7 @@ const { locale, subcats, sideProds = {}, parentCid = '' } = Astro.props;
           type="text"
           name="keyword"
           id="keyword"
-          placeholder={locale === 'zh' ? '输入产品关键词' : 'Enter product keywords'}
+          placeholder={ui[locale].listSidebarPh}
           class="wbk"
         />
         <input type="submit" value="" class="wbkbtn" />

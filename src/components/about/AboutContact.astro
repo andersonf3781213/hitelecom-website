@@ -5,7 +5,8 @@
 import { getAboutSection } from '../../data/about';
 import { enhanceContentHtml, normalizeBody } from '../../utils/content';
 import { site } from '../../data/site';
-import type { Locale } from '../../i18n';
+import { ui } from '../../data/ui';
+import { l, type Locale } from '../../i18n';
 import markerImg from '../../assets/images/content/about/img49.png';
 
 interface Props { locale: Locale }
@@ -45,15 +46,13 @@ window.addEventListener('load', function () {
   mailTo: 'sales@hitelecom.cn',
   formEndpoint: site.formEndpoint,
   formAccessKey: site.formAccessKey,
-  thanksUrl: locale === 'zh' ? '/zh/about/thanks' : '/about/thanks',
-  msgName: locale === 'zh' ? '姓名不能为空' : 'Name cannot be empty',
-  msgPhone: locale === 'zh' ? '电话不能为空' : 'Phone cannot be empty',
-  msgEmail: locale === 'zh' ? '邮箱不能为空' : 'Email cannot be empty',
-  msgFail: locale === 'zh' ? '提交失败，请稍后再试或直接发邮件至 sales@hitelecom.cn' : 'Submission failed. Please retry or email sales@hitelecom.cn directly.',
-  mailSubject: locale === 'zh' ? '【在线留言】' : 'Website Feedback - ',
-  labels: locale === 'zh'
-    ? ['姓名', '电话', '邮箱', '留言']
-    : ['Name', 'Phone', 'Email', 'Message'],
+  thanksUrl: l('/about/thanks', locale),
+  msgName: ui[locale].formMsgName,
+  msgPhone: ui[locale].formMsgPhone,
+  msgEmail: ui[locale].formMsgEmail,
+  msgFail: ui[locale].formMsgFail,
+  mailSubject: ui[locale].mailSubjectContact,
+  labels: ui[locale].formLabels,
 }}>
 document.addEventListener('DOMContentLoaded', function () {
   var form = document.getElementById('form1');

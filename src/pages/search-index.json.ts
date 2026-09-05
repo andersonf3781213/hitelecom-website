@@ -5,11 +5,18 @@
  */
 import type { APIRoute } from 'astro';
 import { getMergedProducts, productContent, productPath } from '../data/product';
-import { l } from '../i18n';
+import { l, type Locale } from '../i18n';
 import { getNewsContent } from '../data/news';
 import { solutionIndex } from '../data/solution';
 
 interface Entry { t: string; d: string; u: string; c: string }
+
+/** 搜索结果分类标签（按语言） */
+const catLabels: Record<Locale, { product: string; news: string; solution: string }> = {
+  en: { product: 'Product', news: 'News', solution: 'Solution' },
+  zh: { product: '产品', news: '新闻', solution: '解决方案' },
+  es: { product: 'Producto', news: 'Noticias', solution: 'Solución' },
+};
 
 function strip(html: string): string {
   return html
@@ -22,13 +29,13 @@ function strip(html: string): string {
     .trim();
 }
 
-async function buildLocale(locale: 'en' | 'zh'): Promise<Entry[]> {
+async function buildLocale(locale: Locale): Promise<Entry[]> {
   const out: Entry[] = [];
   const seen = new Set<string>();
   const merged = await getMergedProducts(locale);
   const p = { ...productContent[locale], details: merged.details };
-  const pre = locale === 'zh' ? '/zh' : '';
-  const isZh = locale === 'zh';
+  const pre = locale === 'en' ? '' : `/${locale}`;
+  const cats = catLabels[locale];
 
   // 产品详情（优先，描述最全）
   for (const [id, det] of Object.entries(p.details)) {
@@ -38,7 +45,7 @@ async function buildLocale(locale: 'en' | 'zh'): Promise<Entry[]> {
       t: det.series,
       d: det.desc,
       u: l(productPath(id), locale),
-      c: isZh ? '产品' : 'Product',
+      c: cats.product,
     });
   }
   // 列表中有名字但无详情的卡片（定制类）不收录——没有落地页
@@ -50,7 +57,7 @@ async function buildLocale(locale: 'en' | 'zh'): Promise<Entry[]> {
       t: item.title,
       d: item.excerpt || '',
       u: `${pre}/news/show/id/${id}`,
-      c: isZh ? '新闻' : 'News',
+      c: cats.news,
     });
   }
 
@@ -60,19 +67,19 @@ async function buildLocale(locale: 'en' | 'zh'): Promise<Entry[]> {
       t: c.title,
       d: c.desc,
       u: `${pre}/solution/show/id/${c.id}`,
-      c: isZh ? '解决方案' : 'Solution',
+      c: cats.solution,
     });
   }
 
   // 云平台 / APP
-  out.push({ t: p.cloud.banner.title, d: strip(p.cloud.banner.desc), u: `${pre}/product`, c: isZh ? '产品' : 'Product' });
-  out.push({ t: p.app.banner.title, d: strip(p.app.banner.desc), u: `${pre}/product/app`, c: isZh ? '产品' : 'Product' });
+  out.push({ t: p.cloud.banner.title, d: strip(p.cloud.banner.desc), u: `${pre}/product`, c: cats.product });
+  out.push({ t: p.app.banner.title, d: strip(p.app.banner.desc), u: `${pre}/product/app`, c: cats.product });
 
   return out;
 }
 
 export const GET: APIRoute = async () =>
   new Response(
-    JSON.stringify({ en: await buildLocale('en'), zh: await buildLocale('zh') }),
+    JSON.stringify({ en: await buildLocale('en'), zh: await buildLocale('zh'), es: await buildLocale('es') }),
     { headers: { 'Content-Type': 'application/json; charset=utf-8' } },
   );

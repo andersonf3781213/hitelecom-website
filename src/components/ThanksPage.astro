@@ -4,12 +4,12 @@
  * ?sent=0 时显示失败提示（表单服务未配置/出错时的兜底）
  */
 import { site } from '../data/site';
+import { ui } from '../data/ui';
 import { l, type Locale } from '../i18n';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
-const zh = locale === 'zh';
-const pre = zh ? '/zh' : '';
+const u = ui[locale];
 ---
 
 <div class="thx-page">
@@ -17,30 +17,24 @@ const pre = zh ? '/zh' : '';
     <div class="thx-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.1V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14l-3-3"/></svg>
     </div>
-    <h1 id="thx-title">{zh ? '提交成功' : 'Thank you!'}</h1>
-    <p class="thx-desc" id="thx-desc">
-      {zh
-        ? '您的留言已收到，我们的销售工程师会尽快与您联系。'
-        : 'Your message has been received. Our sales engineers will get back to you shortly.'}
-    </p>
+    <h1 id="thx-title">{u.thxTitle}</h1>
+    <p class="thx-desc" id="thx-desc">{u.thxDesc}</p>
     <p class="thx-alt">
-      {zh ? '急需协助？直接联系：' : 'Need a faster response? Contact us directly at '}
+      {u.thxAlt}
       <a href={`mailto:${site.email}`}>{site.email}</a> · <a href={site.phoneHref}>{site.phone}</a>
     </p>
     <div class="thx-actions">
-      <a class="btn-pill" href={l('/', locale)}>{zh ? '返回首页' : 'Back to Home'}</a>
-      <a class="btn-pill ghost" href={`${pre}/product`}>{zh ? '浏览产品' : 'Browse Products'}</a>
+      <a class="btn-pill" href={l('/', locale)}>{u.thxBackHome}</a>
+      <a class="btn-pill ghost" href={l('/product/', locale)}>{u.thxBrowse}</a>
     </div>
   </div>
 </div>
 
-<script define:vars={{ zh }}>
+<script define:vars={{ failTitle: u.thxFailTitle, failDesc: u.thxFailDesc }}>
   // 提交失败回跳（?sent=0）：替换为失败文案
   if (new URLSearchParams(location.search).get('sent') === '0') {
-    document.getElementById('thx-title').textContent = zh ? '提交未成功' : 'Submission not completed';
-    document.getElementById('thx-desc').textContent = zh
-      ? '表单服务暂不可用，请直接发邮件或来电联系我们。'
-      : 'The form service is temporarily unavailable. Please email or call us directly.';
+    document.getElementById('thx-title').textContent = failTitle;
+    document.getElementById('thx-desc').textContent = failDesc;
   }
 </script>
 

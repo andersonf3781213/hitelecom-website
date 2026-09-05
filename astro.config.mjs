@@ -9,10 +9,10 @@ export default defineConfig({
   // 站点正式域名：用于生成 canonical、hreflang、sitemap 绝对地址
   site: 'https://www.hitelecom.com',
 
-  // 多语言：默认语言英文（/），中文在 /zh/
+  // 多语言：默认语言英文（/），中文在 /zh/，西语在 /es/
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh'],
+    locales: ['en', 'zh', 'es'],
     routing: {
       prefixDefaultLocale: false, // 英文首页保持在 /，与原版一致
     },
@@ -48,7 +48,7 @@ export default defineConfig({
         !page.includes('/thanks'),
       i18n: {
         defaultLocale: 'en',
-        locales: { en: 'en', zh: 'zh-CN' },
+        locales: { en: 'en', zh: 'zh-CN', es: 'es' },
       },
       // Cloudflare Pages 的 canonical 形态为无扩展名（/about.html 一律 308 → /about）：
       // sitemap 统一输出无扩展名地址，与 canonical、hreflang、内链保持一致，

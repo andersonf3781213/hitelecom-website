@@ -1,0 +1,402 @@
+---
+/**
+ * 产品详情页（西语）：/product/{slug}.html（语义化专业地址）
+ * 结构与原站一致：首屏系列横幅 + 面包屑 + 特性图标 + 技术规格 + 应用场景 + 相关推荐
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductShell from '../../../components/product/ProductShell.astro';
+import ProductCard from '../../../components/product/ProductCard.astro';
+import Img from '../../../components/Img.astro';
+import { productContent, detailSeo, productSlugs, productIdsBySlug, getMergedProducts, getCmsProductDetails } from '../../../data/product';
+import { l } from '../../../i18n';
+import { optimizedSrc } from '../../../utils/images';
+import { enhanceContentHtml, normalizeBody } from '../../../utils/content';
+import type { GetStaticPaths } from 'astro';
+import WaveDivider from '../../../components/WaveDivider.astro';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const cms = await getCmsProductDetails('es');
+  return [...Object.values(productSlugs), ...Object.keys(cms)].map((slug) => ({ params: { slug } }));
+};
+
+const { slug } = Astro.params;
+const id = productIdsBySlug[slug] ?? slug;
+const pc = await getMergedProducts('es');
+const d = pc.details[id];
+const relatedCards = d.related
+  .map((rid) => Object.values(pc.lists).flatMap((l_) => l_.products).find((p) => p.id === rid))
+  .filter(Boolean);
+const heroSrc = await optimizedSrc(d.heroImg, { width: 760 });
+const bodyHtml = d.body ? await enhanceContentHtml(normalizeBody(d.body), d.series) : '';
+// 应用场景轮播：优先 d.applications（name+desc+img，说明文字正文可见——GEO 被引用概率最高的内容），
+// 回退旧 d.scenarios（仅图+label，CMS 新品未填 applications 时保底）
+const scenItems = d.applications?.length
+  ? d.applications.map((a) => ({ img: a.img as string | undefined, title: a.name, desc: a.desc }))
+  : d.scenarios.map((s) => ({ img: s.img as string | undefined, title: s.label, desc: '' }));
+
+// ——— GEO：完整实体图（Product + Breadcrumb + WebPage + FAQPage）———
+const pageUrl = `https://www.hitelecom.com/es/product/${slug}`;
+const heroUrl = new URL(heroSrc, Astro.site).href;
+// 规格：优先结构化，回退旧 [name,value] 格式（19 系列零内容成本）
+const specSource = d.specsStructured ?? d.specs.map(([name, value]) => ({ name, value }));
+const sku = d.sku ?? d.specs.find(([k]) => /models?|型号/i.test(k))?.[1] ?? d.series;
+const additionalProperty = [
+  ...specSource.map((s) => ({
+    '@type': 'PropertyValue',
+    name: s.name,
+    value: s.value,
+    ...('unitText' in s && s.unitText ? { unitText: s.unitText } : {}),
+    ...('minValue' in s && s.minValue !== undefined ? { minValue: s.minValue } : {}),
+    ...('maxValue' in s && s.maxValue !== undefined ? { maxValue: s.maxValue } : {}),
+  })),
+  // 应用领域也进 additionalProperty，多一重保险
+  ...(d.applications ?? []).map((a) => ({
+    '@type': 'PropertyValue',
+    name: 'Aplicación',
+    value: a.name,
+    description: a.desc,
+  })),
+];
+const productLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  '@id': `${pageUrl}#product`,
+  name: d.series,
+  sku,
+  mpn: sku,
+  description: d.summary ?? d.desc,
+  image: { '@type': 'ImageObject', url: heroUrl, caption: d.series },
+  brand: { '@type': 'Brand', name: 'Hitelecom' },
+  manufacturer: { '@id': 'https://www.hitelecom.com/#organization' },
+  category: d.crumbCat,
+  countryOfOrigin: { '@type': 'Country', name: 'CN' },
+  url: pageUrl,
+  additionalProperty,
+  // B2B 询价产品：无公开价格时不输出 Offer（Google Product 文档要求价格字段，空 Offer 会产生结构化数据错误）。
+  // 出现真实、当前有效的报价条件时才在此加入 offers。audience 不输出——避免把不适用行业的统一受众写入结构化数据。
+  ...(d.applications?.length ? { keywords: d.applications.map((a) => a.name).join(', ') } : {}),
+  isSimilarTo: d.related
+    .filter((rid) => productContent.es.details[rid])
+    .slice(0, 6)
+    .map((rid) => ({ '@type': 'Product', '@id': `https://www.hitelecom.com/es/product/${productSlugs[rid] ?? rid}#product` })),
+  // 产品级不再声明 ISO 9001（体系认证属组织层级，见 BaseLayout）；IP 等级以规格表呈现
+};
+const webPageLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${pageUrl}#webpage`,
+  url: pageUrl,
+  name: detailSeo.es[id]?.title ?? `${d.series} | Sensores IoT industriales Hitelecom`,
+  description: detailSeo.es[id]?.desc ?? d.desc,
+  inLanguage: 'es',
+  isPartOf: { '@id': 'https://www.hitelecom.com/#website' },
+  about: { '@id': `${pageUrl}#product` },
+  primaryImageOfPage: { '@type': 'ImageObject', url: heroUrl },
+  ...(d.dateModified ? { dateModified: d.dateModified } : {}),
+};
+const faqLd = d.faqs?.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      '@id': `${pageUrl}#faq`,
+      mainEntity: d.faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    }
+  : null;
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.hitelecom.com/es' },
+    { '@type': 'ListItem', position: 2, name: 'Productos', item: 'https://www.hitelecom.com/es/product' },
+    { '@type': 'ListItem', position: 3, name: d.series },
+  ],
+};---
+
+<BaseLayout locale="es" preloadImage={heroSrc} title={detailSeo.es[id]?.title ?? `${d.series} | Sensores IoT industriales Hitelecom`} description={detailSeo.es[id]?.desc ?? d.desc}>
+  <ProductShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify([productLd, breadcrumbLd, webPageLd, faqLd].filter(Boolean))} />
+
+    {/* 首屏：系列标题 + 卖点 + 产品大图（深色全屏） */}
+    <div class="clearfix pro_info_1">
+      <div class="pro_info_1_mask">
+        <div class="cell_mid"><div class="cell_h">
+          <div class="indexmid">
+            <div class="pro_info_1_mask_mid">
+              <h1 class="pro_info_1_mask_1 reveal">{d.series}</h1>
+              <div class="pro_info_1_mask_2 reveal">{d.tagline}</div>
+              <p class="pro_info_1_mask_3 reveal">{d.summary ?? d.desc}</p>
+              <div class="pro_info_1_mask_4">
+                <div class="hero_cta reveal">
+                  <a href={l('/about/contact', 'es')} class="hero_cta_btn hero_cta_primary">
+                    <span>Solicitar cotización</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                  {d.pdf && <a href={d.pdf} target="_blank" rel="noopener" class="hero_cta_btn hero_cta_ghost">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 19h16"/></svg>
+                    <span>Descargar ficha técnica</span>
+                  </a>}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+      <div class="bpic he_b1s1">
+        <div class="indexmid">
+          <div class="bpic_img">
+            <div class="bpic_img_img">
+              <div style="display:inline-block" class="he_c04rig">
+                <Img src={d.heroImg} alt={d.series} widths={[420, 760]} sizes="(max-width: 900px) 70vw, 36vw" loading="eager" fetchpriority="high" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix pro_info_2">
+      {/* 面包屑 + 返回 */}
+      <div class="clearfix so_info_1">
+        <div class="indexmid">
+          <div class="so_info_1_mid reveal">
+            <div class="so_info_1_mid_left">
+              <a href={l('/', 'es')}>Inicio</a> / <a href={l('/product/', 'es')}>Productos</a> / <span>{d.crumbCat}</span>
+            </div>
+            <div class="so_info_1_mid_right">
+              <a href={l(`/product/lists/cid/${d.returnCid}`, 'es')}>Volver a productos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 特性图标网格 */}
+      <div class="pro_info_2_2">
+        <div class="indexmid">
+          <div class="pro_info_1_mask_mid pro_info_1_mask_mid_pro">
+            <h2 class="pro_info_1_mask_1 reveal">Características principales</h2>
+            <div class="pro_info_1_mask_2 reveal">{d.tagline}</div>
+            <div class="pro_info_2_2_list">
+              <ul>
+                {d.features.map((f) => (
+                  <li class="reveal">
+                    <div class="pro_info_2_2_list_mid">
+                      <div class="pro_info_2_2_list_mid_left">
+                        {f.icon ? <Img src={f.icon} alt="" natural loading="lazy" /> : null}
+                      </div>
+                      <div class="pro_info_2_2_list_mid_right"><span>{f.text}</span></div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* 技术规格 */}
+    <div class="clearfix pro_info_3">
+      <div class="indexmid">
+        <div class="pro_info_3_mid">
+          <div class="pro_info_3_mid_left">
+            <div class="cell_mid"><div class="cell_h">
+              <div class="pro_info_3_mid_left_mid">
+                <div class="pro_info_3_mid_left_mid_1 reveal">{d.specsTitle}</div>
+                <div class="pro_info_3_mid_left_mid_2 reveal">{d.specsDesc}</div>
+                <div class="pro_info_1_mask_4">
+                  <div class="yun_6_1 reveal" id="spec-tabs">
+                    <ul>
+                      <li><a href="javascript:;" class="css3 on" data-tab="param"><span>Especificaciones</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+          <div class="pro_info_3_mid_right">
+            <div class="pro_info_3_mid_right_mid" data-pane="param">
+              {/* 语义化规格表（GEO：AI 抽取的第二重保险），样式与原 div 版完全一致 */}
+              <table class="spec-table reveal">
+                <caption class="sr-only">{d.series} — Technical Specifications</caption>
+                <tbody>
+                  {specSource.map((s) => (
+                    <tr>
+                      <th scope="row">{s.name}</th>
+                      <td>{s.value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* CMS 新品正文（Overview 附加节） */}
+    {bodyHtml ? (
+      <section class="clearfix pro_apps" aria-labelledby="pro-overview-title">
+        <div class="indexmid">
+          <h2 class="index_1_1 reveal" id="pro-overview-title">Descripción general</h2>
+          <div class="pro_apps_intro reveal" set:html={bodyHtml} />
+        </div>
+      </section>
+    ) : null}
+
+    {/* 应用场景/领域（横向滑动；无场景时不渲染整节）。
+        图文卡：场景图 + 名称 + 一句话说明；无匹配场景图的领域渲染为品牌色文字卡（同一轮播，不单设区块）。 */}
+    {scenItems.length ? (
+    <div class="clearfix index_2 pro_info_4">
+      <div class="index_2_top">
+        <WaveDivider />
+      </div>
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.scenariosHeading}</div>
+        <div class="clearfix pro_info_4_1 reveal">
+          <div class="pro_scen_track" id="scen-track">
+            {scenItems.map((s) => (
+              <div class="pro_scen_item">
+                {s.img ? (
+                <div class="pro_info_4_1_mid">
+                  <div class="pro_info_4_1_mid_1">
+                    <Img src={s.img} alt={s.title} widths={[320, 560]} sizes="(max-width: 900px) 60vw, 25vw" />
+                  </div>
+                  <div class="pro_info_4_1_mid_2">
+                    <div class="pro_info_4_1_mid_2_1">{s.title}</div>
+                    {s.desc && <div class="pro_info_4_1_mid_2_2">{s.desc}</div>}
+                  </div>
+                </div>
+                ) : (
+                <div class="pro_info_4_1_mid pro_scen_card_text">
+                  <div class="pro_info_4_1_mid_2">
+                    <div class="pro_info_4_1_mid_2_1">{s.title}</div>
+                    <div class="pro_info_4_1_mid_2_2">{s.desc}</div>
+                  </div>
+                </div>
+                )}
+              </div>
+            ))}
+          </div>
+          <div class="pro_info_4_1_left">
+            <div class="about_4_1_left_1_left css3" id="l1"></div>
+          </div>
+          <div class="pro_info_4_1_right">
+            <div class="about_4_1_left_1_right css3" id="l2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    ) : null}
+
+    {/* FAQ（GEO：AI 引用率最高的内容形态；正文与 JSON-LD 同步，不作弊） */}
+    {d.faqs?.length ? (
+      <section class="clearfix pro_faq" aria-labelledby="pro-faq-title">
+        <div class="indexmid">
+          <h2 class="index_1_1 reveal" id="pro-faq-title">Preguntas frecuentes</h2>
+          <dl class="pro_faq_list">
+            {d.faqs.map((f) => (
+              <div class="pro_faq_item reveal">
+                <dt>{f.q}</dt>
+                <dd>{f.a}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+    ) : null}
+
+    {/* 相关推荐 */}
+    <div class="clearfix so_info_5">
+      <div class="indexmid">
+        <div class="index_1_1 reveal">Productos relacionados</div>
+        <div class="clearfix so_info_5_1 reveal">
+          <div class="pro_2_mid_right_1">
+            <ul class="pro_rel_track" id="rel-track">
+              {relatedCards.map((p) => p && <ProductCard locale="es" product={p} />)}
+            </ul>
+            <div class="pro_rel_pag" id="rel-pag"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ProductShell>
+</BaseLayout>
+
+
+<script>
+  // Parameter / Certificate 切换（原站证书区无内容，保持一致的切换行为）
+  document.querySelectorAll('#spec-tabs a').forEach((a) => {
+    a.addEventListener('click', () => {
+      const tab = (a as HTMLElement).dataset.tab;
+      document.querySelectorAll('#spec-tabs a').forEach((x) => x.classList.toggle('on', x === a));
+      document.querySelectorAll('[data-pane]').forEach((p) => {
+        (p as HTMLElement).hidden = (p as HTMLElement).dataset.pane !== tab;
+      });
+    });
+  });
+
+  // 首屏产品大图随滚动上下移动（复刻原站 s1Text 逻辑）：
+  // 滚动未越界时 top = 视口高*0.18 + scrollY，图片视觉钉住、相对页面向下移；
+  // 超过 end-80 后 top 固定为 end，图片随页面一同滚走。
+  // end = 视口高*0.18 + 视口高 + 面包屑栏高（与原站 getParam 完全一致）。
+  const heroPic = document.querySelector('.he_b1s1') as HTMLElement | null;
+  const soInfo = document.querySelector('.so_info_1') as HTMLElement | null;
+  if (heroPic && soInfo) {
+    let vh = 0;
+    let end = 0;
+    const getParam = () => {
+      vh = window.innerHeight;
+      end = vh * 0.18 + vh + soInfo.offsetHeight;
+    };
+    const judeFixed = () => {
+      if (getComputedStyle(heroPic).display === 'none') return; // 移动端隐藏该图，不启用
+      const st = window.scrollY || document.documentElement.scrollTop || 0;
+      heroPic.style.top = (st > end - 80 ? end : vh * 0.18 + st) + 'px';
+    };
+    const initParallax = () => { getParam(); judeFixed(); };
+    initParallax();
+    window.addEventListener('load', initParallax);
+    window.addEventListener('resize', initParallax);
+    window.addEventListener('scroll', judeFixed, { passive: true });
+  }
+
+  // 横滑轨（相关推荐 + 应用场景）：按单张步进，复刻原站 Swiper slidesPerGroup:1 行为
+  const setupTrack = (track: HTMLElement | null, pag: HTMLElement | null) => {
+    if (!track) return { goTo: (_i: number) => {}, curIdx: () => 0 };
+    const gap = () => parseFloat(getComputedStyle(track).gap) || 20;
+    const step = () => (track.children[0] as HTMLElement).getBoundingClientRect().width + gap();
+    const perView = () => Math.max(1, Math.round((track.clientWidth + gap()) / step()));
+    const maxIdx = () => Math.max(0, track.children.length - perView());
+    const goTo = (i: number) => {
+      const idx = Math.max(0, Math.min(i, maxIdx()));
+      track.scrollTo({ left: idx * step(), behavior: 'smooth' });
+    };
+    const curIdx = () => Math.round(track.scrollLeft / step());
+    if (pag) {
+      const buildDots = () => {
+        pag.innerHTML = '';
+        for (let i = 0; i <= maxIdx(); i++) {
+          const dot = document.createElement('span');
+          if (i === Math.min(curIdx(), maxIdx())) dot.classList.add('on');
+          dot.addEventListener('click', () => goTo(i));
+          pag.appendChild(dot);
+        }
+      };
+      buildDots();
+      window.addEventListener('resize', buildDots);
+      track.addEventListener('scroll', () => {
+        const i = Math.min(curIdx(), maxIdx());
+        pag.querySelectorAll('span').forEach((d, k) => d.classList.toggle('on', k === i));
+      }, { passive: true });
+    }
+    return { goTo, curIdx };
+  };
+  const relTrack = setupTrack(document.getElementById('rel-track'), document.getElementById('rel-pag'));
+  const scenTrack = setupTrack(document.getElementById('scen-track'), null);
+  document.getElementById('l1')?.addEventListener('click', () => scenTrack.goTo(scenTrack.curIdx() - 1));
+  document.getElementById('l2')?.addEventListener('click', () => scenTrack.goTo(scenTrack.curIdx() + 1));
+</script>

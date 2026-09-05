@@ -8,7 +8,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Sidebar from '../components/Sidebar.astro';
 import { site, defaultSeo } from '../data/site';
-import { htmlLang, alternateUrl, type Locale } from '../i18n';
+import { htmlLang, alternateUrl, altLocalesOf, type Locale } from '../i18n';
 
 interface Props {
   locale: Locale;
@@ -56,8 +56,11 @@ const pageKeywords = keywords ?? seo.keywords;
 // canonical/og:url 统一归一到无扩展名地址，与 sitemap、hreflang、内链保持一致
 const canonicalPath = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
 const canonical = new URL(canonicalPath, Astro.site).href;
-const altLocale: Locale = locale === 'en' ? 'zh' : 'en';
-const altUrl = new URL(alternateUrl(Astro.url.pathname, altLocale), Astro.site).href;
+// hreflang 互链：遍历所有非当前语言（EN/ZH/ES 三语闭环），x-default 指向英文
+const altLinks = altLocalesOf(locale).map((loc) => ({
+  lang: htmlLang[loc],
+  href: new URL(alternateUrl(Astro.url.pathname, loc), Astro.site).href,
+}));
 const ogImage = new URL('/images/og-cover.jpg', Astro.site).href;
 
 // 结构化数据（GEO/SEO 核心）：Organization + WebSite 实体图
@@ -121,7 +124,7 @@ const siteJsonLd = {
         email: site.emailLd,
         contactType: 'sales',
         areaServed: 'Worldwide',
-        availableLanguage: ['English', 'Chinese'],
+        availableLanguage: ['English', 'Chinese', 'Spanish'],
       },
       knowsAbout: [
         'industrial IoT sensor terminals',
@@ -143,7 +146,7 @@ const siteJsonLd = {
       url: 'https://www.hitelecom.com/',
       name: 'Hitelecom',
       publisher: { '@id': orgId },
-      inLanguage: ['en', 'zh-CN'],
+      inLanguage: ['en', 'zh-CN', 'es'],
     },
   ],
 };
@@ -163,7 +166,7 @@ const siteJsonLd = {
     <!-- 规范地址 + 多语言互链（Google SEO 核心） -->
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang={htmlLang[locale]} href={canonical} />
-    <link rel="alternate" hreflang={htmlLang[altLocale]} href={altUrl} />
+    {altLinks.map((a) => <link rel="alternate" hreflang={a.lang} href={a.href} />)}
     <link rel="alternate" hreflang="x-default" href={new URL(alternateUrl(Astro.url.pathname, 'en'), Astro.site).href} />
 
     <!-- Open Graph / Twitter -->

@@ -1,0 +1,32 @@
+---
+/**
+ * 关于我们 - 生态合作伙伴（西语）：/about/partner
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AboutShell from '../../../components/about/AboutShell.astro';
+import AboutPartner from '../../../components/about/AboutPartner.astro';
+import { contentImageSrc } from '../../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.hitelecom.com/es' },
+    { '@type': 'ListItem', position: 2, name: 'Nosotros', item: 'https://www.hitelecom.com/es/about' },
+    { '@type': 'ListItem', position: 3, name: 'Socios', item: 'https://www.hitelecom.com/es/about/partner' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="es"
+  title="Programa de socios | Sensores IoT industriales"
+  description="Únase a la red de socios de Hitelecom para sensores IoT industriales, con capacitación de productos, soporte de soluciones, servicio técnico y desarrollo conjunto del mercado."
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <AboutPartner locale="es" />
+  </AboutShell>
+</BaseLayout>

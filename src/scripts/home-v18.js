@@ -202,6 +202,7 @@
   });
 
   /* ── Quote form → Web3Forms 真实提交（未配置端点时回退 mailto） ── */
+  const isEs = document.documentElement.lang === "es";
   const form = document.getElementById("quote-form");
   const formStatus = document.getElementById("form-status");
   if (form) {
@@ -217,6 +218,8 @@
         `Name: ${name}`, `Company: ${company}`, `Email: ${email}`,
         `Product interest: ${product}`, "", "Project brief:", message
       ].join("\n");
+      /* 语言前缀：/zh、/es 页面跳对应语言的感谢页 */
+      const pre = (location.pathname.match(/^\/(zh|es)(?=\/|$)/) || [""])[0];
       if (window.HITE_FORM_ENDPOINT && window.HITE_FORM_KEY) {
         const fd = new FormData();
         fd.append("access_key", window.HITE_FORM_KEY);
@@ -225,12 +228,12 @@
         fd.append("name", String(name));
         fd.append("email", String(email));
         fd.append("message", lines);
-        if (formStatus) formStatus.textContent = "Sending your inquiry…";
+        if (formStatus) formStatus.textContent = isEs ? "Enviando su consulta…" : "Sending your inquiry…";
         fetch(window.HITE_FORM_ENDPOINT, { method: "POST", body: fd, headers: { Accept: "application/json" } })
-          .then(r => { const t = location.pathname.startsWith("/zh") ? "/zh/about/thanks" : "/about/thanks"; window.location.href = r.ok ? t : `${t}?sent=0`; })
-          .catch(() => { if (formStatus) formStatus.textContent = "Submission failed. Please retry or email sales@hitelecom.cn directly."; });
+          .then(r => { const t = `${pre}/about/thanks`; window.location.href = r.ok ? t : `${t}?sent=0`; })
+          .catch(() => { if (formStatus) formStatus.textContent = isEs ? "Error al enviar. Inténtelo de nuevo o escriba a sales@hitelecom.cn directamente." : "Submission failed. Please retry or email sales@hitelecom.cn directly."; });
       } else {
-        if (formStatus) formStatus.textContent = "Opening your email application with the project brief…";
+        if (formStatus) formStatus.textContent = isEs ? "Abriendo su aplicación de correo con la descripción del proyecto…" : "Opening your email application with the project brief…";
         window.location.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines)}`;
       }
     });

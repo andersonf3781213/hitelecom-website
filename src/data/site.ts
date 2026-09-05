@@ -52,6 +52,7 @@ export const site = {
   tagline: {
     en: 'IoT Turnkey Solution Provider',
     zh: '物联网整体解决方案提供商',
+    es: 'Proveedor de soluciones IoT llave en mano',
   },
 } as const;
 
@@ -77,5 +78,13 @@ export const defaultSeo = {
       '上海宏太通信技术有限公司（Hitelecom）设计与制造50余种工业物联网传感终端与记录仪配置，主打户外与工业4G、NB-IoT市场，部分型号支持LoRa/LoRaWAN，可接入宏太云、客户云平台或私有化部署（API/MQTT），覆盖工业监测、智慧水务、智慧城市、智慧农业，支持OEM/ODM定制。',
     keywords:
       '宏太通信,Hitelecom,工业物联网传感器,户外4G传感器,NB-IoT传感器,蜂窝物联网传感终端,工业温度传感器,温湿度传感器,温湿度记录仪,空气质量传感器,TVOC传感器,无线压力传感器,土壤水分传感器,倾角传感器,振动传感器,投入式液位传感器,雷达测距传感器,资产定位终端,定制气体传感器,物联网云平台,传感器OEM,传感器ODM',
+  },
+  es: {
+    title:
+      'Hitelecom | Sensores industriales 4G y NB-IoT',
+    description:
+      'Hitelecom diseña terminales de sensores industriales 4G, NB-IoT y LoRa, registradores de datos e integración con la nube para monitoreo remoto, con soporte OEM/ODM.',
+    keywords:
+      'Hitelecom, sensores IoT industriales, sensores IoT 4G para exteriores, sensores NB-IoT, terminales de sensores IoT celulares, sensores LoRa, integración IoT en la nube, sensores de temperatura industriales, sensores de temperatura y humedad, registradores de datos de temperatura y humedad, sensores de calidad del aire, sensores TVOC, sensores de presión inalámbricos, sensores de humedad del suelo, sensores de inclinación, sensores de vibración, sensores de nivel sumergibles, sensores de distancia por radar, sensores de rastreo de activos, sensores de gas personalizados, fabricante de sensores IoT China, sensores IoT OEM ODM',
   },
 } as const;

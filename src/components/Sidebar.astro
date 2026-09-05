@@ -5,20 +5,21 @@
  * 二维码图片位于 public/images/qr-*.png，同名覆盖即可更换。
  */
 import { site } from '../data/site';
+import { ui } from '../data/ui';
 import type { Locale } from '../i18n';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
-const zh = locale === 'zh';
+const u = ui[locale];
 ---
 
 <aside class="float-bar" aria-label="Quick contact">
   <div class="float-item">
-    <button class="float-btn" type="button" aria-expanded="false" aria-label={zh ? '电话咨询' : 'Call us'}>
+    <button class="float-btn" type="button" aria-expanded="false" aria-label={u.callUs}>
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
     </button>
     <div class="pop" role="status">
-      <strong>{zh ? '电话咨询' : 'Call us'}</strong>
+      <strong>{u.callUs}</strong>
       <a class="pop-line" href={site.phoneHref}>{site.phone}</a>
     </div>
   </div>
@@ -28,31 +29,31 @@ const zh = locale === 'zh';
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.2-.3.3-.5v-.5c0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3 1 2.6 1.1 2.8.1.2 1.9 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1a3 3 0 0 0 1.9-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.2-.3-.2-.6-.4Z"/></svg>
     </button>
     <div class="pop qr-pop" role="status">
-      <img src="/images/qr-whatsapp.png" alt={zh ? 'WhatsApp 二维码' : 'WhatsApp QR code'} width="150" height="150" loading="lazy" decoding="async" />
+      <img src="/images/qr-whatsapp.png" alt={u.whatsappQrAlt} width="150" height="150" loading="lazy" decoding="async" />
       <strong>WhatsApp</strong>
       <span class="pop-num">{site.phone}</span>
       <a class="pop-link" href={site.whatsapp} target="_blank" rel="noopener">
-        {zh ? '打开对话' : 'Open chat'} <span class="nf" aria-hidden="true">→</span>
+        {u.openChat} <span class="nf" aria-hidden="true">→</span>
       </a>
     </div>
   </div>
 
   <div class="float-item">
-    <button class="float-btn" type="button" aria-expanded="false" aria-label={zh ? '微信咨询' : 'WeChat'}>
+    <button class="float-btn" type="button" aria-expanded="false" aria-label="WeChat">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9.5 4C5.9 4 3 6.5 3 9.6c0 1.8 1 3.4 2.5 4.4l-.6 1.9 2.2-1.1c.5.1 1 .2 1.5.2h.4A5.5 5.5 0 0 1 9 13a5.6 5.6 0 0 1 5.6-5.4h.5C14.4 5.5 12.2 4 9.5 4ZM7.4 8.2a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6Zm4.2 0a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6ZM21 13.2c0-2.7-2.5-4.9-5.6-4.9s-5.6 2.2-5.6 4.9 2.5 4.9 5.6 4.9c.6 0 1.2-.1 1.8-.3l2 1-.6-1.7A4.7 4.7 0 0 0 21 13.2Zm-7.5-.7a.7.7 0 1 1 0-1.4.7.7 0 0 1 0 1.4Zm3.8 0a.7.7 0 1 1 0-1.4.7.7 0 0 1 0 1.4Z"/></svg>
     </button>
     <div class="pop qr-pop" role="status">
-      <img src="/images/qr-wechat.png" alt={zh ? '微信二维码' : 'WeChat QR code'} width="150" height="137" loading="lazy" decoding="async" />
-      <strong>{zh ? '微信扫码咨询' : 'Scan to chat on WeChat'}</strong>
+      <img src="/images/qr-wechat.png" alt={u.wechatQrAlt} width="150" height="137" loading="lazy" decoding="async" />
+      <strong>{u.scanToChat}</strong>
       <button class="pop-line copy" type="button" data-copy={site.wechatId}>
-        {zh ? '微信号' : 'ID'}: {site.wechatId}
+        {u.wechatIdLabel}: {site.wechatId}
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
       </button>
-      <span class="copy-ok" hidden>{zh ? '已复制' : 'Copied'}</span>
+      <span class="copy-ok" hidden>{u.copied}</span>
     </div>
   </div>
 
-  <button class="float-btn back-top" type="button" aria-label={zh ? '回到顶部' : 'Back to top'}>
+  <button class="float-btn back-top" type="button" aria-label={u.backToTop}>
     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5m-7 7 7-7 7 7"/></svg>
   </button>
 </aside>

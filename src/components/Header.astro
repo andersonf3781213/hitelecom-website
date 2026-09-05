@@ -8,12 +8,16 @@
 import Img from './Img.astro';
 import { homeContent } from '../data/home';
 import { site } from '../data/site';
-import { l, alternateUrl, localeNames, type Locale } from '../i18n';
+import { ui } from '../data/ui';
+import { l, alternateUrl, localeNames, locales, htmlLang, type Locale } from '../i18n';
 
 interface Props { locale: Locale; solid?: boolean }
 const { locale, solid = false } = Astro.props;
 const t = homeContent[locale];
+const u = ui[locale];
 const pathname = Astro.url.pathname;
+// build.format='file' 下各语言首页构建期地址：'/'、'/index.html'、'/zh.html'、'/es.html'
+const homePaths = ['/', '/index.html', ...locales.filter((x) => x !== 'en').map((x) => `/${x}.html`)];
 ---
 
 <header id="site-header" class:list={[{ scrolled: solid }]}>
@@ -27,7 +31,7 @@ const pathname = Astro.url.pathname;
       <ul>
         {t.nav.map((item) => (
           <li>
-            <a href={l(item.href, locale)} aria-current={item.href === '/' && (pathname === '/' || pathname === '/index.html' || pathname === '/zh.html') ? 'page' : undefined}>
+            <a href={l(item.href, locale)} aria-current={item.href === '/' && homePaths.includes(pathname) ? 'page' : undefined}>
               {item.label}
             </a>
           </li>
@@ -43,13 +47,13 @@ const pathname = Astro.url.pathname;
       <div class="lang">
         <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.9 5.7 3.9 9S14.5 18.4 12 21c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3Z"/></svg>
-          <span>{t.langSwitch.label}</span>
+          <span>{localeNames[locale]}</span>
           <svg class="chev" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
         </button>
         <ul class="lang-menu">
-          {(['en', 'zh'] as Locale[]).map((loc) => (
+          {locales.map((loc) => (
             <li>
-              <a href={alternateUrl(pathname, loc)} aria-current={loc === locale ? 'true' : undefined} hreflang={loc === 'zh' ? 'zh-CN' : 'en'}>
+              <a href={alternateUrl(pathname, loc)} aria-current={loc === locale ? 'true' : undefined} hreflang={htmlLang[loc]}>
                 {loc === 'zh' ? <span class="nf">{localeNames[loc]}</span> : localeNames[loc]}
               </a>
             </li>
@@ -75,9 +79,9 @@ const pathname = Astro.url.pathname;
     <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
   </button>
   <form class="search-form" action={l('/search/', locale)} method="get">
-    <input type="search" name="q" placeholder={t.searchPlaceholder} aria-label={locale === 'zh' ? '搜索产品、方案与新闻' : 'Search products, solutions and news'} autocomplete="off" />
+    <input type="search" name="q" placeholder={t.searchPlaceholder} aria-label={u.searchAriaLabel} autocomplete="off" />
     <button type="submit" class="btn-pill">
-      {locale === 'zh' ? '搜索' : 'Search'}
+      {u.searchBtn}
       <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
     </button>
   </form>
@@ -100,7 +104,9 @@ const pathname = Astro.url.pathname;
   </nav>
   <div class="mobile-menu-foot">
     <a href={site.cloudUrl} target="_blank" rel="noopener">{t.showOnline} <span class="nf" aria-hidden="true">→</span></a>
-    <a href={alternateUrl(pathname, locale === 'en' ? 'zh' : 'en')}>{t.langSwitch.label} <span class="nf" aria-hidden="true">→</span></a>
+    {locales.filter((loc) => loc !== locale).map((loc) => (
+      <a href={alternateUrl(pathname, loc)} hreflang={htmlLang[loc]}>{localeNames[loc]} <span class="nf" aria-hidden="true">→</span></a>
+    ))}
     <a href={site.phoneHref}>{site.phone}</a>
   </div>
 </div>

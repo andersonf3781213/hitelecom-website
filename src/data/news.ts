@@ -40,7 +40,8 @@ export interface NewsContent {
   catNames: Record<NewsCat, string>;
 }
 
-type Locale = 'en' | 'zh';
+import type { Locale as SiteLocale } from '../i18n';
+type Locale = SiteLocale;
 
 /** 静态配置（不随文章变动的板块文案与 FAQ） */
 const staticConfig: Record<Locale, Pick<NewsContent,
@@ -143,6 +144,55 @@ const staticConfig: Record<Locale, Pick<NewsContent,
   crumbNews: '新闻中心',
   returnLabel: '返回列表',
   catNames: { company: '公司新闻', exh: '展会信息', ind: '行业资讯', case: '成功案例', blog: '技术博客' },
+ },
+ es: {
+  bannerImg: 'news/banner.jpg',
+  bannerSub: '',
+  bannerTitle: 'CENTRO DE NOTICIAS',
+  tabs: [
+   { key: 'company', label: 'Noticias de la empresa', href: '/news/' },
+   { key: 'exh', label: 'Ferias', href: '/news/index/cid/81' },
+   { key: 'ind', label: 'Noticias de la industria', href: '/news/index/cid/80' },
+   { key: 'faqs', label: 'Preguntas frecuentes', href: '/news/faqs' },
+  ],
+  readmore: 'Leer más',
+  faqs: [
+   {
+    date: 'Hitelecom · 28/02/2024',
+    q: 'Muchos sensores dependen de la red eléctrica o de baterías grandes: ¿el alto consumo de energía limita su vida útil?',
+    a: 'Los terminales de sensores de Hitelecom utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de reporte configurables. Algunos modelos alimentados por batería están diseñados para más de 10 años de servicio con un intervalo de reporte de una hora; la duración real de la batería depende del modelo, el intervalo de reporte, las condiciones de la red y la temperatura de operación.',
+   },
+   {
+    date: 'Hitelecom · 16/04/2024',
+    q: '¿Puede la interferencia electromagnética (EMI) comprometer la precisión del sensor y la integridad de la señal?',
+    a: 'Algunos modelos están diseñados y probados según los requisitos de EMC aplicables a sus entornos de uso. Solicite el informe de pruebas correspondiente a su modelo.',
+   },
+   {
+    date: 'Hitelecom · 26/06/2024',
+    q: '¿Puede una ubicación inadecuada del sensor comprometer la precisión de los datos y la eficacia del sensor?',
+    a: 'Antes de la implementación, nuestro equipo de ingeniería analiza las condiciones del sitio y determina con usted la ubicación óptima de los sensores.',
+   },
+   {
+    date: 'Hitelecom · 28/08/2024',
+    q: '¿Puede la precisión de medición derivar por variaciones de temperatura, interferencia electromagnética u otros factores ambientales?',
+    a: 'Hitelecom selecciona elementos de detección de alta calidad, personaliza las configuraciones según los requisitos del cliente y admite calibración ajustada al entorno de implementación.',
+   },
+   {
+    date: 'Hitelecom · 16/10/2025',
+    q: '¿Cómo pueden los dispositivos mantener una conectividad de red estable para transmitir datos en entornos remotos o complejos?',
+    a: 'Hitelecom admite conectividad 4G Cat.1, NB-IoT y LoRa para adaptarse a sitios complejos. Para escenarios sensibles con los datos, las opciones de implementación privada mantienen el flujo de datos de campo hacia su plataforma incluso desde ubicaciones remotas.',
+   },
+   {
+    date: 'Hitelecom · 12/12/2025',
+    q: 'Los dispositivos y aplicaciones IoT requieren actualizaciones periódicas para corregir vulnerabilidades y añadir funciones: ¿cómo se gestiona esto de forma remota?',
+    a: 'Los dispositivos compatibles pueden recibir actualizaciones de firmware OTA a través de Hitelecom Cloud. La programación de actualizaciones, el registro de versiones y las opciones de reversión dependen del dispositivo y de la configuración de implementación.',
+   },
+  ],
+  relatedHeading: 'Artículos relacionados',
+  crumbHome: 'Inicio',
+  crumbNews: 'Noticias',
+  returnLabel: 'Volver a noticias',
+  catNames: { company: 'Noticias de la empresa', exh: 'Ferias', ind: 'Noticias de la industria', case: 'Casos de éxito', blog: 'Blog técnico' },
  },
 };
 

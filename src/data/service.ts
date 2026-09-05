@@ -1,3 +1,4 @@
+import type { Locale } from '../i18n';
 /**
  * 支持服务页全部内容（中英双语，由 www.hitelecom.com 原站 1:1 提取）
  * 改文案只需改这里：
@@ -35,7 +36,7 @@ export interface ServiceContent {
   submit: string;
 }
 
-export const serviceContent: Record<'en' | 'zh', ServiceContent> = {
+const serviceContentBase: Record<'en' | 'zh', ServiceContent> = {
   en: {
     bannerImg: 'service/banner.jpg',
     bannerSub: '',
@@ -159,3 +160,68 @@ export const serviceContent: Record<'en' | 'zh', ServiceContent> = {
     submit: '提 交',
   },
 };
+
+/** 西语版支持服务页（译法见《EN→ES 术语表 v1》） */
+const es: ServiceContent = {
+  bannerImg: 'service/banner.jpg',
+  bannerSub: '',
+  bannerTitle: 'SERVICIO',
+  tabs: [
+    { label: 'Soporte técnico', anchor: '#page1' },
+    { label: 'Software', anchor: '#page2' },
+    { label: 'Descargas', anchor: '#page3' },
+    { label: 'Servicio posventa', anchor: '#page4' },
+  ],
+  techHeading: 'Soporte técnico para cada etapa de su implementación',
+  techCards: [
+    { img: 'service/tech-1.jpg', title: 'Personalización de hardware', desc: 'Personalice la detección, la conectividad, la energía, las interfaces y las carcasas para su aplicación.' },
+    { img: 'service/tech-2.jpg', title: 'Personalización de software', desc: 'Personalice firmware, paneles, API, modelos de datos e integraciones de plataforma.' },
+    { img: 'service/tech-3.jpg', title: 'Soporte remoto', desc: 'Obtenga resolución remota de problemas, orientación de configuración y soporte de implementación de nuestro equipo de ingeniería.' },
+    { img: 'service/tech-4.jpg', title: 'Soporte telefónico', desc: 'Hable con un ingeniero para orientación de instalación y resolución de problemas.' },
+    { img: 'service/tech-5.jpg', title: 'Soporte en sitio', desc: 'Solicite soporte técnico en sitio cuando la asistencia remota no sea suficiente.' },
+    { img: 'service/tech-6.jpg', title: 'Soporte de mantenimiento', desc: 'Obtenga reparación, reemplazo y seguimiento técnico para los productos compatibles.' },
+  ],
+  softHeading: 'Software',
+  softSub1: 'Disponible en PC, app móvil, pantallas grandes y videowalls',
+  softSub2: 'Hitelecom Cloud | Monitoree dispositivos y datos desde cualquier lugar',
+  softBullets: [
+    { icon: 'service/img7.png', text: 'Use NFC en la app móvil para una configuración y un mantenimiento más rápidos.' },
+    { icon: 'service/img8.png', text: 'Configure los dispositivos compatibles de forma remota desde la web o la app, reduciendo las visitas al sitio.' },
+    { icon: 'service/img9.png', text: 'Personalice las condiciones de disparo y los tiempos de respuesta de las notificaciones de alerta por correo y app.' },
+    { icon: 'service/img9-2.png', text: 'Personalice los paneles con vistas de gemelo digital, mapas GIS y otras visualizaciones de datos.' },
+  ],
+  softRightImg: 'service/software-right.png',
+  platforms: [
+    { icon: 'service/img12.png', label: 'Windows' },
+    { icon: 'service/img13.png', label: 'Android' },
+    { icon: 'service/img15.png', label: 'Miniprograma de WeChat' },
+    { icon: 'service/img17.png', label: 'iOS' },
+  ],
+  docsHeading: 'Descargas',
+  docsP1: [
+    { name: 'Perfil de la empresa', type: 'Folleto', file: '/downloads/company-profile.pdf', downName: 'Hitelecom-Company-Profile.pdf' },
+    { name: 'Hitelecom Cloud', type: 'Escenarios', file: '/downloads/hitelecom-cloud-scenarios.pdf', downName: 'Hitelecom-Cloud-Scenarios.pdf' },
+    { name: 'Sensor de temperatura', type: 'Folleto', file: '/downloads/temperature-sensor.jpg', downName: 'Temperature-Sensor-Brochure.jpg' },
+    { name: 'Sensor de suelo', type: 'Folleto', file: '/downloads/soil-sensor.jpg', downName: 'Soil-Sensor-Brochure.jpg' },
+    { name: 'Sensor de nivel sumergible', type: 'Folleto', file: '/downloads/liquid-level-sensor.jpg', downName: 'Liquid-Level-Sensor-Brochure.jpg' },
+    { name: 'Sensor de presión', type: 'Folleto', file: '/downloads/pressure-sensor.jpg', downName: 'Pressure-Sensor-Brochure.jpg' },
+    { name: 'Sensor de fugas de agua (proyecto personalizado)', type: 'Folleto', file: '/downloads/water-leakage-sensor.jpg', downName: 'Water-Leakage-Sensor-Brochure.jpg' },
+    { name: 'Calidad del aire', type: 'Folleto', file: '/downloads/air-quality-sensor.jpg', downName: 'Air-Quality-Sensor-Brochure.jpg' },
+  ],
+  docsP2: [
+    { name: 'Sensor de distancia por radar', type: 'Folleto', file: '/downloads/distance-measurement-sensor.jpg', downName: 'Distance-Measurement-Sensor-Brochure.jpg' },
+    { name: 'Sensor antideflagrante 2 en 1', type: 'Folleto', file: '/downloads/temperature-sensor-ex.jpg', downName: 'Temperature-Sensor-EX-Brochure.jpg' },
+    { name: 'Sensor antideflagrante 2 en 1 de temperatura y presión', type: 'Folleto', file: '/downloads/temp-pressure-2in1-ex.jpg', downName: 'Temp-Pressure-2in1-EX-Brochure.jpg' },
+    { name: 'Sensor de temperatura y humedad', type: 'Ficha técnica', file: '/downloads/h300-temperature-humidity-sensor-datasheet.pdf', downName: 'Hitelecom-Temperature-Humidity-Sensor-Datasheet.pdf' },
+    { name: 'Sensor de suelo', type: 'Ficha técnica', file: '/downloads/h300-soil-sensor-datasheet.pdf', downName: 'Hitelecom-Soil-Sensor-Datasheet.pdf' },
+    { name: 'Sensor de presión', type: 'Ficha técnica', file: '/downloads/h300-pressure-sensor-datasheet.pdf', downName: 'Hitelecom-Pressure-Sensor-Datasheet.pdf' },
+    { name: 'Sensor de inclinación', type: 'Ficha técnica', file: '/downloads/h310-ts180c-tilt-sensor-datasheet.pdf', downName: 'H310-TS180C-Tilt-Sensor-Datasheet.pdf' },
+    { name: 'Distancia por radar', type: 'Ficha técnica', file: '/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf', downName: 'H310-MW012-Radar-Distance-Sensor-Datasheet.pdf' },
+    { name: 'Calidad del aire', type: 'Ficha técnica', file: '/downloads/h310-aq041-air-quality-sensor-datasheet.pdf', downName: 'H310-AQ041-Air-Quality-Sensor-Datasheet.pdf' },
+  ],
+  formHeading: 'Servicio posventa',
+  formPh: { name: 'Nombre', phone: 'Teléfono', email: 'Correo electrónico', message: 'Cuéntenos qué necesita: el producto, la aplicación, la cantidad y las condiciones del sitio. Respondemos a la mayoría de las consultas en un día hábil.' },
+  submit: 'Enviar solicitud de soporte',
+};
+
+export const serviceContent: Record<Locale, ServiceContent> = { ...serviceContentBase, es };

@@ -472,6 +472,228 @@ const zh: typeof en = {
   },
 };
 
+/** 西语版首页内容（译法见《EN→ES 术语表 v1》：usted 敬称、LatAm 中性西语） */
+const es: typeof en = {
+  nav: [
+    { label: 'Inicio', href: '/' },
+    { label: 'Productos', href: '/product/' },
+    { label: 'Soluciones', href: '/solution/' },
+    { label: 'Soporte', href: '/service/' },
+    { label: 'Noticias', href: '/news/' },
+    { label: 'Nosotros', href: '/about/' },
+  ],
+  langSwitch: { label: 'English', href: '/' },
+  showOnline: 'Ver demo en la nube',
+  searchPlaceholder: 'Buscar productos, soluciones, noticias…',
+
+  hero: {
+    slides: [
+      {
+        eyebrow: 'SENSORES IoT INDUSTRIALES',
+        title: 'Terminales de sensores de bajo consumo',
+        desc: 'Terminales de sensores 4G, NB-IoT y LoRa alimentados por batería para monitoreo remoto a largo plazo.',
+        cta: 'Explorar sensores',
+        href: '/product/lists/cid/261#cate',
+        bg: 'hero/bg-sensors.jpg',
+        device: 'hero/device-sensors.png',
+        deviceAlt: 'Sensores IoT de consumo ultrabajo de Hitelecom',
+      },
+      {
+        eyebrow: 'GATEWAYS IoT',
+        title: 'Duraderos y confiables',
+        desc: 'Conecte redes de sensores LoRa a la nube por 4G LTE o Ethernet, con actualizaciones OTA remotas.',
+        cta: 'Explorar gateways',
+        href: '/product/lists/cid/258#cate',
+        bg: 'hero/bg-gateways.jpg',
+        device: 'hero/device-gateways.png',
+        deviceAlt: 'Gateways IoT industriales de Hitelecom',
+      },
+      {
+        eyebrow: 'PLATAFORMA IoT EN LA NUBE',
+        title: 'Monitoreo remoto',
+        desc: 'Conecte, monitoree, analice y gestione dispositivos de campo desde una sola plataforma en la nube.',
+        cta: 'Explorar la nube IoT',
+        href: '/product/#cate',
+        bg: 'hero/bg-cloud.jpg',
+        device: 'hero/device-cloud.png',
+        deviceAlt: 'Panel de la plataforma en la nube de Hitelecom',
+      },
+    ] as HeroSlide[],
+  },
+
+  intro: {
+    title: 'IoT industrial, del sensor a la nube',
+    subtitle:
+      'Hitelecom diseña y fabrica sensores IoT industriales, gateways y soluciones de monitoreo conectadas a la nube. Compatible con 4G LTE, NB-IoT, LoRa/LoRaWAN, integración con la plataforma del cliente, implementación privada y desarrollo OEM/ODM.',
+    features: [
+      { icon: 'features/icon-sensors.png', title: 'Sensores IoT', desc: 'Mida temperatura, humedad, presión, calidad del aire y otras condiciones de campo.' },
+      { icon: 'features/icon-controllers.png', title: 'Controladores IoT', desc: 'Procesamiento de datos local y control de equipos conectados.' },
+      { icon: 'features/icon-cloud.png', title: 'Nube IoT', desc: 'Conecte, monitoree, configure y mantenga dispositivos de forma remota.' },
+      { icon: 'features/icon-gateways.png', title: 'Gateways IoT', desc: 'Conecte dispositivos de campo a la nube o a plataformas privadas.' },
+      { icon: 'features/icon-customized.png', title: 'Desarrollo IoT personalizado', desc: 'Hardware, firmware, carcasas e integración de plataforma a medida.' },
+      { icon: 'features/icon-app.png', title: 'App IoT', desc: 'Configure dispositivos, monitoree datos, reciba alertas y gestione actualizaciones de forma remota.' },
+    ] as Feature[],
+  },
+
+  showcase: [
+    {
+      title: 'Plataforma en la nube',
+      desc: 'Una plataforma IoT nativa de la nube para conectividad de dispositivos, gestión remota, visualización de datos, alertas e integración de aplicaciones.',
+      cta: 'Explorar la nube IoT',
+      href: '/product/',
+      image: 'sections/cloud-platform.png',
+      imageAlt: 'Ilustración de la plataforma IoT nativa de la nube de Hitelecom',
+      reverse: false,
+    },
+    {
+      title: 'Gateways IoT',
+      desc: 'Conecte sensores a la nube con conversión de protocolos, agregación de datos y procesamiento de borde opcional.',
+      cta: 'Explorar gateways',
+      href: '/product/lists/cid/258#cate',
+      image: 'sections/iot-gateways.jpg',
+      imageAlt: 'Los gateways IoT de Hitelecom conectan sensores a la nube',
+      reverse: true,
+    },
+    {
+      title: 'Sensores IoT',
+      desc: 'Mida temperatura, humedad, presión, vibración, movimiento, calidad del aire y otras condiciones físicas.',
+      cta: 'Explorar sensores',
+      href: '/product/lists/cid/261#cate',
+      image: 'sections/iot-sensors.jpg',
+      imageAlt: 'Sensores IoT de Hitelecom para recolección de datos',
+      reverse: false,
+    },
+  ] as ShowcaseItem[],
+
+  solutions: {
+    title: 'Explore nuestras soluciones IoT',
+    subtitle:
+      'Monitoree las condiciones de campo en tiempo real, automatice respuestas y tome decisiones operativas más rápidas con sensores conectados y datos en la nube.',
+    items: [
+      { icon: 'solutions/icon-energy.png', label: 'Monitoreo industrial', href: '/solution/show/id/58' },
+      { icon: 'solutions/icon-agriculture.png', label: 'Agricultura inteligente', href: '/solution/show/id/65' },
+      { icon: 'solutions/icon-campus.png', label: 'Agua inteligente', href: '/solution/show/id/67' },
+      { icon: 'solutions/icon-healthcare.png', label: 'Energía inteligente', href: '/solution/show/id/59' },
+      { icon: 'solutions/icon-industrial.png', label: 'Ciudad inteligente', href: '/solution/show/id/57' },
+      { icon: 'solutions/icon-building.png', label: 'Parques industriales inteligentes', href: '/solution/show/id/60' },
+    ] as SolutionItem[],
+  },
+
+  news: {
+    title: 'Centro de noticias',
+    subtitle:
+      'Novedades de la empresa, lanzamientos de productos, análisis de la industria y próximos eventos de Hitelecom.',
+    cta: 'Ver todas las noticias',
+    moreHref: '/news/',
+    items: [
+      {
+        image: 'news/news-iote-2024.png',
+        imageAlt: 'Hitelecom en la exposición internacional IoT IOTE 2024 de Shenzhen',
+        source: 'Hitelecom',
+        date: '2024.08.28',
+        title: 'Hitelecom exhibe en IOTE Shenzhen 2024',
+        excerpt:
+          'La 22.ª Exposición Internacional de IoT (IOTE 2024) en Shenzhen se celebró del 28 al 30 de agosto de 2024 en el Shenzhen World Exhibition & Convention Center (Bao\'an). Como proveedor profesional de productos y servicios IoT, Hitelecom presentó sus soluciones para la industria IoT en el stand 10B33 del pabellón 10.',
+        href: '/news/show/id/1377',
+      },
+      {
+        image: 'news/news-pipeline.png',
+        imageAlt: 'Inversión en redes de servicios subterráneos',
+        source: 'Hitelecom',
+        date: '2024.03.09',
+        title: 'China planea importantes mejoras en servicios públicos subterráneos urbanos',
+        excerpt:
+          'El 9 de marzo de 2024, durante la conferencia de prensa sobre bienestar social de la Segunda Sesión del 14.º Congreso Nacional del Pueblo, se anunció la renovación de más de 100,000 kilómetros de tuberías subterráneas y la gestión de zonas propensas a inundaciones en 100 ciudades.',
+        href: '/news/show/id/1379',
+      },
+      {
+        image: 'news/news-iso9001.jpg',
+        imageAlt: 'Certificación de gestión de calidad ISO 9001 de Hitelecom',
+        source: 'Hitelecom',
+        date: '2023.08.28',
+        title: 'Hitelecom obtiene la certificación ISO 9001',
+        excerpt:
+          'Hitelecom ha obtenido la certificación del sistema de gestión de la calidad ISO 9001, que cubre el diseño y la fabricación de productos de sensores IoT.',
+        href: '/news/show/id/1357',
+      },
+    ] as NewsItem[],
+  },
+
+  partners: {
+    title: 'Socios',
+    subtitle:
+      'Trabajamos con socios tecnológicos y de canal para ofrecer implementaciones IoT confiables en todo el mundo.',
+  },
+
+  cta: {
+    title: 'Construya su solución IoT con Hitelecom',
+    subtitle:
+      'Desde sensores y conectividad hasta la integración en la nube y el desarrollo OEM/ODM, le ayudamos a convertir los datos de campo en soluciones implementables.',
+    primary: { label: 'Ver demo en la nube', href: 'http://cloud.hitelecom.com/' },
+    secondary: { label: 'Hablemos de su proyecto', href: '/about/contact' },
+  },
+
+  footer: {
+    columns: [
+      {
+        title: 'PRODUCTOS',
+        links: [
+          { label: 'Nube IoT', href: '/product/' },
+          { label: 'App IoT', href: '/product/app' },
+          { label: 'Sensores IoT', href: '/product/lists/cid/261' },
+          { label: 'Gateways IoT', href: '/product/lists/cid/258' },
+          { label: 'Estación meteorológica', href: '/product/lists/cid/257' },
+          { label: 'Desarrollo personalizado', href: '/product/lists/cid/256' },
+        ],
+      },
+      {
+        title: 'SOLUCIONES',
+        links: [
+          { label: 'IoT industrial', href: '/solution/show/id/58' },
+          { label: 'Agricultura inteligente', href: '/solution/show/id/65' },
+          { label: 'Campus inteligente', href: '/solution/show/id/64' },
+          { label: 'Parques industriales inteligentes', href: '/solution/show/id/60' },
+          { label: 'Energía inteligente', href: '/solution/show/id/59' },
+          { label: 'Ciudad inteligente', href: '/solution/show/id/57' },
+          { label: 'Turismo y sitios patrimoniales', href: '/solution/show/id/66' },
+          { label: 'Agua inteligente', href: '/solution/show/id/67' },
+        ],
+      },
+      {
+        title: 'SOPORTE',
+        links: [
+          { label: 'Soporte técnico', href: '/service/#page1' },
+          { label: 'Software', href: '/service/#page2' },
+          { label: 'Descargas', href: '/service/#page3' },
+          { label: 'Servicio posventa', href: '/service/#page4' },
+        ],
+      },
+      {
+        title: 'NOTICIAS',
+        links: [
+          { label: 'Noticias de la empresa', href: '/news/' },
+          { label: 'Ferias', href: '/news/index/cid/81' },
+          { label: 'Noticias de la industria', href: '/news/index/cid/80' },
+          { label: 'Preguntas frecuentes', href: '/news/faqs' },
+        ],
+      },
+      {
+        title: 'NOSOTROS',
+        links: [
+          { label: 'Quiénes somos', href: '/about/' },
+          { label: 'Calidad y confiabilidad', href: '/about/quality' },
+          { label: 'Socios', href: '/about/partner' },
+          { label: 'Carreras', href: '/about/joinus' },
+          { label: 'Contacto', href: '/about/contact' },
+        ],
+      },
+    ],
+    contactTitle: 'CONTACTO',
+    followTitle: 'SÍGANOS',
+    copyright: `© 2018–2026 ${site.companyEn} Todos los derechos reservados.`,
+  },
+};
+
 /** 合作伙伴 LOGO 墙（双语共用，替换 src/assets/images/partners/ 同名文件即可） */
 export const partnerLogos = [
   { img: 'partners/logo-01.jpg', alt: 'Huawei' },
@@ -497,5 +719,5 @@ export const partnerLogos = [
   { img: 'partners/logo-21.jpg', alt: '3M' },
 ];
 
-export const homeContent = { en, zh } as const;
+export const homeContent = { en, zh, es } as const;
 export type HomeContent = (typeof homeContent)['en'];

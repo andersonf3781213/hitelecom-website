@@ -5,6 +5,7 @@
  */
 import { productTabs } from '../../data/product';
 import { l, type Locale } from '../../i18n';
+import { ui } from '../../data/ui';
 
 interface Props { locale: Locale; active: string }
 const { locale, active } = Astro.props;
@@ -21,7 +22,7 @@ const tabs = productTabs[locale];
           </li>
         ))}
       </ul>
-      <select id="changeurl" aria-label={locale === 'zh' ? '切换产品分类' : 'Switch product category'}>
+      <select id="changeurl" aria-label={ui[locale].catTabsAria}>
         {tabs.map((t) => (
           <option value={l(t.href, locale)} selected={t.key === active}>{t.label}</option>
         ))}
