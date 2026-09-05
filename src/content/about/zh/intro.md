@@ -579,10 +579,10 @@ Team work: 团队协作
 				  					 
 				  <div class="swiper-slide" lang="04">
 				   	<div class="about_6_2_1">
-						<img alt="IATF 16949 汽车行业质量管理体系认证证书" src="/images/about/up_b6d04de84606f61cbcf67b1b0d9f3435.webp">
+						<img alt="IATF 16949:2016 汽车行业质量管理体系认证证书（TÜV NORD CERT GmbH 签发，证书编号 NO.44111191175，2019–2025 年有效）" src="/images/about/up_b6d04de84606f61cbcf67b1b0d9f3435.webp">
 					</div>
 					<div class="about_6_2_2">
-						IATF 16949					</div>
+						IATF 16949（2019–2025）					</div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="05">

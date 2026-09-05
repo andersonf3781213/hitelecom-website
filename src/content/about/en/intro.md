@@ -562,10 +562,10 @@ Teamwork
 				  					 
 				  <div class="swiper-slide" lang="04">
 				   	<div class="about_6_2_1">
-						<img alt="IATF 16949 automotive quality management certificate" src="/images/about/up_b6d04de84606f61cbcf67b1b0d9f3435.webp">
+						<img alt="IATF 16949:2016 certificate No. 44111191175 issued by TÜV NORD CERT GmbH, valid 2019 to 2025" src="/images/about/up_b6d04de84606f61cbcf67b1b0d9f3435.webp">
 					</div>
 					<div class="about_6_2_2">
-						IATF 16949					</div>
+						IATF 16949 · 2019–2025					</div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="05">

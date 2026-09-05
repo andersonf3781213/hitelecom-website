@@ -427,7 +427,7 @@
 					Rigorous Quality Control Procedures
 				</div>
 				<div class="qa_6_mid_right_2 reveal">
-					<p>The Hitelecom team adopts a Total Quality Management (TQM) philosophy, with quality control at every stage of product development, manufacturing, sales, and service. Our objective is to prevent defects through process control, company-wide participation, and continuous improvement. We have successfully obtained ISO 9001 and IATF 16949 quality management system certifications.</p>				</div>
+					<p>The Hitelecom team adopts a Total Quality Management (TQM) philosophy, with quality control at every stage of product development, manufacturing, sales, and service. Our objective is to prevent defects through process control, company-wide participation, and continuous improvement. We are certified to the ISO 9001 quality management system. Hitelecom was previously certified to IATF 16949:2016 by TÜV NORD CERT GmbH (Certificate No. 44111191175, IATF Registration No. 0359402, valid September 19, 2019 – September 18, 2025).</p>				</div>
 			</div>
 		</Div>
 	</div>
