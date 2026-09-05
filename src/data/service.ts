@@ -224,4 +224,66 @@ const es: ServiceContent = {
   submit: 'Enviar solicitud de soporte',
 };
 
-export const serviceContent: Record<Locale, ServiceContent> = { ...serviceContentBase, es };
+const de: ServiceContent = {
+  bannerImg: 'service/banner.jpg',
+  bannerSub: '',
+  bannerTitle: 'SERVICE',
+  tabs: [
+    { label: 'Technischer Support', anchor: '#page1' },
+    { label: 'Software', anchor: '#page2' },
+    { label: 'Downloads', anchor: '#page3' },
+    { label: 'After-Sales-Service', anchor: '#page4' },
+  ],
+  techHeading: 'Technischer Support für jede Phase Ihres Projekts',
+  techCards: [
+    { img: 'service/tech-1.jpg', title: 'Hardware-Anpassung', desc: 'Passen Sie Sensorik, Konnektivität, Stromversorgung, Schnittstellen und Gehäuse an Ihre Anwendung an.' },
+    { img: 'service/tech-2.jpg', title: 'Software-Anpassung', desc: 'Passen Sie Firmware, Dashboards, APIs, Datenmodelle und Plattformintegrationen an.' },
+    { img: 'service/tech-3.jpg', title: 'Fernsupport', desc: 'Erhalten Sie remote Fehlerdiagnose und -behebung, Konfigurationsanleitung und Bereitstellungssupport von unserem Engineering-Team.' },
+    { img: 'service/tech-4.jpg', title: 'Telefonsupport', desc: 'Sprechen Sie mit einem Ingenieur für Installations- und Fehlerbehebungsanleitung.' },
+    { img: 'service/tech-5.jpg', title: 'Vor-Ort-Support', desc: 'Vereinbaren Sie technischen Support in situ, wenn Fernunterstützung nicht ausreicht.' },
+    { img: 'service/tech-6.jpg', title: 'Wartungssupport', desc: 'Erhalten Sie Reparatur, Ersatz und technische Nachverfolgung für unterstützte Produkte.' },
+  ],
+  softHeading: 'Software',
+  softSub1: 'Verfügbar auf PC, mobiler App, Großformatdisplays und Videowänden',
+  softSub2: 'Hitelecom Cloud | Geräte und Daten von überall überwachen',
+  softBullets: [
+    { icon: 'service/img7.png', text: 'Nutzen Sie NFC in der mobilen App für eine schnellere Einrichtung und Wartung.' },
+    { icon: 'service/img8.png', text: 'Konfigurieren Sie unterstützte Geräte remote über Web oder App und reduzieren Sie Standortbesuche.' },
+    { icon: 'service/img9.png', text: 'Passen Sie Auslösebedingungen und Reaktionszeiten für E-Mail- und App-Alarmbenachrichtigungen an.' },
+    { icon: 'service/img9-2.png', text: 'Passen Sie Dashboards mit Ansichten des digitalen Zwillings, GIS-Karten und anderen Datenvisualisierungen an.' },
+  ],
+  softRightImg: 'service/software-right.png',
+  platforms: [
+    { icon: 'service/img12.png', label: 'Windows' },
+    { icon: 'service/img13.png', label: 'Android' },
+    { icon: 'service/img15.png', label: 'WeChat-Mini-Programm' },
+    { icon: 'service/img17.png', label: 'iOS' },
+  ],
+  docsHeading: 'Downloads',
+  docsP1: [
+    { name: 'Unternehmensprofil', type: 'Broschüre (EN)', file: '/downloads/company-profile.pdf', downName: 'Hitelecom-Company-Profile.pdf' },
+    { name: 'Hitelecom Cloud', type: 'Szenarien (EN)', file: '/downloads/hitelecom-cloud-scenarios.pdf', downName: 'Hitelecom-Cloud-Scenarios.pdf' },
+    { name: 'Temperatursensor', type: 'Broschüre (EN)', file: '/downloads/temperature-sensor.jpg', downName: 'Temperature-Sensor-Brochure.jpg' },
+    { name: 'Bodensensor', type: 'Broschüre (EN)', file: '/downloads/soil-sensor.jpg', downName: 'Soil-Sensor-Brochure.jpg' },
+    { name: 'Tauch-Füllstandssensor', type: 'Broschüre (EN)', file: '/downloads/liquid-level-sensor.jpg', downName: 'Liquid-Level-Sensor-Brochure.jpg' },
+    { name: 'Drucksensor', type: 'Broschüre (EN)', file: '/downloads/pressure-sensor.jpg', downName: 'Pressure-Sensor-Brochure.jpg' },
+    { name: 'Wassereinbruchsensor (kundenspezifisches Projekt)', type: 'Broschüre (EN)', file: '/downloads/water-leakage-sensor.jpg', downName: 'Water-Leakage-Sensor-Brochure.jpg' },
+    { name: 'Luftqualität', type: 'Broschüre (EN)', file: '/downloads/air-quality-sensor.jpg', downName: 'Air-Quality-Sensor-Brochure.jpg' },
+  ],
+  docsP2: [
+    { name: 'Radar-Abstandssensor', type: 'Broschüre (EN)', file: '/downloads/distance-measurement-sensor.jpg', downName: 'Distance-Measurement-Sensor-Brochure.jpg' },
+    { name: '2-in-1-Temperatursensor für Gefahrenbereiche', type: 'Broschüre (EN)', file: '/downloads/temperature-sensor-ex.jpg', downName: 'Temperature-Sensor-EX-Brochure.jpg' },
+    { name: '2-in-1-Temperatur- und Drucksensor für Gefahrenbereiche', type: 'Broschüre (EN)', file: '/downloads/temp-pressure-2in1-ex.jpg', downName: 'Temp-Pressure-2in1-EX-Brochure.jpg' },
+    { name: 'Temperatur- und Feuchtigkeitssensor', type: 'Datenblatt (EN)', file: '/downloads/h300-temperature-humidity-sensor-datasheet.pdf', downName: 'Hitelecom-Temperature-Humidity-Sensor-Datasheet.pdf' },
+    { name: 'Bodensensor', type: 'Datenblatt (EN)', file: '/downloads/h300-soil-sensor-datasheet.pdf', downName: 'Hitelecom-Soil-Sensor-Datasheet.pdf' },
+    { name: 'Drucksensor', type: 'Datenblatt (EN)', file: '/downloads/h300-pressure-sensor-datasheet.pdf', downName: 'Hitelecom-Pressure-Sensor-Datasheet.pdf' },
+    { name: 'Neigungssensor', type: 'Datenblatt (EN)', file: '/downloads/h310-ts180c-tilt-sensor-datasheet.pdf', downName: 'H310-TS180C-Tilt-Sensor-Datasheet.pdf' },
+    { name: 'Radar-Abstand', type: 'Datenblatt (EN)', file: '/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf', downName: 'H310-MW012-Radar-Distance-Sensor-Datasheet.pdf' },
+    { name: 'Luftqualität', type: 'Datenblatt (EN)', file: '/downloads/h310-aq041-air-quality-sensor-datasheet.pdf', downName: 'H310-AQ041-Air-Quality-Sensor-Datasheet.pdf' },
+  ],
+  formHeading: 'After-Sales-Service',
+  formPh: { name: 'Name', phone: 'Telefon', email: 'E-Mail', message: 'Sagen Sie uns, was Sie benötigen: das Produkt, die Anwendung, die Menge und die Bedingungen am Standort. Wir beantworten die meisten Anfragen innerhalb eines Werktags.' },
+  submit: 'Supportanfrage senden',
+};
+
+export const serviceContent: Record<Locale, ServiceContent> = { ...serviceContentBase, es, de };

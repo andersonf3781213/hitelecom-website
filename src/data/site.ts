@@ -53,6 +53,7 @@ export const site = {
     en: 'IoT Turnkey Solution Provider',
     zh: '物联网整体解决方案提供商',
     es: 'Proveedor de soluciones integrales de IoT',
+    de: 'Anbieter ganzheitlicher IoT-Lösungen',
   },
 } as const;
 
@@ -78,6 +79,14 @@ export const defaultSeo = {
       '上海宏太通信技术有限公司（Hitelecom）设计与制造50余种工业物联网传感终端与记录仪配置，主打户外与工业4G、NB-IoT市场，部分型号支持LoRa/LoRaWAN，可接入宏太云、客户云平台或私有化部署（API/MQTT），覆盖工业监测、智慧水务、智慧城市、智慧农业，支持OEM/ODM定制。',
     keywords:
       '宏太通信,Hitelecom,工业物联网传感器,户外4G传感器,NB-IoT传感器,蜂窝物联网传感终端,工业温度传感器,温湿度传感器,温湿度记录仪,空气质量传感器,TVOC传感器,无线压力传感器,土壤水分传感器,倾角传感器,振动传感器,投入式液位传感器,雷达测距传感器,资产定位终端,定制气体传感器,物联网云平台,传感器OEM,传感器ODM',
+  },
+  de: {
+    title:
+      'Hitelecom | Industrielle 4G- & NB-IoT-Sensoren',
+    description:
+      'Hitelecom entwickelt industrielle 4G-, NB-IoT- und LoRa-Sensoren, Datenlogger und Cloud-Integrationen für die Fernüberwachung, mit OEM/ODM-Support.',
+    keywords:
+      'Hitelecom, industrielle IoT-Sensoren, 4G-IoT-Sensoren für Außenbereich, NB-IoT-Sensoren, zellulare IoT-Sensorterminals, LoRa-Sensoren, IoT-Cloud-Integration, industrielle Temperatursensoren, Temperatur- und Feuchtigkeitssensoren, Datenlogger für Temperatur und Feuchtigkeit, Luftqualitätssensoren, TVOC-Sensoren, drahtlose Drucksensoren, Bodenfeuchtesensoren, Neigungssensoren, Vibrationssensoren, Tauch-Füllstandssensoren, Radar-Abstandssensoren, Asset-Tracking-Sensoren, kundenspezifische Gassensoren, IoT-Sensoren Hersteller China, OEM ODM IoT-Sensoren',
   },
   es: {
     title:

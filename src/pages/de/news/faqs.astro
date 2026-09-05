@@ -1,0 +1,45 @@
+---
+/**
+ * 新闻中心-常见问题（德语）：/news/faqs
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import NewsShell from '../../../components/news/NewsShell.astro';
+import FaqsBody from '../../../components/news/FaqsBody.astro';
+import { getNewsContent } from '../../../data/news';
+import { optimizedSrc } from '../../../utils/images';
+
+const faqs = (await getNewsContent('de')).faqs;
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://www.hitelecom.com/de' },
+    { '@type': 'ListItem', position: 2, name: 'News', item: 'https://www.hitelecom.com/de/news' },
+    { '@type': 'ListItem', position: 3, name: 'Häufige Fragen', item: 'https://www.hitelecom.com/de/news/faqs' },
+  ],
+};
+// FAQPage 结构化数据：GEO 核心，问答对可被 Google/AI 直接引用
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+const pageBanner = await optimizedSrc('news/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="de"
+  title="Häufige Fragen zu industriellen IoT-Sensoren | Hitelecom"
+  description="Antworten zu Batterielebensdauer, Konnektivität, EMV, Installation, Kalibrierung, Cloud-Integration und Remote-Firmware-Updates von Sensoren."
+>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+    <FaqsBody locale="de" />
+  </NewsShell>
+</BaseLayout>

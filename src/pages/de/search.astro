@@ -1,0 +1,18 @@
+---
+/**
+ * 站内搜索页（德语）：/search
+ * 修复原站 /search/ 死链：静态索引 + 浏览器端过滤，无需后端。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SearchPage from '../../components/SearchPage.astro';
+---
+
+<BaseLayout
+  headerSolid
+  locale="de"
+  robots="noindex, follow"
+  title="Site-Suche - Hitelecom industrielle IoT-Sensoren"
+  description="Suchen Sie Hitelecoms industrielle IoT-Sensoren, Datenlogger, Lösungen und News: 4G- und NB-IoT-Sensorterminals für den Außenbereich, IoT-Cloud-Plattform."
+>
+  <SearchPage locale="de" />
+</BaseLayout>

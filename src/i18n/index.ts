@@ -7,7 +7,7 @@
  *   Pages 对 /about 直接 200 服务 about.html，旧 .html 链接由平台 308 兼容。
  */
 
-export const locales = ['en', 'zh', 'es'] as const;
+export const locales = ['en', 'zh', 'es', 'de'] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = 'en';
 
@@ -15,6 +15,7 @@ export const localeNames: Record<Locale, string> = {
   en: 'EN',
   zh: 'ZH',
   es: 'ES',
+  de: 'DE',
 };
 
 /** html lang 属性值 */
@@ -22,6 +23,7 @@ export const htmlLang: Record<Locale, string> = {
   en: 'en',
   zh: 'zh-CN',
   es: 'es',
+  de: 'de',
 };
 
 /** 非默认语言列表（用于生成 hreflang 互链与语言切换菜单） */
@@ -60,6 +62,6 @@ export function alternateUrl(pathname: string, target: Locale): string {
   const normalized = pathname.replace(/\/index\.html$/, '/');
   const noExt = normalized.replace(/\.html$/, '');
   // 剥掉任意非默认语言前缀（/zh、/es），再按目标语言重新加前缀
-  const stripped = noExt.replace(/^\/(zh|es)(?=\/|$)/, '') || '/';
+  const stripped = noExt.replace(/^\/(zh|es|de)(?=\/|$)/, '') || '/';
   return l(stripped === '/' ? '/' : `${stripped}/`, target);
 }

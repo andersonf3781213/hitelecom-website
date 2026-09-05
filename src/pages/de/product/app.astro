@@ -1,0 +1,134 @@
+---
+/**
+ * IoT App 专页（德语）：/product/app
+ * 与原站 1:1：横幅 + 分类条 + 四端支持 + 产品功能 + 应用场景
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductShell from '../../../components/product/ProductShell.astro';
+import CategoryTabs from '../../../components/product/CategoryTabs.astro';
+import Img from '../../../components/Img.astro';
+import { productContent } from '../../../data/product';
+import { optimizedSrc } from '../../../utils/images';
+import { breadcrumbLd, SITE_URL } from '../../../utils/jsonld';
+import WaveDivider from '../../../components/WaveDivider.astro';
+
+const d = productContent.de.app;
+const preloadImage = await optimizedSrc(d.banner.images[3], { width: 800 });
+const bcLd = breadcrumbLd([
+  { name: 'Startseite', url: `${SITE_URL}/de/` },
+  { name: 'Produkte' },
+  { name: d.banner.title },
+]);---
+
+<BaseLayout
+  locale="de"
+  preloadImage={preloadImage}
+  title="IoT-App für Fernüberwachung | Hitelecom"
+  description="Konfigurieren Sie unterstützte Geräte per NFC, überwachen Sie Live-Daten, empfangen Sie Alarme und verwalten Sie Feld-Assets mit der Hitelecom App."
+>
+  <ProductShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(bcLd)} />
+    <div class="clearfix nybanner pro_banner_wrap">
+      <div class="nybanner_bg_pro"></div>
+      <div class="nybanner_bg_pro2"></div>
+      <div class="pro_banner_left">
+        <h1 class="daxie pro_banner_left_1 reveal">{d.banner.title}</h1>
+        <div class="pro_banner_left_2 reveal">{d.banner.subtitle}</div>
+        <div class="pro_banner_left_3 reveal">{d.banner.desc}</div>
+      </div>
+      <div class="pro_banner_right">
+        <div class="pro_banner_right_1"><Img src={d.banner.images[0]} alt="Abzeichen der Hitelecom IoT-Plattform" loading="eager" /></div>
+        <div class="pro_banner_right_1" id="c1"><Img src={d.banner.images[1]} alt="" loading="eager" /></div>
+        <div class="pro_banner_right_1" id="c2"><Img src={d.banner.images[2]} alt="" loading="eager" /></div>
+        <Img src={d.banner.images[3]} alt={d.banner.title} loading="eager" fetchpriority="high" />
+      </div>
+      <div id="cate"></div>
+    </div>
+
+    <CategoryTabs locale="de" active="app" />
+
+    {/* 四端支持 */}
+    <div class="clearfix app_1">
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.platforms.heading}</div>
+        <div class="clearfix app_1_1 reveal">
+          <ul>
+            {d.platforms.items.map((p) => (
+              <li>
+                <div class="app_1_1_mid">
+                  <div class="app_1_1_mid_1"><Img src={p.img} alt={p.name} natural loading="lazy" /></div>
+                  <div class="app_1_1_mid_2">{p.name}</div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {/* 产品功能 */}
+    <div class="clearfix index_2 app_2">
+      <div class="index_2_top">
+        <WaveDivider />
+      </div>
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.features.heading}</div>
+        <div class="clearfix yun_1_1 reveal">
+          <div style="margin:0 auto; max-width:800px; text-align:center">{d.features.subtitle}</div>
+        </div>
+        <div class="clearfix app_2_1">
+          <ul>
+            {d.features.items.map((f) => (
+              <li class="reveal">
+                <div class="app_2_1_mid">
+                  <div class="app_2_1_mid_left">
+                    <Img src={f.img} alt={f.title} widths={[480, 800, 1080, 1300]} sizes="(max-width: 900px) 92vw, 38vw" quality={90} />
+                  </div>
+                  <div class="app_2_1_mid_right">
+                    <div class="cell_mid"><div class="cell_h">
+                      <div class="app_2_1_mid_right_mid">
+                        <div class="app_2_1_mid_right_mid_1">{f.title}</div>
+                        <div class="app_2_1_mid_right_mid_2">{f.desc}</div>
+                      </div>
+                    </div></div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {/* 应用场景 */}
+    <div class="clearfix index_2 app_3">
+      <div class="index_2_top">
+        <WaveDivider />
+      </div>
+      <div class="indexmid">
+        <div class="index_1_1 reveal">{d.app3.heading}</div>
+        <div class="clearfix yun_1_1 reveal">
+          <div style="margin:0 auto; text-align:center">{d.app3.subtitle}</div>
+        </div>
+        <div class="clearfix app_3_1">
+          <ul>
+            {d.app3.items.map((s) => (
+              <li class="reveal">
+                <div class="app_3_1_mid">
+                  <div class="app_3_1_mid_1">
+                    <Img src={s.img} alt={s.label} widths={[300, 560]} sizes="(max-width: 900px) 44vw, 23vw" />
+                  </div>
+                  <div class="app_3_1_mid_2">
+                    <div class="app_3_1_mid_2_1">{s.label}</div>
+                    <div class="app_3_1_mid_2_2"></div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ProductShell>
+</BaseLayout>
+

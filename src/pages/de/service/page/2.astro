@@ -1,0 +1,32 @@
+---
+/**
+ * 支持服务页（英文，第 2 页）：/service/page/2
+ * 与原站 /service.html?page=2 一致：文档下载区为第 2 页卡片（3 张），分页 2 高亮
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import ServiceShell from '../../../../components/service/ServiceShell.astro';
+import ServiceBody from '../../../../components/service/ServiceBody.astro';
+import { optimizedSrc } from '../../../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://www.hitelecom.com/de' },
+    { '@type': 'ListItem', position: 2, name: 'Support', item: 'https://www.hitelecom.com/de/service' },
+  ],
+};
+const pageBanner = await optimizedSrc('service/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="de"
+  title="Dokumenten-Download | IoT-Sensorbroschüren - Hitelecom"
+  description="Laden Sie Broschüren und Handbücher von Hitelecom für industrielle 4G- oder NB-IoT-Sensorprodukte für Temperatur, Druck, Abstand und mehr herunter."
+>
+  <ServiceShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <ServiceBody locale="de" page={2} />
+  </ServiceShell>
+</BaseLayout>

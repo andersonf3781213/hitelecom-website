@@ -1,0 +1,32 @@
+---
+/**
+ * 关于我们 - 联系我们（德语）：/about/contact
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AboutShell from '../../../components/about/AboutShell.astro';
+import AboutContact from '../../../components/about/AboutContact.astro';
+import { contentImageSrc } from '../../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://www.hitelecom.com/de' },
+    { '@type': 'ListItem', position: 2, name: 'Über uns', item: 'https://www.hitelecom.com/de/about' },
+    { '@type': 'ListItem', position: 3, name: 'Kontakt', item: 'https://www.hitelecom.com/de/about/contact' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="de"
+  title="Kontakt zu Hitelecom | Industrielle IoT-Sensoren"
+  description="Kontaktieren Sie Hitelecom für industrielle 4G-, NB-IoT- und LoRa-Sensoren, Cloud-Integration und OEM/ODM-Projekte. Der Vertriebssupport sitzt in Shanghai."
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <AboutContact locale="de" />
+  </AboutShell>
+</BaseLayout>

@@ -193,6 +193,54 @@ const staticConfig: Record<Locale, Pick<NewsContent,
   crumbNews: 'Noticias',
   returnLabel: 'Volver a noticias',
   catNames: { company: 'Noticias de la empresa', exh: 'Ferias', ind: 'Noticias de la industria', case: 'Casos de éxito', blog: 'Blog técnico' },
+ }, de: {
+  bannerImg: 'news/banner.jpg',
+  bannerSub: '',
+  bannerTitle: 'NEWS-CENTER',
+  tabs: [
+   { key: 'company', label: 'Unternehmensnews', href: '/news/' },
+   { key: 'exh', label: 'Messen', href: '/news/index/cid/81' },
+   { key: 'ind', label: 'Branchennews', href: '/news/index/cid/80' },
+   { key: 'faqs', label: 'Häufige Fragen', href: '/news/faqs' },
+  ],
+  readmore: 'Weiterlesen',
+  faqs: [
+   {
+    date: 'Hitelecom · 28.02.2024',
+    q: 'Viele Sensoren sind auf Netzstrom oder große Batterien angewiesen – begrenzt ein hoher Energieverbrauch ihre Lebensdauer?',
+    a: 'Die Sensorterminals von Hitelecom nutzen stromsparende Prozessoren, optimiertes Energiemanagement und konfigurierbare Übertragungsintervalle. Ausgewählte batteriebetriebene Modelle sind für mehr als 10 Jahre Betrieb bei einem einstündigen Übertragungsintervall ausgelegt; die tatsächliche Batterielebensdauer hängt von Modell, Übertragungsintervall, Netzbedingungen und Betriebstemperatur ab.',
+   },
+   {
+    date: 'Hitelecom · 16.04.2024',
+    q: 'Kann elektromagnetische Störung (EMI) die Genauigkeit und Signalintegrität von Sensoren beeinträchtigen?',
+    a: 'Ausgewählte Modelle sind für die EMC-Anforderungen ihrer Zielumgebungen ausgelegt und getestet. Fordern Sie den entsprechenden Prüfbericht für Ihr Modell an.',
+   },
+   {
+    date: 'Hitelecom · 26.06.2024',
+    q: 'Kann eine ungeeignete Sensorplatzierung die Datengenauigkeit und Wirksamkeit des Sensors beeinträchtigen?',
+    a: 'Vor der Bereitstellung prüft unser Engineering-Team Ihre Standortbedingungen und ermittelt gemeinsam mit Ihnen die optimalen Sensorpositionen.',
+   },
+   {
+    date: 'Hitelecom · 28.08.2024',
+    q: 'Kann die Messgenauigkeit durch Temperaturschwankungen, elektromagnetische Störungen oder andere Umgebungsfaktoren driften?',
+    a: 'Hitelecom wählt hochwertige Sensorelemente aus, passt Konfigurationen an Kundenanforderungen an und unterstützt die Kalibrierung abgestimmt auf die Einsatzumgebung.',
+   },
+   {
+    date: 'Hitelecom · 16.10.2025',
+    q: 'Wie können Geräte in abgelegenen oder komplexen Umgebungen eine stabile Netzverbindung für die Datenübertragung aufrechterhalten?',
+    a: 'Hitelecom unterstützt 4G Cat.1, NB-IoT und LoRa für die Vernetzung in komplexen Umgebungen. Für datensensible Szenarien sorgen private Bereitstellungsoptionen dafür, dass Felddaten auch an entfernten Standorten zuverlässig Ihre Plattform erreichen.',
+   },
+   {
+    date: 'Hitelecom · 12.12.2025',
+    q: 'IoT-Geräte und -Anwendungen benötigen regelmäßige Updates, um Schwachstellen zu beheben und Funktionen hinzuzufügen – wie wird das remote gehandhabt?',
+    a: 'Unterstützte Geräte können OTA-Firmware-Updates über Hitelecom Cloud erhalten. Update-Planung, Versionsverfolgung und Rollback-Optionen hängen vom Gerät und der Bereitstellungskonfiguration ab.',
+   },
+  ],
+  relatedHeading: 'Verwandte Artikel',
+  crumbHome: 'Startseite',
+  crumbNews: 'News',
+  returnLabel: 'Zurück zu den News',
+  catNames: { company: 'Unternehmensnews', exh: 'Messen', ind: 'Branchennews', case: 'Erfolgsgeschichten', blog: 'Tech-Blog' },
  },
 };
 
@@ -280,12 +328,14 @@ export async function getNewsContent(locale: Locale): Promise<NewsContent> {
 
 const MONTHS_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const MONTHS_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+const MONTHS_DE = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
 
 /** 新闻日期显示：ISO 日期按语言习惯渲染（EN "January 1, 2025"；ES "1 de enero de 2025"），其他格式原样返回 */
 export function fmtNewsDate(date: string, locale: string = 'en'): string {
   const m = date.match(/^(\d{4})-(\d{2})-(\d{2})/);
   if (!m) return date;
   if (locale === 'es') return `${+m[3]} de ${MONTHS_ES[+m[2] - 1]} de ${m[1]}`;
+  if (locale === 'de') return `${+m[3]}. ${MONTHS_DE[+m[2] - 1]} ${m[1]}`;
   return `${MONTHS_EN[+m[2] - 1]} ${+m[3]}, ${m[1]}`;
 }
 

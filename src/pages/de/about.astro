@@ -1,0 +1,32 @@
+---
+/**
+ * 关于我们 - 公司简介（德语）：/about
+ * 与原站 /about/ 1:1：横幅 + 五个选项卡 + 简介/企业文化/发展历程/环境/荣誉
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AboutShell from '../../components/about/AboutShell.astro';
+import AboutIntro from '../../components/about/AboutIntro.astro';
+import { contentImageSrc } from '../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://www.hitelecom.com/de' },
+    { '@type': 'ListItem', position: 2, name: 'Über uns', item: 'https://www.hitelecom.com/de/about' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="de"
+  title="Über Hitelecom | Hersteller industrieller IoT-Sensoren"
+  description="2012 in Shanghai gegründet, entwickelt Hitelecom industrielle IoT-Sensoren, Datenlogger und cloud-verbundene Überwachungslösungen, mit OEM/ODM-Support."
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <AboutIntro locale="de" />
+  </AboutShell>
+</BaseLayout>

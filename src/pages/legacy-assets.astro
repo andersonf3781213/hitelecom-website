@@ -15,7 +15,7 @@ import Img from '../components/Img.astro';
 import { productContent } from '../data/product';
 
 const imgs = new Set<string>();
-for (const locale of ['en', 'zh', 'es'] as const) {
+for (const locale of ['en', 'zh', 'es', 'de'] as const) {
   for (const d of Object.values(productContent[locale].details)) {
     for (const s of d.scenarios ?? []) if (s.img) imgs.add(s.img);
   }

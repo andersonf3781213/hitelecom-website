@@ -1,0 +1,32 @@
+---
+/**
+ * 关于我们 - 生态合作伙伴（德语）：/about/partner
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AboutShell from '../../../components/about/AboutShell.astro';
+import AboutPartner from '../../../components/about/AboutPartner.astro';
+import { contentImageSrc } from '../../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://www.hitelecom.com/de' },
+    { '@type': 'ListItem', position: 2, name: 'Über uns', item: 'https://www.hitelecom.com/de/about' },
+    { '@type': 'ListItem', position: 3, name: 'Partner', item: 'https://www.hitelecom.com/de/about/partner' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="de"
+  title="Partnerprogramm | Industrielle IoT-Sensoren"
+  description="Treten Sie dem Partnerprogramm von Hitelecom bei: Schulungen, technischer Support und Vertriebszusammenarbeit für industrielle IoT-Projekte."
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <AboutPartner locale="de" />
+  </AboutShell>
+</BaseLayout>
