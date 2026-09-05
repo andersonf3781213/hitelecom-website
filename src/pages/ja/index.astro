@@ -1,0 +1,90 @@
+---
+/**
+ * 日语首页（挂载于 /ja/）
+ * 采用与英文首页一致的 V18 设计（用户决策：所有语言以 EN 为基础），
+ * 主体为本地化组件 src/components/home/HomeV18Ja.astro
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HomeV18Ja from '../../components/home/HomeV18Ja.astro';
+import { site } from '../../data/site';
+// V18 首页样式进 Astro 管线：自动压缩 + 内容哈希（长缓存 immutable），源图仍在 public 下绝对引用，同名可换
+import '../../styles/home-v18.css';
+import '../../styles/home-v18-override.css';
+
+// 首页专属结构化数据（GEO/SEO）：页面可见的 12 大传感器家族 + 4 大应用领域
+// 每个家族指向其语义化详情页（与卡片上的 View product details 一致）
+const families: Array<[string, string]> = [
+  ['産業用温度センサー', '/ja/product/temperature-sensor'],
+  ['温度・湿度センサー', '/ja/product/temperature-humidity-sensor'],
+  ['温度・湿度データロガー', '/ja/product/temperature-humidity-data-logger'],
+  ['空気質センサー', '/ja/product/air-quality-sensor'],
+  ['TVOCセンサー', '/ja/product/tvoc-sensor'],
+  ['圧力センサー', '/ja/product/pressure-sensor'],
+  ['土壌センサー', '/ja/product/soil-moisture-sensor'],
+  ['傾斜センサー', '/ja/product/tilt-sensor'],
+  ['振動センサー', '/ja/product/vibration-sensor'],
+  ['レーダー距離センサー', '/ja/product/radar-distance-sensor'],
+  ['資産追跡センサー', '/ja/product/asset-tracking-sensor'],
+  ['カスタムガスセンサー', '/ja/product/custom-gas-sensor'],
+];
+// 应用领域：仅收录有独立落地页的条目进 ItemList（与英文首页口径一致）
+const applications: Array<[string, string]> = [
+  ['スマートシティ — 構造物健全性モニタリング', '/ja/solution/show/id/57'],
+  ['スマートファクトリー — 環境条件と設備状態', '/ja/solution/show/id/58'],
+  ['スマート水管理 — パイプライン・レベル・閉塞モニタリング', '/ja/solution/show/id/67'],
+  ['スマート文化遺産 — マイクロクライメートと展示物の動き', '/ja/solution/show/id/66'],
+];
+const homeItemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'HitelecomのIoT製品ファミリーと適用シーン',
+  itemListElement: [
+    ...families.map(([name, href], i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name,
+      url: new URL(href, 'https://www.hitelecom.com').href,
+    })),
+    ...applications.map(([name, href], i) => ({
+      '@type': 'ListItem',
+      position: families.length + i + 1,
+      name,
+      url: new URL(href, 'https://www.hitelecom.com').href,
+    })),
+  ],
+};
+---
+
+<BaseLayout locale="ja" headerSolid v18Grid
+  title="Hitelecom | 産業用 4G・NB-IoT センサー + IoTクラウド"
+  description="物理世界を測定可能に。Hitelecomは50種類以上の産業用4G・NB-IoT・LoRaセンサーターミナルを設計し、プライベートまたはパブリッククラウド展開に対応。OEM/ODMサポート。">
+  <!-- 首屏 H1 衬线字体（Playfair 500，23KB）预载：黄金 3 秒 -->
+  <link slot="head" rel="preload" href="/fonts/playfair-500.woff2" as="font" type="font/woff2" crossorigin />
+
+  <!-- 首屏轮播第 1 帧设备图按断点预载（LCP），其余大图全部 lazy。
+       桌面端用 imagesrcset：浏览器按 DPR 自选 1920/2560，与 <img> 决策一致，避免高分辨率屏重复下载 -->
+  <link slot="head" rel="preload" as="image" href="/home-assets/img/hero-devices-m-1200-v9.avif" type="image/avif" media="(max-width: 760px)" fetchpriority="high" />
+  <link slot="head" rel="preload" as="image" type="image/avif" media="(min-width: 761px)" fetchpriority="high"
+        imagesrcset="/home-assets/img/hero-devices-1920-v10.avif 1920w, /home-assets/img/hero-devices-2560-v10.avif 2560w"
+        imagesizes="100vw" />
+
+  <!-- 首屏轮播第 2 帧（IoT 云平台图）低优先级预载：
+       保证 7s 自动轮播/手动点击切换时图片已就绪，不出现白场闪烁；
+       low 优先级不与 LCP 首帧抢带宽 -->
+  <link slot="head" rel="preload" as="image" href="/home-assets/img/hero-platform-m-1200-v10.avif" type="image/avif" media="(max-width: 760px)" fetchpriority="low" />
+  <link slot="head" rel="preload" as="image" type="image/avif" media="(min-width: 761px)" fetchpriority="low"
+        imagesrcset="/home-assets/img/hero-platform-1920-v11.avif 1920w, /home-assets/img/hero-platform-2560-v11.avif 2560w"
+        imagesizes="100vw" />
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(homeItemListLd)} />
+
+  <HomeV18Ja />
+
+  <!-- 询盘表单提交配置（Web3Forms），供 home-v18.js 读取；留空自动回退 mailto -->
+  <script is:inline define:vars={{ formEndpoint: site.formEndpoint, formAccessKey: site.formAccessKey }}>
+    window.HITE_FORM_ENDPOINT = formEndpoint;
+    window.HITE_FORM_KEY = formAccessKey;
+  </script>
+  <!-- 首页交互进 Astro 管线：打包压缩 + 内容哈希，type=module 天然 defer -->
+  <script>import '../../scripts/home-v18.js';</script>
+</BaseLayout>

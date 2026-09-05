@@ -1,0 +1,18 @@
+---
+/**
+ * 站内搜索页（日语）：/search
+ * 修复原站 /search/ 死链：静态索引 + 浏览器端过滤，无需后端。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SearchPage from '../../components/SearchPage.astro';
+---
+
+<BaseLayout
+  headerSolid
+  locale="ja"
+  robots="noindex, follow"
+  title="サイト内検索 - Hitelecom 産業用IoTセンサー"
+  description="Hitelecomの産業用IoTセンサー、データロガー、ソリューション、ニュースを検索：屋外向け4G・NB-IoTセンサーターミナル、IoTクラウドプラットフォーム。"
+>
+  <SearchPage locale="ja" />
+</BaseLayout>

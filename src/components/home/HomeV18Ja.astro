@@ -1,0 +1,712 @@
+---
+/**
+ * 首页 V18 设计主体（英文）
+ * 文案与 UI 架构移植自设计稿 Hitelecom-v18（已做多轮事实修正）。
+ * - 样式：src/styles/home-v18.css（设计师原稿清理版，已加 .v18home 作用域隔离，Astro 管线哈希压缩）
+ *         src/styles/home-v18-override.css（品牌蓝覆盖层 + 字体方案 B，后加载）
+ * - 交互：src/scripts/home-v18.js（首屏轮播 / 产品选择器 / 部署架构图 / 询盘表单，Astro 管线打包）
+ * - 图片：public/home-assets/img/，同名覆盖即可替换（首屏设备图待 H68 实拍替换）
+ * - 滚动渐入使用全站约定 .reveal → .in（BaseLayout IntersectionObserver 统一驱动）
+ */
+---
+<div class="v18home">
+<section class="keynote-hero" id="top" aria-labelledby="keynote-title">
+      <div class="keynote-stage" id="keynote-stage" aria-roledescription="carousel" aria-label="Hitelecomの製品とプラットフォームのハイライト">
+        <article class="keynote-slide is-active" data-keynote-slide="0" data-goto="#products" role="link" tabindex="0" aria-label="製品ポートフォリオのセクションを表示" aria-hidden="false">
+          <picture>
+            <source media="(max-width: 760px)" type="image/avif" srcset="/home-assets/img/hero-devices-m-1200-v9.avif" width="1200" height="900">
+            <source media="(max-width: 760px)" type="image/jpeg" srcset="/home-assets/img/hero-devices-m-1200-v9.jpg" width="1200" height="900">
+            <source type="image/avif" sizes="100vw"
+                    srcset="/home-assets/img/hero-devices-1920-v10.avif 1920w, /home-assets/img/hero-devices-2560-v10.avif 2560w">
+            <img src="/home-assets/img/hero-devices-2560-v10.jpg"
+                 srcset="/home-assets/img/hero-devices-1920-v10.jpg 1920w, /home-assets/img/hero-devices-2560-v10.jpg 2560w"
+                 sizes="100vw"
+                 alt="接続されたデジタル地球儀の上に並ぶHitelecomの産業用IoTセンサーとゲートウェイ"
+                 width="2560" height="1440" fetchpriority="high" decoding="async" draggable="false">
+          </picture>
+          <div class="keynote-copy">
+            <h1 id="keynote-title">物理世界を測定可能に。</h1>
+          </div>
+        </article>
+
+        <article class="keynote-slide" data-keynote-slide="1" data-goto="#software" role="link" tabindex="0" aria-label="IoTクラウド展開セクションを表示" aria-hidden="true">
+          <picture>
+            <source media="(max-width: 760px)" type="image/avif" srcset="/home-assets/img/hero-platform-m-1200-v10.avif" width="1200" height="900">
+            <source media="(max-width: 760px)" type="image/jpeg" srcset="/home-assets/img/hero-platform-m-1200-v10.jpg" width="1200" height="900">
+            <source type="image/avif" sizes="100vw"
+                    srcset="/home-assets/img/hero-platform-1920-v11.avif 1920w, /home-assets/img/hero-platform-2560-v11.avif 2560w">
+            <img src="/home-assets/img/hero-platform-2560-v11.jpg"
+                 srcset="/home-assets/img/hero-platform-1920-v11.jpg 1920w, /home-assets/img/hero-platform-2560-v11.jpg 2560w"
+                 sizes="100vw"
+                 alt="デジタル地球儀を介して接続されたHitelecomのIoTダッシュボードとモバイルアプリケーション"
+                 width="2560" height="1440" loading="lazy" decoding="async" draggable="false">
+          </picture>
+          <div class="keynote-copy">
+            <h2 class="keynote-headline">IoTの世界を構築しましょう。</h2>
+          </div>
+        </article>
+
+        <div class="keynote-controls" role="group" aria-label="ヒーロースライドを選択">
+          <button class="keynote-dot" type="button" aria-pressed="true" aria-label="産業用IoTデバイスを表示" data-keynote-target="0"></button>
+          <button class="keynote-dot" type="button" aria-pressed="false" aria-label="IoTプラットフォームを表示" data-keynote-target="1"></button>
+        </div>
+      </div>
+
+      <div class="keynote-bridge">
+        <div class="keynote-bridge-copy">
+          <p>Hitelecom IoTデバイス · クラウド · アプリ</p>
+          <h2>超低消費電力。<br>柔軟なコネクティビティ。<br>貴社のプラットフォーム、または当社のものを。</h2>
+          <p>フィールド対応のターミナルをお選びいただくか、4G・NB-IoT・LoRa・LoRaWANコネクティビティを備えた専用デバイスを当社と共同で作成ください。</p>
+          <div class="keynote-bridge-actions">
+            <a class="button button-primary" href="#contact">お問い合わせを開始</a>
+            <a class="text-link" href="#products">製品を見る <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="keynote-trust">
+          <div class="keynote-value-grid" aria-label="Hitelecomの製品・コネクティビティ・工場の証明">
+            <div><strong>センサー</strong><span>50種類以上の産業グレードIoTターミナル</span></div>
+            <div><strong>クラウド</strong><span>プライベートまたはパブリック、貴社または当社のクラウド。</span></div>
+            <div><strong>モバイルアプリ</strong><span>デバイスを監視し、設定済みアラートを受信し、どこからでも対応</span></div>
+            <div class="manufacturing-system-cell"><strong>OEM / ODM</strong><span>筐体・ファームウェア・ブランディング</span><span>ISO 9001 · ISO 14001 · ISO 45001 認証取得</span></div>
+          </div>
+          <p class="keynote-trust-note">認証および製品認可は、施設・モデル・無線構成・対象市場によって異なります。</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="product-module">
+<section class="sec lt" id="products">
+  <div class="shell">
+    <div class="product-homepage-heading">
+      <div>
+        <p class="eyeb">製品ポートフォリオ</p>
+        <h2>測定対象を<br>お選びください。</h2>
+      </div>
+      <p class="lead">Hitelecomは、温度・湿度・圧力・空気質・傾斜・振動などを対象とするセンシングターミナルを提供しています。</p>
+    </div>
+    <input type="radio" name="fam" id="f1" class="famr" checked>
+<input type="radio" name="fam" id="f2" class="famr">
+<input type="radio" name="fam" id="f3" class="famr">
+<input type="radio" name="fam" id="f4" class="famr">
+<input type="radio" name="fam" id="f5" class="famr">
+<input type="radio" name="fam" id="f6" class="famr">
+<input type="radio" name="fam" id="f7" class="famr">
+<input type="radio" name="fam" id="f8" class="famr">
+<input type="radio" name="fam" id="f9" class="famr">
+<input type="radio" name="fam" id="f10" class="famr">
+<input type="radio" name="fam" id="f11" class="famr">
+<input type="radio" name="fam" id="f12" class="famr">
+    <div class="cfg">
+      <div class="stagebox">
+        <article class="stage s1"><div class="st-info"><p class="st-eyebrow">センサーファミリー 01 / 12</p><h3>産業用温度センサー</h3><p class="st-desc">プロセスライン、機械室、冷蔵庫向けのPT1000クラスターミナル。</p><div class="chips"><span>−200 °C〜+800 °C</span><span>±0.5°C</span><span>18モデル</span></div><p class="st-proto">4G · NB-IoT · LoRa · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="産業用温度センサー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/temperature-sensor">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-01-industrial-temperature.webp" alt="Hitelecom industrial temperature sensors – ワイヤレスIoTセンシングターミナル" width="478" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s2"><div class="st-info"><p class="st-eyebrow">センサーファミリー 02 / 12</p><h3>温度・湿度センサー</h3><p class="st-desc">クリーンルーム、キャビネット、博物館、ライン向けの環境ターミナル。</p><div class="chips"><span>0〜100 % RH</span><span>±0.2°C</span></div><p class="st-proto">4G · NB-IoT · LoRa · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="温度・湿度センサー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/temperature-humidity-sensor">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-02-temp-humidity.webp" alt="Hitelecom temperature & humidity sensors – ワイヤレスIoTセンシングターミナル" width="820" height="684" loading="lazy" decoding="async"></div></article>
+<article class="stage s3"><div class="st-info"><p class="st-eyebrow">センサーファミリー 03 / 12</p><h3>温度・湿度データロガー</h3><p class="st-desc">コールドチェーン、医薬品、食品輸送向けの監査対応記録。</p><div class="chips"><span>80,000 読数</span><span>±0.2°C</span></div><p class="st-proto">NFC · Local USB · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="温度・湿度データロガー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/temperature-humidity-data-logger">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-03-th-data-logger.webp" alt="NFC設定とUSBエクスポートを備えたHitelecom温度・湿度データロガー" width="820" height="517" loading="lazy" decoding="async"></div></article>
+<article class="stage s4"><div class="st-info"><p class="st-eyebrow">センサーファミリー 04 / 12</p><h3>空気質センサー</h3><p class="st-desc">ひとつのヘッドでマルチパラメータ測定 — PM、CO₂、温度、湿度など。</p><div class="chips"><span>6-in-1</span><span>CO₂ 5,000 ppmまで</span></div><p class="st-proto">4G · NB-IoT · LoRa · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="空気質センサー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/air-quality-sensor">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-04-air-quality.webp" alt="Hitelecom air quality sensors – ワイヤレスIoTセンシングターミナル" width="521" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s5"><div class="st-info"><p class="st-eyebrow">センサーファミリー 05 / 12</p><h3>TVOCセンサー</h3><p class="st-desc">塗装工場、化学品倉庫、実験室向けの固定式VOCモニタリング。</p><div class="chips"><span>0〜100,000 ppb</span><span>1 ppb分解能</span></div><p class="st-proto">4G · NB-IoT · LoRa · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="TVOCセンサー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/tvoc-sensor">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-05-tvoc.webp" alt="Hitelecom TVOC sensors – ワイヤレスIoTセンシングターミナル" width="750" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s6"><div class="st-info"><p class="st-eyebrow">センサーファミリー 06 / 12</p><h3>圧力センサー</h3><p class="st-desc">パイプライン、タンク、井戸、油圧システム向けのゲージ圧・絶対圧測定。</p><div class="chips"><span>None</span><span>IP67 or IP68</span><span>30以上のモデル</span></div><p class="st-proto">4G · NB-IoT · LoRa · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="圧力センサー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/pressure-sensor">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-06-pressure.webp" alt="Hitelecom pressure sensors – ワイヤレスIoTセンシングターミナル" width="458" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s7"><div class="st-info"><p class="st-eyebrow">センサーファミリー 07 / 12</p><h3>土壌センサー</h3><p class="st-desc">農業および環境サイト向けの土壌水分・温度・伝導率・養分モニタリング。</p><div class="chips"><span>NPKオプション</span><span>IP67 or IP68</span></div><p class="st-proto">4G · NB-IoT · LoRa · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="土壌センサー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/soil-moisture-sensor">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-07-soil.webp" alt="Hitelecom soil sensors – ワイヤレスIoTセンシングターミナル" width="553" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s8"><div class="st-info"><p class="st-eyebrow">センサーファミリー 08 / 12</p><h3>傾斜センサー</h3><p class="st-desc">タワー、ポール、鉄道、斜面の構造傾斜。</p><div class="chips"><span>None</span><span>IP68</span></div><p class="st-proto">4G · NB-IoT · LoRa · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="傾斜センサー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/tilt-sensor">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-08-tilt.webp" alt="Hitelecom tilt sensors – ワイヤレスIoTセンシングターミナル" width="648" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s9"><div class="st-info"><p class="st-eyebrow">センサーファミリー 09 / 12</p><h3>振動センサー</h3><p class="st-desc">歴史的建造物、橋梁、トンネル、鉄道インフラの構造振動モニタリング。</p><div class="chips"><span>None</span><span>80 Hzで±1 %</span></div><p class="st-proto">4G · NB-IoT · LoRa · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="振動センサー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/vibration-sensor">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-09-vibration.webp" alt="Hitelecom vibration sensors – ワイヤレスIoTセンシングターミナル" width="642" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s10"><div class="st-info"><p class="st-eyebrow">センサーファミリー 10 / 12</p><h3>レーダー距離センサー</h3><p class="st-desc">タンク、サイロ、河川、開放容器向けの非接触距離測定。</p><div class="chips"><span>0.3〜50 m</span><span>mmクラス精度</span></div><p class="st-proto">4G · NB-IoT · LoRa · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="レーダー距離センサー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/radar-distance-sensor">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-10-radar-distance.webp" alt="Hitelecom radar distance sensors – ワイヤレスIoTセンシングターミナル" width="520" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s11"><div class="st-info"><p class="st-eyebrow">センサーファミリー 11 / 12</p><h3>資産追跡センサー</h3><p class="st-desc">複数サイト間でパレット、工具、返却可能な容器を検索。</p><div class="chips"><span>None</span><span>複数年バッテリー</span></div><p class="st-proto">4G · NB-IoT · LoRa · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="資産追跡センサー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/asset-tracking-sensor">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-11-asset-tracking.webp" alt="Hitelecom asset tracking sensors – ワイヤレスIoTセンシングターミナル" width="820" height="516" loading="lazy" decoding="async"></div></article>
+<article class="stage s12"><div class="st-info"><p class="st-eyebrow">センサーファミリー 12 / 12</p><h3>カスタムガスセンサー</h3><p class="st-desc">対象ガスをお知らせください — それに合わせてターミナルを構築します。</p><div class="chips"><span>100種類以上のガス</span><span>固定式またはダクト式</span></div><p class="st-proto">4G · NB-IoT · LoRa · Custom</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="カスタムガスセンサー">お見積もりを依頼 <span class="arr">→</span></a><a class="st-detail" href="/ja/product/custom-gas-sensor">製品詳細を見る <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-12-custom-gas.webp" alt="Hitelecom custom gas sensors – ワイヤレスIoTセンシングターミナル" width="746" height="820" loading="lazy" decoding="async"></div></article>
+      </div>
+      <div class="fam-grid" role="group" aria-label="Product families">
+        <div class="product-picker-heading"><strong>製品ファミリー</strong><span>選択して構成</span></div>
+        <label class="fam-card" for="f1"><b>産業用温度センサー</b><span>−200 °C〜+800 °C</span></label>
+<label class="fam-card" for="f2"><b>温度・湿度センサー</b><span>0〜100 % RH</span></label>
+<label class="fam-card" for="f3"><b>温度・湿度データロガー</b><span>80,000 読数</span></label>
+<label class="fam-card" for="f4"><b>空気質センサー</b><span>6-in-1</span></label>
+<label class="fam-card" for="f5"><b>TVOCセンサー</b><span>0〜100,000 ppb</span></label>
+<label class="fam-card" for="f6"><b>圧力センサー</b><span>None</span></label>
+<label class="fam-card" for="f7"><b>土壌センサー</b><span>NPKオプション</span></label>
+<label class="fam-card" for="f8"><b>傾斜センサー</b><span>None</span></label>
+<label class="fam-card" for="f9"><b>振動センサー</b><span>None</span></label>
+<label class="fam-card" for="f10"><b>レーダー距離センサー</b><span>0.3〜50 m</span></label>
+<label class="fam-card" for="f11"><b>資産追跡センサー</b><span>None</span></label>
+<label class="fam-card" for="f12"><b>カスタムガスセンサー</b><span>100種類以上のガス</span></label>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+    <section class="section hardware-features-section content-auto" id="hardware" aria-labelledby="hardware-title">
+      <div class="container">
+        <div class="hardware-feature-heading reveal">
+          <div>
+            <p class="eyebrow">産業デザイン</p>
+            <h2 class="section-title" id="hardware-title">長年の使用を想定した設計。<br>厳しい環境に対応。</h2>
+          </div>
+          <p>低消費電力アーキテクチャと環境保護は、展開に合わせて構成されます — 汎用仕様書のコピーではありません。</p>
+        </div>
+
+        <div class="hardware-feature-grid">
+          <article class="hardware-feature-card power-feature-card reveal">
+            <div class="feature-copy">
+              <p class="feature-kicker">電源</p>
+              <h3>最長10年。<br>単一バッテリーで。</h3>
+              <p>選択されたバッテリー駆動センサーターミナルは、ディープスリープ、適応サンプリング、構成可能な送信間隔を組み合わせ、フィールドでの稼働時間を延長します。</p>
+            </div>
+
+            <div class="power-visual" aria-hidden="true">
+              <div class="battery-assembly">
+                <div class="battery-shell"><div class="battery-fill"><span>10年</span></div></div>
+                <div class="battery-timeline"><span>3年</span><span>6年</span><span>10年</span></div>
+              </div>
+            </div>
+
+            <dl class="feature-specs">
+              <div><dt>最長10年*</dt><dd>バッテリー寿命</dd></div>
+              <div><dt>µAクラス</dt><dd>スリープ電流</dd></div>
+              <div><dt>リモート送信</dt><dd>バッテリー状態</dd></div>
+            </dl>
+            <p class="feature-footnote">* 選択された構成の場合。実際の稼働時間は、送信間隔、ネットワーク状況、バッテリー化学、温度によって異なります。</p>
+          </article>
+
+          <article class="hardware-feature-card protection-feature-card reveal">
+            <div class="protection-media">
+              <img src="/home-assets/img/protection-immersion-1586-v2.webp" srcset="/home-assets/img/protection-immersion-1024-v2.webp 1024w, /home-assets/img/protection-immersion-1586-v2.webp 1586w" sizes="(max-width: 1100px) 100vw, 620px" alt="管理された防水試験で半分水に浸かったHitelecomの産業用IoT筐体" width="1586" height="992" loading="lazy" decoding="async">
+            </div>
+            <div class="feature-copy">
+              <p class="feature-kicker">保護</p>
+              <h3>厳しい環境に対応。</h3>
+              <p>シーリングとケーブルインターフェースは、浸漬または高圧洗浄に対応するよう設計でき、最終構成で検証されます。</p>
+              <dl class="feature-specs">
+                <div><dt>IP68*</dt><dd>浸漬オプション</dd></div>
+                <div><dt>IP69K*</dt><dd>洗浄オプション</dd></div>
+                <div><dt>カスタム</dt><dd>インターフェースと取り付け</dd></div>
+              </dl>
+              <p class="feature-footnote">* ご要望に応じて提供。防護等級は最終製品構成と検証によって異なります。</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="hardware-feature-cta reveal">
+          <p>実績のあるハードウェアプラットフォームから始めるか、専用デバイスを構築してください。センシング、無線、電源、筐体、ファームウェア、取り付け、保護設計をサイト要件に合わせます。</p>
+          <a class="button button-primary" href="#contact">プロジェクトについてご相談ください</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section software-section content-auto" id="software" aria-labelledby="software-title">
+      <div class="container">
+        <div class="software-top reveal">
+          <div>
+            <p class="eyebrow">柔軟な展開</p>
+            <h2 class="section-title" id="software-title">貴社のクラウド。<br>または当社のクラウド。</h2>
+            <p class="section-intro">プライベートインフラ、Hitelecom Cloud、またはすでに運用中のプラットフォームとの直接統合。</p>
+          </div>
+
+          <div class="deployment-options" aria-label="展開アーキテクチャを強調">
+            <button class="deployment-option" type="button" data-network-mode="private" aria-pressed="true">
+              <span class="option-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.7"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <span><strong>プライベートデプロイ</strong><small>貴社サーバーへのLoRa / LoRaWANゲートウェイ</small></span>
+              <svg class="option-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="deployment-option" type="button" data-network-mode="public" aria-pressed="false">
+              <span class="option-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 18a4 4 0 0 1 .8-7.9A5.4 5.4 0 0 1 18.3 11 3.5 3.5 0 0 1 18 18H7Z" stroke="currentColor" stroke-width="1.7"/><path d="M12 13v5m0-5-2 2m2-2 2 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <span><strong>パブリッククラウド</strong><small>4G / NB-IoTでカスタマーまたはHitelecom Cloudへ</small></span>
+              <svg class="option-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="deployment-option" type="button" data-network-mode="integrate" aria-pressed="false">
+              <span class="option-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="m8 8-4 4 4 4m8-8 4 4-4 4M14 5l-4 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span><strong>貴社の既存プラットフォーム</strong><small>API、MQTT、構成可能なデータモデル</small></span>
+              <svg class="option-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="network-card reveal">
+          <div class="network-toolbar">
+            <strong>柔軟なIoT展開アーキテクチャ</strong>
+            <div class="network-legend" aria-label="図モード切替">
+              <button class="legend-item" type="button" data-network-mode="private" aria-pressed="true"><span class="legend-line"></span>プライベートパス</button>
+              <button class="legend-item" type="button" data-network-mode="public" aria-pressed="false"><span class="legend-line green"></span>パブリックパス</button>
+              <button class="legend-item" type="button" data-network-mode="integrate" aria-pressed="false"><span class="legend-line gray"></span>統合</button>
+            </div>
+          </div>
+
+          <figure class="network-figure mode-private" id="network-figure">
+            <svg viewBox="0 0 1200 560" role="img" aria-labelledby="network-diagram-title network-diagram-desc">
+              <title id="network-diagram-title">HitelecomのプライベートおよびパブリックIoT展開アーキテクチャ</title>
+              <desc id="network-diagram-desc">センサーターミナルは、LoRaまたはLoRaWANゲートウェイ経由でプライベートサーバーに接続するか、4GおよびNB-IoTネットワーク経由でカスタマークラウドまたはHitelecom Cloudに接続できます。どちらの経路もカスタマーアプリケーションとAPIをサポートします。</desc>
+              <defs>
+                <linearGradient id="deviceFill" x1="0" x2="1">
+                  <stop offset="0" stop-color="#0d2853"/>
+                  <stop offset="1" stop-color="#175cb8"/>
+                </linearGradient>
+                <linearGradient id="cloudFill" x1="0" x2="1">
+                  <stop offset="0" stop-color="#eaf8f2"/>
+                  <stop offset="1" stop-color="#f7fffb"/>
+                </linearGradient>
+                <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+                  <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1e477d" flood-opacity=".12"/>
+                </filter>
+              </defs>
+
+              <path class="route route-private" d="M235 278 C305 278 308 152 378 152"/>
+              <path class="route route-private" d="M540 152 C625 152 635 120 720 120"/>
+              <path class="route route-public" d="M235 278 C310 278 306 407 378 407"/>
+              <path class="route route-public" d="M540 407 C625 407 635 386 720 386"/>
+              <path class="route route-neutral" d="M934 120 C996 120 992 260 1040 260"/>
+              <path class="route route-neutral" d="M934 386 C996 386 992 300 1040 300"/>
+
+              <g class="node">
+                <rect x="48" y="196" width="190" height="164" rx="28" fill="url(#deviceFill)" filter="url(#softShadow)"/>
+                <circle cx="91" cy="242" r="17" fill="#ffffff" opacity=".16"/>
+                <path d="M83 247v-11a8 8 0 0 1 16 0v11a10 10 0 1 1-16 0Z" fill="none" stroke="#fff" stroke-width="2"/>
+                <path d="M127 235a26 26 0 0 1 37 0M136 244a13 13 0 0 1 19 0" fill="none" stroke="#9fc5ff" stroke-width="2" stroke-linecap="round"/>
+                <text x="79" y="304" fill="#fff" font-size="18" font-weight="700">フィールドデバイス</text>
+                <text x="79" y="331" fill="#bdd4f5" font-size="12">Hitelecomセンサー</text>
+              </g>
+
+              <g class="node private-node">
+                <rect x="378" y="88" width="164" height="128" rx="24" fill="#fff" stroke="#bcd4f5" filter="url(#softShadow)"/>
+                <path d="M430 149a27 27 0 0 1 38 0M439 158a14 14 0 0 1 20 0M449 168h.1" fill="none" stroke="#2768f5" stroke-width="2.5" stroke-linecap="round"/>
+                <text x="410" y="192" fill="#0a1d33" font-size="16" font-weight="700">エッジゲートウェイ</text>
+                <rect x="410" y="104" width="100" height="23" rx="11.5" fill="#eef4ff"/>
+                <text x="427" y="120" fill="#2768f5" font-size="10" font-weight="700">LoRa / LoRaWAN</text>
+              </g>
+
+              <g class="node private-node">
+                <rect x="720" y="56" width="214" height="130" rx="24" fill="#fff" stroke="#bcd4f5" filter="url(#softShadow)"/>
+                <rect x="752" y="84" width="38" height="56" rx="7" fill="#eaf2ff" stroke="#2768f5"/>
+                <path d="M760 98h22M760 108h22M760 118h14" stroke="#2768f5" stroke-width="2" stroke-linecap="round"/>
+                <text x="808" y="103" fill="#0a1d33" font-size="15" font-weight="700">プライベートサーバー</text>
+                <text x="808" y="126" fill="#667d96" font-size="11">オンプレミスまたはVPC</text>
+                <text x="752" y="163" fill="#2768f5" font-size="10" font-weight="700">カスタマー管理</text>
+              </g>
+
+              <g class="node public-node">
+                <rect x="378" y="343" width="164" height="128" rx="24" fill="#fff" stroke="#bfe5d5" filter="url(#softShadow)"/>
+                <path d="M421 410h68M434 394a35 35 0 0 1 42 0M445 381a53 53 0 0 1 20 0" fill="none" stroke="#43b985" stroke-width="2.5" stroke-linecap="round"/>
+                <text x="412" y="450" fill="#0a1d33" font-size="15" font-weight="700">モバイルネットワーク</text>
+                <rect x="415" y="359" width="90" height="23" rx="11.5" fill="#ebf9f3"/>
+                <text x="430" y="375" fill="#228b60" font-size="10" font-weight="700">4G / NB-IoT</text>
+              </g>
+
+              <g class="node public-node">
+                <rect x="720" y="320" width="214" height="132" rx="24" fill="url(#cloudFill)" stroke="#bfe5d5" filter="url(#softShadow)"/>
+                <path d="M748 389a18 18 0 0 1 3-35.7 25 25 0 0 1 47.8 6.7 16 16 0 0 1-1 32h-49.8" fill="none" stroke="#43b985" stroke-width="2"/>
+                <text x="805" y="360" fill="#0a1d33" font-size="15" font-weight="700">クラウドプラットフォーム</text>
+                <text x="805" y="384" fill="#667d96" font-size="10">カスタマーまたはHitelecom</text>
+                <text x="752" y="430" fill="#228b60" font-size="10" font-weight="700">パブリックデプロイ</text>
+              </g>
+
+              <g class="node">
+                <rect x="1036" y="210" width="156" height="140" rx="25" fill="#071a32" filter="url(#softShadow)"/>
+                <rect x="1071" y="238" width="66" height="45" rx="6" fill="#15365c" stroke="#7eabed"/>
+                <path d="M1083 272v-17m12 17v-25m12 25v-11m12 11v-31" stroke="#88b9ff" stroke-width="3" stroke-linecap="round"/>
+                <text x="1068" y="313" fill="#fff" font-size="15" font-weight="700">アプリケーション</text>
+                <text x="1062" y="334" fill="#9db2c9" font-size="10">Web · App · API</text>
+              </g>
+
+              <g fill="#71859c" font-size="11" font-weight="700">
+                <text x="286" y="183">プライベート</text>
+                <text x="286" y="390">パブリック</text>
+                <text x="950" y="212">統合</text>
+              </g>
+            </svg>
+          </figure>
+
+          <div class="network-note">
+            <span>しきい値、アラーム、デバイス状態</span>
+            <span>ロールベースのアクセスとデータエクスポート</span>
+            <span>構成可能なAPIとペイロードモデル</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section factory-section content-auto" id="factory" aria-labelledby="factory-title">
+      <img class="factory-media" src="/home-assets/img/factory-line-1440.webp" alt="" width="1440" height="960" loading="lazy" decoding="async" aria-hidden="true">
+      <div class="container">
+        <div class="factory-layout">
+          <div class="factory-side reveal">
+            <p class="eyebrow">設計から量産まで</p>
+            <h2 class="section-title" id="factory-title">当社自ら<br>製造しています。</h2>
+            <p class="factory-intro">はんだペースト印刷、SMT実装から筐体統合、最終機能試験まで、Hitelecomは自社工場でコネクテッドターミナルを製造しています — 設計、試験、生産フィードバックをひとつのループに保ちます。</p>
+            <div class="factory-chips" aria-label="製造能力">
+              <span>01005対応</span>
+              <span>BGA · CSP · LGA · QFN</span>
+              <span>SPI · AOI · X-Ray</span>
+              <span>SMT → PCBA → ファームウェア → 最終組立</span>
+            </div>
+            <a class="button button-primary" href="#contact">プロジェクトについてご相談ください</a>
+          </div>
+
+          <div class="factory-table reveal" aria-label="Hitelecomの生産・検査設備">
+            <article class="factory-row">
+              <span class="factory-code">EQP-01</span>
+              <div><h3>MPM精密印刷</h3><p>ファインピッチ・高密度実装向けの均一なはんだペースト塗布。</p></div>
+              <strong>ファインピッチ</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-02</span>
+              <div><h3>Koh Young 3D SPI</h3><p>はんだペーストの量・位置・ブリッジを3次元で測定。</p></div>
+              <strong>100% インライン</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-03</span>
+              <div><h3>Panasonic NPM実装</h3><p>01005部品から大型コネクター、モジュール、複雑なパッケージまで。</p></div>
+              <strong>目標 ±25 μm</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-04</span>
+              <div><h3>Rehmリフローシステム</h3><p>窒素雰囲気と厳密に制御された温度プロファイル。</p></div>
+              <strong>N₂保護</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-05</span>
+              <div><h3>Omron AOI</h3><p>実装・極性・可視はんだ接合部の全基板検査。</p></div>
+              <strong>全基板スキャン</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-06</span>
+              <div><h3>X線検査</h3><p>BGA、QFNボイド、隠れたはんだ接合部の非破壊検証。</p></div>
+              <strong>BGA検査</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-07</span>
+              <div><h3>ウェーブはんだ付け · ICT · FCT</h3><p>スルーホール組立、インサーキットテスト、最終機能検証。</p></div>
+              <strong>組立 + 試験</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-08</span>
+              <div><h3>選択的コンフォーマルコーティング</h3><p>フィールド展開向けの制御されたマスキング、コーティング、検査。</p></div>
+              <strong>保護</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-09</span>
+              <div><h3>最終デバイス組立</h3><p>ファームウェア書込み、センサーチェック、筐体組立、トレーサビリティ。</p></div>
+              <strong>デバイス完成</strong>
+            </article>
+          </div>
+        </div>
+
+        <div class="factory-proof reveal">
+          <span class="factory-proof-label">一元管理されたループ</span>
+          <p>DFM、PCBA、ファームウェア書込み、キャリブレーション、環境保護、最終デバイス試験は、同一のエンジニアリング・品質プロセスで結ばれています。</p>
+          <div>
+            <span>設計から生産へのフィードバック</span>
+            <span>トレーサブルな試験記録</span>
+            <span>パイロットから量産へ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section applications-section content-auto" id="applications" aria-labelledby="applications-title">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <p class="eyebrow">適用シーン</p>
+            <h2 class="section-title" id="applications-title">Hitelecomデバイスの<br>活用場所。</h2>
+          </div>
+          <p class="section-intro">ひとつのハードウェア・コネクティビティシステムを、それぞれの環境に合わせて構成します。</p>
+        </div>
+
+        <div class="application-grid">
+          <article class="application-card featured reveal">
+            <span class="application-index">01</span>
+            <span class="application-sector">スマートシティ</span>
+            <h3>構造物健全性モニタリング</h3>
+            <p>橋梁、タワー、ポール、ファサードなどの分散構造物の傾斜・振動・変化する状況を追跡します。</p>
+            <svg class="application-art" viewBox="0 0 760 300" fill="none" aria-hidden="true" focusable="false">
+            <!-- 左：铁路边坡（格构护坡 + 轨道） -->
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M18 140h74l108 74"/>
+            <g opacity=".5">
+            <path d="M92 162l78 52M92 183l48 31M92 204l18 10"/>
+            <path d="M116 156v58M140 173v41M164 189v25"/>
+            </g>
+            <path d="M18 134h72M18 127h72"/>
+            <g opacity=".6"><path d="M26 125v11M42 125v11M58 125v11M74 125v11"/></g>
+            <path d="M126 214h84" opacity=".5"/>
+            </g>
+            <g stroke="currentColor" stroke-width="2">
+            <circle cx="132" cy="176" r="4.5"/><circle cx="132" cy="176" r="12" opacity=".5"/>
+            </g>
+
+            <!-- 中：古塔（七层密檐，逐层收分） -->
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M336 214h148M348 202h124"/>
+            <path d="M352 202v-24M468 202v-24"/>
+            <path d="M357 178v-22M463 178v-22"/>
+            <path d="M362 156v-21M458 156v-21"/>
+            <path d="M367 135v-19M453 135v-19"/>
+            <path d="M372 116v-18M448 116v-18"/>
+            <path d="M377 98v-16M443 98v-16"/>
+            <path d="M382 82v-15M438 82v-15"/>
+            <path d="M332 170c9 4 14 7 20 8h116c6-1 11-4 20-8"/>
+            <path d="M337 148c9 4 14 7 20 8h106c6-1 11-4 20-8"/>
+            <path d="M342 127c9 4 14 7 20 8h96c6-1 11-4 20-8"/>
+            <path d="M347 108c9 4 14 7 20 8h86c6-1 11-4 20-8"/>
+            <path d="M352 90c8 4 13 6 20 8h76c7-2 12-4 20-8"/>
+            <path d="M357 74c8 4 13 6 20 8h66c7-2 12-4 20-8"/>
+            <path d="M362 59c8 4 13 6 20 8h56c7-2 12-4 20-8"/>
+            <path d="M410 67V50"/>
+            <g opacity=".7"><path d="M402 62h16M404 57h12M406 52h8"/></g>
+            <circle cx="410" cy="46" r="3.5"/>
+            <g opacity=".55">
+            <path d="M400 202v-14a10 10 0 0 1 20 0v14"/>
+            <path d="M403 172h14v-10h-14zM404 150h12v-9h-12zM405 129h10v-8h-10z"/>
+            </g>
+            </g>
+            <g stroke="currentColor" stroke-width="2">
+            <circle cx="410" cy="135" r="4.5"/>
+            <circle cx="410" cy="135" r="12" opacity=".5"/>
+            <circle cx="410" cy="135" r="20" opacity=".22"/>
+            </g>
+
+            <!-- 右：危房（贯穿裂缝 + 临时斜撑） -->
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M596 214v-76h114v76"/>
+            <path d="M586 138l67-30 67 30"/>
+            <path d="M646 138l9 19-10 18 11 18-8 17v4" stroke-width="2.4"/>
+            <path d="M566 214l30-46M746 214l-36-44" opacity=".75"/>
+            <path d="M556 214h22M736 214h22" opacity=".75"/>
+            <g opacity=".5"><path d="M610 180h20v-20h-20zM676 180h20v-20h-20z"/></g>
+            </g>
+            <g stroke="currentColor" stroke-width="2">
+            <circle cx="668" cy="172" r="4.5"/><circle cx="668" cy="172" r="12" opacity=".5"/>
+            </g>
+
+            <path d="M0 214h760" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".65"/>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">02</span>
+            <span class="application-sector">スマートファクトリー</span>
+            <h3>環境条件と設備状態</h3>
+            <p>生産エリアとユーティリティ全体で、温度・湿度・ガス・圧力・振動・状態データを接続します。</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M40 200V130l46-34v34l46-34v34l46-34v34V200"/>
+                <path d="M96 200v-34h30v34"/>
+                <path d="M202 200V84m16 0v116M202 84h16"/>
+                <rect x="252" y="152" width="86" height="48" rx="24"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="211" cy="84" r="4.5"/><circle cx="211" cy="84" r="12" opacity=".5"/>
+                <circle cx="295" cy="152" r="4.5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">03</span>
+            <span class="application-sector">スマート倉庫</span>
+            <h3>保管条件とラック安全性</h3>
+            <p>倉庫、書庫、高床ラック向けの環境記録、傾斜イベント、構造認識。</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M60 200V64m90 136V64m90 136V64"/>
+                <path d="M60 64h90M60 110h180M60 156h180"/>
+                <path d="M150 64l90 46M240 64l-90 46"/>
+                <rect x="76" y="128" width="26" height="28"/><rect x="110" y="118" width="30" height="38"/>
+                <rect x="166" y="168" width="30" height="32"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="240" cy="64" r="4.5"/><circle cx="240" cy="64" r="12" opacity=".5"/>
+                <circle cx="60" cy="64" r="4.5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">04</span>
+            <span class="application-sector">スマート水管理</span>
+            <h3>パイプライン・レベル・閉塞モニタリング</h3>
+            <p>遠隔のパイプ、チャンバー、タンク、水路の水位・オーバーフロー・異常動作状況を監視します。</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M0 150h250M0 170h250M250 142v36"/>
+                <path d="M120 150V128M102 128h36"/>
+                <rect x="272" y="110" width="70" height="90"/>
+                <path d="M278 152q8-7 16 0t16 0t16 0t16 0"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="180" cy="150" r="4.5"/><circle cx="180" cy="150" r="12" opacity=".5"/>
+                <circle cx="272" cy="110" r="4.5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">05</span>
+            <span class="application-sector">スマート文化遺産</span>
+            <h3>マイクロクライメートと展示物の動き</h3>
+            <p>博物館、史跡、文化コレクションの温度・湿度・光・振動・動きを監視します。</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M60 110h240M60 110l120-44 120 44"/>
+                <path d="M84 172V116m48 56V116m48 56V116m48 56V116m48 56V116"/>
+                <path d="M76 116h16m32 0h16m32 0h16m32 0h16m32 0h16"/>
+                <path d="M64 172h232M56 186h248"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="180" cy="66" r="4.5"/><circle cx="180" cy="66" r="12" opacity=".5"/>
+                <circle cx="276" cy="116" r="4.5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">06</span>
+            <span class="application-sector">スマート交通</span>
+            <h3>資産・構造物・道路安全</h3>
+            <p>移動資産、標識、橋梁、道路脇設備の位置・動作・傾斜・ジオフェンスイベントを組み合わせます。</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M40 200L160 64M320 200L200 64"/>
+                <path d="M180 194v-18m0-34v-14m0-30v-10m0-24v-7"/>
+                <path d="M92 128V72M268 128V72M92 72h176"/>
+                <rect x="150" y="76" width="60" height="24"/>
+                <path d="M240 168c0 0 18-15.3 18-33a18 18 0 1 0-36 0c0 17.7 18 33 18 33Z"/>
+                <circle cx="240" cy="134" r="6"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="180" cy="72" r="4.5"/><circle cx="180" cy="72" r="12" opacity=".5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">07</span>
+            <span class="application-sector">コールドチェーンとヘルスケア</span>
+            <h3>輸送中の温度記録</h3>
+            <p>物流、実験室、薬局、冷蔵室、保管のための信頼性の高い温度・湿度モニタリング。</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <rect x="48" y="96" width="180" height="104"/>
+                <path d="M84 96v104M192 96v104"/>
+                <path d="M138 128v40M121 138l34 20M155 138l-34 20"/>
+                <path d="M264 164V96a6 6 0 0 1 12 0v68M270 164v-42"/>
+                <circle cx="270" cy="175" r="11"/>
+                <path d="M284 108h8M284 130h8M284 152h8"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="228" cy="96" r="4.5"/><circle cx="228" cy="96" r="12" opacity=".5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">08</span>
+            <span class="application-sector">スマート衛生管理</span>
+            <h3>容器充填レベルとオーバーフローモニタリング</h3>
+            <p>リモート距離・状態センシングで収集を計画し、オーバーフローを検出し、不要なサービス巡回を削減します。</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M112 108h96l-8 92h-80Z"/>
+                <path d="M104 108h112M114 108l9-16h74l9 16"/>
+                <g opacity=".55"><path d="M126 172h68M123 150h74M120 128h80"/></g>
+                <path d="M146 74a16 16 0 0 0 28 0M138 88a26 26 0 0 0 44 0"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="160" cy="56" r="4.5"/><circle cx="160" cy="56" r="12" opacity=".5"/>
+              </g>
+            </svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section content-auto" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="eyebrow eyebrow-light">プロジェクトのお問い合わせ</p>
+            <h2 id="contact-title">測定したい対象を<br>お聞かせください。</h2>
+            <p>完成した仕様書は不要です。短いプロジェクト概要だけで始められます。</p>
+            <div class="contact-details">
+              <a class="contact-detail" href="mailto:sales@hitelecom.cn">
+                <span class="contact-detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                sales@hitelecom.cn
+              </a>
+              <span class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.4 2.5 3.7 5.5 3.7 9S14.4 18.5 12 21c-2.4-2.5-3.7-5.5-3.7-9S9.6 5.5 12 3Z" stroke="currentColor" stroke-width="1.7"/></svg>
+                </span>
+                グローバルB2B · OEM / ODM
+              </span>
+              <span class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M5 19h14M7 16V8l5-3 5 3v8M10 16v-4h4v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                ハードウェア・ファームウェア・プラットフォーム統合
+              </span>
+            </div>
+          </div>
+
+          <form class="quote-form" id="quote-form">
+            <div class="form-field">
+              <label for="name">Name *</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="お名前" required>
+            </div>
+            <div class="form-field">
+              <label for="company-name">会社名 *</label>
+              <input id="company-name" name="company" type="text" autocomplete="organization" placeholder="会社名" required>
+            </div>
+            <div class="form-field">
+              <label for="email">ビジネスメール *</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+            </div>
+            <div class="form-field">
+              <label for="product">ご興味のある製品</label>
+              <select id="product" name="product">
+                <option value="産業用温度センサー">産業用温度センサー</option>
+                <option value="温度・湿度センサー">温度・湿度センサー</option>
+                <option value="温度・湿度データロガー">温度・湿度データロガー</option>
+                <option value="空気質センサー">空気質センサー</option>
+                <option value="TVOCセンサー">TVOCセンサー</option>
+                <option value="圧力センサー">圧力センサー</option>
+                <option value="土壌センサー">土壌センサー</option>
+                <option value="傾斜センサー">傾斜センサー</option>
+                <option value="振動センサー">振動センサー</option>
+                <option value="レーダー距離センサー">レーダー距離センサー</option>
+                <option value="資産追跡センサー">資産追跡センサー</option>
+                <option value="カスタムガスセンサー">カスタムガスセンサー</option>
+                <option value="その他またはカスタムセンシングターミナル">その他またはカスタムセンシングターミナル</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="message">プロジェクト概要 *</label>
+              <textarea id="message" name="message" placeholder="デバイスで何を測定しますか？どこに設置しますか？どのコネクティビティとプラットフォームをご希望ですか？" required></textarea>
+            </div>
+            <div class="form-actions">
+              <p class="form-note">ご入力いただいた概要はHitelecomの技術営業チームに直接届きます。ほとんどのお問い合わせに1営業日以内にご回答いたします。</p>
+              <button class="button button-primary" type="submit">
+                お問い合わせを送信
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <p class="form-note form-privacy">送信することで、当社の<a href="/ja/about/privacy">プライバシーポリシー</a>に同意したことになります。</p>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+</div>

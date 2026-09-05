@@ -12,7 +12,7 @@ export default defineConfig({
   // 多语言：默认语言英文（/），中文在 /zh/，西语在 /es/
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh', 'es', 'de'],
+    locales: ['en', 'zh', 'es', 'de', 'ja'],
     routing: {
       prefixDefaultLocale: false, // 英文首页保持在 /，与原版一致
     },
@@ -48,7 +48,7 @@ export default defineConfig({
         !page.includes('/thanks'),
       i18n: {
         defaultLocale: 'en',
-        locales: { en: 'en', zh: 'zh-CN', es: 'es', de: 'de' },
+        locales: { en: 'en', zh: 'zh-CN', es: 'es', de: 'de', ja: 'ja' },
       },
       // Cloudflare Pages 的 canonical 形态为无扩展名（/about.html 一律 308 → /about）：
       // sitemap 统一输出无扩展名地址，与 canonical、hreflang、内链保持一致，

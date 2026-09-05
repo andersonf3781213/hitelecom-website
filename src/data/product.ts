@@ -196,6 +196,38 @@ export const productTabs: Record<Locale, ProductTab[]> = {
    "label": "Kundenspezifische Entwicklung",
    "href": "/product/lists/cid/256"
   }
+ ],
+ "ja": [
+  {
+   "key": "cloud",
+   "label": "IoTクラウド",
+   "href": "/product/"
+  },
+  {
+   "key": "app",
+   "label": "IoTアプリ",
+   "href": "/product/app"
+  },
+  {
+   "key": "261",
+   "label": "IoTセンサー",
+   "href": "/product/lists/cid/261"
+  },
+  {
+   "key": "258",
+   "label": "IoTゲートウェイ",
+   "href": "/product/lists/cid/258"
+  },
+  {
+   "key": "257",
+   "label": "気象ステーション",
+   "href": "/product/lists/cid/257"
+  },
+  {
+   "key": "256",
+   "label": "カスタム開発",
+   "href": "/product/lists/cid/256"
+  }
  ]
 };
 
@@ -3032,7 +3064,7 @@ const productContentBase ={
      },
      {
       "icon": "product/details/284-f3.png",
-      "text": "Displacement Amplitude: 0–1,000 µm (Customizable)"
+      "text": "Displacement Amplitu0–1,000 µm (Customizable)"
      },
      {
       "icon": "product/details/284-f4.png",
@@ -14262,7 +14294,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "icon": "product/details/284-f3.png",
-     "text": "Verschiebungsamplitude: 0–1 000 µm (konfigurierbar)"
+     "text": "Verschiebungsamplitu0–1 000 µm (konfigurierbar)"
     },
     {
      "icon": "product/details/284-f4.png",
@@ -17089,6 +17121,5647 @@ export const productContent = { ...productContentBase, de: {
     {
      "q": "Wie meldet sie Alarme?",
      "a": "Drahtlos über 4G oder NB-IoT via MQTT an Hitelecom Cloud oder eine private Plattform, mit remote konfigurierten Alarmschwellen."
+    }
+   ],
+   "dateModified": "2026-09-02"
+  }
+ }
+}, ja: {
+ "cloud": {
+  "banner": {
+   "title": "Hitelecom Cloud",
+   "subtitle": "安全で信頼性の高いIoTプラットフォーム",
+   "desc": "Hitelecom Cloudは、デバイス接続、遠隔モニタリング、高度なデータ分析を提供するインテリジェントなデータ統合プラットフォームで、企業がオペレーションを最適化し、的確な意思決定を行えるようにします。",
+   "images": [
+    "product/cloud/banner-1.png",
+    "product/cloud/banner-2.png",
+    "product/cloud/banner-3.png",
+    "product/cloud/banner-4.png"
+   ]
+  },
+  "intro": {
+   "heading": "フィールドデバイスをクラウドに接続",
+   "paras": [
+    "Hitelecomは、IoTセンサー、ゲートウェイ、コントローラー、クラウドソフトウェアにわたる統合ソリューションを提供し、フィールドデータがより少ない統合ステップでデバイスからダッシュボードに届きます。",
+    "超低消費電力のデバイス設計は、製品ライフサイクル全体でエネルギー消費を削減し、長期的で持続可能な展開をサポートします。"
+   ],
+   "cards": [
+    {
+     "img": "product/cloud/deploy-1.png",
+     "title": "パブリッククラウド",
+     "desc": "Hitelecom Cloudでモニタリング、アラート、分析、リモート保守を用いて、デバイスを迅速に接続・管理します。"
+    },
+    {
+     "img": "product/cloud/deploy-2.png",
+     "title": "プライベートクラウド",
+     "desc": "データ分離、アクセス制御、ローカル運用のために、お客様管理のインフラにプラットフォームを展開します。"
+    },
+    {
+     "img": "product/cloud/deploy-3.png",
+     "title": "ハイブリッドクラウド",
+     "desc": "機密性の高いワークロードはプライベートインフラに保持し、選択されたサービスとスケーラブルなワークロードにはパブリッククラウドを使用します。"
+    },
+    {
+     "img": "product/cloud/deploy-4.png",
+     "title": "エッジクラウド",
+     "desc": "データをローカルで処理し、基本的な制御ロジックを実行し、クラウド接続が限られる場合でも選択された機能を利用可能に保ちます。"
+    }
+   ]
+  },
+  "features": {
+   "heading": "Hitelecom Cloudの機能",
+   "items": [
+    {
+     "img": "product/cloud/feature-1.png",
+     "text": "エンドツーエンドのIoTソリューション"
+    },
+    {
+     "img": "product/cloud/feature-2.png",
+     "text": "大規模デバイス接続"
+    },
+    {
+     "img": "product/cloud/feature-3.png",
+     "text": "高可用性の分散アーキテクチャ"
+    },
+    {
+     "img": "product/cloud/feature-4.png",
+     "text": "低遅延処理"
+    },
+    {
+     "img": "product/cloud/feature-5.png",
+     "text": "マルチプロトコル対応"
+    },
+    {
+     "img": "product/cloud/feature-6.png",
+     "text": "視覚的な運用と保守"
+    },
+    {
+     "img": "product/cloud/feature-7.png",
+     "text": "HiLinkデバイスプロトコル"
+    },
+    {
+     "img": "product/cloud/feature-8.png",
+     "text": "カスタムハードウェアおよびソフトウェア開発"
+    }
+   ]
+  },
+  "architecture": {
+   "heading": "プラットフォームアーキテクチャ",
+   "img": "product/cloud/architecture.gif"
+  },
+  "core": {
+   "heading": "コア機能",
+   "subtitle": "効率的なコネクティビティと精密な管理でIoTビジネスを加速します",
+   "items": [
+    {
+     "img": "product/cloud/core-1.jpg",
+     "title": "デバイス接続",
+     "desc": "デバイスサポートに応じて、MQTT、HTTP、TCP、CoAP、AMQP、HiLinkプロトコルでセンサー、コントローラー、ゲートウェイ、エッジデバイスを接続します。"
+    },
+    {
+     "img": "product/cloud/core-2.jpg",
+     "title": "デバイス管理",
+     "desc": "ライブのデバイス状態を確認し、接続品質を監視し、アラームを分析します。\n\nストア＆フォワードと再試行により、ネットワーク状況が不安定でもデータの流れを維持します。\n\nマップビューでデバイスの分布と位置データを確認します。\n\n対応デバイスのリモートOTAファームウェア更新とバッチ操作を管理します。"
+    },
+    {
+     "img": "product/cloud/core-3.jpg",
+     "title": "アラームルール",
+     "desc": "トリガー条件と属性計算を含む柔軟なアラームルールを設定し、継続的なデバイスモニタリングを行います。\n\n高温、異常圧力、急速な流量などの状況を検出し、タイムリーな意思決定をサポートします。\n\nトリガー条件が正常に戻るとアラームは自動的に解除され、手動のフォローアップを削減します。\n\nアラーム構成をバッチで展開し、接続されたターミナルからアラームレポートを受信します。"
+    },
+    {
+     "img": "product/cloud/core-4.jpg",
+     "title": "データ可視化",
+     "desc": "デスクトップ、モバイル、大型ディスプレイレイアウトのダッシュボードを構築し、デバイスデータソースにライブ接続します。\n\nビデオウォール、PC、タブレット、フォンでリアルタイム更新のダッシュボードを表示します。\n\nアラームはほぼリアルタイムで表示され、デバイス接続に応じてダッシュボードから設定コマンドを発行できます。\n\nオプションのGISおよびデジタルツインビューで、デバイスの位置、状態、移動履歴を表示できます。"
+    },
+    {
+     "img": "product/cloud/core-5.jpg",
+     "title": "オープンAPI",
+     "desc": "サードパーティのデバイスおよびコントローラーとの統合のためのオープンAPI。\n\nAPIまたはMQTTを使用して、デバイスデータをお客様のデータセンターやプラットフォームに送信します。\n\nクラウド間統合により、対応するサードパーティデータをHitelecom Cloudに集約できます。"
+    },
+    {
+     "img": "product/cloud/core-6.webp",
+     "title": "ルールベースの自動化",
+     "desc": "シーンルールでデバイスを連携します：例えば、温度が設定済みしきい値を超えると冷却をオンにする、土壌水分が設定済みしきい値を下回ると対応灌漑コントローラーを起動します。\n\nHitelecomの超低消費電力IoTターミナルと組み合わせることで、ルールベースの自動化が日常的な手動介入を削減します。"
+    }
+   ]
+  },
+  "scenarios": {
+   "heading": "適用シーン",
+   "tabs": [
+    {
+     "icons": [
+      "product/cloud/scen-icon-1a.png",
+      "product/cloud/scen-icon-1b.png"
+     ],
+     "label": "産業用IoT"
+    },
+    {
+     "icons": [
+      "product/cloud/scen-icon-2a.png",
+      "product/cloud/scen-icon-2b.png"
+     ],
+     "label": "スマートエネルギー"
+    },
+    {
+     "icons": [
+      "product/cloud/scen-icon-3a.png",
+      "product/cloud/scen-icon-3b.png"
+     ],
+     "label": "スマートキャンパス"
+    },
+    {
+     "icons": [
+      "product/cloud/scen-icon-4a.png",
+      "product/cloud/scen-icon-4b.png"
+     ],
+     "label": "スマート農業"
+    }
+   ],
+   "bgs": [
+    "product/cloud/scen-bg-1.jpg",
+    "product/cloud/scen-bg-2.jpg",
+    "product/cloud/scen-bg-3.png",
+    "product/cloud/scen-bg-4.png"
+   ],
+   "slides": [
+    {
+     "img": "product/cloud/scen-bg-1.jpg",
+     "title": "産業用IoT",
+     "desc": "デバイス、システム、チームを接続して生産プロセスを合理化し、資源利用率を向上させます。Hitelecomのセンサーターミナルは設備状態のリアルタイムモニタリングを提供し、状態基準保全と迅速な故障対応をサポートします。"
+    },
+    {
+     "img": "product/cloud/scen-bg-2.jpg",
+     "title": "スマートエネルギー",
+     "desc": "Hitelecomのセンサーターミナルは、リアルタイムモニタリング、データ収集、リモート制御でエネルギー管理をサポートします。そのデータはエネルギー分析と状態基準保全をサポートし、日常的手動作業を削減します。Hitelecom Cloudは、対応APIとプロトコルを通じて既存のエネルギーシステムと統合でき、企業が運用コストと持続可能性指標を追跡するのに役立ちます。"
+    },
+    {
+     "img": "product/cloud/scen-bg-3.png",
+     "title": "スマートキャンパス",
+     "desc": "スマートキャンパスのIoTは、デバイスを接続し、施設間でデータを共有します。Hitelecomのセンサーターミナルは、キャンパス環境、安全状況、エネルギー使用のリアルタイムモニタリングを提供し、管理者に継続的な運用状況を示します。"
+    },
+    {
+     "img": "product/cloud/scen-bg-4.png",
+     "title": "スマート農業",
+     "desc": "HitelecomのスマートIoTデバイスは、土壌水分、温度、光をリアルタイムで監視し、灌漑と施肥の意思決定をサポートするデータを提供し、日常的な圃場作業を削減できます。気象ステーションおよび対応灌漑コントローラーと統合され、フィールドセンシングを自動化された農場管理に接続します。"
+    }
+   ]
+  },
+  "cta": {
+   "title": "Hitelecom Cloudを体験",
+   "subtitle": "対応IoTデバイスの接続・監視・管理のための使いやすいプラットフォームです。",
+   "primary": "クラウドデモを見る",
+   "secondary": "プロジェクトについてご相談ください"
+  }
+ },
+ "app": {
+  "banner": {
+   "title": "Hitelecomアプリ",
+   "subtitle": "どこからでも — 貴社の遠隔モニタリング",
+   "desc": "Hitelecomアプリは、シンプルで便利な遠隔モニタリングツールです。モバイルデバイスからどこからでも接続デバイスにアクセスし、管理できます。",
+   "images": [
+    "product/cloud/banner-1.png",
+    "product/cloud/banner-2.png",
+    "product/cloud/banner-3.png",
+    "product/app/banner-4.png"
+   ]
+  },
+  "platforms": {
+   "heading": "すべてのプラットフォームで利用可能",
+   "items": [
+    {
+     "img": "product/app/platform-1.png",
+     "name": "Windows"
+    },
+    {
+     "img": "product/app/platform-2.png",
+     "name": "iOS"
+    },
+    {
+     "img": "product/app/platform-3.png",
+     "name": "Android"
+    },
+    {
+     "img": "product/app/platform-4.png",
+     "name": "WeChatミニプログラム"
+    }
+   ]
+  },
+  "features": {
+   "heading": "製品機能",
+   "subtitle": "デバイスを登録し、センサーを設定し、ユーザーアクセスを管理し、1つのアプリケーションからライブデータを監視します。",
+   "items": [
+    {
+     "img": "product/app/feature-1.png",
+     "title": "デバイスアクティベーション",
+     "desc": "Hitelecomアプリを使用してNFC対応デバイスをアクティベートまたは再アクティベートし、展開と現場での設定を高速化します。"
+    },
+    {
+     "img": "product/app/feature-2.png",
+     "title": "デバイス接続",
+     "desc": "アクティベートされたデバイスをHitelecom Cloudに接続し、各展開に合わせてアラーム、タスク、送信間隔、スケジュールを設定します。"
+    },
+    {
+     "img": "product/app/feature-3.png",
+     "title": "デバイス割り当て",
+     "desc": "ロールベースのアクセスモデルを通じて、ユーザー、ロール、部門、権限を作成・管理します。"
+    },
+    {
+     "img": "product/app/feature-4.png",
+     "title": "カスタムアプリインターフェース",
+     "desc": "お客様のワークフローとブランディング要件に合わせてアプリのコンポーネントとインターフェースをカスタマイズします。"
+    },
+    {
+     "img": "product/app/feature-5.png",
+     "title": "データダッシュボード",
+     "desc": "現在の読取値、トレンド、ダウンロード可能なレポートを1つのインターフェースで確認します。"
+    },
+    {
+     "img": "product/app/feature-6.png",
+     "title": "マップ上のデータ可視化",
+     "desc": "インタラクティブなマップでデバイスの位置と状態を確認し、フィールドオペレーションと資産管理をサポートします。"
+    },
+    {
+     "img": "product/app/feature-7.png",
+     "title": "アラーム管理",
+     "desc": "リアルタイムのデバイス状態モニタリングとアプリへのプッシュアラートにより、チームは有効なアラートにより迅速に対応し、設備の稼働を維持できます。"
+    },
+    {
+     "img": "product/app/feature-8.png",
+     "title": "多言語サポート",
+     "desc": "標準インターフェースは中国語と英語に対応しています。追加のインターフェース言語はカスタム開発でご利用いただけます。"
+    }
+   ]
+  },
+  "app3": {
+   "heading": "適用シーン",
+   "subtitle": "接続されたフィールドデータを使用して、業界全体でオペレーションを監視し、アラートに対応し、意思決定を改善します。",
+   "items": [
+    {
+     "img": "product/app/scen-0bbcd0.jpg",
+     "label": "スマート農業"
+    },
+    {
+     "img": "product/app/scen-214abe.jpg",
+     "label": "環境モニタリング"
+    },
+    {
+     "img": "product/app/scen-f607f3.jpg",
+     "label": "産業用IoT"
+    },
+    {
+     "img": "product/app/scen-7d03dc.jpg",
+     "label": "スマートキャンパス"
+    },
+    {
+     "img": "product/app/scen-4f4630.jpg",
+     "label": "スマートシティ"
+    },
+    {
+     "img": "product/app/scen-83dd3b.jpg",
+     "label": "スマート水管理"
+    },
+    {
+     "img": "product/app/scen-1c2289.jpg",
+     "label": "スマートエネルギー"
+    },
+    {
+     "img": "product/app/scen-67bc5a.jpg",
+     "label": "資産追跡"
+    }
+   ]
+  }
+ },
+ "lists": {
+  "261": {
+   "bannerImg": "product/list/banner-261.jpg",
+   "subcats": [
+    {
+     "cid": "261",
+     "name": "すべて",
+     "on": true
+    },
+    {
+     "cid": "263",
+     "name": "温度",
+     "on": false
+    },
+    {
+     "cid": "262",
+     "name": "圧力",
+     "on": false
+    },
+    {
+     "cid": "269",
+     "name": "土壌",
+     "on": false
+    },
+    {
+     "cid": "268",
+     "name": "レベル",
+     "on": false
+    },
+    {
+     "cid": "267",
+     "name": "傾斜モニタリング",
+     "on": false
+    },
+    {
+     "cid": "266",
+     "name": "レーダー距離",
+     "on": false
+    },
+    {
+     "cid": "271",
+     "name": "振動モニタリング",
+     "on": false
+    },
+    {
+     "cid": "265",
+     "name": "空気質",
+     "on": false
+    },
+    {
+     "cid": "306",
+     "name": "資産追跡",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "270",
+     "img": "product/products/270.png",
+     "name": "温度センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    },
+    {
+     "id": "274",
+     "img": "product/products/274.png",
+     "name": "圧力センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    },
+    {
+     "id": "280",
+     "img": "product/products/280.png",
+     "name": "土壌センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    },
+    {
+     "id": "281",
+     "img": "product/products/281.png",
+     "name": "投入式レベルセンサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    },
+    {
+     "id": "282",
+     "img": "product/products/282.png",
+     "name": "傾斜センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    },
+    {
+     "id": "283",
+     "img": "product/products/283.png",
+     "name": "レーダー距離センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    },
+    {
+     "id": "284",
+     "img": "product/products/284.png",
+     "name": "振動センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    },
+    {
+     "id": "285",
+     "img": "product/products/285.png",
+     "name": "空気質センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    },
+    {
+     "id": 301,
+     "name": "温度・湿度センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa",
+     "img": "product/products/301.png"
+    },
+    {
+     "id": 302,
+     "name": "温度・湿度データロガー",
+     "conn": "NFC | USB",
+     "img": "product/products/302.png"
+    },
+    {
+     "id": 303,
+     "name": "TVOCセンサー",
+     "conn": "NB-IoT | 4G LTE | LoRa",
+     "img": "product/products/303.png"
+    },
+    {
+     "id": 304,
+     "name": "資産追跡センサー",
+     "conn": "GPS | BeiDou | 4G LTE",
+     "img": "product/products/304.png"
+    },
+    {
+     "id": 305,
+     "name": "カスタムガスセンサー",
+     "conn": "NB-IoT | 4G LTE | LoRa",
+     "img": "product/products/305.png"
+    }
+   ]
+  },
+  "258": {
+   "bannerImg": "product/list/banner-258.jpg",
+   "subcats": [
+    {
+     "cid": "258",
+     "name": "すべて",
+     "on": true
+    },
+    {
+     "cid": "272",
+     "name": "屋内向けゲートウェイ",
+     "on": false
+    },
+    {
+     "cid": "273",
+     "name": "屋外向けゲートウェイ",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "276",
+     "img": "product/products/276.png",
+     "name": "屋内向けゲートウェイ",
+     "conn": "LoRa | 4G LTE | Ethernet"
+    },
+    {
+     "id": "275",
+     "img": "product/products/275.png",
+     "name": "屋外向けゲートウェイ",
+     "conn": "LoRa | 4G LTE | Ethernet"
+    }
+   ]
+  },
+  "257": {
+   "bannerImg": "product/list/banner-257.jpg",
+   "subcats": [
+    {
+     "cid": "257",
+     "name": "すべて",
+     "on": true
+    },
+    {
+     "cid": "275",
+     "name": "6パラメーター",
+     "on": false
+    },
+    {
+     "cid": "274",
+     "name": "12パラメーター",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "278",
+     "img": "product/products/278.png",
+     "name": "気象ステーション",
+     "conn": "マルチパラメーター | リアルタイム | 簡単展開"
+    },
+    {
+     "id": "277",
+     "img": "product/products/277.png",
+     "name": "水文ステーション",
+     "conn": "リアルタイム | マルチパラメーター | ミリメートル級"
+    }
+   ]
+  },
+  "256": {
+   "bannerImg": "product/list/banner-256.jpg",
+   "subcats": [
+    {
+     "cid": "256",
+     "name": "すべて",
+     "on": true
+    },
+    {
+     "cid": "278",
+     "name": "ソフトウェア",
+     "on": false
+    },
+    {
+     "cid": "279",
+     "name": "ハードウェア",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "",
+     "img": "product/products/custom-1.png",
+     "name": "デジタルツイン",
+     "conn": "カスタムダッシュボードと動的データ可視化"
+    },
+    {
+     "id": "",
+     "img": "product/products/custom-2.png",
+     "name": "GISダッシュボード",
+     "conn": "カスタムマップと多次元データ可視化"
+    },
+    {
+     "id": "",
+     "img": "product/products/custom-3.png",
+     "name": "組込みソフトウェア",
+     "conn": "特定の用途要件に合わせた組込みソフトウェア"
+    },
+    {
+     "id": "",
+     "img": "product/products/custom-4.png",
+     "name": "ハードウェアカスタマイズ",
+     "conn": "カスタムセンサー、コントローラー、アクチュエーター、その他の接続デバイス"
+    },
+    {
+     "id": "287",
+     "img": "product/products/287.png",
+     "name": "IoTアクセサリー",
+     "conn": "信号結合 | 2.4 GHz | 5.8 GHz"
+    },
+    {
+     "id": "286",
+     "img": "product/products/286.png",
+     "name": "危険区域向け2-in-1センサー",
+     "conn": "温度 | 圧力 | 4G通信"
+    }
+   ]
+  },
+  "262": {
+   "bannerImg": "product/list/banner-261.jpg",
+   "subcats": [
+    {
+     "cid": "261",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "263",
+     "name": "温度",
+     "on": false
+    },
+    {
+     "cid": "262",
+     "name": "圧力",
+     "on": true
+    },
+    {
+     "cid": "269",
+     "name": "土壌",
+     "on": false
+    },
+    {
+     "cid": "268",
+     "name": "レベル",
+     "on": false
+    },
+    {
+     "cid": "267",
+     "name": "傾斜モニタリング",
+     "on": false
+    },
+    {
+     "cid": "266",
+     "name": "レーダー距離",
+     "on": false
+    },
+    {
+     "cid": "271",
+     "name": "振動モニタリング",
+     "on": false
+    },
+    {
+     "cid": "265",
+     "name": "空気質",
+     "on": false
+    },
+    {
+     "cid": "306",
+     "name": "資産追跡",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "274",
+     "img": "product/products/274.png",
+     "name": "圧力センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    }
+   ]
+  },
+  "263": {
+   "bannerImg": "product/list/banner-261.jpg",
+   "subcats": [
+    {
+     "cid": "261",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "263",
+     "name": "温度",
+     "on": true
+    },
+    {
+     "cid": "262",
+     "name": "圧力",
+     "on": false
+    },
+    {
+     "cid": "269",
+     "name": "土壌",
+     "on": false
+    },
+    {
+     "cid": "268",
+     "name": "レベル",
+     "on": false
+    },
+    {
+     "cid": "267",
+     "name": "傾斜モニタリング",
+     "on": false
+    },
+    {
+     "cid": "266",
+     "name": "レーダー距離",
+     "on": false
+    },
+    {
+     "cid": "271",
+     "name": "振動モニタリング",
+     "on": false
+    },
+    {
+     "cid": "265",
+     "name": "空気質",
+     "on": false
+    },
+    {
+     "cid": "306",
+     "name": "資産追跡",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "270",
+     "img": "product/products/270.png",
+     "name": "温度センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    },
+    {
+     "id": 301,
+     "name": "温度・湿度センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa",
+     "img": "product/products/301.png"
+    },
+    {
+     "id": 302,
+     "name": "温度・湿度データロガー",
+     "conn": "NFC | USB",
+     "img": "product/products/302.png"
+    }
+   ]
+  },
+  "265": {
+   "bannerImg": "product/list/banner-261.jpg",
+   "subcats": [
+    {
+     "cid": "261",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "263",
+     "name": "温度",
+     "on": false
+    },
+    {
+     "cid": "262",
+     "name": "圧力",
+     "on": false
+    },
+    {
+     "cid": "269",
+     "name": "土壌",
+     "on": false
+    },
+    {
+     "cid": "268",
+     "name": "レベル",
+     "on": false
+    },
+    {
+     "cid": "267",
+     "name": "傾斜モニタリング",
+     "on": false
+    },
+    {
+     "cid": "266",
+     "name": "レーダー距離",
+     "on": false
+    },
+    {
+     "cid": "271",
+     "name": "振動モニタリング",
+     "on": false
+    },
+    {
+     "cid": "265",
+     "name": "空気質",
+     "on": true
+    },
+    {
+     "cid": "306",
+     "name": "資産追跡",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "285",
+     "img": "product/products/285.png",
+     "name": "空気質センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    },
+    {
+     "id": 303,
+     "name": "TVOCセンサー",
+     "conn": "NB-IoT | 4G LTE | LoRa",
+     "img": "product/products/303.png"
+    },
+    {
+     "id": 305,
+     "name": "カスタムガスセンサー",
+     "conn": "NB-IoT | 4G LTE | LoRa",
+     "img": "product/products/305.png"
+    }
+   ]
+  },
+  "266": {
+   "bannerImg": "product/list/banner-261.jpg",
+   "subcats": [
+    {
+     "cid": "261",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "263",
+     "name": "温度",
+     "on": false
+    },
+    {
+     "cid": "262",
+     "name": "圧力",
+     "on": false
+    },
+    {
+     "cid": "269",
+     "name": "土壌",
+     "on": false
+    },
+    {
+     "cid": "268",
+     "name": "レベル",
+     "on": false
+    },
+    {
+     "cid": "267",
+     "name": "傾斜モニタリング",
+     "on": false
+    },
+    {
+     "cid": "266",
+     "name": "レーダー距離",
+     "on": true
+    },
+    {
+     "cid": "271",
+     "name": "振動モニタリング",
+     "on": false
+    },
+    {
+     "cid": "265",
+     "name": "空気質",
+     "on": false
+    },
+    {
+     "cid": "306",
+     "name": "資産追跡",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "283",
+     "img": "product/products/283.png",
+     "name": "レーダー距離センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    }
+   ]
+  },
+  "267": {
+   "bannerImg": "product/list/banner-261.jpg",
+   "subcats": [
+    {
+     "cid": "261",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "263",
+     "name": "温度",
+     "on": false
+    },
+    {
+     "cid": "262",
+     "name": "圧力",
+     "on": false
+    },
+    {
+     "cid": "269",
+     "name": "土壌",
+     "on": false
+    },
+    {
+     "cid": "268",
+     "name": "レベル",
+     "on": false
+    },
+    {
+     "cid": "267",
+     "name": "傾斜モニタリング",
+     "on": true
+    },
+    {
+     "cid": "266",
+     "name": "レーダー距離",
+     "on": false
+    },
+    {
+     "cid": "271",
+     "name": "振動モニタリング",
+     "on": false
+    },
+    {
+     "cid": "265",
+     "name": "空気質",
+     "on": false
+    },
+    {
+     "cid": "306",
+     "name": "資産追跡",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "282",
+     "img": "product/products/282.png",
+     "name": "傾斜センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    }
+   ]
+  },
+  "268": {
+   "bannerImg": "product/list/banner-261.jpg",
+   "subcats": [
+    {
+     "cid": "261",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "263",
+     "name": "温度",
+     "on": false
+    },
+    {
+     "cid": "262",
+     "name": "圧力",
+     "on": false
+    },
+    {
+     "cid": "269",
+     "name": "土壌",
+     "on": false
+    },
+    {
+     "cid": "268",
+     "name": "レベル",
+     "on": true
+    },
+    {
+     "cid": "267",
+     "name": "傾斜モニタリング",
+     "on": false
+    },
+    {
+     "cid": "266",
+     "name": "レーダー距離",
+     "on": false
+    },
+    {
+     "cid": "271",
+     "name": "振動モニタリング",
+     "on": false
+    },
+    {
+     "cid": "265",
+     "name": "空気質",
+     "on": false
+    },
+    {
+     "cid": "306",
+     "name": "資産追跡",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "281",
+     "img": "product/products/281.png",
+     "name": "投入式レベルセンサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    }
+   ]
+  },
+  "269": {
+   "bannerImg": "product/list/banner-261.jpg",
+   "subcats": [
+    {
+     "cid": "261",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "263",
+     "name": "温度",
+     "on": false
+    },
+    {
+     "cid": "262",
+     "name": "圧力",
+     "on": false
+    },
+    {
+     "cid": "269",
+     "name": "土壌",
+     "on": true
+    },
+    {
+     "cid": "268",
+     "name": "レベル",
+     "on": false
+    },
+    {
+     "cid": "267",
+     "name": "傾斜モニタリング",
+     "on": false
+    },
+    {
+     "cid": "266",
+     "name": "レーダー距離",
+     "on": false
+    },
+    {
+     "cid": "271",
+     "name": "振動モニタリング",
+     "on": false
+    },
+    {
+     "cid": "265",
+     "name": "空気質",
+     "on": false
+    },
+    {
+     "cid": "306",
+     "name": "資産追跡",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "280",
+     "img": "product/products/280.png",
+     "name": "土壌センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    }
+   ]
+  },
+  "271": {
+   "bannerImg": "product/list/banner-261.jpg",
+   "subcats": [
+    {
+     "cid": "261",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "263",
+     "name": "温度",
+     "on": false
+    },
+    {
+     "cid": "262",
+     "name": "圧力",
+     "on": false
+    },
+    {
+     "cid": "269",
+     "name": "土壌",
+     "on": false
+    },
+    {
+     "cid": "268",
+     "name": "レベル",
+     "on": false
+    },
+    {
+     "cid": "267",
+     "name": "傾斜モニタリング",
+     "on": false
+    },
+    {
+     "cid": "266",
+     "name": "レーダー距離",
+     "on": false
+    },
+    {
+     "cid": "271",
+     "name": "振動モニタリング",
+     "on": true
+    },
+    {
+     "cid": "265",
+     "name": "空気質",
+     "on": false
+    },
+    {
+     "cid": "306",
+     "name": "資産追跡",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "284",
+     "img": "product/products/284.png",
+     "name": "振動センサー",
+     "conn": "NB-IoT | 4G LTE | LoRa"
+    }
+   ]
+  },
+  "272": {
+   "bannerImg": "product/list/banner-258.jpg",
+   "subcats": [
+    {
+     "cid": "258",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "272",
+     "name": "屋内向けゲートウェイ",
+     "on": true
+    },
+    {
+     "cid": "273",
+     "name": "屋外向けゲートウェイ",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "276",
+     "img": "product/products/276.png",
+     "name": "屋内向けゲートウェイ",
+     "conn": "LoRa | 4G LTE | Ethernet"
+    }
+   ]
+  },
+  "273": {
+   "bannerImg": "product/list/banner-258.jpg",
+   "subcats": [
+    {
+     "cid": "258",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "272",
+     "name": "屋内向けゲートウェイ",
+     "on": false
+    },
+    {
+     "cid": "273",
+     "name": "屋外向けゲートウェイ",
+     "on": true
+    }
+   ],
+   "products": [
+    {
+     "id": "275",
+     "img": "product/products/275.png",
+     "name": "屋外向けゲートウェイ",
+     "conn": "LoRa | 4G LTE | Ethernet"
+    }
+   ]
+  },
+  "274": {
+   "bannerImg": "product/list/banner-257.jpg",
+   "subcats": [
+    {
+     "cid": "257",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "275",
+     "name": "6パラメーター",
+     "on": false
+    },
+    {
+     "cid": "274",
+     "name": "12パラメーター",
+     "on": true
+    }
+   ],
+   "products": [
+    {
+     "id": "277",
+     "img": "product/products/277.png",
+     "name": "水文ステーション",
+     "conn": "リアルタイム | マルチパラメーター | ミリメートル級"
+    }
+   ]
+  },
+  "275": {
+   "bannerImg": "product/list/banner-257.jpg",
+   "subcats": [
+    {
+     "cid": "257",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "275",
+     "name": "6パラメーター",
+     "on": true
+    },
+    {
+     "cid": "274",
+     "name": "12パラメーター",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "278",
+     "img": "product/products/278.png",
+     "name": "気象ステーション",
+     "conn": "マルチパラメーター | リアルタイム | 簡単展開"
+    }
+   ]
+  },
+  "278": {
+   "bannerImg": "product/list/banner-256.jpg",
+   "subcats": [
+    {
+     "cid": "256",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "278",
+     "name": "ソフトウェア",
+     "on": true
+    },
+    {
+     "cid": "279",
+     "name": "ハードウェア",
+     "on": false
+    }
+   ],
+   "products": [
+    {
+     "id": "",
+     "img": "product/products/custom-1.png",
+     "name": "デジタルツイン",
+     "conn": "カスタムダッシュボードと動的データ可視化"
+    },
+    {
+     "id": "",
+     "img": "product/products/custom-2.png",
+     "name": "GISダッシュボード",
+     "conn": "カスタムマップと多次元データ可視化"
+    },
+    {
+     "id": "",
+     "img": "product/products/custom-3.png",
+     "name": "組込みソフトウェア",
+     "conn": "特定の用途要件に合わせた組込みソフトウェア"
+    }
+   ]
+  },
+  "279": {
+   "bannerImg": "product/list/banner-256.jpg",
+   "subcats": [
+    {
+     "cid": "256",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "278",
+     "name": "ソフトウェア",
+     "on": false
+    },
+    {
+     "cid": "279",
+     "name": "ハードウェア",
+     "on": true
+    }
+   ],
+   "products": [
+    {
+     "id": "",
+     "img": "product/products/custom-4.png",
+     "name": "ハードウェアカスタマイズ",
+     "conn": "カスタムセンサー、コントローラー、アクチュエーター、その他の接続デバイス"
+    },
+    {
+     "id": "287",
+     "img": "product/products/287.png",
+     "name": "IoTアクセサリー",
+     "conn": "信号結合 | 2.4 GHz | 5.8 GHz"
+    },
+    {
+     "id": "286",
+     "img": "product/products/286.png",
+     "name": "危険区域向け2-in-1センサー",
+     "conn": "温度 | 圧力 | 4G通信"
+    }
+   ]
+  },
+  "306": {
+   "bannerImg": "product/list/banner-261.jpg",
+   "subcats": [
+    {
+     "cid": "261",
+     "name": "すべて",
+     "on": false
+    },
+    {
+     "cid": "263",
+     "name": "温度",
+     "on": false
+    },
+    {
+     "cid": "262",
+     "name": "圧力",
+     "on": false
+    },
+    {
+     "cid": "269",
+     "name": "土壌",
+     "on": false
+    },
+    {
+     "cid": "268",
+     "name": "レベル",
+     "on": false
+    },
+    {
+     "cid": "267",
+     "name": "傾斜モニタリング",
+     "on": false
+    },
+    {
+     "cid": "266",
+     "name": "レーダー距離",
+     "on": false
+    },
+    {
+     "cid": "271",
+     "name": "振動モニタリング",
+     "on": false
+    },
+    {
+     "cid": "265",
+     "name": "空気質",
+     "on": false
+    },
+    {
+     "cid": "306",
+     "name": "資産追跡",
+     "on": true
+    }
+   ],
+   "products": [
+    {
+     "id": 304,
+     "name": "資産追跡センサー",
+     "conn": "GPS | BeiDou | 4G LTE",
+     "img": "product/products/304.png"
+    }
+   ]
+  }
+ },
+ "details": {
+  "270": {
+   "series": "Hシリーズ · 温度センサー",
+   "tagline": "精度 | 測定範囲 | 超低消費電力",
+   "desc": "Hitelecomの温度センサーは、遠隔モニタリング、アラート、高精度測定を提供し、多様な用途でタイムリーで信頼性の高い温度データを提供します。",
+   "heroImg": "product/details/270-hero.png",
+   "pdf": "/downloads/temperature-sensor-datasheet.pdf",
+   "crumbCat": "温度",
+   "returnCid": "263",
+   "features": [
+    {
+     "icon": "product/details/270-f1.png",
+     "text": "精度：±0.5 °C（±0.1 °Cまでカスタマイズ可能）"
+    },
+    {
+     "icon": "product/details/270-f2.png",
+     "text": "IP68防護等級筐体"
+    },
+    {
+     "icon": "product/details/270-f3.png",
+     "text": "広測定範囲：−200 °C〜+800 °C"
+    },
+    {
+     "icon": "product/details/270-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/270-f5.png",
+     "text": "長期運用向け低消費電力設計"
+    },
+    {
+     "icon": "product/details/270-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/270-f7.png",
+     "text": "遠隔温度モニタリング"
+    },
+    {
+     "icon": "product/details/270-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "マイクロパワープロセッサーとアルゴリズム最適化により、規定の試験条件下で1時間の送信間隔で最長10年の設計寿命を実現し、定期保守を削減します。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "測定範囲",
+     "−200 °C〜800 °C"
+    ],
+    [
+     "精度",
+     "±0.5 °C（±0.1 °Cまでカスタマイズ可能）"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "接続",
+     "3線式"
+    ],
+    [
+     "周波数帯",
+     "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    ],
+    [
+     "バッテリー寿命",
+     "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200/H300/H500"
+    },
+    {
+     "name": "測定範囲",
+     "value": "−200 °C〜800 °C",
+     "unitText": "摂氏度",
+     "minValue": -200.0,
+     "maxValue": 800.0
+    },
+    {
+     "name": "精度",
+     "value": "±0.5 °C（±0.1 °Cまでカスタマイズ可能）",
+     "unitText": "摂氏度"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "接続",
+     "value": "3線式"
+    },
+    {
+     "name": "周波数帯",
+     "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。",
+     "unitText": "年",
+     "minValue": 10.0
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/270-scen1.jpg",
+     "label": "スマートエネルギー"
+    },
+    {
+     "img": "product/details/270-scen2.jpg",
+     "label": "スマート農業"
+    },
+    {
+     "img": "product/details/270-scen3.jpg",
+     "label": "データセンター"
+    },
+    {
+     "img": "product/details/270-scen4.jpg",
+     "label": "医薬品およびヘルスケア保管"
+    },
+    {
+     "img": "product/details/270-scen5.jpg",
+     "label": "食品加工"
+    },
+    {
+     "img": "product/details/270-scen6.jpg",
+     "label": "スマート製造"
+    },
+    {
+     "img": "product/details/270-scen7.jpg",
+     "label": "遊園地"
+    }
+   ],
+   "related": [
+    "274",
+    "280",
+    "281",
+    "282",
+    "283",
+    "284",
+    "285",
+    "276",
+    "275"
+   ],
+   "summary": "HitelecomのHシリーズ温度センサーは、−200 °C〜800 °Cの遠隔モニタリング用ワイヤレス産業用温度センサーです。±0.5 °Cの精度（±0.1 °Cまでカスタマイズ可能）を提供し、規定の試験条件下で毎時送信で10年以上のバッテリー寿命を想定した設計で、4GまたはNB-IoT経由でMQTTによりHitelecom Cloudまたはプライベートプラットフォームに読取値をアップロードします。",
+   "sku": "H200/H300/H500",
+   "applications": [
+    {
+     "name": "データセンターとサーバールーム",
+     "desc": "ラックの吸気口と室温を追跡し、オペレーターが熱シャットダウンにつながる可能性のある状況を特定するのを支援します。",
+     "img": "product/details/270-scen3.jpg"
+    },
+    {
+     "name": "冷蔵保管と食品加工",
+     "desc": "チラー、冷凍庫、加工ラインを安全な温度帯に保ち、HACCPモニタリングをサポートします。",
+     "img": "product/details/270-scen5.jpg"
+    },
+    {
+     "name": "医療および実験室のモニタリング",
+     "desc": "ワクチン、血液、試薬を保管する冷蔵庫、インキュベーター、クリーンルームを監視します。",
+     "img": "product/details/270-scen4.jpg"
+    },
+    {
+     "name": "温室と畜産の環境",
+     "desc": "スマート農業での作物収量と動物福祉のためにハウス温度を監視します。",
+     "img": "product/details/270-scen2.jpg"
+    },
+    {
+     "name": "産業プロセスのモニタリング",
+     "desc": "生産ラインのパイプライン、ボイラー、設備の表面温度を測定します。",
+     "img": "product/details/270-scen6.jpg"
+    },
+    {
+     "name": "エネルギー施設",
+     "desc": "変圧器、バッテリー室、変電所キャビネットの過熱リスクを監視します。",
+     "img": "product/details/270-scen1.jpg"
+    },
+    {
+     "name": "公共施設",
+     "desc": "遊園地やその他の人通りの多い公共建物の室内環境を監視します。",
+     "img": "product/details/270-scen7.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "Hシリーズ温度センサーの測定範囲はどのくらいですか？",
+     "a": "標準範囲は−200 °C〜800 °Cで精度±0.5 °Cです。±0.1 °Cの精度はご要望に応じてご提供可能です。3線式プローブ接続により、電気ノイズの多いプラントでも読取値が安定します。"
+    },
+    {
+     "q": "バッテリーはどのくらい持ちますか？",
+     "a": "送信機は1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です — 実際の寿命はネットワーク状況、温度、送信頻度によって異なります。送信機は完全にバッテリー駆動で、プローブケーブルのみ必要です — 設置場所に主電源や信号ケーブルは不要です。"
+    },
+    {
+     "q": "センサーはどのようにデータを送信しますか？",
+     "a": "4GまたはNB-IoT経由でMQTTを使用してHitelecom Cloud、お客様のクラウド、またはプライベートデプロイに送信し、温度が設定済みしきい値を超えるとアラートをプッシュします。"
+    },
+    {
+     "q": "センサーは当社の用途に合わせてカスタマイズできますか？",
+     "a": "はい。プローブタイプ、プローブ長、ケーブル長、送信間隔、筐体は、HitelecomのOEM/ODMプログラムでカスタマイズ可能です。動作条件を営業にお知らせください。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "274": {
+   "series": "Hシリーズ · 圧力センサー",
+   "tagline": "リモート | 低消費電力 | 耐衝撃",
+   "desc": "Hitelecomの圧力センサーは、継続的な精密測定と重要な圧力データの正確なクラウド送信を提供し、複雑な産業用途に対応します。",
+   "heroImg": "product/details/274-hero.png",
+   "pdf": "/downloads/h300-pressure-sensor-datasheet.pdf",
+   "crumbCat": "圧力",
+   "returnCid": "262",
+   "features": [
+    {
+     "icon": "product/details/274-f1.png",
+     "text": "±0.5 % FS（高精度カスタマイズ）"
+    },
+    {
+     "icon": "product/details/274-f2.png",
+     "text": "IP68防護等級筐体"
+    },
+    {
+     "icon": "product/details/274-f3.png",
+     "text": "リモートOTAファームウェア更新に対応します。"
+    },
+    {
+     "icon": "product/details/274-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/274-f5.png",
+     "text": "長期運用向け低消費電力設計"
+    },
+    {
+     "icon": "product/details/274-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/274-f7.png",
+     "text": "遠隔圧力モニタリング"
+    },
+    {
+     "icon": "product/details/274-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "組込み省エネアルゴリズムを備えた統合通信・センシング技術により、圧力センサーは延長された耐用年数と高い測定安定性を実現し、より広範なモニタリングシステムの信頼性を支えます。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "測定範囲",
+     "0–1、1.6、3.5、7、10、20 MPa"
+    ],
+    [
+     "過負荷",
+     "フルスケール圧力の2倍以下"
+    ],
+    [
+     "安定性",
+     "±0.2 % FS/年"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "動作温度",
+     "−20 °C〜+80 °C"
+    ],
+    [
+     "保管温度",
+     "−20 °C〜+85 °C"
+    ],
+    [
+     "バッテリー寿命",
+     "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200/H300/H500"
+    },
+    {
+     "name": "測定範囲",
+     "value": "0–1、1.6、3.5、7、10、20 MPa"
+    },
+    {
+     "name": "過負荷",
+     "value": "フルスケール圧力の2倍以下"
+    },
+    {
+     "name": "安定性",
+     "value": "±0.2 % FS/年"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "動作温度",
+     "value": "−20 °C〜+80 °C",
+     "unitText": "摂氏度",
+     "minValue": -20.0,
+     "maxValue": 80.0
+    },
+    {
+     "name": "保管温度",
+     "value": "−20 °C〜+85 °C",
+     "unitText": "摂氏度",
+     "minValue": -20.0,
+     "maxValue": 85.0
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。",
+     "unitText": "年",
+     "minValue": 10.0
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/274-scen1.jpg",
+     "label": "化学工業"
+    },
+    {
+     "img": "product/details/274-scen2.jpg",
+     "label": "半導体産業"
+    },
+    {
+     "img": "product/details/274-scen3.jpg",
+     "label": "スマートビル"
+    },
+    {
+     "img": "product/details/274-scen4.jpg",
+     "label": "スマート製造"
+    },
+    {
+     "img": "product/details/274-scen5.jpg",
+     "label": "科学研究"
+    },
+    {
+     "img": "product/details/274-scen6.jpg",
+     "label": "スマート農業"
+    },
+    {
+     "img": "product/details/274-scen7.jpg",
+     "label": "タワーモニタリング"
+    },
+    {
+     "img": "product/details/274-scen8.jpg",
+     "label": "地質探査"
+    }
+   ],
+   "related": [
+    "270",
+    "280",
+    "281",
+    "282",
+    "283",
+    "284",
+    "285",
+    "276",
+    "275"
+   ],
+   "summary": "HitelecomのHシリーズ圧力センサーは、パイプライン、ポンプ、タンク向けのワイヤレス産業用圧力送信機です。利用可能なフルスケール範囲は1、1.6、3.5、7、10、20 MPaで、±0.2 % FS/年の安定性と2×フルスケール過負荷耐性を持ち、4GまたはNB-IoT経由で送信します。バッテリーは規定の試験条件下で1時間の送信間隔で10年以上の寿命を想定した設計です。",
+   "sku": "H200/H300/H500",
+   "applications": [
+    {
+     "name": "給水およびポンプ場",
+     "desc": "パイプライン圧力を監視し、破裂、漏洩、ポンプ故障を早期に検出します。",
+     "img": "product/details/281-scen1.jpg"
+    },
+    {
+     "name": "化学プラント",
+     "desc": "有線送信機の改修が高コストなプロセスラインの圧力を追跡します。",
+     "img": "product/details/274-scen1.jpg"
+    },
+    {
+     "name": "ビル給水システム",
+     "desc": "高層の二次給水におけるブースターポンプと立管の圧力を監視します。",
+     "img": "product/details/274-scen3.jpg"
+    },
+    {
+     "name": "半導体工場",
+     "desc": "特殊ガスおよびユーティリティラインを安定した再現性のある読取値で監視します。",
+     "img": "product/details/274-scen2.jpg"
+    },
+    {
+     "name": "産業用油圧",
+     "desc": "油圧プレスおよび設備の圧力曲線を追跡し、状態基準保全をサポートします。",
+     "img": "product/details/274-scen4.jpg"
+    },
+    {
+     "name": "タンクおよび容器のモニタリング",
+     "desc": "在庫および安全制御のためにヘッド圧力とレベルを組み合わせます。",
+     "img": "product/details/287-scen3.jpg"
+    },
+    {
+     "name": "地質・探査サイト",
+     "desc": "ケーブル配線なしで遠隔ボアホールでのバッテリー駆動圧力記録。",
+     "img": "product/details/274-scen8.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "どのような圧力範囲が利用可能ですか？",
+     "a": "標準範囲は0-1 MPa、1.6 MPa、3.5 MPa、7 MPa、10 MPa、20 MPaです。センサーは2×フルスケール過負荷に耐え、長期安定性は±0.2 % FS/年です（測定精度とは別の指標）。"
+    },
+    {
+     "q": "ガスと液体の両方の圧力を測定できますか？",
+     "a": "標準版は、プロセス接続と互換性のある一般的なガスおよび液体媒体に適しています。腐食性または特殊な媒体については、接触部材料の確認のためHitelecomにお問い合わせください。"
+    },
+    {
+     "q": "どのように読取値を送信しますか？",
+     "a": "4GまたはNB-IoT経由でMQTTによりHitelecom Cloud、お客様のクラウド、またはプライベートプラットフォームに読取値を送信します。しきい値とアラートは構成可能です。"
+    },
+    {
+     "q": "現場でどのような電源が必要ですか？",
+     "a": "不要です。内蔵バッテリーは規定の試験条件下で1時間の送信間隔で10年以上の寿命を想定した設計です — 実際の寿命はネットワークカバレッジ、温度、送信頻度によって異なります — そのため、ケーブル配線が困難な場所にも送信機を設置できます。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "280": {
+   "series": "Hシリーズ · 土壌センサー",
+   "tagline": "低消費電力 | 精度 | マルチパラメータ",
+   "desc": "Hitelecomの土壌センサーは、マルチパラメータモニタリング、スケジュールされたデータ同期、精密測定を統合し、多様な農業用途の包括的な土壌品質評価と継続的モニタリングをサポートします。",
+   "heroImg": "product/details/280-hero.png",
+   "pdf": "/downloads/h300-soil-sensor-datasheet.pdf",
+   "crumbCat": "土壌",
+   "returnCid": "269",
+   "features": [
+    {
+     "icon": "product/details/280-f1.png",
+     "text": "窒素・リン・カリウムなどの主要養分をモニタリング"
+    },
+    {
+     "icon": "product/details/280-f2.png",
+     "text": "IP68防護等級筐体"
+    },
+    {
+     "icon": "product/details/280-f3.png",
+     "text": "灌漑管理のための土壌水分モニタリング"
+    },
+    {
+     "icon": "product/details/280-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/280-f5.png",
+     "text": "リモートOTAファームウェア更新に対応します。"
+    },
+    {
+     "icon": "product/details/280-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/280-f7.png",
+     "text": "遠隔土壌モニタリング"
+    },
+    {
+     "icon": "product/details/280-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "先進的なインテリジェントアルゴリズムと継続的なデータ記録、および極端な条件での適応性を活用し、土壌状況を継続的に追跡・精密分析し、複雑な農業課題に効果的に対処し、灌漑・施肥・収量管理の意思決定を強化します。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "伝導率",
+     "0〜1,000 µS/cm（±3 %）"
+    ],
+    [
+     "pH",
+     "0〜14（分解能0.01）"
+    ],
+    [
+     "土壌水分",
+     "0〜100 %（±3 %；永久凍土層には不適）"
+    ],
+    [
+     "NPK",
+     "0〜1,999 mg/kg（±2 % FS）"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "周波数帯",
+     "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    ],
+    [
+     "バッテリー寿命",
+     "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200/H300/H500"
+    },
+    {
+     "name": "伝導率",
+     "value": "0〜1,000 µS/cm（±3 %）",
+     "unitText": "マイクロジーメンス毎センチメートル",
+     "minValue": 0.0,
+     "maxValue": 1000.0
+    },
+    {
+     "name": "pH",
+     "value": "0〜14（分解能0.01）"
+    },
+    {
+     "name": "土壌水分",
+     "value": "0〜100 %（±3 %；永久凍土層には不適）",
+     "unitText": "パーセント",
+     "minValue": 0.0,
+     "maxValue": 100.0
+    },
+    {
+     "name": "NPK",
+     "value": "0〜1,999 mg/kg（±2 % FS）",
+     "unitText": "ミリグラム毎キログラム",
+     "minValue": 0.0,
+     "maxValue": 1999.0
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "周波数帯",
+     "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。",
+     "unitText": "年",
+     "minValue": 10.0
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/280-scen1.jpg",
+     "label": "農地"
+    },
+    {
+     "img": "product/details/280-scen2.jpg",
+     "label": "温室"
+    },
+    {
+     "img": "product/details/280-scen3.jpg",
+     "label": "都市公園"
+    },
+    {
+     "img": "product/details/280-scen4.jpg",
+     "label": "土壌汚染"
+    },
+    {
+     "img": "product/details/280-scen5.jpg",
+     "label": "森林健全性"
+    },
+    {
+     "img": "product/details/280-scen6.jpg",
+     "label": "実験室"
+    }
+   ],
+   "related": [
+    "270",
+    "274",
+    "281",
+    "282",
+    "283",
+    "284",
+    "285",
+    "276",
+    "275"
+   ],
+   "summary": "HitelecomのHシリーズ土壌センサーは、農業・土地モニタリング用のマルチパラメータワイヤレスプローブです。1台のデバイスで土壌水分、温度、伝導率（EC）、pH、NPK養分を測定し、4GまたはNB-IoT経由で送信します。規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計で、長期埋設向けのIP68筐体を備えています。",
+   "sku": "H200/H300/H500",
+   "applications": [
+    {
+     "name": "農地の灌漑スケジューリング",
+     "desc": "土壌水分の傾向は、栽培者に正確な灌漑のタイミングと量を示し、水の浪費を削減します。",
+     "img": "product/details/280-scen1.jpg"
+    },
+    {
+     "name": "温室のフェルティゲーション",
+     "desc": "ECおよびNPKの読取値が施肥量を導き、養分が流出ではなく根圏に留まるようにします。",
+     "img": "product/details/280-scen2.jpg"
+    },
+    {
+     "name": "都市公園と造園",
+     "desc": "市の緑化管理チーム向けに芝生と樹木ピットの土壌水分を監視します。",
+     "img": "product/details/280-scen3.jpg"
+    },
+    {
+     "name": "土壌汚染と修復の追跡",
+     "desc": "継続的なpHおよびEC記録が汚染プルームを検出し、修復進捗を検証します。",
+     "img": "product/details/280-scen4.jpg"
+    },
+    {
+     "name": "森林と草原の健全性",
+     "desc": "長期埋設プローブが、目に見える樹冠の衰退に先立って土壌干ばつストレスを追跡します。",
+     "img": "product/details/280-scen5.jpg"
+    },
+    {
+     "name": "研究およびフィールド試験",
+     "desc": "マルチパラメーター時系列が農学研究と品種試験をサポートします。",
+     "img": "product/details/280-scen6.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "Hシリーズはどのような土壌パラメーターを測定しますか？",
+     "a": "土壌水分（0〜100 %、±3 %）、温度、伝導率（0〜1,000 µS/cm、±3 %）、pH（0〜14、分解能0.01）、NPK養分（0〜1,999 mg/kg、±2 % FS）— すべて1つのプローブで。"
+    },
+    {
+     "q": "プローブは年間を通じて屋外に埋設したままにできますか？",
+     "a": "はい。IP68筐体は長期埋設向けに設計されており、バッテリーは規定の試験条件下で1時間の送信間隔で10年以上の寿命を想定した設計で、季節間の定期保守を削減します。"
+    },
+    {
+     "q": "土壌データはどのように送信されますか？",
+     "a": "4GまたはNB-IoT経由でMQTTアップリンクによりHitelecom Cloudまたはプライベートプラットフォームに接続します。任意のパラメーターのしきい値でアラートが発動します。"
+    },
+    {
+     "q": "アルカリ性または塩性土壌に適していますか？",
+     "a": "ECチャンネルは0〜1,000 µS/cmをカバーしています。塩性土壌または特殊媒体については、必要なEC範囲をHitelecomにご確認ください。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "281": {
+   "series": "Hシリーズ · 投入式レベルセンサー",
+   "tagline": "精度 | 測定範囲 | 超低消費電力",
+   "desc": "Hitelecomのレベルセンサーは、精密なモニタリング、タイムリーなフィードバック、高い安定性を提供し、さまざまな産業環境で正確かつ継続的な液位データを提供します。",
+   "heroImg": "product/details/281-hero.png",
+   "pdf": "/downloads/liquid-level-sensor-datasheet.pdf",
+   "crumbCat": "レベル",
+   "returnCid": "268",
+   "features": [
+    {
+     "icon": "product/details/281-f1.png",
+     "text": "±0.5 % FS（高精度カスタマイズ）"
+    },
+    {
+     "icon": "product/details/281-f2.png",
+     "text": "IP68防護等級筐体"
+    },
+    {
+     "icon": "product/details/281-f3.png",
+     "text": "広測定範囲：0〜200 m（カスタマイズ可能）"
+    },
+    {
+     "icon": "product/details/281-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/281-f5.png",
+     "text": "リモートOTAファームウェア更新に対応します。"
+    },
+    {
+     "icon": "product/details/281-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/281-f7.png",
+     "text": "遠隔レベルモニタリング"
+    },
+    {
+     "icon": "product/details/281-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "統合センシング技術、リアルタイム通信、省エネ設計が、水処理から化学生産ラインまでの産業用途で正確かつ継続的な液位データを支えます。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "測定範囲",
+     "0〜200 m（カスタマイズ可能）"
+    ],
+    [
+     "精度",
+     "±0.5 % FS（より高精度のカスタマイズ可能）"
+    ],
+    [
+     "安定性",
+     "±0.2 % FS/年"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "動作温度",
+     "−20 °C〜+70 °C"
+    ],
+    [
+     "保管温度",
+     "−20 °C〜+80 °C"
+    ],
+    [
+     "バッテリー寿命",
+     "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200/H300/H500"
+    },
+    {
+     "name": "測定範囲",
+     "value": "0〜200 m（カスタマイズ可能）"
+    },
+    {
+     "name": "精度",
+     "value": "±0.5 % FS（より高精度のカスタマイズ可能）",
+     "unitText": "パーセント"
+    },
+    {
+     "name": "安定性",
+     "value": "±0.2 % FS/年"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "動作温度",
+     "value": "−20 °C〜+70 °C",
+     "unitText": "摂氏度",
+     "minValue": -20.0,
+     "maxValue": 70.0
+    },
+    {
+     "name": "保管温度",
+     "value": "−20 °C〜+80 °C",
+     "unitText": "摂氏度",
+     "minValue": -20.0,
+     "maxValue": 80.0
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。",
+     "unitText": "年",
+     "minValue": 10.0
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/281-scen1.jpg",
+     "label": "給水と排水"
+    },
+    {
+     "img": "product/details/281-scen2.jpg",
+     "label": "海洋および船上用途"
+    },
+    {
+     "img": "product/details/281-scen3.jpg",
+     "label": "水文モニタリング"
+    },
+    {
+     "img": "product/details/281-scen4.jpg",
+     "label": "冶金"
+    },
+    {
+     "img": "product/details/281-scen5.jpg",
+     "label": "病院排水"
+    },
+    {
+     "img": "product/details/281-scen6.jpg",
+     "label": "発電所"
+    },
+    {
+     "img": "product/details/281-scen7.jpg",
+     "label": "鉱業"
+    },
+    {
+     "img": "product/details/281-scen8.jpg",
+     "label": "スマートエネルギー"
+    }
+   ],
+   "related": [
+    "270",
+    "274",
+    "280",
+    "282",
+    "283",
+    "284",
+    "285",
+    "276",
+    "275"
+   ],
+   "summary": "HitelecomのHシリーズレベルセンサーは、貯水池、河川、タンク、井戸向けのワイヤレス液位送信機です。0〜200 m（カスタマイズ可能）をカバーし、精度±0.5 % FS、安定性±0.2 % FS/年で、規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計で、4GまたはNB-IoT経由で送信します。",
+   "sku": "H200/H300/H500",
+   "applications": [
+    {
+     "name": "貯水池とダム",
+     "desc": "洪水制御と派遣判断のための継続的な水位記録。",
+     "img": "solution/67-scen-0.jpg"
+    },
+    {
+     "name": "河川および水文ステーション",
+     "desc": "主電源なしで河川および水路沿いの遠隔水位モニタリング。",
+     "img": "product/details/281-scen3.jpg"
+    },
+    {
+     "name": "給水と排水",
+     "desc": "公益運用向けのタンク、清水井戸、ネットワーク貯水池のレベル。",
+     "img": "product/details/281-scen1.jpg"
+    },
+    {
+     "name": "産業用タンク",
+     "desc": "発電所および冶金プロセスタンクの在庫レベル。",
+     "img": "product/details/287-scen3.jpg"
+    },
+    {
+     "name": "鉱山の水管理",
+     "desc": "鉱山安全のためにサンプおよび立坑の水位を監視します。",
+     "img": "product/details/281-scen7.jpg"
+    },
+    {
+     "name": "海洋および船舶の用途",
+     "desc": "バッテリー駆動の簡便さによるバラストおよびビルジレベルのモニタリング。",
+     "img": "product/details/281-scen2.jpg"
+    },
+    {
+     "name": "医療排水",
+     "desc": "病院排水ステーションの集水タンクレベルを追跡します。",
+     "img": "product/details/281-scen5.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "Hシリーズはどのくらいのレベル範囲をカバーしますか？",
+     "a": "標準で0〜200 m、それ以上もカスタマイズ可能です。精度は±0.5 % FSで、年間安定性±0.2 % FSで長期無人監視に対応します。"
+    },
+    {
+     "q": "遠隔地ではセンサーはどのように給電されますか？",
+     "a": "内蔵バッテリーで — 規定の試験条件下で1時間の送信間隔で10年以上の寿命を想定した設計で — 適切な展開では、貯水池や河川ステーションにソーラーパネルやケーブル配線が不要な場合があります。"
+    },
+    {
+     "q": "レベルデータはどのように取得しますか？",
+     "a": "送信機は4GまたはNB-IoT経由でMQTTによりHitelecom Cloudまたはお客様のプラットフォームに送信し、高低レベルアラームを備えています。"
+    },
+    {
+     "q": "当社のタンクや井戸に合わせてカスタマイズできますか？",
+     "a": "はい。範囲、プローブケーブル長、取り付けは設置に合わせて適応可能です。図面または現場写真をHitelecom営業と共有して、適合する構成をご確認ください。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "282": {
+   "series": "Hシリーズ · 傾斜センサー",
+   "tagline": "精度 | 多軸 | 超低消費電力",
+   "desc": "Hitelecomの傾斜センサーは超高精度センシング素子を統合し、遠隔モニタリング、リアルタイムアラート、高精度測定を特徴とし、複雑な産業用途で正確かつタイムリーな傾斜データを提供します。",
+   "heroImg": "product/details/282-hero.png",
+   "pdf": "/downloads/h310-ts180c-tilt-sensor-datasheet.pdf",
+   "crumbCat": "傾斜モニタリング",
+   "returnCid": "267",
+   "features": [
+    {
+     "icon": "product/details/282-f1.png",
+     "text": "精度：±0.005°（カスタマイズ可能）"
+    },
+    {
+     "icon": "product/details/282-f2.png",
+     "text": "IP68防護等級筐体"
+    },
+    {
+     "icon": "product/details/282-f3.png",
+     "text": "分解能：0.001°"
+    },
+    {
+     "icon": "product/details/282-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/282-f5.png",
+     "text": "リモートOTAファームウェア更新に対応します。"
+    },
+    {
+     "icon": "product/details/282-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/282-f7.png",
+     "text": "遠隔傾斜モニタリング"
+    },
+    {
+     "icon": "product/details/282-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "高感度センシング素子、リアルタイムデータ同期、堅牢で耐久性のある設計が、精密で信頼性の高い傾斜モニタリングを支えます。規定の試験条件下で1時間の送信間隔で最長10年の動作を想定し、定期保守を削減します。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "測定範囲",
+     "X軸 · Y軸（3軸までカスタマイズ可能）"
+    ],
+    [
+     "精度",
+     "±0.005°（カスタマイズ可能）"
+    ],
+    [
+     "分解能",
+     "0.001°"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "動作温度",
+     "−20 °C〜+70 °C"
+    ],
+    [
+     "保管温度",
+     "−20 °C〜+80 °C"
+    ],
+    [
+     "バッテリー寿命",
+     "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/282-scen1.jpg",
+     "label": "橋梁の傾斜と変形"
+    },
+    {
+     "img": "product/details/282-scen2.jpg",
+     "label": "倉庫ラック"
+    },
+    {
+     "img": "product/details/282-scen3.jpg",
+     "label": "タワー傾斜"
+    },
+    {
+     "img": "product/details/282-scen4.jpg",
+     "label": "リスクのある建物"
+    },
+    {
+     "img": "product/details/282-scen5.jpg",
+     "label": "太陽追跡システム"
+    },
+    {
+     "img": "product/details/282-scen6.jpg",
+     "label": "エネルギーインフラの傾斜モニタリング"
+    },
+    {
+     "img": "product/details/282-scen7.jpg",
+     "label": "建物の傾斜"
+    },
+    {
+     "img": "product/details/282-scen8.jpg",
+     "label": "遊具および公園構造物のモニタリング"
+    }
+   ],
+   "related": [
+    "270",
+    "274",
+    "280",
+    "281",
+    "283",
+    "284",
+    "285",
+    "276",
+    "275"
+   ],
+   "summary": "HitelecomのHシリーズ傾斜センサーは、構造物健全性モニタリング用のワイヤレスIoT傾斜計です。X軸・Y軸の傾斜（3軸オプション）を精度±0.005°・分解能0.001°で測定し、規定の試験条件下で毎時送信で10年以上のバッテリー寿命を想定した設計で、長期屋外展開向けのIP68等級を備えています。コネクティビティは4G、NB-IoT、LoRaです。",
+   "sku": "H200/H300/H500",
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200 / H300 / H500"
+    },
+    {
+     "name": "測定軸",
+     "value": "X軸 · Y軸（3軸までカスタマイズ可能）"
+    },
+    {
+     "name": "精度",
+     "value": "±0.005°",
+     "unitText": "度"
+    },
+    {
+     "name": "分解能",
+     "value": "0.001°",
+     "unitText": "度"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "ワイヤレス",
+     "value": "4G / NB-IoT / LoRa"
+    },
+    {
+     "name": "動作温度",
+     "value": "−20 °C〜70 °C",
+     "unitText": "摂氏度",
+     "minValue": -20,
+     "maxValue": 70
+    },
+    {
+     "name": "保管温度",
+     "value": "−20 °C〜80 °C",
+     "unitText": "摂氏度",
+     "minValue": -20,
+     "maxValue": 80
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。"
+    },
+    {
+     "name": "防護等級",
+     "value": "IP68"
+    },
+    {
+     "name": "取付",
+     "value": "取付耳 · ポールクランプ · スロットマウント"
+    },
+    {
+     "name": "構成",
+     "value": "NFCアクティベーション；OTAファームウェアアップグレード"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "applications": [
+    {
+     "name": "斜面安定性モニタリング",
+     "desc": "高速道路、露天掘り鉱山、切土堤防での異常な斜面移動の早期特定を支援します。",
+     "img": "product/details/281-scen7.jpg"
+    },
+    {
+     "name": "鉄道インフラ",
+     "desc": "鉄道路線沿いの軌道盤沈下、擁壁、架線柱の傾斜を監視します。"
+    },
+    {
+     "name": "トンネルモニタリング",
+     "desc": "トンネル建設中および建設後のライニング収束とセグメント回転を追跡します。"
+    },
+    {
+     "name": "橋梁変形",
+     "desc": "橋脚傾斜、桁回転、支承変位を測定し、橋梁健全性モニタリングを行います。",
+     "img": "product/details/282-scen1.jpg"
+    },
+    {
+     "name": "地下鉄構造物",
+     "desc": "隣接する掘削工事の近くで、ステーションボックスのたわみとシールドトンネルの変形を監視します。"
+    },
+    {
+     "name": "建設現場と仮設構造物",
+     "desc": "足場、タワークレーン、型枠、現場小屋の安全でない傾斜を監視します。"
+    },
+    {
+     "name": "防潮堤とダム",
+     "desc": "堤防ダム、海堤、貯水池斜面の継続的な傾斜モニタリング。",
+     "img": "solution/67-scen-0.jpg"
+    },
+    {
+     "name": "歴史的建造物と古塔",
+     "desc": "穿孔が許可されない保護歴史的構造物の非侵襲的傾斜追跡。",
+     "img": "product/details/282-scen4.jpg"
+    },
+    {
+     "name": "樹木の傾斜モニタリング",
+     "desc": "台風シーズン前に都市樹木の根の障害と傾斜の進行を検出します。",
+     "img": "product/details/280-scen3.jpg"
+    },
+    {
+     "name": "街路灯ポール",
+     "desc": "車両衝撃や基礎緩みによるポール傾斜を、市の照明資産全体で検出します。"
+    },
+    {
+     "name": "送電塔",
+     "desc": "送電線の基礎沈下と塔の傾斜を監視します。",
+     "img": "product/details/282-scen3.jpg"
+    },
+    {
+     "name": "通信塔",
+     "desc": "通信インフラのマスト鉛直度と支線塔のアライメントを追跡します。"
+    },
+    {
+     "name": "倉庫ラック",
+     "desc": "フォークリフト衝撃によるラック柱のたわみを検出し、損傷が拡大する前の早期介入を支援します。",
+     "img": "product/details/282-scen2.jpg"
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Hシリーズ傾斜センサーはどのような構造物を監視できますか？",
+     "a": "Hシリーズ傾斜センサーは、斜面・堤防、鉄道インフラ、トンネル、橋梁、地下鉄構造物、建設現場・仮設物、防潮堤・ダム、歴史的建造物・古塔、都市樹木、街路灯ポール、送電塔、通信塔、倉庫ラックに展開されます。IP68等級と長いバッテリー寿命は長期屋外設置に適しています。バッテリー寿命は送信間隔、ネットワークカバレッジ、現場条件によって異なります。"
+    },
+    {
+     "q": "Hシリーズ傾斜センサーの精度はどのくらいですか？",
+     "a": "標準精度は±0.005°、X軸・Y軸で分解能0.001°です。3軸構成はご要望に応じてご用意でき、より厳しい公差を必要とする用途向けに精度をカスタマイズできます。"
+    },
+    {
+     "q": "バッテリーはどのくらい持ちますか？",
+     "a": "規定の試験条件下で1時間の送信間隔で10年以上を想定した設計です。バッテリー寿命は送信頻度に比例し、より頻繁な送信は寿命を縮めます。ほとんどの構成は主電源やソーラーパネルなしでバッテリーで動作します — ご構成の電源オプションをご確認ください。"
+    },
+    {
+     "q": "どの無線技術を選ぶべきですか — 4G、NB-IoT、それともLoRa？",
+     "a": "セルラーカバレッジが信頼でき、より高いデータレートやOTAファームウェア更新が必要な場合は4Gをお選びください。NB-IoTは、トンネルや地下室など、地域のオペレーターが十分なカバレッジを提供する屋内または地下サイトに適しています。1つのサイトにセンサーを高密度に展開し、プライベートゲートウェイを使用し、デバイスごとのSIM費用がない場合はLoRaをお選びください。"
+    },
+    {
+     "q": "文化遺産の構造物に穿孔なしで設置できますか？",
+     "a": "はい。センサーは取付耳、ポールクランプ、スロットマウントに対応します。保護構造物では、クランプおよび粘着取付で建物の躯体への穿孔を回避できます。現場固有の取付ガイダンスはHitelecomにお問い合わせください。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "283": {
+   "series": "Hシリーズ · レーダー距離センサー",
+   "tagline": "低消費電力 | 精度 | ミリメートル級",
+   "desc": "Hitelecomの距離センサーは、ミリメートル級精度、スケジュールされたデータ収集、高い耐干渉性を特徴とし、複雑な環境で正確な距離測定とタイムリーなクラウド更新を提供します。",
+   "heroImg": "product/details/283-hero.png",
+   "pdf": "/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf",
+   "crumbCat": "レーダー距離",
+   "returnCid": "266",
+   "features": [
+    {
+     "icon": "product/details/283-f1.png",
+     "text": "精度：±1 mm（カスタマイズ可能）"
+    },
+    {
+     "icon": "product/details/283-f2.png",
+     "text": "IP68防護等級筐体"
+    },
+    {
+     "icon": "product/details/283-f3.png",
+     "text": "広測定範囲：0.3〜50 m（カスタマイズ可能）"
+    },
+    {
+     "icon": "product/details/283-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/283-f5.png",
+     "text": "リモートOTAファームウェア更新に対応します。"
+    },
+    {
+     "icon": "product/details/283-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/283-f7.png",
+     "text": "遠隔距離モニタリング"
+    },
+    {
+     "icon": "product/details/283-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "高精度レーダー距離測定、先進的な低消費電力プロセッサー、最適化された組込みアルゴリズムにより、規定の試験条件下で1時間の送信間隔で最長10年の設計寿命を実現し、定期保守を削減します。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "測定範囲",
+     "0.3〜50 m（カスタマイズ可能）"
+    ],
+    [
+     "精度",
+     "±1 mm（カスタマイズ可能）"
+    ],
+    [
+     "分解能",
+     "1 mm"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "動作温度",
+     "−20 °C〜+70 °C"
+    ],
+    [
+     "保管温度",
+     "−20 °C〜+80 °C"
+    ],
+    [
+     "バッテリー寿命",
+     "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200/H300/H500"
+    },
+    {
+     "name": "測定範囲",
+     "value": "0.3〜50 m（カスタマイズ可能）",
+     "minValue": 0.3,
+     "maxValue": 50.0
+    },
+    {
+     "name": "精度",
+     "value": "±1 mm（カスタマイズ可能）",
+     "unitText": "ミリメートル"
+    },
+    {
+     "name": "分解能",
+     "value": "1 mm",
+     "unitText": "ミリメートル"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "動作温度",
+     "value": "−20 °C〜+70 °C",
+     "unitText": "摂氏度",
+     "minValue": -20.0,
+     "maxValue": 70.0
+    },
+    {
+     "name": "保管温度",
+     "value": "−20 °C〜+80 °C",
+     "unitText": "摂氏度",
+     "minValue": -20.0,
+     "maxValue": 80.0
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。",
+     "unitText": "年",
+     "minValue": 10.0
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/283-scen1.jpg",
+     "label": "マンホールカバー"
+    },
+    {
+     "img": "product/details/283-scen2.jpg",
+     "label": "穀物サイロの高さ"
+    },
+    {
+     "img": "product/details/283-scen3.jpg",
+     "label": "炭鉱"
+    },
+    {
+     "img": "product/details/283-scen4.jpg",
+     "label": "浄水場"
+    },
+    {
+     "img": "product/details/283-scen5.jpg",
+     "label": "化学プラント"
+    },
+    {
+     "img": "product/details/283-scen6.jpg",
+     "label": "スマート製造"
+    },
+    {
+     "img": "product/details/283-scen7.jpg",
+     "label": "スマートビル"
+    },
+    {
+     "img": "product/details/283-scen8.jpg",
+     "label": "スマートエネルギー"
+    }
+   ],
+   "related": [
+    "270",
+    "274",
+    "280",
+    "281",
+    "282",
+    "284",
+    "285",
+    "276",
+    "275"
+   ],
+   "summary": "HitelecomのHシリーズ測距センサーは、ミリメートル級精度のワイヤレスレーダー距離センサーです。0.3〜50 mを精度±1 mm・分解能1 mmで測定し、過酷な産業サイトでの干渉に耐え、4GまたはNB-IoT経由で報告します。規定の試験条件下で1時間の送信間隔で10年以上の寿命を想定したバッテリーを備えています。",
+   "sku": "H200/H300/H500",
+   "applications": [
+    {
+     "name": "マンホールカバーのモニタリング",
+     "desc": "市の安全のためにカバーの変位と異常な距離読取値を検出します。",
+     "img": "product/details/283-scen1.jpg"
+    },
+    {
+     "name": "穀物サイロのレベル",
+     "desc": "穀物サイロの充填レベルを計算するために材料表面距離を測定します。",
+     "img": "product/details/283-scen2.jpg"
+    },
+    {
+     "name": "炭鉱バンカー",
+     "desc": "粉塵・高湿の地下条件での石炭バンカーの充填高を監視します。",
+     "img": "product/details/283-scen3.jpg"
+    },
+    {
+     "name": "給水および排水プラント",
+     "desc": "レベル制御のための開放水路およびタンク距離測定。",
+     "img": "product/details/283-scen4.jpg"
+    },
+    {
+     "name": "化学プラントの在庫",
+     "desc": "腐食性または密封タンク上の非接触距離測定。",
+     "img": "product/details/283-scen5.jpg"
+    },
+    {
+     "name": "スマートビルおよび物流",
+     "desc": "施設内の占有、ドック、パレット位置の距離センシング。",
+     "img": "product/details/283-scen7.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "どのような距離範囲と精度を提供しますか？",
+     "a": "0.3〜50 mの測定範囲（カスタマイズ可能）、精度±1 mm、分解能1 mmを提供し — 距離によるレベル測定と変位モニタリングに適しています。"
+    },
+    {
+     "q": "粉塵や湿度は測定に影響しますか？",
+     "a": "レーダーベースの測定は、石炭バンカーやマンホールなどの粉塵・高湿サイトでも測定性能を維持するよう設計されています。IP68筐体がデバイス自体を保護します。"
+    },
+    {
+     "q": "どのように給電・接続されますか？",
+     "a": "内蔵バッテリーを使用し、規定の試験条件下で1時間の送信間隔で10年以上の寿命を想定した設計で、4GまたはNB-IoTアップリンクでMQTTによりHitelecom Cloudまたはプライベートプラットフォームに接続します。"
+    },
+    {
+     "q": "測定範囲は50 mを超えて延長できますか？",
+     "a": "はい、範囲と取付はカスタマイズ可能です。対象距離と媒体をHitelecomにお知らせいただければ、構成案をご提案します。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "284": {
+   "series": "Hシリーズ · 振動センサー",
+   "tagline": "精度 | 測定範囲 | 超低消費電力",
+   "desc": "Hitelecomの振動センサーは、インダストリー4.0環境で機械設備の振動を監視・分析し、設備健全性管理と状態基準保全を支えるデータを提供し、予定外のダウンタイム削減に貢献します。",
+   "heroImg": "product/details/284-hero.png",
+   "pdf": "/downloads/vibration-sensor-datasheet.pdf",
+   "crumbCat": "振動モニタリング",
+   "returnCid": "271",
+   "features": [
+    {
+     "icon": "product/details/284-f1.png",
+     "text": "振動速度：0〜100 mm/s（カスタマイズ可能）"
+    },
+    {
+     "icon": "product/details/284-f2.png",
+     "text": "IP68防護等級筐体"
+    },
+    {
+     "icon": "product/details/284-f3.png",
+     "text": "変位振幅 0〜1,000 µm（カスタマイズ可能）"
+    },
+    {
+     "icon": "product/details/284-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/284-f5.png",
+     "text": "リモートOTAファームウェア更新に対応します。"
+    },
+    {
+     "icon": "product/details/284-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/284-f7.png",
+     "text": "遠隔振動モニタリング"
+    },
+    {
+     "icon": "product/details/284-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "低消費電力プロセッサーとアルゴリズム最適化により、規定の試験条件下で1時間の送信間隔で最長10年の設計寿命を実現し、各測定サイクルでのエネルギー使用を最小化します。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "振動速度",
+     "0〜100 mm/s（カスタマイズ可能）"
+    ],
+    [
+     "変位振幅",
+     "0〜1,000 µm（カスタマイズ可能）"
+    ],
+    [
+     "精度",
+     "±1 %（80 Hzキャリブレーション）"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "動作温度",
+     "−20 °C〜+70 °C"
+    ],
+    [
+     "保管温度",
+     "−20 °C〜+80 °C"
+    ],
+    [
+     "バッテリー寿命",
+     "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200/H300/H500"
+    },
+    {
+     "name": "振動速度",
+     "value": "0〜100 mm/s（カスタマイズ可能）"
+    },
+    {
+     "name": "変位振幅",
+     "value": "0〜1,000 µm（カスタマイズ可能）"
+    },
+    {
+     "name": "精度",
+     "value": "±1 %（80 Hzキャリブレーション）",
+     "unitText": "パーセント"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "動作温度",
+     "value": "−20 °C〜+70 °C",
+     "unitText": "摂氏度",
+     "minValue": -20.0,
+     "maxValue": 70.0
+    },
+    {
+     "name": "保管温度",
+     "value": "−20 °C〜+80 °C",
+     "unitText": "摂氏度",
+     "minValue": -20.0,
+     "maxValue": 80.0
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。",
+     "unitText": "年",
+     "minValue": 10.0
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/284-scen1.jpg",
+     "label": "半導体"
+    },
+    {
+     "img": "product/details/284-scen2.jpg",
+     "label": "産業機器"
+    },
+    {
+     "img": "product/details/284-scen3.jpg",
+     "label": "港"
+    },
+    {
+     "img": "product/details/284-scen4.jpg",
+     "label": "スマートエネルギー"
+    },
+    {
+     "img": "product/details/284-scen5.jpg",
+     "label": "スマートビル"
+    },
+    {
+     "img": "product/details/284-scen6.jpg",
+     "label": "物流と輸送"
+    }
+   ],
+   "related": [
+    "270",
+    "274",
+    "280",
+    "281",
+    "282",
+    "283",
+    "285",
+    "276",
+    "275"
+   ],
+   "summary": "HitelecomのHシリーズ振動センサーは、インダストリー4.0における回転機械と構造振動のワイヤレスモニターです。振動速度0〜100 mm/sと変位振幅0〜1,000 µm（カスタマイズ可能）を精度±1 %（80 Hzでキャリブレーション）で測定し、4GまたはNB-IoT経由で送信します。規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。",
+   "sku": "H200/H300/H500",
+   "applications": [
+    {
+     "name": "産業用回転機器",
+     "desc": "ポンプ、ファン、モーター、コンプレッサーは、状態基準保全をサポートする継続的な振動トレンドを取得します。",
+     "img": "product/details/284-scen2.jpg"
+    },
+    {
+     "name": "半導体施設",
+     "desc": "振動に敏感なプロセスツールとクリーンルーム機器を監視します。",
+     "img": "product/details/284-scen1.jpg"
+    },
+    {
+     "name": "港湾および港の機械",
+     "desc": "安全な港湾運営のためにクレーンおよびコンベヤーの振動を追跡します。",
+     "img": "product/details/284-scen3.jpg"
+    },
+    {
+     "name": "建物と構造物の健全性",
+     "desc": "建設工事や重量交通の近くの建物の構造応答を監視します。",
+     "img": "product/details/284-scen5.jpg"
+    },
+    {
+     "name": "エネルギー設備",
+     "desc": "タービン、発電機、変圧器の異常な振動パターンを監視します。",
+     "img": "product/details/284-scen4.jpg"
+    },
+    {
+     "name": "物流と輸送",
+     "desc": "輸送中の敏感な貨物の衝撃および振動記録。",
+     "img": "product/details/284-scen6.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "どのような振動量を測定しますか？",
+     "a": "振動速度0〜100 mm/sと変位振幅0〜1,000 µm（いずれもカスタマイズ可能）、精度±1 %（80 Hzでキャリブレーション）。"
+    },
+    {
+     "q": "状態基準保全をどのようにサポートしますか？",
+     "a": "継続的な強度・振幅のトレンドは、軸受摩耗、アンバランス、ミスアライメントの兆候を早期に特定するのに役立ち、保全をカレンダーではなく状態に基づいて計画できます。"
+    },
+    {
+     "q": "センサーはどのように設置・給電されますか？",
+     "a": "マグネットベース、ネジ止め、粘着、ブラケット取付はモデルによって異なります — ご構成に合わせた取付アクセサリーをご確認ください。センサーはバッテリー駆動で信号・電源ケーブル配線は不要です。規定の試験条件下で1時間の送信間隔で10年以上の寿命を想定した設計です。"
+    },
+    {
+     "q": "どのデータプラットフォームに接続しますか？",
+     "a": "4GまたはNB-IoT経由でMQTTによりHitelecom Cloudまたはお客様のプラットフォームに送信し、異常振動のしきい値アラームを備えています。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "285": {
+   "series": "Hシリーズ · 空気質センサー",
+   "tagline": "6-in-1 | 精度 | 省エネ",
+   "desc": "Hitelecomの6-in-1空気質センサーは、CO₂、PM2.5、TVOC、温度、湿度、気圧を測定し、オプションのNO₂、SO₂、NH₃、O₃チャンネルを備えます。データは4GまたはNB-IoT経由でクラウドに送信され、低保守設計が長期的な都市・産業環境モニタリングをサポートします。",
+   "heroImg": "product/details/285-hero.png",
+   "pdf": "/downloads/h310-aq041-air-quality-sensor-datasheet.pdf",
+   "crumbCat": "空気質",
+   "returnCid": "265",
+   "features": [
+    {
+     "icon": "product/details/285-f1.png",
+     "text": "CO₂、PM2.5、TVOC、温度、湿度、気圧を測定"
+    },
+    {
+     "icon": "product/details/285-f2.png",
+     "text": "IP68防護等級筐体"
+    },
+    {
+     "icon": "product/details/285-f3.png",
+     "text": "オプションのNO₂、SO₂、NH₃、O₃チャンネル（構成による）"
+    },
+    {
+     "icon": "product/details/285-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/285-f5.png",
+     "text": "リモートOTAファームウェア更新に対応します。"
+    },
+    {
+     "icon": "product/details/285-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/285-f7.png",
+     "text": "遠隔空気モニタリング"
+    },
+    {
+     "icon": "product/details/285-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "低消費電力プロセッサーとアルゴリズム最適化により、複数の空気質チャンネルを同時収集できます。バッテリーは規定の試験条件下で4時間の送信間隔で10年以上の寿命を想定した設計です。実際の寿命はセンシング構成、ネットワークカバレッジ、環境によって異なります。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "CO₂",
+     "400〜5,000 ppm"
+    ],
+    [
+     "PM2.5 / TVOC",
+     "付属（範囲は構成による）"
+    ],
+    [
+     "オプションガスチャンネル",
+     "NO₂、SO₂、NH₃、O₃（構成による）"
+    ],
+    [
+     "温度測定範囲",
+     "−40 °C〜+85 °C（±0.2 °C）"
+    ],
+    [
+     "湿度",
+     "0〜100 % RH"
+    ],
+    [
+     "気圧",
+     "30〜120 kPa（±0.1 kPa）"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "周波数帯",
+     "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    ],
+    [
+     "バッテリー寿命",
+     "規定の試験条件下で4時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200/H300/H500"
+    },
+    {
+     "name": "CO₂",
+     "value": "400〜5,000 ppm",
+     "unitText": "100万分の1",
+     "minValue": 400.0,
+     "maxValue": 5000.0
+    },
+    {
+     "name": "PM2.5 / TVOC",
+     "value": "付属（範囲は構成による）"
+    },
+    {
+     "name": "オプションガスチャンネル",
+     "value": "NO₂、SO₂、NH₃、O₃（構成による）"
+    },
+    {
+     "name": "温度測定範囲",
+     "value": "−40 °C〜+85 °C（±0.2 °C）",
+     "unitText": "度",
+     "minValue": -40.0,
+     "maxValue": 85.0
+    },
+    {
+     "name": "湿度",
+     "value": "0〜100 % RH",
+     "unitText": "パーセント",
+     "minValue": 0.0,
+     "maxValue": 100.0
+    },
+    {
+     "name": "気圧",
+     "value": "30〜120 kPa（±0.1 kPa）",
+     "unitText": "キロパスカル",
+     "minValue": 30.0,
+     "maxValue": 120.0
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "周波数帯",
+     "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "規定の試験条件下で4時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。",
+     "unitText": "年",
+     "minValue": 10.0
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/285-scen1.jpg",
+     "label": "オフィス環境"
+    },
+    {
+     "img": "product/details/285-scen2.jpg",
+     "label": "スマートシティ"
+    },
+    {
+     "img": "product/details/285-scen3.jpg",
+     "label": "病院"
+    },
+    {
+     "img": "product/details/285-scen4.jpg",
+     "label": "スマート交通"
+    },
+    {
+     "img": "product/details/285-scen5.jpg",
+     "label": "住宅環境"
+    },
+    {
+     "img": "product/details/285-scen6.jpg",
+     "label": "データセンター"
+    },
+    {
+     "img": "product/details/285-scen7.jpg",
+     "label": "スマート製造"
+    },
+    {
+     "img": "product/details/285-scen8.jpg",
+     "label": "スマート農業"
+    }
+   ],
+   "related": [
+    "270",
+    "274",
+    "280",
+    "281",
+    "282",
+    "283",
+    "284",
+    "276",
+    "275"
+   ],
+   "summary": "HitelecomのHシリーズ空気質センサーは、都市および産業環境向けの6-in-1ワイヤレスモニターです。CO₂（400〜5,000 ppm）、PM2.5、TVOC、温度（−40 °C〜+85 °C、±0.2 °C）、湿度（0〜100 % RH）、気圧（30〜120 kPa）を追跡し、オプションのNO₂、SO₂、NH₃、O₃チャンネルを備え、4GまたはNB-IoT経由で送信します。",
+   "sku": "H200/H300/H500",
+   "applications": [
+    {
+     "name": "スマートシティの大気モニタリング",
+     "desc": "グリッド展開されたマイクロステーションがブロックごとに都市の空気質動向を追跡します。",
+     "img": "product/details/285-scen2.jpg"
+    },
+    {
+     "name": "オフィスおよび学校の建物",
+     "desc": "CO₂および湿度の読取値は、対応制御システムと統合された場合、換気の意思決定に活用できます。",
+     "img": "product/details/285-scen1.jpg"
+    },
+    {
+     "name": "病院",
+     "desc": "弱者が集まる病棟や診療所の空気状況を監視します。",
+     "img": "product/details/285-scen3.jpg"
+    },
+    {
+     "name": "データセンター",
+     "desc": "温度、湿度、圧力を組み合わせて環境コンプライアンス記録を行います。",
+     "img": "product/details/285-scen6.jpg"
+    },
+    {
+     "name": "工業団地",
+     "desc": "異常な排出を早期に検出するための公園空気の境界モニタリング。",
+     "img": "product/details/285-scen7.jpg"
+    },
+    {
+     "name": "輸送ハブ",
+     "desc": "駅、トンネル、駐車場構造物での空気質の可視性。",
+     "img": "product/details/285-scen4.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "6-in-1センサーはどのパラメーターを測定しますか？",
+     "a": "CO₂（400〜5,000 ppm）、PM2.5、TVOC、温度（−40 °C〜+85 °C、±0.2 °C）、湿度（0〜100 % RH）、気圧（30〜120 kPa、±0.1 kPa）、オプションでNO₂、SO₂、NH₃、O₃チャンネル（構成による）。"
+    },
+    {
+     "q": "無人でどのくらい動作できますか？",
+     "a": "選択された構成は、規定の試験条件下で4時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際の寿命はセンシング構成、ネットワークカバレッジ、環境によって異なります。IP68筐体は屋外設置に対応します。"
+    },
+    {
+     "q": "空気質データはどのように提供されますか？",
+     "a": "4GまたはNB-IoT経由でMQTTを使用してHitelecom Cloudまたはお客様のプラットフォームにワイヤレス送信し、各チャンネルでしきい値アラートを備えます。"
+    },
+    {
+     "q": "当社のサイトに合わせてチャンネルをカスタマイズできますか？",
+     "a": "はい。6-in-1構成はモジュラー式です — 必要なガスや粒子をHitelecomにお知らせいただければ、適合するチャンネルセットをご提案します。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "275": {
+   "series": "H68シリーズ · 屋外向けゲートウェイ",
+   "tagline": "IP68 | 大容量 | 広範囲カバー",
+   "desc": "H68シリーズゲートウェイは、複雑な産業環境での長期屋外運用向けに設計されたIP68等級の防塵・防水筐体を特徴としています。プラグアンドプレイ展開に対応し、バックアップ電源とバックホールが利用可能な場合は停電アラームを送信できます。",
+   "heroImg": "product/details/275-hero.png",
+   "pdf": "/downloads/outdoor-4g-gateway-h68-datasheet.pdf",
+   "crumbCat": "屋外向けゲートウェイ",
+   "returnCid": "273",
+   "features": [
+    {
+     "icon": "product/details/275-f1.png",
+     "text": "通信距離 最長10 km（開放地）"
+    },
+    {
+     "icon": "product/details/275-f2.png",
+     "text": "IP68防水・防塵等級"
+    },
+    {
+     "icon": "product/details/275-f3.png",
+     "text": "産業用8チャンネル全二重ゲートウェイ"
+    },
+    {
+     "icon": "product/details/275-f4.png",
+     "text": "データ管理と信頼性のためのローカルデプロイに対応"
+    },
+    {
+     "icon": "product/details/275-f5.png",
+     "text": "統合電力増幅および低ノイズ増幅回路"
+    },
+    {
+     "icon": "product/details/275-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/275-f7.png",
+     "text": "大容量ネットワーキング、リモート制御、データ収集"
+    },
+    {
+     "icon": "product/details/275-f8.png",
+     "text": "バックアップ電源とバックホールが利用可能な場合、停電アラートを送信できます"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "H68シリーズは最長10キロメートルの長距離送信に対応し、都市部内で最長2キロメートルに達します。4G LTE、Ethernet、Wi-Fiのコネクティビティオプションを統合し、信頼性の高い継続的なデータ送信をサポートします。",
+   "specs": [
+    [
+     "製品モデル",
+     "H68"
+    ],
+    [
+     "周波数帯",
+     "CN470/EU868/IN865/RU864/US915/AU915"
+    ],
+    [
+     "距離",
+     "最長10 km（開放地）"
+    ],
+    [
+     "送信出力",
+     "20–27 dBm"
+    ],
+    [
+     "感度",
+     "−140 dBm（0.292 kbps時）"
+    ],
+    [
+     "アンテナ",
+     "外部グラスファイバーアンテナ"
+    ],
+    [
+     "4Gバンド",
+     "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "動作温度",
+     "−40 °C〜+85 °C"
+    ],
+    [
+     "保管温度",
+     "−40 °C〜+85 °C"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H68"
+    },
+    {
+     "name": "周波数帯",
+     "value": "CN470/EU868/IN865/RU864/US915/AU915"
+    },
+    {
+     "name": "距離",
+     "value": "最長10 km（開放地）"
+    },
+    {
+     "name": "送信出力",
+     "value": "20–27 dBm",
+     "unitText": "デシベル-ミリワット",
+     "minValue": 20.0,
+     "maxValue": 27.0
+    },
+    {
+     "name": "感度",
+     "value": "−140 dBm（0.292 kbps時）",
+     "unitText": "デシベル-ミリワット"
+    },
+    {
+     "name": "アンテナ",
+     "value": "外部グラスファイバーアンテナ"
+    },
+    {
+     "name": "4Gバンド",
+     "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "動作温度",
+     "value": "−40 °C〜+85 °C",
+     "unitText": "度",
+     "minValue": -40.0,
+     "maxValue": 85.0
+    },
+    {
+     "name": "保管温度",
+     "value": "−40 °C〜+85 °C",
+     "unitText": "度",
+     "minValue": -40.0,
+     "maxValue": 85.0
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/275-scen1.jpg",
+     "label": "再生可能エネルギー"
+    },
+    {
+     "img": "product/details/275-scen2.jpg",
+     "label": "スマート工業団地"
+    },
+    {
+     "img": "product/details/275-scen3.jpg",
+     "label": "スマート水管理"
+    },
+    {
+     "img": "product/details/275-scen4.jpg",
+     "label": "産業オートメーション"
+    },
+    {
+     "img": "product/details/275-scen5.jpg",
+     "label": "環境モニタリング"
+    },
+    {
+     "img": "product/details/275-scen6.jpg",
+     "label": "スマートシティ"
+    },
+    {
+     "img": "product/details/275-scen7.jpg",
+     "label": "インテリジェント交通"
+    },
+    {
+     "img": "product/details/275-scen8.jpg",
+     "label": "物流およびサプライチェーン"
+    }
+   ],
+   "related": [
+    "270",
+    "274",
+    "280",
+    "281",
+    "282",
+    "283",
+    "284",
+    "285",
+    "276"
+   ],
+   "summary": "HitelecomのH68屋外向けゲートウェイは、広域センサーネットワーク向けの産業用LoRaゲートウェイです。最長10 kmのカバレッジ、−140 dBm感度、20-27 dBm送信出力、CN470、EU868、US915、AU915を含む地域バンドに対応。IP68筐体は長期屋外運用向けに設計され、4GバックホールとMQTTアップリンクを備えています。",
+   "sku": "H68",
+   "applications": [
+    {
+     "name": "スマートパークおよびキャンパス",
+     "desc": "1つの屋上ゲートウェイがサイト全体の多くのセンサーからデータを収集できます。",
+     "img": "product/details/275-scen2.jpg"
+    },
+    {
+     "name": "スマート水ネットワーク",
+     "desc": "サービスエリア全体でメーターおよびレベルセンサーのトラフィックを集約します。",
+     "img": "product/details/275-scen3.jpg"
+    },
+    {
+     "name": "再生可能エネルギーサイト",
+     "desc": "長距離センサーバックホールでソーラーファームと風力サイトをカバーします。",
+     "img": "product/details/275-scen1.jpg"
+    },
+    {
+     "name": "産業オートメーション",
+     "desc": "センサーごとのSIMカードなしでの工場全体のセンサー収集。",
+     "img": "product/details/275-scen4.jpg"
+    },
+    {
+     "name": "環境モニタリング",
+     "desc": "広い農村地域の河川、空気、騒音センサーネットワーク。",
+     "img": "product/details/275-scen5.jpg"
+    },
+    {
+     "name": "スマートシティの照明と資産",
+     "desc": "市のセンサーネットワーク向けの街区スケールのカバレッジ。",
+     "img": "product/details/275-scen6.jpg"
+    },
+    {
+     "name": "物流ヤード",
+     "desc": "単一のゲートウェイを通じたヤード全体の追跡および状態センサー。",
+     "img": "product/details/275-scen8.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "H68屋外向けゲートウェイはどのくらいのカバレッジを提供しますか？",
+     "a": "開放条件で最長10 km、感度−140 dBm、送信出力20-27 dBm。実際のカバレッジは地形とアンテナ高によって異なります — Hitelecomがお客様のサイト平面図から推定できます。"
+    },
+    {
+     "q": "どの周波数帯がサポートされていますか？",
+     "a": "CN470、EU868、IN865、RU864、US915、AU915 — 中国、ヨーロッパ、インド、ロシア、北米、オーストラリアでの展開をカバー。"
+    },
+    {
+     "q": "ゲートウェイはどのようにデータをバックホールしますか？",
+     "a": "Over 4G cellular (LTE-TDD B34/B38/B39/B40/B41, LTE-FDD B1/B3/B5/B8) with MQTT uplink to Hitelecom Cloud or a private platform."
+    },
+    {
+     "q": "H68は長期屋外設置に適していますか？",
+     "a": "はい。IP68筐体は防塵・防水で、産業デザインは長期屋外運用を対象としています。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "276": {
+   "series": "H66シリーズ · 屋内向けゲートウェイ",
+   "tagline": "産業用 | 長距離 | 全二重",
+   "desc": "H66シリーズゲートウェイは、変動する産業環境での安定動作を実現する堅牢な設計を特徴としています。プラグアンドプレイ展開に対応し、バックアップ電源とバックホールが利用可能な場合は停電アラームを送信できます。",
+   "heroImg": "product/details/276-hero.png",
+   "pdf": "/downloads/indoor-gateway-h66-datasheet.pdf",
+   "crumbCat": "屋内向けゲートウェイ",
+   "returnCid": "272",
+   "features": [
+    {
+     "icon": "product/details/276-f1.png",
+     "text": "通信距離 最長5 km（開放地）"
+    },
+    {
+     "icon": "product/details/276-f2.png",
+     "text": "IP67防水・防塵等級"
+    },
+    {
+     "icon": "product/details/276-f3.png",
+     "text": "産業用8チャンネル全二重ゲートウェイ"
+    },
+    {
+     "icon": "product/details/276-f4.png",
+     "text": "データ管理と信頼性のためのローカルデプロイに対応"
+    },
+    {
+     "icon": "product/details/276-f5.png",
+     "text": "統合電力増幅および低ノイズ増幅回路"
+    },
+    {
+     "icon": "product/details/276-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/276-f7.png",
+     "text": "大容量ネットワーキング、リモート制御、データ収集"
+    },
+    {
+     "icon": "product/details/276-f8.png",
+     "text": "バックアップ電源とバックホールが利用可能な場合、停電アラートを送信できます"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "H66シリーズ産業用マルチチャンネルワイヤレスゲートウェイは、複数プロトコルに対応し、8チャンネル全二重、エッジコンピューティングを提供し、過酷な条件に耐え、リアルタイムデータ処理とリモート管理を可能にします。",
+   "specs": [
+    [
+     "製品モデル",
+     "H66"
+    ],
+    [
+     "周波数帯",
+     "CN470/EU868/IN865/RU864/US915/AU915"
+    ],
+    [
+     "距離",
+     "最長5 km（開放地）"
+    ],
+    [
+     "送信出力",
+     "20–27 dBm"
+    ],
+    [
+     "感度",
+     "−140 dBm（0.292 kbps時）"
+    ],
+    [
+     "アンテナ",
+     "外部グラスファイバーアンテナ"
+    ],
+    [
+     "4Gバンド",
+     "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "動作温度",
+     "−20 °C〜+70 °C"
+    ],
+    [
+     "保管温度",
+     "−20 °C〜+80 °C"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H66"
+    },
+    {
+     "name": "周波数帯",
+     "value": "CN470/EU868/IN865/RU864/US915/AU915"
+    },
+    {
+     "name": "距離",
+     "value": "最長5 km（開放地）"
+    },
+    {
+     "name": "送信出力",
+     "value": "20–27 dBm",
+     "unitText": "デシベル-ミリワット",
+     "minValue": 20.0,
+     "maxValue": 27.0
+    },
+    {
+     "name": "感度",
+     "value": "−140 dBm（0.292 kbps時）",
+     "unitText": "デシベル-ミリワット"
+    },
+    {
+     "name": "アンテナ",
+     "value": "外部グラスファイバーアンテナ"
+    },
+    {
+     "name": "4Gバンド",
+     "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "動作温度",
+     "value": "−20 °C〜+70 °C",
+     "unitText": "摂氏度",
+     "minValue": -20.0,
+     "maxValue": 70.0
+    },
+    {
+     "name": "保管温度",
+     "value": "−20 °C〜+80 °C",
+     "unitText": "摂氏度",
+     "minValue": -20.0,
+     "maxValue": 80.0
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/276-scen1.jpg",
+     "label": "ビル管理"
+    },
+    {
+     "img": "product/details/276-scen2.jpg",
+     "label": "エネルギー管理"
+    },
+    {
+     "img": "product/details/276-scen3.jpg",
+     "label": "物流"
+    },
+    {
+     "img": "product/details/276-scen4.jpg",
+     "label": "産業"
+    },
+    {
+     "img": "product/details/276-scen5.jpg",
+     "label": "スマートシティ"
+    },
+    {
+     "img": "product/details/276-scen6.jpg",
+     "label": "水管理"
+    },
+    {
+     "img": "product/details/276-scen7.jpg",
+     "label": "インテリジェント交通"
+    }
+   ],
+   "related": [
+    "270",
+    "274",
+    "280",
+    "281",
+    "282",
+    "283",
+    "284",
+    "285",
+    "275"
+   ],
+   "summary": "HitelecomのH66屋内向けゲートウェイは、建物内センサーネットワーク向けの産業用全二重LoRaゲートウェイです。最長5 kmの範囲、−140 dBm感度、CN470からUS915までの地域バンド、停電アラート付きプラグアンドプレイ設定、4GバックホールとMQTTアップリンクを備えています。",
+   "sku": "H66",
+   "applications": [
+    {
+     "name": "ビル管理",
+     "desc": "通信室からフロア全体のHVAC、計量、環境センサーを収集します。",
+     "img": "product/details/276-scen1.jpg"
+    },
+    {
+     "name": "エネルギー管理",
+     "desc": "工場およびビルのエネルギー監査のためにサブメータリングセンサーのトラフィックを集約します。",
+     "img": "product/details/276-scen2.jpg"
+    },
+    {
+     "name": "物流と倉庫",
+     "desc": "倉庫内の温度、ドア、資産ビーコンのセンサー収集。",
+     "img": "product/details/276-scen3.jpg"
+    },
+    {
+     "name": "産業施設",
+     "desc": "データケーブル配線なしのショップフロアセンサーネットワーク。",
+     "img": "product/details/276-scen4.jpg"
+    },
+    {
+     "name": "水管理",
+     "desc": "公益ビル内のポンプ室およびタンクレベルセンサーの集約。",
+     "img": "product/details/276-scen6.jpg"
+    },
+    {
+     "name": "輸送施設",
+     "desc": "駅、トンネル、車庫内のセンサー収集。",
+     "img": "product/details/276-scen7.jpg"
+    }
+   ],
+   "certifications": [
+    "IP67"
+   ],
+   "faqs": [
+    {
+     "q": "H66とH68の違いは何ですか？",
+     "a": "H66は屋内向けモデルです。プラグアンドプレイで停電アラート付き、最長5 kmの範囲、IP67筐体を備えています。H68は屋外向けモデルで、最長10 kmの範囲、IP68、長期屋外運用向けの設計を備えています。"
+    },
+    {
+     "q": "どの周波数帯に対応していますか？",
+     "a": "CN470、EU868、IN865、RU864、US915、AU915 — 各地域のLoRaバンドプランに適合。"
+    },
+    {
+     "q": "停電時はどうなりますか？",
+     "a": "バックアップ電源と4Gバックホールが利用可能な場合、ゲートウェイは停電アラートを送信できます。"
+    },
+    {
+     "q": "1つのゲートウェイは何台のセンサーに対応できますか？",
+     "a": "全二重産業用ゲートウェイは大規模なセンサーフリートに対応できます。実際の容量は送信間隔、ペイロード、ネットワーク状況によって異なります — デバイス数をお知らせいただければ、Hitelecomがネットワークをサイジングします。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "277": {
+   "series": "Hシリーズ · 水文ステーション",
+   "tagline": "ソーラー | モジュラー | 2〜12チャンネル",
+   "desc": "2〜12のモジュラーセンサーチャンネルを統合し、環境データを収集します — チャンネルセット（レベル、流量、水質、気象、空気質センサー）はプロジェクトごとに構成されます — Hitelecom Cloudプラットフォームへのリアルタイム送信で。ユーザーはインターネット経由でどこからでも水文・環境データにアクセスでき、リモートモニタリングと分析をサポートします。",
+   "heroImg": "product/details/277-hero.png",
+   "pdf": "/downloads/hydrology-monitoring-station-datasheet.pdf",
+   "crumbCat": "12パラメーター",
+   "returnCid": "274",
+   "features": [
+    {
+     "icon": "product/details/277-f1.png",
+     "text": "2〜12センサーチャンネルでのモニタリング"
+    },
+    {
+     "icon": "product/details/277-f2.png",
+     "text": "IP65防水・防塵等級"
+    },
+    {
+     "icon": "product/details/277-f3.png",
+     "text": "2〜12の構成可能なセンサーチャンネル"
+    },
+    {
+     "icon": "product/details/277-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/277-f5.png",
+     "text": "リモートOTAファームウェア更新に対応します。"
+    },
+    {
+     "icon": "product/details/277-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/277-f7.png",
+     "text": "リモートデータアクセス：どこからでもモニタリング"
+    },
+    {
+     "icon": "product/details/277-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "水位、流量、水質、温湿度、風速・風向、気圧、雨量、PM2.5/10、CO₂などを含む（ただしこれらに限定されない）水文データを監視し、水位や大気汚染の傾向とその発生源への洞察を提供し、環境保護と都市水管理のための信頼性の高いデータサポートを提供します。",
+   "specs": [
+    [
+     "製品モデル",
+     "H700"
+    ],
+    [
+     "測定範囲",
+     "カスタマイズ可能"
+    ],
+    [
+     "精度",
+     "カスタマイズ可能"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "適用範囲",
+     "都市 · 農村 · 平野 · 山間部"
+    ],
+    [
+     "周波数帯",
+     "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    ],
+    [
+     "電源",
+     "ソーラー電源 · 系統電源"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H700"
+    },
+    {
+     "name": "測定範囲",
+     "value": "カスタマイズ可能"
+    },
+    {
+     "name": "精度",
+     "value": "カスタマイズ可能"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "適用範囲",
+     "value": "都市 · 農村 · 平野 · 山間部"
+    },
+    {
+     "name": "周波数帯",
+     "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    },
+    {
+     "name": "電源",
+     "value": "ソーラー電源 · 系統電源"
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/277-scen1.jpg",
+     "label": "スマート農業"
+    },
+    {
+     "img": "product/details/277-scen2.jpg",
+     "label": "環境モニタリング"
+    },
+    {
+     "img": "product/details/277-scen3.jpg",
+     "label": "都市管理"
+    },
+    {
+     "img": "product/details/277-scen4.jpg",
+     "label": "スマートキャンパス"
+    },
+    {
+     "img": "product/details/277-scen5.jpg",
+     "label": "電力ユーティリティ"
+    },
+    {
+     "img": "product/details/277-scen6.jpg",
+     "label": "海洋および沿岸モニタリング"
+    },
+    {
+     "img": "product/details/277-scen7.jpg",
+     "label": "緊急事態管理"
+    },
+    {
+     "img": "product/details/277-scen8.jpg",
+     "label": "輸送と出荷"
+    }
+   ],
+   "related": [
+    "270",
+    "274",
+    "280",
+    "281",
+    "282",
+    "283",
+    "284",
+    "285",
+    "276"
+   ],
+   "summary": "HitelecomのH700水文ステーションは、モジュラー式のソーラー駆動モニタリングターミナルで、水および環境データ用に2〜12のセンサーチャンネルを統合します。4G経由でHitelecom Cloudにリアルタイム送信し、平野や山間地を含む都市・農村地域に展開でき、取付耳、ポールクランプ、スロットマウントで設置できます。",
+   "sku": "H700",
+   "applications": [
+    {
+     "name": "河川と小川のモニタリング",
+     "desc": "水文ネットワーク向けの水位、雨量、流量関連チャンネル。"
+    },
+    {
+     "name": "貯水池と湖の管理",
+     "desc": "派遣および安全のためのマルチパラメーター水文記録。",
+     "img": "solution/67-scen-0.jpg"
+    },
+    {
+     "name": "都市浸水の監視",
+     "desc": "洪水多発都市ポイントでの雨量および水位モニタリング。",
+     "img": "product/details/277-scen3.jpg"
+    },
+    {
+     "name": "スマート農業",
+     "desc": "1つのステーションに灌漑地区の水および気象チャンネル。",
+     "img": "product/details/277-scen1.jpg"
+    },
+    {
+     "name": "環境モニタリング",
+     "desc": "流域プログラム向けの水質および気象チャンネル。"
+    },
+    {
+     "name": "土石流警報",
+     "desc": "山間集水域の遠隔ソーラーステーションが早期警告システムに供給します。",
+     "img": "product/details/277-scen2.jpg"
+    },
+    {
+     "name": "沿岸および河口サイト",
+     "desc": "沿岸管理のための潮位および気象チャンネル。",
+     "img": "product/details/277-scen6.jpg"
+    },
+    {
+     "name": "緊急事態管理",
+     "desc": "迅速に展開されるステーションが洪水期間中にデータを供給します。",
+     "img": "product/details/277-scen7.jpg"
+    }
+   ],
+   "certifications": [
+    "IP65"
+   ],
+   "faqs": [
+    {
+     "q": "H700水文ステーションは何を測定できますか？",
+     "a": "サイトごとに2〜12のセンサーチャンネルを統合します — 典型的な構成は水位、雨量、流量関連、気象センサーを組み合わせます。チャンネルはプロジェクトごとに選択されます。"
+    },
+    {
+     "q": "ステーションはどのように給電されますか？",
+     "a": "ステーションはソーラーまたは系統電源を使用でき、遠隔地と都市部の両方の設置に対応します。"
+    },
+    {
+     "q": "データはどのようにプラットフォームに届きますか？",
+     "a": "MQTTアップリンクにより4G経由でリアルタイムにHitelecom Cloudへ。ユーザーはWebプラットフォームまたはアプリからデータを読み出し・エクスポートします。"
+    },
+    {
+     "q": "どこに展開できますか？",
+     "a": "都市、農村、平野、山間部；取付耳、ポールクランプ、スロットマウントのオプションで、ポール、壁、レールに適応します。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "278": {
+   "series": "Hシリーズ · 気象ステーション",
+   "tagline": "モジュラー | ソーラー駆動 | 全天候",
+   "desc": "2〜12のセンサーを統合して環境データを収集し、Hitelecom Cloudプラットフォームへのリアルタイム送信を可能にします。インターネット経由でどこからでも気象データのリモートモニタリングと分析が可能です。",
+   "heroImg": "product/details/278-hero.png",
+   "pdf": "/downloads/weather-station-datasheet.pdf",
+   "crumbCat": "6パラメーター",
+   "returnCid": "275",
+   "features": [
+    {
+     "icon": "product/details/278-f1.png",
+     "text": "2〜12センサーチャンネルでのモニタリング"
+    },
+    {
+     "icon": "product/details/278-f2.png",
+     "text": "IP65防水・防塵等級"
+    },
+    {
+     "icon": "product/details/278-f3.png",
+     "text": "構成可能なセンサーチャンネルと電源オプション"
+    },
+    {
+     "icon": "product/details/278-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/278-f5.png",
+     "text": "リモートOTAファームウェア更新に対応します。"
+    },
+    {
+     "icon": "product/details/278-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/278-f7.png",
+     "text": "リモートデータアクセス：どこからでもモニタリング"
+    },
+    {
+     "icon": "product/details/278-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "温度、湿度、風速・風向、気圧、雨量、PM2.5/PM10、CO₂、SO₂、日射量を含む気象パラメーター（チャンネルは構成による）を監視し、環境保護と都市計画の用途のための環境動向分析をサポートします。",
+   "specs": [
+    [
+     "製品モデル",
+     "H600"
+    ],
+    [
+     "測定範囲",
+     "カスタマイズ可能"
+    ],
+    [
+     "精度",
+     "カスタマイズ可能"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "適用範囲",
+     "都市 · 農村 · 平野 · 山間部"
+    ],
+    [
+     "周波数帯",
+     "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    ],
+    [
+     "電源",
+     "ソーラー電源 · 系統電源"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H600"
+    },
+    {
+     "name": "測定範囲",
+     "value": "カスタマイズ可能"
+    },
+    {
+     "name": "精度",
+     "value": "カスタマイズ可能"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "適用範囲",
+     "value": "都市 · 農村 · 平野 · 山間部"
+    },
+    {
+     "name": "周波数帯",
+     "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    },
+    {
+     "name": "電源",
+     "value": "ソーラー電源 · 系統電源"
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/278-scen1.jpg",
+     "label": "スマート農業"
+    },
+    {
+     "img": "product/details/278-scen2.jpg",
+     "label": "環境"
+    },
+    {
+     "img": "product/details/278-scen3.jpg",
+     "label": "海洋および沿岸"
+    },
+    {
+     "img": "product/details/278-scen4.jpg",
+     "label": "スマートキャンパス"
+    },
+    {
+     "img": "product/details/278-scen5.jpg",
+     "label": "都市管理"
+    },
+    {
+     "img": "product/details/278-scen6.jpg",
+     "label": "緊急事態管理"
+    },
+    {
+     "img": "product/details/278-scen7.jpg",
+     "label": "輸送と出荷"
+    }
+   ],
+   "related": [
+    "270",
+    "274",
+    "280",
+    "281",
+    "282",
+    "283",
+    "284",
+    "285",
+    "276"
+   ],
+   "summary": "HitelecomのH600気象ステーションは、モジュラー式のソーラー駆動農業気象ターミナルで、気温・湿度、雨量、風、気圧、日射量の2〜12センサーチャンネルで構成されます。農場、キャンパス、都市、沿岸サイト向けに4G経由でリアルタイムにHitelecom Cloudに送信します。",
+   "sku": "H600",
+   "applications": [
+    {
+     "name": "スマート農業",
+     "desc": "フィールドの気象が灌漑、散布ウィンドウ、疾病警告モデルを駆動します。",
+     "img": "product/details/278-scen1.jpg"
+    },
+    {
+     "name": "環境モニタリング",
+     "desc": "流域および生態プログラム向けの長期気候系列。",
+     "img": "product/details/278-scen2.jpg"
+    },
+    {
+     "name": "スマートキャンパスおよび学校",
+     "desc": "教育、安全、施設管理のためのキャンパス気象。",
+     "img": "product/details/278-scen4.jpg"
+    },
+    {
+     "name": "都市管理",
+     "desc": "都市サービスおよびヒートアイランド研究のためのミクロ気候モニタリング。",
+     "img": "product/details/278-scen5.jpg"
+    },
+    {
+     "name": "沿岸および海洋サイト",
+     "desc": "沿岸運用の安全のための風および圧力チャンネル。",
+     "img": "product/details/278-scen3.jpg"
+    },
+    {
+     "name": "輸送と出荷",
+     "desc": "港湾、空港、高速道路区間の局地気象。",
+     "img": "product/details/278-scen7.jpg"
+    },
+    {
+     "name": "緊急事態管理",
+     "desc": "展開可能なステーションが悪天候時に意思決定システムに供給します。",
+     "img": "product/details/278-scen6.jpg"
+    }
+   ],
+   "certifications": [
+    "IP65"
+   ],
+   "faqs": [
+    {
+     "q": "H600はどの気象パラメーターを測定しますか？",
+     "a": "ステーションは2〜12のチャンネルを統合します — 典型的には気温・湿度、雨量、風速・風向、気圧、日射量。チャンネルセットはプロジェクトごとに構成されます。"
+    },
+    {
+     "q": "ステーションはどのように給電・接続されますか？",
+     "a": "ソーラーまたは系統電源で、リモートでの読取と分析のためにMQTT経由でHitelecom Cloudへのリアルタイム4Gアップリンク。"
+    },
+    {
+     "q": "インフラのない遠隔地でも動作できますか？",
+     "a": "はい。ソーラー電源とセルラーバックホールは電源・データケーブル配線の必要性を削減できます。ステーションは取付耳、ポールクランプ、スロットマウントで設置できます。"
+    },
+    {
+     "q": "H700水文ステーションとの違いは何ですか？",
+     "a": "H600は気象チャンネル（風、雨、放射）向けに構成され、H700は水文チャンネル（水位、流量関連）向けに構成されます。両者は同じモジュラープラットフォームを共有しています。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "286": {
+   "series": "Hシリーズ · 危険区域向け温度・圧力センサー",
+   "tagline": "信頼性 | 産業用 | 低消費電力",
+   "desc": "Hitelecomの2-in-1センサーは、可燃性ガスや粉塵が存在する可能性のある雰囲気向けに設計された単一デバイスで温度と圧力のモニタリングを組み合わせ、危険区域でのデバイス数と設置の複雑さを削減できます。",
+   "heroImg": "product/details/286-hero.png",
+   "pdf": "/downloads/explosion-proof-temperature-pressure-sensor-datasheet.pdf",
+   "crumbCat": "ハードウェア",
+   "returnCid": "279",
+   "features": [
+    {
+     "icon": "product/details/286-f1.png",
+     "text": "精度：±0.5 °C（±0.1 °Cまでカスタマイズ可能）"
+    },
+    {
+     "icon": "product/details/286-f2.png",
+     "text": "IP68防護等級筐体"
+    },
+    {
+     "icon": "product/details/286-f3.png",
+     "text": "±0.5 % FS（高精度カスタマイズ）"
+    },
+    {
+     "icon": "product/details/286-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/286-f5.png",
+     "text": "リモートOTAファームウェア更新に対応します。"
+    },
+    {
+     "icon": "product/details/286-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/286-f7.png",
+     "text": "遠隔モニタリング"
+    },
+    {
+     "icon": "product/details/286-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "組込み省エネアルゴリズムを備えた統合通信・センシング技術により、送信機は延長された耐用年数と高い測定安定性を実現し、より広範なモニタリングシステムの信頼性を支えます。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "測定範囲",
+     "0–1、1.6、3.5、7、10、20 MPa"
+    ],
+    [
+     "圧力精度",
+     "±0.5% FS"
+    ],
+    [
+     "測定温度",
+     "−200 °C〜+800 °C"
+    ],
+    [
+     "温度精度",
+     "±0.5 °C（±0.1 °Cまでカスタマイズ可能）"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "周波数帯",
+     "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ],
+    [
+     "危険区域認証",
+     "証明書とマーキングは対象市場とゾーンごとに確認 — ご注文前にご請求ください"
+    ],
+    [
+     "動作温度",
+     "−40 °C〜+125 °C"
+    ],
+    [
+     "保管温度",
+     "−40 °C〜+125 °C"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200/H300/H500"
+    },
+    {
+     "name": "測定範囲",
+     "value": "0–1、1.6、3.5、7、10、20 MPa"
+    },
+    {
+     "name": "圧力精度",
+     "value": "±0.5% FS",
+     "unitText": "パーセント"
+    },
+    {
+     "name": "測定温度",
+     "value": "−200 °C〜+800 °C",
+     "unitText": "摂氏度",
+     "minValue": -200.0,
+     "maxValue": 800.0
+    },
+    {
+     "name": "温度精度",
+     "value": "±0.5 °C（±0.1 °Cまでカスタマイズ可能）",
+     "unitText": "摂氏度"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "周波数帯",
+     "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    },
+    {
+     "name": "危険区域認証",
+     "value": "証明書とマーキングは対象市場とゾーンごとに確認 — ご注文前にご請求ください"
+    },
+    {
+     "name": "動作温度",
+     "value": "−40 °C〜+125 °C",
+     "unitText": "度",
+     "minValue": -40.0,
+     "maxValue": 125.0
+    },
+    {
+     "name": "保管温度",
+     "value": "−40 °C〜+125 °C",
+     "unitText": "度",
+     "minValue": -40.0,
+     "maxValue": 125.0
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/286-scen1.jpg",
+     "label": "石油化学"
+    },
+    {
+     "img": "product/details/286-scen2.jpg",
+     "label": "鉱業"
+    },
+    {
+     "img": "product/details/286-scen3.jpg",
+     "label": "化学プラント"
+    }
+   ],
+   "related": [
+    "287"
+   ],
+   "summary": "HitelecomのHシリーズ2-in-1送信機は、可燃性ガスや粉塵が存在する可能性のある環境向けに設計された1台のデバイスで温度と圧力のモニタリングを組み合わせています。利用可能なフルスケール圧力範囲は1、1.6、3.5、7、10、20 MPaで±0.5 % FS、温度は−200 °C〜800 °Cで、データは4GまたはNB-IoT経由で報告されます。該当する防爆証明書は、ご注文前に対象市場とゾーンについて確認する必要があります。",
+   "sku": "H200/H300/H500",
+   "applications": [
+    {
+     "name": "石油化学プラント",
+     "desc": "1台のデバイスが危険区域でプロセス温度と圧力の両方を監視します。",
+     "img": "product/details/286-scen3.jpg"
+    },
+    {
+     "name": "石油・ガス採掘",
+     "desc": "爆発性雰囲気でのケーブル配線なしの井戸元および集油管モニタリング。",
+     "img": "product/details/286-scen1.jpg"
+    },
+    {
+     "name": "鉱業操業",
+     "desc": "ガスリスクのある地下区域での温度および圧力のトレンド。",
+     "img": "product/details/286-scen2.jpg"
+    },
+    {
+     "name": "化学品貯蔵パーク",
+     "desc": "貯蔵・移送設備の2パラメータモニタリング。",
+     "img": "product/details/283-scen5.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "なぜ2-in-1の温度・圧力送信機なのですか？",
+     "a": "1台のデバイスが1つの計器で2つの測定を組み合わせ、危険区域での設置ポイント、ケーブル配線、保守を削減し、両方の変数を同じ送信スケジュールに保ちます。"
+    },
+    {
+     "q": "測定範囲はどのくらいですか？",
+     "a": "圧力：0-1 MPa、1.6、3.5、7、10、20 MPaで±0.5 % FS。温度：−200 °C〜800 °Cで±0.5 °C、±0.1 °Cまでカスタマイズ可能。"
+    },
+    {
+     "q": "爆発性雰囲気向けの認証はありますか？",
+     "a": "このデバイスは、可燃性ガスや粉塵が存在する可能性のある雰囲気向けに設計されています。適合性は、対象市場、ゾーン、ガスまたは粉塵グループ、温度クラスに必要な認証済み構成によって異なります — 製品を仕様化する前にHitelecomに該当証明書をご請求ください。"
+    },
+    {
+     "q": "どのようにデータを送信しますか？",
+     "a": "4GまたはNB-IoT経由でMQTTアップリンクによりHitelecom Cloudまたはプライベートデプロイに接続し、両チャンネルでしきい値アラームを備えます。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "287": {
+   "series": "Hシリーズ · カップリングアイソレーター",
+   "tagline": "信頼性 | 安全性 | 危険区域向け設計",
+   "desc": "石油・ガス採掘、化学プラント、鉱業では、可燃性ガス、蒸気、粉塵が存在する場合があり、そのような区域の無線機器には専用設計が必要です。H100はこれらの産業設備向けの高周波信号結合デバイスです。危険区域への適合性は、対象市場、ゾーン、ガスまたは粉塵グループ、温度クラスに必要な認証済み構成によって異なります — 製品を仕様化する前に該当証明書をご請求ください。",
+   "heroImg": "product/details/287-hero.png",
+   "pdf": "/downloads/coupling-isolator-h100-datasheet.pdf",
+   "crumbCat": "ハードウェア",
+   "returnCid": "279",
+   "features": [
+    {
+     "icon": "product/details/287-f1.png",
+     "text": "高周波・低減衰の信号結合"
+    },
+    {
+     "icon": "product/details/287-f2.png",
+     "text": "IP68防護等級筐体"
+    },
+    {
+     "icon": "product/details/287-f3.png",
+     "text": "2.4 GHz / 5.8 GHz高周波リンクに対応"
+    },
+    {
+     "icon": "product/details/287-f4.png",
+     "text": "危険区域の信号結合用に設計"
+    },
+    {
+     "icon": "product/details/287-f5.png",
+     "text": "低エネルギー消費技術でエネルギー消費を削減"
+    },
+    {
+     "icon": "product/details/287-f6.png",
+     "text": "高い電磁干渉耐性"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "H100は、危険区域への設置を目的としたワイヤレス信号結合デバイスで、2.4 GHzおよび5.8 GHz周波数に対応し、低消費電力設計と高い耐干渉性を備え、過酷な産業環境に適しています。該当証明書はご注文前に対象市場とゾーンについて確認する必要があります。",
+   "specs": [
+    [
+     "製品モデル",
+     "H100"
+    ],
+    [
+     "信号バンド",
+     "2.4 GHz / 5.8 GHz"
+    ],
+    [
+     "危険区域での使用",
+     "危険区域結合設計；該当証明書はご注文前に対象市場とゾーンについて確認する必要があります"
+    ],
+    [
+     "動作温度",
+     "−40 °C〜+125 °C"
+    ],
+    [
+     "保管温度",
+     "−40 °C〜+125 °C"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H100"
+    },
+    {
+     "name": "信号バンド",
+     "value": "2.4 GHz / 5.8 GHz"
+    },
+    {
+     "name": "危険区域での使用",
+     "value": "危険区域結合設計；該当証明書はご注文前に対象市場とゾーンについて確認する必要があります"
+    },
+    {
+     "name": "動作温度",
+     "value": "−40 °C〜+125 °C",
+     "unitText": "度",
+     "minValue": -40.0,
+     "maxValue": 125.0
+    },
+    {
+     "name": "保管温度",
+     "value": "−40 °C〜+125 °C",
+     "unitText": "度",
+     "minValue": -40.0,
+     "maxValue": 125.0
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/287-scen1.jpg",
+     "label": "石油化学"
+    },
+    {
+     "img": "product/details/287-scen2.jpg",
+     "label": "鉱業"
+    },
+    {
+     "img": "product/details/287-scen3.jpg",
+     "label": "化学"
+    }
+   ],
+   "related": [
+    "286"
+   ],
+   "summary": "HitelecomのH100カップリングアイソレーターは、石油・ガス、化学、鉱業サイトで、2.4 GHz / 5.8 GHzのワイヤレスセンサー信号を危険区域境界を越えて通す高周波信号カプラーです。危険区域への適合性は、対象市場、ゾーン、ガスまたは粉塵グループ、温度クラスに必要な認証済み構成によって異なります — 製品を仕様化する前に該当証明書をご請求ください。−40 °C〜+125 °Cで動作し、取付耳、ポールクランプ、スロットマウントで設置します。",
+   "sku": "H100",
+   "applications": [
+    {
+     "name": "石油・ガス採掘",
+     "desc": "井戸元の危険ゾーンからワイヤレスセンサー信号を結合します。",
+     "img": "product/details/287-scen1.jpg"
+    },
+    {
+     "name": "化学プラント",
+     "desc": "バリアを貫通せずに、危険区域と安全区域間のワイヤレスリンクを橋渡しします。",
+     "img": "product/details/287-scen3.jpg"
+    },
+    {
+     "name": "鉱業",
+     "desc": "危険区域の地下ワイヤレスセンサーネットワーク向けの信号結合パス。",
+     "img": "product/details/287-scen2.jpg"
+    },
+    {
+     "name": "タンクファームとターミナル",
+     "desc": "ゾーン境界および堤防を越える安全な信号結合（認証済み構成に準拠）。",
+     "img": "product/details/283-scen5.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "カップリングアイソレーターはどの問題を解決しますか？",
+     "a": "標準的なワイヤレスリンクは、認証済みの絶縁なしに危険区域境界を越えるべきではありません。H100は2.4 GHz / 5.8 GHzのセンサー信号を境界を越えて結合し、バッテリー駆動のワイヤレスセンサーが追加のコンジット貫通なしに危険区域に対応できます — 対象市場とゾーンの認証済み構成に準拠します。"
+    },
+    {
+     "q": "どの規格に準拠していますか？",
+     "a": "それは、対象市場、ゾーン、ガスまたは粉塵グループ、温度クラスの認証済み構成によって異なります。お客様の要件をお知らせいただければ、Hitelecomが納入前に該当証明書の詳細を提供します。"
+    },
+    {
+     "q": "どのような環境に対応できますか？",
+     "a": "動作・保管温度はともに−40 °C〜+125 °Cで、屋外および地下サイト向けのIP68筐体を備えています。"
+    },
+    {
+     "q": "どのように設置しますか？",
+     "a": "取付耳、ポールクランプ、スロットマウント — 他のHシリーズフィールドデバイスと同じアクセサリーファミリー。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "301": {
+   "series": "Hシリーズ · 温度・湿度センサー",
+   "tagline": "精度 | 環境モニタリング | 超低消費電力",
+   "desc": "Hitelecomの温度・湿度センサーは、リモートアラート付きの高精度環境モニタリングを提供し、クリーンルーム、キャビネット、博物館、生産ラインに24時間体制の継続的な環境記録としきい値アラームを提供します。",
+   "heroImg": "product/details/301-hero.png",
+   "pdf": "/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
+   "crumbCat": "温度",
+   "returnCid": "263",
+   "features": [
+    {
+     "icon": "product/details/270-f1.png",
+     "text": "精度：±0.2 °C / ±2 % RH（典型）"
+    },
+    {
+     "icon": "product/details/270-f2-ip65.png",
+     "text": "IP65防護等級筐体"
+    },
+    {
+     "icon": "product/details/270-f3.png",
+     "text": "測定範囲：0〜100 % RH、−20 °C〜+80 °C"
+    },
+    {
+     "icon": "product/details/270-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/270-f5.png",
+     "text": "長期運用向け低消費電力設計"
+    },
+    {
+     "icon": "product/details/270-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/270-f7.png",
+     "text": "遠隔環境モニタリング"
+    },
+    {
+     "icon": "product/details/270-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "マイクロパワープロセッサーとアルゴリズム最適化により、規定の試験条件下で1時間の送信間隔で最長10年の設計寿命を実現し、定期保守を削減します。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "測定範囲",
+     "湿度0〜100 % RH、温度−20 °C〜+80 °C"
+    ],
+    [
+     "精度",
+     "±0.2 °C / ±2 % RH（典型）"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "プローブ",
+     "スロット付き焼結プローブ、ケーブル取付式"
+    ],
+    [
+     "周波数帯",
+     "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    ],
+    [
+     "バッテリー寿命",
+     "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。"
+    ],
+    [
+     "取付",
+     "取付耳、ポールクランプ、スロットマウント（構成による）"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200/H300/H500"
+    },
+    {
+     "name": "測定範囲",
+     "value": "湿度0〜100 % RH、温度−20 °C〜+80 °C"
+    },
+    {
+     "name": "精度",
+     "value": "±0.2 °C / ±2 % RH（典型）"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "プローブ",
+     "value": "スロット付き焼結プローブ、ケーブル取付式"
+    },
+    {
+     "name": "周波数帯",
+     "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。",
+     "unitText": "年",
+     "minValue": 10.0
+    },
+    {
+     "name": "取付",
+     "value": "取付耳、ポールクランプ、スロットマウント（構成による）"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/270-scen3.jpg",
+     "label": "データセンター"
+    },
+    {
+     "img": "product/details/270-scen4.jpg",
+     "label": "医薬品およびヘルスケア保管"
+    },
+    {
+     "img": "product/details/270-scen5.jpg",
+     "label": "食品加工"
+    },
+    {
+     "img": "product/details/270-scen2.jpg",
+     "label": "スマート農業"
+    },
+    {
+     "img": "product/details/285-scen1.jpg",
+     "label": "オフィス環境"
+    },
+    {
+     "img": "product/details/285-scen7.jpg",
+     "label": "スマート製造"
+    },
+    {
+     "img": "product/details/285-scen3.jpg",
+     "label": "病院"
+    }
+   ],
+   "related": [
+    "302",
+    "270",
+    "274",
+    "280",
+    "281",
+    "282",
+    "283",
+    "284",
+    "285"
+   ],
+   "summary": "HitelecomのHシリーズ温度・湿度センサーは、クリーンルーム、電気キャビネット、博物館、生産ライン向けのワイヤレス環境モニターです。そのスロット付き焼結プローブは0〜100 % RHおよび−20 °C〜+80 °Cを測定し、典型精度は±2 % RHおよび±0.2 °Cで、規定の試験条件下で1時間の送信間隔で10年以上の寿命を想定したバッテリーと、4G/NB-IoTクラウド送信を備えています。",
+   "sku": "H200/H300/H500",
+   "applications": [
+    {
+     "name": "データセンターとサーバールーム",
+     "desc": "ラックレベルで温度と湿度を追跡し、IT機器をASHRAEの範囲内に保ちます。",
+     "img": "product/details/270-scen3.jpg"
+    },
+    {
+     "name": "医療および医薬品保管",
+     "desc": "湿度が薬剤安定性に影響する薬局、冷蔵庫、病棟を監視します。",
+     "img": "product/details/270-scen4.jpg"
+    },
+    {
+     "name": "博物館と書庫",
+     "desc": "紙、織物、遺物の保存判断をサポートする継続的な気候記録を提供します。"
+    },
+    {
+     "name": "食品加工と貯蔵",
+     "desc": "生産ホールと倉庫の湿度を追跡し、カビや結露につながる可能性のある状況をスタッフに警告します。",
+     "img": "product/details/270-scen5.jpg"
+    },
+    {
+     "name": "電気キャビネットおよび筐体",
+     "desc": "ケーブル取付式プローブはキャビネット内に届き、腐食が始まる前に結露を警告します。",
+     "img": "product/details/285-scen7.jpg"
+    },
+    {
+     "name": "温室",
+     "desc": "温度と湿度の傾向を組み合わせ、換気と灌漑の意思決定に活用します。",
+     "img": "product/details/270-scen2.jpg"
+    },
+    {
+     "name": "オフィスと病院",
+     "desc": "公共建物の室内空気の快適性と衛生を目標範囲内に保ちます。",
+     "img": "product/details/285-scen1.jpg"
+    }
+   ],
+   "certifications": [
+    "IP65"
+   ],
+   "faqs": [
+    {
+     "q": "測定範囲と精度はどのくらいですか？",
+     "a": "0〜100 % RHおよび−20 °C〜+80 °Cを測定し、典型精度は±2 % RHおよび±0.2 °Cです。スロット付き焼結プローブはケーブル取付式で、キャビネットやダクト内に配置できます。"
+    },
+    {
+     "q": "しきい値アラームに対応していますか？",
+     "a": "はい。温度と湿度の高低しきい値はリモートで設定され、限界を超えるとセンサーはクラウドプラットフォーム経由でアラートをプッシュします。"
+    },
+    {
+     "q": "バッテリーはどのくらい持ちますか？",
+     "a": "選択されたバッテリー構成は、規定の試験条件下で1時間の送信間隔で10年以上を想定した設計です。実際の寿命はネットワークカバレッジ、温度、送信頻度によって異なります。設置ポイントでの主電源配線は不要です。"
+    },
+    {
+     "q": "どの無線ネットワークがサポートされていますか？",
+     "a": "4GおよびNB-IoTでMQTTアップリンクによりHitelecom Cloud、お客様のクラウド、またはプライベートデプロイに接続します。LoRaはプライベートゲートウェイを持つマルチセンサーサイトで利用可能です。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "302": {
+   "series": "Hシリーズ · 温度・湿度データロガー",
+   "tagline": "NFC設定 | USBエクスポート | 大容量記録",
+   "desc": "Hitelecomの温度・湿度データロガーは、NFC設定とワンクリックUSBエクスポートで最大80,000読数を保存し、コールドチェーン、医薬品、食品物流の監査をサポートするタイムスタンプ付き記録を生成します。",
+   "heroImg": "product/details/302-hero.png",
+   "pdf": "/downloads/temperature-humidity-data-logger-datasheet.pdf",
+   "crumbCat": "温度",
+   "returnCid": "263",
+   "features": [
+    {
+     "icon": "product/details/270-f1.png",
+     "text": "精度：±0.2 °C / ±2 % RH（典型）"
+    },
+    {
+     "icon": "product/details/270-f2-ip65.png",
+     "text": "IP65防護等級筐体"
+    },
+    {
+     "icon": "product/details/270-f3.png",
+     "text": "内蔵メモリーに80,000読数"
+    },
+    {
+     "icon": "product/details/270-f4.png",
+     "text": "NFCタップで設定、USBワンクリックエクスポート"
+    },
+    {
+     "icon": "product/details/270-f5.png",
+     "text": "長期運用向け低消費電力設計"
+    },
+    {
+     "icon": "product/details/270-f6.png",
+     "text": "NFCとUSBによるスタンドアロン記録、ゲートウェイ不要"
+    },
+    {
+     "icon": "product/details/270-f7.png",
+     "text": "すべての読数にタイムスタンプ付き記録"
+    },
+    {
+     "icon": "product/details/270-f9.png",
+     "text": "無料PCソフトウェア：曲線分析とPDF/CSVエクスポート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "NFC設定とワンクリックUSBエクスポートを備えたマイクロパワー設計。交換可能なバッテリーはバッテリー交換間の複数年記録をサポートします。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200L/H300L"
+    ],
+    [
+     "保存容量",
+     "80,000読数"
+    ],
+    [
+     "精度",
+     "±0.2 °C / ±2 % RH（典型）"
+    ],
+    [
+     "構成",
+     "NFC（Android/iOSアプリ）"
+    ],
+    [
+     "データエクスポート",
+     "USB、PDF/CSVレポート"
+    ],
+    [
+     "バッテリー寿命",
+     "複数年（交換可能バッテリー）"
+    ],
+    [
+     "保護",
+     "IP65"
+    ],
+    [
+     "取付",
+     "卓上 · 吊り下げ · 粘着"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200L/H300L"
+    },
+    {
+     "name": "保存容量",
+     "value": "80,000読数"
+    },
+    {
+     "name": "精度",
+     "value": "±0.2 °C / ±2 % RH（典型）"
+    },
+    {
+     "name": "構成",
+     "value": "NFC（Android/iOSアプリ）"
+    },
+    {
+     "name": "データエクスポート",
+     "value": "USB、PDF/CSVレポート"
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "複数年（交換可能バッテリー）"
+    },
+    {
+     "name": "保護",
+     "value": "IP65"
+    },
+    {
+     "name": "取付",
+     "value": "卓上 · 吊り下げ · 粘着"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/285-scen4.jpg",
+     "label": "コールドチェーン輸送"
+    },
+    {
+     "img": "product/details/270-scen5.jpg",
+     "label": "食品加工"
+    },
+    {
+     "img": "product/details/270-scen4.jpg",
+     "label": "医薬品およびヘルスケア保管"
+    },
+    {
+     "img": "product/details/285-scen3.jpg",
+     "label": "病院"
+    },
+    {
+     "img": "product/details/285-scen7.jpg",
+     "label": "スマート製造"
+    },
+    {
+     "img": "product/details/285-scen6.jpg",
+     "label": "データセンター"
+    }
+   ],
+   "related": [
+    "301",
+    "270",
+    "285",
+    "274",
+    "280",
+    "281",
+    "282",
+    "283"
+   ],
+   "summary": "HitelecomのHシリーズ温度・湿度データロガーは、典型精度±0.2 °Cおよび±2 % RHで最大80,000読数を保存します。対応するAndroidまたはiOSデバイスでのNFC設定、PDF/CSVレポートのUSBワンクリックエクスポート、グラフ作成とデータ分析用の無料PCソフトウェア、交換可能な複数年バッテリーが、コールドチェーン、医薬品、食品物流の監査をサポートする記録を提供します。",
+   "sku": "H200L/H300L",
+   "applications": [
+    {
+     "name": "コールドチェーン輸送",
+     "desc": "冷蔵トラック、リーファーコンテナ、ラストマイルボックスの輸送単位の温度記録。",
+     "img": "product/details/285-scen4.jpg"
+    },
+    {
+     "name": "医薬品流通",
+     "desc": "ワクチン、インスリン、バイオ医薬品の出荷向けの監査対応PDF/CSV証跡。",
+     "img": "product/details/270-scen4.jpg"
+    },
+    {
+     "name": "食品加工と貯蔵",
+     "desc": "加工ホール、冷蔵庫、陳列キャビネットでのHACCP対応記録。",
+     "img": "product/details/270-scen5.jpg"
+    },
+    {
+     "name": "病院と実験室",
+     "desc": "コンプライアンスチェックのための冷蔵庫、冷凍庫、インキュベーター記録。",
+     "img": "product/details/285-scen3.jpg"
+    },
+    {
+     "name": "倉庫業",
+     "desc": "保税および一般倉庫での長期環境記録。",
+     "img": "product/details/276-scen3.jpg"
+    },
+    {
+     "name": "データセンターと書庫",
+     "desc": "ワイヤレスアップリンクが不要な部屋の配置記録。",
+     "img": "product/details/285-scen6.jpg"
+    }
+   ],
+   "certifications": [
+    "IP65"
+   ],
+   "faqs": [
+    {
+     "q": "ロガーはどのように設定し、データを読み出しますか？",
+     "a": "NFC対応フォンでロガーにタップして起動・停止・設定します — お使いのフォンモデルのiOS NFC対応はHitelecomにご確認ください。輸送後はUSBに接続してPDF/CSVレポートをエクスポートするか、無料PCソフトウェアでファイルを開いて曲線分析を行います。"
+    },
+    {
+     "q": "何読数を保存できますか？",
+     "a": "最大80,000読数。5分間隔で約9か月の連続記録をカバーします。"
+    },
+    {
+     "q": "バッテリーは交換可能ですか？",
+     "a": "はい。ロガーは複数年寿命の交換可能なバッテリーを使用し、同じロガーを数年にわたり複数回の輸送で再利用できます。"
+    },
+    {
+     "q": "無線でデータをアップロードしますか？",
+     "a": "いいえ — これはスタンドアロンのデータロガーです。データはUSBでエクスポートするかNFCで読み出すまでロガーに残り、ライブアップリンクが不要な越境出荷や監査付き納入に適しています。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "303": {
+   "series": "Hシリーズ · TVOCセンサー",
+   "tagline": "VOCモニタリング | 固定式 | 超低消費電力",
+   "desc": "HitelecomのTVOCセンサーは、0〜100,000 ppbの総揮発性有機化合物を1 ppb分解能で追跡し、塗装工場、化学品倉庫、実験室でのモニタリングをリモートアラームでサポートします。",
+   "heroImg": "product/details/303-hero.png",
+   "pdf": "/downloads/tvoc-sensor-datasheet.pdf",
+   "crumbCat": "空気質",
+   "returnCid": "265",
+   "features": [
+    {
+     "icon": "product/details/270-f1.png",
+     "text": "分解能：1 ppb"
+    },
+    {
+     "icon": "product/details/270-f2.png",
+     "text": "IP68防護等級筐体、カスタマイズ可能"
+    },
+    {
+     "icon": "product/details/270-f3.png",
+     "text": "広測定範囲：0〜100,000 ppb"
+    },
+    {
+     "icon": "product/details/270-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/270-f5.png",
+     "text": "長期運用向け低消費電力設計"
+    },
+    {
+     "icon": "product/details/270-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/270-f7.png",
+     "text": "遠隔VOCモニタリング"
+    },
+    {
+     "icon": "product/details/270-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "マイクロパワープロセッサーとアルゴリズム最適化により、規定の試験条件下で1時間の送信間隔で最長10年の設計寿命を実現し、定期保守を削減します。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "測定範囲",
+     "0-100,000 ppb"
+    ],
+    [
+     "分解能",
+     "1 ppb"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "センシング原理",
+     "電気化学式またはPID（構成による）"
+    ],
+    [
+     "周波数帯",
+     "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    ],
+    [
+     "バッテリー寿命",
+     "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。"
+    ],
+    [
+     "取付",
+     "耳付け · ダクト取付"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200/H300/H500"
+    },
+    {
+     "name": "測定範囲",
+     "value": "0-100,000 ppb",
+     "unitText": "10億分の1",
+     "minValue": 0.0,
+     "maxValue": 100000.0
+    },
+    {
+     "name": "分解能",
+     "value": "1 ppb",
+     "unitText": "10億分の1"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "センシング原理",
+     "value": "電気化学式またはPID（構成による）"
+    },
+    {
+     "name": "周波数帯",
+     "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。",
+     "unitText": "年",
+     "minValue": 10.0
+    },
+    {
+     "name": "取付",
+     "value": "耳付け · ダクト取付"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/285-scen7.jpg",
+     "label": "スマート製造"
+    },
+    {
+     "img": "product/details/283-scen5.jpg",
+     "label": "化学プラント"
+    },
+    {
+     "img": "product/details/285-scen1.jpg",
+     "label": "オフィス環境"
+    },
+    {
+     "img": "product/details/285-scen3.jpg",
+     "label": "病院"
+    },
+    {
+     "img": "product/details/285-scen5.jpg",
+     "label": "住宅環境"
+    },
+    {
+     "img": "product/details/283-scen7.jpg",
+     "label": "スマートビル"
+    }
+   ],
+   "related": [
+    "305",
+    "285",
+    "301",
+    "302",
+    "270",
+    "274",
+    "284",
+    "283"
+   ],
+   "summary": "HitelecomのHシリーズTVOCセンサーは、0〜100,000 ppbの総揮発性有機化合物を1 ppb分解能で測定するワイヤレスモニターです。センシング技術は対象化合物に合わせて選択され、ご注文時に確認が必要です。リモートアラームと、規定の試験条件下で1時間の送信間隔で10年以上を想定したバッテリーを備え、塗装工場、化学品倉庫、実験室での継続的モニタリングをサポートします。",
+   "sku": "H200/H300/H500",
+   "applications": [
+    {
+     "name": "塗装工場とコーティングライン",
+     "desc": "スプレーおよび硬化中に溶剤が蒸発する場所での継続的なTVOC追跡。",
+     "img": "product/details/283-scen6.jpg"
+    },
+    {
+     "name": "化学品貯蔵エリア",
+     "desc": "ドラム、タンク、キャビネット周辺の蒸気蓄積の早期警告。",
+     "img": "product/details/283-scen5.jpg"
+    },
+    {
+     "name": "実験室",
+     "desc": "研究者の安全のためのフュームフードおよび室内TVOCモニタリング。",
+     "img": "product/details/274-scen5.jpg"
+    },
+    {
+     "name": "印刷および包装工場",
+     "desc": "プレス機およびラミネーター近くの溶剤蒸気モニタリング。",
+     "img": "product/details/285-scen7.jpg"
+    },
+    {
+     "name": "室内空気質プログラム",
+     "desc": "ビル健康監査の主要指標としてのTVOC。",
+     "img": "product/details/285-scen1.jpg"
+    },
+    {
+     "name": "排水および廃棄物施設",
+     "desc": "処理プラントでの臭気関連VOC動向モニタリング。",
+     "img": "product/details/283-scen4.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "TVOCセンサーはどのような範囲と分解能を提供しますか？",
+     "a": "測定範囲0〜100,000 ppb、分解能1 ppb。センシング原理は対象ガス混合に応じて電気化学式またはPIDを選択します。"
+    },
+    {
+     "q": "TVOCが異常に上昇するとアラームを出せますか？",
+     "a": "はい。しきい値はリモートで設定され、センサーはクラウドプラットフォーム経由でアラームをプッシュするため、設定済みしきい値を超えた際にチームは速やかに対応できます。"
+    },
+    {
+     "q": "防護等級はどのくらいですか？",
+     "a": "標準筐体は要求の厳しい産業サイト向けで、IP68は恒久的に露出した屋外ポイント向けのカスタマイズとしてご利用いただけます。設置環境をHitelecomにお知らせください。"
+    },
+    {
+     "q": "どのように給電・接続されますか？",
+     "a": "内蔵バッテリーを使用し、規定の試験条件下で1時間の送信間隔で10年以上の寿命を想定した設計で、4GまたはNB-IoT経由でMQTTによりHitelecom Cloudまたはプライベートプラットフォームにアップロードします。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "304": {
+   "series": "Hシリーズ · 資産追跡センサー",
+   "tagline": "測位 | 複数年バッテリー | 堅牢",
+   "desc": "Hitelecomの資産追跡センサーは、GPSとBeiDou測位を複数年のバッテリー寿命と組み合わせ、ジオフェンスアラートでパレット、工具、返却可能な容器をサイト間で可視化します。",
+   "heroImg": "product/details/304-hero.png",
+   "pdf": "/downloads/asset-tracking-sensor-datasheet.pdf",
+   "crumbCat": "資産追跡",
+   "returnCid": "306",
+   "features": [
+    {
+     "icon": "product/details/270-f1.png",
+     "text": "GPS + BeiDou デュアルモード測位"
+    },
+    {
+     "icon": "product/details/270-f2-ip67.png",
+     "text": "IP67防護等級"
+    },
+    {
+     "icon": "product/details/270-f3.png",
+     "text": "セルラーカバレッジが利用可能な場所でのLBSフォールバック"
+    },
+    {
+     "icon": "product/details/270-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/270-f5.png",
+     "text": "長期運用向け低消費電力設計"
+    },
+    {
+     "icon": "product/details/270-f6.png",
+     "text": "4GまたはNB-IoTによる位置情報送信"
+    },
+    {
+     "icon": "product/details/270-f7.png",
+     "text": "クラウドマップ＆位置履歴"
+    },
+    {
+     "icon": "product/details/270-f8.png",
+     "text": "ジオフェンス＆移動アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "マイクロパワー設計と構成可能な送信間隔が複数年のバッテリー動作をサポートします。実際の寿命は測位モード、送信間隔、ネットワークカバレッジによって異なります。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200T"
+    ],
+    [
+     "測位",
+     "GPS / BeiDou / LBS"
+    ],
+    [
+     "通信",
+     "4G / NB-IoT"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "バッテリー寿命",
+     "複数年（送信間隔による）"
+    ],
+    [
+     "保護",
+     "IP67"
+    ],
+    [
+     "取付",
+     "マグネット · ネジ · ストラップ"
+    ],
+    [
+     "動作温度",
+     "−20 °C〜+70 °C"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200T"
+    },
+    {
+     "name": "測位",
+     "value": "GPS / BeiDou / LBS"
+    },
+    {
+     "name": "通信",
+     "value": "4G / NB-IoT"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "複数年（送信間隔による）"
+    },
+    {
+     "name": "保護",
+     "value": "IP67"
+    },
+    {
+     "name": "取付",
+     "value": "マグネット · ネジ · ストラップ"
+    },
+    {
+     "name": "動作温度",
+     "value": "−20 °C〜+70 °C",
+     "unitText": "摂氏度",
+     "minValue": -20.0,
+     "maxValue": 70.0
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/285-scen4.jpg",
+     "label": "スマート交通"
+    },
+    {
+     "img": "product/details/285-scen7.jpg",
+     "label": "スマート製造"
+    },
+    {
+     "img": "product/details/285-scen2.jpg",
+     "label": "スマートシティ"
+    },
+    {
+     "img": "product/details/283-scen8.jpg",
+     "label": "スマートエネルギー"
+    },
+    {
+     "img": "product/details/283-scen4.jpg",
+     "label": "浄水場"
+    },
+    {
+     "img": "product/details/283-scen7.jpg",
+     "label": "スマートビル"
+    }
+   ],
+   "related": [
+    "301",
+    "302",
+    "303",
+    "305",
+    "270",
+    "274",
+    "280",
+    "285"
+   ],
+   "summary": "HitelecomのHシリーズ資産追跡センサーは、GPSとBeiDou測位（衛星信号が弱い場所ではLBSフォールバック、ネットワーク利用可能性に準拠）を4GまたはNB-IoTアップリンクと組み合わせています。トラッカーは4GまたはNB-IoT経由で位置とジオフェンスイベントを報告し、複数年バッテリー、IP67筐体、マグネット・ネジ・ストラップ取付を組み合わせ、パレット、工具、返却可能な容器をサイト間で可視化します。",
+   "sku": "H200T",
+   "applications": [
+    {
+     "name": "パレットと容器のプーリング",
+     "desc": "返却可能な輸送品がサプライヤー、工場、倉庫間で可視化されたままになります。",
+     "img": "product/details/276-scen3.jpg"
+    },
+    {
+     "name": "工具および機器の追跡",
+     "desc": "大規模サイトで共有工具および携帯機器を検索します。",
+     "img": "product/details/285-scen7.jpg"
+    },
+    {
+     "name": "物流フリート",
+     "desc": "トレーラー、コンテナ、ドーリーの位置およびジオフェンスアラート。",
+     "img": "product/details/285-scen4.jpg"
+    },
+    {
+     "name": "建設現場",
+     "desc": "変化する作業現場で発電機、コンプレッサー、アタッチメントを追跡します。"
+    },
+    {
+     "name": "公益事業および市有資産",
+     "desc": "フィールドの移動ポンプ、バルブ、サービス機器を監視します。",
+     "img": "product/details/283-scen4.jpg"
+    },
+    {
+     "name": "レンタル機器",
+     "desc": "レンタル機械を特定し、無許可の移動を検出します。",
+     "img": "product/details/284-scen2.jpg"
+    }
+   ],
+   "certifications": [
+    "IP67"
+   ],
+   "faqs": [
+    {
+     "q": "トラッカーはどのように資産を測位しますか？",
+     "a": "屋外ではGPSまたはBeiDou衛星測位を使用し、屋内や都市の峡谷ではLBSセル測位がおおよそのフォールバック位置を提供できます（ネットワーク利用可能性に準拠）。"
+    },
+    {
+     "q": "バッテリー寿命はどのくらいですか？",
+     "a": "複数年、送信間隔でスケーリング — 1日あたりの位置更新が少ないほど長い稼働になります。正確なプロファイルは展開ごとに構成されます。"
+    },
+    {
+     "q": "資産にはどのように取り付けますか？",
+     "a": "3つのオプション：鋼面用マグネット、永久取付用ネジ、パレット・不規則形状資産用ストラップ。IP67が雨とほこりから保護します。"
+    },
+    {
+     "q": "資産がサイトを離れるとアラートを出せますか？",
+     "a": "はい。ジオフェンスはプラットフォーム上で描画され、資産が境界を越えるとトラッカーがアラートをプッシュします。"
+    }
+   ],
+   "dateModified": "2026-09-02"
+  },
+  "305": {
+   "series": "Hシリーズ · カスタムガスセンサー",
+   "tagline": "100種類以上のガス | 固定式またはダクト式 | OEM/ODM",
+   "desc": "対象ガスをお知らせください — Hitelecomがそれに合わせてターミナルを構築します。カスタムガスセンサーは、CO、H₂S、NH₃、O₃、CH₄を含む100種類以上のガスに対応し、産業モニタリング向けの固定式またはダクト式筐体で構成できます。範囲、精度、センシング原理、バッテリー寿命は選択されたガスと構成によって異なります。",
+   "heroImg": "product/details/305-hero.png",
+   "pdf": "/downloads/custom-gas-sensor-datasheet.pdf",
+   "crumbCat": "空気質",
+   "returnCid": "265",
+   "features": [
+    {
+     "icon": "product/details/270-f1.png",
+     "text": "電気化学式 / NDIR / PID 原理"
+    },
+    {
+     "icon": "product/details/270-f2.png",
+     "text": "IP68防護等級筐体、カスタマイズ可能"
+    },
+    {
+     "icon": "product/details/270-f3.png",
+     "text": "100種類以上のガス：CO、H₂S、NH₃、O₃、CH₄など"
+    },
+    {
+     "icon": "product/details/270-f4.png",
+     "text": "NFCアクティベーションとローカルデバイス設定に対応します。"
+    },
+    {
+     "icon": "product/details/270-f5.png",
+     "text": "長期運用向け低消費電力設計"
+    },
+    {
+     "icon": "product/details/270-f6.png",
+     "text": "無線オプション：4G LTE、NB-IoT、LoRa。"
+    },
+    {
+     "icon": "product/details/270-f7.png",
+     "text": "遠隔ガスモニタリング"
+    },
+    {
+     "icon": "product/details/270-f8.png",
+     "text": "構成可能なしきい値アラート"
+    }
+   ],
+   "specsTitle": "技術仕様",
+   "specsDesc": "カスタムガスターミナルは、対象ガスに合わせたセンシング原理とマイクロパワープロセッサーを組み合わせます。範囲、精度、バッテリー寿命は選択されたガス、原理、送信間隔によって異なります — 構成ごとにご確認ください。",
+   "specs": [
+    [
+     "製品モデル",
+     "H200/H300/H500"
+    ],
+    [
+     "対象ガス",
+     "100種類以上の構成可能な対象ガス"
+    ],
+    [
+     "測定範囲",
+     "ガスごとに（カスタマイズ）"
+    ],
+    [
+     "プロトコル",
+     "MQTT"
+    ],
+    [
+     "センシング原理",
+     "電気化学式 / NDIR / PID"
+    ],
+    [
+     "周波数帯",
+     "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    ],
+    [
+     "バッテリー寿命",
+     "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。"
+    ],
+    [
+     "取付",
+     "固定式 · ダクト式"
+    ]
+   ],
+   "specsStructured": [
+    {
+     "name": "製品モデル",
+     "value": "H200/H300/H500"
+    },
+    {
+     "name": "対象ガス",
+     "value": "100種類以上の構成可能な対象ガス"
+    },
+    {
+     "name": "測定範囲",
+     "value": "ガスごとに（カスタマイズ）"
+    },
+    {
+     "name": "プロトコル",
+     "value": "MQTT"
+    },
+    {
+     "name": "センシング原理",
+     "value": "電気化学式 / NDIR / PID"
+    },
+    {
+     "name": "周波数帯",
+     "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+    },
+    {
+     "name": "バッテリー寿命",
+     "value": "規定の試験条件下で1時間の送信間隔で10年以上のバッテリー寿命を想定した設計です。実際のバッテリー寿命は、モデル、センシング構成、ネットワークカバレッジ、再送、動作温度、サンプリングレート、送信間隔によって異なります。",
+     "unitText": "年",
+     "minValue": 10.0
+    },
+    {
+     "name": "取付",
+     "value": "固定式 · ダクト式"
+    }
+   ],
+   "certImgs": [],
+   "scenariosHeading": "適用シーン",
+   "scenarios": [
+    {
+     "img": "product/details/283-scen3.jpg",
+     "label": "炭鉱"
+    },
+    {
+     "img": "product/details/283-scen5.jpg",
+     "label": "化学プラント"
+    },
+    {
+     "img": "product/details/283-scen4.jpg",
+     "label": "浄水場"
+    },
+    {
+     "img": "product/details/285-scen7.jpg",
+     "label": "スマート製造"
+    },
+    {
+     "img": "product/details/283-scen1.jpg",
+     "label": "マンホールカバー"
+    },
+    {
+     "img": "product/details/285-scen1.jpg",
+     "label": "オフィス環境"
+    }
+   ],
+   "related": [
+    "303",
+    "285",
+    "274",
+    "270",
+    "301",
+    "280",
+    "284",
+    "283"
+   ],
+   "summary": "対象ガスをお知らせください — Hitelecomがそれに合わせてターミナルを構築します。Hシリーズのカスタムガスセンサーは、CO、H₂S、NH₃、O₃、CH₄を含む100種類以上のガスに対応し、電気化学式、NDIR、PID原理、固定式またはダクト式筐体、4GまたはNB-IoTアップリンクを備えます。バッテリー寿命はセンシング原理と送信頻度によって異なります（典型的な構成で1時間間隔で10年以上を想定した設計）。",
+   "sku": "H200/H300/H500",
+   "applications": [
+    {
+     "name": "炭鉱",
+     "desc": "有線ガスシステムの拡張が困難な地下でのCH₄およびCOモニタリング。",
+     "img": "product/details/283-scen3.jpg"
+    },
+    {
+     "name": "化学プラント",
+     "desc": "生産および貯蔵エリアでのプロセス固有ガスのポイント監視。",
+     "img": "product/details/283-scen5.jpg"
+    },
+    {
+     "name": "給水および排水プラント",
+     "desc": "湿井、スクリーン、汚泥室でのH₂S検出。",
+     "img": "product/details/283-scen4.jpg"
+    },
+    {
+     "name": "冷蔵保管と冷凍",
+     "desc": "アンモニア冷凍プラント向けのNH₃漏洩検出。",
+     "img": "product/details/270-scen5.jpg"
+    },
+    {
+     "name": "マンホールと閉所",
+     "desc": "市の閉所での進入前および継続的なガスチェック。",
+     "img": "product/details/283-scen1.jpg"
+    },
+    {
+     "name": "半導体と実験室",
+     "desc": "使用中の特定ガスに合わせた特殊ガス漏洩モニタリング。",
+     "img": "product/details/274-scen2.jpg"
+    }
+   ],
+   "certifications": [
+    "IP68"
+   ],
+   "faqs": [
+    {
+     "q": "どのガスを検出できますか？",
+     "a": "CO、H₂S、NH₃、O₃、CH₄、Cl₂、VOCを含む100種類以上の対象ガス。センシング技術（電気化学式、NDIR、PID）と測定範囲は対象ガスに合わせて選択されます。"
+    },
+    {
+     "q": "カスタムガスセンサーはどのように注文しますか？",
+     "a": "対象ガス、予想範囲、設置様式（固定式またはダクト式）、現場条件をHitelecomにお知らせください。エンジニアリングがOEM/ODMプログラムの下で構成とリードタイムを確認します。"
+    },
+    {
+     "q": "筐体は屋外設置に対応できますか？",
+     "a": "はい。固定式およびダクト式筐体はほとんどのサイトをカバーし、IP68保護は恒久的に露出した場所向けのカスタマイズとしてご利用いただけます。"
+    },
+    {
+     "q": "どのようにアラームを報告しますか？",
+     "a": "4GまたはNB-IoT経由でMQTTによりHitelecom Cloudまたはプライベートプラットフォームにワイヤレス送信し、リモートでアラームしきい値を設定します。"
     }
    ],
    "dateModified": "2026-09-02"
@@ -23181,6 +28854,83 @@ export const listSeo: Record<Locale, Record<string, PageSeo>> =
   "title": "Asset-Tracking-Sensoren | GPS & BeiDou | Hitelecom",
   "desc": "Geräte für die Verfolgung von Assets mit GPS- und BeiDou-Ortung, Geofences, Standortverlauf und 4G- oder NB-IoT-Übertragung."
  }
+}, ja: {
+ "256": {
+  "title": "カスタムIoT開発とOEM/ODM | Hitelecom",
+  "desc": "センサー、ゲートウェイ、ファームウェア、クラウドプラットフォーム、筐体のカスタムIoT開発。プロトタイプからOEM/ODM生産まで。"
+ },
+ "257": {
+  "title": "気象・水文ステーション | Hitelecom",
+  "desc": "2〜12の構成可能なチャンネル、ソーラーまたは系統電源、クラウドへのデータ送信を備えた気象・水文ステーション。"
+ },
+ "258": {
+  "title": "産業用IoTゲートウェイ | 4G、NB-IoT、LoRa | Hitelecom",
+  "desc": "屋内・屋外向けの産業用IoTゲートウェイ。LoRa、4GまたはEthernetバックホール、ローカルデプロイオプション。"
+ },
+ "261": {
+  "title": "産業用IoTセンサー | 4G、NB-IoT、LoRa | Hitelecom",
+  "desc": "温度、圧力、レベル、傾斜、振動、空気質向けのHitelecomセンサー。モデルに応じて4G、NB-IoT、LoRaオプション。"
+ },
+ "262": {
+  "title": "ワイヤレス圧力センサー | 4G・NB-IoT | Hitelecom",
+  "desc": "パイプライン、ポンプ、タンク向けのワイヤレス圧力センサー。最大20 MPaの範囲、4G/NB-IoT送信。"
+ },
+ "263": {
+  "title": "産業用温度センサー | Hitelecom",
+  "desc": "−200 °C〜+800 °Cの産業用温度センサー。4G・NB-IoT・LoRaオプション、モデルに応じたバッテリー給電。"
+ },
+ "265": {
+  "title": "空気質・TVOCセンサー | Hitelecom",
+  "desc": "都市および産業モニタリング向けの空気質、TVOC、構成可能なガスセンサー。4G・NB-IoT・LoRaオプション。"
+ },
+ "266": {
+  "title": "レーダー距離センサー | 4G・NB-IoT | Hitelecom",
+  "desc": "サイロ、バンカー、マンホール、レベル制御向けの0.3〜50 mレーダー距離センサー。4GまたはNB-IoT接続。"
+ },
+ "267": {
+  "title": "高精度傾斜センサー | Hitelecom",
+  "desc": "建物、橋梁、タワー向けの傾斜センサー。分解能0.001°、リモートアラート、4G・NB-IoT・LoRaオプション。"
+ },
+ "268": {
+  "title": "投入式レベルセンサー一覧 | 最長200 m | Hitelecom",
+  "desc": "河川、貯水池、タンク向けの測定範囲0〜200 mの投入式レベルセンサー。4G/NB-IoT送信、しきい値アラート、Hitelecom Cloud連携対応。"
+ },
+ "269": {
+  "title": "土壌水分・NPKセンサー | Hitelecom",
+  "desc": "水分、温度、EC、pH、NPK向けのマルチパラメーター土壌センサー。埋設向けIP68筐体、灌漑向け4G/NB-IoT送信。"
+ },
+ "271": {
+  "title": "産業用振動センサー | 4G・NB-IoT | Hitelecom",
+  "desc": "回転機械および構造物向けの振動センサー。速度と変位を測定し、4GまたはNB-IoT接続。"
+ },
+ "272": {
+  "title": "屋内向けIoTゲートウェイ | 4G、NB-IoT、LoRa | Hitelecom",
+  "desc": "屋内向けLoRaゲートウェイH66。8チャンネル、開放地で最長5 kmの範囲、4G・Ethernet・Wi-Fiバックホール。"
+ },
+ "273": {
+  "title": "屋外向けIoTゲートウェイ | IP68、4G、LoRa | Hitelecom",
+  "desc": "屋外向けLoRaゲートウェイH68。IP68保護、開放地で最長10 kmの範囲、4GまたはEthernetバックホール。"
+ },
+ "274": {
+  "title": "水文ステーション | Hitelecom",
+  "desc": "河川、貯水池、洪水警報向けの水位・雨量・流量チャンネルを備えた水文ステーション。ソーラー電源オプション。"
+ },
+ "275": {
+  "title": "自動気象ステーション | Hitelecom",
+  "desc": "気象ステーションH600。温度、湿度、風、雨量、圧力、日射量向けの2〜12の構成可能なチャンネル。"
+ },
+ "278": {
+  "title": "カスタムIoTソフトウェア | クラウド＆組込み | Hitelecom",
+  "desc": "カスタムIoTソフトウェア：クラウドプラットフォーム、デジタルツインダッシュボード、GIS可視化、センサー・ゲートウェイ・コントローラー向けファームウェア。"
+ },
+ "279": {
+  "title": "カスタムIoTハードウェア | 危険区域 | Hitelecom",
+  "desc": "カスタムIoTハードウェアとアクセサリー：危険区域向けセンサー、カップリングアイソレーター、筐体。Hitelecomが設計・製造。"
+ },
+ "306": {
+  "title": "資産追跡センサー一覧 | GPS & BeiDou | Hitelecom",
+  "desc": "GPS/BeiDou測位、4G送信、ジオフェンスアラート、長年のバッテリー寿命を備えた資産追跡ターミナル。パレット、工具、リターナブル容器向け。"
+ }
 }, es: {
  "256": {
   "title": "Desarrollo IoT a medida y OEM/ODM | Hitelecom",
@@ -23337,6 +29087,83 @@ export const detailSeo: Record<Locale, Record<string, PageSeo>> =
  "305": {
   "title": "Kundenspezifischer Gassensor | H-Serie | Hitelecom",
   "desc": "Konfigurierbarer Sensor für mehr als 100 Gase, mit elektrochemischer, NDIR- oder PID-Technologie, Fest- oder Kanalmontage und 4G- oder NB-IoT-Konnektivität."
+ }
+}, ja: {
+ "270": {
+  "title": "産業用温度センサー | Hシリーズ | Hitelecom",
+  "desc": "−200 °C〜+800 °Cの産業用温度センサー。精度は構成可能、4G・NB-IoT・LoRa接続、MQTT統合に対応。"
+ },
+ "274": {
+  "title": "ワイヤレス圧力センサー | Hシリーズ | Hitelecom",
+  "desc": "パイプライン、ポンプ、タンク向けのワイヤレス圧力センサー。0–1〜20 MPaの範囲、±0.5 % FS、4G/NB-IoTでHitelecom Cloudに送信。"
+ },
+ "280": {
+  "title": "マルチパラメーター土壌センサー | Hシリーズ | Hitelecom",
+  "desc": "水分、温度、EC、pH、NPKを1つのプローブで測定する土壌センサー。埋設向けIP68筐体、4G/NB-IoTでHitelecom Cloudに送信。"
+ },
+ "281": {
+  "title": "投入式レベルセンサー | 最長200 m | Hitelecom",
+  "desc": "河川、貯水池、タンク向けの投入式レベルセンサー。0〜200 mの範囲、±0.5 % FSの精度、4G/NB-IoT送信、Hitelecom Cloud統合。"
+ },
+ "282": {
+  "title": "傾斜センサー（傾斜計） | Hシリーズ | Hitelecom",
+  "desc": "構造物健全性モニタリング向けのワイヤレス傾斜センサー。分解能0.001°、IP68保護、4G・NB-IoT・LoRaオプション。"
+ },
+ "283": {
+  "title": "レーダー距離センサー | 0.3〜50 m | Hitelecom",
+  "desc": "サイロ、バンカー、マンホール向けのレーダー距離センサー。0.3〜50 mの範囲、±1 mmの精度、4GまたはNB-IoTでHitelecom Cloudに送信。"
+ },
+ "284": {
+  "title": "ワイヤレス振動センサー | Hシリーズ | Hitelecom",
+  "desc": "機械および構造物向けの振動センサー。速度と変位を測定し、アラームと4GまたはNB-IoT接続を備えます。"
+ },
+ "285": {
+  "title": "6-in-1空気質センサー | Hシリーズ | Hitelecom",
+  "desc": "CO₂、PM2.5、TVOC、温度、湿度、気圧向けの6-in-1空気質センサー。オプションチャンネルと4GまたはNB-IoT接続。"
+ },
+ "275": {
+  "title": "屋外向け4G IoTゲートウェイ | H68シリーズ | Hitelecom",
+  "desc": "屋外向けLoRaゲートウェイH68。IP68保護、開放地で最長10 kmの範囲、4GまたはEthernetバックホール。"
+ },
+ "276": {
+  "title": "屋内向けIoTゲートウェイ | H66シリーズ | Hitelecom",
+  "desc": "屋内向けLoRaゲートウェイH66。8チャンネル、開放地で最長5 kmの範囲、4G・Ethernet・Wi-Fiバックホール。"
+ },
+ "277": {
+  "title": "水文モニタリングステーション | Hシリーズ | Hitelecom",
+  "desc": "水文ステーションH700。2〜12の構成可能なチャンネル、ソーラーまたは系統電源、水の遠隔モニタリング向け4G送信。"
+ },
+ "278": {
+  "title": "自動気象ステーション | Hシリーズ | Hitelecom",
+  "desc": "気象ステーションH600。2〜12の構成可能なチャンネル、ソーラーまたは系統電源、遠隔モニタリング向け4G送信。"
+ },
+ "286": {
+  "title": "危険区域向け温度・圧力センサー | Hitelecom",
+  "desc": "危険区域プロジェクト向けの温度・圧力複合センサー。4GまたはNB-IoT送信；該当認証はご確認ください。"
+ },
+ "287": {
+  "title": "危険区域向けカップリングアイソレーター | H100 | Hitelecom",
+  "desc": "危険区域プロジェクトで2.4および5.8 GHzリンク向けの信号カプラーH100。仕様化前に該当認証をご確認ください。"
+ },
+ "301": {
+  "title": "温度・湿度センサー | Hitelecom",
+  "desc": "温度・湿度センサー。典型精度±0.2 °C・±2 % RH、NFCアクティベーション、IP65筐体、4G/NB-IoT送信。"
+ },
+ "302": {
+  "title": "温度・湿度データロガー | Hitelecom",
+  "desc": "温度・湿度データロガー。80,000読数、NFC設定、コールドチェーン向けPDF/CSVレポートのUSBエクスポート。"
+ },
+ "303": {
+  "title": "TVOCセンサー | 範囲0〜100,000 ppb | Hitelecom",
+  "desc": "工場、化学品倉庫、実験室向けのTVOCセンサー。0〜100,000 ppb、4GまたはNB-IoTでのリモートアラーム。"
+ },
+ "304": {
+  "title": "資産追跡センサー | GPS & BeiDou | Hitelecom",
+  "desc": "GPS・BeiDou測位、ジオフェンス、位置履歴、4GまたはNB-IoT送信による資産追跡デバイス。"
+ },
+ "305": {
+  "title": "カスタムガスセンサー | Hシリーズ | Hitelecom",
+  "desc": "100種類以上のガス向けの構成可能なセンサー。電気化学式・NDIR・PID技術、固定式またはダクト取付、4GまたはNB-IoT接続。"
  }
 }, es: {
  "270": {

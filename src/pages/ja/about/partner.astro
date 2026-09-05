@@ -1,0 +1,32 @@
+---
+/**
+ * 关于我们 - 生态合作伙伴（日语）：/about/partner
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AboutShell from '../../../components/about/AboutShell.astro';
+import AboutPartner from '../../../components/about/AboutPartner.astro';
+import { contentImageSrc } from '../../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'ホーム', item: 'https://www.hitelecom.com/ja' },
+    { '@type': 'ListItem', position: 2, name: '会社概要', item: 'https://www.hitelecom.com/ja/about' },
+    { '@type': 'ListItem', position: 3, name: 'パートナー', item: 'https://www.hitelecom.com/ja/about/partner' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="ja"
+  title="パートナープログラム | 産業用IoTセンサー"
+  description="Hitelecomの産業用IoTセンサーパートナーネットワークにご参加ください。製品トレーニング、ソリューションサポート、技術サービス、共同市場開発を提供します。"
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <AboutPartner locale="ja" />
+  </AboutShell>
+</BaseLayout>

@@ -1,0 +1,32 @@
+---
+/**
+ * 支持服务页（英文，第 2 页）：/service/page/2
+ * 与原站 /service.html?page=2 一致：文档下载区为第 2 页卡片（3 张），分页 2 高亮
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import ServiceShell from '../../../../components/service/ServiceShell.astro';
+import ServiceBody from '../../../../components/service/ServiceBody.astro';
+import { optimizedSrc } from '../../../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'ホーム', item: 'https://www.hitelecom.com/ja' },
+    { '@type': 'ListItem', position: 2, name: 'サポート', item: 'https://www.hitelecom.com/ja/service' },
+  ],
+};
+const pageBanner = await optimizedSrc('service/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="ja"
+  title="ドキュメントダウンロード | IoTセンサーカタログ - Hitelecom"
+  description="産業用温度・圧力・距離などの4GまたはNB-IoTセンシング製品のHitelecomカタログとマニュアルをダウンロードしてください。"
+>
+  <ServiceShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <ServiceBody locale="ja" page={2} />
+  </ServiceShell>
+</BaseLayout>

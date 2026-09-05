@@ -1,0 +1,91 @@
+---
+/**
+ * 产品列表页（日语）：/product/lists/cid/{cid}.html
+ * 覆盖 4 个主分类 + 14 个子分类，数据见 src/data/product.ts
+ */
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import ProductShell from '../../../../../components/product/ProductShell.astro';
+import CategoryTabs from '../../../../../components/product/CategoryTabs.astro';
+import ListSidebar from '../../../../../components/product/ListSidebar.astro';
+import ProductCard from '../../../../../components/product/ProductCard.astro';
+import { productContent, listParent, productTabs, listSeo, productPath, getMergedProducts } from '../../../../../data/product';
+import { optimizedSrc } from '../../../../../utils/images';
+import { l } from '../../../../../i18n';
+import { breadcrumbLd, itemListLd, SITE_URL } from '../../../../../utils/jsonld';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = () =>
+  Object.keys(productContent.ja.lists).map((cid) => ({ params: { cid } }));
+
+const { cid } = Astro.params;
+const pc = await getMergedProducts('ja');
+const page = pc.lists[cid];
+const parent = listParent[cid];
+const tabLabel = productTabs.ja.find((t) => t.key === parent)?.label ?? '製品';
+const subLabel = page.subcats.find((s) => s.cid === cid && s.name !== 'すべて')?.name;
+const pageTitle = subLabel
+  ? `${subLabel} - ${tabLabel} | Hitelecom 産業用IoTセンサー`
+  : `${tabLabel} | 屋外向け4G・NB-IoT製品 - Hitelecom`;
+const pageDesc = subLabel
+  ? `Hitelecom ${subLabel.toLowerCase()}製品：屋外向け4G・NB-IoT産業用IoTセンサーターミナル、IoTクラウド連携、OEM/ODM対応。`
+  : `Hitelecom ${tabLabel}：産業用IoTセンサーターミナル、屋外向け4G・NB-IoTコネクティビティ、IoTクラウド連携、OEM/ODMカスタマイズ。`;
+const seoOverride = listSeo.ja[cid];
+const banner = await optimizedSrc(page.bannerImg, { width: 1920 });
+// 侧栏用：各子分类 → 其产品（传感器名称，直达详情页）
+const enLists = pc.lists;
+const sideProds = Object.fromEntries(
+  page.subcats.map((s) => [s.cid, (enLists[s.cid]?.products ?? []).map((p) => ({ id: p.id, name: p.name }))])
+);
+
+// GEO：面包屑 + 产品清单语义化（无详情页的定制条目不进入 ItemList）
+const catName = subLabel ?? tabLabel;
+const pageUrl = `${SITE_URL}/ja/product/lists/cid/${cid}`;
+const bcLd = breadcrumbLd([
+  { name: 'ホーム', url: `${SITE_URL}/ja/` },
+  { name: '製品', url: `${SITE_URL}/ja/product` },
+  ...(subLabel ? [{ name: tabLabel, url: `${SITE_URL}/ja/product/lists/cid/${parent}` }] : []),
+  { name: catName },
+]);
+const listLd = itemListLd(
+  page.products.filter((p) => p.id).map((p) => ({ name: p.name, url: `${SITE_URL}${l(productPath(p.id), 'ja')}` })),
+  pageUrl,
+  `Hitelecom ${catName}`,
+);
+---
+
+<BaseLayout locale="ja" preloadImage={banner} title={seoOverride?.title ?? pageTitle} description={seoOverride?.desc ?? pageDesc}>
+  <ProductShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify([bcLd, listLd])} />
+    <h1 class="sr-only">{subLabel ?? tabLabel}</h1>
+    {/* 内页横幅（纯图片，与原站一致无文字） */}
+    <div class="clearfix nybanner">
+      <div class="nybanner_img" style={`background-image:url(${banner});background-position:center top;`}></div>
+      <div class="nybanner_jj">
+        <div class="cell_mid"><div class="cell_h"><div class="indexmid">
+          <div class="nybanner_jj_mid">
+            <div class="nybanner_jj_mid_1 reveal"></div>
+            <div class="nybanner_jj_mid_2 reveal"></div>
+          </div>
+        </div></div></div>
+      </div>
+      <div id="cate"></div>
+    </div>
+
+    <CategoryTabs locale="ja" active={parent} />
+
+    <div class="clearfix pro_2">
+      <div class="indexmid">
+        <div class="pro_2_mid">
+          <ListSidebar locale="ja" subcats={page.subcats} sideProds={sideProds} parentCid={parent} />
+          <div class="pro_2_mid_right">
+            <div class="clearfix pro_2_mid_right_2">
+              <ul class={`hi${cid}`}>
+                {page.products.map((p) => <ProductCard locale="ja" product={p} />)}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ProductShell>
+</BaseLayout>

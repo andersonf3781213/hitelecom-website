@@ -1,0 +1,32 @@
+---
+/**
+ * 新闻中心-行业资讯（日语）：/news/index/cid/80
+ */
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import NewsShell from '../../../../../components/news/NewsShell.astro';
+import NewsList from '../../../../../components/news/NewsList.astro';
+import { optimizedSrc } from '../../../../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'ホーム', item: 'https://www.hitelecom.com/ja' },
+    { '@type': 'ListItem', position: 2, name: 'ニュース', item: 'https://www.hitelecom.com/ja/news' },
+    { '@type': 'ListItem', position: 3, name: '業界ニュース', item: 'https://www.hitelecom.com/ja/news/index/cid/80' },
+  ],
+};
+const pageBanner = await optimizedSrc('news/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="ja"
+  title="産業用IoTインサイト | Hitelecom"
+  description="スマート水管理、都市インフラ、遠隔モニタリング、産業用IoTアプリケーションに関する最新情報をお読みください。"
+>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <NewsList locale="ja" cat="ind" />
+  </NewsShell>
+</BaseLayout>

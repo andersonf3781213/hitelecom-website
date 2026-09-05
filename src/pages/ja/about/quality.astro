@@ -1,0 +1,32 @@
+---
+/**
+ * 关于我们 - 品质与可靠（日语）：/about/quality
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AboutShell from '../../../components/about/AboutShell.astro';
+import AboutQuality from '../../../components/about/AboutQuality.astro';
+import { contentImageSrc } from '../../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'ホーム', item: 'https://www.hitelecom.com/ja' },
+    { '@type': 'ListItem', position: 2, name: '会社概要', item: 'https://www.hitelecom.com/ja/about' },
+    { '@type': 'ListItem', position: 3, name: '品質と信頼性', item: 'https://www.hitelecom.com/ja/about/quality' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="ja"
+  title="品質と信頼性 | IoTセンサー製造"
+  description="SMT生産、検査、信頼性試験、認証済みマネジメントシステムを通じて、HitelecomがIoTセンサーの品質をどのように管理しているかをご覧ください。"
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <AboutQuality locale="ja" />
+  </AboutShell>
+</BaseLayout>

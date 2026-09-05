@@ -54,6 +54,7 @@ export const site = {
     zh: '物联网整体解决方案提供商',
     es: 'Proveedor de soluciones integrales de IoT',
     de: 'Anbieter ganzheitlicher IoT-Lösungen',
+    ja: 'IoTトータルソリューションプロバイダー',
   },
 } as const;
 
@@ -79,6 +80,14 @@ export const defaultSeo = {
       '上海宏太通信技术有限公司（Hitelecom）设计与制造50余种工业物联网传感终端与记录仪配置，主打户外与工业4G、NB-IoT市场，部分型号支持LoRa/LoRaWAN，可接入宏太云、客户云平台或私有化部署（API/MQTT），覆盖工业监测、智慧水务、智慧城市、智慧农业，支持OEM/ODM定制。',
     keywords:
       '宏太通信,Hitelecom,工业物联网传感器,户外4G传感器,NB-IoT传感器,蜂窝物联网传感终端,工业温度传感器,温湿度传感器,温湿度记录仪,空气质量传感器,TVOC传感器,无线压力传感器,土壤水分传感器,倾角传感器,振动传感器,投入式液位传感器,雷达测距传感器,资产定位终端,定制气体传感器,物联网云平台,传感器OEM,传感器ODM',
+  },
+  ja: {
+    title:
+      'Hitelecom | 産業用 4G・NB-IoT センサー',
+    description:
+      'Hitelecomは、産業用4G・NB-IoT・LoRaセンサーターミナル、データロガー、クラウド連携を設計・製造し、遠隔モニタリングとOEM/ODMをサポートします。',
+    keywords:
+      'Hitelecom, 産業用IoTセンサー, 屋外向け4G IoTセンサー, NB-IoTセンサー, セルラーIoTセンサーターミナル, LoRaセンサー, IoTクラウド連携, 産業用温度センサー, 温度・湿度センサー, 温度・湿度データロガー, 空気質センサー, TVOCセンサー, 無線圧力センサー, 土壌水分センサー, 傾斜センサー, 振動センサー, 投入式レベルセンサー, レーダー距離センサー, 資産追跡センサー, カスタムガスセンサー, 中国IoTセンサーメーカー, OEM ODM IoTセンサー',
   },
   de: {
     title:

@@ -1,0 +1,84 @@
+---
+/**
+ * 解决方案列表页（日语）：/solution
+ * 与原站 1:1：全屏横幅（SOLUTION）+ 六张方案卡片（左右交替、阴影白卡）
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SolutionShell from '../../components/solution/SolutionShell.astro';
+import Img from '../../components/Img.astro';
+import { solutionIndex } from '../../data/solution';
+import { l } from '../../i18n';
+import { optimizedSrc } from '../../utils/images';
+import { breadcrumbLd, SITE_URL } from '../../utils/jsonld';
+
+const d = solutionIndex.ja;
+const banner = await optimizedSrc(d.bannerImg, { width: 1920, quality: 82 });
+// 与原站一致：每页 6 张卡，66/67 在第 2 页
+const cards = d.cards.slice(0, 6);
+const bcLd = breadcrumbLd([
+  { name: 'ホーム', url: `${SITE_URL}/ja/` },
+  { name: 'ソリューション' },
+]);
+---
+
+<BaseLayout
+  locale="ja"
+  preloadImage={banner}
+  title="遠隔モニタリングのための産業用IoTソリューション"
+  description="産業モニタリング、スマート水管理、構造物健全性、スマート農業、環境センシング、資産追跡のためのHitelecomソリューションをご覧ください。"
+>
+  <SolutionShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(bcLd)} />
+    {/* 全屏横幅 */}
+    <div class="clearfix nybanner">
+      <div class="nybanner_img" style={`background-image:url(${banner});`}></div>
+      <div class="nybanner_jj">
+        <div class="cell_mid"><div class="cell_h"><div class="indexmid">
+          <div class="nybanner_jj_mid">
+            <div class="nybanner_jj_mid_1 reveal">{d.bannerSub}</div>
+            <h1 class="nybanner_jj_mid_2 reveal">{d.bannerTitle}</h1>
+          </div>
+        </div></div></div>
+      </div>
+    </div>
+
+    {/* 方案卡片（左右交替） */}
+    <div class="clearfix so_1">
+      <div class="indexmid">
+        <div class="clearfix so_1_1">
+          <ul>
+            {cards.map((c) => (
+              <li class="reveal">
+                <a href={l(`/solution/show/id/${c.id}`, 'ja')}>
+                  <div class="so_1_1_mid">
+                    <div class="so_1_1_mid_left">
+                      <Img src={c.img} alt={c.title} widths={[560, 900]} sizes="(max-width: 810px) 100vw, 42vw" quality={82} loading="lazy" />
+                    </div>
+                    <div class="so_1_1_mid_right">
+                      <div class="cell_mid"><div class="cell_h">
+                        <div class="so_1_1_mid_right_mid">
+                          <div class="so_1_1_mid_right_mid_1 reveal">ソリューション</div>
+                          <div class="so_1_1_mid_right_mid_2 reveal">{c.title}</div>
+                          <div class="so_1_1_mid_right_mid_3 reveal">{c.desc}</div>
+                        </div>
+                      </div></div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        {/* 分页（与原站一致：第 1 页激活，第 2 页可点） */}
+        <div class="clearfix pro_2_mid_right_3 reveal">
+          <ul class="pagination">
+            <li class="disabled"><span>&laquo;</span></li>
+            <li class="active"><span>1</span></li>
+            <li><a href={l('/solution/page/2', 'ja')}>2</a></li>
+            <li><a href={l('/solution/page/2', 'ja')}>&raquo;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </SolutionShell>
+</BaseLayout>

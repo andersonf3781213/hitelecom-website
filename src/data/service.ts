@@ -286,4 +286,66 @@ const de: ServiceContent = {
   submit: 'Supportanfrage senden',
 };
 
-export const serviceContent: Record<Locale, ServiceContent> = { ...serviceContentBase, es, de };
+const ja: ServiceContent = {
+  bannerImg: 'service/banner.jpg',
+  bannerSub: '',
+  bannerTitle: 'サービス',
+  tabs: [
+    { label: '技術サポート', anchor: '#page1' },
+    { label: 'ソフトウェア', anchor: '#page2' },
+    { label: 'ダウンロード', anchor: '#page3' },
+    { label: 'アフターサービス', anchor: '#page4' },
+  ],
+  techHeading: 'プロジェクトのあらゆる段階で技術サポート',
+  techCards: [
+    { img: 'service/tech-1.jpg', title: 'ハードウェアカスタマイズ', desc: 'センシング、コネクティビティ、電源、インターフェース、筐体をご用途に合わせてカスタマイズします。' },
+    { img: 'service/tech-2.jpg', title: 'ソフトウェアカスタマイズ', desc: 'ファームウェア、ダッシュボード、API、データモデル、プラットフォーム統合をカスタマイズします。' },
+    { img: 'service/tech-3.jpg', title: 'リモートサポート', desc: '当社のエンジニアリングチームから、リモートでのトラブルシューティング、設定ガイダンス、展開サポートを受けられます。' },
+    { img: 'service/tech-4.jpg', title: '電話サポート', desc: '設置とトラブルシューティングのガイダンスについて、エンジニアとお話しください。' },
+    { img: 'service/tech-5.jpg', title: 'オンサイトサポート', desc: 'リモートサポートで不十分な場合は、現場での技術サポートをご手配ください。' },
+    { img: 'service/tech-6.jpg', title: 'メンテナンスサポート', desc: '対応製品の修理、交換、技術的フォローアップをご利用いただけます。' },
+  ],
+  softHeading: 'ソフトウェア',
+  softSub1: 'PC、モバイルアプリ、大型ディスプレイ、ビデオウォールで利用可能',
+  softSub2: 'Hitelecom Cloud | どこからでもデバイスとデータを監視',
+  softBullets: [
+    { icon: 'service/img7.png', text: 'モバイルアプリでNFCを使い、設定と保守を迅速化します。' },
+    { icon: 'service/img8.png', text: '対応デバイスをWebまたはアプリからリモート設定し、現場訪問を削減します。' },
+    { icon: 'service/img9.png', text: 'メールおよびアプリのアラート通知のトリガー条件と応答時間をカスタマイズします。' },
+    { icon: 'service/img9-2.png', text: 'デジタルツインのビュー、GISマップ、その他のデータ可視化でダッシュボードをカスタマイズします。' },
+  ],
+  softRightImg: 'service/software-right.png',
+  platforms: [
+    { icon: 'service/img12.png', label: 'Windows' },
+    { icon: 'service/img13.png', label: 'Android' },
+    { icon: 'service/img15.png', label: 'WeChatミニプログラム' },
+    { icon: 'service/img17.png', label: 'iOS' },
+  ],
+  docsHeading: 'ダウンロード',
+  docsP1: [
+    { name: '会社概要', type: 'パンフレット（英語版）', file: '/downloads/company-profile.pdf', downName: 'Hitelecom-Company-Profile.pdf' },
+    { name: 'Hitelecom Cloud', type: '適用シーン（英語版）', file: '/downloads/hitelecom-cloud-scenarios.pdf', downName: 'Hitelecom-Cloud-Scenarios.pdf' },
+    { name: '温度センサー', type: 'パンフレット（英語版）', file: '/downloads/temperature-sensor.jpg', downName: 'Temperature-Sensor-Brochure.jpg' },
+    { name: '土壌センサー', type: 'パンフレット（英語版）', file: '/downloads/soil-sensor.jpg', downName: 'Soil-Sensor-Brochure.jpg' },
+    { name: '投入式レベルセンサー', type: 'パンフレット（英語版）', file: '/downloads/liquid-level-sensor.jpg', downName: 'Liquid-Level-Sensor-Brochure.jpg' },
+    { name: '圧力センサー', type: 'パンフレット（英語版）', file: '/downloads/pressure-sensor.jpg', downName: 'Pressure-Sensor-Brochure.jpg' },
+    { name: '漏水センサー（カスタムプロジェクト）', type: 'パンフレット（英語版）', file: '/downloads/water-leakage-sensor.jpg', downName: 'Water-Leakage-Sensor-Brochure.jpg' },
+    { name: '空気質', type: 'パンフレット（英語版）', file: '/downloads/air-quality-sensor.jpg', downName: 'Air-Quality-Sensor-Brochure.jpg' },
+  ],
+  docsP2: [
+    { name: 'レーダー距離センサー', type: 'パンフレット（英語版）', file: '/downloads/distance-measurement-sensor.jpg', downName: 'Distance-Measurement-Sensor-Brochure.jpg' },
+    { name: '危険区域向け2-in-1温度センサー', type: 'パンフレット（英語版）', file: '/downloads/temperature-sensor-ex.jpg', downName: 'Temperature-Sensor-EX-Brochure.jpg' },
+    { name: '危険区域向け2-in-1温度・圧力センサー', type: 'パンフレット（英語版）', file: '/downloads/temp-pressure-2in1-ex.jpg', downName: 'Temp-Pressure-2in1-EX-Brochure.jpg' },
+    { name: '温度・湿度センサー', type: 'データシート（英語版）', file: '/downloads/h300-temperature-humidity-sensor-datasheet.pdf', downName: 'Hitelecom-Temperature-Humidity-Sensor-Datasheet.pdf' },
+    { name: '土壌センサー', type: 'データシート（英語版）', file: '/downloads/h300-soil-sensor-datasheet.pdf', downName: 'Hitelecom-Soil-Sensor-Datasheet.pdf' },
+    { name: '圧力センサー', type: 'データシート（英語版）', file: '/downloads/h300-pressure-sensor-datasheet.pdf', downName: 'Hitelecom-Pressure-Sensor-Datasheet.pdf' },
+    { name: '傾斜センサー', type: 'データシート（英語版）', file: '/downloads/h310-ts180c-tilt-sensor-datasheet.pdf', downName: 'H310-TS180C-Tilt-Sensor-Datasheet.pdf' },
+    { name: 'レーダー距離', type: 'データシート（英語版）', file: '/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf', downName: 'H310-MW012-Radar-Distance-Sensor-Datasheet.pdf' },
+    { name: '空気質', type: 'データシート（英語版）', file: '/downloads/h310-aq041-air-quality-sensor-datasheet.pdf', downName: 'H310-AQ041-Air-Quality-Sensor-Datasheet.pdf' },
+  ],
+  formHeading: 'アフターサービス',
+  formPh: { name: 'お名前', phone: '電話番号', email: 'メールアドレス', message: 'ご要望をお聞かせください：製品、ご用途、数量、現場条件。ほとんどのお問い合わせに1営業日以内にご回答いたします。' },
+  submit: 'サポートリクエストを送信',
+};
+
+export const serviceContent: Record<Locale, ServiceContent> = { ...serviceContentBase, es, de, ja };

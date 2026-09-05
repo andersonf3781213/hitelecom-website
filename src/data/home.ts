@@ -916,6 +916,228 @@ const de: typeof en = {
   },
 };
 
+/** 日语版首页内容（译法见《EN→JA 术语表 v1》：です・ます敬体） */
+const ja: typeof en = {
+  nav: [
+    { label: 'ホーム', href: '/' },
+    { label: '製品', href: '/product/' },
+    { label: 'ソリューション', href: '/solution/' },
+    { label: 'サポート', href: '/service/' },
+    { label: 'ニュース', href: '/news/' },
+    { label: '会社概要', href: '/about/' },
+  ],
+  langSwitch: { label: 'English', href: '/' },
+  showOnline: 'クラウドデモを見る',
+  searchPlaceholder: '製品・ソリューション・ニュースを検索…',
+
+  hero: {
+    slides: [
+      {
+        eyebrow: '産業用 IoT センサー',
+        title: '低消費電力センサーターミナル',
+        desc: 'バッテリー駆動の4G・NB-IoT・LoRaセンサーターミナルで、長期の遠隔モニタリングを実現します。',
+        cta: 'センサーを見る',
+        href: '/product/lists/cid/261#cate',
+        bg: 'hero/bg-sensors.jpg',
+        device: 'hero/device-sensors.png',
+        deviceAlt: 'Hitelecomの超低消費電力IoTセンサー',
+      },
+      {
+        eyebrow: 'IoT ゲートウェイ',
+        title: '堅牢で高い信頼性',
+        desc: 'LoRaセンサーネットワークを4G LTEまたはEthernet経由でクラウドに接続し、リモートOTA更新に対応します。',
+        cta: 'ゲートウェイを見る',
+        href: '/product/lists/cid/258#cate',
+        bg: 'hero/bg-gateways.jpg',
+        device: 'hero/device-gateways.png',
+        deviceAlt: 'Hitelecomの産業用IoTゲートウェイ',
+      },
+      {
+        eyebrow: 'IoT クラウドプラットフォーム',
+        title: '遠隔モニタリング',
+        desc: 'フィールドデバイスの接続・監視・分析・管理を、ひとつのクラウドプラットフォームで行います。',
+        cta: 'IoTクラウドを見る',
+        href: '/product/#cate',
+        bg: 'hero/bg-cloud.jpg',
+        device: 'hero/device-cloud.png',
+        deviceAlt: 'Hitelecomクラウドプラットフォームのダッシュボード',
+      },
+    ] as HeroSlide[],
+  },
+
+  intro: {
+    title: '産業用IoT — センサーからクラウドまで',
+    subtitle:
+      'Hitelecomは、産業用IoTセンサー、ゲートウェイ、クラウド連携モニタリングソリューションを設計・製造しています。4G LTE、NB-IoT、LoRa/LoRaWAN、お客様プラットフォームとの連携、プライベートデプロイ、OEM/ODM開発に対応します。',
+    features: [
+      { icon: 'features/icon-sensors.png', title: 'IoTセンサー', desc: '温度・湿度・圧力・空気質などのフィールド状況を測定します。' },
+      { icon: 'features/icon-controllers.png', title: 'IoTコントローラー', desc: '接続機器のローカルデータ処理と制御を行います。' },
+      { icon: 'features/icon-cloud.png', title: 'IoTクラウド', desc: 'デバイスの接続・監視・設定・保守をリモートで行います。' },
+      { icon: 'features/icon-gateways.png', title: 'IoTゲートウェイ', desc: 'フィールドデバイスをクラウドやプライベートプラットフォームに接続します。' },
+      { icon: 'features/icon-customized.png', title: 'カスタムIoT開発', desc: 'カスタムのハードウェア、ファームウェア、筐体、プラットフォーム連携に対応します。' },
+      { icon: 'features/icon-app.png', title: 'IoTアプリ', desc: 'デバイスの設定、データ監視、アラート受信、対応アップデートのリモート管理を行います。' },
+    ] as Feature[],
+  },
+
+  showcase: [
+    {
+      title: 'クラウドプラットフォーム',
+      desc: 'デバイス接続、リモート管理、データ可視化、アラート、アプリケーション連携のためのクラウドネイティブIoTプラットフォームです。',
+      cta: 'IoTクラウドを見る',
+      href: '/product/',
+      image: 'sections/cloud-platform.png',
+      imageAlt: 'HitelecomのクラウドネイティブIoTプラットフォームのイメージ',
+      reverse: false,
+    },
+    {
+      title: 'IoTゲートウェイ',
+      desc: 'プロトコル変換、データ集約、オプションのエッジ処理で、センサーをクラウドに接続します。',
+      cta: 'ゲートウェイを見る',
+      href: '/product/lists/cid/258#cate',
+      image: 'sections/iot-gateways.jpg',
+      imageAlt: 'HitelecomのIoTゲートウェイがセンサーをクラウドに接続',
+      reverse: true,
+    },
+    {
+      title: 'IoTセンサー',
+      desc: '温度・湿度・圧力・振動・動作・空気質などの物理的状況を測定します。',
+      cta: 'センサーを見る',
+      href: '/product/lists/cid/261#cate',
+      image: 'sections/iot-sensors.jpg',
+      imageAlt: 'データ収集用のHitelecom IoTセンサー',
+      reverse: false,
+    },
+  ] as ShowcaseItem[],
+
+  solutions: {
+    title: 'IoTソリューションをご覧ください',
+    subtitle:
+      '接続されたセンサーとクラウドデータで、フィールド状況をリアルタイムに監視し、対応を自動化し、より迅速な運用上の意思決定を実現します。',
+    items: [
+      { icon: 'solutions/icon-energy.png', label: '産業モニタリング', href: '/solution/show/id/58' },
+      { icon: 'solutions/icon-agriculture.png', label: 'スマート農業', href: '/solution/show/id/65' },
+      { icon: 'solutions/icon-campus.png', label: 'スマート水管理', href: '/solution/show/id/67' },
+      { icon: 'solutions/icon-healthcare.png', label: 'スマートエネルギー', href: '/solution/show/id/59' },
+      { icon: 'solutions/icon-industrial.png', label: 'スマートシティ', href: '/solution/show/id/57' },
+      { icon: 'solutions/icon-building.png', label: 'スマート工業団地', href: '/solution/show/id/60' },
+    ] as SolutionItem[],
+  },
+
+  news: {
+    title: 'ニュースセンター',
+    subtitle:
+      'Hitelecomの会社情報、製品発表、業界インサイト、展示会情報をお届けします。',
+    cta: 'すべてのニュースを見る',
+    moreHref: '/news/',
+    items: [
+      {
+        image: 'news/news-iote-2024.png',
+        imageAlt: 'IOTE 2024 国際IoT展示会・深圳に出展したHitelecom',
+        source: 'Hitelecom',
+        date: '2024.08.28',
+        title: 'Hitelecom、IOTE深圳2024に出展',
+        excerpt:
+          '第22回国際IoT展示会（IOTE 2024）深圳が2024年8月28日〜30日に深圳国際会展中心（宝安）で開催されました。HitelecomはIoT製品・サービスの専門プロバイダーとして、10号館のブース10B33でIoT業界向けソリューションを展示しました。',
+        href: '/news/show/id/1377',
+      },
+      {
+        image: 'news/news-pipeline.png',
+        imageAlt: '地下ユーティリティネットワークへの投資',
+        source: 'Hitelecom',
+        date: '2024.03.09',
+        title: '中国、都市地下ユーティリティの大規模更新を計画',
+        excerpt:
+          '2024年3月9日、第14期全国人民代表大会第2回会議の民生テーマ記者会見で、10万キロメートル超の地下パイプラインの更新と100都市での洪水多発区域の整備開始が発表されました。',
+        href: '/news/show/id/1379',
+      },
+      {
+        image: 'news/news-iso9001.jpg',
+        imageAlt: 'HitelecomのISO 9001品質マネジメント認証',
+        source: 'Hitelecom',
+        date: '2023.08.28',
+        title: 'Hitelecom、ISO 9001認証を取得',
+        excerpt:
+          'HitelecomはISO 9001品質マネジメントシステム認証を取得しました。IoTセンサー製品の設計と製造を対象範囲としています。',
+        href: '/news/show/id/1357',
+      },
+    ] as NewsItem[],
+  },
+
+  partners: {
+    title: 'パートナー',
+    subtitle:
+      'テクノロジーパートナーおよびチャネルパートナーと協力し、世界中で信頼性の高いIoT展開を実現しています。',
+  },
+
+  cta: {
+    title: 'Hitelecomと共にIoTソリューションを構築',
+    subtitle:
+      'センサーとコネクティビティからクラウド連携、OEM/ODM開発まで、フィールドデータを展開可能なソリューションに変えるお手伝いをします。',
+    primary: { label: 'クラウドデモを見る', href: 'http://cloud.hitelecom.com/' },
+    secondary: { label: 'プロジェクトについてご相談ください', href: '/about/contact' },
+  },
+
+  footer: {
+    columns: [
+      {
+        title: '製品',
+        links: [
+          { label: 'IoTクラウド', href: '/product/' },
+          { label: 'IoTアプリ', href: '/product/app' },
+          { label: 'IoTセンサー', href: '/product/lists/cid/261' },
+          { label: 'IoTゲートウェイ', href: '/product/lists/cid/258' },
+          { label: '気象ステーション', href: '/product/lists/cid/257' },
+          { label: 'カスタム開発', href: '/product/lists/cid/256' },
+        ],
+      },
+      {
+        title: 'ソリューション',
+        links: [
+          { label: '産業用IoT', href: '/solution/show/id/58' },
+          { label: 'スマート農業', href: '/solution/show/id/65' },
+          { label: 'スマートキャンパス', href: '/solution/show/id/64' },
+          { label: 'スマート工業団地', href: '/solution/show/id/60' },
+          { label: 'スマートエネルギー', href: '/solution/show/id/59' },
+          { label: 'スマートシティ', href: '/solution/show/id/57' },
+          { label: '観光・文化遺産', href: '/solution/show/id/66' },
+          { label: 'スマート水管理', href: '/solution/show/id/67' },
+        ],
+      },
+      {
+        title: 'サポート',
+        links: [
+          { label: '技術サポート', href: '/service/#page1' },
+          { label: 'ソフトウェア', href: '/service/#page2' },
+          { label: 'ダウンロード', href: '/service/#page3' },
+          { label: 'アフターサービス', href: '/service/#page4' },
+        ],
+      },
+      {
+        title: 'ニュース',
+        links: [
+          { label: '会社ニュース', href: '/news/' },
+          { label: '展示会', href: '/news/index/cid/81' },
+          { label: '業界ニュース', href: '/news/index/cid/80' },
+          { label: 'よくあるご質問', href: '/news/faqs' },
+        ],
+      },
+      {
+        title: '会社概要',
+        links: [
+          { label: '企業概要', href: '/about/' },
+          { label: '品質と信頼性', href: '/about/quality' },
+          { label: 'パートナー', href: '/about/partner' },
+          { label: '採用情報', href: '/about/joinus' },
+          { label: 'お問い合わせ', href: '/about/contact' },
+        ],
+      },
+    ],
+    contactTitle: 'お問い合わせ',
+    followTitle: 'フォローする',
+    copyright: `© 2018–2026 ${site.companyEn} 無断転載を禁じます`,
+  },
+};
+
 /** 合作伙伴 LOGO 墙（双语共用，替换 src/assets/images/partners/ 同名文件即可） */
 export const partnerLogos = [
   { img: 'partners/logo-01.jpg', alt: 'Huawei' },
@@ -941,5 +1163,5 @@ export const partnerLogos = [
   { img: 'partners/logo-21.jpg', alt: '3M' },
 ];
 
-export const homeContent = { en, zh, es, de } as const;
+export const homeContent = { en, zh, es, de, ja } as const;
 export type HomeContent = (typeof homeContent)['en'];

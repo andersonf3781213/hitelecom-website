@@ -241,6 +241,54 @@ const staticConfig: Record<Locale, Pick<NewsContent,
   crumbNews: 'News',
   returnLabel: 'Zurück zu den News',
   catNames: { company: 'Unternehmensnews', exh: 'Messen', ind: 'Branchennews', case: 'Erfolgsgeschichten', blog: 'Tech-Blog' },
+ }, ja: {
+  bannerImg: 'news/banner.jpg',
+  bannerSub: '',
+  bannerTitle: 'NEWS CENTER',
+  tabs: [
+   { key: 'company', label: '会社ニュース', href: '/news/' },
+   { key: 'exh', label: '展示会', href: '/news/index/cid/81' },
+   { key: 'ind', label: '業界ニュース', href: '/news/index/cid/80' },
+   { key: 'faqs', label: 'よくあるご質問', href: '/news/faqs' },
+  ],
+  readmore: '続きを読む',
+  faqs: [
+   {
+    date: 'Hitelecom · 2024年2月28日',
+    q: '多くのセンサーは商用電源や大型バッテリーに依存していますが、高いエネルギー消費は稼働寿命を制限するのでしょうか？',
+    a: 'Hitelecomのセンサーターミナルは、低消費電力プロセッサー、最適化された電源管理、構成可能な送信間隔を採用しています。一部のバッテリー駆動モデルは、1時間の送信間隔で10年以上の稼働を想定した設計です。実際のバッテリー寿命は、モデル、送信間隔、ネットワーク状況、動作温度によって異なります。',
+   },
+   {
+    date: 'Hitelecom · 2024年4月16日',
+    q: '電磁干渉（EMI）はセンサーの精度や信号完全性を損なう可能性がありますか？',
+    a: '一部のモデルは、対象環境に適用されるEMC要件に沿って設計・試験されています。ご利用のモデルの該当試験レポートをお問い合わせください。',
+   },
+   {
+    date: 'Hitelecom · 2024年6月26日',
+    q: '不適切なセンサー配置は、データ精度やセンサーの有効性を損なう可能性がありますか？',
+    a: '展開前に、当社のエンジニアリングチームが現場状況を確認し、お客様と協力して最適なセンサー位置を決定します。',
+   },
+   {
+    date: 'Hitelecom · 2024年8月28日',
+    q: '温度変化、電磁干渉、その他の環境要因により、測定精度がずれる可能性はありますか？',
+    a: 'Hitelecomは高品質のセンシング素子を選定し、お客様の要件に合わせて構成をカスタマイズし、展開環境に適合したキャリブレーションをサポートします。',
+   },
+   {
+    date: 'Hitelecom · 2025年10月16日',
+    q: '遠隔地や複雑な環境で、データ伝送のための安定したネットワーク接続を維持するにはどうすればよいですか？',
+    a: 'Hitelecomは4G Cat.1、NB-IoT、LoRaなどの通信方式に対応し、複雑な環境でのネットワーク構築に対応します。データに配慮が必要な場面では、プライベートデプロイにより、フィールドデータが安定的にプラットフォームに届くようにします。',
+   },
+   {
+    date: 'Hitelecom · 2025年12月12日',
+    q: 'IoTデバイスとアプリケーションは、脆弱性修正や機能追加のために定期的な更新が必要ですが、リモートではどのように管理しますか？',
+    a: '対応デバイスはHitelecom Cloud経由でOTAファームウェア更新を受信できます。更新スケジュール、バージョン記録、ロールバック機能は、モデルと展開構成によって異なります。',
+   },
+  ],
+  relatedHeading: '関連記事',
+  crumbHome: 'ホーム',
+  crumbNews: 'ニュース',
+  returnLabel: 'ニュース一覧に戻る',
+  catNames: { company: '会社ニュース', exh: '展示会', ind: '業界ニュース', case: '導入事例', blog: '技術ブログ' },
  },
 };
 
@@ -336,6 +384,7 @@ export function fmtNewsDate(date: string, locale: string = 'en'): string {
   if (!m) return date;
   if (locale === 'es') return `${+m[3]} de ${MONTHS_ES[+m[2] - 1]} de ${m[1]}`;
   if (locale === 'de') return `${+m[3]}. ${MONTHS_DE[+m[2] - 1]} ${m[1]}`;
+  if (locale === 'ja') return `${m[1]}年${+m[2]}月${+m[3]}日`;
   return `${MONTHS_EN[+m[2] - 1]} ${+m[3]}, ${m[1]}`;
 }
 

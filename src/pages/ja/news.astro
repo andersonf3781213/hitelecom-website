@@ -1,0 +1,32 @@
+---
+/**
+ * 新闻中心（英文，公司新闻）：/news
+ * 与原站 /news/ 1:1：横幅 + 分类选项卡 + 头条轮播（2 条）+ 9 张新闻卡
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NewsShell from '../../components/news/NewsShell.astro';
+import NewsList from '../../components/news/NewsList.astro';
+import { optimizedSrc } from '../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'ホーム', item: 'https://www.hitelecom.com/ja' },
+    { '@type': 'ListItem', position: 2, name: 'ニュース', item: 'https://www.hitelecom.com/ja/news' },
+  ],
+};
+const pageBanner = await optimizedSrc('news/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="ja"
+  title="Hitelecomニュース | 産業用IoT製品とイベント"
+  description="Hitelecomの製品発表、認証情報、展示会ニュース、産業用IoT市場のインサイトをご覧ください。"
+>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <NewsList locale="ja" cat="company" />
+  </NewsShell>
+</BaseLayout>

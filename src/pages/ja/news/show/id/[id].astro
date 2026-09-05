@@ -1,0 +1,94 @@
+---
+/**
+ * 新闻详情页（日语）：/news/show/id/{id}.html
+ * 与原站 1:1：横幅 → 面包屑+Return → 标题/日期/正文 → Prev/Next → 相关推荐轮播
+ */
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import NewsShell from '../../../../../components/news/NewsShell.astro';
+import NewsDetailBody from '../../../../../components/news/NewsDetailBody.astro';
+import { getNewsContent, getNewsIds } from '../../../../../data/news';
+import { optimizedSrc } from '../../../../../utils/images';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = async () =>
+  (await getNewsIds('ja')).map((id) => ({ params: { id } }));
+
+const { id } = Astro.params;
+const d = await getNewsContent('ja');
+const det = d.details[id];
+const card = d.index[id];
+// 原站英文 1394 已按中文版补齐；SEO 标题兜底
+const pageTitle = det.title ? det.title : 'Hitelecomニュース | 産業用IoT製品とイベント';
+// 部分文章在原站列表无摘要：退回正文纯文本截取，避免多页共用同一 description
+const bodyText = det.body
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/&nbsp;/g, ' ')
+  .replace(/&#39;|&rsquo;/g, "'")
+  .replace(/&quot;|&ldquo;|&rdquo;/g, '"')
+  .replace(/&amp;/g, '&')
+  .replace(/\s+/g, ' ')
+  .trim();
+// 人工维护的 SEO description（完整句、120–155 字符；校对报告 2026-09-04 第 10 节）。
+// 优先级高于列表摘要；新增新闻时在此补一条，别让程序从正文截半句。
+const seoDesc: Record<string, string> = {
+  '1345': 'Hitelecomは2024年のお客様とパートナーのご支援に感謝し、2025年も信頼性の高い産業用IoT製品とサービスへのコミットメントをお伝えします。',
+  '1348': 'Hitelecomは、0.001°の分解能、低消費電力設計、4G・NB-IoT・LoRaオプション、クラウドリモート監視を備えた傾斜センサーを発表しました。',
+  '1355': 'Hitelecomはお客様とパートナーのご支援に感謝し、辰年の旧正月の繁栄を心よりお祈り申し上げます。',
+  '1356': 'Hitelecomは、労働安全衛生マネジメントシステムの独立監査を経て、ISO 45001認証を取得したことを発表しました。',
+  '1357': 'Hitelecomは、IoTセンサーの設計・製造に関する品質マネジメントシステムの独立監査を経て、ISO 9001認証を取得したことを発表しました。',
+  '1358': 'Hitelecomは、精密農業、灌漑、環境モニタリング、園芸、研究向けの低消費電力土壌センサーを発表しました。',
+  '1359': 'Hitelecomは、農業、食品・医薬品の保管、産業、エネルギー、環境モニタリング向けの低消費電力温度センサーを発表しました。',
+  '1377': 'HitelecomはIOTE深圳2024で20種類以上のIoTセンシングターミナルを出展し、H300-MW012がイノベーション製品賞を受賞しました。',
+  '1378': '中国の2024年のレジリエントシティインフラ指針の要約。市政監視、地下パイプライン、都市ライフラインシステムをカバーします。',
+  '1379': '中国当局は都市地下パイプラインの更新と、排水監視、洪水対策、ユーティリティインフラの改善計画を示しました。',
+  '1380': '中国の2024年の公共機関向け節水措置の要約。計量、監視、割当量、節水改修を含みます。',
+  '1381': '中国の住宅・都市農村建設部は、ガス、橋梁、水道、排水、共同溝を対象とする都市ライフライン安全プロジェクトを推進しました。',
+  '1383': '中国はガス、水道、排水、暖房、共同溝インフラの大規模な更新を計画しており、監視・センシングシステムがこれを支援します。',
+  '1384': '2018年から2023年までの中国の都市インフラ・ライフライン政策の概要。リスクデータベース、センシング、早期警戒プラットフォームをカバーします。',
+  '1385': '中国の住宅・都市農村建設部は、資金、基準、監督を含む老朽化都市ガス管更新の第2弾の政策を公表しました。',
+  '1386': 'HitelecomはIOTE上海2024で、産業監視アプリケーション向けのクラウドプラットフォーム、IoTゲートウェイ、低消費電力センサーを発表しました。',
+  '1387': 'Hitelecomは2024年の上海の展示会で、監視・プロセス制御の専門家向けにクラウドプラットフォームと環境センサーを発表しました。',
+  '1388': 'Hitelecomは2024年武漢パイプラインエキスポで、スマートマンホールと都市インフラ監視向けのクラウド接続レーダー距離センシングを実演しました。',
+  '1389': 'Hitelecomは上海のelectronica China 2023で、構造物監視向けのクラウドプラットフォームと低消費電力傾斜センサーを実演しました。',
+  '1390': 'Hitelecomはお客様とパートナーのご支援に感謝し、楽しい中秋節を心よりお祈り申し上げます。',
+  '1391': 'Hitelecomはお客様とパートナーのご支援に感謝し、穏やかで楽しい端午節を心よりお祈り申し上げます。',
+  '1392': 'Hitelecomはチーム、お客様、パートナー全体の女性の貢献を讃え、インクルーシブな職場へのコミットメントを再確認します。',
+  '1393': 'Hitelecomは、CO₂、PM2.5、TVOC、温度、湿度、気圧向けの6-in-1空気質センサー（オプションチャンネル対応）を発表しました。',
+  '1394': 'HitelecomはMWC上海とIOTE上海2025で20種類以上のセンサーターミナルを発表し、IoT Starイノベーション賞を受賞しました。',
+};
+const pageDesc = seoDesc[id] || card?.excerpt || bodyText.slice(0, 160) || undefined;
+const isoDate = (det.date.match(/(\d{4})[-.](\d{2})[-.](\d{2})/) || []).slice(1).join('-') || undefined;
+const articleImg = card?.img ? new URL(await optimizedSrc(card.img, { width: 900 }), Astro.site).href : undefined;
+
+const catUrl = { company: 'news', exh: 'news/index/cid/81', ind: 'news/index/cid/80' }[det.cat];
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'ホーム', item: 'https://www.hitelecom.com/ja' },
+    { '@type': 'ListItem', position: 2, name: 'ニュース', item: 'https://www.hitelecom.com/ja/news' },
+    { '@type': 'ListItem', position: 3, name: d.catNames[det.cat], item: `https://www.hitelecom.com/ja/${catUrl}` },
+    ...(det.title ? [{ '@type': 'ListItem', position: 4, name: det.title }] : []),
+  ],
+};
+const articleLd = det.title ? {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: det.title,
+  ...(articleImg ? { image: articleImg } : {}),
+  ...(isoDate ? { datePublished: isoDate } : {}),
+  ...(det.updated ? { dateModified: det.updated } : isoDate ? { dateModified: isoDate } : {}),
+  inLanguage: 'ja',
+  author: { '@id': 'https://www.hitelecom.com/#organization' },
+  publisher: { '@id': 'https://www.hitelecom.com/#organization' },
+  mainEntityOfPage: `https://www.hitelecom.com/ja/news/show/id/${id}`,
+} : null;
+---
+
+<BaseLayout locale="ja" preloadImage={articleImg} title={pageTitle} description={pageDesc}>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    {articleLd && <script slot="head" type="application/ld+json" set:html={JSON.stringify(articleLd)} />}
+    <NewsDetailBody locale="ja" id={id} />
+  </NewsShell>
+</BaseLayout>
