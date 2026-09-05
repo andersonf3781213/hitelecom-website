@@ -44,7 +44,7 @@ const relatedCards = det.related.map((rid) => d.index[rid]).filter(Boolean);
     {det.title
       ? <h1 class="news_info_1_1 reveal">{det.title}</h1>
       : <div class="news_info_1_1 reveal"></div>}
-    <div class="daxie news_info_1_2 reveal">{fmtNewsDate(det.date)}</div>
+    <div class="daxie news_info_1_2 reveal">{fmtNewsDate(det.date, locale)}</div>
     <div class="clearfix news_info_1_3 reveal" set:html={bodyHtml} />
 
     {/* 上一篇 / 下一篇 */}
@@ -90,7 +90,7 @@ const relatedCards = det.related.map((rid) => d.index[rid]).filter(Boolean);
                       <Img src={it.img} alt={it.title || 'Hitelecom news'} widths={[480, 960]} sizes="(max-width: 480px) 100vw, (max-width: 810px) 50vw, 33vw" quality={85} />
                     </div>
                     <div class="news_2_1_2">
-                      <div class="news_2_1_2_1 daxie">{fmtNewsDate(it.date)}</div>
+                      <div class="news_2_1_2_1 daxie">{fmtNewsDate(it.date, locale)}</div>
                       <div class="news_2_1_2_2">{it.title}</div>
                       <div class="news_2_1_2_3">{it.excerpt}</div>
                       <div class="news_1_1_mid_right_mid_4"><span>{d.readmore}</span></div>

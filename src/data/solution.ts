@@ -1651,7 +1651,7 @@ export const solutionIndex: Record<Locale, { bannerImg: string; bannerSub: strin
 { ...solutionIndexBase, es: {
  "bannerImg": "solution/index-banner.jpg",
  "bannerSub": "",
- "bannerTitle": "SOLUTION",
+ "bannerTitle": "SOLUCIÓN",
  "cards": [
   {
    "id": "58",
@@ -1681,7 +1681,7 @@ export const solutionIndex: Record<Locale, { bannerImg: string; bannerSub: strin
    "id": "59",
    "img": "solution/card-59.png",
    "title": "Energía inteligente",
-   "desc": "Monitoree la temperatura, la presión, la vibración y el nivel en los activos de energía para apoyar el mantenimiento basado en condición y reducir las visitas al campo."
+   "desc": "Monitoree la temperatura, la presión, la vibración y el nivel en los activos de energía para apoyar el mantenimiento basado en el estado y reducir las visitas al campo."
   },
   {
    "id": "57",
@@ -1692,7 +1692,7 @@ export const solutionIndex: Record<Locale, { bannerImg: string; bannerSub: strin
   {
    "id": "66",
    "img": "solution/card-66b.jpg",
-   "title": "Turismo y sitios patrimoniales",
+   "title": "Turismo y patrimonio cultural",
    "desc": "Monitoree la inclinación estructural, las condiciones ambientales, el humo, el flujo de visitantes y ciertos activos para apoyar la conservación y las operaciones del sitio."
   },
   {
@@ -1711,13 +1711,13 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "intro": [
    {
     "img": "solution/58-intro-0.jpg",
-    "h": "Desafíos de la industria",
+    "h": "Retos del sector",
     "p": "Los fabricantes enfrentan presión de costos, tiempos de inactividad no planificados y visibilidad limitada del estado de los equipos. El IoT industrial aborda esto conectando los sensores de campo a paneles en la nube para un monitoreo continuo, una respuesta más rápida y decisiones basadas en datos."
    },
    {
     "img": "solution/58-intro-1.jpg",
     "h": "Resumen de la solución",
-    "p": "La solución de monitoreo industrial de Hitelecom conecta sensores de temperatura, humedad, presión, vibración y calidad del aire en los equipos de producción con Hitelecom Cloud. Los equipos ven el estado de los equipos en tiempo real desde un centro de monitoreo o una app móvil, reciben alertas sobre anomalías y planifican el mantenimiento por condición en lugar de por calendario."
+    "p": "La solución de monitoreo industrial de Hitelecom conecta sensores de temperatura, humedad, presión, vibración y calidad del aire en los equipos de producción con Hitelecom Cloud. Los sensores permiten supervisar el estado de la maquinaria en tiempo real, detectar anomalías y planificar el mantenimiento basado en el estado."
    }
   ],
   "archHeading": "Arquitectura de la solución",
@@ -1728,11 +1728,11 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "features": [
    {
     "h": "Diseño de bajo consumo",
-    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de reporte configurables para prolongar la duración de la batería en campo."
+    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de transmisión configurables para prolongar la duración de la batería en campo."
    },
    {
-    "h": "Opciones listas para exteriores",
-    "p": "Algunos modelos están disponibles con carcasas con clasificación IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
+    "h": "Configuraciones para exteriores",
+    "p": "Algunos modelos están disponibles con carcasas con grado de protección IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
    },
    {
     "h": "Conectividad flexible",
@@ -1748,7 +1748,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/58-sys-0.png",
     "h": "Configuración remota",
-    "p": "Configure los dispositivos compatibles por lotes, incluidos los intervalos de reporte, los umbrales y los parámetros específicos de la implementación."
+    "p": "Configure los dispositivos compatibles por lotes, incluidos los intervalos de transmisión, los umbrales y los parámetros específicos de la implementación."
    },
    {
     "img": "solution/58-sys-1.png",
@@ -1763,7 +1763,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/58-sys-3.png",
     "h": "Actualizaciones remotas de firmware",
-    "p": "Admite actualizaciones remotas de firmware OTA por lotes para los dispositivos compatibles, manteniendo las implementaciones al día y reduciendo las visitas al sitio."
+    "p": "El sistema permite actualizar de forma remota el firmware OTA por lotes en los dispositivos compatibles, manteniendo los despliegues al día y reduciendo las visitas al sitio."
    }
   ],
   "relHeading": "Productos relacionados",
@@ -1777,7 +1777,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "scenarios": [
    {
     "img": "solution/58-scen-0.jpg",
-    "h": "Industria 4.0",
+    "h": "Industria 4,0",
     "p": "Gestión de producción basada en datos y soporte de automatización"
    },
    {
@@ -1788,7 +1788,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/58-scen-2.jpg",
     "h": "Industria de petróleo y gas",
-    "p": "Monitoreo remoto y gestión inteligente de la producción petrolera"
+    "p": "Monitoreo remoto de la producción petrolera: presión en boca de pozo, estado de bombas y fugas en líneas de recolección"
    },
    {
     "img": "solution/58-scen-3.jpg",
@@ -1798,7 +1798,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/58-scen-4.jpg",
     "h": "Maquinaria pesada",
-    "p": "El monitoreo de condiciones mejora la eficiencia del mantenimiento y el aprovechamiento de los recursos"
+    "p": "El monitoreo del estado mejora la eficiencia del mantenimiento y el aprovechamiento de los recursos"
    },
    {
     "img": "solution/58-scen-5.jpg",
@@ -1813,13 +1813,13 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "intro": [
    {
     "img": "solution/65-intro-0.jpg",
-    "h": "Desafíos de la industria",
-    "p": "La agricultura inteligente aplica la detección conectada para hacer las operaciones agrícolas más productivas y eficientes en recursos. Ante la limitación de tierras, la variabilidad climática y la presión de plagas, los agricultores pueden combinar sensores IoT, datos meteorológicos y análisis en la nube para un riego y una gestión de cultivos mejor fundamentados. Hitelecom proporciona la capa de detección de campo y conectividad para estos sistemas."
+    "h": "Retos del sector",
+    "p": "La agricultura inteligente aplica los sensores conectados para hacer las operaciones agrícolas más productivas y eficientes en recursos. Ante la limitación de tierras, la variabilidad climática y la presión de plagas, los agricultores pueden combinar sensores IoT, datos meteorológicos y análisis en la nube para un riego y una gestión de cultivos mejor fundamentados. Hitelecom proporciona la capa de detección de campo y conectividad para estos sistemas."
    },
    {
     "img": "solution/65-intro-1.jpg",
     "h": "Resumen de la solución",
-    "p": "La solución de agricultura inteligente de Hitelecom combina sensores de suelo, estaciones meteorológicas y sensores de temperatura y humedad, que cargan los datos de campo a la nube para un monitoreo y análisis centralizados. Los agricultores obtienen visibilidad continua de las condiciones del campo para respaldar las decisiones de riego, fertilización y gestión de cultivos."
+    "p": "La solución de agricultura inteligente de Hitelecom combina sensores de suelo, estaciones meteorológicas y sensores de temperatura y humedad, que transmiten los datos de campo a la nube para un monitoreo y análisis centralizados. Los agricultores obtienen visibilidad continua de las condiciones del campo para respaldar las decisiones de riego, fertilización y gestión de cultivos."
    }
   ],
   "archHeading": "Arquitectura de la solución",
@@ -1837,12 +1837,12 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
     "p": "Elija 4G LTE o NB-IoT para el enlace celular directo, o LoRa/LoRaWAN para redes privadas basadas en gateways, según el modelo y el sitio."
    },
    {
-    "h": "Opciones listas para exteriores",
-    "p": "Algunos modelos están disponibles con carcasas con clasificación IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
+    "h": "Configuraciones para exteriores",
+    "p": "Algunos modelos están disponibles con carcasas con grado de protección IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
    },
    {
     "h": "Diseño de bajo consumo",
-    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de reporte configurables para prolongar la duración de la batería en campo."
+    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de transmisión configurables para prolongar la duración de la batería en campo."
    }
   ],
   "sysHeading": "Capacidades del sistema",
@@ -1865,7 +1865,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/65-sys-3.png",
     "h": "Actualizaciones remotas de firmware",
-    "p": "Admite actualizaciones remotas de firmware OTA por lotes para los dispositivos compatibles, manteniendo las implementaciones al día y reduciendo las visitas al sitio."
+    "p": "El sistema permite actualizar de forma remota el firmware OTA por lotes en los dispositivos compatibles, manteniendo los despliegues al día y reduciendo las visitas al sitio."
    }
   ],
   "relHeading": "Productos relacionados",
@@ -1880,11 +1880,11 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/65-scen-0.jpg",
     "h": "Cultivo en invernadero",
-    "p": "Implementación de la gestión inteligente de cultivos en invernadero"
+    "p": "Gestión inteligente de cultivos en invernadero"
    },
    {
     "img": "solution/65-scen-1.jpg",
-    "h": "Rancho inteligente",
+    "h": "Ganadería conectada",
     "p": "Monitoreo y gestión en tiempo real de la salud y el comportamiento del ganado"
    },
    {
@@ -1910,8 +1910,8 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "intro": [
    {
     "img": "solution/64-intro-0.png",
-    "h": "Desafíos de la industria",
-    "p": "Los equipos de campus gestionan la calidad del aire interior, la temperatura y la humedad, el consumo de energía, los servicios y los sistemas de seguridad en numerosos edificios. Las inspecciones manuales y los sistemas aislados limitan la visibilidad oportuna."
+    "h": "Retos del sector",
+    "p": "Los equipos responsables del campus gestionan la calidad del aire interior, la temperatura y la humedad, el consumo de energía, los servicios y los sistemas de seguridad en numerosos edificios. Las inspecciones manuales y los sistemas aislados limitan la visibilidad oportuna."
    },
    {
     "img": "solution/64-intro-1.jpg",
@@ -1934,12 +1934,12 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
     "p": "Algunos dispositivos admiten activación por NFC y configuración local para una implementación y un mantenimiento más rápidos."
    },
    {
-    "h": "Opciones listas para exteriores",
-    "p": "Algunos modelos están disponibles con carcasas con clasificación IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
+    "h": "Configuraciones para exteriores",
+    "p": "Algunos modelos están disponibles con carcasas con grado de protección IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
    },
    {
     "h": "Diseño de bajo consumo",
-    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de reporte configurables para prolongar la duración de la batería en campo."
+    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de transmisión configurables para prolongar la duración de la batería en campo."
    }
   ],
   "sysHeading": "Capacidades del sistema",
@@ -1947,7 +1947,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/64-sys-0.png",
     "h": "Reglas de control automatizadas",
-    "p": "Las reglas ajustan los equipos conectados —por ejemplo, la refrigeración— cuando las lecturas de los sensores superan los umbrales configurados, sin intervención manual."
+    "p": "Las reglas ajustan los equipos conectados —por ejemplo, la refrigeración— cuando las lecturas de los sensores superan los umbrales configurados, cuando el proyecto se integra con sistemas de control compatibles."
    },
    {
     "img": "solution/64-sys-2.png",
@@ -1957,7 +1957,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/64-sys-3.png",
     "h": "Notificación de alarmas",
-    "p": "Configure y gestione las alertas de forma centralizada, incluidos disparadores multicondición y flujos de escalado para las implementaciones compatibles."
+    "p": "Configure y gestione las alertas de forma centralizada, incluidos disparadores multicondición y flujos de escalado para las despliegues compatibles."
    }
   ],
   "relHeading": "Productos relacionados",
@@ -1993,13 +1993,13 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "intro": [
    {
     "img": "solution/60-intro-0.jpg",
-    "h": "Desafíos de la industria",
+    "h": "Retos del sector",
     "p": "Los operadores de parques industriales gestionan condiciones ambientales, servicios, sistemas de seguridad, equipos y activos en múltiples edificios. Los sistemas desconectados dificultan identificar condiciones anómalas y coordinar el mantenimiento."
    },
    {
     "img": "solution/60-intro-1.jpg",
     "h": "Resumen de la solución",
-    "p": "Hitelecom conecta sensores y gateways específicos de cada modelo a una plataforma central de monitoreo, ofreciendo a los operadores una única vista de los datos ambientales, de energía, de seguridad y de activos. Las alertas configurables y las API apoyan los flujos de trabajo de gestión de parques existentes."
+    "p": "Hitelecom conecta sensores y gateways específicos de cada modelo a una plataforma central de monitoreo, ofreciendo a los operadores una vista unificada de los datos ambientales, energéticos, de seguridad y de equipos. Las alertas configurables y las APIs apoyan los flujos de trabajo de gestión de parques existentes."
    }
   ],
   "archHeading": "Arquitectura de la solución",
@@ -2010,15 +2010,15 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "features": [
    {
     "h": "Diseño de bajo consumo",
-    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de reporte configurables para prolongar la duración de la batería en campo."
+    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de transmisión configurables para prolongar la duración de la batería en campo."
    },
    {
     "h": "Configuración por NFC",
     "p": "Algunos dispositivos admiten activación por NFC y configuración local para una implementación y un mantenimiento más rápidos."
    },
    {
-    "h": "Opciones listas para exteriores",
-    "p": "Algunos modelos están disponibles con carcasas con clasificación IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
+    "h": "Configuraciones para exteriores",
+    "p": "Algunos modelos están disponibles con carcasas con grado de protección IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
    },
    {
     "h": "Conectividad flexible",
@@ -2030,7 +2030,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/60-sys-0.png",
     "h": "Configuración remota",
-    "p": "Configure los dispositivos compatibles por lotes, incluidos los intervalos de reporte, los umbrales y los parámetros específicos de la implementación."
+    "p": "Configure los dispositivos compatibles por lotes, incluidos los intervalos de transmisión, los umbrales y los parámetros específicos de la implementación."
    },
    {
     "img": "solution/60-sys-1.png",
@@ -2045,7 +2045,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/60-sys-3.png",
     "h": "Actualizaciones remotas de firmware",
-    "p": "Admite actualizaciones remotas de firmware OTA por lotes para los dispositivos compatibles, manteniendo las implementaciones al día y reduciendo las visitas al sitio."
+    "p": "El sistema permite actualizar de forma remota el firmware OTA por lotes en los dispositivos compatibles, manteniendo los despliegues al día y reduciendo las visitas al sitio."
    }
   ],
   "relHeading": "Productos relacionados",
@@ -2060,12 +2060,12 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/60-scen-0.jpg",
     "h": "Parque industrial",
-    "p": "Mejora de la eficiencia de producción y gestión de precisión de instalaciones y equipos"
+    "p": "Mejora de la eficiencia de producción y gestión precisa de instalaciones y equipos"
    },
    {
     "img": "solution/60-scen-1.jpg",
     "h": "Edificios comerciales",
-    "p": "Implementación de la automatización de edificios y la optimización de la eficiencia energética"
+    "p": "Automatización de edificios y optimización de la eficiencia energética"
    },
    {
     "img": "solution/60-scen-2.jpg",
@@ -2080,13 +2080,13 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "intro": [
    {
     "img": "solution/59-intro-0.png",
-    "h": "Desafíos de la industria",
-    "p": "Los operadores de energía necesitan visibilidad oportuna de la temperatura, la presión, la vibración y el nivel en activos distribuidos geográficamente. Las inspecciones periódicas pueden dejar fallos en desarrollo sin detectar y requieren costosas visitas al sitio. Los sensores conectados y las alertas remotas ayudan a los equipos a priorizar la inspección y el mantenimiento."
+    "h": "Retos del sector",
+    "p": "Los operadores de energía necesitan visibilidad oportuna de la temperatura, la presión, la vibración y el nivel en activos distribuidos geográficamente. Las inspecciones periódicas pueden dejar fallos incipientes sin detectar y requieren costosas visitas al sitio. Los sensores conectados y las alertas remotas ayudan a los equipos a priorizar la inspección y el mantenimiento."
    },
    {
     "img": "solution/59-intro-1.jpg",
     "h": "Resumen de la solución",
-    "p": "Hitelecom combina sensores específicos de cada modelo, gateways, conectividad celular o LoRaWAN e integración en la nube para el monitoreo remoto de condiciones. Los datos pueden enviarse a Hitelecom Cloud o a la plataforma del cliente mediante MQTT o API, según la configuración seleccionada."
+    "p": "Hitelecom combina sensores seleccionados según la aplicación, gateways, conectividad celular o LoRaWAN e integración en la nube para el monitoreo remoto de condiciones. Los datos pueden enviarse a Hitelecom Cloud o a la plataforma del cliente mediante MQTT o API, según la configuración seleccionada."
    }
   ],
   "archHeading": "Arquitectura de la solución",
@@ -2104,12 +2104,12 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
     "p": "Elija 4G LTE o NB-IoT para el enlace celular directo, o LoRa/LoRaWAN para redes privadas basadas en gateways, según el modelo y el sitio."
    },
    {
-    "h": "Opciones listas para exteriores",
-    "p": "Algunos modelos están disponibles con carcasas con clasificación IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
+    "h": "Configuraciones para exteriores",
+    "p": "Algunos modelos están disponibles con carcasas con grado de protección IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
    },
    {
     "h": "Diseño de bajo consumo",
-    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de reporte configurables para prolongar la duración de la batería en campo."
+    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de transmisión configurables para prolongar la duración de la batería en campo."
    }
   ],
   "sysHeading": "Capacidades del sistema",
@@ -2117,17 +2117,17 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/59-sys-0.png",
     "h": "Configuración remota",
-    "p": "Configure los dispositivos compatibles por lotes, incluidos los intervalos de reporte, los umbrales y los parámetros específicos de la implementación."
+    "p": "Configure los dispositivos compatibles por lotes, incluidos los intervalos de transmisión, los umbrales y los parámetros específicos de la implementación."
    },
    {
     "img": "solution/59-sys-1.png",
     "h": "Reglas de control automatizadas",
-    "p": "Las reglas ajustan los equipos conectados —por ejemplo, la refrigeración— cuando las lecturas de los sensores superan los umbrales configurados, sin intervención manual."
+    "p": "Las reglas ajustan los equipos conectados —por ejemplo, la refrigeración— cuando las lecturas de los sensores superan los umbrales configurados, cuando el proyecto se integra con sistemas de control compatibles."
    },
    {
     "img": "solution/59-sys-3.png",
     "h": "Actualizaciones remotas de firmware",
-    "p": "Admite actualizaciones remotas de firmware OTA por lotes para los dispositivos compatibles, manteniendo las implementaciones al día y reduciendo las visitas al sitio."
+    "p": "El sistema permite actualizar de forma remota el firmware OTA por lotes en los dispositivos compatibles, manteniendo los despliegues al día y reduciendo las visitas al sitio."
    }
   ],
   "relHeading": "Productos relacionados",
@@ -2147,7 +2147,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    },
    {
     "img": "solution/59-scen-1.jpg",
-    "h": "Instalaciones de nuevas energías",
+    "h": "Instalaciones de energías renovables",
     "p": "Monitoreo y control en tiempo real para instalaciones de energías renovables"
    },
    {
@@ -2163,8 +2163,8 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "intro": [
    {
     "img": "solution/57-intro-0.jpg",
-    "h": "Desafíos de la industria",
-    "p": "El crecimiento urbano trae desafíos como la congestión del tráfico, la presión ambiental y la infraestructura envejecida. La detección conectada brinda a los operadores urbanos datos en tiempo real sobre vías, servicios, estructuras y el medio ambiente, respaldando decisiones mejor fundamentadas. Hitelecom proporciona los sensores de campo y la conectividad utilizados en estas implementaciones de monitoreo."
+    "h": "Retos del sector",
+    "p": "El crecimiento urbano trae desafíos como la congestión del tráfico, la presión ambiental y la infraestructura envejecida. Los sensores conectados proporcionan a los operadores urbanos datos en tiempo real sobre carreteras, puentes, redes de tuberías y el medio ambiente, respaldando decisiones mejor fundamentadas. Hitelecom proporciona los sensores de campo y la conectividad utilizados en estas despliegues de monitoreo."
    },
    {
     "img": "solution/57-intro-1.jpg",
@@ -2179,12 +2179,12 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "featHeading": "Ventajas clave",
   "features": [
    {
-    "h": "Opciones listas para exteriores",
-    "p": "Algunos modelos están disponibles con carcasas con clasificación IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
+    "h": "Configuraciones para exteriores",
+    "p": "Algunos modelos están disponibles con carcasas con grado de protección IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
    },
    {
     "h": "Diseño de bajo consumo",
-    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de reporte configurables para prolongar la duración de la batería en campo."
+    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de transmisión configurables para prolongar la duración de la batería en campo."
    },
    {
     "h": "Conectividad flexible",
@@ -2200,7 +2200,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/57-sys-0.png",
     "h": "Configuración remota",
-    "p": "Configure los dispositivos compatibles por lotes, incluidos los intervalos de reporte, los umbrales y los parámetros específicos de la implementación."
+    "p": "Configure los dispositivos compatibles por lotes, incluidos los intervalos de transmisión, los umbrales y los parámetros específicos de la implementación."
    },
    {
     "img": "solution/57-sys-1.png",
@@ -2215,7 +2215,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/57-sys-3.png",
     "h": "Actualizaciones remotas de firmware",
-    "p": "Admite actualizaciones remotas de firmware OTA por lotes para los dispositivos compatibles, manteniendo las implementaciones al día y reduciendo las visitas al sitio."
+    "p": "El sistema permite actualizar de forma remota el firmware OTA por lotes en los dispositivos compatibles, manteniendo los despliegues al día y reduciendo las visitas al sitio."
    }
   ],
   "relHeading": "Productos relacionados",
@@ -2264,13 +2264,13 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "intro": [
    {
     "img": "solution/66-intro-0.jpg",
-    "h": "Desafíos de la industria",
-    "p": "Los sitios turísticos y patrimoniales deben proteger estructuras y colecciones mientras gestionan las áreas de visitantes, las condiciones ambientales y las instalaciones dispersas. Las inspecciones manuales pueden pasar por alto movimientos graduales o cambios de microclima."
+    "h": "Retos del sector",
+    "p": "Los destinos turísticos y sitios de patrimonio cultural deben proteger estructuras y colecciones mientras gestionan las áreas de visitantes, las condiciones ambientales y las instalaciones dispersas. Las inspecciones manuales pueden pasar por alto movimientos graduales o cambios de microclima."
    },
    {
     "img": "solution/66-intro-1.jpg",
     "h": "Resumen de la solución",
-    "p": "Hitelecom combina sensores de inclinación, vibración, temperatura, humedad, distancia y otros sensores específicos de cada modelo con el monitoreo en la nube. Los equipos pueden revisar tendencias y alertas de edificios históricos, museos, sitios arqueológicos e infraestructura para visitantes."
+    "p": "Hitelecom combina sensores de inclinación, vibración, temperatura, humedad, distancia y otros sensores seleccionados según la aplicación con el monitoreo en la nube. Los equipos pueden revisar tendencias y alertas de edificios históricos, museos, sitios arqueológicos e infraestructura para visitantes."
    }
   ],
   "archHeading": "Arquitectura de la solución",
@@ -2281,7 +2281,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "features": [
    {
     "h": "Diseño de bajo consumo",
-    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de reporte configurables para prolongar la duración de la batería en campo."
+    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de transmisión configurables para prolongar la duración de la batería en campo."
    },
    {
     "h": "Conectividad flexible",
@@ -2292,8 +2292,8 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
     "p": "Algunos dispositivos admiten activación por NFC y configuración local para una implementación y un mantenimiento más rápidos."
    },
    {
-    "h": "Opciones listas para exteriores",
-    "p": "Algunos modelos están disponibles con carcasas con clasificación IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
+    "h": "Configuraciones para exteriores",
+    "p": "Algunos modelos están disponibles con carcasas con grado de protección IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
    }
   ],
   "sysHeading": "Capacidades del sistema",
@@ -2311,12 +2311,12 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/66-sys-2.png",
     "h": "Notificación de alarmas",
-    "p": "Configure y gestione las alertas de forma centralizada, incluidos disparadores multicondición y flujos de escalado para las implementaciones compatibles."
+    "p": "Configure y gestione las alertas de forma centralizada, incluidos disparadores multicondición y flujos de escalado para las despliegues compatibles."
    },
    {
     "img": "solution/66-sys-3.png",
     "h": "Actualizaciones remotas de firmware",
-    "p": "Admite actualizaciones remotas de firmware OTA por lotes para los dispositivos compatibles, manteniendo las implementaciones al día y reduciendo las visitas al sitio."
+    "p": "El sistema permite actualizar de forma remota el firmware OTA por lotes en los dispositivos compatibles, manteniendo los despliegues al día y reduciendo las visitas al sitio."
    }
   ],
   "relHeading": "Productos relacionados",
@@ -2357,7 +2357,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "intro": [
    {
     "img": "solution/67-intro-0.jpg",
-    "h": "Desafíos de la industria",
+    "h": "Retos del sector",
     "p": "Las empresas de agua operan embalses, estaciones de bombeo, tuberías, activos de drenaje e instalaciones de tratamiento dispersos. Los datos de campo tardíos o incompletos pueden ralentizar la respuesta ante condiciones anómalas de nivel, presión, caudal o calidad."
    },
    {
@@ -2374,11 +2374,11 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
   "features": [
    {
     "h": "Diseño de bajo consumo",
-    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de reporte configurables para prolongar la duración de la batería en campo."
+    "p": "Algunos terminales de sensores utilizan procesadores de bajo consumo, gestión de energía optimizada e intervalos de transmisión configurables para prolongar la duración de la batería en campo."
    },
    {
-    "h": "Opciones listas para exteriores",
-    "p": "Algunos modelos están disponibles con carcasas con clasificación IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
+    "h": "Configuraciones para exteriores",
+    "p": "Algunos modelos están disponibles con carcasas con grado de protección IP para entornos industriales y exteriores. Confirme el grado de protección requerido para cada configuración."
    },
    {
     "h": "Conectividad flexible",
@@ -2394,7 +2394,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/67-sys-0.png",
     "h": "Configuración remota",
-    "p": "Configure los dispositivos compatibles por lotes, incluidos los intervalos de reporte, los umbrales y los parámetros específicos de la implementación."
+    "p": "Configure los dispositivos compatibles por lotes, incluidos los intervalos de transmisión, los umbrales y los parámetros específicos de la implementación."
    },
    {
     "img": "solution/67-sys-1.png",
@@ -2409,7 +2409,7 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    {
     "img": "solution/67-sys-3.png",
     "h": "Notificación de alarmas",
-    "p": "Configure y gestione las alertas de forma centralizada, incluidos disparadores multicondición y flujos de escalado para las implementaciones compatibles."
+    "p": "Configure y gestione las alertas de forma centralizada, incluidos disparadores multicondición y flujos de escalado para las despliegues compatibles."
    }
   ],
   "relHeading": "Productos relacionados",
@@ -2444,8 +2444,8 @@ export const solutionSeo: Record<Locale, Record<string, { name: string; title: s
 { ...solutionSeoBase, es: {
  "57": {
   "name": "Ciudad inteligente",
-  "title": "Solución IoT para ciudades inteligentes | Infraestructura | Hitelecom",
-  "desc": "Monitoree estructuras urbanas, servicios públicos y condiciones ambientales con sensores de campo, conectividad celular o LoRaWAN, alertas y paneles en la nube."
+  "title": "IoT para ciudades inteligentes | Hitelecom",
+  "desc": "Monitoree estructuras, servicios y condiciones ambientales urbanas con sensores de campo, conectividad celular o LoRaWAN y alertas en la nube."
  },
  "58": {
   "name": "IoT industrial",
@@ -2454,32 +2454,33 @@ export const solutionSeo: Record<Locale, Record<string, { name: string; title: s
  },
  "59": {
   "name": "Energía inteligente",
-  "title": "Solución IoT para energía inteligente | Monitoreo de condición | Hitelecom",
+  "title": "IoT para energía inteligente | Hitelecom",
   "desc": "Monitoree presión, temperatura, vibración y nivel en los activos de energía con conectividad inalámbrica según el modelo y alertas en la nube."
  },
  "60": {
   "name": "Parques industriales inteligentes",
-  "title": "Solución IoT para parques industriales inteligentes | Hitelecom",
-  "desc": "Solución IoT para parques inteligentes de Hitelecom: sensores NB-IoT e integración de nube IoT para la seguridad del parque, el monitoreo ambiental y la gestión inteligente de instalaciones."
+  "title": "IoT para parques industriales | Hitelecom",
+  "desc": "Centralice datos ambientales, energéticos, de seguridad y de equipos en parques industriales mediante sensores, gateways y alertas configurables."
  },
  "64": {
   "name": "Campus inteligente",
-  "title": "Solución IoT para campus inteligente | Calidad del aire | Hitelecom",
-  "desc": "Solución IoT para campus inteligente de Hitelecom: sensores de calidad del aire y de temperatura y humedad con plataforma en la nube IoT para una gestión del campus segura y eficiente."
+  "title": "IoT para campus inteligentes | Hitelecom",
+  "desc": "Centralice la calidad del aire, la temperatura, la humedad y otros datos del campus con sensores IoT, gateways y una plataforma en la nube."
  },
  "65": {
   "name": "Agricultura inteligente",
-  "title": "Solución IoT para agricultura inteligente | Monitoreo de suelo | Hitelecom",
-  "desc": "Solución IoT para agricultura inteligente de Hitelecom: sensores de humedad del suelo y terminales de sensores 4G para exteriores para la agricultura de precisión y el monitoreo ambiental."
+  "title": "IoT para agricultura inteligente | Hitelecom",
+  "desc": "Combine sensores de suelo y estaciones meteorológicas con conectividad IoT para apoyar decisiones de riego, fertilización y gestión de cultivos."
  },
  "66": {
-  "name": "Turismo y sitios patrimoniales",
-  "title": "Monitoreo IoT para turismo y sitios patrimoniales | Hitelecom",
-  "desc": "Monitoree el movimiento estructural, las condiciones ambientales y ciertos activos en sitios turísticos y patrimoniales con sensores de campo y alertas en la nube."
+  "name": "Turismo y patrimonio cultural",
+  "title": "IoT para turismo y patrimonio | Hitelecom",
+  "desc": "Monitoree movimiento estructural y condiciones ambientales en edificios históricos, museos y sitios arqueológicos mediante sensores y alertas en la nube."
  },
  "67": {
   "name": "Agua inteligente",
-  "title": "Solución IoT para agua inteligente | Nivel y presión | Hitelecom",
+  "title": "IoT para gestión inteligente del agua | Hitelecom",
   "desc": "Monitoree el nivel del agua, la presión, el caudal y la calidad en embalses, estaciones de bombeo, tuberías y redes de drenaje con alertas remotas."
  }
-} };
+}
+};

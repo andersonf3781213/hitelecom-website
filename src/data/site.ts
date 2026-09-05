@@ -52,7 +52,7 @@ export const site = {
   tagline: {
     en: 'IoT Turnkey Solution Provider',
     zh: '物联网整体解决方案提供商',
-    es: 'Proveedor de soluciones IoT llave en mano',
+    es: 'Proveedor de soluciones integrales de IoT',
   },
 } as const;
 

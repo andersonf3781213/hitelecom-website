@@ -57,7 +57,7 @@ const socialIcons: Record<string, string> = {
                   <span class="qr-pop">
                     <img
                       src={s.icon === 'wechat' ? '/images/qr-wechat.png' : '/images/qr-whatsapp.png'}
-                      alt={`${s.name} QR code`}
+                      alt={s.icon === 'wechat' ? u.wechatQrAlt : u.whatsappQrAlt}
                       width="120"
                       height={s.icon === 'wechat' ? 110 : 120}
                       loading="lazy"

@@ -29,7 +29,7 @@
 			<ul class="u5">
 				 
 				<li class="reveal">
-					<a class="css3" href="/about">
+					<a class="css3" href="/es/about">
 						Quiénes somos
 					</a>
 				</li>
@@ -55,17 +55,17 @@
 			</ul>
 			<select id="changeurl">
 				 
-				<option  value="/about">
+				<option  value="/es/about">
 					Quiénes somos
 				</option> 
 				<option     value="/es/about/quality">
 					Calidad y confiabilidad
 				</option> 
 				<option  selected="selected"   value="/es/about/partner">
-					Partners
+					Socios
 				</option> 
 				<option   value="/es/about/joinus">
-					Careers
+					Carreras
 				</option> 
 				<option   value="/es/about/contact"> Contacto </option> 
 				
@@ -80,7 +80,7 @@
 							</Div>
 							<div class="index_1_2 daxie reveal">
 								<div class="pa_1_1">
-									<p>Con el rápido desarrollo de la tecnología de IoT industrial, promovemos una estrategia de asociación centrada en el canal y una red de socios transparente y justa. Al apoyar a los socios en proyectos y canales, buscamos construir un ecosistema de IoT industrial de beneficio mutuo en el que cada socio pueda crecer.</p>
+									<p>Con el rápido desarrollo de la tecnología de IoT industrial, promovemos un programa de socios orientado al canal y una red de socios transparente y justa. Al ayudar a los socios a desarrollar oportunidades y ejecutar proyectos, buscamos construir un ecosistema de IoT industrial de beneficio mutuo en el que cada socio pueda crecer.</p>
 								</div>
 							</div>
 							<div class="pa_1_2 reveal">
@@ -198,7 +198,7 @@
 												<span><img alt="" src="/images/about/static_img42.png"></span>
 											</div>
 											<div class="pa_3_1_mid_2">
-												Estudio del sitio
+												Visita técnica al emplazamiento
 											</div>
 										</div>
 									</li>
@@ -219,7 +219,7 @@
 												<img alt="" src="/images/about/static_img41.png">
 											</div>
 											<div class="pa_3_1_mid_2">
-												Salida al mercado
+												Lanzamiento comercial
 											</div>
 										</div>
 									</li>
@@ -280,7 +280,7 @@
 									<li>
 										<div>
 											<span>
-												Interés de colaboración
+												Tipo de colaboración
 											</span>
 											<dl>
 												<dd class="on" lang="Government">
@@ -314,7 +314,7 @@
 							</div>
 							<div class="clearfix pa_5_2 reveal">
 								<a href="javascript:;" onClick="javascript:showAddr();">
-									<span>Enviar solicitud</span>
+									<span>Enviar la solicitud</span>
 								</a>
 							</div>
 							</form>

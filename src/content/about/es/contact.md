@@ -106,7 +106,7 @@
 			<div id="map_canvas">
 			<img src="/images/about/contact-map.jpg" alt="Mapa de la oficina de Hitelecom en No. 116 Cheyang Road, Songjiang District, Shanghái" width="1755" height="1275" loading="lazy" />
 			<a class="map_more" href="https://www.google.com/maps?q=30.986739,121.288993" target="_blank" rel="noopener">Ver mapa más grande</a>
-			<span class="map_attr">© AutoNavi 高德地图</span>
+			<span class="map_attr">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" style="color:inherit">OpenStreetMap contributors</a></span>
 			</div>
 		</div>
 	</div>
@@ -156,7 +156,7 @@
 							</div>
 							<div class="clearfix pa_5_2 reveal">
 								<a href="javascript:;" onClick="javascript:showAddr();">
-									<span>Enviar consulta</span>
+									<span>Enviar una consulta</span>
 								</a>
 							</div>
 							<p class="privacy-consent">Al enviar este formulario, usted acepta nuestra <a href="/es/about/privacy">Política de privacidad</a>.</p>

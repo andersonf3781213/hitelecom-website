@@ -29,7 +29,7 @@
 			<ul class="u5">
 				 
 				<li class="reveal">
-					<a class="css3" href="/about">
+					<a class="css3" href="/es/about">
 						Quiénes somos
 					</a>
 				</li>
@@ -55,17 +55,17 @@
 			</ul>
 			<select id="changeurl">
 				 
-				<option  value="/about">
+				<option  value="/es/about">
 					Quiénes somos
 				</option> 
 				<option     value="/es/about/quality">
 					Calidad y confiabilidad
 				</option> 
 				<option    value="/es/about/partner">
-					Partners
+					Socios
 				</option> 
 				<option  selected="selected"  value="/es/about/joinus">
-					Careers
+					Carreras
 				</option> 
 				<option   value="/es/about/contact"> Contacto </option> 
 				
@@ -206,7 +206,7 @@
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -229,11 +229,11 @@
 														</Div>
 														<div class="jo_3_2_mid_con_2">
 															1. Gestionar la producción del taller para garantizar la calidad y cumplir los objetivos de producción.<br>
-2. Supervisar el sistema de calidad del taller, en particular la resolución de anomalías en sitio y la mejora de los tiempos de respuesta.<br>
+2. Supervisar el sistema de calidad del taller, en particular la resolución de anomalías in situ y la mejora de los tiempos de respuesta.<br>
 3. Colaborar con los equipos comerciales y de ingeniería para apoyar la incorporación de nuevos clientes y la construcción de prototipos.<br>
-4. Resolver cuellos de botella de procesos y diversos problemas en sitio para garantizar un flujo de producción fluido, líneas equilibradas y la mejora continua de la calidad y la eficiencia.<br>
+4. Resolver cuellos de botella de procesos y diversos problemas in situ para garantizar un flujo de producción fluido, líneas equilibradas y la mejora continua de la calidad y la eficiencia.<br>
 5. Gestionar la dotación de personal del taller, la capacitación, el desarrollo de funciones y la gestión del desempeño.<br>
-6. Implementar la gestión en sitio conforme a las normas ISO 9001 e IATF 16949 y los requisitos 5S, garantizando la seguridad de la producción.<br>														</div>
+6. Implementar la gestión in situ conforme a las normas ISO 9001 e IATF 16949 y los requisitos 5S, garantizando la seguridad de la producción.<br>														</div>
 													</dd>
 													<dd>
 														<Div class="jo_3_2_mid_con_1 jo_3_2_mid_con_1_t">
@@ -242,7 +242,7 @@
 														<div class="jo_3_2_mid_con_2">
 															1. Más de 5 años de experiencia en gestión de producción, incluidos 3 años o más en la industria automotriz o electrónica.<br>
 2. Dominio de los procesos de producción y de los procedimientos de electrónica automotriz, con familiaridad con el sistema de gestión de calidad IATF 16949.<br>
-3. Conocimiento de métodos de gestión lean como 5S, SPC y TPM.<br>														</div>
+3. Conocimiento de métodos de gestión Lean como 5S, SPC y TPM.<br>														</div>
 													</dd>
 													<dd>
 														<div class="jo_3_2_mid_con_3">
@@ -264,11 +264,11 @@
 													<dl>
 														<dd>
 															<span>
-																Formación: Título técnico o superior															</span>
+																Formación: Formación técnica superior o equivalente															</span>
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -330,11 +330,11 @@
 													<dl>
 														<dd>
 															<span>
-																Formación: Título técnico o superior															</span>
+																Formación: Formación técnica superior o equivalente															</span>
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -390,11 +390,11 @@
 													<dl>
 														<dd>
 															<span>
-																Formación: Título técnico o superior															</span>
+																Formación: Formación técnica superior o equivalente															</span>
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -457,7 +457,7 @@
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -480,7 +480,7 @@
 														</Div>
 														<div class="jo_3_2_mid_con_2">
 															1. Preparar instrucciones de trabajo para la inspección en proceso, la inspección final y la verificación de procesos.<br>
-2. Gestionar la verificación, revisión y disposición de productos no conformes durante la producción, incluida la determinación, el análisis y la retroalimentación sobre la responsabilidad de las no conformidades.<br>
+2. Gestionar la verificación, revisión y disposición de productos no conformes durante la producción, incluida la determinación, el análisis y la comunicación de resultados sobre la responsabilidad de las no conformidades.<br>
 3. Realizar auditorías de procesos de calidad para supervisar la calidad y los datos de producción, investigar los problemas identificados en las inspecciones, analizarlos, retroalimentar y dar seguimiento a las acciones correctivas.<br>
 4. Supervisar el monitoreo de la calidad del producto, incluidos el proceso de producción, los productos terminados, los envíos, las tasas de defectos y el análisis y la documentación de defectos.<br>
 5. Organizar a los departamentos pertinentes para investigar, analizar, tratar y verificar la eficacia de las acciones correctivas.<br>
@@ -498,7 +498,7 @@
 														</Div>
 														<div class="jo_3_2_mid_con_2">
 															1. Licenciatura o superior en un campo STEM; se valora experiencia como auditor interno de calidad en la industria electrónica.<br>
-2. Dominio de las herramientas de análisis de calidad (las siete herramientas básicas de QC y las herramientas automotrices aplicables) y familiaridad con ISO 9001, IATF 16949 y sistemas de calidad relacionados.<br>
+2. Dominio de las herramientas de análisis de calidad (las siete herramientas básicas de QC y las APQP, PPAP, FMEA, MSA y SPC aplicables) y familiaridad con ISO 9001, IATF 16949 y sistemas de calidad relacionados.<br>
 3. Sólido pensamiento lógico, con conocimientos de control de calidad, estadística de calidad y gestión de calidad.<br>
 4. Excelentes habilidades de comunicación, orientación al trabajo en equipo, atención al detalle y sólidas capacidades de análisis y resolución de problemas.<br>
 														</div>
@@ -523,11 +523,11 @@
 													<dl>
 														<dd>
 															<span>
-																Formación: Título técnico o superior															</span>
+																Formación: Formación técnica superior o equivalente															</span>
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -554,7 +554,7 @@
 3. Crear y ajustar programas de máquina para nuevos modelos, mantener los equipos SMD, establecer cronogramas de mantenimiento y realizar el mantenimiento periódico de los equipos de la línea de producción.<br>
 4. Supervisar a los técnicos para controlar el desperdicio de materiales y alcanzar los objetivos de reducción de desperdicios.<br>
 5. Dar seguimiento a las introducciones de nuevos productos y a los problemas de diseño, sugerir mejoras de calidad y eficiencia, y preparar la producción en masa.<br>
-6. Diseñar y gestionar plantillas (stencils) y accesorios para cumplir los estándares de calidad y eficiencia de producto de la empresa.<br>														</div>
+6. Diseñar y gestionar plantillas de impresión (stencils) y accesorios para cumplir los estándares de calidad y eficiencia de producto de la empresa.<br>														</div>
 													</dd>
 													<dd>
 														<Div class="jo_3_2_mid_con_1 jo_3_2_mid_con_1_t">
@@ -586,11 +586,11 @@
 													<dl>
 														<dd>
 															<span>
-																Formación: Título técnico o superior															</span>
+																Formación: Formación técnica superior o equivalente															</span>
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -614,7 +614,7 @@
 														<div class="jo_3_2_mid_con_2">
 															1. Establecer normas, procedimientos, planes y especificaciones para las pruebas de confiabilidad. <br>
 2. Desarrollar pruebas de confiabilidad de productos, informar los problemas al personal pertinente y coordinar para que el avance se comunique a los miembros del proyecto. <br>
-3. Leer e interpretar diagramas esquemáticos y contar con algo de experiencia en soldadura. <br>
+3. Leer e interpretar diagramas esquemáticos y contar con capacidad para realizar soldadura manual y retrabajo básico. <br>
 4. Ser capaz de comprender las fichas técnicas de los componentes. <br>
 5. Comprender y dominar plenamente las normas y regulaciones de la industria. <br>
 6. Montar plataformas de prueba y utilizar con soltura el software y los equipos de prueba pertinentes. <br>
@@ -654,11 +654,11 @@
 													<dl>
 														<dd>
 															<span>
-																Formación: Título técnico o superior															</span>
+																Formación: Formación técnica superior o equivalente															</span>
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -680,11 +680,11 @@
 															Responsabilidades
 														</Div>
 														<div class="jo_3_2_mid_con_2">
-															1. Crear visuales de marca, folletos, publicidad, diseño de sitios web, empaques de producto, manuales, producción editorial y diseño de exposiciones, y coordinar la creación de prototipos y la impresión.<br>
+															1. Crear visuales de marca, folletos, publicidad, diseño de sitios web, empaques de producto, manuales, material editorial y diseño de exposiciones, y coordinar la creación de prototipos y la impresión.<br>
 2. Gestionar las actualizaciones visuales y el mantenimiento de las interfaces web y de la app de la empresa.<br>
 3. Diseñar interfaces de usuario e iconos según los requisitos de diseño de producto.<br>
 4. Clasificar y archivar los materiales gráficos según las directrices establecidas.<br>
-5. Completar otras tareas eventuales asignadas por la dirección.<br>														</div>
+5. Completar otras otras tareas relacionadas con el puesto asignadas por la dirección.<br>														</div>
 													</dd>
 													<dd>
 														<Div class="jo_3_2_mid_con_1 jo_3_2_mid_con_1_t">
@@ -721,7 +721,7 @@
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -784,7 +784,7 @@
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -822,7 +822,7 @@
 3. Habilidad en la depuración de hardware y software embebidos y dominio del diseño de layout de PCB.<br>
 4. Familiaridad con los protocolos TCP/IP y las estructuras de paquetes de las capas MAC e IP; se valora la experiencia con los protocolos Zigbee, 433 MHz, Wi-Fi y Bluetooth.<br>
 5. Dominio de software de diseño y simulación de PCB como Altium Designer, PADS, Cadence Allegro y EasyEDA.<br>
-6. Diseño y desarrollo de productos de sensores, preparación de la documentación técnica relacionada, responsabilidad del control de todo el proceso de materialización del producto y entrega de soluciones personalizadas.<br>
+6. Diseño y desarrollo de productos de sensores, preparación de la documentación técnica relacionada, responsabilidad del control de todo el proceso de industrialización del producto y entrega de soluciones personalizadas.<br>
 7. Capacidad de completar de forma independiente el análisis de circuitos y el dibujo de PCB, diagramas de circuito y esquemáticos.<br>
 8. Se valora la experiencia en el desarrollo de instrumentos y equipos de sensores.<br>														</div>
 													</dd>
@@ -850,7 +850,7 @@
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -874,7 +874,7 @@
 														<div class="jo_3_2_mid_con_2">
 															1. Ejecutar actividades de ventas especializadas dirigidas a clientes y socios de la industria conforme a los objetivos de ventas de la empresa, cumpliendo las metas anuales y trimestrales y los KPI definidos en el plan de desempeño.<BR>
 2. Adquirir un conocimiento completo de los productos y servicios de la empresa, aplicar estrategias de ventas para identificar y desarrollar clientes objetivo y socios de la industria, convirtiendo las oportunidades de negocio en resultados de ventas.<BR>
-3. Recopilar activamente retroalimentación del mercado e información de la competencia, realizar resúmenes y análisis periódicos, y proporcionar retroalimentación y análisis de datos a los equipos de producto y de soporte de I+D, contribuyendo a la optimización del producto y a la mejora de la competitividad.<BR>
+3. Recopilar activamente comunicación de resultados del mercado e información de la competencia, realizar resúmenes y análisis periódicos, y proporcionar comunicación de resultados y análisis de datos a los equipos de producto y de soporte de I+D, contribuyendo a la optimización del producto y a la mejora de la competitividad.<BR>
 4. Coordinar recursos internos y externos y trabajar entre equipos para convertir las oportunidades de negocio en pedidos firmados.<BR>
 5. Completar otras tareas y funciones asignadas por la dirección.<BR>														</div>
 													</dd>
@@ -886,7 +886,7 @@
 															1. Licenciatura o superior y familiaridad con el IoT, las comunicaciones de red, la automatización e industrias relacionadas.<BR>
 2. Más de 3 años de experiencia en ventas, preferiblemente con un historial probado en gestión inteligente del agua, agricultura inteligente, ciudades inteligentes y automatización industrial.<BR>
 3. Capaz de realizar de forma independiente la prospección y la venta consultiva, desde el contacto inicial hasta la firma de contratos; se valora una red de contactos establecida en la industria.<BR>
-4. Capacidad probada para construir relaciones con clientes, con experiencia en ventas a grandes cuentas y pensamiento estratégico de ventas, además de sólidas habilidades de comunicación y negociación.<BR>
+4. Capacidad probada para construir relaciones con clientes, con experiencia en ventas a grandes cuentas y enfoque comercial estratégico, además de sólidas habilidades de comunicación y negociación.<BR>
 5. Apasionado por las ventas y con confianza en la comunicación cara a cara con clientes, con actitud positiva y capacidad de construir relaciones de cooperación con nuevos clientes.<BR>
 6. Aprendiz rápido, proactivo, adaptable e innovador, capaz de responder con agilidad a las demandas de los clientes y de la empresa.<BR>
 7. Dominio de Microsoft Office.<BR>														</div>
@@ -915,7 +915,7 @@
 														</dd>
 														<dd>
 															<span>
-																Ubicación: Shanghái															</span>
+																Ubicación: Shanghái, China															</span>
 														</dd>
 														<dd>
 															<span>
@@ -939,7 +939,7 @@
 														<div class="jo_3_2_mid_con_2">
 															1. Asistir en la planificación estratégica de RR. HH. y desarrollar y mejorar el sistema de gestión de recursos humanos (políticas, mecanismos y procesos relacionados).<br>
 2. Hacerse cargo del reclutamiento: elaborar planes de contratación, explorar canales de contratación e implementar los procesos de selección.<br>
-3. Gestionar los registros de personal, incluidos la incorporación, la firma de contratos, el período de prueba, los ascensos, las rebajas de puesto, las renuncias, las recompensas y sanciones, los asuntos de seguridad social y fondo de vivienda y las disputas laborales.<br>
+3. Gestionar los registros de personal, incluidos la incorporación, la firma de contratos, el período de prueba, los ascensos, las cambios de categoría o descensos, las renuncias, las recompensas y sanciones, los asuntos de seguridad social y fondo de vivienda y las disputas laborales.<br>
 4. Supervisar los asuntos de capacitación, participar en la creación de planes de capacitación y ejecutar los objetivos y las evaluaciones de capacitación.<br>
 5. Participar en el desarrollo, la implementación y la supervisión de los sistemas, mecanismos y evaluaciones de desempeño del departamento.<br>
 6. Gestionar la administración de compensaciones y beneficios, los incentivos de desempeño, el control de asistencia, el desarrollo profesional y los cambios de compensación relacionados con transferencias internas.<br>
@@ -953,7 +953,7 @@
 														</Div>
 														<div class="jo_3_2_mid_con_2">
 															1. Licenciatura o superior en gestión de recursos humanos, administración de empresas o un campo relacionado; capacidad para trabajar bajo presión con sólidas habilidades de comunicación.<br>
-2. Más de 5 años de experiencia en recursos humanos o gestión administrativa; competente en tareas transaccionales de RR. HH. y familiarizado con los flujos administrativos de personal.<br>
+2. Más de 5 años de experiencia en recursos humanos o gestión administrativa; competente en gestiones administrativas de RR. HH. y familiarizado con los flujos administrativos de personal.<br>
 3. Conocimiento de las leyes y regulaciones laborales nacionales y regionales.<br>
 4. Sereno y meticuloso, adaptable y proactivo, con gran capacidad de aprendizaje y sentido de la responsabilidad; automotivado y capaz de manejar tareas de forma independiente.<br>														</div>
 													</dd>

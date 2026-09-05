@@ -55,6 +55,16 @@ export interface UiStrings {
   // 产品列表侧栏 / 分类选项卡
   listSidebarPh: string;
   catTabsAria: string;
+  // 无障碍 ARIA（Header/Sidebar）
+  ariaHome: string;
+  ariaMainNav: string;
+  ariaSearch: string;
+  ariaCloseSearch: string;
+  ariaMenu: string;
+  ariaOpenMenu: string;
+  ariaCloseMenu: string;
+  ariaMobileNav: string;
+  quickContact: string;
 }
 
 const en: UiStrings = {
@@ -98,6 +108,15 @@ const en: UiStrings = {
   docDownload: 'Download',
   listSidebarPh: 'Enter product keywords',
   catTabsAria: 'Switch product category',
+  ariaHome: 'Hitelecom Home',
+  ariaMainNav: 'Main',
+  ariaSearch: 'Search',
+  ariaCloseSearch: 'Close search',
+  ariaMenu: 'Menu',
+  ariaOpenMenu: 'Open menu',
+  ariaCloseMenu: 'Close menu',
+  ariaMobileNav: 'Mobile',
+  quickContact: 'Quick contact',
 };
 
 const zh: UiStrings = {
@@ -141,6 +160,15 @@ const zh: UiStrings = {
   docDownload: '下载',
   listSidebarPh: '输入产品关键词',
   catTabsAria: '切换产品分类',
+  ariaHome: '宏太通信首页',
+  ariaMainNav: '主导航',
+  ariaSearch: '搜索',
+  ariaCloseSearch: '关闭搜索',
+  ariaMenu: '菜单',
+  ariaOpenMenu: '打开菜单',
+  ariaCloseMenu: '关闭菜单',
+  ariaMobileNav: '移动端导航',
+  quickContact: '快速联系',
 };
 
 /** 西语（译法见《EN→ES 术语表 v1》；usted 敬称） */
@@ -158,7 +186,7 @@ const es: UiStrings = {
   privacyLabel: 'Política de privacidad',
   scanOnWechat: 'Escanear en WeChat',
   thxTitle: '¡Gracias!',
-  thxDesc: 'Hemos recibido su mensaje. Nuestros ingenieros de ventas le responderán a la brevedad.',
+  thxDesc: 'Hemos recibido su mensaje. Nuestro equipo técnico-comercial le responderá lo antes posible.',
   thxAlt: '¿Necesita una respuesta más rápida? Contáctenos directamente: ',
   thxBackHome: 'Volver al inicio',
   thxBrowse: 'Explorar productos',
@@ -167,7 +195,7 @@ const es: UiStrings = {
   spHeading: 'Búsqueda del sitio',
   spPlaceholder: 'Busque productos, modelos o palabras clave, p. ej. NB-IoT, suelo, temperatura…',
   spBtn: 'Buscar',
-  spEmpty: 'Sin resultados. Pruebe con otra palabra clave o contáctenos para asesoría de selección.',
+  spEmpty: 'Sin resultados. Pruebe con otra palabra clave o solicite asesoramiento para elegir el producto adecuado.',
   spHint: 'Escriba una palabra clave para buscar.',
   spContact: 'Contáctenos',
   spSearching: 'Buscando…',
@@ -185,6 +213,15 @@ const es: UiStrings = {
   docDownload: 'Descargar',
   listSidebarPh: 'Buscar por palabra clave',
   catTabsAria: 'Cambiar categoría de producto',
+  ariaHome: 'Inicio de Hitelecom',
+  ariaMainNav: 'Navegación principal',
+  ariaSearch: 'Buscar',
+  ariaCloseSearch: 'Cerrar búsqueda',
+  ariaMenu: 'Menú principal',
+  ariaOpenMenu: 'Abrir menú',
+  ariaCloseMenu: 'Cerrar menú',
+  ariaMobileNav: 'Navegación móvil',
+  quickContact: 'Contacto rápido',
 };
 
 export const ui: Record<Locale, UiStrings> = { en, zh, es };

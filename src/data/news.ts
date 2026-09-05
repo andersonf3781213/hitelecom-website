@@ -279,11 +279,13 @@ export async function getNewsContent(locale: Locale): Promise<NewsContent> {
 }
 
 const MONTHS_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const MONTHS_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 
-/** 新闻日期显示：ISO 日期（YYYY-MM-DD）按英文习惯渲染为 "January 1, 2025"，其他格式原样返回 */
-export function fmtNewsDate(date: string): string {
+/** 新闻日期显示：ISO 日期按语言习惯渲染（EN "January 1, 2025"；ES "1 de enero de 2025"），其他格式原样返回 */
+export function fmtNewsDate(date: string, locale: string = 'en'): string {
   const m = date.match(/^(\d{4})-(\d{2})-(\d{2})/);
   if (!m) return date;
+  if (locale === 'es') return `${+m[3]} de ${MONTHS_ES[+m[2] - 1]} de ${m[1]}`;
   return `${MONTHS_EN[+m[2] - 1]} ${+m[3]}, ${m[1]}`;
 }
 

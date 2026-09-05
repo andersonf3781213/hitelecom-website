@@ -11426,7 +11426,7 @@ export const productContent = { ...productContentBase, es: {
   "banner": {
    "title": "Hitelecom Cloud",
    "subtitle": "Una plataforma IoT segura y confiable",
-   "desc": "Hitelecom IoT Cloud es una plataforma inteligente de integración de datos que proporciona conectividad de dispositivos, monitoreo remoto y análisis de big data, permitiendo a las empresas optimizar sus operaciones y tomar decisiones inteligentes.",
+   "desc": "Hitelecom Cloud es una plataforma inteligente de integración de datos que proporciona conectividad de dispositivos, monitoreo remoto y análisis avanzado de datos, permitiendo a las empresas optimizar sus operaciones y tomar decisiones inteligentes.",
    "images": [
     "product/cloud/banner-1.png",
     "product/cloud/banner-2.png",
@@ -11438,7 +11438,7 @@ export const productContent = { ...productContentBase, es: {
    "heading": "Conecte los dispositivos de campo a la nube",
    "paras": [
     "Hitelecom ofrece una solución integrada que abarca sensores IoT, gateways, controladores y software en la nube, para que los datos de campo lleguen del dispositivo a su panel con menos pasos de integración.",
-    "El diseño de dispositivos de consumo ultrabajo reduce el consumo de energía durante todo el ciclo de vida del producto, apoyando implementaciones sostenibles a largo plazo."
+    "El diseño de dispositivos de consumo ultrabajo reduce el consumo de energía durante todo el ciclo de vida del producto, apoyando despliegues sostenibles a largo plazo."
    ],
    "cards": [
     {
@@ -11464,7 +11464,7 @@ export const productContent = { ...productContentBase, es: {
    ]
   },
   "features": {
-   "heading": "Funciones de Hitelecom IoT Cloud",
+   "heading": "Funciones de Hitelecom Cloud",
    "items": [
     {
      "img": "product/cloud/feature-1.png",
@@ -11521,17 +11521,17 @@ export const productContent = { ...productContentBase, es: {
     {
      "img": "product/cloud/core-3.jpg",
      "title": "Reglas de alarma",
-     "desc": "Configure reglas de alarma flexibles con condiciones de disparo y cálculos de atributos para el monitoreo continuo de dispositivos.\n\nDetecte condiciones como temperatura alta, presión anómala o caudal rápido para respaldar decisiones oportunas.\n\nLas alarmas se desactivan automáticamente cuando la condición de disparo vuelve a la normalidad, reduciendo el seguimiento manual.\n\nImplemente configuraciones de alarma por lotes y reciba informes de alarmas de los terminales conectados."
+     "desc": "Configure reglas de alarma flexibles con condiciones de activación y cálculos de atributos para el monitoreo continuo de dispositivos.\n\nDetecte condiciones como temperatura alta, presión anómala o caudal rápido para respaldar decisiones oportunas.\n\nLas alarmas se desactivan automáticamente cuando la condición de disparo vuelve a la normalidad, reduciendo el seguimiento manual.\n\nImplemente configuraciones de alarma por lotes y reciba informes de alarmas de los terminales conectados."
     },
     {
      "img": "product/cloud/core-4.jpg",
      "title": "Visualización de datos",
-     "desc": "Cree paneles para diseños de escritorio, móviles y pantallas grandes, conectados en vivo a las fuentes de datos de los dispositivos.\n\nVea los paneles en videowalls, PC, tabletas y teléfonos con actualización en tiempo real.\n\nLas alarmas aparecen casi en tiempo real, y los comandos de configuración pueden emitirse desde el panel, según la conectividad del dispositivo.\n\nLas vistas opcionales de GIS y gemelo digital pueden mostrar la ubicación, el estado y el historial de movimiento de los dispositivos."
+     "desc": "Cree paneles para diseños de escritorio, móviles y pantallas grandes, conectados en vivo a las fuentes de datos de los dispositivos.\n\nVea los paneles en murales de vídeo (videowalls), PC, tabletas y teléfonos con actualización en tiempo real.\n\nLas alarmas aparecen casi en tiempo real, y los comandos de configuración pueden emitirse desde el panel, según la conectividad del dispositivo.\n\nLas vistas opcionales de GIS y gemelo digital pueden mostrar la ubicación, el estado y el historial de movimiento de los dispositivos."
     },
     {
      "img": "product/cloud/core-5.jpg",
      "title": "API abierta",
-     "desc": "API abiertas para la integración con dispositivos y controladores de terceros.\n\nUse API o MQTT para enviar los datos de los dispositivos a centros de datos o plataformas del cliente.\n\nLa integración nube a nube puede consolidar datos de terceros compatibles en Hitelecom Cloud."
+     "desc": "APIs abiertas para la integración con dispositivos y controladores de terceros.\n\nUse API o MQTT para enviar los datos de los dispositivos a centros de datos o plataformas del cliente.\n\nLa integración nube a nube puede consolidar datos de terceros compatibles en Hitelecom Cloud."
     },
     {
      "img": "product/cloud/core-6.webp",
@@ -11582,12 +11582,12 @@ export const productContent = { ...productContentBase, es: {
     {
      "img": "product/cloud/scen-bg-1.jpg",
      "title": "IoT industrial",
-     "desc": "Conecte dispositivos, sistemas y equipos para agilizar los procesos de producción y mejorar el aprovechamiento de los recursos. Los terminales de sensores de Hitelecom proporcionan monitoreo en tiempo real del estado de los equipos, apoyando el mantenimiento basado en condición y la respuesta rápida ante fallos."
+     "desc": "Conecte dispositivos, sistemas y equipos para agilizar los procesos de producción y mejorar el aprovechamiento de los recursos. Los terminales de sensores de Hitelecom proporcionan monitoreo en tiempo real del estado de los equipos, apoyando el mantenimiento basado en el estado y la respuesta rápida ante fallos."
     },
     {
      "img": "product/cloud/scen-bg-2.jpg",
      "title": "Energía inteligente",
-     "desc": "Los terminales de sensores de Hitelecom apoyan la gestión de la energía mediante monitoreo en tiempo real, adquisición de datos y control remoto. Los datos respaldan el análisis energético y el mantenimiento basado en condición, reduciendo el trabajo manual rutinario. Hitelecom Cloud puede integrarse con los sistemas de energía existentes mediante API y protocolos compatibles, ayudando a las empresas a seguir los costos operativos y las métricas de sostenibilidad."
+     "desc": "Los terminales de sensores de Hitelecom apoyan la gestión de la energía mediante monitoreo en tiempo real, adquisición de datos y control remoto. Los datos respaldan el análisis energético y el mantenimiento basado en el estado, reduciendo el trabajo manual rutinario. Hitelecom Cloud puede integrarse con los sistemas de energía existentes mediante API y protocolos compatibles, ayudando a las empresas a seguir los costos operativos y las métricas de sostenibilidad."
     },
     {
      "img": "product/cloud/scen-bg-3.png",
@@ -11648,12 +11648,12 @@ export const productContent = { ...productContentBase, es: {
     {
      "img": "product/app/feature-1.png",
      "title": "Activación de dispositivos",
-     "desc": "Use la app de Hitelecom para activar y despertar los dispositivos con NFC, acelerando la implementación y la configuración en sitio."
+     "desc": "Use la app de Hitelecom para activar o reactivar los dispositivos con NFC, acelerando el despliegue y la configuración in situ."
     },
     {
      "img": "product/app/feature-2.png",
      "title": "Conectividad de dispositivos",
-     "desc": "Conecte los dispositivos activados a Hitelecom Cloud y configure alarmas, tareas, intervalos de reporte y horarios según cada implementación."
+     "desc": "Conecte los dispositivos activados a Hitelecom Cloud y configure alarmas, tareas, intervalos de transmisión y horarios según cada implementación."
     },
     {
      "img": "product/app/feature-3.png",
@@ -11672,13 +11672,13 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "img": "product/app/feature-6.png",
-     "title": "Componentes de datos en mapa",
+     "title": "Visualización de datos en mapas",
      "desc": "Vea la ubicación y el estado de los dispositivos en mapas interactivos para apoyar las operaciones de campo y la gestión de activos."
     },
     {
      "img": "product/app/feature-7.png",
      "title": "Gestión de alarmas",
-     "desc": "El monitoreo del estado de los dispositivos en tiempo real, con alertas enviadas a la app, ayuda a los equipos a responder más rápido a las alertas compatibles y a mantener los equipos en funcionamiento."
+     "desc": "El monitoreo del estado de los dispositivos en tiempo real, con alertas enviadas a la app, ayuda a los equipos a responder más rápido a las alertas activadas y a mantener los equipos en funcionamiento."
     },
     {
      "img": "product/app/feature-8.png",
@@ -11978,12 +11978,12 @@ export const productContent = { ...productContentBase, es: {
      "id": "287",
      "img": "product/products/287.png",
      "name": "Accesorios IoT",
-     "conn": "Signal Coupling | 2.4 GHz | 5.8 GHz"
+     "conn": "Signal Coupling | 2,4 GHz | 5,8 GHz"
     },
     {
      "id": "286",
      "img": "product/products/286.png",
-     "name": "Sensor antideflagrante 2 en 1",
+     "name": "Sensor 2 en 1 para áreas peligrosas",
      "conn": "Temperatura | Presión | Comunicación 4G"
     }
    ]
@@ -12698,12 +12698,12 @@ export const productContent = { ...productContentBase, es: {
      "id": "287",
      "img": "product/products/287.png",
      "name": "Accesorios IoT",
-     "conn": "Signal Coupling | 2.4 GHz | 5.8 GHz"
+     "conn": "Signal Coupling | 2,4 GHz | 5,8 GHz"
     },
     {
      "id": "286",
      "img": "product/products/286.png",
-     "name": "Sensor antideflagrante 2 en 1",
+     "name": "Sensor 2 en 1 para áreas peligrosas",
      "conn": "Temperatura | Presión | Comunicación 4G"
     }
    ]
@@ -12784,7 +12784,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/270-f1.png",
-     "text": "Precisión: ±0.5°C (personalizable a ±0.1°C)"
+     "text": "Precisión: ±0,5 °C (configurable hasta ±0,1 °C)"
     },
     {
      "icon": "product/details/270-f2.png",
@@ -12792,7 +12792,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/270-f3.png",
-     "text": "Amplio rango: -200°C a +800°C"
+     "text": "Amplio rango: -200 °C a +800 °C"
     },
     {
      "icon": "product/details/270-f4.png",
@@ -12816,7 +12816,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "Los procesadores de microconsumo y la optimización algorítmica otorgan al sensor una vida útil de diseño de hasta 10 años con un intervalo de reporte de una hora en condiciones de prueba especificadas, reduciendo el mantenimiento rutinario.",
+   "specsDesc": "Los procesadores de microconsumo y la optimización algorítmica otorgan al sensor una vida útil de diseño de hasta 10 años con un intervalo de transmisión de una hora en condiciones de prueba especificadas, reduciendo el mantenimiento rutinario.",
    "specs": [
     [
      "Modelos de producto",
@@ -12824,11 +12824,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Rango de medición",
-     "-200°C to 800°C"
+     "-de 200 °C a 800 °C"
     ],
     [
      "Precisión",
-     "±0.5°C (customizable to ±0.1°C)"
+     "±0,5 °C (customizable to ±0,1 °C)"
     ],
     [
      "Protocolo",
@@ -12844,7 +12844,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Duración de la batería",
-     "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte."
+     "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión."
     ],
     [
      "Instalación",
@@ -12858,14 +12858,14 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Rango de medición",
-     "value": "-200°C to 800°C",
+     "value": "-de 200 °C a 800 °C",
      "unitText": "grado Celsius",
      "minValue": -200.0,
      "maxValue": 800.0
     },
     {
      "name": "Precisión",
-     "value": "±0.5°C (customizable to ±0.1°C)",
+     "value": "±0,5 °C (customizable to ±0,1 °C)",
      "unitText": "grado Celsius"
     },
     {
@@ -12882,7 +12882,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Duración de la batería",
-     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte.",
+     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión.",
      "unitText": "año",
      "minValue": 10.0
     },
@@ -12934,7 +12934,7 @@ export const productContent = { ...productContentBase, es: {
     "276",
     "275"
    ],
-   "summary": "El sensor de temperatura de la Serie H de Hitelecom es un sensor de temperatura industrial inalámbrico para monitoreo remoto de -200°C a 800°C. Ofrece una precisión de ±0.5°C (personalizable a ±0.1°C), está diseñado para más de 10 años de duración de la batería con reportes cada hora en condiciones de prueba especificadas, y carga las lecturas por 4G o NB-IoT a Hitelecom Cloud o a plataformas privadas mediante MQTT.",
+   "summary": "El sensor de temperatura de la Serie H de Hitelecom es un sensor de temperatura industrial inalámbrico para monitoreo remoto de -200 °C a 800 °C. Ofrece una precisión de ±0,5 °C (configurable hasta ±0,1 °C), está diseñado para más de 10 años de duración de la batería con reportes cada hora en condiciones de prueba especificadas, y transmite las lecturas por 4G o NB-IoT a Hitelecom Cloud o a plataformas privadas mediante MQTT.",
    "sku": "H200/H300/H500",
    "applications": [
     {
@@ -12979,19 +12979,19 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Cuál es el rango de medición del sensor de temperatura de la Serie H?",
-     "a": "El rango estándar es de -200°C a 800°C con una precisión de ±0.5°C; la precisión de ±0.1°C está disponible bajo pedido. La conexión de sonda de tres hilos mantiene las lecturas estables en plantas con ruido eléctrico."
+     "a": "El rango estándar es de -200 °C a 800 °C con una precisión de ±0,5 °C; la precisión de ±0,1 °C está disponible bajo pedido. La conexión de sonda de tres hilos mantiene las lecturas estables en plantas con ruido eléctrico."
     },
     {
      "q": "¿Cuánto dura la batería?",
-     "a": "El transmisor está diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora; la vida real varía con las condiciones de la red, la temperatura y la frecuencia de reporte. El transmisor funciona completamente a batería; solo se requiere el cable de la sonda: no se necesita cable de red eléctrica ni de señal en el punto de instalación."
+     "a": "El transmisor está diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora; la vida real varía con las condiciones de la red, la temperatura y la frecuencia de transmisión. El transmisor funciona completamente a batería; solo se requiere el cable de la sonda: no se necesita cable de red eléctrica ni de señal en el punto de instalación."
     },
     {
-     "q": "¿Cómo reporta los datos el sensor?",
+     "q": "¿Cómo transmite los datos el sensor?",
      "a": "Transmite por 4G o NB-IoT mediante MQTT a Hitelecom Cloud, a la nube del cliente o a una implementación privada, y envía alertas cuando la temperatura supera los umbrales configurados."
     },
     {
      "q": "¿Puede personalizarse el sensor para nuestra aplicación?",
-     "a": "Sí. El tipo de sonda, la longitud de la sonda, la longitud del cable, el intervalo de reporte y la carcasa pueden personalizarse dentro del programa OEM/ODM de Hitelecom. Contacte a ventas con sus condiciones de trabajo."
+     "a": "Sí. El tipo de sonda, la longitud de la sonda, la longitud del cable, el intervalo de transmisión y la carcasa pueden personalizarse dentro del programa OEM/ODM de Hitelecom. Contacte a ventas con sus condiciones de trabajo."
     }
    ],
    "dateModified": "2026-09-02"
@@ -13007,7 +13007,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/274-f1.png",
-     "text": "±0.5% FS (personalización de alta precisión)"
+     "text": "±0,5% FS (personalización de alta precisión)"
     },
     {
      "icon": "product/details/274-f2.png",
@@ -13047,7 +13047,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Rango de medición",
-     "0–1, 1.6, 3.5, 7, 10, or 20 MPa"
+     "0–1, 1,6, 3,5, 7, 10, or 20 MPa"
     ],
     [
      "Sobrecarga",
@@ -13055,7 +13055,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Estabilidad",
-     "±0.2% FS/year"
+     "±0,2% FS/year"
     ],
     [
      "Protocolo",
@@ -13063,15 +13063,15 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Temperatura de operación",
-     "-20°C to +80°C"
+     "-de 20 °C a +80 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-20°C to +85°C"
+     "-de 20 °C a +85 °C"
     ],
     [
      "Duración de la batería",
-     "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte."
+     "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión."
     ],
     [
      "Instalación",
@@ -13085,7 +13085,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Rango de medición",
-     "value": "0–1, 1.6, 3.5, 7, 10, or 20 MPa"
+     "value": "0–1, 1,6, 3,5, 7, 10, or 20 MPa"
     },
     {
      "name": "Sobrecarga",
@@ -13093,7 +13093,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Estabilidad",
-     "value": "±0.2% FS/year"
+     "value": "±0,2% FS/year"
     },
     {
      "name": "Protocolo",
@@ -13101,21 +13101,21 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-20°C to +80°C",
+     "value": "-de 20 °C a +80 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 80.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-20°C to +85°C",
+     "value": "-de 20 °C a +85 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 85.0
     },
     {
      "name": "Duración de la batería",
-     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte.",
+     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión.",
      "unitText": "año",
      "minValue": 10.0
     },
@@ -13171,7 +13171,7 @@ export const productContent = { ...productContentBase, es: {
     "276",
     "275"
    ],
-   "summary": "El sensor de presión de la Serie H de Hitelecom es un transmisor de presión industrial inalámbrico para tuberías, bombas y tanques. Los rangos de escala completa disponibles son 1, 1.6, 3.5, 7, 10 y 20 MPa con una estabilidad de ±0.2% FS/año y tolerancia a sobrecarga de 2× la escala completa, reportando por 4G o NB-IoT. La batería está diseñada para más de 10 años de vida con un intervalo de reporte de una hora en condiciones de prueba especificadas.",
+   "summary": "El sensor de presión de la Serie H de Hitelecom es un transmisor de presión industrial inalámbrico para tuberías, bombas y tanques. Los rangos de escala completa disponibles son 1, 1,6, 3,5, 7, 10 y 20 MPa con una estabilidad de ±0,2% FS/año y tolerancia a sobrecarga de 2× la escala completa, reportando por 4G o NB-IoT. La batería está diseñada para más de 10 años de vida con un intervalo de transmisión de una hora en condiciones de prueba especificadas.",
    "sku": "H200/H300/H500",
    "applications": [
     {
@@ -13196,7 +13196,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Hidráulica industrial",
-     "desc": "Sigue las curvas de presión de prensas hidráulicas y equipos para apoyar el mantenimiento basado en condición.",
+     "desc": "Sigue las curvas de presión de prensas hidráulicas y equipos para apoyar el mantenimiento basado en el estado.",
      "img": "product/details/274-scen4.jpg"
     },
     {
@@ -13216,19 +13216,19 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Qué rangos de presión están disponibles?",
-     "a": "Los rangos estándar son 0-1 MPa, 1.6 MPa, 3.5 MPa, 7 MPa, 10 MPa y 20 MPa. El sensor tolera una sobrecarga de 2× la escala completa y tiene una estabilidad a largo plazo de ±0.2% FS/año (una métrica distinta de la precisión de medición)."
+     "a": "Los rangos estándar son 0-1 MPa, 1,6 MPa, 3,5 MPa, 7 MPa, 10 MPa y 20 MPa. El sensor tolera una sobrecarga de 2× la escala completa y tiene una estabilidad a largo plazo de ±0,2% FS/año (una métrica distinta de la precisión de medición)."
     },
     {
      "q": "¿Puede medir presión tanto de gas como de líquido?",
      "a": "La versión estándar es adecuada para medios comunes de gas y líquido compatibles con la conexión de proceso; para medios corrosivos o especiales, contacte a Hitelecom para confirmar los materiales en contacto con el medio."
     },
     {
-     "q": "¿Cómo reporta las lecturas?",
+     "q": "¿Cómo transmite las lecturas?",
      "a": "Envía las lecturas por 4G o NB-IoT mediante MQTT a Hitelecom Cloud, a la nube del cliente o a una plataforma privada, con umbrales y alertas configurables."
     },
     {
      "q": "¿Qué energía necesita en el sitio?",
-     "a": "Ninguna. La batería interna está diseñada para más de 10 años de vida con un intervalo de reporte de una hora en condiciones de prueba especificadas —la vida real varía con la cobertura de red, la temperatura y la frecuencia de reporte—, por lo que el transmisor puede montarse donde el cableado no es práctico."
+     "a": "Ninguna. La batería interna está diseñada para más de 10 años de vida con un intervalo de transmisión de una hora en condiciones de prueba especificadas —la vida real varía con la cobertura de red, la temperatura y la frecuencia de transmisión—, por lo que el transmisor puede montarse donde el cableado no es práctico."
     }
    ],
    "dateModified": "2026-09-02"
@@ -13284,19 +13284,19 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Conductividad",
-     "0–1,000 µS/cm (±3%)"
+     "0–1 000 µS/cm (±3%)"
     ],
     [
      "pH",
-     "0–14 (0.01 resolution)"
+     "0–14 (0,01 resolution)"
     ],
     [
      "Humedad del suelo",
-     "0–100% (±3%; not suitable for permafrost layers)"
+     "0–100 % (±3 %; no apto para capas de permafrost)"
     ],
     [
      "NPK",
-     "0–1,999 mg/kg (±2% FS)"
+     "0–1 999 mg/kg (±2% FS)"
     ],
     [
      "Protocolo",
@@ -13308,7 +13308,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Duración de la batería",
-     "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte."
+     "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión."
     ],
     [
      "Instalación",
@@ -13322,25 +13322,25 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Conductividad",
-     "value": "0–1,000 µS/cm (±3%)",
+     "value": "0–1 000 µS/cm (±3%)",
      "unitText": "microsiemens por centímetro",
      "minValue": 0.0,
      "maxValue": 1000.0
     },
     {
      "name": "pH",
-     "value": "0–14 (0.01 resolution)"
+     "value": "0–14 (0,01 resolution)"
     },
     {
      "name": "Humedad del suelo",
-     "value": "0–100% (±3%; not suitable for permafrost layers)",
+     "value": "0–100 % (±3 %; no apto para capas de permafrost)",
      "unitText": "porcentaje",
      "minValue": 0.0,
      "maxValue": 100.0
     },
     {
      "name": "NPK",
-     "value": "0–1,999 mg/kg (±2% FS)",
+     "value": "0–1 999 mg/kg (±2% FS)",
      "unitText": "miligramo por kilogramo",
      "minValue": 0.0,
      "maxValue": 1999.0
@@ -13355,7 +13355,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Duración de la batería",
-     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte.",
+     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión.",
      "unitText": "año",
      "minValue": 10.0
     },
@@ -13403,7 +13403,7 @@ export const productContent = { ...productContentBase, es: {
     "276",
     "275"
    ],
-   "summary": "El sensor de suelo de la Serie H de Hitelecom es una sonda inalámbrica multiparámetro para la agricultura y el monitoreo de la tierra. Un solo dispositivo mide la humedad del suelo, la temperatura, la conductividad (CE), el pH y los nutrientes NPK, reporta por 4G o NB-IoT y está diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en condiciones de prueba especificadas, con una carcasa IP68 diseñada para enterramiento a largo plazo.",
+   "summary": "El sensor de suelo de la Serie H de Hitelecom es una sonda inalámbrica multiparámetro para la agricultura y el monitoreo de la tierra. Un solo dispositivo mide la humedad del suelo, la temperatura, la conductividad (CE), el pH y los nutrientes NPK, transmite por 4G o NB-IoT y está diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en condiciones de prueba especificadas, con una carcasa IP68 diseñada para enterramiento a largo plazo.",
    "sku": "H200/H300/H500",
    "applications": [
     {
@@ -13443,11 +13443,11 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Qué parámetros del suelo mide la Serie H?",
-     "a": "Humedad del suelo (0–100%, ±3%), temperatura, conductividad (0–1,000 µS/cm, ±3%), pH (0–14, resolución de 0.01) y nutrientes NPK (0–1,999 mg/kg, ±2% FS): todo en una sola sonda."
+     "a": "Humedad del suelo (0–100%, ±3%), temperatura, conductividad (0–1 000 µS/cm, ±3%), pH (0–14, resolución de 0,01) y nutrientes NPK (0–1 999 mg/kg, ±2% FS): todo en una sola sonda."
     },
     {
      "q": "¿Puede la sonda permanecer enterrada en exteriores todo el año?",
-     "a": "Sí. La carcasa IP68 está diseñada para el enterramiento a largo plazo, y la batería está diseñada para más de 10 años de vida con un intervalo de reporte de una hora en condiciones de prueba especificadas, lo que reduce el mantenimiento rutinario entre temporadas."
+     "a": "Sí. La carcasa IP68 está diseñada para el enterramiento a largo plazo, y la batería está diseñada para más de 10 años de vida con un intervalo de transmisión de una hora en condiciones de prueba especificadas, lo que reduce el mantenimiento rutinario entre temporadas."
     },
     {
      "q": "¿Cómo se transmiten los datos del suelo?",
@@ -13455,7 +13455,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "q": "¿Es adecuado para suelos alcalinos o salinos?",
-     "a": "El canal de CE cubre 0–1,000 µS/cm. Para suelos salinos o medios especiales, confirme el rango de CE requerido con Hitelecom."
+     "a": "El canal de CE cubre 0–1 000 µS/cm. Para suelos salinos o medios especiales, confirme el rango de CE requerido con Hitelecom."
     }
    ],
    "dateModified": "2026-09-02"
@@ -13471,7 +13471,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/281-f1.png",
-     "text": "±0.5% FS (personalización de alta precisión)"
+     "text": "±0,5% FS (personalización de alta precisión)"
     },
     {
      "icon": "product/details/281-f2.png",
@@ -13479,7 +13479,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/281-f3.png",
-     "text": "Amplio rango: 0–200 m (personalizable)"
+     "text": "Amplio rango: 0–200 m (configurable)"
     },
     {
      "icon": "product/details/281-f4.png",
@@ -13511,15 +13511,15 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Rango",
-     "0–200 m (Customizable)"
+     "0–200 m (Configurable)"
     ],
     [
      "Precisión",
-     "±0.5% FS (mayor precisión personalizable)"
+     "±0,5% FS (mayor precisión configurable)"
     ],
     [
      "Estabilidad",
-     "±0.2% FS/year"
+     "±0,2% FS/year"
     ],
     [
      "Protocolo",
@@ -13527,15 +13527,15 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Temperatura de operación",
-     "-20°C to +70°C"
+     "-de 20 °C a +70 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-20°C to +80°C"
+     "-de 20 °C a +80 °C"
     ],
     [
      "Duración de la batería",
-     "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte."
+     "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión."
     ],
     [
      "Instalación",
@@ -13549,16 +13549,16 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Rango",
-     "value": "0–200 m (Customizable)"
+     "value": "0–200 m (Configurable)"
     },
     {
      "name": "Precisión",
-     "value": "±0.5% FS (mayor precisión personalizable)",
+     "value": "±0,5% FS (mayor precisión configurable)",
      "unitText": "porcentaje"
     },
     {
      "name": "Estabilidad",
-     "value": "±0.2% FS/year"
+     "value": "±0,2% FS/year"
     },
     {
      "name": "Protocolo",
@@ -13566,21 +13566,21 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-20°C to +70°C",
+     "value": "-de 20 °C a +70 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 70.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-20°C to +80°C",
+     "value": "-de 20 °C a +80 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 80.0
     },
     {
      "name": "Duración de la batería",
-     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte.",
+     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión.",
      "unitText": "año",
      "minValue": 10.0
     },
@@ -13610,7 +13610,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "img": "product/details/281-scen5.jpg",
-     "label": "Aguas residuales médicas"
+     "label": "Aguas residuales hospitalarias"
     },
     {
      "img": "product/details/281-scen6.jpg",
@@ -13636,7 +13636,7 @@ export const productContent = { ...productContentBase, es: {
     "276",
     "275"
    ],
-   "summary": "El sensor de nivel de la Serie H de Hitelecom es un transmisor de nivel de líquido inalámbrico para embalses, ríos, tanques y pozos. Cubre 0–200 m (personalizable) con una precisión de ±0.5% FS y una estabilidad de ±0.2% FS/año, está diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en condiciones de prueba especificadas, y reporta por 4G o NB-IoT.",
+   "summary": "El sensor de nivel de la Serie H de Hitelecom es un transmisor de nivel de líquido inalámbrico para embalses, ríos, tanques y pozos. Cubre 0–200 m (configurable) con una precisión de ±0,5% FS y una estabilidad de ±0,2% FS/año, está diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en condiciones de prueba especificadas, y transmite por 4G o NB-IoT.",
    "sku": "H200/H300/H500",
    "applications": [
     {
@@ -13670,7 +13670,7 @@ export const productContent = { ...productContentBase, es: {
      "img": "product/details/281-scen2.jpg"
     },
     {
-     "name": "Aguas residuales médicas",
+     "name": "Aguas residuales hospitalarias",
      "desc": "Sigue los niveles de los tanques de recolección en las estaciones de aguas residuales de hospitales.",
      "img": "product/details/281-scen5.jpg"
     }
@@ -13681,15 +13681,15 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Qué rango de nivel cubre la Serie H?",
-     "a": "0-200 m de serie, personalizable más allá de eso. La precisión es de ±0.5% FS con una estabilidad de ±0.2% FS por año para el monitoreo sin supervisión a largo plazo."
+     "a": "0-200 m de serie, configurable más allá de eso. La precisión es de ±0,5% FS con una estabilidad de ±0,2% FS por año para el monitoreo sin supervisión a largo plazo."
     },
     {
      "q": "¿Cómo se alimenta el sensor en sitios remotos?",
-     "a": "Con batería interna —diseñada para más de 10 años de vida con un intervalo de reporte de una hora en condiciones de prueba especificadas—, de modo que en las implementaciones adecuadas los embalses y las estaciones fluviales pueden no necesitar panel solar ni cableado."
+     "a": "Con batería interna —diseñada para más de 10 años de vida con un intervalo de transmisión de una hora en condiciones de prueba especificadas—, de modo que en las implementaciones adecuadas los embalses y las estaciones fluviales pueden no necesitar panel solar ni cableado."
     },
     {
      "q": "¿Cómo obtenemos los datos de nivel?",
-     "a": "El transmisor reporta por 4G o NB-IoT mediante MQTT a Hitelecom Cloud o a su propia plataforma, con alarmas de nivel alto y bajo."
+     "a": "El transmisor transmite por 4G o NB-IoT mediante MQTT a Hitelecom Cloud o a su propia plataforma, con alarmas de nivel alto y bajo."
     },
     {
      "q": "¿Puede personalizarse para nuestro tanque o pozo?",
@@ -13709,7 +13709,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/282-f1.png",
-     "text": "Precisión: ±0.005° (personalizable)"
+     "text": "Precisión: ±0 005° (configurable)"
     },
     {
      "icon": "product/details/282-f2.png",
@@ -13717,7 +13717,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/282-f3.png",
-     "text": "Resolución: 0.001°"
+     "text": "Resolución: 0 001°"
     },
     {
      "icon": "product/details/282-f4.png",
@@ -13741,7 +13741,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "Los elementos de detección de alta sensibilidad, la sincronización de datos en tiempo real y un diseño robusto y duradero respaldan un monitoreo de inclinación preciso y confiable. Diseñado para hasta 10 años de operación con un intervalo de reporte de una hora en condiciones de prueba especificadas, reduciendo el mantenimiento rutinario.",
+   "specsDesc": "Los elementos de detección de alta sensibilidad, la sincronización de datos en tiempo real y un diseño robusto y duradero respaldan un monitoreo de inclinación preciso y confiable. Diseñado para hasta 10 años de operación con un intervalo de transmisión de una hora en condiciones de prueba especificadas, reduciendo el mantenimiento rutinario.",
    "specs": [
     [
      "Modelos de producto",
@@ -13753,11 +13753,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Precisión",
-     "±0.005° (personalizable)"
+     "±0 005° (configurable)"
     ],
     [
      "Resolución",
-     "0.001°"
+     "0 001°"
     ],
     [
      "Protocolo",
@@ -13765,15 +13765,15 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Temperatura de operación",
-     "-20°C to +70°C"
+     "-de 20 °C a +70 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-20°C to +80°C"
+     "-de 20 °C a +80 °C"
     ],
     [
      "Duración de la batería",
-     "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte."
+     "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión."
     ],
     [
      "Instalación",
@@ -13801,7 +13801,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "img": "product/details/282-scen5.jpg",
-     "label": "Solar tracking system"
+     "label": "Sistema de seguimiento solar"
     },
     {
      "img": "product/details/282-scen6.jpg",
@@ -13827,7 +13827,7 @@ export const productContent = { ...productContentBase, es: {
     "276",
     "275"
    ],
-   "summary": "El sensor de inclinación Serie H de Hitelecom es un inclinómetro IoT inalámbrico para el monitoreo de salud estructural. Mide la inclinación en los ejes X e Y (tres ejes opcional) con una precisión de ±0.005° y una resolución de 0.001°, está diseñado para más de 10 años de duración de la batería con reportes cada hora en condiciones de prueba especificadas, y cuenta con clasificación IP68 para implementación en exteriores a largo plazo. Las opciones de conectividad son 4G, NB-IoT y LoRa.",
+   "summary": "El sensor de inclinación Serie H de Hitelecom es un inclinómetro IoT inalámbrico para el monitoreo de la integridad estructural. Mide la inclinación en los ejes X e Y (tres ejes opcional) con una precisión de ±0 005° y una resolución de 0 001°, está diseñado para más de 10 años de duración de la batería con reportes cada hora en condiciones de prueba especificadas, y cuenta con clasificación IP68 para implementación en exteriores a largo plazo. Las opciones de conectividad son 4G, NB-IoT y LoRa.",
    "sku": "H200/H300/H500",
    "specsStructured": [
     {
@@ -13840,12 +13840,12 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Precisión",
-     "value": "±0.005°",
+     "value": "±0 005°",
      "unitText": "grado"
     },
     {
      "name": "Resolución",
-     "value": "0.001°",
+     "value": "0 001°",
      "unitText": "grado"
     },
     {
@@ -13858,21 +13858,21 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-20°C to 70°C",
+     "value": "-de 20 °C a 70 °C",
      "unitText": "grado Celsius",
      "minValue": -20,
      "maxValue": 70
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-20°C to 80°C",
+     "value": "-de 20 °C a 80 °C",
      "unitText": "grado Celsius",
      "minValue": -20,
      "maxValue": 80
     },
     {
      "name": "Duración de la batería",
-     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en condiciones de prueba especificadas"
+     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en condiciones de prueba especificadas"
     },
     {
      "name": "Grado de protección",
@@ -13954,15 +13954,15 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Qué estructuras puede monitorear el sensor de inclinación de la Serie H?",
-     "a": "El sensor de inclinación de la Serie H se implementa en taludes y terraplenes, infraestructura ferroviaria, túneles, puentes, estructuras de metro, sitios de construcción y obras temporales, diques marinos y presas, edificios patrimoniales y pagodas antiguas, árboles urbanos, postes de alumbrado, torres de transmisión, torres de telecomunicaciones y estanterías de almacén. Su clasificación IP68 y su larga duración de batería lo hacen adecuado para la instalación prolongada en exteriores; la duración de la batería depende del intervalo de reporte, la cobertura de red y las condiciones del sitio."
+     "a": "El sensor de inclinación de la Serie H se implementa en taludes y terraplenes, infraestructura ferroviaria, túneles, puentes, estructuras de metro, sitios de construcción y obras temporales, diques marinos y presas, edificios patrimoniales y pagodas antiguas, árboles urbanos, postes de alumbrado, torres de transmisión, torres de telecomunicaciones y estanterías de almacén. Su clasificación IP68 y su larga duración de batería lo hacen adecuado para la instalación prolongada en exteriores; la duración de la batería depende del intervalo de transmisión, la cobertura de red y las condiciones del sitio."
     },
     {
      "q": "¿Qué precisión tiene el sensor de inclinación de la Serie H?",
-     "a": "La precisión estándar es de ±0.005° con una resolución de 0.001° en los ejes X e Y. Hay una configuración de tres ejes disponible bajo pedido, y la precisión puede personalizarse para aplicaciones que requieran una tolerancia más estricta."
+     "a": "La precisión estándar es de ±0 005° con una resolución de 0 001° en los ejes X e Y. Hay una configuración de tres ejes disponible bajo pedido, y la precisión puede personalizarse para aplicaciones que requieran una tolerancia más estricta."
     },
     {
      "q": "¿Cuánto dura la batería?",
-     "a": "Diseñado para más de 10 años con un intervalo de reporte de una hora en condiciones de prueba especificadas. La duración de la batería varía con la frecuencia de reporte; un reporte más frecuente acorta la vida útil. La mayoría de las configuraciones funcionan con batería sin red eléctrica ni panel solar; confirme las opciones de alimentación para su configuración."
+     "a": "Diseñado para más de 10 años con un intervalo de transmisión de una hora en condiciones de prueba especificadas. La duración de la batería varía con la frecuencia de transmisión; un reporte más frecuente acorta la vida útil. La mayoría de las configuraciones funcionan con batería sin red eléctrica ni panel solar; confirme las opciones de alimentación para su configuración."
     },
     {
      "q": "¿Qué tecnología inalámbrica debo elegir: 4G, NB-IoT o LoRa?",
@@ -13970,7 +13970,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "q": "¿Puede instalarse en estructuras patrimoniales sin perforar?",
-     "a": "Sí. El sensor admite orejetas de montaje, abrazadera de poste o montaje ranurado. Para estructuras protegidas, el montaje con abrazadera o adhesivo evita perforar la fábrica del edificio. Contacte a Hitelecom para obtener orientación de montaje específica del sitio."
+     "a": "Sí. El sensor admite orejetas de montaje, abrazadera de poste o montaje ranurado. Para estructuras protegidas, el montaje con abrazadera o adhesivo evita perforar la estructura o el material original del edificio. Contacte a Hitelecom para obtener orientación de montaje específica del sitio."
     }
    ],
    "dateModified": "2026-09-02"
@@ -13986,7 +13986,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/283-f1.png",
-     "text": "Precisión: ±1 mm (personalizable)"
+     "text": "Precisión: ±1 mm (configurable)"
     },
     {
      "icon": "product/details/283-f2.png",
@@ -13994,7 +13994,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/283-f3.png",
-     "text": "Amplio rango: 0.3–50 m (personalizable)"
+     "text": "Amplio rango: 0,3–50 m (configurable)"
     },
     {
      "icon": "product/details/283-f4.png",
@@ -14018,7 +14018,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "La medición de distancia por radar de alta precisión, los procesadores avanzados de bajo consumo y los algoritmos embebidos optimizados otorgan al sensor una vida útil de diseño de hasta 10 años con un intervalo de reporte de una hora en condiciones de prueba especificadas, reduciendo el mantenimiento rutinario.",
+   "specsDesc": "La medición de distancia por radar de alta precisión, los procesadores avanzados de bajo consumo y los algoritmos embebidos optimizados otorgan al sensor una vida útil de diseño de hasta 10 años con un intervalo de transmisión de una hora en condiciones de prueba especificadas, reduciendo el mantenimiento rutinario.",
    "specs": [
     [
      "Modelos de producto",
@@ -14026,11 +14026,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Rango",
-     "0.3–50 m (Customizable)"
+     "0,3–50 m (Configurable)"
     ],
     [
      "Precisión",
-     "±1 mm (personalizable)"
+     "±1 mm (configurable)"
     ],
     [
      "Resolución",
@@ -14042,15 +14042,15 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Temperatura de operación",
-     "-20°C to +70°C"
+     "-de 20 °C a +70 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-20°C to +80°C"
+     "-de 20 °C a +80 °C"
     ],
     [
      "Duración de la batería",
-     "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte."
+     "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión."
     ],
     [
      "Instalación",
@@ -14064,13 +14064,13 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Rango",
-     "value": "0.3–50 m (Customizable)",
+     "value": "0,3–50 m (Configurable)",
      "minValue": 0.3,
      "maxValue": 50.0
     },
     {
      "name": "Precisión",
-     "value": "±1 mm (personalizable)",
+     "value": "±1 mm (configurable)",
      "unitText": "milímetro"
     },
     {
@@ -14084,21 +14084,21 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-20°C to +70°C",
+     "value": "-de 20 °C a +70 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 70.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-20°C to +80°C",
+     "value": "-de 20 °C a +80 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 80.0
     },
     {
      "name": "Duración de la batería",
-     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte.",
+     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión.",
      "unitText": "año",
      "minValue": 10.0
     },
@@ -14154,7 +14154,7 @@ export const productContent = { ...productContentBase, es: {
     "276",
     "275"
    ],
-   "summary": "El sensor de distancia de la Serie H de Hitelecom es un sensor de distancia por radar inalámbrico con precisión de nivel milimétrico. Mide de 0.3 a 50 m con una precisión de ±1 mm y una resolución de 1 mm, resiste las interferencias en sitios industriales exigentes y reporta por 4G o NB-IoT, con una batería diseñada para más de 10 años de vida con un intervalo de reporte de una hora en condiciones de prueba especificadas.",
+   "summary": "El sensor de distancia de la Serie H de Hitelecom es un sensor de distancia por radar inalámbrico con precisión de nivel milimétrico. Mide de 0,3 a 50 m con una precisión de ±1 mm y una resolución de 1 mm, resiste las interferencias en sitios industriales exigentes y transmite por 4G o NB-IoT, con una batería diseñada para más de 10 años de vida con un intervalo de transmisión de una hora en condiciones de prueba especificadas.",
    "sku": "H200/H300/H500",
    "applications": [
     {
@@ -14194,19 +14194,19 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Qué rango de distancia y precisión ofrece?",
-     "a": "Ofrece un rango de medición de 0.3–50 m (personalizable) con una precisión de ±1 mm y una resolución de 1 mm, adecuado para el monitoreo de nivel por distancia y de desplazamiento."
+     "a": "Ofrece un rango de medición de 0,3–50 m (configurable) con una precisión de ±1 mm y una resolución de 1 mm, adecuado para el monitoreo de nivel por distancia y de desplazamiento."
     },
     {
      "q": "¿El polvo o la humedad afectan la medición?",
-     "a": "La medición basada en radar está diseñada para mantener el rendimiento de la medición en sitios polvorientos o húmedos como las tolvas de carbón y los registros; la carcasa IP68 protege el propio dispositivo."
+     "a": "La medición basada en radar está diseñada para mantener el rendimiento de la medición en sitios polvorientos o húmedos como las tolvas de carbón y los pozos de registro; la carcasa IP68 protege el propio dispositivo."
     },
     {
      "q": "¿Cómo se alimenta y se conecta?",
-     "a": "Utiliza una batería interna diseñada para más de 10 años de vida con un intervalo de reporte de una hora en condiciones de prueba especificadas, con enlace ascendente 4G o NB-IoT mediante MQTT a Hitelecom Cloud o a plataformas privadas."
+     "a": "Utiliza una batería interna diseñada para más de 10 años de vida con un intervalo de transmisión de una hora en condiciones de prueba especificadas, con enlace ascendente 4G o NB-IoT mediante MQTT a Hitelecom Cloud o a plataformas privadas."
     },
     {
      "q": "¿Puede ampliarse el rango más allá de 50 m?",
-     "a": "Sí, el rango y el montaje son personalizables. Indique a Hitelecom su distancia objetivo y el medio para una propuesta de configuración."
+     "a": "Sí, el rango y el montaje son configurables. Indique a Hitelecom su distancia objetivo y el medio para una propuesta de configuración."
     }
    ],
    "dateModified": "2026-09-02"
@@ -14214,7 +14214,7 @@ export const productContent = { ...productContentBase, es: {
   "284": {
    "series": "Serie H · Sensor de vibración",
    "tagline": "Precisión | Rango | Consumo ultrabajo",
-   "desc": "Los sensores de vibración de Hitelecom monitorean y analizan la vibración de equipos mecánicos en entornos de Industria 4.0, proporcionando datos que respaldan la gestión de la salud de los equipos y el mantenimiento basado en condición para ayudar a reducir el tiempo de inactividad no planificado.",
+   "desc": "Los sensores de vibración de Hitelecom monitorean y analizan la vibración de equipos mecánicos en entornos de Industria 4,0, proporcionando datos que respaldan la gestión de la salud de los equipos y el mantenimiento basado en el estado para ayudar a reducir el tiempo de inactividad no planificado.",
    "heroImg": "product/details/284-hero.png",
    "pdf": "/downloads/vibration-sensor-datasheet.pdf",
    "crumbCat": "Monitoreo de vibración",
@@ -14222,7 +14222,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/284-f1.png",
-     "text": "Velocidad de vibración: 0–100 mm/s (personalizable)"
+     "text": "Velocidad de vibración: 0–100 mm/s (configurable)"
     },
     {
      "icon": "product/details/284-f2.png",
@@ -14230,7 +14230,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/284-f3.png",
-     "text": "Amplitud de desplazamiento: 0–1,000 µm (personalizable)"
+     "text": "Amplitud de desplazamiento: 0–1 000 µm (configurable)"
     },
     {
      "icon": "product/details/284-f4.png",
@@ -14254,7 +14254,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "Los procesadores de bajo consumo y la optimización algorítmica otorgan al sensor una vida útil de diseño de hasta 10 años con un intervalo de reporte de una hora en condiciones de prueba especificadas, con un consumo mínimo de energía en cada ciclo de medición.",
+   "specsDesc": "Los procesadores de bajo consumo y la optimización algorítmica otorgan al sensor una vida útil de diseño de hasta 10 años con un intervalo de transmisión de una hora en condiciones de prueba especificadas, con un consumo mínimo de energía en cada ciclo de medición.",
    "specs": [
     [
      "Modelos de producto",
@@ -14262,11 +14262,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Velocidad de vibración",
-     "0–100 mm/s (Customizable)"
+     "0–100 mm/s (Configurable)"
     ],
     [
      "Amplitud de desplazamiento",
-     "0–1,000 µm (Customizable)"
+     "0–1 000 µm (Configurable)"
     ],
     [
      "Precisión",
@@ -14278,15 +14278,15 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Temperatura de operación",
-     "-20°C to +70°C"
+     "-de 20 °C a +70 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-20°C to +80°C"
+     "-de 20 °C a +80 °C"
     ],
     [
      "Duración de la batería",
-     "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte."
+     "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión."
     ],
     [
      "Instalación",
@@ -14300,11 +14300,11 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Velocidad de vibración",
-     "value": "0–100 mm/s (Customizable)"
+     "value": "0–100 mm/s (Configurable)"
     },
     {
      "name": "Amplitud de desplazamiento",
-     "value": "0–1,000 µm (Customizable)"
+     "value": "0–1 000 µm (Configurable)"
     },
     {
      "name": "Precisión",
@@ -14317,21 +14317,21 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-20°C to +70°C",
+     "value": "-de 20 °C a +70 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 70.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-20°C to +80°C",
+     "value": "-de 20 °C a +80 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 80.0
     },
     {
      "name": "Duración de la batería",
-     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte.",
+     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión.",
      "unitText": "año",
      "minValue": 10.0
     },
@@ -14379,17 +14379,17 @@ export const productContent = { ...productContentBase, es: {
     "276",
     "275"
    ],
-   "summary": "El sensor de vibración de la Serie H de Hitelecom es un monitor inalámbrico para maquinaria rotativa y vibración estructural en la Industria 4.0. Mide la velocidad de vibración de 0 a 100 mm/s y la amplitud de desplazamiento de 0–1,000 µm (personalizable) con una precisión de ±1% (calibrado a 80 Hz), reporta por 4G o NB-IoT y está diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en condiciones de prueba especificadas.",
+   "summary": "El sensor de vibración de la Serie H de Hitelecom es un monitor inalámbrico para maquinaria rotativa y vibración estructural en la Industria 4,0. Mide la velocidad de vibración de 0 a 100 mm/s y la amplitud de desplazamiento de 0–1 000 µm (configurable) con una precisión de ±1% (calibrado a 80 Hz), transmite por 4G o NB-IoT y está diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en condiciones de prueba especificadas.",
    "sku": "H200/H300/H500",
    "applications": [
     {
      "name": "Equipos rotativos industriales",
-     "desc": "Las bombas, los ventiladores, los motores y los compresores reciben un seguimiento continuo de la vibración que apoya el mantenimiento basado en condición.",
+     "desc": "Las bombas, los ventiladores, los motores y los compresores reciben un seguimiento continuo de la vibración que apoya el mantenimiento basado en el estado.",
      "img": "product/details/284-scen2.jpg"
     },
     {
      "name": "Instalaciones de semiconductores",
-     "desc": "Monitors vibration-sensitive process tools and clean-room equipment.",
+     "desc": "Monitorea herramientas de proceso sensibles a las vibraciones y equipos de salas limpias.",
      "img": "product/details/284-scen1.jpg"
     },
     {
@@ -14409,7 +14409,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Logística y transporte",
-     "desc": "Shock and vibration recording for sensitive goods in transit.",
+     "desc": "Registro de impactos y vibraciones durante el transporte de mercancías sensibles.",
      "img": "product/details/284-scen6.jpg"
     }
    ],
@@ -14419,15 +14419,15 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Qué magnitudes de vibración mide?",
-     "a": "Velocidad de vibración de 0–100 mm/s y amplitud de desplazamiento de 0–1,000 µm, ambos personalizables, con una precisión de ±1% calibrada a 80 Hz."
+     "a": "Velocidad de vibración de 0–100 mm/s y amplitud de desplazamiento de 0–1 000 µm, ambos configurables, con una precisión de ±1% calibrada a 80 Hz."
     },
     {
-     "q": "¿Cómo apoya el mantenimiento basado en condición?",
+     "q": "¿Cómo apoya el mantenimiento basado en el estado?",
      "a": "Las tendencias continuas de intensidad y amplitud pueden ayudar a identificar tempranamente signos de desgaste de rodamientos, desequilibrio y desalineación, de modo que el mantenimiento pueda programarse por condición y no por calendario."
     },
     {
      "q": "¿Cómo se instala y se alimenta el sensor?",
-     "a": "El montaje con base magnética, roscado, adhesivo o soporte varía según el modelo; confirme el accesorio de montaje para su configuración. El sensor funciona con batería y no requiere cableado de señal ni de energía; está diseñado para más de 10 años de vida con un intervalo de reporte de una hora en condiciones de prueba especificadas."
+     "a": "El montaje con base magnética, roscado, adhesivo o soporte varía según el modelo; confirme el accesorio de montaje para su configuración. El sensor funciona con batería y no requiere cableado de señal ni de energía; está diseñado para más de 10 años de vida con un intervalo de transmisión de una hora en condiciones de prueba especificadas."
     },
     {
      "q": "¿A qué plataforma de datos se conecta?",
@@ -14438,8 +14438,8 @@ export const productContent = { ...productContentBase, es: {
   },
   "285": {
    "series": "Serie H · Sensor de calidad del aire",
-   "tagline": "6-in-1 | Precision | Energy-Efficient",
-   "desc": "El sensor de calidad del aire 6 en 1 de Hitelecom monitorea CO₂, PM2.5, TVOC, temperatura, humedad y presión atmosférica, con canales opcionales de NO₂, SO₂, NH₃ y O₃. Los datos se reportan a la nube por 4G o NB-IoT, y el diseño de bajo mantenimiento apoya el monitoreo ambiental urbano e industrial a largo plazo.",
+   "tagline": "6 en 1 | Precisión | Bajo consumo",
+   "desc": "El sensor de calidad del aire 6 en 1 de Hitelecom monitorea CO₂, PM2,5, TVOC, temperatura, humedad y presión atmosférica, con canales opcionales de NO₂, SO₂, NH₃ y O₃. Los datos se transmiten a la nube por 4G o NB-IoT, y el diseño de bajo mantenimiento apoya el monitoreo ambiental urbano e industrial a largo plazo.",
    "heroImg": "product/details/285-hero.png",
    "pdf": "/downloads/h310-aq041-air-quality-sensor-datasheet.pdf",
    "crumbCat": "Calidad del aire",
@@ -14447,7 +14447,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/285-f1.png",
-     "text": "Monitors CO₂, PM2.5, TVOC, Temperature, Humidity, and Air Pressure"
+     "text": "Mide CO₂, PM2,5, TVOC, temperatura, humedad y presión atmosférica"
     },
     {
      "icon": "product/details/285-f2.png",
@@ -14479,7 +14479,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "Los procesadores de bajo consumo y la optimización algorítmica permiten la recolección simultánea de múltiples canales de calidad del aire. La batería está diseñada para más de 10 años de vida con un intervalo de reporte de cuatro horas en condiciones de prueba especificadas; la vida real varía según la configuración de detección, la cobertura de red y el entorno.",
+   "specsDesc": "Los procesadores de bajo consumo y la optimización algorítmica permiten la recolección simultánea de múltiples canales de calidad del aire. La batería está diseñada para más de 10 años de vida con un intervalo de transmisión de cuatro horas en condiciones de prueba especificadas; la vida real varía según la configuración de detección, la cobertura de red y el entorno.",
    "specs": [
     [
      "Modelos de producto",
@@ -14487,7 +14487,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "CO₂",
-     "400–5,000 ppm"
+     "400–5 000 ppm"
     ],
     [
      "PM2.5 / TVOC",
@@ -14499,7 +14499,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Rango de medición de temperatura",
-     "-40°C to +85°C (±0.2°C)"
+     "-de 40 °C a +85 °C (±0,2 °C)"
     ],
     [
      "Humedad",
@@ -14507,7 +14507,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Presión atmosférica",
-     "30–120 kPa (±0.1 kPa)"
+     "30–120 kPa (±0,1 kPa)"
     ],
     [
      "Protocolo",
@@ -14519,7 +14519,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Duración de la batería",
-     "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de cuatro horas en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte."
+     "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de cuatro horas en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión."
     ],
     [
      "Instalación",
@@ -14533,7 +14533,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "CO₂",
-     "value": "400–5,000 ppm",
+     "value": "400–5 000 ppm",
      "unitText": "partes por millón",
      "minValue": 400.0,
      "maxValue": 5000.0
@@ -14548,7 +14548,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Rango de medición de temperatura",
-     "value": "-40°C to +85°C (±0.2°C)",
+     "value": "-de 40 °C a +85 °C (±0,2 °C)",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 85.0
@@ -14562,7 +14562,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Presión atmosférica",
-     "value": "30–120 kPa (±0.1 kPa)",
+     "value": "30–120 kPa (±0,1 kPa)",
      "unitText": "kilopascal",
      "minValue": 30.0,
      "maxValue": 120.0
@@ -14577,7 +14577,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Duración de la batería",
-     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de cuatro horas en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte.",
+     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de cuatro horas en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión.",
      "unitText": "año",
      "minValue": 10.0
     },
@@ -14633,7 +14633,7 @@ export const productContent = { ...productContentBase, es: {
     "276",
     "275"
    ],
-   "summary": "El sensor de calidad del aire de la Serie H de Hitelecom es un monitor inalámbrico 6 en 1 para entornos urbanos e industriales. Sigue el CO₂ (400–5,000 ppm), el PM2.5, el TVOC, la temperatura (-40°C a +85°C, ±0.2°C), la humedad (0–100% HR) y la presión atmosférica (30–120 kPa), con canales opcionales de NO₂, SO₂, NH₃ y O₃, reportando por 4G o NB-IoT.",
+   "summary": "El sensor de calidad del aire de la Serie H de Hitelecom es un monitor inalámbrico 6 en 1 para entornos urbanos e industriales. Sigue el CO₂ (400–5 000 ppm), el PM2,5, el TVOC, la temperatura (-40 °C a +85 °C, ±0,2 °C), la humedad (0–100% HR) y la presión atmosférica (30–120 kPa), con canales opcionales de NO₂, SO₂, NH₃ y O₃, reportando por 4G o NB-IoT.",
    "sku": "H200/H300/H500",
    "applications": [
     {
@@ -14673,11 +14673,11 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Qué parámetros mide el sensor 6 en 1?",
-     "a": "CO₂ (400–5,000 ppm), PM2.5, TVOC, temperatura (-40°C a +85°C, ±0.2°C), humedad (0–100% HR) y presión atmosférica (30–120 kPa, ±0.1 kPa), con canales opcionales de NO₂, SO₂, NH₃ y O₃ según configuración."
+     "a": "CO₂ (400–5 000 ppm), PM2,5, TVOC, temperatura (-40 °C a +85 °C, ±0,2 °C), humedad (0–100% HR) y presión atmosférica (30–120 kPa, ±0,1 kPa), con canales opcionales de NO₂, SO₂, NH₃ y O₃ según configuración."
     },
     {
      "q": "¿Cuánto tiempo puede funcionar sin supervisión?",
-     "a": "Algunas configuraciones están diseñadas para más de 10 años de duración de la batería con un intervalo de reporte de cuatro horas en condiciones de prueba especificadas; la vida real varía con la configuración de detección, la cobertura de red y el entorno. La carcasa IP68 admite la instalación en exteriores."
+     "a": "Algunas configuraciones están diseñadas para más de 10 años de duración de la batería con un intervalo de transmisión de cuatro horas en condiciones de prueba especificadas; la vida real varía con la configuración de detección, la cobertura de red y el entorno. La carcasa IP68 admite la instalación en exteriores."
     },
     {
      "q": "¿Cómo se entregan los datos de calidad del aire?",
@@ -14713,7 +14713,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/275-f4.png",
-     "text": "Supports local deployment for data control and reliability"
+     "text": "Permite el despliegue local para el control y la confiabilidad de los datos"
     },
     {
      "icon": "product/details/275-f5.png",
@@ -14753,7 +14753,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Sensibilidad",
-     "−140 dBm at 0.292 kbps"
+     "−140 dBm at 0 292 kbps"
     ],
     [
      "Antena",
@@ -14769,11 +14769,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Temperatura de operación",
-     "−40°C to +85°C"
+     "de −40 °C a +85 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "−40°C to +85°C"
+     "de −40 °C a +85 °C"
     ],
     [
      "Instalación",
@@ -14802,7 +14802,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Sensibilidad",
-     "value": "−140 dBm at 0.292 kbps",
+     "value": "−140 dBm at 0 292 kbps",
      "unitText": "decibelios-miliwatio"
     },
     {
@@ -14819,14 +14819,14 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "−40°C to +85°C",
+     "value": "de −40 °C a +85 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 85.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "−40°C to +85°C",
+     "value": "de −40 °C a +85 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 85.0
@@ -14897,13 +14897,13 @@ export const productContent = { ...productContentBase, es: {
      "img": "product/details/275-scen3.jpg"
     },
     {
-     "name": "Sitios de nuevas energías",
+     "name": "Sitios de energías renovables",
      "desc": "Cubre parques solares y sitios eólicos con backhaul de sensores de largo alcance.",
      "img": "product/details/275-scen1.jpg"
     },
     {
      "name": "Automatización industrial",
-     "desc": "Plant-wide sensor collection without per-sensor SIM cards.",
+     "desc": "Recopilación de datos de sensores en toda la planta sin una tarjeta SIM por sensor.",
      "img": "product/details/275-scen4.jpg"
     },
     {
@@ -14912,7 +14912,7 @@ export const productContent = { ...productContentBase, es: {
      "img": "product/details/275-scen5.jpg"
     },
     {
-     "name": "Smart city lighting and assets",
+     "name": "Alumbrado y activos de una ciudad inteligente",
      "desc": "Cobertura a escala de manzana para las redes de sensores municipales.",
      "img": "product/details/275-scen6.jpg"
     },
@@ -14947,7 +14947,7 @@ export const productContent = { ...productContentBase, es: {
   },
   "276": {
    "series": "Serie H66 · Gateway de interior",
-   "tagline": "Industrial | Largo alcance | Full-duplex",
+   "tagline": "Industrial | Largo alcance | Dúplex completo",
    "desc": "El gateway de la serie H66 presenta un diseño duradero para una operación estable en entornos industriales variables. Admite implementación plug-and-play, y puede enviarse una alarma de corte de energía cuando la energía de respaldo y el backhaul siguen disponibles.",
    "heroImg": "product/details/276-hero.png",
    "pdf": "/downloads/indoor-gateway-h66-datasheet.pdf",
@@ -14968,7 +14968,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/276-f4.png",
-     "text": "Supports local deployment for data control and reliability"
+     "text": "Permite el despliegue local para el control y la confiabilidad de los datos"
     },
     {
      "icon": "product/details/276-f5.png",
@@ -15008,7 +15008,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Sensibilidad",
-     "−140 dBm at 0.292 kbps"
+     "−140 dBm at 0 292 kbps"
     ],
     [
      "Antena",
@@ -15024,11 +15024,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Temperatura de operación",
-     "-20°C to +70°C"
+     "-de 20 °C a +70 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-20°C to +80°C"
+     "-de 20 °C a +80 °C"
     ],
     [
      "Instalación",
@@ -15057,7 +15057,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Sensibilidad",
-     "value": "−140 dBm at 0.292 kbps",
+     "value": "−140 dBm at 0 292 kbps",
      "unitText": "decibelios-miliwatio"
     },
     {
@@ -15074,14 +15074,14 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-20°C to +70°C",
+     "value": "-de 20 °C a +70 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 70.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-20°C to +80°C",
+     "value": "-de 20 °C a +80 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 80.0
@@ -15154,17 +15154,17 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Instalaciones industriales",
-     "desc": "Shop-floor sensor networks without running data cables.",
+     "desc": "Redes de sensores en planta sin cableado de datos.",
      "img": "product/details/276-scen4.jpg"
     },
     {
      "name": "Gestión del agua",
-     "desc": "Pump-room and tank-level sensor aggregation inside utility buildings.",
+     "desc": "Agregación de sensores de salas de bombas y de nivel de tanques en edificios de servicios.",
      "img": "product/details/276-scen6.jpg"
     },
     {
      "name": "Instalaciones de transporte",
-     "desc": "Sensor collection inside stations, tunnels and depots.",
+     "desc": "Recopilación de datos de sensores dentro de estaciones, túneles y depósitos.",
      "img": "product/details/276-scen7.jpg"
     }
    ],
@@ -15186,14 +15186,14 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "q": "¿Cuántos sensores puede atender un gateway?",
-     "a": "Un gateway industrial full-duplex puede atender grandes flotas de sensores; la capacidad real depende del intervalo de reporte, la carga útil y las condiciones de la red; comparta su cantidad de dispositivos y Hitelecom dimensionará la red."
+     "a": "Un gateway industrial full-duplex puede atender grandes flotas de sensores; la capacidad real depende del intervalo de transmisión, la carga útil y las condiciones de la red; comparta su cantidad de dispositivos y Hitelecom dimensionará la red."
     }
    ],
    "dateModified": "2026-09-02"
   },
   "277": {
    "series": "Serie H · Estación hidrológica",
-   "tagline": "Solar | Modular | 2–12 Channels",
+   "tagline": "Solar | Modular | 2–12 canales",
    "desc": "Integra de 2 a 12 canales de sensores modulares para la recolección de datos ambientales —el conjunto de canales (nivel, caudal, calidad del agua, meteorología o sensores de calidad del aire) se configura por proyecto— con transmisión en tiempo real a la plataforma Hitelecom Cloud. Los usuarios pueden acceder a los datos hidrológicos y ambientales desde cualquier lugar por internet, lo que apoya el monitoreo y el análisis remotos.",
    "heroImg": "product/details/277-hero.png",
    "pdf": "/downloads/hydrology-monitoring-station-datasheet.pdf",
@@ -15202,7 +15202,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/277-f1.png",
-     "text": "Monitoring with 2-12 Sensor Channels"
+     "text": "Monitoreo con 2–12 canales de sensores"
     },
     {
      "icon": "product/details/277-f2.png",
@@ -15210,7 +15210,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/277-f3.png",
-     "text": "2–12 Configurable Sensor Channels"
+     "text": "2–12 canales de sensores configurables"
     },
     {
      "icon": "product/details/277-f4.png",
@@ -15234,7 +15234,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "Monitorea una variedad de datos hidrológicos, incluidos, entre otros, el nivel del agua, el caudal, la calidad del agua, la temperatura y la humedad, la velocidad y dirección del viento, la presión atmosférica, la lluvia, PM2.5/10 y CO₂, para dar visibilidad a los niveles de agua y a las tendencias y fuentes de la contaminación del aire, brindando un soporte de datos confiable para la protección ambiental y la gestión urbana del agua.",
+   "specsDesc": "Monitorea una variedad de datos hidrológicos, incluidos, entre otros, el nivel del agua, el caudal, la calidad del agua, la temperatura y la humedad, la velocidad y dirección del viento, la presión atmosférica, la lluvia, PM2,5/10 y CO₂, para dar visibilidad a los niveles de agua y a las tendencias y fuentes de la contaminación del aire, brindando un soporte de datos confiable para la protección ambiental y la gestión urbana del agua.",
    "specs": [
     [
      "Modelos de producto",
@@ -15242,11 +15242,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Rango de medición",
-     "Customizable"
+     "Configurable"
     ],
     [
      "Precisión",
-     "Customizable"
+     "Configurable"
     ],
     [
      "Protocolo",
@@ -15262,7 +15262,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Fuente de alimentación",
-     "Solar Power · Grid Electricity"
+     "Energía solar · Red eléctrica"
     ],
     [
      "Instalación",
@@ -15276,11 +15276,11 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Rango de medición",
-     "value": "Customizable"
+     "value": "Configurable"
     },
     {
      "name": "Precisión",
-     "value": "Customizable"
+     "value": "Configurable"
     },
     {
      "name": "Protocolo",
@@ -15296,7 +15296,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Fuente de alimentación",
-     "value": "Solar Power · Grid Electricity"
+     "value": "Energía solar · Red eléctrica"
     },
     {
      "name": "Instalación",
@@ -15324,7 +15324,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "img": "product/details/277-scen5.jpg",
-     "label": "Power Utilities"
+     "label": "Servicios de energía"
     },
     {
      "img": "product/details/277-scen6.jpg",
@@ -15359,7 +15359,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Gestión de embalses y lagos",
-     "desc": "Multi-parameter hydrology logging for dispatch and safety.",
+     "desc": "Registro multiparamétrico para la gestión operativa y la seguridad hidrológica.",
      "img": "solution/67-scen-0.jpg"
     },
     {
@@ -15417,7 +15417,7 @@ export const productContent = { ...productContentBase, es: {
   },
   "278": {
    "series": "Serie H · Estación meteorológica",
-   "tagline": "Modular | Solar-Powered | All-Weather",
+   "tagline": "Modular | Alimentación solar | Para todo tipo de clima",
    "desc": "Integra de 2 a 12 sensores para la recolección de datos ambientales, permitiendo la transmisión en tiempo real a la plataforma Hitelecom Cloud. Permite el monitoreo y el análisis remotos de los datos meteorológicos desde cualquier lugar por internet.",
    "heroImg": "product/details/278-hero.png",
    "pdf": "/downloads/weather-station-datasheet.pdf",
@@ -15426,7 +15426,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/278-f1.png",
-     "text": "Monitoring with 2-12 Sensor Channels"
+     "text": "Monitoreo con 2–12 canales de sensores"
     },
     {
      "icon": "product/details/278-f2.png",
@@ -15458,7 +15458,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "Monitorea parámetros meteorológicos, incluidos temperatura, humedad, velocidad y dirección del viento, presión atmosférica, lluvia, PM2.5/PM10, CO₂, SO₂ y radiación solar (canales según configuración), apoyando el análisis de tendencias ambientales para aplicaciones de protección ambiental y planificación urbana.",
+   "specsDesc": "Monitorea parámetros meteorológicos, incluidos temperatura, humedad, velocidad y dirección del viento, presión atmosférica, lluvia, PM2,5/PM10, CO₂, SO₂ y radiación solar (canales según configuración), apoyando el análisis de tendencias ambientales para aplicaciones de protección ambiental y planificación urbana.",
    "specs": [
     [
      "Modelos de producto",
@@ -15466,11 +15466,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Rango de medición",
-     "Customizable"
+     "Configurable"
     ],
     [
      "Precisión",
-     "Customizable"
+     "Configurable"
     ],
     [
      "Protocolo",
@@ -15486,7 +15486,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Fuente de alimentación",
-     "Solar Power · Grid Electricity"
+     "Energía solar · Red eléctrica"
     ],
     [
      "Instalación",
@@ -15500,11 +15500,11 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Rango de medición",
-     "value": "Customizable"
+     "value": "Configurable"
     },
     {
      "name": "Precisión",
-     "value": "Customizable"
+     "value": "Configurable"
     },
     {
      "name": "Protocolo",
@@ -15520,7 +15520,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Fuente de alimentación",
-     "value": "Solar Power · Grid Electricity"
+     "value": "Energía solar · Red eléctrica"
     },
     {
      "name": "Instalación",
@@ -15590,7 +15590,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Gestión urbana",
-     "desc": "Microclimate monitoring for city services and heat-island studies.",
+     "desc": "Monitoreo del microclima para los servicios municipales y los estudios de isla de calor.",
      "img": "product/details/278-scen5.jpg"
     },
     {
@@ -15633,7 +15633,7 @@ export const productContent = { ...productContentBase, es: {
    "dateModified": "2026-09-02"
   },
   "286": {
-   "series": "Serie H · Sensor antideflagrante de temperatura y presión",
+   "series": "Serie H · Sensor de temperatura y presión para áreas peligrosas",
    "tagline": "Confiabilidad | Industrial | Bajo consumo",
    "desc": "El sensor 2 en 1 de Hitelecom combina el monitoreo de temperatura y presión en un solo dispositivo diseñado para atmósferas donde puede haber gas o polvo inflamable, lo que puede reducir la cantidad de dispositivos y la complejidad de la instalación en áreas peligrosas.",
    "heroImg": "product/details/286-hero.png",
@@ -15643,7 +15643,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/286-f1.png",
-     "text": "Precisión: ±0.5°C (personalizable a ±0.1°C)"
+     "text": "Precisión: ±0,5 °C (configurable hasta ±0,1 °C)"
     },
     {
      "icon": "product/details/286-f2.png",
@@ -15651,7 +15651,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/286-f3.png",
-     "text": "±0.5% FS (personalización de alta precisión)"
+     "text": "±0,5% FS (personalización de alta precisión)"
     },
     {
      "icon": "product/details/286-f4.png",
@@ -15683,19 +15683,19 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Rango de medición",
-     "0–1, 1.6, 3.5, 7, 10, or 20 MPa"
+     "0–1, 1,6, 3,5, 7, 10, or 20 MPa"
     ],
     [
      "Precisión de presión",
-     "±0.5% FS"
+     "±0,5% FS"
     ],
     [
      "Temperatura medida",
-     "-200°C to +800°C"
+     "-de 200 °C a +800 °C"
     ],
     [
      "Precisión de temperatura",
-     "±0.5°C (customizable to ±0.1°C)"
+     "±0,5 °C (customizable to ±0,1 °C)"
     ],
     [
      "Protocolo",
@@ -15715,11 +15715,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Temperatura de operación",
-     "-40°C to +125°C"
+     "-de 40 °C a +125 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-40°C to +125°C"
+     "-de 40 °C a +125 °C"
     ]
    ],
    "specsStructured": [
@@ -15729,23 +15729,23 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Rango de medición",
-     "value": "0–1, 1.6, 3.5, 7, 10, or 20 MPa"
+     "value": "0–1, 1,6, 3,5, 7, 10, or 20 MPa"
     },
     {
      "name": "Precisión de presión",
-     "value": "±0.5% FS",
+     "value": "±0,5% FS",
      "unitText": "porcentaje"
     },
     {
      "name": "Temperatura medida",
-     "value": "-200°C to +800°C",
+     "value": "-de 200 °C a +800 °C",
      "unitText": "grado Celsius",
      "minValue": -200.0,
      "maxValue": 800.0
     },
     {
      "name": "Precisión de temperatura",
-     "value": "±0.5°C (customizable to ±0.1°C)",
+     "value": "±0,5 °C (customizable to ±0,1 °C)",
      "unitText": "grado Celsius"
     },
     {
@@ -15766,14 +15766,14 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-40°C to +125°C",
+     "value": "-de 40 °C a +125 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 125.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-40°C to +125°C",
+     "value": "-de 40 °C a +125 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 125.0
@@ -15798,7 +15798,7 @@ export const productContent = { ...productContentBase, es: {
    "related": [
     "287"
    ],
-   "summary": "El transmisor 2 en 1 de la Serie H de Hitelecom combina el monitoreo de temperatura y presión en un solo dispositivo diseñado para entornos donde puede haber gas o polvo inflamable. Los rangos de presión de escala completa disponibles son 1, 1.6, 3.5, 7, 10 y 20 MPa con ±0.5% FS, la temperatura abarca de -200°C a 800°C, y los datos se reportan por 4G o NB-IoT. El certificado antideflagrante aplicable debe confirmarse para el mercado objetivo y la zona antes de realizar el pedido.",
+   "summary": "El transmisor 2 en 1 de la Serie H de Hitelecom combina el monitoreo de temperatura y presión en un solo dispositivo diseñado para entornos donde puede haber gas o polvo inflamable. Los rangos de presión de escala completa disponibles son 1, 1,6, 3,5, 7, 10 y 20 MPa con ±0,5% FS, la temperatura abarca de -200 °C a 800 °C, y los datos se transmiten por 4G o NB-IoT. El certificado para áreas peligrosas aplicable debe confirmarse para el mercado objetivo y la zona antes de realizar el pedido.",
    "sku": "H200/H300/H500",
    "applications": [
     {
@@ -15828,11 +15828,11 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Por qué un transmisor 2 en 1 de temperatura y presión?",
-     "a": "Un solo dispositivo combina dos mediciones en un único instrumento, lo que puede reducir los puntos de instalación, el cableado y el mantenimiento en áreas peligrosas, manteniendo ambas variables en el mismo cronograma de reporte."
+     "a": "Un solo dispositivo combina dos mediciones en un único instrumento, lo que puede reducir los puntos de instalación, el cableado y el mantenimiento en áreas peligrosas, manteniendo ambas variables en el mismo cronograma de transmisión."
     },
     {
      "q": "¿Cuáles son los rangos de medición?",
-     "a": "Presión: 0-1 MPa, 1.6, 3.5, 7, 10 o 20 MPa con ±0.5% FS. Temperatura: -200°C a 800°C con ±0.5°C, personalizable a ±0.1°C."
+     "a": "Presión: 0-1 MPa, 1,6, 3,5, 7, 10 o 20 MPa con ±0,5% FS. Temperatura: -200 °C a 800 °C con ±0,5 °C, configurable hasta ±0,1 °C."
     },
     {
      "q": "¿Está certificado para atmósferas explosivas?",
@@ -15864,7 +15864,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/287-f3.png",
-     "text": "Supports 2.4 GHz / 5.8 GHz High-Frequency Links"
+     "text": "Supports 2,4 GHz / 5,8 GHz High-Frequency Links"
     },
     {
      "icon": "product/details/287-f4.png",
@@ -15880,7 +15880,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "El H100 es un dispositivo de acoplamiento de señal inalámbrica destinado a instalaciones en áreas peligrosas, compatible con las frecuencias de 2.4 GHz y 5.8 GHz, con un diseño de bajo consumo y alta resistencia a las interferencias, adecuado para entornos industriales exigentes. El certificado aplicable debe confirmarse para el mercado objetivo y la zona antes de realizar el pedido.",
+   "specsDesc": "El H100 es un dispositivo de acoplamiento de señal inalámbrica destinado a instalaciones en áreas peligrosas, compatible con las frecuencias de 2,4 GHz y 5,8 GHz, con un diseño de bajo consumo y alta resistencia a las interferencias, adecuado para entornos industriales exigentes. El certificado aplicable debe confirmarse para el mercado objetivo y la zona antes de realizar el pedido.",
    "specs": [
     [
      "Modelos de producto",
@@ -15888,7 +15888,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Bandas de señal",
-     "2.4 GHz / 5.8 GHz"
+     "2,4 GHz / 5,8 GHz"
     ],
     [
      "Uso en áreas peligrosas",
@@ -15896,11 +15896,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Temperatura de operación",
-     "-40°C to +125°C"
+     "-de 40 °C a +125 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-40°C to +125°C"
+     "-de 40 °C a +125 °C"
     ],
     [
      "Instalación",
@@ -15914,7 +15914,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Bandas de señal",
-     "value": "2.4 GHz / 5.8 GHz"
+     "value": "2,4 GHz / 5,8 GHz"
     },
     {
      "name": "Uso en áreas peligrosas",
@@ -15922,14 +15922,14 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-40°C to +125°C",
+     "value": "-de 40 °C a +125 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 125.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-40°C to +125°C",
+     "value": "-de 40 °C a +125 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 125.0
@@ -15958,7 +15958,7 @@ export const productContent = { ...productContentBase, es: {
    "related": [
     "286"
    ],
-   "summary": "El aislador de acoplamiento Hitelecom H100 es un acoplador de señal de alta frecuencia que permite que las señales de sensores inalámbricos de 2.4 GHz / 5.8 GHz crucen los límites de áreas peligrosas en sitios de petróleo y gas, químicos y mineros. La idoneidad para un área peligrosa depende de la configuración certificada requerida para el mercado objetivo, la zona, el grupo de gases o polvos y la clase de temperatura: solicite el certificado aplicable antes de especificar el producto. Funciona de -40°C a +125°C y se instala con orejetas de montaje, abrazadera de poste o montaje ranurado.",
+   "summary": "El aislador de acoplamiento Hitelecom H100 es un acoplador de señal de alta frecuencia que permite que las señales de sensores inalámbricos de 2,4 GHz / 5,8 GHz crucen los límites de áreas peligrosas en sitios de petróleo y gas, químicos y mineros. La idoneidad para un área peligrosa depende de la configuración certificada requerida para el mercado objetivo, la zona, el grupo de gases o polvos y la clase de temperatura: solicite el certificado aplicable antes de especificar el producto. Funciona de -40 °C a +125 °C y se instala con orejetas de montaje, abrazadera de poste o montaje ranurado.",
    "sku": "H100",
    "applications": [
     {
@@ -15978,7 +15978,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Parques de tanques y terminales",
-     "desc": "Safe signal coupling across dike and zone boundaries.",
+     "desc": "Acoplamiento de señal entre zonas y a través de diques de contención, sujeto a la configuración certificada.",
      "img": "product/details/283-scen5.jpg"
     }
    ],
@@ -15988,7 +15988,7 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Qué problema resuelve el aislador de acoplamiento?",
-     "a": "Los enlaces inalámbricos estándar no deben cruzar los límites de las áreas peligrosas sin aislamiento certificado. El H100 acopla las señales de los sensores de 2.4 GHz / 5.8 GHz a través del límite, de modo que los sensores inalámbricos alimentados por batería puedan servir en áreas peligrosas sin penetraciones de conducto adicionales, sujeto a la configuración certificada para el mercado objetivo y la zona."
+     "a": "Los enlaces inalámbricos estándar no deben cruzar los límites de las áreas peligrosas sin aislamiento certificado. El H100 acopla las señales de los sensores de 2,4 GHz / 5,8 GHz a través del límite, de modo que los sensores inalámbricos alimentados por batería puedan servir en áreas peligrosas sin penetraciones de conducto adicionales, sujeto a la configuración certificada para el mercado objetivo y la zona."
     },
     {
      "q": "¿Con qué normas cumple?",
@@ -15996,7 +15996,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "q": "¿Qué entornos puede soportar?",
-     "a": "La temperatura de operación y de almacenamiento abarcan de -40°C a +125°C, con una carcasa IP68 para sitios en exteriores y subterráneos."
+     "a": "La temperatura de operación y de almacenamiento abarcan de -40 °C a +125 °C, con una carcasa IP68 para sitios en exteriores y subterráneos."
     },
     {
      "q": "¿Cómo se instala?",
@@ -16007,7 +16007,7 @@ export const productContent = { ...productContentBase, es: {
   },
   "301": {
    "series": "Serie H · Sensor de temperatura y humedad",
-   "tagline": "Precision | Climate | Ultra-Low Power",
+   "tagline": "Precisión | Monitoreo ambiental | Consumo ultrabajo",
    "desc": "Los sensores de temperatura y humedad de Hitelecom ofrecen monitoreo climático de alta precisión con alertas remotas, brindando a salas limpias, gabinetes, museos y líneas de producción registros climáticos continuos y alarmas por umbral las 24 horas",
    "heroImg": "product/details/301-hero.png",
    "pdf": "/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
@@ -16016,7 +16016,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/270-f1.png",
-     "text": "Precisión: ±0.2°C / ±2% HR (típica)"
+     "text": "Precisión: ±0,2 °C / ±2% HR (típica)"
     },
     {
      "icon": "product/details/270-f2-ip65.png",
@@ -16024,7 +16024,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/270-f3.png",
-     "text": "Rango: 0–100% HR, -20°C a +80°C"
+     "text": "Rango: 0–100% HR, -20 °C a +80 °C"
     },
     {
      "icon": "product/details/270-f4.png",
@@ -16048,7 +16048,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "Los procesadores de microconsumo y la optimización algorítmica otorgan al sensor una vida útil de diseño de hasta 10 años con un intervalo de reporte de una hora en condiciones de prueba especificadas, reduciendo el mantenimiento rutinario.",
+   "specsDesc": "Los procesadores de microconsumo y la optimización algorítmica otorgan al sensor una vida útil de diseño de hasta 10 años con un intervalo de transmisión de una hora en condiciones de prueba especificadas, reduciendo el mantenimiento rutinario.",
    "specs": [
     [
      "Modelos de producto",
@@ -16056,11 +16056,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Rango de medición",
-     "Humedad 0–100% HR, temperatura -20°C a +80°C"
+     "Humedad 0–100% HR, temperatura -20 °C a +80 °C"
     ],
     [
      "Precisión",
-     "±0.2°C / ±2% HR (típico)"
+     "±0,2 °C / ±2% HR (típico)"
     ],
     [
      "Protocolo",
@@ -16076,7 +16076,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Duración de la batería",
-     "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte."
+     "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión."
     ],
     [
      "Instalación",
@@ -16090,11 +16090,11 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Rango de medición",
-     "value": "Humedad 0–100% HR, temperatura -20°C a +80°C"
+     "value": "Humedad 0–100% HR, temperatura -20 °C a +80 °C"
     },
     {
      "name": "Precisión",
-     "value": "±0.2°C / ±2% HR (típico)"
+     "value": "±0,2 °C / ±2% HR (típico)"
     },
     {
      "name": "Protocolo",
@@ -16110,7 +16110,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Duración de la batería",
-     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte.",
+     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión.",
      "unitText": "año",
      "minValue": 10.0
     },
@@ -16162,7 +16162,7 @@ export const productContent = { ...productContentBase, es: {
     "284",
     "285"
    ],
-   "summary": "El sensor de temperatura y humedad de la Serie H de Hitelecom es un monitor de clima inalámbrico para salas limpias, gabinetes eléctricos, museos y líneas de producción. Su sonda sinterizada ranurada mide 0–100% HR y −20°C a +80°C, con precisiones típicas de ±2% HR y ±0.2°C, con una batería diseñada para más de 10 años de vida con un intervalo de reporte de una hora en condiciones de prueba especificadas, y reporte a la nube por 4G/NB-IoT.",
+   "summary": "El sensor de temperatura y humedad de la Serie H de Hitelecom es un sensor ambiental inalámbrico para salas limpias, gabinetes eléctricos, museos y líneas de producción. Su sonda sinterizada ranurada mide 0–100% HR y −20 °C a +80 °C, con precisiones típicas de ±2% HR y ±0,2 °C, con una batería diseñada para más de 10 años de vida con un intervalo de transmisión de una hora en condiciones de prueba especificadas, y reporte a la nube por 4G/NB-IoT.",
    "sku": "H200/H300/H500",
    "applications": [
     {
@@ -16206,7 +16206,7 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Cuáles son el rango de medición y la precisión?",
-     "a": "Mide 0–100% HR y −20°C a +80°C, con precisiones típicas de ±2% HR y ±0.2°C. La sonda sinterizada ranurada va montada en cable, por lo que puede colocarse dentro de gabinetes y conductos."
+     "a": "Mide 0–100% HR y −20 °C a +80 °C, con precisiones típicas de ±2% HR y ±0,2 °C. La sonda sinterizada ranurada va montada en cable, por lo que puede colocarse dentro de gabinetes y conductos."
     },
     {
      "q": "¿Admite alarmas por umbral?",
@@ -16214,7 +16214,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "q": "¿Cuánto dura la batería?",
-     "a": "La configuración de batería seleccionada está diseñada para más de 10 años con un intervalo de reporte de una hora en condiciones de prueba especificadas; la vida real varía con la cobertura de red, la temperatura y la frecuencia de reporte. No se necesita cableado de red eléctrica en el punto de instalación."
+     "a": "La configuración de batería seleccionada está diseñada para más de 10 años con un intervalo de transmisión de una hora en condiciones de prueba especificadas; la vida real varía con la cobertura de red, la temperatura y la frecuencia de transmisión. No se necesita cableado de red eléctrica en el punto de instalación."
     },
     {
      "q": "¿Qué redes inalámbricas se admiten?",
@@ -16226,7 +16226,7 @@ export const productContent = { ...productContentBase, es: {
   "302": {
    "series": "Serie H · Registrador de datos de temperatura y humedad",
    "tagline": "Configuración NFC | Exportación USB | Registro de alta capacidad",
-   "desc": "Los registradores de datos de temperatura y humedad de Hitelecom almacenan hasta 80,000 lecturas con configuración por NFC y exportación USB de un clic, produciendo registros con marca de tiempo que respaldan las auditorías en la logística de cadena de frío, farmacéutica y de alimentos.",
+   "desc": "Los registradores de datos de temperatura y humedad de Hitelecom almacenan hasta 80 000 lecturas con configuración por NFC y exportación por USB con un solo clic, produciendo registros con marca de tiempo que respaldan las auditorías en la logística de cadena de frío, farmacéutica y de alimentos.",
    "heroImg": "product/details/302-hero.png",
    "pdf": "/downloads/temperature-humidity-data-logger-datasheet.pdf",
    "crumbCat": "Temperatura",
@@ -16234,7 +16234,7 @@ export const productContent = { ...productContentBase, es: {
    "features": [
     {
      "icon": "product/details/270-f1.png",
-     "text": "Precisión: ±0.2°C / ±2% HR (típica)"
+     "text": "Precisión: ±0,2 °C / ±2% HR (típica)"
     },
     {
      "icon": "product/details/270-f2-ip65.png",
@@ -16242,11 +16242,11 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/270-f3.png",
-     "text": "80,000 Readings Onboard Storage"
+     "text": "80 000 Readings Onboard Storage"
     },
     {
      "icon": "product/details/270-f4.png",
-     "text": "Configuración con un toque NFC, exportación USB de un clic"
+     "text": "Configuración con un toque NFC, exportación por USB con un solo clic"
     },
     {
      "icon": "product/details/270-f5.png",
@@ -16254,7 +16254,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/270-f6.png",
-     "text": "Standalone Logging via NFC & USB, No Gateway Needed"
+     "text": "Registro autónomo con NFC y USB; no requiere gateway"
     },
     {
      "icon": "product/details/270-f7.png",
@@ -16266,7 +16266,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "Un diseño de microconsumo con configuración por NFC y exportación USB de un clic; la batería reemplazable admite años de registro entre cambios de batería.",
+   "specsDesc": "Un diseño de microconsumo con configuración por NFC y exportación por USB con un solo clic; la batería reemplazable admite años de registro entre cambios de batería.",
    "specs": [
     [
      "Modelos de producto",
@@ -16274,11 +16274,11 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Capacidad de almacenamiento",
-     "80,000 Readings"
+     "80 000 Readings"
     ],
     [
      "Precisión",
-     "±0.2°C / ±2% HR (típico)"
+     "±0,2 °C / ±2% HR (típico)"
     ],
     [
      "Configuración",
@@ -16290,7 +16290,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Duración de la batería",
-     "Multi-Year (Replaceable Battery)"
+     "Batería reemplazable de varios años"
     ],
     [
      "Protección",
@@ -16298,7 +16298,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Instalación",
-     "Standalone · Hanging · Adhesive"
+     "Sobremesa · Colgante · Adhesivo"
     ]
    ],
    "specsStructured": [
@@ -16308,11 +16308,11 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Capacidad de almacenamiento",
-     "value": "80,000 Readings"
+     "value": "80 000 Readings"
     },
     {
      "name": "Precisión",
-     "value": "±0.2°C / ±2% HR (típico)"
+     "value": "±0,2 °C / ±2% HR (típico)"
     },
     {
      "name": "Configuración",
@@ -16324,7 +16324,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Duración de la batería",
-     "value": "Multi-Year (Replaceable Battery)"
+     "value": "Batería reemplazable de varios años"
     },
     {
      "name": "Protección",
@@ -16332,7 +16332,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Instalación",
-     "value": "Standalone · Hanging · Adhesive"
+     "value": "Sobremesa · Colgante · Adhesivo"
     }
    ],
    "certImgs": [],
@@ -16373,7 +16373,7 @@ export const productContent = { ...productContentBase, es: {
     "282",
     "283"
    ],
-   "summary": "El registrador de datos de temperatura y humedad de la Serie H de Hitelecom almacena hasta 80,000 lecturas con una precisión típica de ±0.2°C y ±2% HR. La configuración por NFC con un dispositivo Android o iOS compatible, la exportación USB de un clic de informes PDF/CSV, el software de PC gratuito para gráficos y análisis de datos y una batería reemplazable de varios años proporcionan registros que respaldan las auditorías de la logística de cadena de frío, farmacéutica y de alimentos.",
+   "summary": "El registrador de datos de temperatura y humedad de la Serie H de Hitelecom almacena hasta 80 000 lecturas con una precisión típica de ±0,2 °C y ±2% HR. La configuración por NFC con un dispositivo Android o iOS compatible, la exportación por USB con un solo clic de informes PDF/CSV, el software de PC gratuito para gráficos y análisis de datos y una batería reemplazable de varios años proporcionan registros que respaldan las auditorías de la logística de cadena de frío, farmacéutica y de alimentos.",
    "sku": "H200L/H300L",
    "applications": [
     {
@@ -16403,7 +16403,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Centros de datos y archivos",
-     "desc": "Placement logging for rooms where wireless uplink is not required.",
+     "desc": "Registro ambiental en salas, cámaras y contenedores donde no se requiere enlace inalámbrico.",
      "img": "product/details/285-scen6.jpg"
     }
    ],
@@ -16417,7 +16417,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "q": "¿Cuántas lecturas puede almacenar?",
-     "a": "Hasta 80,000 lecturas. Con un intervalo de cinco minutos, eso cubre aproximadamente nueve meses de registro continuo."
+     "a": "Hasta 80 000 lecturas. Con un intervalo de cinco minutos, eso cubre aproximadamente nueve meses de registro continuo."
     },
     {
      "q": "¿La batería es reemplazable?",
@@ -16433,7 +16433,7 @@ export const productContent = { ...productContentBase, es: {
   "303": {
    "series": "Serie H · Sensor de TVOC",
    "tagline": "Monitoreo de COV | Montaje fijo | Consumo ultrabajo",
-   "desc": "Los sensores de TVOC de Hitelecom rastrean los compuestos orgánicos volátiles totales de 0 a 100,000 ppb con resolución de 1 ppb, apoyando el monitoreo en talleres de pintura, almacenes de químicos y laboratorios con alarmas remotas",
+   "desc": "Los sensores de TVOC de Hitelecom rastrean los compuestos orgánicos volátiles totales de 0 a 100 000 ppb con resolución de 1 ppb, apoyando el monitoreo en talleres de pintura, almacenes de químicos y laboratorios con alarmas remotas",
    "heroImg": "product/details/303-hero.png",
    "pdf": "/downloads/tvoc-sensor-datasheet.pdf",
    "crumbCat": "Calidad del aire",
@@ -16449,7 +16449,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/270-f3.png",
-     "text": "Amplio rango: 0-100,000 ppb"
+     "text": "Amplio rango: 0-100 000 ppb"
     },
     {
      "icon": "product/details/270-f4.png",
@@ -16473,7 +16473,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "Los procesadores de microconsumo y la optimización algorítmica otorgan al sensor una vida útil de diseño de hasta 10 años con un intervalo de reporte de una hora en condiciones de prueba especificadas, reduciendo el mantenimiento rutinario.",
+   "specsDesc": "Los procesadores de microconsumo y la optimización algorítmica otorgan al sensor una vida útil de diseño de hasta 10 años con un intervalo de transmisión de una hora en condiciones de prueba especificadas, reduciendo el mantenimiento rutinario.",
    "specs": [
     [
      "Modelos de producto",
@@ -16481,7 +16481,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Rango de medición",
-     "0-100,000 ppb"
+     "0-100 000 ppb"
     ],
     [
      "Resolución",
@@ -16501,7 +16501,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Duración de la batería",
-     "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte."
+     "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión."
     ],
     [
      "Instalación",
@@ -16515,7 +16515,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Rango de medición",
-     "value": "0-100,000 ppb",
+     "value": "0-100 000 ppb",
      "unitText": "partes por mil millones",
      "minValue": 0.0,
      "maxValue": 100000.0
@@ -16539,7 +16539,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Duración de la batería",
-     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte.",
+     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión.",
      "unitText": "año",
      "minValue": 10.0
     },
@@ -16586,7 +16586,7 @@ export const productContent = { ...productContentBase, es: {
     "284",
     "283"
    ],
-   "summary": "El sensor de TVOC de la Serie H de Hitelecom es un monitor inalámbrico de compuestos orgánicos volátiles totales de 0 a 100,000 ppb con resolución de 1 ppb. La tecnología de detección se selecciona según los compuestos objetivo y debe confirmarse al realizar el pedido, con alarmas remotas y una batería diseñada para más de 10 años con un intervalo de reporte de una hora en condiciones de prueba especificadas, lo que apoya el monitoreo continuo en talleres de pintura, almacenes de químicos y laboratorios.",
+   "summary": "El sensor de TVOC de la Serie H de Hitelecom es un monitor inalámbrico de compuestos orgánicos volátiles totales de 0 a 100 000 ppb con resolución de 1 ppb. La tecnología de detección se selecciona según los compuestos objetivo y debe confirmarse al realizar el pedido, con alarmas remotas y una batería diseñada para más de 10 años con un intervalo de transmisión de una hora en condiciones de prueba especificadas, lo que apoya el monitoreo continuo en talleres de pintura, almacenes de químicos y laboratorios.",
    "sku": "H200/H300/H500",
    "applications": [
     {
@@ -16606,7 +16606,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Plantas de impresión y embalaje",
-     "desc": "Solvent vapor monitoring near presses and laminators.",
+     "desc": "Monitoreo de vapores de disolventes cerca de prensas y laminadoras.",
      "img": "product/details/285-scen7.jpg"
     },
     {
@@ -16626,7 +16626,7 @@ export const productContent = { ...productContentBase, es: {
    "faqs": [
     {
      "q": "¿Qué rango y resolución ofrece el sensor de TVOC?",
-     "a": "Rango de medición de 0-100,000 ppb con resolución de 1 ppb. El principio de detección es electroquímico o PID, seleccionado según la mezcla de gases objetivo."
+     "a": "Rango de medición de 0-100 000 ppb con resolución de 1 ppb. El principio de detección es electroquímico o PID, seleccionado según la mezcla de gases objetivo."
     },
     {
      "q": "¿Puede emitir una alarma cuando el TVOC sube de forma anómala?",
@@ -16638,14 +16638,14 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "q": "¿Cómo se alimenta y se conecta?",
-     "a": "Utiliza una batería interna diseñada para más de 10 años de vida con un intervalo de reporte de una hora en condiciones de prueba especificadas, cargando por 4G o NB-IoT mediante MQTT a Hitelecom Cloud o a plataformas privadas."
+     "a": "Utiliza una batería interna diseñada para más de 10 años de vida con un intervalo de transmisión de una hora en condiciones de prueba especificadas, transmitiendo los datos por 4G o NB-IoT mediante MQTT a Hitelecom Cloud o a plataformas privadas."
     }
    ],
    "dateModified": "2026-09-02"
   },
   "304": {
    "series": "Serie H · Sensor de rastreo de activos",
-   "tagline": "Positioning | Multi-Year Battery | Rugged",
+   "tagline": "Posicionamiento | Batería de larga duración | Diseño robusto",
    "desc": "Los sensores de rastreo de activos de Hitelecom combinan el posicionamiento GPS y BeiDou con una duración de batería de varios años, manteniendo visibles pallets, herramientas y cajas retornables entre sitios con alertas de geocerca",
    "heroImg": "product/details/304-hero.png",
    "pdf": "/downloads/asset-tracking-sensor-datasheet.pdf",
@@ -16674,7 +16674,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/270-f6.png",
-     "text": "4G / NB-IoT Position Reporting"
+     "text": "Transmisión de posición por 4G o NB-IoT"
     },
     {
      "icon": "product/details/270-f7.png",
@@ -16686,7 +16686,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "Un diseño de microconsumo e intervalos de reporte configurables permiten una operación con batería de varios años; la vida real depende del modo de posicionamiento, el intervalo de reporte y la cobertura de red.",
+   "specsDesc": "Un diseño de microconsumo e intervalos de transmisión configurables permiten una operación con batería de varios años; la vida real depende del modo de posicionamiento, el intervalo de transmisión y la cobertura de red.",
    "specs": [
     [
      "Modelo de producto",
@@ -16706,7 +16706,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Duración de la batería",
-     "Multi-Year (by Reporting Interval)"
+     "Varios años (según el intervalo de transmisión)"
     ],
     [
      "Protección",
@@ -16718,7 +16718,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Temperatura de operación",
-     "-20°C to +70°C"
+     "-de 20 °C a +70 °C"
     ]
    ],
    "specsStructured": [
@@ -16740,7 +16740,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Duración de la batería",
-     "value": "Multi-Year (by Reporting Interval)"
+     "value": "Varios años (según el intervalo de transmisión)"
     },
     {
      "name": "Protección",
@@ -16752,7 +16752,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-20°C to +70°C",
+     "value": "-de 20 °C a +70 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 70.0
@@ -16796,7 +16796,7 @@ export const productContent = { ...productContentBase, es: {
     "280",
     "285"
    ],
-   "summary": "El sensor de rastreo de activos de la Serie H de Hitelecom combina el posicionamiento GPS y BeiDou (con respaldo LBS donde la señal satelital es débil, sujeto a la disponibilidad de la red) con enlace ascendente 4G o NB-IoT. El rastreador reporta la ubicación y los eventos de geocerca por 4G o NB-IoT, combinando una batería de varios años, una carcasa IP67 y montaje con imán, tornillos o correas para mantener visibles pallets, herramientas y cajas retornables entre sitios.",
+   "summary": "El sensor de rastreo de activos de la Serie H de Hitelecom combina el posicionamiento GPS y BeiDou (con respaldo LBS donde la señal satelital es débil, sujeto a la disponibilidad de la red) con enlace ascendente 4G o NB-IoT. El rastreador transmite la ubicación y los eventos de geocerca por 4G o NB-IoT, combinando una batería de varios años, una carcasa IP67 y montaje con imán, tornillos o correas para mantener visibles pallets, herramientas y cajas retornables entre sitios.",
    "sku": "H200T",
    "applications": [
     {
@@ -16839,7 +16839,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "q": "¿Cuál es la duración de la batería?",
-     "a": "Varios años, según el intervalo de reporte: menos actualizaciones de posición por día significan una vida útil más larga. El perfil exacto se configura según la implementación."
+     "a": "Varios años, según el intervalo de transmisión: menos actualizaciones de posición por día significan una vida útil más larga. El perfil exacto se configura según la implementación."
     },
     {
      "q": "¿Cómo se fija a los activos?",
@@ -16871,7 +16871,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "icon": "product/details/270-f3.png",
-     "text": "100+ Gases: CO, H₂S, NH₃, O₃, CH₄, and More"
+     "text": "Más de 100 gases: CO, H₂S, NH₃, O₃, CH₄ y más"
     },
     {
      "icon": "product/details/270-f4.png",
@@ -16895,7 +16895,7 @@ export const productContent = { ...productContentBase, es: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "Los terminales de gas personalizados combinan procesadores de microconsumo con principios de detección adaptados al gas objetivo. El rango, la precisión y la duración de la batería dependen del gas, el principio y el intervalo de reporte seleccionados; confirme según la configuración.",
+   "specsDesc": "Los terminales de gas personalizados combinan procesadores de microconsumo con principios de detección adaptados al gas objetivo. El rango, la precisión y la duración de la batería dependen del gas, el principio y el intervalo de transmisión seleccionados; confirme según la configuración.",
    "specs": [
     [
      "Modelos de producto",
@@ -16923,7 +16923,7 @@ export const productContent = { ...productContentBase, es: {
     ],
     [
      "Duración de la batería",
-     "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte."
+     "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión."
     ],
     [
      "Instalación",
@@ -16957,7 +16957,7 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Duración de la batería",
-     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de reporte de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de reporte.",
+     "value": "Diseñado para más de 10 años de duración de la batería con un intervalo de transmisión de una hora en las condiciones de prueba especificadas. La duración real de la batería varía según el modelo, la configuración de detección, la cobertura de red, las retransmisiones, la temperatura de operación, la frecuencia de muestreo y el intervalo de transmisión.",
      "unitText": "año",
      "minValue": 10.0
     },
@@ -17004,7 +17004,7 @@ export const productContent = { ...productContentBase, es: {
     "284",
     "283"
    ],
-   "summary": "Elija el gas: Hitelecom construye el terminal a su alrededor. El sensor de gas personalizado de la Serie H admite más de 100 gases, incluidos CO, H₂S, NH₃, O₃ y CH₄, con principios electroquímicos, NDIR o PID, carcasas fijas o para conducto y enlace ascendente 4G o NB-IoT; la duración de la batería depende del principio de detección y de la frecuencia de reporte (diseñado para más de 10 años con un intervalo de una hora en las configuraciones típicas).",
+   "summary": "Elija el gas: Hitelecom construye el terminal a su alrededor. El sensor de gas personalizado de la Serie H admite más de 100 gases, incluidos CO, H₂S, NH₃, O₃ y CH₄, con principios electroquímicos, NDIR o PID, carcasas fijas o para conducto y enlace ascendente 4G o NB-IoT; la duración de la batería depende del principio de detección y de la frecuencia de transmisión (diseñado para más de 10 años con un intervalo de una hora en las configuraciones típicas).",
    "sku": "H200/H300/H500",
    "applications": [
     {
@@ -17029,12 +17029,12 @@ export const productContent = { ...productContentBase, es: {
     },
     {
      "name": "Registros y espacios confinados",
-     "desc": "Pre-entry and continuous gas checks in municipal confined spaces.",
+     "desc": "Verificaciones de gas previas al ingreso y continuas en espacios confinados municipales.",
      "img": "product/details/283-scen1.jpg"
     },
     {
      "name": "Semiconductores y laboratorios",
-     "desc": "Specialty gas leak monitoring tailored to the exact gas in use.",
+     "desc": "Monitoreo de fugas de gases especiales adaptado al gas exacto en uso.",
      "img": "product/details/274-scen2.jpg"
     }
    ],
@@ -17055,7 +17055,7 @@ export const productContent = { ...productContentBase, es: {
      "a": "Sí. Las carcasas fijas y para conducto cubren la mayoría de los sitios, y la protección IP68 está disponible como personalización para ubicaciones permanentemente expuestas."
     },
     {
-     "q": "¿Cómo reporta las alarmas?",
+     "q": "¿Cómo transmite las alarmas?",
      "a": "De forma inalámbrica por 4G o NB-IoT mediante MQTT a Hitelecom Cloud o a una plataforma privada, con umbrales de alarma configurados de forma remota."
     }
    ],
@@ -17112,7 +17112,7 @@ const listSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '263': {
       title: 'Industrial Temperature Sensors | 4G & NB-IoT | Hitelecom',
-      desc: 'Wireless temperature sensors from -200°C to +800°C with ±0.5°C accuracy (±0.1°C optional), 4G/NB-IoT reporting and long battery life at hourly reporting.',
+      desc: 'Wireless temperature sensors from de -200°C a +800°C with ±0.5°C accuracy (±0.1°C optional), 4G/NB-IoT reporting and long battery life at hourly reporting.',
     },
     '262': {
       title: 'Wireless Pressure Sensors | 4G & NB-IoT | Hitelecom',
@@ -17267,11 +17267,11 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
   en: {
     '270': {
       title: 'Industrial Temperature Sensor | H Series | Hitelecom',
-      desc: 'Wireless temperature sensor for remote monitoring from -200°C to +800°C at ±0.5°C (±0.1°C optional), with 4G, NB-IoT or LoRa and Hitelecom Cloud integration.',
+      desc: 'Wireless temperature sensor for remote monitoring from de -200°C a +800°C at ±0.5°C (±0.1°C optional), with 4G, NB-IoT or LoRa and Hitelecom Cloud integration.',
     },
     '274': {
       title: 'Wireless Pressure Sensor | H Series | Hitelecom',
-      desc: 'Wireless pressure sensor for pipelines, pumps and tanks, with ranges from 0–1 to 20 MPa at ±0.5% FS and 4G/NB-IoT reporting to Hitelecom Cloud.',
+      desc: 'Wireless pressure sensor for pipelines, pumps and tanks, with ranges from 0–de 1 a 20 MPa at ±0.5% FS and 4G/NB-IoT reporting to Hitelecom Cloud.',
     },
     '280': {
       title: 'Multi-Parameter Soil Sensor | H Series | Hitelecom',
@@ -17291,7 +17291,7 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '284': {
       title: 'Wireless Vibration Sensor | H Series | Hitelecom',
-      desc: 'Vibration sensor for rotating machinery, measuring velocity 0–100 mm/s and displacement amplitude 0–1,000 µm at ±1% (80 Hz), with 4G/NB-IoT reporting.',
+      desc: 'Vibration sensor for rotating machinery, measuring velocity 0–100 mm/s and displacement amplitude 0–1 000 µm at ±1% (80 Hz), with 4G/NB-IoT reporting.',
     },
     '285': {
       title: '6-in-1 Air Quality Sensor | H Series | Hitelecom',
@@ -17319,7 +17319,7 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '287': {
       title: 'Explosion-Proof Coupling Isolator | H100 | Hitelecom',
-      desc: 'H100 coupling isolator carries 2.4/5.8 GHz wireless sensor signals across hazardous-area boundaries, with an IP68 enclosure and -40°C to +125°C operation.',
+      desc: 'H100 coupling isolator carries 2.4/5.8 GHz wireless sensor signals across hazardous-area boundaries, with an IP68 enclosure and de -40°C a +125°C operation.',
     },
     '301': {
       title: 'Temperature and Humidity Sensor | Hitelecom',
@@ -17327,11 +17327,11 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '302': {
       title: 'Temperature and Humidity Data Logger | Hitelecom',
-      desc: 'Temperature and humidity data logger storing 80,000 readings, with NFC configuration and USB export of PDF/CSV reports for cold chain and pharma logistics.',
+      desc: 'Temperature and humidity data logger storing 80 000 readings, with NFC configuration and USB export of PDF/CSV reports for cold chain and pharma logistics.',
     },
     '303': {
-      title: 'TVOC Sensor | 0–100,000 ppb Range | Hitelecom',
-      desc: 'TVOC sensor for paint shops, chemical storage and laboratories, with a 0–100,000 ppb range at 1 ppb resolution and remote alarms over 4G or NB-IoT.',
+      title: 'TVOC Sensor | 0–100 000 ppb Range | Hitelecom',
+      desc: 'TVOC sensor for paint shops, chemical storage and laboratories, with a 0–100 000 ppb range at 1 ppb resolution and remote alarms over 4G or NB-IoT.',
     },
     '304': {
       title: 'Asset Tracking Sensor | GPS & BeiDou | Hitelecom',
@@ -17405,11 +17405,11 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '302': {
       title: '温湿度记录仪 | H系列 - 宏太通信',
-      desc: '宏太温湿度记录仪支持NFC贴近配置与USB导出，机内存储80,000条读数，为冷链、医药与食品物流提供可审计的温湿度记录。',
+      desc: '宏太温湿度记录仪支持NFC贴近配置与USB导出，机内存储80 000条读数，为冷链、医药与食品物流提供可审计的温湿度记录。',
     },
     '303': {
       title: 'TVOC传感器 | H系列 - 宏太通信',
-      desc: '宏太TVOC传感器监测总挥发性有机物，量程0-100,000 ppb、分辨率1 ppb，支持户外4G/NB-IoT与远程告警，适用于喷漆房、化学品仓库与实验室。',
+      desc: '宏太TVOC传感器监测总挥发性有机物，量程0-100 000 ppb、分辨率1 ppb，支持户外4G/NB-IoT与远程告警，适用于喷漆房、化学品仓库与实验室。',
     },
     '304': {
       title: '资产定位终端 | H系列 - 宏太通信',
@@ -17432,160 +17432,161 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
 
 export const listSeo: Record<Locale, Record<string, PageSeo>> =
 { ...listSeoBase, es: {
+ "256": {
+  "title": "Desarrollo IoT a medida y OEM/ODM | Hitelecom",
+  "desc": "Desarrollo IoT a medida de sensores, gateways, firmware, plataformas en la nube y carcasas, desde el prototipo hasta la producción OEM/ODM."
+ },
+ "257": {
+  "title": "Estaciones meteorológicas e hidrológicas | Hitelecom",
+  "desc": "Estaciones meteorológicas e hidrológicas con 2–12 canales configurables, alimentación solar o de red y transmisión de datos a la nube."
+ },
+ "258": {
+  "title": "Gateways IoT industriales | 4G, NB-IoT y LoRa | Hitelecom",
+  "desc": "Gateways IoT industriales de interior y exterior con LoRa, enlace de retorno 4G o Ethernet y opciones de despliegue local."
+ },
  "261": {
   "title": "Sensores IoT industriales | 4G, NB-IoT y LoRa | Hitelecom",
   "desc": "Explore los sensores de Hitelecom para temperatura, presión, nivel, inclinación, vibración y calidad del aire, con opciones 4G, NB-IoT y LoRa según el modelo."
  },
- "263": {
-  "title": "Sensores de temperatura industriales | 4G y NB-IoT | Hitelecom",
-  "desc": "Sensores de temperatura inalámbricos de -200°C a +800°C con una precisión de ±0.5°C (±0.1°C opcional), reporte 4G/NB-IoT y larga duración de la batería con reportes cada hora."
- },
  "262": {
   "title": "Sensores de presión inalámbricos | 4G y NB-IoT | Hitelecom",
-  "desc": "Sensores de presión inalámbricos para tuberías, bombas y tanques, con rangos de hasta 20 MPa, precisión de ±0.5% FS y reporte 4G/NB-IoT a Hitelecom Cloud."
+  "desc": "Sensores de presión inalámbricos para tuberías, bombas y tanques, con rangos de hasta 20 MPa y transmisión 4G/NB-IoT."
  },
- "269": {
-  "title": "Sensores de humedad del suelo y NPK | 4G y NB-IoT | Hitelecom",
-  "desc": "Sensores de suelo multiparámetro para humedad, temperatura, CE, pH y NPK, con carcasa IP68 diseñada para enterramiento y reporte 4G/NB-IoT para el riego."
+ "263": {
+  "title": "Sensores industriales de temperatura | Hitelecom",
+  "desc": "Sensores industriales de temperatura de −200 °C a +800 °C, con opciones 4G, NB-IoT o LoRa y alimentación por batería según el modelo."
  },
- "268": {
-  "title": "Sensores de nivel sumergibles | Hasta 200 m | Hitelecom",
-  "desc": "Sensores de nivel sumergibles con un rango de 0–200 m para ríos, embalses y tanques, con reporte 4G/NB-IoT, alertas por umbral e integración con Hitelecom Cloud."
- },
- "267": {
-  "title": "Sensores de inclinación de alta precisión | 4G y NB-IoT | Hitelecom",
-  "desc": "Sensores de inclinación inalámbricos (inclinómetros) para el monitoreo de salud estructural de edificios, puentes y torres, con alertas remotas y conectividad 4G/NB-IoT."
+ "265": {
+  "title": "Sensores de calidad del aire y TVOC | Hitelecom",
+  "desc": "Sensores de calidad del aire, TVOC y gases configurables para monitoreo urbano e industrial, con opciones 4G, NB-IoT o LoRa."
  },
  "266": {
   "title": "Sensores de distancia por radar | 4G y NB-IoT | Hitelecom",
-  "desc": "Sensores de distancia por radar con un rango de 0.3–50 m y una precisión de ±1 mm para silos, tolvas y registros, con alta inmunidad a interferencias y enlace ascendente 4G/NB-IoT."
+  "desc": "Sensores de distancia por radar de 0,3 a 50 m para silos, tolvas, pozos de registro y control de nivel, con conectividad 4G o NB-IoT."
+ },
+ "267": {
+  "title": "Sensores de inclinación de precisión | Hitelecom",
+  "desc": "Sensores de inclinación para edificios, puentes y torres, con resolución de 0,001°, alertas remotas y opciones 4G, NB-IoT o LoRa."
+ },
+ "268": {
+  "title": "Sensores de nivel sumergibles | Hasta 200 m | Hitelecom",
+  "desc": "Sensores sumergibles de nivel para ríos, embalses y tanques, con rangos configurables, alertas y transmisión 4G o NB-IoT."
+ },
+ "269": {
+  "title": "Sensores de humedad del suelo y NPK | Hitelecom",
+  "desc": "Sensores de suelo multiparámetro para humedad, temperatura, CE, pH y NPK, con carcasa IP68 para enterramiento y transmisión 4G/NB-IoT para el riego."
  },
  "271": {
   "title": "Sensores de vibración industriales | 4G y NB-IoT | Hitelecom",
-  "desc": "Sensores de vibración inalámbricos para maquinaria rotativa, que miden velocidad de vibración y amplitud de desplazamiento con una precisión de ±1% para apoyar el mantenimiento predictivo."
- },
- "265": {
-  "title": "Sensores de calidad del aire y TVOC | 4G y NB-IoT | Hitelecom",
-  "desc": "Sensores de calidad del aire 6 en 1 para CO₂, PM2.5, TVOC, temperatura, humedad y presión atmosférica, además de terminales de TVOC y de gas personalizados con reporte 4G/NB-IoT."
- },
- "258": {
-  "title": "Gateways IoT industriales | 4G, NB-IoT y LoRa | Hitelecom",
-  "desc": "Gateways IoT de interior y exterior con enlace ascendente 4G LTE, NB-IoT y Ethernet; algunos modelos añaden LoRa/LoRaWAN para redes privadas y computación de borde."
+  "desc": "Sensores de vibración para maquinaria rotativa y estructuras, con medición de velocidad y desplazamiento y conectividad 4G o NB-IoT."
  },
  "272": {
   "title": "Gateways IoT de interior | 4G, NB-IoT y LoRa | Hitelecom",
-  "desc": "Gateways de interior H66 con configuración plug-and-play, LoRa full-duplex de 8 canales y enlace ascendente 4G/NB-IoT/Ethernet para fábricas, parques y campus."
+  "desc": "Gateways LoRa H66 de interior con ocho canales, alcance de hasta 5 km en campo abierto y enlace de retorno 4G, Ethernet o Wi-Fi."
  },
  "273": {
   "title": "Gateways IoT de exterior | IP68, 4G y LoRa | Hitelecom",
-  "desc": "Gateways de exterior H68 con carcasas IP68, hasta 10 km de alcance LoRa en áreas abiertas y enlace ascendente 4G/NB-IoT/Ethernet para implementaciones de campo a largo plazo."
- },
- "257": {
-  "title": "Estaciones meteorológicas e hidrológicas | 4G/NB-IoT | Hitelecom",
-  "desc": "Estaciones meteorológicas e hidrológicas modulares con 2–12 canales de sensores para el monitoreo de lluvia, nivel, caudal y clima, con reporte a Hitelecom Cloud."
+  "desc": "Gateways LoRa H68 para exteriores, con protección IP68, alcance de hasta 10 km en campo abierto y enlace de retorno 4G o Ethernet."
  },
  "274": {
-  "title": "Estaciones de monitoreo hidrológico | Agua inteligente | Hitelecom",
+  "title": "Estaciones hidrológicas | Hitelecom",
   "desc": "Estaciones hidrológicas que combinan canales de nivel de agua, lluvia y caudal para ríos, embalses y alerta de inundaciones, con opciones de energía solar."
  },
  "275": {
-  "title": "Estaciones meteorológicas automáticas | 4G y NB-IoT | Hitelecom",
-  "desc": "Estaciones meteorológicas automáticas con 2–12 sensores de temperatura, humedad, viento, lluvia y presión, alimentadas por energía solar con transmisión 4G/NB-IoT."
- },
- "256": {
-  "title": "Productos IoT personalizados y desarrollo OEM/ODM | Hitelecom",
-  "desc": "Desarrollo IoT personalizado de sensores, gateways, software embebido, plataformas en la nube y carcasas: del prototipo a la producción con el OEM/ODM de Hitelecom."
+  "title": "Estaciones meteorológicas automáticas | Hitelecom",
+  "desc": "Estaciones meteorológicas H600 con 2–12 canales configurables para temperatura, humedad, viento, lluvia, presión y radiación solar."
  },
  "278": {
-  "title": "Software IoT personalizado | Nube y embebido | Hitelecom",
-  "desc": "Desarrollo de software IoT personalizado: plataformas en la nube, paneles de gemelo digital, visualización GIS y firmware embebido para sensores, gateways y controladores."
+  "title": "Software IoT a medida | Nube y embebido | Hitelecom",
+  "desc": "Software IoT a medida: plataformas en la nube, paneles de gemelo digital, visualización GIS y firmware para sensores, gateways y controladores."
  },
  "279": {
-  "title": "Hardware IoT personalizado | Antideflagrante | Hitelecom",
-  "desc": "Hardware y accesorios IoT personalizados, incluidos sensores antideflagrantes, aisladores de acoplamiento y carcasas, diseñados y fabricados por Hitelecom."
+  "title": "Hardware IoT personalizado | Áreas peligrosas | Hitelecom",
+  "desc": "Hardware IoT a medida: sensores para áreas peligrosas, aisladores de acoplamiento y carcasas, fabricados por Hitelecom."
  },
  "306": {
   "title": "Sensores de rastreo de activos | GPS y BeiDou | Hitelecom",
-  "desc": "Terminales de rastreo de activos con posicionamiento GPS/BeiDou, reporte 4G, alertas de geocerca y batería de varios años para pallets, herramientas y cajas retornables."
+  "desc": "Dispositivos para seguimiento de activos con GPS y BeiDou, geocercas, historial de ubicaciones y transmisión 4G o NB-IoT."
  }
-} };
+}
+};
 export const detailSeo: Record<Locale, Record<string, PageSeo>> =
 { ...detailSeoBase, es: {
  "270": {
   "title": "Sensor de temperatura industrial | Serie H | Hitelecom",
-  "desc": "Sensor de temperatura inalámbrico para monitoreo remoto de -200°C a +800°C con ±0.5°C (±0.1°C opcional), con 4G, NB-IoT o LoRa e integración con Hitelecom Cloud."
+  "desc": "Sensor industrial de temperatura de −200 °C a +800 °C, con precisión configurable, conectividad 4G, NB-IoT o LoRa e integración MQTT."
  },
  "274": {
   "title": "Sensor de presión inalámbrico | Serie H | Hitelecom",
-  "desc": "Sensor de presión inalámbrico para tuberías, bombas y tanques, con rangos de 0–1 a 20 MPa con ±0.5% FS y reporte 4G/NB-IoT a Hitelecom Cloud."
+  "desc": "Sensor de presión inalámbrico para tuberías, bombas y tanques, con rangos de 0–1 a 20 MPa con ±0,5 % FS y transmisión 4G/NB-IoT a Hitelecom Cloud."
  },
  "280": {
   "title": "Sensor de suelo multiparámetro | Serie H | Hitelecom",
-  "desc": "Sensor de suelo para humedad, temperatura, CE, pH y NPK en una sola sonda, con carcasa IP68 diseñada para enterramiento y reporte 4G/NB-IoT a Hitelecom Cloud."
+  "desc": "Sensor de suelo para humedad, temperatura, CE, pH y NPK en una sola sonda, con carcasa IP68 para enterramiento y transmisión 4G/NB-IoT a Hitelecom Cloud."
  },
  "281": {
   "title": "Sensor de nivel sumergible | Hasta 200 m | Hitelecom",
-  "desc": "Sensor de nivel sumergible para ríos, embalses y tanques, con un rango de 0–200 m y una precisión de ±0.5% FS, con reporte 4G/NB-IoT e integración con Hitelecom Cloud."
+  "desc": "Sensor sumergible de nivel para ríos, embalses y tanques, con rango configurable de hasta 200 m, conectividad 4G o NB-IoT e integración MQTT."
  },
  "282": {
   "title": "Sensor de inclinación (inclinómetro) | Serie H | Hitelecom",
-  "desc": "Sensor de inclinación inalámbrico (inclinómetro) para el monitoreo de salud estructural de edificios, puentes y torres, con alertas remotas y conectividad 4G/NB-IoT."
+  "desc": "Sensor inalámbrico de inclinación para monitoreo estructural, con resolución de 0,001°, protección IP68 y opciones 4G, NB-IoT o LoRa."
  },
  "283": {
-  "title": "Sensor de distancia por radar | 0.3–50 m | Hitelecom",
-  "desc": "Sensor de distancia por radar para silos, tolvas y registros, con un rango de 0.3–50 m y una precisión de ±1 mm, reportando por 4G o NB-IoT a Hitelecom Cloud."
+  "title": "Sensor de distancia por radar | 0,3–50 m | Hitelecom",
+  "desc": "Sensor de distancia por radar para silos, tolvas y pozos de registro, con rango de 0,3–50 m y transmisión 4G o NB-IoT."
  },
  "284": {
   "title": "Sensor de vibración inalámbrico | Serie H | Hitelecom",
-  "desc": "Sensor de vibración para maquinaria rotativa, que mide velocidad de 0–100 mm/s y amplitud de desplazamiento de 0–1,000 µm con ±1% (80 Hz), con reporte 4G/NB-IoT."
+  "desc": "Sensor de vibración para maquinaria y estructuras, con medición de velocidad y desplazamiento, alarmas y conectividad 4G o NB-IoT."
  },
  "285": {
   "title": "Sensor de calidad del aire 6 en 1 | Serie H | Hitelecom",
-  "desc": "Sensor de calidad del aire 6 en 1 para CO₂, PM2.5, TVOC, temperatura, humedad y presión atmosférica, con canales de gas opcionales y reporte 4G/NB-IoT a Hitelecom Cloud."
+  "desc": "Sensor de calidad del aire 6 en 1 para CO₂, PM2,5, TVOC, temperatura, humedad y presión, con canales opcionales y conectividad 4G o NB-IoT."
  },
  "275": {
   "title": "Gateway IoT 4G de exterior | Serie H68 | Hitelecom",
-  "desc": "Gateway de exterior H68 con carcasa IP68 y hasta 10 km de alcance LoRa en áreas abiertas, con enlace ascendente 4G/NB-IoT/Ethernet para implementaciones industriales a largo plazo."
+  "desc": "Gateway LoRa H68 para exteriores, con protección IP68, alcance de hasta 10 km en campo abierto y enlace de retorno 4G o Ethernet."
  },
  "276": {
   "title": "Gateway IoT de interior | Serie H66 | Hitelecom",
-  "desc": "Gateway de interior H66 con LoRa full-duplex de 8 canales y hasta 5 km de alcance en áreas abiertas, además de enlace ascendente 4G/NB-IoT/Ethernet y funciones de computación de borde."
+  "desc": "Gateway LoRa H66 de interior, con ocho canales, alcance de hasta 5 km en campo abierto y enlace de retorno 4G, Ethernet o Wi-Fi."
  },
  "277": {
   "title": "Estación de monitoreo hidrológico | Serie H | Hitelecom",
-  "desc": "Estación hidrológica con 2–12 canales para el monitoreo del nivel del agua, la lluvia y el caudal, alimentada por energía solar con transmisión 4G/NB-IoT a Hitelecom Cloud."
+  "desc": "Estación hidrológica H700 con 2–12 canales configurables, alimentación solar o de red y transmisión 4G para monitoreo remoto del agua."
  },
  "278": {
   "title": "Estación meteorológica automática | Serie H | Hitelecom",
-  "desc": "Estación meteorológica con 2–12 sensores de temperatura, humedad, viento, presión y lluvia, alimentada por energía solar con transmisión 4G/NB-IoT a Hitelecom Cloud."
+  "desc": "Estación meteorológica H600 con 2–12 canales configurables, alimentación solar o de red y transmisión 4G para monitoreo remoto."
  },
  "286": {
-  "title": "Sensor antideflagrante de temperatura y presión | Hitelecom",
-  "desc": "Monitoree la temperatura y la presión en proyectos de áreas peligrosas con reporte configurable por 4G o NB-IoT; confirme la certificación antes de la selección."
+  "title": "Sensor de temperatura y presión para áreas peligrosas | Hitelecom",
+  "desc": "Sensor combinado de temperatura y presión para proyectos en áreas peligrosas, con transmisión 4G o NB-IoT; confirme la certificación aplicable."
  },
  "287": {
-  "title": "Aislador de acoplamiento antideflagrante | H100 | Hitelecom",
-  "desc": "El aislador de acoplamiento H100 transporta señales de sensores inalámbricos de 2.4/5.8 GHz a través de los límites de áreas peligrosas, con carcasa IP68 y operación de -40°C a +125°C."
+  "title": "Aislador de acoplamiento para áreas peligrosas | H100 | Hitelecom",
+  "desc": "Acoplador de señal H100 para enlaces de 2,4 y 5,8 GHz en proyectos de áreas peligrosas; confirme la certificación aplicable antes de especificarlo."
  },
  "301": {
   "title": "Sensor de temperatura y humedad | Hitelecom",
-  "desc": "Sensor de temperatura y humedad con precisión típica de ±0.2°C y ±2% HR, activación por NFC y carcasa IP65, con reporte 4G/NB-IoT a Hitelecom Cloud."
+  "desc": "Sensor de temperatura y humedad con precisión típica de ±0,2 °C y ±2 % HR, activación por NFC y carcasa IP65, con transmisión 4G/NB-IoT a Hitelecom Cloud."
  },
  "302": {
   "title": "Registrador de datos de temperatura y humedad | Hitelecom",
-  "desc": "Registrador de datos de temperatura y humedad que almacena 80,000 lecturas, con configuración por NFC y exportación USB de informes PDF/CSV para la logística de cadena de frío y farmacéutica."
+  "desc": "Registrador de temperatura y humedad con 80 000 lecturas, configuración NFC y exportación USB de informes PDF o CSV para cadena de frío."
  },
  "303": {
-  "title": "Sensor de TVOC | Rango 0–100,000 ppb | Hitelecom",
-  "desc": "Sensor de TVOC para talleres de pintura, almacenes de químicos y laboratorios, con un rango de 0–100,000 ppb y resolución de 1 ppb, y alarmas remotas por 4G o NB-IoT."
+  "title": "Sensor de TVOC | Rango 0–100 000 ppb | Hitelecom",
+  "desc": "Sensor de TVOC de 0 a 100 000 ppb para talleres, almacenes químicos y laboratorios, con alarmas remotas por 4G o NB-IoT."
  },
  "304": {
   "title": "Sensor de rastreo de activos | GPS y BeiDou | Hitelecom",
-  "desc": "Rastree pallets, herramientas y activos retornables con posicionamiento GPS/BeiDou, geocercas, historial de movimientos y reporte por 4G o NB-IoT."
+  "desc": "Dispositivos para seguimiento de activos con GPS/BeiDou, geocercas, historial de ubicaciones y transmisión 4G o NB-IoT."
  },
  "305": {
   "title": "Sensor de gas personalizado | Serie H | Hitelecom",
-  "desc": "Sensor de gas personalizado construido alrededor de su gas objetivo —CO, H₂S, NH₃, O₃, CH₄ y más de 100 más— con principios electroquímicos, NDIR o PID y enlace ascendente 4G/NB-IoT."
+  "desc": "Sensor configurable para más de 100 gases, con tecnologías electroquímica, NDIR o PID, montaje fijo o en conducto y conectividad 4G o NB-IoT."
  }
 } };
 

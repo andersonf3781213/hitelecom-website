@@ -22,12 +22,12 @@ const homePaths = ['/', '/index.html', ...locales.filter((x) => x !== 'en').map(
 
 <header id="site-header" class:list={[{ scrolled: solid }]}>
   <div class="header-inner">
-    <a class="logo" href={l('/', locale)} aria-label="Hitelecom Home">
+    <a class="logo" href={l('/', locale)} aria-label={u.ariaHome}>
       <Img class="logo-color" src="common/logo-color.png" alt="Hitelecom" loading="eager" fetchpriority="high" />
       <Img class="logo-white" src="common/logo-white.png" alt="Hitelecom" loading="eager" fetchpriority="high" />
     </a>
 
-    <nav class="main-nav" aria-label="Main">
+    <nav class="main-nav" aria-label={u.ariaMainNav}>
       <ul>
         {t.nav.map((item) => (
           <li>
@@ -40,7 +40,7 @@ const homePaths = ['/', '/index.html', ...locales.filter((x) => x !== 'en').map(
     </nav>
 
     <div class="header-actions">
-      <button class="icon-btn search-open" type="button" aria-label="Search">
+      <button class="icon-btn search-open" type="button" aria-label={u.ariaSearch}>
         <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       </button>
 
@@ -66,7 +66,7 @@ const homePaths = ['/', '/index.html', ...locales.filter((x) => x !== 'en').map(
         <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 8.5v7l6-3.5Z"/></svg>
       </a>
 
-      <button class="icon-btn menu-open" type="button" aria-label="Open menu" aria-expanded="false">
+      <button class="icon-btn menu-open" type="button" aria-label={u.ariaOpenMenu} aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -75,7 +75,7 @@ const homePaths = ['/', '/index.html', ...locales.filter((x) => x !== 'en').map(
 
 <!-- 搜索遮罩 -->
 <div class="search-mask" role="dialog" aria-modal="true" aria-label="Search" hidden>
-  <button class="search-close" type="button" aria-label="Close search">
+  <button class="search-close" type="button" aria-label={u.ariaCloseSearch}>
     <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
   </button>
   <form class="search-form" action={l('/search/', locale)} method="get">
@@ -88,14 +88,14 @@ const homePaths = ['/', '/index.html', ...locales.filter((x) => x !== 'en').map(
 </div>
 
 <!-- 移动端全屏菜单 -->
-<div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+<div class="mobile-menu" role="dialog" aria-modal="true" aria-label={u.ariaMenu} hidden>
   <div class="mobile-menu-head">
     <Img src="common/logo-white.png" alt="Hitelecom" width={150} loading="eager" />
-    <button class="menu-close" type="button" aria-label="Close menu">
+    <button class="menu-close" type="button" aria-label={u.ariaCloseMenu}>
       <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
     </button>
   </div>
-  <nav aria-label="Mobile">
+  <nav aria-label={u.ariaMobileNav}>
     <ul>
       {t.nav.map((item, i) => (
         <li style={`--i:${i}`}><a href={l(item.href, locale)}>{item.label}</a></li>

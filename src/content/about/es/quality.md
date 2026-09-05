@@ -29,7 +29,7 @@
 			<ul class="u5">
 				 
 				<li class="reveal">
-					<a class="css3" href="/about">
+					<a class="css3" href="/es/about">
 						Quiénes somos
 					</a>
 				</li>
@@ -55,17 +55,17 @@
 			</ul>
 			<select id="changeurl">
 				 
-				<option  value="/about">
+				<option  value="/es/about">
 					Quiénes somos
 				</option> 
 				<option  selected="selected"    value="/es/about/quality">
 					Calidad y confiabilidad
 				</option> 
 				<option    value="/es/about/partner">
-					Partners
+					Socios
 				</option> 
 				<option   value="/es/about/joinus">
-					Careers
+					Carreras
 				</option> 
 				<option   value="/es/about/contact"> Contacto </option> 
 				
@@ -102,7 +102,7 @@
 								
 							</div>
 							<Div class="qa_2_mid_1 reveal">
-								<p style="text-indent: 0em;">Para sus productos propios, Hitelecom diseña pensando en la durabilidad y la estabilidad a largo plazo: materiales cuidadosamente seleccionados, prácticas probadas de diseño IoT y procesos de fabricación controlados ayudan a los dispositivos a mantener el rendimiento en condiciones exigentes de temperatura y humedad.</p><p style="text-indent: 0em;">También mantenemos relaciones a largo plazo con laboratorios de semiconductores calificados, utilizando accesorios de prueba de envejecimiento (burn-in) personalizados que simulan condiciones de alta temperatura, alta humedad y presión para verificar la funcionalidad, la longevidad y la resistencia a la humedad de los dispositivos bajo alimentación continua.</p><p style="text-indent: 0em;">Cada producto pasa una prueba de envejecimiento antes de salir de fábrica, lo que respalda un funcionamiento estable en campo.</p><p><br/></p>
+								<p style="text-indent: 0em;">Para sus productos propios, Hitelecom diseña pensando en la durabilidad y la estabilidad a largo plazo: materiales cuidadosamente seleccionados, prácticas probadas de diseño IoT y procesos de fabricación controlados ayudan a los dispositivos a mantener el rendimiento en condiciones exigentes de temperatura y humedad.</p><p style="text-indent: 0em;">También mantenemos relaciones a largo plazo con laboratorios de semiconductores calificados, utilizando accesorios de prueba de envejecimiento (burn-in) personalizados que simulan condiciones de alta temperatura, alta humedad y presión para verificar la funcionalidad, la longevidad y la resistencia a la humedad de los dispositivos bajo alimentación continua.</p><p style="text-indent: 0em;">Los productos se someten a los ensayos de envejecimiento definidos en su plan de validación antes de salir de fábrica, lo que respalda un funcionamiento estable en campo.</p><p><br/></p>
 							</Div>
 		</Div>
 	</Div>
@@ -420,14 +420,14 @@
 		<Div class="qa_6_mid">
 			<div class="qa_6_mid_left">
 				<img alt="Certificados de gestión de calidad y certificado de conformidad de producto de Hitelecom" src="/images/about/up_f69d9bcdfa0aae6fa841fef95467c1f3.webp">
-				<p class="cert_caption reveal">ISO 9001: NOA2302368 · ISO 14001: NOA2212190 · ISO 45001: NOA2212189<br>Emitidas por NOA Testing &amp; Certification Group Co., Ltd.</p>
+				<p class="cert_caption reveal">ISO 9001: NOA2302368 · ISO 14001: NOA2212190 · ISO 45001: NOA2212189<br>Certificados emitidos por NOA Testing &amp; Certification Group Co., Ltd.</p>
 			</div>
 			<div class="qa_6_mid_right">
 				<div class="qa_6_mid_right_1 reveal">
 					Rigurosos procedimientos de control de calidad
 				</div>
 				<div class="qa_6_mid_right_2 reveal">
-					<p>El equipo de Hitelecom adopta la filosofía de Gestión de Calidad Total (TQM), con control de calidad en cada etapa del desarrollo, la fabricación, las ventas y el servicio del producto. Nuestro objetivo es prevenir defectos mediante el control de procesos, la participación de toda la empresa y la mejora continua. Estamos certificados en el sistema de gestión de la calidad ISO 9001. Hitelecom estuvo anteriormente certificada en IATF 16949:2016 por TÜV NORD CERT GmbH (Certificado N.º 44111191175, Registro IATF N.º 0359402, vigente del 19 de septiembre de 2019 al 18 de septiembre de 2025).</p>				</div>
+					<p>El equipo de Hitelecom adopta la filosofía de Gestión de Calidad Total (TQM), con control de calidad en cada etapa del desarrollo, la fabricación, las ventas y el servicio del producto. Nuestro objetivo es prevenir defectos mediante el control de procesos, la participación de toda la empresa y la mejora continua. Nuestro sistema de gestión está certificado conforme a ISO 9001. Hitelecom estuvo anteriormente certificada en IATF 16949:2016 por TÜV NORD CERT GmbH (Certificado N.º 44111191175, Registro IATF N.º 0359402, vigente del 19 de septiembre de 2019 al 18 de septiembre de 2025).</p>				</div>
 			</div>
 		</Div>
 	</div>
@@ -457,7 +457,7 @@
 				   		 <Div class="qa_7_1_left_1">
 						 	Cumplimiento de RoHS						 </Div>
 						 <div class="qa_7_1_left_2">
-						 	La Directiva RoHS de la UE restringe diez sustancias en equipos eléctricos y electrónicos: plomo, mercurio, cadmio, cromo hexavalente, PBB, PBDE, DEHP, BBP, DBP y DIBP. El cumplimiento depende del producto, la configuración y la exención aplicable. Contacte a Hitelecom para obtener la declaración o el informe de pruebas de un modelo específico.						 </div>
+						 	La Directiva RoHS de la UE restringe diez sustancias en equipos eléctricos y electrónicos: plomo, mercurio, cadmio, cromo hexavalente, PBB, PBDE, DEHP, BBP, DBP y DIBP. El cumplimiento depende del producto, la configuración y la exención aplicable. Contacte con Hitelecom para obtener la declaración o el informe de pruebas de un modelo específico.						 </div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="1">
@@ -467,7 +467,7 @@
 				   		 <Div class="qa_7_1_left_1">
 						 	EU REACH						 </Div>
 						 <div class="qa_7_1_left_2">
-						 	REACH es el marco de la UE para el registro, la evaluación, la autorización y la restricción de sustancias químicas. Las obligaciones del producto y de la cadena de suministro dependen de los materiales, del rol en el mercado y de la Lista de Candidatas vigente. Contacte a Hitelecom para obtener la declaración más reciente de un modelo específico.						 </div>
+						 	REACH es el marco de la UE para el registro, la evaluación, la autorización y la restricción de sustancias químicas. Las obligaciones del producto y de la cadena de suministro dependen de los materiales, del rol en el mercado y de la Lista de Candidatas vigente. Contacte con Hitelecom para obtener la declaración más reciente de un modelo específico.						 </div>
 				  </div>
 				  					 
 				  <div class="swiper-slide" lang="2">

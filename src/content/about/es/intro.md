@@ -29,7 +29,7 @@
 			<ul class="u5">
 				 
 				<li class="reveal">
-					<a class="css3 on" href="/about">
+					<a class="css3 on" href="/es/about">
 						Quiénes somos
 					</a>
 				</li>
@@ -56,17 +56,17 @@
 			
 			<select id="changeurl">
 				 
-				<option selected="selected"  value="/about">
+				<option selected="selected"  value="/es/about">
 					Quiénes somos
 				</option> 
 				<option    value="/es/about/quality">
 					Calidad y confiabilidad
 				</option> 
 				<option    value="/es/about/partner">
-					Partners
+					Socios
 				</option> 
 				<option   value="/es/about/joinus">
-					Careers
+					Carreras
 				</option> 
 				<option   value="/es/about/contact"> Contacto </option> 
 				
@@ -143,7 +143,7 @@
 								Conecte los datos de campo a la nube con sensores IoT industriales
 							</Div>
 							<div class="about_2_1_left_mid_4 reveal">
-								<p>Fundada en Shanghái en 2012, Hitelecom diseña y fabrica sensores IoT industriales, terminales de sensores, gateways y soluciones de monitoreo conectadas a la nube.</p><p>Nuestro portafolio admite la medición remota de temperatura, humedad, presión, condiciones del suelo, inclinación, vibración, distancia, nivel, calidad del aire, concentración de gases y ubicación de activos. Algunos modelos se conectan por 4G LTE, NB-IoT, LoRa o LoRaWAN y se integran con Hitelecom Cloud o con las plataformas del cliente a través de MQTT y API.</p><p>También ofrecemos implementación privada y servicios OEM/ODM que abarcan hardware, firmware, diseño de energía, carcasas, montaje, marca y producción. Las soluciones de Hitelecom sirven al monitoreo industrial, el agua inteligente, el monitoreo de salud estructural, la agricultura inteligente, el monitoreo ambiental y el rastreo de activos.</p>							</div>
+								<p>Fundada en Shanghái en 2012, Hitelecom diseña y fabrica sensores IoT industriales, terminales de sensores, gateways y soluciones de monitoreo conectadas a la nube.</p><p>Nuestro portafolio permite medir de forma remota temperatura, humedad, presión, condiciones del suelo, inclinación, vibración, distancia, nivel, calidad del aire, concentración de gases y ubicación de activos. Algunos modelos se conectan por 4G LTE, NB-IoT, LoRa o LoRaWAN y se integran con Hitelecom Cloud o con las plataformas del cliente mediante MQTT y APIs.</p><p>También ofrecemos despliegue privado y servicios OEM/ODM que abarcan hardware, firmware, diseño del sistema de alimentación, carcasas, montaje, marca y producción. Las soluciones de Hitelecom se utilizan para el monitoreo industrial, la gestión inteligente del agua, el monitoreo de la integridad estructural, la agricultura inteligente, el monitoreo ambiental y el rastreo de activos.</p>							</div>
 						</Div>
 					</Div>
 				</div>

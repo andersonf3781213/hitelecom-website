@@ -77,7 +77,7 @@
 <div class="clearfix privacy_wrap">
 	<div class="indexmid">
 		<Div class="privacy_doc">
-			<p class="privacy_updated">Última actualización: 04/09/2026</p>
+			<p class="privacy_updated">Última actualización: 4 de septiembre de 2026</p>
 			<p>Shanghai Hitelecom Communication Technology Co., Ltd. (&ldquo;Hitelecom&rdquo;, &ldquo;nosotros&rdquo;) respeta su privacidad. Esta política explica qué información personal recopilamos a través de www.hitelecom.com, cómo la usamos y protegemos, y las opciones de las que usted dispone.</p>
 
 			<h2>1. Información que recopilamos</h2>
@@ -93,7 +93,7 @@
 			</ul>
 
 			<h2>3. Bases legales</h2>
-			<p>Cuando el GDPR u otras leyes similares de protección de datos sean aplicables, procesamos su información sobre la base de su consentimiento (al enviar un formulario), de la necesidad precontractual o contractual, y de nuestro interés legítimo en operar y proteger un sitio web empresarial.</p>
+			<p>Cuando el Reglamento General de Protección de Datos (RGPD/GDPR) u otras leyes similares de protección de datos sean aplicables, procesamos su información sobre la base de su consentimiento (al enviar un formulario), de la necesidad precontractual o contractual, y de nuestro interés legítimo en operar y proteger un sitio web empresarial.</p>
 
 			<h2>4. Cómo compartimos la información</h2>
 			<p>No vendemos su información personal. Los envíos de formularios se remiten a nuestro buzón de ventas a través de nuestro proveedor de procesamiento de formularios (Web3Forms) y solo acceden a ellos los empleados de Hitelecom que necesitan la información para atender su solicitud. Los proveedores de servicios procesan los datos en nuestro nombre con las garantías adecuadas.</p>
@@ -105,13 +105,13 @@
 			<p>Conservamos los registros de consultas durante el tiempo necesario para atender su solicitud y mantener la relación comercial resultante. Posteriormente, los registros se eliminan o se anonimizan, salvo que la ley exija un período de conservación más prolongado.</p>
 
 			<h2>7. Sus derechos</h2>
-			<p>Usted puede solicitar el acceso, la rectificación o la eliminación de su información personal, u oponerse a su tratamiento, escribiendo a <a href="mailto:sales@hitelecom.cn">sales@hitelecom.cn</a>. Respondemos dentro de un plazo razonable. También puede presentar una reclamación ante su autoridad local de protección de datos.</p>
+			<p>Usted puede solicitar el acceso, la rectificación o la eliminación de su información personal, u oponerse a su tratamiento, escribiendo a <a href="mailto:sales@hitelecom.cn">sales@hitelecom.cn</a>. Responderemos dentro de los plazos establecidos por la legislación aplicable. También puede presentar una reclamación ante su autoridad local de protección de datos.</p>
 
 			<h2>8. Seguridad</h2>
 			<p>Este sitio web se sirve por HTTPS. El acceso a los datos de las consultas está limitado al personal autorizado, y revisamos periódicamente nuestras prácticas de tratamiento de datos. Ningún método de transmisión por internet es completamente seguro, pero trabajamos para proteger su información con medidas técnicas y organizativas adecuadas.</p>
 
 			<h2>9. Menores</h2>
-			<p>Este es un sitio web de negocios entre empresas (B2B) y no está dirigido a menores. No recopilamos deliberadamente información personal de menores.</p>
+			<p>Este es un sitio web dirigido a empresas (B2B) y no está dirigido a menores. No recopilamos deliberadamente información personal de menores.</p>
 
 			<h2>10. Enlaces de terceros</h2>
 			<p>Nuestras páginas pueden enlazar a servicios de terceros, como la demo de nuestra plataforma en la nube o proveedores de mapas. Sus prácticas de privacidad se rigen por sus propias políticas.</p>
@@ -121,7 +121,7 @@
 
 			<h2>12. Contáctenos</h2>
 			<p>Shanghai Hitelecom Communication Technology Co., Ltd.<br>
-			2nd Floor, Building 1, No. 116 Cheyang Road, Songjiang District, Shanghai, China<br>
+			2.º piso, edificio 1, n.º 116, calle Cheyang, distrito de Songjiang, Shanghái, China<br>
 			Correo electrónico: <a href="mailto:sales@hitelecom.cn">sales@hitelecom.cn</a><br>
 			Teléfono: +86-18616602589</p>
 		</Div>
