@@ -332,7 +332,7 @@ Trabajo en equipo
 							<div class="about_4_1_right_3_mid_2">
 															2018							</div>
 							<div class="about_4_1_right_3_mid_3">
-								Los envíos acumulados de terminales IoT superaron las 100,000 unidades							</div>
+								Los envíos acumulados de terminales IoT superaron las 100 000 unidades							</div>
 							<Div class="about_4_1_right_3_mid_4">
 								<img alt="Dedo tocando un globo digital que enlaza servicios en la nube IoT" src="/images/about/up_03ad10a23f7acea89d767532677b3f82.webp">
 							</Div>

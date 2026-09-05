@@ -185,7 +185,7 @@
 							</Div>
 							<div class="index_1_2 daxie reveal" id="qa_3_1">
 								<div class="qa_7_font" style="max-width:100%;">
-									 Hitelecom Electronics opera una línea de producción equipada para el ensamblaje de precisión. Los equipos de montaje de alta precisión manejan componentes miniatura (encapsulados 01005 y BGA con paso de 0.35 mm) con posicionamiento exacto sobre la placa de circuito. Al mismo tiempo, nuestras herramientas avanzadas de inspección —inspección de pasta de soldadura 3D (SPI), inspección óptica automatizada (AOI), sistemas de inspección por rayos X y equipos de pruebas funcionales— son fundamentales para detectar y corregir cualquier defecto potencial durante el proceso de producción. Esto es vital para cumplir los altos estándares de los productos electrónicos complejos y para la consistencia y confiabilidad del producto.
+									 Hitelecom Electronics opera una línea de producción equipada para el ensamblaje de precisión. Los equipos de montaje de alta precisión manejan componentes miniatura (encapsulados 01005 y BGA con paso de 0,35 mm) con posicionamiento exacto sobre la placa de circuito. Al mismo tiempo, nuestras herramientas avanzadas de inspección —inspección de pasta de soldadura 3D (SPI), inspección óptica automatizada (AOI), sistemas de inspección por rayos X y equipos de pruebas funcionales— son fundamentales para detectar y corregir cualquier defecto potencial durante el proceso de producción. Esto es vital para cumplir los altos estándares de los productos electrónicos complejos y para la consistencia y confiabilidad del producto.
 								</div>
 							</div>
 							<Div class="clearfix qa_4_2 reveal">

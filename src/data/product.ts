@@ -18497,7 +18497,7 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Rango de medición",
-     "-de 200 °C a 800 °C"
+     "−200 °C a 800 °C"
     ],
     [
      "Precisión",
@@ -18531,7 +18531,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Rango de medición",
-     "value": "-de 200 °C a 800 °C",
+     "value": "−200 °C a 800 °C",
      "unitText": "grado Celsius",
      "minValue": -200.0,
      "maxValue": 800.0
@@ -18736,11 +18736,11 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Temperatura de operación",
-     "-de 20 °C a +80 °C"
+     "−20 °C a +80 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-de 20 °C a +85 °C"
+     "−20 °C a +85 °C"
     ],
     [
      "Duración de la batería",
@@ -18774,14 +18774,14 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-de 20 °C a +80 °C",
+     "value": "−20 °C a +80 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 80.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-de 20 °C a +85 °C",
+     "value": "−20 °C a +85 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 85.0
@@ -19200,11 +19200,11 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Temperatura de operación",
-     "-de 20 °C a +70 °C"
+     "−20 °C a +70 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-de 20 °C a +80 °C"
+     "−20 °C a +80 °C"
     ],
     [
      "Duración de la batería",
@@ -19239,14 +19239,14 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-de 20 °C a +70 °C",
+     "value": "−20 °C a +70 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 70.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-de 20 °C a +80 °C",
+     "value": "−20 °C a +80 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 80.0
@@ -19382,7 +19382,7 @@ export const productContent = { ...productContentBase, de: {
    "features": [
     {
      "icon": "product/details/282-f1.png",
-     "text": "Precisión: ±0 005° (configurable)"
+     "text": "Precisión: ±0,005° (configurable)"
     },
     {
      "icon": "product/details/282-f2.png",
@@ -19390,7 +19390,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "icon": "product/details/282-f3.png",
-     "text": "Resolución: 0 001°"
+     "text": "Resolución: 0,001°"
     },
     {
      "icon": "product/details/282-f4.png",
@@ -19426,11 +19426,11 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Precisión",
-     "±0 005° (configurable)"
+     "±0,005° (configurable)"
     ],
     [
      "Resolución",
-     "0 001°"
+     "0,001°"
     ],
     [
      "Protocolo",
@@ -19438,11 +19438,11 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Temperatura de operación",
-     "-de 20 °C a +70 °C"
+     "−20 °C a +70 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-de 20 °C a +80 °C"
+     "−20 °C a +80 °C"
     ],
     [
      "Duración de la batería",
@@ -19500,7 +19500,7 @@ export const productContent = { ...productContentBase, de: {
     "276",
     "275"
    ],
-   "summary": "El sensor de inclinación Serie H de Hitelecom es un inclinómetro IoT inalámbrico para el monitoreo de la integridad estructural. Mide la inclinación en los ejes X e Y (tres ejes opcional) con una precisión de ±0 005° y una resolución de 0 001°, está diseñado para más de 10 años de duración de la batería con reportes cada hora en condiciones de prueba especificadas, y cuenta con clasificación IP68 para implementación en exteriores a largo plazo. Las opciones de conectividad son 4G, NB-IoT y LoRa.",
+   "summary": "El sensor de inclinación Serie H de Hitelecom es un inclinómetro IoT inalámbrico para el monitoreo de la integridad estructural. Mide la inclinación en los ejes X e Y (tres ejes opcional) con una precisión de ±0,005° y una resolución de 0,001°, está diseñado para más de 10 años de duración de la batería con reportes cada hora en condiciones de prueba especificadas, y cuenta con clasificación IP68 para implementación en exteriores a largo plazo. Las opciones de conectividad son 4G, NB-IoT y LoRa.",
    "sku": "H200/H300/H500",
    "specsStructured": [
     {
@@ -19513,12 +19513,12 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Precisión",
-     "value": "±0 005°",
+     "value": "±0,005°",
      "unitText": "grado"
     },
     {
      "name": "Resolución",
-     "value": "0 001°",
+     "value": "0,001°",
      "unitText": "grado"
     },
     {
@@ -19531,14 +19531,14 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-de 20 °C a 70 °C",
+     "value": "−20 °C a 70 °C",
      "unitText": "grado Celsius",
      "minValue": -20,
      "maxValue": 70
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-de 20 °C a 80 °C",
+     "value": "−20 °C a 80 °C",
      "unitText": "grado Celsius",
      "minValue": -20,
      "maxValue": 80
@@ -19631,7 +19631,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "q": "¿Qué precisión tiene el sensor de inclinación de la Serie H?",
-     "a": "La precisión estándar es de ±0 005° con una resolución de 0 001° en los ejes X e Y. Hay una configuración de tres ejes disponible bajo pedido, y la precisión puede personalizarse para aplicaciones que requieran una tolerancia más estricta."
+     "a": "La precisión estándar es de ±0,005° con una resolución de 0,001° en los ejes X e Y. Hay una configuración de tres ejes disponible bajo pedido, y la precisión puede personalizarse para aplicaciones que requieran una tolerancia más estricta."
     },
     {
      "q": "¿Cuánto dura la batería?",
@@ -19715,11 +19715,11 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Temperatura de operación",
-     "-de 20 °C a +70 °C"
+     "−20 °C a +70 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-de 20 °C a +80 °C"
+     "−20 °C a +80 °C"
     ],
     [
      "Duración de la batería",
@@ -19757,14 +19757,14 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-de 20 °C a +70 °C",
+     "value": "−20 °C a +70 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 70.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-de 20 °C a +80 °C",
+     "value": "−20 °C a +80 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 80.0
@@ -19951,11 +19951,11 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Temperatura de operación",
-     "-de 20 °C a +70 °C"
+     "−20 °C a +70 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-de 20 °C a +80 °C"
+     "−20 °C a +80 °C"
     ],
     [
      "Duración de la batería",
@@ -19990,14 +19990,14 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-de 20 °C a +70 °C",
+     "value": "−20 °C a +70 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 70.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-de 20 °C a +80 °C",
+     "value": "−20 °C a +80 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 80.0
@@ -20172,7 +20172,7 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Rango de medición de temperatura",
-     "-de 40 °C a +85 °C (±0,2 °C)"
+     "−40 °C a +85 °C (±0,2 °C)"
     ],
     [
      "Humedad",
@@ -20221,7 +20221,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Rango de medición de temperatura",
-     "value": "-de 40 °C a +85 °C (±0,2 °C)",
+     "value": "−40 °C a +85 °C (±0,2 °C)",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 85.0
@@ -20492,14 +20492,14 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "de −40 °C a +85 °C",
+     "value": "−40 °C a +85 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 85.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "de −40 °C a +85 °C",
+     "value": "−40 °C a +85 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 85.0
@@ -20697,11 +20697,11 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Temperatura de operación",
-     "-de 20 °C a +70 °C"
+     "−20 °C a +70 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-de 20 °C a +80 °C"
+     "−20 °C a +80 °C"
     ],
     [
      "Instalación",
@@ -20747,14 +20747,14 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-de 20 °C a +70 °C",
+     "value": "−20 °C a +70 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 70.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-de 20 °C a +80 °C",
+     "value": "−20 °C a +80 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 80.0
@@ -21364,7 +21364,7 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Temperatura medida",
-     "-de 200 °C a +800 °C"
+     "−200 °C a +800 °C"
     ],
     [
      "Precisión de temperatura",
@@ -21388,11 +21388,11 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Temperatura de operación",
-     "-de 40 °C a +125 °C"
+     "−40 °C a +125 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-de 40 °C a +125 °C"
+     "−40 °C a +125 °C"
     ]
    ],
    "specsStructured": [
@@ -21411,7 +21411,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Temperatura medida",
-     "value": "-de 200 °C a +800 °C",
+     "value": "−200 °C a +800 °C",
      "unitText": "grado Celsius",
      "minValue": -200.0,
      "maxValue": 800.0
@@ -21439,14 +21439,14 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-de 40 °C a +125 °C",
+     "value": "−40 °C a +125 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 125.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-de 40 °C a +125 °C",
+     "value": "−40 °C a +125 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 125.0
@@ -21569,11 +21569,11 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Temperatura de operación",
-     "-de 40 °C a +125 °C"
+     "−40 °C a +125 °C"
     ],
     [
      "Temperatura de almacenamiento",
-     "-de 40 °C a +125 °C"
+     "−40 °C a +125 °C"
     ],
     [
      "Instalación",
@@ -21595,14 +21595,14 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-de 40 °C a +125 °C",
+     "value": "−40 °C a +125 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 125.0
     },
     {
      "name": "Temperatura de almacenamiento",
-     "value": "-de 40 °C a +125 °C",
+     "value": "−40 °C a +125 °C",
      "unitText": "grado",
      "minValue": -40.0,
      "maxValue": 125.0
@@ -22391,7 +22391,7 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Temperatura de operación",
-     "-de 20 °C a +70 °C"
+     "−20 °C a +70 °C"
     ]
    ],
    "specsStructured": [
@@ -22425,7 +22425,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Temperatura de operación",
-     "value": "-de 20 °C a +70 °C",
+     "value": "−20 °C a +70 °C",
      "unitText": "grado Celsius",
      "minValue": -20.0,
      "maxValue": 70.0
@@ -22785,7 +22785,7 @@ const listSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '263': {
       title: 'Industrial Temperature Sensors | 4G & NB-IoT | Hitelecom',
-      desc: 'Wireless temperature sensors from de -200°C a +800°C with ±0.5°C accuracy (±0.1°C optional), 4G/NB-IoT reporting and long battery life at hourly reporting.',
+      desc: 'Wireless temperature sensors from -200°C to +800°C with ±0.5°C accuracy (±0.1°C optional), 4G/NB-IoT reporting and long battery life at hourly reporting.',
     },
     '262': {
       title: 'Wireless Pressure Sensors | 4G & NB-IoT | Hitelecom',
@@ -22940,11 +22940,11 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
   en: {
     '270': {
       title: 'Industrial Temperature Sensor | H Series | Hitelecom',
-      desc: 'Wireless temperature sensor for remote monitoring from de -200°C a +800°C at ±0.5°C (±0.1°C optional), with 4G, NB-IoT or LoRa and Hitelecom Cloud integration.',
+      desc: 'Wireless temperature sensor for remote monitoring from -200°C to +800°C at ±0.5°C (±0.1°C optional), with 4G, NB-IoT or LoRa and Hitelecom Cloud integration.',
     },
     '274': {
       title: 'Wireless Pressure Sensor | H Series | Hitelecom',
-      desc: 'Wireless pressure sensor for pipelines, pumps and tanks, with ranges from 0–de 1 a 20 MPa at ±0.5% FS and 4G/NB-IoT reporting to Hitelecom Cloud.',
+      desc: 'Wireless pressure sensor for pipelines, pumps and tanks, with ranges from 0–1 to 20 MPa at ±0.5% FS and 4G/NB-IoT reporting to Hitelecom Cloud.',
     },
     '280': {
       title: 'Multi-Parameter Soil Sensor | H Series | Hitelecom',
@@ -22964,7 +22964,7 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '284': {
       title: 'Wireless Vibration Sensor | H Series | Hitelecom',
-      desc: 'Vibration sensor for rotating machinery, measuring velocity 0–100 mm/s and displacement amplitude 0–1 000 µm at ±1% (80 Hz), with 4G/NB-IoT reporting.',
+      desc: 'Vibration sensor for rotating machinery, measuring velocity 0–100 mm/s and displacement amplitude 0–1,000 µm at ±1% (80 Hz), with 4G/NB-IoT reporting.',
     },
     '285': {
       title: '6-in-1 Air Quality Sensor | H Series | Hitelecom',
@@ -22992,7 +22992,7 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '287': {
       title: 'Explosion-Proof Coupling Isolator | H100 | Hitelecom',
-      desc: 'H100 coupling isolator carries 2.4/5.8 GHz wireless sensor signals across hazardous-area boundaries, with an IP68 enclosure and de -40°C a +125°C operation.',
+      desc: 'H100 coupling isolator carries 2.4/5.8 GHz wireless sensor signals across hazardous-area boundaries, with an IP68 enclosure and -40°C to +125°C operation.',
     },
     '301': {
       title: 'Temperature and Humidity Sensor | Hitelecom',
@@ -23000,11 +23000,11 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '302': {
       title: 'Temperature and Humidity Data Logger | Hitelecom',
-      desc: 'Temperature and humidity data logger storing 80 000 readings, with NFC configuration and USB export of PDF/CSV reports for cold chain and pharma logistics.',
+      desc: 'Temperature and humidity data logger storing 80,000 readings, with NFC configuration and USB export of PDF/CSV reports for cold chain and pharma logistics.',
     },
     '303': {
-      title: 'TVOC Sensor | 0–100 000 ppb Range | Hitelecom',
-      desc: 'TVOC sensor for paint shops, chemical storage and laboratories, with a 0–100 000 ppb range at 1 ppb resolution and remote alarms over 4G or NB-IoT.',
+      title: 'TVOC Sensor | 0–100,000 ppb Range | Hitelecom',
+      desc: 'TVOC sensor for paint shops, chemical storage and laboratories, with a 0–100,000 ppb range at 1 ppb resolution and remote alarms over 4G or NB-IoT.',
     },
     '304': {
       title: 'Asset Tracking Sensor | GPS & BeiDou | Hitelecom',
@@ -23078,11 +23078,11 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
     },
     '302': {
       title: '温湿度记录仪 | H系列 - 宏太通信',
-      desc: '宏太温湿度记录仪支持NFC贴近配置与USB导出，机内存储80 000条读数，为冷链、医药与食品物流提供可审计的温湿度记录。',
+      desc: '宏太温湿度记录仪支持NFC贴近配置与USB导出，机内存储80,000条读数，为冷链、医药与食品物流提供可审计的温湿度记录。',
     },
     '303': {
       title: 'TVOC传感器 | H系列 - 宏太通信',
-      desc: '宏太TVOC传感器监测总挥发性有机物，量程0-100 000 ppb、分辨率1 ppb，支持户外4G/NB-IoT与远程告警，适用于喷漆房、化学品仓库与实验室。',
+      desc: '宏太TVOC传感器监测总挥发性有机物，量程0-100,000 ppb、分辨率1 ppb，支持户外4G/NB-IoT与远程告警，适用于喷漆房、化学品仓库与实验室。',
     },
     '304': {
       title: '资产定位终端 | H系列 - 宏太通信',
@@ -23256,7 +23256,7 @@ export const listSeo: Record<Locale, Record<string, PageSeo>> =
  },
  "306": {
   "title": "Sensores de rastreo de activos | GPS y BeiDou | Hitelecom",
-  "desc": "Dispositivos para seguimiento de activos con GPS y BeiDou, geocercas, historial de ubicaciones y transmisión 4G o NB-IoT."
+  "desc": "Dispositivos para el rastreo de activos con GPS y BeiDou, geocercas, historial de ubicaciones y transmisión 4G o NB-IoT."
  }
 }
 };
@@ -23409,7 +23409,7 @@ export const detailSeo: Record<Locale, Record<string, PageSeo>> =
  },
  "304": {
   "title": "Sensor de rastreo de activos | GPS y BeiDou | Hitelecom",
-  "desc": "Dispositivos para seguimiento de activos con GPS/BeiDou, geocercas, historial de ubicaciones y transmisión 4G o NB-IoT."
+  "desc": "Dispositivos para el rastreo de activos con GPS/BeiDou, geocercas, historial de ubicaciones y transmisión 4G o NB-IoT."
  },
  "305": {
   "title": "Sensor de gas personalizado | Serie H | Hitelecom",

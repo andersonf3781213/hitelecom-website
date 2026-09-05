@@ -591,7 +591,7 @@ const es: typeof en = {
         imageAlt: 'Hitelecom en la exposición internacional IoT IOTE 2024 de Shenzhen',
         source: 'Hitelecom',
         date: '2024.08.28',
-        title: 'Hitelecom exhibe en IOTE Shenzhen 2024',
+        title: 'Hitelecom expone en IOTE Shenzhen 2024',
         excerpt:
           'La 22.ª Exposición Internacional de IoT (IOTE 2024) en Shenzhen se celebró del 28 al 30 de agosto de 2024 en el Shenzhen World Exhibition & Convention Center (Bao\'an). Como proveedor profesional de productos y servicios IoT, Hitelecom presentó sus soluciones para la industria IoT en el stand 10B33 del pabellón 10.',
         href: '/news/show/id/1377',
