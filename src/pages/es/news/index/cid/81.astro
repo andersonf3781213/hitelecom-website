@@ -1,0 +1,32 @@
+---
+/**
+ * 新闻中心-展会信息（西语）：/news/index/cid/81
+ */
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import NewsShell from '../../../../../components/news/NewsShell.astro';
+import NewsList from '../../../../../components/news/NewsList.astro';
+import { optimizedSrc } from '../../../../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.hitelecom.com/es' },
+    { '@type': 'ListItem', position: 2, name: 'Noticias', item: 'https://www.hitelecom.com/es/news' },
+    { '@type': 'ListItem', position: 3, name: 'Ferias', item: 'https://www.hitelecom.com/es/news/index/cid/81' },
+  ],
+};
+const pageBanner = await optimizedSrc('news/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="es"
+  title="Eventos y exposiciones | Hitelecom"
+  description="Vea los sensores IoT industriales, gateways e integraciones en la nube de Hitelecom presentados en IOTE y otros eventos de la industria."
+>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <NewsList locale="es" cat="exh" />
+  </NewsShell>
+</BaseLayout>

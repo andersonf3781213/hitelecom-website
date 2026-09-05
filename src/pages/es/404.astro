@@ -1,0 +1,50 @@
+---
+/**
+ * 404 页：静态主机（Nginx/OSS/CDN）命中不存在路径时返回本页
+ * 保持品牌一致性，提供回首页与常用入口
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { l } from '../../i18n';
+---
+
+<BaseLayout
+  headerSolid
+  locale="es"
+  robots="noindex, follow"
+  title="Página no encontrada (404) - Sensores IoT industriales Hitelecom"
+  description="No se pudo encontrar la página solicitada. Explore los sensores IoT industriales, las soluciones y el soporte de Hitelecom desde los enlaces a continuación."
+>
+  <div class="nf-page">
+    <div class="nf-in">
+      <p class="nf-code">404</p>
+      <h1 class="nf-title">Página no encontrada</h1>
+      <p class="nf-desc">Es posible que la página haya sido movida o renombrada. Pruebe una de estas opciones:</p>
+      <ul class="nf-links">
+        <li><a class="btn-pill" href={l('/', 'es')}>Inicio</a></li>
+        <li><a class="btn-pill ghost" href={l('/product/', 'es')}>Productos</a></li>
+        <li><a class="btn-pill ghost" href={l('/solution/', 'es')}>Soluciones</a></li>
+        <li><a class="btn-pill ghost" href={l('/about/contact', 'es')}>Contáctenos</a></li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .nf-page { padding: clamp(120px, 14vw, 190px) 20px clamp(70px, 8vw, 120px); text-align: center; }
+  .nf-code {
+    font-size: clamp(4.5rem, 12vw, 8rem);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--brand);
+    letter-spacing: 0.04em;
+  }
+  .nf-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 600; margin: 0.5em 0; }
+  .nf-desc { color: #66707d; margin-bottom: 2.2em; }
+  .nf-links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; list-style: none; }
+  .nf-links .btn-pill.ghost {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid #dbe2ea;
+  }
+  .nf-links .btn-pill.ghost:hover { border-color: var(--brand); color: var(--brand); }
+</style>

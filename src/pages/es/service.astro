@@ -1,0 +1,32 @@
+---
+/**
+ * 支持服务页（英文，第 1 页）：/service
+ * 与原站 1:1：横幅 + 锚点选项卡 + 技术支持六卡 + 软件区 + 文档下载（8 卡 + 分页）+ 售后表单
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ServiceShell from '../../components/service/ServiceShell.astro';
+import ServiceBody from '../../components/service/ServiceBody.astro';
+import { optimizedSrc } from '../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://www.hitelecom.com/es' },
+    { '@type': 'ListItem', position: 2, name: 'Soporte', item: 'https://www.hitelecom.com/es/service' },
+  ],
+};
+const pageBanner = await optimizedSrc('service/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="es"
+  title="Soporte IoT y desarrollo personalizado | Hitelecom"
+  description="Obtenga soporte técnico, desarrollo personalizado de hardware y software, asistencia remota, documentos de producto y servicio posventa para implementaciones IoT."
+>
+  <ServiceShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <ServiceBody locale="es" page={1} />
+  </ServiceShell>
+</BaseLayout>
