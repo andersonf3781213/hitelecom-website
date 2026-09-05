@@ -297,8 +297,8 @@
 5. Gestionar pagos y cobros en efectivo y bancarios, crear comprobantes contables, conciliar extractos bancarios, auditar documentos y gestionar la emisión y custodia de facturas.<br>
 6. Asistir en las transacciones comerciales diarias de la empresa, incluida la verificación y contabilización de contratos y gastos.<br>
 7. Revisar y procesar los reembolsos de los empleados conforme al sistema de gestión de reembolsos de la empresa.<br>
-8. Gestionar pagos y cobros de banca en línea, conciliaciones bancarias, auditorías de documentos, y organizar los detalles de transacciones bancarias y la preparación de comprobantes contables.<br>
-9. Asistir al contador general o al supervisor del departamento en las tareas transaccionales diarias y completar otras funciones asignadas por la dirección.<br>														</div>
+
+8. Asistir al contador general o al supervisor del departamento en las tareas transaccionales diarias y completar otras funciones asignadas por la dirección.<br>														</div>
 													</dd>
 													<dd>
 														<Div class="jo_3_2_mid_con_1 jo_3_2_mid_con_1_t">
@@ -822,7 +822,7 @@
 3. Habilidad en la depuración de hardware y software embebidos y dominio del diseño de layout de PCB.<br>
 4. Familiaridad con los protocolos TCP/IP y las estructuras de paquetes de las capas MAC e IP; se valora la experiencia con los protocolos Zigbee, 433 MHz, Wi-Fi y Bluetooth.<br>
 5. Dominio de software de diseño y simulación de PCB como Altium Designer, PADS, Cadence Allegro y EasyEDA.<br>
-6. Diseño y desarrollo de productos de sensores, preparación de la documentación técnica relacionada, responsabilidad del control de todo el proceso de industrialización del producto y entrega de soluciones personalizadas.<br>
+
 7. Capacidad de completar de forma independiente el análisis de circuitos y el dibujo de PCB, diagramas de circuito y esquemáticos.<br>
 8. Se valora la experiencia en el desarrollo de instrumentos y equipos de sensores.<br>														</div>
 													</dd>
@@ -939,7 +939,7 @@
 														<div class="jo_3_2_mid_con_2">
 															1. Asistir en la planificación estratégica de RR. HH. y desarrollar y mejorar el sistema de gestión de recursos humanos (políticas, mecanismos y procesos relacionados).<br>
 2. Hacerse cargo del reclutamiento: elaborar planes de contratación, explorar canales de contratación e implementar los procesos de selección.<br>
-3. Gestionar los registros de personal, incluidos la incorporación, la firma de contratos, el período de prueba, los ascensos, las cambios de categoría o descensos, las renuncias, las recompensas y sanciones, los asuntos de seguridad social y fondo de vivienda y las disputas laborales.<br>
+3. Gestionar los registros de personal, incluidos la incorporación, la firma de contratos, el período de prueba, los ascensos, las cambios de categoría o descensos, las renuncias, las recompensas y sanciones, los asuntos de seguridad social y del fondo de vivienda (prestaciones sociales obligatorias en China) y las disputas laborales.<br>
 4. Supervisar los asuntos de capacitación, participar en la creación de planes de capacitación y ejecutar los objetivos y las evaluaciones de capacitación.<br>
 5. Participar en el desarrollo, la implementación y la supervisión de los sistemas, mecanismos y evaluaciones de desempeño del departamento.<br>
 6. Gestionar la administración de compensaciones y beneficios, los incentivos de desempeño, el control de asistencia, el desarrollo profesional y los cambios de compensación relacionados con transferencias internas.<br>
