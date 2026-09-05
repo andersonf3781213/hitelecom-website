@@ -520,3 +520,7 @@
 .pclone #map_canvas.amap-on > img,
 .pclone #map_canvas.amap-on .map_more,
 .pclone #map_canvas.amap-on .map_attr { display:none; }
+
+/* 证书编号说明（Quality & Reliability 证书墙下方） */
+.pclone .cert_caption { margin-top: 14px; font-size: 13px; line-height: 1.7; color: #6b7a8d; letter-spacing: .2px; }
+@media (max-width: 768px) { .pclone .cert_caption { font-size: 12px; text-align: center; } }

@@ -430,6 +430,7 @@
 		<Div class="qa_6_mid">
 			<div class="qa_6_mid_left">
 				<img alt="宏太通信质量管理体系证书与产品合格证" src="/images/about/up_f69d9bcdfa0aae6fa841fef95467c1f3.webp">
+				<p class="cert_caption reveal">ISO 9001：NOA2302368 · ISO 14001：NOA2212190 · ISO 45001：NOA2212189<br>签发机构：挪亚检测认证集团有限公司</p>
 			</div>
 			<div class="qa_6_mid_right">
 				<div class="qa_6_mid_right_1 reveal">

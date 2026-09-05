@@ -420,6 +420,7 @@
 		<Div class="qa_6_mid">
 			<div class="qa_6_mid_left">
 				<img alt="Hitelecom quality management certificates and product conformity certificate" src="/images/about/up_f69d9bcdfa0aae6fa841fef95467c1f3.webp">
+				<p class="cert_caption reveal">ISO 9001: NOA2302368 · ISO 14001: NOA2212190 · ISO 45001: NOA2212189<br>Issued by NOA Testing &amp; Certification Group Co., Ltd.</p>
 			</div>
 			<div class="qa_6_mid_right">
 				<div class="qa_6_mid_right_1 reveal">
