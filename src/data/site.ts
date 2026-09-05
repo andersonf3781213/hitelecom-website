@@ -55,6 +55,7 @@ export const site = {
     es: 'Proveedor de soluciones integrales de IoT',
     de: 'Anbieter ganzheitlicher IoT-Lösungen',
     ja: 'IoTトータルソリューションプロバイダー',
+    fr: 'Fournisseur de solutions IoT clés en main',
   },
 } as const;
 
@@ -104,5 +105,13 @@ export const defaultSeo = {
       'Hitelecom diseña terminales de sensores industriales 4G, NB-IoT y LoRa, registradores de datos e integración con la nube para monitoreo remoto, con soporte OEM/ODM.',
     keywords:
       'Hitelecom, sensores IoT industriales, sensores IoT 4G para exteriores, sensores NB-IoT, terminales de sensores IoT celulares, sensores LoRa, integración IoT en la nube, sensores de temperatura industriales, sensores de temperatura y humedad, registradores de datos de temperatura y humedad, sensores de calidad del aire, sensores TVOC, sensores de presión inalámbricos, sensores de humedad del suelo, sensores de inclinación, sensores de vibración, sensores de nivel sumergibles, sensores de distancia por radar, sensores de rastreo de activos, sensores de gas personalizados, fabricante de sensores IoT China, sensores IoT OEM ODM',
+  },
+  fr: {
+    title:
+      'Hitelecom | Capteurs industriels 4G et NB-IoT',
+    description:
+      'Hitelecom conçoit et fabrique des terminaux de capteurs industriels 4G, NB-IoT et LoRa, des enregistreurs de données et une intégration cloud pour la surveillance à distance, avec support OEM/ODM.',
+    keywords:
+      'Hitelecom, capteurs IoT industriels, capteurs IoT 4G pour extérieur, capteurs NB-IoT, terminaux de capteurs IoT cellulaires, capteurs LoRa, intégration cloud IoT, capteurs de température industriels, capteurs de température et d’humidité, enregistreurs de données de température et d’humidité, capteurs de qualité de l’air, capteurs TVOC, capteurs de pression sans fil, capteurs d’humidité du sol, capteurs d’inclinaison, capteurs de vibrations, capteurs de niveau submersibles, capteurs de distance radar, capteurs de suivi d’actifs, capteurs de gaz personnalisés, fabricant de capteurs IoT Chine, capteurs IoT OEM ODM',
   },
 } as const;

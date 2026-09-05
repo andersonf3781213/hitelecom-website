@@ -1,0 +1,32 @@
+---
+/**
+ * 新闻中心-行业资讯（英文）：/news/index/cid/80
+ */
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import NewsShell from '../../../../../components/news/NewsShell.astro';
+import NewsList from '../../../../../components/news/NewsList.astro';
+import { optimizedSrc } from '../../../../../utils/images';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.hitelecom.com/fr' },
+    { '@type': 'ListItem', position: 2, name: 'Actualités', item: 'https://www.hitelecom.com/fr/news' },
+    { '@type': 'ListItem', position: 3, name: 'Actualités du secteur', item: 'https://www.hitelecom.com/fr/news/index/cid/80' },
+  ],
+};
+const pageBanner = await optimizedSrc('news/banner.jpg', { width: 1920, quality: 82 });
+---
+
+<BaseLayout
+  preloadImage={pageBanner}
+  locale="fr"
+  title="Analyses IoT industrielles | Hitelecom"
+  description="Actualités sur la gestion intelligente de l'eau, les infrastructures urbaines, la surveillance à distance et l'IoT industriel."
+>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <NewsList locale="fr" cat="ind" />
+  </NewsShell>
+</BaseLayout>

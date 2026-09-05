@@ -1,0 +1,712 @@
+---
+/**
+ * 首页 V18 设计主体（英文）
+ * 文案与 UI 架构移植自设计稿 Hitelecom-v18（已做多轮事实修正）。
+ * - 样式：src/styles/home-v18.css（设计师原稿清理版，已加 .v18home 作用域隔离，Astro 管线哈希压缩）
+ *         src/styles/home-v18-override.css（品牌蓝覆盖层 + 字体方案 B，后加载）
+ * - 交互：src/scripts/home-v18.js（首屏轮播 / 产品选择器 / 部署架构图 / 询盘表单，Astro 管线打包）
+ * - 图片：public/home-assets/img/，同名覆盖即可替换（首屏设备图待 H68 实拍替换）
+ * - 滚动渐入使用全站约定 .reveal → .in（BaseLayout IntersectionObserver 统一驱动）
+ */
+---
+<div class="v18home">
+<section class="keynote-hero" id="top" aria-labelledby="keynote-title">
+      <div class="keynote-stage" id="keynote-stage" aria-roledescription="carousel" aria-label="Points forts des produits et de la plateforme Hitelecom">
+        <article class="keynote-slide is-active" data-keynote-slide="0" data-goto="#products" role="link" tabindex="0" aria-label="Afficher la section du portefeuille produits" aria-hidden="false">
+          <picture>
+            <source media="(max-width: 760px)" type="image/avif" srcset="/home-assets/img/hero-devices-m-1200-v9.avif" width="1200" height="900">
+            <source media="(max-width: 760px)" type="image/jpeg" srcset="/home-assets/img/hero-devices-m-1200-v9.jpg" width="1200" height="900">
+            <source type="image/avif" sizes="100vw"
+                    srcset="/home-assets/img/hero-devices-1920-v10.avif 1920w, /home-assets/img/hero-devices-2560-v10.avif 2560w">
+            <img src="/home-assets/img/hero-devices-2560-v10.jpg"
+                 srcset="/home-assets/img/hero-devices-1920-v10.jpg 1920w, /home-assets/img/hero-devices-2560-v10.jpg 2560w"
+                 sizes="100vw"
+                 alt="Capteurs et passerelles IoT industriels Hitelecom au-dessus d’un globe numérique connecté"
+                 width="2560" height="1440" fetchpriority="high" decoding="async" draggable="false">
+          </picture>
+          <div class="keynote-copy">
+            <h1 id="keynote-title">Mesurez le monde physique.</h1>
+          </div>
+        </article>
+
+        <article class="keynote-slide" data-keynote-slide="1" data-goto="#software" role="link" tabindex="0" aria-label="Afficher la section de déploiement du cloud IoT" aria-hidden="true">
+          <picture>
+            <source media="(max-width: 760px)" type="image/avif" srcset="/home-assets/img/hero-platform-m-1200-v10.avif" width="1200" height="900">
+            <source media="(max-width: 760px)" type="image/jpeg" srcset="/home-assets/img/hero-platform-m-1200-v10.jpg" width="1200" height="900">
+            <source type="image/avif" sizes="100vw"
+                    srcset="/home-assets/img/hero-platform-1920-v11.avif 1920w, /home-assets/img/hero-platform-2560-v11.avif 2560w">
+            <img src="/home-assets/img/hero-platform-2560-v11.jpg"
+                 srcset="/home-assets/img/hero-platform-1920-v11.jpg 1920w, /home-assets/img/hero-platform-2560-v11.jpg 2560w"
+                 sizes="100vw"
+                 alt="Tableau de bord IoT et application mobile Hitelecom connectés au-dessus d’un globe numérique"
+                 width="2560" height="1440" loading="lazy" decoding="async" draggable="false">
+          </picture>
+          <div class="keynote-copy">
+            <h2 class="keynote-headline">Construisez votre monde IoT.</h2>
+          </div>
+        </article>
+
+        <div class="keynote-controls" role="group" aria-label="Choisir la diapositive d’accueil">
+          <button class="keynote-dot" type="button" aria-pressed="true" aria-label="Afficher les appareils IoT industriels" data-keynote-target="0"></button>
+          <button class="keynote-dot" type="button" aria-pressed="false" aria-label="Afficher la plateforme IoT" data-keynote-target="1"></button>
+        </div>
+      </div>
+
+      <div class="keynote-bridge">
+        <div class="keynote-bridge-copy">
+          <p>Hitelecom I<span class="keep-case">o</span>Terminaux · Cloud · Apps</p>
+          <h2>Ultra-basse consommation. <br>Connectivité flexible. <br>Votre plateforme ou la nôtre.</h2>
+          <p>Choisissez un terminal prêt au déploiement ou créez avec nous un appareil dédié en connectivité 4G, NB-IoT, LoRa ou LoRaWAN.</p>
+          <div class="keynote-bridge-actions">
+            <a class="button button-primary" href="#contact">Démarrer une demande</a>
+            <a class="text-link" href="#products">Découvrir les appareils <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="keynote-trust">
+          <div class="keynote-value-grid" aria-label="Produits, connectivité et preuves d’usine Hitelecom">
+            <div><strong>Capteurs</strong><span>50+ terminaux IoT industriels</span></div>
+            <div><strong>Cloud</strong><span>Privé ou public, votre cloud ou le nôtre.</span></div>
+            <div><strong>Applications mobiles</strong><span>Surveillez les appareils, recevez les alertes configurées et agissez où que vous soyez</span></div>
+            <div class="manufacturing-system-cell"><strong>OEM / ODM</strong><span>Boîtier, firmware et image de marque</span><span>Certifié ISO 9001 · ISO 14001 · ISO 45001</span></div>
+          </div>
+          <p class="keynote-trust-note">Les certifications et homologations produits dépendent du site, du modèle, de la configuration radio et du marché cible.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="product-module">
+<section class="sec lt" id="products">
+  <div class="shell">
+    <div class="product-homepage-heading">
+      <div>
+        <p class="eyeb">Portefeuille produits</p>
+        <h2>Choisissez quoi <br>mesurer.</h2>
+      </div>
+      <p class="lead">Hitelecom propose des terminaux de détection pour la température, l’humidité, la pression, la qualité de l’air, l’inclinaison, les vibrations et plus.</p>
+    </div>
+    <input type="radio" name="fam" id="f1" class="famr" checked>
+<input type="radio" name="fam" id="f2" class="famr">
+<input type="radio" name="fam" id="f3" class="famr">
+<input type="radio" name="fam" id="f4" class="famr">
+<input type="radio" name="fam" id="f5" class="famr">
+<input type="radio" name="fam" id="f6" class="famr">
+<input type="radio" name="fam" id="f7" class="famr">
+<input type="radio" name="fam" id="f8" class="famr">
+<input type="radio" name="fam" id="f9" class="famr">
+<input type="radio" name="fam" id="f10" class="famr">
+<input type="radio" name="fam" id="f11" class="famr">
+<input type="radio" name="fam" id="f12" class="famr">
+    <div class="cfg">
+      <div class="stagebox">
+        <article class="stage s1"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 01 / 12</p><h3>Capteurs de température industriels</h3><p class="st-desc">Terminaux de classe PT1000 pour lignes de process, locaux techniques et chambres froides.</p><div class="chips"><span>−200 °C à +800 °C</span><span>±0.5°C</span><span>18 models</span></div><p class="st-proto">4G · NB-IoT · LoRa · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Capteurs de température industriels">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/temperature-sensor">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-01-industrial-temperature.webp" alt="Capteurs de température industriels Hitelecom — terminal IoT sans fil" width="478" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s2"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 02 / 12</p><h3>Capteurs de température et d’humidité</h3><p class="st-desc">Terminaux climatiques pour salles propres, armoires, musées et lignes de production.</p><div class="chips"><span>0–100% RH</span><span>±0.2°C</span></div><p class="st-proto">4G · NB-IoT · LoRa · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Capteurs de température et d’humidité">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/temperature-humidity-sensor">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-02-temp-humidity.webp" alt="Capteurs de température et d’humidité Hitelecom — terminal IoT sans fil" width="820" height="684" loading="lazy" decoding="async"></div></article>
+<article class="stage s3"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 03 / 12</p><h3>Enregistreurs de données de température et d’humidité</h3><p class="st-desc">Des enregistrements prêts pour l’audit, pour la chaîne du froid, la pharma et le transport alimentaire.</p><div class="chips"><span>80,000 readings</span><span>±0.2°C</span></div><p class="st-proto">NFC · USB local · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Enregistreurs de données de température et d’humidité">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/temperature-humidity-data-logger">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-03-th-data-logger.webp" alt="Enregistreur de données de température et d’humidité Hitelecom avec configuration NFC et export USB" width="820" height="517" loading="lazy" decoding="async"></div></article>
+<article class="stage s4"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 04 / 12</p><h3>Capteurs de qualité de l’air</h3><p class="st-desc">Mesure multi-paramètres dans une seule tête — PM, CO₂, température, humidité et plus.</p><div class="chips"><span>6-in-1</span><span>CO₂ jusqu’à 5 000 ppm</span></div><p class="st-proto">4G · NB-IoT · LoRa · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Capteurs de qualité de l’air">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/air-quality-sensor">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-04-air-quality.webp" alt="Capteurs de qualité de l’air Hitelecom — terminal IoT sans fil" width="521" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s5"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 05 / 12</p><h3>Capteurs TVOC</h3><p class="st-desc">Surveillance COV en montage fixe pour ateliers de peinture, réserves de produits chimiques et laboratoires.</p><div class="chips"><span>0–100,000 ppb</span><span>1 ppb resolution</span></div><p class="st-proto">4G · NB-IoT · LoRa · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Capteurs TVOC">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/tvoc-sensor">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-05-tvoc.webp" alt="Capteurs TVOC Hitelecom — terminal IoT sans fil" width="750" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s6"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 06 / 12</p><h3>Capteurs de pression</h3><p class="st-desc">Mesure de pression relative et absolue pour canalisations, réservoirs, puits et systèmes hydrauliques.</p><div class="chips"><span>0–20 MPa</span><span>IP67 or IP68</span><span>30+ models</span></div><p class="st-proto">4G · NB-IoT · LoRa · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Capteurs de pression">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/pressure-sensor">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-06-pressure.webp" alt="Capteurs de pression Hitelecom — terminal IoT sans fil" width="458" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s7"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 07 / 12</p><h3>Capteurs de sol</h3><p class="st-desc">Surveillance de l’humidité, de la température, de la conductivité et des nutriments du sol pour l’agriculture et les sites environnementaux.</p><div class="chips"><span>Option NPK</span><span>IP67 or IP68</span></div><p class="st-proto">4G · NB-IoT · LoRa · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Capteurs de sol">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/soil-moisture-sensor">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-07-soil.webp" alt="Capteurs de sol Hitelecom — terminal IoT sans fil" width="553" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s8"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 08 / 12</p><h3>Capteurs d’inclinaison</h3><p class="st-desc">Inclinaison structurelle pour tours, poteaux, rails et pentes.</p><div class="chips"><span>±0.005°</span><span>IP68</span></div><p class="st-proto">4G · NB-IoT · LoRa · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Capteurs d’inclinaison">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/tilt-sensor">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-08-tilt.webp" alt="Capteurs d’inclinaison Hitelecom — terminal IoT sans fil" width="648" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s9"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 09 / 12</p><h3>Capteurs de vibrations</h3><p class="st-desc">Surveillance des vibrations structurelles pour bâtiments patrimoniaux, ponts, tunnels et infrastructures ferroviaires.</p><div class="chips"><span>0–100 mm/s</span><span>±1% at 80 Hz</span></div><p class="st-proto">4G · NB-IoT · LoRa · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Capteurs de vibrations">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/vibration-sensor">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-09-vibration.webp" alt="Capteurs de vibrations Hitelecom — terminal IoT sans fil" width="642" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s10"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 10 / 12</p><h3>Capteurs de distance radar</h3><p class="st-desc">Mesure de distance sans contact pour réservoirs, silos, rivières et bacs ouverts.</p><div class="chips"><span>0.3–50 m</span><span>précision de classe millimétrique</span></div><p class="st-proto">4G · NB-IoT · LoRa · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Capteurs de distance radar">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/radar-distance-sensor">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-10-radar-distance.webp" alt="Capteurs de distance radar Hitelecom — terminal IoT sans fil" width="520" height="820" loading="lazy" decoding="async"></div></article>
+<article class="stage s11"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 11 / 12</p><h3>Capteurs de suivi d’actifs</h3><p class="st-desc">Localisez palettes, outils et bacs consignés sur vos sites.</p><div class="chips"><span>GPS · BeiDou · LBS</span><span>Batterie multi-années</span></div><p class="st-proto">4G · NB-IoT · LoRa · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Capteurs de suivi d’actifs">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/asset-tracking-sensor">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-11-asset-tracking.webp" alt="Capteurs de suivi d’actifs Hitelecom — terminal IoT sans fil" width="820" height="516" loading="lazy" decoding="async"></div></article>
+<article class="stage s12"><div class="st-info"><p class="st-eyebrow">Famille de capteurs 12 / 12</p><h3>Capteurs de gaz personnalisés</h3><p class="st-desc">Choisissez le gaz — nous construisons le terminal autour.</p><div class="chips"><span>100+ gases</span><span>Fixe ou en conduit</span></div><p class="st-proto">4G · NB-IoT · LoRa · Sur mesure</p><div class="st-cta"><a class="btn btn-primary sm" href="#contact" data-fam="Capteurs de gaz personnalisés">Demander un tarif <span class="arr">→</span></a><a class="st-detail" href="/product/custom-gas-sensor">Voir la fiche produit <span class="arr" aria-hidden="true">→</span></a></div></div><div class="st-shot"><img src="/home-assets/img/product-12-custom-gas.webp" alt="Capteurs de gaz personnalisés Hitelecom — terminal IoT sans fil" width="746" height="820" loading="lazy" decoding="async"></div></article>
+      </div>
+      <div class="fam-grid" role="group" aria-label="Familles de produits">
+        <div class="product-picker-heading"><strong>Familles de produits</strong><span>Sélectionner pour configurer</span></div>
+        <label class="fam-card" for="f1"><b>Capteurs de température industriels</b><span>−200 °C à +800 °C</span></label>
+<label class="fam-card" for="f2"><b>Capteurs de température et d’humidité</b><span>0–100% RH</span></label>
+<label class="fam-card" for="f3"><b>Enregistreurs de données de température et d’humidité</b><span>80,000 readings</span></label>
+<label class="fam-card" for="f4"><b>Capteurs de qualité de l’air</b><span>6-in-1</span></label>
+<label class="fam-card" for="f5"><b>Capteurs TVOC</b><span>0–100,000 ppb</span></label>
+<label class="fam-card" for="f6"><b>Capteurs de pression</b><span>0–20 MPa</span></label>
+<label class="fam-card" for="f7"><b>Capteurs de sol</b><span>Option NPK</span></label>
+<label class="fam-card" for="f8"><b>Capteurs d’inclinaison</b><span>±0.005°</span></label>
+<label class="fam-card" for="f9"><b>Capteurs de vibrations</b><span>0–100 mm/s</span></label>
+<label class="fam-card" for="f10"><b>Capteurs de distance radar</b><span>0.3–50 m</span></label>
+<label class="fam-card" for="f11"><b>Capteurs de suivi d’actifs</b><span>GPS · BeiDou · LBS</span></label>
+<label class="fam-card" for="f12"><b>Capteurs de gaz personnalisés</b><span>100+ gases</span></label>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+    <section class="section hardware-features-section content-auto" id="hardware" aria-labelledby="hardware-title">
+      <div class="container">
+        <div class="hardware-feature-heading reveal">
+          <div>
+            <p class="eyebrow">Conception industrielle</p>
+            <h2 class="section-title" id="hardware-title">Conçus pour durer des années. <br>Conçus pour les éléments.</h2>
+          </div>
+          <p>Les architectures basse consommation et la protection environnementale sont configurées pour le déploiement — non copiées d’une fiche technique générique.</p>
+        </div>
+
+        <div class="hardware-feature-grid">
+          <article class="hardware-feature-card power-feature-card reveal">
+            <div class="feature-copy">
+              <p class="feature-kicker">Alimentation</p>
+              <h3>Jusqu’à dix ans. <br>Sur une seule pile.</h3>
+              <p>Certains terminaux sur batterie combinent sommeil profond, échantillonnage adaptatif et transmission configurable pour prolonger la durée sur site.</p>
+            </div>
+
+            <div class="power-visual" aria-hidden="true">
+              <div class="battery-assembly">
+                <div class="battery-shell"><div class="battery-fill"><span>10 yr</span></div></div>
+                <div class="battery-timeline"><span>Y3</span><span>Y6</span><span>Y10</span></div>
+              </div>
+            </div>
+
+            <dl class="feature-specs">
+              <div><dt>Jusqu’à 10 ans*</dt><dd>Autonomie</dd></div>
+              <div><dt>classe µA</dt><dd>Courant de veille</dd></div>
+              <div><dt>Remonté</dt><dd>État de la batterie</dd></div>
+            </dl>
+            <p class="feature-footnote">* Configurations sélectionnées. L’autonomie réelle varie selon l’intervalle de transmission, les conditions réseau, la chimie de la batterie et la température.</p>
+          </article>
+
+          <article class="hardware-feature-card protection-feature-card reveal">
+            <div class="protection-media">
+              <img src="/home-assets/img/protection-immersion-1586-v2.webp" srcset="/home-assets/img/protection-immersion-1024-v2.webp 1024w, /home-assets/img/protection-immersion-1586-v2.webp 1586w" sizes="(max-width: 1100px) 100vw, 620px" alt="Boîtier IoT industriel Hitelecom à moitié immergé lors d’un test d’étanchéité contrôlé" width="1586" height="992" loading="lazy" decoding="async">
+            </div>
+            <div class="feature-copy">
+              <p class="feature-kicker">Protection</p>
+              <h3>Conçus pour les éléments.</h3>
+              <p>L’étanchéité et les interfaces câble peuvent être conçues pour l’immersion ou le lavage haute pression, puis validées sur la configuration finale.</p>
+              <dl class="feature-specs">
+                <div><dt>IP68*</dt><dd>Option immersion</dd></div>
+                <div><dt>IP69K*</dt><dd>Option lavage haute pression</dd></div>
+                <div><dt>Sur mesure</dt><dd>Interfaces et montage</dd></div>
+              </dl>
+              <p class="feature-footnote">* Sur demande. L’indice de protection dépend de la configuration finale du produit et de sa validation.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="hardware-feature-cta reveal">
+          <p>Partez d’un terminal éprouvé ou construisez un appareil dédié. Nous alignons détection, radio, alimentation, boîtier, firmware, montage et protection sur les exigences du site.</p>
+          <a class="button button-primary" href="#contact">Discuter de votre projet</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section software-section content-auto" id="software" aria-labelledby="software-title">
+      <div class="container">
+        <div class="software-top reveal">
+          <div>
+            <p class="eyebrow">Déploiement flexible</p>
+            <h2 class="section-title" id="software-title">Votre cloud. <br>Ou le nôtre.</h2>
+            <p class="section-intro">Infrastructure privée, Hitelecom Cloud ou intégration directe à la plateforme que vous exploitez déjà.</p>
+          </div>
+
+          <div class="deployment-options" aria-label="Schéma d’architecture de déploiement">
+            <button class="deployment-option" type="button" data-network-mode="private" aria-pressed="true">
+              <span class="option-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.7"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <span><strong>Déploiement privé</strong><small>Passerelle LoRa / LoRaWAN vers votre serveur</small></span>
+              <svg class="option-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="deployment-option" type="button" data-network-mode="public" aria-pressed="false">
+              <span class="option-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 18a4 4 0 0 1 .8-7.9A5.4 5.4 0 0 1 18.3 11 3.5 3.5 0 0 1 18 18H7Z" stroke="currentColor" stroke-width="1.7"/><path d="M12 13v5m0-5-2 2m2-2 2 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <span><strong>Cloud public</strong><small>4G / NB-IoT vers le client ou Hitelecom Cloud</small></span>
+              <svg class="option-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="deployment-option" type="button" data-network-mode="integrate" aria-pressed="false">
+              <span class="option-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="m8 8-4 4 4 4m8-8 4 4-4 4M14 5l-4 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span><strong>Votre plateforme existante</strong><small>API, MQTT et modèles de données configurables</small></span>
+              <svg class="option-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="network-card reveal">
+          <div class="network-toolbar">
+            <strong>Architecture de déploiement IoT flexible</strong>
+            <div class="network-legend" aria-label="Changement de mode du schéma">
+              <button class="legend-item" type="button" data-network-mode="private" aria-pressed="true"><span class="legend-line"></span>Voie privée</button>
+              <button class="legend-item" type="button" data-network-mode="public" aria-pressed="false"><span class="legend-line green"></span>Voie publique</button>
+              <button class="legend-item" type="button" data-network-mode="integrate" aria-pressed="false"><span class="legend-line gray"></span>Intégration</button>
+            </div>
+          </div>
+
+          <figure class="network-figure mode-private" id="network-figure">
+            <svg viewBox="0 0 1200 560" role="img" aria-labelledby="network-diagram-title network-diagram-desc">
+              <title id="network-diagram-title">Architecture de déploiement IoT privé et public Hitelecom</title>
+              <desc id="network-diagram-desc">Les terminaux peuvent se connecter via des passerelles LoRa ou LoRaWAN à un serveur privé, ou via les réseaux 4G et NB-IoT au cloud du client ou à Hitelecom Cloud. Les deux voies prennent en charge applications et API clientes.</desc>
+              <defs>
+                <linearGradient id="deviceFill" x1="0" x2="1">
+                  <stop offset="0" stop-color="#0d2853"/>
+                  <stop offset="1" stop-color="#175cb8"/>
+                </linearGradient>
+                <linearGradient id="cloudFill" x1="0" x2="1">
+                  <stop offset="0" stop-color="#eaf8f2"/>
+                  <stop offset="1" stop-color="#f7fffb"/>
+                </linearGradient>
+                <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+                  <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1e477d" flood-opacity=".12"/>
+                </filter>
+              </defs>
+
+              <path class="route route-private" d="M235 278 C305 278 308 152 378 152"/>
+              <path class="route route-private" d="M540 152 C625 152 635 120 720 120"/>
+              <path class="route route-public" d="M235 278 C310 278 306 407 378 407"/>
+              <path class="route route-public" d="M540 407 C625 407 635 386 720 386"/>
+              <path class="route route-neutral" d="M934 120 C996 120 992 260 1040 260"/>
+              <path class="route route-neutral" d="M934 386 C996 386 992 300 1040 300"/>
+
+              <g class="node">
+                <rect x="48" y="196" width="190" height="164" rx="28" fill="url(#deviceFill)" filter="url(#softShadow)"/>
+                <circle cx="91" cy="242" r="17" fill="#ffffff" opacity=".16"/>
+                <path d="M83 247v-11a8 8 0 0 1 16 0v11a10 10 0 1 1-16 0Z" fill="none" stroke="#fff" stroke-width="2"/>
+                <path d="M127 235a26 26 0 0 1 37 0M136 244a13 13 0 0 1 19 0" fill="none" stroke="#9fc5ff" stroke-width="2" stroke-linecap="round"/>
+                <text x="79" y="304" fill="#fff" font-size="18" font-weight="700">Appareils terrain</text>
+                <text x="79" y="331" fill="#bdd4f5" font-size="12">Capteurs Hitelecom</text>
+              </g>
+
+              <g class="node private-node">
+                <rect x="378" y="88" width="164" height="128" rx="24" fill="#fff" stroke="#bcd4f5" filter="url(#softShadow)"/>
+                <path d="M430 149a27 27 0 0 1 38 0M439 158a14 14 0 0 1 20 0M449 168h.1" fill="none" stroke="#2768f5" stroke-width="2.5" stroke-linecap="round"/>
+                <text x="410" y="192" fill="#0a1d33" font-size="16" font-weight="700">Passerelle edge</text>
+                <rect x="410" y="104" width="100" height="23" rx="11.5" fill="#eef4ff"/>
+                <text x="427" y="120" fill="#2768f5" font-size="10" font-weight="700">LoRa / LoRaWAN</text>
+              </g>
+
+              <g class="node private-node">
+                <rect x="720" y="56" width="214" height="130" rx="24" fill="#fff" stroke="#bcd4f5" filter="url(#softShadow)"/>
+                <rect x="752" y="84" width="38" height="56" rx="7" fill="#eaf2ff" stroke="#2768f5"/>
+                <path d="M760 98h22M760 108h22M760 118h14" stroke="#2768f5" stroke-width="2" stroke-linecap="round"/>
+                <text x="808" y="103" fill="#0a1d33" font-size="15" font-weight="700">Serveur privé</text>
+                <text x="808" y="126" fill="#667d96" font-size="11">On-premise ou VPC</text>
+                <text x="752" y="163" fill="#2768f5" font-size="10" font-weight="700">CONTRÔLE CLIENT</text>
+              </g>
+
+              <g class="node public-node">
+                <rect x="378" y="343" width="164" height="128" rx="24" fill="#fff" stroke="#bfe5d5" filter="url(#softShadow)"/>
+                <path d="M421 410h68M434 394a35 35 0 0 1 42 0M445 381a53 53 0 0 1 20 0" fill="none" stroke="#43b985" stroke-width="2.5" stroke-linecap="round"/>
+                <text x="412" y="450" fill="#0a1d33" font-size="15" font-weight="700">Réseau mobile</text>
+                <rect x="415" y="359" width="90" height="23" rx="11.5" fill="#ebf9f3"/>
+                <text x="430" y="375" fill="#228b60" font-size="10" font-weight="700">4G / NB-IoT</text>
+              </g>
+
+              <g class="node public-node">
+                <rect x="720" y="320" width="214" height="132" rx="24" fill="url(#cloudFill)" stroke="#bfe5d5" filter="url(#softShadow)"/>
+                <path d="M748 389a18 18 0 0 1 3-35.7 25 25 0 0 1 47.8 6.7 16 16 0 0 1-1 32h-49.8" fill="none" stroke="#43b985" stroke-width="2"/>
+                <text x="805" y="360" fill="#0a1d33" font-size="15" font-weight="700">Plateforme cloud</text>
+                <text x="805" y="384" fill="#667d96" font-size="10">Client ou Hitelecom</text>
+                <text x="752" y="430" fill="#228b60" font-size="10" font-weight="700">DÉPLOIEMENT PUBLIC</text>
+              </g>
+
+              <g class="node">
+                <rect x="1036" y="210" width="156" height="140" rx="25" fill="#071a32" filter="url(#softShadow)"/>
+                <rect x="1071" y="238" width="66" height="45" rx="6" fill="#15365c" stroke="#7eabed"/>
+                <path d="M1083 272v-17m12 17v-25m12 25v-11m12 11v-31" stroke="#88b9ff" stroke-width="3" stroke-linecap="round"/>
+                <text x="1068" y="313" fill="#fff" font-size="15" font-weight="700">Applications</text>
+                <text x="1062" y="334" fill="#9db2c9" font-size="10">Web · App · API</text>
+              </g>
+
+              <g fill="#71859c" font-size="11" font-weight="700">
+                <text x="286" y="183">PRIVÉ</text>
+                <text x="286" y="390">PUBLIC</text>
+                <text x="950" y="212">INTÉGRER</text>
+              </g>
+            </svg>
+          </figure>
+
+          <div class="network-note">
+            <span>Seuils, alarmes et état des appareils</span>
+            <span>Accès par rôles et export de données</span>
+            <span>API et modèles de données configurables</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section factory-section content-auto" id="factory" aria-labelledby="factory-title">
+      <img class="factory-media" src="/home-assets/img/factory-line-1440.webp" alt="" width="1440" height="960" loading="lazy" decoding="async" aria-hidden="true">
+      <div class="container">
+        <div class="factory-layout">
+          <div class="factory-side reveal">
+            <p class="eyebrow">De la conception à la production en série</p>
+            <h2 class="section-title" id="factory-title">Nous les fabriquons <br>nous-mêmes.</h2>
+            <p class="factory-intro">De l’impression de la pâte à braser et du placement SMT à l’intégration du boîtier et au test fonctionnel final, Hitelecom fabrique ses terminaux connectés dans son propre site — conception, tests et retours de production dans une même boucle.</p>
+            <div class="factory-chips" aria-label="Capacités de production">
+              <span>01005 capability</span>
+              <span>BGA · CSP · LGA · QFN</span>
+              <span>SPI · AOI · X-Ray</span>
+              <span>SMT → PCBA → firmware → assemblage final</span>
+            </div>
+            <a class="button button-primary" href="#contact">Discuter de votre projet</a>
+          </div>
+
+          <div class="factory-table reveal" aria-label="Équipements de production et d’inspection Hitelecom">
+            <article class="factory-row">
+              <span class="factory-code">EQP-01</span>
+              <div><h3>Impression de précision MPM</h3><p>Dépôt de pâte à braser constant pour les assemblages à pas fin et haute densité.</p></div>
+              <strong>Pas fin</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-02</span>
+              <div><h3>Koh Young 3D SPI</h3><p>Volume, position et ponts de la pâte à braser mesurés en trois dimensions.</p></div>
+              <strong>100% inline</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-03</span>
+              <div><h3>Placement Panasonic NPM</h3><p>Des composants 01005 aux grands connecteurs, modules et boîtiers complexes.</p></div>
+              <strong>±25 μm target</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-04</span>
+              <div><h3>Système de refusion Rehm</h3><p>Atmosphère d’azote et profils thermiques strictement contrôlés.</p></div>
+              <strong>Protégé N₂</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-05</span>
+              <div><h3>Omron AOI</h3><p>Inspection complète du placement, de la polarité et des joints de soudure visibles.</p></div>
+              <strong>Scan complet de la carte</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-06</span>
+              <div><h3>Inspection X-Ray</h3><p>Vérification non destructive des BGA, des vides QFN et des joints cachés.</p></div>
+              <strong>Contrôle BGA</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-07</span>
+              <div><h3>Soudure à la vague · ICT · FCT</h3><p>Assemblage traversant, test en circuit et vérification fonctionnelle finale.</p></div>
+              <strong>Assemblage + test</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-08</span>
+              <div><h3>Vernis de protection sélectif</h3><p>Masquage, vernis de protection et inspection contrôlés pour les déploiements terrain.</p></div>
+              <strong>Protection</strong>
+            </article>
+            <article class="factory-row">
+              <span class="factory-code">EQP-09</span>
+              <div><h3>Assemblage final</h3><p>Chargement du firmware, contrôle des capteurs, assemblage du boîtier et traçabilité.</p></div>
+              <strong>Appareil prêt</strong>
+            </article>
+          </div>
+        </div>
+
+        <div class="factory-proof reveal">
+          <span class="factory-proof-label">UNE BOUCLE CONTRÔLÉE</span>
+          <p>DFM, PCBA, chargement du firmware, étalonnage, protection environnementale et test final sont reliés par le même processus d’ingénierie et de qualité.</p>
+          <div>
+            <span>Retour conception-production</span>
+            <span>Rapports de test traçables</span>
+            <span>Du pilote au volume</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section applications-section content-auto" id="applications" aria-labelledby="applications-title">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <p class="eyebrow">Applications</p>
+            <h2 class="section-title" id="applications-title">Où les appareils Hitelecom <br>sont déployés.</h2>
+          </div>
+          <p class="section-intro">Un seul système matériel et de connectivité, configuré pour chaque environnement.</p>
+        </div>
+
+        <div class="application-grid">
+          <article class="application-card featured reveal">
+            <span class="application-index">01</span>
+            <span class="application-sector">Villes intelligentes</span>
+            <h3>Surveillance de la santé structurelle</h3>
+            <p>Suivez l’inclinaison, les vibrations et l’évolution des conditions sur ponts, tours, poteaux, façades et autres structures réparties.</p>
+            <svg class="application-art" viewBox="0 0 760 300" fill="none" aria-hidden="true" focusable="false">
+            <!-- 左：铁路边坡（格构护坡 + 轨道） -->
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M18 140h74l108 74"/>
+            <g opacity=".5">
+            <path d="M92 162l78 52M92 183l48 31M92 204l18 10"/>
+            <path d="M116 156v58M140 173v41M164 189v25"/>
+            </g>
+            <path d="M18 134h72M18 127h72"/>
+            <g opacity=".6"><path d="M26 125v11M42 125v11M58 125v11M74 125v11"/></g>
+            <path d="M126 214h84" opacity=".5"/>
+            </g>
+            <g stroke="currentColor" stroke-width="2">
+            <circle cx="132" cy="176" r="4.5"/><circle cx="132" cy="176" r="12" opacity=".5"/>
+            </g>
+
+            <!-- 中：古塔（七层密檐，逐层收分） -->
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M336 214h148M348 202h124"/>
+            <path d="M352 202v-24M468 202v-24"/>
+            <path d="M357 178v-22M463 178v-22"/>
+            <path d="M362 156v-21M458 156v-21"/>
+            <path d="M367 135v-19M453 135v-19"/>
+            <path d="M372 116v-18M448 116v-18"/>
+            <path d="M377 98v-16M443 98v-16"/>
+            <path d="M382 82v-15M438 82v-15"/>
+            <path d="M332 170c9 4 14 7 20 8h116c6-1 11-4 20-8"/>
+            <path d="M337 148c9 4 14 7 20 8h106c6-1 11-4 20-8"/>
+            <path d="M342 127c9 4 14 7 20 8h96c6-1 11-4 20-8"/>
+            <path d="M347 108c9 4 14 7 20 8h86c6-1 11-4 20-8"/>
+            <path d="M352 90c8 4 13 6 20 8h76c7-2 12-4 20-8"/>
+            <path d="M357 74c8 4 13 6 20 8h66c7-2 12-4 20-8"/>
+            <path d="M362 59c8 4 13 6 20 8h56c7-2 12-4 20-8"/>
+            <path d="M410 67V50"/>
+            <g opacity=".7"><path d="M402 62h16M404 57h12M406 52h8"/></g>
+            <circle cx="410" cy="46" r="3.5"/>
+            <g opacity=".55">
+            <path d="M400 202v-14a10 10 0 0 1 20 0v14"/>
+            <path d="M403 172h14v-10h-14zM404 150h12v-9h-12zM405 129h10v-8h-10z"/>
+            </g>
+            </g>
+            <g stroke="currentColor" stroke-width="2">
+            <circle cx="410" cy="135" r="4.5"/>
+            <circle cx="410" cy="135" r="12" opacity=".5"/>
+            <circle cx="410" cy="135" r="20" opacity=".22"/>
+            </g>
+
+            <!-- 右：危房（贯穿裂缝 + 临时斜撑） -->
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M596 214v-76h114v76"/>
+            <path d="M586 138l67-30 67 30"/>
+            <path d="M646 138l9 19-10 18 11 18-8 17v4" stroke-width="2.4"/>
+            <path d="M566 214l30-46M746 214l-36-44" opacity=".75"/>
+            <path d="M556 214h22M736 214h22" opacity=".75"/>
+            <g opacity=".5"><path d="M610 180h20v-20h-20zM676 180h20v-20h-20z"/></g>
+            </g>
+            <g stroke="currentColor" stroke-width="2">
+            <circle cx="668" cy="172" r="4.5"/><circle cx="668" cy="172" r="12" opacity=".5"/>
+            </g>
+
+            <path d="M0 214h760" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".65"/>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">02</span>
+            <span class="application-sector">Usines intelligentes</span>
+            <h3>Environnement et état des équipements</h3>
+            <p>Reliez les données de température, d’humidité, de gaz, de pression, de vibration et d’état sur les zones de production et les utilités.</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M40 200V130l46-34v34l46-34v34l46-34v34V200"/>
+                <path d="M96 200v-34h30v34"/>
+                <path d="M202 200V84m16 0v116M202 84h16"/>
+                <rect x="252" y="152" width="86" height="48" rx="24"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="211" cy="84" r="4.5"/><circle cx="211" cy="84" r="12" opacity=".5"/>
+                <circle cx="295" cy="152" r="4.5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">03</span>
+            <span class="application-sector">Entreposage intelligent</span>
+            <h3>Conditions de stockage et sécurité des racks</h3>
+            <p>Relevés environnementaux, événements d’inclinaison et surveillance structurelle pour entrepôts, archives et racks grande hauteur.</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M60 200V64m90 136V64m90 136V64"/>
+                <path d="M60 64h90M60 110h180M60 156h180"/>
+                <path d="M150 64l90 46M240 64l-90 46"/>
+                <rect x="76" y="128" width="26" height="28"/><rect x="110" y="118" width="30" height="38"/>
+                <rect x="166" y="168" width="30" height="32"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="240" cy="64" r="4.5"/><circle cx="240" cy="64" r="12" opacity=".5"/>
+                <circle cx="60" cy="64" r="4.5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">04</span>
+            <span class="application-sector">Gestion intelligente de l’eau</span>
+            <h3>Surveillance des canalisations, du niveau et des obstructions</h3>
+            <p>Surveillez à distance canalisations, chambres, réservoirs et canaux : niveau d’eau, débordement et conditions de fonctionnement anormales.</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M0 150h250M0 170h250M250 142v36"/>
+                <path d="M120 150V128M102 128h36"/>
+                <rect x="272" y="110" width="70" height="90"/>
+                <path d="M278 152q8-7 16 0t16 0t16 0t16 0"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="180" cy="150" r="4.5"/><circle cx="180" cy="150" r="12" opacity=".5"/>
+                <circle cx="272" cy="110" r="4.5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">05</span>
+            <span class="application-sector">Patrimoine intelligent</span>
+            <h3>Microclimat et mouvement des objets</h3>
+            <p>Surveillez température, humidité, lumière, vibrations et mouvements dans les musées, sites historiques et collections culturelles.</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M60 110h240M60 110l120-44 120 44"/>
+                <path d="M84 172V116m48 56V116m48 56V116m48 56V116m48 56V116"/>
+                <path d="M76 116h16m32 0h16m32 0h16m32 0h16m32 0h16"/>
+                <path d="M64 172h232M56 186h248"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="180" cy="66" r="4.5"/><circle cx="180" cy="66" r="12" opacity=".5"/>
+                <circle cx="276" cy="116" r="4.5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">06</span>
+            <span class="application-sector">Transport intelligent</span>
+            <h3>Actifs, structures et sécurité routière</h3>
+            <p>Combinez position, mouvement, inclinaison et événements de géofence pour actifs mobiles, panneaux, ponts et équipements routiers.</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M40 200L160 64M320 200L200 64"/>
+                <path d="M180 194v-18m0-34v-14m0-30v-10m0-24v-7"/>
+                <path d="M92 128V72M268 128V72M92 72h176"/>
+                <rect x="150" y="76" width="60" height="24"/>
+                <path d="M240 168c0 0 18-15.3 18-33a18 18 0 1 0-36 0c0 17.7 18 33 18 33Z"/>
+                <circle cx="240" cy="134" r="6"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="180" cy="72" r="4.5"/><circle cx="180" cy="72" r="12" opacity=".5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">07</span>
+            <span class="application-sector">Chaîne du froid et santé</span>
+            <h3>Des relevés de température qui voyagent</h3>
+            <p>Surveillance fiable de la température et de l’humidité pour la logistique, les laboratoires, les pharmacies, les chambres froides et le stockage.</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <rect x="48" y="96" width="180" height="104"/>
+                <path d="M84 96v104M192 96v104"/>
+                <path d="M138 128v40M121 138l34 20M155 138l-34 20"/>
+                <path d="M264 164V96a6 6 0 0 1 12 0v68M270 164v-42"/>
+                <circle cx="270" cy="175" r="11"/>
+                <path d="M284 108h8M284 130h8M284 152h8"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="228" cy="96" r="4.5"/><circle cx="228" cy="96" r="12" opacity=".5"/>
+              </g>
+            </svg>
+          </article>
+
+          <article class="application-card reveal">
+            <span class="application-index">08</span>
+            <span class="application-sector">Assainissement intelligent</span>
+            <h3>Niveau de remplissage des bacs et surveillance des débordements</h3>
+            <p>Utilisez la mesure de distance et d’état à distance pour planifier les collectes, détecter les débordements et réduire les déplacements inutiles.</p>
+            <svg class="application-art" viewBox="0 0 360 240" fill="none" aria-hidden="true" focusable="false">
+              <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M0 200h360"/>
+                <path d="M112 108h96l-8 92h-80Z"/>
+                <path d="M104 108h112M114 108l9-16h74l9 16"/>
+                <g opacity=".55"><path d="M126 172h68M123 150h74M120 128h80"/></g>
+                <path d="M146 74a16 16 0 0 0 28 0M138 88a26 26 0 0 0 44 0"/>
+              </g>
+              <g stroke="currentColor" stroke-width="2">
+                <circle cx="160" cy="56" r="4.5"/><circle cx="160" cy="56" r="12" opacity=".5"/>
+              </g>
+            </svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section content-auto" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="eyebrow eyebrow-light">Demande de projet</p>
+            <h2 id="contact-title">Dites-nous ce que <br>vous devez mesurer.</h2>
+            <p>Pas besoin d’un cahier des charges abouti. Un bref descriptif de projet suffit pour démarrer.</p>
+            <div class="contact-details">
+              <a class="contact-detail" href="mailto:sales@hitelecom.cn">
+                <span class="contact-detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                sales@hitelecom.cn
+              </a>
+              <span class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.4 2.5 3.7 5.5 3.7 9S14.4 18.5 12 21c-2.4-2.5-3.7-5.5-3.7-9S9.6 5.5 12 3Z" stroke="currentColor" stroke-width="1.7"/></svg>
+                </span>
+                B2B mondial · OEM / ODM
+              </span>
+              <span class="contact-detail">
+                <span class="contact-detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M5 19h14M7 16V8l5-3 5 3v8M10 16v-4h4v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Intégration matériel, firmware et plateforme
+              </span>
+            </div>
+          </div>
+
+          <form class="quote-form" id="quote-form">
+            <div class="form-field">
+              <label for="name">Nom *</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+            </div>
+            <div class="form-field">
+              <label for="company-name">Société *</label>
+              <input id="company-name" name="company" type="text" autocomplete="organization" placeholder="Company name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">E-mail professionnel *</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+            </div>
+            <div class="form-field">
+              <label for="product">Produit concerné</label>
+              <select id="product" name="product">
+                <option value="Capteurs de température industriels">Capteurs de température industriels</option>
+                <option value="Capteurs de température et d’humidité">Capteurs de température et d’humidité</option>
+                <option value="Enregistreurs de données de température et d’humidité">Enregistreurs de données de température et d’humidité</option>
+                <option value="Capteurs de qualité de l’air">Capteurs de qualité de l’air</option>
+                <option value="Capteurs TVOC">Capteurs TVOC</option>
+                <option value="Capteurs de pression">Capteurs de pression</option>
+                <option value="Capteurs de sol">Capteurs de sol</option>
+                <option value="Capteurs d’inclinaison">Capteurs d’inclinaison</option>
+                <option value="Capteurs de vibrations">Capteurs de vibrations</option>
+                <option value="Capteurs de distance radar">Capteurs de distance radar</option>
+                <option value="Capteurs de suivi d’actifs">Capteurs de suivi d’actifs</option>
+                <option value="Capteurs de gaz personnalisés">Capteurs de gaz personnalisés</option>
+                <option value="Autre terminal de détection ou sur mesure">Autre terminal de détection ou sur mesure</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="message">Brief projet *</label>
+              <textarea id="message" name="message" placeholder="What should the device measure? Where will it be installed? Which connectivity and platform do you prefer?" required></textarea>
+            </div>
+            <div class="form-actions">
+              <p class="form-note">Votre brief va directement à l’équipe commerciale Hitelecom. Nous répondons à la plupart des demandes sous un jour ouvré.</p>
+              <button class="button button-primary" type="submit">
+                Envoyer la demande
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <p class="form-note form-privacy">En envoyant ce formulaire, vous acceptez notre <a href="/about/privacy">Politique de confidentialité</a>.</p>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+</div>

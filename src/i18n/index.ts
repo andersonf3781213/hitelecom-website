@@ -1,13 +1,13 @@
 /**
  * 多语言配置与路由辅助
  * - 英文（默认）挂在根路径：/、/product …
- * - 中文统一加 /zh 前缀：/zh、/zh/product …；西语统一加 /es 前缀：/es、/es/product …
+ * - 中文统一加 /zh 前缀：/zh、/zh/product …；西/德/日/法统一加 /es、/de、/ja、/fr 前缀
  * - URL 一律为无扩展名形态：Cloudflare Pages 会把 /about.html 308 到 /about，
  *   无扩展名正是平台 canonical；构建产物仍为 .html 文件（build.format='file'），
  *   Pages 对 /about 直接 200 服务 about.html，旧 .html 链接由平台 308 兼容。
  */
 
-export const locales = ['en', 'zh', 'es', 'de', 'ja'] as const;
+export const locales = ['en', 'zh', 'es', 'de', 'ja', 'fr'] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = 'en';
 
@@ -17,6 +17,7 @@ export const localeNames: Record<Locale, string> = {
   es: 'ES',
   de: 'DE',
   ja: 'JA',
+  fr: 'FR',
 };
 
 /** html lang 属性值 */
@@ -26,6 +27,7 @@ export const htmlLang: Record<Locale, string> = {
   es: 'es',
   de: 'de',
   ja: 'ja',
+  fr: 'fr',
 };
 
 /** 非默认语言列表（用于生成 hreflang 互链与语言切换菜单） */
@@ -64,6 +66,6 @@ export function alternateUrl(pathname: string, target: Locale): string {
   const normalized = pathname.replace(/\/index\.html$/, '/');
   const noExt = normalized.replace(/\.html$/, '');
   // 剥掉任意非默认语言前缀（/zh、/es），再按目标语言重新加前缀
-  const stripped = noExt.replace(/^\/(zh|es|de|ja)(?=\/|$)/, '') || '/';
+  const stripped = noExt.replace(/^\/(zh|es|de|ja|fr)(?=\/|$)/, '') || '/';
   return l(stripped === '/' ? '/' : `${stripped}/`, target);
 }

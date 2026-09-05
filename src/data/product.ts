@@ -228,6 +228,38 @@ export const productTabs: Record<Locale, ProductTab[]> = {
    "label": "カスタム開発",
    "href": "/product/lists/cid/256"
   }
+ ],
+ "fr": [
+  {
+   "key": "cloud",
+   "label": "Cloud IoT",
+   "href": "/product/"
+  },
+  {
+   "key": "app",
+   "label": "Application IoT",
+   "href": "/product/app"
+  },
+  {
+   "key": "261",
+   "label": "Capteurs IoT",
+   "href": "/product/lists/cid/261"
+  },
+  {
+   "key": "258",
+   "label": "Passerelles IoT",
+   "href": "/product/lists/cid/258"
+  },
+  {
+   "key": "257",
+   "label": "Station météorologique",
+   "href": "/product/lists/cid/257"
+  },
+  {
+   "key": "256",
+   "label": "Développement sur mesure",
+   "href": "/product/lists/cid/256"
+  }
  ]
 };
 
@@ -28408,7 +28440,5651 @@ export const productContent = { ...productContentBase, de: {
    "dateModified": "2026-09-02"
   }
  }
-} };
+}
+,
+ fr: {
+  "cloud": {
+   "banner": {
+    "title": "Hitelecom Cloud",
+    "subtitle": "Une plateforme IoT sûre et fiable",
+    "desc": "Hitelecom IoT Cloud est une plateforme intelligente d’intégration de données offrant connectivité des appareils, surveillance à distance et analyse big data, pour aider les entreprises à optimiser leurs opérations et à prendre des décisions éclairées.",
+    "images": [
+     "product/cloud/banner-1.png",
+     "product/cloud/banner-2.png",
+     "product/cloud/banner-3.png",
+     "product/cloud/banner-4.png"
+    ]
+   },
+   "intro": {
+    "heading": "Connectez les appareils de terrain au cloud",
+    "paras": [
+     "Hitelecom propose une solution intégrée couvrant capteurs IoT, passerelles, contrôleurs et logiciels cloud : les données de terrain passent de l’appareil à votre tableau de bord avec moins d’étapes d’intégration.",
+     "La conception ultra-basse consommation réduit la consommation d’énergie sur tout le cycle de vie du produit, pour des déploiements durables de longue durée."
+    ],
+    "cards": [
+     {
+      "img": "product/cloud/deploy-1.png",
+      "title": "Cloud public",
+      "desc": "Connectez et gérez rapidement vos appareils avec surveillance, alertes, analyses et maintenance à distance sur Hitelecom Cloud."
+     },
+     {
+      "img": "product/cloud/deploy-2.png",
+      "title": "Cloud privé",
+      "desc": "Déployez la plateforme sur une infrastructure contrôlée par le client pour l’isolation des données, le contrôle d’accès et les opérations locales."
+     },
+     {
+      "img": "product/cloud/deploy-3.png",
+      "title": "Cloud hybride",
+      "desc": "Conservez les charges sensibles sur l’infrastructure privée tout en utilisant le cloud public pour certains services et charges évolutives."
+     },
+     {
+      "img": "product/cloud/deploy-4.png",
+      "title": "Cloud edge",
+      "desc": "Traitez les données localement, exécutez une logique de contrôle de base et gardez certaines fonctions disponibles lorsque la connectivité cloud est limitée."
+     }
+    ]
+   },
+   "features": {
+    "heading": "Fonctionnalités de Hitelecom IoT Cloud",
+    "items": [
+     {
+      "img": "product/cloud/feature-1.png",
+      "text": "Solution IoT de bout en bout"
+     },
+     {
+      "img": "product/cloud/feature-2.png",
+      "text": "Connectivité d’appareils à grande échelle"
+     },
+     {
+      "img": "product/cloud/feature-3.png",
+      "text": "Architecture distribuée hautement fiable"
+     },
+     {
+      "img": "product/cloud/feature-4.png",
+      "text": "Traitement à faible latence"
+     },
+     {
+      "img": "product/cloud/feature-5.png",
+      "text": "Support multi-protocoles"
+     },
+     {
+      "img": "product/cloud/feature-6.png",
+      "text": "Exploitation et maintenance visuelles"
+     },
+     {
+      "img": "product/cloud/feature-7.png",
+      "text": "Protocole d’appareil HiLink"
+     },
+     {
+      "img": "product/cloud/feature-8.png",
+      "text": "Développement matériel et logiciel sur mesure"
+     }
+    ]
+   },
+   "architecture": {
+    "heading": "Architecture de la plateforme",
+    "img": "product/cloud/architecture.gif"
+   },
+   "core": {
+    "heading": "Fonctions clés",
+    "subtitle": "Accélérez votre activité IoT grâce à une connectivité efficace et une gestion précise",
+    "items": [
+     {
+      "img": "product/cloud/core-1.jpg",
+      "title": "Connectivité des appareils",
+      "desc": "Connectez capteurs, contrôleurs, passerelles et appareils edge via MQTT, HTTP, TCP, CoAP, AMQP ou le protocole HiLink, selon la prise en charge de l’appareil."
+     },
+     {
+      "img": "product/cloud/core-2.jpg",
+      "title": "Gestion des appareils",
+      "desc": "Consultez l’état des appareils en direct, surveillez la qualité des connexions et analysez les alarmes.\n\nLe stockage-relais avec reprise maintient le flux de données lorsque le réseau est instable.\n\nVisualisez la répartition et la position des appareils sur une carte.\n\nGérez les mises à jour firmware OTA à distance et les opérations en lot pour les appareils pris en charge."
+     },
+     {
+      "img": "product/cloud/core-3.jpg",
+      "title": "Règles d’alarme",
+      "desc": "Configurez des règles d’alarme flexibles avec conditions de déclenchement et calculs d’attributs pour une surveillance continue.\n\nDétectez les températures élevées, pressions anormales ou débits rapides pour des décisions rapides.\n\nLes alarmes se lèvent automatiquement au retour à la normale, réduisant le suivi manuel.\n\nDéployez les configurations d’alarme en lot et recevez les rapports d’alarme des terminaux connectés."
+     },
+     {
+      "img": "product/cloud/core-4.jpg",
+      "title": "Visualisation des données",
+      "desc": "Créez des tableaux de bord pour ordinateur, mobile et grands écrans, connectés en direct aux sources de données des appareils.\n\nAffichez-les sur murs vidéo, PC, tablettes et téléphones avec rafraîchissement en temps réel.\n\nLes alarmes apparaissent en quasi temps réel et des commandes de configuration peuvent être émises depuis le tableau de bord, selon la connectivité de l’appareil.\n\nDes vues SIG et jumeau numérique en option affichent position, état et historique de déplacement des appareils."
+     },
+     {
+      "img": "product/cloud/core-5.jpg",
+      "title": "API ouverte",
+      "desc": "API ouvertes pour l’intégration d’appareils et contrôleurs tiers.\n\nUtilisez les API ou MQTT pour envoyer les données des appareils vers vos centres de données ou plateformes.\n\nL’intégration cloud-à-cloud peut consolider les données tierces prises en charge dans Hitelecom Cloud."
+     },
+     {
+      "img": "product/cloud/core-6.webp",
+      "title": "Automatisation par règles",
+      "desc": "Reliez les appareils par des règles de scène : par exemple, activer le refroidissement lorsque la température dépasse un seuil configuré, ou déclencher les contrôleurs d’irrigation pris en charge lorsque l’humidité du sol passe sous le seuil configuré.\n\nAssociée aux terminaux IoT ultra-basse consommation Hitelecom, l’automatisation par règles réduit les interventions manuelles courantes."
+     }
+    ]
+   },
+   "scenarios": {
+    "heading": "Scénarios d’application",
+    "tabs": [
+     {
+      "icons": [
+       "product/cloud/scen-icon-1a.png",
+       "product/cloud/scen-icon-1b.png"
+      ],
+      "label": "IoT industriel"
+     },
+     {
+      "icons": [
+       "product/cloud/scen-icon-2a.png",
+       "product/cloud/scen-icon-2b.png"
+      ],
+      "label": "Énergie intelligente"
+     },
+     {
+      "icons": [
+       "product/cloud/scen-icon-3a.png",
+       "product/cloud/scen-icon-3b.png"
+      ],
+      "label": "Campus intelligent"
+     },
+     {
+      "icons": [
+       "product/cloud/scen-icon-4a.png",
+       "product/cloud/scen-icon-4b.png"
+      ],
+      "label": "Agriculture intelligente"
+     }
+    ],
+    "bgs": [
+     "product/cloud/scen-bg-1.jpg",
+     "product/cloud/scen-bg-2.jpg",
+     "product/cloud/scen-bg-3.png",
+     "product/cloud/scen-bg-4.png"
+    ],
+    "slides": [
+     {
+      "img": "product/cloud/scen-bg-1.jpg",
+      "title": "IoT industriel",
+      "desc": "Connectez appareils, systèmes et équipes pour fluidifier les processus de production et améliorer l’utilisation des ressources. Les terminaux de capteurs Hitelecom surveillent l’état des équipements en temps réel, pour une maintenance conditionnelle et une réponse rapide aux pannes."
+     },
+     {
+      "img": "product/cloud/scen-bg-2.jpg",
+      "title": "Énergie intelligente",
+      "desc": "Les terminaux de capteurs Hitelecom soutiennent la gestion de l’énergie grâce à la surveillance en temps réel, l’acquisition de données et le contrôle à distance. Les données alimentent l’analyse énergétique et la maintenance conditionnelle tout en réduisant le travail manuel courant. Hitelecom Cloud peut s’intégrer aux systèmes énergétiques existants via les API et protocoles pris en charge, aidant les entreprises à suivre coûts d’exploitation et indicateurs de durabilité."
+     },
+     {
+      "img": "product/cloud/scen-bg-3.png",
+      "title": "Campus intelligent",
+      "desc": "L’IoT dans les campus intelligents connecte les appareils et partage les données entre installations. Les terminaux de capteurs Hitelecom surveillent en temps réel l’environnement du campus, les conditions de sécurité et la consommation d’énergie, offrant aux administrateurs une vision opérationnelle continue."
+     },
+     {
+      "img": "product/cloud/scen-bg-4.png",
+      "title": "Agriculture intelligente",
+      "desc": "Les appareils IoT intelligents Hitelecom surveillent en temps réel l’humidité du sol, la température et la lumière, fournissant des données qui guident les décisions d’irrigation et de fertilisation et peuvent réduire le travail courant au champ. Intégrés aux stations météo et aux contrôleurs d’irrigation pris en charge, ils relient la détection au champ à la gestion automatisée de l’exploitation."
+     }
+    ]
+   },
+   "cta": {
+    "title": "Découvrez Hitelecom IoT Cloud",
+    "subtitle": "Une plateforme simple pour connecter, surveiller et gérer les appareils IoT pris en charge.",
+    "primary": "Voir la démo cloud",
+    "secondary": "Discuter de votre projet"
+   }
+  },
+  "app": {
+   "banner": {
+    "title": "Application Hitelecom",
+    "subtitle": "La surveillance à distance de votre activité — où que vous soyez",
+    "desc": "L’application Hitelecom est un outil de surveillance à distance simple et pratique. Accédez à vos appareils connectés et gérez-les où que vous soyez depuis votre appareil mobile.",
+    "images": [
+     "product/cloud/banner-1.png",
+     "product/cloud/banner-2.png",
+     "product/cloud/banner-3.png",
+     "product/app/banner-4.png"
+    ]
+   },
+   "platforms": {
+    "heading": "Disponible sur toutes les plateformes",
+    "items": [
+     {
+      "img": "product/app/platform-1.png",
+      "name": "Windows"
+     },
+     {
+      "img": "product/app/platform-2.png",
+      "name": "iOS"
+     },
+     {
+      "img": "product/app/platform-3.png",
+      "name": "Android"
+     },
+     {
+      "img": "product/app/platform-4.png",
+      "name": "Mini-programme WeChat"
+     }
+    ]
+   },
+   "features": {
+    "heading": "Fonctionnalités du produit",
+    "subtitle": "Enregistrez les appareils, configurez les capteurs, gérez les accès utilisateurs et surveillez les données en direct depuis une seule application.",
+    "items": [
+     {
+      "img": "product/app/feature-1.png",
+      "title": "Activer l’appareil",
+      "desc": "Utilisez l’application Hitelecom pour activer et réveiller les appareils NFC, accélérant le déploiement et la configuration sur site."
+     },
+     {
+      "img": "product/app/feature-2.png",
+      "title": "Connectivité des appareils",
+      "desc": "Connectez les appareils activés à Hitelecom Cloud et configurez alarmes, tâches, intervalles de transmission et planifications selon chaque déploiement."
+     },
+     {
+      "img": "product/app/feature-3.png",
+      "title": "Attribution des appareils",
+      "desc": "Créez et gérez utilisateurs, rôles, départements et autorisations via un modèle d’accès par rôles."
+     },
+     {
+      "img": "product/app/feature-4.png",
+      "title": "Interface applicative personnalisée",
+      "desc": "Personnalisez les composants et interfaces de l’application selon vos flux de travail et votre image de marque."
+     },
+     {
+      "img": "product/app/feature-5.png",
+      "title": "Tableaux de données",
+      "desc": "Consultez relevés actuels, tendances et rapports téléchargeables dans une seule interface."
+     },
+     {
+      "img": "product/app/feature-6.png",
+      "title": "Composants cartographiques",
+      "desc": "Visualisez positions et états des appareils sur des cartes interactives pour les opérations terrain et la gestion des actifs."
+     },
+     {
+      "img": "product/app/feature-7.png",
+      "title": "Gestion des alarmes",
+      "desc": "La surveillance en temps réel de l’état des appareils, avec alertes poussées vers l’application, aide les équipes à réagir plus vite et à garder les équipements en fonctionnement."
+     },
+     {
+      "img": "product/app/feature-8.png",
+      "title": "Support multilingue",
+      "desc": "L’interface standard prend en charge le chinois et l’anglais. D’autres langues d’interface sont disponibles en développement sur mesure."
+     }
+    ]
+   },
+   "app3": {
+    "heading": "Scénarios d’application",
+    "subtitle": "Exploitez les données de terrain connectées pour surveiller les opérations, réagir aux alertes et améliorer les décisions dans tous les secteurs.",
+    "items": [
+     {
+      "img": "product/app/scen-0bbcd0.jpg",
+      "label": "Agriculture intelligente"
+     },
+     {
+      "img": "product/app/scen-214abe.jpg",
+      "label": "Surveillance environnementale"
+     },
+     {
+      "img": "product/app/scen-f607f3.jpg",
+      "label": "IoT industriel"
+     },
+     {
+      "img": "product/app/scen-7d03dc.jpg",
+      "label": "Campus intelligent"
+     },
+     {
+      "img": "product/app/scen-4f4630.jpg",
+      "label": "Ville intelligente"
+     },
+     {
+      "img": "product/app/scen-83dd3b.jpg",
+      "label": "Gestion intelligente de l’eau"
+     },
+     {
+      "img": "product/app/scen-1c2289.jpg",
+      "label": "Énergie intelligente"
+     },
+     {
+      "img": "product/app/scen-67bc5a.jpg",
+      "label": "Suivi d’actifs"
+     }
+    ]
+   }
+  },
+  "lists": {
+   "261": {
+    "bannerImg": "product/list/banner-261.jpg",
+    "subcats": [
+     {
+      "cid": "261",
+      "name": "Tous",
+      "on": true
+     },
+     {
+      "cid": "263",
+      "name": "Température",
+      "on": false
+     },
+     {
+      "cid": "262",
+      "name": "Pression",
+      "on": false
+     },
+     {
+      "cid": "269",
+      "name": "Sol",
+      "on": false
+     },
+     {
+      "cid": "268",
+      "name": "Niveau de liquide",
+      "on": false
+     },
+     {
+      "cid": "267",
+      "name": "Surveillance de l’inclinaison",
+      "on": false
+     },
+     {
+      "cid": "266",
+      "name": "Distance radar",
+      "on": false
+     },
+     {
+      "cid": "271",
+      "name": "Surveillance des vibrations",
+      "on": false
+     },
+     {
+      "cid": "265",
+      "name": "Qualité de l’air",
+      "on": false
+     },
+     {
+      "cid": "306",
+      "name": "Suivi d’actifs",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "270",
+      "img": "product/products/270.png",
+      "name": "Capteur de température",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     },
+     {
+      "id": "274",
+      "img": "product/products/274.png",
+      "name": "Capteur de pression",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     },
+     {
+      "id": "280",
+      "img": "product/products/280.png",
+      "name": "Capteur de sol",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     },
+     {
+      "id": "281",
+      "img": "product/products/281.png",
+      "name": "Capteur de niveau submersible",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     },
+     {
+      "id": "282",
+      "img": "product/products/282.png",
+      "name": "Capteur d’inclinaison",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     },
+     {
+      "id": "283",
+      "img": "product/products/283.png",
+      "name": "Capteur de distance radar",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     },
+     {
+      "id": "284",
+      "img": "product/products/284.png",
+      "name": "Capteur de vibrations",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     },
+     {
+      "id": "285",
+      "img": "product/products/285.png",
+      "name": "Capteur de qualité de l’air",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     },
+     {
+      "id": 301,
+      "name": "Capteur de température et d’humidité",
+      "conn": "NB-IoT | 4G LTE | LoRa",
+      "img": "product/products/301.png"
+     },
+     {
+      "id": 302,
+      "name": "Enregistreur de données de température et d’humidité",
+      "conn": "NFC | USB",
+      "img": "product/products/302.png"
+     },
+     {
+      "id": 303,
+      "name": "Capteur TVOC",
+      "conn": "NB-IoT | 4G LTE | LoRa",
+      "img": "product/products/303.png"
+     },
+     {
+      "id": 304,
+      "name": "Capteur de suivi d’actifs",
+      "conn": "GPS | BeiDou | 4G LTE",
+      "img": "product/products/304.png"
+     },
+     {
+      "id": 305,
+      "name": "Capteur de gaz personnalisé",
+      "conn": "NB-IoT | 4G LTE | LoRa",
+      "img": "product/products/305.png"
+     }
+    ]
+   },
+   "258": {
+    "bannerImg": "product/list/banner-258.jpg",
+    "subcats": [
+     {
+      "cid": "258",
+      "name": "Tous",
+      "on": true
+     },
+     {
+      "cid": "272",
+      "name": "Passerelle intérieure",
+      "on": false
+     },
+     {
+      "cid": "273",
+      "name": "Passerelle extérieure",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "276",
+      "img": "product/products/276.png",
+      "name": "Passerelle intérieure",
+      "conn": "LoRa | 4G LTE | Ethernet"
+     },
+     {
+      "id": "275",
+      "img": "product/products/275.png",
+      "name": "Passerelle extérieure",
+      "conn": "LoRa | 4G LTE | Ethernet"
+     }
+    ]
+   },
+   "257": {
+    "bannerImg": "product/list/banner-257.jpg",
+    "subcats": [
+     {
+      "cid": "257",
+      "name": "Tous",
+      "on": true
+     },
+     {
+      "cid": "275",
+      "name": "6 paramètres",
+      "on": false
+     },
+     {
+      "cid": "274",
+      "name": "12 paramètres",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "278",
+      "img": "product/products/278.png",
+      "name": "Station météorologique",
+      "conn": "Multi-paramètres | Temps réel | Déploiement facile"
+     },
+     {
+      "id": "277",
+      "img": "product/products/277.png",
+      "name": "Hydrologie",
+      "conn": "Temps réel | Multi-paramètres | Niveau millimétrique"
+     }
+    ]
+   },
+   "256": {
+    "bannerImg": "product/list/banner-256.jpg",
+    "subcats": [
+     {
+      "cid": "256",
+      "name": "Tous",
+      "on": true
+     },
+     {
+      "cid": "278",
+      "name": "Logiciels",
+      "on": false
+     },
+     {
+      "cid": "279",
+      "name": "Matériel",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "",
+      "img": "product/products/custom-1.png",
+      "name": "Jumeau numérique",
+      "conn": "Tableaux de bord personnalisés et visualisation dynamique des données"
+     },
+     {
+      "id": "",
+      "img": "product/products/custom-2.png",
+      "name": "Tableau de bord SIG",
+      "conn": "Cartes personnalisées et visualisation multidimensionnelle des données"
+     },
+     {
+      "id": "",
+      "img": "product/products/custom-3.png",
+      "name": "Logiciel embarqué",
+      "conn": "Logiciel embarqué adapté aux besoins spécifiques de l’application"
+     },
+     {
+      "id": "",
+      "img": "product/products/custom-4.png",
+      "name": "Personnalisation matérielle",
+      "conn": "Capteurs, contrôleurs, actionneurs et autres appareils connectés sur mesure"
+     },
+     {
+      "id": "287",
+      "img": "product/products/287.png",
+      "name": "Accessoires IoT",
+      "conn": "Couplage de signal | 2,4 GHz | 5,8 GHz"
+     },
+     {
+      "id": "286",
+      "img": "product/products/286.png",
+      "name": "Capteur 2-en-1 pour zones dangereuses",
+      "conn": "Température | Pression | Communication 4G"
+     }
+    ]
+   },
+   "262": {
+    "bannerImg": "product/list/banner-261.jpg",
+    "subcats": [
+     {
+      "cid": "261",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "263",
+      "name": "Température",
+      "on": false
+     },
+     {
+      "cid": "262",
+      "name": "Pression",
+      "on": true
+     },
+     {
+      "cid": "269",
+      "name": "Sol",
+      "on": false
+     },
+     {
+      "cid": "268",
+      "name": "Niveau de liquide",
+      "on": false
+     },
+     {
+      "cid": "267",
+      "name": "Surveillance de l’inclinaison",
+      "on": false
+     },
+     {
+      "cid": "266",
+      "name": "Distance radar",
+      "on": false
+     },
+     {
+      "cid": "271",
+      "name": "Surveillance des vibrations",
+      "on": false
+     },
+     {
+      "cid": "265",
+      "name": "Qualité de l’air",
+      "on": false
+     },
+     {
+      "cid": "306",
+      "name": "Suivi d’actifs",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "274",
+      "img": "product/products/274.png",
+      "name": "Capteur de pression",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     }
+    ]
+   },
+   "263": {
+    "bannerImg": "product/list/banner-261.jpg",
+    "subcats": [
+     {
+      "cid": "261",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "263",
+      "name": "Température",
+      "on": true
+     },
+     {
+      "cid": "262",
+      "name": "Pression",
+      "on": false
+     },
+     {
+      "cid": "269",
+      "name": "Sol",
+      "on": false
+     },
+     {
+      "cid": "268",
+      "name": "Niveau de liquide",
+      "on": false
+     },
+     {
+      "cid": "267",
+      "name": "Surveillance de l’inclinaison",
+      "on": false
+     },
+     {
+      "cid": "266",
+      "name": "Distance radar",
+      "on": false
+     },
+     {
+      "cid": "271",
+      "name": "Surveillance des vibrations",
+      "on": false
+     },
+     {
+      "cid": "265",
+      "name": "Qualité de l’air",
+      "on": false
+     },
+     {
+      "cid": "306",
+      "name": "Suivi d’actifs",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "270",
+      "img": "product/products/270.png",
+      "name": "Capteur de température",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     },
+     {
+      "id": 301,
+      "name": "Capteur de température et d’humidité",
+      "conn": "NB-IoT | 4G LTE | LoRa",
+      "img": "product/products/301.png"
+     },
+     {
+      "id": 302,
+      "name": "Enregistreur de données de température et d’humidité",
+      "conn": "NFC | USB",
+      "img": "product/products/302.png"
+     }
+    ]
+   },
+   "265": {
+    "bannerImg": "product/list/banner-261.jpg",
+    "subcats": [
+     {
+      "cid": "261",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "263",
+      "name": "Température",
+      "on": false
+     },
+     {
+      "cid": "262",
+      "name": "Pression",
+      "on": false
+     },
+     {
+      "cid": "269",
+      "name": "Sol",
+      "on": false
+     },
+     {
+      "cid": "268",
+      "name": "Niveau de liquide",
+      "on": false
+     },
+     {
+      "cid": "267",
+      "name": "Surveillance de l’inclinaison",
+      "on": false
+     },
+     {
+      "cid": "266",
+      "name": "Distance radar",
+      "on": false
+     },
+     {
+      "cid": "271",
+      "name": "Surveillance des vibrations",
+      "on": false
+     },
+     {
+      "cid": "265",
+      "name": "Qualité de l’air",
+      "on": true
+     },
+     {
+      "cid": "306",
+      "name": "Suivi d’actifs",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "285",
+      "img": "product/products/285.png",
+      "name": "Capteur de qualité de l’air",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     },
+     {
+      "id": 303,
+      "name": "Capteur TVOC",
+      "conn": "NB-IoT | 4G LTE | LoRa",
+      "img": "product/products/303.png"
+     },
+     {
+      "id": 305,
+      "name": "Capteur de gaz personnalisé",
+      "conn": "NB-IoT | 4G LTE | LoRa",
+      "img": "product/products/305.png"
+     }
+    ]
+   },
+   "266": {
+    "bannerImg": "product/list/banner-261.jpg",
+    "subcats": [
+     {
+      "cid": "261",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "263",
+      "name": "Température",
+      "on": false
+     },
+     {
+      "cid": "262",
+      "name": "Pression",
+      "on": false
+     },
+     {
+      "cid": "269",
+      "name": "Sol",
+      "on": false
+     },
+     {
+      "cid": "268",
+      "name": "Niveau de liquide",
+      "on": false
+     },
+     {
+      "cid": "267",
+      "name": "Surveillance de l’inclinaison",
+      "on": false
+     },
+     {
+      "cid": "266",
+      "name": "Distance radar",
+      "on": true
+     },
+     {
+      "cid": "271",
+      "name": "Surveillance des vibrations",
+      "on": false
+     },
+     {
+      "cid": "265",
+      "name": "Qualité de l’air",
+      "on": false
+     },
+     {
+      "cid": "306",
+      "name": "Suivi d’actifs",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "283",
+      "img": "product/products/283.png",
+      "name": "Capteur de distance radar",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     }
+    ]
+   },
+   "267": {
+    "bannerImg": "product/list/banner-261.jpg",
+    "subcats": [
+     {
+      "cid": "261",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "263",
+      "name": "Température",
+      "on": false
+     },
+     {
+      "cid": "262",
+      "name": "Pression",
+      "on": false
+     },
+     {
+      "cid": "269",
+      "name": "Sol",
+      "on": false
+     },
+     {
+      "cid": "268",
+      "name": "Niveau de liquide",
+      "on": false
+     },
+     {
+      "cid": "267",
+      "name": "Surveillance de l’inclinaison",
+      "on": true
+     },
+     {
+      "cid": "266",
+      "name": "Distance radar",
+      "on": false
+     },
+     {
+      "cid": "271",
+      "name": "Surveillance des vibrations",
+      "on": false
+     },
+     {
+      "cid": "265",
+      "name": "Qualité de l’air",
+      "on": false
+     },
+     {
+      "cid": "306",
+      "name": "Suivi d’actifs",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "282",
+      "img": "product/products/282.png",
+      "name": "Capteur d’inclinaison",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     }
+    ]
+   },
+   "268": {
+    "bannerImg": "product/list/banner-261.jpg",
+    "subcats": [
+     {
+      "cid": "261",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "263",
+      "name": "Température",
+      "on": false
+     },
+     {
+      "cid": "262",
+      "name": "Pression",
+      "on": false
+     },
+     {
+      "cid": "269",
+      "name": "Sol",
+      "on": false
+     },
+     {
+      "cid": "268",
+      "name": "Niveau de liquide",
+      "on": true
+     },
+     {
+      "cid": "267",
+      "name": "Surveillance de l’inclinaison",
+      "on": false
+     },
+     {
+      "cid": "266",
+      "name": "Distance radar",
+      "on": false
+     },
+     {
+      "cid": "271",
+      "name": "Surveillance des vibrations",
+      "on": false
+     },
+     {
+      "cid": "265",
+      "name": "Qualité de l’air",
+      "on": false
+     },
+     {
+      "cid": "306",
+      "name": "Suivi d’actifs",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "281",
+      "img": "product/products/281.png",
+      "name": "Capteur de niveau submersible",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     }
+    ]
+   },
+   "269": {
+    "bannerImg": "product/list/banner-261.jpg",
+    "subcats": [
+     {
+      "cid": "261",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "263",
+      "name": "Température",
+      "on": false
+     },
+     {
+      "cid": "262",
+      "name": "Pression",
+      "on": false
+     },
+     {
+      "cid": "269",
+      "name": "Sol",
+      "on": true
+     },
+     {
+      "cid": "268",
+      "name": "Niveau de liquide",
+      "on": false
+     },
+     {
+      "cid": "267",
+      "name": "Surveillance de l’inclinaison",
+      "on": false
+     },
+     {
+      "cid": "266",
+      "name": "Distance radar",
+      "on": false
+     },
+     {
+      "cid": "271",
+      "name": "Surveillance des vibrations",
+      "on": false
+     },
+     {
+      "cid": "265",
+      "name": "Qualité de l’air",
+      "on": false
+     },
+     {
+      "cid": "306",
+      "name": "Suivi d’actifs",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "280",
+      "img": "product/products/280.png",
+      "name": "Capteur de sol",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     }
+    ]
+   },
+   "271": {
+    "bannerImg": "product/list/banner-261.jpg",
+    "subcats": [
+     {
+      "cid": "261",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "263",
+      "name": "Température",
+      "on": false
+     },
+     {
+      "cid": "262",
+      "name": "Pression",
+      "on": false
+     },
+     {
+      "cid": "269",
+      "name": "Sol",
+      "on": false
+     },
+     {
+      "cid": "268",
+      "name": "Niveau de liquide",
+      "on": false
+     },
+     {
+      "cid": "267",
+      "name": "Surveillance de l’inclinaison",
+      "on": false
+     },
+     {
+      "cid": "266",
+      "name": "Distance radar",
+      "on": false
+     },
+     {
+      "cid": "271",
+      "name": "Surveillance des vibrations",
+      "on": true
+     },
+     {
+      "cid": "265",
+      "name": "Qualité de l’air",
+      "on": false
+     },
+     {
+      "cid": "306",
+      "name": "Suivi d’actifs",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "284",
+      "img": "product/products/284.png",
+      "name": "Capteur de vibrations",
+      "conn": "NB-IoT | 4G LTE | LoRa"
+     }
+    ]
+   },
+   "272": {
+    "bannerImg": "product/list/banner-258.jpg",
+    "subcats": [
+     {
+      "cid": "258",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "272",
+      "name": "Passerelle intérieure",
+      "on": true
+     },
+     {
+      "cid": "273",
+      "name": "Passerelle extérieure",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "276",
+      "img": "product/products/276.png",
+      "name": "Passerelle intérieure",
+      "conn": "LoRa | 4G LTE | Ethernet"
+     }
+    ]
+   },
+   "273": {
+    "bannerImg": "product/list/banner-258.jpg",
+    "subcats": [
+     {
+      "cid": "258",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "272",
+      "name": "Passerelle intérieure",
+      "on": false
+     },
+     {
+      "cid": "273",
+      "name": "Passerelle extérieure",
+      "on": true
+     }
+    ],
+    "products": [
+     {
+      "id": "275",
+      "img": "product/products/275.png",
+      "name": "Passerelle extérieure",
+      "conn": "LoRa | 4G LTE | Ethernet"
+     }
+    ]
+   },
+   "274": {
+    "bannerImg": "product/list/banner-257.jpg",
+    "subcats": [
+     {
+      "cid": "257",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "275",
+      "name": "6 paramètres",
+      "on": false
+     },
+     {
+      "cid": "274",
+      "name": "12 paramètres",
+      "on": true
+     }
+    ],
+    "products": [
+     {
+      "id": "277",
+      "img": "product/products/277.png",
+      "name": "Hydrologie",
+      "conn": "Temps réel | Multi-paramètres | Niveau millimétrique"
+     }
+    ]
+   },
+   "275": {
+    "bannerImg": "product/list/banner-257.jpg",
+    "subcats": [
+     {
+      "cid": "257",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "275",
+      "name": "6 paramètres",
+      "on": true
+     },
+     {
+      "cid": "274",
+      "name": "12 paramètres",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "278",
+      "img": "product/products/278.png",
+      "name": "Station météorologique",
+      "conn": "Multi-paramètres | Temps réel | Déploiement facile"
+     }
+    ]
+   },
+   "278": {
+    "bannerImg": "product/list/banner-256.jpg",
+    "subcats": [
+     {
+      "cid": "256",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "278",
+      "name": "Logiciels",
+      "on": true
+     },
+     {
+      "cid": "279",
+      "name": "Matériel",
+      "on": false
+     }
+    ],
+    "products": [
+     {
+      "id": "",
+      "img": "product/products/custom-1.png",
+      "name": "Jumeau numérique",
+      "conn": "Tableaux de bord personnalisés et visualisation dynamique des données"
+     },
+     {
+      "id": "",
+      "img": "product/products/custom-2.png",
+      "name": "Tableau de bord SIG",
+      "conn": "Cartes personnalisées et visualisation multidimensionnelle des données"
+     },
+     {
+      "id": "",
+      "img": "product/products/custom-3.png",
+      "name": "Logiciel embarqué",
+      "conn": "Logiciel embarqué adapté aux besoins spécifiques de l’application"
+     }
+    ]
+   },
+   "279": {
+    "bannerImg": "product/list/banner-256.jpg",
+    "subcats": [
+     {
+      "cid": "256",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "278",
+      "name": "Logiciels",
+      "on": false
+     },
+     {
+      "cid": "279",
+      "name": "Matériel",
+      "on": true
+     }
+    ],
+    "products": [
+     {
+      "id": "",
+      "img": "product/products/custom-4.png",
+      "name": "Personnalisation matérielle",
+      "conn": "Capteurs, contrôleurs, actionneurs et autres appareils connectés sur mesure"
+     },
+     {
+      "id": "287",
+      "img": "product/products/287.png",
+      "name": "Accessoires IoT",
+      "conn": "Couplage de signal | 2,4 GHz | 5,8 GHz"
+     },
+     {
+      "id": "286",
+      "img": "product/products/286.png",
+      "name": "Capteur 2-en-1 pour zones dangereuses",
+      "conn": "Température | Pression | Communication 4G"
+     }
+    ]
+   },
+   "306": {
+    "bannerImg": "product/list/banner-261.jpg",
+    "subcats": [
+     {
+      "cid": "261",
+      "name": "Tous",
+      "on": false
+     },
+     {
+      "cid": "263",
+      "name": "Température",
+      "on": false
+     },
+     {
+      "cid": "262",
+      "name": "Pression",
+      "on": false
+     },
+     {
+      "cid": "269",
+      "name": "Sol",
+      "on": false
+     },
+     {
+      "cid": "268",
+      "name": "Niveau de liquide",
+      "on": false
+     },
+     {
+      "cid": "267",
+      "name": "Surveillance de l’inclinaison",
+      "on": false
+     },
+     {
+      "cid": "266",
+      "name": "Distance radar",
+      "on": false
+     },
+     {
+      "cid": "271",
+      "name": "Surveillance des vibrations",
+      "on": false
+     },
+     {
+      "cid": "265",
+      "name": "Qualité de l’air",
+      "on": false
+     },
+     {
+      "cid": "306",
+      "name": "Suivi d’actifs",
+      "on": true
+     }
+    ],
+    "products": [
+     {
+      "id": 304,
+      "name": "Capteur de suivi d’actifs",
+      "conn": "GPS | BeiDou | 4G LTE",
+      "img": "product/products/304.png"
+     }
+    ]
+   }
+  },
+  "details": {
+   "270": {
+    "series": "Série H · Capteur de température",
+    "tagline": "Précision | Plage | Ultra-basse consommation",
+    "desc": "Les capteurs de température Hitelecom offrent surveillance à distance, alertes et mesure de haute précision, fournissant des données de température fiables et ponctuelles dans des applications variées",
+    "heroImg": "product/details/270-hero.png",
+    "pdf": "/downloads/temperature-sensor-datasheet.pdf",
+    "crumbCat": "Température",
+    "returnCid": "263",
+    "features": [
+     {
+      "icon": "product/details/270-f1.png",
+      "text": "Précision : ±0,5 °C (personnalisable à ±0,1 °C)"
+     },
+     {
+      "icon": "product/details/270-f2.png",
+      "text": "Boîtier IP68"
+     },
+     {
+      "icon": "product/details/270-f3.png",
+      "text": "Large plage : −200 °C à +800 °C"
+     },
+     {
+      "icon": "product/details/270-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/270-f5.png",
+      "text": "Conception basse consommation pour un fonctionnement longue durée"
+     },
+     {
+      "icon": "product/details/270-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/270-f7.png",
+      "text": "Surveillance de température à distance"
+     },
+     {
+      "icon": "product/details/270-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Des processeurs micro-puissance et une optimisation algorithmique offrent au capteur une durée de vie de conception jusqu’à 10 ans à un intervalle d’une heure dans les conditions de test spécifiées, réduisant la maintenance courante.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "Plage de mesure",
+      "-200°C to 800°C"
+     ],
+     [
+      "Précision",
+      "±0,5 °C (personnalisable à ±0,1 °C)"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Raccordement",
+      "Trois fils"
+     ],
+     [
+      "Bandes de fréquences",
+      "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission."
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Plage de mesure",
+      "value": "-200°C to 800°C",
+      "unitText": "degré Celsius",
+      "minValue": -200.0,
+      "maxValue": 800.0
+     },
+     {
+      "name": "Précision",
+      "value": "±0,5 °C (personnalisable à ±0,1 °C)",
+      "unitText": "degré Celsius"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Raccordement",
+      "value": "Trois fils"
+     },
+     {
+      "name": "Bandes de fréquences",
+      "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission.",
+      "unitText": "an",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/270-scen1.jpg",
+      "label": "Énergie intelligente"
+     },
+     {
+      "img": "product/details/270-scen2.jpg",
+      "label": "Agriculture intelligente"
+     },
+     {
+      "img": "product/details/270-scen3.jpg",
+      "label": "Centre de données"
+     },
+     {
+      "img": "product/details/270-scen4.jpg",
+      "label": "Stockage pharmaceutique et de santé"
+     },
+     {
+      "img": "product/details/270-scen5.jpg",
+      "label": "Transformation alimentaire"
+     },
+     {
+      "img": "product/details/270-scen6.jpg",
+      "label": "Fabrication intelligente"
+     },
+     {
+      "img": "product/details/270-scen7.jpg",
+      "label": "Parc d’attractions"
+     }
+    ],
+    "related": [
+     "274",
+     "280",
+     "281",
+     "282",
+     "283",
+     "284",
+     "285",
+     "276",
+     "275"
+    ],
+    "summary": "Le capteur de température Hitelecom Série H est un capteur de température industriel sans fil pour la surveillance à distance de −200 °C à +800 °C. Il offre une précision de ±0,5 °C (personnalisable à ±0,1 °C), est conçu pour plus de 10 ans d’autonomie à transmission horaire dans les conditions de test spécifiées, et téléverse les relevés en 4G ou NB-IoT vers Hitelecom Cloud ou des plateformes privées via MQTT.",
+    "sku": "H200/H300/H500",
+    "applications": [
+     {
+      "name": "Centres de données et salles serveurs",
+      "desc": "Suit la température d’entrée des racks et de la salle, aidant les exploitants à identifier les conditions pouvant mener à un arrêt thermique.",
+      "img": "product/details/270-scen3.jpg"
+     },
+     {
+      "name": "Stockage frigorifique et transformation alimentaire",
+      "desc": "Maintient groupes froids, congélateurs et lignes de transformation dans des plages de température sûres pour la surveillance HACCP.",
+      "img": "product/details/270-scen5.jpg"
+     },
+     {
+      "name": "Surveillance médicale et de laboratoire",
+      "desc": "Surveille réfrigérateurs, incubateurs et salles propres contenant vaccins, sang et réactifs.",
+      "img": "product/details/270-scen4.jpg"
+     },
+     {
+      "name": "Climat de serre et d’élevage",
+      "desc": "Surveille la température des bâtiments pour le rendement des cultures et le bien-être animal en agriculture intelligente.",
+      "img": "product/details/270-scen2.jpg"
+     },
+     {
+      "name": "Surveillance de process industriels",
+      "desc": "Mesure la température de surface des canalisations, chaudières et équipements sur les lignes de production.",
+      "img": "product/details/270-scen6.jpg"
+     },
+     {
+      "name": "Installations énergétiques",
+      "desc": "Surveille transformateurs, salles batteries et armoires de poste contre les risques de surchauffe.",
+      "img": "product/details/270-scen1.jpg"
+     },
+     {
+      "name": "Lieux publics",
+      "desc": "Surveille le climat intérieur des parcs d’attractions et autres bâtiments publics à forte fréquentation.",
+      "img": "product/details/270-scen7.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Quelle est la plage de mesure du capteur de température Série H ?",
+      "a": "La plage standard est de −200 °C à +800 °C avec une précision de ±0,5 °C ; une précision de ±0,1 °C est disponible sur demande. Le raccordement trois fils de la sonde maintient des relevés stables dans les usines électriquement bruyantes."
+     },
+     {
+      "q": "Quelle est l’autonomie de la batterie ?",
+      "a": "Le transmetteur est conçu pour plus de 10 ans d’autonomie à un intervalle d’une heure — l’autonomie réelle varie selon les conditions réseau, la température et la fréquence de transmission. Le transmetteur est entièrement sur batterie ; seul le câble de la sonde est requis — ni secteur ni câble de signal au point d’installation."
+     },
+     {
+      "q": "Comment le capteur transmet-il les données ?",
+      "a": "Il transmet en 4G ou NB-IoT via MQTT vers Hitelecom Cloud, un cloud client ou un déploiement privé, et pousse des alertes lorsque la température franchit les seuils configurés."
+     },
+     {
+      "q": "Le capteur peut-il être personnalisé pour notre application ?",
+      "a": "Oui. Type de sonde, longueur de sonde, longueur de câble, intervalle de transmission et boîtier peuvent être personnalisés dans le programme OEM/ODM Hitelecom. Contactez les ventes avec vos conditions d’utilisation."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "274": {
+    "series": "Série H · Capteur de pression",
+    "tagline": "À distance | Basse consommation | Résistant aux chocs",
+    "desc": "Les capteurs de pression Hitelecom assurent une mesure de précision continue avec remontée cloud fiable des données de pression critiques pour les applications industrielles complexes",
+    "heroImg": "product/details/274-hero.png",
+    "pdf": "/downloads/h300-pressure-sensor-datasheet.pdf",
+    "crumbCat": "Pression",
+    "returnCid": "262",
+    "features": [
+     {
+      "icon": "product/details/274-f1.png",
+      "text": "±0,5 % FS (personnalisation haute précision)"
+     },
+     {
+      "icon": "product/details/274-f2.png",
+      "text": "Boîtier IP68"
+     },
+     {
+      "icon": "product/details/274-f3.png",
+      "text": "Prend en charge les mises à jour firmware OTA à distance."
+     },
+     {
+      "icon": "product/details/274-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/274-f5.png",
+      "text": "Conception basse consommation pour un fonctionnement longue durée"
+     },
+     {
+      "icon": "product/details/274-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/274-f7.png",
+      "text": "Surveillance de pression à distance"
+     },
+     {
+      "icon": "product/details/274-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Les technologies de communication et de détection intégrées, avec des algorithmes d’économie d’énergie embarqués, offrent au capteur de pression une durée de vie étendue et une grande stabilité de mesure, soutenant la fiabilité de l’ensemble du système de surveillance.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "Plage de mesure",
+      "0–1 ; 1,6 ; 3,5 ; 7 ; 10 ou 20 MPa"
+     ],
+     [
+      "Surcharge",
+      "≤ 2× la pression pleine échelle"
+     ],
+     [
+      "Stabilité",
+      "±0,2 % FS/an"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Température de fonctionnement",
+      "-20°C to +80°C"
+     ],
+     [
+      "Température de stockage",
+      "-20°C to +85°C"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission."
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Plage de mesure",
+      "value": "0–1 ; 1,6 ; 3,5 ; 7 ; 10 ou 20 MPa"
+     },
+     {
+      "name": "Surcharge",
+      "value": "≤ 2× la pression pleine échelle"
+     },
+     {
+      "name": "Stabilité",
+      "value": "±0,2 % FS/an"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Température de fonctionnement",
+      "value": "-20°C to +80°C",
+      "unitText": "degré Celsius",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "Température de stockage",
+      "value": "-20°C to +85°C",
+      "unitText": "degré Celsius",
+      "minValue": -20.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission.",
+      "unitText": "an",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/274-scen1.jpg",
+      "label": "Industrie chimique"
+     },
+     {
+      "img": "product/details/274-scen2.jpg",
+      "label": "Industrie des semi-conducteurs"
+     },
+     {
+      "img": "product/details/274-scen3.jpg",
+      "label": "Bâtiment intelligent"
+     },
+     {
+      "img": "product/details/274-scen4.jpg",
+      "label": "Fabrication intelligente"
+     },
+     {
+      "img": "product/details/274-scen5.jpg",
+      "label": "Recherche scientifique"
+     },
+     {
+      "img": "product/details/274-scen6.jpg",
+      "label": "Agriculture intelligente"
+     },
+     {
+      "img": "product/details/274-scen7.jpg",
+      "label": "Surveillance de tours"
+     },
+     {
+      "img": "product/details/274-scen8.jpg",
+      "label": "Exploration géologique"
+     }
+    ],
+    "related": [
+     "270",
+     "280",
+     "281",
+     "282",
+     "283",
+     "284",
+     "285",
+     "276",
+     "275"
+    ],
+    "summary": "Le capteur de pression Hitelecom Série H est un transmetteur de pression industriel sans fil pour canalisations, pompes et réservoirs. Les plages pleine échelle disponibles sont 1, 1,6, 3,5, 7, 10 et 20 MPa avec une stabilité de ±0,2 % FS/an et une tolérance de surcharge de 2× la pleine échelle, avec remontée en 4G ou NB-IoT. La batterie est conçue pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées.",
+    "sku": "H200/H300/H500",
+    "applications": [
+     {
+      "name": "Alimentation en eau et stations de pompage",
+      "desc": "Surveille la pression des canalisations pour détecter tôt ruptures, fuites et pannes de pompes.",
+      "img": "product/details/281-scen1.jpg"
+     },
+     {
+      "name": "Usines chimiques",
+      "desc": "Suit la pression des lignes de process là où les transmetteurs filaires sont coûteux à moderniser.",
+      "img": "product/details/274-scen1.jpg"
+     },
+     {
+      "name": "Réseaux d’eau des bâtiments",
+      "desc": "Surveille la pression des pompes de surpression et des colonnes dans l’alimentation en eau secondaire des immeubles de grande hauteur.",
+      "img": "product/details/274-scen3.jpg"
+     },
+     {
+      "name": "Fabs de semi-conducteurs",
+      "desc": "Surveille les lignes de gaz spéciaux et d’utilités avec des relevés stables et répétables.",
+      "img": "product/details/274-scen2.jpg"
+     },
+     {
+      "name": "Hydraulique industrielle",
+      "desc": "Suit les courbes de pression des presses hydrauliques et équipements pour la maintenance conditionnelle.",
+      "img": "product/details/274-scen4.jpg"
+     },
+     {
+      "name": "Surveillance de réservoirs et cuves",
+      "desc": "Combine pression de colonne et niveau pour la gestion des stocks et la sécurité.",
+      "img": "product/details/287-scen3.jpg"
+     },
+     {
+      "name": "Sites géologiques et d’exploration",
+      "desc": "Enregistrement de pression sur batterie dans des forages isolés, sans câblage.",
+      "img": "product/details/274-scen8.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Quelles plages de pression sont disponibles ?",
+      "a": "Les plages standard sont 0–1 MPa, 1,6 MPa, 3,5 MPa, 7 MPa, 10 MPa et 20 MPa. Le capteur tolère une surcharge de 2× la pleine échelle et offre une stabilité long terme de ±0,2 % FS/an (une métrique distincte de la précision de mesure)."
+     },
+     {
+      "q": "Peut-il mesurer la pression des gaz et des liquides ?",
+      "a": "La version standard convient aux gaz et liquides courants compatibles avec le raccord process ; pour les milieux corrosifs ou spéciaux, contactez Hitelecom pour confirmer les matériaux en contact."
+     },
+     {
+      "q": "Comment transmet-il les relevés ?",
+      "a": "Il envoie les relevés en 4G ou NB-IoT via MQTT vers Hitelecom Cloud, un cloud client ou une plateforme privée, avec seuils et alertes configurables."
+     },
+     {
+      "q": "Quelle alimentation faut-il sur site ?",
+      "a": "Aucune. La batterie interne est conçue pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées — l’autonomie réelle varie selon la couverture réseau, la température et la fréquence de transmission — le transmetteur peut donc être monté là où le câblage est impraticable."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "280": {
+    "series": "Série H · Capteur de sol",
+    "tagline": "Basse consommation | Précision | Multi-paramètres",
+    "desc": "Le capteur de sol Hitelecom intègre surveillance multi-paramètres, synchronisation planifiée des données et mesure de précision, pour une évaluation complète de la qualité des sols et une surveillance continue dans des applications agricoles variées",
+    "heroImg": "product/details/280-hero.png",
+    "pdf": "/downloads/h300-soil-sensor-datasheet.pdf",
+    "crumbCat": "Sol",
+    "returnCid": "269",
+    "features": [
+     {
+      "icon": "product/details/280-f1.png",
+      "text": "Surveillance des nutriments clés tels que l’azote, le phosphore et le potassium"
+     },
+     {
+      "icon": "product/details/280-f2.png",
+      "text": "Boîtier IP68"
+     },
+     {
+      "icon": "product/details/280-f3.png",
+      "text": "Surveillance de l’humidité du sol pour la gestion de l’irrigation"
+     },
+     {
+      "icon": "product/details/280-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/280-f5.png",
+      "text": "Prend en charge les mises à jour firmware OTA à distance."
+     },
+     {
+      "icon": "product/details/280-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/280-f7.png",
+      "text": "Surveillance des sols à distance"
+     },
+     {
+      "icon": "product/details/280-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Grâce à des algorithmes intelligents avancés et à l’enregistrement continu des données, ainsi qu’à son adaptabilité aux conditions extrêmes, il suit et analyse en continu et avec précision l’état des sols, répondant efficacement aux défis agricoles complexes et améliorant les décisions d’irrigation, de fertilisation et de gestion des rendements.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "Conductivité",
+      "0–1,000 µS/cm (±3%)"
+     ],
+     [
+      "pH",
+      "0–14 (résolution 0,01)"
+     ],
+     [
+      "Humidité du sol",
+      "0–100 % (±3 % ; non adapté au pergélisol)"
+     ],
+     [
+      "NPK",
+      "0–1,999 mg/kg (±2% FS)"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Bandes de fréquences",
+      "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission."
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Conductivité",
+      "value": "0–1,000 µS/cm (±3%)",
+      "unitText": "microsiemens par centimètre",
+      "minValue": 0.0,
+      "maxValue": 1000.0
+     },
+     {
+      "name": "pH",
+      "value": "0–14 (résolution 0,01)"
+     },
+     {
+      "name": "Humidité du sol",
+      "value": "0–100 % (±3 % ; non adapté au pergélisol)",
+      "unitText": "pour cent",
+      "minValue": 0.0,
+      "maxValue": 100.0
+     },
+     {
+      "name": "NPK",
+      "value": "0–1,999 mg/kg (±2% FS)",
+      "unitText": "milligramme par kilogramme",
+      "minValue": 0.0,
+      "maxValue": 1999.0
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Bandes de fréquences",
+      "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission.",
+      "unitText": "an",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/280-scen1.jpg",
+      "label": "Terres agricoles"
+     },
+     {
+      "img": "product/details/280-scen2.jpg",
+      "label": "Serre"
+     },
+     {
+      "img": "product/details/280-scen3.jpg",
+      "label": "Parcs urbains"
+     },
+     {
+      "img": "product/details/280-scen4.jpg",
+      "label": "Pollution des sols"
+     },
+     {
+      "img": "product/details/280-scen5.jpg",
+      "label": "Santé des forêts"
+     },
+     {
+      "img": "product/details/280-scen6.jpg",
+      "label": "Laboratoire"
+     }
+    ],
+    "related": [
+     "270",
+     "274",
+     "281",
+     "282",
+     "283",
+     "284",
+     "285",
+     "276",
+     "275"
+    ],
+    "summary": "Le capteur de sol Hitelecom Série H est une sonde sans fil multi-paramètres pour l’agriculture et la surveillance des terres. Un seul appareil mesure humidité du sol, température, conductivité (EC), pH et nutriments NPK, remonte en 4G ou NB-IoT, et est conçu pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées, avec un boîtier IP68 conçu pour l’enfouissement longue durée.",
+    "sku": "H200/H300/H500",
+    "applications": [
+     {
+      "name": "Planification de l’irrigation des terres",
+      "desc": "Les tendances d’humidité du sol indiquent aux exploitants quand et combien irriguer, réduisant le gaspillage d’eau.",
+      "img": "product/details/280-scen1.jpg"
+     },
+     {
+      "name": "Fertigation en serre",
+      "desc": "Les relevés EC et NPK guident le dosage des engrais pour que les nutriments restent dans la zone racinaire, pas dans le ruissellement.",
+      "img": "product/details/280-scen2.jpg"
+     },
+     {
+      "name": "Parcs urbains et espaces paysagers",
+      "desc": "Surveille l’humidité du sol des pelouses et fosses d’arbres pour les équipes municipales d’espaces verts.",
+      "img": "product/details/280-scen3.jpg"
+     },
+     {
+      "name": "Suivi de la pollution et de la remédiation des sols",
+      "desc": "L’enregistrement continu du pH et de l’EC signale les panaches de contamination et vérifie l’avancement de la remédiation.",
+      "img": "product/details/280-scen4.jpg"
+     },
+     {
+      "name": "Santé des forêts et prairies",
+      "desc": "Des sondes enterrées longue durée suivent le stress hydrique du sol avant le dépérissement visible du couvert.",
+      "img": "product/details/280-scen5.jpg"
+     },
+     {
+      "name": "Recherche et essais au champ",
+      "desc": "Des séries temporelles multi-paramètres soutiennent la recherche agronomique et les essais variétaux.",
+      "img": "product/details/280-scen6.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Quels paramètres du sol la Série H mesure-t-elle ?",
+      "a": "Humidité du sol (0–100 %, ±3 %), température, conductivité (0–1 000 µS/cm, ±3 %), pH (0–14, résolution 0,01) et nutriments NPK (0–1 999 mg/kg, ±2 % FS) — le tout dans une seule sonde."
+     },
+     {
+      "q": "La sonde peut-elle rester enterrée en extérieur toute l’année ?",
+      "a": "Oui. Le boîtier IP68 est conçu pour un enfouissement longue durée, et la batterie pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées, réduisant la maintenance courante entre les saisons."
+     },
+     {
+      "q": "Comment les données du sol sont-elles transmises ?",
+      "a": "En 4G ou NB-IoT avec liaison MQTT vers Hitelecom Cloud ou une plateforme privée ; des seuils sur chaque paramètre déclenchent des alertes."
+     },
+     {
+      "q": "Convient-elle aux sols alcalins ou salins ?",
+      "a": "Le canal EC couvre 0–1 000 µS/cm. Pour les sols salins ou milieux spéciaux, confirmez la plage EC requise avec Hitelecom."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "281": {
+    "series": "Série H · Capteur de niveau submersible",
+    "tagline": "Précision | Plage | Ultra-basse consommation",
+    "desc": "Le capteur de niveau Hitelecom offre une surveillance précise, un retour rapide et une grande stabilité, fournissant des données de niveau de liquide exactes et continues dans divers environnements industriels.",
+    "heroImg": "product/details/281-hero.png",
+    "pdf": "/downloads/liquid-level-sensor-datasheet.pdf",
+    "crumbCat": "Niveau de liquide",
+    "returnCid": "268",
+    "features": [
+     {
+      "icon": "product/details/281-f1.png",
+      "text": "±0,5 % FS (personnalisation haute précision)"
+     },
+     {
+      "icon": "product/details/281-f2.png",
+      "text": "Boîtier IP68"
+     },
+     {
+      "icon": "product/details/281-f3.png",
+      "text": "Large plage : 0–200 m (personnalisable)"
+     },
+     {
+      "icon": "product/details/281-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/281-f5.png",
+      "text": "Prend en charge les mises à jour firmware OTA à distance."
+     },
+     {
+      "icon": "product/details/281-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/281-f7.png",
+      "text": "Surveillance de niveau à distance"
+     },
+     {
+      "icon": "product/details/281-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Technologie de détection intégrée, communication temps réel et conception économe en énergie fournissent des données de niveau exactes et continues, du traitement de l’eau aux lignes de production chimique.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "Plage",
+      "0–200 m (personnalisable)"
+     ],
+     [
+      "Précision",
+      "±0,5 % FS (précision supérieure personnalisable)"
+     ],
+     [
+      "Stabilité",
+      "±0,2 % FS/an"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Température de fonctionnement",
+      "-20°C to +70°C"
+     ],
+     [
+      "Température de stockage",
+      "-20°C to +80°C"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission."
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Plage",
+      "value": "0–200 m (personnalisable)"
+     },
+     {
+      "name": "Précision",
+      "value": "±0,5 % FS (précision supérieure personnalisable)",
+      "unitText": "pour cent"
+     },
+     {
+      "name": "Stabilité",
+      "value": "±0,2 % FS/an"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Température de fonctionnement",
+      "value": "-20°C to +70°C",
+      "unitText": "degré Celsius",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "Température de stockage",
+      "value": "-20°C to +80°C",
+      "unitText": "degré Celsius",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission.",
+      "unitText": "an",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/281-scen1.jpg",
+      "label": "Alimentation en eau et drainage"
+     },
+     {
+      "img": "product/details/281-scen2.jpg",
+      "label": "Applications marines et embarquées"
+     },
+     {
+      "img": "product/details/281-scen3.jpg",
+      "label": "Surveillance hydrologique"
+     },
+     {
+      "img": "product/details/281-scen4.jpg",
+      "label": "Métallurgie"
+     },
+     {
+      "img": "product/details/281-scen5.jpg",
+      "label": "Eaux usées médicales"
+     },
+     {
+      "img": "product/details/281-scen6.jpg",
+      "label": "Centrale électrique"
+     },
+     {
+      "img": "product/details/281-scen7.jpg",
+      "label": "Exploitation minière"
+     },
+     {
+      "img": "product/details/281-scen8.jpg",
+      "label": "Énergie intelligente"
+     }
+    ],
+    "related": [
+     "270",
+     "274",
+     "280",
+     "282",
+     "283",
+     "284",
+     "285",
+     "276",
+     "275"
+    ],
+    "summary": "Le capteur de niveau Hitelecom Série H est un transmetteur de niveau de liquide sans fil pour réservoirs, rivières, cuves et puits. Il couvre 0–200 m (personnalisable) avec une précision de ±0,5 % FS et une stabilité de ±0,2 % FS/an, est conçu pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées, et remonte en 4G ou NB-IoT.",
+    "sku": "H200/H300/H500",
+    "applications": [
+     {
+      "name": "Réservoirs et barrages",
+      "desc": "Enregistrement continu du niveau d’eau pour la lutte contre les crues et les décisions de régulation.",
+      "img": "solution/67-scen-0.jpg"
+     },
+     {
+      "name": "Stations fluviales et hydrologiques",
+      "desc": "Surveillance à distance du niveau le long des rivières et canaux, sans alimentation secteur.",
+      "img": "product/details/281-scen3.jpg"
+     },
+     {
+      "name": "Alimentation en eau et drainage",
+      "desc": "Niveaux des réservoirs, bacs de clarté et réservoirs réseau pour l’exploitation des utilités.",
+      "img": "product/details/281-scen1.jpg"
+     },
+     {
+      "name": "Réservoirs industriels",
+      "desc": "Niveau de stock dans les cuves de process des centrales et de la métallurgie.",
+      "img": "product/details/287-scen3.jpg"
+     },
+     {
+      "name": "Gestion de l’eau en mine",
+      "desc": "Surveille les niveaux d’eau des puisards et puits pour la sécurité minière.",
+      "img": "product/details/281-scen7.jpg"
+     },
+     {
+      "name": "Applications marines et navires",
+      "desc": "Surveillance du niveau des ballasts et cales, simplement sur batterie.",
+      "img": "product/details/281-scen2.jpg"
+     },
+     {
+      "name": "Eaux usées médicales",
+      "desc": "Suit les niveaux des cuves de collecte des stations d’eaux usées hospitalières.",
+      "img": "product/details/281-scen5.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Quelle plage de niveau la Série H couvre-t-elle ?",
+      "a": "0–200 m en standard, personnalisable au-delà. Précision de ±0,5 % FS avec une stabilité de ±0,2 % FS par an pour une surveillance longue durée sans surveillance humaine."
+     },
+     {
+      "q": "Comment le capteur est-il alimenté sur les sites isolés ?",
+      "a": "Par batterie interne — conçue pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées — de sorte que, dans les déploiements adaptés, réservoirs et stations fluviales peuvent se passer de panneau solaire ou de câblage."
+     },
+     {
+      "q": "Comment obtenir les données de niveau ?",
+      "a": "Le transmetteur remonte en 4G ou NB-IoT via MQTT vers Hitelecom Cloud ou votre propre plateforme, avec alarmes de niveau haut et bas."
+     },
+     {
+      "q": "Peut-il être personnalisé pour notre réservoir ou puits ?",
+      "a": "Oui. Plage, longueur de câble de sonde et montage peuvent être adaptés à l’installation ; partagez vos plans ou photos du site avec les ventes Hitelecom pour une configuration adaptée."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "282": {
+    "series": "Série H · Capteur d’inclinaison",
+    "tagline": "Précision | Multi-axes | Ultra-basse consommation",
+    "desc": "Le capteur d’inclinaison Hitelecom intègre des éléments de détection de très haute précision, avec surveillance à distance, alertes en temps réel et mesure de haute précision pour des données d’inclinaison exactes et ponctuelles dans des applications industrielles complexes",
+    "heroImg": "product/details/282-hero.png",
+    "pdf": "/downloads/h310-ts180c-tilt-sensor-datasheet.pdf",
+    "crumbCat": "Surveillance de l’inclinaison",
+    "returnCid": "267",
+    "features": [
+     {
+      "icon": "product/details/282-f1.png",
+      "text": "Précision : ±0,005° (personnalisable)"
+     },
+     {
+      "icon": "product/details/282-f2.png",
+      "text": "Boîtier IP68"
+     },
+     {
+      "icon": "product/details/282-f3.png",
+      "text": "Résolution : 0,001°"
+     },
+     {
+      "icon": "product/details/282-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/282-f5.png",
+      "text": "Prend en charge les mises à jour firmware OTA à distance."
+     },
+     {
+      "icon": "product/details/282-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/282-f7.png",
+      "text": "Surveillance d’angle à distance"
+     },
+     {
+      "icon": "product/details/282-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Éléments de détection haute sensibilité, synchronisation des données en temps réel et conception robuste et durable assurent une surveillance d’inclinaison précise et fiable. Conçu pour jusqu’à 10 ans de fonctionnement à un intervalle d’une heure dans les conditions de test spécifiées, réduisant la maintenance courante.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "Plage",
+      "Axe X · Axe Y (personnalisable en trois axes)"
+     ],
+     [
+      "Précision",
+      "±0,005° (personnalisable)"
+     ],
+     [
+      "Résolution",
+      "0.001°"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Température de fonctionnement",
+      "-20°C to +70°C"
+     ],
+     [
+      "Température de stockage",
+      "-20°C to +80°C"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission."
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/282-scen1.jpg",
+      "label": "Inclinaison et déformation des ponts"
+     },
+     {
+      "img": "product/details/282-scen2.jpg",
+      "label": "Rayonnages d’entrepôt"
+     },
+     {
+      "img": "product/details/282-scen3.jpg",
+      "label": "Inclinaison des tours"
+     },
+     {
+      "img": "product/details/282-scen4.jpg",
+      "label": "Bâtiments à risque"
+     },
+     {
+      "img": "product/details/282-scen5.jpg",
+      "label": "Système de suivi solaire"
+     },
+     {
+      "img": "product/details/282-scen6.jpg",
+      "label": "Surveillance de l’inclinaison des infrastructures énergétiques"
+     },
+     {
+      "img": "product/details/282-scen7.jpg",
+      "label": "Inclinaison des bâtiments"
+     },
+     {
+      "img": "product/details/282-scen8.jpg",
+      "label": "Surveillance des manèges et structures de parcs"
+     }
+    ],
+    "related": [
+     "270",
+     "274",
+     "280",
+     "281",
+     "283",
+     "284",
+     "285",
+     "276",
+     "275"
+    ],
+    "summary": "Le capteur d’inclinaison Hitelecom Série H est un inclinomètre IoT sans fil pour la surveillance de la santé structurelle. Il mesure l’inclinaison sur les axes X et Y (trois axes en option) avec une précision de ±0,005° et une résolution de 0,001°, est conçu pour plus de 10 ans d’autonomie à transmission horaire dans les conditions de test spécifiées, et dispose d’un indice IP68 pour le déploiement extérieur longue durée. Options de connectivité : 4G, NB-IoT et LoRa.",
+    "sku": "H200/H300/H500",
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200 / H300 / H500"
+     },
+     {
+      "name": "Axes de mesure",
+      "value": "Axe X · Axe Y (personnalisable en trois axes)"
+     },
+     {
+      "name": "Précision",
+      "value": "±0.005°",
+      "unitText": "degré"
+     },
+     {
+      "name": "Résolution",
+      "value": "0.001°",
+      "unitText": "degré"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Sans fil",
+      "value": "4G / NB-IoT / LoRa"
+     },
+     {
+      "name": "Température de fonctionnement",
+      "value": "-20°C to 70°C",
+      "unitText": "degré Celsius",
+      "minValue": -20,
+      "maxValue": 70
+     },
+     {
+      "name": "Température de stockage",
+      "value": "-20°C to 80°C",
+      "unitText": "degré Celsius",
+      "minValue": -20,
+      "maxValue": 80
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées"
+     },
+     {
+      "name": "Indice de protection",
+      "value": "IP68"
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation · Collier de mât · Montage à fente"
+     },
+     {
+      "name": "Configuration",
+      "value": "Activation NFC ; mise à jour firmware OTA"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "applications": [
+     {
+      "name": "Surveillance de la stabilité des pentes",
+      "desc": "Permet d’identifier plus tôt les mouvements anormaux de pente sur autoroutes, mines à ciel ouvert et remblais de déblai.",
+      "img": "product/details/281-scen7.jpg"
+     },
+     {
+      "name": "Infrastructure ferroviaire",
+      "desc": "Surveille le tassement de la plateforme, les murs de soutènement et l’inclinaison des mâts de caténaire le long des lignes ferroviaires."
+     },
+     {
+      "name": "Surveillance des tunnels",
+      "desc": "Suit la convergence du revêtement et la rotation des segments pendant et après la construction du tunnel."
+     },
+     {
+      "name": "Déformation des ponts",
+      "desc": "Mesure l’inclinaison des piles, la rotation des poutres et le déplacement des appuis pour la surveillance de la santé des ponts.",
+      "img": "product/details/282-scen1.jpg"
+     },
+     {
+      "name": "Structures de métro",
+      "desc": "Surveille la déflexion des boîtes de station et la déformation des tunnels au voisinage d’excavations adjacentes."
+     },
+     {
+      "name": "Chantiers et structures temporaires",
+      "desc": "Surveille échafaudages, grues à tour, coffrages et baraques de chantier contre toute inclinaison dangereuse."
+     },
+     {
+      "name": "Digues maritimes et barrages",
+      "desc": "Surveillance continue de l’inclinaison des barrages en remblai, digues et pentes de réservoirs.",
+      "img": "solution/67-scen-0.jpg"
+     },
+     {
+      "name": "Bâtiments patrimoniaux et pagodes anciennes",
+      "desc": "Suivi d’inclinaison non invasif pour les structures historiques protégées où le perçage est interdit.",
+      "img": "product/details/282-scen4.jpg"
+     },
+     {
+      "name": "Surveillance de l’inclinaison des arbres",
+      "desc": "Détecte les ruptures racinaires et la progression de l’inclinaison des arbres urbains avant la saison des typhons.",
+      "img": "product/details/280-scen3.jpg"
+     },
+     {
+      "name": "Candélabres",
+      "desc": "Signale l’inclinaison des candélabres due aux chocs de véhicules ou au relâchement des fondations."
+     },
+     {
+      "name": "Pylônes de transmission",
+      "desc": "Surveille le tassement des fondations et l’inclinaison des pylônes sur les lignes de transmission électrique.",
+      "img": "product/details/282-scen3.jpg"
+     },
+     {
+      "name": "Tours télécom",
+      "desc": "Suit la verticalité des mâts et l’alignement des tours haubanées pour les infrastructures de communication."
+     },
+     {
+      "name": "Rayonnages d’entrepôt",
+      "desc": "Détecte la déflexion des montants de racks due aux chocs de chariots, pour une intervention plus précoce avant que les dommages ne s’aggravent.",
+      "img": "product/details/282-scen2.jpg"
+     }
+    ],
+    "faqs": [
+     {
+      "q": "Quelles structures le capteur d’inclinaison Série H peut-il surveiller ?",
+      "a": "Le capteur d’inclinaison Série H se déploie sur pentes et remblais, infrastructures ferroviaires, tunnels, ponts, structures de métro, chantiers et ouvrages temporaires, digues maritimes et barrages, bâtiments patrimoniaux et pagodes anciennes, arbres urbains, candélabres, pylônes de transmission, tours télécom et rayonnages d’entrepôt. Son indice IP68 et sa longue autonomie le destinent à l’installation extérieure longue durée ; l’autonomie dépend de l’intervalle de transmission, de la couverture réseau et des conditions du site."
+     },
+     {
+      "q": "Quelle est la précision du capteur d’inclinaison Série H ?",
+      "a": "La précision standard est de ±0,005° avec une résolution de 0,001° sur les axes X et Y. Une configuration trois axes est disponible sur demande, et la précision peut être personnalisée pour les applications exigeant des tolérances plus serrées."
+     },
+     {
+      "q": "Quelle est l’autonomie de la batterie ?",
+      "a": "Conçu pour plus de 10 ans à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie varie avec la fréquence de transmission ; des transmissions plus fréquentes raccourcissent la durée de service. La plupart des configurations fonctionnent sur batterie, sans secteur ni panneau solaire — confirmez les options d’alimentation pour votre configuration."
+     },
+     {
+      "q": "Quelle technologie sans fil choisir — 4G, NB-IoT ou LoRa ?",
+      "a": "Choisissez la 4G là où la couverture cellulaire est fiable et où des débits plus élevés ou des mises à jour firmware à distance sont nécessaires. Le NB-IoT peut convenir aux sites intérieurs ou souterrains comme les tunnels et sous-sols où l’opérateur local offre une couverture adéquate. Choisissez LoRa pour déployer un cluster dense de capteurs sur un site avec une passerelle privée et sans coût de SIM par appareil."
+     },
+     {
+      "q": "Peut-il être installé sur des structures patrimoniales sans perçage ?",
+      "a": "Oui. Le capteur prend en charge oreilles de fixation, collier de mât ou montage à fente. Pour les structures protégées, le montage par collier ou adhésif évite de percer le bâti. Contactez Hitelecom pour des conseils de montage adaptés au site."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "283": {
+    "series": "Série H · Capteur de distance radar",
+    "tagline": "Basse consommation | Précision | Niveau millimétrique",
+    "desc": "Les capteurs de distance Hitelecom offrent une précision millimétrique, une collecte planifiée des données et une haute immunité aux interférences, pour des mesures de distance exactes et des mises à jour cloud ponctuelles dans des environnements complexes",
+    "heroImg": "product/details/283-hero.png",
+    "pdf": "/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf",
+    "crumbCat": "Distance radar",
+    "returnCid": "266",
+    "features": [
+     {
+      "icon": "product/details/283-f1.png",
+      "text": "Précision : ±1 mm (personnalisable)"
+     },
+     {
+      "icon": "product/details/283-f2.png",
+      "text": "Boîtier IP68"
+     },
+     {
+      "icon": "product/details/283-f3.png",
+      "text": "Large plage : 0,3–50 m (personnalisable)"
+     },
+     {
+      "icon": "product/details/283-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/283-f5.png",
+      "text": "Prend en charge les mises à jour firmware OTA à distance."
+     },
+     {
+      "icon": "product/details/283-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/283-f7.png",
+      "text": "Surveillance de distance à distance"
+     },
+     {
+      "icon": "product/details/283-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Mesure de distance radar de haute précision, processeurs basse consommation avancés et algorithmes embarqués optimisés offrent au capteur une durée de vie de conception jusqu’à 10 ans à un intervalle d’une heure dans les conditions de test spécifiées, réduisant la maintenance courante.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "Plage",
+      "0,3–50 m (personnalisable)"
+     ],
+     [
+      "Précision",
+      "±1 mm (personnalisable)"
+     ],
+     [
+      "Résolution",
+      "1 mm"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Température de fonctionnement",
+      "-20°C to +70°C"
+     ],
+     [
+      "Température de stockage",
+      "-20°C to +80°C"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission."
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Plage",
+      "value": "0,3–50 m (personnalisable)",
+      "minValue": 0.3,
+      "maxValue": 50.0
+     },
+     {
+      "name": "Précision",
+      "value": "±1 mm (personnalisable)",
+      "unitText": "millimètre"
+     },
+     {
+      "name": "Résolution",
+      "value": "1 mm",
+      "unitText": "millimètre"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Température de fonctionnement",
+      "value": "-20°C to +70°C",
+      "unitText": "degré Celsius",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "Température de stockage",
+      "value": "-20°C to +80°C",
+      "unitText": "degré Celsius",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission.",
+      "unitText": "an",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/283-scen1.jpg",
+      "label": "Plaque d’égout"
+     },
+     {
+      "img": "product/details/283-scen2.jpg",
+      "label": "Hauteur de silo à grains"
+     },
+     {
+      "img": "product/details/283-scen3.jpg",
+      "label": "Mine de charbon"
+     },
+     {
+      "img": "product/details/283-scen4.jpg",
+      "label": "Station de traitement d’eau"
+     },
+     {
+      "img": "product/details/283-scen5.jpg",
+      "label": "Usine chimique"
+     },
+     {
+      "img": "product/details/283-scen6.jpg",
+      "label": "Fabrication intelligente"
+     },
+     {
+      "img": "product/details/283-scen7.jpg",
+      "label": "Bâtiment intelligent"
+     },
+     {
+      "img": "product/details/283-scen8.jpg",
+      "label": "Énergie intelligente"
+     }
+    ],
+    "related": [
+     "270",
+     "274",
+     "280",
+     "281",
+     "282",
+     "284",
+     "285",
+     "276",
+     "275"
+    ],
+    "summary": "Le capteur de distance Hitelecom Série H est un capteur de distance radar sans fil de précision millimétrique. Il mesure de 0,3 à 50 m avec une précision de ±1 mm et une résolution de 1 mm, résiste aux interférences dans les sites industriels difficiles, et remonte en 4G ou NB-IoT, avec une batterie conçue pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées.",
+    "sku": "H200/H300/H500",
+    "applications": [
+     {
+      "name": "Surveillance des plaques d’égout",
+      "desc": "Détecte le déplacement des plaques et les relevés de distance anormaux pour la sécurité municipale.",
+      "img": "product/details/283-scen1.jpg"
+     },
+     {
+      "name": "Niveau de silo à grains",
+      "desc": "Mesure la distance de la surface du produit pour calculer le niveau de remplissage des silos.",
+      "img": "product/details/283-scen2.jpg"
+     },
+     {
+      "name": "Bunkers à charbon",
+      "desc": "Surveille la hauteur de remplissage des bunkers à charbon dans des conditions souterraines poussiéreuses et humides.",
+      "img": "product/details/283-scen3.jpg"
+     },
+     {
+      "name": "Stations d’eau potable et d’assainissement",
+      "desc": "Mesure de distance en canal ouvert et en réservoir pour le contrôle de niveau.",
+      "img": "product/details/283-scen4.jpg"
+     },
+     {
+      "name": "Inventaire en usine chimique",
+      "desc": "Mesure de distance sans contact au-dessus de cuves corrosives ou scellées.",
+      "img": "product/details/283-scen5.jpg"
+     },
+     {
+      "name": "Bâtiment intelligent et logistique",
+      "desc": "Détection de distance pour l’occupation, les quais et les positions de palettes dans les installations.",
+      "img": "product/details/283-scen7.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Quelles plage de distance et précision offre-t-il ?",
+      "a": "Il offre une plage de mesure de 0,3–50 m (personnalisable) avec une précision de ±1 mm et une résolution de 1 mm — adapté à la surveillance de niveau par distance et de déplacement."
+     },
+     {
+      "q": "La poussière ou l’humidité affectent-elles la mesure ?",
+      "a": "La mesure radar est conçue pour maintenir ses performances dans les sites poussiéreux ou humides comme les bunkers à charbon et les regards ; le boîtier IP68 protège l’appareil lui-même."
+     },
+     {
+      "q": "Comment est-il alimenté et connecté ?",
+      "a": "Il utilise une batterie interne conçue pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées, avec liaison 4G ou NB-IoT via MQTT vers Hitelecom Cloud ou des plateformes privées."
+     },
+     {
+      "q": "La plage peut-elle être étendue au-delà de 50 m ?",
+      "a": "Oui, la plage et le montage sont personnalisables. Indiquez à Hitelecom la distance cible et le milieu pour une proposition de configuration."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "284": {
+    "series": "Série H · Capteur de vibrations",
+    "tagline": "Précision | Plage | Ultra-basse consommation",
+    "desc": "Les capteurs de vibrations Hitelecom surveillent et analysent les vibrations des équipements mécaniques dans les environnements Industrie 4.0, fournissant des données pour la gestion de la santé des équipements et la maintenance conditionnelle, afin de réduire les arrêts non planifiés.",
+    "heroImg": "product/details/284-hero.png",
+    "pdf": "/downloads/vibration-sensor-datasheet.pdf",
+    "crumbCat": "Surveillance des vibrations",
+    "returnCid": "271",
+    "features": [
+     {
+      "icon": "product/details/284-f1.png",
+      "text": "Vitesse de vibration : 0–100 mm/s (personnalisable)"
+     },
+     {
+      "icon": "product/details/284-f2.png",
+      "text": "Boîtier IP68"
+     },
+     {
+      "icon": "product/details/284-f3.png",
+      "text": "Amplitude de déplacement : 0–1 000 µm (personnalisable)"
+     },
+     {
+      "icon": "product/details/284-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/284-f5.png",
+      "text": "Prend en charge les mises à jour firmware OTA à distance."
+     },
+     {
+      "icon": "product/details/284-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/284-f7.png",
+      "text": "Surveillance des vibrations à distance"
+     },
+     {
+      "icon": "product/details/284-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Processeurs basse consommation et optimisation algorithmique offrent au capteur une durée de vie de conception jusqu’à 10 ans à un intervalle d’une heure dans les conditions de test spécifiées, avec une consommation minimale par cycle de mesure.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "Vitesse de vibration",
+      "0–100 mm/s (personnalisable)"
+     ],
+     [
+      "Amplitude de déplacement",
+      "0–1 000 µm (personnalisable)"
+     ],
+     [
+      "Précision",
+      "±1 % à 80 Hz (étalonnage)"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Température de fonctionnement",
+      "-20°C to +70°C"
+     ],
+     [
+      "Température de stockage",
+      "-20°C to +80°C"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission."
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Vitesse de vibration",
+      "value": "0–100 mm/s (personnalisable)"
+     },
+     {
+      "name": "Amplitude de déplacement",
+      "value": "0–1 000 µm (personnalisable)"
+     },
+     {
+      "name": "Précision",
+      "value": "±1 % à 80 Hz (étalonnage)",
+      "unitText": "pour cent"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Température de fonctionnement",
+      "value": "-20°C to +70°C",
+      "unitText": "degré Celsius",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "Température de stockage",
+      "value": "-20°C to +80°C",
+      "unitText": "degré Celsius",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission.",
+      "unitText": "an",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/284-scen1.jpg",
+      "label": "Semi-conducteurs"
+     },
+     {
+      "img": "product/details/284-scen2.jpg",
+      "label": "Équipements industriels"
+     },
+     {
+      "img": "product/details/284-scen3.jpg",
+      "label": "Port"
+     },
+     {
+      "img": "product/details/284-scen4.jpg",
+      "label": "Énergie intelligente"
+     },
+     {
+      "img": "product/details/284-scen5.jpg",
+      "label": "Bâtiment intelligent"
+     },
+     {
+      "img": "product/details/284-scen6.jpg",
+      "label": "Logistique et transport"
+     }
+    ],
+    "related": [
+     "270",
+     "274",
+     "280",
+     "281",
+     "282",
+     "283",
+     "285",
+     "276",
+     "275"
+    ],
+    "summary": "Le capteur de vibrations Hitelecom Série H est un moniteur sans fil pour les machines rotatives et les vibrations structurelles dans l’Industrie 4.0. Il mesure la vitesse de vibration de 0 à 100 mm/s et l’amplitude de déplacement de 0–1 000 µm (personnalisable) avec une précision de ±1 % (étalonnée à 80 Hz), remonte en 4G ou NB-IoT, et est conçu pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées.",
+    "sku": "H200/H300/H500",
+    "applications": [
+     {
+      "name": "Équipements rotatifs industriels",
+      "desc": "Pompes, ventilateurs, moteurs et compresseurs bénéficient d’un suivi vibratoire continu soutenant la maintenance conditionnelle.",
+      "img": "product/details/284-scen2.jpg"
+     },
+     {
+      "name": "Installations de semi-conducteurs",
+      "desc": "Surveille les outils de process sensibles aux vibrations et les équipements de salle propre.",
+      "img": "product/details/284-scen1.jpg"
+     },
+     {
+      "name": "Machines portuaires",
+      "desc": "Suit les vibrations des grues et convoyeurs pour une exploitation portuaire sûre.",
+      "img": "product/details/284-scen3.jpg"
+     },
+     {
+      "name": "Santé des bâtiments et structures",
+      "desc": "Surveille la réponse structurelle des bâtiments proches de chantiers ou de trafic lourd.",
+      "img": "product/details/284-scen5.jpg"
+     },
+     {
+      "name": "Installations énergétiques",
+      "desc": "Surveille turbines, générateurs et transformateurs pour détecter des signatures vibratoires anormales.",
+      "img": "product/details/284-scen4.jpg"
+     },
+     {
+      "name": "Logistique et transport",
+      "desc": "Enregistrement des chocs et vibrations pour les marchandises sensibles en transit.",
+      "img": "product/details/284-scen6.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Quelles grandeurs vibratoires mesure-t-il ?",
+      "a": "Vitesse de vibration 0–100 mm/s et amplitude de déplacement 0–1 000 µm, personnalisables, avec une précision de ±1 % étalonnée à 80 Hz."
+     },
+     {
+      "q": "Comment soutient-il la maintenance conditionnelle ?",
+      "a": "Les tendances continues d’intensité et d’amplitude aident à identifier tôt les signes d’usure des roulements, de balourd et de défaut d’alignement, pour planifier la maintenance selon l’état plutôt que le calendrier."
+     },
+     {
+      "q": "Comment le capteur est-il installé et alimenté ?",
+      "a": "Montage par base magnétique, filetage, adhésif ou support selon le modèle — confirmez l’accessoire de montage pour votre configuration. Le capteur fonctionne sur batterie et ne requiert ni câble de signal ni câble d’alimentation ; il est conçu pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées."
+     },
+     {
+      "q": "À quelle plateforme de données se connecte-t-il ?",
+      "a": "Il remonte en 4G ou NB-IoT via MQTT vers Hitelecom Cloud ou une plateforme cliente, avec alarmes de seuil pour vibrations anormales."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "285": {
+    "series": "Série H · Capteur de qualité de l’air",
+    "tagline": "6-en-1 | Précision | Économe en énergie",
+    "desc": "Le capteur de qualité de l’air 6-en-1 Hitelecom surveille CO₂, PM2.5, TVOC, température, humidité et pression atmosphérique, avec canaux NO₂, SO₂, NH₃ et O₃ en option. Les données remontent au cloud en 4G ou NB-IoT, et la conception peu exigeante en maintenance convient à la surveillance environnementale urbaine et industrielle de longue durée.",
+    "heroImg": "product/details/285-hero.png",
+    "pdf": "/downloads/h310-aq041-air-quality-sensor-datasheet.pdf",
+    "crumbCat": "Qualité de l’air",
+    "returnCid": "265",
+    "features": [
+     {
+      "icon": "product/details/285-f1.png",
+      "text": "Surveille CO₂, PM2.5, TVOC, température, humidité et pression atmosphérique"
+     },
+     {
+      "icon": "product/details/285-f2.png",
+      "text": "Boîtier IP68"
+     },
+     {
+      "icon": "product/details/285-f3.png",
+      "text": "Canaux NO₂, SO₂, NH₃ et O₃ en option (selon la configuration)"
+     },
+     {
+      "icon": "product/details/285-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/285-f5.png",
+      "text": "Prend en charge les mises à jour firmware OTA à distance."
+     },
+     {
+      "icon": "product/details/285-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/285-f7.png",
+      "text": "Surveillance de l’air à distance"
+     },
+     {
+      "icon": "product/details/285-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Des processeurs basse consommation et une optimisation algorithmique permettent la collecte simultanée de plusieurs canaux de qualité de l’air. La batterie est conçue pour plus de 10 ans d’autonomie à un intervalle de quatre heures dans les conditions de test spécifiées ; l’autonomie réelle varie selon la configuration de mesure, la couverture réseau et l’environnement.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "CO₂",
+      "400–5 000 ppm"
+     ],
+     [
+      "PM2.5 / TVOC",
+      "Inclus (plages selon la configuration)"
+     ],
+     [
+      "Canaux de gaz en option",
+      "NO₂, SO₂, NH₃, O₃ (selon la configuration)"
+     ],
+     [
+      "Plage de mesure de température",
+      "-40°C to +85°C (±0.2°C)"
+     ],
+     [
+      "Humidité",
+      "0–100% RH"
+     ],
+     [
+      "Pression atmosphérique",
+      "30–120 kPa (±0,1 kPa)"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Bandes de fréquences",
+      "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission de quatre heures dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission."
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "CO₂",
+      "value": "400–5 000 ppm",
+      "unitText": "parties par million",
+      "minValue": 400.0,
+      "maxValue": 5000.0
+     },
+     {
+      "name": "PM2.5 / TVOC",
+      "value": "Inclus (plages selon la configuration)"
+     },
+     {
+      "name": "Canaux de gaz en option",
+      "value": "NO₂, SO₂, NH₃, O₃ (selon la configuration)"
+     },
+     {
+      "name": "Plage de mesure de température",
+      "value": "-40°C to +85°C (±0.2°C)",
+      "unitText": "degré",
+      "minValue": -40.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "Humidité",
+      "value": "0–100% RH",
+      "unitText": "pour cent",
+      "minValue": 0.0,
+      "maxValue": 100.0
+     },
+     {
+      "name": "Pression atmosphérique",
+      "value": "30–120 kPa (±0,1 kPa)",
+      "unitText": "kilopascal",
+      "minValue": 30.0,
+      "maxValue": 120.0
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Bandes de fréquences",
+      "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission de quatre heures dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission.",
+      "unitText": "an",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/285-scen1.jpg",
+      "label": "Environnement de bureau"
+     },
+     {
+      "img": "product/details/285-scen2.jpg",
+      "label": "Ville intelligente"
+     },
+     {
+      "img": "product/details/285-scen3.jpg",
+      "label": "Hôpital"
+     },
+     {
+      "img": "product/details/285-scen4.jpg",
+      "label": "Transport intelligent"
+     },
+     {
+      "img": "product/details/285-scen5.jpg",
+      "label": "Environnement résidentiel"
+     },
+     {
+      "img": "product/details/285-scen6.jpg",
+      "label": "Centre de données"
+     },
+     {
+      "img": "product/details/285-scen7.jpg",
+      "label": "Fabrication intelligente"
+     },
+     {
+      "img": "product/details/285-scen8.jpg",
+      "label": "Agriculture intelligente"
+     }
+    ],
+    "related": [
+     "270",
+     "274",
+     "280",
+     "281",
+     "282",
+     "283",
+     "284",
+     "276",
+     "275"
+    ],
+    "summary": "Le capteur de qualité de l’air Hitelecom Série H est un moniteur sans fil 6-en-1 pour les environnements urbains et industriels. Il suit CO₂ (400–5 000 ppm), PM2.5, TVOC, température (−40 °C à +85 °C, ±0,2 °C), humidité (0–100 % HR) et pression atmosphérique (30–120 kPa), avec canaux NO₂, SO₂, NH₃ et O₃ en option, remontant en 4G ou NB-IoT.",
+    "sku": "H200/H300/H500",
+    "applications": [
+     {
+      "name": "Surveillance de l’air en ville intelligente",
+      "desc": "Des micro-stations déployées en grille suivent les tendances de la qualité de l’air urbain, îlot par îlot.",
+      "img": "product/details/285-scen2.jpg"
+     },
+     {
+      "name": "Bureaux et écoles",
+      "desc": "Les relevés de CO₂ et d’humidité peuvent guider les décisions de ventilation lorsqu’ils sont intégrés à un système de contrôle pris en charge.",
+      "img": "product/details/285-scen1.jpg"
+     },
+     {
+      "name": "Hôpitaux",
+      "desc": "Surveille l’air des services et cliniques où se rassemblent des personnes vulnérables.",
+      "img": "product/details/285-scen3.jpg"
+     },
+     {
+      "name": "Centres de données",
+      "desc": "Combine température, humidité et pression pour les enregistrements de conformité environnementale.",
+      "img": "product/details/285-scen6.jpg"
+     },
+     {
+      "name": "Parcs industriels",
+      "desc": "Surveillance en limite de parc pour repérer tôt les émissions anormales.",
+      "img": "product/details/285-scen7.jpg"
+     },
+     {
+      "name": "Hubs de transport",
+      "desc": "Visibilité de la qualité de l’air dans les gares, tunnels et parkings.",
+      "img": "product/details/285-scen4.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Quels paramètres le capteur 6-en-1 mesure-t-il ?",
+      "a": "CO₂ (400–5 000 ppm), PM2.5, TVOC, température (−40 °C à +85 °C, ±0,2 °C), humidité (0–100 % HR) et pression atmosphérique (30–120 kPa, ±0,1 kPa), avec canaux NO₂, SO₂, NH₃ et O₃ en option selon la configuration."
+     },
+     {
+      "q": "Combien de temps peut-il fonctionner sans surveillance ?",
+      "a": "Certaines configurations sont conçues pour plus de 10 ans d’autonomie à un intervalle de quatre heures dans les conditions de test spécifiées ; l’autonomie réelle varie selon la configuration de mesure, la couverture réseau et l’environnement. Le boîtier IP68 convient à l’installation en extérieur."
+     },
+     {
+      "q": "Comment les données de qualité de l’air sont-elles transmises ?",
+      "a": "Sans fil en 4G ou NB-IoT via MQTT vers Hitelecom Cloud ou votre plateforme, avec alertes de seuil sur chaque canal."
+     },
+     {
+      "q": "Les canaux peuvent-ils être personnalisés pour notre site ?",
+      "a": "Oui. La configuration 6-en-1 est modulaire — indiquez à Hitelecom les gaz ou particules requis et un jeu de canaux adapté sera proposé."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "275": {
+    "series": "Série H68 · Passerelle extérieure",
+    "tagline": "IP68 | Grande capacité | Large couverture",
+    "desc": "La passerelle Série H68 dispose d’un boîtier IP68 étanche à la poussière et à l’eau, conçu pour un service extérieur longue durée dans des environnements industriels complexes. Elle se déploie en plug-and-play, et une alarme de coupure d’alimentation peut être envoyée lorsque l’alimentation de secours et le lien de retour restent disponibles.",
+    "heroImg": "product/details/275-hero.png",
+    "pdf": "/downloads/outdoor-4g-gateway-h68-datasheet.pdf",
+    "crumbCat": "Passerelle extérieure",
+    "returnCid": "273",
+    "features": [
+     {
+      "icon": "product/details/275-f1.png",
+      "text": "Portée de communication jusqu’à 10 km (zone dégagée)"
+     },
+     {
+      "icon": "product/details/275-f2.png",
+      "text": "Indice IP68 d’étanchéité à l’eau et à la poussière"
+     },
+     {
+      "icon": "product/details/275-f3.png",
+      "text": "Passerelle industrielle full-duplex 8 canaux"
+     },
+     {
+      "icon": "product/details/275-f4.png",
+      "text": "Prend en charge le déploiement local pour le contrôle des données et la fiabilité"
+     },
+     {
+      "icon": "product/details/275-f5.png",
+      "text": "Circuit intégré d’amplification de puissance et à faible bruit"
+     },
+     {
+      "icon": "product/details/275-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/275-f7.png",
+      "text": "Réseau grande capacité, contrôle à distance et acquisition de données"
+     },
+     {
+      "icon": "product/details/275-f8.png",
+      "text": "Peut envoyer une alerte de coupure d’alimentation lorsque l’alimentation de secours et le lien de retour restent disponibles"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "La série H68 prend en charge la transmission longue distance jusqu’à 10 kilomètres, et jusqu’à 2 kilomètres en zone urbaine. Elle intègre des options de connectivité 4G LTE, Ethernet et Wi-Fi pour une transmission de données fiable et continue.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H68"
+     ],
+     [
+      "Bandes de fréquences",
+      "CN470/EU868/IN865/RU864/US915/AU915"
+     ],
+     [
+      "Distance",
+      "Jusqu’à 10 km (zone dégagée)"
+     ],
+     [
+      "Puissance d’émission",
+      "20–27 dBm"
+     ],
+     [
+      "Sensibilité",
+      "−140 dBm à 0,292 kbps"
+     ],
+     [
+      "Antenne",
+      "Antenne externe en fibre de verre"
+     ],
+     [
+      "Bande 4G",
+      "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Température de fonctionnement",
+      "−40°C to +85°C"
+     ],
+     [
+      "Température de stockage",
+      "−40°C to +85°C"
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H68"
+     },
+     {
+      "name": "Bandes de fréquences",
+      "value": "CN470/EU868/IN865/RU864/US915/AU915"
+     },
+     {
+      "name": "Distance",
+      "value": "Jusqu’à 10 km (zone dégagée)"
+     },
+     {
+      "name": "Puissance d’émission",
+      "value": "20–27 dBm",
+      "unitText": "décibel-milliwatt",
+      "minValue": 20.0,
+      "maxValue": 27.0
+     },
+     {
+      "name": "Sensibilité",
+      "value": "−140 dBm à 0,292 kbps",
+      "unitText": "décibel-milliwatt"
+     },
+     {
+      "name": "Antenne",
+      "value": "Antenne externe en fibre de verre"
+     },
+     {
+      "name": "Bande 4G",
+      "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Température de fonctionnement",
+      "value": "−40°C to +85°C",
+      "unitText": "degré",
+      "minValue": -40.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "Température de stockage",
+      "value": "−40°C to +85°C",
+      "unitText": "degré",
+      "minValue": -40.0,
+      "maxValue": 85.0
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/275-scen1.jpg",
+      "label": "Énergies renouvelables"
+     },
+     {
+      "img": "product/details/275-scen2.jpg",
+      "label": "Parcs industriels intelligents"
+     },
+     {
+      "img": "product/details/275-scen3.jpg",
+      "label": "Gestion intelligente de l’eau"
+     },
+     {
+      "img": "product/details/275-scen4.jpg",
+      "label": "Automatisation industrielle"
+     },
+     {
+      "img": "product/details/275-scen5.jpg",
+      "label": "Surveillance environnementale"
+     },
+     {
+      "img": "product/details/275-scen6.jpg",
+      "label": "Ville intelligente"
+     },
+     {
+      "img": "product/details/275-scen7.jpg",
+      "label": "Transport intelligent"
+     },
+     {
+      "img": "product/details/275-scen8.jpg",
+      "label": "Logistique et chaîne d’approvisionnement"
+     }
+    ],
+    "related": [
+     "270",
+     "274",
+     "280",
+     "281",
+     "282",
+     "283",
+     "284",
+     "285",
+     "276"
+    ],
+    "summary": "La passerelle extérieure Hitelecom H68 est une passerelle LoRa industrielle pour les réseaux de capteurs étendus : jusqu’à 10 km de couverture, sensibilité −140 dBm, puissance d’émission 20–27 dBm et bandes régionales dont CN470, EU868, US915 et AU915. Le boîtier IP68 est conçu pour un service extérieur longue durée, avec lien de retour 4G et remontée MQTT.",
+    "sku": "H68",
+    "applications": [
+     {
+      "name": "Parcs et campus intelligents",
+      "desc": "Une passerelle en toiture peut collecter les données de nombreux capteurs sur un site.",
+      "img": "product/details/275-scen2.jpg"
+     },
+     {
+      "name": "Réseaux d’eau intelligents",
+      "desc": "Agrège le trafic des compteurs et capteurs de niveau sur une zone de service.",
+      "img": "product/details/275-scen3.jpg"
+     },
+     {
+      "name": "Sites de nouvelles énergies",
+      "desc": "Couvre parcs solaires et sites éoliens avec une remontée de capteurs longue portée.",
+      "img": "product/details/275-scen1.jpg"
+     },
+     {
+      "name": "Automatisation industrielle",
+      "desc": "Collecte des capteurs à l’échelle de l’usine, sans carte SIM par capteur.",
+      "img": "product/details/275-scen4.jpg"
+     },
+     {
+      "name": "Surveillance environnementale",
+      "desc": "Réseaux de capteurs rivière, air et bruit sur de vastes zones rurales.",
+      "img": "product/details/275-scen5.jpg"
+     },
+     {
+      "name": "Éclairage et actifs de ville intelligente",
+      "desc": "Couverture à l’échelle de l’îlot pour les réseaux de capteurs municipaux.",
+      "img": "product/details/275-scen6.jpg"
+     },
+     {
+      "name": "Parcs logistiques",
+      "desc": "Capteurs de suivi et d’état à l’échelle du parc via une seule passerelle.",
+      "img": "product/details/275-scen8.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Quelle couverture la passerelle extérieure H68 offre-t-elle ?",
+      "a": "Jusqu’à 10 km en conditions dégagées avec une sensibilité de −140 dBm et une puissance d’émission de 20–27 dBm. La couverture réelle dépend du terrain et de la hauteur d’antenne — Hitelecom peut l’estimer à partir de votre plan de site."
+     },
+     {
+      "q": "Quelles bandes de fréquences sont prises en charge ?",
+      "a": "CN470, EU868, IN865, RU864, US915 et AU915 — couvrant les déploiements en Chine, en Europe, en Inde, en Russie, en Amérique du Nord et en Australie."
+     },
+     {
+      "q": "Comment la passerelle remonte-t-elle les données ?",
+      "a": "En 4G cellulaire (LTE-TDD B34/B38/B39/B40/B41, LTE-FDD B1/B3/B5/B8) avec liaison MQTT vers Hitelecom Cloud ou une plateforme privée."
+     },
+     {
+      "q": "Le H68 convient-il à une installation extérieure longue durée ?",
+      "a": "Oui. Le boîtier IP68 est étanche à la poussière et à l’eau, et la conception industrielle vise un service extérieur longue durée."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "276": {
+    "series": "Série H66 · Passerelle intérieure",
+    "tagline": "Industriel | Longue portée | Full-duplex",
+    "desc": "La passerelle série H66 adopte une conception durable pour un fonctionnement stable dans des environnements industriels variables. Elle se déploie en plug-and-play, et une alarme de coupure d’alimentation peut être envoyée lorsque l’alimentation de secours et le lien de retour restent disponibles.",
+    "heroImg": "product/details/276-hero.png",
+    "pdf": "/downloads/indoor-gateway-h66-datasheet.pdf",
+    "crumbCat": "Passerelle intérieure",
+    "returnCid": "272",
+    "features": [
+     {
+      "icon": "product/details/276-f1.png",
+      "text": "Portée de communication jusqu’à 5 km (zone dégagée)"
+     },
+     {
+      "icon": "product/details/276-f2.png",
+      "text": "Indice IP67 d’étanchéité à l’eau et à la poussière"
+     },
+     {
+      "icon": "product/details/276-f3.png",
+      "text": "Passerelle industrielle full-duplex 8 canaux"
+     },
+     {
+      "icon": "product/details/276-f4.png",
+      "text": "Prend en charge le déploiement local pour le contrôle des données et la fiabilité"
+     },
+     {
+      "icon": "product/details/276-f5.png",
+      "text": "Circuit intégré d’amplification de puissance et à faible bruit"
+     },
+     {
+      "icon": "product/details/276-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/276-f7.png",
+      "text": "Réseau grande capacité, contrôle à distance et acquisition de données"
+     },
+     {
+      "icon": "product/details/276-f8.png",
+      "text": "Peut envoyer une alerte de coupure d’alimentation lorsque l’alimentation de secours et le lien de retour restent disponibles"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "La passerelle sans fil industrielle multi-canaux Série H66 prend en charge plusieurs protocoles, offre 8 canaux full-duplex, l’edge computing, résiste aux conditions difficiles et permet le traitement des données en temps réel et la gestion à distance.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H66"
+     ],
+     [
+      "Bandes de fréquences",
+      "CN470/EU868/IN865/RU864/US915/AU915"
+     ],
+     [
+      "Distance",
+      "Jusqu’à 5 km (zone dégagée)"
+     ],
+     [
+      "Puissance d’émission",
+      "20–27 dBm"
+     ],
+     [
+      "Sensibilité",
+      "−140 dBm à 0,292 kbps"
+     ],
+     [
+      "Antenne",
+      "Antenne externe en fibre de verre"
+     ],
+     [
+      "Bande 4G",
+      "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Température de fonctionnement",
+      "-20°C to +70°C"
+     ],
+     [
+      "Température de stockage",
+      "-20°C to +80°C"
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H66"
+     },
+     {
+      "name": "Bandes de fréquences",
+      "value": "CN470/EU868/IN865/RU864/US915/AU915"
+     },
+     {
+      "name": "Distance",
+      "value": "Jusqu’à 5 km (zone dégagée)"
+     },
+     {
+      "name": "Puissance d’émission",
+      "value": "20–27 dBm",
+      "unitText": "décibel-milliwatt",
+      "minValue": 20.0,
+      "maxValue": 27.0
+     },
+     {
+      "name": "Sensibilité",
+      "value": "−140 dBm à 0,292 kbps",
+      "unitText": "décibel-milliwatt"
+     },
+     {
+      "name": "Antenne",
+      "value": "Antenne externe en fibre de verre"
+     },
+     {
+      "name": "Bande 4G",
+      "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Température de fonctionnement",
+      "value": "-20°C to +70°C",
+      "unitText": "degré Celsius",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     },
+     {
+      "name": "Température de stockage",
+      "value": "-20°C to +80°C",
+      "unitText": "degré Celsius",
+      "minValue": -20.0,
+      "maxValue": 80.0
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/276-scen1.jpg",
+      "label": "Gestion technique du bâtiment"
+     },
+     {
+      "img": "product/details/276-scen2.jpg",
+      "label": "Gestion de l’énergie"
+     },
+     {
+      "img": "product/details/276-scen3.jpg",
+      "label": "Logistique"
+     },
+     {
+      "img": "product/details/276-scen4.jpg",
+      "label": "Industriel"
+     },
+     {
+      "img": "product/details/276-scen5.jpg",
+      "label": "Ville intelligente"
+     },
+     {
+      "img": "product/details/276-scen6.jpg",
+      "label": "Gestion de l’eau"
+     },
+     {
+      "img": "product/details/276-scen7.jpg",
+      "label": "Transport intelligent"
+     }
+    ],
+    "related": [
+     "270",
+     "274",
+     "280",
+     "281",
+     "282",
+     "283",
+     "284",
+     "285",
+     "275"
+    ],
+    "summary": "La passerelle intérieure Hitelecom H66 est une passerelle LoRa industrielle full-duplex pour les réseaux de capteurs en bâtiment : jusqu’à 5 km de portée, sensibilité −140 dBm, bandes régionales de CN470 à US915, installation plug-and-play avec alerte de coupure d’alimentation, lien de retour 4G et remontée MQTT.",
+    "sku": "H66",
+    "applications": [
+     {
+      "name": "Gestion technique du bâtiment",
+      "desc": "Collecte les capteurs CVC, comptage et environnement sur tous les étages depuis un local technique.",
+      "img": "product/details/276-scen1.jpg"
+     },
+     {
+      "name": "Gestion de l’énergie",
+      "desc": "Agrège le trafic des capteurs de sous-comptage pour les audits énergétiques d’usines et de bâtiments.",
+      "img": "product/details/276-scen2.jpg"
+     },
+     {
+      "name": "Logistique et entreposage",
+      "desc": "Collecte en entrepôt des capteurs de température, de portes et de balises d’actifs.",
+      "img": "product/details/276-scen3.jpg"
+     },
+     {
+      "name": "Installations industrielles",
+      "desc": "Réseaux de capteurs d’atelier sans tirer de câbles de données.",
+      "img": "product/details/276-scen4.jpg"
+     },
+     {
+      "name": "Gestion de l’eau",
+      "desc": "Agrégation des capteurs de pomperie et de niveau de cuves dans les bâtiments d’utilités.",
+      "img": "product/details/276-scen6.jpg"
+     },
+     {
+      "name": "Installations de transport",
+      "desc": "Collecte de capteurs dans les gares, tunnels et dépôts.",
+      "img": "product/details/276-scen7.jpg"
+     }
+    ],
+    "certifications": [
+     "IP67"
+    ],
+    "faqs": [
+     {
+      "q": "Quelle est la différence entre le H66 et le H68 ?",
+      "a": "Le H66 est le modèle intérieur : plug-and-play avec alerte de coupure d’alimentation, jusqu’à 5 km de portée et boîtier IP67. Le H68 est le modèle extérieur avec jusqu’à 10 km de portée, IP68 et une conception pour le service extérieur longue durée."
+     },
+     {
+      "q": "Quelles bandes de fréquences prend-il en charge ?",
+      "a": "CN470, EU868, IN865, RU864, US915 et AU915, selon les plans de bandes LoRa régionaux."
+     },
+     {
+      "q": "Que se passe-t-il en cas de coupure d’alimentation ?",
+      "a": "Si l’alimentation de secours et le lien 4G restent disponibles, la passerelle peut envoyer une alerte de coupure."
+     },
+     {
+      "q": "Combien de capteurs une passerelle peut-elle servir ?",
+      "a": "Une passerelle industrielle full-duplex peut servir de grandes flottes de capteurs ; la capacité réelle dépend de l’intervalle de transmission, de la charge utile et des conditions réseau — indiquez votre nombre d’appareils et Hitelecom dimensionnera le réseau."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "277": {
+    "series": "Série H · Hydrologie",
+    "tagline": "Solaire | Modulaire | 2–12 canaux",
+    "desc": "Intègre 2 à 12 canaux de capteurs modulaires pour la collecte de données environnementales — le jeu de canaux (capteurs de niveau, de débit, de qualité de l’eau, météo ou qualité de l’air) est configuré par projet — avec transmission en temps réel vers la plateforme Hitelecom Cloud. Les utilisateurs accèdent aux données hydrologiques et environnementales de n’importe où via internet, pour la surveillance et l’analyse à distance.",
+    "heroImg": "product/details/277-hero.png",
+    "pdf": "/downloads/hydrology-monitoring-station-datasheet.pdf",
+    "crumbCat": "12 paramètres",
+    "returnCid": "274",
+    "features": [
+     {
+      "icon": "product/details/277-f1.png",
+      "text": "Surveillance avec 2 à 12 canaux de capteurs"
+     },
+     {
+      "icon": "product/details/277-f2.png",
+      "text": "Indice IP65 d’étanchéité à l’eau et à la poussière"
+     },
+     {
+      "icon": "product/details/277-f3.png",
+      "text": "2 à 12 canaux de capteurs configurables"
+     },
+     {
+      "icon": "product/details/277-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/277-f5.png",
+      "text": "Prend en charge les mises à jour firmware OTA à distance."
+     },
+     {
+      "icon": "product/details/277-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/277-f7.png",
+      "text": "Accès aux données à distance : surveillez depuis n’importe où"
+     },
+     {
+      "icon": "product/details/277-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Surveille un éventail de données hydrologiques, notamment le niveau d’eau, le débit, la qualité de l’eau, la température et l’humidité, la vitesse et la direction du vent, la pression atmosphérique, les précipitations, les PM2.5/10, le CO₂, etc., pour éclairer les tendances des niveaux d’eau et de la pollution de l’air et leurs sources, fournissant un support de données fiable pour la protection de l’environnement et la gestion urbaine de l’eau.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H700"
+     ],
+     [
+      "Plage de mesure",
+      "Personnalisable"
+     ],
+     [
+      "Précision",
+      "Personnalisable"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Portée",
+      "Urbain · Rural · Plaines · Zones montagneuses"
+     ],
+     [
+      "Bandes de fréquences",
+      "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     ],
+     [
+      "Alimentation",
+      "Énergie solaire · Réseau électrique"
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H700"
+     },
+     {
+      "name": "Plage de mesure",
+      "value": "Personnalisable"
+     },
+     {
+      "name": "Précision",
+      "value": "Personnalisable"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Portée",
+      "value": "Urbain · Rural · Plaines · Zones montagneuses"
+     },
+     {
+      "name": "Bandes de fréquences",
+      "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     },
+     {
+      "name": "Alimentation",
+      "value": "Énergie solaire · Réseau électrique"
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/277-scen1.jpg",
+      "label": "Agriculture intelligente"
+     },
+     {
+      "img": "product/details/277-scen2.jpg",
+      "label": "Surveillance environnementale"
+     },
+     {
+      "img": "product/details/277-scen3.jpg",
+      "label": "Gestion urbaine"
+     },
+     {
+      "img": "product/details/277-scen4.jpg",
+      "label": "Campus intelligent"
+     },
+     {
+      "img": "product/details/277-scen5.jpg",
+      "label": "Services d’électricité"
+     },
+     {
+      "img": "product/details/277-scen6.jpg",
+      "label": "Surveillance océanique et côtière"
+     },
+     {
+      "img": "product/details/277-scen7.jpg",
+      "label": "Gestion des urgences"
+     },
+     {
+      "img": "product/details/277-scen8.jpg",
+      "label": "Transport et logistique"
+     }
+    ],
+    "related": [
+     "270",
+     "274",
+     "280",
+     "281",
+     "282",
+     "283",
+     "284",
+     "285",
+     "276"
+    ],
+    "summary": "La station hydrologique Hitelecom H700 est un terminal de surveillance modulaire alimenté par énergie solaire, intégrant 2 à 12 canaux de capteurs pour les données hydrologiques et environnementales. Elle transmet en temps réel vers Hitelecom Cloud en 4G, peut être déployée en zones urbaines et rurales, y compris en plaines et en terrain montagneux, et s’installe avec oreilles de fixation, collier de mât ou montage à fente.",
+    "sku": "H700",
+    "applications": [
+     {
+      "name": "Surveillance des rivières et cours d’eau",
+      "desc": "Canaux de niveau d’eau, de pluie et de débit pour les réseaux hydrologiques."
+     },
+     {
+      "name": "Gestion des réservoirs et lacs",
+      "desc": "Enregistrement hydrologique multi-paramètres pour la régulation et la sécurité.",
+      "img": "solution/67-scen-0.jpg"
+     },
+     {
+      "name": "Veille contre les inondations urbaines",
+      "desc": "Surveillance pluie et niveau aux points urbains sujets aux inondations.",
+      "img": "product/details/277-scen3.jpg"
+     },
+     {
+      "name": "Agriculture intelligente",
+      "desc": "Canaux eau et météo des périmètres d’irrigation dans une seule station.",
+      "img": "product/details/277-scen1.jpg"
+     },
+     {
+      "name": "Surveillance environnementale",
+      "desc": "Canaux qualité de l’eau et météorologiques pour les programmes de bassin versant."
+     },
+     {
+      "name": "Alerte aux crues torrentielles",
+      "desc": "Des stations solaires isolées dans les bassins montagneux alimentent les systèmes d’alerte précoce.",
+      "img": "product/details/277-scen2.jpg"
+     },
+     {
+      "name": "Sites côtiers et estuaires",
+      "desc": "Canaux marée et météo pour la gestion côtière.",
+      "img": "product/details/277-scen6.jpg"
+     },
+     {
+      "name": "Gestion des urgences",
+      "desc": "Des stations rapidement déployées fournissent des données pendant les saisons de crue.",
+      "img": "product/details/277-scen7.jpg"
+     }
+    ],
+    "certifications": [
+     "IP65"
+    ],
+    "faqs": [
+     {
+      "q": "Que peut mesurer la station hydrologique H700 ?",
+      "a": "Elle intègre 2 à 12 canaux de capteurs par site — les configurations typiques combinent capteurs de niveau d’eau, de pluie, de débit et météorologiques. Les canaux sont sélectionnés par projet."
+     },
+     {
+      "q": "Comment la station est-elle alimentée ?",
+      "a": "La station peut utiliser l’énergie solaire ou le réseau, pour les installations isolées comme urbaines."
+     },
+     {
+      "q": "Comment les données arrivent-elles à la plateforme ?",
+      "a": "En temps réel via 4G avec liaison MQTT vers Hitelecom Cloud ; les utilisateurs lisent et exportent les données depuis la plateforme web ou l’application."
+     },
+     {
+      "q": "Où peut-elle être déployée ?",
+      "a": "Zones urbaines, rurales, plaines et montagnes ; les options d’oreilles de fixation, collier de mât et montage à fente s’adaptent aux poteaux, murs et rails."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "278": {
+    "series": "Série H · Station météorologique",
+    "tagline": "Modulaire | Solaire | Tous temps",
+    "desc": "Intègre 2 à 12 capteurs pour la collecte de données environnementales, avec transmission en temps réel vers la plateforme Hitelecom Cloud. Permet la surveillance et l’analyse à distance des données météorologiques depuis n’importe où via internet.",
+    "heroImg": "product/details/278-hero.png",
+    "pdf": "/downloads/weather-station-datasheet.pdf",
+    "crumbCat": "6 paramètres",
+    "returnCid": "275",
+    "features": [
+     {
+      "icon": "product/details/278-f1.png",
+      "text": "Surveillance avec 2 à 12 canaux de capteurs"
+     },
+     {
+      "icon": "product/details/278-f2.png",
+      "text": "Indice IP65 d’étanchéité à l’eau et à la poussière"
+     },
+     {
+      "icon": "product/details/278-f3.png",
+      "text": "Canaux de capteurs et options d’alimentation configurables"
+     },
+     {
+      "icon": "product/details/278-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/278-f5.png",
+      "text": "Prend en charge les mises à jour firmware OTA à distance."
+     },
+     {
+      "icon": "product/details/278-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/278-f7.png",
+      "text": "Accès aux données à distance : surveillez depuis n’importe où"
+     },
+     {
+      "icon": "product/details/278-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Surveille les paramètres météorologiques dont la température, l’humidité, la vitesse et la direction du vent, la pression atmosphérique, les précipitations, les PM2.5/PM10, le CO₂, le SO₂ et le rayonnement solaire (canaux selon la configuration), pour l’analyse des tendances environnementales au service de la protection de l’environnement et de l’urbanisme.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H600"
+     ],
+     [
+      "Plage de mesure",
+      "Personnalisable"
+     ],
+     [
+      "Précision",
+      "Personnalisable"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Portée",
+      "Urbain · Rural · Plaines · Zones montagneuses"
+     ],
+     [
+      "Bandes de fréquences",
+      "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     ],
+     [
+      "Alimentation",
+      "Énergie solaire · Réseau électrique"
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H600"
+     },
+     {
+      "name": "Plage de mesure",
+      "value": "Personnalisable"
+     },
+     {
+      "name": "Précision",
+      "value": "Personnalisable"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Portée",
+      "value": "Urbain · Rural · Plaines · Zones montagneuses"
+     },
+     {
+      "name": "Bandes de fréquences",
+      "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     },
+     {
+      "name": "Alimentation",
+      "value": "Énergie solaire · Réseau électrique"
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/278-scen1.jpg",
+      "label": "Agriculture intelligente"
+     },
+     {
+      "img": "product/details/278-scen2.jpg",
+      "label": "Environnement"
+     },
+     {
+      "img": "product/details/278-scen3.jpg",
+      "label": "Océan et littoral"
+     },
+     {
+      "img": "product/details/278-scen4.jpg",
+      "label": "Campus intelligent"
+     },
+     {
+      "img": "product/details/278-scen5.jpg",
+      "label": "Gestion urbaine"
+     },
+     {
+      "img": "product/details/278-scen6.jpg",
+      "label": "Gestion des urgences"
+     },
+     {
+      "img": "product/details/278-scen7.jpg",
+      "label": "Transport et logistique"
+     }
+    ],
+    "related": [
+     "270",
+     "274",
+     "280",
+     "281",
+     "282",
+     "283",
+     "284",
+     "285",
+     "276"
+    ],
+    "summary": "La station météorologique Hitelecom H600 est un terminal agrométéorologique modulaire alimenté par énergie solaire, configuré avec 2 à 12 canaux de capteurs pour la température de l’air, l’humidité, les précipitations, le vent, la pression barométrique et le rayonnement solaire. Elle remonte en temps réel en 4G vers Hitelecom Cloud pour les exploitations agricoles, campus, villes et sites côtiers.",
+    "sku": "H600",
+    "applications": [
+     {
+      "name": "Agriculture intelligente",
+      "desc": "La météo au champ pilote l’irrigation, les fenêtres de pulvérisation et les modèles d’alerte maladies.",
+      "img": "product/details/278-scen1.jpg"
+     },
+     {
+      "name": "Surveillance environnementale",
+      "desc": "Séries climatiques longue durée pour les programmes de bassin versant et d’écologie.",
+      "img": "product/details/278-scen2.jpg"
+     },
+     {
+      "name": "Campus et écoles intelligents",
+      "desc": "Météo du campus pour l’enseignement, la sécurité et la gestion des installations.",
+      "img": "product/details/278-scen4.jpg"
+     },
+     {
+      "name": "Gestion urbaine",
+      "desc": "Surveillance du microclimat pour les services urbains et les études d’îlots de chaleur.",
+      "img": "product/details/278-scen5.jpg"
+     },
+     {
+      "name": "Sites côtiers et marins",
+      "desc": "Canaux vent et pression pour la sécurité des opérations côtières.",
+      "img": "product/details/278-scen3.jpg"
+     },
+     {
+      "name": "Transport et logistique",
+      "desc": "Météo locale pour ports, aéroports et sections d’autoroute.",
+      "img": "product/details/278-scen7.jpg"
+     },
+     {
+      "name": "Gestion des urgences",
+      "desc": "Des stations déployables alimentent les systèmes d’aide à la décision par météo sévère.",
+      "img": "product/details/278-scen6.jpg"
+     }
+    ],
+    "certifications": [
+     "IP65"
+    ],
+    "faqs": [
+     {
+      "q": "Quels paramètres météo le H600 mesure-t-il ?",
+      "a": "La station intègre 2 à 12 canaux — typiquement température et humidité de l’air, pluie, vitesse et direction du vent, pression barométrique et rayonnement solaire. Le jeu de canaux est configuré par projet."
+     },
+     {
+      "q": "Comment la station est-elle alimentée et connectée ?",
+      "a": "Énergie solaire ou réseau électrique, avec liaison 4G temps réel via MQTT vers Hitelecom Cloud pour la lecture et l’analyse à distance."
+     },
+     {
+      "q": "Peut-elle fonctionner dans des zones isolées sans infrastructure ?",
+      "a": "Oui. L’énergie solaire et la liaison cellulaire réduisent le besoin de câblage d’alimentation et de données ; la station s’installe avec oreilles de fixation, collier de mât ou montage à fente."
+     },
+     {
+      "q": "En quoi diffère-t-elle de la station hydrologique H700 ?",
+      "a": "Le H600 est configuré pour les canaux météorologiques (vent, pluie, rayonnement), tandis que le H700 est configuré pour les canaux hydrologiques (niveau d’eau, débit). Les deux partagent la même plateforme modulaire."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "286": {
+    "series": "Série H · Capteur de température et pression pour zones dangereuses",
+    "tagline": "Fiabilité | Industriel | Basse consommation",
+    "desc": "Le capteur 2-en-1 Hitelecom combine surveillance de la température et de la pression dans un seul appareil conçu pour les atmosphères où des gaz ou poussières inflammables peuvent être présents, ce qui peut réduire le nombre d’appareils et la complexité d’installation en zones dangereuses.",
+    "heroImg": "product/details/286-hero.png",
+    "pdf": "/downloads/explosion-proof-temperature-pressure-sensor-datasheet.pdf",
+    "crumbCat": "Matériel",
+    "returnCid": "279",
+    "features": [
+     {
+      "icon": "product/details/286-f1.png",
+      "text": "Précision : ±0,5 °C (personnalisable à ±0,1 °C)"
+     },
+     {
+      "icon": "product/details/286-f2.png",
+      "text": "Boîtier IP68"
+     },
+     {
+      "icon": "product/details/286-f3.png",
+      "text": "±0,5 % FS (personnalisation haute précision)"
+     },
+     {
+      "icon": "product/details/286-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/286-f5.png",
+      "text": "Prend en charge les mises à jour firmware OTA à distance."
+     },
+     {
+      "icon": "product/details/286-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/286-f7.png",
+      "text": "Surveillance à distance"
+     },
+     {
+      "icon": "product/details/286-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Les technologies de communication et de détection intégrées, avec des algorithmes d’économie d’énergie embarqués, offrent au transmetteur une durée de vie étendue et une grande stabilité de mesure, soutenant la fiabilité de l’ensemble du système de surveillance.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "Plage de mesure",
+      "0–1 ; 1,6 ; 3,5 ; 7 ; 10 ou 20 MPa"
+     ],
+     [
+      "Précision de pression",
+      "±0.5% FS"
+     ],
+     [
+      "Température mesurée",
+      "-200°C to +800°C"
+     ],
+     [
+      "Précision de température",
+      "±0,5 °C (personnalisable à ±0,1 °C)"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Bandes de fréquences",
+      "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ],
+     [
+      "Certification pour zones dangereuses",
+      "Certificat et marquage confirmés selon le marché cible et la zone — à demander avant commande"
+     ],
+     [
+      "Température de fonctionnement",
+      "-40°C to +125°C"
+     ],
+     [
+      "Température de stockage",
+      "-40°C to +125°C"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Plage de mesure",
+      "value": "0–1 ; 1,6 ; 3,5 ; 7 ; 10 ou 20 MPa"
+     },
+     {
+      "name": "Précision de pression",
+      "value": "±0.5% FS",
+      "unitText": "pour cent"
+     },
+     {
+      "name": "Température mesurée",
+      "value": "-200°C to +800°C",
+      "unitText": "degré Celsius",
+      "minValue": -200.0,
+      "maxValue": 800.0
+     },
+     {
+      "name": "Précision de température",
+      "value": "±0,5 °C (personnalisable à ±0,1 °C)",
+      "unitText": "degré Celsius"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Bandes de fréquences",
+      "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     },
+     {
+      "name": "Certification pour zones dangereuses",
+      "value": "Certificat et marquage confirmés selon le marché cible et la zone — à demander avant commande"
+     },
+     {
+      "name": "Température de fonctionnement",
+      "value": "-40°C to +125°C",
+      "unitText": "degré",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     },
+     {
+      "name": "Température de stockage",
+      "value": "-40°C to +125°C",
+      "unitText": "degré",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/286-scen1.jpg",
+      "label": "Pétrochimie"
+     },
+     {
+      "img": "product/details/286-scen2.jpg",
+      "label": "Exploitation minière"
+     },
+     {
+      "img": "product/details/286-scen3.jpg",
+      "label": "Usine chimique"
+     }
+    ],
+    "related": [
+     "287"
+    ],
+    "summary": "Le transmetteur 2-en-1 Hitelecom Série H combine la surveillance de la température et de la pression dans un seul appareil conçu pour les environnements où des gaz ou poussières inflammables peuvent être présents. Les plages de pression pleine échelle disponibles sont 1, 1,6, 3,5, 7, 10 et 20 MPa à ±0,5 % FS, la température couvre −200 °C à +800 °C, et les données remontent en 4G ou NB-IoT. Le certificat antidéflagrant applicable doit être confirmé pour le marché cible et la zone avant commande.",
+    "sku": "H200/H300/H500",
+    "applications": [
+     {
+      "name": "Sites pétrochimiques",
+      "desc": "Un seul appareil surveille la température et la pression de process en zones dangereuses.",
+      "img": "product/details/286-scen3.jpg"
+     },
+     {
+      "name": "Extraction de pétrole et de gaz",
+      "desc": "Surveillance de têtes de puits et de lignes de collecte sans câblage en atmosphères explosives.",
+      "img": "product/details/286-scen1.jpg"
+     },
+     {
+      "name": "Opérations minières",
+      "desc": "Tendances de température et de pression dans les zones souterraines à risque de gaz.",
+      "img": "product/details/286-scen2.jpg"
+     },
+     {
+      "name": "Parcs de stockage chimique",
+      "desc": "Surveillance bi-paramètre des équipements de stockage et de transfert.",
+      "img": "product/details/283-scen5.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Pourquoi un transmetteur température-pression 2-en-1 ?",
+      "a": "Un seul appareil combine deux mesures dans un même instrument, ce qui peut réduire les points d’installation, le câblage et la maintenance en zones dangereuses, tout en gardant les deux variables sur le même calendrier de transmission."
+     },
+     {
+      "q": "Quelles sont les plages de mesure ?",
+      "a": "Pression : 0–1 MPa, 1,6, 3,5, 7, 10 ou 20 MPa à ±0,5 % FS. Température : −200 °C à +800 °C à ±0,5 °C, personnalisable à ±0,1 °C."
+     },
+     {
+      "q": "Est-il certifié pour les atmosphères explosives ?",
+      "a": "L’appareil est conçu pour les atmosphères où des gaz ou poussières inflammables peuvent être présents. L’adéquation dépend de la configuration certifiée requise pour le marché cible, la zone, le groupe de gaz ou de poussières et la classe de température — demandez le certificat applicable à Hitelecom avant de spécifier le produit."
+     },
+     {
+      "q": "Comment transmet-il les données ?",
+      "a": "En 4G ou NB-IoT avec liaison MQTT vers Hitelecom Cloud ou un déploiement privé, avec alarmes de seuil sur les deux canaux."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "287": {
+    "series": "Série H · Isolateur galvanique",
+    "tagline": "Fiabilité | Sécurité | Conception zones dangereuses",
+    "desc": "Dans l’extraction de pétrole et de gaz, les usines chimiques et les mines, des gaz, vapeurs ou poussières inflammables peuvent être présents, et les équipements sans fil dans ces zones exigent une conception dédiée. Le H100 est un dispositif de couplage de signal haute fréquence pour ces installations industrielles. L’adéquation à une zone dangereuse dépend de la configuration certifiée requise pour le marché cible, la zone, le groupe de gaz ou de poussières et la classe de température — demandez le certificat applicable avant de spécifier le produit.",
+    "heroImg": "product/details/287-hero.png",
+    "pdf": "/downloads/coupling-isolator-h100-datasheet.pdf",
+    "crumbCat": "Matériel",
+    "returnCid": "279",
+    "features": [
+     {
+      "icon": "product/details/287-f1.png",
+      "text": "Couplage de signal haute fréquence à faible atténuation"
+     },
+     {
+      "icon": "product/details/287-f2.png",
+      "text": "Boîtier IP68"
+     },
+     {
+      "icon": "product/details/287-f3.png",
+      "text": "Prend en charge les liaisons haute fréquence 2,4 GHz / 5,8 GHz"
+     },
+     {
+      "icon": "product/details/287-f4.png",
+      "text": "Conçu pour le couplage de signal en zone dangereuse"
+     },
+     {
+      "icon": "product/details/287-f5.png",
+      "text": "Technologie basse consommation, réduisant l’énergie émise"
+     },
+     {
+      "icon": "product/details/287-f6.png",
+      "text": "Haute immunité aux interférences électromagnétiques"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Le H100 est un dispositif de couplage de signal sans fil destiné aux installations en zones dangereuses, prenant en charge les fréquences 2,4 GHz et 5,8 GHz avec une conception basse consommation et une haute résistance aux interférences, adapté aux environnements industriels difficiles. Le certificat applicable doit être confirmé pour le marché cible et la zone avant commande.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H100"
+     ],
+     [
+      "Bandes de signal",
+      "2,4 GHz / 5,8 GHz"
+     ],
+     [
+      "Utilisation en zone dangereuse",
+      "Conception de couplage pour zone dangereuse ; le certificat applicable doit être confirmé pour le marché cible et la zone avant commande"
+     ],
+     [
+      "Température de fonctionnement",
+      "-40°C to +125°C"
+     ],
+     [
+      "Température de stockage",
+      "-40°C to +125°C"
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H100"
+     },
+     {
+      "name": "Bandes de signal",
+      "value": "2,4 GHz / 5,8 GHz"
+     },
+     {
+      "name": "Utilisation en zone dangereuse",
+      "value": "Conception de couplage pour zone dangereuse ; le certificat applicable doit être confirmé pour le marché cible et la zone avant commande"
+     },
+     {
+      "name": "Température de fonctionnement",
+      "value": "-40°C to +125°C",
+      "unitText": "degré",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     },
+     {
+      "name": "Température de stockage",
+      "value": "-40°C to +125°C",
+      "unitText": "degré",
+      "minValue": -40.0,
+      "maxValue": 125.0
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/287-scen1.jpg",
+      "label": "Pétrochimie"
+     },
+     {
+      "img": "product/details/287-scen2.jpg",
+      "label": "Exploitation minière"
+     },
+     {
+      "img": "product/details/287-scen3.jpg",
+      "label": "Chimie"
+     }
+    ],
+    "related": [
+     "286"
+    ],
+    "summary": "L’isolateur galvanique Hitelecom H100 est un coupleur de signal haute fréquence qui laisse les signaux de capteurs sans fil 2,4 GHz / 5,8 GHz franchir les limites de zones dangereuses dans les sites pétroliers et gaziers, chimiques et miniers. L’adéquation à une zone dangereuse dépend de la configuration certifiée requise pour le marché cible, la zone, le groupe de gaz ou de poussières et la classe de température — demandez le certificat applicable avant de spécifier le produit. Il fonctionne de −40 °C à +125 °C et s’installe avec oreilles de fixation, collier de mât ou montage à fente.",
+    "sku": "H100",
+    "applications": [
+     {
+      "name": "Extraction de pétrole et de gaz",
+      "desc": "Couple les signaux de capteurs sans fil hors des zones dangereuses de têtes de puits.",
+      "img": "product/details/287-scen1.jpg"
+     },
+     {
+      "name": "Usines chimiques",
+      "desc": "Relie les liaisons sans fil entre zones dangereuses et sûres sans traverser les barrières.",
+      "img": "product/details/287-scen3.jpg"
+     },
+     {
+      "name": "Exploitation minière",
+      "desc": "Voie de couplage de signal pour les réseaux de capteurs sans fil souterrains en zones dangereuses.",
+      "img": "product/details/287-scen2.jpg"
+     },
+     {
+      "name": "Parcs de stockage et terminaux",
+      "desc": "Couplage de signal sûr à travers les digues et limites de zones.",
+      "img": "product/details/283-scen5.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Quel problème l’isolateur galvanique résout-il ?",
+      "a": "Les liaisons sans fil standard ne doivent pas franchir les limites de zones dangereuses sans isolation certifiée. Le H100 couple les signaux de capteurs 2,4 GHz / 5,8 GHz à travers la limite, permettant à des capteurs sans fil sur batterie de servir les zones dangereuses sans traversées de conduits supplémentaires — sous réserve de la configuration certifiée pour le marché cible et la zone."
+     },
+     {
+      "q": "À quelles normes est-il conforme ?",
+      "a": "Cela dépend de la configuration certifiée pour votre marché cible, la zone, le groupe de gaz ou de poussières et la classe de température. Partagez vos exigences et Hitelecom fournira les détails du certificat applicable avant la livraison."
+     },
+     {
+      "q": "Quels environnements supporte-t-il ?",
+      "a": "Les températures de fonctionnement et de stockage couvrent toutes deux −40 °C à +125 °C, avec un boîtier IP68 pour les sites extérieurs et souterrains."
+     },
+     {
+      "q": "Comment est-il installé ?",
+      "a": "Oreilles de fixation, collier de mât ou montage à fente — la même famille d’accessoires que les autres appareils de terrain Série H."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "301": {
+    "series": "Série H · Capteur de température et d’humidité",
+    "tagline": "Précision | Climat | Ultra-basse consommation",
+    "desc": "Les capteurs de température et d’humidité Hitelecom offrent une surveillance climatique de haute précision avec alertes à distance, fournissant aux salles propres, armoires, musées et lignes de production des enregistrements climatiques continus et des alarmes de seuil 24h/24",
+    "heroImg": "product/details/301-hero.png",
+    "pdf": "/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
+    "crumbCat": "Température",
+    "returnCid": "263",
+    "features": [
+     {
+      "icon": "product/details/270-f1.png",
+      "text": "Précision : ±0,2 °C / ±2 % HR (typique)"
+     },
+     {
+      "icon": "product/details/270-f2-ip65.png",
+      "text": "Boîtier IP65"
+     },
+     {
+      "icon": "product/details/270-f3.png",
+      "text": "Plage : 0–100 % HR, −20 °C à +80 °C"
+     },
+     {
+      "icon": "product/details/270-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/270-f5.png",
+      "text": "Conception basse consommation pour un fonctionnement longue durée"
+     },
+     {
+      "icon": "product/details/270-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/270-f7.png",
+      "text": "Surveillance climatique à distance"
+     },
+     {
+      "icon": "product/details/270-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Des processeurs micro-puissance et une optimisation algorithmique offrent au capteur une durée de vie de conception jusqu’à 10 ans à un intervalle d’une heure dans les conditions de test spécifiées, réduisant la maintenance courante.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "Plage de mesure",
+      "Humidité 0–100 % HR, température −20 °C à +80 °C"
+     ],
+     [
+      "Précision",
+      "±0,2 °C / ±2 % HR (typique)"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Sonde",
+      "Sonde frittée à fentes, montée sur câble"
+     ],
+     [
+      "Bandes de fréquences",
+      "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission."
+     ],
+     [
+      "Installation",
+      "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Plage de mesure",
+      "value": "Humidité 0–100 % HR, température −20 °C à +80 °C"
+     },
+     {
+      "name": "Précision",
+      "value": "±0,2 °C / ±2 % HR (typique)"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Sonde",
+      "value": "Sonde frittée à fentes, montée sur câble"
+     },
+     {
+      "name": "Bandes de fréquences",
+      "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission.",
+      "unitText": "an",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Oreilles de fixation, collier de mât ou montage à fente (selon la configuration)"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/270-scen3.jpg",
+      "label": "Centre de données"
+     },
+     {
+      "img": "product/details/270-scen4.jpg",
+      "label": "Stockage pharmaceutique et de santé"
+     },
+     {
+      "img": "product/details/270-scen5.jpg",
+      "label": "Transformation alimentaire"
+     },
+     {
+      "img": "product/details/270-scen2.jpg",
+      "label": "Agriculture intelligente"
+     },
+     {
+      "img": "product/details/285-scen1.jpg",
+      "label": "Environnement de bureau"
+     },
+     {
+      "img": "product/details/285-scen7.jpg",
+      "label": "Fabrication intelligente"
+     },
+     {
+      "img": "product/details/285-scen3.jpg",
+      "label": "Hôpital"
+     }
+    ],
+    "related": [
+     "302",
+     "270",
+     "274",
+     "280",
+     "281",
+     "282",
+     "283",
+     "284",
+     "285"
+    ],
+    "summary": "Le capteur de température et d’humidité Hitelecom Série H est un moniteur climatique sans fil pour salles propres, armoires électriques, musées et lignes de production. Sa sonde frittée à fentes mesure 0–100 % HR et −20 °C à +80 °C, avec des précisions typiques de ±2 % HR et ±0,2 °C, une batterie conçue pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées, et une remontée cloud 4G/NB-IoT.",
+    "sku": "H200/H300/H500",
+    "applications": [
+     {
+      "name": "Centres de données et salles serveurs",
+      "desc": "Suit la température et l’humidité au niveau des racks pour maintenir les équipements IT dans les enveloppes ASHRAE.",
+      "img": "product/details/270-scen3.jpg"
+     },
+     {
+      "name": "Stockage médical et pharmaceutique",
+      "desc": "Surveille pharmacies, chambres froides et services où l’humidité affecte la stabilité des médicaments.",
+      "img": "product/details/270-scen4.jpg"
+     },
+     {
+      "name": "Musées et archives",
+      "desc": "Fournit des enregistrements climatiques continus qui soutiennent les décisions de conservation du papier, des textiles et des reliques."
+     },
+     {
+      "name": "Transformation et stockage alimentaires",
+      "desc": "Suit l’humidité dans les ateliers de transformation et les entrepôts, alertant le personnel des conditions pouvant mener à la moisissure et à la condensation.",
+      "img": "product/details/270-scen5.jpg"
+     },
+     {
+      "name": "Armoires et coffrets électriques",
+      "desc": "La sonde sur câble s’insère dans les armoires pour alerter de la condensation avant que la corrosion ne débute.",
+      "img": "product/details/285-scen7.jpg"
+     },
+     {
+      "name": "Serres",
+      "desc": "Combine les tendances de température et d’humidité pour les décisions de ventilation et d’irrigation.",
+      "img": "product/details/270-scen2.jpg"
+     },
+     {
+      "name": "Bureaux et hôpitaux",
+      "desc": "Maintient confort et hygiène de l’air intérieur dans les plages cibles des bâtiments publics.",
+      "img": "product/details/285-scen1.jpg"
+     }
+    ],
+    "certifications": [
+     "IP65"
+    ],
+    "faqs": [
+     {
+      "q": "Quelles sont la plage de mesure et la précision ?",
+      "a": "Il mesure 0–100 % HR et −20 °C à +80 °C, avec des précisions typiques de ±2 % HR et ±0,2 °C. La sonde frittée à fentes est montée sur câble et peut être placée dans les armoires et gaines."
+     },
+     {
+      "q": "Prend-il en charge les alarmes de seuil ?",
+      "a": "Oui. Les seuils haut et bas de température et d’humidité se configurent à distance, et le capteur pousse des alertes via la plateforme cloud lorsque les limites sont franchies."
+     },
+     {
+      "q": "Quelle est l’autonomie de la batterie ?",
+      "a": "La configuration batterie sélectionnée est conçue pour plus de 10 ans à un intervalle d’une heure dans les conditions de test spécifiées ; l’autonomie réelle varie selon la couverture réseau, la température et la fréquence de transmission. Aucun câblage secteur n’est nécessaire au point d’installation."
+     },
+     {
+      "q": "Quels réseaux sans fil sont pris en charge ?",
+      "a": "4G et NB-IoT avec liaison MQTT vers Hitelecom Cloud, un cloud client ou un déploiement privé. LoRa est disponible pour les sites multi-capteurs avec passerelle privée."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "302": {
+    "series": "Série H · Enregistreur de données de température et d’humidité",
+    "tagline": "Configuration NFC | Export USB | Enregistrement grande capacité",
+    "desc": "Les enregistreurs de données de température et d’humidité Hitelecom stockent jusqu’à 80 000 relevés avec configuration NFC et export USB en un clic, produisant des enregistrements horodatés qui soutiennent les audits dans la logistique de la chaîne du froid, pharmaceutique et alimentaire.",
+    "heroImg": "product/details/302-hero.png",
+    "pdf": "/downloads/temperature-humidity-data-logger-datasheet.pdf",
+    "crumbCat": "Température",
+    "returnCid": "263",
+    "features": [
+     {
+      "icon": "product/details/270-f1.png",
+      "text": "Précision : ±0,2 °C / ±2 % HR (typique)"
+     },
+     {
+      "icon": "product/details/270-f2-ip65.png",
+      "text": "Boîtier IP65"
+     },
+     {
+      "icon": "product/details/270-f3.png",
+      "text": "80 000 relevés en mémoire embarquée"
+     },
+     {
+      "icon": "product/details/270-f4.png",
+      "text": "Configuration par simple contact NFC, export USB en un clic"
+     },
+     {
+      "icon": "product/details/270-f5.png",
+      "text": "Conception basse consommation pour un fonctionnement longue durée"
+     },
+     {
+      "icon": "product/details/270-f6.png",
+      "text": "Enregistrement autonome via NFC et USB, sans passerelle"
+     },
+     {
+      "icon": "product/details/270-f7.png",
+      "text": "Horodatage de chaque relevé"
+     },
+     {
+      "icon": "product/details/270-f9.png",
+      "text": "Logiciel PC gratuit : analyse de courbes et export PDF/CSV"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Une conception micro-puissance avec configuration NFC et export USB en un clic ; la batterie remplaçable permet des enregistrements pluriannuels entre les changements de batterie.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200L/H300L"
+     ],
+     [
+      "Capacité de stockage",
+      "80 000 relevés"
+     ],
+     [
+      "Précision",
+      "±0,2 °C / ±2 % HR (typique)"
+     ],
+     [
+      "Configuration",
+      "NFC (application Android/iOS)"
+     ],
+     [
+      "Export de données",
+      "USB, rapport PDF/CSV"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Multi-années (batterie remplaçable)"
+     ],
+     [
+      "Protection",
+      "IP65"
+     ],
+     [
+      "Installation",
+      "Autonome · Suspendu · Adhésif"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200L/H300L"
+     },
+     {
+      "name": "Capacité de stockage",
+      "value": "80 000 relevés"
+     },
+     {
+      "name": "Précision",
+      "value": "±0,2 °C / ±2 % HR (typique)"
+     },
+     {
+      "name": "Configuration",
+      "value": "NFC (application Android/iOS)"
+     },
+     {
+      "name": "Export de données",
+      "value": "USB, rapport PDF/CSV"
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Multi-années (batterie remplaçable)"
+     },
+     {
+      "name": "Protection",
+      "value": "IP65"
+     },
+     {
+      "name": "Installation",
+      "value": "Autonome · Suspendu · Adhésif"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/285-scen4.jpg",
+      "label": "Transport de la chaîne du froid"
+     },
+     {
+      "img": "product/details/270-scen5.jpg",
+      "label": "Transformation alimentaire"
+     },
+     {
+      "img": "product/details/270-scen4.jpg",
+      "label": "Stockage pharmaceutique et de santé"
+     },
+     {
+      "img": "product/details/285-scen3.jpg",
+      "label": "Hôpital"
+     },
+     {
+      "img": "product/details/285-scen7.jpg",
+      "label": "Fabrication intelligente"
+     },
+     {
+      "img": "product/details/285-scen6.jpg",
+      "label": "Centre de données"
+     }
+    ],
+    "related": [
+     "301",
+     "270",
+     "285",
+     "274",
+     "280",
+     "281",
+     "282",
+     "283"
+    ],
+    "summary": "L’enregistreur de données de température et d’humidité Hitelecom Série H stocke jusqu’à 80 000 relevés avec des précisions typiques de ±0,2 °C et ±2 % HR. Configuration NFC via un appareil Android ou iOS compatible, export USB en un clic des rapports PDF/CSV, logiciel PC gratuit pour graphiques et analyse, et batterie remplaçable multi-années : des enregistrements qui soutiennent les audits de la chaîne du froid, de la logistique pharmaceutique et alimentaire.",
+    "sku": "H200L/H300L",
+    "applications": [
+     {
+      "name": "Transport de la chaîne du froid",
+      "desc": "Relevés de température par trajet pour camions frigorifiques, conteneurs reefer et colis du dernier kilomètre.",
+      "img": "product/details/285-scen4.jpg"
+     },
+     {
+      "name": "Distribution pharmaceutique",
+      "desc": "Preuves PDF/CSV prêtes pour l’audit des expéditions de vaccins, d’insuline et de produits biologiques.",
+      "img": "product/details/270-scen4.jpg"
+     },
+     {
+      "name": "Transformation et stockage alimentaires",
+      "desc": "Enregistrement compatible HACCP dans les ateliers de transformation, chambres froides et vitrines réfrigérées.",
+      "img": "product/details/270-scen5.jpg"
+     },
+     {
+      "name": "Hôpitaux et laboratoires",
+      "desc": "Enregistrement des réfrigérateurs, congélateurs et incubateurs pour les contrôles de conformité.",
+      "img": "product/details/285-scen3.jpg"
+     },
+     {
+      "name": "Entreposage",
+      "desc": "Enregistrement ambiant longue durée dans les entrepôts sous douane et généraux.",
+      "img": "product/details/276-scen3.jpg"
+     },
+     {
+      "name": "Centres de données et archives",
+      "desc": "Enregistrement de placement pour les salles où la remontée sans fil n’est pas requise.",
+      "img": "product/details/285-scen6.jpg"
+     }
+    ],
+    "certifications": [
+     "IP65"
+    ],
+    "faqs": [
+     {
+      "q": "Comment configurer l’enregistreur et lire les données ?",
+      "a": "Approchez un téléphone NFC pour démarrer, arrêter et configurer l’enregistreur — confirmez la prise en charge NFC iOS de votre modèle de téléphone avec Hitelecom. Après le trajet, branchez-le en USB pour exporter les rapports PDF/CSV, ou ouvrez les fichiers dans le logiciel PC gratuit pour l’analyse des courbes."
+     },
+     {
+      "q": "Combien de relevés peut-il stocker ?",
+      "a": "Jusqu’à 80 000 relevés. À un intervalle de cinq minutes, cela couvre environ neuf mois d’enregistrement continu."
+     },
+     {
+      "q": "La batterie est-elle remplaçable ?",
+      "a": "Oui. L’enregistreur utilise une batterie remplaçable à durée de vie pluriannuelle : le même enregistreur peut être réutilisé pour plusieurs trajets sur plusieurs années."
+     },
+     {
+      "q": "Téléverse-t-il les données par liaison sans fil ?",
+      "a": "Non — c’est un enregistreur autonome : les données restent sur l’enregistreur jusqu’à l’export via USB ou la lecture via NFC, ce qui convient aux expéditions transfrontalières et aux livraisons auditées où une liaison en direct n’est pas nécessaire."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "303": {
+    "series": "Série H · Capteur TVOC",
+    "tagline": "Surveillance COV | Montage fixe | Ultra-basse consommation",
+    "desc": "Les capteurs TVOC Hitelecom suivent les composés organiques volatils totaux de 0 à 100 000 ppb avec une résolution de 1 ppb, pour la surveillance des ateliers de peinture, des stockages chimiques et des laboratoires avec alarmes à distance",
+    "heroImg": "product/details/303-hero.png",
+    "pdf": "/downloads/tvoc-sensor-datasheet.pdf",
+    "crumbCat": "Qualité de l’air",
+    "returnCid": "265",
+    "features": [
+     {
+      "icon": "product/details/270-f1.png",
+      "text": "Résolution : 1 ppb"
+     },
+     {
+      "icon": "product/details/270-f2.png",
+      "text": "Boîtier IP68, personnalisable"
+     },
+     {
+      "icon": "product/details/270-f3.png",
+      "text": "Large plage : 0–100 000 ppb"
+     },
+     {
+      "icon": "product/details/270-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/270-f5.png",
+      "text": "Conception basse consommation pour un fonctionnement longue durée"
+     },
+     {
+      "icon": "product/details/270-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/270-f7.png",
+      "text": "Surveillance COV à distance"
+     },
+     {
+      "icon": "product/details/270-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Des processeurs micro-puissance et une optimisation algorithmique offrent au capteur une durée de vie de conception jusqu’à 10 ans à un intervalle d’une heure dans les conditions de test spécifiées, réduisant la maintenance courante.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "Plage de mesure",
+      "0–100 000 ppb"
+     ],
+     [
+      "Résolution",
+      "1 ppb"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Principe de mesure",
+      "Électrochimique ou PID (selon la configuration)"
+     ],
+     [
+      "Bandes de fréquences",
+      "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission."
+     ],
+     [
+      "Installation",
+      "Montage sur oreillettes · Montage en conduit"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Plage de mesure",
+      "value": "0–100 000 ppb",
+      "unitText": "parties par milliard",
+      "minValue": 0.0,
+      "maxValue": 100000.0
+     },
+     {
+      "name": "Résolution",
+      "value": "1 ppb",
+      "unitText": "parties par milliard"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Principe de mesure",
+      "value": "Électrochimique ou PID (selon la configuration)"
+     },
+     {
+      "name": "Bandes de fréquences",
+      "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission.",
+      "unitText": "an",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Montage sur oreillettes · Montage en conduit"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/285-scen7.jpg",
+      "label": "Fabrication intelligente"
+     },
+     {
+      "img": "product/details/283-scen5.jpg",
+      "label": "Usine chimique"
+     },
+     {
+      "img": "product/details/285-scen1.jpg",
+      "label": "Environnement de bureau"
+     },
+     {
+      "img": "product/details/285-scen3.jpg",
+      "label": "Hôpital"
+     },
+     {
+      "img": "product/details/285-scen5.jpg",
+      "label": "Environnement résidentiel"
+     },
+     {
+      "img": "product/details/283-scen7.jpg",
+      "label": "Bâtiment intelligent"
+     }
+    ],
+    "related": [
+     "305",
+     "285",
+     "301",
+     "302",
+     "270",
+     "274",
+     "284",
+     "283"
+    ],
+    "summary": "Le capteur TVOC Hitelecom Série H est un moniteur sans fil des composés organiques volatils totaux de 0 à 100 000 ppb avec une résolution de 1 ppb. La technologie de détection est sélectionnée selon les composés cibles et doit être confirmée à la commande, avec alarmes à distance et une batterie conçue pour plus de 10 ans à un intervalle d’une heure dans les conditions de test spécifiées, pour la surveillance continue des ateliers de peinture, stockages chimiques et laboratoires.",
+    "sku": "H200/H300/H500",
+    "applications": [
+     {
+      "name": "Ateliers de peinture et lignes de revêtement",
+      "desc": "Suivi TVOC continu là où les solvants s’évaporent pendant la pulvérisation et le séchage.",
+      "img": "product/details/283-scen6.jpg"
+     },
+     {
+      "name": "Zones de stockage chimique",
+      "desc": "Alerte précoce d’accumulation de vapeurs autour des fûts, cuves et armoires.",
+      "img": "product/details/283-scen5.jpg"
+     },
+     {
+      "name": "Laboratoires",
+      "desc": "Surveillance TVOC des sorbonnes et des salles pour la sécurité des chercheurs.",
+      "img": "product/details/274-scen5.jpg"
+     },
+     {
+      "name": "Imprimeries et sites d’emballage",
+      "desc": "Surveillance des vapeurs de solvants près des presses et lamineuses.",
+      "img": "product/details/285-scen7.jpg"
+     },
+     {
+      "name": "Programmes de qualité de l’air intérieur",
+      "desc": "Le TVOC comme indicateur principal des audits de santé des bâtiments.",
+      "img": "product/details/285-scen1.jpg"
+     },
+     {
+      "name": "Installations d’assainissement et de déchets",
+      "desc": "Surveillance des tendances COV liées aux odeurs dans les stations de traitement.",
+      "img": "product/details/283-scen4.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Quelles plage et résolution le capteur TVOC offre-t-il ?",
+      "a": "Plage de mesure 0–100 000 ppb avec une résolution de 1 ppb. Le principe de détection est électrochimique ou PID, sélectionné selon le mélange de gaz cible."
+     },
+     {
+      "q": "Peut-il alerter lorsque le TVOC s’élève anormalement ?",
+      "a": "Oui. Les seuils se configurent à distance et le capteur pousse des alarmes via la plateforme cloud, pour une réaction rapide des équipes lorsqu’un seuil configuré est dépassé."
+     },
+     {
+      "q": "Quel est l’indice de protection ?",
+      "a": "Le boîtier standard est prévu pour les sites industriels exigeants, et IP68 est disponible en personnalisation pour les points extérieurs exposés en permanence. Indiquez à Hitelecom votre environnement d’installation."
+     },
+     {
+      "q": "Comment est-il alimenté et connecté ?",
+      "a": "Il utilise une batterie interne conçue pour plus de 10 ans d’autonomie à un intervalle d’une heure dans les conditions de test spécifiées, remontant en 4G ou NB-IoT via MQTT vers Hitelecom Cloud ou des plateformes privées."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "304": {
+    "series": "Série H · Capteur de suivi d’actifs",
+    "tagline": "Positionnement | Batterie multi-années | Robuste",
+    "desc": "Les capteurs de suivi d’actifs Hitelecom combinent le positionnement GPS et BeiDou avec une batterie multi-années, gardant palettes, outils et bacs consignés visibles entre les sites avec des alertes de géofence",
+    "heroImg": "product/details/304-hero.png",
+    "pdf": "/downloads/asset-tracking-sensor-datasheet.pdf",
+    "crumbCat": "Suivi d’actifs",
+    "returnCid": "306",
+    "features": [
+     {
+      "icon": "product/details/270-f1.png",
+      "text": "Positionnement bi-mode GPS + BeiDou"
+     },
+     {
+      "icon": "product/details/270-f2-ip67.png",
+      "text": "Indice de protection IP67"
+     },
+     {
+      "icon": "product/details/270-f3.png",
+      "text": "Repli LBS là où la couverture cellulaire est disponible"
+     },
+     {
+      "icon": "product/details/270-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/270-f5.png",
+      "text": "Conception basse consommation pour un fonctionnement longue durée"
+     },
+     {
+      "icon": "product/details/270-f6.png",
+      "text": "Remontée de position en 4G / NB-IoT"
+     },
+     {
+      "icon": "product/details/270-f7.png",
+      "text": "Carte cloud et historique des positions"
+     },
+     {
+      "icon": "product/details/270-f8.png",
+      "text": "Alertes de géofence et de mouvement"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Une conception micro-puissance et des intervalles de transmission configurables permettent un fonctionnement multi-années sur batterie ; l’autonomie réelle dépend du mode de positionnement, de l’intervalle de transmission et de la couverture réseau.",
+    "specs": [
+     [
+      "Modèle de produit",
+      "H200T"
+     ],
+     [
+      "Positionnement",
+      "GPS / BeiDou / LBS"
+     ],
+     [
+      "Communication",
+      "4G / NB-IoT"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Multi-années (selon l’intervalle de transmission)"
+     ],
+     [
+      "Protection",
+      "IP67"
+     ],
+     [
+      "Installation",
+      "Aimant · Vis · Sangle"
+     ],
+     [
+      "Température de fonctionnement",
+      "-20°C to +70°C"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèle de produit",
+      "value": "H200T"
+     },
+     {
+      "name": "Positionnement",
+      "value": "GPS / BeiDou / LBS"
+     },
+     {
+      "name": "Communication",
+      "value": "4G / NB-IoT"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Multi-années (selon l’intervalle de transmission)"
+     },
+     {
+      "name": "Protection",
+      "value": "IP67"
+     },
+     {
+      "name": "Installation",
+      "value": "Aimant · Vis · Sangle"
+     },
+     {
+      "name": "Température de fonctionnement",
+      "value": "-20°C to +70°C",
+      "unitText": "degré Celsius",
+      "minValue": -20.0,
+      "maxValue": 70.0
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/285-scen4.jpg",
+      "label": "Transport intelligent"
+     },
+     {
+      "img": "product/details/285-scen7.jpg",
+      "label": "Fabrication intelligente"
+     },
+     {
+      "img": "product/details/285-scen2.jpg",
+      "label": "Ville intelligente"
+     },
+     {
+      "img": "product/details/283-scen8.jpg",
+      "label": "Énergie intelligente"
+     },
+     {
+      "img": "product/details/283-scen4.jpg",
+      "label": "Station de traitement d’eau"
+     },
+     {
+      "img": "product/details/283-scen7.jpg",
+      "label": "Bâtiment intelligent"
+     }
+    ],
+    "related": [
+     "301",
+     "302",
+     "303",
+     "305",
+     "270",
+     "274",
+     "280",
+     "285"
+    ],
+    "summary": "Le capteur de suivi d’actifs Hitelecom Série H combine le positionnement GPS et BeiDou (repli LBS lorsque le signal satellite est faible, selon la disponibilité du réseau) avec une remontée 4G ou NB-IoT. Le tracker remonte positions et événements de géofence en 4G ou NB-IoT, combinant batterie multi-années, boîtier IP67 et montage par aimant, vis ou sangle pour garder palettes, outils et bacs consignés visibles entre les sites.",
+    "sku": "H200T",
+    "applications": [
+     {
+      "name": "Pooling de palettes et bacs",
+      "desc": "Les emballages consignés restent visibles entre fournisseurs, usines et entrepôts.",
+      "img": "product/details/276-scen3.jpg"
+     },
+     {
+      "name": "Suivi d’outils et d’équipements",
+      "desc": "Retrouvez outils partagés et équipements portables sur les grands sites.",
+      "img": "product/details/285-scen7.jpg"
+     },
+     {
+      "name": "Flottes logistiques",
+      "desc": "Alertes de position et de géofence pour remorques, conteneurs et chariots.",
+      "img": "product/details/285-scen4.jpg"
+     },
+     {
+      "name": "Chantiers",
+      "desc": "Suivez groupes électrogènes, compresseurs et accessoires sur des chantiers changeants."
+     },
+     {
+      "name": "Actifs des services publics et municipaux",
+      "desc": "Surveille pompes mobiles, vannes et équipements de service sur le terrain.",
+      "img": "product/details/283-scen4.jpg"
+     },
+     {
+      "name": "Matériel de location",
+      "desc": "Localisez les machines louées et détectez les déplacements non autorisés.",
+      "img": "product/details/284-scen2.jpg"
+     }
+    ],
+    "certifications": [
+     "IP67"
+    ],
+    "faqs": [
+     {
+      "q": "Comment le tracker positionne-t-il les actifs ?",
+      "a": "En extérieur, il utilise le positionnement satellite GPS ou BeiDou ; en intérieur ou dans les canyons urbains, le positionnement cellulaire LBS peut fournir une position approximative de repli, selon la disponibilité du réseau."
+     },
+     {
+      "q": "Quelle est l’autonomie de la batterie ?",
+      "a": "Multi-années, selon l’intervalle de transmission — moins de remontées de position par jour signifie une plus longue durée de service. Le profil exact est configuré par déploiement."
+     },
+     {
+      "q": "Comment est-il fixé aux actifs ?",
+      "a": "Trois options : aimant pour surfaces en acier, vis pour un montage permanent, ou sangles pour palettes et actifs de forme irrégulière. IP67 protège de la pluie et de la poussière."
+     },
+     {
+      "q": "Peut-il alerter lorsqu’un actif quitte un site ?",
+      "a": "Oui. Les géofences se dessinent sur la plateforme, et le tracker pousse une alerte lorsqu’un actif franchit une limite."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   },
+   "305": {
+    "series": "Série H · Capteur de gaz personnalisé",
+    "tagline": "100+ gaz | Fixe ou en conduit | OEM/ODM",
+    "desc": "Choisissez le gaz — Hitelecom construit le terminal autour. Les capteurs de gaz personnalisés peuvent être configurés pour plus de 100 gaz dont CO, H₂S, NH₃, O₃ et CH₄, en boîtiers fixes ou en conduit pour la surveillance industrielle. Plage, précision, principe de détection et autonomie dépendent du gaz et de la configuration choisis.",
+    "heroImg": "product/details/305-hero.png",
+    "pdf": "/downloads/custom-gas-sensor-datasheet.pdf",
+    "crumbCat": "Qualité de l’air",
+    "returnCid": "265",
+    "features": [
+     {
+      "icon": "product/details/270-f1.png",
+      "text": "Principes électrochimique / NDIR / PID"
+     },
+     {
+      "icon": "product/details/270-f2.png",
+      "text": "Boîtier IP68, personnalisable"
+     },
+     {
+      "icon": "product/details/270-f3.png",
+      "text": "100+ gaz : CO, H₂S, NH₃, O₃, CH₄ et plus"
+     },
+     {
+      "icon": "product/details/270-f4.png",
+      "text": "Prend en charge l’activation NFC et la configuration locale de l’appareil."
+     },
+     {
+      "icon": "product/details/270-f5.png",
+      "text": "Conception basse consommation pour un fonctionnement longue durée"
+     },
+     {
+      "icon": "product/details/270-f6.png",
+      "text": "Options sans fil : 4G LTE, NB-IoT et LoRa."
+     },
+     {
+      "icon": "product/details/270-f7.png",
+      "text": "Surveillance de gaz à distance"
+     },
+     {
+      "icon": "product/details/270-f8.png",
+      "text": "Alertes de seuil configurables"
+     }
+    ],
+    "specsTitle": "Spécifications techniques",
+    "specsDesc": "Les terminaux de gaz personnalisés combinent processeurs micro-puissance et principes de détection adaptés au gaz cible. Plage, précision et autonomie dépendent du gaz, du principe et de l’intervalle de transmission choisis — à confirmer par configuration.",
+    "specs": [
+     [
+      "Modèles de produits",
+      "H200/H300/H500"
+     ],
+     [
+      "Gaz cibles",
+      "100+ gaz cibles configurables"
+     ],
+     [
+      "Plage de mesure",
+      "Par gaz (personnalisé)"
+     ],
+     [
+      "Protocole",
+      "MQTT"
+     ],
+     [
+      "Principe de mesure",
+      "Électrochimique / NDIR / PID"
+     ],
+     [
+      "Bandes de fréquences",
+      "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     ],
+     [
+      "Autonomie de la batterie",
+      "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission."
+     ],
+     [
+      "Installation",
+      "Fixe · En conduit"
+     ]
+    ],
+    "specsStructured": [
+     {
+      "name": "Modèles de produits",
+      "value": "H200/H300/H500"
+     },
+     {
+      "name": "Gaz cibles",
+      "value": "100+ gaz cibles configurables"
+     },
+     {
+      "name": "Plage de mesure",
+      "value": "Par gaz (personnalisé)"
+     },
+     {
+      "name": "Protocole",
+      "value": "MQTT"
+     },
+     {
+      "name": "Principe de mesure",
+      "value": "Électrochimique / NDIR / PID"
+     },
+     {
+      "name": "Bandes de fréquences",
+      "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
+     },
+     {
+      "name": "Autonomie de la batterie",
+      "value": "Conçu pour plus de 10 ans d’autonomie à un intervalle de transmission d’une heure dans les conditions de test spécifiées. L’autonomie réelle varie selon le modèle, la configuration de mesure, la couverture réseau, les retransmissions, la température de fonctionnement, la fréquence d’échantillonnage et l’intervalle de transmission.",
+      "unitText": "an",
+      "minValue": 10.0
+     },
+     {
+      "name": "Installation",
+      "value": "Fixe · En conduit"
+     }
+    ],
+    "certImgs": [],
+    "scenariosHeading": "Scénarios d’application",
+    "scenarios": [
+     {
+      "img": "product/details/283-scen3.jpg",
+      "label": "Mine de charbon"
+     },
+     {
+      "img": "product/details/283-scen5.jpg",
+      "label": "Usine chimique"
+     },
+     {
+      "img": "product/details/283-scen4.jpg",
+      "label": "Station de traitement d’eau"
+     },
+     {
+      "img": "product/details/285-scen7.jpg",
+      "label": "Fabrication intelligente"
+     },
+     {
+      "img": "product/details/283-scen1.jpg",
+      "label": "Plaque d’égout"
+     },
+     {
+      "img": "product/details/285-scen1.jpg",
+      "label": "Environnement de bureau"
+     }
+    ],
+    "related": [
+     "303",
+     "285",
+     "274",
+     "270",
+     "301",
+     "280",
+     "284",
+     "283"
+    ],
+    "summary": "Choisissez le gaz — Hitelecom construit le terminal autour. Le capteur de gaz personnalisé Série H prend en charge plus de 100 gaz dont CO, H₂S, NH₃, O₃ et CH₄, avec principes électrochimique, NDIR ou PID, boîtiers fixes ou en conduit, remontée 4G ou NB-IoT ; l’autonomie dépend du principe de détection et de la fréquence de transmission (conçu pour plus de 10 ans à un intervalle d’une heure dans les configurations typiques).",
+    "sku": "H200/H300/H500",
+    "applications": [
+     {
+      "name": "Mines de charbon",
+      "desc": "Surveillance CH₄ et CO en souterrain, là où les systèmes filaires sont difficiles à étendre.",
+      "img": "product/details/283-scen3.jpg"
+     },
+     {
+      "name": "Usines chimiques",
+      "desc": "Surveillance ponctuelle des gaz spécifiques au process le long des zones de production et de stockage.",
+      "img": "product/details/283-scen5.jpg"
+     },
+     {
+      "name": "Stations d’eau potable et d’assainissement",
+      "desc": "Détection H₂S dans les puisards, dégrilleurs et salles de boues.",
+      "img": "product/details/283-scen4.jpg"
+     },
+     {
+      "name": "Stockage frigorifique et réfrigération",
+      "desc": "Détection de fuites NH₃ pour les installations frigorifiques à ammoniac.",
+      "img": "product/details/270-scen5.jpg"
+     },
+     {
+      "name": "Regards et espaces confinés",
+      "desc": "Contrôles de gaz pré-entrée et continus dans les espaces confinés municipaux.",
+      "img": "product/details/283-scen1.jpg"
+     },
+     {
+      "name": "Semi-conducteurs et laboratoires",
+      "desc": "Surveillance des fuites de gaz spéciaux, adaptée au gaz exact utilisé.",
+      "img": "product/details/274-scen2.jpg"
+     }
+    ],
+    "certifications": [
+     "IP68"
+    ],
+    "faqs": [
+     {
+      "q": "Quels gaz peuvent être détectés ?",
+      "a": "Plus de 100 gaz cibles, dont CO, H₂S, NH₃, O₃, CH₄, Cl₂ et COV. La technologie de détection — électrochimique, NDIR ou PID — et la plage de mesure sont sélectionnées selon le gaz cible."
+     },
+     {
+      "q": "Comment commander un capteur de gaz personnalisé ?",
+      "a": "Indiquez à Hitelecom le gaz cible, la plage attendue, le style d’installation (fixe ou en conduit) et les conditions du site ; l’ingénierie confirme la configuration et le délai dans le cadre du programme OEM/ODM."
+     },
+     {
+      "q": "Le boîtier supporte-t-il l’installation en extérieur ?",
+      "a": "Oui. Les boîtiers fixes et en conduit couvrent la plupart des sites, et la protection IP68 est disponible en personnalisation pour les emplacements exposés en permanence."
+     },
+     {
+      "q": "Comment remonte-t-il les alarmes ?",
+      "a": "Sans fil en 4G ou NB-IoT via MQTT vers Hitelecom Cloud ou une plateforme privée, avec seuils d’alarme configurés à distance."
+     }
+    ],
+    "dateModified": "2026-09-02"
+   }
+  }
+ }
+};
 
 export const productSlugs: Record<string, string> = {
   '270': 'temperature-sensor',
@@ -29008,7 +34684,85 @@ export const listSeo: Record<Locale, Record<string, PageSeo>> =
   "title": "Sensores de rastreo de activos | GPS y BeiDou | Hitelecom",
   "desc": "Dispositivos para el rastreo de activos con GPS y BeiDou, geocercas, historial de ubicaciones y transmisión 4G o NB-IoT."
  }
-}
+},
+ fr: {
+   "261": {
+    "title": "Capteurs IoT industriels | 4G, NB-IoT et LoRa | Hitelecom",
+    "desc": "Capteurs Hitelecom : température, pression, niveau, inclinaison, vibrations et qualité de l’air, avec options 4G, NB-IoT et LoRa par modèle."
+   },
+   "263": {
+    "title": "Capteurs de température industriels | 4G et NB-IoT | Hitelecom",
+    "desc": "Capteurs de température sans fil de −200 °C à +800 °C, précision ±0,5 °C (±0,1 °C en option), remontée 4G/NB-IoT."
+   },
+   "262": {
+    "title": "Capteurs de pression sans fil | 4G et NB-IoT | Hitelecom",
+    "desc": "Capteurs de pression sans fil pour canalisations, pompes et réservoirs, plages jusqu’à 20 MPa, précision ±0,5 % FS."
+   },
+   "269": {
+    "title": "Capteurs d’humidité du sol et NPK | 4G et NB-IoT | Hitelecom",
+    "desc": "Capteurs de sol multi-paramètres : humidité, température, EC, pH et NPK, boîtier IP68 conçu pour l’enfouissement longue durée."
+   },
+   "268": {
+    "title": "Capteurs de niveau submersibles | Jusqu’à 200 m | Hitelecom",
+    "desc": "Capteurs de niveau submersibles de 0–200 m pour rivières, réservoirs et cuves, avec remontée 4G/NB-IoT, alertes de seuil et intégration Hitelecom Cloud."
+   },
+   "267": {
+    "title": "Capteurs d’inclinaison haute précision | 4G et NB-IoT | Hitelecom",
+    "desc": "Capteurs d’inclinaison sans fil (inclinomètres) pour la surveillance de la santé structurelle des bâtiments, ponts et tours."
+   },
+   "266": {
+    "title": "Capteurs de distance radar | 4G et NB-IoT | Hitelecom",
+    "desc": "Capteurs de distance radar de 0,3–50 m, précision ±1 mm, pour silos, bunkers et regards, avec remontée 4G/NB-IoT."
+   },
+   "271": {
+    "title": "Capteurs de vibrations industriels | 4G et NB-IoT | Hitelecom",
+    "desc": "Capteurs de vibrations sans fil pour machines rotatives : vitesse de vibration et amplitude de déplacement."
+   },
+   "265": {
+    "title": "Capteurs de qualité de l’air et TVOC | 4G et NB-IoT | Hitelecom",
+    "desc": "Capteurs de qualité de l’air 6-en-1 : CO₂, PM2.5, TVOC, température, humidité et pression, plus TVOC et gaz personnalisés."
+   },
+   "258": {
+    "title": "Passerelles IoT industrielles | 4G, NB-IoT et LoRa | Hitelecom",
+    "desc": "Passerelles IoT intérieures et extérieures avec liaison 4G LTE, NB-IoT et Ethernet ; certains modèles ajoutent LoRa/LoRaWAN."
+   },
+   "272": {
+    "title": "Passerelles IoT intérieures | 4G, NB-IoT et LoRa | Hitelecom",
+    "desc": "Passerelles intérieures H66 : installation plug-and-play, LoRa full-duplex 8 canaux et liaison 4G/NB-IoT/Ethernet."
+   },
+   "273": {
+    "title": "Passerelles IoT extérieures | IP68, 4G et LoRa | Hitelecom",
+    "desc": "Passerelles extérieures H68 : boîtier IP68, jusqu’à 10 km de portée LoRa en zone dégagée et liaison 4G/NB-IoT/Ethernet."
+   },
+   "257": {
+    "title": "Stations météo et hydrologie | 4G/NB-IoT | Hitelecom",
+    "desc": "Stations météorologiques et hydrologiques modulaires à 2–12 canaux pour pluie, niveau, débit et climat."
+   },
+   "274": {
+    "title": "Stations de surveillance hydrologique | Eau intelligente | Hitelecom",
+    "desc": "Stations hydrologiques combinant niveau d’eau, pluie et débit pour rivières, réservoirs et réseaux urbains."
+   },
+   "275": {
+    "title": "Stations météorologiques automatiques | 4G et NB-IoT | Hitelecom",
+    "desc": "Stations météorologiques automatiques à 2–12 capteurs : température, humidité, vent, pluie et pression."
+   },
+   "256": {
+    "title": "Produits IoT sur mesure et développement OEM/ODM | Hitelecom",
+    "desc": "Développement IoT sur mesure : capteurs, passerelles, logiciels embarqués, plateformes cloud et boîtiers."
+   },
+   "278": {
+    "title": "Logiciels IoT sur mesure | Cloud et embarqué | Hitelecom",
+    "desc": "Développement logiciel IoT sur mesure : plateformes cloud, tableaux de bord jumeau numérique, visualisation SIG et logiciel embarqué."
+   },
+   "279": {
+    "title": "Matériel IoT sur mesure | Zones dangereuses | Hitelecom",
+    "desc": "Matériel et accessoires IoT sur mesure : capteurs pour zones dangereuses, isolateurs galvaniques et boîtiers."
+   },
+   "306": {
+    "title": "Capteurs de suivi d’actifs | GPS et BeiDou | Hitelecom",
+    "desc": "Terminaux de suivi d’actifs avec positionnement GPS/BeiDou, remontée 4G, alertes de géofence et batterie multi-années pour palettes, outils et bacs consignés."
+   }
+  }
 };
 export const detailSeo: Record<Locale, Record<string, PageSeo>> =
 { ...detailSeoBase, de: {
@@ -29242,7 +34996,86 @@ export const detailSeo: Record<Locale, Record<string, PageSeo>> =
   "title": "Sensor de gas personalizado | Serie H | Hitelecom",
   "desc": "Sensor configurable para más de 100 gases, con tecnologías electroquímica, NDIR o PID, montaje fijo o en conducto y conectividad 4G o NB-IoT."
  }
-} };
+},
+ fr: {
+   "270": {
+    "title": "Capteur de température industriel | Série H | Hitelecom",
+    "desc": "Capteur de température sans fil de −200 °C à +800 °C à ±0,5 °C (±0,1 °C en option), 4G, NB-IoT ou LoRa et intégration Hitelecom Cloud."
+   },
+   "274": {
+    "title": "Capteur de pression sans fil | Série H | Hitelecom",
+    "desc": "Capteur de pression sans fil pour canalisations, pompes et réservoirs, plages de 0–1 à 20 MPa à ±0,5 % FS et remontée 4G/NB-IoT vers Hitelecom Cloud."
+   },
+   "280": {
+    "title": "Capteur de sol multi-paramètres | Série H | Hitelecom",
+    "desc": "Capteur de sol : humidité, température, EC, pH et NPK dans une seule sonde, boîtier IP68 conçu pour l’enfouissement, remontée 4G/NB-IoT vers Hitelecom Cloud."
+   },
+   "281": {
+    "title": "Capteur de niveau submersible | Jusqu’à 200 m | Hitelecom",
+    "desc": "Capteur de niveau submersible pour rivières, réservoirs et cuves, plage 0–200 m et précision ±0,5 % FS, remontée 4G/NB-IoT et intégration Hitelecom Cloud."
+   },
+   "282": {
+    "title": "Capteur d’inclinaison (inclinomètre) | Série H | Hitelecom",
+    "desc": "Capteur d’inclinaison sans fil (inclinomètre) pour la surveillance structurelle des bâtiments, ponts et tours, avec alertes et 4G/NB-IoT."
+   },
+   "283": {
+    "title": "Capteur de distance radar | 0,3–50 m | Hitelecom",
+    "desc": "Capteur de distance radar pour silos, bunkers et regards, plage 0,3–50 m et précision ±1 mm, remontée 4G ou NB-IoT vers Hitelecom Cloud."
+   },
+   "284": {
+    "title": "Capteur de vibrations sans fil | Série H | Hitelecom",
+    "desc": "Capteur de vibrations pour machines rotatives : vitesse 0–100 mm/s et amplitude de déplacement 0–1 000 µm à ±1 % (80 Hz), remontée 4G/NB-IoT."
+   },
+   "285": {
+    "title": "Capteur de qualité de l’air 6-en-1 | Série H | Hitelecom",
+    "desc": "Capteur de qualité de l’air 6-en-1 : CO₂, PM2.5, TVOC, température, humidité et pression atmosphérique, canaux de gaz en option et remontée 4G/NB-IoT."
+   },
+   "275": {
+    "title": "Passerelle IoT extérieure 4G | Série H68 | Hitelecom",
+    "desc": "Passerelle extérieure H68 : boîtier IP68, jusqu’à 10 km de portée LoRa en zone dégagée, liaison 4G/NB-IoT/Ethernet."
+   },
+   "276": {
+    "title": "Passerelle IoT intérieure | Série H66 | Hitelecom",
+    "desc": "Passerelle intérieure H66 : LoRa full-duplex 8 canaux, jusqu’à 5 km en zone dégagée, liaison 4G/NB-IoT/Ethernet et fonctions d’edge computing."
+   },
+   "277": {
+    "title": "Station de surveillance hydrologique | Série H | Hitelecom",
+    "desc": "Station hydrologique à 2–12 canaux pour niveau d’eau, pluie et débit, alimentation solaire et transmission 4G/NB-IoT vers Hitelecom Cloud."
+   },
+   "278": {
+    "title": "Station météorologique automatique | Série H | Hitelecom",
+    "desc": "Station météorologique à 2–12 capteurs : température, humidité, vent, pression et pluie, alimentation solaire et transmission 4G/NB-IoT vers Hitelecom Cloud."
+   },
+   "286": {
+    "title": "Capteur température-pression pour zones dangereuses | Hitelecom",
+    "desc": "Surveillance température et pression en zones dangereuses avec remontée 4G ou NB-IoT ; confirmez la certification avant la sélection."
+   },
+   "287": {
+    "title": "Isolateur galvanique pour zones dangereuses | H100 | Hitelecom",
+    "desc": "L’isolateur galvanique H100 fait franchir les signaux sans fil 2,4/5,8 GHz aux limites de zones dangereuses ; IP68, −40 °C à +125 °C."
+   },
+   "301": {
+    "title": "Capteur de température et d’humidité | Hitelecom",
+    "desc": "Capteur de température et d’humidité : précisions typiques ±0,2 °C et ±2 % HR, activation NFC et boîtier IP65, remontée 4G/NB-IoT vers Hitelecom Cloud."
+   },
+   "302": {
+    "title": "Enregistreur de température et d’humidité | Hitelecom",
+    "desc": "Enregistreur température-humidité stockant 80 000 relevés, configuration NFC et export USB PDF/CSV pour la chaîne du froid et la pharma."
+   },
+   "303": {
+    "title": "Capteur TVOC | Plage 0–100 000 ppb | Hitelecom",
+    "desc": "Capteur TVOC pour ateliers de peinture, stockages chimiques et laboratoires, plage 0–100 000 ppb à résolution 1 ppb et alarmes à distance en 4G ou NB-IoT."
+   },
+   "304": {
+    "title": "Capteur de suivi d’actifs | GPS et BeiDou | Hitelecom",
+    "desc": "Suivez palettes, outils et actifs consignés avec le positionnement GPS/BeiDou, les géofences, l’historique des déplacements et la remontée 4G ou NB-IoT."
+   },
+   "305": {
+    "title": "Capteur de gaz personnalisé | Série H | Hitelecom",
+    "desc": "Capteur de gaz construit autour de votre gaz cible — CO, H₂S, NH₃, O₃, CH₄ et 100+ autres — avec principes électrochimique, NDIR ou PID et remontée 4G/NB-IoT."
+   }
+  }
+};
 
 export interface MergedProductContent {
   lists: Record<string, ListPage>;

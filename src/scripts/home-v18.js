@@ -202,7 +202,17 @@
   });
 
   /* ── Quote form → Web3Forms 真实提交（未配置端点时回退 mailto） ── */
-  const isEs = document.documentElement.lang === "es";
+  const LANG = document.documentElement.lang || "en";
+  const L2 = LANG.slice(0, 2);
+  const FORM_MSG = {
+    en: { sending: "Sending your inquiry…", fail: "Submission failed. Please retry or email sales@hitelecom.cn directly.", mailto: "Opening your email application with the project brief…" },
+    zh: { sending: "正在发送您的询盘…", fail: "发送失败，请重试或直接邮件 sales@hitelecom.cn。", mailto: "正在打开邮件应用并填入项目简介…" },
+    es: { sending: "Enviando su consulta…", fail: "Error al enviar. Inténtelo de nuevo o escriba a sales@hitelecom.cn directamente.", mailto: "Abriendo su aplicación de correo con la descripción del proyecto…" },
+    de: { sending: "Ihre Anfrage wird gesendet…", fail: "Senden fehlgeschlagen. Bitte erneut versuchen oder direkt an sales@hitelecom.cn schreiben.", mailto: "Ihr E-Mail-Programm wird mit der Projektbeschreibung geöffnet…" },
+    ja: { sending: "お問い合わせを送信中…", fail: "送信に失敗しました。再試行するか、sales@hitelecom.cn まで直接メールしてください。", mailto: "プロジェクト概要をメールアプリで開いています…" },
+    fr: { sending: "Envoi de votre demande…", fail: "L’envoi a échoué. Réessayez ou écrivez directement à sales@hitelecom.cn.", mailto: "Ouverture de votre application e-mail avec le brief projet…" },
+  };
+  const fm = FORM_MSG[L2] || FORM_MSG.en;
   const form = document.getElementById("quote-form");
   const formStatus = document.getElementById("form-status");
   if (form) {
@@ -219,7 +229,7 @@
         `Product interest: ${product}`, "", "Project brief:", message
       ].join("\n");
       /* 语言前缀：/zh、/es 页面跳对应语言的感谢页 */
-      const pre = (location.pathname.match(/^\/(zh|es)(?=\/|$)/) || [""])[0];
+      const pre = (location.pathname.match(/^\/(zh|es|de|ja|fr)(?=\/|$)/) || [""])[0];
       if (window.HITE_FORM_ENDPOINT && window.HITE_FORM_KEY) {
         const fd = new FormData();
         fd.append("access_key", window.HITE_FORM_KEY);
@@ -228,12 +238,12 @@
         fd.append("name", String(name));
         fd.append("email", String(email));
         fd.append("message", lines);
-        if (formStatus) formStatus.textContent = isEs ? "Enviando su consulta…" : "Sending your inquiry…";
+        if (formStatus) formStatus.textContent = fm.sending;
         fetch(window.HITE_FORM_ENDPOINT, { method: "POST", body: fd, headers: { Accept: "application/json" } })
           .then(r => { const t = `${pre}/about/thanks`; window.location.href = r.ok ? t : `${t}?sent=0`; })
-          .catch(() => { if (formStatus) formStatus.textContent = isEs ? "Error al enviar. Inténtelo de nuevo o escriba a sales@hitelecom.cn directamente." : "Submission failed. Please retry or email sales@hitelecom.cn directly."; });
+          .catch(() => { if (formStatus) formStatus.textContent = fm.fail; });
       } else {
-        if (formStatus) formStatus.textContent = isEs ? "Abriendo su aplicación de correo con la descripción del proyecto…" : "Opening your email application with the project brief…";
+        if (formStatus) formStatus.textContent = fm.mailto;
         window.location.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines)}`;
       }
     });

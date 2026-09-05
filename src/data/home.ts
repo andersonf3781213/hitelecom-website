@@ -1138,6 +1138,228 @@ const ja: typeof en = {
   },
 };
 
+const fr: typeof en = {
+  nav: [
+    { label: 'Accueil', href: '/' },
+    { label: 'Produits', href: '/product/' },
+    { label: 'Solutions', href: '/solution/' },
+    { label: 'Support', href: '/service/' },
+    { label: 'Actualités', href: '/news/' },
+    { label: 'À propos', href: '/about/' },
+  ],
+  langSwitch: { label: 'Chinese', href: '/zh' },
+  showOnline: 'Voir la démo cloud',
+  searchPlaceholder: 'Rechercher des produits, solutions, actualités…',
+
+  hero: {
+    slides: [
+      {
+        eyebrow: 'CAPTEURS IoT INDUSTRIELS',
+        title: 'Terminaux de capteurs basse consommation',
+        desc: 'Terminaux de capteurs 4G, NB-IoT et LoRa sur batterie pour une surveillance à distance de longue durée.',
+        cta: 'Découvrir les capteurs',
+        href: '/product/lists/cid/261#cate',
+        bg: 'hero/bg-sensors.jpg',
+        device: 'hero/device-sensors.png',
+        deviceAlt: 'Capteurs IoT ultra-basse consommation Hitelecom',
+      },
+      {
+        eyebrow: 'PASSERELLES IoT',
+        title: 'Durables et fiables',
+        desc: 'Reliez les réseaux de capteurs LoRa au cloud via 4G LTE ou Ethernet, avec mises à jour OTA à distance.',
+        cta: 'Découvrir les passerelles',
+        href: '/product/lists/cid/258#cate',
+        bg: 'hero/bg-gateways.jpg',
+        device: 'hero/device-gateways.png',
+        deviceAlt: 'Passerelles IoT industrielles Hitelecom',
+      },
+      {
+        eyebrow: 'PLATEFORME CLOUD IoT',
+        title: 'Surveillance à distance',
+        desc: 'Connectez, surveillez, analysez et gérez les appareils de terrain depuis une seule plateforme cloud.',
+        cta: 'Découvrir le cloud IoT',
+        href: '/product/#cate',
+        bg: 'hero/bg-cloud.jpg',
+        device: 'hero/device-cloud.png',
+        deviceAlt: 'Tableau de bord de la plateforme cloud Hitelecom',
+      },
+    ] as HeroSlide[],
+  },
+
+  intro: {
+    title: 'L’IoT industriel, du capteur au cloud',
+    subtitle:
+      'Hitelecom conçoit et fabrique des capteurs IoT industriels, des passerelles et des solutions de surveillance connectées au cloud. Nous prenons en charge 4G LTE, NB-IoT, LoRa/LoRaWAN, l’intégration aux plateformes clients, le déploiement privé et le développement OEM/ODM.',
+    features: [
+      { icon: 'features/icon-sensors.png', title: 'Capteurs IoT', desc: 'Mesurez la température, l’humidité, la pression, la qualité de l’air et d’autres grandeurs de terrain.' },
+      { icon: 'features/icon-controllers.png', title: 'Contrôleurs IoT', desc: 'Traitement local des données et contrôle des équipements connectés.' },
+      { icon: 'features/icon-cloud.png', title: 'Cloud IoT', desc: 'Connectez, surveillez, configurez et maintenez les appareils à distance.' },
+      { icon: 'features/icon-gateways.png', title: 'Passerelles IoT', desc: 'Reliez les appareils de terrain au cloud ou à des plateformes privées.' },
+      { icon: 'features/icon-customized.png', title: 'Développement IoT sur mesure', desc: 'Matériel, firmware, boîtiers et intégration de plateforme personnalisés.' },
+      { icon: 'features/icon-app.png', title: 'Application IoT', desc: 'Configurez les appareils, surveillez les données, recevez des alertes et gérez les mises à jour à distance.' },
+    ] as Feature[],
+  },
+
+  showcase: [
+    {
+      title: 'Plateforme cloud',
+      desc: 'Une plateforme IoT cloud-native pour la connectivité des appareils, la gestion à distance, la visualisation des données, les alertes et l’intégration applicative.',
+      cta: 'Découvrir le cloud IoT',
+      href: '/product/',
+      image: 'sections/cloud-platform.png',
+      imageAlt: 'Illustration de la plateforme IoT cloud-native Hitelecom',
+      reverse: false,
+    },
+    {
+      title: 'Passerelles IoT',
+      desc: 'Reliez les capteurs au cloud avec conversion de protocoles, agrégation des données et traitement edge en option.',
+      cta: 'Découvrir les passerelles',
+      href: '/product/lists/cid/258#cate',
+      image: 'sections/iot-gateways.jpg',
+      imageAlt: 'Les passerelles IoT Hitelecom relient les capteurs au cloud',
+      reverse: true,
+    },
+    {
+      title: 'Capteurs IoT',
+      desc: 'Mesurez la température, l’humidité, la pression, les vibrations, le mouvement, la qualité de l’air et d’autres grandeurs physiques.',
+      cta: 'Découvrir les capteurs',
+      href: '/product/lists/cid/261#cate',
+      image: 'sections/iot-sensors.jpg',
+      imageAlt: 'Capteurs IoT Hitelecom pour la collecte de données',
+      reverse: false,
+    },
+  ] as ShowcaseItem[],
+
+  solutions: {
+    title: 'Découvrez nos solutions IoT',
+    subtitle:
+      'Surveillez les conditions de terrain en temps réel, automatisez les réponses et prenez des décisions opérationnelles plus rapides grâce aux capteurs connectés et aux données cloud.',
+    items: [
+      { icon: 'solutions/icon-energy.png', label: 'Surveillance industrielle', href: '/solution/show/id/58' },
+      { icon: 'solutions/icon-agriculture.png', label: 'Agriculture intelligente', href: '/solution/show/id/65' },
+      { icon: 'solutions/icon-campus.png', label: 'Gestion intelligente de l’eau', href: '/solution/show/id/67' },
+      { icon: 'solutions/icon-healthcare.png', label: 'Énergie intelligente', href: '/solution/show/id/59' },
+      { icon: 'solutions/icon-industrial.png', label: 'Ville intelligente', href: '/solution/show/id/57' },
+      { icon: 'solutions/icon-building.png', label: 'Parcs industriels intelligents', href: '/solution/show/id/60' },
+    ] as SolutionItem[],
+  },
+
+  news: {
+    title: 'Centre d’actualités',
+    subtitle:
+      'Nouvelles de l’entreprise, lancements de produits, analyses sectorielles et événements à venir de Hitelecom.',
+    cta: 'Voir toutes les actualités',
+    moreHref: '/news/',
+    items: [
+      {
+        image: 'news/news-iote-2024.png',
+        imageAlt: 'Hitelecom au salon international IoT IOTE 2024 Shenzhen',
+        source: 'Hitelecom',
+        date: '2024.08.28',
+        title: 'Hitelecom expose à IOTE Shenzhen 2024',
+        excerpt:
+          'Le 22e salon international de l’IoT (IOTE 2024) Shenzhen se tiendra du 28 au 30 août 2024 au Shenzhen World Exhibition & Convention Center (Bao’an). En tant que fournisseur professionnel de produits et services IoT, Hitelecom présentera ses solutions IoT au stand 10B33 du hall 10.',
+        href: '/news/show/id/1377',
+      },
+      {
+        image: 'news/news-pipeline.png',
+        imageAlt: 'Investissement dans les réseaux souterrains',
+        source: 'Hitelecom',
+        date: '2024.03.09',
+        title: 'La Chine planifie une modernisation majeure des réseaux souterrains urbains',
+        excerpt:
+          'Le 9 mars 2024, lors de la conférence de presse sur le bien-être de la population tenue pendant la deuxième session du 14e Congrès national du peuple, il a été annoncé que plus de 100 000 kilomètres de canalisations souterraines seraient rénovés et que des projets de lutte contre les inondations seraient lancés dans 100 villes.',
+        href: '/news/show/id/1379',
+      },
+      {
+        image: 'news/news-iso9001.jpg',
+        imageAlt: 'Certification qualité ISO 9001 de Hitelecom',
+        source: 'Hitelecom',
+        date: '2023.08.28',
+        title: 'Hitelecom obtient la certification ISO 9001',
+        excerpt:
+          'Hitelecom a obtenu la certification du système de management de la qualité ISO 9001, couvrant la conception et la fabrication de produits de capteurs IoT.',
+        href: '/news/show/id/1357',
+      },
+    ] as NewsItem[],
+  },
+
+  partners: {
+    title: 'Partenaires',
+    subtitle:
+      'Nous collaborons avec des partenaires technologiques et de distribution pour des déploiements IoT fiables dans le monde entier.',
+  },
+
+  cta: {
+    title: 'Construisez votre solution IoT avec Hitelecom',
+    subtitle:
+      'Des capteurs et de la connectivité à l’intégration cloud et au développement OEM/ODM, nous transformons les données de terrain en solutions déployables.',
+    primary: { label: 'Voir la démo cloud', href: 'http://cloud.hitelecom.com/' },
+    secondary: { label: 'Discuter de votre projet', href: '/about/contact' },
+  },
+
+  footer: {
+    columns: [
+      {
+        title: 'PRODUITS',
+        links: [
+          { label: 'Cloud IoT', href: '/product/' },
+          { label: 'Application IoT', href: '/product/app' },
+          { label: 'Capteurs IoT', href: '/product/lists/cid/261' },
+          { label: 'Passerelles IoT', href: '/product/lists/cid/258' },
+          { label: 'Station météorologique', href: '/product/lists/cid/257' },
+          { label: 'Développement sur mesure', href: '/product/lists/cid/256' },
+        ],
+      },
+      {
+        title: 'SOLUTIONS',
+        links: [
+          { label: 'IoT industriel', href: '/solution/show/id/58' },
+          { label: 'Agriculture intelligente', href: '/solution/show/id/65' },
+          { label: 'Campus intelligent', href: '/solution/show/id/64' },
+          { label: 'Parcs industriels intelligents', href: '/solution/show/id/60' },
+          { label: 'Énergie intelligente', href: '/solution/show/id/59' },
+          { label: 'Ville intelligente', href: '/solution/show/id/57' },
+          { label: 'Tourisme et sites patrimoniaux', href: '/solution/show/id/66' },
+          { label: 'Gestion intelligente de l’eau', href: '/solution/show/id/67' },
+        ],
+      },
+      {
+        title: 'SUPPORT',
+        links: [
+          { label: 'Support technique', href: '/service/#page1' },
+          { label: 'Logiciels', href: '/service/#page2' },
+          { label: 'Téléchargements', href: '/service/#page3' },
+          { label: 'Service après-vente', href: '/service/#page4' },
+        ],
+      },
+      {
+        title: 'ACTUALITÉS',
+        links: [
+          { label: 'Actualités de l’entreprise', href: '/news/' },
+          { label: 'Salons', href: '/news/index/cid/81' },
+          { label: 'Actualités du secteur', href: '/news/index/cid/80' },
+          { label: 'FAQ', href: '/news/faqs' },
+        ],
+      },
+      {
+        title: 'À PROPOS',
+        links: [
+          { label: 'Présentation de l’entreprise', href: '/about/' },
+          { label: 'Qualité et fiabilité', href: '/about/quality' },
+          { label: 'Partenaires', href: '/about/partner' },
+          { label: 'Carrières', href: '/about/joinus' },
+          { label: 'Nous contacter', href: '/about/contact' },
+        ],
+      },
+    ],
+    contactTitle: 'CONTACT',
+    followTitle: 'SUIVEZ-NOUS',
+    copyright: `© 2018–2026 ${site.companyEn} Tous droits réservés.`,
+  },
+};
+
+
 /** 合作伙伴 LOGO 墙（双语共用，替换 src/assets/images/partners/ 同名文件即可） */
 export const partnerLogos = [
   { img: 'partners/logo-01.jpg', alt: 'Huawei' },
@@ -1163,5 +1385,5 @@ export const partnerLogos = [
   { img: 'partners/logo-21.jpg', alt: '3M' },
 ];
 
-export const homeContent = { en, zh, es, de, ja } as const;
+export const homeContent = { en, zh, es, de, ja, fr } as const;
 export type HomeContent = (typeof homeContent)['en'];

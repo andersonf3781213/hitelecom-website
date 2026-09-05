@@ -1810,7 +1810,64 @@ export const solutionIndex: Record<Locale, { bannerImg: string; bannerSub: strin
    "desc": "Monitoree el nivel del agua, la presión, el caudal, las fugas y las condiciones ambientales en embalses, estaciones de bombeo, tuberías y redes de drenaje."
   }
  ]
-} };
+}
+,
+ fr: {
+  "bannerImg": "solution/index-banner.jpg",
+  "bannerSub": "",
+  "bannerTitle": "SOLUTIONS",
+  "cards": [
+   {
+    "id": "58",
+    "img": "solution/card-58.jpg",
+    "title": "IoT industriel",
+    "desc": "Connectez capteurs de température, pression, vibrations, qualité de l’air et autres grandeurs de terrain à des tableaux de bord cloud pour la surveillance d’état à distance, les alertes et la planification de la maintenance."
+   },
+   {
+    "id": "65",
+    "img": "solution/card-65.jpg",
+    "title": "Agriculture intelligente",
+    "desc": "Surveillez humidité du sol, température, EC, NPK, météo et conditions d’irrigation pour une gestion de l’eau et des cultures fondée sur les données."
+   },
+   {
+    "id": "64",
+    "img": "solution/card-64.png",
+    "title": "Campus intelligent",
+    "desc": "Surveillez air intérieur, température, humidité, consommation d’énergie et installations critiques depuis une plateforme centralisée avec alertes configurables."
+   },
+   {
+    "id": "60",
+    "img": "solution/card-60.jpg",
+    "title": "Parcs industriels intelligents",
+    "desc": "Reliez les données environnementales, énergétiques, de sécurité et d’équipements des sites multi-bâtiments pour une surveillance et une exploitation centralisées."
+   },
+   {
+    "id": "59",
+    "img": "solution/card-59.png",
+    "title": "Énergie intelligente",
+    "desc": "Surveillez température, pression, vibrations et niveau sur les actifs énergétiques pour la maintenance conditionnelle et moins de visites sur site."
+   },
+   {
+    "id": "57",
+    "img": "solution/card-57.jpg",
+    "title": "Ville intelligente",
+    "desc": "Surveillez inclinaison des structures, conditions environnementales, actifs des utilités et infrastructures publiques via des terminaux de capteurs extérieurs et des alertes cloud."
+   },
+   {
+    "id": "66",
+    "img": "solution/card-66b.jpg",
+    "title": "Tourisme et sites patrimoniaux",
+    "desc": "Surveillez l’inclinaison des structures, les conditions environnementales, la fumée, le flux de visiteurs et certains actifs pour soutenir la conservation et l’exploitation du site."
+   },
+   {
+    "id": "67",
+    "img": "solution/card-67.jpg",
+    "title": "Gestion intelligente de l’eau",
+    "desc": "Surveillez niveau d’eau, pression, débit, fuites et conditions environnementales sur réservoirs, stations de pompage, canalisations et réseaux de drainage."
+   }
+  ]
+ }
+};
 export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
 { ...solutionDetailsBase, de: {
  "58": {
@@ -4017,7 +4074,745 @@ export const solutionDetails: Record<Locale, Record<string, SolutionDetail>> =
    }
   ]
  }
-} };
+}
+,
+ fr: {
+  "58": {
+   "id": "58",
+   "banner": "solution/58-banner-0.jpg",
+   "intro": [
+    {
+     "img": "solution/58-intro-0.jpg",
+     "h": "Défis du secteur",
+     "p": "Les fabricants subissent la pression des coûts, les arrêts non planifiés et une visibilité limitée sur l’état des équipements. L’IoT industriel y répond en reliant les capteurs de terrain à des tableaux de bord cloud pour une surveillance continue, une réponse plus rapide et des décisions fondées sur les données."
+    },
+    {
+     "img": "solution/58-intro-1.jpg",
+     "h": "Présentation de la solution",
+     "p": "La solution de surveillance industrielle Hitelecom relie les capteurs de température, d’humidité, de pression, de vibrations et de qualité de l’air des équipements de production à Hitelecom Cloud. Les équipes voient l’état des équipements en temps réel depuis un centre de surveillance ou l’application mobile, reçoivent des alertes en cas d’anomalie et planifient la maintenance selon l’état plutôt que le calendrier."
+    }
+   ],
+   "archHeading": "Architecture de la solution",
+   "archImgs": [
+    "solution/58-arch-0.png"
+   ],
+   "featHeading": "Avantages clés",
+   "features": [
+    {
+     "h": "Conception basse consommation",
+     "p": "Certains terminaux de capteurs utilisent des processeurs basse consommation, une gestion optimisée de l’alimentation et des intervalles de transmission configurables pour prolonger l’autonomie sur site."
+    },
+    {
+     "h": "Options prêtes pour l’extérieur",
+     "p": "Certains modèles sont disponibles avec des boîtiers à indice IP pour les environnements industriels et extérieurs. Confirmez l’indice de protection requis pour chaque configuration."
+    },
+    {
+     "h": "Connectivité flexible",
+     "p": "Choisissez 4G LTE ou NB-IoT pour la remontée cellulaire directe, ou LoRa/LoRaWAN pour les réseaux privés via passerelle, selon le modèle et le site."
+    },
+    {
+     "h": "Configuration NFC",
+     "p": "Certains appareils prennent en charge l’activation NFC et la configuration locale pour un déploiement et une maintenance plus rapides."
+    }
+   ],
+   "sysHeading": "Capacités du système",
+   "system": [
+    {
+     "img": "solution/58-sys-0.png",
+     "h": "Configuration à distance",
+     "p": "Configurez les appareils pris en charge par lots : intervalles de transmission, seuils et paramètres propres au déploiement."
+    },
+    {
+     "img": "solution/58-sys-1.png",
+     "h": "Surveillance en temps réel",
+     "p": "Hitelecom collecte les données via des capteurs et les transmet à la plateforme cloud pour analyse. La plateforme analyse les tendances et signale les relevés anormaux, aidant les équipes à planifier la maintenance et à réduire les arrêts."
+    },
+    {
+     "img": "solution/58-sys-2.png",
+     "h": "Automatisation par règles",
+     "p": "Les contrôleurs agissent sur les données des capteurs selon des règles configurées, permettant des réponses automatisées entre appareils et sites."
+    },
+    {
+     "img": "solution/58-sys-3.png",
+     "h": "Mises à jour firmware à distance",
+     "p": "Prend en charge les mises à jour firmware OTA à distance en lot pour les appareils compatibles, gardant les déploiements à jour et réduisant les visites sur site."
+    }
+   ],
+   "relHeading": "Produits associés",
+   "related": [
+    "270",
+    "274",
+    "280",
+    "281"
+   ],
+   "scenHeading": "Applications",
+   "scenarios": [
+    {
+     "img": "solution/58-scen-0.jpg",
+     "h": "Industrie 4.0",
+     "p": "Gestion de production fondée sur les données et support de l’automatisation"
+    },
+    {
+     "img": "solution/58-scen-1.jpg",
+     "h": "Surveillance de process",
+     "p": "Surveillance en temps réel, contrôle précis, automatisation renforcée"
+    },
+    {
+     "img": "solution/58-scen-2.jpg",
+     "h": "Industrie pétrolière et gazière",
+     "p": "Surveillance à distance et gestion intelligente de la production pétrolière"
+    },
+    {
+     "img": "solution/58-scen-3.jpg",
+     "h": "Incinération des déchets",
+     "p": "Optimisez le contrôle du processus d’incinération, améliorez l’efficacité énergétique et réduisez la pollution environnementale."
+    },
+    {
+     "img": "solution/58-scen-4.jpg",
+     "h": "Machines lourdes",
+     "p": "La surveillance d’état améliore l’efficacité de la maintenance et l’utilisation des ressources"
+    },
+    {
+     "img": "solution/58-scen-5.jpg",
+     "h": "Installations industrielles",
+     "p": "La surveillance centralisée réduit les pannes et les arrêts non planifiés"
+    }
+   ]
+  },
+  "65": {
+   "id": "65",
+   "banner": "solution/65-banner-0.jpg",
+   "intro": [
+    {
+     "img": "solution/65-intro-0.jpg",
+     "h": "Défis du secteur",
+     "p": "L’agriculture intelligente applique la détection connectée pour rendre les exploitations plus productives et économes en ressources. Face aux terres limitées, à la variabilité climatique et à la pression des ravageurs, les exploitants peuvent combiner capteurs IoT, données météo et analyses cloud pour une irrigation et une gestion des cultures mieux informées. Hitelecom fournit la couche de détection terrain et de connectivité de ces systèmes."
+    },
+    {
+     "img": "solution/65-intro-1.jpg",
+     "h": "Présentation de la solution",
+     "p": "La solution d’agriculture intelligente Hitelecom combine capteurs de sol, stations météo et capteurs de température et d’humidité, qui téléversent les données de terrain vers le cloud pour une surveillance et une analyse centralisées. Les exploitants obtiennent une visibilité continue des conditions au champ pour les décisions d’irrigation, de fertilisation et de gestion des cultures."
+    }
+   ],
+   "archHeading": "Architecture de la solution",
+   "archImgs": [
+    "solution/65-arch-0.png"
+   ],
+   "featHeading": "Avantages clés",
+   "features": [
+    {
+     "h": "Configuration NFC",
+     "p": "Certains appareils prennent en charge l’activation NFC et la configuration locale pour un déploiement et une maintenance plus rapides."
+    },
+    {
+     "h": "Connectivité flexible",
+     "p": "Choisissez 4G LTE ou NB-IoT pour la remontée cellulaire directe, ou LoRa/LoRaWAN pour les réseaux privés via passerelle, selon le modèle et le site."
+    },
+    {
+     "h": "Options prêtes pour l’extérieur",
+     "p": "Certains modèles sont disponibles avec des boîtiers à indice IP pour les environnements industriels et extérieurs. Confirmez l’indice de protection requis pour chaque configuration."
+    },
+    {
+     "h": "Conception basse consommation",
+     "p": "Certains terminaux de capteurs utilisent des processeurs basse consommation, une gestion optimisée de l’alimentation et des intervalles de transmission configurables pour prolonger l’autonomie sur site."
+    }
+   ],
+   "sysHeading": "Capacités du système",
+   "system": [
+    {
+     "img": "solution/65-sys-0.png",
+     "h": "Irrigation de précision",
+     "p": "Les données d’humidité du sol et météo aident les exploitants à ajuster le calendrier et le volume d’irrigation."
+    },
+    {
+     "img": "solution/65-sys-1.png",
+     "h": "Alertes de seuil",
+     "p": "Des alertes se déclenchent lorsque les seuils configurés sont dépassés — par exemple l’humidité du sol ou la température — pour que les équipes interviennent avant que les cultures ne subissent de stress."
+    },
+    {
+     "img": "solution/65-sys-2.png",
+     "h": "Surveillance en temps réel",
+     "p": "Hitelecom collecte les données via des capteurs et les transmet à la plateforme cloud pour analyse. La plateforme analyse les tendances et signale les relevés anormaux, donnant aux exploitants des informations opportunes pour l’irrigation et les décisions au champ."
+    },
+    {
+     "img": "solution/65-sys-3.png",
+     "h": "Mises à jour firmware à distance",
+     "p": "Prend en charge les mises à jour firmware OTA à distance en lot pour les appareils compatibles, gardant les déploiements à jour et réduisant les visites sur site."
+    }
+   ],
+   "relHeading": "Produits associés",
+   "related": [
+    "275",
+    "276",
+    "280",
+    "281"
+   ],
+   "scenHeading": "Applications",
+   "scenarios": [
+    {
+     "img": "solution/65-scen-0.jpg",
+     "h": "Culture en serre",
+     "p": "Mise en œuvre d’une gestion intelligente des cultures en serre"
+    },
+    {
+     "img": "solution/65-scen-1.jpg",
+     "h": "Ranch intelligent",
+     "p": "Surveillance en temps réel et gestion de la santé et du comportement du bétail"
+    },
+    {
+     "img": "solution/65-scen-2.jpg",
+     "h": "Exploitation connectée",
+     "p": "Capteurs connectés et analyse de données au service de l’irrigation de précision et de la gestion des cultures"
+    },
+    {
+     "img": "solution/65-scen-3.jpg",
+     "h": "Élevage de volailles",
+     "p": "Surveillance de la santé et du comportement des volailles pour améliorer l’efficacité et la qualité de l’élevage"
+    },
+    {
+     "img": "solution/65-scen-4.jpg",
+     "h": "Aquaculture marine",
+     "p": "Surveillance et gestion environnementales pour l’aquaculture marine"
+    }
+   ]
+  },
+  "64": {
+   "id": "64",
+   "banner": "solution/64-banner-0.jpg",
+   "intro": [
+    {
+     "img": "solution/64-intro-0.png",
+     "h": "Défis du secteur",
+     "p": "Les équipes de campus gèrent qualité de l’air intérieur, température et humidité, consommation d’énergie, utilités et systèmes de sécurité sur de nombreux bâtiments. Les inspections manuelles et les systèmes isolés limitent la visibilité en temps utile."
+    },
+    {
+     "img": "solution/64-intro-1.jpg",
+     "h": "Présentation de la solution",
+     "p": "Hitelecom combine capteurs environnementaux, passerelles et intégration cloud pour centraliser la surveillance du campus. Les administrateurs peuvent consulter les conditions, configurer les alertes et relier les données prises en charge aux plateformes existantes."
+    }
+   ],
+   "archHeading": "Architecture de la solution",
+   "archImgs": [
+    "solution/64-arch-0.png"
+   ],
+   "featHeading": "Avantages clés",
+   "features": [
+    {
+     "h": "Connectivité flexible",
+     "p": "Choisissez 4G LTE ou NB-IoT pour la remontée cellulaire directe, ou LoRa/LoRaWAN pour les réseaux privés via passerelle, selon le modèle et le site."
+    },
+    {
+     "h": "Configuration NFC",
+     "p": "Certains appareils prennent en charge l’activation NFC et la configuration locale pour un déploiement et une maintenance plus rapides."
+    },
+    {
+     "h": "Options prêtes pour l’extérieur",
+     "p": "Certains modèles sont disponibles avec des boîtiers à indice IP pour les environnements industriels et extérieurs. Confirmez l’indice de protection requis pour chaque configuration."
+    },
+    {
+     "h": "Conception basse consommation",
+     "p": "Certains terminaux de capteurs utilisent des processeurs basse consommation, une gestion optimisée de l’alimentation et des intervalles de transmission configurables pour prolonger l’autonomie sur site."
+    }
+   ],
+   "sysHeading": "Capacités du système",
+   "system": [
+    {
+     "img": "solution/64-sys-0.png",
+     "h": "Règles de contrôle automatisé",
+     "p": "Les règles ajustent les équipements connectés — par exemple le refroidissement — lorsque les relevés franchissent les seuils configurés, sans intervention manuelle."
+    },
+    {
+     "img": "solution/64-sys-2.png",
+     "h": "Surveillance en temps réel",
+     "p": "Hitelecom collecte les données via des capteurs et les transmet à la plateforme cloud pour analyse. La plateforme analyse les tendances et signale les relevés anormaux, aidant les administrateurs à suivre l’état des installations et à réagir aux alertes."
+    },
+    {
+     "img": "solution/64-sys-3.png",
+     "h": "Notification d’alarme",
+     "p": "Configurez et gérez les alertes de manière centralisée, avec déclencheurs multi-conditions et workflows d’escalade pour les déploiements pris en charge."
+    }
+   ],
+   "relHeading": "Produits associés",
+   "related": [
+    "284",
+    "283",
+    "274",
+    "270",
+    "285"
+   ],
+   "scenHeading": "Applications",
+   "scenarios": [
+    {
+     "img": "solution/64-scen-0.jpg",
+     "h": "Exploitation du campus",
+     "p": "Surveillez consommation d’énergie, qualité de l’air intérieur et état des installations sur les bâtiments du campus"
+    },
+    {
+     "img": "solution/64-scen-1.jpg",
+     "h": "Sécurité du campus",
+     "p": "La surveillance en temps réel renforce la sécurité du campus et la réponse d’urgence"
+    },
+    {
+     "img": "solution/64-scen-2.jpg",
+     "h": "Salles de formation et laboratoires",
+     "p": "Surveillez les conditions environnementales et les équipements des laboratoires et ateliers avec des alertes configurables"
+    }
+   ]
+  },
+  "60": {
+   "id": "60",
+   "banner": "solution/60-banner-0.jpg",
+   "intro": [
+    {
+     "img": "solution/60-intro-0.jpg",
+     "h": "Défis du secteur",
+     "p": "Les exploitants de parcs industriels gèrent conditions environnementales, utilités, systèmes de sécurité, équipements et actifs sur plusieurs bâtiments. Des systèmes déconnectés rendent difficiles l’identification des conditions anormales et la coordination de la maintenance."
+    },
+    {
+     "img": "solution/60-intro-1.jpg",
+     "h": "Présentation de la solution",
+     "p": "Hitelecom relie capteurs et passerelles par modèle à une plateforme de surveillance centrale, offrant aux exploitants une vue unique des données environnementales, énergétiques, de sécurité et d’actifs. Alertes configurables et API s’intègrent aux workflows de gestion de parc existants."
+    }
+   ],
+   "archHeading": "Architecture de la solution",
+   "archImgs": [
+    "solution/60-arch-0.png"
+   ],
+   "featHeading": "Avantages clés",
+   "features": [
+    {
+     "h": "Conception basse consommation",
+     "p": "Certains terminaux de capteurs utilisent des processeurs basse consommation, une gestion optimisée de l’alimentation et des intervalles de transmission configurables pour prolonger l’autonomie sur site."
+    },
+    {
+     "h": "Configuration NFC",
+     "p": "Certains appareils prennent en charge l’activation NFC et la configuration locale pour un déploiement et une maintenance plus rapides."
+    },
+    {
+     "h": "Options prêtes pour l’extérieur",
+     "p": "Certains modèles sont disponibles avec des boîtiers à indice IP pour les environnements industriels et extérieurs. Confirmez l’indice de protection requis pour chaque configuration."
+    },
+    {
+     "h": "Connectivité flexible",
+     "p": "Choisissez 4G LTE ou NB-IoT pour la remontée cellulaire directe, ou LoRa/LoRaWAN pour les réseaux privés via passerelle, selon le modèle et le site."
+    }
+   ],
+   "sysHeading": "Capacités du système",
+   "system": [
+    {
+     "img": "solution/60-sys-0.png",
+     "h": "Configuration à distance",
+     "p": "Configurez les appareils pris en charge par lots : intervalles de transmission, seuils et paramètres propres au déploiement."
+    },
+    {
+     "img": "solution/60-sys-1.png",
+     "h": "Localisation des pannes",
+     "p": "Les diagnostics aident les équipes à localiser les appareils défaillants, réduire les délais de réparation et visualiser l’état des appareils sur une carte."
+    },
+    {
+     "img": "solution/60-sys-2.png",
+     "h": "Automatisation par règles",
+     "p": "Les contrôleurs agissent sur les données des capteurs selon des règles configurées, permettant des réponses automatisées entre appareils et sites."
+    },
+    {
+     "img": "solution/60-sys-3.png",
+     "h": "Mises à jour firmware à distance",
+     "p": "Prend en charge les mises à jour firmware OTA à distance en lot pour les appareils compatibles, gardant les déploiements à jour et réduisant les visites sur site."
+    }
+   ],
+   "relHeading": "Produits associés",
+   "related": [
+    "280",
+    "281",
+    "291",
+    "290"
+   ],
+   "scenHeading": "Applications",
+   "scenarios": [
+    {
+     "img": "solution/60-scen-0.jpg",
+     "h": "Parc industriel",
+     "p": "Améliorer l’efficacité de production et la gestion de précision des installations et équipements"
+    },
+    {
+     "img": "solution/60-scen-1.jpg",
+     "h": "Bâtiments commerciaux",
+     "p": "Mise en œuvre de l’automatisation du bâtiment et de l’optimisation de l’efficacité énergétique"
+    },
+    {
+     "img": "solution/60-scen-2.jpg",
+     "h": "Immeubles de bureaux",
+     "p": "Gestion et exploitation intelligentes pour les environnements de bureau modernes"
+    }
+   ]
+  },
+  "59": {
+   "id": "59",
+   "banner": "solution/59-banner-0.jpg",
+   "intro": [
+    {
+     "img": "solution/59-intro-0.png",
+     "h": "Défis du secteur",
+     "p": "Les exploitants énergétiques ont besoin d’une visibilité rapide sur la température, la pression, les vibrations et le niveau d’actifs géographiquement dispersés. Les inspections périodiques peuvent laisser des défauts naissants invisibles et exigent des visites coûteuses. Capteurs connectés et alertes à distance aident les équipes à prioriser inspection et maintenance."
+    },
+    {
+     "img": "solution/59-intro-1.jpg",
+     "h": "Présentation de la solution",
+     "p": "Hitelecom combine capteurs par modèle, passerelles, connectivité cellulaire ou LoRaWAN et intégration cloud pour la surveillance d’état à distance. Les données peuvent être envoyées vers Hitelecom Cloud ou une plateforme cliente via MQTT ou des API, selon la configuration choisie."
+    }
+   ],
+   "archHeading": "Architecture de la solution",
+   "archImgs": [
+    "solution/59-arch-0.png"
+   ],
+   "featHeading": "Avantages clés",
+   "features": [
+    {
+     "h": "Configuration NFC",
+     "p": "Certains appareils prennent en charge l’activation NFC et la configuration locale pour un déploiement et une maintenance plus rapides."
+    },
+    {
+     "h": "Connectivité flexible",
+     "p": "Choisissez 4G LTE ou NB-IoT pour la remontée cellulaire directe, ou LoRa/LoRaWAN pour les réseaux privés via passerelle, selon le modèle et le site."
+    },
+    {
+     "h": "Options prêtes pour l’extérieur",
+     "p": "Certains modèles sont disponibles avec des boîtiers à indice IP pour les environnements industriels et extérieurs. Confirmez l’indice de protection requis pour chaque configuration."
+    },
+    {
+     "h": "Conception basse consommation",
+     "p": "Certains terminaux de capteurs utilisent des processeurs basse consommation, une gestion optimisée de l’alimentation et des intervalles de transmission configurables pour prolonger l’autonomie sur site."
+    }
+   ],
+   "sysHeading": "Capacités du système",
+   "system": [
+    {
+     "img": "solution/59-sys-0.png",
+     "h": "Configuration à distance",
+     "p": "Configurez les appareils pris en charge par lots : intervalles de transmission, seuils et paramètres propres au déploiement."
+    },
+    {
+     "img": "solution/59-sys-1.png",
+     "h": "Règles de contrôle automatisé",
+     "p": "Les règles ajustent les équipements connectés — par exemple le refroidissement — lorsque les relevés franchissent les seuils configurés, sans intervention manuelle."
+    },
+    {
+     "img": "solution/59-sys-3.png",
+     "h": "Mises à jour firmware à distance",
+     "p": "Prend en charge les mises à jour firmware OTA à distance en lot pour les appareils compatibles, gardant les déploiements à jour et réduisant les visites sur site."
+    }
+   ],
+   "relHeading": "Produits associés",
+   "related": [
+    "280",
+    "281",
+    "291",
+    "290",
+    "282"
+   ],
+   "scenHeading": "Applications",
+   "scenarios": [
+    {
+     "img": "solution/59-scen-0.jpg",
+     "h": "Énergie éolienne et stockage",
+     "p": "La surveillance d’état des turbines et des systèmes de stockage soutient la planification de la maintenance"
+    },
+    {
+     "img": "solution/59-scen-1.jpg",
+     "h": "Installations de nouvelles énergies",
+     "p": "Surveillance et contrôle en temps réel pour les installations d’énergies renouvelables"
+    },
+    {
+     "img": "solution/59-scen-2.jpg",
+     "h": "Centrales électriques",
+     "p": "Surveillez température, pression, vibrations et état des équipements pour la planification de la maintenance."
+    }
+   ]
+  },
+  "57": {
+   "id": "57",
+   "banner": "solution/57-banner-0.jpg",
+   "intro": [
+    {
+     "img": "solution/57-intro-0.jpg",
+     "h": "Défis du secteur",
+     "p": "La croissance urbaine apporte des défis tels que la congestion du trafic, la pression environnementale et le vieillissement des infrastructures. La détection connectée donne aux exploitants urbains des données en temps réel sur les routes, les utilités, les structures et l’environnement, pour des décisions mieux informées. Hitelecom fournit les capteurs de terrain et la connectivité utilisés dans ces déploiements de surveillance."
+    },
+    {
+     "img": "solution/57-intro-1.jpg",
+     "h": "Présentation de la solution",
+     "p": "La solution ville intelligente Hitelecom relie la surveillance des infrastructures — plaques d’égout, ponts, canalisations et conditions environnementales — à une plateforme centrale. Les exploitants reçoivent des alertes sur les conditions anormales et suivent l’état des infrastructures dans toute la ville depuis une seule interface."
+    }
+   ],
+   "archHeading": "Architecture de la solution",
+   "archImgs": [
+    "solution/57-arch-0.png"
+   ],
+   "featHeading": "Avantages clés",
+   "features": [
+    {
+     "h": "Options prêtes pour l’extérieur",
+     "p": "Certains modèles sont disponibles avec des boîtiers à indice IP pour les environnements industriels et extérieurs. Confirmez l’indice de protection requis pour chaque configuration."
+    },
+    {
+     "h": "Conception basse consommation",
+     "p": "Certains terminaux de capteurs utilisent des processeurs basse consommation, une gestion optimisée de l’alimentation et des intervalles de transmission configurables pour prolonger l’autonomie sur site."
+    },
+    {
+     "h": "Connectivité flexible",
+     "p": "Choisissez 4G LTE ou NB-IoT pour la remontée cellulaire directe, ou LoRa/LoRaWAN pour les réseaux privés via passerelle, selon le modèle et le site."
+    },
+    {
+     "h": "Configuration NFC",
+     "p": "Certains appareils prennent en charge l’activation NFC et la configuration locale pour un déploiement et une maintenance plus rapides."
+    }
+   ],
+   "sysHeading": "Capacités du système",
+   "system": [
+    {
+     "img": "solution/57-sys-0.png",
+     "h": "Configuration à distance",
+     "p": "Configurez les appareils pris en charge par lots : intervalles de transmission, seuils et paramètres propres au déploiement."
+    },
+    {
+     "img": "solution/57-sys-1.png",
+     "h": "Surveillance en temps réel",
+     "p": "Hitelecom collecte les données via des capteurs et les transmet à la plateforme cloud pour analyse. La plateforme analyse les tendances et signale les relevés anormaux, aidant les exploitants à surveiller l’état des infrastructures et à planifier les inspections."
+    },
+    {
+     "img": "solution/57-sys-2.png",
+     "h": "Automatisation par règles",
+     "p": "Les contrôleurs agissent sur les données des capteurs selon des règles configurées, permettant des réponses automatisées entre appareils et sites."
+    },
+    {
+     "img": "solution/57-sys-3.png",
+     "h": "Mises à jour firmware à distance",
+     "p": "Prend en charge les mises à jour firmware OTA à distance en lot pour les appareils compatibles, gardant les déploiements à jour et réduisant les visites sur site."
+    }
+   ],
+   "relHeading": "Produits associés",
+   "related": [
+    "286",
+    "287",
+    "270",
+    "274",
+    "281",
+    "282",
+    "283",
+    "284"
+   ],
+   "scenHeading": "Applications",
+   "scenarios": [
+    {
+     "img": "solution/57-scen-0.jpg",
+     "h": "Infrastructure de véhicules connectés",
+     "p": "Surveillez l’état des infrastructures routières et de dépôt avec des terminaux de capteurs extérieurs"
+    },
+    {
+     "img": "solution/57-scen-1.jpg",
+     "h": "Logistique et chaîne d’approvisionnement",
+     "p": "Suivez les actifs et surveillez les conditions des entrepôts sur plusieurs sites"
+    },
+    {
+     "img": "solution/57-scen-2.jpg",
+     "h": "Canalisations urbaines",
+     "p": "Surveillez pression, fuites, niveau et conditions de fonctionnement."
+    },
+    {
+     "img": "solution/57-scen-3.jpg",
+     "h": "Installations hydroélectriques",
+     "p": "Surveillez le niveau d’eau et l’état des équipements."
+    },
+    {
+     "img": "solution/57-scen-4.jpg",
+     "h": "Communautés résidentielles",
+     "p": "Surveillez conditions environnementales et actifs des utilités dans les zones résidentielles"
+    }
+   ]
+  },
+  "66": {
+   "id": "66",
+   "banner": "solution/66-banner-0.jpg",
+   "intro": [
+    {
+     "img": "solution/66-intro-0.jpg",
+     "h": "Défis du secteur",
+     "p": "Les sites touristiques et patrimoniaux doivent protéger structures et collections tout en gérant zones d’accueil, conditions environnementales et installations dispersées. Les inspections manuelles peuvent manquer les mouvements graduels ou les changements de microclimat."
+    },
+    {
+     "img": "solution/66-intro-1.jpg",
+     "h": "Présentation de la solution",
+     "p": "Hitelecom combine capteurs d’inclinaison, de vibrations, de température, d’humidité, de distance et autres capteurs par modèle avec la surveillance cloud. Les équipes peuvent consulter tendances et alertes pour les bâtiments historiques, musées, sites archéologiques et infrastructures d’accueil."
+    }
+   ],
+   "archHeading": "Architecture de la solution",
+   "archImgs": [
+    "solution/66-arch-0.png"
+   ],
+   "featHeading": "Avantages clés",
+   "features": [
+    {
+     "h": "Conception basse consommation",
+     "p": "Certains terminaux de capteurs utilisent des processeurs basse consommation, une gestion optimisée de l’alimentation et des intervalles de transmission configurables pour prolonger l’autonomie sur site."
+    },
+    {
+     "h": "Connectivité flexible",
+     "p": "Choisissez 4G LTE ou NB-IoT pour la remontée cellulaire directe, ou LoRa/LoRaWAN pour les réseaux privés via passerelle, selon le modèle et le site."
+    },
+    {
+     "h": "Configuration NFC",
+     "p": "Certains appareils prennent en charge l’activation NFC et la configuration locale pour un déploiement et une maintenance plus rapides."
+    },
+    {
+     "h": "Options prêtes pour l’extérieur",
+     "p": "Certains modèles sont disponibles avec des boîtiers à indice IP pour les environnements industriels et extérieurs. Confirmez l’indice de protection requis pour chaque configuration."
+    }
+   ],
+   "sysHeading": "Capacités du système",
+   "system": [
+    {
+     "img": "solution/66-sys-0.png",
+     "h": "Localisation des pannes",
+     "p": "Les diagnostics aident les équipes à localiser les appareils défaillants, réduire les délais de réparation et visualiser l’état des appareils sur une carte."
+    },
+    {
+     "img": "solution/66-sys-1.png",
+     "h": "Automatisation par règles",
+     "p": "Les contrôleurs agissent sur les données des capteurs selon des règles configurées, permettant des réponses automatisées entre appareils et sites."
+    },
+    {
+     "img": "solution/66-sys-2.png",
+     "h": "Notification d’alarme",
+     "p": "Configurez et gérez les alertes de manière centralisée, avec déclencheurs multi-conditions et workflows d’escalade pour les déploiements pris en charge."
+    },
+    {
+     "img": "solution/66-sys-3.png",
+     "h": "Mises à jour firmware à distance",
+     "p": "Prend en charge les mises à jour firmware OTA à distance en lot pour les appareils compatibles, gardant les déploiements à jour et réduisant les visites sur site."
+    }
+   ],
+   "relHeading": "Produits associés",
+   "related": [
+    "283",
+    "282",
+    "290",
+    "291",
+    "281"
+   ],
+   "scenHeading": "Applications",
+   "scenarios": [
+    {
+     "img": "solution/66-scen-0.jpg",
+     "h": "Bâtiments historiques",
+     "p": "Surveillez température, humidité et inclinaison structurelle pour soutenir la conservation."
+    },
+    {
+     "img": "solution/66-scen-1.jpg",
+     "h": "Musées et collections",
+     "p": "Suivez température, humidité et fumée pour soutenir la conservation des expositions et collections."
+    },
+    {
+     "img": "solution/66-scen-2.jpg",
+     "h": "Sites archéologiques",
+     "p": "Surveillez les conditions environnementales et les mouvements structurels sur les sites exposés."
+    },
+    {
+     "img": "solution/66-scen-3.jpg",
+     "h": "Zones d’accueil des visiteurs",
+     "p": "Surveillez le flux de visiteurs et les conditions environnementales pour l’exploitation du site."
+    }
+   ]
+  },
+  "67": {
+   "id": "67",
+   "banner": "solution/67-banner-0.jpg",
+   "intro": [
+    {
+     "img": "solution/67-intro-0.jpg",
+     "h": "Défis du secteur",
+     "p": "Les services d’eau exploitent des réservoirs, stations de pompage, canalisations, ouvrages de drainage et installations de traitement dispersés. Des données de terrain tardives ou incomplètes peuvent ralentir la réponse aux niveaux, pressions, débits ou conditions de qualité anormaux."
+    },
+    {
+     "img": "solution/67-intro-1.jpg",
+     "h": "Présentation de la solution",
+     "p": "Hitelecom relie des capteurs de niveau, de pression, environnementaux et autres capteurs pris en charge aux plateformes cloud ou clientes. Alertes configurables et accès aux données à distance aident les équipes à prioriser inspection et maintenance."
+    }
+   ],
+   "archHeading": "Architecture de la solution",
+   "archImgs": [
+    "solution/67-arch-0.png"
+   ],
+   "featHeading": "Avantages clés",
+   "features": [
+    {
+     "h": "Conception basse consommation",
+     "p": "Certains terminaux de capteurs utilisent des processeurs basse consommation, une gestion optimisée de l’alimentation et des intervalles de transmission configurables pour prolonger l’autonomie sur site."
+    },
+    {
+     "h": "Options prêtes pour l’extérieur",
+     "p": "Certains modèles sont disponibles avec des boîtiers à indice IP pour les environnements industriels et extérieurs. Confirmez l’indice de protection requis pour chaque configuration."
+    },
+    {
+     "h": "Connectivité flexible",
+     "p": "Choisissez 4G LTE ou NB-IoT pour la remontée cellulaire directe, ou LoRa/LoRaWAN pour les réseaux privés via passerelle, selon le modèle et le site."
+    },
+    {
+     "h": "Configuration NFC",
+     "p": "Certains appareils prennent en charge l’activation NFC et la configuration locale pour un déploiement et une maintenance plus rapides."
+    }
+   ],
+   "sysHeading": "Capacités du système",
+   "system": [
+    {
+     "img": "solution/67-sys-0.png",
+     "h": "Configuration à distance",
+     "p": "Configurez les appareils pris en charge par lots : intervalles de transmission, seuils et paramètres propres au déploiement."
+    },
+    {
+     "img": "solution/67-sys-1.png",
+     "h": "Surveillance en temps réel",
+     "p": "Hitelecom collecte les données via des capteurs et les transmet à la plateforme cloud pour analyse. La plateforme analyse les tendances et signale les relevés anormaux, aidant les services d’eau à identifier les niveaux, débits ou conditions de qualité anormaux."
+    },
+    {
+     "img": "solution/67-sys-2.png",
+     "h": "Automatisation par règles",
+     "p": "Les contrôleurs agissent sur les données des capteurs selon des règles configurées, permettant des réponses automatisées entre appareils et sites."
+    },
+    {
+     "img": "solution/67-sys-3.png",
+     "h": "Notification d’alarme",
+     "p": "Configurez et gérez les alertes de manière centralisée, avec déclencheurs multi-conditions et workflows d’escalade pour les déploiements pris en charge."
+    }
+   ],
+   "relHeading": "Produits associés",
+   "related": [
+    "270",
+    "274",
+    "280",
+    "281",
+    "291"
+   ],
+   "scenHeading": "Applications",
+   "scenarios": [
+    {
+     "img": "solution/67-scen-0.jpg",
+     "h": "Barrages hydroélectriques",
+     "p": "Surveillez niveau d’eau, déplacement et inclinaison, et conditions environnementales sur les barrages."
+    },
+    {
+     "img": "solution/67-scen-1.jpg",
+     "h": "Stations de traitement d’eau industrielles",
+     "p": "Surveillez conditions de process et état des équipements pour la planification de la maintenance."
+    },
+    {
+     "img": "solution/67-scen-2.jpg",
+     "h": "Aquaculture",
+     "p": "Surveillez les conditions de l’eau et de l’environnement pour l’aquaculture."
+    }
+   ]
+  }
+ }
+};
 export const solutionSeo: Record<Locale, Record<string, { name: string; title: string; desc: string }>> =
 { ...solutionSeoBase, de: {
  "57": {
@@ -4142,5 +4937,47 @@ export const solutionSeo: Record<Locale, Record<string, { name: string; title: s
   "title": "IoT para gestión inteligente del agua | Hitelecom",
   "desc": "Monitoree el nivel del agua, la presión, el caudal y la calidad en embalses, estaciones de bombeo, tuberías y redes de drenaje con alertas remotas."
  }
-}
+},
+ fr: {
+  "57": {
+   "name": "Ville intelligente",
+   "title": "Solution IoT ville intelligente | Infrastructure | Hitelecom",
+   "desc": "Surveillez structures urbaines, utilités et environnement avec des capteurs de terrain, la connectivité cellulaire ou LoRaWAN et des alertes cloud."
+  },
+  "58": {
+   "name": "IoT industriel",
+   "title": "Solution IoT industrielle | Surveillance d’équipements | Hitelecom",
+   "desc": "Surveillez équipements et utilités industriels : capteurs de température, pression, vibrations et qualité de l’air, alertes et tableaux de bord cloud."
+  },
+  "59": {
+   "name": "Énergie intelligente",
+   "title": "Solution IoT énergie intelligente | Surveillance d’état | Hitelecom",
+   "desc": "Surveillez pression, température, vibrations et niveau sur les actifs énergétiques avec une connectivité sans fil par modèle et des alertes cloud."
+  },
+  "60": {
+   "name": "Parcs industriels intelligents",
+   "title": "Solution IoT pour parc industriel intelligent | Hitelecom",
+   "desc": "Solution IoT Hitelecom pour parc intelligent : capteurs NB-IoT et cloud IoT pour la sécurité, l’environnement et la gestion des installations."
+  },
+  "64": {
+   "name": "Campus intelligent",
+   "title": "Solution IoT campus intelligent | Qualité de l’air | Hitelecom",
+   "desc": "Solution IoT Hitelecom pour campus intelligent : qualité de l’air, température et humidité avec cloud IoT pour une gestion sûre et efficace."
+  },
+  "65": {
+   "name": "Agriculture intelligente",
+   "title": "Solution IoT agriculture intelligente | Hitelecom",
+   "desc": "Solution IoT Hitelecom pour l’agriculture intelligente : capteurs d’humidité du sol et terminaux 4G extérieurs pour l’agriculture de précision."
+  },
+  "66": {
+   "name": "Tourisme et sites patrimoniaux",
+   "title": "Surveillance IoT pour tourisme et sites patrimoniaux | Hitelecom",
+   "desc": "Surveillez mouvements structurels, conditions environnementales et actifs des sites touristiques et patrimoniaux avec capteurs et alertes cloud."
+  },
+  "67": {
+   "name": "Gestion intelligente de l’eau",
+   "title": "Solution IoT gestion intelligente de l’eau | Hitelecom",
+   "desc": "Surveillez niveau d’eau, pression, débit et qualité sur réservoirs, stations de pompage, canalisations et réseaux de drainage, avec alertes à distance."
+  }
+ }
 };

@@ -1,0 +1,18 @@
+---
+/**
+ * 站内搜索页（英文）：/search
+ * 修复原站 /search/ 死链：静态索引 + 浏览器端过滤，无需后端。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SearchPage from '../../components/SearchPage.astro';
+---
+
+<BaseLayout
+  headerSolid
+  locale="fr"
+  robots="noindex, follow"
+  title="Recherche sur le site - Hitelecom Capteurs IoT industriels"
+  description="Recherchez capteurs IoT industriels, enregistreurs de données, solutions et actualités Hitelecom : terminaux 4G/NB-IoT et cloud IoT."
+>
+  <SearchPage locale="fr" />
+</BaseLayout>

@@ -290,6 +290,56 @@ const staticConfig: Record<Locale, Pick<NewsContent,
   returnLabel: 'ニュース一覧に戻る',
   catNames: { company: '会社ニュース', exh: '展示会', ind: '業界ニュース', case: '導入事例', blog: '技術ブログ' },
  },
+ fr: {
+  bannerImg: 'news/banner.jpg',
+  bannerSub: '',
+  bannerTitle: 'NEWS CENTER',
+  tabs: [
+   { key: 'company', label: 'Actualités de l’entreprise', href: '/news/' },
+   { key: 'exh', label: 'Salons', href: '/news/index/cid/81' },
+   { key: 'ind', label: 'Actualités du secteur', href: '/news/index/cid/80' },
+   { key: 'faqs', label: 'FAQ', href: '/news/faqs' },
+  ],
+  readmore: 'Lire la suite',
+  faqs: [
+   {
+    date: 'Hitelecom · 28 février 2024',
+    q: 'De nombreux capteurs dépendent du secteur ou de batteries de grande capacité ; une consommation élevée limite-t-elle leur durée de vie ?',
+    a: 'Les terminaux de capteurs Hitelecom utilisent des processeurs basse consommation, une gestion optimisée de l’alimentation et des intervalles de transmission configurables. Certains modèles sur batterie sont conçus pour plus de dix ans de fonctionnement à un intervalle d’une heure. L’autonomie réelle dépend du modèle, de l’intervalle de transmission, des conditions réseau et de la température de fonctionnement.',
+   },
+   {
+    date: 'Hitelecom · 16 avril 2024',
+    q: 'Les interférences électromagnétiques (EMI) peuvent-elles dégrader la précision des capteurs ou l’intégrité du signal ?',
+    a: 'Certains modèles sont conçus et testés selon les exigences CEM applicables à l’environnement visé. Demandez-nous le rapport d’essai correspondant à votre modèle.',
+   },
+   {
+    date: 'Hitelecom · 26 juin 2024',
+    q: 'Un positionnement inapproprié du capteur peut-il nuire à la précision des données ou à l’efficacité du capteur ?',
+    a: 'Avant le déploiement, notre équipe d’ingénierie examine les conditions du site et détermine avec vous la position optimale du capteur.',
+   },
+   {
+    date: 'Hitelecom · 28 août 2024',
+    q: 'Les variations de température, les interférences électromagnétiques et d’autres facteurs environnementaux peuvent-ils faire dériver la précision de mesure ?',
+    a: 'Hitelecom sélectionne des éléments de détection de haute qualité, adapte la configuration à vos besoins et prend en charge un étalonnage adapté à l’environnement de déploiement.',
+   },
+   {
+    date: 'Hitelecom · 16 octobre 2025',
+    q: 'Comment maintenir une connexion réseau stable pour la transmission des données dans des sites isolés ou complexes ?',
+    a: 'Hitelecom prend en charge 4G Cat.1, NB-IoT, LoRa et d’autres modes de communication pour s’adapter aux environnements complexes. Lorsque la confidentialité des données l’exige, un déploiement privé garantit que les données de terrain parviennent de manière stable à la plateforme.',
+   },
+   {
+    date: 'Hitelecom · 12 décembre 2025',
+    q: 'Les appareils et applications IoT nécessitent des mises à jour régulières pour corriger des vulnérabilités ou ajouter des fonctions : comment les gérer à distance ?',
+    a: 'Les appareils compatibles peuvent recevoir des mises à jour firmware OTA via Hitelecom Cloud. La planification des mises à jour, l’historique des versions et les fonctions de retour arrière dépendent du modèle et de la configuration de déploiement.',
+   },
+  ],
+  relatedHeading: 'Articles liés',
+  crumbHome: 'Accueil',
+  crumbNews: 'Actualités',
+  returnLabel: 'Retour aux actualités',
+  catNames: { company: 'Actualités de l’entreprise', exh: 'Salons', ind: 'Actualités du secteur', case: 'Études de cas', blog: 'Blog technique' },
+ }
+,
 };
 
 /** 从内容集合装配完整的 NewsContent（构建期调用，结果已按原站位次排序） */
@@ -377,6 +427,7 @@ export async function getNewsContent(locale: Locale): Promise<NewsContent> {
 const MONTHS_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const MONTHS_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 const MONTHS_DE = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+const MONTHS_FR = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
 
 /** 新闻日期显示：ISO 日期按语言习惯渲染（EN "January 1, 2025"；ES "1 de enero de 2025"），其他格式原样返回 */
 export function fmtNewsDate(date: string, locale: string = 'en'): string {
@@ -385,6 +436,7 @@ export function fmtNewsDate(date: string, locale: string = 'en'): string {
   if (locale === 'es') return `${+m[3]} de ${MONTHS_ES[+m[2] - 1]} de ${m[1]}`;
   if (locale === 'de') return `${+m[3]}. ${MONTHS_DE[+m[2] - 1]} ${m[1]}`;
   if (locale === 'ja') return `${m[1]}年${+m[2]}月${+m[3]}日`;
+  if (locale === 'fr') return `${+m[3]} ${MONTHS_FR[+m[2] - 1]} ${m[1]}`;
   return `${MONTHS_EN[+m[2] - 1]} ${+m[3]}, ${m[1]}`;
 }
 
