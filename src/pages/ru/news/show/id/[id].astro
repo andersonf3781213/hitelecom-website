@@ -1,0 +1,94 @@
+---
+/**
+ * 新闻详情页（英文）：/news/show/id/{id}.html
+ * 与原站 1:1：横幅 → 面包屑+Return → 标题/日期/正文 → Prev/Next → 相关推荐轮播
+ */
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import NewsShell from '../../../../../components/news/NewsShell.astro';
+import NewsDetailBody from '../../../../../components/news/NewsDetailBody.astro';
+import { getNewsContent, getNewsIds } from '../../../../../data/news';
+import { optimizedSrc } from '../../../../../utils/images';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = async () =>
+  (await getNewsIds('ru')).map((id) => ({ params: { id } }));
+
+const { id } = Astro.params;
+const d = await getNewsContent('ru');
+const det = d.details[id];
+const card = d.index[id];
+// 原站英文 1394 已按中文版补齐；SEO 标题兜底
+const pageTitle = det.title ? det.title : 'Hitelecom News | Industrial IoT Products and Events';
+// 部分文章在原站列表无摘要：退回正文纯文本截取，避免多页共用同一 description
+const bodyText = det.body
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/&nbsp;/g, ' ')
+  .replace(/&#39;|&rsquo;/g, "'")
+  .replace(/&quot;|&ldquo;|&rdquo;/g, '"')
+  .replace(/&amp;/g, '&')
+  .replace(/\s+/g, ' ')
+  .trim();
+// 人工维护的 SEO description（完整句、120–155 字符；校对报告 2026-09-04 第 10 节）。
+// 优先级高于列表摘要；新增新闻时在此补一条，别让程序从正文截半句。
+const seoDesc: Record<string, string> = {
+  '1345': 'Hitelecom благодарит клиентов и партнёров за поддержку в 2024 году и делится приверженностью надёжной продукции и сервису промышленного IoT в 2025 году.',
+  '1348': 'Hitelecom представляет датчик наклона с разрешением 0,001°, маломощной конструкцией, вариантами 4G, NB-IoT и LoRa и облачным дистанционным мониторингом.',
+  '1355': 'Hitelecom благодарит клиентов и партнёров за поддержку и желает процветающего Лунного Нового года, года Дракона.',
+  '1356': 'Hitelecom объявляет о сертификации ISO 45001 после независимого аудита своей системы менеджмента охраны труда и промышленной безопасности.',
+  '1357': 'Hitelecom объявляет о сертификации ISO 9001 после независимого аудита своей системы менеджмента качества для проектирования и производства датчиков IoT.',
+  '1358': 'Hitelecom представляет маломощный датчик почвы для точного земледелия, орошения, экологического мониторинга, садоводства и исследований.',
+  '1359': 'Hitelecom представляет маломощный датчик температуры для сельского хозяйства, хранения продуктов и фармацевтики, промышленности, энергетики и экологии.',
+  '1377': 'Hitelecom представила более 20 терминалов датчиков IoT на IOTE Shenzhen 2024, где H300-MW012 получил награду за инновационный продукт.',
+  '1378': 'Резюме китайских ориентиров 2024 года по инфраструктуре устойчивых городов, муниципальному мониторингу, подземным трубопроводам и жизненно важным системам.',
+  '1379': 'Планы Китая по реновации городских подземных трубопроводов, мониторингу дренажа, борьбе с наводнениями и инфраструктуре.',
+  '1380': 'Резюме китайских мер 2024 года по экономии воды для государственных учреждений: учёт, мониторинг, квоты и модернизация.',
+  '1381': 'Министерство жилищного строительства Китая продвинуло проекты безопасности городских жизненно важных систем для газа, мостов, воды, дренажа и коллекторов.',
+  '1383': 'Китай планирует масштабные модернизации инфраструктуры газа, воды, дренажа, отопления и коллекторов, поддержанные системами мониторинга и детектирования.',
+  '1384': 'Обзор политик Китая по городским жизненно важным системам с 2018 по 2023 год: базы данных рисков, детектирование и платформы раннего предупреждения.',
+  '1385': 'Китай опубликовал второй набор политик модернизации стареющих городских газовых сетей: финансирование, стандарты и надзор.',
+  '1386': 'Hitelecom представила свою облачную платформу, шлюзы IoT и маломощные датчики на IOTE Shanghai 2024 для применений промышленного мониторинга.',
+  '1387': 'Hitelecom представила свою облачную платформу и экологические датчики на шанхайской выставке 2024 года для профессионалов мониторинга и управления процессами.',
+  '1388': 'Hitelecom продемонстрировала облачное радарное измерение расстояния для умных люков и мониторинга городской инфраструктуры на Wuhan Pipeline Expo 2024.',
+  '1389': 'Hitelecom продемонстрировала свою облачную платформу и маломощный датчик наклона для структурного мониторинга на electronica China 2023 в Шанхае.',
+  '1390': 'Hitelecom благодарит клиентов и партнёров за поддержку и желает радостного Праздника середины осени.',
+  '1391': 'Hitelecom благодарит клиентов и партнёров за поддержку и желает мирного и радостного Праздника драконьих лодок.',
+  '1392': 'Hitelecom отмечает вклад женщин в своих командах, у клиентов и партнёров и подтверждает приверженность инклюзивному рабочему месту.',
+  '1393': 'Hitelecom представляет датчик качества воздуха 6-в-1 для CO₂, PM2.5, TVOC, температуры, влажности и атмосферного давления, с опциональными каналами.',
+  '1394': 'Hitelecom представила более 20 терминалов датчиков на MWC Shanghai и IOTE Shanghai 2025 и получила награду за инновации IoT Star.',
+};
+const pageDesc = seoDesc[id] || card?.excerpt || bodyText.slice(0, 160) || undefined;
+const isoDate = (det.date.match(/(\d{4})[-.](\d{2})[-.](\d{2})/) || []).slice(1).join('-') || undefined;
+const articleImg = card?.img ? new URL(await optimizedSrc(card.img, { width: 900 }), Astro.site).href : undefined;
+
+const catUrl = { company: 'news', exh: 'news/index/cid/81', ind: 'news/index/cid/80' }[det.cat];
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Главная', item: 'https://www.hitelecom.com/ru' },
+    { '@type': 'ListItem', position: 2, name: 'Новости', item: 'https://www.hitelecom.com/ru/news' },
+    { '@type': 'ListItem', position: 3, name: d.catNames[det.cat], item: `https://www.hitelecom.com/ru/${catUrl}` },
+    ...(det.title ? [{ '@type': 'ListItem', position: 4, name: det.title }] : []),
+  ],
+};
+const articleLd = det.title ? {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: det.title,
+  ...(articleImg ? { image: articleImg } : {}),
+  ...(isoDate ? { datePublished: isoDate } : {}),
+  ...(det.updated ? { dateModified: det.updated } : isoDate ? { dateModified: isoDate } : {}),
+  inLanguage: 'ru',
+  author: { '@id': 'https://www.hitelecom.com/ru/#organization' },
+  publisher: { '@id': 'https://www.hitelecom.com/ru/#organization' },
+  mainEntityOfPage: `https://www.hitelecom.com/ru/news/show/id/${id}`,
+} : null;
+---
+
+<BaseLayout locale="ru" preloadImage={articleImg} title={pageTitle} description={pageDesc}>
+  <NewsShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    {articleLd && <script slot="head" type="application/ld+json" set:html={JSON.stringify(articleLd)} />}
+    <NewsDetailBody locale="ru" id={id} />
+  </NewsShell>
+</BaseLayout>

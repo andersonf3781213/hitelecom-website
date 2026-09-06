@@ -1,0 +1,18 @@
+---
+/**
+ * 站内搜索页（英文）：/search
+ * 修复原站 /search/ 死链：静态索引 + 浏览器端过滤，无需后端。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SearchPage from '../../components/SearchPage.astro';
+---
+
+<BaseLayout
+  headerSolid
+  locale="ru"
+  robots="noindex, follow"
+  title="Поиск по сайту - Hitelecom Промышленные датчики IoT"
+  description="Поиск по промышленным датчикам IoT, регистраторам данных, решениям и новостям Hitelecom: уличные терминалы 4G и NB-IoT, облачная платформа IoT."
+>
+  <SearchPage locale="ru" />
+</BaseLayout>

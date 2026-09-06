@@ -1385,5 +1385,227 @@ export const partnerLogos = [
   { img: 'partners/logo-21.jpg', alt: '3M' },
 ];
 
-export const homeContent = { en, zh, es, de, ja, fr } as const;
+
+const ru: typeof en = {
+  nav: [
+    { label: 'Главная', href: '/' },
+    { label: 'Продукция', href: '/product/' },
+    { label: 'Решения', href: '/solution/' },
+    { label: 'Поддержка', href: '/service/' },
+    { label: 'Новости', href: '/news/' },
+    { label: 'О компании', href: '/about/' },
+  ],
+  langSwitch: { label: 'Chinese', href: '/zh' },
+  showOnline: 'Смотреть демо облака',
+  searchPlaceholder: 'Поиск продукции, решений, новостей…',
+
+  hero: {
+    slides: [
+      {
+        eyebrow: 'ПРОМЫШЛЕННЫЕ ДАТЧИКИ IoT',
+        title: 'Терминалы датчиков с низким энергопотреблением',
+        desc: 'Терминалы датчиков 4G, NB-IoT и LoRa с питанием от батареи для долгосрочного дистанционного мониторинга.',
+        cta: 'Смотреть датчики',
+        href: '/product/lists/cid/261#cate',
+        bg: 'hero/bg-sensors.jpg',
+        device: 'hero/device-sensors.png',
+        deviceAlt: 'Промышленные датчики IoT Hitelecom со сверхнизким энергопотреблением',
+      },
+      {
+        eyebrow: 'ШЛЮЗЫ IoT',
+        title: 'Надёжные и долговечные',
+        desc: 'Подключайте сети датчиков LoRa к облаку по 4G LTE или Ethernet, с удалёнными обновлениями OTA.',
+        cta: 'Смотреть шлюзы',
+        href: '/product/lists/cid/258#cate',
+        bg: 'hero/bg-gateways.jpg',
+        device: 'hero/device-gateways.png',
+        deviceAlt: 'Промышленные шлюзы IoT Hitelecom',
+      },
+      {
+        eyebrow: 'ОБЛАЧНАЯ ПЛАТФОРМА IoT',
+        title: 'Дистанционный мониторинг',
+        desc: 'Подключение, мониторинг, анализ и управление полевыми устройствами с единой облачной платформы.',
+        cta: 'Смотреть облако IoT',
+        href: '/product/#cate',
+        bg: 'hero/bg-cloud.jpg',
+        device: 'hero/device-cloud.png',
+        deviceAlt: 'Панель управления облачной платформы Hitelecom',
+      },
+    ] as HeroSlide[],
+  },
+
+  intro: {
+    title: 'Промышленный IoT: от датчика до облака',
+    subtitle:
+      'Hitelecom разрабатывает и производит промышленные датчики IoT, шлюзы и облачные решения для мониторинга. Мы поддерживаем 4G LTE, NB-IoT, LoRa/LoRaWAN, интеграцию с платформами заказчика, частное развёртывание и разработку OEM/ODM.',
+    features: [
+      { icon: 'features/icon-sensors.png', title: 'Датчики IoT', desc: 'Измерение температуры, влажности, давления, качества воздуха и других полевых параметров.' },
+      { icon: 'features/icon-controllers.png', title: 'Контроллеры IoT', desc: 'Локальная обработка данных и управление подключённым оборудованием.' },
+      { icon: 'features/icon-cloud.png', title: 'Облако IoT', desc: 'Удалённое подключение, мониторинг, настройка и обслуживание устройств.' },
+      { icon: 'features/icon-gateways.png', title: 'Шлюзы IoT', desc: 'Подключение полевых устройств к облаку или частным платформам.' },
+      { icon: 'features/icon-customized.png', title: 'Разработка IoT по заказу', desc: 'Аппаратура, прошивки, корпуса и интеграция платформ по заказу.' },
+      { icon: 'features/icon-app.png', title: 'Приложение IoT', desc: 'Настройка устройств, мониторинг данных, оповещения и поддерживаемые обновления удалённо.' },
+    ] as Feature[],
+  },
+
+  showcase: [
+    {
+      title: 'Облачная платформа',
+      desc: 'Облачная платформа IoT для подключения устройств, удалённого управления, визуализации данных, оповещений и интеграции приложений.',
+      cta: 'Смотреть облако IoT',
+      href: '/product/',
+      image: 'sections/cloud-platform.png',
+      imageAlt: 'Иллюстрация облачной платформы IoT Hitelecom',
+      reverse: false,
+    },
+    {
+      title: 'Шлюзы IoT',
+      desc: 'Подключение датчиков к облаку с преобразованием протоколов, агрегацией данных и опциональной периферийной обработкой.',
+      cta: 'Смотреть шлюзы',
+      href: '/product/lists/cid/258#cate',
+      image: 'sections/iot-gateways.jpg',
+      imageAlt: 'Шлюзы IoT Hitelecom подключают датчики к облаку',
+      reverse: true,
+    },
+    {
+      title: 'Датчики IoT',
+      desc: 'Измерение температуры, влажности, давления, вибрации, движения, качества воздуха и других физических параметров.',
+      cta: 'Смотреть датчики',
+      href: '/product/lists/cid/261#cate',
+      image: 'sections/iot-sensors.jpg',
+      imageAlt: 'Датчики IoT Hitelecom для сбора данных',
+      reverse: false,
+    },
+  ] as ShowcaseItem[],
+
+  solutions: {
+    title: 'Наши решения IoT',
+    subtitle:
+      'Мониторинг полевых условий в реальном времени, автоматизация реагирования и более быстрые операционные решения благодаря подключённым датчикам и облачным данным.',
+    items: [
+      { icon: 'solutions/icon-energy.png', label: 'Промышленный мониторинг', href: '/solution/show/id/58' },
+      { icon: 'solutions/icon-agriculture.png', label: 'Умное сельское хозяйство', href: '/solution/show/id/65' },
+      { icon: 'solutions/icon-campus.png', label: 'Умное водоснабжение', href: '/solution/show/id/67' },
+      { icon: 'solutions/icon-healthcare.png', label: 'Умная энергетика', href: '/solution/show/id/59' },
+      { icon: 'solutions/icon-industrial.png', label: 'Умный город', href: '/solution/show/id/57' },
+      { icon: 'solutions/icon-building.png', label: 'Умные промышленные парки', href: '/solution/show/id/60' },
+    ] as SolutionItem[],
+  },
+
+  news: {
+    title: 'Центр новостей',
+    subtitle:
+      'Новости компании, запуски продуктов, отраслевые обзоры и предстоящие события Hitelecom.',
+    cta: 'Все новости',
+    moreHref: '/news/',
+    items: [
+      {
+        image: 'news/news-iote-2024.png',
+        imageAlt: 'Hitelecom на выставке IOTE 2024 Shenzhen',
+        source: 'Hitelecom',
+        date: '2024.08.28',
+        title: 'Hitelecom на выставке IOTE Shenzhen 2024',
+        excerpt:
+          '22-я международная выставка IoT (IOTE 2024) Shenzhen прошла с 28 по 30 августа 2024 года в Shenzhen World Exhibition & Convention Center (Bao’an). Как профессиональный поставщик продуктов и услуг IoT, Hitelecom представила свои отраслевые решения IoT на стенде 10B33 в зале 10.',
+        href: '/news/show/id/1377',
+      },
+      {
+        image: 'news/news-pipeline.png',
+        imageAlt: 'Инвестиции в подземные инженерные сети',
+        source: 'Hitelecom',
+        date: '2024.03.09',
+        title: 'Китай планирует масштабную модернизацию городских подземных сетей',
+        excerpt:
+          '9 марта 2024 года на пресс-конференции по вопросам благосостояния населения в рамках второй сессии Всекитайского собрания народных представителей 14-го созыва было объявлено о модернизации более 100 000 километров подземных трубопроводов и о запуске проектов по борьбе с наводнениями в 100 городах.',
+        href: '/news/show/id/1379',
+      },
+      {
+        image: 'news/news-iso9001.jpg',
+        imageAlt: 'Сертификация ISO 9001 Hitelecom',
+        source: 'Hitelecom',
+        date: '2023.08.28',
+        title: 'Hitelecom получила сертификацию ISO 9001',
+        excerpt:
+          'Hitelecom получила сертификацию системы менеджмента качества ISO 9001, охватывающую проектирование и производство датчиков IoT.',
+        href: '/news/show/id/1357',
+      },
+    ] as NewsItem[],
+  },
+
+  partners: {
+    title: 'Партнёры',
+    subtitle:
+      'Мы работаем с технологическими и канальными партнёрами, обеспечивая надёжные внедрения IoT по всему миру.',
+  },
+
+  cta: {
+    title: 'Постройте своё решение IoT с Hitelecom',
+    subtitle:
+      'От датчиков и связи до облачной интеграции и разработки OEM/ODM — мы помогаем превратить полевые данные в готовые решения.',
+    primary: { label: 'Смотреть демо облака', href: 'http://cloud.hitelecom.com/' },
+    secondary: { label: 'Обсудить ваш проект', href: '/about/contact' },
+  },
+
+  footer: {
+    columns: [
+      {
+        title: 'ПРОДУКЦИЯ',
+        links: [
+          { label: 'Облако IoT', href: '/product/' },
+          { label: 'Приложение IoT', href: '/product/app' },
+          { label: 'Датчики IoT', href: '/product/lists/cid/261' },
+          { label: 'Шлюзы IoT', href: '/product/lists/cid/258' },
+          { label: 'Метеостанция', href: '/product/lists/cid/257' },
+          { label: 'Разработка по заказу', href: '/product/lists/cid/256' },
+        ],
+      },
+      {
+        title: 'РЕШЕНИЯ',
+        links: [
+          { label: 'Промышленный IoT', href: '/solution/show/id/58' },
+          { label: 'Умное сельское хозяйство', href: '/solution/show/id/65' },
+          { label: 'Умный кампус', href: '/solution/show/id/64' },
+          { label: 'Умные промышленные парки', href: '/solution/show/id/60' },
+          { label: 'Умная энергетика', href: '/solution/show/id/59' },
+          { label: 'Умный город', href: '/solution/show/id/57' },
+          { label: 'Туризм и объекты наследия', href: '/solution/show/id/66' },
+          { label: 'Умное водоснабжение', href: '/solution/show/id/67' },
+        ],
+      },
+      {
+        title: 'ПОДДЕРЖКА',
+        links: [
+          { label: 'Техническая поддержка', href: '/service/#page1' },
+          { label: 'Программное обеспечение', href: '/service/#page2' },
+          { label: 'Загрузки', href: '/service/#page3' },
+          { label: 'Послепродажное обслуживание', href: '/service/#page4' },
+        ],
+      },
+      {
+        title: 'НОВОСТИ',
+        links: [
+          { label: 'Новости компании', href: '/news/' },
+          { label: 'Выставки', href: '/news/index/cid/81' },
+          { label: 'Новости отрасли', href: '/news/index/cid/80' },
+          { label: 'Частые вопросы', href: '/news/faqs' },
+        ],
+      },
+      {
+        title: 'О КОМПАНИИ',
+        links: [
+          { label: 'Обзор компании', href: '/about/' },
+          { label: 'Качество и надёжность', href: '/about/quality' },
+          { label: 'Партнёры', href: '/about/partner' },
+          { label: 'Вакансии', href: '/about/joinus' },
+          { label: 'Связаться с нами', href: '/about/contact' },
+        ],
+      },
+    ],
+    contactTitle: 'КОНТАКТЫ',
+    followTitle: 'МЫ В СОЦСЕТЯХ',
+    copyright: `© 2018–2026 ${site.companyEn} Все права защищены.`,
+  },
+};
+
+export const homeContent = { en, zh, es, de, ja, fr, ru } as const;
 export type HomeContent = (typeof homeContent)['en'];

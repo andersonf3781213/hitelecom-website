@@ -19,6 +19,7 @@ const catLabels: Record<Locale, { product: string; news: string; solution: strin
   de: { product: 'Produkt', news: 'News', solution: 'Lösung' },
   ja: { product: '製品', news: 'ニュース', solution: 'ソリューション' },
   fr: { product: 'Produits', news: 'Actualités', solution: 'Solutions' },
+  ru: { product: 'Продукция', news: 'Новости', solution: 'Решения' },
 };
 
 function strip(html: string): string {
@@ -83,6 +84,6 @@ async function buildLocale(locale: Locale): Promise<Entry[]> {
 
 export const GET: APIRoute = async () =>
   new Response(
-    JSON.stringify({ en: await buildLocale('en'), zh: await buildLocale('zh'), es: await buildLocale('es'), de: await buildLocale('de'), ja: await buildLocale('ja'), fr: await buildLocale('fr') }),
+    JSON.stringify({ en: await buildLocale('en'), zh: await buildLocale('zh'), es: await buildLocale('es'), de: await buildLocale('de'), ja: await buildLocale('ja'), fr: await buildLocale('fr'), ru: await buildLocale('ru') }),
     { headers: { 'Content-Type': 'application/json; charset=utf-8' } },
   );

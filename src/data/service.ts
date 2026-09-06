@@ -411,4 +411,67 @@ const fr: ServiceContent = {
   submit: 'Envoyer la demande de support',
 };
 
-export const serviceContent: Record<Locale, ServiceContent> = { ...serviceContentBase, es, de, ja, fr };
+
+const ru: ServiceContent = {
+  bannerImg: 'service/banner.jpg',
+  bannerSub: '',
+  bannerTitle: 'ПОДДЕРЖКА',
+  tabs: [
+    { label: 'Техническая поддержка', anchor: '#page1' },
+    { label: 'Программное обеспечение', anchor: '#page2' },
+    { label: 'Загрузки', anchor: '#page3' },
+    { label: 'Послепродажное обслуживание', anchor: '#page4' },
+  ],
+  techHeading: 'Техническая поддержка на каждом этапе вашего проекта',
+  techCards: [
+    { img: 'service/tech-1.jpg', title: 'Аппаратная кастомизация', desc: 'Детектирование, связь, питание, интерфейсы и корпус под ваше применение.' },
+    { img: 'service/tech-2.jpg', title: 'Программная кастомизация', desc: 'Прошивка, панели, API, модели данных и интеграция платформ по заказу.' },
+    { img: 'service/tech-3.jpg', title: 'Удалённая поддержка', desc: 'Удалённое устранение неполадок, рекомендации по настройке и помощь при развёртывании от нашей инженерной команды.' },
+    { img: 'service/tech-4.jpg', title: 'Телефонная поддержка', desc: 'Поговорите с инженером об установке и устранении неполадок.' },
+    { img: 'service/tech-5.jpg', title: 'Выездная поддержка', desc: 'Когда удалённой поддержки недостаточно, закажите техническую помощь на объекте.' },
+    { img: 'service/tech-6.jpg', title: 'Ремонт и обслуживание', desc: 'Ремонт, замена и техническое сопровождение для поддерживаемых изделий.' },
+  ],
+  softHeading: 'Программное обеспечение',
+  softSub1: 'Доступно на ПК, мобильных приложениях, больших экранах и видеостенах',
+  softSub2: 'Hitelecom Cloud | Следите за устройствами и данными откуда угодно',
+  softBullets: [
+    { icon: 'service/img7.png', text: 'Используйте NFC в мобильном приложении для быстрой настройки и обслуживания.' },
+    { icon: 'service/img8.png', text: 'Настраивайте поддерживаемые устройства удалённо из веба или приложения и сокращайте выезды на объекты.' },
+    { icon: 'service/img9.png', text: 'Настраивайте условия срабатывания и время отклика оповещений по e-mail и в приложении.' },
+    { icon: 'service/img9-2.png', text: 'Настраивайте панели с видами цифрового двойника, картами ГИС и другими визуализациями данных.' },
+  ],
+  softRightImg: 'service/software-right.png',
+  platforms: [
+    { icon: 'service/img12.png', label: 'Windows' },
+    { icon: 'service/img13.png', label: 'Android' },
+    { icon: 'service/img15.png', label: 'Мини-программа WeChat' },
+    { icon: 'service/img17.png', label: 'iOS' },
+  ],
+  docsHeading: 'Загрузки',
+  docsP1: [
+    { name: 'Профиль компании', type: 'Брошюра (EN)', file: '/downloads/company-profile.pdf', downName: 'Hitelecom-Company-Profile.pdf' },
+    { name: 'Hitelecom Cloud', type: 'Сценарии применения (EN)', file: '/downloads/hitelecom-cloud-scenarios.pdf', downName: 'Hitelecom-Cloud-Scenarios.pdf' },
+    { name: 'Датчик температуры', type: 'Брошюра (EN)', file: '/downloads/temperature-sensor.jpg', downName: 'Temperature-Sensor-Brochure.jpg' },
+    { name: 'Датчик почвы', type: 'Брошюра (EN)', file: '/downloads/soil-sensor.jpg', downName: 'Soil-Sensor-Brochure.jpg' },
+    { name: 'Погружной датчик уровня', type: 'Брошюра (EN)', file: '/downloads/liquid-level-sensor.jpg', downName: 'Liquid-Level-Sensor-Brochure.jpg' },
+    { name: 'Датчик давления', type: 'Брошюра (EN)', file: '/downloads/pressure-sensor.jpg', downName: 'Pressure-Sensor-Brochure.jpg' },
+    { name: 'Датчик утечки воды (проект по заказу)', type: 'Брошюра (EN)', file: '/downloads/water-leakage-sensor.jpg', downName: 'Water-Leakage-Sensor-Brochure.jpg' },
+    { name: 'Качество воздуха', type: 'Брошюра (EN)', file: '/downloads/air-quality-sensor.jpg', downName: 'Air-Quality-Sensor-Brochure.jpg' },
+  ],
+  docsP2: [
+    { name: 'Радарный датчик расстояния', type: 'Брошюра (EN)', file: '/downloads/distance-measurement-sensor.jpg', downName: 'Distance-Measurement-Sensor-Brochure.jpg' },
+    { name: 'Датчик температуры 2-в-1 для опасных зон', type: 'Брошюра (EN)', file: '/downloads/temperature-sensor-ex.jpg', downName: 'Temperature-Sensor-EX-Brochure.jpg' },
+    { name: 'Датчик температуры и давления 2-в-1 для опасных зон', type: 'Брошюра (EN)', file: '/downloads/temp-pressure-2in1-ex.jpg', downName: 'Temp-Pressure-2in1-EX-Brochure.jpg' },
+    { name: 'Датчик температуры и влажности', type: 'Техническое описание (EN)', file: '/downloads/h300-temperature-humidity-sensor-datasheet.pdf', downName: 'Hitelecom-Temperature-Humidity-Sensor-Datasheet.pdf' },
+    { name: 'Датчик почвы', type: 'Техническое описание (EN)', file: '/downloads/h300-soil-sensor-datasheet.pdf', downName: 'Hitelecom-Soil-Sensor-Datasheet.pdf' },
+    { name: 'Датчик давления', type: 'Техническое описание (EN)', file: '/downloads/h300-pressure-sensor-datasheet.pdf', downName: 'Hitelecom-Pressure-Sensor-Datasheet.pdf' },
+    { name: 'Датчик наклона', type: 'Техническое описание (EN)', file: '/downloads/h310-ts180c-tilt-sensor-datasheet.pdf', downName: 'H310-TS180C-Tilt-Sensor-Datasheet.pdf' },
+    { name: 'Радарное расстояние', type: 'Техническое описание (EN)', file: '/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf', downName: 'H310-MW012-Radar-Distance-Sensor-Datasheet.pdf' },
+    { name: 'Качество воздуха', type: 'Техническое описание (EN)', file: '/downloads/h310-aq041-air-quality-sensor-datasheet.pdf', downName: 'H310-AQ041-Air-Quality-Sensor-Datasheet.pdf' },
+  ],
+  formHeading: 'Послепродажное обслуживание',
+  formPh: { name: 'Имя', phone: 'Телефон', email: 'E-mail', message: 'Расскажите о вашей задаче: продукт, применение, количество, условия объекта. Мы отвечаем на большинство запросов в течение одного рабочего дня.' },
+  submit: 'Отправить запрос на поддержку',
+};
+
+export const serviceContent: Record<Locale, ServiceContent> = { ...serviceContentBase, es, de, ja, fr, ru };

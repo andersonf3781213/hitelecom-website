@@ -211,6 +211,7 @@
     de: { sending: "Ihre Anfrage wird gesendet…", fail: "Senden fehlgeschlagen. Bitte erneut versuchen oder direkt an sales@hitelecom.cn schreiben.", mailto: "Ihr E-Mail-Programm wird mit der Projektbeschreibung geöffnet…" },
     ja: { sending: "お問い合わせを送信中…", fail: "送信に失敗しました。再試行するか、sales@hitelecom.cn まで直接メールしてください。", mailto: "プロジェクト概要をメールアプリで開いています…" },
     fr: { sending: "Envoi de votre demande…", fail: "L’envoi a échoué. Réessayez ou écrivez directement à sales@hitelecom.cn.", mailto: "Ouverture de votre application e-mail avec le brief projet…" },
+    ru: { sending: "Отправка вашего запроса…", fail: "Отправка не удалась. Повторите попытку или напишите напрямую на sales@hitelecom.cn.", mailto: "Открываем ваше почтовое приложение с описанием проекта…" },
   };
   const fm = FORM_MSG[L2] || FORM_MSG.en;
   const form = document.getElementById("quote-form");
@@ -229,7 +230,7 @@
         `Product interest: ${product}`, "", "Project brief:", message
       ].join("\n");
       /* 语言前缀：/zh、/es 页面跳对应语言的感谢页 */
-      const pre = (location.pathname.match(/^\/(zh|es|de|ja|fr)(?=\/|$)/) || [""])[0];
+      const pre = (location.pathname.match(/^\/(zh|es|de|ja|fr|ru)(?=\/|$)/) || [""])[0];
       if (window.HITE_FORM_ENDPOINT && window.HITE_FORM_KEY) {
         const fd = new FormData();
         fd.append("access_key", window.HITE_FORM_KEY);

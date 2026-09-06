@@ -1,0 +1,32 @@
+---
+/**
+ * 关于我们 - 公司简介（英文）：/about
+ * 与原站 /about/ 1:1：横幅 + 五个选项卡 + 简介/企业文化/发展历程/环境/荣誉
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AboutShell from '../../components/about/AboutShell.astro';
+import AboutIntro from '../../components/about/AboutIntro.astro';
+import { contentImageSrc } from '../../utils/content';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Главная', item: 'https://www.hitelecom.com/ru' },
+    { '@type': 'ListItem', position: 2, name: 'О компании', item: 'https://www.hitelecom.com/ru/about' },
+  ],
+};
+const aboutBanner = (await contentImageSrc('/images/about/up_7428e98f9a91fcccdaa6c5ede77c3cc2.webp', 1920)) ?? undefined;
+---
+
+<BaseLayout
+  preloadImage={aboutBanner}
+  locale="ru"
+  title="О компании Hitelecom | Производитель промышленных датчиков IoT"
+  description="Основанная в Шанхае в 2012 году, Hitelecom разрабатывает промышленные датчики IoT, регистраторы данных и облачные решения мониторинга, с поддержкой OEM/ODM."
+>
+  <AboutShell>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    <AboutIntro locale="ru" />
+  </AboutShell>
+</BaseLayout>

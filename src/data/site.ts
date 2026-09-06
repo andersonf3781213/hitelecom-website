@@ -56,6 +56,7 @@ export const site = {
     de: 'Anbieter ganzheitlicher IoT-Lösungen',
     ja: 'IoTトータルソリューションプロバイダー',
     fr: 'Fournisseur de solutions IoT clés en main',
+    ru: 'Поставщик комплексных решений IoT',
   },
 } as const;
 
@@ -105,6 +106,14 @@ export const defaultSeo = {
       'Hitelecom diseña terminales de sensores industriales 4G, NB-IoT y LoRa, registradores de datos e integración con la nube para monitoreo remoto, con soporte OEM/ODM.',
     keywords:
       'Hitelecom, sensores IoT industriales, sensores IoT 4G para exteriores, sensores NB-IoT, terminales de sensores IoT celulares, sensores LoRa, integración IoT en la nube, sensores de temperatura industriales, sensores de temperatura y humedad, registradores de datos de temperatura y humedad, sensores de calidad del aire, sensores TVOC, sensores de presión inalámbricos, sensores de humedad del suelo, sensores de inclinación, sensores de vibración, sensores de nivel sumergibles, sensores de distancia por radar, sensores de rastreo de activos, sensores de gas personalizados, fabricante de sensores IoT China, sensores IoT OEM ODM',
+  },
+  ru: {
+    title:
+      'Hitelecom | Промышленные датчики 4G и NB-IoT',
+    description:
+      'Hitelecom разрабатывает и производит промышленные датчики 4G, NB-IoT и LoRa, регистраторы данных и облачную интеграцию для дистанционного мониторинга, с поддержкой OEM/ODM.',
+    keywords:
+      'Hitelecom, промышленные датчики IoT, уличные датчики IoT 4G, датчики NB-IoT, сотовые терминалы IoT, датчики LoRa, облачная интеграция IoT, промышленные датчики температуры, датчики температуры и влажности, регистраторы данных температуры и влажности, датчики качества воздуха, датчики TVOC, беспроводные датчики давления, датчики влажности почвы, датчики наклона, датчики вибрации, погружные датчики уровня, радарные датчики расстояния, датчики отслеживания активов, датчики газа по заказу, производитель датчиков IoT Китай, OEM ODM датчики IoT',
   },
   fr: {
     title:
