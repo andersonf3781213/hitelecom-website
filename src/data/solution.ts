@@ -5737,12 +5737,12 @@ export const solutionSeo: Record<Locale, Record<string, { name: string; title: s
   },
   "58": {
    "name": "IoT industriel",
-   "title": "Solution IoT industrielle | Surveillance d’équipements | Hitelecom",
+   "title": "Solution IoT industrielle | Hitelecom",
    "desc": "Surveillez équipements et utilités industriels : capteurs de température, pression, vibrations et qualité de l’air, alertes et tableaux de bord cloud."
   },
   "59": {
    "name": "Énergie intelligente",
-   "title": "Solution IoT énergie intelligente | Surveillance d’état | Hitelecom",
+   "title": "Solution IoT énergie intelligente | Hitelecom",
    "desc": "Surveillez pression, température, vibrations et niveau sur les actifs énergétiques avec une connectivité sans fil par modèle et des alertes cloud."
   },
   "60": {
@@ -5752,7 +5752,7 @@ export const solutionSeo: Record<Locale, Record<string, { name: string; title: s
   },
   "64": {
    "name": "Campus intelligent",
-   "title": "Solution IoT campus intelligent | Qualité de l’air | Hitelecom",
+   "title": "Solution IoT campus intelligent | Hitelecom",
    "desc": "Solution IoT Hitelecom pour campus intelligent : qualité de l’air, température et humidité avec cloud IoT pour une gestion sûre et efficace."
   },
   "65": {
@@ -5762,7 +5762,7 @@ export const solutionSeo: Record<Locale, Record<string, { name: string; title: s
   },
   "66": {
    "name": "Tourisme et sites patrimoniaux",
-   "title": "Surveillance IoT pour tourisme et sites patrimoniaux | Hitelecom",
+   "title": "IoT pour tourisme et sites patrimoniaux | Hitelecom",
    "desc": "Surveillez mouvements structurels, conditions environnementales et actifs des sites touristiques et patrimoniaux avec capteurs et alertes cloud."
   },
   "67": {
@@ -5779,12 +5779,12 @@ export const solutionSeo: Record<Locale, Record<string, { name: string; title: s
   },
   "58": {
    "name": "Промышленный IoT",
-   "title": "Решение промышленного IoT | Мониторинг оборудования | Hitelecom",
+   "title": "Решение промышленного IoT | Hitelecom",
    "desc": "Мониторинг промышленного оборудования и инженерных сетей датчиками температуры, давления, вибрации и воздуха, с оповещениями и облачными панелями."
   },
   "59": {
    "name": "Умная энергетика",
-   "title": "Решение IoT для умной энергетики | Мониторинг состояния | Hitelecom",
+   "title": "Решение IoT для умной энергетики | Hitelecom",
    "desc": "Мониторинг давления, температуры, вибрации и уровня на энергетических активах с беспроводной связью по моделям и облачными оповещениями."
   },
   "60": {
@@ -5794,7 +5794,7 @@ export const solutionSeo: Record<Locale, Record<string, { name: string; title: s
   },
   "64": {
    "name": "Умный кампус",
-   "title": "Решение IoT для умного кампуса | Качество воздуха | Hitelecom",
+   "title": "Решение IoT для умного кампуса | Hitelecom",
    "desc": "Решение IoT Hitelecom для умного кампуса: качество воздуха, температура и влажность с облачной платформой IoT для безопасного управления кампусом."
   },
   "65": {
@@ -5809,7 +5809,7 @@ export const solutionSeo: Record<Locale, Record<string, { name: string; title: s
   },
   "67": {
    "name": "Умное водоснабжение",
-   "title": "Решение IoT для умного водоснабжения | Уровень и давление | Hitelecom",
+   "title": "Решение IoT для умного водоснабжения | Hitelecom",
    "desc": "Мониторинг уровня воды, давления, расхода и качества на водохранилищах, насосных станциях, трубопроводах и дренажных сетях, с удалёнными оповещениями."
   }
  }

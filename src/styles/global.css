@@ -16,14 +16,28 @@
   font-style: normal;
   font-display: swap;
 }
+/* V29：俄语页品牌一致性。Google Fonts 的 Poppins 并无西里尔字形，
+   此文件实为 Montserrat Medium（同为几何无衬线，x 高/字宽最接近 Poppins）的
+   西里尔子集（11KB），注册到 'Poppins' 家族名下：拉丁字符仍命中原有
+   Poppins 子集（unicode-range 不含西里尔），西里尔字符命中本文件。 */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Medium-cyrillic.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
 @font-face {
   font-family: 'Alibaba PuHuiTi R';
   src: url('/fonts/Alibaba-PuHuiTi-R-subset.woff2') format('woff2');
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
-  /* V26：仅当页面真实渲染 CJK 字形时才下载（567KB），纯拉丁英文页零请求 */
-  unicode-range: U+2E80-9FFF, U+3000-303F, U+FF00-FFEF;
+  /* V26：仅当页面真实渲染 CJK 字形时才下载（567KB），纯拉丁英文页零请求。
+     V29：区间剥掉日语假名（U+3040-30FF）；且该字体仅出现在 :lang(zh) 的
+     --font 栈里，日/俄/拉丁语页零引用、零下载。 */
+  unicode-range: U+2E80-2FDF, U+3000-303F, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FF00-FFEF;
 }
 
 :root {
@@ -38,7 +52,7 @@
   --container: 1440px;
   --header-h: 86px;
   --font:
-    'Poppins', 'Alibaba PuHuiTi R', -apple-system, BlinkMacSystemFont,
+    'Poppins', -apple-system, BlinkMacSystemFont,
     'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   /* 纯系统字体栈（不含任何 webfont）：EN 页面上的零星中文（语言名“中文”、
      ICP 备案号）与箭头符号 → 用它渲染，避免为几个字下载 555KB 中文字体。
@@ -46,7 +60,22 @@
   --font-sys:
     -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
     'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* V29：中文字体仅限中文页；日语页走系统字体栈（日语 webfont 子集也要 2–5MB，
+   而 macOS/iOS 有 Hiragino、Windows 有游ゴシック/Meiryo、Android 有 Noto Sans CJK JP），
+   更快且字形正确（旧字形発/産/質/電等简体子集根本没有）。 */
+:lang(zh) {
+  --font:
+    'Poppins', 'Alibaba PuHuiTi R', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+:lang(ja) {
+  --font:
+    'Poppins', system-ui, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+    'Yu Gothic', Meiryo, 'Noto Sans CJK JP', sans-serif;
 }
 
 /* 不走 webfont 的系统字体渲染（用途见 --font-sys 注释） */

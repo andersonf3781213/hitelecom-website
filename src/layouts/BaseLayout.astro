@@ -189,6 +189,9 @@ const siteJsonLd = {
     {locale === 'zh' && (
       <link rel="preload" href="/fonts/Alibaba-PuHuiTi-R-subset.woff2" as="font" type="font/woff2" crossorigin />
     )}
+    {locale === 'ru' && (
+      <link rel="preload" href="/fonts/Poppins-Medium-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+    )}
 
     <!-- 首屏关键大图 preload：黄金 3 秒 -->
     {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
