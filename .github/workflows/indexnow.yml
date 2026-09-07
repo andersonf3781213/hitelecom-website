@@ -1,0 +1,53 @@
+name: IndexNow Submit
+
+# 推送到 main 后：等 Cloudflare Pages 部署完成，把 sitemap 全部 URL 批量提交给 IndexNow
+# （Bing / Yandex / Naver 等参与引擎即时抓取）。也可在 Actions 页手动 workflow_dispatch 重跑。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Wait for Cloudflare Pages deploy
+        run: sleep 300
+
+      - name: Submit sitemap URLs to IndexNow
+        env:
+          SITE: https://www.hitelecom.com
+        run: |
+          set -e
+          KEY_FILE=$(ls public | grep -E '^[0-9a-f]{32}\.txt$' | head -1)
+          KEY="${KEY_FILE%.txt}"
+          echo "IndexNow key file: $KEY_FILE"
+          curl -fsSL -A "Mozilla/5.0 (compatible; IndexNowBot/1.0)" "$SITE/sitemap-0.xml" -o /tmp/sitemap.xml
+          KEY="$KEY" python3 - <<'PYEOF'
+          import json, os, re, urllib.request
+          key = os.environ["KEY"]
+          xml = open("/tmp/sitemap.xml", encoding="utf-8").read()
+          urls = re.findall(r"<loc>(https://www\.hitelecom\.com[^<]*)</loc>", xml)
+          print(f"sitemap URLs: {len(urls)}")
+          payload = {
+              "host": "www.hitelecom.com",
+              "key": key,
+              "keyLocation": f"https://www.hitelecom.com/{key}.txt",
+              "urlList": urls,
+          }
+          req = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=json.dumps(payload).encode(),
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST",
+          )
+          try:
+              with urllib.request.urlopen(req) as r:
+                  print("IndexNow response:", r.status)
+          except urllib.error.HTTPError as e:
+              print("IndexNow HTTP error:", e.code, e.read().decode()[:300])
+              raise
+          PYEOF
