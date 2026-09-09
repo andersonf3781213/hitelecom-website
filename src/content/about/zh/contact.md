@@ -104,7 +104,7 @@
 				</div>
 			</div>
 			<div id="map_canvas">
-			<img src="/images/about/contact-map.jpg" alt="宏太通信办公地址地图：上海市松江区车阳路116号" width="1755" height="1275" loading="lazy" />
+			<img src="/images/about/contact-map.jpg" alt="宏太通信办公地址地图：上海市松江区车阳路116号" width="2564" height="1190" loading="lazy" />
 			<a class="map_more" href="https://uri.amap.com/marker?position=121.288993,30.986739&amp;name=Hitelecom%20%E5%AE%8F%E5%A4%AA%E9%80%9A%E4%BF%A1" target="_blank" rel="noopener">查看大地图</a>
 			<span class="map_attr">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" style="color:inherit">OpenStreetMap contributors</a></span>
 			</div>
