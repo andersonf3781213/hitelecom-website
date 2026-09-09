@@ -227,6 +227,12 @@ const homePaths = ['/', '/index.html', ...locales.filter((x) => x !== 'en').map(
   }
   .main-nav a:hover::after,
   .main-nav a[aria-current='page']::after { width: 100%; }
+
+  /* 俄语标签较长：头部整体放宽 + 禁换行，与其它语言保持整行一致的观感 */
+  :lang(ru) .header-inner { gap: 18px; padding-inline: clamp(16px, 2.2vw, 44px); }
+  :lang(ru) .main-nav ul { gap: clamp(14px, 1.8vw, 34px); }
+  :lang(ru) .main-nav a { font-size: 0.95rem; white-space: nowrap; }
+  :lang(ru) .show-online { white-space: nowrap; font-size: 0.88rem; padding-inline: 1.15em; }
   #site-header:not(.scrolled) .main-nav a:hover { color: #fff; }
 
   .header-actions { display: flex; align-items: center; gap: 14px; margin-left: auto; }
