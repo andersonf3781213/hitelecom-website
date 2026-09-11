@@ -2597,282 +2597,397 @@ const productContentBase ={
     "dateModified": "2026-09-02"
    },
    "282": {
-    "series": "H Series · Tilt Sensor",
-    "tagline": "Precision | Multi-Axis | Ultra-Low Power",
-    "desc": "Hitelecom's tilt sensor integrates ultra-high precision sensing elements, featuring remote monitoring, real-time alerts, and high-precision measurement for accurate and timely tilt data across complex industrial applications",
-    "heroImg": "product/details/282-hero.png",
-    "pdf": "/downloads/h310-ts180c-tilt-sensor-datasheet.pdf",
-     "crumbCat": "Tilt Monitoring",
-    "returnCid": "267",
-    "features": [
-     {
-      "icon": "product/details/282-f1.png",
-      "text": "Accuracy: ±0.005° (customizable)"
-     },
-     {
-      "icon": "product/details/282-f2.png",
-      "text": "IP68-Rated Enclosure"
-     },
-     {
-      "icon": "product/details/282-f3.png",
-      "text": "Resolution: 0.001°"
-     },
-     {
-      "icon": "product/details/282-f4.png",
-      "text": "Supports NFC activation and local device configuration."
-     },
-     {
-      "icon": "product/details/282-f5.png",
-      "text": "Supports remote OTA firmware updates."
-     },
-     {
-      "icon": "product/details/282-f6.png",
-      "text": "Wireless options: 4G LTE, NB-IoT, and LoRa."
-     },
-     {
-      "icon": "product/details/282-f7.png",
-      "text": "Remote Angle Monitoring"
-     },
-     {
-      "icon": "product/details/282-f8.png",
-      "text": "Configurable Threshold Alerts"
-     }
-    ],
-    "specsTitle": "Technical Specifications",
-    "specsDesc": "High-sensitivity sensing elements, real-time data synchronization, and a robust, durable design support precise and reliable tilt monitoring. Designed for up to 10 years of operation at a one-hour reporting interval under specified test conditions, reducing routine maintenance.",
-    "specs": [
-     [
-      "Product Models",
-      "H200/H300/H500"
-     ],
-     [
-      "Range",
-      "X-Axis · Y-Axis (Customizable to Three Axes)"
-     ],
-     [
-      "Accuracy",
-      "±0.005° (Customizable)"
-     ],
-     [
-      "Resolution",
-      "0.001°"
-     ],
-     [
-      "Protocol",
-      "MQTT"
-     ],
-     [
-      "Operating Temperature",
-      "-20°C to +70°C"
-     ],
-     [
-      "Storage Temperature",
-      "-20°C to +80°C"
-     ],
-     [
-      "Battery Life",
-      "Designed for more than 10 years of battery life at a one-hour reporting interval under the specified test conditions. Actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
-     ],
-     [
-      "Installation",
-      "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
-     ]
-    ],
-    "certImgs": [],
-    "scenariosHeading": "Application Scenarios",
-    "scenarios": [
-     {
-      "img": "product/details/282-scen1.jpg",
-      "label": "Bridge Tilt and Deformation"
-     },
-     {
-      "img": "product/details/282-scen2.jpg",
-      "label": "Warehouse Racking"
-     },
-     {
-      "img": "product/details/282-scen3.jpg",
-      "label": "Tower tilt"
-     },
-     {
-      "img": "product/details/282-scen4.jpg",
-      "label": "At-Risk Buildings"
-     },
-     {
-      "img": "product/details/282-scen5.jpg",
-      "label": "Solar tracking system"
-     },
-     {
-      "img": "product/details/282-scen6.jpg",
-      "label": "Energy Infrastructure Tilt Monitoring"
-     },
-     {
-      "img": "product/details/282-scen7.jpg",
-      "label": "Building tilt"
-     },
-     {
-      "img": "product/details/282-scen8.jpg",
-      "label": "Amusement-Ride and Park-Structure Monitoring"
-     }
-    ],
-    "related": [
-     "270",
-     "274",
-     "280",
-     "281",
-     "283",
-     "284",
-     "285",
-     "276",
-     "275"
-    ],
-    "summary": "The Hitelecom H Series tilt sensor is a wireless IoT inclinometer for structural health monitoring. It measures X- and Y-axis tilt (three-axis optional) at ±0.005° accuracy and 0.001° resolution, is designed for more than 10 years of battery life at hourly reporting under specified test conditions, and carries an IP68 rating for long-term outdoor deployment. Connectivity options are 4G, NB-IoT and LoRa.",
-    "sku": "H200/H300/H500",
-    "specsStructured": [
-     {
-      "name": "Product Models",
-      "value": "H200 / H300 / H500"
-     },
-     {
-      "name": "Measurement Axes",
-      "value": "X-Axis · Y-Axis (customizable to three axes)"
-     },
-     {
-      "name": "Accuracy",
-      "value": "±0.005°",
-      "unitText": "degree"
-     },
-     {
-      "name": "Resolution",
-      "value": "0.001°",
-      "unitText": "degree"
-     },
-     {
-      "name": "Protocol",
-      "value": "MQTT"
-     },
-     {
-      "name": "Wireless",
-      "value": "4G / NB-IoT / LoRa"
-     },
-     {
-      "name": "Operating Temperature",
-      "value": "-20°C to 70°C",
-      "unitText": "degree Celsius",
-      "minValue": -20,
-      "maxValue": 70
-     },
-     {
-      "name": "Storage Temperature",
-      "value": "-20°C to 80°C",
-      "unitText": "degree Celsius",
-      "minValue": -20,
-      "maxValue": 80
-     },
-     {
-      "name": "Battery Life",
-      "value": "Designed for more than 10 years of battery life at a one-hour reporting interval under specified test conditions"
-     },
-     {
-      "name": "Ingress Protection",
-      "value": "IP68"
-     },
-     {
-      "name": "Installation",
-      "value": "Mounting lugs · Pole clamp · Slotted mount"
-     },
-     {
-      "name": "Configuration",
-      "value": "NFC activation; OTA firmware upgrade"
-     }
-    ],
-    "certifications": [
-     "IP68"
-    ],
-    "applications": [
-     {
-      "name": "Slope stability monitoring",
-      "desc": "Supports earlier identification of abnormal slope movement on highways, open-pit mines, and cut embankments.",
-      "img": "product/details/281-scen7.jpg"
-     },
-     {
-      "name": "Railway infrastructure",
-      "desc": "Monitors track bed settlement, retaining walls and catenary mast inclination along railway lines."
-     },
-     {
-      "name": "Tunnel monitoring",
-      "desc": "Tracks lining convergence and segment rotation during and after tunnel construction."
-     },
-     {
-      "name": "Bridge deformation",
-      "desc": "Measures pier tilt, girder rotation and bearing displacement for bridge health monitoring.",
-      "img": "product/details/282-scen1.jpg"
-     },
-     {
-      "name": "Metro and subway structures",
-      "desc": "Monitors station box deflection and shield tunnel deformation near adjacent excavation works."
-     },
-     {
-      "name": "Construction sites and temporary structures",
-      "desc": "Watches scaffolding, tower cranes, formwork and site sheds for unsafe inclination."
-     },
-     {
-      "name": "Sea dikes and dams",
-      "desc": "Continuous inclination monitoring of embankment dams, sea walls and reservoir slopes.",
-      "img": "solution/67-scen-0.jpg"
-     },
-     {
-      "name": "Heritage buildings and ancient pagodas",
-      "desc": "Non-invasive tilt tracking for protected historic structures where drilling is not permitted.",
-      "img": "product/details/282-scen4.jpg"
-     },
-     {
-      "name": "Tree tilt monitoring",
-      "desc": "Detects root failure and lean progression in urban trees ahead of typhoon season.",
-      "img": "product/details/280-scen3.jpg"
-     },
-     {
-      "name": "Street light poles",
-      "desc": "Flags pole inclination from vehicle impact or foundation loosening across municipal lighting assets."
-     },
-     {
-      "name": "Transmission towers",
-      "desc": "Monitors foundation settlement and tower inclination on power transmission lines.",
-      "img": "product/details/282-scen3.jpg"
-     },
-     {
-      "name": "Telecom towers",
-      "desc": "Tracks mast verticality and guyed-tower alignment for communication infrastructure."
-     },
-     {
-      "name": "Warehouse racking",
-      "desc": "Detects rack upright deflection from forklift impact, supporting earlier intervention before damage escalates.",
-      "img": "product/details/282-scen2.jpg"
-     }
-    ],
-    "faqs": [
-     {
-      "q": "What structures can the H Series tilt sensor monitor?",
-      "a": "The H Series tilt sensor is deployed on slopes and embankments, railway infrastructure, tunnels, bridges, metro structures, construction sites and temporary works, sea dikes and dams, heritage buildings and ancient pagodas, urban trees, street light poles, transmission towers, telecom towers, and warehouse racking. Its IP68 rating and long battery life suit it to long-term outdoor installation; battery life depends on reporting interval, network coverage, and site conditions."
-     },
-     {
-      "q": "How accurate is the H Series tilt sensor?",
-      "a": "Standard accuracy is ±0.005° with 0.001° resolution on the X and Y axes. A three-axis configuration is available on request, and accuracy can be customized for applications requiring tighter tolerance."
-     },
-     {
-      "q": "How long does the battery last?",
-      "a": "Designed for more than 10 years at a one-hour reporting interval under specified test conditions. Battery life scales with reporting frequency; more frequent reporting shortens service life. Most configurations run on battery without mains power or a solar panel — confirm power options for your configuration."
-     },
-     {
-      "q": "Which wireless technology should I choose — 4G, NB-IoT or LoRa?",
-      "a": "Choose 4G where cellular coverage is reliable and higher data rates or firmware updates over the air are needed. NB-IoT may suit indoor or underground sites such as tunnels and basements where the local operator provides adequate coverage. Choose LoRa when deploying a dense cluster of sensors on one site with a private gateway and no per-device SIM cost."
-     },
-     {
-      "q": "Can it be installed on heritage structures without drilling?",
-      "a": "Yes. The sensor supports mounting lugs, a pole clamp, or a slotted mount. For protected structures, clamp and adhesive mounting avoid penetrating the fabric of the building. Contact Hitelecom for site-specific mounting guidance."
-     }
-    ],
-    "dateModified": "2026-09-02"
+  "series": "Wireless Tilt Sensor for Remote Structural Monitoring",
+  "tagline": "Precision | Multi-Axis | Ultra-Low Power",
+  "desc": "A wireless inclinometer for remote monitoring of poles, towers, bridge elements and warehouse rack uprights, with 4G, NB-IoT or LoRa connectivity and configured alerts.",
+  "heroImg": "product/details/282-hero.png",
+  "pdf": "/downloads/h310-ts180c-tilt-sensor-datasheet.pdf",
+  "crumbCat": "Tilt Monitoring",
+  "returnCid": "267",
+  "features": [
+   {
+    "icon": "product/details/282-f1.png",
+    "text": "Accuracy: ±0.005° (customizable)"
    },
+   {
+    "icon": "product/details/282-f2.png",
+    "text": "IP68-Rated Enclosure"
+   },
+   {
+    "icon": "product/details/282-f3.png",
+    "text": "Resolution: 0.001°"
+   },
+   {
+    "icon": "product/details/282-f4.png",
+    "text": "Supports NFC activation and local device configuration."
+   },
+   {
+    "icon": "product/details/282-f5.png",
+    "text": "Supports remote OTA firmware updates."
+   },
+   {
+    "icon": "product/details/282-f6.png",
+    "text": "Wireless options: 4G LTE, NB-IoT, and LoRa."
+   },
+   {
+    "icon": "product/details/282-f7.png",
+    "text": "Remote Angle Monitoring"
+   },
+   {
+    "icon": "product/details/282-f8.png",
+    "text": "Configurable Threshold Alerts"
+   }
+  ],
+  "specsTitle": "Technical Specifications",
+  "specsDesc": "High-sensitivity sensing elements, real-time data synchronization, and a robust, durable design support precise and reliable tilt monitoring. Designed for up to 10 years of operation at a one-hour reporting interval under specified test conditions, reducing routine maintenance.",
+  "specs": [
+   [
+    "Product Models",
+    "H200/H300/H500"
+   ],
+   [
+    "Range",
+    "X-Axis · Y-Axis (Customizable to Three Axes)"
+   ],
+   [
+    "Accuracy",
+    "±0.005° (Customizable)"
+   ],
+   [
+    "Resolution",
+    "0.001°"
+   ],
+   [
+    "Protocol",
+    "MQTT"
+   ],
+   [
+    "Operating Temperature",
+    "-20°C to +70°C"
+   ],
+   [
+    "Storage Temperature",
+    "-20°C to +80°C"
+   ],
+   [
+    "Battery Life",
+    "Designed for up to 10 years at a one-hour reporting interval under specified test conditions; actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
+   ],
+   [
+    "Installation",
+    "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
+   ]
+  ],
+  "certImgs": [],
+  "scenariosHeading": "Application Scenarios",
+  "scenarios": [
+   {
+    "img": "product/details/282-scen1.jpg",
+    "label": "Bridge Tilt and Deformation"
+   },
+   {
+    "img": "product/details/282-scen2.jpg",
+    "label": "Warehouse Racking"
+   },
+   {
+    "img": "product/details/282-scen3.jpg",
+    "label": "Tower tilt"
+   },
+   {
+    "img": "product/details/282-scen4.jpg",
+    "label": "At-Risk Buildings"
+   },
+   {
+    "img": "product/details/282-scen5.jpg",
+    "label": "Solar tracking system"
+   },
+   {
+    "img": "product/details/282-scen6.jpg",
+    "label": "Energy Infrastructure Tilt Monitoring"
+   },
+   {
+    "img": "product/details/282-scen7.jpg",
+    "label": "Building tilt"
+   },
+   {
+    "img": "product/details/282-scen8.jpg",
+    "label": "Amusement-Ride and Park-Structure Monitoring"
+   }
+  ],
+  "related": [
+   "270",
+   "274",
+   "280",
+   "281",
+   "283",
+   "284",
+   "285",
+   "276",
+   "275"
+  ],
+  "summary": "The Hitelecom H Series wireless tilt sensor is an inclinometer that measures changes in angle at its mounting point. It is designed for monitoring poles, towers, bridge elements and warehouse rack uprights. Depending on the model, readings are transmitted over 4G, NB-IoT or LoRa for remote monitoring and configured alerts. Choose the model by measurement performance, reporting requirements, installation conditions and platform compatibility.",
+  "specsStructured": [
+   {
+    "name": "Product Models",
+    "value": "H200 / H300 / H500"
+   },
+   {
+    "name": "Measurement Axes",
+    "value": "X-Axis · Y-Axis (customizable to three axes)"
+   },
+   {
+    "name": "Accuracy",
+    "value": "±0.005°",
+    "unitText": "degree"
+   },
+   {
+    "name": "Resolution",
+    "value": "0.001°",
+    "unitText": "degree"
+   },
+   {
+    "name": "Protocol",
+    "value": "MQTT"
+   },
+   {
+    "name": "Wireless",
+    "value": "4G / NB-IoT / LoRa"
+   },
+   {
+    "name": "Operating Temperature",
+    "value": "-20°C to 70°C",
+    "unitText": "degree Celsius",
+    "minValue": -20,
+    "maxValue": 70
+   },
+   {
+    "name": "Storage Temperature",
+    "value": "-20°C to 80°C",
+    "unitText": "degree Celsius",
+    "minValue": -20,
+    "maxValue": 80
+   },
+   {
+    "name": "Battery Life",
+    "value": "Designed for up to 10 years at a one-hour reporting interval under specified test conditions"
+   },
+   {
+    "name": "Ingress Protection",
+    "value": "IP68"
+   },
+   {
+    "name": "Installation",
+    "value": "Mounting lugs · Pole clamp · Slotted mount"
+   },
+   {
+    "name": "Configuration",
+    "value": "NFC activation; OTA firmware upgrade"
+   }
+  ],
+  "certifications": [
+   "IP68"
+  ],
+  "applications": [
+   {
+    "name": "Slopes and embankments",
+    "desc": "Observe inclination changes at surface points selected in the slope-monitoring design. Establish stable mounting and complementary measurements where deeper movement or overall displacement must be assessed.",
+    "img": "product/details/281-scen7.jpg"
+   },
+   {
+    "name": "Railway infrastructure",
+    "desc": "Monitor inclination at selected railway structures such as retaining walls and catenary supports. Use a dedicated settlement method where track-bed settlement is the required measurement."
+   },
+   {
+    "name": "Tunnel monitoring",
+    "desc": "Observe angular changes at selected tunnel lining or segment locations. Where cross-section convergence is required, use a suitable distance measurement or a validated multi-point geometric model."
+   },
+   {
+    "name": "Bridge elements",
+    "desc": "Measure local angular changes at selected bridge elements. Specify displacement measurements separately where bearing movement or overall deflection is required.",
+    "img": "product/details/282-scen1.jpg"
+   },
+   {
+    "name": "Metro and subway structures",
+    "desc": "Track local inclination changes at selected metro structural points during a defined monitoring period. Establish the baseline before the relevant works and relate alerts to the project inspection process."
+   },
+   {
+    "name": "Construction and temporary structures",
+    "desc": "Track inclination at approved points on temporary works and record any repositioning during the project. Validate the required notification time and do not assume that periodic monitoring provides a machine safety-control function."
+   },
+   {
+    "name": "Sea dikes, dams and reservoir slopes",
+    "desc": "Monitor angular changes at selected dam, sea-wall or reservoir-slope points. Define the site exposure, mounting and power requirements, and use separate instruments for seepage, water pressure or settlement where required.",
+    "img": "solution/67-scen-0.jpg"
+   },
+   {
+    "name": "Heritage buildings and ancient pagodas",
+    "desc": "Observe inclination at approved monitoring points on protected structures. Select a conservation-compatible fixing method and document the reference condition, mount inspections and any later adjustment.",
+    "img": "product/details/282-scen4.jpg"
+   },
+   {
+    "name": "Urban trees",
+    "desc": "Observe persistent changes in trunk inclination at a defined mounting point. Review wind conditions, growth and mount condition, and use a qualified tree assessment where a change needs investigation.",
+    "img": "product/details/280-scen3.jpg"
+   },
+   {
+    "name": "Street light poles",
+    "desc": "Track inclination changes at defined points on street light poles. Compare readings with the installation reference and inspect the pole, foundation and mount when a persistent change is observed."
+   },
+   {
+    "name": "Transmission towers",
+    "desc": "Observe local inclination changes at selected transmission-tower points. Where foundation movement is a project concern, combine tilt readings with an appropriate foundation-monitoring method.",
+    "img": "product/details/282-scen3.jpg"
+   },
+   {
+    "name": "Telecom towers",
+    "desc": "Track inclination at defined mast or tower locations and relate changes to inspection and maintenance records. Use a suitable multi-point or complementary survey where overall alignment is required."
+   },
+   {
+    "name": "Warehouse racking",
+    "desc": "Monitor inclination at selected rack uprights to help identify persistent changes for inspection. Define measurement points and the reference condition with the rack supplier or responsible engineer; each sensor represents its mounting location.",
+    "img": "product/details/282-scen2.jpg"
+   },
+   {
+    "name": "Billboard support poles",
+    "desc": "Candidate application — to be released after model selection and field validation. Monitor inclination changes at selected billboard support points before and after significant weather or site events, and assess wind-related movement, mounting rigidity and the measurement profile when defining the monitoring plan."
+   },
+   {
+    "name": "Large equipment and injection-moulding machines",
+    "desc": "Candidate application — to be released after model selection and field validation. A validated tilt configuration may support static levelling checks and slow orientation trends on large equipment; assess vibration, settling time and mounting before deployment, and use the appropriate instruments for alignment, vibration diagnostics or process measurements."
+   }
+  ],
+  "faqs": [
+   {
+    "id": "faq-measurement",
+    "q": "What does a wireless tilt sensor measure?",
+    "a": "A wireless tilt sensor measures inclination and changes in angle at its mounting point. Compare readings with an installation reference to observe changes in the monitored element. A reading describes local orientation; it does not independently establish the movement, condition or safety of the entire structure."
+   },
+   {
+    "id": "faq-applications",
+    "q": "Where can H Series tilt monitoring be used?",
+    "a": "H Series tilt monitoring is intended for selected points on structures such as warehouse racks, poles, towers, bridges and retaining structures. The monitoring plan determines suitable mounting points and whether complementary instruments are needed. Applications involving strong vibration, protected surfaces or rapid movement require an assessment of the selected configuration."
+   },
+   {
+    "id": "faq-accuracy",
+    "q": "Does 0.001° resolution mean 0.001° accuracy?",
+    "a": "No. Resolution describes the smallest output increment; accuracy describes agreement with a reference under stated conditions. For selection, compare accuracy, resolution, repeatability and temperature performance for the same model and measurement range. A finer output increment does not by itself demonstrate that smaller physical changes can be measured reliably."
+   },
+   {
+    "id": "faq-model",
+    "q": "How should I choose a tilt sensor configuration?",
+    "a": "Start with the smallest change you need to observe, the expected angle range, the site temperature range and the required notification time. Then select the radio, power supply and mounting method. Confirm that the model, hardware revision, firmware and datasheet on the quotation describe the same configuration."
+   },
+   {
+    "id": "faq-axes",
+    "q": "Does a three-axis sensor provide three independent orientation angles?",
+    "a": "Not necessarily. Three-axis acceleration measurements and three independent orientation angles are different specifications. A gravity-based inclinometer does not determine rotation about the gravity direction from gravity alone. Confirm the output angles, coordinate convention, measurement ranges and sensing method of the selected configuration."
+   },
+   {
+    "id": "faq-connectivity",
+    "q": "Should I choose 4G, NB-IoT or LoRa for tilt monitoring?",
+    "a": "Cellular versions can suit distributed sites with compatible operator coverage and regional bands. A LoRa installation requires a compatible receiver or gateway and a suitable backhaul path. Compare site coverage, infrastructure, reporting requirements and ongoing service costs; verify performance at the intended mounting positions before a larger deployment."
+   },
+   {
+    "id": "faq-lorawan",
+    "q": "Can a LoRa tilt sensor connect to any LoRaWAN gateway?",
+    "a": "No. LoRa describes a radio technology; LoRaWAN specifies a networking protocol using that technology. Confirm the protocol, regional radio configuration and compatible gateway for the selected model. A product described as LoRa should not be assumed to work with every LoRaWAN gateway or network server."
+   },
+   {
+    "id": "faq-platform",
+    "q": "Can the sensor send readings to our own monitoring platform?",
+    "a": "For a configuration with MQTT support, integration requires agreement on the endpoint, authentication, payload fields, units and timestamps. A LoRa deployment also requires a compatible receiver or gateway and forwarding path. Confirm device-management commands and test a sample data exchange with the selected firmware before deployment."
+   },
+   {
+    "id": "faq-alerts",
+    "q": "How quickly can a tilt change trigger a remote alert?",
+    "a": "Separate the sampling interval from the upload interval and the notification delay. A device that only uploads hourly may not deliver a change between uploads immediately unless a separate event-reporting mechanism is supported and enabled. Specify the required detection-to-notification time and verify the complete device, network and platform path."
+   },
+   {
+    "id": "faq-battery",
+    "q": "What determines the battery life of a wireless tilt sensor?",
+    "a": "Battery capacity, sampling, reporting, signal conditions, retries, temperature and enabled functions all affect service life. A lifetime estimate applies to its stated configuration and assumptions. Compare the documented battery profile with the reporting and alert requirements of your project, including the expected maintenance and battery-replacement process."
+   },
+   {
+    "id": "faq-protection",
+    "q": "Does every H Series configuration have the same outdoor protection?",
+    "a": "Use the protection rating and environmental specification for the exact supplied assembly. Enclosure material, seals and connectors can differ between versions. Check the documented conditions against the site environment; an enclosure rating alone does not establish suitability for every temperature, corrosive environment or mounting arrangement."
+   },
+   {
+    "id": "faq-mounting",
+    "q": "How should a tilt sensor be mounted and referenced?",
+    "a": "Use a rigid, stable mounting point that represents the element being monitored. Record the sensor axes and reference reading after installation, and record any later repositioning. Protected structures require an approved fixing method compatible with the surface; a universal adhesive mounting method should not be assumed."
+   },
+   {
+    "id": "faq-racks",
+    "q": "How many tilt sensors does a warehouse rack installation need?",
+    "a": "There is no universal sensor-per-rack rule. The monitoring layout depends on rack geometry, connections, likely movement modes and the locations where a change needs to be detected. One sensor reports local inclination, so the layout should be agreed with the rack supplier or responsible engineer and checked during commissioning."
+   },
+   {
+    "id": "faq-machinery",
+    "q": "Can a tilt sensor be used on an injection-moulding machine or other large equipment?",
+    "a": "A suitable configuration may support static levelling checks or slow changes in equipment orientation at defined mounting points. Assess operating vibration and the required settling time before using readings taken during operation. Tilt measurements do not by themselves provide vibration spectra, spindle accuracy, mould alignment or process-quality measurements."
+   },
+   {
+    "id": "faq-displacement",
+    "q": "Can tilt readings be converted into displacement or settlement?",
+    "a": "Conversion requires a defined geometric model, suitable reference points and validated assumptions about how the structure moves. A local angle alone cannot determine arbitrary bending, translation or settlement. Where displacement is the required quantity, the monitoring design may need additional measurement points or a complementary instrument."
+   },
+   {
+    "id": "faq-quote",
+    "q": "What should I include in a project or OEM quotation request?",
+    "a": "Include the installation country, monitored asset, estimated quantity, required angle performance, notification time and preferred platform. Also identify mounting constraints, power preferences and any branding or protocol customization. These details allow the proposed hardware, integration work, supporting documents and delivery scope to be assessed together."
+   }
+  ],
+  "dateModified": "2026-09-11",
+  "schemaProfile": "series-overview",
+  "deepSections": [
+   {
+    "after": "specs",
+    "h": "What does the sensor tell you?",
+    "paras": [
+     "A tilt reading describes the orientation of the sensor at its mounting point. Comparing readings with an installation reference helps identify changes in the monitored element. Use the direction, magnitude and persistence of a change to decide whether an inspection is needed. Tilt data supports structural monitoring; it does not directly establish displacement, the cause of movement or the safety of the entire structure."
+    ]
+   },
+   {
+    "after": "specs",
+    "h": "Choosing a configuration for your site",
+    "paras": [
+     "Start with the movement you need to observe and the time within which you need to know about it. Compare measurement range, accuracy conditions, temperature performance and mounting requirements for the same model. Then choose the radio and power profile that suit the site and the monitoring platform.",
+     "A remote pole installation may suit cellular reporting where the selected operator and frequency bands are supported. A group of sensors within one site may suit a compatible LoRa gateway. Match the required sampling and alert timing to the power budget, and confirm the data path to Hitelecom Cloud or your monitoring platform."
+    ]
+   },
+   {
+    "after": "specs",
+    "h": "Sampling, reporting and alerts",
+    "paras": [
+     "Sampling determines when an angle is measured. Reporting determines when a reading reaches the platform. Notification depends on the configured threshold logic and communication path. Define the required response time before choosing a battery and reporting profile, and validate the complete path during commissioning.",
+     "Select a sampling, reporting and alert profile for the project, and confirm the notification timing for the supplied device and platform configuration."
+    ]
+   },
+   {
+    "after": "scenarios",
+    "h": "Data integration",
+    "paras": [
+     "Cellular configurations support MQTT integration with Hitelecom Cloud or a compatible customer platform. Agree the endpoint, authentication, payload fields, units and timestamps before deployment.",
+     "A LoRa installation also requires a compatible receiver or gateway and a forwarding path. Test sample messages and supported configuration commands with the selected firmware."
+    ]
+   },
+   {
+    "after": "scenarios",
+    "h": "Installation and maintenance",
+    "paras": [
+     "Document the mounting point, sensor axes and installation reference. Keep a record of any repositioning or maintenance that could change the reference. Confirm how battery replacement, configuration and firmware maintenance apply to the supplied version, and validate the notification path during commissioning."
+    ]
+   },
+   {
+    "after": "scenarios",
+    "h": "Project and OEM enquiries",
+    "paras": [
+     "Share the installation country, monitored asset, estimated quantity, required angle performance, notification time and preferred platform. Include mounting constraints and any branding or protocol requirements so that hardware, integration work and delivery documents can be assessed together."
+    ]
+   }
+  ]
+ },
    "283": {
     "series": "H Series · Radar Distance Sensor",
     "tagline": "Low Power | Precision | Millimeter-Level",
@@ -39978,8 +40093,8 @@ const detailSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
       desc: 'Submersible level sensor for rivers, reservoirs and tanks, with a 0–200 m range and ±0.5% FS accuracy, with 4G/NB-IoT reporting and Hitelecom Cloud integration.',
     },
     '282': {
-      title: 'Tilt Sensor (Inclinometer) | H Series | Hitelecom',
-      desc: 'Wireless tilt sensor (inclinometer) for structural health monitoring of buildings, bridges and towers, with remote alerts and 4G/NB-IoT connectivity.',
+      title: 'Wireless Tilt Sensor | 4G, NB-IoT & LoRa | Hitelecom',
+      desc: 'Monitor tilt on poles, towers, bridges and warehouse racks with Hitelecom wireless sensors. Compare 4G, NB-IoT and LoRa options for your project.',
     },
     '283': {
       title: 'Radar Distance Sensor | 0.3–50 m | Hitelecom',

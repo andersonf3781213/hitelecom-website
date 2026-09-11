@@ -40,7 +40,15 @@ const heroUrl = new URL(heroSrc, Astro.site).href;
 // 规格：优先结构化，回退旧 [name,value] 格式（19 系列零内容成本）
 const specSource = d.specsStructured ?? d.specs.map(([name, value]) => ({ name, value }));
 const sku = d.sku ?? d.specs.find(([k]) => /models?|型号/i.test(k))?.[1] ?? d.series;
-const additionalProperty = [
+// V30 GEO/SEO：倾斜页系列概览模式——不输出合并 sku/mpn、跨品类 isSimilarTo，
+// additionalProperty 仅保留无型号歧义的核实值；面包屑用 IoT Sensors 目录（/product 实为云平台页，面包屑层级错误）。
+const isSeriesOverview = d.schemaProfile === 'series-overview';
+const additionalProperty = isSeriesOverview
+  ? [
+      { '@type': 'PropertyValue', name: 'Measurement', value: 'Inclination and changes in angle at the mounting point' },
+      { '@type': 'PropertyValue', name: 'Connectivity options', value: '4G, NB-IoT or LoRa, depending on the model' },
+    ]
+  : [
   ...specSource.map((s) => ({
     '@type': 'PropertyValue',
     name: s.name,
@@ -61,24 +69,25 @@ const productLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
   '@id': `${pageUrl}#product`,
-  name: d.series,
-  sku,
-  mpn: sku,
+  name: isSeriesOverview ? 'Hitelecom H Series Wireless Tilt Sensor' : d.series,
+  ...(isSeriesOverview ? {} : { sku, mpn: sku }),
   description: d.summary ?? d.desc,
   image: { '@type': 'ImageObject', url: heroUrl, caption: d.series },
   brand: { '@type': 'Brand', name: 'Hitelecom' },
   manufacturer: { '@id': 'https://www.hitelecom.com/#organization' },
-  category: d.crumbCat,
+  category: isSeriesOverview ? 'Wireless tilt sensor' : d.crumbCat,
   countryOfOrigin: { '@type': 'Country', name: 'CN' },
   url: pageUrl,
   additionalProperty,
   // B2B 询价产品：无公开价格时不输出 Offer（Google Product 文档要求价格字段，空 Offer 会产生结构化数据错误）。
   // 出现真实、当前有效的报价条件时才在此加入 offers。audience 不输出——避免把不适用行业的统一受众写入结构化数据。
   ...(d.applications?.length ? { keywords: d.applications.map((a) => a.name).join(', ') } : {}),
-  isSimilarTo: d.related
-    .filter((rid) => productContent.en.details[rid])
-    .slice(0, 6)
-    .map((rid) => ({ '@type': 'Product', '@id': `https://www.hitelecom.com/product/${productSlugs[rid] ?? rid}#product` })),
+  ...(isSeriesOverview ? {} : {
+    isSimilarTo: d.related
+      .filter((rid) => productContent.en.details[rid])
+      .slice(0, 6)
+      .map((rid) => ({ '@type': 'Product', '@id': `https://www.hitelecom.com/product/${productSlugs[rid] ?? rid}#product` })),
+  }),
   // 产品级不再声明 ISO 9001（体系认证属组织层级，见 BaseLayout）；IP 等级以规格表呈现
 };
 const webPageLd = {
@@ -91,6 +100,9 @@ const webPageLd = {
   inLanguage: 'en',
   isPartOf: { '@id': 'https://www.hitelecom.com/#website' },
   about: { '@id': `${pageUrl}#product` },
+  ...(isSeriesOverview ? { mainEntity: { '@id': `${pageUrl}#product` } } : {}),
+  breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
+  ...(d.faqs?.length ? { hasPart: { '@id': `${pageUrl}#faq` } } : {}),
   primaryImageOfPage: { '@type': 'ImageObject', url: heroUrl },
   ...(d.dateModified ? { dateModified: d.dateModified } : {}),
 };
@@ -99,8 +111,14 @@ const faqLd = d.faqs?.length
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
       '@id': `${pageUrl}#faq`,
+      url: `${pageUrl}#faq`,
+      ...(isSeriesOverview ? { name: `${d.series} FAQs` } : {}),
+      inLanguage: 'en',
+      isPartOf: { '@id': `${pageUrl}#webpage` },
+      about: { '@id': `${pageUrl}#product` },
       mainEntity: d.faqs.map((f) => ({
         '@type': 'Question',
+        ...(f.id ? { '@id': `${pageUrl}#${f.id}` } : {}),
         name: f.q,
         acceptedAnswer: { '@type': 'Answer', text: f.a },
       })),
@@ -109,11 +127,18 @@ const faqLd = d.faqs?.length
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://www.hitelecom.com/product' },
-    { '@type': 'ListItem', position: 3, name: d.series },
-  ],
+  '@id': `${pageUrl}#breadcrumb`,
+  itemListElement: isSeriesOverview
+    ? [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+        { '@type': 'ListItem', position: 2, name: 'IoT Sensors', item: 'https://www.hitelecom.com/product/lists/cid/261' },
+        { '@type': 'ListItem', position: 3, name: 'Wireless Tilt Sensor', item: pageUrl },
+      ]
+    : [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://www.hitelecom.com/product' },
+        { '@type': 'ListItem', position: 3, name: d.series },
+      ],
 };---
 
 <BaseLayout locale="en" preloadImage={heroSrc} title={detailSeo.en[id]?.title ?? `${d.series} | Hitelecom Industrial IoT Sensors`} description={detailSeo.en[id]?.desc ?? d.desc}>
@@ -164,7 +189,15 @@ const breadcrumbLd = {
         <div class="indexmid">
           <div class="so_info_1_mid reveal">
             <div class="so_info_1_mid_left">
-              <a href={l('/', 'en')}>Home</a> / <a href={l('/product/', 'en')}>Products</a> / <span>{d.crumbCat}</span>
+              {isSeriesOverview ? (
+                <Fragment>
+                  <a href={l('/', 'en')}>Home</a> / <a href={l('/product/lists/cid/261', 'en')}>IoT Sensors</a> / <span>Wireless Tilt Sensor</span>
+                </Fragment>
+              ) : (
+                <Fragment>
+                  <a href={l('/', 'en')}>Home</a> / <a href={l('/product/', 'en')}>Products</a> / <span>{d.crumbCat}</span>
+                </Fragment>
+              )}
             </div>
             <div class="so_info_1_mid_right">
               <a href={l(`/product/lists/cid/${d.returnCid}`, 'en')}>Back to Products</a>
@@ -237,6 +270,16 @@ const breadcrumbLd = {
       </div>
     </div>
 
+    {/* V30 深度内容区（schemaProfile 数据驱动）：测量解读 / 选型 / 采样上报告警 */}
+    {(d.deepSections ?? []).filter((s) => s.after === 'specs').map((s) => (
+      <section class="clearfix pro_apps" aria-label={s.h}>
+        <div class="indexmid">
+          <h2 class="index_1_1 reveal">{s.h}</h2>
+          {s.paras.map((para) => <p class="pro_apps_intro reveal">{para}</p>)}
+        </div>
+      </section>
+    ))}
+
     {/* CMS 新品正文（Overview 附加节） */}
     {bodyHtml ? (
       <section class="clearfix pro_apps" aria-labelledby="pro-overview-title">
@@ -292,14 +335,24 @@ const breadcrumbLd = {
     </div>
     ) : null}
 
+    {/* V30 深度内容区：数据接入 / 安装维护 / 项目与 OEM 询价 */}
+    {(d.deepSections ?? []).filter((s) => s.after === 'scenarios').map((s) => (
+      <section class="clearfix pro_apps" aria-label={s.h}>
+        <div class="indexmid">
+          <h2 class="index_1_1 reveal">{s.h}</h2>
+          {s.paras.map((para) => <p class="pro_apps_intro reveal">{para}</p>)}
+        </div>
+      </section>
+    ))}
+
     {/* FAQ（GEO：AI 引用率最高的内容形态；正文与 JSON-LD 同步，不作弊） */}
     {d.faqs?.length ? (
-      <section class="clearfix pro_faq" aria-labelledby="pro-faq-title">
+      <section class="clearfix pro_faq" id="faq" aria-labelledby="pro-faq-title">
         <div class="indexmid">
           <h2 class="index_1_1 reveal" id="pro-faq-title">Frequently Asked Questions</h2>
           <dl class="pro_faq_list">
             {d.faqs.map((f) => (
-              <div class="pro_faq_item reveal">
+              <div class="pro_faq_item reveal" id={f.id ?? undefined}>
                 <dt>{f.q}</dt>
                 <dd>{f.a}</dd>
               </div>
