@@ -2607,15 +2607,15 @@ const productContentBase ={
   "features": [
    {
     "icon": "product/details/282-f1.png",
-    "text": "Accuracy: ±0.005° (customizable)"
+    "text": "Accuracy grades 0.1° / 0.01° / 0.001° (per configuration)"
    },
    {
     "icon": "product/details/282-f2.png",
-    "text": "IP68-Rated Enclosure"
+    "text": "Metal enclosure IP68 · Plastic IP66"
    },
    {
     "icon": "product/details/282-f3.png",
-    "text": "Resolution: 0.001°"
+    "text": "Resolution grades down to 0.0005°"
    },
    {
     "icon": "product/details/282-f4.png",
@@ -2638,24 +2638,20 @@ const productContentBase ={
     "text": "Configurable Threshold Alerts"
    }
   ],
-  "specsTitle": "Technical Specifications",
-  "specsDesc": "High-sensitivity sensing elements, real-time data synchronization, and a robust, durable design support precise and reliable tilt monitoring. Designed for up to 10 years of operation at a one-hour reporting interval under specified test conditions, reducing routine maintenance.",
+  "specsTitle": "Model specifications — H310-TS180C",
+  "specsDesc": "Values from the published H310-TS180C datasheet. Performance grade, battery and enclosure are selected per supplied configuration — do not apply one configuration’s specifications to every H Series device. Service life depends on capacity, sampling and reporting profile, radio conditions and temperature.",
   "specs": [
    [
-    "Product Models",
-    "H200/H300/H500"
-   ],
-   [
-    "Range",
-    "X-Axis · Y-Axis (Customizable to Three Axes)"
+    "Tilt Range",
+    "−90° to +90°"
    ],
    [
     "Accuracy",
-    "±0.005° (Customizable)"
+    "0.1° / 0.01° / 0.001° (grades per configuration)"
    ],
    [
     "Resolution",
-    "0.001°"
+    "0.01° / 0.001° / 0.0005° (grades per configuration)"
    ],
    [
     "Protocol",
@@ -2663,19 +2659,31 @@ const productContentBase ={
    ],
    [
     "Operating Temperature",
-    "-20°C to +70°C"
+    "−40°C to +85°C"
    ],
    [
     "Storage Temperature",
-    "-20°C to +80°C"
+    "−40°C to +85°C"
+   ],
+   [
+    "Battery Capacity",
+    "19,000 mAh; 38,000 mAh option"
    ],
    [
     "Battery Life",
-    "Designed for up to 10 years at a one-hour reporting interval under specified test conditions; actual battery life varies by model, sensing configuration, network coverage, retransmissions, operating temperature, sampling rate, and reporting interval."
+    "Service life depends on capacity, sampling, uploads, radio conditions and temperature; a lifetime estimate applies to its stated configuration and assumptions."
+   ],
+   [
+    "Enclosure Protection",
+    "Metal: IP68 · Plastic: IP66"
    ],
    [
     "Installation",
-    "Mounting lugs, pole clamp, or slotted mount (varies by configuration)"
+    "Mounting lugs · Pole clamp · Slotted mount (varies by configuration)"
+   ],
+   [
+    "Configuration",
+    "NFC activation; OTA firmware upgrade"
    ]
   ],
   "certImgs": [],
@@ -2728,21 +2736,20 @@ const productContentBase ={
   "summary": "The Hitelecom H Series wireless tilt sensor is an inclinometer that measures changes in angle at its mounting point. It is designed for monitoring poles, towers, bridge elements and warehouse rack uprights. Depending on the model, readings are transmitted over 4G, NB-IoT or LoRa for remote monitoring and configured alerts. Choose the model by measurement performance, reporting requirements, installation conditions and platform compatibility.",
   "specsStructured": [
    {
-    "name": "Product Models",
-    "value": "H200 / H300 / H500"
-   },
-   {
-    "name": "Measurement Axes",
-    "value": "X-Axis · Y-Axis (customizable to three axes)"
+    "name": "Tilt Range",
+    "value": "−90° to +90°",
+    "unitText": "degree",
+    "minValue": -90,
+    "maxValue": 90
    },
    {
     "name": "Accuracy",
-    "value": "±0.005°",
+    "value": "0.1° / 0.01° / 0.001° (grades per configuration)",
     "unitText": "degree"
    },
    {
     "name": "Resolution",
-    "value": "0.001°",
+    "value": "0.01° / 0.001° / 0.0005° (grades per configuration)",
     "unitText": "degree"
    },
    {
@@ -2750,30 +2757,31 @@ const productContentBase ={
     "value": "MQTT"
    },
    {
-    "name": "Wireless",
-    "value": "4G / NB-IoT / LoRa"
-   },
-   {
     "name": "Operating Temperature",
-    "value": "-20°C to 70°C",
+    "value": "−40°C to +85°C",
     "unitText": "degree Celsius",
-    "minValue": -20,
-    "maxValue": 70
+    "minValue": -40,
+    "maxValue": 85
    },
    {
     "name": "Storage Temperature",
-    "value": "-20°C to 80°C",
+    "value": "−40°C to +85°C",
     "unitText": "degree Celsius",
-    "minValue": -20,
-    "maxValue": 80
+    "minValue": -40,
+    "maxValue": 85
+   },
+   {
+    "name": "Battery Capacity",
+    "value": "19,000 mAh; 38,000 mAh option",
+    "unitText": "mAh"
    },
    {
     "name": "Battery Life",
-    "value": "Designed for up to 10 years at a one-hour reporting interval under specified test conditions"
+    "value": "Service life depends on capacity, sampling, uploads, radio conditions and temperature"
    },
    {
     "name": "Ingress Protection",
-    "value": "IP68"
+    "value": "Metal: IP68 · Plastic: IP66"
    },
    {
     "name": "Installation",
@@ -2943,47 +2951,44 @@ const productContentBase ={
   "deepSections": [
    {
     "after": "specs",
-    "h": "What does the sensor tell you?",
+    "h": "A local angle. A clearer picture of change.",
     "paras": [
-     "A tilt reading describes the orientation of the sensor at its mounting point. Comparing readings with an installation reference helps identify changes in the monitored element. Use the direction, magnitude and persistence of a change to decide whether an inspection is needed. Tilt data supports structural monitoring; it does not directly establish displacement, the cause of movement or the safety of the entire structure."
+     "A tilt reading describes the orientation of the sensor at its mounting point. Comparing it with an installation reference helps you observe changes in the monitored element. Use the direction, size and persistence of a change to guide inspection. Where the task requires displacement, settlement or overall structural behaviour, define the additional measurements and model the project needs.",
+     "Define the reference — record the mounting position, sensor axes and baseline after the mount is secure. Observe meaningful changes — read the angle alongside site conditions, loading, temperature and maintenance records. Connect readings to action — choose the notification time and inspection process before selecting the reporting profile."
     ]
    },
    {
     "after": "specs",
-    "h": "Choosing a configuration for your site",
+    "h": "Four timings. One monitoring requirement.",
     "paras": [
-     "Start with the movement you need to observe and the time within which you need to know about it. Compare measurement range, accuracy conditions, temperature performance and mounting requirements for the same model. Then choose the radio and power profile that suit the site and the monitoring platform.",
-     "A remote pole installation may suit cellular reporting where the selected operator and frequency bands are supported. A group of sensors within one site may suit a compatible LoRa gateway. Match the required sampling and alert timing to the power budget, and confirm the data path to Hitelecom Cloud or your monitoring platform."
-    ]
-   },
-   {
-    "after": "specs",
-    "h": "Sampling, reporting and alerts",
-    "paras": [
-     "Sampling determines when an angle is measured. Reporting determines when a reading reaches the platform. Notification depends on the configured threshold logic and communication path. Define the required response time before choosing a battery and reporting profile, and validate the complete path during commissioning.",
-     "Select a sampling, reporting and alert profile for the project, and confirm the notification timing for the supplied device and platform configuration."
+     "Sampling, evaluation, reporting and notification each affect when a change becomes useful to your team. Take a reading — the sampling interval determines when a new angle is measured; match it to the change you need to observe. Apply the rule — confirm whether the supported threshold logic runs in the device or on the platform. Send the data — choose the upload interval and check whether the configuration supports separate event reporting. Reach the right team — verify the notification route and measure the complete delay during commissioning.",
+     "Hourly uploads alone do not promise an immediate alert between uploads. If response time is critical, verify the actual event behaviour, communication path and power profile together."
     ]
    },
    {
     "after": "scenarios",
-    "h": "Data integration",
+    "h": "Your installation. Your data destination.",
     "paras": [
-     "Cellular configurations support MQTT integration with Hitelecom Cloud or a compatible customer platform. Agree the endpoint, authentication, payload fields, units and timestamps before deployment.",
-     "A LoRa installation also requires a compatible receiver or gateway and a forwarding path. Test sample messages and supported configuration commands with the selected firmware."
+     "Choose the wireless route around coverage, infrastructure and your monitoring platform. Confirm protocol support for the selected device and firmware.",
+     "Distributed locations — 4G / NB-IoT: cellular configurations can suit sites served by a compatible operator; verify regional bands, coverage at the mounting point and the service plan. For MQTT-capable configurations, agree the endpoint, authentication and message format, and confirm how device configuration and maintenance work with your platform.",
+     "Sensors within one site — LoRa: a LoRa deployment uses a compatible receiver or gateway and a forwarding path to the platform; check site coverage and backhaul availability. LoRa does not automatically mean LoRaWAN — match the device’s actual protocol and regional settings to the gateway and network architecture.",
+     "Before rollout: confirm angle fields, units and device identifiers; agree timestamps and the supported offline-data behaviour; specify authentication and supported management commands; and check sample messages and the notification path."
     ]
    },
    {
     "after": "scenarios",
-    "h": "Installation and maintenance",
+    "h": "Review the details before deployment.",
     "paras": [
-     "Document the mounting point, sensor axes and installation reference. Keep a record of any repositioning or maintenance that could change the reference. Confirm how battery replacement, configuration and firmware maintenance apply to the supplied version, and validate the notification path during commissioning."
+     "Start with the model datasheet. For project selection, request the installation and integration information that applies to your configuration.",
+     "Ask for the measurement conditions relevant to your angle range and site temperature. Agree a mounting method and a reference-recording procedure. Confirm the data format, integration scope and notification timing."
     ]
    },
    {
     "after": "scenarios",
-    "h": "Project and OEM enquiries",
+    "h": "Tell us what you need to monitor.",
     "paras": [
-     "Share the installation country, monitored asset, estimated quantity, required angle performance, notification time and preferred platform. Include mounting constraints and any branding or protocol requirements so that hardware, integration work and delivery documents can be assessed together."
+     "Share your site, required angle performance and notification time. We can assess the hardware configuration, platform integration and delivery scope together.",
+     "Useful details for your enquiry: installation country, asset type and estimated quantity; required angle performance and notification time; available network, power and mounting conditions; your platform, protocol and branding requirements; sample needs and intended deployment schedule."
     ]
    }
   ]
