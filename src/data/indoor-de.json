@@ -1,0 +1,574 @@
+{
+ "key": "indoor",
+ "slug": "air-quality-sensor",
+ "label": "Raumluftqualität",
+ "otherSlug": "lists/cid/265",
+ "otherLabel": "Alle Luftqualitätssensoren",
+ "title": "Sensoren für Raumluftqualität | H310-AQ-Serie | Hitelecom",
+ "description": "Konfigurieren Sie Hitelecom Raumluftsensoren mit CO₂, Temperatur, Luftfeuchtigkeit und Luftdruck. Optional: PM, HCHO, TVOC, O₂, Licht und PIR.",
+ "heroTitle": "Kabellose Sensoren für die Raumluftqualität",
+ "heroAccent": "Für Ihr Gebäude konfiguriert.",
+ "heroText": "Überwachen Sie CO₂, Temperatur, Luftfeuchtigkeit und Luftdruck mit der Hitelecom H310-AQ-Serie. Ergänzen Sie die Konfiguration um Partikel-, Gas-, Licht- oder Bewegungssensorik, um die Lüftung zu beurteilen, Raumbedingungen zu überwachen und spezielle Anforderungen in Innenräumen abzudecken. Wählen Sie Messgrößen und Konnektivität passend zu Ihrer Installation.",
+ "heroImage": "https://www.hitelecom.com/_astro/285-hero.znDDWR7X_ZuDY77.webp",
+ "heroLocal": "indoor-product",
+ "heroAlt": "Hitelecom Luftqualitätssensor, Referenzabbildung der bestehenden Serie",
+ "heroCaption": "Hitelecom Luftqualitätssensor · Referenzabbildung der Serie",
+ "heroConcept": false,
+ "heroProof": "CO₂ · Temperatur · Luftfeuchtigkeit · Luftdruck · Individuelle Sensorik",
+ "heroBottom": "VON AUFENTHALTSRÄUMEN BIS ZU SPEZIALUMGEBUNGEN",
+ "coreTitle": "Starten Sie mit vier",
+ "coreAccent": "Basismessgrößen.",
+ "coreIntro": "Der H310-AQ041 misst CO₂, Temperatur, relative Luftfeuchtigkeit und Luftdruck. Mit einer individuell angepassten H310-AQ-Konfiguration ergänzen Sie die Messgrößen, die Sie für Ihre Räume benötigen.",
+ "base": [
+  "CO₂",
+  "Temperatur",
+  "Relative Luftfeuchtigkeit",
+  "Luftdruck"
+ ],
+ "core": [
+  {
+   "symbol": "CO₂",
+   "name": "Kohlendioxid",
+   "unit": "Lüftung beurteilen",
+   "text": "Verfolgen Sie die CO₂-Entwicklung während der Raumnutzung, um die Lüftung zu beurteilen."
+  },
+  {
+   "symbol": "T",
+   "name": "Temperatur",
+   "unit": "Thermische Bedingungen",
+   "text": "Erfassen Sie die Temperatur in verschiedenen Räumen und zu unterschiedlichen Nutzungszeiten, um die thermischen Bedingungen zu beurteilen."
+  },
+  {
+   "symbol": "r. F.",
+   "name": "Relative Luftfeuchtigkeit",
+   "unit": "Feuchtigkeitsbedingungen",
+   "text": "Überwachen Sie die Luftfeuchtigkeit in Aufenthaltsräumen, Lagerbereichen und Räumen mit empfindlichen Materialien."
+  },
+  {
+   "symbol": "P",
+   "name": "Luftdruck",
+   "unit": "Luftdruck im Überblick",
+   "text": "Erfassen Sie den Luftdruck zusammen mit den weiteren Umgebungsparametern."
+  }
+ ],
+ "extensionsTitle": "Wählen Sie Ihre",
+ "extensionsAccent": "zusätzlichen Messgrößen.",
+ "extensionsIntro": "Ergänzen Sie die Basismessgrößen um Partikel, bestimmte Gase, Licht oder Bewegung. Wählen Sie die passenden Optionen für Ihren Raum oder teilen Sie uns mit, was Sie überwachen möchten.",
+ "extensions": [
+  {
+   "symbol": "PM",
+   "name": "Partikel",
+   "text": "Erfassen Sie die Konzentration luftgetragener Partikel zur Untersuchung der Raumluft, des Staubeintrags und der Filtration. Wählen Sie die für Ihr Projekt erforderlichen Partikelfraktionen.",
+   "options": [
+    {
+     "id": "pm1",
+     "label": "PM1"
+    },
+    {
+     "id": "pm25",
+     "label": "PM2.5"
+    },
+    {
+     "id": "pm10",
+     "label": "PM10"
+    }
+   ],
+   "legend": "Optionen zur Partikelmessung auswählen"
+  },
+  {
+   "symbol": "HCHO",
+   "name": "Formaldehyd",
+   "text": "Ergänzen Sie eine gezielte Formaldehydmessung für Projekte rund um Innenausbau, Möbel oder Renovierungen.",
+   "options": [
+    {
+     "id": "hcho",
+     "label": "HCHO"
+    }
+   ],
+   "legend": "Optionen zur Formaldehydmessung auswählen"
+  },
+  {
+   "symbol": "TVOC",
+   "name": "Flüchtige organische Verbindungen",
+   "text": "Verfolgen Sie Veränderungen des VOC-Sensorsignals im Zusammenhang mit Reinigung, Materialien und Aktivitäten im Raum. Legen Sie die ausgegebenen Einheiten für die gewählte Konfiguration fest.",
+   "options": [
+    {
+     "id": "tvoc",
+     "label": "TVOC"
+    }
+   ],
+   "legend": "Optionen zur VOC-Messung auswählen"
+  },
+  {
+   "symbol": "lx",
+   "name": "Beleuchtung",
+   "text": "Messen Sie die Beleuchtungsstärke am Installationsort, etwa zur Beurteilung der Beleuchtung an Arbeitsplätzen oder in Ausstellungsbereichen.",
+   "options": [
+    {
+     "id": "light",
+     "label": "Beleuchtungsstärke"
+    }
+   ],
+   "legend": "Optionen zur Lichtmessung auswählen"
+  },
+  {
+   "symbol": "PIR",
+   "name": "Bewegungserkennung",
+   "text": "Ergänzen Sie die Raumaufzeichnungen um erkannte Bewegungsereignisse, um Aktivitäten nachzuverfolgen.",
+   "options": [
+    {
+     "id": "pir",
+     "label": "PIR"
+    }
+   ],
+   "legend": "Optionen zur Bewegungserkennung auswählen"
+  },
+  {
+   "symbol": "O₂",
+   "name": "Sauerstoff",
+   "text": "Ergänzen Sie eine Sauerstoffmessung für eine konkrete Anforderung im Labor, im Prozess oder in einer kontrollierten Umgebung. Legen Sie den Messbereich und die erforderlichen Reaktionsmaßnahmen für diesen Einsatz fest.",
+   "options": [
+    {
+     "id": "o2",
+     "label": "O₂"
+    }
+   ],
+   "legend": "Optionen zur Sauerstoffmessung auswählen"
+  }
+ ],
+ "scopeNote": "Benötigen Sie einen weiteren Parameter? Teilen Sie uns mit, was Sie messen möchten und wo der Sensor installiert wird.",
+ "modelNames": [
+  "H310-AQ041",
+  "H310-AQ051",
+  "H310-AQ061",
+  "H310-AQ071",
+  "H310-AQ081",
+  "H310-AQ091"
+ ],
+ "groups": [
+  {
+   "id": "people",
+   "name": "Arbeit, Bildung & Gemeinschaft"
+  },
+  {
+   "id": "property",
+   "name": "Wohnen & Gebäude"
+  },
+  {
+   "id": "technical",
+   "name": "Sammlungen & Spezialräume"
+  }
+ ],
+ "sceneTitle": "Entdecken Sie Anwendungen",
+ "sceneAccent": "für Innenräume.",
+ "sceneIntro": "Wählen Sie die Messgrößen passend zur Nutzung Ihrer Räume. Entdecken Sie die empfohlenen Messgrößen und Installationshinweise für die einzelnen Anwendungen.",
+ "scenes": [
+  {
+   "id": "office",
+   "group": "people",
+   "title": "Büros & Besprechungsräume",
+   "tag": "Genutzte Räume",
+   "alt": "Besprechungsraum mit Tageslicht, Fenstern und Deckenlüftung",
+   "measure": "CO₂ · Temperatur · Luftfeuchtigkeit. Optional: PM2.5, TVOC, Licht, PIR.",
+   "why": "Vergleichen Sie CO₂-Werte und Raumbedingungen während Besprechungen und im normalen Arbeitsalltag. So erhält das Facility-Management eine Grundlage zur Beurteilung von Lüftung und Komfort.",
+   "placement": "Wählen Sie repräsentative Aufenthaltsbereiche und dokumentieren Sie Besprechungszeiten und Lüftungseinstellungen zusammen mit den Messwerten.",
+   "sources": [
+    "hse",
+    "voc"
+   ],
+   "options": [
+    "pm25",
+    "tvoc",
+    "light",
+    "pir"
+   ]
+  },
+  {
+   "id": "classroom",
+   "group": "people",
+   "title": "Schulen & Unterrichtsräume",
+   "tag": "Lernumgebungen",
+   "alt": "Heller Unterrichtsraum mit Tischen und großen Fenstern zum Öffnen",
+   "measure": "CO₂ · Temperatur · Luftfeuchtigkeit. Optional: PM2.5, Licht, PIR.",
+   "why": "Verfolgen Sie CO₂, Temperatur und Luftfeuchtigkeit in Unterrichtsräumen während des Unterrichts und in den Pausen. Vergleichen Sie die Räume, um festzulegen, wo die Lüftung vorrangig überprüft werden sollte.",
+   "placement": "Erfassen Sie Unterrichtsräume und Lüftungszonen getrennt. Ergänzen Sie eine Partikelmessstelle im Außenbereich, wenn straßennahe Außenluft Teil der Untersuchung ist.",
+   "sources": [
+    "hse",
+    "nearroad"
+   ],
+   "options": [
+    "pm25",
+    "light",
+    "pir"
+   ]
+  },
+  {
+   "id": "healthcare",
+   "group": "people",
+   "title": "Gesundheits- & Pflegeeinrichtungen",
+   "tag": "Gemeinsam genutzte Innenräume",
+   "alt": "Moderner Wartebereich einer Gesundheitseinrichtung mit Sitzgelegenheiten und Fenstern",
+   "measure": "CO₂ · Temperatur · Luftfeuchtigkeit. Optional: PM2.5, TVOC.",
+   "why": "Erfassen Sie die Bedingungen in Wartebereichen, Gemeinschaftsräumen und Personalräumen während der Öffnungs- und Reinigungszeiten.",
+   "placement": "Nutzen Sie separate Messstellen für Bereiche mit unterschiedlicher Lüftung oder Raumnutzung.",
+   "sources": [
+    "hse",
+    "voc"
+   ],
+   "options": [
+    "pm25",
+    "tvoc"
+   ]
+  },
+  {
+   "id": "fitness",
+   "group": "people",
+   "title": "Fitnessstudios & Kursräume",
+   "tag": "Wechselnde Raumnutzung",
+   "measure": "CO₂ · Temperatur · Luftfeuchtigkeit. Optional: PM2.5, TVOC, PIR.",
+   "why": "Beobachten Sie, wie sich CO₂, Temperatur und Luftfeuchtigkeit während der Kurse und in den Erholungsphasen verändern. Vergleichen Sie die Räume und Kurszeiten, die genauer betrachtet werden sollten.",
+   "placement": "Überwachen Sie die einzelnen Kursräume getrennt und dokumentieren Sie die Kurszeiten. Berücksichtigen Sie bei der Auswertung die jeweilige Aktivität und den Lüftungsbetrieb.",
+   "alt": "Modernes Fitnessstudio mit Trainingsgeräten und großen Fenstern",
+   "options": [
+    "pm25",
+    "tvoc",
+    "pir"
+   ],
+   "sources": [
+    "hse"
+   ]
+  },
+  {
+   "id": "retail",
+   "group": "people",
+   "title": "Einzelhandel & Einkaufszentren",
+   "tag": "Mehrere Nutzungszonen",
+   "measure": "Temperatur · Luftfeuchtigkeit · CO₂ je Zone. Optional: PM2.5, TVOC, Licht, PIR.",
+   "why": "Vergleichen Sie die Umgebungsbedingungen in Geschäften, gemeinschaftlich genutzten Innenbereichen und Betriebszonen während der Öffnungszeiten und bei Ausbauarbeiten.",
+   "placement": "Ordnen Sie die Messstellen den jeweiligen Nutzungszonen zu, um die unterschiedlichen Bedingungen im Gebäude abzubilden.",
+   "alt": "Atrium eines Einkaufszentrums mit Geschäften, Oberlicht und Innenbegrünung",
+   "options": [
+    "pm25",
+    "tvoc",
+    "light",
+    "pir"
+   ],
+   "sources": [
+    "hse",
+    "voc"
+   ]
+  },
+  {
+   "id": "restaurant",
+   "group": "people",
+   "title": "Restaurants & Speiseräume",
+   "tag": "Einflüsse des täglichen Betriebs",
+   "measure": "CO₂ · Temperatur · Luftfeuchtigkeit. Optional: PM1 / PM2.5 / PM10, TVOC.",
+   "why": "Erfassen Sie Veränderungen der Partikelbelastung und der Raumbedingungen während des Speisebetriebs, bei Küchenaktivitäten und bei der Reinigung. Nutzen Sie die Aufzeichnungen, um die Bedingungen im Speisebereich zu beurteilen.",
+   "placement": "Wählen Sie eine repräsentative Messstelle im Speisebereich und bei Bedarf eine weitere am Übergang zur Küche, wenn dieser Vergleich für das Projekt sinnvoll ist.",
+   "alt": "Speiseraum eines Restaurants neben einer offenen Küche mit Dunstabzugshaube",
+   "options": [
+    "pm1",
+    "pm25",
+    "pm10",
+    "tvoc"
+   ],
+   "sources": [
+    "indoorpm"
+   ]
+  },
+  {
+   "id": "hotel",
+   "group": "property",
+   "title": "Hotels & renovierte Innenräume",
+   "tag": "Raumluft & Renovierung",
+   "alt": "Modernes Hotelzimmer mit Holzmöbeln und großem Fenster",
+   "measure": "Basismessgrößen. Optional: HCHO, TVOC, PM2.5; Licht und PIR zur Erfassung der Raumaktivität.",
+   "why": "Verfolgen Sie die Entwicklung von Formaldehyd, VOC und Raumbedingungen nach Ausbauarbeiten, einem Möbelwechsel oder der Reinigung. Wählen Sie die Messgrößen passend zu Ihrer Fragestellung.",
+   "placement": "Dokumentieren Sie Ausbau-, Reinigungs- und Lüftungszeiten, um die Messwerte im jeweiligen Zusammenhang auszuwerten.",
+   "sources": [
+    "voc"
+   ],
+   "options": [
+    "hcho",
+    "tvoc",
+    "pm25"
+   ]
+  },
+  {
+   "id": "basement",
+   "group": "property",
+   "title": "Keller & Lagerräume",
+   "tag": "Lagerbedingungen",
+   "measure": "Temperatur · Luftfeuchtigkeit. Optional: PM2.5, TVOC, PIR.",
+   "why": "Überwachen Sie Temperatur und Luftfeuchtigkeit im Jahresverlauf und während der Lüftungsphasen, insbesondere in Räumen, die nur selten kontrolliert werden.",
+   "placement": "Wählen Sie repräsentative Lagerbereiche und halten Sie den Sensor für Inspektion und Wartung zugänglich.",
+   "alt": "Ordentlicher Lagerraum im Keller mit Regalen und Lüftungskanal",
+   "options": [
+    "pm25",
+    "tvoc",
+    "pir"
+   ],
+   "sources": [
+    "cci",
+    "voc"
+   ]
+  },
+  {
+   "id": "warehouse",
+   "group": "property",
+   "title": "Lagerhallen & Verladerampen",
+   "tag": "Übergang zwischen innen und außen",
+   "alt": "Lagergänge mit hohen Palettenregalen und Lagerplätzen",
+   "measure": "Temperatur · Luftfeuchtigkeit. Optional: PM2.5 / PM10, PIR.",
+   "why": "Vergleichen Sie Partikelbelastung und klimatische Bedingungen an Verladetoren, in Lagergängen und in besetzten Arbeitsbereichen. Setzen Sie Veränderungen mit Toröffnungen und Warenbewegungen in Beziehung.",
+   "placement": "Verwenden Sie separate Messstellen für den Verladebereich sowie für innenliegende Lager- und Arbeitszonen.",
+   "sources": [
+    "hse",
+    "pm",
+    "nearroad"
+   ],
+   "options": [
+    "pm25",
+    "pm10",
+    "pir"
+   ]
+  },
+  {
+   "id": "archive",
+   "group": "technical",
+   "title": "Museen & Sammlungsdepots",
+   "tag": "Umgebung von Sammlungen",
+   "alt": "Museumsdepot mit Sammlungsregalen und Archivkartons",
+   "measure": "Temperatur · Luftfeuchtigkeit. Optional: Beleuchtungsstärke, PM2.5 und die Messung eines konkret benannten Gases.",
+   "why": "Erfassen Sie Temperatur, Luftfeuchtigkeit und Ausstellungsbeleuchtung entsprechend den Anforderungen der Sammlung. Vergleichen Sie die zeitliche Entwicklung in Ausstellungsräumen, Depots und Präsentationsbereichen.",
+   "placement": "Legen Sie Messstellen und Auswertungszeiträume entsprechend den Materialien, der jeweiligen Aufbewahrung und den Raumbedingungen fest.",
+   "sources": [
+    "cci"
+   ],
+   "options": [
+    "pm25",
+    "light"
+   ]
+  },
+  {
+   "id": "laboratory",
+   "group": "technical",
+   "title": "Labore & kontrollierte Umgebungen",
+   "tag": "Sauerstoffmessung nach Bedarf",
+   "measure": "O₂ nach Anforderung; Temperatur, Luftfeuchtigkeit und CO₂ je nach Anwendung.",
+   "why": "Ergänzen Sie O₂, wenn der im Raum durchgeführte Prozess eine Sauerstoffmessung erfordert, zusammen mit den weiteren benötigten Umgebungsparametern.",
+   "placement": "Beschreiben Sie den Prozess, den erwarteten Messbereich und den Messort. Geben Sie auch die vollständigen Anforderungen an Alarmierung und Reaktionsmaßnahmen an, sofern der vorgesehene Einsatz dies erfordert.",
+   "alt": "Labor mit kryogenen Dewargefäßen aus Edelstahl und Arbeitstischen",
+   "options": [
+    "o2"
+   ],
+   "sources": []
+  },
+  {
+   "id": "data-center",
+   "group": "technical",
+   "title": "Rechenzentren & Technikräume",
+   "tag": "Umgebungsbedingungen für Geräte",
+   "measure": "Temperatur · Luftfeuchtigkeit. Optional: PM1 / PM2.5 / PM10, PIR.",
+   "why": "Überwachen Sie Temperatur, Luftfeuchtigkeit und ausgewählte Partikelfraktionen bei Wartung, Bauarbeiten und während Zugangszeiten. Vergleichen Sie die Bedingungen in verschiedenen technischen Bereichen.",
+   "placement": "Unterscheiden Sie im Installationsplan zwischen Messstellen für die Raumluft und Messstellen in Racknähe oder in Zugangsbereichen.",
+   "alt": "Gang eines Rechenzentrums mit Serverracks und oben geführten Kabeltrassen",
+   "options": [
+    "pm1",
+    "pm25",
+    "pm10",
+    "pir"
+   ],
+   "sources": [
+    "indoorpm"
+   ]
+  }
+ ],
+ "focus": {
+  "eyebrow": "LUFT + UMGEBUNG + AKTIVITÄT",
+  "title": "Betrachten Sie Luftqualität",
+  "accent": "im Kontext der Raumnutzung.",
+  "lead": "",
+  "text": "Betrachten Sie Luftqualitätswerte gemeinsam mit Temperatur, Luftfeuchtigkeit, Beleuchtung und erkannter Bewegung. Der Vergleich desselben Zeitraums hilft Ihrem Team, Veränderungen mit Besprechungen, Reinigung, Lüftung oder Zutrittsereignissen in Verbindung zu bringen.",
+  "image": "office",
+  "alt": "Besprechungsraum zur Veranschaulichung des Zusammenhangs zwischen Raumluftmessungen und täglicher Raumnutzung",
+  "cards": [
+   {
+    "label": "LUFT & RAUMKLIMA",
+    "value": "CO₂ · PM · TVOC",
+    "text": "Zusätzlich Temperatur und Luftfeuchtigkeit"
+   },
+   {
+    "label": "LICHT & AKTIVITÄT",
+    "value": "Licht · PIR",
+    "text": "Beleuchtungsstärke und erkannte Bewegung"
+   }
+  ],
+  "steps": []
+ },
+ "deployment": [
+  {
+   "label": "01 / STANDORTE",
+   "title": "Messorte auswählen.",
+   "text": "Bestimmen Sie die Räume oder Zonen, die Sie vergleichen möchten, und erfassen Sie die Bedingungen an den einzelnen Messstellen."
+  },
+  {
+   "label": "02 / BETRIEBSPROFIL",
+   "title": "Betriebsprofil festlegen.",
+   "text": "Stimmen Sie Messintervalle, Datenübertragung und verfügbare Stromversorgung auf die gewählten Messgrößen ab."
+  },
+  {
+   "label": "03 / DATEN",
+   "title": "Datenanbindung planen.",
+   "text": "Klären Sie das Netzwerk, die Zielplattform und die für die Installation benötigten Datenaufzeichnungen."
+  }
+ ],
+ "integrationTitle": "Ihr Gebäude.",
+ "integrationAccent": "Ihre Plattform.",
+ "integrationText": "Binden Sie die gewählte H310-AQ-Konfiguration in Ihre Überwachungsplattform ein. Stimmen Sie die Mobilfunk- oder LoRa-Verbindung auf die Installation ab und legen Sie die MQTT-Datenintegration sowie den Alarmierungsablauf für das gewählte Modell fest.",
+ "modelTitle": "Eine Serie.",
+ "modelAccent": "Vielfältige Sensorkombinationen.",
+ "modelIntro": "Der H310-AQ041 erfasst die vier Basismessgrößen. Individuelle H310-AQ-Konfigurationen ergänzen die für Ihre Räume benötigte Sensorik. Die ausgewählten Messgrößen und Spezifikationen werden im Angebot aufgeführt.",
+ "modelNote": "AQ051, AQ061, AQ071, AQ081 und AQ091 veranschaulichen die geplante Erweiterung der Serie. Jedes gelieferte Modell wird mit einer eigenen Liste der Messgrößen und Spezifikationen dokumentiert.",
+ "faq": [
+  {
+   "id": "measurements",
+   "q": "Was kann die H310-AQ-Serie messen?",
+   "a": "Der H310-AQ041 misst CO₂, Temperatur, relative Luftfeuchtigkeit und Luftdruck. Zu den individuellen Optionen gehören O₂, PM1, PM2.5, PM10, Formaldehyd, TVOC, Beleuchtungsstärke und PIR-Bewegungserkennung. Die gewählte Konfiguration legt fest, welche Messgrößen das gelieferte Gerät erfasst.",
+   "sources": []
+  },
+  {
+   "id": "choose",
+   "q": "Wie wähle ich die Messgrößen für meine Räume aus?",
+   "a": "Beginnen Sie mit dem Ziel der Überwachung. Für Aufenthaltsräume sind CO₂ und thermische Bedingungen relevant. Für Untersuchungen zu Staub oder Lufteintrag ergänzen Sie Partikelmessungen. Bei Renovierungen kommen HCHO und TVOC infrage. Licht, PIR und O₂ decken weitere Anforderungen des Raums oder Prozesses ab. Beschreiben Sie uns Ihre Anwendung, wenn Sie Unterstützung bei der Auswahl benötigen.",
+   "sources": []
+  },
+  {
+   "id": "co2",
+   "q": "Wie helfen CO₂-Messwerte bei der Beurteilung der Lüftung?",
+   "a": "CO₂-Messwerte können in geeigneten, von Personen genutzten Räumen zur Beurteilung der Lüftung beitragen. Vergleichen Sie den zeitlichen Verlauf mit der Raumnutzung und den Lüftungseinstellungen. Das liefert dem Facility-Management mehr hilfreichen Kontext als ein einzelner Messwert.",
+   "sources": [
+    "hse"
+   ]
+  },
+  {
+   "id": "particles",
+   "q": "Was ist der Unterschied zwischen PM1, PM2.5 und PM10?",
+   "a": "Die Angaben stehen für unterschiedliche Partikelgrößenfraktionen. PM2.5 erfasst feine Partikel, während PM10 einen größeren Größenbereich abdeckt. PM1 ergänzt bei Bedarf eine noch feinere Fraktion. Wählen Sie die Messgrößen passend zu Ihrer Fragestellung zur Raumluft oder Staubüberwachung und beurteilen Sie die Leistungsmerkmale anhand der Spezifikationen des gewählten Modells.",
+   "sources": [
+    "pm"
+   ]
+  },
+  {
+   "id": "hcho",
+   "q": "Sollte ich HCHO, TVOC oder beides wählen?",
+   "a": "Wählen Sie HCHO, wenn Formaldehyd gemessen werden soll. TVOC bildet die Reaktion des Sensors auf ein Gemisch flüchtiger organischer Verbindungen ab. Bei Renovierungsprojekten können beide Messgrößen für unterschiedliche Fragestellungen zu Materialien und Aktivitäten im Raum sinnvoll sein. Klären Sie, welche Messgröße und Einheit für die gewählten Kanäle ausgegeben werden.",
+   "sources": [
+    "voc"
+   ]
+  },
+  {
+   "id": "motion",
+   "q": "Welchen Nutzen bieten Lichtmessung und PIR-Bewegungserkennung?",
+   "a": "Die Beleuchtungsstärke beschreibt die Lichtverhältnisse am Installationsort. PIR ergänzt erkannte Bewegungsereignisse innerhalb des Erfassungsbereichs. Diese Messgrößen helfen, Umgebungsdaten mit Beleuchtung und Raumaktivität in Beziehung zu setzen. Wählen Sie die Montageposition entsprechend der gewünschten Abdeckung; eine Personenzählung ist eine separate Anforderung.",
+   "sources": []
+  },
+  {
+   "id": "placement",
+   "q": "Wo sollten Sensoren in Innenräumen installiert werden?",
+   "a": "Wählen Sie repräsentative Messorte für die Raumluft, die für die Wartung zugänglich sind. Für CO₂ empfiehlt HSE eine Platzierung auf Kopfhöhe, abseits von Türen, Fenstern und Zuluftöffnungen sowie mit mehr als 50 cm Abstand zu Personen. Licht- und PIR-Sensoren benötigen außerdem eine geeignete Ausrichtung. In größeren Räumen oder Bereichen mit unterschiedlicher Lüftung können mehrere Messstellen erforderlich sein.",
+   "sources": [
+    "hse"
+   ]
+  },
+  {
+   "id": "platform",
+   "q": "Lässt sich der Sensor in unsere bestehende Plattform integrieren?",
+   "a": "Die Plattformintegration kann für die gewählte Konfiguration festgelegt werden. Die Hitelecom Produktfamilie umfasst Mobilfunk- und LoRa-Optionen; für unterstützte Lösungen ist eine MQTT-Datenintegration beschrieben. Teilen Sie uns die Zielplattform und die Einsatzregion mit, damit Modell, Netzwerkverbindung und Datenschnittstelle darauf abgestimmt werden können.",
+   "sources": []
+  },
+  {
+   "id": "timing",
+   "q": "Wie beeinflussen Messung und Datenübertragung die Batterielaufzeit?",
+   "a": "Das Messintervall legt fest, wann Messwerte erfasst werden; das Übertragungsintervall bestimmt, wann Daten gesendet werden. Die Batterielaufzeit hängt von den gewählten Sensoren, beiden Intervallen, Ereignismeldungen und den Funkbedingungen ab. Fordern Sie eine Abschätzung für die vorgesehene Konfiguration und das Betriebsprofil an, damit die Stromversorgung zum Projekt passt.",
+   "sources": []
+  },
+  {
+   "id": "quotation",
+   "q": "Welche Angaben benötigen Sie für ein Angebot?",
+   "a": "Nennen Sie die Anwendung, das Einsatzland, die ungefähre Stückzahl und die benötigten Messgrößen. Ergänzen Sie, falls vorhanden, einen Raumplan sowie Anforderungen an Stromversorgung, Netzwerk oder Plattform. Auf dieser Grundlage kann Hitelecom die Konfiguration und das Angebot mit Ihnen abstimmen.",
+   "sources": []
+  }
+ ],
+ "briefTitle": "Erzählen Sie uns von",
+ "briefAccent": "Ihrem Projekt.",
+ "briefText": "Teilen Sie uns die Anwendung, den Standort und die benötigten Messgrößen mit. Wir unterstützen Sie bei der Auswahl einer passenden H310-AQ-Konfiguration und besprechen Ihr Angebot.",
+ "briefPlaceholder": "Was möchten Sie überwachen und an welchem Ort? Ergänzen Sie alle bereits bekannten Anforderungen.",
+ "footerText": "Planen Sie ein Überwachungsprojekt für Innenräume?",
+ "footerStrong": "Sprechen Sie mit Hitelecom.",
+ "startingModel": {
+  "name": "H310-AQ041",
+  "channels": [
+   "CO₂",
+   "Temperatur",
+   "Relative Luftfeuchtigkeit",
+   "Luftdruck"
+  ],
+  "rows": [
+   [
+    "CO₂-Messverfahren",
+    "NDIR"
+   ],
+   [
+    "CO₂-Messbereich",
+    "400–5.000 ppm"
+   ],
+   [
+    "CO₂-Messgenauigkeit",
+    "30 ppm ±3 % (0–50 °C, 0–85 % r. F.)"
+   ],
+   [
+    "CO₂-Auflösung",
+    "1 ppm"
+   ],
+   [
+    "Messbereich der Luftfeuchtigkeit",
+    "0–100 % r. F. (±1,5 % r. F.)"
+   ],
+   [
+    "Luftdruck-Messbereich",
+    "30–120 kPa (±0,1 kPa)"
+   ],
+   [
+    "Stromversorgung",
+    "Batteriebetrieb, 19.000 mAh"
+   ],
+   [
+    "Batterielaufzeit",
+    "10 Jahre oder länger (Messung alle 10 Minuten, Datenübertragung stündlich)"
+   ],
+   [
+    "Schutzart",
+    "Schutz gegen das Eindringen von Staub und Wasser: IP65; Gehäuse: IP68 (laut Datenblatt)"
+   ],
+   [
+    "Lokale Konfiguration",
+    "Ein- und Ausschalten sowie Wartungskonfiguration per NFC"
+   ],
+   [
+    "Firmware-Updates",
+    "OTA-Fernaktualisierung mit einem Klick über die Cloud-Plattform"
+   ],
+   [
+    "Montageoptionen",
+    "Wand · Mast · DIN-Schiene"
+   ]
+  ],
+  "datasheet": "datasheet"
+ },
+ "heroLines": [
+  "Kabellose Sensoren",
+  "für die Raumluftqualität"
+ ]
+}

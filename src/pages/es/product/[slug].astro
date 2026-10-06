@@ -4,7 +4,7 @@
  * 结构与原站一致：首屏系列横幅 + 面包屑 + 特性图标 + 技术规格 + 应用场景 + 相关推荐
  */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import AirQualityEsPage from '../../../components/air-quality/AirQualityEsPage.astro';
+import AirQualityV2Page from '../../../components/air-quality/AirQualityV2Page.astro';
 import ProductShell from '../../../components/product/ProductShell.astro';
 import ProductCard from '../../../components/product/ProductCard.astro';
 import Img from '../../../components/Img.astro';
@@ -119,7 +119,7 @@ const breadcrumbLd = {
 
 {/* ES 空气质量页 V2：同 URL 替换（数据 indoor-es.json + strings.es.mjs），其余产品页走经典模板 */}
 {slug === 'air-quality-sensor' ? (
-  <AirQualityEsPage />
+  <AirQualityV2Page locale="es" />
 ) : (
 <BaseLayout locale="es" preloadImage={heroSrc} title={detailSeo.es[id]?.title ?? `${d.series} | Sensores IoT industriales Hitelecom`} description={detailSeo.es[id]?.desc ?? d.desc}>
   <ProductShell>

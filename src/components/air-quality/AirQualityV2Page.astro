@@ -1,25 +1,40 @@
 ---
 /**
- * 室内空气质量页 V2 · 文案与体验改版（GPT6 稿，Kimi 集成修复）
- * 与经典模板同 URL 替换：/product/air-quality-sensor（slug 不变，
- * 七语 hreflang 闭环、七语首页 12 处内链、sitemap 均不受影响）。
- * 默认渲染英文（数据 indoor.json + strings.en）；西语版见 AirQualityEsPage.astro，
- * 复用本组件并传入 ES 数据/词典与前缀。Organization/WebSite 实体图由
- * BaseLayout 全局输出，本页仅输出页面级 Schema。
+ * 室内空气质量页 V2 · 多语言注册表（GPT6 各语稿，Kimi 审核集成）
+ * 同 URL 替换：/{lang}/product/air-quality-sensor（slug 不变，
+ * 七语 hreflang 闭环、首页内链、sitemap 均不受影响）。
+ * 用法：EN 路由 <AirQualityV2Page /> 或 locale="en"；其余语言 locale="es|de|ja|fr|ru"。
+ * 数据：src/data/indoor(-{lang}).json；词典：strings.{lang}.mjs；图源共用 assets.mjs。
+ * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级 Schema。
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SeriesPage from './SeriesPage.astro';
 import { getAssets, getHero } from './assets.mjs';
 import { makeSchema } from './schema.mjs';
 import contentEn from '../../data/indoor.json';
+import contentEs from '../../data/indoor-es.json';
+import contentDe from '../../data/indoor-de.json';
+import contentJa from '../../data/indoor-ja.json';
+import contentFr from '../../data/indoor-fr.json';
+import contentRu from '../../data/indoor-ru.json';
 import stringsEn from './strings.en.mjs';
+import stringsEs from './strings.es.mjs';
+import stringsDe from './strings.de.mjs';
+import stringsJa from './strings.ja.mjs';
+import stringsFr from './strings.fr.mjs';
+import stringsRu from './strings.ru.mjs';
 
-const {
-  locale = 'en',
-  prefix = '',
-  content = contentEn,
-  t = stringsEn
-} = Astro.props;
+const REGISTRY = {
+  en: { content: contentEn, t: stringsEn, prefix: '' },
+  es: { content: contentEs, t: stringsEs, prefix: '/es' },
+  de: { content: contentDe, t: stringsDe, prefix: '/de' },
+  ja: { content: contentJa, t: stringsJa, prefix: '/ja' },
+  fr: { content: contentFr, t: stringsFr, prefix: '/fr' },
+  ru: { content: contentRu, t: stringsRu, prefix: '/ru' },
+};
+
+const { locale = 'en' } = Astro.props;
+const { content, t, prefix } = REGISTRY[locale] ?? REGISTRY.en;
 
 const assets = await getAssets(content);
 const hero = await getHero(content);

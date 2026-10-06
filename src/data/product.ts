@@ -14686,8 +14686,8 @@ export const productContent = { ...productContentBase, de: {
    },
    "285": {
     "series": "H-Serie · Luftqualitätssensor",
-    "tagline": "6-in-1 | Präzision | Energieeffizient",
-    "desc": "Der 6-in-1-Luftqualitätssensor von Hitelecom misst CO₂, PM2.5, TVOC, Temperatur, Feuchtigkeit und Luftdruck, mit optionalen NO₂-, SO₂-, NH₃- und O₃-Kanälen. Die Daten werden über 4G oder NB-IoT an die Cloud übertragen, und das wartungsarme Design unterstützt die langfristige städtische und industrielle Umweltüberwachung.",
+    "tagline": "4-in-1 + Individuell | Präzision | Energieeffizient",
+    "desc": "Der Hitelecom H310-AQ041 Sensor für die Raumluftqualität misst CO₂, Temperatur, relative Luftfeuchtigkeit und Luftdruck (NDIR, 400–5.000 ppm), mit individuellen Optionen wie PM, HCHO, TVOC, O₂, Beleuchtungsstärke und PIR-Bewegung. Batteriebetrieb (19.000 mAh, 10 Jahre oder länger bei stündlicher Datenübertragung laut Datenblatt), IP65, NFC-Konfiguration und OTA-Updates; Datenübertragung über Mobilfunk oder LoRa-Gateway-Lösungen.",
     "heroImg": "product/details/285-hero.png",
     "pdf": "/downloads/h310-aq041-air-quality-sensor-datasheet.pdf",
     "crumbCat": "Luftqualität",
@@ -20327,8 +20327,8 @@ export const productContent = { ...productContentBase, de: {
   },
   "285": {
    "series": "Hシリーズ · 空気質センサー",
-   "tagline": "6-in-1 | 精度 | 省エネ",
-   "desc": "Hitelecomの6-in-1空気質センサーは、CO₂、PM2.5、TVOC、温度、湿度、気圧を測定し、オプションのNO₂、SO₂、NH₃、O₃チャンネルを備えます。データは4GまたはNB-IoT経由でクラウドに送信され、低保守設計が長期的な都市・産業環境モニタリングをサポートします。",
+   "tagline": "4-in-1 + カスタム | 精度 | 省エネ",
+   "desc": "Hitelecom H310-AQ041室内空気質センサーは、CO₂、温度、相対湿度、気圧を測定します（NDIR、400～5,000 ppm）。PM、HCHO、TVOC、O₂、照度、PIRモーションなどのカスタムオプションを追加可能。電池駆動（19,000 mAh、1時間間隔のデータ送信で10年以上 ※データシートによる）、IP65、NFC設定、OTA更新に対応し、データはセルラーまたはLoRaゲートウェイ構成で送信されます。",
    "heroImg": "product/details/285-hero.png",
    "pdf": "/downloads/h310-aq041-air-quality-sensor-datasheet.pdf",
    "crumbCat": "空気質",
@@ -31611,8 +31611,8 @@ export const productContent = { ...productContentBase, de: {
    },
    "285": {
     "series": "Série H · Capteur de qualité de l’air",
-    "tagline": "6-en-1 | Précision | Économe en énergie",
-    "desc": "Le capteur de qualité de l’air 6-en-1 Hitelecom surveille CO₂, PM2.5, TVOC, température, humidité et pression atmosphérique, avec canaux NO₂, SO₂, NH₃ et O₃ en option. Les données remontent au cloud en 4G ou NB-IoT, et la conception peu exigeante en maintenance convient à la surveillance environnementale urbaine et industrielle de longue durée.",
+    "tagline": "4-en-1 + Sur mesure | Précision | Économe en énergie",
+    "desc": "Le capteur de qualité de l’air intérieur H310-AQ041 de Hitelecom mesure le CO₂, la température, l’humidité relative et la pression atmosphérique (NDIR, 400–5 000 ppm), avec des options sur mesure : PM, HCHO, TVOC, O₂, éclairement et mouvement PIR. Alimentation sur batterie (19 000 mAh, 10 ans ou plus avec transmission horaire selon la fiche technique), IP65, configuration NFC et mises à jour OTA ; transmission des données via connexion cellulaire ou solutions LoRa avec gateway.",
     "heroImg": "product/details/285-hero.png",
     "pdf": "/downloads/h310-aq041-air-quality-sensor-datasheet.pdf",
     "crumbCat": "Qualité de l’air",
@@ -37253,8 +37253,8 @@ export const productContent = { ...productContentBase, de: {
    },
    "285": {
     "series": "Серия H · Датчик качества воздуха",
-    "tagline": "6-в-1 | Точность | Энергоэффективность",
-    "desc": "Датчик качества воздуха Hitelecom 6-в-1 отслеживает CO₂, PM2.5, TVOC, температуру, влажность и атмосферное давление, с опциональными каналами NO₂, SO₂, NH₃ и O₃. Данные передаются в облако по 4G или NB-IoT, а конструкция, не требующая частого обслуживания, поддерживает долгосрочный городской и промышленный экологический мониторинг.",
+    "tagline": "4-в-1 + Индивидуально | Точность | Энергоэффективность",
+    "desc": "Датчик качества воздуха в помещениях Hitelecom H310-AQ041 измеряет CO₂, температуру, относительную влажность и атмосферное давление (NDIR, 400–5 000 ppm); доступны опции под задачу: PM, HCHO, TVOC, O₂, освещённость и PIR-датчик движения. Питание от батареи (19 000 мА·ч, 10 лет и более при ежечасной передаче данных по техническому описанию), IP65, настройка через NFC и OTA-обновления; передача данных по сотовой связи или через LoRa-решения со шлюзом.",
     "heroImg": "product/details/285-hero.png",
     "pdf": "/downloads/h310-aq041-air-quality-sensor-datasheet.pdf",
     "crumbCat": "Качество воздуха",

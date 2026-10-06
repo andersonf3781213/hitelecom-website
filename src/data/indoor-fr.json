@@ -1,0 +1,574 @@
+{
+ "key": "indoor",
+ "slug": "air-quality-sensor",
+ "label": "Qualité de l’air intérieur",
+ "otherSlug": "lists/cid/265",
+ "otherLabel": "Tous les capteurs de qualité de l’air",
+ "title": "Capteurs de qualité de l’air intérieur | Série H310-AQ | Hitelecom",
+ "description": "Configurez vos capteurs Hitelecom de qualité de l’air intérieur : CO₂, température, humidité, pression. Options : PM, HCHO, TVOC, O₂, éclairement, PIR.",
+ "heroTitle": "Capteurs sans fil de qualité de l’air intérieur",
+ "heroAccent": "Configurés pour votre bâtiment.",
+ "heroText": "Surveillez le CO₂, la température, l’humidité et la pression atmosphérique avec la série H310-AQ de Hitelecom. Ajoutez la mesure de particules, de gaz ou d’éclairement, ou la détection de mouvement, pour évaluer la ventilation, suivre les conditions ambiantes et répondre à des besoins spécifiques en intérieur. Choisissez les paramètres et la connectivité adaptés à votre installation.",
+ "heroImage": "https://www.hitelecom.com/_astro/285-hero.znDDWR7X_ZuDY77.webp",
+ "heroLocal": "indoor-product",
+ "heroAlt": "Capteur de qualité de l’air Hitelecom, image de référence de la série actuelle",
+ "heroCaption": "Capteur de qualité de l’air Hitelecom · Image de référence de la série",
+ "heroConcept": false,
+ "heroProof": "CO₂ · Température · Humidité · Pression atmosphérique · Configuration sur mesure",
+ "heroBottom": "DES ESPACES OCCUPÉS AUX ENVIRONNEMENTS SPÉCIALISÉS",
+ "coreTitle": "Commencez par quatre",
+ "coreAccent": "paramètres de base.",
+ "coreIntro": "Le H310-AQ041 mesure le CO₂, la température, l’humidité relative et la pression atmosphérique. Ajoutez les paramètres nécessaires à vos locaux grâce à une configuration H310-AQ sur mesure.",
+ "base": [
+  "CO₂",
+  "Température",
+  "Humidité relative",
+  "Pression atmosphérique"
+ ],
+ "core": [
+  {
+   "symbol": "CO₂",
+   "name": "Dioxyde de carbone",
+   "unit": "Évaluation de la ventilation",
+   "text": "Suivez les variations de CO₂ pendant les périodes d’occupation pour contribuer à l’évaluation de la ventilation."
+  },
+  {
+   "symbol": "T",
+   "name": "Température",
+   "unit": "Conditions thermiques",
+   "text": "Relevez la température dans différents locaux et sur leurs plages d’utilisation pour évaluer les conditions thermiques intérieures."
+  },
+  {
+   "symbol": "HR",
+   "name": "Humidité relative",
+   "unit": "Conditions d’humidité",
+   "text": "Surveillez l’humidité dans les pièces occupées, les zones de stockage et les espaces contenant des matériaux sensibles."
+  },
+  {
+   "symbol": "P",
+   "name": "Pression atmosphérique",
+   "unit": "Données barométriques",
+   "text": "Enregistrez la pression atmosphérique avec les autres paramètres ambiants."
+  }
+ ],
+ "extensionsTitle": "Choisissez vos",
+ "extensionsAccent": "paramètres supplémentaires.",
+ "extensionsIntro": "Complétez les paramètres de base par la mesure de particules, de gaz spécifiques ou d’éclairement, ou par la détection de mouvement. Sélectionnez les options adaptées à votre espace ou indiquez-nous ce que vous souhaitez surveiller.",
+ "extensions": [
+  {
+   "symbol": "PM",
+   "name": "Particules en suspension",
+   "text": "Suivez les concentrations de particules en suspension pour étudier l’air intérieur, les entrées de poussière et la filtration. Sélectionnez les fractions granulométriques nécessaires à votre projet.",
+   "options": [
+    {
+     "id": "pm1",
+     "label": "PM1"
+    },
+    {
+     "id": "pm25",
+     "label": "PM2.5"
+    },
+    {
+     "id": "pm10",
+     "label": "PM10"
+    }
+   ],
+   "legend": "Sélectionner les options de mesure des particules"
+  },
+  {
+   "symbol": "HCHO",
+   "name": "Formaldéhyde",
+   "text": "Ajoutez une mesure dédiée du formaldéhyde pour les projets liés aux finitions intérieures, au mobilier ou à la rénovation.",
+   "options": [
+    {
+     "id": "hcho",
+     "label": "HCHO"
+    }
+   ],
+   "legend": "Sélectionner les options de mesure du formaldéhyde"
+  },
+  {
+   "symbol": "TVOC",
+   "name": "Composés organiques volatils",
+   "text": "Suivez les variations de la réponse du capteur aux COV en lien avec le nettoyage, les matériaux et les activités dans les locaux. Précisez les unités de mesure pour la configuration retenue.",
+   "options": [
+    {
+     "id": "tvoc",
+     "label": "TVOC"
+    }
+   ],
+   "legend": "Sélectionner les options de mesure des COV"
+  },
+  {
+   "symbol": "lx",
+   "name": "Niveau d’éclairage",
+   "text": "Mesurez l’éclairement au point d’installation pour évaluer l’éclairage des espaces de travail ou des zones d’exposition de collections.",
+   "options": [
+    {
+     "id": "light",
+     "label": "Éclairement"
+    }
+   ],
+   "legend": "Sélectionner les options de mesure de l’éclairement"
+  },
+  {
+   "symbol": "PIR",
+   "name": "Détection de mouvement",
+   "text": "Ajoutez les événements de mouvement détecté aux données du local pour suivre son activité.",
+   "options": [
+    {
+     "id": "pir",
+     "label": "PIR"
+    }
+   ],
+   "legend": "Sélectionner les options de détection de mouvement"
+  },
+  {
+   "symbol": "O₂",
+   "name": "Oxygène",
+   "text": "Ajoutez une mesure d’oxygène pour répondre à un besoin précis en laboratoire, dans un procédé ou dans un environnement contrôlé. Définissez la plage de mesure et les procédures d’intervention adaptées à cet usage.",
+   "options": [
+    {
+     "id": "o2",
+     "label": "O₂"
+    }
+   ],
+   "legend": "Sélectionner les options de mesure de l’oxygène"
+  }
+ ],
+ "scopeNote": "Besoin d’un autre paramètre ? Indiquez-nous ce que vous souhaitez mesurer et où le capteur sera installé.",
+ "modelNames": [
+  "H310-AQ041",
+  "H310-AQ051",
+  "H310-AQ061",
+  "H310-AQ071",
+  "H310-AQ081",
+  "H310-AQ091"
+ ],
+ "groups": [
+  {
+   "id": "people",
+   "name": "Travail, enseignement et espaces partagés"
+  },
+  {
+   "id": "property",
+   "name": "Hébergement et bâtiments"
+  },
+  {
+   "id": "technical",
+   "name": "Collections et locaux spécialisés"
+  }
+ ],
+ "sceneTitle": "Découvrez les applications",
+ "sceneAccent": "en intérieur.",
+ "sceneIntro": "Choisissez les paramètres en fonction de l’utilisation de vos espaces. Consultez les mesures suggérées et les recommandations d’installation pour chaque application.",
+ "scenes": [
+  {
+   "id": "office",
+   "group": "people",
+   "title": "Bureaux et salles de réunion",
+   "tag": "Espaces occupés",
+   "alt": "Salle de réunion éclairée par la lumière du jour, avec fenêtres et ventilation au plafond",
+   "measure": "CO₂ · Température · Humidité. En option : PM2.5, TVOC, éclairement, PIR.",
+   "why": "Comparez le CO₂ et les conditions ambiantes pendant les réunions et les horaires habituels de travail pour aider l’équipe de gestion des bâtiments à évaluer la ventilation et le confort.",
+   "placement": "Choisissez des zones occupées représentatives et consignez les horaires de réunion et les réglages de ventilation avec les mesures.",
+   "sources": [
+    "hse",
+    "voc"
+   ],
+   "options": [
+    "pm25",
+    "tvoc",
+    "light",
+    "pir"
+   ]
+  },
+  {
+   "id": "classroom",
+   "group": "people",
+   "title": "Établissements scolaires et salles de classe",
+   "tag": "Environnements d’apprentissage",
+   "alt": "Salle de classe lumineuse avec bureaux et grandes fenêtres ouvrantes",
+   "measure": "CO₂ · Température · Humidité. En option : PM2.5, éclairement, PIR.",
+   "why": "Suivez le CO₂, la température et l’humidité dans les salles de classe pendant les cours et les pauses. Comparez les salles pour déterminer où évaluer la ventilation en priorité.",
+   "placement": "Prévoyez des points distincts pour chaque salle de classe et chaque zone de ventilation. Ajoutez un point de mesure des particules à l’extérieur si l’air provenant d’une voie de circulation fait partie de l’étude.",
+   "sources": [
+    "hse",
+    "nearroad"
+   ],
+   "options": [
+    "pm25",
+    "light",
+    "pir"
+   ]
+  },
+  {
+   "id": "healthcare",
+   "group": "people",
+   "title": "Établissements de santé et de soins",
+   "tag": "Espaces intérieurs partagés",
+   "alt": "Salle d’attente moderne d’un établissement de santé, avec sièges et fenêtres",
+   "measure": "CO₂ · Température · Humidité. En option : PM2.5, TVOC.",
+   "why": "Suivez les conditions dans les salles d’attente, les espaces communs et les locaux du personnel pendant les horaires d’ouverture et les périodes de nettoyage.",
+   "placement": "Utilisez des points de mesure distincts pour les zones dont le traitement de l’air ou l’usage diffère.",
+   "sources": [
+    "hse",
+    "voc"
+   ],
+   "options": [
+    "pm25",
+    "tvoc"
+   ]
+  },
+  {
+   "id": "fitness",
+   "group": "people",
+   "title": "Salles de sport et studios de fitness",
+   "tag": "Utilisation variable des locaux",
+   "measure": "CO₂ · Température · Humidité. En option : PM2.5, TVOC, PIR.",
+   "why": "Observez les variations de CO₂, de température et d’humidité pendant les cours et les périodes de récupération. Comparez les salles et les créneaux qui nécessitent un suivi plus approfondi.",
+   "placement": "Surveillez chaque studio séparément et consignez les horaires des cours. Interprétez les variations en tenant compte de l’activité et du fonctionnement de la ventilation.",
+   "alt": "Studio de fitness moderne avec équipements d’entraînement et grandes fenêtres",
+   "options": [
+    "pm25",
+    "tvoc",
+    "pir"
+   ],
+   "sources": [
+    "hse"
+   ]
+  },
+  {
+   "id": "retail",
+   "group": "people",
+   "title": "Commerces et centres commerciaux",
+   "tag": "Plusieurs zones occupées",
+   "measure": "Température · Humidité · CO₂ par zone. En option : PM2.5, TVOC, éclairement, PIR.",
+   "why": "Comparez les conditions ambiantes dans les commerces, les espaces intérieurs communs et les zones d’exploitation pendant les horaires d’ouverture et les travaux d’aménagement.",
+   "placement": "Répartissez les points de mesure par zone occupée pour tenir compte des différences au sein du bâtiment.",
+   "alt": "Atrium de centre commercial avec boutiques, verrière et végétation intérieure",
+   "options": [
+    "pm25",
+    "tvoc",
+    "light",
+    "pir"
+   ],
+   "sources": [
+    "hse",
+    "voc"
+   ]
+  },
+  {
+   "id": "restaurant",
+   "group": "people",
+   "title": "Restaurants et espaces de restauration",
+   "tag": "Variations liées à l’activité quotidienne",
+   "measure": "CO₂ · Température · Humidité. En option : PM1 / PM2.5 / PM10, TVOC.",
+   "why": "Suivez les variations des particules et des conditions ambiantes pendant le service, les activités en cuisine et le nettoyage. Utilisez les enregistrements pour évaluer l’environnement de la salle.",
+   "placement": "Choisissez une zone représentative de la salle à manger et, si la comparaison est utile au projet, un point à l’interface entre la cuisine et la salle.",
+   "alt": "Salle de restaurant attenante à une cuisine ouverte avec hotte d’extraction",
+   "options": [
+    "pm1",
+    "pm25",
+    "pm10",
+    "tvoc"
+   ],
+   "sources": [
+    "indoorpm"
+   ]
+  },
+  {
+   "id": "hotel",
+   "group": "property",
+   "title": "Hôtels et locaux rénovés",
+   "tag": "Air intérieur et rénovation",
+   "alt": "Chambre d’hôtel moderne avec mobilier en bois et grande fenêtre",
+   "measure": "Paramètres de base. En option : HCHO, TVOC, PM2.5 ; éclairement et PIR pour les besoins de suivi de l’activité dans les locaux.",
+   "why": "Suivez l’évolution du formaldéhyde, des COV et des conditions ambiantes après des travaux d’aménagement, un changement de mobilier ou un nettoyage. Sélectionnez les paramètres en fonction de votre objectif.",
+   "placement": "Consignez les périodes d’aménagement, de nettoyage et de ventilation pour interpréter les relevés dans leur contexte.",
+   "sources": [
+    "voc"
+   ],
+   "options": [
+    "hcho",
+    "tvoc",
+    "pm25"
+   ]
+  },
+  {
+   "id": "basement",
+   "group": "property",
+   "title": "Sous-sols et locaux de stockage",
+   "tag": "Conditions de stockage",
+   "measure": "Température · Humidité. En option : PM2.5, TVOC, PIR.",
+   "why": "Surveillez la température et l’humidité au fil des saisons et des périodes de ventilation, notamment dans les locaux rarement inspectés.",
+   "placement": "Choisissez des zones de stockage représentatives et gardez le capteur accessible pour l’inspection et la maintenance.",
+   "alt": "Local de stockage bien organisé en sous-sol, avec étagères et conduit de ventilation",
+   "options": [
+    "pm25",
+    "tvoc",
+    "pir"
+   ],
+   "sources": [
+    "cci",
+    "voc"
+   ]
+  },
+  {
+   "id": "warehouse",
+   "group": "property",
+   "title": "Entrepôts et quais de chargement",
+   "tag": "Interface intérieur–extérieur",
+   "alt": "Allées d’entrepôt avec hauts rayonnages à palettes et emplacements de stockage",
+   "measure": "Température · Humidité. En option : PM2.5 / PM10, PIR.",
+   "why": "Comparez les niveaux de particules et les conditions climatiques près des portes de chargement, dans les allées de stockage et dans les zones de travail occupées. Reliez les variations aux ouvertures de portes et aux opérations de manutention.",
+   "placement": "Prévoyez des points distincts pour la zone de chargement et pour les zones intérieures de stockage ou de travail.",
+   "sources": [
+    "hse",
+    "pm",
+    "nearroad"
+   ],
+   "options": [
+    "pm25",
+    "pm10",
+    "pir"
+   ]
+  },
+  {
+   "id": "archive",
+   "group": "technical",
+   "title": "Musées et réserves de collections",
+   "tag": "Environnement des collections",
+   "alt": "Réserve de musée avec rayonnages de collections et boîtes d’archives",
+   "measure": "Température · Humidité. En option : éclairement, PM2.5 et mesure d’un gaz précisément défini.",
+   "why": "Suivez la température, l’humidité et l’éclairage d’exposition au regard des exigences de la collection. Comparez leur évolution dans les galeries, les réserves et les zones de présentation.",
+   "placement": "Définissez les points de mesure et les périodes d’analyse en fonction des matériaux, de leur enceinte de conservation et des conditions du local.",
+   "sources": [
+    "cci"
+   ],
+   "options": [
+    "pm25",
+    "light"
+   ]
+  },
+  {
+   "id": "laboratory",
+   "group": "technical",
+   "title": "Laboratoires et environnements contrôlés",
+   "tag": "Mesure d’oxygène sur mesure",
+   "measure": "O₂ selon les besoins ; température, humidité et CO₂ selon l’application.",
+   "why": "Ajoutez l’O₂ lorsque le procédé réalisé dans le local exige une mesure d’oxygène, avec les autres paramètres ambiants nécessaires à l’installation.",
+   "placement": "Précisez le procédé, la plage attendue et le point d’échantillonnage. Indiquez également l’ensemble des exigences d’alarme et d’intervention lorsque l’usage prévu le nécessite.",
+   "alt": "Laboratoire avec récipients cryogéniques de type Dewar en acier inoxydable et paillasses",
+   "options": [
+    "o2"
+   ],
+   "sources": []
+  },
+  {
+   "id": "data-center",
+   "group": "technical",
+   "title": "Centres de données et locaux techniques",
+   "tag": "Environnement des équipements",
+   "measure": "Température · Humidité. En option : PM1 / PM2.5 / PM10, PIR.",
+   "why": "Surveillez la température, l’humidité et les fractions de particules sélectionnées pendant les opérations de maintenance, les travaux et les périodes d’accès. Comparez les conditions entre zones techniques.",
+   "placement": "Distinguez, dans le plan d’installation, les points de mesure de l’air ambiant de ceux situés près des baies ou dans les zones d’accès.",
+   "alt": "Allée de centre de données avec baies de serveurs et chemins de câbles en hauteur",
+   "options": [
+    "pm1",
+    "pm25",
+    "pm10",
+    "pir"
+   ],
+   "sources": [
+    "indoorpm"
+   ]
+  }
+ ],
+ "focus": {
+  "eyebrow": "AIR + ENVIRONNEMENT + ACTIVITÉ",
+  "title": "Reliez la qualité de l’air",
+  "accent": "à l’usage des locaux.",
+  "lead": "",
+  "text": "Analysez les mesures de l’air avec la température, l’humidité, l’éclairement et les mouvements détectés. Comparer les données sur une même période aide votre équipe à relier les variations aux réunions, au nettoyage, à la ventilation ou aux événements d’accès.",
+  "image": "office",
+  "alt": "Salle de réunion illustrant le lien entre les mesures de l’air intérieur et l’usage quotidien du local",
+  "cards": [
+   {
+    "label": "AIR ET CONDITIONS AMBIANTES",
+    "value": "CO₂ · PM · TVOC",
+    "text": "Avec la température et l’humidité"
+   },
+   {
+    "label": "ÉCLAIRAGE ET ACTIVITÉ",
+    "value": "Éclairement · PIR",
+    "text": "Éclairement et mouvements détectés"
+   }
+  ],
+  "steps": []
+ },
+ "deployment": [
+  {
+   "label": "01 / EMPLACEMENTS",
+   "title": "Choisissez les emplacements.",
+   "text": "Identifiez les locaux ou les zones à comparer et les conditions à chaque point de mesure."
+  },
+  {
+   "label": "02 / PROFIL DE FONCTIONNEMENT",
+   "title": "Définissez le fonctionnement.",
+   "text": "Adaptez les intervalles de mesure et de transmission ainsi que l’alimentation disponible aux paramètres sélectionnés."
+  },
+  {
+   "label": "03 / DONNÉES",
+   "title": "Organisez la connexion des données.",
+   "text": "Confirmez le réseau, la plateforme de destination et les données à enregistrer pour l’installation."
+  }
+ ],
+ "integrationTitle": "Votre bâtiment.",
+ "integrationAccent": "Votre plateforme.",
+ "integrationText": "Connectez la configuration H310-AQ sélectionnée à votre plateforme de surveillance. Adaptez la connexion cellulaire ou LoRa à l’installation, puis définissez l’intégration des données via MQTT et le traitement des alertes pour le modèle choisi.",
+ "modelTitle": "Une série.",
+ "modelAccent": "De multiples combinaisons de capteurs.",
+ "modelIntro": "Le H310-AQ041 fournit les quatre paramètres de base. Les configurations H310-AQ sur mesure ajoutent les capteurs nécessaires à vos locaux. Les paramètres sélectionnés et leurs spécifications sont précisés dans le devis.",
+ "modelNote": "AQ051, AQ061, AQ071, AQ081 et AQ091 illustrent l’extension prévue de la série. Chaque modèle fourni est accompagné de sa propre liste de paramètres et de spécifications.",
+ "faq": [
+  {
+   "id": "measurements",
+   "q": "Que peut mesurer la série H310-AQ ?",
+   "a": "Le H310-AQ041 mesure le CO₂, la température, l’humidité relative et la pression atmosphérique. Les options sur mesure comprennent l’O₂, PM1, PM2.5, PM10, le formaldéhyde, TVOC, l’éclairement et la détection de mouvement PIR. La configuration sélectionnée précise les paramètres disponibles sur l’appareil fourni.",
+   "sources": []
+  },
+  {
+   "id": "choose",
+   "q": "Comment choisir les paramètres pour mes locaux ?",
+   "a": "Commencez par définir l’objectif de la surveillance. Pour les pièces occupées, envisagez le CO₂ et les conditions thermiques. Pour étudier la poussière ou les entrées d’air, ajoutez la mesure des particules. Dans le cadre d’une rénovation, considérez HCHO et TVOC. L’éclairement, le PIR et l’O₂ répondent à des besoins supplémentaires liés au local ou au procédé. Décrivez-nous votre application si vous avez besoin d’aide pour choisir.",
+   "sources": []
+  },
+  {
+   "id": "co2",
+   "q": "Comment les relevés de CO₂ aident-ils à évaluer la ventilation ?",
+   "a": "Les relevés de CO₂ peuvent aider à évaluer la ventilation dans les espaces occupés qui se prêtent à cette méthode. Comparez leur évolution avec l’utilisation des locaux et les réglages de ventilation. L’équipe de gestion des bâtiments dispose ainsi de davantage de contexte qu’avec une mesure isolée.",
+   "sources": [
+    "hse"
+   ]
+  },
+  {
+   "id": "particles",
+   "q": "Quelle est la différence entre PM1, PM2.5 et PM10 ?",
+   "a": "Ces paramètres correspondent à différentes fractions de taille des particules. PM2.5 concerne les particules fines, tandis que PM10 couvre une plage de tailles plus large. PM1 ajoute une fraction encore plus fine lorsque cela est nécessaire. Choisissez les mesures adaptées à votre objectif de suivi de l’air intérieur ou des poussières, puis consultez les spécifications du modèle retenu pour évaluer ses performances.",
+   "sources": [
+    "pm"
+   ]
+  },
+  {
+   "id": "hcho",
+   "q": "Faut-il choisir HCHO, TVOC ou les deux ?",
+   "a": "Choisissez HCHO lorsque vous souhaitez mesurer le formaldéhyde. TVOC traduit la réponse du capteur à un mélange de composés organiques volatils. Un projet de rénovation peut nécessiter les deux pour répondre à différentes questions sur les matériaux et les activités dans les locaux. Confirmez la grandeur et les unités fournies pour les paramètres sélectionnés.",
+   "sources": [
+    "voc"
+   ]
+  },
+  {
+   "id": "motion",
+   "q": "Qu’apportent la mesure d’éclairement et la détection PIR ?",
+   "a": "L’éclairement mesure le niveau d’éclairage au point d’installation. Le PIR ajoute les événements de mouvement détecté dans son champ de détection. Ces paramètres aident à relier les données ambiantes à l’éclairage et à l’activité du local. Choisissez la position de montage selon la couverture souhaitée ; le comptage des personnes constitue un besoin distinct.",
+   "sources": []
+  },
+  {
+   "id": "placement",
+   "q": "Où installer les capteurs en intérieur ?",
+   "a": "Choisissez des emplacements représentatifs de l’air du local et accessibles pour la maintenance. Pour le CO₂, HSE recommande une installation à hauteur de tête, à l’écart des portes, des fenêtres et des arrivées d’air, et à plus de 50 cm des personnes. Les capteurs d’éclairement et PIR doivent aussi être correctement orientés. Les espaces plus grands ou ventilés différemment peuvent nécessiter plusieurs points de mesure.",
+   "sources": [
+    "hse"
+   ]
+  },
+  {
+   "id": "platform",
+   "q": "Le capteur peut-il se connecter à notre plateforme existante ?",
+   "a": "L’intégration à la plateforme peut être définie pour la configuration choisie. La gamme Hitelecom comprend des options cellulaires et LoRa, avec une intégration des données via MQTT pour les solutions compatibles. Indiquez la plateforme de destination et la région de déploiement afin d’adapter le modèle, la connexion réseau et l’interface de données.",
+   "sources": []
+  },
+  {
+   "id": "timing",
+   "q": "Comment la mesure et la transmission des données influencent-elles l’autonomie ?",
+   "a": "L’échantillonnage correspond à l’acquisition des mesures ; la transmission correspond à l’envoi des données. L’autonomie dépend des capteurs choisis, de ces deux intervalles, des messages événementiels et des conditions radio. Demandez une estimation pour la configuration et le profil de fonctionnement prévus afin d’adapter l’alimentation au projet.",
+   "sources": []
+  },
+  {
+   "id": "quotation",
+   "q": "Quelles informations fournir pour obtenir un devis ?",
+   "a": "Indiquez l’application, le pays, la quantité approximative et les paramètres à mesurer. Si vous en disposez, ajoutez un plan des locaux et vos exigences en matière d’alimentation, de réseau ou de plateforme. Hitelecom pourra s’appuyer sur ces informations pour étudier avec vous la configuration et le devis.",
+   "sources": []
+  }
+ ],
+ "briefTitle": "Parlez-nous de",
+ "briefAccent": "votre projet.",
+ "briefText": "Indiquez l’application, le lieu d’installation et les paramètres dont vous avez besoin. Nous vous aiderons à choisir une configuration H310-AQ adaptée et à préparer votre devis.",
+ "briefPlaceholder": "Que souhaitez-vous surveiller, et où ? Précisez les exigences déjà définies.",
+ "footerText": "Un projet de surveillance en intérieur ?",
+ "footerStrong": "Parlez-en à Hitelecom.",
+ "startingModel": {
+  "name": "H310-AQ041",
+  "channels": [
+   "CO₂",
+   "Température",
+   "Humidité relative",
+   "Pression atmosphérique"
+  ],
+  "rows": [
+   [
+    "Méthode de mesure du CO₂",
+    "NDIR"
+   ],
+   [
+    "Plage de mesure du CO₂",
+    "400–5 000 ppm"
+   ],
+   [
+    "Exactitude de mesure du CO₂",
+    "30 ppm ±3 % (0–50 °C, 0–85 % HR)"
+   ],
+   [
+    "Résolution du CO₂",
+    "1 ppm"
+   ],
+   [
+    "Plage d’humidité",
+    "0–100 % HR (±1,5 % HR)"
+   ],
+   [
+    "Plage de pression atmosphérique",
+    "30–120 kPa (±0,1 kPa)"
+   ],
+   [
+    "Alimentation",
+    "Alimentation sur batterie, 19 000 mAh"
+   ],
+   [
+    "Autonomie de la batterie",
+    "10 ans ou plus (mesure toutes les 10 minutes, transmission toutes les heures)"
+   ],
+   [
+    "Indice de protection",
+    "Protection contre la pénétration de poussière et d’eau : IP65 ; boîtier : IP68 (selon la fiche technique)"
+   ],
+   [
+    "Configuration locale",
+    "Mise sous/hors tension et configuration de maintenance par NFC"
+   ],
+   [
+    "Mises à jour du firmware",
+    "Mise à jour OTA à distance en un clic via la plateforme cloud"
+   ],
+   [
+    "Options de montage",
+    "Mur · Mât · Rail DIN"
+   ]
+  ],
+  "datasheet": "datasheet"
+ },
+ "heroLines": [
+  "Capteurs sans fil",
+  "de qualité de l’air intérieur"
+ ]
+}
