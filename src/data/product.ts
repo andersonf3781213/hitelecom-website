@@ -3456,8 +3456,8 @@ const productContentBase ={
    },
    "285": {
     "series": "H Series · Air Quality Sensor",
-    "tagline": "6-in-1 | Precision | Energy-Efficient",
-    "desc": "Hitelecom's 6-in-1 air quality sensor monitors CO₂, PM2.5, TVOC, temperature, humidity, and air pressure, with optional NO₂, SO₂, NH₃, and O₃ channels. Data reports to the cloud over 4G or NB-IoT, and the low-maintenance design supports long-term urban and industrial environmental monitoring.",
+    "tagline": "4-in-1 + Custom | Precision | Energy-Efficient",
+    "desc": "The Hitelecom H310-AQ041 indoor air quality sensor measures CO₂, temperature, relative humidity and atmospheric pressure (NDIR, 400–5,000 ppm), with custom options including PM, HCHO, TVOC, O₂, illuminance and PIR motion. Battery-powered (19,000 mAh, 10+ years at hourly reporting per datasheet), IP65, NFC setup and OTA updates; data reports over cellular or LoRa gateway arrangements.",
     "heroImg": "product/details/285-hero.png",
     "pdf": "/downloads/h310-aq041-air-quality-sensor-datasheet.pdf",
      "crumbCat": "Air Quality",

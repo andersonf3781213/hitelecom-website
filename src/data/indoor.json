@@ -1,0 +1,568 @@
+{
+  "key": "indoor",
+  "slug": "air-quality-sensor",
+  "label": "Indoor air quality",
+  "otherSlug": "lists/cid/265",
+  "otherLabel": "All air quality sensors",
+  "title": "Indoor Air Quality Sensors | H310-AQ Series | Hitelecom",
+  "description": "Configure Hitelecom indoor air quality sensors with CO₂, temperature, humidity and pressure, plus optional PM, HCHO, TVOC, O₂, light and PIR.",
+  "heroTitle": "Wireless Indoor Air Quality Sensors",
+  "heroAccent": "Configured for your building.",
+  "heroText": "Monitor CO₂, temperature, humidity and atmospheric pressure with the Hitelecom H310-AQ series. Add particle, gas, light or motion sensing to support ventilation reviews, room-condition monitoring and specialist indoor projects. Choose the measurement set and connectivity for your installation.",
+  "heroImage": "https://www.hitelecom.com/_astro/285-hero.znDDWR7X_ZuDY77.webp",
+  "heroLocal": "indoor-product",
+  "heroAlt": "Hitelecom air quality sensor, existing series reference image",
+  "heroCaption": "Hitelecom air quality sensor · Series reference image",
+  "heroConcept": false,
+  "heroProof": "CO₂ · Temperature · Humidity · Atmospheric pressure · Custom sensing",
+  "heroBottom": "FROM OCCUPIED ROOMS TO SPECIALIST ENVIRONMENTS",
+  "coreTitle": "Start with four",
+  "coreAccent": "core measurements.",
+  "coreIntro": "H310-AQ041 measures CO₂, temperature, relative humidity and atmospheric pressure. Add the measurements your rooms need through a customised H310-AQ configuration.",
+  "base": [
+    "CO₂",
+    "Temperature",
+    "Relative humidity",
+    "Atmospheric pressure"
+  ],
+  "core": [
+    {
+      "symbol": "CO₂",
+      "name": "Carbon dioxide",
+      "unit": "Ventilation context",
+      "text": "Follow CO₂ changes during occupied periods to support a ventilation review."
+    },
+    {
+      "symbol": "T",
+      "name": "Temperature",
+      "unit": "Thermal conditions",
+      "text": "Track temperature across rooms and operating hours to review indoor thermal conditions."
+    },
+    {
+      "symbol": "RH",
+      "name": "Relative humidity",
+      "unit": "Moisture conditions",
+      "text": "Monitor moisture conditions in occupied rooms, storage areas and spaces with sensitive contents."
+    },
+    {
+      "symbol": "P",
+      "name": "Atmospheric pressure",
+      "unit": "Barometric context",
+      "text": "Record ambient air pressure alongside the other environmental measurements."
+    }
+  ],
+  "extensionsTitle": "Choose your",
+  "extensionsAccent": "additional measurements.",
+  "extensionsIntro": "Add particles, specific gases, light or motion to the base measurements. Select the options relevant to your space, or tell us what you want to monitor.",
+  "extensions": [
+    {
+      "symbol": "PM",
+      "name": "Particulate matter",
+      "text": "Track airborne particle levels for indoor air, dust-entry and filtration-related investigations. Select the particle outputs required for your project.",
+      "options": [
+        {
+          "id": "pm1",
+          "label": "PM1"
+        },
+        {
+          "id": "pm25",
+          "label": "PM2.5"
+        },
+        {
+          "id": "pm10",
+          "label": "PM10"
+        }
+      ]
+    },
+    {
+      "symbol": "HCHO",
+      "name": "Formaldehyde",
+      "text": "Add a dedicated formaldehyde measurement for projects involving interior finishes, furniture or refurbishment.",
+      "options": [
+        {
+          "id": "hcho",
+          "label": "HCHO"
+        }
+      ]
+    },
+    {
+      "symbol": "TVOC",
+      "name": "Volatile organic compounds",
+      "text": "Follow changes in the VOC response around cleaning, materials and room activities. Specify the reported units with the selected configuration.",
+      "options": [
+        {
+          "id": "tvoc",
+          "label": "TVOC"
+        }
+      ]
+    },
+    {
+      "symbol": "lx",
+      "name": "Light level",
+      "text": "Measure light at the installation point for lighting reviews, workspaces or collection displays.",
+      "options": [
+        {
+          "id": "light",
+          "label": "Illuminance"
+        }
+      ]
+    },
+    {
+      "symbol": "PIR",
+      "name": "Motion detection",
+      "text": "Add detected-motion events to the room record for activity-related monitoring.",
+      "options": [
+        {
+          "id": "pir",
+          "label": "PIR"
+        }
+      ]
+    },
+    {
+      "symbol": "O₂",
+      "name": "Oxygen",
+      "text": "Add oxygen measurement for a defined laboratory, process or controlled-environment requirement. Select the range and response arrangements for that use.",
+      "options": [
+        {
+          "id": "o2",
+          "label": "O₂"
+        }
+      ]
+    }
+  ],
+  "scopeNote": "Need another parameter? Tell us what you want to measure and where the sensor will be installed.",
+  "modelNames": [
+    "H310-AQ041",
+    "H310-AQ051",
+    "H310-AQ061",
+    "H310-AQ071",
+    "H310-AQ081",
+    "H310-AQ091"
+  ],
+  "groups": [
+    {
+      "id": "people",
+      "name": "Work, learn & gather"
+    },
+    {
+      "id": "property",
+      "name": "Living & property"
+    },
+    {
+      "id": "technical",
+      "name": "Collections & specialist rooms"
+    }
+  ],
+  "sceneTitle": "Explore indoor",
+  "sceneAccent": "applications.",
+  "sceneIntro": "Find a measurement set for the way your space is used. Explore the suggested channels and installation considerations for each application.",
+  "scenes": [
+    {
+      "id": "office",
+      "group": "people",
+      "title": "Offices & meeting rooms",
+      "tag": "Occupied spaces",
+      "alt": "Daylit office meeting room with windows and ceiling ventilation",
+      "measure": "CO₂ · Temperature · Humidity. Optional: PM2.5, TVOC, light, PIR.",
+      "why": "Compare CO₂ and room conditions during meetings and normal working hours to help the facilities team review ventilation and comfort.",
+      "placement": "Select representative occupied areas and record meeting times and ventilation settings alongside the measurements.",
+      "sources": [
+        "hse",
+        "voc"
+      ],
+      "options": [
+        "pm25",
+        "tvoc",
+        "light",
+        "pir"
+      ]
+    },
+    {
+      "id": "classroom",
+      "group": "people",
+      "title": "Schools & classrooms",
+      "tag": "Learning environments",
+      "alt": "Bright classroom with desks and broad operable windows",
+      "measure": "CO₂ · Temperature · Humidity. Optional: PM2.5, light, PIR.",
+      "why": "Follow classroom CO₂, temperature and humidity through lessons and breaks. Compare rooms to help prioritise ventilation reviews.",
+      "placement": "Separate teaching rooms and ventilation zones. Add an outdoor particle point when roadside air is part of the investigation.",
+      "sources": [
+        "hse",
+        "nearroad"
+      ],
+      "options": [
+        "pm25",
+        "light",
+        "pir"
+      ]
+    },
+    {
+      "id": "healthcare",
+      "group": "people",
+      "title": "Healthcare & care facilities",
+      "tag": "Shared indoor spaces",
+      "alt": "Modern healthcare waiting lounge with seating and windows",
+      "measure": "CO₂ · Temperature · Humidity. Optional: PM2.5, TVOC.",
+      "why": "Track conditions in waiting areas, shared rooms and staff spaces across opening hours and cleaning periods.",
+      "placement": "Use separate points for areas with different air handling or room use.",
+      "sources": [
+        "hse",
+        "voc"
+      ],
+      "options": [
+        "pm25",
+        "tvoc"
+      ]
+    },
+    {
+      "id": "fitness",
+      "group": "people",
+      "title": "Gyms & activity studios",
+      "tag": "Changing room use",
+      "measure": "CO₂ · Temperature · Humidity. Optional: PM2.5, TVOC, PIR.",
+      "why": "See how CO₂, heat and humidity change during classes and recovery periods. Compare the rooms and session times that need closer attention.",
+      "placement": "Monitor distinct studios separately and record class schedules. Interpret changes with the activity and ventilation pattern.",
+      "alt": "Contemporary fitness studio with training equipment and broad windows",
+      "options": [
+        "pm25",
+        "tvoc",
+        "pir"
+      ],
+      "sources": [
+        "hse"
+      ]
+    },
+    {
+      "id": "retail",
+      "group": "people",
+      "title": "Retail & shopping centres",
+      "tag": "Multiple occupied zones",
+      "measure": "Temperature · Humidity · CO₂ by zone. Optional: PM2.5, TVOC, light, PIR.",
+      "why": "Compare environmental conditions across shops, shared interiors and operating zones during opening hours and fit-out work.",
+      "placement": "Organise points by occupied zone rather than treating the whole building as a single room.",
+      "alt": "Shopping mall atrium with stores, skylight and indoor planting",
+      "options": [
+        "pm25",
+        "tvoc",
+        "light",
+        "pir"
+      ],
+      "sources": [
+        "hse",
+        "voc"
+      ]
+    },
+    {
+      "id": "restaurant",
+      "group": "people",
+      "title": "Restaurants & dining rooms",
+      "tag": "Daily activity signatures",
+      "measure": "CO₂ · Temperature · Humidity. Optional: PM1 / PM2.5 / PM10, TVOC.",
+      "why": "Track particle and room-condition changes around meal service, kitchen activity and cleaning. Use the record to review the dining environment.",
+      "placement": "Use a representative dining area and a kitchen-to-dining interface point where that comparison serves the project.",
+      "alt": "Restaurant dining room beside an open kitchen and extraction hood",
+      "options": [
+        "pm1",
+        "pm25",
+        "pm10",
+        "tvoc"
+      ],
+      "sources": [
+        "indoorpm"
+      ]
+    },
+    {
+      "id": "hotel",
+      "group": "property",
+      "title": "Hotels & renovated interiors",
+      "tag": "Room air & refurbishment",
+      "alt": "Contemporary hotel bedroom with timber furniture and a large window",
+      "measure": "Base measurements. Optional: HCHO, TVOC, PM2.5; light and PIR for room-activity requirements.",
+      "why": "Follow formaldehyde, VOC and room-condition trends after fit-out, furniture changes or cleaning. Select the channels for the question you need to answer.",
+      "placement": "Record fit-out, cleaning and ventilation periods so readings can be reviewed in context.",
+      "sources": [
+        "voc"
+      ],
+      "options": [
+        "hcho",
+        "tvoc",
+        "pm25"
+      ]
+    },
+    {
+      "id": "basement",
+      "group": "property",
+      "title": "Basements & storage rooms",
+      "tag": "Storage conditions",
+      "measure": "Temperature · Humidity. Optional: PM2.5, TVOC, PIR.",
+      "why": "Monitor temperature and humidity through seasonal changes and ventilation periods, especially in rooms that receive infrequent inspections.",
+      "placement": "Choose representative storage areas and keep the sensor accessible for inspection and servicing.",
+      "alt": "Organised basement storage room with shelves and a ventilation duct",
+      "options": [
+        "pm25",
+        "tvoc",
+        "pir"
+      ],
+      "sources": [
+        "cci",
+        "voc"
+      ]
+    },
+    {
+      "id": "warehouse",
+      "group": "property",
+      "title": "Warehouses & loading bays",
+      "tag": "Indoor–outdoor interface",
+      "alt": "Warehouse aisles with tall pallet racks and storage positions",
+      "measure": "Temperature · Humidity. Optional: PM2.5 / PM10, PIR.",
+      "why": "Compare particle and climate conditions near loading doors, storage aisles and occupied work areas. Link changes to door openings and handling activity.",
+      "placement": "Use separate points for the loading interface and internal storage or work zones.",
+      "sources": [
+        "hse",
+        "pm",
+        "nearroad"
+      ],
+      "options": [
+        "pm25",
+        "pm10",
+        "pir"
+      ]
+    },
+    {
+      "id": "archive",
+      "group": "technical",
+      "title": "Museums & collection stores",
+      "tag": "Collection environment",
+      "alt": "Museum archive storage with collection shelving and archival boxes",
+      "measure": "Temperature · Humidity. Optional: illuminance, PM2.5 and a named gas requirement.",
+      "why": "Track temperature, humidity and display lighting against the requirements of the collection. Compare galleries, stores and display zones over time.",
+      "placement": "Define points and review periods around the material, enclosure and room conditions.",
+      "sources": [
+        "cci"
+      ],
+      "options": [
+        "pm25",
+        "light"
+      ]
+    },
+    {
+      "id": "laboratory",
+      "group": "technical",
+      "title": "Laboratories & controlled environments",
+      "tag": "Custom oxygen requirement",
+      "measure": "O₂ by requirement; temperature, humidity and CO₂ as relevant.",
+      "why": "Add O₂ where the room process requires oxygen measurement, alongside the environmental channels needed for the installation.",
+      "placement": "Specify the process, expected range and sampling location. Include the complete alarm and response requirements when the intended duty calls for them.",
+      "alt": "Laboratory room with stainless-steel cryogenic dewars and benches",
+      "options": [
+        "o2"
+      ],
+      "sources": []
+    },
+    {
+      "id": "data-center",
+      "group": "technical",
+      "title": "Data centres & technical rooms",
+      "tag": "Equipment environment",
+      "measure": "Temperature · Humidity. Optional: PM1 / PM2.5 / PM10, PIR.",
+      "why": "Monitor temperature, humidity and selected particle outputs around maintenance, building work and access periods. Compare conditions across technical zones.",
+      "placement": "Distinguish room-air points from rack-adjacent or access-area points in the installation plan.",
+      "alt": "Data centre aisle with server racks and overhead cable trays",
+      "options": [
+        "pm1",
+        "pm25",
+        "pm10",
+        "pir"
+      ],
+      "sources": [
+        "indoorpm"
+      ]
+    }
+  ],
+  "focus": {
+    "eyebrow": "AIR + ENVIRONMENT + ACTIVITY",
+    "title": "Connect air quality",
+    "accent": "with room use.",
+    "lead": "",
+    "text": "Review air measurements alongside temperature, humidity, light and detected motion. Comparing the same time period helps your team relate changes to meetings, cleaning, ventilation or access events.",
+    "image": "office",
+    "alt": "Meeting room connecting indoor air measurements with daily room use",
+    "cards": [
+      {
+        "label": "AIR & CLIMATE",
+        "value": "CO₂ · PM · TVOC",
+        "text": "Plus temperature and humidity"
+      },
+      {
+        "label": "LIGHT & ACTIVITY",
+        "value": "Light · PIR",
+        "text": "Illuminance and detected motion"
+      }
+    ],
+    "steps": []
+  },
+  "deployment": [
+    {
+      "label": "01 / LOCATIONS",
+      "title": "Choose the locations.",
+      "text": "Identify the rooms or zones you want to compare and the conditions at each point."
+    },
+    {
+      "label": "02 / OPERATING PROFILE",
+      "title": "Choose the operating profile.",
+      "text": "Match sampling, reporting and available power to the selected measurements."
+    },
+    {
+      "label": "03 / DATA",
+      "title": "Connect the data.",
+      "text": "Confirm the network, destination platform and required records for the installation."
+    }
+  ],
+  "integrationTitle": "Your building.",
+  "integrationAccent": "Your platform.",
+  "integrationText": "Connect the selected H310-AQ configuration to your monitoring platform. Match the cellular or LoRa route to the installation, and specify MQTT data integration and the alert workflow for the chosen model.",
+  "modelTitle": "One series.",
+  "modelAccent": "Many sensing combinations.",
+  "modelIntro": "H310-AQ041 provides the four core measurements. Custom H310-AQ configurations add the sensing required for your rooms, with the selected channels and specifications identified in the quotation.",
+  "modelNote": "AQ051, AQ061, AQ071, AQ081 and AQ091 illustrate the planned series extension. Each supplied model is paired with its own measurement list and specifications.",
+  "faq": [
+    {
+      "id": "measurements",
+      "q": "What can the H310-AQ series measure?",
+      "a": "H310-AQ041 measures CO₂, temperature, relative humidity and atmospheric pressure. Custom options include O₂, PM1, PM2.5, PM10, formaldehyde, TVOC, illuminance and PIR motion detection. The selected configuration identifies which measurements are supplied.",
+      "sources": []
+    },
+    {
+      "id": "choose",
+      "q": "How do I choose the measurements for my rooms?",
+      "a": "Start with the purpose of monitoring. For occupied rooms, consider CO₂ and thermal conditions. For dust or air-entry investigations, add particle measurements. For refurbishment, consider HCHO and TVOC. Light, PIR and O₂ serve additional room or process requirements. Share the application if you need help choosing.",
+      "sources": []
+    },
+    {
+      "id": "co2",
+      "q": "How can CO₂ readings support a ventilation review?",
+      "a": "CO₂ readings can help assess ventilation in suitable occupied spaces. Compare readings over time with room use and ventilation settings. This gives the facilities team more useful context than an isolated reading.",
+      "sources": [
+        "hse"
+      ]
+    },
+    {
+      "id": "particles",
+      "q": "What is the difference between PM1, PM2.5 and PM10?",
+      "a": "They report different particle-size fractions. PM2.5 focuses on fine particles, while PM10 includes a wider size fraction. PM1 adds a finer fraction where required. Select the outputs that match your indoor-air or dust-monitoring question, and use the selected model’s specifications to assess performance.",
+      "sources": [
+        "pm"
+      ]
+    },
+    {
+      "id": "hcho",
+      "q": "Should I choose HCHO, TVOC or both?",
+      "a": "Choose HCHO when the measurement requirement is formaldehyde. TVOC follows the sensor’s response to a mixture of volatile organic compounds. A refurbishment project may request both for different questions about materials and room activities. Confirm the reported quantity and units for the selected channels.",
+      "sources": [
+        "voc"
+      ]
+    },
+    {
+      "id": "motion",
+      "q": "What do light and PIR measurements add?",
+      "a": "Illuminance measures light at the installation point. PIR adds detected-motion events within its viewing area. These channels can help relate environmental records to lighting and room activity. Choose the mounting position for the intended coverage; numerical people counting is a separate requirement.",
+      "sources": []
+    },
+    {
+      "id": "placement",
+      "q": "Where should indoor sensors be installed?",
+      "a": "Choose representative room-air locations with access for servicing. For CO₂, HSE recommends head-height placement, away from doors, windows and air supplies, and more than 50 cm from people. Light and PIR also need an appropriate viewing direction. Larger or differently ventilated spaces may need several points.",
+      "sources": [
+        "hse"
+      ]
+    },
+    {
+      "id": "platform",
+      "q": "Can the sensor connect to our existing platform?",
+      "a": "Platform integration can be specified for the selected configuration. Hitelecom’s product family includes cellular and LoRa options, with MQTT data integration described for supported arrangements. Share the destination platform and deployment region so the model, network path and data interface can be matched.",
+      "sources": []
+    },
+    {
+      "id": "timing",
+      "q": "How do sampling and reporting affect battery life?",
+      "a": "Sampling is when measurements are taken; reporting is when data is transmitted. Battery life depends on the selected sensors, both intervals, event messages and radio conditions. Request an estimate for the intended configuration and operating profile so the power arrangement matches the project.",
+      "sources": []
+    },
+    {
+      "id": "quotation",
+      "q": "What should I send to request a quotation?",
+      "a": "Start with the application, country, approximate quantity and measurements you need. If available, add a room plan and your power, network or platform requirements. Hitelecom can use these details to discuss the configuration and quotation with you.",
+      "sources": []
+    }
+  ],
+  "briefTitle": "Tell us about",
+  "briefAccent": "your project.",
+  "briefText": "Share the application, location and measurements you need. We’ll help you explore a suitable H310-AQ configuration and discuss the quotation.",
+  "briefPlaceholder": "What would you like to monitor, and where? Add any requirements you already know.",
+  "footerText": "Planning an indoor monitoring project?",
+  "footerStrong": "Talk to Hitelecom.",
+  "startingModel": {
+    "name": "H310-AQ041",
+    "channels": [
+      "CO₂",
+      "Temperature",
+      "Relative humidity",
+      "Atmospheric pressure"
+    ],
+    "rows": [
+      [
+        "CO₂ measurement method",
+        "NDIR"
+      ],
+      [
+        "CO₂ range",
+        "400–5,000 ppm"
+      ],
+      [
+        "CO₂ accuracy",
+        "30 ppm ±3% (0–50 °C, 0–85% RH)"
+      ],
+      [
+        "CO₂ resolution",
+        "1 ppm"
+      ],
+      [
+        "Humidity range",
+        "0–100% RH (±1.5% RH)"
+      ],
+      [
+        "Atmospheric pressure range",
+        "30–120 kPa (±0.1 kPa)"
+      ],
+      [
+        "Power supply",
+        "Battery-powered, 19,000 mAh"
+      ],
+      [
+        "Battery life",
+        "10+ years (10-minute sampling, hourly reporting)"
+      ],
+      [
+        "Protection rating",
+        "IP65 ingress; IP68 body (per datasheet)"
+      ],
+      [
+        "Local configuration",
+        "NFC power on/off and maintenance setup"
+      ],
+      [
+        "Firmware updates",
+        "Remote one-click OTA via the cloud platform"
+      ],
+      [
+        "Mounting options",
+        "Wall · Pole · DIN rail"
+      ]
+    ],
+    "datasheet": "datasheet"
+  },
+  "heroLines": [
+    "Wireless Indoor",
+    "Air Quality Sensors"
+  ]
+}
