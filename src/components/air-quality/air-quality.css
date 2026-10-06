@@ -23,3 +23,7 @@
 @media(max-width:699px) and (orientation:landscape){.aq-hero{padding-top:92px}.aq-hero-grid{grid-template-columns:1.2fr .8fr;column-gap:24px}.aq .aq-hero h1{grid-column:1;grid-row:1;font-size:32px}.aq-hero-product{grid-column:2;grid-row:1 / span 2;width:clamp(140px,42svh,190px);margin-top:0}.aq-hero-copy>.aq-actions{grid-column:1;grid-row:2;align-self:start}.aq .aq-hero-description{grid-column:1 / -1;grid-row:3}.aq .aq-hero-proof{grid-column:1 / -1;grid-row:4}.aq-hero-product figcaption{display:none}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.aq *{transition:none!important}}
 @media print{.aq-subnav,.aq-filters,.aq-brief-form,.aq-skip{display:none}.aq-scene[hidden]{display:block!important}.aq-section{padding-block:25px}.aq-scene-grid{grid-template-columns:1fr 1fr}.aq-hero{padding-top:50px}.aq{overflow:visible}}
+/* 修复：桌面端轨道装饰圈下缘压到 Hero 图注。
+   轨道直径同时受列宽（80%）与图片实际高度（svh 公式 ≤460/480px）约束，
+   圆心锁定 50%，任何视口下圆底都不会进入图注区。 */
+@media(min-width:700px){.aq-product-orbit{width:min(80%,calc((100svh - 248px)*.92),424px);left:50%;top:4%;transform:translateX(-50%)}}
