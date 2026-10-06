@@ -25968,8 +25968,8 @@ export const productContent = { ...productContentBase, de: {
   },
   "285": {
    "series": "Serie H · Sensor de calidad del aire",
-   "tagline": "6 en 1 | Precisión | Bajo consumo",
-   "desc": "El sensor de calidad del aire 6 en 1 de Hitelecom monitorea CO₂, PM2,5, TVOC, temperatura, humedad y presión atmosférica, con canales opcionales de NO₂, SO₂, NH₃ y O₃. Los datos se transmiten a la nube por 4G o NB-IoT, y el diseño de bajo mantenimiento apoya el monitoreo ambiental urbano e industrial a largo plazo.",
+   "tagline": "4 en 1 + A medida | Precisión | Bajo consumo",
+   "desc": "El sensor de calidad del aire interior H310-AQ041 de Hitelecom mide CO₂, temperatura, humedad relativa y presión atmosférica (NDIR, 400–5 000 ppm), con opciones a medida de PM, HCHO, TVOC, O₂, iluminancia y movimiento PIR. Funciona con batería (19 000 mAh, 10 años o más con transmisión horaria según la ficha técnica), IP65, configuración NFC y actualizaciones OTA; los datos se transmiten por conexión celular o soluciones LoRa con gateway.",
    "heroImg": "product/details/285-hero.png",
    "pdf": "/downloads/h310-aq041-air-quality-sensor-datasheet.pdf",
    "crumbCat": "Calidad del aire",

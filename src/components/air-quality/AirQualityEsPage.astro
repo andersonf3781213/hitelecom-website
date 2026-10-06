@@ -1,0 +1,13 @@
+---
+/**
+ * 室内空气质量页（ES）：/es/product/air-quality-sensor
+ * 复用英文 V2 组件（版式/脚本/样式完全一致），仅替换数据、UI 词典与语言前缀。
+ * 译文：GPT6 西语稿（2026-10-06），Kimi 审核后接入；datasheet 按钮按站内
+ * 西语惯例标注 (EN)。导航/页尾为 BaseLayout 既有西语公共资源（无 ICP，iot67）。
+ */
+import AirQualityV2Page from './AirQualityV2Page.astro';
+import content from '../../data/indoor-es.json';
+import stringsEs from './strings.es.mjs';
+---
+
+<AirQualityV2Page locale="es" prefix="/es" content={content} t={stringsEs} />

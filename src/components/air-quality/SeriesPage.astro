@@ -5,79 +5,83 @@ import './indoor-v2.css';
 import './enquiry.css';
 import sources from '../../data/sources.json';
 import {sceneSizes} from './assets.mjs';
-const {content:c,assets,hero}=Astro.props;
+import stringsEn from './strings.en.mjs';
+const {content:c,assets,hero,t=stringsEn,locale='en',prefix=''}=Astro.props;
 const optionLabels=Object.fromEntries(c.extensions.flatMap(e=>e.options.map(o=>[o.id,o.label])));
 const focus=assets[c.focus.image],model=c.startingModel;
+const tpl=(s,o)=>s.replace(/\{(\w+)\}/g,(_,k)=>o[k]);
+const srcName=id=>(locale==='es'&&sources[id].nameEs)||sources[id].name;
+const rangeUrl=prefix+'/product/'+c.otherSlug,contactUrl=prefix+'/about/contact';
 ---
-<div class="aq aq-series aq-indoor aq-v2" id="aq-content" data-base={JSON.stringify(c.base)} data-family={c.label} data-option-labels={JSON.stringify(optionLabels)}>
+<div class="aq aq-series aq-indoor aq-v2" id="aq-content" data-base={JSON.stringify(c.base)} data-family={c.label} data-option-labels={JSON.stringify(optionLabels)} data-i18n={JSON.stringify(t.js)}>
  <section class="aq-hero" aria-labelledby="aq-title">
   <div class="aq-wrap aq-hero-grid">
    <div class="aq-hero-copy">
     <h1 id="aq-title">{c.heroLines.map((line,i)=><span class="aq-headline-line">{line}{i<c.heroLines.length-1?' ':''}</span>)}</h1>
     <p class="aq-hero-tagline">{c.heroAccent}</p>
     <p class="aq-hero-description">{c.heroText}</p>
-    <div class="aq-actions"><a class="aq-button aq-button-white" href="#project-brief">Request a quote ↗</a><a class="aq-button aq-button-outline" href="#custom-sensing">Choose measurements ↓</a></div>
+    <div class="aq-actions"><a class="aq-button aq-button-white" href="#project-brief">{t.heroQuote}</a><a class="aq-button aq-button-outline" href="#custom-sensing">{t.heroChoose}</a></div>
     <p class="aq-hero-proof">{c.heroProof}</p>
    </div>
    <figure class="aq-hero-product"><div class="aq-product-orbit" aria-hidden="true"/><img src={hero.src} srcset={hero.srcset} sizes={hero.sizes} width={hero.width} height={hero.height} alt={c.heroAlt} loading="eager" decoding="async" fetchpriority="high"/><figcaption>{c.heroCaption}</figcaption></figure>
   </div>
-  <div class="aq-wrap aq-hero-bottom"><span>{c.heroBottom}</span><a href={'/product/'+c.otherSlug}>{c.otherLabel} ↗</a></div>
+  <div class="aq-wrap aq-hero-bottom"><span>{c.heroBottom}</span><a href={rangeUrl}>{c.otherLabel} ↗</a></div>
  </section>
- <nav class="aq-subnav" aria-label="Product page sections"><div class="aq-wrap"><span>{c.label}</span><a href="#measurements">Measurements</a><a href="#custom-sensing">Custom options</a><a href="#applications">Applications</a><a href="#configurations">Models</a><a href="#faq">FAQ</a><a class="aq-nav-quote" href="#project-brief">Request a quote ↗</a></div></nav>
+ <nav class="aq-subnav" aria-label={t.subnavAria}><div class="aq-wrap"><span>{c.label}</span><a href="#measurements">{t.navMeasurements}</a><a href="#custom-sensing">{t.navCustom}</a><a href="#applications">{t.navApplications}</a><a href="#configurations">{t.navModels}</a><a href="#faq">{t.navFaq}</a><a class="aq-nav-quote" href="#project-brief">{t.navQuote}</a></div></nav>
  <section class="aq-section aq-wrap" id="measurements">
-  <div class="aq-section-heading"><div><p class="aq-eyebrow">CORE MEASUREMENTS</p><h2>{c.coreTitle}<br/><span>{c.coreAccent}</span></h2></div><p>{c.coreIntro}</p></div>
+  <div class="aq-section-heading"><div><p class="aq-eyebrow">{t.coreEyebrow}</p><h2>{c.coreTitle}<br/><span>{c.coreAccent}</span></h2></div><p>{c.coreIntro}</p></div>
   <div class="aq-channel-grid aq-core-indoor">{c.core.map((v,i)=><article class="aq-channel"><span class="aq-channel-number">{String(i+1).padStart(2,'0')}</span><strong class="aq-channel-symbol">{v.symbol}</strong><h3>{v.name}</h3><p>{v.text}</p><span class="aq-channel-unit">{v.unit}</span></article>)}</div>
  </section>
  <section class="aq-foundation aq-section" id="custom-sensing"><div class="aq-wrap">
-  <div class="aq-section-heading"><div><p class="aq-eyebrow">CUSTOM MEASUREMENTS</p><h2>{c.extensionsTitle}<br/><span>{c.extensionsAccent}</span></h2></div><p>{c.extensionsIntro}</p></div>
-  <div class="aq-extension-grid">{c.extensions.map(e=><article class="aq-extension"><strong class="aq-extension-symbol">{e.symbol}</strong><h3>{e.name}</h3><p>{e.text}</p><fieldset><legend>Select {e.name} options</legend>{e.options.map(o=><label><input class="aq-option-check" type="checkbox" name="sensor-options" value={o.id} form="aq-brief-form"/><span>{o.label}</span></label>)}</fieldset></article>)}</div>
-  <div class="aq-selection-bar"><div><span>YOUR ADDITIONAL MEASUREMENTS</span><p id="aq-option-summary" aria-live="polite">Base measurements selected. Add options as needed.</p></div><div class="aq-selection-actions"><a href="#project-brief">Add to my enquiry ↗</a><button id="aq-clear-options" type="button" hidden>Clear additional options</button></div></div>
+  <div class="aq-section-heading"><div><p class="aq-eyebrow">{t.customEyebrow}</p><h2>{c.extensionsTitle}<br/><span>{c.extensionsAccent}</span></h2></div><p>{c.extensionsIntro}</p></div>
+  <div class="aq-extension-grid">{c.extensions.map(e=><article class="aq-extension"><strong class="aq-extension-symbol">{e.symbol}</strong><h3>{e.name}</h3><p>{e.text}</p><fieldset><legend>{e.legend??tpl(t.selectOptions,{name:e.name})}</legend>{e.options.map(o=><label><input class="aq-option-check" type="checkbox" name="sensor-options" value={o.id} form="aq-brief-form"/><span>{o.label}</span></label>)}</fieldset></article>)}</div>
+  <div class="aq-selection-bar"><div><span>{t.yourAdditional}</span><p id="aq-option-summary" aria-live="polite">{t.emptyOptionSummary}</p></div><div class="aq-selection-actions"><a href="#project-brief">{t.addToEnquiry}</a><button id="aq-clear-options" type="button" hidden>{t.clearOptions}</button></div></div>
   <p class="aq-scope-note">{c.scopeNote}</p>
  </div></section>
  <section class="aq-section aq-wrap" id="applications">
-  <div class="aq-section-heading"><div><p class="aq-eyebrow">APPLICATIONS</p><h2>{c.sceneTitle}<br/><span>{c.sceneAccent}</span></h2></div><p>{c.sceneIntro}</p></div>
-  <div class="aq-filter-bar"><div class="aq-filters" role="group" aria-label="Filter applications"><button type="button" data-filter="all" aria-pressed="true">All applications</button>{c.groups.map(g=><button type="button" data-filter={g.id} aria-pressed="false">{g.name}</button>)}</div><p class="aq-filter-status" aria-live="polite">{c.scenes.length} applications</p></div>
-  <p class="aq-gallery-note">Suggested measurements can be added to your selection and edited. Photos are AI-generated application illustrations.</p>
+  <div class="aq-section-heading"><div><p class="aq-eyebrow">{t.appsEyebrow}</p><h2>{c.sceneTitle}<br/><span>{c.sceneAccent}</span></h2></div><p>{c.sceneIntro}</p></div>
+  <div class="aq-filter-bar"><div class="aq-filters" role="group" aria-label={t.filterAria}><button type="button" data-filter="all" aria-pressed="true">{t.allApplications}</button>{c.groups.map(g=><button type="button" data-filter={g.id} aria-pressed="false">{g.name}</button>)}</div><p class="aq-filter-status" aria-live="polite">{tpl(t.applicationCount,{count:c.scenes.length})}</p></div>
+  <p class="aq-gallery-note">{t.galleryNote}</p>
   <div class="aq-scene-grid">{c.scenes.map((s,i)=><article class="aq-scene" id={s.id} data-scene-group={s.group}>
    <div class="aq-scene-image"><img src={assets[s.id].src} srcset={assets[s.id].srcset} sizes={sceneSizes} width={assets[s.id].width} height={assets[s.id].height} alt={s.alt} loading="lazy" decoding="async" fetchpriority="low"/><span class="aq-scene-index">{String(i+1).padStart(2,'0')} / {c.scenes.length}</span></div>
-   <div class="aq-scene-body"><p class="aq-eyebrow">{s.tag}</p><h3>{s.title}</h3><p>{s.why}</p><div class="aq-measure-line"><span>MEASUREMENT FOCUS</span><p>{s.measure}</p></div><details class="aq-scene-detail"><summary>Installation notes <span aria-hidden="true">+</span></summary><div><p>{s.placement}</p></div></details><a class="aq-scene-cta" href="#project-brief" data-project-scene={s.title} data-recommend={JSON.stringify(s.options||[])}>Add suggested options <span aria-hidden="true">↗</span></a></div>
+   <div class="aq-scene-body"><p class="aq-eyebrow">{s.tag}</p><h3>{s.title}</h3><p>{s.why}</p><div class="aq-measure-line"><span>{t.measureFocus}</span><p>{s.measure}</p></div><details class="aq-scene-detail"><summary>{t.installationNotes} <span aria-hidden="true">+</span></summary><div><p>{s.placement}</p></div></details><a class="aq-scene-cta" href="#project-brief" data-project-scene={s.title} data-recommend={JSON.stringify(s.options||[])}>{t.addSuggested} <span aria-hidden="true">↗</span></a></div>
   </article>)}</div>
  </section>
  <section class="aq-connected aq-section" id="deployment"><div class="aq-wrap aq-connected-grid">
-  <div><p class="aq-eyebrow">{c.focus.eyebrow}</p><h2>{c.focus.title}<br/>{c.focus.accent}</h2><p class="aq-lead">{c.focus.text}</p><a class="aq-text-link" href="#custom-sensing">Explore the measurements ↗</a></div>
+  <div><p class="aq-eyebrow">{c.focus.eyebrow}</p><h2>{c.focus.title}<br/>{c.focus.accent}</h2><p class="aq-lead">{c.focus.text}</p><a class="aq-text-link" href="#custom-sensing">{t.exploreMeasurements}</a></div>
   <div class="aq-pair-visual"><img src={focus.src} srcset={focus.srcset} sizes="(max-width: 699px) calc(100vw - 40px), (max-width: 1439px) 48vw, 600px" width={focus.width} height={focus.height} alt={c.focus.alt} loading="lazy" decoding="async" fetchpriority="low"/><div class="aq-pair-cards">{c.focus.cards.map(v=><div><span>{v.label}</span><strong>{v.value}</strong><p>{v.text}</p></div>)}</div></div>
  </div></section>
- <section class="aq-section aq-wrap aq-installation"><div class="aq-section-heading"><div><p class="aq-eyebrow">INSTALLATION</p><h2>Plan your<br/><span>installation.</span></h2></div><p>Start with the rooms, then match the sensing, power and data connection.</p></div><div class="aq-spec-grid">{c.deployment.map(d=><article><span class="aq-step">{d.label}</span><h3>{d.title}</h3><p>{d.text}</p></article>)}</div></section>
+ <section class="aq-section aq-wrap aq-installation"><div class="aq-section-heading"><div><p class="aq-eyebrow">{t.installEyebrow}</p><h2>{t.installTitle}<br/><span>{t.installAccent}</span></h2></div><p>{t.installIntro}</p></div><div class="aq-spec-grid">{c.deployment.map(d=><article><span class="aq-step">{d.label}</span><h3>{d.title}</h3><p>{d.text}</p></article>)}</div></section>
  <section class="aq-integration aq-section"><div class="aq-wrap aq-integration-grid">
-  <div><p class="aq-eyebrow">REMOTE MONITORING & INTEGRATION</p><h2>{c.integrationTitle}<br/>{c.integrationAccent}</h2><p class="aq-lead">{c.integrationText}</p><a class="aq-button aq-button-white" href="#project-brief">Discuss platform integration ↗</a></div>
-  <div class="aq-integration-path">{[['Your measurement set','The channels selected for each room'],['Your connection route','Cellular or the specified LoRa and gateway arrangement'],['Your platform records','Device identity, units, timestamps and data interface'],['Your response workflow','Trend review and configured alerts']].map(([title,text],i)=><div class="aq-path-row"><span>0{i+1}</span><div><h3>{title}</h3><p>{text}</p></div></div>)}</div>
+  <div><p class="aq-eyebrow">{t.integrationEyebrow}</p><h2>{c.integrationTitle}<br/>{c.integrationAccent}</h2><p class="aq-lead">{c.integrationText}</p><a class="aq-button aq-button-white" href="#project-brief">{t.discussIntegration}</a></div>
+  <div class="aq-integration-path">{t.pathRows.map(([title,text],i)=><div class="aq-path-row"><span>0{i+1}</span><div><h3>{title}</h3><p>{text}</p></div></div>)}</div>
  </div></section>
  <section class="aq-section aq-wrap" id="configurations">
-  <div class="aq-section-heading"><div><p class="aq-eyebrow">SERIES & CONFIGURATIONS</p><h2>{c.modelTitle}<br/><span>{c.modelAccent}</span></h2></div><p>{c.modelIntro}</p></div>
-  <div class="aq-series-ladder" aria-label="H310-AQ series configurations">
-   {c.modelNames.map((name,i)=><div class:list={{'aq-series-start':i===0}}><span>{i===0?'STARTING CONFIGURATION':'SERIES EXTENSION'}</span><strong>{name}</strong><small>{i===0?'4 core measurements':'Project-specific sensing'}</small></div>)}
+  <div class="aq-section-heading"><div><p class="aq-eyebrow">{t.modelsEyebrow}</p><h2>{c.modelTitle}<br/><span>{c.modelAccent}</span></h2></div><p>{c.modelIntro}</p></div>
+  <div class="aq-series-ladder" aria-label={t.ladderAria}>
+   {c.modelNames.map((name,i)=><div class:list={{'aq-series-start':i===0}}><span>{i===0?t.startingConfig:t.seriesExtension}</span><strong>{name}</strong><small>{i===0?t.startingSmall:t.extensionSmall}</small></div>)}
   </div>
   <p class="aq-model-footnote">{c.modelNote}</p>
   <div class="aq-model-grid">
-   <article class="aq-model-card"><p class="aq-eyebrow">BASE CONFIGURATION</p><h3>{model.name}</h3><p class="aq-model-channels">{model.channels.join(' · ')}</p><table><caption>Selected published specifications · {model.name}</caption><tbody>{model.rows.map(([a,b])=><tr><th scope="row">{a}</th><td>{b}</td></tr>)}</tbody></table><a class="aq-button aq-button-ghost" href={sources[model.datasheet].url}>View {model.name} datasheet ↗</a></article>
-   <article class="aq-model-card aq-model-custom"><p class="aq-eyebrow">CUSTOM CONFIGURATION</p><h3>Need additional<br/>measurements?</h3><p>Tell us about the space and the measurements you need. Hitelecom can help match the sensing, connectivity and installation requirements to a suitable configuration.</p><div class="aq-custom-choices"><div><span>Air quality</span><p>PM1 / PM2.5 / PM10 · HCHO · TVOC</p></div><div><span>Light & activity</span><p>Illuminance · PIR motion detection</p></div><div><span>Specialist requirements</span><p>O₂ · Other parameters by discussion</p></div></div><a class="aq-button aq-button-blue" href="#project-brief">Get help choosing a configuration ↗</a></article>
+   <article class="aq-model-card"><p class="aq-eyebrow">{t.baseConfig}</p><h3>{model.name}</h3><p class="aq-model-channels">{model.channels.join(' · ')}</p><table><caption>{tpl(t.specCaption,{name:model.name})}</caption><tbody>{model.rows.map(([a,b])=><tr><th scope="row">{a}</th><td>{b}</td></tr>)}</tbody></table><a class="aq-button aq-button-ghost" href={sources[model.datasheet].url}>{tpl(t.viewDatasheet,{name:model.name})}</a></article>
+   <article class="aq-model-card aq-model-custom"><p class="aq-eyebrow">{t.customConfig}</p><h3>{t.customTitle}<br/>{t.customAccent}</h3><p>{t.customText}</p><div class="aq-custom-choices">{t.customChoices.map(([label,text])=><div><span>{label}</span><p>{text}</p></div>)}</div><a class="aq-button aq-button-blue" href="#project-brief">{t.getHelp}</a></article>
   </div>
  </section>
- <section class="aq-faq aq-section" id="faq"><div class="aq-wrap aq-faq-grid"><div class="aq-faq-heading"><p class="aq-eyebrow">ANSWERS FOR YOUR PROJECT</p><h2>Frequently<br/>asked questions.</h2><p>Answers to help you choose measurements, plan installation and connect your data.</p><a class="aq-text-link" href="#project-brief">Ask about your project ↗</a></div><div class="aq-faq-list">{c.faq.map((f,i)=><details class="aq-faq-item" id={'faq-'+f.id}><summary><span class="aq-faq-number">{String(i+1).padStart(2,'0')}</span><h3>{f.q}</h3><span class="aq-faq-plus" aria-hidden="true">+</span></summary><div class="aq-faq-answer"><p>{f.a}</p>{f.sources.length>0&&<p class="aq-references">{f.sources.filter(id=>sources[id]).map(id=><a href={sources[id].url}>{sources[id].name} ↗</a>)}</p>}</div></details>)}</div></div></section>
+ <section class="aq-faq aq-section" id="faq"><div class="aq-wrap aq-faq-grid"><div class="aq-faq-heading"><p class="aq-eyebrow">{t.faqEyebrow}</p><h2>{t.faqTitle}<br/>{t.faqAccent}</h2><p>{t.faqIntro}</p><a class="aq-text-link" href="#project-brief">{t.askProject}</a></div><div class="aq-faq-list">{c.faq.map((f,i)=><details class="aq-faq-item" id={'faq-'+f.id}><summary><span class="aq-faq-number">{String(i+1).padStart(2,'0')}</span><h3>{f.q}</h3><span class="aq-faq-plus" aria-hidden="true">+</span></summary><div class="aq-faq-answer"><p>{f.a}</p>{f.sources.length>0&&<p class="aq-references">{f.sources.filter(id=>sources[id]).map(id=><a href={sources[id].url}>{srcName(id)} ↗</a>)}</p>}</div></details>)}</div></div></section>
  <section class="aq-section aq-wrap" id="project-brief" aria-labelledby="aq-brief-title"><div class="aq-brief-grid">
-  <div class="aq-brief-intro"><p class="aq-eyebrow">LET’S TALK ABOUT YOUR PROJECT</p><h2 id="aq-brief-title">{c.briefTitle}<br/><span>{c.briefAccent}</span></h2><p class="aq-lead">{c.briefText}</p><div class="aq-brief-contact"><span>EMAIL OUR TEAM</span><a class="aq-contact-email" href="mailto:sales@hitelecom.cn">sales@hitelecom.cn ↗</a><p class="aq-small">A room plan, site photo or platform requirement can help with the discussion.</p></div></div>
+  <div class="aq-brief-intro"><p class="aq-eyebrow">{t.briefEyebrow}</p><h2 id="aq-brief-title">{c.briefTitle}<br/><span>{c.briefAccent}</span></h2><p class="aq-lead">{c.briefText}</p><div class="aq-brief-contact"><span>{t.emailTeam}</span><a class="aq-contact-email" href="mailto:sales@hitelecom.cn">sales@hitelecom.cn ↗</a><p class="aq-small">{t.contactNote}</p></div></div>
   <form class="aq-brief-form" id="aq-brief-form" aria-labelledby="aq-form-title">
-   <div class="aq-form-selection"><div class="aq-form-selection-heading"><h3>Your measurements</h3><a href="#custom-sensing">Edit selection ↑</a></div><span>CORE MEASUREMENTS</span><ul class="aq-core-tags" aria-label="Core measurements">{c.base.map(item=><li>{item}</li>)}</ul><span>ADDITIONAL MEASUREMENTS</span><p id="aq-form-options" aria-live="polite">Core measurements only. Add options if needed.</p><p id="aq-scenario-status" aria-live="polite"/></div>
-   <div class="aq-form-heading"><h3 id="aq-form-title">Your project details</h3><p>Share what you know. We can discuss the rest.</p></div>
-   <div class="aq-form-grid"><label class="aq-application-field">Application<select name="application" id="aq-application"><option value="">Choose an application</option>{c.scenes.map(s=><option>{s.title}</option>)}<option>Another application</option></select></label><label>Country / region<input name="region" placeholder="e.g. United Kingdom" autocomplete="country-name"/></label><label class="aq-quantity-field">Approximate quantity<input name="points" placeholder="e.g. 20 sensors" inputmode="numeric"/></label></div>
-   <label>What would you like to monitor?<textarea name="requirements" rows="3" placeholder={c.briefPlaceholder}/></label>
-   <details class="aq-form-technical"><summary>Add technical details <span>Optional</span></summary><div><label>Available power / network<input name="power" placeholder="Tell us what is available, if known"/></label><label>Platform / reporting needs<input name="platform" placeholder="e.g. Existing platform and update interval"/></label></div></details>
-   <button class="aq-button aq-button-blue" type="button" id="aq-build-brief">Review my enquiry ↗</button><p class="aq-small aq-form-help">Review the details, then open your email app to send your enquiry.</p>
-   <div class="aq-brief-result" id="aq-brief-result" hidden><label>Enquiry details<textarea id="aq-brief-text" rows="9" readonly/></label><div class="aq-actions"><button class="aq-button aq-button-ghost" id="aq-copy-brief" type="button">Copy enquiry</button><a class="aq-button aq-button-blue" id="aq-email-brief" href="mailto:sales@hitelecom.cn">Open email app ↗</a></div><p id="aq-copy-status" aria-live="polite"/></div>
-   <noscript><p><a href="https://www.hitelecom.com/about/contact">Contact Hitelecom with your requirements ↗</a></p></noscript>
+   <div class="aq-form-selection"><div class="aq-form-selection-heading"><h3>{t.yourMeasurements}</h3><a href="#custom-sensing">{t.editSelection}</a></div><span>{t.coreMeasurements}</span><ul class="aq-core-tags" aria-label={t.coreMeasurementsAria}>{c.base.map(item=><li>{item}</li>)}</ul><span>{t.additionalMeasurements}</span><p id="aq-form-options" aria-live="polite">{t.emptyFormOptions}</p><p id="aq-scenario-status" aria-live="polite"/></div>
+   <div class="aq-form-heading"><h3 id="aq-form-title">{t.projectDetails}</h3><p>{t.projectDetailsSub}</p></div>
+   <div class="aq-form-grid"><label class="aq-application-field">{t.applicationLabel}<select name="application" id="aq-application"><option value="">{t.chooseApplication}</option>{c.scenes.map(s=><option>{s.title}</option>)}<option>{t.anotherApplication}</option></select></label><label>{t.countryLabel}<input name="region" placeholder={t.countryPlaceholder} autocomplete="country-name"/></label><label class="aq-quantity-field">{t.quantityLabel}<input name="points" placeholder={t.quantityPlaceholder} inputmode="numeric"/></label></div>
+   <label>{t.monitorLabel}<textarea name="requirements" rows="3" placeholder={c.briefPlaceholder}/></label>
+   <details class="aq-form-technical"><summary>{t.techDetails} <span>{t.optional}</span></summary><div><label>{t.powerLabel}<input name="power" placeholder={t.powerPlaceholder}/></label><label>{t.platformLabel}<input name="platform" placeholder={t.platformPlaceholder}/></label></div></details>
+   <button class="aq-button aq-button-blue" type="button" id="aq-build-brief">{t.reviewEnquiry}</button><p class="aq-small aq-form-help">{t.reviewHelp}</p>
+   <div class="aq-brief-result" id="aq-brief-result" hidden><label>{t.enquiryDetails}<textarea id="aq-brief-text" rows="9" readonly/></label><div class="aq-actions"><button class="aq-button aq-button-ghost" id="aq-copy-brief" type="button">{t.copyEnquiry}</button><a class="aq-button aq-button-blue" id="aq-email-brief" href="mailto:sales@hitelecom.cn">{t.openEmail}</a></div><p id="aq-copy-status" aria-live="polite"/></div>
+   <noscript><p><a href={contactUrl}>{t.noscriptContact}</a></p></noscript>
   </form>
  </div></section>
- <div class="aq-other-family aq-wrap"><div><span>EXPLORE THE PRODUCT RANGE</span><h3>{c.otherLabel}</h3></div><a href={'/product/'+c.otherSlug}>View the product range ↗</a></div>
- <div class="aq-end-band"><div class="aq-wrap"><p>{c.footerText}<br/><strong>{c.footerStrong}</strong></p><a class="aq-button aq-button-white" href="https://www.hitelecom.com/about/contact">Contact us ↗</a></div></div>
+ <div class="aq-other-family aq-wrap"><div><span>{t.exploreRange}</span><h3>{c.otherLabel}</h3></div><a href={rangeUrl}>{t.viewRange}</a></div>
+ <div class="aq-end-band"><div class="aq-wrap"><p>{c.footerText}<br/><strong>{c.footerStrong}</strong></p><a class="aq-button aq-button-white" href={contactUrl}>{t.contactUs}</a></div></div>
 </div>
 <script src="./series.js"/>

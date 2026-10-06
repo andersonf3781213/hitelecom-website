@@ -1,23 +1,32 @@
 ---
 /**
- * 室内空气质量页（EN）V2 · 文案与体验改版（GPT6 稿，Kimi 集成修复）
+ * 室内空气质量页 V2 · 文案与体验改版（GPT6 稿，Kimi 集成修复）
  * 与经典模板同 URL 替换：/product/air-quality-sensor（slug 不变，
  * 七语 hreflang 闭环、七语首页 12 处内链、sitemap 均不受影响）。
- * 数据：src/data/indoor.json；图源：src/assets/air-quality；
- * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级 Schema。
+ * 默认渲染英文（数据 indoor.json + strings.en）；西语版见 AirQualityEsPage.astro，
+ * 复用本组件并传入 ES 数据/词典与前缀。Organization/WebSite 实体图由
+ * BaseLayout 全局输出，本页仅输出页面级 Schema。
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SeriesPage from './SeriesPage.astro';
 import { getAssets, getHero } from './assets.mjs';
 import { makeSchema } from './schema.mjs';
-import content from '../../data/indoor.json';
+import contentEn from '../../data/indoor.json';
+import stringsEn from './strings.en.mjs';
+
+const {
+  locale = 'en',
+  prefix = '',
+  content = contentEn,
+  t = stringsEn
+} = Astro.props;
 
 const assets = await getAssets(content);
 const hero = await getHero(content);
-const graph = makeSchema(content, hero, assets);
+const graph = makeSchema(content, hero, assets, { prefix, inLanguage: locale, s: t.schema });
 ---
 
-<BaseLayout locale="en" title={content.title} description={content.description} preloadImage={hero.src}>
+<BaseLayout locale={locale} title={content.title} description={content.description} preloadImage={hero.src}>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(graph).replaceAll('<', '\\u003c')} />
-  <SeriesPage content={content} hero={hero} assets={assets} />
+  <SeriesPage content={content} hero={hero} assets={assets} t={t} locale={locale} prefix={prefix} />
 </BaseLayout>
