@@ -171,3 +171,9 @@
 :where(.ht-tilt) .shell-reference .footer-col-title{line-height:1.6}
 :where(.ht-tilt) .shell-reference .qr-pop a,:where(.ht-tilt) .shell-reference .qr-pop span{display:block;margin-top:6px;text-align:center;font-size:11px;letter-spacing:0;text-transform:none;white-space:nowrap;color:#121c2b}
 :where(.ht-tilt) .shell-reference .search-fields .btn-pill{display:flex;align-items:center;gap:8px}
+
+/* Kimi 2026-10-07：首屏内容宽度对齐站头内容边界（用户反馈两侧过宽）。
+   仅 hero-band 内 wrap 加宽至站头网格（padding clamp(20px,3.125vw,60px) 的对应总量），
+   产品卡固定 550px 防止随网格过度放大；下方内容区维持 1240 —— 场景卡图 srcset 按 1240 网格计算，勿整体加宽。 */
+:where(.ht-tilt) .hero-band .wrap{width:min(1680px,calc(100% - clamp(40px,6.25vw,120px)))}
+@media (min-width:1300px){:where(.ht-tilt) .hero{grid-template-columns:1fr 550px}}
