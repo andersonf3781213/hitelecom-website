@@ -1,3 +1,8 @@
+// 多语文案：根节点 data-i18n（dicts.mjs js 段），读取失败或缺键时回退英文
+const I18N = (() => { try { return JSON.parse(document.querySelector('.ht-tilt')?.dataset.i18n || '{}'); } catch { return {}; } })();
+const S = (key, fallback) => I18N[key] || fallback;
+const FIELD_LABELS = I18N.labels || {};
+
 const form = document.querySelector('#enquiry-form');
 const application = document.querySelector('#application');
 document.querySelectorAll('[data-project-scene]').forEach(link => {
@@ -6,7 +11,7 @@ document.querySelectorAll('[data-project-scene]').forEach(link => {
 document.querySelectorAll('[data-model]').forEach(link => {
   link.addEventListener('click', () => {
     const field = document.querySelector('#requirements');
-    if (!field.value.includes(link.dataset.model)) field.value = `Model of interest: ${link.dataset.model}\n` + field.value;
+    if (!field.value.includes(link.dataset.model)) field.value = `${S('modelPrefix', 'Model of interest')}: ${link.dataset.model}\n` + field.value;
   });
 });
 const revealTarget = () => {
@@ -24,20 +29,20 @@ if (form) {
   const brief = document.querySelector('#enquiry-brief');
   const email = document.querySelector('#email-brief');
   const status = document.querySelector('#brief-status');
-  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent('H Series wireless tilt sensor — project enquiry')}&body=${encodeURIComponent(brief.value)}`; };
+  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent(S('subject', 'H Series wireless tilt sensor — project enquiry'))}&body=${encodeURIComponent(brief.value)}`; };
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    brief.value = ['Hello Hitelecom,', '', 'I would like to discuss a wireless tilt monitoring project.', '', ...['Application','Country','Quantity','Connectivity','Requirements'].map(key=>`${key}: ${data.get(key) || 'Please advise'}`), '', 'Please advise on a suitable model, configuration, supporting datasheet and quotation.', '', 'Thank you.'].join('\n');
+    brief.value = [S('greet', 'Hello Hitelecom,'), '', S('intro', 'I would like to discuss a wireless tilt monitoring project.'), '', ...['Application','Country','Quantity','Connectivity','Requirements'].map(key=>`${FIELD_LABELS[key] || key}: ${data.get(key) || S('fallback', 'Please advise')}`), '', S('closing', 'Please advise on a suitable model, configuration, supporting datasheet and quotation.'), '', S('thanks', 'Thank you.')].join('\n');
     updateEmail(); review.hidden = false;
-    status.textContent = 'Your brief is ready. Review it and open your email app to send.';
+    status.textContent = S('ready', 'Your brief is ready. Review it and open your email app to send.');
     brief.focus({preventScroll:true}); review.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
   });
   brief.addEventListener('input', updateEmail);
   document.querySelector('#copy-brief').addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(brief.value); status.textContent = 'Project brief copied.'; }
-    catch { brief.focus(); brief.select(); status.textContent = 'Your brief is selected. Use your device’s copy command.'; }
+    try { await navigator.clipboard.writeText(brief.value); status.textContent = S('copied', 'Project brief copied.'); }
+    catch { brief.focus(); brief.select(); status.textContent = S('selected', 'Your brief is selected. Use your device’s copy command.'); }
   });
 }
 

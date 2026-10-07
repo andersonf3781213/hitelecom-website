@@ -1,0 +1,43 @@
+---
+/**
+ * 倾斜传感器页 V2 · 多语言注册表（GPT6 各语稿，Kimi 审核集成 2026-10-07）
+ * 同 URL 上线：/{lang}/product/tilt-sensor（slug 不变，hreflang 闭环 /
+ * sitemap / 内链均由路由层原有逻辑覆盖）。zh 不在本轮范围（保持经典模板）。
+ * 用法：EN 路由经 TiltEnPage 委托本组件 locale="en"；其余语言 locale="es|de|ja|fr|ru"。
+ * 数据：src/data/tilt-content(-{lang}).json；词典：dicts.mjs；样式：tilt.css（.ht-tilt 作用域）。
+ * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级 Schema。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TiltPage from './TiltPage.astro';
+import StructuredData from './StructuredData.astro';
+import { tiltImage } from './images.mjs';
+import TILT_DICTS from './dicts.mjs';
+import contentEn from '../../data/tilt-content.json';
+import contentEs from '../../data/tilt-content-es.json';
+import contentDe from '../../data/tilt-content-de.json';
+import contentJa from '../../data/tilt-content-ja.json';
+import contentFr from '../../data/tilt-content-fr.json';
+import contentRu from '../../data/tilt-content-ru.json';
+import '../../styles/tilt.css';
+
+const REGISTRY = {
+  en: { content: contentEn, prefix: '' },
+  es: { content: contentEs, prefix: '/es' },
+  de: { content: contentDe, prefix: '/de' },
+  ja: { content: contentJa, prefix: '/ja' },
+  fr: { content: contentFr, prefix: '/fr' },
+  ru: { content: contentRu, prefix: '/ru' },
+};
+
+const { locale = 'en' } = Astro.props;
+const { content, prefix } = REGISTRY[locale] ?? REGISTRY.en;
+const t = TILT_DICTS[locale] ?? TILT_DICTS.en;
+
+const hero = await tiltImage('product-hero.webp', true);
+const ogImage = new URL(hero.src, Astro.site).href;
+---
+
+<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description} preloadImage={hero.src}>
+  <StructuredData slot="head" content={content} imageUrl={ogImage} t={t} locale={locale} prefix={prefix} />
+  <TiltPage content={content} t={t} locale={locale} prefix={prefix} />
+</BaseLayout>

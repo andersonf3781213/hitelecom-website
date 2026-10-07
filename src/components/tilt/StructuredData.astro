@@ -1,19 +1,21 @@
 ---
 /**
- * 倾斜传感器页 · 页面级 JSON-LD（Kimi 集成修正版）
+ * 倾斜传感器页 · 页面级 JSON-LD（Kimi 集成修正版；多语化 2026-10-07）
  * 修正：删除 GPT6 自建 Organization 节点（红线：Organization 仅由 BaseLayout
  * 全局输出，邮箱 .com）；面包屑对齐站内惯例（IoT Sensors → /product/lists/cid/261）；
  * 补 isPartOf / dateModified。publisher/manufacturer 仅按 @id 引用全局实体。
+ * 多语化：url/inLanguage/面包屑标签随 locale；EN 输出与改造前一致（dateModified 除外）。
  */
-const { content, imageUrl } = Astro.props;
-const url = 'https://www.hitelecom.com/product/tilt-sensor';
+const { content, imageUrl, t, locale, prefix } = Astro.props;
+const url = `https://www.hitelecom.com${prefix}/product/tilt-sensor`;
+const homeItem = `https://www.hitelecom.com${prefix}/`;
 const orgId = 'https://www.hitelecom.com/#organization';
 const graph = [
-  {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:'en',isPartOf:{'@id':'https://www.hitelecom.com/#website'},publisher:{'@id':orgId},mainEntity:{'@id':url+'#series'},breadcrumb:{'@id':url+'#breadcrumb'},primaryImageOfPage:{'@type':'ImageObject',url:imageUrl},dateModified:'2026-10-06',...(content.faqs?.length?{hasPart:{'@id':url+'#faq'}}:{})},
-  {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://www.hitelecom.com/'},{'@type':'ListItem',position:2,name:'IoT Sensors',item:'https://www.hitelecom.com/product/lists/cid/261'},{'@type':'ListItem',position:3,name:'Wireless Tilt Sensor',item:url}]},
+  {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:locale,isPartOf:{'@id':'https://www.hitelecom.com/#website'},publisher:{'@id':orgId},mainEntity:{'@id':url+'#series'},breadcrumb:{'@id':url+'#breadcrumb'},primaryImageOfPage:{'@type':'ImageObject',url:imageUrl},dateModified:'2026-10-07',...(content.faqs?.length?{hasPart:{'@id':url+'#faq'}}:{})},
+  {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:t.bcLd[0],item:homeItem},{'@type':'ListItem',position:2,name:t.bcLd[1],item:`https://www.hitelecom.com${prefix}/product/lists/cid/261`},{'@type':'ListItem',position:3,name:t.bcLd[2],item:url}]},
   {'@type':'ProductGroup','@id':url+'#series',name:'Hitelecom H Series wireless tilt sensors',description:content.hero.description,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},url,image:imageUrl,hasVariant:content.modelCatalog.models.map(m=>({'@id':url+'#'+m.id}))},
   ...content.modelCatalog.models.map(m=>({'@type':'Product','@id':url+'#'+m.id,name:'Hitelecom '+m.model+' Wireless Tilt Sensor',model:m.model,description:m.scopeNote,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},isVariantOf:{'@id':url+'#series'},url:url+'#'+m.id,additionalProperty:m.specifications.map(s=>({'@type':'PropertyValue',name:s.name,value:s.value}))})),
-  {'@type':'FAQPage','@id':url+'#faq',inLanguage:'en',isPartOf:{'@id':url+'#webpage'},mainEntity:content.faqs.map(f=>({'@type':'Question','@id':url+'#'+f.id,name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
+  {'@type':'FAQPage','@id':url+'#faq',inLanguage:locale,isPartOf:{'@id':url+'#webpage'},mainEntity:content.faqs.map(f=>({'@type':'Question','@id':url+'#'+f.id,name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
 ];
 ---
 <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/</g,'\\u003c')} />

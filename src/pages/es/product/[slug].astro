@@ -5,6 +5,7 @@
  */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AirQualityV2Page from '../../../components/air-quality/AirQualityV2Page.astro';
+import TiltV2Page from '../../../components/tilt/TiltV2Page.astro';
 import ProductShell from '../../../components/product/ProductShell.astro';
 import ProductCard from '../../../components/product/ProductCard.astro';
 import Img from '../../../components/Img.astro';
@@ -120,6 +121,8 @@ const breadcrumbLd = {
 {/* ES 空气质量页 V2：同 URL 替换（数据 indoor-es.json + strings.es.mjs），其余产品页走经典模板 */}
 {slug === 'air-quality-sensor' ? (
   <AirQualityV2Page locale="es" />
+) : slug === 'tilt-sensor' ? (
+  <TiltV2Page locale="es" />
 ) : (
 <BaseLayout locale="es" preloadImage={heroSrc} title={detailSeo.es[id]?.title ?? `${d.series} | Sensores IoT industriales Hitelecom`} description={detailSeo.es[id]?.desc ?? d.desc}>
   <ProductShell>
