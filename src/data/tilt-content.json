@@ -1,0 +1,742 @@
+{
+  "version": 14,
+  "seo": {
+    "title": "Wireless Tilt Sensor | 4G, NB-IoT & LoRa | Hitelecom",
+    "description": "Specify Hitelecom H Series wireless tilt sensors for racks, poles, towers and structures. Compare angle accuracy, operating profiles and platform integration."
+  },
+  "hero": {
+    "title": "Wireless tilt sensor for structural monitoring.",
+    "description": "The Hitelecom H Series wireless tilt sensor is an inclinometer that measures changes in angle at its mounting point. It is designed for monitoring poles, towers, bridge elements and warehouse rack uprights. Depending on the model, readings are transmitted over 4G, NB-IoT or LoRa for remote monitoring and configured alerts. Choose the model by measurement performance, reporting requirements, installation conditions and platform compatibility.",
+    "primaryLabel": "Request a quote",
+    "secondaryLabel": "Explore applications"
+  },
+  "features": [
+    {
+      "title": "Choose your measurement grade",
+      "text": "H310-TS180C accuracy grades: 0.1°, 0.01° or 0.001°. Select the configuration for your working range and site conditions."
+    },
+    {
+      "title": "Match the outdoor enclosure",
+      "text": "Metal IP68 or plastic IP66 enclosure options, selected with the mounting arrangement and installation environment."
+    },
+    {
+      "title": "Connect across your sites",
+      "text": "4G, NB-IoT and LoRa configurations provide different routes from the measurement point to your monitoring platform."
+    },
+    {
+      "title": "Configure locally with NFC",
+      "text": "NFC activation and local device configuration support installation and commissioning."
+    },
+    {
+      "title": "Update firmware remotely",
+      "text": "OTA firmware updates support device maintenance after installation."
+    },
+    {
+      "title": "Plan the alert workflow",
+      "text": "Define the angle reference, threshold and required notification time for the selected device and platform configuration."
+    }
+  ],
+  "overview": {
+    "kicker": "A CLEARER VIEW OF CHANGE",
+    "title": "Measure the angle. Follow the trend.",
+    "answer": "A wireless tilt sensor measures inclination where it is mounted. Compare later readings with the installation baseline to follow the direction and size of local rotation. Connect each measurement point to a named asset, so your team can review changes alongside inspection and maintenance records.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Establish the reference",
+        "text": "Fix the sensor to the selected element. Record the asset, mounting position, sensor axes and initial angle after installation."
+      },
+      {
+        "number": "02",
+        "title": "Bring readings to your platform",
+        "text": "Select the measurement and reporting schedule, then connect through the wireless route available at the site."
+      },
+      {
+        "number": "03",
+        "title": "Turn trends into a site action",
+        "text": "Use the project’s review thresholds and notification process to direct inspections to the monitored points."
+      }
+    ]
+  },
+  "operatingProfile": {
+    "kicker": "DESIGNED FOR LONG-TERM MONITORING",
+    "title": "Measure every minute. Report every four hours.",
+    "intro": "For the H310-TS180C operating profile stated by Hitelecom, 240 measurement cycles take place between scheduled reports. Measurement frequency and reporting frequency are specified separately to match the monitoring task.",
+    "metrics": [
+      {
+        "value": "1 min",
+        "label": "Measurement interval",
+        "detail": "An angle measurement every minute."
+      },
+      {
+        "value": "4 h",
+        "label": "Scheduled reporting",
+        "detail": "240 measurement cycles per reporting interval."
+      },
+      {
+        "value": "10 years",
+        "label": "Typical service life",
+        "detail": "Hitelecom-stated life for this operating profile."
+      },
+      {
+        "value": ">5 million",
+        "label": "Laboratory measurement cycles",
+        "detail": "Laboratory capability reported by Hitelecom."
+      }
+    ],
+    "footnote": "The service-life figure applies to the stated H310-TS180C profile and varies with the supplied battery, enabled functions, radio conditions and temperature. Laboratory cycle capability is a separate test statement. Agree report contents and any event-reporting requirements for the selected configuration."
+  },
+  "modelCatalog": {
+    "title": "Technical specifications.",
+    "intro": "Select a model, then match its measurement grade, enclosure and power configuration to your installation.",
+    "defaultModelId": "h310-ts180c",
+    "models": [
+      {
+        "id": "h310-ts180c",
+        "model": "H310-TS180C",
+        "scopeNote": "These values apply to H310-TS180C configurations. The quotation and configuration list identify the supplied measurement grade, battery, enclosure and wireless option.",
+        "datasheet": {
+          "url": "/downloads/h310-ts180c-tilt-sensor-datasheet.pdf",
+          "label": "Request the model datasheet"
+        },
+        "specifications": [
+          {
+            "name": "Tilt Range",
+            "value": "−90° to +90°"
+          },
+          {
+            "name": "Accuracy",
+            "value": "0.1° / 0.01° / 0.001° (grades per configuration)"
+          },
+          {
+            "name": "Resolution",
+            "value": "0.01° / 0.001° / 0.0005° (grades per configuration)"
+          },
+          {
+            "name": "Protocol",
+            "value": "MQTT"
+          },
+          {
+            "name": "Operating Temperature",
+            "value": "−40°C to +85°C"
+          },
+          {
+            "name": "Storage Temperature",
+            "value": "−40°C to +85°C"
+          },
+          {
+            "name": "Battery Capacity",
+            "value": "19,000 mAh; 38,000 mAh option"
+          },
+          {
+            "name": "Ingress Protection",
+            "value": "Metal: IP68 · Plastic: IP66"
+          },
+          {
+            "name": "Installation",
+            "value": "Mounting lugs · Pole clamp · Slotted mount"
+          },
+          {
+            "name": "Configuration",
+            "value": "NFC activation; OTA firmware upgrade"
+          }
+        ]
+      }
+    ]
+  },
+  "applicationHeading": {
+    "kicker": "APPLICATIONS",
+    "title": "Different assets. A focused monitoring plan.",
+    "intro": "Explore where local angle measurements can support your project. Each application starts with a defined mounting point, an installation reference and a plan for reviewing changes.",
+    "imageNote": "Application images illustrate monitoring environments."
+  },
+  "groups": [
+    {
+      "id": "warehousing",
+      "title": "Warehousing",
+      "scenes": [
+        "tilt-scene-warehouse-racking"
+      ]
+    },
+    {
+      "id": "poles-towers",
+      "title": "Poles & towers",
+      "scenes": [
+        "tilt-scene-street-light-poles",
+        "tilt-scene-transmission-towers",
+        "tilt-scene-telecom-towers",
+        "tilt-scene-billboard-support-poles"
+      ]
+    },
+    {
+      "id": "civil-infrastructure",
+      "title": "Civil infrastructure",
+      "scenes": [
+        "tilt-scene-bridge-elements",
+        "tilt-scene-railway-infrastructure",
+        "tilt-scene-tunnel-monitoring",
+        "tilt-scene-metro-and-subway-structures",
+        "tilt-scene-slopes-and-embankments",
+        "tilt-scene-sea-dikes-dams-and-reservoir-slopes",
+        "tilt-scene-construction-and-temporary-structures"
+      ]
+    },
+    {
+      "id": "heritage-environment",
+      "title": "Heritage & environment",
+      "scenes": [
+        "tilt-scene-heritage-buildings-and-ancient-pagodas",
+        "tilt-scene-structurally-distressed-buildings",
+        "tilt-scene-urban-trees"
+      ]
+    },
+    {
+      "id": "industrial-equipment",
+      "title": "Industrial equipment",
+      "scenes": [
+        "tilt-scene-large-equipment-and-injection-moulding-machines"
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "tilt-scene-warehouse-racking",
+      "group": "warehousing",
+      "title": "Warehouse racking",
+      "description": "Monitor inclination at selected warehouse rack uprights and follow changes against the commissioning baseline. Link each reading to a rack location so warehouse teams can review persistent changes alongside loading patterns, handling activity and the scheduled rack inspection record.",
+      "monitoringPoint": "Selected uprights representing the rack locations in the monitoring plan.",
+      "projectBrief": "Share the rack layout, upright dimensions, expected loading conditions and required inspection notifications.",
+      "image": {
+        "name": "warehouse-racking",
+        "alt": "Application illustration: Pallet racks with orange beams and blue uprights along a warehouse aisle.",
+        "caption": "Warehouse pallet racks with upright frames and beams.",
+        "focalPoint": "50% 48%"
+      }
+    },
+    {
+      "id": "tilt-scene-street-light-poles",
+      "group": "poles-towers",
+      "title": "Street light poles",
+      "description": "Track changes in the inclination of street light poles across a road, campus or industrial park. An angle history at named pole locations helps maintenance teams focus checks after severe weather, nearby works or a persistent change from the installation reference.",
+      "monitoringPoint": "The pole or structural support selected for monitoring.",
+      "projectBrief": "Provide pole dimensions, mounting height, local network coverage and the required reporting schedule.",
+      "image": {
+        "name": "street-light-poles",
+        "alt": "Application illustration: Street-light poles and their bases beside a landscaped urban road.",
+        "caption": "Street light poles along an urban road.",
+        "focalPoint": "50% 0%"
+      }
+    },
+    {
+      "id": "tilt-scene-transmission-towers",
+      "group": "poles-towers",
+      "title": "Transmission towers",
+      "description": "Follow local rotation at selected transmission-tower members and compare it with the installation baseline. Combine the angle trend with tower inspections and foundation observations to help review changes over time, particularly when wind, temperature or nearby works affect the site.",
+      "monitoringPoint": "Structural members identified for the tower’s monitoring objective.",
+      "projectBrief": "Identify the tower member, mounting arrangement, site access requirements and any complementary foundation measurements.",
+      "image": {
+        "name": "transmission-towers",
+        "alt": "Application illustration: Steel electricity transmission pylons with crossarms, insulators and overhead conductors.",
+        "caption": "Electricity transmission towers and overhead conductors.",
+        "focalPoint": "50% 0%"
+      }
+    },
+    {
+      "id": "tilt-scene-telecom-towers",
+      "group": "poles-towers",
+      "title": "Telecom towers",
+      "description": "Monitor inclination at defined telecom mast or tower-support locations. Associate every sensor with its structural member and compare changes across maintenance periods, antenna work and recorded wind conditions to support inspection planning for individual sites or a distributed tower portfolio.",
+      "monitoringPoint": "Selected mast sections, tower members or structural supports.",
+      "projectBrief": "Share the tower layout, monitored elements, wireless coverage and the platform used by your maintenance team.",
+      "image": {
+        "name": "telecom-towers",
+        "alt": "Application illustration: A telecommunications lattice tower with cellular antenna panels against the sky.",
+        "caption": "Telecom lattice tower with antenna panels.",
+        "focalPoint": "50% 0%"
+      }
+    },
+    {
+      "id": "tilt-scene-billboard-support-poles",
+      "group": "poles-towers",
+      "title": "Billboard support poles",
+      "description": "Observe changes in inclination at billboard support poles or frames. Comparing readings with a documented reference helps the site team review persistent changes alongside wind conditions, maintenance work and inspections following significant weather or activity around the support foundation.",
+      "monitoringPoint": "The support pole or frame member selected in the project plan.",
+      "projectBrief": "Provide support dimensions, mounting access, site exposure and the required measurement and notification schedule.",
+      "image": {
+        "name": "billboard-support-poles",
+        "alt": "Application illustration: A blank roadside billboard on a steel monopole with visible supporting bracing.",
+        "caption": "Roadside billboard on a steel support pole.",
+        "focalPoint": "50% 48%"
+      }
+    },
+    {
+      "id": "tilt-scene-bridge-elements",
+      "group": "civil-infrastructure",
+      "title": "Bridge elements",
+      "description": "Monitor local rotation at selected bridge piers, abutments or structural members. Compare the angle trend with traffic conditions, temperature observations and inspection records to support engineering review during routine operation, adjacent construction or a defined period of bridge maintenance work.",
+      "monitoringPoint": "Piers, abutments or members identified in the bridge monitoring plan.",
+      "projectBrief": "State the monitoring objective, mounting positions and working angle range; include survey requirements where displacement is also needed.",
+      "image": {
+        "name": "bridge-elements",
+        "alt": "Application illustration: A concrete bridge crossing water with piers and green hills in the background.",
+        "caption": "Concrete bridge with piers over water.",
+        "focalPoint": "50% 48%"
+      }
+    },
+    {
+      "id": "tilt-scene-railway-infrastructure",
+      "group": "civil-infrastructure",
+      "title": "Railway infrastructure",
+      "description": "Follow inclination at selected railway retaining walls, catenary supports and other stationary structures. A recorded baseline and repeatable measurement conditions help the monitoring team relate local angle changes to trackside works, train activity and the wider infrastructure inspection programme.",
+      "monitoringPoint": "Approved points on retaining walls, catenary supports or stationary members.",
+      "projectBrief": "Share the site access plan, operating conditions, communications route and required notification time.",
+      "image": {
+        "name": "railway-infrastructure",
+        "alt": "Application illustration: An electrified railway corridor with rails, catenary supports and a retaining wall.",
+        "caption": "Railway corridor with catenary supports and a retaining wall.",
+        "focalPoint": "50% 48%"
+      }
+    },
+    {
+      "id": "tilt-scene-tunnel-monitoring",
+      "group": "civil-infrastructure",
+      "title": "Tunnel monitoring",
+      "description": "Observe local angular change at defined tunnel lining segments or supports. Link the measurement timeline to excavation, lining work and inspection records so the project team can compare the monitored points across construction stages or periods of ongoing tunnel operation.",
+      "monitoringPoint": "Selected lining segments, structural supports or approved mounting points.",
+      "projectBrief": "Provide the tunnel section, monitoring locations, underground communications route and any separate convergence measurement requirements.",
+      "image": {
+        "name": "tunnel-monitoring",
+        "alt": "Application illustration: Segmental concrete tunnel lining with visible joints and a service walkway.",
+        "caption": "Tunnel lining segments and service walkway.",
+        "focalPoint": "50% 48%"
+      }
+    },
+    {
+      "id": "tilt-scene-metro-and-subway-structures",
+      "group": "civil-infrastructure",
+      "title": "Metro and subway structures",
+      "description": "Track inclination at selected metro station columns, tunnel elements or retaining structures. Establish the reference before relevant works and follow the same points through construction or maintenance stages, with readings organised around the access and operating requirements of the network.",
+      "monitoringPoint": "Station columns, tunnel elements or retaining structures in the monitoring design.",
+      "projectBrief": "Share the work stages, permitted access times, mounting constraints and route from underground sensors to the platform.",
+      "image": {
+        "name": "metro-subway-structures",
+        "alt": "Application illustration: Underground metro station columns, ceiling beams and platform screen doors.",
+        "caption": "Underground metro station with structural columns.",
+        "focalPoint": "50% 48%"
+      }
+    },
+    {
+      "id": "tilt-scene-slopes-and-embankments",
+      "group": "civil-infrastructure",
+      "title": "Slopes and embankments",
+      "description": "Observe inclination at selected surface monitoring elements or retaining structures on slopes and embankments. Review changes against the baseline alongside rainfall, drainage observations and site inspections to help the project team follow local rotation through seasonal conditions or nearby construction.",
+      "monitoringPoint": "Surface elements or retaining structures selected by the monitoring designer.",
+      "projectBrief": "Provide the slope layout, surface fixing method, site exposure and the wider monitoring plan for ground movement.",
+      "image": {
+        "name": "slopes-embankments",
+        "alt": "Application illustration: An engineered cut slope with stabilization lattice, vegetation and a drainage channel.",
+        "caption": "Engineered slope with surface protection and drainage.",
+        "focalPoint": "50% 48%"
+      }
+    },
+    {
+      "id": "tilt-scene-sea-dikes-dams-and-reservoir-slopes",
+      "group": "civil-infrastructure",
+      "title": "Sea dikes, dams and reservoir slopes",
+      "description": "Follow inclination at selected surface structures on sea dikes, dams and reservoir slopes. Compare the angle trend with water levels, rainfall, drainage observations and inspection records to build a consistent record of local rotation through the site’s operating and seasonal conditions.",
+      "monitoringPoint": "Defined surface structures, facing elements or retaining members.",
+      "projectBrief": "State mounting locations, splash or immersion exposure, inspection access and the measurement and reporting profile.",
+      "image": {
+        "name": "dams-reservoir-slopes",
+        "alt": "Application illustration: An embankment dam with a riprap slope, crest road and adjacent reservoir.",
+        "caption": "Embankment dam beside a reservoir.",
+        "focalPoint": "50% 48%"
+      }
+    },
+    {
+      "id": "tilt-scene-construction-and-temporary-structures",
+      "group": "civil-infrastructure",
+      "title": "Construction and temporary structures",
+      "description": "Monitor local rotation at selected temporary supports, retaining structures or neighbouring elements as construction progresses. Tie each angle reference to a documented work stage so the team can review changes alongside planned adjustments, loading changes and the temporary-works inspection record.",
+      "monitoringPoint": "Approved points on temporary supports, retaining structures or neighbouring assets.",
+      "projectBrief": "Share the construction sequence, planned sensor moves and the project’s notification and inspection process.",
+      "image": {
+        "name": "construction-temporary-structures",
+        "alt": "Application illustration: Temporary steel shoring and braced support towers beneath a concrete deck under construction.",
+        "caption": "Temporary steel supports at a construction site.",
+        "focalPoint": "50% 48%"
+      }
+    },
+    {
+      "id": "tilt-scene-heritage-buildings-and-ancient-pagodas",
+      "group": "heritage-environment",
+      "title": "Heritage buildings and ancient pagodas",
+      "description": "Follow gradual inclination changes at agreed points on heritage buildings and ancient pagodas. A documented reference helps conservation teams review trends alongside survey records, weather observations and repair work while keeping the mounting method appropriate for the protected surface.",
+      "monitoringPoint": "Structural elements and fixing locations agreed with the conservation team.",
+      "projectBrief": "Include the approved attachment method, surface restrictions, access arrangements and intended monitoring period.",
+      "image": {
+        "name": "heritage-pagodas",
+        "alt": "Application illustration: A traditional pagoda surrounded by mature trees and landscaped grounds.",
+        "caption": "Historic pagoda within landscaped grounds.",
+        "focalPoint": "50% 20%"
+      }
+    },
+    {
+      "id": "tilt-scene-structurally-distressed-buildings",
+      "group": "heritage-environment",
+      "title": "Structurally distressed buildings",
+      "description": "Monitor local rotation at selected structural points on buildings with existing damage or signs of movement. Link angle trends to crack observations, surveys and repair stages so the responsible engineer can review changes during assessment, stabilisation and planned remedial works.",
+      "monitoringPoint": "Load-bearing walls, columns or other structural members selected by the engineer.",
+      "projectBrief": "Provide the site access plan, approved monitoring points, required notification time and engineering review process.",
+      "image": {
+        "name": "structurally-distressed-buildings",
+        "alt": "Application illustration: Ageing masonry building with visible facade cracks, temporary supports and a perimeter barrier, representing a building under structural assessment.",
+        "caption": "Ageing masonry building under assessment, with temporary supports and a perimeter barrier.",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "tilt-scene-urban-trees",
+      "group": "heritage-environment",
+      "title": "Urban trees",
+      "description": "Observe changes in trunk inclination at a defined point on selected urban trees. Compare persistent changes with wind conditions and arboricultural inspection records, while maintaining a documented attachment position that can be checked and adjusted as the tree grows.",
+      "monitoringPoint": "A trunk position and attachment arrangement selected for the monitoring objective.",
+      "projectBrief": "Identify the tree, attachment method, growth-related inspection needs and environmental conditions used for comparison.",
+      "image": {
+        "name": "urban-trees",
+        "alt": "Application illustration: A mature urban tree with a visible trunk and root flare beside a paved park path.",
+        "caption": "Mature urban tree beside a park path.",
+        "focalPoint": "50% 48%"
+      }
+    },
+    {
+      "id": "tilt-scene-large-equipment-and-injection-moulding-machines",
+      "group": "industrial-equipment",
+      "title": "Large equipment and injection-moulding machines",
+      "description": "Assess static inclination and slow orientation changes at selected machine-base or frame locations. For large equipment and injection-moulding machines, compare readings taken in agreed operating states to support levelling checks and review changes after installation, relocation or maintenance.",
+      "monitoringPoint": "Rigid points on the machine base or frame representing the required orientation.",
+      "projectBrief": "Specify levelling requirements, site temperature, operating vibration and the conditions under which readings will be compared.",
+      "image": {
+        "name": "industrial-moulding-machine",
+        "alt": "Application illustration: An injection-moulding machine inside a bright industrial production hall.",
+        "caption": "Injection-moulding machine in a production hall.",
+        "focalPoint": "50% 48%"
+      }
+    }
+  ],
+  "integration": {
+    "kicker": "CONNECTIVITY & INTEGRATION",
+    "title": "Your installation. Your data destination.",
+    "intro": "Choose the wireless route around site coverage, the number of measurement points and the platform receiving your readings.",
+    "routes": [
+      {
+        "title": "For distributed locations",
+        "subtitle": "4G / NB-IoT",
+        "steps": [
+          "Sensor",
+          "Mobile network",
+          "Your platform"
+        ],
+        "text": "Cellular configurations connect through a compatible operator. Match regional bands, service availability and coverage at the mounting position to the required reporting and power profile.",
+        "checks": [
+          "Installation country, operator and regional bands",
+          "Coverage at the actual mounting position",
+          "Reporting cadence, SIM arrangement and power profile"
+        ]
+      },
+      {
+        "title": "For points across one site",
+        "subtitle": "LoRa",
+        "steps": [
+          "Sensors",
+          "Receiver / gateway",
+          "Your platform"
+        ],
+        "text": "LoRa configurations use a compatible receiver or gateway and an onward platform connection. Specify the device protocol and regional radio settings together; a LoRa radio label alone does not establish LoRaWAN compatibility.",
+        "checks": [
+          "Device protocol and gateway compatibility",
+          "Site layout, obstructions and radio coverage",
+          "Gateway power and onward data connection"
+        ]
+      }
+    ],
+    "handoverTitle": "Make the first message useful.",
+    "handover": "For the selected MQTT-capable configuration, agree the endpoint, supported authentication, topic and message format. Check device IDs, angle fields, axis labels, units and timestamps in a sample message, then test the complete path to your platform and notification workflow."
+  },
+  "selection": {
+    "title": "A configuration built around your project.",
+    "intro": "Start with the monitoring objective. These four details help us make the hardware and integration proposal specific to your installation.",
+    "items": [
+      {
+        "title": "What you need to observe",
+        "text": "Asset type, measurement points, expected angle range and the smallest change your project needs to assess."
+      },
+      {
+        "title": "Where it will operate",
+        "text": "Country, site temperatures, mounting surface, weather exposure and available network coverage."
+      },
+      {
+        "title": "How data should reach you",
+        "text": "Measurement interval, reporting schedule, required notification time and destination platform."
+      },
+      {
+        "title": "What you plan to deploy",
+        "text": "Estimated quantity, sample needs, OEM or branding requirements and deployment schedule."
+      }
+    ]
+  },
+  "faqHeading": {
+    "kicker": "ANSWERS FOR YOUR PROJECT",
+    "title": "Frequently asked questions.",
+    "intro": "Practical answers for selecting, installing and connecting your wireless tilt monitoring system."
+  },
+  "faqs": [
+    {
+      "id": "faq-accuracy",
+      "question": "What accuracy and resolution do I need for tilt monitoring?",
+      "paragraphs": [
+        "Choose the accuracy grade around the smallest angle change your project needs to assess, the working range and the site temperature. Accuracy describes agreement with a reference; resolution is the smallest reported increment.",
+        "H310-TS180C offers accuracy grades of 0.1°, 0.01° or 0.001° and resolution grades of 0.01°, 0.001° or 0.0005°, depending on configuration. Specify accuracy and resolution separately, and request the measurement conditions for the selected grade. This gives you a clear basis for model selection and commissioning."
+      ],
+      "evidenceIds": [
+        "D2",
+        "D5",
+        "P1"
+      ],
+      "answerLink": {
+        "href": "#specifications",
+        "label": "Compare specifications"
+      }
+    },
+    {
+      "id": "faq-baseline",
+      "question": "How do I mount the sensor and establish a baseline?",
+      "paragraphs": [
+        "Secure the sensor to the element whose angle you want to track, using a mounting method suited to that location. H310-TS180C lists mounting lugs, pole clamps and slotted mounting options. Record the sensor ID, location, axis orientation and initial angle after installation.",
+        "Compare later readings with that reference. For example, 0.30° followed by 0.45° represents a +0.15° change on the same axis. Keep a new reference record whenever a sensor is repositioned, and include site conditions when reviewing the trend."
+      ],
+      "evidenceIds": [
+        "D1",
+        "D2",
+        "P1"
+      ],
+      "answerLink": {
+        "href": "#overview",
+        "label": "See the monitoring workflow"
+      }
+    },
+    {
+      "id": "faq-connectivity",
+      "question": "Should I choose 4G, NB-IoT or LoRa?",
+      "paragraphs": [
+        "Choose the radio around coverage, site layout and reporting requirements. Cellular configurations suit locations served by a compatible operator; check regional bands and signal at the mounting point. For NB-IoT, also evaluate operator availability, reporting frequency and the required power profile.",
+        "A LoRa configuration needs a compatible receiver or gateway and an onward connection to the platform. Confirm the actual protocol and regional settings, including any LoRaWAN requirement. Share your installation country, number of points and site layout so the complete data route can be specified."
+      ],
+      "evidenceIds": [
+        "D1",
+        "D2",
+        "P1",
+        "T2"
+      ],
+      "answerLink": {
+        "href": "#integration",
+        "label": "Compare connection routes"
+      }
+    },
+    {
+      "id": "faq-platform",
+      "question": "Can readings connect to our own monitoring platform?",
+      "paragraphs": [
+        "H310-TS180C lists MQTT support. For the selected configuration, agree the broker endpoint, supported authentication, topic structure and device identifiers with your platform team. Check a sample payload for angle fields, axis labels, units and timestamps.",
+        "A LoRa deployment also needs a compatible receiver or gateway and an agreed onward interface. During commissioning, verify that a reading reaches your platform with the correct device and time, then test the intended notification workflow. Include device-management requirements in the integration brief."
+      ],
+      "evidenceIds": [
+        "D1",
+        "T1",
+        "P1"
+      ],
+      "answerLink": {
+        "href": "#integration",
+        "label": "Plan your platform connection"
+      }
+    },
+    {
+      "id": "faq-reporting",
+      "question": "How do the 1-minute measurement and 4-hour reporting intervals work?",
+      "paragraphs": [
+        "In the H310-TS180C operating profile stated by Hitelecom, the sensor measures once per minute and reports on a four-hour schedule: 240 measurement cycles between scheduled reports. Measurement and reporting are separate parts of the operating profile.",
+        "Agree the required report content—such as the latest reading, a summary or individual readings—and confirm the format and retention supported by the selected configuration. If your project needs notifications between scheduled reports, specify that response time and confirm the supported event-reporting behaviour during configuration and commissioning."
+      ],
+      "evidenceIds": [
+        "D2",
+        "D4",
+        "U1"
+      ],
+      "answerLink": {
+        "href": "#operating-profile",
+        "label": "View the operating profile"
+      }
+    },
+    {
+      "id": "faq-service-life",
+      "question": "What supports the typical 10-year service-life figure?",
+      "paragraphs": [
+        "Hitelecom states a typical 10-year service life for the H310-TS180C profile using one-minute measurements and four-hour reporting. Evaluate that figure with the supplied battery capacity, enabled functions, expected signal conditions and site temperature.",
+        "Hitelecom also reports laboratory capability exceeding five million measurement cycles. This laboratory statement describes measurement-cycle capability separately from the service-life estimate. For project planning, request the battery configuration and operating assumptions that match your measurement, reporting and notification requirements."
+      ],
+      "evidenceIds": [
+        "D5",
+        "U1"
+      ],
+      "answerLink": {
+        "href": "#operating-profile",
+        "label": "Review the service-life profile"
+      }
+    },
+    {
+      "id": "faq-outdoor",
+      "question": "Which enclosure and mounting details should I specify for an outdoor site?",
+      "paragraphs": [
+        "H310-TS180C lists metal IP68 and plastic IP66 enclosure options, with an operating temperature range of −40°C to +85°C. Select the supplied assembly around the actual installation, including water exposure, temperature and mounting access.",
+        "For poles or tower members, provide dimensions and the intended fixing position. For walls or equipment frames, a surface photo helps define the bracket arrangement. Include local coverage and any corrosive exposure in the brief so the enclosure, fixing method and wireless position can be reviewed together."
+      ],
+      "evidenceIds": [
+        "D1",
+        "D5",
+        "P1"
+      ],
+      "answerLink": {
+        "href": "#specifications",
+        "label": "Review enclosure and mounting options"
+      }
+    },
+    {
+      "id": "faq-alerts",
+      "question": "How should project alert thresholds and notification times be defined?",
+      "paragraphs": [
+        "Start with the monitoring plan for the asset. The responsible engineer defines the angle reference and change that should trigger a review; the device and platform configuration determine how the rule and notification are implemented.",
+        "Record the measurement point, axis, reference reading, trigger condition, recipient and intended response. Specify the required time from detection to notification, then confirm whether scheduled reporting or a supported event-reporting configuration meets it. Test the complete path during commissioning so the site team knows which asset requires attention and when."
+      ],
+      "evidenceIds": [
+        "D1",
+        "D4",
+        "P1"
+      ],
+      "answerLink": {
+        "href": "#enquiry",
+        "label": "Discuss your monitoring requirements"
+      }
+    }
+  ],
+  "enquiry": {
+    "kicker": "LET’S TALK ABOUT YOUR PROJECT",
+    "title": "Tell us what you need to monitor.",
+    "intro": "Share your application, location and quantity. We’ll help select the model, discuss the data connection and prepare the quotation around your requirements.",
+    "email": "sales@hitelecom.cn",
+    "primaryLabel": "Prepare my enquiry",
+    "helper": "A site photo, mounting dimensions or a sample platform message can make the discussion more specific.",
+    "fields": [
+      {
+        "name": "application",
+        "label": "Application",
+        "required": true
+      },
+      {
+        "name": "country",
+        "label": "Country / region",
+        "required": true
+      },
+      {
+        "name": "quantity",
+        "label": "Approximate quantity",
+        "required": false
+      },
+      {
+        "name": "email",
+        "label": "Work email",
+        "required": true
+      },
+      {
+        "name": "requirements",
+        "label": "What would you like to monitor?",
+        "required": false
+      }
+    ]
+  },
+  "evidence": {
+    "scope": "FAQ topics are informed by published industry questions and primary technical sources. Answers are original Hitelecom project-selection guidance. No Hitelecom customer frequency, Google/Bing query volume, ranking or AI citation outcome has been measured.",
+    "sources": [
+      {
+        "id": "D1",
+        "publisher": "Worldsensing with Geosense",
+        "title": "Rail monitoring webinar: published participant questions",
+        "url": "https://www.worldsensing.com/knowledge-center/remote-geotechnical-monitoring-of-rail-tracks-your-queries-answered/",
+        "type": "published_webinar_questions",
+        "evidence": "The introduction explicitly attributes the questions to webinar attendees. Topics include installation, connectivity, shared visualization platforms, data access and interpretation.",
+        "limit": "Publisher-reported provenance; no original attendee transcript or Hitelecom customer record. Older product capabilities in the answers do not establish current Hitelecom capabilities."
+      },
+      {
+        "id": "D2",
+        "publisher": "Worldsensing with Sixense",
+        "title": "LoRa rail webinar: accuracy, orientation and transmission questions",
+        "url": "https://www.worldsensing.com/knowledge-center/rail-monitoring-with-lora-star-iot-technology-your-queries-answered/",
+        "type": "published_webinar_questions",
+        "evidence": "The article presents webinar questions about measurement accuracy, orientation, transmission timing and initial readings.",
+        "limit": "Used for question topics and engineering context. Competitor figures, filtering, algorithms and network claims are excluded from Hitelecom copy."
+      },
+      {
+        "id": "D4",
+        "publisher": "Network Rail",
+        "title": "Scottish railway tilt monitoring trial",
+        "url": "https://www.networkrailmediacentre.co.uk/news/tilt-meter-trial-offers-railway-protection-from-landslips",
+        "type": "asset_owner_project_record",
+        "evidence": "The owner describes surface tilt monitoring and an alert path to railway operations using a mobile network; it explicitly discusses notification timing.",
+        "limit": "Historical 2022 trial. Project-specific timing, thresholds, spacing, cameras and solar power are not Hitelecom product specifications."
+      },
+      {
+        "id": "D5",
+        "publisher": "Milesight",
+        "title": "EM320-TILT manufacturer datasheet",
+        "url": "https://resource.milesight.com/milesight/iot/document/em320-tilt-datasheet-en.pdf",
+        "type": "manufacturer_comparison_dimensions",
+        "evidence": "Page 2 separates accuracy from resolution and states battery-life assumptions including interval, temperature and radio conditions; mounting and enclosure are also specified.",
+        "limit": "Supports comparison dimensions only. Does not prove customer-question frequency, Hitelecom performance or any superiority claim."
+      },
+      {
+        "id": "T1",
+        "publisher": "OASIS",
+        "title": "MQTT 3.1.1 standard",
+        "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html",
+        "type": "technical_standard",
+        "evidence": "Client/server publish-subscribe transport, topics, application payloads and connection/authentication fields underpin the integration checklist.",
+        "limit": "Not proof of the MQTT version, QoS, security features, retained data or payload fields implemented by Hitelecom."
+      },
+      {
+        "id": "P1",
+        "publisher": "Hitelecom",
+        "title": "Current public tilt sensor product page",
+        "url": "https://www.hitelecom.com/product/tilt-sensor",
+        "type": "manufacturer_product_statement",
+        "evidence": "H310-TS180C public specification values and stated wireless options support the product-specific facts already present in the catalog.",
+        "limit": "Manufacturer statement, not independent testing. Existing FAQ on this page is excluded as demand evidence because it may reflect earlier generated copy. The linked PDF has not been successfully validated."
+      },
+      {
+        "id": "U1",
+        "publisher": "Justin / Hitelecom",
+        "title": "Operating profile confirmed in this conversation",
+        "type": "user_supplied_manufacturer_statement",
+        "evidence": "1-minute measurement; 4-hour reporting; typical 10-year lifecycle; laboratory capability exceeding 5 million measurement cycles.",
+        "limit": "No independent laboratory report received. Measurement-cycle capability does not specify stored readings, transmission count, warranty period or a completed 10-year field trial."
+      },
+      {
+        "id": "T2",
+        "publisher": "Nordic Semiconductor",
+        "title": "Maximizing battery lifetime in cellular IoT: An analysis of eDRX, PSM, and AS-RAI",
+        "url": "https://devzone.nordicsemi.com/nordic/nordic-blog/b/blog/posts/maximizing-battery-lifetime-in-cellular-iot-an-analysis-of-edrx-psm-and-as-rai",
+        "type": "primary_technical_explanation",
+        "evidence": "Explains how eDRX and PSM affect downlink reachability and power use, and that an application can wake a device from PSM for uplink transmission.",
+        "limit": "Supports a conditional NB-IoT selection rule, not Hitelecom module identity, firmware functions, timing guarantees or support for these modes."
+      }
+    ]
+  }
+}

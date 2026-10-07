@@ -1,0 +1,93 @@
+---
+import content from '../../data/tilt-content.json';
+import FeatureIcon from './FeatureIcon.astro';
+import { getImage } from 'astro:assets';
+import heroBackground from '../../assets/brand/sensor-hero-background.jpg';
+import { tiltImage } from './images.mjs';
+const hero = await tiltImage('product-hero.webp', true);
+const backgroundImages = await Promise.all([640,1280,1920].map(width => getImage({src:heroBackground,width,format:'webp',quality:78})));
+const backgroundSrcset = backgroundImages.map((image,index) => `${image.src} ${[640,1280,1920][index]}w`).join(', ');
+const scenes = await Promise.all(content.applications.map(async scene => ({...scene, asset: await tiltImage(scene.image.name.endsWith('.webp') ? scene.image.name : scene.image.name + '.webp')})));
+const metricHighlights = [{value:'0.001°',label:'Accuracy grade available',note:'H310-TS180C · selected configuration'},{value:'IP68 / IP66',label:'Enclosure options',note:'Metal / plastic · by configuration'},{value:'Your platform',label:'Data integration',note:'MQTT-capable model configurations'}];
+---
+<div class="ht-tilt">
+  <div class="hero-band">
+  <img class="hero-background" src={backgroundImages[2].src} srcset={backgroundSrcset} sizes="100vw" width={heroBackground.width} height={heroBackground.height} alt="" aria-hidden="true" loading="eager" decoding="async" />
+  <div class="wrap breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/product/lists/cid/261">IoT Sensors</a><span aria-hidden="true">/</span><span>Wireless tilt sensor</span></div>
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-heading"><h1 id="hero-title">Wireless tilt sensor.<br/><span>A clearer view<br class="desktop-break"/> of change.</span></h1></div>
+    <figure class="hero-visual">
+      <img src={hero.src} srcset={hero.srcset} sizes="(max-width: 600px) 280px, (max-width: 1024px) 43vw, 520px" width={hero.width} height={hero.height} alt="Hitelecom wireless tilt sensor with mounting lugs and antenna" loading="eager" fetchpriority="high" decoding="async" />
+      <figcaption><span class="live-dot" aria-hidden="true"></span>Remote inclination monitoring</figcaption>
+    </figure>
+    <p class="hero-description">{content.hero.description}</p>
+    <div class="hero-actions"><a href="#enquiry" class="button button-primary" data-enquiry-source="Hero">Discuss your project <span aria-hidden="true">↗</span></a><a href="#specifications" class="text-link">Explore specifications <span aria-hidden="true">↓</span></a></div>
+    <div class="hero-proof">{metricHighlights.map(item=><div><strong>{item.value}</strong><span>{item.label}</span><small>{item.note}</small></div>)}</div>
+  </section>
+  </div>
+  <nav class="section-nav" aria-label="On this page"><div class="wrap"><a href="#overview">Overview</a><a href="#applications">Applications</a><a href="#specifications">Specifications</a><a href="#integration">Integration</a><a href="#faq">FAQ</a><a class="nav-quote" href="#enquiry">Request a quote ↗</a></div></nav>
+
+  <section class="section features-section" id="features" aria-labelledby="features-title"><div class="wrap">
+    <div class="section-heading compact-heading"><div><p class="eyebrow">KEY FEATURES</p><h2 id="features-title">Made for the way<br/>you monitor.</h2></div><p>Match measurement performance, installation and connectivity to the asset you need to observe.</p></div>
+    <div class="feature-grid">{content.features.map((feature,index)=><article><span class="feature-mark" aria-hidden="true"><FeatureIcon index={index} /></span><h3>{feature.title}</h3><p>{feature.text}</p></article>)}</div>
+  </div></section>
+
+  <section class="section overview-section" id="overview" aria-labelledby="overview-title"><div class="wrap overview-grid">
+    <div><p class="eyebrow">{content.overview.kicker}</p><h2 id="overview-title">{content.overview.title}</h2><p class="lead">{content.overview.answer}</p><a class="text-link" href="#applications">Find your application <span aria-hidden="true">↓</span></a></div>
+    <div class="reading-card"><div class="reading-label"><span>FROM READING TO INSIGHT</span><span class="sample-label">Illustrative readings</span></div><div class="reading-pair"><div><small>Installation reference</small><strong>0.30<span>°</span></strong></div><span aria-hidden="true">→</span><div><small>Later reading</small><strong>0.45<span>°</span></strong></div></div><div class="reading-change"><span>Change from reference</span><strong>+0.15°</strong></div><p>A consistent reference makes the angle history easier to interpret at each monitored point.</p><ol class="reading-steps">{content.overview.steps.map((s,i)=><li><span>{String(i+1).padStart(2,'0')}</span><div><h3>{s.title}</h3><p>{s.text}</p></div></li>)}</ol></div>
+  </div></section>
+
+  <section class="section profile-section" id="operating-profile" aria-labelledby="profile-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">{content.operatingProfile.kicker}</p><h2 id="profile-title">{content.operatingProfile.title}</h2></div><p>{content.operatingProfile.intro}</p></div>
+    <div class="profile-metrics">{content.operatingProfile.metrics.map(m=><div><strong>{m.value}</strong><h3>{m.label}</h3><p>{m.detail}</p></div>)}</div>
+    <div class="profile-note"><div><span class="small-label">H310-TS180C · OPERATING PROFILE</span><strong>Frequent sensing. Scheduled reporting.</strong></div><p>{content.operatingProfile.footnote}</p></div>
+  </div></section>
+
+  <section class="section application-section" id="applications" aria-labelledby="applications-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">APPLICATIONS</p><h2 id="applications-title">Different structures.<br/><span>One focused measurement.</span></h2></div><p>Explore what to monitor, where to mount and which details help us configure a sensor for your project.</p></div>
+    <p class="image-note">Application illustrations show monitoring environments; they are not customer installation records.</p>
+    <div class="application-groups">{content.groups.map((group,groupIndex)=><details class="application-group" id={'group-'+group.id} open={groupIndex===0}>
+      <summary><span><small>{String(groupIndex+1).padStart(2,'0')}</small>{group.title}</span><span class="group-count">{group.scenes.length} applications <b aria-hidden="true">+</b></span></summary>
+      <div class="scene-grid">{scenes.filter(s=>s.group===group.id).map(scene=><article class="scene-card" id={scene.id}>
+        <img src={scene.asset.src} srcset={scene.asset.srcset} sizes={group.scenes.length===1 ? "(max-width: 600px) calc(100vw - 40px), (max-width: 900px) calc((100vw - 64px) / 2), (max-width: 1300px) 53vw, 676px" : "(max-width: 600px) calc(100vw - 40px), (max-width: 900px) calc((100vw - 64px) / 2), (max-width: 1300px) calc((100vw - 120px) / 3), 398px"} width={scene.asset.width} height={scene.asset.height} loading="lazy" decoding="async" alt={scene.image.alt} style={'object-position:'+(scene.image.focalPoint||'50% 50%')} />
+        <div class="scene-copy"><h3>{scene.title}</h3><p>{scene.description}</p><dl><dt>Monitoring point</dt><dd>{scene.monitoringPoint}</dd><dt>Plan your installation</dt><dd>{scene.projectBrief}</dd></dl><a href="#enquiry" class="scene-cta" data-project-scene={scene.title}>Discuss this application <span aria-hidden="true">↗</span></a></div>
+      </article>)}</div>
+    </details>)}</div>
+  </div></section>
+
+  <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">SERIES & CONFIGURATIONS</p><h2 id="specifications-title">The right specification.<br/><span>For your installation.</span></h2></div><p>{content.modelCatalog.intro}</p></div>
+    {content.modelCatalog.models.map(model=><article class="model-grid" id={model.id}>
+      <div class="model-card"><span class="small-label">MODEL REFERENCE</span><h3>{model.model}</h3><p>{model.scopeNote}</p><a href={model.datasheet.url} class="button button-outline" target="_blank" rel="noopener">Download the {model.model} datasheet (PDF) <span aria-hidden="true">↗</span></a><a href="#enquiry" class="text-link" data-model={model.model}>Select a configuration ↓</a></div>
+      <div class="spec-table"><table><caption>{model.model} — published technical specifications</caption><tbody>{model.specifications.map(s=><tr><th scope="row">{s.name}</th><td>{s.value}</td></tr>)}</tbody></table></div>
+    </article>)}
+    <div class="selection-list"><h3>{content.selection.title}</h3><div>{content.selection.items.map((s,i)=><article><span class="step-number">0{i+1}</span><h4>{s.title}</h4><p>{s.text}</p></article>)}</div></div>
+  </div></section>
+
+  <section class="section integration-section" id="integration" aria-labelledby="integration-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">{content.integration.kicker}</p><h2 id="integration-title">Your installation.<br/><span>Your data destination.</span></h2></div><p>{content.integration.intro}</p></div>
+    <div class="integration-grid">{content.integration.routes.map(route=><article><span class="small-label">{route.subtitle}</span><h3>{route.title}</h3><div class="route-flow">{route.steps.map((step,i)=><><span>{step}</span>{i<route.steps.length-1&&<b aria-hidden="true">→</b>}</>)}</div><p>{route.text}</p><ul>{route.checks.map(check=><li>{check}</li>)}</ul></article>)}</div>
+    <div class="integration-handover"><h3>{content.integration.handoverTitle}</h3><p>{Array.isArray(content.integration.handover)?content.integration.handover.join(' · '):content.integration.handover}</p><a href="#enquiry" class="text-link">Discuss platform integration ↗</a></div>
+  </div></section>
+
+  <section class="section faq-section" id="faq" aria-labelledby="faq-title"><div class="wrap faq-layout">
+    <div class="faq-intro"><p class="eyebrow">{content.faqHeading.kicker}</p><h2 id="faq-title">{content.faqHeading.title}</h2><p>{content.faqHeading.intro}</p><a href="mailto:sales@hitelecom.cn" class="text-link">Ask about your project ↗</a></div>
+    <div class="faq-list">{content.faqs.map((faq,i)=><details id={faq.id} open={i===0}><summary>{faq.question}<span aria-hidden="true">+</span></summary><div class="faq-answer">{faq.paragraphs.map(p=><p>{p}</p>)}{faq.answerLink&&<a href={typeof faq.answerLink==='string'?faq.answerLink:faq.answerLink.href} class="text-link">{typeof faq.answerLink==='string'?'Explore the details':faq.answerLink.label} →</a>}</div></details>)}</div>
+  </div></section>
+
+  <section class="section enquiry-section" id="enquiry" aria-labelledby="enquiry-title"><div class="wrap enquiry-layout">
+    <div class="enquiry-intro"><p class="eyebrow">LET'S TALK ABOUT YOUR PROJECT</p><h2 id="enquiry-title">Your next step.<br/><span>A sensor that fits.</span></h2><p class="lead">Tell us what you need to monitor. We’ll help match measurement performance, connectivity and installation to your project.</p><a class="contact-email" href="mailto:sales@hitelecom.cn">sales@hitelecom.cn ↗</a><div class="enquiry-benefits"><h3>Start with three details.</h3><p>Your application, installation country and estimated quantity. Add a site photo or platform requirements to your email when available.</p></div></div>
+    <form id="enquiry-form" action="mailto:sales@hitelecom.cn" method="post" enctype="text/plain">
+      <div class="form-heading"><span class="small-label">PROJECT ENQUIRY</span><h3>Let’s find your configuration.</h3><p>H Series wireless tilt monitoring</p></div>
+      <div class="form-fields"><div class="field"><label for="application">Application <span aria-hidden="true">*</span></label><select id="application" name="Application" required><option value="">Choose your application</option>{content.applications.map(scene=><option value={scene.title}>{scene.title}</option>)}<option value="Other / project-specific">Other / project-specific</option></select></div><div class="field"><label for="country">Country / region <span aria-hidden="true">*</span></label><input id="country" name="Country" required autocomplete="country-name" placeholder="e.g. United Kingdom" maxlength="100" /></div><div class="field"><label for="quantity">Estimated quantity</label><input id="quantity" name="Quantity" type="number" min="1" step="1" inputmode="numeric" placeholder="e.g. 20" /></div><div class="field"><label for="network">Preferred connectivity</label><select id="network" name="Connectivity"><option value="Please advise">Please advise</option><option>4G LTE</option><option>NB-IoT</option><option>LoRa</option></select></div><div class="field full"><label for="requirements">What would you like to monitor?</label><textarea id="requirements" name="Requirements" rows="3" maxlength="3000" placeholder="Asset, angle performance, reporting needs or platform requirements"></textarea></div></div>
+      <div class="form-actions"><button class="button button-primary" type="submit">Prepare my enquiry <span aria-hidden="true">↗</span></button><p>Review your brief, then send it with your email app.</p></div>
+      <div id="enquiry-review" class="enquiry-review" hidden><label for="enquiry-brief">Your project brief</label><textarea id="enquiry-brief" rows="8" spellcheck="false"></textarea><div><a id="email-brief" class="button button-primary" href="mailto:sales@hitelecom.cn">Open email ↗</a><button id="copy-brief" type="button" class="button button-outline">Copy brief</button></div><p id="brief-status" role="status" aria-live="polite">Your brief is ready to review.</p></div>
+      <noscript><p class="noscript-note">You can also <a href="mailto:sales@hitelecom.cn?subject=Wireless%20tilt%20sensor%20project">email your project details directly</a>.</p></noscript>
+    </form>
+  </div></section>
+  <div class="wrap related-products"><p class="small-label">CONTINUE YOUR MONITORING PROJECT</p><a href="/product/vibration-sensor">Vibration monitoring ↗</a><a href="/product/radar-distance-sensor">Distance monitoring ↗</a><a href="/product/air-quality-sensor">Air quality monitoring ↗</a></div>
+<a class="mobile-quote" href="#enquiry" data-enquiry-source="Mobile bar">Discuss your project <span aria-hidden="true">↗</span></a>
+</div>
+<script>
+  import './tilt-interactions.js';
+</script>

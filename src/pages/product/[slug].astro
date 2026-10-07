@@ -14,6 +14,7 @@ import { enhanceContentHtml, normalizeBody } from '../../utils/content';
 import type { GetStaticPaths } from 'astro';
 import WaveDivider from '../../components/WaveDivider.astro';
 import AirQualityV2Page from '../../components/air-quality/AirQualityV2Page.astro';
+import TiltEnPage from '../../components/tilt/TiltEnPage.astro';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const cms = await getCmsProductDetails('en');
@@ -142,9 +143,11 @@ const breadcrumbLd = {
       ],
 };---
 
-{/* EN 空气质量页 V2：同 URL 自定义文案体验版（数据 indoor.json），其余产品页走经典模板 */}
+{/* EN 空气质量页 V2：同 URL 自定义文案体验版（数据 indoor.json）；倾斜传感器页 V2（tilt-content.json）；其余产品页走经典模板 */}
 {slug === 'air-quality-sensor' ? (
   <AirQualityV2Page />
+) : slug === 'tilt-sensor' ? (
+  <TiltEnPage />
 ) : (
 <BaseLayout locale="en" preloadImage={heroSrc} title={detailSeo.en[id]?.title ?? `${d.series} | Hitelecom Industrial IoT Sensors`} description={detailSeo.en[id]?.desc ?? d.desc}>
   <ProductShell>

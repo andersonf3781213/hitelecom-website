@@ -1,0 +1,24 @@
+---
+/**
+ * 倾斜传感器页 V2 · EN（GPT6 稿，Kimi 审核集成 2026-10-06）
+ * 同 URL 替换：/product/tilt-sensor（slug 不变，hreflang/sitemap/内链不受影响）。
+ * 页首页尾沿用 BaseLayout（Header/Footer/Sidebar 不变）；GPT6 预览外壳
+ * SiteShell/QuickContact 不接入（Sidebar 已覆盖四个联系入口）。
+ * 数据：src/data/tilt-content.json；样式：src/styles/tilt.css（.ht-tilt 作用域）。
+ * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级 Schema。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TiltPage from './TiltPage.astro';
+import StructuredData from './StructuredData.astro';
+import { tiltImage } from './images.mjs';
+import content from '../../data/tilt-content.json';
+import '../../styles/tilt.css';
+
+const hero = await tiltImage('product-hero.webp', true);
+const ogImage = new URL(hero.src, Astro.site).href;
+---
+
+<BaseLayout locale="en" title={content.seo.title} description={content.seo.description} preloadImage={hero.src}>
+  <StructuredData slot="head" content={content} imageUrl={ogImage} />
+  <TiltPage />
+</BaseLayout>
