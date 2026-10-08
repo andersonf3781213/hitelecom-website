@@ -1,0 +1,11 @@
+---
+/**
+ * 倾斜传感器页 V2 · EN 静态路由（2026-10-08 CSS 分离）
+ * 独立静态路由使本页 CSS 仅含 BaseLayout 公共样式 + tilt.css，
+ * 不再与 [slug] 路由的空气质量/旧产品样式合并打包（GPT6 复查 §2）。
+ * [slug].astro 的 getStaticPaths 已排除 tilt-sensor，无路由冲突。
+ */
+import TiltEnPage from '../../components/tilt/TiltEnPage.astro';
+---
+
+<TiltEnPage />

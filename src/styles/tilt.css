@@ -171,3 +171,13 @@
 :where(.ht-tilt) .shell-reference .footer-col-title{line-height:1.6}
 :where(.ht-tilt) .shell-reference .qr-pop a,:where(.ht-tilt) .shell-reference .qr-pop span{display:block;margin-top:6px;text-align:center;font-size:11px;letter-spacing:0;text-transform:none;white-space:nowrap;color:#121c2b}
 :where(.ht-tilt) .shell-reference .search-fields .btn-pill{display:flex;align-items:center;gap:8px}
+
+/* ——— 2026-10-08 复查修复（GPT6 二次清单 §5/§2）——— */
+/* 读数卡角度单位上标：三处 0.30°/0.45°/+0.15° 同款（确认版格式，数值不变） */
+:where(.ht-tilt) .reading-card .angle-unit{font-size:.58em;line-height:0;vertical-align:super;letter-spacing:0;margin-left:.04em}
+:where(.ht-tilt) .reading-pair .angle-unit{color:#7b8b9f}
+/* 锚点滚动偏移：等于吸附导航总高（57+2px 边线；移动 48+2）。
+   CSS 分离后本文件仅随倾斜页加载，html 级规则不会波及其他页面。
+   注意：scroll-padding 必须作用于滚动容器（视口=html），写在 .ht-tilt 上无效。 */
+html{scroll-padding-top:59px}
+@media(max-width:600px){html{scroll-padding-top:50px}}

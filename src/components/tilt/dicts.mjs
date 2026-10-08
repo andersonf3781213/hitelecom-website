@@ -6,6 +6,8 @@
  *    （GPT6 包残留 mailto 时代“索取”措辞，已弃用）；④ JS 邮件文案按各语习惯组稿。
  * h1: spanB 非空时 spanA/spanB 间渲染 <br class="desktop-break"/>（en/ja）；
  * featH2b 为 null 时特性 H2 单行渲染（fr/de/ru/es）。
+ * noscriptPre 词间边界：拉丁语（en/es/de/fr/ru）以前缀尾部空格分隔链接文字，
+ * 日语按 CJK 惯例无空格（2026-10-08 修复 es/de/fr/ru 缺失的词间空格）。
  */
 export const TILT_DICTS = {
   "en": {
@@ -244,7 +246,7 @@ export const TILT_DICTS = {
     "openEmail": "Ouvrir la messagerie ↗",
     "copyBrief": "Copier le résumé",
     "statusReady": "Votre résumé est prêt. Vous pouvez le vérifier.",
-    "noscriptPre": "Vous pouvez aussi",
+    "noscriptPre": "Vous pouvez aussi ",
     "noscriptLink": "nous envoyer directement les détails de votre projet par e-mail",
     "noscriptPost": ".",
     "noscriptSubject": "Projet de capteur d’inclinaison sans fil",
@@ -385,7 +387,7 @@ export const TILT_DICTS = {
     "openEmail": "E-Mail-Programm öffnen ↗",
     "copyBrief": "Text kopieren",
     "statusReady": "Ihre Projektübersicht ist bereit zur Prüfung.",
-    "noscriptPre": "Sie können uns Ihre",
+    "noscriptPre": "Sie können uns Ihre ",
     "noscriptLink": "Projektdetails auch direkt per E-Mail senden",
     "noscriptPost": ".",
     "noscriptSubject": "Drahtloser Neigungssensor — Projekt",
@@ -667,7 +669,7 @@ export const TILT_DICTS = {
     "openEmail": "Открыть почту ↗",
     "copyBrief": "Скопировать текст",
     "statusReady": "Описание проекта готово к проверке.",
-    "noscriptPre": "Вы также можете",
+    "noscriptPre": "Вы также можете ",
     "noscriptLink": "отправить сведения о проекте напрямую по электронной почте",
     "noscriptPost": ".",
     "noscriptSubject": "Проект с беспроводным датчиком наклона",
@@ -808,7 +810,7 @@ export const TILT_DICTS = {
     "openEmail": "Abrir correo ↗",
     "copyBrief": "Copiar resumen",
     "statusReady": "El resumen está listo para su revisión.",
-    "noscriptPre": "También puede",
+    "noscriptPre": "También puede ",
     "noscriptLink": "enviarnos directamente los detalles de su proyecto por correo",
     "noscriptPost": ".",
     "noscriptSubject": "Proyecto de sensor de inclinación inalámbrico",

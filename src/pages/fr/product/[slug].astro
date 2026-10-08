@@ -5,7 +5,6 @@
  */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AirQualityV2Page from '../../../components/air-quality/AirQualityV2Page.astro';
-import TiltV2Page from '../../../components/tilt/TiltV2Page.astro';
 import ProductShell from '../../../components/product/ProductShell.astro';
 import ProductCard from '../../../components/product/ProductCard.astro';
 import Img from '../../../components/Img.astro';
@@ -18,7 +17,7 @@ import WaveDivider from '../../../components/WaveDivider.astro';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const cms = await getCmsProductDetails('fr');
-  return [...Object.values(productSlugs), ...Object.keys(cms)].map((slug) => ({ params: { slug } }));
+  return [...Object.values(productSlugs), ...Object.keys(cms)].filter((slug) => slug !== 'tilt-sensor').map((slug) => ({ params: { slug } }));
 };
 
 const { slug } = Astro.params;
@@ -121,8 +120,6 @@ const breadcrumbLd = {
 {/* 空气质量页 V2（GPT6 fr 稿，Kimi 审核）：同 URL 替换，其余产品页走经典模板 */}
 {slug === 'air-quality-sensor' ? (
   <AirQualityV2Page locale="fr" />
-) : slug === 'tilt-sensor' ? (
-  <TiltV2Page locale="fr" />
 ) : (
 <BaseLayout locale="fr" preloadImage={heroSrc} title={detailSeo.fr[id]?.title ?? `${d.series} | Hitelecom Industrial IoT Sensors`} description={detailSeo.fr[id]?.desc ?? d.desc}>
   <ProductShell>

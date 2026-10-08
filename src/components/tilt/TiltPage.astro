@@ -31,6 +31,11 @@ const [appTitleMain, appTitleSpan] = splitTitle(content.applicationHeading.title
 const [specTitleMain, specTitleSpan] = splitTitle(content.modelCatalog.title);
 const [intTitleMain, intTitleSpan] = splitTitle(content.integration.title);
 const [enqTitleMain, enqTitleSpan] = splitTitle(content.enquiry.title);
+// 角度单位上标：值以 ° 结尾时拆出 <sup class="angle-unit">（确认版格式，2026-10-08 恢复）
+const splitDeg = (v) => (v.endsWith('°') ? [v.slice(0, -1), '°'] : [v, null]);
+const [refNum, refUnit] = splitDeg(t.read.refVal);
+const [laterNum, laterUnit] = splitDeg(t.read.laterVal);
+const [changeNum, changeUnit] = splitDeg(t.read.changeVal);
 const homeHref = prefix || '/';
 const sensorsHref = `${prefix}/product/lists/cid/261`;
 ---
@@ -58,7 +63,7 @@ const sensorsHref = `${prefix}/product/lists/cid/261`;
 
   <section class="section overview-section" id="overview" aria-labelledby="overview-title"><div class="wrap overview-grid">
     <div><p class="eyebrow">{content.overview.kicker}</p><h2 id="overview-title">{content.overview.title}</h2><p class="lead">{content.overview.answer}</p><a class="text-link" href="#applications">{t.ovCta} <span aria-hidden="true">↓</span></a></div>
-    <div class="reading-card"><div class="reading-label"><span>{t.read.label}</span><span class="sample-label">{t.read.sample}</span></div><div class="reading-pair"><div><small>{t.read.refLabel}</small><strong>{t.read.refVal}</strong></div><span aria-hidden="true">→</span><div><small>{t.read.laterLabel}</small><strong>{t.read.laterVal}</strong></div></div><div class="reading-change"><span>{t.read.changeLabel}</span><strong>{t.read.changeVal}</strong></div><p>{t.read.note}</p><ol class="reading-steps">{content.overview.steps.map((s,i)=><li><span>{String(i+1).padStart(2,'0')}</span><div><h3>{s.title}</h3><p>{s.text}</p></div></li>)}</ol></div>
+    <div class="reading-card"><div class="reading-label"><span>{t.read.label}</span><span class="sample-label">{t.read.sample}</span></div><div class="reading-pair"><div><small>{t.read.refLabel}</small><strong>{refNum}{refUnit && <sup class="angle-unit">{refUnit}</sup>}</strong></div><span aria-hidden="true">→</span><div><small>{t.read.laterLabel}</small><strong>{laterNum}{laterUnit && <sup class="angle-unit">{laterUnit}</sup>}</strong></div></div><div class="reading-change"><span>{t.read.changeLabel}</span><strong>{changeNum}{changeUnit && <sup class="angle-unit">{changeUnit}</sup>}</strong></div><p>{t.read.note}</p><ol class="reading-steps">{content.overview.steps.map((s,i)=><li><span>{String(i+1).padStart(2,'0')}</span><div><h3>{s.title}</h3><p>{s.text}</p></div></li>)}</ol></div>
   </div></section>
 
   <section class="section profile-section" id="operating-profile" aria-labelledby="profile-title"><div class="wrap">
@@ -71,7 +76,7 @@ const sensorsHref = `${prefix}/product/lists/cid/261`;
     <div class="section-heading"><div><p class="eyebrow">{content.applicationHeading.kicker}</p><h2 id="applications-title">{appTitleMain}{appTitleSpan != null && <><br/><span>{appTitleSpan}</span></>}</h2></div><p>{content.applicationHeading.intro}</p></div>
     <p class="image-note">{content.applicationHeading.imageNote}</p>
     <div class="application-groups">{content.groups.map((group,groupIndex)=><details class="application-group" id={'group-'+group.id} open={groupIndex===0}>
-      <summary><span><small>{String(groupIndex+1).padStart(2,'0')}</small>{group.title}</span><span class="group-count">{group.countLabel ?? `${groupCount(group.id)} applications`} <b aria-hidden="true">+</b></span></summary>
+      <summary><span><small>{String(groupIndex+1).padStart(2,'0')}</small>{group.title}</span><span class="group-count">{group.countLabel ?? `${groupCount(group.id)} ${groupCount(group.id) === 1 ? 'application' : 'applications'}`} <b aria-hidden="true">+</b></span></summary>
       <div class="scene-grid">{scenes.filter(s=>s.group===group.id).map(scene=><article class="scene-card" id={scene.id}>
         <img src={scene.asset.src} srcset={scene.asset.srcset} sizes={groupCount(group.id)===1 ?"(max-width: 600px) calc(100vw - 40px), (max-width: 900px) calc((100vw - 64px) / 2), (max-width: 1300px) 53vw, 676px" : "(max-width: 600px) calc(100vw - 40px), (max-width: 900px) calc((100vw - 64px) / 2), (max-width: 1300px) calc((100vw - 120px) / 3), 398px"} width={scene.asset.width} height={scene.asset.height} loading="lazy" decoding="async" alt={scene.image.alt} style={'object-position:'+(scene.image.focalPoint||'50% 50%')} />
         <div class="scene-copy"><h3>{scene.title}</h3><p>{scene.description}</p><dl><dt>{t.sceneMpLabel}</dt><dd>{scene.monitoringPoint}</dd><dt>{t.scenePbLabel}</dt><dd>{scene.projectBrief}</dd></dl><a href="#enquiry" class="scene-cta" data-project-scene={scene.title}>{t.sceneCta} <span aria-hidden="true">↗</span></a></div>
