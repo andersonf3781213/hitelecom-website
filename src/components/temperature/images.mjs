@@ -1,6 +1,12 @@
 import {getImage} from 'astro:assets';
 const files=import.meta.glob('../../assets/temperature/*.{png,webp,jpg}',{eager:true,import:'default'});
-export async function temperatureImage(name,hero=false){
+const imageResults=new Map();
+export function temperatureImage(name,hero=false){
+  const key=name+'|'+hero;
+  if(!imageResults.has(key))imageResults.set(key,createTemperatureImage(name,hero));
+  return imageResults.get(key);
+}
+async function createTemperatureImage(name,hero){
   const source=files['../../assets/temperature/'+name];
   if(!source)throw new Error('Missing temperature image: '+name);
   const premiumCover=name==='data-center-premium.webp';

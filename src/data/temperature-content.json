@@ -1,17 +1,17 @@
 {
   "seo": {
     "title": "Wireless Temperature Sensor for Remote Monitoring | Hitelecom",
-    "description": "H Series wireless temperature sensors for outdoor sites, factories and cold-chain monitoring. Select the probe, range and 4G, NB-IoT or LoRa configuration."
+    "description": "Customizable H Series wireless temperature sensors for industrial sites, pharmaceutical storage and laboratories. Sensing design, range, 4G, NB-IoT or LoRa."
   },
   "hero": {
     "h1": "Wireless temperature sensor.",
     "value_heading": "The right reading.\nFrom the right point.",
-    "description": "The Hitelecom H Series wireless temperature sensor connects a local probe to remote monitoring and configured alerts. Match the probe and range to the air, surface or medium you need to measure. Choose the wireless configuration and reporting profile for your site, with readings delivered to Hitelecom Cloud or a compatible customer platform.",
+    "description": "The Hitelecom H Series wireless temperature sensor brings readings from selected measurement points to remote monitoring and configured alerts. Product form, enclosure, sensing arrangement and range can be customized for industrial sites, pharmaceutical storage and laboratories. Select the wireless configuration and reporting profile for your installation, with data delivered to Hitelecom Cloud or a compatible customer platform. The external-probe design shown is one available configuration.",
     "primary_cta": "Configure your project",
     "secondary_cta": "Download datasheet",
     "datasheet_url": "/downloads/temperature-sensor-datasheet.pdf",
     "quick_points": [
-      "Probe and range selected for your measurement point",
+      "Product form, sensing arrangement and range matched to your project",
       "4G, NB-IoT or LoRa variants",
       "Hitelecom Cloud or compatible customer platforms"
     ]
@@ -26,16 +26,16 @@
       "text": "Set temperature limits for the application and agree the notification workflow with your platform."
     },
     {
-      "title": "Probe and range selection",
-      "text": "Family measurement ranges span −200°C to +800°C through selected probe and input configurations. Match the range to your normal and peak temperatures."
+      "title": "Customizable product design",
+      "text": "Match the product form, enclosure and sensing arrangement to your installation. Published family ranges span −200°C to +800°C through selected probe and input configurations."
     },
     {
       "title": "Accuracy options",
-      "text": "±0.5°C is listed, with ±0.1°C customization available. Agree the accuracy for your working range and complete probe arrangement."
+      "text": "±0.5°C is listed, with ±0.1°C customization available. Agree the accuracy for your working range and complete measurement configuration."
     },
     {
       "title": "IP68-rated enclosure",
-      "text": "An IP68-rated transmitter enclosure supports demanding installations. Select the complete probe, cable and connector assembly for the site."
+      "text": "IP68-rated enclosure options support demanding installations. Match the supplied device, sensing assembly and enclosure protection to the site."
     },
     {
       "title": "NFC configuration",
@@ -53,7 +53,7 @@
   "measurement": {
     "eyebrow": "MEASURE THE RIGHT TEMPERATURE",
     "heading": "Start with the measurement point.",
-    "description": "Room air, a pipe wall and the liquid inside that pipe represent different temperatures. Define the quantity you need to know before selecting the probe and fixing its position.",
+    "description": "Room air, a pipe wall and the liquid inside that pipe represent different temperatures. Define what you need to measure, then select the product design, sensing arrangement and installation position.",
     "cards": [
       {
         "title": "Air temperature",
@@ -71,8 +71,8 @@
         "project_brief": "Medium · Pressure · Insertion depth · Wetted materials · Process connection"
       }
     ],
-    "installation_heading": "Put the probe at the measurement point.\nPut the transmitter where it can operate.",
-    "installation_text": "Select the probe for the measured temperature and place the transmitter within its specified electronics and battery operating conditions. Cable routing, enclosure position and wireless coverage are part of the same installation plan."
+    "installation_heading": "Plan the sensing point.\nMatch the device to the site.",
+    "installation_text": "Select the sensing arrangement for the measured temperature and the device for its operating environment. For external-probe configurations, position the transmitter within its specified electronics and battery conditions. Mounting, exposure, cable routing where applicable, and wireless coverage belong in the same installation plan."
   },
   "workflow": {
     "eyebrow": "FROM READING TO RESPONSE",
@@ -81,7 +81,7 @@
       {
         "number": "01",
         "title": "Measure",
-        "text": "The selected probe measures temperature at the defined point. Choose sampling requirements according to how quickly the monitored conditions can change."
+        "text": "The selected sensing configuration measures temperature at the defined point. Choose sampling requirements according to how quickly the monitored conditions can change."
       },
       {
         "number": "02",
@@ -162,9 +162,9 @@
     },
     {
       "id": "cold-chain",
-      "title": "Cold chain & logistics",
-      "jumpLabel": "Cold chain & logistics",
-      "intro": "Select representative storage and cargo positions around the operating procedure. For cellular monitoring, agree coverage at the actual storage and transport locations.",
+      "title": "Pharma, laboratories & cold chain",
+      "jumpLabel": "Pharma, labs & cold chain",
+      "intro": "Plan monitoring for temperature-sensitive medicines, medical supplies, laboratory samples and reagents, alongside refrigerated storage and transport. Choose representative points around the material’s storage instructions and operating procedure, with connectivity and reporting matched to the location.",
       "image": {
         "name": "cold-storage.webp",
         "alt": "Commercial cold room with organised storage racks and refrigerated goods",
@@ -266,7 +266,13 @@
       "evidence": [
         "outdoor-farm"
       ],
-      "group": "agriculture-outdoor"
+      "group": "agriculture-outdoor",
+      "image": {
+        "name": "scene-farm-soil.webp",
+        "alt": "Cultivated farmland with crop rows and exposed agricultural soil",
+        "caption": "Farmland and soil environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "orchard-frost",
@@ -278,7 +284,13 @@
       "evidence": [
         "outdoor-frost"
       ],
-      "group": "agriculture-outdoor"
+      "group": "agriculture-outdoor",
+      "image": {
+        "name": "outdoor-agriculture.webp",
+        "alt": "Orchard rows beneath an open sky, showing a crop-canopy environment",
+        "caption": "Orchard and crop-canopy environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "greenhouses",
@@ -290,7 +302,13 @@
       "evidence": [
         "outdoor-greenhouses"
       ],
-      "measurement": "Crop-zone air or specified growing-medium temperature"
+      "measurement": "Crop-zone air or specified growing-medium temperature",
+      "image": {
+        "name": "scene-greenhouses.webp",
+        "alt": "Modern greenhouse interior with crop rows and roof ventilation",
+        "caption": "Greenhouse growing environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "livestock",
@@ -302,7 +320,13 @@
       "evidence": [
         "outdoor-livestock"
       ],
-      "group": "agriculture-outdoor"
+      "group": "agriculture-outdoor",
+      "image": {
+        "name": "scene-livestock.webp",
+        "alt": "Modern dairy barn with livestock and a ventilated animal environment",
+        "caption": "Dairy livestock environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "weather-microclimate",
@@ -314,7 +338,13 @@
       "evidence": [
         "outdoor-weather"
       ],
-      "group": "agriculture-outdoor"
+      "group": "agriculture-outdoor",
+      "image": {
+        "name": "scene-weather-microclimate.webp",
+        "alt": "Outdoor weather observation mast and instruments in a natural landscape",
+        "caption": "Outdoor weather observation environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "forest-environment",
@@ -326,7 +356,20 @@
       "evidence": [
         "outdoor-forest"
       ],
-      "group": "agriculture-outdoor"
+      "group": "agriculture-outdoor",
+      "image": {
+        "name": "scene-forest-environment.webp",
+        "alt": "Trees and dense undergrowth at a woodland edge beneath a cloudy sky",
+        "caption": "Woodland edge and natural undergrowth under cloudy daylight",
+        "focalPoint": "center center",
+        "credit": {
+          "author": "Ayyuha Sideeq",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:A_lush,_verdant_landscape_featuring_a_dense_forest_of_tall_trees_and_vibrant_greenery_against_a_cloudy,_overcast_sky.jpg",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized, cropped and converted to WebP"
+        }
+      }
     },
     {
       "id": "solar-pv",
@@ -338,7 +381,13 @@
       "evidence": [
         "outdoor-pv"
       ],
-      "group": "energy-electrical"
+      "group": "energy-electrical",
+      "image": {
+        "name": "outdoor-energy.webp",
+        "alt": "Solar panel arrays and electrical support facilities at an outdoor photovoltaic site",
+        "caption": "Solar PV operating environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "wind-power",
@@ -350,7 +399,13 @@
       "evidence": [
         "outdoor-wind"
       ],
-      "group": "energy-electrical"
+      "group": "energy-electrical",
+      "image": {
+        "name": "scene-wind-power.webp",
+        "alt": "Wind turbines and service facilities in an open wind-farm landscape",
+        "caption": "Wind-farm operating environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "energy-storage",
@@ -363,7 +418,13 @@
       "evidence": [
         "outdoor-storage",
         "factory-ups"
-      ]
+      ],
+      "image": {
+        "name": "battery-ups.webp",
+        "alt": "Indoor electrical power and energy-storage equipment cabinets",
+        "caption": "Power and energy-storage equipment environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "ev-charging",
@@ -375,7 +436,13 @@
       "evidence": [
         "outdoor-ev"
       ],
-      "group": "energy-electrical"
+      "group": "energy-electrical",
+      "image": {
+        "name": "scene-ev-charging.webp",
+        "alt": "Modern electric-vehicle charging forecourt with charging pedestals",
+        "caption": "Electric-vehicle charging environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "electrical-cabinets",
@@ -388,7 +455,13 @@
       "evidence": [
         "outdoor-cabinets",
         "factory-electrical"
-      ]
+      ],
+      "image": {
+        "name": "energy-cabinets.webp",
+        "alt": "Industrial electrical equipment room with rows of enclosed cabinets",
+        "caption": "Electrical equipment-room environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "telecom-sites",
@@ -400,7 +473,13 @@
       "evidence": [
         "outdoor-telecom"
       ],
-      "group": "remote-water"
+      "group": "remote-water",
+      "image": {
+        "name": "outdoor-infrastructure.webp",
+        "alt": "Telecommunications tower beside outdoor equipment cabinets and a site building",
+        "caption": "Outdoor telecommunications environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "roads-bridges",
@@ -412,7 +491,13 @@
       "evidence": [
         "outdoor-road"
       ],
-      "group": "remote-water"
+      "group": "remote-water",
+      "image": {
+        "name": "scene-roads-bridges.webp",
+        "alt": "Road bridge deck and infrastructure in cold-weather conditions",
+        "caption": "Road and bridge-deck environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "outdoor-pipelines",
@@ -424,7 +509,13 @@
       "evidence": [
         "outdoor-pipelines"
       ],
-      "group": "remote-water"
+      "group": "remote-water",
+      "image": {
+        "name": "scene-outdoor-pipelines.webp",
+        "alt": "Outdoor process pipelines with insulation and industrial pipe supports",
+        "caption": "Outdoor industrial pipeline environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "outdoor-pumping",
@@ -436,7 +527,13 @@
       "evidence": [
         "outdoor-pumps"
       ],
-      "group": "remote-water"
+      "group": "remote-water",
+      "image": {
+        "name": "scene-outdoor-pumping.webp",
+        "alt": "Outdoor water pumping facility with industrial pipes and plant structures",
+        "caption": "Outdoor water-pumping environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "waterbodies",
@@ -448,7 +545,13 @@
       "evidence": [
         "outdoor-water"
       ],
-      "group": "remote-water"
+      "group": "remote-water",
+      "image": {
+        "name": "scene-waterbodies.webp",
+        "alt": "Reservoir water and aquaculture operations with floating fish-farming pens",
+        "caption": "Reservoir and aquaculture environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "cold-rooms",
@@ -460,21 +563,35 @@
       "evidence": [
         "who-mapping"
       ],
-      "measurement": "Storage-air or product-representative temperature"
+      "measurement": "Storage-air or product-representative temperature",
+      "image": {
+        "name": "cold-storage.webp",
+        "alt": "Temperature-controlled cold room with storage racks and refrigeration equipment",
+        "caption": "Temperature-controlled storage environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "laboratories",
       "group": "cold-chain",
-      "title": "Laboratories & pharmaceutical storage",
-      "description": "Monitor refrigerators, incubators and controlled storage used for temperature-sensitive materials. Select the probe, performance and calibration requirements around the stored material and your operating procedure.",
-      "monitoringPoint": "Selected refrigerator, incubator or controlled-storage positions.",
-      "projectBrief": "Material storage instructions, working range, allowable tolerance, required records and calibration requirements.",
+      "title": "IoT Pharmaceutical & Laboratory",
+      "description": "Monitor temperature-sensitive medicines and medical supplies in designated cold rooms, refrigerators and storage areas, together with laboratory samples, reagents and room environments. Select representative sensing points, the product form and measurement performance around the material’s storage instructions and the laboratory’s operating procedure.",
+      "monitoringPoint": "Pharmaceutical cold storage; temperature-sensitive medical-supply storage; sample and reagent refrigerators or freezers; representative laboratory-air positions.",
+      "projectBrief": "Material and storage instructions, normal and peak temperatures, placement, product form, required accuracy and response, reporting and alerts, platform needs and any calibration-document requirements.",
       "evidence": [
+        "who-mapping",
         "cdc-storage",
         "nist-traceability",
-        "who-mapping"
+        "pharma-lab-storage",
+        "hitelecom-project-confirmation"
       ],
-      "measurement": "Specified storage, incubator or sample-representative temperature"
+      "measurement": "Specified storage, sample-environment or laboratory-air temperature",
+      "image": {
+        "name": "laboratory-cold-storage.webp",
+        "alt": "Laboratory work area with refrigerators and sample-storage equipment",
+        "caption": "Laboratory and pharmaceutical-storage environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "refrigerated-logistics",
@@ -486,7 +603,13 @@
       "evidence": [
         "who-transport"
       ],
-      "measurement": "Compartment-air or shipment-representative temperature"
+      "measurement": "Compartment-air or shipment-representative temperature",
+      "image": {
+        "name": "refrigerated-logistics.webp",
+        "alt": "Refrigerated delivery truck at a loading dock",
+        "caption": "Refrigerated delivery environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "reefer-containers",
@@ -498,7 +621,13 @@
       "evidence": [
         "outdoor-reefers"
       ],
-      "group": "cold-chain"
+      "group": "cold-chain",
+      "image": {
+        "name": "scene-reefer-containers.webp",
+        "alt": "Refrigerated shipping containers with visible cooling units at a port depot",
+        "caption": "Refrigerated container-depot environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "warehousing",
@@ -511,7 +640,13 @@
         "hitelecom-datasheet",
         "fluke-probe"
       ],
-      "measurement": "Representative storage-zone temperature"
+      "measurement": "Representative storage-zone temperature",
+      "image": {
+        "name": "warehouses.webp",
+        "alt": "Warehouse aisle with shelving and stored goods",
+        "caption": "Warehouse storage environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "motors-bearings",
@@ -523,7 +658,13 @@
       "projectBrief": "Equipment duty, normal surface temperature, contact mounting, vibration, cable protection and inspection thresholds.",
       "evidence": [
         "factory-motors"
-      ]
+      ],
+      "image": {
+        "name": "motors-bearings.webp",
+        "alt": "Industrial electric motor and pump assembly with accessible bearing housings",
+        "caption": "Industrial motor and pump environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "gearboxes",
@@ -535,7 +676,13 @@
       "projectBrief": "Surface or oil measurement, oil type, pressure, sealed connection, working range and operating duty.",
       "evidence": [
         "factory-gears"
-      ]
+      ],
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "Industrial gearbox and drive assembly in a factory environment",
+        "caption": "Industrial gearbox and drive environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "hydraulic-power",
@@ -547,7 +694,13 @@
       "projectBrief": "Oil and seal compatibility, pressure, insertion depth or surface contact, machine cycle and reporting needs.",
       "evidence": [
         "factory-hydraulics"
-      ]
+      ],
+      "image": {
+        "name": "hydraulic-power.webp",
+        "alt": "Hydraulic power unit with reservoir, pumps and pipe connections",
+        "caption": "Hydraulic power-unit environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "air-compressors",
@@ -559,7 +712,13 @@
       "projectBrief": "Required temperature quantity, equipment load, probe contact or oil connection, ventilation and wireless coverage.",
       "evidence": [
         "factory-compressors"
-      ]
+      ],
+      "image": {
+        "name": "air-compressors.webp",
+        "alt": "Industrial compressor room with air compressors and pressure vessels",
+        "caption": "Industrial compressor-room environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "mould-cooling",
@@ -571,7 +730,13 @@
       "projectBrief": "Number of points, water or glycol, pressure, fittings, response time and production-cycle requirements.",
       "evidence": [
         "factory-injection"
-      ]
+      ],
+      "image": {
+        "name": "equipment-surfaces.webp",
+        "alt": "Injection-moulding production machine and surrounding manufacturing area",
+        "caption": "Injection-moulding production environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "industrial-ovens",
@@ -583,7 +748,13 @@
       "projectBrief": "Normal and peak temperature, zone location, probe and cable construction, response time and transmitter position.",
       "evidence": [
         "factory-ovens"
-      ]
+      ],
+      "image": {
+        "name": "industrial-ovens.webp",
+        "alt": "Enclosed industrial oven and thermal-processing equipment",
+        "caption": "Industrial oven and thermal-processing environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "heat-treatment",
@@ -595,7 +766,13 @@
       "projectBrief": "Actual point and exposure, normal and peak temperature, surface mounting or water connection, cable route and electronics ambient conditions.",
       "evidence": [
         "factory-heat-treatment"
-      ]
+      ],
+      "image": {
+        "name": "heat-treatment.webp",
+        "alt": "Industrial heat-treatment support equipment and furnace structures",
+        "caption": "Heat-treatment equipment environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "food-processing",
@@ -609,7 +786,13 @@
         "fluke-probe",
         "factory-food"
       ],
-      "measurement": "Selected process-medium, air or surface temperature"
+      "measurement": "Selected process-medium, air or surface temperature",
+      "image": {
+        "name": "food-processing.webp",
+        "alt": "Stainless-steel food-processing line with tanks and process pipework",
+        "caption": "Food-processing environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "process-tanks",
@@ -621,7 +804,13 @@
       "projectBrief": "Medium, pressure, wetted materials, process connection, required points, working temperature and installation requirements.",
       "evidence": [
         "factory-tanks"
-      ]
+      ],
+      "image": {
+        "name": "process-tanks.webp",
+        "alt": "Industrial stainless-steel process tanks and connected piping",
+        "caption": "Process-tank environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "process-pipelines",
@@ -633,7 +822,13 @@
       "projectBrief": "Surface or medium measurement, insulation, fluid, pressure, connections, number of points and required accuracy.",
       "evidence": [
         "factory-pipes"
-      ]
+      ],
+      "image": {
+        "name": "process-pipelines.webp",
+        "alt": "Industrial heat exchanger and interconnected process pipelines",
+        "caption": "Heat-exchanger and process-pipeline environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "chillers",
@@ -645,7 +840,13 @@
       "projectBrief": "Water or glycol, pressure, connections, sensor count, accuracy, sampling alignment and cooling-duty range.",
       "evidence": [
         "factory-chillers"
-      ]
+      ],
+      "image": {
+        "name": "chillers.webp",
+        "alt": "Industrial chiller plant with cooling-water pipework",
+        "caption": "Industrial chiller-plant environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "steam-hot-water",
@@ -657,7 +858,13 @@
       "projectBrief": "Medium and pressure, rated fittings, peak temperature, probe position, transmitter ambient conditions and reporting requirements.",
       "evidence": [
         "factory-steam"
-      ]
+      ],
+      "image": {
+        "name": "steam-hot-water.webp",
+        "alt": "Industrial boiler and steam or hot-water utility pipes",
+        "caption": "Boiler and thermal-utility environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "water-wastewater",
@@ -669,7 +876,13 @@
       "projectBrief": "Treatment stage, liquid composition, wetted materials, fouling and cleaning, immersion depth, access and working range.",
       "evidence": [
         "factory-water"
-      ]
+      ],
+      "image": {
+        "name": "water-wastewater.webp",
+        "alt": "Industrial water-treatment equipment with tanks and pipework",
+        "caption": "Industrial water-treatment environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "data-centers",
@@ -681,7 +894,13 @@
       "evidence": [
         "ashrae-inlets"
       ],
-      "measurement": "Server-rack inlet or room-air temperature"
+      "measurement": "Server-rack inlet or room-air temperature",
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "Premium data-center aisle with server racks and overhead infrastructure",
+        "caption": "Data-center environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "hvac",
@@ -693,7 +912,20 @@
       "evidence": [
         "hitelecom-webpage"
       ],
-      "measurement": "Occupied-room or specified HVAC temperature"
+      "measurement": "Occupied-room or specified HVAC temperature",
+      "image": {
+        "name": "scene-hvac.webp",
+        "alt": "Galvanized ventilation ducts and mechanical equipment on an office-building rooftop",
+        "caption": "Commercial-building HVAC ductwork and rooftop mechanical equipment",
+        "focalPoint": "center center",
+        "credit": {
+          "author": "Marek Ślusarczyk",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:012_Rooftop_HVAC_systems_and_roof_ventilation_ducts_in_Tokyo,_Japan.jpg",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+          "changes": "Resized, cropped and converted to WebP"
+        }
+      }
     },
     {
       "id": "cleanrooms",
@@ -705,7 +937,13 @@
       "projectBrief": "Working range and tolerance, placement, cleaning requirements, calibration and records, plus any separate humidity or pressure needs.",
       "evidence": [
         "factory-cleanrooms"
-      ]
+      ],
+      "image": {
+        "name": "cleanrooms.webp",
+        "alt": "Clean controlled-production room with manufacturing equipment",
+        "caption": "Controlled-production environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "concrete-curing",
@@ -717,7 +955,13 @@
       "evidence": [
         "outdoor-concrete"
       ],
-      "group": "buildings-heritage"
+      "group": "buildings-heritage",
+      "image": {
+        "name": "scene-concrete-curing.webp",
+        "alt": "Building construction site with recently cast structural concrete",
+        "caption": "Concrete-construction environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "museums",
@@ -729,7 +973,13 @@
       "evidence": [
         "cci-environment"
       ],
-      "measurement": "Collection-space air temperature"
+      "measurement": "Collection-space air temperature",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "Museum collection-storage room with shelves and conservation objects",
+        "caption": "Museum collection-storage environment",
+        "focalPoint": "center center"
+      }
     },
     {
       "id": "heritage-outdoor",
@@ -741,13 +991,26 @@
       "evidence": [
         "outdoor-heritage"
       ],
-      "group": "buildings-heritage"
+      "group": "buildings-heritage",
+      "image": {
+        "name": "scene-heritage-outdoor.webp",
+        "alt": "Weathered stone walls and arches at Rievaulx Abbey, England",
+        "caption": "Historic stone masonry exposed to outdoor weather — Rievaulx Abbey, England",
+        "focalPoint": "62% center",
+        "credit": {
+          "author": "Michael D Beckwith",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Rievaulx_Abbey_Ruins.jpg",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized, cropped and converted to WebP"
+        }
+      }
     }
   ],
   "series": {
     "eyebrow": "SERIES & CONFIGURATION",
     "heading": "One project brief.\nThe appropriate configuration.",
-    "description": "H200, H300 and H500 are the model families listed in the current published datasheet. Select a configuration by the measurement point, probe, required performance, installation and connection rather than by model name alone.",
+    "description": "H200, H300 and H500 are the model families listed in the current published datasheet. Product form and sensing arrangement can be customized for the project. Select the configuration by measurement performance, working conditions, mounting and connectivity; specify probe and cable details where an external-probe design is used.",
     "models": [
       "H200",
       "H300",
@@ -761,7 +1024,7 @@
       },
       {
         "title": "Define the installation",
-        "text": "Probe dimensions · Cable route · Medium and connection · Transmitter position"
+        "text": "Product form and dimensions · Mounting and enclosure · Sensing position · Probe, cable and connection where applicable"
       },
       {
         "title": "Define the data path",
@@ -772,7 +1035,7 @@
   "specifications": {
     "eyebrow": "TECHNICAL SPECIFICATIONS",
     "heading": "Published family specifications.",
-    "description": "Use these published values as a starting point. The supplied probe and transmitter configuration defines the operating range, performance and installation requirements for your project.",
+    "description": "Use these published values as a starting point. The supplied sensing and device configuration defines the operating range, performance and installation requirements for your project.",
     "rows": [
       {
         "label": "Published models",
@@ -825,26 +1088,25 @@
   "faqHeading": {
     "kicker": "ANSWERS FOR YOUR PROJECT",
     "title": "Frequently asked questions.",
-    "intro": "Practical answers for choosing the probe, planning the installation and connecting your temperature data."
+    "intro": "Practical answers for choosing the product design and sensing configuration, planning the installation and connecting your temperature data."
   },
   "faqs": [
     {
       "id": "faq-wireless-probe",
-      "question": "How does a wireless temperature sensor work with an external probe?",
+      "question": "Can the product form and sensing arrangement be customized?",
       "paragraphs": [
-        "The probe measures temperature at its sensing point and connects to the transmitter by a probe cable. The transmitter sends readings through the selected wireless connection to the monitoring platform. This arrangement lets you position the probe where temperature matters and mount the transmitter where its operating conditions and wireless coverage are suitable."
+        "Yes. The product form, enclosure, mounting and sensing arrangement can be customized for the application. The external-probe design shown is one available configuration. Share what you need to measure, the available space, mounting, environmental conditions and required performance so Hitelecom can review the appropriate design and configuration."
       ],
       "evidence": [
-        "hitelecom-webpage",
-        "hitelecom-datasheet",
-        "fluke-probe"
+        "hitelecom-project-confirmation",
+        "hitelecom-datasheet"
       ]
     },
     {
       "id": "faq-probe-selection",
-      "question": "How do I choose a probe for air, surface or liquid temperature?",
+      "question": "How do I choose the sensing arrangement for air, surface or liquid temperature?",
       "paragraphs": [
-        "Start with what you need to measure. Air monitoring needs representative placement and exposure; surface monitoring needs reliable thermal contact; immersion monitoring needs suitable insertion depth, materials and a process connection. Share the normal and peak temperatures, required response time and installation conditions so the probe and cable assembly can be selected for the task."
+        "Start with what you need to measure. Air monitoring needs representative placement and exposure; surface monitoring needs reliable thermal contact; immersion monitoring needs suitable insertion depth, materials and a process connection. Share the normal and peak temperatures, required response time, preferred product form and installation conditions so the sensing arrangement can be selected for the task."
       ],
       "evidence": [
         "fluke-probe",
@@ -855,7 +1117,7 @@
       "id": "faq-range",
       "question": "What temperature range can the H Series monitor?",
       "paragraphs": [
-        "The published H Series family range is −200°C to +800°C. The supplied probe, cable and input configuration determine the range for a particular installation. The probe's measured temperature and the transmitter's surrounding temperature are separate requirements, so choose both around the working conditions of your project."
+        "The published H Series family range is −200°C to +800°C through selected probe and input configurations. The selected sensing arrangement and input determine the range for a particular installation. For external-probe designs, the probe, cable and transmitter each need to suit their operating conditions. Specify both the measured temperature and the device’s surrounding temperature for your project."
       ],
       "evidence": [
         "hitelecom-datasheet",
@@ -866,7 +1128,7 @@
       "id": "faq-accuracy",
       "question": "How should I specify accuracy and calibration for my project?",
       "paragraphs": [
-        "The published accuracy is ±0.5°C, with ±0.1°C customization available. Specify the accuracy you need over your actual working range, together with the complete probe and transmitter arrangement. If your procedure requires calibration, include the test temperatures, allowable tolerance, certificate and measurement-uncertainty requirements in the quotation brief."
+        "The published accuracy is ±0.5°C, with ±0.1°C customization available. Specify the accuracy you need over your actual working range, together with the complete measurement configuration. If your procedure requires calibration, include the test temperatures, allowable tolerance, certificate and measurement-uncertainty requirements in the quotation brief."
       ],
       "evidence": [
         "hitelecom-datasheet",
@@ -875,13 +1137,15 @@
     },
     {
       "id": "faq-cold-storage",
-      "question": "How should I configure monitoring for cold rooms, refrigerators or laboratories?",
+      "question": "How should I plan temperature monitoring for pharmaceutical storage and laboratories?",
       "paragraphs": [
-        "Choose monitoring points that represent the stored material and operating conditions, using temperature mapping where appropriate. For vaccine-storage projects, assess buffered-probe, recording, alarm and calibration requirements against your storage procedure and current guidance. Share the material's storage instructions and required records so the complete monitoring configuration can be reviewed."
+        "Start with the material’s storage instructions and the laboratory’s operating procedure. Select representative positions for medicine storage, temperature-sensitive medical supplies, samples, reagents and laboratory environments, using temperature mapping where appropriate. Specify the working range, accuracy, response, calibration documents and recording, reporting or alert requirements so the complete configuration can be reviewed."
       ],
       "evidence": [
         "who-mapping",
-        "cdc-storage"
+        "cdc-storage",
+        "pharma-lab-storage",
+        "nist-traceability"
       ]
     },
     {
@@ -913,7 +1177,7 @@
       "id": "faq-quotation",
       "question": "What should I send for a configuration proposal and quotation?",
       "paragraphs": [
-        "Send the application, country, quantity, measurement point, normal and peak temperatures, required accuracy and response. Add probe dimensions, cable length, mounting details and any medium, pressure or cleaning requirements. Include the preferred wireless connection, sampling and reporting needs, platform requirements and calibration documents so Hitelecom can review a suitable configuration and quotation."
+        "Send the application, country, quantity, measurement point, normal and peak temperatures, required accuracy and response. Add the preferred product form, dimensions, mounting and environmental conditions, plus any probe, cable, medium, pressure or cleaning requirements. Include the wireless connection, sampling and reporting needs, platform requirements and calibration documents so Hitelecom can review a suitable configuration and quotation."
       ],
       "evidence": [
         "hitelecom-webpage",
@@ -925,7 +1189,7 @@
   "inquiry": {
     "eyebrow": "LET'S TALK ABOUT YOUR PROJECT",
     "heading": "Specify the point.\nBuild the monitoring plan.",
-    "description": "Tell us what you need to measure, where the probe will go and how your team uses the data. We will help review the appropriate H Series configuration and quotation.",
+    "description": "Tell us what you need to measure, the preferred product form and how your team uses the data. We will help review the appropriate H Series design, sensing configuration and quotation.",
     "email": "sales@hitelecom.cn",
     "supporting_text": "A site photo, drawing or storage procedure helps us understand the measurement point.",
     "fields": [
@@ -937,14 +1201,14 @@
       "Name",
       "Work email"
     ],
-    "message_placeholder": "Describe the measurement point, required accuracy, probe and cable arrangement, wireless connection and platform needs.",
+    "message_placeholder": "Describe the measurement point, preferred product form, required accuracy, installation, wireless connection and platform needs.",
     "submit_label": "Prepare project enquiry",
     "mailto_note": "If the preview uses mailto, say explicitly that the button opens an email draft; do not display a sent-success message without a backend."
   },
   "applicationSection": {
     "title": "Temperature monitoring.",
     "valueHeading": "Across your operation.",
-    "description": "For distributed outdoor sites, factory equipment and temperature-sensitive operations. Choose your industry, then explore the measurement point, probe arrangement and reporting requirements for your project.",
-    "note": "Category photographs illustrate representative environments; they are not customer installation records."
+    "description": "For industrial and outdoor sites, pharmaceutical and laboratory storage, cold chains and other temperature-sensitive operations. Choose your industry, then explore the sensing point, product form and reporting requirements for your project.",
+    "note": "Application photographs illustrate representative environments."
   }
 }

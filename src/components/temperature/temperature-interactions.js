@@ -1,3 +1,118 @@
+// All task photos and copy are real static HTML. This small enhancement moves
+// the selected photo into the left desktop slot; native details remain usable
+// without JavaScript, and narrow screens keep the photo with its task.
+const sceneViewport = window.matchMedia('(max-width: 600px)');
+const applicationSceneStates = new Map();
+for (const group of document.querySelectorAll('.application-group')) {
+  const slot = group.querySelector('.application-media-slot');
+  const fallback = slot?.querySelector('.application-category-photo');
+  const tasks = [...group.querySelectorAll('.application-task')];
+  if (!slot || !fallback || !tasks.length) continue;
+  const records = new Map(tasks.map(task => [task.id, {
+    task,
+    home: task.querySelector('.task-copy'),
+    figure: task.querySelector('.application-scene-photo')
+  }]));
+  if ([...records.values()].some(record => !record.figure || !record.home)) continue;
+  const state = {group, slot, fallback, records, desired: null, current: null, generation: 0};
+  applicationSceneStates.set(group, state);
+  group.classList.add('application-scenes-enhanced');
+
+  const restore = record => {
+    record.home.prepend(record.figure);
+    record.figure.hidden = !sceneViewport.matches;
+  };
+  const show = (record, generation) => {
+    if (state.generation !== generation || state.desired !== record) return;
+    if (sceneViewport.matches) {
+      for (const item of records.values()) restore(item);
+      fallback.hidden = false;
+    } else {
+      if (state.current && state.current !== record) restore(state.current);
+      record.figure.hidden = false;
+      slot.append(record.figure);
+      fallback.hidden = true;
+    }
+    state.current = record;
+    group.dataset.displayedScene = record.task.id;
+    record.figure.classList.remove('scene-photo-ready');
+    // Opacity animation does not affect layout; reduced-motion CSS disables it.
+    record.figure.classList.add('scene-photo-ready');
+  };
+  const select = (record, initial = false) => {
+    state.desired = record;
+    const generation = ++state.generation;
+    group.dataset.selectedScene = record.task.id;
+    for (const item of records.values()) {
+      item.task.classList.toggle('is-selected', item === record);
+      if (item !== record) item.task.open = false;
+    }
+    const image = record.figure.querySelector('img');
+    if (sceneViewport.matches || initial || (image.complete && image.naturalWidth > 0)) {
+      show(record, generation);
+      return;
+    }
+    // Keep the last displayed image while the next selected image downloads.
+    // Only a real user-selected/open task is promoted from lazy loading.
+    if (group.open && record.figure.hidden) image.loading = 'eager';
+    const ready = () => show(record, generation);
+    image.addEventListener('load', ready, {once:true});
+    // A fast cached load may finish between the complete check and listener.
+    if (image.complete && image.naturalWidth > 0) ready();
+  };
+  state.select = select;
+  state.relayout = () => {
+    ++state.generation;
+    for (const item of records.values()) restore(item);
+    state.current = null;
+    fallback.hidden = false;
+    select(state.desired || records.values().next().value, true);
+  };
+  for (const record of records.values()) {
+    record.task.addEventListener('toggle', () => {
+      if (record.task.open) select(record);
+    });
+    const image = record.figure.querySelector('img');
+    image.addEventListener('error', () => {
+      if (record.figure.dataset.sceneFallback === 'true') {
+        // If even the category fallback fails, keep a previously valid image.
+        if (state.current !== record) return;
+        record.figure.hidden = true;
+        fallback.hidden = false;
+        return;
+      }
+      // Honest fallback: image alt and caption switch with the category photo.
+      const fallbackImage = fallback.querySelector('img');
+      record.figure.dataset.sceneFallback = 'true';
+      image.alt = fallbackImage.alt;
+      image.style.objectPosition = fallbackImage.style.objectPosition;
+      image.width = fallbackImage.width;
+      image.height = fallbackImage.height;
+      record.figure.querySelector('figcaption').textContent = fallback.querySelector('figcaption').textContent;
+      const candidates = fallbackImage.getAttribute('srcset');
+      if (candidates) image.setAttribute('srcset', candidates); else image.removeAttribute('srcset');
+      image.setAttribute('src', fallbackImage.getAttribute('src'));
+      if (state.desired === record) select(record);
+    });
+  }
+  group.addEventListener('toggle', () => {
+    if (!group.open) return;
+    const opened = [...records.values()].find(record => record.task.open);
+    const record = opened || state.desired || records.values().next().value;
+    if (!opened) record.task.open = true;
+    select(record);
+  });
+  state.relayout();
+}
+sceneViewport.addEventListener('change', () => {
+  for (const state of applicationSceneStates.values()) state.relayout();
+});
+const selectApplicationTask = task => {
+  const state = applicationSceneStates.get(task.closest('.application-group'));
+  const record = state?.records.get(task.id);
+  if (record) state.select(record);
+};
+
 const form = document.querySelector('#enquiry-form');
 const application = document.querySelector('#application');
 document.querySelectorAll('[data-project-scene]').forEach(link => {
@@ -16,6 +131,7 @@ const revealTarget = () => {
   if (el.tagName === "DETAILS") el.open = true;
   let p = el.parentElement;
   while (p) { if (p.tagName === 'DETAILS') p.open = true; p = p.parentElement; }
+  if (el.classList.contains('application-task')) selectApplicationTask(el);
 };
 window.addEventListener('hashchange', revealTarget);
 revealTarget();
