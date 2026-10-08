@@ -1,0 +1,950 @@
+{
+  "seo": {
+    "title": "Wireless Temperature Sensor for Remote Monitoring | Hitelecom",
+    "description": "H Series wireless temperature sensors for outdoor sites, factories and cold-chain monitoring. Select the probe, range and 4G, NB-IoT or LoRa configuration."
+  },
+  "hero": {
+    "h1": "Wireless temperature sensor.",
+    "value_heading": "The right reading.\nFrom the right point.",
+    "description": "The Hitelecom H Series wireless temperature sensor connects a local probe to remote monitoring and configured alerts. Match the probe and range to the air, surface or medium you need to measure. Choose the wireless configuration and reporting profile for your site, with readings delivered to Hitelecom Cloud or a compatible customer platform.",
+    "primary_cta": "Configure your project",
+    "secondary_cta": "Download datasheet",
+    "datasheet_url": "/downloads/temperature-sensor-datasheet.pdf",
+    "quick_points": [
+      "Probe and range selected for your measurement point",
+      "4G, NB-IoT or LoRa variants",
+      "Hitelecom Cloud or compatible customer platforms"
+    ]
+  },
+  "features": [
+    {
+      "title": "Remote temperature monitoring",
+      "text": "Bring readings from distributed measurement points into the selected monitoring platform."
+    },
+    {
+      "title": "Configurable threshold alerts",
+      "text": "Set temperature limits for the application and agree the notification workflow with your platform."
+    },
+    {
+      "title": "Probe and range selection",
+      "text": "Family measurement ranges span −200°C to +800°C through selected probe and input configurations. Match the range to your normal and peak temperatures."
+    },
+    {
+      "title": "Accuracy options",
+      "text": "±0.5°C is listed, with ±0.1°C customization available. Agree the accuracy for your working range and complete probe arrangement."
+    },
+    {
+      "title": "IP68-rated enclosure",
+      "text": "An IP68-rated transmitter enclosure supports demanding installations. Select the complete probe, cable and connector assembly for the site."
+    },
+    {
+      "title": "NFC configuration",
+      "text": "NFC activation and local setup are listed for the family. Match the configuration method to the supplied model."
+    },
+    {
+      "title": "Wireless connection options",
+      "text": "Choose a 4G, NB-IoT or LoRa variant for the available network, regional requirements and integration path."
+    },
+    {
+      "title": "Low-power operation",
+      "text": "A design reference of over 10 years at hourly reporting under specified test conditions. Match the battery and operating profile to your project."
+    }
+  ],
+  "measurement": {
+    "eyebrow": "MEASURE THE RIGHT TEMPERATURE",
+    "heading": "Start with the measurement point.",
+    "description": "Room air, a pipe wall and the liquid inside that pipe represent different temperatures. Define the quantity you need to know before selecting the probe and fixing its position.",
+    "cards": [
+      {
+        "title": "Air temperature",
+        "text": "For rooms, cold stores and equipment air inlets. Position the sensing point where the air represents your monitoring objective, with suitable exposure and separation from local heat sources.",
+        "project_brief": "Room or cabinet layout · Representative positions · Airflow · Required response"
+      },
+      {
+        "title": "Surface temperature",
+        "text": "For accessible equipment housings, pipe walls and selected surfaces. Specify the contact method, surface material and insulation so the probe measures the intended surface consistently.",
+        "project_brief": "Surface material · Contact method · Working temperature · Access for installation"
+      },
+      {
+        "title": "Immersion temperature",
+        "text": "For liquids, tanks and process media. Specify the medium, pressure, insertion depth and connection so the sensing element reaches the intended measurement zone.",
+        "project_brief": "Medium · Pressure · Insertion depth · Wetted materials · Process connection"
+      }
+    ],
+    "installation_heading": "Put the probe at the measurement point.\nPut the transmitter where it can operate.",
+    "installation_text": "Select the probe for the measured temperature and place the transmitter within its specified electronics and battery operating conditions. Cable routing, enclosure position and wireless coverage are part of the same installation plan."
+  },
+  "workflow": {
+    "eyebrow": "FROM READING TO RESPONSE",
+    "heading": "Know the temperature.\nGive your team a clear next step.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Measure",
+        "text": "The selected probe measures temperature at the defined point. Choose sampling requirements according to how quickly the monitored conditions can change."
+      },
+      {
+        "number": "02",
+        "title": "Transmit",
+        "text": "Readings travel through the selected cellular or LoRa configuration. Agree the reporting interval and connection path before deployment."
+      },
+      {
+        "number": "03",
+        "title": "Review",
+        "text": "Use the connected platform to review readings, trends and configured alerts. Define who receives a notification and what action follows."
+      }
+    ],
+    "platform_title": "Your site. Your data destination.",
+    "platform_text": "Connect to Hitelecom Cloud or a compatible customer platform. MQTT is listed in the published specification; confirm message format, authentication and the gateway or server path for the selected wireless variant.",
+    "profile_heading": "Match the reporting profile\nto the operation.",
+    "profile_text": "Sampling is when the device measures temperature. Reporting is when data is sent. Define both alongside the alert response your team needs, rather than selecting an interval from battery life alone.",
+    "battery_title": "Long-term operation. Clearly specified.",
+    "battery_text": "The published family is designed for over 10 years of battery life at one-hour reporting under specified test conditions. Actual service life depends on the selected model, battery and sensing configuration, network coverage, retransmissions, temperature, sampling rate and reporting interval."
+  },
+  "groups": [
+    {
+      "id": "agriculture-outdoor",
+      "title": "Agriculture & outdoor environments",
+      "jumpLabel": "Outdoor & agriculture",
+      "intro": "Plan representative air, crop-zone and soil positions. Outdoor air readings need radiation protection and suitable ventilation; soil readings require a probe and depth matched to the monitoring objective.",
+      "image": {
+        "name": "outdoor-agriculture.webp",
+        "alt": "Modern orchard and field setting with a distant greenhouse and open-air exposure",
+        "caption": "Orchard and crop-zone environment",
+        "focalPoint": "50% 50%"
+      },
+      "scenes": [
+        "farm-soil",
+        "orchard-frost",
+        "greenhouses",
+        "livestock",
+        "weather-microclimate",
+        "forest-environment"
+      ]
+    },
+    {
+      "id": "energy-electrical",
+      "title": "Energy & electrical assets",
+      "jumpLabel": "Energy & electrical",
+      "intro": "Choose the air or surface temperature needed by the equipment owner. Attachment, electrical separation, clearances and transmitter location form part of the approved installation.",
+      "image": {
+        "name": "outdoor-energy.webp",
+        "alt": "Solar photovoltaic plant with panels and closed electrical equipment enclosures",
+        "caption": "Solar PV operating environment",
+        "focalPoint": "50% 50%"
+      },
+      "scenes": [
+        "solar-pv",
+        "wind-power",
+        "energy-storage",
+        "ev-charging",
+        "electrical-cabinets"
+      ]
+    },
+    {
+      "id": "remote-water",
+      "title": "Remote infrastructure & water",
+      "jumpLabel": "Remote sites & water",
+      "intro": "Define the road surface, cabinet air, pipe wall or water point before choosing the probe. Match outdoor exposure, access and local network coverage to the monitoring plan.",
+      "image": {
+        "name": "outdoor-infrastructure.webp",
+        "alt": "Remote outdoor communications site with closed cabinets and accessible service paths",
+        "caption": "Outdoor communications infrastructure",
+        "focalPoint": "50% 50%"
+      },
+      "scenes": [
+        "telecom-sites",
+        "roads-bridges",
+        "outdoor-pipelines",
+        "outdoor-pumping",
+        "waterbodies"
+      ]
+    },
+    {
+      "id": "cold-chain",
+      "title": "Cold chain & logistics",
+      "jumpLabel": "Cold chain & logistics",
+      "intro": "Select representative storage and cargo positions around the operating procedure. For cellular monitoring, agree coverage at the actual storage and transport locations.",
+      "image": {
+        "name": "cold-storage.webp",
+        "alt": "Commercial cold room with organised storage racks and refrigerated goods",
+        "caption": "Temperature-controlled storage environment",
+        "focalPoint": "50% 50%"
+      },
+      "scenes": [
+        "cold-rooms",
+        "laboratories",
+        "refrigerated-logistics",
+        "reefer-containers",
+        "warehousing"
+      ]
+    },
+    {
+      "id": "factory-equipment",
+      "title": "Factory equipment & maintenance",
+      "jumpLabel": "Factory equipment",
+      "intro": "Keep a consistent point on the stationary housing or choose a compatible oil measuring installation. Relate thermal trends to duty, load and the team’s inspection records.",
+      "image": {
+        "name": "motors-bearings.webp",
+        "alt": "Industrial electric motor and pump with stationary housings and an intact coupling guard",
+        "caption": "Industrial motor and pump environment",
+        "focalPoint": "50% 50%"
+      },
+      "scenes": [
+        "motors-bearings",
+        "gearboxes",
+        "hydraulic-power",
+        "air-compressors"
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "title": "Manufacturing & thermal processes",
+      "jumpLabel": "Manufacturing processes",
+      "intro": "Match the probe, response and connection to the selected production point. Keep transmitter electronics within their own operating conditions and specify separate points for thermal comparisons.",
+      "image": {
+        "name": "equipment-surfaces.webp",
+        "alt": "Injection moulding machine in an orderly manufacturing area",
+        "caption": "Injection-moulding production environment",
+        "focalPoint": "50% 50%"
+      },
+      "scenes": [
+        "mould-cooling",
+        "industrial-ovens",
+        "heat-treatment",
+        "food-processing",
+        "process-tanks"
+      ]
+    },
+    {
+      "id": "plant-utilities",
+      "title": "Plant utilities & process circuits",
+      "jumpLabel": "Plant utilities",
+      "intro": "Identify the surface or medium temperature, process connection and required points. Supply and return comparisons need separately configured readings and suitable timing.",
+      "image": {
+        "name": "process-pipelines.webp",
+        "alt": "Industrial heat exchanger with insulated process pipework and orderly valves",
+        "caption": "Heat-exchanger and process-pipe environment",
+        "focalPoint": "50% 50%"
+      },
+      "scenes": [
+        "process-pipelines",
+        "chillers",
+        "steam-hot-water",
+        "water-wastewater"
+      ]
+    },
+    {
+      "id": "buildings-heritage",
+      "title": "Buildings, construction & heritage",
+      "jumpLabel": "Buildings & heritage",
+      "intro": "Choose positions around the room, construction or conservation objective. Representative exposure, approved mounting and the intended observation period make the local reading useful.",
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "Modern data center with symmetrical server racks and a clean central cooling aisle",
+        "caption": "Data center environment",
+        "focalPoint": "50% 50%"
+      },
+      "scenes": [
+        "data-centers",
+        "hvac",
+        "cleanrooms",
+        "concrete-curing",
+        "museums",
+        "heritage-outdoor"
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "farm-soil",
+      "title": "Farmland air & soil",
+      "measurement": "Shielded air or specified soil-depth temperature",
+      "description": "Follow temperature at selected crop-air or soil positions across dispersed fields. Local trends give the farming team a record to review alongside crop stage, weather and field operations.",
+      "monitoringPoint": "Shielded representative air position or a soil-compatible probe at a defined depth.",
+      "projectBrief": "Crop and soil type, depth, radiation protection, moisture exposure, mounting and network coverage.",
+      "evidence": [
+        "outdoor-farm"
+      ],
+      "group": "agriculture-outdoor"
+    },
+    {
+      "id": "orchard-frost",
+      "title": "Orchards & frost monitoring",
+      "measurement": "Canopy-level or near-ground air temperature",
+      "description": "Track temperature through the night at representative orchard positions. Canopy-level and near-ground observations provide local temperature information for the team’s frost-response plan.",
+      "monitoringPoint": "Radiation-shielded positions near the crop canopy and selected lower areas, with separate points where required.",
+      "projectBrief": "Crop stage, measurement height, site variation, shield, reporting and notification response.",
+      "evidence": [
+        "outdoor-frost"
+      ],
+      "group": "agriculture-outdoor"
+    },
+    {
+      "id": "greenhouses",
+      "group": "agriculture-outdoor",
+      "title": "Greenhouses & growing areas",
+      "description": "Compare temperature inside and outside selected growing areas. Representative crop-zone readings help the team review ventilation, shading and heating conditions through the daily growing cycle.",
+      "monitoringPoint": "Shielded crop-height air positions, selected greenhouse zones or a compatible growing-medium probe.",
+      "projectBrief": "Crop height, airflow, sunlight exposure, zone count, humidity exposure, working range and response needs.",
+      "evidence": [
+        "outdoor-greenhouses"
+      ],
+      "measurement": "Crop-zone air or specified growing-medium temperature"
+    },
+    {
+      "id": "livestock",
+      "title": "Livestock buildings & yards",
+      "measurement": "Representative animal-zone air temperature",
+      "description": "Observe air temperature in animal housing and selected outdoor areas. Compare local conditions between zones and shifts to support ventilation checks and the farm’s heat- and cold-weather procedures.",
+      "monitoringPoint": "Representative animal-zone air positions, away from direct heat sources and with outdoor radiation protection.",
+      "projectBrief": "Animal type, height, ventilation, washdown and dust exposure, mounting protection and reporting requirements.",
+      "evidence": [
+        "outdoor-livestock"
+      ],
+      "group": "agriculture-outdoor"
+    },
+    {
+      "id": "weather-microclimate",
+      "title": "Outdoor weather & microclimate",
+      "measurement": "Radiation-shielded outdoor air temperature",
+      "description": "Record local air-temperature trends across campuses, parks and distributed outdoor sites. Consistent exposure and siting help the team compare locations and track changing conditions over time.",
+      "monitoringPoint": "Shielded air position with suitable ventilation, clear of nearby artificial heat sources.",
+      "projectBrief": "Measurement height, radiation shield, site exposure, comparison interval, mounting and connectivity.",
+      "evidence": [
+        "outdoor-weather"
+      ],
+      "group": "agriculture-outdoor"
+    },
+    {
+      "id": "forest-environment",
+      "title": "Forests & conservation areas",
+      "measurement": "Selected woodland microclimate temperature",
+      "description": "Follow local temperature in forest plots and protected outdoor environments. Relate the readings to the observation site and other environmental information used by the monitoring team.",
+      "monitoringPoint": "Defined shielded positions within or outside the canopy, according to the monitoring objective.",
+      "projectBrief": "Canopy exposure, height, environmental protection, access, network availability and any separate humidity or smoke requirements.",
+      "evidence": [
+        "outdoor-forest"
+      ],
+      "group": "agriculture-outdoor"
+    },
+    {
+      "id": "solar-pv",
+      "title": "Solar PV sites",
+      "measurement": "Module-backsheet, equipment-surface or air temperature",
+      "description": "Record temperature at selected PV module backsheets, inverter surroundings or site-air positions. Compare the thermal trends with the plant’s operating and weather data when reviewing local conditions.",
+      "monitoringPoint": "Equipment-approved backsheet contact point, accessible enclosure surface or shielded ambient position.",
+      "projectBrief": "Measurement objective, approved attachment, electrical separation, cable route, exposure and platform requirements.",
+      "evidence": [
+        "outdoor-pv"
+      ],
+      "group": "energy-electrical"
+    },
+    {
+      "id": "wind-power",
+      "title": "Wind-power facilities",
+      "measurement": "Nacelle, tower or equipment-room temperature",
+      "description": "Follow temperature at selected accessible locations in nacelles, towers and electrical rooms. Give remote operations teams a local thermal record to review alongside turbine operating conditions.",
+      "monitoringPoint": "Equipment-owner-approved air or enclosure-surface points inside the nacelle, tower or auxiliary equipment room.",
+      "projectBrief": "Operating environment, vibration, mounting, approved access, electrical separation and coverage at the transmitter.",
+      "evidence": [
+        "outdoor-wind"
+      ],
+      "group": "energy-electrical"
+    },
+    {
+      "id": "energy-storage",
+      "group": "energy-electrical",
+      "title": "Energy storage & UPS environments",
+      "measurement": "Room air or specified enclosure-surface temperature",
+      "description": "Monitor air temperature around energy-storage enclosures, battery rooms and UPS equipment. Selected local trends give the facilities team context for ventilation checks and routine equipment inspections.",
+      "monitoringPoint": "Representative surrounding-air position or separately approved accessible enclosure surface.",
+      "projectBrief": "Equipment-owner requirements, point locations, electrical separation, room ventilation, mounting and response needs.",
+      "evidence": [
+        "outdoor-storage",
+        "factory-ups"
+      ]
+    },
+    {
+      "id": "ev-charging",
+      "title": "EV charging sites",
+      "measurement": "Approved enclosure-surface or control-cabinet air temperature",
+      "description": "Observe local temperatures around charging equipment and control cabinets. An equipment-approved measuring point provides thermal information for the operator’s installation checks and maintenance review.",
+      "monitoringPoint": "Approved accessible enclosure surface or representative air position in a suitable control cabinet.",
+      "projectBrief": "Equipment approval, electrical isolation and clearances, attachment, outdoor exposure, cable routing and response requirements.",
+      "evidence": [
+        "outdoor-ev"
+      ],
+      "group": "energy-electrical"
+    },
+    {
+      "id": "electrical-cabinets",
+      "group": "energy-electrical",
+      "title": "Electrical cabinets & equipment rooms",
+      "measurement": "Cabinet or electrical-room air temperature",
+      "description": "Follow temperature in suitable outdoor distribution cabinets and indoor electrical rooms. Consistent air or approved enclosure-surface points help the team review ventilation and changes across operating loads.",
+      "monitoringPoint": "Cabinet air, electrical-room air or an equipment-approved accessible external enclosure point.",
+      "projectBrief": "Location, electrical separation and clearances, approved access, mounting, cable routing and radio coverage with the responsible electrical team.",
+      "evidence": [
+        "outdoor-cabinets",
+        "factory-electrical"
+      ]
+    },
+    {
+      "id": "telecom-sites",
+      "title": "Telecom sites & outdoor cabinets",
+      "measurement": "Cabinet, shelter or equipment-surrounding air temperature",
+      "description": "Bring local air-temperature readings from dispersed base stations, shelters and outdoor cabinets into remote monitoring. Review the thermal conditions around communications equipment and cooling operation.",
+      "monitoringPoint": "Representative cabinet or shelter air, with the point chosen around the intended equipment environment.",
+      "projectBrief": "Cabinet layout, airflow, power and radio interference, approved mounting, reporting and local network coverage.",
+      "evidence": [
+        "outdoor-telecom"
+      ],
+      "group": "remote-water"
+    },
+    {
+      "id": "roads-bridges",
+      "title": "Roads & bridge decks",
+      "measurement": "Specified road-surface, deck-surface or air temperature",
+      "description": "Record temperature at defined road, bridge and surrounding-air positions. The readings provide local thermal context for winter patrols and maintenance decisions, alongside the authority’s weather and surface-condition information.",
+      "monitoringPoint": "Engineered pavement or bridge-surface measuring point, or a separately shielded air position.",
+      "projectBrief": "Surface-probe construction, installation approval, depth or contact, traffic exposure, site power and reporting needs.",
+      "evidence": [
+        "outdoor-road"
+      ],
+      "group": "remote-water"
+    },
+    {
+      "id": "outdoor-pipelines",
+      "title": "Outdoor pipelines & heat tracing",
+      "measurement": "Pipe-wall or specified local process temperature",
+      "description": "Follow local temperature along selected outdoor pipes, valves and heat-traced sections. Temperature trends help the operations team review cold-weather conditions and the performance of the existing heating arrangement.",
+      "monitoringPoint": "Defined pipe-wall contact, selected valve enclosure or compatible process measuring point.",
+      "projectBrief": "Surface or medium objective, insulation, peak temperature, probe contact, weather exposure and any site approval requirements.",
+      "evidence": [
+        "outdoor-pipelines"
+      ],
+      "group": "remote-water"
+    },
+    {
+      "id": "outdoor-pumping",
+      "title": "Outdoor pumps & water facilities",
+      "measurement": "Equipment surface, water or cabinet-air temperature",
+      "description": "Monitor selected thermal points around outdoor pumping and water-handling installations. Review local water, equipment and enclosure conditions as part of the site’s operating and cold-weather procedures.",
+      "monitoringPoint": "Accessible pump housing, compatible water measuring point or approved control-cabinet air position.",
+      "projectBrief": "Measurement quantity, medium, pressure, materials, installation protection, access and network coverage.",
+      "evidence": [
+        "outdoor-pumps"
+      ],
+      "group": "remote-water"
+    },
+    {
+      "id": "waterbodies",
+      "title": "Rivers, reservoirs & aquaculture",
+      "measurement": "Water temperature at a defined location and depth",
+      "description": "Record water temperature at specified depths in selected rivers, reservoirs and aquaculture sites. Consistent positions allow the team to review seasonal changes and the thermal conditions relevant to the water body or stock.",
+      "monitoringPoint": "Water-compatible immersion assembly at a defined location and depth, with secured cable routing.",
+      "projectBrief": "Depth, water chemistry, flow, fouling, cable and connector sealing, access and transmitter position.",
+      "evidence": [
+        "outdoor-water"
+      ],
+      "group": "remote-water"
+    },
+    {
+      "id": "cold-rooms",
+      "group": "cold-chain",
+      "title": "Cold rooms & freezer storage",
+      "description": "Monitor selected storage positions to review temperature stability and configured excursions. Use temperature mapping to choose representative locations, including areas influenced by loading, doors and cooling distribution.",
+      "monitoringPoint": "Representative storage zones, mapped warm and cold locations, selected refrigerator or freezer positions.",
+      "projectBrief": "Storage temperature band, mapped positions, door activity, probe arrangement and alert response.",
+      "evidence": [
+        "who-mapping"
+      ],
+      "measurement": "Storage-air or product-representative temperature"
+    },
+    {
+      "id": "laboratories",
+      "group": "cold-chain",
+      "title": "Laboratories & pharmaceutical storage",
+      "description": "Monitor refrigerators, incubators and controlled storage used for temperature-sensitive materials. Select the probe, performance and calibration requirements around the stored material and your operating procedure.",
+      "monitoringPoint": "Selected refrigerator, incubator or controlled-storage positions.",
+      "projectBrief": "Material storage instructions, working range, allowable tolerance, required records and calibration requirements.",
+      "evidence": [
+        "cdc-storage",
+        "nist-traceability",
+        "who-mapping"
+      ],
+      "measurement": "Specified storage, incubator or sample-representative temperature"
+    },
+    {
+      "id": "refrigerated-logistics",
+      "group": "cold-chain",
+      "title": "Refrigerated vehicles & deliveries",
+      "description": "Follow selected shipment or vehicle temperature points during monitored routes. Specify whether you need compartment air, packaging or a product-representative measurement, and plan connectivity and records around the journey.",
+      "monitoringPoint": "Vehicle compartment, shipping container, package or agreed product-representative position.",
+      "projectBrief": "Route, transport duration, measurement objective, coverage, reporting needs and required records.",
+      "evidence": [
+        "who-transport"
+      ],
+      "measurement": "Compartment-air or shipment-representative temperature"
+    },
+    {
+      "id": "reefer-containers",
+      "title": "Reefer containers at ports & depots",
+      "measurement": "Container-air, cargo-representative or equipment-surrounding temperature",
+      "description": "Follow selected temperature points in refrigerated containers at ports, depots and connected transport locations. Define the required cargo or air reading and match the reporting plan to available network coverage.",
+      "monitoringPoint": "Selected container-air or cargo-representative position, or a separately specified external refrigeration point.",
+      "projectBrief": "Storage instructions, route and dwell time, network coverage, probe arrangement, reporting and required records.",
+      "evidence": [
+        "outdoor-reefers"
+      ],
+      "group": "cold-chain"
+    },
+    {
+      "id": "warehousing",
+      "group": "cold-chain",
+      "title": "Temperature-sensitive warehousing",
+      "description": "Compare temperature across storage aisles, loading interfaces and selected product zones. Choose representative points around the goods, building layout and seasonal conditions so the team can review the storage environment over time.",
+      "monitoringPoint": "Defined storage zones, loading interfaces and selected temperature-sensitive stock positions.",
+      "projectBrief": "Goods and storage requirements, layout, placement, operating hours and reporting needs.",
+      "evidence": [
+        "hitelecom-datasheet",
+        "fluke-probe"
+      ],
+      "measurement": "Representative storage-zone temperature"
+    },
+    {
+      "id": "motors-bearings",
+      "group": "factory-equipment",
+      "title": "Motors & bearing housings",
+      "measurement": "Housing surface temperature",
+      "description": "Track stationary casing and bearing-housing temperatures on motors, pumps and fans. Compare trends at similar loads and operating conditions to help maintenance teams prioritise equipment inspections.",
+      "monitoringPoint": "Accessible motor casing, stationary bearing housing or pump and fan support housing.",
+      "projectBrief": "Equipment duty, normal surface temperature, contact mounting, vibration, cable protection and inspection thresholds.",
+      "evidence": [
+        "factory-motors"
+      ]
+    },
+    {
+      "id": "gearboxes",
+      "group": "factory-equipment",
+      "title": "Gearboxes & lubrication oil",
+      "measurement": "Housing surface or oil temperature",
+      "description": "Monitor selected gearbox-housing or lubrication-oil temperatures during start-up and normal duty. Give maintenance teams a consistent thermal record to review cooling and lubrication operating conditions.",
+      "monitoringPoint": "Stationary gearbox housing, compatible oil measuring port or selected lubrication supply and return points.",
+      "projectBrief": "Surface or oil measurement, oil type, pressure, sealed connection, working range and operating duty.",
+      "evidence": [
+        "factory-gears"
+      ]
+    },
+    {
+      "id": "hydraulic-power",
+      "group": "factory-equipment",
+      "title": "Hydraulic power units",
+      "measurement": "Hydraulic oil or surface temperature",
+      "description": "Follow oil temperature at the reservoir or a compatible return-line measuring point on presses, machine tools and production equipment. Review warm-up and cycle trends alongside the operation of the oil-cooling circuit.",
+      "monitoringPoint": "Reservoir measuring port, oil return line or cooler inlet and outlet, with separate points where needed.",
+      "projectBrief": "Oil and seal compatibility, pressure, insertion depth or surface contact, machine cycle and reporting needs.",
+      "evidence": [
+        "factory-hydraulics"
+      ]
+    },
+    {
+      "id": "air-compressors",
+      "group": "factory-equipment",
+      "title": "Industrial air compressors",
+      "measurement": "Equipment surface, oil or room-air temperature",
+      "description": "Record selected compressor, cooler or room-air temperatures through the working day. Equipment and ambient readings help the team review ventilation, cooling conditions and changes in operating duty.",
+      "monitoringPoint": "Accessible compressor or cooler surface, compatible lubricant measuring point or representative compressor-room air.",
+      "projectBrief": "Required temperature quantity, equipment load, probe contact or oil connection, ventilation and wireless coverage.",
+      "evidence": [
+        "factory-compressors"
+      ]
+    },
+    {
+      "id": "mould-cooling",
+      "group": "manufacturing",
+      "title": "Injection moulds & cooling circuits",
+      "measurement": "Mould surface or coolant temperature",
+      "description": "Follow temperature at selected mould surfaces or cooling-water supply and return points. Separate readings at both ends allow the team to compare the thermal difference across production runs and review cooling consistency alongside cycle and flow data.",
+      "monitoringPoint": "Accessible mould surface or separately configured cooling-water supply and return points.",
+      "projectBrief": "Number of points, water or glycol, pressure, fittings, response time and production-cycle requirements.",
+      "evidence": [
+        "factory-injection"
+      ]
+    },
+    {
+      "id": "industrial-ovens",
+      "group": "manufacturing",
+      "title": "Industrial ovens, drying & curing",
+      "measurement": "Selected chamber-air or surface temperature",
+      "description": "Observe specified temperatures around drying ovens, coating lines and curing equipment. Compare readings across batches and shifts to review the selected thermal conditions in each production stage.",
+      "monitoringPoint": "Specified oven air zone, accessible equipment surface or a compatible process measuring point.",
+      "projectBrief": "Normal and peak temperature, zone location, probe and cable construction, response time and transmitter position.",
+      "evidence": [
+        "factory-ovens"
+      ]
+    },
+    {
+      "id": "heat-treatment",
+      "group": "manufacturing",
+      "title": "Heat-treatment support systems",
+      "measurement": "Equipment surface or auxiliary-circuit temperature",
+      "description": "Bring selected furnace-exterior and auxiliary cooling temperatures into remote monitoring. A probe matched to the actual point gives the production team a thermal record for reviewing support-system conditions around each operating cycle.",
+      "monitoringPoint": "Accessible furnace exterior, tooling surface or compatible cooling and auxiliary-water measuring point.",
+      "projectBrief": "Actual point and exposure, normal and peak temperature, surface mounting or water connection, cable route and electronics ambient conditions.",
+      "evidence": [
+        "factory-heat-treatment"
+      ]
+    },
+    {
+      "id": "food-processing",
+      "group": "manufacturing",
+      "title": "Food processing",
+      "description": "Monitor selected chilled, heated or process temperature points as part of your food-safety plan. Match the sensing location and probe assembly to the required measurement, cleaning process and records for that operation.",
+      "monitoringPoint": "Chilled storage, specified process medium or agreed food-processing measurement point.",
+      "projectBrief": "Process stage, target temperature, response time, cleaning method and food-contact requirements where applicable.",
+      "evidence": [
+        "fda-food-code",
+        "fluke-probe",
+        "factory-food"
+      ],
+      "measurement": "Selected process-medium, air or surface temperature"
+    },
+    {
+      "id": "process-tanks",
+      "group": "manufacturing",
+      "title": "Process tanks & reactors",
+      "measurement": "Local medium or vessel-surface temperature",
+      "description": "Follow selected temperatures during mixing, heating, cooling and holding stages. Define the local reading the operator needs, then select an immersion point or surface installation to match the vessel and process.",
+      "monitoringPoint": "Compatible existing thermowell, specified immersion depth or accessible vessel surface.",
+      "projectBrief": "Medium, pressure, wetted materials, process connection, required points, working temperature and installation requirements.",
+      "evidence": [
+        "factory-tanks"
+      ]
+    },
+    {
+      "id": "process-pipelines",
+      "group": "plant-utilities",
+      "title": "Process pipelines & heat exchangers",
+      "measurement": "Pipe surface or process-medium temperature",
+      "description": "Monitor specified pipeline and heat-exchanger points during material transfer and heating or cooling. Separate inlet and outlet readings can provide a thermal comparison when the probe arrangement and timing are matched.",
+      "monitoringPoint": "Compatible inlet and outlet temperature ports or consistent pipe-wall contact positions.",
+      "projectBrief": "Surface or medium measurement, insulation, fluid, pressure, connections, number of points and required accuracy.",
+      "evidence": [
+        "factory-pipes"
+      ]
+    },
+    {
+      "id": "chillers",
+      "group": "plant-utilities",
+      "title": "Industrial chillers & cooling water",
+      "measurement": "Cooling-water supply and return temperature",
+      "description": "Follow cooling-water temperatures serving machines, moulds and factory cooling loops. Matched supply and return measurements help the team review how thermal conditions change with production demand.",
+      "monitoringPoint": "Separately configured supply and return points, selected buffer tank or cooling-loop measuring position.",
+      "projectBrief": "Water or glycol, pressure, connections, sensor count, accuracy, sampling alignment and cooling-duty range.",
+      "evidence": [
+        "factory-chillers"
+      ]
+    },
+    {
+      "id": "steam-hot-water",
+      "group": "plant-utilities",
+      "title": "Steam & hot-water utilities",
+      "measurement": "Selected water, condensate or pipe-surface temperature",
+      "description": "Record thermal conditions at selected hot-water loops and steam-system auxiliary points. Supply and return readings help utility teams review changes in production demand and plan follow-up checks.",
+      "monitoringPoint": "Hot-water supply and return, heat-exchanger secondary loop or a compatible condensate and feedwater measuring point.",
+      "projectBrief": "Medium and pressure, rated fittings, peak temperature, probe position, transmitter ambient conditions and reporting requirements.",
+      "evidence": [
+        "factory-steam"
+      ]
+    },
+    {
+      "id": "water-wastewater",
+      "group": "plant-utilities",
+      "title": "Industrial water & wastewater",
+      "measurement": "Selected process-water temperature",
+      "description": "Monitor liquid temperature at defined treatment, holding or circulation stages. For temperature-sensitive biological treatment, local trends help the process team review the selected operating conditions and changes between shifts.",
+      "monitoringPoint": "Compatible process-water tank, treatment-stage measuring port or selected circulation-water position.",
+      "projectBrief": "Treatment stage, liquid composition, wetted materials, fouling and cleaning, immersion depth, access and working range.",
+      "evidence": [
+        "factory-water"
+      ]
+    },
+    {
+      "id": "data-centers",
+      "group": "buildings-heritage",
+      "title": "Data centers & server rooms",
+      "description": "Monitor selected rack air inlets and room zones to review the conditions delivered to IT equipment. Compare positions across the installation and agree the temperature limits with your equipment and facilities requirements.",
+      "monitoringPoint": "Selected rack air inlets, cold-aisle positions and room zones.",
+      "projectBrief": "Rack layout, equipment limits, placement, required reporting and monitoring-platform integration.",
+      "evidence": [
+        "ashrae-inlets"
+      ],
+      "measurement": "Server-rack inlet or room-air temperature"
+    },
+    {
+      "id": "hvac",
+      "group": "buildings-heritage",
+      "title": "Occupied buildings & HVAC",
+      "description": "Measure selected room, supply-air or return-air temperatures to review comfort conditions and heating or cooling operation. Position probes around the measurement objective, avoiding locations dominated by an unrelated local heat source.",
+      "monitoringPoint": "Representative occupied zone, specified air duct or accessible heating/cooling point.",
+      "projectBrief": "Air or surface measurement, room or duct layout, control objective, mounting and platform requirements.",
+      "evidence": [
+        "hitelecom-webpage"
+      ],
+      "measurement": "Occupied-room or specified HVAC temperature"
+    },
+    {
+      "id": "cleanrooms",
+      "group": "buildings-heritage",
+      "title": "Cleanrooms & controlled production",
+      "measurement": "Representative production-room air temperature",
+      "description": "Compare temperature across selected cleanroom and controlled-production zones. Representative readings help teams review conditions around temperature-sensitive materials, equipment and production shifts.",
+      "monitoringPoint": "Agreed room-air locations, specified work zones or equipment surroundings identified in the monitoring plan.",
+      "projectBrief": "Working range and tolerance, placement, cleaning requirements, calibration and records, plus any separate humidity or pressure needs.",
+      "evidence": [
+        "factory-cleanrooms"
+      ]
+    },
+    {
+      "id": "concrete-curing",
+      "title": "Concrete curing & construction",
+      "measurement": "Specified concrete-internal and ambient temperature",
+      "description": "Track temperature at defined concrete and surrounding-air positions during placement and curing. The temperature history gives the engineering team information to review against the project’s curing plan.",
+      "monitoringPoint": "Construction-approved embedded probe positions and separately specified ambient points.",
+      "projectBrief": "Probe and cable suitability, placement depth, point count, installation timing, working range and recording interval.",
+      "evidence": [
+        "outdoor-concrete"
+      ],
+      "group": "buildings-heritage"
+    },
+    {
+      "id": "museums",
+      "group": "buildings-heritage",
+      "title": "Museums, archives & collections",
+      "description": "Review temperature trends in selected storage rooms, galleries or display environments against the needs of the collection. For projects concerned with humidity as well, specify a separate or combined humidity-monitoring configuration.",
+      "monitoringPoint": "Collection-storage zone, display environment or agreed gallery location.",
+      "projectBrief": "Collection requirements, temperature and humidity objectives, placement, operating events and required records.",
+      "evidence": [
+        "cci-environment"
+      ],
+      "measurement": "Collection-space air temperature"
+    },
+    {
+      "id": "heritage-outdoor",
+      "title": "Historic structures & outdoor heritage",
+      "measurement": "Local surrounding-air or specified structural-surface temperature",
+      "description": "Observe temperature around historic structures and selected outdoor collection environments. Relate local trends to exposure and the conservation team’s environmental observation plan.",
+      "monitoringPoint": "Shielded surrounding-air position or a conservation-approved accessible surface location.",
+      "projectBrief": "Conservation-approved reversible mounting, sunlight exposure, site access, monitoring period and any separate humidity requirements.",
+      "evidence": [
+        "outdoor-heritage"
+      ],
+      "group": "buildings-heritage"
+    }
+  ],
+  "series": {
+    "eyebrow": "SERIES & CONFIGURATION",
+    "heading": "One project brief.\nThe appropriate configuration.",
+    "description": "H200, H300 and H500 are the model families listed in the current published datasheet. Select a configuration by the measurement point, probe, required performance, installation and connection rather than by model name alone.",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "model_card_subtitle": "Configuration selected for your project",
+    "steps": [
+      {
+        "title": "Define the temperature",
+        "text": "Air, surface or immersion · Working and peak range · Required accuracy and response"
+      },
+      {
+        "title": "Define the installation",
+        "text": "Probe dimensions · Cable route · Medium and connection · Transmitter position"
+      },
+      {
+        "title": "Define the data path",
+        "text": "4G, NB-IoT or LoRa variant · Sampling and reporting · Platform and alerts"
+      }
+    ]
+  },
+  "specifications": {
+    "eyebrow": "TECHNICAL SPECIFICATIONS",
+    "heading": "Published family specifications.",
+    "description": "Use these published values as a starting point. The supplied probe and transmitter configuration defines the operating range, performance and installation requirements for your project.",
+    "rows": [
+      {
+        "label": "Published models",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "Family measurement range",
+        "value": "−200°C to +800°C, by selected probe and configuration"
+      },
+      {
+        "label": "Published accuracy options",
+        "value": "±0.5°C; ±0.1°C customization available for an agreed working range and configuration"
+      },
+      {
+        "label": "Probe connection",
+        "value": "Three-wire listed in the family datasheet; confirm the supplied probe and input configuration"
+      },
+      {
+        "label": "Wireless variants",
+        "value": "4G / NB-IoT / LoRa, by selected model and regional configuration"
+      },
+      {
+        "label": "Data protocol",
+        "value": "MQTT listed; confirm the integration path for the selected variant"
+      },
+      {
+        "label": "Transmitter enclosure",
+        "value": "IP68 rated"
+      },
+      {
+        "label": "Local configuration",
+        "value": "NFC activation and local setup, by supplied configuration"
+      },
+      {
+        "label": "Battery-life design",
+        "value": "Over 10 years at one-hour reporting under specified test conditions; varies with supplied configuration and operating profile"
+      },
+      {
+        "label": "Mounting options",
+        "value": "Mounting lugs / pole clamp / slotted mount, by configuration"
+      },
+      {
+        "label": "Published LTE bands",
+        "value": "LTE-TDD B34/B38/B39/B40/B41; LTE-FDD B1/B3/B5/B8. Confirm supported bands for the deployment country and selected modem."
+      }
+    ],
+    "datasheet_label": "Download temperature sensor datasheet",
+    "datasheet_url": "/downloads/temperature-sensor-datasheet.pdf"
+  },
+  "faqHeading": {
+    "kicker": "ANSWERS FOR YOUR PROJECT",
+    "title": "Frequently asked questions.",
+    "intro": "Practical answers for choosing the probe, planning the installation and connecting your temperature data."
+  },
+  "faqs": [
+    {
+      "id": "faq-wireless-probe",
+      "question": "How does a wireless temperature sensor work with an external probe?",
+      "paragraphs": [
+        "The probe measures temperature at its sensing point and connects to the transmitter by a probe cable. The transmitter sends readings through the selected wireless connection to the monitoring platform. This arrangement lets you position the probe where temperature matters and mount the transmitter where its operating conditions and wireless coverage are suitable."
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "hitelecom-datasheet",
+        "fluke-probe"
+      ]
+    },
+    {
+      "id": "faq-probe-selection",
+      "question": "How do I choose a probe for air, surface or liquid temperature?",
+      "paragraphs": [
+        "Start with what you need to measure. Air monitoring needs representative placement and exposure; surface monitoring needs reliable thermal contact; immersion monitoring needs suitable insertion depth, materials and a process connection. Share the normal and peak temperatures, required response time and installation conditions so the probe and cable assembly can be selected for the task."
+      ],
+      "evidence": [
+        "fluke-probe",
+        "hitelecom-webpage"
+      ]
+    },
+    {
+      "id": "faq-range",
+      "question": "What temperature range can the H Series monitor?",
+      "paragraphs": [
+        "The published H Series family range is −200°C to +800°C. The supplied probe, cable and input configuration determine the range for a particular installation. The probe's measured temperature and the transmitter's surrounding temperature are separate requirements, so choose both around the working conditions of your project."
+      ],
+      "evidence": [
+        "hitelecom-datasheet",
+        "fluke-probe"
+      ]
+    },
+    {
+      "id": "faq-accuracy",
+      "question": "How should I specify accuracy and calibration for my project?",
+      "paragraphs": [
+        "The published accuracy is ±0.5°C, with ±0.1°C customization available. Specify the accuracy you need over your actual working range, together with the complete probe and transmitter arrangement. If your procedure requires calibration, include the test temperatures, allowable tolerance, certificate and measurement-uncertainty requirements in the quotation brief."
+      ],
+      "evidence": [
+        "hitelecom-datasheet",
+        "nist-traceability"
+      ]
+    },
+    {
+      "id": "faq-cold-storage",
+      "question": "How should I configure monitoring for cold rooms, refrigerators or laboratories?",
+      "paragraphs": [
+        "Choose monitoring points that represent the stored material and operating conditions, using temperature mapping where appropriate. For vaccine-storage projects, assess buffered-probe, recording, alarm and calibration requirements against your storage procedure and current guidance. Share the material's storage instructions and required records so the complete monitoring configuration can be reviewed."
+      ],
+      "evidence": [
+        "who-mapping",
+        "cdc-storage"
+      ]
+    },
+    {
+      "id": "faq-battery-profile",
+      "question": "How do sampling and reporting intervals affect battery life?",
+      "paragraphs": [
+        "Sampling determines when temperature is measured; reporting determines when readings are transmitted. Select both around the speed of temperature change and the response you need. The published battery-life design exceeds 10 years at one-hour reporting under specified test conditions. Service life also depends on the selected configuration, temperature, network coverage and retransmissions."
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "hitelecom-datasheet",
+        "gsma-energy"
+      ]
+    },
+    {
+      "id": "faq-platform",
+      "question": "Can temperature readings connect to our own platform?",
+      "paragraphs": [
+        "The published H Series supports Hitelecom Cloud and compatible customer platforms, with MQTT listed for data integration. Specify the wireless variant, regional network and platform requirements. For a LoRa installation, confirm the radio protocol and gateway or server path for the supplied model; the device and backend integration need to be matched as one system."
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "hitelecom-datasheet",
+        "mqtt-standard",
+        "lorawan-architecture"
+      ]
+    },
+    {
+      "id": "faq-quotation",
+      "question": "What should I send for a configuration proposal and quotation?",
+      "paragraphs": [
+        "Send the application, country, quantity, measurement point, normal and peak temperatures, required accuracy and response. Add probe dimensions, cable length, mounting details and any medium, pressure or cleaning requirements. Include the preferred wireless connection, sampling and reporting needs, platform requirements and calibration documents so Hitelecom can review a suitable configuration and quotation."
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "fluke-probe",
+        "nist-traceability"
+      ]
+    }
+  ],
+  "inquiry": {
+    "eyebrow": "LET'S TALK ABOUT YOUR PROJECT",
+    "heading": "Specify the point.\nBuild the monitoring plan.",
+    "description": "Tell us what you need to measure, where the probe will go and how your team uses the data. We will help review the appropriate H Series configuration and quotation.",
+    "email": "sales@hitelecom.cn",
+    "supporting_text": "A site photo, drawing or storage procedure helps us understand the measurement point.",
+    "fields": [
+      "Application",
+      "Country / region",
+      "Approximate quantity",
+      "Normal and peak temperature",
+      "What would you like to monitor?",
+      "Name",
+      "Work email"
+    ],
+    "message_placeholder": "Describe the measurement point, required accuracy, probe and cable arrangement, wireless connection and platform needs.",
+    "submit_label": "Prepare project enquiry",
+    "mailto_note": "If the preview uses mailto, say explicitly that the button opens an email draft; do not display a sent-success message without a backend."
+  },
+  "applicationSection": {
+    "title": "Temperature monitoring.",
+    "valueHeading": "Across your operation.",
+    "description": "For distributed outdoor sites, factory equipment and temperature-sensitive operations. Choose your industry, then explore the measurement point, probe arrangement and reporting requirements for your project.",
+    "note": "Category photographs illustrate representative environments; they are not customer installation records."
+  }
+}

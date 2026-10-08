@@ -1,0 +1,29 @@
+---
+/**
+ * 温度传感器页 V2 · 布局包装（GPT6 页面包，Kimi 审核集成 2026-10-08）
+ * 同 URL 上线：/product/temperature-sensor（slug 不变，hreflang 闭环 /
+ * sitemap / 内链均由路由层原有逻辑覆盖）。本轮仅 EN；其余语言入口保留
+ * 现有经典模板真实 URL，后续按核准英文稿逐一翻译（README-KIMI 第 10 条）。
+ * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
+ * Schema（includeOrganization={false}，统一引用 /#organization）。
+ * Hero 响应式 preload（imagesrcset/imagesizes 与 img 一致）经 head 槽输出，
+ * 故不再使用 BaseLayout 的 preloadImage（避免重复 preload）。
+ * 样式：temperature.css（.ht-temperature 作用域，独立路由隔离打包）。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TemperaturePage from './TemperaturePage.astro';
+import StructuredData from './StructuredData.astro';
+import { temperatureImage } from './images.mjs';
+import content from '../../data/temperature-content.json';
+import '../../styles/temperature.css';
+
+const hero = await temperatureImage('product-hero.png', true);
+const ogImage = new URL(hero.src, Astro.site).href;
+const heroSizes = '(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px';
+---
+
+<BaseLayout locale="en" title={content.seo.title} description={content.seo.description}>
+  <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
+  <StructuredData slot="head" content={content} imageUrl={ogImage} includeOrganization={false} />
+  <TemperaturePage />
+</BaseLayout>

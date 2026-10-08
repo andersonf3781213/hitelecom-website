@@ -1,0 +1,14 @@
+---
+const {content,imageUrl,includeOrganization=true} = Astro.props;
+const url='https://www.hitelecom.com/product/temperature-sensor';
+const orgId='https://www.hitelecom.com/#organization';
+const graph=[
+ ...(includeOrganization?[{'@type':'Organization','@id':orgId,name:'Hitelecom',legalName:'Shanghai Hitelecom Communication Technology Co., Ltd.',url:'https://www.hitelecom.com',email:'sales@hitelecom.cn'}]:[]),
+ {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:'en',dateModified:'2026-10-08',publisher:{'@id':orgId},mainEntity:{'@id':url+'#series'}},
+ {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://www.hitelecom.com'},{'@type':'ListItem',position:2,name:'IoT Sensors',item:'https://www.hitelecom.com/product'},{'@type':'ListItem',position:3,name:'Wireless Temperature Sensor',item:url}]},
+ {'@type':'ProductGroup','@id':url+'#series',name:'Hitelecom H Series wireless temperature sensors',description:content.hero.description,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},url,image:imageUrl,hasVariant:content.series.models.map(m=>({'@id':url+'#model-'+m.toLowerCase()})),additionalProperty:content.specifications.rows.map(row=>({'@type':'PropertyValue',name:row.label,value:row.value}))},
+ ...content.series.models.map(m=>({'@type':'Product','@id':url+'#model-'+m.toLowerCase(),name:'Hitelecom '+m+' Temperature Sensor',model:m,description:'Published H Series model family. Probe, connection and operating profile selected for the project.',brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},isVariantOf:{'@id':url+'#series'},url:url+'#model-'+m.toLowerCase(),image:imageUrl})),
+ {'@type':'FAQPage','@id':url+'#faq',inLanguage:'en',mainEntity:content.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
+];
+---
+<script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/</g,'\\u003c')}/>
