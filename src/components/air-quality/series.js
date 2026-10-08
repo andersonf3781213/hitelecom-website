@@ -33,3 +33,73 @@ function init(){
  }
 }
 init();document.addEventListener('astro:page-load',init);
+
+/* ===== V44 栏目导航滚动跟随（GPT6 修复包 2026-10-08，Kimi 审核集成）=====
+   不新增 scroll 监听：仅跟随官网主导航的 class/transform/padding 变化与尺寸变化，
+   动画期间逐帧同步其实际可见下沿；astro:before-swap 时清理观察器与 html 类。 */
+function initAirQualityStickyNav(){
+ const page=document.getElementById('aq-content');
+ const header=document.getElementById('site-header');
+ const nav=page?.querySelector('.aq-subnav');
+ if(!page||!header||!nav||page.dataset.aqStickyReady)return;
+ page.dataset.aqStickyReady='1';
+ const html=document.documentElement;
+ const running=new Set();
+ const last=new Map();
+ let frame=0;
+ function write(name,pixels){
+  const value=`${Math.max(0,pixels).toFixed(3)}px`;
+  if(last.get(name)===value)return;
+  last.set(name,value);
+  html.style.setProperty(name,value);
+ }
+ function schedule(){ if(!frame)frame=requestAnimationFrame(sync); }
+ function sync(){
+  frame=0;
+  const rect=header.getBoundingClientRect();
+  const position=getComputedStyle(header).position;
+  const overlaysPage=position==='fixed'||position==='sticky';
+  // 使用实际下沿：隐藏时为 0；显示/动画/手机菜单打开时按实测跟随。
+  const visible=overlaysPage?Math.min(rect.height,Math.max(0,rect.bottom)):0;
+  write('--aq-header-visible',visible);
+  write('--aq-header-height',overlaysPage?rect.height:0);
+  write('--aq-subnav-height',nav.getBoundingClientRect().height);
+  html.classList.add('aq-sticky-sync');
+  // 仅在主导航的 transform / padding 动画期间逐帧同步。
+  if(running.size)schedule();
+ }
+ const classObserver=new MutationObserver(schedule);
+ classObserver.observe(header,{attributes:true,attributeFilter:['class']});
+ // 官网手机菜单会通过 body.menu-active 覆盖 header 的隐藏变换。
+ classObserver.observe(document.body,{attributes:true,attributeFilter:['class']});
+ let sizeObserver=null;
+ if('ResizeObserver' in window){
+  sizeObserver=new ResizeObserver(schedule);
+  sizeObserver.observe(header);
+  sizeObserver.observe(nav);
+ }
+ window.addEventListener('resize',schedule,{passive:true});
+ function relevant(event){
+  return event.target===header&&(event.propertyName==='transform'||event.propertyName.startsWith('padding'));
+ }
+ header.addEventListener('transitionrun',event=>{
+  if(!relevant(event))return;
+  running.add(event.propertyName);
+  schedule();
+ });
+ function finish(event){
+  if(!relevant(event))return;
+  running.delete(event.propertyName);
+  schedule();
+ }
+ header.addEventListener('transitionend',finish);
+ header.addEventListener('transitioncancel',finish);
+ sync();
+ document.addEventListener('astro:before-swap',()=>{
+  classObserver.disconnect();
+  sizeObserver?.disconnect();
+  html.classList.remove('aq-sticky-sync');
+ },{once:true});
+}
+initAirQualityStickyNav();
+document.addEventListener('astro:page-load',initAirQualityStickyNav);
