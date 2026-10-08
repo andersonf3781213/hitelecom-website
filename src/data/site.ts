@@ -14,8 +14,8 @@ export const site = {
   whatsapp: 'https://wa.me/8618616602589',
   wechatId: '18616602589',
   email: 'sales@hitelecom.cn',
-  // 结构化数据专用邮箱：与 SEO/GEO 关键词文档的 Organization JSON-LD 逐字一致
-  emailLd: 'sales@hitelecom.com',
+  // 结构化数据邮箱：2026-10-08 起全站统一 .cn（原"可见 .cn / JSON-LD .com"双轨并轨，用户指令）
+  emailLd: 'sales@hitelecom.cn',
 
   // 云平台演示地址（导航栏 Show Online / CTA 免费试用）
   cloudUrl: 'http://cloud.hitelecom.com',
