@@ -1,14 +1,21 @@
 ---
-const {content,imageUrl,includeOrganization=true} = Astro.props;
-const url='https://www.hitelecom.com/product/temperature-sensor';
-const orgId='https://www.hitelecom.com/#organization';
-const graph=[
- ...(includeOrganization?[{'@type':'Organization','@id':orgId,name:'Hitelecom',legalName:'Shanghai Hitelecom Communication Technology Co., Ltd.',url:'https://www.hitelecom.com',email:'sales@hitelecom.cn'}]:[]),
- {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:'en',dateModified:'2026-10-08',publisher:{'@id':orgId},mainEntity:{'@id':url+'#series'}},
- {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://www.hitelecom.com'},{'@type':'ListItem',position:2,name:'IoT Sensors',item:'https://www.hitelecom.com/product'},{'@type':'ListItem',position:3,name:'Wireless Temperature Sensor',item:url}]},
- {'@type':'ProductGroup','@id':url+'#series',name:'Hitelecom H Series wireless temperature sensors',description:content.hero.description,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},url,image:imageUrl,hasVariant:content.series.models.map(m=>({'@id':url+'#model-'+m.toLowerCase()})),additionalProperty:content.specifications.rows.map(row=>({'@type':'PropertyValue',name:row.label,value:row.value}))},
- ...content.series.models.map(m=>({'@type':'Product','@id':url+'#model-'+m.toLowerCase(),name:'Hitelecom '+m+' Temperature Sensor',model:m,description:'Published H Series model family. Product form, sensing arrangement and operating profile selected for the project.',brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},isVariantOf:{'@id':url+'#series'},url:url+'#model-'+m.toLowerCase(),image:imageUrl})),
- {'@type':'FAQPage','@id':url+'#faq',inLanguage:'en',mainEntity:content.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
+/**
+ * 温度传感器页 · 页面级 JSON-LD（V43 多语化：url / inLanguage / 面包屑与
+ * ProductGroup·Product 名称描述随 locale，来自 dicts.mjs schema.*；型号、品牌、
+ * Organization 主身份与 dateModified 2026-10-08 不变；EN 输出与改造前一致）。
+ * Organization/WebSite 实体图仍仅由 BaseLayout 全局输出（includeOrganization=false）。
+ */
+const { content, imageUrl, t, locale = 'en', prefix = '', includeOrganization = true } = Astro.props;
+const url = `https://www.hitelecom.com${prefix}/product/temperature-sensor`;
+const orgId = 'https://www.hitelecom.com/#organization';
+const s = t.schema;
+const graph = [
+ ...(includeOrganization ? [{ '@type': 'Organization', '@id': orgId, name: 'Hitelecom', legalName: 'Shanghai Hitelecom Communication Technology Co., Ltd.', url: 'https://www.hitelecom.com', email: 'sales@hitelecom.cn' }] : []),
+ { '@type': 'WebPage', '@id': url + '#webpage', url, name: content.seo.title, description: content.seo.description, inLanguage: locale, dateModified: '2026-10-08', publisher: { '@id': orgId }, mainEntity: { '@id': url + '#series' } },
+ { '@type': 'BreadcrumbList', '@id': url + '#breadcrumb', itemListElement: [{ '@type': 'ListItem', position: 1, name: s.home, item: `https://www.hitelecom.com${prefix}` }, { '@type': 'ListItem', position: 2, name: s.sensors, item: `https://www.hitelecom.com${prefix}/product` }, { '@type': 'ListItem', position: 3, name: s.temperature, item: url }] },
+ { '@type': 'ProductGroup', '@id': url + '#series', name: s.productGroup, description: content.hero.description, brand: { '@type': 'Brand', name: 'Hitelecom' }, manufacturer: { '@id': orgId }, url, image: imageUrl, hasVariant: content.series.models.map(m => ({ '@id': url + '#model-' + m.toLowerCase() })), additionalProperty: content.specifications.rows.map(row => ({ '@type': 'PropertyValue', name: row.label, value: row.value })) },
+ ...content.series.models.map(m => ({ '@type': 'Product', '@id': url + '#model-' + m.toLowerCase(), name: s.productVariant.replace('{model}', m), model: m, description: s.variantDescription, brand: { '@type': 'Brand', name: 'Hitelecom' }, manufacturer: { '@id': orgId }, isVariantOf: { '@id': url + '#series' }, url: url + '#model-' + m.toLowerCase(), image: imageUrl })),
+ { '@type': 'FAQPage', '@id': url + '#faq', inLanguage: locale, mainEntity: content.faqs.map(f => ({ '@type': 'Question', name: f.question, acceptedAnswer: { '@type': 'Answer', text: f.paragraphs.join('\n\n') } })) }
 ];
 ---
 <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/</g,'\\u003c')}/>

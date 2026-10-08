@@ -1,11 +1,16 @@
 ---
-const {image} = Astro.props;
+/**
+ * 图片图注 + 许可署名（V43 多语化：Photo: 标签取 t.image.creditLabel；
+ * 作者 / sourceURL / license / licenseURL 逐字保留不翻译，changes 来自图片数据，
+ * 各语译文见 temperature-content-{lang}.json 的 image.credit.changes）。
+ */
+const { image, t } = Astro.props;
 const credit = image.credit;
 ---
 <figcaption>
   <span class="application-photo-caption">{image.caption}</span>
   {credit && <small class="application-photo-credit">
-    Photo: <a href={credit.sourceURL} target="_blank" rel="noopener">{credit.author}</a>
+    {t.image.creditLabel} <a href={credit.sourceURL} target="_blank" rel="noopener">{credit.author}</a>
     {' · '}<a href={credit.licenseURL} target="_blank" rel="noopener">{credit.license}</a>
     {credit.changes && <span>{' · '}{credit.changes}</span>}
   </small>}

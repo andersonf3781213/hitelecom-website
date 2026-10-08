@@ -1,29 +1,49 @@
 ---
 /**
- * 温度传感器页 V2 · 布局包装（GPT6 页面包，Kimi 审核集成 2026-10-08）
- * 同 URL 上线：/product/temperature-sensor（slug 不变，hreflang 闭环 /
- * sitemap / 内链均由路由层原有逻辑覆盖）。本轮仅 EN；其余语言入口保留
- * 现有经典模板真实 URL，后续按核准英文稿逐一翻译（README-KIMI 第 10 条）。
+ * 温度传感器页 V2 · 多语言注册表（GPT6 页面包 + 五语翻译包，Kimi 审核集成 2026-10-08）
+ * 同 URL 上线：/{lang}/product/temperature-sensor（slug 不变，hreflang 闭环 /
+ * sitemap / 内链均由路由层原有逻辑覆盖）。zh 不在本轮范围（保持经典模板）。
+ * 用法：EN 路由省略 locale（默认 en）；其余语言 locale="es|de|ja|fr|ru"。
+ * 数据：src/data/temperature-content(-{lang}).json；词典：dicts.mjs；
+ * 样式：temperature.css（.ht-temperature 作用域，独立路由隔离打包）。
  * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
  * Schema（includeOrganization={false}，统一引用 /#organization）。
  * Hero 响应式 preload（imagesrcset/imagesizes 与 img 一致）经 head 槽输出，
  * 故不再使用 BaseLayout 的 preloadImage（避免重复 preload）。
- * 样式：temperature.css（.ht-temperature 作用域，独立路由隔离打包）。
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TemperaturePage from './TemperaturePage.astro';
 import StructuredData from './StructuredData.astro';
 import { temperatureImage } from './images.mjs';
-import content from '../../data/temperature-content.json';
+import TEMPERATURE_DICTS from './dicts.mjs';
+import contentEn from '../../data/temperature-content.json';
+import contentEs from '../../data/temperature-content-es.json';
+import contentDe from '../../data/temperature-content-de.json';
+import contentJa from '../../data/temperature-content-ja.json';
+import contentFr from '../../data/temperature-content-fr.json';
+import contentRu from '../../data/temperature-content-ru.json';
 import '../../styles/temperature.css';
+
+const REGISTRY = {
+  en: { content: contentEn, prefix: '' },
+  es: { content: contentEs, prefix: '/es' },
+  de: { content: contentDe, prefix: '/de' },
+  ja: { content: contentJa, prefix: '/ja' },
+  fr: { content: contentFr, prefix: '/fr' },
+  ru: { content: contentRu, prefix: '/ru' },
+};
+
+const { locale = 'en' } = Astro.props;
+const { content, prefix } = REGISTRY[locale] ?? REGISTRY.en;
+const t = TEMPERATURE_DICTS[locale] ?? TEMPERATURE_DICTS.en;
 
 const hero = await temperatureImage('product-hero.png', true);
 const ogImage = new URL(hero.src, Astro.site).href;
 const heroSizes = '(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px';
 ---
 
-<BaseLayout locale="en" title={content.seo.title} description={content.seo.description}>
+<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description}>
   <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
-  <StructuredData slot="head" content={content} imageUrl={ogImage} includeOrganization={false} />
-  <TemperaturePage />
+  <StructuredData slot="head" content={content} imageUrl={ogImage} t={t} locale={locale} prefix={prefix} includeOrganization={false} />
+  <TemperaturePage content={content} t={t} locale={locale} prefix={prefix} />
 </BaseLayout>

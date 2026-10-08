@@ -1,98 +1,116 @@
 ---
 /**
- * 温度传感器页 · EN（GPT6 页面包第二轮，Kimi 审核集成 2026-10-08）
- * 本轮变化：可定制产品形态定位（Hero 图注 Example configuration · External probe）、
- * 第四类改 Pharma, laboratories & cold chain、40 任务各自独立场景图 + 桌面/移动切图交互、
- * ImageCaption 许可署名（CC BY/CC0，许可要求必须保留）。
- * 接入修正（同 V41 口径，README-KIMI 第 3/4/8 条）：
- * ① 移除独立预览专用 QuickContact——官网 BaseLayout 的 Sidebar 已含四入口；
- * ② 移除自带 <main id="main">——BaseLayout 已提供唯一 main#main；
- * ③ 资料按钮与面包屑/相关推荐改相对地址（PDF 线上 200 已核实）。
+ * 温度传感器页 · 多语言页体（GPT6 页面包 + 五语翻译包，Kimi 审核集成 2026-10-08）
+ * 数据驱动化（V43，同倾斜页 TiltPage 模式）：props { content, t, locale, prefix }；
+ * EN 输出与改造前逐字节一致（leadRest 前置空格、箭头/间距原样保留为模板字面量）。
+ * 文案来源：t = dicts.mjs（附录 A 精确替换表）；content = temperature-content(-{lang}).json。
+ * 数量文案：applications.monitoringTasks ru 按 Intl.PluralRules 构建端选形；
+ * ja 数字与标签间无空格（numSep=''）。无脚本邮件句末标点 form.directAfter。
+ * 接入修正（V41 口径保持）：无独立 QuickContact（Sidebar 四入口）、无自带 main#main、
+ * 资料按钮相对地址；图片署名 ImageCaption（CC BY/CC0，许可要求必须保留）。
  */
-import content from '../../data/temperature-content.json';
 import FeatureIcon from './FeatureIcon.astro';
 import ImageCaption from './ImageCaption.astro';
 import { getImage } from 'astro:assets';
 import heroBackground from '../../assets/brand/sensor-hero-background.jpg';
 import { temperatureImage } from './images.mjs';
+const { content, t, locale, prefix } = Astro.props;
 const hero = await temperatureImage('product-hero.png', true);
 const widths = [640,1280,1920];
 const backgrounds = await Promise.all(widths.map(width=>getImage({src:heroBackground,width,format:'webp',quality:78})));
 const groups = await Promise.all(content.groups.map(async group=>({...group,asset:await temperatureImage(group.image.name),tasks:await Promise.all(content.applications.filter(scene=>scene.group===group.id).map(async scene=>({...scene,image:scene.image||group.image,asset:await temperatureImage((scene.image||group.image).name)})))})));
 const datasheet = content.hero.datasheet_url;
+const h1 = t.page.heroH1;
+const br2 = (s) => s.split('\n');
+const [featA, featB] = br2(t.features.heading);
+const [measA, measB] = br2(t.measurement.heading);
+const [instA, instB] = br2(t.measurement.installationHeading);
+const [wfA, wfB] = br2(t.workflow.heading);
+const [batA, batB] = br2(t.workflow.batteryHeading);
+const [serA, serB] = br2(t.series.heading);
+const [specA, specB] = br2(t.spec.heading);
+const [intA, intB] = br2(t.integration.heading);
+const [faqA, faqB] = br2(t.faq.heading);
+const [enqA, enqB] = br2(t.enquiry.heading);
+const pluralRules = new Intl.PluralRules(locale);
+const taskWord = t.applications.monitoringTasks;
+const tasksLabel = (n) => (typeof taskWord === 'string' ? taskWord : taskWord[pluralRules.select(n)]);
+const numSep = locale === 'ja' ? '' : ' ';
+const directSep = locale === 'ja' ? '' : ' ';
+const directMailto = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent(t.js.directSubject)}`;
 ---
-<div class="ht-temperature">
+<div class="ht-temperature" data-i18n={JSON.stringify(t.js)}>
   <div class="hero-band">
     <img class="hero-background" src={backgrounds[2].src} srcset={backgrounds.map((x,i)=>`${x.src} ${widths[i]}w`).join(', ')} sizes="100vw" width={heroBackground.width} height={heroBackground.height} alt="" aria-hidden="true" loading="eager" decoding="async" />
-    <div class="wrap breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/product">IoT sensors</a><span aria-hidden="true">/</span><span>Temperature sensor</span></div>
+    <div class="wrap breadcrumb" aria-label={t.page.breadcrumbAria}><a href={prefix+'/'}>{t.page.home}</a><span aria-hidden="true">/</span><a href={prefix+'/product'}>{t.page.iotSensors}</a><span aria-hidden="true">/</span><span>{t.page.temperatureSensor}</span></div>
     <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-heading"><h1 id="hero-title">Wireless<br class="temperature-title-break"/> temperature sensor.<br/><span>The right reading.<br/>From the right point.</span></h1></div>
+      <div class="hero-heading"><h1 id="hero-title">{h1.lead}{h1.leadRest && <br class="temperature-title-break"/>}{h1.leadRest}<br/><span>{h1.spanA}<br/>{h1.spanB}</span></h1></div>
       <figure class="hero-visual temperature-product">
-        <img src={hero.src} srcset={hero.srcset} sizes="(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px" width={hero.width} height={hero.height} alt="Hitelecom H Series temperature transmitter with red probe cable and metal probe, official product image" loading="eager" fetchpriority="high" decoding="async" />
-        <figcaption><span class="live-dot" aria-hidden="true"></span>Example configuration · External probe</figcaption>
+        <img src={hero.src} srcset={hero.srcset} sizes="(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px" width={hero.width} height={hero.height} alt={t.page.heroProductAlt} loading="eager" fetchpriority="high" decoding="async" />
+        <figcaption><span class="live-dot" aria-hidden="true"></span>{t.page.heroCaption}</figcaption>
       </figure>
       <p class="hero-description">{content.hero.description}</p>
-      <div class="hero-actions"><a href="#enquiry" class="button button-primary">Discuss your project <span aria-hidden="true">↗</span></a><a href={datasheet} target="_blank" rel="noopener" class="text-link">Download datasheet <span aria-hidden="true">↗</span></a></div>
-      <div class="hero-proof"><div><strong>Custom design</strong><span>Form and sensing arrangement</span><small>Matched to your installation</small></div><div><strong>IP68 option</strong><span>Enclosure protection</span><small>Selected with the final configuration</small></div><div><strong>Your platform</strong><span>Remote temperature data</span><small>Hitelecom Cloud or compatible integration</small></div></div>
+      <div class="hero-actions"><a href="#enquiry" class="button button-primary">{t.page.discussProject} <span aria-hidden="true">↗</span></a><a href={datasheet} target="_blank" rel="noopener" class="text-link">{t.page.downloadDatasheet} <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-proof">{t.proof.map(p=><div><strong>{p.strong}</strong><span>{p.span}</span><small>{p.small}</small></div>)}</div>
     </section>
   </div>
-  <nav class="section-nav" aria-label="On this page"><div class="wrap"><a href="#measurement">Measurement</a><a href="#applications">Applications</a><a href="#specifications">Specifications</a><a href="#integration">Integration</a><a href="#faq">FAQ</a><a class="nav-quote" href="#enquiry">Request a quote ↗</a></div></nav>
+  <nav class="section-nav" aria-label={t.nav.aria}><div class="wrap"><a href="#measurement">{t.nav.measurement}</a><a href="#applications">{t.nav.applications}</a><a href="#specifications">{t.nav.specifications}</a><a href="#integration">{t.nav.integration}</a><a href="#faq">{t.nav.faq}</a><a class="nav-quote" href="#enquiry">{t.nav.quote} ↗</a></div></nav>
 
   <section class="section features-section" id="features" aria-labelledby="features-title"><div class="wrap">
-    <div class="section-heading compact-heading"><div><p class="eyebrow">KEY FEATURES</p><h2 id="features-title">Temperature data.<br/><span>Ready for your operation.</span></h2></div><p>Match the product design, sensing point and data connection to the way your team works.</p></div>
+    <div class="section-heading compact-heading"><div><p class="eyebrow">{t.features.kicker}</p><h2 id="features-title">{featA}<br/><span>{featB}</span></h2></div><p>{t.features.intro}</p></div>
     <div class="feature-grid">{content.features.map((feature,index)=><article><span class="feature-mark" aria-hidden="true"><FeatureIcon index={index}/></span><h3>{feature.title}</h3><p>{feature.text}</p></article>)}</div>
   </div></section>
 
   <section class="section measurement-section" id="measurement" aria-labelledby="measurement-title"><div class="wrap">
-    <div class="section-heading"><div><p class="eyebrow">MEASURE THE RIGHT TEMPERATURE</p><h2 id="measurement-title">Start with<br/><span>the measurement point.</span></h2></div><p>{content.measurement.description}</p></div>
-    <div class="measurement-grid">{content.measurement.cards.map((item,index)=><article class="measurement-card"><div class="measurement-heading"><span class="measurement-number">0{index+1}</span><span class="measurement-symbol" aria-hidden="true">{index===0?'↗':index===1?'↔':'↓'}</span></div><h3>{item.title}</h3><p>{item.text}</p><dl><dt>Define your measurement</dt><dd>{item.project_brief}</dd></dl><a href="#enquiry" class="text-link" data-measurement={item.title}>Discuss this measurement ↗</a></article>)}</div>
-    <div class="installation-note"><span class="small-label">SENSING & INSTALLATION</span><h3>Plan the sensing point.<br/>Match the device to the site.</h3><p>{content.measurement.installation_text}</p></div>
+    <div class="section-heading"><div><p class="eyebrow">{t.measurement.kicker}</p><h2 id="measurement-title">{measA}<br/><span>{measB}</span></h2></div><p>{content.measurement.description}</p></div>
+    <div class="measurement-grid">{content.measurement.cards.map((item,index)=><article class="measurement-card"><div class="measurement-heading"><span class="measurement-number">0{index+1}</span><span class="measurement-symbol" aria-hidden="true">{index===0?'↗':index===1?'↔':'↓'}</span></div><h3>{item.title}</h3><p>{item.text}</p><dl><dt>{t.measurement.define}</dt><dd>{item.project_brief}</dd></dl><a href="#enquiry" class="text-link" data-measurement={item.title}>{t.measurement.discuss} ↗</a></article>)}</div>
+    <div class="installation-note"><span class="small-label">{t.measurement.probeTransmitter}</span><h3>{instA}<br/>{instB}</h3><p>{content.measurement.installation_text}</p></div>
   </div></section>
 
   <section class="section profile-section" id="operating-profile" aria-labelledby="profile-title"><div class="wrap">
-    <div class="section-heading"><div><p class="eyebrow">FROM READING TO RESPONSE</p><h2 id="profile-title">Know the temperature.<br/>Give your team a clear next step.</h2></div><p>{content.workflow.profile_text}</p></div>
+    <div class="section-heading"><div><p class="eyebrow">{t.workflow.kicker}</p><h2 id="profile-title">{wfA}<br/>{wfB}</h2></div><p>{content.workflow.profile_text}</p></div>
     <div class="temperature-workflow">{content.workflow.steps.map(step=><article><span class="step-number">{step.number}</span><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
-    <div class="profile-note"><div><span class="small-label">PUBLISHED BATTERY-LIFE DESIGN</span><strong>Over 10 years.<br/>At one-hour reporting.</strong></div><p>{content.workflow.battery_text}</p></div>
+    <div class="profile-note"><div><span class="small-label">{t.workflow.batteryKicker}</span><strong>{batA}<br/>{batB}</strong></div><p>{content.workflow.battery_text}</p></div>
   </div></section>
 
   <section class="section application-section" id="applications" aria-labelledby="applications-title"><div class="wrap">
-    <div class="section-heading"><div><p class="eyebrow">APPLICATIONS</p><h2 id="applications-title">{content.applicationSection.title}<br/><span>{content.applicationSection.valueHeading}</span></h2></div><p>{content.applicationSection.description}</p></div>
-    <div class="application-overview"><p><strong>{content.groups.length}</strong> industry categories <span aria-hidden="true">/</span> <strong>{content.applications.length}</strong> monitoring tasks</p><p class="image-note">{content.applicationSection.note}</p></div>
-    <nav class="application-jump-nav" aria-label="Browse temperature applications">{content.groups.map(group=><a href={'#group-'+group.id}>{group.jumpLabel}<span>{group.scenes.length}</span></a>)}</nav>
+    <div class="section-heading"><div><p class="eyebrow">{t.applications.kicker}</p><h2 id="applications-title">{content.applicationSection.title}<br/><span>{content.applicationSection.valueHeading}</span></h2></div><p>{content.applicationSection.description}</p></div>
+    <div class="application-overview"><p><strong>{content.groups.length}</strong>{numSep}{t.applications.industryCategories} <span aria-hidden="true">/</span> <strong>{content.applications.length}</strong>{numSep}{tasksLabel(content.applications.length)}</p><p class="image-note">{content.applicationSection.note}</p></div>
+    <nav class="application-jump-nav" aria-label={t.applications.aria}>{content.groups.map(group=><a href={'#group-'+group.id}>{group.jumpLabel}<span>{group.scenes.length}</span></a>)}</nav>
     <div class="application-groups">{groups.map((group,index)=><details class="application-group" id={'group-'+group.id} open={index===0}>
-      <summary><span><small>0{index+1}</small>{group.title}</span><span class="group-count">{group.scenes.length} monitoring tasks <b aria-hidden="true">+</b></span></summary>
+      <summary><span><small>0{index+1}</small>{group.title}</span><span class="group-count">{group.scenes.length}{numSep}{tasksLabel(group.scenes.length)} <b aria-hidden="true">+</b></span></summary>
       <div class="application-category-body">
-        <div class="application-visual"><div class="application-media-slot"><figure class="application-category-photo"><img class="application-category-image" src={group.asset.src} srcset={group.asset.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={group.asset.width} height={group.asset.height} loading="lazy" decoding="async" alt={group.image.alt} style={'object-position:'+group.image.focalPoint}/><ImageCaption image={group.image}/></figure></div><p>{group.intro}</p></div>
+        <div class="application-visual"><div class="application-media-slot"><figure class="application-category-photo"><img class="application-category-image" src={group.asset.src} srcset={group.asset.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={group.asset.width} height={group.asset.height} loading="lazy" decoding="async" alt={group.image.alt} style={'object-position:'+group.image.focalPoint}/><ImageCaption image={group.image} t={t}/></figure></div><p>{group.intro}</p></div>
         <div class="application-task-list">{group.tasks.map((scene,taskIndex)=><details class="application-task" id={scene.id} open={index===0&&taskIndex===0}>
           <summary aria-controls={'scene-photo-'+scene.id}><span class="task-heading"><h3>{scene.title}</h3><small>{scene.measurement}</small></span><span class="task-toggle" aria-hidden="true">+</span></summary>
-          <div class="task-copy"><figure class="application-scene-photo" id={'scene-photo-'+scene.id} data-scene-owner={scene.id}><img class="application-scene-image" src={scene.asset.src} srcset={scene.asset.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={scene.asset.width} height={scene.asset.height} loading="lazy" decoding="async" alt={scene.image.alt} style={'object-position:'+scene.image.focalPoint}/><ImageCaption image={scene.image}/></figure><p>{scene.description}</p><dl><dt>Temperature to measure</dt><dd>{scene.measurement}</dd><dt>Measurement point</dt><dd>{scene.monitoringPoint}</dd><dt>Plan your installation</dt><dd>{scene.projectBrief}</dd></dl><a href="#enquiry" class="task-cta" data-project-scene={scene.title}>Discuss this application <span aria-hidden="true">↗</span></a></div>
+          <div class="task-copy"><figure class="application-scene-photo" id={'scene-photo-'+scene.id} data-scene-owner={scene.id}><img class="application-scene-image" src={scene.asset.src} srcset={scene.asset.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={scene.asset.width} height={scene.asset.height} loading="lazy" decoding="async" alt={scene.image.alt} style={'object-position:'+scene.image.focalPoint}/><ImageCaption image={scene.image} t={t}/></figure><p>{scene.description}</p><dl><dt>{t.applications.temperature}</dt><dd>{scene.measurement}</dd><dt>{t.applications.point}</dt><dd>{scene.monitoringPoint}</dd><dt>{t.applications.plan}</dt><dd>{scene.projectBrief}</dd></dl><a href="#enquiry" class="task-cta" data-project-scene={scene.title}>{t.applications.discuss} <span aria-hidden="true">↗</span></a></div>
         </details>)}</div>
       </div>
     </details>)}</div>
   </div></section>
 
   <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
-    <div class="section-heading"><div><p class="eyebrow">SERIES & CONFIGURATIONS</p><h2 id="specifications-title">The right design.<br/><span>The right configuration.</span></h2></div><p>{content.series.description}</p></div>
-    <div class="temperature-series">{content.series.models.map(model=><article id={'model-'+model.toLowerCase()}><span class="small-label">PUBLISHED MODEL FAMILY</span><h3>{model}</h3><p>Product form, sensing arrangement and operating profile selected for your project.</p><a href="#enquiry" class="text-link" data-model={model}>Discuss this configuration ↗</a></article>)}</div>
-    <div class="temperature-spec-grid"><aside class="model-card"><span class="small-label">FAMILY REFERENCE</span><h3>Specify the complete<br/>measurement point.</h3><p>{content.specifications.description}</p><a href={datasheet} target="_blank" rel="noopener" class="button button-outline">Download family datasheet ↗</a><a href="#enquiry" class="text-link">Get a configuration proposal ↓</a></aside><div class="spec-table"><table><caption>H Series wireless temperature sensors — published family reference</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
-    <div class="selection-list"><h3>Bring the specification back to your project.</h3><div>{content.series.steps.map((step,index)=><article><span class="step-number">0{index+1}</span><h4>{step.title}</h4><p>{step.text}</p></article>)}</div></div>
+    <div class="section-heading"><div><p class="eyebrow">{t.series.kicker}</p><h2 id="specifications-title">{serA}<br/><span>{serB}</span></h2></div><p>{content.series.description}</p></div>
+    <div class="temperature-series">{content.series.models.map(model=><article id={'model-'+model.toLowerCase()}><span class="small-label">{t.series.modelKicker}</span><h3>{model}</h3><p>{t.series.modelDescription}</p><a href="#enquiry" class="text-link" data-model={model}>{t.series.discuss} ↗</a></article>)}</div>
+    <div class="temperature-spec-grid"><aside class="model-card"><span class="small-label">{t.spec.familyReference}</span><h3>{specA}<br/>{specB}</h3><p>{content.specifications.description}</p><a href={datasheet} target="_blank" rel="noopener" class="button button-outline">{t.spec.download} ↗</a><a href="#enquiry" class="text-link">{t.spec.proposal} ↓</a></aside><div class="spec-table"><table><caption>{t.spec.caption}</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
+    <div class="selection-list"><h3>{t.spec.selectionHeading}</h3><div>{content.series.steps.map((step,index)=><article><span class="step-number">0{index+1}</span><h4>{step.title}</h4><p>{step.text}</p></article>)}</div></div>
   </div></section>
 
   <section class="section integration-section" id="integration" aria-labelledby="integration-title"><div class="wrap">
-    <div class="section-heading"><div><p class="eyebrow">CONNECTIVITY & INTEGRATION</p><h2 id="integration-title">Your site.<br/><span>Your data destination.</span></h2></div><p>{content.workflow.platform_text}</p></div>
-    <div class="integration-grid"><article><span class="small-label">4G / NB-IoT</span><h3>For distributed locations</h3><div class="route-flow"><span>Temperature point</span><b aria-hidden="true">→</b><span>Mobile network</span><b aria-hidden="true">→</b><span>Your platform</span></div><p>Select the modem and regional bands around operator availability and coverage at the transmitter position. Agree the reporting profile, power arrangement and notification workflow.</p><ul><li>Installation country and operator</li><li>Signal at the actual mounting position</li><li>Sampling, reporting and required alert response</li></ul></article><article><span class="small-label">LoRa</span><h3>For points across one site</h3><div class="route-flow"><span>Temperature points</span><b aria-hidden="true">→</b><span>Receiver / gateway</span><b aria-hidden="true">→</b><span>Your platform</span></div><p>Match the supplied radio protocol, regional settings and receiver or gateway. Specify any LoRaWAN requirement with the model and complete onward connection.</p><ul><li>Device protocol and gateway compatibility</li><li>Site layout and radio coverage</li><li>Gateway power and onward data connection</li></ul></article></div>
-    <div class="integration-handover"><h3>Make the first reading useful.</h3><p>Agree device identity, sensing point or channel, temperature units and timestamps in a sample message. Check the endpoint and supported authentication, then test the complete path to the intended platform and recipients.</p><a href="#enquiry" class="text-link">Discuss platform integration ↗</a></div>
+    <div class="section-heading"><div><p class="eyebrow">{t.integration.kicker}</p><h2 id="integration-title">{intA}<br/><span>{intB}</span></h2></div><p>{content.workflow.platform_text}</p></div>
+    <div class="integration-grid"><article><span class="small-label">4G / NB-IoT</span><h3>{t.integration.distributed}</h3><div class="route-flow"><span>{t.integration.point}</span><b aria-hidden="true">→</b><span>{t.integration.mobileNetwork}</span><b aria-hidden="true">→</b><span>{t.integration.platform}</span></div><p>{t.integration.cellularDescription}</p><ul><li>{t.integration.countryOperator}</li><li>{t.integration.signal}</li><li>{t.integration.intervals}</li></ul></article><article><span class="small-label">LoRa</span><h3>{t.integration.site}</h3><div class="route-flow"><span>{t.integration.points}</span><b aria-hidden="true">→</b><span>{t.integration.gateway}</span><b aria-hidden="true">→</b><span>{t.integration.platform}</span></div><p>{t.integration.loraDescription}</p><ul><li>{t.integration.protocol}</li><li>{t.integration.layout}</li><li>{t.integration.gatewayPower}</li></ul></article></div>
+    <div class="integration-handover"><h3>{t.integration.firstReading}</h3><p>{t.integration.handover}</p><a href="#enquiry" class="text-link">{t.integration.discuss} ↗</a></div>
   </div></section>
 
-  <section class="section faq-section" id="faq" aria-labelledby="faq-title"><div class="wrap faq-layout"><div class="faq-intro"><p class="eyebrow">ANSWERS FOR YOUR PROJECT</p><h2 id="faq-title">Frequently<br/>asked questions.</h2><p>{content.faqHeading.intro}</p><a href="#enquiry" class="text-link">Ask about your project ↗</a></div><div class="faq-list">{content.faqs.map((faq,index)=><details id={faq.id} open={index===0}><summary>{faq.question}<span aria-hidden="true">+</span></summary><div class="faq-answer">{faq.paragraphs.map(paragraph=><p>{paragraph}</p>)}</div></details>)}</div></div></section>
+  <section class="section faq-section" id="faq" aria-labelledby="faq-title"><div class="wrap faq-layout"><div class="faq-intro"><p class="eyebrow">{t.faq.kicker}</p><h2 id="faq-title">{faqA}<br/>{faqB}</h2><p>{content.faqHeading.intro}</p><a href="#enquiry" class="text-link">{t.faq.ask} ↗</a></div><div class="faq-list">{content.faqs.map((faq,index)=><details id={faq.id} open={index===0}><summary>{faq.question}<span aria-hidden="true">+</span></summary><div class="faq-answer">{faq.paragraphs.map(paragraph=><p>{paragraph}</p>)}</div></details>)}</div></div></section>
 
   <section class="section enquiry-section" id="enquiry" aria-labelledby="enquiry-title"><div class="wrap enquiry-layout">
-    <div class="enquiry-intro"><p class="eyebrow">LET'S TALK ABOUT YOUR PROJECT</p><h2 id="enquiry-title">Your temperature point.<br/><span>Our next conversation.</span></h2><p class="lead">Tell us what you need to measure and where. We’ll help match the product form, sensing arrangement, wireless connection and installation to your project.</p><a class="contact-email" href="mailto:sales@hitelecom.cn">sales@hitelecom.cn ↗</a><div class="enquiry-benefits"><h3>Start with the point and the range.</h3><p>A site photo, drawing or storage procedure helps us understand the measurement point. Add the required accuracy and response time when available.</p></div></div>
-    <form id="enquiry-form" action="mailto:sales@hitelecom.cn" method="post" enctype="text/plain"><div class="form-heading"><span class="small-label">PROJECT ENQUIRY</span><h3>Let’s find your configuration.</h3><p>H Series wireless temperature monitoring</p></div>
-      <div class="form-fields"><div class="field"><label for="application">Application <span aria-hidden="true">*</span></label><select id="application" name="Application" required><option value="">Choose your application</option>{content.groups.map(group=><optgroup label={group.title}>{content.applications.filter(scene=>scene.group===group.id).map(scene=><option value={scene.title}>{scene.title}</option>)}</optgroup>)}<option>Other / project-specific</option></select></div><div class="field"><label for="country">Country / region <span aria-hidden="true">*</span></label><input id="country" name="Country" required autocomplete="country-name" placeholder="e.g. United Kingdom" maxlength="100"/></div><div class="field"><label for="quantity">Estimated quantity</label><input id="quantity" name="Quantity" type="number" min="1" step="1" inputmode="numeric" placeholder="e.g. 20"/></div><div class="field"><label for="measurement-type">Measurement type</label><select id="measurement-type" name="Measurement"><option>Please advise</option><option>Air temperature</option><option>Surface temperature</option><option>Immersion temperature</option></select></div><div class="field"><label for="temperature-range">Normal & peak temperatures</label><input id="temperature-range" name="Temperature range" placeholder="e.g. 2–8°C / peak 12°C" maxlength="120"/></div><div class="field"><label for="network">Preferred connectivity</label><select id="network" name="Connectivity"><option>Please advise</option><option>4G LTE</option><option>NB-IoT</option><option>LoRa</option></select></div><div class="field full"><label for="requirements">What would you like to monitor?</label><textarea id="requirements" name="Requirements" rows="3" maxlength="3000" placeholder="Measurement point, preferred product form, accuracy, installation, reporting or platform requirements"></textarea></div></div>
-      <div class="form-actions"><button type="submit" class="button button-primary">Prepare my enquiry ↗</button><p>Review your brief, then send it with your email app.</p></div><div id="enquiry-review" class="enquiry-review" hidden><label for="enquiry-brief">Your project brief</label><textarea id="enquiry-brief" rows="9" spellcheck="false"></textarea><div><a id="email-brief" class="button button-primary" href="mailto:sales@hitelecom.cn">Open email ↗</a><button id="copy-brief" type="button" class="button button-outline">Copy brief</button></div><p id="brief-status" role="status" aria-live="polite">Your brief is ready to review.</p></div><p class="noscript-note">You can also <a href="mailto:sales@hitelecom.cn?subject=Wireless%20temperature%20sensor%20project">email your project details directly</a>.</p>
+    <div class="enquiry-intro"><p class="eyebrow">{t.enquiry.kicker}</p><h2 id="enquiry-title">{enqA}<br/><span>{enqB}</span></h2><p class="lead">{t.enquiry.intro}</p><a class="contact-email" href="mailto:sales@hitelecom.cn">sales@hitelecom.cn ↗</a><div class="enquiry-benefits"><h3>{t.enquiry.start}</h3><p>{t.enquiry.supporting}</p></div></div>
+    <form id="enquiry-form" action="mailto:sales@hitelecom.cn" method="post" enctype="text/plain"><div class="form-heading"><span class="small-label">{t.form.kicker}</span><h3>{t.form.heading}</h3><p>{t.form.subtitle}</p></div>
+      <div class="form-fields"><div class="field"><label for="application">{t.form.application} <span aria-hidden="true">*</span></label><select id="application" name="Application" required><option value="">{t.form.chooseApplication}</option>{content.groups.map(group=><optgroup label={group.title}>{content.applications.filter(scene=>scene.group===group.id).map(scene=><option value={scene.title}>{scene.title}</option>)}</optgroup>)}<option>{t.form.other}</option></select></div><div class="field"><label for="country">{t.form.country} <span aria-hidden="true">*</span></label><input id="country" name="Country" required autocomplete="country-name" placeholder={t.form.countryExample} maxlength="100"/></div><div class="field"><label for="quantity">{t.form.quantity}</label><input id="quantity" name="Quantity" type="number" min="1" step="1" inputmode="numeric" placeholder={t.form.quantityExample}/></div><div class="field"><label for="measurement-type">{t.form.measurement}</label><select id="measurement-type" name="Measurement"><option>{t.form.pleaseAdvise}</option>{content.measurement.cards.map(card=><option>{card.title}</option>)}</select></div><div class="field"><label for="temperature-range">{t.form.temperatureRange}</label><input id="temperature-range" name="Temperature range" placeholder={t.form.rangeExample} maxlength="120"/></div><div class="field"><label for="network">{t.form.connectivity}</label><select id="network" name="Connectivity"><option>{t.form.pleaseAdvise}</option><option>4G LTE</option><option>NB-IoT</option><option>LoRa</option></select></div><div class="field full"><label for="requirements">{t.form.requirements}</label><textarea id="requirements" name="Requirements" rows="3" maxlength="3000" placeholder={t.form.requirementsPlaceholder}></textarea></div></div>
+      <div class="form-actions"><button type="submit" class="button button-primary">{t.form.submit} ↗</button><p>{t.form.reviewNote}</p></div><div id="enquiry-review" class="enquiry-review" hidden><label for="enquiry-brief">{t.form.projectBrief}</label><textarea id="enquiry-brief" rows="9" spellcheck="false"></textarea><div><a id="email-brief" class="button button-primary" href="mailto:sales@hitelecom.cn">{t.form.openEmail} ↗</a><button id="copy-brief" type="button" class="button button-outline">{t.form.copy}</button></div><p id="brief-status" role="status" aria-live="polite">{t.form.ready}</p></div><p class="noscript-note">{t.form.directBefore}{directSep}<a href={directMailto}>{t.form.directEmail}</a>{t.form.directAfter}</p>
     </form>
   </div></section>
-  <div class="wrap related-products"><p class="small-label">CONTINUE YOUR MONITORING PROJECT</p><a href="/product">Explore all sensors ↗</a><a href="/product/air-quality-sensor">Air quality monitoring ↗</a><a href="/product/tilt-sensor">Tilt monitoring ↗</a></div>
+  <div class="wrap related-products"><p class="small-label">{t.related.kicker}</p><a href={prefix+'/product'}>{t.related.all} ↗</a><a href={prefix+'/product/air-quality-sensor'}>{t.related.air} ↗</a><a href={prefix+'/product/tilt-sensor'}>{t.related.tilt} ↗</a></div>
 </div>
 <script>import './temperature-interactions.js';</script>

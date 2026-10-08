@@ -1,0 +1,10 @@
+---
+/**
+ * 温度传感器页 V2 · ja 静态路由（2026-10-08，与倾斜页同型 CSS 分离 + 多语注册表）
+ * 独立静态路由使本页 CSS 仅含 BaseLayout 公共样式 + temperature.css；
+ * ja/product/[slug].astro 的 getStaticPaths 已排除 temperature-sensor，无路由冲突。
+ */
+import TemperatureV2Page from '../../../components/temperature/TemperatureV2Page.astro';
+---
+
+<TemperatureV2Page locale="ja" />
