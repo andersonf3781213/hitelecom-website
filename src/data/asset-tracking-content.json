@@ -1,0 +1,1428 @@
+{
+  "seo": {
+    "title": "H300 4G & H500 NB-IoT Asset Tracking | Hitelecom",
+    "description": "Find equipment, manage reusable assets and follow cargo with H300 4G or H500 NB-IoT tracking. Select positioning and reporting to suit your deployment."
+  },
+  "hero": {
+    "description": "The Hitelecom H300 (4G) and H500 (NB-IoT) asset tracking sensors help teams locate equipment, reusable packaging and cargo between sites. Use location reports to plan collection, return and the next deployment. Choose the model around coverage and reporting needs, then match the positioning method, power, mounting and platform connection to the asset."
+  },
+  "features": [
+    {
+      "title": "Find the asset you need",
+      "text": "Use location information to find the equipment, carrier or case needed for the next job. Positioning detail is specified for the asset and its working area."
+    },
+    {
+      "title": "H300 4G or H500 NB-IoT",
+      "text": "Two radio models for different deployments. Choose using operator support at your sites and route stages, together with the reporting schedule you need."
+    },
+    {
+      "title": "Reports that prompt an action",
+      "text": "Geofence or movement events can be specified where an alert helps the team arrange collection, check a site transfer or follow up a deployment."
+    },
+    {
+      "title": "Keep location with the asset record",
+      "text": "Connect equipment or carrier identity to location reports. Add the platform maps, timestamps and history needed for collection and return planning to the project scope."
+    },
+    {
+      "title": "Fit the working environment",
+      "text": "Select the enclosure around dust, rain, cleaning and handling exposure. The supplied specification identifies its protection rating and installation conditions."
+    },
+    {
+      "title": "Power for the job cycle",
+      "text": "Stored equipment and assets in transit need different update schedules. Match the power arrangement to that schedule, maintenance access and the target service interval."
+    },
+    {
+      "title": "A consistent fleet rollout",
+      "text": "Plan activation and device-to-asset identification so installers connect each tracker to the correct unit. Local setup options, including NFC, are specified where required."
+    },
+    {
+      "title": "Mount it to the right carrier",
+      "text": "Use an equipment frame, a protected recess or a transport-case bracket. Choose attachment hardware with room for normal handling, access and reception."
+    }
+  ],
+  "positioning": {
+    "description": "The useful position depends on the job: an outdoor yard, a customer site or a particular indoor zone. GPS or BeiDou, cellular location and local indoor systems are project options; select the approach around the required detail and the places the asset moves.",
+    "cards": [
+      {
+        "title": "Outdoor equipment and cargo",
+        "text": "For outdoor yards and transport stages, consider a satellite-positioning design using GPS or BeiDou where included. A protected mounting point still needs suitable antenna exposure, especially around metal equipment or shipping cases.",
+        "project_brief": "Location objective · Positioning design · Antenna exposure · Reporting frequency"
+      },
+      {
+        "title": "Approximate site location",
+        "text": "Cellular LBS, where included, can support an approximate site-level position. Its usefulness depends on the available operator service and the detail the team needs, so check it at the actual holding sites.",
+        "project_brief": "Operator support · Location service · Site-level objective · Pilot validation"
+      },
+      {
+        "title": "Indoor equipment finding",
+        "text": "A building zone, aisle or equipment bay needs a project-specific indoor design. BLE, Wi-Fi or another local arrangement is reviewed with its infrastructure and integration, rather than inferred from the cellular radio model.",
+        "project_brief": "Building layout · Required location detail · Local infrastructure · Integration"
+      }
+    ],
+    "installation_text": "Choose a protected frame, recess or carrier bracket that leaves normal handling and service access clear. Check attachment retention and reception on the actual asset, then confirm that reports reach the intended platform at representative sites and route stages."
+  },
+  "workflow": {
+    "profile_text": "A trailer at a customer yard needs a collection plan. A test instrument needs to reach calibration. A crate pool needs to come back before the next season. Give each tracked asset an identity and an update schedule that helps the responsible team do that job.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Locate",
+        "text": "Connect the tracker to the equipment, case or carrier ID so the team can find the correct asset."
+      },
+      {
+        "number": "02",
+        "title": "Report",
+        "text": "Send the required location reports through the selected H300 4G or H500 NB-IoT service. Set the update schedule around storage, transfer and collection."
+      },
+      {
+        "number": "03",
+        "title": "Respond",
+        "text": "Use the location information to arrange pickup, assign a transfer or return the asset to its pool. Platform history and alerts are included where specified."
+      }
+    ],
+    "battery_text": "More frequent positioning and reports generally use more energy. Set an update schedule that serves the job, then assess the power arrangement against operating temperatures, network service and maintenance access. The selected model’s supplied specification sets the basis for the service-interval estimate.",
+    "platform_text": "Bring location reports into the asset records your team already uses. A Hitelecom Cloud or customer-platform connection can be reviewed for the project, including asset IDs, data fields and access. MQTT is considered where included in the integration design."
+  },
+  "applicationSection": {
+    "title": "Asset visibility.",
+    "valueHeading": "Across your operation.",
+    "description": "Find practical tracking jobs for equipment, reusable assets and cargo. Each task shows what the team needs to find or collect, where a tracker could fit and which deployment details matter for the proposal.",
+    "note": "AI-generated application illustrations show representative asset environments.",
+    "mountingNote": "Candidate mounting points must leave handling and service access clear. Confirm the attachment with the asset owner and check retention and reception on the actual unit."
+  },
+  "groups": [
+    {
+      "id": "construction-agriculture",
+      "title": "Construction & Agricultural Machinery",
+      "jumpLabel": "Heavy Machinery",
+      "intro": "Find machinery held across projects, farms, contractor yards and workshops. Use the equipment identity and location information to organize collection, assign the next site and return seasonal assets to storage.",
+      "scenes": [
+        "earthmoving-machinery",
+        "roadwork-machinery",
+        "mobile-lifting-equipment",
+        "agricultural-tractors",
+        "harvesters-seasonal-machinery",
+        "farm-implements"
+      ],
+      "image": {
+        "name": "construction-machinery.webp",
+        "alt": "Excavators and loaders parked in a construction equipment yard",
+        "caption": "Find the machine needed for the next site.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "freight-transport",
+      "title": "Freight & Transport Assets",
+      "jumpLabel": "Freight & Transport",
+      "intro": "Locate the trailer, container, body or carrier required for the next collection. Keep the transport asset separate from the vehicle or load that happens to move it, with reporting planned for covered route stages.",
+      "scenes": [
+        "truck-fleets",
+        "trailer-pools",
+        "shipping-containers",
+        "industrial-cargo",
+        "swap-bodies",
+        "intermodal-chassis"
+      ],
+      "image": {
+        "name": "commercial-truck.webp",
+        "alt": "Commercial truck parked in an outdoor distribution yard",
+        "caption": "Find vehicles across depots, customers and workshops.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "returnable-logistics-cold-chain",
+      "title": "Returnable Logistics & Cold Chain",
+      "jumpLabel": "Logistics & Cold Chain",
+      "intro": "Bring pallets, crates, cages and reusable carriers back into the pool. Choose the unit worth tracking, protect the mounting through handling and cleaning, and specify any additional condition measurements for the job.",
+      "scenes": [
+        "returnable-pallets",
+        "reusable-crates",
+        "roll-cages",
+        "ibc-containers",
+        "mobile-cold-rooms",
+        "insulated-cold-chain-boxes"
+      ],
+      "image": {
+        "name": "pallet-pooling-v2.webp",
+        "alt": "Reusable industrial plastic pallet with a protected side recess outside the fork channels.",
+        "caption": "Find selected returnable pallets and plan collection before the next packing cycle.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "valuable-sensitive-assets",
+      "title": "Valuable & Sensitive Assets",
+      "jumpLabel": "Valuable Assets",
+      "intro": "Find the protective case or carrier needed for calibration, delivery, exhibition or repair. Keep it linked to the valuable item inside, with access and any condition measurements suited to the shipment.",
+      "scenes": [
+        "medical-instruments",
+        "laboratory-instruments",
+        "electronics-consignments",
+        "luxury-goods-consignments",
+        "art-museum-transport",
+        "valuable-spares-shipments"
+      ],
+      "image": {
+        "name": "medical-mobile-assets-v2.webp",
+        "alt": "Portable medical equipment in a dedicated protective case on a transport trolley.",
+        "caption": "Track the dedicated carrier while preserving access to the medical equipment.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rental-field-service",
+      "title": "Rental & Field Service Assets",
+      "jumpLabel": "Rental & Service",
+      "intro": "Collect the equipment when the contract or job ends. Locate units held by customers, return them to the right depot and find service kits that need replenishment before the next assignment.",
+      "scenes": [
+        "rental-generators",
+        "rental-compressors",
+        "rental-light-towers",
+        "rental-tool-kits",
+        "service-parts-kits",
+        "mobile-energy-storage"
+      ],
+      "image": {
+        "name": "rental-equipment.webp",
+        "alt": "Towable rental generator parked at an outdoor project site",
+        "caption": "Collect generators when the rental ends.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "mobility-emergency",
+      "title": "Mobility & Emergency Equipment",
+      "jumpLabel": "Mobility & Response",
+      "intro": "Find fleet vehicles for service and portable equipment for collection after an assignment. Preserve normal use and rapid access while keeping each vehicle or case connected to its asset identity.",
+      "scenes": [
+        "ebike-fleets",
+        "motorcycle-fleets",
+        "portable-aeds",
+        "rescue-equipment",
+        "portable-fire-equipment",
+        "emergency-mobile-pumps"
+      ],
+      "image": {
+        "name": "ebike-depot.webp",
+        "alt": "Fleet e-bikes parked in an outdoor operating area",
+        "caption": "Find fleet bikes for service or seasonal storage.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "materials-infrastructure",
+      "title": "Site Materials & Infrastructure Assets",
+      "jumpLabel": "Materials & Infrastructure",
+      "intro": "Find cable drums, material carriers and specialist equipment assigned to a project. Mount to protected frames or reusable carriers so handling remains clear through storage, lifting, delivery and return.",
+      "scenes": [
+        "site-cable-drums",
+        "steel-material-bundles",
+        "formwork-scaffolding",
+        "railway-service-equipment",
+        "port-terminal-machinery",
+        "airport-ground-equipment"
+      ],
+      "image": {
+        "name": "materials-yard.webp",
+        "alt": "Large cable drums stored in an outdoor infrastructure materials yard",
+        "caption": "Find cable drums for installation, then recover the carrier.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "factory-site-transfers",
+      "title": "Factory Assets & Site Transfers",
+      "jumpLabel": "Factory & Site Transfers",
+      "intro": "Get equipment and tooling back to the plant that needs it. Track individual assets or their designated transport frames and cases through site transfers. Include a local indoor positioning design when finding a building zone or storage bay is part of the project.",
+      "scenes": [
+        "agv-fleet-transfers",
+        "factory-transport-trolleys",
+        "production-jigs-fixtures",
+        "production-moulds",
+        "production-returnable-racks",
+        "forklift-fleet-transfers"
+      ],
+      "image": {
+        "name": "factory-agv-v3.webp",
+        "alt": "Industrial towing AGV with a wheeled chassis, safety scanner and rear tow coupling in a factory dispatch bay.",
+        "caption": "Coordinate AGV delivery, site transfers and service returns.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "id": "earthmoving-machinery",
+      "group": "construction-agriculture",
+      "title": "Excavators, Loaders & Bulldozers",
+      "tagline": "Find the machine needed for the next site.",
+      "description": "An excavator left at a finished site can hold up the next project. Find which site or yard holds each machine, arrange its collection and assign transport from the equipment record. This is particularly useful when subcontractors share a regional fleet.",
+      "objective": "Find machines for collection and the next project assignment.",
+      "monitoringPoint": "Protected exterior chassis bracket, clear of hydraulics, moving joints and service panels.",
+      "projectBrief": "Machine IDs, project yards, storage periods and transfer dates; a reporting schedule that follows the collection cycle.",
+      "image": {
+        "name": "construction-machinery.webp",
+        "alt": "Excavators and loaders parked in a construction equipment yard",
+        "caption": "Find the machine needed for the next site.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "roadwork-machinery",
+      "group": "construction-agriculture",
+      "title": "Rollers, Pavers & Roadwork Machines",
+      "tagline": "Move rollers and pavers between short contracts.",
+      "description": "Roadwork crews move through short contracts while equipment may stay behind for collection. Locate the roller or paver assigned to the next job, check its holding area and arrange pickup before the transport booking, using location information alongside the project schedule.",
+      "objective": "Locate roadwork equipment and organize pickup for the next contract.",
+      "monitoringPoint": "Fixed chassis bracket away from asphalt heat, spray areas and working mechanisms.",
+      "projectBrief": "Machine type, roadside sites, heat exposure and project turnover; reporting at delivery, storage and collection stages.",
+      "image": {
+        "name": "roadwork-roller.webp",
+        "alt": "Road roller parked beside an outdoor road construction project",
+        "caption": "Move rollers and pavers between short contracts.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "mobile-lifting-equipment",
+      "group": "construction-agriculture",
+      "title": "Mobile Cranes & Telehandlers",
+      "tagline": "Find lifting equipment before arranging its transfer.",
+      "description": "A crane allocated to a new project may still be at the previous site or a service yard. Locate the unit tied to that booking and organize its transport with the project team, keeping equipment identity connected to the assignment rather than relying on separate telephone updates.",
+      "objective": "Locate assigned lifting assets and plan their site transfer.",
+      "monitoringPoint": "Fixed chassis bracket clear of boom travel, counterweights, controls and maintenance access.",
+      "projectBrief": "Fleet IDs, job locations, transport dates and chassis clearance; the location detail needed by the equipment and project teams.",
+      "image": {
+        "name": "mobile-crane.webp",
+        "alt": "Mobile crane standing in an outdoor industrial project area",
+        "caption": "Find lifting equipment before arranging its transfer.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "agricultural-tractors",
+      "group": "construction-agriculture",
+      "title": "Agricultural Tractors",
+      "tagline": "Find shared tractors across farms and contractor yards.",
+      "description": "A tractor shared by farms can change holding sites several times during a season. Find the unit assigned to the next farm, organize collection and keep the owner’s equipment list up to date as the tractor passes between contractor yards, farms and workshops.",
+      "objective": "Find shared tractors and assign collection between farm jobs.",
+      "monitoringPoint": "Protected exterior frame bracket outside implement travel paths and maintenance access.",
+      "projectBrief": "Farm locations, seasonal schedules, rural operator service and storage periods; attachment clear of implement movement and servicing.",
+      "image": {
+        "name": "agricultural-machinery-v2.webp",
+        "alt": "Agricultural tractor with a visible fixed rear-cab frame at a farm equipment yard.",
+        "caption": "Locate shared tractors across farms, storage yards and service transfers.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "harvesters-seasonal-machinery",
+      "group": "construction-agriculture",
+      "title": "Harvesters & Seasonal Machines",
+      "tagline": "Get the right harvester to the next farm.",
+      "description": "Harvesters are transferred between farms as the regional season progresses. Locate each unit at the end of an assignment, book collection for the next farm and bring it back to the correct depot for storage or servicing when the season finishes.",
+      "objective": "Locate seasonal machines and coordinate farm-to-farm collection.",
+      "monitoringPoint": "Fixed exterior frame position protected from crop contact, cleaning impacts and rotating equipment.",
+      "projectBrief": "Seasonal routes, farm and depot locations, crop and cleaning exposure, and the reporting needed around transport dates.",
+      "image": {
+        "name": "combine-harvester.webp",
+        "alt": "Combine harvester beside a harvested field",
+        "caption": "Get the right harvester to the next farm.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "farm-implements",
+      "group": "construction-agriculture",
+      "title": "Farm Implements & Field Attachments",
+      "tagline": "Collect attachments left apart from the tractor.",
+      "description": "A seeder or sprayer may be left in a field after the tractor returns to the yard. Give the detachable implement its own asset identity, find where it is held and arrange collection when another farm or contractor needs the same attachment.",
+      "objective": "Find detached implements and arrange the next collection.",
+      "monitoringPoint": "Implement frame bracket clear of folding sections, hitch points and ground-contact parts.",
+      "projectBrief": "Implement IDs, field and yard locations, dwell periods and folding clearance; rural service for the selected radio.",
+      "image": {
+        "name": "farm-implement.webp",
+        "alt": "Agricultural implement parked in an outdoor farm equipment area",
+        "caption": "Collect attachments left apart from the tractor.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "truck-fleets",
+      "group": "freight-transport",
+      "title": "Trucks & Commercial Vehicles",
+      "tagline": "Find vehicles across depots, customers and workshops.",
+      "description": "A fleet vehicle may be at a customer dock, a regional depot or a service workshop when another team needs it. Use location reports with the vehicle assignment record to find the truck and arrange a clear transfer between the teams responsible for it.",
+      "objective": "Find assigned vehicles and organize depot or customer-site transfers.",
+      "monitoringPoint": "Protected chassis or cab-adjacent bracket away from exhaust heat and road debris.",
+      "projectBrief": "Fleet IDs, operating routes, update frequency and platform fields; modem, SIM and operator service appropriate to each region.",
+      "image": {
+        "name": "commercial-truck.webp",
+        "alt": "Commercial truck parked in an outdoor distribution yard",
+        "caption": "Find vehicles across depots, customers and workshops.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "trailer-pools",
+      "group": "freight-transport",
+      "title": "Trailers & Semi-Trailers",
+      "tagline": "Collect trailers still parked at customer yards.",
+      "description": "A trailer can sit at a customer yard after the tractor and driver have left. Locate the trailer itself, match it to the collection list and send the next tractor to the appropriate holding site. Independent trailer records help keep the pool circulating between customers and depots.",
+      "objective": "Locate customer-yard trailers and plan collection back into the pool.",
+      "monitoringPoint": "Protected chassis bracket clear of landing gear, brakes and coupling components.",
+      "projectBrief": "Trailer IDs, customer yards, parking periods and collection records; secure mounting and reports during detached storage and transport.",
+      "image": {
+        "name": "trailer-yard.webp",
+        "alt": "Semi-trailers parked in a freight logistics yard",
+        "caption": "Collect trailers still parked at customer yards.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "shipping-containers",
+      "group": "freight-transport",
+      "title": "Containers at Depots & Ports",
+      "tagline": "Find containers at inland and port collection points.",
+      "description": "A container may pass through several terminals and depots before collection. Locate it at the covered stages of the route, give the haulier the correct holding area and connect the container number to the transport record. Sea-voyage requirements are handled separately from terrestrial port reporting.",
+      "objective": "Locate containers for covered inland and port collection stages.",
+      "monitoringPoint": "Exterior door-frame or corner-area bracket with antenna clearance, outside lock and handling paths.",
+      "projectBrief": "Container numbers, terminals, route stages and terrestrial cellular service; separately confirmed connectivity or recording for any offshore requirement.",
+      "image": {
+        "name": "container-port.webp",
+        "alt": "Shipping containers stacked in a coastal terminal yard",
+        "caption": "Find containers at inland and port collection points.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "industrial-cargo",
+      "group": "freight-transport",
+      "title": "Oversized & Industrial Cargo",
+      "tagline": "Prepare the receiving site for an oversized load.",
+      "description": "A fabricated component may wait at several staging yards before the project is ready to unload it. Track the transport frame or enclosure, find the holding site and arrange the next delivery with the receiving team, keeping the load identity attached to its shipping record.",
+      "objective": "Find staged industrial loads and organize delivery to the receiving site.",
+      "monitoringPoint": "Transport skid, steel cradle or shipping enclosure, clear of rigging and unloading contact.",
+      "projectBrief": "Load and frame IDs, staging sites, rigging clearance and retrieval responsibility; any required condition measurements specified separately.",
+      "image": {
+        "name": "industrial-cargo-frame.webp",
+        "alt": "Large industrial machinery secured on a transport frame",
+        "caption": "Prepare the receiving site for an oversized load.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "swap-bodies",
+      "group": "freight-transport",
+      "title": "Swap Bodies & Demountable Units",
+      "tagline": "Collect detached bodies while carrying vehicles keep working.",
+      "description": "A swap body can remain with the customer while its carrying vehicle moves to another job. Locate the detached body, arrange pickup after unloading and return it to the depot that needs it next. The body keeps its own identity across different vehicle assignments.",
+      "objective": "Locate detached bodies and return them to the required depot.",
+      "monitoringPoint": "Fixed body-frame bracket clear of support legs, locks and vehicle interfaces.",
+      "projectBrief": "Body IDs, exchange records, customer sites and dwell periods; mounting clear of support legs and vehicle interfaces.",
+      "image": {
+        "name": "swap-body-depot.webp",
+        "alt": "Demountable freight transport body standing on support legs",
+        "caption": "Collect detached bodies while carrying vehicles keep working.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "intermodal-chassis",
+      "group": "freight-transport",
+      "title": "Intermodal Chassis & Container Frames",
+      "tagline": "Find empty chassis for the next container movement.",
+      "description": "An empty chassis may be held by a road carrier, an inland depot or a port operator. Locate the chassis needed for a planned container collection and arrange its return or transfer, without treating the truck or the container as the identity of the frame.",
+      "objective": "Find chassis for planned collections and pool returns.",
+      "monitoringPoint": "Protected chassis-frame bracket away from coupling impacts and road debris.",
+      "projectBrief": "Chassis IDs, interchange records, terminal and road service, and reporting during circulation or extended parking.",
+      "image": {
+        "name": "container-chassis.webp",
+        "alt": "Empty intermodal container chassis parked in a terminal yard",
+        "caption": "Find empty chassis for the next container movement.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "returnable-pallets",
+      "group": "returnable-logistics-cold-chain",
+      "title": "Returnable Pallets",
+      "tagline": "Recover higher-value pallets from customer sites.",
+      "description": "Higher-value pallets can remain with customers after the goods have been unloaded. Track selected units to find the sites holding returnable stock, group collection into useful loads and bring the pallets back before the next packing cycle. This suits pools where individual pallet recovery matters.",
+      "objective": "Find selected pallets and group return collection by site.",
+      "monitoringPoint": "Protected side-block recess, outside fork channels, stacking faces and load-bearing surfaces.",
+      "projectBrief": "Pallet construction, protected recess, fork and stacking clearances, unit IDs and return routes; reporting costs suited to the pool.",
+      "image": {
+        "name": "pallet-pooling-v2.webp",
+        "alt": "Reusable industrial plastic pallet with a protected side recess outside the fork channels.",
+        "caption": "Find selected returnable pallets and plan collection before the next packing cycle.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "reusable-crates",
+      "group": "returnable-logistics-cold-chain",
+      "title": "Reusable Crates & Delivery Boxes",
+      "tagline": "Bring seasonal crate pools back for reuse.",
+      "description": "Crate pools spread across customers during a busy delivery season and may return slowly afterward. Find where selected crates are held, plan recovery by partner site and return them for cleaning and reuse, so the next season starts with the containers the packing team needs.",
+      "objective": "Find seasonal crate holdings and arrange recovery for reuse.",
+      "monitoringPoint": "Protected recess in a solid crate wall, clear of handles, stacking faces and cleaning contact.",
+      "projectBrief": "Solid-wall recess, crate IDs, washing process, stacking contact and seasonal return routes; attachment sized for the actual container.",
+      "image": {
+        "name": "reusable-crates-v2.webp",
+        "alt": "Solid-sided reusable delivery crates with recessed exterior panels at a loading bay.",
+        "caption": "Recover selected crate pools for washing, reuse and the next delivery season.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "roll-cages",
+      "group": "returnable-logistics-cold-chain",
+      "title": "Roll Cages & Distribution Cages",
+      "tagline": "Collect cages left at stores and receiving depots.",
+      "description": "Delivery cages are easy to leave at the receiving site when the vehicle is already on its next round. Locate tracked cages, add the holding sites to the collection plan and return the pool to the distribution center before the next busy delivery period.",
+      "objective": "Locate delivery cages and organize collection to the distribution pool.",
+      "monitoringPoint": "Fixed side-frame bracket clear of wheels, folding joints and nesting contact.",
+      "projectBrief": "Cage IDs, nesting behavior, partner sites and collection routes; indoor location detail specified for stores or receiving depots when needed.",
+      "image": {
+        "name": "roll-cage.webp",
+        "alt": "Metal roll cages lined up near a distribution center loading dock",
+        "caption": "Collect cages left at stores and receiving depots.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "ibc-containers",
+      "group": "returnable-logistics-cold-chain",
+      "title": "IBCs & Returnable Bulk Containers",
+      "tagline": "Return bulk containers for cleaning and refilling.",
+      "description": "An IBC may need to go from the customer to a cleaning partner before it can be filled again. Find the tracked unit, organize its next collection and keep its identity connected to the product flow, including containers held across several regional customers or facilities.",
+      "objective": "Find bulk containers and arrange cleaning or refill transfers.",
+      "monitoringPoint": "Outer cage or frame bracket clear of valves, labels and forklift handling paths.",
+      "projectBrief": "Container IDs, cleaning conditions and circulation sites; suitable enclosure and attachment, with hazardous-area requirements assessed separately where relevant.",
+      "image": {
+        "name": "ibc-returnables.webp",
+        "alt": "Intermediate bulk containers stored in an outdoor industrial logistics area",
+        "caption": "Return bulk containers for cleaning and refilling.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "mobile-cold-rooms",
+      "group": "returnable-logistics-cold-chain",
+      "title": "Mobile Cold Rooms & Cooling Modules",
+      "tagline": "Find temporary cold-storage units for relocation or return.",
+      "description": "A mobile cold room may serve a seasonal packing site, a temporary facility or a distribution overflow area. Locate the unit when that assignment ends, arrange collection and move it to the next customer. Temperature or equipment-status measurements can be included in a separately specified project design.",
+      "objective": "Locate mobile cold rooms and organize collection or reassignment.",
+      "monitoringPoint": "Exterior frame bracket away from refrigeration equipment, heat discharge and door movement.",
+      "projectBrief": "Unit IDs, deployment sites, report timing and refrigeration clearances; any temperature or status channels identified in the supplied design.",
+      "image": {
+        "name": "mobile-cold-room.webp",
+        "alt": "Portable cold storage module positioned at an outdoor logistics facility",
+        "caption": "Find temporary cold-storage units for relocation or return.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "insulated-cold-chain-boxes",
+      "group": "returnable-logistics-cold-chain",
+      "title": "Insulated Cold-Chain Boxes",
+      "tagline": "Bring reusable cool boxes back after delivery.",
+      "description": "An insulated box may pass from the packing team to a carrier and then remain at the receiving facility. Find selected carriers along the covered route, arrange collection after delivery and return them for the next shipment, with any temperature requirement specified alongside location reporting.",
+      "objective": "Find reusable cool boxes and arrange post-delivery collection.",
+      "monitoringPoint": "Exterior pocket or protective bracket that preserves insulation, lid sealing and cleaning access.",
+      "projectBrief": "Box construction, cleaning method, route and retrieval plan; attachment that preserves insulation and seals, plus separately specified temperature requirements.",
+      "image": {
+        "name": "cold-chain-box.webp",
+        "alt": "Insulated cold-chain transport boxes at a logistics handover area",
+        "caption": "Bring reusable cool boxes back after delivery.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "medical-instruments",
+      "group": "valuable-sensitive-assets",
+      "title": "Portable Medical Equipment",
+      "tagline": "Collect medical equipment between facility assignments.",
+      "description": "A portable diagnostic device may be shared by clinics, outreach teams and a service center. Find the dedicated transport trolley or case carrying it, organize collection for the next facility and keep the device identity linked to that carrier. The mounting must preserve normal equipment access.",
+      "objective": "Find medical transport carriers and organize collection between facilities.",
+      "monitoringPoint": "Dedicated transport-trolley frame or equipment-case pocket, clear of clinical interfaces, handles and service access.",
+      "projectBrief": "Device and carrier IDs, transfer sites, case or trolley construction and equipment access; room-level finding specified separately if required.",
+      "image": {
+        "name": "medical-mobile-assets-v2.webp",
+        "alt": "Portable medical equipment in a dedicated protective case on a transport trolley.",
+        "caption": "Track the dedicated carrier while preserving access to the medical equipment.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "laboratory-instruments",
+      "group": "valuable-sensitive-assets",
+      "title": "Portable Laboratory & Test Instruments",
+      "tagline": "Find the instrument due for calibration or return.",
+      "description": "An instrument due for calibration may still be with a project team or a customer. Locate its carrying case, arrange collection for the calibration provider and return the set before the next booking. Link the case to the instrument record so similar test kits are not confused.",
+      "objective": "Find instrument cases for calibration, loan return and the next booking.",
+      "monitoringPoint": "Transport-case pocket or carrying-frame bracket clear of handles, padding and service openings.",
+      "projectBrief": "Instrument and case IDs, calibration and loan schedules, transport route and antenna clearance; any handling measurements specified for the project.",
+      "image": {
+        "name": "laboratory-instrument-case.webp",
+        "alt": "Specialist laboratory instrument packed in a protective transport case",
+        "caption": "Find the instrument due for calibration or return.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "electronics-consignments",
+      "group": "valuable-sensitive-assets",
+      "title": "Electronics & Technology Consignments",
+      "tagline": "Find technology shipments before the receiving appointment.",
+      "description": "Deployment equipment may wait at a distribution hub while the installation site prepares to receive it. Locate the selected shipping cases, confirm the holding point for collection and organize delivery for the booked receiving slot. Plan tracker retrieval when the equipment is unpacked or the case returns.",
+      "objective": "Find selected technology cases and coordinate delivery and tracker retrieval.",
+      "monitoringPoint": "Protected shipping-case compartment or exterior bracket with antenna clearance.",
+      "projectBrief": "Shipment IDs, receiving slots, route stages, packaging and retrieval responsibility; applicable battery carriage and optional condition-measurement requirements.",
+      "image": {
+        "name": "cargo-electronics.webp",
+        "alt": "Protective shipping cases for valuable electronic equipment",
+        "caption": "Find technology shipments before the receiving appointment.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "luxury-goods-consignments",
+      "group": "valuable-sensitive-assets",
+      "title": "Luxury Goods & Valuable Merchandise",
+      "tagline": "Find protected merchandise cases at each collection point.",
+      "description": "Valuable merchandise may move through a specialist carrier, temporary storage and an event or retail site. Locate the approved transport case at covered collection points and use the consignment record to arrange the next transfer. Access to shipment information stays with the authorized parties managing it.",
+      "objective": "Locate selected merchandise cases and organize authorized collection.",
+      "monitoringPoint": "Protected transport-case pocket or discreet exterior bracket that preserves packing and antenna access.",
+      "projectBrief": "Shipment identity, carrier handling, data access and retrieval; protected case attachment and any separately specified opening or condition measurement.",
+      "image": {
+        "name": "luxury-transport-case.webp",
+        "alt": "Protected merchandise transport cases prepared for logistics handover",
+        "caption": "Find protected merchandise cases at each collection point.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "art-museum-transport",
+      "group": "valuable-sensitive-assets",
+      "title": "Museum Collections & Art Transport",
+      "tagline": "Find exhibition crates for delivery and return.",
+      "description": "An exhibit crate may travel from storage to conservation and then to an exhibition venue. Locate the carrier at covered transport stages, organize receiving and return collection, and connect the crate to the collection record. Packaging and any environmental measurements must suit the conservation requirements.",
+      "objective": "Locate collection crates and plan exhibition delivery or return.",
+      "monitoringPoint": "Crate exterior or dedicated pocket, clear of artwork contact, rigging and conservation materials.",
+      "projectBrief": "Crate IDs, transport stages, conservation materials and authorized access; location reporting and any environmental or handling channels specified separately.",
+      "image": {
+        "name": "museum-art-transit.webp",
+        "alt": "Protective art transport crates in a museum logistics area",
+        "caption": "Find exhibition crates for delivery and return.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "valuable-spares-shipments",
+      "group": "valuable-sensitive-assets",
+      "title": "Critical Spare Parts Shipments",
+      "tagline": "Find the part shipment needed for a scheduled repair.",
+      "description": "A replacement part may pass through a supplier and regional depot before reaching the repair site. Locate its shipping case at covered stages, organize collection for the planned repair and connect the shipment to the work order. Arrange tracker recovery after the part has been delivered.",
+      "objective": "Find critical-part cases and coordinate delivery for the repair schedule.",
+      "monitoringPoint": "Shipping-case pocket or transport-skid bracket clear of seals and handling contact.",
+      "projectBrief": "Part, consignment and tracker IDs, repair receiving date, route service and reporting; clear tracker-return responsibility.",
+      "image": {
+        "name": "critical-spare-case.webp",
+        "alt": "Industrial spare part secured inside a protective shipping case",
+        "caption": "Find the part shipment needed for a scheduled repair.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rental-generators",
+      "group": "rental-field-service",
+      "title": "Rental Generators",
+      "tagline": "Collect generators when the rental ends.",
+      "description": "A generator may remain on a finished project while the rental team is arranging several returns. Find the unit assigned to that customer, group collection by site and bring it back to the correct depot. Use the contract and asset records together to prepare the next rental.",
+      "objective": "Find ended-rental generators and organize collection to the depot.",
+      "monitoringPoint": "Exterior chassis or enclosure bracket away from exhaust heat and service openings.",
+      "projectBrief": "Unit IDs, contracts, customer sites, collection dates and heat exposure; reports suited to delivery, long site stays and return.",
+      "image": {
+        "name": "rental-equipment.webp",
+        "alt": "Towable rental generator parked at an outdoor project site",
+        "caption": "Collect generators when the rental ends.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rental-compressors",
+      "group": "rental-field-service",
+      "title": "Rental Compressors",
+      "tagline": "Find the compressor ready for customer pickup.",
+      "description": "The crew may finish before the portable compressor is collected from the site. Locate the rented unit, match it to the pickup list and arrange its return for the next booking. Keeping each compressor tied to its own asset record helps branches collect the correct unit.",
+      "objective": "Locate rented compressors and arrange contract-end pickup.",
+      "monitoringPoint": "Fixed chassis bracket clear of heat discharge, hoses, towing parts and access panels.",
+      "projectBrief": "Unit IDs, rental sites, deployment duration and pickup schedule; mounting clear of hoses, heat discharge and towing parts.",
+      "image": {
+        "name": "portable-compressor.webp",
+        "alt": "Portable rental compressor positioned at an outdoor worksite",
+        "caption": "Find the compressor ready for customer pickup.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rental-light-towers",
+      "group": "rental-field-service",
+      "title": "Rental Light Towers",
+      "tagline": "Collect light towers across the closing project area.",
+      "description": "Light towers can be spread around a roadwork area, construction site or event ground. Locate the tracked units when the assignment closes, organize collection across those positions and return the set to the rental depot. Keep the tower identifiers connected to the customer’s equipment list.",
+      "objective": "Find deployed light towers and organize project-end collection.",
+      "monitoringPoint": "Base chassis bracket clear of mast travel, stabilizers, towing contact and controls.",
+      "projectBrief": "Tower IDs, deployment areas, dwell time and transport handling; bracket clearance through mast, stabilizer and towing operations.",
+      "image": {
+        "name": "rental-light-tower.webp",
+        "alt": "Mobile light tower deployed at an outdoor worksite",
+        "caption": "Collect light towers across the closing project area.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rental-tool-kits",
+      "group": "rental-field-service",
+      "title": "Rental Tools & Equipment Kits",
+      "tagline": "Find the rental case needed for return or the next booking.",
+      "description": "A specialist tool set may travel as one case through a branch, contractor and customer site. Locate the case due for return and arrange collection before its next booking. Track the kit as a complete asset, with a separate inventory process for the tools inside it.",
+      "objective": "Find rented tool cases and organize return before the next booking.",
+      "monitoringPoint": "Protected carrying-case pocket or kit-frame bracket clear of closures and stacking contact.",
+      "projectBrief": "Kit IDs, customer sites, case construction and return dates; individual-tool identification or indoor finding included only when separately specified.",
+      "image": {
+        "name": "rental-tool-case.webp",
+        "alt": "Protective case containing a specialist rental tool kit",
+        "caption": "Find the rental case needed for return or the next booking.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "service-parts-kits",
+      "group": "rental-field-service",
+      "title": "Service Parts & Field Repair Kits",
+      "tagline": "Find the kit that needs replenishment or collection.",
+      "description": "A service kit may stay at a regional store or customer facility after the job has finished. Locate the case assigned to that work order, arrange replenishment at its holding site and return it to the depot when needed. Keep kit identity connected to the parts record.",
+      "objective": "Find service kits for replenishment and job-end return.",
+      "monitoringPoint": "Protected service-case pocket or rack bracket with antenna clearance and clear kit access.",
+      "projectBrief": "Kit and work-order IDs, regional stores, customer sites and replenishment process; any indoor location requirement identified for the deployment.",
+      "image": {
+        "name": "field-tools.webp",
+        "alt": "Industrial service parts and repair tools arranged in a transport kit",
+        "caption": "Find the kit that needs replenishment or collection.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "mobile-energy-storage",
+      "group": "rental-field-service",
+      "title": "Mobile Battery & Energy Systems",
+      "tagline": "Collect and reassign mobile battery platforms.",
+      "description": "A mobile battery platform may be deployed at an event, temporary facility or remote worksite. Locate the unit when its assignment ends, arrange transport to the next customer or regional depot and keep the platform identity connected to the booking. Equipment-status integration is specified separately if needed.",
+      "objective": "Find mobile battery platforms and organize collection or reassignment.",
+      "monitoringPoint": "Mobile battery-platform frame, clear of electrical connections, ventilation, lifting points and service access.",
+      "projectBrief": "Platform IDs, routes, collection cycles, electrical and ventilation clearance; reporting needs and any separately specified equipment-status interface.",
+      "image": {
+        "name": "mobile-energy-v2.webp",
+        "alt": "Mobile battery energy-storage modules secured to a carrier with a clear outer frame panel.",
+        "caption": "Locate mobile battery platforms for collection and their next deployment.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "ebike-fleets",
+      "group": "mobility-emergency",
+      "title": "E-Bike Fleets",
+      "tagline": "Find fleet bikes for service or seasonal storage.",
+      "description": "Fleet e-bikes may be held by local teams, partner operators or workshops when a collection round is planned. Locate the bikes on the service or storage list, organize pickup and return them to the appropriate base, keeping each bike’s identity through changes of partner or operating region.",
+      "objective": "Find listed fleet bikes and organize service or storage collection.",
+      "monitoringPoint": "Protected external bracket on a dedicated rear carrier, clear of batteries, wiring, brakes, wheels and cargo access.",
+      "projectBrief": "Bike types, fleet IDs, bracket space, operating zones and authorized access; reporting intervals and operator service for the selected radio.",
+      "image": {
+        "name": "ebike-depot.webp",
+        "alt": "Fleet e-bikes parked in an outdoor operating area",
+        "caption": "Find fleet bikes for service or seasonal storage.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "motorcycle-fleets",
+      "group": "mobility-emergency",
+      "title": "Motorcycles & Scooter Fleets",
+      "tagline": "Find fleet motorcycles for branch or workshop transfers.",
+      "description": "A motorcycle or scooter may need to move from a partner’s operating base to a workshop or another branch. Locate the assigned unit and organize collection using the fleet record. Use a dedicated external rear carrier bracket, separate from engine and control components.",
+      "objective": "Find assigned motorcycles and arrange branch or workshop collection.",
+      "monitoringPoint": "External rear carrier-rack bracket with antenna clearance and unobstructed lights, seating and cargo access.",
+      "projectBrief": "Vehicle IDs, rear carrier-rack geometry, routes and report timing; installation clear of lights, seating and cargo use.",
+      "image": {
+        "name": "motorcycle-fleet-v2.webp",
+        "alt": "Motorcycle with a rear carrier rack and a clear external mounting panel at a fleet workshop.",
+        "caption": "Find fleet motorcycles for service, storage and transfers between branches.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "portable-aeds",
+      "group": "mobility-emergency",
+      "title": "Portable AEDs & Deployment Cases",
+      "tagline": "Collect portable AED cases after an event or assignment.",
+      "description": "A portable AED kit may be issued to an event team or temporary facility and then need to return to shared storage. Locate its dedicated transport case, arrange collection and return the identified kit to the correct base, preserving immediate access to the medical equipment.",
+      "objective": "Find AED transport cases and organize return after deployment.",
+      "monitoringPoint": "Dedicated AED transport-case exterior pocket or bracket, preserving immediate device access and carrying instructions.",
+      "projectBrief": "Kit and case IDs, event or deployment sites and collection dates; mounting that preserves access, with indoor finding separately specified if needed.",
+      "image": {
+        "name": "portable-aed-case-v2.webp",
+        "alt": "Portable AED in a dedicated protective transport case with a separate exterior recessed panel.",
+        "caption": "Keep deployment and return records tied to the identified AED transport case.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rescue-equipment",
+      "group": "mobility-emergency",
+      "title": "Rescue Kits & Field Response Equipment",
+      "tagline": "Find shared rescue cases for collection or reissue.",
+      "description": "A rescue equipment case may be left at a training ground or temporary field base after the team’s assignment. Locate the shared kit, organize collection and return it to the store that issues the next deployment. Use the case identifier to distinguish similar sets across regional teams.",
+      "objective": "Find rescue cases and arrange collection or reissue.",
+      "monitoringPoint": "Protected case pocket or fixed equipment-frame bracket clear of rapid-access and handling points.",
+      "projectBrief": "Kit IDs, bases, training and field locations, authorized access and collection cycles; radio service appropriate to the deployment region.",
+      "image": {
+        "name": "emergency-rescue.webp",
+        "alt": "Rescue equipment packed in a field response transport case",
+        "caption": "Find shared rescue cases for collection or reissue.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "portable-fire-equipment",
+      "group": "mobility-emergency",
+      "title": "Portable Firefighting Equipment",
+      "tagline": "Return shared firefighting kits to the right station.",
+      "description": "Portable hose kits and firefighting support equipment may be shared between stations and training sites. Locate the identified case or unit after the assignment, arrange collection and return it to the correct station. Clear asset identity helps the stores team distinguish equipment issued to different teams.",
+      "objective": "Find shared firefighting equipment and organize return to its base.",
+      "monitoringPoint": "Protected carrying-case or equipment-frame bracket clear of controls, hose access and lifting points.",
+      "projectBrief": "Equipment IDs, stations, deployment dates and exposure; accessible frame or case mounting, with hazardous-area suitability assessed separately where relevant.",
+      "image": {
+        "name": "portable-firefighting-equipment.webp",
+        "alt": "Portable firefighting equipment in an outdoor deployment area",
+        "caption": "Return shared firefighting kits to the right station.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "emergency-mobile-pumps",
+      "group": "mobility-emergency",
+      "title": "Emergency Mobile Pumps",
+      "tagline": "Collect pumps from temporary drainage or response sites.",
+      "description": "A mobile pump may remain at a temporary drainage or flood-control site after its assignment ends. Locate the identified unit, arrange collection and move it back to shared storage or the next planned deployment. Use the asset record to send the correct transport team to its holding area.",
+      "objective": "Find assigned mobile pumps and organize site collection.",
+      "monitoringPoint": "Pump-frame or trailer chassis bracket away from heat, couplings and rotating parts.",
+      "projectBrief": "Pump IDs, field locations, expected exposure and transport handling; reporting during deployment and recovery, with clear mounting around heat and couplings.",
+      "image": {
+        "name": "mobile-water-pump.webp",
+        "alt": "Trailer-mounted mobile water pump at an outdoor deployment site",
+        "caption": "Collect pumps from temporary drainage or response sites.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "site-cable-drums",
+      "group": "materials-infrastructure",
+      "title": "Site Cable Drums",
+      "tagline": "Find cable drums for installation, then recover the carrier.",
+      "description": "The cable installation crew needs the correct drum at the right staging point. Locate the identified drum or its assigned transport stand, arrange delivery against the material list and collect the reusable carrier when installation is complete. Keep the drum linked to the cable batch and project package.",
+      "objective": "Find cable drums for installation delivery and carrier recovery.",
+      "monitoringPoint": "Protected outer flange or drum-stand bracket clear of winding paths, rolling contact and rigging.",
+      "projectBrief": "Drum, cable-batch and carrier IDs; maintain the drum-to-stand association. Define handling clearance, reporting and tracker recovery after use.",
+      "image": {
+        "name": "materials-yard.webp",
+        "alt": "Large cable drums stored in an outdoor infrastructure materials yard",
+        "caption": "Find cable drums for installation, then recover the carrier.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "steel-material-bundles",
+      "group": "materials-infrastructure",
+      "title": "Steel Bundles & Fabricated Sections",
+      "tagline": "Follow the reusable cradle carrying the steel batch.",
+      "description": "A steel batch may travel between fabrication, storage and the installation site on a reusable cradle. Locate that carrier, match its identity to the material batch and arrange the next delivery or return. Mount the tracker on the dedicated cradle rather than directly on bare steel sections.",
+      "objective": "Find steel transport cradles and connect deliveries to material batches.",
+      "monitoringPoint": "Exterior bracket on a dedicated reusable transport cradle, clear of rigging, fork paths and unloading contact.",
+      "projectBrief": "Cradle and batch IDs, route stages, fork and rigging paths, antenna clearance and carrier return; tracker retained on the dedicated cradle.",
+      "image": {
+        "name": "steel-bundle-yard-v2.webp",
+        "alt": "Banded steel sections on a reusable transport cradle with a protected outside panel.",
+        "caption": "Link the cradle to the steel batch for delivery, collection and return.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "formwork-scaffolding",
+      "group": "materials-infrastructure",
+      "title": "Formwork & Scaffolding Sets",
+      "tagline": "Collect reusable sets as each project phase closes.",
+      "description": "Formwork and scaffolding can stay behind when a construction phase ends. Locate the tracked rack or set, arrange collection from the site and return it to the yard that supplies the next contract. Keep the set record separate from the inventory of individual panels or components.",
+      "objective": "Find formwork or scaffolding sets and plan project-end collection.",
+      "monitoringPoint": "Rack or set-frame bracket clear of stacking pressure, lifting hooks and assembly interfaces.",
+      "projectBrief": "Rack or set IDs, project dates, stacking and lifting contact, storage yards and return process; separate component inventory where needed.",
+      "image": {
+        "name": "formwork-rack.webp",
+        "alt": "Reusable formwork panels secured on an outdoor transport rack",
+        "caption": "Collect reusable sets as each project phase closes.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "railway-service-equipment",
+      "group": "materials-infrastructure",
+      "title": "Railway Service & Maintenance Equipment",
+      "tagline": "Find maintenance equipment after the work package closes.",
+      "description": "Portable railway service equipment may be shared across depots, contractor yards and trackside work areas. Locate the unit or case assigned to a completed work package, arrange collection and return it to the correct depot before the next job. Keep its identity connected to the equipment issue record.",
+      "objective": "Find railway service assets and organize worksite collection.",
+      "monitoringPoint": "Fixed equipment-frame bracket clear of working controls, safety labels and service access.",
+      "projectBrief": "Asset IDs, corridor and depot locations, site installation requirements and collection dates; operator service along the maintenance deployment route.",
+      "image": {
+        "name": "railway-service-assets.webp",
+        "alt": "Railway maintenance equipment at an outdoor trackside work area",
+        "caption": "Find maintenance equipment after the work package closes.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "port-terminal-machinery",
+      "group": "materials-infrastructure",
+      "title": "Port & Terminal Machinery",
+      "tagline": "Find terminal assets for allocation or service transfer.",
+      "description": "Handling assets may be held in different terminal areas or maintenance yards when another team needs them. Locate the identified unit within the port’s covered operating areas and arrange a transfer or service collection. Use asset identity to distinguish equipment shared between terminal operators and service providers.",
+      "objective": "Locate terminal assets and arrange internal or service transfers.",
+      "monitoringPoint": "Fixed exterior frame bracket clear of working mechanisms, load interfaces and service access.",
+      "projectBrief": "Terminal zones, asset IDs, installation constraints and reporting needs; terrestrial cellular service and antenna shielding assessed across the port.",
+      "image": {
+        "name": "port-handling-machinery.webp",
+        "alt": "Mobile cargo-handling machinery in a coastal port terminal",
+        "caption": "Find terminal assets for allocation or service transfer.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "airport-ground-equipment",
+      "group": "materials-infrastructure",
+      "title": "Airport Ground Support Equipment",
+      "tagline": "Find ground equipment across terminals and service areas.",
+      "description": "An airport tug or baggage asset may be at another terminal, a storage zone or a maintenance area. Locate the unit assigned to a transfer request and arrange collection with the responsible service team. Keep the asset identifier consistent when equipment passes between ground-service providers.",
+      "objective": "Find assigned ground equipment and arrange terminal or maintenance transfers.",
+      "monitoringPoint": "Fixed frame bracket clear of couplings, controls, loading surfaces and maintenance access.",
+      "projectBrief": "Equipment IDs, terminal zones, airside installation requirements and data owners; local service and separately specified indoor zone requirements.",
+      "image": {
+        "name": "airport-ground-equipment.webp",
+        "alt": "Airport ground support tug and baggage equipment on an apron",
+        "caption": "Find ground equipment across terminals and service areas.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "agv-fleet-transfers",
+      "group": "factory-site-transfers",
+      "title": "AGV Fleet Deployment & Transfers",
+      "tagline": "Locate AGVs during deployment and transfers between sites.",
+      "description": "AGVs move between manufacturers, receiving plants and service centers before returning to production. Associate the tracker with the AGV’s unit ID and use configured location reports to coordinate delivery, collection and reassignment. Match coverage and reporting to each transfer route. For indoor zone finding, include the building layout and local positioning requirements in the project.",
+      "objective": "Locate AGV units during delivery, site reassignment and service return.",
+      "monitoringPoint": "Protected bracket on a fixed AGV body panel, clear of safety scanners, tow coupling, wheels, charging contacts and service access.",
+      "projectBrief": "AGV unit IDs, transfer and service routes, receiving sites, available mounting space, coverage and reporting needs; building layout when indoor zone finding is required.",
+      "image": {
+        "name": "factory-agv-v3.webp",
+        "alt": "Industrial towing AGV with a wheeled chassis, safety scanner and rear tow coupling in a factory dispatch bay.",
+        "caption": "Coordinate AGV delivery, site transfers and service returns.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "factory-transport-trolleys",
+      "group": "factory-site-transfers",
+      "title": "Factory Transport Trolleys",
+      "tagline": "Find trolleys at loading-bay and building transfer points.",
+      "description": "Trolley pools can spread between loading bays, production buildings and supplier collection points. Locate the tracked trolley needed for a pickup and return it to the appropriate pool. Outdoor transfer reporting and any indoor finding are specified around the actual route through the buildings.",
+      "objective": "Find trolleys for loading-bay collection and pool return.",
+      "monitoringPoint": "Fixed trolley side-frame bracket clear of castors, nesting contact, fork paths and load placement.",
+      "projectBrief": "Trolley IDs, loading-bay routes, nesting and handling details; outdoor reporting and any separately designed indoor positioning infrastructure.",
+      "image": {
+        "name": "factory-trolley-v2.webp",
+        "alt": "Factory parts trolley with a fixed end-frame panel at an open loading bay.",
+        "caption": "Locate selected trolleys for loading-bay collection and return.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "production-jigs-fixtures",
+      "group": "factory-site-transfers",
+      "title": "Production Jigs & Fixtures",
+      "tagline": "Find tooling held by a supplier or repair partner.",
+      "description": "A jig or fixture may be at a subcontractor or repair workshop when production needs it back. Locate its carrying frame or case, arrange collection and return the identified tooling to the required plant. Specify indoor finding where the relevant storage bay forms part of that workflow.",
+      "objective": "Find tooling carriers and organize supplier or repair return.",
+      "monitoringPoint": "Carrying-frame or transport-case bracket clear of precision surfaces and locating features.",
+      "projectBrief": "Tooling and carrier IDs, partner sites, precision-surface protection and required storage detail; positioning infrastructure matched to transport and any indoor finding.",
+      "image": {
+        "name": "production-fixture.webp",
+        "alt": "Industrial production jig mounted on a protected transport frame",
+        "caption": "Find tooling held by a supplier or repair partner.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "production-moulds",
+      "group": "factory-site-transfers",
+      "title": "Injection & Casting Moulds",
+      "tagline": "Locate the transport frame or crate carrying the mould.",
+      "description": "A mould moves between the toolmaker, production, storage and specialist repair on a dedicated protective transport frame or in a crate. Locate that carrier, link it to the tooling record and arrange collection for the next site. Keep the attachment clear of the mould’s precision surfaces.",
+      "objective": "Find mould carriers and arrange toolmaker, plant or repair transfers.",
+      "monitoringPoint": "Exterior bracket or protected pocket on the dedicated mould transport frame or crate, clear of fork paths, rigging and precision tooling surfaces.",
+      "projectBrief": "Mould and carrier IDs, transfer sites, lifting and handling clearances; transport reporting and any separately designed indoor finding.",
+      "image": {
+        "name": "production-mould-v2.webp",
+        "alt": "Closed industrial mould secured inside a dedicated transport frame with a protected external panel.",
+        "caption": "Track the mould carrier while keeping attachment clear of precision tooling surfaces.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "production-returnable-racks",
+      "group": "factory-site-transfers",
+      "title": "Returnable Production Racks",
+      "tagline": "Bring empty production racks back from plant and supplier sites.",
+      "description": "Dedicated component racks often return empty through a different process from the parts they delivered. Locate tracked racks at supplier or plant collection points, group the return load and bring the carriers back for the next production shipment. Specify indoor finding where warehouse zones matter to collection.",
+      "objective": "Find empty-rack holdings and group returns for the next shipment.",
+      "monitoringPoint": "Protected rack-frame bracket clear of stacking points, component seating and forklift access.",
+      "projectBrief": "Rack IDs, component seating, supplier routes and return cycles; site-level reports and any separately specified warehouse-zone infrastructure.",
+      "image": {
+        "name": "production-rack.webp",
+        "alt": "Dedicated component transport racks at a factory logistics handover area",
+        "caption": "Bring empty production racks back from plant and supplier sites.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "forklift-fleet-transfers",
+      "group": "factory-site-transfers",
+      "title": "Forklift Fleet Transfers",
+      "tagline": "Find forklifts assigned to a site or service transfer.",
+      "description": "A forklift scheduled for transfer may be at a factory yard, rental partner or service workshop. Locate the unit on the transfer list and arrange collection to the required site. Use its fleet identity through the move, with indoor finding specified separately where the holding area is inside a building.",
+      "objective": "Find assigned forklifts and organize site or workshop collection.",
+      "monitoringPoint": "Fixed frame bracket clear of mast travel, charging or refueling access and controls.",
+      "projectBrief": "Fleet IDs, transfer routes, site and workshop locations, installation clearance and reporting; any indoor finding designed for the required holding zones.",
+      "image": {
+        "name": "forklift-transfer.webp",
+        "alt": "Forklifts parked in an outdoor factory equipment transfer yard",
+        "caption": "Find forklifts assigned to a site or service transfer.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    }
+  ],
+  "series": {
+    "description": "Choose H300 for 4G or H500 for NB-IoT. We match the device configuration to your asset, operating region and reporting requirements, including the attachment and platform connection.",
+    "models": [
+      {
+        "id": "H300",
+        "connectivity": "4G",
+        "description": "4G asset tracking for your equipment, reusable packaging and cargo project. Match the modem, SIM service and reporting profile to the places your assets travel."
+      },
+      {
+        "id": "H500",
+        "connectivity": "NB-IoT",
+        "description": "NB-IoT asset tracking for a deployment served by compatible operators. Match local service, SIM arrangements and update requirements across every site or route stage."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Start with the asset",
+        "text": "Asset or carrier ID · Available mounting space · Handling and return process"
+      },
+      {
+        "title": "Choose the reporting profile",
+        "text": "Sites and routes · Update requirements · Service interval · Additional sensing"
+      },
+      {
+        "title": "Connect the workflow",
+        "text": "H300 4G or H500 NB-IoT · Operator service · Platform fields and recipients"
+      }
+    ]
+  },
+  "specifications": {
+    "description": "Share the asset type, available mounting space and reporting objective. We can then recommend a model configuration, attachment and data connection, with the corresponding datasheet and quotation.",
+    "rows": [
+      {
+        "label": "H300 connectivity",
+        "value": "4G"
+      },
+      {
+        "label": "H500 connectivity",
+        "value": "NB-IoT"
+      },
+      {
+        "label": "Location requirement",
+        "value": "Outdoor coordinates, approximate site location or a project-specific indoor positioning design"
+      },
+      {
+        "label": "Deployment region",
+        "value": "Countries, operator coverage, modem bands, SIM service and any roaming arrangement"
+      },
+      {
+        "label": "Reporting profile",
+        "value": "Storage intervals, transfer updates and required event notifications"
+      },
+      {
+        "label": "Power and maintenance",
+        "value": "Target service interval, operating conditions and access for maintenance"
+      },
+      {
+        "label": "Mounting and exposure",
+        "value": "Device dimensions, available space, attachment, antenna clearance and site conditions"
+      },
+      {
+        "label": "Platform integration",
+        "value": "Hitelecom Cloud or customer platform; agreed message fields, endpoint and authentication"
+      }
+    ]
+  },
+  "customSensing": [
+    {
+      "name": "Temperature & humidity",
+      "text": "For selected cold-chain, pharmaceutical, storage or museum transport conditions."
+    },
+    {
+      "name": "Tilt & handling events",
+      "text": "For a defined orientation or vibration objective on sensitive equipment and cargo."
+    },
+    {
+      "name": "Opening & light response",
+      "text": "For a project-specific opening event, light measurement or enclosure arrangement."
+    },
+    {
+      "name": "Indoor positioning",
+      "text": "For defined indoor zones or finer location detail with an agreed local infrastructure."
+    }
+  ],
+  "faqHeading": {
+    "intro": "Practical answers for model selection, mounting, location detail, reporting and the data connection your team needs."
+  },
+  "faqs": [
+    {
+      "id": "faq-positioning",
+      "question": "How do we choose between H300 4G and H500 NB-IoT?",
+      "paragraphs": [
+        "H300 uses 4G; H500 uses NB-IoT. Choose between them using the operator service available at your deployment sites and route stages, then review modem bands, SIM arrangements, roaming and the required update schedule. For moving or cross-border assets, validate service across the route. Positioning, power and platform functions are agreed for the selected configuration."
+      ],
+      "evidenceIds": [
+        "manufacturer-confirmation-2026-10-09",
+        "gsma-deployment",
+        "gsma-roaming"
+      ]
+    },
+    {
+      "id": "faq-indoor",
+      "question": "How should we plan tracking inside warehouses or covered sites?",
+      "paragraphs": [
+        "Indoor finding needs a design matched to the required detail: a building, zone, aisle or equipment bay. Buildings, metalwork and covered storage affect reception. For finer indoor positions, a project-specific BLE, Wi-Fi or other local system needs supporting infrastructure and integration. Check that design against the actual mounting point and the locations where the team needs to find the asset."
+      ],
+      "evidenceIds": [
+        "hitelecom-product",
+        "hitelecom-service",
+        "gps-accuracy",
+        "hilti-position"
+      ]
+    },
+    {
+      "id": "faq-battery-profile",
+      "question": "How do reporting intervals affect battery life?",
+      "paragraphs": [
+        "More frequent positioning and reports generally use more energy. Choose the update schedule that helps the team collect, transfer or return the asset, then assess power against network service, operating conditions and maintenance access. The battery-life or service-interval estimate should state the selected configuration and the reporting profile it is based on."
+      ],
+      "evidenceIds": [
+        "hitelecom-product",
+        "hitelecom-datasheet",
+        "dm-faq",
+        "dm-battery"
+      ]
+    },
+    {
+      "id": "faq-geofence",
+      "question": "How should we specify geofence and movement alerts?",
+      "paragraphs": [
+        "Request geofence and movement alerts when they will help the team act on a site transfer or deployment. The supplied tracker and platform scope must include the required events. Specify the boundary, update schedule, timing, recipients and follow-up action, then check that the resulting notification meets the job’s needs under the site’s coverage conditions."
+      ],
+      "evidenceIds": [
+        "hitelecom-product",
+        "dm-geofence"
+      ]
+    },
+    {
+      "id": "faq-mounting",
+      "question": "How is the tracker attached to equipment or packaging?",
+      "paragraphs": [
+        "Use attachment hardware that fits the asset: a frame bracket, protected recess or case pocket may be appropriate, with magnet, screw or strap arrangements considered for the project. Keep lifting paths, stacking faces, closures and service access clear. Check retention and reception on the actual unit, and specify the cleaning, temperature or chemical exposure the enclosure must accommodate."
+      ],
+      "evidenceIds": [
+        "hitelecom-product",
+        "hitelecom-datasheet",
+        "hilti-install",
+        "iec-ip",
+        "gs1-grai"
+      ]
+    },
+    {
+      "id": "faq-regions-routes",
+      "question": "How should we plan cross-border and sea routes?",
+      "paragraphs": [
+        "Check operator service for the selected radio in every country and route stage, including modem bands, SIM arrangements and roaming. H300 uses 4G; H500 uses NB-IoT. Port and inland reporting depends on terrestrial service. For offshore stages, any additional connectivity or recording system needs a separate confirmed design and specification before it is included in the proposal."
+      ],
+      "evidenceIds": [
+        "hitelecom-datasheet",
+        "gsma-deployment",
+        "gsma-roaming",
+        "hilti-country"
+      ]
+    },
+    {
+      "id": "faq-platform",
+      "question": "Can location reports connect to our own platform?",
+      "paragraphs": [
+        "A connection to your own platform is a project option. Share the asset records and location fields the team needs, together with the endpoint, access and notification requirements. MQTT can form part of the agreed integration where included. A sample message and a complete data-path check establish how reports will appear in your dispatch, asset-management or transport workflow."
+      ],
+      "evidenceIds": [
+        "hitelecom-datasheet",
+        "hitelecom-service",
+        "oasis-mqtt"
+      ]
+    },
+    {
+      "id": "faq-customization",
+      "question": "Can the product design and additional sensing be customized?",
+      "paragraphs": [
+        "Yes. Hitelecom offers OEM/ODM review around the asset and its deployment. Photos or drawings help establish available space, attachment, handling, power and connectivity needs. Additional temperature, humidity, tilt or light-based opening measurements can be scoped where useful; the proposal identifies the included channels, performance and platform connection for the supplied configuration."
+      ],
+      "evidenceIds": [
+        "hitelecom-datasheet",
+        "hitelecom-service",
+        "hilti-install"
+      ]
+    }
+  ],
+  "provenance": {
+    "checked": "2026-10-09",
+    "sources": [
+      {
+        "id": "hitelecom-product",
+        "title": "H Series Asset Tracking Sensor",
+        "url": "https://www.hitelecom.com/product/asset-tracking-sensor",
+        "role": "Product-specific primary evidence",
+        "retrieved": "2026-10-09",
+        "ref": "turn104view0",
+        "observed": "Live page opened via web; raw HTML independently downloaded. H200T table, eight features and six applications."
+      },
+      {
+        "id": "hitelecom-datasheet",
+        "title": "Asset Tracking Sensor datasheet, 3 pages",
+        "url": "https://www.hitelecom.com/downloads/asset-tracking-sensor-datasheet.pdf",
+        "role": "Product-specific primary evidence",
+        "retrieved": "2026-10-09",
+        "ref": "turn106view0",
+        "observed": "Direct linked PDF downloaded, file verified as 3-page PDF and text extracted. Eight specification rows on page 3. No revision identifier found in extracted text."
+      },
+      {
+        "id": "hitelecom-service",
+        "title": "IoT Support & Custom Development",
+        "url": "https://www.hitelecom.com/service",
+        "role": "Manufacturer-wide customization support, not an H200T standard-feature list",
+        "retrieved": "2026-10-09",
+        "ref": "turn113search0",
+        "observed": "Hardware customization covers sensing, connectivity, power, interfaces and enclosures. Software customization covers firmware, dashboards, APIs, data models and platform integration."
+      },
+      {
+        "id": "hitelecom-home",
+        "title": "Hitelecom homepage",
+        "url": "https://www.hitelecom.com/",
+        "role": "Manufacturer-wide architecture and customization; lower specificity than product page",
+        "retrieved": "2026-10-09",
+        "ref": "turn113search2",
+        "observed": "General public-cloud 4G/NB-IoT path and customer/Hitelecom platforms; enclosure, firmware and branding OEM/ODM. Asset-tracking card includes LoRa, unlike the H200T page/PDF."
+      },
+      {
+        "id": "gps-accuracy",
+        "title": "GPS Accuracy",
+        "url": "https://www.gps.gov/gps-accuracy",
+        "role": "Primary public positioning explanation and public FAQ topic evidence",
+        "retrieved": "2026-10-09",
+        "ref": "turn109view0",
+        "observed": "Receiver accuracy depends on local signal conditions and device design; buildings, indoor use and reflections can degrade positioning. Government satellite signal accuracy is not a device specification."
+      },
+      {
+        "id": "gsma-deployment",
+        "title": "Enable Seamless Mobile IoT Deployments",
+        "url": "https://www.gsma.com/solutions-and-impact/technologies/internet-of-things/gsma_resources/enable-seamless-mobile-iot-deployments/",
+        "role": "Primary industry connectivity context",
+        "retrieved": "2026-10-09",
+        "ref": "turn105search1",
+        "observed": "2026 deployment guidance flags bands, architecture, supported features and network consistency as interoperability and roaming considerations. Search-index text retrievable; open was 403."
+      },
+      {
+        "id": "gsma-roaming",
+        "title": "Mobile IoT LPWA roaming",
+        "url": "https://www.gsma.com/solutions-and-impact/technologies/internet-of-things/mobile-iot/roaming/",
+        "role": "Primary industry connectivity context",
+        "retrieved": "2026-10-09",
+        "ref": "turn105search5",
+        "observed": "Roaming depends on inter-operator implementation and commercial agreements. This does not establish H200T roaming support. Search-index text retrievable; open was 403."
+      },
+      {
+        "id": "iec-ip",
+        "title": "Ingress Protection ratings",
+        "url": "https://www.iec.ch/ip-ratings",
+        "role": "Primary IP-code context",
+        "retrieved": "2026-10-09",
+        "ref": "turn107search1",
+        "observed": "IP rates enclosure resistance to dust/liquid ingress. IEC TC70 indexed text describes IP67 as dust tight and resistant to temporary immersion; no H200T test report or immersion conditions were published."
+      },
+      {
+        "id": "oasis-mqtt",
+        "title": "MQTT Version 3.1.1, OASIS Standard",
+        "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html",
+        "role": "Primary protocol context",
+        "retrieved": "2026-10-09",
+        "ref": "turn109view3",
+        "observed": "MQTT is a publish/subscribe messaging transport, not a full product integration contract. Implementation/security responsibilities remain with system implementers. H200T MQTT version, QoS, payload and TLS support are not specified."
+      },
+      {
+        "id": "gs1-grai",
+        "title": "Global Returnable Asset Identifier GRAI",
+        "url": "https://www.gs1.org/standards/id-keys/grai",
+        "role": "Primary reusable-asset application context",
+        "retrieved": "2026-10-09",
+        "ref": "turn110search0",
+        "observed": "GS1 identifies reusable transport equipment and tools by type and optionally individually. Useful application evidence; it does not establish H200T GS1, RFID or barcode support. Search-index text retrievable; open was 403."
+      },
+      {
+        "id": "dm-faq",
+        "title": "Yabby GPS FAQ (EoL)",
+        "url": "https://support.digitalmatter.com/609-yabby-gps-faq",
+        "role": "Primary vendor published FAQ topic signal only; no transfer of competitor specs",
+        "retrieved": "2026-10-09",
+        "ref": "turn111view0",
+        "observed": "Published questions include battery life, update rates, missing GPS fix and movement alerts. EoL source is used only to demonstrate topic relevance, not current product recommendation or H200T feature evidence."
+      },
+      {
+        "id": "dm-battery",
+        "title": "Device Battery Life Estimator",
+        "url": "https://support.digitalmatter.com/en_US/devices/device-battery-estimator",
+        "role": "Primary vendor public buyer-configuration topic signal only",
+        "retrieved": "2026-10-09",
+        "ref": "turn112view4",
+        "observed": "Battery estimation depends on deployment parameters; real-world results vary with installation, network, use, temperature and battery quality. No competitor numbers are assigned to H200T."
+      },
+      {
+        "id": "dm-geofence",
+        "title": "How To Guide: Geo-Fences",
+        "url": "https://support.digitalmatter.com/geofences/117-how-to-guide-geo-fences",
+        "role": "Primary vendor public buyer-configuration topic signal only",
+        "retrieved": "2026-10-09",
+        "ref": "turn111view2",
+        "observed": "Public support guide covers boundary setup, alert recipients and dependence of entry/exit statistics on update rate. Its specific platform modes and limits are not H200T claims."
+      },
+      {
+        "id": "hilti-position",
+        "title": "How does the Geo tag find and report its location?",
+        "url": "https://help.ontrack3.hilti.com/hc/en-us/articles/34399864475537-How-does-the-Geo-tag-find-and-report-its-location",
+        "role": "Primary vendor published FAQ topic signal only",
+        "retrieved": "2026-10-09",
+        "ref": "turn112view1",
+        "observed": "Public question covers differing positioning methods, weak satellite reception and approximate cellular location. Hilti Wi-Fi positioning is not assigned to H200T."
+      },
+      {
+        "id": "hilti-country",
+        "title": "Will the Geo tag work anywhere in the world?",
+        "url": "https://help.ontrack3.hilti.com/hc/en-us/articles/34399904619409-Will-the-Geo-tag-work-anywhere-in-the-world",
+        "role": "Primary vendor published FAQ topic signal only",
+        "retrieved": "2026-10-09",
+        "ref": "turn113view0",
+        "observed": "Public question concerns country coverage and gaps at sea. Its country list and supplied SIM do not establish H200T regional support."
+      },
+      {
+        "id": "hilti-install",
+        "title": "How to use the Geo tag",
+        "url": "https://help.ontrack3.hilti.com/hc/en-us/articles/34399832325265-How-to-use-the-Geo-tag",
+        "role": "Primary vendor installation/onboarding topic signal only",
+        "retrieved": "2026-10-09",
+        "ref": "turn111view1",
+        "observed": "Public setup guide covers device activation, securing it to equipment and linking serial number to an asset. No Hilti activation mechanism is assigned to H200T."
+      },
+      {
+        "id": "manufacturer-confirmation-2026-10-09",
+        "title": "Hitelecom manufacturer confirmation: H300 = 4G; H500 = NB-IoT",
+        "role": "Direct manufacturer instruction in this conversation, authoritative for model/radio naming; not an externally published specification",
+        "observed": "User explicitly corrected the product division on 2026-10-09. No per-model accuracy, dimensions, enclosure rating, battery number or temperature limit was supplied."
+      }
+    ],
+    "faqMethod": "Buyer questions synthesized from public primary product/standards information and independently published vendor FAQ topics. Not claimed as Hitelecom customer questions or measured search volumes.",
+    "modelCorrection": "H300/4G and H500/NB-IoT replace the previous H200T model label. Prior website/PDF information is legacy functional background, not separate H300/H500 numerical specifications.",
+    "revision": "V3: clearer industrial towing AGV image and matching direct-asset deployment and transfer description; H300/4G and H500/NB-IoT retained."
+  }
+}
