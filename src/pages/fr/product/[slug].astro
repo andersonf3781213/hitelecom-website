@@ -17,7 +17,7 @@ import WaveDivider from '../../../components/WaveDivider.astro';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const cms = await getCmsProductDetails('fr');
-  return [...Object.values(productSlugs), ...Object.keys(cms)].filter((slug) => slug !== 'tilt-sensor' && slug !== 'temperature-sensor').map((slug) => ({ params: { slug } }));
+  return [...Object.values(productSlugs), ...Object.keys(cms)].filter((slug) => slug !== 'tilt-sensor' && slug !== 'temperature-sensor' && slug !== 'asset-tracking-sensor' && slug !== 'pressure-sensor').map((slug) => ({ params: { slug } }));
 };
 
 const { slug } = Astro.params;

@@ -1,0 +1,1428 @@
+{
+  "seo": {
+    "title": "H300 4G & H500 NB-IoT Asset-Tracking | Hitelecom",
+    "description": "Orten Sie Geräte, verwalten Sie Mehrweg-Assets und verfolgen Sie Fracht mit H300 4G oder H500 NB-IoT. Wählen Sie Ortung und Meldungen für Ihren Einsatz."
+  },
+  "hero": {
+    "description": "Die Asset-Tracking-Sensoren Hitelecom H300 (4G) und H500 (NB-IoT) unterstützen Teams dabei, Geräte, Mehrwegverpackungen und Fracht zwischen Standorten zu orten. Nutzen Sie Standortmeldungen, um Abholung, Rückführung und den nächsten Einsatz zu planen. Wählen Sie das Modell anhand der Netzabdeckung und der Meldeanforderungen und stimmen Sie anschließend Ortungsverfahren, Stromversorgung, Befestigung und Plattformanbindung auf das Objekt ab."
+  },
+  "features": [
+    {
+      "title": "Finden Sie das benötigte Objekt",
+      "text": "Nutzen Sie Standortinformationen, um das Gerät, den Ladungsträger oder den Koffer für den nächsten Auftrag zu finden. Der erforderliche Ortungsdetailgrad wird für das Objekt und seinen Einsatzbereich festgelegt."
+    },
+    {
+      "title": "H300 4G oder H500 NB-IoT",
+      "text": "Zwei Funkmodelle für unterschiedliche Einsätze. Berücksichtigen Sie bei der Auswahl die Unterstützung durch Netzbetreiber an Ihren Standorten und entlang der Transportetappen sowie den erforderlichen Meldeplan."
+    },
+    {
+      "title": "Meldungen, die eine Maßnahme auslösen",
+      "text": "Geofence- oder Bewegungsereignisse können spezifiziert werden, wenn ein Alarm dem Team hilft, eine Abholung zu organisieren, einen Standortwechsel zu prüfen oder einen Einsatz nachzuverfolgen."
+    },
+    {
+      "title": "Standort im Objektdatensatz führen",
+      "text": "Verknüpfen Sie die Identität des Geräts oder Ladungsträgers mit den Standortmeldungen. Nehmen Sie die für die Abhol- und Rückführungsplanung benötigten Plattformkarten, Zeitstempel und Verlaufsdaten in den Projektumfang auf."
+    },
+    {
+      "title": "Für die Einsatzumgebung ausgelegt",
+      "text": "Wählen Sie das Gehäuse entsprechend der Belastung durch Staub, Regen, Reinigung und Handhabung. Die mitgelieferte Spezifikation benennt die Schutzart und die Installationsbedingungen."
+    },
+    {
+      "title": "Stromversorgung für den Einsatzzyklus",
+      "text": "Eingelagerte Geräte und Objekte im Transport benötigen unterschiedliche Aktualisierungspläne. Stimmen Sie die Stromversorgung auf diesen Plan, die Zugänglichkeit für Wartungsarbeiten und das angestrebte Wartungsintervall ab."
+    },
+    {
+      "title": "Einheitliche Einführung in der Flotte",
+      "text": "Planen Sie Aktivierung und Gerätezuordnung so, dass Installateure jeden Tracker mit der richtigen Einheit verknüpfen. Lokale Einrichtungsoptionen, einschließlich NFC, werden bei Bedarf spezifiziert."
+    },
+    {
+      "title": "Am passenden Ladungsträger montieren",
+      "text": "Nutzen Sie einen Geräterahmen, eine geschützte Vertiefung oder eine Halterung am Transportkoffer. Wählen Sie Befestigungselemente, die normale Handhabung, Zugang und Empfang ermöglichen."
+    }
+  ],
+  "positioning": {
+    "description": "Die benötigte Positionsinformation hängt von der Aufgabe ab: ein Außenlager, ein Kundenstandort oder eine bestimmte Innenraumzone. GPS oder BeiDou, mobilfunkbasierte Ortung und lokale Ortungssysteme für Innenräume sind Projektoptionen. Wählen Sie den Ansatz anhand des erforderlichen Detailgrads und der Orte, zwischen denen das Objekt bewegt wird.",
+    "cards": [
+      {
+        "title": "Geräte und Fracht im Außenbereich",
+        "text": "Für Außenlager und Transportetappen kommt eine satellitengestützte Ortung mit GPS oder BeiDou infrage, sofern sie im Lieferumfang enthalten ist. Auch ein geschützter Montagepunkt muss eine geeignete Antennenposition ermöglichen, insbesondere an Metallgeräten oder Transportkoffern.",
+        "project_brief": "Ortungsziel · Ortungskonzept · Antennenposition · Meldehäufigkeit"
+      },
+      {
+        "title": "Ungefähre Standortbestimmung",
+        "text": "Mobilfunk-LBS kann, sofern enthalten, eine ungefähre Positionsbestimmung auf Standortebene unterstützen. Der Nutzen hängt vom verfügbaren Netzbetreiberdienst und dem vom Team benötigten Detailgrad ab. Prüfen Sie das Verfahren daher an den tatsächlichen Abstellorten.",
+        "project_brief": "Netzbetreiberunterstützung · Ortungsdienst · Ortungsziel auf Standortebene · Pilotvalidierung"
+      },
+      {
+        "title": "Geräte in Innenräumen finden",
+        "text": "Für Gebäudezonen, Gänge oder Geräteabstellbereiche ist ein projektspezifisches Innenraumkonzept erforderlich. BLE, Wi-Fi oder eine andere lokale Lösung wird einschließlich Infrastruktur und Integration geprüft; sie wird nicht aus dem Mobilfunkmodell abgeleitet.",
+        "project_brief": "Gebäudegrundriss · Erforderlicher Ortungsdetailgrad · Lokale Infrastruktur · Integration"
+      }
+    ],
+    "installation_text": "Wählen Sie einen geschützten Rahmen, eine Vertiefung oder eine Halterung am Ladungsträger, die normale Handhabung und Wartungszugang freihält. Prüfen Sie Befestigungsfestigkeit und Empfang am tatsächlichen Objekt. Bestätigen Sie anschließend an repräsentativen Standorten und Transportetappen, dass Meldungen die vorgesehene Plattform erreichen."
+  },
+  "workflow": {
+    "profile_text": "Ein Anhänger auf einem Kundenhof benötigt einen Abholplan. Ein Prüfinstrument muss zur Kalibrierung gelangen. Ein Kistenpool muss vor der nächsten Saison zurückkehren. Geben Sie jedem erfassten Objekt eine Identität und einen Aktualisierungsplan, mit dem das zuständige Team diese Aufgabe erledigen kann.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Orten",
+        "text": "Verknüpfen Sie den Tracker mit der Geräte-, Koffer- oder Ladungsträger-ID, damit das Team das richtige Objekt findet."
+      },
+      {
+        "number": "02",
+        "title": "Melden",
+        "text": "Übermitteln Sie die benötigten Standortmeldungen über den gewählten H300-4G- oder H500-NB-IoT-Dienst. Richten Sie den Aktualisierungsplan nach Lagerung, Transport und Abholung aus."
+      },
+      {
+        "number": "03",
+        "title": "Handeln",
+        "text": "Nutzen Sie die Standortinformationen, um Abholungen zu organisieren, Transporte zuzuweisen oder das Objekt in seinen Pool zurückzuführen. Plattformverlauf und Alarme sind enthalten, sofern spezifiziert."
+      }
+    ],
+    "battery_text": "Häufigere Ortungen und Meldungen verbrauchen in der Regel mehr Energie. Legen Sie einen auf die Aufgabe abgestimmten Aktualisierungsplan fest und bewerten Sie dann die Stromversorgung unter Berücksichtigung von Betriebstemperaturen, Netzversorgung und Wartungszugang. Die mitgelieferte Spezifikation des gewählten Modells bildet die Grundlage für die Abschätzung des Wartungsintervalls.",
+    "platform_text": "Integrieren Sie Standortmeldungen in die Objektdatensätze, die Ihr Team bereits verwendet. Eine Anbindung an Hitelecom Cloud oder eine Kundenplattform kann für das Projekt geprüft werden, einschließlich Objekt-IDs, Datenfeldern und Zugriff. MQTT wird berücksichtigt, sofern es Teil des Integrationskonzepts ist."
+  },
+  "applicationSection": {
+    "title": "Transparenz über Ihre Objekte.",
+    "valueHeading": "In Ihrem gesamten Betrieb.",
+    "description": "Entdecken Sie praktische Ortungsaufgaben für Geräte, Mehrwegobjekte und Fracht. Jede Anwendung zeigt, was das Team finden oder abholen muss, wo ein Tracker angebracht werden könnte und welche Einsatzdetails für das Angebot wichtig sind.",
+    "note": "KI-generierte Anwendungsillustrationen zeigen beispielhafte Einsatzumgebungen.",
+    "mountingNote": "Mögliche Montagepunkte müssen Handhabung und Wartungszugang freihalten. Stimmen Sie die Befestigung mit dem Eigentümer des Objekts ab und prüfen Sie Befestigungsfestigkeit und Empfang an der tatsächlichen Einheit."
+  },
+  "groups": [
+    {
+      "id": "construction-agriculture",
+      "title": "Bau- & Landmaschinen",
+      "jumpLabel": "Schwere Maschinen",
+      "intro": "Finden Sie Maschinen, die auf Projekte, landwirtschaftliche Betriebe, Betriebshöfe von Dienstleistern und Werkstätten verteilt sind. Nutzen Sie Geräteidentität und Standortinformationen, um Abholungen zu organisieren, den nächsten Einsatzort zuzuweisen und saisonal eingesetzte Maschinen ins Lager zurückzuführen.",
+      "scenes": [
+        "earthmoving-machinery",
+        "roadwork-machinery",
+        "mobile-lifting-equipment",
+        "agricultural-tractors",
+        "harvesters-seasonal-machinery",
+        "farm-implements"
+      ],
+      "image": {
+        "name": "construction-machinery.webp",
+        "alt": "Bagger und Radlader auf einem Baumaschinenhof",
+        "caption": "Finden Sie die Maschine für den nächsten Einsatzort.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "freight-transport",
+      "title": "Fracht- & Transportmittel",
+      "jumpLabel": "Fracht & Transport",
+      "intro": "Orten Sie den Anhänger, Container, Aufbau oder Ladungsträger, der für die nächste Abholung benötigt wird. Führen Sie das Transportmittel getrennt vom Fahrzeug oder der Ladung, die es gerade bewegt, und planen Sie Meldungen für die abgedeckten Transportetappen.",
+      "scenes": [
+        "truck-fleets",
+        "trailer-pools",
+        "shipping-containers",
+        "industrial-cargo",
+        "swap-bodies",
+        "intermodal-chassis"
+      ],
+      "image": {
+        "name": "commercial-truck.webp",
+        "alt": "Nutzfahrzeug auf einem Verteilhof im Außenbereich",
+        "caption": "Finden Sie Fahrzeuge an Depots, Kundenstandorten und in Werkstätten.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "returnable-logistics-cold-chain",
+      "title": "Mehrweglogistik & Kühlkette",
+      "jumpLabel": "Logistik & Kühlkette",
+      "intro": "Führen Sie Paletten, Kisten, Rollbehälter und Mehrwegladungsträger in den Pool zurück. Wählen Sie die Einheit, deren Ortung sich lohnt, schützen Sie die Befestigung bei Handhabung und Reinigung und spezifizieren Sie zusätzliche Zustandsmessungen für die Aufgabe.",
+      "scenes": [
+        "returnable-pallets",
+        "reusable-crates",
+        "roll-cages",
+        "ibc-containers",
+        "mobile-cold-rooms",
+        "insulated-cold-chain-boxes"
+      ],
+      "image": {
+        "name": "pallet-pooling-v2.webp",
+        "alt": "Industrielle Mehrweg-Kunststoffpalette mit geschützter seitlicher Vertiefung außerhalb der Gabelkanäle.",
+        "caption": "Finden Sie ausgewählte Mehrwegpaletten und planen Sie die Abholung vor dem nächsten Verpackungszyklus.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "valuable-sensitive-assets",
+      "title": "Wertvolle & empfindliche Objekte",
+      "jumpLabel": "Wertvolle Objekte",
+      "intro": "Finden Sie den Schutzkoffer oder Ladungsträger für Kalibrierung, Lieferung, Ausstellung oder Reparatur. Verknüpfen Sie ihn mit dem darin enthaltenen wertvollen Gegenstand und stimmen Sie Zugang und etwaige Zustandsmessungen auf die Sendung ab.",
+      "scenes": [
+        "medical-instruments",
+        "laboratory-instruments",
+        "electronics-consignments",
+        "luxury-goods-consignments",
+        "art-museum-transport",
+        "valuable-spares-shipments"
+      ],
+      "image": {
+        "name": "medical-mobile-assets-v2.webp",
+        "alt": "Tragbares medizinisches Gerät in einem speziellen Schutzkoffer auf einem Transportwagen.",
+        "caption": "Verfolgen Sie den zugeordneten Transportbehälter und halten Sie den Zugang zum medizinischen Gerät frei.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rental-field-service",
+      "title": "Mietgeräte & Außendienstausrüstung",
+      "jumpLabel": "Vermietung & Service",
+      "intro": "Holen Sie die Geräte ab, wenn der Vertrag oder Auftrag endet. Orten Sie Einheiten bei Kunden, führen Sie sie zum richtigen Depot zurück und finden Sie Servicekits, die vor dem nächsten Einsatz aufgefüllt werden müssen.",
+      "scenes": [
+        "rental-generators",
+        "rental-compressors",
+        "rental-light-towers",
+        "rental-tool-kits",
+        "service-parts-kits",
+        "mobile-energy-storage"
+      ],
+      "image": {
+        "name": "rental-equipment.webp",
+        "alt": "Ziehbarer Mietgenerator an einem Projektstandort im Außenbereich",
+        "caption": "Holen Sie Generatoren nach Mietende ab.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "mobility-emergency",
+      "title": "Mobilitäts- & Notfallausrüstung",
+      "jumpLabel": "Mobilität & Einsatz",
+      "intro": "Finden Sie Flottenfahrzeuge für den Service und tragbare Ausrüstung zur Abholung nach einem Einsatz. Erhalten Sie die normale Nutzung und den schnellen Zugriff, während jedes Fahrzeug oder jeder Koffer mit seiner Objektidentität verknüpft bleibt.",
+      "scenes": [
+        "ebike-fleets",
+        "motorcycle-fleets",
+        "portable-aeds",
+        "rescue-equipment",
+        "portable-fire-equipment",
+        "emergency-mobile-pumps"
+      ],
+      "image": {
+        "name": "ebike-depot.webp",
+        "alt": "Flotten-E-Bikes in einem Betriebsbereich im Außenbereich",
+        "caption": "Finden Sie Flottenräder für den Service oder die saisonale Einlagerung.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "materials-infrastructure",
+      "title": "Baustellenmaterial & Infrastrukturausrüstung",
+      "jumpLabel": "Material & Infrastruktur",
+      "intro": "Finden Sie Kabeltrommeln, Materialträger und Spezialausrüstung, die einem Projekt zugewiesen sind. Montieren Sie Tracker an geschützten Rahmen oder Mehrwegladungsträgern, damit Lagerung, Heben, Lieferung und Rückführung ungehindert möglich bleiben.",
+      "scenes": [
+        "site-cable-drums",
+        "steel-material-bundles",
+        "formwork-scaffolding",
+        "railway-service-equipment",
+        "port-terminal-machinery",
+        "airport-ground-equipment"
+      ],
+      "image": {
+        "name": "materials-yard.webp",
+        "alt": "Große Kabeltrommeln auf einem Außenlager für Infrastrukturmaterial",
+        "caption": "Finden Sie Kabeltrommeln für die Installation und holen Sie anschließend den Ladungsträger zurück.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "factory-site-transfers",
+      "title": "Betriebsmittel & Standortwechsel",
+      "jumpLabel": "Produktion & Standortwechsel",
+      "intro": "Bringen Sie Geräte und Werkzeuge in das Werk zurück, das sie benötigt. Verfolgen Sie einzelne Objekte oder die zugehörigen Transportrahmen und Koffer bei Standortwechseln. Nehmen Sie ein lokales Innenraum-Ortungskonzept auf, wenn die Suche nach einer Gebäudezone oder einem Lagerbereich Teil des Projekts ist.",
+      "scenes": [
+        "agv-fleet-transfers",
+        "factory-transport-trolleys",
+        "production-jigs-fixtures",
+        "production-moulds",
+        "production-returnable-racks",
+        "forklift-fleet-transfers"
+      ],
+      "image": {
+        "name": "factory-agv-v3.webp",
+        "alt": "Industrielles Schlepp-AGV mit Räderfahrwerk, Sicherheitsscanner und hinterer Schleppkupplung in einem Versandbereich der Fabrik.",
+        "caption": "Koordinieren Sie AGV-Lieferung, Standortwechsel und Servicerückführung.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "id": "earthmoving-machinery",
+      "group": "construction-agriculture",
+      "title": "Bagger, Radlader & Planierraupen",
+      "tagline": "Finden Sie die Maschine für den nächsten Einsatzort.",
+      "description": "Ein Bagger, der auf einer abgeschlossenen Baustelle verbleibt, kann das nächste Projekt verzögern. Finden Sie heraus, an welchem Standort oder auf welchem Hof sich jede Maschine befindet, organisieren Sie ihre Abholung und weisen Sie den Transport anhand des Gerätedatensatzes zu. Das ist besonders hilfreich, wenn Subunternehmer eine regionale Flotte gemeinsam nutzen.",
+      "objective": "Finden Sie Maschinen zur Abholung und für den nächsten Projekteinsatz.",
+      "monitoringPoint": "Geschützte Halterung außen am Fahrgestell, außerhalb von Hydraulik, beweglichen Gelenken und Wartungsklappen.",
+      "projectBrief": "Maschinen-IDs, Projekthöfe, Lagerzeiten und Transporttermine; ein Meldeplan, der dem Abholzyklus folgt.",
+      "image": {
+        "name": "construction-machinery.webp",
+        "alt": "Bagger und Radlader auf einem Baumaschinenhof",
+        "caption": "Finden Sie die Maschine für den nächsten Einsatzort.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "roadwork-machinery",
+      "group": "construction-agriculture",
+      "title": "Walzen, Fertiger & Straßenbaumaschinen",
+      "tagline": "Verlegen Sie Walzen und Fertiger zwischen kurzen Aufträgen.",
+      "description": "Straßenbauteams wechseln zwischen kurzen Aufträgen, während Geräte bis zur Abholung zurückbleiben können. Orten Sie die Walze oder den Fertiger für den nächsten Auftrag, prüfen Sie den Abstellbereich und organisieren Sie die Abholung vor der Transportbuchung. Nutzen Sie dazu Standortinformationen zusammen mit dem Projektplan.",
+      "objective": "Orten Sie Straßenbaugeräte und organisieren Sie die Abholung für den nächsten Auftrag.",
+      "monitoringPoint": "Feste Halterung am Fahrgestell, entfernt von Asphalthitze, Sprühbereichen und Arbeitsmechanismen.",
+      "projectBrief": "Maschinentyp, Einsatzorte am Straßenrand, Wärmebelastung und Projektwechsel; Meldungen bei Anlieferung, Abstellung und Abholung.",
+      "image": {
+        "name": "roadwork-roller.webp",
+        "alt": "Straßenwalze neben einer Straßenbaustelle im Außenbereich",
+        "caption": "Verlegen Sie Walzen und Fertiger zwischen kurzen Aufträgen.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "mobile-lifting-equipment",
+      "group": "construction-agriculture",
+      "title": "Mobilkrane & Teleskoplader",
+      "tagline": "Finden Sie Hebegeräte, bevor Sie deren Transport organisieren.",
+      "description": "Ein Kran, der für ein neues Projekt eingeplant ist, kann noch am vorherigen Einsatzort oder auf einem Servicehof stehen. Orten Sie die zur Buchung gehörende Einheit und organisieren Sie ihren Transport mit dem Projektteam. Verknüpfen Sie dabei die Geräteidentität mit dem Auftrag, statt auf separate telefonische Rückmeldungen angewiesen zu sein.",
+      "objective": "Orten Sie zugewiesene Hebegeräte und planen Sie ihren Standortwechsel.",
+      "monitoringPoint": "Feste Halterung am Fahrgestell, außerhalb von Auslegerbewegung, Gegengewichten, Bedienelementen und Wartungszugang.",
+      "projectBrief": "Flotten-IDs, Einsatzorte, Transporttermine und Freiraum am Fahrgestell; der Ortungsdetailgrad, den Geräte- und Projektteams benötigen.",
+      "image": {
+        "name": "mobile-crane.webp",
+        "alt": "Mobilkran auf einem industriellen Projektgelände im Außenbereich",
+        "caption": "Finden Sie Hebegeräte, bevor Sie deren Transport organisieren.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "agricultural-tractors",
+      "group": "construction-agriculture",
+      "title": "Landwirtschaftliche Traktoren",
+      "tagline": "Finden Sie gemeinsam genutzte Traktoren auf Höfen und Betriebshöfen von Dienstleistern.",
+      "description": "Ein von mehreren landwirtschaftlichen Betrieben genutzter Traktor kann während einer Saison mehrfach den Abstellort wechseln. Finden Sie die Einheit für den nächsten Betrieb, organisieren Sie ihre Abholung und halten Sie die Geräteliste des Eigentümers aktuell, während der Traktor zwischen Betriebshöfen von Dienstleistern, landwirtschaftlichen Betrieben und Werkstätten wechselt.",
+      "objective": "Finden Sie gemeinsam genutzte Traktoren und weisen Sie Abholungen zwischen landwirtschaftlichen Aufträgen zu.",
+      "monitoringPoint": "Geschützte Halterung außen am Rahmen, außerhalb der Bewegungswege von Anbaugeräten und des Wartungszugangs.",
+      "projectBrief": "Betriebsstandorte, Saisonpläne, Netzbetreiberversorgung im ländlichen Raum und Lagerzeiten; Befestigung außerhalb der Bewegung von Anbaugeräten und der Wartungsbereiche.",
+      "image": {
+        "name": "agricultural-machinery-v2.webp",
+        "alt": "Landwirtschaftlicher Traktor mit sichtbarem festem Rahmen hinter der Kabine auf einem Hof für Landmaschinen.",
+        "caption": "Orten Sie gemeinsam genutzte Traktoren auf landwirtschaftlichen Betrieben, Lagerhöfen und bei Servicetransporten.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "harvesters-seasonal-machinery",
+      "group": "construction-agriculture",
+      "title": "Erntemaschinen & saisonal eingesetzte Maschinen",
+      "tagline": "Bringen Sie die richtige Erntemaschine zum nächsten Betrieb.",
+      "description": "Erntemaschinen wechseln zwischen landwirtschaftlichen Betrieben, während die Erntesaison in der Region fortschreitet. Orten Sie jede Einheit nach Abschluss eines Einsatzes, buchen Sie die Abholung für den nächsten Betrieb und bringen Sie sie nach Saisonende zur Lagerung oder Wartung in das richtige Depot zurück.",
+      "objective": "Orten Sie saisonal eingesetzte Maschinen und koordinieren Sie Abholungen zwischen landwirtschaftlichen Betrieben.",
+      "monitoringPoint": "Fester Montagepunkt außen am Rahmen, geschützt vor Kontakt mit Erntegut, Stößen bei der Reinigung und rotierenden Maschinenteilen.",
+      "projectBrief": "Saisonale Routen, Betriebs- und Depotstandorte, Belastung durch Erntegut und Reinigung sowie die benötigten Meldungen rund um die Transporttermine.",
+      "image": {
+        "name": "combine-harvester.webp",
+        "alt": "Mähdrescher neben einem abgeernteten Feld",
+        "caption": "Bringen Sie die richtige Erntemaschine zum nächsten Betrieb.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "farm-implements",
+      "group": "construction-agriculture",
+      "title": "Landwirtschaftliche Anbaugeräte & Feldgeräte",
+      "tagline": "Holen Sie separat vom Traktor abgestellte Anbaugeräte ab.",
+      "description": "Eine Sämaschine oder Feldspritze kann auf dem Feld bleiben, nachdem der Traktor zum Hof zurückgekehrt ist. Geben Sie dem abnehmbaren Anbaugerät eine eigene Objektidentität, finden Sie seinen Abstellort und organisieren Sie die Abholung, wenn ein anderer Betrieb oder Dienstleister dasselbe Gerät benötigt.",
+      "objective": "Finden Sie abgekoppelte Anbaugeräte und organisieren Sie die nächste Abholung.",
+      "monitoringPoint": "Halterung am Anbaugeräterahmen, außerhalb von Klappteilen, Kupplungspunkten und Teilen mit Bodenkontakt.",
+      "projectBrief": "Anbaugeräte-IDs, Feld- und Hofstandorte, Verweilzeiten und Freiraum beim Klappen; ländliche Netzversorgung für die gewählte Funktechnik.",
+      "image": {
+        "name": "farm-implement.webp",
+        "alt": "Landwirtschaftliches Anbaugerät auf einem Außenbereich für Landmaschinen",
+        "caption": "Holen Sie separat vom Traktor abgestellte Anbaugeräte ab.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "truck-fleets",
+      "group": "freight-transport",
+      "title": "Lkw & Nutzfahrzeuge",
+      "tagline": "Finden Sie Fahrzeuge an Depots, Kundenstandorten und in Werkstätten.",
+      "description": "Ein Flottenfahrzeug kann sich an einer Kundenrampe, einem regionalen Depot oder in einer Servicewerkstatt befinden, wenn ein anderes Team es benötigt. Nutzen Sie Standortmeldungen zusammen mit dem Fahrzeugzuordnungsdatensatz, um den Lkw zu finden und eine klare Übergabe zwischen den verantwortlichen Teams zu organisieren.",
+      "objective": "Finden Sie zugewiesene Fahrzeuge und organisieren Sie Wechsel zwischen Depots oder Kundenstandorten.",
+      "monitoringPoint": "Geschützte Halterung am Fahrgestell oder in Kabinennähe, entfernt von Abgaswärme und aufgewirbelten Straßenpartikeln.",
+      "projectBrief": "Flotten-IDs, Einsatzrouten, Aktualisierungshäufigkeit und Plattformfelder; Modem, SIM und Netzbetreiberdienst passend zur jeweiligen Region.",
+      "image": {
+        "name": "commercial-truck.webp",
+        "alt": "Nutzfahrzeug auf einem Verteilhof im Außenbereich",
+        "caption": "Finden Sie Fahrzeuge an Depots, Kundenstandorten und in Werkstätten.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "trailer-pools",
+      "group": "freight-transport",
+      "title": "Anhänger & Sattelauflieger",
+      "tagline": "Holen Sie Anhänger ab, die noch auf Kundenhöfen stehen.",
+      "description": "Ein Anhänger kann auf einem Kundenhof stehen bleiben, nachdem Zugmaschine und Fahrer abgefahren sind. Orten Sie den Anhänger selbst, gleichen Sie ihn mit der Abholliste ab und schicken Sie die nächste Zugmaschine an den richtigen Abstellort. Eigenständige Anhängerdatensätze helfen, den Pool zwischen Kunden und Depots im Umlauf zu halten.",
+      "objective": "Orten Sie Anhänger auf Kundenhöfen und planen Sie ihre Rückführung in den Pool.",
+      "monitoringPoint": "Geschützte Halterung am Fahrgestell, außerhalb von Stützvorrichtungen, Bremsen und Kupplungskomponenten.",
+      "projectBrief": "Anhänger-IDs, Kundenhöfe, Standzeiten und Abholdatensätze; sichere Montage und Meldungen während abgekoppelter Abstellung und Transport.",
+      "image": {
+        "name": "trailer-yard.webp",
+        "alt": "Sattelauflieger auf einem Frachtlogistikhof",
+        "caption": "Holen Sie Anhänger ab, die noch auf Kundenhöfen stehen.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "shipping-containers",
+      "group": "freight-transport",
+      "title": "Container an Depots & Häfen",
+      "tagline": "Finden Sie Container an Abholpunkten im Binnenland und im Hafen.",
+      "description": "Ein Container kann vor der Abholung mehrere Terminals und Depots durchlaufen. Orten Sie ihn an den abgedeckten Transportetappen, nennen Sie dem Spediteur den richtigen Abstellbereich und verknüpfen Sie die Containernummer mit dem Transportdatensatz. Anforderungen an Seereisen werden getrennt von landgestützten Meldungen im Hafen behandelt.",
+      "objective": "Orten Sie Container für abgedeckte Abholetappen im Binnenland und im Hafen.",
+      "monitoringPoint": "Halterung außen am Türrahmen oder im Eckbereich mit Antennenfreiraum, außerhalb der Wege für Verriegelung und Handhabung.",
+      "projectBrief": "Containernummern, Terminals, Transportetappen und landgestützte Mobilfunkversorgung; separat bestätigte Konnektivität oder Aufzeichnung für Anforderungen auf See.",
+      "image": {
+        "name": "container-port.webp",
+        "alt": "Gestapelte Schiffscontainer auf einem küstennahen Terminalgelände",
+        "caption": "Finden Sie Container an Abholpunkten im Binnenland und im Hafen.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "industrial-cargo",
+      "group": "freight-transport",
+      "title": "Großraum- & Industriefracht",
+      "tagline": "Bereiten Sie den Empfangsstandort auf eine übergroße Ladung vor.",
+      "description": "Ein gefertigtes Bauteil kann auf mehreren Bereitstellungshöfen warten, bis das Projekt zur Entladung bereit ist. Verfolgen Sie den Transportrahmen oder die Transportumhausung, finden Sie den Abstellort und organisieren Sie die nächste Lieferung mit dem Empfangsteam. Halten Sie dabei die Ladungsidentität mit dem Versanddatensatz verknüpft.",
+      "objective": "Finden Sie bereitgestellte Industrieladungen und organisieren Sie die Lieferung zum Empfangsstandort.",
+      "monitoringPoint": "Transportgestell, Stahlwiege oder Transportumhausung, außerhalb des Kontakts mit Anschlagmitteln und bei der Entladung.",
+      "projectBrief": "Ladungs- und Rahmen-IDs, Bereitstellungsorte, Freiraum für Anschlagmittel und Zuständigkeit für die Rückholung; erforderliche Zustandsmessungen separat spezifiziert.",
+      "image": {
+        "name": "industrial-cargo-frame.webp",
+        "alt": "Große Industriemaschine auf einem Transportrahmen gesichert",
+        "caption": "Bereiten Sie den Empfangsstandort auf eine übergroße Ladung vor.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "swap-bodies",
+      "group": "freight-transport",
+      "title": "Wechselbrücken & absetzbare Aufbauten",
+      "tagline": "Holen Sie abgesetzte Aufbauten ab, während die Trägerfahrzeuge weiterarbeiten.",
+      "description": "Eine Wechselbrücke kann beim Kunden bleiben, während ihr Trägerfahrzeug den nächsten Auftrag übernimmt. Orten Sie den abgesetzten Aufbau, organisieren Sie die Abholung nach der Entladung und führen Sie ihn zu dem Depot zurück, das ihn als Nächstes benötigt. Der Aufbau behält seine eigene Identität über unterschiedliche Fahrzeugzuordnungen hinweg.",
+      "objective": "Orten Sie abgesetzte Aufbauten und führen Sie sie zum benötigten Depot zurück.",
+      "monitoringPoint": "Feste Halterung am Aufbaugestell, außerhalb von Stützbeinen, Verriegelungen und Fahrzeugschnittstellen.",
+      "projectBrief": "Aufbau-IDs, Wechselnachweise, Kundenstandorte und Verweilzeiten; Montage außerhalb von Stützbeinen und Fahrzeugschnittstellen.",
+      "image": {
+        "name": "swap-body-depot.webp",
+        "alt": "Absetzbarer Frachtaufbau auf Stützbeinen",
+        "caption": "Holen Sie abgesetzte Aufbauten ab, während die Trägerfahrzeuge weiterarbeiten.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "intermodal-chassis",
+      "group": "freight-transport",
+      "title": "Intermodale Chassis & Containerrahmen",
+      "tagline": "Finden Sie leere Chassis für den nächsten Containertransport.",
+      "description": "Ein leeres Chassis kann sich bei einem Straßentransportunternehmen, einem Binnendepot oder einem Hafenbetreiber befinden. Orten Sie das Chassis für eine geplante Containerabholung und organisieren Sie seine Rückführung oder Verlegung, ohne den Lkw oder den Container als Identität des Rahmens zu verwenden.",
+      "objective": "Finden Sie Chassis für geplante Abholungen und Rückführungen in den Pool.",
+      "monitoringPoint": "Geschützte Halterung am Fahrgestellrahmen, entfernt von Kupplungsstößen und aufgewirbelten Straßenpartikeln.",
+      "projectBrief": "Chassis-IDs, Übergabenachweise, Netzversorgung an Terminals und auf Straßen sowie Meldungen während des Umlaufs oder längerer Standzeiten.",
+      "image": {
+        "name": "container-chassis.webp",
+        "alt": "Leeres intermodales Containerchassis auf einem Terminalgelände",
+        "caption": "Finden Sie leere Chassis für den nächsten Containertransport.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "returnable-pallets",
+      "group": "returnable-logistics-cold-chain",
+      "title": "Mehrwegpaletten",
+      "tagline": "Holen Sie höherwertige Paletten von Kundenstandorten zurück.",
+      "description": "Höherwertige Paletten können nach der Entladung der Ware beim Kunden verbleiben. Verfolgen Sie ausgewählte Einheiten, um Standorte mit Mehrwegbeständen zu finden, Abholungen zu sinnvollen Ladungen zusammenzufassen und Paletten vor dem nächsten Verpackungszyklus zurückzuführen. Dies eignet sich für Pools, in denen die Rückholung einzelner Paletten wichtig ist.",
+      "objective": "Finden Sie ausgewählte Paletten und bündeln Sie Rückholungen nach Standort.",
+      "monitoringPoint": "Geschützte Vertiefung im seitlichen Palettenklotz, außerhalb von Gabelkanälen, Stapelflächen und lasttragenden Flächen.",
+      "projectBrief": "Palettenaufbau, geschützte Vertiefung, Freiräume für Gabeln und Stapelung, Einheiten-IDs und Rückführrouten; zum Pool passende Meldekosten.",
+      "image": {
+        "name": "pallet-pooling-v2.webp",
+        "alt": "Industrielle Mehrweg-Kunststoffpalette mit geschützter seitlicher Vertiefung außerhalb der Gabelkanäle.",
+        "caption": "Finden Sie ausgewählte Mehrwegpaletten und planen Sie die Abholung vor dem nächsten Verpackungszyklus.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "reusable-crates",
+      "group": "returnable-logistics-cold-chain",
+      "title": "Mehrwegkisten & Lieferboxen",
+      "tagline": "Führen Sie saisonale Kistenpools zur Wiederverwendung zurück.",
+      "description": "Kistenpools verteilen sich während einer intensiven Liefersaison auf viele Kunden und können anschließend nur langsam zurückkehren. Finden Sie die Abstellorte ausgewählter Kisten, planen Sie die Rückholung nach Partnerstandort und führen Sie sie zur Reinigung und Wiederverwendung zurück. So startet die nächste Saison mit den Behältern, die das Verpackungsteam benötigt.",
+      "objective": "Finden Sie saisonale Kistenbestände und organisieren Sie die Rückholung zur Wiederverwendung.",
+      "monitoringPoint": "Geschützte Vertiefung in einer geschlossenen Kistenwand, außerhalb von Griffen, Stapelflächen und Reinigungskontakt.",
+      "projectBrief": "Vertiefung in einer geschlossenen Wand, Kisten-IDs, Waschverfahren, Stapelkontakt und saisonale Rückführrouten; Befestigung passend zum tatsächlichen Behälter dimensioniert.",
+      "image": {
+        "name": "reusable-crates-v2.webp",
+        "alt": "Mehrweg-Lieferkisten mit geschlossenen Seiten und vertieften Außenflächen an einer Laderampe.",
+        "caption": "Holen Sie ausgewählte Kistenpools für Reinigung, Wiederverwendung und die nächste Liefersaison zurück.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "roll-cages",
+      "group": "returnable-logistics-cold-chain",
+      "title": "Rollbehälter & Verteilrollbehälter",
+      "tagline": "Holen Sie Rollbehälter ab, die in Filialen und Empfangsdepots verblieben sind.",
+      "description": "Lieferrollbehälter bleiben leicht am Empfangsstandort zurück, wenn das Fahrzeug bereits auf der nächsten Tour ist. Orten Sie erfasste Rollbehälter, nehmen Sie ihre Abstellorte in den Abholplan auf und führen Sie den Pool vor der nächsten intensiven Lieferphase zum Verteilzentrum zurück.",
+      "objective": "Orten Sie Lieferrollbehälter und organisieren Sie die Rückführung in den Verteilpool.",
+      "monitoringPoint": "Feste Halterung am Seitenrahmen, außerhalb von Rädern, Klappgelenken und Kontaktflächen beim Ineinanderschieben.",
+      "projectBrief": "Rollbehälter-IDs, Verhalten beim Ineinanderschieben, Partnerstandorte und Abholrouten; bei Bedarf spezifizierter Innenraum-Ortungsdetailgrad für Filialen oder Empfangsdepots.",
+      "image": {
+        "name": "roll-cage.webp",
+        "alt": "Metallrollbehälter in einer Reihe nahe der Laderampe eines Verteilzentrums",
+        "caption": "Holen Sie Rollbehälter ab, die in Filialen und Empfangsdepots verblieben sind.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "ibc-containers",
+      "group": "returnable-logistics-cold-chain",
+      "title": "IBCs & Mehrweg-Großbehälter",
+      "tagline": "Führen Sie Großbehälter zur Reinigung und Wiederbefüllung zurück.",
+      "description": "Ein IBC muss gegebenenfalls vom Kunden zu einem Reinigungspartner gelangen, bevor er erneut befüllt werden kann. Finden Sie die erfasste Einheit, organisieren Sie die nächste Abholung und halten Sie ihre Identität mit dem Produktfluss verknüpft. Dies umfasst auch Behälter, die auf mehrere regionale Kunden oder Betriebsstätten verteilt sind.",
+      "objective": "Finden Sie Großbehälter und organisieren Sie Transporte zur Reinigung oder Wiederbefüllung.",
+      "monitoringPoint": "Halterung am äußeren Gitter oder Rahmen, außerhalb von Ventilen, Etiketten und Gabelstaplerwegen.",
+      "projectBrief": "Behälter-IDs, Reinigungsbedingungen und Umlaufstandorte; geeignetes Gehäuse und geeignete Befestigung, mit separater Bewertung von Anforderungen an explosionsgefährdete Bereiche, soweit relevant.",
+      "image": {
+        "name": "ibc-returnables.webp",
+        "alt": "IBC-Großbehälter in einem industriellen Logistikbereich im Außenbereich",
+        "caption": "Führen Sie Großbehälter zur Reinigung und Wiederbefüllung zurück.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "mobile-cold-rooms",
+      "group": "returnable-logistics-cold-chain",
+      "title": "Mobile Kühlräume & Kühlmodule",
+      "tagline": "Finden Sie temporäre Kühllagereinheiten zur Verlegung oder Rückführung.",
+      "description": "Ein mobiler Kühlraum kann an einem saisonalen Verpackungsstandort, einer temporären Einrichtung oder als zusätzliche Lagerfläche in der Distribution eingesetzt werden. Orten Sie die Einheit nach Einsatzende, organisieren Sie die Abholung und bringen Sie sie zum nächsten Kunden. Temperatur- oder Gerätestatusmessungen können in ein separat spezifiziertes Projektkonzept aufgenommen werden.",
+      "objective": "Orten Sie mobile Kühlräume und organisieren Sie Abholung oder neuen Einsatz.",
+      "monitoringPoint": "Halterung außen am Rahmen, entfernt von Kühltechnik, Wärmeabfuhr und Türbewegung.",
+      "projectBrief": "Einheiten-IDs, Einsatzstandorte, Meldezeitpunkte und Freiräume zur Kühltechnik; Temperatur- oder Statuskanäle im mitgelieferten Konzept ausgewiesen.",
+      "image": {
+        "name": "mobile-cold-room.webp",
+        "alt": "Mobiles Kühllagermodul an einer Logistikeinrichtung im Außenbereich",
+        "caption": "Finden Sie temporäre Kühllagereinheiten zur Verlegung oder Rückführung.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "insulated-cold-chain-boxes",
+      "group": "returnable-logistics-cold-chain",
+      "title": "Isolierte Kühlkettenboxen",
+      "tagline": "Führen Sie Mehrweg-Kühlboxen nach der Lieferung zurück.",
+      "description": "Eine isolierte Box kann vom Verpackungsteam an einen Transportdienstleister übergeben werden und anschließend an der Empfangseinrichtung verbleiben. Finden Sie ausgewählte Transportbehälter entlang der abgedeckten Route, organisieren Sie die Abholung nach der Lieferung und führen Sie sie für die nächste Sendung zurück. Etwaige Temperaturanforderungen werden zusammen mit den Standortmeldungen spezifiziert.",
+      "objective": "Finden Sie Mehrweg-Kühlboxen und organisieren Sie die Abholung nach der Lieferung.",
+      "monitoringPoint": "Außentasche oder Schutzhalterung, die Isolierung, Deckelabdichtung und Reinigungszugang erhält.",
+      "projectBrief": "Boxaufbau, Reinigungsverfahren, Route und Rückholplan; Befestigung unter Erhalt von Isolierung und Dichtungen sowie separat spezifizierte Temperaturanforderungen.",
+      "image": {
+        "name": "cold-chain-box.webp",
+        "alt": "Isolierte Kühlketten-Transportboxen an einem logistischen Übergabebereich",
+        "caption": "Führen Sie Mehrweg-Kühlboxen nach der Lieferung zurück.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "medical-instruments",
+      "group": "valuable-sensitive-assets",
+      "title": "Tragbare medizinische Geräte",
+      "tagline": "Holen Sie medizinische Geräte zwischen Einsätzen in Einrichtungen ab.",
+      "description": "Ein tragbares Diagnosegerät kann von Kliniken, mobilen Versorgungsteams und einem Servicezentrum gemeinsam genutzt werden. Finden Sie den zugehörigen Transportwagen oder Koffer, organisieren Sie die Abholung für die nächste Einrichtung und halten Sie die Geräteidentität mit diesem Transportmittel verknüpft. Die Montage muss den normalen Zugang zum Gerät erhalten.",
+      "objective": "Finden Sie medizinische Transportmittel und organisieren Sie Abholungen zwischen Einrichtungen.",
+      "monitoringPoint": "Rahmen eines zugeordneten Transportwagens oder Tasche am Gerätekoffer, außerhalb von klinischen Schnittstellen, Griffen und Wartungszugang.",
+      "projectBrief": "Geräte- und Transportmittel-IDs, Übergabestandorte, Koffer- oder Wagenaufbau und Gerätezugang; bei Bedarf separat spezifizierte Ortung auf Raumebene.",
+      "image": {
+        "name": "medical-mobile-assets-v2.webp",
+        "alt": "Tragbares medizinisches Gerät in einem speziellen Schutzkoffer auf einem Transportwagen.",
+        "caption": "Verfolgen Sie den zugeordneten Transportbehälter und halten Sie den Zugang zum medizinischen Gerät frei.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "laboratory-instruments",
+      "group": "valuable-sensitive-assets",
+      "title": "Tragbare Labor- & Prüfinstrumente",
+      "tagline": "Finden Sie das Instrument, das zur Kalibrierung oder Rückgabe ansteht.",
+      "description": "Ein Instrument, dessen Kalibrierung fällig ist, kann sich noch bei einem Projektteam oder Kunden befinden. Orten Sie seinen Transportkoffer, organisieren Sie die Abholung zum Kalibrierdienstleister und führen Sie das Set vor der nächsten Buchung zurück. Verknüpfen Sie den Koffer mit dem Instrumentendatensatz, damit ähnliche Prüfkits nicht verwechselt werden.",
+      "objective": "Finden Sie Instrumentenkoffer für Kalibrierung, Leihgeräterückgabe und die nächste Buchung.",
+      "monitoringPoint": "Tasche am Transportkoffer oder Halterung am Tragerahmen, außerhalb von Griffen, Polsterung und Wartungsöffnungen.",
+      "projectBrief": "Instrumenten- und Koffer-IDs, Kalibrier- und Leihtermine, Transportroute und Antennenfreiraum; für das Projekt spezifizierte Messungen der Handhabungsbedingungen.",
+      "image": {
+        "name": "laboratory-instrument-case.webp",
+        "alt": "Spezialisiertes Laborinstrument in einem geschützten Transportkoffer",
+        "caption": "Finden Sie das Instrument, das zur Kalibrierung oder Rückgabe ansteht.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "electronics-consignments",
+      "group": "valuable-sensitive-assets",
+      "title": "Elektronik- & Technologiesendungen",
+      "tagline": "Finden Sie Technologiesendungen vor dem Empfangstermin.",
+      "description": "Ausrüstung für eine Installation kann an einem Verteilknoten warten, während sich der Installationsstandort auf den Empfang vorbereitet. Orten Sie ausgewählte Versandkoffer, bestätigen Sie den Abholpunkt und organisieren Sie die Lieferung zum gebuchten Empfangszeitfenster. Planen Sie die Rückholung des Trackers, wenn die Ausrüstung ausgepackt wird oder der Koffer zurückkehrt.",
+      "objective": "Finden Sie ausgewählte Technologiekoffer und koordinieren Sie Lieferung und Tracker-Rückholung.",
+      "monitoringPoint": "Geschütztes Fach im Versandkoffer oder Außenhalterung mit Antennenfreiraum.",
+      "projectBrief": "Sendungs-IDs, Empfangszeitfenster, Transportetappen, Verpackung und Rückholverantwortung; geltende Anforderungen an den Batterietransport und optionale Zustandsmessungen.",
+      "image": {
+        "name": "cargo-electronics.webp",
+        "alt": "Geschützte Versandkoffer für wertvolle elektronische Geräte",
+        "caption": "Finden Sie Technologiesendungen vor dem Empfangstermin.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "luxury-goods-consignments",
+      "group": "valuable-sensitive-assets",
+      "title": "Luxusgüter & wertvolle Waren",
+      "tagline": "Finden Sie geschützte Warenkoffer an jedem Abholpunkt.",
+      "description": "Wertvolle Waren können über einen spezialisierten Transportdienstleister, ein Zwischenlager und einen Veranstaltungs- oder Einzelhandelsstandort bewegt werden. Orten Sie den freigegebenen Transportkoffer an abgedeckten Abholpunkten und nutzen Sie den Sendungsdatensatz, um den nächsten Transport zu organisieren. Der Zugriff auf Sendungsinformationen bleibt bei den autorisierten Parteien, die die Sendung verwalten.",
+      "objective": "Orten Sie ausgewählte Warenkoffer und organisieren Sie autorisierte Abholungen.",
+      "monitoringPoint": "Geschützte Tasche am Transportkoffer oder unauffällige Außenhalterung, die Verpackung und Antennenzugang erhält.",
+      "projectBrief": "Sendungsidentität, Handhabung durch den Transportdienstleister, Datenzugriff und Rückholung; geschützte Kofferbefestigung sowie separat spezifizierte Öffnungs- oder Zustandsmessung.",
+      "image": {
+        "name": "luxury-transport-case.webp",
+        "alt": "Geschützte Warentransportkoffer zur logistischen Übergabe vorbereitet",
+        "caption": "Finden Sie geschützte Warenkoffer an jedem Abholpunkt.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "art-museum-transport",
+      "group": "valuable-sensitive-assets",
+      "title": "Museumssammlungen & Kunsttransporte",
+      "tagline": "Finden Sie Ausstellungskisten für Lieferung und Rückführung.",
+      "description": "Eine Exponatkiste kann vom Lager zur Restaurierung und anschließend zu einem Ausstellungsort transportiert werden. Orten Sie den Transportbehälter an abgedeckten Transportetappen, organisieren Sie Empfang und Rückholung und verknüpfen Sie die Kiste mit dem Sammlungsdatensatz. Verpackung und etwaige Umweltmessungen müssen den konservatorischen Anforderungen entsprechen.",
+      "objective": "Orten Sie Sammlungskisten und planen Sie Ausstellungslieferung oder Rückführung.",
+      "monitoringPoint": "Kistenaußenseite oder spezielle Tasche, außerhalb von Kontaktflächen zum Kunstwerk, Anschlagmitteln und konservatorischen Materialien.",
+      "projectBrief": "Kisten-IDs, Transportetappen, konservatorische Materialien und autorisierter Zugriff; Standortmeldungen sowie separat spezifizierte Umwelt- oder Handhabungskanäle.",
+      "image": {
+        "name": "museum-art-transit.webp",
+        "alt": "Geschützte Kunsttransportkisten in einem Museumslogistikbereich",
+        "caption": "Finden Sie Ausstellungskisten für Lieferung und Rückführung.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "valuable-spares-shipments",
+      "group": "valuable-sensitive-assets",
+      "title": "Sendungen kritischer Ersatzteile",
+      "tagline": "Finden Sie die Teilesendung für eine geplante Reparatur.",
+      "description": "Ein Ersatzteil kann über einen Lieferanten und ein regionales Depot zum Reparaturstandort gelangen. Orten Sie seinen Versandkoffer an abgedeckten Etappen, organisieren Sie die Abholung für die geplante Reparatur und verknüpfen Sie die Sendung mit dem Arbeitsauftrag. Organisieren Sie die Rückholung des Trackers nach der Teilelieferung.",
+      "objective": "Finden Sie Koffer mit kritischen Ersatzteilen und koordinieren Sie die Lieferung zum Reparaturtermin.",
+      "monitoringPoint": "Tasche am Versandkoffer oder Halterung am Transportgestell, außerhalb von Dichtungen und Handhabungskontakt.",
+      "projectBrief": "Teile-, Sendungs- und Tracker-IDs, Empfangstermin für die Reparatur, Netzversorgung entlang der Route und Meldeverhalten; klare Zuständigkeit für die Tracker-Rückgabe.",
+      "image": {
+        "name": "critical-spare-case.webp",
+        "alt": "Industrieersatzteil in einem geschützten Versandkoffer gesichert",
+        "caption": "Finden Sie die Teilesendung für eine geplante Reparatur.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rental-generators",
+      "group": "rental-field-service",
+      "title": "Mietgeneratoren",
+      "tagline": "Holen Sie Generatoren nach Mietende ab.",
+      "description": "Ein Generator kann nach Projektabschluss am Einsatzort verbleiben, während das Vermietungsteam mehrere Rückgaben organisiert. Finden Sie die diesem Kunden zugeordnete Einheit, bündeln Sie Abholungen nach Standort und bringen Sie sie zum richtigen Depot zurück. Nutzen Sie Vertrags- und Objektdatensätze gemeinsam, um die nächste Vermietung vorzubereiten.",
+      "objective": "Finden Sie Generatoren nach Mietende und organisieren Sie die Abholung zum Depot.",
+      "monitoringPoint": "Halterung außen am Fahrgestell oder Gehäuse, entfernt von Abgaswärme und Wartungsöffnungen.",
+      "projectBrief": "Einheiten-IDs, Verträge, Kundenstandorte, Abholtermine und Wärmebelastung; Meldungen passend zu Lieferung, langen Standzeiten und Rückführung.",
+      "image": {
+        "name": "rental-equipment.webp",
+        "alt": "Ziehbarer Mietgenerator an einem Projektstandort im Außenbereich",
+        "caption": "Holen Sie Generatoren nach Mietende ab.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rental-compressors",
+      "group": "rental-field-service",
+      "title": "Mietkompressoren",
+      "tagline": "Finden Sie den Kompressor, der beim Kunden zur Abholung bereitsteht.",
+      "description": "Das Team kann seine Arbeit beenden, bevor der mobile Kompressor vom Einsatzort abgeholt wird. Orten Sie das Mietgerät, gleichen Sie es mit der Abholliste ab und organisieren Sie die Rückführung für die nächste Buchung. Die Verknüpfung jedes Kompressors mit einem eigenen Objektdatensatz hilft Niederlassungen, die richtige Einheit abzuholen.",
+      "objective": "Orten Sie Mietkompressoren und organisieren Sie die Abholung nach Vertragsende.",
+      "monitoringPoint": "Feste Halterung am Fahrgestell, außerhalb von Wärmeabfuhr, Schläuchen, Zugkomponenten und Zugangsklappen.",
+      "projectBrief": "Einheiten-IDs, Mietstandorte, Einsatzdauer und Abholplan; Montage außerhalb von Schläuchen, Wärmeabfuhr und Zugkomponenten.",
+      "image": {
+        "name": "portable-compressor.webp",
+        "alt": "Mobiler Mietkompressor auf einer Baustelle im Außenbereich",
+        "caption": "Finden Sie den Kompressor, der beim Kunden zur Abholung bereitsteht.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rental-light-towers",
+      "group": "rental-field-service",
+      "title": "Mietlichtmasten",
+      "tagline": "Holen Sie Lichtmasten im gesamten abgeschlossenen Projektbereich ab.",
+      "description": "Lichtmasten können über einen Straßenbaubereich, eine Baustelle oder ein Veranstaltungsgelände verteilt sein. Orten Sie die erfassten Einheiten nach Einsatzende, organisieren Sie die Abholung an diesen Positionen und führen Sie das Set zum Mietdepot zurück. Halten Sie die Mastkennungen mit der Geräteliste des Kunden verknüpft.",
+      "objective": "Finden Sie eingesetzte Lichtmasten und organisieren Sie die Abholung nach Projektende.",
+      "monitoringPoint": "Halterung am Grundfahrgestell, außerhalb von Mastbewegung, Stützen, Kontaktbereichen beim Ziehen und Bedienelementen.",
+      "projectBrief": "Mast-IDs, Einsatzbereiche, Verweilzeit und Transporthandhabung; Freiraum der Halterung bei Mast-, Stützen- und Zugvorgängen.",
+      "image": {
+        "name": "rental-light-tower.webp",
+        "alt": "Mobiler Lichtmast auf einer Baustelle im Außenbereich",
+        "caption": "Holen Sie Lichtmasten im gesamten abgeschlossenen Projektbereich ab.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rental-tool-kits",
+      "group": "rental-field-service",
+      "title": "Mietwerkzeuge & Ausrüstungssets",
+      "tagline": "Finden Sie den Mietkoffer für die Rückgabe oder die nächste Buchung.",
+      "description": "Ein Spezialwerkzeugsatz kann als einzelner Koffer über eine Niederlassung, einen Auftragnehmer und einen Kundenstandort transportiert werden. Orten Sie den zur Rückgabe anstehenden Koffer und organisieren Sie die Abholung vor der nächsten Buchung. Erfassen Sie das Set als vollständiges Objekt, mit einem separaten Inventarprozess für die enthaltenen Werkzeuge.",
+      "objective": "Finden Sie Mietwerkzeugkoffer und organisieren Sie die Rückgabe vor der nächsten Buchung.",
+      "monitoringPoint": "Geschützte Tasche am Transportkoffer oder Halterung am Setrahmen, außerhalb von Verschlüssen und Stapelkontakt.",
+      "projectBrief": "Set-IDs, Kundenstandorte, Kofferaufbau und Rückgabetermine; Identifikation einzelner Werkzeuge oder Innenraumortung nur bei separater Spezifikation enthalten.",
+      "image": {
+        "name": "rental-tool-case.webp",
+        "alt": "Schutzkoffer mit einem speziellen Mietwerkzeugsatz",
+        "caption": "Finden Sie den Mietkoffer für die Rückgabe oder die nächste Buchung.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "service-parts-kits",
+      "group": "rental-field-service",
+      "title": "Serviceersatzteile & Reparaturkits für den Außendienst",
+      "tagline": "Finden Sie das Kit, das aufgefüllt oder abgeholt werden muss.",
+      "description": "Ein Servicekit kann nach Auftragsende in einem regionalen Lager oder an einem Kundenstandort verbleiben. Orten Sie den diesem Arbeitsauftrag zugeordneten Koffer, organisieren Sie das Auffüllen am Abstellort und führen Sie ihn bei Bedarf zum Depot zurück. Halten Sie die Kit-Identität mit dem Teiledatensatz verknüpft.",
+      "objective": "Finden Sie Servicekits zum Auffüllen und zur Rückführung nach Auftragsende.",
+      "monitoringPoint": "Geschützte Tasche am Servicekoffer oder Regalhalterung mit Antennenfreiraum und ungehindertem Zugang zum Kit.",
+      "projectBrief": "Kit- und Arbeitsauftrag-IDs, regionale Lager, Kundenstandorte und Auffüllprozess; für den Einsatz festgelegte Anforderungen an die Innenraumortung.",
+      "image": {
+        "name": "field-tools.webp",
+        "alt": "Industrielle Serviceersatzteile und Reparaturwerkzeuge in einem Transportkit",
+        "caption": "Finden Sie das Kit, das aufgefüllt oder abgeholt werden muss.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "mobile-energy-storage",
+      "group": "rental-field-service",
+      "title": "Mobile Batterie- & Energiesysteme",
+      "tagline": "Holen Sie mobile Batterieplattformen ab und weisen Sie ihnen einen neuen Einsatz zu.",
+      "description": "Eine mobile Batterieplattform kann bei einer Veranstaltung, einer temporären Einrichtung oder einem abgelegenen Arbeitsort eingesetzt werden. Orten Sie die Einheit nach Einsatzende, organisieren Sie den Transport zum nächsten Kunden oder regionalen Depot und halten Sie die Plattformidentität mit der Buchung verknüpft. Eine Integration des Gerätestatus wird bei Bedarf separat spezifiziert.",
+      "objective": "Finden Sie mobile Batterieplattformen und organisieren Sie Abholung oder neuen Einsatz.",
+      "monitoringPoint": "Rahmen der mobilen Batterieplattform, außerhalb von elektrischen Anschlüssen, Lüftung, Hebepunkten und Wartungszugang.",
+      "projectBrief": "Plattform-IDs, Routen, Abholzyklen, Freiräume für Elektrik und Lüftung; Meldeanforderungen und separat spezifizierte Gerätestatusschnittstellen.",
+      "image": {
+        "name": "mobile-energy-v2.webp",
+        "alt": "Mobile Batterie-Energiespeichermodule auf einem Träger mit frei zugänglicher äußerer Rahmenfläche gesichert.",
+        "caption": "Orten Sie mobile Batterieplattformen für die Abholung und den nächsten Einsatz.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "ebike-fleets",
+      "group": "mobility-emergency",
+      "title": "E-Bike-Flotten",
+      "tagline": "Finden Sie Flottenräder für den Service oder die saisonale Einlagerung.",
+      "description": "Flotten-E-Bikes können sich bei lokalen Teams, Partnerbetreibern oder Werkstätten befinden, wenn eine Abholrunde geplant wird. Orten Sie die Räder auf der Service- oder Lagerliste, organisieren Sie die Abholung und führen Sie sie zum richtigen Stützpunkt zurück. Erhalten Sie die Identität jedes Rads bei Wechseln des Partners oder der Betriebsregion.",
+      "objective": "Finden Sie gelistete Flottenräder und organisieren Sie die Abholung für Service oder Lagerung.",
+      "monitoringPoint": "Geschützte Außenhalterung an einem speziellen Heckträger, außerhalb von Batterien, Verkabelung, Bremsen, Rädern und Ladungszugang.",
+      "projectBrief": "Fahrradtypen, Flotten-IDs, Platz für die Halterung, Einsatzgebiete und autorisierter Zugriff; Meldeintervalle und Netzbetreiberdienst für die gewählte Funktechnik.",
+      "image": {
+        "name": "ebike-depot.webp",
+        "alt": "Flotten-E-Bikes in einem Betriebsbereich im Außenbereich",
+        "caption": "Finden Sie Flottenräder für den Service oder die saisonale Einlagerung.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "motorcycle-fleets",
+      "group": "mobility-emergency",
+      "title": "Motorrad- & Rollerflotten",
+      "tagline": "Finden Sie Flottenmotorräder für Transporte zu Niederlassungen oder Werkstätten.",
+      "description": "Ein Motorrad oder Roller muss gegebenenfalls vom Betriebsstützpunkt eines Partners zu einer Werkstatt oder einer anderen Niederlassung gebracht werden. Orten Sie die zugewiesene Einheit und organisieren Sie die Abholung anhand des Flottendatensatzes. Nutzen Sie eine spezielle Außenhalterung am Heckträger, getrennt von Motor- und Steuerungskomponenten.",
+      "objective": "Finden Sie zugewiesene Motorräder und organisieren Sie die Abholung zu Niederlassungen oder Werkstätten.",
+      "monitoringPoint": "Außenhalterung am Heckgepäckträger mit Antennenfreiraum und ungehindertem Zugang zu Leuchten, Sitz und Ladung.",
+      "projectBrief": "Fahrzeug-IDs, Geometrie des Heckgepäckträgers, Routen und Meldezeitpunkte; Installation außerhalb von Leuchten, Sitz und Ladungsnutzung.",
+      "image": {
+        "name": "motorcycle-fleet-v2.webp",
+        "alt": "Motorrad mit Heckgepäckträger und frei zugänglicher äußerer Montagefläche in einer Flottenwerkstatt.",
+        "caption": "Finden Sie Flottenmotorräder für Service, Lagerung und Transporte zwischen Niederlassungen.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "portable-aeds",
+      "group": "mobility-emergency",
+      "title": "Tragbare AEDs & Einsatzkoffer",
+      "tagline": "Holen Sie tragbare AED-Koffer nach einer Veranstaltung oder einem Einsatz ab.",
+      "description": "Ein tragbares AED-Kit kann an ein Veranstaltungsteam oder eine temporäre Einrichtung ausgegeben werden und anschließend ins gemeinsame Lager zurückkehren müssen. Orten Sie den zugehörigen Transportkoffer, organisieren Sie die Abholung und führen Sie das identifizierte Kit zum richtigen Stützpunkt zurück. Erhalten Sie dabei den unmittelbaren Zugang zum medizinischen Gerät.",
+      "objective": "Finden Sie AED-Transportkoffer und organisieren Sie die Rückführung nach dem Einsatz.",
+      "monitoringPoint": "Äußere Tasche oder Halterung am zugeordneten AED-Transportkoffer, unter Erhalt des unmittelbaren Gerätezugangs und der Tragehinweise.",
+      "projectBrief": "Kit- und Koffer-IDs, Veranstaltungs- oder Einsatzstandorte und Abholtermine; Montage unter Erhalt des Zugangs, mit separat spezifizierter Innenraumortung bei Bedarf.",
+      "image": {
+        "name": "portable-aed-case-v2.webp",
+        "alt": "Tragbarer AED in einem speziellen Schutz-Transportkoffer mit separater vertiefter Außenfläche.",
+        "caption": "Verknüpfen Sie Einsatz- und Rückgabedatensätze mit dem identifizierten AED-Transportkoffer.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "rescue-equipment",
+      "group": "mobility-emergency",
+      "title": "Rettungskits & Ausrüstung für den Feldeinsatz",
+      "tagline": "Finden Sie gemeinsam genutzte Rettungskoffer zur Abholung oder erneuten Ausgabe.",
+      "description": "Ein Rettungsausrüstungskoffer kann nach dem Teameinsatz auf einem Übungsgelände oder an einem temporären Feldstützpunkt verbleiben. Orten Sie das gemeinsam genutzte Kit, organisieren Sie die Abholung und führen Sie es zu dem Lager zurück, das den nächsten Einsatz ausstattet. Nutzen Sie die Kofferkennung, um ähnliche Sets regionaler Teams zu unterscheiden.",
+      "objective": "Finden Sie Rettungskoffer und organisieren Sie Abholung oder erneute Ausgabe.",
+      "monitoringPoint": "Geschützte Koffertasche oder feste Halterung am Geräterahmen, außerhalb von Schnellzugriffs- und Handhabungspunkten.",
+      "projectBrief": "Kit-IDs, Stützpunkte, Übungs- und Feldeinsatzorte, autorisierter Zugriff und Abholzyklen; zur Einsatzregion passende Funkversorgung.",
+      "image": {
+        "name": "emergency-rescue.webp",
+        "alt": "Rettungsausrüstung in einem Transportkoffer für den Feldeinsatz",
+        "caption": "Finden Sie gemeinsam genutzte Rettungskoffer zur Abholung oder erneuten Ausgabe.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "portable-fire-equipment",
+      "group": "mobility-emergency",
+      "title": "Tragbare Feuerwehrausrüstung",
+      "tagline": "Führen Sie gemeinsam genutzte Feuerwehrkits zur richtigen Wache zurück.",
+      "description": "Tragbare Schlauchkits und unterstützende Feuerwehrausrüstung können zwischen Wachen und Übungsstandorten gemeinsam genutzt werden. Orten Sie den identifizierten Koffer oder die Einheit nach dem Einsatz, organisieren Sie die Abholung und führen Sie ihn oder sie zur richtigen Wache zurück. Eine eindeutige Objektidentität hilft dem Lagerteam, Ausrüstung für verschiedene Teams zu unterscheiden.",
+      "objective": "Finden Sie gemeinsam genutzte Feuerwehrausrüstung und organisieren Sie die Rückführung zum Stützpunkt.",
+      "monitoringPoint": "Geschützte Halterung am Transportkoffer oder Geräterahmen, außerhalb von Bedienelementen, Schlauchzugang und Hebepunkten.",
+      "projectBrief": "Ausrüstungs-IDs, Wachen, Einsatztermine und Umgebungsbelastung; zugängliche Rahmen- oder Koffermontage, mit separater Bewertung der Eignung für explosionsgefährdete Bereiche, soweit relevant.",
+      "image": {
+        "name": "portable-firefighting-equipment.webp",
+        "alt": "Tragbare Feuerwehrausrüstung in einem Einsatzbereich im Außenbereich",
+        "caption": "Führen Sie gemeinsam genutzte Feuerwehrkits zur richtigen Wache zurück.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "emergency-mobile-pumps",
+      "group": "mobility-emergency",
+      "title": "Mobile Pumpen für Notfalleinsätze",
+      "tagline": "Holen Sie Pumpen von temporären Entwässerungs- oder Einsatzorten ab.",
+      "description": "Eine mobile Pumpe kann nach Einsatzende an einem temporären Entwässerungs- oder Hochwasserschutzstandort verbleiben. Orten Sie die identifizierte Einheit, organisieren Sie die Abholung und bringen Sie sie ins gemeinsame Lager oder zum nächsten geplanten Einsatz. Nutzen Sie den Objektdatensatz, um das richtige Transportteam an ihren Abstellort zu schicken.",
+      "objective": "Finden Sie zugewiesene mobile Pumpen und organisieren Sie die Abholung am Einsatzort.",
+      "monitoringPoint": "Halterung am Pumpenrahmen oder Anhängerfahrgestell, entfernt von Wärme, Kupplungen und rotierenden Teilen.",
+      "projectBrief": "Pumpen-IDs, Feldeinsatzorte, erwartete Umgebungsbelastung und Transporthandhabung; Meldungen während Einsatz und Rückholung, mit Montagefreiraum an Wärmequellen und Kupplungen.",
+      "image": {
+        "name": "mobile-water-pump.webp",
+        "alt": "Mobile Wasserpumpe auf einem Anhänger an einem Einsatzort im Außenbereich",
+        "caption": "Holen Sie Pumpen von temporären Entwässerungs- oder Einsatzorten ab.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "site-cable-drums",
+      "group": "materials-infrastructure",
+      "title": "Kabeltrommeln am Einsatzort",
+      "tagline": "Finden Sie Kabeltrommeln für die Installation und holen Sie anschließend den Ladungsträger zurück.",
+      "description": "Das Kabelinstallationsteam benötigt die richtige Trommel am passenden Bereitstellungspunkt. Orten Sie die identifizierte Trommel oder ihren zugeordneten Transportständer, organisieren Sie die Lieferung anhand der Materialliste und holen Sie den Mehrwegträger nach Installationsabschluss ab. Halten Sie die Trommel mit der Kabelcharge und dem Projektpaket verknüpft.",
+      "objective": "Finden Sie Kabeltrommeln für die Installationslieferung und die Rückholung des Trägers.",
+      "monitoringPoint": "Geschützte Halterung am äußeren Flansch oder Trommelständer, außerhalb von Wickelwegen, Rollkontakt und Anschlagmitteln.",
+      "projectBrief": "Trommel-, Kabelchargen- und Träger-IDs; Zuordnung zwischen Trommel und Ständer erhalten. Freiräume für die Handhabung, Meldeverhalten und Tracker-Rückholung nach der Nutzung festlegen.",
+      "image": {
+        "name": "materials-yard.webp",
+        "alt": "Große Kabeltrommeln auf einem Außenlager für Infrastrukturmaterial",
+        "caption": "Finden Sie Kabeltrommeln für die Installation und holen Sie anschließend den Ladungsträger zurück.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "steel-material-bundles",
+      "group": "materials-infrastructure",
+      "title": "Stahlbündel & gefertigte Profile",
+      "tagline": "Verfolgen Sie die Mehrwegwiege, die die Stahlcharge trägt.",
+      "description": "Eine Stahlcharge kann auf einer Mehrwegwiege zwischen Fertigung, Lager und Installationsstandort transportiert werden. Orten Sie diesen Ladungsträger, gleichen Sie seine Identität mit der Materialcharge ab und organisieren Sie die nächste Lieferung oder Rückführung. Montieren Sie den Tracker an der zugeordneten Wiege statt direkt an ungeschützten Stahlprofilen.",
+      "objective": "Finden Sie Stahltransportwiegen und verknüpfen Sie Lieferungen mit Materialchargen.",
+      "monitoringPoint": "Außenhalterung an einer zugeordneten Mehrweg-Transportwiege, außerhalb von Anschlagmitteln, Gabelwegen und Kontaktbereichen bei der Entladung.",
+      "projectBrief": "Wiegen- und Chargen-IDs, Transportetappen, Gabel- und Anschlagmittelwege, Antennenfreiraum und Ladungsträgerrückführung; Tracker verbleibt an der zugeordneten Wiege.",
+      "image": {
+        "name": "steel-bundle-yard-v2.webp",
+        "alt": "Gebündelte Stahlprofile auf einer Mehrweg-Transportwiege mit geschützter Außenfläche.",
+        "caption": "Verknüpfen Sie die Wiege mit der Stahlcharge für Lieferung, Abholung und Rückführung.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "formwork-scaffolding",
+      "group": "materials-infrastructure",
+      "title": "Schalungs- & Gerüstsätze",
+      "tagline": "Holen Sie Mehrwegsätze nach Abschluss jeder Projektphase ab.",
+      "description": "Schalungen und Gerüste können nach Ende einer Bauphase zurückbleiben. Orten Sie das erfasste Gestell oder den Satz, organisieren Sie die Abholung von der Baustelle und führen Sie ihn zu dem Hof zurück, der den nächsten Auftrag beliefert. Führen Sie den Satzdatensatz getrennt vom Inventar einzelner Tafeln oder Komponenten.",
+      "objective": "Finden Sie Schalungs- oder Gerüstsätze und planen Sie die Abholung nach Projektende.",
+      "monitoringPoint": "Halterung am Gestell oder Satzrahmen, außerhalb von Stapeldruck, Hebehaken und Montageschnittstellen.",
+      "projectBrief": "Gestell- oder Satz-IDs, Projekttermine, Stapel- und Hebekontakt, Lagerhöfe und Rückführungsprozess; separates Komponenteninventar bei Bedarf.",
+      "image": {
+        "name": "formwork-rack.webp",
+        "alt": "Mehrweg-Schalungstafeln auf einem Transportgestell im Außenbereich gesichert",
+        "caption": "Holen Sie Mehrwegsätze nach Abschluss jeder Projektphase ab.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "railway-service-equipment",
+      "group": "materials-infrastructure",
+      "title": "Bahnservice- & Instandhaltungsausrüstung",
+      "tagline": "Finden Sie Instandhaltungsausrüstung nach Abschluss des Arbeitspakets.",
+      "description": "Tragbare Bahnserviceausrüstung kann über Depots, Betriebshöfe von Auftragnehmern und gleisnahe Arbeitsbereiche hinweg gemeinsam genutzt werden. Orten Sie die Einheit oder den Koffer, die oder der einem abgeschlossenen Arbeitspaket zugeordnet ist, organisieren Sie die Abholung und führen Sie sie oder ihn vor dem nächsten Auftrag zum richtigen Depot zurück. Halten Sie die Identität mit dem Geräteausgabenachweis verknüpft.",
+      "objective": "Finden Sie Bahnservicegeräte und organisieren Sie die Abholung am Arbeitsort.",
+      "monitoringPoint": "Feste Halterung am Geräterahmen, außerhalb von Bedienelementen, Sicherheitskennzeichnungen und Wartungszugang.",
+      "projectBrief": "Objekt-IDs, Strecken- und Depotstandorte, Installationsanforderungen am Einsatzort und Abholtermine; Netzbetreiberversorgung entlang der Instandhaltungseinsatzroute.",
+      "image": {
+        "name": "railway-service-assets.webp",
+        "alt": "Bahninstandhaltungsausrüstung in einem gleisnahen Arbeitsbereich im Außenbereich",
+        "caption": "Finden Sie Instandhaltungsausrüstung nach Abschluss des Arbeitspakets.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "port-terminal-machinery",
+      "group": "materials-infrastructure",
+      "title": "Hafen- & Terminalmaschinen",
+      "tagline": "Finden Sie Terminalgeräte für die Zuweisung oder den Servicetransport.",
+      "description": "Umschlaggeräte können sich in verschiedenen Terminalbereichen oder auf Wartungshöfen befinden, wenn ein anderes Team sie benötigt. Orten Sie die identifizierte Einheit in den abgedeckten Betriebsbereichen des Hafens und organisieren Sie eine Verlegung oder Serviceabholung. Nutzen Sie die Objektidentität, um Geräte zu unterscheiden, die von Terminalbetreibern und Servicedienstleistern gemeinsam genutzt werden.",
+      "objective": "Orten Sie Terminalgeräte und organisieren Sie interne oder Servicetransporte.",
+      "monitoringPoint": "Feste Halterung außen am Rahmen, außerhalb von Arbeitsmechanismen, Lastschnittstellen und Wartungszugang.",
+      "projectBrief": "Terminalzonen, Objekt-IDs, Installationsbeschränkungen und Meldeanforderungen; landgestützte Mobilfunkversorgung und Antennenabschirmung im gesamten Hafen bewerten.",
+      "image": {
+        "name": "port-handling-machinery.webp",
+        "alt": "Mobile Frachtumschlagmaschine in einem küstennahen Hafenterminal",
+        "caption": "Finden Sie Terminalgeräte für die Zuweisung oder den Servicetransport.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "airport-ground-equipment",
+      "group": "materials-infrastructure",
+      "title": "Flughafen-Bodenabfertigungsgeräte",
+      "tagline": "Finden Sie Bodengeräte an Terminals und in Servicebereichen.",
+      "description": "Ein Flughafenschlepper oder Gepäckgerät kann sich an einem anderen Terminal, in einer Lagerzone oder einem Wartungsbereich befinden. Orten Sie die Einheit, die einem Transportauftrag zugeordnet ist, und organisieren Sie die Abholung mit dem verantwortlichen Serviceteam. Halten Sie die Objektkennung einheitlich, wenn Geräte zwischen Bodenabfertigungsdienstleistern wechseln.",
+      "objective": "Finden Sie zugewiesene Bodengeräte und organisieren Sie Transporte zu Terminals oder Wartungsbereichen.",
+      "monitoringPoint": "Feste Halterung am Rahmen, außerhalb von Kupplungen, Bedienelementen, Ladeflächen und Wartungszugang.",
+      "projectBrief": "Geräte-IDs, Terminalzonen, Installationsanforderungen auf der Luftseite und Datenverantwortliche; lokale Netzversorgung und separat spezifizierte Anforderungen an Innenraumzonen.",
+      "image": {
+        "name": "airport-ground-equipment.webp",
+        "alt": "Flughafenschlepper und Gepäckgeräte auf einem Vorfeld",
+        "caption": "Finden Sie Bodengeräte an Terminals und in Servicebereichen.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "agv-fleet-transfers",
+      "group": "factory-site-transfers",
+      "title": "AGV-Flotteneinführung & Standortwechsel",
+      "tagline": "Orten Sie AGVs während der Einführung und bei Standortwechseln.",
+      "description": "AGVs wechseln zwischen Herstellern, Empfangswerken und Servicezentren, bevor sie in die Produktion zurückkehren. Verknüpfen Sie den Tracker mit der Einheiten-ID des AGV und nutzen Sie konfigurierte Standortmeldungen, um Lieferung, Abholung und neue Zuweisungen zu koordinieren. Stimmen Sie Netzabdeckung und Meldeverhalten auf jede Transportroute ab. Für die Ortung von AGVs in Innenraumzonen nehmen Sie den Gebäudegrundriss und die lokalen Ortungsanforderungen in das Projekt auf.",
+      "objective": "Orten Sie AGV-Einheiten bei Lieferung, Standortneuzuweisung und Servicerückführung.",
+      "monitoringPoint": "Geschützte Halterung an einer festen AGV-Verkleidungsfläche, außerhalb von Sicherheitsscannern, Schleppkupplung, Rädern, Ladekontakten und Wartungszugang.",
+      "projectBrief": "AGV-Einheiten-IDs, Transport- und Servicerouten, Empfangsstandorte, verfügbarer Montageplatz, Netzabdeckung und Meldeanforderungen; Gebäudegrundriss, wenn die Ortung von AGVs in Innenraumzonen erforderlich ist.",
+      "image": {
+        "name": "factory-agv-v3.webp",
+        "alt": "Industrielles Schlepp-AGV mit Räderfahrwerk, Sicherheitsscanner und hinterer Schleppkupplung in einem Versandbereich der Fabrik.",
+        "caption": "Koordinieren Sie AGV-Lieferung, Standortwechsel und Servicerückführung.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "factory-transport-trolleys",
+      "group": "factory-site-transfers",
+      "title": "Werkstransportwagen",
+      "tagline": "Finden Sie Transportwagen an Übergabepunkten von Laderampen und Gebäuden.",
+      "description": "Transportwagenpools können sich auf Laderampen, Produktionsgebäude und Lieferantenabholpunkte verteilen. Orten Sie den erfassten Wagen für eine Abholung und führen Sie ihn zum richtigen Pool zurück. Meldungen bei Außentransporten und eine etwaige Innenraumsuche werden entsprechend der tatsächlichen Route durch die Gebäude spezifiziert.",
+      "objective": "Finden Sie Transportwagen für die Abholung an Laderampen und die Rückführung in den Pool.",
+      "monitoringPoint": "Feste Halterung am seitlichen Wagenrahmen, außerhalb von Lenkrollen, Kontaktflächen beim Ineinanderschieben, Gabelwegen und Ladungsflächen.",
+      "projectBrief": "Wagen-IDs, Laderampenrouten sowie Details zu Ineinanderschieben und Handhabung; Meldungen im Außenbereich und eine separat geplante Infrastruktur zur Innenraumortung.",
+      "image": {
+        "name": "factory-trolley-v2.webp",
+        "alt": "Werksteilewagen mit fester Stirnrahmenfläche an einer offenen Laderampe.",
+        "caption": "Orten Sie ausgewählte Wagen für die Abholung an Laderampen und die Rückführung.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "production-jigs-fixtures",
+      "group": "factory-site-transfers",
+      "title": "Produktionslehren & Vorrichtungen",
+      "tagline": "Finden Sie Werkzeuge bei Lieferanten oder Reparaturpartnern.",
+      "description": "Eine Lehre oder Vorrichtung kann sich bei einem Subunternehmer oder einer Reparaturwerkstatt befinden, wenn die Produktion sie zurückbenötigt. Orten Sie ihren Tragerahmen oder Koffer, organisieren Sie die Abholung und führen Sie das identifizierte Werkzeug zum benötigten Werk zurück. Spezifizieren Sie eine Innenraumsuche, wenn der betreffende Lagerbereich Teil dieses Ablaufs ist.",
+      "objective": "Finden Sie Werkzeugträger und organisieren Sie die Rückführung von Lieferanten oder Reparaturpartnern.",
+      "monitoringPoint": "Halterung am Tragerahmen oder Transportkoffer, außerhalb von Präzisionsflächen und Positionierelementen.",
+      "projectBrief": "Werkzeug- und Träger-IDs, Partnerstandorte, Schutz der Präzisionsflächen und erforderlicher Lagerdetailgrad; Ortungsinfrastruktur abgestimmt auf Transport und etwaige Innenraumsuche.",
+      "image": {
+        "name": "production-fixture.webp",
+        "alt": "Industrielle Produktionslehre auf einem geschützten Transportrahmen",
+        "caption": "Finden Sie Werkzeuge bei Lieferanten oder Reparaturpartnern.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "production-moulds",
+      "group": "factory-site-transfers",
+      "title": "Spritzgieß- & Gießformen",
+      "tagline": "Orten Sie den Transportrahmen oder die Kiste mit der Form.",
+      "description": "Eine Form wird zwischen Werkzeugmacher, Produktion, Lager und Spezialreparatur auf einem speziellen geschützten Transportrahmen oder in einer Kiste bewegt. Orten Sie diesen Träger, verknüpfen Sie ihn mit dem Werkzeugdatensatz und organisieren Sie die Abholung zum nächsten Standort. Halten Sie die Befestigung von den Präzisionsflächen der Form fern.",
+      "objective": "Finden Sie Formenträger und organisieren Sie Transporte zu Werkzeugmacher, Werk oder Reparatur.",
+      "monitoringPoint": "Außenhalterung oder geschützte Tasche am zugeordneten Formtransportrahmen oder an der Kiste, außerhalb von Gabelwegen, Anschlagmitteln und Präzisionswerkzeugflächen.",
+      "projectBrief": "Formen- und Träger-IDs, Übergabestandorte, Freiräume für Heben und Handhabung; Transportmeldungen und separat geplante Innenraumsuche.",
+      "image": {
+        "name": "production-mould-v2.webp",
+        "alt": "Geschlossene industrielle Form in einem speziellen Transportrahmen mit geschützter Außenfläche gesichert.",
+        "caption": "Verfolgen Sie den Formträger und halten Sie die Befestigung von Präzisionswerkzeugflächen fern.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "production-returnable-racks",
+      "group": "factory-site-transfers",
+      "title": "Mehrweg-Produktionsgestelle",
+      "tagline": "Führen Sie leere Produktionsgestelle von Werks- und Lieferantenstandorten zurück.",
+      "description": "Spezielle Komponentengestelle kehren häufig leer über einen anderen Prozess zurück als die Teile, die sie geliefert haben. Orten Sie erfasste Gestelle an Abholpunkten bei Lieferanten oder Werken, bündeln Sie die Rückladung und führen Sie die Träger für die nächste Produktionssendung zurück. Spezifizieren Sie eine Innenraumsuche, wenn Lagerzonen für die Abholung relevant sind.",
+      "objective": "Finden Sie Standorte mit leeren Gestellen und bündeln Sie Rückführungen für die nächste Sendung.",
+      "monitoringPoint": "Geschützte Halterung am Gestellrahmen, außerhalb von Stapelpunkten, Komponentenauflagen und Gabelstaplerzugang.",
+      "projectBrief": "Gestell-IDs, Komponentenauflagen, Lieferantenrouten und Rückführungszyklen; Meldungen auf Standortebene und separat spezifizierte Infrastruktur für Lagerzonen.",
+      "image": {
+        "name": "production-rack.webp",
+        "alt": "Spezielle Komponententransportgestelle an einem logistischen Übergabebereich im Werk",
+        "caption": "Führen Sie leere Produktionsgestelle von Werks- und Lieferantenstandorten zurück.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "forklift-fleet-transfers",
+      "group": "factory-site-transfers",
+      "title": "Standortwechsel von Gabelstaplerflotten",
+      "tagline": "Finden Sie Gabelstapler, die für einen Standort- oder Servicewechsel vorgesehen sind.",
+      "description": "Ein für einen Standortwechsel eingeplanter Gabelstapler kann sich auf einem Werkshof, bei einem Mietpartner oder in einer Servicewerkstatt befinden. Orten Sie die Einheit auf der Transportliste und organisieren Sie die Abholung zum benötigten Standort. Nutzen Sie während des Wechsels ihre Flottenidentität. Eine Innenraumsuche wird separat spezifiziert, wenn der Abstellbereich in einem Gebäude liegt.",
+      "objective": "Finden Sie zugewiesene Gabelstapler und organisieren Sie die Abholung am Standort oder in der Werkstatt.",
+      "monitoringPoint": "Feste Halterung am Rahmen, außerhalb von Hubmastbewegung, Lade- oder Betankungszugang und Bedienelementen.",
+      "projectBrief": "Flotten-IDs, Transportrouten, Standort- und Werkstattadressen, Installationsfreiraum und Meldeverhalten; Innenraumsuche für die erforderlichen Abstellzonen konzipiert.",
+      "image": {
+        "name": "forklift-transfer.webp",
+        "alt": "Gabelstapler auf einem Außenhof für Geräteübergaben im Werk",
+        "caption": "Finden Sie Gabelstapler, die für einen Standort- oder Servicewechsel vorgesehen sind.",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    }
+  ],
+  "series": {
+    "description": "Wählen Sie H300 für 4G oder H500 für NB-IoT. Wir stimmen die Gerätekonfiguration auf Ihr Objekt, die Einsatzregion und die Meldeanforderungen ab, einschließlich Befestigung und Plattformanbindung.",
+    "models": [
+      {
+        "id": "H300",
+        "connectivity": "4G",
+        "description": "4G-Asset-Tracking für Ihr Projekt mit Geräten, Mehrwegverpackungen und Fracht. Stimmen Sie Modem, SIM-Dienst und Meldeprofil auf die Orte ab, an denen Ihre Objekte unterwegs sind."
+      },
+      {
+        "id": "H500",
+        "connectivity": "NB-IoT",
+        "description": "NB-IoT-Asset-Tracking für einen Einsatz mit Versorgung durch kompatible Netzbetreiber. Stimmen Sie lokale Netzversorgung, SIM-Regelungen und Aktualisierungsanforderungen auf jeden Standort und jede Transportetappe ab."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Mit dem Objekt beginnen",
+        "text": "Objekt- oder Ladungsträger-ID · Verfügbarer Montageplatz · Handhabungs- und Rückführungsprozess"
+      },
+      {
+        "title": "Meldeprofil auswählen",
+        "text": "Standorte und Routen · Aktualisierungsanforderungen · Wartungsintervall · Zusätzliche Sensorik"
+      },
+      {
+        "title": "Arbeitsablauf anbinden",
+        "text": "H300 4G oder H500 NB-IoT · Netzbetreiberdienst · Plattformfelder und Empfänger"
+      }
+    ]
+  },
+  "specifications": {
+    "description": "Teilen Sie uns den Objekttyp, den verfügbaren Montageplatz und das Meldeziel mit. Daraufhin können wir eine Modellkonfiguration, Befestigung und Datenanbindung empfehlen und das entsprechende Datenblatt sowie ein Angebot bereitstellen.",
+    "rows": [
+      {
+        "label": "H300-Konnektivität",
+        "value": "4G"
+      },
+      {
+        "label": "H500-Konnektivität",
+        "value": "NB-IoT"
+      },
+      {
+        "label": "Ortungsanforderung",
+        "value": "Außenkoordinaten, ungefähre Standortbestimmung oder ein projektspezifisches Innenraum-Ortungskonzept"
+      },
+      {
+        "label": "Einsatzregion",
+        "value": "Länder, Netzbetreiberabdeckung, Modemfrequenzbänder, SIM-Dienst und etwaige Roaming-Regelung"
+      },
+      {
+        "label": "Meldeprofil",
+        "value": "Lagerintervalle, Aktualisierungen bei Transporten und erforderliche Ereignismeldungen"
+      },
+      {
+        "label": "Stromversorgung und Wartung",
+        "value": "Angestrebtes Wartungsintervall, Betriebsbedingungen und Wartungszugang"
+      },
+      {
+        "label": "Montage und Umgebungsbelastung",
+        "value": "Geräteabmessungen, verfügbarer Platz, Befestigung, Antennenfreiraum und Standortbedingungen"
+      },
+      {
+        "label": "Plattformintegration",
+        "value": "Hitelecom Cloud oder Kundenplattform; vereinbarte Nachrichtenfelder, Endpunkt und Authentifizierung"
+      }
+    ]
+  },
+  "customSensing": [
+    {
+      "name": "Temperatur & Luftfeuchtigkeit",
+      "text": "Für ausgewählte Bedingungen in Kühlkette, Pharmazeutik, Lagerung oder Museumstransport."
+    },
+    {
+      "name": "Neigung & Handhabungsereignisse",
+      "text": "Für ein festgelegtes Ziel zur Orientierung oder Vibration bei empfindlichen Geräten und Fracht."
+    },
+    {
+      "name": "Öffnung & Lichtreaktion",
+      "text": "Für ein projektspezifisches Öffnungsereignis, eine Lichtmessung oder eine Gehäuselösung."
+    },
+    {
+      "name": "Innenraumortung",
+      "text": "Für definierte Innenraumzonen oder einen höheren Ortungsdetailgrad mit vereinbarter lokaler Infrastruktur."
+    }
+  ],
+  "faqHeading": {
+    "intro": "Praktische Antworten zur Modellwahl, Montage, zum Ortungsdetailgrad, Meldeverhalten und zur Datenanbindung, die Ihr Team benötigt."
+  },
+  "faqs": [
+    {
+      "id": "faq-positioning",
+      "question": "Wie wählen wir zwischen H300 4G und H500 NB-IoT?",
+      "paragraphs": [
+        "H300 nutzt 4G; H500 nutzt NB-IoT. Wählen Sie anhand der verfügbaren Netzbetreiberversorgung an Ihren Einsatzstandorten und Transportetappen und prüfen Sie anschließend Modemfrequenzbänder, SIM-Regelungen, Roaming und den erforderlichen Aktualisierungsplan. Bei bewegten oder grenzüberschreitend eingesetzten Objekten validieren Sie die Netzversorgung entlang der Route. Ortung, Stromversorgung und Plattformfunktionen werden für die gewählte Konfiguration vereinbart."
+      ],
+      "evidenceIds": [
+        "manufacturer-confirmation-2026-10-09",
+        "gsma-deployment",
+        "gsma-roaming"
+      ]
+    },
+    {
+      "id": "faq-indoor",
+      "question": "Wie sollten wir die Ortung in Lagerhallen oder überdachten Bereichen planen?",
+      "paragraphs": [
+        "Die Innenraumsuche benötigt ein Konzept, das dem erforderlichen Detailgrad entspricht: Gebäude, Zone, Gang oder Geräteabstellbereich. Gebäude, Metallkonstruktionen und überdachte Lager beeinflussen den Empfang. Für genauere Innenraumpositionen benötigt ein projektspezifisches BLE-, Wi-Fi- oder anderes lokales System eine unterstützende Infrastruktur und Integration. Prüfen Sie das Konzept am tatsächlichen Montagepunkt und an den Orten, an denen das Team das Objekt finden muss."
+      ],
+      "evidenceIds": [
+        "hitelecom-product",
+        "hitelecom-service",
+        "gps-accuracy",
+        "hilti-position"
+      ]
+    },
+    {
+      "id": "faq-battery-profile",
+      "question": "Wie beeinflussen Meldeintervalle die Batterielaufzeit?",
+      "paragraphs": [
+        "Häufigere Ortungen und Meldungen verbrauchen in der Regel mehr Energie. Wählen Sie den Aktualisierungsplan, der dem Team bei Abholung, Transport oder Rückführung des Objekts hilft, und bewerten Sie anschließend die Stromversorgung anhand von Netzversorgung, Betriebsbedingungen und Wartungszugang. Die Abschätzung der Batterielaufzeit oder des Wartungsintervalls sollte die gewählte Konfiguration und das zugrunde liegende Meldeprofil benennen."
+      ],
+      "evidenceIds": [
+        "hitelecom-product",
+        "hitelecom-datasheet",
+        "dm-faq",
+        "dm-battery"
+      ]
+    },
+    {
+      "id": "faq-geofence",
+      "question": "Wie sollten wir Geofence- und Bewegungsalarme spezifizieren?",
+      "paragraphs": [
+        "Fordern Sie Geofence- und Bewegungsalarme an, wenn sie dem Team helfen, auf einen Standortwechsel oder Einsatz zu reagieren. Der Lieferumfang von Tracker und Plattform muss die benötigten Ereignisse enthalten. Spezifizieren Sie Grenze, Aktualisierungsplan, Zeitvorgaben, Empfänger und Folgemaßnahme. Prüfen Sie anschließend, ob die resultierende Benachrichtigung unter den Netzabdeckungsbedingungen am Standort die Anforderungen der Aufgabe erfüllt."
+      ],
+      "evidenceIds": [
+        "hitelecom-product",
+        "dm-geofence"
+      ]
+    },
+    {
+      "id": "faq-mounting",
+      "question": "Wie wird der Tracker an Geräten oder Verpackungen befestigt?",
+      "paragraphs": [
+        "Nutzen Sie zum Objekt passende Befestigungselemente: Eine Rahmenhalterung, geschützte Vertiefung oder Koffertasche kann geeignet sein. Magnet-, Schraub- oder Gurtbefestigungen werden für das Projekt geprüft. Halten Sie Hebewege, Stapelflächen, Verschlüsse und Wartungszugang frei. Prüfen Sie Befestigungsfestigkeit und Empfang an der tatsächlichen Einheit und spezifizieren Sie die Belastung durch Reinigung, Temperatur oder Chemikalien, der das Gehäuse standhalten muss."
+      ],
+      "evidenceIds": [
+        "hitelecom-product",
+        "hitelecom-datasheet",
+        "hilti-install",
+        "iec-ip",
+        "gs1-grai"
+      ]
+    },
+    {
+      "id": "faq-regions-routes",
+      "question": "Wie sollten wir grenzüberschreitende Routen und Seerouten planen?",
+      "paragraphs": [
+        "Prüfen Sie die Netzbetreiberversorgung für die gewählte Funktechnik in jedem Land und auf jeder Transportetappe, einschließlich Modemfrequenzbändern, SIM-Regelungen und Roaming. H300 nutzt 4G; H500 nutzt NB-IoT. Meldungen im Hafen und im Binnenland hängen von der landgestützten Netzversorgung ab. Für Etappen auf See benötigen zusätzliche Konnektivitäts- oder Aufzeichnungssysteme ein separat bestätigtes Konzept und eine Spezifikation, bevor sie in das Angebot aufgenommen werden."
+      ],
+      "evidenceIds": [
+        "hitelecom-datasheet",
+        "gsma-deployment",
+        "gsma-roaming",
+        "hilti-country"
+      ]
+    },
+    {
+      "id": "faq-platform",
+      "question": "Können Standortmeldungen an unsere eigene Plattform angebunden werden?",
+      "paragraphs": [
+        "Die Anbindung an Ihre eigene Plattform ist eine Projektoption. Teilen Sie die Objektdatensätze und Standortfelder mit, die Ihr Team benötigt, sowie die Anforderungen an Endpunkt, Zugriff und Benachrichtigungen. MQTT kann Teil der vereinbarten Integration sein, sofern enthalten. Eine Beispielnachricht und eine vollständige Prüfung des Datenwegs zeigen, wie Meldungen in Ihrer Disposition, Anlagenverwaltung oder Ihrem Transportablauf erscheinen."
+      ],
+      "evidenceIds": [
+        "hitelecom-datasheet",
+        "hitelecom-service",
+        "oasis-mqtt"
+      ]
+    },
+    {
+      "id": "faq-customization",
+      "question": "Können Produktdesign und zusätzliche Sensorik angepasst werden?",
+      "paragraphs": [
+        "Ja. Hitelecom bietet eine OEM/ODM-Prüfung abgestimmt auf das Objekt und seinen Einsatz. Fotos oder Zeichnungen helfen, verfügbaren Platz sowie Anforderungen an Befestigung, Handhabung, Stromversorgung und Konnektivität zu bestimmen. Zusätzliche Messungen von Temperatur, Luftfeuchtigkeit, Neigung oder lichtbasierter Öffnung können bei Bedarf in den Projektumfang aufgenommen werden. Das Angebot benennt die enthaltenen Kanäle, Leistungsmerkmale und die Plattformanbindung für die gelieferte Konfiguration."
+      ],
+      "evidenceIds": [
+        "hitelecom-datasheet",
+        "hitelecom-service",
+        "hilti-install"
+      ]
+    }
+  ],
+  "provenance": {
+    "checked": "2026-10-09",
+    "sources": [
+      {
+        "id": "hitelecom-product",
+        "title": "H Series Asset Tracking Sensor",
+        "url": "https://www.hitelecom.com/product/asset-tracking-sensor",
+        "role": "Product-specific primary evidence",
+        "retrieved": "2026-10-09",
+        "ref": "turn104view0",
+        "observed": "Live page opened via web; raw HTML independently downloaded. H200T table, eight features and six applications."
+      },
+      {
+        "id": "hitelecom-datasheet",
+        "title": "Asset Tracking Sensor datasheet, 3 pages",
+        "url": "https://www.hitelecom.com/downloads/asset-tracking-sensor-datasheet.pdf",
+        "role": "Product-specific primary evidence",
+        "retrieved": "2026-10-09",
+        "ref": "turn106view0",
+        "observed": "Direct linked PDF downloaded, file verified as 3-page PDF and text extracted. Eight specification rows on page 3. No revision identifier found in extracted text."
+      },
+      {
+        "id": "hitelecom-service",
+        "title": "IoT Support & Custom Development",
+        "url": "https://www.hitelecom.com/service",
+        "role": "Manufacturer-wide customization support, not an H200T standard-feature list",
+        "retrieved": "2026-10-09",
+        "ref": "turn113search0",
+        "observed": "Hardware customization covers sensing, connectivity, power, interfaces and enclosures. Software customization covers firmware, dashboards, APIs, data models and platform integration."
+      },
+      {
+        "id": "hitelecom-home",
+        "title": "Hitelecom homepage",
+        "url": "https://www.hitelecom.com/",
+        "role": "Manufacturer-wide architecture and customization; lower specificity than product page",
+        "retrieved": "2026-10-09",
+        "ref": "turn113search2",
+        "observed": "General public-cloud 4G/NB-IoT path and customer/Hitelecom platforms; enclosure, firmware and branding OEM/ODM. Asset-tracking card includes LoRa, unlike the H200T page/PDF."
+      },
+      {
+        "id": "gps-accuracy",
+        "title": "GPS Accuracy",
+        "url": "https://www.gps.gov/gps-accuracy",
+        "role": "Primary public positioning explanation and public FAQ topic evidence",
+        "retrieved": "2026-10-09",
+        "ref": "turn109view0",
+        "observed": "Receiver accuracy depends on local signal conditions and device design; buildings, indoor use and reflections can degrade positioning. Government satellite signal accuracy is not a device specification."
+      },
+      {
+        "id": "gsma-deployment",
+        "title": "Enable Seamless Mobile IoT Deployments",
+        "url": "https://www.gsma.com/solutions-and-impact/technologies/internet-of-things/gsma_resources/enable-seamless-mobile-iot-deployments/",
+        "role": "Primary industry connectivity context",
+        "retrieved": "2026-10-09",
+        "ref": "turn105search1",
+        "observed": "2026 deployment guidance flags bands, architecture, supported features and network consistency as interoperability and roaming considerations. Search-index text retrievable; open was 403."
+      },
+      {
+        "id": "gsma-roaming",
+        "title": "Mobile IoT LPWA roaming",
+        "url": "https://www.gsma.com/solutions-and-impact/technologies/internet-of-things/mobile-iot/roaming/",
+        "role": "Primary industry connectivity context",
+        "retrieved": "2026-10-09",
+        "ref": "turn105search5",
+        "observed": "Roaming depends on inter-operator implementation and commercial agreements. This does not establish H200T roaming support. Search-index text retrievable; open was 403."
+      },
+      {
+        "id": "iec-ip",
+        "title": "Ingress Protection ratings",
+        "url": "https://www.iec.ch/ip-ratings",
+        "role": "Primary IP-code context",
+        "retrieved": "2026-10-09",
+        "ref": "turn107search1",
+        "observed": "IP rates enclosure resistance to dust/liquid ingress. IEC TC70 indexed text describes IP67 as dust tight and resistant to temporary immersion; no H200T test report or immersion conditions were published."
+      },
+      {
+        "id": "oasis-mqtt",
+        "title": "MQTT Version 3.1.1, OASIS Standard",
+        "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html",
+        "role": "Primary protocol context",
+        "retrieved": "2026-10-09",
+        "ref": "turn109view3",
+        "observed": "MQTT is a publish/subscribe messaging transport, not a full product integration contract. Implementation/security responsibilities remain with system implementers. H200T MQTT version, QoS, payload and TLS support are not specified."
+      },
+      {
+        "id": "gs1-grai",
+        "title": "Global Returnable Asset Identifier GRAI",
+        "url": "https://www.gs1.org/standards/id-keys/grai",
+        "role": "Primary reusable-asset application context",
+        "retrieved": "2026-10-09",
+        "ref": "turn110search0",
+        "observed": "GS1 identifies reusable transport equipment and tools by type and optionally individually. Useful application evidence; it does not establish H200T GS1, RFID or barcode support. Search-index text retrievable; open was 403."
+      },
+      {
+        "id": "dm-faq",
+        "title": "Yabby GPS FAQ (EoL)",
+        "url": "https://support.digitalmatter.com/609-yabby-gps-faq",
+        "role": "Primary vendor published FAQ topic signal only; no transfer of competitor specs",
+        "retrieved": "2026-10-09",
+        "ref": "turn111view0",
+        "observed": "Published questions include battery life, update rates, missing GPS fix and movement alerts. EoL source is used only to demonstrate topic relevance, not current product recommendation or H200T feature evidence."
+      },
+      {
+        "id": "dm-battery",
+        "title": "Device Battery Life Estimator",
+        "url": "https://support.digitalmatter.com/en_US/devices/device-battery-estimator",
+        "role": "Primary vendor public buyer-configuration topic signal only",
+        "retrieved": "2026-10-09",
+        "ref": "turn112view4",
+        "observed": "Battery estimation depends on deployment parameters; real-world results vary with installation, network, use, temperature and battery quality. No competitor numbers are assigned to H200T."
+      },
+      {
+        "id": "dm-geofence",
+        "title": "How To Guide: Geo-Fences",
+        "url": "https://support.digitalmatter.com/geofences/117-how-to-guide-geo-fences",
+        "role": "Primary vendor public buyer-configuration topic signal only",
+        "retrieved": "2026-10-09",
+        "ref": "turn111view2",
+        "observed": "Public support guide covers boundary setup, alert recipients and dependence of entry/exit statistics on update rate. Its specific platform modes and limits are not H200T claims."
+      },
+      {
+        "id": "hilti-position",
+        "title": "How does the Geo tag find and report its location?",
+        "url": "https://help.ontrack3.hilti.com/hc/en-us/articles/34399864475537-How-does-the-Geo-tag-find-and-report-its-location",
+        "role": "Primary vendor published FAQ topic signal only",
+        "retrieved": "2026-10-09",
+        "ref": "turn112view1",
+        "observed": "Public question covers differing positioning methods, weak satellite reception and approximate cellular location. Hilti Wi-Fi positioning is not assigned to H200T."
+      },
+      {
+        "id": "hilti-country",
+        "title": "Will the Geo tag work anywhere in the world?",
+        "url": "https://help.ontrack3.hilti.com/hc/en-us/articles/34399904619409-Will-the-Geo-tag-work-anywhere-in-the-world",
+        "role": "Primary vendor published FAQ topic signal only",
+        "retrieved": "2026-10-09",
+        "ref": "turn113view0",
+        "observed": "Public question concerns country coverage and gaps at sea. Its country list and supplied SIM do not establish H200T regional support."
+      },
+      {
+        "id": "hilti-install",
+        "title": "How to use the Geo tag",
+        "url": "https://help.ontrack3.hilti.com/hc/en-us/articles/34399832325265-How-to-use-the-Geo-tag",
+        "role": "Primary vendor installation/onboarding topic signal only",
+        "retrieved": "2026-10-09",
+        "ref": "turn111view1",
+        "observed": "Public setup guide covers device activation, securing it to equipment and linking serial number to an asset. No Hilti activation mechanism is assigned to H200T."
+      },
+      {
+        "id": "manufacturer-confirmation-2026-10-09",
+        "title": "Hitelecom manufacturer confirmation: H300 = 4G; H500 = NB-IoT",
+        "role": "Direct manufacturer instruction in this conversation, authoritative for model/radio naming; not an externally published specification",
+        "observed": "User explicitly corrected the product division on 2026-10-09. No per-model accuracy, dimensions, enclosure rating, battery number or temperature limit was supplied."
+      }
+    ],
+    "faqMethod": "Buyer questions synthesized from public primary product/standards information and independently published vendor FAQ topics. Not claimed as Hitelecom customer questions or measured search volumes.",
+    "modelCorrection": "H300/4G and H500/NB-IoT replace the previous H200T model label. Prior website/PDF information is legacy functional background, not separate H300/H500 numerical specifications.",
+    "revision": "V3: clearer industrial towing AGV image and matching direct-asset deployment and transfer description; H300/4G and H500/NB-IoT retained."
+  }
+}

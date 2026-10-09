@@ -4,7 +4,7 @@
  * 独立静态路由使本页 CSS 仅含 BaseLayout 公共样式 + asset-tracking.css，
  * 不与 [slug] 路由的空气质量/旧产品样式合并打包（README-KIMI 第 6 条）。
  * [slug].astro 的 getStaticPaths 已排除 asset-tracking-sensor，无路由冲突；
- * es/de/ja/fr/ru/zh 仍由各自 [slug] 经典模板渲染（翻译包未到位）。
+ * es/de/ja/fr/ru 已由同型多语路由覆盖（2026-10-09 翻译包上线）；zh 仍走经典模板。
  */
 import AssetTrackingV2Page from '../../components/asset-tracking/AssetTrackingV2Page.astro';
 ---

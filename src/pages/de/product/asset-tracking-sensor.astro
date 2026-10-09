@@ -1,0 +1,10 @@
+---
+/**
+ * 资产定位传感器页 V2 · de 静态路由（2026-10-09，与温度页同型 CSS 分离 + 多语注册表）
+ * 独立静态路由使本页 CSS 仅含 BaseLayout 公共样式 + asset-tracking.css；
+ * de/product/[slug].astro 的 getStaticPaths 已排除 asset-tracking-sensor，无路由冲突。
+ */
+import AssetTrackingV2Page from '../../../components/asset-tracking/AssetTrackingV2Page.astro';
+---
+
+<AssetTrackingV2Page locale="de" />

@@ -1,11 +1,12 @@
 ---
 /**
- * 资产定位传感器页 V2 · EN 页面包装（GPT6 页面包，Kimi 审核集成 2026-10-09）
- * 同 URL 上线：/product/asset-tracking-sensor（slug 不变，hreflang 闭环 /
- * sitemap / 内链均由路由层原有逻辑覆盖）。其余六语言保持经典模板（[slug]），
- * 待翻译包到位后按 V43 温度先例扩展。
- * 数据：src/data/asset-tracking-content.json；样式：asset-tracking.css
- * （.ht-asset-tracking 作用域，独立路由隔离打包，不与 [slug] 共享样式合并）。
+ * 资产定位传感器页 V2 · 多语言注册表（GPT6 页面包 + 五语翻译包，Kimi 审核集成 2026-10-09）
+ * 同 URL 上线：/{lang}/product/asset-tracking-sensor（slug 不变，hreflang 闭环 /
+ * sitemap / 内链均由路由层原有逻辑覆盖）。zh 不在本轮范围（保持经典模板）。
+ * 用法：EN 路由省略 locale（默认 en）；其余语言 locale="es|de|ja|fr|ru"。
+ * 数据：src/data/asset-tracking-content(-{lang}).json；词典：dicts.mjs
+ * （键=英文原文，EN 无条目，S() 回退原文保证 EN 零差异）；
+ * 样式：asset-tracking.css（.ht-asset-tracking 作用域，独立路由隔离打包）。
  * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
  * Schema（includeOrganization={false}，统一引用 /#organization）。
  * Hero 响应式 preload（imagesrcset/imagesizes 与 img 一致）经 head 槽输出，
@@ -15,16 +16,35 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import AssetTrackingPage from './AssetTrackingPage.astro';
 import StructuredData from './StructuredData.astro';
 import { assetImage } from './images.mjs';
-import content from '../../data/asset-tracking-content.json';
+import { ASSET_DICTS } from './dicts.mjs';
+import contentEn from '../../data/asset-tracking-content.json';
+import contentEs from '../../data/asset-tracking-content-es.json';
+import contentDe from '../../data/asset-tracking-content-de.json';
+import contentJa from '../../data/asset-tracking-content-ja.json';
+import contentFr from '../../data/asset-tracking-content-fr.json';
+import contentRu from '../../data/asset-tracking-content-ru.json';
 import '../../styles/asset-tracking.css';
+
+const REGISTRY = {
+  en: { content: contentEn, prefix: '' },
+  es: { content: contentEs, prefix: '/es' },
+  de: { content: contentDe, prefix: '/de' },
+  ja: { content: contentJa, prefix: '/ja' },
+  fr: { content: contentFr, prefix: '/fr' },
+  ru: { content: contentRu, prefix: '/ru' },
+};
+
+const { locale = 'en' } = Astro.props;
+const { content, prefix } = REGISTRY[locale] ?? REGISTRY.en;
+const t = ASSET_DICTS[locale];
 
 const hero = await assetImage('product-hero.webp', true);
 const ogImage = new URL(hero.src, Astro.site).href;
 const heroSizes = '(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px';
 ---
 
-<BaseLayout locale="en" title={content.seo.title} description={content.seo.description}>
+<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description}>
   <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
-  <StructuredData slot="head" content={content} imageUrl={ogImage} includeOrganization={false} />
-  <AssetTrackingPage />
+  <StructuredData slot="head" content={content} imageUrl={ogImage} t={t} locale={locale} prefix={prefix} includeOrganization={false} />
+  <AssetTrackingPage content={content} t={t} locale={locale} prefix={prefix} />
 </BaseLayout>
