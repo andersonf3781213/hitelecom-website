@@ -17,8 +17,8 @@ import AirQualityV2Page from '../../components/air-quality/AirQualityV2Page.astr
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const cms = await getCmsProductDetails('en');
-  // tilt-sensor / temperature-sensor / asset-tracking-sensor 已改专属静态路由（CSS 分离），此处排除避免路由冲突
-  return [...Object.values(productSlugs), ...Object.keys(cms)].filter((slug) => slug !== 'tilt-sensor' && slug !== 'temperature-sensor' && slug !== 'asset-tracking-sensor').map((slug) => ({ params: { slug } }));
+  // tilt-sensor / temperature-sensor / asset-tracking-sensor / pressure-sensor 已改专属静态路由（CSS 分离），此处排除避免路由冲突
+  return [...Object.values(productSlugs), ...Object.keys(cms)].filter((slug) => !['tilt-sensor', 'temperature-sensor', 'asset-tracking-sensor', 'pressure-sensor'].includes(slug)).map((slug) => ({ params: { slug } }));
 };
 
 const { slug } = Astro.params;

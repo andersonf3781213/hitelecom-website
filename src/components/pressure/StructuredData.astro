@@ -1,0 +1,15 @@
+---
+const {content,imageUrl,includeOrganization=true} = Astro.props;
+const url='https://www.hitelecom.com/product/pressure-sensor';
+const orgId='https://www.hitelecom.com/#organization';
+const groupId=url+'#pressure-series';
+const graph=[
+ ...(includeOrganization?[{'@type':'Organization','@id':orgId,name:'Hitelecom',legalName:'Shanghai Hitelecom Communication Technology Co., Ltd.',url:'https://www.hitelecom.com',email:'sales@hitelecom.cn'}]:[]),
+ {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:'en',dateModified:'2026-10-09',publisher:{'@id':orgId},mainEntity:{'@id':groupId}},
+ {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://www.hitelecom.com'},{'@type':'ListItem',position:2,name:'IoT Sensors',item:'https://www.hitelecom.com/product'},{'@type':'ListItem',position:3,name:'Wireless Pressure Sensors',item:url}]},
+ {'@type':'ProductGroup','@id':groupId,productGroupID:'H-Series-Pressure-Sensors',name:'Hitelecom H Series Wireless Pressure Sensors',description:content.hero.description,url,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},hasVariant:content.series.models.map(model=>({'@id':url+'#model-'+model.toLowerCase()})),additionalProperty:[{'@type':'PropertyValue',name:'Available full-scale range options',value:'1 / 1.6 / 3.5 / 7 / 10 / 20 / 35 / 100 MPa, selected by configuration'},{'@type':'PropertyValue',name:'Published measurement accuracy',value:'±0.5% FS'},{'@type':'PropertyValue',name:'Annual stability',value:'±0.2% FS/year'},{'@type':'PropertyValue',name:'Wireless family options',value:'4G Cat.1 / NB-IoT / LoRa, by model and selected variant'},{'@type':'PropertyValue',name:'Enclosure protection',value:'IP68, as listed in the family datasheet'}]},
+ ...content.series.models.map(model=>({'@type':'Product','@id':url+'#model-'+model.toLowerCase(),name:'Hitelecom '+model+' Pressure Sensor',model,description:'Published H Series pressure-sensor model identifier. The supplied range, sensing assembly and wireless variant are selected for the project.',brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},isVariantOf:{'@id':groupId},url:url+'#model-'+model.toLowerCase()})),
+ {'@type':'FAQPage','@id':url+'#faq',inLanguage:'en',mainEntity:content.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
+];
+---
+<script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/</g,'\\u003c')}/>
