@@ -127,13 +127,6 @@ document.querySelectorAll('[data-model]').forEach(link => {
     if (option) field.value = option.value;
   });
 });
-document.querySelectorAll('[data-datasheet-request]').forEach(link => {
-  link.addEventListener('click', () => {
-    const field = document.querySelector('#requirements');
-    const request = T('Please send the H300 (4G) and H500 (NB-IoT) model datasheets.');
-    if (!field.value.includes(request)) field.value = request + '\n' + field.value;
-  });
-});
 const revealTarget = () => {
   let id; try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
   const el = document.getElementById(id);
