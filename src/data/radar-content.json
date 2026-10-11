@@ -1,0 +1,2634 @@
+{
+  "seo": {
+    "title": "Wireless Radar Distance Sensor | Level Monitoring | Hitelecom",
+    "description": "Explore Hitelecom wireless radar distance sensors for water level, grain and bulk-material height monitoring, plus reference-target movement review.",
+    "primaryTopic": "Wireless radar distance and non-contact level monitoring",
+    "keywords": [
+      "radar distance sensor",
+      "wireless radar distance sensor",
+      "non-contact radar level monitoring",
+      "radar water level sensor",
+      "radar silo level monitoring",
+      "4G radar sensor",
+      "NB-IoT radar sensor",
+      "LoRa radar sensor"
+    ]
+  },
+  "hero": {
+    "title": "Wireless radar\ndistance sensor.",
+    "valueHeading": "Measure the distance. Know the level.",
+    "description": "The Hitelecom H Series wireless radar distance sensor measures the distance to a selected surface or target without contact. Monitor water levels and bulk-material heights, or discuss a reference-target arrangement for a defined movement project. Depending on the configuration, readings are sent over 4G, NB-IoT or LoRa to Hitelecom Cloud or a compatible customer platform. Select the range, target, mounting arrangement and reporting profile for your site.",
+    "imageCaption": "H310-MW012 · Distance: 5589mm",
+    "proof": [
+      {
+        "value": "Non-contact",
+        "label": "Distance to a selected target",
+        "note": "For water, materials and defined positions"
+      },
+      {
+        "value": "1 mm",
+        "label": "Published reading resolution",
+        "note": "H310-MW012 model reference"
+      },
+      {
+        "value": "IP68",
+        "label": "Published enclosure protection",
+        "note": "Select mounting for the site conditions"
+      }
+    ]
+  },
+  "features": [
+    {
+      "title": "Non-contact measurement.",
+      "text": "Measure from above the water or material surface, or along a clear path to a defined target. Plan access and mounting without an immersed sensing probe."
+    },
+    {
+      "title": "Remote level visibility.",
+      "text": "Bring readings from tanks, silos and remote sites into one monitoring view. Set the distance reference and level conversion around the installation."
+    },
+    {
+      "title": "A range for the task.",
+      "text": "The published H310-MW012 reference covers 0.3–12 m. Other range and installation requirements can be reviewed as project configurations."
+    },
+    {
+      "title": "Specified measurement performance.",
+      "text": "The model reference lists ±1 mm accuracy under 25°C Hitelecom laboratory conditions and 1 mm reading resolution. Select performance around the target and site geometry."
+    },
+    {
+      "title": "Protected wireless housing.",
+      "text": "IP68 enclosure protection is listed for the model reference. Match the mounting, exposed sensing face and access for maintenance to the environment."
+    },
+    {
+      "title": "A wireless path for your site.",
+      "text": "Choose a 4G, NB-IoT or LoRa configuration around the local network and integration path. Agree sampling, reporting and alert requirements together."
+    },
+    {
+      "title": "Local setup & remote updates.",
+      "text": "NFC configuration and remote OTA firmware updates are listed in the published product information. Confirm the setup method and update workflow for the supplied configuration."
+    },
+    {
+      "title": "Platform-ready readings.",
+      "text": "Associate distance and derived level with a device, vessel or site record. Agree the units, measurement reference, timestamps and payload with your platform team."
+    }
+  ],
+  "measurement": {
+    "description": "Start with the value your team needs: a distance, a water or material level, or the change in a target’s position. The mounting reference and measuring path connect the reading to that objective.",
+    "cards": [
+      {
+        "title": "Distance to a target.",
+        "text": "Measure the gap along the radar’s viewing direction. Define the target material, size and orientation, and the nearest and farthest positions to observe.",
+        "project_brief": "Target surface · Measurement axis · Minimum / maximum gap · Required change"
+      },
+      {
+        "title": "Liquid & bulk-material level.",
+        "text": "For a fixed sensor above the surface, convert distance into level using the agreed installation reference. Tank dimensions and the material surface guide the mounting point.",
+        "project_brief": "Reference height · Vessel geometry · Surface conditions · Filling arrangement"
+      },
+      {
+        "title": "Relative target movement.",
+        "text": "Compare distances to the same target along a defined axis. Use an independent stable reference for local movement, or the opposing member for a relative joint gap. Verify the configuration against the change your project needs to resolve.",
+        "project_brief": "Independent reference · Target geometry · Required change · Site repeatability · Observation interval"
+      }
+    ],
+    "installation_text": "Use a rigid, accessible mounting point and a clear path to the intended surface or target. Check the complete distance span, target size and alignment, nearby structures, fill streams and environmental conditions. For movement projects, establish an independent reference and baseline, then verify repeatability against the required change. Commission the reading and reference together."
+  },
+  "conversion": {
+    "title": "One distance reading.\nA useful site reference.",
+    "description": "For a vertical, fixed top-mounted installation, level equals the reference height minus the distance to the surface. Define the reference in the same unit and validate it on site.",
+    "example": {
+      "height": 6,
+      "distance": 1.8,
+      "level": 4.2,
+      "unit": "m",
+      "label": "Illustrative example · fixed top-mounted sensor"
+    },
+    "notes": [
+      {
+        "title": "Distance",
+        "text": "The directly measured gap along the selected measuring path."
+      },
+      {
+        "title": "Level",
+        "text": "A height relative to a defined datum. For the illustrated vertical installation: L = H − D."
+      },
+      {
+        "title": "Volume & flow",
+        "text": "Volume uses vessel geometry or a tank table. Flow uses an appropriate structure or site-specific relationship. Agree these calculations with the platform team."
+      }
+    ]
+  },
+  "workflow": {
+    "profile_text": "Sampling is when the sensor measures. Reporting is when the reading reaches the platform. Define both around how quickly the level or target can change, then agree the alert and response workflow.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Measure",
+        "text": "The selected radar configuration reads the distance to the intended target. Choose the sampling schedule and verify the reference against the installation."
+      },
+      {
+        "number": "02",
+        "title": "Report",
+        "text": "The chosen cellular or LoRa configuration carries readings through the agreed network path. Match scheduled reporting and configured alerts to the operational need."
+      },
+      {
+        "number": "03",
+        "title": "Review & respond",
+        "text": "Review distance, derived level and trends in the connected platform. Define thresholds, recipients and the next action for your operations team."
+      }
+    ],
+    "battery_text": "The H310-MW012 specification table lists a 19,000 mAh battery and a service-life reference of more than 10 years at two-hour reporting. Actual service life depends on the supplied power configuration, sampling activity, transmissions, network conditions and temperature. Specify faster-changing applications with their required update and response times.",
+    "platform_text": "Choose the destination for your distance readings and derived levels. Cellular configurations can use the agreed MQTT connection; LoRa configurations use the selected radio receiver or gateway and platform integration."
+  },
+  "series": {
+    "description": "H Series product form, measurement range and wireless connection are selected for the project. H200, H300 and H500 are published family identifiers; H310-MW012 provides the model-specific reference below. Share your measuring path before choosing a final configuration.",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "referenceModel": "H310-MW012",
+    "connectivity": [
+      {
+        "id": "4G",
+        "title": "For cellular-connected sites.",
+        "description": "Select the regional cellular configuration and SIM service. Review signal conditions at the mounting point, the reporting profile and the platform connection."
+      },
+      {
+        "id": "NB-IoT",
+        "title": "For supported narrowband networks.",
+        "description": "Review NB-IoT service, bands and operator support in the installation country. Match the network and update requirements to the supplied terminal."
+      },
+      {
+        "id": "LoRa",
+        "title": "For an agreed local radio network.",
+        "description": "Plan the selected LoRa receiver or gateway, site coverage and platform path. Confirm the radio protocol and payload for the project."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Define the target.",
+        "text": "Surface or object, material, orientation, distance span and the change your team needs to observe."
+      },
+      {
+        "title": "Plan the installation.",
+        "text": "Mounting reference, vessel or site geometry, environmental conditions and practical access."
+      },
+      {
+        "title": "Agree the data path.",
+        "text": "Sampling, reporting, wireless service, level calculations, platform fields and the alert workflow."
+      }
+    ]
+  },
+  "specifications": {
+    "description": "Published H310-MW012 model reference. Use these values to begin the application review; the supplied configuration and supporting datasheet are agreed for your project.",
+    "datasheet_url": "https://www.hitelecom.com/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf",
+    "rows": [
+      {
+        "label": "Reference model",
+        "value": "H310-MW012"
+      },
+      {
+        "label": "Measuring range",
+        "value": "0.3–12 m"
+      },
+      {
+        "label": "Published accuracy",
+        "value": "±1 mm · 25°C Hitelecom laboratory conditions"
+      },
+      {
+        "label": "Reading resolution",
+        "value": "1 mm"
+      },
+      {
+        "label": "Beam angle",
+        "value": "<20° · published model reference"
+      },
+      {
+        "label": "Enclosure protection",
+        "value": "IP68"
+      },
+      {
+        "label": "Battery capacity",
+        "value": "19,000 mAh · published configuration"
+      },
+      {
+        "label": "Battery-life design reference",
+        "value": "More than 10 years at two-hour reporting; service life depends on configuration and operating conditions"
+      },
+      {
+        "label": "Operating temperature",
+        "value": "−30°C to +75°C"
+      },
+      {
+        "label": "Storage temperature",
+        "value": "−40°C to +85°C"
+      },
+      {
+        "label": "Operating humidity",
+        "value": "5–95% RH · non-condensing"
+      },
+      {
+        "label": "Family wireless options",
+        "value": "4G / NB-IoT / LoRa · selected by configuration"
+      },
+      {
+        "label": "Local configuration / updates",
+        "value": "NFC / remote OTA · confirm the supplied configuration"
+      },
+      {
+        "label": "Cellular platform protocol",
+        "value": "MQTT · endpoint, authentication and payload agreed for integration"
+      },
+      {
+        "label": "Mounting",
+        "value": "Mounting lugs, pole clamp or slotted mount · selected for the installation"
+      }
+    ]
+  },
+  "customSensing": [
+    {
+      "name": "Range & target",
+      "text": "Required nearest and farthest distances, target material and the surface change to observe."
+    },
+    {
+      "name": "Form & mounting",
+      "text": "Enclosure form, mounting arrangement, sight line and access suited to the project."
+    },
+    {
+      "name": "Power & reporting",
+      "text": "Sampling schedule, reporting needs, operating conditions and maintenance target."
+    },
+    {
+      "name": "OEM / ODM & integration",
+      "text": "Product identity, platform payload and project documentation agreed with your team."
+    }
+  ],
+  "faqHeading": {
+    "intro": "Answers on surface levels, manhole maintenance, reference-target projects and the information needed for a suitable configuration."
+  },
+  "faqs": [
+    {
+      "id": "radar-principle",
+      "question": "What does a wireless radar distance sensor measure?",
+      "paragraphs": [
+        "A radar distance sensor uses reflected radio signals to measure the distance from its measurement reference to a target surface. The Hitelecom H Series sends readings for remote monitoring. With an agreed reference and installation, distance data can support water level, tank level, bulk-material level or changes in target position."
+      ],
+      "evidenceIds": [
+        "IFM-PRINCIPLE",
+        "HT-PAGE",
+        "HT-PDF"
+      ]
+    },
+    {
+      "id": "range-and-performance",
+      "question": "How do I choose the range and measurement performance?",
+      "paragraphs": [
+        "Use the nearest and farthest target positions to define the required range. The published H310-MW012 reference specifies 0.3–12 m, ±1 mm accuracy under 25°C Hitelecom laboratory conditions, and a 1 mm reading resolution. Share the target material and installation geometry so Hitelecom can review the appropriate configuration, including requests for other ranges."
+      ],
+      "evidenceIds": [
+        "HT-PDF",
+        "IFM-PRINCIPLE"
+      ]
+    },
+    {
+      "id": "distance-to-level",
+      "question": "How is a distance reading converted into level or inventory?",
+      "paragraphs": [
+        "For a fixed sensor mounted vertically above the surface, level is calculated from the configured reference height minus the measured distance to the surface. Volume uses the vessel geometry or a calibrated tank table. For bulk solids, the mounting position and surface profile also matter; a local level reading supports inventory planning when interpreted with the agreed vessel and material information."
+      ],
+      "evidenceIds": [
+        "OTT-WATER",
+        "VEGA-INVENTORY",
+        "USGS-STAGE"
+      ]
+    },
+    {
+      "id": "liquids-and-solids",
+      "question": "Can radar distance monitoring be used for liquids and bulk solids?",
+      "paragraphs": [
+        "Radar is used for liquid surfaces and for bulk materials such as grain, pellets and aggregates. Selection depends on the material, surface conditions, vessel shape and accessible mounting position. Share the medium, filling method and expected environment with Hitelecom to review a suitable configuration for your tank, silo, hopper or open-water site."
+      ],
+      "evidenceIds": [
+        "EMERSON-SOLIDS",
+        "HT-PDF",
+        "OTT-WATER"
+      ]
+    },
+    {
+      "id": "manhole-sediment-and-blockage",
+      "question": "How can manhole level data support sediment and blockage checks?",
+      "paragraphs": [
+        "A fixed radar above a sewer or drain chamber observes the exposed water surface. Water-level trends, compared with rainfall, pumping and downstream conditions, can help the maintenance team select locations for inspection. Where the chamber is dry or emptied and the deposit surface is exposed, its local height can be assessed against a known chamber datum after confirming the target return.",
+        "Specify whether you need water level, exposed deposit height or a submerged sludge interface. The submerged interface is a separate measurement task requiring an appropriate instrument; water-surface distance alone does not identify the amount or location of a pipe blockage."
+      ],
+      "evidenceIds": [
+        "vega-gully-level",
+        "vega-sewer-level",
+        "eh-submerged-sludge-interface"
+      ]
+    },
+    {
+      "id": "reference-target-movement",
+      "question": "How are distance changes used in structural movement projects?",
+      "paragraphs": [
+        "A defined target can be observed from an independent, stable reference. The difference between the current gap and its baseline is a relative change along the measuring axis. For a settlement interpretation, establish a vertical measuring arrangement or validated survey geometry, with periodic checks of the reference.",
+        "Specify the required observable change and monitoring interval, then review target size, alignment, environmental effects and on-site repeatability with the project engineer. These are proposed selection briefs: the published H310-MW012 laboratory distance accuracy is a model reference, rather than a validated field settlement performance specification.",
+        "For a joint or bearing gap, the mounting member and opposing target define a relative opening. Independent survey information is needed when the project also requires absolute movement."
+      ],
+      "evidenceIds": [
+        "IFM-PRINCIPLE",
+        "XYLEM-INSTALL",
+        "ids-los-deformation",
+        "ids-structural-system",
+        "usace-deformation-manual",
+        "HT-PDF"
+      ]
+    },
+    {
+      "id": "radar-vs-ultrasonic",
+      "question": "What is the difference between radar and ultrasonic level measurement?",
+      "paragraphs": [
+        "Radar uses electromagnetic waves; ultrasonic measurement uses sound waves. Air temperature changes the speed of sound used in ultrasonic measurement; radar does not depend on sound speed. Their response to changing air conditions, dust, vapour and surface conditions differs. Both need an appropriate measuring path and installation. Choose by the medium, required range, available mounting space and site conditions; for foam, condensation or deposits, include those details in the application review."
+      ],
+      "evidenceIds": [
+        "VEGA-COMPARE",
+        "IFM-INSTALL"
+      ]
+    },
+    {
+      "id": "installation",
+      "question": "Where should a non-contact radar distance sensor be installed?",
+      "paragraphs": [
+        "Use a rigid mounting point with a clear measuring path to the intended surface or target. For level monitoring, plan the mounting position around the vessel shape, fill stream and internal structures, and keep the full operating range within the selected configuration. Establish the measurement reference and verify readings at representative levels during commissioning."
+      ],
+      "evidenceIds": [
+        "IFM-INSTALL",
+        "XYLEM-INSTALL"
+      ]
+    },
+    {
+      "id": "wireless-and-power",
+      "question": "How are wireless connectivity and reporting configured?",
+      "paragraphs": [
+        "The H Series offers 4G, NB-IoT and LoRa options by configuration. Match the network to site coverage and the destination platform, then define sampling, scheduled reporting and alert requirements. The H310-MW012 datasheet lists more than 10 years at two-hour reporting; actual service life depends on the supplied power configuration, sensing activity, network conditions and temperature."
+      ],
+      "evidenceIds": [
+        "HT-PAGE",
+        "HT-PDF"
+      ]
+    },
+    {
+      "id": "project-specification",
+      "question": "What information should I provide for a radar distance sensor quotation?",
+      "paragraphs": [
+        "Send the application, target material, minimum and maximum measuring distances, mounting position and approximate quantity. A site photo or vessel drawing helps define the measuring path. Include ambient and process conditions, the required reading and reporting intervals, wireless coverage, platform requirements and the level or distance events you want to monitor."
+      ],
+      "evidenceIds": [
+        "IFM-INSTALL",
+        "VEGA-INVENTORY",
+        "IFM-PRINCIPLE"
+      ]
+    }
+  ],
+  "applicationSection": {
+    "eyebrow": "APPLICATIONS",
+    "title": "Surface levels.",
+    "titleMuted": "Reference-target projects.",
+    "intro": "Choose a measurement task to see its surface or target, installation arrangement and project selection requirements.",
+    "countLabel": "48 application examples",
+    "valueHeading": "Reference-target projects.",
+    "description": "Choose by what the radar actually observes: a visible water or material surface, or a defined target relative to an agreed reference. Explore 48 measurement briefs across drainage, storage, industrial processes and civil infrastructure.",
+    "note": "AI-assisted product composites show proposed sensor positions and measured surfaces or targets. Illustrative installations; mounting is selected for each project.",
+    "mountingNote": "The first four categories cover surface-level selection. The following four are reference-target projects requiring engineering review of geometry, site repeatability and the selected model before specification."
+  },
+  "groups": [
+    {
+      "id": "drainage",
+      "number": "01",
+      "title": "Manholes, drains & sediment checks",
+      "jumpLabel": "Drainage",
+      "tagline": "Make the chamber surface useful to maintenance.",
+      "intro": "Observe water levels and exposed sediment surfaces at defined drainage points. A documented datum or clean-pit baseline gives each reading meaning, while chamber geometry, surface condition and maintenance timing guide the project selection. Compare the trends with rainfall and inspection records to plan the next visit.",
+      "description": "Observe water levels and exposed sediment surfaces at defined drainage points. A documented datum or clean-pit baseline gives each reading meaning, while chamber geometry, surface condition and maintenance timing guide the project selection. Compare the trends with rainfall and inspection records to plan the next visit.",
+      "scenes": [
+        "sewer-chamber-level",
+        "dry-catchpit-sediment",
+        "gully-silt-height",
+        "culvert-upstream-level",
+        "sewer-level-comparison",
+        "wastewater-lift-stations"
+      ],
+      "image": {
+        "name": "sewer-chamber-level-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar sensor on a rigid upper-chamber bracket above the sewer flow-channel water surface.",
+        "caption": "Manholes, drains & sediment checks",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "The open manhole’s flow channel and visible water surface beneath an accessible upper rim."
+      }
+    },
+    {
+      "id": "grain-solids",
+      "number": "02",
+      "title": "Grain, feed & agricultural solids",
+      "jumpLabel": "Grain & feed",
+      "tagline": "Plan replenishment around the observed material surface.",
+      "intro": "Follow local fill height in grain stores, feed hoppers and biomass bunkers. Each observation is referenced to the vessel or floor, with the material, changing surface and loading activity reviewed for selection. Broader inventory estimates use the project’s geometry and separately agreed calibration.",
+      "description": "Follow local fill height in grain stores, feed hoppers and biomass bunkers. Each observation is referenced to the vessel or floor, with the material, changing surface and loading activity reviewed for selection. Broader inventory estimates use the project’s geometry and separately agreed calibration.",
+      "scenes": [
+        "grain-storage-silos",
+        "grain-floor-stores",
+        "livestock-feed-height",
+        "aquaculture-feed-bins",
+        "fertilizer-granule-level",
+        "woodchip-biomass-bunkers"
+      ],
+      "image": {
+        "name": "grain-storage-silos-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on a tall fixed grain-bin bracket, facing down towards an exposed wheat surface",
+        "caption": "Grain, feed & agricultural solids",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "The visible grain surface inside the silo and the open space above it."
+      }
+    },
+    {
+      "id": "chemical-mining",
+      "number": "03",
+      "title": "Chemical, mineral & coal material levels",
+      "jumpLabel": "Chemical & mining",
+      "tagline": "Connect material levels to the handling plan.",
+      "intro": "Observe selected powder, pellet, coal and mineral surfaces from an approved fixed position. Material properties, dust, process exposure and required site approvals guide the configuration. The local height trend supports supply planning, with any wider quantity estimate configured around verified storage geometry.",
+      "description": "Observe selected powder, pellet, coal and mineral surfaces from an approved fixed position. Material properties, dust, process exposure and required site approvals guide the configuration. The local height trend supports supply planning, with any wider quantity estimate configured around verified storage geometry.",
+      "scenes": [
+        "powder-additive-bins",
+        "plastic-pellet-hoppers",
+        "coal-bunker-height",
+        "ore-stockpile-height",
+        "cement-silo-surface",
+        "sand-aggregate-bunkers"
+      ],
+      "image": {
+        "name": "powder-additive-bins-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar distance sensor on an upper vessel bracket above an exposed chemical powder surface",
+        "caption": "Chemical, mineral & coal material levels",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "A real powder surface visible through the supply bin’s service opening."
+      }
+    },
+    {
+      "id": "liquid-levels",
+      "number": "04",
+      "title": "Waterworks, reservoirs & process liquids",
+      "jumpLabel": "Liquid levels",
+      "tagline": "Give each liquid surface a reliable site reference.",
+      "intro": "Connect waterworks, reservoir and process-tank surface observations to a surveyed datum. The installation is selected around liquid conditions, fixed mounting, access and the required operating range. Review the level trend with site records, using verified geometry for any separately configured storage estimate.",
+      "description": "Connect waterworks, reservoir and process-tank surface observations to a surveyed datum. The installation is selected around liquid conditions, fixed mounting, access and the required operating range. Review the level trend with site records, using verified geometry for any separately configured storage estimate.",
+      "scenes": [
+        "waterworks-process-basins",
+        "lake-reservoir-level",
+        "covered-reservoir-surface",
+        "roof-tank-surface",
+        "dyeing-equalization-level",
+        "dye-bath-supply-level"
+      ],
+      "image": {
+        "name": "waterworks-process-basins-installation-v3.webp",
+        "alt": "Waterworks basin with a Hitelecom radar sensor on an edge cantilever facing the water surface",
+        "caption": "Waterworks, reservoirs & process liquids",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "An accessible process basin’s visible water surface beside its fixed service walkway."
+      }
+    },
+    {
+      "id": "industrial-targets",
+      "number": "05",
+      "title": "Industrial equipment & vessel targets",
+      "jumpLabel": "Industrial targets",
+      "tagline": "Define the target. Establish the reference.",
+      "intro": "Develop a project around one physically coupled equipment or vessel target and a defined reference. Confirm the observation axis, reference behaviour, target return and installed repeatability before selecting the configuration. Agreed operating states and timing make the resulting distance trend useful to the engineering team.",
+      "description": "Develop a project around one physically coupled equipment or vessel target and a defined reference. Confirm the observation axis, reference behaviour, target return and installed repeatability before selecting the configuration. Agreed operating states and timing make the resulting distance trend useful to the engineering team.",
+      "scenes": [
+        "boiler-external-target",
+        "spherical-tank-target",
+        "machine-foundation-target",
+        "tank-support-target",
+        "factory-joint-gap",
+        "slow-equipment-position"
+      ],
+      "image": {
+        "name": "boiler-external-target-installation-v3.webp",
+        "alt": "Hitelecom radar sensor mounted on an independent reference arm above a broad target attached to a cool external boiler support",
+        "caption": "Industrial equipment & vessel targets",
+        "focalPoint": "50% 50%",
+        "target": "A broad target attached to the boiler’s external support and a separate nearby reference footing.",
+        "disclosure": "Illustrative installation"
+      }
+    },
+    {
+      "id": "transport-port",
+      "number": "06",
+      "title": "Railways, tunnels & port structures",
+      "jumpLabel": "Transport & ports",
+      "tagline": "Bring selected infrastructure points into the engineering plan.",
+      "intro": "Rail, tunnel and port observations start with approved targets, clear measuring paths and verified reference layouts. Each project confirms attachment, geometry, installed repeatability and observation timing before configuration. Interpret the selected-axis records alongside the infrastructure owner’s survey and inspection programme.",
+      "description": "Rail, tunnel and port observations start with approved targets, clear measuring paths and verified reference layouts. Each project confirms attachment, geometry, installed repeatability and observation timing before configuration. Interpret the selected-axis records alongside the infrastructure owner’s survey and inspection programme.",
+      "scenes": [
+        "rail-trackbed-target",
+        "light-rail-support-target",
+        "highway-tunnel-target",
+        "tunnel-joint-target",
+        "quay-wall-target",
+        "port-gantry-foundation-target"
+      ],
+      "image": {
+        "name": "rail-trackbed-target-installation-v3.webp",
+        "alt": "Hitelecom radar on an independent off-track arm facing a broad target attached to the railway track-support slab; concept installation",
+        "caption": "Railways, tunnels & port structures",
+        "focalPoint": "50% 50%",
+        "target": "A broad target on the track-support slab beside a separate reference outside the vehicle envelope.",
+        "disclosure": "Illustrative installation"
+      }
+    },
+    {
+      "id": "building-heritage",
+      "number": "07",
+      "title": "Buildings, bridges & protected heritage",
+      "jumpLabel": "Buildings & heritage",
+      "tagline": "Build the observation around the structure’s actual reference.",
+      "intro": "Create a project for a selected building, bridge or heritage point using an approved surface or physically attached target. Verify the reference and observation direction, with vertical geometry established for local settlement interpretation. Field acceptance and authorised mounting guide configuration and the role of each record in the wider assessment.",
+      "description": "Create a project for a selected building, bridge or heritage point using an approved surface or physically attached target. Verify the reference and observation direction, with vertical geometry established for local settlement interpretation. Field acceptance and authorised mounting guide configuration and the role of each record in the wider assessment.",
+      "scenes": [
+        "older-building-settlement-target",
+        "bridge-pier-target",
+        "bridge-bearing-gap",
+        "heritage-wall-target",
+        "historic-tower-target",
+        "construction-retaining-target"
+      ],
+      "image": {
+        "name": "older-building-settlement-target-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on an independent raised reference arm above an existing wall-coupled settlement target",
+        "caption": "Buildings, bridges & protected heritage",
+        "focalPoint": "50% 50%",
+        "target": "An attached target on the older building’s lower element and a separate established reference.",
+        "disclosure": "Illustrative installation"
+      }
+    },
+    {
+      "id": "slope-dams",
+      "number": "08",
+      "title": "Slopes, dams & geotechnical reference points",
+      "jumpLabel": "Slopes & dams",
+      "tagline": "Observe a chosen point within a surveyed monitoring layout.",
+      "intro": "Design a project around an approved target coupled to the selected slope, dam or embankment point. Verify the reference, axis and installed repeatability before choosing configuration and timing. Review the local records with the geotechnical or dam survey, using explicit relative geometry for joint observations.",
+      "description": "Design a project around an approved target coupled to the selected slope, dam or embankment point. Verify the reference, axis and installed repeatability before choosing configuration and timing. Review the local records with the geotechnical or dam survey, using explicit relative geometry for joint observations.",
+      "scenes": [
+        "engineered-slope-target",
+        "rock-slope-target",
+        "dam-abutment-target",
+        "embankment-reference-target",
+        "reservoir-retaining-target",
+        "dam-gallery-joint"
+      ],
+      "image": {
+        "name": "engineered-slope-target-background-v4.webp",
+        "alt": "Engineered slope reference targets installation background: An anchored slope target facing a separate reference outside the assessed moving section.",
+        "caption": "Slopes, dams & geotechnical reference points",
+        "focalPoint": "50% 50%",
+        "target": "An anchored slope target facing a separate reference outside the assessed moving section.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 31.55,
+          "centerY": 24.2,
+          "squareSize": 16,
+          "rotation": -90
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing right in an illustrative installation."
+      }
+    }
+  ],
+  "applications": [
+    {
+      "id": "sewer-chamber-level",
+      "group": "drainage",
+      "title": "Sewer manhole water levels",
+      "tagline": "See rising water before scheduling the next inspection.",
+      "summary": "See rising water before scheduling the next inspection.",
+      "description": "Measure the distance to the water surface in a selected sewer manhole and relate it to the chamber’s surveyed level reference. The resulting trend helps drainage teams review surcharge, rainfall response and how quickly the level returns after an event. Choose a fixed upper mounting position with a clear view past ladders and pipework, then assess condensation, foam and the expected high-water condition. An unusual level provides a reason for targeted inspection; identifying the cause and position of a pipe blockage requires the wider drainage investigation.",
+      "measured": "Distance to the water surface; chamber water level relative to a surveyed datum.",
+      "point": "A fixed upper-chamber bracket above the observation surface, with a clear path past access fittings.",
+      "requirements": "Chamber dimensions, low and high water levels, flood exposure, surface conditions, site classification, signal coverage and observation interval.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-sewer-level"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The open manhole’s flow channel and visible water surface beneath an accessible upper rim.",
+      "image": {
+        "name": "sewer-chamber-level-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar sensor on a rigid upper-chamber bracket above the sewer flow-channel water surface.",
+        "caption": "Sewer manhole water levels",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "The open manhole’s flow channel and visible water surface beneath an accessible upper rim."
+      },
+      "objective": "Distance to the water surface; chamber water level relative to a surveyed datum.",
+      "monitoringPoint": "A fixed upper-chamber bracket above the observation surface, with a clear path past access fittings.",
+      "projectBrief": "Chamber dimensions, low and high water levels, flood exposure, surface conditions, site classification, signal coverage and observation interval."
+    },
+    {
+      "id": "dry-catchpit-sediment",
+      "group": "drainage",
+      "title": "Exposed sediment in dry catchpits",
+      "tagline": "Give exposed sediment a repeatable clean-pit reference.",
+      "summary": "Give exposed sediment a repeatable clean-pit reference.",
+      "description": "Measure the distance to an exposed sediment surface when a catchpit is dry or drawn down sufficiently to reveal the deposit. A fixed mounting height and a recorded clean-pit baseline allow the local deposit height to be compared over time. This can help maintenance teams prioritise inspection and cleaning at the observed point. Select a broad, representative patch away from inlet jets and assess the return signal as the surface changes. During standing-water periods, interpret the observed surface accordingly; submerged sediment thickness is a separate measurement task.",
+      "measured": "Distance to exposed sediment; local deposit height from the clean-pit baseline.",
+      "point": "A fixed upper bracket facing a broad, exposed deposit patch away from side openings.",
+      "requirements": "Clean-pit survey, expected deposit profile, dry observation windows, minimum distance, pipe openings and maintenance access.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-gully-level",
+        "eh-submerged-sludge-interface"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "A dry catchpit floor with visible silt and side pipe openings above the deposit.",
+      "image": {
+        "name": "dry-catchpit-sediment-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar sensor facing exposed dry sediment in a concrete catchpit.",
+        "caption": "Exposed sediment in dry catchpits",
+        "focalPoint": "50% 50%",
+        "target": "A dry catchpit floor with visible silt and side pipe openings above the deposit.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to exposed sediment; local deposit height from the clean-pit baseline.",
+      "monitoringPoint": "A fixed upper bracket facing a broad, exposed deposit patch away from side openings.",
+      "projectBrief": "Clean-pit survey, expected deposit profile, dry observation windows, minimum distance, pipe openings and maintenance access."
+    },
+    {
+      "id": "gully-silt-height",
+      "group": "drainage",
+      "title": "Roadside gully sediment height",
+      "tagline": "Plan gully cleaning around the surface you can observe.",
+      "summary": "Plan gully cleaning around the surface you can observe.",
+      "description": "Observe the exposed sand or silt bed inside a roadside gully during suitable low-water or dry periods. Relate the distance to a fixed chamber reference and the surveyed clean floor to follow local accumulation between maintenance visits. The trend can support cleaning priorities when combined with the gully’s rainfall response and inspection records. Keep the measuring path clear of the grate and surrounding metalwork, and select a model whose minimum distance fits the chamber. Document whether each observation represents exposed deposits or a covering water surface.",
+      "measured": "Distance to the exposed gully deposit surface; local height above the clean floor.",
+      "point": "An approved protected bracket beneath the access frame, clear of grate bars and the selected surface.",
+      "requirements": "Chamber depth, grate clearance, clean-floor baseline, standing-water pattern, traffic protection and service access.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-gully-level",
+        "eh-submerged-sludge-interface"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The exposed sediment bed, outlet opening and unobstructed upper viewing space inside a roadside gully.",
+      "image": {
+        "name": "gully-silt-height-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar sensor beneath a roadside gully access frame above exposed sand and silt.",
+        "caption": "Roadside gully sediment height",
+        "focalPoint": "50% 50%",
+        "target": "The exposed sediment bed, outlet opening and unobstructed upper viewing space inside a roadside gully.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to the exposed gully deposit surface; local height above the clean floor.",
+      "monitoringPoint": "An approved protected bracket beneath the access frame, clear of grate bars and the selected surface.",
+      "projectBrief": "Chamber depth, grate clearance, clean-floor baseline, standing-water pattern, traffic protection and service access."
+    },
+    {
+      "id": "culvert-upstream-level",
+      "group": "drainage",
+      "title": "Culvert upstream water levels",
+      "tagline": "Follow the water backing up before the culvert.",
+      "summary": "Follow the water backing up before the culvert.",
+      "description": "Measure the upstream water surface at a fixed point beside a culvert inlet. A surveyed headwall or bank-mounted bracket connects each distance reading to the site’s water-level datum. The trend helps the drainage team compare rainfall response, drawdown and conditions before an inspection or cleaning visit. Place the observation area away from inlet turbulence, floating debris and passing traffic, with sufficient clearance across the full stage range. Compare upstream readings with downstream levels and site observations to understand a change in drainage performance and plan the next investigation.",
+      "measured": "Distance to upstream water; stage relative to the culvert-site datum.",
+      "point": "A surveyed fixed arm over open upstream water, outside the flow entrance and traffic envelope.",
+      "requirements": "Lowest and highest stage, inlet geometry, debris exposure, downstream context, mounting stability and reporting timing.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-sewer-level"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "Open upstream water immediately before a visible culvert inlet, with a credible fixed observation position.",
+      "image": {
+        "name": "culvert-upstream-level-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar sensor on a headwall bracket above open upstream culvert water.",
+        "caption": "Culvert upstream water levels",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "Open upstream water immediately before a visible culvert inlet, with a credible fixed observation position."
+      },
+      "objective": "Distance to upstream water; stage relative to the culvert-site datum.",
+      "monitoringPoint": "A surveyed fixed arm over open upstream water, outside the flow entrance and traffic envelope.",
+      "projectBrief": "Lowest and highest stage, inlet geometry, debris exposure, downstream context, mounting stability and reporting timing."
+    },
+    {
+      "id": "sewer-level-comparison",
+      "group": "drainage",
+      "title": "Upstream and downstream level trends",
+      "tagline": "Compare two observation points on the same drainage reach.",
+      "summary": "Compare two observation points on the same drainage reach.",
+      "description": "Use separate radar observations at approved upstream and downstream points to follow the water-level relationship across a selected drainage reach. Survey both mounting references to a common datum and compare time-aligned readings with rainfall, pumping and inspection records. A changing difference can help the operator decide where to investigate drainage performance or arrange maintenance. Select representative surfaces at both points, check local turbulence and record the conditions around each observation. The interpretation belongs to the site’s hydraulic and maintenance assessment, supported by the paired measurements and wider operating context.",
+      "measured": "Water levels at two defined points; their time-aligned difference on a common datum.",
+      "point": "One fixed bracket per observation point, each surveyed to the same vertical reference.",
+      "requirements": "Two-site survey, connecting reach geometry, timestamps, pump or rain records, surface conditions and matched sampling profiles.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-sewer-level",
+        "vega-treatment-screens"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "Two accessible chamber water surfaces associated with the same short drainage reach.",
+      "image": {
+        "name": "sewer-level-comparison-installation-v3.webp",
+        "alt": "Concept installation of two Hitelecom radar sensors above separate upstream and downstream wastewater surfaces.",
+        "caption": "Upstream and downstream level trends",
+        "focalPoint": "50% 50%",
+        "target": "Two accessible chamber water surfaces associated with the same short drainage reach.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Water levels at two defined points; their time-aligned difference on a common datum.",
+      "monitoringPoint": "One fixed bracket per observation point, each surveyed to the same vertical reference.",
+      "projectBrief": "Two-site survey, connecting reach geometry, timestamps, pump or rain records, surface conditions and matched sampling profiles."
+    },
+    {
+      "id": "wastewater-lift-stations",
+      "group": "drainage",
+      "title": "Pump-station wet wells",
+      "tagline": "Understand the wet-well cycle between service visits.",
+      "summary": "Understand the wet-well cycle between service visits.",
+      "description": "Measure the wastewater surface inside a lift-station wet well from an approved upper mounting position. Reference the distance to the chamber survey so operators can review filling and drawdown alongside pump run records. These observations can support service planning, operating-profile review and comparison between stations. Locate the surface patch away from inflow spray, ladders and pump risers, then assess foam, vapour exposure and the highest expected level. Specify the observation and reporting intervals for the actual cycle, and confirm the site classification and appropriate equipment configuration before installation.",
+      "measured": "Distance to the wastewater surface; wet-well level relative to the chamber datum.",
+      "point": "An approved upper bracket with a clear view of water away from inlet spray and service fittings.",
+      "requirements": "Wet-well survey, pump cycle, surface behaviour, chemical exposure, classified-area requirements and maintenance access.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-sewer-level",
+        "vega-treatment-screens",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The wet-well water surface and pump risers, with clear space above the selected surface.",
+      "image": {
+        "name": "wastewater-lift-stations-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar sensor on an upper wet-well bracket above wastewater clear of pump risers.",
+        "caption": "Pump-station wet wells",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "The wet-well water surface and pump risers, with clear space above the selected surface."
+      },
+      "objective": "Distance to the wastewater surface; wet-well level relative to the chamber datum.",
+      "monitoringPoint": "An approved upper bracket with a clear view of water away from inlet spray and service fittings.",
+      "projectBrief": "Wet-well survey, pump cycle, surface behaviour, chemical exposure, classified-area requirements and maintenance access."
+    },
+    {
+      "id": "grain-storage-silos",
+      "group": "grain-solids",
+      "title": "Grain silo fill height",
+      "tagline": "Keep local fill height connected to replenishment planning.",
+      "summary": "Keep local fill height connected to replenishment planning.",
+      "description": "Measure the distance to the grain surface at a defined point inside a silo. Relate the reading to the fixed roof reference and surveyed empty level to follow local filling and drawdown. The trend helps the storage team plan deliveries, compare operating cycles and check the reserve at the observation point. Choose a clear path away from the filling stream, wall and internal ladders, then validate the return as the grain cone changes. An inventory estimate can be configured separately using the silo geometry, material behaviour and agreed calibration method.",
+      "measured": "Distance to the grain surface; local fill height from the silo reference.",
+      "point": "An approved roof position facing a representative surface patch clear of inlet streams and internal fittings.",
+      "requirements": "Silo height and geometry, grain type, fill cone, dust classification, required range and inventory conversion method.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The visible grain surface inside the silo and the open space above it.",
+      "image": {
+        "name": "grain-storage-silos-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on a tall fixed grain-bin bracket, facing down towards an exposed wheat surface",
+        "caption": "Grain silo fill height",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "The visible grain surface inside the silo and the open space above it."
+      },
+      "objective": "Distance to the grain surface; local fill height from the silo reference.",
+      "monitoringPoint": "An approved roof position facing a representative surface patch clear of inlet streams and internal fittings.",
+      "projectBrief": "Silo height and geometry, grain type, fill cone, dust classification, required range and inventory conversion method."
+    },
+    {
+      "id": "grain-floor-stores",
+      "group": "grain-solids",
+      "title": "Grain heaps in floor stores",
+      "tagline": "Follow the height at each selected storage bay.",
+      "summary": "Follow the height at each selected storage bay.",
+      "description": "Observe the surface of a grain heap beneath a fixed roof beam or independently supported bracket in a floor store. Survey the reference to the storage floor and track local heap-height changes at the chosen point. This helps the warehouse team compare filling, drawdown and available headroom across designated bays. Position the measurement away from moving loaders, conveyor drops and shifting roof attachments, and assess the echo over the expected heap shapes. Use additional points or a separately validated geometry model when the project needs a wider description of the stored pile.",
+      "measured": "Distance to the grain heap; local heap height above the surveyed floor.",
+      "point": "A rigid roof or independent gantry position above the designated bay, clear of loader routes.",
+      "requirements": "Bay dimensions, maximum heap crest, grain surface shapes, dust assessment, loading movements and number of observation points.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "A visible grain heap beneath an overhead structural beam, including its crest and storage floor.",
+      "image": {
+        "name": "grain-floor-stores-installation-v3.webp",
+        "alt": "Hitelecom radar sensor fixed beneath a grain-store roof beam above an exposed wheat heap",
+        "caption": "Grain heaps in floor stores",
+        "focalPoint": "50% 50%",
+        "target": "A visible grain heap beneath an overhead structural beam, including its crest and storage floor.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to the grain heap; local heap height above the surveyed floor.",
+      "monitoringPoint": "A rigid roof or independent gantry position above the designated bay, clear of loader routes.",
+      "projectBrief": "Bay dimensions, maximum heap crest, grain surface shapes, dust assessment, loading movements and number of observation points."
+    },
+    {
+      "id": "livestock-feed-height",
+      "group": "grain-solids",
+      "title": "Livestock feed hopper levels",
+      "tagline": "Schedule feed deliveries with a local reserve trend.",
+      "summary": "Schedule feed deliveries with a local reserve trend.",
+      "description": "Measure the pellet or granular-feed surface in a hopper from a fixed upper position. A known empty-hopper reference turns the distance into local fill height for replenishment planning and comparison with feed use. Choose a surface patch clear of the supply pipe and auger movement, then review changes during filling and discharge. Hopper shape, bridging and sloped material surfaces influence how a single point represents the reserve. Match the model, installation and approved equipment configuration to the feed material and environment, with reporting timed to the farm’s delivery and service routine.",
+      "measured": "Distance to the feed surface; local hopper fill height.",
+      "point": "A fixed upper hopper bracket away from inlet material and discharge mechanisms.",
+      "requirements": "Feed type, hopper geometry, filling pattern, bridging history, dust classification, replenishment schedule and wireless coverage.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The pellet surface below the rim of an open feed hopper, with clear space above.",
+      "image": {
+        "name": "livestock-feed-height-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on a raised feed-hopper bracket above brown livestock feed pellets",
+        "caption": "Livestock feed hopper levels",
+        "focalPoint": "50% 50%",
+        "target": "The pellet surface below the rim of an open feed hopper, with clear space above.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to the feed surface; local hopper fill height.",
+      "monitoringPoint": "A fixed upper hopper bracket away from inlet material and discharge mechanisms.",
+      "projectBrief": "Feed type, hopper geometry, filling pattern, bridging history, dust classification, replenishment schedule and wireless coverage."
+    },
+    {
+      "id": "aquaculture-feed-bins",
+      "group": "grain-solids",
+      "title": "Aquaculture feed reserves",
+      "tagline": "Bring remote feed reserves into the service plan.",
+      "summary": "Bring remote feed reserves into the service plan.",
+      "description": "Observe the pellet surface in an aquaculture feed bin or supply hopper at a fixed point above the material. Reference the distance to the empty-bin geometry to follow local drawdown between replenishment visits. The trend helps farm teams compare reserve use across feeding areas and prepare the next delivery. Select a clear view away from transfer equipment and assess the return as the pellet surface changes. Specify the moisture exposure, condensation, feed dust and service access for the installation, while aligning the reporting profile with the farm’s actual feeding and replenishment schedule.",
+      "measured": "Distance to the feed pellet surface; local bin fill height.",
+      "point": "A fixed upper-bin position facing pellets clear of transfer pipes and moving equipment.",
+      "requirements": "Bin dimensions, pellet type, moisture and condensation, material surface, feed schedule, equipment approval and service access.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The exposed pellet surface in an aquaculture feed hopper beside the farm’s feeding area.",
+      "image": {
+        "name": "aquaculture-feed-bins-installation-v3.webp",
+        "alt": "Hitelecom radar sensor above an aquaculture feed hopper on a tall fixed bracket clear of its open lid",
+        "caption": "Aquaculture feed reserves",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "The exposed pellet surface in an aquaculture feed hopper beside the farm’s feeding area."
+      },
+      "objective": "Distance to the feed pellet surface; local bin fill height.",
+      "monitoringPoint": "A fixed upper-bin position facing pellets clear of transfer pipes and moving equipment.",
+      "projectBrief": "Bin dimensions, pellet type, moisture and condensation, material surface, feed schedule, equipment approval and service access."
+    },
+    {
+      "id": "fertilizer-granule-level",
+      "group": "grain-solids",
+      "title": "Fertilizer granule storage",
+      "tagline": "Plan the next batch around the available granule height.",
+      "summary": "Plan the next batch around the available granule height.",
+      "description": "Measure the surface of the specified fertilizer granules inside a supply bin or bounded storage area. Establish a fixed empty-level reference so the distance can be interpreted as local material height and compared with batching or replenishment records. Select a broad patch away from the filling stream and assess the changing slope during discharge. The project review should identify the exact formulation, corrosion exposure, dust characteristics and any classified-location requirements. Where quantity estimates are needed, agree the vessel geometry and calibration separately from the surface-height observation used by the operations team.",
+      "measured": "Distance to fertilizer granules; local fill height at the selected point.",
+      "point": "An approved upper-bin bracket with a clear path to a representative granular surface.",
+      "requirements": "Exact formulation, container geometry, corrosion exposure, dust and site classification, material slope and quantity-calibration needs.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The fertilizer granule surface below the rim of a practical supply bin.",
+      "image": {
+        "name": "fertilizer-granule-level-installation-v3.webp",
+        "alt": "Hitelecom radar sensor fixed to an overhead warehouse beam above an open fertilizer granule bin",
+        "caption": "Fertilizer granule storage",
+        "focalPoint": "50% 50%",
+        "target": "The fertilizer granule surface below the rim of a practical supply bin.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to fertilizer granules; local fill height at the selected point.",
+      "monitoringPoint": "An approved upper-bin bracket with a clear path to a representative granular surface.",
+      "projectBrief": "Exact formulation, container geometry, corrosion exposure, dust and site classification, material slope and quantity-calibration needs."
+    },
+    {
+      "id": "woodchip-biomass-bunkers",
+      "group": "grain-solids",
+      "title": "Woodchip and biomass bunkers",
+      "tagline": "Keep a defined material reserve visible between visits.",
+      "summary": "Keep a defined material reserve visible between visits.",
+      "description": "Measure the woodchip or biomass surface at a selected point beneath a fixed bunker reference. Relate the distance to the surveyed floor so the team can follow local reserve height during loading and withdrawal. The observation supports replenishment planning when reviewed with conveyor activity and consumption records. Choose an area clear of loaders and filling streams, and evaluate the return across uneven, changing material surfaces. Confirm the material, dust classification and equipment configuration for the site. Wider inventory calculations require the bunker geometry and a method that accounts for the pile’s changing profile.",
+      "measured": "Distance to the biomass surface; local height above the bunker floor.",
+      "point": "An approved overhead structure facing a defined surface patch outside loading interference.",
+      "requirements": "Biomass type, bunker dimensions, pile variation, dust classification, loading routes, reporting profile and inventory method.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "A visible woodchip or biomass mound inside a bunker beneath a service beam.",
+      "image": {
+        "name": "woodchip-biomass-bunkers-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on a rigid overhead bracket facing a woodchip surface inside a biomass bunker",
+        "caption": "Woodchip and biomass bunkers",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "A visible woodchip or biomass mound inside a bunker beneath a service beam."
+      },
+      "objective": "Distance to the biomass surface; local height above the bunker floor.",
+      "monitoringPoint": "An approved overhead structure facing a defined surface patch outside loading interference.",
+      "projectBrief": "Biomass type, bunker dimensions, pile variation, dust classification, loading routes, reporting profile and inventory method."
+    },
+    {
+      "id": "powder-additive-bins",
+      "group": "chemical-mining",
+      "title": "Chemical powder supply bins",
+      "tagline": "Follow the material feeding the next production batch.",
+      "summary": "Follow the material feeding the next production batch.",
+      "description": "Measure the exposed surface of the specified chemical powder or additive in a supply bin. A fixed upper reference and documented empty level allow local fill height to be trended alongside batch use and refill records. Position the measuring path away from filling jets, mixers and internal obstructions, and evaluate the echo through the expected surface changes. Selection includes the actual formulation, dust loading, vapour exposure, materials compatibility and any required hazardous-area approvals. The project configuration should match these conditions before the readings are used for routine material planning or a separately calibrated inventory estimate.",
+      "measured": "Distance to the powder surface; local bin fill height.",
+      "point": "An approved vessel-top position viewing a clear powder surface away from filling and mixing.",
+      "requirements": "Chemical formulation, powder properties, temperature, compatibility, dust concentration, site classification and approved equipment requirements.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "A real powder surface visible through the supply bin’s service opening.",
+      "image": {
+        "name": "powder-additive-bins-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar distance sensor on an upper vessel bracket above an exposed chemical powder surface",
+        "caption": "Chemical powder supply bins",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "A real powder surface visible through the supply bin’s service opening."
+      },
+      "objective": "Distance to the powder surface; local bin fill height.",
+      "monitoringPoint": "An approved vessel-top position viewing a clear powder surface away from filling and mixing.",
+      "projectBrief": "Chemical formulation, powder properties, temperature, compatibility, dust concentration, site classification and approved equipment requirements."
+    },
+    {
+      "id": "plastic-pellet-hoppers",
+      "group": "chemical-mining",
+      "title": "Plastic pellet hoppers",
+      "tagline": "Make the pellet reserve part of production planning.",
+      "summary": "Make the pellet reserve part of production planning.",
+      "description": "Observe the polymer pellet surface in a hopper supplying a plastics process. Survey the fixed mounting reference to the empty hopper so distance readings can be related to local fill height and reviewed with batch demand. Choose a representative patch away from loading tubes and moving feed equipment, then test the return for the specified polymer and surface slope. The installation review should include temperature, static or dust conditions, nearby structures and service access. A calibrated quantity estimate can be added when the hopper geometry and material behaviour support the project’s inventory requirement.",
+      "measured": "Distance to polymer pellets; local hopper height relative to its empty reference.",
+      "point": "An approved upper hopper bracket clear of inlet tubes and feed mechanisms.",
+      "requirements": "Polymer type, hopper geometry, maximum fill, temperature, dust or static conditions, return-signal trial and inventory needs.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "Distinct polymer pellets inside an open hopper with a clear upper viewing space.",
+      "image": {
+        "name": "plastic-pellet-hoppers-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar distance sensor on a rigid upper bracket over polymer pellets in a stainless hopper",
+        "caption": "Plastic pellet hoppers",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "Distinct polymer pellets inside an open hopper with a clear upper viewing space."
+      },
+      "objective": "Distance to polymer pellets; local hopper height relative to its empty reference.",
+      "monitoringPoint": "An approved upper hopper bracket clear of inlet tubes and feed mechanisms.",
+      "projectBrief": "Polymer type, hopper geometry, maximum fill, temperature, dust or static conditions, return-signal trial and inventory needs."
+    },
+    {
+      "id": "coal-bunker-height",
+      "group": "chemical-mining",
+      "title": "Coal bunker fill height",
+      "tagline": "Track the coal height available at the handling point.",
+      "summary": "Track the coal height available at the handling point.",
+      "description": "Measure the coal surface at a defined point inside an above-ground bunker. Reference the distance to the bunker’s surveyed empty level and compare local drawdown with handling activity and replenishment records. Select a clear path away from the conveyor drop, wall and steelwork, then evaluate the response across coal sizes, dust conditions and changing pile slopes. Specify the required equipment approvals and installation arrangement for the site before selecting the configuration. The resulting local height trend supports fuel-handling planning; broader inventory estimates need bunker geometry, surface representation and a separately agreed calibration method.",
+      "measured": "Distance to the coal surface; local bunker fill height.",
+      "point": "An approved overhead location facing coal away from the filling stream and structural obstructions.",
+      "requirements": "Coal properties, bunker depth, dust and gas classification, approvals, conveyor loading, target surfaces and inventory-calibration requirements.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "A broad exposed coal pile inside an above-ground bunker beneath a service structure.",
+      "image": {
+        "name": "coal-bunker-height-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar distance sensor on a rigid bunker-wall bracket facing an exposed coal pile",
+        "caption": "Coal bunker fill height",
+        "focalPoint": "50% 50%",
+        "target": "A broad exposed coal pile inside an above-ground bunker beneath a service structure.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to the coal surface; local bunker fill height.",
+      "monitoringPoint": "An approved overhead location facing coal away from the filling stream and structural obstructions.",
+      "projectBrief": "Coal properties, bunker depth, dust and gas classification, approvals, conveyor loading, target surfaces and inventory-calibration requirements."
+    },
+    {
+      "id": "ore-stockpile-height",
+      "group": "chemical-mining",
+      "title": "Ore and mineral stockpile heights",
+      "tagline": "Observe the material height in a defined stockpile bay.",
+      "summary": "Observe the material height in a defined stockpile bay.",
+      "description": "Measure a selected surface area of an ore or mineral stockpile beneath a fixed structural reference. A surveyed floor or empty-bay level connects the distance to local pile height for material-handling and replenishment planning. Position the observation away from loader routes, falling material and nearby steelwork, then verify the return across the expected rock sizes and surface angles. The model and mounting arrangement should match the required range, dust environment and site approvals. Where the project needs total stockpile quantity, combine suitable geometry and additional observations through a separately validated inventory method.",
+      "measured": "Distance to a selected ore surface; local pile height above the bay reference.",
+      "point": "A fixed beam or approved independent structure above a bounded observation area.",
+      "requirements": "Mineral type, pile dimensions, surface angles, dust, site classification, loading interference, range and wider inventory method.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The visible crest and surface of a bounded ore pile under the storage building’s beam.",
+      "image": {
+        "name": "ore-stockpile-height-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar distance sensor on a fixed warehouse-column bracket above an iron-ore stockpile",
+        "caption": "Ore and mineral stockpile heights",
+        "focalPoint": "50% 50%",
+        "target": "The visible crest and surface of a bounded ore pile under the storage building’s beam.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to a selected ore surface; local pile height above the bay reference.",
+      "monitoringPoint": "A fixed beam or approved independent structure above a bounded observation area.",
+      "projectBrief": "Mineral type, pile dimensions, surface angles, dust, site classification, loading interference, range and wider inventory method."
+    },
+    {
+      "id": "cement-silo-surface",
+      "group": "chemical-mining",
+      "title": "Cement and lime silo levels",
+      "tagline": "Plan material supply around a local silo-level trend.",
+      "summary": "Plan material supply around a local silo-level trend.",
+      "description": "Measure the cement or lime surface through an approved upper silo connection. A fixed reference and documented empty level allow the distance to be expressed as local fill height and compared with material delivery and discharge records. Choose the position around the inlet stream, silo walls and internal structures, with a return-signal trial covering expected powder slopes and filling conditions. Specify dust, material compatibility, process temperature and any required approvals before configuration. The observation supports supply planning at the selected point; stock quantity requires the silo geometry and a separately calibrated interpretation of the material surface.",
+      "measured": "Distance to the cement or lime surface; local silo fill height.",
+      "point": "An approved upper silo connection with a clear path past walls, inlets and internal structures.",
+      "requirements": "Exact powder, silo dimensions, filling stream, dust conditions, temperature, approvals and inventory-calibration method.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The exposed cement or lime surface inside a silo below a credible upper access ledge.",
+      "image": {
+        "name": "cement-silo-surface-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar distance sensor on an upper silo-rim bracket facing a grey cement powder surface",
+        "caption": "Cement and lime silo levels",
+        "focalPoint": "50% 50%",
+        "target": "The exposed cement or lime surface inside a silo below a credible upper access ledge.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to the cement or lime surface; local silo fill height.",
+      "monitoringPoint": "An approved upper silo connection with a clear path past walls, inlets and internal structures.",
+      "projectBrief": "Exact powder, silo dimensions, filling stream, dust conditions, temperature, approvals and inventory-calibration method."
+    },
+    {
+      "id": "sand-aggregate-bunkers",
+      "group": "chemical-mining",
+      "title": "Sand and aggregate bunkers",
+      "tagline": "Connect local material height to the loading schedule.",
+      "summary": "Connect local material height to the loading schedule.",
+      "description": "Observe sand or aggregate at a selected location inside a bounded bunker or storage bay. Relate the measured surface distance to the fixed overhead reference and surveyed bay floor to follow local height changes through loading and removal. The trend helps the materials team compare consumption and plan the next replenishment. Position the observation away from loader travel and filling drops, and assess the return over changing particle sizes and pile slopes. Confirm the installation environment and required configuration, while treating any whole-pile volume estimate as a separate geometry and calibration task.",
+      "measured": "Distance to the aggregate surface; local height above the bunker floor.",
+      "point": "A fixed overhead frame viewing a defined material patch outside loader and filling interference.",
+      "requirements": "Material sizes, bunker geometry, maximum height, dust, loading routes, equipment classification and inventory expectations.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "vega-chemical-bulk-solids",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "A sand or aggregate pile surface and crest inside a bounded bunker with overhead structure.",
+      "image": {
+        "name": "sand-aggregate-bunkers-installation-v3.webp",
+        "alt": "Concept installation of a Hitelecom radar distance sensor on a fixed steel-column arm over an aggregate pile beside a sand bunker",
+        "caption": "Sand and aggregate bunkers",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "A sand or aggregate pile surface and crest inside a bounded bunker with overhead structure."
+      },
+      "objective": "Distance to the aggregate surface; local height above the bunker floor.",
+      "monitoringPoint": "A fixed overhead frame viewing a defined material patch outside loader and filling interference.",
+      "projectBrief": "Material sizes, bunker geometry, maximum height, dust, loading routes, equipment classification and inventory expectations."
+    },
+    {
+      "id": "waterworks-process-basins",
+      "group": "liquid-levels",
+      "title": "Waterworks process basin levels",
+      "tagline": "Give each process basin a clear operating-level reference.",
+      "summary": "Give each process basin a clear operating-level reference.",
+      "description": "Measure the water surface in a selected waterworks process basin from a fixed position above the liquid. Survey the reference to the basin datum so distance readings can be compared as water level across filling, transfer and drawdown periods. This gives operators a local storage trend to review alongside pump and treatment records. Choose a surface patch away from aeration, spray, floating debris and internal equipment, then check the reading across the intended operating range. Match the reporting profile and approved installation materials to the waterworks process, maintenance access and actual operating conditions.",
+      "measured": "Distance to the process water surface; basin level relative to its surveyed datum.",
+      "point": "An approved fixed edge or overhead bracket above a representative surface away from process disturbance.",
+      "requirements": "Basin survey, low and high levels, process disturbances, materials approval, mounting stability, observation timing and platform requirements.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "campbell-water-distance"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "An accessible process basin’s visible water surface beside its fixed service walkway.",
+      "image": {
+        "name": "waterworks-process-basins-installation-v3.webp",
+        "alt": "Waterworks basin with a Hitelecom radar sensor on an edge cantilever facing the water surface",
+        "caption": "Waterworks process basin levels",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "An accessible process basin’s visible water surface beside its fixed service walkway."
+      },
+      "objective": "Distance to the process water surface; basin level relative to its surveyed datum.",
+      "monitoringPoint": "An approved fixed edge or overhead bracket above a representative surface away from process disturbance.",
+      "projectBrief": "Basin survey, low and high levels, process disturbances, materials approval, mounting stability, observation timing and platform requirements."
+    },
+    {
+      "id": "lake-reservoir-level",
+      "group": "liquid-levels",
+      "title": "Lake and reservoir water levels",
+      "tagline": "Follow the water surface from a surveyed shore reference.",
+      "summary": "Follow the water surface from a surveyed shore reference.",
+      "description": "Measure the water surface beneath a fixed reservoir-side pier or short cantilever. Relate the distance to the station’s surveyed datum to build a local water-level record for resource planning, seasonal review and comparison with other observations. Select a clear surface patch outside boating activity, overhanging vegetation and strong inflow turbulence, and assess the expected waves and full stage range. Check the stability of the mounting reference over time. Reservoir storage estimates can be configured separately using an accepted level-to-volume relationship and the site’s surveyed geometry.",
+      "measured": "Distance to open water; lake or reservoir level on the station datum.",
+      "point": "A surveyed rigid shore structure with a short arm over a clear water patch.",
+      "requirements": "Station datum, lowest and highest stage, waves, vegetation and boating interference, bracket stability and storage-curve needs.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "campbell-water-distance",
+        "usgs-stage-discharge"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "Calm reservoir water below a fixed pier or short bank-mounted observation arm.",
+      "image": {
+        "name": "lake-reservoir-level-installation-v3.webp",
+        "alt": "Hitelecom radar sensor mounted at the end of a fixed reservoir shore observation arm",
+        "caption": "Lake and reservoir water levels",
+        "focalPoint": "50% 50%",
+        "target": "Calm reservoir water below a fixed pier or short bank-mounted observation arm.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to open water; lake or reservoir level on the station datum.",
+      "monitoringPoint": "A surveyed rigid shore structure with a short arm over a clear water patch.",
+      "projectBrief": "Station datum, lowest and highest stage, waves, vegetation and boating interference, bracket stability and storage-curve needs."
+    },
+    {
+      "id": "covered-reservoir-surface",
+      "group": "liquid-levels",
+      "title": "Covered drinking-water reservoir levels",
+      "tagline": "See the reserve inside the covered storage structure.",
+      "summary": "See the reserve inside the covered storage structure.",
+      "description": "Measure the water surface inside a covered drinking-water reservoir through an approved roof opening or internal service position. Tie the fixed mounting height to the reservoir survey so operators can follow local level during replenishment and demand changes. These observations can support reserve review and planned service visits when combined with the waterworks’ operating records. Select a clear view away from beams, ladders and inlet spray, and confirm condensation, access and the full operating range. Use the site’s approved materials and hygiene procedures, with any storage-volume conversion based on verified reservoir dimensions.",
+      "measured": "Distance to the stored water surface; reservoir level on the surveyed reference.",
+      "point": "An approved roof opening or rigid internal bracket above a clear water surface.",
+      "requirements": "Reservoir dimensions, level limits, access-opening geometry, condensation, potable-site materials approval and required storage conversion.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "campbell-water-distance"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The water surface inside a covered reservoir beneath visible roof structure and service access.",
+      "image": {
+        "name": "covered-reservoir-surface-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on a walkway bracket above water in a covered drinking-water reservoir",
+        "caption": "Covered drinking-water reservoir levels",
+        "focalPoint": "50% 50%",
+        "target": "The water surface inside a covered reservoir beneath visible roof structure and service access.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to the stored water surface; reservoir level on the surveyed reference.",
+      "monitoringPoint": "An approved roof opening or rigid internal bracket above a clear water surface.",
+      "projectBrief": "Reservoir dimensions, level limits, access-opening geometry, condensation, potable-site materials approval and required storage conversion."
+    },
+    {
+      "id": "roof-tank-surface",
+      "group": "liquid-levels",
+      "title": "Building water-tank surface levels",
+      "tagline": "Keep the building’s water reserve visible between visits.",
+      "summary": "Keep the building’s water reserve visible between visits.",
+      "description": "Measure the water surface inside a building storage tank through an approved upper connection. Reference the distance to the tank’s known empty and full levels so the facilities team can compare drawdown, refill events and available reserve. Position the observation away from float assemblies, filling spray and internal pipework, with clearance maintained throughout the operating range. Confirm the opening, condensation and materials requirements for the actual tank. Match reporting to the building’s consumption and service schedule, and use verified tank dimensions when a separately configured volume estimate is required.",
+      "measured": "Distance to the water surface; local tank level from its empty reference.",
+      "point": "An approved upper connection with a clear internal path to water away from service fittings.",
+      "requirements": "Tank dimensions, opening size, float and pipe positions, low and high levels, condensation, approved materials and refill pattern.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "campbell-water-distance"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "A real water surface visible through an open tank service hatch below the stainless rim.",
+      "image": {
+        "name": "roof-tank-surface-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on a tall rooftop-tank support above recessed water visible through an open service hatch",
+        "caption": "Building water-tank surface levels",
+        "focalPoint": "50% 50%",
+        "target": "A real water surface visible through an open tank service hatch below the stainless rim.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to the water surface; local tank level from its empty reference.",
+      "monitoringPoint": "An approved upper connection with a clear internal path to water away from service fittings.",
+      "projectBrief": "Tank dimensions, opening size, float and pipe positions, low and high levels, condensation, approved materials and refill pattern."
+    },
+    {
+      "id": "dyeing-equalization-level",
+      "group": "liquid-levels",
+      "title": "Textile and dyeing equalization basins",
+      "tagline": "Follow the buffer before the next treatment stage.",
+      "summary": "Follow the buffer before the next treatment stage.",
+      "description": "Measure the wastewater surface in a textile or dyeing equalization basin from a fixed upper position. Survey the mounting reference to the basin datum so operators can compare fill, drawdown and transfer events alongside treatment and pumping records. The trend helps coordinate the buffer serving the next process stage. Choose a representative surface away from strong mixing, inlet spray and floating material, then assess foam and chemical vapour exposure. Specify materials compatibility, installation approval and reporting for the actual wastewater process, with any volume estimate based on the basin’s verified geometry.",
+      "measured": "Distance to the wastewater surface; equalization-basin level on the surveyed datum.",
+      "point": "A fixed approved edge or overhead bracket above a clear surface patch away from mixing and inlet spray.",
+      "requirements": "Basin geometry, level range, process chemistry, foam and mixing, materials compatibility, site classification and transfer schedule.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "campbell-water-distance",
+        "vega-treatment-screens"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The visible wastewater surface in a textile-treatment balancing basin with service access.",
+      "image": {
+        "name": "dyeing-equalization-level-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on a fixed service-platform bracket above a textile wastewater basin",
+        "caption": "Textile and dyeing equalization basins",
+        "focalPoint": "50% 50%",
+        "target": "The visible wastewater surface in a textile-treatment balancing basin with service access.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to the wastewater surface; equalization-basin level on the surveyed datum.",
+      "monitoringPoint": "A fixed approved edge or overhead bracket above a clear surface patch away from mixing and inlet spray.",
+      "projectBrief": "Basin geometry, level range, process chemistry, foam and mixing, materials compatibility, site classification and transfer schedule."
+    },
+    {
+      "id": "dye-bath-supply-level",
+      "group": "liquid-levels",
+      "title": "Dye-bath and process-liquid supply tanks",
+      "tagline": "Plan replenishment from the process liquid’s surface height.",
+      "summary": "Plan replenishment from the process liquid’s surface height.",
+      "description": "Observe the exposed liquid surface in an approved dye-bath preparation or process-supply tank. A fixed mounting reference and recorded empty level allow the distance to be interpreted as local fill height through batch preparation and withdrawal. The production team can review this trend with recipe preparation, replenishment and service records. Locate the measurement away from mixer blades, pipework and inlet spray, then evaluate the return across agitation and surface changes. Confirm the actual chemistry, vapour, temperature, equipment approval and service access before selecting the configuration and any separately calibrated quantity conversion.",
+      "measured": "Distance to the process-liquid surface; local supply-tank level.",
+      "point": "An approved upper tank position facing a clear surface away from mixing and inlet equipment.",
+      "requirements": "Process formulation, temperature, vapour, agitation, foam, tank geometry, compatibility, site classification and approved configuration.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "campbell-water-distance",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "surface-selection",
+      "configurationLabel": "Surface-level selection",
+      "photoTarget": "The exposed process-liquid surface inside a preparation tank with clear space above.",
+      "image": {
+        "name": "dye-bath-supply-level-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on a tall external post above a half-filled textile process-liquid tank",
+        "caption": "Dye-bath and process-liquid supply tanks",
+        "focalPoint": "50% 50%",
+        "target": "The exposed process-liquid surface inside a preparation tank with clear space above.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to the process-liquid surface; local supply-tank level.",
+      "monitoringPoint": "An approved upper tank position facing a clear surface away from mixing and inlet equipment.",
+      "projectBrief": "Process formulation, temperature, vapour, agitation, foam, tank geometry, compatibility, site classification and approved configuration."
+    },
+    {
+      "id": "boiler-external-target",
+      "group": "industrial-targets",
+      "title": "Boiler external expansion reference",
+      "tagline": "Observe the selected support through agreed operating states.",
+      "summary": "Observe the selected support through agreed operating states.",
+      "description": "Observe distance change to a broad approved target on a cool, accessible external boiler support. The reference mount is established independently of that support and checked against the project’s stable benchmark. In the illustrated vertical arrangement, baseline comparisons can describe the target’s movement along the observation axis through agreed warm and cool operating states. The engineering review defines which operating conditions are comparable and evaluates mounting temperature, repeatability and required observation timing. Keep the installation outside hot process exposure and select the configuration from the verified target return and the project’s measurement requirement.",
+      "measured": "Distance change to an external support target along the validated observation axis.",
+      "point": "An independently referenced bracket above the broad support target, outside hot process exposure.",
+      "requirements": "Target attachment approval, stable benchmark, axis geometry, temperature exposure, expected movement, repeatability trial and operating-state timing.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "A broad target attached to the boiler’s external support and a separate nearby reference footing.",
+      "image": {
+        "name": "boiler-external-target-installation-v3.webp",
+        "alt": "Hitelecom radar sensor mounted on an independent reference arm above a broad target attached to a cool external boiler support",
+        "caption": "Boiler external expansion reference",
+        "focalPoint": "50% 50%",
+        "target": "A broad target attached to the boiler’s external support and a separate nearby reference footing.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance change to an external support target along the validated observation axis.",
+      "monitoringPoint": "An independently referenced bracket above the broad support target, outside hot process exposure.",
+      "projectBrief": "Target attachment approval, stable benchmark, axis geometry, temperature exposure, expected movement, repeatability trial and operating-state timing."
+    },
+    {
+      "id": "spherical-tank-target",
+      "group": "industrial-targets",
+      "title": "Spherical tank support references",
+      "tagline": "Give one tank support a defined movement reference.",
+      "summary": "Give one tank support a defined movement reference.",
+      "description": "Measure the distance to a broad approved target attached to a selected spherical-tank support. Establish the neighbouring reference on a separately surveyed foundation and confirm its stability for the observation period. A documented baseline and validated vertical layout allow the engineering team to compare local support movement through defined operating conditions. Target attachment, clearance, return-signal behaviour and temperature effects are assessed as part of the project configuration. The interpretation applies to that selected target and axis, with the tank owner defining access, classified-location requirements and how the reading fits the wider vessel-monitoring plan.",
+      "measured": "Distance to a selected tank-support target; baseline change along the validated axis.",
+      "point": "A separately surveyed fixed reference viewing the broad support target across a clear short gap.",
+      "requirements": "Tank-owner approval, target mounting, benchmark stability, vertical geometry, temperature, hazardous-area requirements and field acceptance criteria.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "A broad target on one spherical-tank support opposite a distinct independently founded reference.",
+      "image": {
+        "name": "spherical-tank-target-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on a separately founded reference post pointing down to a broad target fixed to one spherical tank support",
+        "caption": "Spherical tank support references",
+        "focalPoint": "50% 50%",
+        "target": "A broad target on one spherical-tank support opposite a distinct independently founded reference.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to a selected tank-support target; baseline change along the validated axis.",
+      "monitoringPoint": "A separately surveyed fixed reference viewing the broad support target across a clear short gap.",
+      "projectBrief": "Tank-owner approval, target mounting, benchmark stability, vertical geometry, temperature, hazardous-area requirements and field acceptance criteria."
+    },
+    {
+      "id": "machine-foundation-target",
+      "group": "industrial-targets",
+      "title": "Machine foundation relative movement",
+      "tagline": "Compare a selected machine foundation with an independent reference.",
+      "summary": "Compare a selected machine foundation with an independent reference.",
+      "description": "Observe a broad target attached to the accessible edge of a machine foundation. The nearby reference is tied to an independently verified benchmark so its stability can be checked separately from the foundation being monitored. Compare the distance with the accepted baseline during agreed machine states and service periods. For a vertical arrangement, establish the axis geometry before interpreting local vertical movement. The project trial assesses target return, mounting temperature and repeatability under the expected operating conditions, while the engineering team determines how this selected-point observation contributes to its foundation inspection and maintenance programme.",
+      "measured": "Target-to-reference distance and its baseline change at one foundation point.",
+      "point": "An independent benchmark-mounted bracket viewing the foundation target across a clear vertical gap.",
+      "requirements": "Independent-reference verification, target attachment, foundation drawing, expected movement, machine states, environmental trial and required observation interval.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "The machine foundation’s attached target and a reference on a visibly separate benchmark footing.",
+      "image": {
+        "name": "machine-foundation-target-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on a separate benchmark arm above a broad metal target attached to an industrial machine foundation",
+        "caption": "Machine foundation relative movement",
+        "focalPoint": "50% 50%",
+        "target": "The machine foundation’s attached target and a reference on a visibly separate benchmark footing.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Target-to-reference distance and its baseline change at one foundation point.",
+      "monitoringPoint": "An independent benchmark-mounted bracket viewing the foundation target across a clear vertical gap.",
+      "projectBrief": "Independent-reference verification, target attachment, foundation drawing, expected movement, machine states, environmental trial and required observation interval."
+    },
+    {
+      "id": "tank-support-target",
+      "group": "industrial-targets",
+      "title": "Storage tank support movement",
+      "tagline": "Follow a local support distance through the service cycle.",
+      "summary": "Follow a local support distance through the service cycle.",
+      "description": "Measure an approved target on a selected storage-tank support from a separately referenced fixed mounting point. Document the initial distance, target attachment and observation axis, then compare readings across agreed service states. In a vertical layout, verify the reference stability and axis before reporting a local support-height change. The configuration review considers target return, expected movement, nearby pipework, temperature and access throughout the tank’s operating cycle. The resulting observation supports engineering review of the selected support, with the wider tank survey and inspection records providing the context for interpretation and maintenance decisions.",
+      "measured": "Distance to a selected tank-support target; validated local along-axis change.",
+      "point": "A separately referenced bracket facing the support target across an unobstructed short gap.",
+      "requirements": "Support and reference drawings, owner-approved target, benchmark stability, temperature, clearance, site classification and field acceptance criteria.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual",
+        "hse-explosion-equipment"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "An attached target on the tank support and a distinct reference footing beside it.",
+      "image": {
+        "name": "tank-support-target-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on an independent reference arm aimed downward at a broad target on a process tank support",
+        "caption": "Storage tank support movement",
+        "focalPoint": "50% 50%",
+        "target": "An attached target on the tank support and a distinct reference footing beside it.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to a selected tank-support target; validated local along-axis change.",
+      "monitoringPoint": "A separately referenced bracket facing the support target across an unobstructed short gap.",
+      "projectBrief": "Support and reference drawings, owner-approved target, benchmark stability, temperature, clearance, site classification and field acceptance criteria."
+    },
+    {
+      "id": "factory-joint-gap",
+      "group": "industrial-targets",
+      "title": "Factory structural joint opening",
+      "tagline": "Record the opening between two defined structural members.",
+      "summary": "Record the opening between two defined structural members.",
+      "description": "Measure the distance across a factory structural joint to a broad approved target fixed to the opposing member. Document both attachment points and the observation axis so baseline comparisons describe the relative opening at the selected location. The engineering team can review this trend with temperature, construction activity and service records. Validate the target return and clear gap over the expected movement range, and establish the required field repeatability before selecting the configuration. Interpret the reading as the relationship between those two members, with independent survey references used where the project also requires absolute movement information.",
+      "measured": "Relative distance across the selected joint along one defined axis.",
+      "point": "A rigid bracket on one member facing a broad target securely attached to the opposing member.",
+      "requirements": "Both-member attachment details, joint baseline, movement direction and range, target size, temperature, survey context and repeatability criteria.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "Two distinct structural members with a broad attached target facing the opposed mounting bracket.",
+      "image": {
+        "name": "factory-joint-gap-background-v4.webp",
+        "alt": "Factory structural joint opening installation background: Two distinct structural members with a broad attached target facing the opposed mounting bracket.",
+        "caption": "Factory structural joint opening",
+        "focalPoint": "50% 50%",
+        "target": "Two distinct structural members with a broad attached target facing the opposed mounting bracket.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 66.9,
+          "centerY": 38.6,
+          "squareSize": 25,
+          "rotation": 90
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing left in an illustrative installation."
+      },
+      "objective": "Relative distance across the selected joint along one defined axis.",
+      "monitoringPoint": "A rigid bracket on one member facing a broad target securely attached to the opposing member.",
+      "projectBrief": "Both-member attachment details, joint baseline, movement direction and range, target size, temperature, survey context and repeatability criteria."
+    },
+    {
+      "id": "slow-equipment-position",
+      "group": "industrial-targets",
+      "title": "Slow equipment-position references",
+      "tagline": "Know the selected target position at each agreed observation.",
+      "summary": "Know the selected target position at each agreed observation.",
+      "description": "Observe a broad target on slow-moving equipment or a carriage from a fixed reference at the end of the measuring path. Relate the distance to a documented baseline to compare positions at stable stops or during an agreed slow observation profile. This can support operating records, inspection planning and position checks in a defined installation. Keep the path clear of other equipment and verify the target return across the full travel. The project specifies the required timing, movement speed, field repeatability and platform handling before selecting a configuration for the observation task.",
+      "measured": "Distance to the carriage target; selected-axis position relative to the installation baseline.",
+      "point": "A fixed reference bracket facing the broad target across a clear protected travel corridor.",
+      "requirements": "Travel range, target geometry, stop positions, movement speed, sampling needs, obstructions and project acceptance criteria.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "A broad carriage end surface facing a fixed independent support along the clear travel path.",
+      "image": {
+        "name": "slow-equipment-position-background-v4.webp",
+        "alt": "Slow equipment-position references installation background: A broad carriage end surface facing a fixed independent support along the clear travel path.",
+        "caption": "Slow equipment-position references",
+        "focalPoint": "50% 50%",
+        "disclosure": "Illustrative installation",
+        "target": "A broad carriage end surface facing a fixed independent support along the clear travel path.",
+        "productPlacement": {
+          "centerX": 25.13,
+          "centerY": 48.572,
+          "squareSize": 20,
+          "rotation": -90
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing right in an illustrative installation."
+      },
+      "objective": "Distance to the carriage target; selected-axis position relative to the installation baseline.",
+      "monitoringPoint": "A fixed reference bracket facing the broad target across a clear protected travel corridor.",
+      "projectBrief": "Travel range, target geometry, stop positions, movement speed, sampling needs, obstructions and project acceptance criteria."
+    },
+    {
+      "id": "rail-trackbed-target",
+      "group": "transport-port",
+      "title": "Rail trackbed reference targets",
+      "tagline": "Observe a track-support point within an engineered reference layout.",
+      "summary": "Observe a track-support point within an engineered reference layout.",
+      "description": "Measure a broad approved target attached to the outside edge of a railway track-support slab. Establish the reference on a separately surveyed foundation outside the assessed movement zone and vehicle envelope. A validated vertical observation axis allows baseline comparisons to support review of local support-height change during agreed static or maintenance windows. Target return, nearby metalwork, reference stability and the required repeatability are evaluated before configuration. The railway engineer defines the target attachment and access arrangement, together with the observation schedule and how these selected-point records fit the wider track survey and maintenance programme.",
+      "measured": "Distance to an approved track-support target; validated along-axis baseline change.",
+      "point": "An off-track reference on an independent surveyed foundation facing a broad slab-edge target.",
+      "requirements": "Railway approval, loading-gauge clearance, reference survey, target dimensions, static observation windows, metalwork interference and field validation.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "A broad target on the track-support slab beside a separate reference outside the vehicle envelope.",
+      "image": {
+        "name": "rail-trackbed-target-installation-v3.webp",
+        "alt": "Hitelecom radar on an independent off-track arm facing a broad target attached to the railway track-support slab; concept installation",
+        "caption": "Rail trackbed reference targets",
+        "focalPoint": "50% 50%",
+        "target": "A broad target on the track-support slab beside a separate reference outside the vehicle envelope.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to an approved track-support target; validated along-axis baseline change.",
+      "monitoringPoint": "An off-track reference on an independent surveyed foundation facing a broad slab-edge target.",
+      "projectBrief": "Railway approval, loading-gauge clearance, reference survey, target dimensions, static observation windows, metalwork interference and field validation."
+    },
+    {
+      "id": "light-rail-support-target",
+      "group": "transport-port",
+      "title": "Light-rail support and plinth targets",
+      "tagline": "Give a selected rail-support plinth a repeatable reference.",
+      "summary": "Give a selected rail-support plinth a repeatable reference.",
+      "description": "Observe a broad target attached to a selected light-rail support or plinth from an independently established nearby reference. Document the initial distance and verify the vertical measuring axis before interpreting local height change. Take comparable observations during agreed static or service conditions and review them with the rail engineer’s inspection and survey records. The project assessment confirms target attachment, clearances, return-signal behaviour and reference stability across the required period. Configuration then follows the smallest change that must be resolved, the acceptable field repeatability and the observation timing agreed for the specific support location.",
+      "measured": "Distance to the approved plinth target; local change along the validated reference axis.",
+      "point": "An independent safe-side reference above a broad target attached to the selected support.",
+      "requirements": "Rail-owner approval, support geometry, reference stability, clearance, expected movement, static timing and field repeatability target.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "The selected light-rail plinth’s attached target and an independent adjacent reference support.",
+      "image": {
+        "name": "light-rail-support-target-installation-v3.webp",
+        "alt": "Hitelecom radar on a safe-side independent reference arm above an attached light-rail plinth target; concept installation",
+        "caption": "Light-rail support and plinth targets",
+        "focalPoint": "50% 50%",
+        "target": "The selected light-rail plinth’s attached target and an independent adjacent reference support.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to the approved plinth target; local change along the validated reference axis.",
+      "monitoringPoint": "An independent safe-side reference above a broad target attached to the selected support.",
+      "projectBrief": "Rail-owner approval, support geometry, reference stability, clearance, expected movement, static timing and field repeatability target."
+    },
+    {
+      "id": "highway-tunnel-target",
+      "group": "transport-port",
+      "title": "Highway tunnel lining reference targets",
+      "tagline": "Track the distance to one approved lining target.",
+      "summary": "Track the distance to one approved lining target.",
+      "description": "Measure a broad approved target on a selected highway-tunnel lining segment from a surveyed fixed reference in a protected service area. Record the baseline distance and measuring direction so the tunnel engineer can interpret change along that axis. Review observations with construction activity, temperature and the wider monitoring survey. The project confirms the reference’s stability, target attachment and return signal through the expected conditions, with clear separation from traffic and other moving objects. The selected configuration and reporting profile follow the required change, field repeatability and monitoring period defined in the tunnel’s engineering plan.",
+      "measured": "Distance to one tunnel-lining target; change along the agreed measurement axis.",
+      "point": "A surveyed stable reference in a service alcove facing an approved broad lining target.",
+      "requirements": "Tunnel-owner attachment approval, stable reference, axis geometry, target return, traffic clearance, environmental trial and monitoring interval.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "A broad target attached to the tunnel lining facing a distinct protected reference pillar.",
+      "image": {
+        "name": "highway-tunnel-target-background-v4.webp",
+        "alt": "Highway tunnel lining reference targets installation background: A broad target attached to the tunnel lining facing a distinct protected reference pillar.",
+        "caption": "Highway tunnel lining reference targets",
+        "focalPoint": "50% 50%",
+        "target": "A broad target attached to the tunnel lining facing a distinct protected reference pillar.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 69.856,
+          "centerY": 35.662,
+          "squareSize": 18,
+          "rotation": 90
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing left in an illustrative installation."
+      },
+      "objective": "Distance to one tunnel-lining target; change along the agreed measurement axis.",
+      "monitoringPoint": "A surveyed stable reference in a service alcove facing an approved broad lining target.",
+      "projectBrief": "Tunnel-owner attachment approval, stable reference, axis geometry, target return, traffic clearance, environmental trial and monitoring interval."
+    },
+    {
+      "id": "tunnel-joint-target",
+      "group": "transport-port",
+      "title": "Tunnel construction joint movement",
+      "tagline": "Follow relative opening at the chosen construction joint.",
+      "summary": "Follow relative opening at the chosen construction joint.",
+      "description": "Observe the distance from an offset bracket on one tunnel segment to a broad approved target attached to the adjacent segment. Establish a clear measuring baseline within the selected model’s range, rather than using the narrow physical joint as the sensor-to-target gap. Document both attachments, the joint geometry and the initial reading to follow relative opening along the selected axis. The records can support engineering review alongside temperature, construction and tunnel survey observations. Evaluate clearance and target return over the expected joint movement, and define the installed repeatability required for meaningful comparisons. Where the project also needs absolute segment movement, reference each segment to the wider surveyed monitoring network established by the tunnel engineer.",
+      "measured": "Relative distance between the two tunnel segments along the defined joint axis.",
+      "point": "An approved bracket on one segment facing a broad attached target on the adjacent segment.",
+      "requirements": "Segment and joint drawings, attachments, baseline, movement range, target size, environmental variation and independent survey context.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "A real joint between two tunnel segments with the broad target and opposing attachment visible.",
+      "image": {
+        "name": "tunnel-joint-target-background-v4.webp",
+        "alt": "Tunnel construction joint movement installation background: A real joint between two tunnel segments with the broad target and opposing attachment visible.",
+        "caption": "Tunnel construction joint movement",
+        "focalPoint": "50% 50%",
+        "target": "A real joint between two tunnel segments with the broad target and opposing attachment visible.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 36.55,
+          "centerY": 41.3,
+          "squareSize": 16,
+          "rotation": -90
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing right in an illustrative installation."
+      },
+      "objective": "Relative distance between the two tunnel segments along the defined joint axis.",
+      "monitoringPoint": "An approved bracket on one segment facing a broad attached target on the adjacent segment.",
+      "projectBrief": "Segment and joint drawings, attachments, baseline, movement range, target size, environmental variation and independent survey context."
+    },
+    {
+      "id": "quay-wall-target",
+      "group": "transport-port",
+      "title": "Quay-wall relative movement targets",
+      "tagline": "Compare a selected quay-wall point with a land-side reference.",
+      "summary": "Compare a selected quay-wall point with a land-side reference.",
+      "description": "Measure a dry, exposed target attached to the selected quay-wall element from a separately surveyed land-side reference. Establish the initial distance and measurement axis, then assess reference stability and target return through the intended observation period. The port engineer can review local distance change with tide, temperature, loading and inspection records. Choose a protected service position with a clear short path and confirm that vessels, vehicles and temporary works stay outside the observation area. Configuration and reporting are selected against the required field repeatability and the movement the engineering plan intends to observe.",
+      "measured": "Distance to a selected dry quay-wall target; relative change along the approved axis.",
+      "point": "A separately surveyed land-side reference facing the exposed wall target across a clear protected gap.",
+      "requirements": "Port approval, wall attachment, stable reference, tide and load context, corrosion exposure, obstructions and field acceptance criteria.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "The exposed upper quay-wall target and a distinct land-side reference with a clear gap.",
+      "image": {
+        "name": "quay-wall-target-background-v4.webp",
+        "alt": "Quay-wall relative movement targets installation background: The exposed upper quay-wall target and a distinct land-side reference with a clear gap.",
+        "caption": "Quay-wall relative movement targets",
+        "focalPoint": "50% 50%",
+        "target": "The exposed upper quay-wall target and a distinct land-side reference with a clear gap.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 74.798,
+          "centerY": 34.158,
+          "squareSize": 18,
+          "rotation": 90
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing left in an illustrative installation."
+      },
+      "objective": "Distance to a selected dry quay-wall target; relative change along the approved axis.",
+      "monitoringPoint": "A separately surveyed land-side reference facing the exposed wall target across a clear protected gap.",
+      "projectBrief": "Port approval, wall attachment, stable reference, tide and load context, corrosion exposure, obstructions and field acceptance criteria."
+    },
+    {
+      "id": "port-gantry-foundation-target",
+      "group": "transport-port",
+      "title": "Port equipment foundation references",
+      "tagline": "Observe one port-equipment foundation against a defined reference.",
+      "summary": "Observe one port-equipment foundation against a defined reference.",
+      "description": "Observe a broad target attached to an accessible port-equipment foundation from a nearby independently surveyed reference. In the vertical arrangement, verify the reference stability and axis before relating baseline distance changes to local foundation-height change. Compare observations during agreed equipment states and review them with load, temperature and inspection records. The project assessment confirms target attachment, the return signal, clear space and reference behaviour through the monitoring period. Select the configuration and timing from the engineer’s required repeatability, smallest relevant movement and approved service access around the gantry or other port equipment.",
+      "measured": "Distance to one foundation target; local baseline change on the validated axis.",
+      "point": "A stable independently surveyed reference viewing the foundation’s broad target from a protected service position.",
+      "requirements": "Equipment-owner approval, reference survey, vertical geometry, load states, target return, corrosion exposure and field validation criteria.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "A broad target attached to the port-equipment foundation and a separate reference footing.",
+      "image": {
+        "name": "port-gantry-foundation-target-installation-v3.webp",
+        "alt": "Hitelecom radar on a separate reference arm facing a broad target on a port gantry foundation; concept installation",
+        "caption": "Port equipment foundation references",
+        "focalPoint": "50% 50%",
+        "target": "A broad target attached to the port-equipment foundation and a separate reference footing.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to one foundation target; local baseline change on the validated axis.",
+      "monitoringPoint": "A stable independently surveyed reference viewing the foundation’s broad target from a protected service position.",
+      "projectBrief": "Equipment-owner approval, reference survey, vertical geometry, load states, target return, corrosion exposure and field validation criteria."
+    },
+    {
+      "id": "older-building-settlement-target",
+      "group": "building-heritage",
+      "title": "Older building settlement references",
+      "tagline": "Establish the reference before interpreting local vertical change.",
+      "summary": "Establish the reference before interpreting local vertical change.",
+      "description": "Measure a broad approved target securely attached to the selected lower building element through an authorised mounting arrangement. Establish the independent reference outside the assessed movement zone, verify its stability and document a vertical measuring axis. Baseline distance changes can then be reviewed as local vertical movement within the engineer’s accepted monitoring layout. The project trial establishes installed repeatability across temperature and service conditions, with survey checks confirming that the reference remains stable. These selected-point records support the building assessment alongside inspection and wider survey evidence, using the observation interval agreed for the actual site.",
+      "measured": "Vertical target-to-reference distance; local change after geometry and reference verification.",
+      "point": "An independently surveyed stable bracket above an approved target physically coupled to the building element.",
+      "requirements": "Structural-owner approval, reversible target mounting, independent datum, vertical alignment, required movement sensitivity and field repeatability validation.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "An attached target on the older building’s lower element and a separate established reference.",
+      "image": {
+        "name": "older-building-settlement-target-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on an independent raised reference arm above an existing wall-coupled settlement target",
+        "caption": "Older building settlement references",
+        "focalPoint": "50% 50%",
+        "target": "An attached target on the older building’s lower element and a separate established reference.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Vertical target-to-reference distance; local change after geometry and reference verification.",
+      "monitoringPoint": "An independently surveyed stable bracket above an approved target physically coupled to the building element.",
+      "projectBrief": "Structural-owner approval, reversible target mounting, independent datum, vertical alignment, required movement sensitivity and field repeatability validation."
+    },
+    {
+      "id": "bridge-pier-target",
+      "group": "building-heritage",
+      "title": "Bridge pier settlement reference targets",
+      "tagline": "Observe one pier target on an independently checked datum.",
+      "summary": "Observe one pier target on an independently checked datum.",
+      "description": "Observe a broad target attached to an accessible bridge-pier element from a separately surveyed reference. Establish a clear vertical measuring axis and accepted baseline before comparing local vertical movement over the monitoring period. The bridge engineer defines target attachment, reference checks and comparable load or temperature conditions for interpreting each observation. Verify the return signal and installed repeatability for the smallest change required by the project. A protected short path and documented datum connect these selected-point records to the wider bridge survey, with timing chosen for the intended long-term or service-period observation.",
+      "measured": "Vertical distance to the selected pier target; baseline change on a verified stable reference.",
+      "point": "An independently surveyed reference bracket facing a broad target attached to the accessible pier.",
+      "requirements": "Bridge-owner approval, independent benchmark, vertical geometry, target size, load and temperature context, required change and field validation.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "A target physically attached to the bridge pier beside a separate benchmark-mounted reference.",
+      "image": {
+        "name": "bridge-pier-target-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on an independent benchmark arm above a broad bridge-pier target",
+        "caption": "Bridge pier settlement reference targets",
+        "focalPoint": "50% 50%",
+        "target": "A target physically attached to the bridge pier beside a separate benchmark-mounted reference.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Vertical distance to the selected pier target; baseline change on a verified stable reference.",
+      "monitoringPoint": "An independently surveyed reference bracket facing a broad target attached to the accessible pier.",
+      "projectBrief": "Bridge-owner approval, independent benchmark, vertical geometry, target size, load and temperature context, required change and field validation."
+    },
+    {
+      "id": "bridge-bearing-gap",
+      "group": "building-heritage",
+      "title": "Bridge bearing gap and support movement",
+      "tagline": "Record the relationship between beam and support at one point.",
+      "summary": "Record the relationship between beam and support at one point.",
+      "description": "Measure the distance from an approved bracket on the bridge beam to a broad horizontal target fixed to the pier cap beside the bearing. The downward-facing sensor and offset target provide a clear observation path outside the bearing mechanism. Document the baseline and vertical axis to compare the relative relationship between beam and support under agreed load and temperature conditions. Validate target return, clearance and installed repeatability across the expected movement, and review the trend alongside bearing inspections and survey records. Independent survey control provides the wider context when the project also needs absolute beam or pier movement.",
+      "measured": "Relative vertical separation between the beam-mounted sensor and the pier-cap target.",
+      "point": "An approved beam-side bracket facing down to a pier-cap target clear of bearing mechanisms.",
+      "requirements": "Bearing-area drawing, both-member attachments, baseline gap, load and temperature states, access, target return and independent survey needs.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "A horizontal pier-cap target below a separate beam-side mounting point, outside the bearing mechanism.",
+      "image": {
+        "name": "bridge-bearing-gap-background-v4.webp",
+        "alt": "Bridge bearing gap and support movement installation background: A horizontal pier-cap target below a separate beam-side mounting point, outside the bearing mechanism.",
+        "caption": "Bridge bearing gap and support movement",
+        "focalPoint": "50% 50%",
+        "target": "A horizontal pier-cap target below a separate beam-side mounting point, outside the bearing mechanism.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 65.8,
+          "centerY": 25,
+          "squareSize": 14,
+          "rotation": 0
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing down in an illustrative installation."
+      },
+      "objective": "Relative vertical separation between the beam-mounted sensor and the pier-cap target.",
+      "monitoringPoint": "An approved beam-side bracket facing down to a pier-cap target clear of bearing mechanisms.",
+      "projectBrief": "Bearing-area drawing, both-member attachments, baseline gap, load and temperature states, access, target return and independent survey needs."
+    },
+    {
+      "id": "heritage-wall-target",
+      "group": "building-heritage",
+      "title": "Protected heritage wall references",
+      "tagline": "Observe an approved wall surface with conservation-led geometry.",
+      "summary": "Observe an approved wall surface with conservation-led geometry.",
+      "description": "Measure an existing broad wall surface along a conservation-approved direction from an independently established nearby reference. Where an attached target is needed, its installation follows the conservation authority’s approved method and remains physically coupled to the wall being observed. Document the surface, reference, axis and baseline, then evaluate return stability and installed repeatability across the planned period. Distance changes support review of that selected wall point alongside the conservation survey and inspection record. Preserve access and the clear measuring path, with reference checks and observation timing agreed by the project’s conservation and engineering team.",
+      "measured": "Distance to an approved existing wall face or wall-attached target along one defined axis.",
+      "point": "An independent stable reference facing the selected wall surface across a protected clear path.",
+      "requirements": "Conservation approval, permitted measurement direction, wall surface return, reference survey, mounting method, environment and field acceptance criteria.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "The intended broad masonry wall surface facing a distinct independent modern reference.",
+      "image": {
+        "name": "heritage-wall-target-installation-v3.webp",
+        "alt": "Horizontally rotated Hitelecom radar sensor on an independent post facing a protected stone wall",
+        "caption": "Protected heritage wall references",
+        "focalPoint": "50% 50%",
+        "target": "The intended broad masonry wall surface facing a distinct independent modern reference.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to an approved existing wall face or wall-attached target along one defined axis.",
+      "monitoringPoint": "An independent stable reference facing the selected wall surface across a protected clear path.",
+      "projectBrief": "Conservation approval, permitted measurement direction, wall surface return, reference survey, mounting method, environment and field acceptance criteria."
+    },
+    {
+      "id": "historic-tower-target",
+      "group": "building-heritage",
+      "title": "Historic tower movement references",
+      "tagline": "Follow a defined tower point with a documented reference.",
+      "summary": "Follow a defined tower point with a documented reference.",
+      "description": "Observe a broad accessible tower face, or an approved target attached to the selected tower element, from an independently surveyed reference. Establish the observation direction and baseline so the conservation engineer can interpret changes along that axis. Test the return on the actual masonry or attached target, and confirm reference stability and installed repeatability through the expected weather and temperature conditions. The project chooses a protected short path and an authorised mounting arrangement that respects the historic fabric. Review these local observations with the wider tower survey and inspection programme over the agreed monitoring period.",
+      "measured": "Distance to a selected tower surface or attached target; baseline change along the approved axis.",
+      "point": "An independently established reference facing a broad tower element within the verified working range.",
+      "requirements": "Conservation approval, target coupling, masonry return trial, independent reference, permitted axis, weather exposure and field repeatability requirements.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "The actual broad brick buttress face or a tower-attached target opposite the independent reference.",
+      "image": {
+        "name": "historic-tower-target-background-v4.webp",
+        "alt": "Historic tower movement references installation background: The actual broad brick buttress face or a tower-attached target opposite the independent reference.",
+        "caption": "Historic tower movement references",
+        "focalPoint": "50% 50%",
+        "target": "The actual broad brick buttress face or a tower-attached target opposite the independent reference.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 23.816,
+          "centerY": 33.207,
+          "squareSize": 18,
+          "rotation": -90
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing right in an illustrative installation."
+      },
+      "objective": "Distance to a selected tower surface or attached target; baseline change along the approved axis.",
+      "monitoringPoint": "An independently established reference facing a broad tower element within the verified working range.",
+      "projectBrief": "Conservation approval, target coupling, masonry return trial, independent reference, permitted axis, weather exposure and field repeatability requirements."
+    },
+    {
+      "id": "construction-retaining-target",
+      "group": "building-heritage",
+      "title": "Construction retaining-wall movement",
+      "tagline": "Give a chosen retaining-wall point an external reference.",
+      "summary": "Give a chosen retaining-wall point an external reference.",
+      "description": "Measure a broad approved target attached to the selected construction retaining-wall segment. Establish the reference on a surveyed foundation outside the assessed excavation movement zone and document the initial distance and observation axis. The construction engineer can compare local distance changes with excavation stages, ground conditions and survey records. Assess target return, reference stability and field repeatability before choosing the configuration and reporting profile. Protect the measuring path from equipment, stockpiles and temporary works, with reference checks and access arranged for the full construction period covered by the approved site monitoring plan.",
+      "measured": "Distance to one retaining-wall target; relative change along the surveyed measurement axis.",
+      "point": "A verified stable reference outside the assessed movement zone facing a target attached to the wall.",
+      "requirements": "Retaining design, excavation sequence, independent-reference survey, expected movement, obstructions, target attachment and installed repeatability criteria.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "An attached broad wall target facing a distinct reference beyond the assessed excavation movement area.",
+      "image": {
+        "name": "construction-retaining-target-background-v4.webp",
+        "alt": "Construction retaining-wall movement installation background: An attached broad wall target facing a distinct reference beyond the assessed excavation movement area.",
+        "caption": "Construction retaining-wall movement",
+        "focalPoint": "50% 50%",
+        "target": "An attached broad wall target facing a distinct reference beyond the assessed excavation movement area.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 37.744,
+          "centerY": 33.138,
+          "squareSize": 20,
+          "rotation": -90
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing right in an illustrative installation."
+      },
+      "objective": "Distance to one retaining-wall target; relative change along the surveyed measurement axis.",
+      "monitoringPoint": "A verified stable reference outside the assessed movement zone facing a target attached to the wall.",
+      "projectBrief": "Retaining design, excavation sequence, independent-reference survey, expected movement, obstructions, target attachment and installed repeatability criteria."
+    },
+    {
+      "id": "engineered-slope-target",
+      "group": "slope-dams",
+      "title": "Engineered slope reference targets",
+      "tagline": "Observe the selected slope point within a verified local layout.",
+      "summary": "Observe the selected slope point within a verified local layout.",
+      "description": "Measure a broad target securely coupled to an approved point on an engineered slope. Establish the reference on a surveyed stable foundation outside the assessed moving section, with a clear short path aligned to the project’s observation direction. Compare distance changes with the baseline and review them alongside rainfall, site activity and geotechnical observations. The engineering trial confirms target coupling, return stability and the repeatability needed for the intended change. Select the configuration and reporting profile for that point and axis, while the wider monitoring plan provides the context for the slope assessment.",
+      "measured": "Distance to an engineered slope target; selected-axis baseline change.",
+      "point": "A surveyed stable reference outside the assessed moving section facing the slope-coupled target.",
+      "requirements": "Geotechnical approval, target coupling, stable reference, verified range, axis orientation, expected movement, weather and field acceptance criteria.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "An anchored slope target facing a separate reference outside the assessed moving section.",
+      "image": {
+        "name": "engineered-slope-target-background-v4.webp",
+        "alt": "Engineered slope reference targets installation background: An anchored slope target facing a separate reference outside the assessed moving section.",
+        "caption": "Engineered slope reference targets",
+        "focalPoint": "50% 50%",
+        "target": "An anchored slope target facing a separate reference outside the assessed moving section.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 31.55,
+          "centerY": 24.2,
+          "squareSize": 16,
+          "rotation": -90
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing right in an illustrative installation."
+      },
+      "objective": "Distance to an engineered slope target; selected-axis baseline change.",
+      "monitoringPoint": "A surveyed stable reference outside the assessed moving section facing the slope-coupled target.",
+      "projectBrief": "Geotechnical approval, target coupling, stable reference, verified range, axis orientation, expected movement, weather and field acceptance criteria."
+    },
+    {
+      "id": "rock-slope-target",
+      "group": "slope-dams",
+      "title": "Rock-slope selected-point movement",
+      "tagline": "Follow a sound-rock target from a stable nearby reference.",
+      "summary": "Follow a sound-rock target from a stable nearby reference.",
+      "description": "Observe a broad approved target anchored to a selected sound-rock point from an independently established reference outside the assessed movement area. Document the baseline, target coupling and observation axis to compare local distance changes through the agreed monitoring period. The geotechnical engineer defines the point’s role and reviews its records with rainfall, inspection and the wider monitoring survey. Test the return signal and installed repeatability over expected weather conditions, keeping vegetation and site equipment clear of the path. Configuration follows the required range, relevant movement and reporting interval for this selected-point project.",
+      "measured": "Distance to the rock-coupled target; local change along the defined reference axis.",
+      "point": "An independent surveyed stable reference facing an approved target anchored to the selected rock point.",
+      "requirements": "Geotechnical target approval, sound-rock coupling, independent benchmark, axis geometry, weather, path clearance and field repeatability target.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "An anchored target on a selected rock face opposite a distinct stable reference footing.",
+      "image": {
+        "name": "rock-slope-target-installation-v3.webp",
+        "alt": "Hitelecom radar sensor mounted sideways on an independent reference, facing an anchored rock-slope target, illustrative installation",
+        "caption": "Rock-slope selected-point movement",
+        "focalPoint": "50% 50%",
+        "target": "An anchored target on a selected rock face opposite a distinct stable reference footing.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Distance to the rock-coupled target; local change along the defined reference axis.",
+      "monitoringPoint": "An independent surveyed stable reference facing an approved target anchored to the selected rock point.",
+      "projectBrief": "Geotechnical target approval, sound-rock coupling, independent benchmark, axis geometry, weather, path clearance and field repeatability target."
+    },
+    {
+      "id": "dam-abutment-target",
+      "group": "slope-dams",
+      "title": "Concrete dam abutment references",
+      "tagline": "Connect one abutment point to an independently checked reference.",
+      "summary": "Connect one abutment point to an independently checked reference.",
+      "description": "Measure a broad target attached to an accessible concrete dam-abutment element from a separately surveyed reference. Establish the initial vertical distance and verify reference stability before interpreting changes at the selected point. The dam engineer can review these observations with reservoir stage, temperature, inspection and survey records under the accepted monitoring plan. A project trial checks target return and installed repeatability across the expected conditions. Keep the measuring path protected and document target attachment, axis geometry and reference checks, with the configuration and observation interval selected for the movement and monitoring period the project requires.",
+      "measured": "Vertical distance to an abutment target; local baseline change on a verified reference.",
+      "point": "An independently surveyed stable bracket above an approved target attached to the abutment element.",
+      "requirements": "Dam-owner approval, reference survey, vertical geometry, target coupling, reservoir and temperature context, required change and field validation.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "An abutment-attached broad target beside a separate established benchmark-mounted reference.",
+      "image": {
+        "name": "dam-abutment-target-installation-v3.webp",
+        "alt": "Hitelecom radar sensor on an independent upper bracket facing a horizontal target attached to a concrete dam abutment, illustrative installation",
+        "caption": "Concrete dam abutment references",
+        "focalPoint": "50% 50%",
+        "target": "An abutment-attached broad target beside a separate established benchmark-mounted reference.",
+        "disclosure": "Illustrative installation"
+      },
+      "objective": "Vertical distance to an abutment target; local baseline change on a verified reference.",
+      "monitoringPoint": "An independently surveyed stable bracket above an approved target attached to the abutment element.",
+      "projectBrief": "Dam-owner approval, reference survey, vertical geometry, target coupling, reservoir and temperature context, required change and field validation."
+    },
+    {
+      "id": "embankment-reference-target",
+      "group": "slope-dams",
+      "title": "Embankment reference-point movement",
+      "tagline": "Observe local point height against a verified outside datum.",
+      "summary": "Observe local point height against a verified outside datum.",
+      "description": "Measure a broad target attached to a defined survey point within the embankment monitoring zone. Establish the observation reference independently outside the assessed movement area and verify the vertical geometry before comparing local height changes with the accepted baseline. Review the target records with the geotechnical survey, rainfall and site activity over the agreed period. The engineer confirms how the selected survey point is coupled to the ground being observed, together with reference stability and installed repeatability. Configuration and reporting follow that specific point’s required movement sensitivity, access conditions and field acceptance criteria.",
+      "measured": "Vertical separation to the selected embankment point; local change on the verified datum.",
+      "point": "An independently checked outside reference above a broad target coupled to the selected survey point.",
+      "requirements": "Ground-to-target coupling, stable outside datum, vertical axis, expected movement, rainfall context, access and installed repeatability validation.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "The local embankment survey point’s attached target and a visibly separate outside reference.",
+      "image": {
+        "name": "embankment-reference-target-background-v4.webp",
+        "alt": "Embankment reference-point movement installation background: The local embankment survey point’s attached target and a visibly separate outside reference.",
+        "caption": "Embankment reference-point movement",
+        "focalPoint": "50% 50%",
+        "target": "The local embankment survey point’s attached target and a visibly separate outside reference.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 62.2,
+          "centerY": 25,
+          "squareSize": 14,
+          "rotation": 0
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing down in an illustrative installation."
+      },
+      "objective": "Vertical separation to the selected embankment point; local change on the verified datum.",
+      "monitoringPoint": "An independently checked outside reference above a broad target coupled to the selected survey point.",
+      "projectBrief": "Ground-to-target coupling, stable outside datum, vertical axis, expected movement, rainfall context, access and installed repeatability validation."
+    },
+    {
+      "id": "reservoir-retaining-target",
+      "group": "slope-dams",
+      "title": "Reservoir retaining-wall references",
+      "tagline": "Review a chosen retaining-wall point with a land-side reference.",
+      "summary": "Review a chosen retaining-wall point with a land-side reference.",
+      "description": "Observe a broad approved target attached to a selected reservoir retaining-wall segment from an independently surveyed land-side reference. Document the baseline distance and observation direction so local changes can be reviewed within the wall’s engineering monitoring plan. Compare the records with reservoir level, weather, loading and inspections as appropriate to the site. Verify reference stability, target return and required installed repeatability before selecting the configuration. Keep the short measuring path clear of vegetation, vehicles and temporary works, with accessible reference checks maintained throughout the intended observation period for the selected wall point.",
+      "measured": "Distance to the selected retaining-wall target; change along the established reference axis.",
+      "point": "A surveyed stable land-side reference facing the broad target attached to the accessible wall.",
+      "requirements": "Wall-owner approval, independent-reference survey, target attachment, reservoir and load context, clearance and field acceptance criteria.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "A broad target on the retaining wall facing an independent land-side reference; water stays outside the measuring gap.",
+      "image": {
+        "name": "reservoir-retaining-target-background-v4.webp",
+        "alt": "Reservoir retaining-wall references installation background: A broad target on the retaining wall facing an independent land-side reference; water stays outside the measuring gap.",
+        "caption": "Reservoir retaining-wall references",
+        "focalPoint": "50% 50%",
+        "target": "A broad target on the retaining wall facing an independent land-side reference; water stays outside the measuring gap.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 49.66,
+          "centerY": 40.845,
+          "squareSize": 14,
+          "rotation": -90
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing right in an illustrative installation."
+      },
+      "objective": "Distance to the selected retaining-wall target; change along the established reference axis.",
+      "monitoringPoint": "A surveyed stable land-side reference facing the broad target attached to the accessible wall.",
+      "projectBrief": "Wall-owner approval, independent-reference survey, target attachment, reservoir and load context, clearance and field acceptance criteria."
+    },
+    {
+      "id": "dam-gallery-joint",
+      "group": "slope-dams",
+      "title": "Dam gallery joint movement",
+      "tagline": "Follow relative opening at the selected gallery joint.",
+      "summary": "Follow relative opening at the selected gallery joint.",
+      "description": "Measure a broad approved target attached to one dam-gallery segment from a mounting point on the opposing segment. Record both attachments, the initial gap and the observation axis so readings describe relative joint opening at that location. Review changes with reservoir stage, temperature, inspections and the dam’s monitoring records. A project trial verifies target return, clearance and installed repeatability over the expected movement and gallery conditions. The configuration is selected for this defined inter-segment observation, with independently surveyed references included where the engineering assessment also requires absolute movement of either segment.",
+      "measured": "Relative distance across a selected gallery joint along its documented observation axis.",
+      "point": "An approved bracket on one gallery segment facing a broad attached target on the opposing segment.",
+      "requirements": "Segment and joint drawings, both attachments, baseline, movement range, temperature and humidity, target return and survey context.",
+      "sourceRefs": [
+        "hitelecom-mw012-pdf",
+        "ids-los-deformation",
+        "usace-deformation-manual"
+      ],
+      "applicationStatus": "project-review",
+      "configurationLabel": "Reference-target project",
+      "photoTarget": "Two distinct gallery segments separated by a real joint, with target and opposing bracket attached to their respective segments.",
+      "image": {
+        "name": "dam-gallery-joint-background-v4.webp",
+        "alt": "Dam gallery joint movement installation background: Two distinct gallery segments separated by a real joint, with target and opposing bracket attached to their respective segments.",
+        "caption": "Dam gallery joint movement",
+        "focalPoint": "50% 50%",
+        "target": "Two distinct gallery segments separated by a real joint, with target and opposing bracket attached to their respective segments.",
+        "disclosure": "Illustrative installation",
+        "productPlacement": {
+          "centerX": 36.288,
+          "centerY": 41.376,
+          "squareSize": 16,
+          "rotation": -90
+        },
+        "productAlt": "Hitelecom radar distance sensor, original product image facing right in an illustrative installation."
+      },
+      "objective": "Relative distance across a selected gallery joint along its documented observation axis.",
+      "monitoringPoint": "An approved bracket on one gallery segment facing a broad attached target on the opposing segment.",
+      "projectBrief": "Segment and joint drawings, both attachments, baseline, movement range, temperature and humidity, target return and survey context."
+    }
+  ],
+  "provenance": {
+    "checkedAt": "2026-10-11",
+    "productParameterBaseline": "H310-MW012 linked manufacturer datasheet; model scope retained.",
+    "FAQBasis": {
+      "parameter_baseline": "H310-MW012 linked PDF, visually inspected; source differences recorded for Kimi/README",
+      "faq_status": "Ten editorial questions supported by public engineering information and discoverable query topics. They are not claimed to originate from Hitelecom customer tickets or verified keyword volumes.",
+      "search_data_limit": "The web search service returned public query results. Direct Google and Bing SERP URLs were not accessible; no Search Console, Bing Webmaster Tools, paid keyword volume or AI recommendation-frequency dataset was obtained.",
+      "search_engine_limit": "Search systems are tool-provided retrieval systems; their names must not be relabelled Google or Bing.",
+      "external_application_limit": "Other manufacturers’ application pages validate technology categories, not Hitelecom customer deployments or identical performance."
+    },
+    "sources": [
+      {
+        "id": "HT-PAGE",
+        "url": "https://www.hitelecom.com/product/radar-distance-sensor",
+        "title": "Hitelecom Radar Distance Sensor product page",
+        "accessed": "2026-10-11",
+        "publication_date": null,
+        "refs": [
+          "turn135view0",
+          "turn146search11"
+        ],
+        "kind": "manufacturer product page",
+        "use": "Series positioning, features, wireless and platform options. Numeric differences from linked PDF require reconciliation."
+      },
+      {
+        "id": "HT-PDF",
+        "url": "https://www.hitelecom.com/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf",
+        "title": "Hitelecom H310-MW012 Datasheet",
+        "accessed": "2026-10-11",
+        "publication_date": null,
+        "refs": [
+          "turn136view0",
+          "turn138view0",
+          "turn138view1",
+          "turn138view2"
+        ],
+        "kind": "manufacturer datasheet; all 3 pages downloaded, rendered and visually inspected",
+        "use": "Primary model-specific reference. Values in supplied draft use this source, with accuracy lab condition and battery reporting profile."
+      },
+      {
+        "id": "IFM-PRINCIPLE",
+        "url": "https://www.ifm.com/us/en/us/learn-more/radar-sensor/radar-sensor-technology",
+        "title": "How radar sensors work: Technology and application guide",
+        "accessed": "2026-10-11",
+        "publication_date": null,
+        "refs": [
+          "turn147view0"
+        ],
+        "kind": "manufacturer engineering guide",
+        "use": "Reflected radio signals, target size/material/orientation, separation of ranging from multidimensional/speed sensing. General engineering background, not Hitelecom component evidence."
+      },
+      {
+        "id": "VEGA-COMPARE",
+        "url": "https://www.vega.com/en-us/company/blog/2017/level-comparison-80-ghz-radar-versus-ultrasonic",
+        "title": "Level technology comparison: 80 GHz radar sensors vs. ultrasonic transmitters",
+        "accessed": "2026-10-11",
+        "publication_date": "2017 (URL year; exact day not established)",
+        "refs": [
+          "turn141view0"
+        ],
+        "kind": "manufacturer engineering comparison",
+        "use": "Radar uses electromagnetic waves; ultrasonic uses sound. Foam and installation matter. Do not transfer VEGA 80 GHz performance or frequency to Hitelecom."
+      },
+      {
+        "id": "IFM-INSTALL",
+        "url": "https://www.ifm.com/us/en/us/learn-more/level/lw21/installation-guidelines",
+        "title": "LW2120 radar level sensor installation guidelines",
+        "accessed": "2026-10-11",
+        "publication_date": null,
+        "refs": [
+          "turn141view1"
+        ],
+        "kind": "manufacturer installation guidance",
+        "use": "Beam path, perpendicular liquid-surface alignment, fill streams, obstructions and actual media testing. Exact ifm distances/angles/adapters are not Hitelecom requirements."
+      },
+      {
+        "id": "EMERSON-SOLIDS",
+        "url": "https://www.emerson.com/en/measurement-instrumentation/catalog/level-measurement/solids-level-measurement",
+        "title": "Solids Level Measurement",
+        "accessed": "2026-10-11",
+        "publication_date": null,
+        "refs": [
+          "turn141view2"
+        ],
+        "kind": "manufacturer application and FAQ guide",
+        "use": "Powders/pellets/granules, silos/bins/hoppers; industry breadth and surface geometry. Proves industry use, not Hitelecom installation history."
+      },
+      {
+        "id": "VEGA-INVENTORY",
+        "url": "https://www.vega.com/en-uk/company/blog/2017/silo-level-monitoring-part-4",
+        "title": "Why measure the level in a silo?",
+        "accessed": "2026-10-11",
+        "publication_date": "2017 (URL year; exact day not established)",
+        "refs": [
+          "turn145view1"
+        ],
+        "kind": "manufacturer application guide",
+        "use": "Distinguishes point level, volume and mass; vessel geometry, density and sloping surfaces determine inventory interpretation."
+      },
+      {
+        "id": "OTT-WATER",
+        "url": "https://www.ott.com/blog/en/blog/how-do-i-find-the-best-water-level-sensor",
+        "title": "How do I find the best water level sensor for my monitoring site?",
+        "accessed": "2026-10-11",
+        "publication_date": "2026-06-03",
+        "refs": [
+          "turn145view2"
+        ],
+        "kind": "manufacturer hydrology guide",
+        "use": "Surface-water and flood/tide/drought use cases; site-specific selection. OTT radar figures do not apply to Hitelecom."
+      },
+      {
+        "id": "XYLEM-INSTALL",
+        "url": "https://www.xylem.com/siteassets/brand/ysi/resources/manual/nile-radar-sensor-manual--d73-05-1116.pdf",
+        "title": "Nile Radar Sensor Owners Manual",
+        "accessed": "2026-10-11",
+        "publication_date": "2016 (manual filename; exact revision date not established)",
+        "refs": [
+          "turn141view4"
+        ],
+        "kind": "manufacturer manual",
+        "use": "Stable reference mounting, clear water path, bridge movement and false reflections. Model-specific limits are not transferred."
+      },
+      {
+        "id": "USGS-STAGE",
+        "url": "https://www.usgs.gov/publications/testing-and-use-radar-water-level-sensors-us-geological-survey",
+        "title": "Testing and use of radar water level sensors by the U.S. Geological Survey",
+        "accessed": "2026-10-11",
+        "publication_date": "2016-01-01",
+        "refs": [
+          "turn147view1"
+        ],
+        "kind": "government research publication",
+        "use": "Water level/stage supports discharge only with a station-specific relationship. Non-contact monitoring has a documented public engineering basis; no Hitelecom endorsement."
+      },
+      {
+        "id": "BANNER-POSITION",
+        "url": "https://www.bannerengineering.com/us/en/applications/radar/collision-avoidance.html",
+        "title": "Anti-Collision and Equipment Positioning",
+        "accessed": "2026-10-11",
+        "publication_date": null,
+        "refs": [
+          "turn145view3"
+        ],
+        "kind": "manufacturer application guide",
+        "use": "Technical examples of distance and alignment monitoring; exclude safety/control claims from a battery periodic-reporting Hitelecom page."
+      },
+      {
+        "id": "hitelecom-radar-live",
+        "title": "Hitelecom Radar Distance Sensor",
+        "url": "https://www.hitelecom.com/product/radar-distance-sensor",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn154view0"
+        ],
+        "use": "Current family page claims a wider customizable range and a one-hour battery profile. These differ from the specific model PDF; do not blend them into a universal H310-MW012 specification."
+      },
+      {
+        "id": "hitelecom-mw012-pdf",
+        "title": "Hitelecom H310-MW012 Datasheet",
+        "url": "https://www.hitelecom.com/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn154view1"
+        ],
+        "use": "Model reference: 300–12,000 mm range, ±1 mm accuracy at 25°C in Hitelecom Lab, 1 mm reading resolution, less than 20° beam, IP68, −30 to +75°C operation, 4G/NB-IoT/LoRa options. The table battery profile is two-hour reporting; it is not a field displacement acceptance test or proof of hazardous-area approval."
+      },
+      {
+        "id": "vega-sewer-level",
+        "title": "Level measurement in the sewer network",
+        "url": "https://www.vega.com/en/industries/water-wastewater/wastewater-treatment/sewer-network",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn158view0"
+        ],
+        "use": "Primary industry example of overhead radar measuring wastewater/rainwater level in sewer networks. Humidity, condensation and foam are identified process challenges."
+      },
+      {
+        "id": "vega-gully-level",
+        "title": "Gully — level measurement",
+        "url": "https://www.vega.com/en-br/industries/water-wastewater/wastewater-treatment/gullies",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn158view1"
+        ],
+        "use": "Primary industry example of gully-level trends supporting deposit and blockage maintenance planning. This is evidence for the application class; it is not proof that H310-MW012 measures sediment beneath standing water."
+      },
+      {
+        "id": "eh-submerged-sludge-interface",
+        "title": "Turbimax CUS71D ultrasonic interface sensor",
+        "url": "https://www.us.endress.com/en/field-instruments-overview/liquid-analysis-product-overview/sludge-level-sensor-cus71d",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn158view2"
+        ],
+        "use": "Sedimentation-interface measurement is addressed by a submerged ultrasonic interface sensor. A free-space radar aimed at a water surface is a different measurement task."
+      },
+      {
+        "id": "vega-chemical-bulk-solids",
+        "title": "Silos for bulk solids — level measurement",
+        "url": "https://www.vega.com/en-uk/industries/chemical/applications/silos-for-bulk-solids",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn158view3"
+        ],
+        "use": "Primary bulk-solids radar application example covering silos, stockpiles and bunkers. Dust, abrasion, changing media, bulk density and explosion protection are selection factors. Competitor process ratings are not transferable to Hitelecom."
+      },
+      {
+        "id": "campbell-water-distance",
+        "title": "RangeVue 15 radar water-level sensor",
+        "url": "https://www.campbellsci.eu/rangevue15",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn161view3"
+        ],
+        "use": "Primary instrument description confirms the general method: distance to the water surface converted to water level/stage relative to a reference. Its 80 GHz, 8° beam and approvals belong to that product, not H310."
+      },
+      {
+        "id": "usgs-stage-discharge",
+        "title": "Streamgaging Basics",
+        "url": "https://www.usgs.gov/mission-areas/water-resources/science/streamgaging-basics",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn155search5"
+        ],
+        "use": "Water level and streamflow are different quantities. Discharge conversion requires a site-specific stage–discharge relationship based on field measurements."
+      },
+      {
+        "id": "ids-los-deformation",
+        "title": "Smart Data Fusion Technology",
+        "url": "https://idsgeoradar.com/products/software/smart-data",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn158view4"
+        ],
+        "use": "Structural radar line-of-sight displacement and three-dimensional movement are different outputs; combining surveying and radar can support 3D interpretation. This specialized mapping platform does not establish equivalent H310 capabilities."
+      },
+      {
+        "id": "ids-structural-system",
+        "title": "MyMo Structural Health Monitoring System",
+        "url": "https://idsgeoradar.com/products/interferometric-radar/mymo",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn161view2"
+        ],
+        "use": "An interferometric structural-health instrument is designed for static/dynamic behavior and multiple measurement points. A periodic single-point battery distance sensor must not inherit these capabilities by calling both products radar."
+      },
+      {
+        "id": "usace-deformation-manual",
+        "title": "USACE EM 1110-2-1009 Structural Deformation Surveying",
+        "url": "https://www.publications.usace.army.mil/USACE-Publications/Engineer-Manuals/u43544q/6465666F726D6174696F6E/udt_43544_param_orderby/Title/udt_43544_param_direction/ascending/",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn160search4"
+        ],
+        "use": "The official manual catalogue states that structural-deformation surveying has accuracy, procedure and quality-control requirements. The PDF itself could not be fetched in this tool session, so detailed clauses are not cited here."
+      },
+      {
+        "id": "hse-explosion-equipment",
+        "title": "ATEX and explosive atmospheres",
+        "url": "https://www.hse.gov.uk/fireandexplosion/atex.htm",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn161view1"
+        ],
+        "use": "Combustible dusts, gases and vapours can require hazardous-area classification and appropriate equipment selection. This general requirement does not prove that Hitelecom has ATEX/IECEx, mining or other Ex approval."
+      },
+      {
+        "id": "vega-sludge-surface",
+        "title": "Smarter Sludge Monitoring with IIoT Radars",
+        "url": "https://www.vega.com/en/company/blog/2025/smarter-sludge-monitoring-with-iiot-radars",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn161view4"
+        ],
+        "use": "A competitor case describes radar above a sludge retention basin measuring the exposed process surface; it is not a claim of seeing a submerged sludge/water interface, and is not a Hitelecom customer case."
+      },
+      {
+        "id": "vega-treatment-screens",
+        "title": "Level and pressure instrumentation for wastewater treatment",
+        "url": "https://www.vega.com/en/company/blog/2025/level-and-pressure-instrumentation-for-wastewater-treatment-high-efficiency-with-vega-transmitters",
+        "accessed": "2026-10-11",
+        "kind": "primary engineering / manufacturer source",
+        "refs": [
+          "turn161view5"
+        ],
+        "use": "Primary wastewater application examples include water level upstream/downstream of screens, pump shafts and overflow basins. Paired readings can support site-specific head-loss assessment."
+      }
+    ],
+    "applicationSources": {
+      "reviewDate": "2026-10-11",
+      "basis": "Primary sources establish public application classes and measurement principles. The detailed Hitelecom scene layouts are editorial engineering proposals requiring project selection and field validation; they are not evidence of installed Hitelecom customer cases or verified performance for all 48 tasks. Competitor capabilities and certifications are not transferred to H310-MW012.",
+      "sources": [
+        {
+          "id": "hitelecom-radar-live",
+          "title": "Hitelecom Radar Distance Sensor",
+          "url": "https://www.hitelecom.com/product/radar-distance-sensor",
+          "ref": "turn154view0",
+          "accessed": "2026-10-11",
+          "supports": "Current family page claims a wider customizable range and a one-hour battery profile. These differ from the specific model PDF; do not blend them into a universal H310-MW012 specification."
+        },
+        {
+          "id": "hitelecom-mw012-pdf",
+          "title": "Hitelecom H310-MW012 Datasheet",
+          "url": "https://www.hitelecom.com/downloads/h310-mw012-radar-distance-sensor-datasheet.pdf",
+          "ref": "turn154view1",
+          "visualRefs": [
+            "turn158view6",
+            "turn158view7"
+          ],
+          "accessed": "2026-10-11",
+          "supports": "Model reference: 300–12,000 mm range, ±1 mm accuracy at 25°C in Hitelecom Lab, 1 mm reading resolution, less than 20° beam, IP68, −30 to +75°C operation, 4G/NB-IoT/LoRa options. The table battery profile is two-hour reporting; it is not a field displacement acceptance test or proof of hazardous-area approval."
+        },
+        {
+          "id": "vega-sewer-level",
+          "title": "Level measurement in the sewer network",
+          "url": "https://www.vega.com/en/industries/water-wastewater/wastewater-treatment/sewer-network",
+          "ref": "turn158view0",
+          "accessed": "2026-10-11",
+          "supports": "Primary industry example of overhead radar measuring wastewater/rainwater level in sewer networks. Humidity, condensation and foam are identified process challenges."
+        },
+        {
+          "id": "vega-gully-level",
+          "title": "Gully — level measurement",
+          "url": "https://www.vega.com/en-br/industries/water-wastewater/wastewater-treatment/gullies",
+          "ref": "turn158view1",
+          "accessed": "2026-10-11",
+          "supports": "Primary industry example of gully-level trends supporting deposit and blockage maintenance planning. This is evidence for the application class; it is not proof that H310-MW012 measures sediment beneath standing water."
+        },
+        {
+          "id": "eh-submerged-sludge-interface",
+          "title": "Turbimax CUS71D ultrasonic interface sensor",
+          "url": "https://www.us.endress.com/en/field-instruments-overview/liquid-analysis-product-overview/sludge-level-sensor-cus71d",
+          "ref": "turn158view2",
+          "accessed": "2026-10-11",
+          "supports": "Sedimentation-interface measurement is addressed by a submerged ultrasonic interface sensor. A free-space radar aimed at a water surface is a different measurement task."
+        },
+        {
+          "id": "vega-chemical-bulk-solids",
+          "title": "Silos for bulk solids — level measurement",
+          "url": "https://www.vega.com/en-uk/industries/chemical/applications/silos-for-bulk-solids",
+          "ref": "turn158view3",
+          "accessed": "2026-10-11",
+          "supports": "Primary bulk-solids radar application example covering silos, stockpiles and bunkers. Dust, abrasion, changing media, bulk density and explosion protection are selection factors. Competitor process ratings are not transferable to Hitelecom."
+        },
+        {
+          "id": "campbell-water-distance",
+          "title": "RangeVue 15 radar water-level sensor",
+          "url": "https://www.campbellsci.eu/rangevue15",
+          "ref": "turn161view3",
+          "accessed": "2026-10-11",
+          "supports": "Primary instrument description confirms the general method: distance to the water surface converted to water level/stage relative to a reference. Its 80 GHz, 8° beam and approvals belong to that product, not H310."
+        },
+        {
+          "id": "usgs-stage-discharge",
+          "title": "Streamgaging Basics",
+          "url": "https://www.usgs.gov/mission-areas/water-resources/science/streamgaging-basics",
+          "ref": "turn155search5",
+          "accessed": "2026-10-11",
+          "supports": "Water level and streamflow are different quantities. Discharge conversion requires a site-specific stage–discharge relationship based on field measurements."
+        },
+        {
+          "id": "ids-los-deformation",
+          "title": "Smart Data Fusion Technology",
+          "url": "https://idsgeoradar.com/products/software/smart-data",
+          "ref": "turn158view4",
+          "accessed": "2026-10-11",
+          "supports": "Structural radar line-of-sight displacement and three-dimensional movement are different outputs; combining surveying and radar can support 3D interpretation. This specialized mapping platform does not establish equivalent H310 capabilities."
+        },
+        {
+          "id": "ids-structural-system",
+          "title": "MyMo Structural Health Monitoring System",
+          "url": "https://idsgeoradar.com/products/interferometric-radar/mymo",
+          "ref": "turn161view2",
+          "accessed": "2026-10-11",
+          "supports": "An interferometric structural-health instrument is designed for static/dynamic behavior and multiple measurement points. A periodic single-point battery distance sensor must not inherit these capabilities by calling both products radar."
+        },
+        {
+          "id": "usace-deformation-manual",
+          "title": "USACE EM 1110-2-1009 Structural Deformation Surveying",
+          "url": "https://www.publications.usace.army.mil/USACE-Publications/Engineer-Manuals/u43544q/6465666F726D6174696F6E/udt_43544_param_orderby/Title/udt_43544_param_direction/ascending/",
+          "ref": "turn160search4",
+          "accessed": "2026-10-11",
+          "supports": "The official manual catalogue states that structural-deformation surveying has accuracy, procedure and quality-control requirements. The PDF itself could not be fetched in this tool session, so detailed clauses are not cited here."
+        },
+        {
+          "id": "hse-explosion-equipment",
+          "title": "ATEX and explosive atmospheres",
+          "url": "https://www.hse.gov.uk/fireandexplosion/atex.htm",
+          "ref": "turn161view1",
+          "accessed": "2026-10-11",
+          "supports": "Combustible dusts, gases and vapours can require hazardous-area classification and appropriate equipment selection. This general requirement does not prove that Hitelecom has ATEX/IECEx, mining or other Ex approval."
+        },
+        {
+          "id": "vega-sludge-surface",
+          "title": "Smarter Sludge Monitoring with IIoT Radars",
+          "url": "https://www.vega.com/en/company/blog/2025/smarter-sludge-monitoring-with-iiot-radars",
+          "ref": "turn161view4",
+          "accessed": "2026-10-11",
+          "supports": "A competitor case describes radar above a sludge retention basin measuring the exposed process surface; it is not a claim of seeing a submerged sludge/water interface, and is not a Hitelecom customer case."
+        },
+        {
+          "id": "vega-treatment-screens",
+          "title": "Level and pressure instrumentation for wastewater treatment",
+          "url": "https://www.vega.com/en/company/blog/2025/level-and-pressure-instrumentation-for-wastewater-treatment-high-efficiency-with-vega-transmitters",
+          "ref": "turn161view5",
+          "accessed": "2026-10-11",
+          "supports": "Primary wastewater application examples include water level upstream/downstream of screens, pump shafts and overflow basins. Paired readings can support site-specific head-loss assessment."
+        }
+      ],
+      "engineeringInferences": [
+        "boiler-external-target",
+        "spherical-tank-target",
+        "machine-foundation-target",
+        "tank-support-target",
+        "factory-joint-gap",
+        "slow-equipment-position",
+        "rail-trackbed-target",
+        "light-rail-support-target",
+        "highway-tunnel-target",
+        "tunnel-joint-target",
+        "quay-wall-target",
+        "port-gantry-foundation-target",
+        "older-building-settlement-target",
+        "bridge-pier-target",
+        "bridge-bearing-gap",
+        "heritage-wall-target",
+        "historic-tower-target",
+        "construction-retaining-target",
+        "engineered-slope-target",
+        "rock-slope-target",
+        "dam-abutment-target",
+        "embankment-reference-target",
+        "reservoir-retaining-target",
+        "dam-gallery-joint"
+      ],
+      "boundaries": [
+        "Surfaces and reference-target projects have separate labels and selection conditions.",
+        "Submerged sediment interfaces are not inferred from a water-surface reading.",
+        "Target movement is a relative along-axis distance change; vertical settlement needs the specified geometry and a checked independent reference.",
+        "H310-MW012 laboratory distance accuracy is not a verified field settlement accuracy.",
+        "Process and hazardous-area suitability are reviewed for the supplied configuration."
+      ]
+    },
+    "conflictsForEditorialReview": [
+      {
+        "field": "range",
+        "website": "0.3–50 m series configurable",
+        "linked_pdf": "0.3–12 m H310-MW012",
+        "decision": "Front-page range follows the published model reference. Other ranges are project review requests; no invented 50 m model."
+      },
+      {
+        "field": "accuracy_scope",
+        "website": "±1 mm without medium/distance test envelope",
+        "linked_pdf": "±1 mm at 25°C Hitelecom Lab",
+        "decision": "Show laboratory condition. Do not promise all materials over a 50 m span."
+      },
+      {
+        "field": "battery_profile",
+        "website": "hourly >10 years",
+        "linked_pdf": "table: >10 years at two-hour reporting; cover:5–10 years; feature block:over10 years",
+        "decision": "Use table reporting condition and record internal PDF inconsistencies in README. No universal lifetime guarantee."
+      },
+      {
+        "field": "environmental_temperature",
+        "website": "operating -20..+70 / storage -20..+80°C",
+        "linked_pdf": "operating -30..+75 / storage -40..+85°C",
+        "decision": "Use model PDF baseline and ask Kimi to reconcile future approved datasheet revisions."
+      },
+      {
+        "field": "resolution_notation",
+        "website": "1 mm",
+        "linked_pdf": "±1 mm in Resolution row",
+        "decision": "Use 1 mm reading resolution; ± belongs to accuracy. Treat PDF notation as editorial correction, not an improved specification."
+      }
+    ],
+    "revision": "Application revision: observed surfaces separated from proposed reference-target arrangements; 48 briefs and 10 evidence-linked FAQs.",
+    "applicationImageRevision": {
+      "date": "2026-10-11",
+      "count": 48,
+      "correctedCount": 12,
+      "type": "36 AI-assisted photocomposites;12 corrected backgrounds with the original official product bitmap as a static HTML/CSS layer",
+      "disclosure": "Illustrative installation",
+      "claim": "Concept arrangements, not customer installation records or certified site designs",
+      "manifest": "docs/application-fidelity-v4.json",
+      "previousManifest": "docs/installation-composites-v3.json"
+    }
+  }
+}

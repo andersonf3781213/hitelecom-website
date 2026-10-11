@@ -1,0 +1,11 @@
+---
+const {image, asset, product, category = false} = Astro.props;
+const placement = image.productPlacement;
+const photoClass = category ? 'application-category-image' : 'application-scene-image';
+const sizes = '(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px';
+const placementStyle = placement ? `--sensor-x:${placement.centerX}%;--sensor-y:${placement.centerY}%;--sensor-size:${placement.squareSize}%;--sensor-rotation:${placement.rotation}deg` : undefined;
+---
+{placement ? <div class="application-photo-stage" style={placementStyle} data-product-source="official-original" data-product-rotation={placement.rotation}>
+  <img class={photoClass} src={asset.src} srcset={asset.srcset} sizes={sizes} width={asset.width} height={asset.height} loading="lazy" decoding="async" alt={image.alt}/>
+  <img class="application-product-lock" src={product.src} srcset={product.srcset} sizes="(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px" width={product.width} height={product.height} loading="lazy" decoding="async" alt={image.productAlt}/>
+</div> : <img class={photoClass} src={asset.src} srcset={asset.srcset} sizes={sizes} width={asset.width} height={asset.height} loading="lazy" decoding="async" alt={image.alt} style={'object-position:'+image.focalPoint}/>}

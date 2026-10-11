@@ -1,0 +1,136 @@
+---
+import content from '../../data/radar-content.json';
+import FeatureIcon from './FeatureIcon.astro';
+import ImageCaption from './ImageCaption.astro';
+import ApplicationPhoto from './ApplicationPhoto.astro';
+// QuickContact 不引入：官网 BaseLayout 已提供全站浮动联系按钮（README-KIMI 生产环境共用 Header/Footer）
+import ReferenceGeometry from './ReferenceGeometry.astro';
+import {getImage} from 'astro:assets';
+import heroBackground from '../../assets/brand/sensor-hero-background.jpg';
+import {assetImage} from './images.mjs';
+const hero=await assetImage('product-hero.webp',true);
+const widths=[640,1280,1920];
+const backgrounds=await Promise.all(widths.map(width=>getImage({src:heroBackground,width,format:'webp',quality:78})));
+const groups=await Promise.all(content.groups.map(async group=>({...group,asset:await assetImage(group.image.name),tasks:await Promise.all(content.applications.filter(scene=>scene.group===group.id).map(async scene=>({...scene,asset:await assetImage(scene.image.name)})))})));
+---
+<div class="ht-radar"><div id="radar-content">
+  <div class="hero-band">
+    <img class="hero-background" src={backgrounds[2].src} srcset={backgrounds.map((x,i)=>x.src+' '+widths[i]+'w').join(', ')} sizes="100vw" width={heroBackground.width} height={heroBackground.height} alt="" aria-hidden="true" loading="eager" decoding="async"/>
+    <div class="wrap breadcrumb" aria-label="Breadcrumb"><a href="https://www.hitelecom.com">Home</a><span aria-hidden="true">/</span><a href="https://www.hitelecom.com/product">IoT sensors</a><span aria-hidden="true">/</span><span>Radar distance sensor</span></div>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-heading"><h1 id="hero-title">Wireless radar<br/><span>distance sensor.</span></h1><p class="hero-value-line">{content.hero.valueHeading}</p></div>
+      <figure class="hero-visual radar-product"><img src={hero.src} srcset={hero.srcset} sizes="(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px" width={hero.width} height={hero.height} alt="Hitelecom H310-MW012 wireless radar distance sensor, official product image" loading="eager" fetchpriority="high" decoding="async"/><figcaption><span class="live-dot" aria-hidden="true"></span>{content.hero.imageCaption}</figcaption></figure>
+      <p class="hero-description">{content.hero.description}</p>
+      <div class="hero-actions"><a href="#enquiry" class="button button-primary">Request a quote <span aria-hidden="true">↗</span></a><a href={content.specifications.datasheet_url} class="text-link">Download datasheet <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-proof">{content.hero.proof.map(item=><div><strong>{item.value}</strong><span>{item.label}</span><small>{item.note}</small></div>)}</div>
+    </section>
+  </div>
+  <nav class="section-nav" aria-label="On this page"><div class="wrap"><a href="#measurement">Measurement</a><a href="#applications">Applications</a><a href="#specifications">Specifications</a><a href="#integration">Integration</a><a href="#faq">FAQ</a><a class="nav-quote" href="#enquiry">Request a quote ↗</a></div></nav>
+  <section class="section features-section" id="features" aria-labelledby="features-title"><div class="wrap">
+    <div class="section-heading compact-heading"><div><p class="eyebrow">KEY FEATURES</p><h2 id="features-title">A clear reading.<br/><span>A connected operation.</span></h2></div><p>See water, materials and selected positions from a distance. Match the target, installation and data connection to the work your team needs to do.</p></div>
+    <div class="feature-grid">{content.features.map((feature,index)=><article><span class="feature-mark" aria-hidden="true"><FeatureIcon index={index}/></span><h3>{feature.title}</h3><p>{feature.text}</p></article>)}</div>
+  </div></section>
+  <section class="section measurement-section" id="measurement" aria-labelledby="measurement-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">MEASUREMENT & INSTALLATION</p><h2 id="measurement-title">Start with the target.<br/><span>Define the measuring path.</span></h2></div><p>{content.measurement.description}</p></div>
+    <div class="measurement-grid">{content.measurement.cards.map((item,index)=><article class="measurement-card"><div class="measurement-heading"><span class="measurement-number">0{index+1}</span><span class="measurement-symbol" aria-hidden="true">{index===0?'↔':index===1?'↓':'↗'}</span></div><h3>{item.title}</h3><p>{item.text}</p><dl><dt>Define for your project</dt><dd>{item.project_brief}</dd></dl><a href="#enquiry" class="text-link" data-configuration={item.title}>Discuss this configuration ↗</a></article>)}</div>
+    <div class="level-explainer">
+      <div class="level-copy"><p class="eyebrow">FROM DISTANCE TO LEVEL</p><h3>One distance reading.<br/>A useful site reference.</h3><p>{content.conversion.description}</p><div class="level-formula"><span>Level</span><strong>L = H − D</strong><p>4.2 m = 6.0 m − 1.8 m</p></div><small>{content.conversion.example.label}</small></div>
+      <figure class="level-diagram"><svg class="geometry-desktop" viewBox="0 0 640 390" role="img" aria-labelledby="level-geometry-title level-geometry-description">
+        <title id="level-geometry-title">Illustrative vertical distance to water level conversion</title>
+        <desc id="level-geometry-description">The fixed measurement reference is 6 metres above the bottom datum. The distance to water is 1.8 metres, giving a water level of 4.2 metres.</desc>
+        <defs><linearGradient id="water-tone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#509aff" stop-opacity=".55"/><stop offset="1" stop-color="#285fdf" stop-opacity=".12"/></linearGradient><marker id="distance-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10" fill="#285fdf"/></marker><clipPath id="tank-cut"><rect x="60" y="48" width="286" height="300" rx="16"/></clipPath></defs>
+        <rect x="60" y="48" width="286" height="300" rx="16" fill="#f7faff" stroke="#a8bad4" stroke-width="2"/>
+        <rect x="60" y="138" width="286" height="210" fill="url(#water-tone)" clip-path="url(#tank-cut)"/>
+        <path d="M60 138H346" stroke="#285fdf" stroke-width="3"/>
+        <rect x="190" y="17" width="28" height="25" rx="5" fill="#173454"/><path d="M204 42V48" stroke="#173454" stroke-width="4"/>
+        <path d="M204 50V136" stroke="#285fdf" stroke-width="2" stroke-dasharray="5 5"/>
+        <path d="M352 48H602M352 138H602M60 348H602" stroke="#9aacc5" stroke-width="1" stroke-dasharray="4 5"/>
+        <path d="M410 53V133" stroke="#285fdf" stroke-width="2" marker-start="url(#distance-arrow)" marker-end="url(#distance-arrow)"/>
+        <path d="M487 53V343" stroke="#285fdf" stroke-width="2" marker-start="url(#distance-arrow)" marker-end="url(#distance-arrow)"/>
+        <path d="M563 143V343" stroke="#285fdf" stroke-width="2" marker-start="url(#distance-arrow)" marker-end="url(#distance-arrow)"/>
+        <g font-family="Arial,sans-serif" font-size="16" fill="#17243a"><text x="373" y="86">D</text><text x="357" y="111">1.8 m</text><text x="450" y="195">H</text><text x="434" y="220">6.0 m</text><text x="574" y="245">L</text><text x="574" y="271">4.2 m</text><text x="76" y="330">Bottom datum</text><text x="77" y="124">Water surface</text><text x="233" y="35" font-size="13">Fixed reference</text></g>
+      </svg><svg class="geometry-mobile" viewBox="0 0 360 320" role="img" aria-labelledby="level-mobile-title level-mobile-description">
+        <title id="level-mobile-title">Vertical water level conversion — compact mobile geometry</title>
+        <desc id="level-mobile-description">The fixed reference height H is six metres. The measured distance D to water is 1.8 metres. The resulting level L is 4.2 metres above the same bottom datum.</desc>
+        <defs><marker id="level-mobile-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 10 5 0 10" fill="#285fdf"/></marker><clipPath id="level-mobile-cut"><rect x="12" y="80" width="132" height="210" rx="10"/></clipPath></defs>
+        <rect x="12" y="80" width="132" height="210" rx="10" fill="#f7faff" stroke="#a8bad4" stroke-width="2"/>
+        <rect x="12" y="143" width="132" height="147" fill="#b7d5fb" clip-path="url(#level-mobile-cut)"/>
+        <path d="M12 143H144" stroke="#285fdf" stroke-width="3"/>
+        <rect x="66" y="46" width="24" height="25" rx="4" fill="#173454"/><path d="M78 71V80" stroke="#173454" stroke-width="4"/>
+        <path d="M78 83V141" stroke="#285fdf" stroke-width="2" stroke-dasharray="5 5"/>
+        <path d="M150 80H346M150 143H346M12 290H346" stroke="#9aacc5" stroke-width="1" stroke-dasharray="4 5"/>
+        <path d="M180 85V138" fill="none" stroke="#285fdf" stroke-width="2" marker-start="url(#level-mobile-arrow)" marker-end="url(#level-mobile-arrow)"/>
+        <path d="M252 85V285" fill="none" stroke="#285fdf" stroke-width="2" marker-start="url(#level-mobile-arrow)" marker-end="url(#level-mobile-arrow)"/>
+        <path d="M313 148V285" fill="none" stroke="#285fdf" stroke-width="2" marker-start="url(#level-mobile-arrow)" marker-end="url(#level-mobile-arrow)"/>
+        <g font-family="Arial,sans-serif" fill="#17243a" font-size="20">
+          <text x="186" y="107">D</text><text x="186" y="129" font-size="18">1.8 m</text>
+          <text x="223" y="196">H</text><text x="203" y="219" font-size="18">6.0 m</text>
+          <text x="320" y="215">L</text><text x="258" y="243" font-size="18">4.2 m</text>
+          <text x="99" y="63" font-size="18">Fixed reference</text>
+          <text x="22" y="132" font-size="18">Surface</text><text x="25" y="278" font-size="18">Datum</text>
+        </g>
+      </svg><figcaption>Fixed top mounting · vertical measuring path · shared datum</figcaption></figure>
+      <div class="conversion-notes">{content.conversion.notes.map(item=><article><h4>{item.title}</h4><p>{item.text}</p></article>)}</div>
+    </div>
+    <ReferenceGeometry/>
+    <div class="installation-note"><span class="small-label">MOUNTING & COMMISSIONING</span><h3>A stable reference.<br/>A clear view of the target.</h3><p>{content.measurement.installation_text}</p></div>
+  </div></section>
+  <section class="section profile-section" id="operating-profile" aria-labelledby="profile-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">FROM A READING TO A RESPONSE</p><h2 id="profile-title">Measure. Report.<br/>Keep teams informed.</h2></div><p>{content.workflow.profile_text}</p></div>
+    <div class="radar-workflow">{content.workflow.steps.map(step=><article><span class="step-number">{step.number}</span><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
+    <div class="profile-note"><div><span class="small-label">POWER & REPORTING PROFILE</span><strong>Long-life monitoring.<br/>Matched to the task.</strong></div><p>{content.workflow.battery_text}</p></div>
+  </div></section>
+  <section class="section application-section" id="applications" aria-labelledby="applications-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">APPLICATIONS</p><h2 id="applications-title">{content.applicationSection.title}<br/><span>{content.applicationSection.valueHeading}</span></h2></div><p>{content.applicationSection.description}</p></div>
+    <div class="application-overview"><p><strong>{content.groups.length}</strong> industry categories <span aria-hidden="true">/</span> <strong>{content.applications.length}</strong> monitoring tasks</p><p class="image-note">{content.applicationSection.note}</p></div>
+    <nav class="application-jump-nav" aria-label="Browse radar distance sensor applications">{content.groups.map(group=><a href={'#group-'+group.id}>{group.jumpLabel}<span>{group.scenes.length}</span></a>)}</nav>
+    <p class="mounting-qualification">{content.applicationSection.mountingNote}</p>
+    <div class="application-groups">{groups.map((group,index)=><details class="application-group" id={'group-'+group.id} open={index===0}>
+      <summary><span><small>0{index+1}</small>{group.title}</span><span class="group-count">{group.scenes.length} applications <b aria-hidden="true">+</b></span></summary>
+      <div class="application-category-body">
+        <div class="application-visual"><div class="application-media-slot"><figure class="application-category-photo"><ApplicationPhoto image={group.image} asset={group.asset} product={hero} category={true}/><ImageCaption image={group.image}/></figure></div><p>{group.intro}</p></div>
+        <div class="application-task-list">{group.tasks.map((scene,taskIndex)=><details class="application-task" id={scene.id} open={index===0&&taskIndex===0}>
+          <summary aria-controls={'scene-photo-'+scene.id}><span class="task-heading"><h3>{scene.title}</h3>{scene.configurationLabel && <small class="configuration-label">{scene.configurationLabel}</small>}<small>{scene.tagline}</small></span><span class="task-toggle" aria-hidden="true">+</span></summary>
+          <div class="task-copy"><figure class="application-scene-photo" id={'scene-photo-'+scene.id} data-scene-owner={scene.id}><ApplicationPhoto image={scene.image} asset={scene.asset} product={hero}/><ImageCaption image={scene.image}/></figure><p>{scene.description}</p><dl><dt>What is measured</dt><dd>{scene.measured}</dd><dt>Installation point</dt><dd>{scene.point}</dd><dt>Project requirements</dt><dd>{scene.requirements}</dd></dl><a href="#enquiry" class="task-cta" data-project-scene={scene.title}>Discuss this application <span aria-hidden="true">↗</span></a></div>
+        </details>)}</div>
+      </div>
+    </details>)}</div>
+  </div></section>
+  <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">SERIES & CONFIGURATIONS</p><h2 id="specifications-title">One radar family.<br/><span>Configured for your site.</span></h2></div><p>{content.series.description}</p></div>
+    <div class="series-model-list" id="radar-series"><span class="small-label">PUBLISHED FAMILY IDENTIFIERS</span>{content.series.models.map(model=><span class="model-pill">{model}</span>)}</div>
+    <div class="radar-series">{content.series.connectivity.map(item=><article><div class="model-heading"><span class="small-label">WIRELESS OPTION</span><span class="radio-badge">{item.id}</span></div><h3>{item.title}</h3><p>{item.description}</p><a href="#enquiry" class="text-link" data-radio={item.id}>Discuss {item.id} ↗</a></article>)}</div>
+    <div class="radar-spec-grid"><aside class="model-card"><span class="small-label">PUBLISHED MODEL REFERENCE</span><h3 id="model-h310-mw012">H310-MW012</h3><p>{content.specifications.description}</p><a href={content.specifications.datasheet_url} class="button button-outline">Download datasheet ↗</a><a href="#enquiry" class="text-link">Discuss your configuration ↓</a></aside><div class="spec-table"><table><caption>H310-MW012 radar distance sensor — published model reference</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
+    <div class="custom-sensing"><div><p class="eyebrow">APPLICATION-LED CUSTOMIZATION</p><h3>The configuration your site needs.</h3><p>Start with the surface or target. Review range, measuring path, device form and mounting together, then match power, connectivity and platform integration.</p></div><div class="custom-sensing-grid">{content.customSensing.map(item=><article><h4>{item.name}</h4><p>{item.text}</p></article>)}</div></div>
+    <div class="selection-list"><h3>Bring the specification back to your project.</h3><div>{content.series.steps.map((step,index)=><article><span class="step-number">0{index+1}</span><h4>{step.title}</h4><p>{step.text}</p></article>)}</div></div>
+  </div></section>
+  <section class="section integration-section" id="integration" aria-labelledby="integration-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">CONNECTIVITY & INTEGRATION</p><h2 id="integration-title">Your measurement points.<br/><span>Your data destination.</span></h2></div><p>{content.workflow.platform_text}</p></div>
+    <div class="integration-grid">
+      <article><span class="small-label">HITELECOM CLOUD</span><h3>For your operations team</h3><div class="route-flow"><span>Radar reading</span><b aria-hidden="true">→</b><span>Wireless path</span><b aria-hidden="true">→</b><span>Cloud view</span></div><p>Associate each reading with its tank, silo, target or site. Review distance, the agreed level conversion, trends and configured alerts in the connected monitoring view.</p><ul><li>Device and measurement-point identity</li><li>Distance, unit, timestamp and configured level reference</li><li>Thresholds, recipients and response workflow</li></ul></article>
+      <article><span class="small-label">CUSTOMER PLATFORM</span><h3>For your existing workflow</h3><div class="route-flow"><span>Distance data</span><b aria-hidden="true">→</b><span>Agreed integration</span><b aria-hidden="true">→</b><span>Your platform</span></div><p>Bring radar readings into your own operations view. Agree the cellular MQTT endpoint or selected LoRa integration, authentication, payload and any level or inventory calculation.</p><ul><li>Endpoint, network path and authentication</li><li>Reading fields, units and measurement reference</li><li>Vessel geometry or tank table where required</li></ul></article>
+    </div>
+    <div class="integration-handover"><h3>Make the first reading useful.</h3><p>Check a sample message against a known target distance. Confirm the reference, units, timestamps and any level calculation, then test the notification path with the team responsible for the site.</p><a href="#enquiry" class="text-link">Discuss platform integration ↗</a></div>
+  </div></section>
+  <section class="section faq-section" id="faq" aria-labelledby="faq-title"><div class="wrap faq-layout"><div class="faq-intro"><p class="eyebrow">ANSWERS FOR YOUR PROJECT</p><h2 id="faq-title">Frequently<br/>asked questions.</h2><p>{content.faqHeading.intro}</p><a href="#enquiry" class="text-link">Ask about your project ↗</a></div><div class="faq-list">{content.faqs.map((faq,index)=><details id={faq.id} open={index===0}><summary>{faq.question}<span aria-hidden="true">+</span></summary><div class="faq-answer">{faq.paragraphs.map(paragraph=><p>{paragraph}</p>)}</div></details>)}</div></div></section>
+  <section class="section enquiry-section" id="enquiry" aria-labelledby="enquiry-title"><div class="wrap enquiry-layout">
+    <div class="enquiry-intro"><p class="eyebrow">LET'S TALK ABOUT YOUR PROJECT</p><h2 id="enquiry-title">Your measuring point.<br/><span>Our next conversation.</span></h2><p class="lead">Tell us what you need to measure and where. We’ll help match the target, range, mounting, wireless connection and platform to your project.</p><a class="contact-email" href="mailto:sales@hitelecom.cn">sales@hitelecom.cn ↗</a><div class="enquiry-benefits"><h3>Start with a site photo or drawing.</h3><p>Show the vessel or target, available mounting position and nearest and farthest distances. Include your update requirements and destination platform.</p></div></div>
+    <form id="enquiry-form" action="mailto:sales@hitelecom.cn" method="post" enctype="text/plain">
+      <div class="form-heading"><span class="small-label">PROJECT ENQUIRY</span><h3>Let’s find your configuration.</h3><p>Target & range · Mounting · Wireless option</p></div>
+      <div class="form-fields">
+        <div class="field"><label for="application">Application <span aria-hidden="true">*</span></label><select id="application" name="Application" required><option value="">Choose your application</option>{content.groups.map(group=><optgroup label={group.title}>{content.applications.filter(scene=>scene.group===group.id).map(scene=><option value={scene.title}>{scene.title}</option>)}</optgroup>)}<option>Other / project-specific</option></select></div>
+        <div class="field"><label for="country">Country / installation site <span aria-hidden="true">*</span></label><input id="country" name="Country / installation site" required autocomplete="country-name" placeholder="e.g. UK water site / factory in Spain" maxlength="160"/></div>
+        <div class="field"><label for="medium">Target / material</label><input id="medium" name="Target / material" placeholder="e.g. water surface, grain, equipment target" maxlength="160"/></div>
+        <div class="field"><label for="radar-range-input">Nearest & farthest measuring distances</label><input id="radar-range-input" name="Distance requirement" placeholder="e.g. 0.8–6 m from the installed sensor" maxlength="200"/></div>
+        <div class="field"><label for="quantity">Estimated quantity</label><input id="quantity" name="Quantity" type="number" min="1" step="1" inputmode="numeric" placeholder="e.g. 20 monitoring points"/></div>
+        <div class="field"><label for="wireless-option">Wireless preference</label><select id="wireless-option" name="Wireless preference"><option>Please advise</option>{content.series.connectivity.map(item=><option data-radio-id={item.id}>{item.id}</option>)}</select></div>
+        <div class="field full"><label for="requirements">What would you like to monitor?</label><textarea id="requirements" name="Requirements" rows="3" maxlength="3000" placeholder="Mounting height, vessel dimensions, site conditions, sampling/reporting needs, platform and any project requirements"></textarea></div>
+      </div>
+      <div class="form-actions"><button type="submit" class="button button-primary">Prepare my enquiry ↗</button><p>Review your brief, then send it with your email app.</p></div>
+      <div id="enquiry-review" class="enquiry-review" hidden><label for="enquiry-brief">Your project brief</label><textarea id="enquiry-brief" rows="9" spellcheck="false"></textarea><div><a id="email-brief" class="button button-primary" href="mailto:sales@hitelecom.cn">Open email ↗</a><button id="copy-brief" type="button" class="button button-outline">Copy brief</button></div><p id="brief-status" role="status" aria-live="polite">Your brief is ready to review.</p></div>
+      <p class="noscript-note">You can also <a href="mailto:sales@hitelecom.cn?subject=H%20Series%20radar%20distance%20sensor%20project">email your project details directly</a>.</p>
+    </form>
+  </div></section>
+  <div class="wrap related-products"><p class="small-label">CONTINUE YOUR MONITORING PROJECT</p><a href="https://www.hitelecom.com/product">Explore all sensors ↗</a><a href="https://www.hitelecom.com/product/pressure-sensor">Pressure monitoring ↗</a><a href="https://www.hitelecom.com/product/liquid-level-sensor">Submersible level monitoring ↗</a></div>
+</div></div>
+<script>import './radar-interactions.js';</script>
