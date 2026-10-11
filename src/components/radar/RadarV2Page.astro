@@ -1,9 +1,11 @@
 ---
 /**
- * 雷达测距传感器页 V2 · EN 包装器（GPT6 页面包，Kimi 审核集成 2026-10-11）
- * 同 URL 上线：/product/radar-distance-sensor（slug 不变，hreflang 闭环 /
- * sitemap / 内链均由路由层原有逻辑覆盖；es/de/ja/fr/ru/zh 仍走经典模板，翻译包未到位）。
- * 数据：src/data/radar-content.json；样式：radar.css（.ht-radar 作用域，独立路由隔离打包）。
+ * 雷达测距传感器页 V2 · 多语言注册表（GPT6 页面包 + 五语翻译包 V53，Kimi 审核集成 2026-10-11）
+ * 同 URL 上线：/{lang}/product/radar-distance-sensor（slug 不变，hreflang 闭环 /
+ * sitemap / 内链均由路由层原有逻辑覆盖）。zh 不在本轮范围（保持经典模板）。
+ * 用法：EN 路由省略 locale（默认 en）；其余语言 locale="es|de|ja|fr|ru"。
+ * 数据：src/data/radar-content(-{lang}).json；词典：dicts.mjs；
+ * 样式：radar.css（.ht-radar 作用域，独立路由隔离打包）。
  * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
  * Schema（includeOrganization={false}，统一引用 /#organization）。
  * Hero 响应式 preload（imagesrcset/imagesizes 与 img 一致）经 head 槽输出，
@@ -14,15 +16,35 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import RadarPage from './RadarPage.astro';
 import StructuredData from './StructuredData.astro';
 import { assetImage } from './images.mjs';
-import content from '../../data/radar-content.json';
+import { RADAR_DICTS } from './dicts.mjs';
+import contentEn from '../../data/radar-content.json';
+import contentEs from '../../data/radar-content-es.json';
+import contentDe from '../../data/radar-content-de.json';
+import contentJa from '../../data/radar-content-ja.json';
+import contentFr from '../../data/radar-content-fr.json';
+import contentRu from '../../data/radar-content-ru.json';
 import '../../styles/radar.css';
+
+const REGISTRY = {
+  en: { content: contentEn, prefix: '' },
+  es: { content: contentEs, prefix: '/es' },
+  de: { content: contentDe, prefix: '/de' },
+  ja: { content: contentJa, prefix: '/ja' },
+  fr: { content: contentFr, prefix: '/fr' },
+  ru: { content: contentRu, prefix: '/ru' },
+};
+
+const { locale = 'en' } = Astro.props;
+const { content, prefix } = REGISTRY[locale] ?? REGISTRY.en;
+const t = RADAR_DICTS[locale] ?? RADAR_DICTS.en;
+
 const hero = await assetImage('product-hero.webp', true);
 const ogImage = new URL(hero.src, Astro.site).href;
 const heroSizes = '(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px';
 ---
 
-<BaseLayout locale="en" title={content.seo.title} description={content.seo.description}>
+<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description}>
   <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
-  <StructuredData slot="head" content={content} imageUrl={ogImage} includeOrganization={false} />
-  <RadarPage />
+  <StructuredData slot="head" content={content} imageUrl={ogImage} t={t} locale={locale} prefix={prefix} includeOrganization={false} />
+  <RadarPage content={content} t={t} prefix={prefix} />
 </BaseLayout>

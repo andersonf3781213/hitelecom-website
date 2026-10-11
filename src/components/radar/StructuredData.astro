@@ -1,33 +1,34 @@
 ---
-const {content,imageUrl,includeOrganization=true}=Astro.props;
-const url='https://www.hitelecom.com/product/radar-distance-sensor';
+const {content,imageUrl,t={},locale='en',prefix='',includeOrganization=true}=Astro.props;
+const S=(key)=>(Object.prototype.hasOwnProperty.call(t,key)?t[key]:key);
+const url='https://www.hitelecom.com'+prefix+'/product/radar-distance-sensor';
 const orgId='https://www.hitelecom.com/#organization';
 const groupId=url+'#radar-series';
 const modelId=url+'#model-h310-mw012';
 const property=(name,value)=>({'@type':'PropertyValue',name,value});
 const graph=[
   ...(includeOrganization?[{'@type':'Organization','@id':orgId,name:'Hitelecom',legalName:'Shanghai Hitelecom Communication Technology Co., Ltd.',url:'https://www.hitelecom.com',email:'sales@hitelecom.cn'}]:[]),
-  {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:'en',dateModified:'2026-10-11',publisher:{'@id':orgId},mainEntity:{'@id':groupId}},
+  {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:locale,dateModified:'2026-10-11',publisher:{'@id':orgId},mainEntity:{'@id':groupId}},
   {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[
-    {'@type':'ListItem',position:1,name:'Home',item:'https://www.hitelecom.com'},
-    {'@type':'ListItem',position:2,name:'IoT Sensors',item:'https://www.hitelecom.com/product'},
-    {'@type':'ListItem',position:3,name:'Radar Distance Sensor',item:url}
+    {'@type':'ListItem',position:1,name:S('Home'),item:'https://www.hitelecom.com'+prefix},
+    {'@type':'ListItem',position:2,name:S('IoT Sensors'),item:'https://www.hitelecom.com'+prefix+'/product'},
+    {'@type':'ListItem',position:3,name:S('Radar Distance Sensor'),item:url}
   ]},
-  {'@type':'ProductGroup','@id':groupId,productGroupID:'H-Series-Radar-Distance-Sensors',name:'Hitelecom H Series Wireless Radar Distance Sensors',description:content.hero.description,url,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},hasVariant:[{'@id':modelId}],additionalProperty:[
-    property('Measured quantity','Distance to a selected surface or target'),
-    property('Family wireless options','4G / NB-IoT / LoRa, selected by configuration'),
-    property('Application configuration','Target, range, mounting reference, power and reporting profile selected for the project')
+  {'@type':'ProductGroup','@id':groupId,productGroupID:'H-Series-Radar-Distance-Sensors',name:S('Hitelecom H Series Wireless Radar Distance Sensors'),description:content.hero.description,url,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},hasVariant:[{'@id':modelId}],additionalProperty:[
+    property(S('Measured quantity'),S('Distance to a selected surface or target')),
+    property(S('Family wireless options'),S('4G / NB-IoT / LoRa, selected by configuration')),
+    property(S('Application configuration'),S('Target, range, mounting reference, power and reporting profile selected for the project'))
   ]},
-  {'@type':'Product','@id':modelId,name:'Hitelecom H310-MW012 Radar Distance Sensor',model:'H310-MW012',description:content.specifications.description,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},isVariantOf:{'@id':groupId},url:modelId,additionalProperty:[
-    property('Measuring range','0.3–12 m'),
-    property('Published accuracy','±1 mm under 25°C Hitelecom laboratory conditions'),
-    property('Reading resolution','1 mm'),
-    property('Beam angle','<20° published model reference'),
-    property('Enclosure protection','IP68'),
-    property('Operating temperature','−30°C to +75°C'),
-    property('Battery-life reference','More than 10 years at two-hour reporting; actual service life depends on configuration and operating conditions')
+  {'@type':'Product','@id':modelId,name:S('Hitelecom H310-MW012 Radar Distance Sensor'),model:'H310-MW012',description:content.specifications.description,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},isVariantOf:{'@id':groupId},url:modelId,additionalProperty:[
+    property(S('Measuring range'),S('0.3–12 m')),
+    property(S('Published accuracy'),S('±1 mm under 25°C Hitelecom laboratory conditions')),
+    property(S('Reading resolution'),S('1 mm')),
+    property(S('Beam angle'),S('<20° published model reference')),
+    property(S('Enclosure protection'),S('IP68')),
+    property(S('Operating temperature'),S('−30°C to +75°C')),
+    property(S('Battery-life reference'),S('More than 10 years at two-hour reporting; actual service life depends on configuration and operating conditions'))
   ]},
-  {'@type':'FAQPage','@id':url+'#faq',inLanguage:'en',mainEntity:content.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
+  {'@type':'FAQPage','@id':url+'#faq',inLanguage:locale,mainEntity:content.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
 ];
 ---
 <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/</g,'\\u003c')}/>
