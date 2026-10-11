@@ -1,0 +1,1626 @@
+{
+  "seo": {
+    "title": "High-Frequency Vibration Sensor for Machinery | Hitelecom",
+    "description": "Hitelecom high-frequency vibration sensors: 0–50 mm/s velocity RMS, 10–5,000 Hz, single-axis or triaxial sensing and 4G, NB-IoT or LoRa reporting."
+  },
+  "hero": {
+    "description": "The Hitelecom H Series vibration sensor combines a cabled external probe with a wireless terminal for high-frequency machinery monitoring. Mount the probe on a rigid motor bearing-housing point and send configured readings to your maintenance team. Select single-axis or triaxial sensing, with a vibration velocity RMS range of 0–50 mm/s, a display resolution of 0.1 mm/s and a measurement frequency range of 10–5,000 Hz. Match 4G, NB-IoT or LoRa connectivity and the reporting profile to your installation.",
+    "datasheet_url": "/downloads/vibration-sensor-datasheet.pdf"
+  },
+  "features": [
+    {
+      "title": "Probe at the machine",
+      "text": "Place the cabled external probe at the selected mechanical point while locating the terminal for practical access and radio coverage."
+    },
+    {
+      "title": "Vibration velocity RMS",
+      "text": "Measure vibration velocity RMS from 0–50 mm/s with a display resolution of 0.1 mm/s. Choose single-axis or triaxial sensing for the machine and measurement objective."
+    },
+    {
+      "title": "10–5,000 Hz measurement range",
+      "text": "Monitor machinery vibration within a 10–5,000 Hz measurement frequency range. Match the probe mounting and acquisition profile to the frequencies relevant to your equipment."
+    },
+    {
+      "title": "Wireless remote reporting",
+      "text": "Use the supplied 4G, NB-IoT or LoRa variant to connect distributed measurement points to the agreed monitoring platform."
+    },
+    {
+      "title": "Configured alert workflow",
+      "text": "Define project thresholds, notification recipients and the inspection response around the selected metric and normal operating conditions."
+    },
+    {
+      "title": "Practical device setup",
+      "text": "NFC activation, local configuration and OTA updates are listed for the family. Confirm the functions available on the supplied model."
+    }
+  ],
+  "measurement": {
+    "description": "A useful machine trend starts with a repeatable point, a clearly defined value and the operating conditions behind it. Agree these together before selecting the probe and reporting profile.",
+    "cards": [
+      {
+        "title": "Vibration velocity RMS",
+        "text": "Root mean square (RMS) vibration velocity is expressed in mm/s. The measurement range is 0–50 mm/s, with a display resolution of 0.1 mm/s. Compare readings at the same machine point under comparable operating conditions.",
+        "project_brief": "Single-axis or triaxial · Mounting point · Operating speed · Normal baseline"
+      },
+      {
+        "title": "Measurement frequency range",
+        "text": "The specified measurement frequency range is 10–5,000 Hz. This describes the vibration frequencies measured by the probe; choose the wireless reporting interval separately to suit your maintenance workflow.",
+        "project_brief": "Relevant machine frequencies · Probe mounting · Acquisition profile · Reporting interval"
+      },
+      {
+        "title": "Operating context",
+        "text": "Machine speed, load and production stage give each comparison its context. Capture these in the monitoring plan or available site records.",
+        "project_brief": "RPM range · Load state · Production cycle · Normal baseline"
+      }
+    ],
+    "installation_text": "Mount the external probe directly on an approved rigid motor bearing housing or end-shield measurement pad near the selected bearing. Choose the sensing direction for a single-axis configuration, or define the three-axis orientation for a triaxial configuration. Secure the probe cable with suitable strain relief, clear of rotating parts and hot surfaces. Mount the wireless terminal separately within its environmental limits and verify coverage at that position. Follow the supplied probe mounting method, cable specification and installation drawing."
+  },
+  "workflow": {
+    "profile_text": "Acquisition defines how vibration is measured; reporting defines when the terminal sends data. Set the measurement band, acquisition requirements, reporting interval and alert response as one operating profile.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Measure",
+        "text": "The external probe measures at the labelled machine point. Match the supplied measurement quantity, frequency band and acquisition settings to the monitoring objective."
+      },
+      {
+        "number": "02",
+        "title": "Report",
+        "text": "The terminal sends the configured readings through the selected cellular or LoRa connection. Agree the reporting schedule and complete platform path."
+      },
+      {
+        "number": "03",
+        "title": "Review & respond",
+        "text": "Compare like operating states, review configured notifications and give the maintenance team an agreed inspection step. Record the result for the next comparison."
+      }
+    ],
+    "battery_text": "The published battery-life reference exceeds 10 years at one-hour reporting under specified conditions. This reference belongs to the configured terminal operating profile. Actual life depends on the supplied battery, probe and acquisition duty, reporting schedule, radio coverage, retransmissions and temperature. Request the life estimate for the complete configuration you intend to deploy.",
+    "platform_text": "Connect configured readings to Hitelecom Cloud or a compatible customer platform. MQTT is listed in the family specification. Agree the message format, endpoint and supported authentication with the selected radio variant and onward connection."
+  },
+  "applicationSection": {
+    "title": "Machinery across your operation.",
+    "valueHeading": "A clear point for every project.",
+    "description": "Explore 48 practical monitoring tasks across eight machinery families. Each task identifies a fixed probe point, the operating context to compare and the details that help specify a suitable configuration.",
+    "note": "Photos illustrate machinery environments. Select the actual point, probe band and installation with your machine engineer."
+  },
+  "groups": [
+    {
+      "id": "motors-drives",
+      "title": "Electric motors & factory drives",
+      "jumpLabel": "Motors & drives",
+      "intro": "Compare vibration trends at selected fixed motor measurement points across production lines, power packs and rotating drive systems.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Electric motor bearing housing with a rigid stationary end shield",
+        "caption": "Motor bearing-housing environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "production-motor",
+        "variable-speed-motor",
+        "hydraulic-powerpack",
+        "injection-moulding-drive",
+        "generator-alternator",
+        "motor-test-bench"
+      ]
+    },
+    {
+      "id": "pumps-water",
+      "title": "Pumps & water systems",
+      "jumpLabel": "Pumps & water",
+      "intro": "Place the probe near the motor or pump bearing path and relate changes to flow, pressure and operating duty.",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "Dry-mounted centrifugal pumps and motor drives at a water pumping station",
+        "caption": "Water-pump machinery environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "booster-pumps",
+        "wastewater-dry-pumps",
+        "vertical-pump-motors",
+        "cooling-water-pumps",
+        "sanitary-process-pumps",
+        "chemical-transfer-pumps"
+      ]
+    },
+    {
+      "id": "fans-air-systems",
+      "title": "Fans, ventilation & air systems",
+      "jumpLabel": "Fans & ventilation",
+      "intro": "Monitor fixed fan-drive and bearing locations rather than blades, flexible ducts or building movement.",
+      "image": {
+        "name": "ahu-fan.webp",
+        "alt": "Air-handling fan assembly with accessible fixed motor and fan bearing housings",
+        "caption": "Air-handling fan machinery · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "ahu-fans",
+        "industrial-exhaust",
+        "dust-extraction-fan",
+        "combustion-air-fan",
+        "drying-process-fan",
+        "aeration-blower-drive"
+      ]
+    },
+    {
+      "id": "compressors-vacuum",
+      "title": "Compressors & vacuum machinery",
+      "jumpLabel": "Compressors & vacuum",
+      "intro": "Keep the measurement point close to a stationary bearing region and match the sensing specification to the compressor duty.",
+      "image": {
+        "name": "air-compressors.webp",
+        "alt": "Industrial enclosed air compressor installations in a utility room",
+        "caption": "Compressed-air equipment environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "screw-air-compressor",
+        "reciprocating-compressor",
+        "refrigeration-compressor",
+        "rotary-vane-vacuum",
+        "dry-screw-vacuum",
+        "process-gas-compressor"
+      ]
+    },
+    {
+      "id": "gearboxes-handling",
+      "title": "Gearboxes, conveyors & intralogistics",
+      "jumpLabel": "Gearboxes & conveyors",
+      "intro": "Measure the selected drive or bearing path. Operating speed, material load and motion cycles provide context for comparison.",
+      "image": {
+        "name": "gearbox-conveyor.webp",
+        "alt": "Industrial conveyor with a stationary gearbox and electric drive motor",
+        "caption": "Conveyor gearbox environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "belt-conveyor-drive",
+        "screw-conveyor-drive",
+        "bucket-elevator-drive",
+        "crossbelt-sorter-drive",
+        "asrs-hoist-drive",
+        "extruder-gearbox"
+      ]
+    },
+    {
+      "id": "machine-tools-metals",
+      "title": "Machine tools & metal production",
+      "jumpLabel": "Machine tools & metals",
+      "intro": "Record local machine vibration in the relevant production state, with mounting and cable protection matched to the working environment.",
+      "image": {
+        "name": "cnc-spindle.webp",
+        "alt": "Industrial CNC machine spindle with a fixed spindle housing and guarded machining space",
+        "caption": "Machine-tool spindle environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "cnc-spindle",
+        "lathe-headstock",
+        "grinding-spindle",
+        "industrial-saw-spindle",
+        "rolling-line-drive",
+        "press-drive-bearings"
+      ]
+    },
+    {
+      "id": "process-food-pharma",
+      "title": "Process, food, pharmaceutical & paper machinery",
+      "jumpLabel": "Process production",
+      "intro": "Support production-maintenance routines with local machinery trends, while reviewing process duty, cleanability and mounting access.",
+      "image": {
+        "name": "mixer-drive.webp",
+        "alt": "Industrial vessel mixer with an external fixed electric motor and gearbox",
+        "caption": "External mixer drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "industrial-mixer-drive",
+        "decanter-centrifuge",
+        "centrifugal-separator",
+        "filling-capping-drives",
+        "pharma-vacuum-dryer",
+        "paper-calender-bearings"
+      ]
+    },
+    {
+      "id": "heavy-processing",
+      "title": "Crushing, grinding & heavy processing",
+      "jumpLabel": "Heavy processing",
+      "intro": "Select the rotating drive or fixed bearing housing for machinery monitoring, with range and installation reviewed against normal process excitation.",
+      "image": {
+        "name": "crusher-bearing.webp",
+        "alt": "Industrial crusher with a stationary shaft bearing housing and drive assembly",
+        "caption": "Crusher bearing-housing environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "crusher-bearing-housing",
+        "pulverizer-mill-drive",
+        "industrial-shredder-drive",
+        "screen-exciter-bearing",
+        "cement-mill-gearbox",
+        "wood-chipper-bearings"
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "production-motor",
+      "group": "motors-drives",
+      "title": "Production-line electric motors",
+      "description": "Track changes at a motor's bearing housing and give maintenance teams a repeatable reference for routine inspection.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Fixed motor end shield near the drive-end bearing.",
+      "installation": "Use an approved rigid point, document the sensing direction, and route the probe cable outside the coupling guard.",
+      "projectBrief": "Motor rating, RPM, load pattern, bearing positions and a mounting photo.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Electric motor bearing housing with a rigid stationary end shield",
+        "caption": "Motor bearing-housing environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "variable-speed-motor",
+      "group": "motors-drives",
+      "title": "Variable-speed motor drives",
+      "description": "Compare readings within matching speed and load windows so normal changes in operating duty remain visible in the trend.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Accessible drive-end or non-drive-end bearing housing.",
+      "installation": "Identify operating-speed bands before defining a baseline and keep the sensing position consistent after maintenance.",
+      "projectBrief": "Speed range, operating states, duty cycle and the data available from the drive.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Electric motor bearing housing with a rigid stationary end shield",
+        "caption": "Motor bearing-housing environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "id": "hydraulic-powerpack",
+      "group": "motors-drives",
+      "title": "Hydraulic power-pack motors",
+      "description": "Observe the electric motor that drives a hydraulic power unit and support checks during comparable pressure-demand cycles.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Motor bearing housing on the stationary power-pack assembly.",
+      "installation": "Record pump load and motor duty; mount the probe to the motor rather than the reservoir sheet metal.",
+      "projectBrief": "Power-pack layout, motor speed, hydraulic operating cycle and cable route.",
+      "image": {
+        "name": "hydraulic-power.webp",
+        "alt": "Hydraulic power pack with an electric motor and pump mounted above a reservoir",
+        "caption": "Hydraulic power-pack environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "id": "injection-moulding-drive",
+      "group": "motors-drives",
+      "title": "Injection-moulding hydraulic drives",
+      "description": "Follow motor-side vibration through repeatable moulding cycles and help prioritise drive inspection alongside production records.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Fixed bearing region of the hydraulic-drive motor.",
+      "installation": "Choose an accessible stationary point and compare the same cycle phase, avoiding hoses and removable guards.",
+      "projectBrief": "Machine type, drive arrangement, cycle stages and maintenance access.",
+      "image": {
+        "name": "hydraulic-power.webp",
+        "alt": "Hydraulic power pack with an electric motor and pump mounted above a reservoir",
+        "caption": "Hydraulic power-pack environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "id": "generator-alternator",
+      "group": "motors-drives",
+      "title": "Generator alternator bearings",
+      "description": "Build a vibration history for a generator's rotating electrical machine at defined operating load and speed.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Accessible fixed alternator bearing housing.",
+      "installation": "Separate alternator monitoring from engine-frame vibration and confirm permissible temperature, range and cable protection.",
+      "projectBrief": "Alternator layout, normal speed, load range and environmental conditions.",
+      "image": {
+        "name": "generator-alternator.webp",
+        "alt": "Industrial generator and alternator with accessible stationary bearing housings",
+        "caption": "Generator and alternator environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S15"
+      ]
+    },
+    {
+      "id": "motor-test-bench",
+      "group": "motors-drives",
+      "title": "Motor end-of-line test benches",
+      "description": "Record comparable vibration readings during a defined run test to support an agreed inspection or acceptance workflow.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "A repeatable rigid point on the test motor housing.",
+      "installation": "Fix the speed, load and mounting method in the test procedure; use acceptance limits approved for the motor.",
+      "projectBrief": "Test sequence, expected amplitude, required metric and repeatable fixture layout.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Electric motor bearing housing with a rigid stationary end shield",
+        "caption": "Motor bearing-housing environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "booster-pumps",
+      "group": "pumps-water",
+      "title": "Municipal water booster pumps",
+      "description": "Track selected motor and pump points across duty and standby units to support maintenance planning at pumping stations.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Stationary motor end shield or accessible pump bearing housing.",
+      "installation": "Label each point separately and compare like operating conditions; keep cable loops clear of couplings.",
+      "projectBrief": "Pump layout, speed, flow/pressure duty and the number of monitoring points.",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "Dry-mounted centrifugal pumps and motor drives at a water pumping station",
+        "caption": "Water-pump machinery environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "id": "wastewater-dry-pumps",
+      "group": "pumps-water",
+      "title": "Wastewater pumping-station drives",
+      "description": "Observe accessible dry-mounted pump and motor assemblies and compare trends alongside pumping-cycle records.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Dry accessible motor or pump bearing housing.",
+      "installation": "Review moisture, cleaning chemicals and connector protection; a submerged installation needs separate qualification.",
+      "projectBrief": "Dry or submerged arrangement, pumping cycle, site moisture and permitted access.",
+      "image": {
+        "name": "wastewater-pumps.webp",
+        "alt": "Dry wastewater pump assemblies with accessible motor and bearing regions",
+        "caption": "Dry wastewater pump environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8"
+      ]
+    },
+    {
+      "id": "vertical-pump-motors",
+      "group": "pumps-water",
+      "title": "Vertical pump motor bearings",
+      "description": "Monitor a selected fixed bearing region on a vertical pump's motor and record changes during normal running duty.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Motor bearing housing above the pump structure.",
+      "installation": "Document the selected direction and distinguish the motor's local reading from whole-pump or foundation movement.",
+      "projectBrief": "Vertical assembly drawing, motor speed, bearing positions and supported measurement band.",
+      "image": {
+        "name": "vertical-pump.webp",
+        "alt": "Vertical pump motor with a stationary motor housing above the pump",
+        "caption": "Vertical pump motor environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8",
+        "S1"
+      ]
+    },
+    {
+      "id": "cooling-water-pumps",
+      "group": "pumps-water",
+      "title": "Process cooling-water circulation",
+      "description": "Maintain a vibration trend for circulation pumps that support manufacturing equipment and compare readings at stable process demand.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Accessible pump and motor bearing-housing points.",
+      "installation": "Select rigid housings instead of connected pipework and record operating state when duty pumps change over.",
+      "projectBrief": "Pump type, speed, water temperature and duty/standby strategy.",
+      "image": {
+        "name": "scene-outdoor-pumping.webp",
+        "alt": "Dry accessible motor-pump assemblies at an outdoor water pumping installation",
+        "caption": "Outdoor pumping machinery environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "id": "sanitary-process-pumps",
+      "group": "pumps-water",
+      "title": "Food and beverage process pumps",
+      "description": "Observe motor-side or bearing-housing vibration on a sanitary pumping line while keeping the installation outside the product-contact path.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed drive or bearing housing.",
+      "installation": "Agree hygienic mounting, washdown exposure and cable cleaning; assess the complete probe-and-connector assembly.",
+      "projectBrief": "Cleaning method, process temperature, mounting approval and pump operating states.",
+      "image": {
+        "name": "sanitary-pump.webp",
+        "alt": "Stainless-steel sanitary centrifugal pump and external motor drive",
+        "caption": "Sanitary process-pump environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S9"
+      ]
+    },
+    {
+      "id": "chemical-transfer-pumps",
+      "group": "pumps-water",
+      "title": "Chemical transfer pumps in approved areas",
+      "description": "Compare vibration changes on compatible pump drives and use the result alongside pressure, flow and maintenance records.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Accessible fixed bearing housing outside the fluid path.",
+      "installation": "Review chemical exposure, temperature and area classification before selecting the probe, terminal and cable.",
+      "projectBrief": "Chemical environment, hazardous-area classification, speed and approved installation point.",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "Dry-mounted centrifugal pump and motor drive showing a fixed machinery measurement region",
+        "caption": "Dry centrifugal-pump environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "id": "ahu-fans",
+      "group": "fans-air-systems",
+      "title": "Air-handling-unit fan drives",
+      "description": "Follow the vibration of a ventilation fan's drive and bearing arrangement to support inspection of occupied-building services.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Fixed motor or fan bearing housing inside the approved service area.",
+      "installation": "Keep the probe clear of the impeller and belt path; distinguish drive-side measurement from cabinet-panel vibration.",
+      "projectBrief": "Direct or belt drive, fan speed, service access and cable route.",
+      "image": {
+        "name": "ahu-fan.webp",
+        "alt": "Air-handling fan assembly with accessible fixed motor and fan bearing housings",
+        "caption": "Air-handling fan machinery · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "id": "industrial-exhaust",
+      "group": "fans-air-systems",
+      "title": "Industrial exhaust fans",
+      "description": "Trend selected fan-bearing points during consistent extraction duty and help maintenance teams identify changes worth inspecting.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Stationary fan bearing pedestal or motor bearing housing.",
+      "installation": "Review contamination and access conditions; mount outside the airflow path on an approved rigid surface.",
+      "projectBrief": "Fan design, RPM, normal duty, dust/chemical exposure and bearing layout.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Industrial centrifugal fan and external drive motor beside its fixed bearing housing",
+        "caption": "Centrifugal fan drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "id": "dust-extraction-fan",
+      "group": "fans-air-systems",
+      "title": "Dust-collection fan motors",
+      "description": "Monitor the fixed motor or fan bearings of a dust-extraction system as part of machine-maintenance routines.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "External bearing housing on the motor or fan drive.",
+      "installation": "Confirm combustible-dust classification where relevant and keep cabling away from belts and hot or abrasive surfaces.",
+      "projectBrief": "Dust type, area classification, fan-drive layout and expected vibration range.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Industrial centrifugal fan and external drive motor beside its fixed bearing housing",
+        "caption": "Centrifugal fan drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14",
+        "S15"
+      ]
+    },
+    {
+      "id": "combustion-air-fan",
+      "group": "fans-air-systems",
+      "title": "Combustion-air fan drives",
+      "description": "Track local vibration at an auxiliary fan drive and compare readings across documented operating demand.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Accessible stationary motor or fan bearing housing.",
+      "installation": "Check the actual surface temperature and cable environment; place the terminal away from excessive radiant heat.",
+      "projectBrief": "Fan speed/load, surface temperature, heat exposure and mounting access.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Industrial centrifugal fan and external drive motor beside its fixed bearing housing",
+        "caption": "Centrifugal fan drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S14"
+      ]
+    },
+    {
+      "id": "drying-process-fan",
+      "group": "fans-air-systems",
+      "title": "Industrial drying-system fans",
+      "description": "Observe fan-drive condition trends that help maintenance teams plan inspections around drying-line production.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Fixed drive bearing region outside the heated process chamber.",
+      "installation": "Review heat, moisture and process contamination; choose a rigid point instead of thin ductwork.",
+      "projectBrief": "Dryer layout, fan duty, temperature at the mounting point and cable path.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Industrial centrifugal fan and external drive motor beside its fixed bearing housing",
+        "caption": "Centrifugal fan drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13",
+        "S3"
+      ]
+    },
+    {
+      "id": "aeration-blower-drive",
+      "group": "fans-air-systems",
+      "title": "Water-treatment aeration blower drives",
+      "description": "Record repeatable vibration trends at an aeration blower's motor and drive bearings while documenting its process demand.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Accessible fixed motor or blower bearing housing.",
+      "installation": "Separate local drive readings from pipe pulsation and relate comparisons to speed and aeration duty.",
+      "projectBrief": "Blower type, speed, pressure demand, moisture and drive arrangement.",
+      "image": {
+        "name": "aeration-blower.webp",
+        "alt": "Water-treatment aeration blower and electric motor with fixed bearing housings",
+        "caption": "Aeration blower machinery · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8",
+        "S7"
+      ]
+    },
+    {
+      "id": "screw-air-compressor",
+      "group": "compressors-vacuum",
+      "title": "Rotary screw air compressors",
+      "description": "Track vibration near the compressor's bearings and compare changes across stable operating and loading states.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved compressor casing point close to a radial bearing.",
+      "installation": "Confirm the required frequency band and temperature; avoid assuming that the motor point represents the entire air end.",
+      "projectBrief": "Air-end layout, speed/load range, mounting temperature and required measurement band.",
+      "image": {
+        "name": "air-compressors.webp",
+        "alt": "Industrial enclosed air compressor installations in a utility room",
+        "caption": "Compressed-air equipment environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S10"
+      ]
+    },
+    {
+      "id": "reciprocating-compressor",
+      "group": "compressors-vacuum",
+      "title": "Reciprocating compressor drives",
+      "description": "Observe local vibration trends at a drive or bearing region while recording the compressor's normal cyclic duty.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed drive bearing housing or crankcase point.",
+      "installation": "Review normal process impulses and amplitude headroom before agreeing a baseline and measurement location.",
+      "projectBrief": "Compressor type, speed, load stages, expected amplitude and safe access.",
+      "image": {
+        "name": "reciprocating-compressor.webp",
+        "alt": "Industrial reciprocating compressor with stationary drive and bearing housings",
+        "caption": "Compressor machinery environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "refrigeration-compressor",
+      "group": "compressors-vacuum",
+      "title": "Industrial refrigeration compressors",
+      "description": "Follow a compatible compressor drive's vibration trend to support planned inspection of a refrigeration plant.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Accessible approved fixed casing or external bearing region.",
+      "installation": "Review compressor design, surface temperature, refrigerant-area rules and the approved mechanical interface.",
+      "projectBrief": "Compressor configuration, speed, loading steps, temperature and installation approval.",
+      "image": {
+        "name": "refrigeration-compressor.webp",
+        "alt": "Industrial refrigeration compressor assembly with stationary drive and casing",
+        "caption": "Industrial refrigeration compressor · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S7",
+        "S10"
+      ]
+    },
+    {
+      "id": "rotary-vane-vacuum",
+      "group": "compressors-vacuum",
+      "title": "Rotary-vane vacuum pumps",
+      "description": "Compare local drive and housing vibration during matching vacuum-process states and use changes to guide equipment checks.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed housing near the rotating assembly's bearing path.",
+      "installation": "Document the pump's load state and protect the cable from oil, heat and moving service components.",
+      "projectBrief": "Vacuum-pump type, operating speed, process cycle and temperature.",
+      "image": {
+        "name": "vacuum-pump.webp",
+        "alt": "Industrial vacuum pump and fixed electric motor drive in a clean equipment room",
+        "caption": "Vacuum-pump drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S7",
+        "S12"
+      ]
+    },
+    {
+      "id": "dry-screw-vacuum",
+      "group": "compressors-vacuum",
+      "title": "Dry-screw vacuum systems",
+      "description": "Trend selected stationary measurement points on a dry-screw vacuum system for maintenance review across comparable production cycles.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved housing point near the monitored bearing region.",
+      "installation": "Review process contamination and the required frequency band, keeping the radio terminal in a suitable service location.",
+      "projectBrief": "Pump layout, speed/load profile, chemical exposure and desired trend interval.",
+      "image": {
+        "name": "vacuum-pump.webp",
+        "alt": "Industrial vacuum pump and fixed electric motor drive in a clean equipment room",
+        "caption": "Vacuum-pump drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "id": "process-gas-compressor",
+      "group": "compressors-vacuum",
+      "title": "Process-gas compressors in approved areas",
+      "description": "Use a qualified installation to observe machinery vibration on a selected process-compressor drive or bearing location.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed compressor or motor bearing-housing point.",
+      "installation": "Select the complete assembly against the area's certification and temperature requirements before installation.",
+      "projectBrief": "Gas environment, area classification, machine layout and operating states.",
+      "image": {
+        "name": "reciprocating-compressor.webp",
+        "alt": "Industrial reciprocating compressor with stationary drive and bearing housings",
+        "caption": "Compressor machinery environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "id": "belt-conveyor-drive",
+      "group": "gearboxes-handling",
+      "title": "Belt-conveyor drive gearboxes",
+      "description": "Track local gearbox and motor vibration at a conveyor drive and compare the same transport-duty conditions over time.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Fixed gearbox housing near an input or output bearing.",
+      "installation": "Choose the monitored shaft path and keep the cable clear of pulleys, belts and maintenance openings.",
+      "projectBrief": "Drive layout, gearbox stages, speed range and material-load pattern.",
+      "image": {
+        "name": "gearbox-conveyor.webp",
+        "alt": "Industrial conveyor with a stationary gearbox and electric drive motor",
+        "caption": "Conveyor gearbox environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S15"
+      ]
+    },
+    {
+      "id": "screw-conveyor-drive",
+      "group": "gearboxes-handling",
+      "title": "Screw-conveyor gearmotors",
+      "description": "Observe a screw feeder's external drive vibration to support inspection without placing sensing hardware in the material path.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Accessible fixed reducer or motor bearing housing.",
+      "installation": "Record feed rate and material load, and review dust classification and cable abrasion where relevant.",
+      "projectBrief": "Material type, drive speed, duty cycle and approved external mounting point.",
+      "image": {
+        "name": "screw-conveyor.webp",
+        "alt": "Industrial screw conveyor with a fixed external geared motor",
+        "caption": "Screw-conveyor geared drive · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S14"
+      ]
+    },
+    {
+      "id": "bucket-elevator-drive",
+      "group": "gearboxes-handling",
+      "title": "Bucket-elevator drive systems",
+      "description": "Maintain a trend at the elevator's drive gearbox or motor bearing region to support accessible machinery inspection.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Fixed drive housing at an approved service point.",
+      "installation": "Separate drive monitoring from tower movement and keep the installation outside the bucket and belt path.",
+      "projectBrief": "Gearmotor arrangement, access platform, speed/load profile and environmental exposure.",
+      "image": {
+        "name": "roller-drive.webp",
+        "alt": "Bucket elevator installation with its external stationary motor and gearbox drive",
+        "caption": "Bucket-elevator drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S14"
+      ]
+    },
+    {
+      "id": "crossbelt-sorter-drive",
+      "group": "gearboxes-handling",
+      "title": "Cross-belt sorter drives",
+      "description": "Observe selected stationary drive bearings and compare vibration within repeatable sorter operating cycles.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed drive-motor or gearbox housing.",
+      "installation": "Use a stationary serviceable point; record operating stage and secure the cable outside the sorting mechanism.",
+      "projectBrief": "Sorter layout, drive cycles, speed states and available stationary mounting points.",
+      "image": {
+        "name": "crossbelt-sorter.webp",
+        "alt": "Cross-belt sorting line with its stationary external drive and supporting frame",
+        "caption": "Cross-belt sorting drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "asrs-hoist-drive",
+      "group": "gearboxes-handling",
+      "title": "Automated storage and retrieval drives",
+      "description": "Track a selected hoist or travel drive's machinery vibration while documenting repeatable lift or travel cycles.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed drive gearbox or motor bearing region.",
+      "installation": "Review cable management on moving assemblies and interpret drive readings with the same load and motion phase.",
+      "projectBrief": "Machine travel, drive location, cycle stages, cable-management system and payload.",
+      "image": {
+        "name": "asrs-hoist.webp",
+        "alt": "Automated storage and retrieval stacker crane with fixed hoist motor and gearbox",
+        "caption": "ASRS hoist-drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "id": "extruder-gearbox",
+      "group": "gearboxes-handling",
+      "title": "Extruder drive gearboxes",
+      "description": "Compare gearbox vibration under defined process load to support inspection of an extruder's rotating drive components.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Fixed gearbox housing close to an identified shaft bearing.",
+      "installation": "Review multiple gearbox stages, speed and temperature; agree the point rather than treating one reading as the full gearbox condition.",
+      "projectBrief": "Gearbox drawing, process load, speeds, mounting temperature and selected bearing path.",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "Industrial reducer and electric motor on a rigid machinery base",
+        "caption": "Industrial gearbox environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "id": "cnc-spindle",
+      "group": "machine-tools-metals",
+      "title": "CNC machining-centre spindles",
+      "description": "Follow selected spindle-housing vibration during repeatable machining or run-test conditions to support tooling and machine inspection.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved stationary spindle housing near a bearing region.",
+      "installation": "Keep the probe off rotating tooling; review process vibration, coolant, chips and the required measurement bandwidth.",
+      "projectBrief": "Spindle speeds, cutting/run-test stages, amplitude expectations and permitted mounting point.",
+      "image": {
+        "name": "cnc-spindle.webp",
+        "alt": "Industrial CNC machine spindle with a fixed spindle housing and guarded machining space",
+        "caption": "Machine-tool spindle environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "lathe-headstock",
+      "group": "machine-tools-metals",
+      "title": "Industrial lathe headstocks",
+      "description": "Compare headstock vibration at a repeatable fixed point during matching speed and machining duty.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Stationary headstock housing near the monitored spindle bearing.",
+      "installation": "Keep clear of the chuck and stock; label the sensing direction and document idle or cutting state.",
+      "projectBrief": "Spindle layout, speed range, machining operations and mounting access.",
+      "image": {
+        "name": "lathe-headstock.webp",
+        "alt": "Industrial lathe with a stationary headstock housing and guarded machining area",
+        "caption": "Lathe headstock environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "grinding-spindle",
+      "group": "machine-tools-metals",
+      "title": "Grinding-machine spindle housings",
+      "description": "Track local spindle vibration across defined grinding duty and use the history to plan inspection of rotating components.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed spindle bearing-housing point.",
+      "installation": "Review abrasive dust, coolant, normal process excitation and amplitude range before selecting the measurement setup.",
+      "projectBrief": "Grinding spindle speed, process cycle, environment and desired metric.",
+      "image": {
+        "name": "grinding-spindle.webp",
+        "alt": "Industrial grinding machine with stationary spindle housing and protective guards",
+        "caption": "Grinding spindle environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "id": "industrial-saw-spindle",
+      "group": "machine-tools-metals",
+      "title": "Industrial sawing spindle drives",
+      "description": "Record vibration at a fixed spindle or drive housing during comparable cutting operations and maintenance run tests.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved stationary bearing housing outside the blade path.",
+      "installation": "Protect the cable from swarf and cutting motion; compare the same blade, speed and process stage.",
+      "projectBrief": "Saw configuration, speed, cutting duty, chip exposure and approved mounting location.",
+      "image": {
+        "name": "industrial-saw.webp",
+        "alt": "Industrial metal sawing machine with fixed drive housing and protective guards",
+        "caption": "Industrial sawing drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "rolling-line-drive",
+      "group": "machine-tools-metals",
+      "title": "Metal rolling-line drive motors",
+      "description": "Observe a selected rolling-line motor or reducer bearing path and relate trends to documented production loads.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Fixed motor or reducer bearing housing outside the roll path.",
+      "installation": "Review heat and water spray and select local drive points rather than measuring whole-line or foundation motion.",
+      "projectBrief": "Drive layout, speed/load range, temperature, spray exposure and measurement objective.",
+      "image": {
+        "name": "metal-rolling.webp",
+        "alt": "Metal-processing roll equipment with fixed bearing housings and motor drives",
+        "caption": "Metal-processing drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "id": "press-drive-bearings",
+      "group": "machine-tools-metals",
+      "title": "Press drive and flywheel bearings",
+      "description": "Track an approved stationary drive-bearing point during repeatable production phases to support routine machinery checks.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Fixed drive or flywheel bearing housing outside the moving mechanism.",
+      "installation": "Assess normal stamping impulses and measurement headroom; keep the installation outside guarded movement and compare the same cycle phase.",
+      "projectBrief": "Press type, cycle stages, expected impulses, selected bearing point and approved access.",
+      "image": {
+        "name": "press-drive.webp",
+        "alt": "Industrial press with fixed drive bearing supports and guarded flywheel assembly",
+        "caption": "Industrial press drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "industrial-mixer-drive",
+      "group": "process-food-pharma",
+      "title": "Industrial mixer drive assemblies",
+      "description": "Observe the motor and reducer's local vibration during matching mixing recipes and batch loads.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved external fixed drive bearing housing.",
+      "installation": "Mount outside the vessel and product-contact path and record batch stage, agitator speed and fill level.",
+      "projectBrief": "Mixer configuration, recipes, load stages, cleanability and permitted external mounting point.",
+      "image": {
+        "name": "mixer-drive.webp",
+        "alt": "Industrial vessel mixer with an external fixed electric motor and gearbox",
+        "caption": "External mixer drive environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S12"
+      ]
+    },
+    {
+      "id": "decanter-centrifuge",
+      "group": "process-food-pharma",
+      "title": "Decanter centrifuge bearing housings",
+      "description": "Trend selected fixed centrifuge bearing points and interpret changes with bowl speed, material feed and operating state.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed main bearing housing.",
+      "installation": "Review normal process excitation and multiple vibration sources; select points and data requirements with the machine engineer.",
+      "projectBrief": "Centrifuge layout, speeds, feed states, amplitude range and service access.",
+      "image": {
+        "name": "decanter-centrifuge.webp",
+        "alt": "Industrial decanter centrifuge with its fixed external bearing housings",
+        "caption": "Centrifuge machinery environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S18"
+      ]
+    },
+    {
+      "id": "centrifugal-separator",
+      "group": "process-food-pharma",
+      "title": "Centrifugal separator drives",
+      "description": "Observe a separator's approved stationary drive or bearing location to support maintenance review during stable production duty.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Fixed bearing housing or approved stationary drive casing.",
+      "installation": "Keep clear of the rotating bowl and review the required band, operating state and hygienic installation rules.",
+      "projectBrief": "Separator design, speed, process stages, cleaning requirements and bearing layout.",
+      "image": {
+        "name": "centrifugal-separator.webp",
+        "alt": "Vertical centrifugal separator with a stationary external machinery housing",
+        "caption": "Centrifugal separator environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S18",
+        "S9"
+      ]
+    },
+    {
+      "id": "filling-capping-drives",
+      "group": "process-food-pharma",
+      "title": "Filling and capping line drives",
+      "description": "Track local motor or gearbox vibration on a production line while comparing repeatable filling and capping duty.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed motor or reducer housing.",
+      "installation": "Keep the probe and cable outside packaging/product-contact areas and review washdown and cycle-dependent load.",
+      "projectBrief": "Line speed, drive locations, cycles, cleaning regime and monitoring points.",
+      "image": {
+        "name": "filling-capping.webp",
+        "alt": "Automated filling and capping line with accessible external motor drives",
+        "caption": "Filling and capping line environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S9",
+        "S12"
+      ]
+    },
+    {
+      "id": "pharma-vacuum-dryer",
+      "group": "process-food-pharma",
+      "title": "Pharmaceutical vacuum-dryer drives",
+      "description": "Observe an approved external drive point during documented drying stages to support equipment-maintenance records.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "External fixed motor or reducer bearing housing.",
+      "installation": "Review cleanroom rules, solvents, temperature and external mounting approval; agree data use with the site's engineering procedure.",
+      "projectBrief": "Dryer arrangement, process stages, area classification and cleanability requirements.",
+      "image": {
+        "name": "vacuum-dryer-drive.webp",
+        "alt": "Pharmaceutical vacuum dryer with its external fixed motor and reduction gearbox",
+        "caption": "Vacuum-dryer external drive · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S12"
+      ]
+    },
+    {
+      "id": "paper-calender-bearings",
+      "group": "process-food-pharma",
+      "title": "Paper calender and roll bearings",
+      "description": "Record local vibration at selected stationary roll-bearing housings and compare equivalent paper-machine production states.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed roll-bearing housing on the service side.",
+      "installation": "Review actual surface temperature and moisture and confirm the frequency band for the selected roll speed.",
+      "projectBrief": "Roll speeds, bearing layout, surface temperature, wet exposure and access.",
+      "image": {
+        "name": "paper-calender.webp",
+        "alt": "Paper calender rollers supported by fixed service-side bearing housings",
+        "caption": "Paper calender bearing environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13"
+      ]
+    },
+    {
+      "id": "crusher-bearing-housing",
+      "group": "heavy-processing",
+      "title": "Crusher bearing housings",
+      "description": "Track a selected crusher bearing or drive point and compare trends against documented feed and operating conditions.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed shaft-bearing housing or drive motor housing.",
+      "installation": "Review normal crushing impacts, amplitude headroom, abrasive dust and mechanical cable protection before commissioning.",
+      "projectBrief": "Crusher type, load/feed states, expected amplitude and access to a fixed bearing point.",
+      "image": {
+        "name": "crusher-bearing.webp",
+        "alt": "Industrial crusher with a stationary shaft bearing housing and drive assembly",
+        "caption": "Crusher bearing-housing environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S14"
+      ]
+    },
+    {
+      "id": "pulverizer-mill-drive",
+      "group": "heavy-processing",
+      "title": "Pulverizer and grinding-mill drives",
+      "description": "Observe local motor or reducer vibration on a grinding line and relate readings to comparable feed and load states.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Accessible fixed drive bearing housing.",
+      "installation": "Identify the drive path, review temperature and dust, and keep cabling clear of rotating couplings and material handling.",
+      "projectBrief": "Mill type, drive speeds, feed conditions, temperature and area classification.",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "Industrial reducer and electric motor on a rigid machinery base",
+        "caption": "Industrial gearbox environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "id": "industrial-shredder-drive",
+      "group": "heavy-processing",
+      "title": "Industrial shredder drives",
+      "description": "Maintain a vibration history at selected shredder-drive bearings while recording the material and normal operating cycle.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed drive motor or reducer housing.",
+      "installation": "Review process impacts and headroom, and protect the probe cable from debris and moving maintenance components.",
+      "projectBrief": "Shredder design, materials, load cycle, expected impacts and bearing access.",
+      "image": {
+        "name": "shredder-drive.webp",
+        "alt": "Industrial shredder with fixed external gearbox and electric motor drives",
+        "caption": "Shredder machinery environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "screen-exciter-bearing",
+      "group": "heavy-processing",
+      "title": "Vibrating-screen exciter bearings",
+      "description": "Observe local rotating-exciter bearing vibration as a machinery trend at a defined stationary housing point.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved exciter or drive bearing housing.",
+      "installation": "Confirm band and amplitude for the selected bearing objective; the installation concerns local machinery rather than screen-body movement.",
+      "projectBrief": "Exciter layout, normal excitation, bearing point, range and required measurement band.",
+      "image": {
+        "name": "screen-exciter.webp",
+        "alt": "Industrial vibrating screen with local exciter shaft bearing housings",
+        "caption": "Screen exciter bearing environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S16"
+      ]
+    },
+    {
+      "id": "cement-mill-gearbox",
+      "group": "heavy-processing",
+      "title": "Cement-mill motor and gearbox bearings",
+      "description": "Track a selected mill-drive bearing path and use consistent production-load records to make trend comparisons useful.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved fixed motor or gearbox bearing-housing point.",
+      "installation": "Review multiple gear stages and normal process excitation, plus dust, heat and approved maintenance access.",
+      "projectBrief": "Drive drawing, speeds, load states, heat/dust exposure and selected bearing path.",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "Industrial reducer and electric motor on a rigid machinery base",
+        "caption": "Industrial gearbox environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14",
+        "S5"
+      ]
+    },
+    {
+      "id": "wood-chipper-bearings",
+      "group": "heavy-processing",
+      "title": "Wood-chipper drive bearings",
+      "description": "Observe a fixed drive or rotor-bearing housing and compare the vibration history within documented material-processing duty.",
+      "measurement": "Local machinery vibration at a defined fixed point",
+      "monitoringPoint": "Approved stationary drive or rotor-bearing housing.",
+      "installation": "Review normal cutting impulses and range, protecting cables from chips and keeping the probe outside the rotor guard.",
+      "projectBrief": "Chipper design, rotor speed, feed conditions, expected impulses and service point.",
+      "image": {
+        "name": "shredder-drive.webp",
+        "alt": "Industrial shredder with fixed external gearbox and electric motor drives",
+        "caption": "Shredder machinery environment · Illustrative scene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13",
+        "S4"
+      ]
+    }
+  ],
+  "series": {
+    "description": "H200, H300 and H500 are published H Series family identifiers. Specify the complete probe, terminal, wireless variant and operating profile in the configuration proposal for your project.",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "steps": [
+      {
+        "title": "Define the machine point",
+        "text": "Share the component, rigid mounting surface, measurement direction, speed range and normal load states."
+      },
+      {
+        "title": "Specify the measurement",
+        "text": "Select single-axis or triaxial sensing and specify the machine frequencies of interest within the 10–5,000 Hz measurement range. The vibration velocity RMS range is 0–50 mm/s with a display resolution of 0.1 mm/s. Agree acquisition duty, reporting and calibration requirements."
+      },
+      {
+        "title": "Plan the full deployment",
+        "text": "Review probe and cable conditions, terminal location, radio coverage, reporting, alerts and the platform handover."
+      }
+    ]
+  },
+  "specifications": {
+    "description": "Published family values provide a starting reference. The supplied probe, measurement definition and complete configuration determine the specification for your machine point. Request the usable band, acquisition settings, mounting drawing and calibration documentation with the proposal.",
+    "rows": [
+      {
+        "label": "Published family models",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "Vibration velocity RMS range",
+        "value": "0–50 mm/s"
+      },
+      {
+        "label": "Measurement frequency range",
+        "value": "10–5,000 Hz"
+      },
+      {
+        "label": "Measurement axes",
+        "value": "Single-axis or triaxial, by selected configuration"
+      },
+      {
+        "label": "Vibration velocity RMS display resolution",
+        "value": "0.1 mm/s"
+      },
+      {
+        "label": "Published accuracy condition",
+        "value": "±1% at 80 Hz calibration; confirm the full supplied measurement specification"
+      },
+      {
+        "label": "Sensing arrangement",
+        "value": "Cabled external probe at a rigid motor bearing-housing or machine measurement point"
+      },
+      {
+        "label": "Wireless variants",
+        "value": "4G / NB-IoT / LoRa, by supplied model and regional configuration"
+      },
+      {
+        "label": "Data integration",
+        "value": "MQTT listed; confirm the complete path for the supplied variant"
+      },
+      {
+        "label": "Terminal enclosure rating",
+        "value": "IP68; specify probe, cable and connector suitability separately"
+      },
+      {
+        "label": "Published operating temperature",
+        "value": "−20°C to +70°C; confirm component-specific limits for the installation"
+      },
+      {
+        "label": "Published storage temperature",
+        "value": "−20°C to +80°C"
+      },
+      {
+        "label": "Device configuration",
+        "value": "NFC activation / local setup; OTA updates, by supplied configuration"
+      },
+      {
+        "label": "Battery-life reference",
+        "value": "Over 10 years at one-hour reporting under specified conditions; configuration and duty dependent"
+      }
+    ]
+  },
+  "faqHeading": {
+    "intro": "Answers for specifying machinery measurement, planning the cabled probe installation and connecting readings to the maintenance workflow."
+  },
+  "faqs": [
+    {
+      "id": "faq-what-measures",
+      "question": "What does the Hitelecom machinery vibration sensor measure?",
+      "paragraphs": [
+        "The Hitelecom H Series uses a cabled external probe for high-frequency machinery vibration monitoring. Vibration velocity is reported as a root mean square (RMS) value over a 0–50 mm/s range, with a display resolution of 0.1 mm/s. The specified measurement frequency range is 10–5,000 Hz. Select single-axis or triaxial sensing for the machine and mounting point, then configure the wireless reporting profile."
+      ],
+      "sources": [
+        "U1",
+        "S1",
+        "S17"
+      ],
+      "evidence": "Product range, axes, velocity RMS display resolution and measurement frequency range confirmed directly by the user on 2026-10-11; public resources support mounting and metric terminology."
+    },
+    {
+      "id": "faq-where-motor",
+      "question": "Where should a vibration probe be mounted on an electric motor?",
+      "paragraphs": [
+        "Mount the probe directly on an approved rigid part of the motor bearing housing or end shield, close to the bearing being monitored. Use the supplied mounting method and a prepared measurement surface. Record the point identifier and the single-axis direction or triaxial orientation. Secure the cable and locate the wireless terminal separately for access and radio coverage."
+      ],
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "evidence": "Direct public manufacturer mounting and placement guidance."
+    },
+    {
+      "id": "faq-which-machines",
+      "question": "Which industrial machines are suitable for this monitoring approach?",
+      "paragraphs": [
+        "Common project candidates include electric motors, pumps, fans, compressors, gearboxes, conveyors, machine-tool spindles, mixers and centrifuges. Select a rigid, stationary measurement point near the component of interest, and match the supplied probe’s usable frequency band, range and installation conditions to the machine. This external-probe family is intended for high-frequency machinery vibration monitoring."
+      ],
+      "sources": [
+        "S3",
+        "S4",
+        "S7"
+      ],
+      "evidence": "Direct published machinery families; Hitelecom scope boundary comes from the user's instruction."
+    },
+    {
+      "id": "faq-probe-wireless",
+      "question": "How does a wired probe work with a wireless monitoring terminal?",
+      "paragraphs": [
+        "The probe cable connects the mechanical measurement point to the monitoring terminal. The configured 4G, NB-IoT or LoRa connection handles the remote data link. Plan the probe position, approved cable length and terminal location together, considering machine access, cable protection and radio coverage."
+      ],
+      "sources": [
+        "S17"
+      ],
+      "evidence": "Cable-installation demand is publicly documented; actual architecture and available radio options are Hitelecom product facts supplied by Root."
+    },
+    {
+      "id": "faq-frequency-specification",
+      "question": "What is the vibration measurement frequency range?",
+      "paragraphs": [
+        "The specified measurement frequency range is 10–5,000 Hz. This is the vibration frequency range measured at the probe, rather than a wireless reporting rate. The 80 Hz calibration condition is a separate calibration reference. Share the machine speed, target components and mounting arrangement so the acquisition and reporting profile can be matched to the application."
+      ],
+      "sources": [
+        "U1",
+        "S1",
+        "S2",
+        "S10"
+      ],
+      "evidence": "10–5,000 Hz confirmed directly by the user on 2026-10-11. Public technical guidance supports separating frequency response, mounting and acquisition settings."
+    },
+    {
+      "id": "faq-metric-definition",
+      "question": "Does the sensor support single-axis or triaxial vibration measurement?",
+      "paragraphs": [
+        "Yes. Single-axis and triaxial configurations are available. A single-axis configuration measures vibration along its selected sensing direction. A triaxial configuration measures along three axes at the same mounting point. Specify the configuration and mounting orientation for your machine; the vibration velocity RMS display resolution is 0.1 mm/s."
+      ],
+      "sources": [
+        "U1"
+      ],
+      "evidence": "Axes and RMS display resolution confirmed directly by the user on 2026-10-11. This replaces the previous broad metric-definition answer and does not claim peak or peak-to-peak outputs."
+    },
+    {
+      "id": "faq-variable-speed",
+      "question": "How should readings be compared on variable-speed or cyclic machines?",
+      "paragraphs": [
+        "Record the machine's speed, load and operating stage with the monitoring plan. Establish comparable baselines for the states that matter, such as a stable running speed or a repeatable production-cycle phase. Review changes against those conditions and the maintenance history so the trend supports a focused inspection."
+      ],
+      "sources": [
+        "S5",
+        "S6",
+        "S18"
+      ],
+      "evidence": "Operating-state importance is documented publicly; exact Hitelecom algorithms or automatic state synchronisation are not claimed."
+    },
+    {
+      "id": "faq-probe-installation",
+      "question": "What helps preserve a useful high-frequency measurement?",
+      "paragraphs": [
+        "Use the approved mounting method on a clean, flat, rigid measurement surface. Mechanical coupling affects the mounted frequency response, so the sensor interface and any mounting base should be reviewed for the target band. Secure the cable with strain relief and suitable slack, and route it safely around moving parts and motor-power wiring."
+      ],
+      "sources": [
+        "S2",
+        "S17"
+      ],
+      "evidence": "Direct public mounting and cabling technical guidance."
+    },
+    {
+      "id": "faq-maintenance-workflow",
+      "question": "How can vibration trends support the maintenance workflow?",
+      "paragraphs": [
+        "Agree a normal operating baseline, the values to review and a practical inspection response. A sustained change at a labelled measurement point can help the team prioritise checks and compare readings before and after maintenance. Detailed fault interpretation depends on the machine, the available measurement data and the analysis method used in the project."
+      ],
+      "sources": [
+        "S6",
+        "S17"
+      ],
+      "evidence": "Public documentation distinguishes trending/anomaly review from detailed machinery diagnosis; no Hitelecom diagnosis guarantee is introduced."
+    },
+    {
+      "id": "faq-quotation-details",
+      "question": "What information helps Hitelecom prepare a suitable configuration?",
+      "paragraphs": [
+        "Share the machine type, speed range, operating cycle, target components, photos of the proposed mounting points and whether you need single-axis or triaxial measurement. Include the environment, cable-route requirements, measurement/reporting intervals, country and preferred platform or communications link. These details help align the probe, terminal and data requirements with your installation."
+      ],
+      "sources": [
+        "S1",
+        "S2",
+        "S17"
+      ],
+      "evidence": "Practical specification checklist derived from public selection and installation considerations. This is an editorial buying-support question, not a verified customer FAQ."
+    }
+  ],
+  "evidence": {
+    "reviewed": "2026-10-11",
+    "officialPage": "https://www.hitelecom.com/product/vibration-sensor",
+    "officialDatasheet": "https://www.hitelecom.com/downloads/vibration-sensor-datasheet.pdf",
+    "scopeConfirmedBy": "User instruction: external cabled high-frequency machinery product; future low-frequency product separate",
+    "sources": [
+      {
+        "id": "S1",
+        "organization": "PCB Piezotronics",
+        "title": "Motor vibration sensors",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/motor-vibration",
+        "ref": "turn180view1",
+        "supports": "Motor monitoring; drive-end/non-drive-end bearing locations; mechanical coupling and output/processing considerations."
+      },
+      {
+        "id": "S2",
+        "organization": "PCB Piezotronics",
+        "title": "Guidelines for mounting test accelerometers",
+        "url": "https://www.pcb.com/resources/technical-information/mounting",
+        "ref": "turn180view0",
+        "supports": "A smooth rigid interface and stud mounting can preserve high-frequency response; added bases or soft interfaces change mounted response. Installation must follow the actual sensor instructions."
+      },
+      {
+        "id": "S3",
+        "organization": "ifm",
+        "title": "VVB vibration sensor applications",
+        "url": "https://www.ifm.com/us/en/us/learn-more/vibration/vvb0/io-link-vibration-applications",
+        "ref": "turn180view6",
+        "supports": "Electric motors, centrifugal pumps, direct/indirect-drive fans and reducers; locations near the monitored component; examples of separate motor and driven-equipment points."
+      },
+      {
+        "id": "S4",
+        "organization": "ifm",
+        "title": "Applications of diagnostic electronics and acceleration sensors",
+        "url": "https://www.ifm.com/in/en/shared/technologies/from-vibration-to-real-time-maintenance/vse-vsa-applications",
+        "ref": "turn180view3",
+        "supports": "Machine tools, decanters, compressors, gearboxes, storage/retrieval systems, cross-belt sorters, conveyors, fillers, mixers, shredders and mills. The sophisticated diagnostic capabilities described belong to ifm's specified complete system."
+      },
+      {
+        "id": "S5",
+        "organization": "SKF Technical Support",
+        "title": "On-line surveillance monitoring of gearboxes",
+        "url": "https://skftechnicalsupport.zendesk.com/hc/en-us/articles/360032626714-On-line-Surveillance-Monitoring-of-Gearboxes",
+        "ref": "turn180view4",
+        "supports": "Local transmission paths matter; complex gearboxes have overlapping sources and operating-speed/load variation. Single-point overall readings are not identical to component diagnosis."
+      },
+      {
+        "id": "S6",
+        "organization": "SKF Technical Support",
+        "title": "SKF Axios technical FAQ",
+        "url": "https://skftechnicalsupport.zendesk.com/hc/en-us/articles/8104349791891-SKF-Axios-Technical-FAQ",
+        "ref": "turn180view5",
+        "supports": "Public questions on machinery suitability, placement, variable speeds and inspection after anomaly notification. These are SKF's published FAQ, not Hitelecom customer questions."
+      },
+      {
+        "id": "S7",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Condition monitoring",
+        "url": "https://wilcoxon.com/industries-and-applications/condition-monitoring-products/",
+        "ref": "turn180view2",
+        "supports": "Established monitored machinery families include motors, pumps, fans, gearboxes and compressors."
+      },
+      {
+        "id": "S8",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Water and wastewater pump monitoring",
+        "url": "https://wilcoxon.com/industries-and-applications/water-and-wastewater/",
+        "ref": "turn184view3",
+        "supports": "Water/wastewater motor and pump monitoring, baseline/trending, direct-drive and vertical pump arrangements."
+      },
+      {
+        "id": "S9",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Food and beverage",
+        "url": "https://wilcoxon.com/industries-and-applications/food-and-beverage/",
+        "ref": "turn183view1",
+        "supports": "Motors, pumps, fillers, cappers and conveyor equipment in food/beverage production; environmental suitability is a separate selection requirement."
+      },
+      {
+        "id": "S10",
+        "organization": "PCB Piezotronics",
+        "title": "Rotary screw compressors",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/rotary-screw-compressors",
+        "ref": "turn184view4",
+        "supports": "High-frequency compressor applications; casing locations close to radial bearings; bandwidth must match the engineering objective."
+      },
+      {
+        "id": "S11",
+        "organization": "PCB Piezotronics",
+        "title": "Machine tool spindles",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/machine-tool-spindles",
+        "ref": "turn185view2",
+        "supports": "Machine-tool vibration trends; cutting-process vibration, cutting fluids, metal chips and cable protection considerations."
+      },
+      {
+        "id": "S12",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Pharmaceutical",
+        "url": "https://wilcoxon.com/industries-and-applications/pharmaceutical/",
+        "ref": "turn184view1",
+        "supports": "Mixers, motors, pumps, vacuum dryers, conveyor/filling drives; environment and contaminants require review."
+      },
+      {
+        "id": "S13",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Pulp and paper",
+        "url": "https://wilcoxon.com/industries-and-applications/pulp-and-paper/",
+        "ref": "turn184view2",
+        "supports": "Paper rollers, calenders, chippers, compressors, motors, pumps and winders; wet and heated environments need matching hardware."
+      },
+      {
+        "id": "S14",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Cement",
+        "url": "https://wilcoxon.com/industries-and-applications/cement/",
+        "ref": "turn183view0",
+        "supports": "Crushing, grinding, material transport, mills, separators, motors, fans and compressors in cement production."
+      },
+      {
+        "id": "S15",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Mining",
+        "url": "https://wilcoxon.com/industries-and-applications/mining/",
+        "ref": "turn184view0",
+        "supports": "Mining motors, gearboxes, conveyors, fans, generators and pumps; hazardous-area approvals belong to the actual selected equipment."
+      },
+      {
+        "id": "S16",
+        "organization": "PCB Piezotronics",
+        "title": "Vibratory screens and feeders",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/vibratory-screens-and-feeders",
+        "ref": "turn184view6",
+        "supports": "Screen/feeder machinery is an established vibration application; the proposed Hitelecom scene is restricted to drive/exciter bearing-housing trends and requires bandwidth/amplitude review."
+      },
+      {
+        "id": "S17",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Vibration monitoring FAQs",
+        "url": "https://wilcoxon.com/resources/faqs/",
+        "ref": "turn184view5",
+        "supports": "Metric/output distinctions, mounting, cable routing, strain relief, environmental effects and cable-length review are public engineering questions. Wilcoxon's example limits and hardware are not Hitelecom specifications."
+      },
+      {
+        "id": "S18",
+        "organization": "ifm",
+        "title": "Decanter centrifuges",
+        "url": "https://www.ifm.com/in/en/shared/landingpages/monitoring-decanters",
+        "ref": "turn180view7",
+        "supports": "Centrifuge vibration depends on multiple components and operating states; speed/process context supports interpretation."
+      }
+    ],
+    "notice": "The sources establish general machinery-monitoring practice and public engineering questions. These drafts are application proposals, not verified Hitelecom customer installations, and no search-volume or customer-enquiry-log evidence has been obtained.",
+    "userConfirmedSpecifications": {
+      "source": "User messages in this conversation, 2026-10-11",
+      "velocityRmsRange": "0–50 mm/s",
+      "measurementAxes": "Single-axis or triaxial",
+      "velocityRmsDisplayResolution": "0.1 mm/s",
+      "measurementFrequencyRange": "10–5,000 Hz",
+      "installationDiagram": "Probe directly on the motor bearing end shield; terminal separately mounted"
+    }
+  }
+}
