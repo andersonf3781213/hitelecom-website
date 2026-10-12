@@ -1,0 +1,103 @@
+---
+import content from '../../data/soil-content.json';
+import FeatureIcon from './FeatureIcon.astro';
+import ImageCaption from './ImageCaption.astro';
+// QuickContact 为 GPT6 离线审阅壳组件，不集成（README-KIMI；V64 同规）
+import { getImage } from 'astro:assets';
+import heroBackground from '../../assets/brand/sensor-hero-background.jpg';
+import { soilImage } from './images.mjs';
+const hero = await soilImage('product-hero.webp', true);
+const widths = [640,1280,1920];
+const backgrounds = await Promise.all(widths.map(width=>getImage({src:heroBackground,width,format:'webp',quality:78})));
+const groups = await Promise.all(content.groups.map(async group=>({...group,asset:await soilImage(group.image.name),tasks:await Promise.all(content.applications.filter(scene=>scene.group===group.id).map(async scene=>({...scene,image:scene.image||group.image,asset:await soilImage((scene.image||group.image).name)})))})));
+const datasheet = new URL(content.hero.datasheet_url, 'https://www.hitelecom.com').href;
+---
+<main id="main">
+  <div class="hero-band">
+    <img class="hero-background" src={backgrounds[2].src} srcset={backgrounds.map((x,i)=>`${x.src} ${widths[i]}w`).join(', ')} sizes="100vw" width={heroBackground.width} height={heroBackground.height} alt="" aria-hidden="true" loading="eager" decoding="async" />
+    <div class="wrap breadcrumb" aria-label="Breadcrumb"><a href="https://www.hitelecom.com">Home</a><span aria-hidden="true">/</span><a href="https://www.hitelecom.com/product">IoT sensors</a><span aria-hidden="true">/</span><span>Soil sensor</span></div>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-heading"><h1 id="hero-title">{content.hero.h1}<br/><span>{content.hero.value_heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</span></h1></div>
+      <figure class="hero-visual soil-product">
+        <img src={hero.src} srcset={hero.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 1024px) 42vw, 560px" width={hero.width} height={hero.height} alt="Hitelecom H Series soil sensor with separate soil probe, official product image" loading="eager" fetchpriority="high" decoding="async" />
+        <figcaption><span class="live-dot" aria-hidden="true"></span>H Series · Configuration selected for your project</figcaption>
+      </figure>
+      <p class="hero-description">{content.hero.description}</p>
+      <div class="hero-actions"><a href="#enquiry" class="button button-primary">{content.hero.primary_cta} <span aria-hidden="true">↗</span></a><a href={datasheet} target="_blank" rel="noopener" class="text-link">{content.hero.secondary_cta} <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-proof"><div><strong>0–100%</strong><span>Soil moisture range</span><small>Specify soil, depth and measurement basis</small></div><div><strong>Multi-parameter</strong><span>Configure the measurements you need</span><small>Channel list and probe by configuration</small></div><div><strong>Hitelecom platform</strong><span>Readings, trends and configured alerts</span><small>Hitelecom Cloud or compatible integration</small></div></div>
+    </section>
+  </div>
+  <nav class="section-nav" aria-label="On this page"><div class="wrap"><a href="#measurement">Measurement</a><a href="#applications">Applications</a><a href="#specifications">Specifications</a><a href="#integration">Integration</a><a href="#faq">FAQ</a><a class="nav-quote" href="#enquiry">Request a quote ↗</a></div></nav>
+
+  <section class="section features-section" id="features" aria-labelledby="features-title"><div class="wrap">
+    <div class="section-heading compact-heading"><div><p class="eyebrow">KEY FEATURES</p><h2 id="features-title">Know your soil.<br/><span>Connect the next decision.</span></h2></div><p>Bring the selected soil measurements, installation depth and data destination into one monitoring plan.</p></div>
+    <div class="feature-grid">{content.features.map((feature,index)=><article><span class="feature-mark" aria-hidden="true"><FeatureIcon index={index}/></span><h3>{feature.title}</h3><p>{feature.text}</p></article>)}</div>
+  </div></section>
+
+  <section class="section measurement-section" id="measurement" aria-labelledby="measurement-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">{content.measurement.eyebrow}</p><h2 id="measurement-title">{content.measurement.heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{i===0?line:<span>{line}</span>}</Fragment>)}</h2></div><p>{content.measurement.description}</p></div>
+    <div class="measurement-grid">{content.measurement.cards.map((item,index)=><article class="measurement-card"><div class="measurement-heading"><span class="measurement-number">0{index+1}</span><span class="measurement-symbol" aria-hidden="true">{item.symbol==='moisture'?'%':item.symbol==='chemistry'?'pH':'+'}</span></div><h3>{item.title}</h3><p>{item.text}</p><dl><dt>Define your measurement</dt><dd>{item.project_brief}</dd></dl><a href="#enquiry" class="text-link" data-measurement={item.title}>Discuss this measurement ↗</a></article>)}</div>
+    <div class="installation-note"><span class="small-label">SENSING & INSTALLATION</span><h3>{content.measurement.installation_heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</h3><p>{content.measurement.installation_text}</p></div>
+  </div></section>
+
+  <section class="section profile-section" id="operating-profile" aria-labelledby="profile-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">{content.workflow.eyebrow}</p><h2 id="profile-title">{content.workflow.heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</h2></div><p>{content.workflow.profile_text}</p></div>
+    <div class="soil-workflow">{content.workflow.steps.map(step=><article><span class="step-number">{step.number}</span><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
+    <div class="profile-note"><div><span class="small-label">REPORTING & POWER</span><strong>{content.workflow.battery_title}</strong></div><p>{content.workflow.battery_text}</p></div>
+  </div></section>
+
+  <section class="section application-section" id="applications" aria-labelledby="applications-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">APPLICATIONS</p><h2 id="applications-title">{content.applicationSection.title}<br/><span>{content.applicationSection.valueHeading}</span></h2></div><p>{content.applicationSection.description}</p></div>
+    <div class="application-overview"><p><strong>{content.groups.length}</strong> application categories <span aria-hidden="true">/</span> <strong>{content.applications.length}</strong> monitoring tasks</p><p class="image-note">{content.applicationSection.note}</p></div>
+    <nav class="application-jump-nav" aria-label="Browse soil monitoring applications">{content.groups.map(group=><a href={'#group-'+group.id}>{group.jumpLabel}<span>{group.scenes.length}</span></a>)}</nav>
+    <div class="application-groups">{groups.map((group,index)=><details class="application-group" id={'group-'+group.id} open={index===0}>
+      <summary><span><small>0{index+1}</small>{group.title}</span><span class="group-count">{group.scenes.length} monitoring tasks <b aria-hidden="true">+</b></span></summary>
+      <div class="application-category-body">
+        <div class="application-visual"><div class="application-media-slot"><figure class="application-category-photo"><img class="application-category-image" src={group.asset.src} srcset={group.asset.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={group.asset.width} height={group.asset.height} loading="lazy" decoding="async" alt={group.image.alt} style={'object-position:'+group.image.focalPoint}/><ImageCaption image={group.image}/></figure></div><p>{group.intro}</p></div>
+        <div class="application-task-list">{group.tasks.map((scene,taskIndex)=><details class="application-task" id={scene.id} open={index===0&&taskIndex===0}>
+          <summary aria-controls={'scene-photo-'+scene.id}><span class="task-heading"><h3>{scene.title}</h3><small>{scene.measurement}</small></span><span class="task-toggle" aria-hidden="true">+</span></summary>
+          <div class="task-copy"><figure class="application-scene-photo" id={'scene-photo-'+scene.id} data-scene-owner={scene.id}><img class="application-scene-image" src={scene.asset.src} srcset={scene.asset.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={scene.asset.width} height={scene.asset.height} loading="lazy" decoding="async" alt={scene.image.alt} style={'object-position:'+scene.image.focalPoint}/><ImageCaption image={scene.image}/></figure><p>{scene.description}</p><dl><dt>Measurements to observe</dt><dd>{scene.measurement}</dd><dt>Monitoring point</dt><dd>{scene.monitoringPoint}</dd><dt>Placement & installation</dt><dd>{scene.installation}</dd><dt>Project details</dt><dd>{scene.projectBrief}</dd></dl><a href="#enquiry" class="task-cta" data-project-scene={scene.title}>Discuss this application <span aria-hidden="true">↗</span></a></div>
+        </details>)}</div>
+      </div>
+    </details>)}</div>
+  </div></section>
+
+  <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">SERIES & CONFIGURATIONS</p><h2 id="specifications-title">{content.series.heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{i===0?line:<span>{line}</span>}</Fragment>)}</h2></div><p>{content.series.description}</p></div>
+    <div class="soil-series">{content.series.models.map(model=><article id={'model-'+model.toLowerCase()}><span class="small-label">MODEL FAMILY</span><h3>{model}</h3><p>{content.series.model_card_subtitle}</p><a href="#enquiry" class="text-link" data-model={model}>Discuss this configuration ↗</a></article>)}</div>
+    <div class="soil-spec-grid"><aside class="model-card"><span class="small-label">CONFIGURATION REFERENCE</span><h3>Choose measurements.<br/>Match the site.</h3><p>{content.specifications.description}</p><a href={datasheet} target="_blank" rel="noopener" class="button button-outline">Download family datasheet ↗</a><a href="#enquiry" class="text-link">Get a configuration proposal ↓</a></aside><div class="spec-table"><table><caption>H Series soil sensors — family configuration reference</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
+    <div class="selection-list"><h3>Bring the specification back to your project.</h3><div>{content.series.steps.map((step,index)=><article><span class="step-number">0{index+1}</span><h4>{step.title}</h4><p>{step.text}</p></article>)}</div></div>
+  </div></section>
+
+  <section class="section integration-section" id="integration" aria-labelledby="integration-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">CONNECTIVITY & INTEGRATION</p><h2 id="integration-title">{content.workflow.platform_title.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{i===0?line:<span>{line}</span>}</Fragment>)}</h2></div><p>{content.workflow.platform_text}</p></div>
+    <div class="integration-grid"><article><span class="small-label">4G / NB-IoT</span><h3>For distributed locations</h3><div class="route-flow"><span>Soil point</span><b aria-hidden="true">→</b><span>Mobile network</span><b aria-hidden="true">→</b><span>Your platform</span></div><p>Select the modem and regional bands around operator availability and coverage at the transmitter position. Agree the reporting profile, power arrangement and notification workflow.</p><ul><li>Installation country and operator</li><li>Signal at the actual mounting position</li><li>Sampling, reporting and required alert response</li></ul></article><article><span class="small-label">LoRa</span><h3>For points across one site</h3><div class="route-flow"><span>Soil points</span><b aria-hidden="true">→</b><span>Receiver / gateway</span><b aria-hidden="true">→</b><span>Your platform</span></div><p>Match the supplied radio protocol, regional settings and receiver or gateway. Specify any LoRaWAN requirement with the model and complete onward connection.</p><ul><li>Device protocol and gateway compatibility</li><li>Site layout and radio coverage</li><li>Gateway power and onward data connection</li></ul></article></div>
+    <div class="integration-handover"><h3>Make the first reading useful.</h3><p>Agree device identity, monitoring-point reference, channel names, measurement units and timestamps in a sample message. Check the endpoint and supported authentication, then test the complete path to the intended platform and recipients.</p><a href="#enquiry" class="text-link">Discuss platform integration ↗</a></div>
+  </div></section>
+
+  <section class="section faq-section" id="faq" aria-labelledby="faq-title"><div class="wrap faq-layout"><div class="faq-intro"><p class="eyebrow">{content.faqHeading.kicker}</p><h2 id="faq-title">{content.faqHeading.title || "Frequently asked questions."}</h2><p>{content.faqHeading.intro}</p><a href="#enquiry" class="text-link">Ask about your project ↗</a></div><div class="faq-list">{content.faqs.map((faq,index)=><details id={faq.id} open={index===0}><summary>{faq.question}<span aria-hidden="true">+</span></summary><div class="faq-answer">{faq.paragraphs.map(paragraph=><p>{paragraph}</p>)}</div></details>)}</div></div></section>
+
+  <section class="section enquiry-section" id="enquiry" aria-labelledby="enquiry-title"><div class="wrap enquiry-layout">
+    <div class="enquiry-intro"><p class="eyebrow">{content.inquiry.eyebrow}</p><h2 id="enquiry-title">{content.inquiry.heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{i===0?line:<span>{line}</span>}</Fragment>)}</h2><p class="lead">{content.inquiry.description}</p><a class="contact-email" href="mailto:sales@hitelecom.cn">sales@hitelecom.cn ↗</a><div class="enquiry-benefits"><h3>Your soil. Your project requirements.</h3><p>{content.inquiry.supporting_text}</p></div></div>
+    <form id="enquiry-form" action="mailto:sales@hitelecom.cn" method="post" enctype="text/plain"><div class="form-heading"><span class="small-label">PROJECT ENQUIRY</span><h3>Let’s define your soil configuration.</h3><p>Start with your application. Add the details you already know.</p></div>
+      <div class="form-fields">
+        <div class="field"><label for="application">Application <span aria-hidden="true">*</span></label><select id="application" name="Application" required><option value="">Choose your application</option>{content.groups.map(group=><optgroup label={group.title}>{content.applications.filter(scene=>scene.group===group.id).map(scene=><option value={scene.title}>{scene.title}</option>)}</optgroup>)}<option>Other / project-specific</option></select></div>
+        <div class="field"><label for="country">Country / region <span aria-hidden="true">*</span></label><input id="country" name="Country" required autocomplete="country-name" placeholder="e.g. United Kingdom" maxlength="100"/></div>
+        <div class="field"><label for="model">Model family</label><select id="model" name="Model"><option>Please advise</option>{content.series.models.map(model=><option>{model}</option>)}</select></div>
+        <div class="field"><label for="quantity">Estimated quantity</label><input id="quantity" name="Quantity" type="number" min="1" step="1" inputmode="numeric" placeholder="e.g. 20"/></div>
+        <div class="field full"><label for="measurements">Required measurements</label><input id="measurements" name="Measurements" placeholder="e.g. Soil moisture and soil temperature; add required channels" maxlength="400"/></div>
+      </div>
+      <details class="project-detail-fields"><summary>Soil, installation & data requirements <span aria-hidden="true">+</span></summary><div class="form-fields">
+        <div class="field full"><label for="soil-media">Soil or growing media</label><input id="soil-media" name="Soil or media" placeholder="e.g. Sandy loam, clay, peat-based substrate or green-roof media" maxlength="300"/></div>
+        <div class="field"><label for="monitoring-depth">Monitoring depth</label><input id="monitoring-depth" name="Monitoring depth" placeholder="e.g. 15 cm and 30 cm, or please advise" maxlength="200"/></div>
+        <div class="field"><label for="network">Preferred connectivity</label><select id="network" name="Connectivity"><option>Please advise</option><option>4G LTE</option><option>NB-IoT</option><option>LoRa</option></select></div>
+        <div class="field full"><label for="timing-platform">Sampling, reporting & platform requirements</label><input id="timing-platform" name="Timing and platform" placeholder="Required measurement / reporting intervals and receiving platform" maxlength="300"/></div>
+      </div></details>
+      <div class="field full project-message"><label for="requirements">What would you like to monitor?</label><textarea id="requirements" name="Requirements" rows="3" maxlength="3000" placeholder={content.inquiry.message_placeholder}></textarea></div>
+      <div class="form-actions"><button type="submit" class="button button-primary">{content.inquiry.submit_label} ↗</button><p>Review your brief, then send it with your email app.</p></div><div id="enquiry-review" class="enquiry-review" hidden><label for="enquiry-brief">Your project brief</label><textarea id="enquiry-brief" rows="9" spellcheck="false"></textarea><div><a id="email-brief" class="button button-primary" href="mailto:sales@hitelecom.cn">Open email ↗</a><button id="copy-brief" type="button" class="button button-outline">Copy brief</button></div><p id="brief-status" role="status" aria-live="polite">Your brief is ready to review.</p></div><p class="noscript-note">You can also <a href="mailto:sales@hitelecom.cn?subject=Soil%20sensor%20project">email your project details directly</a>.</p>
+    </form>
+  </div></section>
+  <div class="wrap related-products"><p class="small-label">CONTINUE YOUR MONITORING PROJECT</p><a href="https://www.hitelecom.com/product">Explore all sensors ↗</a><a href="https://www.hitelecom.com/product/temperature-sensor">Temperature monitoring ↗</a><a href="https://www.hitelecom.com/product/weather-station">Weather monitoring ↗</a></div>
+</main>
+
+<script>import './soil-interactions.js';</script>
