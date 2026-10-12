@@ -5256,7 +5256,7 @@ const productContentBase ={
      },
      {
       "icon": "product/details/270-f2-ip65.png",
-      "text": "IP65-Rated Enclosure"
+      "text": "IP55-Rated Enclosure"
      },
      {
       "icon": "product/details/270-f3.png",
@@ -5312,7 +5312,7 @@ const productContentBase ={
      ],
      [
       "Protection",
-      "IP65"
+      "IP55"
      ],
      [
       "Installation",
@@ -5347,7 +5347,7 @@ const productContentBase ={
      },
      {
       "name": "Protection",
-      "value": "IP65"
+      "value": "IP55"
      },
      {
       "name": "Installation",
@@ -5426,7 +5426,7 @@ const productContentBase ={
      }
     ],
     "certifications": [
-     "IP65"
+     "IP55"
     ],
     "faqs": [
      {
@@ -10840,7 +10840,7 @@ const productContentBase ={
         },
         {
           "icon": "product/details/270-f2-ip65.png",
-          "text": "IP65 高防护等级"
+          "text": "IP55 高防护等级"
         },
         {
           "icon": "product/details/270-f3.png",
@@ -10896,7 +10896,7 @@ const productContentBase ={
         ],
         [
           "防护等级",
-          "IP65"
+          "IP55"
         ],
         [
           "安装方式",
@@ -10930,7 +10930,7 @@ const productContentBase ={
         },
         {
           "name": "防护等级",
-          "value": "IP65"
+          "value": "IP55"
         },
         {
           "name": "安装方式",
@@ -11010,7 +11010,7 @@ const productContentBase ={
         }
       ],
       "certifications": [
-        "IP65"
+        "IP55"
       ],
       "faqs": [
         {
@@ -16486,7 +16486,7 @@ export const productContent = { ...productContentBase, de: {
      },
      {
       "icon": "product/details/270-f2-ip65.png",
-      "text": "Gehäuse der Schutzart IP65"
+      "text": "Gehäuse der Schutzart IP55"
      },
      {
       "icon": "product/details/270-f3.png",
@@ -16542,7 +16542,7 @@ export const productContent = { ...productContentBase, de: {
      ],
      [
       "Schutz",
-      "IP65"
+      "IP55"
      ],
      [
       "Montage",
@@ -16576,7 +16576,7 @@ export const productContent = { ...productContentBase, de: {
      },
      {
       "name": "Schutz",
-      "value": "IP65"
+      "value": "IP55"
      },
      {
       "name": "Montage",
@@ -16656,7 +16656,7 @@ export const productContent = { ...productContentBase, de: {
      }
     ],
     "certifications": [
-     "IP65"
+     "IP55"
     ],
     "faqs": [
      {
@@ -22127,7 +22127,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "icon": "product/details/270-f2-ip65.png",
-     "text": "IP65防護等級筐体"
+     "text": "IP55防護等級筐体"
     },
     {
      "icon": "product/details/270-f3.png",
@@ -22183,7 +22183,7 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "保護",
-     "IP65"
+     "IP55"
     ],
     [
      "取付",
@@ -22217,7 +22217,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "保護",
-     "value": "IP65"
+     "value": "IP55"
     },
     {
      "name": "取付",
@@ -22297,7 +22297,7 @@ export const productContent = { ...productContentBase, de: {
     }
    ],
    "certifications": [
-    "IP65"
+    "IP55"
    ],
    "faqs": [
     {
@@ -27768,7 +27768,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "icon": "product/details/270-f2-ip65.png",
-     "text": "Carcasa con clasificación IP65"
+     "text": "Carcasa con clasificación IP55"
     },
     {
      "icon": "product/details/270-f3.png",
@@ -27824,7 +27824,7 @@ export const productContent = { ...productContentBase, de: {
     ],
     [
      "Protección",
-     "IP65"
+     "IP55"
     ],
     [
      "Instalación",
@@ -27858,7 +27858,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "name": "Protección",
-     "value": "IP65"
+     "value": "IP55"
     },
     {
      "name": "Instalación",
@@ -27938,7 +27938,7 @@ export const productContent = { ...productContentBase, de: {
     }
    ],
    "certifications": [
-    "IP65"
+    "IP55"
    ],
    "faqs": [
     {
@@ -33411,7 +33411,7 @@ export const productContent = { ...productContentBase, de: {
      },
      {
       "icon": "product/details/270-f2-ip65.png",
-      "text": "Boîtier IP65"
+      "text": "Boîtier IP55"
      },
      {
       "icon": "product/details/270-f3.png",
@@ -33467,7 +33467,7 @@ export const productContent = { ...productContentBase, de: {
      ],
      [
       "Protection",
-      "IP65"
+      "IP55"
      ],
      [
       "Installation",
@@ -33501,7 +33501,7 @@ export const productContent = { ...productContentBase, de: {
      },
      {
       "name": "Protection",
-      "value": "IP65"
+      "value": "IP55"
      },
      {
       "name": "Installation",
@@ -33581,7 +33581,7 @@ export const productContent = { ...productContentBase, de: {
      }
     ],
     "certifications": [
-     "IP65"
+     "IP55"
     ],
     "faqs": [
      {
@@ -39053,7 +39053,7 @@ export const productContent = { ...productContentBase, de: {
      },
      {
       "icon": "product/details/270-f2-ip65.png",
-      "text": "Корпус IP65"
+      "text": "Корпус IP55"
      },
      {
       "icon": "product/details/270-f3.png",
@@ -39109,7 +39109,7 @@ export const productContent = { ...productContentBase, de: {
      ],
      [
       "Защита",
-      "IP65"
+      "IP55"
      ],
      [
       "Установка",
@@ -39143,7 +39143,7 @@ export const productContent = { ...productContentBase, de: {
      },
      {
       "name": "Защита",
-      "value": "IP65"
+      "value": "IP55"
      },
      {
       "name": "Установка",
@@ -39223,7 +39223,7 @@ export const productContent = { ...productContentBase, de: {
      }
     ],
     "certifications": [
-     "IP65"
+     "IP55"
     ],
     "faqs": [
      {
