@@ -1,0 +1,8 @@
+---
+const {product,measurement}=Astro.props;
+const referenceSrc=product.srcset.split(',')[0].trim().split(' ')[0];
+---
+<div class="application-voc-reference">
+  <img class="voc-product-reference-image" src={referenceSrc} width={product.width} height={product.height} loading="lazy" decoding="async" alt="Product reference: Hitelecom H Series TVOC monitor" />
+  <div><span class="small-label">TVOC AIR MONITORING</span><p>{measurement}</p><small>H Series product reference</small></div>
+</div>
