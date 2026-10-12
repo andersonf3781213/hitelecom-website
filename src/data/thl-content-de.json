@@ -1,0 +1,1652 @@
+{
+  "seo": {
+    "title": "Temperatur-, Luftfeuchte- und Lichtsensor | Hitelecom",
+    "description": "Drahtlose Überwachung von Temperatur, Luftfeuchte und Beleuchtungsstärke für Museen, Archive und Galerien. Vergleichen Sie H200 LoRa, H300 4G und H500 NB-IoT."
+  },
+  "hero": {
+    "description": "Der Sensor der Hitelecom H-Serie für Temperatur, Luftfeuchte und Beleuchtungsstärke misst die lokale Lufttemperatur, relative Luftfeuchte und Beleuchtungsstärke zur Überwachung von Innenräumen. Er wurde für Museen, Galerien, Archive und andere betreute Räumlichkeiten entwickelt und ermöglicht die Fernprüfung der Bedingungen an ausgewählten Messpunkten sowie konfigurierte Warnmeldungen. Kundenspezifische Sensorkonfigurationen können für zusätzliche Mess- und Installationsanforderungen abgestimmt werden. Wählen Sie H200 LoRa, H300 4G oder H500 NB-IoT und stimmen Sie anschließend die Sensoranordnung, Lichtmessung und das Übertragungsprofil auf Ihr Projekt ab.",
+    "datasheet_url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf"
+  },
+  "features": [
+    {
+      "title": "Temperatur. Luftfeuchte. Beleuchtungsstärke.",
+      "text": "Drei sich ergänzende Messgrößen helfen Teams, die Bedingungen im Umfeld von Sammlungen, gelagerten Materialien und genutzten Räumen zu verstehen."
+    },
+    {
+      "title": "Messen, wo es darauf ankommt",
+      "text": "Planen Sie Messpositionen in Ausstellungsbereichen, Vitrinen, Regalen und Raumzonen. Wählen Sie die Sensoranordnung für die Bedingungen, die Sie beobachten möchten."
+    },
+    {
+      "title": "Ihre Überwachungsziele",
+      "text": "Stimmen Sie Temperatur- und Luftfeuchtegrenzen mit den Verantwortlichen für den Raum oder die Sammlung ab und konfigurieren Sie anschließend den Ablauf für Warnmeldungen."
+    },
+    {
+      "title": "Drei drahtlose Optionen",
+      "text": "H200 LoRa, H300 4G und H500 NB-IoT unterstützen unterschiedliche Standortnetze und Bereitstellungspläne."
+    },
+    {
+      "title": "Kundenspezifische Sensoren für Ihr Projekt",
+      "text": "Stimmen Sie Messkanäle, Bauform und Befestigung auf Ihre Räumlichkeiten ab. Teilen Sie uns Ihre Anforderungen für eine projektspezifische Konfiguration mit."
+    },
+    {
+      "title": "Projektüberblick aus der Ferne",
+      "text": "Verbinden Sie den Sensor mit der Hitelecom Platform oder einer vereinbarten Kundenplattform, um Messwerte zu prüfen und konfigurierte Temperatur- und Luftfeuchtewarnungen zu erhalten."
+    }
+  ],
+  "measurement": {
+    "description": "Raumdurchschnittswerte zeigen nur einen Teil des Bildes. Neben einem Exponat, in einer Vitrine oder in der Nähe gelagerter Materialien können andere Bedingungen herrschen. Ein sinnvoller Überwachungsplan legt sowohl den Messort als auch die Entscheidung fest, die jeder Messwert unterstützen soll.",
+    "cards": [
+      {
+        "title": "Lufttemperatur",
+        "text": "Beobachten Sie die lokalen Luftbedingungen während der Nutzungszeiten, im Nachtbetrieb und bei saisonalen Veränderungen. Verwenden Sie vergleichbare Messpositionen, wenn Sie unterschiedliche Raumzonen beurteilen.",
+        "project_brief": "Geben Sie die erwartete Umgebung, die erforderliche Genauigkeit und die Sensoranordnung an.",
+        "symbol": "°C"
+      },
+      {
+        "title": "Relative Luftfeuchte",
+        "text": "Verfolgen Sie die Feuchtebedingungen im Umfeld der Sammlung oder des gelagerten Materials. Beurteilen Sie das Niveau und seine Veränderungen zusammen mit der Temperatur und den Klimazielen des Standorts.",
+        "project_brief": "Benennen Sie den Raum, die Vitrine oder die Lagerzone sowie die dort enthaltenen Materialien.",
+        "symbol": "%RH"
+      },
+      {
+        "title": "Beleuchtungsstärke · lux",
+        "text": "Messen Sie das sichtbare Licht, das auf die ausgewählte Messebene fällt. Vereinbaren Sie für Exponate eine Position und Ausrichtung, die das beleuchtete Objekt oder den Ausstellungsbereich repräsentieren.",
+        "project_brief": "Geben Sie die erwartete Beleuchtungsstärke, den erforderlichen Messbereich und die Genauigkeit sowie die Sensorausrichtung an.",
+        "symbol": "lux"
+      },
+      {
+        "title": "Kundenspezifische Sensoren",
+        "text": "Konfigurieren Sie Messkanäle, Bauform und Installation für Ihr Projekt. Teilen Sie uns die benötigten Messgrößen mit, damit wir eine geeignete Sensorausführung definieren und ihre Spezifikation bestätigen können.",
+        "project_brief": "Führen Sie die Messgrößen, erwarteten Bedingungen, erforderliche Leistung, Montagebeschränkungen und die Plattformschnittstelle auf.",
+        "symbol": "+"
+      }
+    ],
+    "installation_text": "Markieren Sie jeden Überwachungspunkt auf einem Raum- oder Vitrinenplan. Wählen Sie für Luftmessungen eine Position, die für die überwachte Zone repräsentativ ist, und berücksichtigen Sie nahe gelegene Lüftungsöffnungen, Türen und Wärmequellen. Halten Sie bei der Beleuchtungsstärkemessung die Sensorfläche frei und dokumentieren Sie ihre Ausrichtung. Vereinbaren Sie eine reversible Befestigung für historische Innenräume und Sammlungsräume."
+  },
+  "workflow": {
+    "profile_text": "Richten Sie das Überwachungsprofil auf die Veränderungen aus, die Sie erkennen möchten. Das Messintervall bestimmt, wann Messwerte erfasst werden; das Übertragungsintervall bestimmt, wann die Daten die Plattform erreichen. Legen Sie beide Intervalle zusammen mit Ihren Anforderungen an Warnmeldungen und Batterielaufzeit fest.",
+    "steps": [
+      {
+        "title": "Messpunkte festlegen",
+        "text": "Benennen Sie Räume, Vitrinen und Materialzonen. Dokumentieren Sie Zweck und Standort jedes Messpunkts.",
+        "number": "01"
+      },
+      {
+        "title": "Profil festlegen",
+        "text": "Vereinbaren Sie Mess- und Übertragungsintervalle, Kanalspezifikationen sowie Zielwerte für Temperatur- und Luftfeuchtewarnungen.",
+        "number": "02"
+      },
+      {
+        "title": "Bedingungen beurteilen",
+        "text": "Nutzen Sie die Messwerte zusammen mit dem Beleuchtungsplan, dem Raumbetrieb und dem Sammlungspflegeplan, um zu entscheiden, was untersucht oder angepasst werden soll.",
+        "number": "03"
+      }
+    ],
+    "battery_text": "Die veröffentlichte Referenzkonfiguration für Temperatur und Luftfeuchte ist unter den angegebenen Testbedingungen bei einem Übertragungsintervall von einer Stunde auf mehr als 10 Jahre ausgelegt. Bestätigen Sie bei einer Installation für Temperatur, Luftfeuchte und Beleuchtungsstärke die Batterieplanung anhand der endgültigen Kanalliste, des Übertragungsprofils, der Betriebstemperatur und der Netzbedingungen.",
+    "platform_text": "Wählen Sie die Hitelecom Platform oder besprechen Sie die Anbindung an eine Kundenplattform. Bestätigen Sie vor der Bereitstellung Datenfelder, Einheiten, Gerätekennungen, Kommunikationsweg und Zuständigkeiten für Warnmeldungen."
+  },
+  "series": {
+    "description": "Ein Überwachungszweck. Drei drahtlose Optionen. Wählen Sie zuerst das Netz und bestätigen Sie anschließend die Konfiguration für Temperatur, Luftfeuchte und Beleuchtungsstärke für die Räumlichkeiten.",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "steps": [
+      {
+        "title": "Räumlichkeiten beschreiben",
+        "text": "Teilen Sie uns die Anwendung, den Raum- oder Vitrinenplan, das Land, die Anzahl der Messpunkte und die Installationsbeschränkungen mit."
+      },
+      {
+        "title": "Messanforderungen definieren",
+        "text": "Bestätigen Sie die Anforderungen an Temperatur, Luftfeuchte und Beleuchtungsstärke, die erwarteten Bedingungen und die erforderliche Leistung der Messkanäle."
+      },
+      {
+        "title": "Bereitstellung abstimmen",
+        "text": "Wählen Sie Netz, Plattform, Befestigung, Übertragungsprofil und Angebot."
+      }
+    ],
+    "modelDetails": [
+      {
+        "model": "H200",
+        "network": "LoRa",
+        "title": "Für ein geplantes Standortnetz",
+        "text": "Stimmen Sie Gateway, Funkabdeckung in Innenräumen und Plattformanbindung für eine Gruppe von Messpunkten ab."
+      },
+      {
+        "model": "H300",
+        "network": "4G Cat.1",
+        "title": "Für die Überwachung über Mobilfunk",
+        "text": "Bestätigen Sie die regionale Netzunterstützung, die SIM-Bereitstellung und die Signalbedingungen am vorgesehenen Standort im Innenraum."
+      },
+      {
+        "model": "H500",
+        "network": "NB-IoT",
+        "title": "Für eine NB-IoT-Bereitstellung",
+        "text": "Prüfen Sie den Dienst des örtlichen Netzbetreibers und die Übertragungsanforderungen des Überwachungsprojekts."
+      }
+    ]
+  },
+  "specifications": {
+    "description": "Die nachstehenden Temperatur- und Luftfeuchteangaben beziehen sich auf die veröffentlichte T&H-Referenzkonfiguration. Die gelieferte Konfiguration für Temperatur, Luftfeuchte und Beleuchtungsstärke besitzt eine eigene vereinbarte Kanalliste und Spezifikation.",
+    "rows": [
+      {
+        "label": "Produktserie",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "Messgrößen",
+        "value": "Lufttemperatur · Relative Luftfeuchte · Beleuchtungsstärke"
+      },
+      {
+        "label": "Temperaturbereich · veröffentlichte T&H-Referenz",
+        "value": "−20°C bis +80°C"
+      },
+      {
+        "label": "Luftfeuchtebereich · veröffentlichte T&H-Referenz",
+        "value": "0–100% RH"
+      },
+      {
+        "label": "Typische Temperaturgenauigkeit · T&H-Referenz",
+        "value": "±0.2°C"
+      },
+      {
+        "label": "Typische Luftfeuchtegenauigkeit · T&H-Referenz",
+        "value": "±2% RH"
+      },
+      {
+        "label": "Lichtmessung",
+        "value": "Beleuchtungsstärke in lux; Messbereich, Auflösung und Genauigkeit werden für die gelieferte Konfiguration spezifiziert"
+      },
+      {
+        "label": "Sensoranordnung",
+        "value": "Integriertes Endgerät oder projektspezifische Sondenanordnung gemäß gelieferter Konfiguration"
+      },
+      {
+        "label": "Veröffentlichte T&H-Sondenoption",
+        "value": "Kabelgebundene, geschlitzte Sintersonde"
+      },
+      {
+        "label": "Drahtlose Optionen",
+        "value": "H200: LoRa · H300: 4G Cat.1 · H500: NB-IoT"
+      },
+      {
+        "label": "Plattformanbindung",
+        "value": "Hitelecom Platform oder eine vereinbarte Kundenplattform; MQTT-Unterstützung auf dem ausgewählten Kommunikationsweg"
+      },
+      {
+        "label": "Veröffentlichter T&H-Gehäuseschutz",
+        "value": "IP65; bestätigen Sie die Schutzart für die gelieferte THL-Konfiguration"
+      },
+      {
+        "label": "Gerätekonfiguration",
+        "value": "NFC-Aktivierung und -Konfiguration bei unterstützten Endgeräten"
+      },
+      {
+        "label": "Firmware aus der Ferne",
+        "value": "OTA bei unterstützten Konfigurationen"
+      },
+      {
+        "label": "Batterieauslegung der T&H-Referenz",
+        "value": ">10 Jahre bei einem Übertragungsintervall von 1 Stunde unter den angegebenen Testbedingungen; die endgültige THL-Batterieplanung wird auf die Konfiguration abgestimmt"
+      },
+      {
+        "label": "Installation und Anpassung",
+        "value": "Befestigung und Sensoranordnung werden für das Projekt ausgewählt; OEM/ODM-Anforderungen nach Vereinbarung"
+      }
+    ]
+  },
+  "faqHeading": {
+    "intro": "Praxisnahe Antworten zur Auswahl von Messpunkten, Sammlungszielwerten und einer drahtlosen Überwachungskonfiguration."
+  },
+  "faqs": [
+    {
+      "id": "measurements",
+      "question": "Was misst ein Sensor für Temperatur, Luftfeuchte und Beleuchtungsstärke?",
+      "paragraphs": [
+        "Er misst Lufttemperatur, relative Luftfeuchte und Beleuchtungsstärke an ausgewählten Messpunkten in Innenräumen. Die Beleuchtungsstärke wird in lux angegeben und beschreibt das sichtbare Licht, das auf eine Fläche fällt.",
+        "Legen Sie Kanäle, Sensoranordnung und Messleistung für die gelieferte Hitelecom-Konfiguration fest."
+      ],
+      "sources": [
+        "P1",
+        "P3",
+        "R2"
+      ],
+      "evidence": "Direct product channel evidence: official hero image labels Temperature, Humidity and Light. Lux meaning: CCI's illuminance explanation. Image screen values are display examples, never performance limits."
+    },
+    {
+      "id": "museum-combination",
+      "question": "Warum sollten Temperatur, Luftfeuchte und Beleuchtungsstärke in einem Museum gemeinsam überwacht werden?",
+      "paragraphs": [
+        "Sie beschreiben unterschiedliche Aspekte der Umgebung einer Sammlung. Temperatur- und Luftfeuchtebeobachtungen unterstützen die Klimabeurteilung; Lichtbeobachtungen unterstützen Entscheidungen über Ausstellungsbeleuchtung und Beleuchtungszeiten.",
+        "Die Beurteilung im Zusammenhang mit dem Exponat, seinen Materialien und den Öffnungszeiten bietet Restauratoren und Gebäudemanagementteams eine gemeinsame Gesprächsgrundlage."
+      ],
+      "sources": [
+        "R1",
+        "R3",
+        "R5"
+      ],
+      "evidence": "CCI treats climate and lighting as separate material-dependent preservation factors, and explicitly recommends measuring temperature, RH and light for textile display/storage. Combined page value is an editorial inference from these documented needs."
+    },
+    {
+      "id": "targets",
+      "question": "Wie sollten wir Zielwerte für Temperatur, Luftfeuchte und Beleuchtungsstärke für Sammlungen auswählen?",
+      "paragraphs": [
+        "Beginnen Sie mit den Materialien der Sammlung, ihrem Zustand, der bestehenden Umgebung und allen vereinbarten Leih- oder Ausstellungsanforderungen. Lassen Sie die Zielwerte für jeden Raum oder jede Vitrine vom Restaurierungsteam festlegen.",
+        "Temperatur- und Luftfeuchtegrenzen können anschließend als Grundlage für die Warnkonfiguration dienen; Lichtmesswerte können mit dem vereinbarten Ausstellungsplan verglichen werden."
+      ],
+      "sources": [
+        "R1",
+        "R7",
+        "P1"
+      ],
+      "evidence": "CCI Climate Guidelines and ClimaSpec select guidance by object type and sensitivity. Hitelecom public page supports configurable temperature/RH thresholds. This is specification guidance, not a universal setpoint recommendation."
+    },
+    {
+      "id": "room-and-case",
+      "question": "Wo sollten Sensoren in Galerien, Archiven und Vitrinen platziert werden?",
+      "paragraphs": [
+        "Platzieren Sie den Messpunkt für Luftbedingungen so, dass er die zu überwachende Sammlung oder Zone repräsentiert. Berücksichtigen Sie Regalhöhe, nahe gelegene Wände, Lüftungsöffnungen und Türen. Betrachten Sie eine geschlossene Vitrine als eigenen Überwachungsort, wenn ihre inneren Bedingungen wichtig sind.",
+        "Dokumentieren Sie den Messpunkt auf dem Standortplan und vereinbaren Sie vor der Installation die Endgeräte- oder Sondenanordnung."
+      ],
+      "sources": [
+        "R6",
+        "R1",
+        "P2"
+      ],
+      "evidence": "NEDCC indexed primary-source text says placement must reflect collection conditions and gives mid-shelf general-monitoring examples. CCI describes spatial gradients and conditions near objects. Probe/mount customization is supported by the manufacturer PDF. Placement wording is project guidance, not a claim of one fixed install height."
+    },
+    {
+      "id": "light-position",
+      "question": "Wo sollte die Lichtsensorfläche für ein Exponat positioniert werden?",
+      "paragraphs": [
+        "Wählen Sie eine Position und Ausrichtung, die die zu beurteilende beleuchtete Fläche oder den Ausstellungsbereich repräsentieren. Halten Sie die Sensorfläche frei von Schatten durch Gehäuse, Halterungen oder nahe gelegene Objekte und dokumentieren Sie ihre Richtung.",
+        "Prüfen Sie bei der Inbetriebnahme die Beleuchtung am Exponat, um zu bestätigen, dass die feste Überwachungsposition die vorgesehene Fragestellung zur Beleuchtung beantwortet."
+      ],
+      "sources": [
+        "R2",
+        "R3",
+        "R8"
+      ],
+      "evidence": "CCI defines illuminance as light falling on a surface, recommends measurements for displayed paintings and publishes a tutorial for measuring light on heritage objects. Fixed-sensor orientation and commissioning wording are practical engineering inference from the measurement geometry."
+    },
+    {
+      "id": "light-history",
+      "question": "Wie werden lux-Messwerte bei der Beurteilung der Ausstellungsbeleuchtung genutzt?",
+      "paragraphs": [
+        "Vergleichen Sie die gemessene Beleuchtungsstärke mit dem Beleuchtungsziel des Exponats und dokumentieren Sie Veränderungen durch Tageslicht, Leuchteneinstellungen und Öffnungszeiten. Bei der Planung der Lichtexposition lichtempfindlicher Materialien sind sowohl Intensität als auch Dauer relevant.",
+        "Wenn das Projekt eine Analyse der kumulierten Lichtexposition erfordert, nehmen Sie Beleuchtungsstärkedaten mit Zeitstempel, Einheiten und den Berechnungsablauf in die Plattformanforderungen auf."
+      ],
+      "sources": [
+        "R2",
+        "R3",
+        "R9"
+      ],
+      "evidence": "CCI explains exposure as illuminance multiplied by time; its LED lighting bulletin confirms the continued importance of intensity and duration. Cumulative calculation is framed as a project requirement, not a built-in Hitelecom capability."
+    },
+    {
+      "id": "intervals",
+      "question": "Wie sollten Mess- und Übertragungsintervalle ausgewählt werden?",
+      "paragraphs": [
+        "Wählen Sie das Messintervall entsprechend den Veränderungen, die Sie beobachten müssen, etwa Beleuchtungszeiten, Vitrinenzugang oder Raumbetrieb. Wählen Sie das Übertragungsintervall entsprechend dem Bedarf des Teams an Fernprüfung und Warnmeldungen.",
+        "Stimmen Sie beide Intervalle mit der erforderlichen Datenabdeckung und der Batterieplanung ab. Ein Projekt zur Untersuchung kurzer Veränderungen benötigt ein anderes Profil als ein langfristiger saisonaler Überblick."
+      ],
+      "sources": [
+        "R4",
+        "R5",
+        "P2"
+      ],
+      "evidence": "NPS identifies sampling rate as a logger-selection variable and explains its effect on run time/battery. CCI textile guidance supports seasonal monitoring. Reporting distinction is cellular IoT specification guidance; no undocumented minimum interval or continuous streaming is asserted."
+    },
+    {
+      "id": "wireless-platform",
+      "question": "Welches Funkmodell und welche Plattform sollten wir für eine Installation in Innenräumen wählen?",
+      "paragraphs": [
+        "Wählen Sie H200 für LoRa, H300 für 4G oder H500 für NB-IoT. Prüfen Sie die Funkabdeckung an den tatsächlichen Überwachungspunkten, einschließlich geschlossener Vitrinen, Kellerdepots und innen liegender Räume.",
+        "Planen Sie bei LoRa das Gateway und den Verbindungsweg zur Plattform. Bestätigen Sie bei Mobilfunkmodellen den örtlichen Netzdienst und die Bereitstellung. Die Hitelecom Platform oder eine vereinbarte Kundenplattform kann als Zielsystem für die Überwachung dienen."
+      ],
+      "sources": [
+        "P1",
+        "P2"
+      ],
+      "evidence": "Manufacturer source supports H200/H300/H500, the three wireless options and public/customer cloud deployment. Family-to-radio mapping is confirmed project context. Coverage planning is engineering advice, not a measured range claim."
+    },
+    {
+      "id": "accuracy",
+      "question": "Welche Messleistung und Kalibrierungsinformationen sollten wir festlegen?",
+      "paragraphs": [
+        "Geben Sie die erwarteten Betriebsbedingungen sowie den erforderlichen Messbereich, die Genauigkeit und die Auflösung für jeden Kanal an. Berücksichtigen Sie bei der Lichtmessung die erwarteten Bedingungen bei schwacher Beleuchtung oder in helleren Räumen sowie die Sensorausrichtung.",
+        "Vereinbaren Sie, wie Messwerte bei der Inbetriebnahme geprüft werden, welche Kalibrierungsunterlagen das Projekt benötigt und welcher Prüfturnus zur Installation passt. Vergleichen Sie die gelieferte Spezifikation mit der Messaufgabe."
+      ],
+      "sources": [
+        "R4",
+        "R2",
+        "P2"
+      ],
+      "evidence": "NPS discusses functional range, varying accuracy across range, calibration and periodic checks. Light-measurement geometry comes from CCI. No claim that supplied units include traceable certificates or any fixed recalibration interval."
+    },
+    {
+      "id": "battery",
+      "question": "Was sollte bei der Planung der Batterielaufzeit berücksichtigt werden?",
+      "paragraphs": [
+        "Nutzen Sie die ausgewählte Kanalliste, Mess- und Übertragungsintervalle, Betriebsbedingungen und Netzqualität, um die Batterieplanung festzulegen. Bestätigen Sie die Berechnung für die gelieferte Konfiguration für Temperatur, Luftfeuchte und Beleuchtungsstärke.",
+        "Die veröffentlichte T&H-Referenzauslegung nennt mehr als 10 Jahre bei stündlicher Übertragung unter den angegebenen Testbedingungen; diese Referenz sollte mit der endgültigen Projektkonfiguration abgeglichen werden."
+      ],
+      "sources": [
+        "P1",
+        "P2",
+        "R4"
+      ],
+      "evidence": "Manufacturer reference publishes hourly-reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
+    }
+  ],
+  "evidence": {
+    "sources": [
+      {
+        "id": "P1",
+        "title": "Hitelecom: Temperature and Humidity Sensor",
+        "url": "https://www.hitelecom.com/product/temperature-humidity-sensor",
+        "whatItSupports": "Published T&H measuring figures, temperature/humidity alerts, wireless options, product-family context and battery-condition wording."
+      },
+      {
+        "id": "P2",
+        "title": "Hitelecom: H Series T&H Sensor Datasheet, 3 pages",
+        "url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
+        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, hourly-reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
+      },
+      {
+        "id": "P3",
+        "title": "Hitelecom official product hero image",
+        "url": "https://www.hitelecom.com/_astro/301.D1LjOplG_Z1nBWX6.webp",
+        "whatItSupports": "Integrated white display terminal with Temperature, Humidity and Light/lux labels. Visible screen values are examples and are not measurement ranges or accuracy claims."
+      },
+      {
+        "id": "R1",
+        "title": "Canadian Conservation Institute: Climate guidelines overview",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/climate-guidelines/climate-guidelines-overview.html",
+        "whatItSupports": "Material-dependent targets, conditions near objects, fluctuations, room gradients and environmentally informed collection decisions."
+      },
+      {
+        "id": "R2",
+        "title": "Canadian Conservation Institute: Light, ultraviolet and infrared",
+        "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html",
+        "whatItSupports": "Illuminance/lux meaning, illuminance at a surface, and the relationship between intensity and exposure time. UV is a separate measurement."
+      },
+      {
+        "id": "R3",
+        "title": "Canadian Conservation Institute Notes 10/4: Environmental Guidelines for Paintings",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/environmental-display-guidelines-paintings.html",
+        "whatItSupports": "Environmental variables for display/storage, measuring light at displayed paintings, and planning intensity plus exposure duration."
+      },
+      {
+        "id": "R4",
+        "title": "National Park Service Conserve O Gram 3/3: Comparing Temperature and Relative Humidity Dataloggers for Museum Monitoring",
+        "url": "https://www.nps.gov/subjects/museums/upload/03-03_508.pdf",
+        "whatItSupports": "Selection by range, accuracy, calibration, sample interval, channels, power and battery. Published 2011: use general principles, not dated vendor prices or market rankings."
+      },
+      {
+        "id": "R5",
+        "title": "Canadian Conservation Institute Notes 13/1: Textiles and the Environment",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/textiles-environment.html",
+        "whatItSupports": "Instrumented display/storage monitoring and temperature/RH records across seasonal cycles; recognizes light, temperature and RH measurement."
+      },
+      {
+        "id": "R6",
+        "title": "NEDCC Preservation Leaflet 2.2: Monitoring Temperature and Relative Humidity",
+        "url": "https://www.nedcc.org/free-resources/preservation-leaflets/2.-the-environment/2.2-monitoring-temperature-and-relative-humidity",
+        "whatItSupports": "Collection-representative positioning and mid-shelf general-monitoring example. Indexed primary-source text retrieved; direct full-page open returned HTTP 403."
+      },
+      {
+        "id": "R7",
+        "title": "Canadian Conservation Institute: ClimaSpec",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/climate-guidelines/climaspec.html",
+        "whatItSupports": "Collection/type/sensitivity-based selection of temperature and RH guidance. It is a conservation tool, not a Hitelecom integration."
+      },
+      {
+        "id": "R8",
+        "title": "Government of Canada / CCI: How to measure light levels",
+        "url": "https://publications.gc.ca/site/eng/9.941901/publication.html",
+        "whatItSupports": "Official tutorial topic: measuring light on heritage objects. Publication record retrieved; no unobserved transcript claims used."
+      },
+      {
+        "id": "R9",
+        "title": "Canadian Conservation Institute Technical Bulletin 36: LED Lighting in Museums and Art Galleries",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/technical-bulletins/led-lighting-museums.html",
+        "whatItSupports": "Intensity and exposure time remain relevant under LED lighting. Used for monitoring context, not lamp selection promises or control capabilities."
+      }
+    ],
+    "publicQueries": [
+      {
+        "query": "museum relative humidity temperature light monitoring lux cumulative exposure Canadian Conservation Institute",
+        "intent": "Combined collection environmental monitoring and illuminance exposure",
+        "support": [
+          "R1",
+          "R2",
+          "R3",
+          "R9"
+        ],
+        "googleSearch": "https://www.google.com/search?q=museum+relative+humidity+temperature+light+monitoring+lux+cumulative+exposure+Canadian+Conservation+Institute",
+        "bingSearch": "https://www.bing.com/search?q=museum+relative+humidity+temperature+light+monitoring+lux+cumulative+exposure+Canadian+Conservation+Institute",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.nps.gov museum handbook environmental monitoring temperature humidity light",
+        "intent": "Museum monitoring practice and logger selection",
+        "support": [
+          "R4"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.nps.gov+museum+handbook+environmental+monitoring+temperature+humidity+light",
+        "bingSearch": "https://www.bing.com/search?q=site.nps.gov+museum+handbook+environmental+monitoring+temperature+humidity+light",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.nedcc.org preservation temperature relative humidity light monitoring environmental conditions",
+        "intent": "Archives and collection-representative positioning",
+        "support": [
+          "R6"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.nedcc.org+preservation+temperature+relative+humidity+light+monitoring+environmental+conditions",
+        "bingSearch": "https://www.bing.com/search?q=site.nedcc.org+preservation+temperature+relative+humidity+light+monitoring+environmental+conditions",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.canada.ca conservation institute temperature humidity sensor placement showcase light measurement",
+        "intent": "Case/local sensing and object-plane light measurement",
+        "support": [
+          "R1",
+          "R2",
+          "R3"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.canada.ca+conservation+institute+temperature+humidity+sensor+placement+showcase+light+measurement",
+        "bingSearch": "https://www.bing.com/search?q=site.canada.ca+conservation+institute+temperature+humidity+sensor+placement+showcase+light+measurement",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.canada.ca conservation institute \"How to Measure Light Levels\"",
+        "intent": "How to measure illuminance at heritage objects",
+        "support": [
+          "R8"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.canada.ca+conservation+institute+%22How+to+Measure+Light+Levels%22",
+        "bingSearch": "https://www.bing.com/search?q=site.canada.ca+conservation+institute+%22How+to+Measure+Light+Levels%22",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.nedcc.org \"2.2 Monitoring\" \"Sensors\" \"located\"",
+        "intent": "Location and representativeness of readings",
+        "support": [
+          "R6"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.nedcc.org+%222.2+Monitoring%22+%22Sensors%22+%22located%22",
+        "bingSearch": "https://www.bing.com/search?q=site.nedcc.org+%222.2+Monitoring%22+%22Sensors%22+%22located%22",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      }
+    ],
+    "factBoundary": "Checked on 2026-10-12. FAQ topics are synthesized from traceable public technical practice and product facts. They are not claimed to be collected customer questions, Google/Bing keyword volume, Search Console queries or paid keyword research. Search query links can be reproduced in Google and Bing, but search-engine rank/volume and any first-page result are unverified. The official display image supports the THL channel concept; the existing PDF is a T&H reference. Light range/accuracy/resolution, the final THL protection rating and battery plan are configuration-specific. No UV, PAR/PPFD, automatic lighting control, built-in dew-point/exposure calculation, medical measurement, compliance certification or universal conservation setpoints are asserted.",
+    "applicationSources": [
+      {
+        "id": "S01",
+        "title": "NEDCC — Monitoring Temperature and Relative Humidity",
+        "url": "https://www.nedcc.org/free-resources/preservation-leaflets/2.-the-environment/2.2-monitoring-temperature-and-relative-humidity",
+        "whatItSupports": "Environmental monitoring is an established collection-care activity; interpret local records against the needs of the collection and facility."
+      },
+      {
+        "id": "S02",
+        "title": "CCI — Airtightness Measurement of Display Cases and Other Enclosures, Technical Bulletin 38",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/technical-bulletins/airtightness-measurement-display-cases.html",
+        "whatItSupports": "Enclosure climate can differ from room climate. Case performance, buffering and light-related heating provide reasons for internal and room observations."
+      },
+      {
+        "id": "S03",
+        "title": "CCI — Caring for textiles and costumes",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/textiles-costumes.html",
+        "whatItSupports": "Textile materials differ; temperature, relative humidity and light have collection-care relevance in display and storage."
+      },
+      {
+        "id": "S04",
+        "title": "CCI — Caring for paper objects",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/paper-objects.html",
+        "whatItSupports": "Paper and media sensitivity inform local climate and exposure decisions; oversized paper can require flat cabinet storage."
+      },
+      {
+        "id": "S05",
+        "title": "CCI — Environmental Guidelines for Paintings, Notes 10/4",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/environmental-display-guidelines-paintings.html",
+        "whatItSupports": "Painting materials and location matter when assessing climate and exhibition lighting; room zones may experience differing conditions."
+      },
+      {
+        "id": "S06",
+        "title": "CCI — Caring for natural history collections",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/natural-history.html",
+        "whatItSupports": "Natural history specimens vary in composition and sensitivity; environmental priorities should be selected for the collection."
+      },
+      {
+        "id": "S07",
+        "title": "CCI — Agent of deterioration: light, ultraviolet and infrared",
+        "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html",
+        "whatItSupports": "Illuminance, exposure duration and material sensitivity inform conservation lighting. Visible light, ultraviolet and infrared are distinct quantities."
+      },
+      {
+        "id": "S08",
+        "title": "NEDCC — Protecting Paper and Book Collections During Exhibition",
+        "url": "https://www.nedcc.org/free-resources/preservation-leaflets/2.-the-environment/2.5-protecting-paper-and-book-collections-during-exhibition",
+        "whatItSupports": "Exhibition plans for paper and books consider environmental conditions and light exposure over the display period."
+      },
+      {
+        "id": "S09",
+        "title": "CCI — ASHRAE types of control",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/climate-guidelines/ashrae-types-control.html",
+        "whatItSupports": "Loan requirements and collection-specific judgements inform environmental targets; one fixed museum target is not universal."
+      },
+      {
+        "id": "S10",
+        "title": "Library of Congress — Storing Your Books",
+        "url": "https://guides.loc.gov/preserving-your-books/storing",
+        "whatItSupports": "Book storage considers temperature, relative humidity, position and avoidance of environmental extremes; supplier-independent collection-care guidance."
+      },
+      {
+        "id": "S11",
+        "title": "Library of Congress — Care, Handling and Storage of Photographs",
+        "url": "https://www.loc.gov/preservation/care/photolea.html",
+        "whatItSupports": "Photographic materials have differing preservation needs; room climate and light are relevant environmental factors."
+      },
+      {
+        "id": "S12",
+        "title": "Library of Congress — Care, Handling and Storage of Works on Paper",
+        "url": "https://www.loc.gov/preservation/care/paper.html",
+        "whatItSupports": "Paper preservation uses appropriate storage climate, limited light exposure, protective enclosures and suitable positioning."
+      },
+      {
+        "id": "S13",
+        "title": "National Park Service — Museum Collections Environment, Handbook Part I, Chapter 4",
+        "url": "https://www.nps.gov/subjects/museums/upload/MHI_Ch4_Environment.pdf",
+        "whatItSupports": "Collection monitoring, environment and preservation planning are established museum operational subjects, supporting room and collection-zone monitoring use cases."
+      },
+      {
+        "id": "S14",
+        "title": "CCI — Basic requirements of preventive conservation",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/basic-requirements-preventive-conservation.html",
+        "whatItSupports": "Collection stores use appropriate shelving, enclosures and material-aware care; climate observations support that broader practice."
+      },
+      {
+        "id": "S15",
+        "title": "FDA — ORA-LAB.5.3 Facilities and Environmental Conditions",
+        "url": "https://www.fda.gov/media/73912/download",
+        "whatItSupports": "FDA laboratory practice monitors and records temperature and humidity where those conditions affect analytical results."
+      },
+      {
+        "id": "S16",
+        "title": "eCFR — 21 CFR 211.142, Warehousing procedures",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211#p-211.142(b)",
+        "whatItSupports": "Pharmaceutical storage procedures include appropriate temperature, humidity and light conditions. This is not a product conformity or certification claim."
+      },
+      {
+        "id": "S17",
+        "title": "FDA — Q7A Good Manufacturing Practice Guidance for Active Pharmaceutical Ingredients",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q7a-good-manufacturing-practice-guidance-active-pharmaceutical-ingredients",
+        "whatItSupports": "Manufacturing and storage conditions follow the material, process and approved facility procedures; temperature and humidity control may be needed."
+      },
+      {
+        "id": "S18",
+        "title": "ASHRAE Handbook — Data Centers and Telecommunication Facilities",
+        "url": "https://handbook.ashrae.org/Handbooks/A23/SI/A23_Ch20/a23_ch20_si.aspx",
+        "whatItSupports": "Equipment inlet-air conditions matter in data-centre and telecom operation; local inlet sensing has a different purpose from room-average sensing."
+      },
+      {
+        "id": "S19",
+        "title": "Texas Instruments — Quality and reliability FAQs: Product shelf life",
+        "url": "https://www.ti.com/quality-reliability/faqs.html",
+        "whatItSupports": "Electronic-component storage considers temperature, humidity, moisture-barrier packaging and handling instructions."
+      },
+      {
+        "id": "S20",
+        "title": "EOS/ESD Association — ESD Fundamentals, Part 1",
+        "url": "https://www.esda.org/esd-overview/esd-fundamentals/part-1-an-introduction-to-esd/",
+        "whatItSupports": "Relative humidity is one factor affecting electrostatic charge generation. Room climate observation complements, and does not define, an ESD programme."
+      },
+      {
+        "id": "S21",
+        "title": "NIST/SEMATECH — Measurement configuration within the laboratory",
+        "url": "https://www.itl.nist.gov/div898/handbook/mpc/section5/mpc5312.htm",
+        "whatItSupports": "Temperature and humidity can contribute to laboratory measurement variation and uncertainty; method owners define the relevant conditions."
+      },
+      {
+        "id": "S22",
+        "title": "Canon — Storing paper",
+        "url": "https://hk.canon/en/support/8201643300",
+        "whatItSupports": "Paper storage and movement between rooms are affected by temperature and humidity differences; room comparison is a practical monitoring use case."
+      },
+      {
+        "id": "S23",
+        "title": "Steinway & Sons — Service and Maintenance",
+        "url": "https://www.steinway.com/news/features/utilty/service-and-maintenance",
+        "whatItSupports": "Instrument care includes appropriate room temperature and relative humidity; this supports climate monitoring around sensitive instruments."
+      },
+      {
+        "id": "S24",
+        "title": "Prusa Knowledge Base — Drying filament",
+        "url": "https://help.prusa3d.com/article/drying-filament_332086",
+        "whatItSupports": "Moisture-sensitive printing materials use material-specific drying and storage procedures; storage-air observations are one part of the workflow."
+      },
+      {
+        "id": "S25",
+        "title": "Historic England — Thermography in Historic Buildings",
+        "url": "https://historicengland.org.uk/whats-new/research/back-issues/thermography-in-historic-buildings/",
+        "whatItSupports": "Environmental observation can inform conservation heating and care of historic interiors; historic-building conditions need contextual interpretation."
+      },
+      {
+        "id": "S26",
+        "title": "US EPA — Reference Guide for Indoor Air Quality in Schools",
+        "url": "https://www.epa.gov/iaq-schools/reference-guide-indoor-air-quality-schools",
+        "whatItSupports": "Room temperature, humidity, spatial differences and building operation matter to the indoor environment. Broader air-quality assessment requires other information."
+      },
+      {
+        "id": "S27",
+        "title": "Royal Horticultural Society — How to grow houseplants",
+        "url": "https://www.rhs.org.uk/plants/types/houseplants/growing-guide",
+        "whatItSupports": "Indoor plant care varies by species and location; temperature, humidity and light are distinct care factors."
+      },
+      {
+        "id": "S28",
+        "title": "ZEISS — Cleaning Your Microscope: Transport and storage",
+        "url": "https://www.zeiss.com/microscopy/us/l/service-support/cleaning-your-microscope.html",
+        "whatItSupports": "Optical instrument storage considers humidity, sunlight, packaging and the manufacturer's care instructions."
+      }
+    ],
+    "imagePolicy": "Illustrative scenes; no claim of installations or client projects. Official product image retained without reconstructing hardware."
+  },
+  "applicationSection": {
+    "title": "Innenräume. Unterschiedliche Prioritäten.",
+    "valueHeading": "Die richtigen Bedingungen am richtigen Messpunkt.",
+    "description": "Entdecken Sie 48 Überwachungsaufgaben in acht Innenraumumgebungen, von Museumsvitrinen und Archiven bis zu Laboren, sensiblen Lagerbereichen und Arbeitsräumen. Jede Aufgabe benennt, was beobachtet werden soll, wo der Messpunkt zu platzieren ist und wie die Messwerte Ihr Team unterstützen.",
+    "note": "Die Szenen veranschaulichen Installationsumgebungen. Messkanäle und Positionen werden für jedes Projekt ausgewählt."
+  },
+  "groups": [
+    {
+      "id": "museums",
+      "title": "Museen und Vitrinen",
+      "jumpLabel": "Museen",
+      "intro": "Erfassen Sie die Bedingungen im Umfeld der Sammlung, von der Raumluft in Ausstellungsräumen bis zu einzelnen Vitrinen. Temperatur und relative Luftfeuchte beschreiben das lokale Klima; optionale Beleuchtungsstärkemessungen unterstützen den Beleuchtungsplan der Ausstellung.",
+      "scenes": [
+        "museum-main-gallery",
+        "museum-sealed-showcase",
+        "museum-textile-costume",
+        "museum-manuscript-case",
+        "museum-natural-history",
+        "museum-historic-interior-display"
+      ],
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "Glasvitrinen und archäologische Objekte in einem musealen Ausstellungsraum.",
+        "caption": "Ausstellungsumgebungen in Museumsräumen",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "galleries",
+      "title": "Kunstgalerien und Ausstellungen",
+      "jumpLabel": "Galerien",
+      "intro": "Erfassen Sie die Bedingungen dort, wo Werke präsentiert werden. Kombinieren Sie lokale Klimamesswerte mit ausgewählten Beleuchtungsstärkemessungen, damit Mitarbeitende anhand dokumentierter Sensorpositionen Beleuchtung, Ausstellungsänderungen und Leihanforderungen prüfen können.",
+      "scenes": [
+        "gallery-painting-display",
+        "gallery-works-on-paper",
+        "gallery-photographic-exhibition",
+        "gallery-temporary-exhibition",
+        "gallery-loan-handover",
+        "gallery-daylight-skylight"
+      ],
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "Zeitgenössische Kunstgalerie mit gerahmten Gemälden und Deckenbeleuchtung auf Stromschienen",
+        "caption": "Beispiel einer zeitgenössischen Galerieumgebung zur Überwachung von Temperatur, Luftfeuchte und Beleuchtungsstärke.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archives",
+      "title": "Archive, Bibliotheken und Sondersammlungen",
+      "jumpLabel": "Archive",
+      "intro": "Verstehen Sie die Bedingungen im Umfeld von Archivgut und seltenen Materialien, vom geschlossenen Magazin bis zur beaufsichtigten Nutzung. Priorisieren Sie Temperatur und Luftfeuchte bei der Lagerung und ergänzen Sie die Beleuchtungsstärke dort, wo Materialien ausgestellt werden oder regelmäßig Licht ausgesetzt sind.",
+      "scenes": [
+        "archive-mobile-stacks",
+        "library-rare-book-store",
+        "library-special-reading-room",
+        "archive-map-plan-cabinets",
+        "archive-photograph-store",
+        "archive-digitisation-workroom"
+      ],
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "Fahrbare Archivregale mit Archivkartons und gebundenem Archivgut",
+        "caption": "Beispiel eines Archivmagazins mit Zugangsgängen zur Beobachtung lokaler Erhaltungsbedingungen.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collections",
+      "title": "Sammlungsdepots und Konservierung",
+      "jumpLabel": "Sammlungspflege",
+      "intro": "Verknüpfen Sie die Sammlungspflege mit den Bedingungen in Lager- und Arbeitsbereichen. Wählen Sie lokale Klimamesspunkte nach Material und Raumnutzung; erfassen Sie die Beleuchtungsstärke nur dort, wo Ausstellung, Handhabung oder eine konservatorische Fragestellung dies sinnvoll machen.",
+      "scenes": [
+        "collection-mixed-object-store",
+        "collection-painting-rack-store",
+        "collection-textile-drawer-store",
+        "collection-receiving-room",
+        "collection-conservation-studio",
+        "collection-framing-mounting"
+      ],
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "Museumssammlungsdepot mit Schränken und sorgfältig angeordneten gelagerten Objekten",
+        "caption": "Sammlungsdepot · Beispielszene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratories",
+      "title": "Labore und pharmazeutische Bereiche",
+      "jumpLabel": "Labore und Pharma",
+      "intro": "Erfassen Sie Raumbedingungen dort, wo Methode, Material oder Lageranweisungen dies erfordern. Wählen Sie Temperatur, Luftfeuchte und optionale Beleuchtungsstärke entsprechend dem tatsächlichen Verfahren und stimmen Sie Kalibrierungs- und Dokumentationsanforderungen mit dem Projektteam ab.",
+      "scenes": [
+        "laboratory-analytical-room",
+        "laboratory-weighing-room",
+        "laboratory-ambient-sample-store",
+        "pharma-ambient-stockroom",
+        "pharma-material-quarantine",
+        "laboratory-instrument-workroom"
+      ],
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "Analytisches Labor mit Chromatografiegeräten und einer Waage mit Windschutz auf einer Laborbank",
+        "caption": "Beispiel eines Laborarbeitsplatzes mit Analysegeräten.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology",
+      "title": "Elektronik, Rechenzentren und Reinräume",
+      "jumpLabel": "Technik",
+      "intro": "Priorisieren Sie die lokale Temperatur und Luftfeuchte im Umfeld von Geräten, Komponenten und kontrollierten Arbeitsbereichen. Wählen Sie zusätzliche Sensorpositionen nach den Anforderungen an Lufteinlass, Lagerung oder Prozesse; ergänzen Sie die Beleuchtungsstärke bei einer definierten Fragestellung zur Beleuchtung.",
+      "scenes": [
+        "datacentre-rack-inlet",
+        "technology-edge-it-room",
+        "technology-electronics-assembly",
+        "technology-component-storage",
+        "technology-cleanroom-environment",
+        "technology-metrology-room"
+      ],
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "Serverracks in einem Rechenzentrum mit klar abgegrenztem Gang",
+        "caption": "Rechenzentrumsumgebung · Beispielszene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production",
+      "title": "Produktion in Innenräumen und sensible Materialien",
+      "jumpLabel": "Materialien",
+      "intro": "Stimmen Sie die Überwachung auf die Materialien und Arbeiten in Innenräumen ab. Temperatur und Luftfeuchte beschreiben die lokale Lager- oder Vorbereitungsumgebung; optionale Beleuchtungsstärkemessungen unterstützen ausgewählte Fragen zu Tageslicht, Ausstellung oder Arbeitsaufgaben.",
+      "scenes": [
+        "production-print-paper-store",
+        "production-textile-materials",
+        "production-musical-instruments",
+        "production-optics-spares",
+        "production-filament-dry-storage",
+        "production-botanical-specimens"
+      ],
+      "image": {
+        "name": "warehouses.webp",
+        "alt": "Lagerhalle mit in Kartons gelagerten Materialien und Regalen",
+        "caption": "Materiallagerumgebung · Beispielszene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "buildings",
+      "title": "Historische Gebäude, Lern- und Besucherbereiche",
+      "jumpLabel": "Innenräume",
+      "intro": "Vergleichen Sie die Bedingungen dort, wo Menschen und Sammlungen dasselbe Gebäude nutzen. Wählen Sie Raumpositionen entsprechend dem Beobachtungsziel, ergänzt durch optionale Beleuchtungsstärkemessungen zur Beurteilung von Tageslicht oder Arbeitsaufgaben, und nutzen Sie die Ergebnisse zusammen mit dem Gebäude- oder Konservierungsplan.",
+      "scenes": [
+        "building-historic-rooms",
+        "building-classrooms",
+        "building-public-library",
+        "building-visitor-reception",
+        "building-worship-heritage",
+        "building-indoor-plant-conservatory"
+      ],
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "Historische Holzmöbel und Porträts in einem erhaltenen Museumsraum.",
+        "caption": "Historische Innenräume und möblierte Räume des Kulturerbes",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "id": "museum-main-gallery",
+      "group": "museums",
+      "title": "Umgebungsbedingungen in Museumsausstellungsräumen",
+      "description": "Erstellen Sie für jeden Ausstellungsraum eine Umgebungsdokumentation, statt sich auf einen einzigen Messwert für das gesamte Museum zu verlassen. Vergleichen Sie Ausstellungszonen während der Öffnungszeiten, bei der abendlichen Abschaltung und im Verlauf saisonaler Veränderungen. Teams für Sammlungspflege und Gebäudemanagement können dieselben lokalen Messwerte zur Planung von Raumeinstellungen oder zur Untersuchung einer Veränderung nutzen.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke an ausgewählten Ausstellungspositionen.",
+      "monitoringPoint": "Repräsentative Ausstellungszonen mit zusätzlichen Messpunkten, wenn sich Raumaufteilung oder Raumbedingungen unterscheiden.",
+      "installation": "Nutzen Sie genehmigte Wandpositionen oder freistehende Positionen mit freier Luftanströmung und einer ungehinderten Sensorfläche bei Lichtmessungen.",
+      "projectBrief": "Teilen Sie uns den Ausstellungsraumplan, die Sammlungsmaterialien, bestehende Klimazielwerte und die Anzahl unterschiedlicher Ausstellungszonen mit.",
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "Glasvitrinen und archäologische Objekte in einem musealen Ausstellungsraum.",
+        "caption": "Ausstellungsumgebungen in Museumsräumen",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-sealed-showcase",
+      "group": "museums",
+      "title": "Geschlossene Objektvitrinen",
+      "description": "Messen Sie bei einer Sammlung mit lokalem Mikroklima sowohl die Luft in der Vitrine als auch die des umgebenden Raums. Die beiden Aufzeichnungen helfen Mitarbeitenden zu verstehen, wie die Vitrine auf Raumveränderungen und routinemäßiges Öffnen reagiert. Wählen Sie eine unauffällige Sensorposition, die zur Vitrinenkonstruktion und Objektanordnung passt.",
+      "measurement": "Temperatur und relative Luftfeuchte in der Vitrine; optionale Beleuchtungsstärke am Betrachtungsort des Objekts.",
+      "monitoringPoint": "Eine genehmigte Position im Inneren, die den Objektbereich repräsentiert, bei Bedarf mit einer separaten Raumreferenz.",
+      "installation": "Stimmen Sie die Anordnung mit dem Vitrinenhersteller oder Restaurator ab; erhalten Sie die Abdichtung und halten Sie Abstand zwischen Gerät und Sammlung.",
+      "projectBrief": "Geben Sie Vitrinenmaße, Fachaufteilung, Pufferungs- oder Regelungslösungen und Zugangsbeschränkungen an.",
+      "image": {
+        "name": "museum-display-case.webp",
+        "alt": "Keramikgefäße und ein Bronzeobjekt in einer geschlossenen gläsernen Museumsvitrine.",
+        "caption": "Bedingungen in einzelnen Vitrinen",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-textile-costume",
+      "group": "museums",
+      "title": "Textil- und Kostümausstellungen",
+      "description": "Stellen Sie Kuratoren während einer Ausstellung eine lokale Dokumentation für Kostüme, Wandteppiche und verzierte Stoffe bereit. Temperatur und relative Luftfeuchte beschreiben das Ausstellungsklima; eine Beleuchtungsstärkekonfiguration kann Mitarbeitende bei der Prüfung der für das Textil gewählten Beleuchtung unterstützen. Beurteilen Sie die Messwerte zusammen mit dem Ausstellungszeitplan und dem materialspezifischen Plan des Restaurators.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für die Textilausstellung.",
+      "monitoringPoint": "In der Nähe des ausgestellten Materials, bei projektrelevanter Beleuchtungsstärkemessung mit dokumentierter Ausrichtung zur Lichtmessung.",
+      "installation": "Befestigen Sie den Sensor an genehmigten Vitrinenbauteilen oder einer separaten Halterung; erhalten Sie den Betrachtungsraum und vermeiden Sie Kontakt mit dem Textil.",
+      "projectBrief": "Teilen Sie uns Textilarten, relevante Farbstoffe oder Ausrüstungen, Ausstellungsdauer, Vitrinendetails und vereinbarte Klimagrenzen mit.",
+      "image": {
+        "name": "textile-display.webp",
+        "alt": "Historisches Kleid und bestickte Textilien in einer sanft beleuchteten Glasvitrine.",
+        "caption": "Lichtempfindliche Textilsammlungen",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-manuscript-case",
+      "group": "museums",
+      "title": "Vitrinen für Handschriften und Papierobjekte",
+      "description": "Verfolgen Sie die Ausstellungsbedingungen für Handschriften, Karten und illustrierte Dokumente während ihrer Präsentation. Platzieren Sie den Messpunkt so, dass er die ausgestellte Seite oder das Blatt repräsentiert. Eine optionale Aufzeichnung der Beleuchtungsstärke hilft Mitarbeitenden, Beleuchtungsänderungen im Zusammenhang mit dem Ausstellungszeitplan zu beurteilen; Temperatur und Luftfeuchte unterstützen die lokale konservatorische Dokumentation.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke in der Ebene des ausgestellten Papierobjekts.",
+      "monitoringPoint": "Eine Vitrinenposition nahe dem ausgestellten Blatt, mit auf die gewählte Messebene ausgerichtetem Lichtsensor.",
+      "installation": "Verwenden Sie eine mit dem Restaurator abgestimmte unabhängige Halterung; halten Sie Sensoröffnungen frei und ermöglichen Sie sicheren Vitrinenzugang.",
+      "projectBrief": "Geben Sie Papierarten und verwendete Medien, Objektebene, Beleuchtungsanordnung, Ausstellungsdaten und konservatorische Anforderungen an.",
+      "image": {
+        "name": "paper-display.webp",
+        "alt": "Eine aufgeschlagene Handschrift und historische Papierdokumente in einer Vitrine mit Glasabdeckung.",
+        "caption": "Ausstellungsumgebungen für Papierobjekte und Handschriften",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-natural-history",
+      "group": "museums",
+      "title": "Ausstellungen naturkundlicher Präparate",
+      "description": "Richten Sie die Überwachung auf die tatsächlichen Präparate einer naturkundlichen Ausstellung aus. Tierpräparate, getrocknete Pflanzen und Mineralien können selbst innerhalb eines Ausstellungsraums unterschiedliche klimatische Prioritäten haben. Lokale Messwerte bieten Sammlungsmitarbeitenden eine Grundlage zur Beurteilung der Ausstellungsanordnung; optionale Beleuchtungsstärkemessungen sind bei lichtempfindlichen Präparaten sinnvoll.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für ausgewählte lichtempfindliche Präparate.",
+      "monitoringPoint": "Das Präparatefach oder die nahe gelegene Ausstellungsluft, ausgewählt vom Team für Sammlungspflege.",
+      "installation": "Installieren Sie den Sensor an genehmigtem Ausstellungsmobiliar, ohne ihn an Präparaten zu befestigen oder Zugang und Inspektion zu beeinträchtigen.",
+      "projectBrief": "Benennen Sie die Materialien der Präparate, die Vitrinenkonstruktion, Konservierungsmethoden und die Ausstellungen, die Lichtüberwachung erfordern.",
+      "image": {
+        "name": "natural-history.webp",
+        "alt": "Mineralien und Fossilien in gläsernen Museumsvitrinen.",
+        "caption": "Ausstellungsumgebungen naturkundlicher Sammlungen",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-historic-interior-display",
+      "group": "museums",
+      "title": "Präsentationen historischer Räume und Möbel",
+      "description": "Überwachen Sie die Bedingungen im Umfeld von Möbeln, Wandbekleidungen und dekorativen Objekten in einem museal vermittelten historischen Raum. Vergleichen Sie lokale Messwerte mit der Raumnutzung und dem saisonalen Heizplan. Optionale Beleuchtungsstärkemessungen nahe fensterseitiger Präsentationen helfen Mitarbeitenden, den Einfluss des Tageslichts und ihrer bestehenden Vorhang- oder Fensterladenroutine zu beurteilen.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke an ausgewählten fensterseitigen Objekten.",
+      "monitoringPoint": "Repräsentative Sammlungspositionen, einschließlich eines separaten Messpunkts im Randbereich, wenn der Erhaltungsplan dies vorsieht.",
+      "installation": "Nutzen Sie eine reversible, genehmigte Halterung an modernen Einbauten; lassen Sie historische Oberflächen und Einrichtungsgegenstände unberührt.",
+      "projectBrief": "Teilen Sie uns Raumplan, Objektmaterialien, Tageslichtverlauf, Heizplan und zulässige Montageorte mit.",
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "Historische Holzmöbel und Porträts in einem erhaltenen Museumsraum.",
+        "caption": "Historische Innenräume und möblierte Räume des Kulturerbes",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-painting-display",
+      "group": "galleries",
+      "title": "Gemäldegalerien",
+      "description": "Verfolgen Sie das Klima im Umfeld von Gemälden an unterschiedlichen Wänden und in verschiedenen Raumzonen. Mitarbeitende können Trends mit Änderungen an der Heizungs-, Lüftungs- und Klimatechnik sowie der Ausstellungsanordnung vergleichen, statt für jede Hängeposition den zentralen Raummesswert vorauszusetzen. Optionale Beleuchtungsstärkemessungen unterstützen die Prüfung der für jeden Ausstellungsbereich vereinbarten Beleuchtung.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke in ausgewählten Präsentationsebenen von Gemälden.",
+      "monitoringPoint": "Genehmigte Positionen nahe den Hängeflächen, die die Umgebung der Kunstwerke und nicht einen Zuluftstrahl abbilden.",
+      "installation": "Befestigen Sie Geräte an separaten genehmigten Halterungen; behalten Sie beim Vergleich von Messwerten über längere Zeit die Platzierung bei.",
+      "projectBrief": "Teilen Sie uns Bildträger und verwendete Medien, Hängepositionen, Raumeinstellungen und Beleuchtungsplan mit.",
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "Zeitgenössische Kunstgalerie mit gerahmten Gemälden und Deckenbeleuchtung auf Stromschienen",
+        "caption": "Beispiel einer zeitgenössischen Galerieumgebung zur Überwachung von Temperatur, Luftfeuchte und Beleuchtungsstärke.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-works-on-paper",
+      "group": "galleries",
+      "title": "Ausstellungen von Arbeiten auf Papier",
+      "description": "Erstellen Sie während der Ausstellung eine Umgebungsdokumentation für Zeichnungen, Aquarelle und Druckgrafiken. Ausgewählte Beleuchtungsstärkemessungen bieten Mitarbeitenden einen praktischen Referenzwert, wenn Strahler angepasst oder Werke ausgetauscht werden. Beurteilen Sie Temperatur und Luftfeuchte anhand des materialspezifischen Ausstellungsplans und der vereinbarten Ausstellungsdauer.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke bei der Ausstellung von Arbeiten auf Papier.",
+      "monitoringPoint": "Eine dokumentierte Position und Ausrichtung, die die ausgestellte Papierfläche repräsentieren.",
+      "installation": "Verwenden Sie eine genehmigte unabhängige Halterung oder Ausstellungsvorrichtung; vermeiden Sie eine Sensorposition in einem nicht repräsentativen Schattenbereich.",
+      "projectBrief": "Geben Sie die Empfindlichkeit der verwendeten Medien, Rahmungsdetails, Beleuchtungspositionen, den Wechselplan und anerkannte konservatorische Grenzwerte an.",
+      "image": {
+        "name": "works-on-paper-gallery.webp",
+        "alt": "Ausstellung von Arbeiten auf Papier mit konservatorischer Rahmung und sanfter Galerienbeleuchtung",
+        "caption": "Beispiel einer Ausstellung von Papierkunst, in der die Bedingungen nahe den präsentierten Werken beobachtet werden können.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-photographic-exhibition",
+      "group": "galleries",
+      "title": "Fotografieausstellungen",
+      "description": "Unterstützen Sie den Ausstellungsplan für fotografische Abzüge mit lokalen Klima- und, sofern spezifiziert, Beleuchtungsstärkemesswerten. Fotografische Verfahren unterscheiden sich, daher legt der Kurator oder Restaurator die Zielwerte fest. Mitarbeitende können die Umgebung nach Beleuchtungsanpassungen beurteilen und für die Ausstellungsdauer eine kontextbezogene Dokumentation führen.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für ausgestellte fotografische Abzüge.",
+      "monitoringPoint": "Ausgewählte Präsentationspositionen fotografischer Abzüge, die Beleuchtung und Raumbedingungen jedes Ausstellungsabschnitts repräsentieren.",
+      "installation": "Befestigen Sie den Sensor mit Abstand zu Rahmen an genehmigten Galerievorrichtungen und verwenden Sie eine reproduzierbare Lichtausrichtung, wenn dieser Kanal geliefert wird.",
+      "projectBrief": "Führen Sie fotografische Verfahren, Rahmung oder Verglasung, Ausstellungsdaten und die Präsentationsanforderungen des Restaurierungsteams auf.",
+      "image": {
+        "name": "photography-gallery.webp",
+        "alt": "Galerie für Schwarzweißfotografie mit gerahmten Abzügen und kontrollierter Beleuchtung",
+        "caption": "Beispiel einer fotografischen Sammlung unter kontrollierter Galerienbeleuchtung.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-temporary-exhibition",
+      "group": "galleries",
+      "title": "Temporäre Ausstellungsinstallationen",
+      "description": "Ermitteln Sie vor Eröffnung einer temporären Ausstellung einen lokalen Ausgangszustand und vergleichen Sie anschließend Messwerte bei Veränderungen von Vitrinen, Beleuchtung und Raumnutzung. So erhalten Installationsteam und Kurator eine Umgebungsreferenz für die Übergabe. Wählen Sie Messpunkte anhand der fertiggestellten Ausstellung, statt Positionen aus einer früheren Anordnung beizubehalten.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für die neue Ausstellungsanordnung.",
+      "monitoringPoint": "Neue Vitrinen- und Wandzonen, die bei der Prüfung der Ausstellungsinstallation identifiziert werden.",
+      "installation": "Nutzen Sie abnehmbare genehmigte Befestigungen und dokumentieren Sie jeden Standort, damit Messwerte während der gesamten Ausstellung interpretierbar bleiben.",
+      "projectBrief": "Teilen Sie uns Installationsplan, ausgestellte Materialien, Aufbaudaten, Messdauer und Übergabeanforderungen mit.",
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "Zeitgenössische Kunstgalerie mit gerahmten Gemälden und Deckenbeleuchtung auf Stromschienen",
+        "caption": "Beispiel einer zeitgenössischen Galerieumgebung zur Überwachung von Temperatur, Luftfeuchte und Beleuchtungsstärke.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-loan-handover",
+      "group": "galleries",
+      "title": "Leihausstellungen und Annahmeräume",
+      "description": "Erstellen Sie eine Dokumentation des Klimas in Ausstellung und Annahmeraum für Gespräche mit dem Leihgeber. Stimmen Sie Sensorpositionen und Übertragungsregelungen auf die Leihanforderungen ab. Teams können lokale Messwerte vor der Eröffnung und während der Ausstellung beurteilen, ergänzt durch optionale Beleuchtungsstärkeüberwachung an den im Ausstellungsvertrag festgelegten Positionen.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke, wenn der Leihvertrag dies erfordert.",
+      "monitoringPoint": "Vereinbarte Annahme- und Präsentationspositionen mit Kennungen, die der Leihdokumentation entsprechen.",
+      "installation": "Bestätigen Sie Befestigung, Zugang und Messanordnung mit dem Registrar und Restaurator, bevor die Werke eintreffen.",
+      "projectBrief": "Geben Sie Leihbedingungen, Raumaufteilung des Veranstaltungsorts, Handhabungszeitplan, erforderliche Aufzeichnungen und Zuständigkeiten für die Prüfung der Messwerte an.",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "Museumssammlungsdepot mit Schränken und sorgfältig angeordneten gelagerten Objekten",
+        "caption": "Sammlungsdepot · Beispielszene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-daylight-skylight",
+      "group": "galleries",
+      "title": "Galerien mit Tageslicht und Oberlicht",
+      "description": "Vergleichen Sie die Umgebung in Ausstellungszonen mit wechselndem Tageslichteinfall. Optionale Beleuchtungsstärkemessungen helfen Mitarbeitenden, bestehende Jalousien, Verschattungen und Beleuchtungszeiten zu beurteilen; Temperatur und Luftfeuchte zeigen das lokale Klima. Positionieren Sie jeden Sensor entsprechend dem Ausstellungsziel und behalten Sie beim Vergleich von Tagesverläufen seine Ausrichtung bei.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke in ausgewählten, vom Tageslicht beeinflussten Ausstellungszonen.",
+      "monitoringPoint": "Eine repräsentative Präsentationsebene und ein dokumentierter Klimamesspunkt im vom Tageslicht beeinflussten Galeriebereich.",
+      "installation": "Vereinbaren Sie Positionen, die unbeabsichtigte Verschattung vermeiden; verwenden Sie genehmigte Halterungen und prüfen Sie die Leistung des Lichtkanals anhand der vorgesehenen Bedingungen.",
+      "projectBrief": "Teilen Sie uns die Ausrichtung von Fenstern oder Oberlichtern, saisonale Tageslichtverläufe, Verschattungslösungen und Ausstellungsprioritäten mit.",
+      "image": {
+        "name": "daylit-gallery.webp",
+        "alt": "Museumsausstellungsraum mit Tageslicht und unterschiedlichen Lichtverhältnissen am Fenster und im Rauminneren",
+        "caption": "Beispiel eines Ausstellungsraums mit Tageslicht durch Oberlicht und Seitenfenster zum Vergleich der lokalen Beleuchtungsstärke.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-mobile-stacks",
+      "group": "archives",
+      "title": "Archivmagazine und Fahrregalanlagen",
+      "description": "Erstellen Sie eine lokale Klimadokumentation für Archivgänge und Regalzonen. Vergleichen Sie ausgewählte Positionen bei der Beurteilung saisonaler Verläufe oder Änderungen der Lageranordnung. Temperatur und Luftfeuchte sind in geschlossenen Magazinen die wichtigsten Messgrößen; ergänzen Sie einen Lichtkanal nur bei einer definierten Frage zur Lichtexposition.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke bei einer identifizierten Fragestellung zur Lichtexposition bei der Lagerung.",
+      "monitoringPoint": "Repräsentative Regalhöhen und Gangzonen, ausgewählt anhand des Überwachungsplans für das Magazin.",
+      "installation": "Befestigen Sie den Sensor mit Abstand zu beweglichen Regalen und Kartons; erhalten Sie freie Luftanströmung und sicheren Zugang für das Magazinpersonal.",
+      "projectBrief": "Teilen Sie uns Magazinabmessungen, Regalanordnung, Materialarten, aktuelle Zielwerte und den vorgesehenen Überwachungszeitraum mit.",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "Fahrbare Archivregale mit Archivkartons und gebundenem Archivgut",
+        "caption": "Beispiel eines Archivmagazins mit Zugangsgängen zur Beobachtung lokaler Erhaltungsbedingungen.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "library-rare-book-store",
+      "group": "archives",
+      "title": "Magazine für seltene Bücher und Sondersammlungen",
+      "description": "Verfolgen Sie das Klima nahe seltenen Büchern und gebundenen Sondersammlungen im Jahresverlauf. Lokale Aufzeichnungen helfen Bibliothekaren, Lagerzonen zu vergleichen und die Auswirkungen von Änderungen an Heizung oder Raumnutzung zu beurteilen. Konzentrieren Sie sich bei geschlossener Lagerung auf Temperatur und Luftfeuchte, ergänzt durch ausgewählte Lichtüberwachung dort, wo Lichtexposition relevant ist.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für ausgewählte, dem Licht ausgesetzte Sammlungspositionen.",
+      "monitoringPoint": "Repräsentative Regale oder Schrankluft, mit Abstand zu Heizkörpern, Lüftungsöffnungen und direktem Fenstereinfluss, sofern diese nicht Gegenstand der Untersuchung sind.",
+      "installation": "Nutzen Sie genehmigte Regal- oder Wandhalterungen und halten Sie Verkehrswege sowie Wege für die Entnahme von Sammlungsgut frei.",
+      "projectBrief": "Geben Sie Buch- und Einbandarten, Magazinaufteilung, Heizungsanordnung und besondere konservatorische Anforderungen an.",
+      "image": {
+        "name": "rare-book-room.webp",
+        "alt": "Leseraum für seltene Bücher mit geschützten Regalen und einer Handschrift auf einer Buchstütze",
+        "caption": "Beispiel eines Raums für Sondersammlungen zur Beobachtung lokaler Temperatur, Luftfeuchte und Beleuchtung im Lesebereich.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "library-special-reading-room",
+      "group": "archives",
+      "title": "Lesesäle für Sondersammlungen",
+      "description": "Erfassen Sie das lokale Klima dort, wo Leser seltene Materialien einsehen, und wählen Sie eine Beleuchtungsstärkeüberwachung an der Lesefläche, wenn die Lichtexposition Teil des Pflegeplans ist. Mitarbeitende können Messwerte mit Öffnungszeiten, Tageslicht und Nutzungsterminen abgleichen und damit eine praktische Diskussion über Raumeinstellungen und Regelungen zur Sammlungsnutzung unterstützen.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke an einer ausgewählten Lesefläche.",
+      "monitoringPoint": "Repräsentative Leseplätze mit einer auf die Materialauflagefläche ausgerichteten Lichtsensorebene.",
+      "installation": "Nutzen Sie eine genehmigte unauffällige Befestigung mit Abstand zu Lesern, Buchstützen und Hilfsmitteln für die Handhabung.",
+      "projectBrief": "Teilen Sie uns Raumöffnungszeiten, Tageslichtbedingungen, Richtlinien zur Materialnutzung, Tischanordnung und Überwachungsprioritäten mit.",
+      "image": {
+        "name": "rare-book-room.webp",
+        "alt": "Leseraum für seltene Bücher mit geschützten Regalen und einer Handschrift auf einer Buchstütze",
+        "caption": "Beispiel eines Raums für Sondersammlungen zur Beobachtung lokaler Temperatur, Luftfeuchte und Beleuchtung im Lesebereich.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-map-plan-cabinets",
+      "group": "archives",
+      "title": "Schränke für Karten, Pläne und großformatige Papierobjekte",
+      "description": "Messen Sie das lokale Klima im Umfeld großformatiger Papierobjekte in Planschränken. Vergleichen Sie Schrank- und Raumpositionen, wenn der Lagerplan diese Unterscheidung erfordert, insbesondere nach einer Umordnung oder Änderungen im Raumbetrieb. Temperatur und Luftfeuchte sind die wichtigsten Kanäle; routinemäßige Dunkellagerung erfordert nicht grundsätzlich eine Lichtüberwachung.",
+      "measurement": "Temperatur und relative Luftfeuchte an ausgewählten Schrankpositionen oder nahe gelegenen Raumpositionen.",
+      "monitoringPoint": "Genehmigte Luftbereiche im Schrank oder ein nahe gelegener repräsentativer Messpunkt, ausgewählt ohne die gelagerten Blätter zu bewegen.",
+      "installation": "Halten Sie Abstand zwischen Gerät, Schubladen und Papier; bestätigen Sie vor der Auswahl einer internen Anordnung ausreichenden Freiraum und Luftzugang.",
+      "projectBrief": "Geben Sie Schrankabmessungen, Papiermedien, Schubladenzugang, umgebende Raumaufteilung und Zielbedingungen an.",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "Fahrbare Archivregale mit Archivkartons und gebundenem Archivgut",
+        "caption": "Beispiel eines Archivmagazins mit Zugangsgängen zur Beobachtung lokaler Erhaltungsbedingungen.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-photograph-store",
+      "group": "archives",
+      "title": "Depots für fotografische Abzüge",
+      "description": "Dokumentieren Sie die Raumumgebung fotografischer Abzüge, die in Schutzkartons und Schränken lagern. Sammlungsmitarbeitende können ausgewählte Standorte und saisonale Trends mit den Anforderungen der von ihnen betreuten fotografischen Verfahren vergleichen. Legen Sie zuerst Temperatur und Luftfeuchte fest; nutzen Sie einen Lichtkanal nur für eine definierte Studie zu Handhabung oder Lichtexposition.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für eine definierte Studie zu Handhabung oder Lichtexposition.",
+      "monitoringPoint": "Raum- oder Schrankpositionen, die die ausgewählte Sammlung fotografischer Abzüge repräsentieren.",
+      "installation": "Nutzen Sie genehmigte Halterungen mit Abstand zu Kartons und Luftströmungshindernissen sowie gutem Zugang für Routineprüfungen.",
+      "projectBrief": "Benennen Sie fotografische Verfahren, Lagertemperaturen, Behältnisanordnung und den vorgesehenen Beurteilungszeitraum.",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "Fahrbare Archivregale mit Archivkartons und gebundenem Archivgut",
+        "caption": "Beispiel eines Archivmagazins mit Zugangsgängen zur Beobachtung lokaler Erhaltungsbedingungen.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-digitisation-workroom",
+      "group": "archives",
+      "title": "Digitalisierungs- und Scanarbeitsräume",
+      "description": "Beurteilen Sie die lokale Umgebung, während Dokumente und Bücher einen Digitalisierungsarbeitsraum durchlaufen. Temperatur und Luftfeuchte liefern Kontext für Handhabungsvorgänge und Raumveränderungen. Optionale Beleuchtungsstärkemessungen können bei Bedarf das Umgebungslicht an ausgewählten Arbeitspositionen beschreiben; fotografische Belichtung und Prüfung der Reproduktionsbeleuchtung bleiben Teil des Aufnahmeablaufs.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Umgebungsbeleuchtungsstärke an ausgewählten Handhabungspositionen.",
+      "monitoringPoint": "Materialbereitstellungs- und Handhabungszonen, ausgewählt im Zusammenhang mit der Anordnung der Scangeräte.",
+      "installation": "Befestigen Sie den Sensor mit Abstand zu beweglichen Kamerageräten und direkter Gerätewärme an Positionen, die mit den Aufnahme- und Restaurierungsteams abgestimmt sind.",
+      "projectBrief": "Teilen Sie uns Materialarten, Handhabungszeiten, Gerätewärmequellen, Raumaufteilung und die zu beantwortende Umgebungsfrage mit.",
+      "image": {
+        "name": "digitisation-room.webp",
+        "alt": "Digitalisierungsarbeitsraum einer Bibliothek mit Aufsicht-Buchscanner, Buchwiege und Tischen zur Dokumentensortierung",
+        "caption": "Beispiel eines Arbeitsraums zur Dokumentendigitalisierung mit Aufsichtscanner und Arbeitsstationen für Papiermaterialien.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-mixed-object-store",
+      "group": "collections",
+      "title": "Depots für gemischte Objektsammlungen",
+      "description": "Stellen Sie Sammlungsleitern eine Klimadokumentation für die unterschiedlichen Lagerzonen eines Depots mit gemischten Objekten bereit. Ein Raum kann Objekte mit unterschiedlichen Anforderungen enthalten; Sensorpositionen und Beurteilungskriterien richten sich daher nach dem Sammlungsplan. Vergleichen Sie lokale Messwerte bei Routineinspektionen, saisonalen Prüfungen und Änderungen der Regalanordnung.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für identifizierte, dem Licht ausgesetzte Objekte oder Handhabungszonen.",
+      "monitoringPoint": "Repräsentative Regale und Lagerzonen mit zusätzlichen Positionen für abweichende Behältnis- oder Raumbedingungen.",
+      "installation": "Nutzen Sie genehmigte Regal- oder Wandhalterungen mit freier Luftanströmung, sicheren Entnahmewegen und gut zugänglicher Gerätekennzeichnung.",
+      "projectBrief": "Führen Sie Sammlungsmaterialien, Behältnisarten, Raumplan, bestehende Klimaziele und Inspektionsroutinen auf.",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "Museumssammlungsdepot mit Schränken und sorgfältig angeordneten gelagerten Objekten",
+        "caption": "Sammlungsdepot · Beispielszene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-painting-rack-store",
+      "group": "collections",
+      "title": "Gemälderegale und Bilderdepots",
+      "description": "Überwachen Sie das lokale Klima im Umfeld gelagerter Gemälde und vergleichen Sie ausgewählte Regalpositionen mit der Raumreferenz. Mitarbeitende können die Aufzeichnungen bei Lagerprüfungen und Änderungen der Regalbelegung nutzen. Temperatur und Luftfeuchte sind die zentralen Messgrößen; Lichtüberwachung wird nur ausgewählt, wenn eine Lichtexpositions- oder Handhabungsroutine beurteilt werden soll.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für eine definierte Fragestellung zur Lichtexposition bei der Lagerung.",
+      "monitoringPoint": "Genehmigte Positionen neben Bilderregalen mit ausgewählten Messpunkten im Raumrandbereich, wenn der Sammlungsplan einen Vergleich erfordert.",
+      "installation": "Halten Sie Sensoren von Schieberegalen, Bilderrahmen und Transportwegen fern; erhalten Sie reproduzierbare Positionen.",
+      "projectBrief": "Geben Sie Gemäldematerialien, Regalanordnung, Raumklimaziele, Zugangszeiten und etwaige Fragestellungen zu Randbereichen an.",
+      "image": {
+        "name": "painting-store.webp",
+        "alt": "Gemälde auf verschiebbaren Gitterregalen in einem klimatisierten Museumssammlungsdepot",
+        "caption": "Beispiel eines musealen Gemäldedepots mit verschiebbaren Sammlungsregalen.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-textile-drawer-store",
+      "group": "collections",
+      "title": "Textilschubladen und Kostümdepots",
+      "description": "Verfolgen Sie das Klima im Umfeld gelagerter Kostüme und flach liegender Textilien und wählen Sie Schrank- oder Raumpositionen entsprechend der Sammlungsanordnung. Lokale Messwerte helfen Mitarbeitenden, die Bedingungen nach Zugang, saisonalen Veränderungen oder einer Lagerneuordnung zu beurteilen. Temperatur und Luftfeuchte haben Vorrang; geschützte Dunkellagerung erfordert Lichtmessung nur bei einem konkreten Bedarf.",
+      "measurement": "Temperatur und relative Luftfeuchte an ausgewählten Textillagerpositionen.",
+      "monitoringPoint": "Ein repräsentativer Standort im Kostümdepot oder ein genehmigter Schrankbereich ohne Materialkontakt.",
+      "installation": "Erhalten Sie den Freiraum für Schubladen und einen sicheren Zugang zu Kleidungsstücken; stimmen Sie unauffällige Halterungen mit dem Team für Sammlungspflege ab.",
+      "projectBrief": "Teilen Sie uns Textilmaterialien, Lagerungsform, Schrankabmessungen, Raumzielwerte und die geplante Zugangshäufigkeit mit.",
+      "image": {
+        "name": "textile-store.webp",
+        "alt": "Historisches besticktes Textil, flach in einer Museumsschublade gelagert, neben gepolsterten Textilrollen",
+        "caption": "Beispiel eines Textildepots mit konservatorischer Flach- und Rollenlagerung.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-receiving-room",
+      "group": "collections",
+      "title": "Räume für Sammlungsannahme und Zustandsbeurteilung",
+      "description": "Erfassen Sie das Raumklima, während eingehende Objekte beurteilt und für ihre nächste Lager- oder Ausstellungsposition vorbereitet werden. Mitarbeitende können den Annahmeraum mit den Zielbereichen vergleichen und den Kontext des Handhabungszeitplans dokumentieren. Der Registrar oder Restaurator legt die benötigten Beobachtungen für jedes Material und jeden Anlieferungsprozess fest.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke an vereinbarten Beurteilungspositionen.",
+      "monitoringPoint": "Annahme- und Bereitstellungsorte, die die Objektumgebung während des vereinbarten Beobachtungszeitraums repräsentieren.",
+      "installation": "Nutzen Sie separate genehmigte Halterungen mit Abstand zu Transportkisten und Transportverkehr; dokumentieren Sie Standorte und Änderungen im Raumbetrieb.",
+      "projectBrief": "Geben Sie Anlieferungs- und Auspackverfahren, Sammlungsmaterialien, Bereitstellungsdauer und Klimaanforderungen des Zielorts an.",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "Museumssammlungsdepot mit Schränken und sorgfältig angeordneten gelagerten Objekten",
+        "caption": "Sammlungsdepot · Beispielszene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-conservation-studio",
+      "group": "collections",
+      "title": "Restaurierungswerkstätten",
+      "description": "Machen Sie die Werkstattumgebung während Untersuchung, Dokumentation und Arbeit am Werktisch sichtbar. Temperatur- und Luftfeuchtemesswerte liefern Kontext für den Arbeitsbereich und seinen täglichen Betrieb. Optionale Beleuchtungsstärkeüberwachung kann eine definierte Beurteilung des Umgebungslichts unterstützen; der Restaurator wählt die Positionen und interpretiert die Messwerte im Zusammenhang mit Behandlungs- und Untersuchungsanforderungen.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Umgebungsbeleuchtungsstärke für ausgewählte Arbeitspositionen.",
+      "monitoringPoint": "Repräsentative Luftbereiche an Werktischen und Objektbereitstellungsplätzen, mit Abstand zu konzentrierter Prozesswärme und lokaler Geräteabluft.",
+      "installation": "Nutzen Sie genehmigte unabhängige Halterungen und eine Anordnung, die sicheren Arbeitsraum, Reinigungszugang und Materialhandhabung erhält.",
+      "projectBrief": "Teilen Sie uns Raumnutzung, Arbeitszeiten, behandlungsbezogene Klimaanforderungen und die zu vergleichenden Positionen mit.",
+      "image": {
+        "name": "conservation-studio.webp",
+        "alt": "Restaurierungswerktisch in einem Museum mit gestütztem Keramikgefäß und Stereomikroskop",
+        "caption": "Beispiel einer musealen Werkstatt zur Objektrestaurierung.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-framing-mounting",
+      "group": "collections",
+      "title": "Räume für Rahmung und Ausstellungsvorbereitung",
+      "description": "Verfolgen Sie das lokale Klima dort, wo Rahmen, Halterungen und Sammlungsmaterialien für die Ausstellung zusammengestellt werden. Mitarbeitende können die Bedingungen im Vorbereitungsraum vor der Installation mit dem Zielausstellungsraum vergleichen. Optionale Beleuchtungsstärkemessungen sind bei der Prüfung einer Ausstellungsprobe sinnvoll; richten Sie diese Messung auf die vorgesehene Ausstellungsebene und nicht auf die allgemeine Werkstatthelligkeit aus.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für eine Probe der Ausstellungsbeleuchtung.",
+      "monitoringPoint": "Materialbereitstellungs- und Montagezonen sowie die ausgewählte Präsentationsebene für etwaige Beleuchtungsproben.",
+      "installation": "Befestigen Sie den Sensor an genehmigten Werkstattvorrichtungen mit Abstand zu Werkbänken, Schneidgeräten und Transportwegen für Sammlungsgut.",
+      "projectBrief": "Geben Sie Material- und Montageplan, Anforderungen des Zielausstellungsraums, Vorbereitungszeitplan und etwaige Details zur Beleuchtungsprobe an.",
+      "image": {
+        "name": "conservation-studio.webp",
+        "alt": "Restaurierungswerktisch in einem Museum mit gestütztem Keramikgefäß und Stereomikroskop",
+        "caption": "Beispiel einer musealen Werkstatt zur Objektrestaurierung.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-analytical-room",
+      "group": "laboratories",
+      "title": "Analytische Laborräume",
+      "description": "Ergänzen Sie Laborabläufe um eine lokale Umgebungsdokumentation, wenn Raumtemperatur oder Luftfeuchte für die Methode relevant sind. Mitarbeitende können Messwerte zusammen mit Gerätenutzung und Prüfzeiten beurteilen und Veränderungen anschließend anhand der eigenen Akzeptanzkriterien des Labors untersuchen. Wählen Sie Positionen, die den Arbeitsbereich repräsentieren, und vereinbaren Sie die erforderlichen Verifizierungsmaßnahmen.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke, wenn die Methode eine Lichtbedingung vorgibt.",
+      "monitoringPoint": "Repräsentative analytische Arbeitsbereiche, die im Umweltüberwachungsplan des Labors festgelegt sind.",
+      "installation": "Nutzen Sie genehmigte Positionen mit Abstand zu Gerätewärme, Abzugsabluft und Reinigungswegen; bestätigen Sie Material- und Kalibrierungsanforderungen.",
+      "projectBrief": "Teilen Sie uns Methodenanforderungen, Raumaufteilung, Akzeptanzkriterien, Dokumentationsbedarf und das Verifizierungsverfahren des Labors mit.",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "Analytisches Labor mit Chromatografiegeräten und einer Waage mit Windschutz auf einer Laborbank",
+        "caption": "Beispiel eines Laborarbeitsplatzes mit Analysegeräten.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-weighing-room",
+      "group": "laboratories",
+      "title": "Präzisionswägeräume",
+      "description": "Stellen Sie dem Wägepersonal eine lokale Temperatur- und Luftfeuchtedokumentation zur Beurteilung der Bedingungen im Umfeld von Präzisionswaagen bereit. Die Daten können zusammen mit Wägevorgängen und dem Messverfahren des Labors betrachtet werden. Wählen Sie einen Raummesspunkt, der den Waagenbereich repräsentiert, ohne Zugang, Gerätebetrieb oder die Maßnahmen zum Schutz vor Luftzug zu beeinträchtigen.",
+      "measurement": "Temperatur und relative Luftfeuchte im Umfeld des ausgewählten Wägebereichs.",
+      "monitoringPoint": "Eine repräsentative Position nahe dem Waagenbereich, abgestimmt mit dem für das Messverfahren verantwortlichen Labor.",
+      "installation": "Halten Sie Abstand zwischen Gerät, Waagengehäuse und vibrationssensibler Arbeitsbank und ermöglichen Sie eine ungehinderte Erfassung der Raumluft.",
+      "projectBrief": "Geben Sie Anforderungen des Wägeraums, Arbeitszeiten, Geräteanordnung und die für die Methode benötigte Umgebungsdokumentation an.",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "Analytisches Labor mit Chromatografiegeräten und einer Waage mit Windschutz auf einer Laborbank",
+        "caption": "Beispiel eines Laborarbeitsplatzes mit Analysegeräten.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-ambient-sample-store",
+      "group": "laboratories",
+      "title": "Rückstellmusterlager bei Raumtemperatur",
+      "description": "Verfolgen Sie die Raumbedingungen für Proben, die gemäß ihren genehmigten Anweisungen bei Raumtemperatur gelagert werden. Lokale Messwerte liefern dem Labor Kontext für regelmäßige Prüfungen und Änderungen der Lageranordnung. Wählen Sie einen Beleuchtungsstärkekanal nur, wenn Probe oder Verfahren eine Anforderung zur Lichtexposition enthalten, und vereinbaren Sie vor der Bereitstellung die erforderlichen Aufzeichnungen.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke, wenn die Probenlageranweisungen dies erfordern.",
+      "monitoringPoint": "Repräsentative Regalzonen für den Probenlagerraum bei Raumtemperatur.",
+      "installation": "Befestigen Sie den Sensor mit Abstand zu Probenbehältern und Entnahmewegen und dokumentieren Sie Positionen und Gerätekennungen im Lagerplan.",
+      "projectBrief": "Führen Sie Probenarten, erforderliche Lagerbedingungen, Regalanordnung, Lagerdauer und Zuständigkeiten für die Prüfung der Aufzeichnungen auf.",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "Verpackte pharmazeutische Produkte in Regalen eines Innenlagers bei Raumtemperatur",
+        "caption": "Beispiel eines pharmazeutischen Lagerraums bei Raumtemperatur.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "pharma-ambient-stockroom",
+      "group": "laboratories",
+      "title": "Pharmazeutische Lagerräume bei Raumtemperatur",
+      "description": "Erstellen Sie eine lokale Raumbedingungsdokumentation für Arzneimittel mit genehmigten Lageranweisungen bei Raumtemperatur. Wählen Sie Positionen anhand der Lageranordnung und etwaiger bereits durchgeführter räumlicher Klimamessungen der Einrichtung. Temperatur, Luftfeuchte und optionale Beleuchtungsstärke werden entsprechend den Produktanforderungen ausgewählt; das Qualitätsteam legt Akzeptanz-, Kalibrierungs- und Dokumentationsprüfverfahren fest.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke, wenn die genehmigten Produktlagerbedingungen dies erfordern.",
+      "monitoringPoint": "Lagerpunkte, ausgewählt anhand der Einrichtungsbewertung oder räumlichen Klimamessung, statt ausschließlich anhand einer bequem zugänglichen zentralen Wand.",
+      "installation": "Bestätigen Sie hygienische Befestigung, Zugang, Konnektivität und erforderliche Geräteverifizierung mit der Einrichtung und dem Qualitätsteam.",
+      "projectBrief": "Geben Sie Produktlageranweisungen, Raumaufteilung oder Ergebnisse räumlicher Klimamessungen, Überwachungsanforderungen und die vorgesehene Systemintegration an.",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "Verpackte pharmazeutische Produkte in Regalen eines Innenlagers bei Raumtemperatur",
+        "caption": "Beispiel eines pharmazeutischen Lagerraums bei Raumtemperatur.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "pharma-material-quarantine",
+      "group": "laboratories",
+      "title": "Lager für pharmazeutische Materialien und Verpackungen",
+      "description": "Überwachen Sie lokale Bedingungen dort, wo Rohstoffe oder Verpackungskomponenten definierte klimatische Lageranforderungen haben. Ordnen Sie Sensorpositionen der entsprechenden Zone und Materialspezifikation zu. Mitarbeitende können die Raumaufzeichnungen bei Lagerprüfungen und Änderungen der Einrichtung beurteilen, ergänzt durch optionale Lichtmessung für Materialien, deren genehmigte Anweisungen dies vorsehen.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für spezifizierte lichtempfindliche Lagermaterialien.",
+      "monitoringPoint": "Genehmigte Materiallager- und Quarantänezonen, ausgewählt anhand der Lagerbewertung der Einrichtung.",
+      "installation": "Nutzen Sie Positionen, die Trennung, Reinigungszugang und Kennzeichnung erhalten; bestätigen Sie die Eignung mit dem Qualitätsteam der Einrichtung.",
+      "projectBrief": "Teilen Sie uns Materialspezifikationen, Lagerzonenplan, Akzeptanzkriterien, Verifizierungsbedarf und Übertragungsregelungen mit.",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "Verpackte pharmazeutische Produkte in Regalen eines Innenlagers bei Raumtemperatur",
+        "caption": "Beispiel eines pharmazeutischen Lagerraums bei Raumtemperatur.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-instrument-workroom",
+      "group": "laboratories",
+      "title": "Räume für Forschungsgeräte und Vorbereitung",
+      "description": "Verfolgen Sie das lokale Klima im Umfeld gemeinsam genutzter Forschungsgeräte und Vorbereitungsarbeitsplätze, wenn das Verfahren dies erfordert. Eine Raumbedingungsdokumentation hilft Mitarbeitenden, Arbeitssitzungen mit Änderungen im Raumbetrieb zu vergleichen. Optionale Beleuchtungsstärkemessung kann für ein definiertes lichtempfindliches Verfahren ausgewählt werden; Messposition und Messleistung werden für diese Aufgabe vereinbart.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für ein definiertes Verfahren oder Material.",
+      "monitoringPoint": "Raumluft neben Geräten und Vorbereitungspositionen, ausgewählt zur Beantwortung der Überwachungsfrage des Labors.",
+      "installation": "Nutzen Sie genehmigte Halterungen mit Abstand zu Gerätewärme und laufenden Prozessen; erhalten Sie den Zugang für Reinigung und Routineprüfungen.",
+      "projectBrief": "Teilen Sie uns Raumfunktionen, Umgebungsanforderungen der Geräte, Prozesszeiten und die konkret benötigten Messgrößen mit.",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "Analytisches Labor mit Chromatografiegeräten und einer Waage mit Windschutz auf einer Laborbank",
+        "caption": "Beispiel eines Laborarbeitsplatzes mit Analysegeräten.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "datacentre-rack-inlet",
+      "group": "technology",
+      "title": "Rack-Lufteinlässe in Rechenzentren",
+      "description": "Messen Sie die der IT-Ausrüstung zugeführte Luft an ausgewählten Rack-Lufteinlässen, statt sich allein auf einen Raumdurchschnittswert zu verlassen. Vergleichen Sie lokale Temperatur- und Luftfeuchtetrends mit Änderungen an Racks und dem Kühlbetrieb. Die Positionswahl richtet sich nach der Geräteumgebung und dem Einrichtungsplan; Lichtmessung ist für diese Anwendung keine standardmäßige Anforderung.",
+      "measurement": "Temperatur und relative Luftfeuchte an ausgewählten Positionen der Gerätezuluft.",
+      "monitoringPoint": "Repräsentative Standorte und Höhen an den Lufteinlässen der Rack-Vorderseiten, ausgewählt vom Gebäudemanagementteam des Rechenzentrums.",
+      "installation": "Nutzen Sie genehmigte Rack-Halterungen mit Abstand zu Luftströmung, Türen und Verkabelung; wählen Sie Sensoranordnungen, die zum Messziel am Lufteinlass passen.",
+      "projectBrief": "Teilen Sie uns Rack-Anordnung, Lufteinlasspositionen, Geräteanforderungen, Kühlanordnung und Überwachungsplattform mit.",
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "Serverracks in einem Rechenzentrum mit klar abgegrenztem Gang",
+        "caption": "Rechenzentrumsumgebung · Beispielszene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-edge-it-room",
+      "group": "technology",
+      "title": "Edge-IT- und Netzwerktechnikräume",
+      "description": "Stellen Sie dem Gebäudemanagement eine lokale Klimadokumentation für kleine Serverräume und Netzwerkschränke bereit. Diese Bereiche können sich anders verhalten als das umgebende Gebäude; wählen Sie Messpunkte daher anhand des Luftwegs der Geräte und der Raumaufteilung. Temperatur- und Luftfeuchtemesswerte können Routineprüfungen nach Geräteerweiterungen oder Änderungen im Raumbetrieb unterstützen.",
+      "measurement": "Temperatur und relative Luftfeuchte an ausgewählten Raum- und Geräte-Lufteinlasspositionen.",
+      "monitoringPoint": "Gerätezuluft und eine repräsentative Raumreferenz, wenn der Vergleich den Überwachungsplan des Standorts unterstützt.",
+      "installation": "Halten Sie das Gerät von Abluftwärme und abgeschirmten Schrankecken fern; nutzen Sie genehmigte Halterungen mit zugänglichen Wartungswegen.",
+      "projectBrief": "Geben Sie Schrankabmessungen, Geräteanordnung, Kühlmöglichkeiten, Zugangszeiten und Konnektivitätsanforderungen an.",
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "Serverracks in einem Rechenzentrum mit klar abgegrenztem Gang",
+        "caption": "Rechenzentrumsumgebung · Beispielszene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-electronics-assembly",
+      "group": "technology",
+      "title": "Arbeitsbereiche für Elektronikmontage",
+      "description": "Erfassen Sie Temperatur und Luftfeuchte in ausgewählten Elektronikmontagezonen. Die lokale Dokumentation liefert dem Prozessteam Kontext für die Beurteilung von Raumbedingungen, saisonalen Veränderungen oder Arbeitsplatzanordnungen. Nutzen Sie sie zusammen mit dem etablierten Programm der Einrichtung für Komponentenhandhabung und ESD, ergänzt durch optionale Beleuchtungsstärkemessung für eine definierte Beurteilung der Arbeitsplatzbeleuchtung.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke bei ausgewählten Prüf- oder Montageaufgaben.",
+      "monitoringPoint": "Repräsentative Montage- und Prüfzonen, abgestimmt mit Prozess- und Gebäudemanagementteams.",
+      "installation": "Nutzen Sie genehmigte Halterungen mit Abstand zu Maschinen, Bewegungsbereichen der Bediener und lokaler Gerätewärme; beachten Sie die Montage- und Reinigungsanforderungen des Standorts.",
+      "projectBrief": "Teilen Sie uns Prozessplan, Komponentenanforderungen, Klimakriterien und die zu vergleichenden Positionen mit.",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "Präzisionsmontageplätze für Elektronik mit ESD-Matten und Stereomikroskopen",
+        "caption": "Beispiel eines Innenraumarbeitsplatzes für Elektronikmontage.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-component-storage",
+      "group": "technology",
+      "title": "Lagerung elektronischer Komponenten",
+      "description": "Verfolgen Sie die Raumbedingungen im Umfeld gelagerter elektronischer Komponenten und wählen Sie Schranküberwachung dort, wo die tatsächliche Lageranordnung dies erfordert. Mitarbeitende können lokale Messwerte zusammen mit Verpackungs-, Trockenmittel- und Handhabungsverfahren beurteilen. Temperatur und Luftfeuchte sind die zentralen Kanäle; die Anforderungen des Komponentenlieferanten bestimmen Zielwerte und notwendige Verifizierung.",
+      "measurement": "Temperatur und relative Luftfeuchte an ausgewählten Positionen im Komponentenraum oder an genehmigten Schrankpositionen.",
+      "monitoringPoint": "Lagerzonen, ausgewählt nach Komponentenempfindlichkeit und der vorhandenen Verpackungs- oder Schrankanordnung.",
+      "installation": "Bestätigen Sie vor der Spezifikation einer Schrankanordnung verfügbaren Platz, Luftzugang und Zugänglichkeit; halten Sie Wege für die Komponentenhandhabung frei.",
+      "projectBrief": "Geben Sie Komponentenlageranweisungen, Verpackungs- und Schrankarten, Zonenaufteilung und Überwachungskriterien an.",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "Präzisionsmontageplätze für Elektronik mit ESD-Matten und Stereomikroskopen",
+        "caption": "Beispiel eines Innenraumarbeitsplatzes für Elektronikmontage.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-cleanroom-environment",
+      "group": "technology",
+      "title": "Unterstützende Umgebungsüberwachung in Reinräumen",
+      "description": "Ergänzen Sie den Umgebungsplan eines Reinraums oder kontrollierten Arbeitsbereichs um lokale Temperatur- und Luftfeuchtebeobachtungen, wenn diese Bedingungen für den Prozess relevant sind. Vereinbaren Sie Sensorstandort, Befestigungsmaterialien, Reinigungszugang und Verifizierungsbedarf mit der Einrichtung. Optionale Beleuchtungsstärkemessung wird nur für ein konkretes Prozess- oder Arbeitsplatzbeleuchtungsziel ausgewählt.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke, wenn der kontrollierte Prozess dies vorgibt.",
+      "monitoringPoint": "Genehmigte Arbeitszonenstandorte, ausgewählt anhand der Umgebungsbewertung der Einrichtung.",
+      "installation": "Prüfen Sie Gehäusematerialien, Befestigung, Reinigbarkeit und Sensorzugang mit der Einrichtung, bevor Sie die zu liefernde Konfiguration wählen.",
+      "projectBrief": "Geben Sie Prozessanforderungen, Reinraumplan, Installationsbeschränkungen, Verifizierungserwartungen und gewünschte Plattformintegration an.",
+      "image": {
+        "name": "cleanrooms.webp",
+        "alt": "Sauberer Produktionsraum mit Arbeitsbänken und Industrieanlagen",
+        "caption": "Kontrollierte Produktionsumgebung · Beispielszene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-metrology-room",
+      "group": "technology",
+      "title": "Räume für Messtechnik und Kalibrierung",
+      "description": "Erfassen Sie lokale Temperatur und Luftfeuchte als Kontext für messtechnische Arbeiten. Labore können die Raumaufzeichnungen zusammen mit Messvorgängen und ihrer Bewertung der Messunsicherheit beurteilen. Wählen Sie Messpunkte und Verifizierungsanforderungen anhand der tatsächlichen Geräte und Verfahren; das Labor bestimmt die zulässigen Bedingungen für jede Aufgabe.",
+      "measurement": "Temperatur und relative Luftfeuchte für den ausgewählten Messarbeitsplatz.",
+      "monitoringPoint": "Repräsentative Bereiche für Geräte und Referenzartefakte, abgestimmt mit dem für die Messung verantwortlichen Labor.",
+      "installation": "Nutzen Sie unabhängige genehmigte Halterungen mit Abstand zu Gerätewärme und Bewegungswegen bei der Messung; erhalten Sie dokumentierte, reproduzierbare Positionen.",
+      "projectBrief": "Teilen Sie uns Umgebungsanforderungen der Geräte, Raumaufteilung, Messzeiten und erforderliche Kalibrierungs- oder Verifizierungsnachweise mit.",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "Analytisches Labor mit Chromatografiegeräten und einer Waage mit Windschutz auf einer Laborbank",
+        "caption": "Beispiel eines Laborarbeitsplatzes mit Analysegeräten.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-print-paper-store",
+      "group": "production",
+      "title": "Lagerung und Vorbereitung von Druckpapier",
+      "description": "Vergleichen Sie das lokale Klima im Papierlager mit dem Drucksaal oder Druckarbeitsbereich. Die beiden Aufzeichnungen helfen Mitarbeitenden, Umgebungsunterschiede zu beurteilen, wenn Papier zur Nutzung bewegt wird. Temperatur und Luftfeuchte sind die vorrangigen Messgrößen; optionale Beleuchtungsstärkemessung ist nur sinnvoll, wenn Tageslichtexposition Teil der Lagerfragestellung ist.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke bei einem definierten Anliegen zur Tageslichtexposition.",
+      "monitoringPoint": "Repräsentative Papierlager- und Vorbereitungspositionen, ausgewählt entlang des Materialflusswegs.",
+      "installation": "Befestigen Sie den Sensor mit Abstand zu Papierstapeln, direkter Maschinenwärme und Transportwegen; erhalten Sie freie Luftanströmung am Messpunkt.",
+      "projectBrief": "Teilen Sie uns Papierarten, den Ablauf vom Lager zum Arbeitsraum, Lieferantenanweisungen und die zu vergleichenden Positionen mit.",
+      "image": {
+        "name": "warehouses.webp",
+        "alt": "Lagerhalle mit in Kartons gelagerten Materialien und Regalen",
+        "caption": "Materiallagerumgebung · Beispielszene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-textile-materials",
+      "group": "production",
+      "title": "Textil- und Stoffmateriallager",
+      "description": "Erstellen Sie eine lokale Temperatur- und Luftfeuchtedokumentation im Umfeld von Textilbeständen und Vorbereitungsbereichen. Unterschiedliche Fasern und Ausrüstungen erfordern unterschiedliche Handhabungs- und Lagerbedingungen; das Materialteam legt daher die Beurteilungskriterien fest. Wählen Sie optionale Beleuchtungsstärkemessung, wenn Tageslichtexposition oder ein bestimmtes Material die Lichtbedingungen für die Lagerbewertung relevant machen.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für ausgewählte, dem Licht ausgesetzte Stoffbestände.",
+      "monitoringPoint": "Repräsentative Stoffregale, Rollenlagerzonen und Vorbereitungsbereiche, benannt vom Materialteam.",
+      "installation": "Nutzen Sie genehmigte Halterungen mit Abstand zu Lagergut und Handhabungsgeräten; vermeiden Sie Stoffkontakt und erhalten Sie den Zugang für Routineinspektionen.",
+      "projectBrief": "Geben Sie Faser- und Ausrüstungsarten, Lageranweisungen der Lieferanten, Raumaufteilung und Anliegen zur Lichtexposition an.",
+      "image": {
+        "name": "textile-store.webp",
+        "alt": "Historisches besticktes Textil, flach in einer Museumsschublade gelagert, neben gepolsterten Textilrollen",
+        "caption": "Beispiel eines Textildepots mit konservatorischer Flach- und Rollenlagerung.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-musical-instruments",
+      "group": "production",
+      "title": "Musikinstrumentenräume",
+      "description": "Verfolgen Sie das lokale Klima dort, wo Klaviere und andere feuchteempfindliche Instrumente gelagert oder genutzt werden. Mitarbeitende können die Raumaufzeichnungen mit Heizzeiten, Proben und Wartungsbeobachtungen vergleichen. Temperatur und Luftfeuchte sind die zentralen Kanäle; optionale Beleuchtungsstärke kann spezifiziert werden, wenn direktes Tageslicht an einem bestimmten Instrument beurteilt werden soll.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für eine identifizierte Fragestellung zum Lichteinfall durch Fenster.",
+      "monitoringPoint": "Repräsentative Raumluft im Instrumentenraum und ausgewählte fensterseitige Positionen, wenn der Pflegeplan einen Vergleich erfordert.",
+      "installation": "Nutzen Sie genehmigte unabhängige Halterungen mit Abstand zu Instrumenten, Musikern sowie Heizungs- oder Kühlluftauslässen.",
+      "projectBrief": "Teilen Sie uns Instrumentenarten, Pflegeanforderungen der Hersteller, Raumnutzung, Tageslichtanordnung und den Überwachungszeitraum mit.",
+      "image": {
+        "name": "musical-instrument-room.webp",
+        "alt": "Ein Klavier, ein Cello und Violinen in einem natürlich beleuchteten Musikübungsraum.",
+        "caption": "Innenraumbedingungen in Musikinstrumentenräumen",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-optics-spares",
+      "group": "production",
+      "title": "Lager für optische Geräte und Präzisionsausrüstung",
+      "description": "Erfassen Sie das lokale Klima für Geräte und Ersatzteile mit definierten klimatischen Lageranforderungen. Wählen Sie Raum- oder Schrankmesspunkte anhand der tatsächlichen Lageranweisungen und Verpackung. Mitarbeitende können die Messwerte bei Bestandsprüfungen und Änderungen der Einrichtung beurteilen und einen Lichtkanal nur ergänzen, wenn das gelagerte Material eine Studie zur Lichtexposition erfordert.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke, wenn Geräte- oder Materialanweisungen dies vorgeben.",
+      "monitoringPoint": "Ausgewählte Regalpositionen oder genehmigte Schrankpositionen, die die gelagerten Geräte und ihre Verpackungsanordnung repräsentieren.",
+      "installation": "Halten Sie Sensoröffnungen frei, ermöglichen Sie Schrankzugang und beachten Sie Beschränkungen des Lieferanten und der Einrichtung für die interne Installation.",
+      "projectBrief": "Geben Sie Gerätelageranforderungen, Verpackungsarten, Schrankaufteilung und die erforderlichen Überwachungskriterien an.",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "Präzisionsmontageplätze für Elektronik mit ESD-Matten und Stereomikroskopen",
+        "caption": "Beispiel eines Innenraumarbeitsplatzes für Elektronikmontage.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-filament-dry-storage",
+      "group": "production",
+      "title": "Materiallagerung für den 3D-Druck",
+      "description": "Verfolgen Sie die Luftbedingungen im Raum oder in genehmigten Trockenlagerbereichen im Umfeld feuchteempfindlicher Druckmaterialien. Die Dokumentation hilft Mitarbeitenden, die Lagerumgebung zusammen mit den Trocknungs-, Verpackungs- und Handhabungsanweisungen des Filamentlieferanten zu beurteilen. Wählen Sie die Sensoranordnung für den verfügbaren Platz und die vorgesehenen Bedingungen, mit Temperatur und Luftfeuchte als wichtigsten Messgrößen.",
+      "measurement": "Temperatur und relative Luftfeuchte an ausgewählten Positionen im Materialraum oder in genehmigten Trockenlagerbereichen.",
+      "monitoringPoint": "Filamentlager- und Vorbereitungszonen, ausgewählt anhand des Materialhandhabungsablaufs.",
+      "installation": "Bestätigen Sie vor der Auswahl einer Schrankanordnung Freiraum, Sensorzugang und geeignete Messleistung für die vorgesehenen Lagerbedingungen.",
+      "projectBrief": "Teilen Sie uns Filamentarten, Lageranweisungen der Lieferanten, Gehäuseabmessungen und die zu beantwortende Umgebungsfrage mit.",
+      "image": {
+        "name": "materials-dry-store.webp",
+        "alt": "Versiegelte Filamentspulen für den 3D-Druck auf Lagerregalen neben einer abgedichteten Trockenlagerbox",
+        "caption": "Beispiel einer Trockenlagerung für Polymerfilamente für den 3D-Druck.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-botanical-specimens",
+      "group": "production",
+      "title": "Präparation und Lagerung botanischer Belege",
+      "description": "Dokumentieren Sie das lokale Klima im Umfeld getrockneter Pflanzenbelege und Präparationsmaterialien. Mitarbeitende können Werkstatt- und Lagermesswerte bei der Beurteilung von Raumbetrieb und Handhabungsanordnung vergleichen. Temperatur und Luftfeuchte stehen routinemäßig im Mittelpunkt, ergänzt durch optionale Beleuchtungsstärkemessung dort, wo Belege gemäß einem definierten Lichtexpositionsplan gehandhabt oder ausgestellt werden.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke an ausgewählten Handhabungs- oder Ausstellungspositionen botanischer Belege.",
+      "monitoringPoint": "Repräsentative Präparations- und Trockenlagerbereiche, ausgewählt vom Sammlungs- oder Forschungsteam.",
+      "installation": "Nutzen Sie genehmigte Halterungen mit Abstand zu Belegen, Pressen und Lagerschubladen und erhalten Sie sicheren Zugang für Handhabung und Inspektion.",
+      "projectBrief": "Teilen Sie uns Beleg- und Präparationsarten, Lageranordnung, Raumanforderungen und Prioritäten zur Lichtexposition mit.",
+      "image": {
+        "name": "natural-history.webp",
+        "alt": "Mineralien und Fossilien in gläsernen Museumsvitrinen.",
+        "caption": "Ausstellungsumgebungen naturkundlicher Sammlungen",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-historic-rooms",
+      "group": "buildings",
+      "title": "Historische Innenräume und saisonal genutzte Gebäude",
+      "description": "Erstellen Sie eine Umgebungsdokumentation für historische Räume über Heizperioden und Nutzungszeiträume hinweg. Vergleichen Sie repräsentative Innenraumpositionen mit ausgewählten Randpositionen, wenn der Konservierungsplan diesen Kontext benötigt. Optionale Beleuchtungsstärkemessungen können die Beurteilung des Tageslichts im Umfeld von Oberflächen oder Einrichtungsgegenständen unterstützen; verwenden Sie für das Gebäude genehmigte Befestigungen.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke im Umfeld ausgewählter, vom Tageslicht beeinflusster Ausstattungsmerkmale.",
+      "monitoringPoint": "Genehmigte Raum- und Randpositionen, die die beobachtete Umgebung der Bausubstanz oder Sammlung repräsentieren.",
+      "installation": "Nutzen Sie reversible Halterungen an genehmigten modernen Einbauten und schützen Sie historische Bausubstanz und Besucherwege.",
+      "projectBrief": "Teilen Sie uns Gebäudenutzung, relevante Materialien oder Sammlungen, Heizplan, Raumplan und Montagegenehmigungen mit.",
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "Historische Holzmöbel und Porträts in einem erhaltenen Museumsraum.",
+        "caption": "Historische Innenräume und möblierte Räume des Kulturerbes",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-classrooms",
+      "group": "buildings",
+      "title": "Klassenzimmer und Lernräume",
+      "description": "Vergleichen Sie Temperatur und Luftfeuchte in ausgewählten Unterrichtsräumen und beurteilen Sie Veränderungen der Messwerte im Verlauf des Schultags. Optionale Beleuchtungsstärkemessungen können eine definierte Beurteilung von Tageslicht oder Tischbeleuchtung unterstützen. Das Gebäudemanagementteam wählt repräsentative Raumpositionen und betrachtet die Messwerte zusammen mit Belegungszeiten und der umfassenderen Innenraumbewertung des Gebäudes.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke an ausgewählten Lern- oder Tageslichtpositionen.",
+      "monitoringPoint": "Repräsentative genutzte Raumzonen und eine dokumentierte Messebene für etwaige Studien zur Arbeitsplatzbeleuchtung.",
+      "installation": "Befestigen Sie den Sensor sicher und mit Abstand zu Personen und Unterrichtsausstattung; stimmen Sie Luftzugang und Lichtausrichtung auf das Beobachtungsziel ab.",
+      "projectBrief": "Geben Sie Raumaufteilungen, Unterrichtszeiten, bestehende Anliegen, Tageslichtanordnung und den vorgesehenen Überwachungszeitraum an.",
+      "image": {
+        "name": "classroom.webp",
+        "alt": "Tische und Stühle in einem Klassenzimmer mit Tageslicht und unbeschriebenem Whiteboard.",
+        "caption": "Temperatur-, Luftfeuchte- und Lichtbedingungen im Klassenzimmer",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-public-library",
+      "group": "buildings",
+      "title": "Lese- und Regalbereiche öffentlicher Bibliotheken",
+      "description": "Beurteilen Sie das lokale Klima dort, wo Sammlungen und Leser einer öffentlichen Bibliothek denselben Raum nutzen. Vergleichen Sie ausgewählte Regal- und Lesebereiche während der Öffnungszeiten und des saisonalen Betriebs. Optionale Beleuchtungsstärkeüberwachung kann eine gezielte Studie zu fensterseitigen Regalen oder Leseplätzen unterstützen; die Bibliothek entscheidet dabei über Prioritäten für Materialpflege und Raumnutzung.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für die Lichtexposition ausgewählter Regale oder Leseflächen.",
+      "monitoringPoint": "Repräsentative Sammlungsregale und Lesezonen mit zusätzlichen Positionen für definierte Tageslichtfragen.",
+      "installation": "Nutzen Sie sichere genehmigte Halterungen mit Abstand zu Büchern, Besuchern und Reinigungszugängen; dokumentieren Sie den Messzweck jedes Punkts.",
+      "projectBrief": "Teilen Sie uns Regalanordnung, Öffnungszeiten, Fensterpositionen, Sammlungsarten und Ziele des Raummanagements mit.",
+      "image": {
+        "name": "public-library.webp",
+        "alt": "Moderne öffentliche Bibliothek mit Bücherregalen, Lesetischen und Tageslicht durch hohe Fenster",
+        "caption": "Beispiel eines Lesebereichs in einer öffentlichen Bibliothek zur Beobachtung von Innenraumtemperatur, Luftfeuchte und lokalem Leselicht.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-visitor-reception",
+      "group": "buildings",
+      "title": "Besucherzentren und Empfangsbereiche",
+      "description": "Vergleichen Sie das lokale Klima in Empfangs-, Orientierungs- und Vermittlungsbereichen im Verlauf ihrer Betriebszeiten. Optionale Beleuchtungsstärkemessungen können für Ausstellungstafeln oder Tageslichtfragen ausgewählt werden. Das Gebäudemanagement kann Temperatur und Luftfeuchte zusammen mit Raumnutzung und Anforderungen nahe gelegener Sammlungen oder Ausstellungen beurteilen; die Positionen sollen den vorgesehenen Bereich repräsentieren.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für ausgewählte Vermittlungsexponate oder Tageslichtzonen.",
+      "monitoringPoint": "Repräsentative Luftbereiche in Besucherräumen und vereinbarte Ausstellungspositionen, bei unterschiedlichen Zwecken getrennt ausgewählt.",
+      "installation": "Nutzen Sie sichere genehmigte Halterungen mit freiem Sensorzugang, unauffälliger Platzierung und zugänglichen Wartungswegen.",
+      "projectBrief": "Geben Sie Raumplan, Öffnungszeiten, Ausstellungsmaterialien, Tageslichtanordnung und Überwachungsziel an.",
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "Glasvitrinen und archäologische Objekte in einem musealen Ausstellungsraum.",
+        "caption": "Ausstellungsumgebungen in Museumsräumen",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-worship-heritage",
+      "group": "buildings",
+      "title": "Gotteshäuser und historische Säle",
+      "description": "Verfolgen Sie das lokale Klima im Umfeld von Holzeinbauten, Textilien und historischen Ausstattungsmerkmalen in zeitweise genutzten Gebäuden. Mitarbeitende können Messwerte bei der Umgebungsbeurteilung mit Heizperioden und Veranstaltungszeiten vergleichen. Wählen Sie optionale Beleuchtungsstärkemessung an vom Tageslicht beeinflussten Objekten oder Oberflächen und stimmen Sie die Befestigung mit den Verantwortlichen für den historischen Innenraum ab.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke an ausgewählten, dem Tageslicht ausgesetzten historischen Ausstattungsmerkmalen.",
+      "monitoringPoint": "Repräsentative Nutzungs- und Sammlungspositionen, ausgewählt entsprechend Gebäudenutzung und konservatorischen Prioritäten.",
+      "installation": "Nutzen Sie reversible genehmigte Halterungen mit Abstand zu historischen Oberflächen, zeremoniellen Aktivitäten und Besucher- oder Gemeindewegen.",
+      "projectBrief": "Teilen Sie uns Gebäudenutzung, historische Materialien, Heizplan, Tageslichtverlauf und zulässige Installationspositionen mit.",
+      "image": {
+        "name": "chapel-interior.webp",
+        "alt": "Historischer Kapelleninnenraum mit Holzbänken und geschnitzten Holzeinbauten, beleuchtet durch gefiltertes Fensterlicht",
+        "caption": "Beispiel eines historischen Kapelleninnenraums mit konservierten Holz- und Steinoberflächen.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-indoor-plant-conservatory",
+      "group": "buildings",
+      "title": "Pflanzensammlungen in Innenräumen und Wintergärten",
+      "description": "Vergleichen Sie die lokale Umgebung im Umfeld von Pflanzenpräsentationen in Innenräumen und geschützten Wintergartenbereichen. Temperatur, Luftfeuchte und optionale Beleuchtungsstärke können Unterschiede zwischen ausgewählten Positionen im Tagesverlauf beschreiben. Das Gartenbaupersonal interpretiert die Messwerte anhand der Pflanzenbedürfnisse und Pflegeroutine; die Lichtkonfiguration wird auf das Beobachtungsziel abgestimmt.",
+      "measurement": "Temperatur und relative Luftfeuchte; optionale Beleuchtungsstärke für ausgewählte Pflanzenpräsentationspositionen.",
+      "monitoringPoint": "Repräsentative Luft- und Lichtmesspositionen der Pflanzenpräsentation, ausgewählt vom Gartenbauteam.",
+      "installation": "Halten Sie Sensoröffnungen frei von Laub und Bewässerungssprühwasser; bestätigen Sie die Eignung für die erwartete Umgebung und die ausgewählten Lichtbedingungen.",
+      "projectBrief": "Teilen Sie uns Pflanzenarten, Innenraumaufteilung, Tageslicht- oder Leuchtenanordnung, Bewässerungsroutine und den vorgesehenen Beobachtungszeitraum mit.",
+      "image": {
+        "name": "scene-greenhouses.webp",
+        "alt": "Gewächshaus mit bepflanzten Beeten und diffusem Tageslicht",
+        "caption": "Pflanzenumgebung in Innenräumen · Beispielszene",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    }
+  ]
+}

@@ -357,3 +357,10 @@
  :where(.ht-thl) .hero-proof span{font-size:11px}
  :where(.ht-thl) .hero-proof small{font-size:10px;line-height:1.6}
 }
+
+
+/* V58 i18n: 长复合词（de/ru 等）允许断词，防止移动端横向溢出；仅 ≤1024px 生效，桌面保持自然整词换行（EN/桌面渲染不变） */
+@media (max-width: 1024px){
+:where(.ht-thl) h1,:where(.ht-thl) h2,:where(.ht-thl) h3,:where(.ht-thl) h4,
+:where(.ht-thl) .feature-grid p,:where(.ht-thl) .measurement-card p,:where(.ht-thl) summary{min-width:0;overflow-wrap:anywhere;hyphens:auto}
+}

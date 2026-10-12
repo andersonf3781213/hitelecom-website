@@ -1,3 +1,6 @@
+// V58 i18n 引导：组件根节点 data-i18n 注入本语言 JS 文案（EN 为 {} → T() 回退英文，行为不变）
+const I18N = (() => { try { return JSON.parse(document.querySelector('.ht-thl').dataset.i18n || '{}'); } catch { return {}; } })();
+const T = (key) => I18N[key] || key;
 // All task photos and copy are real static HTML. This small enhancement moves
 // the selected photo into the left desktop slot; native details remain usable
 // without JavaScript, and narrow screens keep the photo with its task.
@@ -121,7 +124,7 @@ document.querySelectorAll('[data-project-scene]').forEach(link => {
 document.querySelectorAll('[data-model]').forEach(link => {
   link.addEventListener('click', () => {
     const field = document.querySelector('#requirements');
-    if (!field.value.includes(link.dataset.model)) field.value = `Model of interest: ${link.dataset.model}\n` + field.value;
+    if (!field.value.includes(link.dataset.model)) field.value = `${T('Model of interest:')} ${link.dataset.model}\n` + field.value;
   });
 });
 const revealTarget = () => {
@@ -140,20 +143,28 @@ if (form) {
   const brief = document.querySelector('#enquiry-brief');
   const email = document.querySelector('#email-brief');
   const status = document.querySelector('#brief-status');
-  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent('H Series temperature, humidity and light sensor — project enquiry')}&body=${encodeURIComponent(brief.value)}`; };
+  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent(T('H Series temperature, humidity and light sensor — project enquiry'))}&body=${encodeURIComponent(brief.value)}`; };
+  // GPT6 五语言包 §4：选择框输出显示文字（本语言），内部 name 保持英文
+  const FIELD_NAMES = ['Application','Country','Quantity','Measurement channels','Room / installation type','Monitoring targets','Connectivity','Requirements'];
+  const readField = name => {
+    const control = form.elements.namedItem(name);
+    if (!control) return '';
+    return control.tagName === 'SELECT'
+      ? (control.value ? control.selectedOptions[0]?.textContent.trim() || '' : '')
+      : control.value.trim();
+  };
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
-    const data = new FormData(form);
-    brief.value = ['Hello Hitelecom,', '', 'I would like to discuss a temperature, humidity and light monitoring project.', '', ...['Application','Country','Quantity','Measurement channels','Room / installation type','Monitoring targets','Connectivity','Requirements'].map(key=>`${key}: ${data.get(key) || 'Please advise'}`), '', 'Please advise on a suitable model, configuration, supporting datasheet and quotation.', '', 'Thank you.'].join('\n');
+    brief.value = [T('Hello Hitelecom,'), '', T('I would like to discuss a temperature, humidity and light monitoring project.'), '', ...FIELD_NAMES.map(name => `${T(name)}: ${readField(name) || T('Please advise')}`), '', T('Please advise on a suitable model, configuration, supporting datasheet and quotation.'), '', T('Thank you.')].join('\n');
     updateEmail(); review.hidden = false;
-    status.textContent = 'Your brief is ready. Review it and open your email app to send.';
+    status.textContent = T('Your brief is ready. Review it and open your email app to send.');
     brief.focus({preventScroll:true}); review.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
   });
   brief.addEventListener('input', updateEmail);
   document.querySelector('#copy-brief').addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(brief.value); status.textContent = 'Project brief copied.'; }
-    catch { brief.focus(); brief.select(); status.textContent = 'Your brief is selected. Use your device’s copy command.'; }
+    try { await navigator.clipboard.writeText(brief.value); status.textContent = T('Project brief copied.'); }
+    catch { brief.focus(); brief.select(); status.textContent = T('Your brief is selected. Use your device’s copy command.'); }
   });
 }
 
@@ -205,12 +216,17 @@ document.addEventListener('keydown', event => {
   closeShellPanels();
 });
 
+
+// GPT6 五语言包 §4：语义键 → 固定 EN value（替换原先按英文标题正则判断）
+const measurementValue = {
+  temperature: 'Temperature & relative humidity',
+  humidity: 'Temperature & relative humidity',
+  light: 'Temperature, relative humidity & light',
+  custom: 'Custom sensors / project-specific sensing'
+};
 document.querySelectorAll('[data-measurement]').forEach(link => link.addEventListener('click', () => {
   const field = document.querySelector('#measurement-type');
   if (!field) return;
-  field.value = /custom/i.test(link.dataset.measurement)
-    ? 'Custom sensors / project-specific sensing'
-    : /illuminance|light|lux/i.test(link.dataset.measurement)
-      ? 'Temperature, relative humidity & light'
-      : 'Temperature & relative humidity';
+  const value = measurementValue[link.dataset.measurement];
+  if (value) field.value = value;
 }));

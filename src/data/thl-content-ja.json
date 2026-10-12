@@ -1,0 +1,1652 @@
+{
+  "seo": {
+    "title": "温湿度・照度センサー | Hitelecom",
+    "description": "博物館、文書館、美術館、管理対象空間に向けた、屋内の温湿度・照度の無線モニタリング。H200 LoRa、H300 4G、H500 NB-IoTを比較できます。"
+  },
+  "hero": {
+    "description": "Hitelecom H Seriesの温湿度・照度センサーは、屋内モニタリングに向けて、測定位置の気温、相対湿度、照度を測定します。博物館、美術館、文書館などの管理対象空間を想定し、選定した測定点の環境を遠隔で確認し、設定したアラートにつなげます。追加の測定項目や設置要件については、カスタムセンサーの構成をご相談いただけます。H200 LoRa、H300 4G、H500 NB-IoTから選択し、測定配置、照度測定、データ送信設定をプロジェクトに合わせて決定します。",
+    "datasheet_url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf"
+  },
+  "features": [
+    {
+      "title": "温度。湿度。照度。",
+      "text": "互いを補完する三つの測定項目により、収蔵品、保管物、人が利用する室内の周辺環境を把握できます。"
+    },
+    {
+      "title": "必要な場所で測定",
+      "text": "展示エリア、展示ケース、棚、室内の各区画に合わせて測定位置を計画します。観察したい環境に適した測定構成を選択してください。"
+    },
+    {
+      "title": "モニタリングの管理目標",
+      "text": "空間や収蔵品の管理担当者と温湿度の許容範囲を合意し、アラートの運用手順を設定します。"
+    },
+    {
+      "title": "三つの無線通信方式",
+      "text": "H200 LoRa、H300 4G、H500 NB-IoTは、それぞれ異なる現場ネットワークや導入計画に対応します。"
+    },
+    {
+      "title": "プロジェクトに合わせたカスタムセンサー",
+      "text": "測定チャネル、製品形状、取付方法を空間に合わせて調整します。プロジェクト専用の構成に必要な要件をお知らせください。"
+    },
+    {
+      "title": "遠隔から環境を把握",
+      "text": "Hitelecom Platformまたは合意したお客様のプラットフォームに接続し、測定値の確認と、設定した温湿度アラートの運用を行います。"
+    }
+  ],
+  "measurement": {
+    "description": "室内の平均値だけでは、環境の全体像は把握できません。展示物のそば、展示ケース内、保管物の周囲では環境が異なることがあります。有効なモニタリング計画では、測定する場所と、各測定値がどの判断に役立つかを明確にします。",
+    "cards": [
+      {
+        "title": "気温",
+        "text": "利用時間帯、夜間運転、季節の変化を通して、各位置の気温を観察します。室内の異なる区画を比較する際は、条件を比較できる位置で測定してください。",
+        "project_brief": "想定環境、必要な精度、測定構成を指定してください。",
+        "symbol": "°C"
+      },
+      {
+        "title": "相対湿度",
+        "text": "収蔵品や保管物の周囲の湿度を継続して確認します。その水準と変化を、温度および施設の環境管理目標と併せて評価してください。",
+        "project_brief": "対象の室内、展示ケース、保管区画と、そこにある資料や素材を明確にしてください。",
+        "symbol": "%RH"
+      },
+      {
+        "title": "照度 · lux",
+        "text": "選定した受光面に入射する可視光を測定します。展示物では、照明を受ける対象物や展示エリアを代表する位置と向きを合意してください。",
+        "project_brief": "想定照度、必要な測定範囲と精度、受光面の向きを指定してください。",
+        "symbol": "lux"
+      },
+      {
+        "title": "カスタムセンサー",
+        "text": "測定チャネル、製品形状、設置方法をプロジェクトに合わせて構成します。必要な測定項目をお知らせいただき、適切なセンサー設計と仕様を確定します。",
+        "project_brief": "測定項目、想定条件、必要な性能、取付上の制約、プラットフォームのインターフェースをお知らせください。",
+        "symbol": "+"
+      }
+    ],
+    "installation_text": "室内や展示ケースの図面に、各測定点を記入します。気温・湿度の測定では、対象区画を代表する空気に触れる位置を選び、近くの換気口、扉、熱源の影響を考慮してください。照度測定では、受光面を遮らず、その向きを記録します。歴史的建造物の内装や収蔵品を扱う空間では、原状回復できる取付方法を合意してください。"
+  },
+  "workflow": {
+    "profile_text": "把握したい変化に合わせてモニタリング設定を組み立てます。測定間隔は測定値を取得するタイミング、送信間隔はデータがプラットフォームに届くタイミングを定めます。アラートと電池の要件と併せて、両方を指定してください。",
+    "steps": [
+      {
+        "title": "測定点を決める",
+        "text": "対象の室内、展示ケース、資料・素材の区画を明確にし、各測定点の目的と位置を記録します。",
+        "number": "01"
+      },
+      {
+        "title": "動作設定を決める",
+        "text": "測定間隔と送信間隔、チャネル仕様、温湿度アラートのしきい値を合意します。",
+        "number": "02"
+      },
+      {
+        "title": "環境を評価する",
+        "text": "測定値を照明スケジュール、室内の運用、収蔵品の保存管理計画と併せて確認し、調査や調整が必要な項目を判断します。",
+        "number": "03"
+      }
+    ],
+    "battery_text": "公開されている温湿度の参考構成は、所定の試験条件下で、毎時送信により10年超の使用を想定した設計です。温湿度・照度を測定する設置構成では、最終的なチャネル一覧、送信設定、動作温度、ネットワーク条件に照らして電池の運用計画を確認してください。",
+    "platform_text": "Hitelecom Platformを選択するか、お客様のプラットフォームへの接続をご相談ください。導入前に、データ項目、単位、機器識別子、通信経路、アラート対応の責任分担を確認します。"
+  },
+  "series": {
+    "description": "一つのモニタリング目的に、三つの無線通信方式。先にネットワークを選定し、その空間に適した温湿度・照度の構成を確認します。",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "steps": [
+      {
+        "title": "空間について共有する",
+        "text": "用途、室内や展示ケースの図面、設置国、測定点数、設置上の制約をお知らせください。"
+      },
+      {
+        "title": "測定要件を決める",
+        "text": "温度、湿度、照度の要件、想定条件、各チャネルに必要な性能を確認します。"
+      },
+      {
+        "title": "導入内容を合意する",
+        "text": "ネットワーク、プラットフォーム、取付方法、送信設定、見積内容を決定します。"
+      }
+    ],
+    "modelDetails": [
+      {
+        "model": "H200",
+        "network": "LoRa",
+        "title": "現場ネットワークを計画する場合",
+        "text": "複数の測定点に向けて、ゲートウェイ、屋内の通信範囲、プラットフォーム接続を調整します。"
+      },
+      {
+        "model": "H300",
+        "network": "4G Cat.1",
+        "title": "セルラー通信でモニタリングする場合",
+        "text": "地域の対応ネットワーク、SIMの手配・設定、予定する屋内設置位置の電波状況を確認します。"
+      },
+      {
+        "model": "H500",
+        "network": "NB-IoT",
+        "title": "NB-IoTで導入する場合",
+        "text": "現地通信事業者のサービスと、モニタリング計画の送信要件を確認します。"
+      }
+    ]
+  },
+  "specifications": {
+    "description": "以下の温湿度数値は、公開されているT&H参考構成の値です。実際に供給する温湿度・照度構成のチャネル一覧と仕様は、別途合意します。",
+    "rows": [
+      {
+        "label": "製品シリーズ",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "測定項目",
+        "value": "気温 · 相対湿度 · 照度"
+      },
+      {
+        "label": "温度測定範囲 · 公開T&H参考構成",
+        "value": "−20°C から +80°C"
+      },
+      {
+        "label": "湿度測定範囲 · 公開T&H参考構成",
+        "value": "0–100% RH"
+      },
+      {
+        "label": "代表温度精度 · T&H参考構成",
+        "value": "±0.2°C"
+      },
+      {
+        "label": "代表湿度精度 · T&H参考構成",
+        "value": "±2% RH"
+      },
+      {
+        "label": "照度測定",
+        "value": "照度をluxで測定。範囲、分解能、精度は供給構成ごとに指定"
+      },
+      {
+        "label": "測定構成",
+        "value": "供給構成に応じた一体型端末、またはプロジェクト専用のプローブ配置"
+      },
+      {
+        "label": "公開T&Hプローブオプション",
+        "value": "ケーブル接続式のスリット入り焼結プローブ"
+      },
+      {
+        "label": "無線通信方式",
+        "value": "H200: LoRa · H300: 4G Cat.1 · H500: NB-IoT"
+      },
+      {
+        "label": "プラットフォーム接続",
+        "value": "Hitelecom Platformまたは合意したお客様のプラットフォーム。選択した通信経路でMQTTに対応"
+      },
+      {
+        "label": "公開T&H筐体保護等級",
+        "value": "IP65。供給するTHL構成の保護等級を確認してください"
+      },
+      {
+        "label": "機器設定",
+        "value": "対応端末でNFCによる起動・設定"
+      },
+      {
+        "label": "ファームウェアの遠隔更新",
+        "value": "対応構成でOTAを利用可能"
+      },
+      {
+        "label": "T&H参考構成の電池設計",
+        "value": "所定の試験条件下、1時間の送信間隔で>10年。最終的なTHL電池計画は構成に合わせて決定"
+      },
+      {
+        "label": "設置とカスタマイズ",
+        "value": "プロジェクトに合わせて取付方法と測定配置を選定。OEM/ODM要件は個別に合意"
+      }
+    ]
+  },
+  "faqHeading": {
+    "intro": "測定点、収蔵品の管理目標、無線モニタリング構成の選定に役立つ実務的な回答です。"
+  },
+  "faqs": [
+    {
+      "id": "measurements",
+      "question": "温湿度・照度センサーは何を測定しますか？",
+      "paragraphs": [
+        "選定した屋内測定点で、気温、相対湿度、照度を測定します。照度はluxで表され、ある面に入射する可視光の量を示します。",
+        "供給するHitelecom構成について、チャネル、測定配置、測定性能を指定してください。"
+      ],
+      "sources": [
+        "P1",
+        "P3",
+        "R2"
+      ],
+      "evidence": "Direct product channel evidence: official hero image labels Temperature, Humidity and Light. Lux meaning: CCI's illuminance explanation. Image screen values are display examples, never performance limits."
+    },
+    {
+      "id": "museum-combination",
+      "question": "博物館で温度、湿度、照度を一緒にモニタリングするのはなぜですか？",
+      "paragraphs": [
+        "これらは、収蔵品の周辺環境の異なる側面を示します。温湿度の観察は空調環境の評価に、照度の観察は展示照明や露光スケジュールの判断に役立ちます。",
+        "展示物、その素材、開館時間を踏まえて測定値を確認することで、保存担当者と施設管理チームが共通の根拠に基づいて検討できます。"
+      ],
+      "sources": [
+        "R1",
+        "R3",
+        "R5"
+      ],
+      "evidence": "CCI treats climate and lighting as separate material-dependent preservation factors, and explicitly recommends measuring temperature, RH and light for textile display/storage. Combined page value is an editorial inference from these documented needs."
+    },
+    {
+      "id": "targets",
+      "question": "収蔵品の温度、湿度、照度の管理目標はどのように決めますか？",
+      "paragraphs": [
+        "まず収蔵品の素材と状態、現在の環境、合意済みの貸出条件や展示要件を確認します。保存管理チームに、各室や展示ケースの管理目標の設定を依頼してください。",
+        "その温湿度の許容範囲をアラート設定に反映し、照度の測定値は合意した展示計画と比較できます。"
+      ],
+      "sources": [
+        "R1",
+        "R7",
+        "P1"
+      ],
+      "evidence": "CCI Climate Guidelines and ClimaSpec select guidance by object type and sensitivity. Hitelecom public page supports configurable temperature/RH thresholds. This is specification guidance, not a universal setpoint recommendation."
+    },
+    {
+      "id": "room-and-case",
+      "question": "美術館、文書館、展示ケースでは、どこにセンサーを設置しますか？",
+      "paragraphs": [
+        "モニタリングしたい収蔵品や区画の環境を代表する位置に、気温・湿度の測定点を設けます。棚の高さ、近くの壁、換気口、扉を考慮してください。密閉展示ケースの内部環境が重要な場合は、ケース内を独立したモニタリング場所として扱います。",
+        "施設図面に測定点を記録し、設置前に端末やプローブの配置を合意してください。"
+      ],
+      "sources": [
+        "R6",
+        "R1",
+        "P2"
+      ],
+      "evidence": "NEDCC indexed primary-source text says placement must reflect collection conditions and gives mid-shelf general-monitoring examples. CCI describes spatial gradients and conditions near objects. Probe/mount customization is supported by the manufacturer PDF. Placement wording is project guidance, not a claim of one fixed install height."
+    },
+    {
+      "id": "light-position",
+      "question": "展示物の照度を測る受光面はどこに配置しますか？",
+      "paragraphs": [
+        "評価する照明対象面や展示エリアを代表する位置と向きを選びます。筐体、取付具、近くの物体による影が受光面にかからないようにし、その向きを記録してください。",
+        "運用開始時に展示物の照明を確認し、固定した測定位置が目的とする照明の評価に適していることを確認します。"
+      ],
+      "sources": [
+        "R2",
+        "R3",
+        "R8"
+      ],
+      "evidence": "CCI defines illuminance as light falling on a surface, recommends measurements for displayed paintings and publishes a tutorial for measuring light on heritage objects. Fixed-sensor orientation and commissioning wording are practical engineering inference from the measurement geometry."
+    },
+    {
+      "id": "light-history",
+      "question": "展示照明の評価にluxの測定値をどう使いますか？",
+      "paragraphs": [
+        "測定した照度を展示物の照明目標と比較し、自然光、照明器具の設定、開館時間による変化を記録します。光に敏感な素材の露光計画では、光の強さと時間の両方が重要です。",
+        "累積露光量の分析が必要な場合は、時刻付きの照度データ、単位、計算手順をプラットフォームの要件書に含めてください。"
+      ],
+      "sources": [
+        "R2",
+        "R3",
+        "R9"
+      ],
+      "evidence": "CCI explains exposure as illuminance multiplied by time; its LED lighting bulletin confirms the continued importance of intensity and duration. Cumulative calculation is framed as a project requirement, not a built-in Hitelecom capability."
+    },
+    {
+      "id": "intervals",
+      "question": "測定間隔と送信間隔はどのように選びますか？",
+      "paragraphs": [
+        "照明スケジュール、展示ケースの開閉、室内運用など、観察が必要な変化に合わせて測定間隔を選びます。送信間隔は、チームの遠隔確認やアラートの必要性に合わせて選択してください。",
+        "必要なデータ取得範囲と電池計画に照らして、両方の間隔を合意します。短時間の変化を調べる計画と、長期的な季節傾向を把握する計画では、異なる動作設定が必要です。"
+      ],
+      "sources": [
+        "R4",
+        "R5",
+        "P2"
+      ],
+      "evidence": "NPS identifies sampling rate as a logger-selection variable and explains its effect on run time/battery. CCI textile guidance supports seasonal monitoring. Reporting distinction is cellular IoT specification guidance; no undocumented minimum interval or continuous streaming is asserted."
+    },
+    {
+      "id": "wireless-platform",
+      "question": "屋内設置には、どの無線モデルとプラットフォームを選びますか？",
+      "paragraphs": [
+        "LoRaはH200、4GはH300、NB-IoTはH500を選択します。密閉展示ケース、地下収蔵庫、建物内部の部屋を含め、実際の測定点で通信範囲を評価してください。",
+        "LoRaではゲートウェイとプラットフォームまでの経路を計画します。セルラーモデルでは現地の通信サービスと利用手配・設定を確認してください。モニタリング先にはHitelecom Platformまたは合意したお客様のプラットフォームを利用できます。"
+      ],
+      "sources": [
+        "P1",
+        "P2"
+      ],
+      "evidence": "Manufacturer source supports H200/H300/H500, the three wireless options and public/customer cloud deployment. Family-to-radio mapping is confirmed project context. Coverage planning is engineering advice, not a measured range claim."
+    },
+    {
+      "id": "accuracy",
+      "question": "測定性能と校正について、どのような情報を指定すべきですか？",
+      "paragraphs": [
+        "各チャネルの想定動作条件と、必要な範囲、精度、分解能を指定します。照度については、想定する低照度環境や明るい室内環境、および受光面の向きを含めてください。",
+        "運用開始時の測定値の確認方法、プロジェクトに必要な校正文書、設置環境に適した見直しスケジュールを合意します。供給仕様を測定目的に照らして確認してください。"
+      ],
+      "sources": [
+        "R4",
+        "R2",
+        "P2"
+      ],
+      "evidence": "NPS discusses functional range, varying accuracy across range, calibration and periodic checks. Light-measurement geometry comes from CCI. No claim that supplied units include traceable certificates or any fixed recalibration interval."
+    },
+    {
+      "id": "battery",
+      "question": "電池寿命の計画には何を含めますか？",
+      "paragraphs": [
+        "選択したチャネル一覧、測定間隔と送信間隔、動作条件、ネットワーク品質に基づいて電池計画を立てます。供給する温湿度・照度構成について、計算結果を確認してください。",
+        "公開T&H参考設計は、所定の試験条件下で毎時送信時に10年超としています。この参考値は、最終的なプロジェクト構成に照らして確認する必要があります。"
+      ],
+      "sources": [
+        "P1",
+        "P2",
+        "R4"
+      ],
+      "evidence": "Manufacturer reference publishes hourly-reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
+    }
+  ],
+  "evidence": {
+    "sources": [
+      {
+        "id": "P1",
+        "title": "Hitelecom: Temperature and Humidity Sensor",
+        "url": "https://www.hitelecom.com/product/temperature-humidity-sensor",
+        "whatItSupports": "Published T&H measuring figures, temperature/humidity alerts, wireless options, product-family context and battery-condition wording."
+      },
+      {
+        "id": "P2",
+        "title": "Hitelecom: H Series T&H Sensor Datasheet, 3 pages",
+        "url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
+        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, hourly-reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
+      },
+      {
+        "id": "P3",
+        "title": "Hitelecom official product hero image",
+        "url": "https://www.hitelecom.com/_astro/301.D1LjOplG_Z1nBWX6.webp",
+        "whatItSupports": "Integrated white display terminal with Temperature, Humidity and Light/lux labels. Visible screen values are examples and are not measurement ranges or accuracy claims."
+      },
+      {
+        "id": "R1",
+        "title": "Canadian Conservation Institute: Climate guidelines overview",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/climate-guidelines/climate-guidelines-overview.html",
+        "whatItSupports": "Material-dependent targets, conditions near objects, fluctuations, room gradients and environmentally informed collection decisions."
+      },
+      {
+        "id": "R2",
+        "title": "Canadian Conservation Institute: Light, ultraviolet and infrared",
+        "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html",
+        "whatItSupports": "Illuminance/lux meaning, illuminance at a surface, and the relationship between intensity and exposure time. UV is a separate measurement."
+      },
+      {
+        "id": "R3",
+        "title": "Canadian Conservation Institute Notes 10/4: Environmental Guidelines for Paintings",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/environmental-display-guidelines-paintings.html",
+        "whatItSupports": "Environmental variables for display/storage, measuring light at displayed paintings, and planning intensity plus exposure duration."
+      },
+      {
+        "id": "R4",
+        "title": "National Park Service Conserve O Gram 3/3: Comparing Temperature and Relative Humidity Dataloggers for Museum Monitoring",
+        "url": "https://www.nps.gov/subjects/museums/upload/03-03_508.pdf",
+        "whatItSupports": "Selection by range, accuracy, calibration, sample interval, channels, power and battery. Published 2011: use general principles, not dated vendor prices or market rankings."
+      },
+      {
+        "id": "R5",
+        "title": "Canadian Conservation Institute Notes 13/1: Textiles and the Environment",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/textiles-environment.html",
+        "whatItSupports": "Instrumented display/storage monitoring and temperature/RH records across seasonal cycles; recognizes light, temperature and RH measurement."
+      },
+      {
+        "id": "R6",
+        "title": "NEDCC Preservation Leaflet 2.2: Monitoring Temperature and Relative Humidity",
+        "url": "https://www.nedcc.org/free-resources/preservation-leaflets/2.-the-environment/2.2-monitoring-temperature-and-relative-humidity",
+        "whatItSupports": "Collection-representative positioning and mid-shelf general-monitoring example. Indexed primary-source text retrieved; direct full-page open returned HTTP 403."
+      },
+      {
+        "id": "R7",
+        "title": "Canadian Conservation Institute: ClimaSpec",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/climate-guidelines/climaspec.html",
+        "whatItSupports": "Collection/type/sensitivity-based selection of temperature and RH guidance. It is a conservation tool, not a Hitelecom integration."
+      },
+      {
+        "id": "R8",
+        "title": "Government of Canada / CCI: How to measure light levels",
+        "url": "https://publications.gc.ca/site/eng/9.941901/publication.html",
+        "whatItSupports": "Official tutorial topic: measuring light on heritage objects. Publication record retrieved; no unobserved transcript claims used."
+      },
+      {
+        "id": "R9",
+        "title": "Canadian Conservation Institute Technical Bulletin 36: LED Lighting in Museums and Art Galleries",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/technical-bulletins/led-lighting-museums.html",
+        "whatItSupports": "Intensity and exposure time remain relevant under LED lighting. Used for monitoring context, not lamp selection promises or control capabilities."
+      }
+    ],
+    "publicQueries": [
+      {
+        "query": "museum relative humidity temperature light monitoring lux cumulative exposure Canadian Conservation Institute",
+        "intent": "Combined collection environmental monitoring and illuminance exposure",
+        "support": [
+          "R1",
+          "R2",
+          "R3",
+          "R9"
+        ],
+        "googleSearch": "https://www.google.com/search?q=museum+relative+humidity+temperature+light+monitoring+lux+cumulative+exposure+Canadian+Conservation+Institute",
+        "bingSearch": "https://www.bing.com/search?q=museum+relative+humidity+temperature+light+monitoring+lux+cumulative+exposure+Canadian+Conservation+Institute",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.nps.gov museum handbook environmental monitoring temperature humidity light",
+        "intent": "Museum monitoring practice and logger selection",
+        "support": [
+          "R4"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.nps.gov+museum+handbook+environmental+monitoring+temperature+humidity+light",
+        "bingSearch": "https://www.bing.com/search?q=site.nps.gov+museum+handbook+environmental+monitoring+temperature+humidity+light",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.nedcc.org preservation temperature relative humidity light monitoring environmental conditions",
+        "intent": "Archives and collection-representative positioning",
+        "support": [
+          "R6"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.nedcc.org+preservation+temperature+relative+humidity+light+monitoring+environmental+conditions",
+        "bingSearch": "https://www.bing.com/search?q=site.nedcc.org+preservation+temperature+relative+humidity+light+monitoring+environmental+conditions",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.canada.ca conservation institute temperature humidity sensor placement showcase light measurement",
+        "intent": "Case/local sensing and object-plane light measurement",
+        "support": [
+          "R1",
+          "R2",
+          "R3"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.canada.ca+conservation+institute+temperature+humidity+sensor+placement+showcase+light+measurement",
+        "bingSearch": "https://www.bing.com/search?q=site.canada.ca+conservation+institute+temperature+humidity+sensor+placement+showcase+light+measurement",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.canada.ca conservation institute \"How to Measure Light Levels\"",
+        "intent": "How to measure illuminance at heritage objects",
+        "support": [
+          "R8"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.canada.ca+conservation+institute+%22How+to+Measure+Light+Levels%22",
+        "bingSearch": "https://www.bing.com/search?q=site.canada.ca+conservation+institute+%22How+to+Measure+Light+Levels%22",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.nedcc.org \"2.2 Monitoring\" \"Sensors\" \"located\"",
+        "intent": "Location and representativeness of readings",
+        "support": [
+          "R6"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.nedcc.org+%222.2+Monitoring%22+%22Sensors%22+%22located%22",
+        "bingSearch": "https://www.bing.com/search?q=site.nedcc.org+%222.2+Monitoring%22+%22Sensors%22+%22located%22",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      }
+    ],
+    "factBoundary": "Checked on 2026-10-12. FAQ topics are synthesized from traceable public technical practice and product facts. They are not claimed to be collected customer questions, Google/Bing keyword volume, Search Console queries or paid keyword research. Search query links can be reproduced in Google and Bing, but search-engine rank/volume and any first-page result are unverified. The official display image supports the THL channel concept; the existing PDF is a T&H reference. Light range/accuracy/resolution, the final THL protection rating and battery plan are configuration-specific. No UV, PAR/PPFD, automatic lighting control, built-in dew-point/exposure calculation, medical measurement, compliance certification or universal conservation setpoints are asserted.",
+    "applicationSources": [
+      {
+        "id": "S01",
+        "title": "NEDCC — Monitoring Temperature and Relative Humidity",
+        "url": "https://www.nedcc.org/free-resources/preservation-leaflets/2.-the-environment/2.2-monitoring-temperature-and-relative-humidity",
+        "whatItSupports": "Environmental monitoring is an established collection-care activity; interpret local records against the needs of the collection and facility."
+      },
+      {
+        "id": "S02",
+        "title": "CCI — Airtightness Measurement of Display Cases and Other Enclosures, Technical Bulletin 38",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/technical-bulletins/airtightness-measurement-display-cases.html",
+        "whatItSupports": "Enclosure climate can differ from room climate. Case performance, buffering and light-related heating provide reasons for internal and room observations."
+      },
+      {
+        "id": "S03",
+        "title": "CCI — Caring for textiles and costumes",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/textiles-costumes.html",
+        "whatItSupports": "Textile materials differ; temperature, relative humidity and light have collection-care relevance in display and storage."
+      },
+      {
+        "id": "S04",
+        "title": "CCI — Caring for paper objects",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/paper-objects.html",
+        "whatItSupports": "Paper and media sensitivity inform local climate and exposure decisions; oversized paper can require flat cabinet storage."
+      },
+      {
+        "id": "S05",
+        "title": "CCI — Environmental Guidelines for Paintings, Notes 10/4",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/environmental-display-guidelines-paintings.html",
+        "whatItSupports": "Painting materials and location matter when assessing climate and exhibition lighting; room zones may experience differing conditions."
+      },
+      {
+        "id": "S06",
+        "title": "CCI — Caring for natural history collections",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/natural-history.html",
+        "whatItSupports": "Natural history specimens vary in composition and sensitivity; environmental priorities should be selected for the collection."
+      },
+      {
+        "id": "S07",
+        "title": "CCI — Agent of deterioration: light, ultraviolet and infrared",
+        "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html",
+        "whatItSupports": "Illuminance, exposure duration and material sensitivity inform conservation lighting. Visible light, ultraviolet and infrared are distinct quantities."
+      },
+      {
+        "id": "S08",
+        "title": "NEDCC — Protecting Paper and Book Collections During Exhibition",
+        "url": "https://www.nedcc.org/free-resources/preservation-leaflets/2.-the-environment/2.5-protecting-paper-and-book-collections-during-exhibition",
+        "whatItSupports": "Exhibition plans for paper and books consider environmental conditions and light exposure over the display period."
+      },
+      {
+        "id": "S09",
+        "title": "CCI — ASHRAE types of control",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/climate-guidelines/ashrae-types-control.html",
+        "whatItSupports": "Loan requirements and collection-specific judgements inform environmental targets; one fixed museum target is not universal."
+      },
+      {
+        "id": "S10",
+        "title": "Library of Congress — Storing Your Books",
+        "url": "https://guides.loc.gov/preserving-your-books/storing",
+        "whatItSupports": "Book storage considers temperature, relative humidity, position and avoidance of environmental extremes; supplier-independent collection-care guidance."
+      },
+      {
+        "id": "S11",
+        "title": "Library of Congress — Care, Handling and Storage of Photographs",
+        "url": "https://www.loc.gov/preservation/care/photolea.html",
+        "whatItSupports": "Photographic materials have differing preservation needs; room climate and light are relevant environmental factors."
+      },
+      {
+        "id": "S12",
+        "title": "Library of Congress — Care, Handling and Storage of Works on Paper",
+        "url": "https://www.loc.gov/preservation/care/paper.html",
+        "whatItSupports": "Paper preservation uses appropriate storage climate, limited light exposure, protective enclosures and suitable positioning."
+      },
+      {
+        "id": "S13",
+        "title": "National Park Service — Museum Collections Environment, Handbook Part I, Chapter 4",
+        "url": "https://www.nps.gov/subjects/museums/upload/MHI_Ch4_Environment.pdf",
+        "whatItSupports": "Collection monitoring, environment and preservation planning are established museum operational subjects, supporting room and collection-zone monitoring use cases."
+      },
+      {
+        "id": "S14",
+        "title": "CCI — Basic requirements of preventive conservation",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/basic-requirements-preventive-conservation.html",
+        "whatItSupports": "Collection stores use appropriate shelving, enclosures and material-aware care; climate observations support that broader practice."
+      },
+      {
+        "id": "S15",
+        "title": "FDA — ORA-LAB.5.3 Facilities and Environmental Conditions",
+        "url": "https://www.fda.gov/media/73912/download",
+        "whatItSupports": "FDA laboratory practice monitors and records temperature and humidity where those conditions affect analytical results."
+      },
+      {
+        "id": "S16",
+        "title": "eCFR — 21 CFR 211.142, Warehousing procedures",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211#p-211.142(b)",
+        "whatItSupports": "Pharmaceutical storage procedures include appropriate temperature, humidity and light conditions. This is not a product conformity or certification claim."
+      },
+      {
+        "id": "S17",
+        "title": "FDA — Q7A Good Manufacturing Practice Guidance for Active Pharmaceutical Ingredients",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q7a-good-manufacturing-practice-guidance-active-pharmaceutical-ingredients",
+        "whatItSupports": "Manufacturing and storage conditions follow the material, process and approved facility procedures; temperature and humidity control may be needed."
+      },
+      {
+        "id": "S18",
+        "title": "ASHRAE Handbook — Data Centers and Telecommunication Facilities",
+        "url": "https://handbook.ashrae.org/Handbooks/A23/SI/A23_Ch20/a23_ch20_si.aspx",
+        "whatItSupports": "Equipment inlet-air conditions matter in data-centre and telecom operation; local inlet sensing has a different purpose from room-average sensing."
+      },
+      {
+        "id": "S19",
+        "title": "Texas Instruments — Quality and reliability FAQs: Product shelf life",
+        "url": "https://www.ti.com/quality-reliability/faqs.html",
+        "whatItSupports": "Electronic-component storage considers temperature, humidity, moisture-barrier packaging and handling instructions."
+      },
+      {
+        "id": "S20",
+        "title": "EOS/ESD Association — ESD Fundamentals, Part 1",
+        "url": "https://www.esda.org/esd-overview/esd-fundamentals/part-1-an-introduction-to-esd/",
+        "whatItSupports": "Relative humidity is one factor affecting electrostatic charge generation. Room climate observation complements, and does not define, an ESD programme."
+      },
+      {
+        "id": "S21",
+        "title": "NIST/SEMATECH — Measurement configuration within the laboratory",
+        "url": "https://www.itl.nist.gov/div898/handbook/mpc/section5/mpc5312.htm",
+        "whatItSupports": "Temperature and humidity can contribute to laboratory measurement variation and uncertainty; method owners define the relevant conditions."
+      },
+      {
+        "id": "S22",
+        "title": "Canon — Storing paper",
+        "url": "https://hk.canon/en/support/8201643300",
+        "whatItSupports": "Paper storage and movement between rooms are affected by temperature and humidity differences; room comparison is a practical monitoring use case."
+      },
+      {
+        "id": "S23",
+        "title": "Steinway & Sons — Service and Maintenance",
+        "url": "https://www.steinway.com/news/features/utilty/service-and-maintenance",
+        "whatItSupports": "Instrument care includes appropriate room temperature and relative humidity; this supports climate monitoring around sensitive instruments."
+      },
+      {
+        "id": "S24",
+        "title": "Prusa Knowledge Base — Drying filament",
+        "url": "https://help.prusa3d.com/article/drying-filament_332086",
+        "whatItSupports": "Moisture-sensitive printing materials use material-specific drying and storage procedures; storage-air observations are one part of the workflow."
+      },
+      {
+        "id": "S25",
+        "title": "Historic England — Thermography in Historic Buildings",
+        "url": "https://historicengland.org.uk/whats-new/research/back-issues/thermography-in-historic-buildings/",
+        "whatItSupports": "Environmental observation can inform conservation heating and care of historic interiors; historic-building conditions need contextual interpretation."
+      },
+      {
+        "id": "S26",
+        "title": "US EPA — Reference Guide for Indoor Air Quality in Schools",
+        "url": "https://www.epa.gov/iaq-schools/reference-guide-indoor-air-quality-schools",
+        "whatItSupports": "Room temperature, humidity, spatial differences and building operation matter to the indoor environment. Broader air-quality assessment requires other information."
+      },
+      {
+        "id": "S27",
+        "title": "Royal Horticultural Society — How to grow houseplants",
+        "url": "https://www.rhs.org.uk/plants/types/houseplants/growing-guide",
+        "whatItSupports": "Indoor plant care varies by species and location; temperature, humidity and light are distinct care factors."
+      },
+      {
+        "id": "S28",
+        "title": "ZEISS — Cleaning Your Microscope: Transport and storage",
+        "url": "https://www.zeiss.com/microscopy/us/l/service-support/cleaning-your-microscope.html",
+        "whatItSupports": "Optical instrument storage considers humidity, sunlight, packaging and the manufacturer's care instructions."
+      }
+    ],
+    "imagePolicy": "Illustrative scenes; no claim of installations or client projects. Official product image retained without reconstructing hardware."
+  },
+  "applicationSection": {
+    "title": "屋内空間。それぞれの管理課題。",
+    "valueHeading": "必要な環境情報を、適切な測定点で。",
+    "description": "博物館の展示ケースや文書館から、研究室、環境に敏感な物品の保管場所、作業室まで、八つの屋内環境における48のモニタリング用途をご覧いただけます。各用途では、観察する項目、測定点の位置、測定値がチームの業務にどう役立つかを示しています。",
+    "note": "画像は設置環境の例です。測定チャネルと位置はプロジェクトごとに選定します。"
+  },
+  "groups": [
+    {
+      "id": "museums",
+      "title": "博物館・展示ケース",
+      "jumpLabel": "博物館",
+      "intro": "展示室の空気から個々の展示ケースまで、収蔵品の周辺環境を把握します。温度と相対湿度で局所的な環境を確認し、オプションの照度測定で展示照明計画を支援します。",
+      "scenes": [
+        "museum-main-gallery",
+        "museum-sealed-showcase",
+        "museum-textile-costume",
+        "museum-manuscript-case",
+        "museum-natural-history",
+        "museum-historic-interior-display"
+      ],
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "博物館の展示室に並ぶガラス展示ケースと考古資料。",
+        "caption": "博物館展示室の展示環境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "galleries",
+      "title": "美術館・展覧会",
+      "jumpLabel": "美術館",
+      "intro": "作品が展示される場所の環境を記録します。各位置の温湿度と選定した照度測定を組み合わせ、記録された測定位置に基づいて、担当者が照明、展示変更、貸出要件を確認できるようにします。",
+      "scenes": [
+        "gallery-painting-display",
+        "gallery-works-on-paper",
+        "gallery-photographic-exhibition",
+        "gallery-temporary-exhibition",
+        "gallery-loan-handover",
+        "gallery-daylight-skylight"
+      ],
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "額装された絵画と天井のトラック照明がある現代美術ギャラリー",
+        "caption": "温度、湿度、照度のモニタリングに向けた現代美術ギャラリー環境の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archives",
+      "title": "文書館・図書館・貴重資料",
+      "jumpLabel": "文書館",
+      "intro": "閉架書庫から職員立会いでの閲覧まで、記録資料や希少資料の周辺環境を把握します。保管では温湿度を優先し、資料の展示場所や日常的に光にさらされる場所では照度測定を追加します。",
+      "scenes": [
+        "archive-mobile-stacks",
+        "library-rare-book-store",
+        "library-special-reading-room",
+        "archive-map-plan-cabinets",
+        "archive-photograph-store",
+        "archive-digitisation-workroom"
+      ],
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "文書箱と製本された記録資料を収納した移動式書架",
+        "caption": "局所的な保存環境を観察するための通路を備えた文書収蔵庫の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collections",
+      "title": "収蔵庫・保存修復",
+      "jumpLabel": "収蔵品の保存管理",
+      "intro": "保管場所や作業エリアの環境を、収蔵品の保存管理に結び付けます。素材と部屋の用途に応じて温湿度の測定点を選び、展示、取扱い、保存修復上の課題に役立つ場合に照度を追加します。",
+      "scenes": [
+        "collection-mixed-object-store",
+        "collection-painting-rack-store",
+        "collection-textile-drawer-store",
+        "collection-receiving-room",
+        "collection-conservation-studio",
+        "collection-framing-mounting"
+      ],
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "収納キャビネットと丁寧に配置された収蔵品がある博物館収蔵庫",
+        "caption": "収蔵環境 · 参考画像",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratories",
+      "title": "研究室・医薬品関連空間",
+      "jumpLabel": "研究室・医薬品",
+      "intro": "手法、材料、保管指示で必要とされる室内環境を記録します。実際の手順に合わせて温度、湿度、オプションの照度を選択し、校正と記録の要件をプロジェクトチームと合意します。",
+      "scenes": [
+        "laboratory-analytical-room",
+        "laboratory-weighing-room",
+        "laboratory-ambient-sample-store",
+        "pharma-ambient-stockroom",
+        "pharma-material-quarantine",
+        "laboratory-instrument-workroom"
+      ],
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "クロマトグラフィー装置と風防付き天びんが作業台に置かれた分析研究室",
+        "caption": "分析装置のある研究室作業環境の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology",
+      "title": "電子機器・データセンター・クリーンルーム",
+      "jumpLabel": "技術施設",
+      "intro": "機器、部品、管理された作業エリアの周囲の温湿度を優先します。吸気口、保管、工程の要件に応じて追加の測定位置を選び、明確な照明評価の課題がある場合は照度を追加します。",
+      "scenes": [
+        "datacentre-rack-inlet",
+        "technology-edge-it-room",
+        "technology-electronics-assembly",
+        "technology-component-storage",
+        "technology-cleanroom-environment",
+        "technology-metrology-room"
+      ],
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "通路が明確に区画された屋内データセンターのサーバーラック",
+        "caption": "データセンター環境 · 参考画像",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production",
+      "title": "屋内生産・環境に敏感な材料",
+      "jumpLabel": "材料",
+      "intro": "屋内で扱う材料と作業に合わせてモニタリングを計画します。温湿度で各位置の保管・準備環境を把握し、オプションの照度で、自然光、展示、作業に関する特定の課題の検討を支援します。",
+      "scenes": [
+        "production-print-paper-store",
+        "production-textile-materials",
+        "production-musical-instruments",
+        "production-optics-spares",
+        "production-filament-dry-storage",
+        "production-botanical-specimens"
+      ],
+      "image": {
+        "name": "warehouses.webp",
+        "alt": "箱詰めの材料と棚が並ぶ屋内倉庫",
+        "caption": "材料の保管環境 · 参考画像",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "buildings",
+      "title": "歴史的建造物・学習・来館者向け空間",
+      "jumpLabel": "屋内空間",
+      "intro": "人と収蔵品が同じ建物を利用する場所の環境を比較します。観察目的に応じて室内の測定位置を選び、自然光や作業に関する評価にはオプションの照度を利用し、結果を施設管理計画や保存計画と併せて検討します。",
+      "scenes": [
+        "building-historic-rooms",
+        "building-classrooms",
+        "building-public-library",
+        "building-visitor-reception",
+        "building-worship-heritage",
+        "building-indoor-plant-conservatory"
+      ],
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "保存された博物館の部屋にある歴史的な木製家具と肖像画。",
+        "caption": "歴史的な内装・家具を備えた文化財の部屋",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "id": "museum-main-gallery",
+      "group": "museums",
+      "title": "博物館の展示室環境",
+      "description": "博物館全体を一つの測定値で判断せず、展示室ごとに環境記録を作成します。開館時間中、夜間停止時、季節変化を通して展示区画を比較します。収蔵品の保存管理担当者と施設管理チームが同じ局所的な測定値を確認し、室内設定の計画や変化の調査に利用できます。",
+      "measurement": "温度と相対湿度。選定した展示位置での照度はオプション。",
+      "monitoringPoint": "展示区画を代表する位置。配置や室内環境が異なる場所には測定点を追加。",
+      "installation": "承認された壁面または自立式の位置を利用し、空気に十分に触れるように設置します。照度を測定する場合は、受光面が遮られないようにしてください。",
+      "projectBrief": "展示室の図面、収蔵品の素材、現在の環境管理目標、環境の異なる展示区画の数をお知らせください。",
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "博物館の展示室に並ぶガラス展示ケースと考古資料。",
+        "caption": "博物館展示室の展示環境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-sealed-showcase",
+      "group": "museums",
+      "title": "密閉型の資料展示ケース",
+      "description": "収蔵品を局所的な微気候で管理する場合は、展示ケース内の空気と周囲の室内環境の両方を測定します。二つの記録により、室内環境の変化や日常の開閉にケースがどう反応するかを把握できます。ケース設計と展示物の配置に適した、目立たない測定位置を選びます。",
+      "measurement": "ケース内の温度と相対湿度。展示物の鑑賞位置での照度はオプション。",
+      "monitoringPoint": "展示物を置く区画の環境を代表する、承認されたケース内の位置。必要に応じて別途室内の参考測定点を設置。",
+      "installation": "ケース製作者または保存担当者と配置を合意し、密閉性を維持するとともに、機器が収蔵品に触れないようにしてください。",
+      "projectBrief": "ケースの寸法、区画配置、緩衝・環境制御の構成、アクセス制限をお知らせください。",
+      "image": {
+        "name": "museum-display-case.webp",
+        "alt": "博物館の密閉ガラス展示ケース内にある陶器と青銅製品。",
+        "caption": "個々の展示ケース内の環境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-textile-costume",
+      "group": "museums",
+      "title": "織物・衣装の展示",
+      "description": "展示期間中の衣装、タペストリー、装飾織物の周辺環境を記録し、学芸員の管理に役立てます。温度と相対湿度で展示環境を把握し、照度測定を含む構成で、その織物に選定した照明を確認できます。測定値は、展示スケジュールおよび保存担当者による素材別の計画と併せて評価します。",
+      "measurement": "温度と相対湿度。織物展示の照度はオプション。",
+      "monitoringPoint": "展示資料の近く。照度を測定する場合は、受光面の向きを記録した位置。",
+      "installation": "承認されたケース部材または独立した支持具に取り付けます。鑑賞空間を確保し、織物に接触しないようにしてください。",
+      "projectBrief": "織物の種類、注意を要する染料や仕上げ、展示期間、ケースの詳細、合意済みの環境許容範囲をお知らせください。",
+      "image": {
+        "name": "textile-display.webp",
+        "alt": "柔らかな照明のガラスキャビネットに展示された歴史的な衣装と刺繍織物。",
+        "caption": "光に敏感な織物コレクション",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-manuscript-case",
+      "group": "museums",
+      "title": "写本・紙資料の展示ケース",
+      "description": "展示中の写本、地図、挿絵入り文書の展示環境を継続して確認します。展示するページや紙面の環境を代表する位置に測定点を配置してください。オプションの照度記録は、展示スケジュールに合わせた照明変化の確認に役立ち、温湿度はその場所の保存環境の記録に役立ちます。",
+      "measurement": "温度と相対湿度。展示紙面での照度はオプション。",
+      "monitoringPoint": "展示紙面の近くのケース内位置。照度センサーを選定した測定面に合わせて配置。",
+      "installation": "保存担当者と合意した独立した支持具を使用します。センサー開口部を塞がず、ケースへの安全なアクセスを確保してください。",
+      "projectBrief": "紙と描画・印刷材料の種類、展示面、照明配置、展示日程、保存要件をお知らせください。",
+      "image": {
+        "name": "paper-display.webp",
+        "alt": "ガラス天板の展示ケース内にある、開かれた写本と歴史的な紙資料。",
+        "caption": "紙資料・写本の展示環境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-natural-history",
+      "group": "museums",
+      "title": "自然史標本の展示",
+      "description": "自然史展示の実際の標本に合わせてモニタリングを選定します。剥製、乾燥植物、鉱物では、同じ展示室でも環境管理の優先事項が異なる場合があります。各位置の測定値を展示配置の見直しの根拠とし、対象標本が光に敏感な場合はオプションの照度測定が役立ちます。",
+      "measurement": "温度と相対湿度。選定した光に敏感な標本の照度はオプション。",
+      "monitoringPoint": "収蔵品の保存管理チームが選定した、標本区画または展示物周辺の空気を測定する位置。",
+      "installation": "承認された展示家具に設置し、標本には取り付けず、アクセスや点検を妨げないようにしてください。",
+      "projectBrief": "標本の素材、ケース設計、保存方法、照度モニタリングが必要な展示を明確にしてください。",
+      "image": {
+        "name": "natural-history.webp",
+        "alt": "博物館のガラスキャビネットに展示された鉱物と化石標本。",
+        "caption": "自然史コレクションの展示環境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-historic-interior-display",
+      "group": "museums",
+      "title": "歴史的な部屋・家具の展示",
+      "description": "歴史を紹介する部屋で、家具、壁装材、装飾品の周辺環境をモニタリングします。各位置の測定値を、部屋の利用状況や季節ごとの暖房スケジュールと比較します。窓に面する展示物の近くでオプションの照度を測定すると、自然光の影響や現在のカーテン・雨戸の運用を評価する際に役立ちます。",
+      "measurement": "温度と相対湿度。選定した窓に面する展示物の照度はオプション。",
+      "monitoringPoint": "収蔵品の環境を代表する位置。保存計画で必要な場合は、外周部に別の測定点を設置。",
+      "installation": "現代の設備部材に、原状回復できる承認済みの支持具を使用します。歴史的な表面や家具には手を加えないでください。",
+      "projectBrief": "室内図面、展示物の素材、自然光の入射経路、暖房スケジュール、取付可能な位置をお知らせください。",
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "保存された博物館の部屋にある歴史的な木製家具と肖像画。",
+        "caption": "歴史的な内装・家具を備えた文化財の部屋",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-painting-display",
+      "group": "galleries",
+      "title": "絵画展示室",
+      "description": "異なる壁面や室内区画にある絵画の周辺環境を継続して確認します。すべての展示位置が室内中央の測定値と同じ環境だと判断せず、傾向を空調変更や展示配置の変更と比較できます。オプションの照度測定は、各展示エリアで合意した照明の確認に役立ちます。",
+      "measurement": "温度と相対湿度。選定した絵画展示面の照度はオプション。",
+      "monitoringPoint": "作品の展示エリア近くの承認された位置。給気の噴流ではなく、作品の周辺環境を反映する位置を選定。",
+      "installation": "機器は別の承認された固定具に設置します。時系列で測定値を比較する際は、同じ位置条件を維持してください。",
+      "projectBrief": "作品の支持体と画材、展示位置、展示室の設定、照明計画をお知らせください。",
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "額装された絵画と天井のトラック照明がある現代美術ギャラリー",
+        "caption": "温度、湿度、照度のモニタリングに向けた現代美術ギャラリー環境の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-works-on-paper",
+      "group": "galleries",
+      "title": "紙を支持体とする作品の展示",
+      "description": "展示中の素描、水彩画、版画の環境記録を作成します。選定した照度測定値は、スポットライトを調整する際や作品を入れ替える際の実務的な参考になります。温湿度は、素材別の展示計画および合意した展示期間と併せて確認します。",
+      "measurement": "温度と相対湿度。紙を支持体とする作品の展示照度はオプション。",
+      "monitoringPoint": "展示紙面を代表する、位置と向きを記録した測定点。",
+      "installation": "承認された独立した取付具または展示設備を使用します。展示環境を代表しない影の中にセンサーを置かないでください。",
+      "projectBrief": "画材の感受性、額装の詳細、照明位置、展示替えスケジュール、合意済みの保存上の許容範囲をお知らせください。",
+      "image": {
+        "name": "works-on-paper-gallery.webp",
+        "alt": "保存に適した額装と穏やかな展示照明による紙作品の展覧会",
+        "caption": "展示作品の近くで環境を観察できる紙作品展の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-photographic-exhibition",
+      "group": "galleries",
+      "title": "写真展",
+      "description": "写真プリントの展示計画に、各位置の温湿度と、指定された場合の照度測定値を役立てます。写真技法によって要件が異なるため、学芸員または保存担当者が管理目標を選定します。照明調整後の環境を確認し、展示期間中の状況を記録できます。",
+      "measurement": "温度と相対湿度。展示写真プリントの照度はオプション。",
+      "monitoringPoint": "展示区画ごとの照明と室内環境を代表する、選定した写真プリント展示位置。",
+      "installation": "額縁から離れた、承認された展示室設備に取り付けます。照度チャネルを供給する場合は、受光面の向きを再現できるようにしてください。",
+      "projectBrief": "写真技法、額装やガラスの有無、展示日程、保存管理チームの展示要件をお知らせください。",
+      "image": {
+        "name": "photography-gallery.webp",
+        "alt": "額装プリントと管理された照明のある白黒写真ギャラリー",
+        "caption": "管理された展示照明の下で展示する写真コレクションの例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-temporary-exhibition",
+      "group": "galleries",
+      "title": "企画展の設営",
+      "description": "企画展の開幕前に各位置の基準値を取得し、展示設備、照明、部屋の利用状況の変化に応じて測定値を比較します。これにより、設営チームと学芸員が引渡し時に参照できる環境情報を得られます。前回の配置の測定点をそのまま使わず、完成した展示に合わせて測定点を選定してください。",
+      "measurement": "温度と相対湿度。新しい展示配置の照度はオプション。",
+      "monitoringPoint": "展示設営の確認時に特定した、新たなケース区画と壁面区画。",
+      "installation": "取り外し可能な承認済みの設備を利用し、展示期間を通して測定値を解釈できるよう、各位置を記録してください。",
+      "projectBrief": "設営計画、展示資料・素材、設営日程、測定期間、引渡し要件をお知らせください。",
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "額装された絵画と天井のトラック照明がある現代美術ギャラリー",
+        "caption": "温度、湿度、照度のモニタリングに向けた現代美術ギャラリー環境の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-loan-handover",
+      "group": "galleries",
+      "title": "借用資料の展示・受入室",
+      "description": "貸出元との協議に向け、展示室と受入室の温湿度記録を準備します。測定位置とデータ送信の構成を貸出要件に合わせます。開幕前および展示中に各位置の測定値を確認し、展示契約の対象位置ではオプションの照度モニタリングを利用できます。",
+      "measurement": "温度と相対湿度。貸出契約で必要な位置の照度はオプション。",
+      "monitoringPoint": "合意した受入・展示位置。貸出文書と一致する識別情報を使用。",
+      "installation": "作品到着前に、資料管理担当者と保存担当者と取付方法、アクセス、測定構成を確認してください。",
+      "projectBrief": "貸出条件、会場配置、取扱い日程、必要な記録、測定値を確認する責任分担をお知らせください。",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "収納キャビネットと丁寧に配置された収蔵品がある博物館収蔵庫",
+        "caption": "収蔵環境 · 参考画像",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-daylight-skylight",
+      "group": "galleries",
+      "title": "自然光・天窓のある展示室",
+      "description": "変化する自然光が入る展示区画の環境を比較します。オプションの照度測定値で現在のブラインド、遮光、照明スケジュールを評価し、温湿度で各位置の環境を把握します。展示目的に合わせて各センサーを配置し、日中の変化を比較する際は向きを維持してください。",
+      "measurement": "温度と相対湿度。選定した自然光の影響を受ける展示区画の照度はオプション。",
+      "monitoringPoint": "展示面を代表する位置と、自然光の影響を受ける展示室内で記録した温湿度測定点。",
+      "installation": "意図しない影がかからない位置を合意します。承認された固定具を使用し、照度チャネルの性能が想定条件に適しているか確認してください。",
+      "projectBrief": "窓や天窓の向き、季節ごとの自然光の変化、遮光方法、展示上の優先事項をお知らせください。",
+      "image": {
+        "name": "daylit-gallery.webp",
+        "alt": "窓際と室内奥の光の違いが分かる、自然光の入る博物館展示室",
+        "caption": "天窓と側面の窓から入る自然光により、位置ごとの照度を比較できる展示室の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-mobile-stacks",
+      "group": "archives",
+      "title": "文書収蔵庫・移動式書架",
+      "description": "文書収蔵庫の通路や書架区画で温湿度を記録します。季節傾向や収納配置の変更を評価する際は、選定した位置を比較します。閉鎖された収蔵庫では温湿度を優先し、明確な露光評価の課題がある場合に限り照度チャネルを追加します。",
+      "measurement": "温度と相対湿度。保管中の露光に関する課題が特定された場所での照度はオプション。",
+      "monitoringPoint": "収蔵庫のモニタリング計画に基づいて選定した、代表的な書架の高さと通路区画。",
+      "installation": "移動する書架や箱に干渉しないように取り付けます。空気に触れる状態を維持し、収蔵庫職員の安全なアクセスを確保してください。",
+      "projectBrief": "収蔵庫の寸法、書架配置、資料の種類、現在の管理目標、予定するモニタリング期間をお知らせください。",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "文書箱と製本された記録資料を収納した移動式書架",
+        "caption": "局所的な保存環境を観察するための通路を備えた文書収蔵庫の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "library-rare-book-store",
+      "group": "archives",
+      "title": "稀覯本・貴重資料の書庫",
+      "description": "年間を通して、稀覯本や製本された貴重資料の周囲の温湿度を確認します。各位置の記録を用いて、図書館員が保管区画を比較し、暖房や部屋の用途変更による影響を評価できます。閉鎖された書庫では温湿度を中心とし、露光が重要な位置で照度モニタリングを選定します。",
+      "measurement": "温度と相対湿度。選定した光にさらされる資料位置の照度はオプション。",
+      "monitoringPoint": "書架やキャビネット内の環境を代表する位置。暖房器具、換気口、窓の直接的影響を調べる場合を除き、それらから離して設置。",
+      "installation": "承認された棚または壁面の支持具を利用し、通路や資料の出納経路を塞がないようにしてください。",
+      "projectBrief": "書籍と装丁の種類、書庫配置、暖房構成、特別な保存要件をお知らせください。",
+      "image": {
+        "name": "rare-book-room.webp",
+        "alt": "保護された書架と支持具に置かれた写本のある稀覯本閲覧室",
+        "caption": "位置ごとの温湿度と閲覧エリアの照度を観察する貴重資料室の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "library-special-reading-room",
+      "group": "archives",
+      "title": "貴重資料の閲覧室",
+      "description": "希少資料を閲覧する場所の温湿度を記録し、露光が保存管理計画の対象となる場合は閲覧面の照度を測定します。職員は開室時間、自然光、資料の取扱い時間に照らして測定値を確認でき、室内設定や資料利用の運用を実務的に検討できます。",
+      "measurement": "温度と相対湿度。選定した閲覧面の照度はオプション。",
+      "monitoringPoint": "閲覧環境を代表する位置。資料を置く面に受光面を合わせて配置。",
+      "installation": "利用者、書籍支持具、取扱い用具に干渉しない、承認された目立たない取付具を使用してください。",
+      "projectBrief": "開室時間、自然光の条件、資料利用方針、机の配置、モニタリングの優先事項をお知らせください。",
+      "image": {
+        "name": "rare-book-room.webp",
+        "alt": "保護された書架と支持具に置かれた写本のある稀覯本閲覧室",
+        "caption": "位置ごとの温湿度と閲覧エリアの照度を観察する貴重資料室の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-map-plan-cabinets",
+      "group": "archives",
+      "title": "地図・図面・大型紙資料のキャビネット",
+      "description": "平置きキャビネットに保管する大型紙資料の周囲の温湿度を測定します。特に配置変更や室内運用の変更後など、保管計画で区別が必要な場合は、キャビネット内と室内の位置を比較します。主要なチャネルは温湿度です。通常の暗所保管では、照度モニタリングは原則として必要ありません。",
+      "measurement": "選定したキャビネット内または周辺室内位置の温度と相対湿度。",
+      "monitoringPoint": "保管紙面を動かさずに選定した、承認されたキャビネット内の空間、または近くの環境を代表する位置。",
+      "installation": "機器が引出しや紙資料に干渉しないようにします。内部に配置する場合は、事前に十分な空間と空気への接触を確認してください。",
+      "projectBrief": "キャビネットの寸法、紙資料の種類、引出しのアクセス条件、周辺室内の配置、目標環境をお知らせください。",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "文書箱と製本された記録資料を収納した移動式書架",
+        "caption": "局所的な保存環境を観察するための通路を備えた文書収蔵庫の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-photograph-store",
+      "group": "archives",
+      "title": "写真プリントの収蔵庫",
+      "description": "保護箱やキャビネットに保管する写真プリントコレクションの室内環境を記録します。保存担当者は選定した位置と季節傾向を、管理する写真技法ごとの要件と比較できます。まず温湿度を指定し、照度チャネルは取扱いや露光に関する特定の調査に限って使用します。",
+      "measurement": "温度と相対湿度。特定の取扱い・露光調査の照度はオプション。",
+      "monitoringPoint": "対象の写真プリントコレクションの環境を代表する、室内またはキャビネット内の位置。",
+      "installation": "箱や通気の障害物から離れた承認済みの支持具を使用し、定期確認のためのアクセスを確保してください。",
+      "projectBrief": "写真技法、保管温度、収納構成、予定する評価期間を明確にしてください。",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "文書箱と製本された記録資料を収納した移動式書架",
+        "caption": "局所的な保存環境を観察するための通路を備えた文書収蔵庫の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-digitisation-workroom",
+      "group": "archives",
+      "title": "デジタル化・スキャン作業室",
+      "description": "文書や書籍をデジタル化作業室で扱う際の各位置の環境を確認します。温湿度は、取扱い作業や室内環境の変化を把握する背景情報になります。必要に応じて、選定した作業位置でオプションの照度により周辺光を記録できます。撮影露出や複写用照明の試験は、引き続き撮像工程の一部として行います。",
+      "measurement": "温度と相対湿度。選定した取扱い位置での周辺照度はオプション。",
+      "monitoringPoint": "スキャン機器の配置と併せて選定した、資料の一時置き場と取扱い区画。",
+      "installation": "撮像チームと保存管理チームが合意した位置を使用し、可動するカメラ機器や機器の直接的な熱から離して取り付けてください。",
+      "projectBrief": "資料の種類、取扱い時間、機器の熱源、室内配置、確認したい環境上の課題をお知らせください。",
+      "image": {
+        "name": "digitisation-room.webp",
+        "alt": "上方撮影式の書籍スキャナー、ブッククレードル、文書仕分け台のある図書館のデジタル化作業室",
+        "caption": "上方撮影式スキャナーと紙資料取扱い作業台を備えた文書デジタル化作業室の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-mixed-object-store",
+      "group": "collections",
+      "title": "多様な収蔵品を保管する収蔵庫",
+      "description": "多様な収蔵品を保管する収蔵庫の各保管区画について、管理担当者に温湿度記録を提供します。同じ室内でも資料ごとに要件が異なるため、測定位置と評価基準は収蔵品の管理計画に合わせます。定期点検、季節ごとの評価、棚配置の変更時に、各位置の測定値を比較できます。",
+      "measurement": "温度と相対湿度。特定した露光のある収蔵品や取扱い区画の照度はオプション。",
+      "monitoringPoint": "環境を代表する棚や保管区画。収納内部や室内の条件が異なる場所には測定位置を追加。",
+      "installation": "承認されたラックや壁面の支持具を使用し、空気への接触、安全な出納経路、機器識別情報へのアクセスを確保してください。",
+      "projectBrief": "収蔵品の素材、収納容器の種類、室内図面、現在の環境管理目標、点検手順をお知らせください。",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "収納キャビネットと丁寧に配置された収蔵品がある博物館収蔵庫",
+        "caption": "収蔵環境 · 参考画像",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-painting-rack-store",
+      "group": "collections",
+      "title": "絵画ラック・絵画収蔵庫",
+      "description": "保管中の絵画の周囲の温湿度をモニタリングし、選定したラック位置を室内の参考測定点と比較します。記録は保管状態の評価やラック内の収蔵状況の変更時に利用できます。温湿度を主要な測定項目とし、露光や取扱い手順を評価する場合に限って照度モニタリングを選定します。",
+      "measurement": "温度と相対湿度。保管中の露光に関する特定の課題を評価する照度はオプション。",
+      "monitoringPoint": "絵画ラックのそばの承認された位置。収蔵品の管理計画で比較が必要な場合は、室内外周部の測定点も選定。",
+      "installation": "スライド式ラック、額縁、取扱い経路に干渉しないようにセンサーを配置し、同じ測定位置を再現できるようにしてください。",
+      "projectBrief": "絵画の素材、ラック配置、室内の温湿度管理目標、アクセススケジュール、外周部についての懸念事項をお知らせください。",
+      "image": {
+        "name": "painting-store.webp",
+        "alt": "空調管理された博物館収蔵庫のスライド式メッシュラックに保管された絵画",
+        "caption": "スライド式収蔵ラックを備えた博物館絵画収蔵庫の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-textile-drawer-store",
+      "group": "collections",
+      "title": "織物用引出し・衣装収蔵庫",
+      "description": "保管中の衣装や平置き織物の周囲の温湿度を継続して確認し、収蔵配置に合わせてキャビネット内または室内の位置を選びます。各位置の測定値は、出納後、季節変化、収納配置の見直し後の環境評価に役立ちます。温湿度を優先し、保護された暗所保管では特定の必要性がある場合にのみ照度を測定します。",
+      "measurement": "選定した織物保管位置の温度と相対湿度。",
+      "monitoringPoint": "衣装収蔵庫の環境を代表する位置、または資料に接触しない承認済みのキャビネット内空間。",
+      "installation": "引出しの可動空間と衣服への安全なアクセスを確保します。目立たない支持具について、保存管理チームと合意してください。",
+      "projectBrief": "織物の素材、保管形式、キャビネット寸法、室内の管理目標、予定するアクセス頻度をお知らせください。",
+      "image": {
+        "name": "textile-store.webp",
+        "alt": "博物館の収納引出しに平置きされた歴史的な刺繍織物と、その隣にある緩衝材を用いた織物ロール",
+        "caption": "保存用の平置き・巻き保管を行う織物収蔵庫の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-receiving-room",
+      "group": "collections",
+      "title": "収蔵品の受入・状態評価室",
+      "description": "到着した収蔵品の状態を確認し、次の保管場所や展示位置に向けて準備する間の室内温湿度を記録します。受入室と移動先エリアを比較し、取扱いの時系列に関する背景情報を残せます。各素材と受入手順に必要な観察項目は、資料管理担当者または保存担当者が定めます。",
+      "measurement": "温度と相対湿度。合意した状態評価位置の照度はオプション。",
+      "monitoringPoint": "合意した観察期間中の収蔵品の環境を代表するよう選定した、受入・一時保管位置。",
+      "installation": "梱包箱や運搬動線に干渉しない独立した承認済みの支持具を使用し、位置と室内運用の変更を記録してください。",
+      "projectBrief": "受入・開梱手順、収蔵品の素材、一時保管期間、移動先の温湿度要件をお知らせください。",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "収納キャビネットと丁寧に配置された収蔵品がある博物館収蔵庫",
+        "caption": "収蔵環境 · 参考画像",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-conservation-studio",
+      "group": "collections",
+      "title": "保存修復作業室",
+      "description": "調査、記録、作業台での処置を行う際の作業室環境を把握します。温湿度の測定値は、作業空間と日常運用の背景情報になります。オプションの照度モニタリングは、特定の周辺光評価に役立ちます。保存担当者が位置を選定し、処置や調査の要件と併せて測定値を解釈します。",
+      "measurement": "温度と相対湿度。選定した作業位置の周辺照度はオプション。",
+      "monitoringPoint": "作業台や収蔵品の一時置き場の空気環境を代表する位置。工程による集中した熱や近くの機器排気から離して設置。",
+      "installation": "承認された独立した支持具を使用し、安全な作業空間、清掃時のアクセス、資料の取扱いを確保できる配置にしてください。",
+      "projectBrief": "部屋の用途、作業スケジュール、処置に伴う環境要件、比較が必要な位置をお知らせください。",
+      "image": {
+        "name": "conservation-studio.webp",
+        "alt": "支持具に置いた陶器と実体顕微鏡のある博物館の保存修復作業台",
+        "caption": "博物館収蔵品の保存修復作業室の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-framing-mounting",
+      "group": "collections",
+      "title": "額装・展示準備室",
+      "description": "展示用の額、マウント、収蔵資料を組み立てる場所の温湿度を継続して確認します。設置前に準備室と展示先の展示室の環境を比較できます。模擬展示を確認する際にはオプションの照度測定が役立ちます。作業室全体の明るさではなく、予定する展示面に合わせて測定を選定してください。",
+      "measurement": "温度と相対湿度。展示照明の模擬環境での照度はオプション。",
+      "monitoringPoint": "資料の一時置き場と組立区画、および照明の模擬環境で選定した展示面。",
+      "installation": "作業台、切断機器、収蔵品の取扱い経路に干渉しない、承認された作業室設備に取り付けてください。",
+      "projectBrief": "資料と取付の計画、展示先の展示室要件、準備スケジュール、照明模擬環境の詳細をお知らせください。",
+      "image": {
+        "name": "conservation-studio.webp",
+        "alt": "支持具に置いた陶器と実体顕微鏡のある博物館の保存修復作業台",
+        "caption": "博物館収蔵品の保存修復作業室の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-analytical-room",
+      "group": "laboratories",
+      "title": "分析研究室",
+      "description": "室温や湿度が分析法に関わる場合は、研究室の業務に各位置の環境記録を追加します。機器の使用や試験スケジュールと併せて測定値を確認し、研究室独自の許容基準に照らして変化を調査できます。作業エリアの環境を代表する位置を選び、必要な検証方法を合意してください。",
+      "measurement": "温度と相対湿度。分析法が光条件を指定する場合の照度はオプション。",
+      "monitoringPoint": "研究室の環境モニタリング計画で特定した、分析作業エリアを代表する位置。",
+      "installation": "機器の熱、フード排気、清掃経路から離れた承認済みの位置を使用し、材質と校正の要件を確認してください。",
+      "projectBrief": "分析法の要件、室内配置、許容基準、記録要件、研究室の検証手順をお知らせください。",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "クロマトグラフィー装置と風防付き天びんが作業台に置かれた分析研究室",
+        "caption": "分析装置のある研究室作業環境の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-weighing-room",
+      "group": "laboratories",
+      "title": "精密計量室",
+      "description": "精密天びんの周辺環境を評価するため、計量担当者に各位置の温湿度記録を提供します。データは、計量作業や研究室の測定手順と併せて検討できます。アクセス、機器の動作、気流対策に影響を与えず、天びんエリアの環境を代表する室内位置を選びます。",
+      "measurement": "選定した計量エリアの周囲の温度と相対湿度。",
+      "monitoringPoint": "測定手順に責任を持つ研究室と合意した、天びんエリア付近の環境を代表する位置。",
+      "installation": "天びんの風防や振動に敏感な作業台から機器を離し、室内空気の測定を妨げないようにしてください。",
+      "projectBrief": "天びん室の要件、作業スケジュール、機器配置、測定法に必要な環境記録をお知らせください。",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "クロマトグラフィー装置と風防付き天びんが作業台に置かれた分析研究室",
+        "caption": "分析装置のある研究室作業環境の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-ambient-sample-store",
+      "group": "laboratories",
+      "title": "常温での保存試料保管庫",
+      "description": "承認された指示に従って常温保管する試料の室内環境を継続して確認します。各位置の測定値は、定期的な評価や保管配置の変更を検討する際の背景情報になります。試料や手順に露光要件がある場合にのみ照度チャネルを選択し、導入前に必要な記録を合意します。",
+      "measurement": "温度と相対湿度。試料保管指示で必要な場合の照度はオプション。",
+      "monitoringPoint": "常温試料保管室で選定した、棚区画の環境を代表する位置。",
+      "installation": "試料容器や出納経路に干渉しないように取り付け、位置と機器識別子を保管計画に記録してください。",
+      "projectBrief": "試料の種類、必要な保管環境、棚配置、保管期間、記録評価の責任分担をお知らせください。",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "常温の屋内保管庫の棚に並ぶ包装済み医薬品",
+        "caption": "医薬品の常温保管室の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "pharma-ambient-stockroom",
+      "group": "laboratories",
+      "title": "医薬品の常温保管室",
+      "description": "承認された常温保管指示のある医薬品に向け、各位置の室内環境記録を作成します。保管配置や施設で実施済みの環境マッピングに合わせて位置を選びます。製品要件に合わせて温度、湿度、オプションの照度を選択し、品質管理チームが許容基準、校正、記録評価の手順を定めます。",
+      "measurement": "温度と相対湿度。承認された製品保管条件で必要な場合の照度はオプション。",
+      "monitoringPoint": "都合のよい中央壁面だけでなく、施設評価や環境マッピングに基づいて選定した保管測定点。",
+      "installation": "衛生的な取付、アクセス、通信接続、必要な機器検証を、施設担当者および品質管理チームと確認してください。",
+      "projectBrief": "製品保管指示、配置や環境マッピングの結果、モニタリング要件、予定するシステム連携をお知らせください。",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "常温の屋内保管庫の棚に並ぶ包装済み医薬品",
+        "caption": "医薬品の常温保管室の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "pharma-material-quarantine",
+      "group": "laboratories",
+      "title": "医薬品原材料・包装資材の保管庫",
+      "description": "保管環境要件が定められた原材料や包装資材の保管場所で、各位置の環境をモニタリングします。測定位置は対象区画と材料仕様に関連付けて管理します。保管点検や施設変更の際に室内記録を評価でき、承認された指示で光の管理が必要な材料にはオプションの照度測定を利用できます。",
+      "measurement": "温度と相対湿度。指定された光に敏感な保管材料の照度はオプション。",
+      "monitoringPoint": "施設の保管評価に基づいて選定した、承認済みの材料保管区画と隔離区画。",
+      "installation": "区分保管、清掃時のアクセス、識別性を維持できる位置を使用し、適合性を施設の品質管理チームと確認してください。",
+      "projectBrief": "材料仕様、保管区画図、許容基準、検証要件、データ送信構成をお知らせください。",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "常温の屋内保管庫の棚に並ぶ包装済み医薬品",
+        "caption": "医薬品の常温保管室の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-instrument-workroom",
+      "group": "laboratories",
+      "title": "研究機器室・準備室",
+      "description": "手順で必要とされる場合に、共用研究機器や準備作業スペースの周囲の温湿度を継続して確認します。室内環境記録により、作業時の状況と室内運用の変化を比較できます。光に敏感な特定の手順にはオプションの照度を選定し、その作業に必要な測定位置と性能を合意します。",
+      "measurement": "温度と相対湿度。特定の手順や材料に向けた照度はオプション。",
+      "monitoringPoint": "研究室のモニタリング課題を確認するために選定した、機器付近の室内空気と準備作業位置。",
+      "installation": "機器の熱や進行中の作業に干渉しない承認済みの固定具を使用し、清掃や定期確認のためのアクセスを確保してください。",
+      "projectBrief": "部屋の機能、機器の環境要件、工程スケジュール、必要な具体的な測定項目をお知らせください。",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "クロマトグラフィー装置と風防付き天びんが作業台に置かれた分析研究室",
+        "caption": "分析装置のある研究室作業環境の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "datacentre-rack-inlet",
+      "group": "technology",
+      "title": "データセンターのラック吸気口",
+      "description": "室内平均値だけに頼らず、選定したラック吸気口でIT機器に供給される空気を測定します。各位置の温湿度傾向を、ラック構成の変更や冷却運転と比較します。測定位置は機器の環境と施設計画に合わせて選定します。この用途では、照度測定は標準の要件ではありません。",
+      "measurement": "選定した機器吸気位置の温度と相対湿度。",
+      "monitoringPoint": "データセンターの施設管理チームが選定した、代表的なラック前面の吸気位置と高さ。",
+      "installation": "気流、扉、ケーブルに干渉しない承認済みのラック取付具を使用し、吸気測定の目的に適した測定構成を選んでください。",
+      "projectBrief": "ラック配置、吸気位置、機器要件、冷却構成、モニタリングプラットフォームをお知らせください。",
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "通路が明確に区画された屋内データセンターのサーバーラック",
+        "caption": "データセンター環境 · 参考画像",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-edge-it-room",
+      "group": "technology",
+      "title": "エッジIT・ネットワーク機器室",
+      "description": "小規模サーバー室やネットワーク機器収納室に向け、施設管理担当者に各位置の温湿度記録を提供します。周囲の建物とは異なる運用状況になることがあるため、機器の空気経路と室内配置に合わせて測定点を選びます。温湿度の測定値は、機器追加や室内運用変更後の定期評価に役立ちます。",
+      "measurement": "選定した室内位置と機器吸気位置の温度と相対湿度。",
+      "monitoringPoint": "機器吸気位置と、比較が施設のモニタリング計画に役立つ場合の、室内環境を代表する参考測定点。",
+      "installation": "排気熱や空気が滞留するキャビネットの隅から機器を離し、保守経路からアクセスできる承認済みの固定具を使用してください。",
+      "projectBrief": "キャビネット寸法、機器配置、冷却設備、アクセススケジュール、通信要件をお知らせください。",
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "通路が明確に区画された屋内データセンターのサーバーラック",
+        "caption": "データセンター環境 · 参考画像",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-electronics-assembly",
+      "group": "technology",
+      "title": "電子機器の組立作業エリア",
+      "description": "選定した電子機器組立区画の温湿度を記録します。各位置の記録は、室内環境、季節変化、作業エリアの配置を工程チームが評価する際の背景情報になります。施設で確立した部品取扱い手順やESD管理と併せて利用し、特定の作業照明の評価にはオプションの照度を選定します。",
+      "measurement": "温度と相対湿度。選定した検査・組立作業の照度はオプション。",
+      "monitoringPoint": "工程チームと施設管理チームが合意した、組立・検査区画を代表する位置。",
+      "installation": "機械、作業者の動線、近くの機器の熱に干渉しない承認済みの固定具を使用し、現場の取付・清掃要件に従ってください。",
+      "projectBrief": "工程計画、部品要件、環境基準、比較が必要な位置をお知らせください。",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "ESDマットと実体顕微鏡を備えた電子機器の精密組立作業台",
+        "caption": "屋内の電子機器組立作業スペースの例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-component-storage",
+      "group": "technology",
+      "title": "電子部品の保管",
+      "description": "電子部品在庫の周辺室内環境を継続して確認し、実際の保管構成で必要な場合にキャビネット内のモニタリングを選定します。各位置の測定値は、包装、乾燥剤、取扱い手順と併せて評価できます。主要チャネルは温湿度とし、管理目標と必要な検証は部品供給者の要件に基づいて決定します。",
+      "measurement": "選定した部品保管室または承認済みのキャビネット内位置の温度と相対湿度。",
+      "monitoringPoint": "部品の感受性と、供給時の包装やキャビネット構成に応じて選定した保管区画。",
+      "installation": "キャビネット内構成を指定する前に、利用可能な空間、空気への接触、アクセスを確認し、部品の取扱い経路を確保してください。",
+      "projectBrief": "部品保管指示、包装とキャビネットの種類、区画配置、モニタリング基準をお知らせください。",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "ESDマットと実体顕微鏡を備えた電子機器の精密組立作業台",
+        "caption": "屋内の電子機器組立作業スペースの例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-cleanroom-environment",
+      "group": "technology",
+      "title": "クリーンルームの環境管理支援",
+      "description": "温湿度が工程に影響するクリーンルームや管理された作業空間では、環境計画に各位置の温湿度観察を追加します。測定場所、取付部材、清掃時のアクセス、検証要件を施設担当者と合意します。オプションの照度は、特定の工程や作業照明の目的に対してのみ選定します。",
+      "measurement": "温度と相対湿度。管理された工程で指定される場合の照度はオプション。",
+      "monitoringPoint": "施設の環境評価に基づいて選定した、承認された作業区画内の位置。",
+      "installation": "供給構成を選ぶ前に、筐体材質、取付方法、清掃性、測定部の空気・光への接触について、施設担当者と確認してください。",
+      "projectBrief": "工程要件、クリーンルーム図面、設置制限、検証に求める内容、希望するプラットフォーム連携をお知らせください。",
+      "image": {
+        "name": "cleanrooms.webp",
+        "alt": "作業台と産業用機器のある清潔な屋内生産室",
+        "caption": "管理された生産環境 · 参考画像",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-metrology-room",
+      "group": "technology",
+      "title": "計測・校正室",
+      "description": "測定作業の背景情報として、各位置の温湿度を記録します。研究室は、測定作業や不確かさの評価と併せて室内記録を確認できます。実際の機器と手順に合わせて測定点と検証要件を選定し、各作業の許容環境は研究室が定めます。",
+      "measurement": "選定した測定作業スペースの温度と相対湿度。",
+      "monitoringPoint": "測定に責任を持つ研究室と合意した、機器や基準器の周辺環境を代表する位置。",
+      "installation": "機器の熱や測定機構の移動範囲に干渉しない独立した承認済みの支持具を使用し、記録された位置を再現できるようにしてください。",
+      "projectBrief": "機器の環境要件、室内配置、測定スケジュール、必要な校正・検証証拠をお知らせください。",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "クロマトグラフィー装置と風防付き天びんが作業台に置かれた分析研究室",
+        "caption": "分析装置のある研究室作業環境の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-print-paper-store",
+      "group": "production",
+      "title": "印刷用紙の保管・準備",
+      "description": "用紙保管庫と印刷室・印刷作業エリアの温湿度を比較します。二つの記録は、用紙を使用場所へ移動する際の環境差の評価に役立ちます。温湿度を優先して測定し、保管上の課題に自然光への露光が含まれる場合にのみオプションの照度を利用します。",
+      "measurement": "温度と相対湿度。自然光への露光に関する特定の懸念を評価する照度はオプション。",
+      "monitoringPoint": "材料の流れに沿って選定した、用紙保管・準備環境を代表する位置。",
+      "installation": "用紙の積み重ね、機械の直接的な熱、取扱い経路に干渉しないように取り付け、測定点の周囲が空気に触れる状態を維持してください。",
+      "projectBrief": "用紙の種類、保管庫から作業室までの工程、供給者の指示、比較する位置をお知らせください。",
+      "image": {
+        "name": "warehouses.webp",
+        "alt": "箱詰めの材料と棚が並ぶ屋内倉庫",
+        "caption": "材料の保管環境 · 参考画像",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-textile-materials",
+      "group": "production",
+      "title": "織物・生地材料の保管庫",
+      "description": "織物在庫や準備エリアの周囲の温湿度を記録します。繊維や仕上げによって取扱い・保管要件が異なるため、材料担当チームが評価基準を設定します。自然光への露光や特定の材料により、光が保管評価の対象となる場合にオプションの照度を選定します。",
+      "measurement": "温度と相対湿度。選定した光にさらされる生地在庫の照度はオプション。",
+      "monitoringPoint": "材料担当チームが特定した、生地棚、ロール保管区画、準備エリアを代表する位置。",
+      "installation": "在庫や取扱い機器に干渉しない承認済みの支持具を使用します。生地との接触を避け、定期点検のためのアクセスを確保してください。",
+      "projectBrief": "繊維と仕上げの種類、供給者の保管指示、室内配置、露光に関する懸念をお知らせください。",
+      "image": {
+        "name": "textile-store.webp",
+        "alt": "博物館の収納引出しに平置きされた歴史的な刺繍織物と、その隣にある緩衝材を用いた織物ロール",
+        "caption": "保存用の平置き・巻き保管を行う織物収蔵庫の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-musical-instruments",
+      "group": "production",
+      "title": "楽器室",
+      "description": "ピアノなど湿度に敏感な楽器を保管・使用する場所の温湿度を継続して確認します。室内記録を暖房スケジュール、練習、保守時の観察と比較できます。温湿度を主要チャネルとし、特定の楽器に入る直接的な自然光を評価する場合に、オプションの照度を指定できます。",
+      "measurement": "温度と相対湿度。窓からの露光に関する特定の課題を評価する照度はオプション。",
+      "monitoringPoint": "楽器室の空気環境を代表する位置。管理計画で比較が必要な場合は、窓際の位置も選定。",
+      "installation": "楽器、演奏者、冷暖房の吹出口に干渉しない、承認された独立した支持具を使用してください。",
+      "projectBrief": "楽器の種類、製造者の管理要件、部屋の用途、自然光の入り方、モニタリング期間をお知らせください。",
+      "image": {
+        "name": "musical-instrument-room.webp",
+        "alt": "自然光の入る音楽練習室にあるアップライトピアノ、チェロ、バイオリン。",
+        "caption": "楽器室の屋内環境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-optics-spares",
+      "group": "production",
+      "title": "光学機器・精密機器の保管庫",
+      "description": "保管環境要件が定められた機器や交換部品の周囲の温湿度を記録します。実際の保管指示と包装に応じて、室内またはキャビネット内の測定点を選びます。在庫点検や施設変更の際に測定値を確認でき、保管物に露光調査が必要な場合にのみ照度チャネルを追加します。",
+      "measurement": "温度と相対湿度。機器や材料の指示で指定される場合の照度はオプション。",
+      "monitoringPoint": "保管機器と包装構成の環境を代表する、選定した棚位置または承認済みのキャビネット内位置。",
+      "installation": "センサー開口部を塞がず、キャビネットへのアクセスを確保し、内部設置に関する供給者と施設の制限に従ってください。",
+      "projectBrief": "機器の保管要件、包装の種類、キャビネット配置、必要なモニタリング基準をお知らせください。",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "ESDマットと実体顕微鏡を備えた電子機器の精密組立作業台",
+        "caption": "屋内の電子機器組立作業スペースの例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-filament-dry-storage",
+      "group": "production",
+      "title": "3Dプリント材料の保管",
+      "description": "湿気に敏感なプリント材料の周囲で、室内または承認された乾燥保管空間の空気環境を継続して確認します。記録は、フィラメント供給者の乾燥、包装、取扱い指示と併せて保管環境を評価する際に役立ちます。利用できる空間と想定条件に合わせて測定構成を選び、温湿度を主要な測定項目とします。",
+      "measurement": "選定した材料保管室または承認済みの乾燥保管位置の温度と相対湿度。",
+      "monitoringPoint": "材料の取扱い工程に合わせて選定した、フィラメントの保管・準備区画。",
+      "installation": "キャビネット内構成を選ぶ前に、空間の余裕、測定部が空気に触れる状態、想定保管条件に適した性能を確認してください。",
+      "projectBrief": "フィラメントの種類、供給者の保管指示、収納容器の寸法、確認したい環境上の課題をお知らせください。",
+      "image": {
+        "name": "materials-dry-store.webp",
+        "alt": "保管棚の密封された3Dプリント用フィラメントスプールと、その隣にあるガスケット付き乾燥保管箱",
+        "caption": "3Dプリント用ポリマーフィラメント材料の乾燥保管の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-botanical-specimens",
+      "group": "production",
+      "title": "植物標本の作製・保管",
+      "description": "乾燥植物標本や作製用材料の周囲の温湿度を記録します。室内運用や取扱い方法を見直す際に、作業室と保管場所の測定値を比較できます。通常は温湿度を中心とし、定められた露光計画の下で標本を取り扱い・展示する位置では、オプションの照度を利用します。",
+      "measurement": "温度と相対湿度。選定した標本取扱い・展示位置の照度はオプション。",
+      "monitoringPoint": "収蔵管理チームまたは研究チームが選定した、標本作製・乾燥保管エリアを代表する位置。",
+      "installation": "標本、標本用プレス、収納引出しに干渉しない承認済みの支持具を使用し、安全な取扱いと点検のためのアクセスを確保してください。",
+      "projectBrief": "標本と作製方法の種類、保管構成、室内要件、露光管理の優先事項をお知らせください。",
+      "image": {
+        "name": "natural-history.webp",
+        "alt": "博物館のガラスキャビネットに展示された鉱物と化石標本。",
+        "caption": "自然史コレクションの展示環境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-historic-rooms",
+      "group": "buildings",
+      "title": "歴史的な内装・季節によって運用が変わる建物",
+      "description": "暖房期や利用期間を通して、歴史的な部屋の環境記録を作成します。保存計画で必要な場合は、代表的な室内位置と選定した外周部の位置を比較します。オプションの照度測定値は、建物で承認された取付方法を用いて、仕上げ材や家具の周辺の自然光を評価する際に役立ちます。",
+      "measurement": "温度と相対湿度。選定した自然光の影響を受ける部位の周辺照度はオプション。",
+      "monitoringPoint": "観察対象の建築部材または収蔵品の環境を代表する、承認された室内・外周部の位置。",
+      "installation": "承認された現代の設備に原状回復できる支持具を使用し、歴史的な建築部材と来館者の動線を保全してください。",
+      "projectBrief": "建物の用途、注意を要する材料や収蔵品、暖房スケジュール、室内図面、取付の許可条件をお知らせください。",
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "保存された博物館の部屋にある歴史的な木製家具と肖像画。",
+        "caption": "歴史的な内装・家具を備えた文化財の部屋",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-classrooms",
+      "group": "buildings",
+      "title": "教室・学習室",
+      "description": "選定した学習空間の温湿度を比較し、学校の一日を通した測定値の変化を確認します。オプションの照度測定は、特定の自然光や机上照明の評価に役立ちます。施設管理チームが室内環境を代表する位置を選び、利用スケジュールや建物全体の屋内環境評価と併せて測定値を検討します。",
+      "measurement": "温度と相対湿度。選定した学習位置や自然光の評価位置の照度はオプション。",
+      "monitoringPoint": "利用者が滞在する室内区画を代表する位置と、作業照明の調査に向けて記録した測定面。",
+      "installation": "利用者や教育機器に干渉しないように確実に取り付け、空気への接触と受光面の向きを観察目的に合わせてください。",
+      "projectBrief": "室内配置、授業スケジュール、現在の懸念事項、自然光の入り方、予定するモニタリング期間をお知らせください。",
+      "image": {
+        "name": "classroom.webp",
+        "alt": "自然光の入る教室にある机と椅子、何も書かれていないホワイトボード。",
+        "caption": "教室の温度・湿度・照度環境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-public-library",
+      "group": "buildings",
+      "title": "公共図書館の閲覧・書架エリア",
+      "description": "公共図書館の蔵書と利用者が共存する空間の温湿度を評価します。開館時間や季節ごとの運用を通して、選定した書架と閲覧エリアを比較します。オプションの照度モニタリングは、窓際の書架や閲覧位置を対象とした調査に役立ちます。資料の保存管理と空間利用の優先事項は図書館が決定します。",
+      "measurement": "温度と相対湿度。選定した棚や閲覧面の露光を評価する照度はオプション。",
+      "monitoringPoint": "蔵書の書架や閲覧区画を代表する位置。特定の自然光に関する課題に向けた測定位置を追加。",
+      "installation": "書籍、来館者、清掃時のアクセスに干渉しない、確実に固定できる承認済みの取付具を使用し、各測定点の目的を記録してください。",
+      "projectBrief": "書架配置、開館時間、窓の位置、蔵書の種類、室内管理の目標をお知らせください。",
+      "image": {
+        "name": "public-library.webp",
+        "alt": "書架、閲覧机、高い窓から入る自然光のある現代的な公共図書館",
+        "caption": "屋内の温湿度と閲覧位置の照度を観察する、公共図書館の閲覧エリアの例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-visitor-reception",
+      "group": "buildings",
+      "title": "ビジターセンター・受付空間",
+      "description": "受付、案内、解説エリアの温湿度を、運用スケジュールを通して比較します。展示パネルや自然光に関する課題に向け、オプションの照度測定を選定できます。施設管理担当者は対象エリアを代表する位置を用い、部屋の用途や近くの収蔵品・展示の要件と併せて温湿度を評価できます。",
+      "measurement": "温度と相対湿度。選定した解説展示や自然光の入る区画の照度はオプション。",
+      "monitoringPoint": "来館者向け空間の空気環境を代表する位置と、合意した展示位置。目的が異なる場合は別々に選定。",
+      "installation": "確実に固定できる承認済みの取付具を使用し、空気・光への接触、目立たない配置、保守のためのアクセス経路を確保してください。",
+      "projectBrief": "空間の図面、開館スケジュール、展示素材、自然光の入り方、モニタリング目的をお知らせください。",
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "博物館の展示室に並ぶガラス展示ケースと考古資料。",
+        "caption": "博物館展示室の展示環境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-worship-heritage",
+      "group": "buildings",
+      "title": "礼拝施設・歴史的ホール",
+      "description": "不定期に利用される建物で、木製の造作、織物、文化財的な部位の周囲の温湿度を継続して確認します。環境を評価する際に、測定値を暖房期間や催事スケジュールと比較できます。自然光の影響を受ける物品や仕上げ面でオプションの照度を選定し、歴史的内装の管理責任者と取付方法を合意します。",
+      "measurement": "温度と相対湿度。選定した自然光にさらされる文化財的部位の照度はオプション。",
+      "monitoringPoint": "建物の利用状況と保存上の優先事項に合わせて選定した、利用者の滞在場所や収蔵品周辺の環境を代表する位置。",
+      "installation": "歴史的な表面、儀式の活動、来館者や参列者の動線に干渉しない、原状回復可能な承認済みの支持具を使用してください。",
+      "projectBrief": "建物の用途、文化財の素材、暖房スケジュール、自然光の入射経路、設置可能な位置をお知らせください。",
+      "image": {
+        "name": "chapel-interior.webp",
+        "alt": "窓から入る柔らかな光に照らされた、木製長椅子と彫刻を施した木製造作のある歴史的な礼拝堂の内装",
+        "caption": "保存された木と石の表面がある歴史的な礼拝堂内装の例。",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-indoor-plant-conservatory",
+      "group": "buildings",
+      "title": "屋内植物コレクション・温室",
+      "description": "屋内の植物展示や外気から保護された温室エリアの周囲の環境を比較します。温度、湿度、オプションの照度により、選定した位置の間の日中の環境差を把握できます。園芸担当者は、植物の要件と日常の管理手順に照らして測定値を解釈し、照度測定の構成は観察目的に合わせて合意します。",
+      "measurement": "温度と相対湿度。選定した植物展示位置の照度はオプション。",
+      "monitoringPoint": "園芸チームが選定した、植物展示の空気・光環境を代表する位置。",
+      "installation": "葉や灌水の飛沫でセンサー開口部が塞がれないようにし、想定環境と選定した光条件への適合性を確認してください。",
+      "projectBrief": "植物の種類、屋内配置、自然光や照明の構成、水やりの手順、予定する観察期間をお知らせください。",
+      "image": {
+        "name": "scene-greenhouses.webp",
+        "alt": "植栽区画と拡散した自然光のある屋内ガラス温室",
+        "caption": "屋内植物環境 · 参考画像",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    }
+  ]
+}

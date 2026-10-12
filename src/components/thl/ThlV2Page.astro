@@ -1,9 +1,9 @@
 ---
 /**
- * 温湿度光照传感器页 V2 · 包装器（GPT6 页面包，Kimi 审核集成 V56）
- * 路由：EN /product/temperature-humidity-sensor（无前缀）；其余语言暂走经典模板，
- * 待 GPT6 语言包到货后按振动页 REGISTRY 模式扩展。
- * 数据：thl-content.json；样式：thl.css（.ht-thl 作用域）。
+ * 温湿度光照传感器页 V2 · 六语言包装器（GPT6 页面包 V56 + 五语言包 V58，Kimi 审核集成）
+ * 路由：EN /product/temperature-humidity-sensor（无前缀）；es/de/ja/fr/ru 带前缀，zh 仍走经典模板。
+ * 数据：thl-content.json（EN）+ thl-content-{es,de,ja,fr,ru}.json；
+ * 文案字典：dicts.mjs（键=组件英文字面量，EN 无条目零差异；JS 键经 data-i18n 注入）。
  * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
  * Schema（includeOrganization={false}，统一引用 /#organization）。
  * Hero 响应式 preload（imagesrcset/imagesizes 与 img 一致）经 head 槽输出。
@@ -13,16 +13,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ClimatePage from './ClimatePage.astro';
 import StructuredData from './StructuredData.astro';
 import { climateImage } from './images.mjs';
-import content from '../../data/thl-content.json';
+import { THL_DICTS } from './dicts.mjs';
+import contentEn from '../../data/thl-content.json';
+import contentEs from '../../data/thl-content-es.json';
+import contentDe from '../../data/thl-content-de.json';
+import contentJa from '../../data/thl-content-ja.json';
+import contentFr from '../../data/thl-content-fr.json';
+import contentRu from '../../data/thl-content-ru.json';
 import '../../styles/thl.css';
-const { locale = 'en' } = Astro.props;
+const REGISTRY = {
+  en: {content: contentEn, prefix: ''},
+  es: {content: contentEs, prefix: '/es'},
+  de: {content: contentDe, prefix: '/de'},
+  ja: {content: contentJa, prefix: '/ja'},
+  fr: {content: contentFr, prefix: '/fr'},
+  ru: {content: contentRu, prefix: '/ru'},
+};
+const {locale = 'en'} = Astro.props;
+const entry = REGISTRY[locale] ?? REGISTRY.en;
+const t = THL_DICTS[locale] ?? {};
 const hero = await climateImage('product-hero.webp', true);
 const ogImage = new URL(hero.src, Astro.site).href;
 const heroSizes = '(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px';
 ---
 
-<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description}>
+<BaseLayout locale={locale} title={entry.content.seo.title} description={entry.content.seo.description}>
   <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
-  <StructuredData slot="head" content={content} imageUrl={ogImage} includeOrganization={false} />
-  <ClimatePage />
+  <StructuredData slot="head" content={entry.content} imageUrl={ogImage} t={t} locale={locale} prefix={entry.prefix} includeOrganization={false} />
+  <ClimatePage content={entry.content} t={t} prefix={entry.prefix} />
 </BaseLayout>

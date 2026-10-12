@@ -1,0 +1,1652 @@
+{
+  "seo": {
+    "title": "Sensor de temperatura, humedad y luz | Hitelecom",
+    "description": "Monitorización inalámbrica de temperatura, humedad y luz para museos, archivos, galerías y espacios gestionados. Compare H200 LoRa, H300 4G y H500 NB-IoT."
+  },
+  "hero": {
+    "description": "El sensor de temperatura, humedad y luz de la serie H de Hitelecom mide la temperatura local del aire, la humedad relativa y la iluminancia para la monitorización de interiores. Diseñado para museos, galerías, archivos y otros espacios gestionados, permite revisar a distancia las condiciones de los puntos seleccionados y recibir las alertas configuradas. Se pueden estudiar configuraciones de sensores personalizados para requisitos adicionales de medición e instalación. Elija H200 LoRa, H300 4G o H500 NB-IoT y, a continuación, adapte la disposición de los sensores, la medición de luz y el perfil de transmisión de datos a su proyecto.",
+    "datasheet_url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf"
+  },
+  "features": [
+    {
+      "title": "Temperatura. Humedad. Luz.",
+      "text": "Tres mediciones complementarias ayudan a los equipos a comprender las condiciones del entorno de las colecciones, los materiales almacenados y los espacios ocupados."
+    },
+    {
+      "title": "Mida donde importa",
+      "text": "Planifique las ubicaciones en torno a las áreas de exposición, vitrinas, estanterías y zonas de las salas. Seleccione la disposición de los sensores según las condiciones que desea observar."
+    },
+    {
+      "title": "Sus objetivos de monitorización",
+      "text": "Acuerde los límites de temperatura y humedad con los responsables del espacio o la colección y, a continuación, configure el flujo de gestión de alertas."
+    },
+    {
+      "title": "Tres opciones inalámbricas",
+      "text": "H200 LoRa, H300 4G y H500 NB-IoT se adaptan a distintas redes de las instalaciones y planes de implementación."
+    },
+    {
+      "title": "Sensores personalizados para su proyecto",
+      "text": "Adapte los canales de medición, el formato del producto y la disposición de montaje a su espacio. Comparta sus requisitos para definir una configuración específica para el proyecto."
+    },
+    {
+      "title": "Visibilidad remota del proyecto",
+      "text": "Conéctese a Hitelecom Platform o a una plataforma del cliente acordada para revisar las mediciones y recibir las alertas de temperatura y humedad configuradas."
+    }
+  ],
+  "measurement": {
+    "description": "Los promedios de una sala solo muestran parte de la situación. Las condiciones junto a una pieza expuesta, dentro de una vitrina o cerca de materiales almacenados pueden ser diferentes. Un plan de monitorización útil identifica tanto el lugar donde se mide como la decisión que ayudará a tomar cada lectura.",
+    "cards": [
+      {
+        "title": "Temperatura del aire",
+        "text": "Observe las condiciones locales del aire durante las horas de ocupación, el funcionamiento nocturno y los cambios estacionales. Utilice posiciones comparables al evaluar distintas zonas de una sala.",
+        "project_brief": "Especifique el entorno previsto, la exactitud requerida y la disposición de los sensores.",
+        "symbol": "°C"
+      },
+      {
+        "title": "Humedad relativa",
+        "text": "Siga las condiciones de humedad en el entorno de la colección o del material almacenado. Evalúe el nivel y sus variaciones junto con la temperatura y los objetivos ambientales de las instalaciones.",
+        "project_brief": "Identifique la sala, la vitrina o la zona de almacenamiento y los materiales que contiene.",
+        "symbol": "%RH"
+      },
+      {
+        "title": "Iluminancia · lux",
+        "text": "Mida la luz visible que incide en el plano de medición seleccionado. Para las piezas expuestas, acuerde una posición y orientación que representen el objeto iluminado o el área de exposición.",
+        "project_brief": "Especifique los niveles de luz previstos, el rango y la exactitud requeridos, y la orientación del sensor.",
+        "symbol": "lux"
+      },
+      {
+        "title": "Sensores personalizados",
+        "text": "Configure los canales de medición, el formato del producto y la instalación para su proyecto. Indique qué mediciones necesita para que podamos definir un diseño de sensor adecuado y confirmar sus especificaciones.",
+        "project_brief": "Detalle las mediciones, las condiciones previstas, las prestaciones requeridas, las limitaciones de montaje y la interfaz de la plataforma.",
+        "symbol": "+"
+      }
+    ],
+    "installation_text": "Marque cada punto de monitorización en un plano de la sala o la vitrina. Para las mediciones del aire, elija una exposición que represente la zona monitorizada y tenga en cuenta las salidas de ventilación, puertas y fuentes de calor cercanas. Para la iluminancia, mantenga la superficie sensible libre de obstáculos y registre su orientación. Acuerde un montaje reversible para interiores patrimoniales y espacios destinados a colecciones."
+  },
+  "workflow": {
+    "profile_text": "Defina el perfil de monitorización según los cambios que desea observar. El intervalo de medición determina cuándo se toman las lecturas; el intervalo de transmisión determina cuándo llegan los datos a la plataforma. Especifique ambos junto con sus requisitos de alertas y batería.",
+    "steps": [
+      {
+        "title": "Defina los puntos",
+        "text": "Identifique las salas, vitrinas y zonas de materiales. Registre la finalidad y la ubicación de cada punto de medición.",
+        "number": "01"
+      },
+      {
+        "title": "Configure el perfil",
+        "text": "Acuerde los intervalos de medición y transmisión de datos, las especificaciones de los canales y los umbrales de alerta de temperatura y humedad.",
+        "number": "02"
+      },
+      {
+        "title": "Evalúe las condiciones",
+        "text": "Utilice las lecturas junto con el programa de iluminación, el funcionamiento de la sala y el plan de conservación de la colección para decidir qué investigar o ajustar.",
+        "number": "03"
+      }
+    ],
+    "battery_text": "La configuración de referencia publicada de temperatura y humedad está diseñada para una duración de más de 10 años con transmisión de datos cada hora, bajo las condiciones de ensayo indicadas. Para una instalación de temperatura, humedad y luz, confirme el plan de batería según la lista definitiva de canales, el perfil de transmisión de datos, la temperatura de funcionamiento y las condiciones de la red.",
+    "platform_text": "Elija Hitelecom Platform o estudie una conexión con la plataforma del cliente. Confirme los campos de datos, las unidades, los identificadores de dispositivos, la ruta de comunicación y las responsabilidades relativas a las alertas antes de la implementación."
+  },
+  "series": {
+    "description": "Un propósito de monitorización. Tres opciones inalámbricas. Seleccione primero la red y, después, confirme la configuración de temperatura, humedad y luz para el espacio.",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "steps": [
+      {
+        "title": "Describa el espacio",
+        "text": "Indique la aplicación, el plano de la sala o la vitrina, el país, el número de puntos y las limitaciones de instalación."
+      },
+      {
+        "title": "Defina la medición",
+        "text": "Confirme los requisitos de temperatura, humedad y luz, las condiciones previstas y las prestaciones requeridas de los canales."
+      },
+      {
+        "title": "Acuerde la implementación",
+        "text": "Seleccione la red, la plataforma, la disposición de montaje, el perfil de transmisión de datos y la cotización."
+      }
+    ],
+    "modelDetails": [
+      {
+        "model": "H200",
+        "network": "LoRa",
+        "title": "Para una red planificada en las instalaciones",
+        "text": "Coordine la pasarela, la cobertura en interiores y la conexión con la plataforma para un conjunto de puntos de medición."
+      },
+      {
+        "model": "H300",
+        "network": "4G Cat.1",
+        "title": "Para monitorización mediante red celular",
+        "text": "Confirme la compatibilidad con las redes de la región, el aprovisionamiento de la SIM y las condiciones de señal en la ubicación interior prevista."
+      },
+      {
+        "model": "H500",
+        "network": "NB-IoT",
+        "title": "Para una implementación NB-IoT",
+        "text": "Compruebe el servicio del operador local y los requisitos de transmisión de datos del proyecto de monitorización."
+      }
+    ]
+  },
+  "specifications": {
+    "description": "Los valores de temperatura y humedad que se indican a continuación corresponden a la configuración de referencia T&H publicada. La configuración de temperatura, humedad y luz suministrada tiene su propia lista de canales y sus especificaciones acordadas.",
+    "rows": [
+      {
+        "label": "Serie de productos",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "Mediciones",
+        "value": "Temperatura del aire · Humedad relativa · Iluminancia"
+      },
+      {
+        "label": "Rango de temperatura · referencia T&H publicada",
+        "value": "−20°C a +80°C"
+      },
+      {
+        "label": "Rango de humedad · referencia T&H publicada",
+        "value": "0–100% RH"
+      },
+      {
+        "label": "Exactitud típica de temperatura · referencia T&H",
+        "value": "±0.2°C"
+      },
+      {
+        "label": "Exactitud típica de humedad · referencia T&H",
+        "value": "±2% RH"
+      },
+      {
+        "label": "Medición de luz",
+        "value": "Iluminancia en lux; rango, resolución y exactitud especificados para la configuración suministrada"
+      },
+      {
+        "label": "Disposición de los sensores",
+        "value": "Terminal integrado o disposición de sondas específica para el proyecto, según la configuración suministrada"
+      },
+      {
+        "label": "Opción de sonda T&H publicada",
+        "value": "Sonda sinterizada con ranuras y conexión por cable"
+      },
+      {
+        "label": "Opciones inalámbricas",
+        "value": "H200: LoRa · H300: 4G Cat.1 · H500: NB-IoT"
+      },
+      {
+        "label": "Conexión con la plataforma",
+        "value": "Hitelecom Platform o una plataforma del cliente acordada; compatibilidad con MQTT en la ruta de comunicación seleccionada"
+      },
+      {
+        "label": "Protección de la carcasa T&H publicada",
+        "value": "IP65; confirme el grado de protección de la configuración THL suministrada"
+      },
+      {
+        "label": "Configuración del dispositivo",
+        "value": "Activación y configuración mediante NFC en terminales compatibles"
+      },
+      {
+        "label": "Firmware remoto",
+        "value": "OTA en configuraciones compatibles"
+      },
+      {
+        "label": "Diseño de batería de referencia T&H",
+        "value": ">10 años con un intervalo de transmisión de 1 hora, bajo las condiciones de ensayo indicadas; plan de batería THL definitivo adaptado a la configuración"
+      },
+      {
+        "label": "Instalación y personalización",
+        "value": "Montaje y disposición de los sensores seleccionados para el proyecto; requisitos OEM/ODM según lo acordado"
+      }
+    ]
+  },
+  "faqHeading": {
+    "intro": "Respuestas prácticas para elegir los puntos de medición, los objetivos ambientales de las colecciones y una configuración de monitorización inalámbrica."
+  },
+  "faqs": [
+    {
+      "id": "measurements",
+      "question": "¿Qué mide un sensor de temperatura, humedad y luz?",
+      "paragraphs": [
+        "Mide la temperatura del aire, la humedad relativa y la iluminancia en puntos de medición seleccionados en interiores. La iluminancia se expresa en lux y describe la luz visible que incide sobre una superficie.",
+        "Especifique los canales, la disposición de los sensores y las prestaciones de medición de la configuración Hitelecom suministrada."
+      ],
+      "sources": [
+        "P1",
+        "P3",
+        "R2"
+      ],
+      "evidence": "Direct product channel evidence: official hero image labels Temperature, Humidity and Light. Lux meaning: CCI's illuminance explanation. Image screen values are display examples, never performance limits."
+    },
+    {
+      "id": "museum-combination",
+      "question": "¿Por qué monitorizar conjuntamente la temperatura, la humedad y la luz en un museo?",
+      "paragraphs": [
+        "Estas mediciones describen distintos aspectos del entorno de una colección. Las observaciones de temperatura y humedad ayudan a evaluar las condiciones climáticas; las de luz respaldan las decisiones sobre la iluminación de la exposición y los tiempos de exposición a la luz.",
+        "Interpretarlas en el contexto de la pieza expuesta, sus materiales y los horarios de apertura proporciona a los profesionales de conservación y a los equipos de mantenimiento de las instalaciones una base común para el análisis."
+      ],
+      "sources": [
+        "R1",
+        "R3",
+        "R5"
+      ],
+      "evidence": "CCI treats climate and lighting as separate material-dependent preservation factors, and explicitly recommends measuring temperature, RH and light for textile display/storage. Combined page value is an editorial inference from these documented needs."
+    },
+    {
+      "id": "targets",
+      "question": "¿Cómo debemos elegir los objetivos de temperatura, humedad y luz para las colecciones?",
+      "paragraphs": [
+        "Parta de los materiales de la colección, su estado de conservación, el entorno existente y los requisitos acordados para préstamos o exposiciones. Solicite al equipo de conservación que defina los objetivos para cada sala o vitrina.",
+        "Los límites de temperatura y humedad pueden servir después para configurar las alertas, mientras que las lecturas de luz pueden compararse con el plan de exposición acordado."
+      ],
+      "sources": [
+        "R1",
+        "R7",
+        "P1"
+      ],
+      "evidence": "CCI Climate Guidelines and ClimaSpec select guidance by object type and sensitivity. Hitelecom public page supports configurable temperature/RH thresholds. This is specification guidance, not a universal setpoint recommendation."
+    },
+    {
+      "id": "room-and-case",
+      "question": "¿Dónde deben colocarse los sensores en galerías, archivos y vitrinas?",
+      "paragraphs": [
+        "Sitúe el punto de medición del aire donde represente la colección o la zona que desea monitorizar. Tenga en cuenta la altura de las estanterías, las paredes próximas, las salidas de ventilación y las puertas. Trate una vitrina cerrada como una ubicación de monitorización independiente cuando sus condiciones internas sean relevantes.",
+        "Registre el punto en el plano de las instalaciones y acuerde la disposición del terminal o de la sonda antes de la instalación."
+      ],
+      "sources": [
+        "R6",
+        "R1",
+        "P2"
+      ],
+      "evidence": "NEDCC indexed primary-source text says placement must reflect collection conditions and gives mid-shelf general-monitoring examples. CCI describes spatial gradients and conditions near objects. Probe/mount customization is supported by the manufacturer PDF. Placement wording is project guidance, not a claim of one fixed install height."
+    },
+    {
+      "id": "light-position",
+      "question": "¿Dónde debe situarse la superficie sensible a la luz para una pieza expuesta?",
+      "paragraphs": [
+        "Elija una posición y orientación que representen la superficie iluminada o el área de exposición que se evalúa. Evite que la carcasa, los soportes u otros objetos cercanos proyecten sombras sobre la superficie sensible y registre su orientación.",
+        "Realice una comprobación de luz en la pieza expuesta durante la puesta en servicio para confirmar que la posición fija de monitorización responde al aspecto de la iluminación que se desea evaluar."
+      ],
+      "sources": [
+        "R2",
+        "R3",
+        "R8"
+      ],
+      "evidence": "CCI defines illuminance as light falling on a surface, recommends measurements for displayed paintings and publishes a tutorial for measuring light on heritage objects. Fixed-sensor orientation and commissioning wording are practical engineering inference from the measurement geometry."
+    },
+    {
+      "id": "light-history",
+      "question": "¿Cómo se utilizan las lecturas en lux al evaluar la iluminación de una exposición?",
+      "paragraphs": [
+        "Compare el nivel de luz medido con el objetivo de iluminación de la pieza expuesta y observe cómo cambia con la luz natural, los ajustes de las lámparas y los horarios de apertura. Tanto la intensidad como la duración son relevantes al planificar la exposición de materiales sensibles a la luz.",
+        "Si el proyecto requiere un análisis de la exposición acumulada, incluya los datos de iluminancia con marcas de tiempo, las unidades y el procedimiento de cálculo en los requisitos de la plataforma."
+      ],
+      "sources": [
+        "R2",
+        "R3",
+        "R9"
+      ],
+      "evidence": "CCI explains exposure as illuminance multiplied by time; its LED lighting bulletin confirms the continued importance of intensity and duration. Cumulative calculation is framed as a project requirement, not a built-in Hitelecom capability."
+    },
+    {
+      "id": "intervals",
+      "question": "¿Cómo deben seleccionarse los intervalos de medición y transmisión de datos?",
+      "paragraphs": [
+        "Elija el intervalo de medición según los cambios que necesita observar, como los programas de iluminación, la apertura de vitrinas o el funcionamiento de la sala. Elija el intervalo de transmisión de datos según las necesidades de revisión remota y alertas del equipo.",
+        "Acuerde ambos intervalos junto con la cobertura de datos requerida y el plan de batería. Un proyecto destinado a estudiar cambios breves necesita un perfil diferente al de una visión general de los cambios estacionales a largo plazo."
+      ],
+      "sources": [
+        "R4",
+        "R5",
+        "P2"
+      ],
+      "evidence": "NPS identifies sampling rate as a logger-selection variable and explains its effect on run time/battery. CCI textile guidance supports seasonal monitoring. Reporting distinction is cellular IoT specification guidance; no undocumented minimum interval or continuous streaming is asserted."
+    },
+    {
+      "id": "wireless-platform",
+      "question": "¿Qué modelo inalámbrico y qué plataforma debemos elegir para una instalación interior?",
+      "paragraphs": [
+        "Elija H200 para LoRa, H300 para 4G o H500 para NB-IoT. Evalúe la cobertura en los puntos reales de monitorización, incluidas las vitrinas cerradas, los depósitos en sótanos y las salas interiores.",
+        "Para LoRa, planifique la pasarela y la ruta de conexión con la plataforma. Para los modelos celulares, confirme el servicio y el aprovisionamiento de la red local. Hitelecom Platform o una plataforma del cliente acordada pueden ser el destino de los datos de monitorización."
+      ],
+      "sources": [
+        "P1",
+        "P2"
+      ],
+      "evidence": "Manufacturer source supports H200/H300/H500, the three wireless options and public/customer cloud deployment. Family-to-radio mapping is confirmed project context. Coverage planning is engineering advice, not a measured range claim."
+    },
+    {
+      "id": "accuracy",
+      "question": "¿Qué prestaciones de medición e información de calibración debemos especificar?",
+      "paragraphs": [
+        "Especifique las condiciones de funcionamiento previstas y el rango, la exactitud y la resolución requeridos para cada canal. Para la luz, incluya las condiciones previstas de baja iluminación o de salas más luminosas y la orientación del sensor.",
+        "Acuerde cómo se verificarán las lecturas durante la puesta en servicio, qué documentos de calibración necesita el proyecto y un programa de revisión adecuado para la instalación. Compare las especificaciones suministradas con la tarea de medición."
+      ],
+      "sources": [
+        "R4",
+        "R2",
+        "P2"
+      ],
+      "evidence": "NPS discusses functional range, varying accuracy across range, calibration and periodic checks. Light-measurement geometry comes from CCI. No claim that supplied units include traceable certificates or any fixed recalibration interval."
+    },
+    {
+      "id": "battery",
+      "question": "¿Qué debe incluirse al planificar la duración de la batería?",
+      "paragraphs": [
+        "Utilice la lista de canales seleccionada, los intervalos de medición y transmisión de datos, las condiciones de funcionamiento y la calidad de la red para definir el plan de batería. Confirme el cálculo para la configuración de temperatura, humedad y luz suministrada.",
+        "El diseño de referencia T&H publicado indica más de 10 años con transmisión de datos cada hora, bajo las condiciones de ensayo indicadas; esta referencia debe contrastarse con la configuración definitiva del proyecto."
+      ],
+      "sources": [
+        "P1",
+        "P2",
+        "R4"
+      ],
+      "evidence": "Manufacturer reference publishes hourly-reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
+    }
+  ],
+  "evidence": {
+    "sources": [
+      {
+        "id": "P1",
+        "title": "Hitelecom: Temperature and Humidity Sensor",
+        "url": "https://www.hitelecom.com/product/temperature-humidity-sensor",
+        "whatItSupports": "Published T&H measuring figures, temperature/humidity alerts, wireless options, product-family context and battery-condition wording."
+      },
+      {
+        "id": "P2",
+        "title": "Hitelecom: H Series T&H Sensor Datasheet, 3 pages",
+        "url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
+        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, hourly-reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
+      },
+      {
+        "id": "P3",
+        "title": "Hitelecom official product hero image",
+        "url": "https://www.hitelecom.com/_astro/301.D1LjOplG_Z1nBWX6.webp",
+        "whatItSupports": "Integrated white display terminal with Temperature, Humidity and Light/lux labels. Visible screen values are examples and are not measurement ranges or accuracy claims."
+      },
+      {
+        "id": "R1",
+        "title": "Canadian Conservation Institute: Climate guidelines overview",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/climate-guidelines/climate-guidelines-overview.html",
+        "whatItSupports": "Material-dependent targets, conditions near objects, fluctuations, room gradients and environmentally informed collection decisions."
+      },
+      {
+        "id": "R2",
+        "title": "Canadian Conservation Institute: Light, ultraviolet and infrared",
+        "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html",
+        "whatItSupports": "Illuminance/lux meaning, illuminance at a surface, and the relationship between intensity and exposure time. UV is a separate measurement."
+      },
+      {
+        "id": "R3",
+        "title": "Canadian Conservation Institute Notes 10/4: Environmental Guidelines for Paintings",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/environmental-display-guidelines-paintings.html",
+        "whatItSupports": "Environmental variables for display/storage, measuring light at displayed paintings, and planning intensity plus exposure duration."
+      },
+      {
+        "id": "R4",
+        "title": "National Park Service Conserve O Gram 3/3: Comparing Temperature and Relative Humidity Dataloggers for Museum Monitoring",
+        "url": "https://www.nps.gov/subjects/museums/upload/03-03_508.pdf",
+        "whatItSupports": "Selection by range, accuracy, calibration, sample interval, channels, power and battery. Published 2011: use general principles, not dated vendor prices or market rankings."
+      },
+      {
+        "id": "R5",
+        "title": "Canadian Conservation Institute Notes 13/1: Textiles and the Environment",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/textiles-environment.html",
+        "whatItSupports": "Instrumented display/storage monitoring and temperature/RH records across seasonal cycles; recognizes light, temperature and RH measurement."
+      },
+      {
+        "id": "R6",
+        "title": "NEDCC Preservation Leaflet 2.2: Monitoring Temperature and Relative Humidity",
+        "url": "https://www.nedcc.org/free-resources/preservation-leaflets/2.-the-environment/2.2-monitoring-temperature-and-relative-humidity",
+        "whatItSupports": "Collection-representative positioning and mid-shelf general-monitoring example. Indexed primary-source text retrieved; direct full-page open returned HTTP 403."
+      },
+      {
+        "id": "R7",
+        "title": "Canadian Conservation Institute: ClimaSpec",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/climate-guidelines/climaspec.html",
+        "whatItSupports": "Collection/type/sensitivity-based selection of temperature and RH guidance. It is a conservation tool, not a Hitelecom integration."
+      },
+      {
+        "id": "R8",
+        "title": "Government of Canada / CCI: How to measure light levels",
+        "url": "https://publications.gc.ca/site/eng/9.941901/publication.html",
+        "whatItSupports": "Official tutorial topic: measuring light on heritage objects. Publication record retrieved; no unobserved transcript claims used."
+      },
+      {
+        "id": "R9",
+        "title": "Canadian Conservation Institute Technical Bulletin 36: LED Lighting in Museums and Art Galleries",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/technical-bulletins/led-lighting-museums.html",
+        "whatItSupports": "Intensity and exposure time remain relevant under LED lighting. Used for monitoring context, not lamp selection promises or control capabilities."
+      }
+    ],
+    "publicQueries": [
+      {
+        "query": "museum relative humidity temperature light monitoring lux cumulative exposure Canadian Conservation Institute",
+        "intent": "Combined collection environmental monitoring and illuminance exposure",
+        "support": [
+          "R1",
+          "R2",
+          "R3",
+          "R9"
+        ],
+        "googleSearch": "https://www.google.com/search?q=museum+relative+humidity+temperature+light+monitoring+lux+cumulative+exposure+Canadian+Conservation+Institute",
+        "bingSearch": "https://www.bing.com/search?q=museum+relative+humidity+temperature+light+monitoring+lux+cumulative+exposure+Canadian+Conservation+Institute",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.nps.gov museum handbook environmental monitoring temperature humidity light",
+        "intent": "Museum monitoring practice and logger selection",
+        "support": [
+          "R4"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.nps.gov+museum+handbook+environmental+monitoring+temperature+humidity+light",
+        "bingSearch": "https://www.bing.com/search?q=site.nps.gov+museum+handbook+environmental+monitoring+temperature+humidity+light",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.nedcc.org preservation temperature relative humidity light monitoring environmental conditions",
+        "intent": "Archives and collection-representative positioning",
+        "support": [
+          "R6"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.nedcc.org+preservation+temperature+relative+humidity+light+monitoring+environmental+conditions",
+        "bingSearch": "https://www.bing.com/search?q=site.nedcc.org+preservation+temperature+relative+humidity+light+monitoring+environmental+conditions",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.canada.ca conservation institute temperature humidity sensor placement showcase light measurement",
+        "intent": "Case/local sensing and object-plane light measurement",
+        "support": [
+          "R1",
+          "R2",
+          "R3"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.canada.ca+conservation+institute+temperature+humidity+sensor+placement+showcase+light+measurement",
+        "bingSearch": "https://www.bing.com/search?q=site.canada.ca+conservation+institute+temperature+humidity+sensor+placement+showcase+light+measurement",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.canada.ca conservation institute \"How to Measure Light Levels\"",
+        "intent": "How to measure illuminance at heritage objects",
+        "support": [
+          "R8"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.canada.ca+conservation+institute+%22How+to+Measure+Light+Levels%22",
+        "bingSearch": "https://www.bing.com/search?q=site.canada.ca+conservation+institute+%22How+to+Measure+Light+Levels%22",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      },
+      {
+        "query": "site.nedcc.org \"2.2 Monitoring\" \"Sensors\" \"located\"",
+        "intent": "Location and representativeness of readings",
+        "support": [
+          "R6"
+        ],
+        "googleSearch": "https://www.google.com/search?q=site.nedcc.org+%222.2+Monitoring%22+%22Sensors%22+%22located%22",
+        "bingSearch": "https://www.bing.com/search?q=site.nedcc.org+%222.2+Monitoring%22+%22Sensors%22+%22located%22",
+        "validationStatus": "Public source/topic validation only; no volume or rank verification"
+      }
+    ],
+    "factBoundary": "Checked on 2026-10-12. FAQ topics are synthesized from traceable public technical practice and product facts. They are not claimed to be collected customer questions, Google/Bing keyword volume, Search Console queries or paid keyword research. Search query links can be reproduced in Google and Bing, but search-engine rank/volume and any first-page result are unverified. The official display image supports the THL channel concept; the existing PDF is a T&H reference. Light range/accuracy/resolution, the final THL protection rating and battery plan are configuration-specific. No UV, PAR/PPFD, automatic lighting control, built-in dew-point/exposure calculation, medical measurement, compliance certification or universal conservation setpoints are asserted.",
+    "applicationSources": [
+      {
+        "id": "S01",
+        "title": "NEDCC — Monitoring Temperature and Relative Humidity",
+        "url": "https://www.nedcc.org/free-resources/preservation-leaflets/2.-the-environment/2.2-monitoring-temperature-and-relative-humidity",
+        "whatItSupports": "Environmental monitoring is an established collection-care activity; interpret local records against the needs of the collection and facility."
+      },
+      {
+        "id": "S02",
+        "title": "CCI — Airtightness Measurement of Display Cases and Other Enclosures, Technical Bulletin 38",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/technical-bulletins/airtightness-measurement-display-cases.html",
+        "whatItSupports": "Enclosure climate can differ from room climate. Case performance, buffering and light-related heating provide reasons for internal and room observations."
+      },
+      {
+        "id": "S03",
+        "title": "CCI — Caring for textiles and costumes",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/textiles-costumes.html",
+        "whatItSupports": "Textile materials differ; temperature, relative humidity and light have collection-care relevance in display and storage."
+      },
+      {
+        "id": "S04",
+        "title": "CCI — Caring for paper objects",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/paper-objects.html",
+        "whatItSupports": "Paper and media sensitivity inform local climate and exposure decisions; oversized paper can require flat cabinet storage."
+      },
+      {
+        "id": "S05",
+        "title": "CCI — Environmental Guidelines for Paintings, Notes 10/4",
+        "url": "https://www.canada.ca/en/conservation-institute/services/conservation-preservation-publications/canadian-conservation-institute-notes/environmental-display-guidelines-paintings.html",
+        "whatItSupports": "Painting materials and location matter when assessing climate and exhibition lighting; room zones may experience differing conditions."
+      },
+      {
+        "id": "S06",
+        "title": "CCI — Caring for natural history collections",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/natural-history.html",
+        "whatItSupports": "Natural history specimens vary in composition and sensitivity; environmental priorities should be selected for the collection."
+      },
+      {
+        "id": "S07",
+        "title": "CCI — Agent of deterioration: light, ultraviolet and infrared",
+        "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html",
+        "whatItSupports": "Illuminance, exposure duration and material sensitivity inform conservation lighting. Visible light, ultraviolet and infrared are distinct quantities."
+      },
+      {
+        "id": "S08",
+        "title": "NEDCC — Protecting Paper and Book Collections During Exhibition",
+        "url": "https://www.nedcc.org/free-resources/preservation-leaflets/2.-the-environment/2.5-protecting-paper-and-book-collections-during-exhibition",
+        "whatItSupports": "Exhibition plans for paper and books consider environmental conditions and light exposure over the display period."
+      },
+      {
+        "id": "S09",
+        "title": "CCI — ASHRAE types of control",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/climate-guidelines/ashrae-types-control.html",
+        "whatItSupports": "Loan requirements and collection-specific judgements inform environmental targets; one fixed museum target is not universal."
+      },
+      {
+        "id": "S10",
+        "title": "Library of Congress — Storing Your Books",
+        "url": "https://guides.loc.gov/preserving-your-books/storing",
+        "whatItSupports": "Book storage considers temperature, relative humidity, position and avoidance of environmental extremes; supplier-independent collection-care guidance."
+      },
+      {
+        "id": "S11",
+        "title": "Library of Congress — Care, Handling and Storage of Photographs",
+        "url": "https://www.loc.gov/preservation/care/photolea.html",
+        "whatItSupports": "Photographic materials have differing preservation needs; room climate and light are relevant environmental factors."
+      },
+      {
+        "id": "S12",
+        "title": "Library of Congress — Care, Handling and Storage of Works on Paper",
+        "url": "https://www.loc.gov/preservation/care/paper.html",
+        "whatItSupports": "Paper preservation uses appropriate storage climate, limited light exposure, protective enclosures and suitable positioning."
+      },
+      {
+        "id": "S13",
+        "title": "National Park Service — Museum Collections Environment, Handbook Part I, Chapter 4",
+        "url": "https://www.nps.gov/subjects/museums/upload/MHI_Ch4_Environment.pdf",
+        "whatItSupports": "Collection monitoring, environment and preservation planning are established museum operational subjects, supporting room and collection-zone monitoring use cases."
+      },
+      {
+        "id": "S14",
+        "title": "CCI — Basic requirements of preventive conservation",
+        "url": "https://www.canada.ca/en/conservation-institute/services/preventive-conservation/guidelines-collections/basic-requirements-preventive-conservation.html",
+        "whatItSupports": "Collection stores use appropriate shelving, enclosures and material-aware care; climate observations support that broader practice."
+      },
+      {
+        "id": "S15",
+        "title": "FDA — ORA-LAB.5.3 Facilities and Environmental Conditions",
+        "url": "https://www.fda.gov/media/73912/download",
+        "whatItSupports": "FDA laboratory practice monitors and records temperature and humidity where those conditions affect analytical results."
+      },
+      {
+        "id": "S16",
+        "title": "eCFR — 21 CFR 211.142, Warehousing procedures",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-C/part-211#p-211.142(b)",
+        "whatItSupports": "Pharmaceutical storage procedures include appropriate temperature, humidity and light conditions. This is not a product conformity or certification claim."
+      },
+      {
+        "id": "S17",
+        "title": "FDA — Q7A Good Manufacturing Practice Guidance for Active Pharmaceutical Ingredients",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/q7a-good-manufacturing-practice-guidance-active-pharmaceutical-ingredients",
+        "whatItSupports": "Manufacturing and storage conditions follow the material, process and approved facility procedures; temperature and humidity control may be needed."
+      },
+      {
+        "id": "S18",
+        "title": "ASHRAE Handbook — Data Centers and Telecommunication Facilities",
+        "url": "https://handbook.ashrae.org/Handbooks/A23/SI/A23_Ch20/a23_ch20_si.aspx",
+        "whatItSupports": "Equipment inlet-air conditions matter in data-centre and telecom operation; local inlet sensing has a different purpose from room-average sensing."
+      },
+      {
+        "id": "S19",
+        "title": "Texas Instruments — Quality and reliability FAQs: Product shelf life",
+        "url": "https://www.ti.com/quality-reliability/faqs.html",
+        "whatItSupports": "Electronic-component storage considers temperature, humidity, moisture-barrier packaging and handling instructions."
+      },
+      {
+        "id": "S20",
+        "title": "EOS/ESD Association — ESD Fundamentals, Part 1",
+        "url": "https://www.esda.org/esd-overview/esd-fundamentals/part-1-an-introduction-to-esd/",
+        "whatItSupports": "Relative humidity is one factor affecting electrostatic charge generation. Room climate observation complements, and does not define, an ESD programme."
+      },
+      {
+        "id": "S21",
+        "title": "NIST/SEMATECH — Measurement configuration within the laboratory",
+        "url": "https://www.itl.nist.gov/div898/handbook/mpc/section5/mpc5312.htm",
+        "whatItSupports": "Temperature and humidity can contribute to laboratory measurement variation and uncertainty; method owners define the relevant conditions."
+      },
+      {
+        "id": "S22",
+        "title": "Canon — Storing paper",
+        "url": "https://hk.canon/en/support/8201643300",
+        "whatItSupports": "Paper storage and movement between rooms are affected by temperature and humidity differences; room comparison is a practical monitoring use case."
+      },
+      {
+        "id": "S23",
+        "title": "Steinway & Sons — Service and Maintenance",
+        "url": "https://www.steinway.com/news/features/utilty/service-and-maintenance",
+        "whatItSupports": "Instrument care includes appropriate room temperature and relative humidity; this supports climate monitoring around sensitive instruments."
+      },
+      {
+        "id": "S24",
+        "title": "Prusa Knowledge Base — Drying filament",
+        "url": "https://help.prusa3d.com/article/drying-filament_332086",
+        "whatItSupports": "Moisture-sensitive printing materials use material-specific drying and storage procedures; storage-air observations are one part of the workflow."
+      },
+      {
+        "id": "S25",
+        "title": "Historic England — Thermography in Historic Buildings",
+        "url": "https://historicengland.org.uk/whats-new/research/back-issues/thermography-in-historic-buildings/",
+        "whatItSupports": "Environmental observation can inform conservation heating and care of historic interiors; historic-building conditions need contextual interpretation."
+      },
+      {
+        "id": "S26",
+        "title": "US EPA — Reference Guide for Indoor Air Quality in Schools",
+        "url": "https://www.epa.gov/iaq-schools/reference-guide-indoor-air-quality-schools",
+        "whatItSupports": "Room temperature, humidity, spatial differences and building operation matter to the indoor environment. Broader air-quality assessment requires other information."
+      },
+      {
+        "id": "S27",
+        "title": "Royal Horticultural Society — How to grow houseplants",
+        "url": "https://www.rhs.org.uk/plants/types/houseplants/growing-guide",
+        "whatItSupports": "Indoor plant care varies by species and location; temperature, humidity and light are distinct care factors."
+      },
+      {
+        "id": "S28",
+        "title": "ZEISS — Cleaning Your Microscope: Transport and storage",
+        "url": "https://www.zeiss.com/microscopy/us/l/service-support/cleaning-your-microscope.html",
+        "whatItSupports": "Optical instrument storage considers humidity, sunlight, packaging and the manufacturer's care instructions."
+      }
+    ],
+    "imagePolicy": "Illustrative scenes; no claim of installations or client projects. Official product image retained without reconstructing hardware."
+  },
+  "applicationSection": {
+    "title": "Espacios interiores. Diferentes prioridades.",
+    "valueHeading": "Las condiciones adecuadas, en el punto adecuado.",
+    "description": "Explore 48 tareas de monitorización en ocho entornos interiores, desde vitrinas de museo y archivos hasta laboratorios, almacenes de materiales sensibles y salas de trabajo. Cada tarea identifica qué observar, dónde situar el punto de medición y cómo ayudan las lecturas a su equipo.",
+    "note": "Las escenas ilustran entornos de instalación. Los canales de medición y las posiciones se seleccionan para cada proyecto."
+  },
+  "groups": [
+    {
+      "id": "museums",
+      "title": "Museos y vitrinas",
+      "jumpLabel": "Museos",
+      "intro": "Conozca las condiciones que rodean a la colección, desde el aire de las salas hasta cada vitrina. La temperatura y la humedad relativa definen el clima local; las lecturas opcionales de iluminancia contribuyen al plan de iluminación de la exposición.",
+      "scenes": [
+        "museum-main-gallery",
+        "museum-sealed-showcase",
+        "museum-textile-costume",
+        "museum-manuscript-case",
+        "museum-natural-history",
+        "museum-historic-interior-display"
+      ],
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "Vitrinas de vidrio y objetos arqueológicos en una sala de museo.",
+        "caption": "Entornos de exposición en salas de museo",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "galleries",
+      "title": "Galerías de arte y exposiciones",
+      "jumpLabel": "Galerías",
+      "intro": "Registre las condiciones donde se presentan las obras. Combine las lecturas del clima local con mediciones de iluminancia seleccionadas para que el personal pueda revisar la iluminación, los cambios en la exposición y los requisitos de préstamo a partir de posiciones de medición documentadas.",
+      "scenes": [
+        "gallery-painting-display",
+        "gallery-works-on-paper",
+        "gallery-photographic-exhibition",
+        "gallery-temporary-exhibition",
+        "gallery-loan-handover",
+        "gallery-daylight-skylight"
+      ],
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "Galería de arte contemporáneo con pinturas enmarcadas e iluminación de carril en el techo",
+        "caption": "Entorno ilustrativo de una galería contemporánea para la monitorización de temperatura, humedad e iluminancia.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archives",
+      "title": "Archivos, bibliotecas y colecciones especiales",
+      "jumpLabel": "Archivos",
+      "intro": "Comprenda las condiciones que rodean a los documentos y los fondos singulares, desde los depósitos de acceso restringido hasta su consulta supervisada. Priorice la temperatura y la humedad durante el almacenamiento e incorpore la iluminancia donde los materiales se expongan o reciban luz de forma habitual.",
+      "scenes": [
+        "archive-mobile-stacks",
+        "library-rare-book-store",
+        "library-special-reading-room",
+        "archive-map-plan-cabinets",
+        "archive-photograph-store",
+        "archive-digitisation-workroom"
+      ],
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "Estanterías móviles de archivo con cajas de documentos y registros encuadernados",
+        "caption": "Depósito de archivo ilustrativo con pasillos de acceso para observar las condiciones locales de conservación.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collections",
+      "title": "Depósitos de colecciones y conservación",
+      "jumpLabel": "Conservación de colecciones",
+      "intro": "Vincule la conservación de las colecciones con las condiciones de las zonas de almacenamiento y trabajo. Seleccione puntos de medición del clima local según los materiales y el uso de la sala; incluya la iluminancia únicamente cuando resulte útil para la exposición, la manipulación o una cuestión de conservación.",
+      "scenes": [
+        "collection-mixed-object-store",
+        "collection-painting-rack-store",
+        "collection-textile-drawer-store",
+        "collection-receiving-room",
+        "collection-conservation-studio",
+        "collection-framing-mounting"
+      ],
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "Depósito de colecciones de museo con armarios y objetos almacenados cuidadosamente organizados",
+        "caption": "Entorno de almacenamiento de colecciones · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratories",
+      "title": "Laboratorios y espacios farmacéuticos",
+      "jumpLabel": "Laboratorios y sector farmacéutico",
+      "intro": "Registre las condiciones de la sala cuando lo requieran el método, los materiales o las instrucciones de almacenamiento. Seleccione la temperatura, la humedad y la iluminancia opcional en función del procedimiento real y acuerde con el equipo del proyecto los requisitos de calibración y registro.",
+      "scenes": [
+        "laboratory-analytical-room",
+        "laboratory-weighing-room",
+        "laboratory-ambient-sample-store",
+        "pharma-ambient-stockroom",
+        "pharma-material-quarantine",
+        "laboratory-instrument-workroom"
+      ],
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "Laboratorio analítico con instrumentos de cromatografía y una balanza con cámara protectora sobre una mesa de trabajo",
+        "caption": "Espacio de trabajo de laboratorio ilustrativo con instrumentos analíticos.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology",
+      "title": "Electrónica, centros de datos y salas limpias",
+      "jumpLabel": "Tecnología",
+      "intro": "Priorice la temperatura y la humedad locales alrededor de los equipos, componentes y zonas de trabajo controladas. Seleccione posiciones de medición adicionales según las necesidades de las entradas de aire, el almacenamiento o los procesos; incorpore la iluminancia cuando exista una cuestión concreta sobre la iluminación.",
+      "scenes": [
+        "datacentre-rack-inlet",
+        "technology-edge-it-room",
+        "technology-electronics-assembly",
+        "technology-component-storage",
+        "technology-cleanroom-environment",
+        "technology-metrology-room"
+      ],
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "Racks de servidores en un centro de datos interior con un pasillo claramente delimitado",
+        "caption": "Entorno de un centro de datos · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production",
+      "title": "Producción en interiores y materiales sensibles",
+      "jumpLabel": "Materiales",
+      "intro": "Adapte la monitorización a los materiales y al trabajo realizado en interiores. La temperatura y la humedad describen el entorno local de almacenamiento o preparación; la iluminancia opcional ayuda a estudiar cuestiones concretas relacionadas con la luz natural, la exposición o las tareas.",
+      "scenes": [
+        "production-print-paper-store",
+        "production-textile-materials",
+        "production-musical-instruments",
+        "production-optics-spares",
+        "production-filament-dry-storage",
+        "production-botanical-specimens"
+      ],
+      "image": {
+        "name": "warehouses.webp",
+        "alt": "Almacén interior con materiales en cajas y estanterías",
+        "caption": "Entorno de almacenamiento de materiales · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "buildings",
+      "title": "Edificios históricos, espacios educativos y zonas para visitantes",
+      "jumpLabel": "Espacios interiores",
+      "intro": "Compare las condiciones en los espacios donde las personas y las colecciones comparten el edificio. Seleccione posiciones en las salas según el objetivo de observación, con iluminancia opcional para evaluar la luz natural o las condiciones de las tareas, y utilice los resultados junto con el plan de gestión de las instalaciones o de conservación.",
+      "scenes": [
+        "building-historic-rooms",
+        "building-classrooms",
+        "building-public-library",
+        "building-visitor-reception",
+        "building-worship-heritage",
+        "building-indoor-plant-conservatory"
+      ],
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "Muebles históricos de madera y retratos en una sala de museo conservada.",
+        "caption": "Interiores históricos y salas patrimoniales amuebladas",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "id": "museum-main-gallery",
+      "group": "museums",
+      "title": "Entornos de las salas de museo",
+      "description": "Elabore un registro ambiental para cada sala en lugar de basarse en una sola lectura para todo el museo. Compare las zonas de exposición durante el horario de apertura, el cierre nocturno y los cambios estacionales. Los equipos de conservación de colecciones y de instalaciones pueden revisar las mismas lecturas locales al planificar los ajustes de las salas o investigar un cambio.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en posiciones de exposición seleccionadas.",
+      "monitoringPoint": "Zonas de exposición representativas, con puntos adicionales donde la distribución o las condiciones de la sala sean diferentes.",
+      "installation": "Utilice posiciones autorizadas en paredes o soportes independientes, con exposición al aire sin obstáculos y un campo de medición despejado donde se mida la luz.",
+      "projectBrief": "Comparta el plano de la sala, los materiales de la colección, los objetivos ambientales existentes y el número de zonas de exposición diferenciadas.",
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "Vitrinas de vidrio y objetos arqueológicos en una sala de museo.",
+        "caption": "Entornos de exposición en salas de museo",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-sealed-showcase",
+      "group": "museums",
+      "title": "Vitrinas cerradas para piezas",
+      "description": "Mida el aire del interior de la vitrina y el de la sala circundante cuando la colección utilice un microclima local. Ambos registros ayudan al personal a comprender cómo responde el cerramiento a los cambios de la sala y a las aperturas habituales. Seleccione una posición de medición discreta que sea compatible con el diseño de la vitrina y la disposición de los objetos.",
+      "measurement": "Temperatura y humedad relativa dentro de la vitrina; iluminancia opcional donde se observa el objeto.",
+      "monitoringPoint": "Una posición interior autorizada que represente el compartimento del objeto, con una referencia independiente de la sala si es necesario.",
+      "installation": "Acuerde la disposición con el fabricante de la vitrina o el conservador-restaurador; mantenga la estanqueidad y evite que el dispositivo entre en contacto con la colección.",
+      "projectBrief": "Proporcione las dimensiones de la vitrina, la distribución de los compartimentos, los sistemas de amortiguación o control ambiental y las restricciones de acceso.",
+      "image": {
+        "name": "museum-display-case.webp",
+        "alt": "Vasijas de cerámica y un objeto de bronce dentro de una vitrina de museo cerrada de vidrio.",
+        "caption": "Condiciones dentro de cada vitrina",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-textile-costume",
+      "group": "museums",
+      "title": "Exposiciones de textiles e indumentaria",
+      "description": "Facilite a los comisarios un registro local de las condiciones de la indumentaria, los tapices y los tejidos decorados durante una exposición. La temperatura y la humedad relativa describen el clima de exposición; una configuración de iluminancia puede ayudar al personal a comprobar la iluminación seleccionada para cada textil. Revise las lecturas junto con el calendario de exposición y el plan del conservador-restaurador específico para cada material.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para la exposición de textiles.",
+      "monitoringPoint": "Cerca del material expuesto, con una orientación de medición de luz documentada cuando la iluminancia forme parte del proyecto.",
+      "installation": "Instale el dispositivo en elementos autorizados de la vitrina o en un soporte independiente; conserve el espacio de observación y evite el contacto con el textil.",
+      "projectBrief": "Comparta los tipos de textiles, los tintes o acabados que requieran atención, la duración de la exposición, los detalles de las vitrinas y los límites ambientales acordados.",
+      "image": {
+        "name": "textile-display.webp",
+        "alt": "Vestido histórico y textiles bordados expuestos en una vitrina de vidrio con iluminación tenue.",
+        "caption": "Colecciones textiles sensibles a la luz",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-manuscript-case",
+      "group": "museums",
+      "title": "Vitrinas para manuscritos y documentos en papel",
+      "description": "Haga un seguimiento del entorno de exposición de manuscritos, mapas y documentos ilustrados mientras se exhiben. Sitúe el punto de medición de modo que represente la página o la hoja expuesta. Un registro opcional de iluminancia ayuda al personal a revisar los cambios de iluminación junto con el calendario de la exposición, mientras que la temperatura y la humedad contribuyen al registro local de conservación.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en el plano del papel expuesto.",
+      "monitoringPoint": "Una posición en la vitrina próxima a la hoja expuesta, con el sensor de luz alineado con el plano de medición elegido.",
+      "installation": "Utilice un soporte independiente acordado con el conservador-restaurador; mantenga despejadas las aberturas de medición y permita un acceso seguro a la vitrina.",
+      "projectBrief": "Proporcione los tipos de papel y técnicas, el plano del objeto, la disposición de la iluminación, las fechas de exposición y los requisitos de conservación.",
+      "image": {
+        "name": "paper-display.webp",
+        "alt": "Un manuscrito abierto y documentos históricos en papel en una vitrina con cubierta de vidrio.",
+        "caption": "Entornos de exposición de papel y manuscritos",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-natural-history",
+      "group": "museums",
+      "title": "Exposiciones de especímenes de historia natural",
+      "description": "Seleccione la monitorización en función de los especímenes concretos de una exposición de historia natural. Los animales naturalizados, las plantas secas y los minerales pueden tener distintas prioridades ambientales, incluso dentro de una misma sala. Las lecturas locales proporcionan al personal de colecciones una base para revisar la disposición de la exposición; la iluminancia opcional resulta útil cuando los especímenes seleccionados son sensibles a la luz.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para especímenes seleccionados sensibles a la luz.",
+      "monitoringPoint": "El compartimento de los especímenes o el aire próximo a la exposición, según la selección del equipo de conservación de colecciones.",
+      "installation": "Instale el dispositivo en mobiliario expositivo autorizado, sin fijarlo a los especímenes ni obstaculizar el acceso y la inspección.",
+      "projectBrief": "Identifique los materiales de los especímenes, el diseño del cerramiento, los métodos de conservación y las exposiciones que requieren monitorización de la luz.",
+      "image": {
+        "name": "natural-history.webp",
+        "alt": "Minerales y especímenes fósiles en vitrinas de vidrio de un museo.",
+        "caption": "Entornos de exposición de colecciones de historia natural",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "museum-historic-interior-display",
+      "group": "museums",
+      "title": "Exposiciones de salas históricas y mobiliario",
+      "description": "Monitorice las condiciones que rodean a los muebles, revestimientos de paredes y objetos decorativos en una sala histórica musealizada. Compare las lecturas locales con el uso de la sala y el calendario estacional de calefacción. La iluminancia opcional cerca de las piezas expuestas frente a las ventanas ayuda al personal a revisar el efecto de la luz natural y sus rutinas actuales de uso de cortinas o contraventanas.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en objetos seleccionados situados frente a las ventanas.",
+      "monitoringPoint": "Posiciones representativas de la colección, incluido un punto independiente en el perímetro cuando lo requiera el plan de conservación.",
+      "installation": "Utilice un soporte autorizado y reversible en elementos modernos; mantenga intactas las superficies y el mobiliario históricos.",
+      "projectBrief": "Comparta el plano de la sala, los materiales de los objetos, las trayectorias de la luz natural, el calendario de calefacción y las ubicaciones de montaje permitidas.",
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "Muebles históricos de madera y retratos en una sala de museo conservada.",
+        "caption": "Interiores históricos y salas patrimoniales amuebladas",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-painting-display",
+      "group": "galleries",
+      "title": "Salas de pintura",
+      "description": "Haga un seguimiento del clima alrededor de las pinturas en distintas paredes y zonas de la sala. El personal puede comparar las tendencias con los cambios en el sistema HVAC y la reorganización de la exposición, en lugar de suponer que todas las posiciones de las obras comparten la lectura del centro de la sala. Las mediciones opcionales de iluminancia permiten comprobar la iluminación acordada para cada zona de exposición.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en planos de exposición de pinturas seleccionados.",
+      "monitoringPoint": "Posiciones autorizadas cerca de las zonas donde se cuelgan las obras, elegidas para reflejar su entorno y no un chorro de aire de impulsión.",
+      "installation": "Mantenga los dispositivos en soportes independientes autorizados; conserve una ubicación constante al comparar las lecturas a lo largo del tiempo.",
+      "projectBrief": "Comparta los soportes y las técnicas de las obras, sus ubicaciones en las paredes, los ajustes ambientales de la sala y el plan de iluminación.",
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "Galería de arte contemporáneo con pinturas enmarcadas e iluminación de carril en el techo",
+        "caption": "Entorno ilustrativo de una galería contemporánea para la monitorización de temperatura, humedad e iluminancia.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-works-on-paper",
+      "group": "galleries",
+      "title": "Exposiciones de obras sobre papel",
+      "description": "Cree un registro ambiental para dibujos, acuarelas y grabados mientras se exponen. Las lecturas de iluminancia seleccionadas proporcionan al personal una referencia práctica cuando se ajustan los focos o se rotan las obras. Revise la temperatura y la humedad junto con el plan de exposición específico para cada material y el periodo de exposición acordado.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en la exposición de obras sobre papel.",
+      "monitoringPoint": "Una posición y una orientación documentadas que representen la superficie del papel expuesto.",
+      "installation": "Utilice un soporte independiente o un elemento expositivo autorizado; evite colocar el sensor detrás de una sombra que no represente las condiciones de la obra.",
+      "projectBrief": "Proporcione la sensibilidad de las técnicas empleadas, los detalles del enmarcado, las posiciones de iluminación, el calendario de rotación y los límites de conservación aceptados.",
+      "image": {
+        "name": "works-on-paper-gallery.webp",
+        "alt": "Exposición de obras sobre papel con enmarcado de conservación e iluminación suave en la sala",
+        "caption": "Exposición ilustrativa de obras sobre papel donde se pueden observar las condiciones cerca de las obras expuestas.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-photographic-exhibition",
+      "group": "galleries",
+      "title": "Exposiciones fotográficas",
+      "description": "Respalde el plan de exposición de copias fotográficas con lecturas del clima local y, cuando se especifique, de iluminancia. Los procesos fotográficos varían, por lo que el comisario o el conservador-restaurador selecciona los objetivos. El personal puede revisar el entorno después de ajustar la iluminación y conservar un registro contextual durante toda la exposición.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para las copias fotográficas expuestas.",
+      "monitoringPoint": "Posiciones de exposición de copias seleccionadas que representen la iluminación y las condiciones de la sala en cada sección de la exposición.",
+      "installation": "Instale el dispositivo separado de los marcos, en elementos autorizados de la sala, con una orientación de medición de luz reproducible cuando se suministre ese canal.",
+      "projectBrief": "Indique los procesos fotográficos, el enmarcado o acristalamiento, las fechas de exposición y los requisitos de exposición del equipo de conservación.",
+      "image": {
+        "name": "photography-gallery.webp",
+        "alt": "Sala de fotografía en blanco y negro con copias enmarcadas y luz controlada",
+        "caption": "Colección fotográfica ilustrativa expuesta con iluminación controlada en la sala.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-temporary-exhibition",
+      "group": "galleries",
+      "title": "Montajes de exposiciones temporales",
+      "description": "Establezca una referencia local antes de inaugurar una exposición temporal y compare después las lecturas a medida que cambien las vitrinas, la iluminación y el uso de la sala. Esto proporciona al equipo de montaje y al comisario una referencia ambiental para la entrega de la exposición. Seleccione los puntos de medición en función del montaje terminado en lugar de conservar las posiciones de una distribución anterior.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para la nueva disposición de la exposición.",
+      "monitoringPoint": "Nuevas zonas de vitrinas y paredes identificadas durante la revisión del montaje de la exposición.",
+      "installation": "Utilice elementos de fijación desmontables autorizados y documente cada ubicación para que las lecturas sigan siendo interpretables durante toda la exposición.",
+      "projectBrief": "Comparta el plan de montaje, los materiales expuestos, las fechas de instalación, la duración de la medición y los requisitos de entrega.",
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "Galería de arte contemporáneo con pinturas enmarcadas e iluminación de carril en el techo",
+        "caption": "Entorno ilustrativo de una galería contemporánea para la monitorización de temperatura, humedad e iluminancia.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-loan-handover",
+      "group": "galleries",
+      "title": "Exposiciones de obras en préstamo y salas de recepción",
+      "description": "Prepare un registro del clima de la exposición y de la sala de recepción para las conversaciones con el prestador. Adapte las posiciones de medición y los procedimientos de entrega de datos a los requisitos del préstamo. Los equipos pueden revisar las lecturas locales antes de la apertura y durante la exposición, con monitorización opcional de iluminancia en las posiciones incluidas en el acuerdo de exposición.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional donde lo requiera el acuerdo de préstamo.",
+      "monitoringPoint": "Posiciones de recepción y exposición acordadas, con identificadores que coincidan con la documentación del préstamo.",
+      "installation": "Confirme los procedimientos de montaje, acceso y medición con el responsable de registro y el conservador-restaurador antes de que lleguen las obras.",
+      "projectBrief": "Proporcione las condiciones del préstamo, la distribución del recinto, el calendario de manipulación, los registros requeridos y las responsabilidades de revisión de las lecturas.",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "Depósito de colecciones de museo con armarios y objetos almacenados cuidadosamente organizados",
+        "caption": "Entorno de almacenamiento de colecciones · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "gallery-daylight-skylight",
+      "group": "galleries",
+      "title": "Salas con luz natural y lucernarios",
+      "description": "Compare el entorno en las zonas de exposición que reciben luz natural variable. Las lecturas opcionales de iluminancia ayudan al personal a revisar sus persianas, sistemas de sombreado y horarios de iluminación actuales, mientras que la temperatura y la humedad muestran el clima local. Sitúe cada sensor según el objetivo de la exposición y conserve su orientación al comparar los patrones diurnos.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en zonas de exposición seleccionadas afectadas por la luz natural.",
+      "monitoringPoint": "Un plano de exposición representativo y un punto de medición del clima documentado en la zona de la sala afectada por la luz natural.",
+      "installation": "Acuerde posiciones que eviten sombras accidentales; utilice elementos de fijación autorizados y compruebe el rendimiento del canal de luz frente a las condiciones previstas.",
+      "projectBrief": "Comparta la orientación de las ventanas o los lucernarios, los patrones estacionales de luz natural, los sistemas de sombreado y las prioridades de exposición.",
+      "image": {
+        "name": "daylit-gallery.webp",
+        "alt": "Sala de museo con luz natural que muestra diferencias entre la luz junto a las ventanas y en el interior",
+        "caption": "Sala ilustrativa con luz natural procedente de un lucernario y ventanas laterales para comparar la iluminancia local.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-mobile-stacks",
+      "group": "archives",
+      "title": "Depósitos de archivo y estanterías móviles",
+      "description": "Elabore un registro del clima local en los pasillos del archivo y las zonas de estanterías. Compare las posiciones seleccionadas al revisar los patrones estacionales o los cambios en la distribución del almacenamiento. La temperatura y la humedad son las prioridades principales en depósitos cerrados; incorpore un canal de luz únicamente cuando exista una cuestión definida sobre la exposición a la luz.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional cuando se haya identificado una cuestión sobre la exposición a la luz durante el almacenamiento.",
+      "monitoringPoint": "Alturas de estanterías y zonas de pasillos representativas seleccionadas mediante el plan de monitorización del depósito.",
+      "installation": "Instale el dispositivo separado de las estanterías móviles y las cajas; mantenga la exposición al aire y el acceso seguro del personal del depósito.",
+      "projectBrief": "Comparta las dimensiones del depósito, la distribución de las estanterías, los tipos de materiales, los objetivos actuales y el periodo de monitorización propuesto.",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "Estanterías móviles de archivo con cajas de documentos y registros encuadernados",
+        "caption": "Depósito de archivo ilustrativo con pasillos de acceso para observar las condiciones locales de conservación.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "library-rare-book-store",
+      "group": "archives",
+      "title": "Depósitos de libros raros y colecciones especiales",
+      "description": "Haga un seguimiento del clima cerca de los libros raros y los fondos encuadernados de colecciones especiales durante todo el año. Los registros locales ayudan a los bibliotecarios a comparar las zonas de almacenamiento y revisar el efecto de los cambios en la calefacción o el uso de la sala. Mantenga la atención en la temperatura y la humedad en espacios de almacenamiento cerrados, con monitorización de luz en puntos seleccionados donde la exposición sea relevante.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en posiciones seleccionadas de la colección expuestas a la luz.",
+      "monitoringPoint": "Estanterías representativas o el aire del interior de los armarios, separados de calefactores, rejillas de ventilación y la influencia directa de las ventanas, salvo que se estén estudiando esos factores.",
+      "installation": "Utilice soportes autorizados en estanterías o paredes y mantenga despejadas las vías de circulación y de recuperación de materiales de la colección.",
+      "projectBrief": "Proporcione los tipos de libros y encuadernaciones, la distribución del depósito, los sistemas de calefacción y los requisitos especiales de conservación.",
+      "image": {
+        "name": "rare-book-room.webp",
+        "alt": "Sala de consulta de libros raros con estanterías protegidas y un manuscrito sobre un soporte",
+        "caption": "Sala ilustrativa de colecciones especiales para observar la temperatura y la humedad locales y la luz de la zona de lectura.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "library-special-reading-room",
+      "group": "archives",
+      "title": "Salas de lectura de colecciones especiales",
+      "description": "Registre el clima local donde los lectores consultan materiales de colecciones especiales y seleccione la monitorización de iluminancia en la superficie de lectura cuando la exposición a la luz forme parte del plan de conservación. El personal puede revisar las lecturas en relación con el horario de apertura, la luz natural y las sesiones de manipulación, facilitando un análisis práctico de los ajustes de la sala y las condiciones de uso de la colección.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en una superficie de lectura seleccionada.",
+      "monitoringPoint": "Posiciones de lectura representativas, con el plano de medición de luz alineado con la superficie utilizada para los materiales.",
+      "installation": "Utilice un elemento de fijación autorizado y discreto, separado de los lectores, los soportes de libros y los equipos de manipulación.",
+      "projectBrief": "Comparta el horario de apertura de la sala, las condiciones de luz natural, las políticas de uso de los materiales, la distribución de las mesas y las prioridades de monitorización.",
+      "image": {
+        "name": "rare-book-room.webp",
+        "alt": "Sala de consulta de libros raros con estanterías protegidas y un manuscrito sobre un soporte",
+        "caption": "Sala ilustrativa de colecciones especiales para observar la temperatura y la humedad locales y la luz de la zona de lectura.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-map-plan-cabinets",
+      "group": "archives",
+      "title": "Armarios para mapas, planos y papel de gran formato",
+      "description": "Mida el clima local alrededor del papel de gran formato almacenado en armarios planeros. Compare posiciones en el armario y en la sala cuando el plan de almacenamiento requiera esa distinción, especialmente después de una reorganización o de cambios en el funcionamiento de la sala. La temperatura y la humedad son los canales principales; el almacenamiento habitual en oscuridad no requiere por defecto monitorización de luz.",
+      "measurement": "Temperatura y humedad relativa en posiciones seleccionadas del armario o de la sala próxima.",
+      "monitoringPoint": "Espacios de aire autorizados dentro del armario o un punto representativo cercano, seleccionado sin alterar las hojas almacenadas.",
+      "installation": "Mantenga el dispositivo separado de los cajones y el papel; confirme que hay espacio suficiente y acceso al aire antes de elegir una disposición interior.",
+      "projectBrief": "Proporcione las dimensiones del armario, las técnicas empleadas sobre el papel, el acceso a los cajones, la distribución de la sala circundante y las condiciones objetivo.",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "Estanterías móviles de archivo con cajas de documentos y registros encuadernados",
+        "caption": "Depósito de archivo ilustrativo con pasillos de acceso para observar las condiciones locales de conservación.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-photograph-store",
+      "group": "archives",
+      "title": "Depósitos de copias fotográficas",
+      "description": "Documente el entorno de la sala para las colecciones de copias fotográficas almacenadas en cajas y armarios de protección. El personal de colecciones puede comparar las ubicaciones seleccionadas y las tendencias estacionales con los requisitos de los procesos fotográficos bajo su cuidado. Especifique primero la temperatura y la humedad; utilice un canal de luz únicamente para un estudio identificado de manipulación o exposición a la luz.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para un estudio definido de manipulación o exposición a la luz.",
+      "monitoringPoint": "Posiciones en la sala o los armarios que representen la colección de copias fotográficas seleccionada.",
+      "installation": "Utilice soportes autorizados separados de las cajas y de los obstáculos al flujo de aire, con acceso sencillo para las comprobaciones habituales.",
+      "projectBrief": "Identifique los procesos fotográficos, las temperaturas de almacenamiento, la disposición de los contenedores de protección y el periodo de revisión previsto.",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "Estanterías móviles de archivo con cajas de documentos y registros encuadernados",
+        "caption": "Depósito de archivo ilustrativo con pasillos de acceso para observar las condiciones locales de conservación.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "archive-digitisation-workroom",
+      "group": "archives",
+      "title": "Salas de trabajo para digitalización y escaneo",
+      "description": "Revise el entorno local mientras los documentos y libros pasan por una sala de digitalización. La temperatura y la humedad aportan contexto a las sesiones de manipulación y los cambios en la sala. Las lecturas opcionales de iluminancia pueden describir la luz ambiental en posiciones de trabajo seleccionadas cuando resulte útil; las pruebas de exposición fotográfica e iluminación para reproducción siguen formando parte del flujo de trabajo de obtención de imágenes.",
+      "measurement": "Temperatura y humedad relativa; iluminancia ambiental opcional en posiciones de manipulación seleccionadas.",
+      "monitoringPoint": "Zonas de preparación y manipulación de materiales elegidas teniendo en cuenta la distribución de los equipos de escaneo.",
+      "installation": "Instale el dispositivo separado de los equipos de cámara móviles y del calor directo de los equipos, en posiciones acordadas por los equipos de obtención de imágenes y conservación.",
+      "projectBrief": "Indique los tipos de materiales, los tiempos de manipulación, las fuentes de calor de los equipos, la distribución de la sala y la cuestión ambiental que se desea resolver.",
+      "image": {
+        "name": "digitisation-room.webp",
+        "alt": "Sala de digitalización de una biblioteca con un escáner cenital de libros, una cuna para libros y mesas de clasificación de documentos",
+        "caption": "Sala ilustrativa de digitalización de documentos con escaneado cenital y puestos de manipulación de papel.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-mixed-object-store",
+      "group": "collections",
+      "title": "Almacenes de colecciones de objetos diversos",
+      "description": "Proporcione a los responsables de las colecciones un registro ambiental de las distintas zonas de almacenamiento de una colección de objetos diversos. Una misma sala puede contener objetos con requisitos diferentes, por lo que las posiciones de los sensores y los criterios de revisión se ajustan al plan de la colección. Compare las lecturas locales durante las inspecciones rutinarias, las revisiones estacionales y los cambios en la distribución de las estanterías.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para objetos expuestos o zonas de manipulación identificados.",
+      "monitoringPoint": "Estanterías y zonas de almacenamiento representativas, con posiciones adicionales para condiciones específicas de los contenedores o de la sala.",
+      "installation": "Utilice soportes autorizados en estanterías o paredes, con libre exposición al aire, vías seguras para retirar los objetos e identificación accesible de los dispositivos.",
+      "projectBrief": "Enumere los materiales de la colección, los tipos de contenedores, el plano de la sala, los objetivos ambientales existentes y las rutinas de inspección.",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "Depósito de colecciones de museo con armarios y objetos almacenados cuidadosamente organizados",
+        "caption": "Entorno de almacenamiento de colecciones · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-painting-rack-store",
+      "group": "collections",
+      "title": "Bastidores y almacenes de pinturas",
+      "description": "Monitorice las condiciones ambientales locales alrededor de las pinturas almacenadas y compare las posiciones seleccionadas en los bastidores con el punto de referencia de la sala. El personal puede utilizar el registro durante las revisiones del almacenamiento y los cambios en la ocupación de los bastidores. La temperatura y la humedad son las mediciones principales; la monitorización de la luz solo se selecciona cuando se evalúa una exposición o una rutina de manipulación.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para una cuestión definida de exposición durante el almacenamiento.",
+      "monitoringPoint": "Posiciones autorizadas junto a los bastidores para pinturas, con puntos seleccionados en el perímetro de la sala cuando el plan de la colección requiera una comparación.",
+      "installation": "Mantenga los sensores alejados de los bastidores deslizantes, los marcos de las pinturas y las vías de manipulación; conserve posiciones reproducibles.",
+      "projectBrief": "Indique los materiales de las pinturas, la distribución de los bastidores, los objetivos ambientales de la sala, el calendario de acceso y cualquier preocupación relativa al perímetro.",
+      "image": {
+        "name": "painting-store.webp",
+        "alt": "Pinturas en bastidores deslizantes de malla en un almacén de colecciones de museo con control ambiental",
+        "caption": "Almacén ilustrativo de pinturas de museo con bastidores deslizantes para colecciones.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-textile-drawer-store",
+      "group": "collections",
+      "title": "Cajones para textiles y almacenes de indumentaria",
+      "description": "Realice un seguimiento de las condiciones ambientales alrededor de la indumentaria y los textiles almacenados en plano, seleccionando posiciones en armarios o en la sala según la disposición de la colección. Las lecturas locales ayudan al personal a revisar las condiciones después de los accesos, los cambios estacionales o la reorganización del almacenamiento. La temperatura y la humedad tienen prioridad; en el almacenamiento protegido de la luz solo se mide la luz cuando existe una necesidad específica.",
+      "measurement": "Temperatura y humedad relativa en posiciones seleccionadas del almacenamiento de textiles.",
+      "monitoringPoint": "Una ubicación representativa del almacén de indumentaria o un espacio autorizado dentro de un armario que no entre en contacto con el material.",
+      "installation": "Mantenga el espacio libre necesario para los cajones y el acceso seguro a las prendas; acuerde soportes discretos con el equipo de conservación de la colección.",
+      "projectBrief": "Indique los materiales textiles, el formato de almacenamiento, las dimensiones de los armarios, los objetivos de la sala y la frecuencia de acceso prevista.",
+      "image": {
+        "name": "textile-store.webp",
+        "alt": "Textil histórico bordado colocado en plano en un cajón de almacenamiento de museo junto a rollos acolchados para textiles",
+        "caption": "Depósito ilustrativo de textiles con almacenamiento de conservación en plano y enrollado.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-receiving-room",
+      "group": "collections",
+      "title": "Salas de recepción y evaluación de colecciones",
+      "description": "Registre las condiciones ambientales de la sala mientras se evalúan los objetos recibidos y se preparan para su siguiente ubicación de almacenamiento o exposición. El personal puede comparar la sala de recepción con las zonas de destino y conservar información de contexto sobre la cronología de la manipulación. El responsable de registro o el conservador-restaurador define las observaciones necesarias para cada material y proceso de recepción.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en posiciones de evaluación acordadas.",
+      "monitoringPoint": "Ubicaciones de recepción y estancia temporal seleccionadas para representar el entorno de los objetos durante el periodo de observación acordado.",
+      "installation": "Utilice soportes independientes autorizados, alejados de las cajas de transporte y del tránsito de manipulación; documente las ubicaciones y los cambios en el funcionamiento de la sala.",
+      "projectBrief": "Indique los procedimientos de recepción y desembalaje, los materiales de la colección, la duración de la estancia temporal y los requisitos ambientales del destino.",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "Depósito de colecciones de museo con armarios y objetos almacenados cuidadosamente organizados",
+        "caption": "Entorno de almacenamiento de colecciones · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-conservation-studio",
+      "group": "collections",
+      "title": "Talleres de conservación-restauración",
+      "description": "Haga visibles las condiciones ambientales del taller durante el examen, la documentación y el trabajo en mesa. Las lecturas de temperatura y humedad aportan contexto sobre el espacio de trabajo y su funcionamiento diario. La monitorización opcional de la iluminancia puede apoyar una revisión definida de la luz ambiental; el conservador-restaurador selecciona las posiciones e interpreta las lecturas junto con los requisitos del tratamiento y del examen.",
+      "measurement": "Temperatura y humedad relativa; iluminancia ambiental opcional para posiciones de trabajo seleccionadas.",
+      "monitoringPoint": "Aire representativo de las mesas de trabajo y de las zonas de estancia temporal de los objetos, alejado del calor concentrado de los procesos y de las salidas de aire de los equipos cercanos.",
+      "installation": "Utilice soportes independientes autorizados y una distribución que preserve un espacio de trabajo seguro, el acceso para la limpieza y la manipulación de los materiales.",
+      "projectBrief": "Indique el uso de la sala, los horarios de trabajo, los requisitos ambientales relacionados con los tratamientos y las posiciones que necesitan compararse.",
+      "image": {
+        "name": "conservation-studio.webp",
+        "alt": "Mesa de conservación-restauración de museo con una vasija cerámica sobre un soporte y un microscopio estereoscópico",
+        "caption": "Taller ilustrativo de conservación-restauración de objetos de museo.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "collection-framing-mounting",
+      "group": "collections",
+      "title": "Salas de enmarcado y preparación de exposiciones",
+      "description": "Realice un seguimiento de las condiciones ambientales locales donde se ensamblan marcos, soportes y materiales de la colección para su exposición. El personal puede comparar las condiciones de la sala de preparación con las de la galería de destino antes de la instalación. Las lecturas opcionales de iluminancia son útiles al comprobar una maqueta de exposición; seleccione esta medición en torno al plano de exposición previsto, en lugar de basarse en la luminosidad general del taller.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para una maqueta de iluminación expositiva.",
+      "monitoringPoint": "Zonas de estancia temporal y ensamblaje de materiales, además del plano de exposición seleccionado para cualquier maqueta de iluminación.",
+      "installation": "Instale los dispositivos en elementos autorizados del taller, alejados de las mesas de trabajo, los equipos de corte y las vías de manipulación de la colección.",
+      "projectBrief": "Indique el plan de materiales y montaje, los requisitos de la galería de destino, el calendario de preparación y los detalles de cualquier maqueta de iluminación.",
+      "image": {
+        "name": "conservation-studio.webp",
+        "alt": "Mesa de conservación-restauración de museo con una vasija cerámica sobre un soporte y un microscopio estereoscópico",
+        "caption": "Taller ilustrativo de conservación-restauración de objetos de museo.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-analytical-room",
+      "group": "laboratories",
+      "title": "Salas de laboratorio analítico",
+      "description": "Añada un registro ambiental local a las rutinas del laboratorio cuando la temperatura o la humedad de la sala sea relevante para el método. El personal puede revisar las lecturas junto con el uso de los equipos y los calendarios de ensayos, e investigar los cambios conforme a los criterios de aceptación del propio laboratorio. Seleccione posiciones que representen la zona de trabajo y acuerde los procedimientos de verificación necesarios.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional cuando el método especifique una condición de luz.",
+      "monitoringPoint": "Zonas de trabajo analítico representativas identificadas en el plan de monitorización ambiental del laboratorio.",
+      "installation": "Utilice posiciones autorizadas, alejadas del calor de los instrumentos, de las salidas de aire de las campanas y de las vías de limpieza; confirme los materiales y las necesidades de calibración.",
+      "projectBrief": "Indique los requisitos del método, la distribución de la sala, los criterios de aceptación, las necesidades de registro y el procedimiento de verificación del laboratorio.",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "Laboratorio analítico con instrumentos de cromatografía y una balanza con cámara protectora sobre una mesa de trabajo",
+        "caption": "Espacio de trabajo de laboratorio ilustrativo con instrumentos analíticos.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-weighing-room",
+      "group": "laboratories",
+      "title": "Salas de pesaje de precisión",
+      "description": "Proporcione al personal de pesaje un registro local de temperatura y humedad para revisar las condiciones alrededor de las balanzas de precisión. Los datos pueden analizarse junto con las sesiones de pesaje y el procedimiento de medición del laboratorio. Elija un punto de la sala que represente la zona de la balanza sin afectar al acceso, al funcionamiento del instrumento ni a la disposición de protección contra corrientes de aire.",
+      "measurement": "Temperatura y humedad relativa alrededor de la zona de pesaje seleccionada.",
+      "monitoringPoint": "Una posición representativa cerca de la zona de la balanza, acordada por el laboratorio responsable del procedimiento de medición.",
+      "installation": "Mantenga el dispositivo alejado del recinto de la balanza y de la mesa sensible a las vibraciones, con medición sin obstáculos del aire de la sala.",
+      "projectBrief": "Indique los requisitos de la sala de balanzas, el horario de trabajo, la distribución de los instrumentos y el registro ambiental necesario para el método.",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "Laboratorio analítico con instrumentos de cromatografía y una balanza con cámara protectora sobre una mesa de trabajo",
+        "caption": "Espacio de trabajo de laboratorio ilustrativo con instrumentos analíticos.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-ambient-sample-store",
+      "group": "laboratories",
+      "title": "Almacenes de muestras de retención a temperatura ambiente",
+      "description": "Realice un seguimiento de las condiciones de la sala para las muestras destinadas al almacenamiento a temperatura ambiente según sus instrucciones aprobadas. Las lecturas locales aportan al laboratorio contexto para las revisiones periódicas y los cambios en la disposición del almacenamiento. Seleccione un canal de iluminancia solo cuando la muestra o el procedimiento incluya un requisito de exposición a la luz, y acuerde los registros necesarios antes de la instalación.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional cuando las instrucciones de almacenamiento de las muestras lo requieran.",
+      "monitoringPoint": "Zonas representativas de las estanterías seleccionadas para la sala de almacenamiento de muestras a temperatura ambiente.",
+      "installation": "Instale los dispositivos alejados de los recipientes de muestras y de las vías de retirada, con las posiciones y los identificadores de los dispositivos registrados en el plan de almacenamiento.",
+      "projectBrief": "Enumere los tipos de muestras, las condiciones de almacenamiento requeridas, la distribución de las estanterías, la duración del almacenamiento y las responsabilidades de revisión de los registros.",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "Productos farmacéuticos envasados en estanterías de un almacén interior a temperatura ambiente",
+        "caption": "Sala ilustrativa de almacenamiento farmacéutico a temperatura ambiente.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "pharma-ambient-stockroom",
+      "group": "laboratories",
+      "title": "Almacenes farmacéuticos a temperatura ambiente",
+      "description": "Cree un registro local de las condiciones de la sala para medicamentos con instrucciones aprobadas de almacenamiento a temperatura ambiente. Seleccione posiciones en función de la distribución del almacenamiento y de cualquier mapeo ya realizado por la instalación. La temperatura, la humedad y la iluminancia opcional se eligen según los requisitos de los productos; el equipo de calidad define los procedimientos de aceptación, calibración y revisión de los registros.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional cuando las condiciones aprobadas de almacenamiento del producto lo requieran.",
+      "monitoringPoint": "Puntos de almacenamiento seleccionados a partir de la evaluación o el mapeo de la instalación, sin limitarse a una pared central de fácil acceso.",
+      "installation": "Confirme con los responsables de las instalaciones y el equipo de calidad el montaje higiénico, el acceso, la conectividad y la verificación necesaria de los dispositivos.",
+      "projectBrief": "Indique las instrucciones de almacenamiento de los productos, la distribución o los resultados del mapeo, los requisitos de monitorización y la integración prevista con el sistema.",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "Productos farmacéuticos envasados en estanterías de un almacén interior a temperatura ambiente",
+        "caption": "Sala ilustrativa de almacenamiento farmacéutico a temperatura ambiente.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "pharma-material-quarantine",
+      "group": "laboratories",
+      "title": "Almacenes de materiales y envases farmacéuticos",
+      "description": "Monitorice las condiciones locales donde las materias primas o los componentes de los envases tengan requisitos ambientales de almacenamiento definidos. Mantenga las posiciones de los sensores asociadas a la zona y a la especificación del material correspondientes. El personal puede revisar el registro de la sala durante los controles de almacenamiento y los cambios en la instalación, con medición opcional de la luz para los materiales cuyas instrucciones aprobadas la hagan relevante.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para determinados materiales almacenados sensibles a la luz.",
+      "monitoringPoint": "Zonas autorizadas de almacenamiento de materiales y de cuarentena, seleccionadas mediante la evaluación del almacenamiento de la instalación.",
+      "installation": "Utilice posiciones que preserven la segregación, el acceso para la limpieza y la identificación; confirme la idoneidad con el equipo de calidad de la instalación.",
+      "projectBrief": "Indique las especificaciones de los materiales, el plano de las zonas de almacenamiento, los criterios de aceptación, las necesidades de verificación y los procedimientos de entrega de datos.",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "Productos farmacéuticos envasados en estanterías de un almacén interior a temperatura ambiente",
+        "caption": "Sala ilustrativa de almacenamiento farmacéutico a temperatura ambiente.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "laboratory-instrument-workroom",
+      "group": "laboratories",
+      "title": "Salas de instrumentos y preparación para investigación",
+      "description": "Realice un seguimiento de las condiciones ambientales locales alrededor de los instrumentos de investigación compartidos y los espacios de preparación cuando el procedimiento lo requiera. Un registro de las condiciones de la sala ayuda al personal a comparar las sesiones de trabajo con los cambios en el funcionamiento de la sala. Puede seleccionarse la iluminancia opcional para un procedimiento definido sensible a la luz, acordando la posición de medición y las prestaciones para esa tarea.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para un procedimiento o material definido.",
+      "monitoringPoint": "Aire de la sala junto a los instrumentos y posiciones de preparación seleccionados para responder a la cuestión de monitorización del laboratorio.",
+      "installation": "Utilice elementos de fijación autorizados, alejados del calor de los equipos y de los procesos activos; mantenga el acceso para la limpieza y los controles rutinarios.",
+      "projectBrief": "Indique las funciones de la sala, los requisitos ambientales de los instrumentos, los calendarios de los procesos y las mediciones específicas necesarias.",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "Laboratorio analítico con instrumentos de cromatografía y una balanza con cámara protectora sobre una mesa de trabajo",
+        "caption": "Espacio de trabajo de laboratorio ilustrativo con instrumentos analíticos.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "datacentre-rack-inlet",
+      "group": "technology",
+      "title": "Entradas de aire de racks en centros de datos",
+      "description": "Mida el aire que llega a los equipos informáticos en entradas seleccionadas de los racks, en lugar de basarse únicamente en una lectura media de la sala. Compare las tendencias locales de temperatura y humedad con los cambios en los racks y el funcionamiento de la refrigeración. La elección de las posiciones responde al entorno de los equipos y al plan de la instalación; la medición de la luz no es un requisito predeterminado para esta aplicación.",
+      "measurement": "Temperatura y humedad relativa en posiciones seleccionadas del aire de entrada a los equipos.",
+      "monitoringPoint": "Ubicaciones y alturas representativas de las entradas de aire en la parte frontal de los racks, seleccionadas por el equipo de instalaciones del centro de datos.",
+      "installation": "Utilice elementos de fijación autorizados en los racks que no interfieran con el flujo de aire, las puertas ni el cableado; seleccione configuraciones de sensores compatibles con el objetivo de medición en la entrada de aire.",
+      "projectBrief": "Indique la distribución de los racks, las ubicaciones de las entradas de aire, los requisitos de los equipos, la disposición de la refrigeración y la plataforma de monitorización.",
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "Racks de servidores en un centro de datos interior con un pasillo claramente delimitado",
+        "caption": "Entorno de un centro de datos · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-edge-it-room",
+      "group": "technology",
+      "title": "Salas de equipos informáticos de borde y de red",
+      "description": "Proporcione al personal de instalaciones un registro ambiental local de las salas pequeñas de servidores y los armarios de red. Estos espacios pueden funcionar de forma distinta al resto del edificio, por lo que conviene elegir los puntos de medición en función del recorrido del aire de los equipos y de la distribución de la sala. Las lecturas de temperatura y humedad pueden apoyar las revisiones rutinarias después de incorporar equipos o modificar el funcionamiento de la sala.",
+      "measurement": "Temperatura y humedad relativa en posiciones seleccionadas de la sala y de las entradas de aire a los equipos.",
+      "monitoringPoint": "Aire de entrada a los equipos y un punto de referencia representativo de la sala cuando la comparación contribuya al plan de monitorización del emplazamiento.",
+      "installation": "Mantenga el dispositivo alejado del calor del aire de salida y de las esquinas obstruidas de los armarios; utilice elementos de fijación autorizados con vías accesibles para el mantenimiento.",
+      "projectBrief": "Indique las dimensiones de los armarios, la disposición de los equipos, los medios de refrigeración, el calendario de acceso y los requisitos de conectividad.",
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "Racks de servidores en un centro de datos interior con un pasillo claramente delimitado",
+        "caption": "Entorno de un centro de datos · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-electronics-assembly",
+      "group": "technology",
+      "title": "Zonas de trabajo de ensamblaje electrónico",
+      "description": "Registre la temperatura y la humedad presentes en zonas seleccionadas de ensamblaje electrónico. El registro local aporta al equipo de procesos contexto para revisar las condiciones de la sala, los cambios estacionales o la disposición de las zonas de trabajo. Utilícelo junto con el programa establecido en las instalaciones para la manipulación de componentes y la protección ESD, con iluminancia opcional para una revisión definida de la iluminación de tareas.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en tareas seleccionadas de inspección o ensamblaje.",
+      "monitoringPoint": "Zonas representativas de ensamblaje e inspección acordadas por los equipos de procesos e instalaciones.",
+      "installation": "Utilice elementos de fijación autorizados, alejados de la maquinaria, los movimientos de los operarios y el calor de los equipos cercanos; siga los requisitos de montaje y limpieza del emplazamiento.",
+      "projectBrief": "Indique el plan de procesos, los requisitos de los componentes, los criterios ambientales y las posiciones que necesitan compararse.",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "Mesas de ensamblaje electrónico de precisión con alfombrillas ESD y microscopios estereoscópicos",
+        "caption": "Espacio interior ilustrativo de ensamblaje electrónico.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-component-storage",
+      "group": "technology",
+      "title": "Almacenamiento de componentes electrónicos",
+      "description": "Realice un seguimiento de las condiciones de la sala alrededor de las existencias de componentes electrónicos y seleccione la monitorización de armarios cuando la disposición real del almacenamiento lo requiera. El personal puede revisar las lecturas locales junto con los procedimientos de embalaje, uso de desecantes y manipulación. La temperatura y la humedad son los canales principales; los requisitos del proveedor de los componentes determinan los objetivos y la verificación necesaria.",
+      "measurement": "Temperatura y humedad relativa en posiciones seleccionadas de la sala de componentes o en posiciones autorizadas de los armarios.",
+      "monitoringPoint": "Zonas de almacenamiento elegidas según la sensibilidad de los componentes y la disposición de los embalajes o armarios suministrados.",
+      "installation": "Confirme el espacio disponible, la exposición al aire y el acceso antes de especificar una configuración de armario; mantenga despejadas las vías de manipulación de los componentes.",
+      "projectBrief": "Indique las instrucciones de almacenamiento de los componentes, los tipos de embalajes y armarios, la distribución de las zonas y los criterios de monitorización.",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "Mesas de ensamblaje electrónico de precisión con alfombrillas ESD y microscopios estereoscópicos",
+        "caption": "Espacio interior ilustrativo de ensamblaje electrónico.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-cleanroom-environment",
+      "group": "technology",
+      "title": "Apoyo a la monitorización ambiental de salas limpias",
+      "description": "Añada observaciones locales de temperatura y humedad al plan ambiental de una sala limpia o de un espacio de trabajo controlado donde esas condiciones sean relevantes para el proceso. Acuerde con los responsables de las instalaciones la ubicación de los sensores, los materiales de montaje, el acceso para la limpieza y las necesidades de verificación. La iluminancia opcional solo se selecciona para un objetivo específico de proceso o de iluminación de tareas.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional cuando el proceso controlado la especifique.",
+      "monitoringPoint": "Ubicaciones autorizadas de las zonas de trabajo seleccionadas mediante la evaluación ambiental de la instalación.",
+      "installation": "Revise con los responsables de las instalaciones los materiales de la carcasa, el montaje, la facilidad de limpieza y la exposición de los sensores antes de elegir la configuración suministrada.",
+      "projectBrief": "Indique los requisitos del proceso, el plano de la sala limpia, las restricciones de instalación, las expectativas de verificación y la integración deseada con la plataforma.",
+      "image": {
+        "name": "cleanrooms.webp",
+        "alt": "Sala interior limpia de producción con mesas de trabajo y equipos industriales",
+        "caption": "Entorno de producción controlado · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "technology-metrology-room",
+      "group": "technology",
+      "title": "Salas de metrología y calibración",
+      "description": "Registre la temperatura y la humedad locales como parte del contexto del trabajo de medición. Los laboratorios pueden revisar el registro de la sala junto con las sesiones de medición y su evaluación de la incertidumbre. Seleccione los puntos de medición y los requisitos de verificación en función de los instrumentos y procedimientos reales; el laboratorio determina las condiciones aceptables para cada tarea.",
+      "measurement": "Temperatura y humedad relativa para el espacio de medición seleccionado.",
+      "monitoringPoint": "Zonas representativas de los instrumentos y los patrones de referencia, acordadas con el laboratorio responsable de la medición.",
+      "installation": "Utilice soportes independientes autorizados, alejados del calor de los instrumentos y del recorrido de medición; conserve posiciones documentadas y reproducibles.",
+      "projectBrief": "Indique los requisitos ambientales de los instrumentos, la distribución de la sala, los calendarios de medición y las evidencias de calibración o verificación requeridas.",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "Laboratorio analítico con instrumentos de cromatografía y una balanza con cámara protectora sobre una mesa de trabajo",
+        "caption": "Espacio de trabajo de laboratorio ilustrativo con instrumentos analíticos.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-print-paper-store",
+      "group": "production",
+      "title": "Almacenamiento y preparación de papel para impresión",
+      "description": "Compare las condiciones ambientales locales del almacén de papel con las de la sala de máquinas de impresión o la zona de trabajo de impresión. Los dos registros ayudan al personal a revisar las diferencias ambientales cuando se traslada el papel para su uso. La temperatura y la humedad son las mediciones prioritarias; la iluminancia opcional solo resulta útil cuando la exposición a la luz natural forma parte de la cuestión de almacenamiento.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para evaluar un aspecto definido de la exposición a la luz natural.",
+      "monitoringPoint": "Posiciones representativas de almacenamiento y preparación del papel seleccionadas a lo largo del recorrido de los materiales.",
+      "installation": "Instale los dispositivos alejados de las pilas de papel, del calor directo de las máquinas y de las vías de manipulación; mantenga la exposición al aire alrededor del punto de medición.",
+      "projectBrief": "Indique los tipos de papel, el flujo de trabajo entre el almacén y la sala de trabajo, las instrucciones del proveedor y las posiciones que se compararán.",
+      "image": {
+        "name": "warehouses.webp",
+        "alt": "Almacén interior con materiales en cajas y estanterías",
+        "caption": "Entorno de almacenamiento de materiales · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-textile-materials",
+      "group": "production",
+      "title": "Almacenes de materiales textiles y tejidos",
+      "description": "Cree un registro local de temperatura y humedad alrededor de las existencias textiles y las zonas de preparación. Las distintas fibras y acabados requieren condiciones diferentes de manipulación y almacenamiento, por lo que el equipo de materiales establece los criterios de revisión. Seleccione la iluminancia opcional cuando la exposición a la luz natural o un material concreto haga que la luz forme parte de la evaluación del almacenamiento.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para existencias seleccionadas de tejidos expuestos.",
+      "monitoringPoint": "Estanterías representativas de tejidos, zonas de almacenamiento de rollos y zonas de preparación identificadas por el equipo de materiales.",
+      "installation": "Utilice soportes autorizados, alejados de las existencias y de los equipos de manipulación; evite el contacto con los tejidos y preserve el acceso para las inspecciones rutinarias.",
+      "projectBrief": "Indique los tipos de fibras y acabados, las instrucciones de almacenamiento del proveedor, la distribución de la sala y los aspectos de la exposición que requieren atención.",
+      "image": {
+        "name": "textile-store.webp",
+        "alt": "Textil histórico bordado colocado en plano en un cajón de almacenamiento de museo junto a rollos acolchados para textiles",
+        "caption": "Depósito ilustrativo de textiles con almacenamiento de conservación en plano y enrollado.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-musical-instruments",
+      "group": "production",
+      "title": "Salas de instrumentos musicales",
+      "description": "Realice un seguimiento de las condiciones ambientales locales donde se almacenan o utilizan pianos y otros instrumentos sensibles a la humedad. El personal puede comparar el registro de la sala con los horarios de calefacción, los ensayos y las observaciones de mantenimiento. La temperatura y la humedad son los canales principales; puede especificarse la iluminancia opcional si se revisa la incidencia directa de luz natural sobre un instrumento concreto.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para una cuestión identificada de exposición junto a ventanas.",
+      "monitoringPoint": "Aire representativo de la sala de instrumentos y posiciones seleccionadas junto a las ventanas cuando el plan de conservación requiera una comparación.",
+      "installation": "Utilice soportes independientes autorizados, alejados de los instrumentos, los intérpretes y las salidas de calefacción o refrigeración.",
+      "projectBrief": "Indique los tipos de instrumentos, los requisitos de conservación del fabricante, el uso de la sala, la distribución de la luz natural y el periodo de monitorización.",
+      "image": {
+        "name": "musical-instrument-room.webp",
+        "alt": "Un piano vertical, un violonchelo y violines en una sala de ensayo musical con iluminación natural.",
+        "caption": "Condiciones interiores en salas de instrumentos musicales",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-optics-spares",
+      "group": "production",
+      "title": "Almacenes de equipos ópticos y de precisión",
+      "description": "Registre las condiciones ambientales locales para equipos y repuestos con requisitos ambientales de almacenamiento definidos. Seleccione puntos de la sala o de los armarios de acuerdo con las instrucciones reales de almacenamiento y los embalajes. El personal puede revisar las lecturas durante los controles de existencias y los cambios en la instalación, añadiendo un canal de luz solo cuando el material almacenado requiera un estudio de exposición.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional cuando las instrucciones del equipo o del material la especifiquen.",
+      "monitoringPoint": "Posiciones seleccionadas en estanterías o posiciones autorizadas en armarios que representen los equipos almacenados y la disposición de sus embalajes.",
+      "installation": "Mantenga expuestas las aberturas de los sensores, permita el acceso a los armarios y respete las restricciones del proveedor y de las instalaciones sobre el montaje interno.",
+      "projectBrief": "Indique los requisitos de almacenamiento de los equipos, los tipos de embalajes, la distribución de los armarios y los criterios de monitorización requeridos.",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "Mesas de ensamblaje electrónico de precisión con alfombrillas ESD y microscopios estereoscópicos",
+        "caption": "Espacio interior ilustrativo de ensamblaje electrónico.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-filament-dry-storage",
+      "group": "production",
+      "title": "Almacenamiento de materiales de impresión 3D",
+      "description": "Realice un seguimiento de las condiciones del aire de la sala o de un espacio autorizado de almacenamiento seco alrededor de los materiales de impresión sensibles a la humedad. El registro ayuda al personal a revisar el entorno de almacenamiento junto con las instrucciones de secado, embalaje y manipulación del proveedor de filamentos. Seleccione la configuración de sensores según el espacio disponible y las condiciones previstas, con la temperatura y la humedad como mediciones principales.",
+      "measurement": "Temperatura y humedad relativa en posiciones seleccionadas de la sala de materiales o en posiciones autorizadas de almacenamiento seco.",
+      "monitoringPoint": "Zonas de almacenamiento y preparación de filamentos seleccionadas en función del flujo de trabajo de manipulación de los materiales.",
+      "installation": "Confirme el espacio libre, la exposición de los sensores y unas prestaciones adecuadas para las condiciones de almacenamiento previstas antes de elegir una configuración de armario.",
+      "projectBrief": "Indique los tipos de filamentos, las instrucciones de almacenamiento del proveedor, las dimensiones del contenedor y la cuestión ambiental que se desea resolver.",
+      "image": {
+        "name": "materials-dry-store.webp",
+        "alt": "Bobinas selladas de filamento de impresión 3D en estanterías de almacenamiento junto a una caja de almacenamiento seco con junta de estanqueidad",
+        "caption": "Almacenamiento seco ilustrativo de materiales de filamento polimérico para impresión 3D.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "production-botanical-specimens",
+      "group": "production",
+      "title": "Preparación y almacenamiento de especímenes botánicos",
+      "description": "Documente las condiciones ambientales locales alrededor de los especímenes vegetales secos y los materiales de preparación. El personal puede comparar las lecturas del taller y del almacén al revisar el funcionamiento de la sala y las disposiciones de manipulación. La temperatura y la humedad son el foco habitual, con iluminancia opcional donde se manipulen o expongan especímenes conforme a un plan definido de exposición a la luz.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para posiciones seleccionadas de manipulación o exposición de especímenes.",
+      "monitoringPoint": "Zonas representativas de preparación de especímenes y almacenamiento seco seleccionadas por el equipo de la colección o de investigación.",
+      "installation": "Utilice soportes autorizados, alejados de los especímenes, las prensas y los cajones de almacenamiento, manteniendo la manipulación segura y el acceso para la inspección.",
+      "projectBrief": "Indique los tipos de especímenes y preparaciones, la disposición del almacenamiento, los requisitos de la sala y las prioridades relativas a la exposición.",
+      "image": {
+        "name": "natural-history.webp",
+        "alt": "Minerales y especímenes fósiles en vitrinas de vidrio de un museo.",
+        "caption": "Entornos de exposición de colecciones de historia natural",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-historic-rooms",
+      "group": "buildings",
+      "title": "Interiores históricos y edificios de uso estacional",
+      "description": "Cree un registro ambiental de las salas históricas a lo largo de las temporadas de calefacción y los periodos de uso. Compare posiciones interiores representativas con ubicaciones seleccionadas del perímetro cuando el plan de conservación necesite ese contexto. Las lecturas opcionales de iluminancia pueden apoyar una revisión de la luz natural alrededor de acabados o mobiliario, utilizando sistemas de montaje autorizados para el edificio.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional alrededor de elementos seleccionados afectados por la luz natural.",
+      "monitoringPoint": "Posiciones autorizadas en la sala y el perímetro que representen el entorno de los elementos constructivos o de la colección objeto de observación.",
+      "installation": "Utilice soportes reversibles en elementos modernos autorizados y preserve los elementos históricos del edificio y los recorridos de los visitantes.",
+      "projectBrief": "Indique el uso del edificio, los materiales o las colecciones de interés, el horario de calefacción, el plano de la sala y los permisos de montaje.",
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "Muebles históricos de madera y retratos en una sala de museo conservada.",
+        "caption": "Interiores históricos y salas patrimoniales amuebladas",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-classrooms",
+      "group": "buildings",
+      "title": "Aulas y salas de aprendizaje",
+      "description": "Compare la temperatura y la humedad en espacios docentes seleccionados y revise cómo cambian las lecturas a lo largo de la jornada escolar. Las mediciones opcionales de iluminancia pueden apoyar una revisión definida de la luz natural o de la iluminación de las mesas. El equipo de instalaciones selecciona posiciones representativas de la sala y analiza las lecturas junto con los horarios de ocupación y la evaluación más amplia del ambiente interior del edificio.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en posiciones seleccionadas de aprendizaje o de luz natural.",
+      "monitoringPoint": "Zonas representativas de la sala ocupada y un plano de medición documentado para cualquier estudio de iluminación de tareas.",
+      "installation": "Instale los dispositivos de forma segura, alejados de los ocupantes y de los equipos docentes, con la exposición al aire y la orientación respecto a la luz adaptadas al objetivo de observación.",
+      "projectBrief": "Indique la distribución de las salas, los horarios docentes, los aspectos que requieren atención, la disposición de la luz natural y el periodo de monitorización previsto.",
+      "image": {
+        "name": "classroom.webp",
+        "alt": "Mesas y sillas en un aula iluminada con luz natural y con una pizarra blanca vacía.",
+        "caption": "Condiciones de temperatura, humedad y luz en aulas",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-public-library",
+      "group": "buildings",
+      "title": "Zonas de lectura y estanterías de bibliotecas públicas",
+      "description": "Revise las condiciones ambientales locales donde las colecciones de una biblioteca pública y los lectores comparten el espacio. Compare zonas seleccionadas de estanterías y lectura durante el horario de apertura y el funcionamiento estacional. La monitorización opcional de la iluminancia puede apoyar un estudio específico de estanterías junto a ventanas o de puestos de lectura, mientras la biblioteca decide las prioridades para la conservación de los materiales y el uso de la sala.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para la exposición de estanterías o superficies de lectura seleccionadas.",
+      "monitoringPoint": "Estanterías representativas de la colección y zonas de lectura, con posiciones adicionales para cuestiones definidas sobre la luz natural.",
+      "installation": "Utilice elementos de fijación seguros y autorizados, alejados de los libros y de los visitantes y que no obstaculicen el acceso para la limpieza; documente el propósito de medición de cada punto.",
+      "projectBrief": "Indique la distribución de las estanterías, el horario de apertura, las posiciones de las ventanas, los tipos de colecciones y los objetivos de gestión de la sala.",
+      "image": {
+        "name": "public-library.webp",
+        "alt": "Biblioteca pública moderna con estanterías, mesas de lectura y luz natural procedente de ventanas altas",
+        "caption": "Zona de lectura ilustrativa de una biblioteca pública para observar la temperatura interior, la humedad y la luz local de lectura.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-visitor-reception",
+      "group": "buildings",
+      "title": "Centros de visitantes y espacios de recepción",
+      "description": "Compare las condiciones ambientales locales de las zonas de recepción, orientación e interpretación durante su horario de funcionamiento. Pueden seleccionarse lecturas opcionales de iluminancia para paneles expositivos o cuestiones relacionadas con la luz natural. El personal de instalaciones puede revisar la temperatura y la humedad junto con el uso de la sala y los requisitos de las colecciones o exposiciones cercanas, utilizando posiciones que representen la zona prevista.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para elementos expositivos de interpretación o zonas de luz natural seleccionados.",
+      "monitoringPoint": "Aire representativo de los espacios para visitantes y posiciones de exposición acordadas, seleccionadas por separado cuando sus propósitos sean diferentes.",
+      "installation": "Utilice elementos de fijación seguros y autorizados con exposición despejada de los sensores, colocación discreta y vías accesibles para el mantenimiento.",
+      "projectBrief": "Indique el plano del espacio, el horario de apertura, los materiales expositivos, la distribución de la luz natural y el objetivo de monitorización.",
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "Vitrinas de vidrio y objetos arqueológicos en una sala de museo.",
+        "caption": "Entornos de exposición en salas de museo",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-worship-heritage",
+      "group": "buildings",
+      "title": "Lugares de culto y salas patrimoniales",
+      "description": "Siga las condiciones climáticas locales en torno a elementos de madera, textiles y componentes patrimoniales en edificios de uso intermitente. El personal puede comparar las lecturas con los periodos de calefacción y los programas de eventos al evaluar el entorno. Seleccione la medición opcional de iluminancia para objetos o acabados afectados por la luz natural y acuerde el montaje con los responsables del interior histórico.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional en elementos patrimoniales seleccionados expuestos a la luz natural.",
+      "monitoringPoint": "Posiciones representativas de las zonas ocupadas y de las colecciones, seleccionadas según el uso del edificio y las prioridades de conservación.",
+      "installation": "Utilice soportes reversibles aprobados que no afecten a las superficies históricas, las actividades ceremoniales ni las rutas de visitantes o de la congregación.",
+      "projectBrief": "Indique el uso del edificio, los materiales patrimoniales, el programa de calefacción, los recorridos de la luz natural y las posiciones de instalación permitidas.",
+      "image": {
+        "name": "chapel-interior.webp",
+        "alt": "Interior de una capilla histórica con bancos de madera y elementos de madera tallada iluminados por luz filtrada a través de las ventanas",
+        "caption": "Escena ilustrativa del interior de una capilla histórica con superficies de madera y piedra conservadas.",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    },
+    {
+      "id": "building-indoor-plant-conservatory",
+      "group": "buildings",
+      "title": "Colecciones de plantas de interior e invernaderos",
+      "description": "Compare el entorno local de las exposiciones de plantas de interior y las zonas resguardadas de los invernaderos. La temperatura, la humedad y la iluminancia opcional permiten describir las diferencias entre posiciones seleccionadas a lo largo del día. El personal de horticultura interpreta las lecturas según las necesidades de las plantas y sus rutinas de cuidado, con una configuración de luz acordada para el objetivo de observación.",
+      "measurement": "Temperatura y humedad relativa; iluminancia opcional para posiciones seleccionadas en las exposiciones de plantas.",
+      "monitoringPoint": "Posiciones representativas de medición de aire y luz en las exposiciones de plantas, seleccionadas por el equipo de horticultura.",
+      "installation": "Mantenga las aberturas de los sensores libres de follaje y de agua de riego pulverizada; confirme su idoneidad para el entorno previsto y las condiciones de luz seleccionadas.",
+      "projectBrief": "Indique los tipos de plantas, la distribución interior, la disposición de la luz natural o de las lámparas, la rutina de riego y el periodo de observación previsto.",
+      "image": {
+        "name": "scene-greenhouses.webp",
+        "alt": "Interior de un invernadero acristalado con bancales plantados y luz natural difusa",
+        "caption": "Entorno de plantas de interior · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      }
+    }
+  ]
+}
