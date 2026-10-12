@@ -1,28 +1,47 @@
 ---
 /**
- * 工业 TVOC 传感器页 V2 · 包装器（GPT6 页面包 V64，Kimi 审核集成）
- * 路由：EN /product/tvoc-sensor（无前缀）；其余语言仍走经典模板（待多语言包）。
- * 数据：tvoc-content.json（EN，组件直接 import）。
+ * 工业 TVOC 传感器页 V2 · 包装器（GPT6 页面包 V64 + 多语言包 V65，Kimi 审核集成）
+ * 路由：EN /product/tvoc-sensor（无前缀）；es/de/ja/fr/ru 经 locale 路由复用本组件。
+ * 数据：REGISTRY 按 locale 选 tvoc-content-{locale}.json；EN 无字典条目，
+ * S() 原样回落，EN 渲染零差异。UI 字符串：dicts.mjs（TVOC_DICTS）。
  * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
  * Schema（includeOrganization={false}，统一引用 /#organization）。
  * Hero 响应式 preload（imagesrcset/imagesizes 与 TVOCPage img 一致）经 head 槽输出。
  * SiteShell/QuickContact 为 GPT6 离线审阅壳，不集成（README-KIMI）。
  * 规格书按钮链接仓库既有 /downloads/tvoc-sensor-datasheet.pdf（口径已核对一致）。
  * 样式作用域：包内将 .ht-tvoc 挂在 body；集成经 BaseLayout，故挂在包装 div。
+ * JS 文案经 pickJs 注入包装 div 的 data-i18n，tvoc-interactions.js T() 读取。
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TVOCPage from './TVOCPage.astro';
 import StructuredData from './StructuredData.astro';
 import { tvocImage } from './images.mjs';
-import content from '../../data/tvoc-content.json';
+import { TVOC_DICTS, pickJs } from './dicts.mjs';
+import contentEn from '../../data/tvoc-content.json';
+import contentEs from '../../data/tvoc-content-es.json';
+import contentDe from '../../data/tvoc-content-de.json';
+import contentJa from '../../data/tvoc-content-ja.json';
+import contentFr from '../../data/tvoc-content-fr.json';
+import contentRu from '../../data/tvoc-content-ru.json';
 import '../../styles/tvoc.css';
+const REGISTRY = {
+  en: { content: contentEn, prefix: '' },
+  es: { content: contentEs, prefix: '/es' },
+  de: { content: contentDe, prefix: '/de' },
+  ja: { content: contentJa, prefix: '/ja' },
+  fr: { content: contentFr, prefix: '/fr' },
+  ru: { content: contentRu, prefix: '/ru' },
+};
+const { locale = 'en' } = Astro.props;
+const { content, prefix } = REGISTRY[locale] ?? REGISTRY.en;
+const t = TVOC_DICTS[locale] ?? {};
 const hero = await tvocImage('product-hero.webp', true);
 const ogImage = new URL(hero.src, Astro.site).href;
 const heroSizes = '(max-width: 600px) calc(100vw - 76px), (max-width: 1024px) 42vw, 560px';
 ---
 
-<BaseLayout locale="en" title={content.seo.title} description={content.seo.description} robots="index,follow,max-image-preview:large">
+<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description} robots="index,follow,max-image-preview:large">
   <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
-  <StructuredData slot="head" content={content} imageUrl={ogImage} includeOrganization={false} />
-  <div class="ht-tvoc"><TVOCPage /></div>
+  <StructuredData slot="head" content={content} imageUrl={ogImage} includeOrganization={false} t={t} prefix={prefix} locale={locale} />
+  <div class="ht-tvoc" data-i18n={JSON.stringify(pickJs(t))}><TVOCPage content={content} t={t} prefix={prefix} /></div>
 </BaseLayout>

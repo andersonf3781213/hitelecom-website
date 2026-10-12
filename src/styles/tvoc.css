@@ -349,3 +349,10 @@
 :where(.ht-tvoc) .application-voc-reference small{display:block;font-size:9px;line-height:1.6;color:#75859b;margin-top:4px}
 @media(max-width:900px){:where(.ht-tvoc) .application-voc-reference{grid-template-columns:50px minmax(0,1fr);gap:12px;padding:12px}:where(.ht-tvoc) .application-voc-reference .voc-product-reference-image{width:50px;height:50px;max-width:50px}}
 @media(min-width:601px) and (max-height:850px){:where(.ht-tvoc) .application-visual{position:static}}
+
+/* V65 多语言长单词守护：仅窄屏（<=1024px）允许任意断字+连字符；
+   桌面保持自然整词换行（V58 RU 教训）。作用域 .ht-tvoc。 */
+@media (max-width: 1024px){
+:where(.ht-tvoc) h1,:where(.ht-tvoc) h2,:where(.ht-tvoc) h3,:where(.ht-tvoc) h4,
+:where(.ht-tvoc) .feature-grid p,:where(.ht-tvoc) .measurement-card p,:where(.ht-tvoc) summary{min-width:0;overflow-wrap:anywhere;hyphens:auto}
+}
