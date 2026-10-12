@@ -102,7 +102,7 @@
     "profile_heading": "Adapte el perfil de monitorización\nal proceso.",
     "profile_text": "La detección determina cuándo se toma una medida; el envío determina cuándo se transmiten los datos; y la entrega de alertas incluye la plataforma y la vía de comunicación. Especifique estos tiempos por separado según la velocidad de cambio prevista y la respuesta operativa.",
     "battery_title": "Alimentación para la configuración seleccionada.",
-    "battery_text": "La documentación publicada de la familia hace referencia a una autonomía de batería superior a 10 años con envío de datos cada hora bajo condiciones de ensayo especificadas. Revise la alimentación y la estimación de autonomía para la configuración de detección seleccionada, incluido PID cuando se especifique. La demanda de detección, el régimen de muestreo, la cobertura de red, los reintentos, la temperatura y el envío de datos afectan a la autonomía. La alimentación y los componentes de alarma del monitor ilustrado forman parte de la configuración del pedido."
+    "battery_text": "La serie H se alimenta mediante una fuente externa de 9–24 V. Adapte el cableado de alimentación a los requisitos de instalación del pedido. El hardware de alimentación y alarma del monitor ilustrado forma parte de la configuración pedida."
   },
   "series": {
     "eyebrow": "SERIE Y CONFIGURACIÓN",
@@ -167,8 +167,8 @@
         "value": "Activación por NFC y configuración local"
       },
       {
-        "label": "Referencia de autonomía de batería",
-        "value": "Más de 10 años con envío cada hora bajo condiciones de ensayo especificadas; confirme la alimentación y la autonomía de la configuración de detección seleccionada"
+        "label": "Alimentación",
+        "value": "Externa de 9–24 V; adapte el cableado de alimentación a los requisitos de instalación del pedido"
       },
       {
         "label": "Opciones de montaje",
@@ -273,9 +273,9 @@
     },
     {
       "id": "faq-timing-battery",
-      "question": "¿Cómo afectan los intervalos de envío a la autonomía de batería y al tiempo de las alertas?",
+      "question": "¿Cómo afectan los intervalos de envío a la demanda de potencia y al tiempo de las alertas?",
       "paragraphs": [
-        "Los tiempos de detección, envío de datos y notificación son requisitos distintos que deben confirmarse. Un muestreo o una transmisión más frecuentes pueden aumentar la demanda de energía; una cobertura débil y los reintentos también afectan a la autonomía. Solicite la alimentación de la configuración de detección seleccionada y una estimación para su régimen real de funcionamiento, incluida la operación PID cuando se especifique. Verifique los tiempos de actualización y de alerta de extremo a extremo durante la puesta en servicio."
+        "Los tiempos de detección, envío de datos y notificación son requisitos distintos que deben confirmarse. Un muestreo o una transmisión más frecuentes aumentan la demanda de potencia; una cobertura débil y las retransmisiones también prolongan el tiempo de actualización. Confirme los requisitos de alimentación de la configuración de detección seleccionada, incluido el funcionamiento PID cuando se especifique. Verifique el tiempo de actualización y de alerta de extremo a extremo durante la puesta en marcha."
       ],
       "evidence": [
         "hitelecom-webpage",

@@ -102,7 +102,7 @@
     "profile_heading": "Match the monitoring profile\nto the process.",
     "profile_text": "Sensing is when a measurement is taken; reporting is when data is sent; alert delivery includes the platform and communication path. Specify these timings separately around the expected rate of change and the operational response.",
     "battery_title": "Power for the selected configuration.",
-    "battery_text": "The published family references more than 10 years of battery life at one-hour reporting under specified test conditions. Review the power arrangement and estimate for the selected sensing configuration, including PID where specified. Sensing demand, sampling duty, network coverage, retries, temperature and reporting affect runtime. The illustrated monitor's power and alarm hardware are part of the ordered configuration."
+    "battery_text": "The H Series is powered by an external 9–24 V supply. Match the power wiring to the ordered installation requirements. The illustrated monitor's power and alarm hardware are part of the ordered configuration."
   },
   "series": {
     "eyebrow": "SERIES & CONFIGURATION",
@@ -167,8 +167,8 @@
         "value": "NFC activation and local setup"
       },
       {
-        "label": "Battery-life reference",
-        "value": "More than 10 years at one-hour reporting under specified test conditions; confirm power and runtime for the selected sensing configuration"
+        "label": "Power supply",
+        "value": "External 9–24 V; match the power wiring to the ordered installation requirements"
       },
       {
         "label": "Mounting options",
@@ -273,9 +273,9 @@
     },
     {
       "id": "faq-timing-battery",
-      "question": "How do reporting intervals affect battery life and alert timing?",
+      "question": "How do reporting intervals affect power demand and alert timing?",
       "paragraphs": [
-        "Sensing, reporting and notification timing are separate requirements to confirm. Faster sampling or transmission can increase power demand; weak coverage and retries also affect runtime. Ask for the selected sensing configuration's power arrangement and an estimate for your actual duty, including PID operation where specified. Verify end-to-end update and alert timing during commissioning."
+        "Sensing, reporting and notification timing are separate requirements to confirm. Faster sampling or transmission increases power demand; weak coverage and retries also extend update timing. Confirm the selected sensing configuration's supply requirements, including PID operation where specified. Verify end-to-end update and alert timing during commissioning."
       ],
       "evidence": [
         "hitelecom-webpage",

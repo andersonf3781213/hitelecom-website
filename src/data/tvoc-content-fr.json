@@ -102,7 +102,7 @@
     "profile_heading": "Adaptez le profil de surveillance\nau procédé.",
     "profile_text": "La mesure correspond à l’acquisition d’une valeur ; la transmission correspond à l’envoi des données ; l’acheminement des alertes dépend de la plateforme et du chemin de communication. Précisez séparément ces délais selon la vitesse de variation attendue et la réponse opérationnelle.",
     "battery_title": "Une alimentation adaptée à la configuration choisie.",
-    "battery_text": "Les données publiées pour la famille indiquent une autonomie supérieure à 10 ans avec une transmission toutes les heures, dans des conditions d’essai spécifiées. Examinez l’alimentation et l’estimation d’autonomie de la configuration de mesure choisie, y compris le PID lorsqu’il est spécifié. La consommation du capteur, le régime de mesure, la couverture réseau, les nouvelles tentatives de transmission, la température et la fréquence d’envoi influencent l’autonomie. L’alimentation et le matériel d’alarme du moniteur illustré dépendent de la configuration commandée."
+    "battery_text": "La série H est alimentée par une source externe de 9–24 V. Adaptez le câblage d'alimentation aux exigences d'installation commandées. Le matériel d'alimentation et d'alarme du moniteur illustré fait partie de la configuration commandée."
   },
   "series": {
     "eyebrow": "SÉRIE ET CONFIGURATION",
@@ -167,8 +167,8 @@
         "value": "Activation NFC et configuration locale"
       },
       {
-        "label": "Référence d’autonomie sur batterie",
-        "value": "Plus de 10 ans avec une transmission toutes les heures dans des conditions d’essai spécifiées ; confirmez l’alimentation et l’autonomie de la configuration de mesure choisie"
+        "label": "Alimentation",
+        "value": "Externe 9–24 V ; adaptez le câblage d'alimentation aux exigences d'installation commandées"
       },
       {
         "label": "Options de fixation",
@@ -273,9 +273,9 @@
     },
     {
       "id": "faq-timing-battery",
-      "question": "Comment les intervalles de transmission influencent-ils l’autonomie et le délai des alertes ?",
+      "question": "Comment les intervalles de transmission influencent-ils la demande de puissance et le délai des alertes ?",
       "paragraphs": [
-        "Les délais de mesure, de transmission et de notification sont des exigences distinctes à confirmer. Des mesures ou des transmissions plus fréquentes peuvent augmenter la consommation ; une faible couverture et les nouvelles tentatives de transmission influencent aussi l’autonomie. Demandez l’alimentation de la configuration de mesure choisie et une estimation pour votre usage réel, y compris le fonctionnement du PID lorsqu’il est spécifié. Vérifiez les délais d’actualisation et d’alerte de bout en bout lors de la mise en service."
+        "Les délais de mesure, de transmission et de notification sont des exigences distinctes à confirmer. Des mesures ou des transmissions plus fréquentes augmentent la demande de puissance ; une faible couverture et les retransmissions allongent également le délai de mise à jour. Confirmez les besoins d'alimentation de la configuration de mesure sélectionnée, y compris le fonctionnement PID le cas échéant. Vérifiez le délai de mise à jour et d'alerte de bout en bout lors de la mise en service."
       ],
       "evidence": [
         "hitelecom-webpage",

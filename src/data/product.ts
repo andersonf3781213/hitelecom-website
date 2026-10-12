@@ -11034,7 +11034,7 @@ const productContentBase ={
     },
     "303": {
       "series": "H系列 · TVOC传感器",
-      "tagline": "VOC监测 | 固定安装 | 超低功耗",
+      "tagline": "VOC监测 | 固定安装 | 外接供电",
       "desc": "宏太通信 TVOC 传感器监测总挥发性有机物，量程 0-100,000 ppb、分辨率 1 ppb，为喷漆房、化学品仓库与实验室提供远程告警",
       "heroImg": "product/details/303-hero.png",
       "pdf": "/downloads/tvoc-sensor-datasheet.pdf",
@@ -11059,7 +11059,7 @@ const productContentBase ={
         },
         {
           "icon": "product/details/270-f5.png",
-          "text": "节能技术，持久续航"
+          "text": "外接 9–24 V 供电，按安装要求布线"
         },
         {
           "icon": "product/details/270-f6.png",
@@ -11075,7 +11075,7 @@ const productContentBase ={
         }
       ],
       "specsTitle": "技术参数",
-      "specsDesc": "持续创新，采用微功耗处理器与算法优化，实现物联传感器长达10年的稳定运行，减少维护成本。",
+      "specsDesc": "H 系列 TVOC 传感器采用外接 9–24 V 供电，电源布线按订购安装要求配置；显示与本地报警硬件随订购配置提供。",
       "specs": [
         [
           "产品型号",
@@ -11102,8 +11102,8 @@ const productContentBase ={
           "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
         ],
         [
-          "电池寿命",
-          "按1小时上报间隔设计续航超10年，实际受网络、温度、配置与上报频率影响"
+          "电源",
+          "外接 9–24 V；电源布线按订购安装要求配置"
         ],
         [
           "安装方式",
@@ -11139,8 +11139,8 @@ const productContentBase ={
           "value": "LTE-TDD: B34/B38/B39/B40/B41; LTE-FDD: B1/B3/B5/B8"
         },
         {
-          "name": "电池寿命",
-          "value": "按1小时上报间隔设计续航超10年，实际受网络、温度、配置与上报频率影响"
+          "name": "电源",
+          "value": "外接 9–24 V；电源布线按订购安装要求配置"
         },
         {
           "name": "安装方式",
@@ -11185,7 +11185,7 @@ const productContentBase ={
         "284",
         "283"
       ],
-      "summary": "宏太 H 系列 TVOC 传感器是总挥发性有机物的无线监测终端：量程 0-100000ppb、分辨率 1ppb，按气体选配电化学或 PID 原理，支持远程告警，电池续航超 10 年，支持喷漆房、化学品仓与实验室的安全监测。",
+      "summary": "宏太 H 系列 TVOC 传感器是总挥发性有机物的无线监测终端：量程 0-100000ppb、分辨率 1ppb，按气体选配电化学或 PID 原理，外接 9–24 V 供电，支持远程告警，支持喷漆房、化学品仓与实验室的安全监测。",
       "sku": "H200/H300/H500",
       "applications": [
         {
@@ -11237,10 +11237,10 @@ const productContentBase ={
         },
         {
           "q": "怎么供电联网？",
-          "a": "内置电池 1 小时上报续航超 10 年，经 4G 或 NB-IoT 以 MQTT 接入宏太云或私有平台。"
+          "a": "外接 9–24 V 供电，经 4G 或 NB-IoT 以 MQTT 接入宏太云或私有平台。电源布线按订购安装要求配置。"
         }
       ],
-      "dateModified": "2026-08-30"
+      "dateModified": "2026-10-12"
     },
     "304": {
       "series": "H系列 · 资产定位终端",

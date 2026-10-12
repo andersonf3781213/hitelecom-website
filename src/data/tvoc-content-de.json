@@ -102,7 +102,7 @@
     "profile_heading": "Stimmen Sie das Überwachungsprofil\nauf den Prozess ab.",
     "profile_text": "Der Messzeitpunkt bestimmt, wann eine Messung erfolgt; der Übertragungszeitpunkt bestimmt, wann Daten gesendet werden. Zur Zustellung einer Meldung gehören auch Plattform und Kommunikationsweg. Spezifizieren Sie diese Zeitvorgaben getrennt anhand der erwarteten Änderungsgeschwindigkeit und der betrieblichen Reaktion.",
     "battery_title": "Stromversorgung für die gewählte Konfiguration.",
-    "battery_text": "Die veröffentlichte Produktfamilie nennt eine Batterielebensdauer von mehr als 10 Jahren bei stündlicher Datenübertragung unter festgelegten Testbedingungen. Prüfen Sie Stromversorgung und Laufzeitschätzung für die gewählte Sensorkonfiguration, einschließlich PID, sofern vorgesehen. Messbedarf, Messbetrieb, Netzabdeckung, Wiederholungsversuche, Temperatur und Datenübertragung beeinflussen die Laufzeit. Stromversorgung und Alarmhardware des abgebildeten Monitors gehören zur bestellten Konfiguration."
+    "battery_text": "Die H-Serie wird über eine externe 9–24-V-Versorgung gespeist. Stimmen Sie die Versorgungsverkabelung auf die bestellten Installationsanforderungen ab. Die Stromversorgungs- und Alarmhardware des abgebildeten Monitors ist Teil der bestellten Konfiguration."
   },
   "series": {
     "eyebrow": "SERIE & KONFIGURATION",
@@ -167,8 +167,8 @@
         "value": "NFC-Aktivierung und lokale Einrichtung"
       },
       {
-        "label": "Referenz zur Batterielebensdauer",
-        "value": "Mehr als 10 Jahre bei stündlicher Datenübertragung unter festgelegten Testbedingungen; Stromversorgung und Laufzeit für die gewählte Sensorkonfiguration bestätigen"
+        "label": "Stromversorgung",
+        "value": "Extern 9–24 V; Versorgungsverkabelung auf die bestellten Installationsanforderungen abstimmen"
       },
       {
         "label": "Montageoptionen",
@@ -273,9 +273,9 @@
     },
     {
       "id": "faq-timing-battery",
-      "question": "Wie beeinflussen Übertragungsintervalle die Batterielebensdauer und den Meldezeitpunkt?",
+      "question": "Wie beeinflussen Übertragungsintervalle den Leistungsbedarf und den Meldezeitpunkt?",
       "paragraphs": [
-        "Mess-, Übertragungs- und Benachrichtigungszeiten sind getrennte Anforderungen, die bestätigt werden müssen. Häufigere Messungen oder Übertragungen können den Energiebedarf erhöhen; schwache Netzabdeckung und Wiederholungsversuche beeinflussen ebenfalls die Laufzeit. Fordern Sie Angaben zur Stromversorgung der gewählten Sensorkonfiguration und eine Schätzung für Ihren tatsächlichen Betrieb an, einschließlich PID-Betrieb, sofern vorgesehen. Prüfen Sie bei der Inbetriebnahme die Aktualisierungs- und Meldezeiten über den gesamten Übertragungsweg."
+        "Mess-, Übertragungs- und Benachrichtigungszeiten sind getrennte Anforderungen, die bestätigt werden müssen. Häufigere Messungen oder Übertragungen erhöhen den Leistungsbedarf; schwache Netzabdeckung und Wiederholungen verlängern ebenfalls die Aktualisierungszeit. Bestätigen Sie den Versorgungsbedarf der gewählten Messkonfiguration, einschließlich PID-Betrieb, sofern spezifiziert. Verifizieren Sie die durchgängige Aktualisierungs- und Meldezeit bei der Inbetriebnahme."
       ],
       "evidence": [
         "hitelecom-webpage",
