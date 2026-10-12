@@ -466,3 +466,9 @@
 :where(.ht-logger) #model[readonly]{background:#edf3fc;color:#315a8f;font-weight:650;cursor:default}
 @media(max-width:900px){:where(.ht-logger) .logger-series article{grid-template-columns:minmax(140px,.7fr) minmax(0,1.3fr);gap:20px}:where(.ht-logger) .logger-series .text-link{grid-column:2;justify-self:start}}
 @media(max-width:600px){:where(.ht-logger) .logger-series article{grid-template-columns:minmax(0,1fr);gap:18px}:where(.ht-logger) .logger-series .text-link{grid-column:auto;white-space:normal}}
+
+/* V63 五语言长词保护：仅 ≤1024px 启用（桌面保持自然整词换行——V58 RU 经验） */
+@media (max-width: 1024px){
+:where(.ht-logger) h1,:where(.ht-logger) h2,:where(.ht-logger) h3,:where(.ht-logger) h4,
+:where(.ht-logger) .feature-grid p,:where(.ht-logger) .measurement-card p,:where(.ht-logger) summary{min-width:0;overflow-wrap:anywhere;hyphens:auto}
+}

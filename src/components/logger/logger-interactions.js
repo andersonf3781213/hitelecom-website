@@ -1,6 +1,10 @@
 // All task photos and copy are real static HTML. This small enhancement moves
 // the selected photo into the left desktop slot; native details remain usable
 // without JavaScript, and narrow screens keep the photo with its task.
+// Locale strings are rendered into data-i18n on the page root (LOGGER_DICTS_JS_KEYS);
+// T() falls back to the English source string when no translation is present.
+const I18N = JSON.parse(document.querySelector('.ht-logger')?.dataset.i18n || '{}');
+const T = key => Object.prototype.hasOwnProperty.call(I18N, key) ? I18N[key] : key;
 const sceneViewport = window.matchMedia('(max-width: 600px)');
 const applicationSceneStates = new Map();
 for (const group of document.querySelectorAll('.application-group')) {
@@ -146,20 +150,22 @@ if (form) {
   const brief = document.querySelector('#enquiry-brief');
   const email = document.querySelector('#email-brief');
   const status = document.querySelector('#brief-status');
-  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent('H100 temperature and humidity data logger — project enquiry')}&body=${encodeURIComponent(brief.value)}`; };
+  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent(T('H100 temperature and humidity data logger — project enquiry'))}&body=${encodeURIComponent(brief.value)}`; };
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    brief.value = ['Hello Hitelecom,', '', 'I would like to discuss an H100 temperature and humidity recording project with a customizable collection interval and USB readout using local PC software.', '', ...['Application','Country','Model','Quantity','Recording interval','Required recording period','Computer environment','Requirements'].map(key=>`${key}: ${data.get(key) || 'Please advise'}`), '', 'Please confirm the H100 recording configuration, supported collection interval, local PC software requirements, supporting datasheet and quotation.', '', 'Thank you.'].join('\n');
+    // Select display text (locale scene title) goes into the brief; other values come from FormData under their English field names.
+    const values = {Application: application?.selectedOptions?.[0]?.textContent?.trim() || data.get('Application')};
+    brief.value = [T('Hello Hitelecom,'), '', T('I would like to discuss an H100 temperature and humidity recording project with a customizable collection interval and USB readout using local PC software.'), '', ...['Application','Country','Model','Quantity','Recording interval','Required recording period','Computer environment','Requirements'].map(key=>`${T(key)}: ${values[key] || data.get(key) || T('Please advise')}`), '', T('Please confirm the H100 recording configuration, supported collection interval, local PC software requirements, supporting datasheet and quotation.'), '', T('Thank you.')].join('\n');
     updateEmail(); review.hidden = false;
-    status.textContent = 'Your brief is ready. Review it and open your email app to send.';
+    status.textContent = T('Your brief is ready. Review it and open your email app to send.');
     brief.focus({preventScroll:true}); review.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
   });
   brief.addEventListener('input', updateEmail);
   document.querySelector('#copy-brief').addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(brief.value); status.textContent = 'Project brief copied.'; }
-    catch { brief.focus(); brief.select(); status.textContent = 'Your brief is selected. Use your device’s copy command.'; }
+    try { await navigator.clipboard.writeText(brief.value); status.textContent = T('Project brief copied.'); }
+    catch { brief.focus(); brief.select(); status.textContent = T('Your brief is selected. Use your device’s copy command.'); }
   });
 }
 
@@ -214,6 +220,6 @@ document.addEventListener('keydown', event => {
 document.querySelectorAll('[data-measurement]').forEach(link => link.addEventListener('click', () => {
   const field = document.querySelector('#requirements');
   if (!field) return;
-  const requirement = `Recording focus: ${link.dataset.measurement}`;
+  const requirement = `${T('Recording focus:')} ${link.dataset.measurement}`;
   if (!field.value.includes(requirement)) field.value = requirement + (field.value ? '\n' + field.value : '');
 }));

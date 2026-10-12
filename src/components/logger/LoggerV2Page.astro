@@ -1,28 +1,46 @@
 ---
 /**
- * 温湿度数据记录仪页 V2 · 包装器（GPT6 页面包 V60，Kimi 审核集成）
- * 路由：EN /product/temperature-humidity-data-logger（无前缀）；其余语言仍走经典模板。
- * 数据：logger-content.json（EN，组件直接 import）。
+ * 温湿度数据记录仪页 V2 · 六语言包装器（GPT6 页面包 V60 + 五语言包 V63，Kimi 审核集成）
+ * 路由：EN /product/temperature-humidity-data-logger（无前缀）；es/de/ja/fr/ru 带前缀，zh 仍走经典模板。
+ * 数据：logger-content.json（EN）+ logger-content-{es,de,ja,fr,ru}.json；
+ * 文案字典：dicts.mjs（键=组件英文字面量，EN 无条目零差异；JS 键经 data-i18n 注入）。
  * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
  * Schema（includeOrganization={false}，统一引用 /#organization）。
  * Hero 响应式 preload（imagesrcset/imagesizes 与 LoggerPage img 一致）经 head 槽输出。
  * SiteShell/QuickContact 为 GPT6 离线审阅壳，不集成（README-KIMI）。
- * datasheet_url 当前为 null：旧 PDF 型号/电池口径已被用户修正，页内提供
- * 参数锚点与索取最新资料入口；待确认新 PDF 后再启用外链。
+ * datasheet_url 已于 V61 启用（IP55 修正版 PDF）；非英页规格书链接按站内惯例
+ * 挂 EN 标签加 (EN) 标记（五语言包成稿于 V61 前，无该标签译文条目）。
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LoggerPage from './LoggerPage.astro';
 import StructuredData from './StructuredData.astro';
 import { loggerImage } from './images.mjs';
-import content from '../../data/logger-content.json';
+import { LOGGER_DICTS } from './dicts.mjs';
+import contentEn from '../../data/logger-content.json';
+import contentEs from '../../data/logger-content-es.json';
+import contentDe from '../../data/logger-content-de.json';
+import contentJa from '../../data/logger-content-ja.json';
+import contentFr from '../../data/logger-content-fr.json';
+import contentRu from '../../data/logger-content-ru.json';
 import '../../styles/logger.css';
+const REGISTRY = {
+  en: {content: contentEn, prefix: ''},
+  es: {content: contentEs, prefix: '/es'},
+  de: {content: contentDe, prefix: '/de'},
+  ja: {content: contentJa, prefix: '/ja'},
+  fr: {content: contentFr, prefix: '/fr'},
+  ru: {content: contentRu, prefix: '/ru'},
+};
+const {locale = 'en'} = Astro.props;
+const entry = REGISTRY[locale] ?? REGISTRY.en;
+const t = LOGGER_DICTS[locale] ?? {};
 const hero = await loggerImage('product-hero.webp', true);
 const ogImage = new URL(hero.src, Astro.site).href;
 const heroSizes = '(max-width: 600px) 350px, (max-width: 1024px) 45vw, 580px';
 ---
 
-<BaseLayout locale="en" title={content.seo.title} description={content.seo.description} robots="index,follow,max-image-preview:large">
+<BaseLayout locale={locale} title={entry.content.seo.title} description={entry.content.seo.description} robots="index,follow,max-image-preview:large">
   <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
-  <StructuredData slot="head" content={content} imageUrl={ogImage} includeOrganization={false} />
-  <LoggerPage />
+  <StructuredData slot="head" content={entry.content} imageUrl={ogImage} t={t} locale={locale} prefix={entry.prefix} includeOrganization={false} />
+  <LoggerPage content={entry.content} t={t} prefix={entry.prefix} />
 </BaseLayout>
