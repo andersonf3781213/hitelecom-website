@@ -1,0 +1,28 @@
+---
+/**
+ * 温湿度光照传感器页 V2 · 包装器（GPT6 页面包，Kimi 审核集成 V56）
+ * 路由：EN /product/temperature-humidity-sensor（无前缀）；其余语言暂走经典模板，
+ * 待 GPT6 语言包到货后按振动页 REGISTRY 模式扩展。
+ * 数据：thl-content.json；样式：thl.css（.ht-thl 作用域）。
+ * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
+ * Schema（includeOrganization={false}，统一引用 /#organization）。
+ * Hero 响应式 preload（imagesrcset/imagesizes 与 img 一致）经 head 槽输出。
+ * SiteShell/QuickContact 为 GPT6 离线审阅壳，不集成（README-KIMI）。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ClimatePage from './ClimatePage.astro';
+import StructuredData from './StructuredData.astro';
+import { climateImage } from './images.mjs';
+import content from '../../data/thl-content.json';
+import '../../styles/thl.css';
+const { locale = 'en' } = Astro.props;
+const hero = await climateImage('product-hero.webp', true);
+const ogImage = new URL(hero.src, Astro.site).href;
+const heroSizes = '(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px';
+---
+
+<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description}>
+  <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
+  <StructuredData slot="head" content={content} imageUrl={ogImage} includeOrganization={false} />
+  <ClimatePage />
+</BaseLayout>
