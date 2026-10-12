@@ -1,0 +1,13 @@
+---
+const {image} = Astro.props;
+const credit = image.credit;
+---
+<figcaption>
+  <span class="application-photo-caption">{image.caption}</span>
+  {image.kind === 'illustrative' && !/illustrative/i.test(image.caption) && <small class="application-photo-credit">Illustrative scene</small>}
+  {credit && <small class="application-photo-credit">
+    Photo: <a href={credit.sourceURL} target="_blank" rel="noopener">{credit.author}</a>
+    {' · '}<a href={credit.licenseURL} target="_blank" rel="noopener">{credit.license}</a>
+    {credit.changes && <span>{' · '}{credit.changes}</span>}
+  </small>}
+</figcaption>

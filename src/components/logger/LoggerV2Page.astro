@@ -1,0 +1,28 @@
+---
+/**
+ * 温湿度数据记录仪页 V2 · 包装器（GPT6 页面包 V60，Kimi 审核集成）
+ * 路由：EN /product/temperature-humidity-data-logger（无前缀）；其余语言仍走经典模板。
+ * 数据：logger-content.json（EN，组件直接 import）。
+ * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
+ * Schema（includeOrganization={false}，统一引用 /#organization）。
+ * Hero 响应式 preload（imagesrcset/imagesizes 与 LoggerPage img 一致）经 head 槽输出。
+ * SiteShell/QuickContact 为 GPT6 离线审阅壳，不集成（README-KIMI）。
+ * datasheet_url 当前为 null：旧 PDF 型号/电池口径已被用户修正，页内提供
+ * 参数锚点与索取最新资料入口；待确认新 PDF 后再启用外链。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LoggerPage from './LoggerPage.astro';
+import StructuredData from './StructuredData.astro';
+import { loggerImage } from './images.mjs';
+import content from '../../data/logger-content.json';
+import '../../styles/logger.css';
+const hero = await loggerImage('product-hero.webp', true);
+const ogImage = new URL(hero.src, Astro.site).href;
+const heroSizes = '(max-width: 600px) 350px, (max-width: 1024px) 45vw, 580px';
+---
+
+<BaseLayout locale="en" title={content.seo.title} description={content.seo.description} robots="index,follow,max-image-preview:large">
+  <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
+  <StructuredData slot="head" content={content} imageUrl={ogImage} includeOrganization={false} />
+  <LoggerPage />
+</BaseLayout>
