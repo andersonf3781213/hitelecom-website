@@ -1,0 +1,1626 @@
+{
+  "seo": {
+    "title": "産業機械向け高周波振動センサー | Hitelecom",
+    "description": "Hitelecomの高周波振動センサー：振動速度RMS 0～50 mm/s、測定周波数範囲10～5,000 Hz。単軸または3軸測定に対応し、4G、NB-IoT、LoRaでデータを送信します。"
+  },
+  "hero": {
+    "description": "Hitelecom H Series振動センサーは、ケーブル付き外付けプローブと無線端末を組み合わせ、産業機械の高周波振動を監視します。プローブをモーターの軸受ハウジングの剛性のある測定点に取り付け、設定した測定値を保全チームへ送信します。単軸または3軸測定を選択でき、振動速度RMSの測定範囲は0～50 mm/s、表示分解能は0.1 mm/s、測定周波数範囲は10～5,000 Hzです。設置条件に合わせて4G、NB-IoT、LoRaの通信方式とデータ送信設定を選択できます。",
+    "datasheet_url": "/downloads/vibration-sensor-datasheet.pdf"
+  },
+  "features": [
+    {
+      "title": "機械の測定点にプローブを設置",
+      "text": "ケーブル付き外付けプローブを選定した機械の測定点に取り付け、端末は作業アクセスと無線通信に適した場所に設置します。"
+    },
+    {
+      "title": "振動速度RMS",
+      "text": "振動速度RMSを0～50 mm/sの範囲で測定し、0.1 mm/sの表示分解能で表示します。機械と測定目的に合わせて単軸または3軸測定を選択できます。"
+    },
+    {
+      "title": "測定周波数範囲10～5,000 Hz",
+      "text": "10～5,000 Hzの測定周波数範囲で機械の振動を監視します。対象設備で確認したい周波数に合わせて、プローブの取り付け方法とデータ取得設定を選定します。"
+    },
+    {
+      "title": "無線で遠隔地へデータ送信",
+      "text": "納入機種の4G、NB-IoT、LoRa仕様により、分散した測定点を合意した監視プラットフォームへ接続します。"
+    },
+    {
+      "title": "アラートと対応手順の設定",
+      "text": "選定した測定指標と通常運転時の条件に基づき、プロジェクトのしきい値、通知先、点検時の対応手順を定めます。"
+    },
+    {
+      "title": "実用的な端末設定",
+      "text": "この製品ファミリーには、NFCによる有効化、ローカル設定、OTAアップデートが記載されています。納入機種で利用できる機能をご確認ください。"
+    }
+  ],
+  "measurement": {
+    "description": "機械の傾向を有効に把握するには、再現性のある測定点、明確に定義した測定値、その値に対応する運転条件が必要です。プローブとデータ送信設定を選ぶ前に、これらを合わせて確認します。",
+    "cards": [
+      {
+        "title": "振動速度RMS",
+        "text": "振動速度の二乗平均平方根値（RMS・実効値）はmm/sで表します。測定範囲は0～50 mm/s、表示分解能は0.1 mm/sです。同じ機械の測定点で、比較可能な運転条件の測定値を比較します。",
+        "project_brief": "単軸または3軸 · 取り付け位置 · 運転速度 · 通常時の基準値"
+      },
+      {
+        "title": "測定周波数範囲",
+        "text": "指定の測定周波数範囲は10～5,000 Hzです。これはプローブで測定する振動の周波数を示します。無線でのデータ送信間隔は、保全業務に合わせて別途設定します。",
+        "project_brief": "対象機械の周波数 · プローブの取り付け · データ取得設定 · データ送信間隔"
+      },
+      {
+        "title": "運転条件の把握",
+        "text": "機械の回転速度、負荷、生産工程の段階が、測定値を比較する際の条件になります。監視計画または現場で利用できる記録に残します。",
+        "project_brief": "回転速度範囲（RPM） · 負荷状態 · 生産サイクル · 通常時の基準値"
+      }
+    ],
+    "installation_text": "監視対象の軸受に近い、設置が承認された剛性のあるモーター軸受ハウジングまたはエンドブラケットの測定面に、外付けプローブを直接取り付けます。単軸仕様では検出方向を選定し、3軸仕様では3軸の向きを定めます。プローブケーブルには適切なストレインリリーフを設け、回転部や高温面から離して固定します。無線端末はその使用環境範囲内の別の場所に設置し、その位置での通信状況を確認します。納入プローブの取り付け方法、ケーブル仕様、設置図に従ってください。"
+  },
+  "workflow": {
+    "profile_text": "データ取得設定は振動をどのように測定するかを定め、データ送信設定は端末がいつデータを送るかを定めます。測定帯域、データ取得要件、送信間隔、アラートへの対応を、一つの運用設定として決めます。",
+    "steps": [
+      {
+        "number": "01",
+        "title": "測定",
+        "text": "外付けプローブは、識別ラベルを付けた機械の測定点で測定します。納入仕様の測定量、周波数帯域、データ取得設定を監視目的に合わせます。"
+      },
+      {
+        "number": "02",
+        "title": "データ送信",
+        "text": "端末は、選択した携帯電話網またはLoRa接続を通じて、設定した測定値を送信します。送信スケジュールとプラットフォームまでの接続経路全体を確認します。"
+      },
+      {
+        "number": "03",
+        "title": "確認と対応",
+        "text": "同等の運転状態で測定値を比較し、設定した通知を確認して、保全チームが合意した点検手順につなげます。結果を記録し、次回の比較に活用します。"
+      }
+    ],
+    "battery_text": "公表されている電池寿命の参考値は、指定条件下で1時間間隔のデータ送信時に10年を超えます。この参考値は、設定された端末の運用条件に対応するものです。実際の寿命は、搭載電池、プローブとデータ取得の稼働率、送信スケジュール、無線通信状況、再送、温度によって異なります。導入予定の構成全体について、電池寿命の見積もりをご依頼ください。",
+    "platform_text": "設定した測定値をHitelecom Cloudまたは互換性のあるお客様のプラットフォームへ接続します。製品ファミリーの仕様にはMQTTが記載されています。選定した無線通信仕様とその先の接続経路に合わせて、メッセージ形式、エンドポイント、対応する認証方式を確認します。"
+  },
+  "applicationSection": {
+    "title": "現場全体の機械を監視。",
+    "valueHeading": "各プロジェクトに、明確な測定点を。",
+    "description": "8つの機械分類にわたる48の実用的な監視用途をご覧いただけます。各用途では、固定されたプローブ測定点、比較すべき運転条件、適切な構成の選定に役立つ情報を示しています。",
+    "note": "写真は機械の使用環境を示すイメージです。実際の測定点、プローブの測定帯域、設置方法は、機械担当エンジニアと選定してください。"
+  },
+  "groups": [
+    {
+      "id": "motors-drives",
+      "title": "電動モーターと工場の駆動装置",
+      "jumpLabel": "モーターと駆動装置",
+      "intro": "生産ライン、パワーユニット、回転駆動システムのモーターで、選定した固定測定点の振動傾向を比較します。",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "剛性のある固定エンドブラケットを備えた電動モーターの軸受ハウジング",
+        "caption": "モーター軸受ハウジングの設置環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "production-motor",
+        "variable-speed-motor",
+        "hydraulic-powerpack",
+        "injection-moulding-drive",
+        "generator-alternator",
+        "motor-test-bench"
+      ]
+    },
+    {
+      "id": "pumps-water",
+      "title": "ポンプと水処理システム",
+      "jumpLabel": "ポンプと水処理",
+      "intro": "モーターまたはポンプの軸受に振動が伝わる経路に近い位置へプローブを取り付け、変化を流量、圧力、運転状態と合わせて確認します。",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "送水ポンプ場の陸上設置型遠心ポンプとモーター駆動装置",
+        "caption": "送水ポンプ設備の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "booster-pumps",
+        "wastewater-dry-pumps",
+        "vertical-pump-motors",
+        "cooling-water-pumps",
+        "sanitary-process-pumps",
+        "chemical-transfer-pumps"
+      ]
+    },
+    {
+      "id": "fans-air-systems",
+      "title": "ファン、換気、空気供給システム",
+      "jumpLabel": "ファンと換気",
+      "intro": "羽根、柔軟なダクト、建物の動きではなく、ファンの固定された駆動部や軸受位置を監視します。",
+      "image": {
+        "name": "ahu-fan.webp",
+        "alt": "固定されたモーターとファンの軸受ハウジングにアクセスできる空調用ファンユニット",
+        "caption": "空調用ファン設備 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "ahu-fans",
+        "industrial-exhaust",
+        "dust-extraction-fan",
+        "combustion-air-fan",
+        "drying-process-fan",
+        "aeration-blower-drive"
+      ]
+    },
+    {
+      "id": "compressors-vacuum",
+      "title": "コンプレッサーと真空装置",
+      "jumpLabel": "コンプレッサーと真空",
+      "intro": "回転しない軸受部に近い測定点を選び、コンプレッサーの運転条件に合わせて測定仕様を選定します。",
+      "image": {
+        "name": "air-compressors.webp",
+        "alt": "ユーティリティ室に設置された産業用パッケージコンプレッサー",
+        "caption": "圧縮空気設備の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "screw-air-compressor",
+        "reciprocating-compressor",
+        "refrigeration-compressor",
+        "rotary-vane-vacuum",
+        "dry-screw-vacuum",
+        "process-gas-compressor"
+      ]
+    },
+    {
+      "id": "gearboxes-handling",
+      "title": "ギヤボックス、コンベヤ、構内物流",
+      "jumpLabel": "ギヤボックスとコンベヤ",
+      "intro": "選定した駆動部または軸受への振動伝達経路で測定します。運転速度、搬送物の負荷、動作サイクルを合わせて記録し、比較の条件とします。",
+      "image": {
+        "name": "gearbox-conveyor.webp",
+        "alt": "固定されたギヤボックスと電動モーターを備えた産業用コンベヤ",
+        "caption": "コンベヤ用ギヤボックスの設置環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "belt-conveyor-drive",
+        "screw-conveyor-drive",
+        "bucket-elevator-drive",
+        "crossbelt-sorter-drive",
+        "asrs-hoist-drive",
+        "extruder-gearbox"
+      ]
+    },
+    {
+      "id": "machine-tools-metals",
+      "title": "工作機械と金属加工設備",
+      "jumpLabel": "工作機械と金属加工",
+      "intro": "対象の生産状態における機械の局所的な振動を記録し、作業環境に合わせて取り付け方法とケーブル保護を選定します。",
+      "image": {
+        "name": "cnc-spindle.webp",
+        "alt": "固定された主軸ハウジングと保護された加工領域を備えた産業用CNC工作機械の主軸",
+        "caption": "工作機械主軸の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "cnc-spindle",
+        "lathe-headstock",
+        "grinding-spindle",
+        "industrial-saw-spindle",
+        "rolling-line-drive",
+        "press-drive-bearings"
+      ]
+    },
+    {
+      "id": "process-food-pharma",
+      "title": "プロセス、食品、医薬品、製紙の生産設備",
+      "jumpLabel": "プロセス生産設備",
+      "intro": "機械の局所的な振動傾向で生産設備の保全業務を支え、工程の運転条件、洗浄性、取り付け時のアクセスを確認します。",
+      "image": {
+        "name": "mixer-drive.webp",
+        "alt": "槽外に固定された電動モーターとギヤボックスを備えた産業用タンクミキサー",
+        "caption": "ミキサー外部駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "industrial-mixer-drive",
+        "decanter-centrifuge",
+        "centrifugal-separator",
+        "filling-capping-drives",
+        "pharma-vacuum-dryer",
+        "paper-calender-bearings"
+      ]
+    },
+    {
+      "id": "heavy-processing",
+      "title": "破砕、粉砕、重工業の加工設備",
+      "jumpLabel": "重工業の加工設備",
+      "intro": "回転駆動部または固定軸受ハウジングを機械監視の測定点として選び、通常工程で生じる加振を考慮して測定範囲と設置方法を確認します。",
+      "image": {
+        "name": "crusher-bearing.webp",
+        "alt": "回転しない軸受ハウジングと駆動装置を備えた産業用破砕機",
+        "caption": "破砕機軸受ハウジングの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "crusher-bearing-housing",
+        "pulverizer-mill-drive",
+        "industrial-shredder-drive",
+        "screen-exciter-bearing",
+        "cement-mill-gearbox",
+        "wood-chipper-bearings"
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "production-motor",
+      "group": "motors-drives",
+      "title": "生産ラインの電動モーター",
+      "description": "モーター軸受ハウジングの変化を追跡し、保全チームの日常点検に再現性のある比較基準を提供します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "駆動側軸受に近い固定されたモーターのエンドブラケット。",
+      "installation": "設置が承認された剛性のある測定点を使用し、検出方向を記録します。プローブケーブルはカップリングガードの外側に配線します。",
+      "projectBrief": "モーターの定格、回転速度（RPM）、負荷パターン、軸受位置、取り付け位置の写真。",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "剛性のある固定エンドブラケットを備えた電動モーターの軸受ハウジング",
+        "caption": "モーター軸受ハウジングの設置環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "variable-speed-motor",
+      "group": "motors-drives",
+      "title": "可変速モーター駆動装置",
+      "description": "対応する速度と負荷の範囲内で測定値を比較し、運転条件に伴う通常の変化も傾向として把握します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "アクセス可能な駆動側または反駆動側の軸受ハウジング。",
+      "installation": "基準値を定める前に運転速度帯を確認し、保全後も測定位置を一定に保ちます。",
+      "projectBrief": "速度範囲、運転状態、稼働サイクル、駆動装置から取得できるデータ。",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "剛性のある固定エンドブラケットを備えた電動モーターの軸受ハウジング",
+        "caption": "モーター軸受ハウジングの設置環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "id": "hydraulic-powerpack",
+      "group": "motors-drives",
+      "title": "油圧パワーユニットのモーター",
+      "description": "油圧パワーユニットを駆動する電動モーターを監視し、同等の圧力需要サイクルにおける点検に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "固定されたパワーユニット上のモーター軸受ハウジング。",
+      "installation": "ポンプ負荷とモーターの運転状態を記録します。プローブはタンクの薄板ではなく、モーターに取り付けます。",
+      "projectBrief": "パワーユニットの配置、モーターの回転速度、油圧運転サイクル、ケーブル経路。",
+      "image": {
+        "name": "hydraulic-power.webp",
+        "alt": "タンク上部に電動モーターとポンプを取り付けた油圧パワーユニット",
+        "caption": "油圧パワーユニットの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "id": "injection-moulding-drive",
+      "group": "motors-drives",
+      "title": "射出成形機の油圧駆動装置",
+      "description": "再現性のある成形サイクルでモーター側の振動を追跡し、生産記録と合わせて駆動部の点検優先順位の判断に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "油圧駆動モーターの固定された軸受付近。",
+      "installation": "アクセス可能で回転しない測定点を選び、同じサイクル段階で比較します。ホースや取り外し可能なガードへの取り付けは避けます。",
+      "projectBrief": "機械形式、駆動部の配置、サイクルの各段階、保全時のアクセス。",
+      "image": {
+        "name": "hydraulic-power.webp",
+        "alt": "タンク上部に電動モーターとポンプを取り付けた油圧パワーユニット",
+        "caption": "油圧パワーユニットの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "id": "generator-alternator",
+      "group": "motors-drives",
+      "title": "発電機の交流発電部の軸受",
+      "description": "定義した負荷と回転速度で、発電機の回転電機部分の振動履歴を蓄積します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "アクセス可能で固定された交流発電部の軸受ハウジング。",
+      "installation": "交流発電部の監視をエンジンフレームの振動と区別し、許容温度、測定範囲、ケーブル保護を確認します。",
+      "projectBrief": "交流発電部の配置、通常回転速度、負荷範囲、環境条件。",
+      "image": {
+        "name": "generator-alternator.webp",
+        "alt": "アクセス可能で回転しない軸受ハウジングを備えた産業用発電機と交流発電部",
+        "caption": "発電機と交流発電部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S15"
+      ]
+    },
+    {
+      "id": "motor-test-bench",
+      "group": "motors-drives",
+      "title": "モーターの完成検査用試験台",
+      "description": "定義した運転試験中に比較可能な振動値を記録し、合意した検査または受入判定の手順に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "試験モーターのハウジング上の、再現性のある剛性の高い測定点。",
+      "installation": "試験手順で回転速度、負荷、取り付け方法を固定し、モーターに対して承認された受入基準を使用します。",
+      "projectBrief": "試験手順、想定振幅、必要な測定指標、再現性のある治具の配置。",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "剛性のある固定エンドブラケットを備えた電動モーターの軸受ハウジング",
+        "caption": "モーター軸受ハウジングの設置環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "booster-pumps",
+      "group": "pumps-water",
+      "title": "公共水道の増圧ポンプ",
+      "description": "運転機と待機機で選定したモーターおよびポンプの測定点を追跡し、ポンプ場の保全計画に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "固定されたモーターのエンドブラケットまたはアクセス可能なポンプ軸受ハウジング。",
+      "installation": "各測定点に個別のラベルを付け、同等の運転条件で比較します。ケーブルの余長はカップリングから離して固定します。",
+      "projectBrief": "ポンプの配置、回転速度、流量・圧力の運転条件、監視点数。",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "送水ポンプ場の陸上設置型遠心ポンプとモーター駆動装置",
+        "caption": "送水ポンプ設備の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "id": "wastewater-dry-pumps",
+      "group": "pumps-water",
+      "title": "排水ポンプ場の駆動装置",
+      "description": "アクセス可能な陸上設置型ポンプとモーターを監視し、ポンプ運転サイクルの記録と合わせて傾向を比較します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "水没しない、アクセス可能なモーターまたはポンプの軸受ハウジング。",
+      "installation": "湿気、洗浄薬剤、コネクターの保護を確認します。水没する設置には、別途適合性の確認が必要です。",
+      "projectBrief": "陸上設置か水中設置か、ポンプ運転サイクル、現場の湿気、許可されたアクセス。",
+      "image": {
+        "name": "wastewater-pumps.webp",
+        "alt": "モーターと軸受付近にアクセス可能な陸上設置型排水ポンプユニット",
+        "caption": "陸上設置型排水ポンプの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8"
+      ]
+    },
+    {
+      "id": "vertical-pump-motors",
+      "group": "pumps-water",
+      "title": "立形ポンプのモーター軸受",
+      "description": "立形ポンプのモーターで選定した固定軸受部を監視し、通常運転中の変化を記録します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "ポンプ本体の上方にあるモーター軸受ハウジング。",
+      "installation": "選定した方向を記録し、モーターの局所測定値をポンプ全体や基礎の動きと区別します。",
+      "projectBrief": "立形ユニットの図面、モーター回転速度、軸受位置、対応する測定帯域。",
+      "image": {
+        "name": "vertical-pump.webp",
+        "alt": "ポンプ上方に回転しないモーターハウジングを備えた立形ポンプモーター",
+        "caption": "立形ポンプモーターの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8",
+        "S1"
+      ]
+    },
+    {
+      "id": "cooling-water-pumps",
+      "group": "pumps-water",
+      "title": "プロセス冷却水の循環ポンプ",
+      "description": "製造設備を支える循環ポンプの振動傾向を継続して記録し、工程需要が安定した状態で測定値を比較します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "アクセス可能なポンプとモーターの軸受ハウジングの測定点。",
+      "installation": "接続配管ではなく剛性のあるハウジングを選定し、稼働ポンプを切り替えた際の運転状態を記録します。",
+      "projectBrief": "ポンプ形式、回転速度、水温、運転機と待機機の切替方針。",
+      "image": {
+        "name": "scene-outdoor-pumping.webp",
+        "alt": "屋外送水設備の、水没せずアクセス可能なモーター・ポンプユニット",
+        "caption": "屋外ポンプ設備の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "id": "sanitary-process-pumps",
+      "group": "pumps-water",
+      "title": "食品・飲料のプロセスポンプ",
+      "description": "衛生配管ラインでモーター側または軸受ハウジングの振動を監視し、設置部品は製品接触経路の外側に配置します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された固定駆動部または軸受ハウジング。",
+      "installation": "衛生面の取り付け要件、水洗いへの曝露、ケーブルの洗浄方法を確認し、プローブとコネクターを含む全体構成を評価します。",
+      "projectBrief": "洗浄方法、工程温度、取り付け承認、ポンプの運転状態。",
+      "image": {
+        "name": "sanitary-pump.webp",
+        "alt": "ステンレス製衛生用遠心ポンプと外部モーター駆動装置",
+        "caption": "衛生用プロセスポンプの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S9"
+      ]
+    },
+    {
+      "id": "chemical-transfer-pumps",
+      "group": "pumps-water",
+      "title": "設置が承認された区域の薬液移送ポンプ",
+      "description": "適合するポンプ駆動部の振動変化を比較し、圧力、流量、保全記録と合わせて確認します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "液体の流路外にある、アクセス可能な固定軸受ハウジング。",
+      "installation": "プローブ、端末、ケーブルを選定する前に、薬品への曝露、温度、区域の防爆区分を確認します。",
+      "projectBrief": "化学物質の使用環境、危険区域の区分、回転速度、設置が承認された測定点。",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "固定された機械の測定部が見える陸上設置型遠心ポンプとモーター駆動装置",
+        "caption": "陸上設置型遠心ポンプの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "id": "ahu-fans",
+      "group": "fans-air-systems",
+      "title": "空調機のファン駆動装置",
+      "description": "換気ファンの駆動部と軸受配置における振動を追跡し、人が利用する建物の設備点検に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "承認された保守作業区域内にある、固定されたモーターまたはファンの軸受ハウジング。",
+      "installation": "プローブを羽根車とベルト経路から離し、駆動部の測定を筐体パネルの振動と区別します。",
+      "projectBrief": "直結駆動かベルト駆動か、ファン回転速度、保守時のアクセス、ケーブル経路。",
+      "image": {
+        "name": "ahu-fan.webp",
+        "alt": "固定されたモーターとファンの軸受ハウジングにアクセスできる空調用ファンユニット",
+        "caption": "空調用ファン設備 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "id": "industrial-exhaust",
+      "group": "fans-air-systems",
+      "title": "産業用排気ファン",
+      "description": "一定の排気運転条件で選定したファン軸受の測定点の傾向を記録し、保全チームが点検すべき変化を見つける際に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "回転しないファン軸受台またはモーター軸受ハウジング。",
+      "installation": "汚染とアクセス条件を確認し、気流経路の外側の、取り付けが承認された剛性のある面に設置します。",
+      "projectBrief": "ファン構造、回転速度（RPM）、通常運転条件、粉じん・薬品への曝露、軸受配置。",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "固定軸受ハウジングの近くに外部駆動モーターを備えた産業用遠心ファン",
+        "caption": "遠心ファン駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "id": "dust-extraction-fan",
+      "group": "fans-air-systems",
+      "title": "集じんファンのモーター",
+      "description": "機械保全業務の一環として、集じんシステムの固定されたモーターまたはファンの軸受を監視します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "モーターまたはファン駆動部の外部軸受ハウジング。",
+      "installation": "該当する場合は可燃性粉じんの区域区分を確認し、ケーブルをベルト、高温面、摩耗を生じる面から離します。",
+      "projectBrief": "粉じんの種類、区域区分、ファン駆動部の配置、想定する振動範囲。",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "固定軸受ハウジングの近くに外部駆動モーターを備えた産業用遠心ファン",
+        "caption": "遠心ファン駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14",
+        "S15"
+      ]
+    },
+    {
+      "id": "combustion-air-fan",
+      "group": "fans-air-systems",
+      "title": "燃焼用空気ファンの駆動装置",
+      "description": "補助ファンの駆動部で局所振動を追跡し、記録された運転需要に合わせて測定値を比較します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "アクセス可能で回転しないモーターまたはファンの軸受ハウジング。",
+      "installation": "実際の表面温度とケーブルの使用環境を確認し、端末を過度な輻射熱から離して設置します。",
+      "projectBrief": "ファンの回転速度・負荷、表面温度、熱への曝露、取り付け時のアクセス。",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "固定軸受ハウジングの近くに外部駆動モーターを備えた産業用遠心ファン",
+        "caption": "遠心ファン駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S14"
+      ]
+    },
+    {
+      "id": "drying-process-fan",
+      "group": "fans-air-systems",
+      "title": "産業用乾燥システムのファン",
+      "description": "ファン駆動部の状態傾向を把握し、保全チームが乾燥ラインの生産計画に合わせて点検を計画する際に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "加熱された工程室の外側にある、固定駆動部の軸受付近。",
+      "installation": "熱、湿気、工程由来の汚染を確認し、薄板ダクトではなく剛性のある測定点を選びます。",
+      "projectBrief": "乾燥装置の配置、ファンの運転条件、取り付け位置の温度、ケーブル経路。",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "固定軸受ハウジングの近くに外部駆動モーターを備えた産業用遠心ファン",
+        "caption": "遠心ファン駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13",
+        "S3"
+      ]
+    },
+    {
+      "id": "aeration-blower-drive",
+      "group": "fans-air-systems",
+      "title": "水処理用曝気ブロワの駆動装置",
+      "description": "曝気ブロワのモーターと駆動軸受で再現性のある振動傾向を記録し、工程の需要も記録します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "アクセス可能な、固定されたモーターまたはブロワの軸受ハウジング。",
+      "installation": "駆動部の局所測定値を配管の脈動と区別し、回転速度と曝気運転条件を踏まえて比較します。",
+      "projectBrief": "ブロワ形式、回転速度、必要圧力、湿気、駆動部の配置。",
+      "image": {
+        "name": "aeration-blower.webp",
+        "alt": "固定軸受ハウジングを備えた水処理用曝気ブロワと電動モーター",
+        "caption": "曝気ブロワ設備 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8",
+        "S7"
+      ]
+    },
+    {
+      "id": "screw-air-compressor",
+      "group": "compressors-vacuum",
+      "title": "ロータリースクリューコンプレッサー",
+      "description": "コンプレッサーの軸受近傍で振動を追跡し、安定した運転状態と負荷状態で変化を比較します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "ラジアル軸受に近い、設置が承認されたコンプレッサーケーシングの測定点。",
+      "installation": "必要な周波数帯域と温度を確認します。モーターの測定点が圧縮機本体全体の状態を表すとは限りません。",
+      "projectBrief": "圧縮機本体の配置、速度・負荷範囲、取り付け位置の温度、必要な測定帯域。",
+      "image": {
+        "name": "air-compressors.webp",
+        "alt": "ユーティリティ室に設置された産業用パッケージコンプレッサー",
+        "caption": "圧縮空気設備の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S10"
+      ]
+    },
+    {
+      "id": "reciprocating-compressor",
+      "group": "compressors-vacuum",
+      "title": "往復動コンプレッサーの駆動装置",
+      "description": "駆動部または軸受付近の局所振動の傾向を把握し、コンプレッサーの通常の周期的運転条件を記録します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された固定駆動部の軸受ハウジングまたはクランクケースの測定点。",
+      "installation": "基準値と測定位置を定める前に、通常工程で生じる衝撃と測定範囲の余裕を確認します。",
+      "projectBrief": "コンプレッサー形式、回転速度、負荷段階、想定振幅、安全なアクセス。",
+      "image": {
+        "name": "reciprocating-compressor.webp",
+        "alt": "回転しない駆動部と軸受ハウジングを備えた産業用往復動コンプレッサー",
+        "caption": "コンプレッサー設備の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "refrigeration-compressor",
+      "group": "compressors-vacuum",
+      "title": "産業用冷凍コンプレッサー",
+      "description": "適合するコンプレッサー駆動部の振動傾向を追跡し、冷凍設備の計画点検に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "アクセス可能で設置が承認された固定ケーシングまたは外部軸受付近。",
+      "installation": "コンプレッサーの構造、表面温度、冷媒使用区域の規則、承認された機械的取り付け面を確認します。",
+      "projectBrief": "コンプレッサー構成、回転速度、負荷段階、温度、設置承認。",
+      "image": {
+        "name": "refrigeration-compressor.webp",
+        "alt": "回転しない駆動部とケーシングを備えた産業用冷凍コンプレッサーユニット",
+        "caption": "産業用冷凍コンプレッサー · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S7",
+        "S10"
+      ]
+    },
+    {
+      "id": "rotary-vane-vacuum",
+      "group": "compressors-vacuum",
+      "title": "ロータリーベーン真空ポンプ",
+      "description": "同等の真空工程状態で駆動部とハウジングの局所振動を比較し、変化を設備点検に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "回転機構の軸受への振動伝達経路に近い、設置が承認された固定ハウジング。",
+      "installation": "ポンプの負荷状態を記録し、油、熱、保守作業で動く部品からケーブルを保護します。",
+      "projectBrief": "真空ポンプ形式、運転速度、工程サイクル、温度。",
+      "image": {
+        "name": "vacuum-pump.webp",
+        "alt": "清潔な設備室に設置された産業用真空ポンプと固定された電動モーター駆動装置",
+        "caption": "真空ポンプ駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S7",
+        "S12"
+      ]
+    },
+    {
+      "id": "dry-screw-vacuum",
+      "group": "compressors-vacuum",
+      "title": "ドライスクリュー真空システム",
+      "description": "ドライスクリュー真空システムで選定した回転しない測定点の傾向を記録し、比較可能な生産サイクルで保全確認を行います。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "監視対象の軸受付近にある、設置が承認されたハウジングの測定点。",
+      "installation": "工程由来の汚染と必要な周波数帯域を確認し、無線端末を保守に適した場所に設置します。",
+      "projectBrief": "ポンプの配置、速度・負荷条件、薬品への曝露、希望する傾向記録間隔。",
+      "image": {
+        "name": "vacuum-pump.webp",
+        "alt": "清潔な設備室に設置された産業用真空ポンプと固定された電動モーター駆動装置",
+        "caption": "真空ポンプ駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "id": "process-gas-compressor",
+      "group": "compressors-vacuum",
+      "title": "設置が承認された区域のプロセスガスコンプレッサー",
+      "description": "適合性が確認された設置方法で、選定したプロセスコンプレッサーの駆動部または軸受位置における機械振動を監視します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された、固定されたコンプレッサーまたはモーターの軸受ハウジングの測定点。",
+      "installation": "設置前に、区域の認証要件と温度要件に合わせて構成全体を選定します。",
+      "projectBrief": "ガスの使用環境、区域区分、機械の配置、運転状態。",
+      "image": {
+        "name": "reciprocating-compressor.webp",
+        "alt": "回転しない駆動部と軸受ハウジングを備えた産業用往復動コンプレッサー",
+        "caption": "コンプレッサー設備の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "id": "belt-conveyor-drive",
+      "group": "gearboxes-handling",
+      "title": "ベルトコンベヤの駆動ギヤボックス",
+      "description": "コンベヤ駆動部のギヤボックスとモーターの局所振動を追跡し、同じ搬送運転条件で経時比較します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "入力軸または出力軸の軸受に近い固定ギヤボックスハウジング。",
+      "installation": "監視する軸の振動伝達経路を選定し、ケーブルをプーリー、ベルト、保守用開口部から離します。",
+      "projectBrief": "駆動部の配置、ギヤ段数、速度範囲、搬送物の負荷パターン。",
+      "image": {
+        "name": "gearbox-conveyor.webp",
+        "alt": "固定されたギヤボックスと電動モーターを備えた産業用コンベヤ",
+        "caption": "コンベヤ用ギヤボックスの設置環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S15"
+      ]
+    },
+    {
+      "id": "screw-conveyor-drive",
+      "group": "gearboxes-handling",
+      "title": "スクリューコンベヤのギヤモーター",
+      "description": "スクリューフィーダーの外部駆動部の振動を監視し、材料搬送経路にセンサーを配置せずに点検へ役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "アクセス可能な、固定された減速機またはモーターの軸受ハウジング。",
+      "installation": "供給量と材料負荷を記録し、該当する場合は粉じんの区域区分とケーブルの摩耗を確認します。",
+      "projectBrief": "材料の種類、駆動速度、稼働サイクル、設置が承認された外部取り付け位置。",
+      "image": {
+        "name": "screw-conveyor.webp",
+        "alt": "固定された外付けギヤモーターを備えた産業用スクリューコンベヤ",
+        "caption": "スクリューコンベヤの減速機付き駆動部 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S14"
+      ]
+    },
+    {
+      "id": "bucket-elevator-drive",
+      "group": "gearboxes-handling",
+      "title": "バケットエレベーターの駆動システム",
+      "description": "バケットエレベーターの駆動ギヤボックスまたはモーター軸受付近で継続的に傾向を記録し、アクセス可能な機械の点検に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "保守作業が承認された位置にある固定駆動部ハウジング。",
+      "installation": "駆動部の監視を塔体の動きと区別し、設置部品をバケットとベルトの経路外に配置します。",
+      "projectBrief": "ギヤモーターの配置、作業足場、速度・負荷条件、環境への曝露。",
+      "image": {
+        "name": "roller-drive.webp",
+        "alt": "回転しない外部モーターとギヤボックス駆動装置を備えたバケットエレベーター",
+        "caption": "バケットエレベーター駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S14"
+      ]
+    },
+    {
+      "id": "crossbelt-sorter-drive",
+      "group": "gearboxes-handling",
+      "title": "クロスベルトソーターの駆動装置",
+      "description": "選定した固定駆動部の軸受を監視し、再現性のあるソーター運転サイクル内で振動を比較します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された固定駆動モーターまたはギヤボックスのハウジング。",
+      "installation": "回転せず保守作業が可能な測定点を使用します。運転段階を記録し、ケーブルを仕分け機構の外側に固定します。",
+      "projectBrief": "ソーターの配置、駆動サイクル、速度条件、利用可能な固定取り付け位置。",
+      "image": {
+        "name": "crossbelt-sorter.webp",
+        "alt": "回転しない外部駆動部と支持フレームを備えたクロスベルト仕分けライン",
+        "caption": "クロスベルト仕分け駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "asrs-hoist-drive",
+      "group": "gearboxes-handling",
+      "title": "自動倉庫の搬送・昇降駆動装置",
+      "description": "選定した昇降または走行駆動部の機械振動を追跡し、再現性のある昇降・走行サイクルを記録します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された固定駆動ギヤボックスまたはモーターの軸受付近。",
+      "installation": "可動ユニット上のケーブル管理を確認し、同じ荷重と動作段階で駆動部の測定値を解釈します。",
+      "projectBrief": "機械の走行範囲、駆動部の位置、サイクルの各段階、ケーブル管理システム、積載荷重。",
+      "image": {
+        "name": "asrs-hoist.webp",
+        "alt": "固定された昇降モーターとギヤボックスを備えた自動倉庫のスタッカークレーン",
+        "caption": "自動倉庫の昇降駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "id": "extruder-gearbox",
+      "group": "gearboxes-handling",
+      "title": "押出機の駆動ギヤボックス",
+      "description": "定義した工程負荷でギヤボックスの振動を比較し、押出機の回転駆動部の点検に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "特定した軸受に近い固定ギヤボックスハウジング。",
+      "installation": "複数のギヤ段、回転速度、温度を確認します。一つの測定値をギヤボックス全体の状態とみなさず、測定点を合意します。",
+      "projectBrief": "ギヤボックスの図面、工程負荷、回転速度、取り付け位置の温度、選定した軸受への振動伝達経路。",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "剛性のある機械ベース上に設置された産業用減速機と電動モーター",
+        "caption": "産業用ギヤボックスの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "id": "cnc-spindle",
+      "group": "machine-tools-metals",
+      "title": "CNCマシニングセンターの主軸",
+      "description": "再現性のある加工または運転試験条件で、選定した主軸ハウジングの振動を追跡し、工具と機械の点検に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "軸受付近にある、設置が承認された回転しない主軸ハウジング。",
+      "installation": "プローブを回転工具に取り付けないでください。加工振動、切削液、切りくず、必要な測定帯域を確認します。",
+      "projectBrief": "主軸回転速度、加工・運転試験の各段階、想定振幅、許可された取り付け位置。",
+      "image": {
+        "name": "cnc-spindle.webp",
+        "alt": "固定された主軸ハウジングと保護された加工領域を備えた産業用CNC工作機械の主軸",
+        "caption": "工作機械主軸の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "lathe-headstock",
+      "group": "machine-tools-metals",
+      "title": "産業用旋盤の主軸台",
+      "description": "対応する回転速度と加工条件で、再現性のある固定測定点における主軸台の振動を比較します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "監視対象の主軸軸受に近い、回転しない主軸台ハウジング。",
+      "installation": "チャックと加工材から離して設置します。検出方向にラベルを付け、無負荷運転か切削中かを記録します。",
+      "projectBrief": "主軸の配置、回転速度範囲、加工内容、取り付け時のアクセス。",
+      "image": {
+        "name": "lathe-headstock.webp",
+        "alt": "回転しない主軸台ハウジングと保護された加工領域を備えた産業用旋盤",
+        "caption": "旋盤主軸台の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "grinding-spindle",
+      "group": "machine-tools-metals",
+      "title": "研削盤の主軸ハウジング",
+      "description": "定義した研削条件で主軸の局所振動を追跡し、履歴を回転部品の点検計画に活用します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された固定主軸軸受ハウジングの測定点。",
+      "installation": "測定構成を選ぶ前に、研磨粉じん、切削液、通常工程で生じる加振、振幅範囲を確認します。",
+      "projectBrief": "研削主軸の回転速度、工程サイクル、使用環境、必要な測定指標。",
+      "image": {
+        "name": "grinding-spindle.webp",
+        "alt": "回転しない主軸ハウジングと保護ガードを備えた産業用研削盤",
+        "caption": "研削主軸の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "id": "industrial-saw-spindle",
+      "group": "machine-tools-metals",
+      "title": "産業用鋸切断機の主軸駆動装置",
+      "description": "比較可能な切断作業と保全時の運転試験において、固定された主軸または駆動部ハウジングで振動を記録します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "刃の動作経路外にある、設置が承認された回転しない軸受ハウジング。",
+      "installation": "切りくずと切断動作からケーブルを保護し、同じ刃、回転速度、工程段階で比較します。",
+      "projectBrief": "切断機構成、速度、切断条件、切りくずへの曝露、設置が承認された取り付け位置。",
+      "image": {
+        "name": "industrial-saw.webp",
+        "alt": "固定駆動部ハウジングと保護ガードを備えた産業用金属鋸切断機",
+        "caption": "産業用鋸切断機駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "rolling-line-drive",
+      "group": "machine-tools-metals",
+      "title": "金属圧延ラインの駆動モーター",
+      "description": "選定した圧延ラインのモーターまたは減速機の軸受への振動伝達経路を監視し、記録された生産負荷と合わせて傾向を確認します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "ロールの動作経路外にある、固定されたモーターまたは減速機の軸受ハウジング。",
+      "installation": "熱と散水を確認し、ライン全体や基礎の動きではなく、駆動部の局所測定点を選定します。",
+      "projectBrief": "駆動部の配置、速度・負荷範囲、温度、散水への曝露、測定目的。",
+      "image": {
+        "name": "metal-rolling.webp",
+        "alt": "固定軸受ハウジングとモーター駆動装置を備えた金属加工ロール設備",
+        "caption": "金属加工駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "id": "press-drive-bearings",
+      "group": "machine-tools-metals",
+      "title": "プレスの駆動部とフライホイール軸受",
+      "description": "再現性のある生産段階で、取り付けが承認された回転しない駆動軸受の測定点を追跡し、日常の機械点検に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "可動機構の外側にある、固定された駆動部またはフライホイールの軸受ハウジング。",
+      "installation": "通常のプレス加工で生じる衝撃と測定範囲の余裕を評価します。設置部品をガード内の可動範囲外に配置し、同じサイクル段階で比較します。",
+      "projectBrief": "プレス形式、サイクルの各段階、想定する衝撃、選定した軸受測定点、許可されたアクセス。",
+      "image": {
+        "name": "press-drive.webp",
+        "alt": "固定駆動軸受支持部とガード付きフライホイールを備えた産業用プレス",
+        "caption": "産業用プレス駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "industrial-mixer-drive",
+      "group": "process-food-pharma",
+      "title": "産業用ミキサーの駆動ユニット",
+      "description": "同じ混合レシピとバッチ負荷で、モーターと減速機の局所振動を監視します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された外部固定駆動部の軸受ハウジング。",
+      "installation": "槽と製品接触経路の外側に取り付け、バッチ工程の段階、撹拌速度、充填量を記録します。",
+      "projectBrief": "ミキサー構成、レシピ、負荷段階、洗浄性、許可された外部取り付け位置。",
+      "image": {
+        "name": "mixer-drive.webp",
+        "alt": "槽外に固定された電動モーターとギヤボックスを備えた産業用タンクミキサー",
+        "caption": "ミキサー外部駆動部の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S12"
+      ]
+    },
+    {
+      "id": "decanter-centrifuge",
+      "group": "process-food-pharma",
+      "title": "デカンター遠心分離機の軸受ハウジング",
+      "description": "選定した固定軸受測定点の傾向を記録し、ボウル回転速度、原料供給、運転状態を踏まえて変化を解釈します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された固定主軸受ハウジング。",
+      "installation": "通常工程で生じる加振と複数の振動源を確認し、機械担当エンジニアと測定点およびデータ要件を選定します。",
+      "projectBrief": "遠心分離機の配置、回転速度、供給状態、振幅範囲、保守時のアクセス。",
+      "image": {
+        "name": "decanter-centrifuge.webp",
+        "alt": "固定された外部軸受ハウジングを備えた産業用デカンター遠心分離機",
+        "caption": "遠心分離機設備の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S18"
+      ]
+    },
+    {
+      "id": "centrifugal-separator",
+      "group": "process-food-pharma",
+      "title": "遠心分離機の駆動装置",
+      "description": "設置が承認された回転しない駆動部または軸受位置を監視し、安定した生産条件で保全確認を行います。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "固定軸受ハウジングまたは取り付けが承認された回転しない駆動部ケーシング。",
+      "installation": "回転ボウルから離して設置し、必要な測定帯域、運転状態、衛生面の設置規則を確認します。",
+      "projectBrief": "遠心分離機の構造、回転速度、工程段階、洗浄要件、軸受配置。",
+      "image": {
+        "name": "centrifugal-separator.webp",
+        "alt": "回転しない外部機械ハウジングを備えた立形遠心分離機",
+        "caption": "遠心分離機の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S18",
+        "S9"
+      ]
+    },
+    {
+      "id": "filling-capping-drives",
+      "group": "process-food-pharma",
+      "title": "充填・キャッピングラインの駆動装置",
+      "description": "生産ラインのモーターまたはギヤボックスの局所振動を追跡し、再現性のある充填・キャッピング運転条件で比較します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された固定モーターまたは減速機のハウジング。",
+      "installation": "プローブとケーブルを包装・製品接触領域の外側に配置し、水洗いとサイクルごとの負荷を確認します。",
+      "projectBrief": "ライン速度、駆動部の位置、運転サイクル、洗浄方法、監視点。",
+      "image": {
+        "name": "filling-capping.webp",
+        "alt": "外部モーター駆動部にアクセスできる自動充填・キャッピングライン",
+        "caption": "充填・キャッピングラインの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S9",
+        "S12"
+      ]
+    },
+    {
+      "id": "pharma-vacuum-dryer",
+      "group": "process-food-pharma",
+      "title": "医薬品製造用真空乾燥機の駆動装置",
+      "description": "記録された乾燥工程の各段階で、設置が承認された外部駆動部の測定点を監視し、設備保全記録に役立てます。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "外部にある固定モーターまたは減速機の軸受ハウジング。",
+      "installation": "クリーンルームの規則、溶剤、温度、外部取り付けの承認を確認し、現場のエンジニアリング手順に沿ってデータの使用方法を合意します。",
+      "projectBrief": "乾燥機の配置、工程段階、区域区分、洗浄性の要件。",
+      "image": {
+        "name": "vacuum-dryer-drive.webp",
+        "alt": "外部に固定されたモーターと減速機を備えた医薬品製造用真空乾燥機",
+        "caption": "真空乾燥機の外部駆動部 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S12"
+      ]
+    },
+    {
+      "id": "paper-calender-bearings",
+      "group": "process-food-pharma",
+      "title": "製紙用カレンダーとロールの軸受",
+      "description": "選定した固定ロール軸受ハウジングで局所振動を記録し、同等の製紙機の生産状態で比較します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "保守作業側にある、設置が承認された固定ロール軸受ハウジング。",
+      "installation": "実際の表面温度と湿気を確認し、選定したロール回転速度に対応する周波数帯域を確認します。",
+      "projectBrief": "ロール回転速度、軸受配置、表面温度、水への曝露、アクセス。",
+      "image": {
+        "name": "paper-calender.webp",
+        "alt": "保守作業側の固定軸受ハウジングに支持された製紙用カレンダーロール",
+        "caption": "製紙用カレンダー軸受の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13"
+      ]
+    },
+    {
+      "id": "crusher-bearing-housing",
+      "group": "heavy-processing",
+      "title": "破砕機の軸受ハウジング",
+      "description": "選定した破砕機の軸受または駆動部の測定点を追跡し、記録された原料供給条件と運転条件に照らして傾向を比較します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された固定軸受ハウジングまたは駆動モーターハウジング。",
+      "installation": "試運転前に、通常の破砕衝撃、測定範囲の余裕、摩耗性粉じん、ケーブルの機械的保護を確認します。",
+      "projectBrief": "破砕機形式、負荷・原料供給状態、想定振幅、固定軸受測定点へのアクセス。",
+      "image": {
+        "name": "crusher-bearing.webp",
+        "alt": "回転しない軸受ハウジングと駆動装置を備えた産業用破砕機",
+        "caption": "破砕機軸受ハウジングの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S14"
+      ]
+    },
+    {
+      "id": "pulverizer-mill-drive",
+      "group": "heavy-processing",
+      "title": "粉砕機とミルの駆動装置",
+      "description": "粉砕ラインのモーターまたは減速機の局所振動を監視し、比較可能な原料供給と負荷の状態に関連付けて測定値を確認します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "アクセス可能な固定駆動部の軸受ハウジング。",
+      "installation": "駆動系統を特定し、温度と粉じんを確認します。ケーブルを回転カップリングや原料搬送部から離します。",
+      "projectBrief": "ミル形式、駆動速度、原料供給条件、温度、区域区分。",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "剛性のある機械ベース上に設置された産業用減速機と電動モーター",
+        "caption": "産業用ギヤボックスの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "id": "industrial-shredder-drive",
+      "group": "heavy-processing",
+      "title": "産業用シュレッダーの駆動装置",
+      "description": "選定したシュレッダー駆動軸受の振動履歴を継続して記録し、処理材料と通常の運転サイクルも記録します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された固定駆動モーターまたは減速機のハウジング。",
+      "installation": "工程で生じる衝撃と測定範囲の余裕を確認し、飛散物と保守作業で動く部品からプローブケーブルを保護します。",
+      "projectBrief": "シュレッダーの構造、材料、負荷サイクル、想定する衝撃、軸受へのアクセス。",
+      "image": {
+        "name": "shredder-drive.webp",
+        "alt": "固定された外部ギヤボックスと電動モーター駆動装置を備えた産業用シュレッダー",
+        "caption": "シュレッダー設備の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "screen-exciter-bearing",
+      "group": "heavy-processing",
+      "title": "振動ふるいの加振機軸受",
+      "description": "定義した回転しないハウジングの測定点で、回転式加振機の軸受の局所振動を機械の傾向として監視します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された加振機または駆動部の軸受ハウジング。",
+      "installation": "選定した軸受監視の目的に合わせて測定帯域と振幅を確認します。この設置はふるい本体の動きではなく、機械の局所振動を対象とします。",
+      "projectBrief": "加振機の配置、通常の加振、軸受測定点、測定範囲、必要な測定帯域。",
+      "image": {
+        "name": "screen-exciter.webp",
+        "alt": "局所的な加振機軸受ハウジングを備えた産業用振動ふるい",
+        "caption": "ふるい加振機軸受の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S16"
+      ]
+    },
+    {
+      "id": "cement-mill-gearbox",
+      "group": "heavy-processing",
+      "title": "セメントミルのモーターとギヤボックスの軸受",
+      "description": "選定したミル駆動部の軸受への振動伝達経路を追跡し、一貫した生産負荷記録を用いて有効な傾向比較を行います。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された固定モーターまたはギヤボックスの軸受ハウジングの測定点。",
+      "installation": "複数のギヤ段と通常工程で生じる加振に加え、粉じん、熱、許可された保全時のアクセスを確認します。",
+      "projectBrief": "駆動部の図面、回転速度、負荷状態、熱・粉じんへの曝露、選定した軸受への振動伝達経路。",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "剛性のある機械ベース上に設置された産業用減速機と電動モーター",
+        "caption": "産業用ギヤボックスの使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14",
+        "S5"
+      ]
+    },
+    {
+      "id": "wood-chipper-bearings",
+      "group": "heavy-processing",
+      "title": "木材チッパーの駆動軸受",
+      "description": "固定駆動部またはローター軸受ハウジングを監視し、記録された材料加工の運転条件で振動履歴を比較します。",
+      "measurement": "定義した固定測定点での機械の局所振動",
+      "monitoringPoint": "設置が承認された回転しない駆動部またはローターの軸受ハウジング。",
+      "installation": "通常の切削衝撃と測定範囲を確認します。ケーブルを木片から保護し、プローブをローターガードの外側に配置します。",
+      "projectBrief": "チッパーの構造、ローター回転速度、原料供給条件、想定する衝撃、保守位置。",
+      "image": {
+        "name": "shredder-drive.webp",
+        "alt": "固定された外部ギヤボックスと電動モーター駆動装置を備えた産業用シュレッダー",
+        "caption": "シュレッダー設備の使用環境 · 用途イメージ",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13",
+        "S4"
+      ]
+    }
+  ],
+  "series": {
+    "description": "H200、H300、H500は、公表されているH Seriesの製品ファミリー識別名です。プロジェクトの構成提案では、プローブ、端末、無線通信仕様、運用設定を含む全体構成を指定します。",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "steps": [
+      {
+        "title": "機械の測定点を定義",
+        "text": "対象部品、剛性のある取り付け面、測定方向、回転速度範囲、通常の負荷状態をお知らせください。"
+      },
+      {
+        "title": "測定要件を指定",
+        "text": "単軸または3軸測定を選び、10～5,000 Hzの測定範囲内で対象機械の確認したい周波数を指定します。振動速度RMSの測定範囲は0～50 mm/s、表示分解能は0.1 mm/sです。データ取得の稼働条件、送信、校正の要件を確認します。"
+      },
+      {
+        "title": "導入全体を計画",
+        "text": "プローブとケーブルの使用条件、端末の位置、無線通信状況、データ送信、アラート、プラットフォームへの接続を確認します。"
+      }
+    ]
+  },
+  "specifications": {
+    "description": "公表されている製品ファミリーの値は、検討を始める際の参考になります。機械の測定点に適用する仕様は、納入プローブ、測定の定義、構成全体により決まります。提案と合わせて、使用可能な測定帯域、データ取得設定、取り付け図、校正資料をご依頼ください。",
+    "rows": [
+      {
+        "label": "公表されている製品ファミリーの型番",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "振動速度RMSの測定範囲",
+        "value": "0～50 mm/s"
+      },
+      {
+        "label": "測定周波数範囲",
+        "value": "10～5,000 Hz"
+      },
+      {
+        "label": "測定軸数",
+        "value": "選定構成に応じて単軸または3軸"
+      },
+      {
+        "label": "振動速度RMSの表示分解能",
+        "value": "0.1 mm/s"
+      },
+      {
+        "label": "公表されている測定精度の条件",
+        "value": "80 Hzでの校正時に±1%。納入仕様の測定条件全体をご確認ください"
+      },
+      {
+        "label": "センサーの構成",
+        "value": "剛性のあるモーター軸受ハウジングまたは機械の測定点に設置するケーブル付き外付けプローブ"
+      },
+      {
+        "label": "無線通信仕様",
+        "value": "納入機種および地域仕様に応じて4G / NB-IoT / LoRa"
+      },
+      {
+        "label": "データ連携",
+        "value": "MQTTの記載あり。納入仕様の接続経路全体をご確認ください"
+      },
+      {
+        "label": "端末筐体の保護等級",
+        "value": "IP68。プローブ、ケーブル、コネクターの適合性は別途指定してください"
+      },
+      {
+        "label": "公表されている動作温度",
+        "value": "−20°C～+70°C。設置時には各構成部品の使用限界をご確認ください"
+      },
+      {
+        "label": "公表されている保管温度",
+        "value": "−20°C～+80°C"
+      },
+      {
+        "label": "端末設定",
+        "value": "NFCによる有効化 / ローカル設定、OTAアップデート。納入構成によります"
+      },
+      {
+        "label": "電池寿命の参考値",
+        "value": "指定条件下で1時間間隔のデータ送信時に10年超。構成と稼働条件によります"
+      }
+    ]
+  },
+  "faqHeading": {
+    "intro": "機械の測定仕様、ケーブル付きプローブの設置計画、測定値を保全業務につなげる方法についてお答えします。"
+  },
+  "faqs": [
+    {
+      "id": "faq-what-measures",
+      "question": "1. Hitelecomの機械用振動センサーは何を測定しますか？",
+      "paragraphs": [
+        "Hitelecom H Seriesは、ケーブル付き外付けプローブを使用して機械の高周波振動を監視します。振動速度は二乗平均平方根値（RMS・実効値）として0～50 mm/sの範囲で報告され、表示分解能は0.1 mm/sです。指定の測定周波数範囲は10～5,000 Hzです。機械と取り付け位置に合わせて単軸または3軸測定を選び、その上で無線でのデータ送信設定を行います。"
+      ],
+      "sources": [
+        "U1",
+        "S1",
+        "S17"
+      ],
+      "evidence": "Product range, axes, velocity RMS display resolution and measurement frequency range confirmed directly by the user on 2026-10-11; public resources support mounting and metric terminology."
+    },
+    {
+      "id": "faq-where-motor",
+      "question": "2. 電動モーターの振動プローブはどこに取り付けますか？",
+      "paragraphs": [
+        "監視対象の軸受に近い、取り付けが承認された剛性のあるモーター軸受ハウジングまたはエンドブラケットに、プローブを直接取り付けます。納入品の取り付け方法に従い、測定面を整えます。測定点の識別名と、単軸の方向または3軸の向きを記録してください。ケーブルを固定し、無線端末はアクセスと通信状況を考慮して別の位置に設置します。"
+      ],
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "evidence": "Direct public manufacturer mounting and placement guidance."
+    },
+    {
+      "id": "faq-which-machines",
+      "question": "3. この監視方法はどのような産業機械に適していますか？",
+      "paragraphs": [
+        "一般的な検討対象には、電動モーター、ポンプ、ファン、コンプレッサー、ギヤボックス、コンベヤ、工作機械の主軸、ミキサー、遠心分離機があります。対象部品に近い、剛性があり回転しない測定点を選び、納入プローブの使用可能な周波数帯域、測定範囲、設置条件を機械に合わせます。この外付けプローブ製品ファミリーは、機械の高周波振動監視を目的としています。"
+      ],
+      "sources": [
+        "S3",
+        "S4",
+        "S7"
+      ],
+      "evidence": "Direct published machinery families; Hitelecom scope boundary comes from the user's instruction."
+    },
+    {
+      "id": "faq-probe-wireless",
+      "question": "4. 有線プローブは無線監視端末とどのように連携しますか？",
+      "paragraphs": [
+        "プローブケーブルが、機械の測定点と監視端末を接続します。遠隔地へのデータ通信は、設定された4G、NB-IoT、LoRa接続が担います。機械へのアクセス、ケーブル保護、無線通信状況を考慮し、プローブの位置、承認されたケーブル長、端末の位置を一緒に計画してください。"
+      ],
+      "sources": [
+        "S17"
+      ],
+      "evidence": "Cable-installation demand is publicly documented; actual architecture and available radio options are Hitelecom product facts supplied by Root."
+    },
+    {
+      "id": "faq-frequency-specification",
+      "question": "5. 振動の測定周波数範囲はどのくらいですか？",
+      "paragraphs": [
+        "指定の測定周波数範囲は10～5,000 Hzです。これはプローブ位置で測定する振動の周波数範囲であり、無線でのデータ送信頻度とは異なります。80 Hzでの校正条件は、別の校正基準です。機械の回転速度、対象部品、取り付け構成をお知らせいただくことで、用途に合わせたデータ取得・送信設定を検討できます。"
+      ],
+      "sources": [
+        "U1",
+        "S1",
+        "S2",
+        "S10"
+      ],
+      "evidence": "10–5,000 Hz confirmed directly by the user on 2026-10-11. Public technical guidance supports separating frequency response, mounting and acquisition settings."
+    },
+    {
+      "id": "faq-metric-definition",
+      "question": "6. 単軸または3軸の振動測定に対応していますか？",
+      "paragraphs": [
+        "はい。単軸構成と3軸構成をご用意しています。単軸構成は選定した検出方向の振動を測定します。3軸構成は同じ取り付け位置で3方向の振動を測定します。機械に合わせて構成と取り付け方向を指定してください。振動速度RMSの表示分解能は0.1 mm/sです。"
+      ],
+      "sources": [
+        "U1"
+      ],
+      "evidence": "Axes and RMS display resolution confirmed directly by the user on 2026-10-11. This replaces the previous broad metric-definition answer and does not claim peak or peak-to-peak outputs."
+    },
+    {
+      "id": "faq-variable-speed",
+      "question": "7. 可変速機械や周期運転機械では、測定値をどのように比較しますか？",
+      "paragraphs": [
+        "監視計画に機械の回転速度、負荷、運転段階を記録します。安定した回転速度や再現性のある生産サイクルの段階など、重要な運転状態ごとに比較可能な基準値を定めます。それらの条件と保全履歴に照らして変化を確認することで、傾向を的確な点検に役立てられます。"
+      ],
+      "sources": [
+        "S5",
+        "S6",
+        "S18"
+      ],
+      "evidence": "Operating-state importance is documented publicly; exact Hitelecom algorithms or automatic state synchronisation are not claimed."
+    },
+    {
+      "id": "faq-probe-installation",
+      "question": "8. 高周波測定を有効に行うために、何が重要ですか？",
+      "paragraphs": [
+        "清潔で平坦な剛性のある測定面に、承認された取り付け方法で設置してください。機械的な結合は取り付け状態での周波数応答に影響するため、対象帯域に合わせてセンサーの接合面と取り付けベースを確認します。ケーブルにはストレインリリーフと適切な余長を設けて固定し、可動部やモーター動力配線を避けて安全に配線します。"
+      ],
+      "sources": [
+        "S2",
+        "S17"
+      ],
+      "evidence": "Direct public mounting and cabling technical guidance."
+    },
+    {
+      "id": "faq-maintenance-workflow",
+      "question": "9. 振動傾向を保全業務にどのように活用できますか？",
+      "paragraphs": [
+        "通常運転時の基準値、確認する値、実用的な点検対応を定めます。識別ラベルを付けた測定点で変化が継続した場合、点検の優先順位付けや保全前後の測定値比較に役立ちます。詳細な故障の解釈は、対象機械、利用可能な測定データ、プロジェクトで採用する解析方法によって異なります。"
+      ],
+      "sources": [
+        "S6",
+        "S17"
+      ],
+      "evidence": "Public documentation distinguishes trending/anomaly review from detailed machinery diagnosis; no Hitelecom diagnosis guarantee is introduced."
+    },
+    {
+      "id": "faq-quotation-details",
+      "question": "10. 適切な構成をHitelecomが提案するために、どのような情報が必要ですか？",
+      "paragraphs": [
+        "機械形式、回転速度範囲、運転サイクル、対象部品、取り付け候補位置の写真、単軸または3軸測定のご希望をお知らせください。使用環境、ケーブル経路の要件、測定・送信間隔、使用国、ご希望のプラットフォームまたは通信方式もお伝えください。これらの情報をもとに、プローブ、端末、データ要件を設置条件に合わせて検討します。"
+      ],
+      "sources": [
+        "S1",
+        "S2",
+        "S17"
+      ],
+      "evidence": "Practical specification checklist derived from public selection and installation considerations. This is an editorial buying-support question, not a verified customer FAQ."
+    }
+  ],
+  "evidence": {
+    "reviewed": "2026-10-11",
+    "officialPage": "https://www.hitelecom.com/product/vibration-sensor",
+    "officialDatasheet": "https://www.hitelecom.com/downloads/vibration-sensor-datasheet.pdf",
+    "scopeConfirmedBy": "User instruction: external cabled high-frequency machinery product; future low-frequency product separate",
+    "sources": [
+      {
+        "id": "S1",
+        "organization": "PCB Piezotronics",
+        "title": "Motor vibration sensors",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/motor-vibration",
+        "ref": "turn180view1",
+        "supports": "Motor monitoring; drive-end/non-drive-end bearing locations; mechanical coupling and output/processing considerations."
+      },
+      {
+        "id": "S2",
+        "organization": "PCB Piezotronics",
+        "title": "Guidelines for mounting test accelerometers",
+        "url": "https://www.pcb.com/resources/technical-information/mounting",
+        "ref": "turn180view0",
+        "supports": "A smooth rigid interface and stud mounting can preserve high-frequency response; added bases or soft interfaces change mounted response. Installation must follow the actual sensor instructions."
+      },
+      {
+        "id": "S3",
+        "organization": "ifm",
+        "title": "VVB vibration sensor applications",
+        "url": "https://www.ifm.com/us/en/us/learn-more/vibration/vvb0/io-link-vibration-applications",
+        "ref": "turn180view6",
+        "supports": "Electric motors, centrifugal pumps, direct/indirect-drive fans and reducers; locations near the monitored component; examples of separate motor and driven-equipment points."
+      },
+      {
+        "id": "S4",
+        "organization": "ifm",
+        "title": "Applications of diagnostic electronics and acceleration sensors",
+        "url": "https://www.ifm.com/in/en/shared/technologies/from-vibration-to-real-time-maintenance/vse-vsa-applications",
+        "ref": "turn180view3",
+        "supports": "Machine tools, decanters, compressors, gearboxes, storage/retrieval systems, cross-belt sorters, conveyors, fillers, mixers, shredders and mills. The sophisticated diagnostic capabilities described belong to ifm's specified complete system."
+      },
+      {
+        "id": "S5",
+        "organization": "SKF Technical Support",
+        "title": "On-line surveillance monitoring of gearboxes",
+        "url": "https://skftechnicalsupport.zendesk.com/hc/en-us/articles/360032626714-On-line-Surveillance-Monitoring-of-Gearboxes",
+        "ref": "turn180view4",
+        "supports": "Local transmission paths matter; complex gearboxes have overlapping sources and operating-speed/load variation. Single-point overall readings are not identical to component diagnosis."
+      },
+      {
+        "id": "S6",
+        "organization": "SKF Technical Support",
+        "title": "SKF Axios technical FAQ",
+        "url": "https://skftechnicalsupport.zendesk.com/hc/en-us/articles/8104349791891-SKF-Axios-Technical-FAQ",
+        "ref": "turn180view5",
+        "supports": "Public questions on machinery suitability, placement, variable speeds and inspection after anomaly notification. These are SKF's published FAQ, not Hitelecom customer questions."
+      },
+      {
+        "id": "S7",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Condition monitoring",
+        "url": "https://wilcoxon.com/industries-and-applications/condition-monitoring-products/",
+        "ref": "turn180view2",
+        "supports": "Established monitored machinery families include motors, pumps, fans, gearboxes and compressors."
+      },
+      {
+        "id": "S8",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Water and wastewater pump monitoring",
+        "url": "https://wilcoxon.com/industries-and-applications/water-and-wastewater/",
+        "ref": "turn184view3",
+        "supports": "Water/wastewater motor and pump monitoring, baseline/trending, direct-drive and vertical pump arrangements."
+      },
+      {
+        "id": "S9",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Food and beverage",
+        "url": "https://wilcoxon.com/industries-and-applications/food-and-beverage/",
+        "ref": "turn183view1",
+        "supports": "Motors, pumps, fillers, cappers and conveyor equipment in food/beverage production; environmental suitability is a separate selection requirement."
+      },
+      {
+        "id": "S10",
+        "organization": "PCB Piezotronics",
+        "title": "Rotary screw compressors",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/rotary-screw-compressors",
+        "ref": "turn184view4",
+        "supports": "High-frequency compressor applications; casing locations close to radial bearings; bandwidth must match the engineering objective."
+      },
+      {
+        "id": "S11",
+        "organization": "PCB Piezotronics",
+        "title": "Machine tool spindles",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/machine-tool-spindles",
+        "ref": "turn185view2",
+        "supports": "Machine-tool vibration trends; cutting-process vibration, cutting fluids, metal chips and cable protection considerations."
+      },
+      {
+        "id": "S12",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Pharmaceutical",
+        "url": "https://wilcoxon.com/industries-and-applications/pharmaceutical/",
+        "ref": "turn184view1",
+        "supports": "Mixers, motors, pumps, vacuum dryers, conveyor/filling drives; environment and contaminants require review."
+      },
+      {
+        "id": "S13",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Pulp and paper",
+        "url": "https://wilcoxon.com/industries-and-applications/pulp-and-paper/",
+        "ref": "turn184view2",
+        "supports": "Paper rollers, calenders, chippers, compressors, motors, pumps and winders; wet and heated environments need matching hardware."
+      },
+      {
+        "id": "S14",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Cement",
+        "url": "https://wilcoxon.com/industries-and-applications/cement/",
+        "ref": "turn183view0",
+        "supports": "Crushing, grinding, material transport, mills, separators, motors, fans and compressors in cement production."
+      },
+      {
+        "id": "S15",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Mining",
+        "url": "https://wilcoxon.com/industries-and-applications/mining/",
+        "ref": "turn184view0",
+        "supports": "Mining motors, gearboxes, conveyors, fans, generators and pumps; hazardous-area approvals belong to the actual selected equipment."
+      },
+      {
+        "id": "S16",
+        "organization": "PCB Piezotronics",
+        "title": "Vibratory screens and feeders",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/vibratory-screens-and-feeders",
+        "ref": "turn184view6",
+        "supports": "Screen/feeder machinery is an established vibration application; the proposed Hitelecom scene is restricted to drive/exciter bearing-housing trends and requires bandwidth/amplitude review."
+      },
+      {
+        "id": "S17",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Vibration monitoring FAQs",
+        "url": "https://wilcoxon.com/resources/faqs/",
+        "ref": "turn184view5",
+        "supports": "Metric/output distinctions, mounting, cable routing, strain relief, environmental effects and cable-length review are public engineering questions. Wilcoxon's example limits and hardware are not Hitelecom specifications."
+      },
+      {
+        "id": "S18",
+        "organization": "ifm",
+        "title": "Decanter centrifuges",
+        "url": "https://www.ifm.com/in/en/shared/landingpages/monitoring-decanters",
+        "ref": "turn180view7",
+        "supports": "Centrifuge vibration depends on multiple components and operating states; speed/process context supports interpretation."
+      }
+    ],
+    "notice": "The sources establish general machinery-monitoring practice and public engineering questions. These drafts are application proposals, not verified Hitelecom customer installations, and no search-volume or customer-enquiry-log evidence has been obtained.",
+    "userConfirmedSpecifications": {
+      "source": "User messages in this conversation, 2026-10-11",
+      "velocityRmsRange": "0–50 mm/s",
+      "measurementAxes": "Single-axis or triaxial",
+      "velocityRmsDisplayResolution": "0.1 mm/s",
+      "measurementFrequencyRange": "10–5,000 Hz",
+      "installationDiagram": "Probe directly on the motor bearing end shield; terminal separately mounted"
+    }
+  }
+}

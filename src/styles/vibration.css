@@ -367,3 +367,7 @@
 :where(.ht-vibration) .application-visual{top:calc(var(--asset-header-visible,0px) + var(--asset-subnav-height,57px) + 16px)}
 html.ht-asset-nav-sync{scroll-padding-top:calc(var(--asset-header-height,0px) + var(--asset-subnav-height,57px) + 12px)}
 html.ht-asset-nav-sync{scroll-behavior:auto}
+
+/* V55 i18n: 长复合词（ru/de 等）允许断词，防止移动端横向溢出；EN 短词不触发，渲染不变 */
+:where(.ht-vibration) h1,:where(.ht-vibration) h2,:where(.ht-vibration) h3,:where(.ht-vibration) h4,
+:where(.ht-vibration) .feature-grid p{overflow-wrap:anywhere;hyphens:auto}

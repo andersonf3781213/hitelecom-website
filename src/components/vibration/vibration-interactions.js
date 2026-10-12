@@ -1,3 +1,6 @@
+// i18n bootstrap: localized strings arrive via data-i18n on .ht-vibration (V55).
+const I18N = (() => { try { return JSON.parse(document.querySelector('.ht-vibration').dataset.i18n || '{}'); } catch { return {}; } })();
+const T = (key) => I18N[key] || key;
 // All task photos and copy are real static HTML. This small enhancement moves
 // the selected photo into the left desktop slot; native details remain usable
 // without JavaScript, and narrow screens keep the photo with its task.
@@ -121,7 +124,7 @@ document.querySelectorAll('[data-project-scene]').forEach(link => {
 document.querySelectorAll('[data-model]').forEach(link => {
   link.addEventListener('click', () => {
     const field = document.querySelector('#requirements');
-    if (!field.value.includes(link.dataset.model)) field.value = `Model of interest: ${link.dataset.model}\n` + field.value;
+    if (!field.value.includes(link.dataset.model)) field.value = T('Model of interest: {model}').replace('{model}', link.dataset.model) + '\n' + field.value;
   });
 });
 const revealTarget = () => {
@@ -140,20 +143,20 @@ if (form) {
   const brief = document.querySelector('#enquiry-brief');
   const email = document.querySelector('#email-brief');
   const status = document.querySelector('#brief-status');
-  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent('H Series high-frequency vibration sensor — project enquiry')}&body=${encodeURIComponent(brief.value)}`; };
+  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent(T('H Series high-frequency vibration sensor — project enquiry'))}&body=${encodeURIComponent(brief.value)}`; };
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    brief.value = ['Hello Hitelecom,', '', 'I would like to discuss a high-frequency machinery vibration monitoring project.', '', ...['Application','Country','Quantity','Measurement','Measurement axes','Machine and speed','Connectivity','Requirements'].map(key=>`${key}: ${data.get(key) || 'Please advise'}`), '', 'Please advise on a suitable model, configuration, supporting datasheet and quotation.', '', 'Thank you.'].join('\n');
+    brief.value = [T('Hello Hitelecom,'), '', T('I would like to discuss a high-frequency machinery vibration monitoring project.'), '', ...['Application','Country','Quantity','Measurement','Measurement axes','Machine and speed','Connectivity','Requirements'].map(key=>`${T(key)}: ${data.get(key) || T('Please advise')}`), '', T('Please advise on a suitable model, configuration, supporting datasheet and quotation.'), '', T('Thank you.')].join('\n');
     updateEmail(); review.hidden = false;
-    status.textContent = 'Your brief is ready. Review it and open your email app to send.';
+    status.textContent = T('Your brief is ready. Review it and open your email app to send.');
     brief.focus({preventScroll:true}); review.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
   });
   brief.addEventListener('input', updateEmail);
   document.querySelector('#copy-brief').addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(brief.value); status.textContent = 'Project brief copied.'; }
-    catch { brief.focus(); brief.select(); status.textContent = 'Your brief is selected. Use your device’s copy command.'; }
+    try { await navigator.clipboard.writeText(brief.value); status.textContent = T('Project brief copied.'); }
+    catch { brief.focus(); brief.select(); status.textContent = T('Your brief is selected. Use your device’s copy command.'); }
   });
 }
 

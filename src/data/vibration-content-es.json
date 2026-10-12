@@ -1,0 +1,1626 @@
+{
+  "seo": {
+    "title": "Sensor de vibración de alta frecuencia | Hitelecom",
+    "description": "Sensores de vibración de alta frecuencia Hitelecom: velocidad RMS de 0–50 mm/s, 10–5000 Hz, medición uniaxial o triaxial y transmisión 4G, NB-IoT o LoRa."
+  },
+  "hero": {
+    "description": "El sensor de vibración H Series de Hitelecom combina una sonda externa con cable y un terminal inalámbrico para monitorizar maquinaria a alta frecuencia. Instale la sonda en un punto rígido de la carcasa del rodamiento del motor y envíe las lecturas configuradas a su equipo de mantenimiento. Elija medición uniaxial o triaxial, con un rango de velocidad de vibración RMS de 0–50 mm/s, una resolución de visualización de 0,1 mm/s y un rango de frecuencia de medición de 10–5000 Hz. Adapte la conectividad 4G, NB-IoT o LoRa y el perfil de transmisión a su instalación.",
+    "datasheet_url": "/downloads/vibration-sensor-datasheet.pdf"
+  },
+  "features": [
+    {
+      "title": "La sonda, en la máquina",
+      "text": "Coloque la sonda externa con cable en el punto mecánico seleccionado y ubique el terminal donde resulte accesible y disponga de cobertura de radio."
+    },
+    {
+      "title": "Valor eficaz (RMS) de la velocidad de vibración",
+      "text": "Mida la velocidad de vibración RMS entre 0–50 mm/s, con una resolución de visualización de 0,1 mm/s. Elija medición uniaxial o triaxial según la máquina y el objetivo de medición."
+    },
+    {
+      "title": "Rango de medición de 10–5000 Hz",
+      "text": "Monitorice la vibración de la maquinaria dentro de un rango de frecuencia de medición de 10–5000 Hz. Adapte el montaje de la sonda y el perfil de adquisición a las frecuencias relevantes para su equipo."
+    },
+    {
+      "title": "Transmisión remota inalámbrica",
+      "text": "Utilice la variante suministrada de 4G, NB-IoT o LoRa para conectar los puntos de medición distribuidos a la plataforma de monitorización acordada."
+    },
+    {
+      "title": "Gestión de alertas configurable",
+      "text": "Defina los umbrales del proyecto, los destinatarios de las notificaciones y la respuesta de inspección en función de la magnitud seleccionada y de las condiciones normales de funcionamiento."
+    },
+    {
+      "title": "Configuración práctica del dispositivo",
+      "text": "La familia incluye activación mediante NFC, configuración local y actualizaciones OTA. Confirme las funciones disponibles en el modelo suministrado."
+    }
+  ],
+  "measurement": {
+    "description": "Una tendencia útil de la máquina parte de un punto reproducible, un valor claramente definido y las condiciones de funcionamiento que lo contextualizan. Acuerde estos elementos antes de seleccionar la sonda y el perfil de transmisión.",
+    "cards": [
+      {
+        "title": "Valor eficaz (RMS) de la velocidad de vibración",
+        "text": "El valor eficaz (RMS) de la velocidad de vibración se expresa en mm/s. El rango de medición es de 0–50 mm/s, con una resolución de visualización de 0,1 mm/s. Compare las lecturas en el mismo punto de la máquina y bajo condiciones de funcionamiento comparables.",
+        "project_brief": "Uniaxial o triaxial · Punto de montaje · Velocidad de funcionamiento · Referencia normal"
+      },
+      {
+        "title": "Rango de frecuencia de medición",
+        "text": "El rango de frecuencia de medición especificado es de 10–5000 Hz. Define las frecuencias de vibración que mide la sonda; seleccione por separado el intervalo de transmisión inalámbrica para adaptarlo a su proceso de mantenimiento.",
+        "project_brief": "Frecuencias relevantes de la máquina · Montaje de la sonda · Perfil de adquisición · Intervalo de transmisión"
+      },
+      {
+        "title": "Contexto de funcionamiento",
+        "text": "La velocidad, la carga y la etapa de producción de la máquina contextualizan cada comparación. Registre estos datos en el plan de monitorización o en los registros disponibles de la instalación.",
+        "project_brief": "Rango de RPM · Estado de carga · Ciclo de producción · Referencia normal"
+      }
+    ],
+    "installation_text": "Instale la sonda externa directamente en un punto de medición autorizado y rígido de la carcasa del rodamiento del motor o de su tapa de extremo, cerca del rodamiento seleccionado. Elija la dirección de medición para una configuración uniaxial o defina la orientación de los tres ejes para una configuración triaxial. Fije el cable de la sonda con un sistema adecuado de alivio de tensión, alejado de piezas giratorias y superficies calientes. Monte el terminal inalámbrico por separado, respetando sus límites ambientales, y compruebe la cobertura en esa posición. Siga el método de montaje de la sonda, la especificación del cable y el plano de instalación suministrados."
+  },
+  "workflow": {
+    "profile_text": "La adquisición define cómo se mide la vibración; la transmisión define cuándo el terminal envía los datos. Establezca la banda de medición, los requisitos de adquisición, el intervalo de transmisión y la respuesta a las alertas como un único perfil de funcionamiento.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Medir",
+        "text": "La sonda externa mide en el punto identificado de la máquina. Adapte la magnitud de medición suministrada, la banda de frecuencia y los ajustes de adquisición al objetivo de monitorización."
+      },
+      {
+        "number": "02",
+        "title": "Transmitir",
+        "text": "El terminal envía las lecturas configuradas mediante la conexión celular o LoRa seleccionada. Acuerde el calendario de transmisión y la ruta completa hasta la plataforma."
+      },
+      {
+        "number": "03",
+        "title": "Revisar y actuar",
+        "text": "Compare estados de funcionamiento equivalentes, revise las notificaciones configuradas y establezca una acción de inspección acordada para el equipo de mantenimiento. Registre el resultado para la siguiente comparación."
+      }
+    ],
+    "battery_text": "La referencia publicada de duración de la batería supera los 10 años con transmisión cada hora bajo las condiciones especificadas. Esta referencia corresponde al perfil de funcionamiento configurado del terminal. La duración real depende de la batería suministrada, la sonda y el ciclo de adquisición, el calendario de transmisión, la cobertura de radio, las retransmisiones y la temperatura. Solicite una estimación de duración para la configuración completa que pretende instalar.",
+    "platform_text": "Conecte las lecturas configuradas a Hitelecom Cloud o a una plataforma compatible del cliente. MQTT figura en la especificación de la familia. Acuerde el formato del mensaje, el punto de conexión y los métodos de autenticación admitidos según la variante de radio seleccionada y la conexión posterior."
+  },
+  "applicationSection": {
+    "title": "Maquinaria en toda su operación.",
+    "valueHeading": "Un punto claro para cada proyecto.",
+    "description": "Explore 48 tareas prácticas de monitorización en ocho familias de maquinaria. Cada tarea identifica un punto fijo para la sonda, el contexto de funcionamiento que debe compararse y los detalles que ayudan a especificar una configuración adecuada.",
+    "note": "Las fotografías ilustran entornos de maquinaria. Seleccione el punto real, la banda de la sonda y la instalación con el ingeniero responsable de la máquina."
+  },
+  "groups": [
+    {
+      "id": "motors-drives",
+      "title": "Motores eléctricos y accionamientos de fábrica",
+      "jumpLabel": "Motores y accionamientos",
+      "intro": "Compare tendencias de vibración en puntos de medición fijos seleccionados de motores en líneas de producción, grupos de potencia y sistemas de accionamiento giratorios.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Carcasa del rodamiento de un motor eléctrico con una tapa de extremo rígida y fija",
+        "caption": "Entorno de la carcasa del rodamiento de un motor · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "production-motor",
+        "variable-speed-motor",
+        "hydraulic-powerpack",
+        "injection-moulding-drive",
+        "generator-alternator",
+        "motor-test-bench"
+      ]
+    },
+    {
+      "id": "pumps-water",
+      "title": "Bombas y sistemas de agua",
+      "jumpLabel": "Bombas y agua",
+      "intro": "Coloque la sonda cerca de la zona del rodamiento del motor o de la bomba y relacione los cambios con el caudal, la presión y el régimen de funcionamiento.",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "Bombas centrífugas instaladas en seco y accionamientos eléctricos en una estación de bombeo de agua",
+        "caption": "Entorno de maquinaria de bombeo de agua · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "booster-pumps",
+        "wastewater-dry-pumps",
+        "vertical-pump-motors",
+        "cooling-water-pumps",
+        "sanitary-process-pumps",
+        "chemical-transfer-pumps"
+      ]
+    },
+    {
+      "id": "fans-air-systems",
+      "title": "Ventiladores, ventilación y sistemas de aire",
+      "jumpLabel": "Ventiladores y ventilación",
+      "intro": "Monitorice puntos fijos del accionamiento y de los rodamientos del ventilador, en lugar de las aspas, los conductos flexibles o el movimiento del edificio.",
+      "image": {
+        "name": "ahu-fan.webp",
+        "alt": "Conjunto de ventilación de una unidad de tratamiento de aire con carcasas fijas y accesibles de los rodamientos del motor y del ventilador",
+        "caption": "Maquinaria de ventilación para tratamiento de aire · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "ahu-fans",
+        "industrial-exhaust",
+        "dust-extraction-fan",
+        "combustion-air-fan",
+        "drying-process-fan",
+        "aeration-blower-drive"
+      ]
+    },
+    {
+      "id": "compressors-vacuum",
+      "title": "Compresores y maquinaria de vacío",
+      "jumpLabel": "Compresores y vacío",
+      "intro": "Mantenga el punto de medición próximo a una zona fija del rodamiento y adapte la especificación de medición al régimen del compresor.",
+      "image": {
+        "name": "air-compressors.webp",
+        "alt": "Compresores de aire industriales carenados en una sala de servicios auxiliares",
+        "caption": "Entorno de equipos de aire comprimido · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "screw-air-compressor",
+        "reciprocating-compressor",
+        "refrigeration-compressor",
+        "rotary-vane-vacuum",
+        "dry-screw-vacuum",
+        "process-gas-compressor"
+      ]
+    },
+    {
+      "id": "gearboxes-handling",
+      "title": "Reductores, transportadores e intralogística",
+      "jumpLabel": "Reductores y transportadores",
+      "intro": "Mida en la zona seleccionada del accionamiento o del rodamiento. La velocidad de funcionamiento, la carga de material y los ciclos de movimiento aportan contexto a la comparación.",
+      "image": {
+        "name": "gearbox-conveyor.webp",
+        "alt": "Transportador industrial con reductor fijo y motor eléctrico de accionamiento",
+        "caption": "Entorno del reductor de un transportador · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "belt-conveyor-drive",
+        "screw-conveyor-drive",
+        "bucket-elevator-drive",
+        "crossbelt-sorter-drive",
+        "asrs-hoist-drive",
+        "extruder-gearbox"
+      ]
+    },
+    {
+      "id": "machine-tools-metals",
+      "title": "Máquinas herramienta y producción metalúrgica",
+      "jumpLabel": "Máquinas herramienta y metales",
+      "intro": "Registre la vibración local de la máquina en el estado de producción pertinente, con el montaje y la protección del cable adaptados al entorno de trabajo.",
+      "image": {
+        "name": "cnc-spindle.webp",
+        "alt": "Husillo de una máquina CNC industrial con carcasa fija y zona de mecanizado protegida",
+        "caption": "Entorno del husillo de una máquina herramienta · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "cnc-spindle",
+        "lathe-headstock",
+        "grinding-spindle",
+        "industrial-saw-spindle",
+        "rolling-line-drive",
+        "press-drive-bearings"
+      ]
+    },
+    {
+      "id": "process-food-pharma",
+      "title": "Maquinaria de proceso, alimentaria, farmacéutica y papelera",
+      "jumpLabel": "Producción de proceso",
+      "intro": "Apoye las rutinas de mantenimiento de producción con tendencias locales de la maquinaria y revise el régimen de proceso, la facilidad de limpieza y el acceso para el montaje.",
+      "image": {
+        "name": "mixer-drive.webp",
+        "alt": "Agitador industrial de depósito con motor eléctrico y reductor externos y fijos",
+        "caption": "Entorno del accionamiento externo de un agitador · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "industrial-mixer-drive",
+        "decanter-centrifuge",
+        "centrifugal-separator",
+        "filling-capping-drives",
+        "pharma-vacuum-dryer",
+        "paper-calender-bearings"
+      ]
+    },
+    {
+      "id": "heavy-processing",
+      "title": "Trituración, molienda y procesamiento pesado",
+      "jumpLabel": "Procesamiento pesado",
+      "intro": "Seleccione el accionamiento giratorio o la carcasa fija del rodamiento para monitorizar la maquinaria y revise el rango y la instalación en función de la excitación normal del proceso.",
+      "image": {
+        "name": "crusher-bearing.webp",
+        "alt": "Trituradora industrial con carcasa fija del rodamiento del eje y conjunto de accionamiento",
+        "caption": "Entorno de la carcasa del rodamiento de una trituradora · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "crusher-bearing-housing",
+        "pulverizer-mill-drive",
+        "industrial-shredder-drive",
+        "screen-exciter-bearing",
+        "cement-mill-gearbox",
+        "wood-chipper-bearings"
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "production-motor",
+      "group": "motors-drives",
+      "title": "Motores eléctricos de líneas de producción",
+      "description": "Siga los cambios en la carcasa del rodamiento de un motor y proporcione a los equipos de mantenimiento una referencia reproducible para la inspección rutinaria.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Tapa de extremo fija del motor, cerca del rodamiento del lado de accionamiento.",
+      "installation": "Utilice un punto rígido autorizado, documente la dirección de medición y tienda el cable de la sonda por fuera de la protección del acoplamiento.",
+      "projectBrief": "Potencia nominal del motor, RPM, patrón de carga, posiciones de los rodamientos y una fotografía del punto de montaje.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Carcasa del rodamiento de un motor eléctrico con una tapa de extremo rígida y fija",
+        "caption": "Entorno de la carcasa del rodamiento de un motor · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "variable-speed-motor",
+      "group": "motors-drives",
+      "title": "Accionamientos de motores de velocidad variable",
+      "description": "Compare las lecturas dentro de intervalos equivalentes de velocidad y carga para que los cambios normales del régimen de funcionamiento queden reflejados en la tendencia.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa accesible del rodamiento del lado de accionamiento o del lado opuesto.",
+      "installation": "Identifique las bandas de velocidad de funcionamiento antes de definir una referencia y mantenga la posición de medición tras el mantenimiento.",
+      "projectBrief": "Rango de velocidad, estados de funcionamiento, ciclo de trabajo y datos disponibles del accionamiento.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Carcasa del rodamiento de un motor eléctrico con una tapa de extremo rígida y fija",
+        "caption": "Entorno de la carcasa del rodamiento de un motor · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "id": "hydraulic-powerpack",
+      "group": "motors-drives",
+      "title": "Motores de grupos hidráulicos",
+      "description": "Observe el motor eléctrico que acciona un grupo hidráulico y apoye las comprobaciones durante ciclos comparables de demanda de presión.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa del rodamiento del motor en el conjunto fijo del grupo hidráulico.",
+      "installation": "Registre la carga de la bomba y el régimen del motor; instale la sonda en el motor en lugar de sobre la chapa del depósito.",
+      "projectBrief": "Disposición del grupo hidráulico, velocidad del motor, ciclo de funcionamiento hidráulico y recorrido del cable.",
+      "image": {
+        "name": "hydraulic-power.webp",
+        "alt": "Grupo hidráulico con un motor eléctrico y una bomba montados sobre un depósito",
+        "caption": "Entorno de un grupo hidráulico · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "id": "injection-moulding-drive",
+      "group": "motors-drives",
+      "title": "Accionamientos hidráulicos de máquinas de moldeo por inyección",
+      "description": "Siga la vibración en el lado del motor durante ciclos de moldeo reproducibles y ayude a priorizar la inspección del accionamiento junto con los registros de producción.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Zona fija del rodamiento del motor del accionamiento hidráulico.",
+      "installation": "Elija un punto fijo accesible y compare la misma fase del ciclo, evitando mangueras y protecciones desmontables.",
+      "projectBrief": "Tipo de máquina, disposición del accionamiento, etapas del ciclo y acceso para mantenimiento.",
+      "image": {
+        "name": "hydraulic-power.webp",
+        "alt": "Grupo hidráulico con un motor eléctrico y una bomba montados sobre un depósito",
+        "caption": "Entorno de un grupo hidráulico · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "id": "generator-alternator",
+      "group": "motors-drives",
+      "title": "Rodamientos del alternador de un grupo electrógeno",
+      "description": "Cree un historial de vibración de la máquina eléctrica giratoria de un grupo electrógeno con carga y velocidad de funcionamiento definidas.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija y accesible del rodamiento del alternador.",
+      "installation": "Separe la monitorización del alternador de la vibración del bastidor del motor de combustión y confirme la temperatura admisible, el rango y la protección del cable.",
+      "projectBrief": "Disposición del alternador, velocidad normal, rango de carga y condiciones ambientales.",
+      "image": {
+        "name": "generator-alternator.webp",
+        "alt": "Grupo electrógeno y alternador industriales con carcasas fijas y accesibles de los rodamientos",
+        "caption": "Entorno de un grupo electrógeno y alternador · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S15"
+      ]
+    },
+    {
+      "id": "motor-test-bench",
+      "group": "motors-drives",
+      "title": "Bancos de ensayo de motores al final de la línea",
+      "description": "Registre lecturas de vibración comparables durante una prueba de funcionamiento definida para apoyar un procedimiento acordado de inspección o aceptación.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Punto rígido y reproducible en la carcasa del motor ensayado.",
+      "installation": "Fije la velocidad, la carga y el método de montaje en el procedimiento de ensayo; utilice los límites de aceptación aprobados para el motor.",
+      "projectBrief": "Secuencia de ensayo, amplitud prevista, magnitud requerida y disposición reproducible de la fijación.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Carcasa del rodamiento de un motor eléctrico con una tapa de extremo rígida y fija",
+        "caption": "Entorno de la carcasa del rodamiento de un motor · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "booster-pumps",
+      "group": "pumps-water",
+      "title": "Bombas de refuerzo de presión de redes municipales de agua",
+      "description": "Monitorice los puntos seleccionados del motor y de la bomba en unidades de servicio y de reserva para apoyar la planificación del mantenimiento en estaciones de bombeo.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Tapa de extremo fija del motor o carcasa accesible del rodamiento de la bomba.",
+      "installation": "Identifique cada punto por separado y compare condiciones de funcionamiento equivalentes; mantenga los bucles de cable alejados de los acoplamientos.",
+      "projectBrief": "Disposición de las bombas, velocidad, régimen de caudal y presión y número de puntos de monitorización.",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "Bombas centrífugas instaladas en seco y accionamientos eléctricos en una estación de bombeo de agua",
+        "caption": "Entorno de maquinaria de bombeo de agua · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "id": "wastewater-dry-pumps",
+      "group": "pumps-water",
+      "title": "Accionamientos de estaciones de bombeo de aguas residuales",
+      "description": "Observe conjuntos accesibles de bombas y motores instalados en seco y compare las tendencias con los registros de los ciclos de bombeo.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa del rodamiento del motor o de la bomba, accesible y en seco.",
+      "installation": "Revise la humedad, los productos químicos de limpieza y la protección de los conectores; una instalación sumergida requiere una evaluación específica.",
+      "projectBrief": "Configuración en seco o sumergida, ciclo de bombeo, humedad del emplazamiento y acceso permitido.",
+      "image": {
+        "name": "wastewater-pumps.webp",
+        "alt": "Conjuntos de bombas de aguas residuales instalados en seco con zonas accesibles de motores y rodamientos",
+        "caption": "Entorno de bombas de aguas residuales en seco · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8"
+      ]
+    },
+    {
+      "id": "vertical-pump-motors",
+      "group": "pumps-water",
+      "title": "Rodamientos de motores de bombas verticales",
+      "description": "Monitorice una zona fija seleccionada del rodamiento del motor de una bomba vertical y registre los cambios durante su funcionamiento normal.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa del rodamiento del motor situada sobre la estructura de la bomba.",
+      "installation": "Documente la dirección seleccionada y distinga la lectura local del motor del movimiento del conjunto de la bomba o de su cimentación.",
+      "projectBrief": "Plano del conjunto vertical, velocidad del motor, posiciones de los rodamientos y banda de medición admitida.",
+      "image": {
+        "name": "vertical-pump.webp",
+        "alt": "Motor de bomba vertical con carcasa fija situada sobre la bomba",
+        "caption": "Entorno del motor de una bomba vertical · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8",
+        "S1"
+      ]
+    },
+    {
+      "id": "cooling-water-pumps",
+      "group": "pumps-water",
+      "title": "Circulación de agua de refrigeración de proceso",
+      "description": "Mantenga una tendencia de vibración de las bombas de circulación que dan servicio a equipos de fabricación y compare las lecturas con una demanda de proceso estable.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Puntos accesibles de las carcasas de los rodamientos de la bomba y del motor.",
+      "installation": "Seleccione carcasas rígidas en lugar de las tuberías conectadas y registre el estado de funcionamiento cuando se alternen las bombas de servicio.",
+      "projectBrief": "Tipo de bomba, velocidad, temperatura del agua y estrategia de servicio y reserva.",
+      "image": {
+        "name": "scene-outdoor-pumping.webp",
+        "alt": "Conjuntos de motor y bomba accesibles en seco en una instalación exterior de bombeo de agua",
+        "caption": "Entorno de maquinaria de bombeo exterior · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "id": "sanitary-process-pumps",
+      "group": "pumps-water",
+      "title": "Bombas de proceso de alimentos y bebidas",
+      "description": "Observe la vibración en el lado del motor o en la carcasa del rodamiento de una línea de bombeo sanitario y mantenga la instalación fuera del recorrido de contacto con el producto.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada del accionamiento o del rodamiento.",
+      "installation": "Acuerde un montaje higiénico, la exposición al lavado y la limpieza del cable; evalúe el conjunto completo de sonda y conectores.",
+      "projectBrief": "Método de limpieza, temperatura de proceso, autorización del montaje y estados de funcionamiento de la bomba.",
+      "image": {
+        "name": "sanitary-pump.webp",
+        "alt": "Bomba centrífuga sanitaria de acero inoxidable con motor de accionamiento externo",
+        "caption": "Entorno de una bomba sanitaria de proceso · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S9"
+      ]
+    },
+    {
+      "id": "chemical-transfer-pumps",
+      "group": "pumps-water",
+      "title": "Bombas de transferencia de productos químicos en áreas autorizadas",
+      "description": "Compare los cambios de vibración en accionamientos de bombas compatibles y utilice el resultado junto con los registros de presión, caudal y mantenimiento.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija y accesible del rodamiento, fuera del recorrido del fluido.",
+      "installation": "Revise la exposición química, la temperatura y la clasificación del área antes de seleccionar la sonda, el terminal y el cable.",
+      "projectBrief": "Entorno químico, clasificación de áreas peligrosas, velocidad y punto de instalación autorizado.",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "Bomba centrífuga instalada en seco y motor de accionamiento con una zona fija para medir la maquinaria",
+        "caption": "Entorno de una bomba centrífuga en seco · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "id": "ahu-fans",
+      "group": "fans-air-systems",
+      "title": "Accionamientos de ventiladores de unidades de tratamiento de aire",
+      "description": "Siga la vibración del accionamiento y de los rodamientos de un ventilador para apoyar la inspección de los servicios de edificios ocupados.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija del rodamiento del motor o del ventilador, dentro del área de servicio autorizada.",
+      "installation": "Mantenga la sonda alejada del rodete y de las correas; distinga la medición del accionamiento de la vibración de los paneles del equipo.",
+      "projectBrief": "Accionamiento directo o por correa, velocidad del ventilador, acceso de servicio y recorrido del cable.",
+      "image": {
+        "name": "ahu-fan.webp",
+        "alt": "Conjunto de ventilación de una unidad de tratamiento de aire con carcasas fijas y accesibles de los rodamientos del motor y del ventilador",
+        "caption": "Maquinaria de ventilación para tratamiento de aire · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "id": "industrial-exhaust",
+      "group": "fans-air-systems",
+      "title": "Ventiladores de extracción industrial",
+      "description": "Registre tendencias en los puntos seleccionados de los rodamientos del ventilador con un régimen de extracción constante y ayude al equipo de mantenimiento a identificar cambios que requieren inspección.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Soporte fijo del rodamiento del ventilador o carcasa del rodamiento del motor.",
+      "installation": "Revise la contaminación y las condiciones de acceso; monte fuera del flujo de aire sobre una superficie rígida autorizada.",
+      "projectBrief": "Diseño del ventilador, RPM, régimen normal, exposición a polvo o productos químicos y disposición de los rodamientos.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Ventilador centrífugo industrial y motor de accionamiento externo junto a su carcasa fija del rodamiento",
+        "caption": "Entorno del accionamiento de un ventilador centrífugo · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "id": "dust-extraction-fan",
+      "group": "fans-air-systems",
+      "title": "Motores de ventiladores de captación de polvo",
+      "description": "Monitorice los rodamientos fijos del motor o del ventilador de un sistema de extracción de polvo como parte de las rutinas de mantenimiento de la maquinaria.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa externa del rodamiento del motor o del accionamiento del ventilador.",
+      "installation": "Confirme la clasificación por polvo combustible cuando corresponda y mantenga el cableado alejado de correas y superficies calientes o abrasivas.",
+      "projectBrief": "Tipo de polvo, clasificación del área, disposición del accionamiento del ventilador y rango de vibración previsto.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Ventilador centrífugo industrial y motor de accionamiento externo junto a su carcasa fija del rodamiento",
+        "caption": "Entorno del accionamiento de un ventilador centrífugo · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14",
+        "S15"
+      ]
+    },
+    {
+      "id": "combustion-air-fan",
+      "group": "fans-air-systems",
+      "title": "Accionamientos de ventiladores de aire de combustión",
+      "description": "Siga la vibración local en el accionamiento de un ventilador auxiliar y compare las lecturas con la demanda de funcionamiento documentada.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija y accesible del rodamiento del motor o del ventilador.",
+      "installation": "Compruebe la temperatura real de la superficie y el entorno del cable; sitúe el terminal lejos de un calor radiante excesivo.",
+      "projectBrief": "Velocidad y carga del ventilador, temperatura de la superficie, exposición térmica y acceso de montaje.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Ventilador centrífugo industrial y motor de accionamiento externo junto a su carcasa fija del rodamiento",
+        "caption": "Entorno del accionamiento de un ventilador centrífugo · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S14"
+      ]
+    },
+    {
+      "id": "drying-process-fan",
+      "group": "fans-air-systems",
+      "title": "Ventiladores de sistemas de secado industrial",
+      "description": "Observe tendencias del estado del accionamiento del ventilador que ayuden al equipo de mantenimiento a programar inspecciones en función de la producción de la línea de secado.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Zona fija del rodamiento del accionamiento, fuera de la cámara de proceso calentada.",
+      "installation": "Revise el calor, la humedad y la contaminación del proceso; elija un punto rígido en lugar de conductos de chapa fina.",
+      "projectBrief": "Disposición del secador, régimen del ventilador, temperatura en el punto de montaje y recorrido del cable.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Ventilador centrífugo industrial y motor de accionamiento externo junto a su carcasa fija del rodamiento",
+        "caption": "Entorno del accionamiento de un ventilador centrífugo · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13",
+        "S3"
+      ]
+    },
+    {
+      "id": "aeration-blower-drive",
+      "group": "fans-air-systems",
+      "title": "Accionamientos de soplantes de aireación para tratamiento de agua",
+      "description": "Registre tendencias reproducibles de vibración en los rodamientos del motor y del accionamiento de una soplante de aireación y documente su demanda de proceso.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija y accesible del rodamiento del motor o de la soplante.",
+      "installation": "Separe las lecturas locales del accionamiento de las pulsaciones de las tuberías y relacione las comparaciones con la velocidad y el régimen de aireación.",
+      "projectBrief": "Tipo de soplante, velocidad, demanda de presión, humedad y disposición del accionamiento.",
+      "image": {
+        "name": "aeration-blower.webp",
+        "alt": "Soplante de aireación para tratamiento de agua y motor eléctrico con carcasas fijas de rodamientos",
+        "caption": "Maquinaria de soplante de aireación · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8",
+        "S7"
+      ]
+    },
+    {
+      "id": "screw-air-compressor",
+      "group": "compressors-vacuum",
+      "title": "Compresores de aire de tornillo rotativo",
+      "description": "Siga la vibración cerca de los rodamientos del compresor y compare los cambios en estados estables de funcionamiento y carga.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Punto autorizado de la carcasa del compresor, próximo a un rodamiento radial.",
+      "installation": "Confirme la banda de frecuencia requerida y la temperatura; evite asumir que el punto del motor representa todo el bloque compresor.",
+      "projectBrief": "Disposición del bloque compresor, rango de velocidad y carga, temperatura de montaje y banda de medición requerida.",
+      "image": {
+        "name": "air-compressors.webp",
+        "alt": "Compresores de aire industriales carenados en una sala de servicios auxiliares",
+        "caption": "Entorno de equipos de aire comprimido · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S10"
+      ]
+    },
+    {
+      "id": "reciprocating-compressor",
+      "group": "compressors-vacuum",
+      "title": "Accionamientos de compresores alternativos",
+      "description": "Observe tendencias locales de vibración en una zona del accionamiento o del rodamiento y registre el régimen cíclico normal del compresor.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada del rodamiento del accionamiento o punto autorizado del cárter.",
+      "installation": "Revise los impulsos normales del proceso y el margen de amplitud antes de acordar una referencia y una ubicación de medición.",
+      "projectBrief": "Tipo de compresor, velocidad, etapas de carga, amplitud prevista y acceso seguro.",
+      "image": {
+        "name": "reciprocating-compressor.webp",
+        "alt": "Compresor alternativo industrial con carcasas fijas de accionamiento y rodamientos",
+        "caption": "Entorno de maquinaria de compresión · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "refrigeration-compressor",
+      "group": "compressors-vacuum",
+      "title": "Compresores de refrigeración industrial",
+      "description": "Siga la tendencia de vibración del accionamiento de un compresor compatible para apoyar la inspección programada de una instalación frigorífica.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada o zona externa del rodamiento, accesibles.",
+      "installation": "Revise el diseño del compresor, la temperatura de la superficie, los requisitos del área de refrigerante y la interfaz mecánica autorizada.",
+      "projectBrief": "Configuración del compresor, velocidad, escalones de carga, temperatura y autorización de la instalación.",
+      "image": {
+        "name": "refrigeration-compressor.webp",
+        "alt": "Conjunto de compresor de refrigeración industrial con accionamiento y carcasa fijos",
+        "caption": "Compresor de refrigeración industrial · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S7",
+        "S10"
+      ]
+    },
+    {
+      "id": "rotary-vane-vacuum",
+      "group": "compressors-vacuum",
+      "title": "Bombas de vacío de paletas rotativas",
+      "description": "Compare la vibración local del accionamiento y de la carcasa en estados equivalentes del proceso de vacío y utilice los cambios para orientar las comprobaciones del equipo.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada cerca de la zona del rodamiento del conjunto giratorio.",
+      "installation": "Documente el estado de carga de la bomba y proteja el cable del aceite, el calor y los componentes móviles de servicio.",
+      "projectBrief": "Tipo de bomba de vacío, velocidad de funcionamiento, ciclo de proceso y temperatura.",
+      "image": {
+        "name": "vacuum-pump.webp",
+        "alt": "Bomba de vacío industrial y motor eléctrico de accionamiento fijo en una sala de equipos limpia",
+        "caption": "Entorno del accionamiento de una bomba de vacío · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S7",
+        "S12"
+      ]
+    },
+    {
+      "id": "dry-screw-vacuum",
+      "group": "compressors-vacuum",
+      "title": "Sistemas de vacío de tornillo seco",
+      "description": "Registre tendencias en puntos de medición fijos seleccionados de un sistema de vacío de tornillo seco para revisar el mantenimiento en ciclos de producción comparables.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Punto autorizado de la carcasa cerca de la zona del rodamiento monitorizado.",
+      "installation": "Revise la contaminación del proceso y la banda de frecuencia requerida y mantenga el terminal de radio en una ubicación de servicio adecuada.",
+      "projectBrief": "Disposición de la bomba, perfil de velocidad y carga, exposición química e intervalo deseado para la tendencia.",
+      "image": {
+        "name": "vacuum-pump.webp",
+        "alt": "Bomba de vacío industrial y motor eléctrico de accionamiento fijo en una sala de equipos limpia",
+        "caption": "Entorno del accionamiento de una bomba de vacío · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "id": "process-gas-compressor",
+      "group": "compressors-vacuum",
+      "title": "Compresores de gas de proceso en áreas autorizadas",
+      "description": "Utilice una instalación debidamente evaluada para observar la vibración de la maquinaria en un punto seleccionado del accionamiento o de los rodamientos del compresor de proceso.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Punto fijo autorizado de la carcasa del rodamiento del compresor o del motor.",
+      "installation": "Seleccione el conjunto completo de acuerdo con los requisitos de certificación y temperatura del área antes de instalarlo.",
+      "projectBrief": "Entorno gaseoso, clasificación del área, disposición de la máquina y estados de funcionamiento.",
+      "image": {
+        "name": "reciprocating-compressor.webp",
+        "alt": "Compresor alternativo industrial con carcasas fijas de accionamiento y rodamientos",
+        "caption": "Entorno de maquinaria de compresión · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "id": "belt-conveyor-drive",
+      "group": "gearboxes-handling",
+      "title": "Reductores de accionamiento de transportadores de banda",
+      "description": "Siga la vibración local del reductor y del motor en el accionamiento de un transportador y compare las mismas condiciones de transporte a lo largo del tiempo.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija del reductor cerca de un rodamiento de entrada o salida.",
+      "installation": "Elija la zona del eje que se monitorizará y mantenga el cable alejado de poleas, bandas y aberturas de mantenimiento.",
+      "projectBrief": "Disposición del accionamiento, etapas del reductor, rango de velocidad y patrón de carga de material.",
+      "image": {
+        "name": "gearbox-conveyor.webp",
+        "alt": "Transportador industrial con reductor fijo y motor eléctrico de accionamiento",
+        "caption": "Entorno del reductor de un transportador · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S15"
+      ]
+    },
+    {
+      "id": "screw-conveyor-drive",
+      "group": "gearboxes-handling",
+      "title": "Motorreductores de transportadores de tornillo",
+      "description": "Observe la vibración del accionamiento externo de un alimentador de tornillo para apoyar la inspección sin colocar elementos de medición en el recorrido del material.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija y accesible del reductor o del rodamiento del motor.",
+      "installation": "Registre el caudal de alimentación y la carga de material y revise la clasificación por polvo y la abrasión del cable cuando corresponda.",
+      "projectBrief": "Tipo de material, velocidad de accionamiento, ciclo de trabajo y punto de montaje externo autorizado.",
+      "image": {
+        "name": "screw-conveyor.webp",
+        "alt": "Transportador de tornillo industrial con motorreductor externo fijo",
+        "caption": "Accionamiento con motorreductor de un transportador de tornillo · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S14"
+      ]
+    },
+    {
+      "id": "bucket-elevator-drive",
+      "group": "gearboxes-handling",
+      "title": "Sistemas de accionamiento de elevadores de cangilones",
+      "description": "Mantenga una tendencia en el reductor del accionamiento o en la zona del rodamiento del motor del elevador para apoyar una inspección accesible de la maquinaria.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija del accionamiento en un punto de servicio autorizado.",
+      "installation": "Separe la monitorización del accionamiento del movimiento de la torre y mantenga la instalación fuera del recorrido de los cangilones y de la banda.",
+      "projectBrief": "Disposición del motorreductor, plataforma de acceso, perfil de velocidad y carga y exposición ambiental.",
+      "image": {
+        "name": "roller-drive.webp",
+        "alt": "Instalación de un elevador de cangilones con motor y reductor de accionamiento externos y fijos",
+        "caption": "Entorno del accionamiento de un elevador de cangilones · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S14"
+      ]
+    },
+    {
+      "id": "crossbelt-sorter-drive",
+      "group": "gearboxes-handling",
+      "title": "Accionamientos de clasificadores de banda transversal",
+      "description": "Observe rodamientos fijos seleccionados del accionamiento y compare la vibración en ciclos de funcionamiento reproducibles del clasificador.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada del motor de accionamiento o del reductor.",
+      "installation": "Utilice un punto fijo que permita mantenimiento; registre la etapa de funcionamiento y fije el cable fuera del mecanismo de clasificación.",
+      "projectBrief": "Disposición del clasificador, ciclos de accionamiento, estados de velocidad y puntos fijos disponibles para montaje.",
+      "image": {
+        "name": "crossbelt-sorter.webp",
+        "alt": "Línea de clasificación de banda transversal con accionamiento externo fijo y bastidor de soporte",
+        "caption": "Entorno del accionamiento de clasificación de banda transversal · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "asrs-hoist-drive",
+      "group": "gearboxes-handling",
+      "title": "Accionamientos de sistemas automatizados de almacenamiento y recuperación",
+      "description": "Siga la vibración de maquinaria de un accionamiento seleccionado de elevación o traslación y documente ciclos reproducibles de elevación o desplazamiento.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Zona fija autorizada del reductor del accionamiento o del rodamiento del motor.",
+      "installation": "Revise la gestión de cables en los conjuntos móviles e interprete las lecturas del accionamiento con la misma carga y fase de movimiento.",
+      "projectBrief": "Recorrido de la máquina, ubicación del accionamiento, etapas del ciclo, sistema de gestión de cables y carga útil.",
+      "image": {
+        "name": "asrs-hoist.webp",
+        "alt": "Transelevador de almacenamiento y recuperación automatizados con motor de elevación y reductor fijos",
+        "caption": "Entorno del accionamiento de elevación de un sistema ASRS · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "id": "extruder-gearbox",
+      "group": "gearboxes-handling",
+      "title": "Reductores de accionamiento de extrusoras",
+      "description": "Compare la vibración del reductor bajo una carga de proceso definida para apoyar la inspección de los componentes giratorios del accionamiento de una extrusora.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija del reductor próxima al rodamiento de un eje identificado.",
+      "installation": "Revise las distintas etapas del reductor, la velocidad y la temperatura; acuerde el punto de medición en lugar de considerar que una lectura representa el estado completo del reductor.",
+      "projectBrief": "Plano del reductor, carga de proceso, velocidades, temperatura de montaje y zona del rodamiento seleccionada.",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "Reductor industrial y motor eléctrico sobre una base rígida de maquinaria",
+        "caption": "Entorno de un reductor industrial · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "id": "cnc-spindle",
+      "group": "machine-tools-metals",
+      "title": "Husillos de centros de mecanizado CNC",
+      "description": "Siga la vibración de una carcasa de husillo seleccionada en condiciones reproducibles de mecanizado o prueba de funcionamiento para apoyar la inspección de herramientas y de la máquina.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada del husillo cerca de una zona de rodamiento.",
+      "installation": "Mantenga la sonda alejada de las herramientas giratorias; revise la vibración del proceso, el refrigerante, las virutas y el ancho de banda de medición requerido.",
+      "projectBrief": "Velocidades del husillo, etapas de corte o prueba de funcionamiento, amplitudes previstas y punto de montaje permitido.",
+      "image": {
+        "name": "cnc-spindle.webp",
+        "alt": "Husillo de una máquina CNC industrial con carcasa fija y zona de mecanizado protegida",
+        "caption": "Entorno del husillo de una máquina herramienta · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "lathe-headstock",
+      "group": "machine-tools-metals",
+      "title": "Cabezales de tornos industriales",
+      "description": "Compare la vibración del cabezal en un punto fijo reproducible con velocidad y régimen de mecanizado equivalentes.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija del cabezal cerca del rodamiento del husillo monitorizado.",
+      "installation": "Manténgase alejado del plato y de la pieza; identifique la dirección de medición y documente el estado en vacío o de corte.",
+      "projectBrief": "Disposición del husillo, rango de velocidad, operaciones de mecanizado y acceso para montaje.",
+      "image": {
+        "name": "lathe-headstock.webp",
+        "alt": "Torno industrial con carcasa fija del cabezal y zona de mecanizado protegida",
+        "caption": "Entorno del cabezal de un torno · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "grinding-spindle",
+      "group": "machine-tools-metals",
+      "title": "Carcasas de husillos de rectificadoras",
+      "description": "Siga la vibración local del husillo durante un régimen de rectificado definido y utilice el historial para planificar la inspección de componentes giratorios.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Punto fijo autorizado de la carcasa del rodamiento del husillo.",
+      "installation": "Revise el polvo abrasivo, el refrigerante, la excitación normal del proceso y el rango de amplitud antes de seleccionar la configuración de medición.",
+      "projectBrief": "Velocidad del husillo de rectificado, ciclo de proceso, entorno y magnitud deseada.",
+      "image": {
+        "name": "grinding-spindle.webp",
+        "alt": "Rectificadora industrial con carcasa fija del husillo y protecciones",
+        "caption": "Entorno de un husillo de rectificado · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "id": "industrial-saw-spindle",
+      "group": "machine-tools-metals",
+      "title": "Accionamientos de husillos de sierras industriales",
+      "description": "Registre la vibración en una carcasa fija del husillo o del accionamiento durante operaciones de corte comparables y pruebas de funcionamiento de mantenimiento.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada del rodamiento fuera del recorrido de la hoja.",
+      "installation": "Proteja el cable de las virutas y del movimiento de corte; compare con la misma hoja, velocidad y etapa de proceso.",
+      "projectBrief": "Configuración de la sierra, velocidad, régimen de corte, exposición a virutas y ubicación de montaje autorizada.",
+      "image": {
+        "name": "industrial-saw.webp",
+        "alt": "Sierra industrial para metal con carcasa fija del accionamiento y protecciones",
+        "caption": "Entorno del accionamiento de una sierra industrial · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "rolling-line-drive",
+      "group": "machine-tools-metals",
+      "title": "Motores de accionamiento de líneas de laminación de metal",
+      "description": "Observe una zona seleccionada del rodamiento del motor o del reductor de una línea de laminación y relacione las tendencias con las cargas de producción documentadas.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija del rodamiento del motor o del reductor, fuera del recorrido de los rodillos.",
+      "installation": "Revise el calor y las salpicaduras de agua y seleccione puntos locales del accionamiento en lugar de medir el movimiento de toda la línea o de la cimentación.",
+      "projectBrief": "Disposición del accionamiento, rango de velocidad y carga, temperatura, exposición a salpicaduras y objetivo de medición.",
+      "image": {
+        "name": "metal-rolling.webp",
+        "alt": "Equipo de rodillos para procesamiento de metal con carcasas fijas de rodamientos y motores de accionamiento",
+        "caption": "Entorno de accionamientos para procesamiento de metal · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "id": "press-drive-bearings",
+      "group": "machine-tools-metals",
+      "title": "Rodamientos del accionamiento y del volante de prensas",
+      "description": "Siga un punto fijo autorizado del rodamiento del accionamiento durante fases reproducibles de producción para apoyar las comprobaciones rutinarias de la maquinaria.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija del rodamiento del accionamiento o del volante, fuera del mecanismo móvil.",
+      "installation": "Evalúe los impulsos normales de estampación y el margen de medición; mantenga la instalación fuera de los movimientos protegidos y compare la misma fase del ciclo.",
+      "projectBrief": "Tipo de prensa, etapas del ciclo, impulsos previstos, punto de rodamiento seleccionado y acceso autorizado.",
+      "image": {
+        "name": "press-drive.webp",
+        "alt": "Prensa industrial con soportes fijos de rodamientos del accionamiento y conjunto de volante protegido",
+        "caption": "Entorno del accionamiento de una prensa industrial · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "industrial-mixer-drive",
+      "group": "process-food-pharma",
+      "title": "Conjuntos de accionamiento de agitadores industriales",
+      "description": "Observe la vibración local del motor y del reductor con recetas de mezcla y cargas de lote equivalentes.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa externa fija y autorizada del rodamiento del accionamiento.",
+      "installation": "Monte fuera del depósito y del recorrido de contacto con el producto y registre la etapa del lote, la velocidad del agitador y el nivel de llenado.",
+      "projectBrief": "Configuración del agitador, recetas, etapas de carga, facilidad de limpieza y punto de montaje externo permitido.",
+      "image": {
+        "name": "mixer-drive.webp",
+        "alt": "Agitador industrial de depósito con motor eléctrico y reductor externos y fijos",
+        "caption": "Entorno del accionamiento externo de un agitador · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S12"
+      ]
+    },
+    {
+      "id": "decanter-centrifuge",
+      "group": "process-food-pharma",
+      "title": "Carcasas de rodamientos de centrifugadoras decantadoras",
+      "description": "Registre tendencias en puntos fijos seleccionados de los rodamientos de la centrifugadora e interprete los cambios según la velocidad del tambor, la alimentación de material y el estado de funcionamiento.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada del rodamiento principal.",
+      "installation": "Revise la excitación normal del proceso y las distintas fuentes de vibración; seleccione los puntos y los requisitos de datos con el ingeniero responsable de la máquina.",
+      "projectBrief": "Disposición de la centrifugadora, velocidades, estados de alimentación, rango de amplitud y acceso de servicio.",
+      "image": {
+        "name": "decanter-centrifuge.webp",
+        "alt": "Centrifugadora decantadora industrial con carcasas externas fijas de los rodamientos",
+        "caption": "Entorno de maquinaria centrífuga · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S18"
+      ]
+    },
+    {
+      "id": "centrifugal-separator",
+      "group": "process-food-pharma",
+      "title": "Accionamientos de separadoras centrífugas",
+      "description": "Observe un punto fijo autorizado del accionamiento o del rodamiento de una separadora para apoyar la revisión del mantenimiento durante un régimen de producción estable.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija del rodamiento o carcasa fija autorizada del accionamiento.",
+      "installation": "Manténgase alejado del tambor giratorio y revise la banda requerida, el estado de funcionamiento y las normas de instalación higiénica.",
+      "projectBrief": "Diseño de la separadora, velocidad, etapas de proceso, requisitos de limpieza y disposición de los rodamientos.",
+      "image": {
+        "name": "centrifugal-separator.webp",
+        "alt": "Separadora centrífuga vertical con carcasa externa fija de maquinaria",
+        "caption": "Entorno de una separadora centrífuga · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S18",
+        "S9"
+      ]
+    },
+    {
+      "id": "filling-capping-drives",
+      "group": "process-food-pharma",
+      "title": "Accionamientos de líneas de llenado y tapado",
+      "description": "Siga la vibración local del motor o del reductor en una línea de producción y compare regímenes reproducibles de llenado y tapado.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada del motor o del reductor.",
+      "installation": "Mantenga la sonda y el cable fuera de las zonas de envasado o de contacto con el producto y revise el lavado y la carga dependiente del ciclo.",
+      "projectBrief": "Velocidad de la línea, ubicaciones de los accionamientos, ciclos, régimen de limpieza y puntos de monitorización.",
+      "image": {
+        "name": "filling-capping.webp",
+        "alt": "Línea automatizada de llenado y tapado con motores de accionamiento externos accesibles",
+        "caption": "Entorno de una línea de llenado y tapado · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S9",
+        "S12"
+      ]
+    },
+    {
+      "id": "pharma-vacuum-dryer",
+      "group": "process-food-pharma",
+      "title": "Accionamientos de secadores al vacío farmacéuticos",
+      "description": "Observe un punto externo autorizado del accionamiento durante etapas de secado documentadas para apoyar los registros de mantenimiento del equipo.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa externa fija del rodamiento del motor o del reductor.",
+      "installation": "Revise las normas de sala limpia, los disolventes, la temperatura y la autorización de montaje externo; acuerde el uso de los datos con el procedimiento de ingeniería de la instalación.",
+      "projectBrief": "Disposición del secador, etapas de proceso, clasificación del área y requisitos de limpieza.",
+      "image": {
+        "name": "vacuum-dryer-drive.webp",
+        "alt": "Secador al vacío farmacéutico con motor fijo externo y reductor",
+        "caption": "Accionamiento externo de un secador al vacío · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S12"
+      ]
+    },
+    {
+      "id": "paper-calender-bearings",
+      "group": "process-food-pharma",
+      "title": "Rodamientos de rodillos y calandras de papel",
+      "description": "Registre la vibración local en carcasas fijas seleccionadas de los rodamientos de los rodillos y compare estados de producción equivalentes de la máquina de papel.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada del rodamiento del rodillo en el lado de servicio.",
+      "installation": "Revise la temperatura real de la superficie y la humedad y confirme la banda de frecuencia para la velocidad del rodillo seleccionado.",
+      "projectBrief": "Velocidades de los rodillos, disposición de los rodamientos, temperatura de la superficie, exposición a humedad y acceso.",
+      "image": {
+        "name": "paper-calender.webp",
+        "alt": "Rodillos de calandra de papel apoyados en carcasas fijas de rodamientos en el lado de servicio",
+        "caption": "Entorno de rodamientos de una calandra de papel · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13"
+      ]
+    },
+    {
+      "id": "crusher-bearing-housing",
+      "group": "heavy-processing",
+      "title": "Carcasas de rodamientos de trituradoras",
+      "description": "Siga un punto seleccionado del rodamiento o del accionamiento de una trituradora y compare las tendencias con las condiciones documentadas de alimentación y funcionamiento.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada del rodamiento del eje o del motor de accionamiento.",
+      "installation": "Revise los impactos normales de trituración, el margen de amplitud, el polvo abrasivo y la protección mecánica del cable antes de la puesta en servicio.",
+      "projectBrief": "Tipo de trituradora, estados de carga y alimentación, amplitud prevista y acceso a un punto fijo del rodamiento.",
+      "image": {
+        "name": "crusher-bearing.webp",
+        "alt": "Trituradora industrial con carcasa fija del rodamiento del eje y conjunto de accionamiento",
+        "caption": "Entorno de la carcasa del rodamiento de una trituradora · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S14"
+      ]
+    },
+    {
+      "id": "pulverizer-mill-drive",
+      "group": "heavy-processing",
+      "title": "Accionamientos de pulverizadores y molinos",
+      "description": "Observe la vibración local del motor o del reductor en una línea de molienda y relacione las lecturas con estados comparables de alimentación y carga.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija y accesible del rodamiento del accionamiento.",
+      "installation": "Identifique el tren de accionamiento, revise la temperatura y el polvo y mantenga el cableado alejado de los acoplamientos giratorios y de los sistemas de manipulación de materiales.",
+      "projectBrief": "Tipo de molino, velocidades de accionamiento, condiciones de alimentación, temperatura y clasificación del área.",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "Reductor industrial y motor eléctrico sobre una base rígida de maquinaria",
+        "caption": "Entorno de un reductor industrial · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "id": "industrial-shredder-drive",
+      "group": "heavy-processing",
+      "title": "Accionamientos de trituradoras de residuos industriales",
+      "description": "Mantenga un historial de vibración en los rodamientos seleccionados del accionamiento de una trituradora de residuos y registre el material y el ciclo normal de funcionamiento.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada del motor de accionamiento o del reductor.",
+      "installation": "Revise los impactos del proceso y el margen disponible y proteja el cable de la sonda de los residuos y de los componentes móviles de mantenimiento.",
+      "projectBrief": "Diseño de la trituradora, materiales, ciclo de carga, impactos previstos y acceso a los rodamientos.",
+      "image": {
+        "name": "shredder-drive.webp",
+        "alt": "Trituradora industrial de residuos con reductor externo fijo y motores eléctricos de accionamiento",
+        "caption": "Entorno de maquinaria de trituración de residuos · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "screen-exciter-bearing",
+      "group": "heavy-processing",
+      "title": "Rodamientos de excitadores de cribas vibratorias",
+      "description": "Observe la vibración local del rodamiento del excitador giratorio como tendencia de maquinaria en un punto fijo definido de su carcasa.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa autorizada del rodamiento del excitador o del accionamiento.",
+      "installation": "Confirme la banda y la amplitud para el objetivo del rodamiento seleccionado; la instalación se refiere a la maquinaria local y no al movimiento del cuerpo de la criba.",
+      "projectBrief": "Disposición del excitador, excitación normal, punto del rodamiento, rango y banda de medición requerida.",
+      "image": {
+        "name": "screen-exciter.webp",
+        "alt": "Criba vibratoria industrial con carcasas locales de los rodamientos del eje del excitador",
+        "caption": "Entorno del rodamiento del excitador de una criba · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S16"
+      ]
+    },
+    {
+      "id": "cement-mill-gearbox",
+      "group": "heavy-processing",
+      "title": "Rodamientos del motor y del reductor de molinos de cemento",
+      "description": "Siga una zona seleccionada de los rodamientos del accionamiento del molino y utilice registros coherentes de carga de producción para que las comparaciones de tendencias resulten útiles.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Punto fijo autorizado de la carcasa del rodamiento del motor o del reductor.",
+      "installation": "Revise las distintas etapas de engranajes y la excitación normal del proceso, además del polvo, el calor y el acceso autorizado para mantenimiento.",
+      "projectBrief": "Plano del accionamiento, velocidades, estados de carga, exposición a calor y polvo y zona del rodamiento seleccionada.",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "Reductor industrial y motor eléctrico sobre una base rígida de maquinaria",
+        "caption": "Entorno de un reductor industrial · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14",
+        "S5"
+      ]
+    },
+    {
+      "id": "wood-chipper-bearings",
+      "group": "heavy-processing",
+      "title": "Rodamientos de accionamientos de astilladoras de madera",
+      "description": "Observe una carcasa fija del rodamiento del accionamiento o del rotor y compare el historial de vibración durante un régimen documentado de procesamiento de material.",
+      "measurement": "Vibración local de la maquinaria en un punto fijo definido",
+      "monitoringPoint": "Carcasa fija autorizada del rodamiento del accionamiento o del rotor.",
+      "installation": "Revise los impulsos normales de corte y el rango, proteja los cables de las astillas y mantenga la sonda fuera de la protección del rotor.",
+      "projectBrief": "Diseño de la astilladora, velocidad del rotor, condiciones de alimentación, impulsos previstos y punto de servicio.",
+      "image": {
+        "name": "shredder-drive.webp",
+        "alt": "Trituradora industrial de residuos con reductor externo fijo y motores eléctricos de accionamiento",
+        "caption": "Entorno de maquinaria de trituración de residuos · Escena ilustrativa",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13",
+        "S4"
+      ]
+    }
+  ],
+  "series": {
+    "description": "H200, H300 y H500 son identificadores publicados de la familia H Series. Especifique la sonda completa, el terminal, la variante inalámbrica y el perfil de funcionamiento en la propuesta de configuración de su proyecto.",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "steps": [
+      {
+        "title": "Defina el punto de la máquina",
+        "text": "Indique el componente, la superficie rígida de montaje, la dirección de medición, el rango de velocidad y los estados normales de carga."
+      },
+      {
+        "title": "Especifique la medición",
+        "text": "Seleccione medición uniaxial o triaxial y especifique las frecuencias de interés de la máquina dentro del rango de medición de 10–5000 Hz. El rango de velocidad de vibración RMS es de 0–50 mm/s, con una resolución de visualización de 0,1 mm/s. Acuerde el ciclo de adquisición, la transmisión y los requisitos de calibración."
+      },
+      {
+        "title": "Planifique el despliegue completo",
+        "text": "Revise las condiciones de la sonda y del cable, la ubicación del terminal, la cobertura de radio, la transmisión, las alertas y la entrega de datos a la plataforma."
+      }
+    ]
+  },
+  "specifications": {
+    "description": "Los valores publicados de la familia ofrecen una referencia inicial. La sonda suministrada, la definición de medición y la configuración completa determinan la especificación del punto de su máquina. Solicite la banda utilizable, los ajustes de adquisición, el plano de montaje y la documentación de calibración junto con la propuesta.",
+    "rows": [
+      {
+        "label": "Modelos publicados de la familia",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "Rango de velocidad de vibración RMS",
+        "value": "0–50 mm/s"
+      },
+      {
+        "label": "Rango de frecuencia de medición",
+        "value": "10–5000 Hz"
+      },
+      {
+        "label": "Ejes de medición",
+        "value": "Uniaxial o triaxial, según la configuración seleccionada"
+      },
+      {
+        "label": "Resolución de visualización de la velocidad de vibración RMS",
+        "value": "0,1 mm/s"
+      },
+      {
+        "label": "Condición de exactitud publicada",
+        "value": "±1 % en calibración a 80 Hz; confirme la especificación completa de medición suministrada"
+      },
+      {
+        "label": "Disposición de medición",
+        "value": "Sonda externa con cable en un punto rígido de la carcasa del rodamiento del motor o en un punto de medición de la máquina"
+      },
+      {
+        "label": "Variantes inalámbricas",
+        "value": "4G / NB-IoT / LoRa, según el modelo suministrado y la configuración regional"
+      },
+      {
+        "label": "Integración de datos",
+        "value": "MQTT incluido; confirme la ruta completa para la variante suministrada"
+      },
+      {
+        "label": "Grado de protección de la carcasa del terminal",
+        "value": "IP68; especifique por separado la idoneidad de la sonda, el cable y los conectores"
+      },
+      {
+        "label": "Temperatura de funcionamiento publicada",
+        "value": "De −20 °C a +70 °C; confirme los límites de cada componente para la instalación"
+      },
+      {
+        "label": "Temperatura de almacenamiento publicada",
+        "value": "De −20 °C a +80 °C"
+      },
+      {
+        "label": "Configuración del dispositivo",
+        "value": "Activación NFC / configuración local; actualizaciones OTA, según la configuración suministrada"
+      },
+      {
+        "label": "Referencia de duración de la batería",
+        "value": "Más de 10 años con transmisión cada hora bajo las condiciones especificadas; depende de la configuración y del régimen de funcionamiento"
+      }
+    ]
+  },
+  "faqHeading": {
+    "intro": "Respuestas para especificar la medición de maquinaria, planificar la instalación de la sonda con cable y conectar las lecturas al proceso de mantenimiento."
+  },
+  "faqs": [
+    {
+      "id": "faq-what-measures",
+      "question": "1. ¿Qué mide el sensor de vibración para maquinaria de Hitelecom?",
+      "paragraphs": [
+        "H Series de Hitelecom utiliza una sonda externa con cable para monitorizar la vibración de alta frecuencia en maquinaria. La velocidad de vibración se transmite como valor eficaz (RMS) en un rango de 0–50 mm/s, con una resolución de visualización de 0,1 mm/s. El rango de frecuencia de medición especificado es de 10–5000 Hz. Seleccione medición uniaxial o triaxial para la máquina y el punto de montaje y configure después el perfil de transmisión inalámbrica."
+      ],
+      "sources": [
+        "U1",
+        "S1",
+        "S17"
+      ],
+      "evidence": "Product range, axes, velocity RMS display resolution and measurement frequency range confirmed directly by the user on 2026-10-11; public resources support mounting and metric terminology."
+    },
+    {
+      "id": "faq-where-motor",
+      "question": "2. ¿Dónde debe montarse una sonda de vibración en un motor eléctrico?",
+      "paragraphs": [
+        "Monte la sonda directamente sobre una parte rígida autorizada de la carcasa del rodamiento del motor o de su tapa de extremo, cerca del rodamiento monitorizado. Utilice el método de montaje suministrado y una superficie de medición preparada. Registre el identificador del punto y la dirección uniaxial o la orientación triaxial. Fije el cable y ubique el terminal inalámbrico por separado para facilitar el acceso y la cobertura de radio."
+      ],
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "evidence": "Direct public manufacturer mounting and placement guidance."
+    },
+    {
+      "id": "faq-which-machines",
+      "question": "3. ¿Qué máquinas industriales son adecuadas para este método de monitorización?",
+      "paragraphs": [
+        "Los candidatos habituales incluyen motores eléctricos, bombas, ventiladores, compresores, reductores, transportadores, husillos de máquinas herramienta, agitadores y centrifugadoras. Seleccione un punto de medición rígido y fijo cerca del componente de interés y adapte la banda de frecuencia utilizable, el rango y las condiciones de instalación de la sonda suministrada a la máquina. Esta familia de sondas externas está diseñada para monitorizar vibración de alta frecuencia en maquinaria."
+      ],
+      "sources": [
+        "S3",
+        "S4",
+        "S7"
+      ],
+      "evidence": "Direct published machinery families; Hitelecom scope boundary comes from the user's instruction."
+    },
+    {
+      "id": "faq-probe-wireless",
+      "question": "4. ¿Cómo funciona una sonda con cable junto a un terminal de monitorización inalámbrico?",
+      "paragraphs": [
+        "El cable de la sonda conecta el punto mecánico de medición con el terminal de monitorización. La conexión configurada de 4G, NB-IoT o LoRa proporciona el enlace remoto de datos. Planifique conjuntamente la posición de la sonda, la longitud de cable autorizada y la ubicación del terminal, teniendo en cuenta el acceso a la máquina, la protección del cable y la cobertura de radio."
+      ],
+      "sources": [
+        "S17"
+      ],
+      "evidence": "Cable-installation demand is publicly documented; actual architecture and available radio options are Hitelecom product facts supplied by Root."
+    },
+    {
+      "id": "faq-frequency-specification",
+      "question": "5. ¿Cuál es el rango de frecuencia de medición de vibración?",
+      "paragraphs": [
+        "El rango de frecuencia de medición especificado es de 10–5000 Hz. Es el rango de frecuencias de vibración medidas en la sonda, no una frecuencia de transmisión inalámbrica. La condición de calibración a 80 Hz es una referencia de calibración independiente. Indique la velocidad de la máquina, los componentes que desea monitorizar y la disposición de montaje para adaptar el perfil de adquisición y transmisión a la aplicación."
+      ],
+      "sources": [
+        "U1",
+        "S1",
+        "S2",
+        "S10"
+      ],
+      "evidence": "10–5,000 Hz confirmed directly by the user on 2026-10-11. Public technical guidance supports separating frequency response, mounting and acquisition settings."
+    },
+    {
+      "id": "faq-metric-definition",
+      "question": "6. ¿El sensor admite medición de vibración uniaxial o triaxial?",
+      "paragraphs": [
+        "Sí. Hay configuraciones uniaxiales y triaxiales disponibles. Una configuración uniaxial mide la vibración en la dirección de medición seleccionada. Una configuración triaxial mide en tres ejes en el mismo punto de montaje. Especifique la configuración y la orientación de montaje para su máquina; la resolución de visualización de la velocidad de vibración RMS es de 0,1 mm/s."
+      ],
+      "sources": [
+        "U1"
+      ],
+      "evidence": "Axes and RMS display resolution confirmed directly by the user on 2026-10-11. This replaces the previous broad metric-definition answer and does not claim peak or peak-to-peak outputs."
+    },
+    {
+      "id": "faq-variable-speed",
+      "question": "7. ¿Cómo deben compararse las lecturas en máquinas de velocidad variable o funcionamiento cíclico?",
+      "paragraphs": [
+        "Registre la velocidad, la carga y la etapa de funcionamiento de la máquina en el plan de monitorización. Establezca referencias comparables para los estados relevantes, como una velocidad estable de funcionamiento o una fase reproducible del ciclo de producción. Revise los cambios según esas condiciones y el historial de mantenimiento para que la tendencia ayude a orientar la inspección."
+      ],
+      "sources": [
+        "S5",
+        "S6",
+        "S18"
+      ],
+      "evidence": "Operating-state importance is documented publicly; exact Hitelecom algorithms or automatic state synchronisation are not claimed."
+    },
+    {
+      "id": "faq-probe-installation",
+      "question": "8. ¿Qué ayuda a conservar una medición útil de alta frecuencia?",
+      "paragraphs": [
+        "Utilice el método de montaje autorizado sobre una superficie de medición limpia, plana y rígida. El acoplamiento mecánico influye en la respuesta en frecuencia una vez montada la sonda, por lo que deben revisarse la interfaz del sensor y cualquier base de montaje para la banda objetivo. Fije el cable con alivio de tensión y una holgura adecuada y tiéndalo de forma segura respecto a piezas móviles y cableado de potencia del motor."
+      ],
+      "sources": [
+        "S2",
+        "S17"
+      ],
+      "evidence": "Direct public mounting and cabling technical guidance."
+    },
+    {
+      "id": "faq-maintenance-workflow",
+      "question": "9. ¿Cómo pueden las tendencias de vibración apoyar el proceso de mantenimiento?",
+      "paragraphs": [
+        "Acuerde una referencia normal de funcionamiento, los valores que deben revisarse y una respuesta práctica de inspección. Un cambio sostenido en un punto de medición identificado puede ayudar al equipo a priorizar comprobaciones y comparar lecturas antes y después del mantenimiento. La interpretación detallada de fallos depende de la máquina, los datos de medición disponibles y el método de análisis utilizado en el proyecto."
+      ],
+      "sources": [
+        "S6",
+        "S17"
+      ],
+      "evidence": "Public documentation distinguishes trending/anomaly review from detailed machinery diagnosis; no Hitelecom diagnosis guarantee is introduced."
+    },
+    {
+      "id": "faq-quotation-details",
+      "question": "10. ¿Qué información ayuda a Hitelecom a preparar una configuración adecuada?",
+      "paragraphs": [
+        "Indique el tipo de máquina, el rango de velocidad, el ciclo de funcionamiento, los componentes objetivo, fotografías de los puntos de montaje propuestos y si necesita medición uniaxial o triaxial. Incluya el entorno, los requisitos del recorrido del cable, los intervalos de medición y transmisión, el país y la plataforma o el enlace de comunicaciones preferidos. Estos detalles ayudan a adaptar la sonda, el terminal y los requisitos de datos a su instalación."
+      ],
+      "sources": [
+        "S1",
+        "S2",
+        "S17"
+      ],
+      "evidence": "Practical specification checklist derived from public selection and installation considerations. This is an editorial buying-support question, not a verified customer FAQ."
+    }
+  ],
+  "evidence": {
+    "reviewed": "2026-10-11",
+    "officialPage": "https://www.hitelecom.com/product/vibration-sensor",
+    "officialDatasheet": "https://www.hitelecom.com/downloads/vibration-sensor-datasheet.pdf",
+    "scopeConfirmedBy": "User instruction: external cabled high-frequency machinery product; future low-frequency product separate",
+    "sources": [
+      {
+        "id": "S1",
+        "organization": "PCB Piezotronics",
+        "title": "Motor vibration sensors",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/motor-vibration",
+        "ref": "turn180view1",
+        "supports": "Motor monitoring; drive-end/non-drive-end bearing locations; mechanical coupling and output/processing considerations."
+      },
+      {
+        "id": "S2",
+        "organization": "PCB Piezotronics",
+        "title": "Guidelines for mounting test accelerometers",
+        "url": "https://www.pcb.com/resources/technical-information/mounting",
+        "ref": "turn180view0",
+        "supports": "A smooth rigid interface and stud mounting can preserve high-frequency response; added bases or soft interfaces change mounted response. Installation must follow the actual sensor instructions."
+      },
+      {
+        "id": "S3",
+        "organization": "ifm",
+        "title": "VVB vibration sensor applications",
+        "url": "https://www.ifm.com/us/en/us/learn-more/vibration/vvb0/io-link-vibration-applications",
+        "ref": "turn180view6",
+        "supports": "Electric motors, centrifugal pumps, direct/indirect-drive fans and reducers; locations near the monitored component; examples of separate motor and driven-equipment points."
+      },
+      {
+        "id": "S4",
+        "organization": "ifm",
+        "title": "Applications of diagnostic electronics and acceleration sensors",
+        "url": "https://www.ifm.com/in/en/shared/technologies/from-vibration-to-real-time-maintenance/vse-vsa-applications",
+        "ref": "turn180view3",
+        "supports": "Machine tools, decanters, compressors, gearboxes, storage/retrieval systems, cross-belt sorters, conveyors, fillers, mixers, shredders and mills. The sophisticated diagnostic capabilities described belong to ifm's specified complete system."
+      },
+      {
+        "id": "S5",
+        "organization": "SKF Technical Support",
+        "title": "On-line surveillance monitoring of gearboxes",
+        "url": "https://skftechnicalsupport.zendesk.com/hc/en-us/articles/360032626714-On-line-Surveillance-Monitoring-of-Gearboxes",
+        "ref": "turn180view4",
+        "supports": "Local transmission paths matter; complex gearboxes have overlapping sources and operating-speed/load variation. Single-point overall readings are not identical to component diagnosis."
+      },
+      {
+        "id": "S6",
+        "organization": "SKF Technical Support",
+        "title": "SKF Axios technical FAQ",
+        "url": "https://skftechnicalsupport.zendesk.com/hc/en-us/articles/8104349791891-SKF-Axios-Technical-FAQ",
+        "ref": "turn180view5",
+        "supports": "Public questions on machinery suitability, placement, variable speeds and inspection after anomaly notification. These are SKF's published FAQ, not Hitelecom customer questions."
+      },
+      {
+        "id": "S7",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Condition monitoring",
+        "url": "https://wilcoxon.com/industries-and-applications/condition-monitoring-products/",
+        "ref": "turn180view2",
+        "supports": "Established monitored machinery families include motors, pumps, fans, gearboxes and compressors."
+      },
+      {
+        "id": "S8",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Water and wastewater pump monitoring",
+        "url": "https://wilcoxon.com/industries-and-applications/water-and-wastewater/",
+        "ref": "turn184view3",
+        "supports": "Water/wastewater motor and pump monitoring, baseline/trending, direct-drive and vertical pump arrangements."
+      },
+      {
+        "id": "S9",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Food and beverage",
+        "url": "https://wilcoxon.com/industries-and-applications/food-and-beverage/",
+        "ref": "turn183view1",
+        "supports": "Motors, pumps, fillers, cappers and conveyor equipment in food/beverage production; environmental suitability is a separate selection requirement."
+      },
+      {
+        "id": "S10",
+        "organization": "PCB Piezotronics",
+        "title": "Rotary screw compressors",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/rotary-screw-compressors",
+        "ref": "turn184view4",
+        "supports": "High-frequency compressor applications; casing locations close to radial bearings; bandwidth must match the engineering objective."
+      },
+      {
+        "id": "S11",
+        "organization": "PCB Piezotronics",
+        "title": "Machine tool spindles",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/machine-tool-spindles",
+        "ref": "turn185view2",
+        "supports": "Machine-tool vibration trends; cutting-process vibration, cutting fluids, metal chips and cable protection considerations."
+      },
+      {
+        "id": "S12",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Pharmaceutical",
+        "url": "https://wilcoxon.com/industries-and-applications/pharmaceutical/",
+        "ref": "turn184view1",
+        "supports": "Mixers, motors, pumps, vacuum dryers, conveyor/filling drives; environment and contaminants require review."
+      },
+      {
+        "id": "S13",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Pulp and paper",
+        "url": "https://wilcoxon.com/industries-and-applications/pulp-and-paper/",
+        "ref": "turn184view2",
+        "supports": "Paper rollers, calenders, chippers, compressors, motors, pumps and winders; wet and heated environments need matching hardware."
+      },
+      {
+        "id": "S14",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Cement",
+        "url": "https://wilcoxon.com/industries-and-applications/cement/",
+        "ref": "turn183view0",
+        "supports": "Crushing, grinding, material transport, mills, separators, motors, fans and compressors in cement production."
+      },
+      {
+        "id": "S15",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Mining",
+        "url": "https://wilcoxon.com/industries-and-applications/mining/",
+        "ref": "turn184view0",
+        "supports": "Mining motors, gearboxes, conveyors, fans, generators and pumps; hazardous-area approvals belong to the actual selected equipment."
+      },
+      {
+        "id": "S16",
+        "organization": "PCB Piezotronics",
+        "title": "Vibratory screens and feeders",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/vibratory-screens-and-feeders",
+        "ref": "turn184view6",
+        "supports": "Screen/feeder machinery is an established vibration application; the proposed Hitelecom scene is restricted to drive/exciter bearing-housing trends and requires bandwidth/amplitude review."
+      },
+      {
+        "id": "S17",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Vibration monitoring FAQs",
+        "url": "https://wilcoxon.com/resources/faqs/",
+        "ref": "turn184view5",
+        "supports": "Metric/output distinctions, mounting, cable routing, strain relief, environmental effects and cable-length review are public engineering questions. Wilcoxon's example limits and hardware are not Hitelecom specifications."
+      },
+      {
+        "id": "S18",
+        "organization": "ifm",
+        "title": "Decanter centrifuges",
+        "url": "https://www.ifm.com/in/en/shared/landingpages/monitoring-decanters",
+        "ref": "turn180view7",
+        "supports": "Centrifuge vibration depends on multiple components and operating states; speed/process context supports interpretation."
+      }
+    ],
+    "notice": "The sources establish general machinery-monitoring practice and public engineering questions. These drafts are application proposals, not verified Hitelecom customer installations, and no search-volume or customer-enquiry-log evidence has been obtained.",
+    "userConfirmedSpecifications": {
+      "source": "User messages in this conversation, 2026-10-11",
+      "velocityRmsRange": "0–50 mm/s",
+      "measurementAxes": "Single-axis or triaxial",
+      "velocityRmsDisplayResolution": "0.1 mm/s",
+      "measurementFrequencyRange": "10–5,000 Hz",
+      "installationDiagram": "Probe directly on the motor bearing end shield; terminal separately mounted"
+    }
+  }
+}

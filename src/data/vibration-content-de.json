@@ -1,0 +1,1626 @@
+{
+  "seo": {
+    "title": "Hochfrequenz-Schwingungssensor für Maschinen | Hitelecom",
+    "description": "Hochfrequenz-Schwingungssensoren von Hitelecom: RMS-Schwinggeschwindigkeit 0–50 mm/s, 10–5000 Hz, ein-/dreiachsige Messung, 4G, NB-IoT oder LoRa."
+  },
+  "hero": {
+    "description": "Der Schwingungssensor der Hitelecom H Series verbindet eine externe, kabelgebundene Messsonde mit einem drahtlosen Terminal zur Überwachung hochfrequenter Maschinenschwingungen. Montieren Sie die Messsonde an einem starren Messpunkt am Motorlagergehäuse und übertragen Sie die konfigurierten Messwerte an Ihr Instandhaltungsteam. Wählen Sie eine einachsige oder dreiachsige Messung mit einem RMS-Schwinggeschwindigkeitsbereich von 0–50 mm/s, einer Anzeigeauflösung von 0,1 mm/s und einem Messfrequenzbereich von 10–5000 Hz. Stimmen Sie die Verbindung über 4G, NB-IoT oder LoRa und das Übertragungsprofil auf Ihre Installation ab.",
+    "datasheet_url": "/downloads/vibration-sensor-datasheet.pdf"
+  },
+  "features": [
+    {
+      "title": "Messsonde an der Maschine",
+      "text": "Platzieren Sie die externe, kabelgebundene Messsonde am ausgewählten mechanischen Messpunkt und das Terminal an einem gut zugänglichen Standort mit geeigneter Funkabdeckung."
+    },
+    {
+      "title": "Schwinggeschwindigkeit als RMS-Effektivwert",
+      "text": "Messen Sie die RMS-Schwinggeschwindigkeit von 0–50 mm/s mit einer Anzeigeauflösung von 0,1 mm/s. Wählen Sie die einachsige oder dreiachsige Messung passend zur Maschine und zum Messziel."
+    },
+    {
+      "title": "Messfrequenzbereich von 10–5000 Hz",
+      "text": "Überwachen Sie Maschinenschwingungen im Messfrequenzbereich von 10–5000 Hz. Stimmen Sie die Montage der Messsonde und das Erfassungsprofil auf die für Ihre Anlage relevanten Frequenzen ab."
+    },
+    {
+      "title": "Drahtlose Fernübertragung",
+      "text": "Verbinden Sie verteilte Messpunkte über die gelieferte 4G-, NB-IoT- oder LoRa-Variante mit der vereinbarten Überwachungsplattform."
+    },
+    {
+      "title": "Konfigurierter Alarmablauf",
+      "text": "Definieren Sie projektspezifische Grenzwerte, Benachrichtigungsempfänger und die anschließende Inspektion anhand der ausgewählten Messgröße und der normalen Betriebsbedingungen."
+    },
+    {
+      "title": "Praxisgerechte Gerätekonfiguration",
+      "text": "Für die Produktfamilie sind NFC-Aktivierung, lokale Konfiguration und OTA-Updates aufgeführt. Bestätigen Sie die beim gelieferten Modell verfügbaren Funktionen."
+    }
+  ],
+  "measurement": {
+    "description": "Ein aussagekräftiger Maschinentrend beginnt mit einem reproduzierbaren Messpunkt, einer klar definierten Messgröße und den zugehörigen Betriebsbedingungen. Legen Sie diese gemeinsam fest, bevor Sie Messsonde und Übertragungsprofil auswählen.",
+    "cards": [
+      {
+        "title": "Schwinggeschwindigkeit als RMS-Effektivwert",
+        "text": "Der Effektivwert (RMS) der Schwinggeschwindigkeit wird in mm/s angegeben. Der Messbereich beträgt 0–50 mm/s bei einer Anzeigeauflösung von 0,1 mm/s. Vergleichen Sie Messwerte am selben Maschinenpunkt unter vergleichbaren Betriebsbedingungen.",
+        "project_brief": "Einachsig oder dreiachsig · Montagepunkt · Betriebsdrehzahl · Normaler Referenzzustand"
+      },
+      {
+        "title": "Messfrequenzbereich",
+        "text": "Der angegebene Messfrequenzbereich beträgt 10–5000 Hz. Er beschreibt die von der Messsonde erfassten Schwingungsfrequenzen. Wählen Sie das drahtlose Übertragungsintervall unabhängig davon passend zu Ihrem Instandhaltungsablauf.",
+        "project_brief": "Relevante Maschinenfrequenzen · Sondenmontage · Erfassungsprofil · Übertragungsintervall"
+      },
+      {
+        "title": "Betriebskontext",
+        "text": "Maschinendrehzahl, Last und Produktionsphase liefern den Kontext für jeden Vergleich. Halten Sie diese Angaben im Überwachungsplan oder in den verfügbaren Betriebsaufzeichnungen fest.",
+        "project_brief": "Drehzahlbereich · Lastzustand · Produktionszyklus · Normaler Referenzzustand"
+      }
+    ],
+    "installation_text": "Montieren Sie die externe Messsonde direkt auf einem freigegebenen, starren Motorlagergehäuse oder auf einer Messfläche am Lagerschild in der Nähe des ausgewählten Lagers. Wählen Sie bei einer einachsigen Konfiguration die Messrichtung und legen Sie bei einer dreiachsigen Konfiguration die Orientierung aller drei Achsen fest. Sichern Sie das Sondenkabel mit einer geeigneten Zugentlastung und halten Sie Abstand zu rotierenden Teilen und heißen Oberflächen. Montieren Sie das drahtlose Terminal separat innerhalb seiner Umgebungsgrenzwerte und prüfen Sie die Funkabdeckung an dieser Position. Beachten Sie die mitgelieferte Montageanleitung, Kabelspezifikation und Installationszeichnung."
+  },
+  "workflow": {
+    "profile_text": "Die Erfassung bestimmt, wie Schwingungen gemessen werden; die Übertragung bestimmt, wann das Terminal Daten sendet. Legen Sie Messfrequenzband, Erfassungsanforderungen, Übertragungsintervall und Alarmreaktion als gemeinsames Betriebsprofil fest.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Messen",
+        "text": "Die externe Messsonde misst am gekennzeichneten Maschinenpunkt. Stimmen Sie die gelieferte Messgröße, das Frequenzband und die Erfassungseinstellungen auf das Überwachungsziel ab."
+      },
+      {
+        "number": "02",
+        "title": "Übertragen",
+        "text": "Das Terminal sendet die konfigurierten Messwerte über die ausgewählte Mobilfunk- oder LoRa-Verbindung. Vereinbaren Sie den Übertragungszeitplan und den vollständigen Datenweg bis zur Plattform."
+      },
+      {
+        "number": "03",
+        "title": "Prüfen und reagieren",
+        "text": "Vergleichen Sie übereinstimmende Betriebszustände, prüfen Sie konfigurierte Benachrichtigungen und geben Sie dem Instandhaltungsteam einen vereinbarten Inspektionsschritt vor. Dokumentieren Sie das Ergebnis für den nächsten Vergleich."
+      }
+    ],
+    "battery_text": "Die veröffentlichte Referenz zur Batterielebensdauer liegt bei stündlicher Datenübertragung unter festgelegten Bedingungen über 10 Jahren. Diese Referenz bezieht sich auf das konfigurierte Betriebsprofil des Terminals. Die tatsächliche Lebensdauer hängt von der gelieferten Batterie, der Messsonde und ihrer Erfassungsbeanspruchung, dem Übertragungszeitplan, der Funkabdeckung, erneuten Übertragungen und der Temperatur ab. Fordern Sie eine Lebensdauerabschätzung für die vollständige Konfiguration an, die Sie einsetzen möchten.",
+    "platform_text": "Verbinden Sie die konfigurierten Messwerte mit Hitelecom Cloud oder einer kompatiblen Kundenplattform. MQTT ist in der Spezifikation der Produktfamilie aufgeführt. Vereinbaren Sie Nachrichtenformat, Endpunkt und unterstützte Authentifizierung passend zur ausgewählten Funkvariante und zur weiterführenden Verbindung."
+  },
+  "applicationSection": {
+    "title": "Maschinen in Ihrem gesamten Betrieb.",
+    "valueHeading": "Ein klar definierter Messpunkt für jedes Projekt.",
+    "description": "Entdecken Sie 48 praxisnahe Überwachungsaufgaben in acht Maschinenkategorien. Jede Aufgabe beschreibt einen festen Sondenmesspunkt, den für Vergleiche relevanten Betriebskontext und die Angaben zur Auswahl einer geeigneten Konfiguration.",
+    "note": "Die Fotos veranschaulichen Maschinenumgebungen. Wählen Sie den tatsächlichen Messpunkt, das Sondenfrequenzband und die Installation gemeinsam mit Ihrem Maschineningenieur."
+  },
+  "groups": [
+    {
+      "id": "motors-drives",
+      "title": "Elektromotoren und Fabrikantriebe",
+      "jumpLabel": "Motoren und Antriebe",
+      "intro": "Vergleichen Sie Schwingungstrends an ausgewählten festen Motormesspunkten in Produktionslinien, Aggregaten und rotierenden Antriebssystemen.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Lagergehäuse eines Elektromotors mit starrem, feststehendem Lagerschild",
+        "caption": "Umgebung eines Motorlagergehäuses · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "production-motor",
+        "variable-speed-motor",
+        "hydraulic-powerpack",
+        "injection-moulding-drive",
+        "generator-alternator",
+        "motor-test-bench"
+      ]
+    },
+    {
+      "id": "pumps-water",
+      "title": "Pumpen und Wassersysteme",
+      "jumpLabel": "Pumpen und Wasser",
+      "intro": "Platzieren Sie die Messsonde in der Nähe des Motor- oder Pumpenlagers und setzen Sie Veränderungen in Beziehung zu Durchfluss, Druck und Betriebsbelastung.",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "Trocken aufgestellte Kreiselpumpen und Motorantriebe in einer Wasserpumpstation",
+        "caption": "Maschinenumgebung einer Wasserpumpe · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "booster-pumps",
+        "wastewater-dry-pumps",
+        "vertical-pump-motors",
+        "cooling-water-pumps",
+        "sanitary-process-pumps",
+        "chemical-transfer-pumps"
+      ]
+    },
+    {
+      "id": "fans-air-systems",
+      "title": "Ventilatoren, Lüftung und Luftsysteme",
+      "jumpLabel": "Ventilatoren und Lüftung",
+      "intro": "Überwachen Sie feste Messpunkte am Ventilatorantrieb und an den Lagern statt Schaufeln, flexibler Luftkanäle oder Gebäudebewegungen.",
+      "image": {
+        "name": "ahu-fan.webp",
+        "alt": "Ventilatorbaugruppe einer Lüftungsanlage mit zugänglichen, festen Motor- und Ventilatorlagergehäusen",
+        "caption": "Ventilator einer Lüftungsanlage · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "ahu-fans",
+        "industrial-exhaust",
+        "dust-extraction-fan",
+        "combustion-air-fan",
+        "drying-process-fan",
+        "aeration-blower-drive"
+      ]
+    },
+    {
+      "id": "compressors-vacuum",
+      "title": "Kompressoren und Vakuummaschinen",
+      "jumpLabel": "Kompressoren und Vakuum",
+      "intro": "Wählen Sie den Messpunkt nahe einem feststehenden Lagerbereich und stimmen Sie die Messspezifikation auf den Kompressorbetrieb ab.",
+      "image": {
+        "name": "air-compressors.webp",
+        "alt": "Industrielle, eingehauste Druckluftkompressoren in einem Technikraum",
+        "caption": "Umgebung von Druckluftanlagen · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "screw-air-compressor",
+        "reciprocating-compressor",
+        "refrigeration-compressor",
+        "rotary-vane-vacuum",
+        "dry-screw-vacuum",
+        "process-gas-compressor"
+      ]
+    },
+    {
+      "id": "gearboxes-handling",
+      "title": "Getriebe, Förderanlagen und Intralogistik",
+      "jumpLabel": "Getriebe und Förderanlagen",
+      "intro": "Messen Sie am ausgewählten Antriebs- oder Lagerbereich. Betriebsdrehzahl, Materiallast und Bewegungszyklen liefern den Kontext für Vergleiche.",
+      "image": {
+        "name": "gearbox-conveyor.webp",
+        "alt": "Industrieförderanlage mit feststehendem Getriebe und elektrischem Antriebsmotor",
+        "caption": "Umgebung eines Förderanlagengetriebes · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "belt-conveyor-drive",
+        "screw-conveyor-drive",
+        "bucket-elevator-drive",
+        "crossbelt-sorter-drive",
+        "asrs-hoist-drive",
+        "extruder-gearbox"
+      ]
+    },
+    {
+      "id": "machine-tools-metals",
+      "title": "Werkzeugmaschinen und Metallproduktion",
+      "jumpLabel": "Werkzeugmaschinen und Metall",
+      "intro": "Erfassen Sie lokale Maschinenschwingungen im relevanten Produktionszustand. Stimmen Sie Montage und Kabelschutz auf die Arbeitsumgebung ab.",
+      "image": {
+        "name": "cnc-spindle.webp",
+        "alt": "Spindel einer industriellen CNC-Maschine mit feststehendem Spindelgehäuse und geschütztem Bearbeitungsraum",
+        "caption": "Spindelumgebung einer Werkzeugmaschine · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "cnc-spindle",
+        "lathe-headstock",
+        "grinding-spindle",
+        "industrial-saw-spindle",
+        "rolling-line-drive",
+        "press-drive-bearings"
+      ]
+    },
+    {
+      "id": "process-food-pharma",
+      "title": "Prozess-, Lebensmittel-, Pharma- und Papiermaschinen",
+      "jumpLabel": "Prozessproduktion",
+      "intro": "Unterstützen Sie die Instandhaltung in der Produktion mit lokalen Maschinentrends und berücksichtigen Sie Prozessbelastung, Reinigbarkeit und Montagezugang.",
+      "image": {
+        "name": "mixer-drive.webp",
+        "alt": "Industrieller Behältermischer mit außenliegendem, feststehendem Elektromotor und Getriebe",
+        "caption": "Umgebung eines externen Mischerantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "industrial-mixer-drive",
+        "decanter-centrifuge",
+        "centrifugal-separator",
+        "filling-capping-drives",
+        "pharma-vacuum-dryer",
+        "paper-calender-bearings"
+      ]
+    },
+    {
+      "id": "heavy-processing",
+      "title": "Zerkleinerung, Mahltechnik und Schwerindustrie",
+      "jumpLabel": "Schwerindustrie",
+      "intro": "Wählen Sie den rotierenden Antrieb oder das feste Lagergehäuse für die Maschinenüberwachung und prüfen Sie Messbereich und Installation anhand der normalen prozessbedingten Anregung.",
+      "image": {
+        "name": "crusher-bearing.webp",
+        "alt": "Industriebrecher mit feststehendem Wellenlagergehäuse und Antriebsbaugruppe",
+        "caption": "Umgebung eines Brecherlagergehäuses · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "crusher-bearing-housing",
+        "pulverizer-mill-drive",
+        "industrial-shredder-drive",
+        "screen-exciter-bearing",
+        "cement-mill-gearbox",
+        "wood-chipper-bearings"
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "production-motor",
+      "group": "motors-drives",
+      "title": "Elektromotoren in Produktionslinien",
+      "description": "Verfolgen Sie Veränderungen am Motorlagergehäuse und geben Sie dem Instandhaltungsteam eine reproduzierbare Referenz für regelmäßige Inspektionen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Festes Motorlagerschild nahe dem antriebsseitigen Lager.",
+      "installation": "Verwenden Sie einen freigegebenen, starren Messpunkt, dokumentieren Sie die Messrichtung und führen Sie das Sondenkabel außerhalb der Kupplungsschutzhaube.",
+      "projectBrief": "Motorleistung, Drehzahl, Lastprofil, Lagerpositionen und ein Foto des Montagepunkts.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Lagergehäuse eines Elektromotors mit starrem, feststehendem Lagerschild",
+        "caption": "Umgebung eines Motorlagergehäuses · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "variable-speed-motor",
+      "group": "motors-drives",
+      "title": "Drehzahlvariable Motorantriebe",
+      "description": "Vergleichen Sie Messwerte innerhalb übereinstimmender Drehzahl- und Lastbereiche, damit normale Änderungen der Betriebsbelastung im Trend erkennbar bleiben.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Zugängliches Lagergehäuse auf der Antriebs- oder Nichtantriebsseite.",
+      "installation": "Legen Sie Drehzahlbereiche fest, bevor Sie einen Referenzzustand definieren, und behalten Sie die Messposition nach Wartungsarbeiten bei.",
+      "projectBrief": "Drehzahlbereich, Betriebszustände, Einschaltdauer und vom Antrieb verfügbare Daten.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Lagergehäuse eines Elektromotors mit starrem, feststehendem Lagerschild",
+        "caption": "Umgebung eines Motorlagergehäuses · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "id": "hydraulic-powerpack",
+      "group": "motors-drives",
+      "title": "Motoren von Hydraulikaggregaten",
+      "description": "Beobachten Sie den Elektromotor eines Hydraulikaggregats und unterstützen Sie Prüfungen bei vergleichbaren Zyklen des Druckbedarfs.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Motorlagergehäuse am feststehenden Hydraulikaggregat.",
+      "installation": "Dokumentieren Sie Pumpenlast und Motorbetrieb. Montieren Sie die Messsonde am Motor statt am Blech des Vorratsbehälters.",
+      "projectBrief": "Aufbau des Hydraulikaggregats, Motordrehzahl, hydraulischer Betriebszyklus und Kabelverlauf.",
+      "image": {
+        "name": "hydraulic-power.webp",
+        "alt": "Hydraulikaggregat mit Elektromotor und Pumpe oberhalb eines Vorratsbehälters",
+        "caption": "Umgebung eines Hydraulikaggregats · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "id": "injection-moulding-drive",
+      "group": "motors-drives",
+      "title": "Hydraulikantriebe von Spritzgießmaschinen",
+      "description": "Verfolgen Sie motorseitige Schwingungen über reproduzierbare Spritzgießzyklen und priorisieren Sie Antriebsinspektionen anhand der Produktionsaufzeichnungen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Fester Lagerbereich des Hydraulikantriebsmotors.",
+      "installation": "Wählen Sie einen zugänglichen, feststehenden Messpunkt und vergleichen Sie dieselbe Zyklusphase. Vermeiden Sie Schläuche und abnehmbare Schutzabdeckungen.",
+      "projectBrief": "Maschinentyp, Antriebsanordnung, Zyklusphasen und Wartungszugang.",
+      "image": {
+        "name": "hydraulic-power.webp",
+        "alt": "Hydraulikaggregat mit Elektromotor und Pumpe oberhalb eines Vorratsbehälters",
+        "caption": "Umgebung eines Hydraulikaggregats · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "id": "generator-alternator",
+      "group": "motors-drives",
+      "title": "Lager von Generatoren",
+      "description": "Erstellen Sie einen Schwingungsverlauf für die rotierende elektrische Maschine eines Stromerzeugungsaggregats bei definierter Betriebslast und Drehzahl.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Zugängliches, feststehendes Generatorlagergehäuse.",
+      "installation": "Trennen Sie die Generatorüberwachung von Schwingungen des Verbrennungsmotorrahmens und bestätigen Sie zulässige Temperatur, Messbereich und Kabelschutz.",
+      "projectBrief": "Generatoraufbau, normale Drehzahl, Lastbereich und Umgebungsbedingungen.",
+      "image": {
+        "name": "generator-alternator.webp",
+        "alt": "Industrielles Stromerzeugungsaggregat mit Generator und zugänglichen, feststehenden Lagergehäusen",
+        "caption": "Umgebung von Stromerzeugungsaggregat und Generator · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S15"
+      ]
+    },
+    {
+      "id": "motor-test-bench",
+      "group": "motors-drives",
+      "title": "End-of-Line-Prüfstände für Motoren",
+      "description": "Erfassen Sie vergleichbare Schwingungsmesswerte während eines definierten Probelaufs zur Unterstützung eines vereinbarten Prüf- oder Abnahmeablaufs.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Ein reproduzierbarer, starrer Messpunkt am Gehäuse des Prüfmotors.",
+      "installation": "Legen Sie Drehzahl, Last und Montageverfahren im Prüfablauf fest. Verwenden Sie für den Motor freigegebene Abnahmegrenzwerte.",
+      "projectBrief": "Prüfsequenz, erwartete Amplitude, benötigte Messgröße und reproduzierbarer Aufbau der Prüfvorrichtung.",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "Lagergehäuse eines Elektromotors mit starrem, feststehendem Lagerschild",
+        "caption": "Umgebung eines Motorlagergehäuses · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "booster-pumps",
+      "group": "pumps-water",
+      "title": "Kommunale Druckerhöhungspumpen",
+      "description": "Überwachen Sie ausgewählte Motor- und Pumpenmesspunkte an Betriebs- und Reserveaggregaten zur Unterstützung der Instandhaltungsplanung in Pumpstationen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Feststehendes Motorlagerschild oder zugängliches Pumpenlagergehäuse.",
+      "installation": "Kennzeichnen Sie jeden Messpunkt separat und vergleichen Sie gleiche Betriebsbedingungen. Halten Sie Kabelschlaufen von Kupplungen fern.",
+      "projectBrief": "Pumpenaufbau, Drehzahl, Durchfluss- und Druckanforderungen sowie Anzahl der Messpunkte.",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "Trocken aufgestellte Kreiselpumpen und Motorantriebe in einer Wasserpumpstation",
+        "caption": "Maschinenumgebung einer Wasserpumpe · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "id": "wastewater-dry-pumps",
+      "group": "pumps-water",
+      "title": "Antriebe von Abwasserpumpstationen",
+      "description": "Beobachten Sie zugängliche, trocken aufgestellte Pumpen- und Motorbaugruppen und vergleichen Sie Trends mit den Aufzeichnungen der Pumpzyklen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Trockenes, zugängliches Motor- oder Pumpenlagergehäuse.",
+      "installation": "Prüfen Sie Feuchtigkeit, Reinigungschemikalien und den Schutz der Steckverbinder. Eine Unterwasserinstallation erfordert eine gesonderte Eignungsprüfung.",
+      "projectBrief": "Trocken- oder Unterwasseranordnung, Pumpzyklus, Standortfeuchtigkeit und erlaubter Zugang.",
+      "image": {
+        "name": "wastewater-pumps.webp",
+        "alt": "Trocken aufgestellte Abwasserpumpen mit zugänglichen Motor- und Lagerbereichen",
+        "caption": "Umgebung trocken aufgestellter Abwasserpumpen · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8"
+      ]
+    },
+    {
+      "id": "vertical-pump-motors",
+      "group": "pumps-water",
+      "title": "Motorlager vertikaler Pumpen",
+      "description": "Überwachen Sie einen ausgewählten, festen Lagerbereich am Motor einer vertikalen Pumpe und erfassen Sie Veränderungen während des normalen Betriebs.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Motorlagergehäuse oberhalb der Pumpenkonstruktion.",
+      "installation": "Dokumentieren Sie die gewählte Messrichtung und unterscheiden Sie den lokalen Motorwert von Bewegungen der gesamten Pumpe oder des Fundaments.",
+      "projectBrief": "Zeichnung der vertikalen Baugruppe, Motordrehzahl, Lagerpositionen und unterstütztes Messfrequenzband.",
+      "image": {
+        "name": "vertical-pump.webp",
+        "alt": "Vertikaler Pumpenmotor mit feststehendem Motorgehäuse oberhalb der Pumpe",
+        "caption": "Umgebung eines vertikalen Pumpenmotors · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8",
+        "S1"
+      ]
+    },
+    {
+      "id": "cooling-water-pumps",
+      "group": "pumps-water",
+      "title": "Prozesskühlwasser-Zirkulation",
+      "description": "Führen Sie einen Schwingungstrend für Umwälzpumpen, die Produktionsanlagen versorgen, und vergleichen Sie Messwerte bei stabilem Prozessbedarf.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Zugängliche Messpunkte an Pumpen- und Motorlagergehäusen.",
+      "installation": "Wählen Sie starre Gehäuse statt angeschlossener Rohrleitungen und dokumentieren Sie den Betriebszustand beim Wechsel der Betriebspumpen.",
+      "projectBrief": "Pumpentyp, Drehzahl, Wassertemperatur und Strategie für Betriebs- und Reservepumpen.",
+      "image": {
+        "name": "scene-outdoor-pumping.webp",
+        "alt": "Trocken zugängliche Motor-Pumpen-Aggregate einer Wasserpumpanlage im Freien",
+        "caption": "Pumpenanlage im Freien · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "id": "sanitary-process-pumps",
+      "group": "pumps-water",
+      "title": "Prozesspumpen für Lebensmittel und Getränke",
+      "description": "Beobachten Sie motorseitige oder am Lagergehäuse auftretende Schwingungen einer hygienischen Pumpenlinie. Halten Sie die Installation außerhalb des Produktkontaktbereichs.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, feststehendes Antriebs- oder Lagergehäuse.",
+      "installation": "Vereinbaren Sie hygienegerechte Montage, Belastung durch Nassreinigung und Kabelreinigung. Bewerten Sie die vollständige Messsonden- und Steckverbinderbaugruppe.",
+      "projectBrief": "Reinigungsverfahren, Prozesstemperatur, Montagefreigabe und Betriebszustände der Pumpe.",
+      "image": {
+        "name": "sanitary-pump.webp",
+        "alt": "Hygienische Edelstahl-Kreiselpumpe mit externem Motorantrieb",
+        "caption": "Umgebung einer hygienischen Prozesspumpe · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S9"
+      ]
+    },
+    {
+      "id": "chemical-transfer-pumps",
+      "group": "pumps-water",
+      "title": "Chemikalien-Förderpumpen in freigegebenen Bereichen",
+      "description": "Vergleichen Sie Schwingungsveränderungen an geeigneten Pumpenantrieben und nutzen Sie die Ergebnisse zusammen mit Druck-, Durchfluss- und Instandhaltungsaufzeichnungen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Zugängliches, feststehendes Lagergehäuse außerhalb des Flüssigkeitswegs.",
+      "installation": "Prüfen Sie chemische Belastung, Temperatur und Bereichsklassifizierung, bevor Sie Messsonde, Terminal und Kabel auswählen.",
+      "projectBrief": "Chemische Umgebung, Ex-Bereichsklassifizierung, Drehzahl und freigegebener Installationspunkt.",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "Trocken aufgestellte Kreiselpumpe mit Motorantrieb und festem Maschinenmessbereich",
+        "caption": "Umgebung einer trocken aufgestellten Kreiselpumpe · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "id": "ahu-fans",
+      "group": "fans-air-systems",
+      "title": "Ventilatorantriebe in Lüftungsgeräten",
+      "description": "Verfolgen Sie die Schwingungen des Antriebs und der Lageranordnung eines Lüftungsventilators zur Unterstützung der Inspektion gebäudetechnischer Anlagen in genutzten Gebäuden.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Festes Motor- oder Ventilatorlagergehäuse innerhalb des freigegebenen Wartungsbereichs.",
+      "installation": "Halten Sie die Messsonde von Laufrad und Riementrieb fern. Unterscheiden Sie die antriebsseitige Messung von Schwingungen der Gehäusebleche.",
+      "projectBrief": "Direkt- oder Riemenantrieb, Ventilatordrehzahl, Wartungszugang und Kabelverlauf.",
+      "image": {
+        "name": "ahu-fan.webp",
+        "alt": "Ventilatorbaugruppe einer Lüftungsanlage mit zugänglichen, festen Motor- und Ventilatorlagergehäusen",
+        "caption": "Ventilator einer Lüftungsanlage · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "id": "industrial-exhaust",
+      "group": "fans-air-systems",
+      "title": "Industrie-Abluftventilatoren",
+      "description": "Verfolgen Sie Trends an ausgewählten Ventilatorlagerpunkten bei gleichbleibender Absaugleistung und unterstützen Sie das Instandhaltungsteam beim Erkennen prüfenswerter Veränderungen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Feststehender Ventilatorlagerbock oder Motorlagergehäuse.",
+      "installation": "Prüfen Sie Verschmutzung und Zugangsbedingungen. Montieren Sie die Messsonde außerhalb des Luftstroms auf einer freigegebenen, starren Fläche.",
+      "projectBrief": "Ventilatorbauart, Drehzahl, Normalbetrieb, Staub- und Chemikalienbelastung sowie Lageranordnung.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Industrieller Radialventilator mit externem Antriebsmotor neben einem festen Lagergehäuse",
+        "caption": "Umgebung eines Radialventilatorantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "id": "dust-extraction-fan",
+      "group": "fans-air-systems",
+      "title": "Ventilatormotoren von Entstaubungsanlagen",
+      "description": "Überwachen Sie feste Motor- oder Ventilatorlager eines Entstaubungssystems im Rahmen der Maschineninstandhaltung.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Externes Lagergehäuse am Motor oder Ventilatorantrieb.",
+      "installation": "Bestätigen Sie gegebenenfalls die Klassifizierung für brennbaren Staub und halten Sie Kabel von Riemen sowie heißen oder abrasiven Oberflächen fern.",
+      "projectBrief": "Staubart, Bereichsklassifizierung, Aufbau des Ventilatorantriebs und erwarteter Schwingungsmessbereich.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Industrieller Radialventilator mit externem Antriebsmotor neben einem festen Lagergehäuse",
+        "caption": "Umgebung eines Radialventilatorantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14",
+        "S15"
+      ]
+    },
+    {
+      "id": "combustion-air-fan",
+      "group": "fans-air-systems",
+      "title": "Antriebe von Verbrennungsluftventilatoren",
+      "description": "Verfolgen Sie lokale Schwingungen an einem Hilfsventilatorantrieb und vergleichen Sie Messwerte über dokumentierte Betriebsanforderungen hinweg.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Zugängliches, feststehendes Motor- oder Ventilatorlagergehäuse.",
+      "installation": "Prüfen Sie die tatsächliche Oberflächentemperatur und die Kabelumgebung. Platzieren Sie das Terminal außerhalb übermäßiger Wärmestrahlung.",
+      "projectBrief": "Ventilatordrehzahl und -last, Oberflächentemperatur, Wärmebelastung und Montagezugang.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Industrieller Radialventilator mit externem Antriebsmotor neben einem festen Lagergehäuse",
+        "caption": "Umgebung eines Radialventilatorantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S14"
+      ]
+    },
+    {
+      "id": "drying-process-fan",
+      "group": "fans-air-systems",
+      "title": "Ventilatoren industrieller Trocknungsanlagen",
+      "description": "Beobachten Sie Zustandstrends am Ventilatorantrieb, damit das Instandhaltungsteam Inspektionen auf die Produktion der Trocknungslinie abstimmen kann.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Fester Lagerbereich des Antriebs außerhalb der beheizten Prozesskammer.",
+      "installation": "Prüfen Sie Wärme, Feuchtigkeit und Prozessverschmutzung. Wählen Sie einen starren Messpunkt statt dünnwandiger Luftkanäle.",
+      "projectBrief": "Trockneraufbau, Ventilatorbetrieb, Temperatur am Montagepunkt und Kabelverlauf.",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "Industrieller Radialventilator mit externem Antriebsmotor neben einem festen Lagergehäuse",
+        "caption": "Umgebung eines Radialventilatorantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13",
+        "S3"
+      ]
+    },
+    {
+      "id": "aeration-blower-drive",
+      "group": "fans-air-systems",
+      "title": "Antriebe von Belüftungsgebläsen in der Wasseraufbereitung",
+      "description": "Erfassen Sie reproduzierbare Schwingungstrends am Motor und an den Antriebslagern eines Belüftungsgebläses und dokumentieren Sie dessen Prozessanforderungen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Zugängliches, festes Motor- oder Gebläselagergehäuse.",
+      "installation": "Trennen Sie lokale Antriebsmesswerte von Rohrleitungspulsationen und beziehen Sie Vergleiche auf Drehzahl und Belüftungsleistung.",
+      "projectBrief": "Gebläsetyp, Drehzahl, Druckbedarf, Feuchtigkeit und Antriebsanordnung.",
+      "image": {
+        "name": "aeration-blower.webp",
+        "alt": "Belüftungsgebläse einer Wasseraufbereitungsanlage mit Elektromotor und festen Lagergehäusen",
+        "caption": "Belüftungsgebläse · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8",
+        "S7"
+      ]
+    },
+    {
+      "id": "screw-air-compressor",
+      "group": "compressors-vacuum",
+      "title": "Schraubenkompressoren für Druckluft",
+      "description": "Verfolgen Sie Schwingungen in der Nähe der Kompressorlager und vergleichen Sie Veränderungen bei stabilen Betriebs- und Lastzuständen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebener Messpunkt am Kompressorgehäuse nahe einem Radiallager.",
+      "installation": "Bestätigen Sie das benötigte Frequenzband und die Temperatur. Setzen Sie einen Motormesspunkt nicht mit dem Zustand der gesamten Verdichterstufe gleich.",
+      "projectBrief": "Aufbau der Verdichterstufe, Drehzahl- und Lastbereich, Montagetemperatur und benötigtes Messfrequenzband.",
+      "image": {
+        "name": "air-compressors.webp",
+        "alt": "Industrielle, eingehauste Druckluftkompressoren in einem Technikraum",
+        "caption": "Umgebung von Druckluftanlagen · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S10"
+      ]
+    },
+    {
+      "id": "reciprocating-compressor",
+      "group": "compressors-vacuum",
+      "title": "Antriebe von Kolbenkompressoren",
+      "description": "Beobachten Sie lokale Schwingungstrends an einem Antriebs- oder Lagerbereich und dokumentieren Sie den normalen zyklischen Betrieb des Kompressors.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, festes Antriebslagergehäuse oder Messpunkt am Kurbelgehäuse.",
+      "installation": "Prüfen Sie normale Prozessimpulse und die Amplitudenreserve, bevor Sie Referenzzustand und Messposition vereinbaren.",
+      "projectBrief": "Kompressortyp, Drehzahl, Laststufen, erwartete Amplitude und sicherer Zugang.",
+      "image": {
+        "name": "reciprocating-compressor.webp",
+        "alt": "Industrieller Kolbenkompressor mit feststehenden Antriebs- und Lagergehäusen",
+        "caption": "Kompressorumgebung · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "refrigeration-compressor",
+      "group": "compressors-vacuum",
+      "title": "Industrielle Kältekompressoren",
+      "description": "Verfolgen Sie den Schwingungstrend eines geeigneten Kompressorantriebs zur Unterstützung geplanter Inspektionen einer Kälteanlage.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Zugänglicher, freigegebener Messpunkt am festen Gehäuse oder außenliegenden Lagerbereich.",
+      "installation": "Prüfen Sie Kompressorbauart, Oberflächentemperatur, Vorschriften im Kältemittelbereich und die freigegebene mechanische Schnittstelle.",
+      "projectBrief": "Kompressorkonfiguration, Drehzahl, Laststufen, Temperatur und Installationsfreigabe.",
+      "image": {
+        "name": "refrigeration-compressor.webp",
+        "alt": "Industrielle Kältekompressorbaugruppe mit feststehendem Antrieb und Gehäuse",
+        "caption": "Industrieller Kältekompressor · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S7",
+        "S10"
+      ]
+    },
+    {
+      "id": "rotary-vane-vacuum",
+      "group": "compressors-vacuum",
+      "title": "Drehschieber-Vakuumpumpen",
+      "description": "Vergleichen Sie lokale Antriebs- und Gehäuseschwingungen bei übereinstimmenden Vakuumprozesszuständen und nutzen Sie Veränderungen als Grundlage für Anlagenprüfungen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, festes Gehäuse nahe dem Lagerbereich der rotierenden Baugruppe.",
+      "installation": "Dokumentieren Sie den Lastzustand der Pumpe und schützen Sie das Kabel vor Öl, Wärme und beweglichen Wartungskomponenten.",
+      "projectBrief": "Vakuumpumpentyp, Betriebsdrehzahl, Prozesszyklus und Temperatur.",
+      "image": {
+        "name": "vacuum-pump.webp",
+        "alt": "Industrielle Vakuumpumpe mit feststehendem Elektromotorantrieb in einem sauberen Technikraum",
+        "caption": "Umgebung eines Vakuumpumpenantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S7",
+        "S12"
+      ]
+    },
+    {
+      "id": "dry-screw-vacuum",
+      "group": "compressors-vacuum",
+      "title": "Trockenlaufende Schrauben-Vakuumsysteme",
+      "description": "Verfolgen Sie Trends an ausgewählten, feststehenden Messpunkten eines trockenlaufenden Schrauben-Vakuumsystems zur Instandhaltungsbewertung über vergleichbare Produktionszyklen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebener Gehäusemesspunkt nahe dem überwachten Lagerbereich.",
+      "installation": "Prüfen Sie Prozessverschmutzung und das benötigte Frequenzband. Platzieren Sie das Funkterminal an einem geeigneten Wartungsstandort.",
+      "projectBrief": "Pumpenaufbau, Drehzahl- und Lastprofil, chemische Belastung und gewünschtes Trendintervall.",
+      "image": {
+        "name": "vacuum-pump.webp",
+        "alt": "Industrielle Vakuumpumpe mit feststehendem Elektromotorantrieb in einem sauberen Technikraum",
+        "caption": "Umgebung eines Vakuumpumpenantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "id": "process-gas-compressor",
+      "group": "compressors-vacuum",
+      "title": "Prozessgaskompressoren in freigegebenen Bereichen",
+      "description": "Beobachten Sie Maschinenschwingungen an einem ausgewählten Antriebs- oder Lagerpunkt eines Prozesskompressors mit einer qualifizierten Installation.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebener, fester Messpunkt am Kompressor- oder Motorlagergehäuse.",
+      "installation": "Wählen Sie vor der Installation die vollständige Baugruppe entsprechend den Zertifizierungs- und Temperaturanforderungen des Bereichs aus.",
+      "projectBrief": "Gasumgebung, Bereichsklassifizierung, Maschinenaufbau und Betriebszustände.",
+      "image": {
+        "name": "reciprocating-compressor.webp",
+        "alt": "Industrieller Kolbenkompressor mit feststehenden Antriebs- und Lagergehäusen",
+        "caption": "Kompressorumgebung · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "id": "belt-conveyor-drive",
+      "group": "gearboxes-handling",
+      "title": "Antriebsgetriebe von Gurtförderern",
+      "description": "Verfolgen Sie lokale Getriebe- und Motorschwingungen am Förderantrieb und vergleichen Sie gleiche Förderbedingungen über die Zeit.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Festes Getriebegehäuse nahe einem Eingangs- oder Ausgangslager.",
+      "installation": "Wählen Sie den zu überwachenden Wellenbereich und halten Sie das Kabel von Riemenscheiben, Fördergurten und Wartungsöffnungen fern.",
+      "projectBrief": "Antriebsaufbau, Getriebestufen, Drehzahlbereich und Materiallastprofil.",
+      "image": {
+        "name": "gearbox-conveyor.webp",
+        "alt": "Industrieförderanlage mit feststehendem Getriebe und elektrischem Antriebsmotor",
+        "caption": "Umgebung eines Förderanlagengetriebes · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S15"
+      ]
+    },
+    {
+      "id": "screw-conveyor-drive",
+      "group": "gearboxes-handling",
+      "title": "Getriebemotoren von Schneckenförderern",
+      "description": "Beobachten Sie die Schwingungen des externen Antriebs einer Förderschnecke zur Unterstützung von Inspektionen, ohne Sensorhardware im Materialweg zu platzieren.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Zugängliches, festes Getriebe- oder Motorlagergehäuse.",
+      "installation": "Dokumentieren Sie Förderrate und Materiallast. Prüfen Sie gegebenenfalls Staubklassifizierung und Kabelabrieb.",
+      "projectBrief": "Materialart, Antriebsdrehzahl, Betriebszyklus und freigegebener externer Montagepunkt.",
+      "image": {
+        "name": "screw-conveyor.webp",
+        "alt": "Industrieller Schneckenförderer mit festem, externem Getriebemotor",
+        "caption": "Getriebeantrieb eines Schneckenförderers · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S14"
+      ]
+    },
+    {
+      "id": "bucket-elevator-drive",
+      "group": "gearboxes-handling",
+      "title": "Antriebssysteme von Becherwerken",
+      "description": "Führen Sie einen Trend am Antriebsgetriebe oder Motorlagerbereich des Becherwerks zur Unterstützung gut zugänglicher Maschineninspektionen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Festes Antriebsgehäuse an einem freigegebenen Wartungspunkt.",
+      "installation": "Trennen Sie die Antriebsüberwachung von Turmbewegungen und halten Sie die Installation außerhalb des Becher- und Gurtwegs.",
+      "projectBrief": "Getriebemotoranordnung, Zugangsplattform, Drehzahl- und Lastprofil sowie Umgebungsbelastung.",
+      "image": {
+        "name": "roller-drive.webp",
+        "alt": "Becherwerk mit externem, feststehendem Motor- und Getriebeantrieb",
+        "caption": "Umgebung eines Becherwerksantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S14"
+      ]
+    },
+    {
+      "id": "crossbelt-sorter-drive",
+      "group": "gearboxes-handling",
+      "title": "Antriebe von Quergurtsortern",
+      "description": "Beobachten Sie ausgewählte, feststehende Antriebslager und vergleichen Sie Schwingungen innerhalb reproduzierbarer Betriebszyklen des Sorters.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, festes Antriebsmotor- oder Getriebegehäuse.",
+      "installation": "Verwenden Sie einen feststehenden, wartungszugänglichen Messpunkt. Dokumentieren Sie die Betriebsphase und sichern Sie das Kabel außerhalb des Sortiermechanismus.",
+      "projectBrief": "Sorteraufbau, Antriebszyklen, Drehzahlzustände und verfügbare feste Montagepunkte.",
+      "image": {
+        "name": "crossbelt-sorter.webp",
+        "alt": "Quergurt-Sortieranlage mit feststehendem, externem Antrieb und Tragkonstruktion",
+        "caption": "Umgebung eines Quergurt-Sorterantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "asrs-hoist-drive",
+      "group": "gearboxes-handling",
+      "title": "Antriebe automatischer Lager- und Bereitstellungssysteme",
+      "description": "Verfolgen Sie Maschinenschwingungen an einem ausgewählten Hub- oder Fahrantrieb und dokumentieren Sie reproduzierbare Hub- oder Fahrzyklen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebener, fester Bereich am Antriebsgetriebe oder Motorlager.",
+      "installation": "Prüfen Sie die Kabelführung an beweglichen Baugruppen und bewerten Sie Antriebsmesswerte bei gleicher Last und Bewegungsphase.",
+      "projectBrief": "Fahrweg, Antriebsposition, Zyklusphasen, Kabelführungssystem und Nutzlast.",
+      "image": {
+        "name": "asrs-hoist.webp",
+        "alt": "Regalbediengerät eines automatischen Lagers mit festem Hubmotor und Getriebe",
+        "caption": "Umgebung eines ASRS-Hubantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "id": "extruder-gearbox",
+      "group": "gearboxes-handling",
+      "title": "Antriebsgetriebe von Extrudern",
+      "description": "Vergleichen Sie Getriebeschwingungen unter definierter Prozesslast zur Unterstützung der Inspektion rotierender Antriebskomponenten eines Extruders.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Festes Getriebegehäuse nahe einem identifizierten Wellenlager.",
+      "installation": "Prüfen Sie die einzelnen Getriebestufen, Drehzahl und Temperatur. Vereinbaren Sie den Messpunkt, statt einen Messwert mit dem Zustand des gesamten Getriebes gleichzusetzen.",
+      "projectBrief": "Getriebezeichnung, Prozesslast, Drehzahlen, Montagetemperatur und ausgewählter Lagerbereich.",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "Industrielles Getriebe mit Elektromotor auf einem starren Maschinenfundament",
+        "caption": "Umgebung eines Industriegetriebes · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "id": "cnc-spindle",
+      "group": "machine-tools-metals",
+      "title": "Spindeln von CNC-Bearbeitungszentren",
+      "description": "Verfolgen Sie ausgewählte Spindelgehäuseschwingungen bei reproduzierbaren Bearbeitungs- oder Probelaufbedingungen zur Unterstützung der Werkzeug- und Maschineninspektion.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, feststehendes Spindelgehäuse nahe einem Lagerbereich.",
+      "installation": "Montieren Sie die Messsonde nicht an rotierenden Werkzeugen. Prüfen Sie Prozessschwingungen, Kühlschmierstoff, Späne und die benötigte Messbandbreite.",
+      "projectBrief": "Spindeldrehzahlen, Bearbeitungs- und Probelaufphasen, erwartete Amplituden und zulässiger Montagepunkt.",
+      "image": {
+        "name": "cnc-spindle.webp",
+        "alt": "Spindel einer industriellen CNC-Maschine mit feststehendem Spindelgehäuse und geschütztem Bearbeitungsraum",
+        "caption": "Spindelumgebung einer Werkzeugmaschine · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "lathe-headstock",
+      "group": "machine-tools-metals",
+      "title": "Spindelstöcke industrieller Drehmaschinen",
+      "description": "Vergleichen Sie Schwingungen am Spindelstock an einem reproduzierbaren, festen Messpunkt bei übereinstimmender Drehzahl und Bearbeitungsbelastung.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Feststehendes Spindelstockgehäuse nahe dem überwachten Spindellager.",
+      "installation": "Halten Sie Abstand zu Spannfutter und Werkstück. Kennzeichnen Sie die Messrichtung und dokumentieren Sie Leerlauf- oder Bearbeitungszustand.",
+      "projectBrief": "Spindelaufbau, Drehzahlbereich, Bearbeitungsvorgänge und Montagezugang.",
+      "image": {
+        "name": "lathe-headstock.webp",
+        "alt": "Industrielle Drehmaschine mit feststehendem Spindelstockgehäuse und geschütztem Bearbeitungsbereich",
+        "caption": "Umgebung eines Drehmaschinen-Spindelstocks · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "grinding-spindle",
+      "group": "machine-tools-metals",
+      "title": "Spindelgehäuse von Schleifmaschinen",
+      "description": "Verfolgen Sie lokale Spindelschwingungen über definierte Schleifbedingungen hinweg und nutzen Sie den Verlauf zur Planung der Inspektion rotierender Komponenten.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebener, fester Messpunkt am Spindellagergehäuse.",
+      "installation": "Prüfen Sie abrasiven Staub, Kühlschmierstoff, normale prozessbedingte Anregung und Amplitudenbereich, bevor Sie den Messaufbau auswählen.",
+      "projectBrief": "Schleifspindeldrehzahl, Prozesszyklus, Umgebung und gewünschte Messgröße.",
+      "image": {
+        "name": "grinding-spindle.webp",
+        "alt": "Industrielle Schleifmaschine mit feststehendem Spindelgehäuse und Schutzabdeckungen",
+        "caption": "Umgebung einer Schleifspindel · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "id": "industrial-saw-spindle",
+      "group": "machine-tools-metals",
+      "title": "Spindelantriebe industrieller Sägen",
+      "description": "Erfassen Sie Schwingungen an einem festen Spindel- oder Antriebsgehäuse bei vergleichbaren Schneidvorgängen und Wartungsprobeläufen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, feststehendes Lagergehäuse außerhalb des Sägeblattwegs.",
+      "installation": "Schützen Sie das Kabel vor Spänen und Schneidbewegungen. Vergleichen Sie dasselbe Sägeblatt, dieselbe Drehzahl und dieselbe Prozessphase.",
+      "projectBrief": "Sägenkonfiguration, Drehzahl, Schneidbelastung, Spanbelastung und freigegebene Montageposition.",
+      "image": {
+        "name": "industrial-saw.webp",
+        "alt": "Industrielle Metallsäge mit festem Antriebsgehäuse und Schutzabdeckungen",
+        "caption": "Umgebung eines industriellen Sägeantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "rolling-line-drive",
+      "group": "machine-tools-metals",
+      "title": "Antriebsmotoren von Metallwalzlinien",
+      "description": "Beobachten Sie einen ausgewählten Motor- oder Getriebelagerbereich einer Walzlinie und beziehen Sie Trends auf dokumentierte Produktionslasten.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Festes Motor- oder Getriebelagergehäuse außerhalb des Walzenbereichs.",
+      "installation": "Prüfen Sie Wärme und Spritzwasser. Wählen Sie lokale Antriebsmesspunkte, statt Bewegungen der gesamten Linie oder des Fundaments zu messen.",
+      "projectBrief": "Antriebsaufbau, Drehzahl- und Lastbereich, Temperatur, Spritzwasserbelastung und Messziel.",
+      "image": {
+        "name": "metal-rolling.webp",
+        "alt": "Walzanlage für die Metallverarbeitung mit festen Lagergehäusen und Motorantrieben",
+        "caption": "Antriebsumgebung der Metallverarbeitung · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "id": "press-drive-bearings",
+      "group": "machine-tools-metals",
+      "title": "Antriebs- und Schwungradlager von Pressen",
+      "description": "Verfolgen Sie einen freigegebenen, feststehenden Antriebslagermesspunkt während reproduzierbarer Produktionsphasen zur Unterstützung regelmäßiger Maschinenprüfungen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Festes Antriebs- oder Schwungradlagergehäuse außerhalb des beweglichen Mechanismus.",
+      "installation": "Bewerten Sie normale Stanzimpulse und die Messbereichsreserve. Halten Sie die Installation außerhalb der geschützten Bewegungsbereiche und vergleichen Sie dieselbe Zyklusphase.",
+      "projectBrief": "Pressentyp, Zyklusphasen, erwartete Impulse, ausgewählter Lagerpunkt und freigegebener Zugang.",
+      "image": {
+        "name": "press-drive.webp",
+        "alt": "Industriepresse mit festen Antriebslagerstützen und geschützter Schwungradbaugruppe",
+        "caption": "Umgebung eines Industriepressenantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "industrial-mixer-drive",
+      "group": "process-food-pharma",
+      "title": "Antriebsbaugruppen industrieller Mischer",
+      "description": "Beobachten Sie die lokalen Schwingungen von Motor und Getriebe bei übereinstimmenden Mischrezepturen und Chargenlasten.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, externes und festes Antriebslagergehäuse.",
+      "installation": "Montieren Sie außerhalb des Behälters und des Produktkontaktbereichs. Dokumentieren Sie Chargenphase, Rührwerksdrehzahl und Füllstand.",
+      "projectBrief": "Mischerkonfiguration, Rezepturen, Lastphasen, Reinigbarkeit und zulässiger externer Montagepunkt.",
+      "image": {
+        "name": "mixer-drive.webp",
+        "alt": "Industrieller Behältermischer mit außenliegendem, feststehendem Elektromotor und Getriebe",
+        "caption": "Umgebung eines externen Mischerantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S12"
+      ]
+    },
+    {
+      "id": "decanter-centrifuge",
+      "group": "process-food-pharma",
+      "title": "Lagergehäuse von Dekanterzentrifugen",
+      "description": "Verfolgen Sie Trends an ausgewählten festen Zentrifugenlagerpunkten und bewerten Sie Veränderungen anhand von Trommeldrehzahl, Materialzufuhr und Betriebszustand.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, festes Hauptlagergehäuse.",
+      "installation": "Prüfen Sie normale prozessbedingte Anregung und mehrere Schwingungsquellen. Wählen Sie Messpunkte und Datenanforderungen gemeinsam mit dem Maschineningenieur.",
+      "projectBrief": "Zentrifugenaufbau, Drehzahlen, Zufuhrzustände, Amplitudenbereich und Wartungszugang.",
+      "image": {
+        "name": "decanter-centrifuge.webp",
+        "alt": "Industrielle Dekanterzentrifuge mit festen, externen Lagergehäusen",
+        "caption": "Umgebung einer Zentrifuge · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S18"
+      ]
+    },
+    {
+      "id": "centrifugal-separator",
+      "group": "process-food-pharma",
+      "title": "Antriebe von Zentrifugalseparatoren",
+      "description": "Beobachten Sie einen freigegebenen, feststehenden Antriebs- oder Lagerpunkt eines Separators zur Instandhaltungsbewertung bei stabilen Produktionsbedingungen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Festes Lagergehäuse oder freigegebenes, feststehendes Antriebsgehäuse.",
+      "installation": "Halten Sie Abstand zur rotierenden Trommel und prüfen Sie das benötigte Frequenzband, den Betriebszustand und die Regeln zur hygienegerechten Installation.",
+      "projectBrief": "Separatorbauart, Drehzahl, Prozessphasen, Reinigungsanforderungen und Lageranordnung.",
+      "image": {
+        "name": "centrifugal-separator.webp",
+        "alt": "Vertikaler Zentrifugalseparator mit feststehendem, externem Maschinengehäuse",
+        "caption": "Umgebung eines Zentrifugalseparators · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S18",
+        "S9"
+      ]
+    },
+    {
+      "id": "filling-capping-drives",
+      "group": "process-food-pharma",
+      "title": "Antriebe von Abfüll- und Verschließlinien",
+      "description": "Verfolgen Sie lokale Motor- oder Getriebeschwingungen einer Produktionslinie bei vergleichbaren Abfüll- und Verschließbedingungen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, festes Motor- oder Getriebegehäuse.",
+      "installation": "Halten Sie Messsonde und Kabel außerhalb von Verpackungs- und Produktkontaktbereichen und prüfen Sie Nassreinigung sowie zyklusabhängige Last.",
+      "projectBrief": "Liniengeschwindigkeit, Antriebspositionen, Zyklen, Reinigungsprogramm und Messpunkte.",
+      "image": {
+        "name": "filling-capping.webp",
+        "alt": "Automatische Abfüll- und Verschließlinie mit zugänglichen, externen Motorantrieben",
+        "caption": "Umgebung einer Abfüll- und Verschließlinie · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S9",
+        "S12"
+      ]
+    },
+    {
+      "id": "pharma-vacuum-dryer",
+      "group": "process-food-pharma",
+      "title": "Antriebe pharmazeutischer Vakuumtrockner",
+      "description": "Beobachten Sie einen freigegebenen, externen Antriebsmesspunkt während dokumentierter Trocknungsphasen zur Unterstützung der Anlageninstandhaltungsaufzeichnungen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Externes, festes Motor- oder Getriebelagergehäuse.",
+      "installation": "Prüfen Sie Reinraumvorschriften, Lösungsmittel, Temperatur und die Freigabe für die externe Montage. Vereinbaren Sie die Datennutzung gemäß dem betrieblichen technischen Verfahren.",
+      "projectBrief": "Trockneraufbau, Prozessphasen, Bereichsklassifizierung und Reinigbarkeitsanforderungen.",
+      "image": {
+        "name": "vacuum-dryer-drive.webp",
+        "alt": "Pharmazeutischer Vakuumtrockner mit externem, festem Motor und Untersetzungsgetriebe",
+        "caption": "Externer Antrieb eines Vakuumtrockners · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S12"
+      ]
+    },
+    {
+      "id": "paper-calender-bearings",
+      "group": "process-food-pharma",
+      "title": "Kalander- und Walzenlager in der Papierproduktion",
+      "description": "Erfassen Sie lokale Schwingungen an ausgewählten, feststehenden Walzenlagergehäusen und vergleichen Sie gleichwertige Produktionszustände der Papiermaschine.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, festes Walzenlagergehäuse auf der Wartungsseite.",
+      "installation": "Prüfen Sie tatsächliche Oberflächentemperatur und Feuchtigkeit und bestätigen Sie das Frequenzband für die gewählte Walzendrehzahl.",
+      "projectBrief": "Walzendrehzahlen, Lageranordnung, Oberflächentemperatur, Nassbelastung und Zugang.",
+      "image": {
+        "name": "paper-calender.webp",
+        "alt": "Papierkalanderwalzen mit festen Lagergehäusen auf der Wartungsseite",
+        "caption": "Umgebung von Papierkalanderlagern · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13"
+      ]
+    },
+    {
+      "id": "crusher-bearing-housing",
+      "group": "heavy-processing",
+      "title": "Lagergehäuse von Brechern",
+      "description": "Verfolgen Sie einen ausgewählten Lager- oder Antriebsmesspunkt eines Brechers und vergleichen Sie Trends anhand dokumentierter Beschickungs- und Betriebsbedingungen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, festes Wellenlagergehäuse oder Antriebsmotorgehäuse.",
+      "installation": "Prüfen Sie vor der Inbetriebnahme normale Brechschläge, Amplitudenreserve, abrasiven Staub und mechanischen Kabelschutz.",
+      "projectBrief": "Brechertyp, Last- und Beschickungszustände, erwartete Amplitude und Zugang zu einem festen Lagermesspunkt.",
+      "image": {
+        "name": "crusher-bearing.webp",
+        "alt": "Industriebrecher mit feststehendem Wellenlagergehäuse und Antriebsbaugruppe",
+        "caption": "Umgebung eines Brecherlagergehäuses · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S14"
+      ]
+    },
+    {
+      "id": "pulverizer-mill-drive",
+      "group": "heavy-processing",
+      "title": "Antriebe von Pulverisierern und Mahlmühlen",
+      "description": "Beobachten Sie lokale Motor- oder Getriebeschwingungen einer Mahllinie und beziehen Sie Messwerte auf vergleichbare Beschickungs- und Lastzustände.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Zugängliches, festes Antriebslagergehäuse.",
+      "installation": "Identifizieren Sie den Antriebsstrang und prüfen Sie Temperatur und Staub. Halten Sie Kabel von rotierenden Kupplungen und der Materialförderung fern.",
+      "projectBrief": "Mühlentyp, Antriebsdrehzahlen, Beschickungsbedingungen, Temperatur und Bereichsklassifizierung.",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "Industrielles Getriebe mit Elektromotor auf einem starren Maschinenfundament",
+        "caption": "Umgebung eines Industriegetriebes · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "id": "industrial-shredder-drive",
+      "group": "heavy-processing",
+      "title": "Antriebe industrieller Schredder",
+      "description": "Führen Sie einen Schwingungsverlauf an ausgewählten Schredder-Antriebslagern und dokumentieren Sie Material sowie normalen Betriebszyklus.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, festes Antriebsmotor- oder Getriebegehäuse.",
+      "installation": "Prüfen Sie Prozessschläge und Messbereichsreserve und schützen Sie das Sondenkabel vor Materialresten und beweglichen Wartungskomponenten.",
+      "projectBrief": "Schredderbauart, Materialien, Lastzyklus, erwartete Schläge und Lagerzugang.",
+      "image": {
+        "name": "shredder-drive.webp",
+        "alt": "Industrieschredder mit festen, externen Getriebe- und Elektromotorantrieben",
+        "caption": "Umgebung eines Schredderantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "screen-exciter-bearing",
+      "group": "heavy-processing",
+      "title": "Erregerlager von Schwingsieben",
+      "description": "Beobachten Sie lokale Schwingungen der rotierenden Erregerlager als Maschinentrend an einem definierten, feststehenden Gehäusemesspunkt.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes Erreger- oder Antriebslagergehäuse.",
+      "installation": "Bestätigen Sie Frequenzband und Amplitude für das ausgewählte Lagermessziel. Die Installation betrifft lokale Maschinenschwingungen und nicht die Bewegung des Siebkörpers.",
+      "projectBrief": "Erregeraufbau, normale Anregung, Lagerpunkt, Messbereich und benötigtes Messfrequenzband.",
+      "image": {
+        "name": "screen-exciter.webp",
+        "alt": "Industrielles Schwingsieb mit lokalen Lagergehäusen der Erregerwelle",
+        "caption": "Umgebung eines Sieberregerlagers · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S16"
+      ]
+    },
+    {
+      "id": "cement-mill-gearbox",
+      "group": "heavy-processing",
+      "title": "Motor- und Getriebelager von Zementmühlen",
+      "description": "Verfolgen Sie einen ausgewählten Lagerbereich des Mühlenantriebs und nutzen Sie konsistente Produktionslastaufzeichnungen für aussagekräftige Trendvergleiche.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebener, fester Messpunkt am Motor- oder Getriebelagergehäuse.",
+      "installation": "Prüfen Sie mehrere Getriebestufen und die normale prozessbedingte Anregung sowie Staub, Wärme und freigegebenen Wartungszugang.",
+      "projectBrief": "Antriebszeichnung, Drehzahlen, Lastzustände, Wärme- und Staubbelastung sowie ausgewählter Lagerbereich.",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "Industrielles Getriebe mit Elektromotor auf einem starren Maschinenfundament",
+        "caption": "Umgebung eines Industriegetriebes · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14",
+        "S5"
+      ]
+    },
+    {
+      "id": "wood-chipper-bearings",
+      "group": "heavy-processing",
+      "title": "Antriebslager von Holzhackern",
+      "description": "Beobachten Sie ein festes Antriebs- oder Rotorlagergehäuse und vergleichen Sie den Schwingungsverlauf innerhalb dokumentierter Materialverarbeitungsbedingungen.",
+      "measurement": "Lokale Maschinenschwingungen an einem definierten festen Messpunkt",
+      "monitoringPoint": "Freigegebenes, feststehendes Antriebs- oder Rotorlagergehäuse.",
+      "installation": "Prüfen Sie normale Schneidimpulse und den Messbereich. Schützen Sie Kabel vor Spänen und halten Sie die Messsonde außerhalb der Rotorschutzabdeckung.",
+      "projectBrief": "Hackerbauart, Rotordrehzahl, Beschickungsbedingungen, erwartete Impulse und Wartungspunkt.",
+      "image": {
+        "name": "shredder-drive.webp",
+        "alt": "Industrieschredder mit festen, externen Getriebe- und Elektromotorantrieben",
+        "caption": "Umgebung eines Schredderantriebs · Beispielhafte Darstellung",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13",
+        "S4"
+      ]
+    }
+  ],
+  "series": {
+    "description": "H200, H300 und H500 sind veröffentlichte Modellbezeichnungen der H Series. Spezifizieren Sie die vollständige Messsonde, das Terminal, die Funkvariante und das Betriebsprofil im Konfigurationsvorschlag für Ihr Projekt.",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "steps": [
+      {
+        "title": "Maschinenmesspunkt definieren",
+        "text": "Teilen Sie uns die Komponente, starre Montagefläche, Messrichtung, den Drehzahlbereich und die normalen Lastzustände mit."
+      },
+      {
+        "title": "Messung spezifizieren",
+        "text": "Wählen Sie eine einachsige oder dreiachsige Messung und spezifizieren Sie die relevanten Maschinenfrequenzen innerhalb des Messbereichs von 10–5000 Hz. Der RMS-Schwinggeschwindigkeitsbereich beträgt 0–50 mm/s bei einer Anzeigeauflösung von 0,1 mm/s. Vereinbaren Sie Erfassungsbetrieb, Datenübertragung und Kalibrieranforderungen."
+      },
+      {
+        "title": "Gesamten Einsatz planen",
+        "text": "Prüfen Sie Bedingungen für Messsonde und Kabel, Terminalstandort, Funkabdeckung, Datenübertragung, Alarme und die Übergabe an die Plattform."
+      }
+    ]
+  },
+  "specifications": {
+    "description": "Veröffentlichte Werte der Produktfamilie dienen als erste Referenz. Die gelieferte Messsonde, die Messdefinition und die vollständige Konfiguration bestimmen die Spezifikation für Ihren Maschinenmesspunkt. Fordern Sie mit dem Angebot das nutzbare Frequenzband, Erfassungseinstellungen, Montagezeichnung und Kalibrierdokumentation an.",
+    "rows": [
+      {
+        "label": "Veröffentlichte Modelle der Produktfamilie",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "Messbereich der RMS-Schwinggeschwindigkeit",
+        "value": "0–50 mm/s"
+      },
+      {
+        "label": "Messfrequenzbereich",
+        "value": "10–5000 Hz"
+      },
+      {
+        "label": "Messachsen",
+        "value": "Einachsig oder dreiachsig, je nach ausgewählter Konfiguration"
+      },
+      {
+        "label": "Anzeigeauflösung der RMS-Schwinggeschwindigkeit",
+        "value": "0,1 mm/s"
+      },
+      {
+        "label": "Veröffentlichte Genauigkeitsbedingung",
+        "value": "±1 % bei Kalibrierung mit 80 Hz; vollständige gelieferte Messspezifikation bestätigen"
+      },
+      {
+        "label": "Messanordnung",
+        "value": "Externe, kabelgebundene Messsonde an einem starren Motorlagergehäuse oder Maschinenmesspunkt"
+      },
+      {
+        "label": "Funkvarianten",
+        "value": "4G / NB-IoT / LoRa, je nach geliefertem Modell und regionaler Konfiguration"
+      },
+      {
+        "label": "Datenintegration",
+        "value": "MQTT aufgeführt; vollständigen Datenweg für die gelieferte Variante bestätigen"
+      },
+      {
+        "label": "Schutzart des Terminalgehäuses",
+        "value": "IP68; Eignung von Messsonde, Kabel und Steckverbindern separat spezifizieren"
+      },
+      {
+        "label": "Veröffentlichte Betriebstemperatur",
+        "value": "−20 °C bis +70 °C; komponentenspezifische Grenzwerte für die Installation bestätigen"
+      },
+      {
+        "label": "Veröffentlichte Lagertemperatur",
+        "value": "−20 °C bis +80 °C"
+      },
+      {
+        "label": "Gerätekonfiguration",
+        "value": "NFC-Aktivierung / lokale Einrichtung; OTA-Updates, je nach gelieferter Konfiguration"
+      },
+      {
+        "label": "Referenz zur Batterielebensdauer",
+        "value": "Über 10 Jahre bei stündlicher Datenübertragung unter festgelegten Bedingungen; abhängig von Konfiguration und Betriebsbelastung"
+      }
+    ]
+  },
+  "faqHeading": {
+    "intro": "Antworten zur Spezifikation von Maschinenmessungen, zur Planung der kabelgebundenen Sondeninstallation und zur Einbindung von Messwerten in den Instandhaltungsablauf."
+  },
+  "faqs": [
+    {
+      "id": "faq-what-measures",
+      "question": "1. Was misst der Hitelecom-Schwingungssensor für Maschinen?",
+      "paragraphs": [
+        "Die Hitelecom H Series verwendet eine externe, kabelgebundene Messsonde zur Überwachung hochfrequenter Maschinenschwingungen. Die Schwinggeschwindigkeit wird als Effektivwert (RMS) in einem Bereich von 0–50 mm/s bei einer Anzeigeauflösung von 0,1 mm/s angegeben. Der spezifizierte Messfrequenzbereich beträgt 10–5000 Hz. Wählen Sie die einachsige oder dreiachsige Messung passend zur Maschine und zum Montagepunkt und konfigurieren Sie anschließend das drahtlose Übertragungsprofil."
+      ],
+      "sources": [
+        "U1",
+        "S1",
+        "S17"
+      ],
+      "evidence": "Product range, axes, velocity RMS display resolution and measurement frequency range confirmed directly by the user on 2026-10-11; public resources support mounting and metric terminology."
+    },
+    {
+      "id": "faq-where-motor",
+      "question": "2. Wo sollte eine Schwingungsmesssonde an einem Elektromotor montiert werden?",
+      "paragraphs": [
+        "Montieren Sie die Messsonde direkt auf einem freigegebenen, starren Bereich des Motorlagergehäuses oder Lagerschilds nahe dem zu überwachenden Lager. Verwenden Sie das mitgelieferte Montageverfahren und eine vorbereitete Messfläche. Dokumentieren Sie die Messpunktkennung und die einachsige Messrichtung oder dreiachsige Orientierung. Sichern Sie das Kabel und platzieren Sie das drahtlose Terminal separat mit geeignetem Zugang und Funkabdeckung."
+      ],
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "evidence": "Direct public manufacturer mounting and placement guidance."
+    },
+    {
+      "id": "faq-which-machines",
+      "question": "3. Für welche Industriemaschinen eignet sich dieser Überwachungsansatz?",
+      "paragraphs": [
+        "Typische Projektkandidaten sind Elektromotoren, Pumpen, Ventilatoren, Kompressoren, Getriebe, Förderanlagen, Werkzeugmaschinenspindeln, Mischer und Zentrifugen. Wählen Sie einen starren, feststehenden Messpunkt nahe der relevanten Komponente und stimmen Sie das nutzbare Frequenzband, den Messbereich und die Installationsbedingungen der gelieferten Messsonde auf die Maschine ab. Diese Produktfamilie mit externer Messsonde ist für die Überwachung hochfrequenter Maschinenschwingungen vorgesehen."
+      ],
+      "sources": [
+        "S3",
+        "S4",
+        "S7"
+      ],
+      "evidence": "Direct published machinery families; Hitelecom scope boundary comes from the user's instruction."
+    },
+    {
+      "id": "faq-probe-wireless",
+      "question": "4. Wie arbeitet eine kabelgebundene Messsonde mit einem drahtlosen Überwachungsterminal zusammen?",
+      "paragraphs": [
+        "Das Sondenkabel verbindet den mechanischen Messpunkt mit dem Überwachungsterminal. Die konfigurierte 4G-, NB-IoT- oder LoRa-Verbindung übernimmt die Datenübertragung zum entfernten Ziel. Planen Sie Sondenposition, freigegebene Kabellänge und Terminalstandort gemeinsam und berücksichtigen Sie Maschinenzugang, Kabelschutz und Funkabdeckung."
+      ],
+      "sources": [
+        "S17"
+      ],
+      "evidence": "Cable-installation demand is publicly documented; actual architecture and available radio options are Hitelecom product facts supplied by Root."
+    },
+    {
+      "id": "faq-frequency-specification",
+      "question": "5. Wie groß ist der Messfrequenzbereich für Schwingungen?",
+      "paragraphs": [
+        "Der spezifizierte Messfrequenzbereich beträgt 10–5000 Hz. Dies ist der Schwingungsfrequenzbereich, der an der Messsonde erfasst wird, und nicht die drahtlose Übertragungsrate. Die Kalibrierbedingung bei 80 Hz ist eine separate Kalibrierreferenz. Teilen Sie uns Maschinendrehzahl, Zielkomponenten und Montageanordnung mit, damit das Erfassungs- und Übertragungsprofil auf die Anwendung abgestimmt werden kann."
+      ],
+      "sources": [
+        "U1",
+        "S1",
+        "S2",
+        "S10"
+      ],
+      "evidence": "10–5,000 Hz confirmed directly by the user on 2026-10-11. Public technical guidance supports separating frequency response, mounting and acquisition settings."
+    },
+    {
+      "id": "faq-metric-definition",
+      "question": "6. Unterstützt der Sensor einachsige oder dreiachsige Schwingungsmessungen?",
+      "paragraphs": [
+        "Ja. Einachsige und dreiachsige Konfigurationen sind verfügbar. Eine einachsige Konfiguration misst Schwingungen entlang der gewählten Messrichtung. Eine dreiachsige Konfiguration misst entlang dreier Achsen am selben Montagepunkt. Spezifizieren Sie die Konfiguration und Montageorientierung für Ihre Maschine. Die Anzeigeauflösung der RMS-Schwinggeschwindigkeit beträgt 0,1 mm/s."
+      ],
+      "sources": [
+        "U1"
+      ],
+      "evidence": "Axes and RMS display resolution confirmed directly by the user on 2026-10-11. This replaces the previous broad metric-definition answer and does not claim peak or peak-to-peak outputs."
+    },
+    {
+      "id": "faq-variable-speed",
+      "question": "7. Wie sollten Messwerte an drehzahlvariablen oder zyklisch arbeitenden Maschinen verglichen werden?",
+      "paragraphs": [
+        "Dokumentieren Sie Drehzahl, Last und Betriebsphase der Maschine im Überwachungsplan. Legen Sie vergleichbare Referenzzustände für relevante Bedingungen fest, etwa eine stabile Betriebsdrehzahl oder eine reproduzierbare Phase des Produktionszyklus. Bewerten Sie Veränderungen anhand dieser Bedingungen und der Instandhaltungshistorie, damit der Trend eine gezielte Inspektion unterstützt."
+      ],
+      "sources": [
+        "S5",
+        "S6",
+        "S18"
+      ],
+      "evidence": "Operating-state importance is documented publicly; exact Hitelecom algorithms or automatic state synchronisation are not claimed."
+    },
+    {
+      "id": "faq-probe-installation",
+      "question": "8. Was trägt zu einer aussagekräftigen Hochfrequenzmessung bei?",
+      "paragraphs": [
+        "Verwenden Sie das freigegebene Montageverfahren auf einer sauberen, ebenen und starren Messfläche. Die mechanische Ankopplung beeinflusst den Frequenzgang im montierten Zustand. Prüfen Sie daher die Sensorschnittstelle und gegebenenfalls den Montagesockel für das Zielfrequenzband. Sichern Sie das Kabel mit Zugentlastung und geeignetem Spiel und führen Sie es sicher an beweglichen Teilen und Motorstromleitungen vorbei."
+      ],
+      "sources": [
+        "S2",
+        "S17"
+      ],
+      "evidence": "Direct public mounting and cabling technical guidance."
+    },
+    {
+      "id": "faq-maintenance-workflow",
+      "question": "9. Wie können Schwingungstrends den Instandhaltungsablauf unterstützen?",
+      "paragraphs": [
+        "Vereinbaren Sie einen normalen Betriebsreferenzzustand, die zu prüfenden Werte und eine praxisgerechte Inspektionsreaktion. Eine anhaltende Veränderung an einem gekennzeichneten Messpunkt kann das Team bei der Priorisierung von Prüfungen und beim Vergleich vor und nach Wartungsarbeiten unterstützen. Die detaillierte Fehlerinterpretation hängt von der Maschine, den verfügbaren Messdaten und dem im Projekt eingesetzten Analyseverfahren ab."
+      ],
+      "sources": [
+        "S6",
+        "S17"
+      ],
+      "evidence": "Public documentation distinguishes trending/anomaly review from detailed machinery diagnosis; no Hitelecom diagnosis guarantee is introduced."
+    },
+    {
+      "id": "faq-quotation-details",
+      "question": "10. Welche Angaben helfen Hitelecom bei der Vorbereitung einer geeigneten Konfiguration?",
+      "paragraphs": [
+        "Teilen Sie uns Maschinentyp, Drehzahlbereich, Betriebszyklus, Zielkomponenten, Fotos der vorgeschlagenen Montagepunkte und den Bedarf an einachsiger oder dreiachsiger Messung mit. Ergänzen Sie Umgebung, Anforderungen an die Kabelführung, Mess- und Übertragungsintervalle, Land sowie bevorzugte Plattform oder Kommunikationsverbindung. Diese Angaben helfen, Messsonde, Terminal und Datenanforderungen auf Ihre Installation abzustimmen."
+      ],
+      "sources": [
+        "S1",
+        "S2",
+        "S17"
+      ],
+      "evidence": "Practical specification checklist derived from public selection and installation considerations. This is an editorial buying-support question, not a verified customer FAQ."
+    }
+  ],
+  "evidence": {
+    "reviewed": "2026-10-11",
+    "officialPage": "https://www.hitelecom.com/product/vibration-sensor",
+    "officialDatasheet": "https://www.hitelecom.com/downloads/vibration-sensor-datasheet.pdf",
+    "scopeConfirmedBy": "User instruction: external cabled high-frequency machinery product; future low-frequency product separate",
+    "sources": [
+      {
+        "id": "S1",
+        "organization": "PCB Piezotronics",
+        "title": "Motor vibration sensors",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/motor-vibration",
+        "ref": "turn180view1",
+        "supports": "Motor monitoring; drive-end/non-drive-end bearing locations; mechanical coupling and output/processing considerations."
+      },
+      {
+        "id": "S2",
+        "organization": "PCB Piezotronics",
+        "title": "Guidelines for mounting test accelerometers",
+        "url": "https://www.pcb.com/resources/technical-information/mounting",
+        "ref": "turn180view0",
+        "supports": "A smooth rigid interface and stud mounting can preserve high-frequency response; added bases or soft interfaces change mounted response. Installation must follow the actual sensor instructions."
+      },
+      {
+        "id": "S3",
+        "organization": "ifm",
+        "title": "VVB vibration sensor applications",
+        "url": "https://www.ifm.com/us/en/us/learn-more/vibration/vvb0/io-link-vibration-applications",
+        "ref": "turn180view6",
+        "supports": "Electric motors, centrifugal pumps, direct/indirect-drive fans and reducers; locations near the monitored component; examples of separate motor and driven-equipment points."
+      },
+      {
+        "id": "S4",
+        "organization": "ifm",
+        "title": "Applications of diagnostic electronics and acceleration sensors",
+        "url": "https://www.ifm.com/in/en/shared/technologies/from-vibration-to-real-time-maintenance/vse-vsa-applications",
+        "ref": "turn180view3",
+        "supports": "Machine tools, decanters, compressors, gearboxes, storage/retrieval systems, cross-belt sorters, conveyors, fillers, mixers, shredders and mills. The sophisticated diagnostic capabilities described belong to ifm's specified complete system."
+      },
+      {
+        "id": "S5",
+        "organization": "SKF Technical Support",
+        "title": "On-line surveillance monitoring of gearboxes",
+        "url": "https://skftechnicalsupport.zendesk.com/hc/en-us/articles/360032626714-On-line-Surveillance-Monitoring-of-Gearboxes",
+        "ref": "turn180view4",
+        "supports": "Local transmission paths matter; complex gearboxes have overlapping sources and operating-speed/load variation. Single-point overall readings are not identical to component diagnosis."
+      },
+      {
+        "id": "S6",
+        "organization": "SKF Technical Support",
+        "title": "SKF Axios technical FAQ",
+        "url": "https://skftechnicalsupport.zendesk.com/hc/en-us/articles/8104349791891-SKF-Axios-Technical-FAQ",
+        "ref": "turn180view5",
+        "supports": "Public questions on machinery suitability, placement, variable speeds and inspection after anomaly notification. These are SKF's published FAQ, not Hitelecom customer questions."
+      },
+      {
+        "id": "S7",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Condition monitoring",
+        "url": "https://wilcoxon.com/industries-and-applications/condition-monitoring-products/",
+        "ref": "turn180view2",
+        "supports": "Established monitored machinery families include motors, pumps, fans, gearboxes and compressors."
+      },
+      {
+        "id": "S8",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Water and wastewater pump monitoring",
+        "url": "https://wilcoxon.com/industries-and-applications/water-and-wastewater/",
+        "ref": "turn184view3",
+        "supports": "Water/wastewater motor and pump monitoring, baseline/trending, direct-drive and vertical pump arrangements."
+      },
+      {
+        "id": "S9",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Food and beverage",
+        "url": "https://wilcoxon.com/industries-and-applications/food-and-beverage/",
+        "ref": "turn183view1",
+        "supports": "Motors, pumps, fillers, cappers and conveyor equipment in food/beverage production; environmental suitability is a separate selection requirement."
+      },
+      {
+        "id": "S10",
+        "organization": "PCB Piezotronics",
+        "title": "Rotary screw compressors",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/rotary-screw-compressors",
+        "ref": "turn184view4",
+        "supports": "High-frequency compressor applications; casing locations close to radial bearings; bandwidth must match the engineering objective."
+      },
+      {
+        "id": "S11",
+        "organization": "PCB Piezotronics",
+        "title": "Machine tool spindles",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/machine-tool-spindles",
+        "ref": "turn185view2",
+        "supports": "Machine-tool vibration trends; cutting-process vibration, cutting fluids, metal chips and cable protection considerations."
+      },
+      {
+        "id": "S12",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Pharmaceutical",
+        "url": "https://wilcoxon.com/industries-and-applications/pharmaceutical/",
+        "ref": "turn184view1",
+        "supports": "Mixers, motors, pumps, vacuum dryers, conveyor/filling drives; environment and contaminants require review."
+      },
+      {
+        "id": "S13",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Pulp and paper",
+        "url": "https://wilcoxon.com/industries-and-applications/pulp-and-paper/",
+        "ref": "turn184view2",
+        "supports": "Paper rollers, calenders, chippers, compressors, motors, pumps and winders; wet and heated environments need matching hardware."
+      },
+      {
+        "id": "S14",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Cement",
+        "url": "https://wilcoxon.com/industries-and-applications/cement/",
+        "ref": "turn183view0",
+        "supports": "Crushing, grinding, material transport, mills, separators, motors, fans and compressors in cement production."
+      },
+      {
+        "id": "S15",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Mining",
+        "url": "https://wilcoxon.com/industries-and-applications/mining/",
+        "ref": "turn184view0",
+        "supports": "Mining motors, gearboxes, conveyors, fans, generators and pumps; hazardous-area approvals belong to the actual selected equipment."
+      },
+      {
+        "id": "S16",
+        "organization": "PCB Piezotronics",
+        "title": "Vibratory screens and feeders",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/vibratory-screens-and-feeders",
+        "ref": "turn184view6",
+        "supports": "Screen/feeder machinery is an established vibration application; the proposed Hitelecom scene is restricted to drive/exciter bearing-housing trends and requires bandwidth/amplitude review."
+      },
+      {
+        "id": "S17",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Vibration monitoring FAQs",
+        "url": "https://wilcoxon.com/resources/faqs/",
+        "ref": "turn184view5",
+        "supports": "Metric/output distinctions, mounting, cable routing, strain relief, environmental effects and cable-length review are public engineering questions. Wilcoxon's example limits and hardware are not Hitelecom specifications."
+      },
+      {
+        "id": "S18",
+        "organization": "ifm",
+        "title": "Decanter centrifuges",
+        "url": "https://www.ifm.com/in/en/shared/landingpages/monitoring-decanters",
+        "ref": "turn180view7",
+        "supports": "Centrifuge vibration depends on multiple components and operating states; speed/process context supports interpretation."
+      }
+    ],
+    "notice": "The sources establish general machinery-monitoring practice and public engineering questions. These drafts are application proposals, not verified Hitelecom customer installations, and no search-volume or customer-enquiry-log evidence has been obtained.",
+    "userConfirmedSpecifications": {
+      "source": "User messages in this conversation, 2026-10-11",
+      "velocityRmsRange": "0–50 mm/s",
+      "measurementAxes": "Single-axis or triaxial",
+      "velocityRmsDisplayResolution": "0.1 mm/s",
+      "measurementFrequencyRange": "10–5,000 Hz",
+      "installationDiagram": "Probe directly on the motor bearing end shield; terminal separately mounted"
+    }
+  }
+}
