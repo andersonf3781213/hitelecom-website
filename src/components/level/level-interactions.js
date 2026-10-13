@@ -1,6 +1,8 @@
 // All task photos and copy are real static HTML. This small enhancement moves
 // the selected photo into the left desktop slot; native details remain usable
 // without JavaScript, and narrow screens keep the photo with its task.
+const I18N = (() => { try { return JSON.parse(document.querySelector('.ht-level')?.dataset.i18n || '{}'); } catch { return {}; } })();
+const T = key => Object.prototype.hasOwnProperty.call(I18N, key) ? I18N[key] : key;
 const sceneViewport = window.matchMedia('(max-width: 600px)');
 const applicationSceneStates = new Map();
 for (const group of document.querySelectorAll('.application-group')) {
@@ -139,20 +141,20 @@ if (form) {
   const brief = document.querySelector('#enquiry-brief');
   const email = document.querySelector('#email-brief');
   const status = document.querySelector('#brief-status');
-  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent('H Series liquid level sensor — project enquiry')}&body=${encodeURIComponent(brief.value)}`; };
+  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent(T('H Series liquid level sensor — project enquiry'))}&body=${encodeURIComponent(brief.value)}`; };
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    brief.value = ['Hello Hitelecom,', '', 'I would like to discuss a liquid level monitoring project.', '', ...['Application','Country','Model','Quantity','Liquid','Level span','Probe and cable','Installation conditions','Connectivity','Timing and platform','Requirements'].map(key=>`${key}: ${data.get(key) || 'Please advise'}`), '', 'Please advise on a suitable model, configuration, supporting datasheet and quotation.', '', 'Thank you.'].join('\n');
+    brief.value = [T('Hello Hitelecom,'), '', T('I would like to discuss a liquid level monitoring project.'), '', ...['Application','Country','Model','Quantity','Liquid','Level span','Probe and cable','Installation conditions','Connectivity','Timing and platform','Requirements'].map(key=>`${T(key)}: ${data.get(key) || T('Please advise')}`), '', T('Please advise on a suitable model, configuration, supporting datasheet and quotation.'), '', T('Thank you.')].join('\n');
     updateEmail(); review.hidden = false;
-    status.textContent = 'Your brief is ready. Review it and open your email app to send.';
+    status.textContent = T('Your brief is ready. Review it and open your email app to send.');
     brief.focus({preventScroll:true}); review.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
   });
   brief.addEventListener('input', updateEmail);
   document.querySelector('#copy-brief').addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(brief.value); status.textContent = 'Project brief copied.'; }
-    catch { brief.focus(); brief.select(); status.textContent = 'Your brief is selected. Use your device’s copy command.'; }
+    try { await navigator.clipboard.writeText(brief.value); status.textContent = T('Project brief copied.'); }
+    catch { brief.focus(); brief.select(); status.textContent = T('Your brief is selected. Use your device’s copy command.'); }
   });
 }
 
@@ -175,11 +177,11 @@ if (contactBar) {
   const copy = contactBar.querySelector('.level-copy-wechat');
   const status = contactBar.querySelector('.level-copy-status');
   copy.addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(copy.dataset.copy); status.textContent = 'WeChat ID copied.'; }
+    try { await navigator.clipboard.writeText(copy.dataset.copy); status.textContent = T('WeChat ID copied.'); }
     catch {
       const range = document.createRange(); range.selectNodeContents(copy);
       const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
-      status.textContent = 'ID selected. Use your device’s copy command.';
+      status.textContent = T('ID selected. Use your device’s copy command.');
     }
   });
   contactBar.querySelector('.level-contact-top').addEventListener('click', event => {
@@ -206,6 +208,6 @@ document.addEventListener('keydown', event => {
 
 document.querySelectorAll('[data-measurement]').forEach(link => link.addEventListener('click', () => {
   const field = document.querySelector('#requirements');
-  const objective = `Monitoring objective: ${link.dataset.measurement}`;
+  const objective = `${T('Monitoring objective:')} ${link.dataset.measurement}`;
   if (!field.value.split('\n').includes(objective)) field.value = objective + '\n' + field.value;
 }));

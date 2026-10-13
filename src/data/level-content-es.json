@@ -1,0 +1,1405 @@
+{
+  "seo": {
+    "title": "Sensores inalámbricos de nivel de líquidos | Hitelecom",
+    "description": "Configure los sensores de nivel sumergibles de la serie H de Hitelecom para depósitos, efluentes, sumideros y pozos. Hasta 200 m, MQTT y opciones inalámbricas."
+  },
+  "hero": {
+    "h1": "Sensores inalámbricos de nivel de líquidos.",
+    "value_heading": "Conozca el nivel.\nPlanifique la siguiente acción.",
+    "description": "Los sensores de nivel sumergibles de la serie H de Hitelecom llevan las lecturas de depósitos, sumideros, pozos e instalaciones de agua a su plataforma de monitorización. Configure el rango de nivel, el cable de la sonda y la instalación según el líquido, el recipiente y las condiciones de funcionamiento; después, seleccione una variante 4G, NB-IoT o LoRa. Desde las reservas de agua de una fábrica hasta la recogida de efluentes, un punto de medida definido ayuda a su equipo a seguir la reposición, el descenso del nivel y los episodios de nivel alto o bajo entre las visitas a la instalación.",
+    "primary_cta": "Configure su proyecto de nivel",
+    "secondary_cta": "Descargar ficha técnica",
+    "datasheet_url": "https://www.hitelecom.com/downloads/liquid-level-sensor-datasheet.pdf",
+    "quick_points": [
+      "Hasta 200 m · Rango según la aplicación",
+      "Precisión de ±0.5% FS · Mayor precisión bajo solicitud",
+      "Variantes 4G, NB-IoT o LoRa"
+    ]
+  },
+  "features": [
+    {
+      "title": "Visibilidad del nivel de líquidos",
+      "text": "Siga las tendencias de almacenamiento, reposición y recogida en los depósitos, sumideros y pozos seleccionados."
+    },
+    {
+      "title": "Precisión de ±0.5% FS",
+      "text": "Elija el fondo de escala según la tolerancia de nivel necesaria. Se pueden estudiar configuraciones de mayor precisión."
+    },
+    {
+      "title": "Hasta 200 m",
+      "text": "Configure el rango publicado según la profundidad del líquido, el punto de referencia y la tarea de monitorización."
+    },
+    {
+      "title": "Protección IP68",
+      "text": "Protección IP68 publicada, con la ubicación de los componentes y las condiciones de inmersión definidas para su configuración."
+    },
+    {
+      "title": "Conectividad inalámbrica",
+      "text": "Seleccione 4G LTE, NB-IoT o LoRa según la cobertura de la instalación y la plataforma receptora."
+    },
+    {
+      "title": "NFC y OTA remota",
+      "text": "Activación NFC y configuración local compatibles, con actualizaciones remotas del firmware para la configuración seleccionada."
+    },
+    {
+      "title": "Monitorización de larga duración",
+      "text": "Referencia publicada de la batería: más de 10 años con envíos cada hora; la autonomía se revisa según su perfil de funcionamiento."
+    },
+    {
+      "title": "Configuración del proyecto",
+      "text": "Adapte el rango, el cable de la sonda, el montaje, los envíos y las alertas de nivel alto y bajo a la instalación."
+    }
+  ],
+  "measurement": {
+    "eyebrow": "DEFINA QUÉ NECESITA SU PROYECTO DE NIVEL",
+    "heading": "Elija el rango.\nDefina el punto de medida.",
+    "description": "Los datos de nivel útiles parten de una posición de referencia clara y de un rango adaptado a la tarea. Especifique el líquido, el nivel máximo y la tolerancia necesaria; después, adapte la sonda, el cable y la instalación al depósito, sumidero, pozo o instalación de agua.",
+    "cards": [
+      {
+        "title": "Rango de nivel y precisión",
+        "text": "La familia publicada abarca 0–200 m y admite personalización. Elija el fondo de escala para la tarea real y convierta la precisión expresada como porcentaje del fondo de escala en la tolerancia de nivel que necesita su operación.",
+        "project_brief": "Nivel máximo · Profundidad de referencia · Tolerancia necesaria · Consignas de alarma",
+        "symbol": "level"
+      },
+      {
+        "title": "Condiciones del líquido y del recipiente",
+        "text": "Indique el fluido, la temperatura, los sólidos y la presión del depósito para revisar la idoneidad de la sonda y el cable. En una configuración basada en presión, incluya la densidad del líquido y la disposición de la referencia de presión en la selección.",
+        "project_brief": "Composición del líquido · Densidad · Temperatura · Recipiente abierto o presurizado · Ensuciamiento",
+        "symbol": "conditions"
+      },
+      {
+        "title": "Instalación y conectividad",
+        "text": "Planifique una posición estable para la sonda y un terminal inalámbrico accesible. Acuerde el tendido del cable, el montaje, la cobertura de red y la plataforma receptora como parte de un mismo despliegue, con acceso práctico para inspecciones.",
+        "project_brief": "Posición de la sonda · Recorrido del cable · Montaje del terminal · Cobertura · Plataforma",
+        "symbol": "deployment"
+      }
+    ],
+    "installation_heading": "Establezca una referencia de nivel clara.\nFacilite la instalación.",
+    "installation_text": "Documente el punto de referencia de la sonda, la inmersión máxima y la relación entre la lectura y las marcas de nivel de la instalación. Seleccione una posición alejada de las turbulencias intensas de entrada, con un soporte adecuado y acceso para inspecciones. Planifique el tendido del cable teniendo en cuenta la abrasión, la tensión y las tareas de mantenimiento. Monte el terminal de comunicación para obtener una recepción fiable y facilitar el acceso de mantenimiento. Confirme la sonda, el cable, la referencia de presión y los límites de los componentes suministrados antes de poner en servicio toda la ruta de datos."
+  },
+  "workflow": {
+    "eyebrow": "DE LA LECTURA DE NIVEL A LA ACTUACIÓN EN LA INSTALACIÓN",
+    "heading": "Observe la tendencia del nivel.\nAyude al equipo a dar el siguiente paso.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Medir",
+        "text": "La sonda seleccionada registra el nivel en un punto definido del depósito, sumidero o pozo. Acuerde la referencia, el rango, las condiciones del líquido y el perfil de muestreo antes del despliegue."
+      },
+      {
+        "number": "02",
+        "title": "Transmitir",
+        "text": "Las lecturas siguen la ruta inalámbrica seleccionada. Verifique la cobertura, los envíos, el formato de los mensajes y su entrega a Hitelecom Cloud o a la plataforma receptora acordada."
+      },
+      {
+        "number": "03",
+        "title": "Revisar",
+        "text": "Compare las tendencias de reposición, descenso del nivel y recogida con las operaciones de la instalación. Establezca umbrales y acuerde quién revisa una alerta o visita el punto de monitorización."
+      }
+    ],
+    "platform_title": "Hitelecom Cloud.\nSus datos de nivel, conectados.",
+    "platform_text": "El despliegue 4G y NB-IoT publicado envía datos mediante MQTT a Hitelecom Cloud o a la plataforma del cliente. Acuerde el punto de conexión, la autenticación y el formato de los mensajes según la configuración suministrada. Para LoRa, confirme el protocolo de radio, la pasarela y la ruta al servidor. Los paneles de la nube y las reglas de alarma pueden apoyar el trabajo operativo; la automatización de bombas o válvulas se configura mediante el controlador y las interfaces apropiados para el proyecto.",
+    "profile_heading": "Muestree según el proceso.\nEnvíe los datos con la frecuencia acordada.",
+    "profile_text": "Elija el muestreo y los envíos según la velocidad de cambio del nivel y la respuesta que necesita su equipo. Un depósito de almacenamiento que se repone lentamente puede utilizar un perfil distinto al de un sumidero pequeño de recogida. Los ajustes de envío y las alarmas de la plataforma deben ponerse en servicio conjuntamente, incluidos los tiempos de los datos y el seguimiento asignado. Para el control de bombas, defina la ruta del controlador y los requisitos de respuesta como parte del sistema completo.",
+    "battery_title": "Planificación de bajo consumo para la monitorización remota.",
+    "battery_text": "La referencia publicada indica más de 10 años de autonomía de la batería con un intervalo de envío de una hora, en las condiciones de ensayo especificadas. Revise la estimación para el modelo y el despliegue seleccionados. La configuración de medida, las necesidades de muestreo, la frecuencia de envío, la cobertura de red, las retransmisiones y la temperatura de funcionamiento afectan a la autonomía. Adapte el perfil de monitorización al proceso y confirme la estimación de autonomía con la configuración solicitada."
+  },
+  "series": {
+    "eyebrow": "SERIE Y CONFIGURACIÓN",
+    "heading": "Una serie.\nLa configuración de nivel que necesita su proyecto.",
+    "description": "H200, H300 y H500 forman la familia publicada de sensores de nivel. Seleccione conjuntamente el rango, el cable de la sonda y el montaje, las condiciones del líquido y del recipiente, la variante inalámbrica y el perfil de envío. La oferta define la configuración suministrada y sus requisitos de instalación.",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "model_card_subtitle": "Rango y configuración de despliegue seleccionados para su proyecto",
+    "steps": [
+      {
+        "title": "Defina la tarea de nivel",
+        "text": "Aplicación · Líquido · Nivel máximo · Tolerancia necesaria · Presión del depósito · Temperatura de funcionamiento"
+      },
+      {
+        "title": "Defina la instalación",
+        "text": "Referencia de la sonda · Longitud y recorrido del cable · Montaje del terminal · Condiciones de ensuciamiento · Acceso para inspecciones"
+      },
+      {
+        "title": "Defina la ruta de datos",
+        "text": "Variante inalámbrica · Muestreo y envío · Plataforma receptora · Destinatarios de las alertas · Integración del controlador"
+      }
+    ]
+  },
+  "specifications": {
+    "eyebrow": "ESPECIFICACIONES TÉCNICAS",
+    "heading": "Especificaciones publicadas de la familia.",
+    "description": "Utilice estos valores publicados para preparar la información de su proyecto. Confirme el rango seleccionado, la construcción de la sonda, las condiciones del líquido y del recipiente, los límites de los componentes y las interfaces de datos en la configuración suministrada.",
+    "rows": [
+      {
+        "label": "Modelos publicados",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "Formato del sensor",
+        "value": "Sonda sumergible con cable y terminal de comunicación inalámbrica"
+      },
+      {
+        "label": "Rango de nivel",
+        "value": "0–200 m, personalizable; fondo de escala específico de la aplicación, seleccionado para el nivel y la precisión necesarios"
+      },
+      {
+        "label": "Precisión publicada",
+        "value": "±0.5% FS; mayor precisión personalizable"
+      },
+      {
+        "label": "Estabilidad a largo plazo",
+        "value": "±0.2% FS/año; parámetro distinto de la precisión de medida"
+      },
+      {
+        "label": "Temperatura de funcionamiento",
+        "value": "De −20°C a +70°C publicada; confirme los límites de la sonda, el líquido y el cable para la configuración suministrada"
+      },
+      {
+        "label": "Temperatura de almacenamiento",
+        "value": "De −20°C a +80°C"
+      },
+      {
+        "label": "Opciones inalámbricas",
+        "value": "4G LTE / NB-IoT / LoRa, según la configuración suministrada"
+      },
+      {
+        "label": "Protocolo de datos y plataforma",
+        "value": "MQTT indicado; envío 4G/NB-IoT a Hitelecom Cloud o a la plataforma del cliente"
+      },
+      {
+        "label": "Alimentación",
+        "value": "Batería interna; disposición de alimentación especificada con la configuración suministrada"
+      },
+      {
+        "label": "Referencia de autonomía de la batería",
+        "value": "Más de 10 años con envíos cada hora en las condiciones de ensayo especificadas; la autonomía real depende de la configuración y del perfil de funcionamiento"
+      },
+      {
+        "label": "Protección",
+        "value": "Envolvente IP68 indicada; condiciones de inmersión de los componentes confirmadas para el proyecto"
+      },
+      {
+        "label": "Montaje del transmisor",
+        "value": "Orejetas de montaje / abrazadera para poste / soporte ranurado, según la configuración"
+      },
+      {
+        "label": "Configuración y mantenimiento",
+        "value": "Activación NFC y configuración local; actualizaciones remotas OTA compatibles"
+      },
+      {
+        "label": "Cable de la sonda",
+        "value": "La longitud del cable puede adaptarse a la instalación; la compatibilidad de la sonda, el cable y el líquido se revisa durante la selección"
+      }
+    ],
+    "datasheet_label": "Descargar la ficha técnica del sensor de nivel de líquidos",
+    "datasheet_url": "https://www.hitelecom.com/downloads/liquid-level-sensor-datasheet.pdf"
+  },
+  "faqHeading": {
+    "kicker": "RESPUESTAS PARA SU PROYECTO",
+    "title": "Preguntas frecuentes.",
+    "intro": "Respuestas prácticas para elegir un rango de nivel, adaptar la configuración a las condiciones del líquido y del recipiente, instalar la sonda e incorporar las lecturas a su trabajo operativo."
+  },
+  "faqs": [
+    {
+      "id": "faq-level-range",
+      "question": "¿Qué rango de nivel debo elegir para mi depósito, pozo o sumidero?",
+      "paragraphs": [
+        "Empiece por el nivel máximo que necesita medir, el punto de referencia de la sonda y la tolerancia de nivel necesaria para su operación. La familia publicada de la serie H abarca 0–200 m y admite personalización. Seleccione el rango de fondo de escala real para la instalación, en lugar de utilizar automáticamente el rango más amplio. Un plano del depósito, la profundidad del pozo o una sección del sumidero ayudan a Hitelecom a revisar conjuntamente el rango, la longitud del cable y el montaje."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/downloads/liquid-level-sensor-datasheet.pdf",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ],
+      "evidence": [
+        "hitelecom-datasheet",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-full-scale-accuracy",
+      "question": "¿Qué relación tiene la precisión del fondo de escala con la profundidad de mi depósito?",
+      "paragraphs": [
+        "La precisión publicada es de ±0.5% FS, es decir, un porcentaje del fondo de escala seleccionado. Como ejemplo de cálculo, un fondo de escala de 10 m corresponde a ±50 mm con ese porcentaje indicado. Elija el rango y cualquier opción de mayor precisión según la tolerancia que requiere su tarea. La estabilidad publicada de ±0.2% FS/año describe la variación con el tiempo; la temperatura, las condiciones del líquido y la instalación se revisan por separado al definir el requisito completo de medida."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/downloads/liquid-level-sensor-datasheet.pdf",
+        "https://www.wika.com/media/Data-sheets/Level/Submersible-pressure-sensors/ds_lm4005_en_co.pdf"
+      ],
+      "evidence": [
+        "hitelecom-datasheet",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-liquid-selection",
+      "question": "¿Qué información ayuda a seleccionar el sensor adecuado para nuestro líquido?",
+      "paragraphs": [
+        "Indique la composición y la concentración del líquido, la temperatura de funcionamiento, el comportamiento de su densidad, los sólidos en suspensión y las condiciones de limpieza. Estos datos permiten revisar la sonda, las juntas y el cable según el proceso real. El agua, los efluentes, los aceites y las soluciones químicas pueden necesitar configuraciones diferentes. Incluya la presión del recipiente y la precisión necesaria en la misma información del proyecto para que Hitelecom pueda definir una disposición de medida adecuada y confirmar la compatibilidad de las piezas suministradas."
+      ],
+      "sources": [
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ],
+      "evidence": [
+        "primary-industrial-measurement-evidence",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-cable-mounting",
+      "question": "¿Cómo pueden adaptarse el cable de la sonda y el montaje a nuestra instalación?",
+      "paragraphs": [
+        "El producto publicado admite la personalización del rango, de la longitud del cable de la sonda y del montaje. Especifique la posición de la sonda, la profundidad del depósito o del pozo y el recorrido hasta el terminal de comunicación, incluidos el acceso para mantenimiento y la protección frente a cargas mecánicas. Las orejetas de montaje, la abrazadera para poste o el soporte ranurado del terminal dependen de la configuración. Acuerde por separado cómo se posiciona y se sujeta la sonda sumergida; después, documente su referencia de nivel y el recorrido del cable para la puesta en servicio."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/zh/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-wastewater-readings",
+      "question": "¿Cómo podemos obtener lecturas estables en aguas residuales o en un sumidero con mucha actividad?",
+      "paragraphs": [
+        "Elija una posición de medida que represente el nivel de recogida y siga siendo accesible para inspecciones. Revise las turbulencias de entrada, la acumulación de sedimentos, las incrustaciones y las condiciones químicas del líquido al seleccionar la sonda. Un soporte adecuado o una disposición de protección pueden ayudar a mantener una posición constante, mientras que un plan de inspección conserva la superficie de medida y el cable en condiciones útiles. Facilite el esquema del sumidero y los sólidos previstos para incluir estos detalles en la propuesta de instalación."
+      ],
+      "sources": [
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025",
+        "https://bdih-download.endress.com/file/d9a1898ff2f4825c8bb607b465d05177/BA01605PEN_0222-00.pdf"
+      ],
+      "evidence": [
+        "primary-industrial-measurement-evidence",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-vessel-pressure",
+      "question": "¿Cómo afectan las condiciones de presión del depósito a la configuración de medida?",
+      "paragraphs": [
+        "Indique a Hitelecom si el recipiente es abierto, ventilado o presurizado. La serie H se publica como sensor de nivel sumergible; confirme el principio de medida y la referencia de presión de la sonda seleccionada durante la configuración. En una disposición basada en presión, un depósito abierto o ventilado necesita una referencia atmosférica adecuada, mientras que un recipiente cerrado exige considerar la presión en la superficie del líquido. Revise estos detalles junto con la densidad del líquido y el rango de nivel."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA",
+        "https://microsites.wika.com/newscontentgeneric_ms.WIKA?AxID=474"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "primary-industrial-measurement-evidence",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-level-volume",
+      "question": "¿Pueden las lecturas de nivel ayudar a estimar el volumen almacenado en un depósito?",
+      "paragraphs": [
+        "Sí, cuando se dispone de la geometría del depósito o de una tabla validada de conversión de nivel a volumen. El nivel es una referencia de altura; su conversión a volumen almacenado depende de la forma del recipiente y de la cota de referencia elegida. Facilite las dimensiones del depósito o la tabla de calibración, junto con las unidades de visualización necesarias, para acordar el cálculo y su implementación en la plataforma receptora. En depósitos irregulares u horizontales, utilice la conversión adecuada en todo el rango de nivel de trabajo."
+      ],
+      "sources": [
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ],
+      "evidence": [
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-wireless-selection",
+      "question": "¿Qué opción inalámbrica es adecuada para nuestra fábrica o instalación remota de agua?",
+      "paragraphs": [
+        "Elija la conexión según la recepción en el terminal, la compatibilidad de las redes regionales, las necesidades de envío y la plataforma receptora. La familia publicada incluye opciones 4G LTE, NB-IoT y LoRa. Para proyectos con redes móviles, revise la cobertura de los operadores disponibles y la configuración del módem seleccionada. Para LoRa, incluya la pasarela y la ruta al servidor en la selección. Compruebe la ruta completa desde el terminal instalado hasta el panel antes de finalizar la puesta en servicio de la instalación."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/downloads/liquid-level-sensor-datasheet.pdf",
+        "https://www.hitelecom.com/product"
+      ],
+      "evidence": [
+        "hitelecom-datasheet",
+        "hitelecom-platform"
+      ]
+    },
+    {
+      "id": "faq-platform-integration",
+      "question": "¿Cómo podemos conectar los datos de nivel a nuestra propia plataforma?",
+      "paragraphs": [
+        "El despliegue 4G y NB-IoT publicado envía lecturas de nivel mediante MQTT a Hitelecom Cloud o a la plataforma del cliente. Indique el punto de conexión receptor, el método de autenticación, los requisitos del contenido de los mensajes y los identificadores de los dispositivos para acordar la integración. Hitelecom Cloud también ofrece paneles y reglas de alarma configurables. Para un despliegue LoRa o un proyecto con controladores, confirme la pasarela, el servidor y la ruta de interfaces como parte de la solución suministrada."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.hitelecom.com/product"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "hitelecom-platform"
+      ]
+    },
+    {
+      "id": "faq-battery-reporting",
+      "question": "¿Cómo debemos equilibrar la frecuencia de envío y la autonomía de la batería?",
+      "paragraphs": [
+        "Establezca el perfil según la rapidez con la que cambia el nivel y cuándo necesita verlo el equipo. La referencia publicada de la batería indica más de 10 años con envíos cada hora en las condiciones de ensayo especificadas. La autonomía real depende del modelo, las necesidades de medida y muestreo, la frecuencia de envío, la temperatura, la cobertura de señal y las retransmisiones. Acuerde los tiempos necesarios para la medida y las notificaciones; después, solicite una estimación de autonomía de la batería para esa configuración y ese perfil de instalación."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.hitelecom.com/product/app"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "hitelecom-platform"
+      ]
+    },
+    {
+      "id": "faq-alerts-operations",
+      "question": "¿Cómo pueden las alertas de nivel alto y bajo apoyar las operaciones de reposición y drenaje?",
+      "paragraphs": [
+        "Establezca los umbrales alto y bajo según la reserva utilizable, el plan de reposición o la capacidad de recogida de la instalación. Defina quién revisa cada notificación y la actuación posterior; después, verifique la ruta completa de la alerta durante la puesta en servicio. Para el funcionamiento automatizado de bombas o válvulas, incluya en el proyecto el controlador o PLC, las interfaces adecuadas y la lógica de funcionamiento. El tiempo de respuesta necesario se acuerda para el sistema completo, desde la medida de nivel hasta el equipo de control seleccionado."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.hitelecom.com/product",
+        "https://www.vega.com/en/products/product-catalog/signal-conditioning/controllers/vegamet-141"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "hitelecom-platform",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-project-quotation",
+      "question": "¿Qué debemos incluir en una solicitud de oferta específica para la aplicación?",
+      "paragraphs": [
+        "Envíe la aplicación, las especificaciones del líquido, el nivel máximo, la presión del recipiente y la tolerancia necesaria, junto con una foto o un plano de la instalación. Añada la posición de la sonda, el recorrido del cable, las temperaturas del proceso y del ambiente, las condiciones de ensuciamiento y el acceso para inspecciones. Incluya la región de uso inalámbrico, el perfil de envío, la plataforma y cualquier integración del controlador. Cuando el proyecto requiera homologaciones para el contacto con el líquido o documentación para zonas peligrosas, identifique el requisito exacto para revisar conjuntamente la configuración propuesta y la documentación que la respalda."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/zh/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025",
+        "https://bdih-download.endress.com/file/16325362cdf9444b2ae1b628d4dad5f9/TI00431PEN_1926-00.pdf"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "primary-industrial-measurement-evidence",
+        "primary-industrial-measurement-evidence"
+      ]
+    }
+  ],
+  "inquiry": {
+    "eyebrow": "HABLEMOS DE SU PROYECTO",
+    "heading": "Háblenos del líquido.\nDefina el plan de monitorización adecuado.",
+    "description": "Indique el depósito, sumidero o instalación de agua y la información de nivel que necesita su equipo. Hitelecom puede revisar el rango, el cable de la sonda, la instalación y la configuración inalámbrica y, después, preparar una oferta según las condiciones de funcionamiento.",
+    "email": "sales@hitelecom.cn",
+    "supporting_text": "Un plano del depósito, una sección del sumidero o una foto de la instalación ayudan a definir el punto de medida. Incluya el líquido, el nivel máximo, la temperatura, la presión del recipiente, la cobertura inalámbrica y los requisitos de la plataforma cuando estén disponibles.",
+    "fields": [
+      "Application",
+      "Country",
+      "Model",
+      "Quantity",
+      "Liquid",
+      "Level span",
+      "Probe and cable",
+      "Installation conditions",
+      "Connectivity",
+      "Timing and platform",
+      "Requirements"
+    ],
+    "message_placeholder": "Describa el líquido, el depósito o sumidero, el nivel máximo, la precisión necesaria, la temperatura y la presión, la posición de la sonda, el recorrido del cable, la instalación, la cobertura inalámbrica, los envíos, la plataforma y las necesidades de integración del control.",
+    "submit_label": "Preparar consulta del proyecto",
+    "mailto_note": "Revise y edite la información de su proyecto; después, cópiela o ábrala en su aplicación de correo. La página no envía la consulta automáticamente."
+  },
+  "applicationSection": {
+    "title": "Aplicaciones de monitorización del nivel de líquidos.",
+    "valueHeading": "40 contextos de monitorización definidos.",
+    "description": "Explore ocho grupos de aplicaciones que abarcan el almacenamiento de agua en fábricas, los servicios de refrigeración, el agua de proceso, la recuperación de efluentes, el drenaje, los sistemas de agua de sectores específicos, el achique y el agua de captación. Cada contexto identifica la tendencia de nivel, el punto de medida y los detalles del proyecto que ayudan a seleccionar una configuración útil.",
+    "note": "Imágenes ilustrativas de las aplicaciones. Configure cada punto de monitorización según el líquido y la instalación reales."
+  },
+  "applications": [
+    {
+      "id": "raw-water-buffer",
+      "group": "factory-water",
+      "title": "Depósitos de reserva de agua bruta de fábrica",
+      "description": "Mantenga una visión clara del agua bruta almacenada antes de suministrarla al tratamiento y la producción. Una tendencia de nivel ayuda al equipo de servicios industriales a comparar el suministro entrante con la demanda de la planta, planificar la reposición e investigar un descenso inesperado. Configure el rango monitorizado según la profundidad útil de almacenamiento y acuerde con el equipo de operación el punto de aviso de nivel bajo.",
+      "measurement": "Altura del líquido y tendencias de reposición y descenso en el depósito de reserva de agua bruta.",
+      "monitoringPoint": "Un compartimento representativo del depósito de suministro, referido al punto de referencia acordado para el depósito.",
+      "installation": "Elija una posición accesible para la sonda, alejada del chorro de entrada y de la aspiración de salida. Lleve el cable hasta un terminal situado por encima del líquido y con cobertura de radio utilizable.",
+      "projectBrief": "Profundidad del depósito, disposición de entradas y salidas, niveles normales de trabajo, composición del agua bruta y plazo requerido para los avisos.",
+      "image": {
+        "name": "scene-raw-water-buffer.webp",
+        "alt": "Balsa de almacenamiento de agua bruta de fábrica con agua visible, tuberías y una planta industrial al fondo",
+        "caption": "Depósitos de reserva de agua bruta de fábrica · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "process-water-day-tanks",
+      "group": "factory-water",
+      "title": "Depósitos diarios de agua de proceso",
+      "description": "Ajuste la reposición del depósito diario a los turnos de producción. Una lectura local del nivel de líquido ofrece a los operadores una referencia común del agua disponible para el siguiente proceso, mientras que las lecturas históricas ayudan a explicar ciclos de llenado repetidos. Especifique la banda de trabajo, el nivel de reserva y las necesidades de transmisión de datos para el depósito diario real, en lugar de seleccionar por defecto el rango máximo de la familia.",
+      "measurement": "Nivel de agua dentro de la banda de funcionamiento del depósito diario, junto con los patrones de llenado y consumo.",
+      "monitoringPoint": "El depósito diario que abastece la línea de producción o el punto de distribución de agua de proceso seleccionado.",
+      "installation": "Prevea una suspensión o guía aprobada para la sonda y acceso para el mantenimiento. Sitúe el punto de detección fuera de las salpicaduras de llenado y proteja el cable en todo su recorrido.",
+      "projectBrief": "Profundidad útil, temperatura del agua, ciclo de llenado, respuesta requerida ante nivel bajo y conexión a la plataforma elegida.",
+      "image": {
+        "name": "scene-process-water-day-tanks.webp",
+        "alt": "Depósito diario industrial de agua de proceso junto a una línea de producción, con parte superior accesible y tuberías de servicio",
+        "caption": "Depósitos diarios de agua de proceso · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "treated-service-water",
+      "group": "factory-water",
+      "title": "Almacenamiento de agua de servicios tratada",
+      "description": "Monitorice el agua tratada después de la etapa de tratamiento de la planta y antes de distribuirla a los usuarios. Comparar los niveles a lo largo del tiempo ayuda al equipo de servicios industriales a comprender la recuperación del almacenamiento y la demanda durante periodos de alta actividad. Combine las lecturas con los registros de funcionamiento del tratamiento y de las bombas de trasiego al revisar el rendimiento, y seleccione los materiales de la sonda y el cable según la composición química real del agua tratada.",
+      "measurement": "Nivel del agua tratada almacenada y recuperación tras el trasiego o la demanda de producción.",
+      "monitoringPoint": "El depósito de agua de servicios situado aguas abajo de la etapa de tratamiento especificada.",
+      "installation": "Utilice un punto de inmersión estable y accesible con una referencia cero acordada. Confirme la composición química del agua, la temperatura y el procedimiento de limpieza antes de especificar el conjunto en contacto con el líquido.",
+      "projectBrief": "Tipo de tratamiento, dimensiones del depósito, niveles de trabajo, composición del agua, recorrido del cable y requisitos de transmisión de datos.",
+      "image": {
+        "name": "scene-treated-service-water.webp",
+        "alt": "Instalación industrial limpia de almacenamiento de agua tratada con depósitos, filtros y tuberías de servicio ordenadas",
+        "caption": "Almacenamiento de agua de servicios tratada · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "gravity-service-tanks",
+      "group": "factory-water",
+      "title": "Depósitos de agua de servicios alimentados por gravedad",
+      "description": "Haga seguimiento de la carga disponible en un depósito ventilado de agua de servicios alimentado por gravedad. El nivel de agua puede ayudar a los operadores a planificar el llenado y comprender un descenso del suministro en la zona abastecida. Vincule la medición a la cota de referencia y la banda de funcionamiento del propio depósito, para que las lecturas de distintos depósitos mantengan su utilidad para el equipo que las revisa.",
+      "measurement": "Nivel de líquido en el depósito por gravedad y banda de funcionamiento disponible por encima de la salida.",
+      "monitoringPoint": "El depósito ventilado de servicios que abastece el edificio o la zona de servicios industriales correspondiente.",
+      "installation": "Confirme el acceso al depósito, el soporte del cable y la ubicación aprobada del terminal. Tenga en cuenta la posición de la sonda y el punto de referencia del depósito al poner en servicio la indicación de nivel.",
+      "projectBrief": "Cota del depósito, nivel de salida, disposición del llenado, idoneidad del líquido y aviso de reserva requerido.",
+      "image": {
+        "name": "scene-gravity-service-tanks.webp",
+        "alt": "Depósito elevado de agua de servicios industriales con plataforma de acceso y tuberías de distribución visibles",
+        "caption": "Depósitos de agua de servicios alimentados por gravedad · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "emergency-water-reserves",
+      "group": "factory-water",
+      "title": "Monitorización de reservas de agua de emergencia",
+      "description": "Mantenga la visibilidad de una reserva de agua que puede inspeccionarse con menor frecuencia que el almacenamiento de producción. Las tendencias de nivel apoyan las inspecciones rutinarias, la planificación de la reposición y la investigación de una caída sin explicación. Incluya la lectura en el procedimiento de gestión de reservas del centro, con los destinatarios de las alertas y el tiempo de respuesta requerido acordados por los responsables de la instalación.",
+      "measurement": "Nivel de agua de reserva y variaciones entre inspecciones programadas.",
+      "monitoringPoint": "El depósito o compartimento de reserva designado, utilizando sus niveles de funcionamiento documentados.",
+      "installation": "Seleccione un punto de inmersión que permita el mantenimiento y proteja el cable y el terminal de daños mecánicos. Especifique en la información del proyecto cualquier requisito de aprobación o de protección independiente.",
+      "projectBrief": "Finalidad de la reserva, profundidad útil, trabajos de instalación permitidos, aprobaciones necesarias y flujo de avisos e inspecciones.",
+      "image": {
+        "name": "scene-emergency-water-reserves.webp",
+        "alt": "Recinto de depósitos industriales de almacenamiento de agua de emergencia con acceso de servicio e infraestructura de planta",
+        "caption": "Monitorización de reservas de agua de emergencia · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "cooling-tower-basins",
+      "group": "cooling-utilities",
+      "title": "Niveles de balsas de torres de refrigeración",
+      "description": "Haga seguimiento del agua contenida en una balsa de torre de refrigeración ante cambios de carga, evaporación y aporte de agua. Un historial de nivel ayuda al equipo de mantenimiento a revisar problemas recurrentes de reposición y programar inspecciones. Seleccione el punto de detección y el conjunto en contacto con el líquido según el tratamiento del agua circulante, la turbulencia de la balsa y el acceso práctico disponible durante el mantenimiento habitual.",
+      "measurement": "Altura del agua en la balsa de refrigeración y patrones de llenado y descenso.",
+      "monitoringPoint": "Un compartimento representativo de la balsa, alejado del flujo de retorno más intenso y de la aspiración de la bomba.",
+      "installation": "Utilice la guía o el soporte aprobado de la sonda para mantener una posición repetible. Evalúe los productos químicos de tratamiento, la temperatura, los residuos y el acceso para la limpieza del conjunto suministrado.",
+      "projectBrief": "Profundidad de la balsa, composición química del agua circulante, temperatura de trabajo, acceso de mantenimiento y perfil de transmisión de datos requerido.",
+      "image": {
+        "name": "scene-cooling-tower-basins.webp",
+        "alt": "Torre de refrigeración industrial con una balsa de agua abierta, superficies mojadas y equipos de refrigeración reconocibles",
+        "caption": "Niveles de balsas de torres de refrigeración · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "chilled-water-makeup",
+      "group": "cooling-utilities",
+      "title": "Depósitos de reposición de agua enfriada",
+      "description": "Observe la reserva de un depósito de reposición que abastece una instalación de agua enfriada. La monitorización de este punto de almacenamiento ayuda al equipo de servicios industriales a revisar la demanda de reposición y organizar la intervención antes de alcanzar el nivel de reserva seleccionado. Defina con claridad el depósito medido y sus condiciones de presión, especialmente cuando esté junto a un circuito de refrigeración presurizado independiente.",
+      "measurement": "Nivel de líquido y frecuencia de reposición en el depósito de almacenamiento de agua de reposición.",
+      "monitoringPoint": "El depósito ventilado de reposición o de reserva identificado, con su propio punto de referencia de nivel.",
+      "installation": "Confirme las condiciones de presión del depósito, el tratamiento del líquido y la posición accesible de la sonda. Mantenga el cable alejado de bombas y de las zonas de paso para el mantenimiento de equipos.",
+      "projectBrief": "Tipo de depósito, profundidad útil, tratamiento del agua, distribución de la sala, condiciones de presión y ciclo de reposición previsto.",
+      "image": {
+        "name": "scene-chilled-water-makeup.webp",
+        "alt": "Planta de enfriadoras comercial e industrial con un depósito ventilado de agua de reposición y tuberías de servicios bien organizadas",
+        "caption": "Depósitos de reposición de agua enfriada · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "evaporative-cooling-supply",
+      "group": "cooling-utilities",
+      "title": "Depósitos de suministro para refrigeración evaporativa",
+      "description": "Monitorice el depósito que suministra agua a los equipos de refrigeración evaporativa utilizados en sistemas de producción o ventilación. Las tendencias del nivel de agua ayudan al equipo a revisar interrupciones del suministro, ciclos de llenado y cambios estacionales de funcionamiento. Ajuste el rango configurado a este depósito local y acuerde cómo se atenderá un aviso de nivel bajo junto con los controles de funcionamiento existentes del equipo de refrigeración.",
+      "measurement": "Nivel del agua de suministro y tendencias de reposición durante el funcionamiento de la refrigeración evaporativa.",
+      "monitoringPoint": "El depósito específico de suministro o circulación de agua que abastece la unidad de refrigeración seleccionada.",
+      "installation": "Elija un punto de inmersión tranquilo y accesible, alejado del chorro de retorno. Confirme el tratamiento del agua, la temperatura del líquido y la protección del cable según la disposición del equipo.",
+      "projectBrief": "Disposición de la refrigeración, dimensiones del depósito, temporadas de funcionamiento, composición química del agua y destinatarios requeridos de los avisos.",
+      "image": {
+        "name": "scene-evaporative-cooling-supply.webp",
+        "alt": "Instalación industrial de refrigeración evaporativa con un depósito accesible de agua de suministro y equipos de ventilación",
+        "caption": "Depósitos de suministro para refrigeración evaporativa · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "boiler-feed-pretreatment",
+      "group": "cooling-utilities",
+      "title": "Almacenamiento de pretratamiento para agua de alimentación de calderas",
+      "description": "Mantenga un registro del agua disponible aguas arriba del procesamiento del agua de alimentación de calderas. Esta tarea se refiere a un depósito identificado de pretratamiento o de almacenamiento de agua de reposición, donde una tendencia de nivel puede apoyar la planificación de la reposición y el relevo de turnos. Especifique la temperatura real del agua, las condiciones de presión y el régimen de limpieza para seleccionar el conjunto de sonda suministrado según esa función de almacenamiento.",
+      "measurement": "Nivel de agua en el depósito definido de almacenamiento de pretratamiento o de agua de reposición.",
+      "monitoringPoint": "Una etapa de almacenamiento accesible antes del equipo de alimentación de calderas o de vapor, según lo especificado por la planta.",
+      "installation": "Confirme la temperatura del líquido seleccionado y la presión del recipiente frente a la configuración suministrada. Planifique el acceso y el recorrido del cable de forma independiente de los equipos calientes y las tuberías de vapor.",
+      "projectBrief": "Plano de la etapa de almacenamiento, temperatura normal y máxima, condiciones de presión, tratamiento del agua y rango de nivel requerido.",
+      "image": {
+        "name": "scene-boiler-feed-pretreatment.webp",
+        "alt": "Zona de almacenamiento de agua de pretratamiento en una sala de calderas industrial, con filtros y un depósito frío de reposición, no un calderín de caldera",
+        "caption": "Almacenamiento de pretratamiento para agua de alimentación de calderas · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "humidification-supply",
+      "group": "cooling-utilities",
+      "title": "Suministro de agua para humidificación industrial",
+      "description": "Monitorice la reserva de agua que abastece equipos de humidificación industrial en una zona de producción o almacenamiento. Las lecturas ayudan al personal de instalaciones a revisar la reposición y relacionar los cambios de suministro con el horario de funcionamiento del sistema. Identifique el depósito de suministro específico, sus requisitos de calidad del agua y el acceso de mantenimiento antes de decidir la posición de la sonda y el perfil de transmisión inalámbrica.",
+      "measurement": "Nivel de agua en el depósito de suministro de humidificación y variaciones durante las horas de funcionamiento.",
+      "monitoringPoint": "El depósito específico de agua de servicios que alimenta el sistema de humidificación seleccionado.",
+      "installation": "Confirme el conjunto en contacto con el líquido, el método de limpieza y la temperatura esperada del agua. Sitúe el terminal donde el acceso de mantenimiento y la cobertura de radio resulten prácticos.",
+      "projectBrief": "Tipo de sistema de humidificación, profundidad del depósito, tratamiento del agua, programa de limpieza y plataforma de destino.",
+      "image": {
+        "name": "scene-humidification-supply.webp",
+        "alt": "Unidad industrial de servicios de humidificación con depósito de suministro de agua y zona limpia de servicios de fábrica",
+        "caption": "Suministro de agua para humidificación industrial · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "metal-rinse-tanks",
+      "group": "process-water",
+      "title": "Depósitos de enjuague de componentes metálicos",
+      "description": "Haga seguimiento del agua disponible en una etapa de enjuague de componentes metálicos entre lotes de producción. Una tendencia de nivel apoya la planificación del llenado y ayuda a los operadores a revisar los cambios de consumo entre turnos. Identifique la composición química exacta del enjuague y su temperatura, incluida la contaminación arrastrada desde el proceso anterior, y seleccione la sonda y el cable según ese líquido definido.",
+      "measurement": "Nivel del agua de enjuague y patrones de llenado de la etapa seleccionada de procesamiento de componentes.",
+      "monitoringPoint": "Un depósito de enjuague definido o su depósito de reserva de suministro de agua, separado de otros baños de proceso.",
+      "installation": "Planifique la posición de la sonda teniendo en cuenta la manipulación de piezas y la limpieza del depósito. Confirme la compatibilidad con el líquido real de enjuague y mantenga el acceso de mantenimiento sin obstruir la producción.",
+      "projectBrief": "Composición del enjuague, sustancias arrastradas, temperatura, geometría del depósito, separación respecto a piezas móviles y profundidad útil.",
+      "image": {
+        "name": "scene-metal-rinse-tanks.webp",
+        "alt": "Línea de enjuague de componentes metálicos con depósitos de enjuague de agua visibles y equipos industriales de manipulación de piezas",
+        "caption": "Depósitos de enjuague de componentes metálicos · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "parts-washer-rinse",
+      "group": "process-water",
+      "title": "Depósitos de agua de enjuague de lavadoras de piezas",
+      "description": "Observe el depósito de agua de enjuague asociado a un sistema de lavado de piezas. Un registro de nivel con marcas de tiempo ayuda a los equipos de mantenimiento y producción a comparar los llenados con los ciclos de funcionamiento e investigar consumos inusuales. Especifique la etapa de enjuague por separado de los detergentes u otros baños e incluya las condiciones de limpieza y mantenimiento en la configuración propuesta del sensor.",
+      "measurement": "Nivel de líquido en el depósito designado de agua de enjuague durante los ciclos de lavado.",
+      "monitoringPoint": "El depósito de enjuague o de reserva de agua limpia que abastece la lavadora de piezas seleccionada.",
+      "installation": "Sitúe la sonda alejada de piezas en circulación y de la aspiración de la bomba. Confirme con el propietario del equipo la compatibilidad del líquido, la temperatura y la disposición de instalación permitida.",
+      "projectBrief": "Distribución de la lavadora, líquido identificado, duración del ciclo, temperatura de trabajo, acceso y necesidades de transmisión de datos.",
+      "image": {
+        "name": "scene-parts-washer-rinse.webp",
+        "alt": "Lavadora de piezas de fábrica con un depósito acuoso accesible de agua de enjuague y componentes metálicos",
+        "caption": "Depósitos de agua de enjuague de lavadoras de piezas · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "textile-process-buffer",
+      "group": "process-water",
+      "title": "Depósitos de reserva de agua de proceso textil",
+      "description": "Monitorice un depósito de reserva de agua de proceso que apoya la producción textil. El historial de nivel ayuda al personal de servicios industriales a revisar la demanda de reposición entre lotes y planificar la intervención en el almacenamiento antes de alcanzar el umbral de funcionamiento seleccionado. Defina si el punto contiene agua entrante, agua acondicionada o una mezcla de proceso, ya que cada caso requiere su propia evaluación de compatibilidad y temperatura.",
+      "measurement": "Nivel de líquido en el depósito de reserva de agua de proceso textil especificado.",
+      "monitoringPoint": "La etapa seleccionada de almacenamiento o reserva de agua que abastece la zona de producción textil.",
+      "installation": "Confirme el líquido y la temperatura en este punto. Coloque la sonda alejada de chorros de llenado y equipos móviles, con un recorrido protegido del cable y acceso para inspección.",
+      "projectBrief": "Identidad del agua o mezcla, patrón de lotes, dimensiones del depósito, temperatura, condiciones de limpieza y avisos deseados.",
+      "image": {
+        "name": "scene-textile-process-buffer.webp",
+        "alt": "Zona de servicios de una fábrica textil con depósito de reserva de agua de proceso, tuberías y equipos reconocibles de procesamiento de tejidos",
+        "caption": "Depósitos de reserva de agua de proceso textil · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "plating-rinse-water",
+      "group": "process-water",
+      "title": "Almacenamiento de agua de enjuague para tratamiento de superficies",
+      "description": "Mantenga visible para el equipo de tratamiento de superficies la etapa seleccionada de almacenamiento de agua de enjuague. Las lecturas pueden apoyar la planificación de la reposición y la revisión del consumo de agua entre turnos. Especifique la solución exacta de enjuague, los productos químicos arrastrados y la temperatura de servicio; se selecciona un conjunto adecuado para ese punto, incluidos los requisitos asociados de limpieza y manipulación.",
+      "measurement": "Nivel de líquido en el depósito de agua de enjuague o de reposición designado.",
+      "monitoringPoint": "Una etapa de enjuague claramente identificada de la línea de tratamiento de superficies.",
+      "installation": "Proporcione soporte aprobado para el cable y separación respecto a polipastos y piezas de trabajo. Confirme la idoneidad de los materiales en contacto con el líquido y del cable para la composición de enjuague y el método de mantenimiento especificados.",
+      "projectBrief": "Composición química del enjuague, posibles arrastres, temperatura de trabajo, profundidad del depósito, espacio libre para la manipulación y rutina de limpieza.",
+      "image": {
+        "name": "scene-plating-rinse-water.webp",
+        "alt": "Sección industrial de agua de enjuague para tratamiento de superficies con depósitos, espacio libre para manipulación aérea y pasarelas de servicio",
+        "caption": "Almacenamiento de agua de enjuague para tratamiento de superficies · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "ceramic-process-water",
+      "group": "process-water",
+      "title": "Depósitos de agua clarificada de plantas cerámicas",
+      "description": "Observe el agua clarificada almacenada para su reutilización en la producción cerámica. Una tendencia de nivel ayuda al equipo de servicios industriales a comparar la recuperación con la demanda y organizar la reposición en el umbral de funcionamiento elegido. Describa los sólidos residuales y su comportamiento de sedimentación para planificar una instalación con una referencia estable del nivel de líquido y una inspección accesible del conjunto de sonda.",
+      "measurement": "Nivel de agua clarificada en el depósito de reutilización o suministro de proceso.",
+      "monitoringPoint": "La sección de almacenamiento de líquido situada aguas abajo de la etapa definida de sedimentación o clarificación.",
+      "installation": "Sitúe la sonda alejada del material sedimentado y del flujo de entrada, utilizando un soporte aprobado. Incluya los sólidos residuales, la abrasión y el acceso de limpieza en la revisión de la configuración.",
+      "projectBrief": "Etapa de clarificación, condiciones de los sólidos residuales, profundidad del depósito, temperatura del agua, acceso y banda de funcionamiento.",
+      "image": {
+        "name": "scene-ceramic-process-water.webp",
+        "alt": "Planta de fabricación cerámica con depósito de reutilización de agua clarificada y entorno visible de producción cerámica",
+        "caption": "Depósitos de agua clarificada de plantas cerámicas · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "factory-equalization",
+      "group": "industrial-effluent",
+      "title": "Depósitos de homogeneización de efluentes de fábrica",
+      "description": "Haga seguimiento de la acumulación de líquido entrante en un depósito de homogeneización de efluentes antes de pasar a la siguiente etapa de tratamiento. El historial de nivel ayuda al equipo de tratamiento a comparar los patrones de recogida y trasiego entre turnos de producción. Seleccione el conjunto según la composición real de las aguas residuales y las condiciones de mantenimiento, y acuerde las necesidades de transmisión de datos y avisos de nivel alto para este depósito concreto.",
+      "measurement": "Nivel de líquido y tendencias de acumulación y trasiego en la etapa de homogeneización.",
+      "monitoringPoint": "Una zona representativa de líquido del depósito de homogeneización con un punto de referencia documentado.",
+      "installation": "Planifique el punto de detección teniendo en cuenta agitadores, turbulencia de entrada y material sedimentado. Confirme la compatibilidad del líquido, la protección del cable y la extracción segura para la limpieza.",
+      "projectBrief": "Composición del efluente, temperatura, geometría del depósito, agitación, acumulaciones de material previstas y respuesta de nivel requerida.",
+      "image": {
+        "name": "scene-factory-equalization.webp",
+        "alt": "Depósito industrial de homogeneización de aguas residuales con líquido visible, tuberías y pasarela accesible de la planta de tratamiento",
+        "caption": "Depósitos de homogeneización de efluentes de fábrica · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "neutralization-collection",
+      "group": "industrial-effluent",
+      "title": "Depósitos de recogida de la etapa de neutralización",
+      "description": "Monitorice el líquido recogido en una etapa identificada de tratamiento de neutralización. La tendencia proporciona una referencia común a los operadores que revisan la acumulación y el trasiego posterior. La sonda y el cable requeridos dependen de la mezcla real, su rango de concentración y las condiciones de limpieza; facilite estos datos junto con el rango de nivel y el plano de instalación al solicitar una configuración.",
+      "measurement": "Altura del líquido y tendencias de recogida en el depósito especificado de la etapa de neutralización.",
+      "monitoringPoint": "El compartimento designado de recogida o retención dentro de la disposición de tratamiento.",
+      "installation": "Confirme la compatibilidad con el medio en todo el rango previsto de composición y temperatura. Planifique una instalación extraíble, alejada del equipo de mezcla y de la turbulencia de entrada de la dosificación.",
+      "projectBrief": "Identidad y concentración de la mezcla, temperatura, disposición de mezcla, productos químicos de limpieza, profundidad y posibles requisitos de clasificación de la zona.",
+      "image": {
+        "name": "scene-neutralization-collection.webp",
+        "alt": "Zona de recogida de tratamiento de neutralización de aguas residuales con contención, depósito de líquido y equipos de dosificación al fondo",
+        "caption": "Depósitos de recogida de la etapa de neutralización · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "treated-effluent-storage",
+      "group": "industrial-effluent",
+      "title": "Depósitos de retención de efluentes tratados",
+      "description": "Observe el efluente tratado almacenado antes de su reutilización, trasiego o vertido según el procedimiento de operación del centro. Los niveles con marcas de tiempo ayudan al personal a revisar la recuperación del almacenamiento y planificar la intervención respecto a la banda de funcionamiento seleccionada. Incluya los componentes restantes del líquido, las acumulaciones de material previstas y el acceso de mantenimiento en la configuración para que el punto de medición se adapte a esta etapa final de retención.",
+      "measurement": "Nivel del líquido tratado y variaciones entre eventos de almacenamiento, trasiego o reutilización.",
+      "monitoringPoint": "El depósito final de retención o un compartimento definido de almacenamiento de efluente tratado.",
+      "installation": "Seleccione un punto de inmersión estable, alejado de las perturbaciones de entrada y salida. Confirme la idoneidad del líquido y facilite el acceso al recorrido del cable y a la extracción de la sonda para el mantenimiento habitual.",
+      "projectBrief": "Etapa de tratamiento, composición del líquido, dimensiones del depósito, flujo de vertido o reutilización e intervalos requeridos de transmisión de datos.",
+      "image": {
+        "name": "scene-treated-effluent-storage.webp",
+        "alt": "Depósito industrial de retención de efluente tratado con superficie de agua clara y tuberías ordenadas de vertido aguas abajo",
+        "caption": "Depósitos de retención de efluentes tratados · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "sludge-supernatant",
+      "group": "industrial-effluent",
+      "title": "Recogida de sobrenadante de lodos",
+      "description": "Haga seguimiento del líquido separado que se recoge en un proceso de manejo de lodos. Esta tarea de monitorización se centra en el nivel de agua sobrenadante del depósito receptor, dando a los operadores una referencia para planificar el retorno o el trasiego. Identifique los sólidos residuales y la disposición de recogida para seleccionar la posición de la sonda y la rutina de inspección según el líquido medido.",
+      "measurement": "Nivel del líquido separado en el depósito de recogida de sobrenadante.",
+      "monitoringPoint": "El compartimento receptor de líquido identificado, situado aguas abajo de la separación de lodos.",
+      "installation": "Evalúe los sólidos residuales y el ensuciamiento antes de elegir el conjunto. Mantenga la sonda por encima de los depósitos acumulados mediante un soporte aprobado y acceso práctico para inspección.",
+      "projectBrief": "Proceso de separación, condiciones de los sólidos residuales, profundidad del depósito receptor, ciclo de retorno, acceso de limpieza y temperatura del líquido.",
+      "image": {
+        "name": "scene-sludge-supernatant.webp",
+        "alt": "Equipos de separación de lodos de aguas residuales junto a un depósito de recogida de líquido sobrenadante con plataforma de servicio accesible",
+        "caption": "Recogida de sobrenadante de lodos · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "healthcare-wastewater",
+      "group": "industrial-effluent",
+      "title": "Recogida de aguas residuales de centros sanitarios",
+      "description": "Monitorice las aguas residuales recogidas antes de la etapa de tratamiento especificada de un centro sanitario. El historial de nivel puede ayudar al personal de instalaciones a planificar inspecciones y revisar la recogida frente al trasiego durante el día. Confirme con el equipo del centro la composición exacta de las aguas residuales y las prácticas de desinfección y limpieza, y seleccione una configuración y un procedimiento de instalación adecuados para ese punto de recogida.",
+      "measurement": "Nivel de las aguas residuales recogidas y tendencias de trasiego en el depósito receptor designado.",
+      "monitoringPoint": "La etapa designada de retención o recogida de aguas residuales del sistema de tratamiento del centro.",
+      "installation": "Planifique el recorrido protegido del cable y la extracción de la sonda según el procedimiento de acceso aprobado del centro. Confirme la compatibilidad con el líquido y la limpieza, junto con las aprobaciones necesarias para la instalación.",
+      "projectBrief": "Composición de las aguas residuales, desinfectantes, temperatura, profundidad del depósito, condiciones de acceso al centro y flujo de avisos.",
+      "image": {
+        "name": "scene-healthcare-wastewater.webp",
+        "alt": "Instalación de servicios de recogida de aguas residuales de un centro sanitario con depósitos contenidos y una zona limpia de acceso de servicio",
+        "caption": "Recogida de aguas residuales de centros sanitarios · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "plant-room-sumps",
+      "group": "drainage-pumps",
+      "title": "Sumideros de drenaje de salas de máquinas",
+      "description": "Registre las subidas y bajadas del nivel de agua en sumideros de salas de máquinas que recogen filtraciones, desagües de condensados o fugas de servicios. Un punto de detección documentado ayuda al equipo de mantenimiento a comparar la recogida habitual con acumulaciones inusuales y planificar una inspección antes de que el foso alcance su límite de funcionamiento. Revise conjuntamente el patrón de entrada, la disposición del drenaje y los plazos de aviso, y seleccione la posición de la sonda y el perfil de transmisión de datos según el sumidero real.",
+      "measurement": "Nivel de recogida y descenso respecto a las marcas de funcionamiento del sumidero.",
+      "monitoringPoint": "Una parte accesible y representativa del foso, alejada de la entrada principal y de la aspiración de la bomba.",
+      "installation": "Proporcione un soporte estable para la sonda, protección del cable y acceso de inspección. Monte el terminal inalámbrico por encima del nivel de agua previsto y verifique la recepción en la sala de máquinas.",
+      "projectBrief": "Sección del sumidero, fuentes de líquido, niveles de funcionamiento, disposición de bombas, temperatura, acceso de inspección, cobertura y plazos de aviso requeridos.",
+      "image": {
+        "name": "scene-plant-room-sumps.webp",
+        "alt": "Sala de máquinas industrial con sumidero de drenaje empotrado y tuberías de servicios junto a una pasarela seca de mantenimiento",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "washdown-collection",
+      "group": "drainage-pumps",
+      "title": "Recogida de agua de limpieza de fábrica",
+      "description": "Observe los niveles de recogida cuando el agua de limpieza de fábrica pasa de los desagües del suelo a un foso o depósito de retención. Comparar la tendencia de nivel con los programas de limpieza ayuda al equipo a revisar la capacidad de recogida y los plazos de retirada o trasiego. Especifique los detergentes, residuos de proceso y sólidos presentes para adaptar la selección de sonda y cable al líquido. Defina niveles de aviso prácticos según el volumen de trabajo del depósito y la rutina de operación.",
+      "measurement": "Aumento del nivel durante la limpieza y reducción tras el trasiego o la retirada.",
+      "monitoringPoint": "Un compartimento representativo de recogida aguas abajo de la entrada del desagüe, con una referencia de nivel definida.",
+      "installation": "Lleve el cable por un recorrido alejado del equipo de limpieza y facilite el acceso para inspeccionar residuos. Revise la posición de la sonda, la protección y la ubicación del terminal inalámbrico según la disposición de la limpieza.",
+      "projectBrief": "Programa de limpieza, detalles de detergentes y residuos, sólidos, profundidad de recogida, disposición del trasiego, temperatura y flujo de avisos.",
+      "image": {
+        "name": "scene-washdown-collection.webp",
+        "alt": "Zona de limpieza de fábrica con drenaje del suelo que conduce a una cámara empotrada de recogida de agua de limpieza",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "factory-rainwater-lift",
+      "group": "drainage-pumps",
+      "title": "Estaciones de bombeo de aguas pluviales de fábrica",
+      "description": "Haga seguimiento de la recogida de agua y del descenso del nivel en una estación de bombeo de aguas pluviales de fábrica durante las lluvias y el periodo posterior. El registro de nivel aporta contexto a los operadores del centro para las inspecciones de drenaje, la revisión del funcionamiento de las bombas y las acumulaciones inusuales. Adapte el perfil de transmisión de datos a la velocidad prevista de cambio y acuerde umbrales y destinatarios con el equipo de drenaje. Incluya en la información del proyecto sedimentos, residuos, niveles estacionales de agua y la disposición independiente de control de bombas.",
+      "measurement": "Nivel del pozo húmedo durante la entrada de agua de tormenta y el drenaje posterior.",
+      "monitoringPoint": "El pozo húmedo, en una posición estable fuera del chorro de entrada más intenso y de la zona de aspiración de la bomba.",
+      "installation": "Planifique el soporte de la sonda y el acceso para inspeccionar residuos. Mantenga el terminal accesible por encima de la línea de agua prevista y confirme la cobertura en la estación de bombeo.",
+      "projectBrief": "Distribución de la cuenca de captación y del pozo húmedo, marcas de nivel, cambios de entrada, residuos, controlador de bombas, cobertura, transmisión de datos y requisitos de respuesta.",
+      "image": {
+        "name": "scene-factory-rainwater-lift.webp",
+        "alt": "Estación exterior de bombeo de aguas pluviales de fábrica con zona de acceso al pozo húmedo, canales de drenaje y edificios industriales",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/en/products/product-catalog/signal-conditioning/controllers/vegamet-141"
+      ]
+    },
+    {
+      "id": "underground-lift-pits",
+      "group": "drainage-pumps",
+      "title": "Monitorización de fosos subterráneos de bombeo",
+      "description": "Haga seguimiento de la acumulación de agua en un foso subterráneo de bombeo que presta servicio a aparcamientos industriales, accesos de servicio o zonas de servicios bajo rasante. Una referencia de nivel coherente ayuda al personal de mantenimiento a comparar las filtraciones habituales con cambios en el patrón de drenaje entre visitas. Planifique las alertas según la profundidad útil del foso y el flujo de inspección del equipo. Revise el acceso, los sedimentos, el recorrido del cable y la recepción de radio antes de seleccionar la instalación, con la automatización de bombas definida mediante el controlador del centro.",
+      "measurement": "Nivel del agua acumulada y tendencia entre ciclos de drenaje.",
+      "monitoringPoint": "El foso de recogida accesible, en una posición alejada de equipos móviles y de aspiraciones intensas.",
+      "installation": "Proteja la sonda y el cable de los trabajos de mantenimiento y documente la profundidad de referencia. Evalúe una posición accesible del terminal con una ruta inalámbrica verificada desde la ubicación bajo rasante.",
+      "projectBrief": "Plano del foso, nivel máximo, fuentes de filtración, acceso de mantenimiento, sistema de bombeo, ubicación del terminal y plazos de aviso.",
+      "image": {
+        "name": "scene-underground-lift-pits.webp",
+        "alt": "Zona industrial de servicios bajo rasante con foso de bombeo empotrado, tuberías de drenaje y una ruta despejada de inspección",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "containment-collection",
+      "group": "drainage-pumps",
+      "title": "Recogida en sistemas de contención industrial",
+      "description": "Proporcione al equipo de operación un registro de nivel de un depósito de recogida de contención donde el líquido recogido esté identificado y sus condiciones sean conocidas. Revise la acumulación frente a los registros de inspección y retirada para apoyar el plan de manejo del centro. Facilite la composición del líquido, el método de limpieza y los posibles cambios del contenido para evaluar una sonda y un cable adecuados. Seleccione el rango y el perfil de alertas según la disposición de recogida.",
+      "measurement": "Nivel del líquido recogido respecto a las marcas definidas de manejo e inspección del depósito.",
+      "monitoringPoint": "Un compartimento designado de recogida con condiciones del líquido conocidas y acceso para su evaluación.",
+      "installation": "Acuerde la configuración en contacto con el líquido, un soporte estable de la sonda y el recorrido del cable para el contenido especificado. Incluya la clasificación del emplazamiento y el acceso de mantenimiento en la revisión de la instalación.",
+      "projectBrief": "Líquido recogido y concentración, posibles variaciones, profundidad del depósito, temperatura, presión, limpieza, requisitos del centro y flujo de manejo.",
+      "image": {
+        "name": "scene-containment-collection.webp",
+        "alt": "Zona de contención industrial con un depósito específico de recogida, muros de cubeto y una pasarela seca de inspección",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025",
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "food-beverage-utility-water",
+      "group": "industry-water",
+      "title": "Almacenamiento de agua de servicios en alimentación y bebidas",
+      "description": "Observe el nivel de las reservas de agua de servicios utilizadas por los servicios industriales de una instalación de alimentación o bebidas. La tendencia aporta contexto a la planificación de la reposición y a las comprobaciones de mantenimiento entre turnos, especialmente cuando varios depósitos abastecen servicios separados de la planta. Defina en la información del proyecto la función del servicio y la categoría de contacto del agua para revisar la documentación requerida y la configuración en contacto con el líquido. Establezca los niveles de alerta según la reserva operativa del centro.",
+      "measurement": "Nivel del agua de servicios almacenada durante los ciclos de demanda de servicios industriales y reposición.",
+      "monitoringPoint": "Un depósito de agua de servicios claramente identificado, con función, marcas de nivel y condiciones del líquido documentadas.",
+      "installation": "Planifique la posición de la sonda y el recorrido del cable según el acceso al depósito y la limpieza. Monte el terminal de comunicación para permitir su inspección y confirme los requisitos de contacto con el agua para la aplicación real.",
+      "projectBrief": "Finalidad del servicio, especificación del agua y requisitos de contacto, profundidad de almacenamiento, temperatura, método de limpieza, red y perfil de transmisión de datos.",
+      "image": {
+        "name": "scene-food-beverage-utility-water.webp",
+        "alt": "Zona de servicios de una fábrica de alimentación y bebidas con depósitos de almacenamiento de agua y tuberías de servicio claramente organizadas",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://bdih-download.endress.com/file/16325362cdf9444b2ae1b628d4dad5f9/TI00431PEN_1926-00.pdf"
+      ]
+    },
+    {
+      "id": "pharmaceutical-utility-water",
+      "group": "industry-water",
+      "title": "Sistemas de agua de servicios en la industria farmacéutica",
+      "description": "Haga seguimiento de los niveles de agua de servicios en los servicios industriales de un centro farmacéutico, con el sistema de agua y la finalidad de monitorización claramente identificados. Un registro definido apoya las comprobaciones rutinarias de reserva y la coordinación entre los operadores de servicios industriales y el personal de mantenimiento. Especifique la función del depósito, la categoría del agua, la temperatura y la práctica de limpieza para revisar la configuración y las evidencias requeridas. Mantenga los umbrales de nivel, la responsabilidad sobre los datos y el programa de transmisión alineados con el flujo de trabajo documentado del centro.",
+      "measurement": "Nivel de reserva de agua de servicios y tendencias de reposición en un depósito designado de servicios de planta.",
+      "monitoringPoint": "Un punto de almacenamiento de agua de servicios cuyo uso y condiciones de funcionamiento estén definidos por la instalación.",
+      "installation": "Coordine la ubicación de la sonda y del terminal con el acceso a los servicios y la limpieza del depósito. Especifique los requisitos de contacto, documentación o del centro junto con la configuración exacta suministrada.",
+      "projectBrief": "Categoría del sistema de agua, función del depósito, profundidad, temperatura, presión, limpieza, requisitos de documentación, plataforma y flujo de trabajo de los servicios industriales.",
+      "image": {
+        "name": "scene-pharmaceutical-utility-water.webp",
+        "alt": "Sala de servicios industriales de una instalación farmacéutica con depósitos de agua de servicios y tuberías accesibles para mantenimiento",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "paper-water-recovery",
+      "group": "industry-water",
+      "title": "Depósitos de recuperación de agua de fábricas de papel",
+      "description": "Haga seguimiento de los niveles de líquido en los depósitos de agua recuperada de una fábrica de papel para revisar cómo cambia el almacenamiento con los programas de producción y trasiego. Utilice el registro junto con los registros de proceso para identificar depósitos que requieran inspección o atención a la reposición. Caracterice la corriente de agua monitorizada, incluidas fibras, sólidos en suspensión, composición química y temperatura, antes de elegir la disposición de la sonda. Una posición de detección que permita el mantenimiento y una referencia clara de nivel hacen más útiles las comparaciones entre periodos de funcionamiento.",
+      "measurement": "Nivel del agua recuperada almacenada durante la recogida entrante y el trasiego para reutilización.",
+      "monitoringPoint": "Un compartimento de agua acordado, con las condiciones de fibras y sedimentos documentadas para seleccionar la sonda.",
+      "installation": "Facilite el acceso para inspeccionar la superficie de detección y lleve los cables por un recorrido alejado del equipo de trasiego. Revise la turbulencia, el ensuciamiento y el soporte de la sonda según el compartimento elegido.",
+      "projectBrief": "Corriente recuperada, contenido de fibras y sólidos, composición química, temperatura, geometría del depósito, trasiegos, limpieza y plazos de monitorización requeridos.",
+      "image": {
+        "name": "scene-paper-water-recovery.webp",
+        "alt": "Patio de servicios de una fábrica de papel con depósitos de recuperación de agua, tuberías de trasiego y pasarela de servicio",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "concrete-plant-recycled-water",
+      "group": "industry-water",
+      "title": "Recogida de agua reciclada de plantas de hormigón",
+      "description": "Observe los niveles de agua en las secciones de recogida y de agua clarificada del sistema de reciclaje de una planta de hormigón. Comparar la tendencia con los programas de lavado y reutilización ayuda al equipo a revisar el agua disponible y planificar inspecciones. Seleccione un compartimento de detección tras caracterizar los sedimentos, la alcalinidad y los sólidos restantes, y acuerde el acceso a la sonda y su limpieza. La instalación debe representar la etapa de agua monitorizada y mantener una referencia coherente durante las operaciones habituales de la planta.",
+      "measurement": "Nivel de recogida o de agua clarificada en la etapa de reciclaje seleccionada.",
+      "monitoringPoint": "Un compartimento designado de agua con el comportamiento de sedimentación y los sólidos residuales evaluados para la instalación.",
+      "installation": "Sitúe la sonda con acceso para comprobar sedimentos y ensuciamiento. Proteja el cable frente a cargadoras y trabajos de lavado, y verifique la recepción del terminal en la zona de agua.",
+      "projectBrief": "Distribución de la etapa de reciclaje, alcalinidad, sólidos y patrón de sedimentación, nivel máximo, limpieza, movimientos de equipos, plataforma y transmisión de datos.",
+      "image": {
+        "name": "scene-concrete-plant-recycled-water.webp",
+        "alt": "Planta de dosificación de hormigón con balsa de recogida de agua de reciclaje y compartimento contiguo de agua clarificada",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "recycling-wash-water",
+      "group": "industry-water",
+      "title": "Depósitos de agua de lavado de plantas de reciclaje",
+      "description": "Registre los niveles de almacenamiento y recogida de agua de lavado en una planta de reciclaje mientras cambian los ciclos de lavado de materiales y trasiego a lo largo del turno. La tendencia apoya la revisión de los plazos de reposición y la capacidad de recogida junto con los registros de producción. Especifique los materiales lavados, los detergentes y los contaminantes en suspensión para comprender las condiciones del líquido y del ensuciamiento. Elija una posición de sonda que permita el mantenimiento y un perfil de transmisión de datos según la función concreta del depósito en la disposición de lavado.",
+      "measurement": "Nivel de reserva o recogida de agua de lavado durante el lavado, la recuperación y la reposición.",
+      "monitoringPoint": "Un compartimento designado del depósito con la composición del agua de lavado y los sólidos caracterizados.",
+      "installation": "Proporcione soporte para la sonda y acceso de inspección teniendo en cuenta las tuberías de trasiego. Proteja el cable de materiales en movimiento e incluya la práctica de limpieza en la revisión de la configuración.",
+      "projectBrief": "Corriente de materiales, detergentes, contaminantes, sólidos, temperatura, profundidad del depósito, ciclos de lavado, limpieza y plazos previstos de los datos.",
+      "image": {
+        "name": "scene-recycling-wash-water.webp",
+        "alt": "Zona de lavado de una instalación de reciclaje con depósitos de retención de agua, equipos de procesamiento de materiales y vías de servicio accesibles",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "mine-dewatering",
+      "group": "resources-dewatering",
+      "title": "Recogida de agua de achique de minas",
+      "description": "Haga seguimiento de los niveles de agua en un punto de recogida de achique de una mina para ofrecer a los operadores una tendencia documentada entre inspecciones del emplazamiento. Compare los periodos de entrada y descenso con el registro de bombeo y los cambios de las zonas de trabajo. Defina el líquido, los sedimentos, el nivel máximo y las disposiciones de acceso antes de seleccionar la posición de detección. Incluya en el proyecto la clasificación del emplazamiento, los requisitos de los equipos y la ruta de comunicación para que la configuración propuesta se adapte al lugar designado de recogida.",
+      "measurement": "Nivel del agua recogida respecto a la referencia y las marcas de funcionamiento definidas del emplazamiento minero.",
+      "monitoringPoint": "Un sumidero de recogida o compartimento de agua aprobado, con las condiciones de sedimentos y entrada registradas.",
+      "installation": "Planifique con el equipo del emplazamiento una posición de sonda que permita el mantenimiento y un recorrido protegido del cable. Confirme la ubicación del terminal, la cobertura y todos los requisitos de equipos específicos de la ubicación.",
+      "projectBrief": "Distribución de la recogida, composición del agua, sedimentos, profundidad de referencia, clasificación del emplazamiento, acceso, controlador de bombas y requisitos de transmisión de datos.",
+      "image": {
+        "name": "scene-mine-dewatering.webp",
+        "alt": "Zona de recogida de agua de achique de una mina con sumidero de agua, tuberías de drenaje y una ruta accesible de mantenimiento industrial",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "quarry-settling-water",
+      "group": "resources-dewatering",
+      "title": "Balsas de sedimentación de agua de canteras",
+      "description": "Observe los cambios del nivel de agua en una balsa de sedimentación de cantera mientras entra agua de drenaje y se trasiega agua para su reutilización o tratamiento. Una referencia definida permite comparar episodios de lluvia y periodos de producción. Elija la zona de agua monitorizada después de revisar la profundidad de sedimentos, el material en suspensión y el acceso para inspección. Las disposiciones de posición y mantenimiento deben adaptarse al patrón cambiante de sedimentación de la balsa para que el registro siga siendo útil en la revisión de la gestión del agua por parte del operador.",
+      "measurement": "Nivel de agua respecto a una referencia identificada de la balsa durante los periodos de recogida y trasiego.",
+      "monitoringPoint": "Una zona de agua estable y accesible, seleccionada según el perfil de sedimentos y la disposición del trasiego.",
+      "installation": "Proporcione soporte protegido para la sonda y un recorrido del cable alejado de los trabajos de movimiento de tierras. Incluya un método de inspección de los cambios en los sedimentos y revise la ubicación del terminal en el borde de la balsa.",
+      "projectBrief": "Sección de la balsa, perfil de sedimentos, composición del agua, rango de profundidad, acceso de equipos, programa de trasiego, cobertura y transmisión de datos.",
+      "image": {
+        "name": "scene-quarry-settling-water.webp",
+        "alt": "Balsa de sedimentación de agua de cantera con compartimentos de agua definidos, una tubería de trasiego y un margen seco de servicio",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "construction-dewatering-wells",
+      "group": "resources-dewatering",
+      "title": "Pozos de achique en obras",
+      "description": "Haga seguimiento del nivel de agua de un pozo de achique de obra respecto a un punto de referencia documentado del emplazamiento y al programa de bombeo. El registro aporta contexto al equipo del proyecto para las inspecciones y los cambios durante los trabajos de excavación. Especifique el diámetro y la profundidad del pozo, el rango de nivel esperado y las condiciones de sedimentos para revisar la disposición de la sonda y del cable. Mantenga identificado cada pozo y compare las lecturas con las comprobaciones de referencia del emplazamiento y la etapa actual de construcción.",
+      "measurement": "Cota o profundidad del nivel de agua respecto al punto de referencia acordado del pozo.",
+      "monitoringPoint": "Un pozo identificado con la referencia del entubado, la posición de la sonda y la disposición de bombeo registradas.",
+      "installation": "Mantenga la sonda y el cable alejados del equipo de bombeo y proteja el recorrido en la boca del pozo. Documente la referencia instalada y facilite el acceso para las comprobaciones de nivel.",
+      "projectBrief": "Diámetro y profundidad del pozo, punto de referencia, rango de nivel, disposición de bombeo, sedimentos, acceso de obra, identificadores de puntos y programa de transmisión de datos.",
+      "image": {
+        "name": "scene-construction-dewatering-wells.webp",
+        "alt": "Excavación de obra con bocas de pozos de achique, mangueras protegidas y una zona señalizada de inspección",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    },
+    {
+      "id": "tunnel-drainage-sumps",
+      "group": "resources-dewatering",
+      "title": "Sumideros de drenaje de túneles",
+      "description": "Haga seguimiento de los niveles de recogida en sumideros de drenaje de túneles que reúnen filtraciones y agua del canal de drenaje. Revisar la tendencia junto con los registros de bombeo y mantenimiento ayuda al equipo a identificar cambios que requieren una comprobación en el emplazamiento. Seleccione el punto de detección según la geometría del sumidero, el movimiento de entrada y los sólidos, y planifique un recorrido protegido del cable y un montaje accesible del terminal. Verifique la ruta de transmisión de datos en la ubicación subterránea real durante la puesta en servicio.",
+      "measurement": "Nivel de recogida de drenaje y descenso entre periodos de bombeo.",
+      "monitoringPoint": "Un compartimento documentado del sumidero, alejado de la entrada más intensa y accesible según el plan de mantenimiento del emplazamiento.",
+      "installation": "Coordine el soporte de la sonda, la protección del cable y la ubicación del terminal con los servicios del túnel. Confirme las condiciones de acceso, la recepción de radio y cualquier ruta a través de una pasarela de comunicación para la instalación seleccionada.",
+      "projectBrief": "Sección del túnel y del sumidero, agua y sólidos, nivel de referencia, restricciones de acceso, requisitos del emplazamiento, registro de bombeo y ruta de comunicación.",
+      "image": {
+        "name": "scene-tunnel-drainage-sumps.webp",
+        "alt": "Túnel industrial de servicios con canales de drenaje que conducen a un sumidero junto a una pasarela accesible de mantenimiento",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "industrial-groundwater-wells",
+      "group": "resources-dewatering",
+      "title": "Pozos de agua subterránea industriales",
+      "description": "Elabore un registro coherente del nivel de agua de los pozos de agua subterránea incluidos en el plan de monitorización de un emplazamiento industrial. Identifique cada punto y su referencia para comparar los cambios estacionales y los periodos de descenso con los registros de bombeo y del emplazamiento. Especifique la profundidad del pozo, las condiciones del líquido y la tolerancia requerida, y seleccione conjuntamente la posición de la sonda y la longitud del cable. Las comprobaciones periódicas de referencia y los detalles documentados de instalación ayudan al equipo a interpretar la serie temporal resultante.",
+      "measurement": "Nivel de agua subterránea respecto a un punto de referencia identificado del pozo durante el periodo de monitorización.",
+      "monitoringPoint": "Un pozo designado con referencia, profundidad y disposición de acceso conocidas.",
+      "installation": "Proteja el cable en la boca del pozo y mantenga una posición coherente de la sonda. Confirme el rango seleccionado, la idoneidad del líquido, el montaje del terminal y el método de comprobaciones de referencia.",
+      "projectBrief": "Registro de pozos, diámetro, profundidad, punto de referencia, composición química del agua, temperatura, contexto de bombeo, necesidad de precisión, cobertura y transmisión de datos.",
+      "image": {
+        "name": "scene-industrial-groundwater-wells.webp",
+        "alt": "Pozo de monitorización de agua subterránea de un emplazamiento industrial con boca protegida y acceso de servicio contiguo",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    },
+    {
+      "id": "raw-water-reservoirs",
+      "group": "waterways-supply",
+      "title": "Embalses industriales de agua bruta",
+      "description": "Haga seguimiento de los niveles de reserva en un embalse industrial de agua bruta mientras cambian la entrada, la demanda de la planta y el tiempo meteorológico. El registro apoya la planificación de la reposición y la revisión del almacenamiento útil junto con el programa de suministro de agua del emplazamiento. Defina la referencia de nivel, el rango esperado y las condiciones de entrada antes de elegir la ubicación de la sonda. Incluya los sedimentos estacionales, la composición del agua y el acceso de mantenimiento para adaptar la disposición de detección y el perfil de transmisión de datos a la función operativa del embalse.",
+      "measurement": "Nivel de reserva de agua bruta durante los periodos de entrada y extracción de la planta.",
+      "monitoringPoint": "Una posición representativa del embalse con un punto de referencia definido, fuera de las turbulencias intensas de entrada o extracción.",
+      "installation": "Planifique un soporte estable de la sonda y un recorrido del cable adecuado para las variaciones del nivel de agua. Monte el terminal en una posición accesible por encima de la línea de agua prevista y compruebe la cobertura.",
+      "projectBrief": "Sección y punto de referencia del embalse, rango de nivel, condiciones del agua, posiciones de entrada y salida, sedimentos, acceso, plataforma y transmisión de datos.",
+      "image": {
+        "name": "scene-raw-water-reservoirs.webp",
+        "alt": "Embalse industrial de agua bruta con una estructura de captación, camino de servicio y servicios de fábrica a lo lejos",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    },
+    {
+      "id": "river-intake-stage",
+      "group": "waterways-supply",
+      "title": "Niveles de agua en captaciones fluviales",
+      "description": "Observe los niveles de agua del río cerca de una captación industrial para aportar contexto a la disponibilidad del agua de captación y al plan de inspección del operador. Un punto de referencia de detección documentado permite al equipo comparar los cambios de nivel con el funcionamiento de la captación y las observaciones locales. Elija una posición protegida después de revisar corrientes, residuos, sedimentos y niveles estacionales. Seleccione el rango, la instalación y el perfil de transmisión de datos para la tarea de nivel, con cualquier evaluación de caudal definida dentro del diseño más amplio de gestión del agua.",
+      "measurement": "Nivel del río respecto al punto de referencia acordado para la monitorización de la captación.",
+      "monitoringPoint": "Una posición designada en la orilla del río o en la estructura de captación, con las condiciones de corriente y residuos revisadas.",
+      "installation": "Proporcione un soporte estable y un recorrido protegido del cable para los cambios estacionales del agua. Mantenga el terminal accesible y verifique la ruta inalámbrica desde la ubicación de la captación.",
+      "projectBrief": "Plano de captación, punto de referencia de nivel, rango estacional, corriente y residuos, sedimentos, acceso al emplazamiento, necesidad de precisión y transmisión de datos.",
+      "image": {
+        "name": "scene-river-intake-stage.webp",
+        "alt": "Río junto a una estructura industrial de captación de agua con plataforma de inspección y línea de agua visible",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    },
+    {
+      "id": "irrigation-canal-level",
+      "group": "waterways-supply",
+      "title": "Niveles de canales de riego y suministro",
+      "description": "Registre los niveles de agua en puntos seleccionados de un canal de riego o de suministro del emplazamiento para apoyar la revisión del equipo de los programas de entrega y de las condiciones cambiantes. Mantenga documentados la referencia y la posición de cada punto para realizar comparaciones útiles. Revise la velocidad, los residuos, los sedimentos y el acceso al seleccionar el soporte de la sonda. La tendencia de nivel puede considerarse junto con los ajustes de compuertas y las observaciones de campo, con cualquier cálculo de caudal especificado como una evaluación hidráulica independiente para el emplazamiento.",
+      "measurement": "Nivel de agua del canal en ubicaciones identificadas respecto a sus puntos de referencia registrados.",
+      "monitoringPoint": "Una sección representativa del canal seleccionada según la disposición de suministro y las condiciones locales de flujo.",
+      "installation": "Planifique un soporte protegido de la sonda y un recorrido del cable alejado de los trabajos de compuertas y de los residuos. Incluya las variaciones estacionales de nivel, el acceso de inspección y la recepción del terminal en la instalación.",
+      "projectBrief": "Sección y punto de referencia del canal, rango de nivel, operación de compuertas, velocidad, residuos y sedimentos, acceso, cobertura y transmisión de datos.",
+      "image": {
+        "name": "scene-irrigation-canal-level.webp",
+        "alt": "Canal de riego y suministro revestido de hormigón con una estructura de compuerta y un camino seco de inspección",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "remote-supply-wells",
+      "group": "waterways-supply",
+      "title": "Pozos remotos de agua de servicios",
+      "description": "Haga seguimiento de los niveles de agua de un pozo remoto utilizado para el suministro de agua de servicios de un emplazamiento, ofreciendo a los operadores un registro entre visitas. Compare el descenso y la recuperación con el programa de bombeo y el patrón de demanda. Seleccione el rango de la sonda, la longitud del cable y el punto de referencia según la construcción del pozo, y verifique la cobertura en el terminal. Acuerde la frecuencia de transmisión de datos y la estimación de autonomía de la batería según el objetivo de monitorización y las condiciones reales de funcionamiento del emplazamiento.",
+      "measurement": "Nivel de agua del pozo durante los periodos de extracción de agua de servicios y de recuperación.",
+      "monitoringPoint": "Un pozo de suministro identificado con su construcción, posición de bombeo y punto de referencia registrados.",
+      "installation": "Proteja el cable de la sonda en torno a la bomba y a la boca del pozo, con acceso para comprobaciones. Sitúe el terminal para permitir la recepción y acuerde el perfil de alimentación y transmisión de datos.",
+      "projectBrief": "Profundidad y diámetro del pozo, punto de referencia, disposición de la bomba, condiciones del agua, rango de nivel, cobertura, frecuencia de visitas y necesidad de transmisión de datos.",
+      "image": {
+        "name": "scene-remote-supply-wells.webp",
+        "alt": "Instalación remota de pozo de agua de servicios con boca protegida, tubería de bombeo y acceso abierto al emplazamiento",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    },
+    {
+      "id": "stormwater-retention",
+      "group": "waterways-supply",
+      "title": "Balsas industriales de retención de aguas pluviales",
+      "description": "Haga seguimiento del aumento y descenso del nivel de agua en una balsa industrial de retención de aguas pluviales durante y después de la lluvia. Revisar el registro junto con las precipitaciones y las inspecciones de la salida ayuda al equipo del emplazamiento a comprender los cambios en las condiciones de almacenamiento. Establezca un punto de referencia definido y revise el rango estacional, los sedimentos y los residuos antes de seleccionar el punto de detección. Cuando se necesite el volumen útil, incluya la geometría de la balsa en el cálculo de la plataforma y acuerde el flujo de alertas del proyecto.",
+      "measurement": "Nivel de la balsa de retención durante la recogida de lluvia y su descarga posterior.",
+      "monitoringPoint": "Una posición documentada de la balsa que represente el agua almacenada, alejada de turbulencias intensas de entrada.",
+      "installation": "Utilice un soporte estable de la sonda y un recorrido protegido del cable con acceso de inspección. Confirme la ubicación del terminal por encima de la línea de agua prevista y la ruta inalámbrica del emplazamiento.",
+      "projectBrief": "Sección y punto de referencia de la balsa, nivel máximo, sedimentos, disposición de entradas y salidas, relación entre nivel y volumen, cobertura, transmisión de datos y destinatarios de alertas.",
+      "image": {
+        "name": "scene-stormwater-retention.webp",
+        "alt": "Balsa industrial de retención de aguas pluviales con una estructura de salida definida, margen con vegetación y camino accesible de servicio",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "factory-water",
+      "title": "Almacenamiento de agua en fábricas",
+      "jumpLabel": "Almacenamiento de agua",
+      "intro": "Haga seguimiento del agua almacenada entre el suministro entrante y la demanda industrial. Seleccione cada punto de monitorización según la profundidad útil, la disposición del llenado y el nivel de reserva elegido por el equipo.",
+      "scenes": [
+        "raw-water-buffer",
+        "process-water-day-tanks",
+        "treated-service-water",
+        "gravity-service-tanks",
+        "emergency-water-reserves"
+      ],
+      "image": {
+        "name": "scene-raw-water-buffer.webp",
+        "alt": "Balsa de almacenamiento de agua bruta de fábrica con agua visible, tuberías y una planta industrial al fondo",
+        "caption": "Depósitos de reserva de agua bruta de fábrica · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "cooling-utilities",
+      "title": "Refrigeración y servicios de planta",
+      "jumpLabel": "Refrigeración y servicios",
+      "intro": "Mantenga visible el almacenamiento de agua de servicios ante cambios de carga y de estación. Identifique el depósito real, el tratamiento del líquido y la temperatura antes de seleccionar la sonda, el rango y el perfil de transmisión de datos.",
+      "scenes": [
+        "cooling-tower-basins",
+        "chilled-water-makeup",
+        "evaporative-cooling-supply",
+        "boiler-feed-pretreatment",
+        "humidification-supply"
+      ],
+      "image": {
+        "name": "scene-cooling-tower-basins.webp",
+        "alt": "Torre de refrigeración industrial con una balsa de agua abierta, superficies mojadas y equipos de refrigeración reconocibles",
+        "caption": "Niveles de balsas de torres de refrigeración · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "process-water",
+      "title": "Agua de proceso de fabricación",
+      "jumpLabel": "Agua de proceso",
+      "intro": "Incorpore los niveles de agua de proceso al relevo de turnos y a la planificación de la reposición. Especifique el líquido exacto y las condiciones de manejo de cada etapa para adaptar la configuración a la función de producción seleccionada.",
+      "scenes": [
+        "metal-rinse-tanks",
+        "parts-washer-rinse",
+        "textile-process-buffer",
+        "plating-rinse-water",
+        "ceramic-process-water"
+      ],
+      "image": {
+        "name": "scene-metal-rinse-tanks.webp",
+        "alt": "Línea de enjuague de componentes metálicos con depósitos de enjuague de agua visibles y equipos industriales de manipulación de piezas",
+        "caption": "Depósitos de enjuague de componentes metálicos · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "industrial-effluent",
+      "title": "Efluentes industriales y recuperación",
+      "jumpLabel": "Efluentes y recuperación",
+      "intro": "Haga seguimiento de la recogida, el tratamiento y la reutilización mediante niveles de líquido con marcas de tiempo. Adapte el conjunto al efluente real, las acumulaciones de material, las condiciones de mezcla y el acceso práctico de mantenimiento.",
+      "scenes": [
+        "factory-equalization",
+        "neutralization-collection",
+        "treated-effluent-storage",
+        "sludge-supernatant",
+        "healthcare-wastewater"
+      ],
+      "image": {
+        "name": "scene-factory-equalization.webp",
+        "alt": "Depósito industrial de homogeneización de aguas residuales con líquido visible, tuberías y pasarela accesible de la planta de tratamiento",
+        "caption": "Depósitos de homogeneización de efluentes de fábrica · Imagen ilustrativa de la aplicación",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "drainage-pumps",
+      "title": "Sumideros de drenaje y estaciones de bombeo",
+      "jumpLabel": "Drenaje y bombas",
+      "intro": "Observe el agua que se acumula en sumideros y puntos de recogida distribuidos. Acuerde la banda de funcionamiento, los plazos de aviso y el acceso de mantenimiento para cada tarea local de drenaje.",
+      "scenes": [
+        "plant-room-sumps",
+        "washdown-collection",
+        "factory-rainwater-lift",
+        "underground-lift-pits",
+        "containment-collection"
+      ],
+      "image": {
+        "name": "scene-plant-room-sumps.webp",
+        "alt": "Sala de máquinas industrial con sumidero de drenaje empotrado y tuberías de servicios junto a una pasarela seca de mantenimiento",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "industry-water",
+      "title": "Sistemas de agua por sector industrial",
+      "jumpLabel": "Agua por sector",
+      "intro": "Utilice una referencia clara de nivel en los sistemas de servicios y de recuperación de agua específicos de cada sector industrial. Defina la función real de almacenamiento, los componentes del líquido y los requisitos del emplazamiento para cada configuración.",
+      "scenes": [
+        "food-beverage-utility-water",
+        "pharmaceutical-utility-water",
+        "paper-water-recovery",
+        "concrete-plant-recycled-water",
+        "recycling-wash-water"
+      ],
+      "image": {
+        "name": "scene-food-beverage-utility-water.webp",
+        "alt": "Zona de servicios de una fábrica de alimentación y bebidas con depósitos de almacenamiento de agua y tuberías de servicio claramente organizadas",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "resources-dewatering",
+      "title": "Recursos naturales y achique subterráneo",
+      "jumpLabel": "Achique",
+      "intro": "Haga seguimiento de los cambios del nivel de agua en balsas de recogida, sumideros de drenaje y pozos. Elija el punto de referencia, el recorrido del cable y la posición del terminal según la profundidad, el acceso y las condiciones del emplazamiento.",
+      "scenes": [
+        "mine-dewatering",
+        "quarry-settling-water",
+        "construction-dewatering-wells",
+        "tunnel-drainage-sumps",
+        "industrial-groundwater-wells"
+      ],
+      "image": {
+        "name": "scene-mine-dewatering.webp",
+        "alt": "Zona de recogida de agua de achique de una mina con sumidero de agua, tuberías de drenaje y una ruta accesible de mantenimiento industrial",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "waterways-supply",
+      "title": "Agua de captación y resiliencia de la instalación",
+      "jumpLabel": "Agua de captación y del emplazamiento",
+      "intro": "Amplíe la visibilidad de los niveles a las fuentes de agua y a las zonas de retención que abastecen o apoyan un emplazamiento. Utilice un punto de referencia común y un plan de transmisión de datos que haga útiles las lecturas junto con los registros de operación del emplazamiento.",
+      "scenes": [
+        "raw-water-reservoirs",
+        "river-intake-stage",
+        "irrigation-canal-level",
+        "remote-supply-wells",
+        "stormwater-retention"
+      ],
+      "image": {
+        "name": "scene-raw-water-reservoirs.webp",
+        "alt": "Embalse industrial de agua bruta con una estructura de captación, camino de servicio y servicios de fábrica a lo lejos",
+        "caption": "Escena ilustrativa de la aplicación.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    }
+  ]
+}

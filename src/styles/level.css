@@ -342,3 +342,10 @@
 :where(.ht-level) .level-product img{width:94%;height:88%;object-fit:contain;top:46%}
 :where(.ht-level) .hero-proof strong{font-size:clamp(18px,1.65vw,24px);overflow-wrap:anywhere}
 @media(max-width:600px){:where(.ht-level) .hero-proof{grid-template-columns:1fr;gap:14px}:where(.ht-level) .hero-proof>div{padding:0 0 14px;border:0;border-bottom:1px solid #ffffff38}:where(.ht-level) .hero-proof>div:last-child{border:0;padding-bottom:0}:where(.ht-level) .hero-proof strong{font-size:19px}:where(.ht-level) .hero-proof small{margin-top:5px}}
+
+/* V71 多语言长单词守护：仅窄屏（<=1024px）允许任意断字+连字符；
+   桌面保持自然整词换行（V58 RU 教训）。作用域 .ht-level。 */
+@media (max-width: 1024px){
+:where(.ht-level) h1,:where(.ht-level) h2,:where(.ht-level) h3,:where(.ht-level) h4,
+:where(.ht-level) .feature-grid p,:where(.ht-level) .measurement-card p,:where(.ht-level) summary{min-width:0;overflow-wrap:anywhere;hyphens:auto}
+}

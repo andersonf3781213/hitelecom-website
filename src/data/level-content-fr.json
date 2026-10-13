@@ -1,0 +1,1405 @@
+{
+  "seo": {
+    "title": "Capteurs de niveau liquide sans fil | Série H | Hitelecom",
+    "description": "Configurez les capteurs de niveau à sonde immergée Hitelecom série H pour cuves, effluents, puisards et puits. Jusqu’à 200 m, MQTT et options sans fil."
+  },
+  "hero": {
+    "h1": "Capteurs de niveau liquide sans fil.",
+    "value_heading": "Connaître le niveau.\nPréparer la prochaine intervention.",
+    "description": "Les capteurs de niveau à sonde immergée Hitelecom série H transmettent à votre plateforme de supervision les mesures de vos cuves, puisards, puits et installations hydrauliques. Définissez la plage de mesure, le câble de sonde et le montage en fonction du liquide, du réservoir et des conditions d’exploitation, puis choisissez une version 4G, NB-IoT ou LoRa. Des réserves d’eau de l’usine à la collecte des effluents, un point de mesure clairement défini permet à votre équipe de suivre le remplissage, la baisse du niveau et les événements de niveau haut ou bas entre deux visites sur site.",
+    "primary_cta": "Configurer votre projet de mesure de niveau",
+    "secondary_cta": "Télécharger la fiche technique",
+    "datasheet_url": "https://www.hitelecom.com/downloads/liquid-level-sensor-datasheet.pdf",
+    "quick_points": [
+      "Jusqu’à 200 m · Plage adaptée à l’application",
+      "Précision ±0.5% FS · Précision supérieure sur demande",
+      "Versions 4G, NB-IoT ou LoRa"
+    ]
+  },
+  "features": [
+    {
+      "title": "Visibilité sur les niveaux de liquide",
+      "text": "Suivez l’évolution du stockage, du remplissage et de la collecte dans les cuves, puisards et puits sélectionnés."
+    },
+    {
+      "title": "Précision ±0.5% FS",
+      "text": "Choisissez la pleine échelle correspondant à la tolérance de niveau requise. Des configurations de précision supérieure peuvent être étudiées."
+    },
+    {
+      "title": "Jusqu’à 200 m",
+      "text": "Définissez la plage publiée en fonction de la profondeur du liquide, du point de référence et de l’objectif de surveillance."
+    },
+    {
+      "title": "Protection IP68",
+      "text": "Protection IP68 publiée, avec positionnement des composants et conditions d’immersion définis pour votre configuration."
+    },
+    {
+      "title": "Connectivité sans fil",
+      "text": "Choisissez la 4G LTE, le NB-IoT ou LoRa selon la couverture du site et la plateforme destinataire."
+    },
+    {
+      "title": "NFC et mises à jour OTA à distance",
+      "text": "Activation NFC et paramétrage local pris en charge, avec mises à jour à distance du micrologiciel pour la configuration retenue."
+    },
+    {
+      "title": "Surveillance longue durée",
+      "text": "Autonomie de référence publiée : plus de 10 ans avec une transmission toutes les heures, à réévaluer selon votre profil d’exploitation."
+    },
+    {
+      "title": "Configuration du projet",
+      "text": "Adaptez la plage, le câble de sonde, le montage, les transmissions et les alertes de niveau haut ou bas à l’installation."
+    }
+  ],
+  "measurement": {
+    "eyebrow": "DÉFINISSEZ LES BESOINS DE VOTRE PROJET DE MESURE DE NIVEAU",
+    "heading": "Choisir la plage.\nDéfinir le point de mesure.",
+    "description": "Des données de niveau utiles reposent sur une position de référence claire et une étendue de mesure adaptée à l’application. Précisez le liquide, le niveau maximal et la tolérance requise, puis adaptez la sonde, le câble et le montage à la cuve, au puisard, au puits ou à l’installation hydraulique.",
+    "cards": [
+      {
+        "title": "Plage de niveau et précision",
+        "text": "La gamme publiée couvre 0–200 m, avec des adaptations possibles. Choisissez la pleine échelle correspondant à l’application réelle et convertissez la précision exprimée en pourcentage de la pleine échelle en tolérance de niveau adaptée à votre exploitation.",
+        "project_brief": "Niveau maximal · Profondeur de référence · Tolérance requise · Seuils d’alarme",
+        "symbol": "level"
+      },
+      {
+        "title": "Conditions du liquide et du réservoir",
+        "text": "Indiquez le fluide, la température, les matières solides et la pression du réservoir afin d’évaluer l’adéquation de la sonde et du câble. Pour une configuration fondée sur la pression, précisez la masse volumique du liquide et le dispositif de référence de pression lors de la sélection.",
+        "project_brief": "Composition du liquide · Masse volumique · Température · Réservoir ouvert ou sous pression · Encrassement",
+        "symbol": "conditions"
+      },
+      {
+        "title": "Installation et connectivité",
+        "text": "Prévoyez une position stable pour la sonde et un terminal sans fil accessible. Définissez ensemble le cheminement du câble, le montage, la couverture réseau et la plateforme destinataire, avec un accès pratique pour les inspections.",
+        "project_brief": "Position de la sonde · Cheminement du câble · Montage du terminal · Couverture · Plateforme",
+        "symbol": "deployment"
+      }
+    ],
+    "installation_heading": "Définir une référence de niveau claire.\nPrévoir une installation facile à exploiter.",
+    "installation_text": "Consignez le point de référence de la sonde, l’immersion maximale et la relation entre la mesure et les repères de niveau du site. Choisissez un emplacement à l’écart des fortes turbulences à l’entrée, avec un support adapté et un accès pour les inspections. Prévoyez le cheminement du câble en tenant compte de l’abrasion, des efforts de traction et des opérations de maintenance. Installez le terminal de communication de manière à assurer une réception fiable et un accès pour l’entretien. Confirmez la sonde et le câble fournis, la référence de pression et les limites des composants avant de mettre en service la chaîne complète de transmission des données."
+  },
+  "workflow": {
+    "eyebrow": "DE LA MESURE DE NIVEAU À L’INTERVENTION SUR SITE",
+    "heading": "Suivre l’évolution du niveau.\nDonner à l’équipe une action utile à mener.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Mesurer",
+        "text": "La sonde retenue relève le niveau à un point défini de la cuve, du puisard ou du puits. Convenez de la référence, de la plage, des conditions du liquide et du profil d’échantillonnage avant le déploiement."
+      },
+      {
+        "number": "02",
+        "title": "Transmettre",
+        "text": "Les mesures empruntent la liaison sans fil sélectionnée. Vérifiez la couverture, les transmissions, le format des messages et leur réception dans Hitelecom Cloud ou sur la plateforme convenue."
+      },
+      {
+        "number": "03",
+        "title": "Analyser",
+        "text": "Comparez les tendances de remplissage, de baisse du niveau et de collecte avec les opérations du site. Définissez les seuils et la personne chargée de traiter une alerte ou de se rendre au point de surveillance."
+      }
+    ],
+    "platform_title": "Hitelecom Cloud.\nVos données de niveau connectées.",
+    "platform_text": "Le déploiement 4G et NB-IoT publié transmet les données via MQTT à Hitelecom Cloud ou à une plateforme client. Définissez le point de terminaison, l’authentification et le format des messages pour la configuration fournie. Pour LoRa, confirmez le protocole radio, la passerelle et le chemin vers le serveur. Les tableaux de bord cloud et les règles d’alarme peuvent accompagner les procédures d’exploitation ; l’automatisation des pompes ou des vannes se configure au moyen du contrôleur et des interfaces adaptés au projet.",
+    "profile_heading": "Mesurer selon les besoins du procédé.\nTransmettre selon le calendrier convenu.",
+    "profile_text": "Choisissez les fréquences d’échantillonnage et de transmission selon la vitesse de variation du niveau et le délai d’intervention attendu par votre équipe. Une cuve de stockage remplie lentement peut nécessiter un profil différent de celui d’un petit puisard de collecte. Mettez en service conjointement les paramètres de transmission et les alarmes de la plateforme, en vérifiant les horaires des données et les actions de suivi attribuées. Pour le pilotage des pompes, définissez la chaîne de commande et les exigences de réponse dans le cadre du système complet.",
+    "battery_title": "Prévoir une faible consommation pour la surveillance à distance.",
+    "battery_text": "La référence publiée indique une autonomie supérieure à 10 ans avec un intervalle de transmission d’une heure, dans des conditions d’essai spécifiées. Réévaluez cette estimation pour le modèle et le déploiement retenus. La configuration de mesure, les besoins d’échantillonnage, la fréquence de transmission, la couverture réseau, les retransmissions et la température de fonctionnement influent sur l’autonomie. Adaptez le profil de surveillance au procédé et confirmez l’autonomie estimée pour la configuration commandée."
+  },
+  "series": {
+    "eyebrow": "SÉRIE ET CONFIGURATION",
+    "heading": "Une série.\nLa configuration de niveau adaptée à votre projet.",
+    "description": "H200, H300 et H500 constituent la gamme publiée de capteurs de niveau. Sélectionnez ensemble la plage, le câble de sonde, le montage, les conditions du liquide et du réservoir, la version sans fil et le profil de transmission. Le devis précise la configuration fournie et ses exigences d’installation.",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "model_card_subtitle": "Plage et configuration de déploiement choisies pour votre projet",
+    "steps": [
+      {
+        "title": "Définir le besoin de mesure de niveau",
+        "text": "Application · Liquide · Niveau maximal · Tolérance requise · Pression du réservoir · Température de fonctionnement"
+      },
+      {
+        "title": "Définir l’installation",
+        "text": "Référence de la sonde · Longueur et cheminement du câble · Montage du terminal · Conditions d’encrassement · Accès pour inspection"
+      },
+      {
+        "title": "Définir la chaîne de données",
+        "text": "Version sans fil · Échantillonnage et transmission · Plateforme destinataire · Destinataires des alertes · Intégration du contrôleur"
+      }
+    ]
+  },
+  "specifications": {
+    "eyebrow": "CARACTÉRISTIQUES TECHNIQUES",
+    "heading": "Caractéristiques publiées de la gamme.",
+    "description": "Utilisez ces valeurs publiées pour préparer le descriptif de votre projet. Confirmez la plage retenue, la construction de la sonde, les conditions du liquide et du réservoir, les limites des composants et les interfaces de données pour la configuration fournie.",
+    "rows": [
+      {
+        "label": "Modèles publiés",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "Type de capteur",
+        "value": "Sonde immergée avec câble et terminal de communication sans fil"
+      },
+      {
+        "label": "Plage de niveau",
+        "value": "0–200 m, adaptable ; pleine échelle propre à l’application, choisie selon le niveau et la précision requis"
+      },
+      {
+        "label": "Précision publiée",
+        "value": "±0.5% FS ; précision supérieure sur demande"
+      },
+      {
+        "label": "Stabilité à long terme",
+        "value": "±0.2% FS/an ; un indicateur distinct de la précision de mesure"
+      },
+      {
+        "label": "Température de fonctionnement",
+        "value": "−20°C à +70°C publiés ; confirmer les limites de la sonde, du liquide et du câble pour la configuration fournie"
+      },
+      {
+        "label": "Température de stockage",
+        "value": "−20°C à +80°C"
+      },
+      {
+        "label": "Options sans fil",
+        "value": "4G LTE / NB-IoT / LoRa, selon la configuration fournie"
+      },
+      {
+        "label": "Protocole de données et plateforme",
+        "value": "MQTT indiqué ; transmission 4G/NB-IoT vers Hitelecom Cloud ou une plateforme client"
+      },
+      {
+        "label": "Alimentation",
+        "value": "Batterie interne ; dispositif d’alimentation précisé pour la configuration fournie"
+      },
+      {
+        "label": "Autonomie de référence",
+        "value": "Plus de 10 ans avec une transmission toutes les heures dans des conditions d’essai spécifiées ; l’autonomie réelle dépend de la configuration et du profil d’exploitation"
+      },
+      {
+        "label": "Protection",
+        "value": "Boîtier IP68 indiqué ; conditions d’immersion des composants à confirmer pour le projet"
+      },
+      {
+        "label": "Montage du transmetteur",
+        "value": "Pattes de fixation / collier pour poteau / fixation à trous oblongs, selon la configuration"
+      },
+      {
+        "label": "Configuration et maintenance",
+        "value": "Activation NFC et paramétrage local ; mises à jour OTA à distance prises en charge"
+      },
+      {
+        "label": "Câble de sonde",
+        "value": "Longueur du câble adaptable au site ; compatibilité de la sonde et du câble avec le liquide évaluée lors de la sélection"
+      }
+    ],
+    "datasheet_label": "Télécharger la fiche technique du capteur de niveau liquide",
+    "datasheet_url": "https://www.hitelecom.com/downloads/liquid-level-sensor-datasheet.pdf"
+  },
+  "faqHeading": {
+    "kicker": "DES RÉPONSES POUR VOTRE PROJET",
+    "title": "Questions fréquentes.",
+    "intro": "Des réponses pratiques pour choisir une plage de niveau, tenir compte du liquide et du réservoir, installer la sonde et intégrer les mesures aux procédures d’exploitation."
+  },
+  "faqs": [
+    {
+      "id": "faq-level-range",
+      "question": "Quelle plage de niveau choisir pour ma cuve, mon puits ou mon puisard ?",
+      "paragraphs": [
+        "Commencez par le niveau le plus élevé à mesurer, le point de référence de la sonde et la tolérance de niveau requise par votre exploitation. La gamme publiée série H couvre 0–200 m, avec des adaptations possibles. Choisissez la pleine échelle réellement nécessaire à l’installation plutôt que d’adopter systématiquement la plage la plus large. Un plan de cuve, la profondeur du puits ou une coupe du puisard permettent à Hitelecom d’examiner ensemble la plage, la longueur du câble et le montage."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/downloads/liquid-level-sensor-datasheet.pdf",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ],
+      "evidence": [
+        "hitelecom-datasheet",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-full-scale-accuracy",
+      "question": "Quel est le rapport entre la précision de pleine échelle et la profondeur de ma cuve ?",
+      "paragraphs": [
+        "La précision publiée est de ±0.5% FS, soit un pourcentage de la pleine échelle sélectionnée. À titre d’exemple de calcul, une pleine échelle de 10 m correspond à ±50 mm avec ce pourcentage. Choisissez la plage et l’éventuelle option de précision supérieure selon la tolérance requise par votre application. La stabilité publiée de ±0.2% FS/an décrit la dérive dans le temps ; la température, les conditions du liquide et l’installation sont examinées séparément pour définir l’ensemble des exigences de mesure."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/downloads/liquid-level-sensor-datasheet.pdf",
+        "https://www.wika.com/media/Data-sheets/Level/Submersible-pressure-sensors/ds_lm4005_en_co.pdf"
+      ],
+      "evidence": [
+        "hitelecom-datasheet",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-liquid-selection",
+      "question": "Quelles informations permettent d’adapter le capteur à notre liquide ?",
+      "paragraphs": [
+        "Indiquez la composition et la concentration du liquide, sa température de fonctionnement, les variations de sa masse volumique, les matières en suspension et les conditions de nettoyage. Ces éléments permettent d’évaluer la sonde, les joints et le câble au regard du procédé réel. L’eau, les effluents, les huiles et les solutions chimiques peuvent nécessiter des configurations différentes. Précisez également la pression du réservoir et la précision requise afin que Hitelecom puisse définir un dispositif de mesure adapté et confirmer la compatibilité des composants fournis."
+      ],
+      "sources": [
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ],
+      "evidence": [
+        "primary-industrial-measurement-evidence",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-cable-mounting",
+      "question": "Comment adapter le câble de sonde et le montage à notre site ?",
+      "paragraphs": [
+        "Le produit publié permet d’adapter la plage, la longueur du câble de sonde et le montage. Précisez la position de la sonde, la profondeur de la cuve ou du puits et le cheminement jusqu’au terminal de communication, en tenant compte de l’accès pour l’entretien et de la protection contre les efforts mécaniques. Les pattes de fixation, le collier pour poteau ou la fixation à trous oblongs du terminal dépendent de la configuration. Définissez séparément le positionnement et le support de la sonde immergée, puis consignez sa référence de niveau et le cheminement du câble pour la mise en service."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/zh/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-wastewater-readings",
+      "question": "Comment obtenir des mesures stables dans des eaux usées ou un puisard soumis à des mouvements importants ?",
+      "paragraphs": [
+        "Choisissez un point de mesure représentatif du niveau de collecte et accessible pour les inspections. Lors de la sélection de la sonde, examinez les turbulences à l’entrée, l’accumulation de sédiments, l’entartrage et les caractéristiques chimiques du liquide. Un support adapté ou un dispositif de protection peut aider à maintenir une position constante ; un programme d’inspection permet de garder la surface de mesure et le câble en bon état de fonctionnement. Fournissez le plan du puisard et les matières solides attendues pour intégrer ces éléments à la proposition d’installation."
+      ],
+      "sources": [
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025",
+        "https://bdih-download.endress.com/file/d9a1898ff2f4825c8bb607b465d05177/BA01605PEN_0222-00.pdf"
+      ],
+      "evidence": [
+        "primary-industrial-measurement-evidence",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-vessel-pressure",
+      "question": "Comment la pression du réservoir influence-t-elle le dispositif de mesure ?",
+      "paragraphs": [
+        "Indiquez à Hitelecom si le réservoir est ouvert, mis à l’atmosphère ou sous pression. La série H est présentée comme un capteur de niveau à sonde immergée ; confirmez le principe de mesure et la référence de pression de la sonde retenue lors de la configuration. Pour un dispositif fondé sur la pression, une cuve ouverte ou mise à l’atmosphère nécessite une référence atmosphérique appropriée, tandis qu’un réservoir fermé impose de prendre en compte la pression à la surface du liquide. Examinez ces éléments conjointement avec la masse volumique du liquide et la plage de niveau."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA",
+        "https://microsites.wika.com/newscontentgeneric_ms.WIKA?AxID=474"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "primary-industrial-measurement-evidence",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-level-volume",
+      "question": "Les mesures de niveau peuvent-elles aider à estimer le volume stocké dans une cuve ?",
+      "paragraphs": [
+        "Oui, si la géométrie de la cuve ou une table de conversion niveau-volume validée est disponible. Le niveau est une référence de hauteur ; sa conversion en volume stocké dépend de la forme du réservoir et du repère choisi. Fournissez les dimensions de la cuve ou la table d’étalonnage, ainsi que les unités d’affichage souhaitées, pour convenir du calcul et de sa mise en œuvre sur la plateforme destinataire. Pour les cuves irrégulières ou horizontales, utilisez une conversion adaptée sur toute la plage de fonctionnement."
+      ],
+      "sources": [
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ],
+      "evidence": [
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-wireless-selection",
+      "question": "Quelle option sans fil convient à notre usine ou à notre installation hydraulique isolée ?",
+      "paragraphs": [
+        "Choisissez la liaison selon la réception au terminal, la disponibilité des réseaux dans la région, les besoins de transmission et la plateforme destinataire. La gamme publiée propose des options 4G LTE, NB-IoT et LoRa. Pour les projets cellulaires, examinez la couverture des opérateurs disponibles et la configuration du modem retenu. Pour LoRa, intégrez la passerelle et le chemin vers le serveur à la sélection. Vérifiez toute la chaîne, du terminal installé au tableau de bord, avant de terminer la mise en service sur site."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/downloads/liquid-level-sensor-datasheet.pdf",
+        "https://www.hitelecom.com/product"
+      ],
+      "evidence": [
+        "hitelecom-datasheet",
+        "hitelecom-platform"
+      ]
+    },
+    {
+      "id": "faq-platform-integration",
+      "question": "Comment connecter les données de niveau à notre propre plateforme ?",
+      "paragraphs": [
+        "Le déploiement 4G et NB-IoT publié transmet les mesures de niveau via MQTT à Hitelecom Cloud ou à une plateforme client. Indiquez le point de terminaison destinataire, la méthode d’authentification, les exigences de contenu des messages et les identifiants des appareils afin de définir l’intégration. Hitelecom Cloud fournit également des tableaux de bord et des règles d’alarme configurables. Pour un déploiement LoRa ou un projet comprenant des contrôleurs, confirmez la passerelle, le serveur et les interfaces dans le cadre de la solution fournie."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.hitelecom.com/product"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "hitelecom-platform"
+      ]
+    },
+    {
+      "id": "faq-battery-reporting",
+      "question": "Comment concilier fréquence de transmission et autonomie de la batterie ?",
+      "paragraphs": [
+        "Définissez le profil selon la vitesse de variation du niveau et le moment où l’équipe doit en être informée. L’autonomie de référence publiée est supérieure à 10 ans avec une transmission toutes les heures, dans des conditions d’essai spécifiées. L’autonomie réelle dépend du modèle, des besoins de mesure et d’échantillonnage, de la fréquence de transmission, de la température, de la couverture radio et des retransmissions. Convenez des délais de mesure et de notification requis, puis demandez une estimation d’autonomie pour cette configuration et ce profil de site."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.hitelecom.com/product/app"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "hitelecom-platform"
+      ]
+    },
+    {
+      "id": "faq-alerts-operations",
+      "question": "Comment les alertes de niveau haut et bas peuvent-elles accompagner le remplissage et le drainage ?",
+      "paragraphs": [
+        "Définissez les seuils haut et bas selon la réserve utile, le plan de remplissage ou la capacité de collecte du site. Désignez la personne chargée d’examiner chaque notification et l’action à mener, puis vérifiez toute la chaîne d’alerte à la mise en service. Pour automatiser les pompes ou les vannes, intégrez au projet le contrôleur ou l’automate programmable, les interfaces adaptées et la logique de fonctionnement. Le délai de réponse requis est convenu pour le système complet, depuis la mesure de niveau jusqu’aux équipements de commande retenus."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.hitelecom.com/product",
+        "https://www.vega.com/en/products/product-catalog/signal-conditioning/controllers/vegamet-141"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "hitelecom-platform",
+        "primary-industrial-measurement-evidence"
+      ]
+    },
+    {
+      "id": "faq-project-quotation",
+      "question": "Que faut-il inclure dans une demande de devis adaptée à l’application ?",
+      "paragraphs": [
+        "Indiquez l’application, les caractéristiques du liquide, le niveau maximal, la pression du réservoir et la tolérance requise, avec une photo ou un plan du site. Ajoutez la position de la sonde, le cheminement du câble, les températures du procédé et de l’environnement, les conditions d’encrassement et l’accès pour les inspections. Précisez la région d’utilisation de la liaison sans fil, le profil de transmission, la plateforme et toute intégration à un contrôleur. Si le projet exige des agréments relatifs au contact avec le fluide ou une documentation pour zone dangereuse, indiquez précisément l’exigence afin d’examiner conjointement la configuration proposée et ses justificatifs."
+      ],
+      "sources": [
+        "https://www.hitelecom.com/zh/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025",
+        "https://bdih-download.endress.com/file/16325362cdf9444b2ae1b628d4dad5f9/TI00431PEN_1926-00.pdf"
+      ],
+      "evidence": [
+        "hitelecom-webpage",
+        "primary-industrial-measurement-evidence",
+        "primary-industrial-measurement-evidence"
+      ]
+    }
+  ],
+  "inquiry": {
+    "eyebrow": "PARLONS DE VOTRE PROJET",
+    "heading": "Décrire votre liquide.\nConstruire un plan de surveillance adapté.",
+    "description": "Présentez la cuve, le puisard ou l’installation hydraulique et les informations de niveau dont votre équipe a besoin. Hitelecom peut examiner la plage, le câble de sonde, le montage et la configuration sans fil, puis préparer un devis tenant compte des conditions d’exploitation.",
+    "email": "sales@hitelecom.cn",
+    "supporting_text": "Un plan de cuve, une coupe du puisard ou une photo du site aident à définir le point de mesure. Ajoutez, si vous les connaissez, le liquide, le niveau maximal, la température, la pression du réservoir, la couverture sans fil et les exigences de plateforme.",
+    "fields": [
+      "Application",
+      "Country",
+      "Model",
+      "Quantity",
+      "Liquid",
+      "Level span",
+      "Probe and cable",
+      "Installation conditions",
+      "Connectivity",
+      "Timing and platform",
+      "Requirements"
+    ],
+    "message_placeholder": "Décrivez le liquide, la cuve ou le puisard, le niveau maximal, la précision requise, la température et la pression, la position de la sonde, le cheminement du câble, le montage, la couverture sans fil, les transmissions, la plateforme et les besoins d’intégration à la commande.",
+    "submit_label": "Préparer la demande pour votre projet",
+    "mailto_note": "Vérifiez et modifiez votre descriptif, puis copiez-le ou ouvrez-le dans votre application de messagerie. La page n’envoie pas automatiquement la demande."
+  },
+  "applicationSection": {
+    "title": "Applications de surveillance du niveau liquide.",
+    "valueHeading": "40 contextes de surveillance définis.",
+    "description": "Explorez huit catégories d’applications couvrant le stockage d’eau en usine, les utilités de refroidissement, l’eau de procédé, la récupération des effluents, le drainage, les systèmes d’eau par secteur, l’exhaure et les ressources en eau. Chaque contexte précise l’évolution du niveau, le point de mesure et les informations de projet utiles pour sélectionner une configuration adaptée.",
+    "note": "Images d’illustration des applications. Configurez chaque point de surveillance en fonction du liquide et de l’installation réels."
+  },
+  "applications": [
+    {
+      "id": "raw-water-buffer",
+      "group": "factory-water",
+      "title": "Cuves tampons d’eau brute en usine",
+      "description": "Gardez une vision claire de l’eau brute stockée avant son acheminement vers le traitement et la production. L’évolution du niveau aide l’équipe des utilités à comparer les apports aux besoins de l’usine, à planifier le remplissage et à rechercher la cause d’une baisse inattendue. Définissez l’étendue surveillée selon la profondeur de stockage utile et convenez du seuil de notification de niveau bas avec l’équipe d’exploitation.",
+      "measurement": "Hauteur de liquide et tendances de remplissage / baisse du niveau dans la cuve tampon d’eau brute.",
+      "monitoringPoint": "Un compartiment représentatif de la cuve d’alimentation, référencé au repère de cuve convenu.",
+      "installation": "Choisissez une position de sonde accessible, à l’écart du jet d’entrée et de l’aspiration au soutirage. Acheminez le câble vers un terminal situé au-dessus du liquide et bénéficiant d’une couverture radio exploitable.",
+      "projectBrief": "Profondeur de la cuve, disposition des entrées / sorties, niveaux habituels de fonctionnement, composition de l’eau brute et délai de notification requis.",
+      "image": {
+        "name": "scene-raw-water-buffer.webp",
+        "alt": "Bassin de stockage d’eau brute en usine avec eau visible, tuyauteries et installation industrielle en arrière-plan",
+        "caption": "Cuves tampons d’eau brute en usine · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "process-water-day-tanks",
+      "group": "factory-water",
+      "title": "Cuves journalières d’eau de procédé",
+      "description": "Adaptez le remplissage des cuves journalières aux postes de production. Une mesure locale du niveau liquide fournit aux opérateurs une référence commune sur l’eau disponible pour le procédé suivant, tandis que l’historique aide à comprendre les cycles de remplissage répétés. Précisez la plage de fonctionnement, le niveau de réserve et les besoins de transmission pour la cuve journalière réelle, sans choisir par défaut l’étendue maximale de la gamme.",
+      "measurement": "Niveau d’eau dans la plage de fonctionnement de la cuve journalière, avec les cycles de remplissage et de consommation.",
+      "monitoringPoint": "La cuve journalière alimentant la ligne de production ou le point de distribution d’eau de procédé sélectionné.",
+      "installation": "Prévoyez une suspension ou un guide de sonde approuvé et un accès pour l’entretien. Placez le point de mesure à l’écart des éclaboussures de remplissage et protégez le câble sur tout son cheminement.",
+      "projectBrief": "Profondeur utile, température de l’eau, cycle de remplissage, intervention requise en niveau bas et connexion à la plateforme choisie.",
+      "image": {
+        "name": "scene-process-water-day-tanks.webp",
+        "alt": "Cuve journalière industrielle d’eau de procédé à côté d’une ligne de production, avec dessus de cuve accessible et tuyauteries de service",
+        "caption": "Cuves journalières d’eau de procédé · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "treated-service-water",
+      "group": "factory-water",
+      "title": "Stockage d’eau de service traitée",
+      "description": "Surveillez l’eau traitée après l’étape de traitement de l’usine et avant sa distribution aux utilisateurs. La comparaison des niveaux dans le temps aide l’équipe des utilités à comprendre la reconstitution du stock et la demande en période de forte activité. Lors de l’analyse des performances, rapprochez les mesures des relevés d’exploitation du traitement et des pompes de transfert, et choisissez les matériaux de la sonde et du câble selon la chimie réelle de l’eau traitée.",
+      "measurement": "Niveau d’eau traitée stockée et reconstitution du stock après transfert ou consommation par la production.",
+      "monitoringPoint": "La cuve de stockage d’eau de service en aval de l’étape de traitement spécifiée.",
+      "installation": "Choisissez un point d’immersion stable et accessible, avec une référence zéro convenue. Confirmez la chimie de l’eau, la température et les pratiques de nettoyage avant de définir l’ensemble en contact avec le liquide.",
+      "projectBrief": "Type de traitement, dimensions de la cuve, niveaux de fonctionnement, composition de l’eau, cheminement du câble et besoins de transmission.",
+      "image": {
+        "name": "scene-treated-service-water.webp",
+        "alt": "Installation industrielle propre de stockage d’eau traitée avec cuves, filtres et tuyauteries de service bien organisées",
+        "caption": "Stockage d’eau de service traitée · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "gravity-service-tanks",
+      "group": "factory-water",
+      "title": "Réservoirs d’eau de service à alimentation gravitaire",
+      "description": "Suivez la hauteur d’eau disponible dans un réservoir de service mis à l’atmosphère et alimentant le réseau par gravité. Le niveau d’eau peut aider les opérateurs à prévoir un remplissage et à comprendre une diminution de l’alimentation dans la zone desservie. Rattachez la mesure à la cote de référence et à la plage de fonctionnement propres au réservoir, afin que l’équipe puisse interpréter les mesures de différents réservoirs.",
+      "measurement": "Niveau de liquide dans le réservoir gravitaire et plage utile au-dessus de la sortie.",
+      "monitoringPoint": "Le réservoir de service mis à l’atmosphère qui alimente le bâtiment ou la zone de services industriels concernée.",
+      "installation": "Confirmez l’accès au réservoir, le support du câble et l’emplacement approuvé du terminal. Tenez compte de la position de la sonde et du repère du réservoir lors de la mise en service du niveau affiché.",
+      "projectBrief": "Cote du réservoir, niveau de la sortie, dispositif de remplissage, adéquation au liquide et notification de réserve requise.",
+      "image": {
+        "name": "scene-gravity-service-tanks.webp",
+        "alt": "Réservoir surélevé d’eau de service industrielle avec plateforme d’accès et tuyauteries de distribution visibles",
+        "caption": "Réservoirs d’eau de service à alimentation gravitaire · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "emergency-water-reserves",
+      "group": "factory-water",
+      "title": "Surveillance des réserves d’eau de secours",
+      "description": "Gardez une visibilité sur une réserve d’eau susceptible d’être contrôlée moins souvent que les stockages de production. Les tendances de niveau facilitent les inspections courantes, la planification du remplissage et l’examen d’une baisse inexpliquée. Intégrez la mesure à la procédure de gestion des réserves du site, avec des destinataires d’alerte et un délai d’intervention définis par les responsables de l’installation.",
+      "measurement": "Niveau de la réserve d’eau et variations entre les inspections programmées.",
+      "monitoringPoint": "Le réservoir ou compartiment de réserve désigné, selon ses niveaux de fonctionnement documentés.",
+      "installation": "Choisissez un point d’immersion accessible pour l’entretien et protégez le câble et le terminal contre les dommages mécaniques. Précisez dans le descriptif du projet les éventuelles exigences d’agrément ou de protection indépendante.",
+      "projectBrief": "Fonction de la réserve, profondeur utile, travaux d’installation autorisés, agréments requis et procédure de notification / inspection.",
+      "image": {
+        "name": "scene-emergency-water-reserves.webp",
+        "alt": "Ensemble industriel de réservoirs d’eau de secours avec accès pour l’entretien et infrastructures de l’usine",
+        "caption": "Surveillance des réserves d’eau de secours · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "cooling-tower-basins",
+      "group": "cooling-utilities",
+      "title": "Niveaux des bassins de tours de refroidissement",
+      "description": "Suivez l’eau contenue dans le bassin d’une tour de refroidissement au gré des variations de charge, de l’évaporation et des apports d’eau d’appoint. L’historique de niveau aide l’équipe de maintenance à examiner les problèmes récurrents de remplissage et à programmer les inspections. Choisissez le point de mesure et l’ensemble en contact avec le liquide selon le traitement de l’eau en circulation, les turbulences du bassin et les possibilités d’accès lors de l’entretien habituel.",
+      "measurement": "Hauteur d’eau du bassin de refroidissement et cycles de remplissage / baisse du niveau.",
+      "monitoringPoint": "Un compartiment représentatif du bassin, à l’écart des écoulements de retour les plus forts et de l’aspiration des pompes.",
+      "installation": "Utilisez le guide ou le support de sonde approuvé pour maintenir une position reproductible. Évaluez les produits de traitement, la température, les débris et l’accès pour le nettoyage de l’ensemble fourni.",
+      "projectBrief": "Profondeur du bassin, chimie de l’eau en circulation, température de fonctionnement, accès pour la maintenance et profil de transmission requis.",
+      "image": {
+        "name": "scene-cooling-tower-basins.webp",
+        "alt": "Tour de refroidissement industrielle avec bassin d’eau ouvert, surfaces humides et équipements de refroidissement reconnaissables",
+        "caption": "Niveaux des bassins de tours de refroidissement · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "chilled-water-makeup",
+      "group": "cooling-utilities",
+      "title": "Cuves d’appoint des circuits d’eau glacée",
+      "description": "Surveillez la réserve d’une cuve d’appoint alimentant une installation d’eau glacée. Le suivi de ce stockage aide l’équipe des utilités à examiner les besoins de remplissage et à prévoir une intervention avant d’atteindre le niveau de réserve retenu. Définissez clairement la cuve mesurée et ses conditions de pression, notamment lorsqu’elle se trouve à côté d’un circuit de refroidissement sous pression distinct.",
+      "measurement": "Niveau liquide et fréquence de remplissage de la cuve de stockage d’appoint.",
+      "monitoringPoint": "La cuve d’appoint ou tampon mise à l’atmosphère identifiée, avec son propre repère de niveau.",
+      "installation": "Confirmez la pression de la cuve, le traitement du liquide et une position de sonde accessible. Faites passer le câble à l’écart des pompes et des accès utilisés pour l’entretien des équipements.",
+      "projectBrief": "Type de cuve, profondeur utile, traitement de l’eau, disposition du local, conditions de pression et cycle de remplissage attendu.",
+      "image": {
+        "name": "scene-chilled-water-makeup.webp",
+        "alt": "Installation de production d’eau glacée pour bâtiments et industrie avec cuve d’eau d’appoint mise à l’atmosphère et tuyauteries des utilités bien organisées",
+        "caption": "Cuves d’appoint des circuits d’eau glacée · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "evaporative-cooling-supply",
+      "group": "cooling-utilities",
+      "title": "Cuves d’alimentation du refroidissement évaporatif",
+      "description": "Surveillez la cuve qui alimente les équipements de refroidissement évaporatif des installations de production ou de ventilation. Les tendances du niveau d’eau aident l’équipe à examiner les interruptions d’alimentation, les cycles de remplissage et les variations saisonnières d’exploitation. Adaptez l’étendue configurée à cette cuve locale et définissez le traitement des notifications de niveau bas en coordination avec les commandes existantes des équipements de refroidissement.",
+      "measurement": "Niveau de l’eau d’alimentation et évolution du remplissage pendant le fonctionnement du refroidissement évaporatif.",
+      "monitoringPoint": "La cuve dédiée d’alimentation ou de circulation d’eau desservant l’unité de refroidissement sélectionnée.",
+      "installation": "Choisissez un point d’immersion calme et accessible, à l’écart du jet de retour. Confirmez le traitement de l’eau, la température du liquide et la protection du câble selon la disposition des équipements.",
+      "projectBrief": "Dispositif de refroidissement, dimensions de la cuve, saisons d’exploitation, chimie de l’eau et destinataires requis des notifications.",
+      "image": {
+        "name": "scene-evaporative-cooling-supply.webp",
+        "alt": "Installation industrielle de refroidissement évaporatif avec cuve d’eau d’alimentation accessible et équipements de ventilation",
+        "caption": "Cuves d’alimentation du refroidissement évaporatif · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "boiler-feed-pretreatment",
+      "group": "cooling-utilities",
+      "title": "Stockage d’eau de prétraitement pour l’alimentation des chaudières",
+      "description": "Conservez un relevé de l’eau disponible en amont du traitement d’alimentation des chaudières. Cette application concerne une cuve de stockage identifiée de prétraitement ou d’appoint, où l’évolution du niveau peut faciliter la planification du remplissage et la relève des équipes. Précisez la température réelle de l’eau, les conditions de pression et le régime de nettoyage afin de sélectionner l’ensemble de sonde fourni pour cette fonction de stockage.",
+      "measurement": "Niveau d’eau dans la cuve définie de stockage de prétraitement ou d’appoint.",
+      "monitoringPoint": "Une étape de stockage accessible située en amont des équipements d’alimentation des chaudières ou de production de vapeur, telle que définie par l’usine.",
+      "installation": "Vérifiez la température du liquide et la pression du réservoir retenues par rapport à la configuration fournie. Prévoyez l’accès et le cheminement du câble à l’écart des équipements chauds et des conduites de vapeur.",
+      "projectBrief": "Plan de l’étape de stockage, température normale / maximale, conditions de pression, traitement de l’eau et étendue de niveau requise.",
+      "image": {
+        "name": "scene-boiler-feed-pretreatment.webp",
+        "alt": "Zone de stockage d’eau de prétraitement dans une chaufferie industrielle, avec filtres et cuve d’appoint froide, distincte du ballon de chaudière",
+        "caption": "Stockage d’eau de prétraitement pour l’alimentation des chaudières · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "humidification-supply",
+      "group": "cooling-utilities",
+      "title": "Alimentation en eau de l’humidification industrielle",
+      "description": "Surveillez la réserve d’eau alimentant les équipements d’humidification industrielle d’une zone de production ou de stockage. Les mesures aident le personnel des services généraux à suivre le remplissage et à rapprocher les variations d’alimentation des horaires de fonctionnement du système. Identifiez la cuve d’alimentation, ses exigences de qualité d’eau et l’accès pour l’entretien avant de définir la position de la sonde et le profil de transmission sans fil.",
+      "measurement": "Niveau d’eau dans la cuve d’alimentation de l’humidification et variations pendant les heures de fonctionnement.",
+      "monitoringPoint": "La cuve dédiée d’eau des utilités alimentant le système d’humidification sélectionné.",
+      "installation": "Confirmez l’ensemble en contact avec le liquide, la méthode de nettoyage et la température d’eau attendue. Positionnez le terminal à un endroit offrant à la fois un accès pratique pour la maintenance et une couverture radio adaptée.",
+      "projectBrief": "Type de système d’humidification, profondeur de la cuve, traitement de l’eau, programme de nettoyage et plateforme destinataire.",
+      "image": {
+        "name": "scene-humidification-supply.webp",
+        "alt": "Module industriel d’humidification avec cuve d’alimentation en eau et zone propre des services de l’usine",
+        "caption": "Alimentation en eau de l’humidification industrielle · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "metal-rinse-tanks",
+      "group": "process-water",
+      "title": "Cuves de rinçage de pièces métalliques",
+      "description": "Suivez l’eau disponible à une étape de rinçage de pièces métalliques entre les lots de production. L’évolution du niveau facilite la planification du remplissage et aide les opérateurs à examiner les variations d’utilisation d’un poste à l’autre. Identifiez précisément la chimie du rinçage et la température, y compris les contaminants entraînés depuis le procédé précédent, puis choisissez la sonde et le câble selon ce liquide défini.",
+      "measurement": "Niveau d’eau de rinçage et cycles de remplissage à l’étape sélectionnée de traitement des pièces.",
+      "monitoringPoint": "Une cuve de rinçage définie ou sa réserve tampon d’alimentation en eau, séparée des autres bains de procédé.",
+      "installation": "Prévoyez la position de la sonde en fonction de la manutention des pièces et du nettoyage de la cuve. Confirmez la compatibilité avec le liquide de rinçage réel et maintenez un accès pour l’entretien sans gêner la production.",
+      "projectBrief": "Composition du rinçage, substances entraînées, température, géométrie de la cuve, dégagement par rapport aux pièces mobiles et profondeur utile.",
+      "image": {
+        "name": "scene-metal-rinse-tanks.webp",
+        "alt": "Ligne de rinçage de pièces métalliques avec cuves d’eau de rinçage visibles et équipements industriels de manutention des pièces",
+        "caption": "Cuves de rinçage de pièces métalliques · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "parts-washer-rinse",
+      "group": "process-water",
+      "title": "Cuves d’eau de rinçage des machines de lavage de pièces",
+      "description": "Surveillez la cuve d’eau de rinçage associée à une machine de lavage de pièces. Un historique de niveau horodaté aide les équipes de maintenance et de production à comparer les remplissages aux cycles de fonctionnement et à examiner une consommation inhabituelle. Définissez l’étape de rinçage séparément des détergents ou des autres bains et intégrez les conditions de nettoyage et d’entretien à la configuration proposée du capteur.",
+      "measurement": "Niveau liquide dans la cuve d’eau de rinçage désignée au fil des cycles de lavage.",
+      "monitoringPoint": "Le réservoir de rinçage ou la réserve tampon d’eau propre alimentant la machine de lavage de pièces sélectionnée.",
+      "installation": "Placez la sonde à l’écart des pièces en mouvement et de l’aspiration des pompes. Confirmez la compatibilité avec le liquide, la température et le dispositif d’installation autorisé avec le propriétaire de l’équipement.",
+      "projectBrief": "Disposition de la machine, liquide identifié, durée du cycle, température de fonctionnement, accès et besoins de transmission.",
+      "image": {
+        "name": "scene-parts-washer-rinse.webp",
+        "alt": "Machine industrielle de lavage de pièces avec réservoir d’eau de rinçage accessible et composants métalliques",
+        "caption": "Cuves d’eau de rinçage des machines de lavage de pièces · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "textile-process-buffer",
+      "group": "process-water",
+      "title": "Cuves tampons d’eau de procédé textile",
+      "description": "Surveillez une réserve tampon d’eau de procédé utilisée pour la production textile. L’historique de niveau aide le personnel des utilités à examiner les besoins de remplissage entre les lots et à prévoir une intervention sur le stockage avant d’atteindre un seuil de fonctionnement retenu. Précisez si le point contient de l’eau d’alimentation, de l’eau conditionnée ou un mélange de procédé, car chacun exige sa propre évaluation de compatibilité et de température.",
+      "measurement": "Niveau liquide dans la réserve tampon d’eau de procédé textile spécifiée.",
+      "monitoringPoint": "L’étape de stockage ou de réserve tampon d’eau sélectionnée pour la zone de production textile.",
+      "installation": "Confirmez le liquide et la température à ce point. Placez la sonde à l’écart des jets de remplissage et des équipements mobiles, avec un cheminement protégé du câble et un accès pour les inspections.",
+      "projectBrief": "Identification de l’eau / du mélange, organisation des lots, dimensions de la cuve, température, conditions de nettoyage et notifications souhaitées.",
+      "image": {
+        "name": "scene-textile-process-buffer.webp",
+        "alt": "Zone des utilités d’une usine textile avec cuve tampon d’eau de procédé, tuyauteries et équipements reconnaissables de traitement des tissus",
+        "caption": "Cuves tampons d’eau de procédé textile · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "plating-rinse-water",
+      "group": "process-water",
+      "title": "Stockage d’eau de rinçage pour le traitement de surface",
+      "description": "Donnez à l’équipe de traitement de surface une visibilité sur l’étape sélectionnée de stockage d’eau de rinçage. Les mesures peuvent faciliter la planification du remplissage et l’analyse de l’utilisation de l’eau entre les postes d’exploitation. Précisez la solution de rinçage exacte, les produits chimiques entraînés et la température de service ; un ensemble adapté est sélectionné pour ce point, en tenant compte des exigences de nettoyage et de manutention associées.",
+      "measurement": "Niveau liquide dans la cuve d’eau de rinçage ou le réservoir d’appoint désigné.",
+      "monitoringPoint": "Une étape de rinçage clairement identifiée sur la ligne de traitement de surface.",
+      "installation": "Prévoyez un support de câble approuvé et un dégagement par rapport aux appareils de levage et aux pièces. Confirmez les matériaux en contact avec le liquide et l’adéquation du câble à la composition de rinçage et à la méthode d’entretien spécifiées.",
+      "projectBrief": "Chimie du rinçage, entraînements possibles, température de fonctionnement, profondeur de la cuve, dégagement pour la manutention et procédure de nettoyage.",
+      "image": {
+        "name": "scene-plating-rinse-water.webp",
+        "alt": "Zone industrielle de rinçage d’une ligne de traitement de surface avec cuves, dégagement pour la manutention aérienne et passerelles de service",
+        "caption": "Stockage d’eau de rinçage pour le traitement de surface · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "ceramic-process-water",
+      "group": "process-water",
+      "title": "Cuves d’eau clarifiée des usines de céramique",
+      "description": "Surveillez l’eau clarifiée stockée en vue de sa réutilisation dans la production de céramique. L’évolution du niveau aide l’équipe des utilités à comparer la récupération aux besoins et à organiser le remplissage au seuil de fonctionnement retenu. Décrivez les solides résiduels et leur comportement de décantation afin de prévoir une référence de niveau stable et un accès pour l’inspection de l’ensemble de sonde.",
+      "measurement": "Niveau d’eau clarifiée dans la cuve de réutilisation ou d’alimentation du procédé.",
+      "monitoringPoint": "La zone de stockage de liquide en aval de l’étape de décantation ou de clarification définie.",
+      "installation": "Positionnez la sonde à l’écart des dépôts et du courant d’entrée, avec un support approuvé. Intégrez les solides résiduels, l’abrasion et l’accès pour le nettoyage à l’examen de la configuration.",
+      "projectBrief": "Étape de clarification, caractéristiques des solides résiduels, profondeur de la cuve, température de l’eau, accès et plage de fonctionnement.",
+      "image": {
+        "name": "scene-ceramic-process-water.webp",
+        "alt": "Usine de fabrication de céramique avec cuve de réutilisation d’eau clarifiée et environnement de production de céramique visible",
+        "caption": "Cuves d’eau clarifiée des usines de céramique · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "factory-equalization",
+      "group": "industrial-effluent",
+      "title": "Bassins d’égalisation des effluents d’usine",
+      "description": "Suivez l’accumulation du liquide entrant dans un bassin d’égalisation des effluents avant l’étape de traitement suivante. L’historique de niveau aide l’équipe de traitement à comparer les cycles de collecte et de transfert entre les postes de production. Choisissez l’ensemble selon la composition réelle des eaux usées et les conditions d’entretien, et définissez les besoins de transmission et de notification de niveau haut pour ce bassin précis.",
+      "measurement": "Niveau liquide et tendances d’accumulation / transfert à l’étape d’égalisation.",
+      "monitoringPoint": "Une zone de liquide représentative du bassin d’égalisation, avec un repère de référence documenté.",
+      "installation": "Prévoyez le point de mesure en tenant compte des agitateurs, des turbulences à l’entrée et des dépôts. Confirmez la compatibilité avec le liquide, la protection du câble et la possibilité de retirer la sonde en sécurité pour le nettoyage.",
+      "projectBrief": "Composition de l’effluent, température, géométrie du bassin, agitation, dépôts attendus et réponse requise aux variations de niveau.",
+      "image": {
+        "name": "scene-factory-equalization.webp",
+        "alt": "Bassin industriel d’égalisation des eaux usées avec liquide visible, tuyauteries et passerelle accessible de la station de traitement",
+        "caption": "Bassins d’égalisation des effluents d’usine · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "neutralization-collection",
+      "group": "industrial-effluent",
+      "title": "Cuves de collecte de l’étape de neutralisation",
+      "description": "Surveillez le liquide recueilli à une étape identifiée de traitement par neutralisation. La tendance fournit une référence commune aux opérateurs qui examinent l’accumulation et le transfert vers l’aval. La sonde et le câble requis dépendent du mélange réel, de sa plage de concentration et des conditions de nettoyage ; fournissez donc ces éléments avec l’étendue de niveau et le plan d’installation lors de la demande de configuration.",
+      "measurement": "Hauteur de liquide et tendances de collecte dans la cuve spécifiée de l’étape de neutralisation.",
+      "monitoringPoint": "Le compartiment désigné de collecte ou de stockage dans le dispositif de traitement.",
+      "installation": "Confirmez la compatibilité avec le fluide sur la plage de composition et de température attendue. Prévoyez une installation permettant de retirer la sonde, à l’écart des équipements de mélange et des turbulences aux points de dosage.",
+      "projectBrief": "Identification et concentration du mélange, température, dispositif de mélange, produits de nettoyage, profondeur et éventuelles exigences de classement de zone.",
+      "image": {
+        "name": "scene-neutralization-collection.webp",
+        "alt": "Zone de collecte d’un traitement de neutralisation des eaux usées avec rétention, cuve de liquide et équipements de dosage en arrière-plan",
+        "caption": "Cuves de collecte de l’étape de neutralisation · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "treated-effluent-storage",
+      "group": "industrial-effluent",
+      "title": "Cuves de stockage des effluents traités",
+      "description": "Surveillez les effluents traités stockés avant réutilisation, transfert ou rejet, selon la procédure d’exploitation du site. Les niveaux horodatés aident le personnel à examiner la reconstitution du stockage et à prévoir une intervention en fonction de la plage de fonctionnement retenue. Intégrez les constituants résiduels du liquide, les dépôts attendus et l’accès pour l’entretien à la configuration afin d’adapter le point de mesure à cette étape finale de stockage.",
+      "measurement": "Niveau de liquide traité et variations entre les opérations de stockage, de transfert ou de réutilisation.",
+      "monitoringPoint": "La cuve finale de stockage ou un compartiment défini de stockage des effluents traités.",
+      "installation": "Choisissez un point d’immersion stable, à l’écart des perturbations aux entrées et sorties. Confirmez l’adéquation au liquide et prévoyez un cheminement de câble et un retrait de sonde accessibles pour l’entretien courant.",
+      "projectBrief": "Étape de traitement, composition du liquide, dimensions de la cuve, procédure de rejet / réutilisation et intervalles de transmission requis.",
+      "image": {
+        "name": "scene-treated-effluent-storage.webp",
+        "alt": "Cuve industrielle de stockage d’effluents traités avec surface d’eau claire et tuyauteries de rejet en aval bien organisées",
+        "caption": "Cuves de stockage des effluents traités · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "sludge-supernatant",
+      "group": "industrial-effluent",
+      "title": "Collecte du surnageant de traitement des boues",
+      "description": "Suivez le liquide séparé recueilli après un procédé de traitement des boues. Cette surveillance porte sur le niveau d’eau surnageante dans sa cuve de réception et fournit aux opérateurs une référence pour planifier le retour ou le transfert. Identifiez les solides résiduels et le dispositif de collecte afin de choisir la position de la sonde et la procédure d’inspection selon le liquide mesuré.",
+      "measurement": "Niveau du liquide séparé dans la cuve de collecte du surnageant.",
+      "monitoringPoint": "Le compartiment identifié de réception du liquide en aval de la séparation des boues.",
+      "installation": "Évaluez les solides résiduels et l’encrassement avant de choisir l’ensemble. Maintenez la sonde au-dessus des dépôts accumulés avec un support approuvé et un accès pratique pour les inspections.",
+      "projectBrief": "Procédé de séparation, caractéristiques des solides résiduels, profondeur de la cuve de réception, cycle de retour, accès pour le nettoyage et température du liquide.",
+      "image": {
+        "name": "scene-sludge-supernatant.webp",
+        "alt": "Équipement de séparation des boues d’eaux usées à côté d’une cuve de collecte du surnageant, avec plateforme de service accessible",
+        "caption": "Collecte du surnageant de traitement des boues · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "healthcare-wastewater",
+      "group": "industrial-effluent",
+      "title": "Collecte des eaux usées des établissements de santé",
+      "description": "Surveillez les eaux usées recueillies avant l’étape de traitement spécifiée d’un établissement de santé. L’historique de niveau peut aider le personnel des services généraux à planifier les inspections et à examiner la collecte par rapport au transfert au cours de la journée. Confirmez avec l’équipe du site la composition exacte des eaux usées ainsi que les pratiques de désinfection et de nettoyage, puis choisissez une configuration et une procédure d’installation adaptées à ce point de collecte.",
+      "measurement": "Niveau des eaux usées collectées et tendances de transfert dans la cuve de réception désignée.",
+      "monitoringPoint": "L’étape désignée de stockage ou de collecte des eaux usées dans le système de traitement de l’établissement.",
+      "installation": "Prévoyez un cheminement protégé du câble et un retrait de la sonde selon la procédure d’accès approuvée de l’établissement. Confirmez la compatibilité avec le liquide et le nettoyage, ainsi que les éventuels agréments d’installation requis.",
+      "projectBrief": "Composition des eaux usées, désinfectants, température, profondeur de la cuve, conditions d’accès au site et procédure de notification.",
+      "image": {
+        "name": "scene-healthcare-wastewater.webp",
+        "alt": "Installation de collecte des eaux usées des utilités d’un établissement de santé avec cuves confinées et zone propre d’accès pour l’entretien",
+        "caption": "Collecte des eaux usées des établissements de santé · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "plant-room-sumps",
+      "group": "drainage-pumps",
+      "title": "Puisards de drainage des locaux techniques",
+      "description": "Enregistrez les hausses et baisses de niveau d’eau dans les puisards des locaux techniques qui recueillent les infiltrations, les évacuations de condensats ou les fuites des utilités. Un point de mesure documenté aide l’équipe de maintenance à comparer la collecte habituelle à une accumulation anormale et à prévoir une inspection avant que la fosse n’atteigne sa limite de fonctionnement. Examinez ensemble les apports, le dispositif de drainage et les délais d’alerte, puis choisissez la position de la sonde et le profil de transmission selon le puisard réel.",
+      "measurement": "Niveau de collecte et baisse du niveau par rapport aux repères de fonctionnement du puisard.",
+      "monitoringPoint": "Une zone accessible et représentative de la fosse, à l’écart de l’entrée principale et de l’aspiration de la pompe.",
+      "installation": "Prévoyez un support stable de la sonde, une protection du câble et un accès pour les inspections. Installez le terminal sans fil au-dessus du niveau d’eau attendu et vérifiez la réception dans le local technique.",
+      "projectBrief": "Coupe du puisard, origines du liquide, niveaux de fonctionnement, disposition des pompes, température, accès pour inspection, couverture et délai d’alerte requis.",
+      "image": {
+        "name": "scene-plant-room-sumps.webp",
+        "alt": "Local technique industriel avec puisard de drainage encastré et tuyauteries de service à côté d’un passage de maintenance sec",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "washdown-collection",
+      "group": "drainage-pumps",
+      "title": "Collecte des eaux de lavage d’usine",
+      "description": "Surveillez les niveaux de collecte lorsque les eaux de lavage de l’usine passent des évacuations au sol à une fosse ou une cuve de stockage. La comparaison de la tendance avec les programmes de nettoyage aide l’équipe à examiner la capacité de collecte et le moment de l’évacuation ou du transfert. Précisez les détergents, les résidus de procédé et les matières solides présents afin de choisir une sonde et un câble adaptés au liquide. Définissez des seuils d’alerte pratiques selon le volume utile et les habitudes d’exploitation de la cuve.",
+      "measurement": "Montée du niveau pendant le lavage et baisse après transfert ou évacuation.",
+      "monitoringPoint": "Un compartiment représentatif de collecte en aval de l’arrivée des évacuations, avec une référence de niveau définie.",
+      "installation": "Acheminez le câble à l’écart des équipements de nettoyage et prévoyez un accès pour l’inspection des résidus. Examinez la position de la sonde, sa protection et l’emplacement du terminal sans fil selon la disposition de la zone de nettoyage.",
+      "projectBrief": "Programme de nettoyage, caractéristiques des détergents et résidus, matières solides, profondeur de collecte, dispositif de transfert, température et procédure de notification.",
+      "image": {
+        "name": "scene-washdown-collection.webp",
+        "alt": "Zone de nettoyage d’usine avec évacuations au sol menant à une chambre encastrée de collecte des eaux de lavage",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "factory-rainwater-lift",
+      "group": "drainage-pumps",
+      "title": "Stations de relevage des eaux pluviales d’usine",
+      "description": "Suivez la collecte et la baisse du niveau d’eau dans une station de relevage des eaux pluviales d’usine pendant et après les pluies. L’historique donne aux exploitants du site des éléments pour les inspections du drainage, l’analyse du fonctionnement des pompes et l’examen d’accumulations inhabituelles. Adaptez le profil de transmission à la vitesse de variation attendue, puis définissez les seuils et les destinataires avec l’équipe de drainage. Intégrez les sédiments, les débris, les niveaux saisonniers et le dispositif distinct de commande des pompes au descriptif du projet.",
+      "measurement": "Niveau dans la bâche de pompage pendant les apports pluviaux et le drainage qui suit.",
+      "monitoringPoint": "Un emplacement stable dans la bâche de pompage, à l’écart du jet d’entrée le plus fort et de la zone d’aspiration des pompes.",
+      "installation": "Prévoyez le support de sonde et un accès pour l’inspection des débris. Maintenez le terminal accessible au-dessus du niveau d’eau attendu et confirmez la couverture à la station de relevage.",
+      "projectBrief": "Plan du bassin versant et de la bâche de pompage, repères de niveau, variations des apports, débris, contrôleur des pompes, couverture, transmissions et exigences d’intervention.",
+      "image": {
+        "name": "scene-factory-rainwater-lift.webp",
+        "alt": "Station extérieure de relevage des eaux pluviales d’usine avec accès à la bâche de pompage, canaux de drainage et bâtiments industriels",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/en/products/product-catalog/signal-conditioning/controllers/vegamet-141"
+      ]
+    },
+    {
+      "id": "underground-lift-pits",
+      "group": "drainage-pumps",
+      "title": "Surveillance des puisards de relevage en sous-sol",
+      "description": "Suivez l’accumulation d’eau dans un puisard de relevage en sous-sol desservant des parkings industriels, des accès de service ou des zones d’utilités enterrées. Une référence de niveau constante aide la maintenance à comparer les infiltrations habituelles à une évolution du drainage entre les visites. Prévoyez les alertes selon la profondeur utile de la fosse et la procédure d’inspection de l’équipe. Examinez l’accès, les sédiments, le cheminement du câble et la réception radio avant de choisir l’installation, l’automatisation des pompes étant définie au moyen du contrôleur du site.",
+      "measurement": "Niveau d’eau accumulée et évolution entre les cycles de drainage.",
+      "monitoringPoint": "La fosse de collecte accessible, à un emplacement éloigné des équipements mobiles et des fortes aspirations.",
+      "installation": "Protégez la sonde et le câble contre les opérations d’entretien et consignez la profondeur de référence. Évaluez un emplacement accessible pour le terminal, avec une liaison sans fil vérifiée depuis le site en sous-sol.",
+      "projectBrief": "Plan de la fosse, niveau maximal, sources d’infiltration, accès pour entretien, système de pompage, emplacement du terminal et délai de notification.",
+      "image": {
+        "name": "scene-underground-lift-pits.webp",
+        "alt": "Zone industrielle de service en sous-sol avec puisard de relevage encastré, tuyauteries de drainage et passage d’inspection dégagé",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "containment-collection",
+      "group": "drainage-pumps",
+      "title": "Collecte dans les dispositifs de rétention industriels",
+      "description": "Fournissez à l’équipe d’exploitation un historique de niveau d’une cuve de collecte de rétention dont le liquide et les conditions sont connus. Examinez l’accumulation au regard des relevés d’inspection et d’évacuation pour accompagner le plan de gestion du site. Indiquez la composition du liquide, la méthode de nettoyage et les changements possibles du contenu afin d’évaluer une sonde et un câble adaptés. Choisissez la plage et le profil d’alerte selon le dispositif de collecte.",
+      "measurement": "Niveau du liquide collecté par rapport aux repères définis de gestion et d’inspection de la cuve.",
+      "monitoringPoint": "Un compartiment de collecte désigné, avec des conditions de liquide connues et un accès pour l’évaluation.",
+      "installation": "Définissez la configuration des parties en contact avec le liquide, un support de sonde stable et le cheminement du câble pour le contenu spécifié. Intégrez le classement du site et l’accès pour l’entretien à l’examen de l’installation.",
+      "projectBrief": "Liquide collecté et concentration, variations possibles, profondeur de la cuve, température, pression, nettoyage, exigences du site et procédure de gestion.",
+      "image": {
+        "name": "scene-containment-collection.webp",
+        "alt": "Zone industrielle de rétention avec cuve de collecte dédiée, murets de rétention et passage d’inspection sec",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025",
+        "https://www.hitelecom.com/product/liquid-level-sensor"
+      ]
+    },
+    {
+      "id": "food-beverage-utility-water",
+      "group": "industry-water",
+      "title": "Stockage d’eau des utilités agroalimentaires",
+      "description": "Surveillez le niveau des réserves d’eau de service utilisées par les utilités d’un site de production alimentaire ou de boissons. La tendance apporte des éléments pour planifier le remplissage et effectuer les contrôles de maintenance entre les postes, notamment lorsque plusieurs cuves alimentent des services distincts de l’usine. Précisez la fonction de l’utilité et le statut de l’eau au regard des exigences de contact dans le descriptif du projet afin d’examiner la documentation requise et la configuration des parties en contact avec le liquide. Définissez les alertes selon la réserve d’exploitation du site.",
+      "measurement": "Niveau d’eau de service stockée au fil des cycles de consommation des utilités et de remplissage.",
+      "monitoringPoint": "Une cuve d’eau des utilités clairement identifiée, avec fonction, repères de niveau et conditions du liquide documentés.",
+      "installation": "Prévoyez la position de la sonde et le cheminement du câble selon l’accès à la cuve et le nettoyage. Installez le terminal de communication de manière à permettre son inspection et confirmez les exigences de contact avec l’eau pour l’application réelle.",
+      "projectBrief": "Fonction de l’utilité, caractéristiques de l’eau et exigences de contact, profondeur de stockage, température, méthode de nettoyage, réseau et profil de transmission.",
+      "image": {
+        "name": "scene-food-beverage-utility-water.webp",
+        "alt": "Zone des utilités d’une usine agroalimentaire avec cuves de stockage d’eau et tuyauteries de service clairement organisées",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://bdih-download.endress.com/file/16325362cdf9444b2ae1b628d4dad5f9/TI00431PEN_1926-00.pdf"
+      ]
+    },
+    {
+      "id": "pharmaceutical-utility-water",
+      "group": "industry-water",
+      "title": "Systèmes d’eau des utilités pharmaceutiques",
+      "description": "Suivez les niveaux d’eau de service dans les utilités d’un site pharmaceutique, en identifiant clairement le système d’eau et l’objectif de surveillance. Un historique défini facilite les contrôles courants des réserves et la coordination entre les opérateurs des utilités et la maintenance. Précisez la fonction de la cuve, la désignation de l’eau, la température et les pratiques de nettoyage afin d’examiner la configuration et les justificatifs requis. Alignez les seuils de niveau, la responsabilité des données et le calendrier de transmission sur la procédure documentée du site.",
+      "measurement": "Niveau de réserve d’eau des utilités et tendances de remplissage dans une cuve de service désignée de l’usine.",
+      "monitoringPoint": "Un point de stockage d’eau de service dont l’utilisation et les conditions de fonctionnement sont définies par l’établissement.",
+      "installation": "Coordonnez l’emplacement de la sonde et du terminal avec l’accès aux utilités et le nettoyage de la cuve. Précisez toute exigence de contact, de documentation ou de site pour la configuration exacte fournie.",
+      "projectBrief": "Désignation du système d’eau, fonction de la cuve, profondeur, température, pression, nettoyage, exigences documentaires, plateforme et procédures des utilités.",
+      "image": {
+        "name": "scene-pharmaceutical-utility-water.webp",
+        "alt": "Local des utilités d’un établissement pharmaceutique avec cuves d’eau de service et tuyauteries accessibles pour la maintenance",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "paper-water-recovery",
+      "group": "industry-water",
+      "title": "Cuves de récupération d’eau des papeteries",
+      "description": "Suivez les niveaux liquides dans les cuves de récupération d’eau d’une papeterie pour examiner les variations du stockage selon les programmes de production et de transfert. Utilisez cet historique avec les journaux de procédé pour identifier les cuves nécessitant une inspection ou une attention particulière au remplissage. Caractérisez le flux d’eau surveillé, notamment les fibres, les matières en suspension, la chimie et la température, avant de choisir le montage de la sonde. Une position de mesure accessible pour l’entretien et une référence de niveau claire facilitent les comparaisons entre les périodes d’exploitation.",
+      "measurement": "Niveau d’eau de récupération stockée pendant la collecte des apports et le transfert vers la réutilisation.",
+      "monitoringPoint": "Un compartiment d’eau convenu, avec conditions de fibres et de sédiments documentées pour la sélection de la sonde.",
+      "installation": "Prévoyez un accès pour l’inspection de la surface de mesure et acheminez les câbles à l’écart des équipements de transfert. Examinez les turbulences, l’encrassement et le support de sonde pour le compartiment choisi.",
+      "projectBrief": "Flux récupéré, teneur en fibres et matières solides, chimie, température, géométrie de la cuve, transferts, nettoyage et délais de surveillance requis.",
+      "image": {
+        "name": "scene-paper-water-recovery.webp",
+        "alt": "Cour des utilités d’une papeterie avec cuves de récupération d’eau, tuyauteries de transfert et passerelle de service",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "concrete-plant-recycled-water",
+      "group": "industry-water",
+      "title": "Collecte des eaux recyclées des centrales à béton",
+      "description": "Surveillez les niveaux d’eau dans les compartiments de collecte et d’eau clarifiée du dispositif de recyclage d’une centrale à béton. La comparaison de la tendance avec les programmes de lavage et de réutilisation aide l’équipe à évaluer l’eau disponible et à planifier les inspections. Choisissez un compartiment de mesure après avoir caractérisé les sédiments, l’alcalinité et les solides résiduels, puis définissez l’accès à la sonde et son nettoyage. L’installation doit représenter l’étape d’eau surveillée et conserver une référence constante pendant les opérations habituelles de la centrale.",
+      "measurement": "Niveau de collecte ou d’eau clarifiée à l’étape de recyclage sélectionnée.",
+      "monitoringPoint": "Un compartiment d’eau désigné dont le comportement de décantation et les solides résiduels ont été évalués pour l’installation.",
+      "installation": "Positionnez la sonde avec un accès pour contrôler les sédiments et l’encrassement. Protégez le câble contre les chargeuses et les opérations de lavage, et vérifiez la réception du terminal dans la zone d’eau.",
+      "projectBrief": "Plan de l’étape de recyclage, alcalinité, solides et comportement de décantation, niveau maximal, nettoyage, mouvements des équipements, plateforme et transmissions.",
+      "image": {
+        "name": "scene-concrete-plant-recycled-water.webp",
+        "alt": "Centrale à béton avec bassin de collecte des eaux recyclées et compartiment adjacent d’eau clarifiée",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "recycling-wash-water",
+      "group": "industry-water",
+      "title": "Cuves d’eau de lavage des usines de recyclage",
+      "description": "Enregistrez les niveaux de stockage et de collecte de l’eau de lavage d’une usine de recyclage, à mesure que les cycles de lavage des matériaux et de transfert évoluent pendant le poste. La tendance facilite l’examen du moment des remplissages et de la capacité de collecte au regard des relevés de production. Précisez les matériaux lavés, les détergents et les contaminants en suspension afin de caractériser le liquide et les conditions d’encrassement. Choisissez une position de sonde facile à entretenir et un profil de transmission selon le rôle de la cuve dans le dispositif de lavage.",
+      "measurement": "Niveau de réserve ou de collecte d’eau de lavage pendant le lavage, la récupération et le remplissage.",
+      "monitoringPoint": "Un compartiment de cuve désigné, avec composition de l’eau de lavage et matières solides caractérisées.",
+      "installation": "Prévoyez un support de sonde et un accès pour les inspections autour des tuyauteries de transfert. Protégez le câble contre les matériaux en mouvement et intégrez les pratiques de nettoyage à l’examen de la configuration.",
+      "projectBrief": "Flux de matériaux, détergents, contaminants, matières solides, température, profondeur de la cuve, cycles de lavage, nettoyage et délais de données attendus.",
+      "image": {
+        "name": "scene-recycling-wash-water.webp",
+        "alt": "Zone de lavage d’un site de recyclage avec cuves de stockage d’eau, équipements de traitement des matériaux et voies de service accessibles",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "mine-dewatering",
+      "group": "resources-dewatering",
+      "title": "Collecte des eaux d’exhaure minière",
+      "description": "Suivez le niveau d’eau à un point de collecte des eaux d’exhaure d’une mine afin de fournir aux opérateurs une tendance documentée entre les inspections sur site. Comparez les périodes d’apport et de baisse du niveau aux relevés de pompage et à l’évolution des zones de travail. Définissez le liquide, les sédiments, le niveau maximal et les conditions d’accès avant de choisir la position de mesure. Intégrez le classement du site, les exigences relatives aux équipements et la chaîne de communication au projet pour adapter la configuration proposée à l’emplacement de collecte désigné.",
+      "measurement": "Niveau des eaux collectées par rapport à la référence et aux repères de fonctionnement définis du site minier.",
+      "monitoringPoint": "Un puisard de collecte ou compartiment d’eau approuvé, avec conditions de sédiments et d’apport consignées.",
+      "installation": "Prévoyez avec l’équipe du site une position de sonde accessible pour l’entretien et un cheminement protégé du câble. Confirmez l’emplacement du terminal, la couverture et toutes les exigences relatives aux équipements propres à cet emplacement.",
+      "projectBrief": "Plan de la collecte, composition de l’eau, sédiments, profondeur de référence, classement du site, accès, contrôleur des pompes et besoins de transmission.",
+      "image": {
+        "name": "scene-mine-dewatering.webp",
+        "alt": "Zone de collecte des eaux d’exhaure d’une mine avec puisard, conduites de drainage et voie de maintenance industrielle accessible",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "quarry-settling-water",
+      "group": "resources-dewatering",
+      "title": "Bassins de décantation des eaux de carrière",
+      "description": "Surveillez les variations du niveau d’eau dans un bassin de décantation de carrière lorsque les eaux de drainage arrivent et que l’eau est transférée vers la réutilisation ou le traitement. Une référence définie facilite les comparaisons entre épisodes pluvieux et périodes de production. Choisissez la zone d’eau surveillée après examen de l’épaisseur des sédiments, des matières en suspension et de l’accès pour les inspections. Le positionnement et les dispositions d’entretien doivent tenir compte de l’évolution de la décantation dans le bassin, afin que l’historique reste utile à l’analyse de la gestion de l’eau par l’exploitant.",
+      "measurement": "Niveau d’eau par rapport à une référence identifiée du bassin pendant les périodes de collecte et de transfert.",
+      "monitoringPoint": "Une zone d’eau stable et accessible, choisie selon le profil des sédiments et le dispositif de transfert.",
+      "installation": "Prévoyez un support de sonde et un cheminement de câble protégés, à l’écart des travaux de terrassement. Incluez une méthode d’inspection des variations de sédiments et examinez l’emplacement du terminal en bord de bassin.",
+      "projectBrief": "Coupe du bassin, profil des sédiments, composition de l’eau, plage de profondeur, accès des équipements, programme de transfert, couverture et transmissions.",
+      "image": {
+        "name": "scene-quarry-settling-water.webp",
+        "alt": "Bassin de décantation d’eau de carrière avec compartiments d’eau définis, conduite de transfert et berge de service sèche",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "construction-dewatering-wells",
+      "group": "resources-dewatering",
+      "title": "Puits de rabattement de nappe sur chantier",
+      "description": "Suivez le niveau d’eau dans un puits de rabattement de nappe sur chantier par rapport à un repère documenté du site et au programme de pompage. L’historique donne à l’équipe du projet des éléments pour les inspections et le suivi des variations pendant les travaux d’excavation. Précisez le diamètre et la profondeur du puits, la plage de niveau attendue et les conditions de sédiments afin d’examiner le montage de la sonde et du câble. Identifiez chaque puits et comparez les mesures aux contrôles de référence du site et à la phase actuelle du chantier.",
+      "measurement": "Cote ou profondeur du niveau d’eau par rapport au repère du puits convenu.",
+      "monitoringPoint": "Un puits identifié avec référence de tubage, position de sonde et dispositif de pompage consignés.",
+      "installation": "Maintenez la sonde et le câble à l’écart des équipements de pompage et protégez le cheminement à la tête du puits. Consignez la référence installée et prévoyez un accès pour les contrôles de niveau.",
+      "projectBrief": "Diamètre et profondeur du puits, repère, plage de niveau, disposition du pompage, sédiments, accès chantier, identifiants des points et programme de transmission.",
+      "image": {
+        "name": "scene-construction-dewatering-wells.webp",
+        "alt": "Excavation de chantier avec têtes de puits de rabattement de nappe, flexibles protégés et zone d’inspection balisée",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    },
+    {
+      "id": "tunnel-drainage-sumps",
+      "group": "resources-dewatering",
+      "title": "Puisards de drainage des tunnels",
+      "description": "Suivez les niveaux de collecte dans les puisards de drainage des tunnels qui recueillent les infiltrations et l’eau du canal de drainage. L’examen de la tendance avec les relevés de pompage et de maintenance aide l’équipe à identifier les variations justifiant un contrôle sur site. Choisissez le point de mesure selon la géométrie du puisard, les mouvements à l’entrée et les matières solides, puis prévoyez un cheminement protégé du câble et un montage accessible du terminal. Vérifiez la chaîne de transmission à l’emplacement souterrain réel lors de la mise en service.",
+      "measurement": "Niveau de collecte des eaux de drainage et baisse du niveau entre les périodes de pompage.",
+      "monitoringPoint": "Un compartiment documenté du puisard, à l’écart des apports les plus forts et accessible selon le plan de maintenance du site.",
+      "installation": "Coordonnez le support de la sonde, la protection du câble et l’emplacement du terminal avec les services du tunnel. Confirmez les conditions d’accès, la réception radio et l’éventuel chemin par passerelle pour le déploiement retenu.",
+      "projectBrief": "Coupe du tunnel et du puisard, eau et matières solides, niveau de référence, restrictions d’accès, exigences du site, relevés de pompage et chaîne de communication.",
+      "image": {
+        "name": "scene-tunnel-drainage-sumps.webp",
+        "alt": "Tunnel industriel de service avec canaux de drainage menant à un puisard à côté d’une passerelle de maintenance accessible",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "industrial-groundwater-wells",
+      "group": "resources-dewatering",
+      "title": "Puits de surveillance des eaux souterraines industrielles",
+      "description": "Constituez un historique cohérent de niveau d’eau à partir des puits d’eaux souterraines intégrés au plan de surveillance d’un site industriel. Identifiez chaque point et son repère afin de comparer les variations saisonnières et les périodes de rabattement aux relevés de pompage et du site. Précisez la profondeur du puits, les conditions du liquide et la tolérance requise, puis sélectionnez ensemble la position de la sonde et la longueur du câble. Des contrôles périodiques de référence et des détails d’installation documentés aident l’équipe à interpréter la série chronologique obtenue.",
+      "measurement": "Niveau des eaux souterraines par rapport au repère d’un puits identifié pendant la période de surveillance.",
+      "monitoringPoint": "Un puits désigné dont la référence, la profondeur et les conditions d’accès sont connues.",
+      "installation": "Protégez le câble à la tête du puits et maintenez une position constante de la sonde. Confirmez la plage retenue, l’adéquation au liquide, le montage du terminal et la méthode de contrôle de référence.",
+      "projectBrief": "Registre des puits, diamètre, profondeur, repère, chimie de l’eau, température, contexte de pompage, précision requise, couverture et transmissions.",
+      "image": {
+        "name": "scene-industrial-groundwater-wells.webp",
+        "alt": "Puits de surveillance des eaux souterraines d’un site industriel avec tête protégée et accès de service adjacent",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    },
+    {
+      "id": "raw-water-reservoirs",
+      "group": "waterways-supply",
+      "title": "Réservoirs industriels d’eau brute",
+      "description": "Suivez les niveaux de réserve d’un réservoir industriel d’eau brute au fil des variations d’apports, de demande de l’usine et de conditions météorologiques. L’historique facilite la planification du remplissage et l’examen du stockage utile au regard du programme d’alimentation en eau du site. Définissez la référence de niveau, la plage attendue et les conditions d’entrée avant de choisir l’emplacement de la sonde. Intégrez les sédiments saisonniers, la composition de l’eau et l’accès pour la maintenance afin d’adapter le dispositif de mesure et le profil de transmission à la fonction du réservoir.",
+      "measurement": "Niveau de réserve d’eau brute pendant les périodes d’apport et de soutirage par l’usine.",
+      "monitoringPoint": "Un emplacement représentatif du réservoir avec repère défini, à l’écart des fortes turbulences d’entrée ou de soutirage.",
+      "installation": "Prévoyez un support stable de la sonde et un cheminement de câble adapté aux variations de niveau. Installez le terminal à un emplacement accessible au-dessus de la ligne d’eau attendue et vérifiez la couverture.",
+      "projectBrief": "Coupe et repère du réservoir, plage de niveau, conditions de l’eau, positions des entrées et sorties, sédiments, accès, plateforme et transmissions.",
+      "image": {
+        "name": "scene-raw-water-reservoirs.webp",
+        "alt": "Réservoir industriel d’eau brute avec ouvrage de prise d’eau, chemin de service et utilités d’usine au loin",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    },
+    {
+      "id": "river-intake-stage",
+      "group": "waterways-supply",
+      "title": "Niveaux d’eau aux prises d’eau en rivière",
+      "description": "Surveillez le niveau d’eau d’une rivière à proximité d’une prise d’eau industrielle pour compléter l’évaluation de la disponibilité de la ressource et le plan d’inspection de l’exploitant. Un repère de mesure documenté permet à l’équipe de comparer les variations de hauteur d’eau au fonctionnement de la prise et aux observations locales. Choisissez un emplacement protégé après examen des courants, des débris, des sédiments et des niveaux saisonniers. Définissez la plage, le montage et le profil de transmission selon l’objectif de mesure de niveau, toute évaluation de débit étant prévue dans la conception globale de gestion de l’eau.",
+      "measurement": "Hauteur d’eau de la rivière par rapport au repère convenu de surveillance de la prise d’eau.",
+      "monitoringPoint": "Un emplacement désigné en rive ou sur l’ouvrage de prise d’eau, après examen des courants et des débris.",
+      "installation": "Prévoyez un support stable et un cheminement protégé du câble adaptés aux variations saisonnières de l’eau. Maintenez le terminal accessible et vérifiez la liaison sans fil depuis la prise d’eau.",
+      "projectBrief": "Plan de la prise d’eau, repère de hauteur d’eau, plage saisonnière, courants et débris, sédiments, accès au site, précision requise et transmissions.",
+      "image": {
+        "name": "scene-river-intake-stage.webp",
+        "alt": "Rivière à côté d’un ouvrage industriel de prise d’eau avec plateforme d’inspection et ligne d’eau visible",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    },
+    {
+      "id": "irrigation-canal-level",
+      "group": "waterways-supply",
+      "title": "Niveaux des canaux d’irrigation et d’alimentation",
+      "description": "Enregistrez les niveaux d’eau à des points sélectionnés d’un canal d’irrigation ou d’alimentation du site afin d’aider l’équipe à examiner les programmes de distribution et l’évolution des conditions. Consignez le repère et la position de chaque point pour permettre des comparaisons pertinentes. Examinez la vitesse d’écoulement, les débris, les sédiments et l’accès lors du choix du support de sonde. La tendance de niveau peut être rapprochée des réglages des vannes et des observations de terrain, tout calcul de débit étant défini dans une étude hydraulique distincte du site.",
+      "measurement": "Niveau d’eau du canal à des emplacements identifiés, par rapport à leurs repères consignés.",
+      "monitoringPoint": "Une section représentative du canal, choisie selon le dispositif de distribution et les conditions locales d’écoulement.",
+      "installation": "Prévoyez un support de sonde et un cheminement de câble protégés, à l’écart des interventions sur les vannes et des débris. Intégrez les variations saisonnières de niveau, l’accès pour inspection et la réception du terminal au déploiement.",
+      "projectBrief": "Section et repère du canal, plage de niveau, fonctionnement des vannes, vitesse d’écoulement, débris et sédiments, accès, couverture et transmissions.",
+      "image": {
+        "name": "scene-irrigation-canal-level.webp",
+        "alt": "Canal d’irrigation et d’alimentation revêtu de béton avec ouvrage de vannage et chemin d’inspection sec",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://www.vega.com/api/sitecore/DocumentDownload/Handler?documentContainerId=4336&documentGroupId=35401&fileExtension=pdf&languageId=2&softwareVersion=&version=23-04-2025"
+      ]
+    },
+    {
+      "id": "remote-supply-wells",
+      "group": "waterways-supply",
+      "title": "Puits isolés d’alimentation en eau de service",
+      "description": "Suivez les niveaux d’eau d’un puits isolé utilisé pour l’alimentation en eau de service d’un site et fournissez aux opérateurs un historique entre les visites. Comparez le rabattement et la remontée du niveau au programme de pompage et aux profils de consommation. Choisissez la plage de la sonde, la longueur du câble et le point de référence selon la construction du puits, puis vérifiez la couverture au terminal. Convenez de la fréquence de transmission et de l’estimation d’autonomie selon l’objectif de surveillance du site et les conditions réelles d’exploitation.",
+      "measurement": "Niveau d’eau du puits pendant les périodes de soutirage d’eau de service et de remontée.",
+      "monitoringPoint": "Un puits d’alimentation identifié dont la construction, la position du pompage et le repère de référence sont consignés.",
+      "installation": "Protégez le câble de sonde autour de la pompe et de la tête de puits, avec un accès pour les contrôles. Positionnez le terminal pour la réception et définissez l’alimentation et le profil de transmission.",
+      "projectBrief": "Profondeur et diamètre du puits, repère, disposition de la pompe, conditions de l’eau, plage de niveau, couverture, fréquence des visites et besoins de transmission.",
+      "image": {
+        "name": "scene-remote-supply-wells.webp",
+        "alt": "Installation de puits isolé d’eau de service avec tête protégée, conduite de pompage et accès dégagé au site",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    },
+    {
+      "id": "stormwater-retention",
+      "group": "waterways-supply",
+      "title": "Bassins industriels de rétention des eaux pluviales",
+      "description": "Suivez la montée et la baisse du niveau d’eau dans un bassin industriel de rétention des eaux pluviales pendant et après les précipitations. L’examen de l’historique avec les données de pluie et les inspections de la sortie aide l’équipe du site à comprendre l’évolution des conditions de stockage. Définissez un repère et examinez la plage saisonnière, les sédiments et les débris avant de choisir le point de mesure. Si le volume utile est nécessaire, intégrez la géométrie du bassin au calcul sur la plateforme et définissez la procédure d’alerte du projet.",
+      "measurement": "Niveau du bassin de rétention pendant la collecte des pluies et la vidange qui suit.",
+      "monitoringPoint": "Un emplacement documenté du bassin représentatif de l’eau stockée, à l’écart des fortes turbulences à l’entrée.",
+      "installation": "Utilisez un support de sonde stable et un cheminement protégé du câble avec un accès pour les inspections. Confirmez l’emplacement du terminal au-dessus de la ligne d’eau attendue et la liaison sans fil du site.",
+      "projectBrief": "Coupe et repère du bassin, niveau maximal, sédiments, disposition des entrées et sorties, conversion en volume, couverture, transmissions et destinataires des alertes.",
+      "image": {
+        "name": "scene-stormwater-retention.webp",
+        "alt": "Bassin industriel de rétention des eaux pluviales avec ouvrage de sortie défini, berge végétalisée et chemin de service accessible",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      },
+      "sources": [
+        "https://www.hitelecom.com/product/liquid-level-sensor",
+        "https://microsites.wika.com/ms_hl_knowledge_how_to_do_en_co.WIKA"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "factory-water",
+      "title": "Stockage d’eau en usine",
+      "jumpLabel": "Stockage d’eau",
+      "intro": "Suivez l’eau stockée entre l’alimentation entrante et la consommation industrielle. Définissez chaque point de surveillance selon la profondeur utile, le dispositif de remplissage et le niveau de réserve choisi par l’équipe.",
+      "scenes": [
+        "raw-water-buffer",
+        "process-water-day-tanks",
+        "treated-service-water",
+        "gravity-service-tanks",
+        "emergency-water-reserves"
+      ],
+      "image": {
+        "name": "scene-raw-water-buffer.webp",
+        "alt": "Bassin de stockage d’eau brute en usine avec eau visible, tuyauteries et installation industrielle en arrière-plan",
+        "caption": "Cuves tampons d’eau brute en usine · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "cooling-utilities",
+      "title": "Refroidissement et utilités de l’usine",
+      "jumpLabel": "Refroidissement et utilités",
+      "intro": "Gardez une visibilité sur le stockage d’eau des utilités malgré les variations de charge et les saisons. Identifiez la cuve réelle, le traitement du liquide et la température avant de choisir la sonde, l’étendue et le profil de transmission.",
+      "scenes": [
+        "cooling-tower-basins",
+        "chilled-water-makeup",
+        "evaporative-cooling-supply",
+        "boiler-feed-pretreatment",
+        "humidification-supply"
+      ],
+      "image": {
+        "name": "scene-cooling-tower-basins.webp",
+        "alt": "Tour de refroidissement industrielle avec bassin d’eau ouvert, surfaces humides et équipements de refroidissement reconnaissables",
+        "caption": "Niveaux des bassins de tours de refroidissement · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "process-water",
+      "title": "Eau des procédés de fabrication",
+      "jumpLabel": "Eau de procédé",
+      "intro": "Intégrez les niveaux d’eau de procédé à la relève des équipes et à la planification du remplissage. Précisez le liquide exact et les conditions de manipulation à chaque étape pour adapter la configuration à la fonction de production retenue.",
+      "scenes": [
+        "metal-rinse-tanks",
+        "parts-washer-rinse",
+        "textile-process-buffer",
+        "plating-rinse-water",
+        "ceramic-process-water"
+      ],
+      "image": {
+        "name": "scene-metal-rinse-tanks.webp",
+        "alt": "Ligne de rinçage de pièces métalliques avec cuves d’eau de rinçage visibles et équipements industriels de manutention des pièces",
+        "caption": "Cuves de rinçage de pièces métalliques · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "industrial-effluent",
+      "title": "Effluents industriels et récupération",
+      "jumpLabel": "Effluents et récupération",
+      "intro": "Suivez la collecte, le traitement et la réutilisation à l’aide de niveaux liquides horodatés. Adaptez l’ensemble à l’effluent réel, aux dépôts, aux conditions de mélange et aux possibilités d’accès pour la maintenance.",
+      "scenes": [
+        "factory-equalization",
+        "neutralization-collection",
+        "treated-effluent-storage",
+        "sludge-supernatant",
+        "healthcare-wastewater"
+      ],
+      "image": {
+        "name": "scene-factory-equalization.webp",
+        "alt": "Bassin industriel d’égalisation des eaux usées avec liquide visible, tuyauteries et passerelle accessible de la station de traitement",
+        "caption": "Bassins d’égalisation des effluents d’usine · Image d’illustration de l’application",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "drainage-pumps",
+      "title": "Puisards de drainage et stations de pompage",
+      "jumpLabel": "Drainage et pompage",
+      "intro": "Visualisez l’accumulation d’eau dans les puisards et points de collecte répartis sur le site. Définissez la plage de fonctionnement, les délais de notification et l’accès pour l’entretien selon chaque besoin local de drainage.",
+      "scenes": [
+        "plant-room-sumps",
+        "washdown-collection",
+        "factory-rainwater-lift",
+        "underground-lift-pits",
+        "containment-collection"
+      ],
+      "image": {
+        "name": "scene-plant-room-sumps.webp",
+        "alt": "Local technique industriel avec puisard de drainage encastré et tuyauteries de service à côté d’un passage de maintenance sec",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "industry-water",
+      "title": "Systèmes d’eau par secteur industriel",
+      "jumpLabel": "Eau par secteur",
+      "intro": "Utilisez une référence de niveau claire dans les systèmes d’utilités et de récupération d’eau propres à chaque secteur. Définissez la fonction réelle de stockage, les constituants du liquide et les exigences du site pour chaque configuration.",
+      "scenes": [
+        "food-beverage-utility-water",
+        "pharmaceutical-utility-water",
+        "paper-water-recovery",
+        "concrete-plant-recycled-water",
+        "recycling-wash-water"
+      ],
+      "image": {
+        "name": "scene-food-beverage-utility-water.webp",
+        "alt": "Zone des utilités d’une usine agroalimentaire avec cuves de stockage d’eau et tuyauteries de service clairement organisées",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "resources-dewatering",
+      "title": "Industries extractives et exhaure souterraine",
+      "jumpLabel": "Exhaure",
+      "intro": "Suivez les variations de niveau d’eau dans les bassins de collecte, puisards de drainage et puits. Choisissez le point de référence, le cheminement du câble et la position du terminal selon la profondeur, l’accès et les conditions du site.",
+      "scenes": [
+        "mine-dewatering",
+        "quarry-settling-water",
+        "construction-dewatering-wells",
+        "tunnel-drainage-sumps",
+        "industrial-groundwater-wells"
+      ],
+      "image": {
+        "name": "scene-mine-dewatering.webp",
+        "alt": "Zone de collecte des eaux d’exhaure d’une mine avec puisard, conduites de drainage et voie de maintenance industrielle accessible",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    },
+    {
+      "id": "waterways-supply",
+      "title": "Ressources en eau et résilience du site",
+      "jumpLabel": "Ressources et eaux du site",
+      "intro": "Étendez la visibilité sur les niveaux aux ressources en eau et aux zones de rétention qui servent le site. Utilisez un repère commun et un plan de transmission permettant d’exploiter les mesures avec les relevés d’exploitation du site.",
+      "scenes": [
+        "raw-water-reservoirs",
+        "river-intake-stage",
+        "irrigation-canal-level",
+        "remote-supply-wells",
+        "stormwater-retention"
+      ],
+      "image": {
+        "name": "scene-raw-water-reservoirs.webp",
+        "alt": "Réservoir industriel d’eau brute avec ouvrage de prise d’eau, chemin de service et utilités d’usine au loin",
+        "caption": "Scène d’application à titre illustratif.",
+        "kind": "illustrative",
+        "focalPoint": "50% 50%"
+      }
+    }
+  ]
+}
