@@ -1,0 +1,31 @@
+---
+/**
+ * 定制防爆气体传感器页 V2 · 包装器（GPT6 页面包 V76，Kimi 审核集成）
+ * 路由：EN /product/custom-gas-sensor（无前缀，与既有 URL 一致）；
+ * 其余语言仍走经典模板（待多语言包）。
+ * 数据：gas-content.json（EN，组件直接 import）。
+ * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
+ * Schema（includeOrganization={false}，统一引用 /#organization）。
+ * Hero 响应式 preload（imagesrcset/imagesizes 与 GasPage img 一致）经 head 槽输出。
+ * SiteShell/QuickContact 为 GPT6 离线审阅壳，不集成（README-KIMI；V64/V68/V70 同规）。
+ * 供电口径：外接 9–24 V DC（用户确认）。旧规格书 custom-gas-sensor-datasheet.pdf
+ * 仍为电池口径，本页按包设计不链接（参数卡按钮改为询价入口）；content 内
+ * datasheet_url 为死数据保留，待新规格书到货后恢复真实下载入口。
+ * 样式作用域：包内将 .ht-gas 挂在 body；集成经 BaseLayout，故挂在包装 div。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GasPage from './GasPage.astro';
+import StructuredData from './StructuredData.astro';
+import { gasImage } from './images.mjs';
+import content from '../../data/gas-content.json';
+import '../../styles/gas.css';
+const hero = await gasImage('product-hero.webp', true);
+const ogImage = new URL(hero.src, Astro.site).href;
+const heroSizes = '(max-width: 600px) calc(100vw - 76px), (max-width: 1024px) 42vw, 560px';
+---
+
+<BaseLayout locale="en" title={content.seo.title} description={content.seo.description} robots="index,follow,max-image-preview:large">
+  <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
+  <StructuredData slot="head" content={content} imageUrl={ogImage} includeOrganization={false} />
+  <div class="ht-gas"><GasPage /></div>
+</BaseLayout>
