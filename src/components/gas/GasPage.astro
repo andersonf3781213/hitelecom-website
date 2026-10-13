@@ -27,7 +27,7 @@ const measurementSymbols = {gas:'∿',range:'ppm',hazard:'Ex',placement:'↗',pr
         <figcaption><span class="live-dot" aria-hidden="true"></span>{S('Fixed gas configuration example · Gas and model selected for your project')}</figcaption>
       </figure>
       <p class="hero-description">{content.hero.description}</p>
-      <div class="hero-actions"><a href="#enquiry" class="button button-primary">{content.hero.primary_cta} <span aria-hidden="true">↗</span></a><a href="#specifications" class="text-link">{S('View configuration details')} <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-actions"><a href="#enquiry" class="button button-primary">{content.hero.primary_cta} <span aria-hidden="true">↗</span></a><a href={content.hero.datasheet_url} target="_blank" rel="noopener" class="text-link">{content.hero.secondary_cta} <span aria-hidden="true">↗</span></a></div>
       <div class="hero-proof"><div><strong>{S('Gas-specific')}</strong><span>{S('Selected gas, sensing principle and range')}</span><small>{S('Define the channels required for your site')}</small></div><div><strong>9–24V DC</strong><span>{S('External power supply')}</span><small>{S('Plan the supply at the mounting position')}</small></div><div><strong>{S('Hitelecom platform')}</strong><span>{S('Readings and configured alerts')}</span><small>{S('Hitelecom Cloud or compatible integration')}</small></div></div>
     </section>
   </div>
