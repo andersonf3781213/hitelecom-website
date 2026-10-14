@@ -1,0 +1,1583 @@
+{
+  "seo": {
+    "title": "无线压力传感器｜4G、NB-IoT 与 LoRa｜宏太通信 Hitelecom",
+    "description": "宏太 H 系列无线压力传感器用于供水、压缩空气及液压压力监测，提供 4G、NB-IoT 或 LoRa 版本，可按项目选择量程、压力接口、探头与上报配置，通过 MQTT 对接宏太云或兼容客户平台。",
+    "keywords": [
+      "无线压力传感器",
+      "4G 压力传感器",
+      "NB-IoT 压力传感器",
+      "LoRa 压力传感器",
+      "供水压力监测",
+      "压缩空气压力监测",
+      "液压压力监测",
+      "工业压力传感器"
+    ],
+    "primaryTopic": "无线工业压力监测"
+  },
+  "hero": {
+    "eyebrow": "H 系列压力传感器",
+    "title": "无线压力监测。\n接入您的运行。",
+    "valueHeading": "掌握关键测点。看清运行压力。",
+    "description": "宏太 H 系列无线压力传感器在选定的液体或气体工艺接口测量压力，根据型号通过 4G、NB-IoT 或 LoRa 将读数传至远程平台。适用于供水、压缩空气和液压等压力监测，将现场读数、历史记录与配置的告警纳入团队的运行视图。围绕您的安装条件，选择测量范围、工艺接口、采样与上报设置，以及平台接入方式。",
+    "primaryCta": "咨询项目与报价",
+    "secondaryCta": "查看量程与配置",
+    "imageCaption": "压力探头 · 无线终端",
+    "proof": [
+      {
+        "value": "±0.5% FS",
+        "label": "测量精度"
+      },
+      {
+        "value": "IP68",
+        "label": "外壳防护"
+      },
+      {
+        "value": "OEM / ODM",
+        "label": "项目配置"
+      }
+    ]
+  },
+  "features": [
+    {
+      "id": "configured-range",
+      "number": "01",
+      "title": "选择适合工况的量程。",
+      "text": "可选满量程为 1、1.6、3.5、7、10、20、35 和 100 MPa。选型时同时提供正常工作压力与最高预期压力。"
+    },
+    {
+      "id": "clear-measurement",
+      "number": "02",
+      "title": "按测量需求选择性能。",
+      "text": "测量精度为 ±0.5% FS，长期稳定性为 ±0.2% FS/年。根据需要识别的压力变化，选择相应量程和精度配置。"
+    },
+    {
+      "id": "long-life-power",
+      "number": "03",
+      "title": "电池供电，长周期运行。",
+      "text": "在每 10 分钟采样、每 4 小时上报、环境温度 25°C、正常信号条件下，续航设计参考值超过 10 年。实际寿命随型号、电池、测量任务与运行条件变化。"
+    },
+    {
+      "id": "protected-housing",
+      "number": "04",
+      "title": "IP68 终端外壳防护。",
+      "text": "无线终端采用 IP68 防护外壳，便于在适合的室外或工业位置部署。压力探头、工艺连接、线缆布置与外壳固定方式按测点条件选择。"
+    },
+    {
+      "id": "wireless-choice",
+      "number": "05",
+      "title": "匹配现场的无线连接。",
+      "text": "根据安装位置的网络覆盖与现场基础设施，选择 4G、NB-IoT 或 LoRa 版本，并统筹通信制式、网络接入与上报设置。"
+    },
+    {
+      "id": "platform-path",
+      "number": "06",
+      "title": "连接您的数据平台。",
+      "text": "通过 MQTT 与约定的数据连接路径，对接宏太云、客户云或私有平台。压力单位、设备标识、消息字段及告警规则按项目确定。"
+    }
+  ],
+  "measurement": {
+    "eyebrow": "测量与工艺接口",
+    "title": "从工况出发。\n确定压力测点。",
+    "description": "明确监测目的和工艺接口，是建立有用压力记录的起点。先确定需要观察什么、从哪里取压，再规划测量组件与安装方式。探头形态及终端布置可围绕项目配置。",
+    "cards": [
+      {
+        "title": "明确测量需求。",
+        "text": "说明压力基准、工作范围和需要观察的变化。表压、绝压、差压及低压任务分别匹配相应的测量配置。",
+        "project_brief": "正常与最高压力 · 压力基准 · 需要观察的变化持续时间"
+      },
+      {
+        "title": "匹配工艺接口。",
+        "text": "提供实际液体或气体、运行与清洁过程温度，以及现有螺纹、法兰或卫生型接口。接液材质与密封方式根据这些条件选择。",
+        "project_brief": "介质与浓度 · 工艺温度 · 接口与密封要求"
+      },
+      {
+        "title": "规划完整安装。",
+        "text": "综合安装空间、温度、振动和无线信号，选择探头、线缆与终端形态。压力接口照片或图纸有助于确定可行的工艺连接和终端安装位置。",
+        "project_brief": "压力接口图纸 · 探头与线缆布置 · 终端空间与固定方式"
+      }
+    ],
+    "installation_text": "压力探头通过经现场认可、耐压等级适合的工艺接口连接；需要时配置隔离阀或专用接口组件。无线终端采用所选支架固定在适宜位置，终端支撑与压力连接各自承担不同作用。产品图展示的是一种带线外接探头形态，其他组件形式可按安装需求配置。"
+  },
+  "workflow": {
+    "eyebrow": "从压力测量到现场行动",
+    "title": "测量。上报。\n让团队及时掌握情况。",
+    "profile_text": "根据需要观察的压力变化确定测量要求，根据团队需要远程获取数据的时间确定上报要求。为所选设备与部署方案匹配支持的采样和传输设置、告警规则及供电计划。",
+    "steps": [
+      {
+        "number": "01",
+        "title": "选择压力测量组件。",
+        "text": "明确介质、压力基准、量程、工艺接口与安装条件。"
+      },
+      {
+        "number": "02",
+        "title": "配置设备。",
+        "text": "确定通信版本、支持的测量和上报设置，以及所选型号的 NFC 现场配置方式。"
+      },
+      {
+        "number": "03",
+        "title": "接入数据。",
+        "text": "按项目设置平台地址、设备标识、压力单位与 MQTT 消息字段。"
+      },
+      {
+        "number": "04",
+        "title": "完成现场投用。",
+        "text": "在实际安装位置核对压力读数与网络上报，再确定维护与 OTA 更新流程。"
+      }
+    ],
+    "battery_text": "续航设计参考值超过 10 年，参考条件为每 10 分钟采样、每 4 小时上报、环境温度 25°C、正常信号。实际寿命取决于交付型号、电池配置、测量任务、网络条件、温度及运行设置。项目需要其他采样或上报周期时，按所选设备支持的配置确定，并在报价方案中写明。",
+    "platform_text": "通过 MQTT 及约定的数据连接路径，将压力记录传至宏太云、客户平台或私有平台。围绕所选工艺测点设置阈值，明确历史存储、告警判断与通知责任。消息字段与集成细节按部署方案确定。"
+  },
+  "applicationSection": {
+    "eyebrow": "应用场景",
+    "title": "把压力，纳入运行视图。",
+    "valueHeading": "48 个监测任务。\n找到适合您的测点。",
+    "description": "覆盖水务、工厂公用工程、工艺生产、农业及专用系统等 8 类应用。每个场景说明压力测点、运行背景，以及选择测量组件所需的信息。",
+    "note": "应用图片为 AI 生成的典型安装示意。工艺接口、压力基准和测量组件按实际项目选择。",
+    "mountingNote": "从压力接口入手。向我们展示接口及周边空间，即可确定探头、线缆与无线终端的安装方式。"
+  },
+  "faqHeading": {
+    "eyebrow": "为您的项目答疑",
+    "title": "常见问题。",
+    "intro": "帮助您选择压力测量方式、工艺连接、采样上报与平台接入方案。"
+  },
+  "faqs": [
+    {
+      "id": "pressure-range",
+      "question": "如何为项目选择合适的压力量程？",
+      "paragraphs": [
+        "从正常工作压力、最高预期压力，以及泵或阀门动作可能带来的压力变化出发。系列可选量程为 0–1、0–1.6、0–3.5、0–7、0–10、0–20、0–35 和 0–100 MPa，实际交付选定相应档位。量程应覆盖工况，同时满足正常运行区间的测量性能需求。询价时提供这些压力值，便于一并确定量程与所需的压力保护组件。"
+      ],
+      "evidenceIds": [
+        "hitelecom-pressure-pdf",
+        "wika-handbook",
+        "ifm-selection"
+      ]
+    },
+    {
+      "id": "pressure-reference",
+      "question": "我需要测量表压、绝压还是差压？",
+      "paragraphs": [
+        "表压以当地大气压为参考，常用于供水、压缩空气和液压供给监测。绝压以真空为参考。差压测量两点之间的压力差，例如过滤器前后。请说明项目需要的压力基准、量程与应用，便于确认相应的测量配置。若使用两个独立测点计算压差，还需匹配观测时刻，并评估两路测量的综合不确定度。"
+      ],
+      "evidenceIds": [
+        "wika-pressure-types"
+      ]
+    },
+    {
+      "id": "pressure-media-port",
+      "question": "能否测量我的液体或气体，并连接现有压力接口？",
+      "paragraphs": [
+        "适用性取决于介质、介质温度、接液材质、密封和工艺连接。请提供液体或气体名称、相关浓度、工作温度、接口螺纹及可用安装空间，宏太据此评估合适的配置与连接方式。对于黏稠、易结晶或有卫生要求的介质，还应说明清洁方式及隔膜或卫生型接口需求。设备工作温度为 −20°C 至 +80°C，介质与清洁过程的温度范围按所选探头及过程组件分别规定。"
+      ],
+      "evidenceIds": [
+        "hitelecom-pressure-page",
+        "ifm-selection",
+        "wika-faq"
+      ]
+    },
+    {
+      "id": "pressure-full-scale",
+      "question": "±0.5% FS 是什么意思，与年稳定性有什么区别？",
+      "paragraphs": [
+        "FS 指满量程。按 ±0.5% FS 换算，0–1 MPa 量程对应 ±0.005 MPa，0–10 MPa 量程对应 ±0.05 MPa。这些数值用于说明满量程精度指标，项目选型还需核对交付型号的精度适用条件与温度影响。±0.2% FS/年的稳定性描述性能随时间的变化，与测量精度分别规定。应结合所选量程、精度和温度条件，评估是否能够识别应用中关注的最小压力变化。"
+      ],
+      "evidenceIds": [
+        "hitelecom-pressure-pdf",
+        "wika-faq",
+        "wika-handbook"
+      ]
+    },
+    {
+      "id": "pressure-wireless",
+      "question": "如何选择 4G、NB-IoT 或 LoRa？",
+      "paragraphs": [
+        "根据实际安装位置的覆盖、数据更新需求和现有网络架构选择。4G 或 NB-IoT 需确认运营商服务、支持频段与 SIM 方案；LoRa 需确定交付设备使用的网关、无线协议与平台数据路径。在实际安装位置进行通信核查，有助于确定可行的上报设置，再开展更多测点的部署。"
+      ],
+      "evidenceIds": [
+        "hitelecom-pressure-page",
+        "gsma-guide",
+        "gsma-deployment",
+        "lora-architecture"
+      ]
+    },
+    {
+      "id": "pressure-reporting-power",
+      "question": "采样与上报周期如何设置，续航参考条件是什么？",
+      "paragraphs": [
+        "采样周期围绕需要观察的压力变化确定，上报周期围绕团队需要远程获取数据或响应的时间确定。续航设计参考值超过 10 年，条件是每 10 分钟采样、每 4 小时上报、环境温度 25°C、正常信号。项目需要其他周期时，请提供正常工艺周期、告警时间要求与维护条件，以便匹配所选设备支持的设置。测量任务、传输频率、信号和温度共同影响实际电池寿命；短时压力事件应按所需测量响应与采样能力另外选型。"
+      ],
+      "evidenceIds": [
+        "hitelecom-pressure-page",
+        "emerson-update"
+      ]
+    },
+    {
+      "id": "pressure-calibration",
+      "question": "项目规格中应提出哪些校准与核验要求？",
+      "paragraphs": [
+        "说明量程、压力基准、验收容差，以及所需证书或溯源要求。结合工艺重要性、运行条件、历史结果与质量体系制定核验周期；已有安装可提供近期的对比读数。与宏太提前约定需要的测试记录和现场投用检查，将文件要求纳入交付方案。"
+      ],
+      "evidenceIds": [
+        "npl-calibration",
+        "ifm-selection"
+      ]
+    },
+    {
+      "id": "pressure-platform-alerts",
+      "question": "压力读数与告警能否接入我们的平台？",
+      "paragraphs": [
+        "压力传感器支持通过 MQTT 及约定的数据路径向宏太云、客户云或私有平台上报。请提供目标平台、MQTT 服务接入要求、设备标识、压力单位和告警规则，双方确定消息字段，以及阈值判断、历史存储和用户通知的责任，使测点数据融入现有工作流程。"
+      ],
+      "evidenceIds": [
+        "hitelecom-pressure-page"
+      ]
+    }
+  ],
+  "series": {
+    "eyebrow": "系列与配置",
+    "title": "一个压力传感器系列。\n适配您的工况。",
+    "description": "H 系列压力传感器包括 H200、H300 和 H500 型号。测量组件与无线连接共同选型，最终量程、接口和通信配置以交付型号数据表为准。",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "selection_steps": [
+      "选择压力基准、量程与测量需求。",
+      "选择工艺接口、探头形态、线缆与终端安装方式。",
+      "确定无线版本、上报配置与目标平台。"
+    ],
+    "displayStyle": "model-identifiers",
+    "connectivity": [
+      {
+        "id": "4G",
+        "title": "蜂窝网络接入",
+        "description": "选择适合当地频段的 4G Cat.1 版本，在安装测点核实运营商覆盖，并匹配 SIM 服务与上报设置。"
+      },
+      {
+        "id": "NB-IoT",
+        "title": "运营商物联网接入",
+        "description": "在运营商支持的安装区域选择 NB-IoT 版本，按测点的数据更新需求确定网络接入与上报方案。"
+      },
+      {
+        "id": "LoRa",
+        "title": "本地无线网络接入",
+        "description": "选择与网关和网络架构匹配的 LoRa 版本，明确所选设备使用的无线协议及通往现场或客户平台的数据路径。"
+      }
+    ],
+    "steps": [
+      {
+        "title": "明确测量",
+        "text": "提供正常压力、预期峰值、压力基准、介质，以及需要识别的最小压力变化。"
+      },
+      {
+        "title": "匹配接口",
+        "text": "确认螺纹或其他工艺接口、接液材质、介质温度，以及探头、线缆和终端的可用位置。"
+      },
+      {
+        "title": "确定数据路径",
+        "text": "选择无线版本、支持的采样与上报设置、压力单位和目标平台。"
+      }
+    ]
+  },
+  "customSensing": [
+    {
+      "name": "量程与压力基准",
+      "text": "提供量程、精度目标，以及表压、绝压或差压要求，用于配置评估。"
+    },
+    {
+      "name": "介质与工艺接口",
+      "text": "说明介质、温度、接液材质、密封与螺纹要求，并提供清洁过程或现场文件要求。"
+    },
+    {
+      "name": "探头、线缆与终端",
+      "text": "图示带线外接探头是其中一种配置。根据取压位置匹配测量形态、线缆长度与终端安装结构。"
+    },
+    {
+      "name": "上报、品牌与平台",
+      "text": "确定支持的采样和更新设置、型号与通信版本、OEM 品牌标识，以及客户平台或宏太云的接入方式。"
+    }
+  ],
+  "groups": [
+    {
+      "id": "water-networks",
+      "title": "供水管网与建筑供水",
+      "jumpLabel": "供水与建筑",
+      "intro": "从供水干管、泵组出口到用水端，了解各测点的压力情况。明确供水分区、安装标高和运行状态，让每条压力记录都能对应具体的供水问题。",
+      "scenes": [
+        "water-distribution",
+        "booster-stations",
+        "high-rise-water",
+        "water-treatment",
+        "wastewater-pumps",
+        "fire-water"
+      ],
+      "image": {
+        "name": "water-distribution.webp",
+        "alt": "混凝土阀室内的蓝色市政供水干管，设有闸阀，以及带隔离阀和封帽的仪表支管。",
+        "caption": "应用示意：市政供水干管阀门旁的检修测压接口。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "compressed-air",
+      "title": "压缩空气与气动生产设备",
+      "jumpLabel": "压缩空气",
+      "intro": "为公用工程团队和生产工程师提供储气罐、输气干管及设备进气口的压力数据。合理选择测点，区分气源侧压力与实际送达生产线的压力。",
+      "scenes": [
+        "air-receivers",
+        "air-ring-main",
+        "machine-air-supply",
+        "packaging-pneumatics",
+        "pneumatic-clamping",
+        "air-treatment"
+      ],
+      "image": {
+        "name": "air-receivers.webp",
+        "alt": "工业螺杆式压缩机和立式储气罐，出口总管上设有带阀门的检修测压接口。",
+        "caption": "应用示意：监测储气罐出口总管的压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "hydraulic-production",
+      "title": "液压生产设备与机床辅助系统",
+      "jumpLabel": "液压设备",
+      "intro": "将液压动力单元、指定液压回路和润滑供给系统的压力数据纳入同一项目视图。根据回路选用经确认可用的测压接口、与油液相容的材料，以及合适的测量量程。",
+      "scenes": [
+        "injection-moulding",
+        "forming-presses",
+        "machine-hydraulics",
+        "lifting-platforms",
+        "lubrication-pressure",
+        "hydraulic-test-benches"
+      ],
+      "image": {
+        "name": "injection-moulding.webp",
+        "alt": "注塑机检修区域内的液压动力单元、软管，以及配有链式防丢封帽的测压接头。",
+        "caption": "应用示意：通过液压检修阀块监测压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "hvac-cooling",
+      "title": "暖通空调、冷却与数据中心",
+      "jumpLabel": "暖通与冷却",
+      "intro": "监测机房、冷却支路及专用热管理系统的水侧压力。先明确回路和压力测量基准，再为安装位置选择适合的连接方式与测量范围。",
+      "scenes": [
+        "chilled-water",
+        "condenser-water",
+        "heating-circuits",
+        "data-centre-cooling",
+        "refrigeration-circuits",
+        "ventilation-pressure"
+      ],
+      "image": {
+        "name": "chilled-water.webp",
+        "alt": "机房内的蓝色循环泵和钢制水系统集管，设有外露的带阀压力表。",
+        "caption": "应用示意：冷冻水循环集管处的压力测量。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "energy-utilities",
+      "title": "能源与公用工程基础设施",
+      "jumpLabel": "能源公用工程",
+      "intro": "掌握蒸汽、供热、燃料及发电公用工程中的压力信息。根据所选工艺连接点，明确介质、温度、压力范围及现场准入要求。",
+      "scenes": [
+        "steam-distribution",
+        "boiler-feedwater",
+        "district-heating",
+        "gas-regulation",
+        "fuel-transfer",
+        "power-plant-auxiliaries"
+      ],
+      "image": {
+        "name": "steam-distribution.webp",
+        "alt": "保温蒸汽管道上设有小型隔离阀、连续连接的虹吸管和机械压力表。",
+        "caption": "应用示意：通过带隔离阀的虹吸管连接测量蒸汽压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "process-manufacturing",
+      "title": "工艺、食品与制药生产",
+      "jumpLabel": "工艺与食品制药",
+      "intro": "将压力读数与其对应的工艺阶段关联，包括输送、过滤、清洗或定量供料。根据工艺及清洗要求，选择适合的接液材料、连接方式和维护方案。",
+      "scenes": [
+        "chemical-transfer",
+        "food-beverage",
+        "cip-cleaning",
+        "pharma-laboratory",
+        "industrial-filtration",
+        "dispensing-pressure"
+      ],
+      "image": {
+        "name": "chemical-transfer.webp",
+        "alt": "化学品输送泵与封闭金属管路，设有隔膜式仪表支路，后方为工艺储罐。",
+        "caption": "应用示意：化学品输送泵处设有隔离措施的取压连接。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "agriculture-water",
+      "title": "农业、灌溉与水产养殖",
+      "jumpLabel": "农业与灌溉",
+      "intro": "了解灌溉首部、种植分区及农场供水系统可提供的压力。结合水泵运行、阀门启闭计划及当前供水区域解读测量数据。",
+      "scenes": [
+        "irrigation-headworks",
+        "greenhouse-irrigation",
+        "orchard-drip",
+        "livestock-water",
+        "fertigation",
+        "aquaculture-circulation"
+      ],
+      "image": {
+        "name": "irrigation-headworks.webp",
+        "alt": "绿色灌溉水泵与过滤罐，设有支撑的主管上安装着压力表",
+        "caption": "应用示意：监测灌溉用水进入管网前的首部压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    },
+    {
+      "id": "specialist-systems",
+      "title": "移动设备、船舶与项目测试",
+      "jumpLabel": "移动与专用系统",
+      "intro": "将压力监测扩展至作业地点会发生变化的设备，以及指定测试装置。确定测量点、测试时长或运行工况，并明确项目团队的数据上报需求。",
+      "scenes": [
+        "mobile-hydraulics",
+        "portable-pumps",
+        "marine-auxiliary",
+        "pipe-commissioning",
+        "product-pressure-tests",
+        "research-pressure-rigs"
+      ],
+      "image": {
+        "name": "mobile-hydraulics.webp",
+        "alt": "履带式挖掘机的液压检修舱处于打开状态，歧管上的测试接头带有保护盖",
+        "caption": "应用示意：通过经批准的液压检修接口，观察指定机械回路的压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "index": 1,
+      "id": "water-distribution",
+      "group": "water-networks",
+      "title": "供水管网",
+      "image": {
+        "name": "water-distribution.webp",
+        "alt": "混凝土阀室内的蓝色市政供水干管，设有闸阀，以及带隔离阀和封帽的仪表支管。",
+        "caption": "应用示意：市政供水干管阀门旁的检修测压接口。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "按供水分区了解压力情况。",
+      "description": "在分区进水口、管网支路及选定的供水服务点监测压力。带时间戳的历史记录可帮助供水团队比较日间用水需求、夜间运行情况，以及计划性阀门调整对压力的影响。将每台传感器与所属供水分区和测点标高关联，再结合泵组状态及管网记录查看压力数据，为供水问题的调查提供依据。",
+      "objective": "了解选定供水分区的可用供水压力。",
+      "monitoringPoint": "在干管或支管上使用经确认可用的取压口，并通过检修隔离阀连接。",
+      "projectBrief": "管网压力变化范围、安装标高、涉水材料、阀室环境条件及数据上报周期。"
+    },
+    {
+      "index": 2,
+      "id": "booster-stations",
+      "group": "water-networks",
+      "title": "增压泵站",
+      "image": {
+        "name": "booster-stations.webp",
+        "alt": "一组蓝色立式增压泵，旁侧是不锈钢出水总管和带阀门的仪表支管。",
+        "caption": "应用示意：监测选定增压泵组的出水总管压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "掌握泵站送出的供水压力。",
+      "description": "将单个增压泵站或分布式泵站群的出水压力接入项目看板，了解供水压力如何随用水需求、泵组投切及运行计划变化。项目如需同时了解吸入侧和出水侧的压力，应分别设置测点，并将两侧的压力记录与泵组控制器数据结合查看。",
+      "objective": "比较用水需求变化和泵组投切过程中送出的供水压力。",
+      "monitoringPoint": "根据项目需要，使用吸入总管和出水总管上经确认可用的测压接口。",
+      "projectBrief": "泵组工况、吸入侧和出水侧压力范围、总管接口、运行温度及所需测量间隔。"
+    },
+    {
+      "index": 3,
+      "id": "high-rise-water",
+      "group": "water-networks",
+      "title": "高层建筑分区供水",
+      "image": {
+        "name": "high-rise-water.webp",
+        "alt": "生活给水总管连接多根不锈钢立管，设有黄铜减压阀组件和细径导阀管路。",
+        "caption": "应用示意：监测高层建筑各供水分区的压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "掌握各供水分区的压力。",
+      "description": "监测高层建筑中选定的生活给水立管、增压泵出口，以及减压阀下游供水分区的压力。明确标注分区和楼层，方便设施运维团队利用历史压力记录处理供水反馈或核查计划性调整。每个分区应选择具有代表性的测点，并结合安装高度、供水方式及建筑用水时段查看读数。",
+      "objective": "比较建筑内明确划分的各供水分区压力。",
+      "monitoringPoint": "使用分区总管上的带阀取压口，或经确认可用的立管检修接口。",
+      "projectBrief": "建筑高度和供水分区、预期压力、接口检修条件、饮用水接触要求及机房通信覆盖。"
+    },
+    {
+      "index": 4,
+      "id": "water-treatment",
+      "group": "water-networks",
+      "title": "水处理与反冲洗",
+      "image": {
+        "name": "water-treatment.webp",
+        "alt": "蓝色水处理过滤罐连接不锈钢总管，总管上设有带封帽的细径检修测压支管。",
+        "caption": "应用示意：水处理过滤器总管周边的选定测压点。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "结合运行阶段查看过滤压力。",
+      "description": "监测选定过滤器或处理工段的入口和出口压力。在明确的运行状态下采集读数，便于比较不同过滤运行周期及计划性反冲洗周期的压力情况。如果两侧均安装压力仪表，项目可结合相同测量时刻的读数与工艺状态计算压力差。按过滤机组和连接位置命名各测点，使历史记录清晰可查。",
+      "objective": "比较过滤运行周期与反冲洗周期的压力情况。",
+      "monitoringPoint": "在选定过滤机组的入口和出口分别使用独立、经确认可用的取压口。",
+      "projectBrief": "处理工段、正常运行与反冲洗压力、接液材料、测量时间匹配及维护空间；同时明确所需测量的压力差和组合测量不确定度。"
+    },
+    {
+      "index": 5,
+      "id": "wastewater-pumps",
+      "group": "water-networks",
+      "title": "污水泵出水管路",
+      "image": {
+        "name": "wastewater-pumps.webp",
+        "alt": "绿色污水出水管路，设有隔离阀、止回阀，以及位置抬高并带隔离阀的仪表接口。",
+        "caption": "应用示意：监测污水出水管路的压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "了解远端泵站的出水压力。",
+      "description": "监测污水提升泵站和输送泵的出口压力，为维护团队提供更清晰的站点运行记录。复核一次检修或运行事件时，将历史压力数据与泵组运行状态及已知的阀门设置结合查看。根据污水中的固体颗粒、结垢污染情况和清洗条件选择工艺连接方式，确保测点在整个维护周期内便于使用和检修。",
+      "objective": "将泵站出水压力与泵组及阀门运行记录关联。",
+      "monitoringPoint": "使用合适的出水管取压口，配合选定的隔膜或其他工艺接口，并设置检修隔离。",
+      "projectBrief": "污水性质、固体含量、压力范围、工艺接口、清洗方法及泵站环境。"
+    },
+    {
+      "index": 6,
+      "id": "fire-water",
+      "group": "water-networks",
+      "title": "消防水泵与供水管路",
+      "image": {
+        "name": "fire-water.webp",
+        "alt": "红色消防水泵及出水管，设有机械压力表和独立的仪表支管。",
+        "caption": "应用示意：在现有消防供水仪表旁开展远程压力监测。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "方便查阅试验和维护压力记录。",
+      "description": "在选定的消防水泵出水口和供水管路试验点采集压力数据，用于设施维护及定期检查。为记录标注安装位置、试验工况和测量时段，便于技术人员在不同时间比较相同条件下的压力情况。将监测数据纳入现场维护流程，同时继续执行该设施已获认可的消防系统控制方式和检查程序。",
+      "objective": "记录按认可程序开展的消防供水试验和维护过程中的压力。",
+      "monitoringPoint": "使用泵组出水管上经认可的检修取压口，或指定的供水管路试验测点。",
+      "projectBrief": "认可的连接位置、预期运行与试验压力、检查流程、测量间隔及现场要求。"
+    },
+    {
+      "index": 7,
+      "id": "air-receivers",
+      "group": "compressed-air",
+      "title": "空压机与储气罐",
+      "image": {
+        "name": "air-receivers.webp",
+        "alt": "工业螺杆式压缩机和立式储气罐，出口总管上设有带阀门的检修测压接口。",
+        "caption": "应用示意：监测储气罐出口总管的压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "了解生产时段内的储气压力。",
+      "description": "监测储气罐出口压力，了解压缩机加载、卸载及响应用气需求时，工厂可获得的气源压力。清晰的压力记录可帮助公用工程团队比较不同班次、计划性运行调整及设备启动时段。将测量记录与压缩机状态和储气罐编号关联，并按项目所需的运行信息设置上报方案，避免产生多余的上报数据。",
+      "objective": "了解压缩机运行和生产用气需求变化过程中的储气罐压力。",
+      "monitoringPoint": "使用经确认可用的储气罐测压接口，或出口总管上的带阀接口。",
+      "projectBrief": "储气罐运行压力、空气温度、接口规格、测量间隔及厂区通信条件。"
+    },
+    {
+      "index": 8,
+      "id": "air-ring-main",
+      "group": "compressed-air",
+      "title": "工厂压缩空气环网",
+      "image": {
+        "name": "air-ring-main.webp",
+        "alt": "蓝色架空压缩空气环形干管及带支撑的下引管，设有隔离阀和带封帽的检修三通。",
+        "caption": "应用示意：监测工厂压缩空气分配支路的压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "比较各生产用气点的压力。",
+      "description": "在选定的压缩空气支路和下引供气管上设置测点，比较输送至厂区各处的供气压力。在已知生产状态下查看读数，尤其关注多条生产线共用同一气源的情况。按供气支路和安装位置标识每台传感器，使公用工程团队能够结合厂区用气需求、阀门调整及计划性管网作业分析压力变化。",
+      "objective": "了解选定供气节点的可用压缩空气压力。",
+      "monitoringPoint": "使用环形干管、支路总管或下引供气管上的带阀取压口。",
+      "projectBrief": "支路位置、工作压力、生产状态、接口检修条件及各测点相匹配的测量计划。"
+    },
+    {
+      "index": 9,
+      "id": "machine-air-supply",
+      "group": "compressed-air",
+      "title": "机床供气系统",
+      "image": {
+        "name": "machine-air-supply.webp",
+        "alt": "数控机床检修面板，配有空气过滤减压器、机械压力表、气动阀块和蓝色气管。",
+        "caption": "应用示意：监测机床所用气源的压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将机床进气口纳入压力监测。",
+      "description": "在向机床气动回路供气的认可检修接口处监测压力，为技术人员了解换刀、清洁作业及其他明确机床状态下的供气情况提供参考。将压力记录与机床编号及相关控制器事件关联，方便检修团队在出现供气问题时回查设备进气口实际获得的压力。",
+      "objective": "了解指定机床作业过程中的进气压力。",
+      "monitoringPoint": "使用选定机床上经认可的气源处理组件或进气总管测压接口。",
+      "projectBrief": "机床供气要求、调压阀位置、接口认可情况、运行状态及测量时机。"
+    },
+    {
+      "index": 10,
+      "id": "packaging-pneumatics",
+      "group": "compressed-air",
+      "title": "包装生产线气动系统",
+      "image": {
+        "name": "packaging-pneumatics.webp",
+        "alt": "纸箱包装输送线，设有气缸组件和位于维护侧的气源处理组件。",
+        "caption": "应用示意：在包装线检修测点监测调压后的供气压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "掌握包装作业所需的供气压力。",
+      "description": "通过生产线认可的气动检修接口，监测包装设备调压后的供气压力。比较不同生产批次、产品换型及多线同时运行期间的压力记录。在选定供气总管附近设置测点，帮助工程师了解该段生产线的供气条件，并结合设备运行数据安排进一步排查。",
+      "objective": "比较不同生产批次和产品换型期间的包装线供气压力。",
+      "monitoringPoint": "使用向选定包装工段供气的调压后总管检修测压接口。",
+      "projectBrief": "生产线工段、调压后的压力、设备循环信息、允许使用的接口及所需采样间隔。"
+    },
+    {
+      "index": 11,
+      "id": "pneumatic-clamping",
+      "group": "compressed-air",
+      "title": "气动夹紧与夹具",
+      "image": {
+        "name": "pneumatic-clamping.webp",
+        "alt": "装配工作台上的气动夹紧夹具，配有空气调压器、机械压力表和细径蓝色供气管。",
+        "caption": "应用示意：监测夹紧夹具的气源供给压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "记录夹具的供气条件。",
+      "description": "通过装配夹紧装置或夹具认可的检修接口，监测调压后的气动供给压力。在明确的保持状态下，或按工艺所选定的测量间隔记录压力，并为每条读数保留夹具编号。历史记录可用于设备设置、产品切换及计划性夹具维护期间的供气压力复核。",
+      "objective": "在明确的夹具状态下核查所记录的气动供气压力。",
+      "monitoringPoint": "使用夹具气源调压器或供气总管上经认可的接口，安装位置应位于运动工装区域之外。",
+      "projectBrief": "调压后的压力、保持状态的测量时机、夹具标识、接口可接近性及工艺测量要求。"
+    },
+    {
+      "index": 12,
+      "id": "air-treatment",
+      "group": "compressed-air",
+      "title": "空气干燥机与过滤站",
+      "image": {
+        "name": "air-treatment.webp",
+        "alt": "压缩空气过滤站，设有两个蓝色管路过滤器、冷冻式干燥机，以及带阀门和封帽的仪表支管。",
+        "caption": "应用示意：空气处理撬装设备周边的选定测压接口。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "了解空气处理设备前后的压力。",
+      "description": "监测选定干燥机、过滤器或空气处理组件前后的压力。在已知流量和运行条件下比较读数，并通过测点名称明确区分入口与出口。相匹配的测量数据可用于项目中的压力差计算，同时形成运行记录，便于公用工程团队结合检修周期、旁通阀设置及压缩机数据复核供气情况。",
+      "objective": "比较相同运行条件下空气处理设备的入口和出口压力。",
+      "monitoringPoint": "在选定处理设备的入口和出口总管上，分别使用独立、经确认可用的测压接口。",
+      "projectBrief": "空气处理系统布局、压力量程、测量同步要求、旁通状态及检修空间；同时明确所需测量的压力差和组合测量不确定度。"
+    },
+    {
+      "index": 13,
+      "id": "injection-moulding",
+      "group": "hydraulic-production",
+      "title": "注塑机液压单元",
+      "image": {
+        "name": "injection-moulding.webp",
+        "alt": "注塑机检修区域内的液压动力单元、软管，以及配有链式防丢封帽的测压接头。",
+        "caption": "应用示意：通过液压检修阀块监测压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "结合设备运行情况查看液压供给压力。",
+      "description": "在注塑机液压动力单元或选定供油回路上，使用设备认可的测点监测压力。周期性测量及明确保压状态下的测量可形成历史压力记录，用于设备设置和维护复核。记录时注明液压回路与机床状态；项目如需观察持续时间较短的工艺事件，还应明确相应的测量响应要求。",
+      "objective": "将液压压力记录与明确的回路和设备状态关联。",
+      "monitoringPoint": "使用设备认可的液压测压口，或选定回路上额定压力符合要求的阀块接口。",
+      "projectBrief": "设备与回路、油液相容性、压力变化范围、允许使用的测压接口及测量响应要求。"
+    },
+    {
+      "index": 14,
+      "id": "forming-presses",
+      "group": "hydraulic-production",
+      "title": "金属成形压力机液压系统",
+      "image": {
+        "name": "forming-presses.webp",
+        "alt": "工业金属成形压力机旁设有液压动力单元、带支撑的软管、压力表和测压接口。",
+        "caption": "应用示意：位于压力机工装区域之外的检修测压点。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "在明确的压力机状态下复核液压压力。",
+      "description": "通过认可的液压接口，监测金属成形压力机上选定的供油压力或保压测点。将工装设置与运行状态一并记录，使维护和生产团队能够开展有意义的压力比较。根据需要了解的工艺问题确定测量时机：既可记录周期性运行数据，也可为短时事件另行确定专用测量方案。",
+      "objective": "比较明确工装设置和运行状态下的压力机液压压力。",
+      "monitoringPoint": "使用压力机厂家认可、额定压力符合要求的测压口或检修阀块接口。",
+      "projectBrief": "回路压力、液压介质、工装状态、接口认可情况及待测事件的持续时间。"
+    },
+    {
+      "index": 15,
+      "id": "machine-hydraulics",
+      "group": "hydraulic-production",
+      "title": "机床液压动力单元",
+      "image": {
+        "name": "machine-hydraulics.webp",
+        "alt": "数控车床旁的液压动力单元，设有油箱、检修阀块、带封帽的接口和压力表。",
+        "caption": "应用示意：监测机床液压检修阀块的压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将液压辅助系统压力纳入检修记录。",
+      "description": "监测为机床夹紧、工件夹持或辅助执行机构供油的液压系统压力。明确回路名称和测量状态，便于技术人员在设备设置和维护期间比较历史压力。使用认可的液压动力单元或阀块测压点，并根据该回路选择传感器量程及介质接口，避免直接沿用其他设备的选型规格。",
+      "objective": "将机床液压供给压力纳入维护记录。",
+      "monitoringPoint": "使用选定回路上经认可的液压动力单元或检修阀块测压接口。",
+      "projectBrief": "机床回路、介质与温度、压力量程、测压口接头规格及运行状态定义。"
+    },
+    {
+      "index": 16,
+      "id": "lifting-platforms",
+      "group": "hydraulic-production",
+      "title": "液压升降设备与剪叉式平台",
+      "image": {
+        "name": "lifting-platforms.webp",
+        "alt": "处于降下位置的蓝色工业剪叉式升降平台，侧面可接近液压动力单元，并设有受保护的软管和检修阀块。",
+        "caption": "应用示意：液压升降平台旁的检修测压点。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "在计划性设备检查中记录压力。",
+      "description": "在升降设备或剪叉式平台认可的液压测点监测压力，用于明确的维护检查或运行测量。将平台位置、载荷条件和所测回路与读数一并记录，为压力比较提供清晰的工况依据。在液压动力单元或阀块上选择有防护的检修接口，并将数据纳入设备维护流程。",
+      "objective": "在记录液压压力的同时保留平台位置和载荷条件。",
+      "monitoringPoint": "使用平台认可的液压动力单元或固定阀块检修测压接口。",
+      "projectBrief": "设备认可要求、回路压力范围、介质相容性、载荷与位置条件及检修空间。"
+    },
+    {
+      "index": 17,
+      "id": "lubrication-pressure",
+      "group": "hydraulic-production",
+      "title": "集中润滑系统",
+      "image": {
+        "name": "lubrication-pressure.webp",
+        "alt": "工厂润滑储液罐及泵，旁侧为连接供油管路的金属分配器块。",
+        "caption": "应用示意：集中润滑泵与分配器的供油压力测量。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将润滑供给压力与设备运行关联。",
+      "description": "在选定的集中润滑泵出口或分配总管监测压力。带时间戳的读数可帮助维护团队查看已知润滑周期内记录的供给压力，并与控制器运行记录进行比较。根据润滑剂黏度和工作温度选择测量接口，同时明确该测点对应的润滑泵或分配管段。",
+      "objective": "了解计划润滑周期内的润滑剂供给压力。",
+      "monitoringPoint": "使用润滑泵出口或选定分配总管上经认可的测压接口。",
+      "projectBrief": "润滑剂类型与黏度、压力量程、润滑周期时序、温度及允许使用的工艺接口。"
+    },
+    {
+      "index": 18,
+      "id": "hydraulic-test-benches",
+      "group": "hydraulic-production",
+      "title": "液压总成试验台",
+      "image": {
+        "name": "hydraulic-test-benches.webp",
+        "alt": "液压部件试验台上安装有泵，连接承压软管和带阀门的压力表阀组。",
+        "caption": "应用示意：液压部件试验台上的压力测量。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "采集液压部件评估过程中的压力记录。",
+      "description": "通过额定压力符合要求的试验阀块接口，采集液压部件评估过程中的压力读数。明确试验阶段、保压时长和测量频率，使数据能够回答计划验证的问题。将每条记录与被测总成和试验批次关联，并根据工程团队采用的验收判据选择合适的参考仪表和校准方案。",
+      "objective": "将液压试验压力与被测部件及试验阶段关联。",
+      "monitoringPoint": "使用试验阀块上额定压力符合要求、设有支撑的仪表支管，并配合选定的介质接口。",
+      "projectBrief": "试验压力和保压时间、油液及温度、所需测量不确定度、参考测量方法及数据导出需求。"
+    },
+    {
+      "index": 19,
+      "id": "chilled-water",
+      "group": "hvac-cooling",
+      "title": "冷冻水机房",
+      "image": {
+        "name": "chilled-water.webp",
+        "alt": "机房内的蓝色循环泵和钢制水系统集管，设有外露的带阀压力表。",
+        "caption": "应用示意：冷冻水循环集管处的压力测量。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "从机房掌握冷冻水压力。",
+      "description": "监测选定冷冻水泵集管及配水连接点的压力，将历史记录与泵运行、阀位以及所分析时段的冷负荷需求关联。项目在供水侧和回水侧均布置仪表时，可通过同步读数计算指定回路区段的压力差，帮助设施运维团队评估水力平衡调试及维护期间的运行状况。",
+      "objective": "结合泵运行状态及回路设置，对比冷冻水压力。",
+      "monitoringPoint": "经确认可用的供回水检修取压点，或选定泵集管上的压力接口。",
+      "projectBrief": "水或二醇类混合液、回路压力、温度、接口操作空间；需要时明确同步测量时间、所需测量的压力差及合成测量不确定度。"
+    },
+    {
+      "index": 20,
+      "id": "condenser-water",
+      "group": "hvac-cooling",
+      "title": "冷凝器冷却水与冷却塔",
+      "image": {
+        "name": "condenser-water.webp",
+        "alt": "冷却塔水泵及带支撑的出口管道，管道上设有压力表，后方为冷却塔结构。",
+        "caption": "应用示意：监测冷凝器冷却水泵出口压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将冷却回路压力纳入公用工程监测。",
+      "description": "监测选定冷凝器冷却水泵出口及循环回路检修取压点的压力。清晰标识测点，便于设施运维团队结合泵的投入级数、冷却塔运行和维护调整对比读数。根据循环水及水处理方案选择适合的工艺连接，再围绕团队需要分析的运行时段制定测量计划。",
+      "objective": "掌握冷却系统运行变化期间的循环水压力。",
+      "monitoringPoint": "泵出口或选定循环水集管上带检修隔离功能的连接点。",
+      "projectBrief": "回路压力、水处理方案、运行温度、现场环境条件及相关设备运行状态。"
+    },
+    {
+      "index": 21,
+      "id": "heating-circuits",
+      "group": "hvac-cooling",
+      "title": "热水供暖回路",
+      "image": {
+        "name": "heating-circuits.webp",
+        "alt": "商业建筑锅炉房内的红色和蓝色热水集管，设有便于接近和操作的压力表。",
+        "caption": "应用示意：商业建筑机房内的热水供回水压力测量。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "在整个供暖季持续掌握回路压力。",
+      "description": "监测选定热水供暖集管、泵连接点或配水支路的压力。通过明确命名的回路测点，将压力记录与设备运行计划、温度变化及计划内阀门调整进行对照。根据仪表连接处的水温确定取压连接和温度管理方案，并选择能反映建筑正常使用及节能降温运行时段的数据上报周期。",
+      "objective": "跟踪建筑正常使用及节能降温运行期间的供暖水压力。",
+      "monitoringPoint": "经确认可用的水系统检修取压点，配合选定的隔离和温度管理方案。",
+      "projectBrief": "连接处水温、回路压力、流体组成、热隔离或降温接口方案及监测计划。"
+    },
+    {
+      "index": 22,
+      "id": "data-centre-cooling",
+      "group": "hvac-cooling",
+      "title": "数据中心液冷",
+      "image": {
+        "name": "data-centre-cooling.webp",
+        "alt": "成排数据中心机柜旁的不锈钢液冷集管及带封帽的检修接口。",
+        "caption": "应用示意：数据中心液冷系统的检修侧取压连接。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "为每个冷却液回路建立清晰的压力记录。",
+      "description": "监测数据中心冷却液分配单元（CDU）或选定机柜冷却回路上经确认可用的检修取压点。标识回路、供液或回液侧及运行状态，便于设施运维团队对比调试及计划内负载变化期间的读数。根据冷却液的化学特性和连接器规格选择接口，并明确压力记录接入现场现有设施管理平台的方式。",
+      "objective": "记录调试及计划内负载变化期间的冷却液回路压力。",
+      "monitoringPoint": "选定供液或回液集管上，经CDU或回路制造商认可的仪表接口。",
+      "projectBrief": "冷却液化学特性、压力和温度、连接器认可要求、测量时间及设施管理系统接口。"
+    },
+    {
+      "index": 23,
+      "id": "refrigeration-circuits",
+      "group": "hvac-cooling",
+      "title": "制冷与热泵回路",
+      "image": {
+        "name": "refrigeration-circuits.webp",
+        "alt": "工业制冷压缩机配有保温管道、带封帽的检修接头及双表制冷剂歧管。",
+        "caption": "应用示意：制冷剂回路的检修接口与压力测量。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "为制冷剂回路确定适合的压力监测方案。",
+      "description": "根据制冷剂、压力范围及连接要求选择专用配置，监测选定制冷或热泵检修点的压力。将回路及运行状态与读数一并记录，为检修分析及计划内不同工况的比较提供依据。确定监测安装方案时，结合设备要求确认密封接口、安装程序及温度管理方案。",
+      "objective": "记录约定检修点及运行状态下的制冷剂回路压力。",
+      "monitoringPoint": "经设备方认可的制冷压力检修接口，配合指定的密封连接。",
+      "projectBrief": "制冷剂、最高工作压力及检修压力、温度、检修接头和设备安装要求。",
+      "configurationLabel": "按制冷剂选配的工艺配置"
+    },
+    {
+      "index": 24,
+      "id": "ventilation-pressure",
+      "group": "hvac-cooling",
+      "title": "通风与空气过滤器压力",
+      "image": {
+        "name": "ventilation-pressure.webp",
+        "alt": "打开的空气处理机组展示折叠式过滤器区段，以及连接透明导压管的小型取压接头。",
+        "caption": "应用示意：暖通空调空气处理机组内的过滤器取压。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "为通风系统选择适合的低压测量方案。",
+      "description": "针对空气处理及通风项目，为风管静压或空气过滤器区段选择适合的低量程或差压配置。根据采用的测量基准，明确取压口和导压管布置。将压力记录与风机转速及选定工况关联，便于设施运维团队在调试和检修期间分析空气系统的运行状况。",
+      "objective": "在明确的风机运行状态下，对比风管或过滤器区段的压力。",
+      "monitoringPoint": "经确认可用的风管静压取压口，配合选定的参考压力及导压管布置。",
+      "projectBrief": "所需低压测量范围、差压或参考压力布置、取压口位置、风机运行状态信息及仪表配置。",
+      "configurationLabel": "低压／差压项目配置"
+    },
+    {
+      "index": 25,
+      "id": "steam-distribution",
+      "group": "energy-utilities",
+      "title": "工业蒸汽输配",
+      "image": {
+        "name": "steam-distribution.webp",
+        "alt": "保温蒸汽管道上设有小型隔离阀、连续连接的虹吸管和机械压力表。",
+        "caption": "应用示意：通过带隔离阀的虹吸管连接测量蒸汽压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "根据蒸汽工况确定工艺接口。",
+      "description": "采用适合安装条件的压力测量配置及热隔离或降温接口，监测选定蒸汽母管检修点的压力。明确隔离、冷却或隔膜方案，使仪表在其允许的运行条件内承受预定压力。记录母管名称及运行状态，为公用工程团队比较计划生产时段的蒸汽供应压力提供必要背景。",
+      "objective": "跟踪指定生产及公用工程运行时段的蒸汽母管压力。",
+      "monitoringPoint": "经确认可用的蒸汽仪表取压点，配合隔离措施及指定的冷却或隔膜接口。",
+      "projectBrief": "蒸汽压力和温度、热隔离或降温接口、连接规格、现场要求及测量计划。",
+      "configurationLabel": "蒸汽接口项目配置"
+    },
+    {
+      "index": 26,
+      "id": "boiler-feedwater",
+      "group": "energy-utilities",
+      "title": "锅炉给水系统",
+      "image": {
+        "name": "boiler-feedwater.webp",
+        "alt": "立式多级给水泵连接不锈钢集管，集管上设有带阀压力表。",
+        "caption": "应用示意：多级泵撬装系统的给水出口压力测量。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将给水压力与锅炉运行关联。",
+      "description": "监测选定锅炉给水泵出口或给水管线检修取压点的压力。将读数与泵的投入级数及所分析运行时段关联，便于公用工程团队结合锅炉运行计划比较供水条件。为给水系统选择符合额定工况的连接、压力范围及热隔离或降温接口，并根据现场规程规划校准和维护所需的操作空间。",
+      "objective": "将给水压力与锅炉运行负荷及泵运行状态关联。",
+      "monitoringPoint": "给水泵出口或选定给水管线上，额定工况符合要求且经确认可用的仪表支路。",
+      "projectBrief": "给水压力和温度、连接额定参数、温度管理方案、运行状态及维护操作空间。"
+    },
+    {
+      "index": 27,
+      "id": "district-heating",
+      "group": "energy-utilities",
+      "title": "区域供热换热站",
+      "image": {
+        "name": "district-heating.webp",
+        "alt": "板式换热器及带支撑的供暖水集管，分别设有独立的带阀压力表。",
+        "caption": "应用示意：区域供热换热站的供回水压力测量。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "掌握分布式换热站的回路压力。",
+      "description": "监测区域供热换热站内选定一次和二次回路检修点的压力。清晰的回路及连接点标识，便于运行人员对比不同建筑的记录，并分析计划内泵或阀门调整。根据各回路的温度和水质选择工艺接口；项目需要比较入口、出口或供回水压力时，明确同步测量时间。",
+      "objective": "对比供热网络中明确标识的换热站压力测点。",
+      "monitoringPoint": "按各回路要求选定、经确认可用的一次或二次集管取压点。",
+      "projectBrief": "一次和二次回路量程、水温、水质、连接点操作空间及跨站点数据上报需求；所需测量的压力差及合成测量不确定度。"
+    },
+    {
+      "index": 28,
+      "id": "gas-regulation",
+      "group": "energy-utilities",
+      "title": "燃气调压站",
+      "image": {
+        "name": "gas-regulation.webp",
+        "alt": "室外燃气调压撬装系统，设有膜片式调压器、黄色管路及小型仪表支路。",
+        "caption": "应用示意：燃气调压站的仪表取压支路。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "明确燃气设施中的压力测量位置。",
+      "description": "针对燃气公用工程项目，选择符合气体介质、调压站条件及现场准入要求的压力监测配置。明确上游或下游检修测点及其正常运行范围。将压力记录与调压器设置、用气需求时段及维护事件对照，为公用工程团队提供该设施指定区段的清晰压力历史。",
+      "objective": "为明确标识的燃气调压检修测点保留压力历史。",
+      "monitoringPoint": "选定调压级连接处，经燃气系统认可且带隔离措施的仪表取压点。",
+      "projectBrief": "气体组成、压力基准及范围、连接材料、区域分类和所需设备批准或认证。",
+      "configurationLabel": "燃气及现场准入要求配置"
+    },
+    {
+      "index": 29,
+      "id": "fuel-transfer",
+      "group": "energy-utilities",
+      "title": "燃料输送与储存公用系统",
+      "image": {
+        "name": "fuel-transfer.webp",
+        "alt": "燃料输送泵安装在带围挡的撬装底座上，连接封闭管路及带隔离措施的仪表支路，后方为储罐。",
+        "caption": "应用示意：燃料输送泵撬装系统上的压力仪表。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "结合泵运行状态掌握输送压力。",
+      "description": "采用适合燃料介质和安装条件的配置，监测选定燃料输送泵出口或公用管线的压力。将记录与输送时段、阀门设置及明确标识的泵或储罐连接点关联。在项目选型时明确接液材料相容性、压力范围及现场准入要求，再选择适合输送与维护流程的数据上报计划。",
+      "objective": "掌握指定泵送时段的燃料输送压力。",
+      "monitoringPoint": "经燃料系统认可的取压点，配合指定隔离措施及相容的接液接口。",
+      "projectBrief": "燃料组成、压力范围、温度、材料相容性、安装区域分类及输送计划。",
+      "configurationLabel": "燃料及现场准入要求配置"
+    },
+    {
+      "index": 30,
+      "id": "power-plant-auxiliaries",
+      "group": "energy-utilities",
+      "title": "发电设施辅助用水",
+      "image": {
+        "name": "power-plant-auxiliaries.webp",
+        "alt": "辅助用水泵房内的蓝色泵集管，设有便于接近和操作的带阀压力表。",
+        "caption": "应用示意：电厂辅助冷却水出口压力测量。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "为辅助用水回路建立共享运行记录。",
+      "description": "监测发电设施内选定辅助冷却水泵及检修集管的压力。按回路和连接位置命名各测点，便于运行人员将历史记录与泵状态及电厂运行计划对照。根据水回路选择工艺材料和适合现场环境的安装方案，再将压力记录接入项目的公用工程监测平台。",
+      "objective": "对比电厂内明确标识的检修测点的辅助用水压力。",
+      "monitoringPoint": "经确认可用的泵出口或配水集管检修取压点。",
+      "projectBrief": "回路压力、水质、运行温度、电厂环境及所需数据接口。"
+    },
+    {
+      "index": 31,
+      "id": "chemical-transfer",
+      "group": "process-manufacturing",
+      "title": "化学品输送与计量投加",
+      "image": {
+        "name": "chemical-transfer.webp",
+        "alt": "化学品输送泵与封闭金属管路，设有隔膜式仪表支路，后方为工艺储罐。",
+        "caption": "应用示意：化学品输送泵处设有隔离措施的取压连接。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "根据介质化学特性选择取压接口。",
+      "description": "根据介质选择接液材料及工艺接口，监测明确标识的化学品输送或计量泵压力测点。将读数与输送阶段、泵设置及运行时段关联，便于工艺团队比较供料条件。对需要隔离接口的介质，将隔膜方案及检修程序纳入项目技术要求。",
+      "objective": "将化学品输送压力与明确标识的计量投加或泵送阶段关联。",
+      "monitoringPoint": "经工艺系统认可的取压点，采用相容材料或指定的隔离膜片。",
+      "projectBrief": "化学品组成与浓度、压力、温度、接液材料相容性及清洗或检修程序。",
+      "configurationLabel": "化学介质相容的工艺配置"
+    },
+    {
+      "index": 32,
+      "id": "food-beverage",
+      "group": "process-manufacturing",
+      "title": "食品与饮料工艺管线",
+      "image": {
+        "name": "food-beverage.webp",
+        "alt": "不锈钢饮料工艺泵与采用卫生型卡箍连接的管道，设有隔膜式仪表组件。",
+        "caption": "应用示意：饮料输送撬装系统上的卫生型压力仪表。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将产品输送压力与工艺过程关联。",
+      "description": "根据产品特性及卫生要求选择工艺配置，监测选定食品或饮料输送阶段的压力。将管线及运行阶段与读数一并标识，便于对比不同生产批次。与工艺团队共同明确卫生型连接、接液材料及清洗条件，使压力测量装置符合管线既定的维护方式。",
+      "objective": "按管线及生产阶段对比产品输送压力。",
+      "monitoringPoint": "经工艺系统认可的卫生型取压连接，配合指定的卫生型接口。",
+      "projectBrief": "产品特性、压力和温度、卫生型接头、所需卫生要求证明文件及清洗条件。",
+      "configurationLabel": "卫生型工艺配置"
+    },
+    {
+      "index": 33,
+      "id": "cip-cleaning",
+      "group": "process-manufacturing",
+      "title": "CIP原位清洗撬装系统",
+      "image": {
+        "name": "cip-cleaning.webp",
+        "alt": "不锈钢CIP清洗罐和供液管道，前方集管上设有压力表。",
+        "caption": "应用示意：在明确的供液和回液测点跟踪清洗回路压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将清洗回路压力纳入运行记录。",
+      "description": "采用适合清洗介质和温度的接口，监测选定原位清洗供液或回液测点的压力。将读数与明确标识的回路及清洗阶段关联，便于工程团队对比计划内清洗运行。明确卫生型连接及清洗相容性，同时确定所需测量间隔，以及压力记录与现场过程控制系统记录的对接方式。",
+      "objective": "记录明确划分的CIP清洗阶段中供液或回液侧的压力。",
+      "monitoringPoint": "选定CIP集管或管线上经确认可用的卫生型取压点。",
+      "projectBrief": "清洗剂及浓度、压力、温度循环、卫生型连接及工艺记录集成要求。",
+      "configurationLabel": "适配清洗条件的工艺配置"
+    },
+    {
+      "index": 34,
+      "id": "pharma-laboratory",
+      "group": "process-manufacturing",
+      "title": "制药与实验室撬装系统",
+      "image": {
+        "name": "pharma-laboratory.webp",
+        "alt": "洁净实验室内的中试规模不锈钢工艺容器、循环泵及集管压力表。",
+        "caption": "应用示意：根据实验室工艺及接液材料要求确定压力测量方案。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "围绕工艺要求确定压力记录方案。",
+      "description": "采用适合介质及项目文件要求的配置，监测选定中试工艺或实验室流体系统压力测点。将每条读数与撬装系统、实验或明确划分的工艺阶段关联。约定压力范围、仪表测量不确定度、校准记录，以及需要时采用的卫生型接口，使所获得的数据能够支持待评估的工程或研究问题。",
+      "objective": "将压力记录与明确标识的实验室或中试工艺阶段关联。",
+      "monitoringPoint": "经确认可用的撬装系统或研究用集管压力接口，配合选定的卫生型或工艺接口。",
+      "projectBrief": "介质、压力测量范围、不确定度要求、校准文件、工艺连接及数据记录要求。",
+      "configurationLabel": "按文件要求选配的实验室／工艺配置"
+    },
+    {
+      "index": 35,
+      "id": "industrial-filtration",
+      "group": "process-manufacturing",
+      "title": "工业过滤与膜处理撬装系统",
+      "image": {
+        "name": "industrial-filtration.webp",
+        "alt": "钢制框架上安装蓝色卧式膜壳，配有进料管道及带阀压力表。",
+        "caption": "应用示意：跟踪进料压力，并在过滤工艺前后设置独立测点。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "对比分离工艺段前后的压力。",
+      "description": "监测选定过滤或膜处理撬装系统进出口集管的压力。将读数与工艺阶段、泵运行及相关流量记录关联，便于工程人员对比不同运行批次的条件。两侧均安装仪表时，明确同步测量安排以计算压力差，并根据所测原液、浓缩液或滤液选择材料和连接方式。",
+      "objective": "对比明确标识的过滤或膜处理工艺段前后的压力。",
+      "monitoringPoint": "选定撬装系统进出口集管上各自独立、额定工况符合要求的压力接口。",
+      "projectBrief": "工艺介质、进出口量程、运行温度、材料及同步测量时间；所需测量的压力差及合成测量不确定度。"
+    },
+    {
+      "index": 36,
+      "id": "dispensing-pressure",
+      "group": "process-manufacturing",
+      "title": "涂料定量供料与胶黏剂点胶",
+      "image": {
+        "name": "dispensing-pressure.webp",
+        "alt": "胶黏剂料桶压盘泵通过软管连接带压力表的集管，旁边为设有防护围栏的生产单元。",
+        "caption": "应用示意：在选定定量供料或点胶集管处测量物料供料压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "跟踪输送至物料集管的压力。",
+      "description": "通过定量供料或点胶系统认可的连接，监测选定涂料或胶黏剂供料压力测点。将物料、配方及运行阶段与压力记录一并保留，便于设备设定及维护时进行对比。根据黏度、化学相容性及清洗方式选择接口，并围绕工程团队需要分析的供料动作，明确所需测量响应。",
+      "objective": "跟踪指定定量供料或点胶配置下的物料供料压力。",
+      "monitoringPoint": "物料供给或定量供料／点胶集管上经设备方认可的仪表接口。",
+      "projectBrief": "物料及黏度、压力范围、清洗方法、工艺连接及所需测量响应。"
+    },
+    {
+      "index": 37,
+      "id": "irrigation-headworks",
+      "group": "agriculture-water",
+      "title": "灌溉泵站与过滤首部",
+      "image": {
+        "name": "irrigation-headworks.webp",
+        "alt": "绿色灌溉水泵与过滤罐，设有支撑的主管上安装着压力表",
+        "caption": "应用示意：监测灌溉用水进入管网前的首部压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "掌握灌溉水源端可提供的压力。",
+      "description": "监测灌溉水泵出口、过滤组件或输水主管的压力，并将历史数据与水泵运行、过滤设备维护时段及所供灌溉分区对应。为首部测点明确命名，可为种植者和灌溉运维团队提供有效参照，用于比较按计划进行的灌溉运行，并在调整阀门、水泵设定或配水管网之前评估供水状况。",
+      "objective": "了解水源端可为当前供水的灌溉分区提供的压力。",
+      "monitoringPoint": "水泵、过滤器或输水歧管上经批准且配有阀门的取压口。",
+      "projectBrief": "水泵与过滤器压力、水质、灌溉计划、户外环境条件及现场通信覆盖。"
+    },
+    {
+      "index": 38,
+      "id": "greenhouse-irrigation",
+      "group": "agriculture-water",
+      "title": "温室灌溉分区",
+      "image": {
+        "name": "greenhouse-irrigation.webp",
+        "alt": "番茄玻璃温室内的蓝色四分区灌溉歧管，配有阀门和压力表",
+        "caption": "应用示意：通过各分区的专用压力测点了解灌溉供水状况。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "为每个种植分区建立压力参照。",
+      "description": "监测选定温室灌溉主管或分区歧管的压力。将测量数据与作物种植区域及阀门启闭计划关联，比较计划浇灌期间的供水状况。在分区供水端附近选择具有代表性的测点，并根据种植者使用的灌溉系统，明确压力范围、水的化学特性及观测时机。",
+      "objective": "按种植分区和浇灌时段比较灌溉压力。",
+      "monitoringPoint": "选定分区主管或灌溉歧管上配有阀门的取压口。",
+      "projectBrief": "分区布局、工作压力、水及营养液的化学特性、阀门启闭计划与温室环境。"
+    },
+    {
+      "index": 39,
+      "id": "orchard-drip",
+      "group": "agriculture-water",
+      "title": "果园与葡萄园滴灌管网",
+      "image": {
+        "name": "orchard-drip.webp",
+        "alt": "葡萄园灌溉主管，配有隔离阀、压紧式管接头和压力表",
+        "caption": "应用示意：比较主管与各滴灌分区供水点的压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "跟踪滴灌管网各位置的压力。",
+      "description": "监测果园或葡萄园内选定的供水歧管及具有代表性的滴灌支路。为各测点记录所属地块和高程，便于团队在相同灌溉计划下比较压力。评估供水状况或规划管网调整时，结合阀门设定、正在灌溉的分区及系统设计目标解读观测数据。",
+      "objective": "比较灌溉期间指定地块及支路测点的压力。",
+      "monitoringPoint": "地块歧管或选定支路主管上经批准且采取保护措施的检修取压口。",
+      "projectBrief": "地块高程、设计压力、同时运行的灌溉分区、户外安装条件及数据上报通信覆盖。"
+    },
+    {
+      "index": 40,
+      "id": "livestock-water",
+      "group": "agriculture-water",
+      "title": "畜禽饮用水管网",
+      "image": {
+        "name": "livestock-water.webp",
+        "alt": "牛舍旁的农场供水增压泵、膨胀罐及歧管压力表",
+        "caption": "应用示意：跟踪畜禽饮用水管网的供水压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "持续掌握农场供水压力。",
+      "description": "监测为畜禽饮用水系统供水的选定农场水泵出口和配水主管。压力历史数据可为农场团队记录日常用水需求时段及计划维护期间的供水状况。明确各连接点服务的建筑或畜禽群组，并在排查供水问题时，结合水泵状态及现场检查结果查看测量数据。",
+      "objective": "跟踪各已命名供水区域的农场饮用水压力。",
+      "monitoringPoint": "农场水泵或配水歧管上经批准且配有阀门的取压连接。",
+      "projectBrief": "与水接触的材料要求、压力范围、所服务的建筑、农场环境及预期运行时段。"
+    },
+    {
+      "index": 41,
+      "id": "fertigation",
+      "group": "agriculture-water",
+      "title": "水肥一体化与营养液投加",
+      "image": {
+        "name": "fertigation.webp",
+        "alt": "农场水肥一体化储罐上方的三台营养液投加泵，供水主管上装有压力表",
+        "caption": "应用示意：在混合及营养液投加供水环节周围设置明确的压力测点。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将投加阶段压力与灌溉运行关联。",
+      "description": "监测水肥一体化系统中选定的进水、混合或投加歧管压力测点。将测量数据与营养液配方、灌溉分区及运行阶段关联，便于种植者比较不同运行条件。根据溶液的化学特性与清洗方式选择取压接口，并结合项目使用的投加控制器及灌溉记录明确观测时机。",
+      "objective": "将压力观测数据与水肥一体化运行阶段及营养液配方关联。",
+      "monitoringPoint": "选定进水、混合或投加歧管上经批准的检修取压口。",
+      "projectBrief": "营养液化学特性、压力、歧管材料、清洗流程、对应配方及运行时序。"
+    },
+    {
+      "index": 42,
+      "id": "aquaculture-circulation",
+      "group": "agriculture-water",
+      "title": "水产养殖循环水系统",
+      "image": {
+        "name": "aquaculture-circulation.webp",
+        "alt": "圆形养殖池前的水产养殖循环泵与过滤罐，配有带阀门的压力表",
+        "caption": "应用示意：在选定水泵与过滤器测点监测循环管路压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "跟踪水循环与处理各环节的压力。",
+      "description": "监测循环水养殖系统中选定的循环泵出口及过滤歧管压力。按处理阶段与养殖池循环回路为各测点命名，便于操作人员比较水泵变更和计划维护期间的记录。根据淡水或盐水介质选择接液材料，并结合运行计划及系统已有的水流量信息解读观测数据。",
+      "objective": "比较各已命名养殖循环回路中的循环与处理阶段压力。",
+      "monitoringPoint": "选定水泵出口或过滤歧管上经批准且配有阀门的取压口。",
+      "projectBrief": "淡水或盐水介质、压力范围、材料兼容性、污堵与清洗安排及回路标识。"
+    },
+    {
+      "index": 43,
+      "id": "mobile-hydraulics",
+      "group": "specialist-systems",
+      "title": "移动机械液压回路",
+      "image": {
+        "name": "mobile-hydraulics.webp",
+        "alt": "履带式挖掘机的液压检修舱处于打开状态，歧管上的测试接头带有保护盖",
+        "caption": "应用示意：通过经批准的液压检修接口，观察指定机械回路的压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "让液压检修压力记录随设备归档。",
+      "description": "在明确的运行或维护观测过程中，监测移动式工程机械或作业设备上经批准的液压测试点。将压力记录与设备、回路及测试状态关联，便于工程师比较不同检修期间的结果。根据任务明确压力范围及测量响应要求，并采用适合设备环境且具有保护措施的连接方式。",
+      "objective": "将机械液压压力记录与对应回路及测试条件关联。",
+      "monitoringPoint": "固定且受保护的歧管上符合设备许可要求的液压检修接口或测试接口。",
+      "projectBrief": "设备许可要求、回路压力范围、液压介质、运行状态、响应要求及连接管线的防护布置。"
+    },
+    {
+      "index": 44,
+      "id": "portable-pumps",
+      "group": "specialist-systems",
+      "title": "移动泵组与公用工程撬装设备",
+      "image": {
+        "name": "portable-pumps.webp",
+        "alt": "柴油驱动的移动泵组撬装设备，竖直出口管上装有带阀门的压力表",
+        "caption": "应用示意：在移动泵组转场至不同项目现场时监测其出口压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将压力记录与每次临时安装对应。",
+      "description": "监测在不同现场部署的移动泵组及公用工程撬装设备的出口压力或选定服务管路压力。将测量数据与撬装设备编号及当前安装位置关联，便于检修团队评估每次部署的运行条件。在设备框架内选择有支撑的连接点，并根据当前作业明确压力范围、介质及数据上报计划。",
+      "objective": "将压力历史记录与移动撬装设备的每次部署关联。",
+      "monitoringPoint": "撬装设备出口或选定服务歧管上经批准且有支撑的取压支路。",
+      "projectBrief": "部署工况、工艺介质、压力范围、连接防护、供电安排及数据上报通信覆盖。"
+    },
+    {
+      "index": 45,
+      "id": "marine-auxiliary",
+      "group": "specialist-systems",
+      "title": "船舶用水与辅助水系统",
+      "image": {
+        "name": "marine-auxiliary.webp",
+        "alt": "船舶舱壁旁的不锈钢供水泵，其竖直出口管上装有压力表",
+        "caption": "应用示意：将选定的船舶用水系统压力测点纳入监测项目。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将船上供水压力纳入维护记录。",
+      "description": "监测商用船舶上选定的淡水或辅助用水系统水泵及歧管压力测点。明确船上回路及运行状态，便于船舶工程团队在运行和维护期间比较相同条件下的记录。根据水的化学特性、振动条件及船舶环境选择接口，并依据船上通信配置明确测量数据的记录和传输方式。",
+      "objective": "跟踪指定船舶供水回路的压力。",
+      "monitoringPoint": "选定水泵出口或供水歧管上经批准且可靠固定的仪表连接。",
+      "projectBrief": "回路介质、压力与温度、腐蚀环境、安装许可要求及船上数据传输安排。"
+    },
+    {
+      "index": 46,
+      "id": "pipe-commissioning",
+      "group": "specialist-systems",
+      "title": "管道投运保压测试",
+      "image": {
+        "name": "pipe-commissioning.webp",
+        "alt": "已隔离并封堵的钢制管段，连接静水压试验泵及压力表歧管",
+        "caption": "应用示意：在明确的管道保压测试程序期间记录压力。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将保压记录与受试管段关联。",
+      "description": "在隔离管段按工程方案开展保压测试期间采集压力数据。随记录注明管段、测试介质、保压时段及环境条件。依据约定的投运测试程序选择测量范围、观测间隔及经校准的参考测量配置，为项目团队提供清晰记录，供其结合验收标准进行评审。",
+      "objective": "在明确的管道投运保压测试阶段记录压力。",
+      "monitoringPoint": "隔离测试歧管或受试管段上经批准且额定压力符合要求的仪表支路。",
+      "projectBrief": "测试压力、介质、保压时长、测量不确定度及参考测量要求、采样间隔与报告格式。"
+    },
+    {
+      "index": 47,
+      "id": "product-pressure-tests",
+      "group": "specialist-systems",
+      "title": "产品压力与密封测试工位",
+      "image": {
+        "name": "product-pressure-tests.webp",
+        "alt": "透明压力测试防护罩内夹持固定的阀门组件，连接外部压力表及调压歧管",
+        "caption": "应用示意：记录产品组件规定的测试压力及保压时段。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "将每次压力测试与对应生产信息关联。",
+      "description": "在明确的产品保压或密封测试阶段，通过额定压力符合要求的测试歧管采集压力数据。将数据与受试组件、测试配方及单次测试关联，便于质量与工程团队比较记录。根据生产测试工位采用的程序和验收标准，明确压力范围、测量响应及校准配置。",
+      "objective": "将产品测试压力记录与受试组件及测试程序关联。",
+      "monitoringPoint": "测试工位中配有调压装置且额定压力符合要求的歧管上经批准的仪表接口。",
+      "projectBrief": "测试介质与压力、稳定时间与保压时间、测量响应、验收方法及追溯信息字段。"
+    },
+    {
+      "index": 48,
+      "id": "research-pressure-rigs",
+      "group": "specialist-systems",
+      "title": "科研与校准压力试验装置",
+      "image": {
+        "name": "research-pressure-rigs.webp",
+        "alt": "实验台歧管上的实验室手动压力泵，连接圆形参考压力表及不锈钢受试部件",
+        "caption": "应用示意：根据校准任务匹配压力试验装置、参考仪表及测试范围。",
+        "focalPoint": "50% 50%",
+        "kind": "ai-illustration"
+      },
+      "tagline": "让压力记录对应具体研究问题。",
+      "description": "通过额定压力符合要求的实验室压力歧管，为明确的部件、材料或工艺研究采集测量数据。将测试配置、介质及测试阶段随数据一并记录，便于比较不同实验的结果。根据研究所要求的测量不确定度及时间尺度，选择量程、观测频率和经校准的参考仪表，再确定适合的数据导出方式或平台接口。",
+      "objective": "确保压力观测数据可追溯至对应的实验配置及测试阶段。",
+      "monitoringPoint": "实验室测试歧管上有支撑且额定压力符合要求的仪表支路，并配套选定的参考测量配置。",
+      "projectBrief": "研究所需量程、介质与温度、目标测量不确定度、事件时间尺度、校准参考仪表及数据导出格式。"
+    }
+  ],
+  "specifications": {
+    "description": "以下参数用于系列选型。实际交付配置需明确量程、压力基准、介质兼容性及完整安装组件。工作温度指设备所处环境；介质与清洁过程的温度范围按所选探头和过程组件分别规定。",
+    "datasheet_url": "https://www.hitelecom.com/downloads/h300-pressure-sensor-datasheet.pdf",
+    "rows": [
+      {
+        "label": "系列型号",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "可选测量范围",
+        "value": "0–1 / 0–1.6 / 0–3.5 / 0–7 / 0–10 / 0–20 / 0–35 / 0–100 MPa；交付配置选定一个相应量程。"
+      },
+      {
+        "label": "压力单位换算",
+        "value": "1 MPa = 10 bar ≈ 145 psi。"
+      },
+      {
+        "label": "测量精度",
+        "value": "±0.5% FS；支持按需定制更高精度配置，具体指标与适用条件按项目确定。"
+      },
+      {
+        "label": "年稳定性",
+        "value": "±0.2% FS/年；与测量精度分别规定。"
+      },
+      {
+        "label": "过载参考",
+        "value": "≤2 倍满量程压力，属于校准测量范围之外的承受条件；所选量程与完整组件的等级分别确认，过载参考与爆破压力区分。"
+      },
+      {
+        "label": "无线连接",
+        "value": "4G Cat.1 / NB-IoT / LoRa，按型号与交付版本选择。"
+      },
+      {
+        "label": "数据协议",
+        "value": "MQTT；无线数据路径与平台接口按所选方案确定。"
+      },
+      {
+        "label": "供电与续航",
+        "value": "内置电池供电。每 10 分钟采样、每 4 小时上报、环境温度 25°C、正常信号条件下，续航设计参考值超过 10 年；实际寿命随型号、电池、测量任务与运行条件变化。"
+      },
+      {
+        "label": "外壳防护",
+        "value": "无线终端外壳 IP68；探头、接头与完整装配的适用条件分别按交付配置确定。"
+      },
+      {
+        "label": "工作温度",
+        "value": "−20°C 至 +80°C；介质与清洁过程的温度范围按所选探头及过程组件分别规定。"
+      },
+      {
+        "label": "储存条件",
+        "value": "按交付型号与组件配置确定。"
+      },
+      {
+        "label": "本地配置",
+        "value": "支持 NFC 的型号可进行激活、接入与维护设置，具体功能按所选设备确定。"
+      },
+      {
+        "label": "远程固件服务",
+        "value": "通过已配置的平台进行 OTA 升级，按交付版本与接入方案确定。"
+      },
+      {
+        "label": "终端安装",
+        "value": "安装耳、抱杆夹具或槽式安装结构，按交付配置选择。"
+      },
+      {
+        "label": "定制选项",
+        "value": "测量范围、工艺螺纹、压力探头、线缆，以及无线连接和上报配置可按项目定制。"
+      }
+    ]
+  },
+  "provenance": {
+    "checked": "2026-10-09",
+    "sources": [
+      {
+        "id": "hitelecom-pressure-page",
+        "title": "H Series Pressure Sensor — live product page",
+        "url": "https://www.hitelecom.com/product/pressure-sensor",
+        "ref": "turn119view0",
+        "type": "manufacturer_product_page",
+        "retrieved": "2026-10-09",
+        "notes": "Older displayed range list ends at20MPa; PDF is the broader current published range evidence."
+      },
+      {
+        "id": "hitelecom-pressure-pdf",
+        "title": "H Series Pressure Sensor Datasheet",
+        "url": "https://www.hitelecom.com/downloads/h300-pressure-sensor-datasheet.pdf",
+        "ref": "turn122view0",
+        "type": "manufacturer_datasheet",
+        "retrieved": "2026-10-09",
+        "pages": 3,
+        "notes": "Retrieved through the live product download link16. Direct URL open initially inaccessible; link traversal succeeded."
+      },
+      {
+        "id": "wika-handbook",
+        "title": "WIKA Handbook Pressure & Temperature Measurement",
+        "url": "https://www.wika.com/media/Brochures-and-flyers/EN-UM/br_rfhandbook_en_um.pdf",
+        "ref": "turn126view1",
+        "type": "manufacturer_engineering_handbook",
+        "retrieved": "2026-10-09",
+        "evidence": "PDFpages110–112 distinguish response time, full-scale accuracy and process/ambient/compensated temperatures; pages126–128 cover measuring-line arrangements."
+      },
+      {
+        "id": "ifm-selection",
+        "title": "Find the right pressure sensor for your application",
+        "url": "https://www.ifm.com/us/en/us/learn-more/pressure/select-by-application",
+        "ref": "turn124view1",
+        "type": "manufacturer_engineering_selection_guide",
+        "retrieved": "2026-10-09",
+        "evidence": "Separate selections for media, technology, medium temperature, overload and hygienic uses show why one generic sensor cannot be assumed appropriate for every medium."
+      },
+      {
+        "id": "ifm-installation",
+        "title": "PM15 with sanitary adapter system — installation guidelines",
+        "url": "https://www.ifm.com/us/en/us/learn-more/pressure/pm-py/pm15-installation-guidelines",
+        "ref": "turn124view2",
+        "type": "manufacturer_installation_guideline",
+        "retrieved": "2026-10-09",
+        "evidence": "Threaded process adapters, rated clamp/seal, specified tightening and atmospheric reference are installation-dependent. This describes ifm equipment, not an Hitelecom certification."
+      },
+      {
+        "id": "wika-pressure-types",
+        "title": "Types of pressure: Absolute pressure, gauge pressure, differential pressure",
+        "url": "https://www.wika.com/en-nl/lp_differential_pressure.WIKA",
+        "ref": "turn129view0",
+        "type": "manufacturer_engineering_explainer",
+        "retrieved": "2026-10-09",
+        "evidence": "Gauge uses ambient reference, absolute uses vacuum reference, differential measures two pressurepoints; pressure type must match the task."
+      },
+      {
+        "id": "wika-faq",
+        "title": "WIKA USA Frequently asked questions",
+        "url": "https://www.wika.com/en-us/faq.WIKA",
+        "ref": "turn124view0",
+        "type": "manufacturer_faq",
+        "retrieved": "2026-10-09",
+        "evidence": "Published manufacturer FAQ addresses pressure spikes, measurement accuracy, medium/temperature requirements, diaphragm seals and hazardous-area classification. It validates technical questions, not Hitelecom demand counts."
+      },
+      {
+        "id": "wika-snubber",
+        "title": "Pressure gauge snubber — Model910.12",
+        "url": "https://www.wika.com/en-za/910_12.WIKA",
+        "ref": "turn124view3",
+        "type": "manufacturer_product_engineering",
+        "retrieved": "2026-10-09",
+        "evidence": "Pressure pulsations and surges require suitable damping/protection; compresssors and hydraulic presses are named uses. Accessory availability/fit for Hitelecom must be separately specified."
+      },
+      {
+        "id": "endress-pressure",
+        "title": "Pressure measurement — Endress+Hauser",
+        "url": "https://www.us.endress.com/en/field-instruments-overview/pressure",
+        "ref": "turn126view2",
+        "type": "manufacturer_engineering_guide",
+        "retrieved": "2026-10-09",
+        "evidence": "Diaphragm seals isolate aggressive/abrasive/viscous or hot/hygienic process media; complete assembly conditions influence accuracy."
+      },
+      {
+        "id": "endress-pump",
+        "title": "Pump monitoring with EdP transmitters",
+        "url": "https://www.endress.com/en/endress-hauser-group/Case-studies-application-notes/electronic-differential-pressure-transmitters",
+        "ref": "turn129view1",
+        "type": "manufacturer_application_note",
+        "retrieved": "2026-10-09",
+        "evidence": "Pump assessment uses pressure relationships and operating context; this supports pressure-monitoring relevance but does not prove single-point leak diagnosis or identical Hitelecom capability."
+      },
+      {
+        "id": "wika-fast-recording",
+        "title": "USB pressure sensor — CPT2500",
+        "url": "https://www.wika.com/en-en/cpt2500.WIKA",
+        "ref": "turn129view2",
+        "type": "manufacturer_product_engineering",
+        "retrieved": "2026-10-09",
+        "evidence": "Pressure-spike recording explicitly specifies time resolution and recording intervals. Other instruments’ fast response cannot be transferred to the HSeries."
+      },
+      {
+        "id": "wika-pressure-sensor",
+        "title": "Pressure sensor — WIKA USA",
+        "url": "https://www.wika.com/en-us/lp_pressure_sensor.WIKA",
+        "ref": "turn126view0",
+        "type": "manufacturer_selection_page",
+        "retrieved": "2026-10-09",
+        "evidence": "Vacuum, low-range and high-range work use different sensor variants, ranges and pressure connections. Standard positive MPa ranges do not automatically establish vacuum/differential capability."
+      },
+      {
+        "id": "gsma-guide",
+        "title": "Mobile IoT Deployment Guide — October2022",
+        "url": "https://www.gsma.com/solutions-and-impact/technologies/internet-of-things/gsma_resources/mobile-iot-deployment-guide/",
+        "ref": "turn125search1",
+        "type": "industry association deployment guide",
+        "status": "search indexed; direct open403",
+        "supports": "Deployment interoperability and network/operator configuration matter.",
+        "scope": "Do not assert local operator coverage, roaming or power-saving functions without a deployment check."
+      },
+      {
+        "id": "gsma-deployment",
+        "title": "Mobile IoT Deployment Map",
+        "url": "https://www.gsma.com/solutions-and-impact/technologies/internet-of-things/deployment-map/",
+        "ref": "turn125search7",
+        "type": "industry association launch inventory",
+        "status": "search indexed; direct open403",
+        "supports": "NB-IoT is commercially launched on particular operator networks and deployments.",
+        "scope": "Commercial launch is not proof of coverage at an installation point."
+      },
+      {
+        "id": "lora-architecture",
+        "title": "What is LoRaWAN Specification",
+        "url": "https://lora-alliance.org/about-lorawan-old/",
+        "ref": "turn125view5",
+        "type": "standards association architecture",
+        "status": "opened",
+        "supports": "A LoRaWAN gateway relays end-device messages to network-server infrastructure.",
+        "scope": "Hitelecom public page says LoRa, not verified LoRaWAN; use this only to justify asking for the actual gateway/protocol architecture."
+      },
+      {
+        "id": "emerson-update",
+        "title": "Rosemount Wireless Pressure Gauge Reference Manual, May2025",
+        "url": "https://www.emerson.com/documents/automation/reference-manual-rosemount-wireless-pressure-gauge-en-80198.pdf",
+        "ref": "turn125view6",
+        "type": "manufacturer reference manual",
+        "status": "opened PDF",
+        "supports": "High-refresh pressure-measurement mode draws battery power faster.",
+        "scope": "Engineering principle only; do not transfer Emerson's update intervals, network type or battery estimate."
+      },
+      {
+        "id": "npl-calibration",
+        "title": "Calibration — National Physical Laboratory",
+        "url": "https://www.npl.co.uk/products-services/calibration",
+        "ref": "turn127view0",
+        "type": "national metrology institute service and FAQ",
+        "status": "opened",
+        "supports": "Calibration compares measurement with a recognized standard; recalibration timing follows demonstrated needs and quality systems rather than one universal interval.",
+        "scope": "Supports maintenance topic; no assertion that Hitelecom is accredited or supplies a particular calibration certificate."
+      }
+    ],
+    "factsSource": "Latest linked H Series PDF",
+    "faqMethod": "Public primary engineering and manufacturer topics; synthesized buyer guidance, not customer-frequency or keyword-volume statistics.",
+    "modelRadioScope": "H200/H300/H500 identifiers and4G/NB/LoRa options are published; no exact per-model radio assignment is inferred."
+  }
+}

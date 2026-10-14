@@ -2,7 +2,7 @@
 /**
  * 压力传感器页 V2 · 多语言注册表（GPT6 页面包 + 五语翻译包，Kimi 审核集成 2026-10-09）
  * 同 URL 上线：/{lang}/product/pressure-sensor（slug 不变，hreflang 闭环 /
- * sitemap / 内链均由路由层原有逻辑覆盖）。zh 不在本轮范围（保持经典模板）。
+ * sitemap / 内链均由路由层原有逻辑覆盖）。zh 已于 2026-10-14（V80）上线。
  * 用法：EN 路由省略 locale（默认 en）；其余语言 locale="es|de|ja|fr|ru"。
  * 数据：src/data/pressure-content(-{lang}).json；词典：dicts.mjs
  * （键=英文原文，EN 无条目，S() 回退原文保证 EN 零差异）；
@@ -23,6 +23,7 @@ import contentDe from '../../data/pressure-content-de.json';
 import contentJa from '../../data/pressure-content-ja.json';
 import contentFr from '../../data/pressure-content-fr.json';
 import contentRu from '../../data/pressure-content-ru.json';
+import contentZh from '../../data/pressure-content-zh.json';
 import '../../styles/pressure.css';
 
 const REGISTRY = {
@@ -32,6 +33,7 @@ const REGISTRY = {
   ja: { content: contentJa, prefix: '/ja' },
   fr: { content: contentFr, prefix: '/fr' },
   ru: { content: contentRu, prefix: '/ru' },
+  zh: { content: contentZh, prefix: '/zh' },
 };
 
 const { locale = 'en' } = Astro.props;
