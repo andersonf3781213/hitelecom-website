@@ -16,7 +16,7 @@ const groups = await Promise.all(content.groups.map(async group=>({...group,asse
 const datasheet = new URL(content.hero.datasheet_url, 'https://www.hitelecom.com').href;
 const measurementSymbols = {level:'m',span:'↕',accuracy:'±',pressure:'P',conditions:'℃',deployment:'↗'};
 ---
-<main id="main">
+<article id="level-content" class="ht-level">
   <div class="hero-band">
     <img class="hero-background" src={backgrounds.at(-1).src} srcset={backgrounds.map((x,i)=>`${x.src} ${widths[i]}w`).join(', ')} sizes="100vw" width={heroBackground.width} height={heroBackground.height} alt="" aria-hidden="true" loading="eager" decoding="async" />
     <div class="wrap breadcrumb" aria-label={S("Breadcrumb")}><a href={'https://www.hitelecom.com'+prefix}>{S("Home")}</a><span aria-hidden="true">/</span><a href={'https://www.hitelecom.com'+prefix+'/product'}>{S("IoT sensors")}</a><span aria-hidden="true">/</span><span>{S("Liquid level sensor")}</span></div>
@@ -47,7 +47,7 @@ const measurementSymbols = {level:'m',span:'↕',accuracy:'±',pressure:'P',cond
   <section class="section profile-section" id="operating-profile" aria-labelledby="profile-title"><div class="wrap">
     <div class="section-heading"><div><p class="eyebrow">{content.workflow.eyebrow}</p><h2 id="profile-title">{content.workflow.heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</h2></div><p>{content.workflow.profile_text}</p></div>
     <div class="level-workflow">{content.workflow.steps.map(step=><article><span class="step-number">{step.number}</span><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
-    <div class="profile-note"><div><span class="small-label">{S("REPORTING & POWER")}</span><strong>{content.workflow.battery_title}</strong></div><p>{content.workflow.battery_text}</p></div>
+    <div class="profile-note"><div><span class="small-label">{S("REPORTING & POWER")}</span><strong>{content.workflow.battery_title.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</strong></div><p>{content.workflow.battery_text}</p></div>
   </div></section>
 
   <section class="section application-section" id="applications" aria-labelledby="applications-title"><div class="wrap">
@@ -68,7 +68,7 @@ const measurementSymbols = {level:'m',span:'↕',accuracy:'±',pressure:'P',cond
 
   <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
     <div class="section-heading"><div><p class="eyebrow">{S("SERIES & CONFIGURATIONS")}</p><h2 id="specifications-title">{content.series.heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{i===0?line:<span>{line}</span>}</Fragment>)}</h2></div><p>{content.series.description}</p></div>
-    <div class="level-series">{content.series.models.map(model=><article id={'model-'+model.toLowerCase()}><span class="small-label">{S("MODEL FAMILY")}</span><h3>{model}</h3><p>{content.series.model_card_subtitle}</p><a href="#enquiry" class="text-link" data-model={model}>{S("Discuss this configuration ↗")}</a></article>)}</div>
+    <div class="level-series">{content.series.models.map(model=><article id={'model-'+model.toLowerCase()}><span class="small-label">{S("MODEL FAMILY")}</span><h3>{t.modelLabel?.[model] ?? model}</h3><p>{t.modelCards?.[model] ?? content.series.model_card_subtitle}</p><a href="#enquiry" class="text-link" data-model={model}>{t.modelCta?.[model] ?? "Discuss this configuration ↗"}</a></article>)}</div>
     <div class="level-spec-grid"><aside class="model-card"><span class="small-label">{S("CONFIGURATION REFERENCE")}</span><h3>{S("Choose measurements.")}<br/>{S("Match the site.")}</h3><p>{content.specifications.description}</p><a href={datasheet} target="_blank" rel="noopener" class="button button-outline">{S("Download family datasheet ↗")}</a><a href="#enquiry" class="text-link">{S("Get a configuration proposal ↓")}</a></aside><div class="spec-table"><table><caption>{S("H Series liquid level sensors — family configuration reference")}</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
     <div class="selection-list"><h3>{S("Bring the specification back to your project.")}</h3><div>{content.series.steps.map((step,index)=><article><span class="step-number">0{index+1}</span><h4>{step.title}</h4><p>{step.text}</p></article>)}</div></div>
   </div></section>
@@ -87,7 +87,7 @@ const measurementSymbols = {level:'m',span:'↕',accuracy:'±',pressure:'P',cond
       <div class="form-fields">
         <div class="field"><label for="application">{S("Application")} <span aria-hidden="true">*</span></label><select id="application" name="Application" required><option value="">{S("Choose your application")}</option>{content.groups.map(group=><optgroup label={group.title}>{content.applications.filter(scene=>scene.group===group.id).map(scene=><option value={scene.title}>{scene.title}</option>)}</optgroup>)}<option>{S("Other / project-specific")}</option></select></div>
         <div class="field"><label for="country">{S("Country / region")} <span aria-hidden="true">*</span></label><input id="country" name="Country" required autocomplete="country-name" placeholder={S("e.g. United Kingdom")} maxlength="100"/></div>
-        <div class="field"><label for="model">{S("Model family")}</label><select id="model" name="Model"><option>{S("Please advise")}</option>{content.series.models.map(model=><option>{model}</option>)}</select></div>
+        <div class="field"><label for="model">{S("Model family")}</label><select id="model" name="Model"><option>{S("Please advise")}</option>{t.modelOptions ? content.series.models.map(model=><option value={model}>{t.modelOptions[model]}</option>) : content.series.models.map(model=><option>{model}</option>)}</select></div>
         <div class="field"><label for="quantity">{S("Estimated quantity")}</label><input id="quantity" name="Quantity" type="number" min="1" step="1" inputmode="numeric" placeholder={S("e.g. 20")}/></div>
         <div class="field full"><label for="liquid">{S("Liquid / expected temperature")}</label><input id="liquid" name="Liquid" placeholder={S("e.g. Fresh water, 5–35°C; specify composition and compatibility needs")} maxlength="400"/></div>
       </div>
@@ -103,6 +103,6 @@ const measurementSymbols = {level:'m',span:'↕',accuracy:'±',pressure:'P',cond
     </form>
   </div></section>
   <div class="wrap related-products"><p class="small-label">{S("CONTINUE YOUR MONITORING PROJECT")}</p><a href={'https://www.hitelecom.com'+prefix+'/product'}>{S("Explore all sensors ↗")}</a><a href={'https://www.hitelecom.com'+prefix+'/product/temperature-sensor'}>{S("Temperature monitoring ↗")}</a><a href={'https://www.hitelecom.com'+prefix+'/product/weather-station'}>{S("Weather monitoring ↗")}</a></div>
-</main>
+</article>
 
 <script>import './level-interactions.js';</script>

@@ -125,6 +125,21 @@ document.querySelectorAll('[data-model]').forEach(link => {
     document.querySelector('#model').value = link.dataset.model;
   });
 });
+const modelNetwork = (() => {
+  const modelSelect = document.querySelector('#model');
+  const networkSelect = document.querySelector('#network');
+  if (!modelSelect || !networkSelect) return;
+  const toNetwork = { H200: 'LoRa', H300: '4G LTE', H500: 'NB-IoT' };
+  const toModel = { 'LoRa': 'H200', '4G LTE': 'H300', 'NB-IoT': 'H500' };
+  modelSelect.addEventListener('change', () => {
+    const network = toNetwork[modelSelect.value];
+    if (network) networkSelect.value = network;
+  });
+  networkSelect.addEventListener('change', () => {
+    const model = toModel[networkSelect.value];
+    if (model) modelSelect.value = model;
+  });
+})();
 const revealTarget = () => {
   let id; try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
   const el = document.getElementById(id);
@@ -146,7 +161,7 @@ if (form) {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    brief.value = [T('Hello Hitelecom,'), '', T('I would like to discuss a liquid level monitoring project.'), '', ...['Application','Country','Model','Quantity','Liquid','Level span','Probe and cable','Installation conditions','Connectivity','Timing and platform','Requirements'].map(key=>`${T(key)}: ${data.get(key) || T('Please advise')}`), '', T('Please advise on a suitable model, configuration, supporting datasheet and quotation.'), '', T('Thank you.')].join('\n');
+    brief.value = [T('Hello Hitelecom,'), '', T('I would like to discuss a liquid level monitoring project.'), '', ...['Application','Country','Model','Quantity','Liquid','Level span','Probe and cable','Installation conditions','Connectivity','Timing and platform','Requirements'].map(key=>{ const field=form.elements[key]; const opt=field && field.tagName==='SELECT' ? field.selectedOptions[0] : null; const value=opt && opt.value ? opt.textContent : (data.get(key) || ''); return `${T(key)}: ${value || T('Please advise')}`; }), '', T('Please advise on a suitable model, configuration, supporting datasheet and quotation.'), '', T('Thank you.')].join('\n');
     updateEmail(); review.hidden = false;
     status.textContent = T('Your brief is ready. Review it and open your email app to send.');
     brief.focus({preventScroll:true}); review.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});

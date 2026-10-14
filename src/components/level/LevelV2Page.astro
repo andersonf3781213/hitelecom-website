@@ -25,6 +25,7 @@ import contentDe from '../../data/level-content-de.json';
 import contentJa from '../../data/level-content-ja.json';
 import contentFr from '../../data/level-content-fr.json';
 import contentRu from '../../data/level-content-ru.json';
+import contentZh from '../../data/level-content-zh.json';
 import '../../styles/level.css';
 const REGISTRY = {
   en: { content: contentEn, prefix: '' },
@@ -33,6 +34,7 @@ const REGISTRY = {
   ja: { content: contentJa, prefix: '/ja' },
   fr: { content: contentFr, prefix: '/fr' },
   ru: { content: contentRu, prefix: '/ru' },
+  zh: { content: contentZh, prefix: '/zh' },
 };
 const { locale = 'en' } = Astro.props;
 const { content, prefix } = REGISTRY[locale] ?? REGISTRY.en;
