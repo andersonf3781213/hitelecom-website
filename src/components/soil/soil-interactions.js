@@ -121,11 +121,28 @@ const application = document.querySelector('#application');
 document.querySelectorAll('[data-project-scene]').forEach(link => {
   link.addEventListener('click', () => { application.value = link.dataset.projectScene; });
 });
-document.querySelectorAll('[data-model]').forEach(link => {
-  link.addEventListener('click', () => {
-    document.querySelector('#model').value = link.dataset.model;
+// V81 双向联动（中文终稿附录 C）：型号卡 / 型号下拉 / 通信下拉三方同步，
+// 内部值保持 H200/H300/H500 与 LoRa/4G LTE/NB-IoT，EN 行为仅增加通信预填。
+const modelSelect = document.querySelector('#model');
+const networkSelect = document.querySelector('#network');
+const modelNetwork = { H200: 'LoRa', H300: '4G LTE', H500: 'NB-IoT' };
+const networkModel = { LoRa: 'H200', '4G LTE': 'H300', 'NB-IoT': 'H500' };
+if (modelSelect && networkSelect) {
+  document.querySelectorAll('[data-model]').forEach(button => {
+    button.addEventListener('click', () => {
+      const model = button.dataset.model;
+      if (!(model in modelNetwork)) return;
+      modelSelect.value = model;
+      networkSelect.value = modelNetwork[model];
+    });
   });
-});
+  modelSelect.addEventListener('change', () => {
+    networkSelect.value = modelNetwork[modelSelect.value] ?? '';
+  });
+  networkSelect.addEventListener('change', () => {
+    modelSelect.value = networkModel[networkSelect.value] ?? '';
+  });
+}
 const revealTarget = () => {
   let id; try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
   const el = document.getElementById(id);
@@ -147,7 +164,7 @@ if (form) {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    brief.value = [T('Hello Hitelecom,'), '', T('I would like to discuss a soil monitoring project.'), '', ...['Application','Country','Model','Quantity','Measurements','Soil or media','Monitoring depth','Connectivity','Timing and platform','Requirements'].map(key=>`${T(key)}: ${data.get(key) || T('Please advise')}`), '', T('Please advise on a suitable model, configuration, supporting datasheet and quotation.'), '', T('Thank you.')].join('\n');
+    brief.value = [T('Hello Hitelecom,'), '', T('I would like to discuss a soil monitoring project.'), '', ...['Application','Country','Model','Quantity','Measurements','Soil or media','Monitoring depth','Connectivity','Timing and platform','Requirements'].map(key=>{ const el=form.elements[key]; const opt=el&&el.tagName==='SELECT'?el.selectedOptions[0]:null; const v=opt&&opt.value?opt.textContent:(data.get(key)||''); return `${T(key)}: ${v || T('Please advise')}`; }), '', T('Please advise on a suitable model, configuration, supporting datasheet and quotation.'), '', T('Thank you.')].join('\n');
     updateEmail(); review.hidden = false;
     status.textContent = T('Your brief is ready. Review it and open your email app to send.');
     brief.focus({preventScroll:true}); review.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
