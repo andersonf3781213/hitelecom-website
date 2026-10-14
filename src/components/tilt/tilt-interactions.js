@@ -34,7 +34,12 @@ if (form) {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    brief.value = [S('greet', 'Hello Hitelecom,'), '', S('intro', 'I would like to discuss a wireless tilt monitoring project.'), '', ...['Application','Country','Quantity','Connectivity','Requirements'].map(key=>`${FIELD_LABELS[key] || key}: ${data.get(key) || S('fallback', 'Please advise')}`), '', S('closing', 'Please advise on a suitable model, configuration, supporting datasheet and quotation.'), '', S('thanks', 'Thank you.')].join('\n');
+    brief.value = [S('greet', 'Hello Hitelecom,'), '', S('intro', 'I would like to discuss a wireless tilt monitoring project.'), '', ...['Application','Country','Quantity','Connectivity','Requirements'].map(key => {
+      const raw = String(data.get(key) ?? '').trim();
+      const map = key === 'Application' ? I18N.applicationValues : key === 'Connectivity' ? I18N.connectivityValues : null;
+      const value = raw ? (map?.[raw] ?? raw) : S('fallback', 'Please advise');
+      return `${FIELD_LABELS[key] || key}: ${value}`;
+    }), '', S('closing', 'Please advise on a suitable model, configuration, supporting datasheet and quotation.'), '', S('thanks', 'Thank you.')].join('\n');
     updateEmail(); review.hidden = false;
     status.textContent = S('ready', 'Your brief is ready. Review it and open your email app to send.');
     brief.focus({preventScroll:true}); review.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
@@ -73,11 +78,11 @@ if (contactBar) {
   const copy = contactBar.querySelector('.tilt-copy-wechat');
   const status = contactBar.querySelector('.tilt-copy-status');
   copy.addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(copy.dataset.copy); status.textContent = 'WeChat ID copied.'; }
+    try { await navigator.clipboard.writeText(copy.dataset.copy); status.textContent = S('wechatCopied', 'WeChat ID copied.'); }
     catch {
       const range = document.createRange(); range.selectNodeContents(copy);
       const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
-      status.textContent = 'ID selected. Use your device’s copy command.';
+      status.textContent = S('wechatSelected', 'ID selected. Use your device’s copy command.');
     }
   });
   contactBar.querySelector('.tilt-contact-top').addEventListener('click', event => {

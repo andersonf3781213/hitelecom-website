@@ -855,6 +855,177 @@ export const TILT_DICTS = {
       "Sensor de inclinación inalámbrico"
     ],
     "serKicker": "SERIE Y CONFIGURACIONES"
+  },
+  "zh": {
+    "bcAria": "当前位置",
+    "bc": [
+      "首页",
+      "物联网传感器",
+      "无线倾斜传感器"
+    ],
+    "h1": {
+      "main": "无线倾斜传感器。",
+      "spanA": "让角度变化更清晰。",
+      "spanB": null
+    },
+    "heroAlt": "宏太 Hitelecom 无线倾斜传感器，带安装挂耳与天线。",
+    "heroCaption": "远程倾角监测",
+    "metrics": [
+      {
+        "value": "0.001°",
+        "label": "可选精度等级",
+        "note": "H310-TS180C · 对应配置"
+      },
+      {
+        "value": "IP68／IP66",
+        "label": "外壳防护选项",
+        "note": "金属／塑料 · 按配置选择"
+      },
+      {
+        "value": "您的平台",
+        "label": "数据接入",
+        "note": "适用于支持 MQTT 的型号配置"
+      }
+    ],
+    "navAria": "本页导航",
+    "nav": [
+      "监测原理",
+      "应用场景",
+      "技术参数",
+      "平台接入",
+      "常见问题"
+    ],
+    "navQuote": "获取报价 ↗",
+    "featKicker": "核心特性",
+    "featH2a": "围绕您的监测需求，",
+    "featH2b": "选择合适配置。",
+    "featLead": "根据监测对象，匹配测量性能、安装方式与通信方案。",
+    "ovCta": "查找适用场景",
+    "read": {
+      "label": "从读数到趋势",
+      "sample": "示例读数",
+      "refLabel": "安装基准",
+      "refVal": "0.30°",
+      "laterLabel": "后续读数",
+      "laterVal": "0.45°",
+      "changeLabel": "相对基准变化",
+      "changeVal": "+0.15°",
+      "note": "采用同一轴向和测量基准，便于比较历次倾角读数。以上数值仅用于说明读数变化。"
+    },
+    "profNoteLabel": "H310-TS180C · 工作配置",
+    "profNoteStrong": "定时检测。\n按计划上报。",
+    "sceneMpLabel": "监测点位",
+    "scenePbLabel": "安装与选型信息",
+    "sceneCta": "咨询此场景方案",
+    "modelLabel": "型号参考",
+    "configCta": "选择项目配置 ↓",
+    "specCaption": "{m} — 技术参数与工作配置",
+    "handoverCta": "沟通平台接入需求 ↗",
+    "faqCta": "咨询项目问题 ↗",
+    "faqLinkFallback": "了解详情",
+    "benefitsTitle": "从三项信息开始。",
+    "benefitsText": "应用场景、安装国家或地区、预计数量。方便时，可在邮件中附上现场照片或平台要求。",
+    "formLabel": "项目询价",
+    "formTitle": "一起确定您的配置。",
+    "formSubtitle": "H 系列无线倾角监测",
+    "appLabel": "应用场景",
+    "appChoose": "请选择应用场景",
+    "appOther": "其他／项目定制需求",
+    "appOtherValue": "Other / project-specific",
+    "countryLabel": "国家／地区",
+    "countryPh": "例如：中国",
+    "qtyLabel": "预计数量",
+    "qtyPh": "例如：20",
+    "connLabel": "通信方式偏好",
+    "connAdvise": "请协助选型",
+    "connOptions": [
+      "请协助选型",
+      "4G LTE",
+      "NB-IoT",
+      "LoRa"
+    ],
+    "reqLabel": "您希望监测什么？",
+    "reqPh": "监测对象、测量性能、上报安排或平台要求",
+    "submit": "生成询价摘要",
+    "submitNote": "先核对项目摘要，再通过您的邮件应用发送。",
+    "summaryLabel": "您的项目摘要",
+    "openEmail": "打开邮件 ↗",
+    "copyBrief": "复制摘要",
+    "statusReady": "摘要已生成，请核对内容后发送。",
+    "noscriptPre": "您也可以直接通过",
+    "noscriptLink": "邮件发送项目需求",
+    "noscriptPost": "。",
+    "noscriptSubject": "H 系列无线倾斜传感器 — 项目询价",
+    "relKicker": "继续完善您的监测项目",
+    "relLinks": [
+      {
+        "label": "振动监测 ↗",
+        "href": "/zh/product/vibration-sensor"
+      },
+      {
+        "label": "测距监测 ↗",
+        "href": "/zh/product/radar-distance-sensor"
+      },
+      {
+        "label": "空气质量监测 ↗",
+        "href": "/zh/product/air-quality-sensor"
+      }
+    ],
+    "mobileQuote": "咨询选型与报价",
+    "js": {
+      "subject": "H 系列无线倾斜传感器 — 项目询价",
+      "greet": "宏太 Hitelecom 团队，您好：",
+      "intro": "我希望咨询一个无线倾角监测项目。",
+      "labels": {
+        "Application": "应用场景",
+        "Country": "国家／地区",
+        "Quantity": "预计数量",
+        "Connectivity": "通信方式",
+        "Requirements": "监测要求"
+      },
+      "fallback": "请协助确认",
+      "closing": "请协助推荐合适的型号与配置，并提供对应规格资料和报价方案。",
+      "thanks": "谢谢。",
+      "ready": "项目摘要已生成。请核对后打开邮件应用发送。",
+      "copied": "项目摘要已复制。",
+      "selected": "项目摘要已选中，请使用设备的复制功能。",
+      "modelPrefix": "意向型号",
+      "wechatCopied": "微信号已复制。",
+      "wechatSelected": "微信号已选中，请使用设备的复制功能。",
+      "applicationValues": {
+        "Warehouse racking": "仓库货架",
+        "Street light poles": "路灯杆",
+        "Transmission towers": "输电塔",
+        "Telecom towers": "通信塔",
+        "Billboard support poles": "广告牌支撑杆",
+        "Bridge elements": "桥梁构件",
+        "Railway infrastructure": "铁路基础设施",
+        "Tunnel monitoring": "隧道监测",
+        "Metro and subway structures": "地铁与地下车站结构",
+        "Slopes and embankments": "边坡与路堤",
+        "Sea dikes, dams and reservoir slopes": "海堤、大坝与水库边坡",
+        "Construction and temporary structures": "施工与临时结构",
+        "Heritage buildings and ancient pagodas": "文物建筑与古塔",
+        "Structurally distressed buildings": "结构受损与危旧建筑",
+        "Urban trees": "城市树木",
+        "Large equipment and injection-moulding machines": "大型设备与注塑机",
+        "Other / project-specific": "其他／项目定制需求"
+      },
+      "connectivityValues": {
+        "Please advise": "请协助选型",
+        "4G LTE": "4G LTE",
+        "NB-IoT": "NB-IoT",
+        "LoRa": "LoRa"
+      }
+    },
+    "bcLd": [
+      "首页",
+      "物联网传感器",
+      "无线倾斜传感器"
+    ],
+    "serKicker": "系列与配置",
+    "schemaGroup": "宏太 Hitelecom H 系列无线倾斜传感器",
+    "schemaProduct": "宏太 Hitelecom H310-TS180C 无线倾斜传感器"
   }
 };
 

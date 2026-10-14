@@ -18,6 +18,7 @@ import contentDe from '../../data/tilt-content-de.json';
 import contentJa from '../../data/tilt-content-ja.json';
 import contentFr from '../../data/tilt-content-fr.json';
 import contentRu from '../../data/tilt-content-ru.json';
+import contentZh from '../../data/tilt-content-zh.json';
 import '../../styles/tilt.css';
 
 const REGISTRY = {
@@ -27,6 +28,7 @@ const REGISTRY = {
   ja: { content: contentJa, prefix: '/ja' },
   fr: { content: contentFr, prefix: '/fr' },
   ru: { content: contentRu, prefix: '/ru' },
+  zh: { content: contentZh, prefix: '/zh' },
 };
 
 const { locale = 'en' } = Astro.props;
