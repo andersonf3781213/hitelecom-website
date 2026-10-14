@@ -12,6 +12,196 @@
  * js.* 由 temperature-interactions.js 经根节点 data-i18n 读取（EN 回落内置）。
  */
 export const TEMPERATURE_DICTS = {
+  "zh": {
+    "page": {
+      "breadcrumbAria": "面包屑导航",
+      "home": "首页",
+      "iotSensors": "产品中心",
+      "temperatureSensor": "温度传感器",
+      "heroH1": {
+        "lead": "无线温度传感器。",
+        "leadRest": "",
+        "spanA": "从关键测点，",
+        "spanB": "掌握温度变化。"
+      },
+      "heroProductAlt": "宏太 H 系列温度传感器，配红色探头线缆和金属探头的官方产品图片",
+      "heroCaption": "配置示例 · 外接探头",
+      "discussProject": "咨询项目与报价",
+      "downloadDatasheet": "下载规格书（英文）"
+    },
+    "proof": [
+      {
+        "strong": "按需定制",
+        "span": "产品形态与测温结构",
+        "small": "适配您的测量与安装需求"
+      },
+      {
+        "strong": "IP67 / IP68",
+        "span": "本体与探头防护",
+        "small": "均可按项目需求定制"
+      },
+      {
+        "strong": "您的平台",
+        "span": "远程温度数据",
+        "small": "宏太云或兼容客户平台"
+      }
+    ],
+    "nav": {
+      "aria": "页内导航",
+      "measurement": "测量方式",
+      "applications": "应用场景",
+      "specifications": "技术参数",
+      "integration": "平台接入",
+      "faq": "常见问题",
+      "quote": "获取报价"
+    },
+    "features": {
+      "kicker": "核心特性",
+      "heading": "让温度数据，\n服务现场运营。",
+      "intro": "围绕您的测量目标，选择产品设计、测温位置与数据连接方式。"
+    },
+    "measurement": {
+      "kicker": "选择合适的测量方式",
+      "heading": "从测温点，\n确定产品配置。",
+      "define": "选型要点",
+      "discuss": "咨询此测量方案",
+      "probeTransmitter": "测温与安装",
+      "installationHeading": "规划测温位置。\n匹配现场条件。"
+    },
+    "workflow": {
+      "kicker": "从测量到响应",
+      "heading": "掌握温度变化。\n给团队明确的下一步。",
+      "batteryKicker": "续航设计参考",
+      "batteryHeading": "超过 10 年。\n每小时上报。"
+    },
+    "applications": {
+      "kicker": "应用场景",
+      "industryCategories": "类应用",
+      "monitoringTasks": "个监测场景",
+      "aria": "浏览温度应用",
+      "temperature": "测量对象",
+      "point": "测温位置",
+      "plan": "安装与选型要点",
+      "discuss": "咨询此应用"
+    },
+    "series": {
+      "kicker": "系列与定制配置",
+      "heading": "合适的设计。\n合适的配置。",
+      "modelKicker": "系列型号",
+      "modelDescription": "按项目匹配产品形态、测温结构与运行需求。",
+      "discuss": "咨询此型号配置"
+    },
+    "spec": {
+      "familyReference": "系列选型参数",
+      "heading": "定义完整的\n测温方案。",
+      "download": "下载系列规格书（英文）",
+      "proposal": "获取配置建议",
+      "caption": "宏太 H 系列无线温度传感器 — 系列选型参数",
+      "selectionHeading": "让参数回到您的实际项目。"
+    },
+    "integration": {
+      "kicker": "通信与平台接入",
+      "distributed": "适用于分布式站点",
+      "point": "温度测点",
+      "mobileNetwork": "蜂窝网络",
+      "platform": "您的平台",
+      "cellularDescription": "按当地运营商网络和安装位置的覆盖情况选择通信模组与区域频段，同时确定上报周期、供电安排和通知流程。",
+      "countryOperator": "安装国家与运营商",
+      "signal": "实际安装位置的网络信号",
+      "intervals": "采样、上报与告警响应需求",
+      "site": "适用于同一现场的多个测点",
+      "points": "温度测点",
+      "gateway": "接收器 / 网关",
+      "loraDescription": "匹配设备无线协议、区域设置和兼容接收器或网关。需要 LoRaWAN 时，请在选型阶段提出，以便匹配设备型号及完整的后端连接。",
+      "protocol": "设备协议与网关兼容性",
+      "layout": "现场布局与无线覆盖",
+      "gatewayPower": "网关供电及后端数据连接",
+      "firstReading": "让第一条数据，进入工作流程。",
+      "handover": "用一条样例消息对齐设备标识、测点或通道、温度单位和时间戳，明确平台接收地址与认证方式，再验证数据及通知能否到达预期的平台与接收人。",
+      "discuss": "咨询平台集成",
+      "heading": "部署在您的现场。\n数据进入您的平台。"
+    },
+    "faq": {
+      "kicker": "项目选型解答",
+      "heading": "常见\n问题。",
+      "ask": "咨询您的项目"
+    },
+    "enquiry": {
+      "kicker": "聊聊您的项目",
+      "heading": "从您的测温点，\n开始方案沟通。",
+      "intro": "告诉我们需要测量什么、安装在哪里。我们将结合项目需求，协助匹配产品形态、测温配置、无线连接与安装方案。",
+      "start": "先明确测温位置与范围。",
+      "supporting": "现场照片、图纸或储存操作流程有助于了解测量需求，也欢迎补充已知的精度与响应要求。"
+    },
+    "form": {
+      "kicker": "项目询价",
+      "heading": "一起确定合适的配置。",
+      "subtitle": "H 系列无线温度监测",
+      "application": "应用场景",
+      "chooseApplication": "请选择应用场景",
+      "other": "其他 / 项目定制",
+      "country": "国家 / 地区",
+      "countryExample": "例如：中国、德国、英国",
+      "quantity": "预计数量",
+      "quantityExample": "例如：20",
+      "measurement": "测量方式",
+      "pleaseAdvise": "请协助选型",
+      "temperatureRange": "工作范围及预期最低 / 最高温度",
+      "rangeExample": "例如：工作范围 2–8°C；预期最低 0°C、最高 12°C",
+      "connectivity": "期望通信方式",
+      "requirements": "您希望监测什么？",
+      "requirementsPlaceholder": "请说明测温位置、产品形态、精度、安装、防护、采样上报或平台接入需求",
+      "submit": "生成询价摘要",
+      "reviewNote": "核对摘要后，通过您的邮件应用发送。",
+      "projectBrief": "您的项目摘要",
+      "openEmail": "打开邮件应用",
+      "copy": "复制摘要",
+      "ready": "摘要已生成，请核对项目内容。",
+      "directBefore": "也可直接",
+      "directEmail": "发送邮件，告诉我们您的项目需求",
+      "directAfter": "。"
+    },
+    "related": {
+      "kicker": "继续规划您的监测项目",
+      "all": "查看全部传感器",
+      "air": "空气质量监测",
+      "tilt": "倾斜监测"
+    },
+    "image": {
+      "creditLabel": "摄影：",
+      "creditChanges": "已调整尺寸、裁剪并转换为 WebP"
+    },
+    "schema": {
+      "home": "首页",
+      "sensors": "产品中心",
+      "temperature": "无线温度传感器",
+      "productGroup": "宏太 H 系列无线温度传感器",
+      "productVariant": "宏太 {model} 温度传感器",
+      "variantDescription": "H 系列公开型号系列。产品形态、测温结构与运行配置按项目选定。"
+    },
+    "js": {
+      "modelPrefix": "意向型号：{model}",
+      "subject": "H 系列无线温度传感器 — 项目询价",
+      "greeting": "宏太通信团队，您好！",
+      "intro": "希望与您沟通一个无线温度监测项目。",
+      "application": "应用场景",
+      "country": "国家 / 地区",
+      "quantity": "预计数量",
+      "measurement": "测量方式",
+      "temperatureRange": "工作范围及最低 / 最高温度",
+      "connectivity": "通信方式",
+      "requirements": "项目要求",
+      "pleaseAdvise": "请协助选型",
+      "request": "请协助推荐合适的型号与配置，并提供对应规格书和报价。",
+      "thanks": "谢谢。",
+      "directSubject": "无线温度传感器项目咨询",
+      "ready": "询价摘要已生成。请核对内容，再打开邮件应用发送。",
+      "copied": "项目摘要已复制。",
+      "select": "摘要已选中，请使用设备上的复制操作。",
+      "wechatCopied": "微信号已复制。",
+      "wechatSelected": "微信号已选中，请使用设备上的复制操作。"
+    }
+  },
   "en": {
     "page": {
       "breadcrumbAria": "Breadcrumb",
