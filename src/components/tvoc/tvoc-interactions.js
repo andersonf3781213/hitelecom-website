@@ -212,3 +212,71 @@ document.querySelectorAll('[data-measurement]').forEach(link => link.addEventLis
   const objective = `${T('Monitoring objective:')} ${link.dataset.measurement}`;
   if (!field.value.split('\n').includes(objective)) field.value = objective + '\n' + field.value;
 }));
+
+// Sticky section-nav offset: measure the site header's visible height at runtime
+// (--tvoc-header-visible / --tvoc-header-height / --tvoc-nav-height). On scroll-up
+// the fixed header slides back over the nav; driving `top` from the measured
+// visible height keeps the nav fully exposed without guessing a fixed pixel value.
+function initTvocStickyNav() {
+  const page = document.querySelector('.ht-tvoc');
+  const header = document.getElementById('site-header');
+  const nav = page?.querySelector('.section-nav');
+  if (!page || !header || !nav || page.dataset.tvocStickyReady) return;
+  page.dataset.tvocStickyReady = '1';
+  const html = document.documentElement;
+  const running = new Set();
+  const last = new Map();
+  let frame = 0;
+  function write(name, pixels) {
+    const value = `${Math.max(0, pixels).toFixed(3)}px`;
+    if (last.get(name) === value) return;
+    last.set(name, value);
+    html.style.setProperty(name, value);
+  }
+  function schedule() { if (!frame) frame = requestAnimationFrame(sync); }
+  function sync() {
+    frame = 0;
+    const rect = header.getBoundingClientRect();
+    const position = getComputedStyle(header).position;
+    const overlaysPage = position === 'fixed' || position === 'sticky';
+    const visible = overlaysPage ? Math.min(rect.height, Math.max(0, rect.bottom)) : 0;
+    write('--tvoc-header-visible', visible);
+    write('--tvoc-header-height', overlaysPage ? rect.height : 0);
+    write('--tvoc-nav-height', nav.getBoundingClientRect().height);
+    html.classList.add('tvoc-sticky-sync');
+    if (running.size) schedule();
+  }
+  const classObserver = new MutationObserver(schedule);
+  classObserver.observe(header, { attributes: true, attributeFilter: ['class'] });
+  classObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  let sizeObserver = null;
+  if ('ResizeObserver' in window) {
+    sizeObserver = new ResizeObserver(schedule);
+    sizeObserver.observe(header);
+    sizeObserver.observe(nav);
+  }
+  window.addEventListener('resize', schedule, { passive: true });
+  function relevant(event) {
+    return event.target === header && (event.propertyName === 'transform' || event.propertyName.startsWith('padding'));
+  }
+  header.addEventListener('transitionrun', event => {
+    if (!relevant(event)) return;
+    running.add(event.propertyName);
+    schedule();
+  });
+  function finish(event) {
+    if (!relevant(event)) return;
+    running.delete(event.propertyName);
+    schedule();
+  }
+  header.addEventListener('transitionend', finish);
+  header.addEventListener('transitioncancel', finish);
+  sync();
+  document.addEventListener('astro:before-swap', () => {
+    classObserver.disconnect();
+    sizeObserver?.disconnect();
+    html.classList.remove('tvoc-sticky-sync');
+  }, { once: true });
+}
+initTvocStickyNav();
+document.addEventListener('astro:page-load', initTvocStickyNav);

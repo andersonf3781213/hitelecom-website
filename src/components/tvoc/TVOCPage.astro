@@ -15,8 +15,12 @@ const widths = [640,1280,1920];
 const backgrounds = await Promise.all(widths.map(width=>getImage({src:heroBackground,width,format:'webp',quality:78})));
 const groups = await Promise.all(content.groups.map(async group=>({...group,asset:await tvocImage(group.image.name),tasks:await Promise.all(content.applications.filter(scene=>scene.group===group.id).map(async scene=>({...scene,image:scene.image||group.image,asset:await tvocImage((scene.image||group.image).name)})))})));
 const datasheet = 'https://www.hitelecom.com'+content.hero.datasheet_url;
+// 型号卡网络映射（H200 LoRa／H300 4G／H500 NB-IoT，现行公开规格书型号行）；
+// 站点类型短语复用集成区既有字典键，五语已覆盖。
+const modelNetwork = {H200:'LoRa', H300:'4G LTE', H500:'NB-IoT'};
+const modelSite = {H200:'For points across one site', H300:'For distributed locations', H500:'For distributed locations'};
 ---
-<main id="main">
+<div class="tvoc-main">
   <div class="hero-band">
     <img class="hero-background" src={backgrounds[2].src} srcset={backgrounds.map((x,i)=>`${x.src} ${widths[i]}w`).join(', ')} sizes="100vw" width={heroBackground.width} height={heroBackground.height} alt="" aria-hidden="true" loading="eager" decoding="async" />
     <div class="wrap breadcrumb" aria-label={S("Breadcrumb")}><a href={'https://www.hitelecom.com'+prefix}>{S("Home")}</a><span aria-hidden="true">/</span><a href={'https://www.hitelecom.com'+prefix+'/product'}>{S("IoT sensors")}</a><span aria-hidden="true">/</span><span>{S("TVOC sensor")}</span></div>
@@ -68,7 +72,7 @@ const datasheet = 'https://www.hitelecom.com'+content.hero.datasheet_url;
 
   <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
     <div class="section-heading"><div><p class="eyebrow">{S("SERIES & CONFIGURATIONS")}</p><h2 id="specifications-title">{content.series.heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{i===0?line:<span>{line}</span>}</Fragment>)}</h2></div><p>{content.series.description}</p></div>
-    <div class="tvoc-series">{content.series.models.map(model=><article id={'model-'+model.toLowerCase()}><span class="small-label">{S("PUBLISHED MODEL FAMILY")}</span><h3>{model}</h3><p>{content.series.model_card_subtitle}</p><a href="#enquiry" class="text-link" data-model={model}>{S("Discuss this configuration ↗")}</a></article>)}</div>
+    <div class="tvoc-series">{content.series.models.map(model=><article id={'model-'+model.toLowerCase()}><span class="small-label">{S("PUBLISHED MODEL FAMILY")}</span><h3>{model}</h3><p>{modelNetwork[model] ? <><strong>{modelNetwork[model]}</strong>{" · "}{S(modelSite[model])}</> : content.series.model_card_subtitle}</p><a href="#enquiry" class="text-link" data-model={model}>{S("Discuss this configuration ↗")}</a></article>)}</div>
     <div class="tvoc-spec-grid"><aside class="model-card"><span class="small-label">{S("FAMILY REFERENCE")}</span><h3>{S("Specify the complete")}<br/>{S("measurement point.")}</h3><p>{content.specifications.description}</p><a href={datasheet} target="_blank" rel="noopener" class="button button-outline">{S("Download family datasheet ↗")}</a><a href="#enquiry" class="text-link">{S("Get a configuration proposal ↓")}</a></aside><div class="spec-table"><table><caption>{S("H Series industrial TVOC sensors — published family reference")}</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
     <div class="selection-list"><h3>{S("Bring the specification back to your project.")}</h3><div>{content.series.steps.map((step,index)=><article><span class="step-number">0{index+1}</span><h4>{step.title}</h4><p>{step.text}</p></article>)}</div></div>
   </div></section>
@@ -104,5 +108,5 @@ const datasheet = 'https://www.hitelecom.com'+content.hero.datasheet_url;
     </form>
   </div></section>
   <div class="wrap related-products"><p class="small-label">{S("CONTINUE YOUR MONITORING PROJECT")}</p><a href={'https://www.hitelecom.com'+prefix+'/product'}>{S("Explore all sensors ↗")}</a><a href={'https://www.hitelecom.com'+prefix+'/product/air-quality-sensor'}>{S("Air quality monitoring ↗")}</a><a href={'https://www.hitelecom.com'+prefix+'/product/tilt-sensor'}>{S("Tilt monitoring ↗")}</a></div>
-</main>
+</div>
 <script>import './tvoc-interactions.js';</script>

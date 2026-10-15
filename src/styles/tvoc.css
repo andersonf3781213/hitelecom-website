@@ -356,3 +356,32 @@
 :where(.ht-tvoc) h1,:where(.ht-tvoc) h2,:where(.ht-tvoc) h3,:where(.ht-tvoc) h4,
 :where(.ht-tvoc) .feature-grid p,:where(.ht-tvoc) .measurement-card p,:where(.ht-tvoc) summary{min-width:0;overflow-wrap:anywhere;hyphens:auto}
 }
+
+/* V94 sticky-nav offset: --tvoc-header-visible / --tvoc-header-height / --tvoc-nav-height
+   are written from runtime measurements by tvoc-interactions.js;
+   html.tvoc-sticky-sync only exists while this page's script is active. */
+.ht-tvoc .section-nav {
+  position: sticky;
+  top: var(--tvoc-header-visible, 0px);
+  z-index: 20;
+  transition: none;
+}
+html.tvoc-sticky-sync {
+  scroll-padding-top: calc(
+    var(--tvoc-header-height, 0px) +
+    var(--tvoc-nav-height, 57px) + 12px
+  );
+}
+html.tvoc-sticky-sync :where(.ht-tvoc) .application-group,
+html.tvoc-sticky-sync :where(.ht-tvoc) .application-task,
+html.tvoc-sticky-sync :where(.ht-tvoc) .faq-list details {
+  scroll-margin-top: calc(
+    var(--tvoc-header-height, 0px) +
+    var(--tvoc-nav-height, 57px) + 14px
+  );
+}
+html.tvoc-sticky-sync .ht-tvoc { scroll-padding-top: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  html.tvoc-sticky-sync { scroll-behavior: auto; }
+}
