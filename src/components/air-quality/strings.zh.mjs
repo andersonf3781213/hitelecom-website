@@ -37,8 +37,8 @@ export default {
   exploreMeasurements: '查看监测参数 ↗',
   // 安装
   installEyebrow: '安装规划',
-  installTitle: '从房间出发，规划',
-  installAccent: '安装。',
+  installTitle: '从房间出发，',
+  installAccent: '规划安装。',
   installIntro: '先确定需要比较的房间和区域，再匹配测量参数、供电方式与数据连接。',
   // 平台接入
   integrationEyebrow: '远程监测与集成',
