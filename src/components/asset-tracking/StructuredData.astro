@@ -1,16 +1,20 @@
 ---
 const {content,imageUrl,t={},locale='en',prefix='',includeOrganization=true} = Astro.props;
 const S = (key) => (Object.prototype.hasOwnProperty.call(t, key) ? t[key] : key);
+const inLang = locale === 'zh' ? 'zh-CN' : locale;
+const dateModified = locale === 'zh' ? '2026-10-15' : '2026-10-09';
+const groupName = locale === 'zh' ? '宏太通信 H300 / H500 资产定位传感器系列' : S('Hitelecom H300 and H500 Asset Tracking Sensors');
+const productName = (model) => locale === 'zh' ? '宏太通信 ' + model.id + ' ' + model.connectivity + ' 资产定位传感器' : 'Hitelecom ' + model.id + ' ' + model.connectivity + S(' Asset Tracking Sensor');
 const url=`https://www.hitelecom.com${prefix}/product/asset-tracking-sensor`;
 const orgId='https://www.hitelecom.com/#organization';
 const groupId=url+'#asset-tracking-series';
 const graph=[
  ...(includeOrganization?[{'@type':'Organization','@id':orgId,name:'Hitelecom',legalName:'Shanghai Hitelecom Communication Technology Co., Ltd.',url:'https://www.hitelecom.com',email:'sales@hitelecom.cn'}]:[]),
- {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:locale,dateModified:'2026-10-09',publisher:{'@id':orgId},mainEntity:{'@id':groupId}},
+ {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:inLang,dateModified,publisher:{'@id':orgId},mainEntity:{'@id':groupId}},
  {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:S('Home'),item:`https://www.hitelecom.com${prefix}`},{'@type':'ListItem',position:2,name:S('IoT Sensors'),item:`https://www.hitelecom.com${prefix}/product`},{'@type':'ListItem',position:3,name:S('Asset Tracking Sensors'),item:url}]},
- {'@type':'ProductGroup','@id':groupId,name:S('Hitelecom H300 and H500 Asset Tracking Sensors'),description:content.hero.description,url,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},hasVariant:content.series.models.map(model=>({'@id':url+'#model-'+model.id.toLowerCase()}))},
- ...content.series.models.map(model=>({'@type':'Product','@id':url+'#model-'+model.id.toLowerCase(),name:'Hitelecom '+model.id+' '+model.connectivity+S(' Asset Tracking Sensor'),model:model.id,description:model.description,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},isVariantOf:{'@id':groupId},url:url+'#model-'+model.id.toLowerCase(),additionalProperty:[{'@type':'PropertyValue',name:S('Cellular connectivity'),value:model.connectivity}]})),
- {'@type':'FAQPage','@id':url+'#faq',inLanguage:locale,mainEntity:content.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
+ {'@type':'ProductGroup','@id':groupId,name:groupName,description:content.hero.description,url,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},hasVariant:content.series.models.map(model=>({'@id':url+'#model-'+model.id.toLowerCase()}))},
+ ...content.series.models.map(model=>({'@type':'Product','@id':url+'#model-'+model.id.toLowerCase(),name:productName(model),model:model.id,description:model.description,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},isVariantOf:{'@id':groupId},url:url+'#model-'+model.id.toLowerCase(),additionalProperty:[{'@type':'PropertyValue',name:S('Cellular connectivity'),value:model.connectivity}]})),
+ {'@type':'FAQPage','@id':url+'#faq',inLanguage:inLang,mainEntity:content.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
 ];
 ---
 <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/</g,'\\u003c')}/>

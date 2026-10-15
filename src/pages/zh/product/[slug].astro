@@ -15,7 +15,7 @@ import WaveDivider from '../../../components/WaveDivider.astro';
 
 export const getStaticPaths: GetStaticPaths = () =>
   Object.values(productSlugs)
-    .filter((slug) => !['temperature-sensor', 'pressure-sensor', 'soil-moisture-sensor', 'liquid-level-sensor', 'tilt-sensor', 'radar-distance-sensor', 'vibration-sensor', 'air-quality-sensor', 'temperature-humidity-sensor', 'temperature-humidity-data-logger', 'tvoc-sensor'].includes(slug))
+    .filter((slug) => !['temperature-sensor', 'pressure-sensor', 'soil-moisture-sensor', 'liquid-level-sensor', 'tilt-sensor', 'radar-distance-sensor', 'vibration-sensor', 'air-quality-sensor', 'temperature-humidity-sensor', 'temperature-humidity-data-logger', 'tvoc-sensor', 'asset-tracking-sensor'].includes(slug))
     .map((slug) => ({ params: { slug } }));
 
 const { slug } = Astro.params;

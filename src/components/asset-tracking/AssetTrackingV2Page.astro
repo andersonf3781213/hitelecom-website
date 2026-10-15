@@ -23,6 +23,7 @@ import contentDe from '../../data/asset-tracking-content-de.json';
 import contentJa from '../../data/asset-tracking-content-ja.json';
 import contentFr from '../../data/asset-tracking-content-fr.json';
 import contentRu from '../../data/asset-tracking-content-ru.json';
+import contentZh from '../../data/asset-tracking-content-zh.json';
 import '../../styles/asset-tracking.css';
 
 const REGISTRY = {
@@ -32,6 +33,7 @@ const REGISTRY = {
   ja: { content: contentJa, prefix: '/ja' },
   fr: { content: contentFr, prefix: '/fr' },
   ru: { content: contentRu, prefix: '/ru' },
+  zh: { content: contentZh, prefix: '/zh' },
 };
 
 const { locale = 'en' } = Astro.props;
