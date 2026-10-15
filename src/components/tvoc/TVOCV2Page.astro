@@ -1,7 +1,7 @@
 ---
 /**
  * 工业 TVOC 传感器页 V2 · 包装器（GPT6 页面包 V64 + 多语言包 V65，Kimi 审核集成）
- * 路由：EN /product/tvoc-sensor（无前缀）；es/de/ja/fr/ru 经 locale 路由复用本组件。
+ * 路由：EN /product/tvoc-sensor（无前缀）；es/de/ja/fr/ru/zh 经 locale 路由复用本组件。
  * 数据：REGISTRY 按 locale 选 tvoc-content-{locale}.json；EN 无字典条目，
  * S() 原样回落，EN 渲染零差异。UI 字符串：dicts.mjs（TVOC_DICTS）。
  * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
@@ -23,6 +23,7 @@ import contentDe from '../../data/tvoc-content-de.json';
 import contentJa from '../../data/tvoc-content-ja.json';
 import contentFr from '../../data/tvoc-content-fr.json';
 import contentRu from '../../data/tvoc-content-ru.json';
+import contentZh from '../../data/tvoc-content-zh.json';
 import '../../styles/tvoc.css';
 const REGISTRY = {
   en: { content: contentEn, prefix: '' },
@@ -31,6 +32,7 @@ const REGISTRY = {
   ja: { content: contentJa, prefix: '/ja' },
   fr: { content: contentFr, prefix: '/fr' },
   ru: { content: contentRu, prefix: '/ru' },
+  zh: { content: contentZh, prefix: '/zh' },
 };
 const { locale = 'en' } = Astro.props;
 const { content, prefix } = REGISTRY[locale] ?? REGISTRY.en;

@@ -3,13 +3,16 @@ const {content,imageUrl,includeOrganization=true,t={},prefix='',locale='en'} = A
 const S = (key) => (Object.prototype.hasOwnProperty.call(t, key) ? t[key] : key);
 const url='https://www.hitelecom.com'+prefix+'/product/tvoc-sensor';
 const orgId='https://www.hitelecom.com/#organization';
+const inLang = locale === 'zh' ? 'zh-CN' : locale;
+const dateModified = locale === 'zh' ? '2026-10-15' : '2026-10-12';
+const productName = (m) => locale === 'zh' ? '宏太 ' + m + ' TVOC 传感器' : 'Hitelecom ' + m + ' TVOC Sensor';
 const graph=[
  ...(includeOrganization?[{'@type':'Organization','@id':orgId,name:'Hitelecom',legalName:'Shanghai Hitelecom Communication Technology Co., Ltd.',url:'https://www.hitelecom.com',email:'sales@hitelecom.cn'}]:[]),
- {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:locale,dateModified:'2026-10-12',publisher:{'@id':orgId},mainEntity:{'@id':url+'#series'}},
+ {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:inLang,dateModified,publisher:{'@id':orgId},mainEntity:{'@id':url+'#series'}},
  {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:S('Home'),item:'https://www.hitelecom.com'+prefix},{'@type':'ListItem',position:2,name:S('IoT Sensors'),item:'https://www.hitelecom.com'+prefix+'/product'},{'@type':'ListItem',position:3,name:S('Industrial TVOC Sensor'),item:url}]},
  {'@type':'ProductGroup','@id':url+'#series',name:S('Hitelecom H Series industrial TVOC sensors'),description:content.hero.description,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},url,image:imageUrl,hasVariant:content.series.models.map(m=>({'@id':url+'#model-'+m.toLowerCase()})),additionalProperty:content.specifications.rows.map(row=>({'@type':'PropertyValue',name:row.label,value:row.value}))},
- ...content.series.models.map(m=>({'@type':'Product','@id':url+'#model-'+m.toLowerCase(),name:'Hitelecom '+m+' TVOC Sensor',model:m,description:S('Published H Series model family. Sensing response, product form, power and operating profile selected for the project.'),brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},isVariantOf:{'@id':url+'#series'},url:url+'#model-'+m.toLowerCase(),image:imageUrl})),
- {'@type':'FAQPage','@id':url+'#faq',inLanguage:locale,mainEntity:content.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
+ ...content.series.models.map(m=>({'@type':'Product','@id':url+'#model-'+m.toLowerCase(),name:productName(m),model:m,description:S('Published H Series model family. Sensing response, product form, power and operating profile selected for the project.'),brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},isVariantOf:{'@id':url+'#series'},url:url+'#model-'+m.toLowerCase(),image:imageUrl})),
+ {'@type':'FAQPage','@id':url+'#faq',inLanguage:inLang,mainEntity:content.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
 ];
 ---
 <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/</g,'\\u003c')}/>
