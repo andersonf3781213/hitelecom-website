@@ -8,6 +8,7 @@
  */
 export const LOGGER_DICTS = {
   es: {
+    "View data logger datasheet": "Ver ficha técnica del registrador de datos (EN)",
     "Home": "Inicio",
     "IoT sensors": "Sensores IoT",
     "Temperature & humidity data logger": "Registrador de datos de temperatura y humedad",
@@ -169,6 +170,7 @@ export const LOGGER_DICTS = {
     "Typical humidity accuracy": "Exactitud típica de humedad",
   },
   de: {
+    "View data logger datasheet": "Datenblatt des Datenloggers ansehen (EN)",
     "Home": "Startseite",
     "IoT sensors": "IoT-Sensoren",
     "Temperature & humidity data logger": "Datenlogger für Temperatur und relative Luftfeuchte",
@@ -330,6 +332,7 @@ export const LOGGER_DICTS = {
     "Typical humidity accuracy": "Typische Feuchtegenauigkeit",
   },
   ja: {
+    "View data logger datasheet": "データロガー仕様書を見る（英語）",
     "Home": "ホーム",
     "IoT sensors": "IoTセンサー",
     "Temperature & humidity data logger": "温湿度データロガー",
@@ -491,6 +494,7 @@ export const LOGGER_DICTS = {
     "Typical humidity accuracy": "湿度の代表精度",
   },
   fr: {
+    "View data logger datasheet": "Voir la fiche technique du H100 (EN)",
     "Home": "Accueil",
     "IoT sensors": "Capteurs IoT",
     "Temperature & humidity data logger": "Enregistreur de température et d’humidité",
@@ -652,6 +656,7 @@ export const LOGGER_DICTS = {
     "Typical humidity accuracy": "Précision typique d’humidité",
   },
   ru: {
+    "View data logger datasheet": "Посмотреть техническое описание H100 (EN)",
     "Home": "Главная",
     "IoT sensors": "Датчики IoT",
     "Temperature & humidity data logger": "Регистратор температуры и влажности",
@@ -825,6 +830,8 @@ export const LOGGER_DICTS_JS_KEYS = [
   "Your brief is ready. Review it and open your email app to send.",
   "Project brief copied.",
   "Your brief is selected. Use your device’s copy command.",
+  "WeChat ID copied.",
+  "ID selected. Use your device’s copy command.",
   "Recording focus:",
   "Application",
   "Country",

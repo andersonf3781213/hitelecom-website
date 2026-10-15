@@ -472,3 +472,32 @@
 :where(.ht-logger) h1,:where(.ht-logger) h2,:where(.ht-logger) h3,:where(.ht-logger) h4,
 :where(.ht-logger) .feature-grid p,:where(.ht-logger) .measurement-card p,:where(.ht-logger) summary{min-width:0;overflow-wrap:anywhere;hyphens:auto}
 }
+
+/* V92 sticky-nav offset: --logger-header-visible / --logger-header-height / --logger-nav-height
+   are written from runtime measurements by logger-interactions.js;
+   html.logger-sticky-sync only exists while this page's script is active. */
+#logger-content .section-nav {
+  position: sticky;
+  top: var(--logger-header-visible, 0px);
+  z-index: 20;
+  transition: none;
+}
+html.logger-sticky-sync {
+  scroll-padding-top: calc(
+    var(--logger-header-height, 0px) +
+    var(--logger-nav-height, 57px) + 12px
+  );
+}
+html.logger-sticky-sync :where(.ht-logger) .application-group,
+html.logger-sticky-sync :where(.ht-logger) .application-task,
+html.logger-sticky-sync :where(.ht-logger) .faq-list details {
+  scroll-margin-top: calc(
+    var(--logger-header-height, 0px) +
+    var(--logger-nav-height, 57px) + 14px
+  );
+}
+html.logger-sticky-sync .ht-logger { scroll-padding-top: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  html.logger-sticky-sync { scroll-behavior: auto; }
+}

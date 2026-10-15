@@ -10,8 +10,6 @@ import { loggerImage } from './images.mjs';
 const {content = contentDefault, t = {}, prefix = ''} = Astro.props;
 const S = (key) => (Object.prototype.hasOwnProperty.call(t, key) ? t[key] : key);
 const enc = encodeURIComponent;
-// 规格书链接：EN 标签无对应译文条目（五语言包成稿于 V61 启用前），按站内惯例非英页挂 EN 标签加 (EN) 标记
-const datasheetTag = prefix ? ' (EN)' : '';
 const hero = await loggerImage('product-hero.webp', true);
 const widths = [640,1280,1920];
 const backgrounds = await Promise.all(widths.map(width=>getImage({src:heroBackground,width,format:'webp',quality:78})));
@@ -24,8 +22,8 @@ const readoutSteps = [
   {number:'04',title:'Export',text:'Export PDF or CSV files for your project records and further review.'}
 ];
 ---
-<div class="ht-logger" data-i18n={JSON.stringify(pickJs(t))}>
-<main id="main">
+<div class="ht-logger" id="logger-content" data-i18n={JSON.stringify(pickJs(t))}>
+<div class="logger-main">
   <div class="hero-band">
     <img class="hero-background" src={backgrounds[2].src} srcset={backgrounds.map((x,i)=>`${x.src} ${widths[i]}w`).join(', ')} sizes="100vw" width={heroBackground.width} height={heroBackground.height} alt="" aria-hidden="true" loading="eager" decoding="async" />
     <div class="wrap breadcrumb" aria-label={S("Breadcrumb")}><a href={'https://www.hitelecom.com'+prefix}>{S("Home")}</a><span aria-hidden="true">/</span><a href={'https://www.hitelecom.com'+prefix+'/product'}>{S("IoT sensors")}</a><span aria-hidden="true">/</span><span>{S("Temperature & humidity data logger")}</span></div>
@@ -36,7 +34,7 @@ const readoutSteps = [
         <figcaption><span class="record-dot" aria-hidden="true"></span>{S("On-device records · USB readout with PC software")}</figcaption>
       </figure>
       <p class="hero-description">{content.hero.description}</p>
-      <div class="hero-actions"><a href="#enquiry" class="button button-primary">{S("Discuss your recording project")} <span aria-hidden="true">↗</span></a>{datasheet ? <a href={datasheet} target="_blank" rel="noopener" class="text-link">{S("View data logger datasheet")}{datasheetTag} <span aria-hidden="true">↗</span></a> : <a href="#specifications" class="text-link">{S("View specifications")} <span aria-hidden="true">↓</span></a>}</div>
+      <div class="hero-actions"><a href="#enquiry" class="button button-primary">{S("Discuss your recording project")} <span aria-hidden="true">↗</span></a>{datasheet ? <a href={datasheet} target="_blank" rel="noopener" class="text-link">{S("View data logger datasheet")} <span aria-hidden="true">↗</span></a> : <a href="#specifications" class="text-link">{S("View specifications")} <span aria-hidden="true">↓</span></a>}</div>
       <div class="hero-proof"><div><strong>{S("80,000")}</strong><span>{S("Stored readings")}</span><small>{S("Records held on the device")}</small></div><div><strong>{S("±0.2°C")}</strong><span>{S("Typical temperature accuracy")}</span><small>{S("Typical product specification")}</small></div><div><strong>{S("±2% RH")}</strong><span>{S("Typical humidity accuracy")}</span><small>{S("Typical product specification")}</small></div><div><strong>{S("Local PC")}</strong><span>{S("USB data retrieval")}</span><small>{S("Review with local software")}</small></div></div>
     </section>
   </div>
@@ -78,7 +76,7 @@ const readoutSteps = [
   <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
     <div class="section-heading"><div><p class="eyebrow">{S("H100 DATA LOGGER")}</p><h2 id="specifications-title">{S("One logger.")}<br/><span>{S("Your collection interval.")}</span></h2></div><p>{content.series.description}</p></div>
     <div class="logger-series">{content.series.models.map(model=>{const detail=content.series.modelDetails?.find(item=>item.model===model);return <article id={'model-'+model.toLowerCase()}><div class="logger-model-heading"><span class="small-label">{S("TEMPERATURE & HUMIDITY DATA LOGGER")}</span><h3>{model}</h3></div><div class="logger-model-copy">{detail?.title && <h4>{detail.title}</h4>}<p>{detail?.text || 'Local temperature and humidity recording with a configurable collection interval and USB retrieval in PC software.'}</p></div><a href="#enquiry" class="text-link" data-model={model}>{S("Discuss your H100 project ↗")}</a></article>})}</div>
-    <div class="logger-spec-grid"><aside class="model-card"><span class="small-label">{S("H100 SPECIFICATIONS")}</span><h3>{S("Start with the period.")}<br/>{S("Specify the interval.")}</h3><p>{content.specifications.description}</p>{datasheet ? <a href={datasheet} target="_blank" rel="noopener" class="button button-outline">{S("View data logger datasheet")}{datasheetTag} ↗</a> : <a href="#enquiry" class="button button-outline">{S("Request the current datasheet ↗")}</a>}<a href="#enquiry" class="text-link">{S("Discuss your recording plan ↓")}</a></aside><div class="spec-table"><table><caption>{S("H100 temperature and humidity data logger — product specifications")}</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
+    <div class="logger-spec-grid"><aside class="model-card"><span class="small-label">{S("H100 SPECIFICATIONS")}</span><h3>{S("Start with the period.")}<br/>{S("Specify the interval.")}</h3><p>{content.specifications.description}</p>{datasheet ? <a href={datasheet} target="_blank" rel="noopener" class="button button-outline">{S("View data logger datasheet")} ↗</a> : <a href="#enquiry" class="button button-outline">{S("Request the current datasheet ↗")}</a>}<a href="#enquiry" class="text-link">{S("Discuss your recording plan ↓")}</a></aside><div class="spec-table"><table><caption>{S("H100 temperature and humidity data logger — product specifications")}</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
     <div class="selection-list"><h3>{S("Give the record a clear purpose.")}</h3><div>{content.series.steps.map((step,index)=><article><span class="step-number">0{index+1}</span><h4>{step.title}</h4><p>{step.text}</p></article>)}</div></div>
   </div></section>
 
@@ -99,6 +97,6 @@ const readoutSteps = [
     </form>
   </div></section>
   <div class="wrap related-products"><p class="small-label">{S("CONTINUE YOUR ENVIRONMENTAL RECORDING PROJECT")}</p><a href={'https://www.hitelecom.com'+prefix+'/product'}>{S("Explore all sensors ↗")}</a><a href={'https://www.hitelecom.com'+prefix+'/product/air-quality-sensor'}>{S("Air quality monitoring ↗")}</a><a href={'https://www.hitelecom.com'+prefix+'/product/tilt-sensor'}>{S("Tilt monitoring ↗")}</a></div>
-</main>
+</div>
 </div>
 <script>import './logger-interactions.js';</script>

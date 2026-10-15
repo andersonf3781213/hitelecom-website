@@ -5,7 +5,7 @@ const url='https://www.hitelecom.com'+prefix+'/product/temperature-humidity-data
 const orgId='https://www.hitelecom.com/#organization';
 const graph=[
  ...(includeOrganization?[{'@type':'Organization','@id':orgId,name:'Hitelecom',legalName:'Shanghai Hitelecom Communication Technology Co., Ltd.',url:'https://www.hitelecom.com',email:'sales@hitelecom.cn'}]:[]),
- {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:locale,dateModified:'2026-10-12',publisher:{'@id':orgId},mainEntity:{'@id':url+'#model-h100'}},
+ {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:locale,dateModified:'2026-10-15',publisher:{'@id':orgId},mainEntity:{'@id':url+'#model-h100'}},
  {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:S('Home'),item:'https://www.hitelecom.com'+prefix},{'@type':'ListItem',position:2,name:S('IoT Sensors'),item:'https://www.hitelecom.com'+prefix+'/product'},{'@type':'ListItem',position:3,name:S('Temperature and Humidity Data Logger'),item:url}]},
  {'@type':'Product','@id':url+'#model-h100',name:S('Hitelecom H100 Temperature and Humidity Data Logger'),model:content.series.models[0],description:content.hero.description,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},url,image:imageUrl,additionalProperty:content.specifications.rows.map(row=>({'@type':'PropertyValue',name:row.label,value:row.value}))},
  {'@type':'FAQPage','@id':url+'#faq',inLanguage:locale,mainEntity:content.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}

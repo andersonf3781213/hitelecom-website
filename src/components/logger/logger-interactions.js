@@ -188,11 +188,11 @@ if (contactBar) {
   const copy = contactBar.querySelector('.logger-copy-wechat');
   const status = contactBar.querySelector('.logger-copy-status');
   copy.addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(copy.dataset.copy); status.textContent = 'WeChat ID copied.'; }
+    try { await navigator.clipboard.writeText(copy.dataset.copy); status.textContent = T('WeChat ID copied.'); }
     catch {
       const range = document.createRange(); range.selectNodeContents(copy);
       const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
-      status.textContent = 'ID selected. Use your device’s copy command.';
+      status.textContent = T('ID selected. Use your device’s copy command.');
     }
   });
   contactBar.querySelector('.logger-contact-top').addEventListener('click', event => {
@@ -223,3 +223,71 @@ document.querySelectorAll('[data-measurement]').forEach(link => link.addEventLis
   const requirement = `${T('Recording focus:')} ${link.dataset.measurement}`;
   if (!field.value.includes(requirement)) field.value = requirement + (field.value ? '\n' + field.value : '');
 }));
+
+// Sticky section-nav offset: measure the site header's visible height at runtime
+// (hide/show transitions, font and breakpoint changes) instead of hard-coding pixels.
+// --logger-header-visible / --logger-header-height / --logger-nav-height are written
+// from measurements; html.logger-sticky-sync is added only while this page's script runs.
+function initLoggerStickyNav() {
+  const page = document.getElementById('logger-content');
+  const header = document.getElementById('site-header');
+  const nav = page?.querySelector('.section-nav');
+  if (!page || !header || !nav || page.dataset.loggerStickyReady) return;
+  page.dataset.loggerStickyReady = '1';
+  const html = document.documentElement;
+  const running = new Set();
+  const last = new Map();
+  let frame = 0;
+  function write(name, pixels) {
+    const value = `${Math.max(0, pixels).toFixed(3)}px`;
+    if (last.get(name) === value) return;
+    last.set(name, value);
+    html.style.setProperty(name, value);
+  }
+  function schedule() { if (!frame) frame = requestAnimationFrame(sync); }
+  function sync() {
+    frame = 0;
+    const rect = header.getBoundingClientRect();
+    const position = getComputedStyle(header).position;
+    const overlaysPage = position === 'fixed' || position === 'sticky';
+    const visible = overlaysPage ? Math.min(rect.height, Math.max(0, rect.bottom)) : 0;
+    write('--logger-header-visible', visible);
+    write('--logger-header-height', overlaysPage ? rect.height : 0);
+    write('--logger-nav-height', nav.getBoundingClientRect().height);
+    html.classList.add('logger-sticky-sync');
+    if (running.size) schedule();
+  }
+  const classObserver = new MutationObserver(schedule);
+  classObserver.observe(header, { attributes: true, attributeFilter: ['class'] });
+  classObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  let sizeObserver = null;
+  if ('ResizeObserver' in window) {
+    sizeObserver = new ResizeObserver(schedule);
+    sizeObserver.observe(header);
+    sizeObserver.observe(nav);
+  }
+  window.addEventListener('resize', schedule, { passive: true });
+  function relevant(event) {
+    return event.target === header && (event.propertyName === 'transform' || event.propertyName.startsWith('padding'));
+  }
+  header.addEventListener('transitionrun', event => {
+    if (!relevant(event)) return;
+    running.add(event.propertyName);
+    schedule();
+  });
+  function finish(event) {
+    if (!relevant(event)) return;
+    running.delete(event.propertyName);
+    schedule();
+  }
+  header.addEventListener('transitionend', finish);
+  header.addEventListener('transitioncancel', finish);
+  sync();
+  document.addEventListener('astro:before-swap', () => {
+    classObserver.disconnect();
+    sizeObserver?.disconnect();
+    html.classList.remove('logger-sticky-sync');
+  }, { once: true });
+}
+initLoggerStickyNav();
+document.addEventListener('astro:page-load', initLoggerStickyNav);
