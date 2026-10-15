@@ -15,8 +15,8 @@ interface Props {
   title?: string;
   description?: string;
   keywords?: string;
-  /** 首屏关键图（构建期优化后的地址），用于 preload 加速首屏 */
-  preloadImage?: string;
+  /** 首屏关键图（构建期优化后的地址），用于 preload 加速首屏；传对象时输出响应式 preload（imagesrcset/imagesizes） */
+  preloadImage?: string | { src: string; srcset?: string; sizes?: string };
   /** 浅色页面：头部始终使用实色样式（不随滚动切换） */
   headerSolid?: boolean;
   /** 自定义 robots（如感谢页 'noindex, follow'）；缺省不输出，走搜索引擎默认 */
@@ -194,7 +194,9 @@ const siteJsonLd = {
     )}
 
     <!-- 首屏关键大图 preload：黄金 3 秒 -->
-    {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
+    {preloadImage && (typeof preloadImage === 'string'
+      ? <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />
+      : <link rel="preload" as="image" href={preloadImage.src} imagesrcset={preloadImage.srcset} imagesizes={preloadImage.sizes} fetchpriority="high" />)}
 
     <!-- 结构化数据：企业 + 站点实体 -->
     <script type="application/ld+json" set:html={JSON.stringify(siteJsonLd)} />

@@ -11,7 +11,7 @@ export function makeSchema(content,hero,assets,{prefix='',inLanguage='en',s=stri
  // Organization / WebSite 节点由 BaseLayout 全局实体图输出（邮箱双轨 .com），本页不再重复。
  const [bHome,bSensors,bAir,bSelf]=s.breadcrumb;
  return {'@context':'https://schema.org','@graph':[
- {'@type':'WebPage','@id':url+'#webpage',url,name:content.title,description:content.description,inLanguage,isPartOf:{'@id':'https://www.hitelecom.com/#website'},mainEntity:{'@id':url+'#product'},breadcrumb:{'@id':url+'#breadcrumb'},hasPart:[{'@id':url+'#faq'},{'@id':url+'#applications'}],dateModified:'2026-10-06'},family,
+ {'@type':'WebPage','@id':url+'#webpage',url,name:content.title,description:content.description,inLanguage,isPartOf:{'@id':'https://www.hitelecom.com/#website'},mainEntity:{'@id':url+'#product'},breadcrumb:{'@id':url+'#breadcrumb'},hasPart:[{'@id':url+'#faq'},{'@id':url+'#applications'}],dateModified:content.dateModified??'2026-10-06'},family,
  {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[[bHome,home],[bSensors,home+'/product/lists/cid/261'],[bAir,home+'/product/lists/cid/265'],[bSelf,url]].map(([name,item],i)=>({'@type':'ListItem',position:i+1,name,item}))},
  {'@type':'FAQPage','@id':url+'#faq',inLanguage,mainEntity:content.faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))},
  {'@type':'ItemList','@id':url+'#applications',name:s.listName,itemListElement:content.scenes.map((scene,i)=>({'@type':'ListItem',position:i+1,name:scene.title,url:url+'#'+scene.id}))},

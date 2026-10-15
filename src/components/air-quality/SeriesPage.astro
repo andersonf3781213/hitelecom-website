@@ -63,7 +63,7 @@ const rangeUrl=prefix+'/product/'+c.otherSlug,contactUrl=prefix+'/about/contact'
   </div>
   <p class="aq-model-footnote">{c.modelNote}</p>
   <div class="aq-model-grid">
-   <article class="aq-model-card"><p class="aq-eyebrow">{t.baseConfig}</p><h3>{model.name}</h3><p class="aq-model-channels">{model.channels.join(t.js.dotSep??' · ')}</p><table><caption>{tpl(t.specCaption,{name:model.name})}</caption><tbody>{model.rows.map(([a,b])=><tr><th scope="row">{a}</th><td>{b}</td></tr>)}</tbody></table><a class="aq-button aq-button-ghost" href={sources[model.datasheet].url}>{tpl(t.viewDatasheet,{name:model.name})}</a></article>
+   <article class="aq-model-card"><p class="aq-eyebrow">{t.baseConfig}</p><h3>{model.name}</h3><p class="aq-model-channels">{model.channels.join(t.js.dotSep??' · ')}</p><table><caption>{tpl(t.specCaption,{name:model.name})}</caption><tbody>{model.rows.map(([a,b])=><tr><th scope="row">{a}</th><td>{b}</td></tr>)}</tbody></table>{model.notes?.map(n=><p class="aq-small aq-model-note">{n}</p>)}<a class="aq-button aq-button-ghost" href={sources[model.datasheet].url}>{tpl(t.viewDatasheet,{name:model.name})}</a></article>
    <article class="aq-model-card aq-model-custom"><p class="aq-eyebrow">{t.customConfig}</p><h3>{t.customTitle}<br/>{t.customAccent}</h3><p>{t.customText}</p><div class="aq-custom-choices">{t.customChoices.map(([label,text])=><div><span>{label}</span><p>{text}</p></div>)}</div><a class="aq-button aq-button-blue" href="#project-brief">{t.getHelp}</a></article>
   </div>
  </section>

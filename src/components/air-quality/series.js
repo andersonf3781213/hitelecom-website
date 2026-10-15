@@ -12,7 +12,7 @@ function init(){
  function countText(n){let f;if(n===1)f=m.applicationCountOne;else if(m.applicationCountFew&&n%10>=2&&n%10<=4&&!(n%100>=12&&n%100<=14))f=m.applicationCountFew;else if(m.applicationCountMany&&(n%10===0||n%10>=5&&n%10<=9||n%100>=11&&n%100<=14))f=m.applicationCountMany;return tpl(f||m.applicationCountOther||m.applicationCountOne,{count:n});}
  function filter(group){if(!buttons.some(b=>b.dataset.filter===group))group='all';cards.forEach(c=>c.hidden=group!=='all'&&c.dataset.sceneGroup!==group);buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===group)));root.querySelector('.aq-filter-status').textContent=countText(cards.filter(c=>!c.hidden).length);}
  function revealHash(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return false;}const card=cards.find(c=>c.id===id);if(card){filter(card.dataset.sceneGroup);return true;}const detail=document.getElementById(id);if(detail?.matches('.aq-faq-item'))detail.open=true;return false;}
- buttons.forEach(b=>b.addEventListener('click',()=>filter(b.dataset.filter)));if(!revealHash())filter(buttons[1]?.dataset.filter||'all');window.addEventListener('hashchange',revealHash);
+ buttons.forEach(b=>b.addEventListener('click',()=>filter(b.dataset.filter)));if(!revealHash())filter('all');window.addEventListener('hashchange',revealHash);
  checks.forEach(c=>c.addEventListener('change',()=>{selection();status.textContent='';}));
  clear.addEventListener('click',()=>{checks.forEach(c=>c.checked=false);selection();status.textContent='';});
  form.addEventListener('input',()=>{result.hidden=true;});form.elements.namedItem('application').addEventListener('change',()=>{status.textContent='';result.hidden=true;});

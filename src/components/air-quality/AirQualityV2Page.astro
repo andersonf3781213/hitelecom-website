@@ -17,12 +17,14 @@ import contentDe from '../../data/indoor-de.json';
 import contentJa from '../../data/indoor-ja.json';
 import contentFr from '../../data/indoor-fr.json';
 import contentRu from '../../data/indoor-ru.json';
+import contentZh from '../../data/indoor-zh.json';
 import stringsEn from './strings.en.mjs';
 import stringsEs from './strings.es.mjs';
 import stringsDe from './strings.de.mjs';
 import stringsJa from './strings.ja.mjs';
 import stringsFr from './strings.fr.mjs';
 import stringsRu from './strings.ru.mjs';
+import stringsZh from './strings.zh.mjs';
 
 const REGISTRY = {
   en: { content: contentEn, t: stringsEn, prefix: '' },
@@ -31,17 +33,33 @@ const REGISTRY = {
   ja: { content: contentJa, t: stringsJa, prefix: '/ja' },
   fr: { content: contentFr, t: stringsFr, prefix: '/fr' },
   ru: { content: contentRu, t: stringsRu, prefix: '/ru' },
+  zh: { content: contentZh, t: stringsZh, prefix: '/zh' },
 };
 
 const { locale = 'en' } = Astro.props;
 const { content, t, prefix } = REGISTRY[locale] ?? REGISTRY.en;
+
+// 构建期检查：询价邮件主题/正文必须为非空字符串，8 个模板占位符齐全（不能只检查键存在）。
+const jsDict = t.js ?? {};
+const EMAIL_PLACEHOLDERS = ['application', 'region', 'points', 'baseMeasurements', 'additionalMeasurements', 'requirements', 'power', 'platform'];
+if (typeof jsDict.emailSubject !== 'string' || jsDict.emailSubject.length === 0) {
+  throw new Error(`[air-quality:${locale}] js.emailSubject 为空，拒绝构建`);
+}
+if (typeof jsDict.emailBody !== 'string' || jsDict.emailBody.length === 0) {
+  throw new Error(`[air-quality:${locale}] js.emailBody 为空，拒绝构建`);
+}
+for (const ph of EMAIL_PLACEHOLDERS) {
+  if (!jsDict.emailBody.includes(`{${ph}}`)) {
+    throw new Error(`[air-quality:${locale}] js.emailBody 缺少占位符 {${ph}}，拒绝构建`);
+  }
+}
 
 const assets = await getAssets(content);
 const hero = await getHero(content);
 const graph = makeSchema(content, hero, assets, { prefix, inLanguage: locale, s: t.schema });
 ---
 
-<BaseLayout locale={locale} title={content.title} description={content.description} preloadImage={hero.src}>
+<BaseLayout locale={locale} title={content.title} description={content.description} preloadImage={hero.local ? { src: hero.src, srcset: hero.srcset, sizes: hero.sizes } : hero.src}>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(graph).replaceAll('<', '\\u003c')} />
   <SeriesPage content={content} hero={hero} assets={assets} t={t} locale={locale} prefix={prefix} />
 </BaseLayout>

@@ -143,8 +143,8 @@ export default {
     "noneSelected": "Не выбрано",
     "enquiryCopied": "Запрос скопирован. Вы можете вставить его в письмо.",
     "enquirySelected": "Текст запроса выделен. Используйте команду копирования на вашем устройстве.",
-    "emailSubject": "",
-    "emailBody": "",
+    "emailSubject": "Запрос о датчиках качества воздуха в помещениях",
+    "emailBody": "Запрос по качеству воздуха в помещениях — Hitelecom\n\nОбласть применения: {application}\nСтрана / регион: {region}\nПримерное количество: {points}\nБазовые параметры: {baseMeasurements}\nДополнительные параметры: {additionalMeasurements}\nТребования: {requirements}\nДоступное питание / сеть: {power}\nПлатформа / передача данных: {platform}\n\nПросим порекомендовать подходящую конфигурацию H310-AQ и подготовить коммерческое предложение.",
     "applicationCountFew": "{count} области применения",
     "applicationCountMany": "{count} областей применения"
   }
