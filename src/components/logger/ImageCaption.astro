@@ -4,7 +4,7 @@ const S = (key) => (Object.prototype.hasOwnProperty.call(t, key) ? t[key] : key)
 const credit = image.credit;
 // 各语言「示意场景」标记：译文图注自带标记时不再重复输出统一标签（V63 五语言包接入约定）
 const locale = prefix ? prefix.slice(1) : 'en';
-const markers = {en:/illustrative/i, fr:/illustrative/i, es:/ilustr/i, de:/beispiel/i, ja:/イメージ/, ru:/иллюстр/i};
+const markers = {en:/illustrative/i, fr:/illustrative/i, es:/ilustr/i, de:/beispiel/i, ja:/イメージ/, ru:/иллюстр/i, zh:/应用示意/};
 const marker = markers[locale] || markers.en;
 ---
 <figcaption>
