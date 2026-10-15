@@ -82,7 +82,7 @@
         "number": "03"
       }
     ],
-    "battery_text": "The published temperature-and-humidity reference configuration is designed for more than 10 years with one-hour reporting under stated test conditions. For a temperature, humidity and light installation, confirm the battery plan against the final channel list, reporting profile, operating temperature and network conditions.",
+    "battery_text": "The published reference configuration is designed for more than 10 years with 10-minute sampling and reporting every four hours. Sampling and reporting intervals can be agreed for the project, and actual service life depends on the battery pack, selected sensor channels, operating temperature and radio conditions. For a temperature, humidity and light installation, confirm the battery plan against the final channel list, reporting profile, operating temperature and network conditions.",
     "platform_text": "Choose Hitelecom Platform or discuss a customer platform connection. Confirm the data fields, units, device identifiers, communication path and alert responsibilities before deployment."
   },
   "series": {
@@ -176,7 +176,7 @@
       },
       {
         "label": "Published T&H enclosure protection",
-        "value": "IP65; confirm the rating for the supplied THL configuration"
+        "value": "Specified for the supplied THL configuration and installation environment"
       },
       {
         "label": "Device configuration",
@@ -188,7 +188,7 @@
       },
       {
         "label": "T&H reference battery design",
-        "value": ">10 years at a 1-hour reporting interval under stated test conditions; final THL battery plan matched to configuration"
+        "value": "Reference design: >10 years with 10-minute sampling and 4-hour reporting; actual service life depends on configuration and operating conditions."
       },
       {
         "label": "Installation and customization",
@@ -330,14 +330,14 @@
       "question": "What should be included when planning battery life?",
       "paragraphs": [
         "Use the selected channel list, measurement and reporting intervals, operating conditions and network quality to define the battery plan. Confirm the calculation for the supplied temperature, humidity and light configuration.",
-        "The published T&H reference design states more than 10 years at hourly reporting under stated test conditions; that reference should be matched to the final project configuration."
+        "The published T&H reference design states more than 10 years with 10-minute sampling and reporting every four hours under stated test conditions. Sampling and reporting intervals can be agreed for the project, and actual service life depends on the battery pack, selected channels, operating temperature and radio conditions. Match that reference to the final project configuration."
       ],
       "sources": [
         "P1",
         "P2",
         "R4"
       ],
-      "evidence": "Manufacturer reference publishes hourly-reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
+      "evidence": "Manufacturer reference publishes a 10-minute sampling and 4-hour reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
     }
   ],
   "evidence": {
@@ -352,7 +352,7 @@
         "id": "P2",
         "title": "Hitelecom: H Series T&H Sensor Datasheet, 3 pages",
         "url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
-        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, hourly-reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
+        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, 10-minute sampling and 4-hour reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
       },
       {
         "id": "P3",
@@ -1149,9 +1149,9 @@
       "installation": "Keep the device clear of drawers and paper; confirm sufficient clearance and air access before selecting an internal arrangement.",
       "projectBrief": "Provide cabinet dimensions, paper media, drawer access, surrounding room layout and target conditions.",
       "image": {
-        "name": "archive-shelves.webp",
-        "alt": "Mobile archive shelving with document boxes and bound records",
-        "caption": "Illustrative archive storage with access aisles for observing local preservation conditions.",
+        "name": "map-plan-cabinets.webp",
+        "alt": "Large maps and drawings stored flat in wide plan drawers.",
+        "caption": "Flat plan-cabinet storage for maps and drawings",
         "focalPoint": "50% 50%",
         "kind": "illustrative"
       },
@@ -1455,7 +1455,7 @@
       "description": "Measure the air presented to IT equipment at selected rack inlets instead of relying only on a room-average reading. Compare local temperature and humidity trends with rack changes and cooling operation. Position choice follows the equipment environment and facility plan; light measurement is not a default requirement for this application.",
       "measurement": "Temperature and relative humidity at selected equipment inlet-air positions.",
       "monitoringPoint": "Representative rack-front inlet locations and heights selected by the data-centre facilities team.",
-      "installation": "Use approved rack fixtures clear of airflow, doors and cabling; select sensing arrangements compatible with the inlet measurement objective.",
+      "installation": "Use approved rack fixtures that do not obstruct airflow, doors or cabling; select sensing arrangements suited to the inlet measurement objective.",
       "projectBrief": "Share rack layout, inlet locations, equipment requirements, cooling arrangement and the monitoring platform.",
       "image": {
         "name": "data-center-premium.webp",
@@ -1680,9 +1680,9 @@
       "installation": "Use approved supports clear of specimens, presses and storage drawers, maintaining safe handling and inspection access.",
       "projectBrief": "Share specimen and preparation types, storage arrangement, room requirements and exposure priorities.",
       "image": {
-        "name": "natural-history.webp",
-        "alt": "Minerals and fossil specimens in glass museum cabinets.",
-        "caption": "Natural history collection display environments",
+        "name": "botanical-specimens.webp",
+        "alt": "Pressed botanical specimens in herbarium paper folders and mounting sheets.",
+        "caption": "Herbarium and botanical specimen preparation environments",
         "focalPoint": "50% 50%",
         "kind": "illustrative"
       },

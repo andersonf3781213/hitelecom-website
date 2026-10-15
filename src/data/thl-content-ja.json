@@ -82,7 +82,7 @@
         "number": "03"
       }
     ],
-    "battery_text": "公開されている温湿度の参考構成は、所定の試験条件下で、毎時送信により10年超の使用を想定した設計です。温湿度・照度を測定する設置構成では、最終的なチャネル一覧、送信設定、動作温度、ネットワーク条件に照らして電池の運用計画を確認してください。",
+    "battery_text": "公開されている参考構成は、10分ごとの測定と4時間ごとのデータ送信を前提に10年超の使用を想定した設計です。測定間隔と送信間隔はプロジェクトで合意でき、実際の電池寿命は電池パック、選択した測定チャネル、動作温度、無線環境によって変わります。温湿度・照度を測定する設置構成では、最終的なチャネル一覧、送信設定、動作温度、ネットワーク条件に照らして電池の運用計画を確認してください。",
     "platform_text": "Hitelecom Platformを選択するか、お客様のプラットフォームへの接続をご相談ください。導入前に、データ項目、単位、機器識別子、通信経路、アラート対応の責任分担を確認します。"
   },
   "series": {
@@ -176,7 +176,7 @@
       },
       {
         "label": "公開T&H筐体保護等級",
-        "value": "IP65。供給するTHL構成の保護等級を確認してください"
+        "value": "供給するTHL構成と設置環境に応じて仕様化されます"
       },
       {
         "label": "機器設定",
@@ -188,7 +188,7 @@
       },
       {
         "label": "T&H参考構成の電池設計",
-        "value": "所定の試験条件下、1時間の送信間隔で>10年。最終的なTHL電池計画は構成に合わせて決定"
+        "value": "参考構成：10分ごとに測定し、4時間ごとに送信する条件で、10年超の電池寿命を想定した設計。実際の電池寿命は構成と動作条件によって異なります。"
       },
       {
         "label": "設置とカスタマイズ",
@@ -330,14 +330,14 @@
       "question": "電池寿命の計画には何を含めますか？",
       "paragraphs": [
         "選択したチャネル一覧、測定間隔と送信間隔、動作条件、ネットワーク品質に基づいて電池計画を立てます。供給する温湿度・照度構成について、計算結果を確認してください。",
-        "公開T&H参考設計は、所定の試験条件下で毎時送信時に10年超としています。この参考値は、最終的なプロジェクト構成に照らして確認する必要があります。"
+        "公開T&H参考設計は、所定の試験条件下で、10分ごとの測定と4時間ごとのデータ送信により10年超としています。測定間隔と送信間隔はプロジェクトで合意でき、実際の電池寿命は電池パック、選択した測定チャネル、動作温度、無線環境によって変わります。この参考値を最終的なプロジェクト構成に照らして確認してください。"
       ],
       "sources": [
         "P1",
         "P2",
         "R4"
       ],
-      "evidence": "Manufacturer reference publishes hourly-reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
+      "evidence": "Manufacturer reference publishes a 10-minute sampling and 4-hour reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
     }
   ],
   "evidence": {
@@ -352,7 +352,7 @@
         "id": "P2",
         "title": "Hitelecom: H Series T&H Sensor Datasheet, 3 pages",
         "url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
-        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, hourly-reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
+        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, 10-minute sampling and 4-hour reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
       },
       {
         "id": "P3",
@@ -1009,7 +1009,7 @@
       "description": "貸出元との協議に向け、展示室と受入室の温湿度記録を準備します。測定位置とデータ送信の構成を貸出要件に合わせます。開幕前および展示中に各位置の測定値を確認し、展示契約の対象位置ではオプションの照度モニタリングを利用できます。",
       "measurement": "温度と相対湿度。貸出契約で必要な位置の照度はオプション。",
       "monitoringPoint": "合意した受入・展示位置。貸出文書と一致する識別情報を使用。",
-      "installation": "作品到着前に、資料管理担当者と保存担当者と取付方法、アクセス、測定構成を確認してください。",
+      "installation": "作品到着前に、資料管理担当者および保存担当者と、取付方法、アクセス、測定構成を確認してください。",
       "projectBrief": "貸出条件、会場配置、取扱い日程、必要な記録、測定値を確認する責任分担をお知らせください。",
       "image": {
         "name": "collection-stores.webp",
@@ -1097,9 +1097,9 @@
       "installation": "機器が引出しや紙資料に干渉しないようにします。内部に配置する場合は、事前に十分な空間と空気への接触を確認してください。",
       "projectBrief": "キャビネットの寸法、紙資料の種類、引出しのアクセス条件、周辺室内の配置、目標環境をお知らせください。",
       "image": {
-        "name": "archive-shelves.webp",
-        "alt": "文書箱と製本された記録資料を収納した移動式書架",
-        "caption": "局所的な保存環境を観察するための通路を備えた文書収蔵庫の例。",
+        "name": "map-plan-cabinets.webp",
+        "alt": "幅の広い製図引出しに平置き収納された大判の地図と図面。",
+        "caption": "地図・図面の平置き収納（製図引出し）",
         "focalPoint": "50% 50%",
         "kind": "illustrative"
       }
@@ -1539,9 +1539,9 @@
       "installation": "標本、標本用プレス、収納引出しに干渉しない承認済みの支持具を使用し、安全な取扱いと点検のためのアクセスを確保してください。",
       "projectBrief": "標本と作製方法の種類、保管構成、室内要件、露光管理の優先事項をお知らせください。",
       "image": {
-        "name": "natural-history.webp",
-        "alt": "博物館のガラスキャビネットに展示された鉱物と化石標本。",
-        "caption": "自然史コレクションの展示環境",
+        "name": "botanical-specimens.webp",
+        "alt": "腊葉標本紙のフォルダと貼り付け台紙に収められた植物標本。",
+        "caption": "腊葉標本・植物標本の作成環境",
         "focalPoint": "50% 50%",
         "kind": "illustrative"
       }

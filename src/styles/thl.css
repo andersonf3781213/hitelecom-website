@@ -364,3 +364,32 @@
 :where(.ht-thl) h1,:where(.ht-thl) h2,:where(.ht-thl) h3,:where(.ht-thl) h4,
 :where(.ht-thl) .feature-grid p,:where(.ht-thl) .measurement-card p,:where(.ht-thl) summary{min-width:0;overflow-wrap:anywhere;hyphens:auto}
 }
+
+/* ===== V88 上滚导航遮挡修复（Kimi 审核 §7，复用空气质量页机制）=====
+   --thl-header-visible / --thl-header-height / --thl-nav-height 由 climate-interactions.js
+   实测写入；html.thl-sticky-sync 仅在本页脚本运行后添加，不影响其他产品页。 */
+#thl-content .section-nav {
+  position: sticky;
+  top: var(--thl-header-visible, 0px);
+  z-index: 20;
+  transition: none;
+}
+html.thl-sticky-sync {
+  scroll-padding-top: calc(
+    var(--thl-header-height, 0px) +
+    var(--thl-nav-height, 57px) + 12px
+  );
+}
+html.thl-sticky-sync :where(.ht-thl) .application-group,
+html.thl-sticky-sync :where(.ht-thl) .application-task,
+html.thl-sticky-sync :where(.ht-thl) .faq-list details {
+  scroll-margin-top: calc(
+    var(--thl-header-height, 0px) +
+    var(--thl-nav-height, 57px) + 14px
+  );
+}
+html.thl-sticky-sync .ht-thl { scroll-padding-top: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  html.thl-sticky-sync { scroll-behavior: auto; }
+}

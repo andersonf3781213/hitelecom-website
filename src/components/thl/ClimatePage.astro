@@ -18,8 +18,8 @@ const backgrounds = await Promise.all(widths.map(width=>getImage({src:heroBackgr
 const groups = await Promise.all(content.groups.map(async group=>({...group,asset:await climateImage(group.image.name),tasks:await Promise.all(content.applications.filter(scene=>scene.group===group.id).map(async scene=>({...scene,image:scene.image||group.image,asset:await climateImage((scene.image||group.image).name)})))})));
 const datasheet = content.hero.datasheet_url ? new URL(content.hero.datasheet_url,'https://www.hitelecom.com').href : null;
 ---
-<div class="ht-thl" data-i18n={JSON.stringify(pickJs(t))}>
-<main id="main">
+<div class="ht-thl" id="thl-content" data-i18n={JSON.stringify(pickJs(t))}>
+<div class="thl-main">
   <div class="hero-band">
     <img class="hero-background" src={backgrounds[2].src} srcset={backgrounds.map((x,i)=>`${x.src} ${widths[i]}w`).join(', ')} sizes="100vw" width={heroBackground.width} height={heroBackground.height} alt="" aria-hidden="true" loading="eager" decoding="async" />
     <div class="wrap breadcrumb" aria-label={S("Breadcrumb")}><a href={'https://www.hitelecom.com'+prefix}>{S("Home")}</a><span aria-hidden="true">/</span><a href={'https://www.hitelecom.com'+prefix+'/product'}>{S("IoT sensors")}</a><span aria-hidden="true">/</span><span>{S("Temperature, humidity & light sensor")}</span></div>
@@ -30,7 +30,7 @@ const datasheet = content.hero.datasheet_url ? new URL(content.hero.datasheet_ur
         <figcaption><span class="live-dot" aria-hidden="true"></span>{S("Integrated indoor sensor · Display configuration")}</figcaption>
       </figure>
       <p class="hero-description">{content.hero.description}</p>
-      <div class="hero-actions"><a href="#enquiry" class="button button-primary">{S("Discuss your project")} <span aria-hidden="true">↗</span></a>{datasheet && <a href={datasheet} target="_blank" rel="noopener" class="text-link">{S("View T&H reference datasheet")} <span aria-hidden="true">↗</span></a>}</div>
+      <div class="hero-actions"><a href="#enquiry" class="button button-primary">{S("Discuss your project")} <span aria-hidden="true">↗</span></a>{datasheet && <a href={datasheet} target="_blank" rel="noopener" class="text-link">{S("View THL & custom-sensor datasheet")} <span aria-hidden="true">↗</span></a>}</div>
       <div class="hero-proof"><div><strong>{S("°C")}</strong><span>{S("Temperature")}</span><small>{S("Local indoor conditions")}</small></div><div><strong>{S("%RH")}</strong><span>{S("Relative humidity")}</span><small>{S("Moisture in the surrounding air")}</small></div><div><strong>{S("lux")}</strong><span>{S("Illuminance")}</span><small>{S("Light at the sensing position")}</small></div><div class="hero-custom"><a href="#enquiry" data-measurement="custom"><strong>{S("Custom")} <b aria-hidden="true">↗</b></strong><span>{S("Sensors for your project")}</span><small>{S("Channels, product form & installation")}</small></a></div></div>
     </section>
   </div>
@@ -72,7 +72,7 @@ const datasheet = content.hero.datasheet_url ? new URL(content.hero.datasheet_ur
   <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
     <div class="section-heading"><div><p class="eyebrow">{S("SERIES & CONFIGURATIONS")}</p><h2 id="specifications-title">{S("The right design.")}<br/><span>{S("The right configuration.")}</span></h2></div><p>{content.series.description}</p></div>
     <div class="climate-series">{content.series.models.map(model=>{const detail=content.series.modelDetails?.find(item=>item.model===model);return <article id={'model-'+model.toLowerCase()}><span class="small-label">{S("WIRELESS MODEL FAMILY")}</span><h3>{model}<span class="network-tag">{detail?.network}</span></h3>{detail?.title && <h4>{detail.title}</h4>}<p>{detail?.text || "Wireless connection, measurement channels and installation profile selected for your project."}</p><a href="#enquiry" class="text-link" data-model={model}>{S("Discuss this configuration ↗")}</a></article>})}</div>
-    <div class="climate-spec-grid"><aside class="model-card"><span class="small-label">{S("FAMILY REFERENCE")}</span><h3>{S("Specify the environment.")}<br/>{S("Select the channels.")}</h3><p>{content.specifications.description}</p>{datasheet && <a href={datasheet} target="_blank" rel="noopener" class="button button-outline">{S("View T&H reference datasheet ↗")}</a>}<a href="#enquiry" class="text-link">{S("Get a configuration proposal ↓")}</a></aside><div class="spec-table"><table><caption>{S("H Series temperature, humidity and light sensors — configuration reference")}</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
+    <div class="climate-spec-grid"><aside class="model-card"><span class="small-label">{S("FAMILY REFERENCE")}</span><h3>{S("Specify the environment.")}<br/>{S("Select the channels.")}</h3><p>{content.specifications.description}</p>{datasheet && <a href={datasheet} target="_blank" rel="noopener" class="button button-outline">{S("View THL & custom-sensor datasheet ↗")}</a>}<a href="#enquiry" class="text-link">{S("Get a configuration proposal ↓")}</a></aside><div class="spec-table"><table><caption>{S("H Series temperature, humidity and light sensors — configuration reference")}</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
     <div class="selection-list"><h3>{S("Bring the specification back to your project.")}</h3><div>{content.series.steps.map((step,index)=><article><span class="step-number">0{index+1}</span><h4>{step.title}</h4><p>{step.text}</p></article>)}</div></div>
   </div></section>
 
@@ -92,6 +92,6 @@ const datasheet = content.hero.datasheet_url ? new URL(content.hero.datasheet_ur
     </form>
   </div></section>
   <div class="wrap related-products"><p class="small-label">{S("CONTINUE YOUR MONITORING PROJECT")}</p><a href={'https://www.hitelecom.com'+prefix+'/product'}>{S("Explore all sensors ↗")}</a><a href={'https://www.hitelecom.com'+prefix+'/product/air-quality-sensor'}>{S("Air quality monitoring ↗")}</a><a href={'https://www.hitelecom.com'+prefix+'/product/tilt-sensor'}>{S("Tilt monitoring ↗")}</a></div>
-</main>
+</div>
 </div>
 <script>import './climate-interactions.js';</script>

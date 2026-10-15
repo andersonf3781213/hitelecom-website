@@ -74,7 +74,7 @@ const homePaths = ['/', '/index.html', ...locales.filter((x) => x !== 'en').map(
 </header>
 
 <!-- 搜索遮罩 -->
-<div class="search-mask" role="dialog" aria-modal="true" aria-label="Search" hidden>
+<div class="search-mask" role="dialog" aria-modal="true" aria-label={u.ariaSearch} hidden>
   <button class="search-close" type="button" aria-label={u.ariaCloseSearch}>
     <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
   </button>

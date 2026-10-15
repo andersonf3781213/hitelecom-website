@@ -1,0 +1,1351 @@
+{
+  "seo": {
+    "title": "温湿度光照传感器｜H系列无线与定制监测｜Hitelecom",
+    "description": "Hitelecom H系列温湿度光照传感器，支持按项目选择温度、相对湿度、照度及其他定制通道。提供H200 LoRa、H300 4G和H500 NB-IoT选型，用于博物馆、展柜、档案、实验室、机房及敏感物料空间，按配置规划安装、告警与平台接入。"
+  },
+  "hero": {
+    "description": "Hitelecom H系列温湿度光照传感器用于室内空气温度、相对湿度和照度监测，适用于博物馆、展厅、档案馆及其他对环境有明确要求的空间。将选定测点的环境变化连接到远程查看与按配置设置的告警；需要更多测量通道或不同安装形态时，也可讨论定制传感方案。选择H200 LoRa、H300 4G或H500 NB-IoT，再根据项目确定感知布局、光照测量和采集上报方案。",
+    "datasheet_url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf"
+  },
+  "features": [
+    {
+      "title": "温度、湿度与光照",
+      "text": "三类互补测量帮助团队了解藏品、存储材料与日常使用空间周边的环境，具体通道按项目选择。"
+    },
+    {
+      "title": "在需要的位置测量",
+      "text": "围绕展区、展柜、货架和房间分区规划测点，为想要观察的环境选择合适的感知布局。"
+    },
+    {
+      "title": "按您的管理目标监测",
+      "text": "与空间或藏品管理人员确定温湿度目标，再配置相应告警流程。"
+    },
+    {
+      "title": "三种无线选择",
+      "text": "H200 LoRa、H300 4G与H500 NB-IoT，为不同现场网络与部署方案提供选型。"
+    },
+    {
+      "title": "支持定制传感方案",
+      "text": "根据空间用途匹配测量通道、产品形态和安装结构，明确项目所需配置。"
+    },
+    {
+      "title": "远程查看项目环境",
+      "text": "接入Hitelecom平台或约定的客户平台，查看测量记录及按配置设置的温湿度告警。"
+    }
+  ],
+  "measurement": {
+    "description": "房间平均值只能反映部分情况。展品旁、展柜内或存储材料附近的环境可能不同。监测规划应明确测量位置，以及每个读数要为哪项管理判断提供依据。",
+    "cards": [
+      {
+        "title": "空气温度",
+        "text": "观察开放时段、夜间运行与季节变化中的局部空气温度。比较不同区域时，选择具有可比性的测点。",
+        "project_brief": "预期环境、所需精度及感知结构。",
+        "symbol": "°C"
+      },
+      {
+        "title": "相对湿度",
+        "text": "记录藏品或存储材料周边的空气湿度，将湿度水平及变化与温度、现场环境目标结合查看。",
+        "project_brief": "房间、展柜或储存分区，以及其中存放的材料。",
+        "symbol": "%RH"
+      },
+      {
+        "title": "照度 · lux",
+        "text": "测量选定感光平面接收到的可见光照度。用于展陈时，应明确能代表展品或展示区域的位置与朝向。",
+        "project_brief": "预期光照水平、所需量程与精度、感光面的朝向。",
+        "symbol": "lux"
+      },
+      {
+        "title": "定制传感器",
+        "text": "按项目规划测量通道、产品形态和安装结构。分享需要监测的内容，协助确定合适的传感设计与技术规格。",
+        "project_brief": "测量项目、预期环境、性能要求、安装限制和平台接口。",
+        "symbol": ""
+      }
+    ],
+    "installation_text": "在房间或展柜平面图上标记各测点。空气测量应能代表目标区域，并考虑送风口、门和热源的影响；照度测量应保持感光面无遮挡，记录安装朝向。历史建筑与藏品空间采用经批准的可逆安装方式。"
+  },
+  "workflow": {
+    "profile_text": "围绕需要观察的变化制定监测方案。采集间隔决定何时测量，上报间隔决定数据何时到达平台；两者应与告警及供电需求一并确定。",
+    "steps": [
+      {
+        "title": "明确监测位置",
+        "text": "列出房间、展柜及材料存储分区，记录每个感知点的用途与位置。",
+        "number": "01"
+      },
+      {
+        "title": "设置运行方案",
+        "text": "确定采集与上报间隔、通道规格，以及温湿度告警目标。",
+        "number": "02"
+      },
+      {
+        "title": "结合现场情况评估",
+        "text": "将测量值与照明安排、房间运行和藏品保护计划结合，判断需要进一步检查或调整的内容。",
+        "number": "03"
+      }
+    ],
+    "battery_text": "参考配置按每10分钟采集、每4小时上报设计，电池续航超过10年。采集与上报周期可根据项目要求约定；实际续航受电池配置、传感通道、上报方案、工作温度及无线条件影响。温湿度光照及定制安装的供电方案，按最终配置确认。",
+    "platform_text": "选择Hitelecom平台，或讨论客户平台接入。在部署前确认数据字段、单位、设备标识、通信链路及告警责任分工。"
+  },
+  "applicationSection": {
+    "title": "不同室内空间，各有监测重点。",
+    "valueHeading": "在合适的位置，掌握合适的环境条件。",
+    "description": "从展柜和档案库，到实验室、敏感材料库及工作空间，探索8类环境中的48项监测任务。每项任务说明观察什么、在哪里测量，以及记录如何支持现场团队。",
+    "note": "配图为应用环境示意，测量通道和安装位置按项目选择。"
+  },
+  "groups": [
+    {
+      "id": "museums",
+      "title": "博物馆与展柜",
+      "jumpLabel": "博物馆",
+      "intro": "从展厅到独立展柜，了解藏品周围的实际环境。温度和相对湿度记录反映局部环境状况；按需配置照度监测，为展陈照明方案提供参考。",
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "博物馆展厅内的玻璃展柜与考古藏品。",
+        "caption": "博物馆展厅与展陈环境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "museum-main-gallery",
+        "museum-sealed-showcase",
+        "museum-textile-costume",
+        "museum-manuscript-case",
+        "museum-natural-history",
+        "museum-historic-interior-display"
+      ]
+    },
+    {
+      "id": "galleries",
+      "title": "美术馆与艺术展览",
+      "jumpLabel": "艺术展览",
+      "intro": "在作品实际展出的位置记录环境。结合局部温湿度与按需配置的照度测量，并记录测点位置，便于团队评估照明、展陈调整及借展要求。",
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "设有画框作品与顶棚轨道灯的当代美术馆展厅。",
+        "caption": "绘画展厅温湿度与照度监测示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "gallery-painting-display",
+        "gallery-works-on-paper",
+        "gallery-photographic-exhibition",
+        "gallery-temporary-exhibition",
+        "gallery-loan-handover",
+        "gallery-daylight-skylight"
+      ]
+    },
+    {
+      "id": "archives",
+      "title": "档案馆、图书馆与特藏",
+      "jumpLabel": "档案与特藏",
+      "intro": "从封闭库房到阅览使用区，了解档案和珍贵资料周围的环境。储藏区优先监测温度和相对湿度；资料展出或经常受光时，再按需增加照度监测。",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "密集式档案架上存放着档案盒与装订资料。",
+        "caption": "档案储藏区与通道环境监测示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "archive-mobile-stacks",
+        "library-rare-book-store",
+        "library-special-reading-room",
+        "archive-map-plan-cabinets",
+        "archive-photograph-store",
+        "archive-digitisation-workroom"
+      ]
+    },
+    {
+      "id": "collections",
+      "title": "藏品库房与保护修复",
+      "jumpLabel": "藏品保护",
+      "intro": "将藏品保护工作与库房、工作区的实际环境联系起来。根据材料和空间用途布置温湿度测点；在展陈、操作或保护研究确有需要时，增加照度监测。",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "藏品库房内的储藏柜与有序放置的藏品。",
+        "caption": "综合藏品储藏环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "collection-mixed-object-store",
+        "collection-painting-rack-store",
+        "collection-textile-drawer-store",
+        "collection-receiving-room",
+        "collection-conservation-studio",
+        "collection-framing-mounting"
+      ]
+    },
+    {
+      "id": "laboratories",
+      "title": "实验室与医药空间",
+      "jumpLabel": "实验室与医药",
+      "intro": "在实验方法、材料要求或储存说明需要时，记录局部室内环境。围绕实际操作选择温度、相对湿度与可选照度测量，并与项目团队确定校准和记录要求。",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "分析实验室工作台上的色谱仪器与带防风罩的分析天平",
+        "caption": "分析仪器实验室工作空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "laboratory-analytical-room",
+        "laboratory-weighing-room",
+        "laboratory-ambient-sample-store",
+        "pharma-ambient-stockroom",
+        "pharma-material-quarantine",
+        "laboratory-instrument-workroom"
+      ]
+    },
+    {
+      "id": "technology",
+      "title": "电子制造、数据中心与洁净空间",
+      "jumpLabel": "电子与机房",
+      "intro": "优先记录设备、元器件及受控工作区域的局部温度与相对湿度。根据设备进风、储存或工艺需要增加测点；有明确照明测量目标时，再选配照度通道。",
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "通道布局清晰的室内数据中心服务器机柜",
+        "caption": "数据中心环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "datacentre-rack-inlet",
+        "technology-edge-it-room",
+        "technology-electronics-assembly",
+        "technology-component-storage",
+        "technology-cleanroom-environment",
+        "technology-metrology-room"
+      ]
+    },
+    {
+      "id": "production",
+      "title": "室内生产与环境敏感材料",
+      "jumpLabel": "生产与材料",
+      "intro": "根据室内材料特性和作业内容选择监测配置。温度与相对湿度反映局部储存或备料环境；可选照度适用于明确的日光暴露、展示或作业照明评估。",
+      "image": {
+        "name": "warehouses.webp",
+        "alt": "设有货架并存放箱装材料的室内仓库",
+        "caption": "材料储存环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "production-print-paper-store",
+        "production-textile-materials",
+        "production-musical-instruments",
+        "production-optics-spares",
+        "production-filament-dry-storage",
+        "production-botanical-specimens"
+      ]
+    },
+    {
+      "id": "buildings",
+      "title": "历史建筑、教学与访客空间",
+      "jumpLabel": "室内空间",
+      "intro": "对比人员活动与藏品共处建筑内的局部环境。围绕观察目标选择室内测点，可选照度用于日光或作业照明评估，并结合设施管理或保护计划解读数据。",
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "保存完好的历史室内空间中的木质家具与肖像画",
+        "caption": "历史室内空间与家具陈设环境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "building-historic-rooms",
+        "building-classrooms",
+        "building-public-library",
+        "building-visitor-reception",
+        "building-worship-heritage",
+        "building-indoor-plant-conservatory"
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "museum-main-gallery",
+      "group": "museums",
+      "title": "博物馆展厅环境",
+      "description": "为不同展厅分别建立环境记录，比较开馆、闭馆及季节变化期间各展区的差异。藏品保护与设施管理团队可依据同一组局部测量记录，讨论空间环境设置，或分析环境变化的原因。",
+      "measurement": "温度、相对湿度；指定展陈位置可选照度监测。",
+      "monitoringPoint": "具有代表性的展陈区域；布局或环境差异明显处可增设测点。",
+      "installation": "采用经批准的墙面或独立支架安装位置，保持空气流通；测量照度时，确保感光面无遮挡。",
+      "projectBrief": "展厅平面图、藏品材料、现行环境目标及独立展区数量。",
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "博物馆展厅内的玻璃展柜与考古藏品。",
+        "caption": "博物馆展厅与展陈环境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "museum-sealed-showcase",
+      "group": "museums",
+      "title": "密闭文物展柜",
+      "description": "展柜采用局部微环境保存藏品时，可同时记录柜内与展厅环境，了解展柜对室内环境变化及日常开柜操作的响应。结合展柜结构和文物布置，选择隐蔽、适合的测点。",
+      "measurement": "柜内温度、相对湿度；文物展出位置可选照度监测。",
+      "monitoringPoint": "经批准、能够代表文物所在空间的柜内位置；按需增设展厅参考测点。",
+      "installation": "与展柜制造方或文物保护人员确认安装方式，保持展柜密封，设备与藏品保持适当距离。",
+      "projectBrief": "展柜尺寸、分隔布局、缓冲或环境控制方式及开柜限制。",
+      "image": {
+        "name": "museum-display-case.webp",
+        "alt": "密闭玻璃文物展柜内的陶器与青铜器。",
+        "caption": "独立展柜内部环境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "museum-textile-costume",
+      "group": "museums",
+      "title": "纺织品与服饰展陈",
+      "description": "为服装、挂毯及装饰织物在展览期间建立局部环境记录。温度和相对湿度反映展陈环境，按需配置的照度监测可帮助工作人员检查织物展品的照明。结合展期与保护人员制定的材料保护方案评估记录。",
+      "measurement": "温度、相对湿度；纺织品展陈可选照度监测。",
+      "monitoringPoint": "靠近展品的位置；配置照度监测时，记录感光面的朝向。",
+      "installation": "安装于经批准的展柜结构或独立支架，保留参观空间，避免与织物接触。",
+      "projectBrief": "纺织品类型、需要关注的染料或表面处理、展期、展柜信息及商定的环境限值。",
+      "image": {
+        "name": "textile-display.webp",
+        "alt": "柔和照明的玻璃展柜内陈列着历史服饰与刺绣织物。",
+        "caption": "对光敏感的纺织品藏品",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "museum-manuscript-case",
+      "group": "museums",
+      "title": "手稿与纸质文物展柜",
+      "description": "记录手稿、地图及图文资料展出期间的环境，测点应能代表实际展出的书页或纸张。照度记录可帮助工作人员结合展览时间安排评估照明变化，温湿度记录则为局部保存环境提供依据。",
+      "measurement": "温度、相对湿度；展出纸张所在平面可选照度监测。",
+      "monitoringPoint": "靠近展出纸张的柜内位置，照度感光面与选定测量平面对齐。",
+      "installation": "采用经文物保护人员确认的独立支撑，保持传感开口通畅，并为安全开柜留出空间。",
+      "projectBrief": "纸张与书写绘画材料类型、展品平面方向、照明布局、展览日期及保护要求。",
+      "image": {
+        "name": "paper-display.webp",
+        "alt": "玻璃顶展柜内展开的手稿与历史纸质资料。",
+        "caption": "纸质文物与手稿展陈环境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "museum-natural-history",
+      "group": "museums",
+      "title": "自然历史标本展陈",
+      "description": "根据自然历史展品的实际材料选择监测方案。同一展厅内，动物标本、干燥植物及矿物可能有不同的保存重点。局部记录可供藏品团队评估展陈布置；对光敏感的标本可按需配置照度监测。",
+      "measurement": "温度、相对湿度；对光敏感的指定标本可选照度监测。",
+      "monitoringPoint": "由藏品保护团队选定的标本所在空间或附近空气位置。",
+      "installation": "安装于经批准的展陈设施，不固定在标本上，并保留操作与检查空间。",
+      "projectBrief": "标本材料、展柜结构、保存处理方式及需要照度监测的展品。",
+      "image": {
+        "name": "natural-history.webp",
+        "alt": "博物馆玻璃展柜内陈列的矿物与化石标本。",
+        "caption": "自然历史藏品展陈环境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "museum-historic-interior-display",
+      "group": "museums",
+      "title": "历史室内与家具陈列",
+      "description": "记录历史室内展示空间中家具、墙面装饰及陈设周围的环境，结合空间使用情况和季节性供暖安排比较局部读数。面向窗户的展品可按需监测照度，帮助工作人员评估日光及现有窗帘、百叶或窗板管理方式的影响。",
+      "measurement": "温度、相对湿度；指定临窗展品可选照度监测。",
+      "monitoringPoint": "具有代表性的藏品位置；保护方案要求时，增设外围参考测点。",
+      "installation": "采用可逆、经批准的安装支撑，固定于现代设施，保留历史表面与家具原状。",
+      "projectBrief": "空间平面图、展品材料、日光路径、供暖安排及允许安装的位置。",
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "保留历史陈设的博物馆房间内摆放着木制家具与肖像画。",
+        "caption": "历史室内与家具陈列空间",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "gallery-painting-display",
+      "group": "galleries",
+      "title": "绘画展厅",
+      "description": "记录不同墙面及区域中绘画作品周围的环境，比较暖通空调调整或展陈布局变化前后的趋势，了解各悬挂位置的局部差异。按需配置照度监测，检查各展区商定的照明方案。",
+      "measurement": "温度、相对湿度；指定绘画展陈平面可选照度监测。",
+      "monitoringPoint": "靠近悬挂区、经批准的位置，应能代表作品环境，并避开送风气流直吹。",
+      "installation": "设备固定于独立、经批准的设施；长期比较时保持测点位置一致。",
+      "projectBrief": "作品基材与绘画材料、悬挂位置、展厅环境设置及照明方案。",
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "设有画框作品与顶棚轨道灯的当代美术馆展厅。",
+        "caption": "绘画展厅温湿度与照度监测示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "gallery-works-on-paper",
+      "group": "galleries",
+      "title": "纸本艺术品展览",
+      "description": "为素描、水彩及版画展出期间建立环境记录。选定位置的照度读数，可供工作人员在调整射灯或轮换作品时参考。结合材料保护方案与商定展期，评估温度和相对湿度记录。",
+      "measurement": "温度、相对湿度；纸本艺术品展出位置可选照度监测。",
+      "monitoringPoint": "能够代表展出纸张表面的位置与朝向，并记录在案。",
+      "installation": "采用经批准的独立支架或展陈设施，避免测点落入不能代表作品受光情况的阴影中。",
+      "projectBrief": "材料敏感性、装裱信息、灯具位置、作品轮换安排及商定的保护限值。",
+      "image": {
+        "name": "works-on-paper-gallery.webp",
+        "alt": "采用保护性装裱与柔和照明的纸本艺术品展览。",
+        "caption": "纸本艺术品附近环境监测示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "gallery-photographic-exhibition",
+      "group": "galleries",
+      "title": "摄影作品展览",
+      "description": "通过局部温湿度及按需配置的照度记录，为摄影作品的展陈方案提供参考。不同摄影工艺对应的保护目标由策展或保护人员确定。调整照明后可评估环境变化，并保留覆盖展期的环境记录。",
+      "measurement": "温度、相对湿度；展出的摄影作品可选照度监测。",
+      "monitoringPoint": "能够代表各展览分区照明与室内环境的摄影作品展示位置。",
+      "installation": "固定于经批准的展厅设施并与画框保持距离；配置照度通道时，保持感光面朝向可重复。",
+      "projectBrief": "摄影工艺类型、装裱或玻璃信息、展览日期及保护团队的展陈要求。",
+      "image": {
+        "name": "photography-gallery.webp",
+        "alt": "在受控照明下展出的黑白摄影作品与画框。",
+        "caption": "摄影作品展陈照明示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "gallery-temporary-exhibition",
+      "group": "galleries",
+      "title": "临时展览布展",
+      "description": "在临时展览开幕前建立局部环境基线，比较展柜、灯光及空间使用变化期间的读数，为布展团队与策展人员交接提供环境参考。根据完成后的展陈布局选定测点。",
+      "measurement": "温度、相对湿度；新展陈布局可选照度监测。",
+      "monitoringPoint": "布展评估中确定的新展柜及墙面展区。",
+      "installation": "使用经批准、可拆除的固定件，记录各测点位置，便于理解整个展期的读数。",
+      "projectBrief": "布展方案、展品材料、安装日期、监测时长及交接要求。",
+      "image": {
+        "name": "art-gallery.webp",
+        "alt": "设有画框作品与顶棚轨道灯的当代美术馆展厅。",
+        "caption": "临时展览环境监测场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "gallery-loan-handover",
+      "group": "galleries",
+      "title": "借展展厅与接收室",
+      "description": "记录借展展厅及接收室的环境，为与出借方沟通提供依据。根据借展要求安排测点与上报方式，在开幕前和展出期间评估局部读数；展览协议要求的指定位置可增加照度监测。",
+      "measurement": "温度、相对湿度；借展协议要求时配置照度监测。",
+      "monitoringPoint": "商定的接收与展示位置，测点标识与借展文件一致。",
+      "installation": "作品到馆前，与藏品登记及保护人员确认安装、操作和测量安排。",
+      "projectBrief": "借展条件、场馆布局、搬运时间安排、所需记录及读数审核职责。",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "藏品库房内的储藏柜与有序放置的藏品。",
+        "caption": "藏品储藏环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "gallery-daylight-skylight",
+      "group": "galleries",
+      "title": "日光与天窗展厅",
+      "description": "比较受日光变化影响的展区环境。按需配置的照度记录可帮助工作人员评估现有百叶、遮阳及照明时间安排，温湿度记录则反映局部环境。围绕展陈目标选择测点，比较日间变化时保持感光面朝向一致。",
+      "measurement": "温度、相对湿度；受日光影响的指定展区可选照度监测。",
+      "monitoringPoint": "具有代表性的展陈平面，以及日光影响区域内记录在案的温湿度测点。",
+      "installation": "确认安装位置不会意外遮挡感光面，采用经批准的固定设施，并核对照度通道能否满足预期测量条件。",
+      "projectBrief": "窗户或天窗朝向、季节性日光变化、遮阳设施及展陈重点。",
+      "image": {
+        "name": "daylit-gallery.webp",
+        "alt": "日光展厅内可见临窗区域与室内区域的光照差异。",
+        "caption": "天窗及侧窗日光展厅照度比较示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "archive-mobile-stacks",
+      "group": "archives",
+      "title": "档案库房与密集架",
+      "description": "为档案库房通道及架位分区建立局部温湿度记录，在评估季节变化或调整库房布局时比较指定位置。封闭库房以温湿度为主要监测项目；有明确受光评估需求时，再增加照度通道。",
+      "measurement": "温度、相对湿度；明确需要评估储藏受光情况时，可选照度监测。",
+      "monitoringPoint": "按库房监测方案选择具有代表性的架位高度与通道区域。",
+      "installation": "避开密集架移动范围及档案盒，保持空气流通，并为工作人员留出安全操作空间。",
+      "projectBrief": "库房尺寸、架位布局、档案材料、现行环境目标及拟监测时段。",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "密集式档案架上存放着档案盒与装订资料。",
+        "caption": "档案储藏区与通道环境监测示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "library-rare-book-store",
+      "group": "archives",
+      "title": "善本与特藏库房",
+      "description": "全年记录善本和装订特藏附近的环境，供图书馆团队比较不同储藏区域，并评估供暖或空间用途调整的影响。封闭储藏空间以温湿度为重点，有明确受光需求的位置可选照度监测。",
+      "measurement": "温度、相对湿度；指定的受光藏品位置可选照度监测。",
+      "monitoringPoint": "具有代表性的书架或柜内空气位置；通常避开加热器、风口及窗户直接影响，专项研究这些影响时另行布点。",
+      "installation": "采用经批准的架体或墙面支撑，保持空气流通及藏品取用通道畅通。",
+      "projectBrief": "图书与装订材料类型、库房布局、供暖方式及专项保护要求。",
+      "image": {
+        "name": "rare-book-room.webp",
+        "alt": "设有保护性书架与手稿支架的善本查阅室。",
+        "caption": "特藏空间温湿度与阅览区照明监测示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "library-special-reading-room",
+      "group": "archives",
+      "title": "特藏阅览室",
+      "description": "记录读者查阅珍贵资料时的局部环境；受光管理属于保护方案时，可在阅读平面配置照度监测。结合开放时间、日光和查阅时段评估记录，为空间环境及藏品使用安排提供参考。",
+      "measurement": "温度、相对湿度；指定阅读平面可选照度监测。",
+      "monitoringPoint": "具有代表性的阅读位置，照度感光面与资料实际使用平面对齐。",
+      "installation": "采用经批准、视觉干扰小的固定方式，避开读者、书托及操作设备。",
+      "projectBrief": "阅览室开放时间、日光条件、资料使用制度、桌面布局及监测重点。",
+      "image": {
+        "name": "rare-book-room.webp",
+        "alt": "设有保护性书架与手稿支架的善本查阅室。",
+        "caption": "特藏阅览空间环境监测示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "archive-map-plan-cabinets",
+      "group": "archives",
+      "title": "地图、图纸与大幅纸质资料柜",
+      "description": "记录平放柜内大幅纸质资料周围的局部环境。储藏方案需要区分柜内与室内环境时，可比较两处记录，尤其适用于重新整理资料或调整房间运行方式之后。以温湿度为主要监测项目，日常避光储藏按实际需求配置照度监测。",
+      "measurement": "指定柜内或附近室内位置的温度与相对湿度。",
+      "monitoringPoint": "经批准的柜内空气空间，或附近具有代表性的测点，布点时不扰动纸质资料。",
+      "installation": "设备与抽屉和纸张保持距离，确定柜内方案前核实安装间隙与空气接触条件。",
+      "projectBrief": "资料柜尺寸、纸质及绘制材料、抽屉取用方式、周边室内布局及目标环境。",
+      "image": {
+        "name": "map-plan-cabinets.webp",
+        "alt": "用于大幅地图与图纸平放保存的档案抽屉柜",
+        "caption": "地图与图纸平放保存环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "archive-photograph-store",
+      "group": "archives",
+      "title": "摄影照片库房",
+      "description": "记录保护盒及资料柜内摄影照片藏品所处的室内环境。藏品人员可根据不同摄影工艺的保存要求，比较选定位置与季节变化趋势。优先配置温湿度监测；明确需要研究取用过程或受光情况时，再增加照度通道。",
+      "measurement": "温度、相对湿度；针对明确的取用或受光研究，可选照度监测。",
+      "monitoringPoint": "能够代表指定摄影照片藏品环境的室内或柜内位置。",
+      "installation": "使用经批准的支撑，避开储藏盒及气流障碍，并保留日常检查空间。",
+      "projectBrief": "摄影工艺、储藏温度、保护性容器安排及拟评估时段。",
+      "image": {
+        "name": "archive-shelves.webp",
+        "alt": "密集式档案架上存放着档案盒与装订资料。",
+        "caption": "档案储藏区与通道环境监测示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "archive-digitisation-workroom",
+      "group": "archives",
+      "title": "数字化与扫描工作室",
+      "description": "记录文献和图书在数字化处理期间的局部环境，为资料操作时段与房间环境变化提供背景。需要时可在选定工位记录环境照度；摄影曝光和复制照明的测试仍按影像采集流程实施。",
+      "measurement": "温度、相对湿度；指定操作位置可选环境照度监测。",
+      "monitoringPoint": "结合扫描设备布局选定的资料暂存与操作区域。",
+      "installation": "避开相机等设备移动范围及设备直接散热，安装位置由影像采集与保护团队共同确认。",
+      "projectBrief": "资料类型、操作时长、设备热源、空间布局及需要评估的环境问题。",
+      "image": {
+        "name": "digitisation-room.webp",
+        "alt": "配有上置式图书扫描仪、书托与资料整理台的图书馆数字化工作室。",
+        "caption": "文献数字化与扫描操作场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "collection-mixed-object-store",
+      "group": "collections",
+      "title": "综合藏品库房",
+      "description": "为综合藏品库房的不同区域建立温湿度记录。同一房间的藏品可能有不同保存要求，测点与评估标准应依据藏品保护方案确定。在例行巡检、季节评估及架位调整时比较局部环境记录。",
+      "measurement": "温度、相对湿度；指定受光藏品或操作区域可选照度监测。",
+      "monitoringPoint": "具有代表性的架位与储藏分区；容器或空间条件明显不同时增设测点。",
+      "installation": "采用经批准的架体或墙面支撑，保持空气流通、藏品取用通道安全及设备标识便于查看。",
+      "projectBrief": "藏品材料、保护性容器类型、空间平面图、现有环境目标及巡检安排。",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "藏品库房内的储藏柜与有序放置的藏品。",
+        "caption": "综合藏品储藏环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "collection-painting-rack-store",
+      "group": "collections",
+      "title": "绘画密集架与画作库房",
+      "description": "监测储藏绘画周围的局部环境，将指定架位与室内参考点进行比较。记录可用于库房环境评估及架位占用调整后的检查。以温湿度为核心测量项目，在评估受光或取用流程时按需配置照度监测。",
+      "measurement": "温度、相对湿度；有明确储藏受光评估需求时，可选照度监测。",
+      "monitoringPoint": "绘画储藏架旁经批准的位置；保护方案要求比较时，增设室内外围测点。",
+      "installation": "避开移动架、画框及搬运通道，保持测点位置可重复。",
+      "projectBrief": "绘画材料、架体布局、库房环境目标、取用安排及外围区域的关注事项。",
+      "image": {
+        "name": "painting-store.webp",
+        "alt": "博物馆藏品库房的滑动网架上存放着绘画作品。",
+        "caption": "采用滑动画架的绘画库房示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "collection-textile-drawer-store",
+      "group": "collections",
+      "title": "纺织品抽屉柜与服饰库房",
+      "description": "根据藏品布置选择柜内或室内测点，记录服饰与平放纺织品周围的环境。局部读数可供团队评估取用、季节变化或储藏整理后的环境。以温湿度为重点，避光储藏仅在明确需要时配置照度监测。",
+      "measurement": "指定纺织品储藏位置的温度与相对湿度。",
+      "monitoringPoint": "具有代表性的服饰库房位置，或经批准且不接触材料的柜内空间。",
+      "installation": "保留抽屉开合及服饰安全取用空间，与藏品保护团队确认隐蔽的支撑方式。",
+      "projectBrief": "纺织材料、储藏形式、资料柜尺寸、室内环境目标及预计取用频率。",
+      "image": {
+        "name": "textile-store.webp",
+        "alt": "博物馆储藏抽屉内平放着历史刺绣织物，旁边为带衬垫的卷藏织物。",
+        "caption": "平放与卷藏纺织品的保护性储藏示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "collection-receiving-room",
+      "group": "collections",
+      "title": "藏品接收与评估室",
+      "description": "记录新到藏品在检查、评估及转入库房或展厅前的室内环境，比较接收区与目标空间的差异，并为搬运时间线保留环境背景。由藏品登记或保护人员确定不同材料及到馆流程所需的观察内容。",
+      "measurement": "温度、相对湿度；商定的评估位置可选照度监测。",
+      "monitoringPoint": "在商定观察时段内，能够代表藏品环境的接收与暂存位置。",
+      "installation": "使用独立、经批准的支撑，避开包装箱与搬运通道，记录测点及室内运行方式的变化。",
+      "projectBrief": "到馆及拆箱流程、藏品材料、暂存时长及目标空间的环境要求。",
+      "image": {
+        "name": "collection-stores.webp",
+        "alt": "藏品库房内的储藏柜与有序放置的藏品。",
+        "caption": "藏品储藏环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "collection-conservation-studio",
+      "group": "collections",
+      "title": "文物保护修复工作室",
+      "description": "在检查、记录及工作台操作期间掌握工作室环境。温湿度记录为工作区及日常运行提供背景；有明确环境照明评估需求时，可按需配置照度监测。由保护修复人员选择测点，并结合处理与检查要求解读记录。",
+      "measurement": "温度、相对湿度；指定工位可选环境照度监测。",
+      "monitoringPoint": "具有代表性的工作台与藏品暂存区空气位置，避开工艺集中热源及局部设备排风。",
+      "installation": "使用经批准的独立支撑，保留安全工作空间、清洁通道及材料操作空间。",
+      "projectBrief": "空间用途、工作时间安排、修复处理相关环境要求及需要比较的位置。",
+      "image": {
+        "name": "conservation-studio.webp",
+        "alt": "文物保护修复工作台上放置着有支撑的陶器与体视显微镜。",
+        "caption": "博物馆文物保护修复工作室示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "collection-framing-mounting",
+      "group": "collections",
+      "title": "装裱与布展准备室",
+      "description": "记录画框、支撑件与藏品材料在展陈组装阶段的局部环境，便于团队在布展前比较准备室与目标展厅的条件。检查模拟展陈照明时，可按需配置照度监测，测量平面应对应预期展出位置。",
+      "measurement": "温度、相对湿度；模拟展陈照明可选照度监测。",
+      "monitoringPoint": "材料暂存与组装区域；模拟照明项目同时选定展陈测量平面。",
+      "installation": "固定于经批准的工作室设施，避开工作台、裁切设备及藏品搬运通道。",
+      "projectBrief": "材料与安装方案、目标展厅要求、准备时间安排及模拟照明信息。",
+      "image": {
+        "name": "conservation-studio.webp",
+        "alt": "文物保护修复工作台上放置着有支撑的陶器与体视显微镜。",
+        "caption": "博物馆文物保护修复工作室示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "laboratory-analytical-room",
+      "group": "laboratories",
+      "title": "分析实验室",
+      "description": "当室温或相对湿度与分析方法有关时，将测点环境记录纳入实验室日常工作。工作人员可结合设备使用和检测安排查看数据，并依据实验室自身的接受标准调查变化原因。测点应能代表实际工作区域，核验方式也应在部署前明确。",
+      "measurement": "温度与相对湿度；分析方法规定光照条件时，可选照度测量。",
+      "monitoringPoint": "实验室环境监测计划确定的、具有代表性的分析工作区域。",
+      "installation": "使用经批准的位置，避开仪器散热、通风柜排风和清洁通道；确认安装材料与校准需求。",
+      "projectBrief": "提供方法要求、房间布局、接受标准、记录需求及实验室核验程序。",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "分析实验室工作台上的色谱仪器与带防风罩的分析天平",
+        "caption": "分析仪器实验室工作空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "laboratory-weighing-room",
+      "group": "laboratories",
+      "title": "精密称量室",
+      "description": "为称量人员提供精密天平周围的局部温湿度记录，便于结合称量时段和实验室测量程序复核环境条件。选择能够代表天平所在区域的室内测点，同时兼顾人员通行、仪器操作和既有防气流干扰措施。",
+      "measurement": "指定称量区域周围的温度与相对湿度。",
+      "monitoringPoint": "天平区域附近的代表性位置，由负责测量程序的实验室确定。",
+      "installation": "避开天平防风罩及对振动敏感的工作台，保持测点与室内空气充分接触。",
+      "projectBrief": "提供称量室要求、工作时间、仪器布局及测量方法需要的环境记录。",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "分析实验室工作台上的色谱仪器与带防风罩的分析天平",
+        "caption": "分析仪器实验室工作空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "laboratory-ambient-sample-store",
+      "group": "laboratories",
+      "title": "常温留样室",
+      "description": "对储存说明明确要求常温保存的样品，持续记录其储存房间的环境条件。局部读数可为定期检查和储存布局调整提供依据。样品或操作程序规定光暴露要求时，再选择照度通道，并在部署前明确所需记录。",
+      "measurement": "温度与相对湿度；样品储存说明要求时，可选照度测量。",
+      "monitoringPoint": "常温留样室内选定的代表性货架区域。",
+      "installation": "避开样品容器及取放通道，在储存计划中记录测点位置和设备标识。",
+      "projectBrief": "列明样品类型、储存条件、货架布局、储存期限及记录复核职责。",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "室内常温库货架上存放的包装药品",
+        "caption": "医药常温储存空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "pharma-ambient-stockroom",
+      "group": "laboratories",
+      "title": "药品常温库",
+      "description": "为按批准的常温条件储存的药品建立局部室内环境记录。结合储存布局和设施已有的温度分布研究选择测点。温度、相对湿度及可选照度应对应具体药品的储存要求，接受标准、校准及记录复核程序由质量团队确定。",
+      "measurement": "温度与相对湿度；批准的药品储存条件要求时，可选照度测量。",
+      "monitoringPoint": "根据设施评估或温度分布研究选择的储存测点，而非仅在方便安装的中央墙面设置。",
+      "installation": "与设施和质量团队确认卫生安装要求、人员通行、通信条件及设备核验需求。",
+      "projectBrief": "提供药品储存说明、布局或温度分布研究结果、监测要求及拟接入系统。",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "室内常温库货架上存放的包装药品",
+        "caption": "医药常温储存空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "pharma-material-quarantine",
+      "group": "laboratories",
+      "title": "医药原辅料与包装材料库",
+      "description": "为具有明确环境储存要求的原辅料和包装材料记录局部条件，使测点始终对应具体区域及材料规范。工作人员可在储存检查和设施调整时复核环境记录；对储存说明涉及光暴露的材料，可按需增加照度测量。",
+      "measurement": "温度与相对湿度；对有规定要求的光敏感储存材料，可选照度测量。",
+      "monitoringPoint": "通过设施储存评估确定的、经批准的材料储存区和待验区。",
+      "installation": "保持区域隔离、清洁通道和物料标识，与设施质量团队确认安装适用性。",
+      "projectBrief": "提供材料规范、库区平面图、接受标准、核验需求及报告安排。",
+      "image": {
+        "name": "pharma-store.webp",
+        "alt": "室内常温库货架上存放的包装药品",
+        "caption": "医药常温储存空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "laboratory-instrument-workroom",
+      "group": "laboratories",
+      "title": "科研仪器与样品制备室",
+      "description": "在研究程序有相关要求时，记录共用科研仪器和样品制备区域的局部环境，帮助工作人员对照不同工作时段与房间运行状态。对于明确涉及光敏感材料或操作的程序，可选择照度测量，并根据任务确定测量位置与性能要求。",
+      "measurement": "温度与相对湿度；特定程序或材料需要时，可选照度测量。",
+      "monitoringPoint": "围绕实验室监测目标选择的仪器周围空气测点与制备区域测点。",
+      "installation": "使用经批准的固定件，避开设备散热与正在进行的操作，保留清洁和日常检查空间。",
+      "projectBrief": "提供房间用途、仪器环境要求、操作时间安排及所需测量项目。",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "分析实验室工作台上的色谱仪器与带防风罩的分析天平",
+        "caption": "分析仪器实验室工作空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "datacentre-rack-inlet",
+      "group": "technology",
+      "title": "数据中心机柜进风口",
+      "description": "在选定的机柜进风位置测量进入 IT 设备的空气条件，为室内平均值补充局部信息。结合机柜配置变化和制冷运行，对照温湿度趋势。测点由设备环境需求和设施监测计划确定，此场景通常优先选择温度与相对湿度。",
+      "measurement": "指定设备进风位置的温度与相对湿度。",
+      "monitoringPoint": "由数据中心设施团队选择的、具有代表性的机柜正面进风位置及高度。",
+      "installation": "使用经批准的机柜支架，保持测点能代表进风空气，支架不得阻挡气流、柜门及布线；按进风测量目标选择传感配置。",
+      "projectBrief": "提供机柜布局、进风位置、设备要求、制冷方式及监测平台信息。",
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "通道布局清晰的室内数据中心服务器机柜",
+        "caption": "数据中心环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "technology-edge-it-room",
+      "group": "technology",
+      "title": "边缘计算与网络设备机房",
+      "description": "为小型服务器机房和网络设备间提供局部温湿度记录。这些空间的运行条件可能与所在建筑的其他区域不同，应结合设备气流路径和房间布局布点。新增设备或调整房间运行方式后，可用温湿度读数辅助日常复核。",
+      "measurement": "指定室内位置与设备进风位置的温度及相对湿度。",
+      "monitoringPoint": "设备进风空气测点；监测计划需要对照时，增加具有代表性的室内参考测点。",
+      "installation": "避开设备排热和空气流通受阻的柜内角落，使用经批准的固定件并保留维护通道。",
+      "projectBrief": "提供机柜尺寸、设备布局、制冷条件、人员出入安排及通信要求。",
+      "image": {
+        "name": "data-center-premium.webp",
+        "alt": "通道布局清晰的室内数据中心服务器机柜",
+        "caption": "数据中心环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "technology-electronics-assembly",
+      "group": "technology",
+      "title": "电子装配工作区",
+      "description": "记录指定电子装配区域的温度与相对湿度，为工艺团队复核室内条件、季节变化及工位布置提供环境依据。结合工厂既有的元器件操作和静电防护管理使用数据；若需评估具体工位照明，可选配照度测量。",
+      "measurement": "温度与相对湿度；指定检验或装配工位可选照度测量。",
+      "monitoringPoint": "由工艺和设施团队共同确定的代表性装配区及检验区。",
+      "installation": "使用经批准的固定件，避开机械设备、人员活动及局部热源，遵守现场安装与清洁要求。",
+      "projectBrief": "提供工艺布局、元器件要求、环境判定条件及需要对比的测点。",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "配有防静电垫和体视显微镜的电子精密装配工作台",
+        "caption": "室内电子装配工作空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "technology-component-storage",
+      "group": "technology",
+      "title": "电子元器件储存",
+      "description": "记录电子元器件库房的环境，实际储存方式需要时，可选择经确认适用的柜内测点。工作人员可结合包装、干燥剂和物料操作程序复核读数。以温度与相对湿度为核心测量项目，目标条件和核验要求由元器件供应商的储存要求确定。",
+      "measurement": "指定元器件库房位置或经批准的柜内位置的温度与相对湿度。",
+      "monitoringPoint": "根据元器件敏感性、供货包装及储存柜配置选择的储存区域。",
+      "installation": "选择柜内配置前，确认可用空间、空气接触条件和维护空间，并保持元器件取放通道畅通。",
+      "projectBrief": "提供元器件储存说明、包装及柜体类型、库区布局和监测判定条件。",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "配有防静电垫和体视显微镜的电子精密装配工作台",
+        "caption": "室内电子装配工作空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "technology-cleanroom-environment",
+      "group": "technology",
+      "title": "洁净室辅助环境监测",
+      "description": "当温度和相对湿度与工艺有关时，在洁净室或受控工作空间的环境计划中补充局部测点。与设施团队共同确定测量位置、安装材料、清洁空间及核验需求。照度通道依据明确的工艺或作业照明目标选配。",
+      "measurement": "温度与相对湿度；受控工艺规定时，可选照度测量。",
+      "monitoringPoint": "通过设施环境评估确定并获准安装的工作区域。",
+      "installation": "选择供货配置前，与设施团队评估外壳材料、固定方式、可清洁性及传感部位的空气接触条件。",
+      "projectBrief": "提供工艺要求、洁净室布局、安装限制、核验要求及目标平台接入方式。",
+      "image": {
+        "name": "cleanrooms.webp",
+        "alt": "配有工作台与工业设备的洁净室内生产空间",
+        "caption": "受控生产环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "technology-metrology-room",
+      "group": "technology",
+      "title": "计量与校准实验室",
+      "description": "记录局部温度与相对湿度，为计量工作提供环境背景。实验室可将房间环境记录与测量时段及测量不确定度评定相结合。围绕实际仪器和操作程序选择测点及核验要求，各项任务的允许环境条件由实验室确定。",
+      "measurement": "指定测量工作空间的温度与相对湿度。",
+      "monitoringPoint": "与负责测量的实验室共同确定的代表性仪器区域及参考标准器区域。",
+      "installation": "使用独立且经批准的支架，避开仪器热源和测量运动范围；测点位置应有记录且可重复设置。",
+      "projectBrief": "提供仪器环境要求、房间布局、测量时间安排及所需校准或核验证据。",
+      "image": {
+        "name": "analytical-laboratory.webp",
+        "alt": "分析实验室工作台上的色谱仪器与带防风罩的分析天平",
+        "caption": "分析仪器实验室工作空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "production-print-paper-store",
+      "group": "production",
+      "title": "印刷用纸储存与备料",
+      "description": "对比纸库与印刷车间或作业区的局部环境，帮助工作人员复核纸张从储存区转入使用区时所经历的条件差异。优先记录温度与相对湿度；当日光暴露属于储存评估内容时，再选择照度通道。",
+      "measurement": "温度与相对湿度；有明确日光暴露评估需求时，可选照度测量。",
+      "monitoringPoint": "结合物料流转路线选择的代表性纸张储存区与备料区。",
+      "installation": "避开纸堆、机械设备直接散热和搬运通道，保持测点周围空气流通。",
+      "projectBrief": "提供纸张类型、库房至作业区流程、供应商说明及需要对比的测点。",
+      "image": {
+        "name": "warehouses.webp",
+        "alt": "设有货架并存放箱装材料的室内仓库",
+        "caption": "材料储存环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "production-textile-materials",
+      "group": "production",
+      "title": "纺织品与面料储存",
+      "description": "为纺织品库存和备料区域建立局部温湿度记录。不同纤维和整理工艺对应不同的操作及储存要求，复核标准由材料团队确定。日光暴露或特定材料使光照成为储存评估内容时，可选配照度测量。",
+      "measurement": "温度与相对湿度；部分暴露存放的面料可选照度测量。",
+      "monitoringPoint": "材料团队确定的代表性面料货架、卷料储存区及备料区。",
+      "installation": "使用经批准的支架，避开库存和搬运设备，不接触面料并保留日常检查空间。",
+      "projectBrief": "提供纤维及整理工艺类型、供应商储存说明、房间布局及环境暴露关注点。",
+      "image": {
+        "name": "textile-store.webp",
+        "alt": "博物馆储存抽屉中平放的历史刺绣织物及带衬垫的织物卷",
+        "caption": "织物平放与卷藏的保管空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "production-musical-instruments",
+      "group": "production",
+      "title": "乐器储存与使用空间",
+      "description": "记录钢琴及其他湿度敏感乐器在储存和使用位置的局部环境。工作人员可对照供暖时段、排练安排和维护观察，复核房间温湿度变化。温度与相对湿度是核心测量项目；需要研究特定乐器受到的直射日光时，可选配照度测量。",
+      "measurement": "温度与相对湿度；有明确窗边光照评估需求时，可选照度测量。",
+      "monitoringPoint": "具有代表性的乐器房空气测点；养护计划需要对比时，增加指定窗边测点。",
+      "installation": "使用独立且经批准的支架，避开乐器、演奏人员及供暖或制冷出风口。",
+      "projectBrief": "提供乐器类型、制造商养护要求、房间用途、日光分布及监测周期。",
+      "image": {
+        "name": "musical-instrument-room.webp",
+        "alt": "自然采光的音乐练习室内摆放着立式钢琴、大提琴和小提琴",
+        "caption": "乐器空间的室内环境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "production-optics-spares",
+      "group": "production",
+      "title": "光学与精密设备储存",
+      "description": "为有明确环境储存要求的设备和备件记录局部条件，根据实际储存说明及包装方式选择库房或柜内测点。工作人员可在盘点和设施调整时复核读数；储存材料确有光暴露研究需求时，再增加照度通道。",
+      "measurement": "温度与相对湿度；设备或材料说明有规定时，可选照度测量。",
+      "monitoringPoint": "能够代表储存设备及其包装环境的货架位置或经批准的柜内位置。",
+      "installation": "保持传感开口与空气接触，保留柜门使用空间，并遵守供应商和设施对柜内安装的限制。",
+      "projectBrief": "提供设备储存要求、包装类型、柜体布局及监测判定条件。",
+      "image": {
+        "name": "electronics-assembly.webp",
+        "alt": "配有防静电垫和体视显微镜的电子精密装配工作台",
+        "caption": "室内电子装配工作空间示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "production-filament-dry-storage",
+      "group": "production",
+      "title": "3D 打印材料储存",
+      "description": "记录湿敏打印材料周围的室内空气，或经确认适用的干燥储存空间的温湿度。工作人员可结合丝材供应商的干燥、包装和操作说明复核环境。根据可用空间与目标条件选择传感配置，以温度和相对湿度为主要测量项目。",
+      "measurement": "指定材料库房或经批准的干燥储存位置的温度与相对湿度。",
+      "monitoringPoint": "围绕材料流转流程选择的丝材储存区及备料区。",
+      "installation": "选择柜内配置前，确认安装净空、空气接触条件及测量性能是否适合目标储存环境。",
+      "projectBrief": "提供丝材类型、供应商储存说明、箱柜尺寸及需要了解的环境问题。",
+      "image": {
+        "name": "materials-dry-store.webp",
+        "alt": "储物架上密封包装的3D打印耗材卷及带密封圈的干燥储存箱",
+        "caption": "3D 打印聚合物丝材的干燥储存示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "production-botanical-specimens",
+      "group": "production",
+      "title": "植物标本制作与储存",
+      "description": "记录干燥植物标本及制作材料周围的局部环境，便于工作人员对照制作间与储存区的读数，复核房间运行和标本操作安排。日常以温度及相对湿度为重点；标本操作或展示有明确光暴露计划时，可选配照度测量。",
+      "measurement": "温度与相对湿度；指定标本操作或展示位置可选照度测量。",
+      "monitoringPoint": "由藏品保管或科研团队选择的代表性标本制作区及干燥储存区。",
+      "installation": "使用经批准的支架，避开标本、压制设备与储存抽屉，保留安全操作和检查空间。",
+      "projectBrief": "提供标本及制作类型、储存方式、房间环境要求和重点暴露因素。",
+      "image": {
+        "name": "botanical-specimens.webp",
+        "alt": "植物标本制备与储藏室，设有标本压制台、纸夹和储柜",
+        "caption": "干燥植物标本制备与储藏环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "building-historic-rooms",
+      "group": "buildings",
+      "title": "历史室内空间与季节性使用建筑",
+      "description": "跨供暖季和不同使用时段，为历史房间建立环境记录。保护计划需要时，对比具有代表性的内部测点与外围测点。可选照度用于研究装饰层或家具周围的日光暴露，安装方式须获建筑管理方批准。",
+      "measurement": "温度与相对湿度；受日光影响的指定建筑构件或陈设周围可选照度测量。",
+      "monitoringPoint": "经批准的室内及外围测点，应能代表所观察建筑材料或藏品的环境。",
+      "installation": "在经批准的现代固定设施上使用可逆安装支架，保护历史建筑本体并保持参观通道畅通。",
+      "projectBrief": "提供建筑用途、关注的材料或藏品、供暖安排、房间平面图及安装许可。",
+      "image": {
+        "name": "historic-room.webp",
+        "alt": "保存完好的历史室内空间中的木质家具与肖像画",
+        "caption": "历史室内空间与家具陈设环境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "building-classrooms",
+      "group": "buildings",
+      "title": "教室与学习空间",
+      "description": "对比不同教学空间的温湿度，了解其在上课日内的变化。可选照度用于明确的自然采光或桌面照明评估。设施团队应选择具有代表性的室内位置，并结合使用时间表与建筑整体室内环境评估解读数据。",
+      "measurement": "温度与相对湿度；指定学习位置或日光测点可选照度测量。",
+      "monitoringPoint": "具有代表性的人员活动区域；进行作业照明研究时，应记录测量平面。",
+      "installation": "牢固安装并避开人员和教学设备，根据观察目标设置空气接触条件及感光面朝向。",
+      "projectBrief": "提供教室布局、课程安排、现有关注问题、自然采光条件及监测周期。",
+      "image": {
+        "name": "classroom.webp",
+        "alt": "自然采光教室中的课桌椅与空白白板",
+        "caption": "教室温度、相对湿度与光照环境",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "building-public-library",
+      "group": "buildings",
+      "title": "公共图书馆阅览与书架区域",
+      "description": "了解公共图书馆中馆藏与读者共处区域的局部环境，对比开放时段及季节运行期间的书架区和阅览区。可选照度可用于研究窗边书架或阅览位置的光暴露，藏品保管与空间使用的管理重点由图书馆确定。",
+      "measurement": "温度与相对湿度；指定书架或阅览表面的光暴露可选照度测量。",
+      "monitoringPoint": "具有代表性的馆藏书架区与阅览区；存在明确日光评估目标时，增加相应测点。",
+      "installation": "使用牢固且经批准的固定件，避开图书、访客与清洁通道，记录每个测点的用途。",
+      "projectBrief": "提供书架布局、开放时间、窗户位置、馆藏类型及空间管理目标。",
+      "image": {
+        "name": "public-library.webp",
+        "alt": "设有书架和阅览桌、高窗引入自然光的现代公共图书馆",
+        "caption": "公共图书馆阅览区温湿度与局部照明观察场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "building-visitor-reception",
+      "group": "buildings",
+      "title": "访客中心与接待空间",
+      "description": "结合开放时间，对比接待、导览及解说区域的局部环境。可按展板或日光相关的具体目标选配照度测量。设施人员可将温湿度数据与空间用途及附近藏品、展览要求对照，测点应能代表预期监测区域。",
+      "measurement": "温度与相对湿度；指定解说展示位置或日光区域可选照度测量。",
+      "monitoringPoint": "具有代表性的访客区空气测点与约定的展示测点；用途不同时分别布点。",
+      "installation": "使用牢固且经批准的固定件，保持传感部位无遮挡，兼顾隐蔽布置和维护通道。",
+      "projectBrief": "提供空间平面图、开放时间、展示材料、自然采光条件及监测目标。",
+      "image": {
+        "name": "museum-gallery.webp",
+        "alt": "博物馆展厅中的玻璃展柜与考古器物",
+        "caption": "博物馆展厅陈列环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "building-worship-heritage",
+      "group": "buildings",
+      "title": "宗教建筑与历史礼堂",
+      "description": "记录间歇使用建筑中木质陈设、纺织品与历史构件周围的局部环境。工作人员可结合供暖时段及活动安排复核读数。在受日光影响的物件或装饰表面附近，可按需测量照度；安装方案应与历史室内空间的负责人协商确定。",
+      "measurement": "温度与相对湿度；受日光影响的指定历史构件或陈设处可选照度测量。",
+      "monitoringPoint": "围绕建筑使用及保护重点选择的、具有代表性的人员活动区和藏品位置。",
+      "installation": "使用可逆且经批准的支架，避开历史表面、仪式活动及访客或会众通道。",
+      "projectBrief": "提供建筑用途、历史材料、供暖安排、日光路径及允许安装的位置。",
+      "image": {
+        "name": "chapel-interior.webp",
+        "alt": "透过窗户柔和采光的历史礼拜堂，内有木质长椅与雕刻木构件",
+        "caption": "保留木材与石材表面的历史礼拜堂室内环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    },
+    {
+      "id": "building-indoor-plant-conservatory",
+      "group": "buildings",
+      "title": "室内植物收藏与温室",
+      "description": "对比室内植物展示区和有遮护温室内的局部环境。温度、相对湿度及可选照度可反映不同位置随一天时间变化的条件差异。园艺人员应结合植物需求及养护流程解读数据，并按观察目标确定光照测量配置。照度以 lux 表示；若项目需要评估植物光合有效辐射或光量子通量密度，应另行选择相应测量配置。",
+      "measurement": "温度与相对湿度；指定植物展示位置可选照度测量。",
+      "monitoringPoint": "园艺团队选定的、具有代表性的植物展示区空气测点与光照测点。",
+      "installation": "保持传感开口不受叶片及灌溉喷淋遮挡或影响；确认供货配置适合预期环境与选定光照条件。",
+      "projectBrief": "提供植物类型、室内布局、自然光或灯具布置、浇灌流程及观察周期。",
+      "image": {
+        "name": "scene-greenhouses.webp",
+        "alt": "种植床在漫射日光下的室内玻璃温室",
+        "caption": "室内植物环境示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": []
+    }
+  ],
+  "series": {
+    "description": "同一个监测目标，可以选择不同无线方案。先确定网络，再确认适合空间的温度、相对湿度、照度及定制通道。",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "steps": [
+      {
+        "title": "描述空间",
+        "text": "分享用途、房间或展柜布局、部署地区、测点数量及安装限制。"
+      },
+      {
+        "title": "明确测量",
+        "text": "确认温湿度与照度需求、预期环境及所需通道性能。"
+      },
+      {
+        "title": "确定部署",
+        "text": "明确网络、平台、安装结构、采集上报方案及报价。"
+      }
+    ],
+    "modelDetails": [
+      {
+        "model": "H200",
+        "network": "LoRa",
+        "title": "面向规划的现场网络",
+        "text": "为多测点监测协调网关、室内覆盖及平台连接。"
+      },
+      {
+        "model": "H300",
+        "network": "4G",
+        "title": "面向蜂窝网络监测",
+        "text": "核对部署地区网络支持、SIM配置及预定安装位置的信号。"
+      },
+      {
+        "model": "H500",
+        "network": "NB-IoT",
+        "title": "面向NB-IoT部署",
+        "text": "确认当地运营商服务与项目上报需求。"
+      }
+    ]
+  },
+  "specifications": {
+    "description": "下列温湿度数值用于说明公开T/H参考配置。实际交付的温湿度光照或定制配置，以约定的通道清单和技术规格为准。",
+    "notes": [
+      "温湿度感知点的测量范围与发射器、显示端及完整总成的适用环境分别确认；实际结构也需满足空气接触、感光面朝向及安装条件。定制通道采用各自约定的量程、精度和运行方案。",
+      "参考设计工况用于选型比较，最终电池方案应结合所选通道、采集与上报间隔、事件消息、网络及温度评估。"
+    ],
+    "rows": [
+      {
+        "label": "产品系列",
+        "value": "H200／H300／H500"
+      },
+      {
+        "label": "测量项目",
+        "value": "空气温度、相对湿度；按选型增加照度或其他定制通道"
+      },
+      {
+        "label": "温度量程 · T/H参考",
+        "value": "−20～+80°C"
+      },
+      {
+        "label": "相对湿度量程 · T/H参考",
+        "value": "0～100% RH"
+      },
+      {
+        "label": "典型温度精度 · T/H参考",
+        "value": "±0.2°C"
+      },
+      {
+        "label": "典型湿度精度 · T/H参考",
+        "value": "±2% RH"
+      },
+      {
+        "label": "光照测量",
+        "value": "照度，单位lux；量程、分辨率和精度按供货配置明确"
+      },
+      {
+        "label": "感知结构",
+        "value": "一体式终端或项目专用探头结构，按供货配置选择"
+      },
+      {
+        "label": "T/H参考探头选项",
+        "value": "线缆式开槽烧结探头"
+      },
+      {
+        "label": "无线方案",
+        "value": "H200：LoRa；H300：4G；H500：NB-IoT"
+      },
+      {
+        "label": "平台接入",
+        "value": "Hitelecom平台或约定客户平台；MQTT支持按所选通信链路确认"
+      },
+      {
+        "label": "外壳及总成防护",
+        "value": "按供货配置与安装环境确认"
+      },
+      {
+        "label": "设备配置",
+        "value": "支持的终端提供NFC启用与本地配置"
+      },
+      {
+        "label": "远程固件",
+        "value": "支持的配置提供OTA更新"
+      },
+      {
+        "label": "参考电池设计",
+        "value": "每10分钟采集、每4小时上报，设计续航超过10年；实际寿命取决于配置与运行条件"
+      },
+      {
+        "label": "安装与定制",
+        "value": "按项目选择安装及感知布局，OEM／ODM需求另行约定"
+      }
+    ]
+  },
+  "faqHeading": {
+    "intro": "关于测点选择、藏品环境目标及无线监测配置，为您的项目提供清晰解答。"
+  },
+  "faqs": [
+    {
+      "id": "measurements",
+      "question": "温湿度光照传感器可以测量什么？",
+      "paragraphs": [
+        "它可在选定的室内测点测量空气温度、相对湿度和照度。照度以勒克斯（lux）表示，反映落在表面上的可见光水平。",
+        "供货时根据项目确认测量通道、传感器布置方式及各通道的测量性能。"
+      ],
+      "sources": [],
+      "evidence": ""
+    },
+    {
+      "id": "museum-combination",
+      "question": "博物馆为什么需要同时监测温度、湿度与光照？",
+      "paragraphs": [
+        "三项数据反映藏品周围环境的不同方面。温湿度数据可用于评估环境变化；照度数据可为展陈照明与光照时间安排提供参考。",
+        "结合展品、材料特性和开放时间分析，有助于文物保护人员与设施管理团队在同一组环境数据基础上开展工作。"
+      ],
+      "sources": [],
+      "evidence": ""
+    },
+    {
+      "id": "targets",
+      "question": "如何确定藏品的温湿度与光照目标？",
+      "paragraphs": [
+        "从藏品材料、保存状况、现有环境，以及商定的借展或展览要求出发，由文物保护团队确定各展厅或展柜的环境目标。",
+        "温湿度限值可作为告警配置的依据；照度数据则可与商定的展陈照明方案进行对照。"
+      ],
+      "sources": [],
+      "evidence": ""
+    },
+    {
+      "id": "room-and-case",
+      "question": "展厅、档案库与展柜中的传感器应安装在哪里？",
+      "paragraphs": [
+        "空气测点应能代表需要监测的藏品或区域，并考虑层架高度、附近墙面、通风口和门的位置。当封闭展柜内部环境是监测重点时，应将柜内作为独立测点。",
+        "在现场平面图中记录测点，并在安装前确认终端与探头的布置方式。"
+      ],
+      "sources": [],
+      "evidence": ""
+    },
+    {
+      "id": "light-position",
+      "question": "展品的光照测量感光面应如何布置？",
+      "paragraphs": [
+        "感光面的位置和朝向应能代表需要评估的展品表面或展示区域。避免外壳、支架或附近物体遮挡感光面，并记录安装朝向。",
+        "安装调试时，在展品位置核对照度，确认固定测点能够回答项目关注的照明问题。"
+      ],
+      "sources": [],
+      "evidence": ""
+    },
+    {
+      "id": "light-history",
+      "question": "如何利用照度记录评估展陈照明？",
+      "paragraphs": [
+        "将实测照度与展品的照明目标进行比较，并观察自然光、灯具设置和开放时间变化时的照度情况。对光敏感材料制定光照安排时，需要同时考虑光照强度与持续时间。",
+        "如项目需要累计光照暴露分析，应在平台需求中明确带时间戳的照度数据、计量单位及计算流程。"
+      ],
+      "sources": [],
+      "evidence": ""
+    },
+    {
+      "id": "intervals",
+      "question": "如何选择采集周期与上报周期？",
+      "paragraphs": [
+        "采集周期根据需要观察的变化确定，例如照明启停、展柜开启或房间运行状态；上报周期则根据远程查看与告警需求确定。",
+        "同时结合数据覆盖要求和电池使用计划确认配置。短时变化研究与长期季节性环境观察，对采集和上报周期的要求可能不同。"
+      ],
+      "sources": [],
+      "evidence": ""
+    },
+    {
+      "id": "wireless-platform",
+      "question": "室内项目应选择哪种无线型号与平台？",
+      "paragraphs": [
+        "H200 对应 LoRa，H300 对应 4G，H500 对应 NB-IoT。应在实际测点评估网络覆盖，包括封闭展柜、地下库房和建筑内部房间。",
+        "LoRa 项目需要规划网关及数据接入路径；蜂窝通信型号需要确认当地网络服务和开通条件。数据可接入 Hitelecom 平台或双方确认兼容的客户平台。"
+      ],
+      "sources": [],
+      "evidence": ""
+    },
+    {
+      "id": "accuracy",
+      "question": "选型时应明确哪些测量性能与校准信息？",
+      "paragraphs": [
+        "明确预期使用条件，以及每个通道需要的量程、精度和分辨率。对于照度通道，还应说明低照度或较明亮的房间条件，以及感光面的安装朝向。",
+        "同时商定安装调试时的读数核验方式、所需校准文件，以及适合现场条件的复核周期，使供货规格与测量任务相匹配。"
+      ],
+      "sources": [],
+      "evidence": ""
+    },
+    {
+      "id": "battery",
+      "question": "规划电池使用寿命时需要考虑什么？",
+      "paragraphs": [
+        "需要结合测量通道、采集周期、上报周期、工作环境和网络质量制定电池使用计划，并按实际供货的温湿度光照配置核算。",
+        "参考配置按每 10 分钟采集、每 4 小时上报，设计使用寿命超过 10 年。实际寿命受传感器组合、采集与上报设置、环境温度、网络条件及告警上报等因素影响。"
+      ],
+      "sources": [],
+      "evidence": ""
+    }
+  ],
+  "dateModified": "2026-10-15"
+}

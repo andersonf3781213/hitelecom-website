@@ -82,7 +82,7 @@
         "number": "03"
       }
     ],
-    "battery_text": "Die veröffentlichte Referenzkonfiguration für Temperatur und Luftfeuchte ist unter den angegebenen Testbedingungen bei einem Übertragungsintervall von einer Stunde auf mehr als 10 Jahre ausgelegt. Bestätigen Sie bei einer Installation für Temperatur, Luftfeuchte und Beleuchtungsstärke die Batterieplanung anhand der endgültigen Kanalliste, des Übertragungsprofils, der Betriebstemperatur und der Netzbedingungen.",
+    "battery_text": "Die veröffentlichte Referenzkonfiguration ist auf mehr als 10 Jahre bei Messungen alle 10 Minuten und Datenübertragung alle 4 Stunden ausgelegt. Mess- und Übertragungsintervalle können projektweise vereinbart werden, und die tatsächliche Batterielebensdauer hängt vom Batteriepaket, den gewählten Messkanälen, der Betriebstemperatur und den Funkbedingungen ab. Bestätigen Sie bei einer Installation für Temperatur, Luftfeuchte und Beleuchtungsstärke die Batterieplanung anhand der endgültigen Kanalliste, des Übertragungsprofils, der Betriebstemperatur und der Netzbedingungen.",
     "platform_text": "Wählen Sie die Hitelecom Platform oder besprechen Sie die Anbindung an eine Kundenplattform. Bestätigen Sie vor der Bereitstellung Datenfelder, Einheiten, Gerätekennungen, Kommunikationsweg und Zuständigkeiten für Warnmeldungen."
   },
   "series": {
@@ -176,7 +176,7 @@
       },
       {
         "label": "Veröffentlichter T&H-Gehäuseschutz",
-        "value": "IP65; bestätigen Sie die Schutzart für die gelieferte THL-Konfiguration"
+        "value": "Wird für die gelieferte THL-Konfiguration und die Installationsumgebung angegeben"
       },
       {
         "label": "Gerätekonfiguration",
@@ -188,7 +188,7 @@
       },
       {
         "label": "Batterieauslegung der T&H-Referenz",
-        "value": ">10 Jahre bei einem Übertragungsintervall von 1 Stunde unter den angegebenen Testbedingungen; die endgültige THL-Batterieplanung wird auf die Konfiguration abgestimmt"
+        "value": "Referenzauslegung: über 10 Jahre bei Messungen alle 10 Minuten und Datenübertragung alle 4 Stunden; die tatsächliche Batterielebensdauer hängt von der Konfiguration und den Betriebsbedingungen ab."
       },
       {
         "label": "Installation und Anpassung",
@@ -330,14 +330,14 @@
       "question": "Was sollte bei der Planung der Batterielaufzeit berücksichtigt werden?",
       "paragraphs": [
         "Nutzen Sie die ausgewählte Kanalliste, Mess- und Übertragungsintervalle, Betriebsbedingungen und Netzqualität, um die Batterieplanung festzulegen. Bestätigen Sie die Berechnung für die gelieferte Konfiguration für Temperatur, Luftfeuchte und Beleuchtungsstärke.",
-        "Die veröffentlichte T&H-Referenzauslegung nennt mehr als 10 Jahre bei stündlicher Übertragung unter den angegebenen Testbedingungen; diese Referenz sollte mit der endgültigen Projektkonfiguration abgeglichen werden."
+        "Die veröffentlichte T&H-Referenzauslegung nennt mehr als 10 Jahre bei Messungen alle 10 Minuten und Datenübertragung alle 4 Stunden unter den angegebenen Testbedingungen. Mess- und Übertragungsintervalle können projektweise vereinbart werden, und die tatsächliche Batterielebensdauer hängt vom Batteriepaket, den gewählten Kanälen, der Betriebstemperatur und den Funkbedingungen ab. Gleichen Sie diese Referenz mit der endgültigen Projektkonfiguration ab."
       ],
       "sources": [
         "P1",
         "P2",
         "R4"
       ],
-      "evidence": "Manufacturer reference publishes hourly-reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
+      "evidence": "Manufacturer reference publishes a 10-minute sampling and 4-hour reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
     }
   ],
   "evidence": {
@@ -352,7 +352,7 @@
         "id": "P2",
         "title": "Hitelecom: H Series T&H Sensor Datasheet, 3 pages",
         "url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
-        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, hourly-reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
+        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, 10-minute sampling and 4-hour reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
       },
       {
         "id": "P3",
@@ -1097,9 +1097,9 @@
       "installation": "Halten Sie Abstand zwischen Gerät, Schubladen und Papier; bestätigen Sie vor der Auswahl einer internen Anordnung ausreichenden Freiraum und Luftzugang.",
       "projectBrief": "Geben Sie Schrankabmessungen, Papiermedien, Schubladenzugang, umgebende Raumaufteilung und Zielbedingungen an.",
       "image": {
-        "name": "archive-shelves.webp",
-        "alt": "Fahrbare Archivregale mit Archivkartons und gebundenem Archivgut",
-        "caption": "Beispiel eines Archivmagazins mit Zugangsgängen zur Beobachtung lokaler Erhaltungsbedingungen.",
+        "name": "map-plan-cabinets.webp",
+        "alt": "Großformatige Karten und Zeichnungen flach in breiten Planschubladen aufbewahrt.",
+        "caption": "Flachlagerung in Planschränken für Karten und Zeichnungen",
         "focalPoint": "50% 50%",
         "kind": "illustrative"
       }
@@ -1349,7 +1349,7 @@
       "description": "Messen Sie die der IT-Ausrüstung zugeführte Luft an ausgewählten Rack-Lufteinlässen, statt sich allein auf einen Raumdurchschnittswert zu verlassen. Vergleichen Sie lokale Temperatur- und Luftfeuchtetrends mit Änderungen an Racks und dem Kühlbetrieb. Die Positionswahl richtet sich nach der Geräteumgebung und dem Einrichtungsplan; Lichtmessung ist für diese Anwendung keine standardmäßige Anforderung.",
       "measurement": "Temperatur und relative Luftfeuchte an ausgewählten Positionen der Gerätezuluft.",
       "monitoringPoint": "Repräsentative Standorte und Höhen an den Lufteinlässen der Rack-Vorderseiten, ausgewählt vom Gebäudemanagementteam des Rechenzentrums.",
-      "installation": "Nutzen Sie genehmigte Rack-Halterungen mit Abstand zu Luftströmung, Türen und Verkabelung; wählen Sie Sensoranordnungen, die zum Messziel am Lufteinlass passen.",
+      "installation": "Nutzen Sie genehmigte Rack-Halterungen, die den Luftstrom, die Türen und die Verkabelung nicht behindern; wählen Sie Sensoranordnungen, die zum Messziel am Lufteinlass passen.",
       "projectBrief": "Teilen Sie uns Rack-Anordnung, Lufteinlasspositionen, Geräteanforderungen, Kühlanordnung und Überwachungsplattform mit.",
       "image": {
         "name": "data-center-premium.webp",
@@ -1539,9 +1539,9 @@
       "installation": "Nutzen Sie genehmigte Halterungen mit Abstand zu Belegen, Pressen und Lagerschubladen und erhalten Sie sicheren Zugang für Handhabung und Inspektion.",
       "projectBrief": "Teilen Sie uns Beleg- und Präparationsarten, Lageranordnung, Raumanforderungen und Prioritäten zur Lichtexposition mit.",
       "image": {
-        "name": "natural-history.webp",
-        "alt": "Mineralien und Fossilien in gläsernen Museumsvitrinen.",
-        "caption": "Ausstellungsumgebungen naturkundlicher Sammlungen",
+        "name": "botanical-specimens.webp",
+        "alt": "Gepresste Pflanzenpräparate in Herbarpapier-Mappen und auf Montagebögen.",
+        "caption": "Umgebungen zur Herbarisierung und Präparierung botanischer Sammlungsobjekte",
         "focalPoint": "50% 50%",
         "kind": "illustrative"
       }

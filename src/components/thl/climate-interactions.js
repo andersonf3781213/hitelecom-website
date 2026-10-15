@@ -187,11 +187,11 @@ if (contactBar) {
   const copy = contactBar.querySelector('.climate-copy-wechat');
   const status = contactBar.querySelector('.climate-copy-status');
   copy.addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(copy.dataset.copy); status.textContent = 'WeChat ID copied.'; }
+    try { await navigator.clipboard.writeText(copy.dataset.copy); status.textContent = T('WeChat ID copied.'); }
     catch {
       const range = document.createRange(); range.selectNodeContents(copy);
       const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
-      status.textContent = 'ID selected. Use your device’s copy command.';
+      status.textContent = T('ID selected. Use your device’s copy command.');
     }
   });
   contactBar.querySelector('.climate-contact-top').addEventListener('click', event => {
@@ -230,3 +230,72 @@ document.querySelectorAll('[data-measurement]').forEach(link => link.addEventLis
   const value = measurementValue[link.dataset.measurement];
   if (value) field.value = value;
 }));
+
+/* V88 上滚导航遮挡修复（复用空气质量页机制，Kimi 审核 §7）：
+   栏目导航 .section-nav 的 sticky top 跟随主 Header 实际可见下沿；
+   --thl-header-visible / --thl-header-height / --thl-nav-height 实测写入；
+   html.thl-sticky-sync 仅在本页脚本运行后添加，不影响其他产品页；
+   astro:before-swap 时清理观察器与 html 类。 */
+function initThlStickyNav() {
+  const page = document.getElementById('thl-content');
+  const header = document.getElementById('site-header');
+  const nav = page?.querySelector('.section-nav');
+  if (!page || !header || !nav || page.dataset.thlStickyReady) return;
+  page.dataset.thlStickyReady = '1';
+  const html = document.documentElement;
+  const running = new Set();
+  const last = new Map();
+  let frame = 0;
+  function write(name, pixels) {
+    const value = `${Math.max(0, pixels).toFixed(3)}px`;
+    if (last.get(name) === value) return;
+    last.set(name, value);
+    html.style.setProperty(name, value);
+  }
+  function schedule() { if (!frame) frame = requestAnimationFrame(sync); }
+  function sync() {
+    frame = 0;
+    const rect = header.getBoundingClientRect();
+    const position = getComputedStyle(header).position;
+    const overlaysPage = position === 'fixed' || position === 'sticky';
+    const visible = overlaysPage ? Math.min(rect.height, Math.max(0, rect.bottom)) : 0;
+    write('--thl-header-visible', visible);
+    write('--thl-header-height', overlaysPage ? rect.height : 0);
+    write('--thl-nav-height', nav.getBoundingClientRect().height);
+    html.classList.add('thl-sticky-sync');
+    if (running.size) schedule();
+  }
+  const classObserver = new MutationObserver(schedule);
+  classObserver.observe(header, { attributes: true, attributeFilter: ['class'] });
+  classObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  let sizeObserver = null;
+  if ('ResizeObserver' in window) {
+    sizeObserver = new ResizeObserver(schedule);
+    sizeObserver.observe(header);
+    sizeObserver.observe(nav);
+  }
+  window.addEventListener('resize', schedule, { passive: true });
+  function relevant(event) {
+    return event.target === header && (event.propertyName === 'transform' || event.propertyName.startsWith('padding'));
+  }
+  header.addEventListener('transitionrun', event => {
+    if (!relevant(event)) return;
+    running.add(event.propertyName);
+    schedule();
+  });
+  function finish(event) {
+    if (!relevant(event)) return;
+    running.delete(event.propertyName);
+    schedule();
+  }
+  header.addEventListener('transitionend', finish);
+  header.addEventListener('transitioncancel', finish);
+  sync();
+  document.addEventListener('astro:before-swap', () => {
+    classObserver.disconnect();
+    sizeObserver?.disconnect();
+    html.classList.remove('thl-sticky-sync');
+  }, { once: true });
+}
+initThlStickyNav();
+document.addEventListener('astro:page-load', initThlStickyNav);

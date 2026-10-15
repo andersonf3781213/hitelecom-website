@@ -82,7 +82,7 @@
         "number": "03"
       }
     ],
-    "battery_text": "La configuración de referencia publicada de temperatura y humedad está diseñada para una duración de más de 10 años con transmisión de datos cada hora, bajo las condiciones de ensayo indicadas. Para una instalación de temperatura, humedad y luz, confirme el plan de batería según la lista definitiva de canales, el perfil de transmisión de datos, la temperatura de funcionamiento y las condiciones de la red.",
+    "battery_text": "La configuración de referencia publicada está diseñada para una duración de más de 10 años con muestreo cada 10 minutos y transmisión de datos cada 4 horas. Los intervalos de muestreo y transmisión pueden acordarse para el proyecto, y la autonomía real depende del conjunto de baterías, los canales de medición seleccionados, la temperatura de funcionamiento y las condiciones de la red. Para una instalación de temperatura, humedad y luz, confirme el plan de batería según la lista definitiva de canales, el perfil de transmisión de datos, la temperatura de funcionamiento y las condiciones de la red.",
     "platform_text": "Elija Hitelecom Platform o estudie una conexión con la plataforma del cliente. Confirme los campos de datos, las unidades, los identificadores de dispositivos, la ruta de comunicación y las responsabilidades relativas a las alertas antes de la implementación."
   },
   "series": {
@@ -176,7 +176,7 @@
       },
       {
         "label": "Protección de la carcasa T&H publicada",
-        "value": "IP65; confirme el grado de protección de la configuración THL suministrada"
+        "value": "Se especifica según la configuración THL suministrada y el entorno de instalación"
       },
       {
         "label": "Configuración del dispositivo",
@@ -188,7 +188,7 @@
       },
       {
         "label": "Diseño de batería de referencia T&H",
-        "value": ">10 años con un intervalo de transmisión de 1 hora, bajo las condiciones de ensayo indicadas; plan de batería THL definitivo adaptado a la configuración"
+        "value": "Diseño de referencia: más de 10 años con muestreo cada 10 minutos y envío de datos cada 4 horas; la autonomía real depende de la configuración y de las condiciones de funcionamiento."
       },
       {
         "label": "Instalación y personalización",
@@ -330,14 +330,14 @@
       "question": "¿Qué debe incluirse al planificar la duración de la batería?",
       "paragraphs": [
         "Utilice la lista de canales seleccionada, los intervalos de medición y transmisión de datos, las condiciones de funcionamiento y la calidad de la red para definir el plan de batería. Confirme el cálculo para la configuración de temperatura, humedad y luz suministrada.",
-        "El diseño de referencia T&H publicado indica más de 10 años con transmisión de datos cada hora, bajo las condiciones de ensayo indicadas; esta referencia debe contrastarse con la configuración definitiva del proyecto."
+        "El diseño de referencia T&H publicado indica más de 10 años con muestreo cada 10 minutos y transmisión de datos cada 4 horas, bajo las condiciones de ensayo indicadas. Los intervalos de muestreo y transmisión pueden acordarse para el proyecto, y la autonomía real depende del conjunto de baterías, los canales seleccionados, la temperatura de funcionamiento y las condiciones de la red. Contraste esta referencia con la configuración definitiva del proyecto."
       ],
       "sources": [
         "P1",
         "P2",
         "R4"
       ],
-      "evidence": "Manufacturer reference publishes hourly-reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
+      "evidence": "Manufacturer reference publishes a 10-minute sampling and 4-hour reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
     }
   ],
   "evidence": {
@@ -352,7 +352,7 @@
         "id": "P2",
         "title": "Hitelecom: H Series T&H Sensor Datasheet, 3 pages",
         "url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
-        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, hourly-reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
+        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, 10-minute sampling and 4-hour reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
       },
       {
         "id": "P3",
@@ -1097,9 +1097,9 @@
       "installation": "Mantenga el dispositivo separado de los cajones y el papel; confirme que hay espacio suficiente y acceso al aire antes de elegir una disposición interior.",
       "projectBrief": "Proporcione las dimensiones del armario, las técnicas empleadas sobre el papel, el acceso a los cajones, la distribución de la sala circundante y las condiciones objetivo.",
       "image": {
-        "name": "archive-shelves.webp",
-        "alt": "Estanterías móviles de archivo con cajas de documentos y registros encuadernados",
-        "caption": "Depósito de archivo ilustrativo con pasillos de acceso para observar las condiciones locales de conservación.",
+        "name": "map-plan-cabinets.webp",
+        "alt": "Mapas y planos de gran formato almacenados en plancheros de cajones anchos.",
+        "caption": "Plancheros de almacenamiento plano para mapas y planos",
         "focalPoint": "50% 50%",
         "kind": "illustrative"
       }
@@ -1539,9 +1539,9 @@
       "installation": "Utilice soportes autorizados, alejados de los especímenes, las prensas y los cajones de almacenamiento, manteniendo la manipulación segura y el acceso para la inspección.",
       "projectBrief": "Indique los tipos de especímenes y preparaciones, la disposición del almacenamiento, los requisitos de la sala y las prioridades relativas a la exposición.",
       "image": {
-        "name": "natural-history.webp",
-        "alt": "Minerales y especímenes fósiles en vitrinas de vidrio de un museo.",
-        "caption": "Entornos de exposición de colecciones de historia natural",
+        "name": "botanical-specimens.webp",
+        "alt": "Espécimenes botánicos prensados en carpetas de papel de herbario y hojas de montaje.",
+        "caption": "Entornos de preparación de herbario y especímenes botánicos",
         "focalPoint": "50% 50%",
         "kind": "illustrative"
       }

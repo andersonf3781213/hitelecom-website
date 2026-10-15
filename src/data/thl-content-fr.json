@@ -82,7 +82,7 @@
         "number": "03"
       }
     ],
-    "battery_text": "La configuration de référence publiée pour la température et l’humidité est conçue pour une autonomie de plus de 10 ans avec une transmission toutes les heures, dans les conditions d’essai indiquées. Pour une installation de mesure de la température, de l’humidité et de la lumière, confirmez le dimensionnement de la batterie en fonction de la liste définitive des voies, du profil de transmission, de la température de fonctionnement et des conditions du réseau.",
+    "battery_text": "La configuration de référence publiée est conçue pour une autonomie de plus de 10 ans avec une mesure toutes les 10 minutes et une transmission toutes les 4 heures. Les intervalles de mesure et de transmission peuvent être convenus pour le projet, et l’autonomie réelle dépend du pack de batteries, des voies de mesure sélectionnées, de la température de fonctionnement et des conditions du réseau. Pour une installation de mesure de la température, de l’humidité et de la lumière, confirmez le dimensionnement de la batterie en fonction de la liste définitive des voies, du profil de transmission, de la température de fonctionnement et des conditions du réseau.",
     "platform_text": "Choisissez la plateforme Hitelecom ou étudiez une connexion à une plateforme client. Confirmez les champs de données, les unités, les identifiants des appareils, le chemin de communication et les responsabilités liées aux alertes avant le déploiement."
   },
   "series": {
@@ -176,7 +176,7 @@
       },
       {
         "label": "Protection du boîtier T&H publiée",
-        "value": "IP65 ; confirmez l’indice de protection de la configuration THL fournie"
+        "value": "Spécifiée pour la configuration THL fournie et l’environnement d’installation"
       },
       {
         "label": "Configuration de l’appareil",
@@ -188,7 +188,7 @@
       },
       {
         "label": "Conception de la batterie de référence T&H",
-        "value": ">10 ans avec un intervalle de transmission de 1 heure dans les conditions d’essai indiquées ; dimensionnement définitif de la batterie THL adapté à la configuration"
+        "value": "Configuration de référence : autonomie prévue de plus de 10 ans avec une mesure toutes les 10 minutes et une transmission toutes les 4 heures ; l’autonomie réelle dépend de la configuration et des conditions de fonctionnement."
       },
       {
         "label": "Installation et personnalisation",
@@ -330,14 +330,14 @@
       "question": "Que faut-il prendre en compte pour prévoir l’autonomie de la batterie ?",
       "paragraphs": [
         "Utilisez la liste des voies sélectionnées, les intervalles de mesure et de transmission, les conditions de fonctionnement et la qualité du réseau pour définir le dimensionnement de la batterie. Confirmez le calcul pour la configuration de température, d’humidité et de lumière fournie.",
-        "La conception de référence T&H publiée indique une autonomie de plus de 10 ans avec une transmission horaire dans les conditions d’essai indiquées ; cette référence doit être mise en relation avec la configuration définitive du projet."
+        "La conception de référence T&H publiée indique une autonomie de plus de 10 ans avec une mesure toutes les 10 minutes et une transmission toutes les 4 heures, dans les conditions d’essai indiquées. Les intervalles de mesure et de transmission peuvent être convenus pour le projet, et l’autonomie réelle dépend du pack de batteries, des voies sélectionnées, de la température de fonctionnement et des conditions du réseau. Mettez cette référence en relation avec la configuration définitive du projet."
       ],
       "sources": [
         "P1",
         "P2",
         "R4"
       ],
-      "evidence": "Manufacturer reference publishes hourly-reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
+      "evidence": "Manufacturer reference publishes a 10-minute sampling and 4-hour reporting battery design; NPS confirms channel/profile/battery relationships. Extension to THL is explicitly a configuration review, not an unverified identical lifetime guarantee."
     }
   ],
   "evidence": {
@@ -352,7 +352,7 @@
         "id": "P2",
         "title": "Hitelecom: H Series T&H Sensor Datasheet, 3 pages",
         "url": "https://www.hitelecom.com/downloads/h300-temperature-humidity-sensor-datasheet.pdf",
-        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, hourly-reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
+        "whatItSupports": "T&H reference range/typical accuracy, H200/H300/H500, IP65, cable-mounted probe option, 10-minute sampling and 4-hour reporting battery reference, 4G Cat.1/NB-IoT/LoRa, MQTT, NFC/OTA and customization."
       },
       {
         "id": "P3",
@@ -1097,9 +1097,9 @@
       "installation": "Gardez l’appareil à distance des tiroirs et du papier ; confirmez un dégagement suffisant et un accès à l’air avant de choisir une disposition intérieure.",
       "projectBrief": "Indiquez les dimensions des meubles, les médiums sur papier, l’accès aux tiroirs, l’agencement du local environnant et les conditions cibles.",
       "image": {
-        "name": "archive-shelves.webp",
-        "alt": "Rayonnages mobiles d’archives avec boîtes de documents et registres reliés",
-        "caption": "Exemple de stockage d’archives avec allées d’accès permettant d’observer les conditions locales de conservation.",
+        "name": "map-plan-cabinets.webp",
+        "alt": "Cartes et dessins de grand format stockés à plat dans de larges tiroirs à plans.",
+        "caption": "Stockage à plat en tiroirs à plans pour cartes et dessins",
         "focalPoint": "50% 50%",
         "kind": "illustrative"
       }
@@ -1539,9 +1539,9 @@
       "installation": "Utilisez des supports approuvés à distance des spécimens, des presses et des tiroirs de stockage, en préservant une manipulation sûre et l’accès pour l’inspection.",
       "projectBrief": "Indiquez les types de spécimens et de préparations, la disposition du stockage, les exigences des locaux et les priorités d’exposition à la lumière.",
       "image": {
-        "name": "natural-history.webp",
-        "alt": "Minéraux et fossiles dans des vitrines en verre de musée.",
-        "caption": "Environnements d’exposition de collections d’histoire naturelle",
+        "name": "botanical-specimens.webp",
+        "alt": "Spécimens botaniques pressés dans des chemises de papier d’herbier et des feuilles de montage.",
+        "caption": "Environnements de préparation d’herbiers et de spécimens botaniques",
         "focalPoint": "50% 50%",
         "kind": "illustrative"
       }
