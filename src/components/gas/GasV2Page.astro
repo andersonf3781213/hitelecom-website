@@ -26,6 +26,7 @@ import contentFr from '../../data/gas-content-fr.json';
 import contentDe from '../../data/gas-content-de.json';
 import contentJa from '../../data/gas-content-ja.json';
 import contentRu from '../../data/gas-content-ru.json';
+import contentZh from '../../data/gas-content-zh.json';
 import '../../styles/gas.css';
 const REGISTRY = {
   en: { content: contentEn, prefix: '' },
@@ -34,6 +35,7 @@ const REGISTRY = {
   de: { content: contentDe, prefix: '/de' },
   ja: { content: contentJa, prefix: '/ja' },
   ru: { content: contentRu, prefix: '/ru' },
+  zh: { content: contentZh, prefix: '/zh' },
 };
 const { locale = 'en' } = Astro.props;
 const { content, prefix } = REGISTRY[locale] ?? REGISTRY.en;

@@ -1,0 +1,10 @@
+---
+/**
+ * 定制气体传感器页 V2 · zh 静态路由（2026-10-15 中文化迁移，替换经典 zh 模板页）
+ * 独立静态路由使本页 CSS 仅含 BaseLayout 公共样式 + gas.css；
+ * zh/product/[slug].astro 的 getStaticPaths 已排除 custom-gas-sensor，无路由冲突。
+ */
+import GasV2Page from '../../../components/gas/GasV2Page.astro';
+---
+
+<GasV2Page locale="zh" />
