@@ -232,3 +232,54 @@ document.querySelectorAll('[data-measurement]').forEach(link => link.addEventLis
   const objective = T('Monitoring objective: ') + link.dataset.measurement;
   if (!field.value.split('\n').includes(objective)) field.value = objective + '\n' + field.value;
 }));
+
+// Follow the shared official header without a second scroll listener.
+// The production Header is fixed and animated; keep the product subnav pinned
+// just below the currently visible header and offset anchor jumps accordingly.
+const gasRoot = document.getElementById('gas-content');
+const gasSharedHeader = document.getElementById('site-header');
+const gasNav = gasRoot?.querySelector('.section-nav');
+if (gasRoot && gasSharedHeader && gasNav) {
+  const html = document.documentElement;
+  const active = new Set();
+  const values = new Map();
+  let frame = 0;
+  const write = (name, number) => {
+    const value = `${Math.max(0, number).toFixed(3)}px`;
+    if (values.get(name) !== value) {
+      values.set(name, value);
+      html.style.setProperty(name, value);
+    }
+  };
+  const schedule = () => { if (!frame) frame = requestAnimationFrame(sync); };
+  const sync = () => {
+    frame = 0;
+    const rect = gasSharedHeader.getBoundingClientRect();
+    const position = getComputedStyle(gasSharedHeader).position;
+    const overlays = position === 'fixed' || position === 'sticky';
+    write('--gas-header-visible', overlays ? Math.min(rect.height, Math.max(0, rect.bottom)) : 0);
+    write('--gas-header-height', overlays ? rect.height : 0);
+    write('--gas-subnav-height', gasNav.getBoundingClientRect().height);
+    html.classList.add('ht-gas-nav-sync');
+    if (active.size) schedule();
+  };
+  const classes = new MutationObserver(schedule);
+  classes.observe(gasSharedHeader, {attributes:true,attributeFilter:['class']});
+  classes.observe(document.body, {attributes:true,attributeFilter:['class']});
+  if ('ResizeObserver' in window) {
+    const sizes = new ResizeObserver(schedule);
+    sizes.observe(gasSharedHeader); sizes.observe(gasNav);
+  }
+  window.addEventListener('resize', schedule, {passive:true});
+  const relevant = event => event.target === gasSharedHeader &&
+    (event.propertyName === 'transform' || event.propertyName.startsWith('padding'));
+  gasSharedHeader.addEventListener('transitionrun', event => {
+    if (relevant(event)) { active.add(event.propertyName); schedule(); }
+  });
+  const finish = event => {
+    if (relevant(event)) { active.delete(event.propertyName); schedule(); }
+  };
+  gasSharedHeader.addEventListener('transitionend', finish);
+  gasSharedHeader.addEventListener('transitioncancel', finish);
+  sync();
+}

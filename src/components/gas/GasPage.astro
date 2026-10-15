@@ -16,7 +16,7 @@ const normalizeFormula = value => String(value).replace(/[₀₁₂₃₄₅₆�
 const sceneGasChoices = scene => (scene.targetGases || []).map(formula => {const gas = content.gases.find(item => normalizeFormula(item.formula) === normalizeFormula(formula));return gas ? gas.formula + ' — ' + gas.name : formula;}).join('; ');
 const measurementSymbols = {gas:'∿',range:'ppm',hazard:'Ex',placement:'↗',principle:'∿',units:'ppm',area:'Ex'};
 ---
-<main id="main">
+<div id="gas-content">
   <div class="hero-band">
     <img class="hero-background" src={backgrounds.at(-1).src} srcset={backgrounds.map((x,i)=>`${x.src} ${widths[i]}w`).join(', ')} sizes="100vw" width={heroBackground.width} height={heroBackground.height} alt="" aria-hidden="true" loading="eager" decoding="async" />
     <div class="wrap breadcrumb" aria-label={S('Breadcrumb')}><a href={'https://www.hitelecom.com'+prefix}>{S('Home')}</a><span aria-hidden="true">/</span><a href={'https://www.hitelecom.com'+prefix+'/product'}>{S('IoT sensors')}</a><span aria-hidden="true">/</span><span>{S('Custom gas sensor')}</span></div>
@@ -110,6 +110,6 @@ const measurementSymbols = {gas:'∿',range:'ppm',hazard:'Ex',placement:'↗',pr
     </form>
   </div></section>
   <div class="wrap related-products"><p class="small-label">{S('CONTINUE YOUR MONITORING PROJECT')}</p><a href={'https://www.hitelecom.com'+prefix+'/product'}>{S('Explore all sensors ↗')}</a><a href={'https://www.hitelecom.com'+prefix+'/product/temperature-sensor'}>{S('Temperature monitoring ↗')}</a><a href={'https://www.hitelecom.com'+prefix+'/product/weather-station'}>{S('Weather monitoring ↗')}</a></div>
-</main>
+</div>
 
 <script>import './gas-interactions.js';</script>
