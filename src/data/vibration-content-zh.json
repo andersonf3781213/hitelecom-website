@@ -1,0 +1,1588 @@
+{
+  "seo": {
+    "title": "高频振动传感器｜电机与机械设备远程监测｜Hitelecom",
+    "description": "Hitelecom H系列高频振动传感器采用带线探头与无线终端，支持单轴或三轴、0–50 mm/s振动速度RMS、0.1 mm/s显示分辨率及10–5,000 Hz测量频带，可选LoRa、4G LTE或NB-IoT型号。"
+  },
+  "hero": {
+    "description": "Hitelecom H 系列高频振动传感器由带线外置探头和无线终端组成，用于电机、泵、风机、压缩机等机械设备的振动趋势监测。探头安装在经确认的刚性测点，支持单轴或三轴配置。振动速度 RMS 量程为 0–50 mm/s，显示分辨率为 0.1 mm/s，测量频率范围为 10–5,000 Hz。终端根据型号经 LoRa、4G LTE 或 NB-IoT 将配置读数上报至约定平台。",
+    "datasheet_url": "/downloads/vibration-sensor-datasheet.pdf"
+  },
+  "features": [
+    {
+      "title": "探头贴近机械测点",
+      "text": "将带线外置探头安装在选定机械测点，终端另行布置，兼顾维护空间与无线覆盖。"
+    },
+    {
+      "title": "振动速度 RMS",
+      "text": "振动速度 RMS 量程为 0–50 mm/s，显示分辨率为 0.1 mm/s。按设备和监测目标选择单轴或三轴配置。"
+    },
+    {
+      "title": "10–5,000 Hz 测量频带",
+      "text": "监测 10–5,000 Hz 频带内的机械振动，并根据设备关注的频率选择探头安装方式与采集方案。"
+    },
+    {
+      "title": "无线远程上报",
+      "text": "通过所选 H200 LoRa、H300 4G LTE 或 H500 NB-IoT 型号，将分散测点的配置读数传送至约定监测平台。"
+    },
+    {
+      "title": "按项目配置告警",
+      "text": "围绕监测指标和正常工况，确定项目阈值、通知接收人员及后续点检流程。"
+    },
+    {
+      "title": "便于现场配置",
+      "text": "系列提供 NFC 激活、本地配置及 OTA 升级相关功能，按所供型号确认支持项目。"
+    }
+  ],
+  "measurement": {
+    "description": "有效的设备趋势始于可复现的测点、明确的测量指标及相应工况。选型时一并确定这些要素，再匹配探头与上报方案。",
+    "cards": [
+      {
+        "title": "振动速度 RMS",
+        "text": "振动速度均方根值（RMS）以 mm/s 表示。本款量程为 0–50 mm/s，显示分辨率为 0.1 mm/s。比较趋势时，应使用同一机械测点及可比工况下的读数。",
+        "project_brief": "单轴或三轴 · 安装测点 · 运行转速 · 正常工况基线"
+      },
+      {
+        "title": "测量频率范围",
+        "text": "本款测量频率范围为 10–5,000 Hz，指探头测量的振动频率。无线数据的上报间隔应结合维护流程单独设置。",
+        "project_brief": "关注的机械频率 · 探头安装 · 采集方案 · 上报间隔"
+      },
+      {
+        "title": "运行工况",
+        "text": "设备转速、负载和生产阶段为读数比较提供背景。可在监测计划或现场已有记录中明确这些信息。",
+        "project_brief": "转速范围 · 负载状态 · 生产周期 · 正常工况基线"
+      }
+    ],
+    "installation_text": "将外置探头直接安装在目标轴承附近、经确认的刚性电机轴承座或端盖测量平面上。单轴配置应明确测量方向，三轴配置应记录各轴的安装朝向。按要求固定探头电缆并设置应力释放，避开旋转部件和高温表面。无线终端另行安装在环境适用且覆盖合适的位置，并在该位置验证无线连接。安装方式、电缆规格和安装图以所供组件要求为准。"
+  },
+  "workflow": {
+    "profile_text": "采集方案决定如何测量振动，上报安排决定终端何时发送数据。将测量频带、采集要求、上报间隔及告警响应共同确定为一套运行方案。",
+    "steps": [
+      {
+        "number": "01",
+        "title": "采集",
+        "text": "外置探头在已标记的机械测点测量。按监测目标确定所供配置的测量指标、频带和采集设置。"
+      },
+      {
+        "number": "02",
+        "title": "上报",
+        "text": "终端通过所选蜂窝网络或 LoRa 链路发送配置读数，并按约定的上报周期和完整平台路径接入。"
+      },
+      {
+        "number": "03",
+        "title": "复核与响应",
+        "text": "在可比工况下检查趋势和已配置通知，按维护团队约定安排点检，并记录结果供后续比较。"
+      }
+    ],
+    "battery_text": "公开规格书给出的电池寿命参考为：在规定条件下，每小时上报，使用寿命超过 10 年。此参考对应完整终端运行配置；实际寿命取决于所供电池、探头及采集工作占比、上报安排、无线覆盖、重传和温度。可按拟部署的完整配置评估续航。",
+    "platform_text": "将配置读数接入 Hitelecom 云平台或兼容的客户平台。系列提供 MQTT 平台接口，结合所选无线版本及后续链路，确定消息格式、接入端点和支持的认证方式。"
+  },
+  "applicationSection": {
+    "title": "覆盖多类机械设备",
+    "valueHeading": "为每个项目明确测点。",
+    "description": "按八类机械设备浏览 48 项监测任务。每项任务说明固定探头位置、需要比较的运行工况及选型所需资料。",
+    "note": "图片用于说明机械设备环境。实际测点、探头频带和安装方案由项目设备工程人员共同确定。"
+  },
+  "groups": [
+    {
+      "id": "motors-drives",
+      "title": "电机与工厂传动系统",
+      "jumpLabel": "电机与传动",
+      "intro": "在生产线、动力机组和旋转传动系统中选定固定电机测点，通过一致的测量位置比较振动变化趋势。",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "电机轴承座及其刚性固定端盖",
+        "caption": "电机轴承座环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "production-motor",
+        "variable-speed-motor",
+        "hydraulic-powerpack",
+        "injection-moulding-drive",
+        "generator-alternator",
+        "motor-test-bench"
+      ]
+    },
+    {
+      "id": "pumps-water",
+      "title": "泵组与水系统",
+      "jumpLabel": "泵组与水系统",
+      "intro": "将探头安装在靠近电机或泵轴承的刚性测点，结合流量、压力和运行工况分析振动变化。",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "供水泵站内干式安装的离心泵及驱动电机",
+        "caption": "供水泵组机械环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "booster-pumps",
+        "wastewater-dry-pumps",
+        "vertical-pump-motors",
+        "cooling-water-pumps",
+        "sanitary-process-pumps",
+        "chemical-transfer-pumps"
+      ]
+    },
+    {
+      "id": "fans-air-systems",
+      "title": "风机、通风与送风系统",
+      "jumpLabel": "风机与通风",
+      "intro": "在风机传动装置和轴承座等固定部位监测局部机械振动，测点应区别于叶片、柔性风管及建筑结构。",
+      "image": {
+        "name": "ahu-fan.webp",
+        "alt": "固定电机和风机轴承座可接近的空气处理机组风机",
+        "caption": "空气处理机组风机 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "ahu-fans",
+        "industrial-exhaust",
+        "dust-extraction-fan",
+        "combustion-air-fan",
+        "drying-process-fan",
+        "aeration-blower-drive"
+      ]
+    },
+    {
+      "id": "compressors-vacuum",
+      "title": "压缩机与真空设备",
+      "jumpLabel": "压缩机与真空设备",
+      "intro": "在靠近轴承的固定部位选择测点，并根据压缩机运行工况匹配探头的测量规格。",
+      "image": {
+        "name": "air-compressors.webp",
+        "alt": "公用设备间内的工业箱式空气压缩机",
+        "caption": "压缩空气设备环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "screw-air-compressor",
+        "reciprocating-compressor",
+        "refrigeration-compressor",
+        "rotary-vane-vacuum",
+        "dry-screw-vacuum",
+        "process-gas-compressor"
+      ]
+    },
+    {
+      "id": "gearboxes-handling",
+      "title": "齿轮箱、输送设备与厂内物流",
+      "jumpLabel": "齿轮箱与输送设备",
+      "intro": "围绕选定的传动部件或轴承位置开展测量，结合运行转速、物料负载与运动周期比较振动趋势。",
+      "image": {
+        "name": "gearbox-conveyor.webp",
+        "alt": "工业输送机及其固定安装的齿轮箱与驱动电机",
+        "caption": "输送机齿轮箱应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "belt-conveyor-drive",
+        "screw-conveyor-drive",
+        "bucket-elevator-drive",
+        "crossbelt-sorter-drive",
+        "asrs-hoist-drive",
+        "extruder-gearbox"
+      ]
+    },
+    {
+      "id": "machine-tools-metals",
+      "title": "机床与金属加工",
+      "jumpLabel": "机床与金属加工",
+      "intro": "在明确的生产工况下记录设备局部振动，并根据加工环境安排探头安装与线缆防护。",
+      "image": {
+        "name": "cnc-spindle.webp",
+        "alt": "配有固定主轴箱与加工防护空间的工业数控机床",
+        "caption": "机床主轴应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "cnc-spindle",
+        "lathe-headstock",
+        "grinding-spindle",
+        "industrial-saw-spindle",
+        "rolling-line-drive",
+        "press-drive-bearings"
+      ]
+    },
+    {
+      "id": "process-food-pharma",
+      "title": "工艺设备、食品、制药与造纸机械",
+      "jumpLabel": "工艺生产设备",
+      "intro": "以设备局部振动趋势支持生产维护，同时结合工艺负荷、清洁要求与测点可达性制定安装方案。",
+      "image": {
+        "name": "mixer-drive.webp",
+        "alt": "配有外置固定电机与减速箱的工业罐式搅拌机",
+        "caption": "搅拌机外置传动应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "industrial-mixer-drive",
+        "decanter-centrifuge",
+        "centrifugal-separator",
+        "filling-capping-drives",
+        "pharma-vacuum-dryer",
+        "paper-calender-bearings"
+      ]
+    },
+    {
+      "id": "heavy-processing",
+      "title": "破碎、研磨与重型加工",
+      "jumpLabel": "重型加工设备",
+      "intro": "在传动部件或固定轴承座上选择测点，结合设备正常工艺激振评估量程与安装条件。",
+      "image": {
+        "name": "crusher-bearing.webp",
+        "alt": "带固定轴承座与传动总成的工业破碎机",
+        "caption": "破碎机轴承座应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "scenes": [
+        "crusher-bearing-housing",
+        "pulverizer-mill-drive",
+        "industrial-shredder-drive",
+        "screen-exciter-bearing",
+        "cement-mill-gearbox",
+        "wood-chipper-bearings"
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "production-motor",
+      "group": "motors-drives",
+      "title": "生产线电机",
+      "description": "跟踪电机轴承座的振动变化，为维护团队的日常点检建立可重复比较的测量参考。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "靠近驱动端轴承的固定电机端盖。",
+      "installation": "选用经确认的刚性测点，记录测量方向，并将探头电缆布置在联轴器防护罩外侧。",
+      "projectBrief": "电机额定参数、转速、负载变化、轴承位置及安装位置照片。",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "电机轴承座及其刚性固定端盖",
+        "caption": "电机轴承座环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "variable-speed-motor",
+      "group": "motors-drives",
+      "title": "变频调速电机",
+      "description": "在相近转速和负载区间比较读数，并在趋势分析中保留正常工况变化的记录。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "可接近的驱动端或非驱动端轴承座。",
+      "installation": "建立基线前先划分运行转速区间；维护后继续使用一致的测量位置。",
+      "projectBrief": "调速范围、运行状态、工作周期及变频器可提供的运行数据。",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "电机轴承座及其刚性固定端盖",
+        "caption": "电机轴承座环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "id": "hydraulic-powerpack",
+      "group": "motors-drives",
+      "title": "液压动力单元电机",
+      "description": "监测液压动力单元驱动电机的振动，在压力需求相近的运行周期内辅助设备检查。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "液压动力单元上固定电机的轴承座。",
+      "installation": "记录泵负载与电机运行工况；探头安装在电机上，避免以油箱薄板作为测点。",
+      "projectBrief": "液压动力单元布置、电机转速、液压工作周期及电缆走向。",
+      "image": {
+        "name": "hydraulic-power.webp",
+        "alt": "电机与液压泵安装在油箱上方的液压动力单元",
+        "caption": "液压动力单元环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "id": "injection-moulding-drive",
+      "group": "motors-drives",
+      "title": "注塑机液压驱动电机",
+      "description": "在可重复的注塑周期中跟踪电机侧振动，结合生产记录安排驱动系统的检查顺序。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "液压驱动电机的固定轴承区域。",
+      "installation": "选择便于接近的不旋转测点，比较同一工作周期阶段的读数，避开软管和可拆卸防护罩。",
+      "projectBrief": "注塑机类型、驱动布置、周期阶段及维护操作空间。",
+      "image": {
+        "name": "hydraulic-power.webp",
+        "alt": "电机与液压泵安装在油箱上方的液压动力单元",
+        "caption": "液压动力单元环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S7"
+      ]
+    },
+    {
+      "id": "generator-alternator",
+      "group": "motors-drives",
+      "title": "发电机组交流发电机轴承",
+      "description": "在明确运行负载和转速的条件下，为发电机组中的交流发电机建立振动历史记录。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "可接近的交流发电机固定轴承座。",
+      "installation": "将交流发电机的测量位置与发动机机架区分，确认适用温度、振动量程及电缆防护条件。",
+      "projectBrief": "交流发电机布置、正常转速、负载范围及环境条件。",
+      "image": {
+        "name": "generator-alternator.webp",
+        "alt": "具有可接近固定轴承座的工业发电机组与交流发电机",
+        "caption": "发电机组与交流发电机环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S15"
+      ]
+    },
+    {
+      "id": "motor-test-bench",
+      "group": "motors-drives",
+      "title": "电机出厂测试台",
+      "description": "在规定的试运行程序中记录可比较的振动读数，为约定的检验或验收流程提供数据。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "测试电机机壳上位置可重复的刚性测点。",
+      "installation": "在测试规程中固定转速、负载和安装方式，并采用适用于该电机的验收限值。",
+      "projectBrief": "测试步骤、预期振幅、所需测量指标及可重复定位的工装布置。",
+      "image": {
+        "name": "motor-bearing.webp",
+        "alt": "电机轴承座及其刚性固定端盖",
+        "caption": "电机轴承座环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "booster-pumps",
+      "group": "pumps-water",
+      "title": "市政供水增压泵组",
+      "description": "在运行泵与备用泵上选择电机或泵体测点，跟踪振动变化，为泵站维护计划提供参考。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "固定电机端盖或可接近的水泵轴承座。",
+      "installation": "分别标识各测点，在相近运行条件下比较读数，并使电缆余量远离联轴器。",
+      "projectBrief": "泵组布置、转速、流量与压力工况以及监测点数量。",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "供水泵站内干式安装的离心泵及驱动电机",
+        "caption": "供水泵组机械环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "id": "wastewater-dry-pumps",
+      "group": "pumps-water",
+      "title": "污水泵站干式泵组",
+      "description": "监测可接近的干式泵与电机总成，结合抽排周期记录比较振动趋势。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "处于干燥、可接近位置的电机或泵轴承座。",
+      "installation": "确认现场湿度、清洗剂及连接器防护条件；水下安装应单独完成适用性确认。",
+      "projectBrief": "干式或水下布置、抽排周期、现场潮湿程度及允许进入的作业区域。",
+      "image": {
+        "name": "wastewater-pumps.webp",
+        "alt": "电机及轴承区域可接近的干式污水泵组",
+        "caption": "干式污水泵组环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8"
+      ]
+    },
+    {
+      "id": "vertical-pump-motors",
+      "group": "pumps-water",
+      "title": "立式泵电机轴承",
+      "description": "在立式泵电机上选定固定轴承区域，记录正常运行过程中的局部振动变化。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "泵体上方的电机轴承座。",
+      "installation": "记录测量方向，并将电机局部读数与整台泵组或基础的运动区分。",
+      "projectBrief": "立式泵总成图、电机转速、轴承位置及所需测量频带。",
+      "image": {
+        "name": "vertical-pump.webp",
+        "alt": "立式泵上方具有固定机壳的驱动电机",
+        "caption": "立式泵电机环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8",
+        "S1"
+      ]
+    },
+    {
+      "id": "cooling-water-pumps",
+      "group": "pumps-water",
+      "title": "工艺冷却水循环泵",
+      "description": "为制造设备配套的循环水泵建立振动趋势，在工艺需求稳定时比较测量结果。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "可接近的泵与电机轴承座测点。",
+      "installation": "选择刚性机壳作为测点，避开相连管道，并记录运行泵切换时的设备状态。",
+      "projectBrief": "水泵类型、转速、水温及运行泵与备用泵的切换策略。",
+      "image": {
+        "name": "scene-outdoor-pumping.webp",
+        "alt": "室外泵站内可接近的干式电机与水泵总成",
+        "caption": "室外泵组机械环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S8"
+      ]
+    },
+    {
+      "id": "sanitary-process-pumps",
+      "group": "pumps-water",
+      "title": "食品饮料工艺泵",
+      "description": "监测卫生级泵送系统的电机侧或轴承座振动，探头安装位置与产品接触通道分开。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "经安装确认的固定驱动部件或轴承座。",
+      "installation": "明确卫生安装、冲洗暴露和电缆清洁要求，并评估探头与连接器组成的完整装置。",
+      "projectBrief": "清洗方式、工艺温度、安装许可及水泵运行状态。",
+      "image": {
+        "name": "sanitary-pump.webp",
+        "alt": "不锈钢卫生级离心泵及外部驱动电机",
+        "caption": "卫生级工艺泵环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S9"
+      ]
+    },
+    {
+      "id": "chemical-transfer-pumps",
+      "group": "pumps-water",
+      "title": "符合现场使用条件的化工输送泵",
+      "description": "在适用的泵驱动装置上比较振动变化，并结合压力、流量及维护记录进行设备检查。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "流体通道外侧可接近的固定轴承座。",
+      "installation": "选择探头、终端和电缆前，确认化学介质暴露、温度及危险区域分类。",
+      "projectBrief": "化学环境、危险区域分类、转速及经确认的安装位置。",
+      "image": {
+        "name": "booster-pumps.webp",
+        "alt": "干式安装的离心泵与驱动电机及其固定机械测点区域",
+        "caption": "干式离心泵环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "id": "ahu-fans",
+      "group": "fans-air-systems",
+      "title": "空气处理机组风机",
+      "description": "跟踪通风风机驱动装置与轴承部位的振动，为建筑通风设备检查提供参考。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "允许维护区域内的固定电机或风机轴承座。",
+      "installation": "探头应避开叶轮和皮带运动路径，并将驱动侧测量与机柜面板振动区分。",
+      "projectBrief": "直联或皮带传动方式、风机转速、检修空间及电缆走向。",
+      "image": {
+        "name": "ahu-fan.webp",
+        "alt": "固定电机和风机轴承座可接近的空气处理机组风机",
+        "caption": "空气处理机组风机 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "id": "industrial-exhaust",
+      "group": "fans-air-systems",
+      "title": "工业排风机",
+      "description": "在排风工况一致时跟踪选定风机轴承测点，帮助维护团队识别需要进一步检查的变化。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "固定风机轴承座或电机轴承座。",
+      "installation": "确认污染物暴露和维护条件，将探头安装在气流通道外侧经确认的刚性表面。",
+      "projectBrief": "风机结构、转速、正常工况、粉尘或化学介质暴露及轴承布置。",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "工业离心风机、外部驱动电机及其固定轴承座",
+        "caption": "离心风机传动环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S7"
+      ]
+    },
+    {
+      "id": "dust-extraction-fan",
+      "group": "fans-air-systems",
+      "title": "除尘系统风机电机",
+      "description": "在设备维护流程中监测除尘系统电机或风机的固定轴承测点。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "电机或风机驱动装置外侧的轴承座。",
+      "installation": "涉及可燃粉尘时确认区域分类，电缆应避开皮带、高温和磨损性表面。",
+      "projectBrief": "粉尘类型、区域分类、风机传动布置及预期振动范围。",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "工业离心风机、外部驱动电机及其固定轴承座",
+        "caption": "离心风机传动环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14",
+        "S15"
+      ]
+    },
+    {
+      "id": "combustion-air-fan",
+      "group": "fans-air-systems",
+      "title": "燃烧送风机驱动装置",
+      "description": "跟踪辅助送风机驱动部位的局部振动，结合记录的运行需求比较读数。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "可接近的固定电机或风机轴承座。",
+      "installation": "核查实际安装表面温度和电缆所处环境，无线终端应避开过强辐射热。",
+      "projectBrief": "风机转速与负载、安装表面温度、热辐射情况及安装操作空间。",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "工业离心风机、外部驱动电机及其固定轴承座",
+        "caption": "离心风机传动环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S3",
+        "S14"
+      ]
+    },
+    {
+      "id": "drying-process-fan",
+      "group": "fans-air-systems",
+      "title": "工业干燥系统风机",
+      "description": "记录风机传动装置的振动趋势，帮助维护团队结合干燥生产线的生产安排规划检查。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "加热工艺腔体外侧的固定传动轴承区域。",
+      "installation": "确认温度、湿气和工艺污染物暴露，选择刚性测点，避开薄壁风管。",
+      "projectBrief": "干燥设备布置、风机工况、测点温度及电缆路径。",
+      "image": {
+        "name": "centrifugal-fan.webp",
+        "alt": "工业离心风机、外部驱动电机及其固定轴承座",
+        "caption": "离心风机传动环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13",
+        "S3"
+      ]
+    },
+    {
+      "id": "aeration-blower-drive",
+      "group": "fans-air-systems",
+      "title": "水处理曝气鼓风机",
+      "description": "在曝气鼓风机电机和传动轴承上记录可重复比较的振动趋势，同时保留工艺需求记录。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "可接近的固定电机或鼓风机轴承座。",
+      "installation": "将局部传动测量与管道脉动区分，并结合转速及曝气工况进行比较。",
+      "projectBrief": "鼓风机类型、转速、压力需求、潮湿条件及传动布置。",
+      "image": {
+        "name": "aeration-blower.webp",
+        "alt": "具有固定轴承座的水处理曝气鼓风机与驱动电机",
+        "caption": "曝气鼓风机组 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S8",
+        "S7"
+      ]
+    },
+    {
+      "id": "screw-air-compressor",
+      "group": "compressors-vacuum",
+      "title": "螺杆式空气压缩机",
+      "description": "在压缩机轴承附近跟踪振动，在稳定运行和加载状态下比较变化。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "靠近径向轴承、经安装确认的压缩机机壳测点。",
+      "installation": "确认所需频带与温度条件，并分别明确电机和压缩机主机的测量位置。",
+      "projectBrief": "压缩机主机布置、转速与负载范围、安装温度及所需测量频带。",
+      "image": {
+        "name": "air-compressors.webp",
+        "alt": "公用设备间内的工业箱式空气压缩机",
+        "caption": "压缩空气设备环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S10"
+      ]
+    },
+    {
+      "id": "reciprocating-compressor",
+      "group": "compressors-vacuum",
+      "title": "往复式压缩机驱动装置",
+      "description": "在记录压缩机正常周期工况的同时，观察传动或轴承区域的局部振动趋势。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "经安装确认的固定传动轴承座或曲轴箱测点。",
+      "installation": "选定基线和测量位置前，评估正常工艺冲击及振动量程余量。",
+      "projectBrief": "压缩机类型、转速、加载阶段、预期振幅及安全操作空间。",
+      "image": {
+        "name": "reciprocating-compressor.webp",
+        "alt": "具有固定传动部件与轴承座的工业往复式压缩机",
+        "caption": "压缩机机械环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "refrigeration-compressor",
+      "group": "compressors-vacuum",
+      "title": "工业制冷压缩机",
+      "description": "在匹配的压缩机驱动装置上跟踪振动趋势，为制冷站的计划检查提供参考。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "可接近、经安装确认的固定机壳或外部轴承区域。",
+      "installation": "确认压缩机结构、表面温度、制冷剂区域要求及允许使用的机械安装接口。",
+      "projectBrief": "压缩机配置、转速、加载步骤、温度及安装许可。",
+      "image": {
+        "name": "refrigeration-compressor.webp",
+        "alt": "具有固定传动装置与机壳的工业制冷压缩机组",
+        "caption": "工业制冷压缩机 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S7",
+        "S10"
+      ]
+    },
+    {
+      "id": "rotary-vane-vacuum",
+      "group": "compressors-vacuum",
+      "title": "旋片式真空泵",
+      "description": "在相近真空工艺状态下比较驱动部位和机壳的局部振动，并依据变化安排设备检查。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "靠近旋转组件轴承传振路径、经安装确认的固定机壳。",
+      "installation": "记录真空泵负载状态，保护电缆免受油污、高温及运动部件影响。",
+      "projectBrief": "真空泵类型、运行转速、工艺周期及温度。",
+      "image": {
+        "name": "vacuum-pump.webp",
+        "alt": "整洁设备间内的工业真空泵与固定驱动电机",
+        "caption": "真空泵传动环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S7",
+        "S12"
+      ]
+    },
+    {
+      "id": "dry-screw-vacuum",
+      "group": "compressors-vacuum",
+      "title": "干式螺杆真空系统",
+      "description": "在干式螺杆真空系统上选定固定测点，在相近生产周期内比较振动趋势，为维护评估提供数据。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "靠近受监测轴承区域、经安装确认的机壳测点。",
+      "installation": "确认工艺污染物暴露和所需频带，并将无线终端布置在适宜维护的位置。",
+      "projectBrief": "泵组布置、转速与负载变化、化学介质暴露及所需趋势记录间隔。",
+      "image": {
+        "name": "vacuum-pump.webp",
+        "alt": "整洁设备间内的工业真空泵与固定驱动电机",
+        "caption": "真空泵传动环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "id": "process-gas-compressor",
+      "group": "compressors-vacuum",
+      "title": "符合现场使用条件的工艺气体压缩机",
+      "description": "采用符合现场要求的安装方案，在选定的工艺压缩机驱动或轴承位置观察机械振动。",
+      "measurement": "指定固定测点处的局部机械振动",
+      "monitoringPoint": "经安装确认的固定压缩机或电机轴承座测点。",
+      "installation": "安装前依据区域认证与温度要求，确认探头、终端及配套部件组成的完整装置。",
+      "projectBrief": "气体环境、区域分类、设备布置及运行状态。",
+      "image": {
+        "name": "reciprocating-compressor.webp",
+        "alt": "具有固定传动部件与轴承座的工业往复式压缩机",
+        "caption": "压缩机机械环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S7"
+      ]
+    },
+    {
+      "id": "belt-conveyor-drive",
+      "group": "gearboxes-handling",
+      "title": "皮带输送机驱动齿轮箱",
+      "description": "监测输送机驱动端齿轮箱与电机的局部振动，在相同输送负荷条件下比较长期变化。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "靠近输入轴或输出轴轴承的固定齿轮箱壳体。",
+      "installation": "根据待监测的传动轴系选择测点，线缆避开皮带轮、皮带与检修开口。",
+      "projectBrief": "驱动布局、齿轮箱级数、转速范围与物料负荷变化规律。",
+      "image": {
+        "name": "gearbox-conveyor.webp",
+        "alt": "工业输送机及其固定安装的齿轮箱与驱动电机",
+        "caption": "输送机齿轮箱应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S15"
+      ]
+    },
+    {
+      "id": "screw-conveyor-drive",
+      "group": "gearboxes-handling",
+      "title": "螺旋输送机减速电机",
+      "description": "在螺旋给料机外部驱动端监测振动，为设备巡检提供趋势依据，探头安装在物料通道之外。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "便于安装与维护的固定减速箱壳体或电机轴承座。",
+      "installation": "记录给料速度与物料负荷；存在粉尘或磨损风险时，核对区域分类与线缆防磨措施。",
+      "projectBrief": "物料类型、驱动转速、工作周期与现场允许的外部安装位置。",
+      "image": {
+        "name": "screw-conveyor.webp",
+        "alt": "配有固定外置减速电机的工业螺旋输送机",
+        "caption": "螺旋输送机减速驱动 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S14"
+      ]
+    },
+    {
+      "id": "bucket-elevator-drive",
+      "group": "gearboxes-handling",
+      "title": "斗式提升机驱动系统",
+      "description": "在提升机驱动齿轮箱或电机轴承区域建立振动趋势，为可达测点的机械巡检提供依据。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许且便于检修的固定驱动壳体测点。",
+      "installation": "测点针对驱动机械部件，安装位置避开料斗与皮带运行路径，并与塔架运动的监测任务分开。",
+      "projectBrief": "减速电机布置、检修平台、转速与负载工况，以及环境暴露条件。",
+      "image": {
+        "name": "roller-drive.webp",
+        "alt": "配有外置固定电机与齿轮箱驱动的斗式提升机",
+        "caption": "斗式提升机驱动应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S14"
+      ]
+    },
+    {
+      "id": "crossbelt-sorter-drive",
+      "group": "gearboxes-handling",
+      "title": "交叉带分拣机驱动装置",
+      "description": "监测选定的固定驱动轴承位置，在可重复的分拣运行周期中比较振动变化。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许安装的固定驱动电机壳体或齿轮箱壳体。",
+      "installation": "选择不旋转且便于检修的测点，记录运行阶段，并将线缆固定在分拣机构运动范围之外。",
+      "projectBrief": "分拣机布局、驱动周期、转速状态与可用的固定安装位置。",
+      "image": {
+        "name": "crossbelt-sorter.webp",
+        "alt": "配有固定外置驱动装置与支撑框架的交叉带分拣线",
+        "caption": "交叉带分拣驱动应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "asrs-hoist-drive",
+      "group": "gearboxes-handling",
+      "title": "自动化立体仓库提升与行走驱动",
+      "description": "监测选定提升或行走驱动部件的机械振动，并记录可重复的升降或行走周期，便于比较设备状态。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许安装的驱动齿轮箱固定壳体或电机轴承区域。",
+      "installation": "驱动装置随机构移动时，核对线缆随动与管理方案；在相同载荷及运动阶段比较读数。",
+      "projectBrief": "设备行程、驱动位置、周期阶段、线缆管理系统与载荷。",
+      "image": {
+        "name": "asrs-hoist.webp",
+        "alt": "配有固定安装提升电机与齿轮箱的自动化立体仓库堆垛机",
+        "caption": "立体仓库提升驱动应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "id": "extruder-gearbox",
+      "group": "gearboxes-handling",
+      "title": "挤出机驱动齿轮箱",
+      "description": "在明确的工艺负载下比较齿轮箱振动，为挤出机旋转传动部件的检查提供依据。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "靠近选定轴承位置的固定齿轮箱壳体。",
+      "installation": "结合齿轮箱级数、转速与温度确定测点，使读数对应明确的轴系与轴承位置。",
+      "projectBrief": "齿轮箱图纸、工艺负载、各级转速、安装位置温度与选定轴承。",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "安装在刚性机械底座上的工业减速箱与电机",
+        "caption": "工业齿轮箱应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S5",
+        "S7"
+      ]
+    },
+    {
+      "id": "cnc-spindle",
+      "group": "machine-tools-metals",
+      "title": "数控加工中心主轴",
+      "description": "在可重复的加工或试运行工况下跟踪主轴壳体振动，为刀具与设备检查提供依据。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "靠近轴承区域、现场允许安装的不旋转主轴壳体。",
+      "installation": "探头安装在旋转刀具之外，结合加工振动、冷却液、切屑与所需测量频带确定方案。",
+      "projectBrief": "主轴转速、加工与试运行阶段、预期振动幅值，以及允许的安装位置。",
+      "image": {
+        "name": "cnc-spindle.webp",
+        "alt": "配有固定主轴箱与加工防护空间的工业数控机床",
+        "caption": "机床主轴应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "lathe-headstock",
+      "group": "machine-tools-metals",
+      "title": "工业车床主轴箱",
+      "description": "在相同转速与加工任务下，比较主轴箱上同一固定测点的振动。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "靠近待监测主轴轴承的不旋转主轴箱壳体。",
+      "installation": "测点及线缆避开卡盘与工件，标记测量方向，并记录空转或切削状态。",
+      "projectBrief": "主轴布局、转速范围、加工工序与测点安装条件。",
+      "image": {
+        "name": "lathe-headstock.webp",
+        "alt": "配有固定主轴箱壳体与加工防护区域的工业车床",
+        "caption": "车床主轴箱应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "grinding-spindle",
+      "group": "machine-tools-metals",
+      "title": "磨床主轴轴承座",
+      "description": "在明确的磨削工况下跟踪主轴局部振动，利用历史趋势安排旋转部件检查。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许安装的固定主轴轴承座测点。",
+      "installation": "结合磨料粉尘、冷却液、正常工艺激振与振动幅值范围选择测量配置。",
+      "projectBrief": "磨削主轴转速、工艺周期、现场环境与所需振动指标。",
+      "image": {
+        "name": "grinding-spindle.webp",
+        "alt": "配有固定主轴壳体与防护罩的工业磨床",
+        "caption": "磨削主轴应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "id": "industrial-saw-spindle",
+      "group": "machine-tools-metals",
+      "title": "工业锯切设备主轴驱动",
+      "description": "在相近的切削工况与检修试运行条件下，记录固定主轴壳体或驱动壳体的振动。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "位于锯片运动路径之外、现场允许安装的固定轴承座。",
+      "installation": "线缆应避开金属切屑与切削运动，在相同锯片、转速及工艺阶段下比较读数。",
+      "projectBrief": "锯切设备配置、转速、切削任务、切屑暴露情况与允许的安装位置。",
+      "image": {
+        "name": "industrial-saw.webp",
+        "alt": "配有固定驱动壳体与防护罩的工业金属锯切设备",
+        "caption": "工业锯切驱动应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S11",
+        "S4"
+      ]
+    },
+    {
+      "id": "rolling-line-drive",
+      "group": "machine-tools-metals",
+      "title": "金属轧制线驱动电机",
+      "description": "监测选定轧制线电机或减速箱的轴承位置，结合生产负荷记录分析振动趋势。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "位于轧辊运行范围之外的固定电机轴承座或减速箱轴承座。",
+      "installation": "核对热源与水喷淋条件，选择局部驱动测点，使测量任务对应具体机械部件。",
+      "projectBrief": "驱动布局、转速与负载范围、温度、喷淋暴露情况与测量目标。",
+      "image": {
+        "name": "metal-rolling.webp",
+        "alt": "配有固定轴承座与电机驱动的金属加工辊系设备",
+        "caption": "金属加工驱动应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S5"
+      ]
+    },
+    {
+      "id": "press-drive-bearings",
+      "group": "machine-tools-metals",
+      "title": "压力机驱动与飞轮轴承",
+      "description": "在可重复的生产阶段监测指定的固定驱动轴承测点，支持日常机械状态检查。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "位于运动机构之外的固定驱动轴承座或飞轮轴承座。",
+      "installation": "评估正常冲压冲击与量程余量，安装避开防护范围内的运动部件，并在相同周期阶段比较读数。",
+      "projectBrief": "压力机类型、周期阶段、预期冲击、选定轴承测点与允许的检修位置。",
+      "image": {
+        "name": "press-drive.webp",
+        "alt": "配有固定驱动轴承支座与飞轮防护装置的工业压力机",
+        "caption": "工业压力机驱动应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "industrial-mixer-drive",
+      "group": "process-food-pharma",
+      "title": "工业搅拌机驱动总成",
+      "description": "在相同混合配方与批次负荷下监测电机、减速箱的局部振动。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许安装的外置固定驱动轴承座。",
+      "installation": "探头安装在容器与物料接触通道之外，记录批次阶段、搅拌转速与装料液位。",
+      "projectBrief": "搅拌机配置、配方、负载阶段、清洁要求与允许的外部安装位置。",
+      "image": {
+        "name": "mixer-drive.webp",
+        "alt": "配有外置固定电机与减速箱的工业罐式搅拌机",
+        "caption": "搅拌机外置传动应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S12"
+      ]
+    },
+    {
+      "id": "decanter-centrifuge",
+      "group": "process-food-pharma",
+      "title": "卧螺离心机轴承座",
+      "description": "跟踪离心机选定固定轴承测点的振动趋势，结合转鼓转速、进料与运行状态解释变化。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许安装的固定主轴承座。",
+      "installation": "结合正常工艺激振与多处振动源，与设备工程人员共同确定测点和数据需求。",
+      "projectBrief": "离心机布局、转速、进料状态、振动幅值范围与检修条件。",
+      "image": {
+        "name": "decanter-centrifuge.webp",
+        "alt": "带外置固定轴承座的工业卧螺离心机",
+        "caption": "离心机应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S18"
+      ]
+    },
+    {
+      "id": "centrifugal-separator",
+      "group": "process-food-pharma",
+      "title": "离心分离机驱动装置",
+      "description": "在稳定的生产工况下监测指定的不旋转驱动壳体或轴承位置，为维护评估提供依据。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "固定轴承座，或经现场确认的不旋转驱动壳体。",
+      "installation": "探头避开旋转转鼓，并核对所需频带、运行状态与卫生安装要求。",
+      "projectBrief": "分离机结构、转速、工艺阶段、清洗要求与轴承布局。",
+      "image": {
+        "name": "centrifugal-separator.webp",
+        "alt": "带不旋转外部机壳的立式离心分离机",
+        "caption": "离心分离机应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S18",
+        "S9"
+      ]
+    },
+    {
+      "id": "filling-capping-drives",
+      "group": "process-food-pharma",
+      "title": "灌装与旋盖生产线驱动",
+      "description": "在可重复的灌装与旋盖工况下，跟踪生产线电机或齿轮箱的局部振动。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许安装的固定电机壳体或减速箱壳体。",
+      "installation": "探头与线缆布置在包装及产品接触区域之外，结合冲洗要求与周期性负载安排安装。",
+      "projectBrief": "生产线速度、驱动位置、运行周期、清洗制度与监测点。",
+      "image": {
+        "name": "filling-capping.webp",
+        "alt": "外部电机驱动位置便于检修的自动灌装与旋盖生产线",
+        "caption": "灌装与旋盖生产线应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S9",
+        "S12"
+      ]
+    },
+    {
+      "id": "pharma-vacuum-dryer",
+      "group": "process-food-pharma",
+      "title": "制药真空干燥机驱动",
+      "description": "在有记录的干燥工艺阶段监测指定外置驱动测点，为设备维护记录提供振动趋势。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "外置固定电机轴承座或减速箱轴承座。",
+      "installation": "核对洁净区要求、溶剂、温度及外部安装许可，并按现场工程程序明确数据用途。",
+      "projectBrief": "干燥机布置、工艺阶段、区域分类与清洁要求。",
+      "image": {
+        "name": "vacuum-dryer-drive.webp",
+        "alt": "配有外置固定电机与减速箱的制药真空干燥机",
+        "caption": "真空干燥机外置驱动 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S12"
+      ]
+    },
+    {
+      "id": "paper-calender-bearings",
+      "group": "process-food-pharma",
+      "title": "造纸压光机与辊筒轴承",
+      "description": "记录选定固定辊筒轴承座的局部振动，在相近的造纸生产状态下比较趋势。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "设备检修侧、现场允许安装的固定辊筒轴承座。",
+      "installation": "核对测点实际表面温度与潮湿条件，并根据所选辊筒转速确认测量频带。",
+      "projectBrief": "辊筒转速、轴承布局、表面温度、受潮情况与检修条件。",
+      "image": {
+        "name": "paper-calender.webp",
+        "alt": "由检修侧固定轴承座支撑的造纸压光机辊筒",
+        "caption": "造纸压光机轴承应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13"
+      ]
+    },
+    {
+      "id": "crusher-bearing-housing",
+      "group": "heavy-processing",
+      "title": "破碎机轴承座",
+      "description": "监测破碎机选定轴承或驱动测点，结合进料与运行工况记录比较振动趋势。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许安装的固定轴承座或驱动电机壳体。",
+      "installation": "调试前评估正常破碎冲击、量程余量、磨蚀性粉尘与线缆机械防护。",
+      "projectBrief": "破碎机类型、负载与进料状态、预期振动幅值，以及固定轴承测点的安装条件。",
+      "image": {
+        "name": "crusher-bearing.webp",
+        "alt": "带固定轴承座与传动总成的工业破碎机",
+        "caption": "破碎机轴承座应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4",
+        "S14"
+      ]
+    },
+    {
+      "id": "pulverizer-mill-drive",
+      "group": "heavy-processing",
+      "title": "粉碎机与研磨机驱动",
+      "description": "监测研磨生产线电机或减速箱的局部振动，在相近的进料与负载状态下比较读数。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "便于安装与检修的固定驱动轴承座。",
+      "installation": "明确待监测的传动轴系，核对温度与粉尘条件，线缆避开旋转联轴器及物料输送机构。",
+      "projectBrief": "磨机类型、驱动转速、进料工况、温度与区域分类。",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "安装在刚性机械底座上的工业减速箱与电机",
+        "caption": "工业齿轮箱应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14"
+      ]
+    },
+    {
+      "id": "industrial-shredder-drive",
+      "group": "heavy-processing",
+      "title": "工业撕碎机驱动",
+      "description": "记录选定撕碎机驱动轴承的振动历史，同时记录处理物料与正常运行周期。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许安装的固定驱动电机壳体或减速箱壳体。",
+      "installation": "评估工艺冲击与量程余量，为探头线缆设置碎屑防护，并避开检修时会移动的部件。",
+      "projectBrief": "撕碎机结构、物料、负载周期、预期冲击与轴承检修条件。",
+      "image": {
+        "name": "shredder-drive.webp",
+        "alt": "配有固定外置齿轮箱与电机驱动的工业撕碎机",
+        "caption": "撕碎机应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "id": "screen-exciter-bearing",
+      "group": "heavy-processing",
+      "title": "振动筛激振器轴承",
+      "description": "在激振器轴承座选定的不旋转测点上，跟踪局部旋转机械振动趋势。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许安装的激振器轴承座或驱动轴承座。",
+      "installation": "根据选定轴承的监测任务确认频带与振动幅值；此测点用于激振器局部机械状态趋势，筛体位移属于另一类测量任务。",
+      "projectBrief": "激振器布局、正常激振工况、轴承测点、量程与所需测量频带。",
+      "image": {
+        "name": "screen-exciter.webp",
+        "alt": "配有局部激振轴轴承座的工业振动筛",
+        "caption": "振动筛激振器轴承应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S16"
+      ]
+    },
+    {
+      "id": "cement-mill-gearbox",
+      "group": "heavy-processing",
+      "title": "水泥磨电机与齿轮箱轴承",
+      "description": "跟踪选定磨机驱动轴承位置的振动，并结合一致的生产负荷记录进行趋势比较。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许安装的固定电机轴承座或齿轮箱轴承座测点。",
+      "installation": "结合多级齿轮传动与正常工艺激振评估测点，同时核对粉尘、热源与允许的检修位置。",
+      "projectBrief": "驱动图纸、转速、负载状态、热源与粉尘暴露情况，以及选定轴承。",
+      "image": {
+        "name": "gearboxes.webp",
+        "alt": "安装在刚性机械底座上的工业减速箱与电机",
+        "caption": "工业齿轮箱应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S14",
+        "S5"
+      ]
+    },
+    {
+      "id": "wood-chipper-bearings",
+      "group": "heavy-processing",
+      "title": "木材削片机驱动轴承",
+      "description": "监测固定驱动壳体或转子轴承座，结合物料加工工况记录比较振动历史。",
+      "measurement": "选定固定测点的局部机械振动",
+      "monitoringPoint": "现场允许安装的不旋转驱动壳体或转子轴承座。",
+      "installation": "评估正常切削冲击与量程，为线缆设置木屑防护，探头安装在转子防护罩之外。",
+      "projectBrief": "削片机结构、转子转速、进料工况、预期冲击与检修测点。",
+      "image": {
+        "name": "shredder-drive.webp",
+        "alt": "配有固定外置齿轮箱与电机驱动的工业撕碎机",
+        "caption": "撕碎机应用环境 · 场景示意",
+        "focalPoint": "50% 50%",
+        "kind": "illustrative"
+      },
+      "sources": [
+        "S13",
+        "S4"
+      ]
+    }
+  ],
+  "series": {
+    "description": "H 系列包括 H200 LoRa、H300 4G LTE 和 H500 NB-IoT。根据项目选择探头、终端无线版本及采集／上报方案，在配置建议中明确完整交付内容。",
+    "models": [
+      "H200",
+      "H300",
+      "H500"
+    ],
+    "steps": [
+      {
+        "title": "确定机械测点",
+        "text": "提供目标部件、刚性安装面、测量方向、转速范围及正常负载状态。"
+      },
+      {
+        "title": "明确测量方案",
+        "text": "选择单轴或三轴，并说明在 10–5,000 Hz 测量频带内关注的机械频率。振动速度 RMS 量程为 0–50 mm/s，显示分辨率为 0.1 mm/s。同时确定采集工作安排、上报和校准要求。"
+      },
+      {
+        "title": "规划完整部署",
+        "text": "共同确认探头和电缆环境、终端位置、无线覆盖、上报、告警及平台交接。"
+      }
+    ],
+    "modelCards": [
+      {
+        "id": "H200",
+        "title": "H200 · LoRa",
+        "text": "通过兼容的 LoRa 接收器或网关，将现场测点接入约定平台。"
+      },
+      {
+        "id": "H300",
+        "title": "H300 · 4G LTE",
+        "text": "结合安装国家、区域频段和现场运营商覆盖，配置蜂窝网络上报。"
+      },
+      {
+        "id": "H500",
+        "title": "H500 · NB-IoT",
+        "text": "结合现场 NB-IoT 网络可用性和覆盖，配置终端及上报方案。"
+      }
+    ]
+  },
+  "specifications": {
+    "description": "系列参数用于初步选型。具体机械测点的适用规格由所供探头、测量定义及完整配置共同确定。配置建议可同时明确可用频带、采集设置、安装图和校准资料。",
+    "rows": [
+      {
+        "label": "系列型号",
+        "value": "H200 / H300 / H500"
+      },
+      {
+        "label": "振动速度 RMS 量程",
+        "value": "0–50 mm/s"
+      },
+      {
+        "label": "测量频率范围",
+        "value": "10–5,000 Hz"
+      },
+      {
+        "label": "测量轴数",
+        "value": "单轴或三轴，按所选配置"
+      },
+      {
+        "label": "振动速度 RMS 显示分辨率",
+        "value": "0.1 mm/s"
+      },
+      {
+        "label": "精度参考条件",
+        "value": "±1%，80 Hz 校准参考；完整测量精度按所供探头及配置确认"
+      },
+      {
+        "label": "探头形式",
+        "value": "带线外置探头，安装在刚性电机轴承座或经确认的机械测点"
+      },
+      {
+        "label": "无线型号",
+        "value": "H200：LoRa；H300：4G LTE；H500：NB-IoT，区域配置按项目选择"
+      },
+      {
+        "label": "数据接入",
+        "value": "MQTT 平台接口；H200 经兼容的 LoRa 接收器／网关接入，完整链路按所供配置确认"
+      },
+      {
+        "label": "无线终端外壳防护",
+        "value": "IP68；探头、电缆及连接器的环境适用性单独确认"
+      },
+      {
+        "label": "工作温度",
+        "value": "−20°C～+70°C；安装时同时确认各部件适用范围"
+      },
+      {
+        "label": "储存温度",
+        "value": "−20°C～+80°C"
+      },
+      {
+        "label": "设备配置功能",
+        "value": "NFC 激活／本地设置及 OTA 升级，按支持这些功能的供货配置"
+      },
+      {
+        "label": "电池寿命参考",
+        "value": "规定条件下，每小时上报，参考超过 10 年；实际取决于完整配置及使用条件"
+      }
+    ]
+  },
+  "faqHeading": {
+    "intro": "帮助您明确机械测量需求、规划带线探头安装，并将读数接入维护流程。"
+  },
+  "faqs": [
+    {
+      "id": "faq-what-measures",
+      "question": "Hitelecom 高频振动传感器测量什么？",
+      "paragraphs": [
+        "Hitelecom H 系列通过带线外置探头监测机械设备的高频振动。振动速度以均方根值（RMS）表示，量程为 0–50 mm/s，显示分辨率为 0.1 mm/s，测量频率范围为 10–5,000 Hz。根据设备和测点选择单轴或三轴配置，再确定无线数据上报方案。"
+      ]
+    },
+    {
+      "id": "faq-where-motor",
+      "question": "振动探头应安装在电机的什么位置？",
+      "paragraphs": [
+        "将探头直接安装在靠近目标轴承、经确认的刚性电机轴承座或端盖测量平面上，按所供安装方式处理安装表面。记录测点编号及单轴测量方向或三轴朝向。妥善固定电缆，并结合维护空间和无线覆盖，将无线终端独立布置。"
+      ]
+    },
+    {
+      "id": "faq-which-machines",
+      "question": "哪些工业机械适合采用这种监测方式？",
+      "paragraphs": [
+        "常见项目包括电机、泵、风机、压缩机、齿轮箱、输送设备驱动、机床主轴、搅拌机和离心机。在目标部件附近选择刚性、不旋转的测点，并使所供探头的可用频带、量程和安装条件与机械工况相匹配。本系列面向带线外置探头的高频机械振动监测。"
+      ]
+    },
+    {
+      "id": "faq-probe-wireless",
+      "question": "带线探头如何与无线终端配合？",
+      "paragraphs": [
+        "探头通过电缆连接机械测点与监测终端，终端再通过所配置的 4G LTE、NB-IoT 或 LoRa 链路进行远程数据传输。应共同规划探头位置、允许的电缆长度及终端位置，兼顾维护空间、电缆防护与无线覆盖。"
+      ]
+    },
+    {
+      "id": "faq-frequency-specification",
+      "question": "10–5,000 Hz 测量频率范围代表什么？",
+      "paragraphs": [
+        "它指探头可测量的振动频率范围；无线数据的上报间隔则单独设置。80 Hz 是精度参考中的校准条件。选型时提供机械转速、目标部件和安装方式，可据此匹配采集及上报方案。"
+      ]
+    },
+    {
+      "id": "faq-metric-definition",
+      "question": "是否支持单轴和三轴振动测量？",
+      "paragraphs": [
+        "支持按项目选择单轴或三轴配置。单轴沿选定方向测量，三轴在同一安装点测量三个轴向的振动。请在配置中明确轴数和安装朝向；振动速度 RMS 显示分辨率为 0.1 mm/s。"
+      ]
+    },
+    {
+      "id": "faq-variable-speed",
+      "question": "变速或周期运行的设备，应如何比较振动读数？",
+      "paragraphs": [
+        "在监测计划中记录转速、负载及运行阶段，为关键工况建立可比较的基线，例如稳定运行转速或可复现的生产周期阶段。结合这些条件和维护记录复核变化趋势，可帮助安排更有针对性的点检。"
+      ]
+    },
+    {
+      "id": "faq-probe-installation",
+      "question": "如何保持有效的高频振动测量？",
+      "paragraphs": [
+        "按所供安装方式，将探头固定在清洁、平整、刚性的测量表面。机械连接会影响安装后的频率响应，因此应结合目标频带确认探头接口及安装底座。电缆应设置应力释放并保留适当余量，与运动部件和电机动力线保持安全距离，按现场要求妥善固定。"
+      ]
+    },
+    {
+      "id": "faq-maintenance-workflow",
+      "question": "振动趋势如何帮助设备维护？",
+      "paragraphs": [
+        "先明确正常工况基线、需要复核的指标及对应点检流程。已标记测点上持续出现的变化，可帮助团队确定检查优先级，并比较维护前后的读数。具体故障解释结合设备、可用测量数据及项目采用的分析方法确定。"
+      ]
+    },
+    {
+      "id": "faq-quotation-details",
+      "question": "提供哪些资料有助于选择配置和报价？",
+      "paragraphs": [
+        "请提供设备类型、转速范围、运行周期、目标部件、拟安装测点照片，以及单轴或三轴需求。同时说明使用环境、电缆走线、采集／上报间隔、安装国家及拟接入的平台或通信链路，以便共同确定探头、终端及数据要求。"
+      ]
+    }
+  ],
+  "evidence": {
+    "reviewed": "2026-10-11",
+    "officialPage": "https://www.hitelecom.com/product/vibration-sensor",
+    "officialDatasheet": "https://www.hitelecom.com/downloads/vibration-sensor-datasheet.pdf",
+    "scopeConfirmedBy": "User instruction: external cabled high-frequency machinery product; future low-frequency product separate",
+    "sources": [
+      {
+        "id": "S1",
+        "organization": "PCB Piezotronics",
+        "title": "Motor vibration sensors",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/motor-vibration",
+        "ref": "turn180view1",
+        "supports": "Motor monitoring; drive-end/non-drive-end bearing locations; mechanical coupling and output/processing considerations."
+      },
+      {
+        "id": "S2",
+        "organization": "PCB Piezotronics",
+        "title": "Guidelines for mounting test accelerometers",
+        "url": "https://www.pcb.com/resources/technical-information/mounting",
+        "ref": "turn180view0",
+        "supports": "A smooth rigid interface and stud mounting can preserve high-frequency response; added bases or soft interfaces change mounted response. Installation must follow the actual sensor instructions."
+      },
+      {
+        "id": "S3",
+        "organization": "ifm",
+        "title": "VVB vibration sensor applications",
+        "url": "https://www.ifm.com/us/en/us/learn-more/vibration/vvb0/io-link-vibration-applications",
+        "ref": "turn180view6",
+        "supports": "Electric motors, centrifugal pumps, direct/indirect-drive fans and reducers; locations near the monitored component; examples of separate motor and driven-equipment points."
+      },
+      {
+        "id": "S4",
+        "organization": "ifm",
+        "title": "Applications of diagnostic electronics and acceleration sensors",
+        "url": "https://www.ifm.com/in/en/shared/technologies/from-vibration-to-real-time-maintenance/vse-vsa-applications",
+        "ref": "turn180view3",
+        "supports": "Machine tools, decanters, compressors, gearboxes, storage/retrieval systems, cross-belt sorters, conveyors, fillers, mixers, shredders and mills. The sophisticated diagnostic capabilities described belong to ifm's specified complete system."
+      },
+      {
+        "id": "S5",
+        "organization": "SKF Technical Support",
+        "title": "On-line surveillance monitoring of gearboxes",
+        "url": "https://skftechnicalsupport.zendesk.com/hc/en-us/articles/360032626714-On-line-Surveillance-Monitoring-of-Gearboxes",
+        "ref": "turn180view4",
+        "supports": "Local transmission paths matter; complex gearboxes have overlapping sources and operating-speed/load variation. Single-point overall readings are not identical to component diagnosis."
+      },
+      {
+        "id": "S6",
+        "organization": "SKF Technical Support",
+        "title": "SKF Axios technical FAQ",
+        "url": "https://skftechnicalsupport.zendesk.com/hc/en-us/articles/8104349791891-SKF-Axios-Technical-FAQ",
+        "ref": "turn180view5",
+        "supports": "Public questions on machinery suitability, placement, variable speeds and inspection after anomaly notification. These are SKF's published FAQ, not Hitelecom customer questions."
+      },
+      {
+        "id": "S7",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Condition monitoring",
+        "url": "https://wilcoxon.com/industries-and-applications/condition-monitoring-products/",
+        "ref": "turn180view2",
+        "supports": "Established monitored machinery families include motors, pumps, fans, gearboxes and compressors."
+      },
+      {
+        "id": "S8",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Water and wastewater pump monitoring",
+        "url": "https://wilcoxon.com/industries-and-applications/water-and-wastewater/",
+        "ref": "turn184view3",
+        "supports": "Water/wastewater motor and pump monitoring, baseline/trending, direct-drive and vertical pump arrangements."
+      },
+      {
+        "id": "S9",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Food and beverage",
+        "url": "https://wilcoxon.com/industries-and-applications/food-and-beverage/",
+        "ref": "turn183view1",
+        "supports": "Motors, pumps, fillers, cappers and conveyor equipment in food/beverage production; environmental suitability is a separate selection requirement."
+      },
+      {
+        "id": "S10",
+        "organization": "PCB Piezotronics",
+        "title": "Rotary screw compressors",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/rotary-screw-compressors",
+        "ref": "turn184view4",
+        "supports": "High-frequency compressor applications; casing locations close to radial bearings; bandwidth must match the engineering objective."
+      },
+      {
+        "id": "S11",
+        "organization": "PCB Piezotronics",
+        "title": "Machine tool spindles",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/machine-tool-spindles",
+        "ref": "turn185view2",
+        "supports": "Machine-tool vibration trends; cutting-process vibration, cutting fluids, metal chips and cable protection considerations."
+      },
+      {
+        "id": "S12",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Pharmaceutical",
+        "url": "https://wilcoxon.com/industries-and-applications/pharmaceutical/",
+        "ref": "turn184view1",
+        "supports": "Mixers, motors, pumps, vacuum dryers, conveyor/filling drives; environment and contaminants require review."
+      },
+      {
+        "id": "S13",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Pulp and paper",
+        "url": "https://wilcoxon.com/industries-and-applications/pulp-and-paper/",
+        "ref": "turn184view2",
+        "supports": "Paper rollers, calenders, chippers, compressors, motors, pumps and winders; wet and heated environments need matching hardware."
+      },
+      {
+        "id": "S14",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Cement",
+        "url": "https://wilcoxon.com/industries-and-applications/cement/",
+        "ref": "turn183view0",
+        "supports": "Crushing, grinding, material transport, mills, separators, motors, fans and compressors in cement production."
+      },
+      {
+        "id": "S15",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Mining",
+        "url": "https://wilcoxon.com/industries-and-applications/mining/",
+        "ref": "turn184view0",
+        "supports": "Mining motors, gearboxes, conveyors, fans, generators and pumps; hazardous-area approvals belong to the actual selected equipment."
+      },
+      {
+        "id": "S16",
+        "organization": "PCB Piezotronics",
+        "title": "Vibratory screens and feeders",
+        "url": "https://www.pcb.com/applications/pdm-process-monitoring/vibratory-screens-and-feeders",
+        "ref": "turn184view6",
+        "supports": "Screen/feeder machinery is an established vibration application; the proposed Hitelecom scene is restricted to drive/exciter bearing-housing trends and requires bandwidth/amplitude review."
+      },
+      {
+        "id": "S17",
+        "organization": "Wilcoxon Sensing Technologies",
+        "title": "Vibration monitoring FAQs",
+        "url": "https://wilcoxon.com/resources/faqs/",
+        "ref": "turn184view5",
+        "supports": "Metric/output distinctions, mounting, cable routing, strain relief, environmental effects and cable-length review are public engineering questions. Wilcoxon's example limits and hardware are not Hitelecom specifications."
+      },
+      {
+        "id": "S18",
+        "organization": "ifm",
+        "title": "Decanter centrifuges",
+        "url": "https://www.ifm.com/in/en/shared/landingpages/monitoring-decanters",
+        "ref": "turn180view7",
+        "supports": "Centrifuge vibration depends on multiple components and operating states; speed/process context supports interpretation."
+      }
+    ],
+    "notice": "The sources establish general machinery-monitoring practice and public engineering questions. These drafts are application proposals, not verified Hitelecom customer installations, and no search-volume or customer-enquiry-log evidence has been obtained.",
+    "userConfirmedSpecifications": {
+      "source": "User messages in this conversation, 2026-10-11",
+      "velocityRmsRange": "0–50 mm/s",
+      "measurementAxes": "Single-axis or triaxial",
+      "velocityRmsDisplayResolution": "0.1 mm/s",
+      "measurementFrequencyRange": "10–5,000 Hz",
+      "installationDiagram": "Probe directly on the motor bearing end shield; terminal separately mounted"
+    }
+  }
+}
