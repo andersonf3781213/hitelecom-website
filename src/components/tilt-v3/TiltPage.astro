@@ -1,0 +1,138 @@
+---
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import product from '../../assets/tilt-v3/tilt-product-original.webp';
+import heroBackground from '../../assets/tilt-v3/sensor-hero-background.webp';
+import applicationData from '../../data/tilt-v3-applications.json';
+import { page, features, specifications, projectSteps, faqs } from '../../data/tilt-v3-content';
+import '../../styles/tilt-v3.css';
+
+const english = (value: string) => value.split(' / ')[0];
+const sceneCount = applicationData.reduce((total, group) => total + group.scenes.length, 0);
+const assets = import.meta.glob<ImageMetadata>('../../assets/tilt-v3/applications/*.webp', { eager: true, import: 'default' });
+const applicationImages = new Map<string, { src: string; srcset: string; width: number; height: number }>();
+await Promise.all(applicationData.flatMap(group => group.scenes.map(async scene => {
+  const source = assets[`../../assets/tilt-v3/applications/${scene.id}.webp`];
+  if (!source) throw new Error(`Missing application image: ${scene.id}.webp`);
+  const widths = [420, 760, 1080].filter(width => width <= source.width);
+  if (!widths.length) widths.push(source.width);
+  const outputs = await Promise.all(widths.map(width => getImage({ src: source, width, format: 'webp', quality: 76 })));
+  applicationImages.set(scene.id, {
+    src: outputs[outputs.length - 1].src,
+    srcset: outputs.map((image, index) => `${image.src} ${widths[index]}w`).join(', '),
+    width: source.width, height: source.height,
+  });
+})));
+const heroWidths = [400, 640, 880].filter(width => width <= product.width);
+if (!heroWidths.length || heroWidths[heroWidths.length - 1] < product.width) heroWidths.push(product.width);
+const heroOutputs = await Promise.all(heroWidths.map(width => getImage({ src: product, width, format: 'webp', quality: 83 })));
+const heroImage = heroOutputs[heroOutputs.length - 1];
+const paths: Record<string, string> = {
+ angle: 'M4 20h16M4 20V4m0 16L16 7M11 20a7 7 0 0 0-3-5',
+ shield: 'M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6l-8-3Zm-4 9 3 3 5-6',
+ signal: 'M4 20v-3m5 3v-7m6 7V9m5 11V4',
+ nfc: 'M8 7a7 7 0 0 1 0 10m4-13a11 11 0 0 1 0 16m4-18a15 15 0 0 1 0 20M3 10v4',
+ update: 'M20 7V3l-3 3a8 8 0 1 0 3 9M20 3h-5',
+ bell: 'M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-8 12h4',
+};
+---
+<div class="ht-tilt" data-tilt-page>
+  <section class="tilt-hero" aria-labelledby="tilt-title" style={`--hero-background: url(${heroBackground.src})`}>
+    <div class="tilt-wrap">
+      <nav class="tilt-breadcrumb" aria-label="Breadcrumb"><a href="https://www.hitelecom.com/">Home</a><span aria-hidden="true">/</span><a href="https://www.hitelecom.com/product/lists/cid/261#cate">IoT Sensors</a><span aria-hidden="true">/</span><span>Wireless tilt sensor</span></nav>
+      <div class="tilt-hero-grid">
+        <div class="tilt-hero-copy">
+          <h1 id="tilt-title">Wireless tilt sensor.<br/><span>A clearer view<br class="tilt-desktop-break"/> of change.</span></h1>
+          <p class="tilt-hero-subtitle">Remote inclination monitoring</p>
+          <p class="tilt-hero-description">{page.hero}</p>
+          <div class="tilt-actions"><a class="tilt-button tilt-button-primary" href="#project-enquiry">Discuss your project <span aria-hidden="true">↗</span></a><a class="tilt-text-link" href="#specifications">Explore specifications <span aria-hidden="true">↓</span></a></div>
+        </div>
+        <figure class="tilt-hero-product">
+          <img src={heroImage.src} srcset={heroOutputs.map((image, index) => `${image.src} ${heroWidths[index]}w`).join(', ')} sizes="(max-width: 680px) 76vw, (max-width: 1024px) 40vw, 520px" width={product.width} height={product.height} alt="Hitelecom wireless tilt sensor with external antenna and mounting lugs." loading="eager" fetchpriority="high" decoding="async" />
+          <figcaption>H Series wireless tilt monitoring</figcaption>
+        </figure>
+      </div>
+      <div class="tilt-hero-proof" aria-label="Configuration highlights">
+        <div><strong>0.001°</strong><span>Accuracy grade available</span><small>H310-TS180C · selected configuration</small></div>
+        <div><strong>IP68 / IP66</strong><span>Enclosure options</span><small>Metal / plastic · by configuration</small></div>
+        <div><strong>Your platform</strong><span>Data integration</span><small>MQTT-capable model configurations</small></div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="tilt-page-nav" aria-label="On this page"><div class="tilt-wrap"><div class="tilt-page-links"><a href="#overview">Overview</a><a href="#applications">Applications</a><a href="#specifications">Specifications</a><a href="#integration">Integration</a><a href="#faq">FAQ</a></div><a class="tilt-nav-quote" href="#project-enquiry">Request a quote <span aria-hidden="true">↗</span></a></div></nav>
+
+  <section class="tilt-section" aria-labelledby="features-heading">
+    <div class="tilt-wrap">
+      <div class="tilt-section-heading"><div><p class="tilt-eyebrow">Key features</p><h2 id="features-heading">Made for the way<br/><span>you monitor.</span></h2></div><p>Match measurement performance, installation and connectivity to the asset you need to observe.</p></div>
+      <div class="tilt-features">{features.map(feature => <article><svg viewBox="0 0 24 24" aria-hidden="true"><path d={paths[feature.icon]} /></svg><h3>{feature.title}</h3><p>{feature.text}</p></article>)}</div>
+    </div>
+  </section>
+
+  <section id="overview" class="tilt-section tilt-overview" aria-labelledby="overview-heading">
+    <div class="tilt-wrap">
+      <div class="tilt-overview-grid">
+        <div><p class="tilt-eyebrow">A clearer view of change</p><h2 id="overview-heading">Measure the angle.<br/><span>Follow the trend.</span></h2><p class="tilt-lead">A wireless tilt sensor measures inclination where it is mounted. Compare later readings with the installation baseline to follow the direction and size of local rotation. Connect each measurement point to a named asset, so your team can review changes alongside inspection and maintenance records.</p><a class="tilt-text-link" href="#applications">Find your application <span aria-hidden="true">↓</span></a></div>
+        <div class="tilt-angle-card"><div class="tilt-card-topline"><span class="tilt-small-label">From reading to insight</span><span>Illustrative readings</span></div><div class="tilt-angle-readings"><div><span>Installation reference</span><strong>0.30<small>°</small></strong></div><span class="tilt-reading-arrow" aria-hidden="true">→</span><div><span>Later reading</span><strong>0.45<small>°</small></strong></div></div><div class="tilt-angle-change"><span>Change from reference</span><strong>+0.15<small>°</small></strong></div><p>A consistent reference makes the angle history easier to interpret at each monitored point.</p></div>
+      </div>
+      <ol class="tilt-workflow"><li><span>01</span><h3>Establish the reference</h3><p>Fix the sensor to the selected element. Record the asset, mounting position, sensor axes and initial angle after installation.</p></li><li><span>02</span><h3>Bring readings to your platform</h3><p>Select the measurement and reporting schedule, then connect through the wireless route available at the site.</p></li><li><span>03</span><h3>Turn trends into a site action</h3><p>Use the project’s review thresholds and notification process to direct inspections to the monitored points.</p></li></ol>
+    </div>
+  </section>
+
+  <section id="operating-profile" class="tilt-section tilt-lifecycle" aria-labelledby="lifecycle-heading">
+    <div class="tilt-wrap">
+      <div class="tilt-section-heading"><div><p class="tilt-eyebrow">Designed for long-term monitoring</p><h2 id="lifecycle-heading">Measure every minute.<br/><span>Report every four hours.</span></h2></div><p>For the H310-TS180C operating profile stated by Hitelecom, 240 measurement cycles take place between scheduled reports. Measurement frequency and reporting frequency are specified separately to match the monitoring task.</p></div>
+      <div class="tilt-profile-metrics"><div><strong>1 <small>min</small></strong><h3>Measurement interval</h3><p>An angle measurement every minute.</p></div><div><strong>4 <small>h</small></strong><h3>Scheduled reporting</h3><p>240 measurement cycles per reporting interval.</p></div><div><strong>10 <small>years</small></strong><h3>Typical service life</h3><p>Hitelecom-stated life for this operating profile.</p></div><div><strong>&gt;5 <small>million</small></strong><h3>Laboratory measurement cycles</h3><p>Laboratory capability reported by Hitelecom.</p></div></div>
+      <div class="tilt-profile-note"><p class="tilt-small-label">H310-TS180C · operating profile</p><h3>Frequent sensing. Scheduled reporting.</h3><p>The service-life figure applies to the stated H310-TS180C profile and varies with the supplied battery, enabled functions, radio conditions and temperature. Laboratory cycle capability is a separate test statement. Agree report contents and any event-reporting requirements for the selected configuration.</p></div>
+    </div>
+  </section>
+
+  <section id="applications" class="tilt-section tilt-applications" aria-labelledby="applications-heading">
+    <div class="tilt-wrap">
+      <div class="tilt-section-heading"><div><p class="tilt-eyebrow">Applications</p><h2 id="applications-heading">Different structures.<br/><span>One focused measurement.</span></h2></div><div><p>Explore what to monitor, where to mount and which details help us configure a sensor for your project.</p><p class="tilt-image-disclosure">Illustrative monitoring setups. Final mounting is agreed for each project.</p></div></div>
+      <div class="tilt-app-index"><span>{String(sceneCount).padStart(2, '0')} monitoring scenarios</span><nav aria-label="Application categories">{applicationData.map(group => <a href={`#${group.groupid}`}>{String(group.number).padStart(2, '0')} <span>{group.jumplabelen}</span></a>)}</nav></div>
+      <div class="tilt-application-groups">{applicationData.map((group, groupIndex) => <details class="tilt-application-group" id={group.groupid} open={groupIndex === 0} data-application-group>
+        <summary class="tilt-group-summary"><span class="tilt-group-number">{String(group.number).padStart(2, '0')}</span><span class="tilt-group-title">{english(group.title)}</span><span class="tilt-group-count">{group.scenes.length} applications</span><span class="tilt-toggle" aria-hidden="true">+</span></summary>
+        <div class="tilt-group-content"><p class="tilt-group-intro">{group.introen}</p><div class="tilt-application-scenes">{group.scenes.map((scene, sceneIndex) => { const image = applicationImages.get(scene.id)!; return <details id={scene.id} class="tilt-scene" open={sceneIndex === 0} data-scene data-scene-title={english(scene.title)}>
+          <summary class="tilt-scene-summary"><span class="tilt-scene-number">{String((group.number - 1) * 6 + sceneIndex + 1).padStart(2, '0')}</span><h3>{english(scene.title)}</h3><span class="tilt-scene-arrow" aria-hidden="true">↗</span></summary>
+          <div class="tilt-scene-body"><figure class="tilt-scene-visual"><img src={image.src} srcset={image.srcset} sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1100px) 45vw, 580px" width={image.width} height={image.height} alt={`${scene.alten} Hitelecom tilt sensor shown at an illustrative monitoring point.`} loading="lazy" decoding="async" /><figcaption><span>{group.jumplabelen}</span><span>Illustrative installation</span></figcaption></figure><div class="tilt-scene-description"><p>{scene.en}</p><dl><div><dt>Monitoring point</dt><dd>{scene.pointen}</dd></div><div><dt>Plan your installation</dt><dd>{scene.briefen}</dd></div></dl><a class="tilt-text-link" href="#project-enquiry" data-enquiry-scene={scene.id}>Discuss this application <span aria-hidden="true">↗</span></a></div></div>
+        </details>; })}</div></div>
+      </details>)}</div>
+      <div class="tilt-application-next"><p>Have a different structure or installation in mind?</p><a class="tilt-text-link" href="#project-enquiry">Share your monitoring objective <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </section>
+
+  <section id="specifications" class="tilt-section" aria-labelledby="specifications-heading">
+    <div class="tilt-wrap">
+      <div class="tilt-section-heading"><div><p class="tilt-eyebrow">Series & configurations</p><h2 id="specifications-heading">The right specification.<br/><span>For your installation.</span></h2></div><p>Select a model, then match its measurement grade, enclosure and power configuration to your installation.</p></div>
+      <div class="tilt-specification-grid"><aside class="tilt-model-card"><p class="tilt-small-label">Model reference</p><h3>{page.model}</h3><p>These values apply to H310-TS180C configurations. The quotation and configuration list identify the supplied measurement grade, battery, enclosure and wireless option.</p><a class="tilt-text-link" href={page.datasheet}>Download the H310-TS180C datasheet (PDF) <span aria-hidden="true">↗</span></a><a class="tilt-button tilt-button-primary" href="#project-enquiry">Select a configuration <span aria-hidden="true">↓</span></a></aside><div class="tilt-specification-table"><table><caption>H310-TS180C — published technical specifications</caption><tbody>{specifications.map(([label, value]) => <tr><th scope="row">{label}</th><td>{value}</td></tr>)}</tbody></table></div></div>
+      <div class="tilt-project-checklist"><h3>A configuration built around your project.</h3><ol>{projectSteps.map((step, index) => <li><span>{String(index + 1).padStart(2, '0')}</span><h4>{step.title}</h4><p>{step.text}</p></li>)}</ol></div>
+    </div>
+  </section>
+
+  <section id="integration" class="tilt-section tilt-integration" aria-labelledby="integration-heading">
+    <div class="tilt-wrap">
+      <div class="tilt-section-heading"><div><p class="tilt-eyebrow">Connectivity & integration</p><h2 id="integration-heading">Your installation.<br/><span>Your data destination.</span></h2></div><p>Choose the wireless route around site coverage, the number of measurement points and the platform receiving your readings.</p></div>
+      <div class="tilt-integration-routes"><article><p class="tilt-small-label">4G / NB-IoT</p><h3>For distributed locations</h3><ol class="tilt-data-route"><li>Sensor</li><li>Mobile network</li><li>Your platform</li></ol><p>Cellular configurations connect through a compatible operator. Match regional bands, service availability and coverage at the mounting position to the required reporting and power profile.</p><ul><li>Installation country, operator and regional bands</li><li>Coverage at the actual mounting position</li><li>Reporting cadence, SIM arrangement and power profile</li></ul></article><article><p class="tilt-small-label">LoRa</p><h3>For points across one site</h3><ol class="tilt-data-route"><li>Sensors</li><li>Receiver / gateway</li><li>Your platform</li></ol><p>LoRa configurations use a compatible receiver or gateway and an onward platform connection. Specify the device protocol and regional radio settings together; a LoRa radio label alone does not establish LoRaWAN compatibility.</p><ul><li>Device protocol and gateway compatibility</li><li>Site layout, obstructions and radio coverage</li><li>Gateway power and onward data connection</li></ul></article></div>
+      <div class="tilt-integration-message"><div><p class="tilt-small-label">Hitelecom platform or your own</p><h3>Make the first message useful.</h3></div><div><p>For the selected MQTT-capable configuration, agree the endpoint, supported authentication, topic and message format. Check device IDs, angle fields, axis labels, units and timestamps in a sample message, then test the complete path to your platform and notification workflow.</p><a class="tilt-text-link" href="#project-enquiry">Discuss platform integration <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+
+  <section id="faq" class="tilt-section" aria-labelledby="faq-heading">
+    <div class="tilt-wrap tilt-faq-layout"><div><p class="tilt-eyebrow">Answers for your project</p><h2 id="faq-heading">Frequently<br/><span>asked questions.</span></h2><p class="tilt-lead">Practical answers for selecting, installing and connecting your wireless tilt monitoring system.</p><a class="tilt-text-link" href="#project-enquiry">Ask about your project <span aria-hidden="true">↗</span></a></div><div class="tilt-faq-list">{faqs.map((faq, index) => <details class="tilt-faq" open={index === 0}><summary><h3>{faq.question}</h3><span class="tilt-toggle" aria-hidden="true">+</span></summary><div>{faq.answer.map(paragraph => <p>{paragraph}</p>)}<a class="tilt-text-link" href={faq.link}>{faq.link === '#project-enquiry' ? 'Discuss your monitoring requirements' : 'Explore the details'} <span aria-hidden="true">→</span></a></div></details>)}</div></div>
+  </section>
+
+  <section id="project-enquiry" class="tilt-section tilt-enquiry" aria-labelledby="enquiry-heading">
+    <span id="enquiry" class="tilt-legacy-anchor" aria-hidden="true"></span>
+    <div class="tilt-wrap tilt-enquiry-layout"><div class="tilt-enquiry-intro"><p class="tilt-eyebrow">Let's talk about your project</p><h2 id="enquiry-heading">Your next step.<br/><span>A sensor that fits.</span></h2><p class="tilt-lead">Tell us what you need to monitor. We’ll help match measurement performance, connectivity and installation to your project.</p><a class="tilt-enquiry-email" href={`mailto:${page.email}`}>{page.email} <span aria-hidden="true">↗</span></a><div class="tilt-enquiry-guidance"><h3>Start with three details.</h3><p>Your application, installation country and estimated quantity. Add a site photo or platform requirements to your email when available.</p></div></div><div class="tilt-enquiry-card"><p class="tilt-small-label">Project enquiry</p><h3>Let’s find your configuration.</h3><p>H Series wireless tilt monitoring</p><form data-enquiry-form>
+      <div class="tilt-form-field"><label for="tilt-application">Application <span aria-hidden="true">*</span></label><select id="tilt-application" name="application" required><option value="">Choose your application</option>{applicationData.map(group => <optgroup label={group.jumplabelen}>{group.scenes.map(scene => <option value={scene.id}>{english(scene.title)}</option>)}</optgroup>)}<option value="other">Other / project-specific</option></select></div>
+      <div class="tilt-form-columns"><div class="tilt-form-field"><label for="tilt-country">Country / region <span aria-hidden="true">*</span></label><input id="tilt-country" name="country" autocomplete="country-name" placeholder="e.g. United Kingdom" required maxlength="100" /></div><div class="tilt-form-field"><label for="tilt-quantity">Estimated quantity</label><input id="tilt-quantity" name="quantity" inputmode="numeric" placeholder="e.g. 20 sensors" maxlength="60" /></div></div>
+      <div class="tilt-form-field"><label for="tilt-connectivity">Preferred connectivity</label><select id="tilt-connectivity" name="connectivity"><option>Please advise</option><option>4G LTE</option><option>NB-IoT</option><option>LoRa</option></select></div><div class="tilt-form-field"><label for="tilt-requirements">What would you like to monitor?</label><textarea id="tilt-requirements" name="requirements" rows="4" maxlength="6000" placeholder="Asset, measurement points, installation conditions, reporting and platform requirements."></textarea></div><button class="tilt-button tilt-button-primary" type="submit">Prepare my enquiry <span aria-hidden="true">↗</span></button><p class="tilt-form-note">Review your brief, then send it with your email app.</p><p class="tilt-form-status" data-enquiry-status role="status" aria-live="polite"></p>
+    </form><noscript><style>.ht-tilt [data-enquiry-form] { display: none; }</style><p class="tilt-no-script-note">Email your application, country and estimated quantity to <a href={`mailto:${page.email}`}>{page.email}</a>. The on-page brief builder uses JavaScript.</p></noscript><div class="tilt-enquiry-draft" data-enquiry-draft hidden><label for="tilt-draft">Review and edit your enquiry</label><textarea id="tilt-draft" rows="10" spellcheck="true"></textarea><div class="tilt-actions"><a href={`mailto:${page.email}`} class="tilt-button tilt-button-primary" data-enquiry-email>Open email app <span aria-hidden="true">↗</span></a><button class="tilt-button tilt-button-outline" type="button" data-enquiry-copy>Copy brief</button></div><p class="tilt-form-note">Your draft is prepared locally. It is sent when you send the email in your email app.</p></div></div></div>
+  </section>
+
+  <section class="tilt-related" aria-label="Related monitoring products"><div class="tilt-wrap"><p class="tilt-small-label">Continue your monitoring project</p><div><a href="https://www.hitelecom.com/product/vibration-sensor">Vibration monitoring <span aria-hidden="true">↗</span></a><a href="https://www.hitelecom.com/product/radar-distance-sensor">Distance monitoring <span aria-hidden="true">↗</span></a><a href="https://www.hitelecom.com/product/air-quality-sensor">Air quality monitoring <span aria-hidden="true">↗</span></a></div></div></section>
+</div>
+<script>
+  import '../../scripts/tilt-v3';
+</script>

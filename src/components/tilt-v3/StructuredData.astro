@@ -1,0 +1,63 @@
+---
+/**
+ * 倾斜传感器页 V3 · 页面级 JSON-LD（EN 新版，2026-10-17）
+ * 复用 BaseLayout 全局 Organization/WebSite 实体（仅按 @id 引用）；
+ * 面包屑对齐站内惯例（IoT Sensors → /product/lists/cid/261）。
+ * Product 为可配置产品族：参数保留 H310-TS180C 参考范围，不虚构 SKU 目录。
+ */
+import { page, faqs, specifications } from '../../data/tilt-v3-content';
+import applications from '../../data/tilt-v3-applications.json';
+
+const { imageUrl } = Astro.props;
+const site = 'https://www.hitelecom.com';
+const url = page.canonical;
+const orgId = `${site}/#organization`;
+const scenes = applications.flatMap((group) => group.scenes);
+const graph = [
+  {
+    '@type': 'WebPage', '@id': `${url}#webpage`, url,
+    name: page.title, description: page.description, inLanguage: 'en',
+    isPartOf: { '@id': `${site}/#website` }, publisher: { '@id': orgId },
+    mainEntity: { '@id': `${url}#product` }, breadcrumb: { '@id': `${url}#breadcrumb` },
+    primaryImageOfPage: { '@type': 'ImageObject', url: imageUrl },
+    dateModified: '2026-10-17',
+    hasPart: [{ '@id': `${url}#faq` }, { '@id': `${url}#application-list` }],
+  },
+  {
+    '@type': 'Product', '@id': `${url}#product`,
+    name: 'Hitelecom H Series Wireless Tilt Sensor', url,
+    description: page.hero, category: 'Wireless tilt sensors and inclinometers',
+    brand: { '@type': 'Brand', name: 'Hitelecom' },
+    manufacturer: { '@id': orgId },
+    image: imageUrl, model: 'H Series',
+    additionalProperty: specifications.map(([name, value]) => ({
+      '@type': 'PropertyValue', name: `H310-TS180C reference — ${name}`, value,
+    })),
+  },
+  {
+    '@type': 'BreadcrumbList', '@id': `${url}#breadcrumb`,
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` },
+      { '@type': 'ListItem', position: 2, name: 'IoT Sensors', item: `${site}/product/lists/cid/261` },
+      { '@type': 'ListItem', position: 3, name: 'Wireless Tilt Sensor', item: url },
+    ],
+  },
+  {
+    '@type': 'FAQPage', '@id': `${url}#faq`, inLanguage: 'en',
+    isPartOf: { '@id': `${url}#webpage` },
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question', name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer.join('\n\n') },
+    })),
+  },
+  {
+    '@type': 'ItemList', '@id': `${url}#application-list`,
+    name: 'Wireless tilt sensor monitoring applications', numberOfItems: scenes.length,
+    itemListElement: scenes.map((scene, index) => ({
+      '@type': 'ListItem', position: index + 1, name: scene.title.split(' / ')[0],
+      url: `${url}#${scene.id}`,
+    })),
+  },
+];
+---
+<script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c')} />
