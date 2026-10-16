@@ -23,3 +23,14 @@
 # HTML 页面：协商缓存，保证内容更新即时可见
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
+
+# 目录管理后台与保存 API：禁止索引、禁止缓存（V109 接入）
+/catalog-admin
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
+/catalog-admin/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
+/api/catalog
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store

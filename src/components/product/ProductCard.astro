@@ -10,6 +10,8 @@ import { productPath, type ProductCard } from '../../data/product';
 
 interface Props { locale: Locale; product: ProductCard }
 const { locale, product } = Astro.props;
+// 目录管理模块新增产品的图片为 /images/... 或 https:// 地址（不经构建期管线），直出 <img>
+const externalImg = /^\/|^https?:\/\//.test(product.img);
 ---
 
 <li class={`reveal${product.id ? '' : ' nbd'}`} data-name={product.name.toLowerCase()}>
@@ -17,7 +19,9 @@ const { locale, product } = Astro.props;
     <a href={l(productPath(product.id), locale)}>
       <div class="pro_2_mid_right_1_mid">
         <div class="pro_2_mid_right_1_mid_1">
-          <Img src={product.img} alt={product.name} widths={[240, 400]} sizes="(max-width: 900px) 44vw, 20vw" />
+          {externalImg
+            ? <img src={product.img} alt={product.name} loading="lazy" decoding="async" />
+            : <Img src={product.img} alt={product.name} widths={[240, 400]} sizes="(max-width: 900px) 44vw, 20vw" />}
         </div>
         <div class="pro_2_mid_right_1_mid_2">
           <div class="pro_2_mid_right_1_mid_2_mid">
@@ -32,7 +36,9 @@ const { locale, product } = Astro.props;
     <div class="pro-card-static">
       <div class="pro_2_mid_right_1_mid">
         <div class="pro_2_mid_right_1_mid_1">
-          <Img src={product.img} alt={product.name} widths={[240, 400]} sizes="(max-width: 900px) 44vw, 20vw" />
+          {externalImg
+            ? <img src={product.img} alt={product.name} loading="lazy" decoding="async" />
+            : <Img src={product.img} alt={product.name} widths={[240, 400]} sizes="(max-width: 900px) 44vw, 20vw" />}
         </div>
         <div class="pro_2_mid_right_1_mid_2">
           <div class="pro_2_mid_right_1_mid_2_mid">

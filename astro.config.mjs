@@ -45,7 +45,9 @@ export default defineConfig({
         !page.includes('/product/show/id/') &&
         !page.includes('/legacy-assets') &&
         !page.includes('/search') &&
-        !page.includes('/thanks'),
+        !page.includes('/thanks') &&
+        // V109 目录管理后台（noindex，不公开收录）
+        !page.includes('/catalog-admin'),
       i18n: {
         defaultLocale: 'en',
         locales: { en: 'en', zh: 'zh-CN', es: 'es', de: 'de', ja: 'ja', fr: 'fr', ru: 'ru' },

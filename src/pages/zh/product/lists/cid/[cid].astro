@@ -8,6 +8,7 @@ import CategoryTabs from '../../../../../components/product/CategoryTabs.astro';
 import ListSidebar from '../../../../../components/product/ListSidebar.astro';
 import ProductCard from '../../../../../components/product/ProductCard.astro';
 import { productContent, listParent, productTabs, listSeo, productPath, getMergedProducts } from '../../../../../data/product';
+import { applyCatalog } from '../../../../../lib/catalog-site';
 import { optimizedSrc } from '../../../../../utils/images';
 import { l } from '../../../../../i18n';
 import { breadcrumbLd, itemListLd, SITE_URL } from '../../../../../utils/jsonld';
@@ -18,7 +19,9 @@ export const getStaticPaths: GetStaticPaths = () =>
 
 const { cid } = Astro.params;
 const pc = await getMergedProducts('zh');
-const page = pc.lists[cid];
+// V109 目录管理：基础顺序/本月主推/草稿隐藏/新发布产品卡片由 product-catalog.json 驱动
+const adaptedLists = Object.fromEntries(Object.entries(pc.lists).map(([k, lp]) => [k, { ...lp, products: applyCatalog(lp.products, k, 'zh') }]));
+const page = adaptedLists[cid];
 const parent = listParent[cid];
 const tabLabel = productTabs.zh.find((t) => t.key === parent)?.label ?? '产品中心';
 const subLabel = page.subcats.find((s) => s.cid === cid && s.name !== '全部')?.name;
@@ -31,7 +34,7 @@ const pageDesc = subLabel
 const seoOverride = listSeo.zh[cid];
 const banner = await optimizedSrc(page.bannerImg, { width: 1920 });
 // 侧栏用：各子分类 → 其产品（传感器名称，直达详情页）
-const zhLists = pc.lists;
+const zhLists = adaptedLists;
 const sideProds = Object.fromEntries(
   page.subcats.map((s) => [s.cid, (zhLists[s.cid]?.products ?? []).map((p) => ({ id: p.id, name: p.name }))])
 );

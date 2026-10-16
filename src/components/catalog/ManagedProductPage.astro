@@ -1,0 +1,74 @@
+---
+/**
+ * 目录管理模块 · 新产品基础详情页模板（V109）
+ * 仅渲染 product-catalog.json 中 managedPage:true、已发布且当前语言已发布的条目。
+ * 复用官网 BaseLayout/ProductShell（页首、页尾、联系方式与全站一致）。
+ * 正文为静态纯文本段落；不编造参数、认证、案例或 FAQ。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductShell from '../product/ProductShell.astro';
+import catalog from '../../data/product-catalog.json';
+import '../../styles/catalog-public.css';
+import type { Locale } from '../../i18n';
+
+interface ManagedPage {
+  product: any;
+  locale: Locale;
+  localized: any;
+  path: string;
+}
+interface Props { page: ManagedPage }
+const { page } = Astro.props;
+const { product, locale, localized } = page;
+
+const SITE = 'https://www.hitelecom.com';
+const canonical = new URL(localized.url, SITE).href;
+const category = catalog.categories.find((c: any) => c.id === product.categoryId);
+const categoryLabel = category?.labels?.[locale] || category?.labels?.en || '';
+const paragraphs = String(localized.body || '').split(/\n\s*\n/).filter(Boolean);
+// hreflang：仅互链真实已发布的其它语言地址（当前语言自链与 x-default 由 BaseLayout 统一输出）
+const siblings = Object.entries(product.locales).filter(([, entry]: any) => entry.published && entry.url);
+const htmlLang: Record<string, string> = { en: 'en', zh: 'zh-CN', es: 'es', de: 'de', ja: 'ja', fr: 'fr', ru: 'ru' };
+const imageUrl = new URL(product.image.src, SITE).href;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: localized.name,
+  description: localized.summary,
+  brand: { '@type': 'Brand', name: 'Hitelecom' },
+  manufacturer: { '@id': `${SITE}/#organization` },
+  ...(categoryLabel ? { category: categoryLabel } : {}),
+  url: canonical,
+  image: imageUrl,
+};
+---
+
+<BaseLayout locale={locale} title={localized.seoTitle || `${localized.name} | Hitelecom`} description={localized.seoDescription || localized.summary} alternates={[]}>
+  <Fragment slot="head">
+    {siblings.filter(([lang]) => lang !== locale).map(([lang, entry]: any) => (
+      <link rel="alternate" hreflang={htmlLang[lang] ?? lang} href={new URL(entry.url, SITE).href} />
+    ))}
+    <meta property="og:title" content={localized.seoTitle || localized.name} />
+    <meta property="og:description" content={localized.seoDescription || localized.summary} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={imageUrl} />
+    <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')} />
+  </Fragment>
+  <ProductShell>
+    <main class="ht-catalog-managed">
+      <p class="ht-catalog-eyebrow">HITELECOM</p>
+      <section class="ht-managed-hero">
+        <div>
+          <p>{categoryLabel}</p>
+          <h1>{localized.name}</h1>
+          <p class="ht-managed-lead">{localized.summary}</p>
+        </div>
+        <img src={product.image.src} width="800" height="800" alt={localized.imageAlt || product.image.alt || localized.name} loading="eager" fetchpriority="high" decoding="async" />
+      </section>
+      <article class="ht-managed-body">
+        {paragraphs.map((paragraph: string) => <p>{paragraph}</p>)}
+      </article>
+      <a class="ht-catalog-enquiry" href={'mailto:sales@hitelecom.cn?subject=' + encodeURIComponent(localized.name)}>sales@hitelecom.cn ↗</a>
+    </main>
+  </ProductShell>
+</BaseLayout>

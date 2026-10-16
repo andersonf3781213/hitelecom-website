@@ -1,0 +1,21 @@
+---
+/**
+ * 目录管理模块 · 新产品基础页兜底路由（en）
+ * 优先级低于同目录 [slug].astro：官网既有产品页一律由 [slug] 及专属静态路由输出，
+ * 本路由只生成 product-catalog.json 中 managedPage:true 且本语言已发布的新产品页，
+ * 与既有路由路径不相交。
+ */
+import catalog from '../../data/product-catalog.json';
+import { getManagedPages } from '../../lib/catalog.mjs';
+import ManagedProductPage from '../../components/catalog/ManagedProductPage.astro';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = () =>
+  getManagedPages(catalog)
+    .filter((page) => page.locale === 'en')
+    .map((page) => ({ params: { managed: page.path.split('/').pop() }, props: page }));
+
+const page = Astro.props;
+---
+
+<ManagedProductPage page={page} />
