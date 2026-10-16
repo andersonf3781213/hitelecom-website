@@ -1,11 +1,12 @@
 ---
 /**
- * 水浸传感器页 · 多语言注册表（2026-10-16 V103 五语翻译包；V104 中文页，Kimi 翻译集成）
+ * 水浸传感器页 · 多语言注册表（2026-10-16 V103 五语翻译包，Kimi 审核集成）
  * 同 URL 结构上线：/{lang}/product/water-leakage-sensor（slug 不变）。
- * 用法：EN 路由省略 locale（默认 en）；其余语言 locale="zh|es|de|ja|fr|ru"。
+ * 用法：EN 路由省略 locale（默认 en）；其余语言 locale="es|de|ja|fr|ru"。
+ * zh 译稿已备（water-leak-content-zh.json / WL_UI.zh），按客户要求暂缓发布（V105）。
  * 数据：src/data/water-leak-content(-{lang}).json；词典：dicts.mjs；
  * 样式：water-leak.css（.ht-water-leak 作用域）。
- * hreflang 闭环全部已发布语言（zh/en/es/de/ja/fr/ru）。
+ * hreflang 仅闭环已发布语言（en/es/de/ja/fr/ru）；语言菜单 zh 项回落中文产品目录。
  * Organization/WebSite 实体图由 BaseLayout 全局输出（includeOrganization={false}）。
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -19,7 +20,6 @@ import contentDe from '../../data/water-leak-content-de.json';
 import contentJa from '../../data/water-leak-content-ja.json';
 import contentFr from '../../data/water-leak-content-fr.json';
 import contentRu from '../../data/water-leak-content-ru.json';
-import contentZh from '../../data/water-leak-content-zh.json';
 import '../../styles/water-leak.css';
 
 const REGISTRY = {
@@ -29,9 +29,8 @@ const REGISTRY = {
   ja: { content: contentJa, prefix: '/ja' },
   fr: { content: contentFr, prefix: '/fr' },
   ru: { content: contentRu, prefix: '/ru' },
-  zh: { content: contentZh, prefix: '/zh' },
 };
-const PUBLISHED = ['en', 'es', 'de', 'ja', 'fr', 'ru', 'zh'];
+const PUBLISHED = ['en', 'es', 'de', 'ja', 'fr', 'ru'];
 
 const { locale = 'en' } = Astro.props;
 const { content, prefix } = REGISTRY[locale] ?? REGISTRY.en;
@@ -40,9 +39,11 @@ const ui = WL_UI[locale] ?? WL_UI.en;
 const hero = await waterLeakImage('product-hero.png', true);
 const heroUrl = new URL(hero.src, Astro.site).href;
 const heroSizes = '(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px';
+// zh 译页暂缓发布：语言菜单 zh 项回落中文产品目录
+const langOverrides = { zh: '/zh/product/lists/cid/261#cate' };
 ---
 
-<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description} alternates={PUBLISHED.filter((loc) => loc !== locale)}>
+<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description} alternates={PUBLISHED.filter((loc) => loc !== locale)} langOverrides={langOverrides}>
   <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
   <StructuredData slot="head" content={content} heroUrl={heroUrl} includeOrganization={false} ui={ui} prefix={prefix} inLanguage={locale} />
   <WaterLeakPage content={content} ui={ui} prefix={prefix} />

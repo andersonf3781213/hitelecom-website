@@ -123,6 +123,8 @@ const application = document.querySelector('#application');
 const modelField = document.querySelector('#model');
 const networkField = document.querySelector('#network');
 const modelNetworks = {H200:'LoRa',H300:'4G',H500:'NB-IoT'};
+// 询价简报保留完整型号（系列 · 通信 · 具体型号），语言中立的型号命名不翻译
+const briefModelLabels = {H200:'H200 · LoRa',H300:'H300 · 4G · H300-WL002A',H500:'H500 · NB-IoT'};
 modelField?.addEventListener('change', () => {
   if (networkField) networkField.value = modelNetworks[modelField.value] || '';
 });
@@ -177,7 +179,11 @@ if (form) {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    brief.value = [t('brief.greeting'), '', t('brief.introduction'), '', ...fields.map(key=>`${label(key)}: ${String(data.get(key) || '').trim() || t('brief.fallback')}`), '', t('brief.request'), '', t('brief.thanks')].join('\n');
+    brief.value = [t('brief.greeting'), '', t('brief.introduction'), '', ...fields.map(key=>{
+      const raw = String(data.get(key) || '').trim();
+      const val = key === 'Model' ? (briefModelLabels[raw] || raw) : raw;
+      return `${label(key)}: ${val || t('brief.fallback')}`;
+    }), '', t('brief.request'), '', t('brief.thanks')].join('\n');
     updateEmail(); review.hidden = false;
     status.textContent = t('brief.readyStatus');
     brief.focus({preventScroll:true}); review.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});

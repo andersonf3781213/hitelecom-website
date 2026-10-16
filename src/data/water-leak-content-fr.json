@@ -80,9 +80,9 @@
         "symbol": "point"
       },
       {
-        "title": "Un parcours ou un périmètre étendu",
-        "text": "Pour les rangées d’équipements et les réseaux techniques, définissez la couverture nécessaire sans supposer qu’un seul point surveille toute une pièce. Si une couverture linéaire est nécessaire, demandez un dispositif de détection compatible et confirmez l’ensemble pris en charge.",
-        "project_brief": "Zone à couvrir · Longueur du parcours · Ensemble de détection pris en charge · Accès pour la maintenance",
+        "title": "Plusieurs points de collecte",
+        "text": "Pour une rangée d’équipements, reportez les points de collecte identifiés lors de la visite du site. Confirmez le nombre de dispositifs de détection ponctuelle requis et le plan d’installation.",
+        "project_brief": "Points de collecte · Plan du site · Nombre de dispositifs · Accès pour la maintenance",
         "symbol": "path"
       },
       {
@@ -118,9 +118,9 @@
     ],
     "profile_note_label": "VALIDER TOUTE LA CHAÎNE À LA MISE EN SERVICE",
     "profile_note_heading": "Testez l’événement.\nVérifiez le retour à l’état normal.",
-    "profile_note_text": "Suivez les instructions fournies pour tester une présence d’eau contrôlée, le message reçu, la notification attendue et l’état de retour à la normale. Consignez le délai mesuré de bout en bout sur le site. Si un avertissement local ou une action sur un équipement est nécessaire, intégrez son interface et son comportement au périmètre de l’étude technique et testez-les séparément.",
+    "profile_note_text": "Suivez les instructions fournies pour tester une présence d’eau contrôlée, le message reçu, la notification attendue et toute indication de retour à la normale prise en charge. Consignez le délai mesuré de bout en bout sur le site. Si un avertissement local ou une action sur un équipement est nécessaire, intégrez son interface et son comportement au périmètre de l’étude technique et testez-les séparément.",
     "platform_title": "Plateforme Hitelecom.\nIntégrez l’événement à vos procédures.",
-    "platform_text": "Définissez si les données doivent parvenir à Hitelecom Cloud ou à un système client compatible, puis confirmez le format des messages, la connexion prise en charge et les règles applicables aux événements pour la configuration fournie. Convenez des identifiants des appareils et des points de détection, des horodatages, des états d’événement et de retour à la normale, des destinataires des notifications et de la gestion éventuellement requise de l’état des communications. Les avertissements locaux et les actions sur des vannes ou des machines nécessitent une conception propre de leurs interfaces et de leur commande."
+    "platform_text": "Définissez si les données doivent parvenir à Hitelecom Cloud ou à un système client compatible, puis confirmez le format des messages, la connexion prise en charge et les règles applicables aux événements pour la configuration fournie. Convenez des identifiants des appareils et des points de détection ainsi que des destinataires des notifications ; confirmez les événements, états et rapports pris en charge dans la documentation fournie. Les avertissements locaux et les actions sur des vannes ou des machines nécessitent une conception propre de leurs interfaces et de leur commande."
   },
   "series": {
     "eyebrow": "SÉRIE ET CONFIGURATION",
@@ -180,7 +180,7 @@
       },
       {
         "label": "Dispositif de détection et couverture",
-        "value": "Définis selon la source de fuite, le cheminement de l’eau et la couverture requise ; les ensembles ponctuels ou destinés à un parcours étendu doivent être confirmés pour le projet"
+        "value": "Détection ponctuelle à l’emplacement de la sonde installée. Confirmez le nombre et la disposition des points de détection du site."
       },
       {
         "label": "Compatibilité avec le liquide",
@@ -270,9 +270,9 @@
     },
     {
       "id": "faq-point-or-path",
-      "question": "Quand choisir une détection ponctuelle et quand envisager un câble de détection ?",
+      "question": "Où la sonde ponctuelle à deux broches détecte-t-elle l’eau ?",
       "paragraphs": [
-        "La détection ponctuelle convient à un point de collecte défini, comme un bac de rétention ou un socle d’équipement. Lorsque le matériel choisi prend en charge un câble de détection, celui-ci peut couvrir un parcours ou un périmètre prévu. Communiquez la zone à couvrir et le cheminement attendu de l’eau afin de confirmer l’ensemble de détection et le câblage pris en charge pour le projet."
+        "Elle détecte l’eau qui atteint l’emplacement de la sonde installée. En présence de plusieurs points de collecte, planifiez les positions de détection autour des cheminements probables de l’eau et confirmez le nombre et la disposition des sondes ponctuelles requis. La couverture d’un parcours ou d’un périmètre se traite comme une conception de détection distincte."
       ],
       "sources": [
         "https://www.ia.omron.com/data_pdf/guide/48/leakagesensor_tg_e_1_1.pdf",
@@ -294,7 +294,7 @@
       "id": "faq-notification-commissioning",
       "question": "Comment valider les notifications à distance lors de la mise en service ?",
       "paragraphs": [
-        "Convenez de la chaîne requise entre l’élément sensible en présence d’eau, la plateforme de réception et l’équipe responsable. Suivez les instructions fournies avec l’équipement pour tester une présence d’eau contrôlée, le message et la notification reçus, l’acquittement et le retour à l’état sec. Consignez le délai de toute la chaîne dans les conditions réseau du site."
+        "Suivez les instructions fournies pour tester l’alarme d’eau, la notification reçue et toute indication de retour à la normale prise en charge. Consignez le délai de bout en bout dans les conditions réseau du site."
       ],
       "sources": [
         "https://www.automatedlogic.com/en/media/ALC-26268%20Water%20Leak%20Detector_tcm702-230241.pdf"
@@ -616,7 +616,7 @@
       "id": "ro-and-softening-skids",
       "group": "utilities",
       "title": "Systèmes d’osmose inverse et d’adoucissement d’eau",
-      "description": "Les unités d’osmose inverse et d’adoucissement sur châssis comportent des raccordements ouverts lors du remplacement des filtres, des interventions sur les membranes ou de la maintenance des vannes. Un point de détection défini peut distinguer l’eau atteignant un bac ou une zone au sol non prévus à cet effet de l’eau suivant l’évacuation normale. Pour un perméat de faible conductivité, confirmez la méthode de détection à l’aide d’un échantillon représentatif, sans supposer que toutes les configurations de détection d’eau réagissent de manière identique.",
+      "description": "Les unités d’osmose inverse et d’adoucissement sur châssis comportent des raccordements ouverts lors du remplacement des filtres, des interventions sur les membranes ou de la maintenance des vannes. Placez la sonde en dehors de l’évacuation normale pour détecter l’eau atteignant un bac ou une zone au sol non prévus à cet effet. Pour un perméat de faible conductivité, confirmez la méthode de détection à l’aide d’un échantillon représentatif, sans supposer que toutes les configurations de détection d’eau réagissent de manière identique.",
       "measurement": "Présence d’eau à un point de collecte convenu d’une unité de traitement sur châssis, avec une méthode de détection compatible.",
       "monitoringPoint": "Corps de filtres externes, zones de raccordement des membranes et bacs de collecte à la base du châssis.",
       "installation": "Convenez des emplacements de détection en tenant compte du parcours normal d’évacuation et des dégagements de maintenance. Confirmez la conductivité de l’eau, la température et les conditions de nettoyage attendues, puis validez la réponse avec des échantillons issus du circuit réellement surveillé.",

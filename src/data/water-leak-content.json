@@ -80,9 +80,9 @@
         "symbol": "point"
       },
       {
-        "title": "An extended route or perimeter",
-        "text": "For equipment rows and service runs, define the coverage needed rather than assuming one point observes an entire room. If line coverage is required, ask for a compatible sensing arrangement and confirm the supported assembly.",
-        "project_brief": "Coverage layout · Route length · Supported sensing assembly · Service access",
+        "title": "Multiple collection points",
+        "text": "For an equipment row, map the collection points identified by the site survey. Confirm the required number of point-sensing devices and the installation layout.",
+        "project_brief": "Collection points · Site layout · Number of devices · Service access",
         "symbol": "path"
       },
       {
@@ -118,9 +118,9 @@
     ],
     "profile_note_label": "COMMISSION THE COMPLETE PATH",
     "profile_note_heading": "Test the event.\nCheck the recovery.",
-    "profile_note_text": "Use the supplied instructions to test a controlled water event, the received message, the intended notification and the recovery state. Record the measured end-to-end timing for the site. If a local warning or equipment action is required, include its interface and behaviour in the engineering scope and test it separately.",
+    "profile_note_text": "Use the supplied instructions to test a controlled water event, the received message, the intended notification and any supported recovery indication. Record the measured end-to-end timing for the site. If a local warning or equipment action is required, include its interface and behaviour in the engineering scope and test it separately.",
     "platform_title": "Hitelecom platform.\nConnect the event to your workflow.",
-    "platform_text": "Define whether the receiving destination is Hitelecom Cloud or a compatible customer system, then confirm the message format, supported connection and event rules for the supplied configuration. Agree device and sensing-point identifiers, timestamps, event and recovery states, notification recipients and any required communications-health handling. Local warning, valve or machine actions need their own interface and control design."
+    "platform_text": "Define whether the receiving destination is Hitelecom Cloud or a compatible customer system, then confirm the message format, supported connection and event rules for the supplied configuration. Agree device and sensing-point identifiers and notification recipients; confirm the supported event, status and reporting behavior from the supplied documentation. Local warning, valve or machine actions need their own interface and control design."
   },
   "series": {
     "eyebrow": "SERIES & CONFIGURATION",
@@ -180,7 +180,7 @@
       },
       {
         "label": "Sensing arrangement & coverage",
-        "value": "Defined around the leak source, water path and coverage requirement; point or extended-route assemblies require project confirmation"
+        "value": "Point detection at the installed probe location. Confirm the number and arrangement of sensing points for the site."
       },
       {
         "label": "Liquid suitability",
@@ -270,9 +270,9 @@
     },
     {
       "id": "faq-point-or-path",
-      "question": "When is point sensing suitable, and when is a detection cable considered?",
+      "question": "Where does the two-pin point probe detect water?",
       "paragraphs": [
-        "Point sensing suits a defined collection point such as a drip tray or equipment base. Where the selected hardware supports a sensing cable, it can provide coverage along a planned route or perimeter. Share the coverage area and expected water path so the supported sensing assembly and wiring arrangement can be confirmed for the project."
+        "It detects water reaching the installed probe location. For several collection points, plan the sensing positions around the likely water paths and confirm the required number and arrangement of point probes. Discuss route or perimeter coverage as a separate sensing design."
       ],
       "sources": [
         "https://www.ia.omron.com/data_pdf/guide/48/leakagesensor_tg_e_1_1.pdf",
@@ -294,7 +294,7 @@
       "id": "faq-notification-commissioning",
       "question": "How should remote notifications be commissioned?",
       "paragraphs": [
-        "Agree the required path from a wet sensing element to the receiving platform and the responsible team. Test a controlled wet event, the received message and notification, acknowledgement, and dry recovery using the supplied equipment instructions. Record the timing of the complete path under the site network conditions."
+        "Test the water alarm, received notification and any supported recovery indication according to the supplied instructions. Record the end-to-end timing under the site's network conditions."
       ],
       "sources": [
         "https://www.automatedlogic.com/en/media/ALC-26268%20Water%20Leak%20Detector_tcm702-230241.pdf"
@@ -616,7 +616,7 @@
       "id": "ro-and-softening-skids",
       "group": "utilities",
       "title": "RO and water-softening systems",
-      "description": "Reverse-osmosis and softening skids contain service connections that are opened during filter replacement, membrane work or valve maintenance. A defined detection point can distinguish water reaching an unintended tray or floor area from water following the normal drain path. For low-conductivity permeate, confirm the sensing method with a representative sample rather than assuming every water-detection configuration performs identically.",
+      "description": "Reverse-osmosis and softening skids contain service connections that are opened during filter replacement, membrane work or valve maintenance. Place the probe outside the normal drain path to detect water reaching an unintended tray or floor area. For low-conductivity permeate, confirm the sensing method with a representative sample rather than assuming every water-detection configuration performs identically.",
       "measurement": "Water presence at an agreed treatment-skid collection point, using a compatible sensing method.",
       "monitoringPoint": "External filter housings, membrane connection bays and skid-base collection trays.",
       "installation": "Agree detection positions around the normal drain route and service clearances. Confirm the expected water conductivity, temperature and cleaning conditions, then validate response with samples from the actual monitored circuit.",

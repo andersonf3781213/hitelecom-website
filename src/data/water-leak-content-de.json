@@ -36,7 +36,7 @@
   },
   "features": [
     {
-      "title": "Überwachung auf vorhandenes Wasser",
+      "title": "Wassererkennung an definierten Stellen",
       "text": "Erkennen Sie, wenn Wasser ausgewählte Erfassungsstellen in der Nähe von Anlagen, Versorgungsleitungen und gefährdeten Betriebsmitteln erreicht."
     },
     {
@@ -80,9 +80,9 @@
         "symbol": "point"
       },
       {
-        "title": "Eine längere Strecke oder ein Randbereich",
-        "text": "Definieren Sie bei Anlagenreihen und Versorgungstrassen die benötigte Abdeckung. Ein einzelner Punkt erfasst nicht automatisch einen ganzen Raum. Wenn eine linienförmige Überwachung erforderlich ist, fragen Sie nach einer kompatiblen Sensoranordnung und lassen Sie die unterstützte Sensoreinheit bestätigen.",
-        "project_brief": "Abdeckungsplan · Streckenlänge · Unterstützte Sensoreinheit · Wartungszugang",
+        "title": "Mehrere Sammelpunkte",
+        "text": "Bilden Sie bei einer Anlagenreihe die bei der Begehung ermittelten Sammelpunkte ab. Bestätigen Sie die erforderliche Anzahl punktueller Erfassungsgeräte und die Installationsanordnung.",
+        "project_brief": "Sammelpunkte · Standortplan · Geräteanzahl · Wartungszugang",
         "symbol": "path"
       },
       {
@@ -118,9 +118,9 @@
     ],
     "profile_note_label": "DEN VOLLSTÄNDIGEN WEG IN BETRIEB NEHMEN",
     "profile_note_heading": "Das Ereignis testen.\nDie Rückkehr in den Normalzustand prüfen.",
-    "profile_note_text": "Prüfen Sie nach den mitgelieferten Anweisungen ein kontrolliertes Wasserereignis, die empfangene Meldung, die vorgesehene Benachrichtigung und den Zustand nach der Rückkehr zum Normalbetrieb. Dokumentieren Sie die am Standort gemessene Gesamtlaufzeit. Wenn eine örtliche Warnung oder eine Anlagenreaktion erforderlich ist, nehmen Sie die zugehörige Schnittstelle und das Verhalten in den technischen Planungsumfang auf und prüfen Sie diese gesondert.",
+    "profile_note_text": "Prüfen Sie nach den mitgelieferten Anweisungen ein kontrolliertes Wasserereignis, die empfangene Meldung, die vorgesehene Benachrichtigung und eine etwaig unterstützte Rückmeldung der Wiederherstellung. Dokumentieren Sie die am Standort gemessene Gesamtlaufzeit. Wenn eine örtliche Warnung oder eine Anlagenreaktion erforderlich ist, nehmen Sie die zugehörige Schnittstelle und das Verhalten in den technischen Planungsumfang auf und prüfen Sie diese gesondert.",
     "platform_title": "Hitelecom Plattform.\nEreignisse in Ihren Arbeitsablauf einbinden.",
-    "platform_text": "Legen Sie fest, ob Hitelecom Cloud oder ein kompatibles Kundensystem die Meldungen empfängt. Bestätigen Sie anschließend Meldungsformat, unterstützte Verbindung und Ereignisregeln für die gelieferte Konfiguration. Stimmen Sie Geräte- und Erfassungsstellenkennungen, Zeitstempel, Ereigniszustände und Zustände nach der Rückkehr zum Normalbetrieb, Benachrichtigungsempfänger sowie gegebenenfalls die Überwachung des Kommunikationsstatus ab. Örtliche Warnungen sowie Ventil- oder Maschinenaktionen erfordern eine eigene Schnittstellen- und Steuerungsplanung."
+    "platform_text": "Legen Sie fest, ob Hitelecom Cloud oder ein kompatibles Kundensystem die Meldungen empfängt. Bestätigen Sie anschließend Meldungsformat, unterstützte Verbindung und Ereignisregeln für die gelieferte Konfiguration. Stimmen Sie Geräte- und Erfassungsstellenkennungen sowie die Benachrichtigungsempfänger ab; bestätigen Sie die unterstützten Ereignisse, Zustände und Meldungen anhand der mitgelieferten Dokumentation. Örtliche Warnungen sowie Ventil- oder Maschinenaktionen erfordern eine eigene Schnittstellen- und Steuerungsplanung."
   },
   "series": {
     "eyebrow": "SERIE & KONFIGURATION",
@@ -180,7 +180,7 @@
       },
       {
         "label": "Sensoranordnung & Abdeckung",
-        "value": "Anhand von Leckagequelle, Fließweg und Abdeckungsbedarf definiert; Sensoreinheiten für Punkt- oder Streckenüberwachung müssen projektspezifisch bestätigt werden"
+        "value": "Punkterfassung an der installierten Sondenposition. Bestätigen Sie Anzahl und Anordnung der Erfassungsstellen am Standort."
       },
       {
         "label": "Flüssigkeitseignung",
@@ -270,9 +270,9 @@
     },
     {
       "id": "faq-point-or-path",
-      "question": "Wann ist eine punktuelle Erfassung geeignet und wann kommt ein Sensorkabel infrage?",
+      "question": "Wo erfasst die Zweistift-Punktsonde Wasser?",
       "paragraphs": [
-        "Eine punktuelle Erfassung eignet sich für einen definierten Sammelpunkt, etwa eine Tropfwanne oder einen Anlagensockel. Wenn die ausgewählte Hardware ein Sensorkabel unterstützt, kann dieses eine geplante Strecke oder einen Randbereich überwachen. Teilen Sie uns die abzudeckende Fläche und den erwarteten Fließweg mit, damit die unterstützte Sensoreinheit und die Verdrahtung für das Projekt bestätigt werden können."
+        "Sie erfasst Wasser, das die installierte Sondenposition erreicht. Bei mehreren Sammelpunkten planen Sie die Erfassungsstellen entlang der wahrscheinlichen Fließwege und bestätigen Anzahl und Anordnung der Punktsonden. Die Überwachung einer Strecke oder eines Randbereichs besprechen Sie als separate Sensorauslegung."
       ],
       "sources": [
         "https://www.ia.omron.com/data_pdf/guide/48/leakagesensor_tg_e_1_1.pdf",
@@ -294,7 +294,7 @@
       "id": "faq-notification-commissioning",
       "question": "Wie werden Fernbenachrichtigungen bei der Inbetriebnahme geprüft?",
       "paragraphs": [
-        "Vereinbaren Sie den erforderlichen Weg vom benetzten Sensorelement zur empfangenden Plattform und zum zuständigen Team. Prüfen Sie nach den mitgelieferten Geräteanweisungen eine kontrollierte Benetzung, die empfangene Meldung und Benachrichtigung, die Quittierung sowie die Rückkehr in den trockenen Zustand. Dokumentieren Sie die Laufzeit des vollständigen Wegs unter den Netzbedingungen am Standort."
+        "Prüfen Sie nach den mitgelieferten Anweisungen den Wasseralarm, die empfangene Benachrichtigung und eine etwaig unterstützte Rückmeldung der Wiederherstellung. Dokumentieren Sie die Gesamtlaufzeit unter den Netzbedingungen am Standort."
       ],
       "sources": [
         "https://www.automatedlogic.com/en/media/ALC-26268%20Water%20Leak%20Detector_tcm702-230241.pdf"
@@ -616,7 +616,7 @@
       "id": "ro-and-softening-skids",
       "group": "utilities",
       "title": "Umkehrosmose- und Wasserenthärtungsanlagen",
-      "description": "Umkehrosmose- und Enthärtungsanlagen besitzen Versorgungsanschlüsse, die beim Filterwechsel, bei Membranarbeiten oder bei der Ventilwartung geöffnet werden. Ein definierter Erfassungspunkt kann Wasser in einem nicht vorgesehenen Wannen- oder Bodenbereich von Wasser unterscheiden, das dem normalen Ablaufweg folgt. Bestätigen Sie bei Permeat mit geringer Leitfähigkeit die Eignung des Erfassungsverfahrens anhand einer repräsentativen Probe; nicht jede Konfiguration zur Wassererkennung verhält sich identisch.",
+      "description": "Umkehrosmose- und Enthärtungsanlagen besitzen Versorgungsanschlüsse, die beim Filterwechsel, bei Membranarbeiten oder bei der Ventilwartung geöffnet werden. Platzieren Sie die Sonde außerhalb des normalen Ablaufwegs, um Wasser zu erfassen, das einen nicht vorgesehenen Wannen- oder Bodenbereich erreicht. Bestätigen Sie bei Permeat mit geringer Leitfähigkeit die Eignung des Erfassungsverfahrens anhand einer repräsentativen Probe; nicht jede Konfiguration zur Wassererkennung verhält sich identisch.",
       "measurement": "Wasser an einem vereinbarten Sammelpunkt der Aufbereitungsanlage, erfasst mit einem kompatiblen Verfahren.",
       "monitoringPoint": "Externe Filtergehäuse, Membrananschlussbereiche und Auffangwannen am Aggregatsockel.",
       "installation": "Stimmen Sie Erfassungsstellen unter Berücksichtigung des normalen Ablaufwegs und der Wartungsfreiräume ab. Bestätigen Sie die erwartete Leitfähigkeit und Temperatur des Wassers sowie die Reinigungsbedingungen. Prüfen Sie anschließend das Ansprechverhalten mit Proben aus dem tatsächlich überwachten Kreislauf.",

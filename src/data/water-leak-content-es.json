@@ -80,9 +80,9 @@
         "symbol": "point"
       },
       {
-        "title": "Un recorrido o perímetro más amplio",
-        "text": "Para filas de equipos y trazados de instalaciones, defina la cobertura necesaria sin dar por hecho que un único punto supervisa toda la sala. Si necesita cobertura lineal, solicite una configuración de detección compatible y confirme el conjunto admitido.",
-        "project_brief": "Distribución de la cobertura · Longitud del recorrido · Conjunto sensor admitido · Acceso para mantenimiento",
+        "title": "Varios puntos de acumulación",
+        "text": "Para una fila de equipos, planifique los puntos de acumulación identificados en la inspección del sitio. Confirme el número necesario de dispositivos de detección puntual y la distribución de la instalación.",
+        "project_brief": "Puntos de acumulación · Plano del sitio · Número de dispositivos · Acceso para mantenimiento",
         "symbol": "path"
       },
       {
@@ -118,9 +118,9 @@
     ],
     "profile_note_label": "VERIFIQUE TODO EL PROCESO DURANTE LA PUESTA EN SERVICIO",
     "profile_note_heading": "Pruebe el evento.\nCompruebe la recuperación.",
-    "profile_note_text": "Siga las instrucciones suministradas para probar un evento controlado con agua, el mensaje recibido, la notificación prevista y el estado de recuperación. Registre los tiempos medidos de extremo a extremo en las instalaciones. Si se necesita un aviso local o una actuación sobre equipos, incluya su interfaz y comportamiento en el alcance de ingeniería y pruébelos por separado.",
+    "profile_note_text": "Siga las instrucciones suministradas para probar un evento controlado con agua, el mensaje recibido, la notificación prevista y cualquier indicación de recuperación admitida. Registre los tiempos medidos de extremo a extremo en las instalaciones. Si se necesita un aviso local o una actuación sobre equipos, incluya su interfaz y comportamiento en el alcance de ingeniería y pruébelos por separado.",
     "platform_title": "Plataforma Hitelecom.\nIntegre el evento en su flujo de trabajo.",
-    "platform_text": "Defina si el destino receptor será Hitelecom Cloud o un sistema compatible del cliente. A continuación, confirme el formato de los mensajes, la conexión admitida y las reglas de eventos para la configuración suministrada. Acuerde los identificadores del dispositivo y de los puntos de detección, las marcas de tiempo, los estados de evento y recuperación, los destinatarios de las notificaciones y cualquier gestión necesaria del estado de las comunicaciones. Los avisos locales y las actuaciones sobre válvulas o máquinas requieren su propio diseño de interfaz y control."
+    "platform_text": "Defina si el destino receptor será Hitelecom Cloud o un sistema compatible del cliente. A continuación, confirme el formato de los mensajes, la conexión admitida y las reglas de eventos para la configuración suministrada. Acuerde los identificadores del dispositivo y de los puntos de detección y los destinatarios de las notificaciones; confirme los eventos, estados e informes admitidos según la documentación suministrada. Los avisos locales y las actuaciones sobre válvulas o máquinas requieren su propio diseño de interfaz y control."
   },
   "series": {
     "eyebrow": "SERIE Y CONFIGURACIÓN",
@@ -180,7 +180,7 @@
       },
       {
         "label": "Configuración de detección y cobertura",
-        "value": "Definidas según el origen de la fuga, el recorrido del agua y la cobertura necesaria; los conjuntos para detección puntual o a lo largo de un recorrido requieren confirmación para el proyecto"
+        "value": "Detección puntual en la posición de la sonda instalada. Confirme el número y la distribución de los puntos de detección del sitio."
       },
       {
         "label": "Compatibilidad con el líquido",
@@ -270,9 +270,9 @@
     },
     {
       "id": "faq-point-or-path",
-      "question": "¿Cuándo conviene la detección puntual y cuándo se considera un cable de detección?",
+      "question": "¿Dónde detecta agua la sonda puntual de dos pines?",
       "paragraphs": [
-        "La detección puntual es adecuada para un lugar de acumulación definido, como una bandeja de goteo o la base de un equipo. Cuando el hardware seleccionado admite un cable de detección, este puede cubrir un recorrido o perímetro planificado. Facilite el área que debe cubrirse y el recorrido previsto del agua para confirmar el conjunto sensor admitido y la configuración del cableado para el proyecto."
+        "Detecta el agua que llega a la posición de la sonda instalada. Si hay varios puntos de acumulación, planifique las posiciones de detección en torno a los recorridos probables del agua y confirme el número y la distribución necesarios de sondas puntuales. La cobertura de recorridos o perímetros se plantea como un diseño de detección independiente."
       ],
       "sources": [
         "https://www.ia.omron.com/data_pdf/guide/48/leakagesensor_tg_e_1_1.pdf",
@@ -294,7 +294,7 @@
       "id": "faq-notification-commissioning",
       "question": "¿Cómo deben verificarse las notificaciones remotas durante la puesta en servicio?",
       "paragraphs": [
-        "Acuerde todo el recorrido necesario desde que se moja el elemento sensor hasta que el evento llega a la plataforma receptora y al equipo responsable. Siga las instrucciones del equipo suministrado para probar un evento controlado con agua, el mensaje y la notificación recibidos, la confirmación de recepción y la recuperación al estado seco. Registre los tiempos de todo el proceso con las condiciones de red de las instalaciones."
+        "Siga las instrucciones suministradas para probar la alarma de agua, la notificación recibida y cualquier indicación de recuperación admitida. Registre el tiempo de extremo a extremo en las condiciones de red del sitio."
       ],
       "sources": [
         "https://www.automatedlogic.com/en/media/ALC-26268%20Water%20Leak%20Detector_tcm702-230241.pdf"
@@ -616,7 +616,7 @@
       "id": "ro-and-softening-skids",
       "group": "utilities",
       "title": "Sistemas de ósmosis inversa y descalcificación",
-      "description": "Los conjuntos de ósmosis inversa y descalcificación sobre bancada contienen conexiones de servicio que se abren al sustituir filtros, intervenir en membranas o mantener válvulas. Un punto de detección definido permite distinguir el agua que llega a una bandeja o zona del suelo no prevista de la que sigue la ruta normal de drenaje. Para permeado de baja conductividad, confirme el método de detección con una muestra representativa, sin suponer que todas las configuraciones de detección de agua funcionan del mismo modo.",
+      "description": "Los conjuntos de ósmosis inversa y descalcificación sobre bancada contienen conexiones de servicio que se abren al sustituir filtros, intervenir en membranas o mantener válvulas. Coloque la sonda fuera de la ruta normal de drenaje para detectar el agua que llegue a una bandeja o zona del suelo no prevista. Para permeado de baja conductividad, confirme el método de detección con una muestra representativa, sin suponer que todas las configuraciones de detección de agua funcionan del mismo modo.",
       "measurement": "Presencia de agua en un punto de recogida acordado del conjunto de tratamiento, mediante un método de detección compatible.",
       "monitoringPoint": "Carcasas externas de filtros, zonas de conexiones de membranas y bandejas de recogida en la base de la bancada.",
       "installation": "Acuerde posiciones de detección teniendo en cuenta la ruta normal de drenaje y los espacios de servicio. Confirme la conductividad del agua, la temperatura y las condiciones de limpieza previstas; después, valide la respuesta con muestras del circuito real supervisado.",
