@@ -6455,6 +6455,12 @@ const productContentBase ={
           "conn": "NB-IoT | 4G LTE | LoRa"
         },
         {
+          "id": "water-leakage-sensor",
+          "img": "product/products/307.png",
+          "name": "水浸传感器",
+          "conn": "NB-IoT | 4G LTE | LoRa"
+        },
+        {
           "id": "274",
           "img": "product/products/274.png",
           "name": "压力传感器",
