@@ -305,7 +305,7 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
         if (!fetchImpl) throw new Error('当前环境无法连接保存接口。');
         const headers = { 'Content-Type': 'application/json' };
         if (mode === 'local') { const configResponse = await fetchImpl('/api/config', { cache: 'no-store', credentials: 'same-origin' }); const config = await readResponse(configResponse); if (!config.csrfToken) throw new Error('无法获取本地保存凭据，请刷新后重试。'); headers['X-Catalog-CSRF'] = config.csrfToken; }
-        const response = await fetchImpl('/api/catalog', { method: 'PUT', headers, credentials: 'same-origin', body: JSON.stringify({ catalog: snapshot, version: state.version }) });
+        const response = await apiFetch('/api/catalog', { method: 'PUT', headers, body: JSON.stringify({ catalog: snapshot, version: state.version }) });
         const data = await readResponse(response);
         if (!data.saved || !data.version) throw new Error('保存接口没有确认成功，编辑内容已保留。');
         state.version = data.version; state.backend = data.mode || state.backend;
@@ -315,6 +315,29 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
       state.protectedCatalog = protectedNext; state.protectionHistory = historyNext; state.dirty = JSON.stringify(state.catalog) !== JSON.stringify(snapshot);
     } catch (error) { alert(`保存失败：${messageOf(error)}\n编辑内容已保留，可重试或导出 JSON 备份。`); state.dirty = true; state.lastSaved = ''; }
     finally { state.saving = false; render(); }
+  }
+  // 管理密码模式（V110）：口令仅保存在本次浏览会话（sessionStorage），
+  // 随请求以 Bearer 头发送；API 返回 401 且 mode=password 时提示输入并重试一次。
+  // Access 模式下浏览器在进入页面前已完成登录，不会触发此分支。
+  const TOKEN_KEY = 'catalog-admin-token';
+  const getToken = () => { try { return globalThis.sessionStorage?.getItem(TOKEN_KEY) || ''; } catch { return ''; } };
+  const setToken = (value) => { try { globalThis.sessionStorage?.setItem(TOKEN_KEY, value); } catch {} };
+  async function apiFetch(url, options = {}, retried = false) {
+    const headers = { ...(options.headers || {}) };
+    if (getToken()) headers['Authorization'] = `Bearer ${getToken()}`;
+    const response = await fetchImpl(url, { ...options, headers, credentials: 'same-origin' });
+    if (response.status === 401 && !retried && mode === 'api') {
+      let wantsPassword = false;
+      try { const data = await response.clone().json(); wantsPassword = data?.mode === 'password'; } catch {}
+      if (wantsPassword) {
+        const password = globalThis.prompt?.('请输入管理密码（仅本次浏览会话有效）');
+        if (password) {
+          setToken(password);
+          return apiFetch(url, options, true);
+        }
+      }
+    }
+    return response;
   }
   async function readResponse(response) {
     let data;
@@ -424,11 +447,12 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
   const ready = mode === 'demo' ? Promise.resolve() : (async () => {
     try {
       if (!fetchImpl) throw new Error('当前环境无法连接目录接口。');
-      const response = await fetchImpl('/api/catalog', { cache: 'no-store', credentials: 'same-origin' }); const data = await readResponse(response);
+      const response = await apiFetch('/api/catalog', { cache: 'no-store' }); const data = await readResponse(response);
       const validation = validateCatalog(data.catalog); if (!validation.valid || !data.version) throw new Error('服务器目录或版本无效，请检查目录数据。');
       // Do not replace edits made while the initial read was in flight.
       const previousSeed = state.baseline;
       state.baseline = clone(data.catalog); state.protectedCatalog = clone(data.catalog); state.protectionHistory = []; state.version = data.version; state.backend = data.mode || state.backend; state.ready = true;
+      if (data.auth === 'password') { const badge = q('[data-mode-label]'); if (badge) badge.textContent = 'GitHub 保存模式 · 密码登录'; }
       if (!state.dirty) state.catalog = clone(data.catalog);
       else { state.catalog = preserveProtectedFields(state.catalog, data.catalog); state.dirty = JSON.stringify(state.catalog) !== JSON.stringify(state.baseline); if (JSON.stringify(previousSeed) !== JSON.stringify(data.catalog)) alert('已读取服务器最新版本。当前编辑已保留，请核对后保存。'); }
       render();
