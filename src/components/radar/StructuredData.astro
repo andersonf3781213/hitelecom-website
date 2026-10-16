@@ -38,7 +38,7 @@ const graph=locale==='zh'?[
     property(S('Beam angle'),S('<20° published model reference')),
     property(S('Enclosure protection'),S('IP68')),
     property(S('Operating temperature'),S('−30°C to +75°C')),
-    property(S('Battery-life reference'),S('More than 10 years at two-hour reporting; actual service life depends on configuration and operating conditions'))
+    property(S('Battery-life reference'),S('More than 10 years with scheduled reporting every four hours; actual service life depends on configuration and operating conditions'))
   ]},
   {'@type':'FAQPage','@id':url+'#faq',inLanguage:locale,mainEntity:content.faqs.map(f=>({'@type':'Question',name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
 ];

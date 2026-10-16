@@ -136,7 +136,7 @@
         "text": "Examinez la distance, le niveau calculé et les tendances dans la plateforme connectée. Définissez les seuils, les destinataires et l’action suivante pour votre équipe d’exploitation."
       }
     ],
-    "battery_text": "Le tableau des spécifications du H310-MW012 indique une batterie de 19 000 mAh et une durée de service de référence de plus de 10 ans avec une transmission toutes les deux heures. La durée de service réelle dépend de la configuration d’alimentation fournie, de l’activité d’échantillonnage, des transmissions, des conditions du réseau et de la température. Pour les applications à évolution plus rapide, précisez les délais de mise à jour et d’intervention nécessaires.",
+    "battery_text": "La fiche technique actuelle de la série H indique une durée de service de référence de plus de 10 ans avec une transmission programmée toutes les 4 heures. La batterie de 19 000 mAh est la configuration de référence du H300. La durée de service réelle dépend de la batterie fournie, de l’activité de mesure, des transmissions, des conditions du réseau et de la température. Pour les applications à évolution plus rapide, précisez les délais de mise à jour et d’intervention nécessaires.",
     "platform_text": "Choisissez la destination de vos mesures de distance et des niveaux calculés. Les configurations cellulaires peuvent utiliser la connexion MQTT convenue ; les configurations LoRa utilisent le récepteur radio ou la passerelle sélectionnés et l’intégration à la plateforme."
   },
   "series": {
@@ -213,7 +213,7 @@
       },
       {
         "label": "Référence de conception pour l’autonomie de la batterie",
-        "value": "Plus de 10 ans avec une transmission toutes les deux heures ; la durée de service dépend de la configuration et des conditions d’utilisation"
+        "value": "Plus de 10 ans avec une transmission programmée toutes les 4 heures ; la durée de service dépend de la configuration et des conditions d’utilisation"
       },
       {
         "label": "Température de fonctionnement",
@@ -370,7 +370,7 @@
       "id": "wireless-and-power",
       "question": "Comment configurer la connectivité sans fil et la transmission ?",
       "paragraphs": [
-        "La série H propose des options 4G, NB-IoT et LoRa selon la configuration. Adaptez le réseau à la couverture du site et à la plateforme de destination, puis définissez l’échantillonnage, les transmissions périodiques et les exigences d’alerte. La fiche technique du H310-MW012 indique plus de 10 ans avec une transmission toutes les deux heures ; la durée de service réelle dépend de la configuration d’alimentation fournie, de l’activité de mesure, des conditions du réseau et de la température."
+        "La série H propose le H200 avec LoRa, le H300 avec 4G LTE et le H500 avec NB-IoT selon la configuration. Adaptez le réseau à la couverture du site et à la plateforme de destination, puis définissez l’échantillonnage, la transmission programmée et les exigences d’alerte. La fiche technique actuelle de la série H indique une durée de service de référence de plus de 10 ans avec une transmission programmée toutes les 4 heures ; la batterie de 19 000 mAh est la configuration de référence du H300. La durée de service réelle dépend de la batterie fournie, de l’activité de mesure, des transmissions, des conditions du réseau et de la température."
       ],
       "evidenceIds": [
         "HT-PAGE",

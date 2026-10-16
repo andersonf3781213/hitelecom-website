@@ -136,7 +136,7 @@
         "text": "Prüfen Sie Abstand, berechneten Füllstand und Trends in der angebundenen Plattform. Definieren Sie Schwellenwerte, Empfänger und die nächsten Maßnahmen für Ihr Betriebsteam."
       }
     ],
-    "battery_text": "Die Spezifikationstabelle des H310-MW012 nennt eine Batterie mit 19000 mAh und einen Laufzeit-Richtwert von mehr als 10 Jahren bei Datenübertragung alle zwei Stunden. Die tatsächliche Laufzeit hängt von der gelieferten Stromversorgungskonfiguration, der Messaktivität, den Übertragungen, den Netzwerkbedingungen und der Temperatur ab. Geben Sie bei Anwendungen mit schnelleren Änderungen die erforderlichen Aktualisierungs- und Reaktionszeiten an.",
+    "battery_text": "Das aktuelle Datenblatt der H-Serie nennt einen Laufzeit-Richtwert von mehr als 10 Jahren bei planmäßiger Datenübertragung alle vier Stunden. Der 19.000-mAh-Akku ist die Referenzkonfiguration des H300. Die tatsächliche Laufzeit hängt von der gelieferten Batterie, der Messaktivität, den Übertragungen, den Netzbedingungen und der Temperatur ab. Geben Sie bei Anwendungen mit schnelleren Änderungen die erforderlichen Aktualisierungs- und Reaktionszeiten an.",
     "platform_text": "Wählen Sie das Ziel für Ihre Abstandsmesswerte und berechneten Füllstände. Mobilfunkkonfigurationen können die vereinbarte MQTT-Verbindung nutzen; LoRa-Konfigurationen verwenden den ausgewählten Funkempfänger oder das Gateway sowie die Plattformintegration."
   },
   "series": {
@@ -213,7 +213,7 @@
       },
       {
         "label": "Auslegungsrichtwert für die Batterielaufzeit",
-        "value": "Mehr als 10 Jahre bei Datenübertragung alle zwei Stunden; die Laufzeit hängt von Konfiguration und Betriebsbedingungen ab"
+        "value": "Mehr als 10 Jahre bei planmäßiger Datenübertragung alle vier Stunden; die Laufzeit hängt von Konfiguration und Betriebsbedingungen ab"
       },
       {
         "label": "Betriebstemperatur",
@@ -370,7 +370,7 @@
       "id": "wireless-and-power",
       "question": "Wie werden Funkanbindung und Datenübertragung konfiguriert?",
       "paragraphs": [
-        "Die H-Serie bietet je nach Konfiguration 4G-, NB-IoT- und LoRa-Optionen. Stimmen Sie das Netzwerk auf die Abdeckung am Standort und die Zielplattform ab und definieren Sie anschließend Messintervalle, planmäßige Übertragungen und Alarmanforderungen. Das Datenblatt des H310-MW012 nennt mehr als 10 Jahre bei Datenübertragung alle zwei Stunden. Die tatsächliche Laufzeit hängt von der gelieferten Stromversorgungskonfiguration, der Messaktivität, den Netzwerkbedingungen und der Temperatur ab."
+        "Die H-Serie bietet je nach Konfiguration H200 mit LoRa, H300 mit 4G LTE und H500 mit NB-IoT. Stimmen Sie das Netzwerk auf die Abdeckung am Standort und die Zielplattform ab und definieren Sie anschließend Messintervalle, planmäßige Datenübertragung und Alarmanforderungen. Das aktuelle Datenblatt der H-Serie nennt einen Laufzeit-Richtwert von mehr als 10 Jahren bei planmäßiger Datenübertragung alle vier Stunden; der 19.000-mAh-Akku ist die Referenzkonfiguration des H300. Die tatsächliche Laufzeit hängt von der gelieferten Batterie, der Messaktivität, den Übertragungen, den Netzbedingungen und der Temperatur ab."
       ],
       "evidenceIds": [
         "HT-PAGE",

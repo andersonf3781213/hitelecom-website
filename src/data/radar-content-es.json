@@ -136,7 +136,7 @@
         "text": "Revise la distancia, el nivel derivado y las tendencias en la plataforma conectada. Defina los umbrales, los destinatarios y la siguiente actuación de su equipo de operaciones."
       }
     ],
-    "battery_text": "La tabla de especificaciones del H310-MW012 indica una batería de 19 000 mAh y una vida útil de referencia superior a 10 años con transmisión cada dos horas. La vida útil real depende de la configuración de alimentación suministrada, la actividad de muestreo, las transmisiones, las condiciones de la red y la temperatura. Especifique las aplicaciones que cambian con mayor rapidez junto con sus tiempos de actualización y respuesta requeridos.",
+    "battery_text": "La ficha técnica actual de la serie H indica una vida útil de referencia superior a 10 años con envío programado de datos cada cuatro horas. La batería de 19 000 mAh es la configuración de referencia del H300. La vida útil real depende de la batería suministrada, de la actividad de medición, de las transmisiones, de las condiciones de la red y de la temperatura. Especifique las aplicaciones que cambian con mayor rapidez junto con sus tiempos de actualización y respuesta requeridos.",
     "platform_text": "Elija el destino de sus lecturas de distancia y niveles derivados. Las configuraciones celulares pueden utilizar la conexión MQTT acordada; las configuraciones LoRa utilizan el receptor de radio o la pasarela seleccionados y la integración con la plataforma."
   },
   "series": {
@@ -213,7 +213,7 @@
       },
       {
         "label": "Referencia de diseño de autonomía de la batería",
-        "value": "Más de 10 años con transmisión cada dos horas; la vida útil depende de la configuración y las condiciones de funcionamiento"
+        "value": "Más de 10 años con envío programado de datos cada cuatro horas; la vida útil depende de la configuración y las condiciones de funcionamiento"
       },
       {
         "label": "Temperatura de funcionamiento",
@@ -370,7 +370,7 @@
       "id": "wireless-and-power",
       "question": "¿Cómo se configuran la conectividad inalámbrica y la transmisión?",
       "paragraphs": [
-        "La serie H ofrece opciones 4G, NB-IoT y LoRa según la configuración. Adapte la red a la cobertura del emplazamiento y a la plataforma de destino, y defina después el muestreo, la transmisión programada y los requisitos de alertas. La ficha técnica del H310-MW012 indica más de 10 años con transmisión cada dos horas; la vida útil real depende de la configuración de alimentación suministrada, la actividad de medición, las condiciones de la red y la temperatura."
+        "La serie H ofrece el H200 con LoRa, el H300 con 4G LTE y el H500 con NB-IoT, según la configuración. Adapte la red a la cobertura del emplazamiento y a la plataforma de destino, y defina después el muestreo, el envío programado de datos y los requisitos de alertas. La ficha técnica actual de la serie H indica una vida útil de referencia superior a 10 años con envío programado de datos cada cuatro horas; la batería de 19 000 mAh es la configuración de referencia del H300. La vida útil real depende de la batería suministrada, de la actividad de medición, de las transmisiones, de las condiciones de la red y de la temperatura."
       ],
       "evidenceIds": [
         "HT-PAGE",

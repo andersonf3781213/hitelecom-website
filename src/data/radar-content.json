@@ -136,7 +136,7 @@
         "text": "Review distance, derived level and trends in the connected platform. Define thresholds, recipients and the next action for your operations team."
       }
     ],
-    "battery_text": "The H310-MW012 specification table lists a 19,000 mAh battery and a service-life reference of more than 10 years at two-hour reporting. Actual service life depends on the supplied power configuration, sampling activity, transmissions, network conditions and temperature. Specify faster-changing applications with their required update and response times.",
+    "battery_text": "The current H Series datasheet gives a battery-life reference of more than 10 years with scheduled reporting every four hours. The 19,000 mAh battery is the H300 reference configuration. Actual service life depends on the supplied battery, measurement activity, transmissions, network conditions and temperature. Specify faster-changing applications with their required update and response times.",
     "platform_text": "Choose the destination for your distance readings and derived levels. Cellular configurations can use the agreed MQTT connection; LoRa configurations use the selected radio receiver or gateway and platform integration."
   },
   "series": {
@@ -213,7 +213,7 @@
       },
       {
         "label": "Battery-life design reference",
-        "value": "More than 10 years at two-hour reporting; service life depends on configuration and operating conditions"
+        "value": "More than 10 years with scheduled reporting every four hours; service life depends on configuration and operating conditions"
       },
       {
         "label": "Operating temperature",
@@ -370,7 +370,7 @@
       "id": "wireless-and-power",
       "question": "How are wireless connectivity and reporting configured?",
       "paragraphs": [
-        "The H Series offers 4G, NB-IoT and LoRa options by configuration. Match the network to site coverage and the destination platform, then define sampling, scheduled reporting and alert requirements. The H310-MW012 datasheet lists more than 10 years at two-hour reporting; actual service life depends on the supplied power configuration, sensing activity, network conditions and temperature."
+        "The H Series offers H200 with LoRa, H300 with 4G LTE and H500 with NB-IoT, selected by configuration. Match the network to site coverage and the destination platform, then define sampling, scheduled reporting and alert requirements. The current H Series datasheet gives a battery-life reference of more than 10 years with scheduled reporting every four hours; the 19,000 mAh battery is the H300 reference configuration. Actual service life depends on the supplied battery, measurement activity, transmissions, network conditions and temperature."
       ],
       "evidenceIds": [
         "HT-PAGE",
@@ -2297,7 +2297,7 @@
         "refs": [
           "turn154view1"
         ],
-        "use": "Model reference: 300–12,000 mm range, ±1 mm accuracy at 25°C in Hitelecom Lab, 1 mm reading resolution, less than 20° beam, IP68, −30 to +75°C operation, 4G/NB-IoT/LoRa options. The table battery profile is two-hour reporting; it is not a field displacement acceptance test or proof of hazardous-area approval."
+        "use": "Model reference: 300–12,000 mm range, ±1 mm accuracy at 25°C in Hitelecom Lab, 1 mm reading resolution, less than 20° beam, IP68, −30 to +75°C operation, 4G/NB-IoT/LoRa options. The table battery profile is four-hour reporting; it is not a field displacement acceptance test or proof of hazardous-area approval."
       },
       {
         "id": "vega-sewer-level",
@@ -2454,7 +2454,7 @@
             "turn158view7"
           ],
           "accessed": "2026-10-11",
-          "supports": "Model reference: 300–12,000 mm range, ±1 mm accuracy at 25°C in Hitelecom Lab, 1 mm reading resolution, less than 20° beam, IP68, −30 to +75°C operation, 4G/NB-IoT/LoRa options. The table battery profile is two-hour reporting; it is not a field displacement acceptance test or proof of hazardous-area approval."
+          "supports": "Model reference: 300–12,000 mm range, ±1 mm accuracy at 25°C in Hitelecom Lab, 1 mm reading resolution, less than 20° beam, IP68, −30 to +75°C operation, 4G/NB-IoT/LoRa options. The table battery profile is four-hour reporting; it is not a field displacement acceptance test or proof of hazardous-area approval."
         },
         {
           "id": "vega-sewer-level",
@@ -2603,7 +2603,7 @@
       {
         "field": "battery_profile",
         "website": "hourly >10 years",
-        "linked_pdf": "table: >10 years at two-hour reporting; cover:5–10 years; feature block:over10 years",
+        "linked_pdf": "table: >10 years at four-hour reporting; cover:5–10 years; feature block:over10 years",
         "decision": "Use table reporting condition and record internal PDF inconsistencies in README. No universal lifetime guarantee."
       },
       {
