@@ -113,6 +113,11 @@ const selectApplicationTask = task => {
   if (record) state.select(record);
 };
 
+// Localized brief strings injected by the page (data-i18n on .ht-water-leak);
+// EN literals remain the fallback so the English page is byte-stable.
+const I18N = (() => { try { return JSON.parse(document.querySelector('.ht-water-leak')?.dataset.i18n || '{}'); } catch { return {}; } })();
+const t = key => I18N[key] ?? key;
+
 const form = document.querySelector('#enquiry-form');
 const application = document.querySelector('#application');
 const modelField = document.querySelector('#model');
@@ -163,23 +168,24 @@ if (form) {
   const email = document.querySelector('#email-brief');
   const status = document.querySelector('#brief-status');
   const fields = ['Application','Country','Model','Quantity','Water source','Detection layout','Connectivity','Alarm and platform','Requirements'];
+  const label = key => t('brief.label.' + key);
   const updateEmail = () => {
     const recipient = form.dataset.enquiryEmail || 'sales@hitelecom.cn';
-    email.href = `mailto:${recipient}?subject=${encodeURIComponent('H Series water leak sensor — project enquiry')}&body=${encodeURIComponent(brief.value)}`;
+    email.href = `mailto:${recipient}?subject=${encodeURIComponent(t('brief.emailSubject'))}&body=${encodeURIComponent(brief.value)}`;
   };
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    brief.value = ['Hello Hitelecom,', '', 'I would like to discuss a wireless water leak monitoring project.', '', ...fields.map(key=>`${key}: ${String(data.get(key) || '').trim() || 'Please advise'}`), '', 'Please advise on a suitable model, detection layout, datasheet and quotation.', '', 'Thank you.'].join('\n');
+    brief.value = [t('brief.greeting'), '', t('brief.introduction'), '', ...fields.map(key=>`${label(key)}: ${String(data.get(key) || '').trim() || t('brief.fallback')}`), '', t('brief.request'), '', t('brief.thanks')].join('\n');
     updateEmail(); review.hidden = false;
-    status.textContent = 'Your brief is ready. Review it and open your email app to send.';
+    status.textContent = t('brief.readyStatus');
     brief.focus({preventScroll:true}); review.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
   });
   brief.addEventListener('input', updateEmail);
   document.querySelector('#copy-brief').addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(brief.value); status.textContent = 'Project brief copied.'; }
-    catch { brief.focus(); brief.select(); status.textContent = 'Your brief is selected. Use your device’s copy command.'; }
+    try { await navigator.clipboard.writeText(brief.value); status.textContent = t('brief.copiedStatus'); }
+    catch { brief.focus(); brief.select(); status.textContent = t('brief.copyFallbackStatus'); }
   });
 }
 

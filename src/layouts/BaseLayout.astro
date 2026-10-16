@@ -27,9 +27,11 @@ interface Props {
   alternates?: Locale[];
   /** 语言菜单回落路径：当前页在其它语言无对应译页时，菜单指向该路径的各语言版本（如产品目录） */
   langBase?: string;
+  /** 语言菜单按语言单独覆盖目标地址（优先于 langBase；用于部分语言已上线的页面） */
+  langOverrides?: Partial<Record<Locale, string>>;
 }
 
-const { locale, title, description, keywords, preloadImage, headerSolid = false, robots, v18Grid = false, alternates, langBase } = Astro.props;
+const { locale, title, description, keywords, preloadImage, headerSolid = false, robots, v18Grid = false, alternates, langBase, langOverrides } = Astro.props;
 const seo = defaultSeo[locale];
 // SEO 长度收敛（验收报告：67 页 description >160、24 页 title >70）：
 // 超长时在词边界截断并补省略号，避免被 Google 截在中途；CJK 按字符截断。
@@ -213,7 +215,7 @@ const siteJsonLd = {
     <slot name="head" />
   </head>
   <body class:list={[{ 'v18-grid': v18Grid }]}>
-    <Header locale={locale} solid={headerSolid} langBase={langBase} />
+    <Header locale={locale} solid={headerSolid} langBase={langBase} langOverrides={langOverrides} />
     <main id="main">
       <slot />
     </main>

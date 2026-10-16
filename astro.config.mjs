@@ -54,8 +54,11 @@ export default defineConfig({
       // sitemap 统一输出无扩展名地址，与 canonical、hreflang、内链保持一致，
       // Google 抓取零跳转
       serialize(item) {
-        // 水浸页当前仅英文：sitemap 不输出指向未发布译页的 xhtml 交替链接
-        if (item.url.includes('/product/water-leakage-sensor')) item.links = [];
+        // 水浸页已上线 en/es/de/ja/fr/ru（zh 未发布）：
+        // sitemap 交替链接过滤掉 zh，保持与页面 hreflang 闭环一致
+        if (item.url.includes('/product/water-leakage-sensor') && item.links) {
+          item.links = item.links.filter((link) => link.lang !== 'zh-CN');
+        }
         const fix = (href) => {
           const u = new URL(href);
           u.pathname = u.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');

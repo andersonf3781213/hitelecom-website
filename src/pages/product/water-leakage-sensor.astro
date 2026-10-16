@@ -1,28 +1,8 @@
 ---
 /**
- * 水浸传感器页 · EN 静态路由（2026-10-16，客户交付包 V1 合入）
- * 独立静态路由使本页 CSS 仅含 BaseLayout 公共样式 + water-leak.css。
- * 复用官网 BaseLayout（Header/Footer/Sidebar 浮动联系栏），不集成附件包的
- * SiteShell/QuickContact 预览壳（README-KIMI 第 2、5 条）。
- * 当前仅发布英文：alternates=[] 关闭指向未发布译页的 hreflang；
- * 语言菜单经 langBase 回落到各语言产品目录（README-KIMI 第 4 条）。
- * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级
- * Schema（includeOrganization={false}，统一引用 /#organization）。
+ * 水浸传感器页 · EN 静态路由（2026-10-16 V103 改为多语注册表包装，输出零差异）
  */
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import WaterLeakPage from '../../components/water-leak/WaterLeakPage.astro';
-import StructuredData from '../../components/water-leak/StructuredData.astro';
-import { waterLeakImage } from '../../components/water-leak/images.mjs';
-import content from '../../data/water-leak-content.json';
-import '../../styles/water-leak.css';
-
-const hero = await waterLeakImage('product-hero.png', true);
-const heroUrl = new URL(hero.src, Astro.site).href;
-const heroSizes = '(max-width: 600px) 350px, (max-width: 1024px) 64vw, 760px';
+import WaterLeakV2Page from '../../components/water-leak/WaterLeakV2Page.astro';
 ---
 
-<BaseLayout locale="en" title={content.seo.title} description={content.seo.description} alternates={[]} langBase="/product/lists/cid/261">
-  <link slot="head" rel="preload" as="image" href={hero.src} imagesrcset={hero.srcset} imagesizes={heroSizes} fetchpriority="high" />
-  <StructuredData slot="head" content={content} heroUrl={heroUrl} includeOrganization={false} />
-  <WaterLeakPage />
-</BaseLayout>
+<WaterLeakV2Page />

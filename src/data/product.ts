@@ -12042,6 +12042,12 @@ export const productContent = { ...productContentBase, de: {
       "name": "Temperatursensor",
       "conn": "NB-IoT | 4G LTE | LoRa"
      },
+      {
+       "id": "water-leakage-sensor",
+       "img": "product/products/307.png",
+       "name": "Wasserleckagesensor",
+       "conn": "NB-IoT | 4G LTE | LoRa"
+      },
      {
       "id": "274",
       "img": "product/products/274.png",
@@ -17683,6 +17689,12 @@ export const productContent = { ...productContentBase, de: {
      "name": "温度センサー",
      "conn": "NB-IoT | 4G LTE | LoRa"
     },
+      {
+       "id": "water-leakage-sensor",
+       "img": "product/products/307.png",
+       "name": "漏水センサー",
+       "conn": "NB-IoT | 4G LTE | LoRa"
+      },
     {
      "id": "274",
      "img": "product/products/274.png",
@@ -23324,6 +23336,12 @@ export const productContent = { ...productContentBase, de: {
      "name": "Sensor de temperatura",
      "conn": "NB-IoT | 4G LTE | LoRa"
     },
+      {
+       "id": "water-leakage-sensor",
+       "img": "product/products/307.png",
+       "name": "Sensor de fugas de agua",
+       "conn": "NB-IoT | 4G LTE | LoRa"
+      },
     {
      "id": "274",
      "img": "product/products/274.png",
@@ -28967,6 +28985,12 @@ export const productContent = { ...productContentBase, de: {
       "name": "Capteur de température",
       "conn": "NB-IoT | 4G LTE | LoRa"
      },
+      {
+       "id": "water-leakage-sensor",
+       "img": "product/products/307.png",
+       "name": "Capteur de fuite d’eau",
+       "conn": "NB-IoT | 4G LTE | LoRa"
+      },
      {
       "id": "274",
       "img": "product/products/274.png",
@@ -34609,6 +34633,12 @@ export const productContent = { ...productContentBase, de: {
       "name": "Датчик температуры",
       "conn": "NB-IoT | 4G LTE | LoRa"
      },
+      {
+       "id": "water-leakage-sensor",
+       "img": "product/products/307.png",
+       "name": "Датчик протечки воды",
+       "conn": "NB-IoT | 4G LTE | LoRa"
+      },
      {
       "id": "274",
       "img": "product/products/274.png",

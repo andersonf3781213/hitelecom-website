@@ -11,13 +11,15 @@ import { site } from '../data/site';
 import { ui } from '../data/ui';
 import { l, alternateUrl, localeNames, locales, htmlLang, type Locale } from '../i18n';
 
-interface Props { locale: Locale; solid?: boolean; langBase?: string }
-const { locale, solid = false, langBase } = Astro.props;
+interface Props { locale: Locale; solid?: boolean; langBase?: string; langOverrides?: Partial<Record<Locale, string>> }
+const { locale, solid = false, langBase, langOverrides } = Astro.props;
 const t = homeContent[locale];
 const u = ui[locale];
 const pathname = Astro.url.pathname;
 // langBase：当前页在其它语言无对应译页时，语言菜单统一回落到该路径（如产品目录）
+// langOverrides：按语言单独覆盖（优先），如 zh 译页未上线时仅 zh 项回落产品目录
 const langPath = langBase ?? pathname;
+const langHref = (loc: Locale) => langOverrides?.[loc] ?? alternateUrl(langPath, loc);
 // build.format='file' 下各语言首页构建期地址：'/'、'/index.html'、'/zh.html'、'/es.html'
 const homePaths = ['/', '/index.html', ...locales.filter((x) => x !== 'en').map((x) => `/${x}.html`)];
 ---
@@ -55,7 +57,7 @@ const homePaths = ['/', '/index.html', ...locales.filter((x) => x !== 'en').map(
         <ul class="lang-menu">
           {locales.map((loc) => (
             <li>
-              <a href={alternateUrl(langPath, loc)} aria-current={loc === locale ? 'true' : undefined} hreflang={htmlLang[loc]}>
+              <a href={langHref(loc)} aria-current={loc === locale ? 'true' : undefined} hreflang={htmlLang[loc]}>
                 {loc === 'zh' ? <span class="nf">{localeNames[loc]}</span> : localeNames[loc]}
               </a>
             </li>
@@ -107,7 +109,7 @@ const homePaths = ['/', '/index.html', ...locales.filter((x) => x !== 'en').map(
   <div class="mobile-menu-foot">
     <a href={site.cloudUrl} target="_blank" rel="noopener">{t.showOnline} <span class="nf" aria-hidden="true">→</span></a>
     {locales.filter((loc) => loc !== locale).map((loc) => (
-      <a href={alternateUrl(langPath, loc)} hreflang={htmlLang[loc]}>{localeNames[loc]} <span class="nf" aria-hidden="true">→</span></a>
+      <a href={langHref(loc)} hreflang={htmlLang[loc]}>{localeNames[loc]} <span class="nf" aria-hidden="true">→</span></a>
     ))}
     <a href={site.phoneHref}>{site.phone}</a>
   </div>
