@@ -54,6 +54,8 @@ export default defineConfig({
       // sitemap 统一输出无扩展名地址，与 canonical、hreflang、内链保持一致，
       // Google 抓取零跳转
       serialize(item) {
+        // 水浸页当前仅英文：sitemap 不输出指向未发布译页的 xhtml 交替链接
+        if (item.url.includes('/product/water-leakage-sensor')) item.links = [];
         const fix = (href) => {
           const u = new URL(href);
           u.pathname = u.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');

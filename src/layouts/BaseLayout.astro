@@ -23,9 +23,13 @@ interface Props {
   robots?: string;
   /** V18 首页：页首/页脚与 1280 内容网格对齐（配合 home-v18-override.css） */
   v18Grid?: boolean;
+  /** 实际存在译文的语言集合（缺省=全语言闭环）；单语页面传 []，避免输出指向未发布译页的假 hreflang */
+  alternates?: Locale[];
+  /** 语言菜单回落路径：当前页在其它语言无对应译页时，菜单指向该路径的各语言版本（如产品目录） */
+  langBase?: string;
 }
 
-const { locale, title, description, keywords, preloadImage, headerSolid = false, robots, v18Grid = false } = Astro.props;
+const { locale, title, description, keywords, preloadImage, headerSolid = false, robots, v18Grid = false, alternates, langBase } = Astro.props;
 const seo = defaultSeo[locale];
 // SEO 长度收敛（验收报告：67 页 description >160、24 页 title >70）：
 // 超长时在词边界截断并补省略号，避免被 Google 截在中途；CJK 按字符截断。
@@ -57,7 +61,8 @@ const pageKeywords = keywords ?? seo.keywords;
 const canonicalPath = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
 const canonical = new URL(canonicalPath, Astro.site).href;
 // hreflang 互链：遍历所有非当前语言（EN/ZH/ES 三语闭环），x-default 指向英文
-const altLinks = altLocalesOf(locale).map((loc) => ({
+// alternates 显式给出时只输出实际存在的译页；缺省保持全语言闭环
+const altLinks = (alternates ?? altLocalesOf(locale)).map((loc) => ({
   lang: htmlLang[loc],
   href: new URL(alternateUrl(Astro.url.pathname, loc), Astro.site).href,
 }));
@@ -208,7 +213,7 @@ const siteJsonLd = {
     <slot name="head" />
   </head>
   <body class:list={[{ 'v18-grid': v18Grid }]}>
-    <Header locale={locale} solid={headerSolid} />
+    <Header locale={locale} solid={headerSolid} langBase={langBase} />
     <main id="main">
       <slot />
     </main>
