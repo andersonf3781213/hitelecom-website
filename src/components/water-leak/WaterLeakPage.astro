@@ -23,6 +23,16 @@ const listUrl = (prefix || 'https://www.hitelecom.com') + '/product/lists/cid/26
 const temperatureUrl = (prefix || 'https://www.hitelecom.com') + '/product/temperature-sensor';
 const levelUrl = (prefix || 'https://www.hitelecom.com') + '/product/liquid-level-sensor';
 const detectionSymbols = { point:'◉', path:'↔', response:'↗' };
+// 与温度页等其他传感器 V2 页一致：两行标题第二行包 <span>（灰色），
+// 工作流与规格卡标题两行同色（仅 <br/>），全部语言共用此结构。
+const br2 = (s) => s.split('\n');
+const [featA, featB] = br2(content.featureHeading.heading);
+const [measA, measB] = br2(content.measurement.heading);
+const [wfA, wfB] = br2(content.workflow.heading);
+const [serA, serB] = br2(content.series.heading);
+const [specA, specB] = br2(content.specifications.heading);
+const [intA, intB] = br2(content.workflow.platform_title);
+const [enqA, enqB] = br2(content.inquiry.heading);
 ---
 <div class="ht-water-leak" data-i18n={JSON.stringify(pickJs(ui))}>
   <div class="hero-band">
@@ -42,18 +52,18 @@ const detectionSymbols = { point:'◉', path:'↔', response:'↗' };
   <nav class="section-nav" aria-label={ui['nav.aria']}><div class="wrap"><a href="#measurement">{ui['nav.detection']}</a><a href="#applications">{ui['nav.applications']}</a><a href="#specifications">{ui['nav.specifications']}</a><a href="#integration">{ui['nav.integration']}</a><a href="#faq">{ui['nav.faq']}</a><a class="nav-quote" href="#enquiry">{ui['nav.quote']}</a></div></nav>
 
   <section class="section features-section" id="features" aria-labelledby="features-title"><div class="wrap">
-    <div class="section-heading compact-heading"><div><p class="eyebrow">{content.featureHeading.eyebrow}</p><h2 id="features-title">{content.featureHeading.heading}</h2></div><p>{content.featureHeading.description}</p></div>
+    <div class="section-heading compact-heading"><div><p class="eyebrow">{content.featureHeading.eyebrow}</p><h2 id="features-title">{featA}<br/><span>{featB}</span></h2></div><p>{content.featureHeading.description}</p></div>
     <div class="feature-grid">{content.features.map((feature,index)=><article><span class="feature-mark" aria-hidden="true"><FeatureIcon index={index}/></span><h3>{feature.title}</h3><p>{feature.text}</p></article>)}</div>
   </div></section>
 
   <section class="section measurement-section" id="measurement" aria-labelledby="measurement-title"><div class="wrap">
-    <div class="section-heading"><div><p class="eyebrow">{content.measurement.eyebrow}</p><h2 id="measurement-title">{content.measurement.heading}</h2></div><p>{content.measurement.description}</p></div>
+    <div class="section-heading"><div><p class="eyebrow">{content.measurement.eyebrow}</p><h2 id="measurement-title">{measA}<br/><span>{measB}</span></h2></div><p>{content.measurement.description}</p></div>
     <div class="measurement-grid">{content.measurement.cards.map((item,index)=><article class="measurement-card"><div class="measurement-heading"><span class="measurement-number">0{index+1}</span><span class="measurement-symbol" aria-hidden="true">{detectionSymbols[item.symbol] || '↗'}</span></div><h3>{item.title}</h3><p>{item.text}</p><dl><dt>{ui['measurement.layoutLabel']}</dt><dd>{item.project_brief}</dd></dl><a href="#enquiry" class="text-link" data-measurement={item.title}>{ui['measurement.cta']}</a></article>)}</div>
     <div class="installation-note"><span class="small-label">{ui['measurement.installationLabel']}</span><h3>{content.measurement.installation_heading}</h3><p>{content.measurement.installation_text}</p></div>
   </div></section>
 
   <section class="section profile-section" id="operating-profile" aria-labelledby="profile-title"><div class="wrap">
-    <div class="section-heading"><div><p class="eyebrow">{content.workflow.eyebrow}</p><h2 id="profile-title">{content.workflow.heading}</h2></div><p>{content.workflow.profile_text}</p></div>
+    <div class="section-heading"><div><p class="eyebrow">{content.workflow.eyebrow}</p><h2 id="profile-title">{wfA}<br/>{wfB}</h2></div><p>{content.workflow.profile_text}</p></div>
     <div class="water-leak-workflow">{content.workflow.steps.map(step=><article><span class="step-number">{step.number}</span><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
     <div class="profile-note"><div><span class="small-label">{content.workflow.profile_note_label}</span><strong>{content.workflow.profile_note_heading}</strong></div><p>{content.workflow.profile_note_text}</p></div>
   </div></section>
@@ -75,14 +85,14 @@ const detectionSymbols = { point:'◉', path:'↔', response:'↗' };
   </div></section>
 
   <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
-    <div class="section-heading"><div><p class="eyebrow">{content.series.eyebrow}</p><h2 id="specifications-title">{content.series.heading}</h2></div><p>{content.series.description}</p></div>
+    <div class="section-heading"><div><p class="eyebrow">{content.series.eyebrow}</p><h2 id="specifications-title">{serA}<br/><span>{serB}</span></h2></div><p>{content.series.description}</p></div>
     <div class="water-leak-series">{content.series.models.map(model=><article id={'model-'+model.family.toLowerCase()}><span class="small-label">{model.connectivity}</span><h3>{model.family}</h3>{model.partNumber&&<p class="model-part-number">{model.partNumber}</p>}<p>{model.description}</p><a href="#enquiry" class="text-link" data-model={model.family} data-connectivity={model.connectivity}>{ui['series.cta']}</a></article>)}</div>
-    <div class="water-leak-spec-grid"><aside class="model-card"><span class="small-label">{content.specifications.eyebrow}</span><h3>{content.specifications.heading}</h3><p>{content.specifications.description}</p><a href="#enquiry" class="button button-outline" data-enquiry-reason={ui['hero.enquiryReason']}>{content.specifications.datasheet_label} ↗</a><a href="#enquiry" class="text-link">{ui['specifications.proposal']}</a></aside><div class="spec-table"><table><caption>{ui['specifications.caption']}</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
+    <div class="water-leak-spec-grid"><aside class="model-card"><span class="small-label">{content.specifications.eyebrow}</span><h3>{specA}<br/>{specB}</h3><p>{content.specifications.description}</p><a href="#enquiry" class="button button-outline" data-enquiry-reason={ui['hero.enquiryReason']}>{content.specifications.datasheet_label} ↗</a><a href="#enquiry" class="text-link">{ui['specifications.proposal']}</a></aside><div class="spec-table"><table><caption>{ui['specifications.caption']}</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
     <div class="selection-list"><h3>{ui['series.selectionHeading']}</h3><div>{content.series.steps.map((step,index)=><article><span class="step-number">0{index+1}</span><h4>{step.title}</h4><p>{step.text}</p></article>)}</div></div>
   </div></section>
 
   <section class="section integration-section" id="integration" aria-labelledby="integration-title"><div class="wrap">
-    <div class="section-heading"><div><p class="eyebrow">{ui['integration.eyebrow']}</p><h2 id="integration-title">{content.workflow.platform_title}</h2></div><p>{content.workflow.platform_text}</p></div>
+    <div class="section-heading"><div><p class="eyebrow">{ui['integration.eyebrow']}</p><h2 id="integration-title">{intA}<br/><span>{intB}</span></h2></div><p>{content.workflow.platform_text}</p></div>
     <div class="integration-grid"><article><span class="small-label">H300 · 4G / H500 · NB-IoT</span><h3>{ui['integration.cellularHeading']}</h3><div class="route-flow"><span>{ui['integration.detectionPoint']}</span><b aria-hidden="true">→</b><span>{ui['integration.mobileNetwork']}</span><b aria-hidden="true">→</b><span>{ui['integration.platform']}</span></div><p>{ui['integration.cellularText']}</p><ul><li>{ui['integration.cellularChecklist1']}</li><li>{ui['integration.cellularChecklist2']}</li><li>{ui['integration.cellularChecklist3']}</li></ul></article><article><span class="small-label">H200 · LoRa</span><h3>{ui['integration.loraHeading']}</h3><div class="route-flow"><span>{ui['integration.detectionPoints']}</span><b aria-hidden="true">→</b><span>{ui['integration.gateway']}</span><b aria-hidden="true">→</b><span>{ui['integration.platform']}</span></div><p>{ui['integration.loraText']}</p><ul><li>{ui['integration.loraChecklist1']}</li><li>{ui['integration.loraChecklist2']}</li><li>{ui['integration.loraChecklist3']}</li></ul></article></div>
     <div class="integration-handover"><h3>{ui['integration.handoverHeading']}</h3><p>{ui['integration.handoverText']}</p><a href="#enquiry" class="text-link">{ui['integration.handoverCta']}</a></div>
   </div></section>
@@ -90,7 +100,7 @@ const detectionSymbols = { point:'◉', path:'↔', response:'↗' };
   <section class="section faq-section" id="faq" aria-labelledby="faq-title"><div class="wrap faq-layout"><div class="faq-intro"><p class="eyebrow">{content.faqHeading.kicker}</p><h2 id="faq-title">{content.faqHeading.title}</h2><p>{content.faqHeading.intro}</p><a href="#enquiry" class="text-link">{ui['faq.cta']}</a></div><div class="faq-list">{content.faqs.map((faq,index)=><details id={faq.id} open={index===0}><summary>{faq.question}<span aria-hidden="true">+</span></summary><div class="faq-answer">{faq.paragraphs.map(paragraph=><p>{paragraph}</p>)}</div></details>)}</div></div></section>
 
   <section class="section enquiry-section" id="enquiry" aria-labelledby="enquiry-title"><div class="wrap enquiry-layout">
-    <div class="enquiry-intro"><p class="eyebrow">{content.inquiry.eyebrow}</p><h2 id="enquiry-title">{content.inquiry.heading}</h2><p class="lead">{content.inquiry.description}</p><a class="contact-email" href={'mailto:'+email}>{email} ↗</a><div class="enquiry-benefits"><h3>{ui['inquiry.benefitsHeading']}</h3><p>{content.inquiry.supporting_text}</p></div></div>
+    <div class="enquiry-intro"><p class="eyebrow">{content.inquiry.eyebrow}</p><h2 id="enquiry-title">{enqA}<br/><span>{enqB}</span></h2><p class="lead">{content.inquiry.description}</p><a class="contact-email" href={'mailto:'+email}>{email} ↗</a><div class="enquiry-benefits"><h3>{ui['inquiry.benefitsHeading']}</h3><p>{content.inquiry.supporting_text}</p></div></div>
     <form id="enquiry-form" action={'mailto:'+email} method="post" enctype="text/plain" data-enquiry-email={email}><div class="form-heading"><span class="small-label">{ui['inquiry.formEyebrow']}</span><h3>{ui['inquiry.formHeading']}</h3><p>{ui['inquiry.formDescription']}</p></div>
       <div class="form-fields">
         <div class="field"><label for="application">{ui['form.application']} <span aria-hidden="true">*</span></label><select id="application" name="Application" required><option value="">{ui['form.chooseApplication']}</option>{content.groups.map(group=><optgroup label={group.title}>{content.applications.filter(scene=>scene.group===group.id).map(scene=><option value={scene.title}>{scene.title}</option>)}</optgroup>)}<option>{ui['form.otherApplication']}</option></select></div>
