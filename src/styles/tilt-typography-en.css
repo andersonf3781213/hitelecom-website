@@ -1,0 +1,55 @@
+/* Audited against the live Temperature page, 2026-10-17.
+   Typography only. Product layout, content and Applications styles stay intact. */
+.ht-tilt .hero h1 {
+  font-size: clamp(30px, 3.2vw, 43px);
+  line-height: 1.18;
+}
+.ht-tilt .hero h1 span {
+  font-size: clamp(36px, 3.7vw, 52px);
+  line-height: 1.1;
+  letter-spacing: -.04em;
+}
+.ht-tilt .hero-description {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.ht-tilt .hero-proof strong { font-size: 21px; }
+.ht-tilt .feature-grid h3 {
+  font-size: 16px;
+  line-height: 1.35;
+}
+.ht-tilt .feature-grid p {
+  font-size: 13px;
+  line-height: 1.75;
+}
+.ht-tilt #overview .lead {
+  font-size: 17px;
+  line-height: 1.65;
+}
+.ht-tilt .model-card h3 {
+  font-size: 27px;
+  line-height: 1.2;
+}
+.ht-tilt #specifications .model-card .button { font-size: 12px; }
+.ht-tilt .shell-reference { line-height: 1.6; }
+.ht-tilt .shell-reference .footer-col a { font-size: .86rem; }
+@media (max-width: 900px) {
+  .ht-tilt #overview .lead { font-size: 14px; }
+}
+@media (max-width: 600px) {
+  .ht-tilt .hero h1 {
+    font-size: 27px;
+    line-height: 1.13;
+  }
+  .ht-tilt .hero h1 span {
+    font-size: 33px;
+    line-height: 1.1;
+  }
+  .ht-tilt .hero-description {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .ht-tilt .hero-proof strong { font-size: 17px; }
+  .ht-tilt .hero-actions .text-link { font-size: 12px; }
+  .ht-tilt .model-card h3 { font-size: 25px; }
+}

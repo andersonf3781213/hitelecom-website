@@ -1,24 +1,13 @@
 ---
 /**
- * 倾斜传感器页 V3 · EN 静态路由（2026-10-17 客户终稿替换）
- * 同 URL 替换：/product/tilt-sensor（slug 不变，hreflang/sitemap/内链不受影响）。
- * 仅替换英文内容；其余语言路由 /{lang}/product/[slug] 仍走 TiltV2Page，内容不变。
- * 页首页尾沿用 BaseLayout（Header/Footer 不变）；组件根为 div.ht-tilt，
- * 不再嵌套 <main>（BaseLayout 已提供 main#main）。
- * Organization/WebSite 实体图由 BaseLayout 全局输出，本页仅输出页面级 Schema。
+ * 倾斜传感器页 V2 · EN 静态路由（2026-10-08 CSS 分离）
+ * 独立静态路由使本页 CSS 仅含 BaseLayout 公共样式 + tilt.css，
+ * 不再与 [slug] 路由的空气质量/旧产品样式合并打包（GPT6 复查 §2）。
+ * [slug].astro 的 getStaticPaths 已排除 tilt-sensor，无路由冲突。
+ * 2026-10-17：EN 合入温度页同款 Applications UI（54 场景）与全页字体复核，
+ * 见 components/tilt/ApplicationsEn.astro、styles/tilt-typography-en.css。
  */
-import { getImage } from 'astro:assets';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import TiltPage from '../../components/tilt-v3/TiltPage.astro';
-import StructuredData from '../../components/tilt-v3/StructuredData.astro';
-import product from '../../assets/tilt-v3/tilt-product-original.webp';
-import { page } from '../../data/tilt-v3-content';
-
-const hero = await getImage({ src: product, width: Math.min(880, product.width), format: 'webp', quality: 83 });
-const ogImage = new URL(hero.src, Astro.site).href;
+import TiltEnPage from '../../components/tilt/TiltEnPage.astro';
 ---
 
-<BaseLayout locale="en" title={page.title} description={page.description} preloadImage={hero.src}>
-  <StructuredData slot="head" imageUrl={ogImage} />
-  <TiltPage />
-</BaseLayout>
+<TiltEnPage />

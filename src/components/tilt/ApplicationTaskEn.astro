@@ -1,0 +1,16 @@
+---
+interface Props {
+  scene: { id: string; baselineId?: string; title: string; en: string; pointen: string; briefen: string; alten: string; measureen: string; objectiveen: string; original: boolean; originalImgStyle?: string };
+  image: { src: string; srcset: string; width: number; height: number };
+  first?: boolean;
+}
+const { scene, image, first = false } = Astro.props;
+const id = scene.baselineId || `tilt-scene-${scene.id}`;
+---
+<details class="application-task" id={id} open={first}>
+  <summary aria-controls={`scene-photo-${id}`}><span class="task-heading"><h3>{scene.title}</h3><small>{scene.measureen}</small></span><span class="task-toggle" aria-hidden="true">+</span></summary>
+  <div class="task-copy"><figure class="application-scene-photo" id={`scene-photo-${id}`} data-scene-owner={id}>
+    <img class="application-scene-image" src={image.src} srcset={image.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={image.width} height={image.height} loading="lazy" decoding="async" alt={scene.alten} style={scene.originalImgStyle || 'object-position:center center'} />
+    <figcaption><span class="application-photo-caption">{scene.title}</span></figcaption>
+  </figure><p>{scene.en}</p><dl><dt>Inclination to monitor</dt><dd>{scene.measureen}</dd><dt>Monitoring point</dt><dd>{scene.pointen}</dd><dt>Plan your installation</dt><dd>{scene.briefen}</dd></dl><a href="#enquiry" class="task-cta" data-project-scene={scene.title}>Discuss this application <span aria-hidden="true">↗</span></a></div>
+</details>

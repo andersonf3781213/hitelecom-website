@@ -1,0 +1,93 @@
+/* Actual live TemperatureV2Page.boaLpbiW.css source fragments, copied in cascade order.
+ * Scope remains #applications; prefix-rename only when integrating Applications.
+ * Only rules relevant to Applications/its shared typography are included. */
+#applications{--ink:#17243a;--muted:#596a80;--blue:#285fdf;--blue-dark:#1749bc;--line:#dce4ee;--paper:#f5f8fc;--navy:#102b4a;--wrap:1240px;color:var(--ink);font-synthesis:none;scroll-behavior:smooth;background:#fff;scroll-padding-top:74px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased;margin:0;font-size:16px;line-height:1.65}
+#applications *{box-sizing:border-box}
+#applications a{color:inherit;text-decoration:none}
+#applications img{max-width:100%;height:auto;display:block}
+#applications figure,#applications p,#applications h1,#applications h2,#applications h3,#applications h4{margin:0}
+#applications h1,#applications h2,#applications h3,#applications h4{letter-spacing:-.04em;line-height:1.13}
+#applications h2{font-size:clamp(32px,3.45vw,48px);font-weight:640}
+#applications h2 span{color:#7b8799}
+#applications h3{letter-spacing:-.025em;font-size:21px;font-weight:650}
+#applications p{color:var(--muted)}
+#applications small{font-size:12px}
+#applications a:focus-visible,#applications button:focus-visible,#applications summary:focus-visible,#applications input:focus-visible,#applications select:focus-visible,#applications textarea:focus-visible{outline-offset:4px;outline:#7cafff solid 3px}
+#applications [hidden]{display:none!important}
+#applications .wrap{width:min(var(--wrap),calc(100% - 96px));margin-inline:auto}
+#applications.section{padding:100px 0}
+#applications .eyebrow,#applications .small-label{letter-spacing:.15em;text-transform:uppercase;font-size:11px;font-weight:750;line-height:1.5}
+#applications .eyebrow{color:var(--blue);margin-bottom:20px}
+#applications .section-heading{grid-template-columns:1.25fr 1fr;align-items:end;gap:100px;margin-bottom:46px;display:grid}
+#applications .section-heading>p{max-width:470px;padding-bottom:4px;font-size:17px}
+#applications .section-heading h2{max-width:670px}
+/* Original application rules85–95 */
+#applications .image-note{color:#64758a;margin-bottom:24px;font-size:11px}
+#applications .application-group{border-top:1px solid var(--line);scroll-margin-top:70px}
+#applications .application-group:last-child{border-bottom:1px solid var(--line)}
+#applications summary{cursor:pointer;list-style:none}
+#applications summary::-webkit-details-marker{display:none}
+#applications .application-group>summary{justify-content:space-between;align-items:center;gap:22px;padding:25px 0;display:flex}
+#applications .application-group>summary>span:first-child{letter-spacing:-.03em;align-items:center;gap:25px;font-size:23px;font-weight:580;display:flex}
+#applications .application-group summary small{color:#9ba9bb;letter-spacing:0;font-size:11px;font-weight:500}
+#applications .group-count{color:#7c8ca0;white-space:nowrap;align-items:center;gap:28px;font-size:11px;display:flex}
+#applications .group-count b{color:#4f73a6;background:#f1f5fc;border-radius:50%;justify-content:center;align-items:center;width:29px;height:29px;font-size:22px;font-weight:300;line-height:1;display:flex}
+#applications .application-group[open]>summary .group-count b{transform:rotate(45deg)}
+/* Shared RWD earlier in source193–200 */
+@media(max-width:1100px){#applications .wrap{width:calc(100% - 64px)}#applications .section-heading{gap:55px}}
+@media(max-width:900px){#applications.section{padding:72px 0}#applications .section-heading{grid-template-columns:1.2fr 1fr;gap:35px}#applications .section-heading>p{font-size:14px}}
+@media(max-width:600px){#applications{scroll-padding-top:58px;font-size:15px}#applications .wrap{width:calc(100% - 40px)}#applications.section{padding:58px 0}#applications .section-heading{grid-template-columns:1fr;gap:21px;margin-bottom:30px}#applications .section-heading>p{max-width:100%;font-size:14px}#applications h2{font-size:33px}#applications .eyebrow{margin-bottom:16px;font-size:10px}#applications .image-note{margin-bottom:18px;font-size:10px}#applications .application-group>summary{gap:12px;padding:21px 0}#applications .application-group>summary>span:first-child{gap:13px;font-size:19px;line-height:1.25}#applications .application-group summary small{font-size:10px}#applications .group-count{gap:0;font-size:0}#applications .group-count b{width:27px;height:27px;font-size:21px}}
+@media print{#applications .application-group{break-inside:avoid}}
+/* Desktop wrapper overrides234–235 */
+@media(min-width:1101px){#applications .wrap{width:min(var(--wrap),calc(100% - 176px))}}
+@media(min-width:601px) and (max-width:1100px){#applications .wrap{width:calc(100% - 132px)}}
+/* Actual expanded Applications rules311–344 */
+#applications .application-overview{justify-content:space-between;align-items:center;gap:28px;margin:0 0 24px;display:flex}
+#applications .application-overview>p:first-child{color:var(--muted);white-space:nowrap;font-size:13px}
+#applications .application-overview strong{color:var(--ink);font-size:18px;font-weight:650}
+#applications .application-overview>p:first-child>span{color:#acb9ca;padding:0 12px}
+#applications .application-overview .image-note{max-width:460px;margin:0;font-size:11px}
+#applications .application-jump-nav{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:32px;display:grid}
+#applications .application-jump-nav a{border:1px solid var(--line);color:#34577f;background:#f7f9fc;border-radius:9px;justify-content:space-between;align-items:center;gap:16px;min-height:48px;padding:12px 16px;font-size:12px;line-height:1.45;display:flex}
+#applications .application-jump-nav a:hover,#applications .application-jump-nav a:focus-visible{border-color:var(--blue);color:var(--blue);background:#eff5ff}
+#applications .application-jump-nav a span{color:#6d8aaa;flex-shrink:0;font-size:11px}
+#applications .application-category-body{grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);align-items:start;gap:46px;padding:8px 0 38px;display:grid}
+#applications .application-visual{min-width:0;margin:0;position:sticky;top:110px}
+#applications .application-visual img{aspect-ratio:4/3;object-fit:cover;background:#eaf0f7;border-radius:14px;width:100%;height:auto;display:block}
+#applications .application-visual figcaption{color:#75879e;margin-top:12px;font-size:10px;line-height:1.6}
+#applications .application-visual>p{max-width:430px;margin-top:17px;font-size:13px;line-height:1.85}
+#applications .application-task-list{border:1px solid var(--line);background:#fff;border-radius:14px;min-width:0;overflow:hidden}
+#applications .application-task{border-bottom:1px solid var(--line);scroll-margin-top:110px}
+#applications .application-task:last-child{border-bottom:0}
+#applications .application-task>summary{justify-content:space-between;align-items:center;gap:20px;padding:20px 24px;display:flex}
+#applications .application-task>summary:hover{background:#f6f9fe}
+#applications .application-task[open]>summary{background:#f4f8fe}
+#applications .task-heading h3{letter-spacing:-.02em;color:var(--ink);margin:0;font-size:17px;line-height:1.4}
+#applications .application-task>summary .task-heading small{color:#66819f;letter-spacing:0;margin-top:5px;font-size:10px;font-weight:400;line-height:1.65;display:block}
+#applications .task-toggle{color:#577ca9;text-align:center;flex-shrink:0;width:22px;font-size:21px;font-weight:300;line-height:1}
+#applications .application-task[open]>summary .task-toggle{transform:rotate(45deg)}
+#applications .task-copy{background:#f4f8fe;padding:2px 24px 16px}
+#applications .task-copy>p{font-size:13px;line-height:1.8}
+#applications .task-copy dl{border-top:1px solid #dfe8f3;margin:17px 0 9px;padding-top:14px}
+#applications .task-copy dt{color:#416895;margin-top:12px;font-size:10px;font-weight:650}
+#applications .task-copy dd{color:var(--muted);margin:5px 0 0;font-size:11px;line-height:1.75}
+#applications .task-cta{min-height:44px;color:var(--blue);justify-content:space-between;align-items:center;gap:14px;margin-top:10px;font-size:12px;font-weight:600;display:flex}
+#applications .task-cta:hover{text-decoration:underline}
+@media(max-width:900px){#applications .application-overview{display:block}#applications .application-overview .image-note{max-width:none;margin-top:12px}#applications .application-jump-nav{grid-template-columns:repeat(2,minmax(0,1fr))}#applications .application-category-body{gap:25px}#applications .application-task>summary{padding:17px}#applications .task-copy{padding:2px 17px 13px}#applications .task-heading h3{font-size:15px}#applications .application-visual>p{font-size:12px}}
+@media(max-width:600px){#applications .application-overview>p:first-child{white-space:normal;font-size:11px}#applications .application-overview strong{font-size:16px}#applications .application-jump-nav{gap:8px}#applications .application-jump-nav a{gap:8px;min-height:56px;padding:10px 12px;font-size:11px}#applications .application-category-body{grid-template-columns:1fr;gap:24px;padding-bottom:27px}#applications .application-visual{position:static}#applications .application-visual img{aspect-ratio:3/2}#applications .application-visual>p{max-width:none;margin-top:12px}#applications .task-heading h3{font-size:17px}#applications .application-task>summary{padding:18px}#applications .task-copy{padding:2px 18px 15px}}
+@media print{#applications .application-jump-nav{display:none}#applications .application-category-body{display:block}#applications .application-visual{max-width:360px;margin-bottom:20px;position:static}#applications .application-task{break-inside:avoid}}
+/* Actual dynamic photo rules391–404 */
+#applications .application-category-photo,#applications .application-scene-photo{min-width:0;margin:0}
+#applications .application-media-slot{min-width:0}
+#applications .application-scene-photo img{aspect-ratio:4/3;object-fit:cover;background:#eaf0f7;border-radius:14px;width:100%;height:auto;display:block}
+#applications .application-scene-photo figcaption{color:#75879e;margin-top:12px;font-size:10px;line-height:1.6}
+#applications .application-photo-credit{color:#667990;overflow-wrap:anywhere;margin-top:4px;font-size:10px;line-height:1.65;display:block}
+#applications .application-photo-credit a{color:inherit;text-underline-offset:2px;text-decoration:underline}
+#applications .task-copy>.application-scene-photo{margin:14px 0 20px}
+#applications .application-task.is-selected>summary{box-shadow:inset 3px 0 var(--blue);background:#f4f8fe}
+#applications .application-task>summary:focus-visible{outline:2px solid var(--blue);outline-offset:-3px}
+#applications .application-category-photo[hidden],#applications .application-scene-photo[hidden]{display:none}
+#applications .scene-photo-ready{animation:.2s ease-out 0s 1 normal none running temperature-scene-in}
+@keyframes temperature-scene-in{0%{opacity:.65}100%{opacity:1}}
+@media(max-width:600px){#applications .application-media-slot{display:none}#applications .application-scene-photo img{aspect-ratio:3/2}#applications .application-visual>p{margin-top:0}#applications .application-category-body{gap:18px}}
+@media(prefers-reduced-motion:reduce){#applications .scene-photo-ready{animation:none}}
