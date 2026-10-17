@@ -130,7 +130,8 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
     q('[data-save-title]').textContent = title;
     q('[data-save-description]').textContent = description;
     q('[data-save-indicator]').className = `save-indicator ${kind}`;
-    q('[data-action="save"]').disabled = !state.dirty || state.saving || !state.ready;
+    // 未连接（!state.ready）时保持可点：点击保存按钮会重新连接并弹出密码框（V111b）
+    q('[data-action="save"]').disabled = state.saving || (state.ready && !state.dirty);
     q('[data-action="save"]').textContent = state.saving ? '正在保存…' : '保存更改 ↗';
     q('[data-action="discard"]').disabled = !state.dirty || state.saving;
   }
@@ -366,7 +367,7 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
     const action = button.dataset.action; const id = button.dataset.id;
     if (action === 'add' || action === 'edit') openEditor(id);
     else if (action === 'close-editor') closeDialog();
-    else if (action === 'save') void save();
+    else if (action === 'save') { if (!state.ready && mode !== 'demo') void connect(); else void save(); }
     else if (action === 'discard') { if (confirm('放弃当前未保存的更改？')) { state.catalog = clone(state.baseline); state.dirty = false; state.lastSaved = mode === 'demo' && state.demoSavedAt ? '已保存到此浏览器' : ''; persistDemo(); alert(''); render(); } }
     else if (action === 'export') exportCatalog();
     else if (action === 'import') q('[data-import-file]').click();
@@ -444,7 +445,7 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
     } catch { alert('浏览器草稿无法读取，已加载初始目录。'); }
     render();
   } else render();
-  const ready = mode === 'demo' ? Promise.resolve() : (async () => {
+  async function connect() {
     try {
       if (!fetchImpl) throw new Error('当前环境无法连接目录接口。');
       const response = await apiFetch('/api/catalog', { cache: 'no-store' }); const data = await readResponse(response);
@@ -456,7 +457,8 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
       if (!state.dirty) state.catalog = clone(data.catalog);
       else { state.catalog = preserveProtectedFields(state.catalog, data.catalog); state.dirty = JSON.stringify(state.catalog) !== JSON.stringify(state.baseline); if (JSON.stringify(previousSeed) !== JSON.stringify(data.catalog)) alert('已读取服务器最新版本。当前编辑已保留，请核对后保存。'); }
       render();
-    } catch (error) { alert(`无法读取保存接口：${messageOf(error)}\n可继续编辑和导出备份；刷新并连接成功后再保存。`); setSaveState('保存接口未连接', '当前编辑可以导出备份，连接成功后才能保存。', 'dirty'); }
-  })();
+    } catch (error) { alert(`无法读取保存接口：${messageOf(error)}\n点底部「保存更改」可重新连接并输入管理密码；也可导出 JSON 备份。`); setSaveState('保存接口未连接', '点「保存更改」重新连接，会再次弹出密码输入框。', 'dirty'); }
+  }
+  const ready = mode === 'demo' ? Promise.resolve() : connect();
   return { ready, getState: () => clone(state), save, importCatalog, exportCatalog, openEditor };
 }
