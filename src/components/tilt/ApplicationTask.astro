@@ -1,10 +1,11 @@
 ---
 interface Props {
-  scene: { id: string; baselineId?: string; title: string; en: string; pointen: string; briefen: string; alten: string; measureen: string; objectiveen: string; original: boolean; originalImgStyle?: string };
+  scene: { id: string; baselineId?: string; title: string; valueEn?: string; en: string; pointen: string; briefen: string; alten: string; measureen: string; objectiveen: string; original: boolean; originalImgStyle?: string };
   image: { src: string; srcset: string; width: number; height: number };
   first?: boolean;
+  ui: { measureLabel: string; pointLabel: string; briefLabel: string; cta: string };
 }
-const { scene, image, first = false } = Astro.props;
+const { scene, image, first = false, ui } = Astro.props;
 const id = scene.baselineId || `tilt-scene-${scene.id}`;
 ---
 <details class="application-task" id={id} open={first}>
@@ -12,5 +13,5 @@ const id = scene.baselineId || `tilt-scene-${scene.id}`;
   <div class="task-copy"><figure class="application-scene-photo" id={`scene-photo-${id}`} data-scene-owner={id}>
     <img class="application-scene-image" src={image.src} srcset={image.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={image.width} height={image.height} loading="lazy" decoding="async" alt={scene.alten} style={scene.originalImgStyle || 'object-position:center center'} />
     <figcaption><span class="application-photo-caption">{scene.title}</span></figcaption>
-  </figure><p>{scene.en}</p><dl><dt>Inclination to monitor</dt><dd>{scene.measureen}</dd><dt>Monitoring point</dt><dd>{scene.pointen}</dd><dt>Plan your installation</dt><dd>{scene.briefen}</dd></dl><a href="#enquiry" class="task-cta" data-project-scene={scene.title}>Discuss this application <span aria-hidden="true">↗</span></a></div>
+  </figure><p>{scene.en}</p><dl><dt>{ui.measureLabel}</dt><dd>{scene.measureen}</dd><dt>{ui.pointLabel}</dt><dd>{scene.pointen}</dd><dt>{ui.briefLabel}</dt><dd>{scene.briefen}</dd></dl><a href="#enquiry" class="task-cta" data-project-scene={scene.valueEn ?? scene.title}>{ui.cta} <span aria-hidden="true">↗</span></a></div>
 </details>
