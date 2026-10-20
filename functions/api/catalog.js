@@ -107,23 +107,41 @@ async function github(config, fetchImpl, method, payload) {
   const filePath = config.filePath.split('/').map(encodeURIComponent).join('/');
   const url = new URL(`https://api.github.com/repos/${encodeURIComponent(config.owner)}/${encodeURIComponent(config.repo)}/contents/${filePath}`);
   if (method === 'GET') url.searchParams.set('ref', config.branch);
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 12_000);
-  try {
-    const response = await fetchImpl(url.toString(), { method, headers: {
-      Accept: 'application/vnd.github+json', Authorization: `Bearer ${config.token}`,
-      'X-GitHub-Api-Version': '2026-03-10', 'User-Agent': 'Hitelecom-Catalog-Manager',
-      ...(payload ? { 'Content-Type': 'application/json' } : {}),
-    }, ...(payload ? { body: JSON.stringify(payload) } : {}), redirect: 'error', signal: controller.signal });
-    // Never return GitHub's response body or error text to a browser.
-    if (response.status === 409 && method === 'PUT') throw new ApiError(409, 'The catalog changed. Reload and merge your draft before saving again.');
-    if (!response.ok) throw new ApiError(502, method === 'PUT' ? 'Repository rejected the save. Check server configuration and branch permissions.' : 'Could not read the catalog from the repository.');
-    const bytes = await readBytes(response.body, MAX_BYTES * 2 + 65_536, 502);
-    try { return JSON.parse(decoder.decode(bytes)); } catch { throw new ApiError(502, 'Repository response is invalid.'); }
-  } catch (error) {
-    if (error instanceof ApiError) throw error;
-    throw new ApiError(502, 'Repository is temporarily unavailable.');
-  } finally { clearTimeout(timer); }
+  // 诊断分类：up_http=GitHub 返回了 HTTP 错误状态（配置/权限类）；
+  // up_timeout=20 秒无响应；up_network=连接失败；up_config=凭据含非法字符导致请求无法构造。
+  // 永不透传 GitHub 响应正文，仅暴露类别与状态码。
+  const attempt = async () => {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 20_000);
+    try {
+      let response;
+      try {
+        response = await fetchImpl(url.toString(), { method, headers: {
+          Accept: 'application/vnd.github+json', Authorization: `Bearer ${config.token}`,
+          'X-GitHub-Api-Version': '2026-03-10', 'User-Agent': 'Hitelecom-Catalog-Manager',
+          ...(payload ? { 'Content-Type': 'application/json' } : {}),
+        }, ...(payload ? { body: JSON.stringify(payload) } : {}), redirect: 'error', signal: controller.signal });
+      } catch (error) {
+        const kind = error?.name === 'AbortError' ? 'up_timeout' : 'up_network';
+        console.error(`catalog github ${method} ${kind}:`, error?.name, error?.message);
+        throw new ApiError(502, `Repository request failed (${kind}). Retry; if it persists, check Cloudflare Function logs.`);
+      }
+      if (response.status === 409 && method === 'PUT') throw new ApiError(409, 'The catalog changed. Reload and merge your draft before saving again.');
+      if (!response.ok) {
+        console.error(`catalog github ${method} up_http:`, response.status);
+        throw new ApiError(502, method === 'PUT'
+          ? `Repository rejected the save (up_http ${response.status}). Check server configuration and branch permissions.`
+          : `Repository read failed (up_http ${response.status}). Check GITHUB_OWNER / GITHUB_REPO / GITHUB_BRANCH and token permissions.`);
+      }
+      const bytes = await readBytes(response.body, MAX_BYTES * 2 + 65_536, 502);
+      try { return JSON.parse(decoder.decode(bytes)); } catch { throw new ApiError(502, 'Repository response is invalid.'); }
+    } finally { clearTimeout(timer); }
+  };
+  // GET 失败自动重试一次；PUT 不重试（网络失败时提交可能已生效，重试会造成混乱）
+  try { return await attempt(); } catch (error) {
+    if (method !== 'GET' || !(error instanceof ApiError) || !/\(up_(timeout|network)\)/.test(error.message)) throw error;
+    return await attempt();
+  }
 }
 
 function base64Encode(bytes) {
