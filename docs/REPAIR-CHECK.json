@@ -1,0 +1,71 @@
+{
+  "result": "PASS",
+  "generatedAt": "2026-10-20T08:43:54.319993+00:00",
+  "inputZipSha256": "7722f9216c03fb0ad62facfa7cd251b9afcf434b90bf12e90ff86f48b8749e5a",
+  "originalFileCount": 161,
+  "modifiedFunctionalFiles": [
+    "scripts/catalog-server.mjs",
+    "src/pages/zh/product/lists/cid/[cid].astro",
+    "src/pages/fr/product/lists/cid/[cid].astro",
+    "src/pages/ru/product/lists/cid/[cid].astro",
+    "src/pages/de/product/lists/cid/[cid].astro",
+    "src/pages/ja/product/lists/cid/[cid].astro",
+    "src/pages/es/product/lists/cid/[cid].astro",
+    "src/pages/product/lists/cid/[cid].astro",
+    "src/lib/catalog-site.ts",
+    "src/lib/catalog.mjs",
+    "src/lib/catalog-adapter.mjs",
+    "src/styles/catalog-admin.css",
+    "src/admin/editor.mjs",
+    "src/components/catalog/CatalogAdmin.astro"
+  ],
+  "nodeVersion": "v24.19.0",
+  "tests": {
+    "total": 65,
+    "passed": 65,
+    "failed": 0,
+    "skipped": 0,
+    "groups": {
+      "editor": 23,
+      "cloudflareApi": 16,
+      "localServer": 9,
+      "adapter": 10,
+      "model": 5,
+      "astroBuildCompiler": 2
+    }
+  },
+  "build": {
+    "adminOnlyAstroVersion": "7.2.6",
+    "isolatedAdminBuild": "PASS",
+    "output": "catalog-admin.html",
+    "bundledAssets": 2,
+    "astroFilesCompiled": 9,
+    "fullWebsiteBuildPerformed": false
+  },
+  "unchanged": {
+    "src/data/product-catalog.json": true,
+    "functions/api/catalog.js": true,
+    "src/lib/access-auth.mjs": true,
+    "public/_headers": true,
+    "package.json": true,
+    "astro.config.mjs": true
+  },
+  "data": {
+    "products": 14,
+    "categories": 10,
+    "originalCatalogPreserved": true
+  },
+  "productionProbe": {
+    "date": "2026-10-20",
+    "adminStatus": 200,
+    "apiStatus": 401,
+    "apiMode": "password",
+    "authenticatedProductionWritePerformed": false
+  },
+  "limitations": [
+    "Input is an incremental module subset, with 27 missing import targets and no root lockfile or prune script.",
+    "No real admin password or production GitHub write/deploy verification.",
+    "Missing ProductCard/ListSidebar consumers require locale URL wiring and real browser integration in the full repo.",
+    "No browser screenshot or real-device layout validation; JSDOM assertions are DOM/interaction checks."
+  ]
+}

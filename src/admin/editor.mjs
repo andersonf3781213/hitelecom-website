@@ -63,7 +63,7 @@ function makeElement(document, tag, className, text) {
   return element;
 }
 
-export function initializeEditor({ root = globalThis.document?.querySelector('#catalog-app'), fetchImpl = globalThis.fetch?.bind(globalThis), storage, now = () => new Date(), confirmImpl, downloadImpl } = {}) {
+export function initializeEditor({ root = globalThis.document?.querySelector('#catalog-app'), fetchImpl = globalThis.fetch?.bind(globalThis), storage, now = () => new Date(), confirmImpl, downloadImpl, promptImpl, sessionStorage: sessionStorageOverride, requestTimeoutMs = 30_000 } = {}) {
   if (!root || root.dataset.initialized === 'true') return null;
   root.dataset.initialized = 'true';
   const document = root.ownerDocument;
@@ -78,16 +78,14 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
   let browserStorage = storage;
   if (browserStorage === undefined) { try { browserStorage = window?.localStorage; } catch { browserStorage = null; } }
   const confirm = confirmImpl || ((text) => window.confirm(text));
-  const state = { catalog: clone(seed), baseline: clone(seed), protectedCatalog: clone(seed), protectionHistory: [], version: null, backend: mode === 'local' ? 'local' : 'github', dirty: false, saving: false, ready: mode === 'demo', previewDate: shanghaiDate(now()), edit: null, editId: null, locale: 'en', draggedId: null, lastSaved: '', demoSavedAt: '', auto: null };
-  const protections = () => mode === 'demo' ? [...state.protectionHistory, state.protectedCatalog] : [state.protectedCatalog];
+  const state = { catalog: clone(seed), baseline: clone(seed), protectedCatalog: clone(seed), protectionHistory: [], version: null, backend: mode === 'local' ? 'local' : 'github', dirty: false, saving: false, connecting: false, ready: mode === 'demo', previewDate: shanghaiDate(now()), edit: null, editBaseline: null, editId: null, locale: 'en', draggedId: null, lastSaved: '', demoSavedAt: '', auto: null, feedback: null };
+  const protections = () => [...state.protectionHistory, state.protectedCatalog];
   function validateWorkspace(candidate) {
-    if (mode !== 'demo') return validateCatalog(candidate, { current: state.protectedCatalog });
     const errors = new Set();
     for (const current of [state.baseline, ...protections()]) for (const error of validateCatalog(candidate, { current }).errors) errors.add(error);
     return { valid: errors.size === 0, errors: [...errors] };
   }
   function preserveWorkspace(candidate) {
-    if (mode !== 'demo') return preserveProtectedFields(candidate, state.protectedCatalog);
     return [state.baseline, ...protections()].reduce((result, current) => preserveProtectedFields(result, current), candidate);
   }
   function publishedProduct(id) { return protections().map(catalog => catalog.products.find(product => product.id === id)).find(product => product?.status === 'published'); }
@@ -120,25 +118,35 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
     return history;
   }
 
-  function alert(text, editor = false) {
+  function alert(text, editor = false, title = '请查看操作提示', kind = 'error') {
     const area = q(editor ? '[data-editor-alert]' : '[data-alert]');
-    if (!area) return;
-    area.textContent = text;
-    area.hidden = !text;
+    if (area) { area.textContent = text; area.hidden = !text; }
+    const dialogArea = q('[data-editor-alert]');
+    if (!editor && q('[data-product-dialog]')?.open && dialogArea) { dialogArea.textContent = text; dialogArea.hidden = !text; }
+    state.feedback = text ? { title, description: text, kind } : null;
+    updateSaveState();
+    if (text && (editor || q('[data-product-dialog]')?.open)) {
+      dialogArea?.scrollIntoView?.({ block: 'nearest' });
+      dialogArea?.focus({ preventScroll: true });
+    }
   }
   function setSaveState(title, description, kind = '') {
     q('[data-save-title]').textContent = title;
     q('[data-save-description]').textContent = description;
     q('[data-save-indicator]').className = `save-indicator ${kind}`;
     // 未连接（!state.ready）时保持可点：点击保存按钮会重新连接并弹出密码框（V111b）
-    q('[data-action="save"]').disabled = state.saving || (state.ready && !state.dirty);
-    q('[data-action="save"]').textContent = state.saving ? '正在保存…' : '保存更改 ↗';
-    q('[data-action="discard"]').disabled = !state.dirty || state.saving;
+    q('[data-action="save"]').disabled = state.saving || state.connecting || (state.ready && !state.dirty);
+    q('[data-action="save"]').textContent = state.saving ? '正在保存…' : state.connecting ? '正在连接…' : !state.ready ? '连接目录 ↗' : '保存更改 ↗';
+    q('[data-action="discard"]').disabled = !state.dirty || state.saving || state.connecting;
+    q('.save-bar')?.setAttribute('aria-busy', String(state.saving || state.connecting));
   }
   function updateSaveState() {
     if (state.saving) return setSaveState('正在保存目录', '请稍候，当前编辑内容会保留。', 'pending');
+    if (state.connecting) return setSaveState('正在连接目录', '正在读取最新目录；需要密码时会显示登录窗口。', 'pending');
+    if (state.feedback) return setSaveState(state.feedback.title, state.feedback.description, state.feedback.kind);
+    if (state.editBaseline && hasUncommittedEditor()) return setSaveState('编辑框中有未应用的内容', '先点击「完成编辑」，再保存或导出工作区。', 'dirty');
     if (state.dirty) return setSaveState('有未保存的更改', mode === 'demo' ? '演示内容仅保留在此浏览器，也可导出备份。' : '更改保留在当前工作区，保存后才会写入目录。', 'dirty');
-    if (!state.ready) return setSaveState('正在连接目录', '读取最新版本后即可保存。', 'pending');
+    if (!state.ready) return setSaveState('目录尚未连接', '点击「连接目录」登录或重试，当前编辑内容会保留。', 'error');
     if (state.lastSaved) return setSaveState(state.lastSaved, mode === 'demo' ? '仅保存在此浏览器，不会更新网站。' : state.backend === 'local' ? '目录 JSON 已写入本地文件。重新构建后网站才会更新。' : '目录已提交 GitHub，等待网站构建。构建完成前页面不会更新。', 'saved');
     setSaveState('目录已加载', mode === 'demo' ? '浏览器演示 · 修改不会更新官网。' : '编辑完成后保存目录数据。');
   }
@@ -150,7 +158,7 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
       return true;
     } catch { alert('浏览器存储不可用，编辑内容仍保留在当前页面。请导出 JSON 备份。'); return false; }
   }
-  function markDirty() { state.dirty = JSON.stringify(state.catalog) !== JSON.stringify(state.baseline); state.lastSaved = ''; persistDemo(); render(); }
+  function markDirty() { state.dirty = JSON.stringify(state.catalog) !== JSON.stringify(state.baseline); state.lastSaved = ''; state.feedback = null; persistDemo(); render(); }
   function productName(product) { return product.locales?.zh?.name || product.locales?.en?.name || product.id || '未命名产品'; }
   function categoryName(id) { const category = state.catalog.categories.find((entry) => entry.id === id); return category?.labels?.zh || category?.labels?.en || id; }
   function isFiltered() { return Boolean(q('[data-filter="search"]').value.trim() || q('[data-filter="category"]').value || q('[data-filter="status"]').value); }
@@ -230,9 +238,21 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
     renderCategories(); renderProducts(); renderCampaign(); updateSaveState();
   }
   function showDialog(dialog) { if (typeof dialog.showModal === 'function') dialog.showModal(); else dialog.setAttribute('open', ''); }
-  function closeDialog() { const dialog = q('[data-product-dialog]'); if (typeof dialog.close === 'function') dialog.close(); else dialog.removeAttribute('open'); state.edit = null; }
+  function closeDialog() { const dialog = q('[data-product-dialog]'); if (typeof dialog.close === 'function') dialog.close(); else dialog.removeAttribute('open'); state.edit = null; state.editBaseline = null; }
   function field(name) { return q('[data-product-form]').elements.namedItem(name); }
   const localeFields = { localeName: 'name', localeSummary: 'summary', localeUrl: 'url', localeBody: 'body', localeImageAlt: 'imageAlt', localeSeoTitle: 'seoTitle', localeSeoDescription: 'seoDescription' };
+  function editorSnapshot() {
+    if (!state.edit) return null;
+    const product = clone(state.edit);
+    const localized = product.locales[state.locale] ||= emptyLocale();
+    for (const [name, key] of Object.entries(localeFields)) localized[key] = field(name).value;
+    localized.published = field('localePublished').checked;
+    for (const name of ['id', 'slug', 'categoryId', 'status']) product[name] = field(name).value.trim();
+    product.managedPage = field('managedPage').checked;
+    product.image = { src: field('imageSrc').value.trim(), alt: field('imageAlt').value.trim() };
+    return product;
+  }
+  function hasUncommittedEditor() { return Boolean(state.edit && JSON.stringify(editorSnapshot()) !== JSON.stringify(state.editBaseline)); }
   function flushLocale() {
     if (!state.edit) return;
     const localized = state.edit.locales[state.locale] ||= emptyLocale();
@@ -265,7 +285,7 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
     field('managedPage').disabled = locked && published.managedPage === false;
     field('imageSrc').value = state.edit.image?.src || ''; field('imageAlt').value = state.edit.image?.alt || '';
     const categories = field('categoryId'); categories.replaceChildren(); getOrderedCategories(state.catalog).forEach((category) => { const option = makeElement(document, 'option', '', category.labels.zh || category.labels.en); option.value = category.id; categories.append(option); }); categories.value = state.edit.categoryId;
-    renderLocale(); showDialog(q('[data-product-dialog]'));
+    renderLocale(); state.editBaseline = editorSnapshot(); showDialog(q('[data-product-dialog]'));
   }
   function commitEditor(event) {
     event.preventDefault(); flushLocale();
@@ -275,27 +295,22 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
     product.managedPage = field('managedPage').checked;
     product.image = { src: field('imageSrc').value.trim(), alt: field('imageAlt').value.trim() };
     const next = clone(state.catalog);
-    if (state.editId) { const index = next.products.findIndex((entry) => entry.id === state.editId); next.products[index] = product; } else next.products.push(product);
+    if (state.editId) { const index = next.products.findIndex((entry) => entry.id === state.editId); if (index < 0) { alert('该产品已不在当前目录中。请复制需要保留的内容，关闭编辑后重新核对目录。', true); return; } next.products[index] = product; } else next.products.push(product);
     const validation = validateWorkspace(next);
     if (!validation.valid) { alert(validation.errors.join('\n'), true); return; }
     state.catalog = next; closeDialog(); alert(''); markDirty();
   }
   async function save() {
+    if (hasUncommittedEditor()) { alert('编辑框中还有未应用的内容。请先点击「完成编辑」，再保存更改。', true, '尚未保存：请先完成编辑'); return; }
     if (!state.dirty || state.saving || !state.ready) return;
     const validation = validateWorkspace(state.catalog);
-    if (!validation.valid) { alert(validation.errors.join('\n')); return; }
+    if (!validation.valid) { alert(validation.errors.join('\n'), false, '无法保存：请修正下列问题'); return; }
     alert(''); state.saving = true; updateSaveState();
     const snapshot = clone(state.catalog);
     // Keep valid historical snapshots only when publication locks disappear from the next save.
     // A hidden product may be incomplete, so changing its status in a synthetic snapshot is unsafe.
-    const protectedNext = mode === 'demo' ? clone(snapshot) : preserveProtectedFields(snapshot, state.protectedCatalog);
-    const historyNext = mode === 'demo' ? minimalProtectionHistory(snapshot) : [];
-    if (mode !== 'demo') for (const previous of state.protectedCatalog.products) {
-      const product = protectedNext.products.find(entry => entry.id === previous.id);
-      if (!product) continue;
-      if (previous.status === 'published') product.status = 'published';
-      for (const [locale, localized] of Object.entries(previous.locales || {})) if (localized.published) product.locales[locale].published = true;
-    }
+    const protectedNext = clone(snapshot);
+    const historyNext = minimalProtectionHistory(snapshot);
     try {
       if (mode === 'demo') {
         const savedAt = now().toISOString();
@@ -305,37 +320,81 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
       else {
         if (!fetchImpl) throw new Error('当前环境无法连接保存接口。');
         const headers = { 'Content-Type': 'application/json' };
-        if (mode === 'local') { const configResponse = await fetchImpl('/api/config', { cache: 'no-store', credentials: 'same-origin' }); const config = await readResponse(configResponse); if (!config.csrfToken) throw new Error('无法获取本地保存凭据，请刷新后重试。'); headers['X-Catalog-CSRF'] = config.csrfToken; }
+        if (mode === 'local') { const configResponse = await request('/api/config', { cache: 'no-store', credentials: 'same-origin' }); const config = await readResponse(configResponse); if (!config.csrfToken) throw new Error('无法获取本地保存凭据，请刷新后重试。'); headers['X-Catalog-CSRF'] = config.csrfToken; }
         const response = await apiFetch('/api/catalog', { method: 'PUT', headers, body: JSON.stringify({ catalog: snapshot, version: state.version }) });
         const data = await readResponse(response);
-        if (!data.saved || !data.version) throw new Error('保存接口没有确认成功，编辑内容已保留。');
+        if (data.saved !== true || typeof data.version !== 'string' || !data.version.trim()) throw new Error('保存接口没有确认成功，编辑内容已保留。');
         state.version = data.version; state.backend = data.mode || state.backend;
         state.lastSaved = state.backend === 'local' ? '已写入本地文件' : '已提交 GitHub，等待构建';
       }
       state.baseline = snapshot;
       state.protectedCatalog = protectedNext; state.protectionHistory = historyNext; state.dirty = JSON.stringify(state.catalog) !== JSON.stringify(snapshot);
-    } catch (error) { alert(`保存失败：${messageOf(error)}\n编辑内容已保留，可重试或导出 JSON 备份。`); state.dirty = true; state.lastSaved = ''; }
+    } catch (error) { state.dirty = true; state.lastSaved = ''; alert(`保存失败：${messageOf(error)}\n编辑内容已保留，可导出 JSON 备份。`, false, '保存未完成'); }
     finally { state.saving = false; render(); }
   }
   // 管理密码模式（V110）：口令仅保存在本次浏览会话（sessionStorage），
   // 随请求以 Bearer 头发送；API 返回 401 且 mode=password 时提示输入并重试一次。
   // Access 模式下浏览器在进入页面前已完成登录，不会触发此分支。
   const TOKEN_KEY = 'catalog-admin-token';
-  const getToken = () => { try { return globalThis.sessionStorage?.getItem(TOKEN_KEY) || ''; } catch { return ''; } };
-  const setToken = (value) => { try { globalThis.sessionStorage?.setItem(TOKEN_KEY, value); } catch {} };
+  let tokenStorage = sessionStorageOverride;
+  if (tokenStorage === undefined) { try { tokenStorage = window?.sessionStorage; } catch { tokenStorage = null; } }
+  let memoryToken = '';
+  const getToken = () => { if (memoryToken) return memoryToken; try { return tokenStorage?.getItem(TOKEN_KEY) || ''; } catch { return ''; } };
+  const setToken = (value) => { memoryToken = value || ''; try { if (memoryToken) tokenStorage?.setItem(TOKEN_KEY, memoryToken); else tokenStorage?.removeItem(TOKEN_KEY); } catch {} };
+  let authPending = null;
+  function requestPassword() {
+    if (promptImpl) return Promise.resolve(promptImpl('请输入管理密码（仅本次浏览会话有效）'));
+    if (authPending) return authPending.promise;
+    const dialog = q('[data-auth-dialog]');
+    if (!dialog) return Promise.reject(new Error('登录窗口缺失，请重新加载管理页。'));
+    const input = q('[data-admin-password]'); input.value = '';
+    const promise = new Promise(resolve => { authPending = { resolve }; });
+    authPending.promise = promise;
+    showDialog(dialog); input.focus();
+    return promise;
+  }
+  function finishAuthentication(value) {
+    if (!authPending) return;
+    const { resolve } = authPending; authPending = null;
+    const dialog = q('[data-auth-dialog]');
+    q('[data-admin-password]').value = '';
+    if (typeof dialog.close === 'function') dialog.close(); else dialog.removeAttribute('open');
+    resolve(value);
+  }
+  q('[data-auth-form]')?.addEventListener('submit', event => { event.preventDefault(); const value = q('[data-admin-password]').value; if (value) finishAuthentication(value); });
+  q('[data-auth-dialog]')?.addEventListener('cancel', event => { event.preventDefault(); finishAuthentication(null); });
+  async function request(url, options = {}) {
+    if (!fetchImpl) throw new Error('当前环境无法连接目录接口。');
+    const controller = new AbortController();
+    const timeout = Number.isFinite(requestTimeoutMs) && requestTimeoutMs > 0 ? requestTimeoutMs : 30_000;
+    let timer;
+    const expired = new Promise((_, reject) => { timer = setTimeout(() => {
+      reject(new Error(options.method === 'PUT' ? '保存请求超时，结果尚未确认。请先导出备份，刷新读取目录并确认后再保存。' : '连接目录接口超时，请检查网络后重新连接。'));
+      controller.abort();
+    }, timeout); });
+    const completed = (async () => {
+      const response = await fetchImpl(url, { ...options, signal: controller.signal });
+      // Keep the deadline active through body transfer, not only response headers.
+      const text = await response.text();
+      return new Response([204, 205, 304].includes(response.status) ? null : text, { status: response.status, statusText: response.statusText, headers: response.headers });
+    })();
+    try { return await Promise.race([completed, expired]); }
+    finally { clearTimeout(timer); }
+  }
   async function apiFetch(url, options = {}, retried = false) {
     const headers = { ...(options.headers || {}) };
     if (getToken()) headers['Authorization'] = `Bearer ${getToken()}`;
-    const response = await fetchImpl(url, { ...options, headers, credentials: 'same-origin' });
+    const response = await request(url, { ...options, headers, credentials: 'same-origin' });
+    if (response.status === 401) setToken('');
     if (response.status === 401 && !retried && mode === 'api') {
       let wantsPassword = false;
       try { const data = await response.clone().json(); wantsPassword = data?.mode === 'password'; } catch {}
       if (wantsPassword) {
-        const password = globalThis.prompt?.('请输入管理密码（仅本次浏览会话有效）');
+        const password = await requestPassword();
         if (password) {
           setToken(password);
           return apiFetch(url, options, true);
-        }
+        } else throw new Error('已取消登录。当前编辑内容仍保留，可点击「连接目录」重试。');
       }
     }
     return response;
@@ -353,9 +412,10 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
     const candidate = preserveWorkspace(value?.catalog || value);
     const validation = validateWorkspace(candidate);
     if (!validation.valid) { alert(`导入失败：${validation.errors.join('\n')}`); return false; }
-    state.catalog = candidate; alert('备份已导入工作区。已发布标识、已有发布地址和现有记录已保留，请检查后保存。'); markDirty(); return true;
+    state.catalog = candidate; markDirty(); alert('备份已导入工作区。已发布标识、已有发布地址和现有记录已保留，请检查后保存。', false, '备份已导入工作区', 'notice'); return true;
   }
   function exportCatalog() {
+    if (hasUncommittedEditor()) { alert('编辑框中还有未应用的内容。请先点击「完成编辑」，再导出 JSON 备份。', true, '暂未导出：请先完成编辑'); return false; }
     const json = `${JSON.stringify(state.catalog, null, 2)}\n`;
     const filename = `hitelecom-catalog-${shanghaiDate(now())}.json`;
     if (downloadImpl) { downloadImpl(json, filename); return; }
@@ -366,6 +426,7 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
     const button = event.target.closest('[data-action]'); if (!button || button.disabled) return;
     const action = button.dataset.action; const id = button.dataset.id;
     if (action === 'add' || action === 'edit') openEditor(id);
+    else if (action === 'cancel-auth') finishAuthentication(null);
     else if (action === 'close-editor') closeDialog();
     else if (action === 'save') { if (!state.ready && mode !== 'demo') void connect(); else void save(); }
     else if (action === 'discard') { if (confirm('放弃当前未保存的更改？')) { state.catalog = clone(state.baseline); state.dirty = false; state.lastSaved = mode === 'demo' && state.demoSavedAt ? '已保存到此浏览器' : ''; persistDemo(); alert(''); render(); } }
@@ -378,6 +439,7 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
   });
   q('[data-product-form]').addEventListener('submit', commitEditor);
   q('[data-product-form]').addEventListener('input', (event) => {
+    updateSaveState();
     if (!state.edit || state.editId) return;
     const name = event.target.name;
     if (name === 'id' || name === 'slug') state.auto[name] = false;
@@ -394,7 +456,11 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
       state.edit.locales.en.url = field('localeUrl').value;
     }
   });
-  q('[data-product-dialog]').addEventListener('cancel', () => { state.edit = null; });
+  q('[data-product-dialog]').addEventListener('cancel', () => { state.edit = null; state.editBaseline = null; });
+  q('[data-product-form]').addEventListener('invalid', event => {
+    const details = event.target.closest('details'); if (details) details.open = true;
+    alert(`请检查输入内容：${event.target.validationMessage || event.target.name}`, true, '请修正编辑框中的输入');
+  }, true);
   const tabs = q('[data-locale-tabs]');
   LOCALES.forEach((locale) => { const tab = makeElement(document, 'button', 'locale-tab', LANGUAGE_NAMES[locale]); tab.type = 'button'; tab.dataset.locale = locale; tab.id = `locale-tab-${locale}`; tab.setAttribute('role', 'tab'); tab.setAttribute('aria-controls', 'catalog-locale-content'); tabs.append(tab); });
   q('[data-locale-panel]').id = 'catalog-locale-content';
@@ -417,7 +483,7 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
   root.addEventListener('dragleave', (event) => { const row = event.target.closest('[data-product-id]'); if (row && !row.contains(event.relatedTarget)) row.classList.remove('drop-target'); });
   root.addEventListener('drop', (event) => { const row = event.target.closest('[data-product-id]'); if (!row || !state.draggedId || isFiltered()) return; event.preventDefault(); const index = byBase(state.catalog.products).findIndex((product) => product.id === row.dataset.productId); state.catalog = moveProduct(state.catalog, state.draggedId, index); state.draggedId = null; markDirty(); });
   root.addEventListener('dragend', () => { state.draggedId = null; qa('.is-dragging, .drop-target').forEach((row) => row.classList.remove('is-dragging', 'drop-target')); });
-  window?.addEventListener('beforeunload', (event) => { if (state.dirty && mode !== 'demo') { event.preventDefault(); event.returnValue = ''; } });
+  window?.addEventListener('beforeunload', (event) => { if ((state.dirty || hasUncommittedEditor()) && mode !== 'demo') { event.preventDefault(); event.returnValue = ''; } });
   q('[data-mode-label]').textContent = mode === 'demo' ? '浏览器演示' : mode === 'local' ? '本地文件模式' : 'GitHub 保存模式';
   q('[data-mode-notice]').textContent = mode === 'demo' ? '演示工作区 · 更改仅保存在当前浏览器，可导出 JSON 备份，不会更新官网。' : mode === 'local' ? '本地文件模式 · 保存将写入目录 JSON 文件。重新构建网站后，公开页面才会更新。' : 'GitHub 保存模式 · 保存会提交目录数据，等待网站构建完成后，公开页面才会更新。';
   if (mode === 'demo') {
@@ -445,19 +511,28 @@ export function initializeEditor({ root = globalThis.document?.querySelector('#c
     } catch { alert('浏览器草稿无法读取，已加载初始目录。'); }
     render();
   } else render();
-  async function connect() {
+  let connectingPromise = null;
+  function connect() {
+    if (connectingPromise) return connectingPromise;
+    state.connecting = true; state.feedback = null; updateSaveState();
+    connectingPromise = (async () => {
+    // Yield before work so a synchronous failure cannot leave a stale flight cached.
+    await Promise.resolve();
     try {
       if (!fetchImpl) throw new Error('当前环境无法连接目录接口。');
       const response = await apiFetch('/api/catalog', { cache: 'no-store' }); const data = await readResponse(response);
-      const validation = validateCatalog(data.catalog); if (!validation.valid || !data.version) throw new Error('服务器目录或版本无效，请检查目录数据。');
+      const validation = validateCatalog(data.catalog); if (!validation.valid || typeof data.version !== 'string' || !data.version.trim()) throw new Error('服务器目录或版本无效，请检查目录数据。');
       // Do not replace edits made while the initial read was in flight.
       const previousSeed = state.baseline;
       state.baseline = clone(data.catalog); state.protectedCatalog = clone(data.catalog); state.protectionHistory = []; state.version = data.version; state.backend = data.mode || state.backend; state.ready = true;
       if (data.auth === 'password') { const badge = q('[data-mode-label]'); if (badge) badge.textContent = 'GitHub 保存模式 · 密码登录'; }
       if (!state.dirty) state.catalog = clone(data.catalog);
-      else { state.catalog = preserveProtectedFields(state.catalog, data.catalog); state.dirty = JSON.stringify(state.catalog) !== JSON.stringify(state.baseline); if (JSON.stringify(previousSeed) !== JSON.stringify(data.catalog)) alert('已读取服务器最新版本。当前编辑已保留，请核对后保存。'); }
+      else { state.catalog = preserveProtectedFields(state.catalog, data.catalog); state.dirty = JSON.stringify(state.catalog) !== JSON.stringify(state.baseline); if (JSON.stringify(previousSeed) !== JSON.stringify(data.catalog)) alert('已读取服务器最新版本。当前编辑已保留，请核对后保存。', false, '目录已连接：请核对当前编辑', 'notice'); }
       render();
-    } catch (error) { alert(`无法读取保存接口：${messageOf(error)}\n点底部「保存更改」可重新连接并输入管理密码；也可导出 JSON 备份。`); setSaveState('保存接口未连接', '点「保存更改」重新连接，会再次弹出密码输入框。', 'dirty'); }
+    } catch (error) { state.ready = false; alert(`无法读取保存接口：${messageOf(error)}\n点击底部「连接目录」重新连接；也可导出 JSON 备份。`, false, '目录接口尚未连接'); }
+    finally { state.connecting = false; connectingPromise = null; updateSaveState(); }
+    })();
+    return connectingPromise;
   }
   const ready = mode === 'demo' ? Promise.resolve() : connect();
   return { ready, getState: () => clone(state), save, importCatalog, exportCatalog, openEditor };

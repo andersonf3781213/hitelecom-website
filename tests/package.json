@@ -1,0 +1,16 @@
+{
+  "name": "hitelecom-catalog-regression-tests",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "scripts": {
+    "test": "node --test catalog-*.test.mjs"
+  },
+  "devDependencies": {
+    "@astrojs/compiler": "4.0.0",
+    "astro": "7.2.6",
+    "jsdom": "30.1.3"
+  }
+}

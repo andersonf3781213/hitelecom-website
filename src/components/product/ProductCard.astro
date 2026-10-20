@@ -12,11 +12,13 @@ interface Props { locale: Locale; product: ProductCard }
 const { locale, product } = Astro.props;
 // 目录管理模块新增产品的图片为 /images/... 或 https:// 地址（不经构建期管线），直出 <img>
 const externalImg = /^\/|^https?:\/\//.test(product.img);
+// 目录管理模块提供的语言地址优先；缺省回落到 id 推导路径
+const cardHref = product.url || product.href || l(productPath(product.id), locale);
 ---
 
 <li class={`reveal${product.id ? '' : ' nbd'}`} data-name={product.name.toLowerCase()}>
   {product.id ? (
-    <a href={l(productPath(product.id), locale)}>
+    <a href={cardHref}>
       <div class="pro_2_mid_right_1_mid">
         <div class="pro_2_mid_right_1_mid_1">
           {externalImg

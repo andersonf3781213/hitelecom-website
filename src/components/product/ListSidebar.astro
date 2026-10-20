@@ -7,7 +7,7 @@ import { l, type Locale } from '../../i18n';
 import { productPath, type SubCat } from '../../data/product';
 import { ui } from '../../data/ui';
 
-interface SideProd { id: number | string; name: string }
+interface SideProd { id: number | string; name: string; url?: string; href?: string }
 interface Props {
   locale: Locale;
   subcats: SubCat[];
@@ -45,7 +45,7 @@ const { locale, subcats, sideProds = {}, parentCid = '' } = Astro.props;
                 {sideProds[s.cid].map((p) => (
                   <li>
                     {p.id
-                      ? <a class="css3" href={l(productPath(p.id), locale)}>{p.name}</a>
+                      ? <a class="css3" href={p.url || p.href || l(productPath(p.id), locale)}>{p.name}</a>
                       : <span class="css3 plain">{p.name}</span>}
                   </li>
                 ))}

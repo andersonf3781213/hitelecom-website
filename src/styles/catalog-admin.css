@@ -169,3 +169,17 @@
   .workspace-footnote{display:block;line-height:1.8}
   .workspace-footnote span{display:block;margin-top:5px}
 }
+
+/* Catalog repair: errors remain visible beside Save and inside the modal top layer. */
+.save-indicator.error{background:#c74536;box-shadow:0 0 0 4px #fff0ed}
+.save-bar p{white-space:pre-line;max-height:120px;overflow:auto;overflow-wrap:anywhere}
+.save-bar:has(.save-indicator.error) [data-save-title]{color:#9f3025}
+.dialog-footer>[data-editor-alert]{display:block;flex-basis:100%;width:100%;margin:0 0 12px;max-height:120px;overflow:auto;white-space:pre-line;outline-offset:3px}
+.auth-dialog{width:min(440px,calc(100vw - 32px));padding:26px;border:1px solid #dce5f2;border-radius:14px;color:#273750;box-shadow:0 24px 80px #152a4c30}
+.auth-dialog::backdrop{background:#152a4c66}
+.auth-dialog h2{font-size:22px;margin:8px 0 12px}
+.auth-dialog p{font-size:13px;line-height:1.7;color:#63738b}
+.auth-dialog label{display:block;margin-top:20px;font-size:13px}
+.auth-dialog input{display:block;width:100%;box-sizing:border-box;min-height:44px;margin-top:8px;padding:10px;border:1px solid #cdd8e8;border-radius:7px;font:inherit}
+.auth-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}
+@media(max-width:560px){.save-bar{max-height:45dvh;overflow:auto}.catalog-main{padding-bottom:230px}}

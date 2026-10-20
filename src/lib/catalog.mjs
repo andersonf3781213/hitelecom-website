@@ -76,7 +76,7 @@ function textField(value, label, maximum, errors, required = false) {
   return value.length <= maximum && !BAD_TEXT.test(value) && (!required || !!value.trim());
 }
 
-function localizedErrors(localized, label, { publishedProduct, managed, image }, errors) {
+function localizedErrors(localized, label, { publishedProduct, managed, image, locale }, errors) {
   if (!object(localized)) { errors.push(`${label} must be an object.`); return; }
   checkKeys(localized, [...LOCALIZED_FIELDS, 'published'], label, errors);
   for (const field of LOCALIZED_FIELDS) textField(localized[field], `${label}.${field}`, LIMITS[field], errors);
@@ -88,6 +88,12 @@ function localizedErrors(localized, label, { publishedProduct, managed, image },
   if (typeof localized.name !== 'string' || !localized.name.trim()) errors.push(`${label}.name is required for a published locale.`);
   if (!safePath(localized.url)) errors.push(`${label}.url is required for a published locale.`);
   if (publishedProduct && managed) {
+    // Each locale's [...managed].astro route generates one segment under /product/.
+    const prefix = locale === 'en' ? '/product/' : `/${locale}/product/`;
+    if (typeof localized.url !== 'string' || !localized.url.startsWith(prefix) ||
+        !localized.url.slice(prefix.length) || localized.url.slice(prefix.length).includes('/')) {
+      errors.push(`${label}.url must use ${prefix}<page-slug> with one final path segment and no trailing slash to publish a managed page.`);
+    }
     if (typeof localized.summary !== 'string' || localized.summary.trim().length < 40) errors.push(`${label}.summary needs at least 40 characters to publish a managed page.`);
     if (typeof localized.body !== 'string' || localized.body.trim().length < 200) errors.push(`${label}.body needs at least 200 characters to publish a managed page.`);
     if (!safeImage(image?.src)) errors.push(`${label} needs an image URL to publish a managed page.`);
@@ -152,7 +158,7 @@ export function validateCatalog(catalog, { current = null } = {}) {
       for (const [locale, localized] of Object.entries(product.locales)) {
         if (!LOCALES.includes(locale)) continue;
         localizedErrors(localized, `${label}.locales.${locale}`, {
-          publishedProduct: product.status === 'published', managed: product.managedPage, image: product.image
+          publishedProduct: product.status === 'published', managed: product.managedPage, image: product.image, locale
         }, errors);
         if (localized?.published === true) publishedCount++;
         if (object(localized) && safePath(localized.url)) {
@@ -261,7 +267,7 @@ export function getManagedPages(catalog) {
       const localized = product.locales[locale];
       if (!object(localized) || localized.published !== true) continue;
       const errors = [];
-      localizedErrors(localized, locale, { publishedProduct: true, managed: true, image: product.image }, errors);
+      localizedErrors(localized, locale, { publishedProduct: true, managed: true, image: product.image, locale }, errors);
       if (errors.length || !safeImage(product.image?.src)) continue;
       const route = canonicalPath(localized.url);
       if (routes.has(route)) continue;

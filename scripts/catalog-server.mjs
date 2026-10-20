@@ -215,8 +215,17 @@ export function createCatalogHandler({ projectRoot, csrfToken = randomBytes(32).
       if (!inside(distPath, candidate)) throw new HttpError(400, 'Invalid request path.');
       let info;
       try {
-        info = await stat(candidate);
-        if (info.isDirectory()) { candidate = path.join(candidate, 'index.html'); info = await stat(candidate); }
+        try {
+          info = await stat(candidate);
+          if (info.isDirectory()) { candidate = path.join(candidate, 'index.html'); info = await stat(candidate); }
+        } catch (error) {
+          // Astro build.format='file' emits /catalog-admin.html; browsers use
+          // the same extensionless URLs as the directory/index.html format.
+          const pagePath = pathname.replace(/\/+$/, '');
+          if (!pagePath || path.extname(pagePath)) throw error;
+          candidate = path.join(distPath, `${pagePath}.html`);
+          info = await stat(candidate);
+        }
         if (!info.isFile() || !inside(canonicalDist, await realpath(candidate))) throw new HttpError(404, 'Not found.');
       } catch { throw new HttpError(404, 'Not found.'); }
       send(200, await readFile(candidate), MIME_TYPES[path.extname(candidate).toLowerCase()] || 'application/octet-stream');
@@ -225,6 +234,14 @@ export function createCatalogHandler({ projectRoot, csrfToken = randomBytes(32).
       else send(500, { error: 'Catalog service is unavailable. Check the source catalog and try again.' });
     }
   };
+}
+
+export async function hasBuiltCatalogAdmin(projectRoot) {
+  for (const parts of [['catalog-admin', 'index.html'], ['catalog-admin.html']]) {
+    try { if ((await stat(path.join(projectRoot, 'dist', ...parts))).isFile()) return true; }
+    catch { /* Try the other supported Astro build format. */ }
+  }
+  return false;
 }
 
 async function startCli() {
@@ -236,8 +253,7 @@ async function startCli() {
   else if (args.length) throw new Error('Usage: npm run catalog:manage -- [--port 4328]');
   if (!/^\d+$/.test(value) || Number(value) < 1 || Number(value) > 65535) throw new Error('Use a port from 1 to 65535.');
   const port = Number(value);
-  try { if (!(await stat(path.join(projectRoot, 'dist', 'catalog-admin', 'index.html'))).isFile()) throw new Error(); }
-  catch { throw new Error('Built admin unavailable. Run npm run build first.'); }
+  if (!(await hasBuiltCatalogAdmin(projectRoot))) throw new Error('Built admin unavailable. Run npm run build first.');
   const server = createServer(createCatalogHandler({ projectRoot, port }));
   server.requestTimeout = 30_000;
   server.headersTimeout = 10_000;

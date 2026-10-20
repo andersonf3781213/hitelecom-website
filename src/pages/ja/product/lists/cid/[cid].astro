@@ -21,7 +21,8 @@ export const getStaticPaths: GetStaticPaths = () =>
 const { cid } = Astro.params;
 const pc = await getMergedProducts('ja');
 // V109 目录管理：基础顺序/本月主推/草稿隐藏/新发布产品卡片由 product-catalog.json 驱动
-const adaptedLists = Object.fromEntries(Object.entries(pc.lists).map(([k, lp]) => [k, { ...lp, products: applyCatalog(lp.products, k, 'ja') }]));
+const catalogCardPool = Object.values(pc.lists).flatMap((lp) => lp.products);
+const adaptedLists = Object.fromEntries(Object.entries(pc.lists).map(([k, lp]) => [k, { ...lp, products: applyCatalog(lp.products, k, 'ja', catalogCardPool) }]));
 const page = adaptedLists[cid];
 const parent = listParent[cid];
 const tabLabel = productTabs.ja.find((t) => t.key === parent)?.label ?? '製品';
@@ -37,7 +38,7 @@ const banner = await optimizedSrc(page.bannerImg, { width: 1920 });
 // 侧栏用：各子分类 → 其产品（传感器名称，直达详情页）
 const enLists = adaptedLists;
 const sideProds = Object.fromEntries(
-  page.subcats.map((s) => [s.cid, (enLists[s.cid]?.products ?? []).map((p) => ({ id: p.id, name: p.name }))])
+  page.subcats.map((s) => [s.cid, (enLists[s.cid]?.products ?? []).map((p) => ({ id: p.id, name: p.name, url: p.url, href: p.href }))])
 );
 
 // GEO：面包屑 + 产品清单语义化（无详情页的定制条目不进入 ItemList）
@@ -50,7 +51,7 @@ const bcLd = breadcrumbLd([
   { name: catName },
 ]);
 const listLd = itemListLd(
-  page.products.filter((p) => p.id).map((p) => ({ name: p.name, url: `${SITE_URL}${l(productPath(p.id), 'ja')}` })),
+  page.products.filter((p) => p.id).map((p) => ({ name: p.name, url: new URL(p.url || l(productPath(p.id), 'ja'), SITE_URL).href })),
   pageUrl,
   `Hitelecom ${catName}`,
 );
