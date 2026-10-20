@@ -120,15 +120,22 @@ async function github(config, fetchImpl, method, payload) {
     try {
       let response;
       try {
+        // Workers rejects redirect:'error' while constructing the request, before I/O.
+        // Use manual and reject redirects explicitly so credentials are never forwarded.
         response = await fetchImpl(url.toString(), { method, headers: {
           Accept: 'application/vnd.github+json', Authorization: `Bearer ${config.token}`,
           'X-GitHub-Api-Version': '2026-03-10', 'User-Agent': 'Hitelecom-Catalog-Manager',
           ...(payload ? { 'Content-Type': 'application/json' } : {}),
-        }, ...(payload ? { body: JSON.stringify(payload) } : {}), redirect: 'error', signal: controller.signal });
+        }, ...(payload ? { body: JSON.stringify(payload) } : {}), redirect: 'manual', signal: controller.signal });
       } catch (error) {
         const kind = error?.name === 'AbortError' ? 'up_timeout' : 'up_network';
-        console.error(`catalog github ${method} ${kind}:`, error?.name, error?.message);
+        // Runtime messages can contain header values; log only an allowlisted type.
+        const errorType = ['Error', 'TypeError', 'AbortError', 'TimeoutError', 'NetworkError'].includes(error?.name) ? error.name : 'RequestError';
+        console.error(`catalog github ${method} ${kind}:`, errorType);
         throw new ApiError(502, `Repository request failed (${kind}). Retry; if it persists, check Cloudflare Function logs.`);
+      }
+      if (response.status >= 300 && response.status < 400) {
+        throw new ApiError(502, 'Repository redirected (up_redirect). Check GITHUB_OWNER / GITHUB_REPO and the catalog path.');
       }
       if (response.status === 409 && method === 'PUT') throw new ApiError(409, 'The catalog changed. Reload and merge your draft before saving again.');
       if (!response.ok) {

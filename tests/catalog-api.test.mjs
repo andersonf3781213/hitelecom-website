@@ -94,7 +94,7 @@ test('authenticated GET reads the configured branch and exposes only catalog met
   assert.equal(new URL(upstream.url).searchParams.get('ref'), env.GITHUB_BRANCH);
   assert.equal(upstream.headers.Authorization, `Bearer ${env.GITHUB_TOKEN}`);
   assert.equal(upstream.headers['X-GitHub-Api-Version'], '2026-03-10');
-  assert.equal(upstream.redirect, 'error');
+  assert.equal(upstream.redirect, 'manual');
   assert.ok(upstream.signal instanceof AbortSignal);
   assert.equal(JSON.stringify(data).includes(env.GITHUB_TOKEN), false);
 });
@@ -209,7 +209,26 @@ test('unpublished managed content cannot bypass publication requirements through
   assert.deepEqual(mock.calls.map(value => value.method), ['GET']);
 });
 
-test('upstream HTTP errors, transport failures and malformed JSON are sanitized', async () => {
+test('upstream redirects are rejected without following or disclosing the target', async () => {
+  const location = `https://untrusted.example/redirect?private=${env.GITHUB_TOKEN}`;
+  for (const status of [301, 302, 303, 307, 308]) {
+    for (const method of ['GET', 'PUT']) {
+      const redirect = () => new Response(null, { status, headers: { Location: location } });
+      const mock = mockGitHub({ ...(method === 'GET' ? { read: redirect } : { write: redirect }) });
+      const req = method === 'GET' ? request() : request('PUT', { body: { catalog: seed, version: VERSION } });
+      const { response, data } = await call(req, mock);
+      assert.equal(response.status, 502);
+      assert.match(data.error, /up_redirect/);
+      assert.equal(JSON.stringify(data).includes(location), false);
+      assert.equal(JSON.stringify(data).includes(env.GITHUB_TOKEN), false);
+      assert.deepEqual(mock.calls.map(value => value.method), method === 'GET' ? ['GET'] : ['GET', 'PUT']);
+      assert.ok(mock.calls.every(value => value.redirect === 'manual'));
+    }
+  }
+});
+
+test('upstream HTTP errors, transport failures and malformed JSON are sanitized in responses and logs', async (t) => {
+  const logs = t.mock.method(console, 'error', () => {});
   const sensitive = `private response ${env.GITHUB_TOKEN}`;
   for (const read of [
     () => new Response(sensitive, { status: 403 }),
@@ -221,6 +240,7 @@ test('upstream HTTP errors, transport failures and malformed JSON are sanitized'
     assert.equal(JSON.stringify(data).includes(sensitive), false);
     assert.equal(JSON.stringify(data).includes(env.GITHUB_TOKEN), false);
   }
+  assert.equal(JSON.stringify(logs.mock.calls.map(call => call.arguments)).includes(env.GITHUB_TOKEN), false);
 });
 
 test('invalid repository files and oversized repository responses fail closed', async () => {
