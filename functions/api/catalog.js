@@ -40,6 +40,10 @@ function configuration(env) {
   if (!/^[A-Za-z0-9][A-Za-z0-9-]{0,38}$/.test(owner) || !/^[A-Za-z0-9._-]{1,100}$/.test(repo) || ['.', '..'].includes(repo) ||
     !safeBranch || typeof filePath !== 'string' || filePath.length > 512 || !filePath.split('/').every(part => /^[A-Za-z0-9._-]+$/.test(part) && part !== '.' && part !== '..') ||
     /[\r\n]/.test(env.GITHUB_TOKEN) || env.GITHUB_TOKEN.length > 4096) throw new ApiError(503, 'Catalog API is not configured.');
+  // HTTP 请求头仅允许拉丁字符集；token 若混入不可见字符（如粘贴带入的 U+00A0、全角字符），
+  // fetch 会在构造请求时抛异常（表现为 up_network）。前置检查直接点名变量，避免误判为网络故障。
+  if (!/^[\x21-\x7e]+$/.test(env.GITHUB_TOKEN)) throw new ApiError(503,
+    'GITHUB_TOKEN contains invisible or non-ASCII characters. In Cloudflare Pages environment variables, clear the value and re-type the token manually (do not paste), then retry the deployment.');
   const common = { owner, repo, branch, filePath, token: env.GITHUB_TOKEN };
   if (hasAccess) {
     let teamDomain = env.CF_ACCESS_TEAM_DOMAIN;
