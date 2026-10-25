@@ -5,8 +5,10 @@
  * 数据文件：src/data/product-catalog.json（后台保存即更新此文件）
  */
 import catalog from '../data/product-catalog.json';
+import '../styles/tilt-precision-cards.css';
 import { applyCatalogToExisting } from './catalog-adapter.mjs';
 import { productSlugs } from '../data/product';
+import { precisionCardRegistry, applyPrecisionCardDisplay } from './tilt-precision-cards.mjs';
 
 // 目录分类 → 官网列表 cid（261=传感器「全部」；其余为对应子分类）
 const CATEGORY_CIDS: Record<string, string[]> = {
@@ -32,31 +34,30 @@ type CatalogCardLinks = { url?: string; href?: string };
 // These two pages are static Astro routes (managedPage:false). Register their
 // original card templates so the generic adapter can include them without
 // generating duplicate managed routes or changing the official card component.
-const precisionStaticCards = [
-  { id:'tilt-medium-precision-sensor', name:'Medium-precision Tilt Sensor · ±0.1° · H310-TS150M', img:'/images/products/tilt-medium-precision-0-1.svg', conn:'', url:'/product/tilt-medium-precision-sensor', href:'/product/tilt-medium-precision-sensor' },
-  { id:'tilt-low-precision-sensor', name:'Low-precision Tilt Sensor · ±1° · H310-TS100L', img:'/images/products/tilt-low-precision-1.svg', conn:'', url:'/product/tilt-low-precision-sensor', href:'/product/tilt-low-precision-sensor' },
-];
+const precisionStaticCards = precisionCardRegistry.map(card => ({
+  id:card.id, name:card.name, img:card.image, conn:card.conn, searchTerms:card.searchTerms, url:card.path, href:card.path,
+}));
 
 
 export function applyCatalog<T>(products: T[], cid: string, locale: string, existingPool: T[] = products): (T & CatalogCardLinks)[] {
   return applyCatalogToExisting(products, catalog as any, {
     locale,
     resolveId: resolveId as any,
-    // 所有语言均注入静态卡片模板；适配器按当前语言的已发布目录文案本地化名称与链接，
+    // 所有语言均注入静态卡片模板；适配器按当前语言的已发布目录文案本地化名称与链接（V117），
     // 未发布语言的产品由适配器按 published 状态过滤。
     existingPool: [...existingPool, ...precisionStaticCards],
     // 未映射的其它官网列表保留原有成员，不把传感器目录扩散到网关等列表。
     includeProduct: (product: any, { existing }: { existing: boolean }) => SENSOR_CIDS.has(cid)
       ? (CATEGORY_CIDS[product.categoryId] ?? ['261']).includes(cid)
       : existing,
-    // 空目录图片代表沿用原卡片；id/conn 及其它官网字段保持原有类型和值。
-    updateItem: (item: any, product: any, text: any) => ({
+    // 空目录图片沿用原卡片。两款精度产品最后校正标题/副行，其余字段按原逻辑保留。
+    updateItem: (item: any, product: any, text: any) => applyPrecisionCardDisplay({
       ...item,
       name: text.name || item.name,
       img: product.image.src || item.img,
       url: text.url,
       href: text.url,
-    }),
+    }, product.id, locale),
     // 新发布产品使用官网接入字段；ProductCard 需明确消费 url/href 才能使用语言地址。
     createItem: (product: any, text: any) => ({
       id: product.id,

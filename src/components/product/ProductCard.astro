@@ -16,7 +16,7 @@ const externalImg = /^\/|^https?:\/\//.test(product.img);
 const cardHref = product.url || product.href || l(productPath(product.id), locale);
 ---
 
-<li class={`reveal${product.id ? '' : ' nbd'}`} data-name={product.name.toLowerCase()}>
+<li class={`reveal${product.id ? '' : ' nbd'}`} data-name={[product.name, product.conn, product.searchTerms].filter(Boolean).join(' ').toLowerCase()}>
   {product.id ? (
     <a href={cardHref}>
       <div class="pro_2_mid_right_1_mid">

@@ -2,6 +2,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { validateCatalog } from '../src/lib/catalog.mjs';
+import { precisionCardRegistry } from '../src/lib/tilt-precision-cards.mjs';
 const args=process.argv.slice(2);
 const rootIndex=args.indexOf('--root');
 const root=path.resolve(rootIndex>=0?args[rootIndex+1]:process.cwd());
@@ -10,12 +11,12 @@ const catalog=JSON.parse(await readFile(file,'utf8'));
 const before=JSON.stringify(catalog);
 const entries=[
  {id:'tilt-medium-precision-sensor',model:'H310-TS150M',accuracy:'±0.1°',grade:'Medium',sortOrder:31,image:'tilt-medium-precision-0-1.svg',summary:'H310-TS150M medium-precision tilt sensor with ±0.1° accuracy for local inclination trends and equipment orientation. Specify installation and reporting around your site.'},
- {id:'tilt-low-precision-sensor',model:'H310-TS100L',accuracy:'±1°',grade:'Low',sortOrder:32,image:'tilt-low-precision-1.svg',summary:'H310-TS100L low-precision tilt sensor with ±1° accuracy for economical multi-point inclination records on fixed assets such as outdoor light poles, warehouse racks and automated-storage structures.'},
+ {id:'tilt-low-precision-sensor',model:'H310-TS100L',accuracy:'±1°',grade:'Low',sortOrder:32,image:'tilt-low-precision-1.svg',summary:'H310-TS100L ±1° tilt sensor for economical multi-point monitoring. Explore 21 applications for light poles, racks up to 8 m, ASRS frames and fixed assets.'},
 ];
 const locales=['en','zh','es','de','ja','fr','ru'];
 for(const entry of entries){
  const url='/product/'+entry.id;
- const name=`${entry.grade}-precision Tilt Sensor · ${entry.accuracy} · ${entry.model}`;
+ const name=precisionCardRegistry.find(card=>card.id===entry.id).name;
  let product=catalog.products.find(p=>p.id===entry.id);
  if(product && (product.slug!==entry.id || product.managedPage===true || product.locales.en?.url!==url))throw new Error(`Existing record needs manual merge: ${entry.id}`);
  if(!product){
@@ -28,7 +29,7 @@ for(const entry of entries){
  Object.assign(product.locales.en,{name,summary:entry.summary,url,seoTitle:`${entry.model} ${entry.accuracy} Tilt Sensor | Hitelecom`,seoDescription:entry.summary,imageAlt:product.image.alt,published:true});
 }
 const high=catalog.products.find(p=>p.id==='tilt-sensor');
-if(high?.locales?.en)high.locales.en.name='High-precision Tilt Sensor · 0.01°';
+if(high?.locales?.en)high.locales.en.name='High-precision Tilt Sensor';
 const validation=validateCatalog(catalog);
 if(!validation.valid)throw new Error(validation.errors.join('\n'));
 const ordered=[...catalog.products].sort((a,b)=>a.sortOrder-b.sortOrder).map(p=>p.id);

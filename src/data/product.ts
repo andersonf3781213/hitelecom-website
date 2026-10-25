@@ -10,7 +10,7 @@ import type { Locale } from '../i18n';
  * 图片路径相对 src/assets/images/，同名覆盖即可换图。
  */
 
-export interface ProductCard { id: string; name: string; conn: string; img: string; url?: string; href?: string }
+export interface ProductCard { id: string; name: string; conn: string; img: string; url?: string; href?: string; precisionMeta?: string; searchTerms?: string }
 export interface SubCat { cid: string; name: string; on?: boolean }
 export interface ListPage { bannerImg: string; subcats: SubCat[]; products: ProductCard[] }
 export interface DetailFeature { icon: string; text: string }
