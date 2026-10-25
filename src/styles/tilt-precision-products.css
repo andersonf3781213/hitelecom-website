@@ -1,0 +1,5 @@
+/* Product-only viewport normalization. Original product pixels and proportions remain intact.
+   The supplied PNG canvases have different transparent margins; the SVG viewBox
+   crops only unused transparent canvas, retaining the actual sensor silhouette. */
+.ht-tilt .hero-visual .precision-product { display:block; position:relative; z-index:1; width:90%; height:88%; max-height:460px; overflow:visible; }
+@media(max-width:600px) { .ht-tilt .hero-visual .precision-product { width:248px; height:88%; max-height:205px; margin-top:-6px; } }

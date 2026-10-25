@@ -1,0 +1,68 @@
+---
+/** Precision-appropriate Applications: use reviewed tasks and direct-subject images.
+ * The original Temperature-style markup, stylesheet and runtime are retained.
+ * Category and task totals come from the variant data, never a fixed quota.
+ */
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import ApplicationTask from '../tilt/ApplicationTask.astro';
+import uiStrings from '../../data/tilt-applications-ui.json';
+import temperatureStyles from '../../styles/tilt-applications-en.css?raw';
+import temperatureRuntime from '../../scripts/tilt-applications-en.js?raw';
+const { groups, canonicalPath, applicationUi = {} } = Astro.props;
+const ui = { ...uiStrings.en, ...applicationUi };
+const modelName = canonicalPath.includes('medium') ? 'H310-TS150M ±0.1°' : 'H310-TS100L ±1°';
+const newAssets = import.meta.glob<ImageMetadata>('../../assets/applications/*.webp', { eager: true, import: 'default' });
+const precisionAssets = import.meta.glob<ImageMetadata>('../../assets/tilt-precision-applications/*.png', { eager: true, import: 'default' });
+const originalAssets = import.meta.glob<ImageMetadata>('../../assets/tilt/*.webp', { eager: true, import: 'default' });
+const images = new Map<string, {src: string; srcset: string; width: number; height: number}>();
+await Promise.all(groups.flatMap(group => group.scenes.map(async scene => {
+  if (scene.precisionImage) {
+    const source = precisionAssets[`../../assets/tilt-precision-applications/${scene.precisionImage}`];
+    if (!source) throw new Error(`Missing precision scene image: ${scene.precisionImage}`);
+    const widths = [360, 720, 1080].filter(width => width <= source.width);
+    const variants = await Promise.all(widths.map(width => getImage({ src: source, width, format: 'webp', quality: 78 })));
+    images.set(scene.id, {src: variants.at(-1)!.src, srcset: variants.map((image, i) => `${image.src} ${widths[i]}w`).join(', '), width: source.width, height: source.height});
+    return;
+  }
+  if (scene.original) {
+    // 原 16 场景：按 originalImgSrc 的文件基名映射主站 src/assets/tilt 同源图片
+    const base = (scene.originalImgSrc.match(/\/_astro\/([^.]+)/) || [])[1];
+    const source = originalAssets[`../../assets/tilt/${base}.webp`];
+    if (!source) throw new Error(`Missing original scene image: ${base}.webp`);
+    const widths = [360, 720, 1080].filter(width => width <= source.width);
+    const variants = await Promise.all(widths.map(width => getImage({ src: source, width, format: 'webp', quality: 78 })));
+    images.set(scene.id, {src: variants.at(-1)!.src, srcset: variants.map((image, i) => `${image.src} ${widths[i]}w`).join(', '), width: source.width, height: source.height});
+    return;
+  }
+  const source = newAssets[`../../assets/applications/${scene.imageId}.webp`];
+  if (!source) throw new Error(`Missing scene image: ${scene.imageId}.webp`);
+  const widths = [360, 720, 1080].filter(width => width <= source.width);
+  const variants = await Promise.all(widths.map(width => getImage({ src: source, width, format: 'webp', quality: 78 })));
+  images.set(scene.id, {src: variants.at(-1)!.src, srcset: variants.map((image, i) => `${image.src} ${widths[i]}w`).join(', '), width: source.width, height: source.height});
+})));
+const canonical = `https://www.hitelecom.com${canonicalPath}`;
+const scenes = groups.flatMap(group => group.scenes);
+const structuredData = {
+  '@context': 'https://schema.org', '@type': 'ItemList', '@id': `${canonical}#applications-list`,
+  name: `${modelName} tilt sensor applications`, numberOfItems: scenes.length, itemListOrder: 'https://schema.org/ItemListOrderAscending',
+  itemListElement: scenes.map((scene, index) => ({'@type': 'ListItem', position: index + 1, name: scene.title, description: scene.en, url: `${canonical}#${scene.baselineId || `tilt-scene-${scene.id}`}`})),
+};
+---
+<section class="section application-section" id="applications" aria-labelledby="applications-title"><div class="wrap">
+  <style is:inline data-applications-style="temperature" set:html={temperatureStyles} />
+  <div class="section-heading"><div><p class="eyebrow">{ui.kicker}</p><h2 id="applications-title">{ui.titleA}<br/><span>{ui.titleB}</span></h2></div><p>{ui.intro}</p></div>
+  <div class="application-overview"><p><strong>{groups.length}</strong> {ui.categoriesLabel} <span aria-hidden="true">/</span> <strong>{scenes.length}</strong> {ui.tasksLabel}</p><p class="image-note">{ui.imageNote}</p></div>
+  <nav class="application-jump-nav" aria-label={ui.navAria}>{groups.map(group => <a href={`#group-${group.groupid}`}>{group.jumplabelen}<span>{group.scenes.length}</span></a>)}</nav>
+  <div class="application-groups">{groups.map((group, index) => {
+    const first = group.scenes[0], image = images.get(first.id)!;
+    return <details class="application-group" id={`group-${group.groupid}`} open={index === 0}>
+      <summary><span><small>{String(group.number).padStart(2, '0')}</small>{group.title}</span><span class="group-count">{ui.groupCount.replace('{count}', String(group.scenes.length))} <b aria-hidden="true">+</b></span></summary>
+      <div class="application-category-body"><div class="application-visual"><div class="application-media-slot">
+        <figure class="application-category-photo"><img class="application-category-image" src={image.src} srcset={image.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={image.width} height={image.height} loading="lazy" decoding="async" alt={first.alten} style={first.originalImgStyle || 'object-position:center center'} /><figcaption><span class="application-photo-caption">{group.title}</span></figcaption></figure>
+      </div><p>{group.introen}</p></div><div class="application-task-list">{group.scenes.map((scene, sceneIndex) => <ApplicationTask scene={scene} image={images.get(scene.id)!} first={sceneIndex === 0} ui={ui} />)}</div></div>
+    </details>;
+  })}</div>
+  <script id="applications-structured-data" type="application/ld+json" set:html={JSON.stringify(structuredData).replaceAll('<', '\\u003c')} />
+  <script is:inline data-applications-runtime="temperature" set:html={temperatureRuntime} />
+</div></section>

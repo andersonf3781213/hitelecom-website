@@ -15,6 +15,8 @@ interface Props {
   title?: string;
   description?: string;
   keywords?: string;
+  /** Optional product social image; existing pages retain the default. */
+  socialImage?: string;
   /** 首屏关键图（构建期优化后的地址），用于 preload 加速首屏；传对象时输出响应式 preload（imagesrcset/imagesizes） */
   preloadImage?: string | { src: string; srcset?: string; sizes?: string };
   /** 浅色页面：头部始终使用实色样式（不随滚动切换） */
@@ -31,7 +33,7 @@ interface Props {
   langOverrides?: Partial<Record<Locale, string>>;
 }
 
-const { locale, title, description, keywords, preloadImage, headerSolid = false, robots, v18Grid = false, alternates, langBase, langOverrides } = Astro.props;
+const { locale, title, description, keywords, socialImage, preloadImage, headerSolid = false, robots, v18Grid = false, alternates, langBase, langOverrides } = Astro.props;
 const seo = defaultSeo[locale];
 // SEO 长度收敛（验收报告：67 页 description >160、24 页 title >70）：
 // 超长时在词边界截断并补省略号，避免被 Google 截在中途；CJK 按字符截断。
@@ -68,7 +70,7 @@ const altLinks = (alternates ?? altLocalesOf(locale)).map((loc) => ({
   lang: htmlLang[loc],
   href: new URL(alternateUrl(Astro.url.pathname, loc), Astro.site).href,
 }));
-const ogImage = new URL('/images/og-cover.jpg', Astro.site).href;
+const ogImage = new URL(socialImage ?? '/images/og-cover.jpg', Astro.site).href;
 
 // 结构化数据（GEO/SEO 核心）：Organization + WebSite 实体图
 // Organization 字段按客户确认的核心词条文档书写：主打户外/工业 4G + NB-IoT

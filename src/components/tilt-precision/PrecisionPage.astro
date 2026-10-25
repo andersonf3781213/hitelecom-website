@@ -1,0 +1,32 @@
+---
+/** English precision variants. The original high-precision page and its UI stay in place. */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PrecisionBody from './PrecisionBody.astro';
+import PrecisionStructuredData from './PrecisionStructuredData.astro';
+import TILT_DICTS from '../tilt/dicts.mjs';
+import mediumContent from '../../data/tilt-precision/medium-content.json';
+import lowContent from '../../data/tilt-precision/low-content.json';
+import mediumGroups from '../../data/tilt-precision/medium-applications.json';
+import lowGroups from '../../data/tilt-precision/low-applications.json';
+import ui from '../../data/tilt-precision/precision-ui.json';
+import mediumImage from '../../assets/tilt-precision/tilt_medium_precision_0.1.png';
+import lowImage from '../../assets/tilt-precision/tilt_low_precision_1.png';
+import { getImage } from 'astro:assets';
+import '../../styles/tilt.css';
+import '../../styles/tilt-precision-products.css';
+const REGISTRY = {
+  medium: { content:mediumContent, groups:mediumGroups, ui:ui.medium, image:mediumImage, path:'/product/tilt-medium-precision-sensor', publicImage:'/images/products/tilt-medium-precision-0-1.png', cropBox:'520 477 997 1098' },
+  low: { content:lowContent, groups:lowGroups, ui:ui.low, image:lowImage, path:'/product/tilt-low-precision-sensor', publicImage:'/images/products/tilt-low-precision-1.png', cropBox:'446 167 1167 1057' },
+};
+const { variant = 'medium' } = Astro.props;
+const config = REGISTRY[variant];
+if (!config) throw new Error(`Unknown tilt precision variant: ${variant}`);
+const t = { ...TILT_DICTS.en, ...config.ui, js:{...TILT_DICTS.en.js,...config.ui.js} };
+const optimized = await getImage({src:config.image, width:1280, format:'webp', quality:88});
+const hero = {src:optimized.src, width:config.image.width, height:config.image.height};
+const imageUrl = new URL(config.publicImage, Astro.site).href;
+---
+<BaseLayout locale="en" title={config.content.seo.title} description={config.content.seo.description} preloadImage={hero.src} socialImage={config.publicImage} alternates={[]} langBase="/product/lists/cid/261" langOverrides={{en:config.path}}>
+  <PrecisionStructuredData slot="head" content={config.content} t={t} canonicalPath={config.path} imageUrl={imageUrl}/>
+  <PrecisionBody content={config.content} t={t} groups={config.groups} headings={config.ui.headings} hero={hero} cropBox={config.cropBox} canonicalPath={config.path} applicationUi={config.ui.applications}/>
+</BaseLayout>

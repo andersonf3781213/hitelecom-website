@@ -29,11 +29,20 @@ const resolveId = (p: { id?: string | number }) =>
 
 type CatalogCardLinks = { url?: string; href?: string };
 
+// These two pages are static Astro routes (managedPage:false). Register their
+// original card templates so the generic adapter can include them without
+// generating duplicate managed routes or changing the official card component.
+const precisionStaticCards = [
+  { id:'tilt-medium-precision-sensor', name:'Medium-precision Tilt Sensor · ±0.1° · H310-TS150M', img:'/images/products/tilt-medium-precision-0-1.svg', conn:'', url:'/product/tilt-medium-precision-sensor', href:'/product/tilt-medium-precision-sensor' },
+  { id:'tilt-low-precision-sensor', name:'Low-precision Tilt Sensor · ±1° · H310-TS100L', img:'/images/products/tilt-low-precision-1.svg', conn:'', url:'/product/tilt-low-precision-sensor', href:'/product/tilt-low-precision-sensor' },
+];
+
+
 export function applyCatalog<T>(products: T[], cid: string, locale: string, existingPool: T[] = products): (T & CatalogCardLinks)[] {
   return applyCatalogToExisting(products, catalog as any, {
     locale,
     resolveId: resolveId as any,
-    existingPool,
+    existingPool: locale === 'en' ? [...existingPool, ...precisionStaticCards] : existingPool,
     // 未映射的其它官网列表保留原有成员，不把传感器目录扩散到网关等列表。
     includeProduct: (product: any, { existing }: { existing: boolean }) => SENSOR_CIDS.has(cid)
       ? (CATEGORY_CIDS[product.categoryId] ?? ['261']).includes(cid)
