@@ -1,32 +1,61 @@
 ---
-/** English precision variants. The original high-precision page and its UI stay in place. */
+/** Precision variants, 7 locales. The original high-precision page and its UI stay in place.
+ * EN 内容以主站已上线源码为准；非 EN 整页对象来自 GPT6 v4 多语言包（Kimi 审核集成 2026-10-25）。 */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PrecisionBody from './PrecisionBody.astro';
 import PrecisionStructuredData from './PrecisionStructuredData.astro';
 import TILT_DICTS from '../tilt/dicts.mjs';
+import { htmlLang, type Locale } from '../../i18n';
 import mediumContent from '../../data/tilt-precision/medium-content.json';
 import lowContent from '../../data/tilt-precision/low-content.json';
 import mediumGroups from '../../data/tilt-precision/medium-applications.json';
 import lowGroups from '../../data/tilt-precision/low-applications.json';
 import ui from '../../data/tilt-precision/precision-ui.json';
+import mediumZh from '../../data/tilt-precision/i18n/medium-zh.json';
+import mediumEs from '../../data/tilt-precision/i18n/medium-es.json';
+import mediumDe from '../../data/tilt-precision/i18n/medium-de.json';
+import mediumJa from '../../data/tilt-precision/i18n/medium-ja.json';
+import mediumFr from '../../data/tilt-precision/i18n/medium-fr.json';
+import mediumRu from '../../data/tilt-precision/i18n/medium-ru.json';
+import lowZh from '../../data/tilt-precision/i18n/low-zh.json';
+import lowEs from '../../data/tilt-precision/i18n/low-es.json';
+import lowDe from '../../data/tilt-precision/i18n/low-de.json';
+import lowJa from '../../data/tilt-precision/i18n/low-ja.json';
+import lowFr from '../../data/tilt-precision/i18n/low-fr.json';
+import lowRu from '../../data/tilt-precision/i18n/low-ru.json';
 import mediumImage from '../../assets/tilt-precision/tilt_medium_precision_0.1.png';
 import lowImage from '../../assets/tilt-precision/tilt_low_precision_1.png';
 import { getImage } from 'astro:assets';
 import '../../styles/tilt.css';
 import '../../styles/tilt-precision-products.css';
 const REGISTRY = {
-  medium: { content:mediumContent, groups:mediumGroups, ui:ui.medium, image:mediumImage, path:'/product/tilt-medium-precision-sensor', publicImage:'/images/products/tilt-medium-precision-0-1.png', cropBox:'520 477 997 1098' },
-  low: { content:lowContent, groups:lowGroups, ui:ui.low, image:lowImage, path:'/product/tilt-low-precision-sensor', publicImage:'/images/products/tilt-low-precision-1.png', cropBox:'446 167 1167 1057' },
+  medium: { content:mediumContent, groups:mediumGroups, ui:ui.medium, image:mediumImage, slug:'tilt-medium-precision-sensor', publicImage:'/images/products/tilt-medium-precision-0-1.png', cropBox:'520 477 997 1098',
+    i18n:{ zh:mediumZh, es:mediumEs, de:mediumDe, ja:mediumJa, fr:mediumFr, ru:mediumRu } },
+  low: { content:lowContent, groups:lowGroups, ui:ui.low, image:lowImage, slug:'tilt-low-precision-sensor', publicImage:'/images/products/tilt-low-precision-1.png', cropBox:'446 167 1167 1057',
+    i18n:{ zh:lowZh, es:lowEs, de:lowDe, ja:lowJa, fr:lowFr, ru:lowRu } },
 };
-const { variant = 'medium' } = Astro.props;
+const { variant = 'medium', locale = 'en' } = Astro.props as { variant?: string; locale?: Locale };
 const config = REGISTRY[variant];
 if (!config) throw new Error(`Unknown tilt precision variant: ${variant}`);
-const t = { ...TILT_DICTS.en, ...config.ui, js:{...TILT_DICTS.en.js,...config.ui.js} };
+const isEn = locale === 'en';
+const pack = isEn ? null : config.i18n[locale];
+if (!isEn && !pack) throw new Error(`Missing ${variant} tilt precision locale data: ${locale}`);
+const prefix = isEn ? '' : `/${locale}`;
+const path = `${prefix}/product/${config.slug}`;
+const content = pack?.content ?? config.content;
+const groups = pack?.groups ?? config.groups;
+const pageUi = pack?.ui ?? config.ui;
+const applicationUi = pack?.applicationUi ?? config.ui.applications;
+const dict = TILT_DICTS[locale] ?? TILT_DICTS.en;
+const t = { ...dict, ...pageUi, js:{ ...dict.js, ...pageUi.js } };
 const optimized = await getImage({src:config.image, width:1280, format:'webp', quality:88});
 const hero = {src:optimized.src, width:config.image.width, height:config.image.height};
 const imageUrl = new URL(config.publicImage, Astro.site).href;
+// 七语路由均已上线：语言菜单/hreflang 指向同型号各语言产品页（URL 不加 .html）
+const allLocales: Locale[] = ['en','zh','es','de','ja','fr','ru'];
+const langTargets = Object.fromEntries(allLocales.map((loc) => [loc, `${loc === 'en' ? '' : `/${loc}`}/product/${config.slug}`]));
 ---
-<BaseLayout locale="en" title={config.content.seo.title} description={config.content.seo.description} preloadImage={hero.src} socialImage={config.publicImage} alternates={[]} langBase="/product/lists/cid/261" langOverrides={{en:config.path}}>
-  <PrecisionStructuredData slot="head" content={config.content} t={t} canonicalPath={config.path} imageUrl={imageUrl}/>
-  <PrecisionBody content={config.content} t={t} groups={config.groups} headings={config.ui.headings} hero={hero} cropBox={config.cropBox} canonicalPath={config.path} applicationUi={config.ui.applications}/>
+<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description} preloadImage={hero.src} socialImage={config.publicImage} langOverrides={langTargets}>
+  <PrecisionStructuredData slot="head" content={content} t={t} canonicalPath={path} imageUrl={imageUrl} inLanguage={htmlLang[locale]}/>
+  <PrecisionBody content={content} t={t} groups={groups} headings={pageUi.headings} hero={hero} cropBox={config.cropBox} canonicalPath={path} applicationUi={applicationUi} locale={locale} prefix={prefix}/>
 </BaseLayout>

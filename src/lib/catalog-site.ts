@@ -42,7 +42,9 @@ export function applyCatalog<T>(products: T[], cid: string, locale: string, exis
   return applyCatalogToExisting(products, catalog as any, {
     locale,
     resolveId: resolveId as any,
-    existingPool: locale === 'en' ? [...existingPool, ...precisionStaticCards] : existingPool,
+    // 所有语言均注入静态卡片模板；适配器按当前语言的已发布目录文案本地化名称与链接，
+    // 未发布语言的产品由适配器按 published 状态过滤。
+    existingPool: [...existingPool, ...precisionStaticCards],
     // 未映射的其它官网列表保留原有成员，不把传感器目录扩散到网关等列表。
     includeProduct: (product: any, { existing }: { existing: boolean }) => SENSOR_CIDS.has(cid)
       ? (CATEGORY_CIDS[product.categoryId] ?? ['261']).includes(cid)
