@@ -111,7 +111,7 @@
     "operatingProfile": {
       "kicker": "測定精度の等級を選ぶ",
       "title": "3つの精度等級。明確な選択。",
-      "intro": "H310-TS150Mは、精度±0.1°の中精度モデルです。必要な角度変化と精度等級を比較したうえで、取付方法、動作条件、データ経路を選択してください。",
+      "intro": "H310-TS150Mは、精度±0.1°の中精度モデルです。必要な角度変化と精度等級を比較したうえで、取付方法、動作条件、データ経路を選択してください。 H310-TS150Mは1分ごとに角度を取得し、4時間ごとに定期レポートを送信します。レポート間の取得回数は240回です。",
       "metrics": [
         {
           "value": "0.01°",
@@ -175,12 +175,28 @@
               "value": "試運転時に初期姿勢、対象設備のID、角度の定義を記録"
             },
             {
+              "name": "取得間隔",
+              "value": "1分ごと"
+            },
+            {
+              "name": "定期レポート",
+              "value": "4時間ごと"
+            },
+            {
+              "name": "取得サイクル",
+              "value": "定期レポート間240回"
+            },
+            {
+              "name": "使用年限",
+              "value": "供給構成および運用条件に従います"
+            },
+            {
               "name": "測定範囲と分解能",
               "value": "お見積もり時に必要な測定範囲と出力値の刻みを指定"
             },
             {
               "name": "データ送信とシステム連携",
-              "value": "納入インターフェース、測定間隔、送信スケジュール、送信先を確認"
+              "value": "供給インターフェース、データ宛先プラットフォーム、イベントレポートの流れをご確認ください"
             },
             {
               "name": "電源と筐体",
@@ -294,7 +310,7 @@
         "question": "中精度モデルは、高精度・低精度モデルとどう異なりますか？",
         "paragraphs": [
           "既存の高精度製品ページは0.01°として区分されています。H310-TS150Mは精度±0.1°の中精度モデル、H310-TS100Lは精度±1°の低精度モデルです。",
-          "意味を持つ最小の角度変化と測定条件に合わせて精度等級を選んでください。より細かな測定等級が必要な場合は高精度モデルのページをご覧ください。明確に離れた大まかな姿勢を区別する用途には、低精度モデルもご検討いただけます。"
+          "注目すべき最小の角度変化と測定条件に応じて等級をお選びください。さらに細かい測定等級が必要な場合は高精度ページをご覧ください。屋外灯柱、8m以下の一般ラック、自動立体倉庫構造などの経済的な多点監視には、±1°が確認対象の角度変化に合う場合、H310-TS100Lをご検討ください。"
         ],
         "answerLink": {
           "href": "#operating-profile",
@@ -377,8 +393,8 @@
         "id": "faq-reporting",
         "question": "測定間隔、送信間隔、電池寿命はどのくらいですか？",
         "paragraphs": [
-          "これらは、それぞれ別の構成要件です。監視する状態が変化する速さ、遠隔から測定値を必要とする頻度、担当チームに必要な応答時間を指定してください。",
-          "その結果に基づき、H310-TS150Mの動作条件、電源構成、保守の見込みを確認します。他の傾斜センサーモデルの公表値を、本モデルの納入仕様として使用しないでください。"
+          "H310-TS150Mは1分ごとに角度を取得し、4時間ごとに定期レポートを送信します。レポート間の取得回数は240回です。",
+          "使用年限と電源は供給構成および運用条件に従います。イベントレポートと通知の要件はプロジェクトごとに取り決めます。"
         ],
         "answerLink": {
           "href": "#specifications",
@@ -567,10 +583,10 @@
       "fallback": "提案を希望",
       "applicationValues": {
         "Warehouse racking": "倉庫ラック",
-        "Automated high-bay racking": "自動高層倉庫ラック",
+        "Automated high-bay racking": "自動立体倉庫の高層ラック",
         "Cantilever racking": "カンチレバーラック",
         "Drive-in pallet racking": "ドライブイン式パレットラック",
-        "Mezzanine support columns": "メザニン支持支柱",
+        "Mezzanine support columns": "中二階（メザニン）の支持柱",
         "Street-light poles": "街路灯の支柱",
         "Transmission towers": "送電鉄塔",
         "Telecom towers": "通信塔",
@@ -703,7 +719,7 @@
           "briefen": "ラック高さ、列の識別子、保守アクセス、積載状態、把握すべき最小の角度変化、固定位置。",
           "imagebrief": "高層自動倉庫の全景。ラック支柱、スタッカークレーン、通路を明確に示し、完全なシステムを通常ラックや無人フォークリフトで代用しない。",
           "alten": "スタッカークレーン通路に隣接する高層倉庫ラック。",
-          "title": "自動高層倉庫ラック",
+          "title": "自動立体倉庫の高層ラック",
           "imageId": "automated-high-bay-racking",
           "original": false,
           "source": "V3 medium-precision application copy; broad first-version industry imagery retained.",
@@ -757,12 +773,12 @@
           "briefen": "支柱の通り芯、メザニンの用途、代表的な荷重、固定の許可、必要な角度感度。",
           "imagebrief": "実際の工場内にある鋼構造メザニンプラットフォームの全体。支柱、梁、階段の関係を明確にし、支柱の外装仕上げ面を測定点の例にしない。",
           "alten": "工場内にある、支持支柱が見える鋼製メザニンプラットフォーム。",
-          "title": "メザニン支持支柱",
+          "title": "中二階（メザニン）の支持柱",
           "imageId": "mezzanine-support-columns",
           "original": false,
           "source": "V3 medium-precision application copy; broad first-version industry imagery retained.",
           "objectiveen": "傾斜の測定値を、倉庫のメザニンや保管プラットフォームを支える支柱にひも付けます。",
-          "measureen": "識別されたメザニン支持支柱の局所的な傾斜。",
+          "measureen": "識別された中二階（メザニン）の支持柱の局所的な傾斜。",
           "precisionGrade": "±0.1°",
           "model": "H310-TS150M",
           "valueEn": "Mezzanine support columns",
@@ -773,8 +789,8 @@
     {
       "number": 2,
       "groupid": "poles-towers",
-      "title": "ポールと塔",
-      "jumplabelen": "ポールと塔",
+      "title": "ポール・鉄塔",
+      "jumplabelen": "ポール・鉄塔",
       "jumplabelzh": "立杆与塔架",
       "introen": "街路照明、送配電線、通信設備、道路沿いの看板支持部。",
       "scenes": [
@@ -1673,7 +1689,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "自動高層倉庫ラック",
+            "name": "自動立体倉庫の高層ラック",
             "description": "支柱の局所的な姿勢の測定値を、自動高層倉庫のラック列や保守位置にひも付けます。保守担当者は、積載条件をそろえて、スタッカークレーンの整備、ラック調整、接触報告の前後で角度履歴を比較できます。監視点を明確にすることで、大規模な保管設備でも情報を活用しやすくし、クレーン、シャトル、荷のための離隔を確保できます。",
             "url": "https://www.hitelecom.com/ja/product/tilt-medium-precision-sensor#tilt-scene-automated-high-bay-racking"
           },
@@ -1694,7 +1710,7 @@
           {
             "@type": "ListItem",
             "position": 5,
-            "name": "メザニン支持支柱",
+            "name": "中二階（メザニン）の支持柱",
             "description": "傾斜の測定値を、倉庫のメザニンや保管プラットフォームを支える支柱にひも付けます。設置後に基準を設定し、上層の代表的な荷重を記録します。その後の比較により、保管レイアウトの変更、設備移設、支持部の保守後の確認に使える姿勢履歴が得られます。各測定値は支柱の通り芯と所有者の点検記録に関連付けておきます。",
             "url": "https://www.hitelecom.com/ja/product/tilt-medium-precision-sensor#tilt-scene-mezzanine-support-columns"
           },

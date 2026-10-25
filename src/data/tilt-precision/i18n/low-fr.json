@@ -52,7 +52,7 @@
     "version": 1,
     "seo": {
       "title": "Capteur d’inclinaison ±1° | H310-TS100L | Hitelecom",
-      "description": "Capteur d’inclinaison H310-TS100L ±1° pour une surveillance multipoint économique. Découvrez 21 applications : mâts, rayonnages jusqu’à 8 m, structures automatisées et actifs fixes."
+      "description": "Capteur d’inclinaison ±1° H310-TS100L : mâts d’éclairage, rayonnages jusqu’à 8 m et stockage automatisé. Surveillance multipoint économique."
     },
     "hero": {
       "title": "Capteur d’inclinaison. Basse précision. Précision de ±1°.",
@@ -111,15 +111,15 @@
     "operatingProfile": {
       "kicker": "CHOISISSEZ VOTRE CLASSE DE MESURE",
       "title": "Trois classes. Un choix clair.",
-      "intro": "Le H310-TS100L est l’option basse précision à ±1° pour une couverture économique de l’inclinaison des mâts d’éclairage, rayonnages et autres actifs fixes. Choisissez la classe selon les variations angulaires que votre plan d’inspection doit distinguer.",
+      "intro": "Le H310-TS100L est l’option basse précision à ±1° pour une couverture économique de l’inclinaison des mâts d’éclairage, rayonnages et autres actifs fixes. Choisissez la classe selon les variations angulaires que votre plan d’inspection doit distinguer. Le H310-TS100L envoie des rapports programmés toutes les 12 heures, soit deux par jour. Son profil de durée de service publié est de cinq ans avec des rapports toutes les 12 heures, selon la configuration fournie et les conditions d’exploitation.",
       "metrics": [
         {
-          "value": "0.01°",
+          "value": "0,01°",
           "label": "Haute précision",
           "detail": "Référence existante du capteur d’inclinaison haute précision."
         },
         {
-          "value": "±0.1°",
+          "value": "±0,1°",
           "label": "Précision moyenne",
           "detail": "Classe de précision du H310-TS150M."
         },
@@ -175,12 +175,24 @@
               "value": "Consigner la position initiale, l’identifiant d’actif et la convention angulaire lors de la mise en service"
             },
             {
+              "name": "Rapports programmés",
+              "value": "Toutes les 12 heures (2 rapports par jour)"
+            },
+            {
+              "name": "Durée de service",
+              "value": "5 ans avec le profil de rapports 12 h, selon la configuration fournie et les conditions d’exploitation"
+            },
+            {
+              "name": "Intervalle d’acquisition",
+              "value": "Défini séparément pour la configuration fournie"
+            },
+            {
               "name": "Plage et résolution",
               "value": "Préciser la plage de mesure requise et l’incrément transmis pour le devis"
             },
             {
               "name": "Transmission et intégration",
-              "value": "Confirmer l’interface fournie, l’intervalle de mesure, le calendrier de transmission et la destination"
+              "value": "Confirmez l’interface fournie, la plateforme de destination et le flux de rapports d’événements"
             },
             {
               "name": "Alimentation et boîtier",
@@ -293,7 +305,7 @@
         "id": "faq-comparison",
         "question": "Quand choisir la basse, la moyenne ou la haute précision ?",
         "paragraphs": [
-          "Choisissez le H310-TS100L lorsqu’une couverture économique de nombreux actifs et les performances d’inclinaison requises sont compatibles avec une précision de ±1°. Le H310-TS150M est l’option de précision moyenne à ±0.1°, et la référence haute précision existante est identifiée par 0.01°.",
+          "Choisissez le H310-TS100L lorsqu’une couverture économique de nombreux actifs et les performances d’inclinaison requises sont compatibles avec une précision de ±1°. Le H310-TS150M est l’option de précision moyenne à ±0,1°, et la référence haute précision existante est identifiée par 0,01°.",
           "Choisissez la classe selon la variation angulaire significative, le nombre de points et les conditions de mesure. Les tâches nécessitant des mesures plus fines de rotation structurelle doivent utiliser une classe de mesure plus fine."
         ],
         "answerLink": {
@@ -389,8 +401,8 @@
         "id": "faq-profile",
         "question": "Quelle configuration de transmission, d’alimentation et de boîtier choisir ?",
         "paragraphs": [
-          "Adaptez la fréquence de mise à jour à l’objectif d’inspection et à la procédure d’examen de l’équipe. Décrivez la température d’installation, l’exposition à l’eau ou à la poussière, les conditions de manutention et l’accès de maintenance.",
-          "Confirmez les intervalles de mesure et de transmission, l’alimentation, l’estimation de durée de service et l’indice de protection du boîtier du H310-TS100L fourni. Les chiffres publiés pour le modèle haute précision ne constituent pas les caractéristiques confirmées de ce modèle."
+          "Les rapports programmés sont envoyés toutes les 12 heures, soit deux par jour. Le profil de durée de service publié est de cinq ans avec des rapports toutes les 12 heures, selon la configuration fournie et les conditions d’exploitation.",
+          "L’intervalle d’acquisition, l’alimentation et le flux de rapports d’événements sont définis séparément pour le H310-TS100L fourni. Les valeurs publiées du modèle haute précision ne constituent pas la spécification confirmée de ce modèle."
         ],
         "answerLink": {
           "href": "#specifications",
@@ -426,7 +438,7 @@
         },
         {
           "source": "User instruction, 2026-10-25",
-          "existingHighPrecisionEntry": "0.01°"
+          "existingHighPrecisionEntry": "0,01°"
         }
       ],
       "scope": "Les autres paramètres de configuration fournis doivent être confirmés pour ce modèle ; les caractéristiques de la version haute précision d’origine ne sont pas reprises automatiquement."
@@ -453,12 +465,12 @@
         "note": "H310-TS100L"
       },
       {
-        "value": "0.01°",
+        "value": "0,01°",
         "label": "Alternative haute précision",
         "note": "Capteur d’inclinaison haute précision existant"
       },
       {
-        "value": "±0.1°",
+        "value": "±0,1°",
         "label": "Alternative de précision moyenne",
         "note": "H310-TS150M"
       }
@@ -534,11 +546,11 @@
     "relKicker": "POURSUIVEZ VOTRE PROJET DE SURVEILLANCE",
     "relLinks": [
       {
-        "label": "Haute précision · 0.01° ↗",
+        "label": "Haute précision · 0,01° ↗",
         "href": "/fr/product/tilt-sensor"
       },
       {
-        "label": "Précision moyenne · ±0.1° ↗",
+        "label": "Précision moyenne · ±0,1° ↗",
         "href": "/fr/product/tilt-medium-precision-sensor"
       },
       {
@@ -1187,7 +1199,7 @@
             "name": "Quand choisir la basse, la moyenne ou la haute précision ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Choisissez le H310-TS100L lorsqu’une couverture économique de nombreux actifs et les performances d’inclinaison requises sont compatibles avec une précision de ±1°. Le H310-TS150M est l’option de précision moyenne à ±0.1°, et la référence haute précision existante est identifiée par 0.01°.\n\nChoisissez la classe selon la variation angulaire significative, le nombre de points et les conditions de mesure. Les tâches nécessitant des mesures plus fines de rotation structurelle doivent utiliser une classe de mesure plus fine."
+              "text": "Choisissez le H310-TS100L lorsqu’une couverture économique de nombreux actifs et les performances d’inclinaison requises sont compatibles avec une précision de ±1°. Le H310-TS150M est l’option de précision moyenne à ±0,1°, et la référence haute précision existante est identifiée par 0,01°.\n\nChoisissez la classe selon la variation angulaire significative, le nombre de points et les conditions de mesure. Les tâches nécessitant des mesures plus fines de rotation structurelle doivent utiliser une classe de mesure plus fine."
             }
           },
           {

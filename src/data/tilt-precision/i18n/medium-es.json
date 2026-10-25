@@ -111,7 +111,7 @@
     "operatingProfile": {
       "kicker": "ELIJA SU GRADO DE MEDICIÓN",
       "title": "Tres grados. Una elección clara.",
-      "intro": "El H310-TS150M es la opción de precisión media de ±0.1°. Compare el cambio angular requerido con este grado antes de seleccionar el montaje, el perfil operativo y la ruta de datos.",
+      "intro": "El H310-TS150M es la opción de precisión media de ±0.1°. Compare el cambio angular requerido con este grado antes de seleccionar el montaje, el perfil operativo y la ruta de datos. El H310-TS150M registra una lectura de ángulo cada minuto y envía informes programados cada cuatro horas, con 240 ciclos de adquisición entre informes.",
       "metrics": [
         {
           "value": "0.01°",
@@ -175,12 +175,28 @@
               "value": "Registre la posición inicial, el identificador del activo y la convención angular durante la puesta en servicio"
             },
             {
+              "name": "Intervalo de adquisición",
+              "value": "Cada 1 minuto"
+            },
+            {
+              "name": "Informes programados",
+              "value": "Cada 4 horas"
+            },
+            {
+              "name": "Ciclos de adquisición",
+              "value": "240 por informe programado"
+            },
+            {
+              "name": "Vida útil",
+              "value": "Según la configuración suministrada y las condiciones de operación"
+            },
+            {
               "name": "Rango y resolución",
               "value": "Especifique el rango de trabajo requerido y el incremento informado para preparar el presupuesto"
             },
             {
               "name": "Envío de datos e integración",
-              "value": "Confirme la interfaz suministrada, el intervalo de medición, el programa de envío de datos y su destino"
+              "value": "Confirme la interfaz suministrada, la plataforma de destino y el flujo de informes por evento"
             },
             {
               "name": "Alimentación y carcasa",
@@ -294,7 +310,7 @@
         "question": "¿Cómo se compara la precisión media con las versiones de alta y baja precisión?",
         "paragraphs": [
           "La página existente de alta precisión se identifica como 0.01°. El H310-TS150M es el modelo de precisión media de ±0.1°, mientras que el H310-TS100L es el modelo de baja precisión de ±1°.",
-          "Seleccione el grado según el menor cambio angular significativo y las condiciones de medición. Consulte la página de alta precisión cuando el proyecto necesite un grado de medición más fino; considere la opción de baja precisión para posiciones amplias claramente diferenciadas."
+          "Seleccione el grado según el cambio de ángulo mínimo relevante y las condiciones de medición. Si el proyecto requiere un grado de medición más fino, consulte la página de alta precisión; considere el H310-TS100L para el monitoreo multipunto económico de postes de alumbrado, estanterías de hasta 8 m y estructuras de almacenamiento automatizado, cuando ±1° se ajuste a los cambios de ángulo a revisar."
         ],
         "answerLink": {
           "href": "#operating-profile",
@@ -377,8 +393,8 @@
         "id": "faq-reporting",
         "question": "¿Qué intervalos de medición y envío de datos y qué autonomía de batería corresponden?",
         "paragraphs": [
-          "Son requisitos de configuración independientes. Especifique la rapidez con la que puede cambiar la condición monitoreada, la frecuencia con la que se necesita una lectura remota y el tiempo de respuesta que requiere el equipo.",
-          "Confirme el perfil operativo resultante, la alimentación y la estimación de mantenimiento del H310-TS150M. Las cifras publicadas para otro modelo de sensor de inclinación no deben utilizarse como especificación suministrada de este modelo."
+          "El H310-TS150M registra una lectura de ángulo cada minuto y envía informes programados cada cuatro horas, con 240 ciclos de adquisición entre informes.",
+          "La vida útil y la alimentación dependen de la configuración suministrada y las condiciones de operación. Los requisitos de informes por evento y notificaciones se acuerdan para cada proyecto."
         ],
         "answerLink": {
           "href": "#specifications",
@@ -590,7 +606,7 @@
         "Construction & temporary supports": "Construcción y soportes provisionales",
         "Excavation retaining walls": "Muros de contención de excavaciones",
         "Steel-column erection": "Montaje de columnas de acero",
-        "Modular-unit setup orientation": "Orientación de instalación de módulos",
+        "Modular-unit setup orientation": "Orientación de edificios modulares de obra",
         "Heritage buildings & pagodas": "Edificios patrimoniales y pagodas",
         "Existing buildings & repair works": "Edificios existentes y reparaciones",
         "Urban & heritage trees": "Árboles urbanos y patrimoniales",
@@ -599,7 +615,7 @@
         "Fixed conveyor supports": "Soportes de transportadores fijos",
         "Pallet-tilting platforms": "Plataformas basculantes para palés",
         "Adjustable conveyor sections": "Tramos ajustables de transportadores",
-        "Tilting assembly fixtures": "Dispositivos basculantes de montaje",
+        "Tilting assembly fixtures": "Útiles basculantes de sujeción",
         "Elevated water-tank supports": "Soportes de depósitos elevados de agua",
         "Fixed solar-panel supports": "Soportes fijos de paneles solares",
         "Silo & tank supports": "Soportes de silos y tanques",
@@ -1185,7 +1201,7 @@
           "briefen": "Tipo de unidad, distribución de apoyos, planes de traslado, condición de referencia y sensibilidad angular requerida.",
           "imagebrief": "Fotografía oblicua lateral real de edificios modulares de obra, con unidades completas, bastidores de acero y apoyos sobre el terreno; entorno limpio y creíble.",
           "alten": "Unidades modulares de obra de dos plantas sobre apoyos, mostrando el exterior y la línea inferior de la base.",
-          "title": "Orientación de instalación de módulos",
+          "title": "Orientación de edificios modulares de obra",
           "imageId": "modular-site-buildings",
           "original": false,
           "source": "V3 medium-precision application copy; broad first-version industry imagery retained.",
@@ -1373,7 +1389,7 @@
         {
           "id": "tilting-workholding-fixtures",
           "baselineId": "tilt-scene-tilting-workholding-fixtures",
-          "title": "Dispositivos basculantes de montaje",
+          "title": "Útiles basculantes de sujeción",
           "en": "Utilice un registro de inclinación repetible al ajustar un dispositivo de montaje a diferentes ángulos de trabajo. Fije el sensor al elemento basculante y compare las lecturas solo después de bloquear la posición y cesar el movimiento. Comparta la tolerancia de ajuste angular requerida y las posiciones de trabajo para evaluar el H310-TS150M en esta tarea concreta de ajuste y comprobación.",
           "objectiveen": "Utilice un registro de inclinación repetible al ajustar un dispositivo de montaje a diferentes ángulos de trabajo.",
           "measureen": "Inclinación estática de la placa ajustable del dispositivo de montaje.",
@@ -1834,7 +1850,7 @@
           {
             "@type": "ListItem",
             "position": 25,
-            "name": "Orientación de instalación de módulos",
+            "name": "Orientación de edificios modulares de obra",
             "description": "Establezca una referencia de inclinación de un elemento seleccionado del bastidor después de colocar un edificio modular sobre sus apoyos. Identifique la unidad y el punto de medición y compare las lecturas tras traslados, ajustes de apoyos o mantenimiento previsto. El registro angular local aporta información uniforme de instalación entre traslados, con la carga normal y la sensibilidad angular requerida acordadas para esa unidad.",
             "url": "https://www.hitelecom.com/es/product/tilt-medium-precision-sensor#tilt-scene-modular-site-buildings"
           },
@@ -1897,7 +1913,7 @@
           {
             "@type": "ListItem",
             "position": 34,
-            "name": "Dispositivos basculantes de montaje",
+            "name": "Útiles basculantes de sujeción",
             "description": "Utilice un registro de inclinación repetible al ajustar un dispositivo de montaje a diferentes ángulos de trabajo. Fije el sensor al elemento basculante y compare las lecturas solo después de bloquear la posición y cesar el movimiento. Comparta la tolerancia de ajuste angular requerida y las posiciones de trabajo para evaluar el H310-TS150M en esta tarea concreta de ajuste y comprobación.",
             "url": "https://www.hitelecom.com/es/product/tilt-medium-precision-sensor#tilt-scene-tilting-workholding-fixtures"
           },

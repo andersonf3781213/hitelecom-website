@@ -52,7 +52,7 @@
     "version": 1,
     "seo": {
       "title": "Neigungssensor ±1° | H310-TS100L | Hitelecom",
-      "description": "Neigungssensor H310-TS100L mit ±1° Genauigkeit für wirtschaftliche Mehrpunktüberwachung. 21 Anwendungen für Lichtmasten, Regale bis 8 m, automatisierte Lagerrahmen und feste Objekte."
+      "description": "H310-TS100L: Neigungssensor mit ±1° für Lichtmasten, Regale bis 8 m und automatisierte Lager. Wirtschaftliche Mehrpunktüberwachung."
     },
     "hero": {
       "title": "Neigungssensor. Niedrige Genauigkeitsklasse. ±1° Genauigkeit.",
@@ -111,15 +111,15 @@
     "operatingProfile": {
       "kicker": "DIE PASSENDE GENAUIGKEITSKLASSE WÄHLEN",
       "title": "Drei Klassen. Eine klare Wahl.",
-      "intro": "Der H310-TS100L ist die Ausführung der niedrigen Genauigkeitsklasse mit ±1° für eine wirtschaftliche Neigungsüberwachung an Lichtmasten, Lagerregalen und anderen festen Objekten. Wählen Sie die Klasse anhand der Winkeländerungen, die Ihr Inspektionsplan unterscheiden muss.",
+      "intro": "Der H310-TS100L ist die Ausführung der niedrigen Genauigkeitsklasse mit ±1° für eine wirtschaftliche Neigungsüberwachung an Lichtmasten, Lagerregalen und anderen festen Objekten. Wählen Sie die Klasse anhand der Winkeländerungen, die Ihr Inspektionsplan unterscheiden muss. Der H310-TS100L sendet alle 12 Stunden geplante Berichte, also zweimal täglich. Das veröffentlichte Nutzungsdauerprofil beträgt fünf Jahre bei 12-Stunden-Übertragung, abhängig von der gelieferten Konfiguration und den Betriebsbedingungen.",
       "metrics": [
         {
-          "value": "0.01°",
+          "value": "0,01°",
           "label": "Hohe Genauigkeit",
           "detail": "Bestehender Produkteintrag für den hochgenauen Neigungssensor."
         },
         {
-          "value": "±0.1°",
+          "value": "±0,1°",
           "label": "Mittlere Genauigkeit",
           "detail": "Genauigkeitsklasse des H310-TS150M."
         },
@@ -175,12 +175,24 @@
               "value": "Ausgangslage, Objektkennung und Winkelkonvention bei der Inbetriebnahme dokumentieren"
             },
             {
+              "name": "Geplante Übertragungen",
+              "value": "Alle 12 Stunden (2 Übertragungen pro Tag)"
+            },
+            {
+              "name": "Nutzungsdauer",
+              "value": "5 Jahre im 12-Stunden-Übertragungsprofil, abhängig von gelieferter Konfiguration und Betriebsbedingungen"
+            },
+            {
+              "name": "Erfassungsintervall",
+              "value": "Wird für die gelieferte Konfiguration gesondert vereinbart"
+            },
+            {
               "name": "Messbereich & Auflösung",
               "value": "Den erforderlichen Messbereich und den ausgegebenen Winkelschritt für das Angebot angeben"
             },
             {
               "name": "Datenübertragung & Integration",
-              "value": "Gelieferte Schnittstelle, Messintervall, Übertragungsplan und Datenziel bestätigen"
+              "value": "Bestätigen Sie die gelieferte Schnittstelle, die Zielplattform und den Workflow für Ereignismeldungen"
             },
             {
               "name": "Stromversorgung & Gehäuse",
@@ -293,7 +305,7 @@
         "id": "faq-comparison",
         "question": "Wann wähle ich die niedrige, mittlere oder hohe Genauigkeitsklasse?",
         "paragraphs": [
-          "Wählen Sie den H310-TS100L, wenn die wirtschaftliche Überwachung vieler Objekte und die erforderliche Neigungsmessleistung mit ±1° Genauigkeit vereinbar sind. Der H310-TS150M ist die Ausführung der mittleren Genauigkeitsklasse mit ±0.1°. Der bestehende hochgenaue Produkteintrag ist mit 0.01° gekennzeichnet.",
+          "Wählen Sie den H310-TS100L, wenn die wirtschaftliche Überwachung vieler Objekte und die erforderliche Neigungsmessleistung mit ±1° Genauigkeit vereinbar sind. Der H310-TS150M ist die Ausführung der mittleren Genauigkeitsklasse mit ±0,1°. Der bestehende hochgenaue Produkteintrag ist mit 0,01° gekennzeichnet.",
           "Wählen Sie die Klasse anhand der relevanten Winkeländerung, Messpunktanzahl und Messbedingungen. Aufgaben, die feinere Drehmessungen am Tragwerk erfordern, sollten einer feineren Genauigkeitsklasse zugeordnet werden."
         ],
         "answerLink": {
@@ -389,8 +401,8 @@
         "id": "faq-profile",
         "question": "Welche Konfiguration für Datenübertragung, Stromversorgung und Gehäuse sollte ich wählen?",
         "paragraphs": [
-          "Stimmen Sie den Aktualisierungsplan auf das Inspektionsziel und den Prüfablauf des Teams ab. Beschreiben Sie Installationstemperatur, Wasser- oder Staubeinwirkung, Handlingbedingungen und Wartungszugang.",
-          "Bestätigen Sie Mess- und Übertragungsintervalle, Stromversorgung, Wartungsprognose und Gehäuseschutzart für den gelieferten H310-TS100L. Die veröffentlichten Werte des hochgenauen Modells sind keine bestätigte Spezifikation dieses Modells."
+          "Geplante Berichte werden alle 12 Stunden gesendet, also zweimal täglich. Das veröffentlichte Nutzungsdauerprofil beträgt fünf Jahre bei 12-Stunden-Übertragung, abhängig von der gelieferten Konfiguration und den Betriebsbedingungen.",
+          "Erfassungsintervall, Stromversorgung und der Workflow für Ereignismeldungen werden für den gelieferten H310-TS100L gesondert vereinbart. Veröffentlichte Werte des Modells mit hoher Genauigkeit sind nicht die bestätigte Spezifikation dieses Modells."
         ],
         "answerLink": {
           "href": "#specifications",
@@ -426,7 +438,7 @@
         },
         {
           "source": "User instruction, 2026-10-25",
-          "existingHighPrecisionEntry": "0.01°"
+          "existingHighPrecisionEntry": "0,01°"
         }
       ],
       "scope": "Weitere Parameter der gelieferten Konfiguration sind für dieses Modell zu bestätigen; technische Daten des ursprünglichen hochgenauen Modells werden nicht übernommen."
@@ -453,12 +465,12 @@
         "note": "H310-TS100L"
       },
       {
-        "value": "0.01°",
+        "value": "0,01°",
         "label": "Hochgenaue Alternative",
         "note": "Bestehender hochgenauer Neigungssensor"
       },
       {
-        "value": "±0.1°",
+        "value": "±0,1°",
         "label": "Alternative mit mittlerer Genauigkeit",
         "note": "H310-TS150M"
       }
@@ -534,11 +546,11 @@
     "relKicker": "FÜHREN SIE IHR ÜBERWACHUNGSPROJEKT FORT",
     "relLinks": [
       {
-        "label": "Hohe Genauigkeit · 0.01° ↗",
+        "label": "Hohe Genauigkeit · 0,01° ↗",
         "href": "/de/product/tilt-sensor"
       },
       {
-        "label": "Mittlere Genauigkeit · ±0.1° ↗",
+        "label": "Mittlere Genauigkeit · ±0,1° ↗",
         "href": "/de/product/tilt-medium-precision-sensor"
       },
       {
@@ -1187,7 +1199,7 @@
             "name": "Wann wähle ich die niedrige, mittlere oder hohe Genauigkeitsklasse?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Wählen Sie den H310-TS100L, wenn die wirtschaftliche Überwachung vieler Objekte und die erforderliche Neigungsmessleistung mit ±1° Genauigkeit vereinbar sind. Der H310-TS150M ist die Ausführung der mittleren Genauigkeitsklasse mit ±0.1°. Der bestehende hochgenaue Produkteintrag ist mit 0.01° gekennzeichnet.\n\nWählen Sie die Klasse anhand der relevanten Winkeländerung, Messpunktanzahl und Messbedingungen. Aufgaben, die feinere Drehmessungen am Tragwerk erfordern, sollten einer feineren Genauigkeitsklasse zugeordnet werden."
+              "text": "Wählen Sie den H310-TS100L, wenn die wirtschaftliche Überwachung vieler Objekte und die erforderliche Neigungsmessleistung mit ±1° Genauigkeit vereinbar sind. Der H310-TS150M ist die Ausführung der mittleren Genauigkeitsklasse mit ±0,1°. Der bestehende hochgenaue Produkteintrag ist mit 0,01° gekennzeichnet.\n\nWählen Sie die Klasse anhand der relevanten Winkeländerung, Messpunktanzahl und Messbedingungen. Aufgaben, die feinere Drehmessungen am Tragwerk erfordern, sollten einer feineren Genauigkeitsklasse zugeordnet werden."
             }
           },
           {

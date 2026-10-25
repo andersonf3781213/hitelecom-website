@@ -68,7 +68,7 @@ const localizedNames = Object.freeze({
   fr: Object.freeze({
     'tilt-sensor': 'Capteur d’inclinaison de haute précision',
     'tilt-medium-precision-sensor': 'Capteur d’inclinaison de précision moyenne',
-    'tilt-low-precision-sensor': 'Capteur d’inclinaison de faible précision',
+    'tilt-low-precision-sensor': 'Capteur d’inclinaison de basse précision',
   }),
   ru: Object.freeze({
     'tilt-sensor': 'Датчик наклона высокой точности',

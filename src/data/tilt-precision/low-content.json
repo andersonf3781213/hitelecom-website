@@ -61,7 +61,7 @@
   "operatingProfile": {
     "kicker": "CHOOSE YOUR MEASUREMENT GRADE",
     "title": "Three grades. One clear choice.",
-    "intro": "H310-TS100L is the ±1° low-precision option for economical tilt coverage across light poles, warehouse racks and other fixed assets. Choose the grade around the angle changes your inspection plan needs to distinguish.",
+    "intro": "H310-TS100L is the ±1° low-precision option for economical tilt coverage across light poles, warehouse racks and other fixed assets. Choose the grade around the angle changes your inspection plan needs to distinguish. H310-TS100L sends scheduled reports every 12 hours, or twice per day. Its published service-life profile is five years with 12-hour reporting, subject to the supplied configuration and operating conditions.",
     "metrics": [
       {
         "value": "0.01°",
@@ -125,12 +125,24 @@
             "value": "Record the initial position, asset ID and angle convention during commissioning"
           },
           {
+            "name": "Scheduled reporting",
+            "value": "Every 12 hours (2 reports per day)"
+          },
+          {
+            "name": "Service life",
+            "value": "5 years with the 12-hour reporting profile, subject to the supplied configuration and operating conditions"
+          },
+          {
+            "name": "Acquisition interval",
+            "value": "Agreed separately for the supplied configuration"
+          },
+          {
             "name": "Range & resolution",
             "value": "Specify the required working range and reported increment for the quotation"
           },
           {
             "name": "Reporting & integration",
-            "value": "Confirm the supplied interface, measurement interval, report schedule and destination"
+            "value": "Confirm the supplied interface, data destination and event-reporting workflow"
           },
           {
             "name": "Power & enclosure",
@@ -339,8 +351,8 @@
       "id": "faq-profile",
       "question": "What reporting, power and enclosure configuration should I choose?",
       "paragraphs": [
-        "Match the update schedule to the inspection objective and the team’s review process. Describe the installation temperature, water or dust exposure, handling conditions and maintenance access.",
-        "Confirm the measurement and reporting intervals, power arrangement, service estimate and enclosure rating for the supplied H310-TS100L. The high-precision model’s published figures are not this model’s confirmed specification."
+        "Scheduled reporting is every 12 hours — two reports per day. The published service-life profile is five years with 12-hour reporting, subject to the supplied configuration and operating conditions.",
+        "The acquisition interval, power arrangement and event-reporting workflow are agreed separately for the supplied H310-TS100L. The high-precision model’s published figures are not this model’s confirmed specification."
       ],
       "answerLink": {
         "href": "#specifications",

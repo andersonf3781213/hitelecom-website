@@ -52,7 +52,7 @@
     "version": 1,
     "seo": {
       "title": "Sensor de inclinación de ±1° | H310-TS100L | Hitelecom",
-      "description": "Sensor de inclinación H310-TS100L de ±1° para monitoreo económico multipunto. Explore 21 aplicaciones en postes de alumbrado, estanterías de hasta 8 m, estructuras ASRS y activos fijos."
+      "description": "H310-TS100L, sensor de inclinación ±1° para postes, estanterías de hasta 8 m y almacenes automatizados. Monitoreo multipunto económico."
     },
     "hero": {
       "title": "Sensor de inclinación. Baja precisión. Exactitud de ±1°.",
@@ -111,7 +111,7 @@
     "operatingProfile": {
       "kicker": "ELIJA SU GRADO DE MEDICIÓN",
       "title": "Tres grados. Una elección clara.",
-      "intro": "El H310-TS100L es la opción de baja precisión de ±1° para cubrir económicamente la inclinación de postes de alumbrado, estanterías y otros activos fijos. Elija el grado según los cambios angulares que su plan de inspección necesita distinguir.",
+      "intro": "El H310-TS100L es la opción de baja precisión de ±1° para cubrir económicamente la inclinación de postes de alumbrado, estanterías y otros activos fijos. Elija el grado según los cambios angulares que su plan de inspección necesita distinguir. El H310-TS100L envía informes programados cada 12 horas, dos al día. Su perfil de vida útil publicado es de cinco años con informes de 12 horas, sujeto a la configuración suministrada y las condiciones de operación.",
       "metrics": [
         {
           "value": "0.01°",
@@ -175,12 +175,24 @@
               "value": "Registre la posición inicial, el identificador del activo y la convención angular durante la puesta en servicio"
             },
             {
+              "name": "Informes programados",
+              "value": "Cada 12 horas (2 informes al día)"
+            },
+            {
+              "name": "Vida útil",
+              "value": "5 años con el perfil de informes de 12 horas, sujeto a la configuración suministrada y las condiciones de operación"
+            },
+            {
+              "name": "Intervalo de adquisición",
+              "value": "Se acuerda por separado para la configuración suministrada"
+            },
+            {
               "name": "Rango y resolución",
               "value": "Especifique el rango de trabajo requerido y el incremento informado para preparar el presupuesto"
             },
             {
               "name": "Envío de datos e integración",
-              "value": "Confirme la interfaz suministrada, el intervalo de medición, el programa de envío de datos y su destino"
+              "value": "Confirme la interfaz suministrada, la plataforma de destino y el flujo de informes por evento"
             },
             {
               "name": "Alimentación y carcasa",
@@ -389,8 +401,8 @@
         "id": "faq-profile",
         "question": "¿Qué configuración de envío de datos, alimentación y carcasa debo elegir?",
         "paragraphs": [
-          "Adapte el programa de actualización al objetivo de inspección y al proceso de revisión del equipo. Describa la temperatura de instalación, la exposición al agua o polvo, las condiciones de manipulación y el acceso de mantenimiento.",
-          "Confirme los intervalos de medición y envío de datos, la alimentación, la estimación de mantenimiento y el grado de protección de la carcasa del H310-TS100L suministrado. Las cifras publicadas del modelo de alta precisión no son la especificación confirmada de este modelo."
+          "Los informes programados se envían cada 12 horas, dos al día. El perfil de vida útil publicado es de cinco años con informes de 12 horas, sujeto a la configuración suministrada y las condiciones de operación.",
+          "El intervalo de adquisición, la alimentación y el flujo de informes por evento se acuerdan por separado para el H310-TS100L suministrado. Los datos publicados del modelo de alta precisión no son la especificación confirmada de este modelo."
         ],
         "answerLink": {
           "href": "#specifications",
@@ -574,12 +586,12 @@
         "Warehouse mezzanine supports": "Soportes de entreplantas de almacén",
         "Street-light poles": "Postes de alumbrado público",
         "Solar street-light poles": "Postes de alumbrado solar",
-        "Camera & traffic poles": "Postes de cámaras y tráfico",
+        "Camera & traffic poles": "Postes de señalización y cámaras",
         "Billboard support poles": "Postes de soporte de vallas publicitarias",
         "Fixed conveyor supports": "Soportes de transportadores fijos",
         "Production-line support frames": "Bastidores de soporte de líneas de producción",
-        "Pump-skid frames": "Bastidores de bases de bombas",
-        "Outdoor utility cabinets": "Armarios exteriores de servicios",
+        "Pump-skid frames": "Bancadas de bombas",
+        "Outdoor utility cabinets": "Armarios técnicos exteriores",
         "Utility pipe-rack columns": "Columnas de soportes de tuberías de servicios",
         "Silo & tank support frames": "Bastidores de soporte de silos y tanques",
         "Modular site buildings": "Edificios modulares de obra",
@@ -824,7 +836,7 @@
         {
           "id": "camera-and-traffic-poles",
           "baselineId": "tilt-scene-camera-and-traffic-poles",
-          "title": "Postes de cámaras y tráfico",
+          "title": "Postes de señalización y cámaras",
           "en": "Incluya postes de cámaras de tráfico y equipos viales en un programa básico de inclinación. Asignar a cada punto un cruce, poste e identificador de equipo permite localizar rápidamente una lectura modificada en un inventario disperso. Compare la inclinación del soporte con su referencia y revise los cambios persistentes junto con trabajos de servicio, informes de colisión e inspecciones programadas.",
           "measureen": "Cambios de orientación del poste vial de soporte en el punto de montaje seleccionado.",
           "objectiveen": "Cambios de orientación del poste vial de soporte en el punto de montaje seleccionado.",
@@ -908,7 +920,7 @@
         {
           "id": "pump-skid-frames",
           "baselineId": "tilt-scene-pump-skid-frames",
-          "title": "Bastidores de bases de bombas",
+          "title": "Bancadas de bombas",
           "en": "Mantenga una referencia de inclinación de bastidores de bases de bombas distribuidos por una instalación. Vincule cada punto con el conjunto de bomba y la base para revisar cambios de orientación tras mantenimiento, traslados u obras de cimentación. Un conjunto limitado de puntos en varias bases permite organizar el registro de equipos mediante comparaciones bajo condiciones estáticas similares.",
           "measureen": "Cambios de inclinación estática del bastidor rígido de la base del conjunto de bomba.",
           "objectiveen": "Cambios de inclinación estática del bastidor rígido de la base del conjunto de bomba.",
@@ -936,7 +948,7 @@
         {
           "id": "outdoor-utility-cabinets",
           "baselineId": "tilt-scene-outdoor-utility-cabinets",
-          "title": "Armarios exteriores de servicios",
+          "title": "Armarios técnicos exteriores",
           "en": "Siga la orientación básica de armarios de equipos exteriores independientes en recintos, depósitos o instalaciones de servicios. Identifique la ubicación de cada armario y punto y compare las lecturas con la referencia instalada. Un plan multipunto económico ayuda a localizar cambios de envolvente o base tras obras de terreno, traslados o contactos notificados durante las inspecciones habituales.",
           "measureen": "Cambios de inclinación del cuerpo fijo del armario o de su bastidor de base.",
           "objectiveen": "Cambios de inclinación del cuerpo fijo del armario o de su bastidor de base.",
@@ -1330,7 +1342,7 @@
           {
             "@type": "ListItem",
             "position": 9,
-            "name": "Postes de cámaras y tráfico",
+            "name": "Postes de señalización y cámaras",
             "description": "Incluya postes de cámaras de tráfico y equipos viales en un programa básico de inclinación. Asignar a cada punto un cruce, poste e identificador de equipo permite localizar rápidamente una lectura modificada en un inventario disperso. Compare la inclinación del soporte con su referencia y revise los cambios persistentes junto con trabajos de servicio, informes de colisión e inspecciones programadas.",
             "url": "https://www.hitelecom.com/es/product/tilt-low-precision-sensor#tilt-scene-camera-and-traffic-poles"
           },
@@ -1358,14 +1370,14 @@
           {
             "@type": "ListItem",
             "position": 13,
-            "name": "Bastidores de bases de bombas",
+            "name": "Bancadas de bombas",
             "description": "Mantenga una referencia de inclinación de bastidores de bases de bombas distribuidos por una instalación. Vincule cada punto con el conjunto de bomba y la base para revisar cambios de orientación tras mantenimiento, traslados u obras de cimentación. Un conjunto limitado de puntos en varias bases permite organizar el registro de equipos mediante comparaciones bajo condiciones estáticas similares.",
             "url": "https://www.hitelecom.com/es/product/tilt-low-precision-sensor#tilt-scene-pump-skid-frames"
           },
           {
             "@type": "ListItem",
             "position": 14,
-            "name": "Armarios exteriores de servicios",
+            "name": "Armarios técnicos exteriores",
             "description": "Siga la orientación básica de armarios de equipos exteriores independientes en recintos, depósitos o instalaciones de servicios. Identifique la ubicación de cada armario y punto y compare las lecturas con la referencia instalada. Un plan multipunto económico ayuda a localizar cambios de envolvente o base tras obras de terreno, traslados o contactos notificados durante las inspecciones habituales.",
             "url": "https://www.hitelecom.com/es/product/tilt-low-precision-sensor#tilt-scene-outdoor-utility-cabinets"
           },

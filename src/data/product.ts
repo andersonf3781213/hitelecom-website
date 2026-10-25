@@ -39985,8 +39985,8 @@ const listSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
       desc: 'Submersible level sensors with a 0–200 m range for rivers, reservoirs and tanks, with 4G/NB-IoT reporting, threshold alerts and Hitelecom Cloud integration.',
     },
     '267': {
-      title: 'High-Precision Tilt Sensors | 4G & NB-IoT | Hitelecom',
-      desc: 'Wireless tilt sensors (inclinometers) for structural health monitoring of buildings, bridges and towers, with remote alerts and 4G/NB-IoT connectivity.',
+      title: 'Wireless Tilt Sensors | 4G, NB-IoT & LoRa | Hitelecom',
+      desc: 'Compare Hitelecom wireless tilt sensors in high, medium and low precision grades. Explore 4G, NB-IoT and LoRa options for your monitoring project.',
     },
     '266': {
       title: 'Radar Distance Sensors | 4G & NB-IoT | Hitelecom',
@@ -40063,8 +40063,8 @@ const listSeoBase: Record<'en' | 'zh', Record<string, PageSeo>> = {
       desc: '宏太通信投入式液位传感器：精准稳定的液位监测终端，4G/NB-IoT通信，适用于智慧水务与工业液位监测，支持OEM/ODM定制。',
     },
     '267': {
-      title: '倾角传感器 | 户外4G/NB-IoT - 宏太通信',
-      desc: '宏太通信倾角传感器：超高精度倾斜监测与实时告警，服务结构健康监测，4G/NB-IoT通信，支持OEM/ODM定制。',
+      title: '无线倾斜传感器 | 高、中、低精度选型 | Hitelecom',
+      desc: '对比 Hitelecom 高、中、低精度无线倾斜传感器，按监测项目需求选择 4G、NB-IoT 或 LoRa 通信配置，支持宏太云接入与OEM/ODM定制。',
     },
     '266': {
       title: '雷达测距传感器 | 户外4G/NB-IoT - 宏太通信',
@@ -40323,8 +40323,8 @@ export const listSeo: Record<Locale, Record<string, PageSeo>> =
   "desc": "Radar-Abstandssensoren von 0,3 bis 50 m für Silos, Bunker, Kontrollschächte und Füllstandskontrolle, mit 4G- oder NB-IoT-Konnektivität."
  },
  "267": {
-  "title": "Präzisions-Neigungssensoren | Hitelecom",
-  "desc": "Neigungssensoren für Gebäude, Brücken und Türme, mit einer Auflösung von 0,001°, Remote-Alarmen und Optionen 4G, NB-IoT oder LoRa."
+  "title": "Kabellose Neigungssensoren | Hitelecom",
+  "desc": "Vergleichen Sie die kabellosen Neigungssensoren von Hitelecom in den Genauigkeitsklassen hoch, mittel und niedrig. Entdecken Sie 4G-, NB-IoT- und LoRa-Optionen für Ihr Überwachungsprojekt."
  },
  "268": {
   "title": "Tauch-Füllstandssensoren | Bis zu 200 m | Hitelecom",
@@ -40400,8 +40400,8 @@ export const listSeo: Record<Locale, Record<string, PageSeo>> =
   "desc": "サイロ、バンカー、マンホール、レベル制御向けの0.3〜50 mレーダー距離センサー。4GまたはNB-IoT接続。"
  },
  "267": {
-  "title": "高精度傾斜センサー | Hitelecom",
-  "desc": "建物、橋梁、タワー向けの傾斜センサー。分解能0.001°、リモートアラート、4G・NB-IoT・LoRaオプション。"
+  "title": "ワイヤレス傾斜センサー｜3つの精度等級｜Hitelecom",
+  "desc": "Hitelecomのワイヤレス傾斜センサーを高精度・中精度・低精度の3つの等級で比較。監視プロジェクトに合わせて4G、NB-IoT、LoRaのオプションをご覧ください。"
  },
  "268": {
   "title": "投入式レベルセンサー一覧 | 最長200 m | Hitelecom",
@@ -40477,8 +40477,8 @@ export const listSeo: Record<Locale, Record<string, PageSeo>> =
   "desc": "Sensores de distancia por radar de 0,3 a 50 m para silos, tolvas, pozos de registro y control de nivel, con conectividad 4G o NB-IoT."
  },
  "267": {
-  "title": "Sensores de inclinación de precisión | Hitelecom",
-  "desc": "Sensores de inclinación para edificios, puentes y torres, con resolución de 0,001°, alertas remotas y opciones 4G, NB-IoT o LoRa."
+  "title": "Sensores de inclinación inalámbricos | Hitelecom",
+  "desc": "Compare los sensores de inclinación inalámbricos de Hitelecom en grados de precisión alta, media y baja. Descubra las opciones 4G, NB-IoT y LoRa para su proyecto de monitorización."
  },
  "268": {
   "title": "Sensores de nivel sumergibles | Hasta 200 m | Hitelecom",
@@ -40543,8 +40543,8 @@ export const listSeo: Record<Locale, Record<string, PageSeo>> =
     "desc": "Capteurs de niveau submersibles de 0–200 m pour rivières, réservoirs et cuves, avec remontée 4G/NB-IoT, alertes de seuil et intégration Hitelecom Cloud."
    },
    "267": {
-    "title": "Capteurs d’inclinaison haute précision | Hitelecom",
-    "desc": "Capteurs d’inclinaison sans fil (inclinomètres) pour la surveillance de la santé structurelle des bâtiments, ponts et tours."
+    "title": "Capteurs d’inclinaison sans fil | Hitelecom",
+    "desc": "Comparez les capteurs d’inclinaison sans fil Hitelecom en précision haute, moyenne et basse. Découvrez les options 4G, NB-IoT et LoRa pour votre projet de surveillance."
    },
    "266": {
     "title": "Capteurs de distance radar | 4G et NB-IoT | Hitelecom",
@@ -40621,8 +40621,8 @@ export const listSeo: Record<Locale, Record<string, PageSeo>> =
     "desc": "Погружные датчики уровня 0–200 м для рек, водохранилищ и резервуаров, с передачей 4G/NB-IoT, пороговыми оповещениями и интеграцией Hitelecom Cloud."
    },
    "267": {
-    "title": "Высокоточные датчики наклона | 4G и NB-IoT | Hitelecom",
-    "desc": "Беспроводные датчики наклона (инклинометры) для мониторинга состояния конструкций зданий, мостов и башен."
+    "title": "Датчики наклона 4G, NB-IoT и LoRa | Hitelecom",
+    "desc": "Сравните беспроводные датчики наклона Hitelecom высокого, среднего и базового классов точности. Подберите вариант с 4G, NB-IoT или LoRa для вашего проекта мониторинга."
    },
    "266": {
     "title": "Радарные датчики расстояния | 4G и NB-IoT | Hitelecom",

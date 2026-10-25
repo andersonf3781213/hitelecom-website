@@ -61,7 +61,7 @@
   "operatingProfile": {
     "kicker": "CHOOSE YOUR MEASUREMENT GRADE",
     "title": "Three grades. One clear choice.",
-    "intro": "H310-TS150M is the ±0.1° medium-precision option. Compare the required angle change with the grade before selecting the mounting, operating profile and data route.",
+    "intro": "H310-TS150M is the ±0.1° medium-precision option. Compare the required angle change with the grade before selecting the mounting, operating profile and data route. H310-TS150M acquires an angle reading every minute and sends scheduled reports every four hours, with 240 acquisition cycles between reports.",
     "metrics": [
       {
         "value": "0.01°",
@@ -125,12 +125,28 @@
             "value": "Record the initial position, asset ID and angle convention during commissioning"
           },
           {
+            "name": "Acquisition interval",
+            "value": "Every 1 minute"
+          },
+          {
+            "name": "Scheduled reporting",
+            "value": "Every 4 hours"
+          },
+          {
+            "name": "Acquisition cycles",
+            "value": "240 per scheduled report"
+          },
+          {
+            "name": "Service life",
+            "value": "Follows the supplied configuration and operating conditions"
+          },
+          {
             "name": "Range & resolution",
             "value": "Specify the required working range and reported increment for the quotation"
           },
           {
             "name": "Reporting & integration",
-            "value": "Confirm the supplied interface, measurement interval, report schedule and destination"
+            "value": "Confirm the supplied interface, data destination and event-reporting workflow"
           },
           {
             "name": "Power & enclosure",
@@ -244,7 +260,7 @@
       "question": "How does medium precision compare with the high- and low-precision versions?",
       "paragraphs": [
         "The existing high-precision entry is identified as 0.01°. H310-TS150M is the ±0.1° medium-precision model, while H310-TS100L is the ±1° low-precision model.",
-        "Select the grade around the smallest meaningful angle change and the measurement conditions. Use the high-precision page when the project needs a finer measurement grade; consider the low-precision option for clearly separated broad positions."
+        "Select the grade around the smallest meaningful angle change and the measurement conditions. Use the high-precision page when the project needs a finer measurement grade; consider H310-TS100L for economical multi-point monitoring across outdoor light poles, conventional racks up to 8 m and automated-storage structures where ±1° accuracy matches the angle changes to review."
       ],
       "answerLink": {
         "href": "#operating-profile",
@@ -327,8 +343,8 @@
       "id": "faq-reporting",
       "question": "What measurement interval, reporting interval and battery life apply?",
       "paragraphs": [
-        "These are separate configuration requirements. Specify how quickly the monitored condition can change, how often a remote reading is needed and what response time the team requires.",
-        "Confirm the resulting operating profile, power arrangement and service estimate for H310-TS150M. Figures published for another tilt-sensor model should not be used as this model’s supplied specification."
+        "H310-TS150M acquires an angle reading every minute and sends scheduled reports every four hours, with 240 acquisition cycles between reports.",
+        "Service life and power follow the supplied configuration and operating conditions. Event reporting and notification requirements are agreed for the project."
       ],
       "answerLink": {
         "href": "#specifications",

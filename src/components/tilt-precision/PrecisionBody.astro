@@ -70,7 +70,7 @@ const sensorsHref = `${prefix}/product/lists/cid/261`;
     <div class="profile-note"><div><span class="small-label">{t.profNoteLabel}</span><strong>{t.profNoteStrong.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</strong></div><p>{content.operatingProfile.footnote}</p></div>
   </div></section>
 
-  <Applications groups={groups} canonicalPath={canonicalPath} applicationUi={applicationUi} />
+  <Applications groups={groups} canonicalPath={canonicalPath} applicationUi={applicationUi} locale={locale} />
 
   <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
     <div class="section-heading"><div><p class="eyebrow">{t.serKicker}</p><h2 id="specifications-title">{specTitleMain}{specTitleSpan != null && <><br/><span>{specTitleSpan}</span></>}</h2></div><p>{content.modelCatalog.intro}</p></div>
