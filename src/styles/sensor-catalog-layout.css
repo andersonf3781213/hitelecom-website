@@ -1,0 +1,125 @@
+/* sensor-catalog-layout.css
+ * 替换旧倾斜专属结构补丁；在 product 旧样式之后加载（经 lib/catalog-site.ts 导入）。
+ * 作用域限于带 sensor-catalog 类的传感器列表（cid 261 总列表及传感器子分类）。
+ * 所有传感器卡片共用同一盒模型与内部排版：外层 Grid 两列、小屏一列；
+ * 列距沿用 2%，行距沿用 1.19792vw；图片高度、顶部距离与文字起点与原站一致。
+ */
+
+.pclone .pro_2_mid_right_2.sensor-catalog > ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2%;
+  row-gap: 1.19792vw;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 偶数规则也须覆盖，否则旧 nth-child 规则仍有更高优先级。 */
+.pclone .pro_2_mid_right_2.sensor-catalog > ul > li,
+.pclone .pro_2_mid_right_2.sensor-catalog > ul > li:nth-child(2n) {
+  float: none;
+  clear: none;
+  width: auto;
+  min-width: 0;
+  margin: 0;
+  display: flex;
+}
+
+/* 同时支持现有 <a> 卡片和组件的静态卡片容器。 */
+.pclone .pro_2_mid_right_2.sensor-catalog > ul > li > a,
+.pclone .pro_2_mid_right_2.sensor-catalog > ul > li > .pro-card-static {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: 28.125vw;
+  padding: 3.33333vw 0 1.5em;
+  position: relative;
+}
+
+.pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid_1 {
+  position: static;
+  top: auto;
+  left: auto;
+  width: 100%;
+  height: 13.5417vw;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid_1 img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid_2 {
+  position: static;
+  top: auto;
+  left: auto;
+  width: 100%;
+  padding: 2.125vw 0 0;
+  flex: 0 0 auto;
+}
+
+.pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid_2_1.hi {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1680px) {
+  .pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid {
+    min-height: 30vw;
+  }
+}
+
+/* 中间宽度统一预留长标题空间，覆盖所有产品，避免品类特例。 */
+@media (min-width: 641px) and (max-width: 1150px) {
+  .pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid_2_1.hi {
+    min-height: 3em;
+  }
+}
+
+@media (max-width: 640px) {
+  .pclone .pro_2_mid_right_2.sensor-catalog > ul {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 1em;
+  }
+
+  .pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid {
+    min-height: 0;
+    padding: 2em 0;
+  }
+
+  .pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid_1 {
+    height: auto;
+  }
+
+  .pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid_1 img {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid_2 {
+    padding-top: 1.5em;
+  }
+}
+
+/* 不让 display:flex 把采用 hidden 属性的筛选项重新显示出来。 */
+.pclone .pro_2_mid_right_2.sensor-catalog > ul > li[hidden] {
+  display: none !important;
+}

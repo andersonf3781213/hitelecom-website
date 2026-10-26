@@ -10,7 +10,7 @@ const root=process.cwd();
 const productSource=stripTypeScriptTypes((await readFile('src/data/product.ts','utf8')).replace("import { getCollection } from 'astro:content';","const getCollection = async () => [];"));
 const product=await import('data:text/javascript;base64,'+Buffer.from(productSource).toString('base64'));
 const catalog=JSON.parse(await readFile('src/data/product-catalog.json','utf8'));
-const sourceTemplate=stripTypeScriptTypes(await readFile('src/lib/catalog-site.ts','utf8')).replace("import '../styles/tilt-precision-cards.css';",'');
+const sourceTemplate=stripTypeScriptTypes(await readFile('src/lib/catalog-site.ts','utf8')).replace(/import '\.\.\/styles\/(tilt-precision-cards|sensor-catalog-layout)\.css';/,'');
 async function loadApplyCatalog(records){
  let source=sourceTemplate.replace("import catalog from '../data/product-catalog.json';",'const catalog = '+JSON.stringify(records)+';');
  source=source.replace("import { productSlugs } from '../data/product';",'const productSlugs = '+JSON.stringify(product.productSlugs)+';');

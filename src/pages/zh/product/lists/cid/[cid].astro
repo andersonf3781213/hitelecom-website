@@ -80,7 +80,7 @@ const listLd = itemListLd(
         <div class="pro_2_mid">
           <ListSidebar locale="zh" subcats={page.subcats} sideProds={sideProds} parentCid={parent} />
           <div class="pro_2_mid_right">
-            <div class="clearfix pro_2_mid_right_2">
+            <div class:list={["clearfix pro_2_mid_right_2", listParent[cid] === "261" && "sensor-catalog"]}>
               <ul class={`hi${cid}`}>
                 {page.products.map((p) => <ProductCard locale="zh" product={p} />)}
               </ul>

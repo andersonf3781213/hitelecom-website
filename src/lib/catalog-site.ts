@@ -5,7 +5,7 @@
  * 数据文件：src/data/product-catalog.json（后台保存即更新此文件）
  */
 import catalog from '../data/product-catalog.json';
-import '../styles/tilt-precision-cards.css';
+import '../styles/sensor-catalog-layout.css';
 import { applyCatalogToExisting } from './catalog-adapter.mjs';
 import { productSlugs } from '../data/product';
 import { precisionCardRegistry, applyPrecisionCardDisplay } from './tilt-precision-cards.mjs';
