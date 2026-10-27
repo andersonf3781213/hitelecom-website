@@ -1,0 +1,1678 @@
+{
+ "meta": {
+  "model": "H310-TS380C",
+  "variant": "high",
+  "locale": "zh",
+  "route": "/zh/product/triaxial-high-precision-tilt-sensor",
+  "canonical": "https://www.hitelecom.com/zh/product/triaxial-high-precision-tilt-sensor",
+  "source": "GPT6 multilingual MD 2026-10-27, Kimi integration"
+ },
+ "content": {
+  "version": 1,
+  "seo": {
+   "title": "±0.01° 三轴倾斜传感器 | H310-TS380C | Hitelecom",
+   "description": "H310-TS380C 三轴倾斜传感器，精度 ±0.01°，1 分钟采集、4 小时上报，适用于仓储、结构构件和工业设备的倾斜监测。",
+   "keywords": "H310-TS380C, 三轴倾斜传感器, 三轴倾角仪, 无线倾斜传感器, 货架倾斜监测, 结构倾斜, 4G LTE, NB-IoT, LoRa, OEM"
+  },
+  "hero": {
+   "title": "三轴倾斜传感器。 高精度。 ±0.01° 精度。",
+   "description": "H310-TS380C 是一款精度为 ±0.01° 的高精度三轴倾斜传感器，用于货架立柱、结构构件、杆体及设备框架的局部倾斜监测。三轴感知、1 分钟采集与 4 小时定时上报，将明确安装点的读数与持续一致的变化记录关联起来。",
+   "primaryLabel": "咨询您的项目",
+   "secondaryLabel": "查看技术规格"
+  },
+  "features": [
+   {
+    "title": "±0.01° 三轴倾斜测量",
+    "text": "H310-TS380C 将 ±0.01° 精度等级与 X/Y/Z 三轴感知相结合。请根据实际安装方式明确上报的角度通道及坐标轴约定。"
+   },
+   {
+    "title": "1 分钟采集",
+    "text": "1 分钟采集间隔，可在安装点获取较频繁的观测读数。采集周期与读数传输周期应分别确认。"
+   },
+   {
+    "title": "4 小时定时上报",
+    "text": "通过所选无线制式与接口，按 4 小时周期将分布式测点的读数传送至宏太云或兼容的客户平台。"
+   },
+   {
+    "title": "适配安装环境的防护",
+    "text": "可选金属 IP68 或塑料 IP66 外壳，规定工作温度为 −40°C 至 +85°C；请根据被测构件选择安装套件。"
+   },
+   {
+    "title": "通过 NFC 安装调试",
+    "text": "NFC 激活与本地配置支持设备安装调试。开始监测前，请记录资产编号、初始角度和安装方向。"
+   },
+   {
+    "title": "为项目集成做好准备",
+    "text": "根据设备版本选择 4G LTE、NB-IoT 或 LoRa。请约定报文字段与平台接口；支持的版本可进行远程固件更新。"
+   }
+  ],
+  "overview": {
+   "kicker": "更清晰地了解变化",
+   "title": "测量倾角。 跟踪趋势。",
+   "answer": "三轴倾斜传感器以明确的传感器方向为基准测量倾斜。H310-TS380C 提供 ±0.01° 精度选项，适合在选定安装点需要更细致倾角精度等级的项目。请将安装基准、资产编号与上报坐标轴约定一并保存，确保后续读数始终对应同一个局部构件。",
+   "steps": [
+    {
+     "number": "01",
+     "title": "明确测点与方向",
+     "text": "将传感器固定在选定构件上。安装后记录资产编号、支架位置、坐标轴方向和初始角度。"
+    },
+    {
+     "number": "02",
+     "title": "让精度匹配所需变化",
+     "text": "将需要观测的角度变化与 ±0.01° 精度进行比较。分别明确各上报通道的工作量程、上报增量及适用测试条件。"
+    },
+    {
+     "number": "03",
+     "title": "让变化记录服务于实际工作",
+     "text": "约定复核条件和负责人。安装完成后，验证读数、定时报文和平台工作流程。"
+    }
+   ]
+  },
+  "operatingProfile": {
+   "kicker": "采集与上报",
+   "title": "频繁采集。 定时上报。",
+   "intro": "H310-TS380C 每分钟采集一次读数，每 4 小时定时上报一次。规格书给出的 10 年参考运行寿命，条件为 25°C、信号正常。",
+   "metrics": [
+    {
+     "value": "1 分钟",
+     "label": "采集间隔",
+     "detail": "在已安装的监测点较频繁地采集读数。"
+    },
+    {
+     "value": "4 小时",
+     "label": "定时上报",
+     "detail": "每天对应 6 个定时上报间隔。"
+    },
+    {
+     "value": "240",
+     "label": "采集次数",
+     "detail": "该参考运行配置下，两次定时上报之间的采集次数。"
+    },
+    {
+     "value": "10 年*",
+     "label": "参考电池寿命",
+     "detail": "1 分钟采集、4 小时上报、25°C、信号正常。"
+    }
+   ],
+   "footnote": "实际电池寿命随启用功能、事件频率及无线重试次数变化。采集次数不代表每份上报报文包含的独立样本数量，也不代表数据保留时长。请根据供货配置约定事件上报与通知要求。"
+  },
+  "modelCatalog": {
+   "title": "合适的技术规格。适配您的安装。",
+   "intro": "以 H310-TS380C 及其 ±0.01° 精度等级作为选型参考，并结合所选无线制式与外壳，明确坐标轴约定、所需工作量程及数据接口。",
+   "defaultModelId": "h310-ts380c",
+   "models": [
+    {
+     "id": "h310-ts380c",
+     "model": "H310-TS380C",
+     "scopeNote": "三轴高精度倾斜传感器 · ±0.01° 精度。以下技术信息依据 2026-10-27 规格书。各轴角度定义、量程、分辨率和配置条件均属于供货规格的组成部分。",
+     "datasheet": {
+      "url": "/downloads/h310-ts380c-triaxial-tilt-sensor-datasheet.pdf",
+      "label": "下载 H310-TS380C 规格书 (EN)"
+     },
+     "specifications": [
+      {
+       "name": "型号",
+       "value": "H310-TS380C"
+      },
+      {
+       "name": "产品等级",
+       "value": "三轴 · 高精度"
+      },
+      {
+       "name": "精度",
+       "value": "±0.01°；适用量程与测试条件以供货配置为准"
+      },
+      {
+       "name": "感知类型",
+       "value": "MEMS；三轴感知（X / Y / Z）"
+      },
+      {
+       "name": "角度输出",
+       "value": "角度定义与参考方向以供货协议为准；基于重力参考的倾斜测量不能独立确定偏航角"
+      },
+      {
+       "name": "量程与分辨率",
+       "value": "按各轴及订购配置约定工作量程与上报增量"
+      },
+      {
+       "name": "采集间隔",
+       "value": "1 分钟"
+      },
+      {
+       "name": "定时上报间隔",
+       "value": "4 小时"
+      },
+      {
+       "name": "参考电池寿命",
+       "value": "10 年：1 分钟采集、4 小时上报、25°C、信号正常；随启用功能、事件及无线重试次数变化"
+      },
+      {
+       "name": "供电",
+       "value": "19000 mAh 电池；可选 38000 mAh"
+      },
+      {
+       "name": "通信版本",
+       "value": "LTE Cat.1（4G）；NB-IoT / LoRa 按所选版本提供；地区频段与通信模组选项以供货配置为准"
+      },
+      {
+       "name": "SIM 配置",
+       "value": "适用的蜂窝版本使用标准物联网 SIM；可选嵌入式 SIM / eSIM"
+      },
+      {
+       "name": "外壳防护",
+       "value": "金属外壳：IP68；塑料外壳：IP66"
+      },
+      {
+       "name": "工作与储存温度",
+       "value": "−40°C 至 +85°C"
+      },
+      {
+       "name": "工作湿度",
+       "value": "5% 至 95% RH，无凝露"
+      },
+      {
+       "name": "本体尺寸",
+       "value": "115 × 90 × 60 mm；平台本体参考尺寸"
+      },
+      {
+       "name": "安装方式",
+       "value": "壁装、杆装或 DIN 导轨安装，按所选套件提供"
+      },
+      {
+       "name": "NFC 与固件更新",
+       "value": "NFC 激活与本地配置；支持的版本可进行远程固件更新"
+      },
+      {
+       "name": "平台与接口",
+       "value": "宏太云或兼容的客户平台；请选择支持的数据接口"
+      },
+      {
+       "name": "认证参考",
+       "value": "H200/H300/H500 平台已完成 CE。请确认对供货配置的适用性，以及其它 CCC / FCC / RoHS 参考资料。"
+      }
+     ]
+    }
+   ]
+  },
+  "applicationHeading": {
+   "kicker": "应用场景",
+   "title": "不同结构。 专注同一项测量。",
+   "intro": "了解仓储货架、基础设施、工业设备和能源资产的倾斜监测任务。每项任务均明确构件、安装点及 ±0.01° 三轴型号的项目选型要求。",
+   "imageNote": "应用示意图用于展示监测环境，并非客户安装记录。"
+  },
+  "groups": [],
+  "applications": [],
+  "integration": {
+   "kicker": "连接与集成",
+   "title": "您的安装现场。您的数据平台。",
+   "intro": "根据设备版本选择 4G LTE、NB-IoT 或 LoRa。无论使用宏太云还是自有平台，都应在安装调试前一并确认安装方案与数据需求。",
+   "routes": [
+    {
+     "title": "面向分散部署的测点",
+     "subtitle": "4G LTE / NB-IoT",
+     "steps": [
+      "三轴传感器",
+      "蜂窝网络",
+      "您的平台"
+     ],
+     "text": "对于跨区域分布的现场，请根据当地运营商覆盖、支持频段和物联网 SIM 配置选择蜂窝版本。部署前应在实际安装点检查信号质量。",
+     "checks": [
+      "安装国家、运营商与地区频段",
+      "SIM / eSIM 配置与天线方案",
+      "支持的平台接口与定时上报测试"
+     ]
+    },
+    {
+     "title": "面向同一现场的多个测点",
+     "subtitle": "LoRa 按所选版本提供",
+     "steps": [
+      "三轴传感器",
+      "兼容接收设备",
+      "您的平台"
+     ],
+     "text": "对于本地无线部署，请约定接收设备、无线参数和后续数据连接。提供现场布局与预计测点数量，以便评估覆盖范围与网关位置。",
+     "checks": [
+      "兼容接收设备或网关及无线协议",
+      "遮挡、距离与各安装点的覆盖情况",
+      "报文字段、时间戳与后续接口"
+     ]
+    }
+   ],
+   "handoverTitle": "让每个上报倾角都可追溯。",
+   "handover": "与平台团队约定支持的角度输出及样例报文。建立设备与资产编号、通道名称、坐标轴约定、单位、时间戳和安装基准的对应关系。扩大部署前，使用已调试完成的监测点验证数据。"
+  },
+  "selection": {
+   "title": "围绕您的项目选择配置。",
+   "intro": "These four details make the proposal specific to your installation.",
+   "items": [
+    {
+     "title": "您需要观测的变化",
+     "text": "明确被测构件及有实际意义的角度变化。将其与 ±0.01° 精度比较，并确定各轴所需量程和上报增量。"
+    },
+    {
+     "title": "安装条件",
+     "text": "请提供固定表面、安装方向、温度、涉水情况、维护通道，以及拟用外壳或安装套件。"
+    },
+    {
+     "title": "上报与平台接入",
+     "text": "请说明国家、测点数量、所选网络、上报周期、支持接口及任何事件响应要求。"
+    },
+    {
+     "title": "评估与部署计划",
+     "text": "请提供数量、样机测试标准、OEM / 白牌需求、证书要求及计划安装日期。"
+    }
+   ]
+  },
+  "faqHeading": {
+   "kicker": "解答您的项目问题",
+   "title": "常见 问题。",
+   "intro": "关于 H310-TS380C 高精度三轴倾斜传感器选型、安装和集成的实用解答。"
+  },
+  "faqs": [
+   {
+    "id": "faq-model",
+    "question": "H310-TS380C 三轴倾斜传感器是什么？",
+    "paragraphs": [
+     "H310-TS380C 是一款精度为 ±0.01°、具备 X/Y/Z 三轴感知的高精度 MEMS 倾斜传感器。它根据供货协议规定的角度输出及参考方向，测量明确安装点的倾斜。",
+     "典型项目包括仓储货架立柱、杆体、结构构件和设备框架。1 分钟采集与 4 小时定时上报，支持对选定测点进行远程倾角记录。"
+    ],
+    "answerLink": {
+     "href": "#specifications",
+     "label": "查看技术规格"
+    }
+   },
+   {
+    "id": "faq-grade",
+    "question": "什么情况下应选择 H310-TS380C，而非 H310-TS350M？",
+    "paragraphs": [
+     "当项目需要更细致的 ±0.01° 精度等级，且安装条件能够支持该测量目标时，可选择 H310-TS380C。H310-TS350M 则提供 ±0.1° 的三轴选项。",
+     "选型还取决于量程、分辨率、温度、固定稳定性和测试条件。精度、显示增量及触发项目复核的阈值是不同概念，应分别确认。"
+    ],
+    "answerLink": {
+     "href": "/zh/product/triaxial-medium-precision-tilt-sensor",
+     "label": "比较另一款三轴精度等级"
+    }
+   },
+   {
+    "id": "faq-axes",
+    "question": "三轴倾斜传感器与两轴型号有何不同？",
+    "paragraphs": [
+     "三轴版本采用 X/Y/Z 感知。供货协议规定如何将这些感知轴转换为上报角度通道，以及如何表示参考方向。",
+     "应围绕监测计划所需的输出和安装方向选型。仅有三个感知轴，并不意味着能够测得三个独立姿态角或完整的三维（3D）运动测量。"
+    ],
+    "answerLink": {
+     "href": "#specifications",
+     "label": "查看角度输出定义"
+    }
+   },
+   {
+    "id": "faq-yaw",
+    "question": "三轴感知能测量偏航角或罗盘航向吗？",
+    "paragraphs": [
+     "基于重力参考的倾斜测量不能独立确定偏航角，即绕重力方向的旋转。X/Y/Z 标识的是感知轴，不应将其理解为罗盘航向测量。",
+     "如应用需要航向或其它运动量，请明确说明，以便选型前评估所需的传感架构。"
+    ],
+    "answerLink": {
+     "href": "#enquiry",
+     "label": "咨询所需输出"
+    }
+   },
+   {
+    "id": "faq-mounting",
+    "question": "如何建立可靠的安装基准？",
+    "paragraphs": [
+     "将传感器刚性固定在需要监测倾斜的构件上。固定完成后，记录设备编号、资产位置、支架位置、坐标轴方向和初始角度。",
+     "请将基准与后续读数一并保存。移动设备、更换支架或改变被测构件后，应重新建立基准。基准用于对比，不会提高标称精度。"
+    ],
+    "answerLink": {
+     "href": "#overview",
+     "label": "查看测量流程"
+    }
+   },
+   {
+    "id": "faq-example",
+    "question": "示例中的角度变化代表什么？",
+    "paragraphs": [
+     "示例将安装时的 0.03° 与后续的 0.05° 进行比较，表示一个上报倾斜通道发生了 +0.02° 变化。它用于说明基准对比，而非三轴向量或完整三维（3D）姿态。",
+     "这些示例数值不定义量程、分辨率、最小可检测变化或通知阈值。请根据实际安装点与适用测量性能设置复核条件。"
+    ],
+    "answerLink": {
+     "href": "#overview",
+     "label": "查看读数示例"
+    }
+   },
+   {
+    "id": "faq-reporting",
+    "question": "采集间隔与定时上报间隔分别是多少？",
+    "paragraphs": [
+     "参考配置为每分钟采集一次、每 4 小时定时上报一次，对应两次定时上报之间 240 次采集，以及每天 6 个上报间隔。",
+     "采集频率与传输频率不同。请约定每份报文包含哪些样本或数值、是否本地保留数据，以及所选配置支持的事件上报与通知行为。"
+    ],
+    "answerLink": {
+     "href": "#operating-profile",
+     "label": "查看运行配置"
+    }
+   },
+   {
+    "id": "faq-battery",
+    "question": "10 年电池寿命适用于什么条件？",
+    "paragraphs": [
+     "规格书给出的 10 年参考寿命，条件为 1 分钟采集、4 小时上报、25°C、信号正常。电池配置为 19000 mAh，并可选 38000 mAh。",
+     "实际使用寿命随启用功能、事件频率及无线重试次数变化。请结合安装条件和运行配置选择供电方案。"
+    ],
+    "answerLink": {
+     "href": "#operating-profile",
+     "label": "查看参考条件"
+    }
+   },
+   {
+    "id": "faq-environment",
+    "question": "有哪些外壳与环境条件限制？",
+    "paragraphs": [
+     "规定的选项为金属 IP68 外壳或塑料 IP66 外壳。工作与储存温度为 −40°C 至 +85°C；工作湿度为 5% 至 95% RH，无凝露。",
+     "请根据实际暴露环境与维护条件选择外壳、天线和安装套件。115 × 90 × 60 mm 是平台本体参考尺寸；制作安装图纸时应核实所选配置。"
+    ],
+    "answerLink": {
+     "href": "#specifications",
+     "label": "查看防护与安装要求"
+    }
+   },
+   {
+    "id": "faq-connectivity",
+    "question": "可以选择 4G LTE、NB-IoT 或 LoRa 吗？",
+    "paragraphs": [
+     "规格书列出 LTE Cat.1（4G），NB-IoT 与 LoRa 按所选版本提供。请选择适合安装国家、地区频段、运营商或兼容接收设备及所需数据接入方式的配置。",
+     "LoRa 表示无线制式选项；如需 LoRaWAN，必须明确确认协议兼容性。订购前请确认供货设备的无线制式、网关与平台组合。"
+    ],
+    "answerLink": {
+     "href": "#integration",
+     "label": "规划连接方案"
+    }
+   },
+   {
+    "id": "faq-platform",
+    "question": "读数能发送至我们现有的平台吗？",
+    "paragraphs": [
+     "通过支持的数据接口，可使用宏太云或兼容的客户平台。项目评估时，请提供接口、身份验证和资产数据需求。",
+     "请约定能够标识设备、安装点、通道名称、坐标轴约定、角度单位、时间戳及基准的样例报文，并使用所选设备配置测试完整数据链路。"
+    ],
+    "answerLink": {
+     "href": "#integration",
+     "label": "查看数据交接要求"
+    }
+   },
+   {
+    "id": "faq-nfc-ota",
+    "question": "NFC 与远程固件更新分别用于什么？",
+    "paragraphs": [
+     "NFC 激活与本地配置支持安装调试。开始监测前，请记录最终设置和安装基准。",
+     "部分版本支持远程固件更新。请结合平台与更新流程，确认功能可用性及供货设备配置。"
+    ],
+    "answerLink": {
+     "href": "#enquiry",
+     "label": "咨询安装调试要求"
+    }
+   },
+   {
+    "id": "faq-applications",
+    "question": "一款三轴型号能覆盖货架、结构构件、杆体和设备框架吗？",
+    "paragraphs": [
+     "当 ±0.01° 精度、供货角度输出及安装条件满足监测计划时，可针对上述各类安装点评估 H310-TS380C。应用场景涵盖九个行业类别，并将仓储货架列为首类。",
+     "货架应用应明确立柱和固定点；基础设施应用应由负责工程师确定被测构件。设备框架倾斜应在静止或停稳位置测量。分钟级倾角读数不代表具备动态振动、快速运动或设备对中性能。"
+    ],
+    "answerLink": {
+     "href": "#applications",
+     "label": "查看应用任务"
+    }
+   },
+   {
+    "id": "faq-project",
+    "question": "报价或 OEM 项目需要提供哪些信息？",
+    "paragraphs": [
+     "请注明 H310-TS380C、安装国家、数量、应用及部署日期，并提供现场照片或图纸、安装方向、各轴所需量程、有实际意义的角度变化和预期环境。",
+     "请补充所选网络、平台接口、上报与事件响应要求、样机验收标准，以及任何 OEM / 白牌需求。H200/H300/H500 平台已完成 CE；请针对供货配置确认证书适用性及其它所需合规参考资料。"
+    ],
+    "answerLink": {
+     "href": "#enquiry",
+     "label": "准备您的项目需求"
+    }
+   }
+  ],
+  "enquiry": {
+   "kicker": "一起讨论您的项目",
+   "title": "下一步。选择适合的传感器。",
+   "intro": "请介绍您的 H310-TS380C 应用需求。我们将协助使精度等级、上报轴、安装方式和数据接入方案与监测计划相匹配。",
+   "email": "sales@hitelecom.cn"
+  },
+  "evidence": {
+   "confirmedFacts": [
+    {
+     "source": "User-supplied H310-TS380C Triaxial Tilt Sensor Datasheet, 2026-10-27",
+     "model": "H310-TS380C",
+     "accuracy": "±0.01°",
+     "sensingAxes": "X/Y/Z",
+     "acquisition": "1 minute",
+     "scheduledReporting": "4 hours",
+     "batteryReference": "10 years at 25°C and normal signal with 1-minute acquisition and 4-hour reporting",
+     "enclosure": "Metal IP68 / plastic IP66",
+     "temperature": "−40°C to +85°C"
+    }
+   ],
+   "scope": "Range, resolution, angle convention, protocol and applicability of compliance references follow the supplied configuration. No independent yaw / heading, dynamic motion, immediate-event latency or structural diagnosis performance is inferred."
+  }
+ },
+ "ui": {
+  "bcAria": "面包屑导航",
+  "bc": [
+   "首页",
+   "物联网传感器",
+   "高精度三轴倾斜传感器"
+  ],
+  "h1": {
+   "main": "三轴倾斜传感器。",
+   "spanA": "高精度。",
+   "spanB": " ±0.01° 精度。"
+  },
+  "heroAlt": "Hitelecom H310-TS380C 高精度三轴倾斜传感器，配金属外壳和天线",
+  "heroCaption": "H310-TS380C · 高精度 · ±0.01°",
+  "metrics": [
+   {
+    "value": "±0.01°",
+    "label": "高精度测量",
+    "note": "H310-TS380C"
+   },
+   {
+    "value": "X/Y/Z",
+    "label": "三轴感知",
+    "note": "角度输出以供货协议为准"
+   },
+   {
+    "value": "4 小时",
+    "label": "定时上报",
+    "note": "1 分钟采集"
+   }
+  ],
+  "navAria": "本页导航",
+  "nav": [
+   "概览",
+   "应用场景",
+   "技术规格",
+   "集成",
+   "常见问题"
+  ],
+  "navQuote": "获取报价 ↗",
+  "featKicker": "主要特点",
+  "featH2a": "为您的",
+  "featH2b": "监测方式而设计。",
+  "featLead": "精度 ±0.01° 的三轴倾斜监测，1 分钟采集，连接方式按安装需求选择。",
+  "ovCta": "查找适用场景",
+  "read": {
+   "label": "一个上报倾斜通道",
+   "sample": "读数示例",
+   "refLabel": "安装基准",
+   "refVal": "0.03°",
+   "laterLabel": "后续读数",
+   "laterVal": "0.05°",
+   "changeLabel": "相对基准的变化",
+   "changeVal": "+0.02°",
+   "note": "仅以一个上报倾斜通道作示例。量程、分辨率与复核阈值应分别约定。"
+  },
+  "profNoteLabel": "H310-TS380C · 参考运行配置",
+  "profNoteStrong": "1 分钟采集。\n4 小时定时上报。",
+  "sceneMpLabel": "监测点",
+  "scenePbLabel": "规划安装",
+  "sceneCta": "咨询此应用",
+  "modelLabel": "型号参考",
+  "configCta": "选择配置 ↓",
+  "specCaption": "{m} — 三轴倾斜传感器规格",
+  "handoverCta": "沟通平台集成 ↗",
+  "faqCta": "咨询您的项目 ↗",
+  "faqLinkFallback": "了解详情",
+  "benefitsTitle": "从三项信息开始。",
+  "benefitsText": "应用场景、安装国家及预计数量。如有现场照片或平台要求，也请一并附在邮件中。",
+  "formLabel": "项目询盘",
+  "formTitle": "一起确定合适的配置。",
+  "formSubtitle": "H310-TS380C · ±0.01° · 三轴倾斜",
+  "appLabel": "应用场景",
+  "appChoose": "请选择应用场景",
+  "appOther": "其他 / 项目特定应用",
+  "appOtherValue": "其他 / 项目特定应用",
+  "countryLabel": "国家 / 地区",
+  "countryPh": "例如：英国",
+  "qtyLabel": "预计数量",
+  "qtyPh": "例如：20",
+  "connLabel": "首选连接方式",
+  "connAdvise": "请推荐",
+  "connOptions": [
+   "请推荐",
+   "4G LTE",
+   "NB-IoT",
+   "LoRa"
+  ],
+  "reqLabel": "您想监测什么？",
+  "reqPh": "资产与安装方向、所需角度变化、各轴量程、国家、测点数量和平台接口",
+  "submit": "生成询盘内容",
+  "submitNote": "请核对项目简报，再通过您的邮件应用发送。",
+  "summaryLabel": "您的项目简报",
+  "openEmail": "打开邮件应用 ↗",
+  "copyBrief": "复制简报",
+  "statusReady": "您的简报已生成，请核对。",
+  "noscriptPre": "您也可以直接通过",
+  "noscriptLink": "邮件发送项目需求",
+  "noscriptPost": "。",
+  "noscriptSubject": "H310-TS380C 三轴倾斜传感器项目",
+  "relKicker": "继续推进您的监测项目",
+  "relLinks": [
+   {
+    "label": "三轴中精度 · ±0.1° ↗",
+    "href": "/zh/product/triaxial-medium-precision-tilt-sensor"
+   },
+   {
+    "label": "两轴高精度 ↗",
+    "href": "/zh/product/tilt-sensor"
+   },
+   {
+    "label": "两轴中精度 ↗",
+    "href": "/zh/product/tilt-medium-precision-sensor"
+   },
+   {
+    "label": "温度监测 ↗",
+    "href": "/zh/product/temperature-sensor"
+   },
+   {
+    "label": "资产定位 ↗",
+    "href": "/zh/product/asset-tracking-sensor"
+   }
+  ],
+  "mobileQuote": "沟通项目需求",
+  "js": {
+   "subject": "H310-TS380C ±0.01° 三轴倾斜传感器 — 项目咨询",
+   "greet": "Hitelecom 团队，您好：",
+   "intro": "我想咨询使用 H310-TS380C 三轴倾斜传感器（精度 ±0.01°）的项目。",
+   "labels": {
+    "Application": "应用场景",
+    "Country": "国家",
+    "Quantity": "数量",
+    "Connectivity": "连接方式",
+    "Requirements": "需求"
+   },
+   "fallback": "请推荐",
+   "closing": "请推荐合适的型号和配置，并提供相关规格书及报价。",
+   "thanks": "谢谢。",
+   "ready": "您的简报已生成。请核对后打开邮件应用发送。",
+   "copied": "项目简报已复制。",
+   "selected": "简报已选中，请使用设备的复制命令。",
+   "modelPrefix": "意向型号",
+   "wechatCopied": "微信号已复制。",
+   "wechatSelected": "微信号已选中，请使用设备的复制功能。",
+   "connectivityValues": {
+    "Please advise": "请协助选型",
+    "4G LTE": "4G LTE",
+    "NB-IoT": "NB-IoT",
+    "LoRa": "LoRa"
+   }
+  },
+  "bcLd": [
+   "首页",
+   "物联网传感器",
+   "高精度三轴倾斜传感器"
+  ],
+  "serKicker": "系列与配置",
+  "schemaGroup": "Hitelecom 三轴倾斜传感器 — 高精度",
+  "schemaProduct": "Hitelecom H310-TS380C ±0.01° 三轴倾斜传感器",
+  "headings": [
+   {
+    "id": "features-title",
+    "html": "为您的监测方式<br><span>量身适配。</span>"
+   },
+   {
+    "id": "overview-title",
+    "html": "测量倾角。 <br><span>跟踪趋势。</span>"
+   },
+   {
+    "id": "profile-title",
+    "html": "频繁采集。 <br><span>定时上报。</span>"
+   },
+   {
+    "id": "faq-title",
+    "html": "常见 <br>问题。"
+   }
+  ]
+ },
+ "applicationUi": {
+  "kicker": "应用场景",
+  "titleA": "不同结构。",
+  "titleB": "专注同一项测量。",
+  "intro": "了解仓储货架、基础设施、工业设备和能源资产的倾斜监测任务。每项任务均明确构件、安装点及 ±0.01° 三轴型号的项目选型要求。",
+  "categoriesLabel": "个行业类别",
+  "tasksLabel": "项监测任务",
+  "imageNote": "应用示意图用于展示监测环境，并非客户安装记录。",
+  "groupCount": "{count} 项监测任务",
+  "measureLabel": "监测倾角",
+  "pointLabel": "监测点",
+  "briefLabel": "规划安装",
+  "cta": "咨询此应用",
+  "navAria": "浏览高精度三轴倾斜应用",
+  "listName": "无线倾斜传感器应用"
+ },
+ "groups": [
+  {
+   "number": 1,
+   "groupid": "warehousing",
+   "title": "智慧仓储",
+   "jumplabelen": "智慧仓储",
+   "jumplabelzh": "智慧仓储",
+   "introen": "涵盖托盘货架、自动立体库高层货架、移动货架系统与夹层结构，每个测点均关联其巷道、构件和安装基准。",
+   "scenes": [
+    {
+     "id": "warehouse-racking",
+     "baselineId": "tilt-scene-warehouse-racking",
+     "title": "仓储货架",
+     "en": "使用 H310-TS380C 记录选定托盘货架立柱的局部倾斜。其 ±0.01° 精度等级，适用于需要在指定货位建立更细致角度基准的项目。每条记录均保留安装方向、载荷状态与货架编号，便于在布局调整、已报告碰撞或维护后的检查中，对比同一个结构测点。",
+     "pointen": "按监测计划选取能够代表各货架位置的立柱。",
+     "briefen": "请提供货架布局、立柱尺寸、预期载荷工况及所需检查通知。",
+     "alten": "应用示意图：仓库巷道旁，配有橙色横梁与蓝色立柱的托盘货架。",
+     "original": true,
+     "originalImgSrc": "./_astro/warehouse-racking.BDyOSe3d_1Y0fiU.webp",
+     "originalImgSrcset": "./_astro/warehouse-racking.BDyOSe3d_1qbzTl.webp 360w, ./_astro/warehouse-racking.BDyOSe3d_2cah6M.webp 720w, ./_astro/warehouse-racking.BDyOSe3d_1Y0fiU.webp 1080w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "warehouse-racking",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "使用 H310-TS380C 记录选定托盘货架立柱的局部倾斜。",
+     "measureen": "选定货架立柱相对于安装基准的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Warehouse racking"
+    },
+    {
+     "id": "automated-high-bay-racking",
+     "en": "跟踪自动立体库中工程师选定立柱的局部倾斜。记录坐标轴约定与安装基准，使 H310-TS380C 的读数在货架施工、载荷变化与堆垛机维护前后保持可比。测点应围绕货架结构选择；堆垛机对中、穿梭车定位及运行净空仍属于独立的工程任务。",
+     "pointen": "经批准的高层货架立柱位置，并避开运动设备净空。",
+     "briefen": "货架高度、通行限制、堆垛机净空、载荷状态与测点标识。",
+     "alten": "堆垛机巷道旁的高层仓储货架。",
+     "title": "自动立体库高层货架",
+     "imageId": "automated-high-bay-racking",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪自动立体库中工程师选定立柱的局部倾斜。",
+     "measureen": "经批准的高层货架立柱局部倾斜，测点应避开运动设备的净空范围。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Automated high-bay racking"
+    },
+    {
+     "id": "cantilever-racking",
+     "title": "悬臂货架",
+     "en": "为存放管材、木材或其它长形货物的悬臂货架立柱建立倾角历史记录。将 H310-TS380C 的基准与立柱、悬臂布置及代表性载荷分布关联起来。在项目需要 ±0.01° 精度等级时，该局部倾斜记录可为搬运接触或货架调整后的检查提供背景信息。",
+     "pointen": "选定悬臂货架立柱上的刚性位置，并避开悬臂与搬运接触区域。",
+     "briefen": "请提供立柱与底座细节、悬臂载荷分布、货物长度、搬运净空和货架检查计划。",
+     "alten": "存放长形货物的悬臂货架，可见立柱、伸出悬臂及地面固定底座。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "cantilever-racking",
+     "objectiveen": "为存放管材、木材或其它长形货物的悬臂货架立柱建立倾角历史记录。",
+     "measureen": "选定悬臂货架立柱相对于调试基准的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Cantilever racking"
+    },
+    {
+     "id": "drive-in-racking",
+     "title": "驶入式托盘货架",
+     "en": "跟踪驶入式或贯通式托盘货道内选定立柱段的倾斜。记录 H310-TS380C 的安装方向，在相当的货道载荷状态下，将读数与安装基准比较。每个测点均对应具体货道，为检查团队评估已报告车辆接触、托盘导轨施工或结构维护提供局部倾角记录。",
+     "pointen": "经批准的货架立柱位置，避开叉车行驶路径与托盘支撑净空。",
+     "briefen": "请提供货道深度、货架布局、托盘导轨布置、装卸顺序、搬运净空及检查职责。",
+     "alten": "驶入式托盘货架，可见深货道、立柱框架与水平托盘支撑导轨。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "drive-in-racking",
+     "objectiveen": "跟踪驶入式或贯通式托盘货道内选定立柱段的倾斜。",
+     "measureen": "记录载荷条件下，选定驶入式货架立柱的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Drive-in pallet racking"
+    },
+    {
+     "id": "mobile-pallet-racking",
+     "title": "移动式托盘货架",
+     "en": "在明确的静止位置比较选定移动货架立柱的倾斜。待移动底座停稳后，使用 H310-TS380C 的基准，并记录位置和载荷工况。这可支持货架维护与重新调平前后更细致的局部倾角对比；1 分钟采集配置不能替代运动控制或碰撞检测。",
+     "pointen": "避开运动设备的刚性立柱测点，在约定的底座静止位置进行比较。",
+     "briefen": "请确认移动底座设计、停放基准位置、货架载荷、行驶净空、移动时序及维护通道。",
+     "alten": "安装在钢制底座和地面轨道上的移动托盘货架，旁侧为开放仓储巷道。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "mobile-pallet-racking",
+     "objectiveen": "在明确的静止位置比较选定移动货架立柱的倾斜。",
+     "measureen": "约定停放位置和载荷状态下，选定立柱的静态倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Mobile pallet racking"
+    },
+    {
+     "id": "mezzanine-support-columns",
+     "en": "将局部倾斜读数与仓储夹层平台的柱网关联起来。在有记录的装载与维护阶段，H310-TS380C 可在经批准的结构测点提供更细致的角度记录。将传感器坐标轴基准与支柱编号一并保存，确保比较始终对应同一支撑构件，而非可拆卸饰面。",
+     "pointen": "平台监测计划中选定的结构支柱位置。",
+     "briefen": "柱网、平台载荷、连接细节、布局变更与检查通道。",
+     "alten": "工厂内的钢制夹层平台，可见支撑立柱。",
+     "title": "夹层平台支柱",
+     "imageId": "mezzanine-support-columns",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "将局部倾斜读数与仓储夹层平台的柱网关联起来。",
+     "measureen": "选定夹层支柱沿规定测量方向的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Mezzanine columns"
+    }
+   ]
+  },
+  {
+   "number": 2,
+   "groupid": "poles-towers",
+   "title": "杆塔",
+   "jumplabelen": "杆塔",
+   "jumplabelzh": "杆塔",
+   "introen": "照明、电力、通信与道路设备支撑结构，均对应资产编号和经批准的结构固定位置。",
+   "scenes": [
+    {
+     "id": "street-light-poles",
+     "baselineId": "tilt-scene-street-light-poles",
+     "title": "路灯杆",
+     "en": "跟踪路灯杆经批准杆段的局部倾斜。H310-TS380C 适用于规定 ±0.01° 精度的项目，可在基础施工、杆体维护或已报告车辆接触前后，开展可重复的角度比较。请保留杆号和坐标轴方向，并结合现场观察及维护记录复核趋势。",
+     "pointen": "选定需要监测的杆体或结构支撑。",
+     "briefen": "请提供杆体尺寸、安装高度、当地网络覆盖和所需上报周期。",
+     "alten": "应用示意图：绿化城市道路旁的路灯杆及其底座。",
+     "original": true,
+     "originalImgSrc": "./_astro/street-light-poles.R9vec5h5_ZAbRYo.webp",
+     "originalImgSrcset": "./_astro/street-light-poles.R9vec5h5_Vqvnt.webp 360w, ./_astro/street-light-poles.R9vec5h5_ZAbRYo.webp 720w",
+     "originalImgStyle": "object-position:50% 0%",
+     "imageId": "street-light-poles",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪路灯杆经批准杆段的局部倾斜。",
+     "measureen": "被测杆段相对于已记录安装基准的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Street light poles"
+    },
+    {
+     "id": "transmission-towers",
+     "baselineId": "tilt-scene-transmission-towers",
+     "title": "输电塔",
+     "en": "按照记录的 X/Y/Z 感知轴约定，跟踪选定输电塔构件的局部倾斜。H310-TS380C 适合安装点规定 ±0.01° 精度的测量目标。将记录与铁塔检查、构件施工及基础观察关联；单个局部传感器不能描述整座铁塔的变形。",
+     "pointen": "根据铁塔监测目标确定的结构构件。",
+     "briefen": "请明确铁塔构件、安装方式、现场通行要求及任何配套基础测量。",
+     "alten": "应用示意图：钢制输电塔，可见横担、绝缘子和架空导线。",
+     "original": true,
+     "originalImgSrc": "./_astro/transmission-towers.Cau2x-kt_25kDh4.webp",
+     "originalImgSrcset": "./_astro/transmission-towers.Cau2x-kt_Z1cahFq.webp 360w, ./_astro/transmission-towers.Cau2x-kt_25kDh4.webp 720w",
+     "originalImgStyle": "object-position:50% 0%",
+     "imageId": "transmission-towers",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "按照记录的 X/Y/Z 感知轴约定，跟踪选定输电塔构件的局部倾斜。",
+     "measureen": "选定输电塔构件在固定安装点的局部角度变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Transmission towers"
+    },
+    {
+     "id": "telecom-towers",
+     "baselineId": "tilt-scene-telecom-towers",
+     "title": "通信塔",
+     "en": "在设备施工或维护前后，记录明确通信塔构件的局部倾斜。当项目要求该测点更细致的角度记录时，H310-TS380C 的 ±0.01° 精度等级可作为选择依据。请随记录保存天线变更、风况与固定方向；航向及天线方位角需要其它测量方法。",
+     "pointen": "选定的桅杆段、塔身构件或结构支撑。",
+     "briefen": "请提供铁塔布局、被测构件、无线覆盖及维护团队使用的平台。",
+     "alten": "应用示意图：天空背景下配有蜂窝天线面板的通信格构塔。",
+     "original": true,
+     "originalImgSrc": "./_astro/telecom-towers.BzvCxs4U_Z1qjWTn.webp",
+     "originalImgSrcset": "./_astro/telecom-towers.BzvCxs4U_Ze9zou.webp 360w, ./_astro/telecom-towers.BzvCxs4U_Z1qjWTn.webp 720w",
+     "originalImgStyle": "object-position:50% 0%",
+     "imageId": "telecom-towers",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "在设备施工或维护前后，记录明确通信塔构件的局部倾斜。",
+     "measureen": "选定桅杆段、塔身构件或结构支撑的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Telecom towers"
+    },
+    {
+     "id": "billboard-support-poles",
+     "baselineId": "tilt-scene-billboard-support-poles",
+     "title": "广告牌立杆",
+     "en": "在同一经批准固定点，比较广告牌支撑杆的倾斜。H310-TS380C 提供 ±0.01° 精度等级，可用于支撑维护、广告面板更换及基础施工前后更细致的局部倾角复核。记录风况和施工阶段，便于广告牌业主将持续变化对应到正确的结构构件。",
+     "pointen": "项目方案中选定的支撑杆或框架构件。",
+     "briefen": "请提供支撑尺寸、安装通道、现场暴露环境及所需测量和通知周期。",
+     "alten": "应用示意图：路边空白广告牌，由钢制单杆支撑，可见支撑斜撑。",
+     "original": true,
+     "originalImgSrc": "./_astro/billboard-support-poles.BQNiOBJD_Zv2Y5V.webp",
+     "originalImgSrcset": "./_astro/billboard-support-poles.BQNiOBJD_1hC7xj.webp 360w, ./_astro/billboard-support-poles.BQNiOBJD_Zv2Y5V.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "billboard-support-poles",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "在同一经批准固定点，比较广告牌支撑杆的倾斜。",
+     "measureen": "选定广告牌立杆或框架构件相对于参考方向的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Billboard support poles"
+    },
+    {
+     "id": "traffic-camera-poles",
+     "en": "跟踪选定道路设备杆与横担支撑的局部倾斜。固定的安装基准，使 H310-TS380C 记录在道路施工、设备维护或已报告接触前后可进行比较。按项目要求选用 ±0.01° 精度等级，同时将摄像机对准、设备指向及交通系统运行作为独立功能处理。",
+     "pointen": "经批准的刚性杆段或横担支撑段，避开可调设备支架。",
+     "briefen": "杆号、构件与安装高度、设备布局、通行许可及所需局部角度精度。",
+     "alten": "绿化城市道路沿线的道路设备杆。",
+     "title": "道路设备杆",
+     "imageId": "traffic-camera-poles",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪选定道路设备杆与横担支撑的局部倾斜。",
+     "measureen": "选定道路杆体或固定横担支撑相对于安装基准的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Roadside equipment poles"
+    },
+    {
+     "id": "distribution-utility-poles",
+     "en": "以明确的安装基准，观测经批准配电杆的局部倾斜。当电力单位规定 ±0.01° 精度时，H310-TS380C 可支持更细致的角度对比。记录测量方向、馈线区段及周边地面施工情况，便于结合杆体状态与基础检查复核后续观测。",
+     "pointen": "配电杆上指定的刚性杆段。",
+     "briefen": "电杆材质和编号；杆上设备布局；道路排水条件；电力作业通行许可；馈线维护周期。",
+     "alten": "乡村道路旁配有横担的配电杆。",
+     "title": "配电杆",
+     "imageId": "distribution-utility-poles",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "以明确的安装基准，观测经批准配电杆的局部倾斜。",
+     "measureen": "选定配电杆相对于已记录安装基准的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Distribution poles"
+    }
+   ]
+  },
+  {
+   "number": 3,
+   "groupid": "civil-infrastructure",
+   "title": "桥梁、道路与港口",
+   "jumplabelen": "桥梁、道路与港口",
+   "jumplabelzh": "桥梁、道路与港口",
+   "introen": "选定桥梁、挡墙及水工结构测点的局部倾斜，并结合项目工程记录解读。",
+   "scenes": [
+    {
+     "id": "bridge-elements",
+     "baselineId": "tilt-scene-bridge-elements",
+     "title": "桥梁构件",
+     "en": "跟踪工程师选定桥墩或刚性结构构件的局部倾斜。H310-TS380C 为约定的局部转角目标及基准条件提供 ±0.01° 精度等级。请结合载荷、温度和检查记录比较读数；位移、桥面挠度及结构状态需要独立的工程测量与评估。",
+     "pointen": "桥梁监测计划中确定的桥墩、桥台或构件。",
+     "briefen": "请说明监测目标、安装位置和工作角度范围；如同时需要位移数据，请说明测量要求。",
+     "alten": "应用示意图：跨水混凝土桥梁，可见桥墩，背景为绿色山丘。",
+     "original": true,
+     "originalImgSrc": "./_astro/bridge-elements.CUksKjo1_GcUQ7.webp",
+     "originalImgSrcset": "./_astro/bridge-elements.CUksKjo1_2g3YpV.webp 360w, ./_astro/bridge-elements.CUksKjo1_GcUQ7.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "bridge-elements",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪工程师选定桥墩或刚性结构构件的局部倾斜。",
+     "measureen": "选定桥墩、桥台或结构构件安装点的局部角度变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Bridge elements"
+    },
+    {
+     "id": "bridge-abutments",
+     "en": "以稳定的安装基准，记录选定桥台或翼墙测点的倾斜。对于邻近土方施工、排水变化或桥梁维护前后的局部倾角比较，如项目规定 ±0.01° 精度，可选择 H310-TS380C。请将每个测点与工程师图纸及配套测量观察关联起来。",
+     "pointen": "桥台的指定表面或选定翼墙区段。",
+     "briefen": "桥台或墙体图纸；回填与排水布局；周边施工安排；安装通道。",
+     "alten": "引道路堤旁的混凝土桥台与翼墙。",
+     "title": "桥台与翼墙",
+     "imageId": "bridge-abutments",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "以稳定的安装基准，记录选定桥台或翼墙测点的倾斜。",
+     "measureen": "选定桥台或翼墙表面沿约定测量方向的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Bridge abutments & wing walls"
+    },
+    {
+     "id": "bridge-deck-rotation",
+     "en": "在明确的基准条件下，比较选定刚性桥面构件的局部方向。H310-TS380C 的 ±0.01° 精度等级，可支持工程师规定的转角任务，并记录交通与温度背景。测量描述安装点的倾斜，不直接给出桥面挠度、位移或完整动态响应。",
+     "pointen": "被测桥面构件上的指定刚性位置。",
+     "briefen": "桥面构件图纸；转动轴；可比车辆载荷工况；观测计划。",
+     "alten": "桥面底部，可见主梁与横向构件。",
+     "title": "桥面结构测点",
+     "imageId": "bridge-deck-rotation",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "在明确的基准条件下，比较选定刚性桥面构件的局部方向。",
+     "measureen": "可比观测条件下，指定桥面测点的局部角度变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Bridge-deck structural points"
+    },
+    {
+     "id": "highway-retaining-walls",
+     "en": "跟踪道路或路堤旁选定挡墙区段的局部倾斜。当项目规定 ±0.01° 精度时，H310-TS380C 可支持更细致的角度比较，每个传感器均对应挡墙里程与固定方向。请结合排水条件、邻近施工及工程师的整体地面监测计划复核读数。",
+     "pointen": "选定挡墙区段的刚性表面。",
+     "briefen": "挡墙类型与区段布局；排水位置；道路通行限制；监测方向。",
+     "alten": "山路旁设有排水口的公路挡墙。",
+     "title": "公路挡墙",
+     "imageId": "highway-retaining-walls",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪道路或路堤旁选定挡墙区段的局部倾斜。",
+     "measureen": "选定挡墙墙身相对于安装基准的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Highway retaining walls"
+    },
+    {
+     "id": "quay-wall-rotation",
+     "en": "在经批准的码头岸壁结构测点保留局部倾斜基准。H310-TS380C 可在有记录的载荷、潮汐与维护条件下，支持规定 ±0.01° 精度的测量任务。每个读数均对应岸壁区段与安装方向，便于结合水工测量及港口检查信息复核记录。",
+     "pointen": "作业侧可接近的选定刚性岸壁构件。",
+     "briefen": "岸壁类型；潮汐暴露环境；作业载荷条件；防腐与安装要求。",
+     "alten": "运营港口的混凝土岸壁与码头作业区。",
+     "title": "码头岸壁",
+     "imageId": "quay-wall-rotation",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "在经批准的码头岸壁结构测点保留局部倾斜基准。",
+     "measureen": "选定码头岸壁区段在已记录安装点的局部角度变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Quay walls"
+    },
+    {
+     "id": "jetty-pile-supports",
+     "en": "监测选定栈桥桩头或刚性支撑构件的局部倾斜。当设计要求在这些测点开展更细致的角度比较时，可考虑 H310-TS380C 的 ±0.01° 精度等级。请记录潮汐、载荷与基准状态，并按实际海洋暴露环境选择外壳和安装细节。",
+     "pointen": "指定的固定桩、立柱或支撑构件。",
+     "briefen": "支撑构件几何；潮汐通行时段；船舶作业时段；海洋暴露环境。",
+     "alten": "支撑滨海栈桥的固定桩与梁。",
+     "title": "栈桥支撑",
+     "imageId": "jetty-pile-supports",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "监测选定栈桥桩头或刚性支撑构件的局部倾斜。",
+     "measureen": "选定固定栈桥支撑构件相对于参考方向的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Jetty supports"
+    }
+   ]
+  },
+  {
+   "number": 4,
+   "groupid": "rail-tunnel-metro",
+   "title": "铁路与隧道",
+   "jumplabelen": "铁路与隧道",
+   "jumplabelzh": "铁路与隧道",
+   "introen": "铁路、地铁及隧道沿线经运营方批准的固定结构，保留里程与安装基准。",
+   "scenes": [
+    {
+     "id": "railway-infrastructure",
+     "baselineId": "tilt-scene-railway-infrastructure",
+     "title": "铁路基础设施",
+     "en": "跟踪铁路沿线挡墙、支撑构件或工程师定义的其它固定结构的局部倾斜。H310-TS380C 为选定局部倾角目标提供 ±0.01° 精度等级。请保留线路位置、安装方向和施工阶段记录；轨道几何、轨道线形及列车引起的振动属于独立的测量任务。",
+     "pointen": "挡墙、接触网支撑或静止构件上的经批准测点。",
+     "briefen": "请提供现场通行计划、运营条件、通信路径及所需通知时效。",
+     "alten": "应用示意图：电气化铁路通道，可见钢轨、接触网支撑与挡墙。",
+     "original": true,
+     "originalImgSrc": "./_astro/railway-infrastructure.CkDwEvLs_Z1rdhhy.webp",
+     "originalImgSrcset": "./_astro/railway-infrastructure.CkDwEvLs_fpsNM.webp 360w, ./_astro/railway-infrastructure.CkDwEvLs_Z1rdhhy.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "railway-infrastructure",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪铁路沿线挡墙、支撑构件或工程师定义的其它固定结构的局部倾斜。",
+     "measureen": "经批准的挡墙、接触网支撑或静止铁路构件的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Railway infrastructure"
+    },
+    {
+     "id": "tunnel-monitoring",
+     "baselineId": "tilt-scene-tunnel-monitoring",
+     "title": "隧道监测",
+     "en": "记录经批准隧道衬砌管片或内部刚性支撑测点的倾斜。H310-TS380C 可在明确的监测计划中支持 ±0.01° 精度目标。请将里程、管片标识及坐标轴约定与基准一并保存；如需收敛、位移或隧道整体响应数据，应采用测量方法或补充仪器。",
+     "pointen": "选定衬砌管片、结构支撑或经批准的安装点。",
+     "briefen": "请提供隧道区段、监测位置、地下通信路径，以及任何独立收敛测量要求。",
+     "alten": "应用示意图：分节混凝土隧道衬砌，可见接缝与检修走道。",
+     "original": true,
+     "originalImgSrc": "./_astro/tunnel-monitoring.BVzu1kSc_ztBY0.webp",
+     "originalImgSrcset": "./_astro/tunnel-monitoring.BVzu1kSc_Zbu4dr.webp 360w, ./_astro/tunnel-monitoring.BVzu1kSc_ztBY0.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "tunnel-monitoring",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "记录经批准隧道衬砌管片或内部刚性支撑测点的倾斜。",
+     "measureen": "选定隧道衬砌管片或结构支撑的局部角度变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Tunnel monitoring"
+    },
+    {
+     "id": "metro-and-subway-structures",
+     "baselineId": "tilt-scene-metro-and-subway-structures",
+     "title": "地铁结构",
+     "en": "比较选定地铁车站支柱、隧道构件或其它固定结构测点的局部倾斜。H310-TS380C 通过记录基准与坐标轴方向，支持约定的 ±0.01° 精度任务。将记录与施工时段及检查结果关联，列车运营和轨道动态测量仍由运营方的独立系统完成。",
+     "pointen": "监测设计中的车站支柱、隧道构件或挡土结构。",
+     "briefen": "请提供施工阶段、允许进入时段、安装限制及地下传感器至平台的数据路径。",
+     "alten": "应用示意图：地下地铁站的支柱、顶梁与站台屏蔽门。",
+     "original": true,
+     "originalImgSrc": "./_astro/metro-subway-structures.uev_yfTa_Z1QKCWh.webp",
+     "originalImgSrcset": "./_astro/metro-subway-structures.uev_yfTa_Z45wj2.webp 360w, ./_astro/metro-subway-structures.uev_yfTa_Z1QKCWh.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "metro-and-subway-structures",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "比较选定地铁车站支柱、隧道构件或其它固定结构测点的局部倾斜。",
+     "measureen": "被测车站支柱、隧道构件或挡土结构的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Metro and subway structures"
+    },
+    {
+     "id": "catenary-support-masts",
+     "en": "跟踪铁路接触网支柱经批准刚性杆段的局部倾斜。当支柱基准要求 ±0.01° 精度时，可考虑 H310-TS380C。请随维护记录保存安装标高与方向；接触线几何、张力及电气净空需要采用铁路运营方的专用方法。",
+     "pointen": "按运营方批准的位置和方向固定在支柱上。",
+     "briefen": "支柱类型；资产标识；批准安装区；电气净空；维护通道。",
+     "alten": "铁路接触网支柱、底座与架空接触线。",
+     "title": "接触网支柱",
+     "imageId": "catenary-support-masts",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪铁路接触网支柱经批准刚性杆段的局部倾斜。",
+     "measureen": "选定接触网支柱在规定结构安装点的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Catenary masts"
+    },
+    {
+     "id": "track-support-slab-rotation",
+     "en": "记录工程师选定轨道支撑板或固定基座的局部倾斜。H310-TS380C 的 ±0.01° 精度等级，可在约定基准状态下支持明确的转角比较。将传感器与板体及线路里程关联，轨距、线形、位移和动态载荷测量仍由专用测量系统完成。",
+     "pointen": "在经批准的板体或基座构件位置采用工程设计的固定方式。",
+     "briefen": "板体类型；测量轴；基准条件；固定设计；运营方批准。",
+     "alten": "无砟轨道，可见混凝土支撑板与钢轨扣件。",
+     "title": "轨道支撑板",
+     "imageId": "track-support-slab-rotation",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "记录工程师选定轨道支撑板或固定基座的局部倾斜。",
+     "measureen": "可比观测条件下，选定轨道支撑板的缓慢局部转动。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Track-support slabs"
+    },
+    {
+     "id": "tunnel-portal-supports",
+     "en": "跟踪选定隧道洞口或进出口支撑构件的局部倾斜。在施工、维护或邻近边坡工程中，如需 ±0.01° 精度，记录的 H310-TS380C 基准可支持更细致的角度比较。请明确结构测点及施工阶段，并结合排水、地质和测量观察复核读数。",
+     "pointen": "固定在指定洞口墙体或结构支撑构件上。",
+     "briefen": "洞口布置；支护阶段；被测构件；施工顺序；安装通道。",
+     "alten": "隧道洞口，可见混凝土端墙与工程支撑结构。",
+     "title": "隧道洞口",
+     "imageId": "tunnel-portal-supports",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪选定隧道洞口或进出口支撑构件的局部倾斜。",
+     "measureen": "选定隧道洞口墙体或工程支撑构件的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Tunnel portals"
+    }
+   ]
+  },
+  {
+   "number": 5,
+   "groupid": "slopes-dams-embankments",
+   "title": "边坡、大坝与堤岸",
+   "jumplabelen": "边坡、大坝与堤岸",
+   "jumplabelzh": "边坡、大坝与堤岸",
+   "introen": "在边坡、堤防、大坝及挡土结构的工程方案内，选定刚性护面和支撑构件。",
+   "scenes": [
+    {
+     "id": "slopes-and-embankments",
+     "baselineId": "tilt-scene-slopes-and-embankments",
+     "title": "边坡与堤岸",
+     "en": "观测岩土团队选定的工程边坡护面或挡土构件的倾斜。H310-TS380C 可在刚性安装点支持规定 ±0.01° 精度的任务。请记录降雨、排水与施工阶段背景；表面倾角记录是项目测量及地下或地面位移监测方案的一部分。",
+     "pointen": "监测设计人员选定的表面构件或挡土结构。",
+     "briefen": "请提供边坡布局、表面固定方法、现场暴露环境及地面位移整体监测计划。",
+     "alten": "应用示意图：工程开挖边坡，可见加固格构、植被与排水沟。",
+     "original": true,
+     "originalImgSrc": "./_astro/slopes-embankments.CWSOfAhb_20AjIh.webp",
+     "originalImgSrcset": "./_astro/slopes-embankments.CWSOfAhb_Z1wXpHM.webp 360w, ./_astro/slopes-embankments.CWSOfAhb_20AjIh.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "engineered-cut-slopes",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "观测岩土团队选定的工程边坡护面或挡土构件的倾斜。",
+     "measureen": "选定表面监测构件或挡土结构的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Slopes and embankments"
+    },
+    {
+     "id": "sea-dikes-dams-and-reservoir-slopes",
+     "baselineId": "tilt-scene-sea-dikes-dams-and-reservoir-slopes",
+     "title": "海堤、大坝与库岸边坡",
+     "en": "跟踪经批准海堤护面或库岸结构构件的局部倾斜。当项目规定 ±0.01° 精度时，H310-TS380C 可支持更细致的基准比较。请将每个测点与水位、载荷和检查阶段关联；水文条件及地面位移仍属于整体工程监测计划的组成部分。",
+     "pointen": "明确的表面结构、护面构件或挡土构件。",
+     "briefen": "请说明安装位置、溅水或浸水环境、检查通道及测量与上报配置。",
+     "alten": "应用示意图：堤坝，可见块石护坡、坝顶道路与相邻水库。",
+     "original": true,
+     "originalImgSrc": "./_astro/dams-reservoir-slopes.Z_WZat2Z_Z26rv97.webp",
+     "originalImgSrcset": "./_astro/dams-reservoir-slopes.Z_WZat2Z_1y43SQ.webp 360w, ./_astro/dams-reservoir-slopes.Z_WZat2Z_Z26rv97.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "sea-dike-facing-elements",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪经批准海堤护面或库岸结构构件的局部倾斜。",
+     "measureen": "指定表面结构、护面构件或挡土构件的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Sea dikes, dams and reservoir slopes"
+    },
+    {
+     "id": "earth-retaining-structures",
+     "en": "记录指定挡墙面板或结构构件的局部倾斜。当项目需要在挡土荷载或邻近施工变化前后建立更细致的角度基准时，可选用 H310-TS380C 的 ±0.01° 精度等级。将传感器测点与工程师确定的墙体区段，以及配套测量或地面监测数据关联。",
+     "pointen": "按规定方向固定在选定挡墙墙身上。",
+     "briefen": "挡墙类型；挡土高度；邻近载荷；施工顺序；安装表面。",
+     "alten": "支撑路堤或工业平台的混凝土挡土墙。",
+     "title": "挡土墙",
+     "imageId": "earth-retaining-structures",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "记录指定挡墙面板或结构构件的局部倾斜。",
+     "measureen": "选定路堤或工业平台挡墙区段的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Retaining walls"
+    },
+    {
+     "id": "open-pit-bench-structures",
+     "en": "跟踪露天矿台阶上工程挡土或支撑构件的倾斜。H310-TS380C 可在岩土团队选定的测点提供 ±0.01° 精度基准。请选择适合的安装方式与外壳，并将读数与开挖阶段及现场检查关联；传感器的局部倾角历史不能确定整体边坡稳定性。",
+     "pointen": "安装在选定用于监测的设计护面或挡土构件上。",
+     "briefen": "台阶布置；被测构件；开挖计划；爆破计划；通行条件。",
+     "alten": "露天矿台阶，可见工程护面区段与通行道路。",
+     "title": "露天矿支护结构",
+     "imageId": "open-pit-bench-structures",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪露天矿台阶上工程挡土或支撑构件的倾斜。",
+     "measureen": "台阶上选定工程护面或挡土构件的局部角度变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Open-pit retaining structures"
+    },
+    {
+     "id": "concrete-dam-blocks",
+     "en": "比较混凝土坝经批准结构测点的局部倾斜。H310-TS380C 可支持规定 ±0.01° 精度的工程任务，同时记录水位、温度与基准条件。请保持测点标识和供货角度定义一致，便于结合大坝既有测量与仪器监测体系复核读数。",
+     "pointen": "按测量确定的方向，直接固定在指定坝块表面。",
+     "briefen": "坝块标识；测量轴；安装标高；检查通道；现有监测计划。",
+     "alten": "混凝土坝块，可见接缝与检查走道。",
+     "title": "混凝土坝",
+     "imageId": "concrete-dam-blocks",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "比较混凝土坝经批准结构测点的局部倾斜。",
+     "measureen": "指定坝块表面沿已记录测量轴的局部角度变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Concrete dams"
+    },
+    {
+     "id": "reservoir-bank-retaining-structures",
+     "en": "跟踪选定库岸挡墙区段的局部倾斜。对于经批准安装点需要 ±0.01° 精度的项目，可使用 H310-TS380C。对比基准前请记录水位条件、排水工程和墙体编号，并结合工程师的测量及地面观察解读记录。",
+     "pointen": "固定在选定库岸挡墙或结构支撑构件上。",
+     "briefen": "库岸区段；挡土形式；水位暴露区；岸边通道；维护计划。",
+     "alten": "维护通道旁的水库岸边挡墙。",
+     "title": "库岸挡墙",
+     "imageId": "reservoir-bank-retaining-structures",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪选定库岸挡墙区段的局部倾斜。",
+     "measureen": "选定库岸挡墙或工程支撑构件的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Reservoir-bank retaining walls"
+    }
+   ]
+  },
+  {
+   "number": 6,
+   "groupid": "construction-temporary",
+   "title": "施工与临时工程",
+   "jumplabelen": "施工与临时工程",
+   "jumplabelzh": "施工与临时工程",
+   "introen": "跨安装、加载与维护阶段的指定结构测点，并记录基准条件。",
+   "scenes": [
+    {
+     "id": "construction-and-temporary-structures",
+     "baselineId": "tilt-scene-construction-and-temporary-structures",
+     "title": "施工与临时结构",
+     "en": "在明确施工阶段，记录工程师选定临时支撑的局部倾斜。当监测设计要求更细致的角度基准时，可采用 H310-TS380C 的 ±0.01° 精度等级。请保留支撑编号、坐标轴约定及载荷阶段，并结合检查和经批准的临时工程方案复核读数。",
+     "pointen": "临时支撑、挡土结构或邻近资产上的经批准测点。",
+     "briefen": "请提供施工顺序、计划中的传感器移位，以及项目通知和检查流程。",
+     "alten": "应用示意图：在建混凝土桥面下的临时钢支撑与带斜撑的支撑塔。",
+     "original": true,
+     "originalImgSrc": "./_astro/construction-temporary-structures.CQzqgt59_TM6lt.webp",
+     "originalImgSrcset": "./_astro/construction-temporary-structures.CQzqgt59_1Vy5Nb.webp 360w, ./_astro/construction-temporary-structures.CQzqgt59_TM6lt.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "construction-and-temporary-structures",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "在明确施工阶段，记录工程师选定临时支撑的局部倾斜。",
+     "measureen": "经批准临时支撑、挡土结构或邻近结构构件的局部转动。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Construction and temporary structures"
+    },
+    {
+     "id": "excavation-retaining-walls",
+     "en": "在明确施工阶段跟踪选定基坑支护墙测点的局部倾斜。H310-TS380C 可在监测设计人员规定的条件下支持 ±0.01° 精度目标。记录开挖深度、支撑变更和安装方向；表面倾角记录应与项目测量、沉降及岩土仪器监测结果结合考虑。",
+     "pointen": "支护墙构件的指定刚性表面。",
+     "briefen": "支护墙体系；开挖阶段；支撑顺序；所需测量轴。",
+     "alten": "安装有水平支撑的基坑支护墙。",
+     "title": "基坑支护墙",
+     "imageId": "excavation-retaining-walls",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "在明确施工阶段跟踪选定基坑支护墙测点的局部倾斜。",
+     "measureen": "选定基坑支护墙区段在规定结构测点的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Excavation retaining walls"
+    },
+    {
+     "id": "falsework-support-frames",
+     "en": "比较经批准临时支架或模板支撑构件的局部倾斜。固定的 H310-TS380C 基准可支持更细致的倾角复核，±0.01° 精度等级由临时工程设计选定。请将每个测点与组装、加载及拆除阶段关联，并将倾角记录与支撑检查及负责工程师的工作程序一并保存。",
+     "pointen": "工程师选定的立杆或刚性支撑框架构件。",
+     "briefen": "工程支撑布局；构件标识；浇筑或加载顺序；安装净空。",
+     "alten": "模板支撑框架，可见立杆、斜撑与顶部支托。",
+     "title": "临时支架与模板支撑",
+     "imageId": "falsework-support-frames",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "比较经批准临时支架或模板支撑构件的局部倾斜。",
+     "measureen": "约定项目条件下，经批准临时支撑框架构件的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Falsework & formwork supports"
+    },
+    {
+     "id": "steel-frame-erection",
+     "en": "在吊装阶段跟踪选定钢柱或框架构件的局部倾斜。构件稳定后，H310-TS380C 可为约定的局部角度比较提供 ±0.01° 精度等级。请记录安装方向、支撑与连接阶段，并使用项目测量仪器确定几何及最终对中情况。",
+     "pointen": "选定钢柱上的指定刚性安装面。",
+     "briefen": "钢柱截面；吊装顺序；支撑与连接阶段；测量基准方案。",
+     "alten": "已安装的钢柱，可见柱脚底板与临时斜撑。",
+     "title": "钢柱安装",
+     "imageId": "steel-frame-erection",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "在吊装阶段跟踪选定钢柱或框架构件的局部倾斜。",
+     "measureen": "选定钢柱沿规定安装监测方向的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Steel-column erection"
+    },
+    {
+     "id": "adjacent-building-construction",
+     "en": "记录施工现场旁建筑中工程师选定测点的局部倾斜。经业主批准安装并建立记录基准后，H310-TS380C 可支持规定的 ±0.01° 精度目标。请将变化与施工阶段、温度和检查关联，并结合项目的沉降、裂缝及测量数据解读记录。",
+     "pointen": "选定的结构墙、柱或其它指定刚性构件。",
+     "briefen": "建筑结构与状况；距施工距离；安装许可；施工前基准观测期。",
+     "alten": "施工场地边界旁的既有建筑。",
+     "title": "施工邻近建筑",
+     "imageId": "adjacent-building-construction",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "记录施工现场旁建筑中工程师选定测点的局部倾斜。",
+     "measureen": "施工邻近建筑中，经批准承重构件的局部角度变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Buildings beside construction"
+    },
+    {
+     "id": "modular-site-buildings",
+     "en": "安装后比较模块化或现场建筑选定结构框架的局部方向。当项目需要在支撑调整或搬迁前后开展更细致的角度复核时，H310-TS380C 可提供 ±0.01° 精度基准。请记录模块编号与稳定基准状态，基础标高和整体几何应通过独立测量确定。",
+     "pointen": "监测布局中指定的刚性框架柱或梁。",
+     "briefen": "模块布局；支撑与锚固细节；搬迁计划；预期使用期限。",
+     "alten": "模块化现场建筑，可见框架与地面支撑。",
+     "title": "模块化与现场建筑",
+     "imageId": "modular-site-buildings",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "安装后比较模块化或现场建筑选定结构框架的局部方向。",
+     "measureen": "选定模块化建筑底架或固定结构支撑的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Modular & site buildings"
+    }
+   ]
+  },
+  {
+   "number": 7,
+   "groupid": "heritage-environment",
+   "title": "文保、建筑与树木",
+   "jumplabelen": "文保、建筑与树木",
+   "jumplabelzh": "文保、建筑与树木",
+   "introen": "建筑、历史构件与树木上，经文保团队或树木养护专家批准的测点。",
+   "scenes": [
+    {
+     "id": "heritage-buildings-and-ancient-pagodas",
+     "baselineId": "tilt-scene-heritage-buildings-and-ancient-pagodas",
+     "title": "文保建筑与古塔",
+     "en": "跟踪文保建筑或古塔中经文保批准结构测点的局部倾斜。当保护方案需要更细致角度基准时，H310-TS380C 的 ±0.01° 精度等级可提供支持。请使用约定且适配的固定方式，并随读数保留构件标识、坐标轴约定及修缮干预记录。",
+     "pointen": "与文保团队约定的结构构件与固定位置。",
+     "briefen": "请说明批准的固定方法、表面限制、通行安排及计划监测时长。",
+     "alten": "应用示意图：成熟树木与园林场地环绕的传统古塔。",
+     "original": true,
+     "originalImgSrc": "./_astro/heritage-pagodas.pqYFtuAX_Z2gAn4n.webp",
+     "originalImgSrcset": "./_astro/heritage-pagodas.pqYFtuAX_E2fQx.webp 360w, ./_astro/heritage-pagodas.pqYFtuAX_Z2gAn4n.webp 720w",
+     "originalImgStyle": "object-position:50% 20%",
+     "imageId": "heritage-buildings-and-ancient-pagodas",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪文保建筑或古塔中经文保批准结构测点的局部倾斜。",
+     "measureen": "经批准安装位置，约定文保结构构件的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Heritage buildings and ancient pagodas"
+    },
+    {
+     "id": "structurally-distressed-buildings",
+     "baselineId": "tilt-scene-structurally-distressed-buildings",
+     "title": "既有建筑与修缮",
+     "en": "记录调查或修缮中既有建筑经工程师批准测点的局部倾斜。通过稳定基准与修缮干预日志，H310-TS380C 为明确的角度任务提供 ±0.01° 精度等级。请结合测量与检查解读读数；读数不构成结构状态诊断或使用许可。",
+     "pointen": "工程师选定的承重墙、柱或其它结构构件。",
+     "briefen": "请提供现场通行计划、批准监测点、所需通知时效和工程复核流程。",
+     "alten": "应用示意图：老旧砌体建筑，可见外立面裂缝、临时支撑与周边围挡，展示正在进行结构评估的建筑。",
+     "original": true,
+     "originalImgSrc": "./_astro/structurally-distressed-buildings.tXfS0OTi_Z15QLJ9.webp",
+     "originalImgSrcset": "./_astro/structurally-distressed-buildings.tXfS0OTi_Z45Mhr.webp 360w, ./_astro/structurally-distressed-buildings.tXfS0OTi_Z15QLJ9.webp 720w",
+     "originalImgStyle": "object-position:50% 50%",
+     "imageId": "structurally-distressed-buildings",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "记录调查或修缮中既有建筑经工程师批准测点的局部倾斜。",
+     "measureen": "工程师选定承重墙、柱或结构构件的局部角度变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Existing buildings & repair works"
+    },
+    {
+     "id": "urban-trees",
+     "baselineId": "tilt-scene-urban-trees",
+     "title": "城市树木",
+     "en": "采用树木养护专家批准的安装方式，跟踪选定树干段的局部倾斜。当其具有实际意义时，H310-TS380C 可提供 ±0.01° 精度基准，并记录树干测点与传感器方向。请结合天气、地面与检查观察复核记录；单独的局部倾斜不能确定根系状态或失稳风险。",
+     "pointen": "树木养护专家选定的树干段，采用批准的无损伤固定方式，并在整个监测期持续检查。",
+     "briefen": "请明确树木、固定方法、随生长变化的检查需求及用于比较的环境条件。",
+     "alten": "应用示意图：铺装公园小径旁的成熟城市树木，可见树干与根颈。",
+     "original": true,
+     "originalImgSrc": "./_astro/urban-trees.CTg_5Q_R_Z1Exwhe.webp",
+     "originalImgSrcset": "./_astro/urban-trees.CTg_5Q_R_Z1fHjOz.webp 360w, ./_astro/urban-trees.CTg_5Q_R_Z1Exwhe.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "urban-trees",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "采用树木养护专家批准的安装方式，跟踪选定树干段的局部倾斜。",
+     "measureen": "已记录固定位置和测量方向上的树干局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Urban trees"
+    },
+    {
+     "id": "historic-masonry-walls",
+     "en": "比较历史砌体墙经文保批准测点的局部倾斜。H310-TS380C 支持规定 ±0.01° 精度的项目，并记录墙体区段与适配固定方式。将读数与天气、排水及修缮干预记录关联，并结合砌体检查和独立测量或裂缝数据复核局部倾角。",
+     "pointen": "明确的墙体区段，固定位置经文保团队批准。",
+     "briefen": "墙体构造与表面状况；裂缝调查；排水情况；允许的固定方式；文保通行限制。",
+     "alten": "历史砌体墙，可见砖砌结构与连续墙体轮廓。",
+     "title": "历史砌体墙",
+     "imageId": "historic-masonry-walls",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "比较历史砌体墙经文保批准测点的局部倾斜。",
+     "measureen": "选定砌体墙表面在经文保批准安装点的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Historic masonry walls"
+    },
+    {
+     "id": "historic-timber-frames",
+     "en": "采用文保批准的固定方式，跟踪选定历史木构件的局部倾斜。H310-TS380C 的 ±0.01° 精度等级，可结合已记录的维护及环境条件，支持更细致的角度比较。请保留构件编号和安装基准，并结合连接、支撑及周边建筑实体检查复核读数。",
+     "pointen": "选定木柱或木梁上的经批准固定点。",
+     "briefen": "木构件标识；节点与框架调查；表面保护规定；批准固定方式；修缮顺序。",
+     "alten": "传统建筑内的历史木柱与梁连接节点。",
+     "title": "历史木构架",
+     "imageId": "historic-timber-frames",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "采用文保批准的固定方式，跟踪选定历史木构件的局部倾斜。",
+     "measureen": "选定木柱或结构构件在经批准固定点的局部角度变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Historic timber frames"
+    },
+    {
+     "id": "veteran-heritage-trees",
+     "en": "观测树木养护专家选定古树名木树干段的局部倾斜。当项目规定 ±0.01° 精度时，H310-TS380C 可提供更细致的基准，并在整个监测期间检查适配的固定方式。请将记录与地面施工、天气及树木专业检查关联，不将单一角度序列视为树木稳定性评估。",
+     "pointen": "树木养护专家选定的树干段，采用批准的无损伤固定方式，并在整个监测期持续检查。",
+     "briefen": "树木标识与保护要求；专家批准的固定方式；树干生长余量；保护记录；外部天气观察。",
+     "alten": "古树，可见树干、根颈与周边保护环境。",
+     "title": "古树名木",
+     "imageId": "veteran-heritage-trees",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "观测树木养护专家选定古树名木树干段的局部倾斜。",
+     "measureen": "经批准固定位置的局部树干倾斜，并随树木生长进行检查。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Veteran & heritage trees"
+    }
+   ]
+  },
+  {
+   "number": 8,
+   "groupid": "industrial-equipment",
+   "title": "工业设备",
+   "jumplabelen": "工业设备",
+   "jumplabelzh": "工业设备",
+   "introen": "在明确的静止或可重复工况下，比较刚性设备框架与支撑结构的倾斜。",
+   "scenes": [
+    {
+     "id": "large-equipment-and-injection-moulding-machines",
+     "baselineId": "tilt-scene-large-equipment-and-injection-moulding-machines",
+     "title": "大型设备与注塑机",
+     "en": "在约定静止状态下，记录选定注塑机底座或大型设备框架的倾斜。H310-TS380C 的 ±0.01° 精度等级，可在搬迁、支撑调整或基础施工前后提供更细致的角度基准。应比较相同设备状态；精密调平、动态振动和生产控制需要各自的方法。",
+     "pointen": "设备底座或框架上能够代表所需方向的刚性测点。",
+     "briefen": "请说明调平要求、现场温度、运行振动及读数比较所采用的工况。",
+     "alten": "应用示意图：明亮工业生产车间内的注塑机。",
+     "original": true,
+     "originalImgSrc": "./_astro/industrial-moulding-machine.wvUNg-QX_Z5PjR8.webp",
+     "originalImgSrcset": "./_astro/industrial-moulding-machine.wvUNg-QX_Z2jx4e1.webp 360w, ./_astro/industrial-moulding-machine.wvUNg-QX_Z9eo0w.webp 720w, ./_astro/industrial-moulding-machine.wvUNg-QX_Z5PjR8.webp 1080w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "large-equipment-and-injection-moulding-machines",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "在约定静止状态下，记录选定注塑机底座或大型设备框架的倾斜。",
+     "measureen": "可比静止条件下，选定设备底座或框架的静态倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Large equipment and injection-moulding machines"
+    },
+    {
+     "id": "heavy-machine-tool-bases",
+     "en": "待重型机床达到约定静止状态后，跟踪刚性底座的倾斜。H310-TS380C 可为维护及基础比较提供 ±0.01° 精度基准。请记录坐标轴约定和机床配置，最终调平、主轴几何及加工精度验收应采用制造商的计量程序。",
+     "pointen": "制造商批准的刚性底座位置，能够代表选定方向。",
+     "briefen": "机床类型、工作台位置、载荷布置、热状态与基准核查。",
+     "alten": "重型龙门机床，可见结构底座与工厂地面。",
+     "title": "重型机床底座",
+     "imageId": "heavy-machine-tool-bases",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "待重型机床达到约定静止状态后，跟踪刚性底座的倾斜。",
+     "measureen": "可比工作台、载荷和热状态下，经批准机床底座的静态倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Heavy machine-tool bases"
+    },
+    {
+     "id": "fixed-production-line-frames",
+     "en": "比较经批准固定生产线框架或静止夹具支撑的局部倾斜。当任务规定 ±0.01° 精度时，H310-TS380C 可提供更细致的角度基准，并记录载荷与设置条件。对于可调工装夹具，应比较约定的静止设置；1 分钟采集配置不属于快速运动控制信号。",
+     "pointen": "固定承重框架构件，远离运动工装与盖板。",
+     "briefen": "框架或静止夹具细节、安装点、参考位置、代表性载荷及所需局部角度精度。",
+     "alten": "工业车间内的固定生产线支撑框架与维护通道。",
+     "title": "生产线框架",
+     "imageId": "fixed-production-line-frames",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "比较经批准固定生产线框架或静止夹具支撑的局部倾斜。",
+     "measureen": "约定静止条件下，选定固定承重框架的缓慢倾斜变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Production-line frames"
+    },
+    {
+     "id": "heavy-press-bases",
+     "title": "重型压力机底座",
+     "en": "在约定静止状态下，记录选定压力机底座或刚性支撑框架的局部倾斜。H310-TS380C 的 ±0.01° 精度等级，可支持基础或支撑维护前后的基准比较。请保持设备状态与安装基准一致；压机冲程动态、振动及设备保护属于独立功能。",
+     "pointen": "制造商批准的刚性底座或支撑框架表面，远离运动工装。",
+     "briefen": "请明确压机类型、基础布置、停机基准状态、热条件、允许固定方式及调平程序。",
+     "alten": "大型四柱工业压力机，可见刚性下底座与基础支撑。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "heavy-press-bases",
+     "objectiveen": "在约定静止状态下，记录选定压力机底座或刚性支撑框架的局部倾斜。",
+     "measureen": "约定停机状态下，经批准压机底座或支撑框架的静态倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Heavy press bases"
+    },
+    {
+     "id": "fixed-conveyor-supports",
+     "title": "固定输送机支撑",
+     "en": "在静止后跟踪固定输送机立柱或经批准可调支撑段的倾斜。H310-TS380C 可为安装与维护比较提供约定的 ±0.01° 精度基准。请记录载荷和调整状态，使读数对应支撑结构；输送机跑偏控制、输送带运动及设备安全功能仍由专用系统完成。",
+     "pointen": "固定承重支柱或框架，与运动输送带及可拆卸护罩分离。",
+     "briefen": "输送机支撑几何、静止调整位置、代表性载荷、安装净空及所需局部角度精度。",
+     "alten": "固定高架输送机，安装在锚固钢柱上，可见斜撑与维护通道。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "fixed-conveyor-supports",
+     "objectiveen": "在静止后跟踪固定输送机立柱或经批准可调支撑段的倾斜。",
+     "measureen": "选定固定输送机立柱或支撑框架的缓慢局部倾斜变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Fixed conveyor supports"
+    },
+    {
+     "id": "industrial-test-rig-frames",
+     "title": "泵组支撑框架",
+     "en": "待设备静止后，比较泵组撬座或刚性设备试验支撑的局部倾斜。H310-TS380C 的 ±0.01° 精度等级，可在安装、灌浆或支撑施工前后提供更细致的安装基准。请记录泵组配置；轴系对中与运行振动需要独立的测量和程序。",
+     "pointen": "经批准的刚性撬座或支撑框架位置，避开旋转部件与可拆卸盖板。",
+     "briefen": "泵组或设备布局、静止基准状态、管道载荷、支撑施工及所需局部角度精度。",
+     "alten": "工厂内的工业泵与电机，安装在刚性支撑撬座上。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "industrial-test-rig-frames",
+     "objectiveen": "待设备静止后，比较泵组撬座或刚性设备试验支撑的局部倾斜。",
+     "measureen": "明确基准状态下，经批准泵组撬座或固定设备支撑框架的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Pump-set support frames"
+    }
+   ]
+  },
+  {
+   "number": 9,
+   "groupid": "energy-utilities",
+   "title": "能源与公用设施",
+   "jumplabelen": "能源与公用设施",
+   "jumplabelzh": "能源与公用设施",
+   "introen": "供水、光伏、储存及工艺支撑结构，并记录载荷、环境与选定构件。",
+   "scenes": [
+    {
+     "id": "elevated-water-tank-supports",
+     "en": "跟踪选定高位水箱支柱或刚性支撑构件的局部倾斜。H310-TS380C 支持规定的 ±0.01° 精度基准，并记录水位和安装坐标轴约定。请在加载与维护阶段比较同一支撑，结构整体情况应通过工程检查与独立测量评估。",
+     "pointen": "工程师选定的刚性支撑构件，并记录安装方向。",
+     "briefen": "支撑设计、水位记录、安装高度、通行条件与测量基准。",
+     "alten": "高位水箱，可见结构支柱。",
+     "title": "高位水箱支撑",
+     "imageId": "elevated-water-tank-supports",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪选定高位水箱支柱或刚性支撑构件的局部倾斜。",
+     "measureen": "记录载荷条件下，选定高位水箱支撑构件的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Elevated water-tank supports"
+    },
+    {
+     "id": "fixed-solar-supports",
+     "en": "在位置设定后，记录选定固定光伏支架或手动调整框架的倾斜。当项目规定 ±0.01° 精度时，H310-TS380C 可支持更细致的角度基准。请记录结构构件与静止设置，将倾斜复核与太阳跟踪、罗盘航向和发电性能评估分别处理。",
+     "pointen": "能够代表监测方向的固定支柱或承重框架。",
+     "briefen": "支撑构件、约定静止或手动设定位置、安装方向、暴露环境及所需局部角度精度。",
+     "alten": "固定光伏阵列，可见立柱、倾斜框架与地面基础。",
+     "title": "固定光伏支架",
+     "imageId": "fixed-solar-supports",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "在位置设定后，记录选定固定光伏支架或手动调整框架的倾斜。",
+     "measureen": "选定固定光伏立柱或承重支撑框架的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Fixed solar-panel supports"
+    },
+    {
+     "id": "silo-and-tank-support-frames",
+     "en": "在有记录的装料条件下，比较选定料仓支腿或罐体支撑构件的局部倾斜。当监测计划有此要求时，H310-TS380C 的 ±0.01° 精度等级可支持更细致的角度基准。每个测点均对应支撑编号与维护记录，整体位移或承载能力应通过测量及结构复核评估。",
+     "pointen": "工艺边界之外、可接近且经工程师批准的支腿或框架。",
+     "briefen": "支撑布置、装料状态、温度、区域分类与固定通道。",
+     "alten": "工业料仓或罐体，可见外部支腿与结构框架。",
+     "title": "料仓与罐体支撑",
+     "imageId": "silo-and-tank-support-frames",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "在有记录的装料条件下，比较选定料仓支腿或罐体支撑构件的局部倾斜。",
+     "measureen": "可比装料条件下，选定外部支腿或框架的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Silo & tank supports"
+    },
+    {
+     "id": "industrial-chimney-base",
+     "en": "跟踪经批准烟囱基础或下部结构测点的局部倾斜。H310-TS380C 支持这些基准位置规定 ±0.01° 精度的项目，并记录温度、风况及运行状态。安装环境应满足设备供货限制；烟囱整体形态、位移与状态需要配套工程方法评估。",
+     "pointen": "经批准的刚性基础构件，环境条件应满足所选配置要求。",
+     "briefen": "基础设计、热暴露、运行状态、通行条件与配套测量。",
+     "alten": "工业烟囱及其可接近的外部基础结构。",
+     "title": "烟囱基础",
+     "imageId": "industrial-chimney-base",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪经批准烟囱基础或下部结构测点的局部倾斜。",
+     "measureen": "环境限制范围内，经批准烟囱外部基础构件的局部角度变化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Chimney bases"
+    },
+    {
+     "id": "cooling-tower-support-frames",
+     "en": "在约定静止或可比运行条件下，记录选定冷却塔支撑框架的倾斜。H310-TS380C 为明确的局部倾角任务提供 ±0.01° 精度等级。请记录结构构件与环境；机械振动、水系统性能及整体装置状态，需要独立测量与复核。",
+     "pointen": "工程师选定的固定支撑，并评估安装点的运行干扰。",
+     "briefen": "支撑布局、风机状态、潮湿暴露、载荷条件与维护通道。",
+     "alten": "工业冷却塔，安装在可见的固定支撑框架上。",
+     "title": "冷却塔支撑",
+     "imageId": "cooling-tower-support-frames",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "在约定静止或可比运行条件下，记录选定冷却塔支撑框架的倾斜。",
+     "measureen": "可比运行状态下，选定固定冷却塔支撑的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Cooling-tower supports"
+    },
+    {
+     "id": "utility-pipe-rack-columns",
+     "en": "跟踪承载工艺或公用管线、经批准管廊立柱的局部倾斜。当项目规定 ±0.01° 精度时，H310-TS380C 可支持更细致的基准比较，并记录载荷与热条件。请将传感器固定在结构构件上；管道应变、伸缩接头位移与危险区域适用审批，需要另行进行项目核查。",
+     "pointen": "固定结构立柱，不安装在活动管道、保温层或可拆卸盖板上。",
+     "briefen": "框架柱网、承载管线、热状态、区域分类与固定细节。",
+     "alten": "工业公用管廊，可见多条管线与结构立柱。",
+     "title": "管廊立柱",
+     "imageId": "utility-pipe-rack-columns",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "跟踪承载工艺或公用管线、经批准管廊立柱的局部倾斜。",
+     "measureen": "选定固定管廊立柱沿已记录测量方向的局部倾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Pipe-rack columns"
+    }
+   ]
+  }
+ ]
+}

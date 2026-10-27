@@ -1,0 +1,1670 @@
+{
+ "meta": {
+  "model": "H310-TS380C",
+  "variant": "high",
+  "locale": "ja",
+  "route": "/ja/product/triaxial-high-precision-tilt-sensor",
+  "canonical": "https://www.hitelecom.com/ja/product/triaxial-high-precision-tilt-sensor",
+  "source": "GPT6 multilingual MD 2026-10-27, Kimi integration"
+ },
+ "content": {
+  "version": 1,
+  "seo": {
+   "title": "±0.01° 三軸傾斜センサー | H310-TS380C | Hitelecom",
+   "description": "H310-TS380Cは精度±0.01°の三軸傾斜センサー。1分間隔の測定と4時間ごとの定期送信で、倉庫ラック、構造部材、産業設備の局所的な傾斜を記録します。",
+   "keywords": "H310-TS380C, 三軸傾斜センサー, 三軸傾斜計, ワイヤレス傾斜センサー, ラック傾斜監視, 構造部材の傾斜, 4G LTE, NB-IoT, LoRa, OEM"
+  },
+  "hero": {
+   "title": "三軸傾斜センサー。 高精度。 測定精度±0.01°。",
+   "description": "H310-TS380Cは、ラック支柱、構造部材、ポール、設備架台の局所的な傾斜を監視する、精度±0.01°の高精度三軸傾斜センサーです。三軸センシング、1分間隔の測定、4時間ごとの定期送信により、決められた取付点での変化を一貫した履歴として記録できます。",
+   "primaryLabel": "導入について相談",
+   "secondaryLabel": "仕様を確認"
+  },
+  "features": [
+   {
+    "title": "精度±0.01°の三軸傾斜測定",
+    "text": "H310-TS380Cは精度±0.01°とX/Y/Zのセンシングを組み合わせたモデルです。取付方法に応じて、送信する角度チャネルと軸の定義を決めます。"
+   },
+   {
+    "title": "1分間隔で測定",
+    "text": "1分間隔で取付点の状態を測定します。測定間隔と、測定値を送信するスケジュールは分けて設定・確認します。"
+   },
+   {
+    "title": "4時間ごとに定期送信",
+    "text": "選択した無線方式とインターフェースを使用し、各所の測定値を4時間ごとにHitelecom Cloudまたは対応するお客様のプラットフォームへ送信します。"
+   },
+   {
+    "title": "設置環境に応じた保護",
+    "text": "IP68の金属筐体、またはIP66の樹脂筐体を選択できます。動作温度仕様は−40°C～+85°Cです。測定対象の部材に適した取付キットを選定します。"
+   },
+   {
+    "title": "NFCで初期設定",
+    "text": "NFCによる起動とローカル設定が設置・初期調整を支援します。監視を開始する前に、設備ID、初期角度、取付方向を記録します。"
+   },
+   {
+    "title": "プラットフォーム連携を計画",
+    "text": "機器のバリエーションに応じて4G LTE、NB-IoT、LoRaを選定します。メッセージ項目と接続インターフェースを確認し、対応バージョンでは遠隔ファームウェア更新を利用できます。"
+   }
+  ],
+  "overview": {
+   "kicker": "変化を、より明確に",
+   "title": "角度を測る。 変化を追う。",
+   "answer": "三軸傾斜センサーは、定義されたセンサー方向を基準として傾斜を捉えます。H310-TS380Cは、選定した取付点において、より細かな傾斜精度を必要とする用途向けの±0.01°モデルです。設置基準、設備ID、送信データの軸定義を併せて管理し、後から得られる値を同じ局所部材の記録として比較できるようにします。",
+   "steps": [
+    {
+     "number": "01",
+     "title": "測定点と方向を定める",
+     "text": "選定した部材にセンサーを固定します。設置後に、設備ID、ブラケット位置、軸方向、初期角度を記録します。"
+    },
+    {
+     "number": "02",
+     "title": "必要な変化量と精度を照合する",
+     "text": "確認したい角度変化を精度±0.01°と照合します。各送信チャネルについて、使用範囲、表示・出力刻み、適用する試験条件を指定します。"
+    },
+    {
+     "number": "03",
+     "title": "履歴を確認手順につなげる",
+     "text": "確認条件と担当者を決めます。設置完了後の機器で、測定値、定期送信メッセージ、プラットフォーム上の処理を検証します。"
+    }
+   ]
+  },
+  "operatingProfile": {
+   "kicker": "測定とデータ送信",
+   "title": "こまめに測定。 定期的に送信。",
+   "intro": "H310-TS380Cは1分間隔で測定し、4時間ごとに定期送信します。仕様書に示す電池寿命の基準は、25°C、電波状態が正常な条件で10年です。",
+   "metrics": [
+    {
+     "value": "1分",
+     "label": "測定間隔",
+     "detail": "設置した監視点で、短い間隔の測定を実施。"
+    },
+    {
+     "value": "4時間",
+     "label": "定期送信間隔",
+     "detail": "1日を6つの定期送信間隔に分割。"
+    },
+    {
+     "value": "240",
+     "label": "測定回数",
+     "detail": "この基準動作条件で、定期送信の間に実行する測定回数。"
+    },
+    {
+     "value": "10年*",
+     "label": "基準電池寿命",
+     "detail": "1分間隔の測定、4時間ごとの送信、25°C、電波状態が正常な条件。"
+    }
+   ],
+   "footnote": "実際の電池寿命は、有効にした機能、イベントの発生頻度、無線通信の再試行回数によって変わります。測定回数は、1回の送信に含まれる個別サンプル数やデータ保持期間を示すものではありません。イベント送信と通知に関する要件は、納入構成について個別に確認します。"
+  },
+  "modelCatalog": {
+   "title": "設置条件に合う。適切な仕様を。",
+   "intro": "H310-TS380Cと精度±0.01°をモデル選定の基準とし、軸の定義、必要な使用範囲、データインターフェースを、無線方式・筐体の選択と併せて指定してください。",
+   "defaultModelId": "h310-ts380c",
+   "models": [
+    {
+     "id": "h310-ts380c",
+     "model": "H310-TS380C",
+     "scopeNote": "高精度三軸傾斜センサー・精度±0.01°。以下の技術仕様は2026-10-27付の仕様書に基づきます。各軸の角度定義、測定範囲、分解能、構成条件は、納入仕様の一部として確認します。",
+     "datasheet": {
+      "url": "/downloads/h310-ts380c-triaxial-tilt-sensor-datasheet.pdf",
+      "label": "H310-TS380C仕様書をダウンロード (EN)"
+     },
+     "specifications": [
+      {
+       "name": "型番",
+       "value": "H310-TS380C"
+      },
+      {
+       "name": "製品グレード",
+       "value": "三軸・高精度"
+      },
+      {
+       "name": "精度",
+       "value": "±0.01°。適用範囲と試験条件は納入構成による"
+      },
+      {
+       "name": "センシング方式",
+       "value": "MEMS・三軸センシング (X / Y / Z)"
+      },
+      {
+       "name": "角度出力",
+       "value": "角度の定義と基準方向は納入プロトコルによる。重力基準の傾斜だけではヨー角を独立して求められない"
+      },
+      {
+       "name": "測定範囲と分解能",
+       "value": "各軸・注文構成ごとに使用範囲と出力刻みを指定"
+      },
+      {
+       "name": "測定間隔",
+       "value": "1分"
+      },
+      {
+       "name": "定期送信間隔",
+       "value": "4時間"
+      },
+      {
+       "name": "基準電池寿命",
+       "value": "10年：1分間隔の測定、4時間ごとの送信、25°C、電波状態が正常な条件。使用機能、イベント、通信再試行により変動"
+      },
+      {
+       "name": "電源",
+       "value": "19000 mAh電池。38000 mAhをオプションで選択可能"
+      },
+      {
+       "name": "通信バリエーション",
+       "value": "LTE Cat.1 (4G)。NB-IoT / LoRaは選択するバリエーションによる。地域の周波数帯とモデムオプションは納入構成による"
+      },
+      {
+       "name": "SIM構成",
+       "value": "対応するセルラー通信モデル：標準IoT SIM。組込みSIM / eSIMをオプションで選択可能"
+      },
+      {
+       "name": "筐体保護等級",
+       "value": "金属筐体：IP68。樹脂筐体：IP66"
+      },
+      {
+       "name": "動作・保管温度",
+       "value": "−40°C～+85°C"
+      },
+      {
+       "name": "動作湿度",
+       "value": "5%～95% RH、結露なきこと"
+      },
+      {
+       "name": "本体寸法",
+       "value": "115 × 90 × 60 mm。プラットフォーム本体の参考寸法"
+      },
+      {
+       "name": "取付方法",
+       "value": "選択するキットにより、壁面、ポール、DINレールへの取付に対応"
+      },
+      {
+       "name": "NFCとファームウェア更新",
+       "value": "NFCによる起動とローカル設定。遠隔ファームウェア更新は対応バージョンで利用可能"
+      },
+      {
+       "name": "プラットフォームと接続",
+       "value": "Hitelecom Cloudまたは対応するお客様のプラットフォーム。対応データインターフェースを選択"
+      },
+      {
+       "name": "認証に関する情報",
+       "value": "H200/H300/H500プラットフォームはCE取得済み。納入構成への適用可否、およびその他のCCC / FCC / RoHS関連資料を確認すること。"
+      }
+     ]
+    }
+   ]
+  },
+  "applicationHeading": {
+   "kicker": "用途",
+   "title": "さまざまな構造物に。 必要な傾斜を、的確に測定。",
+   "intro": "倉庫ラック、インフラ、産業設備、エネルギー設備の傾斜監視用途を紹介します。各項目で、精度±0.01°の三軸モデルの測定部材、取付点、計画時の確認事項を示します。",
+   "imageNote": "用途イメージは監視環境を示すもので、お客様の設置実績の記録ではありません。"
+  },
+  "groups": [],
+  "applications": [],
+  "integration": {
+   "kicker": "通信とシステム連携",
+   "title": "設置場所に合わせて。データの接続先も選べる。",
+   "intro": "機器のバリエーションに応じて4G LTE、NB-IoT、LoRaを選定します。Hitelecom Cloudでもお客様のプラットフォームでも、運用開始前に取付計画とデータ要件を併せて確認します。",
+   "routes": [
+    {
+     "title": "広域に分散した拠点へ",
+     "subtitle": "4G LTE / NB-IoT",
+     "steps": [
+      "三軸センサー",
+      "セルラーネットワーク",
+      "お客様のプラットフォーム"
+     ],
+     "text": "地域内に分散する拠点では、現地通信事業者のカバーエリア、対応周波数帯、IoT SIM構成に合わせてセルラーモデルを選定します。展開前に、実際の取付点で電波品質を確認してください。",
+     "checks": [
+      "設置国、通信事業者、地域の周波数帯",
+      "SIM / eSIM構成とアンテナ構成",
+      "対応プラットフォーム接続と定期送信の試験"
+     ]
+    },
+    {
+     "title": "同一敷地内の複数測定点へ",
+     "subtitle": "LoRa対応モデルを選択",
+     "steps": [
+      "複数の三軸センサー",
+      "対応受信機",
+      "お客様のプラットフォーム"
+     ],
+     "text": "構内無線で運用する場合は、受信機、無線設定、上位システムへの接続方法を確認します。敷地図と予定測定点数をご提示いただくことで、通信範囲とゲートウェイの配置を検討できます。",
+     "checks": [
+      "対応受信機またはゲートウェイと無線プロトコル",
+      "遮蔽物、距離、各取付点の通信範囲",
+      "メッセージ項目、タイムスタンプ、上位接続インターフェース"
+     ]
+    }
+   ],
+   "handoverTitle": "送信される角度を、追跡できる記録に。",
+   "handover": "プラットフォーム担当者と、対応する角度出力およびサンプルメッセージを確認します。機器・設備ID、チャネル名、軸定義、単位、タイムスタンプ、設置基準を対応付けます。展開を広げる前に、初期調整を終えた監視点でデータを検証します。"
+  },
+  "selection": {
+   "title": "プロジェクトに合わせた構成。",
+   "intro": "These four details make the proposal specific to your installation.",
+   "items": [
+    {
+     "title": "捉えたい変化",
+     "text": "測定する部材と、確認が必要な角度変化を特定します。精度±0.01°と照合し、各軸の必要範囲と出力刻みを指定してください。"
+    },
+    {
+     "title": "設置条件",
+     "text": "固定面、取付方向、温度、水への暴露、作業アクセス、希望する筐体・取付キットをお知らせください。"
+    },
+    {
+     "title": "送信とプラットフォーム接続",
+     "text": "国、測定点数、通信方式、送信スケジュール、対応インターフェース、イベント対応要件をご提示ください。"
+    },
+    {
+     "title": "評価と展開計画",
+     "text": "数量、サンプル評価基準、OEM・ホワイトラベルの要望、証明書の要件、設置予定時期をお知らせください。"
+    }
+   ]
+  },
+  "faqHeading": {
+   "kicker": "プロジェクトの疑問にお答えします",
+   "title": "よくある ご質問。",
+   "intro": "高精度三軸傾斜センサーH310-TS380Cの仕様選定、設置、システム連携についての実用的な回答です。"
+  },
+  "faqs": [
+   {
+    "id": "faq-model",
+    "question": "H310-TS380C三軸傾斜センサーとは何ですか？",
+    "paragraphs": [
+     "H310-TS380Cは、精度±0.01°とX/Y/Zセンシングに対応した高精度MEMS傾斜センサーです。納入プロトコルで定義された角度出力と基準方向を用い、決められた取付点の傾斜を測定します。",
+     "代表的な対象は、倉庫ラック支柱、ポール、構造部材、機械架台です。1分間隔の測定と4時間ごとの定期送信により、選定した点の角度を遠隔で記録できます。"
+    ],
+    "answerLink": {
+     "href": "#specifications",
+     "label": "仕様を確認"
+    }
+   },
+   {
+    "id": "faq-grade",
+    "question": "H310-TS350MではなくH310-TS380Cを選ぶのは、どのような場合ですか？",
+    "paragraphs": [
+     "より細かな±0.01°の精度が必要で、取付条件もその測定目標を満たせる場合にH310-TS380Cを選定します。H310-TS350Mは、精度±0.1°の三軸モデルです。",
+     "選定には、範囲、分解能、温度、固定の安定性、試験条件も関係します。精度は、表示刻みやプロジェクトの確認を開始する閾値とは別の仕様です。"
+    ],
+    "answerLink": {
+     "href": "/ja/product/triaxial-medium-precision-tilt-sensor",
+     "label": "もう一方の三軸モデルと比較"
+    }
+   },
+   {
+    "id": "faq-axes",
+    "question": "三軸傾斜センサーと二軸モデルは、どこが違いますか？",
+    "paragraphs": [
+     "三軸モデルはX/Y/Zのセンシングを使用します。それらの検知軸を送信角度チャネルへどう変換するか、基準方向をどう表すかは、納入プロトコルで定義されます。",
+     "監視計画で必要な出力と取付方向に合わせて選定してください。検知軸が3本あることだけで、独立した3つの姿勢角や完全な3D運動測定が成立するわけではありません。"
+    ],
+    "answerLink": {
+     "href": "#specifications",
+     "label": "角度出力の定義を確認"
+    }
+   },
+   {
+    "id": "faq-yaw",
+    "question": "三軸センシングでヨー角や方位角を測定できますか？",
+    "paragraphs": [
+     "重力基準の傾斜だけでは、重力方向を軸とする回転であるヨー角を独立して求めることはできません。X/Y/Zは検知軸を示す表記であり、コンパス方位の測定を意味しません。",
+     "方位や他の運動量が必要な用途では、その要件を明示してください。選定前に、必要なセンシング構成を確認します。"
+    ],
+    "answerLink": {
+     "href": "#enquiry",
+     "label": "必要な出力について相談"
+    }
+   },
+   {
+    "id": "faq-mounting",
+    "question": "信頼できる設置基準は、どのように設定しますか？",
+    "paragraphs": [
+     "傾斜を監視する部材にセンサーを強固に固定します。固定後に、機器ID、設備位置、ブラケット位置、軸方向、初期角度を記録します。",
+     "後の測定値と併せて、この基準を保管してください。機器の移設、ブラケットの変更、測定部材の変更後は、基準を再設定します。基準値は比較を可能にしますが、公称精度を改善するものではありません。"
+    ],
+    "answerLink": {
+     "href": "#overview",
+     "label": "測定の進め方を確認"
+    }
+   },
+   {
+    "id": "faq-example",
+    "question": "画面に示された角度変化の例は、何を表していますか？",
+    "paragraphs": [
+     "設置時の0.03°と、その後の0.05°を比較した例です。送信される1つの傾斜チャネルで+0.02°の変化を示します。基準値との比較を説明するもので、三軸ベクトルや完全な3D姿勢を示すものではありません。",
+     "この例の値は、範囲、分解能、最小検出変化量、通知閾値を定義しません。実際の取付点と適用する測定性能に合わせて確認条件を設定してください。"
+    ],
+    "answerLink": {
+     "href": "#overview",
+     "label": "測定値の例を確認"
+    }
+   },
+   {
+    "id": "faq-reporting",
+    "question": "測定間隔と定期送信間隔は、どれくらいですか？",
+    "paragraphs": [
+     "基準動作条件では、1分間隔で測定し、4時間ごとに定期送信します。定期送信の間の測定回数は240回で、1日は6つの定期送信間隔に相当します。",
+     "測定頻度と送信頻度は異なります。1回の送信に含まれるサンプルまたは値、ローカル保持の有無、対応するイベント送信・通知の動作を、選択する構成について確認してください。"
+    ],
+    "answerLink": {
+     "href": "#operating-profile",
+     "label": "動作条件を確認"
+    }
+   },
+   {
+    "id": "faq-battery",
+    "question": "電池寿命10年は、どのような条件での数値ですか？",
+    "paragraphs": [
+     "仕様書の10年という基準は、1分間隔の測定、4時間ごとの送信、25°C、電波状態が正常な条件での数値です。電池容量は19000 mAhで、38000 mAhのオプションがあります。",
+     "実際の使用可能期間は、有効にした機能、イベントの発生頻度、無線通信の再試行回数により変わります。設置条件と動作条件に合わせて電源構成を選定してください。"
+    ],
+    "answerLink": {
+     "href": "#operating-profile",
+     "label": "基準条件を確認"
+    }
+   },
+   {
+    "id": "faq-environment",
+    "question": "筐体と使用環境の仕様は、どのようになっていますか？",
+    "paragraphs": [
+     "筐体の選択肢はIP68の金属筐体、またはIP66の樹脂筐体です。動作・保管温度は−40°C～+85°C、動作湿度は5%～95% RHで、結露しない条件です。",
+     "実際の暴露環境と作業アクセス条件に合わせ、筐体、アンテナ、取付キットを選定します。115 × 90 × 60 mmはプラットフォーム本体の参考寸法です。施工図を作成する際は、選択した構成の寸法を確認してください。"
+    ],
+    "answerLink": {
+     "href": "#specifications",
+     "label": "保護等級と取付を確認"
+    }
+   },
+   {
+    "id": "faq-connectivity",
+    "question": "4G LTE、NB-IoT、LoRaを選択できますか？",
+    "paragraphs": [
+     "仕様書にはLTE Cat.1 (4G)が記載されており、NB-IoTとLoRaはバリエーションに応じて選択します。設置国、地域の周波数帯、通信事業者または対応受信機、必要なデータ接続経路に合わせて構成を選定してください。",
+     "LoRaは無線方式の選択肢を示します。LoRaWANが必要な場合は、プロトコルの互換性を個別に確認する必要があります。発注前に、納入機器、ゲートウェイ、プラットフォームの組合せを確認してください。"
+    ],
+    "answerLink": {
+     "href": "#integration",
+     "label": "通信接続を計画"
+    }
+   },
+   {
+    "id": "faq-platform",
+    "question": "測定値を既存のプラットフォームへ送信できますか？",
+    "paragraphs": [
+     "対応するデータインターフェースにより、Hitelecom Cloudまたは互換性のあるお客様のプラットフォームを使用できます。プロジェクトの検討時に、インターフェース、認証、設備データの要件をご提示ください。",
+     "機器、取付点、チャネル名、軸定義、角度単位、タイムスタンプ、基準値を識別できるサンプルメッセージを確認します。選定した機器構成で、データ経路全体を試験してください。"
+    ],
+    "answerLink": {
+     "href": "#integration",
+     "label": "データ受渡しを確認"
+    }
+   },
+   {
+    "id": "faq-nfc-ota",
+    "question": "NFCと遠隔ファームウェア更新は、何に使いますか？",
+    "paragraphs": [
+     "NFCによる起動とローカル設定は、設置と初期調整に使用します。監視運用を開始する前に、最終設定と設置基準を記録してください。",
+     "遠隔ファームウェア更新は、対応バージョンで利用できます。プラットフォームと更新手順を含めて、利用可否と納入機器の構成を確認してください。"
+    ],
+    "answerLink": {
+     "href": "#enquiry",
+     "label": "初期設定の要件について相談"
+    }
+   },
+   {
+    "id": "faq-applications",
+    "question": "同じ三軸モデルをラック、構造物、ポール、機械架台に使えますか？",
+    "paragraphs": [
+     "H310-TS380Cは、精度±0.01°、納入機器の角度出力、設置条件が監視計画に合う場合に、これらの取付点用途ごとに適用を検討できます。用途セクションでは、倉庫ラックを最初に、9分野の監視用途を紹介しています。",
+     "ラックでは支柱と固定点を特定し、インフラでは担当技術者と監視部材を定義します。機械架台の傾斜は、静止時または停止後の姿勢を対象とします。1分間隔の傾斜測定は、動的振動、高速運動、機械の芯出し性能を規定するものではありません。"
+    ],
+    "answerLink": {
+     "href": "#applications",
+     "label": "監視用途を見る"
+    }
+   },
+   {
+    "id": "faq-project",
+    "question": "見積りやOEMの相談には、どのような情報が必要ですか？",
+    "paragraphs": [
+     "H310-TS380C、設置国、数量、用途、導入予定日をお知らせください。現場写真または図面、取付方向、各軸の必要範囲、確認したい角度変化、想定環境をご提示ください。",
+     "通信方式、プラットフォーム接続、送信・イベント対応要件、サンプル受入基準、OEM・ホワイトラベルの要望もご記入ください。H200/H300/H500プラットフォームはCE取得済みですが、納入構成への証明書の適用可否と、その他必要な適合資料を確認します。"
+    ],
+    "answerLink": {
+     "href": "#enquiry",
+     "label": "プロジェクト概要を作成"
+    }
+   }
+  ],
+  "enquiry": {
+   "kicker": "導入についてご相談ください",
+   "title": "次の一歩に。用途に合うセンサーを。",
+   "intro": "H310-TS380Cの用途をお知らせください。監視計画に合わせて、精度、送信する軸、取付方法、データ接続を検討します。",
+   "email": "sales@hitelecom.cn"
+  },
+  "evidence": {
+   "confirmedFacts": [
+    {
+     "source": "User-supplied H310-TS380C Triaxial Tilt Sensor Datasheet, 2026-10-27",
+     "model": "H310-TS380C",
+     "accuracy": "±0.01°",
+     "sensingAxes": "X/Y/Z",
+     "acquisition": "1 minute",
+     "scheduledReporting": "4 hours",
+     "batteryReference": "10 years at 25°C and normal signal with 1-minute acquisition and 4-hour reporting",
+     "enclosure": "Metal IP68 / plastic IP66",
+     "temperature": "−40°C to +85°C"
+    }
+   ],
+   "scope": "Range, resolution, angle convention, protocol and applicability of compliance references follow the supplied configuration. No independent yaw / heading, dynamic motion, immediate-event latency or structural diagnosis performance is inferred."
+  }
+ },
+ "ui": {
+  "bcAria": "パンくずリスト",
+  "bc": [
+   "ホーム",
+   "IoTセンサー",
+   "高精度三軸傾斜センサー"
+  ],
+  "h1": {
+   "main": "三軸傾斜センサー。",
+   "spanA": "高精度。",
+   "spanB": "測定精度±0.01°。"
+  },
+  "heroAlt": "金属筐体とアンテナを備えたHitelecom H310-TS380C高精度三軸傾斜センサー",
+  "heroCaption": "H310-TS380C・高精度・±0.01°",
+  "metrics": [
+   {
+    "value": "±0.01°",
+    "label": "測定精度（高精度）",
+    "note": "H310-TS380C"
+   },
+   {
+    "value": "X/Y/Z",
+    "label": "三軸センシング",
+    "note": "角度出力は納入プロトコルによる"
+   },
+   {
+    "value": "4時間",
+    "label": "定期送信",
+    "note": "1分間隔の測定"
+   }
+  ],
+  "navAria": "このページの内容",
+  "nav": [
+   "概要",
+   "用途",
+   "仕様",
+   "システム連携",
+   "よくあるご質問"
+  ],
+  "navQuote": "見積を依頼 ↗",
+  "featKicker": "主な特長",
+  "featH2a": "現場の監視に",
+  "featH2b": "合わせた設計。",
+  "featLead": "精度±0.01°の三軸傾斜監視、1分間隔の測定、設置場所に適した通信構成。",
+  "ovCta": "用途を探す",
+  "read": {
+   "label": "送信される1つの傾斜チャネル",
+   "sample": "測定値の例",
+   "refLabel": "設置時の基準値",
+   "refVal": "0.03°",
+   "laterLabel": "その後の測定値",
+   "laterVal": "0.05°",
+   "changeLabel": "基準からの変化",
+   "changeVal": "+0.02°",
+   "note": "説明用に、送信される1つの傾斜チャネルを示しています。範囲、分解能、確認閾値は別途指定します。"
+  },
+  "profNoteLabel": "H310-TS380C・基準動作条件",
+  "profNoteStrong": "1分間隔で測定。\n4時間ごとに定期送信。",
+  "sceneMpLabel": "監視点",
+  "scenePbLabel": "設置計画の確認事項",
+  "sceneCta": "この用途について相談",
+  "modelLabel": "モデル参考情報",
+  "configCta": "構成を選択 ↓",
+  "specCaption": "{m} — 三軸傾斜センサー仕様",
+  "handoverCta": "プラットフォーム連携について相談 ↗",
+  "faqCta": "プロジェクトについて質問 ↗",
+  "faqLinkFallback": "詳しく見る",
+  "benefitsTitle": "まずは三つの情報から。",
+  "benefitsText": "用途、設置国、予定数量をお知らせください。現場写真やプラットフォーム要件があれば、メールに添付してください。",
+  "formLabel": "プロジェクトのお問い合わせ",
+  "formTitle": "最適な構成を一緒に検討します。",
+  "formSubtitle": "H310-TS380C・±0.01°・三軸傾斜",
+  "appLabel": "用途",
+  "appChoose": "用途を選択してください",
+  "appOther": "その他 / プロジェクト固有",
+  "countryLabel": "国 / 地域",
+  "countryPh": "例：英国",
+  "qtyLabel": "予定数量",
+  "qtyPh": "例：20",
+  "connLabel": "希望する通信方式",
+  "connAdvise": "提案を希望",
+  "connOptions": [
+   "提案を希望",
+   "4G LTE",
+   "NB-IoT",
+   "LoRa"
+  ],
+  "reqLabel": "何を監視したいですか？",
+  "reqPh": "設備と取付方向、確認したい角度変化、各軸の範囲、国、測定点数、プラットフォーム接続",
+  "submit": "お問い合わせ内容を作成",
+  "submitNote": "内容を確認してから、メールアプリで送信してください。",
+  "summaryLabel": "プロジェクト概要",
+  "openEmail": "メールを開く ↗",
+  "copyBrief": "概要をコピー",
+  "statusReady": "内容をご確認いただけます。",
+  "noscriptPre": "ご相談内容を",
+  "noscriptLink": "直接メールでお送りいただくこともできます",
+  "noscriptPost": "。",
+  "noscriptSubject": "H310-TS380C三軸傾斜センサーの導入相談",
+  "relKicker": "監視プロジェクトの検討を続ける",
+  "relLinks": [
+   {
+    "label": "三軸・中精度 ±0.1° ↗",
+    "href": "/ja/product/triaxial-medium-precision-tilt-sensor"
+   },
+   {
+    "label": "二軸・高精度 ↗",
+    "href": "/ja/product/tilt-sensor"
+   },
+   {
+    "label": "二軸・中精度 ↗",
+    "href": "/ja/product/tilt-medium-precision-sensor"
+   },
+   {
+    "label": "温度監視 ↗",
+    "href": "/ja/product/temperature-sensor"
+   },
+   {
+    "label": "設備・資産トラッキング ↗",
+    "href": "/ja/product/asset-tracking-sensor"
+   }
+  ],
+  "mobileQuote": "プロジェクトについて相談",
+  "js": {
+   "subject": "H310-TS380C ±0.01° 三軸傾斜センサー — 導入相談",
+   "greet": "Hitelecom ご担当者様",
+   "intro": "H310-TS380C三軸傾斜センサー（精度±0.01°）の導入について相談したいと考えています。",
+   "labels": {
+    "Application": "用途",
+    "Country": "国",
+    "Quantity": "数量",
+    "Connectivity": "通信方式",
+    "Requirements": "要件"
+   },
+   "closing": "適したモデル、構成、関連データシート、お見積りについてご提案ください。",
+   "thanks": "よろしくお願いいたします。",
+   "ready": "概要を作成しました。内容を確認し、メールアプリを開いて送信してください。",
+   "copied": "プロジェクト概要をコピーしました。",
+   "selected": "概要を選択しました。端末のコピー操作を使用してください。",
+   "modelPrefix": "希望モデル",
+   "fallback": "提案を希望"
+  },
+  "bcLd": [
+   "ホーム",
+   "IoTセンサー",
+   "高精度三軸傾斜センサー"
+  ],
+  "serKicker": "シリーズ・構成",
+  "schemaGroup": "Hitelecom三軸傾斜センサー・高精度",
+  "schemaProduct": "Hitelecom H310-TS380C ±0.01° 三軸傾斜センサー",
+  "headings": [
+   {
+    "id": "features-title",
+    "html": "監視のかたちに<br><span>合わせた設計。</span>"
+   },
+   {
+    "id": "overview-title",
+    "html": "角度を測る。<br><span>変化を追う。</span>"
+   },
+   {
+    "id": "profile-title",
+    "html": "こまめに測定。<br><span>定期的に送信。</span>"
+   },
+   {
+    "id": "faq-title",
+    "html": "よくある<br>ご質問。"
+   }
+  ],
+  "appOtherValue": "その他 / プロジェクト固有"
+ },
+ "applicationUi": {
+  "kicker": "用途",
+  "titleA": "さまざまな構造物に。",
+  "titleB": "必要な傾斜を、的確に測定。",
+  "intro": "倉庫ラック、インフラ、産業設備、エネルギー設備の傾斜監視用途を紹介します。各項目で、精度±0.01°の三軸モデルの測定部材、取付点、計画時の確認事項を示します。",
+  "categoriesLabel": "つの業種カテゴリ",
+  "tasksLabel": "件の監視用途",
+  "imageNote": "用途イメージは監視環境を示すもので、お客様の設置実績の記録ではありません。",
+  "groupCount": "{count}件の監視用途",
+  "measureLabel": "監視する傾斜",
+  "pointLabel": "監視点",
+  "briefLabel": "設置計画の確認事項",
+  "cta": "この用途について相談",
+  "navAria": "高精度三軸センサーの用途を探す",
+  "listName": "ワイヤレス傾斜センサーの用途"
+ },
+ "groups": [
+  {
+   "number": 1,
+   "groupid": "warehousing",
+   "title": "スマート倉庫",
+   "jumplabelen": "スマート倉庫",
+   "jumplabelzh": "スマート倉庫",
+   "introen": "パレットラック、自動倉庫の高層ラック、移動式システム、中二階について、各測定点を通路、部材、取付基準と対応付けます。",
+   "scenes": [
+    {
+     "id": "warehouse-racking",
+     "baselineId": "tilt-scene-warehouse-racking",
+     "title": "倉庫ラック",
+     "en": "H310-TS380Cで、選定したパレットラック支柱の局所的な傾斜を記録します。精度±0.01°は、指定区画でより細かな角度基準を必要とする計画に適しています。取付方向、荷重状態、ラック識別情報を各記録と併せて管理することで、レイアウト変更、接触の報告、保守後の点検でも同じ構造点を比較できます。",
+     "pointen": "監視計画上のラック位置を代表する、選定した支柱。",
+     "briefen": "ラック配置、支柱寸法、想定荷重条件、必要な点検通知をお知らせください。",
+     "alten": "用途イメージ：倉庫通路に沿って並ぶ、オレンジ色の梁と青い支柱を備えたパレットラック。",
+     "original": true,
+     "originalImgSrc": "./_astro/warehouse-racking.BDyOSe3d_1Y0fiU.webp",
+     "originalImgSrcset": "./_astro/warehouse-racking.BDyOSe3d_1qbzTl.webp 360w, ./_astro/warehouse-racking.BDyOSe3d_2cah6M.webp 720w, ./_astro/warehouse-racking.BDyOSe3d_1Y0fiU.webp 1080w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "warehouse-racking",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "H310-TS380Cで、選定したパレットラック支柱の局所的な傾斜を記録します。",
+     "measureen": "設置基準に対する、選定した倉庫ラック支柱の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Warehouse racking"
+    },
+    {
+     "id": "automated-high-bay-racking",
+     "en": "自動高層倉庫で、技術者が選定した支柱の局所的な傾斜を追跡します。軸定義と設置基準を記録することで、ラック工事、荷重変化、スタッカークレーンの保守を通じてH310-TS380Cの測定値を比較できます。測定点はラック構造に合わせて選定してください。クレーンの芯出し、シャトル位置決め、運転時の必要空間は別の設計・調整事項です。",
+     "pointen": "可動設備の必要空間を妨げない、承認された高層ラック支柱。",
+     "briefen": "ラック高さ、作業アクセス制限、クレーンの必要空間、荷重状態、測定点識別。",
+     "alten": "スタッカークレーン通路に隣接する、倉庫内の高層ラック。",
+     "title": "自動倉庫の高層ラック",
+     "imageId": "automated-high-bay-racking",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "自動高層倉庫で、技術者が選定した支柱の局所的な傾斜を追跡します。",
+     "measureen": "可動設備の必要空間から離れた、承認済み高層ラック支柱の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Automated high-bay racking"
+    },
+    {
+     "id": "cantilever-racking",
+     "title": "片持ちラック",
+     "en": "鋼管、木材、その他の長尺物を支える片持ちラック支柱の角度履歴を記録します。H310-TS380Cの基準値を、支柱、アーム配置、代表的な荷重分布と対応付けます。精度±0.01°が必要な計画において、この局所的な傾斜記録を、荷役時の接触やラック調整後の点検に役立つ情報として使用できます。",
+     "pointen": "収納アームや荷役時の接触を避けた、選定支柱上の剛性のある位置。",
+     "briefen": "支柱と基部の詳細、アームの荷重分布、保管品の長さ、荷役に必要な空間、ラック点検計画をお知らせください。",
+     "alten": "長尺物、支柱、張り出したアーム、床固定基部を備えた片持ち式保管ラック。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "cantilever-racking",
+     "objectiveen": "鋼管、木材、その他の長尺物を支える片持ちラック支柱の角度履歴を記録します。",
+     "measureen": "初期調整時の基準に対する、選定した片持ちラック支柱の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Cantilever racking"
+    },
+    {
+     "id": "drive-in-racking",
+     "title": "ドライブインラック",
+     "en": "ドライブインまたはドライブスルー式のパレットレーン内で、選定した支柱部分を監視します。H310-TS380Cの取付方向を記録し、レーンの積載状態をそろえて設置基準と比較します。車両接触の報告、支持レール工事、構造保守の前後を確認する際に、各点を特定の保管レーンと対応付けた局所角度記録を提供できます。",
+     "pointen": "フォークリフト通路とパレット支持部の必要空間を避けた、承認済みラック支柱位置。",
+     "briefen": "レーン奥行き、ラック配置、支持レール構成、積載順序、荷役に必要な空間、点検責任者をご提示ください。",
+     "alten": "奥行きのある保管レーン、支柱フレーム、水平パレット支持レールを備えたドライブインラック。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "drive-in-racking",
+     "objectiveen": "ドライブインまたはドライブスルー式のパレットレーン内で、選定した支柱部分を監視します。",
+     "measureen": "記録された荷重条件での、選定したドライブインラック支柱の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Drive-in pallet racking"
+    },
+    {
+     "id": "mobile-pallet-racking",
+     "title": "移動式パレットラック",
+     "en": "移動式ラックの選定支柱について、定められた静止位置で傾斜を比較します。台車が停止して安定した後にH310-TS380Cの基準値を使用し、その位置と荷重条件を記録します。ラック保守や水平調整の前後に、より細かな局所角度の比較を行えます。1分間隔の測定は、移動制御や衝突検知の代わりにはなりません。",
+     "pointen": "可動設備から離れた剛性のある支柱点。合意した台車の静止位置で比較します。",
+     "briefen": "移動ベースの設計、停止基準位置、ラック荷重、走行に必要な空間、移動スケジュール、保守アクセスを確認してください。",
+     "alten": "開放された倉庫通路に隣接し、鋼製ベースと床レール上に載る移動式パレットラック。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "mobile-pallet-racking",
+     "objectiveen": "移動式ラックの選定支柱について、定められた静止位置で傾斜を比較します。",
+     "measureen": "合意した停止位置と荷重状態での、選定支柱の静的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Mobile pallet racking"
+    },
+    {
+     "id": "mezzanine-support-columns",
+     "en": "局所的な傾斜値を、倉庫中二階の柱配置に対応付けます。H310-TS380Cは、記録された荷重・保守段階において、承認済みの構造点でより細かな角度記録を提供できます。センサーの軸基準と柱識別情報を併せて保管し、取外し可能な外装材ではなく、同じ支持柱の比較として管理します。",
+     "pointen": "プラットフォームの監視計画で選定した構造柱位置。",
+     "briefen": "柱の配置、プラットフォーム荷重、接合部詳細、配置変更、点検アクセス。",
+     "alten": "工場内で支持柱が見える鋼製の中二階プラットフォーム。",
+     "title": "中二階の支持柱",
+     "imageId": "mezzanine-support-columns",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "局所的な傾斜値を、倉庫中二階の柱配置に対応付けます。",
+     "measureen": "定義した測定方向に沿った、選定した中二階支持柱の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Mezzanine columns"
+    }
+   ]
+  },
+  {
+   "number": 2,
+   "groupid": "poles-towers",
+   "title": "ポール・鉄塔",
+   "jumplabelen": "ポール・鉄塔",
+   "jumplabelzh": "ポール・鉄塔",
+   "introen": "照明、電力、通信、道路設備の支持構造を、設備番号と承認された構造固定点で識別します。",
+   "scenes": [
+    {
+     "id": "street-light-poles",
+     "baselineId": "tilt-scene-street-light-poles",
+     "title": "街路灯ポール",
+     "en": "街路灯ポールの承認された部分で局所的な傾斜を追跡します。H310-TS380Cは、基部工事、ポール保守、車両接触報告の前後に、精度±0.01°で再現性のある角度比較を行う計画に対応します。ポール識別情報と軸方向を保持し、現場の観察や保守記録と併せて変化を確認します。",
+     "pointen": "監視対象として選定したポールまたは構造支持部。",
+     "briefen": "ポール寸法、取付高さ、現地通信カバーエリア、必要な送信スケジュールをご提示ください。",
+     "alten": "用途イメージ：植栽のある都市道路沿いの街路灯ポールとその基部。",
+     "original": true,
+     "originalImgSrc": "./_astro/street-light-poles.R9vec5h5_ZAbRYo.webp",
+     "originalImgSrcset": "./_astro/street-light-poles.R9vec5h5_Vqvnt.webp 360w, ./_astro/street-light-poles.R9vec5h5_ZAbRYo.webp 720w",
+     "originalImgStyle": "object-position:50% 0%",
+     "imageId": "street-light-poles",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "街路灯ポールの承認された部分で局所的な傾斜を追跡します。",
+     "measureen": "記録された設置基準に対する、監視対象ポール部分の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Street light poles"
+    },
+    {
+     "id": "transmission-towers",
+     "baselineId": "tilt-scene-transmission-towers",
+     "title": "送電鉄塔",
+     "en": "記録されたX/Y/Zの検知軸定義を用いて、選定した送電鉄塔部材の局所的な傾斜を追跡します。H310-TS380Cは、取付点で精度±0.01°を必要とする用途に適しています。記録を鉄塔点検、部材工事、基礎観察と関連付けて管理してください。1台の局所センサーで鉄塔全体の変形を表すことはできません。",
+     "pointen": "鉄塔の監視目標に応じて特定した構造部材。",
+     "briefen": "鉄塔部材、取付方法、現場アクセス条件、併用する基礎計測をお知らせください。",
+     "alten": "用途イメージ：腕金、碍子、架空電線を備えた鋼製の送電鉄塔。",
+     "original": true,
+     "originalImgSrc": "./_astro/transmission-towers.Cau2x-kt_25kDh4.webp",
+     "originalImgSrcset": "./_astro/transmission-towers.Cau2x-kt_Z1cahFq.webp 360w, ./_astro/transmission-towers.Cau2x-kt_25kDh4.webp 720w",
+     "originalImgStyle": "object-position:50% 0%",
+     "imageId": "transmission-towers",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "記録されたX/Y/Zの検知軸定義を用いて、選定した送電鉄塔部材の局所的な傾斜を追跡します。",
+     "measureen": "固定した取付点における、選定した送電鉄塔部材の局所的な角度変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Transmission towers"
+    },
+    {
+     "id": "telecom-towers",
+     "baselineId": "tilt-scene-telecom-towers",
+     "title": "通信鉄塔",
+     "en": "設備工事や保守の前後に、定義した通信鉄塔部材の局所的な傾斜を記録します。H310-TS380Cの精度±0.01°は、その点でより細かな角度記録が必要な計画に適しています。アンテナ変更、風の状況、固定方向を記録に併記してください。方位やアンテナの方位角には、別の測定方法が必要です。",
+     "pointen": "選定したマスト部分、鉄塔部材、または構造支持部。",
+     "briefen": "鉄塔配置、監視部材、無線カバーエリア、保守担当者が使用するプラットフォームをお知らせください。",
+     "alten": "用途イメージ：空を背景に、携帯電話用パネルアンテナを備えた通信鉄塔。",
+     "original": true,
+     "originalImgSrc": "./_astro/telecom-towers.BzvCxs4U_Z1qjWTn.webp",
+     "originalImgSrcset": "./_astro/telecom-towers.BzvCxs4U_Ze9zou.webp 360w, ./_astro/telecom-towers.BzvCxs4U_Z1qjWTn.webp 720w",
+     "originalImgStyle": "object-position:50% 0%",
+     "imageId": "telecom-towers",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "設備工事や保守の前後に、定義した通信鉄塔部材の局所的な傾斜を記録します。",
+     "measureen": "選定したマスト部分、鉄塔部材、構造支持部の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Telecom towers"
+    },
+    {
+     "id": "billboard-support-poles",
+     "baselineId": "tilt-scene-billboard-support-poles",
+     "title": "看板支持ポール",
+     "en": "看板の支持ポールについて、同じ承認済み固定点で傾斜を比較します。H310-TS380Cは、支持部保守、表示パネル交換、基部工事の前後に、より細かな局所角度を確認するための精度±0.01°モデルです。風の条件と作業段階を記録し、看板所有者が継続的な変化を正しい構造部材に対応付けられるようにします。",
+     "pointen": "プロジェクト計画で選定した支持ポールまたはフレーム部材。",
+     "briefen": "支持部寸法、取付作業のアクセス、暴露環境、必要な測定・通知スケジュールをご提示ください。",
+     "alten": "用途イメージ：補強材が見える鋼製単柱に支えられた、表示のない道路沿いの看板。",
+     "original": true,
+     "originalImgSrc": "./_astro/billboard-support-poles.BQNiOBJD_Zv2Y5V.webp",
+     "originalImgSrcset": "./_astro/billboard-support-poles.BQNiOBJD_1hC7xj.webp 360w, ./_astro/billboard-support-poles.BQNiOBJD_Zv2Y5V.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "billboard-support-poles",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "看板の支持ポールについて、同じ承認済み固定点で傾斜を比較します。",
+     "measureen": "基準方向に対する、選定した看板ポールまたはフレーム部材の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Billboard support poles"
+    },
+    {
+     "id": "traffic-camera-poles",
+     "en": "選定した道路設備ポールと腕金支持部の局所的な傾斜を追跡します。固定された取付基準により、道路工事、機器保守、接触報告を通じてH310-TS380Cの記録を比較できます。指定がある場合に精度±0.01°モデルを使用し、カメラの調整、機器の指向方向、交通システムの動作は別機能として扱います。",
+     "pointen": "可調機器ブラケットから離れた、承認された剛性のあるポールまたは腕金支持部分。",
+     "briefen": "ポール識別情報、部材と取付高さ、機器配置、アクセス許可、必要な局所角度精度。",
+     "alten": "植栽のある都市道路に沿って並ぶ道路設備ポール。",
+     "title": "道路設備ポール",
+     "imageId": "traffic-camera-poles",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "選定した道路設備ポールと腕金支持部の局所的な傾斜を追跡します。",
+     "measureen": "設置基準に対する、選定した道路ポールまたは固定腕金支持部の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Roadside equipment poles"
+    },
+    {
+     "id": "distribution-utility-poles",
+     "en": "承認された配電柱に明確な設置基準を設け、局所的な傾斜を観測します。事業者が精度±0.01°を指定する場合に、H310-TS380Cでより細かな角度比較を行えます。測定方向、配電線区間、周辺の地盤工事を記録し、後の観測値を柱の状態点検と基礎点検に併せて確認できるようにします。",
+     "pointen": "配電柱の指定された剛性のある部分。",
+     "briefen": "柱の材質と番号、柱上機器の配置、道路沿いの排水条件、事業者のアクセス許可、配電線保守スケジュール。",
+     "alten": "地方道路沿いに並ぶ、腕金付き配電柱。",
+     "title": "配電柱",
+     "imageId": "distribution-utility-poles",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "承認された配電柱に明確な設置基準を設け、局所的な傾斜を観測します。",
+     "measureen": "記録された設置基準に対する、選定した配電柱の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Distribution poles"
+    }
+   ]
+  },
+  {
+   "number": 3,
+   "groupid": "civil-infrastructure",
+   "title": "橋梁・道路・港湾",
+   "jumplabelen": "橋梁・道路・港湾",
+   "jumplabelzh": "橋梁・道路・港湾",
+   "introen": "選定した橋梁、擁壁、港湾構造点の局所的な傾斜を、プロジェクトの技術記録と併せて解釈します。",
+   "scenes": [
+    {
+     "id": "bridge-elements",
+     "baselineId": "tilt-scene-bridge-elements",
+     "title": "橋梁部材",
+     "en": "技術者が選定した橋脚や剛性のある構造部材の局所的な傾斜を追跡します。H310-TS380Cは、合意した局所回転の監視目標と基準条件に対し、精度±0.01°を提供します。測定値は荷重、温度、点検記録と併せて比較してください。変位、橋面のたわみ、構造状態には、それぞれの技術計測と評価が必要です。",
+     "pointen": "橋梁監視計画で特定した橋脚、橋台、または部材。",
+     "briefen": "監視目標、取付位置、使用角度範囲をお知らせください。変位も必要な場合は、測量要件を併記してください。",
+     "alten": "用途イメージ：水面を渡るコンクリート橋。橋脚と背後の緑の丘が見えます。",
+     "original": true,
+     "originalImgSrc": "./_astro/bridge-elements.CUksKjo1_GcUQ7.webp",
+     "originalImgSrcset": "./_astro/bridge-elements.CUksKjo1_2g3YpV.webp 360w, ./_astro/bridge-elements.CUksKjo1_GcUQ7.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "bridge-elements",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "技術者が選定した橋脚や剛性のある構造部材の局所的な傾斜を追跡します。",
+     "measureen": "選定した橋脚、橋台、構造部材の取付点における局所的な角度変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Bridge elements"
+    },
+    {
+     "id": "bridge-abutments",
+     "en": "安定した取付基準を設け、選定した橋台や翼壁の点で傾斜を記録します。H310-TS380Cは、隣接する土工事、排水変更、橋梁保守の前後に、精度±0.01°で局所角度を比較する計画に適しています。各点を技術者の図面および併用する測量観測と対応付けます。",
+     "pointen": "指定された橋台面、または選定した翼壁部分。",
+     "briefen": "橋台・壁の図面、裏込めと排水の配置、近隣工事予定、取付アクセス。",
+     "alten": "取付盛土に隣接するコンクリート製の橋台と翼壁。",
+     "title": "橋台・翼壁",
+     "imageId": "bridge-abutments",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "安定した取付基準を設け、選定した橋台や翼壁の点で傾斜を記録します。",
+     "measureen": "合意した測定方向に沿った、選定した橋台または翼壁表面の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Bridge abutments & wing walls"
+    },
+    {
+     "id": "bridge-deck-rotation",
+     "en": "定義した基準条件で、選定した剛性のある橋面部材の局所姿勢を比較します。H310-TS380Cの精度±0.01°は、交通と温度の状況を記録しながら、技術者が指定する回転測定に使用できます。測定値は取付点の傾斜を示し、橋面のたわみ、変位、完全な動的応答を直接示すものではありません。",
+     "pointen": "監視対象の橋面部材上で指定した剛性のある位置。",
+     "briefen": "橋面部材の図面、回転軸、比較可能な車両荷重条件、観測スケジュール。",
+     "alten": "主桁と横桁が見える橋面構造の下面。",
+     "title": "橋面構造の測定点",
+     "imageId": "bridge-deck-rotation",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "定義した基準条件で、選定した剛性のある橋面部材の局所姿勢を比較します。",
+     "measureen": "比較可能な観測条件における、指定された橋面測定点の局所的な角度変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Bridge-deck structural points"
+    },
+    {
+     "id": "highway-retaining-walls",
+     "en": "道路や盛土に隣接する、選定した擁壁区間の局所的な傾斜を追跡します。H310-TS380Cは、精度±0.01°が指定される場合に、より細かな角度比較を支援します。各センサーを壁の距離標と固定方向に対応付け、排水条件、近隣工事、技術者による広域の地盤監視計画と併せて確認します。",
+     "pointen": "選定した擁壁区間の剛性のある表面。",
+     "briefen": "擁壁形式と区間配置、排水位置、道路沿いのアクセス制限、監視方向。",
+     "alten": "山間道路に隣接し、排水口を備えた道路擁壁。",
+     "title": "道路擁壁",
+     "imageId": "highway-retaining-walls",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "道路や盛土に隣接する、選定した擁壁区間の局所的な傾斜を追跡します。",
+     "measureen": "設置基準に対する、選定した擁壁本体の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Highway retaining walls"
+    },
+    {
+     "id": "quay-wall-rotation",
+     "en": "承認された岸壁構造点に局所傾斜の基準を設けます。H310-TS380Cは、荷重、潮汐、保守の条件を記録しながら、指定された精度±0.01°の測定に対応します。各測定値を岸壁区間と取付方向に対応付け、港湾測量や港の点検情報と併せて確認できるようにします。",
+     "pointen": "作業側からアクセスできる、選定した剛性のある岸壁部材。",
+     "briefen": "岸壁形式、潮汐への暴露、運用荷重条件、腐食対策と取付要件。",
+     "alten": "稼働中の港にあるコンクリート岸壁とエプロン。",
+     "title": "岸壁",
+     "imageId": "quay-wall-rotation",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "承認された岸壁構造点に局所傾斜の基準を設けます。",
+     "measureen": "記録された取付点における、選定した岸壁区間の局所的な角度変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Quay walls"
+    },
+    {
+     "id": "jetty-pile-supports",
+     "en": "選定した桟橋杭頭や剛性のある支持部材の局所的な傾斜を監視します。H310-TS380Cの精度±0.01°は、それらの点でより細かな角度比較を必要とする設計に適しています。潮汐、荷重、基準状態を記録し、実際の海洋暴露環境に合わせて筐体と取付方法を選定してください。",
+     "pointen": "指定された固定杭、柱、または支持部材。",
+     "briefen": "支持部材の形状、潮汐に応じた作業時間帯、船舶作業期間、海洋暴露条件。",
+     "alten": "海岸の桟橋を支える固定杭と梁。",
+     "title": "桟橋支持部",
+     "imageId": "jetty-pile-supports",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "選定した桟橋杭頭や剛性のある支持部材の局所的な傾斜を監視します。",
+     "measureen": "基準方向に対する、選定した固定桟橋支持部材の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Jetty supports"
+    }
+   ]
+  },
+  {
+   "number": 4,
+   "groupid": "rail-tunnel-metro",
+   "title": "鉄道・トンネル",
+   "jumplabelen": "鉄道・トンネル",
+   "jumplabelzh": "鉄道・トンネル",
+   "introen": "鉄道、地下鉄、トンネル沿線の事業者承認済み固定構造を対象に、距離標と設置基準を保持します。",
+   "scenes": [
+    {
+     "id": "railway-infrastructure",
+     "baselineId": "tilt-scene-railway-infrastructure",
+     "title": "鉄道インフラ",
+     "en": "鉄道沿いの擁壁、支持部材、その他技術者が定義した固定構造の局所的な傾斜を追跡します。H310-TS380Cは、選定した局所角度目標に対して精度±0.01°を提供します。路線基準、取付方向、作業段階の記録を保持してください。レール形状、軌道の通り、列車による振動は別の測定事項です。",
+     "pointen": "擁壁、架線支持部、固定部材上の承認済み測定点。",
+     "briefen": "現場アクセス計画、運用条件、通信経路、必要な通知時間をお知らせください。",
+     "alten": "用途イメージ：レール、架線支持部、擁壁を備えた電化鉄道の線路区間。",
+     "original": true,
+     "originalImgSrc": "./_astro/railway-infrastructure.CkDwEvLs_Z1rdhhy.webp",
+     "originalImgSrcset": "./_astro/railway-infrastructure.CkDwEvLs_fpsNM.webp 360w, ./_astro/railway-infrastructure.CkDwEvLs_Z1rdhhy.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "railway-infrastructure",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "鉄道沿いの擁壁、支持部材、その他技術者が定義した固定構造の局所的な傾斜を追跡します。",
+     "measureen": "承認された擁壁、架線支持部、鉄道固定部材の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Railway infrastructure"
+    },
+    {
+     "id": "tunnel-monitoring",
+     "baselineId": "tilt-scene-tunnel-monitoring",
+     "title": "トンネル監視",
+     "en": "承認されたトンネル覆工セグメントや剛性のある内部支持点で傾斜を記録します。H310-TS380Cは、定義した監視計画の中で、精度±0.01°の測定目標を支援できます。距離標、セグメント識別情報、軸定義を基準値と併せて保持します。内空変位、変位量、トンネル全体の応答が必要な場合は、測量または追加計器を使用してください。",
+     "pointen": "選定した覆工セグメント、構造支持部、または承認済み取付点。",
+     "briefen": "トンネル断面、監視位置、地下の通信経路、別途必要な内空変位計測の要件をご提示ください。",
+     "alten": "用途イメージ：継目と保守歩道が見えるコンクリート製セグメント覆工のトンネル。",
+     "original": true,
+     "originalImgSrc": "./_astro/tunnel-monitoring.BVzu1kSc_ztBY0.webp",
+     "originalImgSrcset": "./_astro/tunnel-monitoring.BVzu1kSc_Zbu4dr.webp 360w, ./_astro/tunnel-monitoring.BVzu1kSc_ztBY0.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "tunnel-monitoring",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "承認されたトンネル覆工セグメントや剛性のある内部支持点で傾斜を記録します。",
+     "measureen": "選定したトンネル覆工セグメントまたは構造支持部の局所的な角度変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Tunnel monitoring"
+    },
+    {
+     "id": "metro-and-subway-structures",
+     "baselineId": "tilt-scene-metro-and-subway-structures",
+     "title": "地下鉄構造物",
+     "en": "選定した地下鉄駅の柱、トンネル部材、その他の固定構造点で局所的な傾斜を比較します。H310-TS380Cは、基準値と軸方向を記録し、合意した精度±0.01°の測定を行う用途に対応します。記録を作業期間と点検結果に関連付けてください。列車運行や動的な軌道測定は、事業者の別システムで実施します。",
+     "pointen": "監視設計で選定した駅柱、トンネル部材、または擁壁構造。",
+     "briefen": "作業段階、許可される作業時間、取付制約、地下センサーからプラットフォームへの接続経路をお知らせください。",
+     "alten": "用途イメージ：地下鉄駅の柱、天井梁、ホームドア。",
+     "original": true,
+     "originalImgSrc": "./_astro/metro-subway-structures.uev_yfTa_Z1QKCWh.webp",
+     "originalImgSrcset": "./_astro/metro-subway-structures.uev_yfTa_Z45wj2.webp 360w, ./_astro/metro-subway-structures.uev_yfTa_Z1QKCWh.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "metro-and-subway-structures",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "選定した地下鉄駅の柱、トンネル部材、その他の固定構造点で局所的な傾斜を比較します。",
+     "measureen": "監視対象の駅柱、トンネル部材、擁壁構造の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Metro and subway structures"
+    },
+    {
+     "id": "catenary-support-masts",
+     "en": "鉄道架線柱の承認された剛性部分で、局所的な傾斜を追跡します。H310-TS380Cは、架線柱の基準測定に精度±0.01°が指定される場合に適しています。取付高さと方向を保守記録に併記してください。トロリー線の幾何形状、張力、電気的離隔には、鉄道事業者の専用手法が必要です。",
+     "pointen": "事業者が承認した位置と方向で架線柱に固定。",
+     "briefen": "柱形式、設備識別情報、承認済み取付範囲、電気的離隔、保守アクセス。",
+     "alten": "鉄道の架線支持柱、基部、架空トロリー線。",
+     "title": "架線柱",
+     "imageId": "catenary-support-masts",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "鉄道架線柱の承認された剛性部分で、局所的な傾斜を追跡します。",
+     "measureen": "定義した構造取付点における、選定した架線柱の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Catenary masts"
+    },
+    {
+     "id": "track-support-slab-rotation",
+     "en": "技術者が選定した軌道支持スラブまたは固定基礎の局所的な傾斜を記録します。H310-TS380Cの精度±0.01°は、合意した基準状態で、定義された回転の比較に使用できます。センサーをスラブと路線距離標に対応付けてください。軌間、通り、変位、動的荷重の測定は、それぞれの専用測量システムで扱います。",
+     "pointen": "承認されたスラブまたは基礎部材位置に、設計された固定方法で取付。",
+     "briefen": "スラブ形式、測定軸、基準条件、固定設計、事業者の承認。",
+     "alten": "コンクリート支持スラブとレール締結部を備えたバラストレス軌道。",
+     "title": "軌道支持スラブ",
+     "imageId": "track-support-slab-rotation",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "技術者が選定した軌道支持スラブまたは固定基礎の局所的な傾斜を記録します。",
+     "measureen": "比較可能な観測条件における、選定した軌道支持スラブの緩やかな局所回転。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Track-support slabs"
+    },
+    {
+     "id": "tunnel-portal-supports",
+     "en": "選定したトンネル坑口やアプローチ支持部材の局所的な傾斜を追跡します。記録されたH310-TS380Cの基準値を用い、施工、保守、近隣の法面工事を通じて、精度±0.01°が必要な細かな角度比較を行えます。構造点と作業段階を特定し、排水、地質、測量の観測と併せて確認します。",
+     "pointen": "指定された坑口壁または構造支持部材に固定。",
+     "briefen": "坑口構成、支持段階、監視部材、作業順序、設置アクセス。",
+     "alten": "コンクリート坑口壁と設計された支持構造を備えたトンネル坑口。",
+     "title": "トンネル坑口",
+     "imageId": "tunnel-portal-supports",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "選定したトンネル坑口やアプローチ支持部材の局所的な傾斜を追跡します。",
+     "measureen": "選定したトンネル坑口壁または設計された支持部材の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Tunnel portals"
+    }
+   ]
+  },
+  {
+   "number": 5,
+   "groupid": "slopes-dams-embankments",
+   "title": "法面・ダム・堤防",
+   "jumplabelen": "法面・ダム・堤防",
+   "jumplabelzh": "法面・ダム・堤防",
+   "introen": "法面、堤防、ダム、擁壁の技術計画に基づき、剛性のある被覆・支持部材を選定します。",
+   "scenes": [
+    {
+     "id": "slopes-and-embankments",
+     "baselineId": "tilt-scene-slopes-and-embankments",
+     "title": "法面・盛土",
+     "en": "地盤技術担当者が選定した法面被覆や擁壁部材で傾斜を観測します。H310-TS380Cは、剛性のある取付点で、指定された精度±0.01°の測定に対応します。降雨、排水、作業段階の情報を記録してください。表面角度の履歴は、測量、地中計測、地盤移動計測を含む監視計画の一部として扱います。",
+     "pointen": "監視設計者が選定した表面部材または擁壁構造。",
+     "briefen": "法面配置、表面の固定方法、現場の暴露環境、地盤移動に関する全体監視計画をご提示ください。",
+     "alten": "用途イメージ：補強格子、植生、排水路を備えた切土法面。",
+     "original": true,
+     "originalImgSrc": "./_astro/slopes-embankments.CWSOfAhb_20AjIh.webp",
+     "originalImgSrcset": "./_astro/slopes-embankments.CWSOfAhb_Z1wXpHM.webp 360w, ./_astro/slopes-embankments.CWSOfAhb_20AjIh.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "engineered-cut-slopes",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "地盤技術担当者が選定した法面被覆や擁壁部材で傾斜を観測します。",
+     "measureen": "選定した表面監視部材または擁壁構造の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Slopes and embankments"
+    },
+    {
+     "id": "sea-dikes-dams-and-reservoir-slopes",
+     "baselineId": "tilt-scene-sea-dikes-dams-and-reservoir-slopes",
+     "title": "海岸堤防・ダム・貯水池法面",
+     "en": "承認された海岸堤防の被覆部材や貯水池側の構造部材で、局所的な傾斜を追跡します。H310-TS380Cは、精度±0.01°が指定される場合に、より細かな基準比較を支援できます。各点を水位、荷重、点検段階に関連付けてください。水文条件と地盤変位は、全体の技術監視計画の中で扱います。",
+     "pointen": "定義した表面構造、被覆部材、または擁壁部材。",
+     "briefen": "取付位置、飛沫・浸水への暴露、点検アクセス、測定と送信の動作条件をお知らせください。",
+     "alten": "用途イメージ：捨石斜面、堤頂道路、隣接する貯水池を備えたフィルダム。",
+     "original": true,
+     "originalImgSrc": "./_astro/dams-reservoir-slopes.Z_WZat2Z_Z26rv97.webp",
+     "originalImgSrcset": "./_astro/dams-reservoir-slopes.Z_WZat2Z_1y43SQ.webp 360w, ./_astro/dams-reservoir-slopes.Z_WZat2Z_Z26rv97.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "sea-dike-facing-elements",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "承認された海岸堤防の被覆部材や貯水池側の構造部材で、局所的な傾斜を追跡します。",
+     "measureen": "指定された表面構造、被覆部材、擁壁部材の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Sea dikes, dams and reservoir slopes"
+    },
+    {
+     "id": "earth-retaining-structures",
+     "en": "指定した擁壁パネルや構造部材の局所的な傾斜を記録します。H310-TS380Cの精度±0.01°は、保持する荷重の変化や隣接工事の前後に、より細かな角度基準が必要な計画に適しています。センサー点を、技術者の擁壁断面と併用する測量・地盤監視データに対応付けて管理します。",
+     "pointen": "指定した方向で、選定した擁壁本体に固定。",
+     "briefen": "擁壁形式、保持高さ、近隣荷重、施工順序、取付面。",
+     "alten": "盛土または産業用プラットフォームを支持するコンクリート擁壁。",
+     "title": "擁壁",
+     "imageId": "earth-retaining-structures",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "指定した擁壁パネルや構造部材の局所的な傾斜を記録します。",
+     "measureen": "選定した盛土または産業用プラットフォーム擁壁区間の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Retaining walls"
+    },
+    {
+     "id": "open-pit-bench-structures",
+     "en": "露天掘り鉱山のベンチにある、設計された擁壁や支持部材の傾斜を追跡します。H310-TS380Cは、地盤技術担当者が選定した点で、精度±0.01°の基準を提供できます。適切な取付と筐体を選び、測定値を掘削段階や現場点検と関連付けてください。センサーの局所角度履歴だけで、法面全体の安定性を判断することはできません。",
+     "pointen": "監視対象に選定した設計済み被覆部材または擁壁部材に取付。",
+     "briefen": "ベンチ配置、監視部材、掘削予定、発破予定、アクセス条件。",
+     "alten": "設計された被覆区間と作業道路を備えた露天掘り鉱山のベンチ。",
+     "title": "露天掘り鉱山の擁壁構造",
+     "imageId": "open-pit-bench-structures",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "露天掘り鉱山のベンチにある、設計された擁壁や支持部材の傾斜を追跡します。",
+     "measureen": "ベンチ上で選定した設計済み被覆・擁壁部材の局所的な角度変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Open-pit retaining structures"
+    },
+    {
+     "id": "concrete-dam-blocks",
+     "en": "コンクリートダムの承認された構造点で、局所的な傾斜を比較します。H310-TS380Cは、水位、温度、基準条件を記録し、精度±0.01°を必要とする技術要件に対応します。測定点の識別情報と納入機器の角度定義を一貫させ、ダムの既存測量・計測計画と併せて確認できるようにします。",
+     "pointen": "測量で定めた方向で、指定ダムブロック表面に直接固定。",
+     "briefen": "ダムブロック識別情報、測定軸、取付標高、点検アクセス、既存監視計画。",
+     "alten": "継目と点検歩道が見えるコンクリートダムのブロック。",
+     "title": "コンクリートダム",
+     "imageId": "concrete-dam-blocks",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "コンクリートダムの承認された構造点で、局所的な傾斜を比較します。",
+     "measureen": "記録された測定軸に沿った、指定ダムブロック表面の局所的な角度変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Concrete dams"
+    },
+    {
+     "id": "reservoir-bank-retaining-structures",
+     "en": "貯水池沿岸で選定した擁壁区間の局所的な傾斜を追跡します。承認された取付点において、精度±0.01°が指定される計画にH310-TS380Cを使用します。基準値を比較する前に、水位条件、排水工事、壁の識別情報を記録し、技術者の測量や地盤観察と併せて確認します。",
+     "pointen": "選定した湖岸擁壁または構造支持部材に固定。",
+     "briefen": "岸の区間、擁壁形式、水位による暴露範囲、湖岸アクセス、保守計画。",
+     "alten": "保守用通路に隣接する貯水池沿岸の擁壁。",
+     "title": "貯水池沿岸の擁壁",
+     "imageId": "reservoir-bank-retaining-structures",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "貯水池沿岸で選定した擁壁区間の局所的な傾斜を追跡します。",
+     "measureen": "選定した湖岸擁壁または設計された支持部材の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Reservoir-bank retaining walls"
+    }
+   ]
+  },
+  {
+   "number": 6,
+   "groupid": "construction-temporary",
+   "title": "建設・仮設工事",
+   "jumplabelen": "建設・仮設工事",
+   "jumplabelzh": "建設・仮設工事",
+   "introen": "建方、載荷、保守の各段階にわたり、識別された構造点とその基準条件を記録します。",
+   "scenes": [
+    {
+     "id": "construction-and-temporary-structures",
+     "baselineId": "tilt-scene-construction-and-temporary-structures",
+     "title": "建設・仮設構造物",
+     "en": "定義した施工段階を通じて、技術者が選定した仮設支持部の局所的な傾斜を記録します。H310-TS380Cの精度±0.01°は、監視設計上、より細かな角度基準が必要な場合に有用です。支持部識別情報、軸定義、載荷段階を保持し、点検および承認済み仮設工事計画と併せて測定値を確認します。",
+     "pointen": "仮設支持部、擁壁構造、隣接設備上の承認済み測定点。",
+     "briefen": "施工順序、センサー移設予定、プロジェクトの通知・点検手順をお知らせください。",
+     "alten": "用途イメージ：施工中のコンクリート床版を支える、仮設鋼製支保工と補強された支持タワー。",
+     "original": true,
+     "originalImgSrc": "./_astro/construction-temporary-structures.CQzqgt59_TM6lt.webp",
+     "originalImgSrcset": "./_astro/construction-temporary-structures.CQzqgt59_1Vy5Nb.webp 360w, ./_astro/construction-temporary-structures.CQzqgt59_TM6lt.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "construction-and-temporary-structures",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "定義した施工段階を通じて、技術者が選定した仮設支持部の局所的な傾斜を記録します。",
+     "measureen": "承認された仮設支持部、擁壁構造、隣接構造部材の局所回転。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Construction and temporary structures"
+    },
+    {
+     "id": "excavation-retaining-walls",
+     "en": "定義した作業段階で、選定した掘削土留め壁の点における局所的な傾斜を追跡します。H310-TS380Cは、監視設計者が指定する場合に精度±0.01°の測定目標に対応します。掘削深さ、支保工の変更、取付方向を記録してください。表面角度の記録は、プロジェクトの測量、沈下、地盤計測の結果と併せて検討します。",
+     "pointen": "土留め壁部材の指定された剛性面。",
+     "briefen": "土留め工法、掘削段階、支保工の施工順序、必要な測定軸。",
+     "alten": "水平支保工を設置した掘削土留め壁。",
+     "title": "掘削土留め壁",
+     "imageId": "excavation-retaining-walls",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "定義した作業段階で、選定した掘削土留め壁の点における局所的な傾斜を追跡します。",
+     "measureen": "指定構造点における、選定した掘削土留め壁区間の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Excavation retaining walls"
+    },
+    {
+     "id": "falsework-support-frames",
+     "en": "承認された支保工・型枠支持部材の局所的な傾斜を比較します。仮設設計で精度±0.01°を選定する場合に、固定したH310-TS380Cの基準値でより細かな角度を確認できます。各点を組立、載荷、解体段階に関連付け、角度記録を支保工点検および担当技術者の手順と併せて保管します。",
+     "pointen": "技術者が選定した支柱、または剛性のある支持フレーム部材。",
+     "briefen": "設計された支保工配置、部材識別、打設・載荷順序、設置に必要な空間。",
+     "alten": "支柱、筋交い、上部支持材を備えた型枠支持フレーム。",
+     "title": "支保工・型枠支持部",
+     "imageId": "falsework-support-frames",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "承認された支保工・型枠支持部材の局所的な傾斜を比較します。",
+     "measureen": "合意したプロジェクト条件における、承認された仮設支持フレーム部材の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Falsework & formwork supports"
+    },
+    {
+     "id": "steel-frame-erection",
+     "en": "建方段階で、選定した鉄骨柱やフレーム部材の局所的な傾斜を追跡します。H310-TS380Cは、部材が安定した後に合意した局所角度を比較するための精度±0.01°モデルです。取付方向、筋交い、接合段階を記録し、形状の設定と最終通り調整にはプロジェクトの測量計器を使用します。",
+     "pointen": "選定した鉄骨柱上の指定された剛性取付面。",
+     "briefen": "柱断面、建方順序、筋交い・接合段階、測量基準計画。",
+     "alten": "ベースプレートと仮設筋交いを備えた、建方済みの鉄骨柱。",
+     "title": "鉄骨柱の建方",
+     "imageId": "steel-frame-erection",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "建方段階で、選定した鉄骨柱やフレーム部材の局所的な傾斜を追跡します。",
+     "measureen": "定義した建方監視方向に沿った、選定した鉄骨柱の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Steel-column erection"
+    },
+    {
+     "id": "adjacent-building-construction",
+     "en": "建設工事に隣接する建物で、技術者が選定した点の局所的な傾斜を記録します。所有者が承認した取付と記録された基準値を使用し、H310-TS380Cで指定の精度±0.01°目標を支援できます。変化を工事段階、温度、点検と関連付け、プロジェクトの沈下・ひび割れ・測量計測と併用します。",
+     "pointen": "選定した構造壁、柱、その他指定された剛性部材。",
+     "briefen": "建物構造と状態、工事までの距離、取付許可、工事前の基準観測期間。",
+     "alten": "工事現場の境界に隣接する既存建築物。",
+     "title": "工事に隣接する建築物",
+     "imageId": "adjacent-building-construction",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "建設工事に隣接する建物で、技術者が選定した点の局所的な傾斜を記録します。",
+     "measureen": "工事に隣接する、承認済み建築物耐力部材の局所的な角度変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Buildings beside construction"
+    },
+    {
+     "id": "modular-site-buildings",
+     "en": "設置後に、モジュール建築や現場建築の選定した構造フレームの局所姿勢を比較します。支持部調整や移設を通じて、より細かな角度確認が必要な計画にH310-TS380Cの精度±0.01°の基準を使用できます。モジュールIDと安定した基準状態を記録し、基礎高さと全体形状は別途測量で設定します。",
+     "pointen": "監視配置で指定した剛性のあるフレーム柱または梁。",
+     "briefen": "モジュール配置、支持・アンカー詳細、移設計画、予定使用期間。",
+     "alten": "フレームと地上支持部が見えるモジュール式現場建築。",
+     "title": "モジュール建築・現場事務所",
+     "imageId": "modular-site-buildings",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "設置後に、モジュール建築や現場建築の選定した構造フレームの局所姿勢を比較します。",
+     "measureen": "選定したモジュール建築のベースフレームまたは固定構造支持部の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Modular & site buildings"
+    }
+   ]
+  },
+  {
+   "number": 7,
+   "groupid": "heritage-environment",
+   "title": "文化財・建築物・樹木",
+   "jumplabelen": "文化財・建築物・樹木",
+   "jumplabelzh": "文化財・建築物・樹木",
+   "introen": "建築物、歴史的部材、樹木について、保存担当者または樹木の専門家が承認した測定点を対象とします。",
+   "scenes": [
+    {
+     "id": "heritage-buildings-and-ancient-pagodas",
+     "baselineId": "tilt-scene-heritage-buildings-and-ancient-pagodas",
+     "title": "歴史的建造物・古塔",
+     "en": "歴史的建造物や塔の、保存上承認された構造点で局所的な傾斜を追跡します。H310-TS380Cの精度±0.01°は、保存計画で必要とされる場合に、より細かな角度基準を提供します。合意した適切な固定方法を使用し、部材識別情報、軸定義、補修等の履歴を測定値と併せて保持します。",
+     "pointen": "保存担当者と合意した構造部材および固定位置。",
+     "briefen": "承認された取付方法、表面の制約、作業アクセス、予定監視期間をご提示ください。",
+     "alten": "用途イメージ：成木と整備された敷地に囲まれた伝統的な塔。",
+     "original": true,
+     "originalImgSrc": "./_astro/heritage-pagodas.pqYFtuAX_Z2gAn4n.webp",
+     "originalImgSrcset": "./_astro/heritage-pagodas.pqYFtuAX_E2fQx.webp 360w, ./_astro/heritage-pagodas.pqYFtuAX_Z2gAn4n.webp 720w",
+     "originalImgStyle": "object-position:50% 20%",
+     "imageId": "heritage-buildings-and-ancient-pagodas",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "歴史的建造物や塔の、保存上承認された構造点で局所的な傾斜を追跡します。",
+     "measureen": "承認された取付位置での、合意した文化財構造部材の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Heritage buildings and ancient pagodas"
+    },
+    {
+     "id": "structurally-distressed-buildings",
+     "baselineId": "tilt-scene-structurally-distressed-buildings",
+     "title": "既存建物・補修工事",
+     "en": "調査や補修中の既存建物で、技術者が承認した点の局所的な傾斜を記録します。H310-TS380Cは、安定した基準値と補修等の作業記録を用い、定義した角度測定に対して精度±0.01°を提供します。測定値は測量と点検に併せて解釈してください。構造状態の診断や使用許可を示すものではありません。",
+     "pointen": "技術者が選定した耐力壁、柱、またはその他の構造部材。",
+     "briefen": "現場アクセス計画、承認された監視点、必要な通知時間、技術的確認手順をご提示ください。",
+     "alten": "用途イメージ：外壁のひび割れ、仮設支持部、外周柵が見える老朽化した組積造建物。構造評価中の建物を表しています。",
+     "original": true,
+     "originalImgSrc": "./_astro/structurally-distressed-buildings.tXfS0OTi_Z15QLJ9.webp",
+     "originalImgSrcset": "./_astro/structurally-distressed-buildings.tXfS0OTi_Z45Mhr.webp 360w, ./_astro/structurally-distressed-buildings.tXfS0OTi_Z15QLJ9.webp 720w",
+     "originalImgStyle": "object-position:50% 50%",
+     "imageId": "structurally-distressed-buildings",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "調査や補修中の既存建物で、技術者が承認した点の局所的な傾斜を記録します。",
+     "measureen": "技術者が選定した耐力壁、柱、構造部材の局所的な角度変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Existing buildings & repair works"
+    },
+    {
+     "id": "urban-trees",
+     "baselineId": "tilt-scene-urban-trees",
+     "title": "都市樹木",
+     "en": "樹木の専門家が承認した取付方法で、選定した幹部分の局所的な傾斜を追跡します。H310-TS380Cは、有用な場合に精度±0.01°の基準を提供し、幹の測定点とセンサー方向を記録します。天候、地盤、点検観察と併せて確認してください。局所的な傾斜だけで、根の状態や倒木リスクを判断することはできません。",
+     "pointen": "樹木の専門家が選定した幹部分。承認された樹木を傷めない固定具を使用し、監視期間中継続して点検します。",
+     "briefen": "樹木識別情報、取付方法、成長に伴う点検要件、比較に使用する環境条件をお知らせください。",
+     "alten": "用途イメージ：舗装された公園園路に隣接する、幹と根元が見える成木。",
+     "original": true,
+     "originalImgSrc": "./_astro/urban-trees.CTg_5Q_R_Z1Exwhe.webp",
+     "originalImgSrcset": "./_astro/urban-trees.CTg_5Q_R_Z1fHjOz.webp 360w, ./_astro/urban-trees.CTg_5Q_R_Z1Exwhe.webp 720w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "urban-trees",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "樹木の専門家が承認した取付方法で、選定した幹部分の局所的な傾斜を追跡します。",
+     "measureen": "記録された取付位置と測定方向での、幹の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Urban trees"
+    },
+    {
+     "id": "historic-masonry-walls",
+     "en": "歴史的な組積造壁の、保存上承認された点で局所的な傾斜を比較します。壁区間と適切な固定方法を記録し、H310-TS380Cで指定された精度±0.01°の計画を支援します。測定値を天候、排水、補修等の記録に関連付け、組積造の点検および別途行う測量・ひび割れ計測と併せて確認します。",
+     "pointen": "保存上承認された固定位置にある、定義した壁区間。",
+     "briefen": "壁の構造と表面状態、ひび割れ調査、排水状況、許可された固定方法、保存上のアクセス制限。",
+     "alten": "れんが積みと連続した壁面形状が見える歴史的な組積造壁。",
+     "title": "歴史的な組積造壁",
+     "imageId": "historic-masonry-walls",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "歴史的な組積造壁の、保存上承認された点で局所的な傾斜を比較します。",
+     "measureen": "保存上承認された取付点での、選定した組積造壁面の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Historic masonry walls"
+    },
+    {
+     "id": "historic-timber-frames",
+     "en": "保存上承認された固定方法で、選定した歴史的木造架構部材の局所的な傾斜を追跡します。H310-TS380Cの精度±0.01°は、保守・環境条件を記録しながら、より細かな角度比較を支援できます。部材IDと取付基準を保持し、接合部、支持部、周囲の建築部材の点検と併せて測定値を確認します。",
+     "pointen": "承認された固定点にある、選定した木造柱または梁。",
+     "briefen": "木部材の識別情報、接合部と架構の調査、表面保護規定、承認された固定方法、補修順序。",
+     "alten": "伝統的な建物内部にある、歴史的な木造柱と梁の接合部。",
+     "title": "歴史的な木造架構",
+     "imageId": "historic-timber-frames",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "保存上承認された固定方法で、選定した歴史的木造架構部材の局所的な傾斜を追跡します。",
+     "measureen": "承認された固定位置での、選定した木造柱または構造部材の局所的な角度変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Historic timber frames"
+    },
+    {
+     "id": "veteran-heritage-trees",
+     "en": "樹木の専門家が選定した古木・保存樹木の部分で、局所的な傾斜を観測します。H310-TS380Cは、精度±0.01°が指定される場合に、より細かな基準を提供します。適切な取付を監視期間中に点検してください。1系列の角度を樹木の安定性評価とみなさず、地盤工事、天候、樹木点検と記録を関連付けます。",
+     "pointen": "樹木の専門家が選定した幹部分。承認された樹木を傷めない固定具を使用し、監視期間中継続して点検します。",
+     "briefen": "樹木の識別と保護要件、専門家承認の取付方法、幹の成長余裕、保存記録、外部の気象観測。",
+     "alten": "幹、根元、保存環境が見える古木。",
+     "title": "古木・保存樹木",
+     "imageId": "veteran-heritage-trees",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "樹木の専門家が選定した古木・保存樹木の部分で、局所的な傾斜を観測します。",
+     "measureen": "承認された取付位置での、幹の局所的な傾斜。樹木の成長に応じて点検します。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Veteran & heritage trees"
+    }
+   ]
+  },
+  {
+   "number": 8,
+   "groupid": "industrial-equipment",
+   "title": "産業設備",
+   "jumplabelen": "産業設備",
+   "jumplabelzh": "産業設備",
+   "introen": "剛性のある設備架台・支持構造を、定義した静止状態または再現可能な運転状態で比較します。",
+   "scenes": [
+    {
+     "id": "large-equipment-and-injection-moulding-machines",
+     "baselineId": "tilt-scene-large-equipment-and-injection-moulding-machines",
+     "title": "大型設備・射出成形機",
+     "en": "合意した静止状態で、選定した射出成形機ベースや大型設備架台の傾斜を記録します。H310-TS380Cの精度±0.01°は、移設、支持部調整、基礎工事の前後に、より細かな角度基準を提供します。同じ機械状態を比較してください。精密な水平出し、動的振動、生産制御には、それぞれ専用の方法が必要です。",
+     "pointen": "必要な方向を代表する、機械ベースまたは架台上の剛性点。",
+     "briefen": "水平調整の要件、現場温度、運転振動、測定値を比較する条件を指定してください。",
+     "alten": "用途イメージ：明るい工場生産棟内の射出成形機。",
+     "original": true,
+     "originalImgSrc": "./_astro/industrial-moulding-machine.wvUNg-QX_Z5PjR8.webp",
+     "originalImgSrcset": "./_astro/industrial-moulding-machine.wvUNg-QX_Z2jx4e1.webp 360w, ./_astro/industrial-moulding-machine.wvUNg-QX_Z9eo0w.webp 720w, ./_astro/industrial-moulding-machine.wvUNg-QX_Z5PjR8.webp 1080w",
+     "originalImgStyle": "object-position:50% 48%",
+     "imageId": "large-equipment-and-injection-moulding-machines",
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "合意した静止状態で、選定した射出成形機ベースや大型設備架台の傾斜を記録します。",
+     "measureen": "比較可能な静止条件での、選定した機械ベースまたは架台の静的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Large equipment and injection-moulding machines"
+    },
+    {
+     "id": "heavy-machine-tool-bases",
+     "en": "合意した静止条件に達した後、剛性のある工作機械ベースの傾斜を追跡します。H310-TS380Cは、保守・基礎比較のための精度±0.01°の基準を支援できます。軸定義と機械構成を記録し、最終水平調整、主軸の幾何精度、加工精度の受入確認には、製造者指定の計測手順を使用します。",
+     "pointen": "選定方向を代表する、製造者が承認した剛性のあるベース位置。",
+     "briefen": "機械形式、台車位置、荷重配置、熱状態、基準確認。",
+     "alten": "構造ベースと工場床が見える大型門型工作機械。",
+     "title": "大型工作機械のベース",
+     "imageId": "heavy-machine-tool-bases",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "合意した静止条件に達した後、剛性のある工作機械ベースの傾斜を追跡します。",
+     "measureen": "台車位置、荷重、熱状態をそろえた、承認済み工作機械ベースの静的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Heavy machine-tool bases"
+    },
+    {
+     "id": "fixed-production-line-frames",
+     "en": "承認された固定生産ライン架台や静止治具支持部の局所的な傾斜を比較します。荷重と設定条件を記録し、精度±0.01°が指定される場合にH310-TS380Cでより細かな角度基準を提供します。可調ワーク保持治具は合意した静止設定で比較してください。1分間隔の測定は、高速な運動制御用信号ではありません。",
+     "pointen": "可動治具やカバーから離れた、固定耐力フレーム部材。",
+     "briefen": "フレームまたは静止治具の詳細、取付点、基準位置、代表荷重、必要な局所角度精度。",
+     "alten": "工場棟内の固定生産ライン支持フレームと保守アクセス空間。",
+     "title": "生産ライン架台",
+     "imageId": "fixed-production-line-frames",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "承認された固定生産ライン架台や静止治具支持部の局所的な傾斜を比較します。",
+     "measureen": "合意した静止条件での、選定した固定耐力フレームの緩やかな傾斜変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Production-line frames"
+    },
+    {
+     "id": "heavy-press-bases",
+     "title": "大型プレス機のベース",
+     "en": "合意した静止状態で、選定したプレス機ベースや剛性支持フレームの局所的な傾斜を記録します。H310-TS380Cの精度±0.01°は、基礎・支持部保守の前後の基準比較を支援できます。機械状態と取付基準をそろえてください。プレス行程の動的挙動、振動、機械保護は別の機能として扱います。",
+     "pointen": "可動金型から離れた、製造者承認済みの剛性ベース面または支持フレーム面。",
+     "briefen": "プレス形式、基礎構成、停止基準状態、熱条件、許可された固定方法、水平調整手順をお知らせください。",
+     "alten": "剛性のある下部ベースと基礎支持部が見える大型4柱式産業用プレス。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "heavy-press-bases",
+     "objectiveen": "合意した静止状態で、選定したプレス機ベースや剛性支持フレームの局所的な傾斜を記録します。",
+     "measureen": "合意した停止状態での、承認済みプレス機ベースまたは支持フレームの静的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Heavy press bases"
+    },
+    {
+     "id": "fixed-conveyor-supports",
+     "title": "固定コンベヤ支持部",
+     "en": "静止した後の固定コンベヤ柱や承認済み可調支持部分で、傾斜を追跡します。H310-TS380Cは、合意した精度±0.01°の基準を用いた設置・保守比較に対応します。荷重・調整状態を記録し、値が支持構造の状態を示すようにします。コンベヤの蛇行、ベルト移動、機械安全機能は専用システムで扱います。",
+     "pointen": "可動ベルトや取外し可能なガードとは別の、固定耐力支持柱またはフレーム。",
+     "briefen": "コンベヤ支持形状、静止時の調整位置、代表荷重、取付に必要な空間、必要な局所角度精度。",
+     "alten": "固定鋼製柱に支えられ、補強材と保守アクセスが見える高架コンベヤ。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "fixed-conveyor-supports",
+     "objectiveen": "静止した後の固定コンベヤ柱や承認済み可調支持部分で、傾斜を追跡します。",
+     "measureen": "選定した固定コンベヤ柱または支持フレームの、緩やかな局所的傾斜変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Fixed conveyor supports"
+    },
+    {
+     "id": "industrial-test-rig-frames",
+     "title": "ポンプユニット支持架台",
+     "en": "ポンプユニットのスキッドや剛性のある設備試験支持部が静止した後、局所的な傾斜を比較します。H310-TS380Cの精度±0.01°は、据付、グラウト施工、支持部工事の前後に、より細かな取付基準を提供できます。ポンプ構成を記録してください。軸芯出しと運転振動には、別の測定・作業手順が必要です。",
+     "pointen": "回転部や取外し可能なカバーから離れた、承認済みの剛性スキッドまたは支持フレーム位置。",
+     "briefen": "ポンプ・設備配置、静止基準状態、配管荷重、支持部工事、必要な局所角度精度。",
+     "alten": "プラント内で、剛性のある支持スキッドに搭載された産業用ポンプとモーター。",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "imageId": "industrial-test-rig-frames",
+     "objectiveen": "ポンプユニットのスキッドや剛性のある設備試験支持部が静止した後、局所的な傾斜を比較します。",
+     "measureen": "定義した基準状態での、承認済みポンプユニットスキッドまたは固定設備支持フレームの局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Pump-set support frames"
+    }
+   ]
+  },
+  {
+   "number": 9,
+   "groupid": "energy-utilities",
+   "title": "エネルギー・ユーティリティ",
+   "jumplabelen": "エネルギー・ユーティリティ",
+   "jumplabelzh": "エネルギー・ユーティリティ",
+   "introen": "水、太陽光、貯蔵、プロセスの支持構造について、荷重、環境、選定部材を記録します。",
+   "scenes": [
+    {
+     "id": "elevated-water-tank-supports",
+     "en": "選定した高架水槽の柱や剛性支持部材の局所的な傾斜を追跡します。H310-TS380Cは、水位と設置軸定義を記録し、指定された精度±0.01°の基準測定に対応します。荷重・保守段階を通じて同じ支持部を比較し、構造全体の評価には技術点検と別途測量を使用します。",
+     "pointen": "技術者が選定した、取付方向を記録した剛性支持部材。",
+     "briefen": "支持設計、水位記録、取付高さ、作業アクセス、測量基準。",
+     "alten": "構造支持柱が見える高架水槽。",
+     "title": "高架水槽の支持部",
+     "imageId": "elevated-water-tank-supports",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "選定した高架水槽の柱や剛性支持部材の局所的な傾斜を追跡します。",
+     "measureen": "記録された荷重条件での、選定した高架水槽支持部材の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Elevated water-tank supports"
+    },
+    {
+     "id": "fixed-solar-supports",
+     "en": "固定太陽光パネル支持部、または手動調整後のフレームで、選定した点の傾斜を記録します。H310-TS380Cは、精度±0.01°が指定される場合に、より細かな角度基準を提供できます。構造部材と静止設定を記録し、傾斜確認を、太陽追尾、コンパス方位、発電性能評価とは別に扱います。",
+     "pointen": "監視方向を代表する固定支持柱または耐力フレーム。",
+     "briefen": "支持部材、合意した静止位置または手動設定位置、取付方向、暴露環境、必要な局所角度精度。",
+     "alten": "支柱、傾斜フレーム、地上基礎が見える固定式太陽光パネル群。",
+     "title": "固定式太陽光パネル架台",
+     "imageId": "fixed-solar-supports",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "固定太陽光パネル支持部、または手動調整後のフレームで、選定した点の傾斜を記録します。",
+     "measureen": "選定した固定太陽光発電支柱または耐力支持フレームの局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Fixed solar-panel supports"
+    },
+    {
+     "id": "silo-and-tank-support-frames",
+     "en": "充填条件を記録し、選定したサイロ脚やタンク支持部材の局所的な傾斜を比較します。H310-TS380Cの精度±0.01°は、監視計画で指定される場合に、より細かな角度基準を提供します。各点を支持部識別情報と保守記録に対応付け、全体の移動や耐力は測量・構造評価で確認します。",
+     "pointen": "プロセス境界の外側にありアクセス可能な、技術者承認済み支持脚またはフレーム。",
+     "briefen": "支持構成、充填状態、温度、区域区分、固定作業アクセス。",
+     "alten": "外部の脚と構造フレームに支えられた産業用サイロまたはタンク。",
+     "title": "サイロ・タンク支持部",
+     "imageId": "silo-and-tank-support-frames",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "充填条件を記録し、選定したサイロ脚やタンク支持部材の局所的な傾斜を比較します。",
+     "measureen": "比較可能な充填条件における、選定した外部支持脚またはフレームの局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Silo & tank supports"
+    },
+    {
+     "id": "industrial-chimney-base",
+     "en": "承認された煙突基部や下部構造点の局所的な傾斜を追跡します。H310-TS380Cは、それらの基準点に精度±0.01°を指定する計画に対応し、温度、風、運転状態を記録します。納入機器の仕様範囲内となる取付環境を選定してください。煙突全体の形状、変位、状態には、補完する技術手法が必要です。",
+     "pointen": "選択した構成の環境条件内にある、承認済みの剛性基部部材。",
+     "briefen": "基部設計、熱への暴露、運転状態、作業アクセス、併用測量。",
+     "alten": "産業用煙突とアクセス可能な外部基部構造。",
+     "title": "煙突基部",
+     "imageId": "industrial-chimney-base",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "承認された煙突基部や下部構造点の局所的な傾斜を追跡します。",
+     "measureen": "環境仕様範囲内にある、承認済み煙突外部基部部材の局所的な角度変化。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Chimney bases"
+    },
+    {
+     "id": "cooling-tower-support-frames",
+     "en": "合意した静止状態または比較可能な運転状態で、選定した冷却塔支持フレームの傾斜を記録します。H310-TS380Cは、定義した局所角度測定に対して精度±0.01°を提供します。構造部材と環境を記録してください。機械振動、水系性能、設備全体の状態には、別の測定と検討が必要です。",
+     "pointen": "技術者が選定した固定支持部。設置に対する運転外乱の影響を評価します。",
+     "briefen": "支持配置、ファンの状態、水分への暴露、荷重条件、保守アクセス。",
+     "alten": "固定支持フレームが見える産業用冷却塔。",
+     "title": "冷却塔の支持部",
+     "imageId": "cooling-tower-support-frames",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "合意した静止状態または比較可能な運転状態で、選定した冷却塔支持フレームの傾斜を記録します。",
+     "measureen": "比較可能な運転状態における、選定した固定冷却塔支持部の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Cooling-tower supports"
+    },
+    {
+     "id": "utility-pipe-rack-columns",
+     "en": "プロセス・ユーティリティ配管を支える、承認済み配管ラック柱の局所的な傾斜を追跡します。荷重・熱条件を記録し、精度±0.01°が指定される場合にH310-TS380Cでより細かな基準比較を行えます。固定は構造部材に行ってください。配管ひずみ、伸縮継手の移動、危険場所への適用承認は別途確認が必要です。",
+     "pointen": "可動配管、断熱材、取外し可能なカバーではなく、固定構造柱。",
+     "briefen": "架構配置、支持する系統、熱状態、区域区分、固定詳細。",
+     "alten": "複数のユーティリティ配管と構造柱が見える産業用配管ラック。",
+     "title": "配管ラックの柱",
+     "imageId": "utility-pipe-rack-columns",
+     "original": false,
+     "source": "Reviewed existing website application image; illustrative context, not a claim of a customer installation.",
+     "objectiveen": "プロセス・ユーティリティ配管を支える、承認済み配管ラック柱の局所的な傾斜を追跡します。",
+     "measureen": "記録された測定方向に沿った、選定した固定配管ラック柱の局所的な傾斜。",
+     "model": "H310-TS380C",
+     "precisionGrade": "±0.01°",
+     "valueEn": "Pipe-rack columns"
+    }
+   ]
+  }
+ ]
+}

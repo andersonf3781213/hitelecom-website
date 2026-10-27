@@ -5,8 +5,7 @@ import { getImage } from 'astro:assets';
 import heroBackground from '../../assets/brand/sensor-hero-background.jpg';
 import Applications from './TriaxialApplications.astro';
 import typographyStyles from '../../styles/tilt-typography-en.css?raw';
-const { content, t, groups, hero, canonicalPath, cropBox, headings, applicationUi } = Astro.props;
-const locale = 'en', prefix = '';
+const { content, t, groups, hero, canonicalPath, cropBox, headings, applicationUi, locale = 'en', prefix = '' } = Astro.props;
 const headingHtml = (id) => headings.find(h => h.id === id)?.html;
 const enquiryScenes = groups.flatMap(group => group.scenes);
 const backgroundImages = await Promise.all([640,1280,1920].map(width => getImage({src:heroBackground,width,format:'webp',quality:78})));
@@ -65,7 +64,7 @@ const sensorsHref = `${prefix}/product/lists/cid/261`;
     <div class="profile-note"><div><span class="small-label">{t.profNoteLabel}</span><strong>{t.profNoteStrong.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</strong></div><p>{content.operatingProfile.footnote}</p></div>
   </div></section>
 
-  <Applications groups={groups} canonicalPath={canonicalPath} applicationUi={applicationUi} modelName={content.modelCatalog.models[0].model} />
+  <Applications groups={groups} canonicalPath={canonicalPath} applicationUi={applicationUi} modelName={content.modelCatalog.models[0].model} locale={locale} />
 
   <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
     <div class="section-heading"><div><p class="eyebrow">{t.serKicker}</p><h2 id="specifications-title">{specTitleMain}{specTitleSpan != null && <><br/><span>{specTitleSpan}</span></>}</h2></div><p>{content.modelCatalog.intro}</p></div>

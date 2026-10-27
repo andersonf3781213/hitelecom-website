@@ -9,7 +9,12 @@ import ApplicationTask from '../tilt/ApplicationTask.astro';
 import uiStrings from '../../data/tilt-applications-ui.json';
 import temperatureStyles from '../../styles/tilt-applications-en.css?raw';
 import temperatureRuntime from '../../scripts/tilt-applications-en.js?raw';
-const { groups, canonicalPath, applicationUi = {}, modelName } = Astro.props;
+const { groups, canonicalPath, applicationUi = {}, modelName, locale = 'en' } = Astro.props;
+// Russian count words follow Intl.PluralRules: 1/21 задача, 2-4 задачи, 5+ задач мониторинга
+const RU_TASK_WORDS = { one: 'задача мониторинга', few: 'задачи мониторинга', many: 'задач мониторинга', other: 'задачи мониторинга' } as const;
+const ruPlural = new Intl.PluralRules('ru');
+const formatTaskCount = (n: number, template: string) =>
+  locale === 'ru' ? `${n} ${RU_TASK_WORDS[ruPlural.select(n) as keyof typeof RU_TASK_WORDS]}` : template.replace('{count}', String(n));
 const ui = { ...uiStrings.en, ...applicationUi };
 if (!modelName) throw new Error('Triaxial Applications requires the exact model name');
 const newAssets = import.meta.glob<ImageMetadata>('../../assets/applications/*.webp', { eager: true, import: 'default' });
@@ -36,19 +41,19 @@ const canonical = `https://www.hitelecom.com${canonicalPath}`;
 const scenes = groups.flatMap(group => group.scenes);
 const structuredData = {
   '@context': 'https://schema.org', '@type': 'ItemList', '@id': `${canonical}#applications-list`,
-  name: `${modelName} tilt sensor applications`, numberOfItems: scenes.length, itemListOrder: 'https://schema.org/ItemListOrderAscending',
+  name: locale === 'en' ? `${modelName} tilt sensor applications` : `${modelName} — ${ui.listName}`, numberOfItems: scenes.length, itemListOrder: 'https://schema.org/ItemListOrderAscending',
   itemListElement: scenes.map((scene, index) => ({'@type': 'ListItem', position: index + 1, name: scene.title, description: scene.en, url: `${canonical}#${scene.baselineId || `tilt-scene-${scene.id}`}`})),
 };
 ---
 <section class="section application-section" id="applications" aria-labelledby="applications-title"><div class="wrap">
   <style is:inline data-applications-style="temperature" set:html={temperatureStyles} />
   <div class="section-heading"><div><p class="eyebrow">{ui.kicker}</p><h2 id="applications-title">{ui.titleA}<br/><span>{ui.titleB}</span></h2></div><p>{ui.intro}</p></div>
-  <div class="application-overview"><p><strong>{groups.length}</strong> {ui.categoriesLabel} <span aria-hidden="true">/</span> <strong>{scenes.length}</strong> {ui.tasksLabel}</p><p class="image-note">{ui.imageNote}</p></div>
+  <div class="application-overview"><p><strong>{groups.length}</strong> {ui.categoriesLabel} <span aria-hidden="true">/</span> <strong>{scenes.length}</strong> {locale === 'ru' ? RU_TASK_WORDS[ruPlural.select(scenes.length) as keyof typeof RU_TASK_WORDS] : ui.tasksLabel}</p><p class="image-note">{ui.imageNote}</p></div>
   <nav class="application-jump-nav" aria-label={ui.navAria}>{groups.map(group => <a href={`#group-${group.groupid}`}>{group.jumplabelen}<span>{group.scenes.length}</span></a>)}</nav>
   <div class="application-groups">{groups.map((group, index) => {
     const first = group.scenes[0], image = images.get(first.id)!;
     return <details class="application-group" id={`group-${group.groupid}`} open={index === 0}>
-      <summary><span><small>{String(group.number).padStart(2, '0')}</small>{group.title}</span><span class="group-count">{ui.groupCount.replace('{count}', String(group.scenes.length))} <b aria-hidden="true">+</b></span></summary>
+      <summary><span><small>{String(group.number).padStart(2, '0')}</small>{group.title}</span><span class="group-count">{formatTaskCount(group.scenes.length, ui.groupCount)} <b aria-hidden="true">+</b></span></summary>
       <div class="application-category-body"><div class="application-visual"><div class="application-media-slot">
         <figure class="application-category-photo"><img class="application-category-image" src={image.src} srcset={image.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={image.width} height={image.height} loading="lazy" decoding="async" alt={first.alten} style={first.originalImgStyle || 'object-position:center center'} /><figcaption><span class="application-photo-caption">{group.title}</span></figcaption></figure>
       </div><p>{group.introen}</p></div><div class="application-task-list">{group.scenes.map((scene, sceneIndex) => <ApplicationTask scene={scene} image={images.get(scene.id)!} first={sceneIndex === 0} ui={ui} />)}</div></div>

@@ -1,14 +1,15 @@
 ---
 /** Match the visible model, confirmed accuracy, FAQ and canonical; no invented offers or ratings. */
-const { content, t, canonicalPath, imageUrl } = Astro.props;
+const { content, t, canonicalPath, imageUrl, inLanguage = 'en' } = Astro.props;
 const url = `https://www.hitelecom.com${canonicalPath}`;
 const model = content.modelCatalog.models[0];
+const prefix = canonicalPath.match(/^\/(zh|es|de|ja|fr|ru)(?=\/)/)?.[0] ?? '';
 const orgId = 'https://www.hitelecom.com/#organization';
 const graph = [
-  {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:'en',isPartOf:{'@id':'https://www.hitelecom.com/#website'},publisher:{'@id':orgId},mainEntity:{'@id':url+'#product'},breadcrumb:{'@id':url+'#breadcrumb'},primaryImageOfPage:{'@type':'ImageObject',url:imageUrl},dateModified:'2026-10-27',hasPart:{'@id':url+'#faq'}},
-  {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://www.hitelecom.com/'},{'@type':'ListItem',position:2,name:'IoT Sensors',item:'https://www.hitelecom.com/product/lists/cid/261'},{'@type':'ListItem',position:3,name:t.bcLd[2],item:url}]},
+  {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage,isPartOf:{'@id':'https://www.hitelecom.com/#website'},publisher:{'@id':orgId},mainEntity:{'@id':url+'#product'},breadcrumb:{'@id':url+'#breadcrumb'},primaryImageOfPage:{'@type':'ImageObject',url:imageUrl},dateModified:'2026-10-27',hasPart:{'@id':url+'#faq'}},
+  {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:t.bcLd?.[0] ?? 'Home',item:`https://www.hitelecom.com${prefix}/`},{'@type':'ListItem',position:2,name:t.bcLd?.[1] ?? 'IoT Sensors',item:`https://www.hitelecom.com${prefix}/product/lists/cid/261`},{'@type':'ListItem',position:3,name:t.bcLd[2],item:url}]},
   {'@type':'Product','@id':url+'#product',url,name:`Hitelecom ${model.model} ${t.bcLd[2]}`,model:model.model,sku:model.model,category:'Triaxial wireless tilt sensors',description:content.hero.description,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':orgId},additionalProperty:model.specifications.map(s=>({'@type':'PropertyValue',name:s.name,value:s.value}))},
-  {'@type':'FAQPage','@id':url+'#faq',inLanguage:'en',isPartOf:{'@id':url+'#webpage'},mainEntity:content.faqs.map(f=>({'@type':'Question','@id':url+'#'+f.id,name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))},
+  {'@type':'FAQPage','@id':url+'#faq',inLanguage,isPartOf:{'@id':url+'#webpage'},mainEntity:content.faqs.map(f=>({'@type':'Question','@id':url+'#'+f.id,name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))},
 ];
 ---
 <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replaceAll('<','\\u003c')} />

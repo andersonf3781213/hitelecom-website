@@ -69,7 +69,10 @@ for(const expected of precisionCardRegistry){
  }
 }
 const precisionIds=new Set(precisionCardRegistry.map(p=>p.id));
-const expectedTiltCards=[...precisionCardRegistry,{id:'tilt-sensor',name:'High-precision Tilt Sensor',conn:PRECISION_CARD_CONNECTIVITY,searchTerms:'0.01°'}];
+const expectedTiltCards=[...precisionCardRegistry,{id:'tilt-sensor',name:'High-precision Tilt Sensor',conn:PRECISION_CARD_CONNECTIVITY,searchTerms:'0.01°'},
+ // V122: 三轴两款静态卡片与精度款同规则（可见行无型号/精度，型号进搜索词）
+ {id:'triaxial-high-precision-tilt-sensor',name:'Triaxial High-precision Tilt Sensor',conn:PRECISION_CARD_CONNECTIVITY,searchTerms:'H310-TS380C triaxial three-axis inclinometer tilt ±0.01°'},
+ {id:'triaxial-medium-precision-tilt-sensor',name:'Triaxial Medium-precision Tilt Sensor',conn:PRECISION_CARD_CONNECTIVITY,searchTerms:'H310-TS350M triaxial three-axis inclinometer tilt ±0.1°'}];
 const tiltDisplayIds=new Set(expectedTiltCards.map(p=>p.id));
 for(const cid of ['261','267']){
  const cards=applyCatalog(product.productContent.en.lists[cid].products,cid,'en',pool);

@@ -38,8 +38,8 @@ const precisionStaticCards = precisionCardRegistry.map(card => ({
   id:card.id, name:card.name, img:card.image, conn:card.conn, searchTerms:card.searchTerms, url:card.path, href:card.path,
 }));
 
-// 三轴两款同样是静态 Astro 路由（EN-only）：注册原始卡片模板，型号/精度仅进入搜索词，
-// 卡片可见行与其它产品一致；非英文 locale 未发布，由适配器按 published 过滤。
+// 三轴两款同样是静态 Astro 路由（七语均已发布，V122）：注册原始卡片模板，型号/精度仅进入搜索词，
+// 卡片可见行与其它产品一致；适配器按当前语言的目录文案本地化名称与链接。
 const triaxialStaticCards = [
   {
     id:'triaxial-high-precision-tilt-sensor', name:'Triaxial High-precision Tilt Sensor',
