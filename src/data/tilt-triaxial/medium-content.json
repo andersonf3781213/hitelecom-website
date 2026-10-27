@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "seo": {
+    "title": "±0.1° Triaxial Tilt Sensor | H310-TS350M | Hitelecom",
+    "description": "H310-TS350M triaxial tilt sensor with ±0.1° accuracy, 1-min acquisition and 4-hour reports for warehouse, structural and industrial inclination monitoring.",
+    "keywords": "H310-TS350M, triaxial tilt sensor, three-axis inclinometer, wireless tilt sensor, rack inclination monitoring, structural inclination, 4G LTE, NB-IoT, LoRa, OEM"
+  },
+  "hero": {
+    "title": "Triaxial tilt sensor. Medium precision. ±0.1° accuracy.",
+    "description": "H310-TS350M is a medium-precision triaxial tilt sensor with ±0.1° accuracy for racks, poles, fixed supports and machine frames. One-minute acquisition and four-hour scheduled reporting support regular inclination records across distributed assets. Choose the measured member and installation reference around the angle changes that matter to your project.",
+    "primaryLabel": "Discuss your project",
+    "secondaryLabel": "Explore specifications"
+  },
+  "features": [
+    {
+      "title": "±0.1° triaxial inclination",
+      "text": "H310-TS350M combines the ±0.1° accuracy grade with X/Y/Z sensing. Define the reported angle channels and axis convention for your mounting arrangement."
+    },
+    {
+      "title": "One-minute acquisition",
+      "text": "A one-minute acquisition interval provides frequent observations at the mounting point. Keep acquisition separate from the schedule for transmitting readings."
+    },
+    {
+      "title": "Four-hour scheduled reporting",
+      "text": "A four-hour report schedule connects distributed measurements to Hitelecom Cloud or a compatible customer platform, using the selected radio and interface."
+    },
+    {
+      "title": "Protection for the installation",
+      "text": "Choose a metal IP68 or plastic IP66 enclosure. The specified operating temperature is −40°C to +85°C; select the mounting kit for the measured member."
+    },
+    {
+      "title": "Commission with NFC",
+      "text": "NFC activation and local configuration support installation and device commissioning. Record the asset ID, initial angle and orientation before monitoring."
+    },
+    {
+      "title": "An integration-ready project",
+      "text": "Select 4G LTE, NB-IoT or LoRa by device variant. Agree the message fields and platform interface; remote firmware updates are available on supported versions."
+    }
+  ],
+  "overview": {
+    "kicker": "A CLEARER VIEW OF CHANGE",
+    "title": "Measure the angle. Follow the trend.",
+    "answer": "H310-TS350M brings ±0.1° triaxial inclination monitoring to defined points on racks, poles, supports and equipment frames. Start with the angle change that needs review, then check the accuracy grade, mounting and environmental conditions. A clear installation reference makes readings from each point useful in a wider inspection programme.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Define the point and orientation",
+        "text": "Fix the sensor to the selected member. Record its asset ID, bracket position, axis orientation and initial angle after installation."
+      },
+      {
+        "number": "02",
+        "title": "Match the grade to the change",
+        "text": "Assess the required angle change against ±0.1° accuracy. Specify the working range, reported increment and applicable test conditions for each reported channel."
+      },
+      {
+        "number": "03",
+        "title": "Give the history a purpose",
+        "text": "Assign review conditions and responsibilities. Validate readings, scheduled messages and the platform workflow using the completed installation."
+      }
+    ]
+  },
+  "operatingProfile": {
+    "kicker": "ACQUISITION & REPORTING",
+    "title": "Frequent sensing. Scheduled reporting.",
+    "intro": "H310-TS350M acquires readings every minute and transmits scheduled reports every four hours. The datasheet states a 10-year reference operating profile at 25°C with normal signal conditions.",
+    "metrics": [
+      {
+        "value": "1 min",
+        "label": "Acquisition interval",
+        "detail": "Frequent sensing at the installed monitoring point."
+      },
+      {
+        "value": "4 hours",
+        "label": "Scheduled reporting",
+        "detail": "Six scheduled report intervals per day."
+      },
+      {
+        "value": "240",
+        "label": "Acquisition cycles",
+        "detail": "Acquisition cycles between scheduled reports at this reference profile."
+      },
+      {
+        "value": "10 years*",
+        "label": "Reference battery life",
+        "detail": "1-min acquisition, 4-hour reporting, 25°C and normal signal."
+      }
+    ],
+    "footnote": "Actual battery life varies with enabled functions, event frequency and radio retries. Acquisition cycles do not specify how many individual samples a report contains or how long data are retained. Agree any event-reporting and notification requirements for the supplied configuration."
+  },
+  "modelCatalog": {
+    "title": "The right specification. For your installation.",
+    "intro": "Use H310-TS350M and its ±0.1° accuracy grade as the model reference. Specify the axis convention, required working range and data interface with the selected radio and enclosure.",
+    "defaultModelId": "h310-ts350m",
+    "models": [
+      {
+        "id": "h310-ts350m",
+        "model": "H310-TS350M",
+        "scopeNote": "Triaxial medium precision tilt sensor · ±0.1° accuracy. Technical details below follow the 2026-10-27 datasheet. Per-axis angle definitions, range, resolution and configuration conditions form part of the supplied specification.",
+        "datasheet": {
+          "url": "/downloads/h310-ts350m-triaxial-tilt-sensor-datasheet.pdf",
+          "label": "Download H310-TS350M datasheet (EN)"
+        },
+        "specifications": [
+          {
+            "name": "Model",
+            "value": "H310-TS350M"
+          },
+          {
+            "name": "Product grade",
+            "value": "Triaxial · medium precision"
+          },
+          {
+            "name": "Accuracy",
+            "value": "±0.1°; applicable range and test conditions follow the supplied configuration"
+          },
+          {
+            "name": "Sensing type",
+            "value": "MEMS; three-axis sensing (X / Y / Z)"
+          },
+          {
+            "name": "Angle outputs",
+            "value": "Angle definitions and reference orientation follow the supplied protocol; gravity-referenced inclination does not independently determine yaw"
+          },
+          {
+            "name": "Range & resolution",
+            "value": "Working range and reported increment specified per axis / ordered configuration"
+          },
+          {
+            "name": "Acquisition interval",
+            "value": "1 minute"
+          },
+          {
+            "name": "Scheduled reporting interval",
+            "value": "4 hours"
+          },
+          {
+            "name": "Reference battery life",
+            "value": "10 years: 1-min acquisition, 4-hour reporting, 25°C, normal signal; varies with enabled functions, events and radio retries"
+          },
+          {
+            "name": "Power supply",
+            "value": "19000 mAh battery; 38000 mAh option"
+          },
+          {
+            "name": "Communication variants",
+            "value": "LTE Cat.1 (4G); NB-IoT / LoRa by selected variant; regional bands and modem options by supplied configuration"
+          },
+          {
+            "name": "SIM arrangement",
+            "value": "Standard IoT SIM; embedded SIM / eSIM option, for applicable cellular variants"
+          },
+          {
+            "name": "Enclosure protection",
+            "value": "Metal enclosure: IP68; plastic enclosure: IP66"
+          },
+          {
+            "name": "Operating & storage temperature",
+            "value": "−40°C to +85°C"
+          },
+          {
+            "name": "Operating humidity",
+            "value": "5% to 95% RH, non-condensing"
+          },
+          {
+            "name": "Body size",
+            "value": "115 × 90 × 60 mm; platform body reference"
+          },
+          {
+            "name": "Installation",
+            "value": "Wall, pole or DIN-rail mounting, by selected kit"
+          },
+          {
+            "name": "NFC & firmware updates",
+            "value": "NFC activation and local configuration; remote firmware updates on supported versions"
+          },
+          {
+            "name": "Platform & interface",
+            "value": "Hitelecom Cloud or a compatible customer platform; select the supported data interface"
+          },
+          {
+            "name": "Certification references",
+            "value": "CE completed for H200/H300/H500 platform. Confirm applicability to the supplied configuration and other CCC / FCC / RoHS references."
+          }
+        ]
+      }
+    ]
+  },
+  "applicationHeading": {
+    "kicker": "APPLICATIONS",
+    "title": "Different structures. One focused measurement.",
+    "intro": "Explore inclination monitoring across warehouse, infrastructure, industrial and energy assets, with tasks matched to the ±0.1° triaxial model.",
+    "imageNote": "Application illustrations show representative monitoring environments."
+  },
+  "groups": [],
+  "applications": [],
+  "integration": {
+    "kicker": "CONNECTIVITY & INTEGRATION",
+    "title": "Your installation. Your data destination.",
+    "intro": "Select 4G LTE, NB-IoT or LoRa by device variant. Bring the mounting plan and data requirements together before commissioning, whether you use Hitelecom Cloud or your own platform.",
+    "routes": [
+      {
+        "title": "For distributed locations",
+        "subtitle": "4G LTE / NB-IoT",
+        "steps": [
+          "Triaxial sensor",
+          "Cellular network",
+          "Your platform"
+        ],
+        "text": "For sites spread across a region, select the cellular variant around local operator coverage, supported bands and the IoT SIM arrangement. Review signal quality at the actual mounting point before rollout.",
+        "checks": [
+          "Installation country, operator and regional bands",
+          "SIM / eSIM arrangement and antenna configuration",
+          "Supported platform interface and scheduled-report test"
+        ]
+      },
+      {
+        "title": "For points across one site",
+        "subtitle": "LoRa BY SELECTED VARIANT",
+        "steps": [
+          "Triaxial sensors",
+          "Compatible receiver",
+          "Your platform"
+        ],
+        "text": "For a local radio deployment, agree the receiver, radio settings and onward data connection. Provide the site layout and expected point count so coverage and gateway placement can be evaluated.",
+        "checks": [
+          "Compatible receiver or gateway and radio protocol",
+          "Obstructions, distances and installation-point coverage",
+          "Message fields, timestamps and onward interface"
+        ]
+      }
+    ],
+    "handoverTitle": "Make every reported angle traceable.",
+    "handover": "Agree the supported angle outputs and a sample message with your platform team. Map the device and asset IDs, channel names, axis convention, units, timestamps and installation reference. Validate data from a commissioned monitoring point before expanding the deployment."
+  },
+  "selection": {
+    "title": "A configuration built around your project.",
+    "intro": "These four details make the proposal specific to your installation.",
+    "items": [
+      {
+        "title": "The change you need to observe",
+        "text": "Identify the member and the angle change that matters. Compare it with ±0.1° accuracy and define the required per-axis range and reported increment."
+      },
+      {
+        "title": "The installation conditions",
+        "text": "Share fixing surfaces, mounting orientation, temperature, water exposure, access and the intended enclosure or mounting kit."
+      },
+      {
+        "title": "The reporting and platform route",
+        "text": "Include the country, point count, selected network, report schedule, supported interface and any event-response requirements."
+      },
+      {
+        "title": "Your evaluation and rollout",
+        "text": "Provide quantities, sample-test criteria, OEM / white-label needs, certificate requirements and target installation dates."
+      }
+    ]
+  },
+  "faqHeading": {
+    "kicker": "ANSWERS FOR YOUR PROJECT",
+    "title": "Frequently asked questions.",
+    "intro": "Practical answers for specifying, installing and integrating the H310-TS350M medium precision triaxial tilt sensor."
+  },
+  "faqs": [
+    {
+      "id": "faq-model",
+      "question": "What is the H310-TS350M triaxial tilt sensor?",
+      "paragraphs": [
+        "H310-TS350M is a medium precision MEMS tilt sensor with ±0.1° accuracy and X/Y/Z sensing. It measures inclination at a defined mounting point, using the angle outputs and reference orientation specified by the supplied protocol.",
+        "Typical projects include warehouse rack uprights, poles, structural members and machine frames. One-minute acquisition and four-hour scheduled reporting support remote angle records for the selected points."
+      ],
+      "answerLink": {
+        "href": "#specifications",
+        "label": "Explore the specification"
+      }
+    },
+    {
+      "id": "faq-grade",
+      "question": "When should I choose H310-TS350M instead of H310-TS380C?",
+      "paragraphs": [
+        "Choose H310-TS350M when ±0.1° accuracy meets the monitoring objective. Where a finer measurement grade is required, review the H310-TS380C ±0.01° triaxial option.",
+        "Selection also depends on range, resolution, temperature, fixing stability and test conditions. Accuracy is separate from the displayed increment and the threshold that triggers a project review."
+      ],
+      "answerLink": {
+        "href": "/product/triaxial-high-precision-tilt-sensor",
+        "label": "Compare the other triaxial grade"
+      }
+    },
+    {
+      "id": "faq-axes",
+      "question": "How does a triaxial tilt sensor differ from a two-axis model?",
+      "paragraphs": [
+        "The triaxial version uses X/Y/Z sensing. The supplied protocol defines how those sensing axes are converted into reported angle channels and how the reference orientation is represented.",
+        "Choose the sensor around the outputs your monitoring plan needs and the mounting orientation. Three sensing axes alone do not establish three independent orientation angles or a complete 3D motion measurement."
+      ],
+      "answerLink": {
+        "href": "#specifications",
+        "label": "Check the angle-output definition"
+      }
+    },
+    {
+      "id": "faq-yaw",
+      "question": "Does three-axis sensing measure yaw or compass heading?",
+      "paragraphs": [
+        "Gravity-referenced inclination does not independently determine yaw, which is rotation about the gravity direction. X/Y/Z labels identify the sensing axes; they should not be interpreted as a compass heading measurement.",
+        "For an application that needs heading or another motion quantity, describe it explicitly so the required sensing architecture can be reviewed before selection."
+      ],
+      "answerLink": {
+        "href": "#enquiry",
+        "label": "Discuss the required outputs"
+      }
+    },
+    {
+      "id": "faq-mounting",
+      "question": "How do I establish a reliable installation reference?",
+      "paragraphs": [
+        "Attach the sensor rigidly to the member whose inclination is to be monitored. Record the device ID, asset location, bracket position, axis orientation and initial angle after fixing.",
+        "Keep that reference with later readings. Recommission the reference after moving the device, changing the bracket or altering the measured member. A baseline supports comparison; it does not improve the stated accuracy."
+      ],
+      "answerLink": {
+        "href": "#overview",
+        "label": "See the measurement workflow"
+      }
+    },
+    {
+      "id": "faq-example",
+      "question": "What does the illustrated angle change represent?",
+      "paragraphs": [
+        "The example compares 0.3° at installation with 0.5° later, a +0.2° change in one reported inclination channel. It illustrates reference comparison, rather than a three-axis vector or a complete 3D orientation.",
+        "These example values do not define range, resolution, a minimum detectable change or a notification threshold. Set review conditions for the real mounting point and applicable measurement performance."
+      ],
+      "answerLink": {
+        "href": "#overview",
+        "label": "Review the example reading"
+      }
+    },
+    {
+      "id": "faq-reporting",
+      "question": "What are the acquisition and scheduled-reporting intervals?",
+      "paragraphs": [
+        "The reference profile acquires readings every minute and sends scheduled reports every four hours. This corresponds to 240 acquisition cycles between scheduled reports and six report intervals per day.",
+        "Acquisition frequency and transmission frequency are different. Agree which samples or values a report contains, any local retention, and the supported event-reporting and notification behaviour for your configuration."
+      ],
+      "answerLink": {
+        "href": "#operating-profile",
+        "label": "Review the operating profile"
+      }
+    },
+    {
+      "id": "faq-battery",
+      "question": "Under what conditions does the 10-year battery-life figure apply?",
+      "paragraphs": [
+        "The datasheet gives a 10-year reference with one-minute acquisition, four-hour reporting, 25°C and normal signal conditions. The battery configuration is 19000 mAh with a 38000 mAh option.",
+        "Actual service life varies with enabled functions, event frequency and radio retries. Select the power arrangement against the installation conditions and operating profile."
+      ],
+      "answerLink": {
+        "href": "#operating-profile",
+        "label": "Check the reference conditions"
+      }
+    },
+    {
+      "id": "faq-environment",
+      "question": "Which enclosure and environmental limits apply?",
+      "paragraphs": [
+        "The specified options are a metal IP68 enclosure or a plastic IP66 enclosure. Operating and storage temperature is −40°C to +85°C; operating humidity is 5% to 95% RH, non-condensing.",
+        "Select the enclosure, antenna and mounting kit for the actual exposure and access conditions. The 115 × 90 × 60 mm dimension is a platform body reference; verify the selected arrangement for installation drawings."
+      ],
+      "answerLink": {
+        "href": "#specifications",
+        "label": "Review protection and mounting"
+      }
+    },
+    {
+      "id": "faq-connectivity",
+      "question": "Can I choose 4G LTE, NB-IoT or LoRa?",
+      "paragraphs": [
+        "The datasheet lists LTE Cat.1 (4G), with NB-IoT and LoRa by selected variant. Choose the configuration around the installation country, regional bands, operator or compatible receiver, and the required data route.",
+        "LoRa identifies the radio option; a LoRaWAN requirement needs explicit protocol compatibility confirmation. Confirm the supplied radio, gateway and platform combination before ordering."
+      ],
+      "answerLink": {
+        "href": "#integration",
+        "label": "Plan the connection"
+      }
+    },
+    {
+      "id": "faq-platform",
+      "question": "Can the readings be sent to our existing platform?",
+      "paragraphs": [
+        "Hitelecom Cloud or a compatible customer platform can be used with the supported data interface. Share your interface, authentication and asset-data requirements during the project review.",
+        "Agree a sample message that identifies the device, mounting point, channel names, axis convention, angle units, timestamps and reference. Test the complete path using the selected device configuration."
+      ],
+      "answerLink": {
+        "href": "#integration",
+        "label": "Review the data handover"
+      }
+    },
+    {
+      "id": "faq-nfc-ota",
+      "question": "What are NFC and remote firmware updates used for?",
+      "paragraphs": [
+        "NFC activation and local configuration support installation and commissioning. Record the final settings and installation reference before starting the monitoring programme.",
+        "Remote firmware updates are supported on selected versions. Confirm availability and the supplied device configuration, together with your platform and update workflow."
+      ],
+      "answerLink": {
+        "href": "#enquiry",
+        "label": "Discuss commissioning requirements"
+      }
+    },
+    {
+      "id": "faq-applications",
+      "question": "Can one triaxial model cover racks, structures, poles and machine frames?",
+      "paragraphs": [
+        "H310-TS350M can be evaluated across racks, poles, fixed supports, infrastructure members and machine frames where ±0.1° accuracy meets the monitoring objective. The Applications section covers tasks across nine sectors, with warehouse racking first.",
+        "For racks, identify uprights and fixing points; for infrastructure, define the monitored member with the responsible engineer. Machine-frame inclination is a static or settled-position task. Minute-interval tilt readings do not specify dynamic vibration, rapid motion or machinery alignment performance."
+      ],
+      "answerLink": {
+        "href": "#applications",
+        "label": "Explore the application tasks"
+      }
+    },
+    {
+      "id": "faq-project",
+      "question": "What information is needed for a quotation or OEM project?",
+      "paragraphs": [
+        "Include H310-TS350M, the installation country, quantities, application and rollout date. Share a site photograph or drawing, mounting orientation, required per-axis range, useful angle change and expected environment.",
+        "Add the selected network, platform interface, reporting and event-response requirements, sample acceptance criteria and any OEM / white-label needs. CE is completed for the H200/H300/H500 platform; confirm certificate applicability and other requested compliance references for the supplied configuration."
+      ],
+      "answerLink": {
+        "href": "#enquiry",
+        "label": "Prepare your project brief"
+      }
+    }
+  ],
+  "enquiry": {
+    "kicker": "LET'S TALK ABOUT YOUR PROJECT",
+    "title": "Your next step. A sensor that fits.",
+    "intro": "Tell us about your H310-TS350M application. We’ll help match the accuracy grade, reported axes, mounting and data route to your monitoring plan.",
+    "email": "sales@hitelecom.cn"
+  },
+  "evidence": {
+    "confirmedFacts": [
+      {
+        "source": "User-supplied H310-TS350M Triaxial Tilt Sensor Datasheet, 2026-10-27",
+        "model": "H310-TS350M",
+        "accuracy": "±0.1°",
+        "sensingAxes": "X/Y/Z",
+        "acquisition": "1 minute",
+        "scheduledReporting": "4 hours",
+        "batteryReference": "10 years at 25°C and normal signal with 1-minute acquisition and 4-hour reporting",
+        "enclosure": "Metal IP68 / plastic IP66",
+        "temperature": "−40°C to +85°C"
+      }
+    ],
+    "scope": "Range, resolution, angle convention, protocol and applicability of compliance references follow the supplied configuration. No independent yaw / heading, dynamic motion, immediate-event latency or structural diagnosis performance is inferred."
+  }
+}

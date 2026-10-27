@@ -1,1486 +1,1534 @@
 {
-  "schemaVersion": 1,
-  "categories": [
-    {
-      "id": "temperature",
-      "sortOrder": 10,
-      "labels": {
-        "en": "Temperature",
-        "zh": "温度监测",
-        "es": "Temperatura",
-        "de": "Temperatur",
-        "ja": "温度",
-        "fr": "Température",
-        "ru": "Температура"
-      }
-    },
-    {
-      "id": "water-leak",
-      "sortOrder": 20,
-      "labels": {
-        "en": "Water Leak",
-        "zh": "水浸监测",
-        "es": "Fugas de agua",
-        "de": "Wasserleckage",
-        "ja": "漏水",
-        "fr": "Fuite d’eau",
-        "ru": "Протечка воды"
-      }
-    },
-    {
-      "id": "pressure",
-      "sortOrder": 30,
-      "labels": {
-        "en": "Pressure",
-        "zh": "压力监测",
-        "es": "Presión",
-        "de": "Druck",
-        "ja": "圧力",
-        "fr": "Pression",
-        "ru": "Давление"
-      }
-    },
-    {
-      "id": "soil",
-      "sortOrder": 40,
-      "labels": {
-        "en": "Soil",
-        "zh": "土壤监测",
-        "es": "Suelo",
-        "de": "Boden",
-        "ja": "土壌",
-        "fr": "Sol",
-        "ru": "Почва"
-      }
-    },
-    {
-      "id": "liquid-level",
-      "sortOrder": 50,
-      "labels": {
-        "en": "Liquid Level",
-        "zh": "液位监测",
-        "es": "Nivel de líquido",
-        "de": "Füllstand",
-        "ja": "レベル",
-        "fr": "Niveau de liquide",
-        "ru": "Уровень жидкости"
-      }
-    },
-    {
-      "id": "tilt",
-      "sortOrder": 60,
-      "labels": {
-        "en": "Tilt Monitoring",
-        "zh": "倾斜监测",
-        "es": "Monitoreo de inclinación",
-        "de": "Neigungsüberwachung",
-        "ja": "傾斜モニタリング",
-        "fr": "Surveillance de l’inclinaison",
-        "ru": "Мониторинг наклона"
-      }
-    },
-    {
-      "id": "distance",
-      "sortOrder": 70,
-      "labels": {
-        "en": "Radar Distance",
-        "zh": "距离监测",
-        "es": "Distancia por radar",
-        "de": "Radar-Abstand",
-        "ja": "レーダー距離",
-        "fr": "Distance radar",
-        "ru": "Радарное расстояние"
-      }
-    },
-    {
-      "id": "vibration",
-      "sortOrder": 80,
-      "labels": {
-        "en": "Vibration Monitoring",
-        "zh": "振动监测",
-        "es": "Monitoreo de vibración",
-        "de": "Vibrationsüberwachung",
-        "ja": "振動モニタリング",
-        "fr": "Surveillance des vibrations",
-        "ru": "Мониторинг вибрации"
-      }
-    },
-    {
-      "id": "air-quality",
-      "sortOrder": 90,
-      "labels": {
-        "en": "Air Quality",
-        "zh": "空气质量",
-        "es": "Calidad del aire",
-        "de": "Luftqualität",
-        "ja": "空気質",
-        "fr": "Qualité de l’air",
-        "ru": "Качество воздуха"
-      }
-    },
-    {
-      "id": "asset-tracking",
-      "sortOrder": 100,
-      "labels": {
-        "en": "Asset Tracking",
-        "zh": "资产定位",
-        "es": "Rastreo de activos",
-        "de": "Asset-Tracking",
-        "ja": "資産追跡",
-        "fr": "Suivi d’actifs",
-        "ru": "Отслеживание активов"
-      }
-    }
-  ],
-  "campaign": {
-    "productId": "tilt-sensor",
-    "startsOn": "2026-10-01",
-    "endsOn": "2026-10-31"
+ "schemaVersion": 1,
+ "categories": [
+  {
+   "id": "temperature",
+   "sortOrder": 10,
+   "labels": {
+    "en": "Temperature",
+    "zh": "温度监测",
+    "es": "Temperatura",
+    "de": "Temperatur",
+    "ja": "温度",
+    "fr": "Température",
+    "ru": "Температура"
+   }
   },
-  "products": [
-    {
-      "id": "temperature-sensor",
-      "slug": "temperature-sensor",
-      "categoryId": "temperature",
-      "sortOrder": 10,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Temperature Sensor",
-          "summary": "",
-          "url": "/product/temperature-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "温度传感器",
-          "summary": "",
-          "url": "/zh/product/temperature-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de temperatura",
-          "summary": "",
-          "url": "/es/product/temperature-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Temperatursensor",
-          "summary": "",
-          "url": "/de/product/temperature-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "温度センサー",
-          "summary": "",
-          "url": "/ja/product/temperature-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur de température",
-          "summary": "",
-          "url": "/fr/product/temperature-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик температуры",
-          "summary": "",
-          "url": "/ru/product/temperature-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
+  {
+   "id": "water-leak",
+   "sortOrder": 20,
+   "labels": {
+    "en": "Water Leak",
+    "zh": "水浸监测",
+    "es": "Fugas de agua",
+    "de": "Wasserleckage",
+    "ja": "漏水",
+    "fr": "Fuite d’eau",
+    "ru": "Протечка воды"
+   }
+  },
+  {
+   "id": "pressure",
+   "sortOrder": 30,
+   "labels": {
+    "en": "Pressure",
+    "zh": "压力监测",
+    "es": "Presión",
+    "de": "Druck",
+    "ja": "圧力",
+    "fr": "Pression",
+    "ru": "Давление"
+   }
+  },
+  {
+   "id": "soil",
+   "sortOrder": 40,
+   "labels": {
+    "en": "Soil",
+    "zh": "土壤监测",
+    "es": "Suelo",
+    "de": "Boden",
+    "ja": "土壌",
+    "fr": "Sol",
+    "ru": "Почва"
+   }
+  },
+  {
+   "id": "liquid-level",
+   "sortOrder": 50,
+   "labels": {
+    "en": "Liquid Level",
+    "zh": "液位监测",
+    "es": "Nivel de líquido",
+    "de": "Füllstand",
+    "ja": "レベル",
+    "fr": "Niveau de liquide",
+    "ru": "Уровень жидкости"
+   }
+  },
+  {
+   "id": "tilt",
+   "sortOrder": 60,
+   "labels": {
+    "en": "Tilt Monitoring",
+    "zh": "倾斜监测",
+    "es": "Monitoreo de inclinación",
+    "de": "Neigungsüberwachung",
+    "ja": "傾斜モニタリング",
+    "fr": "Surveillance de l’inclinaison",
+    "ru": "Мониторинг наклона"
+   }
+  },
+  {
+   "id": "distance",
+   "sortOrder": 70,
+   "labels": {
+    "en": "Radar Distance",
+    "zh": "距离监测",
+    "es": "Distancia por radar",
+    "de": "Radar-Abstand",
+    "ja": "レーダー距離",
+    "fr": "Distance radar",
+    "ru": "Радарное расстояние"
+   }
+  },
+  {
+   "id": "vibration",
+   "sortOrder": 80,
+   "labels": {
+    "en": "Vibration Monitoring",
+    "zh": "振动监测",
+    "es": "Monitoreo de vibración",
+    "de": "Vibrationsüberwachung",
+    "ja": "振動モニタリング",
+    "fr": "Surveillance des vibrations",
+    "ru": "Мониторинг вибрации"
+   }
+  },
+  {
+   "id": "air-quality",
+   "sortOrder": 90,
+   "labels": {
+    "en": "Air Quality",
+    "zh": "空气质量",
+    "es": "Calidad del aire",
+    "de": "Luftqualität",
+    "ja": "空気質",
+    "fr": "Qualité de l’air",
+    "ru": "Качество воздуха"
+   }
+  },
+  {
+   "id": "asset-tracking",
+   "sortOrder": 100,
+   "labels": {
+    "en": "Asset Tracking",
+    "zh": "资产定位",
+    "es": "Rastreo de activos",
+    "de": "Asset-Tracking",
+    "ja": "資産追跡",
+    "fr": "Suivi d’actifs",
+    "ru": "Отслеживание активов"
+   }
+  }
+ ],
+ "campaign": {
+  "productId": "tilt-sensor",
+  "startsOn": "2026-10-01",
+  "endsOn": "2026-10-31"
+ },
+ "products": [
+  {
+   "id": "temperature-sensor",
+   "slug": "temperature-sensor",
+   "categoryId": "temperature",
+   "sortOrder": 10,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Temperature Sensor",
+     "summary": "",
+     "url": "/product/temperature-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
     },
-    {
-      "id": "water-leakage-sensor",
-      "slug": "water-leakage-sensor",
-      "categoryId": "water-leak",
-      "sortOrder": 20,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Water Leak Sensor",
-          "summary": "",
-          "url": "/product/water-leakage-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "水浸传感器",
-          "summary": "",
-          "url": "/zh/product/water-leakage-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de fugas de agua",
-          "summary": "",
-          "url": "/es/product/water-leakage-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Wasserleckagesensor",
-          "summary": "",
-          "url": "/de/product/water-leakage-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "漏水センサー",
-          "summary": "",
-          "url": "/ja/product/water-leakage-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur de fuite d’eau",
-          "summary": "",
-          "url": "/fr/product/water-leakage-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик протечки воды",
-          "summary": "",
-          "url": "/ru/product/water-leakage-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
+    "zh": {
+     "name": "温度传感器",
+     "summary": "",
+     "url": "/zh/product/temperature-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
     },
-    {
-      "id": "pressure-sensor",
-      "slug": "pressure-sensor",
-      "categoryId": "pressure",
-      "sortOrder": 30,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Pressure Sensor",
-          "summary": "",
-          "url": "/product/pressure-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "压力传感器",
-          "summary": "",
-          "url": "/zh/product/pressure-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de presión",
-          "summary": "",
-          "url": "/es/product/pressure-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Drucksensor",
-          "summary": "",
-          "url": "/de/product/pressure-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "圧力センサー",
-          "summary": "",
-          "url": "/ja/product/pressure-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur de pression",
-          "summary": "",
-          "url": "/fr/product/pressure-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик давления",
-          "summary": "",
-          "url": "/ru/product/pressure-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
+    "es": {
+     "name": "Sensor de temperatura",
+     "summary": "",
+     "url": "/es/product/temperature-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
     },
-    {
-      "id": "soil-moisture-sensor",
-      "slug": "soil-moisture-sensor",
-      "categoryId": "soil",
-      "sortOrder": 40,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Soil Sensor",
-          "summary": "",
-          "url": "/product/soil-moisture-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "土壤传感器",
-          "summary": "",
-          "url": "/zh/product/soil-moisture-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de suelo",
-          "summary": "",
-          "url": "/es/product/soil-moisture-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Bodensensor",
-          "summary": "",
-          "url": "/de/product/soil-moisture-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "土壌センサー",
-          "summary": "",
-          "url": "/ja/product/soil-moisture-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur de sol",
-          "summary": "",
-          "url": "/fr/product/soil-moisture-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик почвы",
-          "summary": "",
-          "url": "/ru/product/soil-moisture-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
+    "de": {
+     "name": "Temperatursensor",
+     "summary": "",
+     "url": "/de/product/temperature-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
     },
-    {
-      "id": "liquid-level-sensor",
-      "slug": "liquid-level-sensor",
-      "categoryId": "liquid-level",
-      "sortOrder": 50,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Submersible Level Sensor",
-          "summary": "",
-          "url": "/product/liquid-level-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "液位传感器",
-          "summary": "",
-          "url": "/zh/product/liquid-level-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de nivel sumergible",
-          "summary": "",
-          "url": "/es/product/liquid-level-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Tauch-Füllstandssensor",
-          "summary": "",
-          "url": "/de/product/liquid-level-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "投入式レベルセンサー",
-          "summary": "",
-          "url": "/ja/product/liquid-level-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur de niveau submersible",
-          "summary": "",
-          "url": "/fr/product/liquid-level-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Погружной датчик уровня",
-          "summary": "",
-          "url": "/ru/product/liquid-level-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
+    "ja": {
+     "name": "温度センサー",
+     "summary": "",
+     "url": "/ja/product/temperature-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
     },
-    {
-      "id": "tilt-sensor",
-      "slug": "tilt-sensor",
-      "categoryId": "tilt",
-      "sortOrder": 60,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "High-precision Tilt Sensor",
-          "summary": "",
-          "url": "/product/tilt-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "高精度倾斜传感器",
-          "summary": "",
-          "url": "/zh/product/tilt-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de inclinación de alta precisión",
-          "summary": "",
-          "url": "/es/product/tilt-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Neigungssensor mit hoher Genauigkeit",
-          "summary": "",
-          "url": "/de/product/tilt-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "高精度傾斜センサー",
-          "summary": "",
-          "url": "/ja/product/tilt-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur d’inclinaison de haute précision",
-          "summary": "",
-          "url": "/fr/product/tilt-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик наклона высокой точности",
-          "summary": "",
-          "url": "/ru/product/tilt-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
+    "fr": {
+     "name": "Capteur de température",
+     "summary": "",
+     "url": "/fr/product/temperature-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
     },
-    {
-      "id": "radar-distance-sensor",
-      "slug": "radar-distance-sensor",
-      "categoryId": "distance",
-      "sortOrder": 70,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Radar Distance Sensor",
-          "summary": "",
-          "url": "/product/radar-distance-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "高精度测距",
-          "summary": "",
-          "url": "/zh/product/radar-distance-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de distancia por radar",
-          "summary": "",
-          "url": "/es/product/radar-distance-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Radar-Abstandssensor",
-          "summary": "",
-          "url": "/de/product/radar-distance-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "レーダー距離センサー",
-          "summary": "",
-          "url": "/ja/product/radar-distance-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur de distance radar",
-          "summary": "",
-          "url": "/fr/product/radar-distance-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Радарный датчик расстояния",
-          "summary": "",
-          "url": "/ru/product/radar-distance-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
-    },
-    {
-      "id": "vibration-sensor",
-      "slug": "vibration-sensor",
-      "categoryId": "vibration",
-      "sortOrder": 80,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Vibration Sensor",
-          "summary": "",
-          "url": "/product/vibration-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "振动传感器",
-          "summary": "",
-          "url": "/zh/product/vibration-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de vibración",
-          "summary": "",
-          "url": "/es/product/vibration-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Vibrationssensor",
-          "summary": "",
-          "url": "/de/product/vibration-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "振動センサー",
-          "summary": "",
-          "url": "/ja/product/vibration-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur de vibrations",
-          "summary": "",
-          "url": "/fr/product/vibration-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик вибрации",
-          "summary": "",
-          "url": "/ru/product/vibration-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
-    },
-    {
-      "id": "air-quality-sensor",
-      "slug": "air-quality-sensor",
-      "categoryId": "air-quality",
-      "sortOrder": 90,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Air Quality Sensor",
-          "summary": "",
-          "url": "/product/air-quality-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "空气质量",
-          "summary": "",
-          "url": "/zh/product/air-quality-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de calidad del aire",
-          "summary": "",
-          "url": "/es/product/air-quality-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Luftqualitätssensor",
-          "summary": "",
-          "url": "/de/product/air-quality-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "空気質センサー",
-          "summary": "",
-          "url": "/ja/product/air-quality-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur de qualité de l’air",
-          "summary": "",
-          "url": "/fr/product/air-quality-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик качества воздуха",
-          "summary": "",
-          "url": "/ru/product/air-quality-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
-    },
-    {
-      "id": "temperature-humidity-sensor",
-      "slug": "temperature-humidity-sensor",
-      "categoryId": "temperature",
-      "sortOrder": 100,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Temperature and Humidity Sensor",
-          "summary": "",
-          "url": "/product/temperature-humidity-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "温湿度传感器",
-          "summary": "",
-          "url": "/zh/product/temperature-humidity-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de temperatura y humedad",
-          "summary": "",
-          "url": "/es/product/temperature-humidity-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Temperatur- und Feuchtigkeitssensor",
-          "summary": "",
-          "url": "/de/product/temperature-humidity-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "温度・湿度センサー",
-          "summary": "",
-          "url": "/ja/product/temperature-humidity-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur de température et d’humidité",
-          "summary": "",
-          "url": "/fr/product/temperature-humidity-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик температуры и влажности",
-          "summary": "",
-          "url": "/ru/product/temperature-humidity-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
-    },
-    {
-      "id": "temperature-humidity-data-logger",
-      "slug": "temperature-humidity-data-logger",
-      "categoryId": "temperature",
-      "sortOrder": 110,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Temperature and Humidity Data Logger",
-          "summary": "",
-          "url": "/product/temperature-humidity-data-logger",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "温湿度记录仪",
-          "summary": "",
-          "url": "/zh/product/temperature-humidity-data-logger",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Registrador de datos de temperatura y humedad",
-          "summary": "",
-          "url": "/es/product/temperature-humidity-data-logger",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Datenlogger für Temperatur und Feuchtigkeit",
-          "summary": "",
-          "url": "/de/product/temperature-humidity-data-logger",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "温度・湿度データロガー",
-          "summary": "",
-          "url": "/ja/product/temperature-humidity-data-logger",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Enregistreur de données de température et d’humidité",
-          "summary": "",
-          "url": "/fr/product/temperature-humidity-data-logger",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Регистратор данных температуры и влажности",
-          "summary": "",
-          "url": "/ru/product/temperature-humidity-data-logger",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
-    },
-    {
-      "id": "tvoc-sensor",
-      "slug": "tvoc-sensor",
-      "categoryId": "air-quality",
-      "sortOrder": 120,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "TVOC Sensor",
-          "summary": "",
-          "url": "/product/tvoc-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "TVOC传感器",
-          "summary": "",
-          "url": "/zh/product/tvoc-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de TVOC",
-          "summary": "",
-          "url": "/es/product/tvoc-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "TVOC-Sensor",
-          "summary": "",
-          "url": "/de/product/tvoc-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "TVOCセンサー",
-          "summary": "",
-          "url": "/ja/product/tvoc-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur TVOC",
-          "summary": "",
-          "url": "/fr/product/tvoc-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик TVOC",
-          "summary": "",
-          "url": "/ru/product/tvoc-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
-    },
-    {
-      "id": "asset-tracking-sensor",
-      "slug": "asset-tracking-sensor",
-      "categoryId": "asset-tracking",
-      "sortOrder": 130,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Asset Tracking Sensor",
-          "summary": "",
-          "url": "/product/asset-tracking-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "资产定位终端",
-          "summary": "",
-          "url": "/zh/product/asset-tracking-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de rastreo de activos",
-          "summary": "",
-          "url": "/es/product/asset-tracking-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Asset-Tracking-Sensor",
-          "summary": "",
-          "url": "/de/product/asset-tracking-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "資産追跡センサー",
-          "summary": "",
-          "url": "/ja/product/asset-tracking-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur de suivi d’actifs",
-          "summary": "",
-          "url": "/fr/product/asset-tracking-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик отслеживания активов",
-          "summary": "",
-          "url": "/ru/product/asset-tracking-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
-    },
-    {
-      "id": "custom-gas-sensor",
-      "slug": "custom-gas-sensor",
-      "categoryId": "air-quality",
-      "sortOrder": 140,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "",
-        "alt": ""
-      },
-      "locales": {
-        "en": {
-          "name": "Custom Gas Sensor",
-          "summary": "",
-          "url": "/product/custom-gas-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "zh": {
-          "name": "定制气体传感器",
-          "summary": "",
-          "url": "/zh/product/custom-gas-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de gas personalizado",
-          "summary": "",
-          "url": "/es/product/custom-gas-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "de": {
-          "name": "Kundenspezifischer Gassensor",
-          "summary": "",
-          "url": "/de/product/custom-gas-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ja": {
-          "name": "カスタムガスセンサー",
-          "summary": "",
-          "url": "/ja/product/custom-gas-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur de gaz personnalisé",
-          "summary": "",
-          "url": "/fr/product/custom-gas-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик газа по заказу",
-          "summary": "",
-          "url": "/ru/product/custom-gas-sensor",
-          "seoTitle": "",
-          "seoDescription": "",
-          "body": "",
-          "imageAlt": "",
-          "published": true
-        }
-      }
-    },
-    {
-      "id": "tilt-medium-precision-sensor",
-      "slug": "tilt-medium-precision-sensor",
-      "categoryId": "tilt",
-      "sortOrder": 31,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "/images/products/tilt-medium-precision-0-1.svg",
-        "alt": "Hitelecom H310-TS150M medium-precision tilt sensor"
-      },
-      "locales": {
-        "en": {
-          "name": "Medium-precision Tilt Sensor",
-          "summary": "H310-TS150M medium-precision tilt sensor with ±0.1° accuracy for local inclination trends and equipment orientation. Specify installation and reporting around your site.",
-          "url": "/product/tilt-medium-precision-sensor",
-          "seoTitle": "H310-TS150M ±0.1° Tilt Sensor | Hitelecom",
-          "seoDescription": "H310-TS150M medium-precision tilt sensor with ±0.1° accuracy for local inclination trends and equipment orientation. Specify installation and reporting around your site.",
-          "body": "",
-          "imageAlt": "Hitelecom H310-TS150M medium-precision tilt sensor",
-          "published": true
-        },
-        "zh": {
-          "name": "中精度倾斜传感器",
-          "summary": "H310-TS150M ±0.1° 倾斜传感器，适用于仓储、基础设施及工业设备倾角记录。探索覆盖九类行业的39项应用。",
-          "url": "/zh/product/tilt-medium-precision-sensor",
-          "seoTitle": "±0.1° 倾斜传感器 | H310-TS150M | Hitelecom",
-          "seoDescription": "H310-TS150M ±0.1° 倾斜传感器，适用于仓储、基础设施及工业设备倾角记录。探索覆盖九类行业的39项应用。",
-          "body": "",
-          "imageAlt": "Hitelecom H310-TS150M 中等精度倾斜传感器官方产品图",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de inclinación de precisión media",
-          "summary": "Sensor de inclinación H310-TS150M de ±0.1° para registros angulares en almacenes, infraestructuras e instalaciones industriales. Explore 39 aplicaciones en nueve sectores.",
-          "url": "/es/product/tilt-medium-precision-sensor",
-          "seoTitle": "Sensor de inclinación de ±0.1° | H310-TS150M | Hitelecom",
-          "seoDescription": "Sensor de inclinación H310-TS150M de ±0.1° para registros angulares en almacenes, infraestructuras e instalaciones industriales. Explore 39 aplicaciones en nueve sectores.",
-          "body": "",
-          "imageAlt": "Sensor de inclinación de precisión media Hitelecom H310-TS150M, imagen oficial del producto",
-          "published": true
-        },
-        "de": {
-          "name": "Neigungssensor mit mittlerer Genauigkeit",
-          "summary": "Neigungssensor H310-TS150M mit ±0.1° Genauigkeit zur Erfassung von Neigungen in Lagern, an Infrastrukturbauwerken und Industrieanlagen. Entdecken Sie 39 Anwendungen in neun Branchen.",
-          "url": "/de/product/tilt-medium-precision-sensor",
-          "seoTitle": "Neigungssensor ±0.1° | H310-TS150M | Hitelecom",
-          "seoDescription": "Neigungssensor H310-TS150M mit ±0.1° Genauigkeit zur Erfassung von Neigungen in Lagern, an Infrastrukturbauwerken und Industrieanlagen. Entdecken Sie 39 Anwendungen in neun Branchen.",
-          "body": "",
-          "imageAlt": "Hitelecom Neigungssensor H310-TS150M mit mittlerer Genauigkeit, offizielles Produktbild",
-          "published": true
-        },
-        "ja": {
-          "name": "中精度傾斜センサー",
-          "summary": "H310-TS150Mは、倉庫、インフラ、産業設備の傾斜記録に対応する精度±0.1°の傾斜センサーです。9分野・39件の用途をご紹介します。",
-          "url": "/ja/product/tilt-medium-precision-sensor",
-          "seoTitle": "±0.1° 傾斜センサー | H310-TS150M | Hitelecom",
-          "seoDescription": "H310-TS150Mは、倉庫、インフラ、産業設備の傾斜記録に対応する精度±0.1°の傾斜センサーです。9分野・39件の用途をご紹介します。",
-          "body": "",
-          "imageAlt": "Hitelecom H310-TS150M中精度傾斜センサーの公式製品画像",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur d’inclinaison de précision moyenne",
-          "summary": "Capteur d’inclinaison H310-TS150M ±0.1° pour le suivi en entrepôt, dans les infrastructures et l’industrie. Découvrez 39 applications dans neuf secteurs.",
-          "url": "/fr/product/tilt-medium-precision-sensor",
-          "seoTitle": "Capteur d’inclinaison ±0.1° | H310-TS150M | Hitelecom",
-          "seoDescription": "Capteur d’inclinaison H310-TS150M ±0.1° pour le suivi en entrepôt, dans les infrastructures et l’industrie. Découvrez 39 applications dans neuf secteurs.",
-          "body": "",
-          "imageAlt": "Capteur d’inclinaison Hitelecom H310-TS150M de précision moyenne, image officielle du produit",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик наклона средней точности",
-          "summary": "Датчик наклона H310-TS150M ±0.1° для регистрации наклона складских, инфраструктурных и промышленных объектов. 39 применений в девяти отраслях.",
-          "url": "/ru/product/tilt-medium-precision-sensor",
-          "seoTitle": "Датчик наклона ±0.1° | H310-TS150M | Hitelecom",
-          "seoDescription": "Датчик наклона H310-TS150M ±0.1° для регистрации наклона складских, инфраструктурных и промышленных объектов. 39 применений в девяти отраслях.",
-          "body": "",
-          "imageAlt": "Датчик наклона средней точности Hitelecom H310-TS150M, официальное изображение изделия",
-          "published": true
-        }
-      }
-    },
-    {
-      "id": "tilt-low-precision-sensor",
-      "slug": "tilt-low-precision-sensor",
-      "categoryId": "tilt",
-      "sortOrder": 32,
-      "status": "published",
-      "managedPage": false,
-      "image": {
-        "src": "/images/products/tilt-low-precision-1.svg",
-        "alt": "Hitelecom H310-TS100L low-precision tilt sensor"
-      },
-      "locales": {
-        "en": {
-          "name": "Low-precision Tilt Sensor",
-          "summary": "H310-TS100L ±1° tilt sensor for economical multi-point monitoring. Explore 21 applications for light poles, racks up to 8 m, ASRS frames and fixed assets.",
-          "url": "/product/tilt-low-precision-sensor",
-          "seoTitle": "H310-TS100L ±1° Tilt Sensor | Hitelecom",
-          "seoDescription": "H310-TS100L ±1° tilt sensor for economical multi-point monitoring. Explore 21 applications for light poles, racks up to 8 m, ASRS frames and fixed assets.",
-          "body": "",
-          "imageAlt": "Hitelecom H310-TS100L low-precision tilt sensor",
-          "published": true
-        },
-        "zh": {
-          "name": "低精度倾斜传感器",
-          "summary": "H310-TS100L ±1° 倾斜传感器，面向经济型多点监测。探索灯杆、8米及以下货架、立体库框架及固定资产的21项应用。",
-          "url": "/zh/product/tilt-low-precision-sensor",
-          "seoTitle": "±1° 倾斜传感器 | H310-TS100L | Hitelecom",
-          "seoDescription": "H310-TS100L ±1° 倾斜传感器，面向经济型多点监测。探索灯杆、8米及以下货架、立体库框架及固定资产的21项应用。",
-          "body": "",
-          "imageAlt": "Hitelecom H310-TS100L 低精度倾斜传感器官方产品图",
-          "published": true
-        },
-        "es": {
-          "name": "Sensor de inclinación de baja precisión",
-          "summary": "Sensor de inclinación H310-TS100L de ±1° para monitoreo económico multipunto. Explore 21 aplicaciones en postes de alumbrado, estanterías de hasta 8 m, estructuras ASRS y activos fijos.",
-          "url": "/es/product/tilt-low-precision-sensor",
-          "seoTitle": "Sensor de inclinación de ±1° | H310-TS100L | Hitelecom",
-          "seoDescription": "Sensor de inclinación H310-TS100L de ±1° para monitoreo económico multipunto. Explore 21 aplicaciones en postes de alumbrado, estanterías de hasta 8 m, estructuras ASRS y activos fijos.",
-          "body": "",
-          "imageAlt": "Sensor de inclinación de baja precisión Hitelecom H310-TS100L, imagen oficial del producto",
-          "published": true
-        },
-        "de": {
-          "name": "Neigungssensor mit niedriger Genauigkeit",
-          "summary": "Neigungssensor H310-TS100L mit ±1° Genauigkeit für wirtschaftliche Mehrpunktüberwachung. 21 Anwendungen für Lichtmasten, Regale bis 8 m, automatisierte Lagerrahmen und feste Objekte.",
-          "url": "/de/product/tilt-low-precision-sensor",
-          "seoTitle": "Neigungssensor ±1° | H310-TS100L | Hitelecom",
-          "seoDescription": "Neigungssensor H310-TS100L mit ±1° Genauigkeit für wirtschaftliche Mehrpunktüberwachung. 21 Anwendungen für Lichtmasten, Regale bis 8 m, automatisierte Lagerrahmen und feste Objekte.",
-          "body": "",
-          "imageAlt": "Hitelecom Neigungssensor H310-TS100L mit niedriger Genauigkeitsklasse, offizielles Produktbild",
-          "published": true
-        },
-        "ja": {
-          "name": "低精度傾斜センサー",
-          "summary": "H310-TS100Lは、経済的な多点監視に向けた精度±1°の傾斜センサーです。照明柱、高さ8 m以下のラック、自動倉庫フレーム、固定設備など21件の用途をご紹介します。",
-          "url": "/ja/product/tilt-low-precision-sensor",
-          "seoTitle": "±1° 傾斜センサー | H310-TS100L | Hitelecom",
-          "seoDescription": "H310-TS100Lは、経済的な多点監視に向けた精度±1°の傾斜センサーです。照明柱、高さ8 m以下のラック、自動倉庫フレーム、固定設備など21件の用途をご紹介します。",
-          "body": "",
-          "imageAlt": "Hitelecom H310-TS100L低精度傾斜センサーの公式製品画像",
-          "published": true
-        },
-        "fr": {
-          "name": "Capteur d’inclinaison de faible précision",
-          "summary": "Capteur d’inclinaison H310-TS100L ±1° pour une surveillance multipoint économique. Découvrez 21 applications : mâts, rayonnages jusqu’à 8 m, structures automatisées et actifs fixes.",
-          "url": "/fr/product/tilt-low-precision-sensor",
-          "seoTitle": "Capteur d’inclinaison ±1° | H310-TS100L | Hitelecom",
-          "seoDescription": "Capteur d’inclinaison H310-TS100L ±1° pour une surveillance multipoint économique. Découvrez 21 applications : mâts, rayonnages jusqu’à 8 m, structures automatisées et actifs fixes.",
-          "body": "",
-          "imageAlt": "Capteur d’inclinaison Hitelecom H310-TS100L basse précision, image officielle du produit",
-          "published": true
-        },
-        "ru": {
-          "name": "Датчик наклона низкой точности",
-          "summary": "Датчик наклона H310-TS100L ±1° для экономичного многоточечного мониторинга. 21 применение для опор освещения, стеллажей до 8 м, рам ASRS и стационарных объектов.",
-          "url": "/ru/product/tilt-low-precision-sensor",
-          "seoTitle": "Датчик наклона ±1° | H310-TS100L | Hitelecom",
-          "seoDescription": "Датчик наклона H310-TS100L ±1° для экономичного многоточечного мониторинга. 21 применение для опор освещения, стеллажей до 8 м, рам ASRS и стационарных объектов.",
-          "body": "",
-          "imageAlt": "Датчик наклона низкой точности Hitelecom H310-TS100L, официальное изображение изделия",
-          "published": true
-        }
-      }
+    "ru": {
+     "name": "Датчик температуры",
+     "summary": "",
+     "url": "/ru/product/temperature-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
     }
-  ]
+   }
+  },
+  {
+   "id": "water-leakage-sensor",
+   "slug": "water-leakage-sensor",
+   "categoryId": "water-leak",
+   "sortOrder": 20,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Water Leak Sensor",
+     "summary": "",
+     "url": "/product/water-leakage-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "水浸传感器",
+     "summary": "",
+     "url": "/zh/product/water-leakage-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de fugas de agua",
+     "summary": "",
+     "url": "/es/product/water-leakage-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Wasserleckagesensor",
+     "summary": "",
+     "url": "/de/product/water-leakage-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "漏水センサー",
+     "summary": "",
+     "url": "/ja/product/water-leakage-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur de fuite d’eau",
+     "summary": "",
+     "url": "/fr/product/water-leakage-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик протечки воды",
+     "summary": "",
+     "url": "/ru/product/water-leakage-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "pressure-sensor",
+   "slug": "pressure-sensor",
+   "categoryId": "pressure",
+   "sortOrder": 30,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Pressure Sensor",
+     "summary": "",
+     "url": "/product/pressure-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "压力传感器",
+     "summary": "",
+     "url": "/zh/product/pressure-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de presión",
+     "summary": "",
+     "url": "/es/product/pressure-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Drucksensor",
+     "summary": "",
+     "url": "/de/product/pressure-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "圧力センサー",
+     "summary": "",
+     "url": "/ja/product/pressure-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur de pression",
+     "summary": "",
+     "url": "/fr/product/pressure-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик давления",
+     "summary": "",
+     "url": "/ru/product/pressure-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "soil-moisture-sensor",
+   "slug": "soil-moisture-sensor",
+   "categoryId": "soil",
+   "sortOrder": 40,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Soil Sensor",
+     "summary": "",
+     "url": "/product/soil-moisture-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "土壤传感器",
+     "summary": "",
+     "url": "/zh/product/soil-moisture-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de suelo",
+     "summary": "",
+     "url": "/es/product/soil-moisture-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Bodensensor",
+     "summary": "",
+     "url": "/de/product/soil-moisture-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "土壌センサー",
+     "summary": "",
+     "url": "/ja/product/soil-moisture-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur de sol",
+     "summary": "",
+     "url": "/fr/product/soil-moisture-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик почвы",
+     "summary": "",
+     "url": "/ru/product/soil-moisture-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "liquid-level-sensor",
+   "slug": "liquid-level-sensor",
+   "categoryId": "liquid-level",
+   "sortOrder": 50,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Submersible Level Sensor",
+     "summary": "",
+     "url": "/product/liquid-level-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "液位传感器",
+     "summary": "",
+     "url": "/zh/product/liquid-level-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de nivel sumergible",
+     "summary": "",
+     "url": "/es/product/liquid-level-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Tauch-Füllstandssensor",
+     "summary": "",
+     "url": "/de/product/liquid-level-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "投入式レベルセンサー",
+     "summary": "",
+     "url": "/ja/product/liquid-level-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur de niveau submersible",
+     "summary": "",
+     "url": "/fr/product/liquid-level-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Погружной датчик уровня",
+     "summary": "",
+     "url": "/ru/product/liquid-level-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "tilt-sensor",
+   "slug": "tilt-sensor",
+   "categoryId": "tilt",
+   "sortOrder": 60,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "High-precision Tilt Sensor",
+     "summary": "",
+     "url": "/product/tilt-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "高精度倾斜传感器",
+     "summary": "",
+     "url": "/zh/product/tilt-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de inclinación de alta precisión",
+     "summary": "",
+     "url": "/es/product/tilt-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Neigungssensor mit hoher Genauigkeit",
+     "summary": "",
+     "url": "/de/product/tilt-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "高精度傾斜センサー",
+     "summary": "",
+     "url": "/ja/product/tilt-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur d’inclinaison de haute précision",
+     "summary": "",
+     "url": "/fr/product/tilt-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик наклона высокой точности",
+     "summary": "",
+     "url": "/ru/product/tilt-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "radar-distance-sensor",
+   "slug": "radar-distance-sensor",
+   "categoryId": "distance",
+   "sortOrder": 70,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Radar Distance Sensor",
+     "summary": "",
+     "url": "/product/radar-distance-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "高精度测距",
+     "summary": "",
+     "url": "/zh/product/radar-distance-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de distancia por radar",
+     "summary": "",
+     "url": "/es/product/radar-distance-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Radar-Abstandssensor",
+     "summary": "",
+     "url": "/de/product/radar-distance-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "レーダー距離センサー",
+     "summary": "",
+     "url": "/ja/product/radar-distance-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur de distance radar",
+     "summary": "",
+     "url": "/fr/product/radar-distance-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Радарный датчик расстояния",
+     "summary": "",
+     "url": "/ru/product/radar-distance-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "vibration-sensor",
+   "slug": "vibration-sensor",
+   "categoryId": "vibration",
+   "sortOrder": 80,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Vibration Sensor",
+     "summary": "",
+     "url": "/product/vibration-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "振动传感器",
+     "summary": "",
+     "url": "/zh/product/vibration-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de vibración",
+     "summary": "",
+     "url": "/es/product/vibration-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Vibrationssensor",
+     "summary": "",
+     "url": "/de/product/vibration-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "振動センサー",
+     "summary": "",
+     "url": "/ja/product/vibration-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur de vibrations",
+     "summary": "",
+     "url": "/fr/product/vibration-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик вибрации",
+     "summary": "",
+     "url": "/ru/product/vibration-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "air-quality-sensor",
+   "slug": "air-quality-sensor",
+   "categoryId": "air-quality",
+   "sortOrder": 90,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Air Quality Sensor",
+     "summary": "",
+     "url": "/product/air-quality-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "空气质量",
+     "summary": "",
+     "url": "/zh/product/air-quality-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de calidad del aire",
+     "summary": "",
+     "url": "/es/product/air-quality-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Luftqualitätssensor",
+     "summary": "",
+     "url": "/de/product/air-quality-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "空気質センサー",
+     "summary": "",
+     "url": "/ja/product/air-quality-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur de qualité de l’air",
+     "summary": "",
+     "url": "/fr/product/air-quality-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик качества воздуха",
+     "summary": "",
+     "url": "/ru/product/air-quality-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "temperature-humidity-sensor",
+   "slug": "temperature-humidity-sensor",
+   "categoryId": "temperature",
+   "sortOrder": 100,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Temperature and Humidity Sensor",
+     "summary": "",
+     "url": "/product/temperature-humidity-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "温湿度传感器",
+     "summary": "",
+     "url": "/zh/product/temperature-humidity-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de temperatura y humedad",
+     "summary": "",
+     "url": "/es/product/temperature-humidity-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Temperatur- und Feuchtigkeitssensor",
+     "summary": "",
+     "url": "/de/product/temperature-humidity-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "温度・湿度センサー",
+     "summary": "",
+     "url": "/ja/product/temperature-humidity-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur de température et d’humidité",
+     "summary": "",
+     "url": "/fr/product/temperature-humidity-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик температуры и влажности",
+     "summary": "",
+     "url": "/ru/product/temperature-humidity-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "temperature-humidity-data-logger",
+   "slug": "temperature-humidity-data-logger",
+   "categoryId": "temperature",
+   "sortOrder": 110,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Temperature and Humidity Data Logger",
+     "summary": "",
+     "url": "/product/temperature-humidity-data-logger",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "温湿度记录仪",
+     "summary": "",
+     "url": "/zh/product/temperature-humidity-data-logger",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Registrador de datos de temperatura y humedad",
+     "summary": "",
+     "url": "/es/product/temperature-humidity-data-logger",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Datenlogger für Temperatur und Feuchtigkeit",
+     "summary": "",
+     "url": "/de/product/temperature-humidity-data-logger",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "温度・湿度データロガー",
+     "summary": "",
+     "url": "/ja/product/temperature-humidity-data-logger",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Enregistreur de données de température et d’humidité",
+     "summary": "",
+     "url": "/fr/product/temperature-humidity-data-logger",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Регистратор данных температуры и влажности",
+     "summary": "",
+     "url": "/ru/product/temperature-humidity-data-logger",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "tvoc-sensor",
+   "slug": "tvoc-sensor",
+   "categoryId": "air-quality",
+   "sortOrder": 120,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "TVOC Sensor",
+     "summary": "",
+     "url": "/product/tvoc-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "TVOC传感器",
+     "summary": "",
+     "url": "/zh/product/tvoc-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de TVOC",
+     "summary": "",
+     "url": "/es/product/tvoc-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "TVOC-Sensor",
+     "summary": "",
+     "url": "/de/product/tvoc-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "TVOCセンサー",
+     "summary": "",
+     "url": "/ja/product/tvoc-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur TVOC",
+     "summary": "",
+     "url": "/fr/product/tvoc-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик TVOC",
+     "summary": "",
+     "url": "/ru/product/tvoc-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "asset-tracking-sensor",
+   "slug": "asset-tracking-sensor",
+   "categoryId": "asset-tracking",
+   "sortOrder": 130,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Asset Tracking Sensor",
+     "summary": "",
+     "url": "/product/asset-tracking-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "资产定位终端",
+     "summary": "",
+     "url": "/zh/product/asset-tracking-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de rastreo de activos",
+     "summary": "",
+     "url": "/es/product/asset-tracking-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Asset-Tracking-Sensor",
+     "summary": "",
+     "url": "/de/product/asset-tracking-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "資産追跡センサー",
+     "summary": "",
+     "url": "/ja/product/asset-tracking-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur de suivi d’actifs",
+     "summary": "",
+     "url": "/fr/product/asset-tracking-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик отслеживания активов",
+     "summary": "",
+     "url": "/ru/product/asset-tracking-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "custom-gas-sensor",
+   "slug": "custom-gas-sensor",
+   "categoryId": "air-quality",
+   "sortOrder": 140,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "",
+    "alt": ""
+   },
+   "locales": {
+    "en": {
+     "name": "Custom Gas Sensor",
+     "summary": "",
+     "url": "/product/custom-gas-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "zh": {
+     "name": "定制气体传感器",
+     "summary": "",
+     "url": "/zh/product/custom-gas-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de gas personalizado",
+     "summary": "",
+     "url": "/es/product/custom-gas-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "de": {
+     "name": "Kundenspezifischer Gassensor",
+     "summary": "",
+     "url": "/de/product/custom-gas-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ja": {
+     "name": "カスタムガスセンサー",
+     "summary": "",
+     "url": "/ja/product/custom-gas-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur de gaz personnalisé",
+     "summary": "",
+     "url": "/fr/product/custom-gas-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик газа по заказу",
+     "summary": "",
+     "url": "/ru/product/custom-gas-sensor",
+     "seoTitle": "",
+     "seoDescription": "",
+     "body": "",
+     "imageAlt": "",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "tilt-medium-precision-sensor",
+   "slug": "tilt-medium-precision-sensor",
+   "categoryId": "tilt",
+   "sortOrder": 31,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "/images/products/tilt-medium-precision-0-1.svg",
+    "alt": "Hitelecom H310-TS150M medium-precision tilt sensor"
+   },
+   "locales": {
+    "en": {
+     "name": "Medium-precision Tilt Sensor",
+     "summary": "H310-TS150M medium-precision tilt sensor with ±0.1° accuracy for local inclination trends and equipment orientation. Specify installation and reporting around your site.",
+     "url": "/product/tilt-medium-precision-sensor",
+     "seoTitle": "H310-TS150M ±0.1° Tilt Sensor | Hitelecom",
+     "seoDescription": "H310-TS150M medium-precision tilt sensor with ±0.1° accuracy for local inclination trends and equipment orientation. Specify installation and reporting around your site.",
+     "body": "",
+     "imageAlt": "Hitelecom H310-TS150M medium-precision tilt sensor",
+     "published": true
+    },
+    "zh": {
+     "name": "中精度倾斜传感器",
+     "summary": "H310-TS150M ±0.1° 倾斜传感器，适用于仓储、基础设施及工业设备倾角记录。探索覆盖九类行业的39项应用。",
+     "url": "/zh/product/tilt-medium-precision-sensor",
+     "seoTitle": "±0.1° 倾斜传感器 | H310-TS150M | Hitelecom",
+     "seoDescription": "H310-TS150M ±0.1° 倾斜传感器，适用于仓储、基础设施及工业设备倾角记录。探索覆盖九类行业的39项应用。",
+     "body": "",
+     "imageAlt": "Hitelecom H310-TS150M 中等精度倾斜传感器官方产品图",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de inclinación de precisión media",
+     "summary": "Sensor de inclinación H310-TS150M de ±0.1° para registros angulares en almacenes, infraestructuras e instalaciones industriales. Explore 39 aplicaciones en nueve sectores.",
+     "url": "/es/product/tilt-medium-precision-sensor",
+     "seoTitle": "Sensor de inclinación de ±0.1° | H310-TS150M | Hitelecom",
+     "seoDescription": "Sensor de inclinación H310-TS150M de ±0.1° para registros angulares en almacenes, infraestructuras e instalaciones industriales. Explore 39 aplicaciones en nueve sectores.",
+     "body": "",
+     "imageAlt": "Sensor de inclinación de precisión media Hitelecom H310-TS150M, imagen oficial del producto",
+     "published": true
+    },
+    "de": {
+     "name": "Neigungssensor mit mittlerer Genauigkeit",
+     "summary": "Neigungssensor H310-TS150M mit ±0.1° Genauigkeit zur Erfassung von Neigungen in Lagern, an Infrastrukturbauwerken und Industrieanlagen. Entdecken Sie 39 Anwendungen in neun Branchen.",
+     "url": "/de/product/tilt-medium-precision-sensor",
+     "seoTitle": "Neigungssensor ±0.1° | H310-TS150M | Hitelecom",
+     "seoDescription": "Neigungssensor H310-TS150M mit ±0.1° Genauigkeit zur Erfassung von Neigungen in Lagern, an Infrastrukturbauwerken und Industrieanlagen. Entdecken Sie 39 Anwendungen in neun Branchen.",
+     "body": "",
+     "imageAlt": "Hitelecom Neigungssensor H310-TS150M mit mittlerer Genauigkeit, offizielles Produktbild",
+     "published": true
+    },
+    "ja": {
+     "name": "中精度傾斜センサー",
+     "summary": "H310-TS150Mは、倉庫、インフラ、産業設備の傾斜記録に対応する精度±0.1°の傾斜センサーです。9分野・39件の用途をご紹介します。",
+     "url": "/ja/product/tilt-medium-precision-sensor",
+     "seoTitle": "±0.1° 傾斜センサー | H310-TS150M | Hitelecom",
+     "seoDescription": "H310-TS150Mは、倉庫、インフラ、産業設備の傾斜記録に対応する精度±0.1°の傾斜センサーです。9分野・39件の用途をご紹介します。",
+     "body": "",
+     "imageAlt": "Hitelecom H310-TS150M中精度傾斜センサーの公式製品画像",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur d’inclinaison de précision moyenne",
+     "summary": "Capteur d’inclinaison H310-TS150M ±0.1° pour le suivi en entrepôt, dans les infrastructures et l’industrie. Découvrez 39 applications dans neuf secteurs.",
+     "url": "/fr/product/tilt-medium-precision-sensor",
+     "seoTitle": "Capteur d’inclinaison ±0.1° | H310-TS150M | Hitelecom",
+     "seoDescription": "Capteur d’inclinaison H310-TS150M ±0.1° pour le suivi en entrepôt, dans les infrastructures et l’industrie. Découvrez 39 applications dans neuf secteurs.",
+     "body": "",
+     "imageAlt": "Capteur d’inclinaison Hitelecom H310-TS150M de précision moyenne, image officielle du produit",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик наклона средней точности",
+     "summary": "Датчик наклона H310-TS150M ±0.1° для регистрации наклона складских, инфраструктурных и промышленных объектов. 39 применений в девяти отраслях.",
+     "url": "/ru/product/tilt-medium-precision-sensor",
+     "seoTitle": "Датчик наклона ±0.1° | H310-TS150M | Hitelecom",
+     "seoDescription": "Датчик наклона H310-TS150M ±0.1° для регистрации наклона складских, инфраструктурных и промышленных объектов. 39 применений в девяти отраслях.",
+     "body": "",
+     "imageAlt": "Датчик наклона средней точности Hitelecom H310-TS150M, официальное изображение изделия",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "tilt-low-precision-sensor",
+   "slug": "tilt-low-precision-sensor",
+   "categoryId": "tilt",
+   "sortOrder": 32,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "/images/products/tilt-low-precision-1.svg",
+    "alt": "Hitelecom H310-TS100L low-precision tilt sensor"
+   },
+   "locales": {
+    "en": {
+     "name": "Low-precision Tilt Sensor",
+     "summary": "H310-TS100L ±1° tilt sensor for economical multi-point monitoring. Explore 21 applications for light poles, racks up to 8 m, ASRS frames and fixed assets.",
+     "url": "/product/tilt-low-precision-sensor",
+     "seoTitle": "H310-TS100L ±1° Tilt Sensor | Hitelecom",
+     "seoDescription": "H310-TS100L ±1° tilt sensor for economical multi-point monitoring. Explore 21 applications for light poles, racks up to 8 m, ASRS frames and fixed assets.",
+     "body": "",
+     "imageAlt": "Hitelecom H310-TS100L low-precision tilt sensor",
+     "published": true
+    },
+    "zh": {
+     "name": "低精度倾斜传感器",
+     "summary": "H310-TS100L ±1° 倾斜传感器，面向经济型多点监测。探索灯杆、8米及以下货架、立体库框架及固定资产的21项应用。",
+     "url": "/zh/product/tilt-low-precision-sensor",
+     "seoTitle": "±1° 倾斜传感器 | H310-TS100L | Hitelecom",
+     "seoDescription": "H310-TS100L ±1° 倾斜传感器，面向经济型多点监测。探索灯杆、8米及以下货架、立体库框架及固定资产的21项应用。",
+     "body": "",
+     "imageAlt": "Hitelecom H310-TS100L 低精度倾斜传感器官方产品图",
+     "published": true
+    },
+    "es": {
+     "name": "Sensor de inclinación de baja precisión",
+     "summary": "Sensor de inclinación H310-TS100L de ±1° para monitoreo económico multipunto. Explore 21 aplicaciones en postes de alumbrado, estanterías de hasta 8 m, estructuras ASRS y activos fijos.",
+     "url": "/es/product/tilt-low-precision-sensor",
+     "seoTitle": "Sensor de inclinación de ±1° | H310-TS100L | Hitelecom",
+     "seoDescription": "Sensor de inclinación H310-TS100L de ±1° para monitoreo económico multipunto. Explore 21 aplicaciones en postes de alumbrado, estanterías de hasta 8 m, estructuras ASRS y activos fijos.",
+     "body": "",
+     "imageAlt": "Sensor de inclinación de baja precisión Hitelecom H310-TS100L, imagen oficial del producto",
+     "published": true
+    },
+    "de": {
+     "name": "Neigungssensor mit niedriger Genauigkeit",
+     "summary": "Neigungssensor H310-TS100L mit ±1° Genauigkeit für wirtschaftliche Mehrpunktüberwachung. 21 Anwendungen für Lichtmasten, Regale bis 8 m, automatisierte Lagerrahmen und feste Objekte.",
+     "url": "/de/product/tilt-low-precision-sensor",
+     "seoTitle": "Neigungssensor ±1° | H310-TS100L | Hitelecom",
+     "seoDescription": "Neigungssensor H310-TS100L mit ±1° Genauigkeit für wirtschaftliche Mehrpunktüberwachung. 21 Anwendungen für Lichtmasten, Regale bis 8 m, automatisierte Lagerrahmen und feste Objekte.",
+     "body": "",
+     "imageAlt": "Hitelecom Neigungssensor H310-TS100L mit niedriger Genauigkeitsklasse, offizielles Produktbild",
+     "published": true
+    },
+    "ja": {
+     "name": "低精度傾斜センサー",
+     "summary": "H310-TS100Lは、経済的な多点監視に向けた精度±1°の傾斜センサーです。照明柱、高さ8 m以下のラック、自動倉庫フレーム、固定設備など21件の用途をご紹介します。",
+     "url": "/ja/product/tilt-low-precision-sensor",
+     "seoTitle": "±1° 傾斜センサー | H310-TS100L | Hitelecom",
+     "seoDescription": "H310-TS100Lは、経済的な多点監視に向けた精度±1°の傾斜センサーです。照明柱、高さ8 m以下のラック、自動倉庫フレーム、固定設備など21件の用途をご紹介します。",
+     "body": "",
+     "imageAlt": "Hitelecom H310-TS100L低精度傾斜センサーの公式製品画像",
+     "published": true
+    },
+    "fr": {
+     "name": "Capteur d’inclinaison de faible précision",
+     "summary": "Capteur d’inclinaison H310-TS100L ±1° pour une surveillance multipoint économique. Découvrez 21 applications : mâts, rayonnages jusqu’à 8 m, structures automatisées et actifs fixes.",
+     "url": "/fr/product/tilt-low-precision-sensor",
+     "seoTitle": "Capteur d’inclinaison ±1° | H310-TS100L | Hitelecom",
+     "seoDescription": "Capteur d’inclinaison H310-TS100L ±1° pour une surveillance multipoint économique. Découvrez 21 applications : mâts, rayonnages jusqu’à 8 m, structures automatisées et actifs fixes.",
+     "body": "",
+     "imageAlt": "Capteur d’inclinaison Hitelecom H310-TS100L basse précision, image officielle du produit",
+     "published": true
+    },
+    "ru": {
+     "name": "Датчик наклона низкой точности",
+     "summary": "Датчик наклона H310-TS100L ±1° для экономичного многоточечного мониторинга. 21 применение для опор освещения, стеллажей до 8 м, рам ASRS и стационарных объектов.",
+     "url": "/ru/product/tilt-low-precision-sensor",
+     "seoTitle": "Датчик наклона ±1° | H310-TS100L | Hitelecom",
+     "seoDescription": "Датчик наклона H310-TS100L ±1° для экономичного многоточечного мониторинга. 21 применение для опор освещения, стеллажей до 8 м, рам ASRS и стационарных объектов.",
+     "body": "",
+     "imageAlt": "Датчик наклона низкой точности Hitelecom H310-TS100L, официальное изображение изделия",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "triaxial-high-precision-tilt-sensor",
+   "slug": "triaxial-high-precision-tilt-sensor",
+   "categoryId": "tilt",
+   "sortOrder": 33,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "/images/products/h310-ts380c-triaxial.svg",
+    "alt": "Hitelecom H310-TS380C triaxial high-precision tilt sensor"
+   },
+   "locales": {
+    "en": {
+     "name": "Triaxial High-precision Tilt Sensor",
+     "summary": "H310-TS380C triaxial tilt sensor with ±0.01° accuracy, X/Y/Z sensing, 1-minute acquisition and 4-hour reporting for structural members, racks, poles and equipment frames.",
+     "url": "/product/triaxial-high-precision-tilt-sensor",
+     "seoTitle": "±0.01° Triaxial Tilt Sensor | H310-TS380C | Hitelecom",
+     "seoDescription": "H310-TS380C triaxial tilt sensor with ±0.01° accuracy, X/Y/Z sensing, 1-minute acquisition and 4-hour reporting for structural members, racks, poles and equipment frames.",
+     "body": "",
+     "imageAlt": "Hitelecom H310-TS380C triaxial high-precision tilt sensor",
+     "published": true
+    }
+   }
+  },
+  {
+   "id": "triaxial-medium-precision-tilt-sensor",
+   "slug": "triaxial-medium-precision-tilt-sensor",
+   "categoryId": "tilt",
+   "sortOrder": 34,
+   "status": "published",
+   "managedPage": false,
+   "image": {
+    "src": "/images/products/h310-ts350m-triaxial.svg",
+    "alt": "Hitelecom H310-TS350M triaxial medium-precision tilt sensor"
+   },
+   "locales": {
+    "en": {
+     "name": "Triaxial Medium-precision Tilt Sensor",
+     "summary": "H310-TS350M triaxial tilt sensor with ±0.1° accuracy, X/Y/Z sensing, 1-minute acquisition and 4-hour reporting for racks, poles, fixed supports and machine frames.",
+     "url": "/product/triaxial-medium-precision-tilt-sensor",
+     "seoTitle": "±0.1° Triaxial Tilt Sensor | H310-TS350M | Hitelecom",
+     "seoDescription": "H310-TS350M triaxial tilt sensor with ±0.1° accuracy, X/Y/Z sensing, 1-minute acquisition and 4-hour reporting for racks, poles, fixed supports and machine frames.",
+     "body": "",
+     "imageAlt": "Hitelecom H310-TS350M triaxial medium-precision tilt sensor",
+     "published": true
+    }
+   }
+  }
+ ]
 }

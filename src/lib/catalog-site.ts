@@ -8,7 +8,7 @@ import catalog from '../data/product-catalog.json';
 import '../styles/sensor-catalog-layout.css';
 import { applyCatalogToExisting } from './catalog-adapter.mjs';
 import { productSlugs } from '../data/product';
-import { precisionCardRegistry, applyPrecisionCardDisplay } from './tilt-precision-cards.mjs';
+import { PRECISION_CARD_CONNECTIVITY, precisionCardRegistry, applyPrecisionCardDisplay } from './tilt-precision-cards.mjs';
 
 // 目录分类 → 官网列表 cid（261=传感器「全部」；其余为对应子分类）
 const CATEGORY_CIDS: Record<string, string[]> = {
@@ -38,6 +38,23 @@ const precisionStaticCards = precisionCardRegistry.map(card => ({
   id:card.id, name:card.name, img:card.image, conn:card.conn, searchTerms:card.searchTerms, url:card.path, href:card.path,
 }));
 
+// 三轴两款同样是静态 Astro 路由（EN-only）：注册原始卡片模板，型号/精度仅进入搜索词，
+// 卡片可见行与其它产品一致；非英文 locale 未发布，由适配器按 published 过滤。
+const triaxialStaticCards = [
+  {
+    id:'triaxial-high-precision-tilt-sensor', name:'Triaxial High-precision Tilt Sensor',
+    img:'/images/products/h310-ts380c-triaxial.svg', conn:PRECISION_CARD_CONNECTIVITY,
+    searchTerms:'H310-TS380C triaxial three-axis inclinometer tilt ±0.01°',
+    url:'/product/triaxial-high-precision-tilt-sensor', href:'/product/triaxial-high-precision-tilt-sensor',
+  },
+  {
+    id:'triaxial-medium-precision-tilt-sensor', name:'Triaxial Medium-precision Tilt Sensor',
+    img:'/images/products/h310-ts350m-triaxial.svg', conn:PRECISION_CARD_CONNECTIVITY,
+    searchTerms:'H310-TS350M triaxial three-axis inclinometer tilt ±0.1°',
+    url:'/product/triaxial-medium-precision-tilt-sensor', href:'/product/triaxial-medium-precision-tilt-sensor',
+  },
+];
+
 
 export function applyCatalog<T>(products: T[], cid: string, locale: string, existingPool: T[] = products): (T & CatalogCardLinks)[] {
   return applyCatalogToExisting(products, catalog as any, {
@@ -45,7 +62,7 @@ export function applyCatalog<T>(products: T[], cid: string, locale: string, exis
     resolveId: resolveId as any,
     // 所有语言均注入静态卡片模板；适配器按当前语言的已发布目录文案本地化名称与链接（V117），
     // 未发布语言的产品由适配器按 published 状态过滤。
-    existingPool: [...existingPool, ...precisionStaticCards],
+    existingPool: [...existingPool, ...precisionStaticCards, ...triaxialStaticCards],
     // 未映射的其它官网列表保留原有成员，不把传感器目录扩散到网关等列表。
     includeProduct: (product: any, { existing }: { existing: boolean }) => SENSOR_CIDS.has(cid)
       ? (CATEGORY_CIDS[product.categoryId] ?? ['261']).includes(cid)

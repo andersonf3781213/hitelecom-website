@@ -1,0 +1,46 @@
+---
+/** 两款新三轴英文页：沿用主站 BaseLayout 和温度/倾斜页面 UI。 */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TriaxialBody from './TriaxialBody.astro';
+import TriaxialStructuredData from './TriaxialStructuredData.astro';
+import TILT_DICTS from '../tilt/dicts.mjs';
+import highContent from '../../data/tilt-triaxial/high-content.json';
+import mediumContent from '../../data/tilt-triaxial/medium-content.json';
+import highGroups from '../../data/tilt-triaxial/high-applications.json';
+import mediumGroups from '../../data/tilt-triaxial/medium-applications.json';
+import ui from '../../data/tilt-triaxial/triaxial-ui.json';
+import highImage from '../../assets/tilt-triaxial/h310-ts380c.png';
+import mediumImage from '../../assets/tilt-triaxial/h310-ts350m.png';
+import { getImage } from 'astro:assets';
+import '../../styles/tilt.css';
+import '../../styles/tilt-triaxial-product.css';
+
+const REGISTRY = {
+  high: {
+    content: highContent, groups: highGroups, ui: ui.high, image: highImage,
+    path: '/product/triaxial-high-precision-tilt-sensor',
+    publicImage: '/images/products/h310-ts380c-triaxial.png',
+    cropBox: '165 78 838 1086',
+  },
+  medium: {
+    content: mediumContent, groups: mediumGroups, ui: ui.medium, image: mediumImage,
+    path: '/product/triaxial-medium-precision-tilt-sensor',
+    publicImage: '/images/products/h310-ts350m-triaxial.png',
+    cropBox: '325 298.125 623.125 686.25',
+  },
+};
+const { variant = 'high' } = Astro.props;
+const config = REGISTRY[variant];
+if (!config) throw new Error(`Unknown triaxial variant: ${variant}`);
+const t = { ...TILT_DICTS.en, ...config.ui, js: { ...TILT_DICTS.en.js, ...config.ui.js } };
+const optimized = await getImage({ src: config.image, width: 1280, format: 'webp', quality: 88 });
+const hero = { src: optimized.src, width: config.image.width, height: config.image.height };
+const imageUrl = new URL(config.publicImage, Astro.site).href;
+---
+<BaseLayout locale="en" title={config.content.seo.title} description={config.content.seo.description}
+  keywords={config.content.seo.keywords} preloadImage={hero.src} socialImage={config.publicImage}
+  alternates={[]} langBase="/product/lists/cid/267" langOverrides={{ en: config.path }}>
+  <TriaxialStructuredData slot="head" content={config.content} t={t} canonicalPath={config.path} imageUrl={imageUrl}/>
+  <TriaxialBody content={config.content} t={t} groups={config.groups} headings={config.ui.headings}
+    hero={hero} cropBox={config.cropBox} canonicalPath={config.path} applicationUi={config.ui.applications}/>
+</BaseLayout>
