@@ -1,11 +1,11 @@
 ---
-const {content,t,canonicalPath,imageUrl}=Astro.props;
+const {content,t,canonicalPath,imageUrl,inLanguage='en',prefix='',category='Intelligent SPD monitoring terminals'}=Astro.props;
 const url=`https://www.hitelecom.com${canonicalPath}`,model=content.modelCatalog.models[0],org='https://www.hitelecom.com/#organization';
 const graph=[
- {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage:'en',isPartOf:{'@id':'https://www.hitelecom.com/#website'},publisher:{'@id':org},mainEntity:{'@id':url+'#product'},breadcrumb:{'@id':url+'#breadcrumb'},primaryImageOfPage:{'@type':'ImageObject',url:imageUrl},dateModified:'2026-10-28',hasPart:{'@id':url+'#faq'}},
- {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:t.bcLd[0],item:'https://www.hitelecom.com/'},{'@type':'ListItem',position:2,name:t.bcLd[1],item:'https://www.hitelecom.com/product/lists/cid/261'},{'@type':'ListItem',position:3,name:t.bcLd[2],item:url}]},
- {'@type':'Product','@id':url+'#product',url,name:t.schemaProduct,model:model.model,sku:model.model,category:'Intelligent SPD monitoring terminals',description:content.hero.description,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':org},additionalProperty:model.specifications.map(s=>({'@type':'PropertyValue',name:s.name,value:s.value}))},
- {'@type':'FAQPage','@id':url+'#faq',inLanguage:'en',isPartOf:{'@id':url+'#webpage'},mainEntity:content.faqs.map(f=>({'@type':'Question','@id':url+'#'+f.id,name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
+ {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage,isPartOf:{'@id':'https://www.hitelecom.com/#website'},publisher:{'@id':org},mainEntity:{'@id':url+'#product'},breadcrumb:{'@id':url+'#breadcrumb'},primaryImageOfPage:{'@type':'ImageObject',url:imageUrl},dateModified:'2026-10-28',hasPart:{'@id':url+'#faq'}},
+ {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:t.bcLd[0],item:`https://www.hitelecom.com${prefix}/`},{'@type':'ListItem',position:2,name:t.bcLd[1],item:`https://www.hitelecom.com${prefix}/product/lists/cid/261`},{'@type':'ListItem',position:3,name:t.bcLd[2],item:url}]},
+ {'@type':'Product','@id':url+'#product',url,name:t.schemaProduct,model:model.model,sku:model.model,category,description:content.hero.description,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':org},additionalProperty:model.specifications.map(s=>({'@type':'PropertyValue',name:s.name,value:s.value}))},
+ {'@type':'FAQPage','@id':url+'#faq',inLanguage,isPartOf:{'@id':url+'#webpage'},mainEntity:content.faqs.map(f=>({'@type':'Question','@id':url+'#'+f.id,name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
 ];
 ---
 <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replaceAll('<','\\u003c')}/>

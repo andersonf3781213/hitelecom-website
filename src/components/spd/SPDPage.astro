@@ -1,22 +1,76 @@
 ---
-/** 沿用现网BaseLayout与温度UI，仅装入SPD内容、图片与型号身份。 */
+/** 沿用现网BaseLayout与温度UI，仅装入SPD内容、图片与型号身份。
+ * EN 为基准；非 EN 数据来自 2026-10-28 多语言包（Kimi 审核集成，V126）。 */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SPDBody from './SPDBody.astro';
 import SPDStructuredData from './SPDStructuredData.astro';
-import content from '../../data/spd/content.json';
-import groups from '../../data/spd/applications.json';
-import t from '../../data/spd/ui.json';
-import applicationUi from '../../data/spd/applications-ui.json';
+import { htmlLang, type Locale } from '../../i18n';
+import enContent from '../../data/spd/content.json';
+import enGroups from '../../data/spd/applications.json';
+import enUi from '../../data/spd/ui.json';
+import enApplicationUi from '../../data/spd/applications-ui.json';
+import zhContent from '../../data/spd/i18n/zh/content.json';
+import zhUi from '../../data/spd/i18n/zh/ui.json';
+import zhGroups from '../../data/spd/i18n/zh/applications.json';
+import zhApplicationUi from '../../data/spd/i18n/zh/applications-ui.json';
+import zhExtra from '../../data/spd/i18n/zh/extra.json';
+import esContent from '../../data/spd/i18n/es/content.json';
+import esUi from '../../data/spd/i18n/es/ui.json';
+import esGroups from '../../data/spd/i18n/es/applications.json';
+import esApplicationUi from '../../data/spd/i18n/es/applications-ui.json';
+import esExtra from '../../data/spd/i18n/es/extra.json';
+import deContent from '../../data/spd/i18n/de/content.json';
+import deUi from '../../data/spd/i18n/de/ui.json';
+import deGroups from '../../data/spd/i18n/de/applications.json';
+import deApplicationUi from '../../data/spd/i18n/de/applications-ui.json';
+import deExtra from '../../data/spd/i18n/de/extra.json';
+import jaContent from '../../data/spd/i18n/ja/content.json';
+import jaUi from '../../data/spd/i18n/ja/ui.json';
+import jaGroups from '../../data/spd/i18n/ja/applications.json';
+import jaApplicationUi from '../../data/spd/i18n/ja/applications-ui.json';
+import jaExtra from '../../data/spd/i18n/ja/extra.json';
+import frContent from '../../data/spd/i18n/fr/content.json';
+import frUi from '../../data/spd/i18n/fr/ui.json';
+import frGroups from '../../data/spd/i18n/fr/applications.json';
+import frApplicationUi from '../../data/spd/i18n/fr/applications-ui.json';
+import frExtra from '../../data/spd/i18n/fr/extra.json';
+import ruContent from '../../data/spd/i18n/ru/content.json';
+import ruUi from '../../data/spd/i18n/ru/ui.json';
+import ruGroups from '../../data/spd/i18n/ru/applications.json';
+import ruApplicationUi from '../../data/spd/i18n/ru/applications-ui.json';
+import ruExtra from '../../data/spd/i18n/ru/extra.json';
 import productImage from '../../assets/spd/hispd-dpu-04.png';
 import {getImage} from 'astro:assets';
 import '../../styles/tilt.css';
 import '../../styles/spd-product.css';
-const canonicalPath='/product/spd-monitoring-terminal';
+const slug='spd-monitoring-terminal';
+const I18N={
+ zh:{content:zhContent,ui:zhUi,groups:zhGroups,applicationUi:zhApplicationUi,extra:zhExtra},
+ es:{content:esContent,ui:esUi,groups:esGroups,applicationUi:esApplicationUi,extra:esExtra},
+ de:{content:deContent,ui:deUi,groups:deGroups,applicationUi:deApplicationUi,extra:deExtra},
+ ja:{content:jaContent,ui:jaUi,groups:jaGroups,applicationUi:jaApplicationUi,extra:jaExtra},
+ fr:{content:frContent,ui:frUi,groups:frGroups,applicationUi:frApplicationUi,extra:frExtra},
+ ru:{content:ruContent,ui:ruUi,groups:ruGroups,applicationUi:ruApplicationUi,extra:ruExtra},
+};
+const {locale='en'}=Astro.props as {locale?: Locale};
+const isEn=locale==='en';
+const pack=isEn?null:I18N[locale as keyof typeof I18N];
+if(!isEn&&!pack)throw new Error(`Missing SPD locale data: ${locale}`);
+const prefix=isEn?'':`/${locale}`;
+const canonicalPath=`${prefix}/product/${slug}`;
+const content=pack?.content??enContent;
+const t=pack?.ui??enUi;
+const groups=pack?.groups??enGroups;
+const applicationUi=pack?.applicationUi??enApplicationUi;
+const extra=pack?.extra??null;
 const optimized=await getImage({src:productImage,width:1280,format:'webp',quality:92});
 const hero={src:optimized.src,width:productImage.width,height:productImage.height};
 const publicImage='/images/products/hispd-dpu-04.png';
+// 七语路由均已上线：语言菜单/hreflang 指向同型号各语言产品页（URL 不加 .html）
+const allLocales:Locale[]=['en','zh','es','de','ja','fr','ru'];
+const langTargets=Object.fromEntries(allLocales.map(loc=>[loc,`${loc==='en'?'':`/${loc}`}/product/${slug}`]));
 ---
-<BaseLayout locale="en" title={content.seo.title} description={content.seo.description} keywords={content.seo.keywords} preloadImage={hero.src} socialImage={publicImage} alternates={[]} langBase="/product/lists/cid/261" langOverrides={{en:canonicalPath}}>
- <SPDStructuredData slot="head" content={content} t={t} canonicalPath={canonicalPath} imageUrl={new URL(publicImage,Astro.site).href}/>
- <SPDBody content={content} t={t} groups={groups} hero={hero} cropBox="350 255 1300 990" canonicalPath={canonicalPath} applicationUi={applicationUi}/>
+<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description} keywords={content.seo.keywords} preloadImage={hero.src} socialImage={publicImage} langOverrides={langTargets}>
+ <SPDStructuredData slot="head" content={content} t={t} canonicalPath={canonicalPath} imageUrl={new URL(publicImage,Astro.site).href} inLanguage={htmlLang[locale]} prefix={prefix} category={extra?.productCategory}/>
+ <SPDBody content={content} t={t} groups={groups} hero={hero} cropBox="350 255 1300 990" canonicalPath={canonicalPath} applicationUi={applicationUi} locale={locale} prefix={prefix} extra={extra}/>
 </BaseLayout>
