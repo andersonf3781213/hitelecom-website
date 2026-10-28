@@ -1,0 +1,22 @@
+---
+/** 沿用现网BaseLayout与温度UI，仅装入SPD内容、图片与型号身份。 */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SPDBody from './SPDBody.astro';
+import SPDStructuredData from './SPDStructuredData.astro';
+import content from '../../data/spd/content.json';
+import groups from '../../data/spd/applications.json';
+import t from '../../data/spd/ui.json';
+import applicationUi from '../../data/spd/applications-ui.json';
+import productImage from '../../assets/spd/hispd-dpu-04.png';
+import {getImage} from 'astro:assets';
+import '../../styles/tilt.css';
+import '../../styles/spd-product.css';
+const canonicalPath='/product/spd-monitoring-terminal';
+const optimized=await getImage({src:productImage,width:1280,format:'webp',quality:92});
+const hero={src:optimized.src,width:productImage.width,height:productImage.height};
+const publicImage='/images/products/hispd-dpu-04.png';
+---
+<BaseLayout locale="en" title={content.seo.title} description={content.seo.description} keywords={content.seo.keywords} preloadImage={hero.src} socialImage={publicImage} alternates={[]} langBase="/product/lists/cid/261" langOverrides={{en:canonicalPath}}>
+ <SPDStructuredData slot="head" content={content} t={t} canonicalPath={canonicalPath} imageUrl={new URL(publicImage,Astro.site).href}/>
+ <SPDBody content={content} t={t} groups={groups} hero={hero} cropBox="350 255 1300 990" canonicalPath={canonicalPath} applicationUi={applicationUi}/>
+</BaseLayout>

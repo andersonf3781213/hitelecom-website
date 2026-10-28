@@ -1,0 +1,1 @@
+var e=new IntersectionObserver(t=>{for(let n of t)n.isIntersecting&&(n.target.classList.add(`in`),e.unobserve(n.target))},{threshold:.12,rootMargin:`0px 0px -6% 0px`});document.querySelectorAll(`.reveal`).forEach(t=>e.observe(t));

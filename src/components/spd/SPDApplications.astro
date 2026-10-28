@@ -1,0 +1,31 @@
+---
+/** 官网温度页面相同的应用折叠、切图、手机图片归属与无脚本可读结构。 */
+import {getImage} from 'astro:assets';
+import ApplicationTask from '../tilt/ApplicationTask.astro';
+import styles from '../../styles/tilt-applications-en.css?raw';
+import runtime from '../../scripts/tilt-applications-en.js?raw';
+const {groups,canonicalPath,applicationUi:ui,modelName='HiSPD-DPU-04'}=Astro.props;
+const assets=import.meta.glob('../../assets/spd-applications/*.{webp,png,jpg}',{eager:true,import:'default'});
+const images=new Map();
+await Promise.all(groups.flatMap(g=>g.scenes.map(async s=>{
+ const source=assets[`../../assets/spd-applications/${s.imageFile}`];
+ if(!source)throw new Error(`Missing SPD application image: ${s.imageFile}`);
+ const widths=[360,720,1080].filter(w=>w<=source.width);
+ const variants=await Promise.all(widths.map(width=>getImage({src:source,width,format:'webp',quality:80})));
+ images.set(s.id,{src:variants.at(-1).src,srcset:variants.map((v,i)=>`${v.src} ${widths[i]}w`).join(', '),width:source.width,height:source.height});
+})));
+const canonical=`https://www.hitelecom.com${canonicalPath}`,scenes=groups.flatMap(g=>g.scenes);
+const schema={'@context':'https://schema.org','@type':'ItemList','@id':canonical+'#applications-list',name:ui.listName,numberOfItems:scenes.length,itemListOrder:'https://schema.org/ItemListOrderAscending',itemListElement:scenes.map((s,i)=>({'@type':'ListItem',position:i+1,name:s.title,description:s.en,url:canonical+'#'+s.baselineId}))};
+---
+<section class="section application-section" id="applications" aria-labelledby="applications-title"><div class="wrap">
+ <style is:inline data-applications-style="temperature" set:html={styles}/>
+ <div class="section-heading"><div><p class="eyebrow">{ui.kicker}</p><h2 id="applications-title">{ui.titleA}<br/><span>{ui.titleB}</span></h2></div><p>{ui.intro}</p></div>
+ <div class="application-overview"><p><strong>{groups.length}</strong> {ui.categoriesLabel} <span aria-hidden="true">/</span> <strong>{scenes.length}</strong> {ui.tasksLabel}</p><p class="image-note">{ui.imageNote}</p></div>
+ <nav class="application-jump-nav" aria-label={ui.navAria}>{groups.map(g=><a href={`#group-${g.groupid}`}>{g.jumplabelen}<span>{g.scenes.length}</span></a>)}</nav>
+ <div class="application-groups">{groups.map((group,index)=>{const first=group.scenes[0],image=images.get(first.id);return <details class="application-group" id={`group-${group.groupid}`} open={index===0}>
+  <summary><span><small>{String(group.number).padStart(2,'0')}</small>{group.title}</span><span class="group-count">{ui.groupCount.replace('{count}',String(group.scenes.length))} <b aria-hidden="true">+</b></span></summary>
+  <div class="application-category-body"><div class="application-visual"><div class="application-media-slot"><figure class="application-category-photo"><img class="application-category-image" src={image.src} srcset={image.srcset} sizes="(max-width:600px) calc(100vw - 76px), (max-width:900px) calc((100vw - 132px)*.42), 470px" width={image.width} height={image.height} loading="lazy" decoding="async" alt={first.alten}/><figcaption><span class="application-photo-caption">{group.title}</span></figcaption></figure></div><p>{group.introen}</p></div><div class="application-task-list">{group.scenes.map((scene,i)=><ApplicationTask scene={scene} image={images.get(scene.id)} first={i===0} ui={ui}/>)}</div></div>
+ </details>})}</div>
+ <script id="applications-structured-data" type="application/ld+json" set:html={JSON.stringify(schema).replaceAll('<','\\u003c')}/>
+ <script is:inline data-applications-runtime="temperature" set:html={runtime}/>
+</div></section>

@@ -73,7 +73,9 @@ const expectedTiltCards=[...precisionCardRegistry,{id:'tilt-sensor',name:'High-p
  // V122: 三轴两款静态卡片与精度款同规则（可见行无型号/精度，型号进搜索词）
  {id:'triaxial-high-precision-tilt-sensor',name:'Triaxial High-precision Tilt Sensor',conn:PRECISION_CARD_CONNECTIVITY,searchTerms:'H310-TS380C triaxial three-axis inclinometer tilt ±0.01°'},
  {id:'triaxial-medium-precision-tilt-sensor',name:'Triaxial Medium-precision Tilt Sensor',conn:PRECISION_CARD_CONNECTIVITY,searchTerms:'H310-TS350M triaxial three-axis inclinometer tilt ±0.1°'}];
-const tiltDisplayIds=new Set(expectedTiltCards.map(p=>p.id));
+// V124: SPD 终端卡片沿用同一注入机制，但按审核要求连接方式行留空，不参与 NB-IoT 行断言。
+const expectedSpdCard={id:'spd-monitoring-terminal',name:'Intelligent SPD Monitoring Terminal',conn:'',searchTerms:'HiSPD-DPU-04 SPD surge protective device monitoring 4 channels 2 8 channel versions'};
+const tiltDisplayIds=new Set([...expectedTiltCards.map(p=>p.id),expectedSpdCard.id]);
 for(const cid of ['261','267']){
  const cards=applyCatalog(product.productContent.en.lists[cid].products,cid,'en',pool);
  for(const expected of expectedTiltCards){
@@ -83,6 +85,17 @@ for(const cid of ['261','267']){
   assert.equal(card.name,expected.name);assert.equal(card.conn,PRECISION_CARD_CONNECTIVITY);
   assert.equal(card.searchTerms,expected.searchTerms);assert.equal(Object.hasOwn(card,'precisionMeta'),false);
   assert.doesNotMatch(card.name+' '+card.conn,/[±°]|H310-TS/,'no accuracy or model is visible in the title/connectivity rows');
+ }
+ if(cid==='261'){
+  const matches=cards.filter(item=>id(item)===expectedSpdCard.id);
+  assert.equal(matches.length,1,'SPD card appears exactly once in 261');
+  const card=matches[0];
+  assert.equal(card.name,expectedSpdCard.name);assert.equal(card.conn,'');
+  assert.equal(card.searchTerms,expectedSpdCard.searchTerms);
+  assert.equal(card.url,'/product/spd-monitoring-terminal');assert.equal(card.href,card.url);
+  assert.doesNotMatch(card.name+' '+card.conn,/[±°]|H310-TS|4G|NB-IoT|LoRa/,'SPD card shows no borrowed connectivity or tilt model');
+ }else{
+  assert.equal(cards.some(item=>id(item)===expectedSpdCard.id),false,'SPD card does not leak into the tilt category');
  }
  for(const card of cards.filter(item=>!tiltDisplayIds.has(id(item)))){
   const original=pool.find(item=>id(item)===id(card));

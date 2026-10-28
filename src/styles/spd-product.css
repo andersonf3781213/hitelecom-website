@@ -1,0 +1,15 @@
+/* 仅处理用户原产品图片的透明画布与新页内容宽度；官网四份关键样式保持原件。 */
+.ht-tilt .hero-visual {width:100%;min-width:0;}
+.ht-tilt .hero-visual .precision-product {display:block;position:relative;z-index:1;width:71.4%;height:66.3%;max-height:340px;overflow:visible;}
+.ht-tilt .related-products {flex-wrap:wrap;}
+.ht-tilt .spec-table {min-width:0;}
+.ht-tilt .spec-table :is(th,td,caption) {overflow-wrap:anywhere;}
+.ht-tilt .specification-note {font-size:12px;line-height:1.7;color:#61758d;margin-top:14px;}
+@media(max-width:600px){.ht-tilt .hero-visual .precision-product{width:69.7%;height:66.3%;max-height:152.15px;margin-top:-6px;}}
+
+/* Keep this page's text clear of the shared fixed contact buttons on phones. */
+@media(max-width:600px){
+ .ht-tilt .hero-proof{padding-right:48px;}
+ .ht-tilt .hero-proof>div{min-width:0;padding-right:6px;}
+ .ht-tilt .reading-card{padding-right:56px;}
+}

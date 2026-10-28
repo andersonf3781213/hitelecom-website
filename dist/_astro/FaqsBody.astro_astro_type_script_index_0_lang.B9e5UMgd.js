@@ -1,0 +1,1 @@
+document.querySelectorAll(`.faqs_1_1 li`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.classList.contains(`on`);e.parentElement?.querySelectorAll(`li.on`).forEach(e=>e.classList.remove(`on`)),t||e.classList.add(`on`)})});

@@ -1,0 +1,1 @@
+document.querySelectorAll(`#changeurl`).forEach(e=>{e.addEventListener(`change`,()=>{e.value&&(window.location.href=e.value)})});

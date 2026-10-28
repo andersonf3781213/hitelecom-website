@@ -1,0 +1,1 @@
+document.getElementById(`changeurl`)?.addEventListener(`change`,e=>{let t=e.target.value;t&&(window.location.href=t)});

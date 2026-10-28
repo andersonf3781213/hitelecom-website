@@ -22,6 +22,7 @@ const CATEGORY_CIDS: Record<string, string[]> = {
   'air-quality': ['261', '265'],
   'asset-tracking': ['261', '306'],
   'water-leak': ['261'],
+  'spd-monitoring': ['261'],
 };
 const SENSOR_CIDS = new Set(Object.values(CATEGORY_CIDS).flat());
 
@@ -40,6 +41,17 @@ const precisionStaticCards = precisionCardRegistry.map(card => ({
 
 // 三轴两款同样是静态 Astro 路由（七语均已发布，V122）：注册原始卡片模板，型号/精度仅进入搜索词，
 // 卡片可见行与其它产品一致；适配器按当前语言的目录文案本地化名称与链接。
+// HiSPD-DPU-04（V124）：静态 Astro 路由，无无线制式行——按用户审核要求不复制其它卡片的
+// 4G/NB-IoT/LoRa 字样；型号与通道数仅进入搜索词，连接方式行留空，卡片盒尺寸由统一 CSS 保持。
+const spdStaticCards = [
+  {
+    id:'spd-monitoring-terminal', name:'Intelligent SPD Monitoring Terminal',
+    img:'/images/products/hispd-dpu-04.svg', conn:'',
+    searchTerms:'HiSPD-DPU-04 SPD surge protective device monitoring 4 channels 2 8 channel versions',
+    url:'/product/spd-monitoring-terminal', href:'/product/spd-monitoring-terminal',
+  },
+];
+
 const triaxialStaticCards = [
   {
     id:'triaxial-high-precision-tilt-sensor', name:'Triaxial High-precision Tilt Sensor',
@@ -62,7 +74,7 @@ export function applyCatalog<T>(products: T[], cid: string, locale: string, exis
     resolveId: resolveId as any,
     // 所有语言均注入静态卡片模板；适配器按当前语言的已发布目录文案本地化名称与链接（V117），
     // 未发布语言的产品由适配器按 published 状态过滤。
-    existingPool: [...existingPool, ...precisionStaticCards, ...triaxialStaticCards],
+    existingPool: [...existingPool, ...precisionStaticCards, ...triaxialStaticCards, ...spdStaticCards],
     // 未映射的其它官网列表保留原有成员，不把传感器目录扩散到网关等列表。
     includeProduct: (product: any, { existing }: { existing: boolean }) => SENSOR_CIDS.has(cid)
       ? (CATEGORY_CIDS[product.categoryId] ?? ['261']).includes(cid)

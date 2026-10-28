@@ -1,0 +1,45 @@
+# Cloudflare Pages 缓存策略（Netlify 同格式兼容）
+# 带内容哈希的构建产物：一年长缓存 + immutable，文件名变即自动失效
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# public 下无哈希的静态图：允许同名换图后较快生效（7 天）
+/images/*
+  Cache-Control: public, max-age=604800
+/assets/*
+  Cache-Control: public, max-age=604800
+
+# V18 首页图片（/home-assets/img）：同名可换 → 7 天
+# （CSS/JS 已进 Astro 管线，带内容哈希，走 /_astro/* 一年长缓存）
+/home-assets/img/*
+  Cache-Control: public, max-age=604800
+
+# 可下载资料（PDF 规格书等可能更新）：1 天
+/downloads/*
+  Cache-Control: public, max-age=86400
+
+# HTML 页面：协商缓存，保证内容更新即时可见
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# 目录管理后台与保存 API：禁止索引、禁止缓存（V109 接入）
+/catalog-admin
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
+/catalog-admin/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
+/api/catalog
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
+
+# ---- Early Hints Link 预载（本段由 scripts/gen-early-hints.mjs 生成，勿手改）----
+/
+  Link: </fonts/Poppins-Medium-subset.woff2>; rel=preload; as=font; crossorigin, </fonts/playfair-500.woff2>; rel=preload; as=font; crossorigin, </_astro/BaseLayout.CNO5D_00.css>; rel=preload; as=style, </_astro/home-v18-override.DfXfIIV_.css>; rel=preload; as=style
+  Cache-Control: public, max-age=0, must-revalidate
+
+/zh.html
+  Link: </fonts/Poppins-Medium-subset.woff2>; rel=preload; as=font; crossorigin, </fonts/Alibaba-PuHuiTi-R-subset.woff2>; rel=preload; as=font; crossorigin, </_astro/bg-sensors.CxWWY7iv_Z1RboEl.webp>; rel=preload; as=image, </_astro/BaseLayout.CNO5D_00.css>; rel=preload; as=style, </_astro/index.DDYTMNNu.css>; rel=preload; as=style
+  Cache-Control: public, max-age=0, must-revalidate

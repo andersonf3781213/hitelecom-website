@@ -1,0 +1,1 @@
+var e=document.getElementById(`keyword`);if(e){let t=Array.from(document.querySelectorAll(`.pro_2_mid_right_2 li[data-name]`)),n=()=>{let n=e.value.trim().toLowerCase();for(let e of t)e.style.display=!n||(e.dataset.name??``).includes(n)?``:`none`};e.addEventListener(`input`,n),e.form?.addEventListener(`submit`,e=>{e.preventDefault(),n()})}

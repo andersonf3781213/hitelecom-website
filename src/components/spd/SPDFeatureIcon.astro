@@ -1,0 +1,19 @@
+---
+/** 与官网特性图标同尺寸/线宽的代码原生图标，不表示未确认的测量能力。 */
+const { index = 0 } = Astro.props;
+const paths = [
+  // 柜体/资产点。
+  ['M5 3h14v18H5z','M9 7h6','M9 11h6','M12 15v3','M10.5 16.5h3'],
+  // 分组面板标识。
+  ['M3 5h18v14H3z','M7 9h.01','M12 9h.01','M17 9h.01','M7 14h.01','M12 14h.01','M17 14h.01'],
+  // 柜内集成与安装空间。
+  ['M4 3h16v18H4z','M8 6h8','M8 10h8','M8 14h3','M16 16v2','M7 21v1','M17 21v1'],
+  // 有定义的信号/接口。
+  ['M3 7h5v4h8V7h5','M3 17h5v-4h8v4h5','M5 5v4','M19 15v4'],
+  // 集成链路。
+  ['M8.5 14.5l7-7','M9 6H7a4 4 0 0 0 0 8h2','M15 10h2a4 4 0 0 1 0 8h-2'],
+  // 服务检查记录。
+  ['M9 4H5v17h14V4h-4','M9 2h6v4H9z','M8 11l1.5 1.5L12 10','M14 11h2','M8 16h8'],
+];
+---
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{paths[index%paths.length].map(d=><path d={d}/>)}</svg>
