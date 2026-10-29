@@ -1,0 +1,703 @@
+{
+  "model": "H68",
+  "kind": "Para exteriores",
+  "slug": "outdoor-4g-gateway-h68",
+  "path": "/es/product/outdoor-4g-gateway-h68",
+  "title": "Gateway IoT H68 para exteriores | LoRa y 4G LTE | Hitelecom",
+  "metaDescription": "Conecte sensores LoRa compatibles con el gateway IoT H68 de Hitelecom para exteriores. Carcasa IP68, enlace de retorno 4G LTE, integración MQTT y opciones de radio regionales.",
+  "image": "h68.webp",
+  "imageAlt": "Gateway H68 de Hitelecom para exteriores con antenas externas, imagen oficial del producto",
+  "caption": "H68 · Gateway IoT para exteriores",
+  "heroHeading": "H68 para exteriores\nGateway IoT.",
+  "heroValue": "Conecte sensores de campo.\nEn toda su instalación.",
+  "heroDescription": "El H68 de Hitelecom conecta sensores LoRa compatibles distribuidos en instalaciones exteriores con una plataforma de monitorización. Su arquitectura de radio de 8 canales en dúplex completo, carcasa con protección IP68 y enlace de retorno 4G LTE permiten la monitorización distribuida en instalaciones de servicios, energía e industria. Utilice la integración MQTT para incorporar los datos de campo a Hitelecom Cloud o a una plataforma compatible del cliente.",
+  "proof": [
+    {
+      "value": "IP68",
+      "label": "Protección de la carcasa",
+      "note": "Con sellados y conexiones correctamente instalados"
+    },
+    {
+      "value": "4G LTE",
+      "label": "Enlace de retorno de la instalación a la plataforma",
+      "note": "Seleccione el módem para el operador local"
+    },
+    {
+      "value": "MQTT",
+      "label": "Integración de datos con la plataforma",
+      "note": "Hitelecom Cloud o una plataforma compatible"
+    }
+  ],
+  "featureTitle": "Conectividad de campo.\nPlanificada para su instalación.",
+  "featureIntro": "Conecte puntos de medición distribuidos mediante un despliegue planificado según la cobertura de radio, la exposición ambiental, la alimentación y la entrega de datos al sistema receptor.",
+  "features": [
+    {
+      "title": "Concentración de sensores LoRa",
+      "text": "Recopile datos de dispositivos LoRa compatibles mediante la arquitectura de radio publicada de 8 canales en dúplex completo. Verifique el protocolo del sensor y la configuración regional."
+    },
+    {
+      "title": "Enlace de retorno 4G LTE",
+      "text": "Reenvíe los datos recopilados a través de una red móvil disponible. Seleccione el módem, la SIM y el operador según la cobertura en la ubicación del gateway."
+    },
+    {
+      "title": "Integración MQTT",
+      "text": "Conecte los datos de campo con Hitelecom Cloud o una plataforma compatible del cliente mediante un punto de conexión, un formato de mensaje y una configuración de autenticación acordados."
+    },
+    {
+      "title": "Carcasa con protección IP68",
+      "text": "Planifique conjuntamente el montaje exterior, las entradas de cables y el sellado de conectores. El grado de protección de la carcasa se aplica en las condiciones de instalación especificadas."
+    },
+    {
+      "title": "Opciones de radio regionales",
+      "text": "Seleccione CN470, EU868, IN865, RU864, US915 o AU915 para el despliegue. La frecuencia, la configuración de canales y la potencia de transmisión deben cumplir los requisitos locales."
+    },
+    {
+      "title": "Cobertura adaptada a la instalación",
+      "text": "Hasta 10 km en condiciones de campo abierto. El terreno, las estructuras, la altura de antena y las interferencias determinan la cobertura utilizable en campo."
+    },
+    {
+      "title": "Despliegue local de la plataforma",
+      "text": "Puede planificarse un despliegue local para proyectos que requieran gestionar los datos bajo el control de la instalación. Acuerde la función del servidor, la conectividad y el alcance de la integración."
+    },
+    {
+      "title": "Notificación de pérdida de alimentación",
+      "text": "Puede transmitirse una alerta de pérdida de alimentación cuando sigan disponibles la alimentación de respaldo y el enlace de retorno. Incluya la vía de alerta requerida en el diseño de alimentación."
+    }
+  ],
+  "planningIntro": "Una red de sensores de gran extensión comienza por los trayectos de radio reales. Revise la distribución del terreno, la ubicación de montaje del gateway y el enlace de retorno antes de determinar la cantidad de gateways.",
+  "planning": [
+    {
+      "title": "Defina el conjunto de sensores",
+      "text": "Enumere los dispositivos compatibles, los puntos de medición y la configuración de radio. Dimensione el tráfico según la longitud de la carga útil, los intervalos de transmisión y las necesidades de enlace descendente, además del número de dispositivos.",
+      "brief": "Modelos de sensores · Número de dispositivos · Cargas útiles · Intervalos de transmisión · Respuesta requerida"
+    },
+    {
+      "title": "Planifique la cobertura de radio",
+      "text": "Revise el terreno, los edificios y la altura de antena. Pruebe trayectos representativos hacia sensores lejanos, obstruidos y montados a baja altura.",
+      "brief": "Plano de la instalación · Posición de la antena · Interferencias · Estudio de cobertura · Ubicaciones de los gateways"
+    },
+    {
+      "title": "Confirme la conexión con el sistema receptor",
+      "text": "Compruebe la alimentación del gateway, el operador móvil local y la plataforma receptora. Para una configuración Ethernet, confirme la interfaz suministrada y los requisitos de red de la instalación.",
+      "brief": "Alimentación · SIM / operador · Configuración Ethernet · Punto de conexión · Mapeo de datos"
+    }
+  ],
+  "installationText": "Monte el gateway y la antena favoreciendo la visibilidad de radio y manteniendo prácticos la instalación y el acceso de servicio. Planifique la fijación estructural, la puesta a tierra, la protección contra sobretensiones, el tendido de cables y el sellado de conectores para el emplazamiento. Verifique el conjunto completo alimentado dentro de los límites ambientales especificados.",
+  "workflow": [
+    {
+      "title": "Recopilar",
+      "text": "Los sensores LoRa compatibles envían sus registros de medición al gateway con la configuración de radio y el perfil de transmisión acordados."
+    },
+    {
+      "title": "Reenviar",
+      "text": "El gateway reenvía los registros recopilados mediante el enlace de retorno seleccionado al punto de conexión MQTT configurado."
+    },
+    {
+      "title": "Revisar y responder",
+      "text": "Utilice Hitelecom Cloud para consultar en línea los datos de monitorización cargados y recibir alertas cuando las mediciones superen los umbrales configurados. Una plataforma del cliente puede ofrecer su propio flujo de trabajo acordado."
+    }
+  ],
+  "coverageTitle": "Hasta 10 km.\nEn condiciones de campo abierto.",
+  "coverageText": "La cifra en campo abierto es una referencia de despliegue, no un radio garantizado. El terreno, los obstáculos, la disposición de antenas, las interferencias locales y la configuración de radio afectan al enlace real. Valide la red prevista en el emplazamiento.",
+  "rows": [
+    [
+      "Modelo",
+      "H68"
+    ],
+    [
+      "Despliegue",
+      "Gateway de red de sensores para exteriores"
+    ],
+    [
+      "Arquitectura de radio",
+      "8 canales en dúplex completo, según las especificaciones de la configuración suministrada"
+    ],
+    [
+      "Opciones de radio regionales",
+      "CN470 / EU868 / IN865 / RU864 / US915 / AU915; seleccione la configuración regional requerida"
+    ],
+    [
+      "Alcance en campo abierto",
+      "Hasta 10 km; la cobertura real depende de la instalación y de las condiciones de radio"
+    ],
+    [
+      "Potencia de transmisión",
+      "20–27 dBm; sujeta a la configuración seleccionada y a los límites normativos locales"
+    ],
+    [
+      "Sensibilidad del receptor",
+      "−140 dBm a 0.292 kbps"
+    ],
+    [
+      "Antena",
+      "Antena externa de fibra de vidrio; confirme la disposición de antenas suministrada"
+    ],
+    [
+      "Enlace de retorno",
+      "4G LTE; Ethernet según la configuración suministrada"
+    ],
+    [
+      "Bandas LTE publicadas",
+      "LTE-TDD B34 / B38 / B39 / B40 / B41; LTE-FDD B1 / B3 / B5 / B8. Seleccione el módem de acuerdo con el operador del lugar de instalación."
+    ],
+    [
+      "Protocolo de datos",
+      "MQTT; acuerde el punto de conexión, la carga útil y la configuración de autenticación"
+    ],
+    [
+      "Protección de la carcasa",
+      "IP68; mantenga los sellados y las condiciones de instalación especificados"
+    ],
+    [
+      "Temperatura de funcionamiento",
+      "−40°C a +85°C"
+    ],
+    [
+      "Temperatura de almacenamiento",
+      "−40°C a +85°C"
+    ],
+    [
+      "Opciones de montaje",
+      "Orejetas de fijación / abrazadera para poste / soporte ranurado, según la configuración suministrada"
+    ]
+  ],
+  "specNote": "Los valores de referencia corresponden a la especificación actual del producto de Hitelecom. Confirme la revisión del hardware, la alimentación de entrada, las dimensiones, el conjunto de antenas, las homologaciones regionales y las interfaces admitidas en la oferta del proyecto.",
+  "faqs": [
+    {
+      "q": "¿Qué hace el gateway H68?",
+      "a": "El H68 recibe datos de sensores LoRa compatibles y los reenvía a una plataforma de monitorización mediante el enlace de retorno configurado. El gateway proporciona la conexión entre los puntos de sensorización y la plataforma; los sensores conectados realizan las mediciones."
+    },
+    {
+      "q": "¿En qué se diferencia el H66 del H68?",
+      "a": "El H66 está orientado a instalaciones interiores, con carcasa IP65, rango de funcionamiento de −20°C a +70°C y distancia de referencia de hasta 5 km en campo abierto. El H68 está orientado a instalaciones exteriores, con carcasa IP68, rango de funcionamiento de −40°C a +85°C y referencia de hasta 10 km en campo abierto. Seleccione el modelo según las condiciones de instalación y una evaluación de radio específica del emplazamiento."
+    },
+    {
+      "q": "¿Un solo H68 cubrirá toda la instalación?",
+      "a": "La cantidad de gateways depende de los trayectos de radio reales, las posiciones de las antenas, las interferencias y el tráfico de los sensores. Una distancia en campo abierto no permite determinar la cobertura dentro de edificios o detrás de accidentes del terreno y estructuras. Facilite un plano de la instalación y posiciones representativas de los sensores para evaluar y probar la red."
+    },
+    {
+      "q": "¿Cuántos sensores puede conectar un gateway?",
+      "a": "La capacidad depende del tamaño de la carga útil, el intervalo de transmisión, la configuración de radio, la concentración de tráfico, las retransmisiones y los requisitos de enlace descendente. No existe una cifra única de dispositivos aplicable a todos los despliegues. Facilite la lista de sensores y el perfil de transmisión para dimensionar la red."
+    },
+    {
+      "q": "¿La compatibilidad con LoRa significa que el gateway es compatible con LoRaWAN?",
+      "a": "LoRa identifica la tecnología de radio. LoRaWAN es un protocolo de red con requisitos específicos para dispositivos, gateways y servidores. Antes de seleccionar la configuración, confirme el protocolo exacto del sensor, el firmware del gateway y la compatibilidad de la plataforma para cualquier requisito de LoRaWAN."
+    },
+    {
+      "q": "¿Qué frecuencias y bandas celulares debo elegir?",
+      "a": "Seleccione la configuración de radio regional para el país de instalación y el módem LTE para el operador local. Las opciones de radio regionales y las bandas LTE publicadas figuran en la tabla de especificaciones. El nombre de una banda regional no acredita una homologación local ni una cobertura universal de operadores."
+    },
+    {
+      "q": "¿Puedo utilizar Hitelecom Cloud o mi propia plataforma?",
+      "a": "Sí. Acuerde la configuración de integración de Hitelecom Cloud o de una plataforma compatible del cliente. MQTT figura en las especificaciones. Confirme el punto de conexión, los temas, el mapeo de la carga útil, las marcas de tiempo, la autenticación y la seguridad de transporte requerida; después verifique un mensaje de ejemplo de extremo a extremo."
+    },
+    {
+      "q": "¿Puedo consultar las lecturas en línea y recibir alarmas de umbral?",
+      "a": "Con la integración acordada de Hitelecom Cloud, los usuarios pueden consultar en línea los datos de monitorización cargados y recibir alertas cuando las mediciones superen los umbrales configurados. El muestreo de los sensores, los intervalos de transmisión, la disponibilidad de red y la configuración de la plataforma determinan cuándo está disponible la información. Defina los destinatarios y el flujo de respuesta durante la puesta en marcha."
+    },
+    {
+      "q": "¿Qué ocurre si se interrumpe la alimentación?",
+      "a": "Una notificación de pérdida de alimentación requiere energía de respaldo suficiente para operar el gateway y un enlace de retorno operativo. No significa que la transmisión continúe indefinidamente una vez retirada la alimentación. Confirme la solución de respaldo, la vía de notificación y la duración requerida para el proyecto."
+    },
+    {
+      "q": "¿Qué significa IP68 para la instalación exterior?",
+      "a": "La clasificación IP68 se aplica en las condiciones de ensayo de la carcasa e instalación especificadas. Planifique entradas de cables selladas, protección de conectores, montaje, puesta a tierra y exposición ambiental para el conjunto completo. Confirme por separado cualquier requisito de profundidad o duración de inmersión; la clasificación no acredita protección contra explosiones."
+    }
+  ],
+  "groups": [
+    {
+      "id": "outdoor-industrial-utilities",
+      "title": "Servicios industriales exteriores",
+      "jumpLabel": "Servicios industriales",
+      "intro": "Conecte puntos distribuidos de monitorización de servicios y equipos en recintos industriales donde los largos tendidos de cable pueden dificultar las redes convencionales de sensores.",
+      "imageKey": "industrial",
+      "tasks": [
+        {
+          "id": "industrial-utility-corridors",
+          "title": "Monitorización de corredores de servicios",
+          "networkRole": "Concentra informes de sensores LoRa compatibles de presión y temperatura.",
+          "description": "Reenvíe lecturas de puntos seleccionados de medición exterior de agua, aire comprimido y otros servicios adecuados para su revisión operativa centralizada.",
+          "placement": "Evalúe el espacio libre de las antenas alrededor de racks de tuberías, estructuras de proceso y grandes equipos metálicos.",
+          "projectBrief": "Distribución de servicios, ubicaciones de sensores, rangos de medición e intervalos de actualización requeridos."
+        },
+        {
+          "id": "industrial-storage-tanks",
+          "title": "Monitorización de nivel de depósitos exteriores",
+          "networkRole": "Conecta dispositivos LoRa compatibles de monitorización de nivel en zonas de depósitos.",
+          "description": "Incorpore lecturas de nivel de depósitos adecuados de agua de servicio y almacenamiento a una plataforma común sin una conexión celular independiente en cada sensor.",
+          "placement": "Evalúe el apantallamiento de las paredes de depósitos y la altura del gateway respetando las distancias de instalación del emplazamiento.",
+          "projectBrief": "Ubicaciones de depósitos, contenidos, idoneidad de sensores, restricciones del emplazamiento y programas de transmisión."
+        },
+        {
+          "id": "industrial-equipment-conditions",
+          "title": "Monitorización distribuida del estado de equipos",
+          "networkRole": "Reenvía los indicadores de estado comunicados por dispositivos compatibles de monitorización exterior.",
+          "description": "Recopile indicadores de temperatura, inclinación o vibración derivados de sensores de activos exteriores seleccionados para revisar tendencias y planificar el mantenimiento.",
+          "placement": "Utilice una ubicación exterior evaluada con espacio libre para radio y alimentación y enlace de retorno fiables.",
+          "projectBrief": "Posiciones de activos, indicadores comunicados, tamaños de carga útil y limitaciones de radio del emplazamiento."
+        }
+      ],
+      "imageAlt": "Armarios exteriores de servicios auxiliares en una instalación eléctrica",
+      "imageCaption": "Instalación exterior de servicios auxiliares · Entorno representativo"
+    },
+    {
+      "id": "water-pumping",
+      "title": "Redes de agua e instalaciones de bombeo",
+      "jumpLabel": "Agua y bombeo",
+      "intro": "Concentre informes compatibles de presión, nivel y condiciones de instalaciones en infraestructuras de agua, evaluando la cobertura para cámaras, depósitos y estructuras remotas.",
+      "imageKey": "water",
+      "tasks": [
+        {
+          "id": "distribution-pressure",
+          "title": "Monitorización de presión de redes de distribución",
+          "networkRole": "Concentra sensores de presión LoRa compatibles en puntos de medición distribuidos.",
+          "description": "Reenvíe lecturas de presión de ubicaciones seleccionadas de la red para ayudar a los operadores a revisar variaciones y priorizar investigaciones de campo.",
+          "placement": "Evalúe individualmente las cámaras subterráneas; las tapas, la profundidad y el agua pueden afectar considerablemente a la propagación de radio.",
+          "projectBrief": "Plano de la red, detalles de cámaras, posiciones de sensores, rangos de presión e intervalos de transmisión."
+        },
+        {
+          "id": "water-tank-reservoir-levels",
+          "title": "Monitorización de nivel de depósitos y embalses",
+          "networkRole": "Conecta dispositivos inalámbricos compatibles de monitorización de nivel en la instalación.",
+          "description": "Recopile lecturas de depósitos de servicio, embalses y puntos de medición adecuados en aguas abiertas para consulta centralizada y alertas configuradas en la plataforma.",
+          "placement": "Evalúe la altura de antena, el terreno y los obstáculos entre el gateway y cada ubicación de medición.",
+          "projectBrief": "Cotas del emplazamiento, rangos de nivel de agua, tipos de sensores y frecuencia de actualización requerida."
+        },
+        {
+          "id": "outdoor-pump-site-conditions",
+          "title": "Condiciones ambientales de instalaciones de bombeo",
+          "networkRole": "Reenvía mensajes compatibles de monitorización de fugas de agua, temperatura y humedad.",
+          "description": "Combine lecturas ambientales y avisos de entrada de agua de las casetas de bombeo con los datos de monitorización de presión y nivel de la instalación.",
+          "placement": "Compruebe los trayectos de radio entre el gateway exterior y los puntos de monitorización en casetas de bombeo cerradas.",
+          "projectBrief": "Construcción de casetas de bombeo, zonas de drenaje, posiciones de sensores y disponibilidad del enlace de retorno."
+        },
+        {
+          "id": "water-quality-observation",
+          "title": "Puntos de observación de calidad del agua",
+          "networkRole": "Concentra informes de dispositivos LoRa compatibles de monitorización de calidad del agua.",
+          "description": "Conecte lecturas admitidas de temperatura del agua, conductividad u otros parámetros acordados de calidad del agua en puntos de observación de tratamiento, distribución o acuicultura.",
+          "placement": "Revise el trayecto de radio desde la posición del transmisor; las sondas y las disposiciones de muestreo deben adecuarse al agua monitorizada.",
+          "projectBrief": "Parámetros de calidad del agua, disposición de sondas, ubicaciones de transmisores, disponibilidad de alimentación y programa de transmisión."
+        }
+      ],
+      "imageAlt": "Equipos exteriores de bombeo de agua y tuberías azules",
+      "imageCaption": "Estación de bombeo exterior · Entorno representativo"
+    },
+    {
+      "id": "solar-pv",
+      "title": "Instalaciones solares fotovoltaicas",
+      "jumpLabel": "Solar fotovoltaica",
+      "intro": "Conecte sensores compatibles de estado y ambiente en instalaciones fotovoltaicas, dimensionando la cantidad de gateways según la distribución real y el estudio de radio del emplazamiento.",
+      "imageKey": "solar",
+      "tasks": [
+        {
+          "id": "pv-structural-inclination",
+          "title": "Inclinación de estructuras de soporte fotovoltaico",
+          "networkRole": "Concentra informes de sensores de inclinación LoRa compatibles en estructuras seleccionadas.",
+          "description": "Reenvíe lecturas de inclinación de bastidores de soporte o cimentaciones designados para revisar tendencias y orientar inspecciones.",
+          "placement": "Evalúe los trayectos de radio a través de filas de paneles, cambios de terreno y estructuras de montaje.",
+          "projectBrief": "Distribución del campo fotovoltaico, ubicaciones de medición, precisión de sensores e intervalos de transmisión."
+        },
+        {
+          "id": "pv-equipment-environment",
+          "title": "Condiciones de zonas de equipos fotovoltaicos",
+          "networkRole": "Conecta sensores compatibles de monitorización ambiental y temperatura.",
+          "description": "Recopile lecturas en estaciones de inversores, casetas de equipos y puntos de medición de campo seleccionados para contextualizar el mantenimiento del emplazamiento.",
+          "placement": "Evalúe el apantallamiento de equipos y coloque las antenas lejos de infraestructuras eléctricas densas.",
+          "projectBrief": "Distribución de zonas de equipos, parámetros monitorizados, ubicaciones de sensores y límites ambientales."
+        },
+        {
+          "id": "pv-drainage-monitoring",
+          "title": "Drenaje y entrada de agua en instalaciones fotovoltaicas",
+          "networkRole": "Reenvía informes de dispositivos compatibles de nivel de agua y detección de fugas de agua.",
+          "description": "Conecte canales de drenaje, zonas bajas y puntos de detección de fugas en casetas de equipos con la plataforma de monitorización de la instalación.",
+          "placement": "Evalúe sensores a baja cota y mantenga las antenas despejadas por encima de los obstáculos circundantes.",
+          "projectBrief": "Plano de drenaje, puntos expuestos a inundación, zonas de detección y flujo de notificación requerido."
+        },
+        {
+          "id": "pv-lightning-protection-status",
+          "title": "Estado de protección contra rayos en instalaciones fotovoltaicas",
+          "networkRole": "Reenvía informes de estado de terminales de monitorización de SPD compatibles conectados mediante LoRa.",
+          "description": "Incorpore los campos admitidos de estado de protección contra sobretensiones y mantenimiento a la plataforma de monitorización para revisar las inspecciones y sustituciones planificadas.",
+          "placement": "Verifique el protocolo de radio del terminal y pruebe la recepción desde su posición instalada; los armarios eléctricos metálicos pueden requerir una disposición de antenas adecuada.",
+          "projectBrief": "Modelo del terminal de monitorización de SPD, canales y campos de estado comunicados, distribución de armarios, perfil de transmisión y mapeo de datos."
+        }
+      ],
+      "imageAlt": "Campos solares fotovoltaicos y equipos eléctricos auxiliares",
+      "imageCaption": "Instalación solar fotovoltaica · Entorno representativo"
+    },
+    {
+      "id": "wind-power",
+      "title": "Instalaciones de energía eólica",
+      "jumpLabel": "Energía eólica",
+      "intro": "Proporcione una vía de datos para sensores compatibles de monitorización en cimentaciones de aerogeneradores e instalaciones auxiliares de un parque eólico.",
+      "imageKey": "wind",
+      "tasks": [
+        {
+          "id": "wind-foundation-inclination",
+          "title": "Tendencias de inclinación de cimentaciones de torres",
+          "networkRole": "Concentra informes de dispositivos LoRa compatibles de monitorización de inclinación.",
+          "description": "Reenvíe lecturas de puntos de medición designados de cimentaciones o estructuras para su revisión técnica y las inspecciones planificadas.",
+          "placement": "Evalúe las estructuras de acero de los aerogeneradores, el terreno y el trayecto de radio desde cada posición de sensor instalada.",
+          "projectBrief": "Ubicaciones de aerogeneradores, posiciones de medición, requisitos de precisión e intervalos de transmisión."
+        },
+        {
+          "id": "wind-equipment-shelters",
+          "title": "Monitorización ambiental de casetas de equipos",
+          "networkRole": "Conecta sensores compatibles de temperatura, humedad y detección de fugas de agua.",
+          "description": "Recopile informes de condiciones de zonas de servicio en bases de aerogeneradores, casetas de transformadores y edificios de equipos del emplazamiento.",
+          "placement": "Verifique la cobertura a través de envolventes metálicas cerradas y utilice disposiciones de antenas externas aprobadas cuando sea necesario.",
+          "projectBrief": "Construcción de envolventes, ubicaciones de sensores, disposiciones de antenas permitidas y parámetros monitorizados."
+        },
+        {
+          "id": "wind-site-environment",
+          "title": "Monitorización ambiental de parques eólicos",
+          "networkRole": "Reenvía informes de dispositivos compatibles de sensores meteorológicos y ambientales.",
+          "description": "Incorpore lecturas ambientales admitidas de ubicaciones seleccionadas del emplazamiento a una plataforma común junto con los datos de condiciones de las instalaciones.",
+          "placement": "Planifique la cobertura de radio teniendo en cuenta crestas, sombras del terreno y ubicaciones disponibles de montaje con alimentación.",
+          "projectBrief": "Plano topográfico, cargas útiles de sensores ambientales, distancias del emplazamiento y opciones de enlace de retorno."
+        },
+        {
+          "id": "wind-auxiliary-machine-conditions",
+          "title": "Estado de equipos auxiliares de parques eólicos",
+          "networkRole": "Recopila los indicadores de estado comunicados por dispositivos de monitorización LoRa compatibles.",
+          "description": "Reenvíe indicadores de vibración derivados de sensores o lecturas de temperatura de bombas, equipos de refrigeración y otros activos auxiliares accesibles seleccionados para su revisión de mantenimiento.",
+          "placement": "Evalúe la recepción cerca de maquinaria, carcasas metálicas y estructuras de bases de aerogeneradores en condiciones de funcionamiento representativas.",
+          "projectBrief": "Lista de equipos, indicadores derivados de sensores, tamaños de carga útil, intervalos de transmisión y requisitos de revisión de mantenimiento."
+        }
+      ],
+      "imageAlt": "Aerogeneradores distribuidos por un paisaje abierto de colinas",
+      "imageCaption": "Parque eólico · Entorno representativo"
+    },
+    {
+      "id": "agriculture-greenhouses",
+      "title": "Agricultura e invernaderos",
+      "jumpLabel": "Agricultura",
+      "intro": "Conecte dispositivos compatibles de monitorización de suelo, ambiente y agua en explotaciones agrícolas, incluidas parcelas exteriores y zonas de servicio de invernaderos.",
+      "imageKey": "agriculture",
+      "tasks": [
+        {
+          "id": "field-soil-conditions",
+          "title": "Monitorización de condiciones del suelo en campo",
+          "networkRole": "Concentra informes de dispositivos LoRa compatibles de monitorización del suelo.",
+          "description": "Reenvíe lecturas admitidas de humedad y temperatura del suelo desde ubicaciones representativas del campo para su revisión en la plataforma conectada.",
+          "placement": "Evalúe el crecimiento estacional de los cultivos, el terreno y las antenas de sensores a baja altura durante la planificación de cobertura.",
+          "projectBrief": "Límites de parcelas, tipos de cultivos, profundidades de sensores, parámetros de medición y programas de transmisión."
+        },
+        {
+          "id": "greenhouse-microclimate",
+          "title": "Monitorización de microclima de invernaderos",
+          "networkRole": "Conecta sensores ambientales compatibles distribuidos en zonas del invernadero.",
+          "description": "Recopile lecturas de temperatura, humedad y otros parámetros ambientales admitidos para comparar las condiciones de cultivo entre las áreas monitorizadas.",
+          "placement": "Pruebe los trayectos de radio a través de estructuras de invernaderos, pantallas y construcciones adyacentes.",
+          "projectBrief": "Dimensiones del invernadero, distribución de zonas, materiales de construcción e intervalos de actualización de sensores."
+        },
+        {
+          "id": "agricultural-water-monitoring",
+          "title": "Monitorización de riego y almacenamiento de agua",
+          "networkRole": "Reenvía mensajes de sensores compatibles de nivel y presión.",
+          "description": "Conecte depósitos de almacenamiento, líneas de suministro de riego y puntos de medición adecuados de bombeo para centralizar la monitorización de disponibilidad y presión del agua.",
+          "placement": "Evalúe el trayecto de radio hacia casetas de bombeo, bordes de parcelas e instalaciones de depósitos.",
+          "projectBrief": "Distribución del sistema de agua, rangos de medición, ubicaciones de sensores y alimentación disponible para el gateway."
+        },
+        {
+          "id": "livestock-site-environment",
+          "title": "Naves ganaderas y corrales exteriores",
+          "networkRole": "Concentra lecturas ambientales admitidas de sensores LoRa compatibles.",
+          "description": "Conecte puntos seleccionados de monitorización de temperatura, humedad y calidad del aire en alojamientos ganaderos y patios adyacentes para comparar las condiciones entre zonas de animales.",
+          "placement": "Evalúe los trayectos de radio a través de naves y corrales cubiertos, considerando cubiertas metálicas, exposición al lavado y cambios en las condiciones de acceso.",
+          "projectBrief": "Zonas de animales, parámetros monitorizados, posiciones representativas de sensores, condiciones de limpieza e intervalos de transmisión."
+        }
+      ],
+      "imageAlt": "Equipos auxiliares y tuberías junto a cultivos de invernadero",
+      "imageCaption": "Zona de servicios de invernadero · Entorno representativo"
+    },
+    {
+      "id": "municipal-roadside",
+      "title": "Infraestructura municipal y de carreteras",
+      "jumpLabel": "Municipios y carreteras",
+      "intro": "Conecte dispositivos compatibles de monitorización de infraestructura pública con cobertura exterior de radio evaluada y una configuración adecuada de enlace de retorno celular.",
+      "imageKey": "municipal",
+      "tasks": [
+        {
+          "id": "roadside-pole-inclination",
+          "title": "Monitorización de inclinación de postes de carretera",
+          "networkRole": "Concentra informes de sensores de inclinación LoRa compatibles en postes seleccionados.",
+          "description": "Reenvíe lecturas de inclinación de postes de iluminación, soportes de señales y otras estructuras viarias aprobadas para planificar inspecciones.",
+          "placement": "Evalúe los corredores de tráfico, los edificios cercanos y las alturas de montaje permitidas durante el estudio del emplazamiento.",
+          "projectBrief": "Ubicaciones de postes, tipos de estructuras, precisión de sensores y frecuencia de transmisión requerida."
+        },
+        {
+          "id": "municipal-drainage-levels",
+          "title": "Niveles de agua de drenaje y cámaras",
+          "networkRole": "Conecta dispositivos compatibles de monitorización de nivel y entrada de agua.",
+          "description": "Incorpore informes de canales de drenaje, cámaras de servicios y puntos bajos de infraestructura seleccionados a una plataforma común de monitorización.",
+          "placement": "Pruebe cada trayecto de radio subterráneo con la tapa de la cámara y la disposición de antenas instaladas.",
+          "projectBrief": "Dimensiones de cámaras, materiales de tapas, ubicaciones de medición y requisitos de notificación."
+        },
+        {
+          "id": "roadside-environment",
+          "title": "Monitorización ambiental junto a carreteras",
+          "networkRole": "Reenvía datos de dispositivos compatibles de calidad del aire, ruido o meteorología.",
+          "description": "Recopile lecturas ambientales admitidas en ubicaciones viarias seleccionadas para apoyar el análisis de tendencias local y la gestión de instalaciones públicas.",
+          "placement": "Coordine la planificación de radio con la exposición aprobada de los sensores y los requisitos municipales de instalación.",
+          "projectBrief": "Ubicaciones de monitorización, parámetros medidos, cargas útiles de sensores y restricciones locales de instalación."
+        },
+        {
+          "id": "municipal-waste-facilities",
+          "title": "Instalaciones municipales de almacenamiento de residuos",
+          "networkRole": "Recopila informes admitidos de nivel y ambiente de dispositivos LoRa compatibles.",
+          "description": "Reenvíe lecturas de contenedores de almacenamiento de residuos, recintos de recogida o edificios de servicio seleccionados para revisar condiciones y planificar la recogida.",
+          "placement": "Pruebe la recepción con tapas de contenedores y puertas de servicio en sus posiciones habituales, teniendo en cuenta el apantallamiento metálico y el acceso de limpieza.",
+          "projectBrief": "Distribución de la instalación, posiciones de montaje de sensores, parámetros comunicados, horarios de recogida y campos de datos de la plataforma."
+        }
+      ],
+      "imageAlt": "Armario de equipos viarios en una intersección municipal",
+      "imageCaption": "Infraestructura de carretera · Entorno representativo"
+    },
+    {
+      "id": "rail-transport",
+      "title": "Instalaciones ferroviarias y de transporte",
+      "jumpLabel": "Ferrocarril y transporte",
+      "intro": "Conecte dispositivos de monitorización de instalaciones e infraestructura que no desempeñen funciones críticas de seguridad en depósitos ferroviarios, patios de transporte y zonas exteriores de servicio auxiliares.",
+      "imageKey": "rail",
+      "tasks": [
+        {
+          "id": "transport-drainage",
+          "title": "Monitorización de drenaje de instalaciones de transporte",
+          "networkRole": "Concentra informes de sensores compatibles de nivel y entrada de agua.",
+          "description": "Reenvíe lecturas de canales de drenaje, sumideros de pasos inferiores y zonas de servicio bajas seleccionadas para monitorizar las instalaciones.",
+          "placement": "Evalúe desmontes, muros de contención y puntos subterráneos para detectar zonas de sombra de radio.",
+          "projectBrief": "Ubicaciones de drenaje, cotas del terreno, tipos de sensores e intervalos de transmisión requeridos."
+        },
+        {
+          "id": "transport-service-cabinets",
+          "title": "Condiciones de armarios exteriores de servicio",
+          "networkRole": "Conecta dispositivos compatibles de monitorización ambiental y detección de fugas de agua dentro de envolventes de servicio.",
+          "description": "Recopile informes de temperatura, humedad y entrada de agua de casetas de equipos y armarios de mantenimiento designados.",
+          "placement": "Pruebe el rendimiento de radio con puertas cerradas y siga los requisitos de instalación y separación del operador.",
+          "projectBrief": "Materiales de armarios, puntos de montaje permitidos, posiciones de sensores y requisitos de acceso al emplazamiento."
+        },
+        {
+          "id": "transport-yard-structures",
+          "title": "Monitorización de estructuras de patios e instalaciones",
+          "networkRole": "Reenvía informes de dispositivos LoRa compatibles de monitorización de inclinación.",
+          "description": "Conecte postes, estructuras de soporte y puntos de medición de instalaciones seleccionados para revisar tendencias y realizar inspecciones planificadas.",
+          "placement": "Evalúe los alrededores de vehículos estacionados, estructuras elevadas y otros obstáculos variables del patio.",
+          "projectBrief": "Ubicaciones de estructuras, objetivos de medición, precisión de sensores y programas de monitorización."
+        },
+        {
+          "id": "transport-site-weather",
+          "title": "Meteorología y exposición ambiental en instalaciones de transporte",
+          "networkRole": "Reenvía lecturas de dispositivos LoRa compatibles de monitorización meteorológica y ambiental.",
+          "description": "Recopile observaciones admitidas de viento, lluvia, temperatura o ruido en depósitos, vías de acceso y zonas de servicio expuestas para revisar las condiciones del emplazamiento.",
+          "placement": "Coloque los instrumentos para la observación prevista y mantenga el gateway en una ubicación con espacio libre adecuado para radio, alimentación y acceso de servicio.",
+          "projectBrief": "Objetivos de observación, parámetros monitorizados, posiciones de instrumentos, permisos del emplazamiento e intervalos de actualización."
+        }
+      ],
+      "imageAlt": "Armario de servicio junto a vías ferroviarias y líneas eléctricas aéreas",
+      "imageCaption": "Infraestructura ferroviaria · Entorno representativo"
+    },
+    {
+      "id": "remote-telecom",
+      "title": "Instalaciones remotas de telecomunicaciones",
+      "jumpLabel": "Telecomunicaciones",
+      "intro": "Concentre mensajes compatibles de condiciones de instalaciones en emplazamientos de telecomunicaciones distribuidos donde se disponga de alimentación adecuada para el gateway y enlace de retorno celular.",
+      "imageKey": "telecom",
+      "tasks": [
+        {
+          "id": "telecom-shelter-environment",
+          "title": "Condiciones ambientales de casetas de telecomunicaciones",
+          "networkRole": "Concentra informes de sensores compatibles de temperatura y humedad.",
+          "description": "Reenvíe lecturas de casetas de equipos, salas de servicio y ubicaciones de armarios aprobadas para revisar a distancia las condiciones del emplazamiento.",
+          "placement": "Evalúe el apantallamiento de casetas con revestimiento metálico y mantenga la separación respecto a equipos de radiofrecuencia exigida por el operador.",
+          "projectBrief": "Distribución de casetas, restricciones de equipos, posiciones de sensores e intervalos de transmisión requeridos."
+        },
+        {
+          "id": "telecom-water-ingress",
+          "title": "Monitorización de entrada de agua en el emplazamiento",
+          "networkRole": "Conecta dispositivos LoRa compatibles de detección de fugas de agua y monitorización de nivel.",
+          "description": "Incorpore informes de suelos de casetas, zonas de entrada de cables y puntos de drenaje seleccionados al flujo de monitorización configurado.",
+          "placement": "Verifique la cobertura de radio hacia dispositivos a baja altura y posiciones apantalladas por armarios o infraestructura de cables.",
+          "projectBrief": "Zonas propensas a fugas, disposición del drenaje, modelos de sensores y requisitos de notificación de la plataforma."
+        },
+        {
+          "id": "telecom-support-inclination",
+          "title": "Inclinación de estructuras de soporte seleccionadas",
+          "networkRole": "Reenvía informes de dispositivos LoRa compatibles de monitorización de inclinación.",
+          "description": "Conecte puntos de medición designados de soportes o cimentaciones para revisar tendencias técnicas y planificar inspecciones de mantenimiento.",
+          "placement": "Coordine el montaje y las posiciones de antenas con las normas de instalación estructural y de radiofrecuencia del emplazamiento.",
+          "projectBrief": "Objetivos de medición, detalles de estructuras, precisión de sensores y limitaciones específicas de instalación."
+        },
+        {
+          "id": "telecom-auxiliary-equipment",
+          "title": "Estado de equipos auxiliares de telecomunicaciones",
+          "networkRole": "Reenvía los indicadores de estado comunicados por dispositivos de monitorización LoRa compatibles.",
+          "description": "Recopile indicadores de temperatura o vibración derivados de sensores seleccionados en equipos accesibles de refrigeración, ventilación y otros servicios auxiliares del emplazamiento para su revisión de mantenimiento.",
+          "placement": "Compruebe la recepción a través de paredes de casetas y del apantallamiento de equipos; coloque los sensores dentro de sus propios límites ambientales y de instalación.",
+          "projectBrief": "Lista de equipos, modelos de sensores, indicadores comunicados, intervalos de actualización y requisitos de revisión de mantenimiento."
+        },
+        {
+          "id": "telecom-site-weather",
+          "title": "Meteorología y exposición ambiental en emplazamientos remotos",
+          "networkRole": "Conecta sensores meteorológicos y ambientales compatibles en emplazamientos distribuidos.",
+          "description": "Incorpore observaciones admitidas de viento, lluvia, temperatura y humedad a la plataforma de monitorización para contextualizar localmente los registros de casetas y estructuras de soporte.",
+          "placement": "Evalúe el terreno y la separación de antenas respecto a los equipos existentes; verifique la alimentación del gateway y el enlace de retorno móvil en la posición real de montaje.",
+          "projectBrief": "Ubicaciones de emplazamientos, parámetros meteorológicos, trayectos de radio, alimentación disponible, cobertura del operador y programa de transmisión."
+        }
+      ],
+      "imageAlt": "Mástil remoto de telecomunicaciones con instalaciones exteriores de servicio",
+      "imageCaption": "Emplazamiento de telecomunicaciones · Entorno representativo"
+    },
+    {
+      "id": "environment-weather",
+      "title": "Monitorización ambiental y meteorológica",
+      "jumpLabel": "Ambiente y meteorología",
+      "intro": "Integre dispositivos compatibles de monitorización de calidad del aire, meteorología y acústica en una red común de datos de campo, seleccionando las ubicaciones de medición por separado del emplazamiento del gateway.",
+      "imageKey": "environment-weather",
+      "tasks": [
+        {
+          "id": "industrial-outdoor-air-quality",
+          "title": "Monitorización ambiental de zonas exteriores de proceso",
+          "networkRole": "Reenvía lecturas ambientales admitidas de dispositivos de monitorización LoRa compatibles.",
+          "description": "Incorpore mediciones de calidad del aire, ruido o meteorología local de zonas exteriores de servicio seleccionadas a la plataforma de la instalación para documentar cambios en las condiciones de funcionamiento.",
+          "placement": "Seleccione ubicaciones de medición representativas por separado de la posición del gateway y verifique después la cobertura de radio alrededor de edificios y estructuras de proceso.",
+          "projectBrief": "Parámetros y modelos de sensores, ubicaciones de medición, condiciones previstas, frecuencia de transmisión y requisitos de revisión de datos."
+        },
+        {
+          "id": "pv-site-microclimate",
+          "title": "Meteorología y microclima de instalaciones fotovoltaicas",
+          "networkRole": "Reenvía mediciones de dispositivos LoRa compatibles de monitorización meteorológica.",
+          "description": "Recopile registros admitidos de temperatura ambiente, humedad, viento o lluvia de áreas representativas de una instalación solar para contextualizar ambientalmente las operaciones.",
+          "placement": "Coloque los instrumentos meteorológicos con una exposición representativa y evalúe sus trayectos de radio por separado de las ubicaciones de equipos eléctricos.",
+          "projectBrief": "Extensión de la instalación, parámetros meteorológicos, ubicaciones de instrumentos, intervalos de transmisión y sistema receptor de datos."
+        },
+        {
+          "id": "site-boundary-noise",
+          "title": "Observaciones de ruido en límites del emplazamiento",
+          "networkRole": "Reenvía los indicadores acústicos comunicados por dispositivos LoRa compatibles de monitorización de ruido.",
+          "description": "Recopile indicadores admitidos de nivel sonoro en límites designados del emplazamiento o ubicaciones exteriores de instalaciones para su revisión temporal junto con registros meteorológicos y operativos.",
+          "placement": "Sitúe los instrumentos acústicos según el objetivo de observación y pruebe los trayectos de radio desde sus transmisores. Acuerde los criterios de transmisión de datos sin presuponer compatibilidad con la transmisión de audio en continuo.",
+          "projectBrief": "Ubicaciones de observación, indicadores acústicos, periodos de promedio, formato de carga útil, intervalos de transmisión y método de medición requerido."
+        }
+      ],
+      "imageAlt": "Mástil exterior de instrumentos con equipos meteorológicos y colector de lluvia junto a un campo abierto",
+      "imageCaption": "Observación meteorológica exterior · Entorno ilustrativo"
+    },
+    {
+      "id": "civil-earthworks",
+      "title": "Estructuras civiles y obras de tierra",
+      "jumpLabel": "Estructuras civiles",
+      "intro": "Conecte puntos designados de monitorización en soportes, estructuras de contención, obras de tierra y puentes de instalaciones para revisar tendencias técnicas y planificar inspecciones de campo.",
+      "imageKey": "civil-earthworks",
+      "tasks": [
+        {
+          "id": "industrial-pipeline-supports",
+          "title": "Soportes de tuberías y estructuras de servicio",
+          "networkRole": "Recopila informes de dispositivos LoRa compatibles de monitorización de inclinación en puntos estructurales seleccionados.",
+          "description": "Conecte soportes de tuberías, pórticos de servicio y estructuras de contención designados para revisar tendencias de inclinación junto con los datos de servicios de la instalación.",
+          "placement": "Evalúe los trayectos de radio bajo racks de tuberías y alrededor de estructuras de acero; mantenga accesibles las ubicaciones del gateway y las antenas para inspección.",
+          "projectBrief": "Distribución de estructuras, posiciones de medición, precisión de sensores, intervalos de transmisión y requisitos de revisión técnica."
+        },
+        {
+          "id": "flood-embankment-observation",
+          "title": "Observación de canales de avenidas y terraplenes",
+          "networkRole": "Conecta sensores compatibles de nivel e inclinación en puntos de monitorización designados.",
+          "description": "Combine lecturas de nivel de canales con registros seleccionados de inclinación de terraplenes o estructuras de contención para la revisión de campo y la planificación de inspecciones.",
+          "placement": "Evalúe las posiciones bajas de sensores, los cambios de nivel de agua y los obstáculos del terreno al ubicar el gateway y la antena.",
+          "projectBrief": "Distribución de canales, estructuras monitorizadas, exposición estacional, intervalos de actualización y flujo de notificación de la plataforma."
+        },
+        {
+          "id": "wind-access-road-slopes",
+          "title": "Taludes y estructuras de contención de vías de acceso",
+          "networkRole": "Conecta sensores compatibles de monitorización de inclinación en estructuras civiles seleccionadas.",
+          "description": "Incorpore registros de soportes de taludes, muros de contención y estructuras de vías de acceso designados al flujo de inspección técnica del emplazamiento.",
+          "placement": "Revise el apantallamiento del terreno y el trayecto de radio desde sensores situados a baja altura o en huecos; confirme una alimentación y un acceso de servicio prácticos para el gateway.",
+          "projectBrief": "Planos de obra civil, puntos monitorizados, requisitos de precisión, tendencias de movimiento previstas y programa de transmisión."
+        },
+        {
+          "id": "transport-bridges-retaining-walls",
+          "title": "Puentes y muros de contención de instalaciones",
+          "networkRole": "Concentra informes compatibles de monitorización de inclinación en puntos estructurales seleccionados.",
+          "description": "Conecte accesos de puentes, muros de contención y estructuras de instalaciones designados para revisar tendencias técnicas y realizar inspecciones planificadas.",
+          "placement": "Evalúe los trayectos de radio alrededor de tableros de puentes, estructuras de acero y obras de tierra; acuerde el acceso de instalación con el operador de la infraestructura.",
+          "projectBrief": "Puntos de medición aprobados, distribución estructural, precisión de sensores, intervalos de transmisión y requisitos de datos técnicos."
+        }
+      ],
+      "imageAlt": "Terraplén y muro de contención de hormigón junto a una vía de acceso bajo un puente",
+      "imageCaption": "Muro de contención y obras de tierra · Entorno ilustrativo"
+    },
+    {
+      "id": "parks-outdoor-visitors",
+      "title": "Parques e instalaciones exteriores para visitantes",
+      "jumpLabel": "Parques y espacios de visitantes",
+      "intro": "Conecte dispositivos compatibles de monitorización en jardines públicos, recintos ajardinados e infraestructuras de atención a visitantes para la revisión ambiental, la inspección de activos y el mantenimiento rutinario de instalaciones.",
+      "imageKey": "parks-gardens",
+      "tasks": [
+        {
+          "id": "parks-public-open-spaces",
+          "title": "Parques y espacios públicos abiertos",
+          "networkRole": "Reenvía informes de dispositivos compatibles de monitorización ambiental, del suelo y del agua.",
+          "description": "Conecte puntos seleccionados de monitorización de calidad del aire, microclima, suelo de riego y aguas ornamentales en parques, recintos ajardinados y jardines públicos.",
+          "placement": "Revise la vegetación, el follaje estacional, los edificios y las limitaciones de acceso público al seleccionar las ubicaciones de antenas y gateways.",
+          "projectBrief": "Plano del emplazamiento, zonas monitorizadas, parámetros de sensores, condiciones de vegetación, alimentación y requisitos de transmisión."
+        },
+        {
+          "id": "park-trees-support-inclination",
+          "title": "Inclinación de árboles y soportes del paisaje",
+          "networkRole": "Recopila informes de sensores LoRa compatibles de inclinación en puntos de observación designados.",
+          "description": "Reenvíe tendencias de inclinación de árboles, soportes de señalización o estructuras de sombra seleccionados para su revisión en inspecciones de arboricultura o ingeniería. Defina el montaje y la interpretación del movimiento de cada activo observado.",
+          "placement": "Evalúe el apantallamiento de la vegetación y el follaje estacional. Siempre que sea práctico, coloque el gateway fuera de copas densas y pruebe el trayecto de radio a la altura real del sensor.",
+          "projectBrief": "Activos seleccionados, montaje de sensores, precisión requerida, movimiento estacional, flujo de inspección e intervalos de transmisión."
+        },
+        {
+          "id": "visitor-service-utilities",
+          "title": "Condiciones de agua y servicios de instalaciones para visitantes",
+          "networkRole": "Conecta dispositivos compatibles de monitorización de fugas de agua, nivel, presión y ambiente.",
+          "description": "Incorpore lecturas de salas de servicio de pabellones para visitantes, sistemas de agua de aseos y puntos exteriores de servicios seleccionados a la plataforma de monitorización para su revisión de mantenimiento.",
+          "placement": "Compruebe la recepción desde envolventes de servicio y puntos de agua en huecos. Mantenga la alimentación del gateway, la ubicación de antenas y el acceso de mantenimiento rutinario adecuados para un espacio público.",
+          "projectBrief": "Plano de instalaciones para visitantes, puntos de servicios monitorizados, modelos de sensores, horarios de apertura, intervalos de transmisión y destinatarios de mantenimiento."
+        }
+      ],
+      "imageAlt": "Parque botánico ajardinado con árboles maduros, senderos, cubierta de sombra y estanque",
+      "imageCaption": "Parque y entorno de visitantes · Entorno ilustrativo"
+    },
+    {
+      "id": "aquaculture-waterside",
+      "title": "Acuicultura y operaciones junto al agua",
+      "jumpLabel": "Acuicultura",
+      "intro": "Conecte puntos de monitorización de calidad del agua, nivel de estanques y equipos de servicio en instalaciones de acuicultura y junto al agua, planificando la ubicación del gateway según los trayectos de radio desde las orillas y la alimentación disponible.",
+      "imageKey": "aquaculture",
+      "tasks": [
+        {
+          "id": "aquaculture-ponds",
+          "title": "Estanques de acuicultura y zonas de servicio",
+          "networkRole": "Conecta dispositivos LoRa compatibles de monitorización del agua y del ambiente.",
+          "description": "Reúna lecturas admitidas de temperatura del agua de estanques, oxígeno disuelto u otros sensores acordados con registros de nivel de agua y zonas de servicio para la revisión operativa rutinaria.",
+          "placement": "Compruebe los trayectos de radio sobre el agua y desde transmisores de las orillas; planifique una instalación de sondas, alimentación del gateway y acceso de mantenimiento adecuados.",
+          "projectBrief": "Distribución de estanques, modelos y parámetros de sensores, profundidades de sondas, disposición de alimentación e intervalos de actualización requeridos."
+        },
+        {
+          "id": "aquaculture-pond-level-supply",
+          "title": "Niveles de estanques y líneas de suministro de agua",
+          "networkRole": "Reenvía lecturas de dispositivos LoRa compatibles de monitorización de nivel y presión.",
+          "description": "Recopile registros de nivel de estanques, depósitos de cabecera y presiones seleccionadas del suministro para ayudar a los operadores a revisar la disponibilidad de agua e investigar cambios en toda la instalación.",
+          "placement": "Evalúe las posiciones bajas de transmisores en las orillas y el apantallamiento de radio causado por terraplenes. Especifique las conexiones de sondas o de proceso por separado de la instalación del gateway.",
+          "projectBrief": "Distribución de estanques y líneas de suministro, niveles y presiones monitorizados, posiciones de sensores, intervalos de transmisión y requisitos de visualización de la plataforma."
+        },
+        {
+          "id": "aquaculture-aeration-equipment",
+          "title": "Estado de equipos de aireación y equipos junto al agua",
+          "networkRole": "Concentra los indicadores de estado comunicados por dispositivos de monitorización LoRa compatibles.",
+          "description": "Reenvíe indicadores seleccionados de vibración derivados de sensores o lecturas de temperatura de motores de aireación, bombas de circulación y otros equipos auxiliares accesibles junto al agua para su revisión de mantenimiento.",
+          "placement": "Verifique la recepción de cada transmisor instalado y tenga en cuenta la exposición a salpicaduras, el apantallamiento de equipos y los cambios de nivel de agua. Planifique un acceso de servicio seguro para la instalación completa.",
+          "projectBrief": "Lista de equipos, indicadores comunicados, modelos de sensores, tamaño de carga útil, intervalos de transmisión y requisitos de revisión de mantenimiento."
+        }
+      ],
+      "imageAlt": "Estanques de peces con aireador de paletas, senderos en las orillas y tubería de suministro de agua",
+      "imageCaption": "Operaciones en estanques de acuicultura · Entorno ilustrativo"
+    }
+  ],
+  "imageWidth": 400,
+  "imageHeight": 918
+}

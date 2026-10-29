@@ -1,0 +1,703 @@
+{
+  "model": "H66",
+  "kind": "Intérieur",
+  "slug": "indoor-gateway-h66",
+  "path": "/fr/product/indoor-gateway-h66",
+  "title": "Passerelle IoT intérieure H66 | LoRa et 4G LTE | Hitelecom",
+  "metaDescription": "Connectez des capteurs LoRa compatibles avec la passerelle IoT intérieure H66 de Hitelecom. Boîtier IP65, liaison de collecte 4G LTE, intégration MQTT et options radio régionales.",
+  "image": "h66.webp",
+  "imageAlt": "Passerelle intérieure H66 de Hitelecom avec antennes externes, image officielle du produit",
+  "caption": "H66 · Passerelle IoT intérieure",
+  "heroHeading": "H66, passerelle\nIoT intérieure.",
+  "heroValue": "Connectez vos capteurs.\nDans tout votre bâtiment.",
+  "heroDescription": "La H66 de Hitelecom relie les capteurs LoRa compatibles des bâtiments, entrepôts et installations industrielles à une plateforme de surveillance. Son architecture radio à 8 canaux en duplex intégral agrège les données de capteurs distribués, avec une liaison de collecte 4G LTE et une intégration MQTT vers Hitelecom Cloud ou une plateforme client compatible. Planifiez le réseau radio selon le bâtiment, le parc de capteurs et les exigences de transmission.",
+  "proof": [
+    {
+      "value": "8 canaux",
+      "label": "Architecture radio en duplex intégral",
+      "note": "Adapter la configuration radio à la région"
+    },
+    {
+      "value": "4G LTE",
+      "label": "Liaison de collecte du site vers la plateforme",
+      "note": "Choisir le modem selon l’opérateur local"
+    },
+    {
+      "value": "MQTT",
+      "label": "Intégration des données à la plateforme",
+      "note": "Hitelecom Cloud ou une plateforme compatible"
+    }
+  ],
+  "featureTitle": "Réseaux de capteurs intérieurs.\nUne liaison adaptée vers la plateforme.",
+  "featureIntro": "Regroupez les données de capteurs compatibles en définissant clairement l’accès radio, la liaison de collecte et l’intégration à la plateforme.",
+  "features": [
+    {
+      "title": "Agrégation des capteurs LoRa",
+      "text": "Collectez les données d’appareils LoRa compatibles au moyen de l’architecture radio publiée à 8 canaux en duplex intégral. Vérifiez la concordance du protocole des capteurs et des paramètres régionaux."
+    },
+    {
+      "title": "Liaison de collecte 4G LTE",
+      "text": "Transmettez les données collectées sur un réseau mobile disponible. Choisissez le modem, la carte SIM et l’opérateur selon la couverture à l’emplacement de la passerelle."
+    },
+    {
+      "title": "Intégration MQTT",
+      "text": "Reliez les données de terrain à Hitelecom Cloud ou à une plateforme client compatible, avec un point de terminaison, un format de message et une configuration d’authentification convenus."
+    },
+    {
+      "title": "Boîtier de protection IP65",
+      "text": "Le boîtier de protection IP65 permet une installation dans des environnements intérieurs exigeants. Installez la passerelle dans les limites de ses conditions de fonctionnement et en préservant l’accès pour la maintenance."
+    },
+    {
+      "title": "Options radio régionales",
+      "text": "Sélectionnez CN470, EU868, IN865, RU864, US915 ou AU915 pour le déploiement. La fréquence, les paramètres des canaux et la puissance d’émission doivent respecter les exigences locales."
+    },
+    {
+      "title": "Couverture adaptée au site",
+      "text": "Jusqu’à 5 km en terrain dégagé. Les murs, dalles, rayonnages métalliques, équipements et emplacements des antennes déterminent la couverture à l’intérieur du bâtiment."
+    },
+    {
+      "title": "Déploiement local de la plateforme",
+      "text": "Un déploiement local peut être prévu pour les projets nécessitant un traitement des données maîtrisé sur site. Définissez le rôle du serveur, la connectivité et le périmètre d’intégration."
+    },
+    {
+      "title": "Notification de coupure d’alimentation",
+      "text": "Une alerte de coupure d’alimentation peut être transmise si l’alimentation de secours et la liaison de collecte restent disponibles. Intégrez le chemin de notification requis à la conception de l’alimentation."
+    }
+  ],
+  "planningIntro": "Les performances radio intérieures dépendent autant du bâtiment que de la passerelle. Examinez les étages, cloisons, rayonnages et équipements avant de déterminer le nombre de passerelles.",
+  "planning": [
+    {
+      "title": "Définir le parc de capteurs",
+      "text": "Répertoriez les appareils compatibles, les points de mesure et la configuration radio. Dimensionnez le trafic selon la taille des charges utiles, les intervalles de transmission et les besoins de liaison descendante, plutôt que selon le seul nombre d’appareils.",
+      "brief": "Modèles de capteurs · Nombre d’appareils · Charges utiles · Intervalles de transmission · Réponse attendue"
+    },
+    {
+      "title": "Planifier la couverture radio",
+      "text": "Examinez les dalles, rayonnages métalliques et machines. Testez des liaisons représentatives dans les locaux et zones de stockage les plus difficiles à atteindre.",
+      "brief": "Plan du site · Position de l’antenne · Interférences · Étude de couverture · Emplacements des passerelles"
+    },
+    {
+      "title": "Confirmer la liaison vers la plateforme",
+      "text": "Vérifiez l’alimentation de la passerelle, l’opérateur mobile local et la plateforme réceptrice. Pour une configuration Ethernet, confirmez l’interface fournie et les exigences du réseau du site.",
+      "brief": "Alimentation · SIM / opérateur · Configuration Ethernet · Point de terminaison · Correspondance des données"
+    }
+  ],
+  "installationText": "Placez la passerelle là où les liaisons radio atteignent les zones de capteurs visées et où la liaison de collecte reste disponible. Évitez une armoire métallique fermée, sauf si la disposition des antennes est conçue pour cet emplacement. Prévoyez une alimentation, un cheminement des câbles et un accès de maintenance adaptés.",
+  "workflow": [
+    {
+      "title": "Collecter",
+      "text": "Les capteurs LoRa compatibles transmettent leurs relevés de mesure à la passerelle selon les paramètres radio et le profil de transmission convenus."
+    },
+    {
+      "title": "Transmettre",
+      "text": "La passerelle transmet les relevés collectés via la liaison de collecte choisie au point de terminaison MQTT configuré."
+    },
+    {
+      "title": "Consulter et intervenir",
+      "text": "Utilisez Hitelecom Cloud pour consulter en ligne les données de surveillance transmises et recevoir des alertes lorsque les mesures dépassent les seuils configurés. Une plateforme client peut proposer son propre processus convenu."
+    }
+  ],
+  "coverageTitle": "Jusqu’à 5 km.\nEn terrain dégagé.",
+  "coverageText": "La portée en terrain dégagé n’est ni un rayon de couverture intérieure ni une garantie de couverture d’un nombre d’étages. Les matériaux du bâtiment, dalles, rayonnages denses et équipements peuvent atténuer les signaux radio. Validez le réseau prévu à partir d’emplacements de capteurs représentatifs.",
+  "rows": [
+    [
+      "Modèle",
+      "H66"
+    ],
+    [
+      "Déploiement",
+      "Passerelle pour réseaux de capteurs intérieurs"
+    ],
+    [
+      "Architecture radio",
+      "8 canaux en duplex intégral, selon les spécifications de la configuration fournie"
+    ],
+    [
+      "Options radio régionales",
+      "CN470 / EU868 / IN865 / RU864 / US915 / AU915 ; sélectionner la configuration régionale requise"
+    ],
+    [
+      "Portée en terrain dégagé",
+      "Jusqu’à 5 km ; la couverture réelle dépend du site et des conditions radio"
+    ],
+    [
+      "Puissance d’émission",
+      "20–27 dBm ; selon la configuration choisie et les limites réglementaires locales"
+    ],
+    [
+      "Sensibilité du récepteur",
+      "−140 dBm à 0.292 kbps"
+    ],
+    [
+      "Antenne",
+      "Antenne externe en fibre de verre ; confirmer la disposition des antennes fournies"
+    ],
+    [
+      "Liaison de collecte",
+      "4G LTE ; Ethernet selon la configuration fournie"
+    ],
+    [
+      "Bandes LTE publiées",
+      "LTE-TDD B34 / B38 / B39 / B40 / B41 ; LTE-FDD B1 / B3 / B5 / B8. Choisir le modem selon l’opérateur du déploiement."
+    ],
+    [
+      "Protocole de données",
+      "MQTT ; définir le point de terminaison, la charge utile et la configuration d’authentification"
+    ],
+    [
+      "Protection du boîtier",
+      "IP65 ; respecter les joints et conditions d’installation spécifiés"
+    ],
+    [
+      "Température de fonctionnement",
+      "−20°C à +70°C"
+    ],
+    [
+      "Température de stockage",
+      "−20°C à +80°C"
+    ],
+    [
+      "Options de fixation",
+      "Pattes de fixation / collier pour mât / support à fentes, selon la configuration fournie"
+    ]
+  ],
+  "specNote": "Les valeurs de référence suivent les spécifications actuelles du produit Hitelecom. Confirmez la révision matérielle, l’alimentation d’entrée, les dimensions, le jeu d’antennes, les homologations régionales et les interfaces prises en charge dans l’offre du projet.",
+  "faqs": [
+    {
+      "q": "Quel est le rôle de la passerelle H66 ?",
+      "a": "La H66 reçoit les données de capteurs LoRa compatibles et les transmet à une plateforme de surveillance via la liaison de collecte configurée. La passerelle assure la connexion entre les points de mesure et la plateforme ; les mesures sont réalisées par les capteurs connectés."
+    },
+    {
+      "q": "Quelles différences entre la H66 et la H68 ?",
+      "a": "La H66 est destinée aux installations intérieures, avec un boîtier IP65, une plage de fonctionnement de −20°C à +70°C et une portée de référence jusqu’à 5 km en terrain dégagé. La H68 est destinée aux sites extérieurs, avec un boîtier IP68, une plage de fonctionnement de −40°C à +85°C et une portée de référence jusqu’à 10 km en terrain dégagé. Choisissez selon les conditions d’installation et une étude radio propre au site."
+    },
+    {
+      "q": "Une seule H66 peut-elle couvrir tout le site ?",
+      "a": "Le nombre de passerelles dépend des trajets radio réels, des positions d’antennes, des interférences et du trafic des capteurs. Une portée en terrain dégagé ne permet pas de déterminer la couverture à l’intérieur des bâtiments ou derrière des reliefs et structures. Fournissez un plan du site et des emplacements de capteurs représentatifs pour permettre l’étude et les essais du réseau."
+    },
+    {
+      "q": "Combien de capteurs une passerelle peut-elle connecter ?",
+      "a": "La capacité dépend de la taille des charges utiles, de l’intervalle de transmission, des paramètres radio, de la concentration du trafic, des retransmissions et des besoins de liaison descendante. Aucun nombre d’appareils unique ne s’applique à tous les déploiements. Fournissez la liste des capteurs et le profil de transmission pour dimensionner le réseau."
+    },
+    {
+      "q": "La prise en charge de LoRa signifie-t-elle que la passerelle est compatible LoRaWAN ?",
+      "a": "LoRa désigne la technologie radio. LoRaWAN est un protocole réseau avec des exigences distinctes pour les appareils, la passerelle et le serveur. Pour tout besoin LoRaWAN, confirmez le protocole exact des capteurs, le micrologiciel de la passerelle et la compatibilité de la plateforme avant de choisir la configuration."
+    },
+    {
+      "q": "Quelles bandes de fréquences radio et cellulaires choisir ?",
+      "a": "Choisissez la configuration radio régionale selon le pays de déploiement et le modem LTE selon l’opérateur local. Les options radio régionales et bandes LTE publiées figurent dans le tableau des spécifications. Le nom d’une bande régionale ne constitue ni une homologation locale ni une garantie de couverture par tous les opérateurs."
+    },
+    {
+      "q": "Puis-je utiliser Hitelecom Cloud ou ma propre plateforme ?",
+      "a": "Oui. Définissez la configuration d’intégration à Hitelecom Cloud ou à une plateforme client compatible. MQTT figure dans les spécifications. Confirmez le point de terminaison, les sujets, la correspondance des charges utiles, les horodatages, l’authentification et toute sécurité de transport requise, puis vérifiez un message de test de bout en bout."
+    },
+    {
+      "q": "Puis-je consulter les mesures en ligne et recevoir des alarmes de seuil ?",
+      "a": "Avec l’intégration convenue à Hitelecom Cloud, les utilisateurs peuvent consulter en ligne les données de surveillance transmises et recevoir des alertes lorsque les mesures dépassent les seuils configurés. L’échantillonnage des capteurs, les intervalles de transmission, la disponibilité du réseau et les paramètres de la plateforme déterminent quand les informations sont disponibles. Définissez les destinataires et la procédure d’intervention lors de la mise en service."
+    },
+    {
+      "q": "Que se passe-t-il en cas de coupure d’alimentation ?",
+      "a": "Une notification de coupure nécessite une réserve d’énergie suffisante pour faire fonctionner la passerelle ainsi qu’une liaison de collecte opérationnelle. Elle ne signifie pas que la transmission se poursuit indéfiniment après la coupure. Confirmez l’alimentation de secours, le chemin de notification et la durée requise pour le projet."
+    },
+    {
+      "q": "La H66 peut-elle être installée dans une chambre froide ?",
+      "a": "La plage de fonctionnement publiée est de −20°C à +70°C. Confirmez l’environnement réel de la passerelle, la condensation, l’alimentation et les trajets radio. Dans de nombreux projets de chaîne du froid, les capteurs sont placés dans la zone de stockage surveillée tandis que la passerelle est installée dans un local technique adapté, à l’extérieur de l’enceinte froide. Validez la réception avec les portes dans leur état normal d’exploitation."
+    }
+  ],
+  "groups": [
+    {
+      "id": "buildings-hvac",
+      "title": "Bâtiments et CVC",
+      "jumpLabel": "Bâtiments et CVC",
+      "intro": "Regroupez les relevés distribués de l’environnement intérieur et des installations techniques du bâtiment au sein d’un réseau de surveillance commun, notamment dans les projets de rénovation où un nouveau câblage de capteurs est difficile.",
+      "imageKey": "building",
+      "tasks": [
+        {
+          "id": "occupied-space-environment",
+          "title": "Surveillance de l’environnement des espaces occupés",
+          "networkRole": "Agrège les capteurs environnementaux LoRa compatibles des espaces occupés.",
+          "description": "Transmettez les relevés de température, d’humidité et de qualité de l’air des bureaux, salles de classe ou salles de réunion pour une consultation centralisée des conditions intérieures.",
+          "placement": "Placez la passerelle dans un endroit intérieur accessible, avec une liaison radio vérifiée vers les pièces surveillées.",
+          "projectBrief": "Plans des étages, construction des murs, pièces surveillées, types de capteurs et intervalles de transmission."
+        },
+        {
+          "id": "hvac-service-areas",
+          "title": "Surveillance des locaux techniques CVC",
+          "networkRole": "Connecte des capteurs compatibles répartis autour des équipements et locaux techniques CVC.",
+          "description": "Collectez les mesures de température, d’humidité, de pression ou de fuite autour des locaux techniques et zones de service pour faciliter la planification des inspections et de la maintenance.",
+          "placement": "Choisissez un emplacement intérieur à l’écart des enveloppes métalliques, surfaces chaudes et interférences des moteurs.",
+          "projectBrief": "Plan des installations, emplacements des équipements, interfaces des capteurs et intervalles de surveillance requis."
+        },
+        {
+          "id": "building-water-leaks",
+          "title": "Surveillance des fuites d’eau dans les bâtiments",
+          "networkRole": "Transmet les rapports des dispositifs de détection de fuite LoRa compatibles.",
+          "description": "Connectez les capteurs de fuite près des colonnes montantes, sanitaires, locaux mécaniques et espaces techniques dissimulés pour consulter ensemble les points de détection distribués.",
+          "placement": "Étudiez la couverture radio à travers les dalles en béton et gaines techniques avant de fixer l’emplacement de la passerelle.",
+          "projectBrief": "Zones de détection, niveaux des étages, positions des capteurs et procédure de notification de la plateforme."
+        },
+        {
+          "id": "hvac-filter-pressure",
+          "title": "Évolution de la pression différentielle des filtres CVC",
+          "networkRole": "Transmet les mesures de pression différentielle des appareils de surveillance LoRa compatibles.",
+          "description": "Intégrez les relevés de perte de charge des filtres à la plateforme pour que les équipes techniques examinent leur évolution avec les horaires de ventilation et l’historique de maintenance.",
+          "placement": "Placez la passerelle à l’écart de l’écran formé par les conduits ; vérifiez la réception depuis les centrales de traitement d’air et les locaux techniques fermés.",
+          "projectBrief": "Centrales de traitement d’air, plages de pression, points d’installation des capteurs, horaires de fonctionnement et intervalles de transmission."
+        },
+        {
+          "id": "occupancy-lighting-patterns",
+          "title": "Occupation des locaux et usages de l’éclairage",
+          "networkRole": "Agrège les rapports des capteurs LoRa compatibles de présence et d’éclairement.",
+          "description": "Connectez les événements d’occupation des pièces et les niveaux d’éclairement pour analyser l’utilisation des espaces et les horaires d’éclairage, sans identifier les occupants.",
+          "placement": "Testez la réception depuis les salles de réunion, couloirs et zones de service avec les cloisons et portes dans leur position normale.",
+          "projectBrief": "Zones surveillées, fréquence des événements de présence, transmission des niveaux d’éclairement et vues requises sur la plateforme."
+        }
+      ],
+      "imageAlt": "Local intérieur de tableaux électriques des installations techniques du bâtiment",
+      "imageCaption": "Local technique du bâtiment · Environnement représentatif"
+    },
+    {
+      "id": "warehousing",
+      "title": "Entrepôts et installations de stockage",
+      "jumpLabel": "Entreposage",
+      "intro": "Connectez les points de surveillance des allées de stockage, zones de réception et entrepôts fermés en tenant compte des variations de stock et des rayonnages métalliques.",
+      "imageKey": "warehouse",
+      "tasks": [
+        {
+          "id": "storage-environment",
+          "title": "Surveillance de l’environnement des zones de stockage",
+          "networkRole": "Agrège les capteurs compatibles de température et d’humidité des zones de stockage.",
+          "description": "Transmettez les relevés des espaces de stockage à température ambiante, quais de réception et zones d’emballage pour examiner les conditions affectant les matériaux stockés.",
+          "placement": "Choisissez un emplacement intérieur surélevé et testez la couverture avec un niveau de stock et un chargement des rayonnages représentatifs.",
+          "projectBrief": "Dimensions de l’entrepôt, hauteurs des rayonnages, zones de stockage et programmes de transmission des capteurs."
+        },
+        {
+          "id": "rack-inclination",
+          "title": "Surveillance de l’inclinaison des rayonnages",
+          "networkRole": "Collecte les rapports des capteurs d’inclinaison LoRa compatibles sur les structures de rayonnages sélectionnées.",
+          "description": "Intégrez les relevés d’inclinaison des rayonnages à une plateforme pour analyser les tendances et planifier les inspections aux points de mesure définis.",
+          "placement": "Étudiez le trajet radio le long des allées et derrière les rayonnages métalliques aux hauteurs de capteurs prévues.",
+          "projectBrief": "Implantation des rayonnages, positions de mesure, précision requise des capteurs et intervalles de transmission."
+        },
+        {
+          "id": "warehouse-doors",
+          "title": "État des portes et zones de chargement",
+          "networkRole": "Transmet les messages des dispositifs sans fil compatibles de surveillance des portes.",
+          "description": "Regroupez les rapports d’état des portes des quais de chargement, magasins fermés et zones de stockage à accès restreint avec les autres données de surveillance du site.",
+          "placement": "Dégagez l’antenne de la passerelle des structures métalliques du quai et vérifiez la couverture avec les portes ouvertes et fermées.",
+          "projectBrief": "Emplacements des portes, matériaux du bâtiment, fréquence des événements et affichages requis sur la plateforme."
+        },
+        {
+          "id": "bulk-storage-levels",
+          "title": "Bacs de vrac et silos de stockage",
+          "networkRole": "Transmet les mesures des dispositifs de surveillance de niveau LoRa compatibles.",
+          "description": "Connectez les bacs, trémies et réservoirs de stockage en vrac intérieurs sélectionnés pour consulter les niveaux de matière et les besoins de réapprovisionnement sur la plateforme.",
+          "placement": "Évaluez l’écran radio des réservoirs métalliques et le dégagement de l’antenne au niveau du capteur ; choisissez une position de passerelle couvrant les zones de stockage visées.",
+          "projectBrief": "Géométrie du réservoir, matière stockée, adéquation du capteur de niveau, points de mesure et fréquence d’actualisation requise."
+        }
+      ],
+      "imageAlt": "Équipements de commande d’un entrepôt à côté de rayonnages de stockage",
+      "imageCaption": "Infrastructure d’entrepôt · Environnement représentatif"
+    },
+    {
+      "id": "manufacturing",
+      "title": "Installations de production",
+      "jumpLabel": "Production industrielle",
+      "intro": "Connectez les appareils de surveillance compatibles des ateliers, espaces de production et zones d’équipements auxiliaires pour centraliser les inspections et la planification de la maintenance.",
+      "imageKey": "factory",
+      "tasks": [
+        {
+          "id": "machine-condition",
+          "title": "Indicateurs d’état des machines",
+          "networkRole": "Agrège les indicateurs d’état transmis par les capteurs LoRa compatibles.",
+          "description": "Transmettez les indicateurs vibratoires calculés par les capteurs, températures de surface ou inclinaisons des machines sélectionnées pour analyser les tendances de maintenance.",
+          "placement": "Installez la passerelle à l’écart des variateurs de fréquence et des machines denses, en confirmant sur site le dégagement de l’antenne.",
+          "projectBrief": "Positions des machines, indicateurs transmis, tailles des charges utiles et intervalles d’actualisation souhaités."
+        },
+        {
+          "id": "production-environment",
+          "title": "Surveillance de l’environnement des zones de production",
+          "networkRole": "Connecte les dispositifs compatibles de surveillance environnementale des zones de production.",
+          "description": "Collectez la température, l’humidité et les paramètres de qualité de l’air propres à l’application autour des cellules de production, zones de préparation des matières et ateliers fermés.",
+          "placement": "Choisissez un emplacement intérieur respectant les limites environnementales de la passerelle, hors des zones de procédé à accès restreint.",
+          "projectBrief": "Plan de production, paramètres environnementaux, positions des capteurs et conditions de fonctionnement."
+        },
+        {
+          "id": "factory-utilities",
+          "title": "Surveillance des utilités industrielles",
+          "networkRole": "Transmet les données des appareils LoRa compatibles de pression, de niveau et de température.",
+          "description": "Regroupez les mesures des réseaux d’air comprimé, circuits d’eau de procédé et réservoirs d’utilités dans une plateforme commune pour le suivi de l’exploitation.",
+          "placement": "Étudiez la couverture autour des tuyauteries et équipements d’utilités avant de choisir l’emplacement intérieur de la passerelle.",
+          "projectBrief": "Types d’utilités, points de mesure, plages requises des capteurs et contraintes radio du site."
+        }
+      ],
+      "imageAlt": "Tableaux de commande industriels dans une installation de production",
+      "imageCaption": "Installation de production · Environnement représentatif"
+    },
+    {
+      "id": "electrical-energy-rooms",
+      "title": "Locaux électriques et énergétiques",
+      "jumpLabel": "Électricité et énergie",
+      "intro": "Regroupez les messages de surveillance de l’environnement, de l’état des équipements et de l’énergie provenant d’appareils compatibles dans les locaux électriques et techniques du bâtiment.",
+      "imageKey": "electrical",
+      "tasks": [
+        {
+          "id": "electrical-room-environment",
+          "title": "Conditions environnementales des locaux électriques",
+          "networkRole": "Agrège les appareils compatibles de température, d’humidité et de détection de fuite.",
+          "description": "Transmettez les relevés environnementaux des locaux et les rapports d’infiltration d’eau autour des locaux d’appareillage, de distribution et de services électriques.",
+          "placement": "Installez la passerelle hors des enveloppes d’équipements sous tension et respectez les distances imposées par les règles électriques du site.",
+          "projectBrief": "Plan des locaux, dégagements des équipements, emplacements surveillés et conditions environnementales."
+        },
+        {
+          "id": "electrical-thermal-trends",
+          "title": "Évolution des températures des équipements",
+          "networkRole": "Reçoit les rapports des dispositifs sans fil compatibles de surveillance de température.",
+          "description": "Connectez des capteurs de température approuvés aux points de mesure d’équipements sélectionnés pour permettre aux équipes de maintenance d’examiner l’évolution des températures.",
+          "placement": "Vérifiez la propagation radio à travers les cloisons des locaux électriques et les portes fermées des armoires métalliques.",
+          "projectBrief": "Type de capteur approuvé, positions de mesure, implantation des équipements et intervalle de transmission."
+        },
+        {
+          "id": "energy-submetering",
+          "title": "Collecte des données d’énergie et de sous-comptage",
+          "networkRole": "Transmet les relevés des compteurs compatibles équipés de LoRa.",
+          "description": "Agrègez les valeurs d’électricité ou d’autres utilités transmises par les compteurs des locaux et zones locatives pour faciliter l’analyse énergétique sur la plateforme connectée.",
+          "placement": "Choisissez une position offrant un accès radio aux compteurs et une liaison de collecte configurée fiable.",
+          "projectBrief": "Modèles de compteurs, charges utiles prises en charge, intervalles de relevé et données requises par la plateforme."
+        },
+        {
+          "id": "ups-battery-service-rooms",
+          "title": "Conditions auxiliaires des locaux d’onduleurs et de batteries",
+          "networkRole": "Collecte les mesures de capteurs environnementaux et de gaz compatibles adaptés à l’application.",
+          "description": "Connectez les points de température, d’humidité et de surveillance de gaz adaptés autour des locaux d’onduleurs et de batteries pour examiner les tendances d’exploitation. Choisissez chaque détecteur de gaz selon la chimie réelle des batteries et l’environnement.",
+          "placement": "Placez la passerelle dans ses conditions spécifiées et évaluez l’écran radio autour des armoires de batteries ; vérifiez séparément l’adéquation des capteurs au gaz et à la zone surveillés.",
+          "projectBrief": "Chimie des batteries, plan des locaux, paramètres visés, compatibilité des capteurs, profil de transmission et exigences de notification."
+        },
+        {
+          "id": "indoor-charging-support",
+          "title": "Surveillance auxiliaire des installations de recharge intérieures",
+          "networkRole": "Transmet les relevés des appareils compatibles de température, d’environnement et de comptage sans fil.",
+          "description": "Regroupez les relevés de surveillance auxiliaire des zones de recharge intérieures et installations de service des flottes dans une plateforme commune pour le suivi des installations et de l’énergie.",
+          "placement": "Étudiez les trajets radio en présence de véhicules et éloignez la passerelle des câbles de puissance des chargeurs et des boîtiers métalliques fermés.",
+          "projectBrief": "Plan des emplacements de recharge, points auxiliaires surveillés, compteurs compatibles, mouvements des véhicules et intervalles de transmission."
+        }
+      ],
+      "imageAlt": "Local intérieur de distribution électrique",
+      "imageCaption": "Local électrique · Environnement représentatif"
+    },
+    {
+      "id": "cold-chain",
+      "title": "Installations de chaîne du froid",
+      "jumpLabel": "Chaîne du froid",
+      "intro": "Connectez des dispositifs compatibles de surveillance de température dans les chambres froides et zones de manutention, en choisissant la position de la passerelle selon la couverture radio et les conditions de fonctionnement autorisées.",
+      "imageKey": "cold",
+      "tasks": [
+        {
+          "id": "cold-room-temperature",
+          "title": "Surveillance de température des chambres froides",
+          "networkRole": "Agrège les rapports des capteurs de température LoRa compatibles en stockage frigorifique.",
+          "description": "Transmettez les relevés de température des points de mesure désignés des chambres froides pour une consultation centralisée et des alertes configurées sur la plateforme.",
+          "placement": "Placez la passerelle dans une zone technique adaptée et testez les trajets radio à travers les panneaux isolants.",
+          "projectBrief": "Températures des chambres froides, construction des panneaux, positions des sondes et exigences de transmission."
+        },
+        {
+          "id": "cold-chain-handling",
+          "title": "Conditions des zones de réception et de manutention",
+          "networkRole": "Connecte les capteurs environnementaux compatibles hors des chambres froides principales.",
+          "description": "Collectez les mesures des zones de réception, de préparation et d’emballage pour contextualiser l’examen des températures dans l’ensemble de l’installation.",
+          "placement": "Étudiez les portes de chargement et cloisons dans des conditions d’exploitation représentatives.",
+          "projectBrief": "Zones de manutention, positions des portes, paramètres requis et intervalles de surveillance."
+        },
+        {
+          "id": "cold-room-door-status",
+          "title": "État des portes des chambres froides",
+          "networkRole": "Transmet les messages des capteurs d’état de porte LoRa compatibles.",
+          "description": "Regroupez les événements d’ouverture de porte et les relevés de température sur une même plateforme pour faciliter l’analyse des changements de conditions de stockage.",
+          "placement": "Testez la couverture avec les portes des chambres froides fermées et les antennes fixées à leurs positions prévues.",
+          "projectBrief": "Types de portes, compatibilité des capteurs, volumes d’événements et corrélations requises sur la plateforme."
+        }
+      ],
+      "imageAlt": "Couloir technique de réfrigération à côté d’équipements de stockage frigorifique",
+      "imageCaption": "Couloir technique frigorifique · Environnement représentatif"
+    },
+    {
+      "id": "water-pump-facilities",
+      "title": "Installations d’eau et de pompage",
+      "jumpLabel": "Eau et pompes",
+      "intro": "Connectez les points de surveillance des stations de pompage, locaux de réservoirs et zones de distribution d’eau des bâtiments via une liaison de données sans fil commune.",
+      "imageKey": "water-indoor",
+      "tasks": [
+        {
+          "id": "indoor-pressure-monitoring",
+          "title": "Surveillance de pression des réseaux d’eau",
+          "networkRole": "Agrège les rapports des capteurs de pression LoRa compatibles.",
+          "description": "Transmettez les relevés de pression des points de mesure sélectionnés des réseaux d’alimentation et de pompage pour centraliser l’analyse des tendances et les investigations de maintenance.",
+          "placement": "Placez la passerelle à l’écart des surfaces humides et étudiez la couverture autour des pompes et tuyauteries.",
+          "projectBrief": "Plan du réseau de tuyauterie, plages de pression, points de mesure et intervalles d’actualisation."
+        },
+        {
+          "id": "indoor-tank-levels",
+          "title": "Surveillance de niveau des réservoirs et puisards",
+          "networkRole": "Connecte les dispositifs sans fil compatibles de surveillance de niveau.",
+          "description": "Collectez les mesures des réservoirs d’eau de service, puisards et autres points de niveau adaptés dans les bâtiments d’utilités.",
+          "placement": "Vérifiez les trajets radio autour des parois de réservoirs, du béton armé et des locaux enterrés.",
+          "projectBrief": "Dimensions des réservoirs, modèles de capteurs de niveau, altimétrie des locaux et exigences de transmission."
+        },
+        {
+          "id": "pump-room-leaks",
+          "title": "Fuites et environnement des locaux de pompage",
+          "networkRole": "Transmet les messages des capteurs compatibles de détection de fuite et d’environnement.",
+          "description": "Regroupez les rapports de fuite au sol avec les relevés de température et d’humidité autour des groupes de pompage et équipements de service.",
+          "placement": "Choisissez un point de fixation sec et accessible, avec une couverture vérifiée vers les dispositifs de détection placés en partie basse.",
+          "projectBrief": "Zones de fuite, disposition des évacuations, positions des capteurs et accès de maintenance."
+        },
+        {
+          "id": "domestic-hot-water-circuits",
+          "title": "Circulation d’eau chaude et boucles de service",
+          "networkRole": "Transmet les rapports des dispositifs compatibles de surveillance de température de tuyauterie et de pression.",
+          "description": "Connectez les points de mesure sélectionnés de l’alimentation en eau chaude, du retour et des boucles de service pour examiner la circulation et analyser les tendances anormales.",
+          "placement": "Éloignez la passerelle des tuyauteries chaudes et vérifiez la réception depuis les colonnes techniques ; choisissez les ensembles de mesure selon la température réelle du procédé.",
+          "projectBrief": "Plan des boucles, matériaux des tuyaux, températures de fonctionnement, points de pression, disposition des sondes et intervalles de transmission."
+        },
+        {
+          "id": "pump-condition-indicators",
+          "title": "Indicateurs d’état des groupes de pompage",
+          "networkRole": "Agrège les indicateurs vibratoires et températures transmis par les appareils LoRa compatibles.",
+          "description": "Intégrez les indicateurs d’état calculés par les capteurs aux positions sélectionnées sur les pompes et moteurs pour comparer les périodes de fonctionnement lors de la maintenance.",
+          "placement": "Étudiez la réception autour des moteurs, tuyauteries et structures en béton ; dimensionnez le profil de transmission pour des indicateurs synthétiques, et non pour des signaux bruts continus.",
+          "projectBrief": "Types de pompes, positions de mesure, définitions des indicateurs, horaires de fonctionnement et intervalles de transmission."
+        }
+      ],
+      "imageAlt": "Pompes et tuyauteries de procédé dans une installation de traitement de l’eau",
+      "imageCaption": "Installation de traitement de l’eau · Environnement représentatif"
+    },
+    {
+      "id": "data-centers",
+      "title": "Centres de données et locaux informatiques",
+      "jumpLabel": "Centres de données",
+      "intro": "Offrez une liaison de collecte sans fil aux capteurs compatibles de surveillance des installations autour des baies, infrastructures de refroidissement et locaux informatiques auxiliaires.",
+      "imageKey": "data",
+      "tasks": [
+        {
+          "id": "rack-environment",
+          "title": "Conditions thermiques autour des baies",
+          "networkRole": "Agrège les relevés des capteurs compatibles de température et d’humidité.",
+          "description": "Transmettez les mesures des allées de baies et positions sélectionnées dans les locaux informatiques pour examiner les tendances environnementales locales.",
+          "placement": "Étudiez la couverture avec les portes des baies et systèmes de confinement dans leur position normale de fonctionnement.",
+          "projectBrief": "Implantation des baies, conception du confinement, hauteurs de mesure et intervalles de transmission."
+        },
+        {
+          "id": "it-cooling-water-leaks",
+          "title": "Surveillance des fuites d’eau du refroidissement",
+          "networkRole": "Connecte les dispositifs de détection de fuite LoRa compatibles autour des infrastructures de refroidissement.",
+          "description": "Intégrez les rapports des zones sous plancher, unités de refroidissement et points de surveillance des tuyauteries au processus de surveillance configuré de l’installation.",
+          "placement": "Vérifiez la propagation radio sous les planchers techniques et autour des réseaux métalliques denses.",
+          "projectBrief": "Plan du refroidissement, zones de détection de fuite, construction des planchers et exigences de notification."
+        },
+        {
+          "id": "it-support-rooms",
+          "title": "Conditions des locaux informatiques auxiliaires",
+          "networkRole": "Transmet les messages des capteurs compatibles d’environnement et d’état de porte.",
+          "description": "Étendez la surveillance aux locaux réseau, réserves d’équipements et espaces techniques auxiliaires hors de la salle informatique principale.",
+          "placement": "Choisissez une position intérieure accessible offrant un accès radio à travers les cloisons des locaux concernés.",
+          "projectBrief": "Locaux auxiliaires, conditions surveillées, modèles de capteurs et périmètre d’intégration à la plateforme."
+        },
+        {
+          "id": "data-center-branch-metering",
+          "title": "Relevés énergétiques des circuits secondaires et charges auxiliaires",
+          "networkRole": "Collecte les valeurs d’énergie transmises par les compteurs LoRa compatibles.",
+          "description": "Connectez les charges informatiques auxiliaires et points de sous-comptage sélectionnés pour les examiner avec les données environnementales sur la plateforme réceptrice.",
+          "placement": "Vérifiez les trajets d’antenne autour des armoires métalliques de distribution et l’interface du compteur sans fil fourni ; confiez l’installation électrique au personnel qualifié du site.",
+          "projectBrief": "Modèles de compteurs compatibles, regroupement des circuits, unités, périodes de cumul et correspondances requises sur la plateforme."
+        },
+        {
+          "id": "it-room-door-events",
+          "title": "Événements des portes de locaux informatiques et d’armoires",
+          "networkRole": "Transmet les événements rapportés par les dispositifs LoRa compatibles d’état de porte.",
+          "description": "Regroupez les ouvertures de portes des locaux réseau, armoires sélectionnées et zones techniques à accès restreint avec les tendances environnementales pour faciliter les investigations d’exploitation.",
+          "placement": "Testez la réception avec les portes d’armoires fermées et les locaux en service normal ; définissez une fixation des capteurs préservant l’accès de maintenance.",
+          "projectBrief": "Emplacements des portes, compatibilité des appareils, fréquence des événements, exigences d’horodatage et règles de notification."
+        }
+      ],
+      "imageAlt": "Baies de serveurs dans une allée de refroidissement d’un centre de données",
+      "imageCaption": "Allée de centre de données · Environnement représentatif"
+    },
+    {
+      "id": "indoor-transport-public",
+      "title": "Bâtiments publics et services techniques",
+      "jumpLabel": "Installations publiques",
+      "intro": "Connectez les capteurs de surveillance des installations dans les bâtiments de gare, dépôts et bâtiments publics, avec une planification radio adaptée aux grands espaces fermés.",
+      "imageKey": "public",
+      "tasks": [
+        {
+          "id": "public-hall-environment",
+          "title": "Conditions environnementales des halls publics",
+          "networkRole": "Agrège les capteurs environnementaux compatibles des espaces publics occupés.",
+          "description": "Collectez les relevés de température, d’humidité et de qualité de l’air dans les halls de gare, salles d’attente et bâtiments de services publics.",
+          "placement": "Étudiez les grands halls, couloirs techniques et zones cloisonnées avant de choisir l’emplacement de fixation.",
+          "projectBrief": "Plans du bâtiment, zones d’occupation, paramètres surveillés et programmes de transmission des capteurs."
+        },
+        {
+          "id": "transport-equipment-rooms",
+          "title": "Locaux techniques des gares et dépôts",
+          "networkRole": "Connecte les appareils compatibles de surveillance des fuites, de température et d’humidité.",
+          "description": "Transmettez les rapports d’état des locaux d’équipements et espaces techniques pour faciliter les inspections régulières et la maintenance.",
+          "placement": "Gardez la passerelle accessible et séparée des équipements d’exploitation à accès restreint.",
+          "projectBrief": "Emplacements des locaux techniques, matériaux des cloisons, positions des capteurs et exigences de maintenance."
+        },
+        {
+          "id": "depot-stores",
+          "title": "Magasins et zones de service des dépôts",
+          "networkRole": "Transmet les messages des appareils compatibles de surveillance d’environnement de stockage et d’état de porte.",
+          "description": "Connectez les magasins de maintenance fermés, réserves de pièces détachées et bâtiments de service à une plateforme commune de surveillance des installations.",
+          "placement": "Testez la couverture à travers les ateliers et allées de stockage dans des conditions d’exploitation représentatives.",
+          "projectBrief": "Plan des magasins, espaces surveillés, obstacles métalliques et intervalles de transmission requis."
+        }
+      ],
+      "imageAlt": "Équipements techniques dans une annexe abritée à côté d’un bâtiment public",
+      "imageCaption": "Annexe technique du bâtiment · Environnement représentatif"
+    },
+    {
+      "id": "pharma-laboratories",
+      "title": "Installations pharmaceutiques et laboratoires",
+      "jumpLabel": "Industrie pharmaceutique et laboratoires",
+      "intro": "Connectez les points de surveillance des équipements frigorifiques, laboratoires et locaux contrôlés via un réseau intérieur conçu en tenant compte des équipements métalliques, du stockage isolé et des espaces à accès restreint.",
+      "imageKey": "pharma-lab",
+      "imageAlt": "Armoires frigorifiques de laboratoire et incubateur de paillasse dans un laboratoire de recherche",
+      "imageCaption": "Réfrigération et incubation en laboratoire · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "pharmaceutical-refrigerated-storage",
+          "title": "Réfrigérateurs pharmaceutiques et réserves médicales",
+          "networkRole": "Connecte les capteurs de température compatibles aux points désignés de stockage réfrigéré.",
+          "description": "Transmettez les relevés des réfrigérateurs à médicaments, équipements de stockage de vaccins et réserves médicales voisines pour les procédures de surveillance et de notification configurées par l’exploitant.",
+          "placement": "Choisissez un emplacement technique respectant les limites de fonctionnement de la passerelle ; vérifiez la réception à travers les armoires et portes isolées en usage normal.",
+          "projectBrief": "Équipements de stockage, limites de température spécifiées, disposition des sondes, intervalles de transmission et destinataires des notifications."
+        },
+        {
+          "id": "laboratory-incubators",
+          "title": "Incubateurs de laboratoire et stockage de recherche",
+          "networkRole": "Agrège les relevés des appareils compatibles de surveillance de température et d’humidité.",
+          "description": "Connectez les incubateurs, réserves de matériaux de recherche et locaux auxiliaires sélectionnés pour examiner séparément les conditions des équipements et zones de locaux.",
+          "placement": "Évaluez les enveloppes métalliques des incubateurs et le passage des sondes ; maintenez la passerelle hors des environnements d’équipements dépassant ses conditions spécifiées.",
+          "projectBrief": "Liste des équipements, plages surveillées, points de mesure indépendants, configuration des sondes et intervalles d’enregistrement requis."
+        },
+        {
+          "id": "cleanroom-pressure-monitoring",
+          "title": "Salles propres et production contrôlée",
+          "networkRole": "Agrège les rapports des capteurs compatibles de pression différentielle et d’environnement.",
+          "description": "Collectez les relevés de pression des locaux, de température et d’humidité des zones de production sélectionnées pour que l’équipe technique les examine au regard de ses critères d’exploitation.",
+          "placement": "Respectez les exigences d’accès et de nettoyage des locaux lors de l’installation ; testez les trajets radio à travers les cloisons et espaces techniques étanches.",
+          "projectBrief": "Relations de pression entre locaux, paramètres surveillés, emplacements des capteurs, intervalles de transmission et exigences d’enregistrement sur la plateforme."
+        }
+      ]
+    },
+    {
+      "id": "museums-archives",
+      "title": "Musées, archives et collections patrimoniales",
+      "jumpLabel": "Musées et archives",
+      "intro": "Connectez les points de surveillance des réserves, galeries et bâtiments avec des méthodes d’installation respectant les collections sensibles et le bâti patrimonial existant.",
+      "imageKey": "museum-archive",
+      "imageAlt": "Rayonnages d’archives muséales, boîtes de conservation et vitrine à côté d’une galerie",
+      "imageCaption": "Collections muséales et archives · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "collection-store-conditions",
+          "title": "Musées, archives et réserves de collections",
+          "networkRole": "Collecte les relevés des capteurs compatibles de température, d’humidité et d’éclairement.",
+          "description": "Regroupez les relevés environnementaux des réserves, salles d’archives et vitrines sélectionnées pour permettre leur examen par les équipes de conservation.",
+          "placement": "Vérifiez la réception à travers les rayonnages denses et vitrines ; définissez un emplacement non invasif des capteurs près des collections sensibles.",
+          "projectBrief": "Types de collections, zones d’exposition ou de stockage, méthodes de fixation autorisées, limites environnementales et intervalles d’enregistrement."
+        },
+        {
+          "id": "gallery-lighting-records",
+          "title": "Éclairage des galeries et relevés des périodes d’ouverture",
+          "networkRole": "Transmet les mesures des appareils LoRa compatibles de surveillance de l’éclairement et de la présence.",
+          "description": "Regroupez les niveaux d’éclairement des galeries sélectionnées et les événements d’occupation des locaux pour que le personnel de conservation compare les périodes d’ouverture, de nettoyage et de fermeture.",
+          "placement": "Étudiez la réception depuis les cloisons et aménagements d’exposition ; définissez une fixation discrète et un programme de transmission adapté aux variations d’éclairage.",
+          "projectBrief": "Zones des galeries, fixations autorisées, plage d’éclairement, horaires d’ouverture et intervalles d’enregistrement requis."
+        },
+        {
+          "id": "heritage-collection-leakage",
+          "title": "Fuites et état du bâti abritant les collections",
+          "networkRole": "Connecte les appareils compatibles de surveillance des fuites d’eau, de température et d’humidité.",
+          "description": "Collectez les rapports près des combles, cheminements techniques et points d’observation sélectionnés du bâti pour aider les équipes des musées et archives à analyser les changements liés à l’humidité autour des collections.",
+          "placement": "Utilisez des fixations réversibles si nécessaire et testez la couverture à travers les maçonneries épaisses, réserves en sous-sol et espaces techniques dissimulés.",
+          "projectBrief": "Matériaux du bâtiment, zones de détection de fuite, limites d’accès, positions des capteurs et destinataires des notifications."
+        }
+      ]
+    },
+    {
+      "id": "food-beverage",
+      "title": "Installations agroalimentaires et de boissons",
+      "jumpLabel": "Agroalimentaire et boissons",
+      "intro": "Intégrez les capteurs compatibles des équipements de procédé, zones techniques proches du nettoyage et réserves d’ingrédients à un même processus de surveillance, avec une position de passerelle adaptée à la production alimentaire.",
+      "imageKey": "food-beverage",
+      "imageAlt": "Cuves de procédé en acier inoxydable et convoyeur d’embouteillage dans une usine de boissons",
+      "imageCaption": "Production agroalimentaire et de boissons · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "food-production-service-areas",
+          "title": "Zones auxiliaires de production alimentaire et de lavage",
+          "networkRole": "Connecte les appareils compatibles de surveillance de température et de fuite autour des équipements auxiliaires de production.",
+          "description": "Transmettez les relevés des services frigorifiques, circuits d’eau de procédé et zones d’équipements proches du lavage pour faciliter les inspections régulières d’exploitation.",
+          "placement": "Installez la passerelle intérieure dans une position technique adaptée, hors des jets directs de lavage, tout en vérifiant les trajets radio vers les capteurs protégés.",
+          "projectBrief": "Zones de production, exposition au nettoyage, points de mesure sélectionnés, protection des capteurs et intervalles d’actualisation."
+        },
+        {
+          "id": "food-process-vessel-temperature",
+          "title": "Températures des procédés alimentaires et cuves de fermentation",
+          "networkRole": "Transmet les mesures des émetteurs LoRa compatibles et des ensembles de mesure de température de procédé adaptés.",
+          "description": "Connectez les cuves de préparation, équipements de fermentation et points de température des services de procédé sélectionnés pour examiner les tendances d’exploitation avec les relevés de production.",
+          "placement": "Maintenez la passerelle hors des jets directs de lavage et de la chaleur excessive ; spécifiez les ensembles de mesure et leurs positions selon le fluide et la température réels du procédé.",
+          "projectBrief": "Étapes du procédé, types de cuves, plages de température, raccordements des sondes et intervalles de transmission requis."
+        },
+        {
+          "id": "ingredient-packaging-stores",
+          "title": "Humidité des réserves d’ingrédients et d’emballages",
+          "networkRole": "Agrège les rapports des appareils compatibles de surveillance de température et d’humidité.",
+          "description": "Intégrez les relevés des réserves d’ingrédients secs, locaux d’emballage et zones de matériaux sensibles à l’humidité à la plateforme pour comparer les conditions locales de stockage entre équipes.",
+          "placement": "Évaluez les trajets radio à travers les rayonnages et cloisons avec un chargement représentatif ; placez les capteurs dans les zones de stockage convenues.",
+          "projectBrief": "Ingrédients ou emballages stockés, limites d’humidité, plan des locaux, rotation des stocks et programmes de transmission."
+        }
+      ]
+    },
+    {
+      "id": "retail-hospitality",
+      "title": "Commerces et établissements hôteliers",
+      "jumpLabel": "Commerce et hôtellerie",
+      "intro": "Connectez les magasins, hôtels, espaces de service aux clients et réserves de restauration via un réseau intérieur conçu pour les espaces occupés, aménagements de présentation et accès de maintenance.",
+      "imageKey": "retail-hospitality",
+      "imageAlt": "Hall d’hôtel moderne avec réception, espace café-boutique et couloir adjacent",
+      "imageCaption": "Intérieur hôtelier et commercial · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "hotel-hospitality-facilities",
+          "title": "Hôtels et établissements d’accueil",
+          "networkRole": "Connecte les appareils compatibles de surveillance de l’environnement, de la présence et des fuites d’eau.",
+          "description": "Regroupez les rapports des espaces auxiliaires des zones clients, étages techniques et locaux d’utilités dans un réseau de surveillance pour la maintenance et le suivi de l’exploitation.",
+          "placement": "Planifiez la couverture à travers les cloisons des chambres et gaines techniques ; préservez un accès pratique pour la maintenance sans déranger les espaces occupés.",
+          "projectBrief": "Ailes du bâtiment, zones techniques, paramètres surveillés, politique des événements de présence et exigences de transmission."
+        },
+        {
+          "id": "retail-display-service-areas",
+          "title": "Espaces de présentation et arrière-boutiques",
+          "networkRole": "Agrège les rapports des capteurs compatibles de température, d’humidité, d’état de porte et d’éclairement.",
+          "description": "Connectez les espaces de présentation, réserves fermées et zones de service sélectionnés pour aider les équipes commerciales à examiner les conditions locales et les événements d’utilisation des équipements.",
+          "placement": "Testez les trajets radio avec les rayonnages, présentoirs et stocks en place ; positionnez la passerelle à l’écart des manipulations du public et de l’écran radio des présentoirs métalliques.",
+          "projectBrief": "Plan du magasin, types de présentations ou de stocks, modèles de capteurs, événements surveillés et programmes de transmission."
+        },
+        {
+          "id": "hospitality-kitchen-refrigeration",
+          "title": "Cuisines professionnelles et froid de restauration",
+          "networkRole": "Connecte les appareils compatibles de surveillance de température aux points de stockage de restauration sélectionnés.",
+          "description": "Transmettez les relevés des réfrigérateurs de restaurant, chambres froides d’hôtel et équipements de stockage des zones de préparation pour les procédures de surveillance et de notification configurées par l’exploitant.",
+          "placement": "Éloignez la passerelle de la chaleur, de la vapeur et des jets directs de nettoyage ; testez la réception à travers les armoires frigorifiques et cloisons des zones techniques.",
+          "projectBrief": "Plan de la cuisine et des réserves, limites de température, disposition adaptée des sondes, construction des portes et procédure de notification."
+        }
+      ]
+    }
+  ],
+  "imageWidth": 400,
+  "imageHeight": 919
+}

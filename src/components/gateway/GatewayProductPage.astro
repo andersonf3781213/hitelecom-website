@@ -1,36 +1,39 @@
-/** H66/H68 IoT 网关 EN 专页（V129，2026-10-29 GPT6 包 v1.2，Kimi 审核集成）。
- * 仅 EN；其余 6 语种仍由通用 [slug] 页渲染（已同步 IP65/Wi-Fi 事实修正）。
- * 沿用现网 BaseLayout；结构化数据：Product（无 SKU，官网不用 SKU）+ BreadcrumbList + FAQPage。 */
+/** H66/H68 IoT 网关产品页（V129 EN / V130 多语言，Kimi 审核集成）。
+ * 7 语种同 slug 路由；结构化数据 Product（无 SKU）+ BreadcrumbList + FAQPage，全部本语言生成。 */
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GatewayBody from './GatewayBody.astro';
-const { content } = Astro.props;
+import uiEn from '../../data/gateway-i18n/ui.en.json';
+const { content, ui = null, locale = 'en' } = Astro.props;
 const c = content;
+const U = Object.assign({}, uiEn, ui || {});
+const T = (k) => U[k] || uiEn[k] || k;
+const prefix = locale === 'en' ? '' : `/${locale}`;
 const slug = c.slug;
-const canonicalPath = `/product/${slug}`;
 const origin = 'https://www.hitelecom.com';
-const canonical = origin + canonicalPath;
+const canonical = origin + c.path;
+const productName = T(c.model === 'H66' ? 'productNameH66' : 'productNameH68');
 const product = {
   '@type': 'Product', '@id': canonical + '#product',
-  name: `Hitelecom ${c.model} ${c.kind} IoT Gateway`, model: c.model,
-  brand: {'@type': 'Brand', name: 'Hitelecom'},
-  manufacturer: {'@type': 'Organization', name: 'Shanghai Hitelecom Communication Technology Co., Ltd.', url: origin},
+  name: productName, model: c.model,
+  brand: { '@type': 'Brand', name: 'Hitelecom' },
+  manufacturer: { '@type': 'Organization', name: 'Shanghai Hitelecom Communication Technology Co., Ltd.', url: origin },
   description: c.metaDescription, url: canonical, image: [origin + '/assets/' + c.image],
   category: c.kind + ' IoT gateway',
-  additionalProperty: c.rows.map(([name, value]) => ({'@type': 'PropertyValue', name, value})),
+  additionalProperty: c.rows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
 };
-const structured = {'@context': 'https://schema.org', '@graph': [product,
-  {'@type': 'BreadcrumbList', itemListElement: [
-    {'@type': 'ListItem', position: 1, name: 'Home', item: origin + '/'},
-    {'@type': 'ListItem', position: 2, name: 'IoT Gateways', item: origin + '/product/lists/cid/258'},
-    {'@type': 'ListItem', position: 3, name: c.model + ' ' + c.kind + ' IoT Gateway', item: canonical}]},
-  {'@type': 'FAQPage', mainEntity: c.faqs.map(f => ({'@type': 'Question', name: f.q, acceptedAnswer: {'@type': 'Answer', text: f.a}}))}]};
-// 七语 hreflang：EN 新页 + 6 语种通用页（同 slug）
-const allLocales = ['en','zh','es','de','ja','fr','ru'];
+const structured = { '@context': 'https://schema.org', '@graph': [product,
+  { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: T('home'), item: origin + prefix + '/' },
+    { '@type': 'ListItem', position: 2, name: T('gatewayCatalog'), item: origin + prefix + '/product/lists/cid/258' },
+    { '@type': 'ListItem', position: 3, name: productName, item: canonical }] },
+  { '@type': 'FAQPage', mainEntity: c.faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] };
+// 七语 hreflang：同型号各语种正式页，x-default 指英文（BaseLayout 处理）
+const allLocales = ['en', 'zh', 'es', 'de', 'ja', 'fr', 'ru'];
 const langTargets = Object.fromEntries(allLocales.map(loc => [loc, `${loc === 'en' ? '' : `/${loc}`}/product/${slug}`]));
 ---
 ---
-<BaseLayout locale="en" title={c.title} description={c.metaDescription} socialImage={'/assets/' + c.image} langOverrides={langTargets}>
+<BaseLayout locale={locale} title={c.title} description={c.metaDescription} socialImage={'/assets/' + c.image} langOverrides={langTargets}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(structured).replace(/</g, '\\u003c')}></script>
-  <GatewayBody content={c}/>
+  <GatewayBody content={c} ui={ui} prefix={prefix}/>
 </BaseLayout>

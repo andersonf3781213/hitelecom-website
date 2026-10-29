@@ -1,3 +1,7 @@
+// Localized strings injected by GatewayBody.astro (falls back to English).
+const I18N = (() => { try { const el = document.getElementById('gw-i18n'); return el ? JSON.parse(el.textContent) : {}; } catch { return {}; } })();
+const L = k => I18N[k] || ({emailHello:'Hello Hitelecom,',pleaseAdvise:'Please advise',emailRequest:'Please advise on gateway configuration, radio coverage, power, antenna arrangement, platform integration and quotation.',emailThanks:'Thank you.',briefReady:'Your brief is ready. Review it and open your email app to send.',briefCopied:'Project brief copied.',briefCopyFallback:'Your brief is selected. Use your device’s copy command.',wechatCopied:'WeChat ID copied.',wechatCopyFallback:'ID selected. Use your device’s copy command.',monitoringObjective:'Monitoring objective: {objective}'}[k] ?? k);
+const FIELD_LABELS = I18N.fieldLabels || {};
 // All task photos and copy are real static HTML. This small enhancement moves
 // the selected photo into the left desktop slot; native details remain usable
 // without JavaScript, and narrow screens keep the photo with its task.
@@ -142,20 +146,22 @@ if (form) {
   const brief = document.querySelector('#enquiry-brief');
   const email = document.querySelector('#email-brief');
   const status = document.querySelector('#brief-status');
-  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent(document.querySelector('main[data-model]').dataset.model + ' gateway — project enquiry')}&body=${encodeURIComponent(brief.value)}`; };
+  const model = document.querySelector('main[data-model]').dataset.model;
+  const updateEmail = () => { email.href = `mailto:sales@hitelecom.cn?subject=${encodeURIComponent((I18N.emailSubject || '{model} gateway — project enquiry').replace('{model}', model))}&body=${encodeURIComponent(brief.value)}`; };
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    brief.value = ['Hello Hitelecom,', '', 'I would like to discuss a ' + data.get('Model') + ' IoT gateway project.', '', ...['Model','Application','Country','Sensor count','Gateway quantity','Sensor models and reporting','Backhaul and platform','Requirements'].map(key=>`${key}: ${data.get(key) || 'Please advise'}`), '', 'Please advise on gateway configuration, radio coverage, power, antenna arrangement, platform integration and quotation.', '', 'Thank you.'].join('\n');
+    const intro = (I18N.emailIntro || 'I would like to discuss a {model} IoT gateway project.').replace('{model}', data.get('Model'));
+    brief.value = [L('emailHello'), '', intro, '', ...['Model','Application','Country','Sensor count','Gateway quantity','Sensor models and reporting','Backhaul and platform','Requirements'].map(key=>`${FIELD_LABELS[key] || key}: ${data.get(key) || L('pleaseAdvise')}`), '', L('emailRequest'), '', L('emailThanks')].join('\n');
     updateEmail(); review.hidden = false;
-    status.textContent = 'Your brief is ready. Review it and open your email app to send.';
+    status.textContent = L('briefReady');
     brief.focus({preventScroll:true}); review.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
   });
   brief.addEventListener('input', updateEmail);
   document.querySelector('#copy-brief').addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(brief.value); status.textContent = 'Project brief copied.'; }
-    catch { brief.focus(); brief.select(); status.textContent = 'Your brief is selected. Use your device’s copy command.'; }
+    try { await navigator.clipboard.writeText(brief.value); status.textContent = L('briefCopied'); }
+    catch { brief.focus(); brief.select(); status.textContent = L('briefCopyFallback'); }
   });
 }
 
@@ -178,11 +184,11 @@ if (contactBar) {
   const copy = contactBar.querySelector('.gateway-copy-wechat');
   const status = contactBar.querySelector('.gateway-copy-status');
   copy.addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(copy.dataset.copy); status.textContent = 'WeChat ID copied.'; }
+    try { await navigator.clipboard.writeText(copy.dataset.copy); status.textContent = L('wechatCopied'); }
     catch {
       const range = document.createRange(); range.selectNodeContents(copy);
       const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
-      status.textContent = 'ID selected. Use your device’s copy command.';
+      status.textContent = L('wechatCopyFallback');
     }
   });
   contactBar.querySelector('.gateway-contact-top').addEventListener('click', event => {
@@ -209,7 +215,7 @@ document.addEventListener('keydown', event => {
 
 document.querySelectorAll('[data-measurement]').forEach(link => link.addEventListener('click', () => {
   const field = document.querySelector('#requirements');
-  const objective = `Monitoring objective: ${link.dataset.measurement}`;
+  const objective = L('monitoringObjective').replace('{objective}', link.dataset.measurement);
   if (!field.value.split('\n').includes(objective)) field.value = objective + '\n' + field.value;
 }));
 

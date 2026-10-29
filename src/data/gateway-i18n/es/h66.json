@@ -1,0 +1,703 @@
+{
+  "model": "H66",
+  "kind": "Para interiores",
+  "slug": "indoor-gateway-h66",
+  "path": "/es/product/indoor-gateway-h66",
+  "title": "Gateway IoT H66 para interiores | LoRa y 4G LTE | Hitelecom",
+  "metaDescription": "Conecte sensores LoRa compatibles con el gateway IoT H66 de Hitelecom para interiores. Carcasa IP65, enlace de retorno 4G LTE, integración MQTT y opciones de radio regionales.",
+  "image": "h66.webp",
+  "imageAlt": "Gateway H66 de Hitelecom para interiores con antenas externas, imagen oficial del producto",
+  "caption": "H66 · Gateway IoT para interiores",
+  "heroHeading": "H66 para interiores\nGateway IoT.",
+  "heroValue": "Conecte sus sensores.\nEn todo su edificio.",
+  "heroDescription": "El H66 de Hitelecom conecta sensores LoRa compatibles de edificios, almacenes e instalaciones industriales con una plataforma de monitorización. Su arquitectura de radio de 8 canales en dúplex completo concentra datos de sensores distribuidos, con enlace de retorno 4G LTE e integración MQTT para Hitelecom Cloud o una plataforma compatible del cliente. Planifique la red de radio según el edificio, el conjunto de sensores y los requisitos de transmisión de datos.",
+  "proof": [
+    {
+      "value": "8 canales",
+      "label": "Arquitectura de radio en dúplex completo",
+      "note": "Seleccione la configuración de radio regional adecuada"
+    },
+    {
+      "value": "4G LTE",
+      "label": "Enlace de retorno de la instalación a la plataforma",
+      "note": "Seleccione el módem para el operador local"
+    },
+    {
+      "value": "MQTT",
+      "label": "Integración de datos con la plataforma",
+      "note": "Hitelecom Cloud o una plataforma compatible"
+    }
+  ],
+  "featureTitle": "Redes de sensores para interiores.\nUna conexión práctica con la plataforma.",
+  "featureIntro": "Concentre el tráfico de sensores compatibles con un acceso por radio, un enlace de retorno y una integración de plataforma claramente definidos.",
+  "features": [
+    {
+      "title": "Concentración de sensores LoRa",
+      "text": "Recopile datos de dispositivos LoRa compatibles mediante la arquitectura de radio publicada de 8 canales en dúplex completo. Verifique el protocolo del sensor y la configuración regional."
+    },
+    {
+      "title": "Enlace de retorno 4G LTE",
+      "text": "Reenvíe los datos recopilados a través de una red móvil disponible. Seleccione el módem, la SIM y el operador según la cobertura en la ubicación del gateway."
+    },
+    {
+      "title": "Integración MQTT",
+      "text": "Conecte los datos de campo con Hitelecom Cloud o una plataforma compatible del cliente mediante un punto de conexión, un formato de mensaje y una configuración de autenticación acordados."
+    },
+    {
+      "title": "Carcasa con protección IP65",
+      "text": "La carcasa con protección IP65 permite la instalación en entornos interiores exigentes. Ubique el gateway respetando sus condiciones de funcionamiento y los requisitos de acceso para mantenimiento."
+    },
+    {
+      "title": "Opciones de radio regionales",
+      "text": "Seleccione CN470, EU868, IN865, RU864, US915 o AU915 para el despliegue. La frecuencia, la configuración de canales y la potencia de transmisión deben cumplir los requisitos locales."
+    },
+    {
+      "title": "Cobertura adaptada a la instalación",
+      "text": "Hasta 5 km en condiciones de campo abierto. Las paredes, los forjados, las estanterías metálicas, los equipos y la ubicación de las antenas determinan la cobertura dentro del edificio."
+    },
+    {
+      "title": "Despliegue local de la plataforma",
+      "text": "Puede planificarse un despliegue local para proyectos que requieran gestionar los datos bajo el control de la instalación. Acuerde la función del servidor, la conectividad y el alcance de la integración."
+    },
+    {
+      "title": "Notificación de pérdida de alimentación",
+      "text": "Puede transmitirse una alerta de pérdida de alimentación cuando sigan disponibles la alimentación de respaldo y el enlace de retorno. Incluya la vía de alerta requerida en el diseño de alimentación."
+    }
+  ],
+  "planningIntro": "El rendimiento de radio en interiores depende tanto del edificio como del gateway. Revise las plantas, los tabiques, las estanterías y los equipos antes de determinar la cantidad de gateways.",
+  "planning": [
+    {
+      "title": "Defina el conjunto de sensores",
+      "text": "Enumere los dispositivos compatibles, los puntos de medición y la configuración de radio. Dimensione el tráfico según la longitud de la carga útil, los intervalos de transmisión y las necesidades de enlace descendente, además del número de dispositivos.",
+      "brief": "Modelos de sensores · Número de dispositivos · Cargas útiles · Intervalos de transmisión · Respuesta requerida"
+    },
+    {
+      "title": "Planifique la cobertura de radio",
+      "text": "Revise los forjados, las estanterías metálicas y la maquinaria. Pruebe trayectos representativos en las salas y zonas de almacenamiento de más difícil acceso.",
+      "brief": "Plano de la instalación · Posición de la antena · Interferencias · Estudio de cobertura · Ubicaciones de los gateways"
+    },
+    {
+      "title": "Confirme la conexión con el sistema receptor",
+      "text": "Compruebe la alimentación del gateway, el operador móvil local y la plataforma receptora. Para una configuración Ethernet, confirme la interfaz suministrada y los requisitos de red de la instalación.",
+      "brief": "Alimentación · SIM / operador · Configuración Ethernet · Punto de conexión · Mapeo de datos"
+    }
+  ],
+  "installationText": "Coloque el gateway donde sus trayectos de radio alcancen las zonas de sensores previstas y el enlace de retorno permanezca disponible. Evite instalarlo dentro de un armario metálico cerrado salvo que la disposición de antenas esté diseñada para esa ubicación. Prevea una alimentación adecuada, el tendido de cables y el acceso de servicio.",
+  "workflow": [
+    {
+      "title": "Recopilar",
+      "text": "Los sensores LoRa compatibles envían sus registros de medición al gateway con la configuración de radio y el perfil de transmisión acordados."
+    },
+    {
+      "title": "Reenviar",
+      "text": "El gateway reenvía los registros recopilados mediante el enlace de retorno seleccionado al punto de conexión MQTT configurado."
+    },
+    {
+      "title": "Revisar y responder",
+      "text": "Utilice Hitelecom Cloud para consultar en línea los datos de monitorización cargados y recibir alertas cuando las mediciones superen los umbrales configurados. Una plataforma del cliente puede ofrecer su propio flujo de trabajo acordado."
+    }
+  ],
+  "coverageTitle": "Hasta 5 km.\nEn condiciones de campo abierto.",
+  "coverageText": "La cifra en campo abierto no constituye un radio de cobertura interior ni garantiza un número de plantas. Los materiales de construcción, los forjados, las estanterías densas y los equipos pueden atenuar las señales de radio. Valide la red prevista con posiciones representativas de los sensores.",
+  "rows": [
+    [
+      "Modelo",
+      "H66"
+    ],
+    [
+      "Despliegue",
+      "Gateway de red de sensores para interiores"
+    ],
+    [
+      "Arquitectura de radio",
+      "8 canales en dúplex completo, según las especificaciones de la configuración suministrada"
+    ],
+    [
+      "Opciones de radio regionales",
+      "CN470 / EU868 / IN865 / RU864 / US915 / AU915; seleccione la configuración regional requerida"
+    ],
+    [
+      "Alcance en campo abierto",
+      "Hasta 5 km; la cobertura real depende de la instalación y de las condiciones de radio"
+    ],
+    [
+      "Potencia de transmisión",
+      "20–27 dBm; sujeta a la configuración seleccionada y a los límites normativos locales"
+    ],
+    [
+      "Sensibilidad del receptor",
+      "−140 dBm a 0.292 kbps"
+    ],
+    [
+      "Antena",
+      "Antena externa de fibra de vidrio; confirme la disposición de antenas suministrada"
+    ],
+    [
+      "Enlace de retorno",
+      "4G LTE; Ethernet según la configuración suministrada"
+    ],
+    [
+      "Bandas LTE publicadas",
+      "LTE-TDD B34 / B38 / B39 / B40 / B41; LTE-FDD B1 / B3 / B5 / B8. Seleccione el módem de acuerdo con el operador del lugar de instalación."
+    ],
+    [
+      "Protocolo de datos",
+      "MQTT; acuerde el punto de conexión, la carga útil y la configuración de autenticación"
+    ],
+    [
+      "Protección de la carcasa",
+      "IP65; mantenga los sellados y las condiciones de instalación especificados"
+    ],
+    [
+      "Temperatura de funcionamiento",
+      "−20°C a +70°C"
+    ],
+    [
+      "Temperatura de almacenamiento",
+      "−20°C a +80°C"
+    ],
+    [
+      "Opciones de montaje",
+      "Orejetas de fijación / abrazadera para poste / soporte ranurado, según la configuración suministrada"
+    ]
+  ],
+  "specNote": "Los valores de referencia corresponden a la especificación actual del producto de Hitelecom. Confirme la revisión del hardware, la alimentación de entrada, las dimensiones, el conjunto de antenas, las homologaciones regionales y las interfaces admitidas en la oferta del proyecto.",
+  "faqs": [
+    {
+      "q": "¿Qué hace el gateway H66?",
+      "a": "El H66 recibe datos de sensores LoRa compatibles y los reenvía a una plataforma de monitorización mediante el enlace de retorno configurado. El gateway proporciona la conexión entre los puntos de sensorización y la plataforma; los sensores conectados realizan las mediciones."
+    },
+    {
+      "q": "¿En qué se diferencia el H66 del H68?",
+      "a": "El H66 está orientado a instalaciones interiores, con carcasa IP65, rango de funcionamiento de −20°C a +70°C y distancia de referencia de hasta 5 km en campo abierto. El H68 está orientado a instalaciones exteriores, con carcasa IP68, rango de funcionamiento de −40°C a +85°C y referencia de hasta 10 km en campo abierto. Seleccione el modelo según las condiciones de instalación y una evaluación de radio específica del emplazamiento."
+    },
+    {
+      "q": "¿Un solo H66 cubrirá toda la instalación?",
+      "a": "La cantidad de gateways depende de los trayectos de radio reales, las posiciones de las antenas, las interferencias y el tráfico de los sensores. Una distancia en campo abierto no permite determinar la cobertura dentro de edificios o detrás de accidentes del terreno y estructuras. Facilite un plano de la instalación y posiciones representativas de los sensores para evaluar y probar la red."
+    },
+    {
+      "q": "¿Cuántos sensores puede conectar un gateway?",
+      "a": "La capacidad depende del tamaño de la carga útil, el intervalo de transmisión, la configuración de radio, la concentración de tráfico, las retransmisiones y los requisitos de enlace descendente. No existe una cifra única de dispositivos aplicable a todos los despliegues. Facilite la lista de sensores y el perfil de transmisión para dimensionar la red."
+    },
+    {
+      "q": "¿La compatibilidad con LoRa significa que el gateway es compatible con LoRaWAN?",
+      "a": "LoRa identifica la tecnología de radio. LoRaWAN es un protocolo de red con requisitos específicos para dispositivos, gateways y servidores. Antes de seleccionar la configuración, confirme el protocolo exacto del sensor, el firmware del gateway y la compatibilidad de la plataforma para cualquier requisito de LoRaWAN."
+    },
+    {
+      "q": "¿Qué frecuencias y bandas celulares debo elegir?",
+      "a": "Seleccione la configuración de radio regional para el país de instalación y el módem LTE para el operador local. Las opciones de radio regionales y las bandas LTE publicadas figuran en la tabla de especificaciones. El nombre de una banda regional no acredita una homologación local ni una cobertura universal de operadores."
+    },
+    {
+      "q": "¿Puedo utilizar Hitelecom Cloud o mi propia plataforma?",
+      "a": "Sí. Acuerde la configuración de integración de Hitelecom Cloud o de una plataforma compatible del cliente. MQTT figura en las especificaciones. Confirme el punto de conexión, los temas, el mapeo de la carga útil, las marcas de tiempo, la autenticación y la seguridad de transporte requerida; después verifique un mensaje de ejemplo de extremo a extremo."
+    },
+    {
+      "q": "¿Puedo consultar las lecturas en línea y recibir alarmas de umbral?",
+      "a": "Con la integración acordada de Hitelecom Cloud, los usuarios pueden consultar en línea los datos de monitorización cargados y recibir alertas cuando las mediciones superen los umbrales configurados. El muestreo de los sensores, los intervalos de transmisión, la disponibilidad de red y la configuración de la plataforma determinan cuándo está disponible la información. Defina los destinatarios y el flujo de respuesta durante la puesta en marcha."
+    },
+    {
+      "q": "¿Qué ocurre si se interrumpe la alimentación?",
+      "a": "Una notificación de pérdida de alimentación requiere energía de respaldo suficiente para operar el gateway y un enlace de retorno operativo. No significa que la transmisión continúe indefinidamente una vez retirada la alimentación. Confirme la solución de respaldo, la vía de notificación y la duración requerida para el proyecto."
+    },
+    {
+      "q": "¿Se puede instalar el H66 dentro de una cámara frigorífica?",
+      "a": "El rango de funcionamiento publicado es de −20°C a +70°C. Confirme el entorno real del gateway, la condensación, la alimentación y los trayectos de radio. En muchos proyectos de cadena de frío, los sensores se colocan en la zona de almacenamiento monitorizada y el gateway se instala en una zona de servicio adecuada fuera del recinto refrigerado. Valide la recepción con las puertas en su estado de funcionamiento habitual."
+    }
+  ],
+  "groups": [
+    {
+      "id": "buildings-hvac",
+      "title": "Edificios y climatización",
+      "jumpLabel": "Edificios y climatización",
+      "intro": "Integre las lecturas ambientales y de los servicios del edificio distribuidas en interiores en una red de monitorización común, incluidos proyectos de modernización donde resulte difícil instalar nuevo cableado para sensores.",
+      "imageKey": "building",
+      "tasks": [
+        {
+          "id": "occupied-space-environment",
+          "title": "Monitorización ambiental de espacios ocupados",
+          "networkRole": "Concentra sensores ambientales LoRa compatibles en las zonas ocupadas.",
+          "description": "Reenvíe lecturas de temperatura, humedad y calidad del aire de oficinas, aulas o salas de reuniones para revisar de forma centralizada las condiciones interiores.",
+          "placement": "Coloque el gateway en una ubicación interior accesible con un trayecto de radio evaluado hacia las salas monitorizadas.",
+          "projectBrief": "Planos de plantas, construcción de paredes, salas monitorizadas, tipos de sensores e intervalos de transmisión."
+        },
+        {
+          "id": "hvac-service-areas",
+          "title": "Monitorización de zonas de servicio de climatización",
+          "networkRole": "Conecta sensores compatibles distribuidos en instalaciones de climatización y espacios de servicio.",
+          "description": "Recopile lecturas de temperatura, humedad, presión o fugas de agua en salas de equipos y zonas de servicio para apoyar la planificación de inspecciones y mantenimiento.",
+          "placement": "Utilice una posición de montaje interior alejada de envolventes metálicas, superficies calientes e interferencias de motores.",
+          "projectBrief": "Distribución de la instalación, ubicaciones de equipos, interfaces de sensores e intervalos de monitorización requeridos."
+        },
+        {
+          "id": "building-water-leaks",
+          "title": "Monitorización de fugas de agua en edificios",
+          "networkRole": "Reenvía informes de dispositivos LoRa compatibles de detección de fugas de agua.",
+          "description": "Conecte sensores de fugas cerca de montantes, aseos, salas técnicas y zonas de servicio ocultas para revisar conjuntamente los puntos de detección distribuidos.",
+          "placement": "Evalúe la cobertura de radio a través de forjados de hormigón y conductos verticales de instalaciones antes de fijar la posición del gateway.",
+          "projectBrief": "Zonas de detección, niveles de planta, posiciones de sensores y flujo de notificación de la plataforma."
+        },
+        {
+          "id": "hvac-filter-pressure",
+          "title": "Tendencias de presión diferencial en filtros de climatización",
+          "networkRole": "Reenvía lecturas de presión diferencial de dispositivos de monitorización LoRa compatibles.",
+          "description": "Incorpore los registros de pérdida de presión en filtros a la plataforma para que los responsables de instalaciones revisen los cambios junto con los horarios de ventilación y el historial de mantenimiento.",
+          "placement": "Sitúe el gateway lejos del apantallamiento causado por conductos; verifique la recepción de sensores de unidades de tratamiento de aire y salas técnicas cerradas.",
+          "projectBrief": "Unidades de tratamiento de aire, rangos de presión, puntos de instalación de sensores, horarios de funcionamiento e intervalos de transmisión."
+        },
+        {
+          "id": "occupancy-lighting-patterns",
+          "title": "Patrones de ocupación y uso de la iluminación",
+          "networkRole": "Concentra informes de sensores LoRa compatibles de presencia e iluminancia.",
+          "description": "Conecte eventos de uso de salas y lecturas de nivel de iluminación para revisar la utilización de espacios y los horarios de iluminación sin necesidad de identificar a los ocupantes.",
+          "placement": "Pruebe la recepción desde salas de reuniones, pasillos y zonas de servicio con tabiques y puertas en sus posiciones habituales.",
+          "projectBrief": "Zonas monitorizadas, frecuencia de eventos de presencia, transmisión de niveles de iluminación y vistas requeridas en la plataforma."
+        }
+      ],
+      "imageAlt": "Sala interior de aparamenta de servicios del edificio",
+      "imageCaption": "Sala de servicios del edificio · Entorno representativo"
+    },
+    {
+      "id": "warehousing",
+      "title": "Almacenes e instalaciones de almacenamiento",
+      "jumpLabel": "Almacenamiento",
+      "intro": "Conecte puntos de monitorización en pasillos de almacenamiento, zonas de recepción y almacenes cerrados teniendo en cuenta los cambios de existencias y las estanterías metálicas.",
+      "imageKey": "warehouse",
+      "tasks": [
+        {
+          "id": "storage-environment",
+          "title": "Monitorización ambiental de zonas de almacenamiento",
+          "networkRole": "Concentra sensores compatibles de temperatura y humedad en las zonas de almacenamiento.",
+          "description": "Reenvíe lecturas de almacenes a temperatura ambiente, muelles de recepción y zonas de embalaje para revisar las condiciones que afectan a los materiales almacenados.",
+          "placement": "Elija una posición interior elevada y pruebe la cobertura con existencias y niveles de carga de estanterías representativos.",
+          "projectBrief": "Dimensiones del almacén, alturas de estanterías, zonas de almacenamiento y programas de transmisión de los sensores."
+        },
+        {
+          "id": "rack-inclination",
+          "title": "Monitorización de inclinación de estanterías",
+          "networkRole": "Recopila informes de sensores de inclinación LoRa compatibles en estructuras de estanterías seleccionadas.",
+          "description": "Incorpore las lecturas de inclinación de estanterías a una plataforma de monitorización para revisar tendencias y planificar inspecciones en puntos de medición designados.",
+          "placement": "Evalúe los trayectos de radio a lo largo de los pasillos y detrás de estanterías metálicas a las alturas previstas de los sensores.",
+          "projectBrief": "Distribución de estanterías, posiciones de medición, requisitos de precisión de sensores e intervalos de transmisión."
+        },
+        {
+          "id": "warehouse-doors",
+          "title": "Estado de puertas y zonas de carga",
+          "networkRole": "Reenvía mensajes de dispositivos inalámbricos compatibles de estado de puertas.",
+          "description": "Combine informes de estado de puertas de muelles de carga, almacenes cerrados y zonas de acceso restringido con los demás datos de monitorización de la instalación.",
+          "placement": "Mantenga la antena del gateway alejada de estructuras de acero de los muelles y compruebe la cobertura con las puertas abiertas y cerradas.",
+          "projectBrief": "Ubicaciones de puertas, materiales del edificio, frecuencia de eventos y requisitos de visualización de la plataforma."
+        },
+        {
+          "id": "bulk-storage-levels",
+          "title": "Depósitos de materiales a granel y silos de almacenamiento",
+          "networkRole": "Reenvía lecturas de dispositivos LoRa compatibles de monitorización de nivel.",
+          "description": "Conecte depósitos, tolvas y recipientes de almacenamiento a granel seleccionados en interiores para revisar los niveles de material y las necesidades de reposición en la plataforma de monitorización.",
+          "placement": "Evalúe el apantallamiento de los recipientes metálicos y el espacio libre de la antena en la posición del sensor; elija una ubicación del gateway que alcance las zonas de almacenamiento previstas.",
+          "projectBrief": "Geometría del recipiente, material almacenado, idoneidad del sensor de nivel, puntos de medición y actualizaciones requeridas."
+        }
+      ],
+      "imageAlt": "Equipos de control de almacén junto a estanterías de almacenamiento",
+      "imageCaption": "Infraestructura de almacén · Entorno representativo"
+    },
+    {
+      "id": "manufacturing",
+      "title": "Instalaciones de fabricación",
+      "jumpLabel": "Fabricación",
+      "intro": "Conecte dispositivos compatibles de monitorización de planta en áreas de producción y zonas de equipos auxiliares para centralizar la planificación de inspecciones y mantenimiento.",
+      "imageKey": "factory",
+      "tasks": [
+        {
+          "id": "machine-condition",
+          "title": "Indicadores de estado de maquinaria",
+          "networkRole": "Concentra los indicadores de estado comunicados por sensores LoRa compatibles.",
+          "description": "Reenvíe indicadores de vibración derivados de sensores, temperaturas superficiales o lecturas de inclinación de máquinas seleccionadas para revisar tendencias de mantenimiento.",
+          "placement": "Monte el gateway lejos de variadores de frecuencia y maquinaria densa, confirmando in situ el espacio libre de la antena.",
+          "projectBrief": "Posiciones de máquinas, métricas comunicadas, tamaños de carga útil e intervalos de actualización deseados."
+        },
+        {
+          "id": "production-environment",
+          "title": "Monitorización ambiental de zonas de producción",
+          "networkRole": "Conecta dispositivos compatibles de monitorización ambiental en las zonas de producción.",
+          "description": "Recopile lecturas de temperatura, humedad y calidad del aire específicas de la aplicación en células de producción, zonas de preparación de materiales y talleres cerrados.",
+          "placement": "Utilice una ubicación interior dentro de los límites ambientales del gateway y fuera de las zonas de proceso restringidas.",
+          "projectBrief": "Distribución de producción, parámetros ambientales, ubicaciones de sensores y condiciones de funcionamiento."
+        },
+        {
+          "id": "factory-utilities",
+          "title": "Monitorización de servicios auxiliares de fábrica",
+          "networkRole": "Reenvía datos de dispositivos LoRa compatibles de presión, nivel y temperatura.",
+          "description": "Incorpore lecturas de servicios de aire comprimido, sistemas de agua de proceso y depósitos auxiliares a una plataforma común de monitorización para la revisión operativa.",
+          "placement": "Evalúe la cobertura alrededor de tuberías y equipos auxiliares antes de seleccionar una ubicación interior para el gateway.",
+          "projectBrief": "Tipos de servicios, puntos de medición, rangos requeridos de los sensores y limitaciones de radio de la instalación."
+        }
+      ],
+      "imageAlt": "Cuadros de control industrial dentro de una instalación de fabricación",
+      "imageCaption": "Instalación de fabricación · Entorno representativo"
+    },
+    {
+      "id": "electrical-energy-rooms",
+      "title": "Salas eléctricas y energéticas",
+      "jumpLabel": "Electricidad y energía",
+      "intro": "Concentre mensajes de monitorización ambiental, estado de equipos y energía de dispositivos compatibles en salas eléctricas y de servicios del edificio.",
+      "imageKey": "electrical",
+      "tasks": [
+        {
+          "id": "electrical-room-environment",
+          "title": "Condiciones ambientales de salas eléctricas",
+          "networkRole": "Concentra dispositivos compatibles de temperatura, humedad y detección de fugas de agua.",
+          "description": "Reenvíe lecturas ambientales y avisos de entrada de agua de salas de aparamenta, salas de distribución y zonas de servicio eléctrico.",
+          "placement": "Monte el gateway fuera de las envolventes de equipos en tensión y respete las distancias exigidas por las normas eléctricas de la instalación.",
+          "projectBrief": "Distribución de salas, distancias de seguridad de equipos, ubicaciones monitorizadas y condiciones ambientales."
+        },
+        {
+          "id": "electrical-thermal-trends",
+          "title": "Tendencias de temperatura de equipos",
+          "networkRole": "Recibe informes de dispositivos inalámbricos compatibles de monitorización de temperatura.",
+          "description": "Conecte sensores de temperatura aprobados en puntos de medición de equipos seleccionados para que mantenimiento revise los cambios de temperatura a lo largo del tiempo.",
+          "placement": "Verifique la propagación de radio a través de los tabiques de salas eléctricas y las puertas cerradas de armarios metálicos.",
+          "projectBrief": "Tipo de sensor aprobado, posiciones de medición, distribución de equipos e intervalo de transmisión."
+        },
+        {
+          "id": "energy-submetering",
+          "title": "Recopilación de datos energéticos y de submedición",
+          "networkRole": "Reenvía lecturas de dispositivos de medición compatibles con LoRa.",
+          "description": "Concentre valores comunicados por contadores eléctricos o de servicios en salas y zonas de distintos usuarios para apoyar el análisis energético en la plataforma conectada.",
+          "placement": "Seleccione una posición con acceso de radio a los contadores y un enlace de retorno configurado fiable.",
+          "projectBrief": "Modelos de contadores, cargas útiles admitidas, intervalos de lectura y requisitos de datos de la plataforma."
+        },
+        {
+          "id": "ups-battery-service-rooms",
+          "title": "Condiciones auxiliares de salas de UPS y baterías",
+          "networkRole": "Recopila lecturas de sensores ambientales y de gases específicos de la aplicación compatibles.",
+          "description": "Conecte puntos de monitorización de temperatura, humedad y gases adecuados en salas de UPS y baterías para revisar tendencias operativas. Seleccione cada dispositivo de gas objetivo según la química de la batería y el entorno reales.",
+          "placement": "Ubique el gateway dentro de sus condiciones especificadas y evalúe el apantallamiento alrededor de los armarios de baterías; revise por separado la idoneidad del sensor para el gas y la zona monitorizados.",
+          "projectBrief": "Química de las baterías, distribución de salas, parámetros objetivo, compatibilidad de sensores, perfil de transmisión y requisitos de notificación."
+        },
+        {
+          "id": "indoor-charging-support",
+          "title": "Monitorización auxiliar de instalaciones interiores de carga",
+          "networkRole": "Reenvía lecturas de dispositivos compatibles de temperatura, ambiente y medición inalámbrica.",
+          "description": "Incorpore registros de monitorización auxiliar de plazas de carga interiores e instalaciones de servicio de flotas a una plataforma común para revisar instalaciones y energía.",
+          "placement": "Evalúe los trayectos de radio con vehículos presentes y mantenga el gateway alejado del cableado de potencia de los cargadores y de las envolventes metálicas cerradas.",
+          "projectBrief": "Distribución de plazas, puntos auxiliares monitorizados, dispositivos de medición compatibles, movimiento de vehículos e intervalos de transmisión."
+        }
+      ],
+      "imageAlt": "Sala interior de distribución eléctrica",
+      "imageCaption": "Sala eléctrica · Entorno representativo"
+    },
+    {
+      "id": "cold-chain",
+      "title": "Instalaciones de cadena de frío",
+      "jumpLabel": "Cadena de frío",
+      "intro": "Conecte dispositivos compatibles de monitorización de temperatura en cámaras frigoríficas y zonas de manipulación, eligiendo la ubicación del gateway según la cobertura de radio y las condiciones de funcionamiento permitidas.",
+      "imageKey": "cold",
+      "tasks": [
+        {
+          "id": "cold-room-temperature",
+          "title": "Monitorización de temperatura en cámaras frigoríficas",
+          "networkRole": "Concentra informes de sensores de temperatura LoRa compatibles en almacenamiento refrigerado.",
+          "description": "Reenvíe lecturas de temperatura de puntos de medición designados en cámaras frigoríficas para su consulta centralizada y las alertas configuradas en la plataforma.",
+          "placement": "Coloque el gateway en una zona de servicio adecuada y pruebe los trayectos de radio a través de paneles aislantes.",
+          "projectBrief": "Temperaturas de cámaras frigoríficas, construcción de paneles, ubicaciones de sondas y requisitos de transmisión."
+        },
+        {
+          "id": "cold-chain-handling",
+          "title": "Condiciones de zonas de recepción y manipulación",
+          "networkRole": "Conecta sensores ambientales compatibles fuera de las cámaras frigoríficas principales.",
+          "description": "Recopile lecturas en zonas de recepción, preparación y embalaje para contextualizar la revisión de las condiciones de temperatura de las operaciones de la instalación.",
+          "placement": "Evalúe las puertas de carga y los tabiques en condiciones de funcionamiento representativas.",
+          "projectBrief": "Zonas de manipulación, ubicaciones de puertas, parámetros requeridos e intervalos de monitorización."
+        },
+        {
+          "id": "cold-room-door-status",
+          "title": "Estado de puertas de cámaras frigoríficas",
+          "networkRole": "Reenvía mensajes de sensores LoRa compatibles de estado de puertas.",
+          "description": "Incorpore los eventos de apertura de puertas y las lecturas de temperatura a la misma plataforma para investigar cambios en las condiciones de almacenamiento.",
+          "placement": "Pruebe la cobertura con las puertas de las cámaras frigoríficas cerradas y las antenas fijadas en sus posiciones previstas.",
+          "projectBrief": "Tipos de puertas, compatibilidad de sensores, volumen de eventos y correlación requerida en la plataforma."
+        }
+      ],
+      "imageAlt": "Pasillo de servicio de refrigeración junto a equipos de almacenamiento frigorífico",
+      "imageCaption": "Pasillo de servicio frigorífico · Entorno representativo"
+    },
+    {
+      "id": "water-pump-facilities",
+      "title": "Instalaciones de agua y bombeo",
+      "jumpLabel": "Agua y bombas",
+      "intro": "Conecte puntos de monitorización de casetas de bombeo, salas de depósitos y zonas de servicio de agua de edificios mediante una vía inalámbrica de datos común.",
+      "imageKey": "water-indoor",
+      "tasks": [
+        {
+          "id": "indoor-pressure-monitoring",
+          "title": "Monitorización de presión del suministro de agua",
+          "networkRole": "Concentra informes de sensores de presión LoRa compatibles.",
+          "description": "Reenvíe lecturas de presión de puntos de medición seleccionados del suministro y del sistema de bombeo para centralizar la revisión de tendencias y las investigaciones de mantenimiento.",
+          "placement": "Ubique el gateway lejos de superficies mojadas y evalúe la cobertura alrededor de bombas y tuberías.",
+          "projectBrief": "Distribución de la red de tuberías, rangos de presión, puntos de medición e intervalos de actualización."
+        },
+        {
+          "id": "indoor-tank-levels",
+          "title": "Monitorización de nivel de depósitos y sumideros",
+          "networkRole": "Conecta dispositivos inalámbricos compatibles de monitorización de nivel.",
+          "description": "Recopile lecturas de depósitos de agua de servicio, sumideros y otros puntos adecuados de medición de nivel dentro de edificios de servicios auxiliares.",
+          "placement": "Compruebe los trayectos de radio alrededor de paredes de depósitos, hormigón armado y salas subterráneas.",
+          "projectBrief": "Dimensiones de depósitos, modelos de sensores de nivel, cotas de salas y requisitos de transmisión."
+        },
+        {
+          "id": "pump-room-leaks",
+          "title": "Fugas de agua y ambiente de salas de bombas",
+          "networkRole": "Reenvía mensajes de sensores compatibles de detección de fugas de agua y monitorización ambiental.",
+          "description": "Combine informes de fugas a nivel del suelo con lecturas de temperatura y humedad alrededor de grupos de bombeo y equipos de servicio.",
+          "placement": "Utilice un punto de montaje seco y accesible con cobertura evaluada hacia los dispositivos de detección a baja altura.",
+          "projectBrief": "Zonas de fugas, disposición del drenaje, posiciones de sensores y acceso de mantenimiento."
+        },
+        {
+          "id": "domestic-hot-water-circuits",
+          "title": "Circulación de agua caliente y circuitos de servicio",
+          "networkRole": "Reenvía informes de dispositivos compatibles de monitorización de temperatura de tuberías y presión.",
+          "description": "Conecte puntos de medición seleccionados de impulsión, retorno y circuitos de servicio de agua caliente para revisar las condiciones de circulación e investigar tendencias anómalas.",
+          "placement": "Coloque el gateway lejos de tuberías calientes y verifique la recepción desde los montantes de servicio; seleccione conjuntos de sensores adecuados para la temperatura real del proceso.",
+          "projectBrief": "Distribución del circuito, materiales de tuberías, temperaturas de funcionamiento, puntos de presión, disposiciones de sondas e intervalos de transmisión."
+        },
+        {
+          "id": "pump-condition-indicators",
+          "title": "Indicadores de estado de grupos de bombeo",
+          "networkRole": "Concentra los indicadores de vibración y las temperaturas comunicados por dispositivos LoRa compatibles.",
+          "description": "Incorpore a la plataforma indicadores de estado derivados de sensores en posiciones seleccionadas de bombas y motores para facilitar comparaciones de mantenimiento entre periodos de funcionamiento.",
+          "placement": "Evalúe la recepción alrededor de motores, tuberías y estructuras de hormigón; dimensione el perfil de transmisión para indicadores resumidos en lugar de formas de onda brutas continuas.",
+          "projectBrief": "Tipos de bombas, posiciones de medición, definiciones de indicadores, horarios de funcionamiento e intervalos de transmisión."
+        }
+      ],
+      "imageAlt": "Bombas y tuberías de proceso dentro de una instalación de tratamiento de agua",
+      "imageCaption": "Instalación de tratamiento de agua · Entorno representativo"
+    },
+    {
+      "id": "data-centers",
+      "title": "Centros de datos y salas de TI",
+      "jumpLabel": "Centros de datos",
+      "intro": "Proporcione una vía inalámbrica de recopilación para sensores compatibles de monitorización de instalaciones en racks, infraestructura de refrigeración y espacios auxiliares de TI.",
+      "imageKey": "data",
+      "tasks": [
+        {
+          "id": "rack-environment",
+          "title": "Condiciones térmicas de zonas de racks",
+          "networkRole": "Concentra lecturas de sensores compatibles de temperatura y humedad.",
+          "description": "Reenvíe mediciones de pasillos de racks y posiciones seleccionadas de salas de TI para revisar tendencias ambientales locales.",
+          "placement": "Evalúe la cobertura con las puertas de racks y los sistemas de contención en sus posiciones habituales de funcionamiento.",
+          "projectBrief": "Distribución de racks, diseño de contención, alturas de medición e intervalos de transmisión."
+        },
+        {
+          "id": "it-cooling-water-leaks",
+          "title": "Monitorización de fugas de agua en refrigeración",
+          "networkRole": "Conecta dispositivos LoRa compatibles de detección de fugas de agua en la infraestructura de refrigeración.",
+          "description": "Incorpore informes de zonas bajo suelo, unidades de refrigeración y puntos de monitorización de tuberías al flujo de monitorización configurado de la instalación.",
+          "placement": "Compruebe la propagación de radio bajo suelos elevados y alrededor de instalaciones metálicas densas.",
+          "projectBrief": "Distribución de refrigeración, zonas de detección de fugas, construcción del suelo y requisitos de notificación."
+        },
+        {
+          "id": "it-support-rooms",
+          "title": "Condiciones de salas auxiliares de TI",
+          "networkRole": "Reenvía mensajes de sensores compatibles de ambiente y estado de puertas.",
+          "description": "Amplíe la monitorización a salas de red, almacenes de equipos y espacios de servicio auxiliares fuera de la sala principal de datos.",
+          "placement": "Seleccione una posición interior accesible con acceso de radio a través de los tabiques de las salas correspondientes.",
+          "projectBrief": "Salas auxiliares, condiciones monitorizadas, modelos de sensores y alcance de integración de la plataforma."
+        },
+        {
+          "id": "data-center-branch-metering",
+          "title": "Registros energéticos de circuitos derivados y cargas auxiliares",
+          "networkRole": "Recopila los valores energéticos comunicados por dispositivos de medición LoRa compatibles.",
+          "description": "Conecte cargas auxiliares de TI y puntos de submedición seleccionados de la instalación para revisarlos junto con registros ambientales en la plataforma receptora.",
+          "placement": "Compruebe los trayectos de antena alrededor de armarios metálicos de distribución y verifique la interfaz del contador inalámbrico suministrado; encargue la instalación eléctrica al personal cualificado del emplazamiento.",
+          "projectBrief": "Modelos de contadores compatibles, agrupación de circuitos, unidades, periodos de acumulación y mapeo requerido de la plataforma."
+        },
+        {
+          "id": "it-room-door-events",
+          "title": "Eventos de puertas de salas de TI y envolventes",
+          "networkRole": "Reenvía informes de eventos de dispositivos LoRa compatibles de estado de puertas.",
+          "description": "Combine registros de apertura de puertas de salas de red, envolventes seleccionadas y áreas de servicio restringidas con tendencias ambientales para la investigación operativa.",
+          "placement": "Pruebe la recepción con las puertas de las envolventes cerradas y las salas en servicio normal; acuerde el montaje de sensores sin obstaculizar el acceso de mantenimiento.",
+          "projectBrief": "Ubicaciones de puertas, compatibilidad de dispositivos, frecuencia de eventos, requisitos de marcas de tiempo y reglas de notificación."
+        }
+      ],
+      "imageAlt": "Racks de servidores en un pasillo de refrigeración de un centro de datos",
+      "imageCaption": "Pasillo de centro de datos · Entorno representativo"
+    },
+    {
+      "id": "indoor-transport-public",
+      "title": "Edificios públicos y servicios de instalaciones",
+      "jumpLabel": "Instalaciones públicas",
+      "intro": "Conecte sensores de monitorización de instalaciones en edificios de estaciones, cocheras y edificios públicos, con una planificación de radio adaptada a grandes espacios cerrados.",
+      "imageKey": "public",
+      "tasks": [
+        {
+          "id": "public-hall-environment",
+          "title": "Condiciones ambientales de vestíbulos públicos",
+          "networkRole": "Concentra sensores ambientales compatibles en zonas públicas ocupadas.",
+          "description": "Recopile lecturas de temperatura, humedad y calidad del aire de vestíbulos de estaciones, zonas de espera y edificios de servicios públicos.",
+          "placement": "Evalúe grandes vestíbulos, pasillos de servicio y zonas compartimentadas antes de seleccionar la posición de montaje.",
+          "projectBrief": "Planos del edificio, zonas de ocupación, parámetros monitorizados y programas de transmisión de sensores."
+        },
+        {
+          "id": "transport-equipment-rooms",
+          "title": "Salas de equipos de estaciones y cocheras",
+          "networkRole": "Conecta dispositivos compatibles de monitorización de fugas de agua, temperatura y humedad.",
+          "description": "Reenvíe informes de condiciones de salas de equipos y espacios de servicio para apoyar las inspecciones rutinarias y el mantenimiento de instalaciones.",
+          "placement": "Mantenga el gateway accesible y separado de equipos operativos de acceso restringido.",
+          "projectBrief": "Ubicaciones de salas de equipos, materiales de tabiques, posiciones de sensores y requisitos de mantenimiento."
+        },
+        {
+          "id": "depot-stores",
+          "title": "Almacenes y zonas de servicio de cocheras",
+          "networkRole": "Reenvía mensajes de dispositivos compatibles de monitorización ambiental de almacenamiento y estado de puertas.",
+          "description": "Conecte almacenes cerrados de mantenimiento, zonas de repuestos y edificios de servicio a una plataforma común de monitorización de instalaciones.",
+          "placement": "Pruebe la cobertura a través de talleres y pasillos de almacenamiento en condiciones de funcionamiento representativas.",
+          "projectBrief": "Distribución del almacén, espacios monitorizados, obstáculos metálicos e intervalos de transmisión requeridos."
+        }
+      ],
+      "imageAlt": "Equipos de servicios del edificio en un anexo protegido junto a un edificio público",
+      "imageCaption": "Anexo de servicios del edificio · Entorno representativo"
+    },
+    {
+      "id": "pharma-laboratories",
+      "title": "Instalaciones farmacéuticas y laboratorios",
+      "jumpLabel": "Industria farmacéutica y laboratorios",
+      "intro": "Conecte puntos de monitorización de refrigeración, laboratorios y salas controladas mediante una red interior de datos planificada teniendo en cuenta equipos metálicos, almacenamiento aislado y espacios de acceso restringido.",
+      "imageKey": "pharma-lab",
+      "imageAlt": "Armarios frigoríficos de laboratorio e incubadora de sobremesa en un laboratorio de investigación",
+      "imageCaption": "Refrigeración e incubación de laboratorio · Entorno ilustrativo",
+      "tasks": [
+        {
+          "id": "pharmaceutical-refrigerated-storage",
+          "title": "Refrigeradores farmacéuticos y almacenes médicos",
+          "networkRole": "Conecta sensores de temperatura compatibles en puntos designados de almacenamiento refrigerado.",
+          "description": "Reenvíe registros de refrigeradores de medicamentos, equipos de almacenamiento de vacunas y almacenes médicos adyacentes para los procedimientos de monitorización y notificación configurados por el operador.",
+          "placement": "Utilice una ubicación de servicio para el gateway dentro de sus límites de funcionamiento; verifique la recepción a través de armarios y puertas aislados durante el uso normal.",
+          "projectBrief": "Equipos de almacenamiento, límites de temperatura especificados, disposiciones de sondas, intervalos de transmisión y destinatarios de notificaciones."
+        },
+        {
+          "id": "laboratory-incubators",
+          "title": "Incubadoras de laboratorio y almacenamiento de investigación",
+          "networkRole": "Concentra registros de dispositivos compatibles de monitorización de temperatura y humedad.",
+          "description": "Conecte incubadoras seleccionadas, almacenes de materiales de investigación y espacios auxiliares del laboratorio para revisar las condiciones de distintas zonas de equipos y salas.",
+          "placement": "Evalúe las carcasas metálicas de incubadoras y el tendido de sondas; mantenga el gateway fuera de entornos de equipos que superen sus condiciones especificadas.",
+          "projectBrief": "Lista de equipos, rangos monitorizados, puntos de medición independientes, configuración de sondas e intervalos de registro requeridos."
+        },
+        {
+          "id": "cleanroom-pressure-monitoring",
+          "title": "Salas limpias y producción controlada",
+          "networkRole": "Concentra informes de sensores compatibles de presión diferencial y ambiente.",
+          "description": "Recopile registros de presión de sala, temperatura y humedad en zonas de producción seleccionadas para que el equipo de instalaciones los revise según sus criterios operativos.",
+          "placement": "Mantenga la instalación compatible con los requisitos de acceso y limpieza de las salas; pruebe los trayectos de radio a través de tabiques y espacios de servicio sellados.",
+          "projectBrief": "Relaciones de presión entre salas, parámetros monitorizados, ubicaciones de sensores, intervalos de transmisión y requisitos de registro de la plataforma."
+        }
+      ]
+    },
+    {
+      "id": "museums-archives",
+      "title": "Museos, archivos y colecciones patrimoniales",
+      "jumpLabel": "Museos y archivos",
+      "intro": "Conecte puntos de monitorización de depósitos de colecciones, galerías y estado del edificio mediante métodos de instalación respetuosos con las colecciones sensibles y los elementos patrimoniales existentes.",
+      "imageKey": "museum-archive",
+      "imageAlt": "Estanterías de archivo de museo, cajas de almacenamiento de colecciones y vitrina junto a una galería",
+      "imageCaption": "Colecciones y archivo de museo · Entorno ilustrativo",
+      "tasks": [
+        {
+          "id": "collection-store-conditions",
+          "title": "Museos, archivos y depósitos de colecciones",
+          "networkRole": "Recopila registros de sensores compatibles de temperatura, humedad e iluminancia.",
+          "description": "Incorpore lecturas ambientales de depósitos de colecciones, salas de archivo y vitrinas seleccionadas a un registro común para su revisión por el equipo de conservación.",
+          "placement": "Compruebe la recepción a través de estanterías densas y vitrinas; acuerde una ubicación no invasiva de los sensores en torno a colecciones sensibles.",
+          "projectBrief": "Tipos de colecciones, zonas de exposición o almacenamiento, métodos de montaje permitidos, límites ambientales e intervalos de registro."
+        },
+        {
+          "id": "gallery-lighting-records",
+          "title": "Registros de iluminación de galerías y horarios de apertura",
+          "networkRole": "Reenvía lecturas de dispositivos LoRa compatibles de monitorización de iluminancia y presencia.",
+          "description": "Reúna registros seleccionados de nivel de iluminación de galerías y eventos de uso de salas para que conservación revise los cambios entre horarios de apertura, periodos de limpieza y horas de cierre.",
+          "placement": "Evalúe la recepción a través de tabiques de galerías y elementos expositivos; acuerde un montaje discreto y un programa de transmisión adecuado a los cambios de iluminación.",
+          "projectBrief": "Zonas de galería, montaje permitido, rango de iluminancia, horarios de apertura e intervalos de registro requeridos."
+        },
+        {
+          "id": "heritage-collection-leakage",
+          "title": "Fugas de agua y condiciones constructivas en edificios de colecciones",
+          "networkRole": "Conecta dispositivos compatibles de monitorización de fugas de agua, temperatura y humedad.",
+          "description": "Recopile informes cerca de huecos bajo cubierta, recorridos de instalaciones y puntos seleccionados de observación del edificio para ayudar a museos y archivos a investigar cambios relacionados con la humedad en torno a las colecciones.",
+          "placement": "Utilice montaje reversible cuando se requiera y pruebe la cobertura a través de mampostería gruesa, depósitos en sótanos y espacios de servicio ocultos.",
+          "projectBrief": "Materiales del edificio, zonas de detección de fugas, límites de acceso, posiciones de sensores y destinatarios de notificaciones."
+        }
+      ]
+    },
+    {
+      "id": "food-beverage",
+      "title": "Instalaciones de alimentos y bebidas",
+      "jumpLabel": "Alimentos y bebidas",
+      "intro": "Integre sensores compatibles de equipos de proceso, zonas de servicio próximas a la limpieza y almacenes de ingredientes en un flujo común de monitorización, ubicando el gateway según las condiciones de producción alimentaria.",
+      "imageKey": "food-beverage",
+      "imageAlt": "Depósitos de proceso de acero inoxidable y transportador de embotellado en una planta de bebidas",
+      "imageCaption": "Producción de alimentos y bebidas · Entorno ilustrativo",
+      "tasks": [
+        {
+          "id": "food-production-service-areas",
+          "title": "Zonas auxiliares de producción alimentaria y lavado",
+          "networkRole": "Conecta dispositivos compatibles de monitorización de temperatura y fugas de agua en equipos auxiliares de producción.",
+          "description": "Reenvíe lecturas de servicios de refrigeración, circuitos de agua de proceso y zonas de equipos próximas al lavado para apoyar las inspecciones operativas rutinarias.",
+          "placement": "Instale el gateway de interiores en una posición de servicio adecuada fuera del chorro directo de lavado y verifique los trayectos de radio hacia los sensores protegidos.",
+          "projectBrief": "Zonas de producción, exposición a limpieza, puntos de medición seleccionados, protección de sensores e intervalos de actualización."
+        },
+        {
+          "id": "food-process-vessel-temperature",
+          "title": "Temperaturas de procesos alimentarios y recipientes de fermentación",
+          "networkRole": "Reenvía lecturas de transmisores LoRa compatibles y conjuntos de medición de temperatura de proceso adecuados.",
+          "description": "Conecte recipientes de preparación, equipos de fermentación y puntos de temperatura de servicios de proceso seleccionados para revisar tendencias operativas junto con los registros de producción.",
+          "placement": "Mantenga el gateway fuera del lavado directo y del calor excesivo; especifique los conjuntos de sensores y sus posiciones de instalación según el medio y la temperatura reales del proceso.",
+          "projectBrief": "Etapas del proceso, tipos de recipientes, rangos de temperatura, conexiones de sondas e intervalos de transmisión requeridos."
+        },
+        {
+          "id": "ingredient-packaging-stores",
+          "title": "Humedad en almacenes de ingredientes y envases",
+          "networkRole": "Concentra informes de dispositivos compatibles de monitorización de temperatura y humedad.",
+          "description": "Incorpore lecturas de almacenes de ingredientes secos, salas de envases y zonas de materiales sensibles a la humedad a la plataforma para revisar las condiciones locales de almacenamiento entre turnos.",
+          "placement": "Evalúe los trayectos de radio a través de estanterías y tabiques con existencias representativas; coloque los sensores en las zonas de almacenamiento de materiales acordadas.",
+          "projectBrief": "Ingredientes o envases almacenados, límites de humedad, distribución de salas, rotación de existencias y programas de transmisión."
+        }
+      ]
+    },
+    {
+      "id": "retail-hospitality",
+      "title": "Instalaciones comerciales y de hostelería",
+      "jumpLabel": "Comercio y hostelería",
+      "intro": "Conecte comercios, hoteles, zonas de atención al cliente y almacenes de restauración mediante una red de monitorización interior planificada para espacios ocupados, elementos expositivos y acceso de mantenimiento.",
+      "imageKey": "retail-hospitality",
+      "imageAlt": "Vestíbulo de hotel moderno con recepción, zona comercial de cafetería y pasillo contiguo",
+      "imageCaption": "Interior de hostelería y comercio · Entorno ilustrativo",
+      "tasks": [
+        {
+          "id": "hotel-hospitality-facilities",
+          "title": "Hoteles e instalaciones de hostelería",
+          "networkRole": "Conecta dispositivos compatibles de monitorización ambiental, presencia y fugas de agua.",
+          "description": "Incorpore informes de espacios auxiliares de zonas de huéspedes, plantas de servicio y salas de instalaciones a una red de monitorización para revisar mantenimiento y operaciones.",
+          "placement": "Planifique la cobertura del gateway a través de tabiques de habitaciones y conductos verticales de instalaciones; facilite el acceso de mantenimiento sin perturbar las zonas ocupadas.",
+          "projectBrief": "Alas del edificio, zonas de servicio, parámetros monitorizados, política de eventos de presencia y requisitos de transmisión."
+        },
+        {
+          "id": "retail-display-service-areas",
+          "title": "Expositores comerciales y zonas internas de servicio",
+          "networkRole": "Concentra informes de sensores compatibles de temperatura, humedad, estado de puertas e iluminancia.",
+          "description": "Conecte entornos expositivos seleccionados, almacenes cerrados y zonas de servicio para ayudar a los equipos comerciales a revisar condiciones locales y eventos de uso de equipos.",
+          "placement": "Pruebe los trayectos de radio con estanterías, expositores y existencias en su lugar; sitúe el gateway fuera del alcance del público y lejos del apantallamiento de expositores metálicos.",
+          "projectBrief": "Distribución del comercio, tipos de exposición o existencias, modelos de sensores, eventos monitorizados y programas de transmisión."
+        },
+        {
+          "id": "hospitality-kitchen-refrigeration",
+          "title": "Cocinas comerciales y refrigeración de restauración",
+          "networkRole": "Conecta dispositivos compatibles de monitorización de temperatura en puntos seleccionados de almacenamiento de restauración.",
+          "description": "Reenvíe registros de refrigeradores de restaurantes, cámaras frigoríficas de hoteles y equipos de almacenamiento en zonas de preparación para los procedimientos de monitorización y notificación configurados por el operador.",
+          "placement": "Mantenga el gateway lejos del calor, el vapor y el rociado directo de limpieza; pruebe la recepción a través de armarios frigoríficos y tabiques de zonas de servicio.",
+          "projectBrief": "Distribución de cocina y almacenamiento, límites de temperatura, disposiciones de sondas adecuadas, construcción de puertas y flujo de notificación."
+        }
+      ]
+    }
+  ],
+  "imageWidth": 400,
+  "imageHeight": 919
+}

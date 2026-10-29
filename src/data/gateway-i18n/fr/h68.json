@@ -1,0 +1,703 @@
+{
+  "model": "H68",
+  "kind": "Extérieur",
+  "slug": "outdoor-4g-gateway-h68",
+  "path": "/fr/product/outdoor-4g-gateway-h68",
+  "title": "Passerelle IoT extérieure H68 | LoRa et 4G LTE | Hitelecom",
+  "metaDescription": "Connectez des capteurs LoRa compatibles avec la passerelle IoT extérieure H68 de Hitelecom. Boîtier IP68, liaison de collecte 4G LTE, intégration MQTT et options radio régionales.",
+  "image": "h68.webp",
+  "imageAlt": "Passerelle extérieure H68 de Hitelecom avec antennes externes, image officielle du produit",
+  "caption": "H68 · Passerelle IoT extérieure",
+  "heroHeading": "H68, passerelle\nIoT extérieure.",
+  "heroValue": "Connectez les capteurs de terrain.\nSur tout votre site.",
+  "heroDescription": "La H68 de Hitelecom relie les capteurs LoRa compatibles des installations extérieures à une plateforme de surveillance. Son architecture radio à 8 canaux en duplex intégral, son boîtier de protection IP68 et sa liaison de collecte 4G LTE permettent la surveillance distribuée des sites d’utilités, énergétiques et industriels. Utilisez l’intégration MQTT pour transmettre les données de terrain à Hitelecom Cloud ou à une plateforme client compatible.",
+  "proof": [
+    {
+      "value": "IP68",
+      "label": "Protection du boîtier",
+      "note": "Avec des joints et raccordements correctement installés"
+    },
+    {
+      "value": "4G LTE",
+      "label": "Liaison de collecte du site vers la plateforme",
+      "note": "Choisir le modem selon l’opérateur local"
+    },
+    {
+      "value": "MQTT",
+      "label": "Intégration des données à la plateforme",
+      "note": "Hitelecom Cloud ou une plateforme compatible"
+    }
+  ],
+  "featureTitle": "Connectivité de terrain.\nConçue selon le site.",
+  "featureIntro": "Connectez les points de mesure distribués avec un déploiement planifié selon la couverture radio, l’exposition, l’alimentation et la transmission des données vers la plateforme.",
+  "features": [
+    {
+      "title": "Agrégation des capteurs LoRa",
+      "text": "Collectez les données d’appareils LoRa compatibles au moyen de l’architecture radio publiée à 8 canaux en duplex intégral. Vérifiez la concordance du protocole des capteurs et des paramètres régionaux."
+    },
+    {
+      "title": "Liaison de collecte 4G LTE",
+      "text": "Transmettez les données collectées sur un réseau mobile disponible. Choisissez le modem, la carte SIM et l’opérateur selon la couverture à l’emplacement de la passerelle."
+    },
+    {
+      "title": "Intégration MQTT",
+      "text": "Reliez les données de terrain à Hitelecom Cloud ou à une plateforme client compatible, avec un point de terminaison, un format de message et une configuration d’authentification convenus."
+    },
+    {
+      "title": "Boîtier de protection IP68",
+      "text": "Planifiez ensemble la fixation extérieure, les entrées de câbles et l’étanchéité des connecteurs. L’indice de protection du boîtier s’applique dans les conditions d’installation spécifiées."
+    },
+    {
+      "title": "Options radio régionales",
+      "text": "Sélectionnez CN470, EU868, IN865, RU864, US915 ou AU915 pour le déploiement. La fréquence, les paramètres des canaux et la puissance d’émission doivent respecter les exigences locales."
+    },
+    {
+      "title": "Couverture adaptée au site",
+      "text": "Jusqu’à 10 km en terrain dégagé. Le relief, les structures, la hauteur des antennes et les interférences déterminent la couverture utilisable sur le terrain."
+    },
+    {
+      "title": "Déploiement local de la plateforme",
+      "text": "Un déploiement local peut être prévu pour les projets nécessitant un traitement des données maîtrisé sur site. Définissez le rôle du serveur, la connectivité et le périmètre d’intégration."
+    },
+    {
+      "title": "Notification de coupure d’alimentation",
+      "text": "Une alerte de coupure d’alimentation peut être transmise si l’alimentation de secours et la liaison de collecte restent disponibles. Intégrez le chemin de notification requis à la conception de l’alimentation."
+    }
+  ],
+  "planningIntro": "Un réseau de capteurs étendu commence par l’étude des trajets radio réels. Examinez le plan du terrain, l’emplacement de fixation de la passerelle et la liaison de collecte avant de déterminer le nombre de passerelles.",
+  "planning": [
+    {
+      "title": "Définir le parc de capteurs",
+      "text": "Répertoriez les appareils compatibles, les points de mesure et la configuration radio. Dimensionnez le trafic selon la taille des charges utiles, les intervalles de transmission et les besoins de liaison descendante, plutôt que selon le seul nombre d’appareils.",
+      "brief": "Modèles de capteurs · Nombre d’appareils · Charges utiles · Intervalles de transmission · Réponse attendue"
+    },
+    {
+      "title": "Planifier la couverture radio",
+      "text": "Examinez le relief, les bâtiments et la hauteur des antennes. Testez des trajets représentatifs vers les capteurs éloignés, masqués et installés en partie basse.",
+      "brief": "Plan du site · Position de l’antenne · Interférences · Étude de couverture · Emplacements des passerelles"
+    },
+    {
+      "title": "Confirmer la liaison vers la plateforme",
+      "text": "Vérifiez l’alimentation de la passerelle, l’opérateur mobile local et la plateforme réceptrice. Pour une configuration Ethernet, confirmez l’interface fournie et les exigences du réseau du site.",
+      "brief": "Alimentation · SIM / opérateur · Configuration Ethernet · Point de terminaison · Correspondance des données"
+    }
+  ],
+  "installationText": "Installez la passerelle et l’antenne pour favoriser la visibilité radio tout en préservant un accès pratique à l’installation et à la maintenance. Planifiez les fixations structurelles, la mise à la terre, la protection contre les surtensions, le cheminement des câbles et l’étanchéité des connecteurs. Vérifiez l’ensemble complet alimenté dans les limites environnementales spécifiées.",
+  "workflow": [
+    {
+      "title": "Collecter",
+      "text": "Les capteurs LoRa compatibles transmettent leurs relevés de mesure à la passerelle selon les paramètres radio et le profil de transmission convenus."
+    },
+    {
+      "title": "Transmettre",
+      "text": "La passerelle transmet les relevés collectés via la liaison de collecte choisie au point de terminaison MQTT configuré."
+    },
+    {
+      "title": "Consulter et intervenir",
+      "text": "Utilisez Hitelecom Cloud pour consulter en ligne les données de surveillance transmises et recevoir des alertes lorsque les mesures dépassent les seuils configurés. Une plateforme client peut proposer son propre processus convenu."
+    }
+  ],
+  "coverageTitle": "Jusqu’à 10 km.\nEn terrain dégagé.",
+  "coverageText": "La portée en terrain dégagé est une référence de déploiement, et non un rayon garanti. Le relief, les obstacles, la disposition des antennes, les interférences locales et les paramètres radio influent sur la liaison réelle. Validez le réseau prévu sur site.",
+  "rows": [
+    [
+      "Modèle",
+      "H68"
+    ],
+    [
+      "Déploiement",
+      "Passerelle pour réseaux de capteurs extérieurs"
+    ],
+    [
+      "Architecture radio",
+      "8 canaux en duplex intégral, selon les spécifications de la configuration fournie"
+    ],
+    [
+      "Options radio régionales",
+      "CN470 / EU868 / IN865 / RU864 / US915 / AU915 ; sélectionner la configuration régionale requise"
+    ],
+    [
+      "Portée en terrain dégagé",
+      "Jusqu’à 10 km ; la couverture réelle dépend du site et des conditions radio"
+    ],
+    [
+      "Puissance d’émission",
+      "20–27 dBm ; selon la configuration choisie et les limites réglementaires locales"
+    ],
+    [
+      "Sensibilité du récepteur",
+      "−140 dBm à 0.292 kbps"
+    ],
+    [
+      "Antenne",
+      "Antenne externe en fibre de verre ; confirmer la disposition des antennes fournies"
+    ],
+    [
+      "Liaison de collecte",
+      "4G LTE ; Ethernet selon la configuration fournie"
+    ],
+    [
+      "Bandes LTE publiées",
+      "LTE-TDD B34 / B38 / B39 / B40 / B41 ; LTE-FDD B1 / B3 / B5 / B8. Choisir le modem selon l’opérateur du déploiement."
+    ],
+    [
+      "Protocole de données",
+      "MQTT ; définir le point de terminaison, la charge utile et la configuration d’authentification"
+    ],
+    [
+      "Protection du boîtier",
+      "IP68 ; respecter les joints et conditions d’installation spécifiés"
+    ],
+    [
+      "Température de fonctionnement",
+      "−40°C à +85°C"
+    ],
+    [
+      "Température de stockage",
+      "−40°C à +85°C"
+    ],
+    [
+      "Options de fixation",
+      "Pattes de fixation / collier pour mât / support à fentes, selon la configuration fournie"
+    ]
+  ],
+  "specNote": "Les valeurs de référence suivent les spécifications actuelles du produit Hitelecom. Confirmez la révision matérielle, l’alimentation d’entrée, les dimensions, le jeu d’antennes, les homologations régionales et les interfaces prises en charge dans l’offre du projet.",
+  "faqs": [
+    {
+      "q": "Quel est le rôle de la passerelle H68 ?",
+      "a": "La H68 reçoit les données de capteurs LoRa compatibles et les transmet à une plateforme de surveillance via la liaison de collecte configurée. La passerelle assure la connexion entre les points de mesure et la plateforme ; les mesures sont réalisées par les capteurs connectés."
+    },
+    {
+      "q": "Quelles différences entre la H66 et la H68 ?",
+      "a": "La H66 est destinée aux installations intérieures, avec un boîtier IP65, une plage de fonctionnement de −20°C à +70°C et une portée de référence jusqu’à 5 km en terrain dégagé. La H68 est destinée aux sites extérieurs, avec un boîtier IP68, une plage de fonctionnement de −40°C à +85°C et une portée de référence jusqu’à 10 km en terrain dégagé. Choisissez selon les conditions d’installation et une étude radio propre au site."
+    },
+    {
+      "q": "Une seule H68 peut-elle couvrir tout le site ?",
+      "a": "Le nombre de passerelles dépend des trajets radio réels, des positions d’antennes, des interférences et du trafic des capteurs. Une portée en terrain dégagé ne permet pas de déterminer la couverture à l’intérieur des bâtiments ou derrière des reliefs et structures. Fournissez un plan du site et des emplacements de capteurs représentatifs pour permettre l’étude et les essais du réseau."
+    },
+    {
+      "q": "Combien de capteurs une passerelle peut-elle connecter ?",
+      "a": "La capacité dépend de la taille des charges utiles, de l’intervalle de transmission, des paramètres radio, de la concentration du trafic, des retransmissions et des besoins de liaison descendante. Aucun nombre d’appareils unique ne s’applique à tous les déploiements. Fournissez la liste des capteurs et le profil de transmission pour dimensionner le réseau."
+    },
+    {
+      "q": "La prise en charge de LoRa signifie-t-elle que la passerelle est compatible LoRaWAN ?",
+      "a": "LoRa désigne la technologie radio. LoRaWAN est un protocole réseau avec des exigences distinctes pour les appareils, la passerelle et le serveur. Pour tout besoin LoRaWAN, confirmez le protocole exact des capteurs, le micrologiciel de la passerelle et la compatibilité de la plateforme avant de choisir la configuration."
+    },
+    {
+      "q": "Quelles bandes de fréquences radio et cellulaires choisir ?",
+      "a": "Choisissez la configuration radio régionale selon le pays de déploiement et le modem LTE selon l’opérateur local. Les options radio régionales et bandes LTE publiées figurent dans le tableau des spécifications. Le nom d’une bande régionale ne constitue ni une homologation locale ni une garantie de couverture par tous les opérateurs."
+    },
+    {
+      "q": "Puis-je utiliser Hitelecom Cloud ou ma propre plateforme ?",
+      "a": "Oui. Définissez la configuration d’intégration à Hitelecom Cloud ou à une plateforme client compatible. MQTT figure dans les spécifications. Confirmez le point de terminaison, les sujets, la correspondance des charges utiles, les horodatages, l’authentification et toute sécurité de transport requise, puis vérifiez un message de test de bout en bout."
+    },
+    {
+      "q": "Puis-je consulter les mesures en ligne et recevoir des alarmes de seuil ?",
+      "a": "Avec l’intégration convenue à Hitelecom Cloud, les utilisateurs peuvent consulter en ligne les données de surveillance transmises et recevoir des alertes lorsque les mesures dépassent les seuils configurés. L’échantillonnage des capteurs, les intervalles de transmission, la disponibilité du réseau et les paramètres de la plateforme déterminent quand les informations sont disponibles. Définissez les destinataires et la procédure d’intervention lors de la mise en service."
+    },
+    {
+      "q": "Que se passe-t-il en cas de coupure d’alimentation ?",
+      "a": "Une notification de coupure nécessite une réserve d’énergie suffisante pour faire fonctionner la passerelle ainsi qu’une liaison de collecte opérationnelle. Elle ne signifie pas que la transmission se poursuit indéfiniment après la coupure. Confirmez l’alimentation de secours, le chemin de notification et la durée requise pour le projet."
+    },
+    {
+      "q": "Que signifie IP68 pour une installation extérieure ?",
+      "a": "L’indice IP68 s’applique dans les conditions d’essai du boîtier et d’installation spécifiées. Prévoyez des entrées de câbles étanches, la protection des connecteurs, la fixation, la mise à la terre et l’exposition environnementale de l’ensemble complet. Confirmez séparément toute exigence de profondeur ou de durée d’immersion ; cet indice ne constitue pas une protection contre les explosions."
+    }
+  ],
+  "groups": [
+    {
+      "id": "outdoor-industrial-utilities",
+      "title": "Utilités industrielles extérieures",
+      "jumpLabel": "Utilités industrielles",
+      "intro": "Connectez les points distribués de surveillance des utilités et équipements sur les sites industriels où les longues distances de câblage compliquent les réseaux de capteurs classiques.",
+      "imageKey": "industrial",
+      "tasks": [
+        {
+          "id": "industrial-utility-corridors",
+          "title": "Surveillance des galeries et corridors d’utilités",
+          "networkRole": "Agrège les rapports des capteurs LoRa compatibles de pression et de température.",
+          "description": "Transmettez les relevés des points de mesure sélectionnés des réseaux extérieurs d’eau, d’air comprimé et d’autres utilités adaptées pour centraliser le suivi d’exploitation.",
+          "placement": "Étudiez le dégagement des antennes autour des racks de tuyauteries, structures de procédé et grands équipements métalliques.",
+          "projectBrief": "Plan des utilités, emplacements des capteurs, plages de mesure et intervalles d’actualisation requis."
+        },
+        {
+          "id": "industrial-storage-tanks",
+          "title": "Surveillance de niveau des réservoirs extérieurs",
+          "networkRole": "Connecte les appareils de surveillance de niveau LoRa compatibles des zones de réservoirs.",
+          "description": "Regroupez les relevés de niveau de réservoirs d’eau de service et de stockage adaptés sur une plateforme commune, sans connexion cellulaire distincte pour chaque capteur.",
+          "placement": "Évaluez l’écran des parois de réservoirs et la hauteur de la passerelle tout en respectant les dégagements d’installation du site.",
+          "projectBrief": "Positions des réservoirs, contenus, adéquation des capteurs, restrictions du site et programmes de transmission."
+        },
+        {
+          "id": "industrial-equipment-conditions",
+          "title": "Surveillance distribuée de l’état des équipements",
+          "networkRole": "Transmet les indicateurs d’état rapportés par les appareils de surveillance extérieure compatibles.",
+          "description": "Collectez les températures, inclinaisons ou indicateurs vibratoires calculés par les capteurs sur les actifs extérieurs sélectionnés pour analyser les tendances et planifier la maintenance.",
+          "placement": "Choisissez un emplacement extérieur étudié, avec un dégagement radio, une alimentation et une liaison de collecte fiables.",
+          "projectBrief": "Positions des actifs, indicateurs transmis, tailles des charges utiles et contraintes radio du site."
+        }
+      ],
+      "imageAlt": "Armoires d’utilités extérieures dans une installation électrique",
+      "imageCaption": "Installation extérieure d’utilités · Environnement représentatif"
+    },
+    {
+      "id": "water-pumping",
+      "title": "Réseaux d’eau et sites de pompage",
+      "jumpLabel": "Eau et pompage",
+      "intro": "Regroupez les rapports compatibles de pression, de niveau et d’état des installations sur les infrastructures d’eau, avec une couverture étudiée pour les chambres, réservoirs et structures éloignées.",
+      "imageKey": "water",
+      "tasks": [
+        {
+          "id": "distribution-pressure",
+          "title": "Surveillance de pression des réseaux de distribution",
+          "networkRole": "Agrège les capteurs de pression LoRa compatibles aux points de mesure distribués.",
+          "description": "Transmettez les relevés de pression des emplacements sélectionnés du réseau pour aider les exploitants à examiner les variations et prioriser les investigations de terrain.",
+          "placement": "Étudiez chaque chambre enterrée séparément ; les couvercles, la profondeur et l’eau peuvent fortement influencer la propagation radio.",
+          "projectBrief": "Plan du réseau, détails des chambres, positions des capteurs, plages de pression et intervalles de transmission."
+        },
+        {
+          "id": "water-tank-reservoir-levels",
+          "title": "Surveillance de niveau des cuves et réservoirs",
+          "networkRole": "Connecte les appareils sans fil compatibles de surveillance de niveau sur le site.",
+          "description": "Collectez les mesures des cuves de service, réservoirs et points adaptés de mesure en eau libre pour une consultation centralisée et des alertes configurées sur la plateforme.",
+          "placement": "Évaluez la hauteur des antennes, le relief et les obstacles entre la passerelle et chaque emplacement de mesure.",
+          "projectBrief": "Altimétrie du site, plages de niveau d’eau, types de capteurs et fréquence d’actualisation requise."
+        },
+        {
+          "id": "outdoor-pump-site-conditions",
+          "title": "Conditions environnementales des sites de pompage",
+          "networkRole": "Transmet les messages compatibles de surveillance des fuites, de température et d’humidité.",
+          "description": "Regroupez les relevés environnementaux et rapports d’infiltration d’eau des locaux de pompage avec les données de pression et de niveau du site.",
+          "placement": "Vérifiez les trajets radio entre la passerelle extérieure et les points de surveillance à l’intérieur des locaux de pompage.",
+          "projectBrief": "Construction des locaux de pompage, zones de drainage, positions des capteurs et disponibilité de la liaison de collecte."
+        },
+        {
+          "id": "water-quality-observation",
+          "title": "Points d’observation de la qualité de l’eau",
+          "networkRole": "Agrège les rapports des appareils LoRa compatibles de surveillance de la qualité de l’eau.",
+          "description": "Connectez les relevés pris en charge de température d’eau, de conductivité ou d’autres paramètres convenus aux points d’observation du traitement, de la distribution ou de l’aquaculture.",
+          "placement": "Examinez le trajet radio depuis la position de l’émetteur ; les sondes et dispositifs d’échantillonnage doivent convenir à l’eau surveillée.",
+          "projectBrief": "Paramètres de qualité de l’eau, disposition des sondes, emplacements des émetteurs, alimentation disponible et programme de transmission."
+        }
+      ],
+      "imageAlt": "Équipements de pompage extérieurs et canalisations bleues",
+      "imageCaption": "Station de pompage extérieure · Environnement représentatif"
+    },
+    {
+      "id": "solar-pv",
+      "title": "Sites solaires photovoltaïques",
+      "jumpLabel": "Solaire photovoltaïque",
+      "intro": "Connectez les capteurs compatibles d’état et d’environnement des installations photovoltaïques, avec un nombre de passerelles fondé sur le plan réel du site et l’étude radio.",
+      "imageKey": "solar",
+      "tasks": [
+        {
+          "id": "pv-structural-inclination",
+          "title": "Inclinaison des structures de support photovoltaïques",
+          "networkRole": "Agrège les rapports des capteurs d’inclinaison LoRa compatibles sur les structures sélectionnées.",
+          "description": "Transmettez les mesures d’inclinaison des supports ou fondations désignés pour l’analyse des tendances et des inspections ciblées.",
+          "placement": "Évaluez les trajets radio entre les rangées de panneaux, les variations du terrain et les structures de fixation.",
+          "projectBrief": "Plan des champs de panneaux, positions de mesure, précision des capteurs et intervalles de transmission."
+        },
+        {
+          "id": "pv-equipment-environment",
+          "title": "Conditions des zones d’équipements photovoltaïques",
+          "networkRole": "Connecte les capteurs compatibles de surveillance d’environnement et de température.",
+          "description": "Collectez les relevés autour des postes d’onduleurs, abris d’équipements et points de mesure de terrain sélectionnés pour contextualiser la maintenance du site.",
+          "placement": "Évaluez l’écran radio des équipements et dégagez les antennes des infrastructures électriques denses.",
+          "projectBrief": "Plan des zones d’équipements, paramètres surveillés, positions des capteurs et limites environnementales."
+        },
+        {
+          "id": "pv-drainage-monitoring",
+          "title": "Drainage et infiltrations d’eau des sites photovoltaïques",
+          "networkRole": "Transmet les rapports des appareils compatibles de niveau d’eau et de détection de fuite.",
+          "description": "Connectez les canaux de drainage, zones basses et points de détection de fuite des abris d’équipements à la plateforme du site.",
+          "placement": "Étudiez les capteurs installés à faible hauteur et maintenez le dégagement des antennes au-dessus des obstacles environnants.",
+          "projectBrief": "Plan de drainage, points exposés aux inondations, zones de détection et procédure de notification requise."
+        },
+        {
+          "id": "pv-lightning-protection-status",
+          "title": "État de la protection foudre des sites photovoltaïques",
+          "networkRole": "Transmet les rapports d’état des terminaux compatibles de surveillance de parafoudres SPD connectés en LoRa.",
+          "description": "Intégrez les champs pris en charge d’état de protection contre les surtensions et de maintenance à la plateforme pour planifier les inspections et examiner les besoins de remplacement.",
+          "placement": "Vérifiez le protocole radio du terminal et testez la réception depuis sa position d’installation ; les armoires électriques métalliques peuvent nécessiter une disposition d’antenne adaptée.",
+          "projectBrief": "Modèle du terminal de surveillance SPD, canaux et champs d’état transmis, plan des armoires, profil de transmission et correspondance des données."
+        }
+      ],
+      "imageAlt": "Champs de panneaux solaires photovoltaïques et équipements électriques auxiliaires",
+      "imageCaption": "Site solaire photovoltaïque · Environnement représentatif"
+    },
+    {
+      "id": "wind-power",
+      "title": "Installations éoliennes",
+      "jumpLabel": "Éolien",
+      "intro": "Offrez une liaison de données aux capteurs compatibles de surveillance autour des fondations d’éoliennes et installations auxiliaires d’un parc éolien.",
+      "imageKey": "wind",
+      "tasks": [
+        {
+          "id": "wind-foundation-inclination",
+          "title": "Évolution de l’inclinaison des fondations de mâts",
+          "networkRole": "Agrège les rapports des appareils LoRa compatibles de surveillance d’inclinaison.",
+          "description": "Transmettez les relevés des points de mesure désignés des fondations ou structures pour l’analyse technique et les inspections planifiées.",
+          "placement": "Évaluez les structures métalliques des éoliennes, le relief et le trajet radio depuis chaque capteur installé.",
+          "projectBrief": "Emplacements des éoliennes, positions de mesure, exigences de précision et intervalles de transmission."
+        },
+        {
+          "id": "wind-equipment-shelters",
+          "title": "Surveillance de l’environnement des abris d’équipements",
+          "networkRole": "Connecte les capteurs compatibles de température, d’humidité et de détection de fuite.",
+          "description": "Collectez les rapports d’état des espaces techniques en pied d’éolienne, abris de transformateurs et bâtiments d’équipements du site.",
+          "placement": "Vérifiez la couverture à travers les enveloppes métalliques fermées et utilisez des dispositions d’antennes externes approuvées si nécessaire.",
+          "projectBrief": "Construction des enveloppes, positions des capteurs, dispositions d’antennes autorisées et paramètres surveillés."
+        },
+        {
+          "id": "wind-site-environment",
+          "title": "Surveillance environnementale des parcs éoliens",
+          "networkRole": "Transmet les rapports des appareils compatibles de mesure météorologique et environnementale.",
+          "description": "Regroupez les relevés environnementaux pris en charge des emplacements sélectionnés dans une plateforme commune avec les données d’état des installations.",
+          "placement": "Planifiez la couverture radio selon les crêtes, les zones masquées par le relief et les emplacements de fixation alimentés disponibles.",
+          "projectBrief": "Carte du relief, charges utiles des capteurs environnementaux, distances du site et options de liaison de collecte."
+        },
+        {
+          "id": "wind-auxiliary-machine-conditions",
+          "title": "État des équipements auxiliaires des parcs éoliens",
+          "networkRole": "Collecte les indicateurs d’état transmis par les appareils LoRa compatibles de surveillance.",
+          "description": "Transmettez les indicateurs vibratoires calculés par les capteurs ou les températures des pompes, équipements de refroidissement et autres actifs auxiliaires accessibles sélectionnés pour l’analyse de maintenance.",
+          "placement": "Étudiez la réception près des machines, carters métalliques et structures en pied d’éolienne dans des conditions d’exploitation représentatives.",
+          "projectBrief": "Liste des équipements, indicateurs calculés par les capteurs, tailles des charges utiles, intervalles de transmission et exigences d’analyse de maintenance."
+        }
+      ],
+      "imageAlt": "Éoliennes dans un paysage vallonné dégagé",
+      "imageCaption": "Site éolien · Environnement représentatif"
+    },
+    {
+      "id": "agriculture-greenhouses",
+      "title": "Agriculture et serres",
+      "jumpLabel": "Agriculture",
+      "intro": "Connectez les appareils compatibles de surveillance du sol, de l’environnement et de l’eau sur les sites agricoles, y compris les parcelles extérieures et zones techniques des serres.",
+      "imageKey": "agriculture",
+      "tasks": [
+        {
+          "id": "field-soil-conditions",
+          "title": "Surveillance de l’état des sols agricoles",
+          "networkRole": "Agrège les rapports des appareils LoRa compatibles de surveillance du sol.",
+          "description": "Transmettez les relevés pris en charge d’humidité et de température du sol depuis des positions représentatives des parcelles pour consultation sur la plateforme connectée.",
+          "placement": "Tenez compte de la croissance saisonnière des cultures, du relief et des antennes de capteurs basses dans la planification de la couverture.",
+          "projectBrief": "Limites des parcelles, types de cultures, profondeurs des capteurs, paramètres mesurés et programmes de transmission."
+        },
+        {
+          "id": "greenhouse-microclimate",
+          "title": "Surveillance du microclimat des serres",
+          "networkRole": "Connecte les capteurs environnementaux compatibles répartis dans les zones de serre.",
+          "description": "Collectez la température, l’humidité et les autres relevés environnementaux pris en charge pour comparer les conditions de culture entre zones surveillées.",
+          "placement": "Testez les trajets radio à travers les ossatures de serre, écrans et structures voisines.",
+          "projectBrief": "Dimensions de la serre, plan des zones, matériaux de construction et intervalles d’actualisation des capteurs."
+        },
+        {
+          "id": "agricultural-water-monitoring",
+          "title": "Surveillance de l’irrigation et du stockage d’eau",
+          "networkRole": "Transmet les messages des capteurs compatibles de niveau et de pression.",
+          "description": "Connectez les réservoirs, conduites d’alimentation d’irrigation et points de mesure adaptés des sites de pompage pour centraliser la surveillance de la disponibilité et de la pression de l’eau.",
+          "placement": "Étudiez le trajet radio vers les locaux de pompage, bords de parcelles et installations de réservoirs.",
+          "projectBrief": "Plan du réseau d’eau, plages de mesure, positions des capteurs et alimentation disponible pour la passerelle."
+        },
+        {
+          "id": "livestock-site-environment",
+          "title": "Bâtiments d’élevage et enclos extérieurs",
+          "networkRole": "Agrège les relevés environnementaux pris en charge par les capteurs LoRa compatibles.",
+          "description": "Connectez les points de surveillance de température, d’humidité et de qualité de l’air sélectionnés dans les bâtiments d’élevage et cours voisines pour comparer les conditions des zones d’animaux.",
+          "placement": "Étudiez les trajets radio à travers les bâtiments et enclos abrités en tenant compte des toitures métalliques, de l’exposition au lavage et des variations d’accès.",
+          "projectBrief": "Zones d’animaux, paramètres surveillés, positions représentatives des capteurs, conditions de nettoyage et intervalles de transmission."
+        }
+      ],
+      "imageAlt": "Équipements d’utilités et tuyauteries à côté de cultures sous serre",
+      "imageCaption": "Zone d’utilités de serre · Environnement représentatif"
+    },
+    {
+      "id": "municipal-roadside",
+      "title": "Infrastructures municipales et routières",
+      "jumpLabel": "Municipal et routier",
+      "intro": "Connectez les dispositifs compatibles de surveillance des infrastructures publiques grâce à une couverture radio extérieure étudiée et une configuration de liaison de collecte cellulaire adaptée.",
+      "imageKey": "municipal",
+      "tasks": [
+        {
+          "id": "roadside-pole-inclination",
+          "title": "Surveillance de l’inclinaison des poteaux routiers",
+          "networkRole": "Agrège les rapports des capteurs d’inclinaison LoRa compatibles sur les poteaux sélectionnés.",
+          "description": "Transmettez les mesures d’inclinaison des mâts d’éclairage, supports de signalisation et autres structures routières approuvées pour planifier les inspections.",
+          "placement": "Évaluez les axes de circulation, bâtiments proches et hauteurs de fixation autorisées pendant l’étude du site.",
+          "projectBrief": "Positions des poteaux, types de structures, précision des capteurs et fréquence de transmission requise."
+        },
+        {
+          "id": "municipal-drainage-levels",
+          "title": "Niveaux d’eau des réseaux de drainage et chambres techniques",
+          "networkRole": "Connecte les appareils compatibles de surveillance du niveau d’eau et des infiltrations.",
+          "description": "Regroupez les rapports des canaux de drainage, chambres techniques et points d’infrastructure bas sélectionnés sur une plateforme commune.",
+          "placement": "Testez chaque trajet radio souterrain avec le couvercle de la chambre et la disposition d’antenne en place.",
+          "projectBrief": "Dimensions des chambres, matériaux des couvercles, positions de mesure et exigences de notification."
+        },
+        {
+          "id": "roadside-environment",
+          "title": "Surveillance environnementale en bord de route",
+          "networkRole": "Transmet les données des appareils compatibles de qualité de l’air, de bruit ou de météorologie.",
+          "description": "Collectez les relevés environnementaux pris en charge aux emplacements routiers sélectionnés pour l’analyse des tendances locales et la gestion des installations publiques.",
+          "placement": "Coordonnez la planification radio avec l’exposition approuvée des capteurs et les exigences d’installation municipales.",
+          "projectBrief": "Positions de surveillance, paramètres mesurés, charges utiles des capteurs et restrictions locales d’installation."
+        },
+        {
+          "id": "municipal-waste-facilities",
+          "title": "Installations municipales de stockage des déchets",
+          "networkRole": "Collecte les rapports de niveau et d’environnement pris en charge par les appareils LoRa compatibles.",
+          "description": "Transmettez les relevés des conteneurs de stockage de déchets, aires de collecte ou bâtiments de service sélectionnés pour examiner les conditions et planifier la collecte.",
+          "placement": "Testez la réception avec les couvercles des conteneurs et portes techniques en position normale, en tenant compte des écrans métalliques et de l’accès pour le nettoyage.",
+          "projectBrief": "Plan de l’installation, positions de fixation des capteurs, paramètres transmis, programmes de collecte et champs de données de la plateforme."
+        }
+      ],
+      "imageAlt": "Armoire d’équipements routiers à un carrefour municipal",
+      "imageCaption": "Infrastructure routière · Environnement représentatif"
+    },
+    {
+      "id": "rail-transport",
+      "title": "Installations ferroviaires et de transport",
+      "jumpLabel": "Ferroviaire et transport",
+      "intro": "Connectez des appareils de surveillance des installations et infrastructures sans fonction critique de sécurité autour des dépôts ferroviaires, parcs de transport et zones techniques extérieures auxiliaires.",
+      "imageKey": "rail",
+      "tasks": [
+        {
+          "id": "transport-drainage",
+          "title": "Surveillance du drainage des sites de transport",
+          "networkRole": "Agrège les rapports des capteurs compatibles de niveau d’eau et d’infiltration.",
+          "description": "Transmettez les relevés des canaux de drainage, puisards de passages inférieurs et zones techniques basses sélectionnées pour surveiller les installations.",
+          "placement": "Étudiez les tranchées, murs de soutènement et points enterrés pour identifier les zones d’ombre radio.",
+          "projectBrief": "Emplacements du drainage, niveaux du terrain, types de capteurs et intervalles de transmission requis."
+        },
+        {
+          "id": "transport-service-cabinets",
+          "title": "Conditions des armoires techniques extérieures",
+          "networkRole": "Connecte les appareils compatibles d’environnement et de détection de fuite dans les enveloppes techniques.",
+          "description": "Collectez les rapports de température, d’humidité et d’infiltration d’eau des abris d’équipements et armoires de maintenance désignés.",
+          "placement": "Testez les performances radio porte fermée et respectez les exigences d’installation et de séparation de l’exploitant.",
+          "projectBrief": "Matériaux des armoires, points de fixation autorisés, positions des capteurs et exigences d’accès au site."
+        },
+        {
+          "id": "transport-yard-structures",
+          "title": "Surveillance des structures des parcs et installations",
+          "networkRole": "Transmet les rapports des appareils LoRa compatibles de surveillance d’inclinaison.",
+          "description": "Connectez les poteaux, structures de support et points de mesure sélectionnés pour l’analyse des tendances et les inspections planifiées.",
+          "placement": "Étudiez les environs des véhicules stationnés, structures aériennes et autres obstacles changeants du parc.",
+          "projectBrief": "Positions des structures, objectifs de mesure, précision des capteurs et programmes de surveillance."
+        },
+        {
+          "id": "transport-site-weather",
+          "title": "Météorologie et exposition des sites de transport",
+          "networkRole": "Transmet les mesures des appareils LoRa compatibles de surveillance météorologique et environnementale.",
+          "description": "Collectez les observations prises en charge de vent, de pluie, de température ou de bruit autour des dépôts, voies d’accès et zones techniques exposées pour examiner les conditions du site.",
+          "placement": "Placez les instruments selon l’observation visée tout en maintenant la passerelle dans un emplacement avec un dégagement radio, une alimentation et un accès de maintenance adaptés.",
+          "projectBrief": "Objectifs d’observation, paramètres surveillés, positions des instruments, autorisations du site et intervalles d’actualisation."
+        }
+      ],
+      "imageAlt": "Armoire technique en bord de voie ferrée et lignes électriques aériennes",
+      "imageCaption": "Infrastructure en bord de voie ferrée · Environnement représentatif"
+    },
+    {
+      "id": "remote-telecom",
+      "title": "Installations de télécommunications isolées",
+      "jumpLabel": "Télécommunications",
+      "intro": "Regroupez les messages compatibles d’état des installations sur les sites de télécommunications distribués disposant d’une alimentation de passerelle et d’une liaison de collecte cellulaire adaptées.",
+      "imageKey": "telecom",
+      "tasks": [
+        {
+          "id": "telecom-shelter-environment",
+          "title": "Conditions environnementales des abris télécoms",
+          "networkRole": "Agrège les rapports des capteurs compatibles de température et d’humidité.",
+          "description": "Transmettez les relevés des abris d’équipements, locaux techniques et emplacements d’armoires approuvés pour consulter à distance les conditions du site.",
+          "placement": "Évaluez l’écran radio des abris à bardage métallique et maintenez les séparations avec les équipements radiofréquences exigées par l’opérateur.",
+          "projectBrief": "Plan des abris, restrictions des équipements, positions des capteurs et intervalles de transmission requis."
+        },
+        {
+          "id": "telecom-water-ingress",
+          "title": "Surveillance des infiltrations d’eau du site",
+          "networkRole": "Connecte les appareils LoRa compatibles de détection de fuite et de surveillance de niveau.",
+          "description": "Intégrez les rapports des sols d’abris, zones d’entrée de câbles et points de drainage sélectionnés au processus de surveillance configuré.",
+          "placement": "Vérifiez la couverture radio vers les appareils en partie basse et les positions masquées par les armoires ou infrastructures de câbles.",
+          "projectBrief": "Zones exposées aux fuites, disposition du drainage, modèles de capteurs et exigences de notification de la plateforme."
+        },
+        {
+          "id": "telecom-support-inclination",
+          "title": "Inclinaison des structures de support sélectionnées",
+          "networkRole": "Transmet les rapports des appareils LoRa compatibles de surveillance d’inclinaison.",
+          "description": "Connectez les points de mesure désignés des supports ou fondations pour l’analyse technique des tendances et la planification des inspections de maintenance.",
+          "placement": "Coordonnez les fixations et positions d’antennes avec les règles d’installation structurelles et radiofréquences du site.",
+          "projectBrief": "Objectifs de mesure, détails des structures, précision des capteurs et contraintes d’installation propres au site."
+        },
+        {
+          "id": "telecom-auxiliary-equipment",
+          "title": "État des équipements auxiliaires des sites télécoms",
+          "networkRole": "Transmet les indicateurs d’état rapportés par les appareils LoRa compatibles de surveillance.",
+          "description": "Collectez les températures ou indicateurs vibratoires calculés par les capteurs sur les équipements accessibles de refroidissement, de ventilation et autres équipements auxiliaires sélectionnés pour l’analyse de maintenance.",
+          "placement": "Vérifiez la réception à travers les parois des abris et les écrans des équipements ; placez les capteurs dans leurs propres limites environnementales et d’installation.",
+          "projectBrief": "Liste des équipements, modèles de capteurs, indicateurs transmis, intervalles d’actualisation et exigences d’analyse de maintenance."
+        },
+        {
+          "id": "telecom-site-weather",
+          "title": "Météorologie et exposition des sites isolés",
+          "networkRole": "Connecte les capteurs météorologiques et environnementaux compatibles autour des sites distribués.",
+          "description": "Intégrez les observations prises en charge de vent, de pluie, de température et d’humidité à la plateforme pour contextualiser les relevés des abris et structures de support.",
+          "placement": "Étudiez le relief et la séparation des antennes avec les équipements existants ; vérifiez l’alimentation de la passerelle et la liaison de collecte mobile à l’emplacement réel de fixation.",
+          "projectBrief": "Emplacements des sites, paramètres météorologiques, trajets radio, alimentation disponible, couverture opérateur et programme de transmission."
+        }
+      ],
+      "imageAlt": "Mât de télécommunications isolé avec installations techniques extérieures",
+      "imageCaption": "Site de télécommunications · Environnement représentatif"
+    },
+    {
+      "id": "environment-weather",
+      "title": "Surveillance environnementale et météorologique",
+      "jumpLabel": "Environnement et météo",
+      "intro": "Regroupez les appareils compatibles de surveillance de qualité de l’air, de météorologie et d’acoustique dans un réseau de données de terrain, en distinguant le point de mesure de l’emplacement de la passerelle.",
+      "imageKey": "environment-weather",
+      "tasks": [
+        {
+          "id": "industrial-outdoor-air-quality",
+          "title": "Surveillance environnementale des zones de procédé extérieures",
+          "networkRole": "Transmet les relevés environnementaux pris en charge par les appareils LoRa compatibles de surveillance.",
+          "description": "Intégrez les mesures de qualité de l’air, de bruit ou de météorologie locale des zones techniques extérieures sélectionnées à la plateforme pour documenter l’évolution des conditions d’exploitation.",
+          "placement": "Choisissez les points de mesure représentatifs indépendamment de la passerelle, puis vérifiez la couverture radio autour des bâtiments et structures de procédé.",
+          "projectBrief": "Paramètres et modèles de capteurs, positions de mesure, conditions attendues, fréquence de transmission et exigences d’examen des données."
+        },
+        {
+          "id": "pv-site-microclimate",
+          "title": "Météorologie et microclimat des sites photovoltaïques",
+          "networkRole": "Transmet les mesures des appareils LoRa compatibles de surveillance météorologique.",
+          "description": "Collectez les relevés pris en charge de température ambiante, d’humidité, de vent ou de pluie depuis des zones représentatives d’un site solaire pour contextualiser l’exploitation.",
+          "placement": "Placez les instruments météorologiques pour obtenir une exposition représentative et étudiez leurs trajets radio séparément des emplacements des équipements électriques.",
+          "projectBrief": "Étendue du site, paramètres météorologiques, positions des instruments, intervalles de transmission et système récepteur de données."
+        },
+        {
+          "id": "site-boundary-noise",
+          "title": "Observations du bruit en limite de site",
+          "networkRole": "Transmet les indicateurs acoustiques rapportés par les appareils LoRa compatibles de surveillance du bruit.",
+          "description": "Collectez les indicateurs de niveau sonore pris en charge aux limites désignées du site ou emplacements extérieurs de l’installation pour les examiner dans le temps avec les relevés météorologiques et d’exploitation.",
+          "placement": "Placez les instruments acoustiques selon l’objectif d’observation et testez les trajets radio depuis leurs émetteurs. Définissez la base de transmission sans présumer la prise en charge d’un flux audio.",
+          "projectBrief": "Points d’observation, indicateurs acoustiques, périodes de moyenne, format des charges utiles, intervalles de transmission et méthode de mesure éventuellement requise."
+        }
+      ],
+      "imageAlt": "Mât extérieur équipé d’instruments météorologiques et d’un collecteur de pluie à côté d’un champ dégagé",
+      "imageCaption": "Observation météorologique extérieure · Environnement illustratif"
+    },
+    {
+      "id": "civil-earthworks",
+      "title": "Ouvrages de génie civil et terrassements",
+      "jumpLabel": "Ouvrages de génie civil",
+      "intro": "Connectez les points de surveillance désignés sur les supports, ouvrages de soutènement, terrassements et ponts d’installations pour l’analyse technique des tendances et la planification des inspections de terrain.",
+      "imageKey": "civil-earthworks",
+      "tasks": [
+        {
+          "id": "industrial-pipeline-supports",
+          "title": "Supports de tuyauteries et structures de service",
+          "networkRole": "Collecte les rapports des appareils LoRa compatibles de surveillance d’inclinaison aux points structurels sélectionnés.",
+          "description": "Connectez les supports de tuyauteries, portiques de service et ouvrages de soutènement désignés pour examiner les tendances d’inclinaison avec les données d’utilités de l’installation.",
+          "placement": "Évaluez les trajets radio sous les racks de tuyauteries et autour des structures métalliques ; maintenez les emplacements de passerelle et d’antenne accessibles pour l’inspection.",
+          "projectBrief": "Plan des structures, positions de mesure, précision des capteurs, intervalles de transmission et exigences d’analyse technique."
+        },
+        {
+          "id": "flood-embankment-observation",
+          "title": "Observation des canaux de crue et digues",
+          "networkRole": "Connecte les capteurs compatibles de niveau et d’inclinaison aux points de surveillance désignés.",
+          "description": "Regroupez les niveaux des canaux et les relevés d’inclinaison sélectionnés des digues ou ouvrages de soutènement pour les analyses de terrain et la planification des inspections.",
+          "placement": "Évaluez les positions basses des capteurs, les variations des niveaux d’eau et les obstacles du relief lors du choix des emplacements de passerelle et d’antenne.",
+          "projectBrief": "Plan des canaux, structures surveillées, exposition saisonnière, intervalles d’actualisation et procédure de notification de la plateforme."
+        },
+        {
+          "id": "wind-access-road-slopes",
+          "title": "Talus des voies d’accès et ouvrages de soutènement",
+          "networkRole": "Connecte les capteurs compatibles de surveillance d’inclinaison sur les ouvrages de génie civil sélectionnés.",
+          "description": "Intégrez les relevés des soutènements de talus, murs de soutènement et structures des voies d’accès désignés au processus d’inspection technique du site.",
+          "placement": "Examinez l’écran du relief et le trajet radio depuis les capteurs bas ou en retrait ; confirmez une alimentation et un accès de maintenance pratiques pour la passerelle.",
+          "projectBrief": "Plans de génie civil, points surveillés, exigences de précision, tendances de mouvement attendues et programme de transmission."
+        },
+        {
+          "id": "transport-bridges-retaining-walls",
+          "title": "Ponts d’installations et murs de soutènement",
+          "networkRole": "Agrège les rapports compatibles de surveillance d’inclinaison aux points structurels sélectionnés.",
+          "description": "Connectez les abords de ponts, murs de soutènement et structures d’installation désignés pour l’analyse technique des tendances et les inspections planifiées.",
+          "placement": "Étudiez les trajets radio autour des tabliers de ponts, structures métalliques et terrassements ; convenez des accès d’installation avec l’exploitant de l’infrastructure.",
+          "projectBrief": "Points de mesure approuvés, plan des structures, précision des capteurs, intervalles de transmission et données techniques requises."
+        }
+      ],
+      "imageAlt": "Remblai de terre et mur de soutènement en béton le long d’une voie d’accès sous un pont",
+      "imageCaption": "Mur de soutènement et terrassements · Environnement illustratif"
+    },
+    {
+      "id": "parks-outdoor-visitors",
+      "title": "Parcs et installations extérieures d’accueil du public",
+      "jumpLabel": "Parcs et sites d’accueil",
+      "intro": "Connectez les dispositifs compatibles de surveillance des jardins publics, campus paysagers et infrastructures d’accueil pour l’examen environnemental, l’inspection des actifs et la maintenance régulière des installations.",
+      "imageKey": "parks-gardens",
+      "tasks": [
+        {
+          "id": "parks-public-open-spaces",
+          "title": "Parcs et espaces publics ouverts",
+          "networkRole": "Transmet les rapports des appareils compatibles de surveillance de l’environnement, du sol et de l’eau.",
+          "description": "Connectez les points sélectionnés de surveillance de qualité de l’air, de microclimat, de sol irrigué et d’eau ornementale des parcs, campus paysagers et jardins publics.",
+          "placement": "Examinez la végétation, le feuillage saisonnier, les bâtiments et les contraintes d’accès public lors du choix des emplacements d’antennes et de passerelles.",
+          "projectBrief": "Plan du site, zones surveillées, paramètres des capteurs, conditions de végétation, alimentation et exigences de transmission."
+        },
+        {
+          "id": "park-trees-support-inclination",
+          "title": "Inclinaison des arbres et supports paysagers",
+          "networkRole": "Collecte les rapports des capteurs d’inclinaison LoRa compatibles aux points d’observation désignés.",
+          "description": "Transmettez les tendances d’inclinaison des arbres, supports de panneaux ou structures d’ombrage sélectionnés pour les inspections arboricoles ou techniques. Définissez la fixation et l’interprétation des mouvements pour chaque actif observé.",
+          "placement": "Étudiez l’écran de la végétation et le feuillage saisonnier. Dégagez si possible la passerelle des couverts denses et testez le trajet radio à la hauteur réelle du capteur.",
+          "projectBrief": "Actifs sélectionnés, fixation des capteurs, précision requise, mouvements saisonniers, procédure d’inspection et intervalles de transmission."
+        },
+        {
+          "id": "visitor-service-utilities",
+          "title": "Conditions des réseaux d’eau et utilités d’accueil du public",
+          "networkRole": "Connecte les appareils compatibles de surveillance de fuite, de niveau, de pression et d’environnement.",
+          "description": "Intégrez les relevés des locaux techniques des pavillons d’accueil, réseaux d’eau des sanitaires et points d’utilités extérieurs sélectionnés à la plateforme des installations pour l’analyse de maintenance.",
+          "placement": "Vérifiez la réception depuis les enveloppes techniques et points d’eau en retrait. Adaptez l’alimentation de la passerelle, la position des antennes et l’accès régulier de maintenance à un site public.",
+          "projectBrief": "Plan des installations d’accueil, points d’utilités surveillés, modèles de capteurs, horaires d’ouverture, intervalles de transmission et destinataires de maintenance."
+        }
+      ],
+      "imageAlt": "Parc botanique paysager avec arbres matures, allées, structure d’ombrage et bassin",
+      "imageCaption": "Parc et environnement d’accueil du public · Environnement illustratif"
+    },
+    {
+      "id": "aquaculture-waterside",
+      "title": "Aquaculture et activités en bord d’eau",
+      "jumpLabel": "Aquaculture",
+      "intro": "Connectez les points de surveillance de qualité de l’eau, de niveau des bassins et d’équipements de service des installations aquacoles et de bord d’eau, avec une passerelle implantée selon les trajets radio des berges et l’alimentation disponible.",
+      "imageKey": "aquaculture",
+      "tasks": [
+        {
+          "id": "aquaculture-ponds",
+          "title": "Bassins aquacoles et zones de service",
+          "networkRole": "Connecte les appareils LoRa compatibles de surveillance de l’eau et de l’environnement.",
+          "description": "Regroupez les mesures prises en charge de température de l’eau des bassins, d’oxygène dissous ou d’autres capteurs convenus avec les relevés de niveau d’eau et des zones de service pour le suivi régulier de l’exploitation.",
+          "placement": "Vérifiez les trajets radio au-dessus de l’eau et depuis les émetteurs des berges ; prévoyez une installation des sondes, une alimentation de passerelle et un accès de maintenance adaptés.",
+          "projectBrief": "Plan des bassins, modèles et paramètres des capteurs, profondeurs des sondes, dispositions d’alimentation et intervalles d’actualisation requis."
+        },
+        {
+          "id": "aquaculture-pond-level-supply",
+          "title": "Niveaux des bassins et conduites d’alimentation en eau",
+          "networkRole": "Transmet les mesures des appareils LoRa compatibles de surveillance de niveau et de pression.",
+          "description": "Collectez les relevés de niveau des bassins, des réservoirs de charge et de pression des points d’alimentation sélectionnés pour aider les exploitants à examiner la disponibilité de l’eau et les variations dans l’installation.",
+          "placement": "Évaluez les positions basses des émetteurs en berge et l’écran radio des remblais. Spécifiez les sondes ou raccordements au procédé séparément de l’installation de la passerelle.",
+          "projectBrief": "Plan des bassins et conduites d’alimentation, niveaux et pressions surveillés, positions des capteurs, intervalles de transmission et affichages requis sur la plateforme."
+        },
+        {
+          "id": "aquaculture-aeration-equipment",
+          "title": "État des équipements d’aération et de bord d’eau",
+          "networkRole": "Agrège les indicateurs d’état transmis par les appareils LoRa compatibles de surveillance.",
+          "description": "Transmettez les indicateurs vibratoires calculés par les capteurs ou les températures sélectionnés des moteurs d’aération accessibles, pompes de circulation et autres équipements auxiliaires de bord d’eau pour l’analyse de maintenance.",
+          "placement": "Vérifiez la réception de chaque émetteur installé et tenez compte des éclaboussures, de l’écran des équipements et des variations des niveaux d’eau. Prévoyez un accès de maintenance sûr pour l’installation complète.",
+          "projectBrief": "Liste des équipements, indicateurs transmis, modèles de capteurs, taille des charges utiles, intervalles de transmission et exigences d’analyse de maintenance."
+        }
+      ],
+      "imageAlt": "Bassins piscicoles avec aérateur à roues à aubes, chemins de berge et conduite d’alimentation en eau",
+      "imageCaption": "Exploitation de bassins aquacoles · Environnement illustratif"
+    }
+  ],
+  "imageWidth": 400,
+  "imageHeight": 918
+}
