@@ -57,7 +57,7 @@ const spdStaticCards = [
 const solarTvocStaticCards = [
   {
     id:'solar-pipeline-tvoc-sensor', name:'Solar-Powered Pipeline TVOC Sensor',
-    img:'/images/products/solar-pipeline-tvoc-sensor.png', conn:'',
+    img:'/images/products/solar-pipeline-tvoc-sensor.svg', conn:'',
     searchTerms:'solar powered pipeline TVOC gas sensor 0-10 0-40 0-100 ppm 1 ppb resolution industrial sampling',
     url:'/product/solar-pipeline-tvoc-sensor', href:'/product/solar-pipeline-tvoc-sensor',
   },
