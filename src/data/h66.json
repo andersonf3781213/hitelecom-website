@@ -1,0 +1,703 @@
+{
+  "model": "H66",
+  "kind": "Indoor",
+  "slug": "indoor-gateway-h66",
+  "path": "/product/indoor-gateway-h66",
+  "title": "H66 Indoor IoT Gateway | LoRa & 4G LTE | Hitelecom",
+  "metaDescription": "Connect compatible LoRa sensors with the Hitelecom H66 indoor IoT gateway. IP65 enclosure, 4G LTE backhaul, MQTT integration and regional radio options.",
+  "image": "h66.webp",
+  "imageAlt": "Hitelecom H66 indoor gateway with external antennas, official product image",
+  "caption": "H66 · Indoor IoT gateway",
+  "heroHeading": "H66 indoor\nIoT gateway.",
+  "heroValue": "Connect your sensors.\nAcross your building.",
+  "heroDescription": "The Hitelecom H66 connects compatible LoRa sensors in buildings, warehouses and industrial facilities to a monitoring platform. Its 8-channel full-duplex radio architecture aggregates distributed sensor data, with 4G LTE backhaul and MQTT integration for Hitelecom Cloud or a compatible customer platform. Plan the radio network around the building, the sensor fleet and the reporting requirements.",
+  "proof": [
+    {
+      "value": "8-channel",
+      "label": "Full-duplex radio architecture",
+      "note": "Match the regional radio configuration"
+    },
+    {
+      "value": "4G LTE",
+      "label": "Site-to-platform backhaul",
+      "note": "Select the modem for the local operator"
+    },
+    {
+      "value": "MQTT",
+      "label": "Platform data integration",
+      "note": "Hitelecom Cloud or a compatible platform"
+    }
+  ],
+  "featureTitle": "Indoor sensor networks.\nA practical path to the platform.",
+  "featureIntro": "Bring compatible sensor traffic together while keeping radio access, backhaul and platform integration clearly defined.",
+  "features": [
+    {
+      "title": "LoRa sensor aggregation",
+      "text": "Collect data from compatible LoRa devices through the published 8-channel full-duplex radio architecture. Match the sensor protocol and regional settings."
+    },
+    {
+      "title": "4G LTE backhaul",
+      "text": "Forward collected data over an available mobile network. Select the modem, SIM and operator around coverage at the gateway position."
+    },
+    {
+      "title": "MQTT integration",
+      "text": "Connect field data to Hitelecom Cloud or a compatible customer platform with an agreed endpoint, message format and authentication configuration."
+    },
+    {
+      "title": "IP65-rated enclosure",
+      "text": "An IP65-rated enclosure supports installation in demanding indoor facilities. Position the gateway within its operating conditions and maintenance access requirements."
+    },
+    {
+      "title": "Regional radio options",
+      "text": "Select CN470, EU868, IN865, RU864, US915 or AU915 for the deployment. Frequency, channel settings and transmit power must match the local requirements."
+    },
+    {
+      "title": "Site-specific coverage",
+      "text": "Up to 5 km in open-area conditions. Walls, floor slabs, metal racks, equipment and antenna placement determine in-building coverage."
+    },
+    {
+      "title": "Local platform deployment",
+      "text": "A local deployment can be planned for projects that require site-controlled data handling. Agree the server role, connectivity and integration scope."
+    },
+    {
+      "title": "Power-loss notification",
+      "text": "A power-loss alert can be transmitted when backup power and the backhaul connection remain available. Include the required alert path in the power design."
+    }
+  ],
+  "planningIntro": "Indoor radio performance depends on the building as much as the gateway. Review floors, partitions, racks and equipment before deciding gateway quantity.",
+  "planning": [
+    {
+      "title": "Define the sensor fleet",
+      "text": "List the compatible devices, measurement points and radio configuration. Size traffic from payload length, reporting intervals and downlink needs rather than device count alone.",
+      "brief": "Sensor models · Device count · Payloads · Reporting intervals · Required response"
+    },
+    {
+      "title": "Plan radio coverage",
+      "text": "Review floor slabs, metal shelving and machinery. Test representative paths across the hardest-to-reach rooms and storage zones.",
+      "brief": "Site plan · Antenna position · Interference · Coverage survey · Gateway locations"
+    },
+    {
+      "title": "Confirm the onward connection",
+      "text": "Check gateway power, the local mobile operator and the receiving platform. For an Ethernet configuration, confirm the supplied interface and the site network requirements.",
+      "brief": "Power supply · SIM / operator · Ethernet configuration · Endpoint · Data mapping"
+    }
+  ],
+  "installationText": "Place the gateway where its radio paths can reach the intended sensor zones and its backhaul remains available. Avoid locating it inside a closed metal cabinet unless the antenna arrangement is designed for that position. Provide suitable power, cable routing and service access.",
+  "workflow": [
+    {
+      "title": "Collect",
+      "text": "Compatible LoRa sensors send their measurement records to the gateway using the agreed radio settings and reporting profile."
+    },
+    {
+      "title": "Forward",
+      "text": "The gateway forwards collected records through the selected backhaul to the configured MQTT endpoint."
+    },
+    {
+      "title": "Review & respond",
+      "text": "Use Hitelecom Cloud to view uploaded monitoring data online and receive alerts when measurements exceed configured thresholds. A customer platform can provide its own agreed workflow."
+    }
+  ],
+  "coverageTitle": "Up to 5 km.\nIn open-area conditions.",
+  "coverageText": "The open-area figure is not an indoor coverage radius or a floor-count guarantee. Building materials, floor slabs, dense racks and equipment can attenuate radio signals. Validate the planned network with representative sensor positions.",
+  "rows": [
+    [
+      "Model",
+      "H66"
+    ],
+    [
+      "Deployment",
+      "Indoor sensor-network gateway"
+    ],
+    [
+      "Radio architecture",
+      "8-channel full-duplex, as specified for the supplied configuration"
+    ],
+    [
+      "Regional radio options",
+      "CN470 / EU868 / IN865 / RU864 / US915 / AU915; select the required regional configuration"
+    ],
+    [
+      "Open-area range",
+      "Up to 5 km; actual coverage depends on site and radio conditions"
+    ],
+    [
+      "Transmit power",
+      "20–27 dBm; subject to the selected configuration and local regulatory limits"
+    ],
+    [
+      "Receiver sensitivity",
+      "−140 dBm at 0.292 kbps"
+    ],
+    [
+      "Antenna",
+      "External fiberglass antenna; confirm the supplied antenna arrangement"
+    ],
+    [
+      "Backhaul",
+      "4G LTE; Ethernet by supplied configuration"
+    ],
+    [
+      "Published LTE bands",
+      "LTE-TDD B34 / B38 / B39 / B40 / B41; LTE-FDD B1 / B3 / B5 / B8. Match the modem to the deployment operator."
+    ],
+    [
+      "Data protocol",
+      "MQTT; agree endpoint, payload and authentication configuration"
+    ],
+    [
+      "Enclosure protection",
+      "IP65; maintain specified seals and installation conditions"
+    ],
+    [
+      "Operating temperature",
+      "−20°C to +70°C"
+    ],
+    [
+      "Storage temperature",
+      "−20°C to +80°C"
+    ],
+    [
+      "Mounting options",
+      "Mounting lugs / pole clamp / slotted mount, by supplied configuration"
+    ]
+  ],
+  "specNote": "Reference values follow the current Hitelecom product specification. Confirm the hardware revision, power input, dimensions, antenna set, regional approvals and supported interfaces in the project quotation.",
+  "faqs": [
+    {
+      "q": "What does the H66 gateway do?",
+      "a": "The H66 receives data from compatible LoRa sensors and forwards it to a monitoring platform through the configured backhaul. The gateway provides the connection between sensor points and the platform; the connected sensors perform the measurements."
+    },
+    {
+      "q": "How is the H66 different from the H68?",
+      "a": "H66 is positioned for indoor facilities, with an IP65 enclosure, an operating range of −20°C to +70°C and an open-area distance reference of up to 5 km. H68 is positioned for outdoor sites, with an IP68 enclosure, an operating range of −40°C to +85°C and an open-area reference of up to 10 km. Choose by installation conditions and a site-specific radio assessment."
+    },
+    {
+      "q": "Will one H66 cover the entire site?",
+      "a": "Gateway quantity depends on the actual radio paths, antenna positions, interference and sensor traffic. An open-area distance figure cannot establish coverage inside buildings or behind terrain and structures. Share a site plan and representative sensor positions so the network can be assessed and tested."
+    },
+    {
+      "q": "How many sensors can one gateway connect?",
+      "a": "Capacity depends on payload size, reporting interval, radio settings, traffic concentration, retransmissions and downlink requirements. There is no single device-count figure that applies to every deployment. Provide the sensor list and reporting profile for network sizing."
+    },
+    {
+      "q": "Does LoRa support mean the gateway is LoRaWAN-compatible?",
+      "a": "LoRa identifies the radio technology. LoRaWAN is a network protocol with separate device, gateway and server requirements. Confirm the exact sensor protocol, gateway firmware and platform compatibility for any LoRaWAN requirement before selecting the configuration."
+    },
+    {
+      "q": "Which frequency and cellular bands should I choose?",
+      "a": "Select the regional radio configuration for the deployment country and the LTE modem for the local operator. The published regional radio options and LTE bands are listed in the specification table. A regional band name does not establish local certification or universal operator coverage."
+    },
+    {
+      "q": "Can I use Hitelecom Cloud or my own platform?",
+      "a": "Yes. Agree the integration configuration for Hitelecom Cloud or a compatible customer platform. MQTT is listed in the specification. Confirm the endpoint, topics, payload mapping, timestamps, authentication and any required transport security, then verify a sample message end to end."
+    },
+    {
+      "q": "Can I view readings online and receive threshold alarms?",
+      "a": "With the agreed Hitelecom Cloud integration, users can view uploaded monitoring data online and receive alerts when measurements exceed configured thresholds. Sensor sampling, reporting intervals, network availability and platform settings determine when the information is available. Define recipients and the response workflow during commissioning."
+    },
+    {
+      "q": "What happens during a power failure?",
+      "a": "A power-loss notification requires enough backup energy to operate the gateway and a working backhaul connection. It does not mean transmission continues indefinitely after power is removed. Confirm the backup-power arrangement, notification path and required duration for the project."
+    },
+    {
+      "q": "Can the H66 be installed inside a cold room?",
+      "a": "The published operating range is −20°C to +70°C. Confirm the actual gateway environment, condensation, power and radio paths. In many cold-chain projects, the sensors are placed in the monitored storage area while the gateway is installed in a suitable service area outside the cold enclosure. Validate reception with the doors in their normal operating state."
+    }
+  ],
+  "groups": [
+    {
+      "id": "buildings-hvac",
+      "title": "Buildings & HVAC",
+      "jumpLabel": "Buildings & HVAC",
+      "intro": "Bring distributed indoor environmental and building-services readings into a shared monitoring network, including retrofit projects where new sensor cabling is difficult.",
+      "imageKey": "building",
+      "tasks": [
+        {
+          "id": "occupied-space-environment",
+          "title": "Occupied-space environmental monitoring",
+          "networkRole": "Aggregates compatible LoRa environmental sensors across occupied areas.",
+          "description": "Forward temperature, humidity and air-quality readings from offices, classrooms or meeting rooms for centralized review of indoor conditions.",
+          "placement": "Place the gateway in an accessible indoor location with a surveyed radio path to the monitored rooms.",
+          "projectBrief": "Floor plans, wall construction, monitored rooms, sensor types and reporting intervals."
+        },
+        {
+          "id": "hvac-service-areas",
+          "title": "HVAC service-area monitoring",
+          "networkRole": "Connects compatible sensors distributed around HVAC plant and service spaces.",
+          "description": "Collect temperature, humidity, pressure or leak readings around plant rooms and service areas to support inspection and maintenance planning.",
+          "placement": "Use an indoor mounting position clear of metal enclosures, hot surfaces and motor interference.",
+          "projectBrief": "Plant layout, equipment locations, sensor interfaces and required monitoring intervals."
+        },
+        {
+          "id": "building-water-leaks",
+          "title": "Building water-leak monitoring",
+          "networkRole": "Forwards reports from compatible LoRa leak-detection devices.",
+          "description": "Connect leak sensors near risers, washrooms, mechanical rooms and concealed service areas so distributed detection points can be reviewed together.",
+          "placement": "Survey radio coverage through concrete floors and service shafts before fixing the gateway position.",
+          "projectBrief": "Detection zones, floor levels, sensor positions and the platform notification workflow."
+        },
+        {
+          "id": "hvac-filter-pressure",
+          "title": "HVAC filter differential-pressure trends",
+          "networkRole": "Forwards differential-pressure readings from compatible LoRa monitoring devices.",
+          "description": "Bring filter pressure-drop records into the platform so facility teams can review changes alongside ventilation operating schedules and maintenance history.",
+          "placement": "Position the gateway away from ductwork shielding; verify sensor reception from air-handling units and enclosed plant spaces.",
+          "projectBrief": "Air-handling units, pressure ranges, sensor installation points, operating schedules and reporting intervals."
+        },
+        {
+          "id": "occupancy-lighting-patterns",
+          "title": "Occupancy and lighting-use patterns",
+          "networkRole": "Aggregates reports from compatible LoRa presence and illuminance sensors.",
+          "description": "Connect room-use events and light-level readings to support review of space utilization and lighting schedules without requiring occupant identification.",
+          "placement": "Test reception from meeting rooms, corridors and service zones with partitions and doors in their normal positions.",
+          "projectBrief": "Monitored zones, presence-event frequency, light-level reporting and the required platform views."
+        }
+      ],
+      "imageAlt": "Indoor building-services switchgear room",
+      "imageCaption": "Building-services room · Representative environment"
+    },
+    {
+      "id": "warehousing",
+      "title": "Warehouses & Storage Facilities",
+      "jumpLabel": "Warehousing",
+      "intro": "Connect monitoring points across storage aisles, receiving areas and enclosed warehouses while accounting for changing inventory and metal racking.",
+      "imageKey": "warehouse",
+      "tasks": [
+        {
+          "id": "storage-environment",
+          "title": "Storage-zone environmental monitoring",
+          "networkRole": "Aggregates compatible temperature and humidity sensors across storage zones.",
+          "description": "Forward readings from ambient storage, receiving bays and packing areas to help teams review conditions affecting stored materials.",
+          "placement": "Choose an elevated indoor position and test coverage with representative stock and rack loading.",
+          "projectBrief": "Warehouse dimensions, rack heights, storage zones and sensor reporting schedules."
+        },
+        {
+          "id": "rack-inclination",
+          "title": "Storage-rack inclination monitoring",
+          "networkRole": "Collects reports from compatible LoRa tilt sensors on selected rack structures.",
+          "description": "Bring rack inclination readings into a monitoring platform for trend review and inspection planning at designated measurement points.",
+          "placement": "Survey the radio path along aisles and behind metal racks at the intended sensor heights.",
+          "projectBrief": "Rack layout, measurement positions, sensor accuracy requirements and reporting intervals."
+        },
+        {
+          "id": "warehouse-doors",
+          "title": "Door and loading-area status",
+          "networkRole": "Forwards messages from compatible wireless door-status devices.",
+          "description": "Combine door-state reports from loading bays, enclosed stores and restricted storage areas with the site's other monitoring data.",
+          "placement": "Keep the gateway antenna clear of loading-bay steelwork and check coverage with doors open and closed.",
+          "projectBrief": "Door locations, building materials, event frequency and platform display requirements."
+        },
+        {
+          "id": "bulk-storage-levels",
+          "title": "Bulk-material bins and storage silos",
+          "networkRole": "Forwards readings from compatible LoRa level-monitoring devices.",
+          "description": "Connect selected indoor bins, hoppers and bulk-storage vessels so teams can review material levels and replenishment needs on the monitoring platform.",
+          "placement": "Assess metal-vessel shielding and antenna clearance at the sensor position; use a gateway location that reaches the intended storage areas.",
+          "projectBrief": "Vessel geometry, stored material, level-sensor suitability, measurement points and required updates."
+        }
+      ],
+      "imageAlt": "Warehouse control equipment beside storage racks",
+      "imageCaption": "Warehouse infrastructure · Representative environment"
+    },
+    {
+      "id": "manufacturing",
+      "title": "Manufacturing Facilities",
+      "jumpLabel": "Manufacturing",
+      "intro": "Connect compatible shop-floor monitoring devices across production spaces and supporting equipment areas for centralized inspection and maintenance planning.",
+      "imageKey": "factory",
+      "tasks": [
+        {
+          "id": "machine-condition",
+          "title": "Machine-condition indicators",
+          "networkRole": "Aggregates reported condition indicators from compatible LoRa sensors.",
+          "description": "Forward sensor-derived vibration indicators, surface temperatures or inclination readings from selected machines for maintenance trend review.",
+          "placement": "Mount away from variable-frequency drives and dense machinery, with antenna clearance confirmed on site.",
+          "projectBrief": "Machine positions, reported metrics, payload sizes and desired update intervals."
+        },
+        {
+          "id": "production-environment",
+          "title": "Production-area environmental monitoring",
+          "networkRole": "Connects compatible environmental monitoring devices across production areas.",
+          "description": "Collect temperature, humidity and application-specific air-quality readings around production cells, material preparation areas and enclosed workshops.",
+          "placement": "Use an indoor location within the gateway's environmental limits and outside restricted process areas.",
+          "projectBrief": "Production layout, environmental parameters, sensor locations and operating conditions."
+        },
+        {
+          "id": "factory-utilities",
+          "title": "Factory utility-system monitoring",
+          "networkRole": "Forwards data from compatible LoRa pressure, level and temperature devices.",
+          "description": "Bring readings from compressed-air services, process-water systems and utility tanks into a common monitoring platform for operational review.",
+          "placement": "Survey coverage around pipework and utility equipment before selecting an indoor gateway location.",
+          "projectBrief": "Utility types, measurement points, required sensor ranges and site radio constraints."
+        }
+      ],
+      "imageAlt": "Industrial control panels inside a manufacturing facility",
+      "imageCaption": "Manufacturing facility · Representative environment"
+    },
+    {
+      "id": "electrical-energy-rooms",
+      "title": "Electrical & Energy Rooms",
+      "jumpLabel": "Electrical & Energy",
+      "intro": "Consolidate environmental, equipment-condition and energy-monitoring messages from compatible devices in electrical and building-services rooms.",
+      "imageKey": "electrical",
+      "tasks": [
+        {
+          "id": "electrical-room-environment",
+          "title": "Electrical-room environmental conditions",
+          "networkRole": "Aggregates compatible temperature, humidity and leak-detection devices.",
+          "description": "Forward room-level environmental readings and water-ingress reports around switchgear rooms, distribution rooms and electrical service areas.",
+          "placement": "Mount outside energized equipment enclosures and preserve the clearances required by site electrical rules.",
+          "projectBrief": "Room layout, equipment clearances, monitored locations and environmental conditions."
+        },
+        {
+          "id": "electrical-thermal-trends",
+          "title": "Equipment temperature trends",
+          "networkRole": "Receives reports from compatible wireless temperature-monitoring devices.",
+          "description": "Connect approved temperature sensors at selected equipment measurement points so maintenance teams can review temperature changes over time.",
+          "placement": "Verify radio propagation through electrical-room partitions and closed metal cabinet doors.",
+          "projectBrief": "Approved sensor type, measurement positions, equipment layout and reporting interval."
+        },
+        {
+          "id": "energy-submetering",
+          "title": "Energy and submetering data collection",
+          "networkRole": "Forwards readings from compatible LoRa-enabled metering devices.",
+          "description": "Aggregate reported electricity or utility-meter values across rooms and tenant zones to support energy analysis on the connected platform.",
+          "placement": "Select a position with radio access to meter locations and reliable configured backhaul.",
+          "projectBrief": "Meter models, supported payloads, reading intervals and platform data requirements."
+        },
+        {
+          "id": "ups-battery-service-rooms",
+          "title": "UPS and battery-room support conditions",
+          "networkRole": "Collects readings from compatible environmental and application-specific gas sensors.",
+          "description": "Connect temperature, humidity and suitable gas-monitoring points around UPS and battery support rooms for operational trend review. Select any target-gas device for the actual battery chemistry and environment.",
+          "placement": "Locate the gateway within its specified conditions and assess shielding around battery cabinets; review sensor suitability separately for the monitored gas and area.",
+          "projectBrief": "Battery chemistry, room layout, target parameters, sensor compatibility, reporting profile and notification requirements."
+        },
+        {
+          "id": "indoor-charging-support",
+          "title": "Indoor charging-facility auxiliary monitoring",
+          "networkRole": "Forwards readings from compatible temperature, environmental and wireless metering devices.",
+          "description": "Bring auxiliary monitoring records from indoor charging bays and fleet service facilities into a shared platform for facility and energy review.",
+          "placement": "Survey radio paths with vehicles present and keep the gateway clear of charger power cabling and enclosed metal housings.",
+          "projectBrief": "Bay layout, monitored auxiliary points, compatible meter devices, vehicle movement and reporting intervals."
+        }
+      ],
+      "imageAlt": "Indoor electrical distribution room",
+      "imageCaption": "Electrical room · Representative environment"
+    },
+    {
+      "id": "cold-chain",
+      "title": "Cold-Chain Facilities",
+      "jumpLabel": "Cold Chain",
+      "intro": "Connect compatible temperature-monitoring devices across cold rooms and handling areas, with gateway placement selected for radio coverage and permissible operating conditions.",
+      "imageKey": "cold",
+      "tasks": [
+        {
+          "id": "cold-room-temperature",
+          "title": "Cold-room temperature monitoring",
+          "networkRole": "Aggregates reports from compatible LoRa temperature sensors in cold storage.",
+          "description": "Forward temperature readings from designated cold-room measurement points for centralized viewing and configured platform alerting.",
+          "placement": "Place the gateway in a suitable service area and test radio paths through insulated panels.",
+          "projectBrief": "Cold-room temperatures, panel construction, probe locations and reporting requirements."
+        },
+        {
+          "id": "cold-chain-handling",
+          "title": "Receiving and handling-area conditions",
+          "networkRole": "Connects compatible environmental sensors outside the primary cold rooms.",
+          "description": "Collect readings in receiving, staging and packing areas to add context when reviewing temperature conditions across facility operations.",
+          "placement": "Survey loading doors and partitions under representative operating conditions.",
+          "projectBrief": "Handling zones, door locations, required parameters and monitoring intervals."
+        },
+        {
+          "id": "cold-room-door-status",
+          "title": "Cold-room door status",
+          "networkRole": "Forwards messages from compatible LoRa door-state sensors.",
+          "description": "Bring door-opening events and temperature readings into the same platform to support investigation of storage-condition changes.",
+          "placement": "Test coverage with cold-room doors closed and antenna positions fixed as intended.",
+          "projectBrief": "Door types, sensor compatibility, event volumes and required platform correlation."
+        }
+      ],
+      "imageAlt": "Refrigeration service corridor beside cold-store equipment",
+      "imageCaption": "Cold-store service corridor · Representative environment"
+    },
+    {
+      "id": "water-pump-facilities",
+      "title": "Water & Pump Facilities",
+      "jumpLabel": "Water & Pumps",
+      "intro": "Connect monitoring points inside pump houses, tank rooms and building water-service areas through a shared wireless data path.",
+      "imageKey": "water-indoor",
+      "tasks": [
+        {
+          "id": "indoor-pressure-monitoring",
+          "title": "Water-service pressure monitoring",
+          "networkRole": "Aggregates compatible LoRa pressure-sensor reports.",
+          "description": "Forward pressure readings from selected supply and pump-system measurement points for centralized trend review and maintenance investigation.",
+          "placement": "Locate the gateway away from wet surfaces and survey coverage around pumps and pipework.",
+          "projectBrief": "Pipe network layout, pressure ranges, measurement points and update intervals."
+        },
+        {
+          "id": "indoor-tank-levels",
+          "title": "Tank and sump level monitoring",
+          "networkRole": "Connects compatible wireless level-monitoring devices.",
+          "description": "Collect readings from service-water tanks, sumps and other suitable level-measurement points inside utility buildings.",
+          "placement": "Check radio paths around tank walls, reinforced concrete and below-ground rooms.",
+          "projectBrief": "Tank dimensions, level-sensor models, room elevations and reporting requirements."
+        },
+        {
+          "id": "pump-room-leaks",
+          "title": "Pump-room leakage and environment",
+          "networkRole": "Forwards compatible leak-detection and environmental sensor messages.",
+          "description": "Combine floor-level leak reports with temperature and humidity readings around pump sets and service equipment.",
+          "placement": "Use a dry, accessible mounting point with surveyed coverage to low-level detection devices.",
+          "projectBrief": "Leak zones, drainage arrangement, sensor positions and maintenance access."
+        },
+        {
+          "id": "domestic-hot-water-circuits",
+          "title": "Hot-water circulation and service loops",
+          "networkRole": "Forwards reports from compatible pipe-temperature and pressure-monitoring devices.",
+          "description": "Connect selected hot-water supply, return and service-loop measurement points for reviewing circulation conditions and investigating abnormal trends.",
+          "placement": "Place the gateway away from hot pipework and verify reception from service risers; select sensing assemblies for the actual process temperature.",
+          "projectBrief": "Loop layout, pipe materials, operating temperatures, pressure points, probe arrangements and reporting intervals."
+        },
+        {
+          "id": "pump-condition-indicators",
+          "title": "Pump-set condition indicators",
+          "networkRole": "Aggregates reported vibration indicators and temperatures from compatible LoRa devices.",
+          "description": "Bring sensor-derived condition indicators from selected pump and motor positions into the platform to support maintenance comparisons between operating periods.",
+          "placement": "Survey reception around motors, pipework and concrete structures; size the reporting profile for summary indicators rather than continuous raw waveforms.",
+          "projectBrief": "Pump types, measurement positions, indicator definitions, operating schedules and reporting intervals."
+        }
+      ],
+      "imageAlt": "Pumps and process piping inside a water-treatment facility",
+      "imageCaption": "Water-treatment facility · Representative environment"
+    },
+    {
+      "id": "data-centers",
+      "title": "Data Centers & IT Rooms",
+      "jumpLabel": "Data Centers",
+      "intro": "Provide a wireless collection path for compatible facility-monitoring sensors around racks, cooling infrastructure and supporting IT spaces.",
+      "imageKey": "data",
+      "tasks": [
+        {
+          "id": "rack-environment",
+          "title": "Rack-area thermal conditions",
+          "networkRole": "Aggregates compatible temperature and humidity sensor readings.",
+          "description": "Forward measurements from selected rack aisles and IT-room positions to support review of local environmental trends.",
+          "placement": "Survey coverage with rack doors and containment systems in their normal operating positions.",
+          "projectBrief": "Rack layout, containment design, measurement heights and reporting intervals."
+        },
+        {
+          "id": "it-cooling-water-leaks",
+          "title": "Cooling-system water-leak monitoring",
+          "networkRole": "Connects compatible LoRa leak-detection devices around cooling infrastructure.",
+          "description": "Bring reports from underfloor zones, cooling units and pipework monitoring points into the facility's configured monitoring workflow.",
+          "placement": "Check radio propagation beneath raised floors and around dense metal services.",
+          "projectBrief": "Cooling layout, leak-detection zones, floor construction and notification requirements."
+        },
+        {
+          "id": "it-support-rooms",
+          "title": "IT support-room conditions",
+          "networkRole": "Forwards compatible environmental and door-status sensor messages.",
+          "description": "Extend monitoring to network rooms, equipment stores and supporting service spaces beyond the main data hall.",
+          "placement": "Select an accessible indoor position with radio access through the relevant room partitions.",
+          "projectBrief": "Supporting rooms, monitored conditions, sensor models and platform integration scope."
+        },
+        {
+          "id": "data-center-branch-metering",
+          "title": "Branch-circuit and support-load energy records",
+          "networkRole": "Collects reported energy values from compatible LoRa metering devices.",
+          "description": "Connect selected IT support loads and facility branch-metering points for review alongside environmental records on the receiving platform.",
+          "placement": "Check antenna paths around metal distribution cabinets and verify the supplied wireless meter interface; keep electrical installation with qualified site personnel.",
+          "projectBrief": "Compatible meter models, circuit grouping, units, accumulation periods and required platform mapping."
+        },
+        {
+          "id": "it-room-door-events",
+          "title": "IT-room and enclosure door events",
+          "networkRole": "Forwards event reports from compatible LoRa door-state devices.",
+          "description": "Combine door-open records from network rooms, selected enclosures and restricted service areas with environmental trends for operational investigation.",
+          "placement": "Test reception with enclosure doors shut and rooms in normal service; agree sensor mounting without obstructing maintenance access.",
+          "projectBrief": "Door locations, device compatibility, event frequency, timestamp requirements and notification rules."
+        }
+      ],
+      "imageAlt": "Server racks in a data-center cooling aisle",
+      "imageCaption": "Data-center aisle · Representative environment"
+    },
+    {
+      "id": "indoor-transport-public",
+      "title": "Public buildings & facility services",
+      "jumpLabel": "Public facilities",
+      "intro": "Connect facility-monitoring sensors in station buildings, depots and public buildings, with radio planning adapted to large enclosed spaces.",
+      "imageKey": "public",
+      "tasks": [
+        {
+          "id": "public-hall-environment",
+          "title": "Public-hall environmental conditions",
+          "networkRole": "Aggregates compatible environmental sensors across occupied public areas.",
+          "description": "Collect temperature, humidity and air-quality readings from station halls, waiting areas and public-service buildings.",
+          "placement": "Survey large halls, service corridors and partitioned areas before selecting the mounting position.",
+          "projectBrief": "Building plans, occupancy zones, monitored parameters and sensor reporting schedules."
+        },
+        {
+          "id": "transport-equipment-rooms",
+          "title": "Station and depot equipment rooms",
+          "networkRole": "Connects compatible leak, temperature and humidity monitoring devices.",
+          "description": "Forward condition reports from equipment rooms and service spaces to support routine facility inspections and maintenance.",
+          "placement": "Keep the gateway accessible and separate from restricted operational equipment.",
+          "projectBrief": "Equipment-room locations, partition materials, sensor positions and maintenance requirements."
+        },
+        {
+          "id": "depot-stores",
+          "title": "Depot stores and service areas",
+          "networkRole": "Forwards messages from compatible storage-environment and door-state devices.",
+          "description": "Connect enclosed maintenance stores, spare-parts areas and service buildings to a shared facility-monitoring platform.",
+          "placement": "Test coverage through workshops and storage aisles under representative operating conditions.",
+          "projectBrief": "Store layout, monitored spaces, metal obstructions and required reporting intervals."
+        }
+      ],
+      "imageAlt": "Building-service equipment in a sheltered annex beside a public building",
+      "imageCaption": "Building-services annex · Representative environment"
+    },
+    {
+      "id": "pharma-laboratories",
+      "title": "Pharmaceutical & laboratory facilities",
+      "jumpLabel": "Pharma & laboratories",
+      "intro": "Connect refrigeration, laboratory and controlled-room monitoring points through an indoor data network planned around metal equipment, insulated storage and restricted-access spaces.",
+      "imageKey": "pharma-lab",
+      "imageAlt": "Laboratory refrigeration cabinets and a benchtop incubator in a research laboratory",
+      "imageCaption": "Laboratory refrigeration and incubation · Illustrative environment",
+      "tasks": [
+        {
+          "id": "pharmaceutical-refrigerated-storage",
+          "title": "Pharmaceutical refrigerators and medical stores",
+          "networkRole": "Connects compatible temperature sensors at designated refrigerated-storage points.",
+          "description": "Forward records from medicine refrigerators, vaccine-storage equipment and adjacent medical stores for the operator’s monitoring and configured notification procedures.",
+          "placement": "Use a gateway service location within its operating limits; verify reception through insulated cabinets and doors under normal use.",
+          "projectBrief": "Storage equipment, specified temperature limits, probe arrangements, reporting intervals and notification recipients."
+        },
+        {
+          "id": "laboratory-incubators",
+          "title": "Laboratory incubators and research storage",
+          "networkRole": "Aggregates records from compatible temperature and humidity monitoring devices.",
+          "description": "Connect selected incubators, research-material stores and laboratory support spaces so teams can review conditions for distinct equipment and room zones.",
+          "placement": "Assess metal incubator housings and probe routing; keep the gateway outside equipment environments that exceed its specified conditions.",
+          "projectBrief": "Equipment list, monitored ranges, independent sensing points, probe configuration and required record intervals."
+        },
+        {
+          "id": "cleanroom-pressure-monitoring",
+          "title": "Cleanrooms and controlled production",
+          "networkRole": "Aggregates reports from compatible differential-pressure and environmental sensors.",
+          "description": "Collect room-pressure, temperature and humidity records across selected production zones for the facility team to review against its operating criteria.",
+          "placement": "Keep installation compatible with room access and cleaning requirements; test radio paths through partitions and sealed service spaces.",
+          "projectBrief": "Room pressure relationships, monitored parameters, sensor locations, reporting intervals and platform record requirements."
+        }
+      ]
+    },
+    {
+      "id": "museums-archives",
+      "title": "Museums, archives & heritage collections",
+      "jumpLabel": "Museums & archives",
+      "intro": "Connect collection-store, gallery and building-condition monitoring points with installation methods that respect sensitive collections and existing heritage fabric.",
+      "imageKey": "museum-archive",
+      "imageAlt": "Museum archive shelving, collection-storage boxes and a display case beside a gallery",
+      "imageCaption": "Museum collections and archive · Illustrative environment",
+      "tasks": [
+        {
+          "id": "collection-store-conditions",
+          "title": "Museums, archives and collection stores",
+          "networkRole": "Collects records from compatible temperature, humidity and illuminance sensors.",
+          "description": "Bring environmental readings from collection stores, archive rooms and selected display cases into a shared record for conservation-team review.",
+          "placement": "Check reception through dense shelving and display enclosures; agree non-invasive sensor placement around sensitive collections.",
+          "projectBrief": "Collection types, display or storage zones, permitted mounting methods, environmental limits and record intervals."
+        },
+        {
+          "id": "gallery-lighting-records",
+          "title": "Gallery lighting and opening-hour records",
+          "networkRole": "Forwards readings from compatible LoRa illuminance and presence-monitoring devices.",
+          "description": "Bring selected gallery light-level records and room-use events together so conservation staff can review changes between opening hours, cleaning periods and closed hours.",
+          "placement": "Survey reception from gallery partitions and display fittings; agree unobtrusive mounting and a reporting schedule suited to lighting changes.",
+          "projectBrief": "Gallery zones, permitted mounting, illuminance range, opening schedules and required record intervals."
+        },
+        {
+          "id": "heritage-collection-leakage",
+          "title": "Collection-building leakage and fabric conditions",
+          "networkRole": "Connects compatible water-leak, temperature and humidity monitoring devices.",
+          "description": "Collect reports near roof voids, service routes and selected building-fabric observation points to help museum and archive teams investigate moisture-related changes around collections.",
+          "placement": "Use reversible mounting where required and test coverage through thick masonry, basement storage and concealed service spaces.",
+          "projectBrief": "Building materials, leak-detection zones, access limits, sensor positions and notification recipients."
+        }
+      ]
+    },
+    {
+      "id": "food-beverage",
+      "title": "Food & beverage facilities",
+      "jumpLabel": "Food & beverage",
+      "intro": "Bring compatible sensors around process equipment, cleaning-adjacent service areas and ingredient stores into one monitoring workflow, with gateway placement suited to food-production conditions.",
+      "imageKey": "food-beverage",
+      "imageAlt": "Stainless steel process tanks and a bottling conveyor inside a beverage production plant",
+      "imageCaption": "Food and beverage production · Illustrative environment",
+      "tasks": [
+        {
+          "id": "food-production-service-areas",
+          "title": "Food-production and washdown support areas",
+          "networkRole": "Connects compatible temperature and leak-monitoring devices around production support equipment.",
+          "description": "Forward readings from refrigeration services, process-water circuits and washdown-adjacent equipment areas to support routine operational inspections.",
+          "placement": "Install the indoor gateway in a suitable service position outside direct washdown spray, while verifying radio paths to protected sensors.",
+          "projectBrief": "Production zones, cleaning exposure, selected measurement points, sensor protection and update intervals."
+        },
+        {
+          "id": "food-process-vessel-temperature",
+          "title": "Food-process and fermentation-vessel temperatures",
+          "networkRole": "Forwards readings from compatible LoRa transmitters and suitable process-temperature sensing assemblies.",
+          "description": "Connect selected preparation vessels, fermentation equipment and process-service temperature points for operational trend review alongside the production record.",
+          "placement": "Keep the gateway outside direct washdown and excessive heat; specify sensing assemblies and installation positions for the actual process medium and temperature.",
+          "projectBrief": "Process stages, vessel types, temperature ranges, probe connections and required reporting intervals."
+        },
+        {
+          "id": "ingredient-packaging-stores",
+          "title": "Ingredient and packaging-store humidity",
+          "networkRole": "Aggregates reports from compatible temperature and humidity monitoring devices.",
+          "description": "Bring readings from dry-ingredient stores, packaging rooms and moisture-sensitive material zones into the platform so teams can review local storage conditions across shifts.",
+          "placement": "Assess radio paths through storage racks and partitions with representative stock loading; position sensors at the agreed material-storage zones.",
+          "projectBrief": "Stored ingredients or packaging, humidity limits, room layout, stock turnover and reporting schedules."
+        }
+      ]
+    },
+    {
+      "id": "retail-hospitality",
+      "title": "Retail & hospitality facilities",
+      "jumpLabel": "Retail & hospitality",
+      "intro": "Connect stores, hotels, guest-service areas and food-service storage through an indoor monitoring network planned for occupied spaces, display fittings and maintenance access.",
+      "imageKey": "retail-hospitality",
+      "imageAlt": "Modern hotel lobby with reception, a cafe retail area and an adjoining corridor",
+      "imageCaption": "Hospitality and retail interior · Illustrative environment",
+      "tasks": [
+        {
+          "id": "hotel-hospitality-facilities",
+          "title": "Hotels and hospitality facilities",
+          "networkRole": "Connects compatible environmental, presence and water-leak monitoring devices.",
+          "description": "Bring reports from guest-area support spaces, service floors and utility rooms into a facility-monitoring network for maintenance and operating review.",
+          "placement": "Plan gateway coverage across guest-room partitions and service shafts; keep maintenance access practical without disturbing occupied areas.",
+          "projectBrief": "Building wings, service zones, monitored parameters, presence-event policy and reporting requirements."
+        },
+        {
+          "id": "retail-display-service-areas",
+          "title": "Retail displays and back-of-house areas",
+          "networkRole": "Aggregates compatible temperature, humidity, door-state and illuminance sensor reports.",
+          "description": "Connect selected display environments, enclosed stockrooms and service areas to help retail teams review local conditions and equipment-use events.",
+          "placement": "Test radio paths with shelving, display fittings and stock in place; position the gateway away from public handling and metal display shielding.",
+          "projectBrief": "Store layout, display or stock types, sensor models, monitored events and reporting schedules."
+        },
+        {
+          "id": "hospitality-kitchen-refrigeration",
+          "title": "Commercial kitchens and food-service refrigeration",
+          "networkRole": "Connects compatible temperature-monitoring devices at selected food-service storage points.",
+          "description": "Forward records from restaurant refrigerators, hotel cold stores and preparation-area storage equipment for the operator’s monitoring and configured notification procedures.",
+          "placement": "Keep the gateway away from heat, steam and direct cleaning spray; test reception through refrigerated cabinets and service-area partitions.",
+          "projectBrief": "Kitchen and storage layout, temperature limits, suitable probe arrangements, door construction and notification workflow."
+        }
+      ]
+    }
+  ],
+  "imageWidth": 400,
+  "imageHeight": 919
+}

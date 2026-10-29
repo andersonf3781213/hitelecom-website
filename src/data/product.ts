@@ -3757,7 +3757,7 @@ const productContentBase ={
      }
     ],
     "specsTitle": "Technical Specifications",
-    "specsDesc": "The H68 series supports long-distance transmission up to 10 kilometers, reaching up to 2 kilometers within urban areas. It integrates 4G LTE, Ethernet, and Wi-Fi connectivity options to support reliable, continuous data transmission.",
+    "specsDesc": "The H68 series supports long-distance transmission up to 10 kilometers, reaching up to 2 kilometers within urban areas. It provides 4G LTE backhaul, with Ethernet available by supplied configuration, to support reliable, continuous data transmission.",
     "specs": [
      [
       "Product Models",
@@ -3984,7 +3984,7 @@ const productContentBase ={
      },
      {
       "icon": "product/details/276-f2.png",
-      "text": "IP67 Waterproof and Dustproof Rating"
+      "text": "IP65 Waterproof and Dustproof Rating"
      },
      {
       "icon": "product/details/276-f3.png",
@@ -4193,12 +4193,12 @@ const productContentBase ={
      }
     ],
     "certifications": [
-     "IP67"
+     "IP65"
     ],
     "faqs": [
      {
       "q": "What is the difference between the H66 and the H68?",
-      "a": "The H66 is the indoor model: plug-and-play with a power-loss alert, up to 5 km range and an IP67 enclosure. The H68 is the outdoor model with up to 10 km range, IP68, and a design for long-term outdoor service."
+      "a": "The H66 is the indoor model: plug-and-play with a power-loss alert, up to 5 km range and an IP65 enclosure. The H68 is the outdoor model with up to 10 km range, IP68, and a design for long-term outdoor service."
      },
      {
       "q": "Which frequency bands does it support?",
@@ -9369,7 +9369,7 @@ const productContentBase ={
         }
       ],
       "specsTitle": "技术参数",
-      "specsDesc": "H68系列支持10公里长距离传输，城市区域内可达2公里，集成4G LTE、以太网、Wi-Fi等多协议确保数据传输的高可靠性和连续性。",
+      "specsDesc": "H68系列支持10公里长距离传输，城市区域内可达2公里，集成4G LTE、以太网等协议确保数据传输的高可靠性和连续性。",
       "specs": [
         [
           "产品型号",
@@ -9593,7 +9593,7 @@ const productContentBase ={
         },
         {
           "icon": "product/details/276-f2.png",
-          "text": "IP67防水防尘等级"
+          "text": "IP65防水防尘等级"
         },
         {
           "icon": "product/details/276-f3.png",
@@ -9799,12 +9799,12 @@ const productContentBase ={
         }
       ],
       "certifications": [
-        "IP67"
+        "IP65"
       ],
       "faqs": [
         {
           "q": "H66 与 H68 有什么区别？",
-          "a": "H66 是室内款：即插即用、带断电报警，空旷覆盖可达 5 公里，IP67 外壳；H68 是户外款，空旷覆盖可达 10 公里，IP68，面向长期户外服役设计。"
+          "a": "H66 是室内款：即插即用、带断电报警，空旷覆盖可达 5 公里，IP65 外壳；H68 是户外款，空旷覆盖可达 10 公里，IP68，面向长期户外服役设计。"
         },
         {
           "q": "支持哪些频段？",
@@ -14999,7 +14999,7 @@ export const productContent = { ...productContentBase, de: {
      }
     ],
     "specsTitle": "Technische Spezifikationen",
-    "specsDesc": "Die H68-Serie unterstützt Langstreckenübertragung bis zu 10 Kilometer und erreicht bis zu 2 Kilometer in städtischen Gebieten. Sie integriert die Konnektivitätsoptionen 4G LTE, Ethernet und Wi-Fi für eine zuverlässige, kontinuierliche Datenübertragung.",
+    "specsDesc": "Die H68-Serie unterstützt Langstreckenübertragung bis zu 10 Kilometer und erreicht bis zu 2 Kilometer in städtischen Gebieten. Sie bietet 4G-LTE-Backhaul sowie Ethernet je nach Lieferkonfiguration für eine zuverlässige, kontinuierliche Datenübertragung.",
     "specs": [
      [
       "Produktmodelle",
@@ -15226,7 +15226,7 @@ export const productContent = { ...productContentBase, de: {
      },
      {
       "icon": "product/details/276-f2.png",
-      "text": "Schutzart IP67, wasserdicht und staubdicht"
+      "text": "Schutzart IP65, wasserdicht und staubdicht"
      },
      {
       "icon": "product/details/276-f3.png",
@@ -15435,12 +15435,12 @@ export const productContent = { ...productContentBase, de: {
      }
     ],
     "certifications": [
-     "IP67"
+     "IP65"
     ],
     "faqs": [
      {
       "q": "Was ist der Unterschied zwischen dem H66 und dem H68?",
-      "a": "Das H66 ist das Modell für Innenräume: Plug-and-play mit Stromausfall-Alarm, bis zu 5 km Reichweite und einem IP67-Gehäuse. Das H68 ist das Modell für den Außenbereich mit bis zu 10 km Reichweite, IP68 und einem Design für den langfristigen Außeneinsatz."
+      "a": "Das H66 ist das Modell für Innenräume: Plug-and-play mit Stromausfall-Alarm, bis zu 5 km Reichweite und einem IP65-Gehäuse. Das H68 ist das Modell für den Außenbereich mit bis zu 10 km Reichweite, IP68 und einem Design für den langfristigen Außeneinsatz."
      },
      {
       "q": "Welche Frequenzbänder unterstützt es?",
@@ -20646,7 +20646,7 @@ export const productContent = { ...productContentBase, de: {
     }
    ],
    "specsTitle": "技術仕様",
-   "specsDesc": "H68シリーズは最長10キロメートルの長距離送信に対応し、都市部内で最長2キロメートルに達します。4G LTE、Ethernet、Wi-Fiのコネクティビティオプションを統合し、信頼性の高い継続的なデータ送信をサポートします。",
+   "specsDesc": "H68シリーズは最長10キロメートルの長距離送信に対応し、都市部内で最長2キロメートルに達します。4G LTEバックホールを備え、Ethernetは供給構成により利用可能で、信頼性の高い継続的なデータ送信をサポートします。",
    "specs": [
     [
      "製品モデル",
@@ -20873,7 +20873,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "icon": "product/details/276-f2.png",
-     "text": "IP67防水・防塵等級"
+     "text": "IP65防水・防塵等級"
     },
     {
      "icon": "product/details/276-f3.png",
@@ -21082,12 +21082,12 @@ export const productContent = { ...productContentBase, de: {
     }
    ],
    "certifications": [
-    "IP67"
+    "IP65"
    ],
    "faqs": [
     {
      "q": "H66とH68の違いは何ですか？",
-     "a": "H66は屋内向けモデルです。プラグアンドプレイで停電アラート付き、最長5 kmの範囲、IP67筐体を備えています。H68は屋外向けモデルで、最長10 kmの範囲、IP68、長期屋外運用向けの設計を備えています。"
+     "a": "H66は屋内向けモデルです。プラグアンドプレイで停電アラート付き、最長5 kmの範囲、IP65筐体を備えています。H68は屋外向けモデルで、最長10 kmの範囲、IP68、長期屋外運用向けの設計を備えています。"
     },
     {
      "q": "どの周波数帯に対応していますか？",
@@ -26293,7 +26293,7 @@ export const productContent = { ...productContentBase, de: {
     }
    ],
    "specsTitle": "Especificaciones técnicas",
-   "specsDesc": "La serie H68 admite transmisión de larga distancia de hasta 10 kilómetros, alcanzando hasta 2 kilómetros en zonas urbanas. Integra opciones de conectividad 4G LTE, Ethernet y Wi-Fi para una transmisión de datos confiable y continua.",
+   "specsDesc": "La serie H68 admite transmisión de larga distancia de hasta 10 kilómetros, alcanzando hasta 2 kilómetros en zonas urbanas. Ofrece backhaul 4G LTE, con Ethernet según la configuración suministrada, para una transmisión de datos confiable y continua.",
    "specs": [
     [
      "Modelos de producto",
@@ -26520,7 +26520,7 @@ export const productContent = { ...productContentBase, de: {
     },
     {
      "icon": "product/details/276-f2.png",
-     "text": "Clasificación IP67 de impermeabilidad y resistencia al polvo"
+     "text": "Clasificación IP65 de impermeabilidad y resistencia al polvo"
     },
     {
      "icon": "product/details/276-f3.png",
@@ -26729,12 +26729,12 @@ export const productContent = { ...productContentBase, de: {
     }
    ],
    "certifications": [
-    "IP67"
+    "IP65"
    ],
    "faqs": [
     {
      "q": "¿Cuál es la diferencia entre el H66 y el H68?",
-     "a": "El H66 es el modelo de interior: plug-and-play con alerta de corte de energía, hasta 5 km de alcance y carcasa IP67. El H68 es el modelo de exterior, con hasta 10 km de alcance, IP68 y un diseño para el servicio prolongado en exteriores."
+     "a": "El H66 es el modelo de interior: plug-and-play con alerta de corte de energía, hasta 5 km de alcance y carcasa IP65. El H68 es el modelo de exterior, con hasta 10 km de alcance, IP68 y un diseño para el servicio prolongado en exteriores."
     },
     {
      "q": "¿Qué bandas de frecuencia admite?",
@@ -31942,7 +31942,7 @@ export const productContent = { ...productContentBase, de: {
      }
     ],
     "specsTitle": "Spécifications techniques",
-    "specsDesc": "La série H68 prend en charge la transmission longue distance jusqu’à 10 kilomètres, et jusqu’à 2 kilomètres en zone urbaine. Elle intègre des options de connectivité 4G LTE, Ethernet et Wi-Fi pour une transmission de données fiable et continue.",
+    "specsDesc": "La série H68 prend en charge la transmission longue distance jusqu’à 10 kilomètres, et jusqu’à 2 kilomètres en zone urbaine. Elle offre une liaison de retour 4G LTE, avec Ethernet selon la configuration fournie, pour une transmission de données fiable et continue.",
     "specs": [
      [
       "Modèles de produits",
@@ -32169,7 +32169,7 @@ export const productContent = { ...productContentBase, de: {
      },
      {
       "icon": "product/details/276-f2.png",
-      "text": "Indice IP67 d’étanchéité à l’eau et à la poussière"
+      "text": "Indice IP65 d’étanchéité à l’eau et à la poussière"
      },
      {
       "icon": "product/details/276-f3.png",
@@ -32378,12 +32378,12 @@ export const productContent = { ...productContentBase, de: {
      }
     ],
     "certifications": [
-     "IP67"
+     "IP65"
     ],
     "faqs": [
      {
       "q": "Quelle est la différence entre le H66 et le H68 ?",
-      "a": "Le H66 est le modèle intérieur : plug-and-play avec alerte de coupure d’alimentation, jusqu’à 5 km de portée et boîtier IP67. Le H68 est le modèle extérieur avec jusqu’à 10 km de portée, IP68 et une conception pour le service extérieur longue durée."
+      "a": "Le H66 est le modèle intérieur : plug-and-play avec alerte de coupure d’alimentation, jusqu’à 5 km de portée et boîtier IP65. Le H68 est le modèle extérieur avec jusqu’à 10 km de portée, IP68 et une conception pour le service extérieur longue durée."
      },
      {
       "q": "Quelles bandes de fréquences prend-il en charge ?",
@@ -37590,7 +37590,7 @@ export const productContent = { ...productContentBase, de: {
      }
     ],
     "specsTitle": "Технические характеристики",
-    "specsDesc": "Серия H68 поддерживает дальнюю передачу до 10 километров, достигая до 2 километров в городской застройке. Она объединяет варианты связи 4G LTE, Ethernet и Wi-Fi для надёжной непрерывной передачи данных.",
+    "specsDesc": "Серия H68 поддерживает дальнюю передачу до 10 километров, достигая до 2 километров в городской застройке. Она предоставляет канал 4G LTE, а Ethernet — в зависимости от поставляемой конфигурации, для надёжной непрерывной передачи данных.",
     "specs": [
      [
       "Модели продукции",
@@ -37817,7 +37817,7 @@ export const productContent = { ...productContentBase, de: {
      },
      {
       "icon": "product/details/276-f2.png",
-      "text": "Степень IP67 защиты от воды и пыли"
+      "text": "Степень IP65 защиты от воды и пыли"
      },
      {
       "icon": "product/details/276-f3.png",
@@ -38026,12 +38026,12 @@ export const productContent = { ...productContentBase, de: {
      }
     ],
     "certifications": [
-     "IP67"
+     "IP65"
     ],
     "faqs": [
      {
       "q": "В чём разница между H66 и H68?",
-      "a": "H66 — внутренняя модель: plug-and-play с аварией о потере питания, до 5 км дальности и корпус IP67. H68 — наружная модель с дальностью до 10 км, IP68 и конструкцией для долгосрочной службы на открытом воздухе."
+      "a": "H66 — внутренняя модель: plug-and-play с аварией о потере питания, до 5 км дальности и корпус IP65. H68 — наружная модель с дальностью до 10 км, IP68 и конструкцией для долгосрочной службы на открытом воздухе."
      },
      {
       "q": "Какие диапазоны частот он поддерживает?",
@@ -40340,7 +40340,7 @@ export const listSeo: Record<Locale, Record<string, PageSeo>> =
  },
  "272": {
   "title": "IoT-Gateways für Innenräume | 4G, NB-IoT und LoRa | Hitelecom",
-  "desc": "LoRa-Gateways H66 für Innenräume mit acht Kanälen, bis zu 5 km Reichweite im freien Feld und 4G-, Ethernet- oder Wi-Fi-Backhaul."
+  "desc": "LoRa-Gateways H66 für Innenräume mit acht Kanälen, bis zu 5 km Reichweite im freien Feld und 4G-Backhaul, Ethernet je nach Lieferkonfiguration."
  },
  "273": {
   "title": "IoT-Gateways für den Außenbereich | IP68, 4G und LoRa | Hitelecom",
@@ -40494,7 +40494,7 @@ export const listSeo: Record<Locale, Record<string, PageSeo>> =
  },
  "272": {
   "title": "Gateways IoT de interior | 4G, NB-IoT y LoRa | Hitelecom",
-  "desc": "Gateways LoRa H66 de interior con ocho canales, alcance de hasta 5 km en campo abierto y enlace de retorno 4G, Ethernet o Wi-Fi."
+  "desc": "Gateways LoRa H66 de interior con ocho canales, alcance de hasta 5 km en campo abierto y backhaul 4G, con Ethernet según la configuración suministrada."
  },
  "273": {
   "title": "Gateways IoT de exterior | IP68, 4G y LoRa | Hitelecom",
@@ -40718,7 +40718,7 @@ export const detailSeo: Record<Locale, Record<string, PageSeo>> =
  },
  "276": {
   "title": "IoT-Gateway für Innenräume | H66-Serie | Hitelecom",
-  "desc": "LoRa-Gateway H66 für Innenräume, mit acht Kanälen, bis zu 5 km Reichweite im freien Feld und 4G-, Ethernet- oder Wi-Fi-Backhaul."
+  "desc": "LoRa-Gateway H66 für Innenräume, mit acht Kanälen, bis zu 5 km Reichweite im freien Feld und 4G-Backhaul, Ethernet je nach Lieferkonfiguration."
  },
  "277": {
   "title": "Hydrologie-Überwachungsstation | H-Serie | Hitelecom",
@@ -40795,7 +40795,7 @@ export const detailSeo: Record<Locale, Record<string, PageSeo>> =
  },
  "276": {
   "title": "屋内向けIoTゲートウェイ | H66シリーズ | Hitelecom",
-  "desc": "屋内向けLoRaゲートウェイH66。8チャンネル、開放地で最長5 kmの範囲、4G・Ethernet・Wi-Fiバックホール。"
+  "desc": "屋内向けLoRaゲートウェイH66。8チャンネル、開放地で最長5 kmの範囲、4Gバックホール（Ethernetは供給構成による）。"
  },
  "277": {
   "title": "水文モニタリングステーション | Hシリーズ | Hitelecom",
@@ -40872,7 +40872,7 @@ export const detailSeo: Record<Locale, Record<string, PageSeo>> =
  },
  "276": {
   "title": "Gateway IoT de interior | Serie H66 | Hitelecom",
-  "desc": "Gateway LoRa H66 de interior, con ocho canales, alcance de hasta 5 km en campo abierto y enlace de retorno 4G, Ethernet o Wi-Fi."
+  "desc": "Gateway LoRa H66 de interior, con ocho canales, alcance de hasta 5 km en campo abierto y backhaul 4G, con Ethernet según la configuración suministrada."
  },
  "277": {
   "title": "Estación de monitoreo hidrológico | Serie H | Hitelecom",
