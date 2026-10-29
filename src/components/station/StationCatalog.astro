@@ -1,0 +1,63 @@
+---
+const { catalog:c, locale='en', cid='257' }=Astro.props;
+const validCid=['257','275','274'].includes(String(cid))?String(cid):'257';
+const prefix=locale==='en'?'':'/'+locale;
+const local=(path)=>prefix+path;
+const selected=c.categoryTitles[validCid];
+const shown=c.products.filter(p=>validCid==='257'||p.categoryId===validCid);
+const countText=(n)=>c.search.resultCount.replace('{count}',String(n));
+const split=(s)=>s.split('\n');
+const heroHeading=validCid==='257'?c.heroHeading:c.categoryTitles[validCid];
+const types=[{id:'275',label:c.sidebar.weatherLabel,product:c.sidebar.weatherProductLabel,path:'/product/weather-station'},{id:'274',label:c.sidebar.hydrologyLabel,product:c.sidebar.hydrologyProductLabel,path:'/product/hydrology-monitoring-station'}];
+---
+<link rel="stylesheet" href="/css/station-catalog.css"/>
+<main id="main" class="pclone station-catalog-page" data-station-catalog data-category={validCid}>
+  <section class="catalog-hero" aria-labelledby="catalog-hero-title">
+    <img class="catalog-hero-background" src="/assets/sensor-hero-background.webp" alt="" aria-hidden="true" width="1920" height="1090" loading="eager" decoding="async"/>
+    <div class="indexmid catalog-hero-inner">
+      <nav class="catalog-breadcrumb" aria-label={c.breadcrumbAria}><a href={local('/')}>{c.home}</a><span aria-hidden="true">/</span><span>{selected}</span></nav>
+      <div class="catalog-hero-copy">
+        <p class="catalog-eyebrow">{c.heroEyebrow}</p>
+        <h1 id="catalog-hero-title">{split(heroHeading).map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}<span>{split(c.heroValue).map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</span></h1>
+        <p class="catalog-hero-description">{c.categoryDescriptions[validCid]}</p>
+        <a class="catalog-hero-action" href="#cate">{c.heroAction}<span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="catalog-hero-products">
+        <figure><img src="/assets/h600.webp" alt={c.heroImageAltH600} width="627" height="635" loading="eager" decoding="async"/><figcaption>H600</figcaption></figure>
+        <figure><img src="/assets/h700.webp" alt={c.heroImageAltH700} width="627" height="635" loading="eager" decoding="async"/><figcaption>H700</figcaption></figure>
+        <p>{c.heroImageNote}</p>
+      </div>
+    </div>
+  </section>
+  <div id="cate" class="catalog-anchor"></div>
+  <nav class="pro_1 pro_1_ser" aria-label={c.categoryNav.ariaLabel}>
+    <div class="indexmid pro_1_mid"><ul>{c.categoryNav.items.map(item=><li><a class:list={['css3',{'on':item.path.includes('/cid/257')}]} href={local(item.path)} aria-current={item.path.includes('/cid/257')?'page':undefined}>{item.label}</a></li>)}</ul>
+      <label class="catalog-sr-only" for="station-category-switch">{c.categoryNav.switchLabel}</label><select id="station-category-switch" data-category-switch aria-label={c.categoryNav.switchLabel}>{c.categoryNav.items.map(item=><option value={local(item.path)} selected={item.path.includes('/cid/257')}>{item.label}</option>)}</select>
+    </div>
+  </nav>
+  <section class="pro_2"><div class="indexmid pro_2_mid">
+    <aside class="pro_2_mid_left" aria-label={c.sidebar.ariaLabel}><div class="pro_2_mid_left_mid">
+      <form class="catalog-search" action="#cate" data-station-search role="search">
+        <label class="catalog-sr-only" for="station-keyword">{c.search.label}</label><input id="station-keyword" data-station-keyword name="keyword" type="search" placeholder={c.search.placeholder} aria-label={c.search.ariaLabel} autocomplete="off"/>
+        <button type="submit" aria-label={c.search.submit} title={c.search.submit}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg></button>
+      </form>
+      <nav class="pro_2_mid_left_mid_2" aria-label={c.sidebar.ariaLabel}><ul>
+        <li><a class:list={['css3',{'on':validCid==='257'}]} href={local('/product/lists/cid/257#cate')} aria-current={validCid==='257'?'page':undefined}>{c.sidebar.allLabel}</a></li>
+        {types.map(type=><li><a class:list={['css3',{'on':validCid===type.id}]} href={local('/product/lists/cid/'+type.id+'#cate')} aria-current={validCid===type.id?'page':undefined}>{type.label}</a><ul class="sub-prods"><li><a href={local(type.path)}>{type.product}</a></li></ul></li>)}
+      </ul></nav>
+    </div></aside>
+    <div class="pro_2_mid_right">
+      <div class="catalog-intro"><h2>{c.catalogHeading}</h2><p>{c.catalogIntro}</p><p class="catalog-count" role="status" aria-live="polite" data-result-count data-count-template={c.search.resultCount}>{countText(shown.length)}</p></div>
+      <div class="pro_2_mid_right_2 sensor-catalog"><ul>
+        {shown.map(product=><li data-station-card data-model={product.model} data-name={[product.model,product.name,product.subtitle,product.summary].join(' ').toLocaleLowerCase(locale==='zh'?'zh-CN':locale)}><a href={local(product.path)}>
+          <div class="pro_2_mid_right_1_mid"><div class="pro_2_mid_right_1_mid_1"><img src={'/assets/'+product.image} alt={product.imageAlt} width="627" height="635" loading="lazy" decoding="async"/></div>
+            <div class="pro_2_mid_right_1_mid_2"><div class="pro_2_mid_right_1_mid_2_mid"><h3 class="pro_2_mid_right_1_mid_2_1">{product.name}</h3><p class="pro_2_mid_right_1_mid_2_2">{product.subtitle}</p><p class="catalog-card-summary">{product.summary}</p><span class="catalog-read-more">{c.readMore}<span aria-hidden="true">↗</span></span></div></div>
+          </div>
+        </a></li>)}
+      </ul></div>
+      <div class="catalog-empty" data-station-empty hidden><p>{c.search.noResults}</p><button type="button" data-station-reset>{c.search.reset}</button></div>
+      <p class="catalog-config-note">{c.sharedConfigNote}</p>
+    </div>
+  </div></section>
+</main>
+<script is:inline src="/js/station-catalog.js"></script>

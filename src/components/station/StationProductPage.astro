@@ -1,0 +1,32 @@
+/** H600/H700 气象·水文监测站产品页（V131，2026-10-29 GPT6 包 v1.0，Kimi 审核集成）。
+ * 7 语种同 slug；结构化数据 WebPage+Product（无 SKU）+BreadcrumbList+FAQPage，本语言生成。 */
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import StationBody from './StationBody.astro';
+const { content, ui, locale = 'en' } = Astro.props;
+const c = content; const u = ui;
+const prefix = locale === 'en' ? '' : `/${locale}`;
+const origin = 'https://www.hitelecom.com';
+const canonical = origin + prefix + '/product/' + c.slug;
+const productName = u['productName' + c.model];
+const structured = { '@context': 'https://schema.org', '@graph': [
+  { '@type': 'WebPage', '@id': canonical + '#webpage', url: canonical, name: c.title, mainEntity: { '@id': canonical + '#product' } },
+  { '@type': 'Product', '@id': canonical + '#product', name: productName, model: c.model,
+    brand: { '@type': 'Brand', name: 'Hitelecom' },
+    manufacturer: { '@type': 'Organization', name: 'Shanghai Hitelecom Communication Technology Co., Ltd.', url: origin },
+    description: c.metaDescription, url: canonical, image: [origin + '/assets/' + c.image], category: c.kind,
+    additionalProperty: c.rows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value })) },
+  { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: u.home, item: origin + prefix + '/' },
+    { '@type': 'ListItem', position: 2, name: u.gatewayCatalog, item: origin + prefix + '/product/lists/cid/257' },
+    { '@type': 'ListItem', position: 3, name: productName, item: canonical }] },
+  { '@type': 'FAQPage', mainEntity: c.faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }
+] };
+const allLocales = ['en', 'zh', 'es', 'de', 'ja', 'fr', 'ru'];
+const langTargets = Object.fromEntries(allLocales.map(loc => [loc, `${loc === 'en' ? '' : `/${loc}`}/product/${c.slug}`]));
+---
+---
+<BaseLayout locale={locale} title={c.title} description={c.metaDescription} socialImage={'/assets/' + c.image} langOverrides={langTargets}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(structured).replace(/</g, '\\u003c')}></script>
+  <StationBody content={c} ui={u} locale={locale}/>
+</BaseLayout>

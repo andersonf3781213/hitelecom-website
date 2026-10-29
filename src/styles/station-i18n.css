@@ -1,0 +1,7 @@
+/* 仅处理本栏目长译文的固有宽度，不改变原 Sensors/Gateways 字号与布局。 */
+:is(main[data-model="H600"],main[data-model="H700"]) :is(.enquiry-layout,.faq-layout,.section-heading,.gateway-spec-grid)>*{min-width:0}
+@media(max-width:600px){
+ :is(main[data-model="H600"],main[data-model="H700"]) :is(h1,h2,h3,h4){overflow-wrap:anywhere;hyphens:auto}
+ :is(main[data-model="H600"],main[data-model="H700"]) :is(p,dd,dt,summary,label,button){overflow-wrap:anywhere;hyphens:auto}
+ :is(main[data-model="H600"],main[data-model="H700"]) :is(.feature-grid,summary)>*{min-width:0}
+}

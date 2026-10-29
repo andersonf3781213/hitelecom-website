@@ -1,0 +1,648 @@
+{
+  "model": "H600",
+  "kind": "Météo",
+  "slug": "weather-station",
+  "path": "/fr/product/weather-station",
+  "title": "Station météo H600 | Surveillance météo configurable | Hitelecom",
+  "metaDescription": "Configurez la station météo Hitelecom H600 avec 2–12 canaux de capteurs, une alimentation solaire ou secteur, une connectivité sans fil sélectionnée et une surveillance en ligne dans Hitelecom Cloud.",
+  "image": "h600.webp",
+  "imageAlt": "Boîtier du terminal de station météo Hitelecom H600 avec façade de marque et support de fixation, image officielle du produit",
+  "caption": "H600 · Terminal de station météo présenté",
+  "heroHeading": "Station de surveillance\nmétéo H600.",
+  "heroValue": "La météo locale.\nConnectée à votre site.",
+  "heroDescription": "Le Hitelecom H600 intègre les mesures météorologiques sélectionnées à un système connecté de surveillance de site. Configurez 2–12 canaux de capteurs selon les données météo nécessaires à votre équipe, avec une alimentation solaire ou secteur et une version 4G LTE, NB-IoT ou LoRa sélectionnée. Consultez les données de surveillance transmises en ligne dans Hitelecom Cloud et recevez des alertes lorsque les relevés dépassent les seuils configurés, ou convenez d’une intégration à une plateforme client compatible.",
+  "proof": [
+    {
+      "value": "2–12",
+      "label": "Canaux de capteurs configurés",
+      "note": "Sélectionnez les mesures et les ensembles de capteurs pour le projet"
+    },
+    {
+      "value": "Solaire / Secteur",
+      "label": "Options d’alimentation",
+      "note": "Dimensionnez le système d’alimentation fourni selon le site et le profil de fonctionnement"
+    },
+    {
+      "value": "MQTT",
+      "label": "Intégration des données à la plateforme",
+      "note": "Hitelecom Cloud ou une plateforme client compatible convenue"
+    }
+  ],
+  "featureTitle": "Les mesures météo.\nDéfinies selon le site.",
+  "featureIntro": "Définissez les mesures, l’alimentation et le cheminement des données dans une même configuration de station. Gardez les performances des capteurs, les exigences de transmission et les conditions d’installation explicites, de la sélection à la réception.",
+  "features": [
+    {
+      "title": "Canaux de mesure configurables",
+      "text": "Sélectionnez 2–12 canaux de capteurs pour le projet. Les options météorologiques comprennent la température de l’air, l’humidité relative, la vitesse et la direction du vent, la pression atmosphérique, les précipitations et le rayonnement solaire ; la liste des canaux fournis définit l’ensemble effectif."
+    },
+    {
+      "title": "Alimentation solaire ou secteur",
+      "text": "Choisissez une configuration d’alimentation solaire ou secteur selon les besoins des capteurs, le profil d’échantillonnage et de transmission, l’exposition du site et les infrastructures disponibles. Confirmez l’ensemble d’alimentation fourni et ses exigences d’entretien."
+    },
+    {
+      "title": "Connectivité sans fil sélectionnée",
+      "text": "Spécifiez la version 4G LTE, NB-IoT ou LoRa pour le déploiement. Adaptez le matériel cellulaire à l’opérateur local ; une installation LoRa nécessite une liaison de réception compatible convenue et une intégration à la plateforme."
+    },
+    {
+      "title": "Données en ligne et alertes sur seuils",
+      "text": "Utilisez Hitelecom Cloud pour consulter les données de surveillance transmises en ligne et recevoir des alertes lorsque les mesures dépassent les seuils configurés. Définissez les points surveillés, les limites et les destinataires des notifications selon les procédures du site."
+    },
+    {
+      "title": "Intégration à la plateforme par MQTT",
+      "text": "Intégrez les relevés sélectionnés à Hitelecom Cloud ou à une plateforme client compatible. Convenez du cheminement des données, du point de terminaison, du format des messages, de l’identité de l’appareil, des unités de mesure et de la configuration d’authentification."
+    },
+    {
+      "title": "Référence d’installation IP65",
+      "text": "La référence de protection publiée pour la station est IP65. Définissez l’étanchéité du boîtier, les entrées de câbles, l’exposition des capteurs et la fixation dans le cadre d’une installation complète ; confirmez les indices de protection et les limites de fonctionnement des composants fournis."
+    },
+    {
+      "title": "Configuration locale avec NFC",
+      "text": "Les configurations avec NFC permettent l’activation et la configuration locale de l’appareil. Confirmez le matériel fourni, les fonctions de configuration disponibles et la procédure de mise en service du projet."
+    },
+    {
+      "title": "Maintenance à distance du micrologiciel",
+      "text": "Les configurations prises en charge permettent des mises à jour du micrologiciel par OTA via la liaison de gestion à distance convenue. Confirmez la compatibilité du micrologiciel, la connectivité et la procédure de mise à jour lors de la mise en service."
+    }
+  ],
+  "planningIntro": "Un relevé météo utile commence par l’objectif de mesure et l’exposition au point de détection. Planifiez ensemble la liste des canaux, les emplacements des stations, l’alimentation et la connexion en aval.",
+  "planning": [
+    {
+      "title": "Définir les mesures",
+      "text": "Listez les grandeurs requises et distinguez les canaux mesurés des calculs éventuellement attendus dans un système récepteur. Spécifiez la plage, la précision, la résolution, les unités, l’intervalle d’échantillonnage et l’intervalle de transmission de chaque canal sélectionné.",
+      "brief": "Liste des canaux · Plages et précision des capteurs · Échantillonnage · Transmission · Alertes requises"
+    },
+    {
+      "title": "Planifier les points d’observation",
+      "text": "Évaluez le terrain, les structures environnantes, la végétation, les sources de chaleur proches et l’exposition. Sélectionnez des positions de capteurs et des fixations adaptées à l’objectif de mesure, avec un accès pour l’inspection et le nettoyage.",
+      "brief": "Plan du site · Exposition des capteurs · Position de fixation · Accès pour l’entretien · Conditions représentatives"
+    },
+    {
+      "title": "Dimensionner l’alimentation et le cheminement des données",
+      "text": "Examinez la consommation des capteurs, le profil de transmission, l’ensoleillement ou l’alimentation secteur disponibles et la version de communication sélectionnée. Confirmez le système récepteur et vérifiez le cheminement des données de bout en bout avec la configuration fournie.",
+      "brief": "Bilan énergétique · Alimentation solaire ou secteur · Opérateur ou liaison de réception LoRa · Mappage MQTT · Contrôles de réception"
+    }
+  ],
+  "installationText": "Planifiez le mât ou le support, les fondations ou l’interface de fixation, l’exposition des capteurs, le passage des câbles et l’accès d’entretien comme une installation complète. Tenez compte de l’ombrage, des structures, des turbulences et des sources de chaleur locales susceptibles d’influencer les mesures. L’alimentation solaire et la transmission sans fil nécessitent toujours un bilan énergétique adapté, une liaison de données disponible et un ensemble de capteurs entretenu.",
+  "workflow": [
+    {
+      "title": "Mesurer les canaux sélectionnés",
+      "text": "Les capteurs configurés mesurent les grandeurs météorologiques spécifiées. Consignez l’identité des canaux, les unités et les conditions de performance pertinentes des capteurs dans la liste du projet."
+    },
+    {
+      "title": "Transmettre via la version sélectionnée",
+      "text": "Transmettez les relevés selon le profil d’échantillonnage et de transmission convenu, via la configuration 4G LTE, NB-IoT ou LoRa fournie et sa liaison de données compatible en aval."
+    },
+    {
+      "title": "Consulter les données et intervenir",
+      "text": "Consultez les données de surveillance transmises en ligne dans Hitelecom Cloud et recevez des alertes lorsque les relevés dépassent les seuils configurés. Une plateforme client peut proposer les affichages, les procédures de notification et le traitement des données convenus."
+    }
+  ],
+  "coverageTitle": "Les mesures selon la configuration.\nLes conditions au point d’utilisation.",
+  "coverageText": "Spécifiez le capteur, la plage, la précision, la résolution et les conditions d’exposition pour chaque grandeur sélectionnée. La référence 2–12 canaux décrit une station configurée ; la liste des canaux fournis identifie les capteurs effectivement inclus. Les exigences d’échantillonnage, de transmission et de notification sur seuils constituent des éléments distincts de la définition du projet.",
+  "rows": [
+    [
+      "Modèle",
+      "H600"
+    ],
+    [
+      "Rôle de la station",
+      "Station configurable de surveillance météorologique"
+    ],
+    [
+      "Canaux de capteurs",
+      "2–12 canaux, sélectionnés pour le projet"
+    ],
+    [
+      "Options de canaux météorologiques",
+      "Température de l’air, humidité relative, vitesse du vent, direction du vent, pression atmosphérique, précipitations et rayonnement solaire ; selon la configuration"
+    ],
+    [
+      "Options environnementales étendues",
+      "Canaux PM2.5 / PM10, CO2 ou SO2 lorsqu’ils sont spécifiés et confirmés pour la configuration fournie"
+    ],
+    [
+      "Plage de mesure",
+      "Spécifiée pour chaque capteur et application sélectionnés"
+    ],
+    [
+      "Précision et résolution",
+      "Spécifiées pour le capteur sélectionné, sa plage de fonctionnement et les conditions de mesure ; aucune valeur unique pour toute la station"
+    ],
+    [
+      "Échantillonnage et transmission",
+      "Définir l’intervalle d’échantillonnage, l’intervalle de transmission et les exigences de notification sur seuils pour le projet"
+    ],
+    [
+      "Versions de communication",
+      "4G LTE / NB-IoT / LoRa, selon la configuration matérielle et logicielle sélectionnée"
+    ],
+    [
+      "Protocole de données",
+      "MQTT ; convenir du cheminement des données en aval, du point de terminaison, du format des messages et de l’authentification"
+    ],
+    [
+      "Bandes LTE publiées",
+      "LTE-TDD B34 / B38 / B39 / B40 / B41 ; LTE-FDD B1 / B3 / B5 / B8. Sélectionnez le modem selon l’opérateur du déploiement."
+    ],
+    [
+      "Options d’alimentation",
+      "Alimentation solaire ou secteur, selon la configuration du projet"
+    ],
+    [
+      "Référence de protection",
+      "Référence IP65 pour la station ; confirmer les indices de protection des composants, l’étanchéité et les conditions d’installation"
+    ],
+    [
+      "Configuration locale",
+      "Activation NFC et configuration locale sur la version fournie avec NFC"
+    ],
+    [
+      "Maintenance à distance",
+      "Mises à jour du micrologiciel par OTA sur la configuration prise en charge et via la liaison de gestion convenue"
+    ],
+    [
+      "Options de fixation",
+      "Pattes de fixation / collier de mât / fixation à fentes, selon la configuration fournie"
+    ]
+  ],
+  "specNote": "La liste des canaux et le devis du projet définissent les capteurs fournis, les performances de mesure, l’ensemble d’alimentation, la version de communication, la fixation et l’intégration à la plateforme. Confirmez la révision matérielle, les limites environnementales et les éventuelles homologations requises pour l’installation.",
+  "faqs": [
+    {
+      "q": "Quels paramètres météo le H600 peut-il mesurer ?",
+      "a": "Le H600 est configuré avec 2–12 canaux de capteurs sélectionnés. Les options météorologiques comprennent la température de l’air, l’humidité relative, la vitesse et la direction du vent, la pression atmosphérique, les précipitations et le rayonnement solaire. L’ensemble réel des capteurs est défini pour le projet. Les images du produit présentent le terminal ; les capteurs et les fixations fournis dépendent de la configuration du projet."
+    },
+    {
+      "q": "Combien de canaux faut-il spécifier ?",
+      "a": "La référence produit H600 prévoit 2–12 canaux de capteurs configurables. Commencez par les grandeurs nécessaires au projet, puis sélectionnez les capteurs et consignez les canaux effectifs dans la configuration fournie. La liste des canaux définit ce qui est mesuré sur le site."
+    },
+    {
+      "q": "Quelles sont la plage de mesure et la précision ?",
+      "a": "La plage, la précision et la résolution dépendent du capteur sélectionné et des conditions de fonctionnement. Spécifiez-les pour chaque grandeur requise, notamment la plage applicable, l’exposition et les éventuels documents d’étalonnage. Aucune valeur unique de précision ne décrit tous les canaux H600."
+    },
+    {
+      "q": "Comment configurer l’échantillonnage, la transmission et les alertes ?",
+      "a": "Définissez séparément l’intervalle d’échantillonnage, l’intervalle de transmission et les exigences de notification sur seuils. Leur mise en œuvre dépend des capteurs sélectionnés, de la version de communication, du système d’alimentation et de la configuration de la plateforme. Convenez du profil de fonctionnement requis et vérifiez-le lors de la mise en service."
+    },
+    {
+      "q": "La station peut-elle fonctionner à l’énergie solaire sur un site isolé ?",
+      "a": "Une configuration d’alimentation solaire peut être sélectionnée pour un site adapté. Dimensionnez le système d’alimentation selon la consommation des capteurs, le profil de fonctionnement et les conditions solaires locales, et prévoyez la fixation, la couverture de communication et l’accès d’entretien nécessaires. Aucune durée d’autonomie fixe n’est spécifiée pour toutes les configurations."
+    },
+    {
+      "q": "Quelle version de communication choisir ?",
+      "a": "Choisissez la version 4G LTE, NB-IoT ou LoRa selon le site et le système récepteur. Adaptez les bandes cellulaires et la configuration du modem à l’opérateur local. Un projet LoRa nécessite un récepteur ou une passerelle compatible convenu et une intégration en aval ; LoRa seul n’établit pas l’interopérabilité LoRaWAN."
+    },
+    {
+      "q": "Le H600 peut-il se connecter à une plateforme client ?",
+      "a": "Une intégration à une plateforme client compatible peut être convenue avec l’approche de données MQTT publiée. Définissez le cheminement complet des données, le point de terminaison, les topics, le mappage des charges utiles, l’identité de l’appareil, les unités, les horodatages et l’authentification prise en charge pour la version de communication fournie."
+    },
+    {
+      "q": "Que peuvent faire les utilisateurs dans Hitelecom Cloud ?",
+      "a": "Les utilisateurs peuvent consulter les données de surveillance transmises en ligne et recevoir des alertes lorsque les relevés dépassent les seuils configurés. Convenez des vues par canal, des valeurs de seuil, des destinataires des notifications et des procédures d’exploitation pour le projet, puis vérifiez-les avec des mesures représentatives."
+    },
+    {
+      "q": "La configuration NFC et les mises à jour OTA sont-elles disponibles ?",
+      "a": "L’activation et la configuration locale par NFC, ainsi que les mises à jour à distance du micrologiciel par OTA, figurent dans la référence produit. Confirmez leur disponibilité, les réglages pris en charge et la procédure d’utilisation pour la configuration matérielle, logicielle et de plateforme fournie."
+    },
+    {
+      "q": "L’indice IP65 s’applique-t-il à chaque partie de la station installée ?",
+      "a": "IP65 est la référence de protection publiée pour la station. Les éléments sensibles, le boîtier, les connecteurs, l’ensemble d’alimentation et la fixation doivent être spécifiés selon leurs conditions respectives d’exposition et d’installation. Confirmez les indices de protection et les limites de fonctionnement de l’ensemble complet fourni."
+    },
+    {
+      "q": "Quelle planification prévoir pour l’installation et l’entretien ?",
+      "a": "Planifiez une exposition représentative des capteurs, la fixation, l’alimentation, le cheminement des données et l’accès d’entretien. Les structures proches, la végétation, l’ombrage, les sources de chaleur et l’état des surfaces peuvent influencer les observations. Suivez les procédures d’inspection, de nettoyage et d’entretien fournies pour les capteurs et le système d’alimentation sélectionnés."
+    },
+    {
+      "q": "Quelle différence entre le H600 et la station hydrologique H700 ?",
+      "a": "Le H600 est configuré pour les observations météorologiques, telles que le vent, les précipitations, les conditions atmosphériques et le rayonnement solaire. Le H700 est configuré pour le niveau d’eau, les paramètres liés à l’écoulement, la qualité de l’eau et les canaux environnementaux associés. Sélectionnez la plateforme et les ensembles de capteurs selon les grandeurs à surveiller."
+    }
+  ],
+  "groups": [
+    {
+      "id": "industrial-utilities",
+      "title": "Sites industriels et services publics",
+      "jumpLabel": "Industrie et services publics",
+      "intro": "Intégrez les observations météo locales à l’analyse des zones industrielles extérieures, des sites de services publics et des conditions d’exploitation industrielle.",
+      "imageKey": "industrial",
+      "imageAlt": "Enceinte extérieure d’un service d’électricité avec bâtiments de service et équipements de terrain",
+      "imageCaption": "Sites industriels et services publics · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "industrial-ambient-weather",
+          "title": "Relevés météo des zones industrielles extérieures",
+          "networkRole": "Enregistre les canaux atmosphériques sélectionnés autour des équipements industriels extérieurs.",
+          "description": "Regroupez les relevés de température de l’air, d’humidité, de précipitations et de pression pour les examiner régulièrement avec l’historique d’exploitation et d’inspection du site.",
+          "placement": "Choisissez une position représentative de la zone surveillée, à l’écart des panaches d’évacuation, des surfaces d’équipements chaudes ou de la chaleur des bâtiments.",
+          "projectBrief": "Plan du site industriel, canaux requis, questions d’exploitation, exposition des capteurs et profil de transmission."
+        },
+        {
+          "id": "industrial-wind-exposure",
+          "title": "Observations du vent dans les zones de travail exposées",
+          "networkRole": "Transmet les mesures configurées de vitesse et de direction du vent.",
+          "description": "Documentez les conditions de vent locales dans les zones de travail extérieures exposées afin que les équipes puissent examiner les conditions du site avec leurs procédures d’exploitation.",
+          "placement": "Évaluez les obstacles et les turbulences au point de mesure ; consignez le dispositif de fixation et sa position par rapport à la zone de travail.",
+          "projectBrief": "Plan de la zone de travail, exigences de mesure du vent, options de fixation et procédure de notification."
+        },
+        {
+          "id": "industrial-environment-context",
+          "title": "Contexte météo des relevés environnementaux",
+          "networkRole": "Associe les canaux météo sélectionnés à des options confirmées de surveillance environnementale.",
+          "description": "Mettez en relation les observations météo configurées et les relevés sélectionnés de particules ou de gaz lorsque ces capteurs supplémentaires sont spécifiés pour le projet.",
+          "placement": "Examinez séparément les exigences d’exposition et de positionnement de chaque capteur sélectionné ; évitez de considérer un seul emplacement comme représentatif de toutes les sources.",
+          "projectBrief": "Canaux météo et environnementaux requis, performances des capteurs, emplacements et besoins de comparaison des données."
+        }
+      ]
+    },
+    {
+      "id": "solar-pv",
+      "title": "Installations solaires photovoltaïques",
+      "jumpLabel": "Solaire photovoltaïque",
+      "intro": "Collectez les observations météo du site et de rayonnement sélectionnées autour des installations photovoltaïques, avec une configuration de mesure définie pour le projet.",
+      "imageKey": "solar",
+      "imageAlt": "Panneaux photovoltaïques au sol sous un ciel dégagé avec équipements de service du site",
+      "imageCaption": "Installations solaires photovoltaïques · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "pv-ambient-wind",
+          "title": "Conditions ambiantes et vent autour des panneaux photovoltaïques",
+          "networkRole": "Enregistre les canaux sélectionnés de température de l’air, d’humidité et de vent.",
+          "description": "Conservez les observations atmosphériques locales avec les relevés d’exploitation photovoltaïque pour faciliter l’analyse des variations des conditions du site.",
+          "placement": "Sélectionnez une exposition représentative et tenez compte de l’ombrage des panneaux, des structures proches et de la circulation d’air locale autour de la station.",
+          "projectBrief": "Disposition des panneaux, canaux météo requis, emplacement de la station et exigences de comparaison dans la plateforme."
+        },
+        {
+          "id": "pv-solar-radiation",
+          "title": "Observations configurées du rayonnement solaire",
+          "networkRole": "Transmet les relevés du capteur de rayonnement solaire sélectionné.",
+          "description": "Intégrez les mesures de rayonnement spécifiées à la plateforme de surveillance, avec des unités, un type de capteur et des exigences d’exposition clairement définis.",
+          "placement": "Spécifiez le capteur de rayonnement, son orientation, sa fixation, l’accès pour le nettoyage et les éventuelles exigences de surveillance du projet applicables à l’observation prévue.",
+          "projectBrief": "Grandeur de rayonnement, exigences du capteur, dispositif de fixation, documents d’étalonnage et intervalle de transmission."
+        },
+        {
+          "id": "pv-rain-humidity",
+          "title": "Historique des précipitations et des conditions d’humidité",
+          "networkRole": "Collecte les relevés configurés de précipitations et d’humidité relative.",
+          "description": "Examinez l’historique des précipitations et de l’humidité avec les relevés d’inspection et d’entretien du site pour comprendre les périodes de variation de l’humidité ambiante.",
+          "placement": "Placez les capteurs de précipitations et d’humidité selon leurs exigences d’exposition et prévoyez un accès pratique pour l’entretien.",
+          "projectBrief": "Canaux sélectionnés, exigences de mesure des précipitations, procédure d’inspection et intervalles de conservation des relevés."
+        }
+      ]
+    },
+    {
+      "id": "wind-sites",
+      "title": "Installations éoliennes",
+      "jumpLabel": "Énergie éolienne",
+      "intro": "Utilisez les observations météo configurées du site comme relevés d’exploitation locaux autour des installations éoliennes et de leurs infrastructures auxiliaires.",
+      "imageKey": "wind",
+      "imageAlt": "Éoliennes sur des collines dégagées avec pistes d’accès et végétation environnante",
+      "imageCaption": "Installations éoliennes · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "wind-site-observations",
+          "title": "Relevés locaux de vitesse et de direction du vent",
+          "networkRole": "Enregistre les canaux de vent à la position de station spécifiée.",
+          "description": "Suivez les observations locales du vent au point de mesure installé pour l’analyse d’exploitation. Pour un objectif d’observation à hauteur de moyeu, spécifiez séparément la position de mesure requise et les instruments adaptés.",
+          "placement": "Documentez la hauteur de mesure, le terrain et les obstacles proches, puis évaluez si la position convient à l’objectif du projet.",
+          "projectBrief": "Objectif d’observation, exigences des capteurs, position de fixation, terrain et besoins de transmission."
+        },
+        {
+          "id": "wind-maintenance-weather",
+          "title": "Contexte météo des interventions de maintenance",
+          "networkRole": "Transmet les conditions sélectionnées de vent, de précipitations et d’atmosphère.",
+          "description": "Fournissez des relevés météo locaux que les équipes de maintenance peuvent examiner avec les calendriers d’accès et les procédures d’exploitation du site.",
+          "placement": "Choisissez une position de station accessible et représentative de la zone d’intervention ; vérifiez l’alimentation et la liaison de communication sélectionnée.",
+          "projectBrief": "Plan de la zone d’intervention, canaux requis, profil de transmission et destinataires prévus des notifications."
+        },
+        {
+          "id": "wind-site-seasonal-environment",
+          "title": "Historique saisonnier des conditions ambiantes",
+          "networkRole": "Collecte les observations sélectionnées de température, d’humidité et de pression.",
+          "description": "Constituez un historique atmosphérique propre au site autour des zones auxiliaires du parc éolien pour le comparer aux inspections et à l’historique d’entretien des équipements.",
+          "placement": "Éloignez le point de mesure des sources de chaleur locales et des structures susceptibles de fausser les observations prévues.",
+          "projectBrief": "Grandeurs requises, exposition de la station, relevés conservés et exigences d’analyse dans la plateforme."
+        }
+      ]
+    },
+    {
+      "id": "open-field-agriculture",
+      "title": "Agriculture de plein champ",
+      "jumpLabel": "Agriculture de plein champ",
+      "intro": "Enregistrez la météo des champs pour l’analyse de la conduite des cultures, en distinguant clairement les observations de la station des éventuels calculs agronomiques dans le système récepteur.",
+      "imageKey": "field-agriculture",
+      "imageAlt": "Canal d’irrigation en béton et vanne manuelle à côté de champs cultivés ouverts",
+      "imageCaption": "Agriculture de plein champ · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "field-crop-weather",
+          "title": "Observations du microclimat des champs",
+          "networkRole": "Enregistre les canaux configurés de température de l’air, d’humidité et d’atmosphère.",
+          "description": "Suivez les conditions atmosphériques locales au fil d’une saison de culture et comparez les relevés aux observations de terrain et aux notes de conduite des cultures.",
+          "placement": "Sélectionnez une exposition représentative du champ surveillé et tenez compte du terrain, de la croissance de la végétation et des zones irriguées proches.",
+          "projectBrief": "Cultures et plan des champs, grandeurs requises, exposition saisonnière et intervalle de transmission."
+        },
+        {
+          "id": "field-rainfall-history",
+          "title": "Relevés de précipitations pour l’analyse des champs",
+          "networkRole": "Transmet les relevés du capteur de précipitations sélectionné.",
+          "description": "Conservez les observations locales de précipitations pour les examiner avec les relevés d’irrigation et de gestion de l’eau des champs. Tout calcul de bilan hydrique doit être défini séparément.",
+          "placement": "Évaluez l’exposition aux précipitations et l’accès pour l’inspection ou le nettoyage ; gardez le point de mesure à l’écart des effets indésirables d’abri ou d’éclaboussures.",
+          "projectBrief": "Grandeur de précipitations, spécification du capteur, emplacements des champs, intervalles des relevés et besoins du système récepteur."
+        },
+        {
+          "id": "field-wind-work-records",
+          "title": "Relevés du vent pour les travaux agricoles",
+          "networkRole": "Collecte les mesures sélectionnées de vitesse et de direction du vent.",
+          "description": "Fournissez des relevés locaux du vent aux équipes qui examinent la pulvérisation, le travail du sol et les autres activités agricoles planifiées selon leurs propres procédures d’exploitation.",
+          "placement": "Documentez l’exposition de la station et sa position par rapport au champ ; tenez compte des variations de hauteur des cultures et de la végétation proche.",
+          "projectBrief": "Travaux agricoles, exigences des canaux de vent, position de mesure et préférences de notification."
+        }
+      ]
+    },
+    {
+      "id": "greenhouse-horticulture",
+      "title": "Serres et horticulture",
+      "jumpLabel": "Serres",
+      "intro": "Associez la météo de référence extérieure et les canaux sélectionnés autour des cultures sous abri pour faciliter l’analyse des conditions entourant la production.",
+      "imageKey": "agriculture",
+      "imageAlt": "Zone de culture sous serre avec plantes et équipements de service",
+      "imageCaption": "Serres et horticulture · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "greenhouse-external-reference",
+          "title": "Météo extérieure de référence pour les serres",
+          "networkRole": "Enregistre les mesures atmosphériques sélectionnées à l’extérieur de la structure de culture.",
+          "description": "Comparez les relevés extérieurs de température, d’humidité et de pression aux mesures de production intérieure configurées séparément, lorsqu’elles sont disponibles.",
+          "placement": "Gardez le point de référence extérieur à l’écart des aérations, des évacuations et des surfaces chauffées qui ne représentent pas les conditions ambiantes.",
+          "projectBrief": "Plan de la serre, canaux de référence extérieure, éventuelles sources de données intérieures et besoins de comparaison."
+        },
+        {
+          "id": "greenhouse-vent-weather",
+          "title": "Observations du vent près des serres",
+          "networkRole": "Transmet les mesures configurées du vent pour l’analyse d’exploitation.",
+          "description": "Documentez les conditions de vent autour des infrastructures des serres afin que les exploitants puissent les examiner avec les relevés de ventilation et d’exploitation des installations.",
+          "placement": "Évaluez les turbulences générées par les bâtiments et sélectionnez une position adaptée à l’observation prévue.",
+          "projectBrief": "Plan des installations, mesures du vent, exposition de la station et procédures du système récepteur."
+        },
+        {
+          "id": "horticulture-radiation-records",
+          "title": "Relevés de rayonnement solaire pour l’horticulture",
+          "networkRole": "Collecte les relevés d’un canal de rayonnement spécifié.",
+          "description": "Conservez les observations de rayonnement sélectionnées pour les comparer aux relevés de gestion des cultures et de l’éclairage, avec la grandeur et les unités de capteur convenues.",
+          "placement": "Confirmez l’orientation du capteur, son exposition et la procédure de nettoyage pour l’ensemble de mesure sélectionné.",
+          "projectBrief": "Mesure de rayonnement requise, spécification du capteur, position d’observation et profil de transmission."
+        }
+      ]
+    },
+    {
+      "id": "buildings-campuses",
+      "title": "Bâtiments, campus et sites urbains",
+      "jumpLabel": "Bâtiments et campus",
+      "intro": "Ajoutez des observations locales extérieures à la surveillance des installations et des sites urbains, avec des positions de mesure choisies selon les espaces que les relevés doivent représenter.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Bâtiment de campus en briques rouges et cour paysagée de jour",
+      "imageCaption": "Bâtiments, campus et sites urbains · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "campus-outdoor-microclimate",
+          "title": "Microclimat des cours et des espaces publics",
+          "networkRole": "Enregistre les canaux extérieurs sélectionnés de température, d’humidité et de vent.",
+          "description": "Comparez les conditions observées dans les espaces extérieurs fréquentés et examinez les relevés avec les informations d’utilisation des installations et de gestion paysagère.",
+          "placement": "Tenez compte de l’ombrage, des surfaces des bâtiments, des sorties de ventilation et de la végétation proche au point de mesure sélectionné.",
+          "projectBrief": "Espaces extérieurs surveillés, objectifs d’observation, positions des capteurs et vues requises dans la plateforme."
+        },
+        {
+          "id": "building-rooftop-weather",
+          "title": "Observations météo en toiture",
+          "networkRole": "Transmet les canaux météo sélectionnés depuis un emplacement spécifié en toiture.",
+          "description": "Documentez les conditions locales en toiture pertinentes pour le projet, tout en consignant l’influence du toit et des structures environnantes sur l’exposition.",
+          "placement": "Prévoyez une interface de fixation, un accès d’entretien et un passage de câbles adaptés ; évaluez les turbulences et les sources de chaleur proches.",
+          "projectBrief": "Plan de toiture, emplacements de fixation autorisés, canaux, exigences d’accès et profil de transmission."
+        },
+        {
+          "id": "campus-rainfall-context",
+          "title": "Précipitations et contexte de drainage du campus",
+          "networkRole": "Collecte les observations configurées de précipitations pour l’analyse du site.",
+          "description": "Examinez l’historique local des précipitations avec les inspections du drainage, l’entretien des espaces verts et les autres relevés des installations. Le niveau d’eau nécessite un système de mesure spécifié séparément.",
+          "placement": "Sélectionnez une exposition aux précipitations adaptée au site et prévoyez un parcours pratique pour l’inspection et le nettoyage.",
+          "projectBrief": "Zones de drainage du campus, exigences de mesure des précipitations, position d’observation et intervalles des relevés."
+        }
+      ]
+    },
+    {
+      "id": "transport-corridors",
+      "title": "Infrastructures routières, ferroviaires et logistiques",
+      "jumpLabel": "Transport et logistique",
+      "intro": "Enregistrez les conditions atmosphériques locales autour des axes de transport et des installations auxiliaires, avec des canaux configurés et une exposition de mesure documentée.",
+      "imageKey": "municipal",
+      "imageAlt": "Infrastructure routière et axe de transport urbain avec équipements de service",
+      "imageCaption": "Infrastructures routières, ferroviaires et logistiques · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "transport-exposed-wind",
+          "title": "Observations du vent sur les sites exposés des axes de transport",
+          "networkRole": "Enregistre les canaux spécifiés de vitesse et de direction du vent.",
+          "description": "Fournissez des observations aux abords des ponts, sur les remblais ou dans d’autres emplacements exposés des axes de transport pour les examiner selon les procédures établies de l’exploitant.",
+          "placement": "Évaluez le terrain, les structures et les turbulences locales ; documentez la représentativité du point d’observation pour l’emplacement visé.",
+          "projectBrief": "Plan de l’axe de transport, points d’observation, exigences des canaux de vent et destinataires des données."
+        },
+        {
+          "id": "transport-roadside-weather",
+          "title": "Relevés atmosphériques en bord de route",
+          "networkRole": "Transmet les canaux sélectionnés de température, d’humidité, de pression et de précipitations.",
+          "description": "Conservez les relevés atmosphériques locaux le long des infrastructures routières ou ferroviaires pour l’analyse environnementale et la maintenance. Documentez les positions des capteurs et les mesures afin de faciliter la comparaison des emplacements sélectionnés le long des axes.",
+          "placement": "Choisissez une position à l’écart de la chaleur du trafic, des éclaboussures et de la protection des structures susceptibles de fausser les mesures, tout en préservant l’accès d’entretien.",
+          "projectBrief": "Canaux requis, conditions de l’axe, alimentation disponible, couverture de communication et intervalle de transmission."
+        },
+        {
+          "id": "logistics-yard-weather",
+          "title": "Historique météo des dépôts et des plateformes logistiques",
+          "networkRole": "Collecte les observations météo configurées autour des zones de service extérieures.",
+          "description": "Intégrez la météo du site au processus d’analyse des inspections de la plateforme, des plannings de manutention extérieure et des relevés d’exploitation des installations.",
+          "placement": "Sélectionnez une exposition représentative et tenez compte des entrepôts, des voies de circulation et des changements dans les matériaux empilés.",
+          "projectBrief": "Plan de la plateforme, grandeurs requises, fixation de la station, calendrier d’exploitation et procédure de notification."
+        }
+      ]
+    },
+    {
+      "id": "water-catchments",
+      "title": "Services des eaux et bassins versants",
+      "jumpLabel": "Eau et bassins versants",
+      "intro": "Collectez les observations météorologiques autour des infrastructures hydrauliques et des bassins versants, en distinguant les canaux de précipitations et de météo des mesures hydrologiques.",
+      "imageKey": "catchment-weather",
+      "imageAlt": "Réservoir d’eau douce avec petit ouvrage de régulation clôturé et collines verdoyantes environnantes",
+      "imageCaption": "Services des eaux et bassins versants · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "catchment-rainfall-observations",
+          "title": "Observations des précipitations du bassin versant",
+          "networkRole": "Transmet les relevés configurés du canal de précipitations.",
+          "description": "Collectez les observations locales de précipitations pour les comparer aux relevés de niveau d’eau ou de débit obtenus séparément dans un programme de surveillance du bassin versant.",
+          "placement": "Évaluez le terrain et les effets d’abri au point de mesure des précipitations, et prévoyez l’accès pour l’inspection et l’entretien.",
+          "projectBrief": "Plan du bassin versant, exigences de précipitations, autres sources de données, positions des stations et besoins de transmission."
+        },
+        {
+          "id": "reservoir-nearshore-weather",
+          "title": "Conditions météo autour des réservoirs",
+          "networkRole": "Enregistre les mesures atmosphériques et de vent sélectionnées près d’un réservoir.",
+          "description": "Documentez la météo locale au point installé pour l’analyse d’exploitation et environnementale des installations du réservoir, avec des relevés hydrologiques configurés séparément pour comparaison si nécessaire.",
+          "placement": "Tenez compte de l’exposition de la rive, des structures environnantes et de l’accès d’entretien ; spécifiez les composants selon l’environnement réel du site.",
+          "projectBrief": "Plan de la rive, grandeurs météo requises, options d’alimentation et exigences du système récepteur."
+        },
+        {
+          "id": "water-utility-weather-context",
+          "title": "Relevés météo des sites de pompage et de traitement",
+          "networkRole": "Collecte les observations météo sélectionnées autour des installations des services des eaux.",
+          "description": "Examinez les relevés atmosphériques et de précipitations avec les inspections des installations et l’historique d’entretien du site. Sélectionnez les mesures d’eau supplémentaires dans une configuration distincte convenue.",
+          "placement": "Évitez la chaleur des bâtiments, les évacuations et les autres influences locales indésirables, puis vérifiez le dispositif d’alimentation et de communication sélectionné.",
+          "projectBrief": "Plan du site de service des eaux, canaux requis, exposition des mesures et procédure d’examen des relevés."
+        }
+      ]
+    },
+    {
+      "id": "coastal-ports",
+      "title": "Installations côtières et portuaires",
+      "jumpLabel": "Littoral et ports",
+      "intro": "Spécifiez les mesures météo pour les installations à terre, avec une exposition des composants, une fixation et un entretien adaptés aux conditions du site.",
+      "imageKey": "coastal-port",
+      "imageAlt": "Eaux côtières et navires au large vus depuis un rivage rocheux",
+      "imageCaption": "Installations côtières et portuaires · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "port-local-weather",
+          "title": "Observations météo autour des installations portuaires",
+          "networkRole": "Transmet les canaux de vent et d’atmosphère sélectionnés au point installé.",
+          "description": "Documentez la météo locale pour l’examiner avec les relevés d’exploitation et d’entretien du port. Confirmez les exigences de mesure du projet, l’exposition des composants et les documents d’installation avant le déploiement.",
+          "placement": "Examinez l’exposition au sel, les turbulences dues aux structures, la fixation et l’accès pratique ; confirmez des composants adaptés à l’environnement.",
+          "projectBrief": "Plan du port, grandeurs météo, conditions d’exposition, fixation et procédures de la plateforme."
+        },
+        {
+          "id": "coastal-infrastructure-exposure",
+          "title": "Exposition atmosphérique des infrastructures côtières",
+          "networkRole": "Collecte les observations sélectionnées de température, d’humidité, de pression et de vent.",
+          "description": "Conservez l’historique météo du site pour le comparer aux inspections et aux relevés d’entretien des infrastructures de services publics ou de bâtiments côtiers.",
+          "placement": "Évaluez l’exposition aux embruns et les exigences de positionnement de chaque capteur et raccordement de l’ensemble fourni.",
+          "projectBrief": "Emplacements des équipements, mesures requises, conditions environnementales et accès d’entretien."
+        },
+        {
+          "id": "estuary-weather-context",
+          "title": "Contexte météo des observations estuariennes",
+          "networkRole": "Enregistre les canaux météo configurés près des sites de surveillance d’estuaire.",
+          "description": "Comparez les relevés atmosphériques et de précipitations locaux aux données hydrologiques mesurées séparément. La marée, le niveau d’eau et la qualité de l’eau nécessitent leurs propres dispositifs de mesure sélectionnés.",
+          "placement": "Sélectionnez un emplacement adapté à l’objectif météorologique et tenez compte des variations d’accès et de l’exposition en bord d’eau.",
+          "projectBrief": "Programme d’observation, canaux météo, données hydrologiques externes et exigences de transmission."
+        }
+      ]
+    },
+    {
+      "id": "construction-earthworks",
+      "title": "Construction et génie civil",
+      "jumpLabel": "Construction et génie civil",
+      "intro": "Conservez un relevé météo local autour des ouvrages de génie civil et des chantiers extérieurs évolutifs, en réexaminant l’exposition de la station à mesure que le site se développe.",
+      "imageKey": "civil-earthworks",
+      "imageAlt": "Ouvrage de génie civil et remblai de terrassement avec mur de soutènement et alentours dégagés",
+      "imageCaption": "Construction et génie civil · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "construction-weather-log",
+          "title": "Journaux météo de chantier pour le génie civil",
+          "networkRole": "Collecte les relevés atmosphériques, de vent et de précipitations sélectionnés.",
+          "description": "Conservez les observations météo pour les comparer aux journaux de travaux, aux inspections et aux plannings de construction selon les procédures établies du projet.",
+          "placement": "Réexaminez la position de la station lorsque les équipements, les stocks et les structures temporaires évoluent sur le chantier.",
+          "projectBrief": "Plan du site, phases du projet, canaux requis, options de fixation et profil de transmission."
+        },
+        {
+          "id": "construction-particulate-context",
+          "title": "Contexte météo des canaux de particules sélectionnés",
+          "networkRole": "Transmet les relevés météo configurés et les relevés confirmés des canaux de particules.",
+          "description": "Examinez le vent et les conditions ambiantes avec les relevés PM2.5 ou PM10 lorsque ces capteurs sont inclus. Définissez les performances de mesure, la documentation et les éventuelles exigences applicables du projet avec l’ensemble de capteurs sélectionné.",
+          "placement": "Spécifiez séparément les exigences d’exposition et les besoins d’entretien des capteurs météo et de particules.",
+          "projectBrief": "Grandeurs requises, capteurs sélectionnés, performances de mesure, exposition du site et besoins d’analyse des données."
+        },
+        {
+          "id": "earthworks-rainfall-history",
+          "title": "Historique des précipitations autour des terrassements",
+          "networkRole": "Collecte les observations de précipitations sélectionnées pour l’analyse de terrain.",
+          "description": "Conservez les relevés de précipitations avec l’heure et le lieu documentés pour les examiner avec les observations de terrain et les journaux d’inspection des terrassements.",
+          "placement": "Choisissez une exposition adaptée aux précipitations et préservez l’accès au fil des changements de terrain et d’activités sur le site.",
+          "projectBrief": "Zones de terrassement, exigences de précipitations, autres données de surveillance et intervalles des relevés."
+        }
+      ]
+    },
+    {
+      "id": "parks-forestry-heritage",
+      "title": "Parcs, forêts et sites patrimoniaux",
+      "jumpLabel": "Parcs et patrimoine",
+      "intro": "Observez les conditions extérieures locales dans les paysages, en lisière de forêt et sur les sites patrimoniaux, en adaptant l’implantation de la station à la question environnementale.",
+      "imageKey": "parks-gardens",
+      "imageAlt": "Parc public paysagé avec arbres, allées et étang",
+      "imageCaption": "Parcs, forêts et sites patrimoniaux · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "park-microclimate-records",
+          "title": "Microclimat des parcs et des espaces paysagers",
+          "networkRole": "Enregistre les canaux atmosphériques et de précipitations sélectionnés.",
+          "description": "Comparez les conditions extérieures locales aux relevés d’entretien paysager et d’observation saisonnière, avec une position de mesure documentée.",
+          "placement": "Tenez compte du couvert végétal, de l’ombrage, de l’irrigation et des surfaces proches pour sélectionner la zone que la station doit représenter.",
+          "projectBrief": "Zones paysagères, objectifs de mesure, canaux sélectionnés et intervalles requis des relevés."
+        },
+        {
+          "id": "forest-edge-weather",
+          "title": "Observations météo en lisière de forêt",
+          "networkRole": "Transmet les mesures météo configurées depuis un emplacement de terrain accessible.",
+          "description": "Constituez un relevé météo local pour les programmes écologiques et forestiers. Spécifiez les grandeurs météo et les éventuels canaux environnementaux supplémentaires requis pour le programme d’observation.",
+          "placement": "Évaluez l’influence de la végétation, du terrain et des variations saisonnières du couvert végétal, et planifiez l’alimentation, la communication et l’accès d’entretien.",
+          "projectBrief": "Emplacements de terrain, grandeurs météo requises, exposition saisonnière et exigences de transfert des données."
+        },
+        {
+          "id": "heritage-outdoor-setting",
+          "title": "Conditions extérieures des propriétés patrimoniales",
+          "networkRole": "Collecte les observations météo sélectionnées autour de la propriété.",
+          "description": "Examinez l’historique atmosphérique et de précipitations avec les inspections des espaces extérieurs, du drainage et des façades. Les mesures météo sélectionnées fournissent le contexte extérieur de la propriété.",
+          "placement": "Sélectionnez une exposition représentative sans effets indésirables des murs, des évacuations ou des cours abritées, sauf si ceux-ci constituent les cibles d’observation.",
+          "projectBrief": "Plan de la propriété, zones d’observation, contraintes d’installation et exigences d’analyse dans la plateforme."
+        }
+      ]
+    },
+    {
+      "id": "education-observation",
+      "title": "Enseignement et observation environnementale",
+      "jumpLabel": "Enseignement et observation",
+      "intro": "Mettez les observations locales configurées à disposition des programmes pédagogiques et environnementaux, avec des spécifications de capteurs et des conditions de site documentées pour leur interprétation.",
+      "imageKey": "environment-weather",
+      "imageAlt": "Instruments d’observation météo de terrain dans un paysage dégagé",
+      "imageCaption": "Enseignement et observation environnementale · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "education-local-weather",
+          "title": "Météo locale pour les programmes pédagogiques",
+          "networkRole": "Transmet les mesures sélectionnées à la plateforme de surveillance convenue.",
+          "description": "Utilisez des relevés météo locaux accessibles en classe et sur le terrain, avec les grandeurs configurées, les unités et le lieu d’observation clairement identifiés.",
+          "placement": "Prévoyez une supervision et un accès d’entretien adaptés tout en préservant l’exposition requise par les capteurs sélectionnés.",
+          "projectBrief": "Objectifs pédagogiques, canaux, site d’observation, accès utilisateurs et exigences d’affichage des données."
+        },
+        {
+          "id": "comparative-observation-sites",
+          "title": "Relevés comparables entre sites d’observation",
+          "networkRole": "Collecte les canaux configurés avec des réglages de capteurs et de transmission documentés.",
+          "description": "Comparez les observations des emplacements sélectionnés après avoir défini des spécifications de capteurs, des unités, des horaires et des relevés d’exposition cohérents pour le programme.",
+          "placement": "Consignez les positions des capteurs, l’exposition et l’historique d’entretien de chaque site pour permettre à l’équipe d’interpréter les différences entre les lieux d’observation.",
+          "projectBrief": "Liste des sites, spécifications des canaux, exigences temporelles, documentation d’exposition et méthode de comparaison."
+        },
+        {
+          "id": "environment-program-weather",
+          "title": "Relevés météo pour les programmes environnementaux",
+          "networkRole": "Enregistre les canaux atmosphériques, de précipitations et de rayonnement sélectionnés.",
+          "description": "Fournissez le contexte météo du site à un programme d’observation environnementale, avec toute analyse supplémentaire ou grandeur dérivée définie dans le système récepteur.",
+          "placement": "Planifiez la documentation d’étalonnage, l’inspection et le nettoyage selon les instruments sélectionnés et les exigences du programme prévu.",
+          "projectBrief": "Objectifs du programme, exigences de mesure, documentation, plan d’entretien et intégration à la plateforme."
+        }
+      ]
+    }
+  ],
+  "imageWidth": 627,
+  "imageHeight": 635,
+  "applicationsIntro": "Configurez les observations météo selon les questions d’exploitation de chaque site. Les exemples ci-dessous décrivent des usages de mesures sélectionnées ; les capteurs, l’exposition, la transmission et les procédures de plateforme sont spécifiés pour l’application.",
+  "applicationsHeading": "Des observations locales.\nSur vos sites d’activité.",
+  "relatedPath": "/product/hydrology-monitoring-station",
+  "relatedLabel": "Découvrir la station hydrologique H700",
+  "datasheet": "/downloads/weather-station-datasheet.pdf"
+}

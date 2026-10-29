@@ -1,0 +1,648 @@
+{
+  "model": "H700",
+  "kind": "Hydrologie",
+  "slug": "hydrology-monitoring-station",
+  "path": "/de/product/hydrology-monitoring-station",
+  "title": "Hydrologische Überwachungsstation H700 | Wasserdaten | Hitelecom",
+  "metaDescription": "Konfigurieren Sie die Hitelecom H700 mit 2–12 Sensorkanälen zur Wasser- und Umweltüberwachung. Wählen Sie Messgrößen, Stromversorgung, Funkausführung und MQTT-Integration.",
+  "image": "h700.webp",
+  "imageAlt": "Hydrologische Überwachungsstation Hitelecom H700, offizielles Produktbild",
+  "caption": "H700 · Hydrologische Überwachungsstation",
+  "heroHeading": "H700 hydrologische\nÜberwachungsstation.",
+  "heroValue": "Wasserdaten aus dem Feld.\nMit Ihrem Standort verbunden.",
+  "heroDescription": "Die Hitelecom H700 integriert ausgewählte Wasser- und Umweltmessungen in ein vernetztes Überwachungssystem. Konfigurieren Sie 2–12 Sensorkanäle für Wasserstand, durchflussbezogene Beobachtungen, Wasserqualitätsmessungen und relevante Wetterbedingungen. Wählen Sie Sensorbaugruppen, Solar- oder Netzstromversorgung, Kommunikationsausführung und Übertragungsprofil für den Standort. Sehen Sie hochgeladene Daten online in Hitelecom Cloud ein, erhalten Sie Meldungen bei Überschreitung konfigurierter Schwellenwerte oder vereinbaren Sie die MQTT-Integration in eine kompatible Kundenplattform.",
+  "proof": [
+    {
+      "value": "2–12",
+      "label": "Konfigurierte Sensorkanäle",
+      "note": "Messgrößen und Sensorbaugruppen auswählen"
+    },
+    {
+      "value": "Solar / Netz",
+      "label": "Stromversorgung am Standort",
+      "note": "Stromversorgung für die gesamte Last auslegen"
+    },
+    {
+      "value": "MQTT",
+      "label": "Datenintegration in Plattformen",
+      "note": "Hitelecom Cloud oder eine kompatible Kundenplattform"
+    }
+  ],
+  "featureTitle": "Wasserbeobachtungen.\nFür den Standort konfiguriert.",
+  "featureIntro": "Definieren Sie jede Messung, ihre Installation und ihren Datenweg als Teil einer gemeinsamen Stationskonfiguration. Die ausgewählten Sensoren bestimmen, was die Station misst.",
+  "features": [
+    {
+      "title": "Konfigurierte hydrologische Messungen",
+      "text": "Wählen Sie 2–12 Sensorkanäle für das Projekt. Messungen von Wasserstand, durchflussbezogenen Größen und Wasserqualität können entsprechend der vereinbarten Sensorkonfiguration mit relevanten Umweltkanälen kombiniert werden."
+    },
+    {
+      "title": "4G LTE / NB-IoT / LoRa",
+      "text": "Wählen Sie die Funkhardware-Ausführung für den Einsatz. Prüfen Sie bei Mobilfunkkonfigurationen den örtlichen Netzbetreiber und bei einer LoRa-Installation die kompatible Empfänger- oder Gateway-Anordnung."
+    },
+    {
+      "title": "Solar- oder Netzstromversorgung",
+      "text": "Wählen Sie eine Stromversorgungsanordnung für die vollständige Station. Legen Sie die ausgewählte Stromversorgungsbaugruppe einschließlich gegebenenfalls spezifizierter Energiespeicher entsprechend Sensoren, Übertragungsprofil, örtlichem Wetter und Wartungsplanung aus."
+    },
+    {
+      "title": "Schutzartreferenz IP65",
+      "text": "Die veröffentlichte Stationsreferenz nennt IP65. Bestätigen Sie Gehäusedichtungen, Kabeleinführungen, individuelle Schutzarten der Sonden und die Umwelteignung der vollständigen mitgelieferten Baugruppe."
+    },
+    {
+      "title": "Überwachung mit Hitelecom Cloud",
+      "text": "Sehen Sie hochgeladene Überwachungsdaten online ein und erhalten Sie Meldungen bei Überschreitung konfigurierter Schwellenwerte. Legen Sie Messgrenzwerte, Meldungsempfänger und Bewertungsverfahren entsprechend den Betriebsabläufen am Standort fest."
+    },
+    {
+      "title": "MQTT-Datenintegration",
+      "text": "Binden Sie Aufzeichnungen über den vereinbarten Datenweg an Hitelecom Cloud oder eine kompatible Kundenplattform an. Definieren Sie Geräteidentität, Einheiten, Zeitstempel, Nutzdatenzuordnung und unterstützte Authentifizierung für die ausgewählte Konfiguration."
+    },
+    {
+      "title": "Inbetriebnahme per NFC",
+      "text": "NFC-Aktivierung und lokale Gerätekonfiguration sind in der Produktreferenz aufgeführt. Bestätigen Sie die verfügbaren Funktionen und das Inbetriebnahmeverfahren für die mitgelieferte Hardware und Firmware."
+    },
+    {
+      "title": "OTA-Wartung",
+      "text": "OTA-Firmware-Updates aus der Ferne sind in der Produktreferenz aufgeführt. Vereinbaren Sie das unterstützte Update-Verfahren, den Plattformzugang sowie Stromversorgungs- und Konnektivitätsanforderungen für die mitgelieferte Konfiguration."
+    }
+  ],
+  "planningIntro": "Beginnen Sie mit dem Gewässer und dem Zweck der Beobachtungen. Eine geeignete Stationsspezifikation verbindet Messmethode, hydraulische Bedingungen, Installation, Stromversorgung und Übertragungsanforderungen.",
+  "planning": [
+    {
+      "title": "Jede Messung festlegen",
+      "text": "Listen Sie die erforderlichen Parameter und Sensorkanäle auf. Spezifizieren Sie Arbeitsbereiche, Genauigkeitsanforderungen, Einheiten und Übertragungsanforderungen für jede ausgewählte Sensorbaugruppe; die Kanalzahl bestimmt nicht die Messleistung.",
+      "brief": "Parameter · Sensormethoden · Arbeitsbereiche · Genauigkeitsanforderungen · Einheiten · Übertragungsprofil"
+    },
+    {
+      "title": "Messpunkt untersuchen",
+      "text": "Bewerten Sie den Wasserstandsbezug, Strömungsbedingungen, Sondenposition und Wartungszugang. Prüfen Sie Treibgut, Bewuchs, wechselnde Wasserstände und lokale Exposition vor der Auswahl von Sensorbaugruppe und Montageanordnung.",
+      "brief": "Lagezeichnung · Wasserstandsbezug · Strömungsbedingungen · Sondenposition · Exposition · Wartungszugang"
+    },
+    {
+      "title": "Stromversorgung und Datenweg planen",
+      "text": "Legen Sie die Stromversorgungsanordnung für die gesamte Sensorlast und den Übertragungsplan aus. Bestätigen Sie die Mobilfunkabdeckung oder das LoRa-Empfangssystem und vereinbaren Sie anschließend Plattform und Ablauf der Schwellenwertmeldungen.",
+      "brief": "Sensorlast · Solar- / Netzauslegung · Kommunikationsausführung · Abdeckung · Plattform · Alarmempfänger"
+    }
+  ],
+  "installationText": "Positionieren Sie Station und Sonden für repräsentative Messungen und praktikable Wartung. Legen Sie den Höhenbezug fest, sofern Wasserstandsaufzeichnungen dies erfordern, und schützen Sie Kabel, Steckverbinder und Montagehardware entsprechend der tatsächlichen Exposition. Prüfen Sie die Messung nach der Installation auf der Empfangsplattform; Installationsdetails und Sondenleistung sind Teil der Projektkonfiguration.",
+  "workflow": [
+    {
+      "title": "Ausgewählte Parameter messen",
+      "text": "Die konfigurierten Sensorbaugruppen messen die vereinbarten Wasser- und Umweltparameter. Messmethode, Arbeitsbereich, Installation und Wartung bestimmen Aussagekraft und Qualität jedes Datensatzes."
+    },
+    {
+      "title": "Über die ausgewählte Verbindung übertragen",
+      "text": "Die Station erfasst konfigurierte Sensordaten und sendet sie über die ausgewählte Funkausführung mit dem gewählten Übertragungsprofil. Eine LoRa-Konfiguration erfordert ein kompatibles Empfangssystem und einen vereinbarten weiterführenden Datenweg."
+    },
+    {
+      "title": "Daten und Schwellenwertereignisse bewerten",
+      "text": "Sehen Sie hochgeladene Überwachungsdaten online in Hitelecom Cloud ein und erhalten Sie Meldungen bei Überschreitung konfigurierter Schwellenwerte. Eine kompatible Kundenplattform kann eigene vereinbarte Ansichten und Benachrichtigungsabläufe bereitstellen."
+    }
+  ],
+  "coverageTitle": "Jede Messung spezifizieren.\nIhre Bedingungen dokumentieren.",
+  "coverageText": "Es gibt keinen einzelnen Messbereich oder Genauigkeitswert, der für jede H700-Konfiguration gilt. Definieren Sie Sensor, Messmethode, Arbeitsbereich, Installationsbedingungen und Abnahmeprüfungen für jeden Kanal. Wasserstand, durchflussbezogene Beobachtungen und Wasserqualitätsmessungen haben unterschiedliche Anforderungen; ohne eine definierte Methode können sie einander nicht ersetzen.",
+  "rows": [
+    [
+      "Modell",
+      "H700"
+    ],
+    [
+      "Stationskonfiguration",
+      "2–12 Sensorkanäle; Messgrößen projektspezifisch ausgewählt"
+    ],
+    [
+      "Hydrologische Messoptionen",
+      "Kanäle für Wasserstand, durchflussbezogene Größen und Wasserqualität, je nach ausgewählter Sensorkonfiguration"
+    ],
+    [
+      "Umweltkanaloptionen",
+      "Relevante meteorologische und umweltbezogene Kanäle können innerhalb der vereinbarten Konfiguration spezifiziert werden"
+    ],
+    [
+      "Messbereich",
+      "Für jeden ausgewählten Sensor und Arbeitsbereich festgelegt"
+    ],
+    [
+      "Messgenauigkeit",
+      "Für den ausgewählten Sensor, Messbereich und die Installationsbedingungen festgelegt; kein allgemeingültiger Wert für die gesamte Station"
+    ],
+    [
+      "Abtastung und Datenübertragung",
+      "Erforderliches Mess-, Übertragungs- und Schwellenwertereignisprofil für die mitgelieferte Konfiguration festlegen"
+    ],
+    [
+      "Funkausführungen",
+      "4G LTE / NB-IoT / LoRa, je nach ausgewählter Hardware-Ausführung"
+    ],
+    [
+      "Datenprotokoll",
+      "MQTT; Datenweg, Nutzdatenzuordnung und Authentifizierung vereinbaren. LoRa erfordert ein kompatibles Empfangssystem."
+    ],
+    [
+      "Veröffentlichte LTE-FDD-Bänder",
+      "B1 / B3 / B5 / B8; Modem passend zum Netzbetreiber am Einsatzort auswählen"
+    ],
+    [
+      "Veröffentlichte LTE-TDD-Bänder",
+      "B34 / B38 / B39 / B40 / B41; Modem passend zum Netzbetreiber am Einsatzort auswählen"
+    ],
+    [
+      "Stromversorgung",
+      "Solar- oder Netzstrom, je nach Projektkonfiguration"
+    ],
+    [
+      "Schutzartreferenz",
+      "IP65 in der veröffentlichten Stationsreferenz; Sonden und vollständige Installation erfordern passende Umweltspezifikationen"
+    ],
+    [
+      "Lokale Inbetriebnahme",
+      "NFC-Aktivierung und lokale Konfiguration, soweit von der mitgelieferten Hardware und Firmware unterstützt"
+    ],
+    [
+      "Fernwartung",
+      "OTA-Firmware-Updates, soweit von der mitgelieferten Konfiguration und Plattform unterstützt"
+    ],
+    [
+      "Montageoptionen",
+      "Befestigungslaschen / Mastschelle / Langlochbefestigung, je nach mitgelieferter Konfiguration"
+    ]
+  ],
+  "specNote": "Bestätigen Sie Sensorliste, Arbeitsbereiche, Genauigkeitsbedingungen, Hardwarestand, Stromversorgungsauslegung, Kommunikationsausführung, Montage und Plattformintegration in der Projektspezifikation. Elektrische Eingangswerte, Abmessungen, individuelle Sondenschutzarten und gegebenenfalls erforderliche Zertifikate müssen der tatsächlich mitgelieferten Baugruppe entsprechen.",
+  "faqs": [
+    {
+      "q": "Was kann die Hydrologiestation H700 messen?",
+      "a": "Die H700 wird mit 2–12 Sensorkanälen zur Wasser- und zugehörigen Umweltüberwachung konfiguriert. Ein Projekt kann Wasserstand, durchflussbezogene Beobachtungen, Wasserqualitätsmessungen und ausgewählte meteorologische Kanäle vorsehen. Die endgültige Parameterliste und die Sensorbaugruppen definieren die mitgelieferte Station; nicht alle möglichen Parameter gehören zum Standardumfang."
+    },
+    {
+      "q": "Wie unterscheidet sich die H700 von der Wetterstation H600?",
+      "a": "Die H600 ist auf meteorologische Messungen wie Temperatur, Luftfeuchte, Wind, Niederschlag und Solarstrahlung ausgerichtet. Die H700 dient der Überwachung von Wasserstand, durchflussbezogenen Größen und Wasserqualität sowie bei Bedarf zugehörigen Umweltkanälen. Wählen Sie Modell und Sensoren entsprechend dem Standort statt anhand einer festen Bezeichnung mit sechs oder zwölf Parametern."
+    },
+    {
+      "q": "Wovon hängt die Genauigkeit der Wasserstandsmessung ab?",
+      "a": "Die Genauigkeit hängt vom ausgewählten Wasserstandssensor, Messprinzip, Arbeitsbereich, der Installation und den Umweltbedingungen ab. Definieren Sie diese Punkte und das Abnahmeverfahren für das Projekt. Die H700 hat keinen einzelnen Genauigkeitswert, der für jede Sensorbaugruppe oder Installation gilt."
+    },
+    {
+      "q": "Liefert eine Wasserstandsmessung auch den Durchfluss?",
+      "a": "Eine Wasserstandsaufzeichnung ist nicht automatisch eine Durchflussmessung. Ein Projekt mit Durchflussanforderung muss eine kompatible Durchflussmessanordnung oder eine separat validierte Methode zur Interpretation der Beobachtungen spezifizieren. Bestätigen Sie erforderlichen Parameter, Einheiten und Datenquelle, bevor Sie die Stationskanäle festlegen."
+    },
+    {
+      "q": "Welche Wasserqualitätsparameter sind enthalten?",
+      "a": "Wasserqualitätskanäle werden projektspezifisch ausgewählt. Bestätigen Sie Parameter, Messmethoden, Bereiche und Eignung für die Wasserbedingungen. Reinigung, Kalibrierung und Austausch erfolgen nach den Verfahren der ausgewählten Sonden; eine allgemeine Wasserqualitätsoption definiert weder eine vollständige Laboranalyse noch ein behördliches Berichtssystem."
+    },
+    {
+      "q": "Kann die H700 an einem abgelegenen Standort betrieben werden?",
+      "a": "Ein abgelegener Einsatz lässt sich mit einer geeigneten Solarstromkonfiguration und einem verfügbaren Kommunikationsweg planen. Legen Sie die ausgewählte Stromversorgungsbaugruppe einschließlich gegebenenfalls spezifizierter Energiespeicher für Sensorlast, Übertragungsprofil, saisonale Bedingungen und Wartungszugang aus. Bestätigen Sie die Mobilfunkabdeckung oder LoRa-Empfangsanordnung am tatsächlichen Standort."
+    },
+    {
+      "q": "Wie wähle ich die Funkausführung aus?",
+      "a": "4G LTE, NB-IoT und LoRa sind je nach Hardware-Ausführung als Optionen aufgeführt. Wählen Sie für eine Mobilfunkinstallation Modem, SIM und Netzbetreiber. Bestätigen Sie für LoRa die Funkeinstellungen, den kompatiblen Empfänger oder das Gateway und die weiterführende Plattformanbindung. Die mitgelieferte Ausführung muss zum Land und Projektnetz passen."
+    },
+    {
+      "q": "Unterstützt die LoRa-Option automatisch LoRaWAN?",
+      "a": "LoRa bezeichnet die Funktechnologie; LoRaWAN ist ein separates Netzwerkprotokoll mit Anforderungen an Geräte, Empfänger und Server. Bestätigen Sie bei LoRaWAN-Anforderungen Stationsprotokoll, Firmware und Kompatibilität der Empfangsplattform vor der Auswahl der Konfiguration."
+    },
+    {
+      "q": "Kann ich Hitelecom Cloud oder meine eigene Plattform nutzen?",
+      "a": "Ja. Hitelecom Cloud ermöglicht den Online-Zugriff auf hochgeladene Überwachungsdaten und Meldungen bei Überschreitung konfigurierter Schwellenwerte. Eine kompatible Kundenplattform kann Daten über die vereinbarte MQTT-Integration und den vereinbarten Datenweg empfangen. Bestätigen Sie Nutzdatenzuordnung, Geräteidentität, Einheiten, Zeitstempel und unterstützte Authentifizierung bei der Inbetriebnahme."
+    },
+    {
+      "q": "Wie häufig sind Messwerte und Schwellenwertmeldungen verfügbar?",
+      "a": "Definieren Sie Anforderungen an Abtastung, Datenübertragung und Schwellenwertereignisse in der Projektkonfiguration. Die Verfügbarkeit auf der Plattform hängt von diesen Einstellungen, der ausgewählten Hardware, Stromversorgung und dem Kommunikationsweg ab. Meldungen beruhen auf verfügbaren Überwachungsdaten; die Produktreferenz legt keine feste Ende-zu-Ende-Verzögerung für jede Installation fest."
+    },
+    {
+      "q": "Welche Installation und Wartung sollte geplant werden?",
+      "a": "Planen Sie Montage, Sondenposition, gegebenenfalls den Wasserstandsbezug, Kabelschutz, Steckverbinderabdichtung und Wartungszugang. Berücksichtigen Sie Treibgut, Bewuchs, wechselnde Wasserstände und lokale Exposition. Inspizieren, reinigen und kalibrieren Sie ausgewählte Sensoren gemäß ihren Verfahren und prüfen Sie die Datensätze nach der Wartung auf der Plattform."
+    },
+    {
+      "q": "Welche Informationen werden für einen Stationsvorschlag benötigt?",
+      "a": "Stellen Sie Lageplan, erforderliche Parameter, Messbereiche und Genauigkeitsanforderungen, Sensorpositionen, Kanalzahl, Abtast- und Übertragungsprofil, Land, Stromversorgungsanordnung und Zielplattform bereit. Ergänzen Sie Wasserbedingungen, Installationsbeschränkungen, Wartungszugang und den erforderlichen Benachrichtigungsablauf."
+    }
+  ],
+  "groups": [
+    {
+      "id": "rivers-catchments",
+      "title": "Flüsse, Bäche & Einzugsgebiete",
+      "jumpLabel": "Flüsse & Bäche",
+      "intro": "Beobachten Sie ausgewählte Wasser- und Wetterbedingungen entlang von Flüssen und Zuflüssen. Definieren Sie Messpunkt und hydraulischen Kontext, bevor Sie Aufzeichnungen vergleichen.",
+      "imageKey": "hydro-river",
+      "imageAlt": "Flusslauf mit bewachsenen Ufern, niedriger Betonbrücke und einem Uferzugangsweg",
+      "imageCaption": "Flüsse, Bäche & Einzugsgebiete · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "river-stage-records",
+          "title": "Beobachtungen des Flusswasserstands",
+          "networkRole": "Misst und überträgt den Wasserstand mit der ausgewählten Sensorbaugruppe.",
+          "description": "Erfassen Sie Wasserstandsaufzeichnungen an definierten Flussstandorten zur regelmäßigen hydrologischen Bewertung. Pflegen Sie einen dokumentierten Höhenbezug und eine dokumentierte Sensorposition, damit Veränderungen einheitlich interpretiert werden können.",
+          "placement": "Bewerten Sie Uferbauwerke, wechselnde Wasserstände, Treibgut und Wartungszugang. Stimmen Sie Sensormethode und Montage auf die erwarteten hydraulischen Bedingungen ab.",
+          "projectBrief": "Flussabschnitt, Höhenbezug, Wasserstandsbereich, Sensormethode, Installationsposition und Übertragungsplan."
+        },
+        {
+          "id": "tributary-rainfall-context",
+          "title": "Niederschlags- und Wasserstandskontext an Zuflüssen",
+          "networkRole": "Überträgt die konfigurierten Niederschlags- und Wasserstandskanäle.",
+          "description": "Bewerten Sie lokalen Niederschlag zusammen mit den Wasserständen der Zuflüsse, um Veränderungen der Beobachtungen im Ereignisverlauf zu untersuchen. Die Aufzeichnungen unterstützen die Analyse, stellen jedoch keine standortspezifische Vorhersage dar.",
+          "placement": "Prüfen Sie Niederschlagsexposition und Platzierung des Wasserstandssensors getrennt. Stimmen Sie Zeitstempel ab und erhalten Sie den Wartungszugang zu beiden Sensorbaugruppen.",
+          "projectBrief": "Einzugsgebietsplan, Niederschlags- und Wasserstandskanäle, Positionen, Zeitstempel und Übertragungsprofil."
+        },
+        {
+          "id": "stream-flow-observations",
+          "title": "Durchflussbezogene Beobachtungen an Bächen",
+          "networkRole": "Überträgt die vom ausgewählten Sensor gelieferte durchflussbezogene Größe.",
+          "description": "Erfassen Sie vereinbarte durchflussbezogene Beobachtungen an einem definierten Bachabschnitt. Spezifizieren Sie gemessene Größe und Methode, statt eine Wasserstandsaufzeichnung als direkten Durchflusswert zu behandeln.",
+          "placement": "Bewerten Sie Gerinnegeometrie, Wasserbedingungen und Zugang. Dokumentieren Sie jede separat validierte Interpretationsmethode, die das Projekt erfordert.",
+          "projectBrief": "Erforderliche Größe, Einheiten, Messmethode, erwartete Bedingungen, Montage und Abnahmeprüfungen."
+        }
+      ]
+    },
+    {
+      "id": "reservoirs-lakes",
+      "title": "Stauseen & Seen",
+      "jumpLabel": "Stauseen & Seen",
+      "intro": "Überwachen Sie ausgewählte Wasserstands-, Wasserqualitäts- und Wetterparameter an bewirtschafteten Seen und Stauseen. Legen Sie die Messleistung für jeden Beobachtungspunkt gesondert fest.",
+      "imageKey": "hydro-reservoir",
+      "imageAlt": "Süßwasserreservoir mit kleinem eingezäuntem Wasserbauwerk und umgebenden grünen Hügeln",
+      "imageCaption": "Stauseen & Seen · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "reservoir-level-trends",
+          "title": "Wasserstandstrends im Stausee",
+          "networkRole": "Misst und überträgt den konfigurierten Wasserstandskanal des Stausees.",
+          "description": "Erstellen Sie eine Wasserstandszeitreihe an einem dokumentierten Bezugspunkt für Betriebsaufzeichnungen. Diese Beobachtungen allein bestimmen weder den Zustand eines Damms noch liefern sie eine automatische Sicherheitsbewertung.",
+          "placement": "Bestätigen Sie Höhenbezug, Messspanne, Wellen- und Treibgutexposition sowie Montageanordnung. Planen Sie den Zugang über den erwarteten Wasserstandsbereich hinweg.",
+          "projectBrief": "Betriebswasserstände, Höhenbezug, ausgewählter Sensor, Montage, Übertragungsintervalle und Plattformanzeige."
+        },
+        {
+          "id": "lake-quality-points",
+          "title": "Messstellen für die Wasserqualität von Seen",
+          "networkRole": "Erfasst ausgewählte Qualitätskanäle über geeignete installierte Sonden.",
+          "description": "Integrieren Sie vereinbarte Seewasserbeobachtungen zur Trendbewertung in die Plattform. Wählen Sie Parameter und Sondentiefen entsprechend dem Überwachungszweck und den örtlichen Wasserbedingungen.",
+          "placement": "Bewerten Sie Eintauchsituation, Bewuchs, saisonalen Zugang sowie Reinigungs- oder Kalibrierbedarf. Planen Sie Kabelführung und Stationsplatzierung gemeinsam.",
+          "projectBrief": "Qualitätsparameter, Messbereiche, Sondenpositionen und -tiefen, Wartungsplan und Übertragungsplan."
+        },
+        {
+          "id": "reservoir-weather-context",
+          "title": "Wetterkontext am Stausee",
+          "networkRole": "Überträgt ausgewählte Wetterkanäle zusammen mit den konfigurierten Wasserbeobachtungen.",
+          "description": "Ergänzen Sie Niederschlag, Luftbedingungen, Wind oder andere vereinbarte Wetterbeobachtungen, damit Mitarbeitende die Bedingungen am Stausee einordnen können. Abgeleitete Wasserbilanz- oder Vorhersagefunktionen erfordern eine gesonderte Definition.",
+          "placement": "Prüfen Sie Wetterexposition und Platzierung der Ufersonden getrennt. Prüfen Sie Stromversorgung und Kommunikationsweg für die kombinierte Kanalzusammenstellung.",
+          "projectBrief": "Wetter- und Wasserkanäle, Sensoranordnung, Stromversorgungsbedarf, Aktualisierungsintervalle und Bewertungsanforderungen."
+        }
+      ]
+    },
+    {
+      "id": "urban-stormwater",
+      "title": "Städtisches Regenwasser & Entwässerung",
+      "jumpLabel": "Städtische Entwässerung",
+      "intro": "Erfassen Sie Niederschlags- und Wasserbeobachtungen an ausgewählten städtischen Entwässerungsstandorten. Konfigurieren Sie Messpunkte und Benachrichtigungen für den Standort; eine Station verhindert keine Überflutung.",
+      "imageKey": "hydro-stormwater",
+      "imageAlt": "Städtischer Beton-Entwässerungskanal mit Wasserzufluss aus einem Durchlass neben nasser Straßenrandbegrünung",
+      "imageCaption": "Städtisches Regenwasser & Entwässerung · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "stormwater-chamber-levels",
+          "title": "Wasserstände in Regenwasserschächten",
+          "networkRole": "Misst den ausgewählten Wasserstandskanal des Entwässerungsschachts.",
+          "description": "Verfolgen Sie Wasserstandsänderungen in zugänglichen Regenwasserschächten zur Bewertung der Entwässerung und für konfigurierte Benachrichtigungen. Wählen Sie die Sensorbaugruppe passend zur Schachtgeometrie und lokalen Exposition.",
+          "placement": "Berücksichtigen Sie Zugangsbeschränkungen, Ablagerungen, Kondensation und wechselnde Wasserstände. Befolgen Sie die Standortverfahren für Installation und Wartung.",
+          "projectBrief": "Schachtabmessungen, Wasserstandsbereich, Sensorposition, Zugangsbeschränkungen und Benachrichtigungsablauf."
+        },
+        {
+          "id": "urban-outfall-records",
+          "title": "Städtische Entwässerungsauslässe",
+          "networkRole": "Überträgt ausgewählte Wasserstands- oder durchflussbezogene Aufzeichnungen am Auslass.",
+          "description": "Erfassen Sie Beobachtungen an definierten Entwässerungsauslässen, um Standorte zu vergleichen und Veränderungen zu untersuchen. Bewertungen der Abflusskapazität oder der Auswirkungen auf das aufnehmende Gewässer erfordern eine separate Projektmethode.",
+          "placement": "Prüfen Sie Strömung, Ablagerungen, Rückstau und Montagezugang. Bestätigen Sie die Sensoreignung für die erwarteten Bedingungen.",
+          "projectBrief": "Auslassplan, erforderliche Größen, erwartete Bedingungen, Montage und Übertragungsintervalle."
+        },
+        {
+          "id": "urban-rainfall-level-review",
+          "title": "Bewertung von Niederschlag und Entwässerungswasserständen",
+          "networkRole": "Kombiniert ausgewählte Niederschlags- und Wasserstandskanäle im Übertragungsprofil.",
+          "description": "Stellen Sie Niederschlags- und Entwässerungswasserstandsaufzeichnungen gemeinsam für die Bewertung durch Mitarbeitende bereit. Stimmen Sie Zeitstempel und Übertragungsanforderungen ab, ohne ein automatisches Niederschlags-Abfluss-Modell zu implizieren.",
+          "placement": "Sorgen Sie für eine repräsentative Niederschlagsexposition und eine separat geeignete Wasserstandsposition. Prüfen Sie die Kommunikation im Umfeld von Gebäuden und Infrastruktur.",
+          "projectBrief": "Sensorliste, Positionen, Zeitstempel, Abtast- und Übertragungsprofile sowie Bewertungsverfahren."
+        }
+      ]
+    },
+    {
+      "id": "pumping-water-networks",
+      "title": "Pumpstationen & Wassernetze",
+      "jumpLabel": "Pumpen & Netze",
+      "intro": "Integrieren Sie ausgewählte Messungen an Wasserentnahmen, Speichern und Pumpstandorten in die Plattform. Messkanäle und ihre Installation bleiben von Pumpensteuerungsfunktionen getrennt.",
+      "imageKey": "water",
+      "imageAlt": "Wasserpumpanlage im Freien mit blauen Rohren, Pumpen und Schutzdach",
+      "imageCaption": "Pumpstationen & Wassernetze · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "pump-wet-well-levels",
+          "title": "Wasserstände in Pumpensümpfen",
+          "networkRole": "Misst und überträgt den Wasserstand über die ausgewählte Messbaugruppe im Pumpensumpf.",
+          "description": "Verfolgen Sie Wasserstände im Pumpensumpf für Betriebsaufzeichnungen und Schwellenwertmeldungen. Definieren Sie Messspanne und Sondenanordnung für den Schacht; Pumpensteuerung gehört nicht zur beschriebenen Überwachungsfunktion.",
+          "placement": "Prüfen Sie Turbulenzen, Ablagerungen, Kabel und Sensorzugang. Platzieren Sie Station und Stromversorgungskomponenten passend zu den Bedingungen am Pumpstandort.",
+          "projectBrief": "Schachtplan, Wasserstandsbereich, Messmethode, Beschränkungen, Übertragungsplan und Alarmempfänger."
+        },
+        {
+          "id": "water-intake-records",
+          "title": "Beobachtungen an Wasserentnahmen",
+          "networkRole": "Erfasst ausgewählte Kanäle für Entnahmewasserstand und Wasserbedingungen.",
+          "description": "Überwachen Sie vereinbarte Beobachtungen an der Wasserentnahme, um veränderte Versorgungsbedingungen zu bewerten. Spezifizieren Sie jeden Wasserstands- und Qualitätskanal einzeln, damit Quelle und Einheiten eindeutig bleiben.",
+          "placement": "Bewerten Sie Wasserbewegung, Sondenschutz, Bewuchs und Wartungszugang. Prüfen Sie Komponentenschutzarten und den Kommunikationsweg am Standort.",
+          "projectBrief": "Entnahmeplan, Parameter, Messbereiche, Sondenpositionen sowie Wartungs- und Übertragungsanforderungen."
+        },
+        {
+          "id": "pumping-flow-records",
+          "title": "Durchflussbezogene Aufzeichnungen im Pumpennetz",
+          "networkRole": "Überträgt kompatible durchflussbezogene Sensordaten über die ausgewählte Verbindung.",
+          "description": "Integrieren Sie vereinbarte durchflussbezogene Beobachtungen von Punkten im Versorgungsnetz in die Plattform. Definieren Sie deren Beziehung zu anderen Betriebsdaten, ohne eine automatische Pumpendiagnose zu behaupten.",
+          "placement": "Prüfen Sie Rohr- oder Gerinnebedingungen und Sensorinstallationsanforderungen. Bestätigen Sie Stromversorgung, Kabelführung und Nutzdatenzuordnung.",
+          "projectBrief": "Messpunkte, Größen, Einheiten, Sensorschnittstellen, Übertragungsprofil und Anforderungen des Empfangssystems."
+        }
+      ]
+    },
+    {
+      "id": "irrigation-canals",
+      "title": "Bewässerungskanäle & Verteilung",
+      "jumpLabel": "Bewässerungskanäle",
+      "intro": "Erfassen Sie Wasserbeobachtungen an Bewässerungseinläufen, Kanälen und Verteilpunkten. Definieren Sie Messmethode, Gerinnegeometrie und betrieblichen Bewertungsprozess für jeden Standort.",
+      "imageKey": "hydro-irrigation",
+      "imageAlt": "Betonierter Bewässerungskanal mit manuellem Schütz neben offenen Anbauflächen",
+      "imageCaption": "Bewässerungskanäle & Verteilung · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "irrigation-canal-levels",
+          "title": "Wasserstände in Bewässerungskanälen",
+          "networkRole": "Misst und überträgt den Wasserstand an ausgewählten Kanal-Messstellen.",
+          "description": "Verfolgen Sie Wasserstandsänderungen in Kanälen für Aufzeichnungen des Bewässerungsnetzes. Nutzen Sie einheitliche Bezugsinformationen, damit Mitarbeitende Beobachtungen zwischen Einlaufbauwerken und stromabwärts gelegenen Punkten vergleichen können.",
+          "placement": "Bewerten Sie Geometrie, Strömung, Vegetation, Ablagerungen und Zugang. Stimmen Sie Sensor und Montage auf den erwarteten Wasserstandsbereich ab.",
+          "projectBrief": "Kanalabschnitte, Anforderungen an den Höhenbezug, Wasserstandsbereiche, Sensorpositionen und Übertragungsintervalle."
+        },
+        {
+          "id": "irrigation-distribution-flow",
+          "title": "Durchflussbeobachtungen an Verteilpunkten",
+          "networkRole": "Erfasst den für den Verteilpunkt ausgewählten durchflussbezogenen Kanal.",
+          "description": "Erfassen Sie vereinbarte durchflussbezogene Messungen zur betrieblichen Bewertung. Die Umrechnung einer anderen Messgröße in Durchfluss erfordert eine ausdrücklich definierte und validierte Methode.",
+          "placement": "Bestätigen Sie hydraulische Installation und Sensoranforderungen. Prüfen Sie Stromversorgung und Kommunikation getrennt von vorhandenen Schützen oder Ventilen.",
+          "projectBrief": "Verteilungsplan, erforderliche Größen und Einheiten, Sensoranordnung und Abnahmeanforderungen."
+        },
+        {
+          "id": "irrigation-intake-conditions",
+          "title": "Wasserbedingungen an Bewässerungsentnahmen",
+          "networkRole": "Überträgt ausgewählte Wasserzustandskanäle der Entnahmebaugruppe.",
+          "description": "Ergänzen Sie vereinbarte Wasserqualitäts- oder Temperaturbeobachtungen, sofern das Projekt sie erfordert. Wählen Sie Parameter und Sonden entsprechend dem Betriebszweck und den örtlichen Wasserbedingungen.",
+          "placement": "Planen Sie Eintauchsituation, Reinigung, Kalibrierung und saisonalen Zugang. Schützen Sie Kabel und Steckverbinder und erhalten Sie den Zugang zur Entnahme.",
+          "projectBrief": "Parameter, Messbereiche, ausgewählte Sonden, Installationstiefen, Wartungsplan und Übertragungsprofil."
+        }
+      ]
+    },
+    {
+      "id": "industrial-process-water",
+      "title": "Industrie- & Prozesswasser",
+      "jumpLabel": "Industriewasser",
+      "intro": "Erfassen Sie Wasserstands-, Qualitäts- und Temperaturbeobachtungen in industriellen Betriebssystemen. Bestätigen Sie Prozessverträglichkeit und Installationsanforderungen jeder Sensorbaugruppe.",
+      "imageKey": "water-indoor",
+      "imageAlt": "Pumpenhalle für industrielles Prozesswasser mit Pumpen, Rohren und zugänglichem Wartungsbereich",
+      "imageCaption": "Industrie- & Prozesswasser · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "service-water-storage",
+          "title": "Füllstände von Betriebswasserspeichern",
+          "networkRole": "Misst und überträgt den ausgewählten Füllstandskanal des Speicherbehälters.",
+          "description": "Verfolgen Sie Füllstände geeigneter Betriebswassertanks oder -becken für Aufzeichnungen und Benachrichtigungen. Spezifizieren Sie Behälterbedingungen und Messmethode; nicht jede Füllstandssonde eignet sich für jeden Tank.",
+          "placement": "Prüfen Sie Geometrie, Zugang und relevante Druck- oder Umweltbedingungen. Stimmen Sie Stationsstromversorgung und Verkabelung auf den Standort ab.",
+          "projectBrief": "Behälterplan, Wasserbedingungen, Füllstandsbereich, Montage sowie Übertragungs- und Schwellenwertanforderungen."
+        },
+        {
+          "id": "process-water-quality",
+          "title": "Aufzeichnungen zur Prozesswasserqualität",
+          "networkRole": "Erfasst vereinbarte Qualitätskanäle über prozessverträgliche Sonden.",
+          "description": "Stellen Sie ausgewählte Prozesswasserdaten zur Trendbewertung und Untersuchung bereit. Definieren Sie jeden Parameter und jede Methode getrennt von Laborprüfungen oder behördlichen Berichtsanforderungen.",
+          "placement": "Bewerten Sie Prozessanschlüsse, Wasserbedingungen, Bewuchs und Kalibrierzugang. Prüfen Sie die Eignung medienberührter Komponenten.",
+          "projectBrief": "Wasserbeschreibung, Parameter und Messbereiche, Messmethoden, Anschlüsse und Wartungsplan."
+        },
+        {
+          "id": "cooling-water-records",
+          "title": "Kühlwasserbeobachtungen",
+          "networkRole": "Überträgt ausgewählte Temperaturkanäle oder andere vereinbarte Kanäle zu Wasserbedingungen.",
+          "description": "Erfassen Sie Beobachtungen an zugänglichen Kühlwasserpunkten zur betrieblichen Bewertung. Automatische Aufbereitung, Dosierung oder Anlagensteuerung erfordert ein separat definiertes System.",
+          "placement": "Wählen Sie geeignete Sondenpositionen und Armaturen für die Betriebsbedingungen. Prüfen Sie Zugang, Kabelschutz und elektrische Umgebungsbeanspruchung.",
+          "projectBrief": "Messstellen, Parameter, Arbeitsbereiche, Sondeninstallation und Plattformdarstellung."
+        }
+      ]
+    },
+    {
+      "id": "wastewater-facilities",
+      "title": "Abwasser- & Einleitungsanlagen",
+      "jumpLabel": "Abwasseranlagen",
+      "intro": "Überwachen Sie ausgewählte Beobachtungen von Wasserstand, durchflussbezogenen Größen und Qualität an Abwasseranlagen. Wählen Sie Sensorbaugruppen und Wartungsverfahren passend zu den tatsächlichen Wasserbedingungen.",
+      "imageKey": "hydro-wastewater",
+      "imageAlt": "Abwasserbehandlungsbecken im Freien mit belüftetem Wasser, Rohrleitungen und metallenen Wartungsstegen",
+      "imageCaption": "Abwasser- & Einleitungsanlagen · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "wastewater-lift-levels",
+          "title": "Wasserstände in Abwasserhebeanlagen",
+          "networkRole": "Misst und überträgt den Wasserstand mit dem ausgewählten abwassergeeigneten Sensor.",
+          "description": "Verfolgen Sie Wasserstände im Pumpensumpf zur betrieblichen Bewertung und für konfigurierte Benachrichtigungen. Wählen Sie die Baugruppe passend zu erwarteten Verunreinigungen, Ablagerungen und Installationsbedingungen.",
+          "placement": "Planen Sie Maßnahmen gegen Bewuchs, Kabelschutz, Sondenzugang und Stationsstandort. Befolgen Sie die Zugangs- und Wartungsverfahren des Standorts.",
+          "projectBrief": "Schachtgeometrie, Wasserbedingungen, Messspanne, Sensoranordnung und Benachrichtigungsanforderungen."
+        },
+        {
+          "id": "treated-effluent-observations",
+          "title": "Messstellen für behandeltes Abwasser",
+          "networkRole": "Überträgt vereinbarte Qualitätskanäle über geeignete Sonden im behandelten Abwasser.",
+          "description": "Integrieren Sie ausgewählte Daten zum behandelten Abwasser zur Bewertung in die Plattform. Parameter, Methoden und Nachweise für formelle Konformitätsberichte sind gesondert festzulegen.",
+          "placement": "Bewerten Sie Eintauchsituation der Sonden, Bewuchs und Kalibrierzugang. Stimmen Sie Materialien und Installation auf die Bedingungen des behandelten Abwassers ab.",
+          "projectBrief": "Parameter, Messbereiche, Methoden, Sondenpositionen, Wartungshäufigkeit und vorgesehene Datennutzung."
+        },
+        {
+          "id": "wastewater-channel-records",
+          "title": "Beobachtungen in Abwassergerinnen",
+          "networkRole": "Erfasst die für das Gerinne spezifizierten Wasserstands- oder durchflussbezogenen Kanäle.",
+          "description": "Erfassen Sie Beobachtungen an zugänglichen Prozess- oder Ablaufgerinnen für Untersuchungen und Anlagenaufzeichnungen. Benennen Sie die gemessene Größe und gegebenenfalls separat validierte Interpretationsmethoden.",
+          "placement": "Prüfen Sie Geometrie, hydraulische Veränderungen, Ablagerungen und Wartungszugang. Prüfen Sie Messmethode, Stromversorgung und Kommunikation am Montagepunkt.",
+          "projectBrief": "Gerinneanordnung, Größen, Bedingungen, Sensormontage und Übertragungsprofil."
+        }
+      ]
+    },
+    {
+      "id": "aquaculture-water",
+      "title": "Aquakultur & Teichbetrieb",
+      "jumpLabel": "Aquakultur",
+      "intro": "Kombinieren Sie Teichwasserbeobachtungen und ausgewählte Wetterbeobachtungen für Betriebsaufzeichnungen in der Aquakultur. Erforderliche Qualitätsparameter und Sondenwartungsverfahren werden projektspezifisch ausgewählt.",
+      "imageKey": "aquaculture",
+      "imageAlt": "Aquakulturteiche mit Schaufelradbelüfter, Uferwegen und einer Wasserzuleitung",
+      "imageCaption": "Aquakultur & Teichbetrieb · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "pond-level-records",
+          "title": "Wasserstände in Aquakulturteichen",
+          "networkRole": "Misst und überträgt den ausgewählten Teichwasserstandskanal.",
+          "description": "Verfolgen Sie Wasserstände definierter Teiche oder Vorlaufbehälter zur regelmäßigen betrieblichen Bewertung. Wählen Sie Bezugsposition und Sensormessbereich entsprechend den erwarteten Schwankungen und dem Teichbetrieb.",
+          "placement": "Prüfen Sie Uferzugang, Sondenschutz und Kabel. Prüfen Sie Kommunikation und Stromversorgung für die vollständige Stationskonfiguration.",
+          "projectBrief": "Teichplan, Wasserstandsbereich, Bezugsposition, Sensoranordnung und Übertragungsintervalle."
+        },
+        {
+          "id": "pond-quality-observations",
+          "title": "Messstellen für die Teichwasserqualität",
+          "networkRole": "Erfasst die ausgewählten Qualitätskanäle der Teichmessbaugruppe.",
+          "description": "Stellen Sie vereinbarte Teichwassermessungen zur Trendbewertung und für Benachrichtigungen bereit. Parametersatz und Sonden bestimmen die Aufzeichnungen; die Station trifft für sich allein keine Besatz- oder Behandlungsentscheidungen.",
+          "placement": "Planen Sie Tiefe, Schutz vor Betriebsmitteln, Maßnahmen gegen Bewuchs und Kalibrierzugang. Stimmen Sie die Sonden auf die örtlichen Wasserbedingungen ab.",
+          "projectBrief": "Wasserbedingungen, Parameter, Sondentiefen und Messbereiche, Wartungsverfahren und Alarmempfänger."
+        },
+        {
+          "id": "pond-weather-context",
+          "title": "Wetter- und Wasserkontext am Teich",
+          "networkRole": "Überträgt ausgewählte Wetterkanäle zusammen mit konfigurierten Teichwasserdaten.",
+          "description": "Führen Sie Niederschlag, Luftbedingungen oder andere vereinbarte Wetterbeobachtungen mit Teichaufzeichnungen zusammen. Definieren Sie Zeitvorgaben und Parameter entsprechend der vorgesehenen betrieblichen Bewertung.",
+          "placement": "Wählen Sie Wetterexposition und Platzierung der Teichsonden getrennt. Berücksichtigen Sie alle Sensorlasten und Übertragungsanforderungen bei der Stromversorgungsauslegung.",
+          "projectBrief": "Wasser- und Wetterkanäle, Positionen, Abtast- und Übertragungsanforderungen sowie Anzeigeanforderungen."
+        }
+      ]
+    },
+    {
+      "id": "wetlands-ecology",
+      "title": "Feuchtgebiete & ökologische Gewässerstandorte",
+      "jumpLabel": "Feuchtgebiete & Ökologie",
+      "intro": "Erfassen Sie Wasser- und Umweltbeobachtungen in Feuchtgebieten und an Renaturierungsstandorten. Stimmen Sie den Messansatz auf Zugang, saisonale Bedingungen und Untersuchungszweck ab.",
+      "imageKey": "hydro-wetland",
+      "imageAlt": "Süßwasserfeuchtgebiet mit Schilf, flachen Gerinnen und einem hölzernen Beobachtungssteg",
+      "imageCaption": "Feuchtgebiete & ökologische Gewässerstandorte · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "wetland-level-records",
+          "title": "Wasserstandsaufzeichnungen in Feuchtgebieten",
+          "networkRole": "Misst und überträgt den Wasserstand am ausgewählten Beobachtungspunkt.",
+          "description": "Erstellen Sie Aufzeichnungen über Wasserstandsschwankungen an definierten Standorten im Feuchtgebiet. Dokumentieren Sie Bezugsinformationen und Installation, damit Außendienstteams Veränderungen über Jahreszeiten und Wartungsbesuche hinweg interpretieren können.",
+          "placement": "Bewerten Sie weichen Untergrund, Vegetation, saisonalen Zugang und Sondenschutz. Beachten Sie die Zugangsbeschränkungen des Standorts bei Platzierung und Montage der Station.",
+          "projectBrief": "Standorte, Bezugsinformationen, Wasserstandsbereich, Messmethode und saisonaler Wartungszugang."
+        },
+        {
+          "id": "restoration-quality-trends",
+          "title": "Wasserqualitätstrends an Renaturierungsstandorten",
+          "networkRole": "Erfasst vereinbarte Qualitätskanäle über geeignete installierte Sonden.",
+          "description": "Verfolgen Sie Aufzeichnungen zu Wasserbedingungen in Renaturierungsteichen oder bewirtschafteten Feuchtgebietszellen. Wählen Sie Parameter entsprechend den Überwachungszielen, ohne eine Bewertung des gesamten ökologischen Zustands durch eine einzelne Station zu implizieren.",
+          "placement": "Planen Sie Eintauchsituation, Maßnahmen gegen Bewuchs und Kalibrierzugang. Stimmen Sie die vollständige Baugruppe und Montage auf die lokale Exposition ab.",
+          "projectBrief": "Ziele, Qualitätsparameter, Messbereiche, Sondentiefen sowie Wartungs- und Übertragungsanforderungen."
+        },
+        {
+          "id": "wetland-weather-context",
+          "title": "Wetterkontext für ökologische Gewässerstandorte",
+          "networkRole": "Überträgt ausgewählte Umweltkanäle zusammen mit konfigurierten Wasserdaten.",
+          "description": "Ergänzen Sie Wasseraufzeichnungen um Niederschlag, Lufttemperatur oder andere vereinbarte Beobachtungen. Unterscheiden Sie gemessene Kanäle von ökologischen Modellen oder abgeleiteten Indikatoren, die das Projektteam verwendet.",
+          "placement": "Prüfen Sie Exposition, Vegetationsveränderungen und Zugang während des Überwachungszeitraums. Berücksichtigen Sie saisonale Stromversorgungsbedingungen und den ausgewählten Datenweg.",
+          "projectBrief": "Umwelt- und Wasserkanäle, Lageplan, saisonale Bedingungen und vorgesehene Datennutzung."
+        }
+      ]
+    },
+    {
+      "id": "coastal-estuaries",
+      "title": "Gewässerstandorte an Küsten & Ästuaren",
+      "jumpLabel": "Küsten & Ästuare",
+      "intro": "Beobachten Sie Wasserstand, Qualität und ausgewählte Wetterbedingungen an Ästuaren und landseitigen Küstenstandorten. Spezifizieren Sie Sensorbaugruppen und Materialien für die tatsächliche Exposition.",
+      "imageKey": "hydro-estuary",
+      "imageAlt": "Gezeitengeprägtes Flussästuar mit Salzwiese, freiliegendem Watt, einem Deichweg und einer entfernten Brücke",
+      "imageCaption": "Gewässerstandorte an Küsten & Ästuaren · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "estuary-stage-records",
+          "title": "Wasserstandsbeobachtungen im Ästuar",
+          "networkRole": "Misst und überträgt den ausgewählten Wasserstandskanal des Ästuars.",
+          "description": "Erfassen Sie Wasserstandsbeobachtungen an einem definierten Punkt im Ästuar. Dokumentieren Sie Höhenbezug und Sensormethode; die Überwachung allein liefert weder eine Gezeitenvorhersage noch einen Navigationsdienst.",
+          "placement": "Bewerten Sie Wasserstandsspanne, Wasserbedingungen, Wellen, Treibgut und Korrosionsexposition. Planen Sie Montage, Kabel und Wartungszugang.",
+          "projectBrief": "Standort, Höhenbezug, Wasserstandsbereich, Messmethode, Umweltexposition und Übertragungsanforderungen."
+        },
+        {
+          "id": "coastal-drainage-records",
+          "title": "Messstellen für Küstenentwässerung",
+          "networkRole": "Überträgt ausgewählte Wasserstands- oder durchflussbezogene Entwässerungsbeobachtungen.",
+          "description": "Erfassen Sie Bedingungen an den Übergängen von Entwässerungskanälen zu Küstengewässern. Definieren Sie Zweck und Messpunkt, damit Mitarbeitende Veränderungen bewerten können, ohne eine feste hydraulische Beziehung anzunehmen.",
+          "placement": "Prüfen Sie Rückstau, Treibgut, wechselnden Zugang und Sondenschutz. Prüfen Sie Stromversorgung und Kommunikation am Stationsstandort.",
+          "projectBrief": "Entwässerungsplan, Größen, erwartete Bedingungen, Sensorpositionen und Aktualisierungsintervalle."
+        },
+        {
+          "id": "coastal-quality-observations",
+          "title": "Messstellen für Küstenwasserqualität",
+          "networkRole": "Erfasst vereinbarte Qualitätskanäle über für die Exposition geeignete Sonden.",
+          "description": "Integrieren Sie ausgewählte Aufzeichnungen zu Wasserbedingungen an Küsten oder Ästuaren in die Plattform. Wählen Sie Sonden für die örtlichen Bedingungen und definieren Sie deren Reinigungs- und Kalibrierverfahren.",
+          "placement": "Prüfen Sie medienberührte Materialien und Steckverbinder auf Eignung für die Exposition. Planen Sie Eintauchsituation, Sondenschutz und Wartungszugang.",
+          "projectBrief": "Wasserbedingungen, Parameter und Messbereiche, Sondenmaterialien und -positionen, Wartungsplan und Datenanforderungen."
+        }
+      ]
+    },
+    {
+      "id": "construction-dewatering",
+      "title": "Baustellen & Wasserhaltung",
+      "jumpLabel": "Baustellenwasser",
+      "intro": "Verfolgen Sie Beobachtungen an Pumpensümpfen und Ableitungen sowie ausgewählte Wetterbeobachtungen auf Baustellen. Trennen Sie Überwachungsaufzeichnungen von Pumpensteuerung und bautechnischen Entscheidungen.",
+      "imageKey": "hydro-dewatering",
+      "imageAlt": "Pumpensumpf in einer Baugrube und Entwässerungsschlauch zu einem temporären Absetzbehälter auf einer eingezäunten Baustelle",
+      "imageCaption": "Baustellen & Wasserhaltung · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "construction-sump-records",
+          "title": "Wasserstände in Baustellen-Pumpensümpfen",
+          "networkRole": "Misst und überträgt den Wasserstand über die ausgewählte Sensorbaugruppe am Standort.",
+          "description": "Erfassen Sie Wasserstände im Pumpensumpf zur Standortbewertung und für konfigurierte Benachrichtigungen. Wählen Sie Messspanne und Montage entsprechend dem veränderlichen Baugrubenplan und den Wasserbedingungen.",
+          "placement": "Berücksichtigen Sie Ablagerungen, Gerätebewegungen, temporäre Stromversorgung und Wartungszugang. Prüfen Sie Bezugsinformationen erneut, wenn sich der Lageplan ändert.",
+          "projectBrief": "Baugrubenplan, Pumpensumpfpositionen, Wasserstandsbereich, Installationsanforderungen und Benachrichtigungsablauf."
+        },
+        {
+          "id": "dewatering-discharge-observations",
+          "title": "Beobachtungen an Ableitungen der Wasserhaltung",
+          "networkRole": "Überträgt die ausgewählten durchflussbezogenen Kanäle oder Wasserzustandskanäle der Ableitung.",
+          "description": "Stellen Sie Beobachtungen an Ableitungen für betriebliche Bewertungen und Projektaufzeichnungen bereit. Definieren Sie formelle Mess- oder Berichtsanforderungen einschließlich Sensormethode und Abnahmeprüfungen gesondert.",
+          "placement": "Prüfen Sie Rohr- oder Gerinnebedingungen und Sondenanforderungen. Schützen Sie Kabel, Station und Stromversorgungskomponenten vor wechselnden Bautätigkeiten.",
+          "projectBrief": "Ableitungsanordnung, Größen, Einheiten, Methoden, Installation und vorgesehene Datennutzung."
+        },
+        {
+          "id": "construction-rainfall-water",
+          "title": "Niederschlags- und Wasserkontext auf Baustellen",
+          "networkRole": "Kombiniert ausgewählte Niederschlags- und Baustellenwasserkanäle in einem Übertragungsprofil.",
+          "description": "Bewerten Sie Niederschlag zusammen mit Wasserbeobachtungen der Baustelle im Rahmen des vereinbarten Betriebsprozesses. Die Aufzeichnungen implizieren weder eine automatische Steuerung der Wasserhaltung noch ein garantiertes Reaktionsergebnis.",
+          "placement": "Sorgen Sie für repräsentative Niederschlagsexposition und separat geeignete Wassermesspunkte. Prüfen Sie Stromversorgung und Kommunikation nach einem Standortwechsel erneut.",
+          "projectBrief": "Kanäle, Lageplan, Übertragungsprofil, Regelungen für Standortwechsel und erforderliche Plattformansichten."
+        }
+      ]
+    },
+    {
+      "id": "remote-mountain-catchments",
+      "title": "Abgelegene & gebirgige Einzugsgebiete",
+      "jumpLabel": "Abgelegene Einzugsgebiete",
+      "intro": "Konfigurieren Sie Wasser- und Umweltbeobachtungen für schwer zugängliche Standorte im Einzugsgebiet. Berücksichtigen Sie Stromversorgung, Kommunikation und Wartung als Teil der Überwachungsplanung.",
+      "imageKey": "hydro-mountain",
+      "imageAlt": "Felsiger Gebirgsbach, bewaldete Hänge, Zugangsweg und eine kleine Fußgängerbrücke",
+      "imageCaption": "Abgelegene & gebirgige Einzugsgebiete · Illustrative Umgebung – keine reale Kundeninstallation",
+      "tasks": [
+        {
+          "id": "remote-stream-stage",
+          "title": "Wasserstandsaufzeichnungen an abgelegenen Bächen",
+          "networkRole": "Misst und überträgt den Wasserstand über die ausgewählte Konfiguration für abgelegene Standorte.",
+          "description": "Erfassen Sie Wasserstandsbeobachtungen an definierten Bachstandorten für Einzugsgebietsaufzeichnungen. Wählen Sie Methode und Bezugsposition für die erwarteten Wasserbedingungen und dokumentieren Sie die Installation für spätere Bewertungen vor Ort.",
+          "placement": "Bewerten Sie Gelände, Montagestabilität, Treibgut und Zugang. Prüfen Sie den Kommunikationsweg an der installierten Station.",
+          "projectBrief": "Standort im Einzugsgebiet, Wasserstandsbereich, Bezugsinformationen, Sensormethode, Zugang und Übertragungsanforderungen."
+        },
+        {
+          "id": "headwater-rainfall-records",
+          "title": "Niederschlagsbeobachtungen im Quellgebiet",
+          "networkRole": "Überträgt den für die Station im Einzugsgebiet ausgewählten Niederschlagskanal.",
+          "description": "Ergänzen Sie lokale Niederschlagsbeobachtungen, wenn nahe Wasseraufzeichnungen Kontext aus dem Feld benötigen. Warnmodelle und betriebliche Reaktionen erfordern eigene definierte Systeme.",
+          "placement": "Prüfen Sie Exposition, Vegetation, saisonalen Zugang und Sensorwartung. Legen Sie die Stromversorgung für die gesamte Stationslast und die Übertragungsanforderungen aus.",
+          "projectBrief": "Niederschlagsanforderungen, Exposition, Sensoranordnung, saisonaler Zugang, Stromversorgungsauslegung und Aktualisierungsprofil."
+        },
+        {
+          "id": "remote-quality-records",
+          "title": "Abgelegene Messstellen für Wasserqualität",
+          "networkRole": "Erfasst ausgewählte Wasserzustandskanäle gemäß dem vereinbarten Übertragungsprofil.",
+          "description": "Integrieren Sie Wasserzustandsbeobachtungen von zugänglichen Punkten im Einzugsgebiet in die Plattform. Wählen Sie Parameter und Sonden entsprechend dem Zweck, den Wartungsmöglichkeiten und örtlichen Bedingungen.",
+          "placement": "Planen Sie Schutz, Reinigung und Kalibrierbesuche zusammen mit Stationsstromversorgung und Kommunikation. Prüfen Sie Einheiten, Zeitstempel und Datenquellen bei der Inbetriebnahme.",
+          "projectBrief": "Parameter, Messmethoden und Bereiche, Sondenpositionen, Wartungsintervalle und Datenanforderungen der Plattform."
+        }
+      ]
+    }
+  ],
+  "imageWidth": 627,
+  "imageHeight": 635,
+  "applicationsIntro": "Konfigurieren Sie Wasser- und Umweltbeobachtungen entsprechend dem überwachten Objekt, den hydraulischen Bedingungen und der Nutzung der Aufzeichnungen durch das Betriebsteam. Jedes Beispiel setzt geeignete Sensoren, repräsentative Platzierung, einen verfügbaren Datenweg und ein vereinbartes Bewertungsverfahren voraus.",
+  "applicationsHeading": "Wasserüberwachung.\nAn Ihren Betriebsstandorten.",
+  "relatedPath": "/product/weather-station",
+  "relatedLabel": "Wetterstation H600 entdecken",
+  "datasheet": "/downloads/hydrology-monitoring-station-datasheet.pdf"
+}

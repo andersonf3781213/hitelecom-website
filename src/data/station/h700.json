@@ -1,0 +1,648 @@
+{
+  "model": "H700",
+  "kind": "Hydrology",
+  "slug": "hydrology-monitoring-station",
+  "path": "/product/hydrology-monitoring-station",
+  "title": "H700 Hydrology Monitoring Station | Water Data | Hitelecom",
+  "metaDescription": "Configure the Hitelecom H700 with 2–12 sensor channels for water and environmental monitoring. Select measurements, power, wireless version and MQTT integration.",
+  "image": "h700.webp",
+  "imageAlt": "Hitelecom H700 hydrology monitoring station, official product image",
+  "caption": "H700 · Hydrology monitoring station",
+  "heroHeading": "H700 hydrology\nmonitoring station.",
+  "heroValue": "Field water data.\nConnected to your site.",
+  "heroDescription": "The Hitelecom H700 brings selected water and environmental measurements into a connected monitoring system. Configure 2–12 sensor channels around water level, flow-related observations, water-quality measurements and relevant weather conditions. Select the sensing assemblies, solar or mains power, communication version and reporting profile for the site. View uploaded data online in Hitelecom Cloud, receive alerts when readings exceed configured thresholds, or agree MQTT integration with a compatible customer platform.",
+  "proof": [
+    {
+      "value": "2–12",
+      "label": "Configured sensor channels",
+      "note": "Select the measurements and sensing assemblies"
+    },
+    {
+      "value": "Solar / Mains",
+      "label": "Site power configuration",
+      "note": "Size the power system around the complete load"
+    },
+    {
+      "value": "MQTT",
+      "label": "Platform data integration",
+      "note": "Hitelecom Cloud or a compatible customer platform"
+    }
+  ],
+  "featureTitle": "Water observations.\nConfigured for the site.",
+  "featureIntro": "Define each measurement, its installation and its data path as part of one station configuration. The selected sensors determine what the station measures.",
+  "features": [
+    {
+      "title": "Configured hydrological measurements",
+      "text": "Select 2–12 sensor channels for the project. Water level, flow-related and water-quality measurements can be combined with relevant environmental channels, subject to the agreed sensor configuration."
+    },
+    {
+      "title": "4G LTE / NB-IoT / LoRa",
+      "text": "Select the wireless hardware version for the deployment. Check the local operator for cellular configurations and the compatible receiver or gateway arrangement for a LoRa installation."
+    },
+    {
+      "title": "Solar or mains power",
+      "text": "Choose a power arrangement for the complete station. Size the selected power assembly, including energy storage where specified, around the sensors, reporting profile, local weather and maintenance arrangements."
+    },
+    {
+      "title": "IP65 protection reference",
+      "text": "The published station reference specifies IP65. Confirm enclosure seals, cable entries, individual probe ratings and the environmental suitability of the complete supplied assembly."
+    },
+    {
+      "title": "Hitelecom Cloud monitoring",
+      "text": "View uploaded monitoring data online and receive alerts when readings exceed configured thresholds. Set measurement limits, notification recipients and the review process around the site operating procedures."
+    },
+    {
+      "title": "MQTT data integration",
+      "text": "Connect records to Hitelecom Cloud or a compatible customer platform using the agreed data path. Define device identity, units, timestamps, payload mapping and supported authentication for the selected configuration."
+    },
+    {
+      "title": "NFC commissioning",
+      "text": "NFC activation and local device configuration are listed in the product reference. Confirm the available functions and commissioning procedure for the supplied hardware and firmware."
+    },
+    {
+      "title": "OTA maintenance",
+      "text": "Remote OTA firmware updates are listed in the product reference. Agree the supported update process, platform access, power and connectivity requirements for the supplied configuration."
+    }
+  ],
+  "planningIntro": "Start with the water body and the purpose of the observations. A useful station specification connects the sensing method, hydraulic conditions, installation, power and reporting requirements.",
+  "planning": [
+    {
+      "title": "Define each measurement",
+      "text": "List the required parameters and sensor channels. Specify working ranges, accuracy requirements, units and reporting needs for each selected sensing assembly; a channel count does not establish measurement performance.",
+      "brief": "Parameters · Sensor methods · Working ranges · Accuracy requirements · Units · Reporting profile"
+    },
+    {
+      "title": "Survey the measurement point",
+      "text": "Assess the water-level datum, flow conditions, probe position and maintenance access. Review debris, fouling, changing water levels and local exposure before selecting the sensing assembly and mounting arrangement.",
+      "brief": "Site drawing · Water-level datum · Flow conditions · Probe position · Exposure · Service access"
+    },
+    {
+      "title": "Plan power and the data path",
+      "text": "Size the power arrangement for the full sensor load and reporting schedule. Confirm cellular coverage or the LoRa receiving system, then agree the platform and threshold-notification workflow.",
+      "brief": "Sensor load · Solar / mains design · Communication version · Coverage · Platform · Alarm recipients"
+    }
+  ],
+  "installationText": "Position the station and probes for representative measurements and practical servicing. Establish the reference datum where level records require it, and protect cables, connectors and mounting hardware for the actual exposure. Verify the measurement at the receiving platform after installation; installation details and probe performance are part of the project configuration.",
+  "workflow": [
+    {
+      "title": "Measure the selected parameters",
+      "text": "The configured sensing assemblies measure the agreed water and environmental parameters. Their sensing method, working range, installation and maintenance determine the meaning and quality of each record."
+    },
+    {
+      "title": "Report through the selected connection",
+      "text": "The station collects configured sensor records and sends them using the selected wireless version and reporting profile. A LoRa configuration requires a compatible receiving system and an agreed onward data path."
+    },
+    {
+      "title": "Review data and threshold events",
+      "text": "Use Hitelecom Cloud to view uploaded monitoring data online and receive alerts when measurements exceed configured thresholds. A compatible customer platform can provide its own agreed displays and notification workflow."
+    }
+  ],
+  "coverageTitle": "Specify each measurement.\nDocument its conditions.",
+  "coverageText": "There is no single range or accuracy value that applies to every H700 configuration. Define the sensor, measuring method, working span, installation conditions and acceptance checks for each channel. Water level, flow-related observations and water-quality measurements have different requirements; one cannot substitute for another without a defined method.",
+  "rows": [
+    [
+      "Model",
+      "H700"
+    ],
+    [
+      "Station configuration",
+      "2–12 sensor channels; measurement set selected for the project"
+    ],
+    [
+      "Hydrological measurement options",
+      "Water level, flow-related and water-quality channels, by selected sensor configuration"
+    ],
+    [
+      "Environmental channel options",
+      "Relevant meteorological and environmental channels can be specified within the agreed configuration"
+    ],
+    [
+      "Measuring range",
+      "Specified for each selected sensor and working span"
+    ],
+    [
+      "Measurement accuracy",
+      "Specified for the selected sensor, range and installation conditions; no universal station-level value"
+    ],
+    [
+      "Sampling and reporting",
+      "Define the required measurement, reporting and threshold-event profile for the supplied configuration"
+    ],
+    [
+      "Wireless versions",
+      "4G LTE / NB-IoT / LoRa, by selected hardware version"
+    ],
+    [
+      "Data protocol",
+      "MQTT; agree the data path, payload mapping and authentication. LoRa requires a compatible receiving system."
+    ],
+    [
+      "Published LTE-FDD bands",
+      "B1 / B3 / B5 / B8; select the modem for the deployment operator"
+    ],
+    [
+      "Published LTE-TDD bands",
+      "B34 / B38 / B39 / B40 / B41; select the modem for the deployment operator"
+    ],
+    [
+      "Power supply",
+      "Solar power or mains electricity, by project configuration"
+    ],
+    [
+      "Protection reference",
+      "IP65 in the published station reference; probes and the complete installation require matching environmental specifications"
+    ],
+    [
+      "Local commissioning",
+      "NFC activation and local configuration, as supported by the supplied hardware and firmware"
+    ],
+    [
+      "Remote maintenance",
+      "OTA firmware updates, as supported by the supplied configuration and platform"
+    ],
+    [
+      "Mounting options",
+      "Mounting lugs / pole clamp / slotted mount, by supplied configuration"
+    ]
+  ],
+  "specNote": "Confirm the sensor list, working ranges, accuracy conditions, hardware revision, power design, communication version, mounting and platform integration in the project specification. Electrical input, dimensions, individual probe ratings and any required certificates must follow the actual supplied assembly.",
+  "faqs": [
+    {
+      "q": "What can the H700 hydrology station measure?",
+      "a": "The H700 is configured with 2–12 sensor channels for water and related environmental monitoring. A project can specify water level, flow-related observations, water-quality measurements and selected meteorological channels. The final parameter list and sensing assemblies define the supplied station; all possible parameters are not included as standard."
+    },
+    {
+      "q": "How does the H700 differ from the H600 weather station?",
+      "a": "The H600 is oriented toward meteorological measurements such as temperature, humidity, wind, rainfall and solar radiation. The H700 is oriented toward water-level, flow-related and water-quality monitoring, with related environmental channels where required. Select the model and sensors around the site rather than a fixed six-parameter or twelve-parameter label."
+    },
+    {
+      "q": "What determines water-level measurement accuracy?",
+      "a": "Accuracy depends on the selected level sensor, measuring principle, working range, installation and environmental conditions. Define these items and the acceptance method for the project. The H700 does not have one accuracy value that applies to every sensing assembly or installation."
+    },
+    {
+      "q": "Does a water-level reading also provide flow rate?",
+      "a": "A level record is not automatically a flow-rate measurement. A project requiring flow must specify a compatible flow-measurement arrangement or a separately validated method for interpreting the observations. Confirm the required parameter, units and data source before defining the station channels."
+    },
+    {
+      "q": "Which water-quality parameters are included?",
+      "a": "Water-quality channels are selected for the project. Confirm the parameters, sensing methods, ranges and suitability for the water conditions. Cleaning, calibration and replacement follow the selected probe procedures; a generic water-quality option does not define a complete laboratory analysis or regulatory reporting system."
+    },
+    {
+      "q": "Can the H700 operate at a remote site?",
+      "a": "A remote deployment can be planned using an appropriate solar-power configuration and an available communication path. Size the selected power assembly, including energy storage where specified, around the sensor load, reporting profile, seasonal conditions and service access. Confirm cellular coverage or the LoRa receiving arrangement at the actual location."
+    },
+    {
+      "q": "How do I select the wireless version?",
+      "a": "4G LTE, NB-IoT and LoRa are listed as options by hardware version. Select the modem, SIM and operator for a cellular installation. For LoRa, confirm radio settings, the compatible receiver or gateway and onward platform connection. The supplied version must match the country and project network."
+    },
+    {
+      "q": "Does the LoRa option automatically support LoRaWAN?",
+      "a": "LoRa identifies the radio technology; LoRaWAN is a separate network protocol with device, receiver and server requirements. Confirm the station protocol, firmware and receiving-platform compatibility for any LoRaWAN requirement before selecting the configuration."
+    },
+    {
+      "q": "Can I use Hitelecom Cloud or my own platform?",
+      "a": "Yes. Hitelecom Cloud provides online access to uploaded monitoring data and alerts when readings exceed configured thresholds. A compatible customer platform can receive data through the agreed MQTT integration and data path. Confirm payload mapping, device identity, units, timestamps and supported authentication during commissioning."
+    },
+    {
+      "q": "How often are readings and threshold notifications available?",
+      "a": "Define the sampling, reporting and threshold-event requirements in the project configuration. Platform availability depends on those settings, the selected hardware, power and communication path. Notifications act on available monitoring records; the product reference does not establish one fixed end-to-end delay for every installation."
+    },
+    {
+      "q": "What installation and maintenance should be planned?",
+      "a": "Plan mounting, probe position, the level datum where applicable, cable protection, connector sealing and service access. Account for debris, fouling, changing water levels and local exposure. Inspect, clean and calibrate selected sensors according to their procedures, and verify records at the platform after maintenance."
+    },
+    {
+      "q": "What information is needed for a station proposal?",
+      "a": "Provide the site layout, required parameters, ranges and accuracy requirements, sensor positions, channel count, sampling and reporting profile, country, power arrangements and destination platform. Include water conditions, installation constraints, maintenance access and the required notification workflow."
+    }
+  ],
+  "groups": [
+    {
+      "id": "rivers-catchments",
+      "title": "Rivers, Streams & Catchments",
+      "jumpLabel": "Rivers & Streams",
+      "intro": "Observe selected water and weather conditions along rivers and tributaries. Define the measuring point and hydraulic context before comparing records.",
+      "imageKey": "hydro-river",
+      "imageAlt": "River channel with vegetated banks, a low concrete bridge and a bank-side access track",
+      "imageCaption": "Rivers, Streams & Catchments · Illustrative environment",
+      "tasks": [
+        {
+          "id": "river-stage-records",
+          "title": "River-stage observations",
+          "networkRole": "Measures and reports level using the selected sensing assembly.",
+          "description": "Collect stage records at defined river locations for routine hydrological review. Maintain a documented datum and sensor position so changes can be interpreted consistently.",
+          "placement": "Assess bank structures, changing levels, debris and service access. Match the sensor method and mounting to expected hydraulic conditions.",
+          "projectBrief": "River reach, datum, level range, sensor method, installation position and reporting schedule."
+        },
+        {
+          "id": "tributary-rainfall-context",
+          "title": "Tributary rainfall and level context",
+          "networkRole": "Reports the configured rainfall and water-level channels.",
+          "description": "Review local rainfall alongside tributary levels to examine how observations change through an event. The records support analysis without establishing a site-specific forecast.",
+          "placement": "Review rainfall exposure and level-sensor placement separately. Align timestamps and maintain service access to both sensing assemblies.",
+          "projectBrief": "Catchment layout, rainfall and level channels, positions, timestamps and reporting profile."
+        },
+        {
+          "id": "stream-flow-observations",
+          "title": "Stream flow-related observations",
+          "networkRole": "Reports the flow-related quantity supplied by the selected sensor.",
+          "description": "Collect agreed flow-related observations from a defined stream reach. Specify the measured quantity and method rather than treating a stage record as a direct flow-rate value.",
+          "placement": "Assess channel geometry, water conditions and access. Document any separately validated interpretation method required by the project.",
+          "projectBrief": "Required quantity, units, measuring method, expected conditions, mounting and acceptance checks."
+        }
+      ]
+    },
+    {
+      "id": "reservoirs-lakes",
+      "title": "Reservoirs & Lakes",
+      "jumpLabel": "Reservoirs & Lakes",
+      "intro": "Monitor selected level, water-quality and weather parameters around managed lakes and reservoirs. Keep measurement performance specific to each observation point.",
+      "imageKey": "hydro-reservoir",
+      "imageAlt": "Freshwater reservoir with a small fenced water-control structure and surrounding green hills",
+      "imageCaption": "Reservoirs & Lakes · Illustrative environment",
+      "tasks": [
+        {
+          "id": "reservoir-level-trends",
+          "title": "Reservoir level trends",
+          "networkRole": "Measures and reports the configured reservoir level channel.",
+          "description": "Build a level time series at a documented reference point for operating records. These observations do not by themselves establish dam condition or provide an automatic safety assessment.",
+          "placement": "Confirm the datum, measuring span, wave and debris exposure and mounting arrangement. Plan access through the expected level variation.",
+          "projectBrief": "Operating levels, datum, selected sensor, mounting, reporting intervals and platform display."
+        },
+        {
+          "id": "lake-quality-points",
+          "title": "Lake water-quality observation points",
+          "networkRole": "Collects selected quality channels from suitable installed probes.",
+          "description": "Bring agreed lake-water observations into the platform for trend review. Select parameters and probe depths around the monitoring purpose and local water conditions.",
+          "placement": "Assess immersion, fouling, seasonal access and cleaning or calibration needs. Plan cable routing and station placement together.",
+          "projectBrief": "Quality parameters, ranges, probe locations and depths, maintenance plan and reporting schedule."
+        },
+        {
+          "id": "reservoir-weather-context",
+          "title": "Reservoir weather context",
+          "networkRole": "Reports selected weather channels alongside the configured water observations.",
+          "description": "Add rainfall, air conditions, wind or other agreed weather observations to help staff interpret reservoir conditions. Any derived water-balance or forecast function requires separate definition.",
+          "placement": "Review weather exposure separately from shoreline probe placement. Verify power and the communication path for the combined channel set.",
+          "projectBrief": "Weather and water channels, sensor layout, power requirements, update intervals and review needs."
+        }
+      ]
+    },
+    {
+      "id": "urban-stormwater",
+      "title": "Urban Stormwater & Drainage",
+      "jumpLabel": "Urban Drainage",
+      "intro": "Collect rainfall and water observations at selected urban drainage locations. Configure measurement points and notifications around the site; a station does not prevent flooding.",
+      "imageKey": "hydro-stormwater",
+      "imageAlt": "Urban concrete drainage channel receiving water from a culvert beside wet roadside landscaping",
+      "imageCaption": "Urban Stormwater & Drainage · Illustrative environment",
+      "tasks": [
+        {
+          "id": "stormwater-chamber-levels",
+          "title": "Stormwater chamber levels",
+          "networkRole": "Measures the selected drainage-chamber level channel.",
+          "description": "Follow level changes at accessible stormwater chambers for drainage review and configured notifications. Select the sensing assembly for chamber geometry and local exposure.",
+          "placement": "Account for access restrictions, debris, condensation and changing levels. Follow site procedures for installation and servicing.",
+          "projectBrief": "Chamber dimensions, level range, sensor position, access constraints and notification workflow."
+        },
+        {
+          "id": "urban-outfall-records",
+          "title": "Urban drainage outfalls",
+          "networkRole": "Reports selected level or flow-related records at the outfall.",
+          "description": "Collect observations at defined drainage outfalls to compare locations and investigate changes. Assessments of discharge capacity or receiving-water effects require a separate project method.",
+          "placement": "Review flow, debris, backwater and mounting access. Confirm sensor suitability across the expected conditions.",
+          "projectBrief": "Outfall layout, required quantities, expected conditions, mounting and reporting intervals."
+        },
+        {
+          "id": "urban-rainfall-level-review",
+          "title": "Rainfall and drainage-level review",
+          "networkRole": "Combines selected rainfall and level channels in the reporting profile.",
+          "description": "Make rainfall and drainage-level records available together for staff review. Align timestamps and reporting needs without implying an automatic rainfall-runoff model.",
+          "placement": "Provide representative rainfall exposure and a separately suitable level position. Check communications around buildings and infrastructure.",
+          "projectBrief": "Sensor list, positions, timestamps, sampling and reporting profiles and review process."
+        }
+      ]
+    },
+    {
+      "id": "pumping-water-networks",
+      "title": "Pumping Stations & Water Networks",
+      "jumpLabel": "Pumps & Networks",
+      "intro": "Bring selected intake, storage and pumping-site measurements into the platform. Measurement channels and their installation remain separate from pump control functions.",
+      "imageKey": "water",
+      "imageAlt": "Outdoor water pumping installation with blue pipes, pumps and a protective canopy",
+      "imageCaption": "Pumping Stations & Water Networks · Illustrative environment",
+      "tasks": [
+        {
+          "id": "pump-wet-well-levels",
+          "title": "Pump wet-well levels",
+          "networkRole": "Measures and reports level from the selected wet-well assembly.",
+          "description": "Follow wet-well levels for operating records and threshold notifications. Define the measuring span and probe arrangement for the well; pump control is outside the stated monitoring function.",
+          "placement": "Check turbulence, debris, cables and sensor access. Locate station and power components for the pumping-site conditions.",
+          "projectBrief": "Well layout, level range, sensing method, constraints, reporting schedule and alarm recipients."
+        },
+        {
+          "id": "water-intake-records",
+          "title": "Water-intake observations",
+          "networkRole": "Collects selected intake-level and water-condition channels.",
+          "description": "Monitor agreed intake observations to review changing supply conditions. Specify each water-level and quality channel individually so its source and units remain clear.",
+          "placement": "Assess water movement, probe protection, fouling and service access. Check component ratings and the site communication path.",
+          "projectBrief": "Intake layout, parameters, ranges, probe positions and maintenance and reporting requirements."
+        },
+        {
+          "id": "pumping-flow-records",
+          "title": "Pumping-network flow-related records",
+          "networkRole": "Reports compatible flow-related sensor records through the selected connection.",
+          "description": "Bring agreed flow-related observations from supply-network points into the platform. Define their relationship to other operating records without claiming automatic pump diagnosis.",
+          "placement": "Review pipe or channel conditions and sensor installation requirements. Confirm power, cable routing and payload mapping.",
+          "projectBrief": "Measurement points, quantities, units, sensor interfaces, reporting profile and receiving-system needs."
+        }
+      ]
+    },
+    {
+      "id": "irrigation-canals",
+      "title": "Irrigation Canals & Distribution",
+      "jumpLabel": "Irrigation Canals",
+      "intro": "Record water observations across irrigation headworks, canals and distribution points. Define the measuring method, channel geometry and operating review process for each location.",
+      "imageKey": "hydro-irrigation",
+      "imageAlt": "Concrete irrigation canal and manual sluice gate beside open crop fields",
+      "imageCaption": "Irrigation Canals & Distribution · Illustrative environment",
+      "tasks": [
+        {
+          "id": "irrigation-canal-levels",
+          "title": "Irrigation canal levels",
+          "networkRole": "Measures and reports level at selected canal monitoring points.",
+          "description": "Follow canal-level variations for irrigation-network records. Use consistent reference information so staff can compare observations between headworks and downstream points.",
+          "placement": "Assess geometry, flow, vegetation, debris and access. Match sensor and mounting to the expected level span.",
+          "projectBrief": "Canal sections, datum requirements, level ranges, sensor positions and reporting intervals."
+        },
+        {
+          "id": "irrigation-distribution-flow",
+          "title": "Distribution-point flow observations",
+          "networkRole": "Collects the flow-related channel selected for the distribution point.",
+          "description": "Record agreed flow-related measurements for operational review. Conversion from another measured quantity to flow requires an explicitly defined and validated method.",
+          "placement": "Confirm hydraulic installation and sensor requirements. Review power and communications separately from existing gates or valves.",
+          "projectBrief": "Distribution layout, required quantities and units, sensor arrangement and acceptance requirements."
+        },
+        {
+          "id": "irrigation-intake-conditions",
+          "title": "Irrigation intake water conditions",
+          "networkRole": "Reports selected water-condition channels from the intake assembly.",
+          "description": "Add agreed water-quality or temperature observations where the project requires them. Choose parameters and probes around the operating purpose and local water conditions.",
+          "placement": "Plan immersion, cleaning, calibration and seasonal access. Protect cables and connectors while retaining access to the intake.",
+          "projectBrief": "Parameters, ranges, selected probes, installation depths, service plan and reporting profile."
+        }
+      ]
+    },
+    {
+      "id": "industrial-process-water",
+      "title": "Industrial & Process Water",
+      "jumpLabel": "Industrial Water",
+      "intro": "Collect water-level, quality and temperature observations in industrial service systems. Confirm process compatibility and installation requirements for each sensing assembly.",
+      "imageKey": "water-indoor",
+      "imageAlt": "Industrial process-water pump gallery with pumps, pipes and accessible maintenance space",
+      "imageCaption": "Industrial & Process Water · Illustrative environment",
+      "tasks": [
+        {
+          "id": "service-water-storage",
+          "title": "Service-water storage levels",
+          "networkRole": "Measures and reports the selected storage-vessel level channel.",
+          "description": "Follow levels in suitable service-water tanks or basins for records and notifications. Specify vessel conditions and the sensing method; not every level probe suits every tank.",
+          "placement": "Check geometry, access and relevant pressure or environmental conditions. Match station power and wiring to the site.",
+          "projectBrief": "Vessel layout, water conditions, level range, mounting and reporting and threshold requirements."
+        },
+        {
+          "id": "process-water-quality",
+          "title": "Process-water quality records",
+          "networkRole": "Collects agreed quality channels from process-compatible probes.",
+          "description": "Make selected process-water records available for trend review and investigation. Define each parameter and method separately from laboratory testing or regulatory reporting requirements.",
+          "placement": "Assess process connections, water conditions, fouling and calibration access. Verify suitability of wetted components.",
+          "projectBrief": "Water description, parameters and ranges, sensing methods, connections and maintenance plan."
+        },
+        {
+          "id": "cooling-water-records",
+          "title": "Cooling-water observations",
+          "networkRole": "Reports selected temperature or other agreed water-condition channels.",
+          "description": "Collect observations from accessible cooling-water points for operating review. Automatic treatment, dosing or equipment control requires a separately defined system.",
+          "placement": "Select suitable probe positions and fittings for operating conditions. Review access, cable protection and electrical exposure.",
+          "projectBrief": "Monitoring points, parameters, working ranges, probe installation and platform presentation."
+        }
+      ]
+    },
+    {
+      "id": "wastewater-facilities",
+      "title": "Wastewater & Effluent Facilities",
+      "jumpLabel": "Wastewater Facilities",
+      "intro": "Monitor selected level, flow-related and quality observations at wastewater facilities. Choose sensing assemblies and maintenance procedures for the actual water conditions.",
+      "imageKey": "hydro-wastewater",
+      "imageAlt": "Outdoor wastewater treatment basins with aerated water, pipework and metal access walkways",
+      "imageCaption": "Wastewater & Effluent Facilities · Illustrative environment",
+      "tasks": [
+        {
+          "id": "wastewater-lift-levels",
+          "title": "Wastewater lift-station levels",
+          "networkRole": "Measures and reports level using the selected wastewater-suitable sensor.",
+          "description": "Track wet-well levels for operating review and configured notifications. Select the assembly for the expected contaminants, debris and installation conditions.",
+          "placement": "Plan fouling management, cable protection, probe access and station location. Follow site access and maintenance procedures.",
+          "projectBrief": "Well geometry, water conditions, measuring span, sensor arrangement and notification requirements."
+        },
+        {
+          "id": "treated-effluent-observations",
+          "title": "Treated-effluent observation points",
+          "networkRole": "Reports agreed quality channels from suitable effluent probes.",
+          "description": "Bring selected effluent records into the platform for review. Parameters, methods and verification for formal compliance reporting must be defined separately.",
+          "placement": "Assess probe immersion, fouling and calibration access. Match materials and installation to the effluent conditions.",
+          "projectBrief": "Parameters, ranges, methods, probe positions, maintenance frequency and intended data use."
+        },
+        {
+          "id": "wastewater-channel-records",
+          "title": "Wastewater channel observations",
+          "networkRole": "Collects the level or flow-related channels specified for the channel.",
+          "description": "Record observations at accessible process or discharge channels for investigation and facility records. Identify the measured quantity and any separately validated interpretation method.",
+          "placement": "Review geometry, hydraulic changes, debris and service access. Verify sensing method, power and communication at the mounting point.",
+          "projectBrief": "Channel arrangement, quantities, conditions, sensor mounting and reporting profile."
+        }
+      ]
+    },
+    {
+      "id": "aquaculture-water",
+      "title": "Aquaculture & Pond Operations",
+      "jumpLabel": "Aquaculture",
+      "intro": "Combine pond-water and selected weather observations for aquaculture operating records. Required quality parameters and probe maintenance procedures are chosen for the project.",
+      "imageKey": "aquaculture",
+      "imageAlt": "Aquaculture ponds with a paddlewheel aerator, bank-side paths and a water-supply pipe",
+      "imageCaption": "Aquaculture & Pond Operations · Illustrative environment",
+      "tasks": [
+        {
+          "id": "pond-level-records",
+          "title": "Aquaculture pond levels",
+          "networkRole": "Measures and reports the selected pond-level channel.",
+          "description": "Follow levels at defined ponds or header tanks for routine operating review. Select the reference position and sensor range around expected variation and pond operations.",
+          "placement": "Check bank access, probe protection and cables. Review communication and power for the complete station configuration.",
+          "projectBrief": "Pond layout, level range, reference position, sensor arrangement and reporting intervals."
+        },
+        {
+          "id": "pond-quality-observations",
+          "title": "Pond water-quality observation points",
+          "networkRole": "Collects the selected quality channels from the pond assembly.",
+          "description": "Make agreed pond-water measurements available for trend review and notifications. The parameter set and probes define the records; the station does not establish stocking or treatment decisions by itself.",
+          "placement": "Plan depth, protection from equipment, fouling control and calibration access. Match probes to local water conditions.",
+          "projectBrief": "Water conditions, parameters, probe depths and ranges, maintenance procedures and alarm recipients."
+        },
+        {
+          "id": "pond-weather-context",
+          "title": "Pond weather and water context",
+          "networkRole": "Reports selected weather channels with configured pond-water records.",
+          "description": "Bring rainfall, air conditions or other agreed weather observations together with pond records. Define timing and parameters around the intended operating review.",
+          "placement": "Select weather exposure separately from pond-probe placement. Include all sensor loads and reporting needs in the power design.",
+          "projectBrief": "Water and weather channels, positions, sampling and reporting requirements and display needs."
+        }
+      ]
+    },
+    {
+      "id": "wetlands-ecology",
+      "title": "Wetlands & Ecological Water Sites",
+      "jumpLabel": "Wetlands & Ecology",
+      "intro": "Record water and environmental observations at wetland and restoration sites. Match the measurement approach to access, seasonal conditions and the purpose of the study.",
+      "imageKey": "hydro-wetland",
+      "imageAlt": "Freshwater wetland with reeds, shallow channels and a wooden observation boardwalk",
+      "imageCaption": "Wetlands & Ecological Water Sites · Illustrative environment",
+      "tasks": [
+        {
+          "id": "wetland-level-records",
+          "title": "Wetland water-level records",
+          "networkRole": "Measures and reports level at the selected observation point.",
+          "description": "Build records of wetland level variation at defined locations. Document reference information and installation so field teams can interpret changes across seasons and maintenance visits.",
+          "placement": "Assess soft ground, vegetation, seasonal access and probe protection. Follow site access constraints when locating and mounting the station.",
+          "projectBrief": "Locations, reference information, level range, sensing method and seasonal service access."
+        },
+        {
+          "id": "restoration-quality-trends",
+          "title": "Restoration-site water-quality trends",
+          "networkRole": "Collects agreed quality channels from suitable installed probes.",
+          "description": "Follow water-condition records at restoration ponds or managed wetland cells. Select parameters around the monitoring objectives without implying that one station assesses overall ecological status.",
+          "placement": "Plan immersion, fouling management and calibration access. Match the complete assembly and mounting to local exposure.",
+          "projectBrief": "Objectives, quality parameters, ranges, probe depths and maintenance and reporting needs."
+        },
+        {
+          "id": "wetland-weather-context",
+          "title": "Weather context for ecological water sites",
+          "networkRole": "Reports selected environmental channels alongside configured water records.",
+          "description": "Add rainfall, air temperature or other agreed observations to water records. Keep measured channels separate from any ecological model or derived indicator used by the project team.",
+          "placement": "Review exposure, vegetation change and access over the monitoring period. Account for seasonal power conditions and the selected data path.",
+          "projectBrief": "Environmental and water channels, layout, seasonal conditions and intended data use."
+        }
+      ]
+    },
+    {
+      "id": "coastal-estuaries",
+      "title": "Coastal & Estuary Water Sites",
+      "jumpLabel": "Coastal & Estuary",
+      "intro": "Observe water-level, quality and selected weather conditions at estuary and coastal land sites. Specify sensing assemblies and materials for the actual exposure.",
+      "imageKey": "hydro-estuary",
+      "imageAlt": "Tidal river estuary with saltmarsh, exposed mudflat, an embankment path and a distant bridge",
+      "imageCaption": "Coastal & Estuary Water Sites · Illustrative environment",
+      "tasks": [
+        {
+          "id": "estuary-stage-records",
+          "title": "Estuary-stage observations",
+          "networkRole": "Measures and reports the selected estuary-level channel.",
+          "description": "Collect level observations at a defined estuary point. Document the datum and sensor method; monitoring does not by itself provide tide prediction or a navigation service.",
+          "placement": "Assess level span, water conditions, waves, debris and corrosion exposure. Plan mounting, cables and service access.",
+          "projectBrief": "Location, datum, level range, sensing method, environmental exposure and reporting needs."
+        },
+        {
+          "id": "coastal-drainage-records",
+          "title": "Coastal drainage observation points",
+          "networkRole": "Reports selected level or flow-related drainage observations.",
+          "description": "Record conditions where drainage channels meet coastal waters. Define the purpose and measurement point so staff can review variations without assuming a fixed hydraulic relationship.",
+          "placement": "Review backwater, debris, changing access and probe protection. Verify power and communication at the station location.",
+          "projectBrief": "Drainage layout, quantities, expected conditions, sensor positions and update intervals."
+        },
+        {
+          "id": "coastal-quality-observations",
+          "title": "Coastal water-quality observation points",
+          "networkRole": "Collects agreed quality channels from exposure-compatible probes.",
+          "description": "Bring selected coastal or estuarine water-condition records into the platform. Choose probes for local conditions and define their cleaning and calibration process.",
+          "placement": "Check wetted materials and connectors for the exposure. Plan immersion, probe protection and maintenance access.",
+          "projectBrief": "Water conditions, parameters and ranges, probe materials and positions, service plan and data needs."
+        }
+      ]
+    },
+    {
+      "id": "construction-dewatering",
+      "title": "Construction & Dewatering Sites",
+      "jumpLabel": "Construction Water",
+      "intro": "Follow sump, discharge and selected weather observations at construction sites. Keep monitoring records separate from pump control and site-engineering decisions.",
+      "imageKey": "hydro-dewatering",
+      "imageAlt": "Excavation sump and drainage hose leading toward a temporary settlement tank at a fenced construction site",
+      "imageCaption": "Construction & Dewatering Sites · Illustrative environment",
+      "tasks": [
+        {
+          "id": "construction-sump-records",
+          "title": "Construction sump levels",
+          "networkRole": "Measures and reports level from the selected site sensing assembly.",
+          "description": "Collect sump levels for site review and configured notifications. Select the span and mounting around the changing excavation layout and water conditions.",
+          "placement": "Account for debris, equipment movement, temporary power and service access. Recheck reference information when the layout changes.",
+          "projectBrief": "Excavation layout, sump positions, level range, installation requirements and notification workflow."
+        },
+        {
+          "id": "dewatering-discharge-observations",
+          "title": "Dewatering discharge observations",
+          "networkRole": "Reports the selected discharge flow-related or water-condition channels.",
+          "description": "Make discharge observations available for operating review and project records. Define formal measurement or reporting requirements separately, including the sensor method and acceptance checks.",
+          "placement": "Review pipe or channel conditions and probe requirements. Protect cables, station and power components from changing construction activity.",
+          "projectBrief": "Discharge arrangement, quantities, units, methods, installation and intended data use."
+        },
+        {
+          "id": "construction-rainfall-water",
+          "title": "Construction rainfall and water context",
+          "networkRole": "Combines selected rainfall and site-water channels in one reporting profile.",
+          "description": "Review rainfall alongside site-water observations as part of the agreed operating process. The records do not imply automatic dewatering control or an assured response outcome.",
+          "placement": "Provide representative rainfall exposure and separate suitable water-measurement points. Recheck power and communications after relocation.",
+          "projectBrief": "Channels, layout, reporting profile, relocation arrangements and required platform displays."
+        }
+      ]
+    },
+    {
+      "id": "remote-mountain-catchments",
+      "title": "Remote & Mountain Catchments",
+      "jumpLabel": "Remote Catchments",
+      "intro": "Configure water and environmental observations for catchment sites with limited access. Treat power, communications and servicing as part of the monitoring design.",
+      "imageKey": "hydro-mountain",
+      "imageAlt": "Rocky mountain stream, forested slopes, access trail and a small footbridge",
+      "imageCaption": "Remote & Mountain Catchments · Illustrative environment",
+      "tasks": [
+        {
+          "id": "remote-stream-stage",
+          "title": "Remote stream-level records",
+          "networkRole": "Measures and reports level through the selected remote-site configuration.",
+          "description": "Collect stage observations at defined stream locations for catchment records. Select the method and reference position for expected water conditions, and document the installation for later field review.",
+          "placement": "Assess terrain, mounting stability, debris and access. Verify the communication path at the installed station.",
+          "projectBrief": "Catchment location, level range, reference information, sensor method, access and reporting needs."
+        },
+        {
+          "id": "headwater-rainfall-records",
+          "title": "Headwater rainfall observations",
+          "networkRole": "Reports the rainfall channel selected for the catchment station.",
+          "description": "Add local rainfall observations where field context is needed for nearby water records. Warning models and operating responses require their own defined systems.",
+          "placement": "Review exposure, vegetation, seasonal access and sensor maintenance. Size power for the complete station load and reporting needs.",
+          "projectBrief": "Rainfall requirements, exposure, sensor arrangement, seasonal access, power design and update profile."
+        },
+        {
+          "id": "remote-quality-records",
+          "title": "Remote water-quality observation points",
+          "networkRole": "Collects selected water-condition channels using the agreed reporting profile.",
+          "description": "Bring water-condition observations from accessible catchment points into the platform. Select parameters and probes around the purpose, available servicing and local conditions.",
+          "placement": "Plan protection, cleaning and calibration visits with station power and communications. Verify units, timestamps and record sources during commissioning.",
+          "projectBrief": "Parameters, sensing methods and ranges, probe positions, service intervals and platform data needs."
+        }
+      ]
+    }
+  ],
+  "imageWidth": 627,
+  "imageHeight": 635,
+  "applicationsIntro": "Configure water and environmental observations around the monitored asset, hydraulic conditions and the way the operating team uses the records. Each example depends on suitable sensors, representative placement, an available data path and an agreed review process.",
+  "applicationsHeading": "Water monitoring.\nAcross your operating sites.",
+  "relatedPath": "/product/weather-station",
+  "relatedLabel": "Explore H600 weather station",
+  "datasheet": "/downloads/hydrology-monitoring-station-datasheet.pdf"
+}

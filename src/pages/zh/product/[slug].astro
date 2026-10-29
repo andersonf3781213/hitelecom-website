@@ -19,7 +19,7 @@ export const getStaticPaths: GetStaticPaths = () => {
   // V109 目录管理：managedPage 新产品由 [...managed].astro 兜底路由输出，此处排除避免路径冲突
   const managedSlugs = new Set(getManagedPages(catalog).filter((pg) => pg.locale === 'zh').map((pg) => pg.path.split('/').pop()));
   return Object.values(productSlugs)
-    .filter((slug) => !['temperature-sensor', 'pressure-sensor', 'soil-moisture-sensor', 'liquid-level-sensor', 'tilt-sensor', 'radar-distance-sensor', 'vibration-sensor', 'air-quality-sensor', 'temperature-humidity-sensor', 'temperature-humidity-data-logger', 'tvoc-sensor', 'asset-tracking-sensor', 'custom-gas-sensor', 'indoor-gateway-h66', 'outdoor-4g-gateway-h68'].includes(slug))
+    .filter((slug) => !['temperature-sensor', 'pressure-sensor', 'soil-moisture-sensor', 'liquid-level-sensor', 'tilt-sensor', 'radar-distance-sensor', 'vibration-sensor', 'air-quality-sensor', 'temperature-humidity-sensor', 'temperature-humidity-data-logger', 'tvoc-sensor', 'asset-tracking-sensor', 'custom-gas-sensor', 'indoor-gateway-h66', 'outdoor-4g-gateway-h68', 'weather-station', 'hydrology-monitoring-station'].includes(slug))
     .filter((slug) => !managedSlugs.has(slug))
     .map((slug) => ({ params: { slug } }));
 }

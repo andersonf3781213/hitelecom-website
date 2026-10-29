@@ -1,0 +1,648 @@
+{
+  "model": "H700",
+  "kind": "Hydrologie",
+  "slug": "hydrology-monitoring-station",
+  "path": "/fr/product/hydrology-monitoring-station",
+  "title": "Station de surveillance hydrologique H700 | Données sur l’eau | Hitelecom",
+  "metaDescription": "Configurez le Hitelecom H700 avec 2–12 canaux de capteurs pour la surveillance de l’eau et de l’environnement. Sélectionnez les mesures, l’alimentation, la version sans fil et l’intégration MQTT.",
+  "image": "h700.webp",
+  "imageAlt": "Station de surveillance hydrologique Hitelecom H700, image officielle du produit",
+  "caption": "H700 · Station de surveillance hydrologique",
+  "heroHeading": "Station de surveillance\nhydrologique H700.",
+  "heroValue": "Les données de terrain sur l’eau.\nConnectées à votre site.",
+  "heroDescription": "Le Hitelecom H700 intègre les mesures d’eau et d’environnement sélectionnées à un système de surveillance connecté. Configurez 2–12 canaux de capteurs pour le niveau d’eau, les observations liées à l’écoulement, les mesures de qualité de l’eau et les conditions météo pertinentes. Sélectionnez les ensembles de capteurs, l’alimentation solaire ou secteur, la version de communication et le profil de transmission pour le site. Consultez les données transmises en ligne dans Hitelecom Cloud, recevez des alertes lorsque les relevés dépassent les seuils configurés, ou convenez d’une intégration MQTT à une plateforme client compatible.",
+  "proof": [
+    {
+      "value": "2–12",
+      "label": "Canaux de capteurs configurés",
+      "note": "Sélectionnez les mesures et les ensembles de capteurs"
+    },
+    {
+      "value": "Solaire / Secteur",
+      "label": "Configuration de l’alimentation du site",
+      "note": "Dimensionnez le système d’alimentation selon la consommation totale"
+    },
+    {
+      "value": "MQTT",
+      "label": "Intégration des données à la plateforme",
+      "note": "Hitelecom Cloud ou une plateforme client compatible"
+    }
+  ],
+  "featureTitle": "Les observations de l’eau.\nConfigurées pour le site.",
+  "featureIntro": "Définissez chaque mesure, son installation et le cheminement de ses données dans une même configuration de station. Les capteurs sélectionnés déterminent ce que la station mesure.",
+  "features": [
+    {
+      "title": "Mesures hydrologiques configurées",
+      "text": "Sélectionnez 2–12 canaux de capteurs pour le projet. Les mesures de niveau d’eau, liées à l’écoulement et de qualité de l’eau peuvent être associées à des canaux environnementaux pertinents, selon la configuration de capteurs convenue."
+    },
+    {
+      "title": "4G LTE / NB-IoT / LoRa",
+      "text": "Sélectionnez la version matérielle sans fil pour le déploiement. Vérifiez l’opérateur local pour les configurations cellulaires et le dispositif de récepteur ou de passerelle compatible pour une installation LoRa."
+    },
+    {
+      "title": "Alimentation solaire ou secteur",
+      "text": "Choisissez un dispositif d’alimentation pour la station complète. Dimensionnez l’ensemble d’alimentation sélectionné, y compris le stockage d’énergie lorsqu’il est spécifié, selon les capteurs, le profil de transmission, la météo locale et l’organisation de l’entretien."
+    },
+    {
+      "title": "Référence de protection IP65",
+      "text": "La référence publiée de la station spécifie IP65. Confirmez les joints du boîtier, les entrées de câbles, les indices de protection de chaque sonde et l’adaptation environnementale de l’ensemble complet fourni."
+    },
+    {
+      "title": "Surveillance dans Hitelecom Cloud",
+      "text": "Consultez les données de surveillance transmises en ligne et recevez des alertes lorsque les relevés dépassent les seuils configurés. Définissez les limites de mesure, les destinataires des notifications et le processus d’analyse selon les procédures d’exploitation du site."
+    },
+    {
+      "title": "Intégration des données par MQTT",
+      "text": "Connectez les relevés à Hitelecom Cloud ou à une plateforme client compatible via le cheminement des données convenu. Définissez l’identité de l’appareil, les unités, les horodatages, le mappage des charges utiles et l’authentification prise en charge pour la configuration sélectionnée."
+    },
+    {
+      "title": "Mise en service par NFC",
+      "text": "L’activation NFC et la configuration locale de l’appareil figurent dans la référence produit. Confirmez les fonctions disponibles et la procédure de mise en service pour le matériel et le micrologiciel fournis."
+    },
+    {
+      "title": "Maintenance par OTA",
+      "text": "Les mises à jour à distance du micrologiciel par OTA figurent dans la référence produit. Convenez du processus de mise à jour pris en charge, des accès à la plateforme et des exigences d’alimentation et de connectivité pour la configuration fournie."
+    }
+  ],
+  "planningIntro": "Commencez par le milieu aquatique et la finalité des observations. Une spécification de station utile relie la méthode de mesure, les conditions hydrauliques, l’installation, l’alimentation et les exigences de transmission.",
+  "planning": [
+    {
+      "title": "Définir chaque mesure",
+      "text": "Listez les paramètres et les canaux de capteurs requis. Spécifiez les plages de fonctionnement, les exigences de précision, les unités et les besoins de transmission pour chaque ensemble de capteurs sélectionné ; le nombre de canaux ne définit pas les performances de mesure.",
+      "brief": "Paramètres · Méthodes de mesure · Plages de fonctionnement · Exigences de précision · Unités · Profil de transmission"
+    },
+    {
+      "title": "Examiner le point de mesure",
+      "text": "Évaluez la référence de niveau d’eau, les conditions d’écoulement, la position des sondes et l’accès d’entretien. Examinez les débris, l’encrassement, les variations de niveau d’eau et l’exposition locale avant de sélectionner l’ensemble de capteurs et le dispositif de fixation.",
+      "brief": "Plan du site · Référence de niveau d’eau · Conditions d’écoulement · Position des sondes · Exposition · Accès d’entretien"
+    },
+    {
+      "title": "Planifier l’alimentation et le cheminement des données",
+      "text": "Dimensionnez l’alimentation selon la consommation totale des capteurs et le calendrier de transmission. Confirmez la couverture cellulaire ou le système de réception LoRa, puis convenez de la plateforme et de la procédure de notification sur seuils.",
+      "brief": "Consommation des capteurs · Conception solaire / secteur · Version de communication · Couverture · Plateforme · Destinataires des alarmes"
+    }
+  ],
+  "installationText": "Positionnez la station et les sondes pour des mesures représentatives et un entretien pratique. Établissez le repère de référence lorsque les relevés de niveau l’exigent, et protégez les câbles, les connecteurs et les fixations selon l’exposition réelle. Vérifiez la mesure sur la plateforme réceptrice après l’installation ; les détails d’installation et les performances des sondes font partie de la configuration du projet.",
+  "workflow": [
+    {
+      "title": "Mesurer les paramètres sélectionnés",
+      "text": "Les ensembles de capteurs configurés mesurent les paramètres d’eau et d’environnement convenus. Leur méthode de mesure, leur plage de fonctionnement, leur installation et leur entretien déterminent la signification et la qualité de chaque relevé."
+    },
+    {
+      "title": "Transmettre via la connexion sélectionnée",
+      "text": "La station collecte les relevés des capteurs configurés et les transmet via la version sans fil et le profil de transmission sélectionnés. Une configuration LoRa nécessite un système de réception compatible et un cheminement des données en aval convenu."
+    },
+    {
+      "title": "Examiner les données et les événements de seuil",
+      "text": "Utilisez Hitelecom Cloud pour consulter les données de surveillance transmises en ligne et recevoir des alertes lorsque les mesures dépassent les seuils configurés. Une plateforme client compatible peut proposer les affichages et les procédures de notification convenus."
+    }
+  ],
+  "coverageTitle": "Spécifiez chaque mesure.\nDocumentez ses conditions.",
+  "coverageText": "Aucune valeur unique de plage ou de précision ne s’applique à toutes les configurations H700. Définissez le capteur, la méthode de mesure, l’étendue de mesure, les conditions d’installation et les contrôles de réception pour chaque canal. Le niveau d’eau, les observations liées à l’écoulement et les mesures de qualité de l’eau ont des exigences différentes ; ils ne peuvent se substituer les uns aux autres sans méthode définie.",
+  "rows": [
+    [
+      "Modèle",
+      "H700"
+    ],
+    [
+      "Configuration de la station",
+      "2–12 canaux de capteurs ; ensemble de mesures sélectionné pour le projet"
+    ],
+    [
+      "Options de mesures hydrologiques",
+      "Canaux de niveau d’eau, liés à l’écoulement et de qualité de l’eau, selon la configuration de capteurs sélectionnée"
+    ],
+    [
+      "Options de canaux environnementaux",
+      "Des canaux météorologiques et environnementaux pertinents peuvent être spécifiés dans la configuration convenue"
+    ],
+    [
+      "Étendue de mesure",
+      "Spécifiée pour chaque capteur et étendue de fonctionnement sélectionnés"
+    ],
+    [
+      "Précision de mesure",
+      "Spécifiée pour le capteur sélectionné, la plage et les conditions d’installation ; aucune valeur universelle à l’échelle de la station"
+    ],
+    [
+      "Échantillonnage et transmission",
+      "Définir le profil de mesure, de transmission et d’événements de seuil requis pour la configuration fournie"
+    ],
+    [
+      "Versions sans fil",
+      "4G LTE / NB-IoT / LoRa, selon la version matérielle sélectionnée"
+    ],
+    [
+      "Protocole de données",
+      "MQTT ; convenir du cheminement des données, du mappage des charges utiles et de l’authentification. LoRa nécessite un système de réception compatible."
+    ],
+    [
+      "Bandes LTE-FDD publiées",
+      "B1 / B3 / B5 / B8 ; sélectionner le modem selon l’opérateur du déploiement"
+    ],
+    [
+      "Bandes LTE-TDD publiées",
+      "B34 / B38 / B39 / B40 / B41 ; sélectionner le modem selon l’opérateur du déploiement"
+    ],
+    [
+      "Alimentation",
+      "Énergie solaire ou secteur, selon la configuration du projet"
+    ],
+    [
+      "Référence de protection",
+      "IP65 dans la référence publiée de la station ; les sondes et l’installation complète nécessitent des spécifications environnementales adaptées"
+    ],
+    [
+      "Mise en service locale",
+      "Activation NFC et configuration locale, selon les fonctions prises en charge par le matériel et le micrologiciel fournis"
+    ],
+    [
+      "Maintenance à distance",
+      "Mises à jour du micrologiciel par OTA, selon les fonctions prises en charge par la configuration et la plateforme fournies"
+    ],
+    [
+      "Options de fixation",
+      "Pattes de fixation / collier de mât / fixation à fentes, selon la configuration fournie"
+    ]
+  ],
+  "specNote": "Confirmez la liste des capteurs, les plages de fonctionnement, les conditions de précision, la révision matérielle, la conception de l’alimentation, la version de communication, la fixation et l’intégration à la plateforme dans les spécifications du projet. L’entrée électrique, les dimensions, les indices de protection de chaque sonde et les éventuels certificats requis doivent correspondre à l’ensemble réellement fourni.",
+  "faqs": [
+    {
+      "q": "Que peut mesurer la station hydrologique H700 ?",
+      "a": "Le H700 est configuré avec 2–12 canaux de capteurs pour la surveillance de l’eau et de l’environnement associé. Un projet peut spécifier le niveau d’eau, les observations liées à l’écoulement, les mesures de qualité de l’eau et des canaux météorologiques sélectionnés. La liste finale des paramètres et les ensembles de capteurs définissent la station fournie ; tous les paramètres possibles ne sont pas inclus en standard."
+    },
+    {
+      "q": "Quelle différence entre le H700 et la station météo H600 ?",
+      "a": "Le H600 est orienté vers les mesures météorologiques telles que la température, l’humidité, le vent, les précipitations et le rayonnement solaire. Le H700 est orienté vers la surveillance du niveau d’eau, des paramètres liés à l’écoulement et de la qualité de l’eau, avec des canaux environnementaux associés si nécessaire. Sélectionnez le modèle et les capteurs selon le site plutôt que selon une étiquette fixe à six ou douze paramètres."
+    },
+    {
+      "q": "Qu’est-ce qui détermine la précision de mesure du niveau d’eau ?",
+      "a": "La précision dépend du capteur de niveau sélectionné, du principe de mesure, de la plage de fonctionnement, de l’installation et des conditions environnementales. Définissez ces éléments et la méthode de réception pour le projet. Le H700 ne possède pas une valeur de précision unique applicable à tous les ensembles de capteurs ou à toutes les installations."
+    },
+    {
+      "q": "Un relevé de niveau d’eau fournit-il aussi le débit ?",
+      "a": "Un relevé de niveau n’est pas automatiquement une mesure de débit. Un projet nécessitant le débit doit spécifier un dispositif de mesure de débit compatible ou une méthode d’interprétation des observations validée séparément. Confirmez le paramètre requis, les unités et la source des données avant de définir les canaux de la station."
+    },
+    {
+      "q": "Quels paramètres de qualité de l’eau sont inclus ?",
+      "a": "Les canaux de qualité de l’eau sont sélectionnés pour le projet. Confirmez les paramètres, les méthodes de mesure, les plages et l’adéquation aux conditions de l’eau. Le nettoyage, l’étalonnage et le remplacement suivent les procédures des sondes sélectionnées ; une option générique de qualité de l’eau ne définit pas une analyse de laboratoire complète ni un système de rapports réglementaires."
+    },
+    {
+      "q": "Le H700 peut-il fonctionner sur un site isolé ?",
+      "a": "Un déploiement à distance peut être planifié avec une configuration d’alimentation solaire adaptée et une liaison de communication disponible. Dimensionnez l’ensemble d’alimentation sélectionné, y compris le stockage d’énergie lorsqu’il est spécifié, selon la consommation des capteurs, le profil de transmission, les conditions saisonnières et l’accès d’entretien. Confirmez la couverture cellulaire ou le dispositif de réception LoRa à l’emplacement réel."
+    },
+    {
+      "q": "Comment choisir la version sans fil ?",
+      "a": "4G LTE, NB-IoT et LoRa figurent parmi les options selon la version matérielle. Sélectionnez le modem, la carte SIM et l’opérateur pour une installation cellulaire. Pour LoRa, confirmez les paramètres radio, le récepteur ou la passerelle compatible et la connexion en aval à la plateforme. La version fournie doit correspondre au pays et au réseau du projet."
+    },
+    {
+      "q": "L’option LoRa prend-elle automatiquement en charge LoRaWAN ?",
+      "a": "LoRa désigne la technologie radio ; LoRaWAN est un protocole réseau distinct avec des exigences pour les appareils, les récepteurs et les serveurs. Confirmez le protocole de la station, le micrologiciel et la compatibilité de la plateforme réceptrice pour toute exigence LoRaWAN avant de sélectionner la configuration."
+    },
+    {
+      "q": "Puis-je utiliser Hitelecom Cloud ou ma propre plateforme ?",
+      "a": "Oui. Hitelecom Cloud fournit un accès en ligne aux données de surveillance transmises et des alertes lorsque les relevés dépassent les seuils configurés. Une plateforme client compatible peut recevoir les données via l’intégration MQTT et le cheminement des données convenus. Confirmez le mappage des charges utiles, l’identité de l’appareil, les unités, les horodatages et l’authentification prise en charge lors de la mise en service."
+    },
+    {
+      "q": "À quelle fréquence les relevés et les notifications sur seuils sont-ils disponibles ?",
+      "a": "Définissez les exigences d’échantillonnage, de transmission et d’événements de seuil dans la configuration du projet. La disponibilité sur la plateforme dépend de ces réglages, du matériel sélectionné, de l’alimentation et de la liaison de communication. Les notifications s’appuient sur les relevés de surveillance disponibles ; la référence produit ne définit pas un délai fixe de bout en bout pour chaque installation."
+    },
+    {
+      "q": "Quels travaux d’installation et d’entretien faut-il prévoir ?",
+      "a": "Planifiez la fixation, la position des sondes, le repère de niveau s’il y a lieu, la protection des câbles, l’étanchéité des connecteurs et l’accès d’entretien. Tenez compte des débris, de l’encrassement, des variations de niveau d’eau et de l’exposition locale. Inspectez, nettoyez et étalonnez les capteurs sélectionnés selon leurs procédures, et vérifiez les relevés sur la plateforme après l’entretien."
+    },
+    {
+      "q": "Quelles informations fournir pour une proposition de station ?",
+      "a": "Fournissez le plan du site, les paramètres requis, les plages et exigences de précision, les positions des capteurs, le nombre de canaux, le profil d’échantillonnage et de transmission, le pays, les dispositifs d’alimentation et la plateforme de destination. Précisez les conditions de l’eau, les contraintes d’installation, l’accès d’entretien et la procédure de notification requise."
+    }
+  ],
+  "groups": [
+    {
+      "id": "rivers-catchments",
+      "title": "Rivières, cours d’eau et bassins versants",
+      "jumpLabel": "Rivières et cours d’eau",
+      "intro": "Observez les conditions d’eau et de météo sélectionnées le long des rivières et des affluents. Définissez le point de mesure et le contexte hydraulique avant de comparer les relevés.",
+      "imageKey": "hydro-river",
+      "imageAlt": "Lit de rivière avec berges végétalisées, pont bas en béton et piste d’accès en rive",
+      "imageCaption": "Rivières, cours d’eau et bassins versants · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "river-stage-records",
+          "title": "Observations de la hauteur d’eau en rivière",
+          "networkRole": "Mesure et transmet le niveau avec l’ensemble de capteurs sélectionné.",
+          "description": "Collectez les relevés de hauteur d’eau à des emplacements de rivière définis pour l’analyse hydrologique courante. Conservez un repère de référence et une position de capteur documentés afin d’interpréter les variations de manière cohérente.",
+          "placement": "Évaluez les ouvrages de berge, les variations de niveau, les débris et l’accès d’entretien. Adaptez la méthode de mesure et la fixation aux conditions hydrauliques attendues.",
+          "projectBrief": "Tronçon de rivière, repère de référence, plage de niveau, méthode de mesure, position d’installation et calendrier de transmission."
+        },
+        {
+          "id": "tributary-rainfall-context",
+          "title": "Précipitations et contexte de niveau des affluents",
+          "networkRole": "Transmet les canaux configurés de précipitations et de niveau d’eau.",
+          "description": "Examinez les précipitations locales avec les niveaux des affluents pour étudier l’évolution des observations au cours d’un événement. Les relevés permettent l’analyse sans établir de prévision propre au site.",
+          "placement": "Examinez séparément l’exposition du capteur de précipitations et la position du capteur de niveau. Alignez les horodatages et préservez l’accès d’entretien aux deux ensembles de capteurs.",
+          "projectBrief": "Plan du bassin versant, canaux de précipitations et de niveau, positions, horodatages et profil de transmission."
+        },
+        {
+          "id": "stream-flow-observations",
+          "title": "Observations liées à l’écoulement des cours d’eau",
+          "networkRole": "Transmet la grandeur liée à l’écoulement fournie par le capteur sélectionné.",
+          "description": "Collectez les observations convenues liées à l’écoulement sur un tronçon de cours d’eau défini. Spécifiez la grandeur mesurée et la méthode plutôt que de traiter un relevé de hauteur d’eau comme une valeur directe de débit.",
+          "placement": "Évaluez la géométrie du lit, les conditions de l’eau et l’accès. Documentez toute méthode d’interprétation validée séparément requise par le projet.",
+          "projectBrief": "Grandeur requise, unités, méthode de mesure, conditions attendues, fixation et contrôles de réception."
+        }
+      ]
+    },
+    {
+      "id": "reservoirs-lakes",
+      "title": "Réservoirs et lacs",
+      "jumpLabel": "Réservoirs et lacs",
+      "intro": "Surveillez les paramètres sélectionnés de niveau, de qualité de l’eau et de météo autour des lacs et réservoirs gérés. Définissez les performances de mesure pour chaque point d’observation.",
+      "imageKey": "hydro-reservoir",
+      "imageAlt": "Réservoir d’eau douce avec petit ouvrage de régulation clôturé et collines verdoyantes environnantes",
+      "imageCaption": "Réservoirs et lacs · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "reservoir-level-trends",
+          "title": "Tendances du niveau des réservoirs",
+          "networkRole": "Mesure et transmet le canal configuré de niveau du réservoir.",
+          "description": "Constituez une série temporelle de niveau à un point de référence documenté pour les relevés d’exploitation. Ces observations ne déterminent pas à elles seules l’état du barrage et ne fournissent pas d’évaluation automatique de la sécurité.",
+          "placement": "Confirmez le repère de référence, l’étendue de mesure, l’exposition aux vagues et aux débris, ainsi que le dispositif de fixation. Prévoyez l’accès sur toute la variation de niveau attendue.",
+          "projectBrief": "Niveaux d’exploitation, repère de référence, capteur sélectionné, fixation, intervalles de transmission et affichage dans la plateforme."
+        },
+        {
+          "id": "lake-quality-points",
+          "title": "Points d’observation de la qualité de l’eau des lacs",
+          "networkRole": "Collecte les canaux de qualité sélectionnés avec des sondes installées adaptées.",
+          "description": "Intégrez les observations convenues de l’eau du lac à la plateforme pour l’analyse des tendances. Sélectionnez les paramètres et les profondeurs de sondes selon l’objectif de surveillance et les conditions locales de l’eau.",
+          "placement": "Évaluez l’immersion, l’encrassement, l’accès saisonnier et les besoins de nettoyage ou d’étalonnage. Planifiez ensemble le passage des câbles et l’implantation de la station.",
+          "projectBrief": "Paramètres de qualité, plages, emplacements et profondeurs des sondes, plan d’entretien et calendrier de transmission."
+        },
+        {
+          "id": "reservoir-weather-context",
+          "title": "Contexte météo des réservoirs",
+          "networkRole": "Transmet les canaux météo sélectionnés avec les observations d’eau configurées.",
+          "description": "Ajoutez les précipitations, les conditions de l’air, le vent ou d’autres observations météo convenues pour aider le personnel à interpréter les conditions du réservoir. Toute fonction dérivée de bilan hydrique ou de prévision nécessite une définition distincte.",
+          "placement": "Examinez l’exposition météo séparément de l’implantation des sondes en rive. Vérifiez l’alimentation et la liaison de communication pour l’ensemble des canaux combinés.",
+          "projectBrief": "Canaux météo et d’eau, disposition des capteurs, besoins d’alimentation, intervalles de mise à jour et besoins d’analyse."
+        }
+      ]
+    },
+    {
+      "id": "urban-stormwater",
+      "title": "Eaux pluviales et drainage urbains",
+      "jumpLabel": "Drainage urbain",
+      "intro": "Collectez les observations de précipitations et d’eau sur des sites de drainage urbain sélectionnés. Configurez les points de mesure et les notifications selon le site ; une station ne prévient pas les inondations.",
+      "imageKey": "hydro-stormwater",
+      "imageAlt": "Canal de drainage urbain en béton recevant l’eau d’un ponceau près d’un aménagement paysager routier humide",
+      "imageCaption": "Eaux pluviales et drainage urbains · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "stormwater-chamber-levels",
+          "title": "Niveaux des regards d’eaux pluviales",
+          "networkRole": "Mesure le canal sélectionné de niveau du regard de drainage.",
+          "description": "Suivez les variations de niveau dans les regards d’eaux pluviales accessibles pour l’analyse du drainage et les notifications configurées. Sélectionnez l’ensemble de capteurs selon la géométrie du regard et l’exposition locale.",
+          "placement": "Tenez compte des restrictions d’accès, des débris, de la condensation et des variations de niveau. Suivez les procédures du site pour l’installation et l’entretien.",
+          "projectBrief": "Dimensions du regard, plage de niveau, position du capteur, contraintes d’accès et procédure de notification."
+        },
+        {
+          "id": "urban-outfall-records",
+          "title": "Exutoires de drainage urbain",
+          "networkRole": "Transmet les relevés sélectionnés de niveau ou liés à l’écoulement à l’exutoire.",
+          "description": "Collectez les observations à des exutoires de drainage définis pour comparer les emplacements et étudier les variations. L’évaluation de la capacité d’évacuation ou des effets sur le milieu récepteur nécessite une méthode de projet distincte.",
+          "placement": "Examinez l’écoulement, les débris, les remous et l’accès à la fixation. Confirmez l’adéquation du capteur à l’ensemble des conditions attendues.",
+          "projectBrief": "Plan de l’exutoire, grandeurs requises, conditions attendues, fixation et intervalles de transmission."
+        },
+        {
+          "id": "urban-rainfall-level-review",
+          "title": "Analyse des précipitations et du niveau de drainage",
+          "networkRole": "Associe les canaux sélectionnés de précipitations et de niveau dans le profil de transmission.",
+          "description": "Mettez conjointement à disposition les relevés de précipitations et de niveau de drainage pour l’analyse par le personnel. Alignez les horodatages et les besoins de transmission sans présumer d’un modèle pluie-débit automatique.",
+          "placement": "Prévoyez une exposition représentative pour les précipitations et une position de niveau adaptée séparément. Vérifiez les communications autour des bâtiments et des infrastructures.",
+          "projectBrief": "Liste des capteurs, positions, horodatages, profils d’échantillonnage et de transmission, et processus d’analyse."
+        }
+      ]
+    },
+    {
+      "id": "pumping-water-networks",
+      "title": "Stations de pompage et réseaux d’eau",
+      "jumpLabel": "Pompes et réseaux",
+      "intro": "Intégrez à la plateforme les mesures sélectionnées des prises d’eau, du stockage et des sites de pompage. Les canaux de mesure et leur installation restent distincts des fonctions de commande des pompes.",
+      "imageKey": "water",
+      "imageAlt": "Installation extérieure de pompage d’eau avec tuyaux bleus, pompes et auvent de protection",
+      "imageCaption": "Stations de pompage et réseaux d’eau · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "pump-wet-well-levels",
+          "title": "Niveaux des bâches de pompage",
+          "networkRole": "Mesure et transmet le niveau depuis l’ensemble sélectionné pour la bâche de pompage.",
+          "description": "Suivez les niveaux des bâches pour les relevés d’exploitation et les notifications sur seuils. Définissez l’étendue de mesure et le dispositif de sondes pour la bâche ; la commande des pompes dépasse la fonction de surveillance décrite.",
+          "placement": "Vérifiez les turbulences, les débris, les câbles et l’accès aux capteurs. Positionnez les composants de la station et de l’alimentation selon les conditions du site de pompage.",
+          "projectBrief": "Plan de la bâche, plage de niveau, méthode de mesure, contraintes, calendrier de transmission et destinataires des alarmes."
+        },
+        {
+          "id": "water-intake-records",
+          "title": "Observations des prises d’eau",
+          "networkRole": "Collecte les canaux sélectionnés de niveau de prise d’eau et de conditions de l’eau.",
+          "description": "Surveillez les observations convenues de la prise d’eau pour examiner les variations des conditions d’approvisionnement. Spécifiez individuellement chaque canal de niveau et de qualité de l’eau afin que sa source et ses unités restent explicites.",
+          "placement": "Évaluez le mouvement de l’eau, la protection des sondes, l’encrassement et l’accès d’entretien. Vérifiez les indices de protection des composants et la liaison de communication du site.",
+          "projectBrief": "Plan de la prise d’eau, paramètres, plages, positions des sondes et exigences d’entretien et de transmission."
+        },
+        {
+          "id": "pumping-flow-records",
+          "title": "Relevés liés à l’écoulement dans les réseaux de pompage",
+          "networkRole": "Transmet les relevés de capteurs compatibles liés à l’écoulement via la connexion sélectionnée.",
+          "description": "Intégrez à la plateforme les observations convenues liées à l’écoulement aux points du réseau d’alimentation. Définissez leur relation avec les autres relevés d’exploitation sans prétendre à un diagnostic automatique des pompes.",
+          "placement": "Examinez les conditions des conduites ou des canaux et les exigences d’installation des capteurs. Confirmez l’alimentation, le passage des câbles et le mappage des charges utiles.",
+          "projectBrief": "Points de mesure, grandeurs, unités, interfaces des capteurs, profil de transmission et besoins du système récepteur."
+        }
+      ]
+    },
+    {
+      "id": "irrigation-canals",
+      "title": "Canaux d’irrigation et distribution",
+      "jumpLabel": "Canaux d’irrigation",
+      "intro": "Enregistrez les observations d’eau sur les ouvrages de tête, les canaux et les points de distribution d’irrigation. Définissez la méthode de mesure, la géométrie du canal et le processus d’analyse d’exploitation pour chaque emplacement.",
+      "imageKey": "hydro-irrigation",
+      "imageAlt": "Canal d’irrigation en béton et vanne manuelle à côté de champs cultivés ouverts",
+      "imageCaption": "Canaux d’irrigation et distribution · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "irrigation-canal-levels",
+          "title": "Niveaux des canaux d’irrigation",
+          "networkRole": "Mesure et transmet le niveau aux points de surveillance de canal sélectionnés.",
+          "description": "Suivez les variations de niveau des canaux pour les relevés du réseau d’irrigation. Utilisez des informations de référence cohérentes pour que le personnel puisse comparer les observations entre les ouvrages de tête et les points en aval.",
+          "placement": "Évaluez la géométrie, l’écoulement, la végétation, les débris et l’accès. Adaptez le capteur et la fixation à l’étendue de niveau attendue.",
+          "projectBrief": "Sections des canaux, exigences de repère de référence, plages de niveau, positions des capteurs et intervalles de transmission."
+        },
+        {
+          "id": "irrigation-distribution-flow",
+          "title": "Observations d’écoulement aux points de distribution",
+          "networkRole": "Collecte le canal lié à l’écoulement sélectionné pour le point de distribution.",
+          "description": "Enregistrez les mesures convenues liées à l’écoulement pour l’analyse d’exploitation. La conversion d’une autre grandeur mesurée en débit nécessite une méthode explicitement définie et validée.",
+          "placement": "Confirmez l’installation hydraulique et les exigences des capteurs. Examinez l’alimentation et les communications séparément des vannes ou des clapets existants.",
+          "projectBrief": "Plan de distribution, grandeurs et unités requises, dispositif de capteurs et exigences de réception."
+        },
+        {
+          "id": "irrigation-intake-conditions",
+          "title": "Conditions de l’eau aux prises d’irrigation",
+          "networkRole": "Transmet les canaux sélectionnés de conditions de l’eau depuis l’ensemble de prise d’eau.",
+          "description": "Ajoutez les observations convenues de qualité ou de température de l’eau lorsque le projet l’exige. Choisissez les paramètres et les sondes selon l’objectif d’exploitation et les conditions locales de l’eau.",
+          "placement": "Planifiez l’immersion, le nettoyage, l’étalonnage et l’accès saisonnier. Protégez les câbles et les connecteurs tout en préservant l’accès à la prise d’eau.",
+          "projectBrief": "Paramètres, plages, sondes sélectionnées, profondeurs d’installation, plan d’entretien et profil de transmission."
+        }
+      ]
+    },
+    {
+      "id": "industrial-process-water",
+      "title": "Eaux industrielles et de process",
+      "jumpLabel": "Eaux industrielles",
+      "intro": "Collectez les observations de niveau, de qualité et de température de l’eau dans les systèmes auxiliaires industriels. Confirmez la compatibilité avec le process et les exigences d’installation pour chaque ensemble de capteurs.",
+      "imageKey": "water-indoor",
+      "imageAlt": "Galerie de pompage d’eau de process industriel avec pompes, conduites et espace de maintenance accessible",
+      "imageCaption": "Eaux industrielles et de process · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "service-water-storage",
+          "title": "Niveaux de stockage d’eau de service",
+          "networkRole": "Mesure et transmet le canal sélectionné de niveau du réservoir de stockage.",
+          "description": "Suivez les niveaux de réservoirs ou de bassins d’eau de service adaptés pour les relevés et les notifications. Spécifiez les conditions du réservoir et la méthode de mesure ; toutes les sondes de niveau ne conviennent pas à tous les réservoirs.",
+          "placement": "Vérifiez la géométrie, l’accès et les conditions de pression ou d’environnement pertinentes. Adaptez l’alimentation et le câblage de la station au site.",
+          "projectBrief": "Plan du réservoir, conditions de l’eau, plage de niveau, fixation et exigences de transmission et de seuils."
+        },
+        {
+          "id": "process-water-quality",
+          "title": "Relevés de qualité de l’eau de process",
+          "networkRole": "Collecte les canaux de qualité convenus avec des sondes compatibles avec le process.",
+          "description": "Mettez les relevés d’eau de process sélectionnés à disposition pour l’analyse des tendances et les investigations. Définissez chaque paramètre et chaque méthode séparément des exigences d’analyses de laboratoire ou de rapports réglementaires.",
+          "placement": "Évaluez les raccordements au process, les conditions de l’eau, l’encrassement et l’accès pour l’étalonnage. Vérifiez l’adéquation des composants en contact avec l’eau.",
+          "projectBrief": "Description de l’eau, paramètres et plages, méthodes de mesure, raccordements et plan d’entretien."
+        },
+        {
+          "id": "cooling-water-records",
+          "title": "Observations de l’eau de refroidissement",
+          "networkRole": "Transmet les canaux de température sélectionnés ou d’autres canaux convenus de conditions de l’eau.",
+          "description": "Collectez les observations aux points accessibles d’eau de refroidissement pour l’analyse d’exploitation. Le traitement, le dosage ou la commande d’équipements automatiques nécessitent un système défini séparément.",
+          "placement": "Sélectionnez des positions de sondes et des raccords adaptés aux conditions de fonctionnement. Examinez l’accès, la protection des câbles et l’exposition des éléments électriques.",
+          "projectBrief": "Points de surveillance, paramètres, plages de fonctionnement, installation des sondes et présentation dans la plateforme."
+        }
+      ]
+    },
+    {
+      "id": "wastewater-facilities",
+      "title": "Installations d’eaux usées et d’effluents",
+      "jumpLabel": "Installations d’eaux usées",
+      "intro": "Surveillez les observations sélectionnées de niveau, liées à l’écoulement et de qualité dans les installations d’eaux usées. Choisissez les ensembles de capteurs et les procédures d’entretien selon les conditions réelles de l’eau.",
+      "imageKey": "hydro-wastewater",
+      "imageAlt": "Bassins extérieurs de traitement des eaux usées avec eau aérée, conduites et passerelles d’accès métalliques",
+      "imageCaption": "Installations d’eaux usées et d’effluents · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "wastewater-lift-levels",
+          "title": "Niveaux des postes de relevage d’eaux usées",
+          "networkRole": "Mesure et transmet le niveau avec le capteur sélectionné adapté aux eaux usées.",
+          "description": "Suivez les niveaux des bâches pour l’analyse d’exploitation et les notifications configurées. Sélectionnez l’ensemble selon les contaminants, les débris et les conditions d’installation attendus.",
+          "placement": "Planifiez la gestion de l’encrassement, la protection des câbles, l’accès aux sondes et l’emplacement de la station. Suivez les procédures d’accès et d’entretien du site.",
+          "projectBrief": "Géométrie de la bâche, conditions de l’eau, étendue de mesure, dispositif de capteurs et exigences de notification."
+        },
+        {
+          "id": "treated-effluent-observations",
+          "title": "Points d’observation des effluents traités",
+          "networkRole": "Transmet les canaux de qualité convenus avec des sondes d’effluents adaptées.",
+          "description": "Intégrez les relevés d’effluents sélectionnés à la plateforme pour analyse. Les paramètres, les méthodes et les vérifications destinés aux rapports officiels de conformité doivent être définis séparément.",
+          "placement": "Évaluez l’immersion des sondes, l’encrassement et l’accès pour l’étalonnage. Adaptez les matériaux et l’installation aux conditions des effluents.",
+          "projectBrief": "Paramètres, plages, méthodes, positions des sondes, fréquence d’entretien et usage prévu des données."
+        },
+        {
+          "id": "wastewater-channel-records",
+          "title": "Observations des canaux d’eaux usées",
+          "networkRole": "Collecte les canaux de niveau ou liés à l’écoulement spécifiés pour le canal.",
+          "description": "Enregistrez les observations dans les canaux accessibles de process ou de rejet pour les investigations et les relevés des installations. Identifiez la grandeur mesurée et toute méthode d’interprétation validée séparément.",
+          "placement": "Examinez la géométrie, les variations hydrauliques, les débris et l’accès d’entretien. Vérifiez la méthode de mesure, l’alimentation et la communication au point de fixation.",
+          "projectBrief": "Disposition du canal, grandeurs, conditions, fixation des capteurs et profil de transmission."
+        }
+      ]
+    },
+    {
+      "id": "aquaculture-water",
+      "title": "Aquaculture et exploitation des bassins",
+      "jumpLabel": "Aquaculture",
+      "intro": "Associez les observations de l’eau des bassins et les observations météo sélectionnées pour les relevés d’exploitation aquacole. Les paramètres de qualité requis et les procédures d’entretien des sondes sont choisis pour le projet.",
+      "imageKey": "aquaculture",
+      "imageAlt": "Bassins d’aquaculture avec aérateur à palettes, chemins de berge et conduite d’alimentation en eau",
+      "imageCaption": "Aquaculture et exploitation des bassins · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "pond-level-records",
+          "title": "Niveaux des bassins d’aquaculture",
+          "networkRole": "Mesure et transmet le canal sélectionné de niveau du bassin.",
+          "description": "Suivez les niveaux dans des bassins ou réservoirs de tête définis pour l’analyse courante d’exploitation. Sélectionnez la position de référence et la plage du capteur selon les variations attendues et les activités du bassin.",
+          "placement": "Vérifiez l’accès aux berges, la protection des sondes et les câbles. Examinez la communication et l’alimentation pour la configuration complète de la station.",
+          "projectBrief": "Plan des bassins, plage de niveau, position de référence, dispositif de capteurs et intervalles de transmission."
+        },
+        {
+          "id": "pond-quality-observations",
+          "title": "Points d’observation de la qualité de l’eau des bassins",
+          "networkRole": "Collecte les canaux de qualité sélectionnés depuis l’ensemble du bassin.",
+          "description": "Mettez les mesures convenues de l’eau des bassins à disposition pour l’analyse des tendances et les notifications. L’ensemble des paramètres et les sondes définissent les relevés ; la station ne détermine pas à elle seule les décisions de peuplement ou de traitement.",
+          "placement": "Planifiez la profondeur, la protection contre les équipements, la maîtrise de l’encrassement et l’accès pour l’étalonnage. Adaptez les sondes aux conditions locales de l’eau.",
+          "projectBrief": "Conditions de l’eau, paramètres, profondeurs et plages des sondes, procédures d’entretien et destinataires des alarmes."
+        },
+        {
+          "id": "pond-weather-context",
+          "title": "Contexte météo et d’eau des bassins",
+          "networkRole": "Transmet les canaux météo sélectionnés avec les relevés configurés de l’eau des bassins.",
+          "description": "Regroupez les précipitations, les conditions de l’air ou d’autres observations météo convenues avec les relevés des bassins. Définissez les horaires et les paramètres selon l’analyse d’exploitation prévue.",
+          "placement": "Sélectionnez l’exposition météo séparément de l’implantation des sondes des bassins. Intégrez la consommation de tous les capteurs et les besoins de transmission à la conception de l’alimentation.",
+          "projectBrief": "Canaux d’eau et de météo, positions, exigences d’échantillonnage et de transmission, et besoins d’affichage."
+        }
+      ]
+    },
+    {
+      "id": "wetlands-ecology",
+      "title": "Zones humides et sites aquatiques écologiques",
+      "jumpLabel": "Zones humides et écologie",
+      "intro": "Enregistrez les observations d’eau et d’environnement sur les zones humides et les sites de restauration. Adaptez l’approche de mesure à l’accès, aux conditions saisonnières et à l’objectif de l’étude.",
+      "imageKey": "hydro-wetland",
+      "imageAlt": "Zone humide d’eau douce avec roseaux, chenaux peu profonds et passerelle d’observation en bois",
+      "imageCaption": "Zones humides et sites aquatiques écologiques · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "wetland-level-records",
+          "title": "Relevés de niveau d’eau des zones humides",
+          "networkRole": "Mesure et transmet le niveau au point d’observation sélectionné.",
+          "description": "Constituez des relevés des variations de niveau des zones humides à des emplacements définis. Documentez les informations de référence et l’installation pour que les équipes de terrain puissent interpréter les changements au fil des saisons et des visites d’entretien.",
+          "placement": "Évaluez les sols meubles, la végétation, l’accès saisonnier et la protection des sondes. Respectez les contraintes d’accès du site pour positionner et fixer la station.",
+          "projectBrief": "Emplacements, informations de référence, plage de niveau, méthode de mesure et accès saisonnier d’entretien."
+        },
+        {
+          "id": "restoration-quality-trends",
+          "title": "Tendances de la qualité de l’eau des sites de restauration",
+          "networkRole": "Collecte les canaux de qualité convenus avec des sondes installées adaptées.",
+          "description": "Suivez les relevés de conditions de l’eau dans les bassins de restauration ou les cellules de zones humides gérées. Sélectionnez les paramètres selon les objectifs de surveillance sans laisser entendre qu’une seule station évalue l’état écologique global.",
+          "placement": "Planifiez l’immersion, la gestion de l’encrassement et l’accès pour l’étalonnage. Adaptez l’ensemble complet et la fixation à l’exposition locale.",
+          "projectBrief": "Objectifs, paramètres de qualité, plages, profondeurs des sondes et besoins d’entretien et de transmission."
+        },
+        {
+          "id": "wetland-weather-context",
+          "title": "Contexte météo des sites aquatiques écologiques",
+          "networkRole": "Transmet les canaux environnementaux sélectionnés avec les relevés d’eau configurés.",
+          "description": "Ajoutez les précipitations, la température de l’air ou d’autres observations convenues aux relevés d’eau. Distinguez les canaux mesurés de tout modèle écologique ou indicateur dérivé utilisé par l’équipe du projet.",
+          "placement": "Examinez l’exposition, l’évolution de la végétation et l’accès sur la période de surveillance. Tenez compte des conditions saisonnières d’alimentation et du cheminement des données sélectionné.",
+          "projectBrief": "Canaux environnementaux et d’eau, plan, conditions saisonnières et usage prévu des données."
+        }
+      ]
+    },
+    {
+      "id": "coastal-estuaries",
+      "title": "Sites aquatiques côtiers et estuariens",
+      "jumpLabel": "Littoral et estuaires",
+      "intro": "Observez les conditions de niveau d’eau, de qualité et de météo sélectionnées sur les sites terrestres estuariens et côtiers. Spécifiez les ensembles de capteurs et les matériaux selon l’exposition réelle.",
+      "imageKey": "hydro-estuary",
+      "imageAlt": "Estuaire soumis aux marées avec marais salé, vasière découverte, chemin de digue et pont lointain",
+      "imageCaption": "Sites aquatiques côtiers et estuariens · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "estuary-stage-records",
+          "title": "Observations de la hauteur d’eau des estuaires",
+          "networkRole": "Mesure et transmet le canal sélectionné de niveau de l’estuaire.",
+          "description": "Collectez les observations de niveau à un point défini de l’estuaire. Documentez le repère de référence et la méthode de mesure ; la surveillance ne fournit pas à elle seule de prévision des marées ni de service de navigation.",
+          "placement": "Évaluez l’étendue de niveau, les conditions de l’eau, les vagues, les débris et l’exposition à la corrosion. Planifiez la fixation, les câbles et l’accès d’entretien.",
+          "projectBrief": "Emplacement, repère de référence, plage de niveau, méthode de mesure, exposition environnementale et besoins de transmission."
+        },
+        {
+          "id": "coastal-drainage-records",
+          "title": "Points d’observation du drainage côtier",
+          "networkRole": "Transmet les observations de drainage sélectionnées de niveau ou liées à l’écoulement.",
+          "description": "Enregistrez les conditions aux points de rencontre des canaux de drainage et des eaux côtières. Définissez l’objectif et le point de mesure pour permettre au personnel d’analyser les variations sans supposer une relation hydraulique fixe.",
+          "placement": "Examinez les remous, les débris, les variations d’accès et la protection des sondes. Vérifiez l’alimentation et la communication à l’emplacement de la station.",
+          "projectBrief": "Plan du drainage, grandeurs, conditions attendues, positions des capteurs et intervalles de mise à jour."
+        },
+        {
+          "id": "coastal-quality-observations",
+          "title": "Points d’observation de la qualité des eaux côtières",
+          "networkRole": "Collecte les canaux de qualité convenus avec des sondes compatibles avec l’exposition.",
+          "description": "Intégrez à la plateforme les relevés sélectionnés des conditions des eaux côtières ou estuariennes. Choisissez les sondes selon les conditions locales et définissez leur processus de nettoyage et d’étalonnage.",
+          "placement": "Vérifiez l’adéquation des matériaux en contact avec l’eau et des connecteurs à l’exposition. Planifiez l’immersion, la protection des sondes et l’accès d’entretien.",
+          "projectBrief": "Conditions de l’eau, paramètres et plages, matériaux et positions des sondes, plan d’entretien et besoins de données."
+        }
+      ]
+    },
+    {
+      "id": "construction-dewatering",
+      "title": "Chantiers et sites d’épuisement des eaux",
+      "jumpLabel": "Eau de chantier",
+      "intro": "Suivez les observations des puisards, des rejets et de météo sélectionnées sur les chantiers. Distinguez les relevés de surveillance de la commande des pompes et des décisions d’ingénierie du site.",
+      "imageKey": "hydro-dewatering",
+      "imageAlt": "Puisard d’excavation et tuyau de drainage menant à une cuve temporaire de décantation sur un chantier clôturé",
+      "imageCaption": "Chantiers et sites d’épuisement des eaux · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "construction-sump-records",
+          "title": "Niveaux des puisards de chantier",
+          "networkRole": "Mesure et transmet le niveau depuis l’ensemble de capteurs sélectionné pour le site.",
+          "description": "Collectez les niveaux des puisards pour l’analyse du site et les notifications configurées. Sélectionnez l’étendue et la fixation selon l’évolution du plan d’excavation et les conditions de l’eau.",
+          "placement": "Tenez compte des débris, des mouvements d’équipements, de l’alimentation temporaire et de l’accès d’entretien. Revérifiez les informations de référence lorsque le plan change.",
+          "projectBrief": "Plan d’excavation, positions des puisards, plage de niveau, exigences d’installation et procédure de notification."
+        },
+        {
+          "id": "dewatering-discharge-observations",
+          "title": "Observations des rejets d’épuisement des eaux",
+          "networkRole": "Transmet les canaux sélectionnés de rejet liés à l’écoulement ou aux conditions de l’eau.",
+          "description": "Mettez les observations de rejet à disposition pour l’analyse d’exploitation et les relevés du projet. Définissez séparément les exigences formelles de mesure ou de production de rapports, y compris la méthode de mesure et les contrôles de réception.",
+          "placement": "Examinez les conditions des conduites ou des canaux et les exigences des sondes. Protégez les câbles, la station et les composants d’alimentation des évolutions des activités de chantier.",
+          "projectBrief": "Dispositif de rejet, grandeurs, unités, méthodes, installation et usage prévu des données."
+        },
+        {
+          "id": "construction-rainfall-water",
+          "title": "Contexte de précipitations et d’eau de chantier",
+          "networkRole": "Associe les canaux sélectionnés de précipitations et d’eau du site dans un même profil de transmission.",
+          "description": "Examinez les précipitations avec les observations d’eau du site dans le cadre du processus d’exploitation convenu. Les relevés n’impliquent ni commande automatique du pompage d’épuisement ni résultat garanti des interventions.",
+          "placement": "Prévoyez une exposition représentative pour les précipitations et des points de mesure de l’eau adaptés séparément. Revérifiez l’alimentation et les communications après tout déplacement.",
+          "projectBrief": "Canaux, plan, profil de transmission, modalités de déplacement et affichages requis dans la plateforme."
+        }
+      ]
+    },
+    {
+      "id": "remote-mountain-catchments",
+      "title": "Bassins versants isolés et de montagne",
+      "jumpLabel": "Bassins versants isolés",
+      "intro": "Configurez les observations d’eau et d’environnement pour les bassins versants à accès limité. Intégrez l’alimentation, les communications et l’entretien à la conception de la surveillance.",
+      "imageKey": "hydro-mountain",
+      "imageAlt": "Cours d’eau rocheux de montagne, versants boisés, sentier d’accès et petite passerelle",
+      "imageCaption": "Bassins versants isolés et de montagne · Environnement illustratif",
+      "tasks": [
+        {
+          "id": "remote-stream-stage",
+          "title": "Relevés de niveau des cours d’eau isolés",
+          "networkRole": "Mesure et transmet le niveau via la configuration sélectionnée pour le site isolé.",
+          "description": "Collectez les observations de hauteur d’eau à des emplacements définis des cours d’eau pour les relevés du bassin versant. Sélectionnez la méthode et la position de référence selon les conditions d’eau attendues, et documentez l’installation pour les analyses de terrain ultérieures.",
+          "placement": "Évaluez le terrain, la stabilité de la fixation, les débris et l’accès. Vérifiez la liaison de communication à la station installée.",
+          "projectBrief": "Emplacement du bassin versant, plage de niveau, informations de référence, méthode de mesure, accès et besoins de transmission."
+        },
+        {
+          "id": "headwater-rainfall-records",
+          "title": "Observations des précipitations en tête de bassin",
+          "networkRole": "Transmet le canal de précipitations sélectionné pour la station du bassin versant.",
+          "description": "Ajoutez des observations locales de précipitations lorsque le contexte de terrain est nécessaire aux relevés d’eau proches. Les modèles d’alerte et les réponses opérationnelles nécessitent leurs propres systèmes définis.",
+          "placement": "Examinez l’exposition, la végétation, l’accès saisonnier et l’entretien des capteurs. Dimensionnez l’alimentation selon la consommation totale de la station et les besoins de transmission.",
+          "projectBrief": "Exigences de précipitations, exposition, dispositif de capteurs, accès saisonnier, conception de l’alimentation et profil de mise à jour."
+        },
+        {
+          "id": "remote-quality-records",
+          "title": "Points d’observation isolés de la qualité de l’eau",
+          "networkRole": "Collecte les canaux sélectionnés de conditions de l’eau selon le profil de transmission convenu.",
+          "description": "Intégrez à la plateforme les observations des conditions de l’eau aux points accessibles du bassin versant. Sélectionnez les paramètres et les sondes selon l’objectif, les possibilités d’entretien et les conditions locales.",
+          "placement": "Planifiez les visites de protection, de nettoyage et d’étalonnage avec l’alimentation et les communications de la station. Vérifiez les unités, les horodatages et les sources des relevés lors de la mise en service.",
+          "projectBrief": "Paramètres, méthodes et plages de mesure, positions des sondes, intervalles d’entretien et besoins de données de la plateforme."
+        }
+      ]
+    }
+  ],
+  "imageWidth": 627,
+  "imageHeight": 635,
+  "applicationsIntro": "Configurez les observations d’eau et d’environnement selon l’équipement surveillé, les conditions hydrauliques et l’usage des relevés par l’équipe d’exploitation. Chaque exemple dépend de capteurs adaptés, d’une implantation représentative, d’une liaison de données disponible et d’un processus d’analyse convenu.",
+  "applicationsHeading": "La surveillance de l’eau.\nSur vos sites d’exploitation.",
+  "relatedPath": "/product/weather-station",
+  "relatedLabel": "Découvrir la station météo H600",
+  "datasheet": "/downloads/hydrology-monitoring-station-datasheet.pdf"
+}
