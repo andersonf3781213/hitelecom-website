@@ -75,7 +75,9 @@ const expectedTiltCards=[...precisionCardRegistry,{id:'tilt-sensor',name:'High-p
  {id:'triaxial-medium-precision-tilt-sensor',name:'Triaxial Medium-precision Tilt Sensor',conn:PRECISION_CARD_CONNECTIVITY,searchTerms:'H310-TS350M triaxial three-axis inclinometer tilt ±0.1°'}];
 // V124: SPD 终端卡片沿用同一注入机制，但按审核要求连接方式行留空，不参与 NB-IoT 行断言。
 const expectedSpdCard={id:'spd-monitoring-terminal',name:'Intelligent SPD Monitoring Terminal',conn:'',searchTerms:'HiSPD-DPU-04 SPD surge protective device monitoring 4 channels 2 8 channel versions'};
-const tiltDisplayIds=new Set([...expectedTiltCards.map(p=>p.id),expectedSpdCard.id]);
+// V128: 太阳能管道 TVOC 传感器沿用同一注入机制，连接方式行留空（产品事实表未确立），不参与 NB-IoT 行断言。
+const expectedSolarTvocCard={id:'solar-pipeline-tvoc-sensor',name:'Solar-Powered Pipeline TVOC Sensor',conn:'',searchTerms:'solar powered pipeline TVOC gas sensor 0-10 0-40 0-100 ppm 1 ppb resolution industrial sampling'};
+const tiltDisplayIds=new Set([...expectedTiltCards.map(p=>p.id),expectedSpdCard.id,expectedSolarTvocCard.id]);
 for(const cid of ['261','267']){
  const cards=applyCatalog(product.productContent.en.lists[cid].products,cid,'en',pool);
  for(const expected of expectedTiltCards){
@@ -94,8 +96,19 @@ for(const cid of ['261','267']){
   assert.equal(card.searchTerms,expectedSpdCard.searchTerms);
   assert.equal(card.url,'/product/spd-monitoring-terminal');assert.equal(card.href,card.url);
   assert.doesNotMatch(card.name+' '+card.conn,/[±°]|H310-TS|4G|NB-IoT|LoRa/,'SPD card shows no borrowed connectivity or tilt model');
+  // V128: 太阳能 TVOC 卡在 261 中紧随 vibration-sensor（sortOrder 85，介于 vibration 80 与 air-quality 90 之间）
+  const solarMatches=cards.filter(item=>id(item)===expectedSolarTvocCard.id);
+  assert.equal(solarMatches.length,1,'solar TVOC card appears exactly once in 261');
+  const solarCard=solarMatches[0];
+  assert.equal(solarCard.name,expectedSolarTvocCard.name);assert.equal(solarCard.conn,'');
+  assert.equal(solarCard.searchTerms,expectedSolarTvocCard.searchTerms);
+  assert.equal(solarCard.url,'/product/solar-pipeline-tvoc-sensor');assert.equal(solarCard.href,solarCard.url);
+  assert.doesNotMatch(solarCard.name+' '+solarCard.conn,/[±°]|H310-TS|4G|NB-IoT|LoRa/,'solar TVOC card shows no borrowed connectivity or tilt model');
+  const cardIds=cards.map(id);
+  assert.equal(cardIds.indexOf(expectedSolarTvocCard.id),cardIds.indexOf('vibration-sensor')+1,'solar TVOC card sits immediately after the vibration card');
  }else{
   assert.equal(cards.some(item=>id(item)===expectedSpdCard.id),false,'SPD card does not leak into the tilt category');
+  assert.equal(cards.some(item=>id(item)===expectedSolarTvocCard.id),false,'solar TVOC card does not leak into the tilt category');
  }
  for(const card of cards.filter(item=>!tiltDisplayIds.has(id(item)))){
   const original=pool.find(item=>id(item)===id(card));
@@ -104,6 +117,22 @@ for(const cid of ['261','267']){
   const text=record?.locales?.en;
   const expected=record?{...original,name:text.name||original.name,img:record.image.src||original.img,url:text.url,href:text.url}:original;
   assert.deepEqual(card,expected,'all unrelated card fields retain the existing adapter behavior');
+ }
+}
+// V128: 265（空气质量）列表同样出现该卡；六语种已发布语言的卡片名称本地化。
+{
+ const cards265=applyCatalog(product.productContent.en.lists['265'].products,'265','en',pool);
+ assert.equal(cards265.filter(item=>id(item)===expectedSolarTvocCard.id).length,1,'solar TVOC card appears exactly once in 265');
+ for(const locale of ['zh','es','de','ja','fr','ru']){
+  const localLists=product.productContent[locale]?.lists;
+  if(!localLists?.['261'])continue;
+  const localized=applyCatalog(localLists['261'].products,'261',locale,Object.values(localLists).flatMap(lp=>lp.products));
+  const record=catalog.products.find(p=>p.id===expectedSolarTvocCard.id);
+  const localCard=localized.find(p=>id(p)===expectedSolarTvocCard.id);
+  assert.ok(localCard,'published locale shows the solar TVOC card');
+  assert.equal(localCard.name,record.locales[locale].name,'localized card name matches the catalog locale entry');
+  assert.equal(localCard.url,record.locales[locale].url,'localized card URL carries the locale prefix');
+  assert.doesNotMatch(localCard.name+' '+localCard.conn,/[±°]|4G|NB-IoT|LoRa/);
  }
 }
 // A catalog published by an older installer must not overwrite the display fix.

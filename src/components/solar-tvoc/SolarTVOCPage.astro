@@ -1,0 +1,49 @@
+---
+/** 太阳能管道 TVOC 传感器页面（V128，2026-10-29 GPT6 包，Kimi 审核集成）。
+ * EN 为基准；非 EN 内容/UI 来自多语言包。沿用现网 BaseLayout，仅装入本页内容、图片与样式。 */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GasPage from './GasPage.astro';
+import SolarTVOCStructuredData from './SolarTVOCStructuredData.astro';
+import { htmlLang, type Locale } from '../../i18n';
+import enContent from '../../data/solar-tvoc-content.json';
+import zhContent from '../../data/solar-tvoc/i18n/zh/content.json';
+import zhUi from '../../data/solar-tvoc/i18n/zh/ui.json';
+import esContent from '../../data/solar-tvoc/i18n/es/content.json';
+import esUi from '../../data/solar-tvoc/i18n/es/ui.json';
+import deContent from '../../data/solar-tvoc/i18n/de/content.json';
+import deUi from '../../data/solar-tvoc/i18n/de/ui.json';
+import jaContent from '../../data/solar-tvoc/i18n/ja/content.json';
+import jaUi from '../../data/solar-tvoc/i18n/ja/ui.json';
+import frContent from '../../data/solar-tvoc/i18n/fr/content.json';
+import frUi from '../../data/solar-tvoc/i18n/fr/ui.json';
+import ruContent from '../../data/solar-tvoc/i18n/ru/content.json';
+import ruUi from '../../data/solar-tvoc/i18n/ru/ui.json';
+import '../../styles/solar-tvoc.css';
+const slug = 'solar-pipeline-tvoc-sensor';
+const I18N = {
+  zh: {content: zhContent, ui: zhUi},
+  es: {content: esContent, ui: esUi},
+  de: {content: deContent, ui: deUi},
+  ja: {content: jaContent, ui: jaUi},
+  fr: {content: frContent, ui: frUi},
+  ru: {content: ruContent, ui: ruUi},
+};
+const {locale = 'en'} = Astro.props as {locale?: Locale};
+const isEn = locale === 'en';
+const pack = isEn ? null : I18N[locale as keyof typeof I18N];
+if (!isEn && !pack) throw new Error(`Missing solar TVOC locale data: ${locale}`);
+const prefix = isEn ? '' : `/${locale}`;
+const canonicalPath = `${prefix}/product/${slug}`;
+const content = pack?.content ?? enContent;
+const ui = pack?.ui ?? null;
+// 七语路由均已上线：语言菜单/hreflang 指向同型号各语言产品页（URL 不加 .html）
+const allLocales: Locale[] = ['en','zh','es','de','ja','fr','ru'];
+const langTargets = Object.fromEntries(allLocales.map(loc => [loc, `${loc === 'en' ? '' : `/${loc}`}/product/${slug}`]));
+const publicImage = '/images/products/solar-pipeline-tvoc-sensor.png';
+---
+<BaseLayout locale={locale} title={content.seo.title} description={content.seo.description} socialImage={publicImage} langOverrides={langTargets}>
+  <SolarTVOCStructuredData slot="head" content={content} ui={ui} canonicalPath={canonicalPath} imageUrl={new URL(publicImage, Astro.site).href} inLanguage={htmlLang[locale]} prefix={prefix}/>
+  <div class="ht-solar-tvoc">
+    <GasPage content={content} ui={ui} locale={locale} prefix={prefix}/>
+  </div>
+</BaseLayout>

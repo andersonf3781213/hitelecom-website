@@ -52,6 +52,17 @@ const spdStaticCards = [
   },
 ];
 
+// 太阳能管道 TVOC 传感器（V128）：静态 Astro 路由，无无线制式行——产品事实表未确立连接方式，
+// 连接方式行留空；量程/分辨率仅进入搜索词，卡片盒尺寸由统一 CSS 保持。
+const solarTvocStaticCards = [
+  {
+    id:'solar-pipeline-tvoc-sensor', name:'Solar-Powered Pipeline TVOC Sensor',
+    img:'/images/products/solar-pipeline-tvoc-sensor.png', conn:'',
+    searchTerms:'solar powered pipeline TVOC gas sensor 0-10 0-40 0-100 ppm 1 ppb resolution industrial sampling',
+    url:'/product/solar-pipeline-tvoc-sensor', href:'/product/solar-pipeline-tvoc-sensor',
+  },
+];
+
 const triaxialStaticCards = [
   {
     id:'triaxial-high-precision-tilt-sensor', name:'Triaxial High-precision Tilt Sensor',
@@ -74,7 +85,7 @@ export function applyCatalog<T>(products: T[], cid: string, locale: string, exis
     resolveId: resolveId as any,
     // 所有语言均注入静态卡片模板；适配器按当前语言的已发布目录文案本地化名称与链接（V117），
     // 未发布语言的产品由适配器按 published 状态过滤。
-    existingPool: [...existingPool, ...precisionStaticCards, ...triaxialStaticCards, ...spdStaticCards],
+    existingPool: [...existingPool, ...precisionStaticCards, ...triaxialStaticCards, ...spdStaticCards, ...solarTvocStaticCards],
     // 未映射的其它官网列表保留原有成员，不把传感器目录扩散到网关等列表。
     includeProduct: (product: any, { existing }: { existing: boolean }) => SENSOR_CIDS.has(cid)
       ? (CATEGORY_CIDS[product.categoryId] ?? ['261']).includes(cid)

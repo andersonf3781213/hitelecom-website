@@ -1,0 +1,18 @@
+---
+import icons from './contact-icons.json';
+---
+<aside class="gas-contact-bar" aria-label="Quick contact">
+  <details class="gas-contact-item">
+    <summary class="gas-contact-button" aria-label="Call us"><Fragment set:html={icons.phone} /></summary>
+    <div class="gas-contact-pop"><strong>Call us</strong><a href="tel:+86-18616602589">+86-18616602589</a></div>
+  </details>
+  <details class="gas-contact-item">
+    <summary class="gas-contact-button" aria-label="WhatsApp"><Fragment set:html={icons.whatsapp} /></summary>
+    <div class="gas-contact-pop gas-contact-qr"><img src="/contact/qr-whatsapp.png" alt="Hitelecom WhatsApp QR code" width="120" height="120" loading="lazy" decoding="async" /><strong>WhatsApp</strong><span>+86-18616602589</span><a href="https://wa.me/8618616602589" target="_blank" rel="noopener noreferrer">Open chat ↗</a></div>
+  </details>
+  <details class="gas-contact-item">
+    <summary class="gas-contact-button" aria-label="WeChat"><Fragment set:html={icons.wechat} /></summary>
+    <div class="gas-contact-pop gas-contact-qr"><img src="/contact/qr-wechat.png" alt="Hitelecom WeChat QR code" width="105" height="96" loading="lazy" decoding="async" /><strong>Scan to chat on WeChat</strong><button class="gas-copy-wechat" type="button" data-copy="18616602589">ID: 18616602589 <span aria-hidden="true">⧉</span></button><span class="gas-copy-status" role="status" aria-live="polite"></span></div>
+  </details>
+  <a class="gas-contact-button gas-contact-top" href="#top" aria-label="Back to top"><Fragment set:html={icons.up} /></a>
+</aside>

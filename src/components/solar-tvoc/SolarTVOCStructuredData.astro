@@ -1,0 +1,14 @@
+---
+/** 太阳能管道 TVOC 传感器结构化数据（V128）。无型号/SKU（产品事实表明确未确立，不虚构）。 */
+const {content, ui = null, canonicalPath, imageUrl, inLanguage = 'en', prefix = '', category = 'Gas sensors'} = Astro.props;
+const T = (s: string): string => (ui && ui[s]) || s;
+const url = `https://www.hitelecom.com${canonicalPath}`;
+const org = 'https://www.hitelecom.com/#organization';
+const graph = [
+ {'@type':'WebPage','@id':url+'#webpage',url,name:content.seo.title,description:content.seo.description,inLanguage,isPartOf:{'@id':'https://www.hitelecom.com/#website'},publisher:{'@id':org},mainEntity:{'@id':url+'#product'},breadcrumb:{'@id':url+'#breadcrumb'},primaryImageOfPage:{'@type':'ImageObject',url:imageUrl},dateModified:'2026-10-29',hasPart:{'@id':url+'#faq'}},
+ {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:T('Home'),item:`https://www.hitelecom.com${prefix}/`},{'@type':'ListItem',position:2,name:T('IoT sensors'),item:`https://www.hitelecom.com${prefix}/product/lists/cid/261`},{'@type':'ListItem',position:3,name:content.hero.breadcrumb,item:url}]},
+ {'@type':'Product','@id':url+'#product',url,name:content.hero.breadcrumb,category,description:content.hero.description,image:imageUrl,brand:{'@type':'Brand',name:'Hitelecom'},manufacturer:{'@id':org},additionalProperty:content.specifications.rows.map(r=>({'@type':'PropertyValue',name:r.label,value:r.value}))},
+ {'@type':'FAQPage','@id':url+'#faq',inLanguage,isPartOf:{'@id':url+'#webpage'},mainEntity:content.faqs.map(f=>({'@type':'Question','@id':url+'#'+f.id,name:f.question,acceptedAnswer:{'@type':'Answer',text:f.paragraphs.join('\n\n')}}))}
+];
+---
+<script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replaceAll('<','\\u003c')}/>

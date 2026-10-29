@@ -1,0 +1,120 @@
+---
+/** 太阳能管道 TVOC 传感器主体。EN 为基准；非 EN 内容/UI 来自 2026-10-29 多语言包（Kimi 审核集成，V128）。
+ * 硬编码英文 UI 串全部走 T() 查 ui.json（扁平 {English: translated}）；面包屑/相关产品链接带 locale 前缀。 */
+import FeatureIcon from './FeatureIcon.astro';
+import ImageCaption from './ImageCaption.astro';
+import QuickContact from './QuickContact.astro';
+import { getImage } from 'astro:assets';
+import heroBackground from '../../assets/brand/sensor-hero-background.jpg';
+import { gasImage } from './images.mjs';
+const {content, ui = null, locale = 'en', prefix = '', includeQuickContact = false} = Astro.props;
+const T = (s: string): string => (ui && ui[s]) || s;
+const hero = await gasImage('product-main-transparent.svg', 'hero');
+const installationImage = await gasImage('installation-approved-4k.png', 'installation');
+const widths = [640,1280,1920].filter(width=>width<=heroBackground.width);
+const backgrounds = await Promise.all(widths.map(width=>getImage({src:heroBackground,width,format:'webp',quality:78})));
+const groups = await Promise.all(content.groups.map(async group=>({...group,asset:await gasImage(group.image.name),tasks:await Promise.all(content.applications.filter(scene=>scene.group===group.id).map(async scene=>({...scene,image:scene.image||group.image,asset:await gasImage((scene.image||group.image).name)})))})));
+const measurementSymbols = {gas:'ppm',range:'ppm',resolution:'ppb',sampling:'↗',principle:'∿',units:'ppm',power:'☀',conditions:'°',deployment:'☀'};
+const featureHeading = content.featureHeading || {eyebrow:'KEY FEATURES',title:'Pipeline measurement.',valueHeading:'Designed around your process.',description:'Define the measurement range, sampling interval and energy requirements around the industrial pipeline and its operating conditions.'};
+const installation = content.installation || {eyebrow:'INSTALLATION CONCEPT',title:'At the sampling point.',valueHeading:'Powered by the sun.',description:'Plan the pipeline connection, sampling arrangement, solar exposure and energy storage around the actual site.',alt:'Illustrative installation of a Hitelecom monitoring cabinet and solar panel on a white pole beside an industrial pipeline',caption:'Illustrative installation.'};
+const proof = content.hero.proof || [{value:'3 ranges',label:'0–10 / 0–40 / 0–100 ppm',note:'Select for the expected concentration'},{value:'1 ppb',label:'Minimum resolution',note:'Resolution is not accuracy or detection limit'},{value:'Solar + storage',label:'Energy architecture',note:'Sized around the agreed sampling profile'}];
+const integration = content.integration || {eyebrow:'DATA & INTEGRATION',title:'Define the data.',valueHeading:'Connect the workflow.',description:'Agree the data destination and integration requirements as part of the project configuration.',cards:[{label:'MEASUREMENT DATA',title:'From sampling point to usable data',flow:['Sample point','Agreed data format','Data destination'],text:'Define the measurement record and its reporting basis before selecting the integration path.',points:['Sampling-point identity and timestamps','Concentration units and calibration basis','Sampling and reporting intervals']},{label:'PROJECT INTEGRATION',title:'Match your existing system',flow:['Site requirements','Interface review','Acceptance test'],text:'Specify the receiving platform and site constraints. The supported interface and protocol are confirmed in the project configuration.',points:['Receiving platform and required interface','Site connectivity and power budget','Data mapping and end-to-end verification']}],handover_title:'Agree the handover.',handover_text:'Review a sample record, measurement units and timestamps with the receiving system. Confirm the supported interface and acceptance criteria in the project specification.',cta:'Discuss data integration'};
+const datasheetURL = '/downloads/Hitelecom-Solar-Pipeline-TVOC-Datasheet.pdf';
+// 传给 gas-interactions.js 的邮件草稿/状态提示串（JS 端 T() 缺省回退英文）
+const jsI18n = ui ? Object.fromEntries(['Solar-powered pipeline TVOC sensor — project enquiry','Hello Hitelecom,','I would like to discuss a solar-powered industrial pipeline TVOC monitoring project.','Application','Country','TVOC range','Quantity','Target gas','Sampling interval','Solar and storage','Pipeline and site conditions','Data and integration','Requirements','Please advise','Please advise on the measurement and sampling configuration, solar and storage requirements, data interface, supporting datasheet and quotation.','Thank you.','Your brief is ready. Review it and open your email app to send.','Project brief copied.','Your brief is selected. Use your device’s copy command.','WeChat ID copied.','ID selected. Use your device’s copy command.','Monitoring objective'].filter(k=>ui[k]).map(k=>[k,ui[k]])) : {};
+---
+<main id="main">
+  <div class="hero-band">
+    <img class="hero-background" src={backgrounds.at(-1).src} srcset={backgrounds.map((x,i)=>`${x.src} ${widths[i]}w`).join(', ')} sizes="100vw" width={heroBackground.width} height={heroBackground.height} alt="" aria-hidden="true" loading="eager" decoding="async" />
+    <div class="wrap breadcrumb" aria-label={T('Breadcrumb')}><a href={`${prefix}/`}>{T('Home')}</a><span aria-hidden="true">/</span><a href={`${prefix}/product/lists/cid/261`}>{T('IoT sensors')}</a><span aria-hidden="true">/</span><span>{content.hero.breadcrumb || 'Solar-powered TVOC sensor'}</span></div>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-heading"><h1 id="hero-title">{content.hero.h1}<br/><span>{content.hero.value_heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</span></h1></div>
+      <figure class="hero-visual gas-product">
+        <img src={hero.src} srcset={hero.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 1024px) 42vw, 560px" width={hero.width} height={hero.height} alt={content.hero.image_alt || 'Hitelecom solar-powered industrial pipeline TVOC monitoring cabinet'} loading="eager" fetchpriority="high" decoding="async" />
+        <figcaption><span class="live-dot" aria-hidden="true"></span>{content.hero.image_caption || 'Solar-powered pipeline TVOC monitoring'}</figcaption>
+      </figure>
+      <p class="hero-description">{content.hero.description}</p>
+      <div class="hero-actions"><a href="#enquiry" class="button button-primary">{content.hero.primary_cta} <span aria-hidden="true">↗</span></a><a href="#specifications" class="text-link">{content.hero.secondary_cta || 'View specifications'} <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-proof">{proof.map(item=><div><strong>{item.value}</strong><span>{item.label}</span><small>{item.note}</small></div>)}</div>
+    </section>
+  </div>
+  <nav class="section-nav" aria-label={T('On this page')}><div class="wrap"><a href="#measurement">{T('Measurement')}</a><a href="#applications">{T('Applications')}</a><a href="#specifications">{T('Specifications')}</a><a href="#integration">{T('Integration')}</a><a href="#faq">{T('FAQ')}</a><a class="nav-quote" href="#enquiry">{T('Request a quote')} ↗</a></div></nav>
+
+  <section class="section features-section" id="features" aria-labelledby="features-title"><div class="wrap">
+    <div class="section-heading compact-heading"><div><p class="eyebrow">{featureHeading.eyebrow}</p><h2 id="features-title">{featureHeading.title}<br/><span>{featureHeading.valueHeading}</span></h2></div><p>{featureHeading.description}</p></div>
+    <div class="feature-grid">{content.features.map((feature,index)=><article><span class="feature-mark" aria-hidden="true"><FeatureIcon index={index} kind={feature.title}/></span><h3>{feature.title}</h3><p>{feature.text}</p></article>)}</div>
+  </div></section>
+
+  <section class="section measurement-section" id="measurement" aria-labelledby="measurement-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">{content.measurement.eyebrow}</p><h2 id="measurement-title">{content.measurement.heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{i===0?line:<span>{line}</span>}</Fragment>)}</h2></div><p>{content.measurement.description}</p></div>
+    <div class="measurement-grid">{content.measurement.cards.map((item,index)=><article class="measurement-card"><div class="measurement-heading"><span class="measurement-number">0{index+1}</span><span class="measurement-symbol" aria-hidden="true">{measurementSymbols[item.symbol] || '∿'}</span></div><h3>{item.title}</h3><p>{item.text}</p><dl><dt>{T('Define your measurement')}</dt><dd>{item.project_brief}</dd></dl><a href="#enquiry" class="text-link" data-measurement={item.title}>{T('Discuss this measurement')} ↗</a></article>)}</div>
+    <div class="installation-note"><span class="small-label">{T('SENSING & INSTALLATION')}</span><h3>{content.measurement.installation_heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</h3><p>{content.measurement.installation_text}</p></div>
+  </div></section>
+
+  <section class="section installation-section" id="installation" aria-labelledby="installation-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">{installation.eyebrow}</p><h2 id="installation-title">{installation.title}<br/><span>{installation.valueHeading}</span></h2></div><p>{installation.description}</p></div>
+    <figure class="approved-installation"><a href="/downloads/TVOC-Installation-4K.png" aria-label={T('Open the full-resolution illustrative installation image')} target="_blank" rel="noopener"><img src={installationImage.src} srcset={installationImage.srcset} sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 1100px) calc(100vw - 132px), 1240px" width={installationImage.width} height={installationImage.height} alt={installation.alt} loading="lazy" decoding="async"/></a><figcaption><span>{installation.caption}</span><a href="/downloads/TVOC-Installation-4K.png" download>{T('Download 4K image')} ↓</a></figcaption></figure>
+  </div></section>
+
+  <section class="section profile-section" id="operating-profile" aria-labelledby="profile-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">{content.workflow.eyebrow}</p><h2 id="profile-title">{content.workflow.heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</h2></div><p>{content.workflow.profile_text}</p></div>
+    <div class="gas-workflow">{content.workflow.steps.map(step=><article><span class="step-number">{step.number}</span><h3>{step.title}</h3><p>{step.text}</p></article>)}</div>
+    <div class="profile-note"><div><span class="small-label">{T('REPORTING & POWER')}</span><strong>{content.workflow.battery_title}</strong></div><p>{content.workflow.battery_text}</p></div>
+  </div></section>
+
+  <section class="section application-section" id="applications" aria-labelledby="applications-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">{T('APPLICATIONS')}</p><h2 id="applications-title">{content.applicationSection.title}<br/><span>{content.applicationSection.valueHeading}</span></h2></div><p>{content.applicationSection.description}</p></div>
+    <div class="application-overview"><p><strong>{content.groups.length}</strong> {T('application categories')} <span aria-hidden="true">/</span> <strong>{content.applications.length}</strong> {T('monitoring tasks')}</p><p class="image-note">{content.applicationSection.note}</p></div>
+    <nav class="application-jump-nav" aria-label={T('Browse gas monitoring applications')}>{content.groups.map(group=><a href={'#group-'+group.id}>{group.jumpLabel}<span>{group.scenes.length}</span></a>)}</nav>
+    <div class="application-groups">{groups.map((group,index)=><details class="application-group" id={'group-'+group.id} open={index===0}>
+      <summary><span><small>{String(index+1).padStart(2, '0')}</small>{group.title}</span><span class="group-count">{group.scenes.length} {T('monitoring tasks')} <b aria-hidden="true">+</b></span></summary>
+      <div class="application-category-body">
+        <div class="application-visual"><div class="application-media-slot"><figure class="application-category-photo"><img class="application-category-image" src={group.asset.src} srcset={group.asset.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={group.asset.width} height={group.asset.height} loading="lazy" decoding="async" alt={group.image.alt} style={'object-position:'+group.image.focalPoint}/><ImageCaption image={group.image}/></figure></div><p>{group.intro}</p></div>
+        <div class="application-task-list">{group.tasks.map((scene,taskIndex)=><details class="application-task" id={scene.id} open={index===0&&taskIndex===0}>
+          <summary aria-controls={'scene-photo-'+scene.id}><span class="task-heading"><h3>{scene.title}</h3><small>{scene.measurement}</small></span><span class="task-toggle" aria-hidden="true">+</span></summary>
+          <div class="task-copy"><figure class="application-scene-photo" id={'scene-photo-'+scene.id} data-scene-owner={scene.id}><img class="application-scene-image" src={scene.asset.src} srcset={scene.asset.srcset} sizes="(max-width: 600px) calc(100vw - 76px), (max-width: 900px) calc((100vw - 132px) * .42), 470px" width={scene.asset.width} height={scene.asset.height} loading="lazy" decoding="async" alt={scene.image.alt} style={'object-position:'+scene.image.focalPoint}/><ImageCaption image={scene.image}/></figure><p>{scene.description}</p><dl><dt>{T('Measurements to observe')}</dt><dd>{scene.measurement}</dd><dt>{T('Monitoring point')}</dt><dd>{scene.monitoringPoint}</dd><dt>{T('Placement & installation')}</dt><dd>{scene.installation}</dd><dt>{T('Project details')}</dt><dd>{scene.projectBrief}</dd></dl><a href="#enquiry" class="task-cta" data-project-scene={scene.title}>{T('Discuss this application')} <span aria-hidden="true">↗</span></a></div>
+        </details>)}</div>
+      </div>
+    </details>)}</div>
+  </div></section>
+
+  <section class="section specifications-section" id="specifications" aria-labelledby="specifications-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">{content.series.eyebrow || 'RANGES & CONFIGURATION'}</p><h2 id="specifications-title">{content.series.heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{i===0?line:<span>{line}</span>}</Fragment>)}</h2></div><p>{content.series.description}</p></div>
+    <div class="gas-series">{content.series.ranges.map((range,index)=><article id={'range-'+index}><span class="small-label">{content.series.card_label || 'MEASUREMENT RANGE'}</span><h3>{range}</h3><p>{content.series.range_card_subtitle}</p><a href="#enquiry" class="text-link" data-range={range}>{T('Discuss this range')} ↗</a></article>)}</div>
+    <div class="gas-spec-grid"><aside class="model-card"><span class="small-label">{T('CONFIGURATION REFERENCE')}</span><h3>{(content.specifications.card_title || 'Choose the range.\nDefine the sample.').split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</h3><p>{content.specifications.description}</p><a href={datasheetURL} class="button button-outline" download>{content.specifications.datasheet_label || 'Download datasheet'} ↓</a><a href="#enquiry" class="text-link">{content.specifications.proposal_label || 'Discuss project configuration'} ↗</a></aside><div class="spec-table"><table><caption>{content.specifications.table_caption || 'Solar-powered pipeline TVOC sensor — configuration reference'}</caption><tbody>{content.specifications.rows.map(row=><tr><th scope="row">{row.label}</th><td>{row.value}</td></tr>)}</tbody></table></div></div>
+    <div class="selection-list"><h3>{content.series.selection_title || 'Bring the specification back to your project.'}</h3><div>{content.series.steps.map((step,index)=><article><span class="step-number">0{index+1}</span><h4>{step.title}</h4><p>{step.text}</p></article>)}</div></div>
+  </div></section>
+
+  <section class="section integration-section" id="integration" aria-labelledby="integration-title"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">{integration.eyebrow}</p><h2 id="integration-title">{integration.title}<br/><span>{integration.valueHeading}</span></h2></div><p>{integration.description}</p></div>
+    <div class="integration-grid">{integration.cards.map(card=><article><span class="small-label">{card.label}</span><h3>{card.title}</h3><div class="route-flow">{card.flow.map((step,index)=><Fragment>{index>0&&<b aria-hidden="true">→</b>}<span>{step}</span></Fragment>)}</div><p>{card.text}</p><ul>{card.points.map(point=><li>{point}</li>)}</ul></article>)}</div>
+    <div class="integration-handover"><h3>{integration.handover_title}</h3><p>{integration.handover_text}</p><a href="#enquiry" class="text-link">{integration.cta} ↗</a></div>
+  </div></section>
+
+  <section class="section faq-section" id="faq" aria-labelledby="faq-title"><div class="wrap faq-layout"><div class="faq-intro"><p class="eyebrow">{content.faqHeading.kicker}</p><h2 id="faq-title">{content.faqHeading.title || "Frequently asked questions."}</h2><p>{content.faqHeading.intro}</p><a href="#enquiry" class="text-link">{T('Ask about your project')} ↗</a></div><div class="faq-list">{content.faqs.map((faq,index)=><details id={faq.id} open={index===0}><summary>{faq.question}<span aria-hidden="true">+</span></summary><div class="faq-answer">{faq.paragraphs.map(paragraph=><p>{paragraph}</p>)}</div></details>)}</div></div></section>
+
+  <section class="section enquiry-section" id="enquiry" aria-labelledby="enquiry-title"><div class="wrap enquiry-layout">
+    <div class="enquiry-intro"><p class="eyebrow">{content.inquiry.eyebrow}</p><h2 id="enquiry-title">{content.inquiry.heading.split("\n").map((line,i)=><Fragment>{i>0&&<br/>}{i===0?line:<span>{line}</span>}</Fragment>)}</h2><p class="lead">{content.inquiry.description}</p><a class="contact-email" href="mailto:sales@hitelecom.cn">sales@hitelecom.cn ↗</a><div class="enquiry-benefits"><h3>{content.inquiry.benefits_title || 'Your pipeline. Your monitoring requirements.'}</h3><p>{content.inquiry.supporting_text}</p></div></div>
+    <form id="enquiry-form" action="#enquiry" method="get"><div class="form-heading"><span class="small-label">{T('PROJECT ENQUIRY')}</span><h3>{content.inquiry.form_title || 'Let’s define your TVOC project.'}</h3><p>{content.inquiry.form_intro || 'Start with your application. Add the details you already know.'}</p></div>
+      <div class="form-fields">
+        <div class="field"><label for="application">{T('Application')} <span aria-hidden="true">*</span></label><select id="application" name="Application" required><option value="">{T('Choose your application')}</option>{content.groups.map(group=><optgroup label={group.title}>{content.applications.filter(scene=>scene.group===group.id).map(scene=><option value={scene.title}>{scene.title}</option>)}</optgroup>)}<option>{T('Other / project-specific')}</option></select></div>
+        <div class="field"><label for="country">{T('Country / region')} <span aria-hidden="true">*</span></label><input id="country" name="Country" required autocomplete="country-name" placeholder={T('e.g. United Kingdom')} maxlength="100"/></div>
+        <div class="field"><label for="measuring-range">{T('TVOC measurement range')}</label><select id="measuring-range" name="TVOC range"><option>{T('Please advise')}</option>{content.series.ranges.map(range=><option>{range}</option>)}</select></div>
+        <div class="field"><label for="quantity">{T('Estimated quantity')}</label><input id="quantity" name="Quantity" type="number" min="1" step="1" inputmode="numeric" placeholder={T('e.g. 20')}/></div>
+        <div class="field full"><label for="target-gases">{T('Target gas / expected mixture')}</label><input id="target-gases" name="Target gas" placeholder={T('TVOC or a custom target gas; expected compounds and concentrations')} maxlength="500"/><p class="field-hint">{T('Target-gas suitability and the reporting basis are confirmed for your project.')}</p></div>
+        <div class="field full"><label for="sampling">{T('Sampling interval')}</label><input id="sampling" name="Sampling interval" placeholder={T('Required sampling frequency and any operating schedule')} maxlength="400"/></div>
+      </div>
+      <details class="project-detail-fields"><summary>{T('Solar, sampling-point & integration requirements')} <span aria-hidden="true">+</span></summary><div class="form-fields">
+        <div class="field full"><label for="solar">{T('Solar exposure & energy-storage requirements')}</label><input id="solar" name="Solar and storage" placeholder={T('Location, shading, seasonal conditions and required operating duration')} maxlength="500"/></div>
+        <div class="field full"><label for="siteconditions">{T('Pipeline & site conditions')}</label><textarea id="siteconditions" name="Pipeline and site conditions" rows="3" placeholder={T('Sampling-point location, gas pressure and temperature, humidity, condensate, dust, materials and any area classification')} maxlength="1200"></textarea></div>
+        <div class="field full"><label for="data-destination">{T('Data destination & integration requirements')}</label><input id="data-destination" name="Data and integration" placeholder={T('Receiving system, required interface and reporting interval; subject to configuration review')} maxlength="500"/></div>
+      </div></details>
+      <div class="field full project-message"><label for="requirements">{T('What should this configuration achieve?')}</label><textarea id="requirements" name="Requirements" rows="3" maxlength="3000" placeholder={content.inquiry.message_placeholder}></textarea></div>
+      <div class="form-actions"><button type="submit" class="button button-primary">{content.inquiry.submit_label} ↗</button><p>{T('Review your brief, then send it with your email app.')}</p></div><div id="enquiry-review" class="enquiry-review" hidden><label for="enquiry-brief">{T('Your project brief')}</label><textarea id="enquiry-brief" rows="9" spellcheck="false"></textarea><div><a id="email-brief" class="button button-primary" href="mailto:sales@hitelecom.cn">{T('Open email')} ↗</a><button id="copy-brief" type="button" class="button button-outline">{T('Copy brief')}</button></div><p id="brief-status" role="status" aria-live="polite">{T('Your brief is ready to review.')}</p></div><noscript><p class="noscript-note">{T('You can also')} <a href="mailto:sales@hitelecom.cn?subject=Solar-powered%20pipeline%20TVOC%20project">{T('email your project details directly')}</a>.</p></noscript>
+    </form>
+  </div></section>
+  <div class="wrap related-products"><p class="small-label">{T('CONTINUE YOUR MONITORING PROJECT')}</p><a href={`${prefix}/product`}>{T('Explore all sensors')} ↗</a><a href={`${prefix}/product/temperature-sensor`}>{T('Temperature monitoring')} ↗</a><a href={`${prefix}/product/tvoc-sensor`}>{T('Fixed TVOC monitoring')} ↗</a></div>
+</main>
+{includeQuickContact && <QuickContact />}
+<script type="application/json" id="gas-i18n" set:html={JSON.stringify(jsI18n)}></script>
+<script>import './gas-interactions.js';</script>
