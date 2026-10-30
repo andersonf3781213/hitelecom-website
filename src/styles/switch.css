@@ -1,0 +1,36 @@
+/* Product-specific additions for the industrial-switch page; gateway.css stays byte-for-byte intact. */
+.controller-detail :is(.section-heading,.gateway-spec-grid,.faq-layout,.enquiry-layout)>*{min-width:0}
+.controller-detail .controller-notice{border-bottom:1px solid var(--line);background:#f2f6fc;padding:18px 0;font-size:12px;line-height:1.75;color:#4c6280}
+.controller-detail .controller-notice strong{display:block;color:#24456f;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+.controller-detail .hero-visual img{aspect-ratio:1;object-fit:contain;object-position:50% 50%;width:100%;max-height:480px;height:auto}
+.controller-detail .spec-group+ .spec-group{margin-top:32px}
+.controller-detail .spec-group h3{font-size:18px;line-height:1.4;margin-bottom:15px}
+.controller-detail .spec-group caption{padding-bottom:12px}
+.controller-detail .spec-group th{width:36%}
+.controller-detail .platform-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin-top:35px}
+.controller-detail .platform-points p{color:#c0d1e6;border-top:1px solid #ffffff2b;padding-top:22px;font-size:14px;line-height:1.85}
+.controller-detail .application-overview{margin-bottom:18px}
+.controller-detail .application-jump-nav{margin-top:22px}
+.controller-detail .download-note{font-size:11px;line-height:1.8;margin-top:13px}
+.controller-detail .scope-note{margin-top:28px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;line-height:1.85}
+@media(max-width:900px){.controller-detail .platform-points{gap:22px}}
+@media(max-width:600px){.controller-detail :is(h1,h2,h3,p,dd,dt,summary,label,button){overflow-wrap:anywhere;hyphens:auto}.controller-detail .platform-points{grid-template-columns:1fr;gap:18px}.controller-detail .hero-visual img{width:100%;height:auto;max-height:300px;margin-top:0}.controller-detail .controller-notice{padding:16px 0}.controller-detail .spec-group th{width:39%}}
+@media(max-width:600px){.controller-detail :is(h1,h2){hyphens:none;overflow-wrap:normal}}
+.controller-detail .controller-interfaces{background:var(--paper)}
+.controller-detail #workflow .measurement-grid{grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch}
+.controller-detail #workflow .measurement-grid>*{min-width:0}
+.controller-detail #workflow .measurement-grid h3{overflow-wrap:anywhere;hyphens:none}
+@media(max-width:1199px){.controller-detail #workflow .measurement-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.controller-detail #workflow .measurement-grid{grid-template-columns:minmax(0,1fr)}}
+.controller-detail .controller-interface-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.controller-detail .controller-interface-grid>*{min-width:0}
+.controller-detail .controller-interface-grid h3{margin:20px 0 12px}
+.controller-detail .interface-count{color:var(--blue);font-size:32px;font-weight:650;line-height:1.2;letter-spacing:-.025em}
+.controller-detail .controller-interface-grid ul{padding:0 0 0 18px;margin:20px 0 0;color:var(--muted);font-size:12px;line-height:1.85}
+.controller-detail .integration-section h2{white-space:pre-line}
+@media(max-width:900px){.controller-detail .controller-interface-grid{gap:18px}.controller-detail .controller-interface-grid .measurement-card{padding:22px}}
+@media(max-width:600px){.controller-detail .controller-interface-grid{grid-template-columns:1fr}.controller-detail .controller-interface-grid .measurement-card{padding:25px}.controller-detail .interface-count{font-size:29px}}
+/* Allow long localized interface names to wrap within the existing card grid. */
+.controller-detail .controller-interface-grid h3{overflow-wrap:anywhere;hyphens:auto}
+/* Keep the original Russian desktop navigation inside its container. */
+@media(min-width:1200px){html[lang="ru"] .ht7000-page .shell-reference .header-inner{gap:20px}}

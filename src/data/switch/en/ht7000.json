@@ -1,0 +1,702 @@
+{
+  "family": "HT7000 Series",
+  "model": "HT7008",
+  "picturedModel": "HT7008",
+  "title": "Custom Industrial Ethernet Switch | HT7000 / HT7008 | Hitelecom",
+  "metaDescription": "HT7000 industrial Ethernet switch customization. HT7008 reference: 8 Gigabit RJ45 ports, 10/100/1000 Mbps auto-negotiation, aluminium housing and -40 to +75 °C operation.",
+  "heroHeading": "Industrial Ethernet switches.",
+  "heroValue": "Connect the equipment.\nBuild the site network.",
+  "heroDescription": "The Hitelecom HT7000 series brings Gigabit Ethernet connectivity to industrial equipment networks. The pictured HT7008 provides eight RJ45 ports with 10/100/1000 Mbps auto-negotiation, an aluminium-alloy enclosure and an operating temperature range of -40 to +75 °C. Develop the project configuration around the connected devices, cabinet power, installation environment and network requirements.",
+  "reviewNotice": "HT7008 is the illustrated eight-port reference. The agreed project specification defines the supplied hardware, power arrangement, network functions and applicable verification.",
+  "interfaceCards": [
+    {
+      "type": "8 × RJ45",
+      "title": "Copper Ethernet connections",
+      "text": "Allocate the eight HT7008 ports between equipment connections and any upstream network link. Connect compatible Ethernet endpoints and confirm the negotiated speed of each link.",
+      "examples": [
+        "PLC, HMI and industrial computer connections",
+        "Camera, recorder and equipment-network links",
+        "An upstream connection within the same eight-port total"
+      ]
+    },
+    {
+      "type": "12 / 24 / 48 V DC",
+      "title": "Cabinet power coordination",
+      "text": "Use the listed nominal DC supply values as project-selection inputs. Confirm the permitted input range, terminal assignment, source arrangement and protective measures in the supplied electrical documentation.",
+      "examples": [
+        "Site supply and power-budget review",
+        "Input wiring, earthing and source allocation",
+        "Documented power-interruption and restoration checks"
+      ]
+    },
+    {
+      "type": "-40 to +75 °C",
+      "title": "Enclosure and installation",
+      "text": "Review the switch operating range against the actual cabinet conditions. Allow for nearby heat sources, enclosure cooling, cable access and the installation method defined for the ordered configuration.",
+      "examples": [
+        "Aluminium-alloy enclosure with external cooling fins",
+        "Cabinet access and cable-routing review",
+        "Environment and project-specific qualification review"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Eight-port Gigabit reference",
+      "text": "The illustrated HT7008 provides eight copper Ethernet ports. Build the port schedule around connected equipment, the upstream connection and any required spare capacity."
+    },
+    {
+      "title": "10/100/1000 Mbps auto-negotiation",
+      "text": "Connect compatible Ethernet devices operating at the supported link speeds. Verify the negotiated rate and end-to-end application traffic during commissioning."
+    },
+    {
+      "title": "Aluminium-alloy enclosure",
+      "text": "The metal enclosure and external fins provide a practical mechanical format for industrial cabinets. Define mounting, access and thermal clearances for the installation."
+    },
+    {
+      "title": "Industrial operating temperature",
+      "text": "The HT7008 reference operates from -40 to +75 °C. Assess the local cabinet temperature, heat sources and cooling as part of the installation design."
+    },
+    {
+      "title": "DC supply configuration",
+      "text": "The reference lists 12, 24 and 48 V DC nominal supply values. Specify the input arrangement, allowable voltage tolerance and power-source requirements for the delivered version."
+    },
+    {
+      "title": "IEEE 802.3x flow control",
+      "text": "The reference lists IEEE 802.3x flow control. Evaluate its behaviour with the connected devices and traffic profile; link-level flow control does not define application latency."
+    },
+    {
+      "title": "Local status visibility",
+      "text": "The product illustration includes a power indicator and port-side indicators. Use the supplied indicator definitions together with endpoint checks to verify connection and operating status."
+    },
+    {
+      "title": "A documented custom configuration",
+      "text": "Review port allocation, power, enclosure, network-function requirements and product identification with Hitelecom. Record the agreed design, acceptance criteria and delivery documents before production."
+    }
+  ],
+  "workflow": [
+    {
+      "title": "Define the network task",
+      "text": "List the Ethernet endpoints, their traffic and the upstream connection. Record available ports, growth allowance, installation location and the project network boundary."
+    },
+    {
+      "title": "Specify the configuration",
+      "text": "Agree the port schedule, DC supply arrangement, mechanical requirements and any requested network functions. Put approved customization and verification scope into the project specification."
+    },
+    {
+      "title": "Validate the agreed design",
+      "text": "Evaluate the agreed sample or configuration with representative equipment and traffic. Verify link negotiation, supply behaviour, cabinet conditions and required recovery procedures against the acceptance criteria."
+    },
+    {
+      "title": "Document the delivered network",
+      "text": "Hand over the port map, power and mounting instructions, approved configuration and test records. Identify upstream equipment and assign responsibility for ongoing network operation."
+    }
+  ],
+  "applicationsIntro": "Industrial Ethernet connects equipment at the machine, cabinet and site level. Explore eight application areas and 40 project tasks, then define the actual endpoints, traffic, power and environmental requirements. These are representative integration tasks, not statements of sector certification or a promise that one switch serves every listed device at once.",
+  "groups": [
+    {
+      "id": "oil-petrochemical",
+      "title": "Oil & Petrochemical Facilities",
+      "intro": "Connect Ethernet-capable gateways and workstations supporting oil, gas and process facilities. Define area classification, enclosure protection and approved installation location before selecting the network equipment; the reference switch does not establish hazardous-area suitability.",
+      "tasks": [
+        {
+          "title": "Oilfield equipment data links",
+          "text": "Aggregate equipment-monitoring data at a field support cabinet and provide a defined Ethernet connection toward the site communications system.",
+          "interface": "Ethernet-equipped monitoring gateways, local workstation and the agreed upstream connection.",
+          "control": "Place the switch in an approved non-hazardous or appropriately protected installation. Process shutdown and protection functions remain independent.",
+          "verification": "Check area classification, cabinet temperature, cable entry protection and upstream link loading.",
+          "imageKey": "ht7000-oilfield-equipment-data",
+          "imageAlt": "Oilfield pumping equipment in a representative outdoor production environment."
+        },
+        {
+          "title": "Tank-farm supervisory links",
+          "text": "Bring compatible tank-area monitoring gateways onto the local site network for supervisory data access. Tank sensors connect through their approved gateway or controller.",
+          "interface": "Ethernet ports on instrument gateways, a site data concentrator and the allocated uplink.",
+          "control": "Transport the gateway data; tank level measurement, alarm decisions and overfill protection remain with their respective systems.",
+          "verification": "Confirm segregation requirements, cabinet approval, data path and loss-of-link behaviour.",
+          "imageKey": "ht7000-tank-farm-supervisory",
+          "imageAlt": "Tank-area pipework and service manifolds in an industrial process facility."
+        },
+        {
+          "title": "Pump and compressor package networks",
+          "text": "Connect the Ethernet interfaces of packaged equipment controllers and service workstations within a defined equipment-area network.",
+          "interface": "Package-controller Ethernet ports, maintenance terminal and site supervisory connection.",
+          "control": "Keep equipment sequencing, permissives and protective trips within the package control system. Agree any access from other plant networks.",
+          "verification": "Review port allocation, cable routing near drives, grounding and the expected traffic profile.",
+          "imageKey": "ht7000-pump-package-network",
+          "imageAlt": "Process pumps, connected pipework and local service equipment."
+        },
+        {
+          "title": "Gas-regulation station communications",
+          "text": "Provide a local Ethernet aggregation point for approved station controllers and monitoring gateways in a suitable service enclosure.",
+          "interface": "Station gateway or controller Ethernet interfaces and the specified backhaul device.",
+          "control": "Treat the switch as network infrastructure. Pressure regulation, gas detection and emergency isolation remain separate application functions.",
+          "verification": "Confirm hazardous-area boundaries, enclosure environment, approved supply and communications recovery.",
+          "imageKey": "ht7000-gas-station-network",
+          "imageAlt": "A gas-regulation installation with valves, pipework and protected service areas."
+        },
+        {
+          "title": "Process instrument gateway aggregation",
+          "text": "Consolidate data connections from Ethernet-ready instrument gateways before handing the traffic to the plant network.",
+          "interface": "Ethernet outputs from supported gateways; analogue and serial instruments require their own suitable interface equipment.",
+          "control": "Document the gateway data definitions, approved traffic paths and application access policy as part of the plant-network design.",
+          "verification": "Check gateway compatibility, address plan, traffic demand and the documented upstream connection.",
+          "imageKey": "ht7000-process-gateway-network",
+          "imageAlt": "Process instrumentation and a local equipment enclosure beside industrial pipework."
+        }
+      ],
+      "imageKey": "ht7000-oilfield-equipment-data",
+      "imageAlt": "Oilfield pumping equipment in a representative outdoor production environment."
+    },
+    {
+      "id": "metals-mining",
+      "title": "Metals & Mining",
+      "intro": "Support equipment-data networks in approved surface facilities, processing buildings and enclosed service rooms. Dust, vibration, heat, installation permissions and any underground requirements are project qualification items rather than implied product certifications.",
+      "tasks": [
+        {
+          "title": "Surface-mine service networks",
+          "text": "Link monitoring gateways and service equipment within a protected surface-mine support installation. Provide the agreed connection to the wider site communications network.",
+          "interface": "Ethernet-ready field gateways, maintenance equipment and a separately specified upstream device.",
+          "control": "Keep equipment operating logic and safety systems outside the switching function; assess longer-distance links separately.",
+          "verification": "Verify dust protection, installation vibration, cabinet thermal conditions and cable distances.",
+          "imageKey": "ht7000-surface-mine-services",
+          "imageAlt": "An open surface mine illustrating the operating environment for protected site communications."
+        },
+        {
+          "title": "Conveyor-cell information links",
+          "text": "Connect conveyor controllers, condition-monitoring gateways and an operator terminal within the approved conveyor service network.",
+          "interface": "Ethernet interfaces of the conveyor controller, monitoring gateway and supervisory terminal.",
+          "control": "Transport permitted equipment data. Conveyor start permissives, pull-cord stops and safety interlocks remain within the approved control system.",
+          "verification": "Check vibration exposure, cable containment, port allocation and traffic during equipment events.",
+          "imageKey": "ht7000-ore-conveyor-network",
+          "imageAlt": "Mineral conveyor transfer equipment with a protected service cabinet in a surface processing plant."
+        },
+        {
+          "title": "Mineral-processing workstation networks",
+          "text": "Connect local supervisory workstations and Ethernet data concentrators serving a mineral-processing area.",
+          "interface": "Control-room workstation interfaces, data concentrators and the documented plant-network connection.",
+          "control": "Define the workstation traffic paths and application access within the approved plant-network and security architecture.",
+          "verification": "Check aggregate traffic, addressing, upstream capacity and the separate network-security architecture.",
+          "imageKey": "ht7000-mineral-control-room",
+          "imageAlt": "Mineral-processing operator workstations and an enclosed communications rack."
+        },
+        {
+          "title": "Steelworks electrical-room networks",
+          "text": "Provide Ethernet connectivity for monitoring gateways and maintenance equipment installed in a suitable steelworks electrical service room.",
+          "interface": "Equipment gateways, service workstation and the agreed plant network connection.",
+          "control": "Locate network equipment within its qualified environment; furnace heat, drive noise and production exposure require installation-specific assessment.",
+          "verification": "Check enclosure temperature, grounding, cable separation and any site-specific EMC requirements.",
+          "imageKey": "ht7000-steel-electrical-room",
+          "imageAlt": "An enclosed steelworks electrical service room beside production equipment."
+        },
+        {
+          "title": "Mine-dewatering station links",
+          "text": "Connect the Ethernet side of pump-station controllers and monitoring gateways to the surface communications system.",
+          "interface": "Pump controller or gateway Ethernet ports and a separately selected upstream link.",
+          "control": "Water-level sensing and pump sequencing remain with the station controls. Qualify any underground location and its required approvals separately.",
+          "verification": "Review moisture protection, supply arrangement, cable route and response to link or power loss.",
+          "imageKey": "ht7000-mine-dewatering-network",
+          "imageAlt": "A surface dewatering excavation and pumping environment at an industrial site."
+        }
+      ],
+      "imageKey": "ht7000-surface-mine-services",
+      "imageAlt": "An open surface mine illustrating the operating environment for protected site communications."
+    },
+    {
+      "id": "marine-systems",
+      "title": "Marine & Shipboard Systems",
+      "intro": "Develop Ethernet interconnection for selected shipboard and shore-service equipment. Confirm the vessel, installation zone and applicable qualification requirements before defining the supplied configuration. Ship-class approval, marine EMC and suitability for any navigation or safety function must be established for the assigned network role.",
+      "tasks": [
+        {
+          "title": "Machinery-monitoring workstations",
+          "text": "Connect approved machinery-monitoring workstations and data gateways within the vessel equipment network.",
+          "interface": "Ethernet interfaces on monitoring gateways, operator terminals and the agreed vessel-network connection.",
+          "control": "Keep machinery protection and essential control functions within their approved systems. Confirm the permitted network role with the vessel integrator.",
+          "verification": "Review applicable marine approvals, vibration, supply conditions, cabinet temperature and network access.",
+          "imageKey": "ht7000-marine-machinery-workstations",
+          "imageAlt": "Shipboard machinery-monitoring workstations in an engine control room."
+        },
+        {
+          "title": "Auxiliary-service equipment networks",
+          "text": "Interconnect Ethernet-capable monitoring gateways serving selected auxiliary pumps and service equipment in a suitable machinery-space enclosure.",
+          "interface": "Approved controller or gateway Ethernet ports; field signals remain on their documented instrument interfaces.",
+          "control": "Provide the defined data path without replacing equipment protection, local control or vessel alarm functions.",
+          "verification": "Check enclosure location, condensation, cable support, grounding and applicable marine qualification.",
+          "imageKey": "ht7000-marine-auxiliary-pumps",
+          "imageAlt": "Marine auxiliary pumps with protected local equipment enclosures."
+        },
+        {
+          "title": "Deck-service status networks",
+          "text": "Link compatible deck-equipment monitoring gateways from a protected service enclosure to the agreed vessel data network.",
+          "interface": "Ethernet-ready status gateways and the specified upstream network interface.",
+          "control": "Use a qualified protected installation for salt, water and environmental exposure. Do not expose the reference switch directly to deck conditions without approval.",
+          "verification": "Verify enclosure protection, corrosion exposure, cable glands, supply and vessel installation requirements.",
+          "imageKey": "ht7000-marine-deck-services",
+          "imageAlt": "A vessel deck service enclosure beside protected equipment cable runs."
+        },
+        {
+          "title": "Passenger-service equipment networks",
+          "text": "Connect selected passenger-service data equipment through an enclosed communications installation on a ferry or passenger vessel.",
+          "interface": "Approved Ethernet service devices, local data equipment and the vessel integrator-defined uplink.",
+          "control": "Specify service-network boundaries and the separate security architecture; do not extend this example to navigation or emergency systems.",
+          "verification": "Review device load, service availability requirements, installation approvals and permitted access between networks.",
+          "imageKey": "ht7000-ferry-service-network",
+          "imageAlt": "An enclosed ferry communications rack serving passenger-area equipment."
+        },
+        {
+          "title": "Shipyard shore-service networks",
+          "text": "Provide local Ethernet connectivity for maintenance workstations and equipment-data gateways at a protected quayside or workshop service point.",
+          "interface": "Workshop workstations, service gateways and the documented yard-network connection.",
+          "control": "Define shore-to-vessel access permissions and physical network boundaries before connecting maintenance equipment.",
+          "verification": "Check temporary-connection control, weather protection, grounding and the approved cabinet supply.",
+          "imageKey": "ht7000-shipyard-service-network",
+          "imageAlt": "A sheltered shipyard shore-service cabinet beside a vessel at berth."
+        }
+      ],
+      "imageKey": "ht7000-marine-machinery-workstations",
+      "imageAlt": "Shipboard machinery-monitoring workstations in an engine control room."
+    },
+    {
+      "id": "energy-renewables",
+      "title": "Energy & Renewables",
+      "intro": "Connect Ethernet-ready equipment across renewable generation and supporting power facilities. Select each cabinet network around its endpoints, upstream path and environment; energy-control algorithms, protection and cloud services belong to their respective systems.",
+      "tasks": [
+        {
+          "title": "Solar inverter and logger networks",
+          "text": "Aggregate Ethernet connections from compatible solar inverters, data loggers and site monitoring gateways inside a suitable plant service cabinet.",
+          "interface": "Ethernet-equipped inverters or loggers and the project-specified backhaul device.",
+          "control": "Agree inverter and logger data protocols, addressing and permitted supervisory exchanges with the plant integrator.",
+          "verification": "Review endpoint count, uplink allocation, cabinet thermal conditions and expected data traffic.",
+          "imageKey": "ht7000-solar-inverter-network",
+          "imageAlt": "Solar arrays with service equipment in a representative generation site."
+        },
+        {
+          "title": "Wind-equipment service networks",
+          "text": "Connect selected condition-monitoring gateways and service equipment to an agreed wind-site data network.",
+          "interface": "Ethernet-ready monitoring gateways, service terminal and the specified site connection.",
+          "control": "Limit the installation to its qualified network role. Turbine protection, essential controls and any deterministic network requirements require separate assessment.",
+          "verification": "Check vibration, installation temperature, cable routing and project-specific traffic requirements.",
+          "imageKey": "ht7000-wind-service-network",
+          "imageAlt": "Wind turbines in a representative renewable-energy operating environment."
+        },
+        {
+          "title": "Battery-storage auxiliary data links",
+          "text": "Connect approved Ethernet interfaces from auxiliary monitoring gateways and service workstations around a battery-storage installation.",
+          "interface": "Ethernet outputs from the relevant monitoring or equipment controllers and the allocated upstream path.",
+          "control": "Keep battery protection, fire systems and charge-discharge decisions within their approved systems; establish the permitted data exchange.",
+          "verification": "Check network boundaries, enclosure conditions, supply compatibility and link-recovery requirements.",
+          "imageKey": "ht7000-storage-auxiliary-network",
+          "imageAlt": "Battery-storage equipment and a protected service enclosure."
+        },
+        {
+          "title": "Hydropower monitoring-station networks",
+          "text": "Link Ethernet-capable monitoring gateways and an operator terminal at an approved hydropower or reservoir service facility.",
+          "interface": "Station monitoring gateway, local workstation and the separately specified site backhaul.",
+          "control": "Carry supervisory data without assuming water-control logic, dam-safety functions or turbine protection.",
+          "verification": "Confirm the installation environment, endpoint protocol compatibility and the upstream service architecture.",
+          "imageKey": "ht7000-hydropower-site-network",
+          "imageAlt": "A reservoir and dam environment representing hydropower and water-site communications."
+        },
+        {
+          "title": "Renewable-site weather data aggregation",
+          "text": "Connect an Ethernet-ready weather logger or environmental gateway to the approved renewable-site data network.",
+          "interface": "Weather-logger or gateway Ethernet output and the allocated site-network connection.",
+          "control": "Agree the weather data definitions, update requirements and permitted exchange with the site monitoring application.",
+          "verification": "Check logger interface compatibility, addressing, traffic demand and protected cabinet installation.",
+          "imageKey": "ht7000-renewable-weather-network",
+          "imageAlt": "Weather observation instruments and protected site service enclosures."
+        }
+      ],
+      "imageKey": "ht7000-solar-inverter-network",
+      "imageAlt": "Solar arrays with service equipment in a representative generation site."
+    },
+    {
+      "id": "video-surveillance",
+      "title": "Video & Site Surveillance",
+      "intro": "Build a defined Ethernet path between compatible cameras, recorders and upstream equipment. Review stream loading and power each device through its approved supply; the reference configuration does not establish PoE, video recording, analytics or remote-access functions.",
+      "tasks": [
+        {
+          "title": "Production-area video networks",
+          "text": "Connect Ethernet cameras covering a production aisle to the local recorder or agreed upstream network.",
+          "interface": "Camera data ports, recorder interface and allocated Ethernet uplink; camera power is specified separately.",
+          "control": "Coordinate the camera-to-recorder data path with the video-system design, including recording, retention and any analytics requirements.",
+          "verification": "Calculate simultaneous stream demand, uplink loading and cable lengths; confirm the camera power design.",
+          "imageKey": "ht7000-factory-video-network",
+          "imageAlt": "A visible security camera covering an industrial production aisle."
+        },
+        {
+          "title": "Entrance and gate video links",
+          "text": "Aggregate compatible camera data connections from an industrial entrance at a protected local service point.",
+          "interface": "Ethernet cameras, the site recorder or video network and the documented backhaul interface.",
+          "control": "Define permitted links between the entrance video system and access-management equipment within the site network architecture.",
+          "verification": "Check bandwidth, outdoor cabinet protection, surge-protection design and the approved network boundary.",
+          "imageKey": "ht7000-gate-video-network",
+          "imageAlt": "An industrial entrance with a pole-mounted camera and guard kiosk."
+        },
+        {
+          "title": "Remote-facility perimeter video",
+          "text": "Connect perimeter-camera data streams to the selected recorder or remote communications device within a protected site cabinet.",
+          "interface": "Ethernet camera interfaces and separately specified recording or backhaul equipment.",
+          "control": "Document the backhaul, recorder and approved remote-viewing path as parts of the site network architecture.",
+          "verification": "Review aggregate bitrate, uplink availability, local recording arrangements and the independent camera power supply.",
+          "imageKey": "ht7000-remote-perimeter-video",
+          "imageAlt": "A remote facility perimeter camera and protected communications cabinet."
+        },
+        {
+          "title": "Loading-bay surveillance links",
+          "text": "Provide a local data connection for cameras covering loading bays, yard entrances and nearby service areas.",
+          "interface": "Ethernet cameras and the approved recorder or building-network connection.",
+          "control": "Assign ports to camera endpoints and the uplink, then agree the recording and event-handling workflow with the video-system integrator.",
+          "verification": "Check concurrent streams, uplink loading, installation cable routes and enclosure conditions.",
+          "imageKey": "ht7000-loading-bay-video",
+          "imageAlt": "An industrial loading-bay service area illustrating a local surveillance-network location."
+        },
+        {
+          "title": "Port-yard video aggregation",
+          "text": "Interconnect selected Ethernet video endpoints serving a port logistics zone from a protected equipment location.",
+          "interface": "Approved camera interfaces, video recorder or network node and the specified upstream device.",
+          "control": "Coordinate the local camera network with the separately selected yard backbone, including its required distance and upstream media.",
+          "verification": "Review stream demand, cable distance, cabinet protection, grounding and port-site installation requirements.",
+          "imageKey": "ht7000-terminal-yard-video",
+          "imageAlt": "A container terminal with freight-handling equipment and operational yard space."
+        }
+      ],
+      "imageKey": "ht7000-factory-video-network",
+      "imageAlt": "A visible security camera covering an industrial production aisle."
+    },
+    {
+      "id": "smart-buildings",
+      "title": "Smart Buildings",
+      "intro": "Connect Ethernet-ready building gateways, plant controllers and service workstations through a defined local infrastructure. Building protocols, control sequences, remote access and platform functions remain with the selected endpoints and building-management system.",
+      "tasks": [
+        {
+          "title": "Building-services gateway aggregation",
+          "text": "Bring compatible building-services gateways and an operator terminal onto the approved facilities network.",
+          "interface": "Ethernet outputs from gateways serving HVAC or other building equipment; serial buses require their own suitable gateway.",
+          "control": "Agree the building protocols, gateway point mapping and approved application access with the building-management integrator.",
+          "verification": "Check addressing, gateway compatibility, port allocation and permitted access to the facilities network.",
+          "imageKey": "ht7000-building-gateway-network",
+          "imageAlt": "Air-handling equipment and protected building-services enclosures."
+        },
+        {
+          "title": "Plant-room utility networks",
+          "text": "Connect Ethernet-ready metering and equipment gateways serving a building water or utility plant room.",
+          "interface": "Meter gateway and plant-controller Ethernet interfaces, plus the agreed upstream connection.",
+          "control": "Define meter identities, gateway data maps, update requirements and the approved building-services data path.",
+          "verification": "Review moisture protection, cable separation, data demand and installation access.",
+          "imageKey": "ht7000-building-water-network",
+          "imageAlt": "An indoor plant room with pumps, pipework and service equipment."
+        },
+        {
+          "title": "Chilled-water service links",
+          "text": "Interconnect compatible cooling-plant gateways and a maintenance workstation at a suitable plant-room network point.",
+          "interface": "Chiller or pump-controller Ethernet interfaces, gateway ports and the building-network uplink.",
+          "control": "Coordinate cooling-plant data points, equipment-gateway connections and the approved maintenance-access path.",
+          "verification": "Verify enclosure temperature, grounding near drives, endpoint compatibility and the maintenance access path.",
+          "imageKey": "ht7000-chilled-water-network",
+          "imageAlt": "Cooling equipment and pump pipework in a building-services installation."
+        },
+        {
+          "title": "Campus facilities supervisory access",
+          "text": "Connect a facilities workstation and approved building-data endpoints to the agreed campus service network.",
+          "interface": "Facilities workstation, Ethernet data gateways and the allocated upstream network connection.",
+          "control": "Agree authorized facilities-workstation access and the approved boundaries between campus business and building-services networks.",
+          "verification": "Check authorized access, addressing, endpoint demand and the agreed network boundaries.",
+          "imageKey": "ht7000-campus-facilities-network",
+          "imageAlt": "A commercial building workspace representing facilities-supervision access."
+        },
+        {
+          "title": "Data-centre facilities networks",
+          "text": "Connect selected Ethernet gateways supporting data-centre facility monitoring and maintenance in an appropriate service network.",
+          "interface": "Facility-monitoring gateway interfaces, local service workstation and the documented upstream path.",
+          "control": "Use the facilities network design to define monitoring endpoints, authorized maintenance access and separation from production IT traffic.",
+          "verification": "Review network separation design, installation temperature, device loads and site availability requirements.",
+          "imageKey": "ht7000-data-centre-services",
+          "imageAlt": "Server racks and service aisles in a representative data-centre environment."
+        }
+      ],
+      "imageKey": "ht7000-building-gateway-network",
+      "imageAlt": "Air-handling equipment and protected building-services enclosures."
+    },
+    {
+      "id": "utility-grid",
+      "title": "Utility & Grid Facilities",
+      "intro": "Connect selected metering, equipment-condition and maintenance endpoints in electrical utility facilities. Define the approved auxiliary network role and verify applicable environmental, EMC and sector requirements; these examples do not establish protection-network, process-bus or substation certification.",
+      "tasks": [
+        {
+          "title": "Substation auxiliary communications",
+          "text": "Connect permitted Ethernet gateways and service equipment within an approved auxiliary network at a substation facility.",
+          "interface": "Auxiliary monitoring gateway, maintenance terminal and the integrator-defined upstream connection.",
+          "control": "Exclude protection or time-critical process-bus roles unless separately qualified. This reference does not establish IEC 61850 or substation certification.",
+          "verification": "Review applicable EMC and sector requirements, isolation boundaries, grounding and authorized access.",
+          "imageKey": "ht7000-substation-auxiliary",
+          "imageAlt": "Substation service enclosures and outdoor electrical infrastructure."
+        },
+        {
+          "title": "Distribution-room metering gateway networks",
+          "text": "Aggregate Ethernet connections from approved metering gateways and a local energy-data workstation in an electrical distribution service area.",
+          "interface": "Meter-gateway Ethernet outputs and the agreed utility supervisory connection; serial meters use their own suitable gateway.",
+          "control": "Define measurement identities, units, data maps and authorized exchanges in the metering system. Revenue-metering approval is a separate endpoint requirement.",
+          "verification": "Review gateway compatibility, electrical separation, grounding, traffic demand and the permitted utility network boundary.",
+          "imageKey": "ht7000-distribution-meter-network",
+          "imageAlt": "Electricity metering equipment and protected distribution-service wiring."
+        },
+        {
+          "title": "Power-equipment condition data links",
+          "text": "Connect Ethernet-ready condition-monitoring gateways serving transformers or other electrical equipment to the approved auxiliary data network.",
+          "interface": "Condition-monitoring gateway Ethernet interface and the utility-defined monitoring connection.",
+          "control": "Transport monitoring information only. Protection trips, essential control and time-critical process-bus functions require their own qualified architecture.",
+          "verification": "Confirm endpoint protocols, monitoring-data demand, installation clearances, EMC requirements and approved enclosure location.",
+          "imageKey": "ht7000-power-condition-network",
+          "imageAlt": "Power-transformer monitoring equipment and a protected auxiliary service enclosure at a utility site."
+        },
+        {
+          "title": "Utility maintenance-workstation access",
+          "text": "Provide a defined Ethernet connection for an authorized maintenance workstation and selected utility equipment-data gateways.",
+          "interface": "Maintenance-workstation Ethernet port, approved data gateways and the allocated service-network connection.",
+          "control": "Document authorized access, permitted endpoints and the separate network-security controls before connecting service equipment.",
+          "verification": "Check access procedure, network boundaries, addressing, cabinet conditions and the handling of temporary maintenance connections.",
+          "imageKey": "ht7000-utility-maintenance-workstation",
+          "imageAlt": "An authorized maintenance workstation in a utility electrical service room."
+        },
+        {
+          "title": "DC auxiliary-supply monitoring links",
+          "text": "Connect compatible Ethernet gateways reporting auxiliary DC power-system status within an approved utility service network.",
+          "interface": "Ethernet outputs from DC monitoring or power-data gateways and the agreed supervisory endpoint.",
+          "control": "Define the status data and alarm exchange at the monitoring endpoints. Battery protection, DC distribution protection and essential supply functions remain independent.",
+          "verification": "Confirm gateway electrical compatibility, grounding, protected installation and behaviour during auxiliary-supply or network interruptions.",
+          "imageKey": "ht7000-grid-dc-auxiliary-network",
+          "imageAlt": "An enclosed DC auxiliary power and communications service cabinet."
+        }
+      ],
+      "imageKey": "ht7000-substation-auxiliary",
+      "imageAlt": "Substation service enclosures and outdoor electrical infrastructure."
+    },
+    {
+      "id": "industrial-automation",
+      "title": "Industrial Automation",
+      "intro": "Connect compatible PLCs, operator terminals, machine gateways and maintenance equipment within a defined production network. Verify device protocols, traffic demand and any real-time or security requirements before selecting the final network architecture.",
+      "tasks": [
+        {
+          "title": "PLC and HMI cell networks",
+          "text": "Interconnect compatible Ethernet PLCs, operator terminals and data gateways serving an individual production cell.",
+          "interface": "PLC and HMI Ethernet ports, monitoring gateway and the agreed cell-network uplink.",
+          "control": "Confirm protocol compatibility and timing requirements with the controls integrator. The reference does not establish deterministic performance or safety-network suitability.",
+          "verification": "Review traffic loading, control-system requirements, loop-free topology and device addressing.",
+          "imageKey": "ht7000-plc-hmi-network",
+          "imageAlt": "A production control cabinet containing PLC and interface equipment."
+        },
+        {
+          "title": "Machine monitoring and service networks",
+          "text": "Provide an Ethernet connection point for a machine controller, condition-monitoring gateway and authorized maintenance workstation.",
+          "interface": "Approved machine-controller interface, monitoring gateway and the specified service connection.",
+          "control": "Define authorized service access, permitted machine-data exchanges and the monitoring-gateway point list with the machine supplier.",
+          "verification": "Check access permissions, cable routing, electromagnetic environment and the endpoint traffic profile.",
+          "imageKey": "ht7000-machine-service-network",
+          "imageAlt": "A machine tool with accessible local control and service equipment."
+        },
+        {
+          "title": "Production-equipment data collection",
+          "text": "Connect Ethernet-ready machine gateways and data-collection equipment to the documented production information network.",
+          "interface": "Equipment data-gateway ports, local collection server or terminal and the allocated upstream connection.",
+          "control": "Define endpoint protocols, data ownership and processing responsibilities in the production data-collection design.",
+          "verification": "Check endpoint count, gateway protocol support, uplink allocation and traffic during production events.",
+          "imageKey": "ht7000-production-data-network",
+          "imageAlt": "Production machinery on a representative factory floor."
+        },
+        {
+          "title": "Electronics-production inspection links",
+          "text": "Interconnect compatible inspection workstations and equipment-data interfaces in an electronics-production area.",
+          "interface": "Ethernet-ready inspection equipment, workstation and agreed production-network connection.",
+          "control": "Agree the inspection-data volume, transfer bursts and required application performance with the equipment supplier.",
+          "verification": "Check aggregate demand, endpoint protocol settings and the documented uplink capacity.",
+          "imageKey": "ht7000-electronics-line-network",
+          "imageAlt": "Electronics-production equipment working over circuit-board assemblies."
+        },
+        {
+          "title": "Compressor and utility-skid networking",
+          "text": "Connect the Ethernet interfaces of utility-skid controllers, monitoring gateways and service equipment to the plant network.",
+          "interface": "Controller and gateway Ethernet ports with the approved supervisory or maintenance connection.",
+          "control": "Agree utility-skid data mapping, monitoring endpoints and the permitted supervisory and maintenance connections.",
+          "verification": "Confirm enclosure conditions, drive-related cable separation, supply compatibility and the agreed traffic path.",
+          "imageKey": "ht7000-compressor-skid-network",
+          "imageAlt": "Compressed-air service equipment, receiver vessel and connected pipework."
+        }
+      ],
+      "imageKey": "ht7000-plc-hmi-network",
+      "imageAlt": "A production control cabinet containing PLC and interface equipment."
+    }
+  ],
+  "specsIntro": "Use the HT7008 eight-port reference to start the specification. The reference covers port count, link speeds, enclosure and operating temperature. The agreed project documentation defines the delivered configuration and the remaining electrical and network details.",
+  "specGroups": [
+    {
+      "title": "Product reference",
+      "rows": [
+        [
+          "Product family",
+          "HT7000 Series industrial Ethernet switches"
+        ],
+        [
+          "Illustrated model",
+          "HT7008"
+        ],
+        [
+          "Port arrangement",
+          "8 × RJ45 copper Ethernet ports; any upstream link uses a port within this total."
+        ]
+      ]
+    },
+    {
+      "title": "Ethernet connectivity",
+      "rows": [
+        [
+          "Supported link speeds",
+          "10/100/1000 Mbps auto-negotiation"
+        ],
+        [
+          "Flow control",
+          "IEEE 802.3x"
+        ],
+        [
+          "Port allocation",
+          "Define endpoint links, upstream connection and spare-port requirements in the project port schedule."
+        ],
+        [
+          "Application traffic",
+          "Verify the required traffic with the connected devices. Link rate is not an end-to-end throughput or latency guarantee."
+        ]
+      ]
+    },
+    {
+      "title": "Power and status",
+      "rows": [
+        [
+          "Nominal DC supply values",
+          "12 / 24 / 48 V DC"
+        ],
+        [
+          "Input arrangement",
+          "Confirm the permitted voltage range, input circuits, source priority or transfer behaviour and protection requirements for the supplied version."
+        ],
+        [
+          "Power consumption",
+          "Obtain the specified consumption and starting requirements for cabinet power sizing."
+        ],
+        [
+          "Indicators",
+          "Power and port-side indicators are shown. Confirm their meanings in the supplied operating instructions."
+        ]
+      ]
+    },
+    {
+      "title": "Mechanical and environmental",
+      "rows": [
+        [
+          "Enclosure",
+          "Aluminium alloy; external cooling fins"
+        ],
+        [
+          "Operating temperature",
+          "-40 to +75 °C"
+        ],
+        [
+          "Installation",
+          "Confirm mounting method, dimensions, cable access, earthing and thermal clearances for the ordered configuration."
+        ],
+        [
+          "EMC integration",
+          "The reference includes EMC protection. Confirm the applicable test standards, levels, installation conditions and supporting records."
+        ],
+        [
+          "Site protection",
+          "Specify the installation enclosure and any required ingress, corrosion, hazardous-area or sector-specific qualification."
+        ]
+      ]
+    },
+    {
+      "title": "Customization and delivery",
+      "rows": [
+        [
+          "Project inputs",
+          "Endpoint and port list, traffic requirements, upstream network, DC supply, cabinet conditions and destination requirements."
+        ],
+        [
+          "Customization scope",
+          "Agree the hardware, network-function requirements, product identification and documentation scope before design approval."
+        ],
+        [
+          "Configuration record",
+          "Document the approved model, hardware version and any supplied settings or software scope."
+        ],
+        [
+          "Verification",
+          "Agree the functional, power, temperature, EMC and application-network checks appropriate to the project."
+        ]
+      ]
+    }
+  ],
+  "platformTitle": "Your equipment network.\nAn agreed integration scope.",
+  "platformIntro": "Place the switch within the project network design. It provides local Ethernet connectivity; the connected endpoints, upstream router or gateway and receiving systems define the wider data path, application services and operating responsibilities.",
+  "platformBullets": [
+    "Network design: record the physical links, endpoint addresses, traffic paths and any separation or security requirements in the installation design. Use equipment with the required documented functions.",
+    "Power and installation: match the supplied input arrangement to the cabinet supply, earthing, cable routing and local thermal conditions. Confirm any redundancy requirement separately for power and network paths.",
+    "Project delivery: agree the port map, approved hardware and any software scope, product identification, installation documents and acceptance records before handover."
+  ],
+  "faqs": [
+    {
+      "q": "What is the relationship between HT7000 and HT7008?",
+      "a": "HT7000 is the industrial Ethernet switch series. HT7008 is the eight-port model shown on this page. Use its reference configuration to start a project discussion, then confirm the exact supplied version and agreed customization in the ordering specification."
+    },
+    {
+      "q": "How many equipment links can the eight-port reference provide?",
+      "a": "HT7008 has eight RJ45 ports in total. An upstream Ethernet connection also occupies one of these ports. Allocate endpoint links, upstream connections and spares together; do not count an additional unlisted uplink."
+    },
+    {
+      "q": "Does a Gigabit port guarantee Gigabit application throughput?",
+      "a": "10/100/1000 Mbps describes the supported link speeds. Actual end-to-end performance also depends on the endpoints, cable installation, traffic pattern and other network equipment. Confirm the required application traffic and performance during project validation."
+    },
+    {
+      "q": "What does IEEE 802.3x mean here?",
+      "a": "IEEE 802.3x refers to Ethernet flow control. It does not by itself establish traffic prioritization, deterministic timing or loss-free application delivery. Evaluate flow-control behaviour with the intended endpoints and traffic."
+    },
+    {
+      "q": "How should the DC supply be specified?",
+      "a": "The reference lists 12, 24 and 48 V DC nominal supply values. Obtain the permitted input-voltage range, wiring schedule, input-circuit arrangement, consumption and protection details for the supplied version. The three nominal values alone do not define a continuous voltage range or a number of independent power inputs."
+    },
+    {
+      "q": "What does the -40 to +75 °C range apply to?",
+      "a": "It is the operating-temperature range given for the switch reference. Check the conditions at the installation position inside the enclosure, including local heat sources and cooling. Confirm the applicable environmental and test conditions for the ordered configuration."
+    },
+    {
+      "q": "Are management functions, PoE or fibre ports included?",
+      "a": "The documented HT7008 reference covers eight copper data ports. Specify any management, powered-device supply or fibre-connection requirement in the project brief. The written configuration proposal will identify the hardware and functions included in the ordered version."
+    },
+    {
+      "q": "Does redundant power also provide a redundant network?",
+      "a": "Power-source arrangements and network-path resilience are separate design decisions. Agree the actual power-input circuits and transfer behaviour, then specify any network-recovery requirement independently. Do not create a loop without the required documented network functions."
+    },
+    {
+      "q": "Can the switch connect PLC, HMI and video equipment?",
+      "a": "Compatible Ethernet endpoints can be included in the project port schedule. The endpoints still define their protocols and applications. Validate the traffic profile and any timing requirements; the switch reference does not establish protocol conversion or a safety-control function."
+    },
+    {
+      "q": "Can it be used outdoors, on ships or in hazardous areas?",
+      "a": "Assess the complete installation against its enclosure, temperature, moisture, corrosion and regulatory requirements. The application examples are project contexts, not claims of outdoor ingress protection, marine approval, explosion protection or utility-sector certification. Obtain the required model-specific evidence before selection."
+    },
+    {
+      "q": "How does it fit into remote monitoring?",
+      "a": "The switch connects local Ethernet equipment. Remote access and monitoring services depend on the connected router or gateway, endpoint software, receiving platform and project security design. Define that complete data path during integration; no built-in cellular or cloud-monitoring service is specified here."
+    },
+    {
+      "q": "What should an industrial switch customization brief include?",
+      "a": "Provide the endpoint and port list, upstream network arrangement, traffic and timing needs, supply details, enclosure conditions, mounting constraints and destination requirements. Add requested network functions, product identification and documentation needs so the proposal can define the development, verification and delivery scope."
+    }
+  ],
+  "enquiryIntro": "Share the network drawing, endpoint list and installation conditions. We will review the HT7008 reference and the requested customization against the project requirements, then define the proposed configuration and verification scope.",
+  "slug": "custom-industrial-ethernet-switch",
+  "kind": "Product",
+  "image": "ht7008-original.png",
+  "imageWidth": 1280,
+  "imageHeight": 1280,
+  "datasheet": "/downloads/ht7000-industrial-ethernet-switch-datasheet-en.pdf"
+}
