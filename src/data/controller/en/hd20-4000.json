@@ -1,0 +1,725 @@
+{
+  "family": "HD20-4000 Series",
+  "model": "HD20-4000 Series",
+  "picturedModel": "HD20-4021GD",
+  "title": "HD20-4000 Series IoT Controller | 4DO, 4DI & 4AI | Hitelecom",
+  "metaDescription": "HD20-4000 IoT controller with 4DO + 4DI + 4AI reference I/O, edge acquisition, local, remote and condition-based control, watchdogs and Hitelecom Cloud monitoring.",
+  "heroHeading": "IoT Controller.",
+  "heroValue": "Connect field signals.\nControl with context.",
+  "heroDescription": "The Hitelecom HD20-4000 series combines field data acquisition, equipment monitoring and control in a compact RTU. The 4DO + 4DI + 4AI reference configuration connects digital equipment states, external analogue measurements and compatible control circuits. Edge processing, local, remote and condition-based control, and remote configuration and firmware upgrades support the installation throughout its operating life. View uploaded monitoring data online in Hitelecom Cloud and receive alerts when configured thresholds are exceeded.",
+  "reviewNotice": "Reference configuration: 4 digital outputs, 4 digital inputs and 4 analogue inputs. Select electrical signal types, load interfaces, communication settings and installation requirements for the ordered version.",
+  "interfaceCards": [
+    {
+      "type": "DO",
+      "count": 4,
+      "title": "Digital outputs",
+      "text": "Issue defined control commands through four digital outputs in the reference configuration. Select the output electrical type and connect each point to a compatible equipment control circuit.",
+      "examples": [
+        "Equipment enable requests",
+        "Valve actuator command interfaces",
+        "Auxiliary indication circuits"
+      ]
+    },
+    {
+      "type": "DI",
+      "count": 4,
+      "title": "Digital inputs",
+      "text": "Acquire four equipment-state signals in the reference configuration. Define the electrical compatibility, normal state and operating meaning of each digital input.",
+      "examples": [
+        "Running and fault indications",
+        "Valve end-position feedback",
+        "Level, door or maintenance switches"
+      ]
+    },
+    {
+      "type": "AI",
+      "count": 4,
+      "title": "Analogue inputs",
+      "text": "Acquire four analogue measurement signals in the reference configuration. Match each external transmitter to the supplied input range, engineering units and scaling.",
+      "examples": [
+        "Pressure and level transmitters",
+        "Temperature transducer outputs",
+        "Other compatible analogue instruments"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Digital and analogue I/O together",
+      "text": "The 4DO + 4DI + 4AI reference configuration combines four control outputs, four equipment-state inputs and four analogue measurement inputs. Build the point allocation around the actual instrument and equipment signal list."
+    },
+    {
+      "title": "Edge processing at the equipment",
+      "text": "Process field information close to its source for equipment monitoring and condition-based actions. The project configuration defines the signal interpretation, control conditions and permitted responses."
+    },
+    {
+      "title": "Local, remote and condition-based control",
+      "text": "Use the operating mode that fits the task: local operation, remote supervision or an action linked to a configured condition. Define priorities and equipment feedback for the selected control arrangement."
+    },
+    {
+      "title": "Master/slave operating modes",
+      "text": "Support project-defined device coordination with master/slave working modes. The selected interface, communication protocol and device roles form part of the integration configuration."
+    },
+    {
+      "title": "Online monitoring and threshold alerts",
+      "text": "Use Hitelecom Cloud to view uploaded monitoring data online and receive alerts when configured thresholds are exceeded. Map equipment states, measurement units and alert recipients to the operating workflow."
+    },
+    {
+      "title": "Remote configuration and upgrades",
+      "text": "Adjust supported settings and upgrade device firmware remotely. Plan maintenance around the installed configuration, software version and the site’s operating procedure."
+    },
+    {
+      "title": "Hardware and software watchdogs",
+      "text": "Dual watchdog mechanisms support recovery from defined software or system faults. Recovery behaviour and output states are part of the device configuration and commissioning checks."
+    },
+    {
+      "title": "Compact integration for field equipment",
+      "text": "Bring monitoring and control into equipment rooms, service cabinets and distributed installations with a compact controller design. Select the power, enclosure and wiring arrangement for the site."
+    }
+  ],
+  "workflow": [
+    {
+      "title": "Acquire the field signals",
+      "text": "Connect equipment-state signals and compatible analogue transmitter outputs. Give each point an asset identity, signal definition, engineering range and normal state."
+    },
+    {
+      "title": "Apply the operating logic",
+      "text": "Select local, remote or condition-based operation for each permitted action. Specify the initiating condition, command priority and equipment response required by the project."
+    },
+    {
+      "title": "Issue the permitted action",
+      "text": "Send defined digital commands through electrically compatible control interfaces. The host equipment retains its sequencing, interlocks and independent protection functions."
+    },
+    {
+      "title": "Observe and verify the result",
+      "text": "Check available equipment feedback independently of the output command. View uploaded states and measurements in Hitelecom Cloud and verify configured threshold alerts during commissioning."
+    }
+  ],
+  "applicationsIntro": "Eight application areas, with five engineering tasks in each, show how the controller can connect monitoring points and permitted control actions. These 40 tasks are selection examples, not 40 simultaneous channels or a claim that every task is fitted in one device. Allocate the selected signals against the 4DI / 4AI / 4DO reference configuration; larger point lists may require another configuration or additional controllers. External instruments, communication interfaces and load-control equipment are selected for the project.",
+  "groups": [
+    {
+      "id": "vending",
+      "title": "Vending & Self-Service Equipment",
+      "intro": "Connect selected machine states, external measurements and auxiliary control circuits for service visibility across unattended retail equipment. Define the interface with the machine supplier; dispensing sequences, payment and transaction processing remain with their dedicated systems.",
+      "imageKey": "vending",
+      "imageAlt": "Unbranded vending machines in an indoor self-service area",
+      "tasks": [
+        {
+          "title": "Machine availability and service faults",
+          "text": "Read available ready, running or fault signals to distinguish a machine that is available for service from one requiring inspection.",
+          "interface": "Allocate compatible DI points to the selected machine-state outputs.",
+          "control": "Use a DO only for an auxiliary command expressly supported by the machine’s external interface.",
+          "verification": "Check every state against the machine display and source signal; connectivity alone does not establish machine availability.",
+          "imageKey": "vending",
+          "imageAlt": "Unbranded vending machines in an indoor self-service area"
+        },
+        {
+          "title": "Refrigerated compartment conditions",
+          "text": "Collect external temperature-transmitter signals from selected compartments to support cold-storage condition monitoring.",
+          "interface": "Allocate AI points to compatible conditioned temperature signals and define each compartment’s range.",
+          "control": "Configure threshold alerts; any supervisory enable request must use the refrigeration unit’s approved interface.",
+          "verification": "Compare readings with the source instruments and verify the complete alert workflow; refrigeration protection remains with the unit.",
+          "imageKey": "scene-vending-02",
+          "imageAlt": "Refrigerated vending compartment with an external temperature probe"
+        },
+        {
+          "title": "Service-door and access events",
+          "text": "Identify service-door openings and maintenance-mode states under the correct machine asset.",
+          "interface": "Use compatible DI signals from the selected door switches or service-state contacts.",
+          "control": "Assign an auxiliary service indication where the machine interface permits it.",
+          "verification": "Check normal-state logic and planned maintenance events; an access event does not by itself identify or authorize a person.",
+          "imageKey": "scene-vending-03",
+          "imageAlt": "Vending-machine service door and contact switch"
+        },
+        {
+          "title": "Condensate and leakage supervision",
+          "text": "Combine a selected leakage event with available drainage-equipment feedback to support service response inside a vending installation.",
+          "interface": "Allocate DI points to the compatible leakage contact and required drain-unit status signals.",
+          "control": "Connect a permitted drainage or auxiliary indication request through the documented control circuit.",
+          "verification": "Test the physical leakage indication, local drainage operation and reported equipment state.",
+          "imageKey": "scene-vending-04",
+          "imageAlt": "Condensate tray and drain tubing in a vending-machine service bay"
+        },
+        {
+          "title": "Auxiliary lighting and service indication",
+          "text": "Add defined local or remote requests for machine lighting or a service-status indicator through compatible auxiliary circuits.",
+          "interface": "Allocate DO points and available DI feedback for the selected auxiliary function.",
+          "control": "Use the agreed local, remote or condition-based operating priority.",
+          "verification": "Verify the actual lamp or indicator response and local override; keep the vending and payment controller’s functions separate.",
+          "imageKey": "scene-vending-05",
+          "imageAlt": "Illuminated vending display and separate service indicator"
+        }
+      ]
+    },
+    {
+      "id": "shelving",
+      "title": "Smart Shelving & Retail Fixtures",
+      "intro": "Bring selected shelf-equipment states and external measurements into retail operations monitoring. Interface selection is project-specific; this does not imply native compatibility with electronic price-label networks or inventory software.",
+      "imageKey": "retail-shelves",
+      "imageAlt": "Retail shelving and store fixtures in an unbranded shop interior",
+      "tasks": [
+        {
+          "title": "Shelf-controller service states",
+          "text": "Monitor compatible ready and fault outputs from an electronic shelf controller or powered retail fixture.",
+          "interface": "Allocate DI points to documented equipment-state signals.",
+          "control": "Use an auxiliary service request only where the host controller provides an approved external command interface.",
+          "verification": "Check each state against the host system and its interface documentation; price data and label updates use the dedicated shelf system.",
+          "imageKey": "retail-shelves",
+          "imageAlt": "Retail shelving and store fixtures in an unbranded shop interior"
+        },
+        {
+          "title": "Shelf-zone environmental measurements",
+          "text": "Associate selected external temperature or humidity measurements with a defined shelf zone or retail display area.",
+          "interface": "Use compatible analogue transmitter outputs within the selected AI allocation.",
+          "control": "Configure monitoring limits and the associated notification workflow.",
+          "verification": "Verify units, scaling and sensor placement; the measured zone must represent the goods or area being supervised.",
+          "imageKey": "scene-shelving-02",
+          "imageAlt": "Temperature and humidity probe beside a retail shelf zone"
+        },
+        {
+          "title": "Fixture power-supply alarms",
+          "text": "Identify selected alarm states from a shelf rail or retail fixture’s external power supply.",
+          "interface": "Connect compatible power-supply alarm contacts to DI points.",
+          "control": "Operate an approved auxiliary indicator if the service procedure requires one.",
+          "verification": "Test the source alarm and distinguish supply failure from controller power loss or communication loss.",
+          "imageKey": "scene-shelving-03",
+          "imageAlt": "Low-voltage power supply in a retail-fixture service compartment"
+        },
+        {
+          "title": "Display-cabinet service access",
+          "text": "Bring selected cabinet-door and maintenance contacts into a store’s equipment monitoring view.",
+          "interface": "Allocate DI points to compatible service-door or maintenance-mode signals.",
+          "control": "Provide a suitable local service indication through an agreed auxiliary circuit.",
+          "verification": "Confirm the cabinet identity, normal states and event meanings with store operations.",
+          "imageKey": "scene-shelving-04",
+          "imageAlt": "Retail display-cabinet service door and latch contact"
+        },
+        {
+          "title": "Retail-fixture auxiliary enable",
+          "text": "Supervise an allowed enable request for a selected fixture accessory, such as display lighting or a ventilation unit.",
+          "interface": "Use compatible DO command circuits and available DI operating feedback.",
+          "control": "Define local priority and the permitted action independently of the shelf-label or inventory system.",
+          "verification": "Test command, actual response and local override; output activation alone is not proof that the accessory is operating.",
+          "imageKey": "scene-shelving-05",
+          "imageAlt": "Retail display lighting and a ventilation accessory"
+        }
+      ]
+    },
+    {
+      "id": "plc-controls",
+      "title": "PLC & Existing Control Systems",
+      "intro": "Connect the RTU to documented auxiliary signals from an existing PLC-controlled system. The PLC retains its process sequence, interlocks and safety functions; selected physical interfaces and protocols must be established for each integration.",
+      "imageKey": "plc-cabinet",
+      "imageAlt": "Industrial control cabinet with PLC equipment and labelled terminal wiring",
+      "tasks": [
+        {
+          "title": "PLC run and summary-fault visibility",
+          "text": "Publish selected PLC running and summary-fault states for remote operations and maintenance review.",
+          "interface": "Allocate DI channels to compatible auxiliary state outputs made available by the PLC system.",
+          "control": "Keep any permitted supervisory request separate from the PLC’s core sequence and protections.",
+          "verification": "Validate state meanings and source wiring with the control-system documentation.",
+          "imageKey": "plc-cabinet",
+          "imageAlt": "Industrial control cabinet with PLC equipment and labelled terminal wiring"
+        },
+        {
+          "title": "Selected sequence-state acquisition",
+          "text": "Read a small set of discrete process or sequence states so remote operators can interpret where the equipment is in its operating cycle.",
+          "interface": "Allocate up to four reference DI points to the chosen state signals.",
+          "control": "Use acquired states for monitoring and only the agreed supervisory conditions.",
+          "verification": "Check that the selected states are distinct and remain meaningful during start-up, maintenance and abnormal operation.",
+          "imageKey": "scene-plc-controls-02",
+          "imageAlt": "Conveyor equipment with discrete process-state sensors"
+        },
+        {
+          "title": "External measurement monitoring",
+          "text": "Read compatible analogue transmitter signals associated with a PLC-controlled process for a separate remote monitoring view.",
+          "interface": "Allocate up to four reference AI points to the selected instruments; establish signal conditioning and loading compatibility.",
+          "control": "Use measurement limits for notifications or permitted supervisory conditions.",
+          "verification": "Compare displayed values with their source instruments; agree any shared-signal wiring design before connection.",
+          "imageKey": "scene-plc-controls-03",
+          "imageAlt": "Pressure and temperature instruments on a PLC-controlled process skid"
+        },
+        {
+          "title": "Supervisory enable requests",
+          "text": "Provide a defined external request to an existing PLC input when the control design permits supervisory enable or inhibit commands.",
+          "interface": "Connect compatible DO points to the PLC system’s approved command-input circuit and allocate available status feedback.",
+          "control": "The PLC evaluates the request against its own operating conditions and priorities.",
+          "verification": "Test accepted, rejected and cancelled requests; receipt of a command is separate from the resulting equipment state.",
+          "imageKey": "scene-plc-controls-04",
+          "imageAlt": "Machine operator panel with auxiliary control buttons"
+        },
+        {
+          "title": "Auxiliary acknowledgement and service requests",
+          "text": "Provide an agreed acknowledgement or maintenance request through a documented external PLC interface.",
+          "interface": "Allocate compatible DO command points and the required DI acknowledgement or service feedback.",
+          "control": "Limit the function to the approved auxiliary action; protection resets and emergency controls follow the host system design.",
+          "verification": "Verify command duration, state transition and actual acknowledgement with the control engineer.",
+          "imageKey": "scene-plc-controls-05",
+          "imageAlt": "Auxiliary service-request and acknowledgement controls on a cabinet"
+        }
+      ]
+    },
+    {
+      "id": "environmental-monitoring",
+      "title": "Environmental Monitoring Facilities",
+      "intro": "Connect compatible external instruments and auxiliary facility signals for environmental operations. The selected probes and transmitters define the measured substances, ranges and performance; the RTU acquires their available signals.",
+      "imageKey": "environment",
+      "imageAlt": "Environmental treatment facility with process instruments and pipework",
+      "tasks": [
+        {
+          "title": "Air-quality transmitter acquisition",
+          "text": "Bring selected gas or air-quality transmitter outputs into a location-based monitoring view.",
+          "interface": "Allocate compatible AI points to the chosen instrument outputs and engineering units.",
+          "control": "Use configured concentration or condition limits for notifications and any agreed auxiliary request.",
+          "verification": "Confirm the instrument’s target variable, range and installation suitability; the controller itself is not a gas detector.",
+          "imageKey": "environment",
+          "imageAlt": "Environmental treatment facility with process instruments and pipework"
+        },
+        {
+          "title": "Water-quality measurement points",
+          "text": "Collect selected conditioned outputs from external water-quality instruments for treatment or discharge supervision.",
+          "interface": "Match each AI channel to the instrument’s supported output and scaling.",
+          "control": "Use configured limits for operator attention or a permitted supervisory function.",
+          "verification": "Check readings against the source instrument and its maintenance procedure; a measured value does not establish regulatory compliance.",
+          "imageKey": "scene-environmental-monitoring-02",
+          "imageAlt": "Water-quality instrument sampling rack and flow cells"
+        },
+        {
+          "title": "Treatment-unit running and fault states",
+          "text": "Identify whether a selected treatment skid or auxiliary unit reports running, stopped or faulted.",
+          "interface": "Allocate DI points to compatible unit-status signals.",
+          "control": "Use an allowed supervisory enable request through the treatment unit’s own controller.",
+          "verification": "Compare the reported states with the source equipment and retain its process protections.",
+          "imageKey": "scene-environmental-monitoring-03",
+          "imageAlt": "Treatment skid with pump and local operating indications"
+        },
+        {
+          "title": "Filter and extraction-system condition points",
+          "text": "Monitor a selected differential-pressure measurement or filter switch alongside available extraction-unit feedback.",
+          "interface": "Use compatible AI or DI signals from the chosen pressure instrument and unit-state contacts.",
+          "control": "Configure maintenance notifications or an agreed auxiliary indication.",
+          "verification": "Verify the measurement or switch setting; differential pressure alone is not a verified airflow or removal-efficiency measurement.",
+          "imageKey": "scene-environmental-monitoring-04",
+          "imageAlt": "Filter housing and extraction duct with pressure sensing points"
+        },
+        {
+          "title": "Sampling and auxiliary pump supervision",
+          "text": "Connect operating feedback and permitted requests for an external sampling pump or instrument accessory.",
+          "interface": "Allocate compatible DO command points and DI running or fault feedback.",
+          "control": "Follow the instrument package’s allowed sequence and local priority.",
+          "verification": "Test actual sample-path or equipment feedback where provided; a command alone does not confirm that a representative sample was collected.",
+          "imageKey": "scene-environmental-monitoring-05",
+          "imageAlt": "External sampling pump and instrument tubing"
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Agriculture & Irrigation",
+      "intro": "Connect selected environmental transmitters, irrigation equipment states and permitted auxiliary commands. Water delivery and crop-management decisions depend on the selected instruments and the site’s agronomic and hydraulic design.",
+      "imageKey": "agriculture",
+      "imageAlt": "Greenhouse irrigation and fertigation equipment",
+      "tasks": [
+        {
+          "title": "Greenhouse condition monitoring",
+          "text": "Collect external temperature and humidity signals at selected greenhouse zones for operating visibility.",
+          "interface": "Allocate compatible AI points to the required conditioned transmitter outputs.",
+          "control": "Configure limits and permitted auxiliary ventilation requests within the greenhouse control design.",
+          "verification": "Verify sensor placement and readings against the source instruments; keep equipment protection and local control priorities intact.",
+          "imageKey": "agriculture",
+          "imageAlt": "Greenhouse irrigation and fertigation equipment"
+        },
+        {
+          "title": "Irrigation valve requests and feedback",
+          "text": "Keep a requested irrigation-valve action separate from the available valve-position or line-state feedback.",
+          "interface": "Allocate compatible DO command circuits and DI feedback points for the selected valves.",
+          "control": "Use local, remote or condition-based requests under the approved irrigation sequence.",
+          "verification": "Verify local override and physical response; output activation alone does not confirm valve travel or water delivery.",
+          "imageKey": "scene-agriculture-02",
+          "imageAlt": "Motorized irrigation valve and distribution manifold"
+        },
+        {
+          "title": "Irrigation pressure supervision",
+          "text": "Monitor selected compatible pressure-transmitter signals around an irrigation supply or distribution point.",
+          "interface": "Use AI points with engineering ranges matched to the external pressure instruments.",
+          "control": "Configure pressure notifications or a permitted pump supervisory request.",
+          "verification": "Compare readings with the source instruments and confirm actual pump feedback; pressure monitoring does not replace hydraulic protection.",
+          "imageKey": "scene-agriculture-03",
+          "imageAlt": "Pressure instruments at an irrigation distribution header"
+        },
+        {
+          "title": "Water-storage level and pump states",
+          "text": "Combine an external storage-level measurement with selected pump running or fault signals.",
+          "interface": "Allocate a compatible AI level signal and the required DI equipment-state points.",
+          "control": "Use an agreed pump or valve request within the local water-management design.",
+          "verification": "Test level scaling, state feedback and recovery behaviour; independent overflow and dry-run protection remain with the appropriate equipment.",
+          "imageKey": "scene-agriculture-04",
+          "imageAlt": "Farm water-storage tank and adjacent transfer pump"
+        },
+        {
+          "title": "Fertigation package operating points",
+          "text": "Acquire selected conditioned measurement outputs or service-state contacts from an external dosing or fertigation package.",
+          "interface": "Match available AI and DI points to the package signal schedule.",
+          "control": "Limit any command to a documented supervisory interface supported by the package.",
+          "verification": "Verify units, equipment feedback and permitted command scope with the package supplier; the RTU does not establish a dosing recipe.",
+          "imageKey": "scene-agriculture-05",
+          "imageAlt": "Fertigation dosing package in a greenhouse service area"
+        }
+      ]
+    },
+    {
+      "id": "remote-stations",
+      "title": "Unattended & Remote Stations",
+      "intro": "Bring cabinet events, external measurements and auxiliary operating requests into the maintenance workflow for distributed sites. Select power, communication and protective installation arrangements against the actual site conditions.",
+      "imageKey": "remote-station",
+      "imageAlt": "Remote telecommunications equipment site",
+      "tasks": [
+        {
+          "title": "Cabinet access and service state",
+          "text": "Associate selected door-open and maintenance-mode events with the correct remote cabinet or station.",
+          "interface": "Allocate DI points to compatible access and service-state contacts.",
+          "control": "Use a suitable auxiliary indication circuit where required by the station procedure.",
+          "verification": "Test normal-state wiring and site identity; access authorization remains a separate function.",
+          "imageKey": "remote-station",
+          "imageAlt": "Remote telecommunications equipment site"
+        },
+        {
+          "title": "Station power-system alarms",
+          "text": "Read selected external power-supply or backup-system alarm contacts for remote service response.",
+          "interface": "Allocate compatible DI points to the documented alarm outputs.",
+          "control": "Limit auxiliary control to functions permitted by the external power equipment.",
+          "verification": "Test source alarms, controller power loss and lost communication as separate conditions.",
+          "imageKey": "scene-remote-stations-02",
+          "imageAlt": "Backup power equipment and alarm contacts at a remote station"
+        },
+        {
+          "title": "Cabinet ventilation supervision",
+          "text": "Combine a compatible external temperature measurement with fan running or fault feedback.",
+          "interface": "Use AI for the conditioned temperature signal and DI for the selected equipment states.",
+          "control": "Connect a permitted fan-enable request through its approved control circuit.",
+          "verification": "Check physical fan operation, local priority and the agreed response after restart.",
+          "imageKey": "scene-remote-stations-03",
+          "imageAlt": "Ventilation fan and environmental probe in a field cabinet"
+        },
+        {
+          "title": "Conditioned battery or utility measurements",
+          "text": "Read selected analogue outputs from external battery-monitoring or station utility transducers.",
+          "interface": "Match AI channels to the external instrument’s isolated or conditioned output specification.",
+          "control": "Use configured measurement limits for online notifications.",
+          "verification": "Compare scaling with the source instrument; do not connect an unverified battery or power circuit directly to an AI terminal.",
+          "imageKey": "scene-remote-stations-04",
+          "imageAlt": "External battery-monitoring transducer near a station battery bank"
+        },
+        {
+          "title": "Site leakage and auxiliary equipment states",
+          "text": "Bring a leakage contact and selected station auxiliary states into the same site monitoring view.",
+          "interface": "Allocate compatible DI signals and any required conditioned AI measurement within the reference point budget.",
+          "control": "Use notifications or an approved auxiliary request under the station operating procedure.",
+          "verification": "Verify the source event, actual equipment response and the agreed communication-loss behaviour.",
+          "imageKey": "scene-remote-stations-05",
+          "imageAlt": "Leakage sensing area on a remote equipment-room floor"
+        }
+      ]
+    },
+    {
+      "id": "industrial-equipment",
+      "title": "Industrial Equipment & Auxiliary Packages",
+      "intro": "Connect selected machine and package signals for operating visibility and permitted supervisory control. The host equipment retains its process control, interlocks and independent protective functions.",
+      "imageKey": "industrial-equipment",
+      "imageAlt": "Industrial machine and auxiliary equipment on a manufacturing floor",
+      "tasks": [
+        {
+          "title": "Machine run and fault monitoring",
+          "text": "Make selected auxiliary machine states available for production support and service assessment.",
+          "interface": "Allocate compatible DI points to the documented running, ready or fault signals.",
+          "control": "Use an output only for a machine function expressly intended for external supervision.",
+          "verification": "Validate state meanings with the machine supplier and compare reported states with the actual equipment.",
+          "imageKey": "industrial-equipment",
+          "imageAlt": "Industrial machine and auxiliary equipment on a manufacturing floor"
+        },
+        {
+          "title": "Compressor package supervision",
+          "text": "Associate selected running, loading or trip indications with the correct compressor asset.",
+          "interface": "Allocate DI points to the available compatible package-state signals.",
+          "control": "Provide a permitted enable request through the package’s approved external control circuit.",
+          "verification": "Check actual running feedback, local mode and the supplier’s restart and trip-reset policy.",
+          "imageKey": "scene-industrial-equipment-02",
+          "imageAlt": "Industrial compressor package and local operating indicators"
+        },
+        {
+          "title": "Cooling and circulation auxiliaries",
+          "text": "Connect compatible temperature or pressure measurements with available pump or fan status signals for a cooling package.",
+          "interface": "Allocate the required AI measurements and DI feedback within the reference I/O budget.",
+          "control": "Use defined conditions for notifications or a permitted supervisory enable request.",
+          "verification": "Verify measured values and physical equipment feedback; retain the package’s independent process protections.",
+          "imageKey": "scene-industrial-equipment-03",
+          "imageAlt": "Cooling circulation pump and heat-exchanger pipework"
+        },
+        {
+          "title": "Actuator command and position feedback",
+          "text": "Monitor the relationship between an approved actuator command and its available end-position signals.",
+          "interface": "Use compatible DO command interfaces and DI position contacts for the selected actuator.",
+          "control": "Apply the permitted movement sequence and local override priority.",
+          "verification": "Test full travel and the available position feedback; the output state alone does not confirm actuator position.",
+          "imageKey": "scene-industrial-equipment-04",
+          "imageAlt": "Industrial valve actuator with end-position switch housing"
+        },
+        {
+          "title": "Maintenance-required and service indication",
+          "text": "Identify selected maintenance or service-mode signals so operators can interpret equipment events during planned work.",
+          "interface": "Allocate compatible DI points and an approved auxiliary indication output if needed.",
+          "control": "Keep service indication separate from machine sequencing and protection reset functions.",
+          "verification": "Test normal operation, active fault and planned maintenance states using the agreed service procedure.",
+          "imageKey": "scene-industrial-equipment-05",
+          "imageAlt": "Machine maintenance indicator and service-access panel"
+        }
+      ]
+    },
+    {
+      "id": "transport-infrastructure",
+      "title": "Transport & Roadside Facilities",
+      "intro": "Monitor selected roadside and transport-facility support equipment through documented auxiliary interfaces. Traffic-signal phases, railway interlocking, emergency controls and other safety functions remain with their dedicated systems.",
+      "imageKey": "transport",
+      "imageAlt": "Roadside infrastructure cabinet at a transport facility",
+      "tasks": [
+        {
+          "title": "Roadside cabinet access and faults",
+          "text": "Identify compatible cabinet-door and equipment-fault signals at a defined roadside asset.",
+          "interface": "Allocate DI points to the selected access and auxiliary fault contacts.",
+          "control": "Use an approved local service indicator where the maintenance procedure requires one.",
+          "verification": "Verify physical source events and asset identity; an IoT notification is not a safety-system response.",
+          "imageKey": "transport",
+          "imageAlt": "Roadside infrastructure cabinet at a transport facility"
+        },
+        {
+          "title": "Cabinet thermal and ventilation conditions",
+          "text": "Connect external temperature measurements with available ventilation-unit feedback for a roadside equipment cabinet.",
+          "interface": "Use compatible AI transmitter outputs and DI fan-state signals.",
+          "control": "Provide a permitted auxiliary ventilation request through the documented control interface.",
+          "verification": "Verify actual fan response and local priority, and select the protective installation against the site exposure.",
+          "imageKey": "scene-transport-infrastructure-02",
+          "imageAlt": "Roadside equipment-cabinet ventilation fan and temperature probe"
+        },
+        {
+          "title": "External weather-instrument signals",
+          "text": "Acquire selected conditioned outputs from site weather instruments for transport-facility operating awareness.",
+          "interface": "Match AI channels to the chosen instruments, units and working ranges.",
+          "control": "Configure monitoring limits and the associated notification workflow.",
+          "verification": "Validate source readings and placement; observation signals do not constitute a weather forecast or an automatic road-closure decision.",
+          "imageKey": "scene-transport-infrastructure-03",
+          "imageAlt": "External weather instruments beside a transport facility"
+        },
+        {
+          "title": "Drainage support-equipment supervision",
+          "text": "Combine selected level or leakage events with drainage-pump running and fault indications at a transport facility.",
+          "interface": "Allocate compatible AI or DI instruments and the required DI pump feedback.",
+          "control": "Use an agreed supervisory request through the pump-control system.",
+          "verification": "Check actual level and pump feedback; flood protection and local pump safeguards remain with the appropriate systems.",
+          "imageKey": "scene-transport-infrastructure-04",
+          "imageAlt": "Transport-facility drainage sump and pump installation"
+        },
+        {
+          "title": "Transport-facility auxiliary enable",
+          "text": "Provide a defined local or remote request for a supported non-safety auxiliary, such as service lighting or an equipment-cabinet accessory.",
+          "interface": "Use compatible DO command circuits and available DI operating feedback.",
+          "control": "Limit the action to the documented auxiliary scope and local operating priority.",
+          "verification": "Test the command and physical result; do not use the RTU to replace traffic-control, emergency-stop or railway safety functions.",
+          "imageKey": "scene-transport-infrastructure-05",
+          "imageAlt": "Service lighting at a transport maintenance facility"
+        }
+      ]
+    }
+  ],
+  "platformTitle": "Your field equipment.\nVisible in Hitelecom Cloud.",
+  "platformIntro": "View uploaded monitoring data online, follow equipment states and receive alerts when configured thresholds are exceeded. Connect the controller’s digital and analogue points to meaningful asset names, units and operating conditions. Customer-platform integration can be scoped around the selected device interface and data exchange requirements.",
+  "platformBullets": [
+    "Online data: bring equipment states and external measurement values into the selected monitoring view, with units and update behaviour defined for each point.",
+    "Threshold alerts: set the relevant monitoring limits and notification workflow. Verify the alert condition, recipient and delivery during commissioning.",
+    "Control and integration: agree the permitted remote actions, feedback points and local priorities. Define the protocol and data mapping separately for a customer-platform project."
+  ],
+  "specsIntro": "The HD20-4000 series supports project-selected I/O arrangements. The reference configuration below is 4DO + 4DI + 4AI. The product image shows a unit labelled HD20-4021GD; the final ordering code, fitted interfaces and electrical limits follow the agreed configuration-specific specification.",
+  "specGroups": [
+    {
+      "title": "Series & Field I/O",
+      "rows": [
+        [
+          "Product family",
+          "HD20-4000 Series IoT Controller / RTU"
+        ],
+        [
+          "Illustrated model",
+          "HD20-4021GD; 4G-labelled device"
+        ],
+        [
+          "Reference I/O configuration",
+          "4 digital outputs + 4 digital inputs + 4 analogue inputs"
+        ],
+        [
+          "Digital inputs",
+          "4 channels in the reference configuration. Request the input electrical type, thresholds and wiring specification."
+        ],
+        [
+          "Digital outputs",
+          "4 channels in the reference configuration. Request the output type, permitted load and switching-interface specification."
+        ],
+        [
+          "Analogue inputs",
+          "4 channels in the reference configuration. Request the supported signal range, accuracy conditions and scaling specification."
+        ]
+      ]
+    },
+    {
+      "title": "Processing & Control",
+      "rows": [
+        [
+          "Edge processing",
+          "Supported; application logic and signal interpretation follow the selected configuration."
+        ],
+        [
+          "Control modes",
+          "Local / remote / condition-based"
+        ],
+        [
+          "Operating roles",
+          "Master/slave working modes; interface, protocol and role selection are defined for the project."
+        ],
+        [
+          "Watchdogs",
+          "Software and hardware watchdog mechanisms"
+        ],
+        [
+          "Sampling, reporting and response",
+          "Define input sampling, data reporting, event processing and control-response requirements separately."
+        ],
+        [
+          "Start-up and lost-link behaviour",
+          "Specify output states, permitted local actions and recovery behaviour for the delivered configuration."
+        ]
+      ]
+    },
+    {
+      "title": "Connectivity & Platform",
+      "rows": [
+        [
+          "Cellular variant shown",
+          "4G; select the regional module, bands, SIM service and antenna arrangement for the installation."
+        ],
+        [
+          "Hitelecom Cloud",
+          "Online viewing of uploaded monitoring data and alerts above configured thresholds."
+        ],
+        [
+          "Customer platform",
+          "Project-specific integration; agree the supported device interface, protocol and data mapping."
+        ],
+        [
+          "Remote configuration",
+          "Supported for the applicable device settings."
+        ],
+        [
+          "Remote firmware upgrade",
+          "Supported; use the approved firmware and maintenance procedure for the supplied configuration."
+        ]
+      ]
+    },
+    {
+      "title": "Power & Installation",
+      "rows": [
+        [
+          "Power supply",
+          "Request the rated input range, polarity, peak/typical consumption and wiring requirements."
+        ],
+        [
+          "Form and installation",
+          "Compact enclosure; select mounting, cable routing and service clearance for the installation."
+        ],
+        [
+          "Dimensions and mass",
+          "Refer to the configuration-specific mechanical drawing and product specification."
+        ],
+        [
+          "External equipment interfaces",
+          "Match the controller I/O electrical specification to each instrument, actuator or load-control circuit."
+        ]
+      ]
+    },
+    {
+      "title": "Environment & Documentation",
+      "rows": [
+        [
+          "Installation environment",
+          "Select the device and any protective cabinet against the site temperature, humidity and exposure conditions."
+        ],
+        [
+          "Ingress protection",
+          "Request the rating and installation conditions for the supplied device configuration."
+        ],
+        [
+          "Commissioning information",
+          "Signal schedule, control permissions, equipment feedback, remote settings and recovery checks."
+        ],
+        [
+          "Conformity documentation",
+          "Request model- and destination-specific declarations or test documentation for the ordered version."
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the HD20-4000 series designed to do?",
+      "a": "It combines field data acquisition, equipment monitoring and control in an IoT RTU. Digital inputs capture equipment states, analogue inputs receive compatible transmitter signals, and digital outputs connect to permitted control circuits. Edge processing, cloud monitoring and remote maintenance support the operating workflow."
+    },
+    {
+      "q": "What I/O configuration is available?",
+      "a": "The reference arrangement is 4DO + 4DI + 4AI: four digital outputs, four digital inputs and four analogue inputs. The series supports project-selected I/O arrangements. Confirm the channel allocation and obtain the electrical specification for the ordered version. The 40 application tasks are selection examples, not 40 simultaneous channels; a larger point list may need another configuration or additional controllers."
+    },
+    {
+      "q": "Which signals can the digital and analogue inputs accept?",
+      "a": "DI points acquire compatible digital equipment states; AI points acquire compatible analogue transmitter outputs. Match electrical logic, signal ranges, isolation and accuracy conditions to the selected version and external instrument. Provide the instrument output specification during selection. A DO, DI or AI label alone does not establish a relay topology, a voltage/current range or a communication protocol."
+    },
+    {
+      "q": "Which control modes are supported?",
+      "a": "The series supports local, remote and condition-based control. For each action, define the triggering condition, command priority, permitted operating scope and available feedback. Connect outputs through electrically compatible control interfaces. The host equipment retains its sequence, interlocks and independent protection functions."
+    },
+    {
+      "q": "What do master/slave operating modes mean for integration?",
+      "a": "These are working roles for project-defined device coordination. Identify which device initiates an exchange, which responds, and the data or commands involved. Select the actual interface, communication protocol and supported operations for the project. The master/slave description by itself does not establish a serial port type or a particular protocol."
+    },
+    {
+      "q": "Can I view monitoring data and receive alerts in Hitelecom Cloud?",
+      "a": "Yes. Hitelecom Cloud supports online viewing of uploaded monitoring data and alerts when configured thresholds are exceeded. Configure the measurement units, equipment-state meanings, limits and notification workflow for the connected points. Data availability and notification timing depend on the device reporting profile and network connection."
+    },
+    {
+      "q": "Can the controller be integrated with a customer platform?",
+      "a": "Customer-platform, PLC, machine and shelf-system integration is reviewed against the interfaces supported by the selected configuration. Agree the physical connection, protocol where applicable, point definitions, permitted commands and equipment-feedback mapping. Connection to an auxiliary signal does not establish native compatibility with a machine, electronic shelf-label network or payment system."
+    },
+    {
+      "q": "What is the purpose of the two watchdog mechanisms?",
+      "a": "The series uses hardware and software watchdog mechanisms to support recovery from defined faults. They are device-recovery features, not a guarantee of uninterrupted operation or a replacement for equipment protection. Commissioning should verify the applicable reset behaviour and the resulting output states."
+    },
+    {
+      "q": "Can settings and firmware be maintained remotely?",
+      "a": "The series supports remote configuration and remote firmware upgrades. Use the settings and firmware intended for the delivered hardware configuration, and plan maintenance around the site operating procedure. Verify the required settings and device operation after the change."
+    },
+    {
+      "q": "What happens when communication or power is interrupted?",
+      "a": "Local and condition-based control are supported operating modes, but lost-link operation, output fallback states and start-up recovery must be specified for the delivered configuration. A remote command path and an online monitoring view depend on connectivity. Test the agreed interruption and recovery behaviour at commissioning."
+    },
+    {
+      "q": "Can a digital output directly power a pump, fan or valve?",
+      "a": "Select the connection using the output electrical type, the permitted load and the equipment interface. A suitable starter, contactor, intermediate switching device or actuator control circuit may be required. Output activation alone does not prove that a motor is running or a valve has reached position; use available equipment feedback."
+    },
+    {
+      "q": "What information is needed to select an installation configuration?",
+      "a": "Provide the installation country, signal list, instrument output specifications, equipment-control interfaces, required local/remote priorities, power source and site conditions. Include the target platform and the expected behaviour during communication loss or restart. These details establish the I/O allocation, integration scope and any customization requirements."
+    }
+  ],
+  "enquiryIntro": "Share the instrument outputs, equipment-state points, permitted commands and feedback required at the site. We will review the 4DO + 4DI + 4AI reference allocation against the signal list, define local and remote priorities, and scope Hitelecom Cloud or customer-platform integration.",
+  "slug": "iot-controller-hd20-4000",
+  "kind": "Product",
+  "image": "hd20-4000-controller-original.png",
+  "imageWidth": 1280,
+  "imageHeight": 731,
+  "datasheet": "/downloads/hd20-4000-iot-controller-datasheet-en.pdf"
+}

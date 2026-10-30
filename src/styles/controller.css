@@ -33,3 +33,5 @@
 @media(max-width:1199px){.controller-detail #workflow .measurement-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.controller-detail #workflow .measurement-grid{grid-template-columns:minmax(0,1fr)}}
 .controller-detail .controller-interface-grid h3{overflow-wrap:anywhere;hyphens:auto}
+/* V136 HD20-4000：宽画布原图在显示框内裁掉多余透明边距（图像文件与产品比例不变） */
+.controller-detail.hd20-4000 .hero-visual img{object-fit:cover;object-position:58% 50%}

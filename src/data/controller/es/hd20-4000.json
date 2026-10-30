@@ -1,0 +1,725 @@
+{
+  "family": "HD20-4000 Series",
+  "model": "HD20-4000 Series",
+  "picturedModel": "HD20-4021GD",
+  "title": "Controlador IoT de la serie HD20-4000 | 4DO, 4DI y 4AI | Hitelecom",
+  "metaDescription": "Controlador IoT HD20-4000 con E/S de referencia 4DO + 4DI + 4AI, adquisición en el borde, control local, remoto y por condiciones, mecanismos watchdog y supervisión en Hitelecom Cloud.",
+  "heroHeading": "Controlador IoT.",
+  "heroValue": "Conecte las señales de campo.\nControle con contexto.",
+  "heroDescription": "La serie HD20-4000 de Hitelecom reúne la adquisición de datos de campo, la supervisión y el control de equipos en una RTU compacta. La configuración de referencia 4DO + 4DI + 4AI conecta estados digitales de los equipos, mediciones analógicas externas y circuitos de control compatibles. El procesamiento en el borde, el control local, remoto y por condiciones, junto con la configuración remota y las actualizaciones de firmware, facilitan la operación y el mantenimiento durante la vida útil de la instalación. Consulte los datos de supervisión enviados a Hitelecom Cloud y reciba alertas cuando se superen los umbrales configurados.",
+  "reviewNotice": "Configuración de referencia: 4 salidas digitales, 4 entradas digitales y 4 entradas analógicas. Seleccione los tipos de señal eléctrica, las interfaces de carga, los ajustes de comunicación y los requisitos de instalación para la versión solicitada.",
+  "interfaceCards": [
+    {
+      "type": "DO",
+      "count": 4,
+      "title": "Salidas digitales",
+      "text": "Envíe órdenes de control definidas mediante las cuatro salidas digitales de la configuración de referencia. Seleccione el tipo eléctrico de salida y conecte cada punto a un circuito de control de equipos compatible.",
+      "examples": [
+        "Solicitudes de habilitación de equipos",
+        "Interfaces de mando de actuadores de válvulas",
+        "Circuitos de señalización auxiliar"
+      ]
+    },
+    {
+      "type": "DI",
+      "count": 4,
+      "title": "Entradas digitales",
+      "text": "Adquiera cuatro señales de estado de equipos con la configuración de referencia. Defina la compatibilidad eléctrica, el estado normal y el significado operativo de cada entrada digital.",
+      "examples": [
+        "Indicaciones de marcha y fallo",
+        "Realimentación de posición final de válvulas",
+        "Interruptores de nivel, puerta o mantenimiento"
+      ]
+    },
+    {
+      "type": "AI",
+      "count": 4,
+      "title": "Entradas analógicas",
+      "text": "Adquiera cuatro señales de medición analógica con la configuración de referencia. Adapte cada transmisor externo al rango de entrada suministrado, las unidades de ingeniería y el escalado.",
+      "examples": [
+        "Transmisores de presión y nivel",
+        "Salidas de transductores de temperatura",
+        "Otros instrumentos analógicos compatibles"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "E/S digitales y analógicas en un solo equipo",
+      "text": "La configuración de referencia 4DO + 4DI + 4AI combina cuatro salidas de control, cuatro entradas de estado de equipos y cuatro entradas de medición analógica. Asigne los puntos según la lista real de señales de los instrumentos y equipos."
+    },
+    {
+      "title": "Procesamiento en el borde junto al equipo",
+      "text": "Procese la información de campo cerca de su origen para supervisar equipos y ejecutar acciones basadas en condiciones. La configuración del proyecto define la interpretación de las señales, las condiciones de control y las respuestas permitidas."
+    },
+    {
+      "title": "Control local, remoto y basado en condiciones",
+      "text": "Utilice el modo de funcionamiento que se ajuste a la tarea: operación local, supervisión remota o una acción vinculada a una condición configurada. Defina las prioridades y la realimentación del equipo para el esquema de control seleccionado."
+    },
+    {
+      "title": "Modos de funcionamiento maestro/esclavo",
+      "text": "Facilite la coordinación de dispositivos definida en el proyecto mediante modos de funcionamiento maestro/esclavo. La interfaz seleccionada, el protocolo de comunicación y las funciones de los dispositivos forman parte de la configuración de integración."
+    },
+    {
+      "title": "Supervisión en línea y alertas por umbral",
+      "text": "Utilice Hitelecom Cloud para consultar en línea los datos de supervisión cargados y recibir alertas cuando se superen los umbrales configurados. Asocie los estados de los equipos, las unidades de medición y los destinatarios de las alertas con el proceso operativo."
+    },
+    {
+      "title": "Configuración y actualizaciones remotas",
+      "text": "Modifique los ajustes compatibles y actualice el firmware del dispositivo de forma remota. Planifique el mantenimiento en función de la configuración instalada, la versión del software y el procedimiento operativo de la instalación."
+    },
+    {
+      "title": "Watchdogs de hardware y software",
+      "text": "Los dos mecanismos watchdog facilitan la recuperación ante determinados fallos de software o del sistema. El comportamiento de recuperación y los estados de las salidas forman parte de la configuración del dispositivo y de las comprobaciones de puesta en servicio."
+    },
+    {
+      "title": "Integración compacta para equipos de campo",
+      "text": "Incorpore la supervisión y el control a salas de equipos, armarios de servicio e instalaciones distribuidas con un controlador de diseño compacto. Seleccione la alimentación, la envolvente y la disposición del cableado según la instalación."
+    }
+  ],
+  "workflow": [
+    {
+      "title": "Adquiera las señales de campo",
+      "text": "Conecte señales de estado de equipos y salidas de transmisores analógicos compatibles. Asigne a cada punto un activo, una definición de señal, un rango de ingeniería y un estado normal."
+    },
+    {
+      "title": "Aplique la lógica de funcionamiento",
+      "text": "Seleccione la operación local, remota o por condiciones para cada acción permitida. Especifique la condición de inicio, la prioridad de la orden y la respuesta del equipo que requiere el proyecto."
+    },
+    {
+      "title": "Emita la acción permitida",
+      "text": "Envíe órdenes digitales definidas a través de interfaces de control eléctricamente compatibles. El equipo controlado conserva sus secuencias, enclavamientos y funciones de protección independientes."
+    },
+    {
+      "title": "Observe y verifique el resultado",
+      "text": "Compruebe la realimentación disponible del equipo de forma independiente de la orden de salida. Consulte los estados y las mediciones enviados a Hitelecom Cloud y verifique las alertas por umbral configuradas durante la puesta en servicio."
+    }
+  ],
+  "applicationsIntro": "Ocho áreas de aplicación, con cinco tareas de ingeniería en cada una, muestran cómo conectar puntos de supervisión y acciones de control permitidas. Estas 40 tareas son ejemplos de selección, no 40 canales simultáneos ni una afirmación de que todas las tareas se incorporen en un único dispositivo. Asigne las señales seleccionadas dentro de la configuración de referencia 4DI / 4AI / 4DO; las listas de señales más amplias pueden requerir otra configuración o controladores adicionales. Los instrumentos externos, las interfaces de comunicación y los equipos de control de cargas se seleccionan para cada proyecto.",
+  "groups": [
+    {
+      "id": "vending",
+      "title": "Máquinas expendedoras y equipos de autoservicio",
+      "intro": "Conecte estados seleccionados de las máquinas, mediciones externas y circuitos de control auxiliares para supervisar el servicio de equipos comerciales desatendidos. Defina la interfaz con el proveedor de la máquina; las secuencias de dispensación, el pago y el procesamiento de transacciones siguen a cargo de sus sistemas específicos.",
+      "imageKey": "vending",
+      "imageAlt": "Máquinas expendedoras sin marca en una zona interior de autoservicio",
+      "tasks": [
+        {
+          "title": "Disponibilidad de la máquina y fallos de servicio",
+          "text": "Lea las señales disponibles de preparado, funcionamiento o fallo para distinguir una máquina disponible para el servicio de otra que necesita inspección.",
+          "interface": "Asigne puntos DI compatibles a las salidas de estado de máquina seleccionadas.",
+          "control": "Utilice una DO únicamente para una orden auxiliar expresamente admitida por la interfaz externa de la máquina.",
+          "verification": "Contraste cada estado con la pantalla y la señal de origen de la máquina; la conectividad por sí sola no confirma su disponibilidad para el servicio.",
+          "imageKey": "vending",
+          "imageAlt": "Máquinas expendedoras sin marca en una zona interior de autoservicio"
+        },
+        {
+          "title": "Condiciones de los compartimentos refrigerados",
+          "text": "Recoja señales de transmisores externos de temperatura en los compartimentos seleccionados para supervisar las condiciones de conservación en frío.",
+          "interface": "Asigne puntos AI a señales de temperatura acondicionadas y compatibles, y defina el rango de cada compartimento.",
+          "control": "Configure alertas por umbral; cualquier solicitud de habilitación desde la supervisión debe utilizar la interfaz aprobada de la unidad frigorífica.",
+          "verification": "Compare las lecturas con los instrumentos de origen y verifique el flujo completo de alertas; la protección frigorífica sigue a cargo de la unidad.",
+          "imageKey": "scene-vending-02",
+          "imageAlt": "Compartimento refrigerado de una máquina expendedora con sonda de temperatura externa"
+        },
+        {
+          "title": "Eventos de puerta de servicio y acceso",
+          "text": "Asocie las aperturas de la puerta de servicio y los estados de mantenimiento al activo de máquina correspondiente.",
+          "interface": "Utilice señales DI compatibles de los interruptores de puerta o contactos de estado de servicio seleccionados.",
+          "control": "Asigne una indicación auxiliar de servicio cuando la interfaz de la máquina lo permita.",
+          "verification": "Compruebe la lógica del estado normal y los eventos de mantenimiento planificado; un evento de acceso no identifica ni autoriza por sí mismo a una persona.",
+          "imageKey": "scene-vending-03",
+          "imageAlt": "Puerta de servicio de una máquina expendedora con interruptor de contacto"
+        },
+        {
+          "title": "Supervisión de condensados y fugas",
+          "text": "Combine un evento de fuga seleccionado con la realimentación disponible del equipo de drenaje para facilitar la respuesta de mantenimiento en una instalación de venta automática.",
+          "interface": "Asigne puntos DI al contacto de fuga compatible y a las señales de estado necesarias de la unidad de drenaje.",
+          "control": "Conecte una solicitud permitida de drenaje o indicación auxiliar mediante el circuito de control documentado.",
+          "verification": "Pruebe la indicación física de fuga, el funcionamiento local del drenaje y el estado comunicado del equipo.",
+          "imageKey": "scene-vending-04",
+          "imageAlt": "Bandeja de condensados y tubo de desagüe en el compartimento de servicio de una máquina expendedora"
+        },
+        {
+          "title": "Iluminación auxiliar e indicación de servicio",
+          "text": "Incorpore solicitudes locales o remotas definidas para la iluminación de la máquina o un indicador de estado de servicio mediante circuitos auxiliares compatibles.",
+          "interface": "Asigne puntos DO y la realimentación DI disponible a la función auxiliar seleccionada.",
+          "control": "Utilice la prioridad acordada para la operación local, remota o por condiciones.",
+          "verification": "Verifique la respuesta real de la lámpara o el indicador y la anulación local; mantenga separadas las funciones de los controladores de venta y pago.",
+          "imageKey": "scene-vending-05",
+          "imageAlt": "Zona de exposición iluminada de una máquina expendedora e indicador de servicio independiente"
+        }
+      ]
+    },
+    {
+      "id": "shelving",
+      "title": "Estanterías inteligentes y equipamiento comercial",
+      "intro": "Integre estados seleccionados de equipos de estantería y mediciones externas en la supervisión de operaciones comerciales. La selección de interfaces depende de cada proyecto y no implica compatibilidad nativa con redes de etiquetas electrónicas de precios ni con software de inventario.",
+      "imageKey": "retail-shelves",
+      "imageAlt": "Estanterías y equipamiento comercial en el interior de una tienda sin marca identificable",
+      "tasks": [
+        {
+          "title": "Estados de servicio del controlador de estantería",
+          "text": "Supervise salidas compatibles de preparado y fallo de un controlador de estantería electrónica o un elemento comercial alimentado eléctricamente.",
+          "interface": "Asigne puntos DI a las señales de estado de equipo documentadas.",
+          "control": "Utilice una solicitud auxiliar de servicio únicamente cuando el controlador principal disponga de una interfaz externa de órdenes aprobada.",
+          "verification": "Contraste cada estado con el sistema principal y la documentación de su interfaz; los datos de precios y las actualizaciones de etiquetas utilizan el sistema específico de estanterías.",
+          "imageKey": "retail-shelves",
+          "imageAlt": "Estanterías y equipamiento comercial en el interior de una tienda sin marca identificable"
+        },
+        {
+          "title": "Mediciones ambientales por zona de estantería",
+          "text": "Asocie mediciones externas seleccionadas de temperatura o humedad a una zona de estantería o área de exposición comercial definida.",
+          "interface": "Utilice salidas de transmisores analógicos compatibles dentro de la asignación AI seleccionada.",
+          "control": "Configure los límites de supervisión y el flujo de notificación asociado.",
+          "verification": "Verifique las unidades, el escalado y la ubicación de los sensores; la zona medida debe representar los productos o el área supervisada.",
+          "imageKey": "scene-shelving-02",
+          "imageAlt": "Sonda de temperatura y humedad junto a una zona de estanterías comerciales"
+        },
+        {
+          "title": "Alarmas de alimentación del equipamiento comercial",
+          "text": "Identifique estados de alarma seleccionados de la fuente de alimentación externa de un carril de estantería o elemento comercial.",
+          "interface": "Conecte contactos de alarma de alimentación compatibles a puntos DI.",
+          "control": "Accione un indicador auxiliar aprobado si el procedimiento de servicio lo requiere.",
+          "verification": "Pruebe la alarma en su origen y distinga un fallo de alimentación de la pérdida de energía del controlador o de comunicación.",
+          "imageKey": "scene-shelving-03",
+          "imageAlt": "Fuente de alimentación de baja tensión en el compartimento de servicio de un mueble comercial"
+        },
+        {
+          "title": "Acceso de servicio a vitrinas",
+          "text": "Integre contactos seleccionados de puerta y mantenimiento de vitrinas en la supervisión de equipos de la tienda.",
+          "interface": "Asigne puntos DI a señales compatibles de puerta de servicio o modo de mantenimiento.",
+          "control": "Proporcione una indicación local de servicio adecuada mediante un circuito auxiliar acordado.",
+          "verification": "Confirme con el personal de operaciones la identificación de la vitrina, los estados normales y el significado de los eventos.",
+          "imageKey": "scene-shelving-04",
+          "imageAlt": "Puerta de servicio de una vitrina comercial y contacto del pestillo"
+        },
+        {
+          "title": "Habilitación de accesorios comerciales",
+          "text": "Supervise una solicitud de habilitación permitida para un accesorio seleccionado, como iluminación de exposición o una unidad de ventilación.",
+          "interface": "Utilice circuitos de órdenes DO compatibles y la realimentación DI disponible del funcionamiento.",
+          "control": "Defina la prioridad local y la acción permitida de forma independiente del sistema de etiquetas o inventario.",
+          "verification": "Pruebe la orden, la respuesta real y la anulación local; la activación de una salida por sí sola no demuestra que el accesorio esté funcionando.",
+          "imageKey": "scene-shelving-05",
+          "imageAlt": "Iluminación de exposición comercial y accesorio de ventilación"
+        }
+      ]
+    },
+    {
+      "id": "plc-controls",
+      "title": "PLC y sistemas de control existentes",
+      "intro": "Conecte la RTU a señales auxiliares documentadas de un sistema existente controlado por PLC. El PLC conserva sus secuencias de proceso, enclavamientos y funciones de seguridad; deben definirse las interfaces físicas y los protocolos seleccionados para cada integración.",
+      "imageKey": "plc-cabinet",
+      "imageAlt": "Armario de control industrial con equipos PLC y cableado de bornes identificado",
+      "tasks": [
+        {
+          "title": "Supervisión de marcha y fallo general del PLC",
+          "text": "Publique estados seleccionados de marcha y fallo general del PLC para su consulta por los equipos remotos de operaciones y mantenimiento.",
+          "interface": "Asigne canales DI a las salidas auxiliares de estado compatibles que proporcione el sistema PLC.",
+          "control": "Mantenga cualquier solicitud permitida de supervisión separada de la secuencia principal y las protecciones del PLC.",
+          "verification": "Valide el significado de los estados y el cableado de origen con la documentación del sistema de control.",
+          "imageKey": "plc-cabinet",
+          "imageAlt": "Armario de control industrial con equipos PLC y cableado de bornes identificado"
+        },
+        {
+          "title": "Adquisición de estados seleccionados de secuencia",
+          "text": "Lea un conjunto reducido de estados discretos de proceso o secuencia para que los operadores remotos puedan interpretar la fase del ciclo de operación en la que se encuentra el equipo.",
+          "interface": "Asigne hasta cuatro puntos DI de referencia a las señales de estado elegidas.",
+          "control": "Utilice los estados adquiridos para la supervisión y únicamente para las condiciones de control acordadas.",
+          "verification": "Compruebe que los estados seleccionados sean distintos y conserven su significado durante el arranque, el mantenimiento y las situaciones anómalas.",
+          "imageKey": "scene-plc-controls-02",
+          "imageAlt": "Equipo transportador con sensores de estados de proceso discretos"
+        },
+        {
+          "title": "Supervisión de mediciones externas",
+          "text": "Lea señales compatibles de transmisores analógicos asociadas a un proceso controlado por PLC para disponer de una vista independiente de supervisión remota.",
+          "interface": "Asigne hasta cuatro puntos AI de referencia a los instrumentos seleccionados; establezca la compatibilidad del acondicionamiento de señal y de la carga eléctrica.",
+          "control": "Utilice límites de medición para las notificaciones o las condiciones de control permitidas.",
+          "verification": "Compare los valores mostrados con los instrumentos de origen; acuerde el diseño de cualquier conexión de señal compartida antes de realizarla.",
+          "imageKey": "scene-plc-controls-03",
+          "imageAlt": "Instrumentos de presión y temperatura en un módulo de proceso controlado por PLC"
+        },
+        {
+          "title": "Solicitudes de habilitación desde la supervisión",
+          "text": "Proporcione una solicitud externa definida a una entrada existente del PLC cuando el diseño de control permita órdenes de habilitación o inhibición desde la supervisión.",
+          "interface": "Conecte puntos DO compatibles al circuito de entrada de órdenes aprobado del sistema PLC y asigne la realimentación de estado disponible.",
+          "control": "El PLC evalúa la solicitud según sus propias condiciones de operación y prioridades.",
+          "verification": "Pruebe las solicitudes aceptadas, rechazadas y canceladas; la recepción de una orden es distinta del estado resultante del equipo.",
+          "imageKey": "scene-plc-controls-04",
+          "imageAlt": "Panel de operación de una máquina con botones de control auxiliares"
+        },
+        {
+          "title": "Solicitudes auxiliares de reconocimiento y servicio",
+          "text": "Proporcione una solicitud acordada de reconocimiento o mantenimiento mediante una interfaz externa documentada del PLC.",
+          "interface": "Asigne puntos de órdenes DO compatibles y la realimentación DI necesaria de reconocimiento o servicio.",
+          "control": "Limite la función a la acción auxiliar aprobada; los rearmes de protecciones y los mandos de emergencia siguen el diseño del sistema principal.",
+          "verification": "Verifique con el ingeniero de control la duración de la orden, la transición de estado y el reconocimiento efectivo.",
+          "imageKey": "scene-plc-controls-05",
+          "imageAlt": "Mandos auxiliares de solicitud y confirmación de servicio en un armario"
+        }
+      ]
+    },
+    {
+      "id": "environmental-monitoring",
+      "title": "Instalaciones de supervisión ambiental",
+      "intro": "Conecte instrumentos externos compatibles y señales auxiliares de las instalaciones para las operaciones ambientales. Las sondas y los transmisores seleccionados determinan las sustancias medidas, los rangos y las prestaciones; la RTU adquiere sus señales disponibles.",
+      "imageKey": "environment",
+      "imageAlt": "Instalación de tratamiento ambiental con instrumentos de proceso y tuberías",
+      "tasks": [
+        {
+          "title": "Adquisición de señales de transmisores de calidad del aire",
+          "text": "Integre salidas seleccionadas de transmisores de gases o calidad del aire en una vista de supervisión organizada por ubicación.",
+          "interface": "Asigne puntos AI compatibles a las salidas de instrumentos elegidas y a sus unidades de ingeniería.",
+          "control": "Utilice límites de concentración o condiciones configurados para las notificaciones y cualquier solicitud auxiliar acordada.",
+          "verification": "Confirme la variable medida, el rango y la idoneidad del instrumento para la instalación; el controlador en sí no es un detector de gases.",
+          "imageKey": "environment",
+          "imageAlt": "Instalación de tratamiento ambiental con instrumentos de proceso y tuberías"
+        },
+        {
+          "title": "Puntos de medición de calidad del agua",
+          "text": "Recoja salidas acondicionadas seleccionadas de instrumentos externos de calidad del agua para supervisar el tratamiento o los vertidos.",
+          "interface": "Adapte cada canal AI a la salida y al escalado admitidos por el instrumento.",
+          "control": "Utilice los límites configurados para avisar al operador o para una función de supervisión permitida.",
+          "verification": "Contraste las lecturas con el instrumento de origen y su procedimiento de mantenimiento; un valor medido no demuestra por sí mismo el cumplimiento normativo.",
+          "imageKey": "scene-environmental-monitoring-02",
+          "imageAlt": "Bastidor de muestreo y celdas de flujo para instrumentos de calidad del agua"
+        },
+        {
+          "title": "Estados de marcha y fallo de unidades de tratamiento",
+          "text": "Identifique si una unidad de tratamiento montada en bastidor o un equipo auxiliar seleccionado comunica un estado de marcha, parada o fallo.",
+          "interface": "Asigne puntos DI a señales compatibles de estado de la unidad.",
+          "control": "Utilice una solicitud de habilitación permitida desde la supervisión a través del propio controlador de la unidad de tratamiento.",
+          "verification": "Compare los estados comunicados con el equipo de origen y conserve sus protecciones de proceso.",
+          "imageKey": "scene-environmental-monitoring-03",
+          "imageAlt": "Módulo de tratamiento con bomba e indicadores locales de funcionamiento"
+        },
+        {
+          "title": "Puntos de condición de filtros y sistemas de extracción",
+          "text": "Supervise una medición de presión diferencial o un interruptor de filtro seleccionado junto con la realimentación disponible de la unidad de extracción.",
+          "interface": "Utilice señales AI o DI compatibles del instrumento de presión elegido y de los contactos de estado de la unidad.",
+          "control": "Configure avisos de mantenimiento o una indicación auxiliar acordada.",
+          "verification": "Verifique la medición o el ajuste del interruptor; la presión diferencial por sí sola no constituye una medición verificada de caudal de aire ni de eficiencia de eliminación.",
+          "imageKey": "scene-environmental-monitoring-04",
+          "imageAlt": "Carcasa de filtro y conducto de extracción con puntos de medición de presión"
+        },
+        {
+          "title": "Supervisión de bombas de muestreo y auxiliares",
+          "text": "Conecte la realimentación de funcionamiento y las solicitudes permitidas de una bomba de muestreo externa o un accesorio de instrumentación.",
+          "interface": "Asigne puntos de órdenes DO compatibles y realimentación DI de marcha o fallo.",
+          "control": "Siga la secuencia permitida y la prioridad local del conjunto de instrumentación.",
+          "verification": "Pruebe la realimentación disponible del recorrido de la muestra o del equipo; una orden por sí sola no confirma que se haya recogido una muestra representativa.",
+          "imageKey": "scene-environmental-monitoring-05",
+          "imageAlt": "Bomba de muestreo externa y tubos de instrumentación"
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Agricultura y riego",
+      "intro": "Conecte transmisores ambientales seleccionados, estados de equipos de riego y órdenes auxiliares permitidas. El suministro de agua y las decisiones de manejo del cultivo dependen de los instrumentos seleccionados y del diseño agronómico e hidráulico de la instalación.",
+      "imageKey": "agriculture",
+      "imageAlt": "Equipos de riego y fertirrigación en un invernadero",
+      "tasks": [
+        {
+          "title": "Supervisión de condiciones del invernadero",
+          "text": "Recoja señales externas de temperatura y humedad en zonas seleccionadas del invernadero para conocer sus condiciones de operación.",
+          "interface": "Asigne puntos AI compatibles a las salidas acondicionadas de transmisores necesarias.",
+          "control": "Configure límites y solicitudes auxiliares de ventilación permitidas dentro del diseño de control del invernadero.",
+          "verification": "Verifique la ubicación de los sensores y las lecturas frente a los instrumentos de origen; mantenga las protecciones del equipo y las prioridades del control local.",
+          "imageKey": "agriculture",
+          "imageAlt": "Equipos de riego y fertirrigación en un invernadero"
+        },
+        {
+          "title": "Solicitudes a válvulas de riego y realimentación",
+          "text": "Distinga la acción solicitada a una válvula de riego de la realimentación disponible de posición de válvula o estado de la conducción.",
+          "interface": "Asigne circuitos de órdenes DO compatibles y puntos de realimentación DI a las válvulas seleccionadas.",
+          "control": "Utilice solicitudes locales, remotas o por condiciones dentro de la secuencia de riego aprobada.",
+          "verification": "Verifique la anulación local y la respuesta física; la activación de una salida por sí sola no confirma el recorrido de la válvula ni el suministro de agua.",
+          "imageKey": "scene-agriculture-02",
+          "imageAlt": "Válvula de riego motorizada y colector de distribución"
+        },
+        {
+          "title": "Supervisión de presión de riego",
+          "text": "Supervise señales compatibles seleccionadas de transmisores de presión en un punto de suministro o distribución de riego.",
+          "interface": "Utilice puntos AI con rangos de ingeniería adaptados a los instrumentos externos de presión.",
+          "control": "Configure avisos de presión o una solicitud permitida de supervisión de bombas.",
+          "verification": "Compare las lecturas con los instrumentos de origen y confirme la realimentación real de la bomba; la supervisión de presión no sustituye la protección hidráulica.",
+          "imageKey": "scene-agriculture-03",
+          "imageAlt": "Instrumentos de presión en un colector de distribución de riego"
+        },
+        {
+          "title": "Nivel de almacenamiento de agua y estados de bombas",
+          "text": "Combine una medición externa del nivel de almacenamiento con señales seleccionadas de marcha o fallo de bombas.",
+          "interface": "Asigne una señal AI de nivel compatible y los puntos DI de estado de equipos necesarios.",
+          "control": "Utilice una solicitud acordada de bomba o válvula dentro del diseño local de gestión del agua.",
+          "verification": "Pruebe el escalado de nivel, la realimentación de estado y el comportamiento de recuperación; las protecciones independientes contra desbordamiento y funcionamiento en seco siguen a cargo de los equipos correspondientes.",
+          "imageKey": "scene-agriculture-04",
+          "imageAlt": "Depósito de agua agrícola y bomba de trasiego contigua"
+        },
+        {
+          "title": "Puntos operativos de equipos de fertirrigación",
+          "text": "Adquiera salidas de medición acondicionadas o contactos de estado de servicio seleccionados de un equipo externo de dosificación o fertirrigación.",
+          "interface": "Adapte los puntos AI y DI disponibles a la lista de señales del equipo.",
+          "control": "Limite cualquier orden a una interfaz documentada de supervisión que admita el equipo.",
+          "verification": "Verifique con el proveedor las unidades, la realimentación del equipo y el alcance permitido de las órdenes; la RTU no establece una receta de dosificación.",
+          "imageKey": "scene-agriculture-05",
+          "imageAlt": "Equipo de dosificación de fertirrigación en la zona de servicio de un invernadero"
+        }
+      ]
+    },
+    {
+      "id": "remote-stations",
+      "title": "Estaciones desatendidas y remotas",
+      "intro": "Integre eventos del armario, mediciones externas y solicitudes auxiliares de operación en el flujo de mantenimiento de emplazamientos distribuidos. Seleccione la alimentación, la comunicación y las medidas de protección de la instalación según las condiciones reales del emplazamiento.",
+      "imageKey": "remote-station",
+      "imageAlt": "Emplazamiento remoto de equipos de telecomunicaciones",
+      "tasks": [
+        {
+          "title": "Acceso al armario y estado de servicio",
+          "text": "Asocie eventos seleccionados de apertura de puerta y modo de mantenimiento al armario o estación remota correspondiente.",
+          "interface": "Asigne puntos DI a contactos compatibles de acceso y estado de servicio.",
+          "control": "Utilice un circuito adecuado de indicación auxiliar cuando lo requiera el procedimiento de la estación.",
+          "verification": "Pruebe el cableado del estado normal y la identificación del emplazamiento; la autorización de acceso sigue siendo una función independiente.",
+          "imageKey": "remote-station",
+          "imageAlt": "Emplazamiento remoto de equipos de telecomunicaciones"
+        },
+        {
+          "title": "Alarmas del sistema de alimentación de la estación",
+          "text": "Lea contactos de alarma seleccionados de fuentes de alimentación externas o sistemas de respaldo para facilitar la respuesta del servicio remoto.",
+          "interface": "Asigne puntos DI compatibles a las salidas de alarma documentadas.",
+          "control": "Limite el control auxiliar a las funciones permitidas por los equipos externos de alimentación.",
+          "verification": "Pruebe por separado las alarmas de origen, la pérdida de alimentación del controlador y la pérdida de comunicación.",
+          "imageKey": "scene-remote-stations-02",
+          "imageAlt": "Equipo de alimentación de respaldo y contactos de alarma en una estación remota"
+        },
+        {
+          "title": "Supervisión de la ventilación del armario",
+          "text": "Combine una medición externa de temperatura compatible con realimentación de marcha o fallo del ventilador.",
+          "interface": "Utilice AI para la señal de temperatura acondicionada y DI para los estados de equipo seleccionados.",
+          "control": "Conecte una solicitud permitida de habilitación del ventilador mediante su circuito de control aprobado.",
+          "verification": "Compruebe el funcionamiento físico del ventilador, la prioridad local y la respuesta acordada tras el reinicio.",
+          "imageKey": "scene-remote-stations-03",
+          "imageAlt": "Ventilador y sonda ambiental en un armario de campo"
+        },
+        {
+          "title": "Mediciones acondicionadas de baterías o servicios de la estación",
+          "text": "Lea salidas analógicas seleccionadas de transductores externos de supervisión de baterías o de servicios de la estación.",
+          "interface": "Adapte los canales AI a la especificación de salida aislada o acondicionada del instrumento externo.",
+          "control": "Utilice los límites de medición configurados para las notificaciones en línea.",
+          "verification": "Compare el escalado con el instrumento de origen; no conecte directamente a un borne AI un circuito de batería o potencia sin verificar su compatibilidad.",
+          "imageKey": "scene-remote-stations-04",
+          "imageAlt": "Transductor externo de supervisión de baterías junto a un banco de baterías de una estación"
+        },
+        {
+          "title": "Fugas en el emplazamiento y estados de equipos auxiliares",
+          "text": "Integre un contacto de fuga y estados auxiliares seleccionados de la estación en una misma vista de supervisión del emplazamiento.",
+          "interface": "Asigne señales DI compatibles y cualquier medición AI acondicionada necesaria dentro del número de puntos de referencia disponible.",
+          "control": "Utilice notificaciones o una solicitud auxiliar aprobada de acuerdo con el procedimiento operativo de la estación.",
+          "verification": "Verifique el evento de origen, la respuesta real del equipo y el comportamiento acordado ante la pérdida de comunicación.",
+          "imageKey": "scene-remote-stations-05",
+          "imageAlt": "Zona de detección de fugas en el suelo de una sala remota de equipos"
+        }
+      ]
+    },
+    {
+      "id": "industrial-equipment",
+      "title": "Equipos industriales y conjuntos auxiliares",
+      "intro": "Conecte señales seleccionadas de máquinas y conjuntos auxiliares para conocer su estado operativo y ejercer el control de supervisión permitido. El equipo principal conserva su control de proceso, enclavamientos y funciones de protección independientes.",
+      "imageKey": "industrial-equipment",
+      "imageAlt": "Máquina industrial y equipos auxiliares en una planta de fabricación",
+      "tasks": [
+        {
+          "title": "Supervisión de marcha y fallo de máquinas",
+          "text": "Ponga los estados auxiliares seleccionados de la máquina a disposición de los equipos de apoyo a producción y evaluación del servicio.",
+          "interface": "Asigne puntos DI compatibles a las señales documentadas de marcha, preparado o fallo.",
+          "control": "Utilice una salida únicamente para una función de máquina expresamente prevista para la supervisión externa.",
+          "verification": "Valide el significado de los estados con el proveedor de la máquina y contraste los estados comunicados con el equipo real.",
+          "imageKey": "industrial-equipment",
+          "imageAlt": "Máquina industrial y equipos auxiliares en una planta de fabricación"
+        },
+        {
+          "title": "Supervisión de conjuntos compresores",
+          "text": "Asocie indicaciones seleccionadas de marcha, carga o disparo al activo de compresor correspondiente.",
+          "interface": "Asigne puntos DI a las señales de estado disponibles y compatibles del equipo.",
+          "control": "Proporcione una solicitud de habilitación permitida mediante el circuito externo de control aprobado del equipo.",
+          "verification": "Compruebe la realimentación real de marcha, el modo local y las condiciones del proveedor para el rearranque y el rearme tras disparo.",
+          "imageKey": "scene-industrial-equipment-02",
+          "imageAlt": "Conjunto compresor industrial e indicadores locales de funcionamiento"
+        },
+        {
+          "title": "Equipos auxiliares de refrigeración y circulación",
+          "text": "Conecte mediciones compatibles de temperatura o presión con las señales disponibles de estado de bomba o ventilador de un conjunto de refrigeración.",
+          "interface": "Asigne las mediciones AI y la realimentación DI necesarias dentro de las E/S de referencia disponibles.",
+          "control": "Utilice condiciones definidas para las notificaciones o una solicitud de habilitación permitida desde la supervisión.",
+          "verification": "Verifique los valores medidos y la realimentación física de los equipos; conserve las protecciones de proceso independientes del conjunto.",
+          "imageKey": "scene-industrial-equipment-03",
+          "imageAlt": "Bomba de circulación de refrigeración y tuberías del intercambiador de calor"
+        },
+        {
+          "title": "Órdenes de actuadores y realimentación de posición",
+          "text": "Supervise la relación entre una orden aprobada al actuador y sus señales disponibles de fin de carrera.",
+          "interface": "Utilice interfaces de órdenes DO compatibles y contactos DI de posición para el actuador seleccionado.",
+          "control": "Aplique la secuencia de movimiento permitida y la prioridad de anulación local.",
+          "verification": "Pruebe el recorrido completo y la realimentación disponible de posición; el estado de salida por sí solo no confirma la posición del actuador.",
+          "imageKey": "scene-industrial-equipment-04",
+          "imageAlt": "Actuador de válvula industrial con caja de interruptores de fin de carrera"
+        },
+        {
+          "title": "Indicación de mantenimiento requerido y servicio",
+          "text": "Identifique señales seleccionadas de mantenimiento o modo de servicio para que los operadores puedan interpretar los eventos del equipo durante las intervenciones planificadas.",
+          "interface": "Asigne puntos DI compatibles y una salida aprobada de indicación auxiliar si es necesaria.",
+          "control": "Mantenga la indicación de servicio separada de las secuencias de la máquina y las funciones de rearme de protecciones.",
+          "verification": "Pruebe los estados de funcionamiento normal, fallo activo y mantenimiento planificado mediante el procedimiento de servicio acordado.",
+          "imageKey": "scene-industrial-equipment-05",
+          "imageAlt": "Indicador de mantenimiento de una máquina y panel de acceso de servicio"
+        }
+      ]
+    },
+    {
+      "id": "transport-infrastructure",
+      "title": "Instalaciones de transporte y carretera",
+      "intro": "Supervise equipos auxiliares seleccionados de carretera e instalaciones de transporte mediante interfaces auxiliares documentadas. Las fases semafóricas, los enclavamientos ferroviarios, los mandos de emergencia y las demás funciones de seguridad siguen a cargo de sus sistemas específicos.",
+      "imageKey": "transport",
+      "imageAlt": "Armario de infraestructura junto a una carretera en una instalación de transporte",
+      "tasks": [
+        {
+          "title": "Acceso y fallos de armarios de carretera",
+          "text": "Identifique señales compatibles de puerta de armario y fallo de equipos en un activo de carretera definido.",
+          "interface": "Asigne puntos DI a los contactos seleccionados de acceso y fallos auxiliares.",
+          "control": "Utilice un indicador local de servicio aprobado cuando lo requiera el procedimiento de mantenimiento.",
+          "verification": "Verifique los eventos físicos de origen y la identificación del activo; una notificación IoT no constituye una respuesta de un sistema de seguridad.",
+          "imageKey": "transport",
+          "imageAlt": "Armario de infraestructura junto a una carretera en una instalación de transporte"
+        },
+        {
+          "title": "Condiciones térmicas y de ventilación del armario",
+          "text": "Conecte mediciones externas de temperatura con la realimentación disponible de la unidad de ventilación de un armario de equipos de carretera.",
+          "interface": "Utilice salidas AI compatibles de transmisores y señales DI de estado de los ventiladores.",
+          "control": "Proporcione una solicitud auxiliar permitida de ventilación mediante la interfaz de control documentada.",
+          "verification": "Verifique la respuesta real del ventilador y la prioridad local, y seleccione las medidas de protección de la instalación según su exposición ambiental.",
+          "imageKey": "scene-transport-infrastructure-02",
+          "imageAlt": "Ventilador y sonda de temperatura de un armario de equipos junto a la carretera"
+        },
+        {
+          "title": "Señales de instrumentos meteorológicos externos",
+          "text": "Adquiera salidas acondicionadas seleccionadas de instrumentos meteorológicos del emplazamiento para conocer las condiciones operativas de la instalación de transporte.",
+          "interface": "Adapte los canales AI a los instrumentos elegidos, sus unidades y rangos de trabajo.",
+          "control": "Configure los límites de supervisión y el flujo de notificación asociado.",
+          "verification": "Valide las lecturas de origen y la ubicación; las señales de observación no constituyen un pronóstico meteorológico ni una decisión automática de cierre de carretera.",
+          "imageKey": "scene-transport-infrastructure-03",
+          "imageAlt": "Instrumentos meteorológicos externos junto a una instalación de transporte"
+        },
+        {
+          "title": "Supervisión de equipos auxiliares de drenaje",
+          "text": "Combine eventos seleccionados de nivel o fuga con indicaciones de marcha y fallo de bombas de drenaje en una instalación de transporte.",
+          "interface": "Asigne instrumentos AI o DI compatibles y la realimentación DI necesaria de las bombas.",
+          "control": "Utilice una solicitud de supervisión acordada a través del sistema de control de bombas.",
+          "verification": "Compruebe el nivel real y la realimentación de las bombas; la protección contra inundaciones y las salvaguardas locales de las bombas siguen a cargo de los sistemas correspondientes.",
+          "imageKey": "scene-transport-infrastructure-04",
+          "imageAlt": "Pozo de recogida de drenaje e instalación de bombeo en una infraestructura de transporte"
+        },
+        {
+          "title": "Habilitación de auxiliares en instalaciones de transporte",
+          "text": "Proporcione una solicitud local o remota definida para un equipo auxiliar admitido y ajeno a funciones de seguridad, como iluminación de servicio o un accesorio del armario.",
+          "interface": "Utilice circuitos de órdenes DO compatibles y la realimentación DI disponible del funcionamiento.",
+          "control": "Limite la acción al alcance auxiliar documentado y a la prioridad operativa local.",
+          "verification": "Pruebe la orden y el resultado físico; no utilice la RTU para sustituir funciones de control del tráfico, parada de emergencia o seguridad ferroviaria.",
+          "imageKey": "scene-transport-infrastructure-05",
+          "imageAlt": "Iluminación de servicio en un centro de mantenimiento de infraestructuras de transporte"
+        }
+      ]
+    }
+  ],
+  "platformTitle": "Sus equipos de campo.\nVisibles en Hitelecom Cloud.",
+  "platformIntro": "Consulte en línea los datos de supervisión cargados, siga los estados de los equipos y reciba alertas cuando se superen los umbrales configurados. Asocie los puntos digitales y analógicos del controlador con nombres de activos, unidades y condiciones de funcionamiento que tengan sentido para su operación. El alcance de la integración con una plataforma del cliente puede definirse en función de la interfaz seleccionada para el dispositivo y los requisitos de intercambio de datos.",
+  "platformBullets": [
+    "Datos en línea: incorpore estados de equipos y valores de medición externos a la vista de supervisión seleccionada, con unidades y un comportamiento de actualización definidos para cada punto.",
+    "Alertas por umbral: establezca los límites de supervisión pertinentes y el proceso de notificación. Verifique la condición de alerta, el destinatario y la entrega durante la puesta en servicio.",
+    "Control e integración: acuerde las acciones remotas permitidas, los puntos de realimentación y las prioridades locales. Defina por separado el protocolo y la correspondencia de datos en los proyectos de integración con plataformas del cliente."
+  ],
+  "specsIntro": "La serie HD20-4000 admite configuraciones de E/S seleccionadas para cada proyecto. La configuración de referencia que se muestra a continuación es 4DO + 4DI + 4AI. La imagen del producto muestra una unidad identificada como HD20-4021GD; el código final de pedido, las interfaces instaladas y los límites eléctricos se establecen en la especificación acordada de la configuración correspondiente.",
+  "specGroups": [
+    {
+      "title": "Serie y E/S de campo",
+      "rows": [
+        [
+          "Familia de productos",
+          "Controlador IoT / RTU de la serie HD20-4000"
+        ],
+        [
+          "Modelo de la imagen",
+          "HD20-4021GD; dispositivo identificado como 4G"
+        ],
+        [
+          "Configuración de E/S de referencia",
+          "4 salidas digitales + 4 entradas digitales + 4 entradas analógicas"
+        ],
+        [
+          "Entradas digitales",
+          "4 canales en la configuración de referencia. Solicite el tipo eléctrico de entrada, los umbrales y la especificación de cableado."
+        ],
+        [
+          "Salidas digitales",
+          "4 canales en la configuración de referencia. Solicite el tipo de salida, la carga permitida y la especificación de la interfaz de conmutación."
+        ],
+        [
+          "Entradas analógicas",
+          "4 canales en la configuración de referencia. Solicite el rango de señal admitido, las condiciones de exactitud y la especificación del escalado."
+        ]
+      ]
+    },
+    {
+      "title": "Procesamiento y control",
+      "rows": [
+        [
+          "Procesamiento en el borde",
+          "Compatible; la lógica de aplicación y la interpretación de las señales dependen de la configuración seleccionada."
+        ],
+        [
+          "Modos de control",
+          "Local / remoto / basado en condiciones"
+        ],
+        [
+          "Funciones de operación",
+          "Modos de funcionamiento maestro/esclavo; la selección de interfaz, protocolo y funciones se define para el proyecto."
+        ],
+        [
+          "Mecanismos watchdog",
+          "Mecanismos watchdog de software y hardware"
+        ],
+        [
+          "Muestreo, envío de datos y respuesta",
+          "Defina por separado los requisitos de muestreo de entradas, envío de datos, procesamiento de eventos y respuesta de control."
+        ],
+        [
+          "Comportamiento al arrancar y ante la pérdida de enlace",
+          "Especifique los estados de las salidas, las acciones locales permitidas y el comportamiento de recuperación para la configuración entregada."
+        ]
+      ]
+    },
+    {
+      "title": "Conectividad y plataforma",
+      "rows": [
+        [
+          "Variante de comunicación móvil mostrada",
+          "4G; seleccione el módulo regional, las bandas, el servicio SIM y la disposición de antena para la instalación."
+        ],
+        [
+          "Hitelecom Cloud",
+          "Consulta en línea de los datos de supervisión cargados y alertas al superar los umbrales configurados."
+        ],
+        [
+          "Plataforma del cliente",
+          "Integración específica del proyecto; acuerde la interfaz compatible del dispositivo, el protocolo y la correspondencia de datos."
+        ],
+        [
+          "Configuración remota",
+          "Compatible con los ajustes del dispositivo a los que sea aplicable."
+        ],
+        [
+          "Actualización remota de firmware",
+          "Compatible; utilice el firmware y el procedimiento de mantenimiento aprobados para la configuración suministrada."
+        ]
+      ]
+    },
+    {
+      "title": "Alimentación e instalación",
+      "rows": [
+        [
+          "Fuente de alimentación",
+          "Solicite el rango nominal de entrada, la polaridad, el consumo máximo/típico y los requisitos de cableado."
+        ],
+        [
+          "Formato e instalación",
+          "Envolvente compacta; seleccione el montaje, el recorrido de los cables y el espacio libre de mantenimiento para la instalación."
+        ],
+        [
+          "Dimensiones y masa",
+          "Consulte el plano mecánico y las especificaciones del producto correspondientes a la configuración concreta."
+        ],
+        [
+          "Interfaces de equipos externos",
+          "Adapte las especificaciones eléctricas de las E/S del controlador a cada instrumento, actuador o circuito de control de cargas."
+        ]
+      ]
+    },
+    {
+      "title": "Entorno y documentación",
+      "rows": [
+        [
+          "Entorno de instalación",
+          "Seleccione el dispositivo y cualquier armario de protección en función de las condiciones de temperatura, humedad y exposición de la instalación."
+        ],
+        [
+          "Protección contra la entrada de agentes externos",
+          "Solicite el grado de protección y las condiciones de instalación de la configuración del dispositivo suministrada."
+        ],
+        [
+          "Información para la puesta en servicio",
+          "Relación de señales, permisos de control, realimentación de los equipos, ajustes remotos y comprobaciones de recuperación."
+        ],
+        [
+          "Documentación de conformidad",
+          "Solicite las declaraciones o la documentación de ensayos específicas del modelo y del destino para la versión solicitada."
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Para qué se ha diseñado la serie HD20-4000?",
+      "a": "Combina la adquisición de datos de campo, la supervisión de equipos y el control en una RTU IoT. Las entradas digitales captan estados de los equipos, las entradas analógicas reciben señales de transmisores compatibles y las salidas digitales se conectan a circuitos de control permitidos. El procesamiento en el borde, la supervisión en la nube y el mantenimiento remoto facilitan el proceso operativo."
+    },
+    {
+      "q": "¿Qué configuración de E/S está disponible?",
+      "a": "La configuración de referencia es 4DO + 4DI + 4AI: cuatro salidas digitales, cuatro entradas digitales y cuatro entradas analógicas. La serie admite configuraciones de E/S seleccionadas para cada proyecto. Confirme la asignación de canales y obtenga la especificación eléctrica de la versión solicitada. Las 40 tareas de aplicación son ejemplos de selección, no 40 canales simultáneos; una lista más amplia de puntos puede requerir otra configuración o controladores adicionales."
+    },
+    {
+      "q": "¿Qué señales admiten las entradas digitales y analógicas?",
+      "a": "Los puntos DI adquieren estados digitales compatibles de los equipos; los puntos AI adquieren salidas compatibles de transmisores analógicos. Adapte la lógica eléctrica, los rangos de señal, el aislamiento y las condiciones de exactitud a la versión seleccionada y al instrumento externo. Facilite la especificación de salida del instrumento durante la selección. La designación DO, DI o AI por sí sola no define una topología de relé, un rango de tensión o corriente ni un protocolo de comunicación."
+    },
+    {
+      "q": "¿Qué modos de control admite?",
+      "a": "La serie admite control local, remoto y por condiciones. Para cada acción, defina la condición de activación, la prioridad de la orden, el alcance operativo permitido y la realimentación disponible. Conecte las salidas mediante interfaces de control eléctricamente compatibles. El equipo principal conserva sus secuencias, enclavamientos y funciones de protección independientes."
+    },
+    {
+      "q": "¿Qué implican los modos de funcionamiento maestro/esclavo para la integración?",
+      "a": "Son funciones de operación para coordinar dispositivos según lo definido en el proyecto. Identifique qué dispositivo inicia un intercambio, cuál responde y qué datos u órdenes intervienen. Seleccione para el proyecto la interfaz física, el protocolo de comunicación y las operaciones admitidas. La descripción maestro/esclavo por sí sola no define un tipo de puerto serie ni un protocolo concreto."
+    },
+    {
+      "q": "¿Puedo consultar datos de supervisión y recibir alertas en Hitelecom Cloud?",
+      "a": "Sí. Hitelecom Cloud permite consultar en línea los datos de supervisión cargados y recibir alertas cuando se superan los umbrales configurados. Configure las unidades de medición, los significados de los estados de los equipos, los límites y el proceso de notificación para los puntos conectados. La disponibilidad de los datos y los tiempos de notificación dependen del perfil de envío de datos del dispositivo y de la conexión de red."
+    },
+    {
+      "q": "¿Se puede integrar el controlador con una plataforma del cliente?",
+      "a": "La integración con plataformas del cliente, PLC, máquinas y sistemas de estanterías se evalúa según las interfaces admitidas por la configuración seleccionada. Acuerde la conexión física, el protocolo cuando corresponda, las definiciones de los puntos, las órdenes permitidas y la asignación de la realimentación de los equipos. La conexión a una señal auxiliar no establece compatibilidad nativa con una máquina, una red de etiquetas electrónicas de estantería ni un sistema de pago."
+    },
+    {
+      "q": "¿Cuál es la finalidad de los dos mecanismos watchdog?",
+      "a": "La serie utiliza mecanismos watchdog de hardware y software para facilitar la recuperación ante determinados fallos. Son funciones de recuperación del dispositivo, no una garantía de funcionamiento ininterrumpido ni un sustituto de la protección de los equipos. Durante la puesta en servicio se debe verificar el comportamiento de reinicio aplicable y los estados resultantes de las salidas."
+    },
+    {
+      "q": "¿Se pueden mantener los ajustes y el firmware de forma remota?",
+      "a": "La serie admite la configuración remota y las actualizaciones remotas de firmware. Utilice los ajustes y el firmware previstos para la configuración de hardware entregada y planifique el mantenimiento en función del procedimiento operativo de la instalación. Verifique los ajustes necesarios y el funcionamiento del dispositivo después del cambio."
+    },
+    {
+      "q": "¿Qué ocurre si se interrumpen la comunicación o la alimentación?",
+      "a": "El control local y el basado en condiciones son modos de funcionamiento admitidos, pero la operación ante la pérdida de enlace, los estados de respaldo de las salidas y la recuperación al arrancar deben especificarse para la configuración entregada. La vía de mando remoto y la vista de supervisión en línea dependen de la conectividad. Pruebe el comportamiento acordado de interrupción y recuperación durante la puesta en servicio."
+    },
+    {
+      "q": "¿Puede una salida digital alimentar directamente una bomba, un ventilador o una válvula?",
+      "a": "Seleccione la conexión según el tipo eléctrico de salida, la carga permitida y la interfaz del equipo. Puede ser necesario un arrancador, un contactor, un dispositivo de maniobra intermedio o un circuito de control de actuador adecuado. La activación de una salida por sí sola no demuestra que un motor esté en marcha o que una válvula haya alcanzado su posición; utilice la realimentación disponible del equipo."
+    },
+    {
+      "q": "¿Qué información se necesita para seleccionar una configuración de instalación?",
+      "a": "Indique el país de instalación, la lista de señales, las especificaciones de salida de los instrumentos, las interfaces de control de los equipos, las prioridades locales/remotas necesarias, la fuente de alimentación y las condiciones de la instalación. Incluya la plataforma de destino y el comportamiento esperado durante la pérdida de comunicación o el reinicio. Estos datos determinan la asignación de E/S, el alcance de la integración y los requisitos de personalización."
+    }
+  ],
+  "enquiryIntro": "Indíquenos las salidas de los instrumentos, los puntos de estado de los equipos, las órdenes permitidas y la realimentación que necesita en la instalación. Contrastaremos la asignación de referencia 4DO + 4DI + 4AI con la lista de señales, definiremos las prioridades locales y remotas y concretaremos la integración con Hitelecom Cloud o con la plataforma del cliente.",
+  "slug": "iot-controller-hd20-4000",
+  "kind": "Product",
+  "image": "hd20-4000-controller-original.png",
+  "imageWidth": 1280,
+  "imageHeight": 731,
+  "datasheet": "/downloads/hd20-4000-iot-controller-datasheet-en.pdf"
+}
