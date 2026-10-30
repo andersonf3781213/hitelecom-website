@@ -1,0 +1,715 @@
+{
+  "family": "H100-HTC1800",
+  "model": "H100-HTC1800",
+  "picturedModel": "H100-HTC1800",
+  "title": "H100-HTC1800 Custom Dome Camera | Hitelecom",
+  "metaDescription": "Custom camera development for industrial-site visual monitoring. Define optics, imaging, power, connectivity and recording integration around H100-HTC1800.",
+  "heroHeading": "Custom industrial-site camera.",
+  "heroValue": "Define the view.\nSpecify the image.",
+  "heroDescription": "Use the Hitelecom H100-HTC1800 dome-camera reference as a starting point for industrial-site visual monitoring. Develop the configuration around the scene, observation distance, lighting, installation conditions and receiving system. Agree the optics, imaging, power and connection requirements, then validate the proposed configuration against representative site conditions.",
+  "reviewNotice": "H100-HTC1800 is a supplied camera design reference. Imaging and electrical specifications, supported functions and qualification evidence are established in the approved project documents.",
+  "interfaceCards": [
+    {
+      "type": "Imaging",
+      "title": "Start with the observation task",
+      "text": "Define what the operator needs to see, the target distance, scene width and relevant movement. Match image detail, coverage and lighting requirements to that task before choosing the imaging configuration.",
+      "examples": [
+        "Equipment state and operating-area context",
+        "Lens coverage and mounting-position review",
+        "Agreed image-detail and motion acceptance criteria"
+      ]
+    },
+    {
+      "type": "Installation",
+      "title": "Coordinate the physical location",
+      "text": "Review the mounting surface, viewing direction, service access and environmental exposure. Specify the camera assembly, cable entry, installation hardware and power arrangement for the approved location.",
+      "examples": [
+        "Mounting height, clearance and viewing obstructions",
+        "Site lighting, reflections and local conditions",
+        "Documented electrical and mechanical arrangement"
+      ]
+    },
+    {
+      "type": "Integration",
+      "title": "Define where images are used",
+      "text": "Identify the receiving equipment and whether the project requires live viewing, image transfer, recording or a combination. Agree the supported interfaces and application workflow in the configuration proposal.",
+      "examples": [
+        "Selected receiver and viewing workflow",
+        "Recording, retention and access requirements",
+        "End-to-end compatibility and acceptance testing"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Observation-led specification",
+      "text": "Start with a visible target and an operational question. Define the image evidence an operator needs to understand the equipment or site activity, then turn it into measurable project requirements."
+    },
+    {
+      "title": "Coverage and mounting review",
+      "text": "Coordinate the scene width, working distance, viewing angle and mounting position. Review obstructions and service access before approving the proposed optical and mechanical arrangement."
+    },
+    {
+      "title": "Lighting and contrast assessment",
+      "text": "Provide representative scene images and lighting conditions, including glare, shadows and relevant low-light periods. Use them to define and evaluate the required imaging behaviour."
+    },
+    {
+      "title": "Image detail and motion requirements",
+      "text": "Specify the target detail, movement and useful update behaviour for the observation task. Agree resolution, lens, exposure and frame-rate requirements as part of the camera configuration."
+    },
+    {
+      "title": "Power and connection planning",
+      "text": "Define the supply, electrical interfaces and connection method for the installation and receiving equipment. Confirm cable routing, associated device loads and the approved wiring documentation."
+    },
+    {
+      "title": "Viewing and recording workflow",
+      "text": "Describe who uses the images and whether viewing, transfer or recording is required. Match the camera configuration to the selected receiving system and define retention and access requirements."
+    },
+    {
+      "title": "Environment and enclosure review",
+      "text": "Review the installation temperature, moisture, dust, cleaning conditions and mechanical exposure. Establish the required enclosure and supporting verification for the final camera assembly."
+    },
+    {
+      "title": "Documented customization and delivery",
+      "text": "Agree the camera configuration, product identification, any associated software scope and acceptance criteria before design approval. Record the delivered version and its supporting installation and test documents."
+    }
+  ],
+  "workflow": [
+    {
+      "title": "Describe the scene",
+      "text": "Share the observation target, scene dimensions, distance, mounting position and representative lighting. Explain what an operator must be able to confirm from the image."
+    },
+    {
+      "title": "Agree the configuration",
+      "text": "Review optics, imaging behaviour, power, connection method and receiving equipment. Put the approved hardware, software scope and verification criteria into the project specification."
+    },
+    {
+      "title": "Evaluate a representative setup",
+      "text": "Assess the agreed sample or configuration with realistic lighting, movement and receiver conditions. Review usable detail, coverage, integration and installation behaviour before release."
+    },
+    {
+      "title": "Document the delivered assembly",
+      "text": "Hand over the configuration record, installation instructions and agreed test evidence. Identify the receiving system, operating responsibilities and maintenance access for the completed installation."
+    }
+  ],
+  "applicationsIntro": "Explore eight application areas and 40 visual observation tasks. Each task begins with a scene an operator needs to understand, then identifies the view and integration requirements to review. These are representative project uses; the selected camera configuration and installation must be validated for the actual location.",
+  "groups": [
+    {
+      "id": "manufacturing-workshops",
+      "title": "Manufacturing & Workshop Areas",
+      "intro": "Frame production activity, equipment access and service areas for human visual review. Define the observation task and viewing conditions first; the camera reference does not establish machine-vision inspection, dimensional measurement or safety-control performance.",
+      "tasks": [
+        {
+          "title": "Production-area overview",
+          "text": "Give operators a visual overview of the selected production area to support routine coordination and review of visible activity.",
+          "interface": "Define the area to be included, observation distance and receiving viewing system.",
+          "control": "Agree the visible activities that matter to the operator and the surrounding areas that should stay outside the view.",
+          "verification": "Review representative operating conditions, obstructions, reflections and changes in lighting.",
+          "imageKey": "htc1800-production-overview",
+          "imageAlt": "Production equipment and access aisles across an industrial factory floor."
+        },
+        {
+          "title": "Conveyor-transfer context",
+          "text": "Provide visual context around a conveyor transfer area when staff need to review material movement or attend a service request.",
+          "interface": "Specify the transfer point, expected movement and the image-delivery route required for review.",
+          "control": "Frame the transfer area and adjacent access space without placing the installation within moving machinery.",
+          "verification": "Assess motion rendering, occlusion by handled items and visibility at the intended viewing position.",
+          "imageKey": "htc1800-conveyor-transfer",
+          "imageAlt": "A conveyor handling parcels in a production or logistics transfer area."
+        },
+        {
+          "title": "Machine-service area visibility",
+          "text": "Support authorized staff in reviewing the external machine area during setup, service coordination and routine operation.",
+          "interface": "Define the external viewpoint, machine access points and the viewing arrangement needed by the service team.",
+          "control": "Keep the observation scope outside guarded machine functions and identify the visual context required for the service task.",
+          "verification": "Check guards, open doors, operator positions and lighting for their effect on the selected view.",
+          "imageKey": "htc1800-machine-service-area",
+          "imageAlt": "A machine tool with an external control panel and adjacent service access."
+        },
+        {
+          "title": "Packaging-area workflow context",
+          "text": "Show the selected packaging area so staff can review the visible workflow and coordinate attendance when required.",
+          "interface": "Specify the packaging zone, working distance and any requested viewing or recording arrangement.",
+          "control": "Review the installation location against hygiene, cleaning and access requirements for the production area.",
+          "verification": "Use representative packaging activity to assess glare from surfaces, obstructions and required image detail.",
+          "imageKey": "htc1800-packaging-workflow",
+          "imageAlt": "Packaging and processing equipment in a food-production environment."
+        },
+        {
+          "title": "Electronics work-cell context",
+          "text": "Provide a visual reference for manual handling and service activity around an electronics work area.",
+          "interface": "Define the work-area boundary and the level of general activity detail required for the viewing task.",
+          "control": "Use the scene for human workflow context; any board-quality inspection or measurement belongs to a separately specified system.",
+          "verification": "Check bench lighting, handling occlusions and the agreed scope for workplace image access.",
+          "imageKey": "htc1800-electronics-work-cell",
+          "imageAlt": "A technician handling a circuit-board assembly in an electronics work area."
+        }
+      ],
+      "imageKey": "htc1800-production-overview",
+      "imageAlt": "Production equipment and access aisles across an industrial factory floor."
+    },
+    {
+      "id": "warehouses-logistics",
+      "title": "Warehouses & Logistics",
+      "intro": "Support human review of storage access, goods handling and handover areas. Specify the actual view and the receiving workflow; visual context is separate from stock transactions, temperature records or automated item identification.",
+      "tasks": [
+        {
+          "title": "Storage-aisle overview",
+          "text": "Give staff a view of a selected warehouse aisle and its access routes for routine operational review.",
+          "interface": "Define aisle length, rack height, observation position and the viewing destination.",
+          "control": "Agree which rack-facing and circulation areas need to be visible rather than assuming one viewpoint covers the whole warehouse.",
+          "verification": "Check rack occlusion, changes in stored goods and representative aisle lighting.",
+          "imageKey": "htc1800-storage-aisles",
+          "imageAlt": "Warehouse racking and a clear central storage aisle."
+        },
+        {
+          "title": "Dispatch staging and handover",
+          "text": "Provide visual context for pallets and cartons staged near dispatch doors during the agreed goods-handover workflow.",
+          "interface": "Specify the staging zone, door positions and any requested image-review arrangement.",
+          "control": "Coordinate the view with the handover process without treating images as a substitute for dispatch records.",
+          "verification": "Review door-open backlighting, vehicle obstruction and changes in pallet positions.",
+          "imageKey": "htc1800-dispatch-staging",
+          "imageAlt": "A warehouse dispatch staging zone with loading doors, pallets and a clear access route."
+        },
+        {
+          "title": "Packing and returns work areas",
+          "text": "Support review of visible packing and returns activity around a defined bench and its adjacent storage space.",
+          "interface": "Define the bench view, handling area and authorized receiving viewer or record system.",
+          "control": "Frame the general work process; label reading, barcode capture and automatic item verification are separate requirements.",
+          "verification": "Check hand and carton occlusion, surface reflections and the image detail agreed for the task.",
+          "imageKey": "htc1800-packing-returns-bench",
+          "imageAlt": "A packing and returns work area with a bench, cartons and adjacent storage."
+        },
+        {
+          "title": "Cold-store access context",
+          "text": "Show the selected cold-store access or shelving area when staff need visual context alongside the site operating records.",
+          "interface": "Specify the viewpoint, lighting and required image delivery for the storage area.",
+          "control": "Qualify the installation for the actual temperature, condensation and cleaning conditions; keep temperature monitoring on its specified sensors.",
+          "verification": "Review door cycles, moisture effects, fogging risk and visibility between stored containers.",
+          "imageKey": "htc1800-cold-store-access",
+          "imageAlt": "A refrigerated storage area with shelving, containers and nearby service equipment."
+        },
+        {
+          "title": "Cold-chain loading context",
+          "text": "Provide visual context for a defined refrigerated loading or unloading handover area.",
+          "interface": "Define the loading position, vehicle approach and the part of the handover process to be viewed.",
+          "control": "Use images to assist human review of the handover; product condition and cold-chain compliance require their own records.",
+          "verification": "Check changing daylight, loading-door positions and obstruction by vehicles and handled goods.",
+          "imageKey": "htc1800-cold-chain-handover",
+          "imageAlt": "Refrigerated logistics vehicles and a cold-chain loading environment."
+        }
+      ],
+      "imageKey": "htc1800-storage-aisles",
+      "imageAlt": "Warehouse racking and a clear central storage aisle."
+    },
+    {
+      "id": "building-shared",
+      "title": "Building Entrances & Shared Areas",
+      "intro": "Plan views of entrances, shared routes and building-service spaces around a defined operational purpose. Agree the scene boundary, authorized access and any recording requirements with the building operator.",
+      "tasks": [
+        {
+          "title": "Entrance-lobby visibility",
+          "text": "Give authorized staff visual context for an entrance lobby and the shared circulation space serving the building.",
+          "interface": "Define entrance coverage, viewing distance and the receiving system required by the building operator.",
+          "control": "Set the view around the agreed common area and avoid unrelated private spaces or unnecessary close personal detail.",
+          "verification": "Assess entrance backlighting, reflections from glazing and obstruction around the reception area.",
+          "imageKey": "htc1800-building-lobby",
+          "imageAlt": "A building entrance lobby with reception space and shared circulation routes."
+        },
+        {
+          "title": "Shared-corridor observation",
+          "text": "Support visual review of a selected corridor junction and common service-room access points.",
+          "interface": "Specify the corridor boundary, door positions and the intended observation viewpoint.",
+          "control": "Agree the purpose and image-access scope for the shared route; private-room interiors remain outside the requested view.",
+          "verification": "Check changes in corridor lighting, opening doors and the detail needed at the far end of the scene.",
+          "imageKey": "htc1800-building-corridor",
+          "imageAlt": "A shared building corridor with service-room doors and a clear junction."
+        },
+        {
+          "title": "Facilities shared-space review",
+          "text": "Provide visual context for a shared building workspace used for facilities coordination and service attendance.",
+          "interface": "Define the common operational area and any requested connection to the authorized viewing workflow.",
+          "control": "Review the view with the building operator so desks, displays and unrelated personal information are not included unnecessarily.",
+          "verification": "Check daylight variation, screen reflections and the agreed scene boundaries.",
+          "imageKey": "htc1800-facilities-shared-space",
+          "imageAlt": "A shared office workspace with meeting furniture and large windows."
+        },
+        {
+          "title": "Server-room service access",
+          "text": "Give authorized facilities staff visual context for a selected server-room aisle or service-access area.",
+          "interface": "Specify the aisle, doorway and receiving viewer needed for the facilities task.",
+          "control": "Frame access and service activity while protecting unrelated display contents and the separate IT-security process.",
+          "verification": "Review rack occlusion, room lighting, installation access and the local environmental conditions.",
+          "imageKey": "htc1800-server-room-access",
+          "imageAlt": "Server racks and a service aisle in a data-centre equipment room."
+        },
+        {
+          "title": "Shared self-service areas",
+          "text": "Support human review of the common area around self-service equipment within a building.",
+          "interface": "Define the equipment-front area, nearby circulation route and required image-review destination.",
+          "control": "Focus on the agreed operational space; payments, customer identification and equipment transactions remain separate systems.",
+          "verification": "Check display reflections, window backlighting and obstruction during normal equipment use.",
+          "imageKey": "htc1800-self-service-area",
+          "imageAlt": "Self-service vending machines in a bright shared building area."
+        }
+      ],
+      "imageKey": "htc1800-building-lobby",
+      "imageAlt": "A building entrance lobby with reception space and shared circulation routes."
+    },
+    {
+      "id": "plant-utilities",
+      "title": "Plant Rooms & Utilities",
+      "intro": "Add visual context around visible equipment and service access in utility spaces. Define the observation location and environment; measured temperature, pressure, electrical condition and dedicated alarms remain separate from camera images.",
+      "tasks": [
+        {
+          "title": "Pump-room overview",
+          "text": "Provide a view of the selected pump-room equipment area and service route for routine human review.",
+          "interface": "Specify the pumps and access space to be included and the viewing arrangement required by the operator.",
+          "control": "Use images to understand visible site context alongside the station instrumentation and service procedure.",
+          "verification": "Check equipment occlusion, reflections from pipework, room lighting and moisture at the mounting position.",
+          "imageKey": "htc1800-pump-room-overview",
+          "imageAlt": "Pumps, valves and pipework inside a building utility room."
+        },
+        {
+          "title": "HVAC service-area context",
+          "text": "Give facilities staff visual context for an air-handling service area before coordinating attendance.",
+          "interface": "Define the equipment-front view and the required route for staff to access the images.",
+          "control": "Frame the service space and visible equipment surroundings; airflow, thermal condition and control status require their own measurements.",
+          "verification": "Assess vibration at the installation, local lighting, door positions and maintenance access.",
+          "imageKey": "htc1800-hvac-service-access",
+          "imageAlt": "Air-handling equipment and protected building-services enclosures."
+        },
+        {
+          "title": "Compressed-air utility areas",
+          "text": "Support review of the visible surroundings of compressor and air-receiver equipment.",
+          "interface": "Specify the equipment area, observation distance and any requested review or record workflow.",
+          "control": "Set the view around the approved service area rather than using appearance as a pressure or equipment-health measurement.",
+          "verification": "Check vibration exposure, glare, equipment shielding and the normal lighting conditions.",
+          "imageKey": "htc1800-compressor-utility",
+          "imageAlt": "Compressed-air equipment, an air receiver and connected service pipework."
+        },
+        {
+          "title": "Electrical service-room visibility",
+          "text": "Provide a visual reference for an electrical service room and its approved maintenance access area.",
+          "interface": "Define a viewpoint outside electrical exclusion zones and the required receiving viewer.",
+          "control": "Agree access and review responsibilities with the electrical-site operator; switching and protective functions remain within their approved systems.",
+          "verification": "Check location approval, cabinet doors, lighting and installation clearances.",
+          "imageKey": "htc1800-electrical-service-room",
+          "imageAlt": "An electrical service room with closed switchgear and a separate maintenance workstation."
+        },
+        {
+          "title": "Heating and hot-water service context",
+          "text": "Show the visible service area around heating or hot-water plant when staff need operational context.",
+          "interface": "Define the pipework area, safe observation position and required image-delivery arrangement.",
+          "control": "Keep the requested view separate from temperature, pressure and protective-trip measurements.",
+          "verification": "Review heat exposure, steam or condensation, access restrictions and visibility under normal operation.",
+          "imageKey": "htc1800-thermal-utility-area",
+          "imageAlt": "Heating and hot-water service equipment with insulated pipework."
+        }
+      ],
+      "imageKey": "htc1800-pump-room-overview",
+      "imageAlt": "Pumps, valves and pipework inside a building utility room."
+    },
+    {
+      "id": "energy-remote",
+      "title": "Energy & Remote Facilities",
+      "intro": "Develop visual-observation tasks for selected energy and unattended facilities. Confirm the mounting location, environmental suitability, power and communication design for the actual project before assigning the camera to an outdoor or restricted installation.",
+      "tasks": [
+        {
+          "title": "Substation service-area context",
+          "text": "Give authorized staff a view of an approved auxiliary service area within a substation facility.",
+          "interface": "Specify the visible area, separation from restricted equipment and the receiving viewing arrangement.",
+          "control": "Define the task as supporting visual context; utility approvals, protection systems and safety decisions are separate project requirements.",
+          "verification": "Check site permissions, mounting environment, electromagnetic conditions and the required scene detail.",
+          "imageKey": "htc1800-substation-service-area",
+          "imageAlt": "Substation service enclosures and adjacent outdoor electrical infrastructure."
+        },
+        {
+          "title": "Solar-site service-route visibility",
+          "text": "Support review of a selected access route and equipment-service area at a solar installation.",
+          "interface": "Define the route, nearby equipment and observation distance for the requested view.",
+          "control": "Assess the complete outdoor installation and the site viewing workflow rather than assuming direct exposure is supported by the reference enclosure.",
+          "verification": "Check changing sunlight, shadows, dust, mounting stability and any obstructions along the route.",
+          "imageKey": "htc1800-solar-service-route",
+          "imageAlt": "Solar arrays, service enclosures and an access route at a generation site."
+        },
+        {
+          "title": "Battery-installation service context",
+          "text": "Provide visual context for approved service activity around battery-installation auxiliary equipment.",
+          "interface": "Specify the visible service area and the viewing destination required by the facility operator.",
+          "control": "Use the scene alongside the battery-management and protection systems; images do not replace battery-state or fire measurements.",
+          "verification": "Review installation location, restricted areas, lighting and the site’s qualification requirements.",
+          "imageKey": "htc1800-battery-service-context",
+          "imageAlt": "Battery modules and adjacent protected service equipment."
+        },
+        {
+          "title": "Telecom-site service access",
+          "text": "Show a selected communications-site service area to assist authorized staff in reviewing visible conditions and attendance.",
+          "interface": "Define equipment access points, the observation viewpoint and the requested means of image delivery.",
+          "control": "Agree the complete power and communication arrangement for the camera project and the site access procedure.",
+          "verification": "Check enclosure conditions, line of sight, local lighting and mounting exposure.",
+          "imageKey": "htc1800-telecom-service-access",
+          "imageAlt": "Telecommunications equipment and protected service enclosures at a site."
+        },
+        {
+          "title": "Remote-facility perimeter context",
+          "text": "Provide a view of the selected boundary or service entrance of an unattended facility for human review.",
+          "interface": "Define the part of the perimeter to be observed and the required receiving workflow.",
+          "control": "Agree any access or recording process with the site operator; automatic intrusion classification is not part of this reference description.",
+          "verification": "Review light variation, vegetation or fence occlusion and the environmental conditions at the proposed mounting location.",
+          "imageKey": "htc1800-remote-perimeter-context",
+          "imageAlt": "A remote facility boundary with fencing, a service entrance and protected site equipment."
+        }
+      ],
+      "imageKey": "htc1800-substation-service-area",
+      "imageAlt": "Substation service enclosures and adjacent outdoor electrical infrastructure."
+    },
+    {
+      "id": "water-environment",
+      "title": "Water & Environmental Sites",
+      "intro": "Use visual context to support the operation of accessible water and environmental-service areas. Specify the location and viewing objective; water quality, level, flow and other process measurements remain the responsibility of their instruments and control systems.",
+      "tasks": [
+        {
+          "title": "Water-service equipment context",
+          "text": "Show a selected manifold and surrounding service area to assist staff in reviewing visible installation conditions.",
+          "interface": "Define the pipework and access space to be observed and the viewing destination.",
+          "control": "Agree which visible conditions matter to the service task without treating appearance as a flow or water-quality measurement.",
+          "verification": "Check pipework occlusion, reflections, access restrictions and moisture at the installation point.",
+          "imageKey": "htc1800-water-service-manifold",
+          "imageAlt": "A water-service manifold with pipework, valves and nearby maintenance access."
+        },
+        {
+          "title": "Treatment-site walkway overview",
+          "text": "Provide a visual overview of a selected treatment-site walkway and adjacent equipment area.",
+          "interface": "Specify the walkway, observation distance and required image-delivery arrangement.",
+          "control": "Coordinate the view with the site’s operating procedure and qualify the installation for its actual environmental exposure.",
+          "verification": "Check sunlight, reflections from water, railings and changing obstruction along the selected route.",
+          "imageKey": "htc1800-treatment-walkways",
+          "imageAlt": "Wastewater-treatment basins with operational walkways and service areas."
+        },
+        {
+          "title": "Drainage-station service context",
+          "text": "Support staff in reviewing visible access conditions around an approved drainage-station service area.",
+          "interface": "Define the equipment-access zone and any requested means of viewing or reviewing images.",
+          "control": "Locate the installation according to flood and moisture conditions; pumping decisions and flood alarms remain separate functions.",
+          "verification": "Review mounting height and access, light variation, moisture exposure and potential scene obstruction.",
+          "imageKey": "htc1800-drainage-station-access",
+          "imageAlt": "Drainage-pump equipment and protected service facilities inside a utility structure."
+        },
+        {
+          "title": "Sampling-system service visibility",
+          "text": "Provide visual context for a sampling-system service area during authorized attendance and routine review.",
+          "interface": "Specify the instrument service space and the level of general activity detail required.",
+          "control": "Use the view to support the service workflow; sample analysis and process alarm decisions remain with their specified systems.",
+          "verification": "Check cabinet-door obstruction, tubing glare, lighting and any location qualification requirements.",
+          "imageKey": "htc1800-sampling-service-space",
+          "imageAlt": "A sampling-system installation with instruments, tubing and a service enclosure."
+        },
+        {
+          "title": "Water-quality equipment-area context",
+          "text": "Show the selected instrument-rack surroundings when staff need context for a service request or site review.",
+          "interface": "Define the equipment area and the requested receiving-view arrangement.",
+          "control": "Keep analytical readings and calibrated measurements within the instrument data system; agree any human-visible detail as an acceptance objective.",
+          "verification": "Review reflections, cable or instrument occlusion, room lighting and service access.",
+          "imageKey": "htc1800-water-quality-equipment",
+          "imageAlt": "Water-quality instrument equipment arranged in a protected service rack."
+        }
+      ],
+      "imageKey": "htc1800-water-service-manifold",
+      "imageAlt": "A water-service manifold with pipework, valves and nearby maintenance access."
+    },
+    {
+      "id": "laboratories-controlled",
+      "title": "Laboratories & Controlled Workspaces",
+      "intro": "Plan human visual review of authorized work areas, storage access and outer handover spaces. Define privacy, process information and installation requirements with the operator; the reference is not a laboratory measurement, automated quality-inspection or cleanroom-qualified camera specification.",
+      "tasks": [
+        {
+          "title": "Laboratory workspace overview",
+          "text": "Provide a general view of the agreed laboratory workspace to support activity review and service coordination.",
+          "interface": "Define the bench area, access aisles and receiving viewer required for the task.",
+          "control": "Frame general activity within the approved scope and protect unrelated displays, personal information and confidential work.",
+          "verification": "Assess instrument occlusion, bench lighting and the level of visible context required in representative conditions.",
+          "imageKey": "htc1800-laboratory-workspace",
+          "imageAlt": "An orderly laboratory workspace with bench instruments and clear access aisles."
+        },
+        {
+          "title": "Sample-preparation workflow context",
+          "text": "Support human review of the visible sample-preparation area and its surrounding workspace.",
+          "interface": "Specify the bench coverage, observation distance and any requested review or recording workflow.",
+          "control": "Use images for process context; sample identity, chain-of-custody and analytical results remain within the laboratory’s documented systems.",
+          "verification": "Check hand and container occlusion, surface glare and the agreed boundaries of the recorded scene.",
+          "imageKey": "htc1800-sample-preparation",
+          "imageAlt": "A sample-preparation bench with closed containers and organized laboratory equipment."
+        },
+        {
+          "title": "Laboratory storage-access context",
+          "text": "Give authorized staff a view of the selected laboratory storage area and its access space.",
+          "interface": "Define the cabinets, shelves and access route to be included in the view.",
+          "control": "Coordinate the image-access and any retention arrangements with the storage procedure; inventory and environmental records remain separate.",
+          "verification": "Review shelf occlusion, opening doors, available lighting and the installation conditions.",
+          "imageKey": "htc1800-laboratory-storage",
+          "imageAlt": "Laboratory storage cabinets and organized containers in a controlled workspace."
+        },
+        {
+          "title": "Electronics-bench activity context",
+          "text": "Provide visual context for manual work and service activity at an electronics bench.",
+          "interface": "Define the bench boundary and the general activity detail required for the authorized viewer.",
+          "control": "Use the selected scene to support workflow review; electrical testing, component identification and quality measurement require their own methods.",
+          "verification": "Check tool and hand occlusion, task lighting and unwanted inclusion of confidential display content.",
+          "imageKey": "htc1800-electronics-bench",
+          "imageAlt": "An electronics workbench with tools, test equipment and circuit assemblies."
+        },
+        {
+          "title": "Controlled-room outer handover",
+          "text": "Show an agreed outer entry or material-handover area serving a controlled workspace.",
+          "interface": "Specify the outer-side viewpoint, doors and pass-through area required for observation.",
+          "control": "Qualify the mounting location and data-handling scope with the site operator; cleanroom or containment approvals require separate evidence.",
+          "verification": "Review door movements, reflections, cleaning practices and the boundaries of the requested view.",
+          "imageKey": "htc1800-controlled-room-entry",
+          "imageAlt": "An outer controlled-room entry with a material pass-through and service access space."
+        }
+      ],
+      "imageKey": "htc1800-laboratory-workspace",
+      "imageAlt": "An orderly laboratory workspace with bench instruments and clear access aisles."
+    },
+    {
+      "id": "transport-service",
+      "title": "Transport & Site-Service Areas",
+      "intro": "Support human review of entrances, yards, loading points and maintenance access from an approved installation position. Define coverage and environmental requirements for the project; the examples do not specify automatic plate recognition, traffic enforcement or safety-control functions.",
+      "tasks": [
+        {
+          "title": "Site-entrance activity context",
+          "text": "Give authorized staff a view of the agreed entrance area and the adjacent service approach.",
+          "interface": "Define entrance coverage, observation distance and the receiving viewing workflow.",
+          "control": "Coordinate image access with the site’s entrance procedure; identity checks and gate movement remain with their respective systems.",
+          "verification": "Assess approach lighting, passing-vehicle obstruction, mounting exposure and the required scene detail.",
+          "imageKey": "htc1800-site-entrance",
+          "imageAlt": "An industrial site entrance with a guard point and vehicle approach."
+        },
+        {
+          "title": "Loading-bay activity review",
+          "text": "Provide visual context around a selected loading bay and nearby service route during goods handling.",
+          "interface": "Specify loading positions, door coverage and the requested review or recording destination.",
+          "control": "Frame the agreed handover activity and assess the lighting design for the actual operating periods.",
+          "verification": "Review vehicle occlusion, open-door backlighting, artificial lighting and visibility of the selected work zone.",
+          "imageKey": "htc1800-loading-bay-context",
+          "imageAlt": "An industrial loading bay with service doors, vehicles and artificial lighting."
+        },
+        {
+          "title": "Logistics-yard operational overview",
+          "text": "Support a general visual review of the selected yard area and its service activity.",
+          "interface": "Define the area, observation distance and receiving viewer needed by the yard operator.",
+          "control": "Agree the useful operational context and any additional viewpoints required; the scene is not an automatic vehicle-tracking function.",
+          "verification": "Check changing goods positions, large-equipment obstruction, lighting and installation exposure.",
+          "imageKey": "htc1800-yard-service-context",
+          "imageAlt": "A container logistics yard with freight-handling equipment and service routes."
+        },
+        {
+          "title": "Covered vehicle-service entrances",
+          "text": "Show an agreed covered entrance and maintenance-bay approach to assist service coordination.",
+          "interface": "Specify the sheltered viewpoint, vehicle approach and adjacent pedestrian route to be included.",
+          "control": "Review the view as an operational aid; workshop access, vehicle control and safety procedures remain independently defined.",
+          "verification": "Check bright-to-shaded transitions, parked-vehicle obstruction and the conditions at the mounting location.",
+          "imageKey": "htc1800-covered-service-entry",
+          "imageAlt": "A covered vehicle-service entrance with a maintenance bay and separated pedestrian route."
+        },
+        {
+          "title": "Roadside service-access context",
+          "text": "Provide visual context for an approved roadside equipment-service point and its immediate access area.",
+          "interface": "Define the cabinet-service area, observation position and required image-delivery workflow.",
+          "control": "Coordinate the installation with the site authority and keep the purpose within the documented maintenance task.",
+          "verification": "Check environmental exposure, passing-traffic obstruction, cabinet-door positions and safe maintenance access.",
+          "imageKey": "htc1800-roadside-service-cabinet",
+          "imageAlt": "A roadside service cabinet beside urban transport infrastructure."
+        }
+      ],
+      "imageKey": "htc1800-site-entrance",
+      "imageAlt": "An industrial site entrance with a guard point and vehicle approach."
+    }
+  ],
+  "specsIntro": "This H100-HTC1800 customization reference organizes the camera requirements for your project. The table organizes the imaging, installation and system requirements to agree for the project. Numeric performance, electrical ratings and supported functions are defined in the approved configuration documents.",
+  "specGroups": [
+    {
+      "title": "Product reference",
+      "rows": [
+        [
+          "Product model",
+          "H100-HTC1800"
+        ],
+        [
+          "Product visual",
+          "Hitelecom dome-camera reference, as illustrated."
+        ],
+        [
+          "Document scope",
+          "Custom camera reference and project-configuration framework; not a fixed-performance specification."
+        ]
+      ]
+    },
+    {
+      "title": "Optics and imaging",
+      "rows": [
+        [
+          "Observation target",
+          "Define the visible equipment, activity or site condition and the detail required for operator review."
+        ],
+        [
+          "Coverage and lens",
+          "Specify scene width, target distance, mounting height and required coverage; agree the lens and viewing arrangement."
+        ],
+        [
+          "Image parameters",
+          "Agree the image sensor, output resolution, frame-rate behaviour and exposure requirements for the selected configuration."
+        ],
+        [
+          "Lighting evaluation",
+          "Assess representative lighting, shadows, reflections and relevant operating periods using the agreed sample or configuration."
+        ]
+      ]
+    },
+    {
+      "title": "Power and connection",
+      "rows": [
+        [
+          "Supply",
+          "Define the supply method, rated electrical values, consumption and protection requirements in the project specification."
+        ],
+        [
+          "Interfaces",
+          "Agree the physical connections, signal or network interface, connector and cable arrangement for the receiving equipment."
+        ],
+        [
+          "Installation wiring",
+          "Obtain the approved wiring schedule, earthing requirements and associated device power budget."
+        ]
+      ]
+    },
+    {
+      "title": "Viewing and system integration",
+      "rows": [
+        [
+          "Image workflow",
+          "Define live viewing, image transfer or recording requirements and the equipment responsible for each function."
+        ],
+        [
+          "Receiver compatibility",
+          "Verify the agreed output method, formats, protocols and supported functions with the selected receiver."
+        ],
+        [
+          "Recording and access",
+          "Agree the recording location, retention needs, authorized access and operating responsibilities."
+        ],
+        [
+          "Software scope",
+          "Identify any required integration work and document the functions included in the delivered project."
+        ]
+      ]
+    },
+    {
+      "title": "Mechanical and environmental",
+      "rows": [
+        [
+          "Camera assembly",
+          "Dome-style product visual. Agree the supplied enclosure, mounting components and service arrangement."
+        ],
+        [
+          "Installation location",
+          "Review mounting surface, coverage, obstructions, cable entry and maintenance access."
+        ],
+        [
+          "Environmental requirements",
+          "Specify operating conditions, moisture, dust, cleaning and mechanical exposure for the completed assembly."
+        ],
+        [
+          "Qualification evidence",
+          "Agree any required ingress, impact, EMC, safety or sector-specific evidence for the supplied configuration."
+        ]
+      ]
+    },
+    {
+      "title": "Customization and acceptance",
+      "rows": [
+        [
+          "Project inputs",
+          "Scene photographs, observation target, distances, mounting position, lighting, receiving equipment and installation requirements."
+        ],
+        [
+          "Design approval",
+          "Record the selected hardware, imaging parameters, electrical and interface definition, product identification and any software scope."
+        ],
+        [
+          "Acceptance checks",
+          "Agree scene coverage, usable image detail, lighting and motion conditions, receiver operation, power behaviour and installation checks."
+        ],
+        [
+          "Delivery documents",
+          "Approved configuration record, installation instructions, test evidence and maintenance information within the agreed supply scope."
+        ]
+      ]
+    }
+  ],
+  "platformTitle": "From the scene.\nTo the receiving system.",
+  "platformIntro": "Define the complete image path for the project: the camera configuration, connection, receiving equipment and the people who use the images. Viewing, recording, remote access and any associated notifications are system requirements to allocate and verify with the selected equipment and software.",
+  "platformBullets": [
+    "Image use: agree the required viewing or recording workflow, receiving equipment and available connection. Define the output method and supported functions in the configuration proposal.",
+    "Installation: coordinate power, cable routing, mounting and local lighting with the camera assembly. Review the actual environment and service access before approving the location.",
+    "Acceptance: evaluate coverage and useful image detail with representative scenes, motion and lighting. Document receiver compatibility, authorized access and the delivered configuration."
+  ],
+  "faqs": [
+    {
+      "q": "What is H100-HTC1800?",
+      "a": "H100-HTC1800 is a dome-camera reference for custom industrial-site visual monitoring projects. The project specification establishes the supplied imaging configuration, electrical details, connection method and supported functions."
+    },
+    {
+      "q": "Does the model name identify a resolution or viewing angle?",
+      "a": "No resolution, field of view or image-sensor specification is defined by the model name on this page. Agree those parameters against the observation task and record them in the approved configuration documents."
+    },
+    {
+      "q": "How should the lens and coverage be selected?",
+      "a": "Provide the target distance, scene width, mounting height, viewing direction and the detail an operator must see. Review obstructions and representative scenes, then evaluate the agreed lens and camera configuration at the intended position."
+    },
+    {
+      "q": "How are resolution and frame rate specified?",
+      "a": "Start with the required image detail and movement in the scene. Agree resolution, frame-rate behaviour, exposure and the receiving-system requirements together. Evaluate useful image detail under the relevant conditions rather than selecting only by a headline pixel count."
+    },
+    {
+      "q": "Are low-light, infrared or automatic day/night functions included?",
+      "a": "Define the lighting conditions and any required operating periods in the project brief. The configuration proposal identifies the imaging functions and any associated illumination included in the supply. The illustrated housing alone does not specify these functions or their performance."
+    },
+    {
+      "q": "Which power supply and connection method does it use?",
+      "a": "The supplied visual does not establish a rated supply, electrical connector or communications interface. Specify the available site power, receiver and connection requirements, then obtain the approved electrical values, wiring schedule and interface definition for the selected configuration."
+    },
+    {
+      "q": "Can it work with a recorder, existing video system or cloud platform?",
+      "a": "Identify the intended receiving system and required viewing or recording workflow. Review the output method, formats, protocols, access requirements and any integration work in the proposal, then validate the agreed functions together. No particular recorder, protocol or built-in cloud service is specified by this reference alone."
+    },
+    {
+      "q": "Does it provide AI analytics or machine-vision inspection?",
+      "a": "This page describes visual monitoring projects for operator review. Automated classification, identification, counting, defect detection or dimensional measurement would require a separately defined and validated development scope; they are not established functions of this camera reference."
+    },
+    {
+      "q": "Can images be reviewed alongside sensor events?",
+      "a": "A project may define a workflow in which authorized staff review images together with external measurement records or events. Agree the receiving software, data interfaces, time relationship and user workflow before implementation. Camera images do not replace the independent measurement or protection system."
+    },
+    {
+      "q": "Can it be installed outdoors or in a demanding industrial location?",
+      "a": "Review the complete installation against temperature, moisture, dust, cleaning, mechanical exposure and any site-specific qualification requirements. Confirm the enclosure, mounting and supporting evidence for the final assembly before selection. A dome-style appearance does not establish an ingress, impact or hazardous-area rating."
+    },
+    {
+      "q": "Are the application photographs examples of camera image quality?",
+      "a": "They illustrate the observation environments and project tasks. They are not recorded H100-HTC1800 footage, installed customer examples or demonstrations of image resolution, low-light performance or analytics. Use representative sample evaluation to confirm actual imaging performance."
+    },
+    {
+      "q": "What should a camera customization enquiry include?",
+      "a": "Share scene photographs, the observation target, required detail, distances, mounting position and lighting conditions. Add the available power, receiving system, connection needs, environmental requirements, expected quantity and delivery documents so the proposal can define configuration, development and acceptance scope."
+    }
+  ],
+  "enquiryIntro": "Share the scene and what the image must help your team understand. Include mounting conditions, lighting, available power and the intended receiving system so we can review the H100-HTC1800 reference and define the proposed camera configuration and validation scope.",
+  "slug": "custom-camera-h100-htc1800",
+  "kind": "Product",
+  "image": "h100-htc1800-original.png",
+  "imageWidth": 800,
+  "imageHeight": 800,
+  "datasheet": "/downloads/h100-htc1800-camera-reference-datasheet-en.pdf"
+}
