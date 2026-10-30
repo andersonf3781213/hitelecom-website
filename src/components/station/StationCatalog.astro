@@ -12,23 +12,8 @@ const types=[{id:'275',label:c.sidebar.weatherLabel,product:c.sidebar.weatherPro
 ---
 <link rel="stylesheet" href="/css/station-catalog.css"/>
 <main id="main" class="pclone station-catalog-page" data-station-catalog data-category={validCid}>
-  <section class="catalog-hero" aria-labelledby="catalog-hero-title">
-    <img class="catalog-hero-background" src="/assets/sensor-hero-background.webp" alt="" aria-hidden="true" width="1920" height="1090" loading="eager" decoding="async"/>
-    <div class="indexmid catalog-hero-inner">
-      <nav class="catalog-breadcrumb" aria-label={c.breadcrumbAria}><a href={local('/')}>{c.home}</a><span aria-hidden="true">/</span><span>{selected}</span></nav>
-      <div class="catalog-hero-copy">
-        <p class="catalog-eyebrow">{c.heroEyebrow}</p>
-        <h1 id="catalog-hero-title">{split(heroHeading).map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}<span>{split(c.heroValue).map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</span></h1>
-        <p class="catalog-hero-description">{c.categoryDescriptions[validCid]}</p>
-        <a class="catalog-hero-action" href="#cate">{c.heroAction}<span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="catalog-hero-products">
-        <figure><img src="/assets/h600.webp" alt={c.heroImageAltH600} width="627" height="635" loading="eager" decoding="async"/><figcaption>H600</figcaption></figure>
-        <figure><img src="/assets/h700.webp" alt={c.heroImageAltH700} width="627" height="635" loading="eager" decoding="async"/><figcaption>H700</figcaption></figure>
-        <p>{c.heroImageNote}</p>
-      </div>
-    </div>
-  </section>
+  <section class="original-station-hero" aria-label={selected}><img src="/assets/banner-257.jpg" width="1920" height="1000" alt={selected} fetchpriority="high" loading="eager" decoding="async"/></section>
+  <h1 class="catalog-sr-only">{selected}</h1>
   <div id="cate" class="catalog-anchor"></div>
   <nav class="pro_1 pro_1_ser" aria-label={c.categoryNav.ariaLabel}>
     <div class="indexmid pro_1_mid"><ul>{c.categoryNav.items.map(item=><li><a class:list={['css3',{'on':item.path.includes('/cid/257')}]} href={local(item.path)} aria-current={item.path.includes('/cid/257')?'page':undefined}>{item.label}</a></li>)}</ul>

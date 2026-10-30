@@ -73,3 +73,6 @@
 /* V132b：卡片改为与 Sensors/Gateways 老目录一致的 "Readmore" 精灵图按钮（灰底常态/蓝底悬停），去掉描述段 */
 .station-catalog-page .pro_2_mid_right_1_mid_2_3 span{display:block;margin:1.2em auto 0;width:107px;height:27px;background-image:url(/images/css/product/img9.png);background-position:center top;background-repeat:no-repeat}
 .station-catalog-page .sensor-catalog>ul>li>a:hover .pro_2_mid_right_1_mid_2_3 span{background-position:center bottom}
+/* V132c：Weather Station 目录 hero 恢复为最初未修改的原图横幅 */
+.station-catalog-page .original-station-hero{line-height:0}
+.station-catalog-page .original-station-hero img{width:100%;height:auto;display:block}
