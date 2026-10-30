@@ -1,0 +1,718 @@
+{
+  "family": "HR-10 Series",
+  "model": "HR-10 Series",
+  "picturedModel": "HR10-T2",
+  "title": "HR-10 IoT-Controller & 4G-DTU | RS485, TTL, 4–20 mA | Hitelecom",
+  "metaDescription": "Verbinden Sie kompatible RS485-, TTL- und 4–20 mA-Instrumente mit der kompakten HR-10 Mobilfunk-DTU, lokaler Datenerfassung, Fernzugriff und Überwachung über Hitelecom Cloud.",
+  "heroHeading": "IoT-Controller & DTU.",
+  "heroValue": "Verbinden Sie Ihre Instrumente.\nBringen Sie Felddaten online.",
+  "heroDescription": "Die Hitelecom HR-10 Serie verbindet Feldinstrumente und Gerätedaten über eine kompakte drahtlose Datenübertragungseinheit (DTU) mit der Fernüberwachung. Schnittstellenoptionen für RS485, TTL und 4–20 mA ermöglichen projektspezifische serielle und analoge Verbindungen. Lokale Datenerfassung und -verarbeitung, 4G-Mobilfunkkommunikation, unterstützte Fernsteuerung und Firmware-Upgrades bilden einen durchgängigen Weg vom Instrument zum Betrieb. Sehen Sie hochgeladene Überwachungsdaten online in Hitelecom Cloud ein und erhalten Sie Benachrichtigungen bei Überschreitung konfigurierter Grenzwerte.",
+  "reviewNotice": "Schnittstellentypen, Anzahl, unterstützte Kombinationen und elektrische Grenzwerte richten sich nach der gelieferten Konfiguration. Gleichen Sie die Ausführung vor der Bestellung mit der Instrumentenliste ab.",
+  "interfaceCards": [
+    {
+      "type": "RS485",
+      "title": "Serielle Feldinstrumente",
+      "text": "Verbinden Sie kompatible Instrumente über eine physische RS485-Schnittstelle. Legen Sie Geräteprotokoll, Adressierung, Datenbelegung und serielle Einstellungen für die gewählte Integration fest. Eine RS485-Verbindung allein belegt keine Protokollkompatibilität.",
+      "examples": [
+        "Datenerfassung von Instrumenten und Zählern",
+        "Dokumentierte Datenschnittstellen von Geräten",
+        "Unterstützte Lese- und Befehlsübertragung"
+      ]
+    },
+    {
+      "type": "TTL",
+      "title": "Serielle Integration eingebetteter Systeme",
+      "text": "Stellen Sie eine serielle Verbindung zu kompatiblen eingebetteten Modulen oder Geräteelektroniken her. Prüfen Sie vor dem Anschluss Logikpegel, Pinbelegung, Erdung und das unterstützte Datenformat.",
+      "examples": [
+        "Datenverbindungen für OEM-Geräte",
+        "Eingebettete Messmodule",
+        "Dokumentierte serielle Befehlsschnittstellen"
+      ]
+    },
+    {
+      "type": "4–20 mA",
+      "title": "Stromschleifenmessungen",
+      "text": "Erfassen Sie kompatible Stromschleifensignale von Messumformern über die gelieferte Analogschnittstelle. Stimmen Sie Kanalausführung, Schleifenverdrahtung, Messumformerversorgung und Messwertskalierung auf die gewählte Version ab.",
+      "examples": [
+        "Externe Druck- und Füllstandsmessumformer",
+        "Temperatur- und Prozessmessumformer",
+        "Weitere kompatible Instrumente mit Stromausgang"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Kompakte Geräteintegration",
+      "text": "Ein kompaktes Gehäuse unterstützt die Installation neben Instrumenten und Geräteelektronik. Planen Sie Befestigung, Kabelführung, Antennenfreiraum und Wartungszugang entsprechend der tatsächlichen Installation."
+    },
+    {
+      "title": "Schnittstellenoptionen für RS485 und TTL",
+      "text": "Binden Sie kompatible serielle Instrumente und eingebettete Geräte in den Datenpfad ein. Stimmen Sie elektrischen Anschluss, Geräteprotokoll und lesbare Datenpunkte für die gelieferte Schnittstellenausführung ab."
+    },
+    {
+      "title": "Erfassung von 4–20 mA-Messumformern",
+      "text": "Schließen Sie kompatible externe Messumformer mit Stromausgang an. Definieren Sie Messbereich, physikalische Einheiten und Strom-Wert-Zuordnung, damit Online-Messwerte ihre physikalische Bedeutung behalten."
+    },
+    {
+      "title": "Datenerfassung und -verarbeitung vor Ort",
+      "text": "Erfassen und verarbeiten Sie Felddaten in der Nähe der angeschlossenen Geräte. Legen Sie die erforderliche Dateninterpretation und das Aktualisierungsverhalten für die gelieferte Anwendung fest."
+    },
+    {
+      "title": "Mobilfunk-Datenübertragung",
+      "text": "Nutzen Sie eine 4G-Mobilfunkverbindung für die Datenkommunikation aus der Ferne. Wählen Sie Modul, Frequenzbänder, Antennenausführung und SIM-Dienst für das Installationsland und das Netz aus."
+    },
+    {
+      "title": "Online-Daten und Grenzwertmeldungen",
+      "text": "Sehen Sie hochgeladene Überwachungsdaten online in Hitelecom Cloud ein und erhalten Sie Benachrichtigungen bei Überschreitung konfigurierter Grenzwerte. Konfigurieren Sie Anlagenbezeichnungen, physikalische Einheiten, Überwachungsgrenzen und den Benachrichtigungsablauf."
+    },
+    {
+      "title": "Unterstützte Fernoperationen und Upgrades",
+      "text": "Senden Sie zulässige Befehle über die dokumentierte Schnittstelle des angeschlossenen Geräts und warten Sie die Gerätefirmware aus der Ferne. Legen Sie vor der Inbetriebnahme Befehlsberechtigungen, lokale Prioritäten und die Verifikation fest."
+    },
+    {
+      "title": "Hardware- und Software-Watchdogs",
+      "text": "Hardware- und Software-Watchdog-Mechanismen unterstützen die Gerätewiederherstellung bei definierten Fehlerzuständen. Prüfen Sie bei der Inbetriebnahme das Rücksetz- und Wiederverbindungsverhalten der gelieferten Konfiguration."
+    }
+  ],
+  "workflow": [
+    {
+      "title": "Messung definieren und erfassen",
+      "text": "Identifizieren Sie Instrument, elektrische Schnittstelle und Datenformat. Dokumentieren Sie für serielle Punkte die lesbare Datenbelegung; definieren Sie für Stromschleifenpunkte Quellbereich, Einheiten und Skalierung."
+    },
+    {
+      "title": "Über das gewählte Netz übertragen",
+      "text": "Stimmen Sie Mobilfunkvariante, Antenne und SIM-Dienst auf den Standort ab. Definieren Sie Erfassungs- und Übertragungsanforderungen getrennt und prüfen Sie anschließend die installierte Verbindung sowie das Aktualisierungsverhalten."
+    },
+    {
+      "title": "Online-Daten und Meldungen prüfen",
+      "text": "Sehen Sie hochgeladene Messwerte in Hitelecom Cloud ein. Prüfen Sie bei der Inbetriebnahme Anlagenzuordnung, physikalische Einheiten und konfigurierte Grenzwertmeldungen anhand des Quellinstruments."
+    },
+    {
+      "title": "Unterstützte Fernoperationen ausführen",
+      "text": "Verwenden Sie ausschließlich Befehle, die für das angeschlossene Gerät dokumentiert und für die Installation vereinbart sind. Prüfen Sie das physische Ergebnis oder den rückgelesenen Instrumentenwert unabhängig von der Befehlsübertragung und bestätigen Sie die Funktion nach einem Firmware-Upgrade."
+    }
+  ],
+  "applicationsIntro": "Acht Anwendungsbereiche mit jeweils fünf Aufgaben zur Instrumentenanbindung zeigen, wo eine kompakte Mobilfunk-DTU Felddaten online verfügbar machen kann. Diese 40 Aufgaben sind Auswahlbeispiele, keine Kanalanzahl und keine Zusage, dass alle Aufgaben in einem Gerät ausgeführt werden. Wählen Sie für jede Installation die bestückte Schnittstellenausführung, kompatible externe Instrumente und die erforderlichen Datenaustauschvorgänge aus. Fernaktionen gelten nur, wenn das angeschlossene Gerät eine dokumentierte, unterstützte Befehlsschnittstelle bereitstellt.",
+  "groups": [
+    {
+      "id": "water-wastewater",
+      "title": "Instrumentierung für Wasser und Abwasser",
+      "intro": "Machen Sie ausgewählte Wassermesswerte und Steuerungsdaten aus Pumpstationen, Speicheranlagen und Aufbereitungsanlagen online verfügbar. Stimmen Sie die gelieferte HR-10 Schnittstelle auf jedes externe Instrument ab und definieren Sie anschließend Quellkennungen, Einheiten sowie den Ablauf für Überwachung oder zulässige Befehle.",
+      "imageKey": "hr10-water-pump-station",
+      "imageAlt": "Wasserpumpstation mit blauen Pumpen und Rohrleitungen",
+      "tasks": [
+        {
+          "title": "Instrumentenmesswerte einer Pumpstation",
+          "text": "Erfassen Sie Druck, Durchfluss oder andere dokumentierte Messwerte von einem Instrument der Pumpstation oder einer lokalen Gerätesteuerung.",
+          "interface": "Wählen Sie für die bestellte Konfiguration eine kompatible RS485-Instrumentenschnittstelle oder einen unterstützten 4–20 mA-Messeingang.",
+          "control": "Verwenden Sie konfigurierte Messgrenzen für Cloud-Meldungen; Pumpenbefehle erfordern eine dokumentierte Schnittstelle an der lokalen Steuerung.",
+          "verification": "Vergleichen Sie hochgeladene Werte mit dem Quellinstrument und prüfen Sie Einheiten, Skalierung und Gerätezuordnung.",
+          "imageKey": "hr10-water-pump-station",
+          "imageAlt": "Wasserpumpstation mit blauen Pumpen und Rohrleitungen"
+        },
+        {
+          "title": "Daten von Wasserqualitätsanalysatoren",
+          "text": "Laden Sie ausgewählte Wasserqualitätswerte eines externen Analysators oder Probenahmeracks zur betrieblichen Beurteilung hoch.",
+          "interface": "Stimmen Sie Analysatorausgang, Kommunikationseinstellungen und Datendefinitionen auf die gelieferte serielle oder Stromschleifenschnittstelle ab.",
+          "control": "Konfigurieren Sie Überwachungsmeldungen anhand der vereinbarten Prozessgrenzen; Kalibrierung und Reinigung des Analysators erfolgen weiterhin nach dessen Geräteverfahren.",
+          "verification": "Prüfen Sie jeden übertragenen Parameter anhand der Analysatoranzeige und erfassen Sie Wartungs- oder Kalibrierzustände getrennt.",
+          "imageKey": "hr10-water-quality-rack",
+          "imageAlt": "Probenahmerack zur Wasserqualitätsmessung mit Instrumenten-Durchflusszellen"
+        },
+        {
+          "title": "Füllstandsmessungen an Wasserspeichern",
+          "text": "Schließen Sie einen externen Füllstandsmessumformer an, damit Bediener den Speicherzustand beurteilen können, ohne für jede Ablesung eigens vor Ort zu sein.",
+          "interface": "Verwenden Sie den gewählten Messumformerausgang und legen Sie den physikalischen Füllstandsbereich, die Einheiten und die Signalinterpretation fest.",
+          "control": "Richten Sie konfigurierte Füllstandsbenachrichtigungen ein; jede Förderanforderung muss über die unterstützte Schnittstelle der Tank- oder Pumpensteuerung erfolgen.",
+          "verification": "Prüfen Sie Referenzfüllstände und Signalrichtung und unterscheiden Sie ungültige Quellmesswerte von tatsächlich leeren oder vollen Speichern.",
+          "imageKey": "hr10-storage-level",
+          "imageAlt": "Landwirtschaftlicher Wasserspeicher mit benachbarter Förderpumpe"
+        },
+        {
+          "title": "Betriebsdaten von Probenahmesystemen",
+          "text": "Führen Sie verfügbare Messwerte und Diagnoseinformationen einer Probenahmepumpe in derselben Anlagenansicht wie das zugehörige Instrument zusammen.",
+          "interface": "Lesen Sie unterstützte Daten aus dem Probenahmeaggregat oder einem kompatiblen externen Messumformer; vereinbaren Sie die Datenzuordnung vor der Integration.",
+          "control": "Senden Sie eine Probenahmeanforderung nur, wenn das Aggregat diesen Befehl und die zugehörigen lokalen Betriebsfreigaben dokumentiert.",
+          "verification": "Prüfen Sie Probenfluss oder Instrumentenrückmeldung unabhängig; eine angenommene Nachricht bestätigt nicht, dass eine Probe den Analysator erreicht hat.",
+          "imageKey": "hr10-sampling-system",
+          "imageAlt": "Externe Probenahmepumpe mit Instrumentenschläuchen"
+        },
+        {
+          "title": "Telemetrie von Entwässerungssumpf und Pumpensteuerung",
+          "text": "Überwachen Sie eine externe Sumpffüllstandsmessung zusammen mit den von der Entwässerungssteuerung bereitgestellten Betriebsdaten.",
+          "interface": "Wählen Sie eine kompatible Schnittstelle zum Füllstandsmessumformer oder zur Steuerung und identifizieren Sie die in der gelieferten Ausführung verfügbaren Messwerte.",
+          "control": "Nutzen Sie Füllstandsmeldungen für Wartungseinsätze; Pumpenabläufe, Trockenlaufschutz und lokale Übersteuerungen verbleiben im Entwässerungssystem.",
+          "verification": "Prüfen Sie bei der Inbetriebnahme Füllstandsanzeigen und vergleichen Sie gemeldete Pumpenzustände mit der installierten Steuerung.",
+          "imageKey": "hr10-drainage-telemetry",
+          "imageAlt": "Entwässerungssumpf mit Pumpeninstallation an einer Verkehrsanlage"
+        }
+      ]
+    },
+    {
+      "id": "process-instruments",
+      "title": "Prozess- und Versorgungsinstrumente",
+      "intro": "Erweitern Sie die Sichtbarkeit vorhandener Industrieinstrumente mit einer kompakten drahtlosen Datenverbindung. Im Mittelpunkt steht das Auslesen kompatibler Messumformer- oder Gerätedaten; jede Fernaktion ist auf Befehle begrenzt, die das angeschlossene Gerät und die vereinbarte Integration ausdrücklich unterstützen.",
+      "imageKey": "hr10-process-instruments",
+      "imageAlt": "Druck- und Temperaturinstrumente an einem Prozessskid",
+      "tasks": [
+        {
+          "title": "Prozessdruck- und Temperaturdaten",
+          "text": "Binden Sie ausgewählte Druck- und Temperaturinstrumente eines Aggregatskids in einen Online-Überwachungsablauf ein.",
+          "interface": "Stimmen Sie serielle Datendefinitionen oder unterstützte 4–20 mA-Ausgänge auf die bestellte Schnittstelle und die physikalischen Messbereiche ab.",
+          "control": "Richten Sie konfigurierte Grenzwertmeldungen für die gewählten Prozessgrößen ein; unabhängige Prozessschutzfunktionen bleiben bestehen.",
+          "verification": "Vergleichen Sie Messwerte an repräsentativen Betriebspunkten und prüfen Sie Einheiten, Signalskalierung und Instrumentendiagnose.",
+          "imageKey": "hr10-process-instruments",
+          "imageAlt": "Druck- und Temperaturinstrumente an einem Prozessskid"
+        },
+        {
+          "title": "Informationen von Druckluftaggregaten",
+          "text": "Übertragen Sie ausgewählte Kompressormesswerte und Betriebsinformationen über die dokumentierte externe Schnittstelle des Aggregats in die Cloud-Überwachung.",
+          "interface": "Bestätigen Sie die verfügbaren Steuerungswerte und Kommunikationseinstellungen; leiten Sie Kompatibilität nicht allein aus einem RS485-Anschluss ab.",
+          "control": "Erlauben Sie Fernbefehle für das Aggregat nur, wenn dessen Hersteller und das lokale Betriebsverfahren sie unterstützen.",
+          "verification": "Vergleichen Sie gemeldete Zustände mit dem Kompressorbedienfeld und prüfen Sie lokalen Modus, Neustartbedingungen und Alarmbedeutungen.",
+          "imageKey": "hr10-compressor-data",
+          "imageAlt": "Industriekompressoraggregat mit örtlichen Betriebsanzeigen"
+        },
+        {
+          "title": "Messwerterfassung im Kühlkreislauf",
+          "text": "Laden Sie externe Druck-, Temperatur- oder Durchflussmessungen eines Kühlkreislaufs zur Beurteilung der Hilfssystembedingungen hoch.",
+          "interface": "Verwenden Sie einen kompatiblen Instrumentenausgang oder eine dokumentierte Aggregatschnittstelle und ordnen Sie jeden Messwert seinem physischen Messort zu.",
+          "control": "Konfigurieren Sie Benachrichtigungen für die vereinbarten Grenzen; Ablaufsteuerung und Schutz verbleiben bei der Kühlanlage.",
+          "verification": "Prüfen Sie Instrumentenmesswerte und Gültigkeit der Quelldaten und verifizieren Sie anschließend den Benachrichtigungsweg für einen vereinbarten Testzustand.",
+          "imageKey": "hr10-cooling-loop",
+          "imageAlt": "Kühlkreislaufpumpe und Rohrleitungen eines Wärmetauschers"
+        },
+        {
+          "title": "Integration externer Instrumentenschränke",
+          "text": "Binden Sie eine Instrumententafel oder einen Schaltschrank ein, die bereits dokumentierte serielle Messdaten bereitstellen.",
+          "interface": "Vereinbaren Sie elektrische RS485-Ausführung, serielle Einstellungen, Gerätedatendefinitionen und zulässige Zugriffe für die gelieferte Konfiguration.",
+          "control": "Trennen Sie den reinen Lesezugriff zur Überwachung von unterstützten Konfigurations- oder Steuerbefehlen, bevor Fernzugriff aktiviert wird.",
+          "verification": "Validieren Sie die ausgewählten Instrumentenpunkte und Antworten anhand der Quellgeräte und des freigegebenen Anschlussplans.",
+          "imageKey": "hr10-serial-instrument-cabinet",
+          "imageAlt": "Externe Industrieinstrumente und Klemmenverdrahtung in einem Serviceschrank"
+        },
+        {
+          "title": "Druckinstrumentierung in der Gasversorgung",
+          "text": "Erfassen Sie ausgewählte Messwerte der Gasdruckinstrumentierung über einen kompatiblen externen Messumformer oder eine Steuerungsschnittstelle.",
+          "interface": "Definieren Sie für das gewählte Instrument Quellausgang, Druckeinheiten, Betriebsbereich und die erforderliche Installationsausführung.",
+          "control": "Nutzen Sie die Daten zur Betriebsüberwachung und für konfigurierte Meldungen; spezielle Gasschutz- und Notfallfunktionen bleiben unabhängig.",
+          "verification": "Prüfen Sie Messwertskalierung und Quellfehler; stellen Sie die Telemetrieverbindung nicht als Gassicherheitssystem dar.",
+          "imageKey": "hr10-gas-utility",
+          "imageAlt": "Gasregelstation mit Rohrleitungen zur Druckregelung"
+        }
+      ]
+    },
+    {
+      "id": "building-services",
+      "title": "Gebäudetechnik und Innenraumbedingungen",
+      "intro": "Binden Sie ausgewählte Zähler, Instrumente in Technikräumen und Umgebungsmessumformer in den Gebäudebetrieb ein. Definieren Sie Messwerterfassung, Cloud-Meldungen und zulässige Gerätebefehle eindeutig; die speziellen Gebäudeleit-, Elektroschutz- und Sicherheitssysteme behalten ihre Aufgaben.",
+      "imageKey": "hr10-rs485-meter-panel",
+      "imageAlt": "Elektrische Gebäudeunterzähler und Klemmenverdrahtung in einer Verteilung",
+      "tasks": [
+        {
+          "title": "Daten elektrischer Unterzähler",
+          "text": "Lesen Sie die dokumentierten Messwerte eines externen Gebäudeunterzählers aus, um den Verbrauch online beurteilen zu können.",
+          "interface": "Verwenden Sie eine kompatible serielle Zählerschnittstelle und bestätigen Sie Datendefinitionen, Einheiten und die elektrische Anschlussausführung.",
+          "control": "Definieren Sie Überwachungsgrenzen oder Auswertungsansichten; Abrechnung, Tarifberechnung und Abschaltfunktionen sind gesonderte Integrationsanforderungen.",
+          "verification": "Vergleichen Sie ausgewählte Werte mit der Zähleranzeige und prüfen Sie Anlagenbezeichnungen, Einheiten und den Messzeitraum der Quelle.",
+          "imageKey": "hr10-rs485-meter-panel",
+          "imageAlt": "Elektrische Gebäudeunterzähler und Klemmenverdrahtung in einer Verteilung"
+        },
+        {
+          "title": "Instrumentierung der Rechenzentrumsinfrastruktur",
+          "text": "Übernehmen Sie ausgewählte Raum- oder Hilfssystemmesswerte externer Gebäudeinstrumente in eine Online-Betriebsansicht.",
+          "interface": "Stimmen Sie die Datenschnittstelle des Instruments oder der Gebäudesteuerung auf die gelieferte HR-10 Konfiguration und die Messpunktliste ab.",
+          "control": "Nutzen Sie konfigurierte Meldungen zur Unterstützung der Bediener; kritische Kühlung, Stromumschaltung und Geräteschutz verbleiben bei ihren jeweiligen Systemen.",
+          "verification": "Prüfen Sie Quellwerte und Benachrichtigungswege, ohne laufende Gebäudesteuerungsfunktionen zu unterbrechen.",
+          "imageKey": "hr10-data-centre-facilities",
+          "imageAlt": "Rechenzentrumsgang mit Geräteracks und technischer Infrastruktur"
+        },
+        {
+          "title": "Druck in der Gebäudewasserversorgung",
+          "text": "Erfassen Sie ausgewählte Druck- oder Anlagenmesswerte von Instrumenten im Pumpenraum eines Gebäudes.",
+          "interface": "Wählen Sie einen kompatiblen Messumformerausgang oder eine dokumentierte lokale Steuerungsschnittstelle und definieren Sie den überwachten Kreislauf und die Einheiten.",
+          "control": "Richten Sie Messwertmeldungen ein; jede Fernanforderung muss die unterstützte Schnittstelle der Gebäudetechnik und den Vorrang der lokalen Steuerung berücksichtigen.",
+          "verification": "Vergleichen Sie lokale und hochgeladene Messwerte und testen Sie den vereinbarten Meldezustand unter Beibehaltung des Pumpensystemschutzes.",
+          "imageKey": "hr10-building-water",
+          "imageAlt": "Wassertechnische Anlage im Innenraum mit Pumpen, Behältern und Rohrleitungen"
+        },
+        {
+          "title": "Instrumentenwerte von Kessel- und Warmwasseranlagen",
+          "text": "Laden Sie ausgewählte externe Temperatur-, Druck- oder Verbrauchsmesswerte einer Kessel- oder Warmwasseranlage hoch.",
+          "interface": "Stimmen Sie Instrumentenausgang, Messbereich und standortspezifische Verdrahtungsanforderungen auf die bestellte Erfassungsschnittstelle ab.",
+          "control": "Konfigurieren Sie Überwachungsbenachrichtigungen; Brennersteuerung, Druckschutz und Anlagenabläufe verbleiben bei der dafür vorgesehenen Ausrüstung.",
+          "verification": "Prüfen Sie Quellmesswerte und Messorte, insbesondere ob ein Wert Vorlauf, Rücklauf oder einen anderen Anlagenpunkt darstellt.",
+          "imageKey": "hr10-hot-water-plant",
+          "imageAlt": "Kessel- und Warmwasseranlage mit Pumpen und angeschlossenen Rohrleitungen"
+        },
+        {
+          "title": "Instrumentendaten von Lüftungsanlagen und Wasserkreisläufen",
+          "text": "Binden Sie ausgewählte Instrumente der Lüftungs-, Heizungs- oder Kühltechnik ein, um gebäudetechnische Bedingungen online zu beurteilen.",
+          "interface": "Verwenden Sie kompatible externe Messumformerausgänge oder dokumentierte Gerätedaten mit festgelegten Quelleinheiten und Messorten.",
+          "control": "Begrenzen Sie Fernanforderungen auf unterstützte übergeordnete Funktionen; lokale Temperaturregelung, Frostschutz und Verriegelungen verbleiben beim Gerät.",
+          "verification": "Vergleichen Sie hochgeladene Messwerte mit lokalen Instrumenten und bestätigen Sie zulässige Befehlsantworten unabhängig von Messwertaktualisierungen.",
+          "imageKey": "hr10-ahu-instrumentation",
+          "imageAlt": "Lüftungsanlage mit wasserführenden Rohrleitungen und externen Instrumenten"
+        }
+      ]
+    },
+    {
+      "id": "agriculture-aquaculture",
+      "title": "Landwirtschaft und Aquakultur",
+      "intro": "Führen Sie kompatible Instrumente aus Gewächshaus, Bewässerung und Aquakultur in einem gemeinsamen Überwachungsablauf zusammen. Wählen Sie externe Sensoren und lokale Geräteschnittstellen für den Standort aus; die HR-10 stellt den konfigurierten Datenpfad und die Verarbeitung bereit und ersetzt weder das Messinstrument noch die landwirtschaftliche Steuerung.",
+      "imageKey": "hr10-greenhouse-data",
+      "imageAlt": "Bewässerungs- und Fertigationstechnik in einem Gewächshaus",
+      "tasks": [
+        {
+          "title": "Erfassung von Gewächshausinstrumenten",
+          "text": "Erfassen Sie ausgewählte Klima- oder Kultivierungsmesswerte externer Gewächshausinstrumente oder einer kompatiblen lokalen Steuerung.",
+          "interface": "Vereinbaren Sie Quellausgänge, Einheiten und serielle Datendefinitionen für die in der Installation vorhandenen Instrumente.",
+          "control": "Konfigurieren Sie kultur- oder standortspezifische Überwachungsgrenzen; Gewächshausaktoren verbleiben in ihrer dokumentierten Steuerungsausführung.",
+          "verification": "Vergleichen Sie hochgeladene Werte mit lokalen Messwerten und prüfen Sie den Messort, bevor Sie eine Änderung interpretieren.",
+          "imageKey": "hr10-greenhouse-data",
+          "imageAlt": "Bewässerungs- und Fertigationstechnik in einem Gewächshaus"
+        },
+        {
+          "title": "Daten von Bewässerungsventilsteuerungen",
+          "text": "Lesen Sie die Ventilbetriebsinformationen einer Bewässerungssteuerung oder eines Stellantriebs mit kompatibler externer Datenschnittstelle aus.",
+          "interface": "Bestätigen Sie die unterstützten seriellen Zustandswerte und Befehle; die HR-10 Schnittstellenbeschreibung belegt keine direkte Motoransteuerung.",
+          "control": "Übermitteln Sie eine autorisierte Anforderung ausschließlich über die dokumentierte Steuerungsschnittstelle und deren lokale Betriebsfreigaben.",
+          "verification": "Prüfen Sie tatsächliche Ventilstellung oder Durchfluss unabhängig von einem angenommenen Befehl und behalten Sie die lokale Handbedienung bei.",
+          "imageKey": "hr10-irrigation-valve",
+          "imageAlt": "Motorbetriebenes Bewässerungsventil und Verteiler"
+        },
+        {
+          "title": "Druckmessungen in Bewässerungssystemen",
+          "text": "Laden Sie externe Druckmesswerte an einem Bewässerungsverteiler hoch, um die Versorgungsbedingungen beurteilen zu können.",
+          "interface": "Stimmen Sie Ausgang, Einheiten und Bereich des Druckmessumformers auf die gelieferte Schnittstelle und die Messpunktdefinition ab.",
+          "control": "Legen Sie passende Überwachungsgrenzen für das System fest; Bewässerungsabläufe und Druckschutz verbleiben in der lokalen Installation.",
+          "verification": "Prüfen Sie Messwerte unter vereinbarten Betriebsbedingungen und unterscheiden Sie einen Messfehler von einem tatsächlichen Druckereignis.",
+          "imageKey": "hr10-irrigation-pressure",
+          "imageAlt": "Druckinstrumente an einem Bewässerungsverteiler"
+        },
+        {
+          "title": "Messwerte von Fertigationsaggregaten",
+          "text": "Machen Sie ausgewählte Messwerte und Betriebsinformationen eines Dosieraggregats über dessen verfügbare Instrumenten- oder Steuerungsausgänge online verfügbar.",
+          "interface": "Definieren Sie vor dem Anschluss die unterstützte Quellschnittstelle und die Bedeutung jedes gemessenen oder gemeldeten Punktes.",
+          "control": "Nutzen Sie konfigurierte Benachrichtigungen oder eine dokumentierte übergeordnete Anforderung; Dosierrezepturen und Mischungsverhältnisse verbleiben bei der Aggregatsteuerung.",
+          "verification": "Vergleichen Sie Quellwerte und relevante Geräterückmeldungen; eine Datenaktualisierung aus der Ferne bestätigt keine korrekte Chemikaliendosierung.",
+          "imageKey": "hr10-fertigation-data",
+          "imageAlt": "Fertigations-Dosieranlage im Technikbereich eines Gewächshauses"
+        },
+        {
+          "title": "Wassermesswerte aus der Aquakultur",
+          "text": "Erfassen Sie ausgewählte Wasserzustandswerte externer Aquakulturinstrumente, um Teich- oder Beckenbedingungen online zu beurteilen.",
+          "interface": "Stimmen Sie die vorhandenen Analysator- oder Messumformerausgänge ab und definieren Sie Einheiten, Messorte und Wartungsanforderungen.",
+          "control": "Nutzen Sie konfigurierte Überwachungsmeldungen für Bedienereingriffe; Belüftungs- oder Behandlungsbefehle erfordern eine unterstützte lokale Geräteschnittstelle.",
+          "verification": "Prüfen Sie Messwerte anhand der Quellinstrumente und protokollieren Sie Reinigungs- oder Kalibrierereignisse, die die Interpretation beeinflussen können.",
+          "imageKey": "hr10-aquaculture-water",
+          "imageAlt": "Aquakulturteiche mit Belüftungseinrichtungen und Infrastruktur am Ufer"
+        }
+      ]
+    },
+    {
+      "id": "remote-energy-assets",
+      "title": "Abgelegene Stationen und Energieanlagen",
+      "intro": "Binden Sie ausgewählte Instrumente und Gerätesteuerungsdaten an verteilten Stationen ein, an denen eine kabelgebundene Anbindung unpraktisch ist. Legen Sie regionale Mobilfunkanbindung, Stromversorgung und Schutzinstallation getrennt fest und halten Sie den lokalen Gerätebetrieb unabhängig von der Verfügbarkeit einer Cloud-Verbindung.",
+      "imageKey": "hr10-remote-site",
+      "imageAlt": "Abgelegener Telekommunikationsstandort mit Geräteschränken und Antenneninfrastruktur",
+      "tasks": [
+        {
+          "title": "Gerätedaten abgelegener Stationen",
+          "text": "Erfassen Sie dokumentierte Messwerte und Wartungsinformationen von Instrumenten oder Gerätesteuerungen an einem abgelegenen Kommunikationsstandort.",
+          "interface": "Wählen Sie für jede Stationsanlage die unterstützte externe Datenschnittstelle und die Punktdefinitionen.",
+          "control": "Nutzen Sie Online-Überwachung und konfigurierte Meldungen; jeder Gerätebefehl muss dem unterstützten Ablauf der Stationssteuerung folgen.",
+          "verification": "Prüfen Sie Quellmesswerte und Anlagenzuordnung und vereinbaren Sie, wie nicht verfügbare oder veraltete Daten bei Verbindungsverlust gekennzeichnet werden.",
+          "imageKey": "hr10-remote-site",
+          "imageAlt": "Abgelegener Telekommunikationsstandort mit Geräteschränken und Antenneninfrastruktur"
+        },
+        {
+          "title": "Hilfsanlagentelemetrie an Solarstandorten",
+          "text": "Laden Sie ausgewählte Wechselrichter-, Versorgungs- oder Hilfsinstrumentendaten einer Solaranlage über eine kompatible externe Schnittstelle hoch.",
+          "interface": "Bestätigen Sie die dokumentierte Geräteschnittstelle und die Datendefinitionen für die gelieferte Integration; setzen Sie kein bestimmtes Wechselrichterprotokoll voraus.",
+          "control": "Nutzen Sie die Daten zur betrieblichen Beurteilung und für zulässige übergeordnete Aktionen; elektrische Schutz- und Netzfunktionen verbleiben in den dafür vorgesehenen Systemen.",
+          "verification": "Vergleichen Sie ausgewählte Quellwerte und Betriebszustände und prüfen Sie die lokalen und entfernten Zugriffsberechtigungen des Standorts.",
+          "imageKey": "hr10-solar-site",
+          "imageAlt": "Solaranlage mit technischen Feldschränken"
+        },
+        {
+          "title": "Informationen zur Stationsstromversorgung",
+          "text": "Lesen Sie verfügbare Stromversorgungsmesswerte oder Diagnosedaten einer kompatiblen Stationsstromsteuerung oder eines externen Messumformers aus.",
+          "interface": "Vereinbaren Sie Steuerungsdatenschnittstelle oder Messausgang sowie die Interpretation von Normal-, Wartungs- und Fehlerzuständen.",
+          "control": "Leiten Sie konfigurierte Meldungen in den Stationsserviceablauf; automatische Stromumschaltung und Lastschutz verbleiben im Stromversorgungssystem.",
+          "verification": "Vergleichen Sie gemeldete Bedingungen mit der Quellsteuerung und testen Sie Benachrichtigungen nach einem autorisierten Wartungsverfahren.",
+          "imageKey": "hr10-station-power",
+          "imageAlt": "Notstromversorgung einer abgelegenen Station in einem Serviceschrank"
+        },
+        {
+          "title": "Upload von Batteriesystemmesswerten",
+          "text": "Schließen Sie einen externen Batterieüberwachungsmessumformer oder eine Steuerung an, die kompatible Messdaten bereitstellt.",
+          "interface": "Stimmen Sie Messumformerausgang oder serielle Datenschnittstelle ab und identifizieren Sie die dargestellte Batteriebank und den Messpunkt.",
+          "control": "Nutzen Sie Überwachungsmeldungen für die definierten elektrischen Grenzen; Laderegelung, Zellausgleich und Schutz verbleiben beim Batteriesystem.",
+          "verification": "Prüfen Sie Quellmessung und Skalierung und leiten Sie Batteriezustand oder Restlebensdauer nicht aus einem einzelnen Telemetriewert ab.",
+          "imageKey": "hr10-battery-measurements",
+          "imageAlt": "Stationsbatteriebank mit externem Überwachungsmessumformer"
+        },
+        {
+          "title": "Daten von Leckagemessumformern im Technikraum",
+          "text": "Laden Sie Messwerte oder Ereignisinformationen eines kompatiblen Leckageüberwachungsmessumformers oder einer lokalen Überwachungssteuerung hoch.",
+          "interface": "Verwenden Sie einen dokumentierten seriellen oder unterstützten Messausgang; ein einzelner Schalter oder passiver Fühler erfordert eine geeignete externe Schnittstelle.",
+          "control": "Senden Sie konfigurierte Benachrichtigungen an das Wartungspersonal; jeder Entwässerungsbefehl bleibt auf die dokumentierte lokale Steuerungsausführung begrenzt.",
+          "verification": "Testen Sie den physischen Erfassungsbereich und prüfen Sie die resultierende Quellanzeige und Cloud-Benachrichtigung in getrennten Schritten.",
+          "imageKey": "hr10-equipment-room-leakage",
+          "imageAlt": "Leckageerfassungsbereich auf dem Boden eines abgelegenen Technikraums"
+        }
+      ]
+    },
+    {
+      "id": "controlled-storage",
+      "title": "Kühlung und kontrollierte Lagerung",
+      "intro": "Binden Sie externe Temperatur-, Umgebungs- oder Gerätesteuerungsdaten aus gekühlten und kontrollierten Lagerbereichen ein. Definieren Sie für das Projekt Instrumentenpositionierung, Quellgenauigkeit und Benachrichtigungsanforderungen; eine Telemetrieverbindung belegt für sich weder einen validierten Lagerprozess noch einen Konformitätsnachweis.",
+      "imageKey": "hr10-coldroom-transmitter",
+      "imageAlt": "Kühlraum-Temperaturmessumformer mit kabelgebundenem externem Fühler",
+      "tasks": [
+        {
+          "title": "Daten von Kühlraum-Temperaturmessumformern",
+          "text": "Binden Sie einen kompatiblen externen Kühlraum-Temperaturmessumformer für den gewählten Lagerort in die Online-Überwachung ein.",
+          "interface": "Stimmen Sie den seriellen oder unterstützten 4–20 mA-Ausgang des Messumformers auf die gelieferte Schnittstelle und den Temperaturbereich ab.",
+          "control": "Richten Sie konfigurierte Grenzwertmeldungen ein; Kälteregelung und Geräteschutz verbleiben beim installierten Kühlsystem.",
+          "verification": "Vergleichen Sie hochgeladene Messwerte mit den Quellwerten und prüfen Sie Fühlerpositionierung sowie den vollständigen Benachrichtigungsweg.",
+          "imageKey": "hr10-coldroom-transmitter",
+          "imageAlt": "Kühlraum-Temperaturmessumformer mit kabelgebundenem externem Fühler"
+        },
+        {
+          "title": "Messwerte von Laborkühlschränken",
+          "text": "Erfassen Sie dokumentierte Messwerte eines externen Kühlschrankinstruments oder einer kompatiblen Überwachungssteuerung.",
+          "interface": "Bestätigen Sie für jeden überwachten Schrank die verfügbare Datenschnittstelle, Messeinheiten und Gerätekennungen.",
+          "control": "Konfigurieren Sie Benachrichtigungen anhand der vereinbarten Lagergrenzen; lokale Kühlung und unabhängige Alarme bleiben in Betrieb.",
+          "verification": "Prüfen Sie lokale Messwerte, Quellfehler und geplante Wartungsereignisse; Validierung und Aufbewahrungsanforderungen für Aufzeichnungen werden gesondert definiert.",
+          "imageKey": "hr10-laboratory-storage",
+          "imageAlt": "Laborkühlschränke zur Lagerung mit benachbartem Arbeitsbereich"
+        },
+        {
+          "title": "Messungen in gekühlten Verkaufsautomaten",
+          "text": "Laden Sie Temperatur- oder Diagnoseinformationen hoch, die eine gekühlte Automatensteuerung oder ein externer Messumformer bereitstellt.",
+          "interface": "Wählen Sie einen kompatiblen Instrumentenausgang oder eine dokumentierte Maschinendatenschnittstelle; Zahlungs- und Transaktionsdaten gehören nicht zu dieser Aufgabe.",
+          "control": "Nutzen Sie konfigurierte Messwertmeldungen; Fernanforderungen an den Automaten erfordern die unterstützte Schnittstelle des Automatenherstellers.",
+          "verification": "Vergleichen Sie Quellmesswert und Fachzuordnung und prüfen Sie die Unterscheidung zwischen Datenfehler und Kälteereignis.",
+          "imageKey": "hr10-refrigerated-vending",
+          "imageAlt": "Gekühltes Verkaufsautomatenfach mit externem Temperaturfühler"
+        },
+        {
+          "title": "Wartungsinformationen von Verkaufskühlmöbeln",
+          "text": "Erfassen Sie ausgewählte Betriebs- und Wartungsdaten einer Kühlmöbelsteuerung oder eines kompatiblen externen Instruments.",
+          "interface": "Vereinbaren Sie die dokumentierte Steuerungsschnittstelle sowie die für die Integration verfügbaren Mess- oder Diagnosepunkte.",
+          "control": "Nutzen Sie die Daten für Wartungsbenachrichtigungen; Abtauung, Temperaturregelung und Kompressorschutz verbleiben bei der Kältesteuerung.",
+          "verification": "Prüfen Sie Quellwerte und Diagnosedefinitionen am lokalen Kühlmöbel, bevor Sie Benachrichtigungsprioritäten festlegen.",
+          "imageKey": "hr10-retail-refrigeration",
+          "imageAlt": "Verkaufskühlmöbel mit geöffnetem Wartungsfach"
+        },
+        {
+          "title": "Daten von Umgebungsinstrumenten im Lager",
+          "text": "Laden Sie ausgewählte Temperatur-, Feuchte- oder andere dokumentierte Umgebungsmesswerte externer Lagerinstrumente hoch.",
+          "interface": "Stimmen Sie die vorhandenen Messumformerausgänge ab und identifizieren Sie die von jeder Quelle erfasste Zone und Messhöhe.",
+          "control": "Konfigurieren Sie Benachrichtigungen für die ausgewählten Lagerkriterien; Lüftungs- oder andere Befehle erfordern eine separate unterstützte Geräteschnittstelle.",
+          "verification": "Vergleichen Sie Instrumentenmesswerte und Lageplan; ein einzelner Punkt belegt nicht die Bedingungen im gesamten Lager.",
+          "imageKey": "hr10-warehouse-environment",
+          "imageAlt": "Lagergang mit Lagerregalen und Palettenstellplätzen"
+        }
+      ]
+    },
+    {
+      "id": "machine-oem",
+      "title": "Maschinen- und OEM-Integration",
+      "intro": "Ergänzen Sie bestehende Geräte und OEM-Instrumentenentwicklungen um einen definierten drahtlosen Datenpfad. RS485 und TTL beschreiben elektrische Schnittstellen und keine automatische Protokollkompatibilität; vereinbaren Sie Quellformat, Geräteverhalten und zulässigen Befehlsumfang vor der Integration der gewählten HR-10 Version.",
+      "imageKey": "hr10-plc-controller-data",
+      "imageAlt": "Industrieschaltschrank mit SPS-Komponenten und Klemmenverdrahtung",
+      "tasks": [
+        {
+          "title": "Daten vorhandener Gerätesteuerungen",
+          "text": "Laden Sie ausgewählte Messwerte oder Betriebsinformationen hoch, die eine SPS oder Gerätesteuerung über eine dokumentierte Schnittstelle bereitstellt.",
+          "interface": "Bestätigen Sie elektrische Schnittstelle, serielle Einstellungen und Quelldatendefinitionen; legen Sie die projektspezifisch erforderliche Integrationszuordnung fest.",
+          "control": "Trennen Sie Überwachungszugriff von unterstützten Schreib- oder Steuerbefehlen und behalten Sie die Betriebsprioritäten des Geräts bei.",
+          "verification": "Vergleichen Sie ausgewählte Punkte mit der Quellsteuerung und prüfen Sie, dass die Überwachung deren normalen Steuerungsablauf nicht verändert.",
+          "imageKey": "hr10-plc-controller-data",
+          "imageAlt": "Industrieschaltschrank mit SPS-Komponenten und Klemmenverdrahtung"
+        },
+        {
+          "title": "Betriebsinformationen von Förderanlagen",
+          "text": "Erfassen Sie ausgewählte Zählwerte, Zustände oder Diagnosen, die bereits von einer Förderanlagensteuerung oder einem kompatiblen Instrument bereitgestellt werden.",
+          "interface": "Lesen Sie die dokumentierten Steuerungsdaten; die HR-10 Schnittstellenbeschreibung impliziert keinen direkten Anschluss diskreter Sensoren.",
+          "control": "Erlauben Sie Geräteanforderungen ausschließlich über die unterstützte Befehlsschnittstelle des Lieferanten und im Rahmen lokaler Betriebsfreigaben.",
+          "verification": "Prüfen Sie gemeldete Informationen anhand des tatsächlichen Gerätebetriebs; Not-Halt- und Sicherheitsfunktionen bleiben unabhängig.",
+          "imageKey": "hr10-conveyor-information",
+          "imageAlt": "Förderanlage mit Prozesszustandssensoren und Steuerungsinfrastruktur"
+        },
+        {
+          "title": "Maschinenwartungs- und Diagnosedaten",
+          "text": "Übernehmen Sie verfügbare Wartungsinformationen oder ausgewählte Messwerte einer Maschinensteuerung in eine Online-Wartungsansicht.",
+          "interface": "Vereinbaren Sie die unterstützte externe Datenschnittstelle und unterscheiden Sie eine Messgröße von einem abgeleiteten Wartungscode.",
+          "control": "Nutzen Sie konfigurierte Benachrichtigungen für die ausgewählten Wartungszustände; Rücksetzfunktionen folgen dem Verfahren des Maschinenlieferanten.",
+          "verification": "Prüfen Sie die Bedeutung der Quelldiagnosen und Wartungszustände, ohne Telemetrie allein als vorausschauende Wartungsdiagnose darzustellen.",
+          "imageKey": "hr10-machine-service",
+          "imageAlt": "Industriemaschine mit Wartungsanzeige und geöffnetem Servicepanel"
+        },
+        {
+          "title": "Eingebettete TTL-Instrumentenmodule",
+          "text": "Integrieren Sie ein kompatibles OEM-Instrumentenmodul über eine dokumentierte serielle TTL-Verbindung im übergeordneten Gerät.",
+          "interface": "Bestätigen Sie Logikspannungskompatibilität, Signalreferenz, Pinbelegung, serielle Einstellungen und das Moduldatenformat für die gelieferte Ausführung.",
+          "control": "Begrenzen Sie ausgehende Befehle auf die vom Modul unterstützten und von der Anwendung des übergeordneten Geräts freigegebenen Befehle.",
+          "verification": "Validieren Sie Datenaustausch und Verhalten bei Anlauf, Rücksetzung und Wiederherstellung der Verbindung, bevor Sie das fertige Gerät integrieren.",
+          "imageKey": "hr10-ttl-module-workbench",
+          "imageAlt": "OEM-Instrumentenmodul und serielle TTL-Testverbindungen auf einem Elektronikarbeitsplatz"
+        },
+        {
+          "title": "Nachrüstung von Instrumenten an Prozessaggregaten",
+          "text": "Binden Sie vorhandene externe Instrumentendaten eines Prozessaggregats in einen definierten Online-Überwachungsablauf ein.",
+          "interface": "Wählen Sie die dokumentierte Instrumenten- oder Aggregatschnittstelle und vereinbaren Sie Quellkennungen, Messeinheiten und Integrationszugriffe.",
+          "control": "Nutzen Sie zulässige Überwachungs- oder übergeordnete Befehle; Prozessrezepturen, Abläufe und Geräteschutz verbleiben beim Aggregat.",
+          "verification": "Vergleichen Sie hochgeladene Werte mit den Quellinstrumenten und dokumentieren Sie Änderungen am Anschluss oder an der Datenzuordnung.",
+          "imageKey": "hr10-process-package-retrofit",
+          "imageAlt": "Prozessbehälter mit miteinander verbundenen Instrumentenrohrleitungen"
+        }
+      ]
+    },
+    {
+      "id": "environment-field",
+      "title": "Umwelt- und Feldüberwachung",
+      "intro": "Binden Sie ausgewählte Umweltinstrumente und Feldmessungen in verteilten Installationen ein. Wählen Sie das externe Instrument und die Schutzausführung für den Standort und definieren Sie anschließend Datengültigkeit, Überwachungsgrenzen sowie die betriebliche Reaktion auf eine Benachrichtigung.",
+      "imageKey": "hr10-extraction-instruments",
+      "imageAlt": "Filtergehäuse und Absaugkanal mit externen Druckmessstellen",
+      "tasks": [
+        {
+          "title": "Messungen an Filtern und Absauganlagen",
+          "text": "Erfassen Sie Differenzdruck oder andere dokumentierte Messwerte externer Instrumente von Filter- oder Absauganlagen.",
+          "interface": "Stimmen Sie den ausgewählten Messumformerausgang oder die Instrumentendatenschnittstelle ab und definieren Sie die Interpretation im Normalbetrieb.",
+          "control": "Nutzen Sie konfigurierte Messwertbenachrichtigungen zur Unterstützung von Inspektionen; Ventilatorsteuerung und Schutz verbleiben in der lokalen Ausrüstung.",
+          "verification": "Prüfen Sie Messleitungen und Quellmesswerte und unterscheiden Sie eine tatsächliche Änderung des Filterzustands von einer Instrumentenstörung.",
+          "imageKey": "hr10-extraction-instruments",
+          "imageAlt": "Filtergehäuse und Absaugkanal mit externen Druckmessstellen"
+        },
+        {
+          "title": "Daten externer Wetterinstrumente",
+          "text": "Übernehmen Sie ausgewählte Wettermesswerte kompatibler Feldinstrumente in eine Online-Standortüberwachung.",
+          "interface": "Bestätigen Sie Instrumentenausgang, Quelleinheiten und verfügbare Daten für die gewählte serielle oder Stromschleifenintegration.",
+          "control": "Nutzen Sie konfigurierte Benachrichtigungen für die vereinbarten Beobachtungsgrenzen; Wettervorhersagen oder automatische Sperrentscheidungen erfordern gesonderte Systeme.",
+          "verification": "Vergleichen Sie Messwerte mit dem Quellinstrument und prüfen Sie Standort und Exposition, bevor Sie lokale Bedingungen interpretieren.",
+          "imageKey": "hr10-weather-instruments",
+          "imageAlt": "Externe Wetterinstrumente neben einer Verkehrseinrichtung"
+        },
+        {
+          "title": "Pegeltelemetrie an Flüssen und Kanälen",
+          "text": "Laden Sie Messwerte eines kompatiblen externen Fluss- oder Kanalpegelinstruments zur betrieblichen Beurteilung hoch.",
+          "interface": "Wählen Sie die Instrumentenschnittstelle und definieren Sie Bezugshöhe, physikalische Einheiten und gültigen Messbereich.",
+          "control": "Konfigurieren Sie Pegelbenachrichtigungen für den gewählten Überwachungsplan; Warnentscheidungen und öffentliche Warnsysteme werden gesondert festgelegt.",
+          "verification": "Prüfen Sie Referenzpegel und Quelldatenqualität und vereinbaren Sie, wie veraltete oder ungültige Messwerte gekennzeichnet werden.",
+          "imageKey": "hr10-river-level",
+          "imageAlt": "Flusslauf mit Ufergelände und Ufervegetation"
+        },
+        {
+          "title": "Messpunkte zur Niederschlagswasserüberwachung",
+          "text": "Schließen Sie ausgewählte Pegel-, Durchfluss- oder Wasserzustandsinstrumente an Überwachungsstellen der Niederschlagswasserinfrastruktur an.",
+          "interface": "Stimmen Sie den externen Instrumentenausgang ab und definieren Sie Anlage, Messpunkt und physische Installationsbedingungen.",
+          "control": "Nutzen Sie konfigurierte Überwachungsmeldungen für die gewählten Betriebsgrenzen; die Entwässerungsbetätigung verbleibt bei der unterstützten lokalen Steuerung.",
+          "verification": "Prüfen Sie Instrumentenmesswerte und Standortexposition und testen Sie den vereinbarten Benachrichtigungsablauf, ohne eine Hochwasservorhersagefunktion vorauszusetzen.",
+          "imageKey": "hr10-stormwater-points",
+          "imageAlt": "Städtischer Regenwasserkanal und Durchlass neben einer Straße"
+        },
+        {
+          "title": "Daten von Laborprozessinstrumenten",
+          "text": "Binden Sie ausgewählte Messwerte kompatibler externer Instrumente an Laborprozessbehältern oder Probenahmebaugruppen ein.",
+          "interface": "Vereinbaren Sie die serielle Instrumentendatenschnittstelle oder den unterstützten Stromschleifenausgang, Quelleinheiten und Messpunktzuordnung.",
+          "control": "Nutzen Sie konfigurierte Benachrichtigungen für definierte Messgrenzen; Laborprozessbetrieb und etwaige Sicherheitsreaktionen verbleiben bei ihren jeweiligen Systemen.",
+          "verification": "Vergleichen Sie hochgeladene Messwerte mit den Quellinstrumenten und prüfen Sie, wie Aufwärmen, Kalibrierung oder Wartung die gemeldeten Daten beeinflussen.",
+          "imageKey": "hr10-analyser-streams",
+          "imageAlt": "Laborprozessbehälter mit angeschlossenen Probenahme- und Instrumentenleitungen"
+        }
+      ]
+    }
+  ],
+  "platformTitle": "Ihre Instrumentendaten.\nSichtbar in Hitelecom Cloud.",
+  "platformIntro": "Sehen Sie hochgeladene Überwachungsdaten online ein und erhalten Sie Benachrichtigungen bei Überschreitung konfigurierter Grenzwerte. Ordnen Sie jedem Instrument eine eindeutige Anlagenkennung, physikalische Einheiten und ein definiertes Aktualisierungsverhalten zu. Vereinbaren Sie bei einer Kundenplattform die unterstützte Kommunikationsmethode und Datenzuordnung für die gelieferte Gerätekonfiguration.",
+  "platformBullets": [
+    "Online-Messwerte: Prüfen Sie hochgeladene Werte serieller Instrumente und Stromschleifenmessungen in der gewählten Überwachungsansicht, mit definierten Quellbereichen, Einheiten und Anlagenbezeichnungen für jeden Punkt.",
+    "Grenzwertmeldungen: Legen Sie Überwachungsgrenzen und Benachrichtigungsablauf fest. Prüfen Sie Auslösung, Empfänger und Zustellung bei der Inbetriebnahme; die Datenverfügbarkeit hängt vom Übertragungsprofil und der Netzverbindung ab.",
+    "Fernoperationen: Definieren Sie Gerätebefehle, Autorisierung und verfügbares Rücklesen, bevor Sie die Fernnutzung aktivieren. Behalten Sie lokale Bedienelemente und unabhängige Schutzfunktionen der Geräte bei."
+  ],
+  "specsIntro": "Die HR-10 Serie ist eine kompakte drahtlose DTU für Instrumentendatenerfassung, Übertragung und unterstützte Fernoperationen. Schnittstellenanzahl, bestückte Kombinationen und elektrische Grenzwerte richten sich nach der bestellten Konfiguration. Das Originalproduktbild zeigt HR10-T2.",
+  "specGroups": [
+    {
+      "title": "Produkt und Feldschnittstellen",
+      "rows": [
+        [
+          "Produktfamilie",
+          "HR-10 Serie IoT-Controller / drahtlose DTU"
+        ],
+        [
+          "Abgebildetes Modell",
+          "HR10-T2"
+        ],
+        [
+          "Aufgeführte Schnittstellenoptionen",
+          "RS485 / TTL / 4–20 mA; bestückte Kombination und Kanalanzahl richten sich nach der gelieferten Version."
+        ],
+        [
+          "RS485-Integration",
+          "Bestätigen Sie serielle Einstellungen, Geräteprotokoll, Adressierung, Datenbelegung und unterstützte Operationen."
+        ],
+        [
+          "TTL-Integration",
+          "Bestätigen Sie Logikpegel, Pinbelegung, Erdung und Datenformat."
+        ],
+        [
+          "Stromschleifenerfassung",
+          "Schnittstelle für 4–20 mA-Messumformer; bestätigen Sie Schleifenverdrahtung, Messumformerversorgung, Eingangsgrenzen, Skalierung und Genauigkeitsbedingungen."
+        ]
+      ]
+    },
+    {
+      "title": "Erfassung und Fernoperationen",
+      "rows": [
+        [
+          "Lokale Datenerfassung und -verarbeitung",
+          "Unterstützt; Instrumenteninterpretation und Verarbeitungsfunktionen richten sich nach der gewählten Anwendung."
+        ],
+        [
+          "Erfassung und Übertragung",
+          "Definieren Sie Quellerfassung, Mobilfunkübertragung und erwartetes Online-Aktualisierungsverhalten getrennt."
+        ],
+        [
+          "Fernsteuerung",
+          "Über die gewählte Geräteschnittstelle unterstützt; vereinbaren Sie zulässige Befehle und deren Verifikation."
+        ],
+        [
+          "Firmware-Upgrades",
+          "Remote-Firmware-Upgrade unterstützt; verwenden Sie für die gelieferte Hardware freigegebene Firmware."
+        ],
+        [
+          "Watchdog-Mechanismen",
+          "Hardware- und Software-Watchdogs. Bestätigen Sie das Rücksetz- und Wiederherstellungsverhalten für die gewählte Konfiguration."
+        ]
+      ]
+    },
+    {
+      "title": "Mobilfunk und Plattform",
+      "rows": [
+        [
+          "Mobilfunkkommunikation",
+          "4G; wählen Sie regionales Modul, Frequenzbänder, Antenne und SIM-Dienst."
+        ],
+        [
+          "Mobilfunk-Referenzkonfiguration",
+          "Referenzkonfiguration mit 5 Modi / 13 Frequenzbändern; bestätigen Sie das genaue Modul und die Frequenzbandliste für die bestellte Variante."
+        ],
+        [
+          "Hitelecom Cloud",
+          "Online-Anzeige hochgeladener Überwachungsdaten und Meldungen bei Überschreitung konfigurierter Schwellenwerte."
+        ],
+        [
+          "Integration einer Kundenplattform",
+          "Vereinbaren Sie die unterstützte Kommunikationsmethode, Gerätesoftware und Datenzuordnung für das gewählte Projekt."
+        ],
+        [
+          "Datenverfügbarkeit",
+          "Abhängig von Quellinstrument, Erfassungs-/Übertragungskonfiguration, Stromversorgung und Netzverbindung."
+        ]
+      ]
+    },
+    {
+      "title": "Stromversorgung und Installation",
+      "rows": [
+        [
+          "Stromversorgung",
+          "Fordern Sie Nenneingang, Polarität, Leistungsaufnahme und Verdrahtungsanforderungen für die bestellte Version an."
+        ],
+        [
+          "Gehäuse und Installation",
+          "Kompakte Ausführung; bestätigen Sie Befestigung, Kabelführung, Antennenfreiraum und Installationszeichnung."
+        ],
+        [
+          "Abmessungen und Masse",
+          "Siehe die konfigurationsspezifische mechanische Zeichnung."
+        ],
+        [
+          "Versorgung externer Instrumente",
+          "Bestätigen Sie die Stromversorgung von Messumformern und seriellen Modulen getrennt; Schnittstellenkompatibilität belegt keinen Versorgungsausgang."
+        ]
+      ]
+    },
+    {
+      "title": "Umgebung und Dokumentation",
+      "rows": [
+        [
+          "Installationsumgebung",
+          "Wählen Sie Installationsgehäuse und Standortschutz entsprechend tatsächlicher Temperatur, Feuchte und Exposition."
+        ],
+        [
+          "Schutzart",
+          "Fordern Sie Schutzart und Installationsbedingungen für die gelieferte Konfiguration an."
+        ],
+        [
+          "Angaben zur Inbetriebnahme",
+          "Instrumentensignalliste, Datenbelegung, Skalierung, Netzeinstellungen, zulässige Befehle und Wiederherstellungsprüfungen."
+        ],
+        [
+          "Konformitätsunterlagen",
+          "Fordern Sie modell- und ziellandspezifische Erklärungen oder Prüfunterlagen für die bestellte Version an."
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Wofür ist die HR-10 Serie ausgelegt?",
+      "a": "Sie ist eine kompakte drahtlose Datenübertragungseinheit (DTU) zur Erfassung und Übertragung kompatibler Instrumenten- und Gerätedaten. Schnittstellenoptionen für RS485, TTL und 4–20 mA, lokale Datenverarbeitung, Mobilfunkkommunikation, Cloud-Überwachung, unterstützte Fernsteuerung und Firmware-Upgrades verbinden das Feldinstrument mit dem Betriebsablauf."
+    },
+    {
+      "q": "Sind RS485, TTL und 4–20 mA gleichzeitig bestückt?",
+      "a": "Gleichen Sie die physischen Anschlüsse, deren Anzahl und unterstützte Kombinationen der bestellten Version mit Ihrer Instrumentenliste ab. RS485, TTL und 4–20 mA bezeichnen Schnittstellenoptionen und legen die bestückte Kombination nicht fest. Die 40 Anwendungsaufgaben sind Auswahlbeispiele, keine 40 Kanäle."
+    },
+    {
+      "q": "Bedeutet RS485, dass das Gerät jedes serielle Instrument oder Modbus-Gerät unterstützt?",
+      "a": "Nein. RS485 definiert eine physische Schnittstelle. Geräteprotokoll, Adressierung, serielle Einstellungen, Datendarstellung und unterstützte Lese- oder Schreiboperationen müssen ebenfalls übereinstimmen. Reichen Sie das Kommunikationshandbuch und die Datenbelegung des Instruments zur Integrationsprüfung ein; setzen Sie kein Protokoll allein aufgrund der RS485-Kennzeichnung voraus."
+    },
+    {
+      "q": "Was ist vor dem Anschluss eines TTL-Geräts zu prüfen?",
+      "a": "Bestätigen Sie elektrische Logikpegel, Sende-/Empfangspinbelegung, Erdung, Kabelführung und serielles Datenformat beider Geräte. Eine TTL-Kennzeichnung allein legt weder Spannungspegel noch Isolation, Steckverbinder oder Versorgungsausgang fest."
+    },
+    {
+      "q": "Wie werden 4–20 mA-Messumformer angeschlossen und angezeigt?",
+      "a": "Verwenden Sie die für die gelieferte Version spezifizierte Stromschleifenschnittstelle und einen kompatiblen externen Messumformer. Bestätigen Sie Schleifenverdrahtung, Messumformerversorgung, unterstützte Eingangsgrenzen und Skalierung. Definieren Sie Messumformerbereich und physikalische Einheiten und prüfen Sie Online-Werte bei der Inbetriebnahme anhand des Quellinstruments und von Referenzpunkten."
+    },
+    {
+      "q": "Kann ich Messwerte in Hitelecom Cloud einsehen und Meldungen erhalten?",
+      "a": "Ja. Hitelecom Cloud unterstützt die Online-Anzeige hochgeladener Überwachungsdaten und Meldungen bei Überschreitung konfigurierter Grenzwerte. Konfigurieren Sie Anlagenbezeichnungen, Einheiten, Überwachungsgrenzen und den Benachrichtigungsablauf. Datenverfügbarkeit und Benachrichtigungszeitpunkt hängen vom Übertragungsprofil und der Netzverbindung ab."
+    },
+    {
+      "q": "Welche Fernsteuerung bietet die HR-10?",
+      "a": "Fernsteuerung betrifft Befehle, die vom angeschlossenen Gerät und der gelieferten Gerätekonfiguration unterstützt werden. Vereinbaren Sie vor der Aktivierung Befehlspfad, Autorisierung, lokalen Vorrang und verfügbares Rücklesen. Eine DTU belegt für sich weder einen Relaisausgang noch einen direkten Lastanschluss, und die Befehlsübertragung beweist nicht, dass sich das Gerät bewegt oder seinen Zustand geändert hat."
+    },
+    {
+      "q": "In welchen Mobilfunknetzen und Ländern ist der Einsatz möglich?",
+      "a": "Wählen Sie die Mobilfunkvariante für Installationsland und Netz aus. Die 4G-Referenzkonfiguration mit 5 Modi / 13 Frequenzbändern erfordert die Bestätigung des genauen Moduls, der Frequenzbänder, des Betreiberdienstes und der Zielmarktanforderungen für die bestellte Version. Diese Beschreibung garantiert weder jedes Netz noch weltweites Roaming oder die zukünftige Netzverfügbarkeit."
+    },
+    {
+      "q": "Kann die Firmware aus der Ferne aktualisiert werden?",
+      "a": "Remote-Firmware-Upgrades werden unterstützt. Verwenden Sie die für die gelieferte Hardware freigegebene Firmware, halten Sie Stromversorgung und erforderliche Verbindung aufrecht und befolgen Sie das Wartungsverfahren des Standorts. Prüfen Sie nach dem Upgrade Instrumentenkommunikation, Skalierung, Uploads und zulässige Operationen."
+    },
+    {
+      "q": "Was leisten die Hardware- und Software-Watchdogs?",
+      "a": "Sie unterstützen die Wiederherstellung bei definierten abnormalen Betriebszuständen. Bestätigen Sie bei der Inbetriebnahme Rücksetz-, Wiederverbindungs- und Neustartverhalten für die gewählte Konfiguration. Watchdogs ersetzen keinen Geräteschutz und begründen keine unterbrechungsfreie Kommunikation."
+    },
+    {
+      "q": "Ist eine Integration in unsere eigene Überwachungsplattform möglich?",
+      "a": "Die Integration einer Kundenplattform kann anhand der von geliefertem Gerät und Software unterstützten Kommunikationsmethoden geprüft werden. Vereinbaren Sie Übertragungsweg, Datenformat, Instrumentenzuordnung und zulässige Befehle für das Projekt. Leiten Sie kein bestimmtes Cloud-Protokoll oder API allein aus der Mobilfunk- oder seriellen Schnittstelle ab."
+    },
+    {
+      "q": "Welche Angaben werden zur Auswahl einer HR-10 Konfiguration benötigt?",
+      "a": "Geben Sie Installationsland, Instrumentenmodelle, Schnittstellenhandbücher, Datenbelegungen und Messpunktanzahl an. Ergänzen Sie Stromschleifenbereiche, benötigte Fernbefehle, Stromquelle, Standortbedingungen, Erfassungs-/Übertragungsbedarf und Zielplattform. Diese Angaben bestimmen die bestückte Schnittstellenausführung, den Integrationsumfang und die Inbetriebnahmeprüfungen."
+    }
+  ],
+  "enquiryIntro": "Teilen Sie uns Instrumentenmodelle, serielle Dokumentation oder Stromschleifenausgänge, benötigte Datenpunkte und zulässige Befehle mit. Wir prüfen Schnittstellenkompatibilität, Mobilfunkvariante und die vorgesehene Verbindung mit Hitelecom Cloud oder einer Kundenplattform für die Installation.",
+  "slug": "iot-controller-hr10",
+  "kind": "Product",
+  "image": "hr10-t2-original.png",
+  "imageWidth": 1280,
+  "imageHeight": 1280,
+  "datasheet": "/downloads/hr10-iot-controller-datasheet-en.pdf"
+}

@@ -1,0 +1,718 @@
+{
+  "family": "HR-10 Series",
+  "model": "HR-10 Series",
+  "picturedModel": "HR10-T2",
+  "title": "Contrôleur IoT et DTU 4G HR-10 | RS485, TTL, 4–20 mA | Hitelecom",
+  "metaDescription": "Connectez des instruments compatibles RS485, TTL et 4–20 mA avec la DTU cellulaire compacte HR-10, acquisition en périphérie, opérations à distance et suivi Hitelecom Cloud.",
+  "heroHeading": "Contrôleur IoT et DTU.",
+  "heroValue": "Connectez vos instruments.\nAccédez aux données de terrain en ligne.",
+  "heroDescription": "La série Hitelecom HR-10 relie les instruments de terrain et les données des équipements à la supervision à distance grâce à une unité compacte de transmission sans fil de données (DTU). Les options d’interface RS485, TTL et 4–20 mA permettent des connexions série et analogiques adaptées au projet. L’acquisition et le traitement en périphérie, la communication cellulaire 4G, la commande à distance prise en charge et les mises à jour du micrologiciel établissent un lien opérationnel entre l’instrument et l’exploitation. Consultez en ligne les données de surveillance transmises à Hitelecom Cloud et recevez des alertes lorsque les seuils configurés sont dépassés.",
+  "reviewNotice": "Les types d’interface, les quantités, les combinaisons prises en charge et les limites électriques dépendent de la configuration fournie. Confirmez l’agencement par rapport à la liste des instruments avant la commande.",
+  "interfaceCards": [
+    {
+      "type": "RS485",
+      "title": "Instruments de terrain série",
+      "text": "Connectez des instruments compatibles via une interface physique RS485. Définissez le protocole de l’appareil, l’adressage, la table des données et les paramètres série de l’intégration sélectionnée. Une connexion RS485 seule ne garantit pas la compatibilité des protocoles.",
+      "examples": [
+        "Acquisition de données d’instruments et de compteurs",
+        "Interfaces de données d’équipements documentées",
+        "Échanges de lecture et de commandes pris en charge"
+      ]
+    },
+    {
+      "type": "TTL",
+      "title": "Intégration série embarquée",
+      "text": "Établissez une connexion série avec des modules embarqués ou des électroniques d’équipements compatibles. Confirmez les niveaux logiques, l’affectation des broches, la mise à la terre et le format de données pris en charge avant le raccordement.",
+      "examples": [
+        "Liaisons de données d’équipements OEM",
+        "Modules de mesure embarqués",
+        "Interfaces de commandes série documentées"
+      ]
+    },
+    {
+      "type": "4–20 mA",
+      "title": "Mesures de boucle de courant",
+      "text": "Acquérez les signaux de transmetteurs de boucle de courant compatibles au moyen de l’interface analogique fournie. Adaptez l’agencement des voies, le câblage de boucle, l’alimentation du transmetteur et la mise à l’échelle à la version sélectionnée.",
+      "examples": [
+        "Transmetteurs externes de pression et de niveau",
+        "Transducteurs de température et de procédé",
+        "Autres instruments compatibles à sortie en courant"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Intégration compacte aux équipements",
+      "text": "Un boîtier compact facilite l’installation à proximité des instruments et de l’électronique des équipements. Prévoyez le montage, le cheminement des câbles, le dégagement de l’antenne et l’accès de maintenance en fonction de l’installation réelle."
+    },
+    {
+      "title": "Options d’interface RS485 et TTL",
+      "text": "Intégrez des instruments série et des équipements embarqués compatibles au chemin de données. Convenez du raccordement électrique, du protocole de l’appareil et des points de données lisibles pour l’agencement d’interfaces fourni."
+    },
+    {
+      "title": "Acquisition de transmetteurs 4–20 mA",
+      "text": "Connectez des transmetteurs externes compatibles à sortie en courant. Définissez la plage de l’instrument, les unités physiques et la conversion courant-valeur afin que les relevés en ligne conservent leur signification physique."
+    },
+    {
+      "title": "Acquisition et traitement en périphérie",
+      "text": "Acquérez et traitez les données de terrain au plus près de l’équipement connecté. Spécifiez l’interprétation des données et le comportement de mise à jour requis pour l’application livrée."
+    },
+    {
+      "title": "Transmission cellulaire des données",
+      "text": "Utilisez une connexion cellulaire 4G pour la communication de données à distance. Sélectionnez le module, les bandes de fréquence, l’agencement de l’antenne et le service SIM selon le pays et le réseau de l’installation."
+    },
+    {
+      "title": "Données en ligne et alertes sur seuil",
+      "text": "Consultez en ligne les données de surveillance transmises à Hitelecom Cloud et recevez des alertes lorsque les seuils configurés sont dépassés. Configurez les noms d’actifs, les unités physiques, les limites de surveillance et le processus de notification."
+    },
+    {
+      "title": "Opérations et mises à jour à distance prises en charge",
+      "text": "Envoyez les commandes autorisées via l’interface documentée de l’équipement connecté et assurez à distance la maintenance du micrologiciel de la DTU. Définissez les autorisations de commande, les priorités locales et la vérification avant la mise en service."
+    },
+    {
+      "title": "Chiens de garde matériels et logiciels",
+      "text": "Les mécanismes de chien de garde matériels et logiciels contribuent à la reprise de fonctionnement de l’appareil après des défauts définis. Vérifiez le comportement de réinitialisation et de reconnexion de la configuration fournie lors de la mise en service."
+    }
+  ],
+  "workflow": [
+    {
+      "title": "Définir et acquérir la mesure",
+      "text": "Identifiez l’instrument, l’interface électrique et le format de données. Pour les points série, documentez la table des données lisibles ; pour les points de boucle de courant, définissez la plage source, les unités et la mise à l’échelle."
+    },
+    {
+      "title": "Transmettre sur le réseau sélectionné",
+      "text": "Adaptez la variante cellulaire, l’antenne et le service SIM au site. Définissez séparément les besoins d’acquisition et de transmission, puis vérifiez la connexion installée et le comportement de mise à jour."
+    },
+    {
+      "title": "Consulter les données et les alertes en ligne",
+      "text": "Consultez les mesures transmises à Hitelecom Cloud. Lors de la mise en service, vérifiez l’identification de l’actif, les unités physiques et les alertes sur seuil configurées par rapport à l’instrument source."
+    },
+    {
+      "title": "Exécuter les opérations à distance prises en charge",
+      "text": "Utilisez uniquement les commandes documentées pour l’équipement connecté et convenues pour l’installation. Vérifiez le résultat physique ou la relecture de l’instrument indépendamment de la transmission de la commande, puis confirmez le fonctionnement après une mise à jour du micrologiciel."
+    }
+  ],
+  "applicationsIntro": "Huit domaines d’application, comprenant chacun cinq tâches de connexion d’instruments, illustrent les usages d’une DTU cellulaire compacte pour accéder aux données de terrain en ligne. Ces 40 tâches sont des exemples de sélection, et non un nombre de voies ni une garantie que toutes les tâches fonctionnent sur un seul appareil. Sélectionnez les interfaces installées, les instruments externes compatibles et les échanges de données nécessaires pour chaque installation. Les actions à distance s’appliquent uniquement lorsque l’équipement connecté dispose d’une interface de commande documentée et prise en charge.",
+  "groups": [
+    {
+      "id": "water-wastewater",
+      "title": "Instrumentation de l’eau et des eaux usées",
+      "intro": "Accédez en ligne aux mesures d’eau et aux données de contrôleurs d’équipements sélectionnées dans les stations de pompage, les installations de stockage et les unités de traitement. Adaptez l’interface HR-10 fournie à chaque instrument externe, puis définissez les identifiants sources, les unités et le processus de surveillance ou de commandes autorisées.",
+      "imageKey": "hr10-water-pump-station",
+      "imageAlt": "Station de pompage d’eau avec pompes bleues et tuyauterie",
+      "tasks": [
+        {
+          "title": "Relevés d’instruments de stations de pompage",
+          "text": "Collectez les mesures de pression, de débit ou d’autres grandeurs documentées provenant d’un instrument de station de pompage ou d’un contrôleur local d’équipement.",
+          "interface": "Sélectionnez une interface d’instrument RS485 compatible ou une entrée de mesure 4–20 mA prise en charge pour la configuration commandée.",
+          "control": "Utilisez les limites de mesure configurées pour les alertes cloud ; les commandes de pompe nécessitent une interface documentée sur le contrôleur local.",
+          "verification": "Comparez les valeurs transmises avec l’instrument source et vérifiez les unités, la mise à l’échelle et l’identification de l’équipement.",
+          "imageKey": "hr10-water-pump-station",
+          "imageAlt": "Station de pompage d’eau avec pompes bleues et tuyauterie"
+        },
+        {
+          "title": "Données d’analyseurs de qualité de l’eau",
+          "text": "Transmettez les valeurs de qualité d’eau sélectionnées d’un analyseur externe ou d’un rack d’échantillonnage pour examen opérationnel.",
+          "interface": "Adaptez la sortie de l’analyseur, les paramètres de communication et les définitions de données à l’interface série ou de boucle de courant fournie.",
+          "control": "Configurez les alertes de surveillance selon les limites de procédé convenues ; l’étalonnage et le nettoyage de l’analyseur restent régis par sa procédure d’instrumentation.",
+          "verification": "Vérifiez chaque paramètre transmis par rapport à l’affichage de l’analyseur et consignez séparément les états de maintenance ou d’étalonnage.",
+          "imageKey": "hr10-water-quality-rack",
+          "imageAlt": "Rack d’échantillonnage de qualité de l’eau avec cellules de mesure en circulation"
+        },
+        {
+          "title": "Mesures de niveau de stockage d’eau",
+          "text": "Connectez un transmetteur de niveau externe afin que les opérateurs puissent examiner le stockage sans effectuer une visite dédiée à chaque relevé.",
+          "interface": "Utilisez la sortie du transmetteur sélectionné et précisez la plage physique de niveau, les unités et l’interprétation du signal.",
+          "control": "Définissez des notifications de niveau configurées ; toute demande de transfert doit passer par l’interface prise en charge du contrôleur du réservoir ou de la pompe.",
+          "verification": "Vérifiez les niveaux de référence et le sens du signal, puis distinguez une lecture source invalide d’un état réel de réservoir vide ou plein.",
+          "imageKey": "hr10-storage-level",
+          "imageAlt": "Réservoir de stockage d’eau agricole avec pompe de transfert adjacente"
+        },
+        {
+          "title": "Données de fonctionnement du système d’échantillonnage",
+          "text": "Regroupez les mesures et les informations de diagnostic disponibles de la pompe d’échantillonnage dans la même vue d’actif que l’instrument associé.",
+          "interface": "Lisez les données prises en charge du groupe d’échantillonnage ou d’un transmetteur externe compatible ; convenez de la correspondance des données avant l’intégration.",
+          "control": "Envoyez une demande d’échantillonnage uniquement lorsque le groupe documente cette commande et ses autorisations locales d’exploitation.",
+          "verification": "Vérifiez indépendamment le débit d’échantillon ou le retour de l’instrument ; l’acceptation d’un message ne confirme pas que l’échantillon a atteint l’analyseur.",
+          "imageKey": "hr10-sampling-system",
+          "imageAlt": "Pompe d’échantillonnage externe avec tubes d’instrumentation"
+        },
+        {
+          "title": "Télémétrie de puisard de drainage et de contrôleur de pompes",
+          "text": "Surveillez une mesure externe du niveau du puisard avec les données de fonctionnement exposées par le contrôleur de drainage.",
+          "interface": "Sélectionnez une interface de transmetteur de niveau ou de contrôleur compatible et identifiez les mesures disponibles dans l’agencement livré.",
+          "control": "Utilisez les notifications de niveau pour organiser l’intervention ; maintenez le séquencement des pompes, la protection contre la marche à sec et les dérogations locales dans le système de drainage.",
+          "verification": "Testez les indications de niveau et comparez les états de pompe transmis avec le contrôleur installé lors de la mise en service.",
+          "imageKey": "hr10-drainage-telemetry",
+          "imageAlt": "Puisard de drainage et installation de pompage dans une infrastructure de transport"
+        }
+      ]
+    },
+    {
+      "id": "process-instruments",
+      "title": "Instruments de procédé et d’utilités",
+      "intro": "Améliorez la visibilité de l’instrumentation industrielle existante grâce à une liaison de données sans fil compacte. Les applications portent sur la lecture des données de transmetteurs ou d’équipements compatibles ; toute action à distance est limitée aux commandes expressément prises en charge par l’appareil connecté et l’intégration convenue.",
+      "imageKey": "hr10-process-instruments",
+      "imageAlt": "Instruments de pression et de température sur un skid de procédé",
+      "tasks": [
+        {
+          "title": "Données de pression et de température de procédé",
+          "text": "Connectez les instruments de pression et de température sélectionnés sur un skid d’équipement à un processus de surveillance en ligne.",
+          "interface": "Adaptez les définitions de données série ou les sorties 4–20 mA prises en charge à l’interface commandée et aux plages physiques.",
+          "control": "Définissez les alertes sur seuil configurées pour les variables de procédé sélectionnées ; la protection indépendante du procédé reste en place.",
+          "verification": "Comparez les relevés à des points de fonctionnement représentatifs et vérifiez les unités, la mise à l’échelle des signaux et les diagnostics des instruments.",
+          "imageKey": "hr10-process-instruments",
+          "imageAlt": "Instruments de pression et de température sur un skid de procédé"
+        },
+        {
+          "title": "Informations de groupes d’air comprimé",
+          "text": "Intégrez à la surveillance cloud les mesures et informations de fonctionnement du compresseur sélectionnées via l’interface externe documentée du groupe.",
+          "interface": "Confirmez les valeurs du contrôleur et les paramètres de communication disponibles ; ne déduisez pas la compatibilité d’un seul connecteur RS485.",
+          "control": "N’autorisez les commandes à distance du groupe que si elles sont prises en charge par son fabricant et par la procédure d’exploitation locale.",
+          "verification": "Comparez les états transmis avec le panneau du compresseur et vérifiez le mode local, les conditions de redémarrage et la signification des alarmes.",
+          "imageKey": "hr10-compressor-data",
+          "imageAlt": "Groupe compresseur industriel avec indicateurs locaux de fonctionnement"
+        },
+        {
+          "title": "Collecte de mesures de boucles de refroidissement",
+          "text": "Transmettez les mesures externes de pression, de température ou de débit de la boucle de refroidissement pour examiner les conditions du système auxiliaire.",
+          "interface": "Utilisez une sortie d’instrument compatible ou une interface documentée du groupe, en rattachant chaque mesure à son emplacement physique.",
+          "control": "Configurez les notifications pour les limites convenues ; les équipements de refroidissement conservent leur propre séquencement et protection.",
+          "verification": "Vérifiez les relevés des instruments et la validité des données sources, puis contrôlez le chemin de notification pour une condition d’essai convenue.",
+          "imageKey": "hr10-cooling-loop",
+          "imageAlt": "Pompe de circulation de refroidissement et tuyauterie d’échangeur de chaleur"
+        },
+        {
+          "title": "Intégration d’armoires d’instrumentation externe",
+          "text": "Connectez un panneau ou une armoire d’instrumentation qui fournit déjà des données de mesure série documentées.",
+          "interface": "Convenez de l’agencement électrique RS485, des paramètres série, des définitions de données des appareils et des accès autorisés pour la configuration fournie.",
+          "control": "Séparez la surveillance en lecture seule de toute commande de configuration ou de contrôle prise en charge avant d’activer l’accès à distance.",
+          "verification": "Validez les points d’instrumentation et les réponses sélectionnés par rapport aux appareils sources et au tableau de raccordement approuvé.",
+          "imageKey": "hr10-serial-instrument-cabinet",
+          "imageAlt": "Instruments industriels externes et câblage de borniers dans une armoire de service"
+        },
+        {
+          "title": "Instrumentation de pression des installations de gaz",
+          "text": "Collectez les mesures sélectionnées de l’instrumentation de pression de gaz via une interface compatible de transmetteur externe ou de contrôleur.",
+          "interface": "Définissez la sortie source, les unités de pression, la plage de fonctionnement et l’agencement d’installation requis pour l’instrument sélectionné.",
+          "control": "Utilisez les données pour la surveillance opérationnelle et les alertes configurées ; les fonctions dédiées de protection gaz et d’urgence restent indépendantes.",
+          "verification": "Vérifiez la mise à l’échelle et les défauts sources ; ne présentez pas la liaison de télémétrie comme un système de sécurité gaz.",
+          "imageKey": "hr10-gas-utility",
+          "imageAlt": "Poste de régulation de gaz avec tuyauterie de contrôle de pression"
+        }
+      ]
+    },
+    {
+      "id": "building-services",
+      "title": "Services techniques des bâtiments et conditions intérieures",
+      "intro": "Connectez les compteurs, instruments de locaux techniques et transmetteurs environnementaux sélectionnés à l’exploitation du bâtiment. Définissez clairement l’acquisition des mesures, les alertes cloud et toute commande d’équipement autorisée ; les systèmes dédiés de contrôle, de protection électrique et de sécurité du bâtiment conservent leurs responsabilités.",
+      "imageKey": "hr10-rs485-meter-panel",
+      "imageAlt": "Sous-compteurs électriques de bâtiment et câblage de borniers dans un tableau de service",
+      "tasks": [
+        {
+          "title": "Données de sous-compteurs électriques",
+          "text": "Lisez les mesures documentées disponibles sur un sous-compteur externe du bâtiment pour examiner en ligne la consommation des utilités.",
+          "interface": "Utilisez une interface série de compteur compatible et confirmez les définitions de données, les unités et l’agencement du raccordement électrique.",
+          "control": "Définissez les seuils de surveillance ou les vues de suivi ; la facturation, le calcul tarifaire et les fonctions de déconnexion sont des besoins d’intégration distincts.",
+          "verification": "Comparez les valeurs sélectionnées avec l’affichage du compteur et vérifiez les noms d’actifs, les unités et la période de mesure source.",
+          "imageKey": "hr10-rs485-meter-panel",
+          "imageAlt": "Sous-compteurs électriques de bâtiment et câblage de borniers dans un tableau de service"
+        },
+        {
+          "title": "Instrumentation des installations de centres de données",
+          "text": "Intégrez les mesures sélectionnées des locaux ou systèmes auxiliaires issues d’instruments externes à une vue d’exploitation en ligne.",
+          "interface": "Adaptez l’interface de données de l’instrument ou du contrôleur d’installation à la configuration HR-10 fournie et à la liste des points.",
+          "control": "Utilisez les alertes configurées pour appuyer l’intervention de l’opérateur ; le refroidissement critique, le transfert d’alimentation et la protection des équipements restent assurés par leurs systèmes dédiés.",
+          "verification": "Vérifiez les valeurs sources et l’acheminement des notifications sans interrompre les fonctions de contrôle des installations en service.",
+          "imageKey": "hr10-data-centre-facilities",
+          "imageAlt": "Allée de centre de données avec baies d’équipements et infrastructure de service"
+        },
+        {
+          "title": "Pression des réseaux d’eau de bâtiments",
+          "text": "Collectez les mesures sélectionnées de pression d’eau ou d’autres grandeurs provenant d’instruments d’un local de pompage de bâtiment.",
+          "interface": "Choisissez une sortie de transmetteur compatible ou une interface documentée de contrôleur local et définissez le circuit surveillé et les unités.",
+          "control": "Définissez des alertes de mesure ; toute demande à distance doit utiliser l’interface de commande prise en charge des services du bâtiment et respecter la priorité locale.",
+          "verification": "Comparez les relevés locaux et transmis, puis testez la condition d’alerte convenue en maintenant la protection du système de pompage.",
+          "imageKey": "hr10-building-water",
+          "imageAlt": "Installation intérieure de distribution d’eau avec pompes, réservoirs et tuyauterie"
+        },
+        {
+          "title": "Valeurs d’instruments de chaudières et d’eau chaude",
+          "text": "Transmettez les mesures externes sélectionnées de température, de pression ou d’utilités d’une chaufferie ou d’une installation d’eau chaude.",
+          "interface": "Adaptez la sortie de l’instrument, la plage de mesure et les exigences de câblage du site à l’interface d’acquisition commandée.",
+          "control": "Configurez les notifications de surveillance ; la gestion des brûleurs, la protection de pression et le séquencement de l’installation restent assurés par les équipements dédiés.",
+          "verification": "Vérifiez les relevés sources et les emplacements de mesure, notamment si la valeur représente le départ, le retour ou un autre point de l’installation.",
+          "imageKey": "hr10-hot-water-plant",
+          "imageAlt": "Chaufferie et installation d’eau chaude avec pompes et tuyauterie raccordée"
+        },
+        {
+          "title": "Données d’instruments de CTA et de circuits hydrauliques",
+          "text": "Connectez les instruments sélectionnés de traitement d’air ou de chauffage et de refroidissement pour examiner en ligne les conditions des services techniques du bâtiment.",
+          "interface": "Utilisez des sorties de transmetteurs externes compatibles ou des données d’équipements documentées, avec les unités sources et les emplacements de points définis.",
+          "control": "Limitez les demandes à distance aux fonctions de supervision prises en charge ; la régulation locale de température, la protection antigel et les interverrouillages restent assurés par l’équipement.",
+          "verification": "Comparez les mesures transmises avec les instruments locaux et confirmez les réponses aux commandes autorisées séparément des mises à jour de mesure.",
+          "imageKey": "hr10-ahu-instrumentation",
+          "imageAlt": "Équipement de traitement d’air avec tuyauterie hydraulique et instruments externes"
+        }
+      ]
+    },
+    {
+      "id": "agriculture-aquaculture",
+      "title": "Agriculture et aquaculture",
+      "intro": "Intégrez des instruments compatibles de serre, d’irrigation et d’aquaculture à un processus de surveillance partagé. Sélectionnez les capteurs externes et les interfaces locales des équipements pour le site ; le HR-10 fournit le chemin de données et le traitement configurés, sans remplacer l’instrument de mesure ou le contrôleur agricole.",
+      "imageKey": "hr10-greenhouse-data",
+      "imageAlt": "Équipements d’irrigation et de fertigation de serre",
+      "tasks": [
+        {
+          "title": "Collecte d’instruments de serre",
+          "text": "Collectez les mesures climatiques ou de culture sélectionnées provenant d’instruments externes de serre ou d’un contrôleur local compatible.",
+          "interface": "Convenez des sorties sources, des unités et des définitions de données série des instruments installés.",
+          "control": "Configurez les limites de surveillance propres à la culture ou au site ; les actionneurs de la serre restent sous leur dispositif de commande documenté.",
+          "verification": "Comparez les valeurs transmises avec les relevés locaux et vérifiez l’emplacement de mesure avant d’interpréter une variation.",
+          "imageKey": "hr10-greenhouse-data",
+          "imageAlt": "Équipements d’irrigation et de fertigation de serre"
+        },
+        {
+          "title": "Données de contrôleurs de vannes d’irrigation",
+          "text": "Lisez les informations de fonctionnement des vannes exposées par un contrôleur ou un actionneur d’irrigation disposant d’une interface de données externe compatible.",
+          "interface": "Confirmez les valeurs d’état série et les commandes prises en charge ; la description des interfaces HR-10 n’établit pas une capacité de commande directe de moteur.",
+          "control": "Émettez une demande autorisée uniquement via l’interface documentée du contrôleur et ses autorisations locales d’exploitation.",
+          "verification": "Vérifiez la position réelle de la vanne ou le débit indépendamment de l’acceptation d’une commande et conservez la commande manuelle locale.",
+          "imageKey": "hr10-irrigation-valve",
+          "imageAlt": "Vanne d’irrigation motorisée et collecteur de distribution"
+        },
+        {
+          "title": "Mesures de pression d’irrigation",
+          "text": "Transmettez les relevés de pression externes sur un collecteur de distribution d’irrigation pour examiner les conditions d’alimentation.",
+          "interface": "Adaptez la sortie du transmetteur de pression, les unités et la plage à l’interface fournie et à la définition du point.",
+          "control": "Définissez des limites de surveillance adaptées au système ; le séquencement de l’irrigation et la protection de pression restent dans l’installation locale.",
+          "verification": "Vérifiez les relevés dans les conditions de fonctionnement convenues et distinguez un défaut de mesure d’un événement réel de pression.",
+          "imageKey": "hr10-irrigation-pressure",
+          "imageAlt": "Instruments de pression sur un collecteur de distribution d’irrigation"
+        },
+        {
+          "title": "Mesures de groupes de fertigation",
+          "text": "Accédez en ligne aux mesures et informations de fonctionnement sélectionnées du groupe de dosage via les sorties d’instruments ou de contrôleur disponibles.",
+          "interface": "Définissez l’interface source prise en charge et la signification de chaque point mesuré ou transmis avant le raccordement.",
+          "control": "Utilisez les notifications configurées ou une demande de supervision documentée ; les recettes et proportions de dosage restent gérées par le contrôleur du groupe.",
+          "verification": "Comparez les valeurs sources et les retours d’équipements pertinents ; une mise à jour de données à distance ne confirme pas un dosage chimique correct.",
+          "imageKey": "hr10-fertigation-data",
+          "imageAlt": "Groupe de dosage de fertigation dans une zone de service de serre"
+        },
+        {
+          "title": "Relevés d’instruments d’eau en aquaculture",
+          "text": "Collectez les valeurs sélectionnées des conditions de l’eau provenant d’instruments externes d’aquaculture pour examiner en ligne les bassins ou les cuves.",
+          "interface": "Adaptez les sorties d’analyseurs ou de transmetteurs installés et définissez les unités, les emplacements de mesure et les besoins de maintenance.",
+          "control": "Utilisez les alertes de surveillance configurées pour l’intervention de l’opérateur ; les commandes d’aération ou de traitement nécessitent une interface locale d’équipement prise en charge.",
+          "verification": "Vérifiez les relevés par rapport aux instruments sources et consignez les opérations de nettoyage ou d’étalonnage susceptibles d’influencer leur interprétation.",
+          "imageKey": "hr10-aquaculture-water",
+          "imageAlt": "Bassins d’aquaculture avec équipements d’aération et infrastructure de rive"
+        }
+      ]
+    },
+    {
+      "id": "remote-energy-assets",
+      "title": "Stations distantes et actifs énergétiques",
+      "intro": "Connectez les instruments et les données de contrôleurs d’équipements sélectionnés sur des stations réparties où une liaison de collecte filaire est peu pratique. Définissez séparément la connexion cellulaire régionale, l’alimentation et l’installation de protection, et maintenez l’exploitation locale des équipements indépendante de la disponibilité d’une session cloud.",
+      "imageKey": "hr10-remote-site",
+      "imageAlt": "Site de télécommunications distant avec armoires d’équipements et infrastructure d’antennes",
+      "tasks": [
+        {
+          "title": "Données d’équipements de stations distantes",
+          "text": "Collectez les mesures et informations de service documentées d’instruments ou de contrôleurs d’équipements sur un site de communications distant.",
+          "interface": "Sélectionnez l’interface de données externe prise en charge et les définitions de points pour chaque actif de la station.",
+          "control": "Utilisez la surveillance en ligne et les alertes configurées ; toute commande d’équipement doit suivre le processus pris en charge du contrôleur du site.",
+          "verification": "Vérifiez les relevés sources et l’identification des actifs, puis convenez de l’indication des données indisponibles ou périmées en cas de perte de connexion.",
+          "imageKey": "hr10-remote-site",
+          "imageAlt": "Site de télécommunications distant avec armoires d’équipements et infrastructure d’antennes"
+        },
+        {
+          "title": "Télémétrie auxiliaire de sites solaires",
+          "text": "Transmettez les données sélectionnées d’onduleurs, d’utilités ou d’instruments auxiliaires d’une installation solaire via une interface externe compatible.",
+          "interface": "Confirmez l’interface documentée de l’équipement et les définitions de données pour l’intégration fournie ; ne déduisez pas un protocole d’onduleur particulier.",
+          "control": "Utilisez les données pour l’examen opérationnel et les actions de supervision autorisées ; la protection électrique et les fonctions réseau restent dédiées.",
+          "verification": "Comparez les valeurs sources et états de fonctionnement sélectionnés et vérifiez les autorisations d’accès locales et distantes du site.",
+          "imageKey": "hr10-solar-site",
+          "imageAlt": "Champ solaire avec armoires d’utilités de terrain"
+        },
+        {
+          "title": "Informations d’alimentation des stations",
+          "text": "Lisez les mesures d’alimentation ou les données de diagnostic disponibles auprès d’un contrôleur d’alimentation de station ou d’un transducteur externe compatible.",
+          "interface": "Convenez de l’interface de données du contrôleur ou de la sortie de mesure et de l’interprétation des états normal, de maintenance et de défaut.",
+          "control": "Dirigez les alertes configurées vers le processus de maintenance de la station ; le transfert automatique d’alimentation et la protection des charges restent dans le système électrique.",
+          "verification": "Comparez les conditions transmises avec le contrôleur source et testez les notifications selon une procédure de maintenance autorisée.",
+          "imageKey": "hr10-station-power",
+          "imageAlt": "Équipements d’alimentation de secours d’une station distante dans une armoire de service"
+        },
+        {
+          "title": "Transmission des mesures de systèmes de batteries",
+          "text": "Connectez un transducteur ou un contrôleur externe de surveillance de batteries fournissant des données de mesure compatibles.",
+          "interface": "Adaptez la sortie du transducteur ou l’interface de données série et identifiez le banc de batteries et le point de mesure représentés.",
+          "control": "Utilisez les alertes de surveillance pour les limites électriques définies ; la commande de charge, l’équilibrage et la protection restent assurés par le système de batteries.",
+          "verification": "Vérifiez la mesure source et la mise à l’échelle ; ne déduisez pas l’état de santé ou la durée de vie restante des batteries d’une seule valeur de télémétrie.",
+          "imageKey": "hr10-battery-measurements",
+          "imageAlt": "Banc de batteries de station avec transducteur externe de surveillance"
+        },
+        {
+          "title": "Données de transmetteurs de fuite de locaux techniques",
+          "text": "Transmettez les relevés ou informations d’événements d’un transmetteur compatible de surveillance de fuite ou d’un contrôleur local de surveillance.",
+          "interface": "Utilisez une sortie série documentée ou une sortie de mesure prise en charge ; un simple contact ou une sonde passive nécessite une interface externe adaptée.",
+          "control": "Envoyez les notifications configurées au personnel de maintenance ; toute commande de drainage reste dans le dispositif local de commande documenté.",
+          "verification": "Testez la zone physique de détection et vérifiez séparément l’indication source résultante et la notification cloud.",
+          "imageKey": "hr10-equipment-room-leakage",
+          "imageAlt": "Zone de détection de fuite au sol d’un local d’équipements distant"
+        }
+      ]
+    },
+    {
+      "id": "controlled-storage",
+      "title": "Réfrigération et stockage contrôlé",
+      "intro": "Connectez les données externes de température, d’environnement ou de contrôleurs d’équipements dans les installations de stockage réfrigéré et contrôlé. Définissez le positionnement des instruments, la précision source et les besoins de notification du projet ; une liaison de télémétrie n’établit pas à elle seule un processus de stockage validé ou un dossier de conformité.",
+      "imageKey": "hr10-coldroom-transmitter",
+      "imageAlt": "Transmetteur de température de chambre froide avec sonde externe câblée",
+      "tasks": [
+        {
+          "title": "Données de transmetteurs de température de chambres froides",
+          "text": "Intégrez un transmetteur externe compatible de température de chambre froide à la surveillance en ligne de l’emplacement de stockage sélectionné.",
+          "interface": "Adaptez la sortie série ou 4–20 mA prise en charge du transmetteur à l’interface fournie et à la plage de température.",
+          "control": "Définissez les alertes sur seuil configurées ; la commande frigorifique et la protection des équipements restent assurées par le système de réfrigération installé.",
+          "verification": "Comparez les relevés transmis et les relevés sources, puis vérifiez le positionnement de la sonde et l’ensemble du chemin de notification.",
+          "imageKey": "hr10-coldroom-transmitter",
+          "imageAlt": "Transmetteur de température de chambre froide avec sonde externe câblée"
+        },
+        {
+          "title": "Mesures de réfrigérateurs de laboratoire",
+          "text": "Collectez les mesures documentées d’un instrument externe de réfrigérateur ou d’un contrôleur de surveillance compatible.",
+          "interface": "Confirmez l’interface de données disponible, les unités de mesure et les identifiants des appareils pour chaque enceinte surveillée.",
+          "control": "Configurez les notifications selon les limites de stockage convenues ; la réfrigération locale et les alarmes indépendantes restent opérationnelles.",
+          "verification": "Vérifiez les relevés locaux, les défauts sources et les événements de maintenance planifiée ; les besoins de validation et de conservation des enregistrements sont définis séparément.",
+          "imageKey": "hr10-laboratory-storage",
+          "imageAlt": "Réfrigérateurs de stockage de laboratoire et zone de travail adjacente"
+        },
+        {
+          "title": "Mesures de distributeurs automatiques réfrigérés",
+          "text": "Transmettez les informations de température ou de diagnostic exposées par un contrôleur de distributeur automatique réfrigéré ou un transmetteur externe.",
+          "interface": "Sélectionnez une sortie d’instrument compatible ou une interface de données machine documentée ; les données de paiement et de transaction sont hors du périmètre de cette tâche.",
+          "control": "Utilisez les alertes de mesure configurées ; les demandes à distance adressées à la machine nécessitent l’interface prise en charge par son fournisseur.",
+          "verification": "Comparez la lecture source et l’identification du compartiment, puis vérifiez la distinction entre un défaut de données et un événement frigorifique.",
+          "imageKey": "hr10-refrigerated-vending",
+          "imageAlt": "Compartiment réfrigéré de distributeur automatique avec sonde de température externe"
+        },
+        {
+          "title": "Informations de maintenance de réfrigération commerciale",
+          "text": "Collectez les données de fonctionnement et de maintenance sélectionnées d’un contrôleur de meuble réfrigéré ou d’un instrument externe compatible.",
+          "interface": "Convenez de l’interface documentée du contrôleur et des points de mesure ou de diagnostic disponibles pour l’intégration.",
+          "control": "Utilisez les données pour les notifications de maintenance ; le dégivrage, la régulation de température et la protection du compresseur restent assurés par le contrôleur frigorifique.",
+          "verification": "Vérifiez les valeurs sources et les définitions des diagnostics par rapport au meuble local avant d’attribuer des priorités aux notifications.",
+          "imageKey": "hr10-retail-refrigeration",
+          "imageAlt": "Meuble réfrigéré commercial avec compartiment de maintenance ouvert"
+        },
+        {
+          "title": "Données d’instruments environnementaux d’entrepôts",
+          "text": "Transmettez les mesures sélectionnées de température, d’humidité ou d’autres grandeurs environnementales documentées provenant d’instruments externes de l’entrepôt.",
+          "interface": "Adaptez les sorties des transmetteurs installés et identifiez la zone et la hauteur de mesure représentées par chaque source.",
+          "control": "Configurez les notifications selon les critères de stockage sélectionnés ; la ventilation ou d’autres commandes nécessitent une interface d’équipement distincte prise en charge.",
+          "verification": "Comparez les relevés des instruments avec le plan d’implantation ; un point unique n’établit pas les conditions de l’ensemble de l’entrepôt.",
+          "imageKey": "hr10-warehouse-environment",
+          "imageAlt": "Allée d’entrepôt avec rayonnages de stockage et emplacements de palettes"
+        }
+      ]
+    },
+    {
+      "id": "machine-oem",
+      "title": "Intégration de machines et OEM",
+      "intro": "Ajoutez un chemin de données sans fil défini aux équipements existants et aux conceptions d’instruments OEM. RS485 et TTL décrivent des interfaces électriques, et non une compatibilité automatique de protocole ; convenez du format source, du comportement de l’appareil et du périmètre des commandes autorisées avant d’intégrer la version HR-10 sélectionnée.",
+      "imageKey": "hr10-plc-controller-data",
+      "imageAlt": "Armoire de commande industrielle avec équipements PLC et câblage de borniers",
+      "tasks": [
+        {
+          "title": "Données de contrôleurs d’équipements existants",
+          "text": "Transmettez les mesures ou informations de fonctionnement sélectionnées qu’un PLC ou un contrôleur d’équipement expose via une interface documentée.",
+          "interface": "Confirmez l’interface électrique, les paramètres série et les définitions des données sources ; sélectionnez la correspondance d’intégration nécessaire au projet.",
+          "control": "Séparez l’accès de surveillance des commandes d’écriture ou de contrôle prises en charge et conservez les priorités d’exploitation de l’équipement.",
+          "verification": "Comparez les points sélectionnés avec le contrôleur source et vérifiez que la surveillance ne modifie pas sa séquence normale de commande.",
+          "imageKey": "hr10-plc-controller-data",
+          "imageAlt": "Armoire de commande industrielle avec équipements PLC et câblage de borniers"
+        },
+        {
+          "title": "Informations de fonctionnement de convoyeurs",
+          "text": "Collectez les comptages, états ou diagnostics sélectionnés déjà disponibles auprès d’un contrôleur de convoyeur ou d’un instrument compatible.",
+          "interface": "Lisez les données documentées du contrôleur ; la description des interfaces HR-10 n’implique pas le raccordement direct de capteurs à signaux discrets.",
+          "control": "N’autorisez une demande à l’équipement que via l’interface de commande prise en charge par le fournisseur et selon les autorisations locales d’exploitation.",
+          "verification": "Vérifiez les informations transmises par rapport au fonctionnement réel de l’équipement ; les arrêts d’urgence et les fonctions de sécurité restent indépendants.",
+          "imageKey": "hr10-conveyor-information",
+          "imageAlt": "Convoyeur avec capteurs d’état de procédé et infrastructure de commande"
+        },
+        {
+          "title": "Données de maintenance et de diagnostic des machines",
+          "text": "Intégrez les informations de service disponibles ou les mesures sélectionnées d’un contrôleur de machine à une vue de maintenance en ligne.",
+          "interface": "Convenez de l’interface de données externe prise en charge et distinguez une variable mesurée d’un code de maintenance calculé.",
+          "control": "Utilisez les notifications configurées pour les conditions de service sélectionnées ; les fonctions de réinitialisation suivent la procédure du fournisseur de la machine.",
+          "verification": "Vérifiez la signification des diagnostics sources et les états de maintenance sans présenter la seule télémétrie comme un diagnostic de maintenance prédictive.",
+          "imageKey": "hr10-machine-service",
+          "imageAlt": "Machine industrielle avec indication de maintenance et panneau de service ouvert"
+        },
+        {
+          "title": "Modules d’instruments TTL embarqués",
+          "text": "Intégrez un module d’instrument OEM compatible via une connexion série TTL documentée à l’intérieur de l’équipement hôte.",
+          "interface": "Confirmez la compatibilité des tensions logiques, la référence du signal, l’affectation des broches, les paramètres série et le format de données du module pour la conception fournie.",
+          "control": "Limitez les commandes sortantes à celles prises en charge par le module et approuvées pour l’application de l’équipement hôte.",
+          "verification": "Validez les échanges de données et le comportement au démarrage, à la réinitialisation et à la reprise de liaison avant l’intégration de l’équipement fini.",
+          "imageKey": "hr10-ttl-module-workbench",
+          "imageAlt": "Module d’instrument OEM et connexions de test série TTL sur un établi d’électronique"
+        },
+        {
+          "title": "Modernisation de l’instrumentation de groupes de procédé",
+          "text": "Connectez les données d’instruments externes existants d’un groupe de procédé à un processus de surveillance en ligne défini.",
+          "interface": "Sélectionnez l’interface documentée de l’instrument ou du groupe et convenez des identifiants sources, des unités de mesure et des accès d’intégration.",
+          "control": "Utilisez les commandes de surveillance ou de supervision autorisées ; les recettes de procédé, le séquencement et la protection des équipements restent gérés par le groupe.",
+          "verification": "Comparez les valeurs transmises avec les instruments sources et consignez toute modification du raccordement ou de la correspondance des données.",
+          "imageKey": "hr10-process-package-retrofit",
+          "imageAlt": "Cuves de procédé et tuyauterie d’instrumentation interconnectée"
+        }
+      ]
+    },
+    {
+      "id": "environment-field",
+      "title": "Surveillance environnementale et de terrain",
+      "intro": "Connectez les instruments environnementaux et les mesures de terrain sélectionnés sur des installations réparties. Choisissez l’instrument externe et le dispositif de protection du site, puis définissez la validité des données, les limites de surveillance et la réponse opérationnelle à une notification.",
+      "imageKey": "hr10-extraction-instruments",
+      "imageAlt": "Caisson de filtre et conduit d’extraction avec points externes de mesure de pression",
+      "tasks": [
+        {
+          "title": "Mesures de filtration et d’extraction",
+          "text": "Collectez la pression différentielle ou d’autres mesures documentées provenant d’instruments externes de systèmes de filtration ou d’extraction.",
+          "interface": "Adaptez la sortie du transmetteur sélectionné ou l’interface de données de l’instrument et définissez l’interprétation du fonctionnement normal.",
+          "control": "Utilisez les notifications de mesure configurées pour faciliter l’inspection ; la commande et la protection du ventilateur restent dans l’équipement local.",
+          "verification": "Vérifiez les tubes de mesure et les relevés sources, puis distinguez une variation réelle de l’état du filtre d’un défaut d’instrument.",
+          "imageKey": "hr10-extraction-instruments",
+          "imageAlt": "Caisson de filtre et conduit d’extraction avec points externes de mesure de pression"
+        },
+        {
+          "title": "Données d’instruments météorologiques externes",
+          "text": "Intégrez les mesures météorologiques sélectionnées d’instruments de terrain compatibles à une vue de surveillance du site en ligne.",
+          "interface": "Confirmez la sortie de l’instrument, les unités sources et les données disponibles pour l’intégration série ou de boucle de courant choisie.",
+          "control": "Utilisez les notifications configurées pour les limites d’observation convenues ; les prévisions météorologiques ou les décisions de fermeture automatique nécessitent des systèmes distincts.",
+          "verification": "Comparez les relevés avec l’instrument source et vérifiez l’implantation et l’exposition avant d’interpréter les conditions locales.",
+          "imageKey": "hr10-weather-instruments",
+          "imageAlt": "Instruments météorologiques externes près d’une infrastructure de transport"
+        },
+        {
+          "title": "Télémétrie de niveau de rivières et canaux",
+          "text": "Transmettez les mesures d’un instrument externe compatible de niveau de rivière ou de canal pour examen opérationnel.",
+          "interface": "Sélectionnez l’interface de l’instrument et définissez le référentiel altimétrique, les unités physiques et la plage valide de mesure.",
+          "control": "Configurez les notifications de niveau selon le plan de surveillance sélectionné ; les décisions d’alerte et les systèmes d’alerte publique sont définis séparément.",
+          "verification": "Vérifiez le niveau de référence et la qualité des données sources, puis convenez de l’identification des relevés périmés ou invalides.",
+          "imageKey": "hr10-river-level",
+          "imageAlt": "Cours d’eau avec berges et végétation riveraine"
+        },
+        {
+          "title": "Points de surveillance des eaux pluviales",
+          "text": "Connectez les instruments sélectionnés de niveau, de débit ou d’état de l’eau aux emplacements de surveillance des infrastructures d’eaux pluviales.",
+          "interface": "Adaptez la sortie de l’instrument externe et définissez l’actif, le point de mesure et les conditions physiques d’installation.",
+          "control": "Utilisez les alertes de surveillance configurées pour les limites d’exploitation sélectionnées ; l’actionnement du drainage reste assuré par son contrôleur local pris en charge.",
+          "verification": "Vérifiez les relevés des instruments et l’exposition du site, puis testez le processus de notification convenu sans présumer une capacité de prévision des inondations.",
+          "imageKey": "hr10-stormwater-points",
+          "imageAlt": "Canal urbain d’eaux pluviales et ponceau près d’une route"
+        },
+        {
+          "title": "Données d’instruments de procédé de laboratoire",
+          "text": "Connectez les mesures sélectionnées d’instruments externes compatibles sur des cuves de procédé ou des ensembles d’échantillonnage de laboratoire.",
+          "interface": "Convenez de l’interface de données série de l’instrument ou de sa sortie de boucle de courant prise en charge, des unités sources et de l’identification du point de mesure.",
+          "control": "Utilisez les notifications configurées pour les limites de mesure définies ; l’exploitation du procédé de laboratoire et toute réponse de sécurité restent assurées par leurs systèmes dédiés.",
+          "verification": "Comparez les relevés transmis avec les instruments sources et vérifiez comment la mise en température, l’étalonnage ou la maintenance affectent les données transmises.",
+          "imageKey": "hr10-analyser-streams",
+          "imageAlt": "Cuves de procédé de laboratoire avec tuyauterie d’échantillonnage et d’instrumentation raccordée"
+        }
+      ]
+    }
+  ],
+  "platformTitle": "Les données de vos instruments.\nVisibles dans Hitelecom Cloud.",
+  "platformIntro": "Consultez en ligne les données de surveillance transmises et recevez des alertes lorsque les seuils configurés sont dépassés. Attribuez à chaque instrument une identification d’actif claire, des unités physiques et un comportement de mise à jour défini. Pour un projet utilisant une plateforme client, convenez de la méthode de communication prise en charge et de la correspondance des données pour la configuration d’appareil fournie.",
+  "platformBullets": [
+    "Mesures en ligne : consultez les valeurs transmises par les instruments série et les mesures de boucle de courant dans la vue de surveillance sélectionnée, avec des plages sources, des unités et des noms d’actifs définis pour chaque point.",
+    "Alertes sur seuil : définissez les limites de surveillance et le processus de notification. Vérifiez le déclenchement, le destinataire et la réception lors de la mise en service ; la disponibilité des données dépend du profil de transmission et de la connexion réseau.",
+    "Opérations à distance : définissez les commandes de l’équipement, les autorisations et la relecture disponible avant d’activer l’utilisation à distance. Maintenez les commandes locales et les fonctions de protection indépendantes de l’équipement."
+  ],
+  "specsIntro": "La série HR-10 est une DTU sans fil compacte destinée à l’acquisition et à la transmission des données d’instruments ainsi qu’aux opérations à distance prises en charge. Les quantités d’interfaces, les combinaisons installées et les limites électriques dépendent de la configuration commandée. L’image originale du produit présente le HR10-T2.",
+  "specGroups": [
+    {
+      "title": "Produit et interfaces de terrain",
+      "rows": [
+        [
+          "Famille de produits",
+          "Contrôleur IoT / DTU sans fil de la série HR-10"
+        ],
+        [
+          "Modèle illustré",
+          "HR10-T2"
+        ],
+        [
+          "Options d’interface indiquées",
+          "RS485 / TTL / 4–20 mA ; la combinaison installée et le nombre de voies dépendent de la version fournie."
+        ],
+        [
+          "Intégration RS485",
+          "Confirmez les paramètres série, le protocole de l’appareil, l’adressage, la table des données et les opérations prises en charge."
+        ],
+        [
+          "Intégration TTL",
+          "Confirmez les niveaux logiques, l’affectation des broches, la mise à la terre et le format de données."
+        ],
+        [
+          "Acquisition de boucle de courant",
+          "Interface pour transmetteur 4–20 mA ; confirmez le câblage de boucle, l’alimentation du transmetteur, les limites d’entrée, la mise à l’échelle et les conditions de précision."
+        ]
+      ]
+    },
+    {
+      "title": "Acquisition et opérations à distance",
+      "rows": [
+        [
+          "Acquisition et traitement en périphérie",
+          "Pris en charge ; l’interprétation des instruments et les fonctions de traitement dépendent de l’application sélectionnée."
+        ],
+        [
+          "Acquisition et transmission",
+          "Définissez séparément l’acquisition à la source, la transmission cellulaire et le comportement de mise à jour en ligne attendu."
+        ],
+        [
+          "Commande à distance",
+          "Prise en charge via l’interface d’équipement sélectionnée ; convenez des commandes autorisées et de leur vérification."
+        ],
+        [
+          "Mises à jour du micrologiciel",
+          "Mise à jour à distance du micrologiciel prise en charge ; utilisez un micrologiciel approuvé pour le matériel livré."
+        ],
+        [
+          "Mécanismes de chien de garde",
+          "Chiens de garde matériels et logiciels. Confirmez le comportement de réinitialisation et de reprise de la configuration sélectionnée."
+        ]
+      ]
+    },
+    {
+      "title": "Cellulaire et plateforme",
+      "rows": [
+        [
+          "Communication cellulaire",
+          "4G ; sélectionnez le module régional, les bandes, l’antenne et le service SIM."
+        ],
+        [
+          "Configuration cellulaire de référence",
+          "Configuration de référence à 5 modes / 13 bandes ; confirmez le module exact et la liste des bandes de fréquence de la variante commandée."
+        ],
+        [
+          "Hitelecom Cloud",
+          "Consultation en ligne des données de surveillance transmises et alertes au-delà des seuils configurés."
+        ],
+        [
+          "Intégration à une plateforme client",
+          "Convenez de la méthode de communication prise en charge, du logiciel de l’appareil et de la correspondance des données pour le projet sélectionné."
+        ],
+        [
+          "Disponibilité des données",
+          "Dépend de l’instrument source, de la configuration d’acquisition/transmission, de l’alimentation et de la connexion réseau."
+        ]
+      ]
+    },
+    {
+      "title": "Alimentation et installation",
+      "rows": [
+        [
+          "Alimentation",
+          "Demandez les caractéristiques nominales d’entrée, la polarité, la consommation et les exigences de câblage de la version commandée."
+        ],
+        [
+          "Boîtier et installation",
+          "Conception compacte ; confirmez le montage, le cheminement des câbles, le dégagement de l’antenne et le plan d’installation."
+        ],
+        [
+          "Dimensions et masse",
+          "Consultez le plan mécanique propre à la configuration."
+        ],
+        [
+          "Alimentation des instruments externes",
+          "Confirmez séparément l’alimentation des transmetteurs et des modules série ; la compatibilité d’interface n’implique pas une sortie d’alimentation."
+        ]
+      ]
+    },
+    {
+      "title": "Environnement et documentation",
+      "rows": [
+        [
+          "Environnement d’installation",
+          "Sélectionnez le coffret d’installation et la protection du site en fonction de la température, de l’humidité et de l’exposition réelles."
+        ],
+        [
+          "Protection contre les pénétrations",
+          "Demandez l’indice de protection et les conditions d’installation de la configuration fournie."
+        ],
+        [
+          "Informations de mise en service",
+          "Liste des signaux d’instruments, table des données, mise à l’échelle, paramètres réseau, commandes autorisées et contrôles de reprise."
+        ],
+        [
+          "Documentation de conformité",
+          "Demandez les déclarations ou rapports d’essai propres au modèle et au pays de destination de la version commandée."
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "À quoi sert la série HR-10 ?",
+      "a": "Il s’agit d’une unité compacte de transmission sans fil de données (DTU) destinée à l’acquisition et à la transmission de données d’instruments et d’équipements compatibles. Les options d’interface RS485, TTL et 4–20 mA, le traitement en périphérie, la communication cellulaire, la surveillance dans le cloud, la commande à distance prise en charge et les mises à jour du micrologiciel relient l’instrument de terrain au processus d’exploitation."
+    },
+    {
+      "q": "RS485, TTL et 4–20 mA sont-ils tous installés simultanément ?",
+      "a": "Confirmez les ports physiques, les quantités et les combinaisons prises en charge pour la version commandée par rapport à votre liste d’instruments. RS485, TTL et 4–20 mA désignent des options d’interface ; ils ne déterminent pas la combinaison installée. Les 40 tâches d’application sont des exemples de sélection, et non 40 voies."
+    },
+    {
+      "q": "RS485 signifie-t-il que l’appareil prend en charge tous les instruments série ou appareils Modbus ?",
+      "a": "Non. RS485 définit une interface physique. Le protocole de l’appareil, l’adressage, les paramètres série, la représentation des données et les opérations de lecture ou d’écriture prises en charge doivent également correspondre. Fournissez le manuel de communication de l’instrument et la table des données pour examiner l’intégration ; ne présumez pas un protocole sur la seule indication RS485."
+    },
+    {
+      "q": "Que faut-il vérifier avant de connecter un appareil TTL ?",
+      "a": "Confirmez les niveaux logiques électriques, l’affectation des broches d’émission/réception, la mise à la terre, l’agencement des câbles et le format de données série des deux appareils. La seule indication TTL ne définit pas un niveau de tension, une isolation, un connecteur ou une sortie d’alimentation."
+    },
+    {
+      "q": "Comment raccorder et afficher les transmetteurs 4–20 mA ?",
+      "a": "Utilisez l’interface de boucle de courant spécifiée pour la version fournie et un transmetteur externe compatible. Confirmez le câblage de boucle, l’alimentation du transmetteur, les limites d’entrée prises en charge et la mise à l’échelle. Définissez la plage du transmetteur et les unités physiques, puis vérifiez les valeurs en ligne par rapport à l’instrument source et aux points de référence lors de la mise en service."
+    },
+    {
+      "q": "Puis-je consulter les mesures et recevoir des alertes dans Hitelecom Cloud ?",
+      "a": "Oui. Hitelecom Cloud permet de consulter en ligne les données de surveillance transmises et de recevoir des alertes lorsque les seuils configurés sont dépassés. Configurez les noms d’actifs, les unités, les limites de surveillance et le processus de notification. La disponibilité des données et les délais de notification dépendent du profil de transmission et de la connexion réseau."
+    },
+    {
+      "q": "Quelle commande à distance le HR-10 peut-il assurer ?",
+      "a": "La commande à distance concerne les commandes prises en charge par l’équipement connecté et la configuration de l’appareil livré. Convenez du chemin de commande, des autorisations, de la priorité locale et de la relecture disponible avant de l’activer. Une DTU n’implique pas à elle seule une sortie relais ou un raccordement direct à une charge, et la transmission d’une commande ne prouve pas que l’équipement a bougé ou changé d’état."
+    },
+    {
+      "q": "Sur quels réseaux cellulaires et dans quels pays peut-il être utilisé ?",
+      "a": "Sélectionnez la variante cellulaire selon le pays et le réseau de l’installation. La configuration de référence 4G à 5 modes / 13 bandes nécessite la confirmation du module exact, des bandes de fréquence, du service opérateur et des exigences du pays de destination pour la version commandée. Cette description ne garantit pas tous les réseaux, l’itinérance mondiale ou la disponibilité future du réseau."
+    },
+    {
+      "q": "Le micrologiciel peut-il être mis à jour à distance ?",
+      "a": "Les mises à jour à distance du micrologiciel sont prises en charge. Utilisez le micrologiciel approuvé pour le matériel livré, maintenez l’alimentation et la connexion requise, et suivez la procédure de maintenance du site. Vérifiez la communication avec les instruments, la mise à l’échelle, les transmissions et les opérations autorisées après la mise à jour."
+    },
+    {
+      "q": "Que fournissent les chiens de garde matériels et logiciels ?",
+      "a": "Ils contribuent à la reprise après des états de fonctionnement anormaux définis. Confirmez le comportement de réinitialisation, de reconnexion et de redémarrage de la configuration sélectionnée lors de la mise en service. Les chiens de garde ne remplacent pas la protection des équipements et n’établissent pas une communication ininterrompue."
+    },
+    {
+      "q": "Peut-il s’intégrer à notre propre plateforme de surveillance ?",
+      "a": "L’intégration à une plateforme client peut être étudiée selon les méthodes de communication prises en charge par l’appareil et le logiciel fournis. Convenez du transport, du format de données, de la correspondance des instruments et des commandes autorisées pour le projet. Ne déduisez pas un protocole cloud ou une API spécifique de la seule interface cellulaire ou série."
+    },
+    {
+      "q": "Quelles informations faut-il pour sélectionner une configuration HR-10 ?",
+      "a": "Indiquez le pays d’installation, les modèles d’instruments, les manuels d’interface, les tables de données et les quantités de points. Précisez les plages de boucle de courant, les commandes à distance requises, la source d’alimentation, les conditions du site, les besoins d’acquisition/transmission et la plateforme cible. Ces éléments déterminent l’agencement d’interfaces installé, le périmètre d’intégration et les contrôles de mise en service."
+    }
+  ],
+  "enquiryIntro": "Indiquez les modèles d’instruments, la documentation série ou les sorties de boucle de courant, les points de données requis et les commandes autorisées. Nous examinerons la compatibilité des interfaces, la variante cellulaire et la connexion prévue à Hitelecom Cloud ou à la plateforme client pour l’installation.",
+  "slug": "iot-controller-hr10",
+  "kind": "Product",
+  "image": "hr10-t2-original.png",
+  "imageWidth": 1280,
+  "imageHeight": 1280,
+  "datasheet": "/downloads/hr10-iot-controller-datasheet-en.pdf"
+}

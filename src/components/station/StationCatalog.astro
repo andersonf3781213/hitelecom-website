@@ -29,7 +29,7 @@ const types=[{id:'275',label:c.sidebar.weatherLabel,product:c.sidebar.weatherPro
       <nav class="pro_2_mid_left_mid_2" aria-label={c.sidebar.ariaLabel}><ul>
         <li><a class:list={['css3',{'on':validCid==='257'}]} href={local('/product/lists/cid/257#cate')} aria-current={validCid==='257'?'page':undefined}>{c.sidebar.allLabel}</a></li>
         {types.map(type=><li><a class:list={['css3',{'on':validCid===type.id}]} href={local('/product/lists/cid/'+type.id+'#cate')} aria-current={validCid===type.id?'page':undefined}>{type.label}</a><ul class="sub-prods"><li><a href={local(type.path)}>{type.product}</a></li></ul></li>)}
-        <li><a class="css3" href={local('/product/iot-controller-hd20-2000')}>{c.sidebar.controllerLabel}</a><ul class="sub-prods"><li><a href={local('/product/iot-controller-hd20-2000')}>{c.sidebar.controllerProductLabel}</a></li></ul></li>
+        <li><a class="css3" href={local('/product/iot-controller-hd20-2000')}>{c.sidebar.controllerLabel}</a><ul class="sub-prods"><li><a href={local('/product/iot-controller-hd20-2000')}>{c.sidebar.controllerProductLabel}</a></li><li><a href={local('/product/iot-controller-hr10')}>{c.sidebar.controllerProductLabelHr10}</a></li></ul></li>
       </ul></nav>
     </div></aside>
     <div class="pro_2_mid_right">

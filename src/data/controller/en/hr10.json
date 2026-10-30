@@ -1,0 +1,718 @@
+{
+  "family": "HR-10 Series",
+  "model": "HR-10 Series",
+  "picturedModel": "HR10-T2",
+  "title": "HR-10 IoT Controller & 4G DTU | RS485, TTL, 4–20 mA | Hitelecom",
+  "metaDescription": "Connect compatible RS485, TTL and 4–20 mA instruments with the compact HR-10 cellular DTU, edge acquisition, remote operations and Hitelecom Cloud monitoring.",
+  "heroHeading": "IoT Controller & DTU.",
+  "heroValue": "Connect your instruments.\nBring field data online.",
+  "heroDescription": "The Hitelecom HR-10 series connects field instruments and equipment data to remote monitoring through a compact wireless data transmission unit (DTU). RS485, TTL and 4–20 mA interface options support project-specific serial and analogue connections. Edge acquisition and processing, 4G cellular communication, supported remote control and firmware upgrades form a practical path from the instrument to the operation. View uploaded monitoring data online in Hitelecom Cloud and receive alerts when configured thresholds are exceeded.",
+  "reviewNotice": "Interface types, quantities, supported combinations and electrical limits follow the supplied configuration. Confirm the arrangement against the instrument list before ordering.",
+  "interfaceCards": [
+    {
+      "type": "RS485",
+      "title": "Serial field instruments",
+      "text": "Connect compatible instruments through an RS485 physical interface. Define the device protocol, addressing, data map and serial settings for the selected integration. An RS485 connection alone does not establish protocol compatibility.",
+      "examples": [
+        "Instrument and meter data acquisition",
+        "Documented equipment data interfaces",
+        "Supported read and command exchanges"
+      ]
+    },
+    {
+      "type": "TTL",
+      "title": "Embedded serial integration",
+      "text": "Provide a serial connection to compatible embedded modules or equipment electronics. Confirm logic levels, pin assignment, grounding and the supported data format before connection.",
+      "examples": [
+        "OEM equipment data links",
+        "Embedded measurement modules",
+        "Documented serial command interfaces"
+      ]
+    },
+    {
+      "type": "4–20 mA",
+      "title": "Current-loop measurements",
+      "text": "Acquire compatible current-loop transmitter signals using the supplied analogue interface. Match the channel arrangement, loop wiring, transmitter power and measurement scaling to the selected version.",
+      "examples": [
+        "External pressure and level transmitters",
+        "Temperature and process transducers",
+        "Other compatible current-output instruments"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Compact equipment integration",
+      "text": "A compact enclosure supports installation alongside instruments and equipment electronics. Plan mounting, cable routing, antenna clearance and service access around the actual installation."
+    },
+    {
+      "title": "RS485 and TTL interface options",
+      "text": "Bring compatible serial instruments and embedded equipment into the data path. Agree the electrical connection, device protocol and readable data points for the supplied interface arrangement."
+    },
+    {
+      "title": "4–20 mA transmitter acquisition",
+      "text": "Connect compatible external current-output transmitters. Define the instrument range, engineering units and current-to-value mapping so online readings retain their physical meaning."
+    },
+    {
+      "title": "Acquisition and processing at the edge",
+      "text": "Acquire and process field data close to the connected equipment. Specify the required data interpretation and update behaviour for the delivered application."
+    },
+    {
+      "title": "Cellular data transmission",
+      "text": "Use a 4G cellular connection for remote data communication. Select the module, frequency bands, antenna arrangement and SIM service for the installation country and network."
+    },
+    {
+      "title": "Online data and threshold alerts",
+      "text": "View uploaded monitoring data online in Hitelecom Cloud and receive alerts when configured thresholds are exceeded. Configure asset names, engineering units, monitoring limits and the notification workflow."
+    },
+    {
+      "title": "Supported remote operations and upgrades",
+      "text": "Send permitted commands through the connected equipment’s documented interface and maintain device firmware remotely. Define command permissions, local priorities and verification before commissioning."
+    },
+    {
+      "title": "Hardware and software watchdogs",
+      "text": "Hardware and software watchdog mechanisms support device recovery from defined faults. Verify reset and reconnection behaviour for the delivered configuration as part of commissioning."
+    }
+  ],
+  "workflow": [
+    {
+      "title": "Define and acquire the measurement",
+      "text": "Identify the instrument, electrical interface and data format. For serial points, document the readable data map; for current-loop points, define the source range, units and scaling."
+    },
+    {
+      "title": "Transmit over the selected network",
+      "text": "Match the cellular variant, antenna and SIM service to the site. Define acquisition and reporting requirements separately, then check the installed connection and update behaviour."
+    },
+    {
+      "title": "Review online data and alerts",
+      "text": "View uploaded measurements in Hitelecom Cloud. Check asset identity, engineering units and configured threshold alerts against the source instrument during commissioning."
+    },
+    {
+      "title": "Execute supported remote operations",
+      "text": "Use only commands documented for the connected equipment and agreed for the installation. Verify the physical result or instrument readback separately from command transmission, and confirm operation after a firmware upgrade."
+    }
+  ],
+  "applicationsIntro": "Eight application areas, each with five instrument-connection tasks, show where a compact cellular DTU can bring field data online. These 40 tasks are selection examples, not a channel count or a promise that all tasks run in one device. Select the fitted interface arrangement, compatible external instruments and required data exchanges for each installation. Remote actions apply only where the connected equipment exposes a documented, supported command interface.",
+  "groups": [
+    {
+      "id": "water-wastewater",
+      "title": "Water & Wastewater Instrumentation",
+      "intro": "Bring selected water measurements and equipment-controller data online from pumping stations, storage assets and treatment facilities. Match the supplied HR-10 interface to each external instrument, then define source identifiers, units and the monitoring or permitted command workflow.",
+      "imageKey": "hr10-water-pump-station",
+      "imageAlt": "Water pumping station with blue pumps and pipework",
+      "tasks": [
+        {
+          "title": "Pumping-station instrument readings",
+          "text": "Collect pressure, flow or other documented measurements from a pumping-station instrument or local equipment controller.",
+          "interface": "Select a compatible RS485 instrument interface or supported 4–20 mA measurement input for the ordered configuration.",
+          "control": "Use configured measurement limits for cloud alerts; pump commands require a documented interface on the local controller.",
+          "verification": "Compare uploaded values with the source instrument and verify units, scaling and equipment identity.",
+          "imageKey": "hr10-water-pump-station",
+          "imageAlt": "Water pumping station with blue pumps and pipework"
+        },
+        {
+          "title": "Water-quality analyser data",
+          "text": "Upload selected water-quality values from an external analyser or sampling rack for operational review.",
+          "interface": "Match the analyser output, communication settings and data definitions to the supplied serial or current-loop interface.",
+          "control": "Configure monitoring alerts around the agreed process limits; analyser calibration and cleaning stay with the instrument procedure.",
+          "verification": "Check each reported parameter against the analyser display and record maintenance or calibration states separately.",
+          "imageKey": "hr10-water-quality-rack",
+          "imageAlt": "Water-quality sampling rack with instrument flow cells"
+        },
+        {
+          "title": "Water-storage level measurements",
+          "text": "Connect an external level transmitter so operators can review storage conditions without a dedicated visit for every reading.",
+          "interface": "Use the selected transmitter output and specify the physical level range, engineering units and signal interpretation.",
+          "control": "Set configured level notifications; any transfer request must pass through the tank or pump controller’s supported interface.",
+          "verification": "Check reference levels and signal direction, and distinguish an invalid source reading from an actual empty or full condition.",
+          "imageKey": "hr10-storage-level",
+          "imageAlt": "Farm water-storage tank with adjacent transfer pump"
+        },
+        {
+          "title": "Sampling-system operating data",
+          "text": "Bring available sampling-pump measurements and diagnostic information into the same asset view as the associated instrument.",
+          "interface": "Read supported data from the sampling package or a compatible external transmitter; agree the data mapping before integration.",
+          "control": "Send a sampling request only where the package documents that command and its local operating permissions.",
+          "verification": "Verify sample flow or instrument feedback independently; an accepted message does not confirm that a sample reached the analyser.",
+          "imageKey": "hr10-sampling-system",
+          "imageAlt": "External sampling pump with instrument tubing"
+        },
+        {
+          "title": "Drainage sump and pump-controller telemetry",
+          "text": "Monitor an external sump-level measurement alongside the operating data exposed by the drainage controller.",
+          "interface": "Select a compatible level-transmitter or controller interface and identify the measurements available in the delivered arrangement.",
+          "control": "Use level notifications for service response; keep pump sequencing, dry-run protection and local overrides in the drainage system.",
+          "verification": "Test level indications and compare reported pump states with the installed controller during commissioning.",
+          "imageKey": "hr10-drainage-telemetry",
+          "imageAlt": "Drainage sump and pump installation at a transport facility"
+        }
+      ]
+    },
+    {
+      "id": "process-instruments",
+      "title": "Process & Utility Instruments",
+      "intro": "Extend the visibility of existing industrial instruments with a compact wireless data link. Applications focus on reading compatible transmitter or equipment data; any remote action is limited to commands expressly supported by the connected device and the agreed integration.",
+      "imageKey": "hr10-process-instruments",
+      "imageAlt": "Pressure and temperature instruments on a process skid",
+      "tasks": [
+        {
+          "title": "Process pressure and temperature data",
+          "text": "Connect selected pressure and temperature instruments on an equipment skid to an online monitoring workflow.",
+          "interface": "Match serial data definitions or supported 4–20 mA outputs to the ordered interface and engineering ranges.",
+          "control": "Set configured threshold alerts for the selected process variables; independent process protection remains in place.",
+          "verification": "Compare readings at representative operating points and check units, signal scaling and instrument diagnostics.",
+          "imageKey": "hr10-process-instruments",
+          "imageAlt": "Pressure and temperature instruments on a process skid"
+        },
+        {
+          "title": "Compressed-air package information",
+          "text": "Bring selected compressor measurements and operating information from the package’s documented external interface into cloud monitoring.",
+          "interface": "Confirm which controller values and communication settings are available; do not infer compatibility from an RS485 connector alone.",
+          "control": "Permit remote package commands only when supported by its manufacturer and local operating procedure.",
+          "verification": "Compare reported states with the compressor panel and verify local mode, restart conditions and alarm meanings.",
+          "imageKey": "hr10-compressor-data",
+          "imageAlt": "Industrial compressor package with local operating indicators"
+        },
+        {
+          "title": "Cooling-loop measurement collection",
+          "text": "Upload external cooling-loop pressure, temperature or flow measurements for review of auxiliary-system conditions.",
+          "interface": "Use a compatible instrument output or documented package interface, with each measurement tied to its physical location.",
+          "control": "Configure notifications for the agreed limits; cooling equipment retains its own sequencing and protection.",
+          "verification": "Check instrument readings and source-data validity, then verify the notification path for an agreed test condition.",
+          "imageKey": "hr10-cooling-loop",
+          "imageAlt": "Cooling circulation pump and heat-exchanger pipework"
+        },
+        {
+          "title": "External instrument cabinet integration",
+          "text": "Connect an instrument panel or cabinet that already provides documented serial measurement data.",
+          "interface": "Agree the RS485 electrical arrangement, serial settings, device data definitions and permitted access for the supplied configuration.",
+          "control": "Separate read-only monitoring from any supported configuration or control command before remote access is enabled.",
+          "verification": "Validate the selected instrument points and responses against the source devices and the approved connection schedule.",
+          "imageKey": "hr10-serial-instrument-cabinet",
+          "imageAlt": "External industrial instruments and terminal wiring in a service cabinet"
+        },
+        {
+          "title": "Gas-utility pressure instrumentation",
+          "text": "Collect selected measurements from gas-pressure instrumentation through a compatible external transmitter or controller interface.",
+          "interface": "Define the source output, pressure units, operating range and required installation arrangement for the selected instrument.",
+          "control": "Use the data for operational monitoring and configured alerts; dedicated gas protection and emergency functions remain independent.",
+          "verification": "Verify measurement scaling and source faults; do not present the telemetry link as a gas-safety system.",
+          "imageKey": "hr10-gas-utility",
+          "imageAlt": "Gas-regulation station with pressure-control pipework"
+        }
+      ]
+    },
+    {
+      "id": "building-services",
+      "title": "Building Services & Indoor Conditions",
+      "intro": "Connect selected meters, plant-room instruments and environmental transmitters to building operations. Keep measurement acquisition, cloud alerts and any authorised equipment command clearly defined; the building’s dedicated control, electrical protection and safety systems retain their responsibilities.",
+      "imageKey": "hr10-rs485-meter-panel",
+      "imageAlt": "Building electrical submeters and terminal wiring in a service panel",
+      "tasks": [
+        {
+          "title": "Electrical submeter data",
+          "text": "Read the documented measurements available from an external building submeter to support online review of utility use.",
+          "interface": "Use a compatible serial meter interface and confirm the data definitions, units and electrical connection arrangement.",
+          "control": "Define monitoring thresholds or reporting views; billing, tariff calculation and disconnection functions are separate integration requirements.",
+          "verification": "Compare selected values with the meter display and verify asset naming, units and the source measurement period.",
+          "imageKey": "hr10-rs485-meter-panel",
+          "imageAlt": "Building electrical submeters and terminal wiring in a service panel"
+        },
+        {
+          "title": "Data-centre facility instrumentation",
+          "text": "Bring selected room or support-system measurements from external facility instruments into an online operations view.",
+          "interface": "Match the instrument or facility-controller data interface to the supplied HR-10 configuration and point schedule.",
+          "control": "Use configured alerts to support operator response; critical cooling, power transfer and equipment protection stay with their dedicated systems.",
+          "verification": "Verify the source values and notification routing without interrupting live facility-control functions.",
+          "imageKey": "hr10-data-centre-facilities",
+          "imageAlt": "Data-centre aisle with equipment racks and service infrastructure"
+        },
+        {
+          "title": "Building water-services pressure",
+          "text": "Collect selected water-services pressure or plant measurements from instruments in a building pump room.",
+          "interface": "Choose a compatible transmitter output or documented local-controller interface and define the monitored circuit and units.",
+          "control": "Set measurement alerts; any remote request must use the supported building-services control interface and local priority.",
+          "verification": "Compare local and uploaded readings and test the agreed alert condition while retaining pump-system protection.",
+          "imageKey": "hr10-building-water",
+          "imageAlt": "Indoor water-services plant with pumps, vessels and pipework"
+        },
+        {
+          "title": "Boiler and hot-water instrument values",
+          "text": "Upload selected external temperature, pressure or utility measurements from a boiler or hot-water plant.",
+          "interface": "Match the instrument output, measurement range and site wiring requirements to the ordered acquisition interface.",
+          "control": "Configure monitoring notifications; burner management, pressure protection and plant sequencing remain with the dedicated equipment.",
+          "verification": "Check the source readings and measurement locations, including whether the value represents supply, return or another plant point.",
+          "imageKey": "hr10-hot-water-plant",
+          "imageAlt": "Boiler and hot-water plant with pumps and connected pipework"
+        },
+        {
+          "title": "AHU and hydronic instrument data",
+          "text": "Connect selected air-handling or heating-and-cooling instruments for online review of building-service conditions.",
+          "interface": "Use compatible external transmitter outputs or documented equipment data, with the source units and point locations defined.",
+          "control": "Limit remote requests to supported supervisory functions; local temperature control, frost protection and interlocks stay with the equipment.",
+          "verification": "Compare uploaded measurements with local instruments and confirm permitted command responses separately from measurement updates.",
+          "imageKey": "hr10-ahu-instrumentation",
+          "imageAlt": "Air-handling equipment with hydronic pipework and external instruments"
+        }
+      ]
+    },
+    {
+      "id": "agriculture-aquaculture",
+      "title": "Agriculture & Aquaculture",
+      "intro": "Bring compatible greenhouse, irrigation and aquaculture instruments into a shared monitoring workflow. Select the external sensors and local equipment interfaces for the site; the HR-10 supplies the configured data path and processing, rather than replacing the measurement instrument or agricultural controller.",
+      "imageKey": "hr10-greenhouse-data",
+      "imageAlt": "Greenhouse irrigation and fertigation equipment",
+      "tasks": [
+        {
+          "title": "Greenhouse instrument collection",
+          "text": "Collect selected climate or cultivation measurements from external greenhouse instruments or a compatible local controller.",
+          "interface": "Agree the source outputs, units and serial data definitions for the instruments fitted to the installation.",
+          "control": "Configure crop- or site-specific monitoring limits; greenhouse actuators remain under their documented control arrangement.",
+          "verification": "Compare the uploaded values with local readings and check the measurement location before interpreting a change.",
+          "imageKey": "hr10-greenhouse-data",
+          "imageAlt": "Greenhouse irrigation and fertigation equipment"
+        },
+        {
+          "title": "Irrigation valve-controller data",
+          "text": "Read the valve operating information exposed by an irrigation controller or actuator with a compatible external data interface.",
+          "interface": "Confirm the supported serial status values and commands; the HR-10 interface description does not establish direct motor-driving capability.",
+          "control": "Issue an authorised request only through the documented controller interface and its local operating permissions.",
+          "verification": "Verify actual valve position or flow separately from an accepted command and retain local manual operation.",
+          "imageKey": "hr10-irrigation-valve",
+          "imageAlt": "Motorized irrigation valve and distribution manifold"
+        },
+        {
+          "title": "Irrigation pressure measurements",
+          "text": "Upload external pressure readings at an irrigation distribution header to support review of delivery conditions.",
+          "interface": "Match the pressure-transmitter output, units and range to the supplied interface and point definition.",
+          "control": "Set monitoring limits appropriate to the system; irrigation sequencing and pressure protection remain in the local installation.",
+          "verification": "Check readings at agreed operating conditions and distinguish a measurement fault from a genuine pressure event.",
+          "imageKey": "hr10-irrigation-pressure",
+          "imageAlt": "Pressure instruments on an irrigation distribution header"
+        },
+        {
+          "title": "Fertigation package measurements",
+          "text": "Bring selected dosing-package measurements and operating information online through its available instrument or controller outputs.",
+          "interface": "Define the supported source interface and the meaning of each measured or reported point before connection.",
+          "control": "Use configured notifications or a documented supervisory request; dosing recipes and proportioning stay with the package controller.",
+          "verification": "Compare source values and relevant equipment feedback; a remote data update does not confirm correct chemical dosing.",
+          "imageKey": "hr10-fertigation-data",
+          "imageAlt": "Fertigation dosing package in a greenhouse service area"
+        },
+        {
+          "title": "Aquaculture water-instrument readings",
+          "text": "Collect selected water-condition values from external aquaculture instruments for online review of pond or tank conditions.",
+          "interface": "Match the fitted analyser or transmitter outputs and define units, measurement locations and maintenance requirements.",
+          "control": "Use configured monitoring alerts for operator response; aeration or treatment commands require a supported local equipment interface.",
+          "verification": "Check readings against the source instruments and record cleaning or calibration events that can affect interpretation.",
+          "imageKey": "hr10-aquaculture-water",
+          "imageAlt": "Aquaculture ponds with aeration equipment and waterside infrastructure"
+        }
+      ]
+    },
+    {
+      "id": "remote-energy-assets",
+      "title": "Remote Stations & Energy Assets",
+      "intro": "Connect selected instruments and equipment-controller data at distributed stations where a wired backhaul is impractical. Scope the regional cellular connection, power arrangement and protective installation separately, and keep local equipment operation independent of the availability of a cloud session.",
+      "imageKey": "hr10-remote-site",
+      "imageAlt": "Remote telecommunications site with equipment cabinets and antenna infrastructure",
+      "tasks": [
+        {
+          "title": "Remote-station equipment data",
+          "text": "Collect documented measurements and service information from instruments or equipment controllers at a remote communications site.",
+          "interface": "Select the supported external data interface and point definitions for each station asset.",
+          "control": "Use online monitoring and configured alerts; any equipment command must follow the site controller’s supported workflow.",
+          "verification": "Verify source readings and asset identity, and agree how unavailable or stale data is indicated during a lost connection.",
+          "imageKey": "hr10-remote-site",
+          "imageAlt": "Remote telecommunications site with equipment cabinets and antenna infrastructure"
+        },
+        {
+          "title": "Solar-site auxiliary telemetry",
+          "text": "Upload selected inverter, utility or auxiliary-instrument data from a solar installation through a compatible external interface.",
+          "interface": "Confirm the equipment’s documented interface and data definitions for the supplied integration; do not infer a particular inverter protocol.",
+          "control": "Use the data for operational review and permitted supervisory actions; electrical protection and grid functions remain dedicated.",
+          "verification": "Compare selected source values and operating states and verify the site’s local and remote access permissions.",
+          "imageKey": "hr10-solar-site",
+          "imageAlt": "Solar array with field utility cabinets"
+        },
+        {
+          "title": "Station power-supply information",
+          "text": "Read available power-supply measurements or diagnostic data from a compatible station power controller or external transducer.",
+          "interface": "Agree the controller data interface or measurement output and the interpretation of normal, maintenance and fault states.",
+          "control": "Route configured alerts to the station-service workflow; automatic power transfer and load protection remain in the power system.",
+          "verification": "Compare reported conditions with the source controller and test notifications using an authorised maintenance procedure.",
+          "imageKey": "hr10-station-power",
+          "imageAlt": "Remote-station backup power equipment in a service cabinet"
+        },
+        {
+          "title": "Battery-system measurement upload",
+          "text": "Connect an external battery-monitoring transducer or controller that supplies compatible measurement data.",
+          "interface": "Match the transducer output or serial data interface and identify the battery bank and measurement point represented.",
+          "control": "Use monitoring alerts for the defined electrical limits; charging control, balancing and protection stay with the battery system.",
+          "verification": "Verify the source measurement and scaling, and do not derive battery health or remaining life from a single telemetry value.",
+          "imageKey": "hr10-battery-measurements",
+          "imageAlt": "Station battery bank with an external monitoring transducer"
+        },
+        {
+          "title": "Equipment-room leakage transmitter data",
+          "text": "Upload readings or event information from a compatible leakage-monitoring transmitter or local monitoring controller.",
+          "interface": "Use a documented serial or supported measurement output; a bare switch or passive probe requires a suitable external interface.",
+          "control": "Send configured notifications to maintenance staff; any drainage command remains within the documented local control arrangement.",
+          "verification": "Test the physical sensing area and verify the resulting source indication and cloud notification as separate steps.",
+          "imageKey": "hr10-equipment-room-leakage",
+          "imageAlt": "Leakage sensing area on the floor of a remote equipment room"
+        }
+      ]
+    },
+    {
+      "id": "controlled-storage",
+      "title": "Refrigeration & Controlled Storage",
+      "intro": "Connect external temperature, environmental or equipment-controller data in refrigerated and controlled storage settings. Define instrument placement, source accuracy and notification requirements for the project; a telemetry connection does not itself establish a validated storage process or compliance record.",
+      "imageKey": "hr10-coldroom-transmitter",
+      "imageAlt": "Cold-room temperature transmitter with a wired external probe",
+      "tasks": [
+        {
+          "title": "Cold-room temperature transmitter data",
+          "text": "Bring a compatible external cold-room temperature transmitter into online monitoring for the selected storage location.",
+          "interface": "Match the transmitter’s serial or supported 4–20 mA output to the supplied interface and temperature range.",
+          "control": "Set configured threshold alerts; refrigeration control and equipment protection remain with the installed refrigeration system.",
+          "verification": "Compare uploaded and source readings and verify probe placement and the full notification route.",
+          "imageKey": "hr10-coldroom-transmitter",
+          "imageAlt": "Cold-room temperature transmitter with a wired external probe"
+        },
+        {
+          "title": "Laboratory refrigerator measurements",
+          "text": "Collect documented measurements from an external refrigerator instrument or compatible monitoring controller.",
+          "interface": "Confirm the available data interface, measurement units and device identifiers for each monitored enclosure.",
+          "control": "Configure notifications around the agreed storage limits; local refrigeration and independent alarms remain operational.",
+          "verification": "Check local readings, source faults and planned maintenance events; validation and record-retention requirements are defined separately.",
+          "imageKey": "hr10-laboratory-storage",
+          "imageAlt": "Laboratory storage refrigerators and adjacent work area"
+        },
+        {
+          "title": "Refrigerated vending measurements",
+          "text": "Upload temperature or diagnostic information exposed by a refrigerated vending controller or external transmitter.",
+          "interface": "Select a compatible instrument output or documented machine data interface; payment and transaction data are outside this task.",
+          "control": "Use configured measurement alerts; remote machine requests require the vending supplier’s supported interface.",
+          "verification": "Compare the source reading and compartment identity and verify the distinction between a data fault and a refrigeration event.",
+          "imageKey": "hr10-refrigerated-vending",
+          "imageAlt": "Refrigerated vending compartment with an external temperature probe"
+        },
+        {
+          "title": "Retail refrigeration service information",
+          "text": "Collect selected operating and service data from a display-cabinet controller or compatible external instrument.",
+          "interface": "Agree the documented controller interface and which measurement or diagnostic points are available to the integration.",
+          "control": "Use the data for maintenance notifications; defrost, temperature regulation and compressor protection stay with the refrigeration controller.",
+          "verification": "Check source values and diagnostic definitions against the local cabinet before assigning notification priorities.",
+          "imageKey": "hr10-retail-refrigeration",
+          "imageAlt": "Retail refrigerated display cabinet with an open service compartment"
+        },
+        {
+          "title": "Warehouse environmental instrument data",
+          "text": "Upload selected temperature, humidity or other documented environmental measurements from external warehouse instruments.",
+          "interface": "Match the fitted transmitter outputs and identify the zone and measurement height represented by each source.",
+          "control": "Configure notifications for the selected storage criteria; ventilation or other commands require a separate supported equipment interface.",
+          "verification": "Compare the instrument readings and location plan; a single point does not establish conditions throughout an entire warehouse.",
+          "imageKey": "hr10-warehouse-environment",
+          "imageAlt": "Warehouse aisle with storage racks and pallet locations"
+        }
+      ]
+    },
+    {
+      "id": "machine-oem",
+      "title": "Machine & OEM Integration",
+      "intro": "Add a defined wireless data path to existing equipment and OEM instrument designs. RS485 and TTL describe electrical interfaces, not automatic protocol compatibility; agree the source format, device behaviour and permitted command scope before integrating the selected HR-10 version.",
+      "imageKey": "hr10-plc-controller-data",
+      "imageAlt": "Industrial control cabinet with PLC equipment and terminal wiring",
+      "tasks": [
+        {
+          "title": "Existing equipment-controller data",
+          "text": "Upload selected measurements or operating information that a PLC or equipment controller exposes through a documented interface.",
+          "interface": "Confirm the electrical interface, serial settings and source-data definitions; select any required integration mapping for the project.",
+          "control": "Separate monitoring access from supported write or control commands and retain the equipment’s operating priorities.",
+          "verification": "Compare selected points with the source controller and verify that monitoring does not alter its normal control sequence.",
+          "imageKey": "hr10-plc-controller-data",
+          "imageAlt": "Industrial control cabinet with PLC equipment and terminal wiring"
+        },
+        {
+          "title": "Conveyor equipment operating information",
+          "text": "Collect selected counts, states or diagnostics already available from a conveyor controller or compatible instrument.",
+          "interface": "Read the documented controller data; direct connection of discrete sensors is not implied by the HR-10 interface description.",
+          "control": "Permit an equipment request only through the supplier’s supported command interface and local operating permissions.",
+          "verification": "Check reported information against actual equipment operation; emergency stops and safety functions remain independent.",
+          "imageKey": "hr10-conveyor-information",
+          "imageAlt": "Conveyor equipment with process-state sensors and control infrastructure"
+        },
+        {
+          "title": "Machine service and diagnostic data",
+          "text": "Bring available service information or selected measurements from a machine controller into an online maintenance view.",
+          "interface": "Agree the supported external data interface and distinguish a measured variable from a derived maintenance code.",
+          "control": "Use configured notifications for the selected service conditions; reset functions follow the machine supplier’s procedure.",
+          "verification": "Check source diagnostic meanings and maintenance states without presenting telemetry alone as a predictive-maintenance diagnosis.",
+          "imageKey": "hr10-machine-service",
+          "imageAlt": "Industrial machine with maintenance indication and an open service panel"
+        },
+        {
+          "title": "Embedded TTL instrument modules",
+          "text": "Integrate a compatible OEM instrument module through a documented TTL serial connection inside the host equipment.",
+          "interface": "Confirm logic-voltage compatibility, signal reference, pin assignment, serial settings and the module’s data format for the supplied design.",
+          "control": "Limit outgoing commands to those supported by the module and approved by the host-equipment application.",
+          "verification": "Validate data exchange and behaviour during start-up, reset and link recovery before integrating the finished equipment.",
+          "imageKey": "hr10-ttl-module-workbench",
+          "imageAlt": "OEM instrument module and TTL serial test connections on an electronics workbench"
+        },
+        {
+          "title": "Process-package instrument retrofit",
+          "text": "Connect existing external instrument data on a process package to a defined online monitoring workflow.",
+          "interface": "Select the documented instrument or package interface and agree source identifiers, measurement units and integration access.",
+          "control": "Use permitted monitoring or supervisory commands; process recipes, sequencing and equipment protection remain with the package.",
+          "verification": "Compare uploaded values with the source instruments and record any changes to the connection or data mapping.",
+          "imageKey": "hr10-process-package-retrofit",
+          "imageAlt": "Process vessels and interconnected instrument pipework"
+        }
+      ]
+    },
+    {
+      "id": "environment-field",
+      "title": "Environmental & Field Monitoring",
+      "intro": "Connect selected environmental instruments and field measurements across distributed installations. Choose the external instrument and protective arrangement for the site, then define data validity, monitoring limits and the operational response to a notification.",
+      "imageKey": "hr10-extraction-instruments",
+      "imageAlt": "Filter housing and extraction duct with external pressure-sensing points",
+      "tasks": [
+        {
+          "title": "Filter and extraction measurements",
+          "text": "Collect differential-pressure or other documented measurements from external filter or extraction-system instruments.",
+          "interface": "Match the selected transmitter output or instrument data interface and define the normal operating interpretation.",
+          "control": "Use configured measurement notifications to support inspection; fan control and protection remain in the local equipment.",
+          "verification": "Check measurement tubing and source readings and distinguish a genuine filter-condition change from an instrument fault.",
+          "imageKey": "hr10-extraction-instruments",
+          "imageAlt": "Filter housing and extraction duct with external pressure-sensing points"
+        },
+        {
+          "title": "External weather-instrument data",
+          "text": "Bring selected weather measurements from compatible field instruments into an online site-monitoring view.",
+          "interface": "Confirm the instrument output, source units and available data for the chosen serial or current-loop integration.",
+          "control": "Use configured notifications for the agreed observation limits; weather forecasting or automatic closure decisions require separate systems.",
+          "verification": "Compare readings with the source instrument and check siting and exposure before interpreting local conditions.",
+          "imageKey": "hr10-weather-instruments",
+          "imageAlt": "External weather instruments beside a transport facility"
+        },
+        {
+          "title": "River and channel level telemetry",
+          "text": "Upload measurements from a compatible external river- or channel-level instrument for operational review.",
+          "interface": "Select the instrument interface and define the reference datum, engineering units and valid measurement range.",
+          "control": "Configure level notifications for the selected monitoring plan; warning decisions and public-alert systems are scoped separately.",
+          "verification": "Check the reference level and source data quality and agree how stale or invalid readings will be identified.",
+          "imageKey": "hr10-river-level",
+          "imageAlt": "River channel with bankside terrain and waterside vegetation"
+        },
+        {
+          "title": "Stormwater monitoring points",
+          "text": "Connect selected level, flow or water-condition instruments at stormwater infrastructure monitoring locations.",
+          "interface": "Match the external instrument output and define the asset, measurement point and physical installation conditions.",
+          "control": "Use configured monitoring alerts for the selected operating limits; drainage actuation remains with its supported local controller.",
+          "verification": "Verify instrument readings and site exposure and test the agreed notification workflow without assuming flood-prediction capability.",
+          "imageKey": "hr10-stormwater-points",
+          "imageAlt": "Urban stormwater channel and culvert beside a roadway"
+        },
+        {
+          "title": "Laboratory process-instrument data",
+          "text": "Connect selected measurements from compatible external instruments on laboratory process vessels or sampling assemblies.",
+          "interface": "Agree the instrument serial data interface or supported current-loop output, source units and measurement-point identity.",
+          "control": "Use configured notifications for defined measurement limits; laboratory process operation and any safety response remain with their dedicated systems.",
+          "verification": "Compare uploaded readings with the source instruments and verify how warm-up, calibration or maintenance affects the reported data.",
+          "imageKey": "hr10-analyser-streams",
+          "imageAlt": "Laboratory process vessels with connected sampling and instrument pipework"
+        }
+      ]
+    }
+  ],
+  "platformTitle": "Your instrument data.\nVisible in Hitelecom Cloud.",
+  "platformIntro": "View uploaded monitoring data online and receive alerts when configured thresholds are exceeded. Give each instrument a clear asset identity, engineering units and defined update behaviour. For a customer-platform project, agree the supported communication method and data mapping for the delivered device configuration.",
+  "platformBullets": [
+    "Online measurements: review uploaded serial-instrument values and current-loop measurements in the selected monitoring view, with source ranges, units and asset names defined for each point.",
+    "Threshold alerts: set the monitoring limits and notification workflow. Verify the trigger, recipient and delivery during commissioning; data availability depends on the reporting profile and network connection.",
+    "Remote operations: define the equipment commands, authorization and available readback before enabling remote use. Keep the equipment’s local controls and independent protection functions in place."
+  ],
+  "specsIntro": "The HR-10 series is a compact wireless DTU for instrument data acquisition, transmission and supported remote operations. Interface quantities, fitted combinations and electrical limits follow the ordered configuration. The original product image shows HR10-T2.",
+  "specGroups": [
+    {
+      "title": "Product & Field Interfaces",
+      "rows": [
+        [
+          "Product family",
+          "HR-10 Series IoT Controller / wireless DTU"
+        ],
+        [
+          "Illustrated model",
+          "HR10-T2"
+        ],
+        [
+          "Listed interface options",
+          "RS485 / TTL / 4–20 mA; fitted combination and channel quantities follow the supplied version."
+        ],
+        [
+          "RS485 integration",
+          "Confirm serial settings, device protocol, addressing, data map and supported operations."
+        ],
+        [
+          "TTL integration",
+          "Confirm logic levels, pin assignment, grounding and data format."
+        ],
+        [
+          "Current-loop acquisition",
+          "4–20 mA transmitter interface; confirm loop wiring, transmitter supply, input limits, scaling and accuracy conditions."
+        ]
+      ]
+    },
+    {
+      "title": "Acquisition & Remote Operations",
+      "rows": [
+        [
+          "Edge acquisition and processing",
+          "Supported; instrument interpretation and processing functions follow the selected application."
+        ],
+        [
+          "Acquisition and reporting",
+          "Define source acquisition, cellular reporting and expected online update behaviour separately."
+        ],
+        [
+          "Remote control",
+          "Supported through the selected equipment interface; agree permitted commands and verification."
+        ],
+        [
+          "Firmware upgrades",
+          "Remote firmware upgrade supported; use firmware approved for the delivered hardware."
+        ],
+        [
+          "Watchdog mechanisms",
+          "Hardware and software watchdogs. Confirm reset and recovery behaviour for the selected configuration."
+        ]
+      ]
+    },
+    {
+      "title": "Cellular & Platform",
+      "rows": [
+        [
+          "Cellular communication",
+          "4G; select the regional module, bands, antenna and SIM service."
+        ],
+        [
+          "Reference cellular configuration",
+          "5-mode / 13-band reference configuration; confirm the exact module and frequency-band list for the ordered variant."
+        ],
+        [
+          "Hitelecom Cloud",
+          "Online viewing of uploaded monitoring data and alerts above configured thresholds."
+        ],
+        [
+          "Customer-platform integration",
+          "Agree the supported communication method, device software and data mapping for the selected project."
+        ],
+        [
+          "Data availability",
+          "Depends on the source instrument, acquisition/reporting configuration, power and network connection."
+        ]
+      ]
+    },
+    {
+      "title": "Power & Installation",
+      "rows": [
+        [
+          "Power supply",
+          "Request the rated input, polarity, consumption and wiring requirements for the ordered version."
+        ],
+        [
+          "Enclosure and installation",
+          "Compact design; confirm mounting, cable routing, antenna clearance and installation drawing."
+        ],
+        [
+          "Dimensions and mass",
+          "Refer to the configuration-specific mechanical drawing."
+        ],
+        [
+          "External instrument power",
+          "Confirm transmitter and serial-module power arrangements separately; interface compatibility does not establish a power output."
+        ]
+      ]
+    },
+    {
+      "title": "Environment & Documentation",
+      "rows": [
+        [
+          "Installation environment",
+          "Select the installation enclosure and site protection for the actual temperature, humidity and exposure."
+        ],
+        [
+          "Ingress protection",
+          "Request the rating and installation conditions for the supplied configuration."
+        ],
+        [
+          "Commissioning information",
+          "Instrument signal schedule, data map, scaling, network settings, permitted commands and recovery checks."
+        ],
+        [
+          "Conformity documentation",
+          "Request model- and destination-specific declarations or test documentation for the ordered version."
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the HR-10 series designed to do?",
+      "a": "It is a compact wireless data transmission unit (DTU) for acquiring and transmitting compatible instrument and equipment data. RS485, TTL and 4–20 mA interface options, edge processing, cellular communication, cloud monitoring, supported remote control and firmware upgrades connect the field instrument to the operating workflow."
+    },
+    {
+      "q": "Are RS485, TTL and 4–20 mA all fitted at the same time?",
+      "a": "Confirm the physical ports, quantities and supported combinations for the ordered version against your instrument list. RS485, TTL and 4–20 mA identify interface options; they do not establish the fitted combination. The 40 application tasks are selection examples, not 40 channels."
+    },
+    {
+      "q": "Does RS485 mean the unit supports every serial instrument or Modbus device?",
+      "a": "No. RS485 defines a physical interface. Device protocol, addressing, serial settings, data representation and supported read or write operations must also match. Submit the instrument communication manual and data map for an integration review; do not assume a protocol solely from the RS485 label."
+    },
+    {
+      "q": "What must be checked before connecting a TTL device?",
+      "a": "Confirm the electrical logic levels, transmit/receive pin assignment, grounding, cable arrangement and serial data format for both devices. A TTL label alone does not establish a voltage level, isolation, connector or supply output."
+    },
+    {
+      "q": "How are 4–20 mA transmitters connected and displayed?",
+      "a": "Use the current-loop interface specified for the supplied version and a compatible external transmitter. Confirm loop wiring, transmitter supply, supported input limits and scaling. Define the transmitter range and engineering units, then verify online values against the source instrument and reference points during commissioning."
+    },
+    {
+      "q": "Can I view measurements and receive alerts in Hitelecom Cloud?",
+      "a": "Yes. Hitelecom Cloud supports online viewing of uploaded monitoring data and alerts when configured thresholds are exceeded. Configure asset names, units, monitoring limits and the notification workflow. Data availability and notification timing depend on the reporting profile and network connection."
+    },
+    {
+      "q": "What remote control can the HR-10 provide?",
+      "a": "Remote control applies to commands supported by the connected equipment and the delivered device configuration. Agree the command path, authorization, local priority and available readback before enabling it. A DTU does not by itself establish a relay output or a direct load connection, and command transmission does not prove the equipment has moved or changed state."
+    },
+    {
+      "q": "Which cellular networks and countries can it be used in?",
+      "a": "Select the cellular variant for the installation country and network. The 4G, 5-mode / 13-band reference configuration requires confirmation of the exact module, frequency bands, operator service and destination requirements for the ordered version. This description does not guarantee every network, worldwide roaming or future network availability."
+    },
+    {
+      "q": "Can firmware be upgraded remotely?",
+      "a": "Remote firmware upgrades are supported. Use the approved firmware for the delivered hardware, maintain power and the required connection, and follow the site maintenance procedure. Verify instrument communication, scaling, uploads and permitted operations after the upgrade."
+    },
+    {
+      "q": "What do the hardware and software watchdogs provide?",
+      "a": "They support recovery from defined abnormal operating states. Confirm the reset, reconnection and restart behaviour for the selected configuration during commissioning. Watchdogs do not replace equipment protection or establish uninterrupted communication."
+    },
+    {
+      "q": "Can it integrate with our own monitoring platform?",
+      "a": "Customer-platform integration can be reviewed against the communication methods supported by the supplied device and software. Agree the transport, data format, instrument mapping and permitted commands for the project. Do not infer a particular cloud protocol or API from the cellular or serial interface alone."
+    },
+    {
+      "q": "What information is needed to select an HR-10 configuration?",
+      "a": "Provide the installation country, instrument models, interface manuals, data maps and point quantities. Include current-loop ranges, required remote commands, power source, site conditions, acquisition/reporting needs and target platform. These details establish the fitted interface arrangement, integration scope and commissioning checks."
+    }
+  ],
+  "enquiryIntro": "Share the instrument models, serial documentation or current-loop outputs, required data points and any permitted commands. We will review interface compatibility, the cellular variant and the intended Hitelecom Cloud or customer-platform connection for the installation.",
+  "slug": "iot-controller-hr10",
+  "kind": "Product",
+  "image": "hr10-t2-original.png",
+  "imageWidth": 1280,
+  "imageHeight": 1280,
+  "datasheet": "/downloads/hr10-iot-controller-datasheet-en.pdf"
+}

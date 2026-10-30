@@ -25,3 +25,11 @@
 .controller-detail .integration-section h2{white-space:pre-line}
 @media(max-width:900px){.controller-detail .controller-interface-grid{gap:18px}.controller-detail .controller-interface-grid .measurement-card{padding:22px}}
 @media(max-width:600px){.controller-detail .controller-interface-grid{grid-template-columns:1fr}.controller-detail .controller-interface-grid .measurement-card{padding:25px}.controller-detail .interface-count{font-size:29px}}
+/* V135 HR10：保持原图画布等比显示；接口长词自然换行；四步流程响应式网格 */
+.controller-detail .hero-visual img{object-position:50% 50%}
+.controller-detail #workflow .measurement-grid{grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch}
+.controller-detail #workflow .measurement-grid>*{min-width:0}
+.controller-detail #workflow .measurement-grid h3{overflow-wrap:anywhere;hyphens:none}
+@media(max-width:1199px){.controller-detail #workflow .measurement-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.controller-detail #workflow .measurement-grid{grid-template-columns:minmax(0,1fr)}}
+.controller-detail .controller-interface-grid h3{overflow-wrap:anywhere;hyphens:auto}
