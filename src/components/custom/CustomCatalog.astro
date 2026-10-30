@@ -36,7 +36,7 @@ const types=[{id:'278',label:c.sidebar.weatherLabel},{id:'279',label:c.sidebar.h
       <div class="pro_2_mid_right_2 sensor-catalog"><ul>
         {shown.map(product=><li data-station-card data-model={product.model} data-name={[product.model,product.name,product.subtitle,product.summary].join(' ').toLocaleLowerCase(locale==='zh'?'zh-CN':locale)}><a href={local(product.path)}>
           <div class="pro_2_mid_right_1_mid"><div class="pro_2_mid_right_1_mid_1"><img src={'/assets/'+product.image} alt={product.imageAlt} width="627" height="635" loading="lazy" decoding="async"/></div>
-            <div class="pro_2_mid_right_1_mid_2"><div class="pro_2_mid_right_1_mid_2_mid"><h3 class="pro_2_mid_right_1_mid_2_1">{product.name}</h3><p class="pro_2_mid_right_1_mid_2_2">{product.subtitle}</p><p class="catalog-card-summary">{product.summary}</p><span class="catalog-read-more">{c.readMore}<span aria-hidden="true">↗</span></span></div></div>
+            <div class="pro_2_mid_right_1_mid_2"><div class="pro_2_mid_right_1_mid_2_mid"><h3 class="pro_2_mid_right_1_mid_2_1">{product.name}</h3><p class="pro_2_mid_right_1_mid_2_2">{product.subtitle}</p><div class="pro_2_mid_right_1_mid_2_3"><span class="css3"></span></div></div></div>
           </div>
         </a></li>)}
       </ul></div>
