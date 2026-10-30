@@ -97,7 +97,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "256",
-   "label": "Custom Development",
+   "label": "IoT Custom",
    "href": "/product/lists/cid/256"
   }
  ],
@@ -129,7 +129,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "256",
-   "label": "定制品",
+   "label": "IoT 定制",
    "href": "/product/lists/cid/256"
   }
  ],
@@ -161,7 +161,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "256",
-   "label": "Desarrollo personalizado",
+   "label": "IoT a medida",
    "href": "/product/lists/cid/256"
   }
  ],
@@ -193,7 +193,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "256",
-   "label": "Kundenspezifische Entwicklung",
+   "label": "IoT nach Maß",
    "href": "/product/lists/cid/256"
   }
  ],
@@ -225,7 +225,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "256",
-   "label": "カスタム開発",
+   "label": "IoTカスタム",
    "href": "/product/lists/cid/256"
   }
  ],
@@ -257,7 +257,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "256",
-   "label": "Développement sur mesure",
+   "label": "IoT sur mesure",
    "href": "/product/lists/cid/256"
   }
  ],
@@ -289,7 +289,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "256",
-   "label": "Разработка по заказу",
+   "label": "IoT на заказ",
    "href": "/product/lists/cid/256"
   }
  ]

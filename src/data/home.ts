@@ -205,7 +205,7 @@ const en = {
           { label: 'IoT Sensors', href: '/product/lists/cid/261' },
           { label: 'IoT Gateways', href: '/product/lists/cid/258' },
           { label: 'IoT Controllers', href: '/product/lists/cid/257' },
-          { label: 'Custom Development', href: '/product/lists/cid/256' },
+          { label: 'IoT Custom', href: '/product/lists/cid/256' },
         ],
       },
       {
@@ -421,7 +421,7 @@ const zh: typeof en = {
           { label: '传感器', href: '/product/lists/cid/261' },
           { label: '网关', href: '/product/lists/cid/258' },
           { label: '物联网控制器', href: '/product/lists/cid/257' },
-          { label: '定制品', href: '/product/lists/cid/256' },
+          { label: 'IoT 定制', href: '/product/lists/cid/256' },
         ],
       },
       {
@@ -643,7 +643,7 @@ const es: typeof en = {
           { label: 'Sensores IoT', href: '/product/lists/cid/261' },
           { label: 'Gateways IoT', href: '/product/lists/cid/258' },
           { label: 'Controladores IoT', href: '/product/lists/cid/257' },
-          { label: 'Desarrollo personalizado', href: '/product/lists/cid/256' },
+          { label: 'IoT a medida', href: '/product/lists/cid/256' },
         ],
       },
       {
@@ -865,7 +865,7 @@ const de: typeof en = {
           { label: 'IoT-Sensoren', href: '/product/lists/cid/261' },
           { label: 'IoT-Gateways', href: '/product/lists/cid/258' },
           { label: 'IoT-Controller', href: '/product/lists/cid/257' },
-          { label: 'Kundenspezifische Entwicklung', href: '/product/lists/cid/256' },
+          { label: 'IoT nach Maß', href: '/product/lists/cid/256' },
         ],
       },
       {
@@ -1087,7 +1087,7 @@ const ja: typeof en = {
           { label: 'IoTセンサー', href: '/product/lists/cid/261' },
           { label: 'IoTゲートウェイ', href: '/product/lists/cid/258' },
           { label: 'IoTコントローラー', href: '/product/lists/cid/257' },
-          { label: 'カスタム開発', href: '/product/lists/cid/256' },
+          { label: 'IoTカスタム', href: '/product/lists/cid/256' },
         ],
       },
       {
@@ -1308,7 +1308,7 @@ const fr: typeof en = {
           { label: 'Capteurs IoT', href: '/product/lists/cid/261' },
           { label: 'Passerelles IoT', href: '/product/lists/cid/258' },
           { label: 'Contrôleurs IoT', href: '/product/lists/cid/257' },
-          { label: 'Développement sur mesure', href: '/product/lists/cid/256' },
+          { label: 'IoT sur mesure', href: '/product/lists/cid/256' },
         ],
       },
       {
@@ -1556,7 +1556,7 @@ const ru: typeof en = {
           { label: 'Датчики IoT', href: '/product/lists/cid/261' },
           { label: 'Шлюзы IoT', href: '/product/lists/cid/258' },
           { label: 'IoT-контроллеры', href: '/product/lists/cid/257' },
-          { label: 'Разработка по заказу', href: '/product/lists/cid/256' },
+          { label: 'IoT на заказ', href: '/product/lists/cid/256' },
         ],
       },
       {
