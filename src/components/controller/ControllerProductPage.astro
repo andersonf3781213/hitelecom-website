@@ -1,0 +1,35 @@
+/** HD20-2000 系列 IoT Controller 产品页（V134，2026-10-30 GPT6 包 V2，Kimi 审核集成）。
+ * 7 语种同 slug；结构化数据 WebPage+Product（无 SKU）+BreadcrumbList+FAQPage，本语言生成。
+ * #station-ui 合并 shell+ui（controller-interactions.js 依赖 shell 的 wechat/home 等键）。 */
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ControllerBody from './ControllerBody.astro';
+const { content, ui, shell, locale = 'en' } = Astro.props;
+const c = content; const u = ui;
+const prefix = locale === 'en' ? '' : `/${locale}`;
+const origin = 'https://www.hitelecom.com';
+const canonical = origin + prefix + '/product/' + c.slug;
+const htmlLang = locale === 'zh' ? 'zh-CN' : locale;
+const allRows = c.specGroups.flatMap(g => g.rows);
+const structured = { '@context': 'https://schema.org', '@graph': [
+  { '@type': 'WebPage', '@id': canonical + '#webpage', url: canonical, name: c.title, description: c.metaDescription, inLanguage: htmlLang, mainEntity: { '@id': canonical + '#product' } },
+  { '@type': 'Product', '@id': canonical + '#product', name: u.productName, model: c.model,
+    brand: { '@type': 'Brand', name: 'Hitelecom' },
+    manufacturer: { '@type': 'Organization', name: 'Shanghai Hitelecom Communication Technology Co., Ltd.', url: origin },
+    description: c.metaDescription, url: canonical, image: [origin + '/assets/' + c.image],
+    additionalProperty: allRows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value })) },
+  { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: shell.home, item: origin + prefix + '/' },
+    { '@type': 'ListItem', position: 2, name: u.products, item: origin + prefix + '/product' },
+    { '@type': 'ListItem', position: 3, name: u.productName, item: canonical }] },
+  { '@type': 'FAQPage', inLanguage: htmlLang, mainEntity: c.faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }
+] };
+const allLocales = ['en', 'zh', 'es', 'de', 'ja', 'fr', 'ru'];
+const langTargets = Object.fromEntries(allLocales.map(loc => [loc, `${loc === 'en' ? '' : `/${loc}`}/product/${c.slug}`]));
+const stationUi = Object.assign({}, shell, u);
+---
+<BaseLayout locale={locale} title={c.title} description={c.metaDescription} socialImage={'/assets/' + c.image} langOverrides={langTargets}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(structured).replace(/</g, '\\u003c')}></script>
+  <script id="station-ui" type="application/json" set:html={JSON.stringify(stationUi).replace(/</g, '\\u003c')}></script>
+  <ControllerBody content={c} ui={u} locale={locale}/>
+</BaseLayout>

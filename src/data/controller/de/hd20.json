@@ -1,0 +1,644 @@
+{
+  "family": "HD20-2000 Series",
+  "model": "HD20-2000 Series",
+  "picturedModel": "HD20-4021GD",
+  "title": "IoT-Controller der Serie HD20-2000 | Digitale und analoge I/O | Hitelecom",
+  "metaDescription": "IoT-Controller der Serie HD20-2000 mit 2DO + 2DI + 2AI, Edge-Verarbeitung, lokaler Steuerung und Fernsteuerung, zwei Watchdogs und Überwachung über Hitelecom Cloud.",
+  "heroHeading": "IoT-Controller.",
+  "heroValue": "Feldsignale vernetzen.\nSituationsgerecht steuern.",
+  "heroDescription": "Die Serie Hitelecom HD20-2000 vereint Felddatenerfassung, Anlagenüberwachung sowie lokale, ferngesteuerte oder bedingungsabhängige Steuerung in einer kompakten RTU. Eine Konfiguration mit 2DO + 2DI + 2AI verbindet Anlagenzustände, externe Messsignale und Steuerkreise. Edge-Verarbeitung, Fernkonfiguration und Firmware-Upgrades unterstützen Installation und Wartung. Überwachungsdaten stehen über Hitelecom Cloud zur Verfügung. Das abgebildete 4G-Modell ist HD20-4021GD.",
+  "reviewNotice": "Referenzkonfiguration: 2 digitale Ausgänge, 2 digitale Eingänge und 2 analoge Eingänge. Wählen Sie Signalarten, elektrische Grenzwerte, Kommunikationseinstellungen und Installationsanforderungen passend zur bestellten Konfiguration.",
+  "interfaceCards": [
+    {
+      "type": "DO",
+      "count": 2,
+      "title": "Digitale Ausgänge",
+      "text": "Senden Sie Steuersignale an kompatible Steuerkreise der Anlage. Stimmen Sie Ausgangstyp, Lastschnittstelle und lokale Betriebspriorität auf die Installation ab.",
+      "examples": [
+        "Freigabeanforderungen für Anlagen",
+        "Befehlsschnittstellen für Ventilantriebe",
+        "Zusätzliche Meldekreise"
+      ]
+    },
+    {
+      "type": "DI",
+      "count": 2,
+      "title": "Digitale Eingänge",
+      "text": "Erfassen Sie Anlagenzustände über kompatible digitale Signale. Legen Sie für jeden Eingang einen Normalzustand und eine betriebliche Bedeutung fest.",
+      "examples": [
+        "Betriebs- und Störmeldungen",
+        "Endlagenrückmeldung von Ventilen",
+        "Füllstands-, Tür- oder Wartungsschalter"
+      ]
+    },
+    {
+      "type": "AI",
+      "count": 2,
+      "title": "Analoge Eingänge",
+      "text": "Erfassen Sie Messsignale kompatibler externer Messumformer. Wählen Sie Eingangsbereich und Skalierung passend zum Messgerät und zum Arbeitsbereich.",
+      "examples": [
+        "Druck- und Füllstandsmessumformer",
+        "Ausgänge von Temperaturmessumformern",
+        "Weitere kompatible analoge Messgeräte"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Digitale und analoge I/O in einem Gerät",
+      "text": "Eine Konfiguration mit 2DO + 2DI + 2AI vereint die Erfassung von Anlagenzuständen, externe Messeingänge und Ausgangsbefehle in einem Controller. Stimmen Sie die Kanalbelegung auf die Signalliste der Anlage ab."
+    },
+    {
+      "title": "Edge-Verarbeitung direkt an der Anlage",
+      "text": "Verarbeiten Sie Feldinformationen nahe ihrer Quelle, um Anlagen zu überwachen und bedingungsabhängige Aktionen auszuführen. Die Projektkonfiguration legt Signalauswertung, Steuerungsbedingungen und zulässige Reaktionen fest."
+    },
+    {
+      "title": "Lokale, ferngesteuerte und bedingungsabhängige Steuerung",
+      "text": "Nutzen Sie die Betriebsart, die zur Aufgabe passt: lokale Bedienung, Fernüberwachung oder eine Aktion bei Eintritt einer konfigurierten Bedingung. Legen Sie Prioritäten und Anlagenrückmeldungen für das gewählte Steuerungskonzept fest."
+    },
+    {
+      "title": "Master-/Slave-Betriebsarten",
+      "text": "Unterstützen Sie die projektspezifische Gerätekoordination mit Master-/Slave-Betriebsarten. Die gewählte Schnittstelle, das Kommunikationsprotokoll und die Geräterollen sind Teil der Integrationskonfiguration."
+    },
+    {
+      "title": "Online-Überwachung und Schwellenwertmeldungen",
+      "text": "Nutzen Sie Hitelecom Cloud, um hochgeladene Überwachungsdaten online einzusehen und Meldungen bei Überschreitung konfigurierter Schwellenwerte zu erhalten. Ordnen Sie Anlagenzustände, Maßeinheiten und Meldungsempfänger dem betrieblichen Ablauf zu."
+    },
+    {
+      "title": "Fernkonfiguration und Upgrades",
+      "text": "Passen Sie unterstützte Einstellungen aus der Ferne an und aktualisieren Sie die Gerätefirmware. Planen Sie Wartungsarbeiten anhand der installierten Konfiguration, der Softwareversion und des betrieblichen Verfahrens am Standort."
+    },
+    {
+      "title": "Hardware- und Software-Watchdogs",
+      "text": "Zwei Watchdog-Mechanismen unterstützen die Wiederherstellung nach definierten Software- oder Systemfehlern. Wiederherstellungsverhalten und Ausgangszustände sind Bestandteil der Gerätekonfiguration und der Inbetriebnahmeprüfungen."
+    },
+    {
+      "title": "Kompakte Integration in Feldanlagen",
+      "text": "Integrieren Sie Überwachung und Steuerung mit einem kompakten Controller in Technikräume, Versorgungsschränke und verteilte Installationen. Wählen Sie Stromversorgung, Gehäuse und Verdrahtung passend zum Standort."
+    }
+  ],
+  "workflow": [
+    {
+      "title": "Feldsignale erfassen",
+      "text": "Führen Sie digitale Anlagenzustände und analoge Messumformersignale in einer gemeinsamen Gerätekonfiguration zusammen. Weisen Sie jedem Datenpunkt Quelle, Einheiten, Bereich und Normalzustand zu."
+    },
+    {
+      "title": "Betriebslogik anwenden",
+      "text": "Nutzen Sie lokale, ferngesteuerte oder bedingungsabhängige Steuerung für die Anwendung. Legen Sie Geräterolle, Betriebsbedingungen und lokale Anlagenprioritäten eindeutig fest."
+    },
+    {
+      "title": "Zulässige Aktion auslösen",
+      "text": "Verbinden Sie digitale Ausgänge mit elektrisch kompatiblen Steuerkreisen. Definieren Sie den zulässigen Anlagenbefehl und erhalten Sie die unabhängigen Schutzfunktionen der Anlage."
+    },
+    {
+      "title": "Ergebnis beobachten und prüfen",
+      "text": "Erfassen Sie verfügbare Anlagenrückmeldungen und sehen Sie hochgeladene Überwachungsdaten in Hitelecom Cloud ein. Testen Sie Schwellenwertmeldungen und unterscheiden Sie einen Ausgangsbefehl vom tatsächlichen Ergebnis an der Anlage."
+    }
+  ],
+  "applicationsIntro": "Verbinden Sie Anlagenzustände, Messsignale und Steuerkreise in acht Anwendungsbereichen. Jede der folgenden Aufgaben ist ein Auswahlbeispiel und muss mit dem verfügbaren I/O-Umfang der Referenzkonfiguration 2DI / 2AI / 2DO abgeglichen werden. Umfangreichere Signallisten können eine andere Konfiguration oder zusätzliche Controller erfordern. Externe Messgeräte und Geräte zum Schalten von Lasten werden separat ausgewählt.",
+  "groups": [
+    {
+      "id": "water-pumps",
+      "title": "Wasser- und Pumpenanlagen",
+      "intro": "Führen Sie Pumpenzustände, Füllstands- oder Drucksignale und zulässige Anlagenbefehle in einem betrieblichen Ablauf am Standort zusammen. Motorschutz und Überlaufschutz verbleiben im dafür vorgesehenen lokalen Anlagensystem.",
+      "imageKey": "water",
+      "imageAlt": "Pumpen, blaue Rohrleitungen und Ventile in einer Wasseranlage",
+      "tasks": [
+        {
+          "title": "Pumpenbetrieb und Störungen überwachen",
+          "text": "Erfassen Sie die Betriebs- und Störmeldungen einer Pumpe, damit Bediener die gemeldeten Anlagenzustände vor der Veranlassung einer Prüfung unterscheiden können.",
+          "interface": "Belegen Sie die zwei DI-Kanäle mit kompatiblen Betriebs- und Störsignalen.",
+          "control": "Nutzen Sie einen DO für eine zulässige Startanforderung, sofern der externe Steuerkreis dies erlaubt.",
+          "verification": "Prüfen Sie die tatsächlichen Betriebs-/Störkontakte und die Priorität der lokalen Bedienung und Fernbedienung; die Aktivierung eines Ausgangs allein ist keine Betriebsrückmeldung."
+        },
+        {
+          "title": "Füllstände in Tanks und Pumpensümpfen überwachen",
+          "text": "Kombinieren Sie ein externes Füllstandsmesssignal mit einem diskreten Füllstandsereignis für Tanks, Pumpensümpfe oder Betriebswasserspeicher.",
+          "interface": "Nutzen Sie ein kompatibles AI-Signal für den Füllstand und einen DI für den gewählten Füllstandsschalter.",
+          "control": "Geben Sie eine zulässige Pumpen- oder Ventilanforderung im Rahmen des freigegebenen Füllstandsregelungskonzepts aus.",
+          "verification": "Prüfen Sie technische Einheiten, Wirkrichtung des Schalters und physische Rückmeldung; der unabhängige Schutz gegen zu hohen Füllstand bleibt separat."
+        },
+        {
+          "title": "Ventilbefehl und Stellungsrückmeldung",
+          "text": "Unterscheiden Sie eine angeforderte Ventilbewegung von der Rückmeldung der offenen oder geschlossenen Endlage.",
+          "interface": "Belegen Sie DI-Punkte mit verfügbaren Ventilendlagenkontakten.",
+          "control": "Verbinden Sie DO-Punkte mit einer kompatiblen Antriebssteuerungsschnittstelle und berücksichtigen Sie die zulässige Schaltfolge.",
+          "verification": "Testen Sie den vollständigen Stellweg, die lokale Übersteuerung und die Endlagenrückmeldung gemäß den Betriebsvorgaben des Antriebs."
+        },
+        {
+          "title": "Druck und Leckagen im Blick",
+          "text": "Betrachten Sie eine externe Druckmessung zusammen mit einem ausgewählten Leckagekontakt, um Ereignisse im Pumpenraum betrieblich einzuordnen.",
+          "interface": "Nutzen Sie ein kompatibles AI-Drucksignal und eine DI-Leckagemeldung.",
+          "control": "Konfigurieren Sie Schwellenwertmeldungen und etwaige zulässige Zusatzanzeigen getrennt vom Pumpenschutz.",
+          "verification": "Vergleichen Sie den angezeigten Druck mit dem Quellmessgerät und prüfen Sie das Leckageereignis am tatsächlichen Ort."
+        },
+        {
+          "title": "Betriebszustände zweier Pumpen vergleichen",
+          "text": "Erfassen Sie die Betriebsmeldung von zwei Pumpen, damit Bediener prüfen können, welche Einheit läuft und ob eine geplante Umschaltung erfolgt ist.",
+          "interface": "Belegen Sie je einen DI mit der Betriebsmeldung jeder Pumpe.",
+          "control": "Belassen Sie die Auswahl der Betriebspumpe und zulässige Startanforderungen im Rahmen des freigegebenen Pumpensteuerungskonzepts.",
+          "verification": "Vergleichen Sie die gemeldeten Zustände mit den tatsächlichen Motorstartern; zusätzliche Störmeldungen erfordern weitere geeignete I/O."
+        }
+      ]
+    },
+    {
+      "id": "buildings-hvac",
+      "title": "Gebäude und HLK",
+      "intro": "Verbinden Sie ausgewählte Zustände der Gebäudetechnik und analoge Messwerte mit der Gebäudeüberwachung und zulässigen übergeordneten Steuerungsaktionen. Stimmen Sie jede Aufgabe auf die vorhandene Steuerungsschnittstelle der jeweiligen Anlage ab.",
+      "imageKey": "steam-hot-water",
+      "imageAlt": "Industriekessel und Zirkulationsrohrleitungen",
+      "tasks": [
+        {
+          "title": "Betriebs- und Störzustände von Lüftungsgeräten",
+          "text": "Geben Sie dem Gebäudebetrieb eine einheitliche Übersicht über die gemeldeten Betriebs- und Störzustände eines Lüftungsgeräts.",
+          "interface": "Belegen Sie DI-Punkte mit kompatiblen Statussignalen des Geräts.",
+          "control": "Nutzen Sie eine zulässige Freigabeanforderung über den geräteeigenen Steuerkreis.",
+          "verification": "Prüfen Sie die tatsächliche Betriebsrückmeldung und die lokale Übersteuerung; erhalten Sie die Ablaufsteuerung und Schutzfunktionen des Geräts."
+        },
+        {
+          "title": "Filter und Differenzdruck überwachen",
+          "text": "Nutzen Sie einen Filterdruckschalter oder einen kompatiblen Ausgang eines Druckmessumformers als Grundlage für Wartungsentscheidungen an Lüftungsanlagen.",
+          "interface": "Wählen Sie für das verwendete Messgerät ein DI-Schaltsignal oder eine kompatible AI-Messung.",
+          "control": "Nutzen Sie konfigurierte Meldungen oder eine freigegebene Zusatzanzeige für das Wartungsereignis.",
+          "verification": "Prüfen Sie die Schaltereinstellung oder Messwertskalierung; ein Druckereignis allein ist keine Luftstrommessung."
+        },
+        {
+          "title": "Tür- und Leckageereignisse im Technikraum",
+          "text": "Ordnen Sie ausgewählte Zutritts- und Leckageereignisse dem richtigen Technikraum oder Versorgungsschrank zu.",
+          "interface": "Nutzen Sie die zwei DI-Kanäle für kompatible Tür- und Leckagekontakte.",
+          "control": "Weisen Sie bei Bedarf einen DO einem geeigneten lokalen Meldekreis zu.",
+          "verification": "Prüfen Sie die Logik des Normalzustands, die Kontaktplatzierung und die Zuordnung von Ereignissen zu Orten."
+        },
+        {
+          "title": "Anlagenfreigabe und lokale Priorität",
+          "text": "Ergänzen Sie eine zulässige Fernfreigabeanforderung unter Beibehaltung der lokalen Betriebspriorität der Anlage.",
+          "interface": "Nutzen Sie die dokumentierte Freigabeschnittstelle und verfügbare Rückmeldungen zu Betriebsart oder Betrieb.",
+          "control": "Wählen Sie eine lokale, ferngesteuerte oder bedingungsabhängige Aktion innerhalb des zulässigen Steuerungsumfangs der Anlage.",
+          "verification": "Testen Sie lokale Übersteuerung, Befehlsrücknahme und die vereinbarte Reaktion nach einem Neustart."
+        },
+        {
+          "title": "Messpunkte wassergeführter Anlagen",
+          "text": "Führen Sie zwei kompatible Messumformersignale, etwa Kreislaufdruck und Wassertemperatur, in der Überwachungsansicht der Gebäudetechnik zusammen.",
+          "interface": "Belegen Sie die zwei AI-Kanäle mit ausgewählten extern aufbereiteten Messsignalen.",
+          "control": "Nutzen Sie Schwellenwertmeldungen und zulässige übergeordnete Steuerungsaktionen anhand der definierten Anlagenbedingungen.",
+          "verification": "Prüfen Sie beide Signale anhand der Quellmessgeräte und halten Sie ihre Einheiten und Arbeitsbereiche auseinander."
+        }
+      ]
+    },
+    {
+      "id": "industrial-equipment",
+      "title": "Industrieanlagen",
+      "intro": "Ordnen Sie Anlagensignale nach Betriebszustand, externen Messungen und dem Ergebnis eines freigegebenen Befehls. Maschinensteuerung und Sicherheitsfunktionen verbleiben in den dafür vorgesehenen Anlagensystemen.",
+      "imageKey": "manufacturing-floor",
+      "imageAlt": "Spritzgießmaschine in einem Fertigungsbereich",
+      "tasks": [
+        {
+          "title": "Betriebs- und Störmeldungen von Maschinen",
+          "text": "Stellen Sie ausgewählte zusätzliche Maschinenzustände für die Produktionsunterstützung und Wartungsbewertung bereit.",
+          "interface": "Belegen Sie DI-Kanäle mit freigegebenen Betriebs- und Störsignalen der Maschine.",
+          "control": "Beschränken Sie jede DO-Anbindung auf eine Maschinenfunktion, die ausdrücklich für eine externe übergeordnete Steuerung vorgesehen ist.",
+          "verification": "Stimmen Sie jeden gemeldeten Zustand mit dem Maschinenlieferanten ab und erhalten Sie die normalen Steuerungs- und Sicherheitsfunktionen der Maschine."
+        },
+        {
+          "title": "Kompressoraggregate überwachen",
+          "text": "Ordnen Sie Betriebs- und Abschaltmeldungen einem Kompressor zu, um Störungsanalysen und die Wartungsplanung zu unterstützen.",
+          "interface": "Nutzen Sie kompatible Statuskontakte des Aggregats und die dokumentierte Bedeutung ihrer Zustände.",
+          "control": "Geben Sie eine übergeordnete Freigabeanforderung ausschließlich über die freigegebene Steuerungsschnittstelle des Aggregats aus.",
+          "verification": "Prüfen Sie die tatsächliche Betriebsrückmeldung, die lokale Betriebsart und die Vorgaben zum Rücksetzen von Abschaltungen am Aggregat."
+        },
+        {
+          "title": "Alarme von Skids und Nebenaggregaten",
+          "text": "Führen Sie ausgewählte Alarme von Kühl-, Aufbereitungs- oder Dosieraggregaten in einer übersichtlichen Signalliste der Anlage zusammen.",
+          "interface": "Belegen Sie DI- oder kompatible AI-Kanäle mit den konkret benötigten Datenpunkten des Aggregats.",
+          "control": "Nutzen Sie einen Ausgang nur für einen zulässigen Aggregat- oder Hilfsbefehl.",
+          "verification": "Prüfen Sie Alarmursachen, Normalzustände und Rücksetzanforderungen anhand der Dokumentation des Aggregats."
+        },
+        {
+          "title": "Zustandsmesspunkte für Kühlmittel und Hydraulik",
+          "text": "Verbinden Sie kompatible Druck-, Temperatur- oder Füllstandsmessumformerausgänge eines Maschinenhilfssystems zur betrieblichen Überwachung.",
+          "interface": "Wählen Sie bis zu zwei analoge Messpunkte innerhalb der AI-Belegung der Referenzkonfiguration.",
+          "control": "Nutzen Sie die definierten Bedingungen für Meldungen oder zulässige Hilfsaktionen.",
+          "verification": "Vergleichen Sie die Skalierung mit jedem Quellmessgerät; der Controller ersetzt keine Prozessschutzfunktionen der Maschine."
+        },
+        {
+          "title": "Wartungszustand und Serviceanzeige",
+          "text": "Erfassen Sie eine Servicebetriebsart oder ein Signal für Wartungsbedarf, damit Bediener Anlagenereignisse während geplanter Arbeiten einordnen können.",
+          "interface": "Nutzen Sie verfügbare kompatible Wartungskontakte und die vereinbarten Zustandsdefinitionen.",
+          "control": "Betätigen Sie einen geeigneten zusätzlichen Meldekreis, wenn der Serviceablauf dies erfordert.",
+          "verification": "Testen Sie im gewählten Überwachungssystem die Unterscheidung zwischen normalem Servicebetrieb, aktiver Störung und Kommunikationsausfall."
+        }
+      ]
+    },
+    {
+      "id": "energy-cabinets",
+      "title": "Energie- und Versorgungsschränke",
+      "intro": "Überwachen Sie Schrankzustände und kompatible externe Messsignale mit einer festgelegten Datenpunktbelegung. Elektrische Messung, Schutz und Lastschaltung bleiben Aufgaben der jeweils vorgesehenen externen Geräte.",
+      "imageKey": "industrial",
+      "imageAlt": "Anlagenschränke und elektrische Infrastruktur einer Umspannstation",
+      "tasks": [
+        {
+          "title": "Zusatzmeldungen von Leistungsschaltern",
+          "text": "Zeigen Sie ausgewählte Informationen zur Stellung oder Auslösung eines Leistungsschalters aus den freigegebenen Hilfsstromkreisen an.",
+          "interface": "Belegen Sie DI-Kanäle mit kompatiblen Hilfskontakten mit definierter Zustandslogik.",
+          "control": "Beschränken Sie jede Schaltanforderung auf ein separat ausgelegtes und freigegebenes Steuerungskonzept für den Leistungsschalter.",
+          "verification": "Prüfen Sie die physische Hilfskontaktrückmeldung und die lokale Priorität; der IoT-Controller ist kein Schutzrelais."
+        },
+        {
+          "title": "Alarmkontakte von USV und Stromversorgung",
+          "text": "Führen Sie ausgewählte Alarme von Teilsystemen in der Überwachungsansicht eines Versorgungs- oder Anlagenschranks zusammen.",
+          "interface": "Nutzen Sie kompatible Alarmkontakte der externen USV oder Stromversorgung.",
+          "control": "Beschränken Sie zusätzliche Anforderungen auf die dokumentierte externe Steuerungsfunktion des Teilsystems.",
+          "verification": "Testen Sie den Quellalarm, den Versorgungszustand des Controllers und einen Kommunikationsausfall als getrennte Ereignisse."
+        },
+        {
+          "title": "Schrankzugang und Wartungszustand",
+          "text": "Ordnen Sie Tür- und Wartungskontakte einem bestimmten Schrank zu, damit Teams Ereignisse während Arbeiten am Standort einordnen können.",
+          "interface": "Belegen Sie die zwei DI-Kanäle mit den ausgewählten kompatiblen Kontaktsignalen.",
+          "control": "Nutzen Sie einen geeigneten Meldeausgang, sofern das betriebliche Verfahren dies erfordert.",
+          "verification": "Prüfen Sie die Verdrahtung für den Normalzustand und die Schrankzuordnung; die Zutrittsberechtigung ist eine separate Systemfunktion."
+        },
+        {
+          "title": "Externe analoge Versorgungsmessungen",
+          "text": "Erfassen Sie ausgewählte analoge Ausgänge eines kompatiblen Zählers oder Messumformers. Das externe Messgerät bestimmt dabei die Messgröße.",
+          "interface": "Belegen Sie AI-Punkte mit elektrisch kompatiblen Messumformerausgängen.",
+          "control": "Nutzen Sie hochgeladene Werte zur Überwachung und für konfigurierte Schwellenwertmeldungen.",
+          "verification": "Vergleichen Sie jeden Wert mit dem Quellmessgerät und prüfen Sie Einheiten, Skalierung und den Arbeitsbereich des Eingangs."
+        },
+        {
+          "title": "Schrankbelüftung überwachen",
+          "text": "Kombinieren Sie für einen Versorgungsschrank ein kompatibles Temperaturmessumformersignal mit einer verfügbaren Lüfterzustandsrückmeldung.",
+          "interface": "Nutzen Sie AI für die Temperatur und DI für den benötigten Lüfter- oder Störzustand.",
+          "control": "Verbinden Sie einen DO mit einem freigegebenen Lüfterfreigabekreis, wenn eine übergeordnete Steuerung erforderlich ist.",
+          "verification": "Prüfen Sie den tatsächlichen Lüfterbetrieb und die lokale Steuerungspriorität; wählen Sie ein für die Installationsumgebung geeignetes Gehäuse."
+        }
+      ]
+    },
+    {
+      "id": "agriculture-irrigation",
+      "title": "Landwirtschaft und Bewässerung",
+      "intro": "Verbinden Sie Pumpen-, Ventil- und Messumformersignale mit Betriebsaufgaben in Bewässerungsanlagen und Gewächshäusern. Legen Sie für jede Installation die Stromversorgung im Feld, das Schutzgehäuse und die Schnittstelle zur externen Anlage fest.",
+      "imageKey": "agriculture",
+      "imageAlt": "Bewässerungs- und Fertigationsanlage in einem Gewächshaus",
+      "tasks": [
+        {
+          "title": "Bewässerungspumpe und Sammelleitung überwachen",
+          "text": "Führen Sie Pumpenzustandsrückmeldungen und ein ausgewähltes Druck- oder Füllstandssignal der Sammelleitung in einer Betriebsansicht zusammen.",
+          "interface": "Nutzen Sie kompatible DI-Rückmeldungen und ein AI-Messumformersignal innerhalb der Datenpunktbelegung.",
+          "control": "Geben Sie eine zulässige Pumpenanforderung über die Motorsteuerung aus.",
+          "verification": "Prüfen Sie den tatsächlichen Pumpenbetrieb und das Ansprechverhalten des Messgeräts. Trockenlauf- und Überlastschutz bleiben erhalten."
+        },
+        {
+          "title": "Anforderungen und Rückmeldungen für Bewässerungsventile",
+          "text": "Stimmen Sie eine zulässige Ventilanforderung aus der Ferne mit der verfügbaren Endlagenrückmeldung ab.",
+          "interface": "Nutzen Sie die dokumentierte Befehlsschnittstelle des Antriebs und kompatible Rückmeldekontakte.",
+          "control": "Stimmen Sie den DO-Anschluss auf den externen Antrieb oder Schaltkreis ab.",
+          "verification": "Testen Sie Öffnen, Schließen und lokale Übersteuerung; der Ausgangstyp allein belegt weder die Fähigkeit zur Spannungsversorgung eines Ventils noch zur Ansteuerung eines bistabilen Antriebs."
+        },
+        {
+          "title": "Versorgungsbedingungen des Wasserspeichers",
+          "text": "Betrachten Sie ein kompatibles Tankfüllstandssignal und ein diskretes Versorgungsereignis, um Betrieb und Wartung der Bewässerungsanlage zu unterstützen.",
+          "interface": "Belegen Sie AI- und DI-Punkte mit den gewählten externen Füllstandsmessgeräten oder Schaltern.",
+          "control": "Nutzen Sie konfigurierte Meldungen oder zulässige Anlagenanforderungen im Rahmen des Steuerungskonzepts am Standort.",
+          "verification": "Prüfen Sie vor dem Betrieb den tatsächlichen Füllstand, die Einheiten und den unabhängigen Wassermangelschutz."
+        },
+        {
+          "title": "Messung und Reaktion im Gewächshaus",
+          "text": "Nutzen Sie ausgewählte externe Umgebungs-Messumformersignale für eine definierte Aufgabe zur Überwachung und Anlagenreaktion im Gewächshaus.",
+          "interface": "Wählen Sie kompatible analoge Signale, etwa aufbereitete Temperatur- oder Feuchteausgänge.",
+          "control": "Verknüpfen Sie eine vereinbarte Bedingung mit einem zulässigen Lüftungs- oder Hilfsbefehl.",
+          "verification": "Vergleichen Sie Messgeräteanzeigen und tatsächliche Anlagenrückmeldungen; definieren Sie die Betriebsgrenzen mit dem Lieferanten der Gewächshausausrüstung."
+        },
+        {
+          "title": "Fertigationsaggregat überwachen",
+          "text": "Machen Sie ausgewählte Betriebs-, Stör- oder Versorgungszustände einer Wasser- und Nährstoffversorgungseinheit für Bediener sichtbar.",
+          "interface": "Belegen Sie DI- oder kompatible AI-Punkte mit den dokumentierten externen Signalen des Aggregats.",
+          "control": "Beschränken Sie DO-Aktionen auf eine zulässige Aggregatfreigabe oder Hilfsanforderung.",
+          "verification": "Prüfen Sie Quellzustände und lokale Prioritäten; Dosierrezepturen und Prozessregelung verbleiben im dafür vorgesehenen Aggregatsystem."
+        }
+      ]
+    },
+    {
+      "id": "remote-infrastructure",
+      "title": "Abgelegene Infrastruktur",
+      "intro": "Führen Sie ausgewählte Datenpunkte von Versorgungs- und Anlagenschränken in einem Betriebsablauf für abgelegene Standorte zusammen. Stimmen Sie 4G-Konfiguration, lokale Stromversorgung und geschützte Installation auf den Standort ab.",
+      "imageKey": "telecom-site",
+      "imageAlt": "Abgelegener Telekommunikationsstandort mit Anlagenschränken",
+      "tasks": [
+        {
+          "title": "Alarme von Telekommunikations- und Straßenschränken",
+          "text": "Fassen Sie ausgewählte Alarmkontakte unter einem eindeutig bezeichneten Standort oder Schrank zusammen.",
+          "interface": "Belegen Sie DI-Kanäle mit den vorrangig benötigten kompatiblen Anlagenalarmsignalen.",
+          "control": "Nutzen Sie die reine Überwachung oder ergänzen Sie einen zulässigen Hilfsbefehl, wenn die Anlage eine entsprechende Schnittstelle bietet.",
+          "verification": "Prüfen Sie das Quellereignis und seine Standortzuordnung; Anlagenalarme und Kommunikationsausfall müssen unterschiedlich eingeordnet werden."
+        },
+        {
+          "title": "Lüftungsgeräte an entfernten Standorten",
+          "text": "Verfolgen Sie den Betriebs- oder Störzustand eines Lüfters oder Kühlhilfsaggregats an einem verteilten Infrastrukturstandort.",
+          "interface": "Nutzen Sie kompatible Rückmeldekontakte und bei Bedarf die dokumentierte Freigabeschnittstelle.",
+          "control": "Verbinden Sie einen DO über einen elektrisch geeigneten Kreis zur übergeordneten Steuerung.",
+          "verification": "Prüfen Sie die tatsächliche Lüfterrückmeldung, die lokale Übersteuerung und das vereinbarte Wiederherstellungsverhalten."
+        },
+        {
+          "title": "Tür- und Wartungsbetriebsanzeige",
+          "text": "Ergänzen Sie die Standortüberwachung um ausgewählte Zutritts- und Servicezustandssignale.",
+          "interface": "Nutzen Sie kompatible Kontakte mit vereinbarter Bedeutung für Normalzustand, Offenstellung und Service.",
+          "control": "Setzen Sie Zusatzanzeigen ein, wenn das Verfahren am Standort dies vorsieht.",
+          "verification": "Testen Sie die tatsächliche Kontaktbetätigung und die Ortszuordnung; zertifizierte Sicherungsfunktionen bleiben separat."
+        },
+        {
+          "title": "Gehäusezustände messen",
+          "text": "Erfassen Sie kompatible externe Temperatur- oder andere Zustandsmessumformerausgänge für einen entfernten Versorgungsschrank.",
+          "interface": "Wählen Sie analoge Datenpunkte passend zum Messgeräteausgang und zum verfügbaren AI-Umfang der Referenzkonfiguration.",
+          "control": "Nutzen Sie Online-Schwellenwertmeldungen und etwaige zulässige bedingungsabhängige Hilfsaktionen.",
+          "verification": "Prüfen Sie technische Einheiten und den Einbauort des Sensors; das externe Messgerät bestimmt die Messleistung."
+        },
+        {
+          "title": "Zulässige Serviceaktionen an Anlagen",
+          "text": "Stellen Sie eine begrenzte Serviceanforderung aus der Ferne bereit, wenn die Anlage eine dokumentierte externe Befehlsschnittstelle bietet.",
+          "interface": "Nutzen Sie genau den zulässigen Eingangskreis und die verfügbare Abschlussrückmeldung der Anlage.",
+          "control": "Definieren Sie Aktionsfolge, lokale Priorität und betriebliche Berechtigungen für die Anforderung.",
+          "verification": "Prüfen Sie das tatsächliche Ergebnis an der Anlage und das Wiederherstellungsverhalten; ein Controllerausgang ist kein Nachweis für den Abschluss einer Serviceaktion."
+        }
+      ]
+    },
+    {
+      "id": "environmental-facilities",
+      "title": "Umwelttechnische Anlagen",
+      "intro": "Verbinden Sie Zustände von Aufbereitungsaggregaten und kompatible externe Messsignale für einen Überblick über den Betrieb. Prozessschutz, zertifizierte Messungen und gesetzliche Berichterstattung bleiben separate Anforderungen.",
+      "imageKey": "treatment-manifold",
+      "imageAlt": "Druckbehälter und Betriebsrohrleitungen einer Wasseraufbereitungsanlage",
+      "tasks": [
+        {
+          "title": "Abwasserhebeanlagen überwachen",
+          "text": "Kombinieren Sie ausgewählte Pumpenrückmeldungen und ein Füllstandsmessumformersignal, um Bediener bei der Beurteilung einer Hebeanlage zu unterstützen.",
+          "interface": "Belegen Sie DI- und kompatible AI-Punkte mit den benötigten Pumpen- und Füllstandssignalen.",
+          "control": "Nutzen Sie eine zulässige Pumpenanforderung über die lokale Steuerung.",
+          "verification": "Prüfen Sie tatsächliche Zustände und Einheiten; Cloud-Meldungen ersetzen keinen unabhängigen Überlaufschutz."
+        },
+        {
+          "title": "Betriebs- und Störzustände von Aufbereitungsaggregaten",
+          "text": "Stellen Sie ausgewählte Betriebs- und Störmeldungen eines Aggregats unter einer einheitlichen Anlagenbezeichnung dar.",
+          "interface": "Nutzen Sie kompatible externe Aggregatkontakte innerhalb der DI-Belegung.",
+          "control": "Beschränken Sie jede externe Freigabeanforderung auf die Betriebsvorgaben des Aggregatherstellers.",
+          "verification": "Testen Sie die tatsächlichen Zustände und Rücksetzbedingungen; eine Betriebsmeldung belegt keine Aufbereitungswirkung."
+        },
+        {
+          "title": "Externe Umweltmesssignale",
+          "text": "Integrieren Sie kompatible analoge Signale ausgewählter Wasserqualitäts- oder Umweltmessumformer in den Überwachungsablauf.",
+          "interface": "Stimmen Sie die AI-Spezifikation auf den externen Messumformerausgang und den Messbereich ab.",
+          "control": "Nutzen Sie konfigurierte Schwellenwertbenachrichtigungen oder eine separat ausgelegte zulässige Hilfsaktion.",
+          "verification": "Prüfen Sie Skalierung und Interpretation ungültiger Daten; für Konformitätsberichte ist ein eigenes zugelassenes Messsystem zu verwenden."
+        },
+        {
+          "title": "Hilfslüfter und Meldekreise",
+          "text": "Übertragen Sie zulässige Befehle über einen geeigneten Steuerkreis an einen Hilfslüfter, eine Anzeige oder ein Unterstützungsgerät.",
+          "interface": "Nutzen Sie die erforderliche Ausgangsschnittstelle und verfügbare Anlagenrückmeldungen.",
+          "control": "Wählen Sie externe Schaltgeräte, sofern die Last dies erfordert.",
+          "verification": "Prüfen Sie den tatsächlichen Betrieb und die lokale Priorität; Notlüftung und Personenschutzfunktionen nutzen separate qualifizierte Systeme."
+        },
+        {
+          "title": "Wartungsereignisse für Filter oder Filtermedien",
+          "text": "Erfassen Sie einen externen Wartungsschalter oder ein kompatibles Druckmessumformersignal zur Unterstützung der Wartung von Aufbereitungssystemen.",
+          "interface": "Wählen Sie ein DI-Ereignis oder einen AI-Wert des betreffenden externen Messgeräts.",
+          "control": "Nutzen Sie das Ereignis für Meldungen oder eine geeignete Wartungsanzeige.",
+          "verification": "Prüfen Sie Messgeräteeinstellung und Betriebszustand; der Controller bestimmt weder die Wasserqualität noch die Konformität der Aufbereitung."
+        }
+      ]
+    },
+    {
+      "id": "multi-site-operations",
+      "title": "Standortübergreifender Anlagenbetrieb",
+      "intro": "Verwenden Sie einheitliche Anlagenbezeichnungen und Signaldefinitionen über verteilte Controller hinweg. Cloud-Überwachung, konfigurierte Meldungen und Fernwartung unterstützen den betrieblichen Ablauf am Standort.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Campusgebäude und Außenanlagen als Beispiel für ein Gelände mit mehreren Gebäuden",
+      "tasks": [
+        {
+          "title": "Standortbezogene Online-Überwachung",
+          "text": "Ordnen Sie hochgeladene DI-Zustände und AI-Messwerte in Hitelecom Cloud nach Standort, Schrank und Anlagenbezeichnung.",
+          "interface": "Ordnen Sie jedem Controllerdatenpunkt seine Quelle, Einheiten und die Bedeutung des Normalzustands zu.",
+          "control": "Unterscheiden Sie im Integrationsumfang zwischen Überwachungszugriff und zulässigen Anlagenbefehlen.",
+          "verification": "Vergleichen Sie angezeigte Datenpunkte mit den physischen Quellen und prüfen Sie das gewählte Aktualisierungsverhalten."
+        },
+        {
+          "title": "Schwellenwert- und Ereignisbenachrichtigungen",
+          "text": "Nutzen Sie konfigurierte Grenzen und Anlagenzustandsereignisse, um auf die relevante Betriebsbedingung aufmerksam zu machen.",
+          "interface": "Nutzen Sie verfügbare DI-Zustände oder AI-Werte mit definierten Meldebedingungen.",
+          "control": "Behandeln Sie Benachrichtigungen und automatische Anlagenaktionen als separat konfigurierte Funktionen.",
+          "verification": "Testen Sie Schwellenwertüberschreitung, Rückkehr zum Normalzustand und Zustellung der Benachrichtigung im vereinbarten Ablauf."
+        },
+        {
+          "title": "Prioritäten lokaler und ferngesteuerter Bedienung",
+          "text": "Stimmen Sie zulässige Bedieneranforderungen mit lokalen oder bedingungsabhängigen Aktionen für die gewählte Anlage ab.",
+          "interface": "Definieren Sie I/O-Belegung des Controllers, Befehlsweg und Anlagenrückmeldungen.",
+          "control": "Legen Sie für jede Betriebsart Priorität, lokale Übersteuerung und zulässige Aktion fest.",
+          "verification": "Testen Sie konkurrierende Anforderungen und tatsächliche Rückmeldungen anhand des freigegebenen betrieblichen Verfahrens am Standort."
+        },
+        {
+          "title": "Gerätekoordination im Master-/Slave-Betrieb",
+          "text": "Weisen Sie die erforderlichen Betriebsrollen zu, wenn der Controller an einem projektspezifischen Datenaustausch zwischen Geräten beteiligt ist.",
+          "interface": "Legen Sie die gewählte Schnittstelle, das Protokoll sowie das initiierende und das antwortende Gerät fest.",
+          "control": "Beschränken Sie ausgetauschte Befehle auf die vereinbarten Geräterollen und unterstützten Vorgänge.",
+          "verification": "Prüfen Sie Datenpunktzuordnung, Rollenverteilung und die vorgesehene Reaktion, ohne aus der Rollenbezeichnung ein bestimmtes Protokoll abzuleiten."
+        },
+        {
+          "title": "Fernkonfiguration und Firmware-Wartung",
+          "text": "Pflegen Sie die relevanten Einstellungen und die Gerätefirmware der installierten Controllerflotte anhand geplanter Serviceverfahren.",
+          "interface": "Nutzen Sie die unterstützten Funktionen des Geräts für Fernkonfiguration und Upgrades.",
+          "control": "Verwenden Sie die für die gelieferte Hardwarekonfiguration vorgesehenen Einstellungen oder die entsprechende Firmware.",
+          "verification": "Prüfen Sie die resultierenden Einstellungen, den Gerätebetrieb und das Wiederherstellungsverhalten mit den verfügbaren Wartungsmethoden."
+        }
+      ]
+    }
+  ],
+  "platformTitle": "Ihre Anlagen im Feld.\nSichtbar in Hitelecom Cloud.",
+  "platformIntro": "Sehen Sie hochgeladene Überwachungsdaten online ein, verfolgen Sie Anlagenzustände und erhalten Sie Meldungen, wenn konfigurierte Schwellenwerte überschritten werden. Ordnen Sie den digitalen und analogen Datenpunkten des Controllers aussagekräftige Anlagenbezeichnungen, Einheiten und Betriebsbedingungen zu. Die Integration in eine Kundenplattform kann anhand der gewählten Geräteschnittstelle und der Anforderungen an den Datenaustausch geplant werden.",
+  "platformBullets": [
+    "Online-Daten: Stellen Sie Anlagenzustände und externe Messwerte in der gewählten Überwachungsansicht dar. Legen Sie für jeden Datenpunkt Einheiten und Aktualisierungsverhalten fest.",
+    "Schwellenwertmeldungen: Legen Sie die relevanten Überwachungsgrenzen und den Benachrichtigungsablauf fest. Prüfen Sie bei der Inbetriebnahme Auslösebedingung, Empfänger und Zustellung.",
+    "Steuerung und Integration: Stimmen Sie zulässige Fernsteuerungsaktionen, Rückmeldepunkte und lokale Prioritäten ab. Definieren Sie Protokoll und Datenzuordnung für ein Projekt mit Kundenplattform gesondert."
+  ],
+  "specsIntro": "Die Serie HD20-2000 unterstützt unterschiedliche I/O-Konfigurationen. Die nachfolgende Referenzkonfiguration umfasst 2DO + 2DI + 2AI; das abgebildete 4G-Gerät trägt die Bezeichnung HD20-4021GD. Verwenden Sie für die endgültige Geräteauswahl und Verdrahtung die elektrischen Spezifikationen und mechanischen Angaben der jeweiligen Konfiguration.",
+  "specGroups": [
+    {
+      "title": "Serie und Feld-I/O",
+      "rows": [
+        [
+          "Produktfamilie",
+          "IoT-Controller / RTU der Serie HD20-2000"
+        ],
+        [
+          "Abgebildetes Modell",
+          "HD20-4021GD; mit 4G gekennzeichnetes Gerät"
+        ],
+        [
+          "I/O-Referenzkonfiguration",
+          "2 digitale Ausgänge + 2 digitale Eingänge + 2 analoge Eingänge"
+        ],
+        [
+          "Digitale Eingänge",
+          "2 Kanäle in der Referenzkonfiguration. Fordern Sie Angaben zu elektrischer Eingangsart, Schwellenwerten und Verdrahtung an."
+        ],
+        [
+          "Digitale Ausgänge",
+          "2 Kanäle in der Referenzkonfiguration. Fordern Sie Angaben zu Ausgangstyp, zulässiger Last und Schaltschnittstelle an."
+        ],
+        [
+          "Analoge Eingänge",
+          "2 Kanäle in der Referenzkonfiguration. Fordern Sie Angaben zu unterstütztem Signalbereich, Genauigkeitsbedingungen und Skalierung an."
+        ]
+      ]
+    },
+    {
+      "title": "Verarbeitung und Steuerung",
+      "rows": [
+        [
+          "Edge-Verarbeitung",
+          "Unterstützt; Anwendungslogik und Signalauswertung richten sich nach der gewählten Konfiguration."
+        ],
+        [
+          "Steuerungsarten",
+          "Lokal / ferngesteuert / bedingungsabhängig"
+        ],
+        [
+          "Betriebsrollen",
+          "Master-/Slave-Betriebsarten; Schnittstelle, Protokoll und Rollenauswahl werden für das Projekt festgelegt."
+        ],
+        [
+          "Watchdogs",
+          "Software- und Hardware-Watchdog-Mechanismen"
+        ],
+        [
+          "Abtastung, Datenübertragung und Reaktion",
+          "Definieren Sie Anforderungen an Eingangsabtastung, Datenübertragung, Ereignisverarbeitung und Steuerungsreaktion getrennt."
+        ],
+        [
+          "Verhalten beim Start und bei Verbindungsabbruch",
+          "Legen Sie Ausgangszustände, zulässige lokale Aktionen und Wiederherstellungsverhalten für die gelieferte Konfiguration fest."
+        ]
+      ]
+    },
+    {
+      "title": "Konnektivität und Plattform",
+      "rows": [
+        [
+          "Abgebildete Mobilfunkvariante",
+          "4G; wählen Sie regionales Modul, Frequenzbänder, SIM-Dienst und Antennenkonzept passend zur Installation."
+        ],
+        [
+          "Hitelecom Cloud",
+          "Online-Anzeige hochgeladener Überwachungsdaten und Meldungen bei Überschreitung konfigurierter Schwellenwerte."
+        ],
+        [
+          "Kundenplattform",
+          "Projektspezifische Integration; stimmen Sie unterstützte Geräteschnittstelle, Protokoll und Datenzuordnung ab."
+        ],
+        [
+          "Fernkonfiguration",
+          "Für die entsprechenden Geräteeinstellungen unterstützt."
+        ],
+        [
+          "Firmware-Upgrade aus der Ferne",
+          "Unterstützt; verwenden Sie die freigegebene Firmware und das Wartungsverfahren für die gelieferte Konfiguration."
+        ]
+      ]
+    },
+    {
+      "title": "Stromversorgung und Installation",
+      "rows": [
+        [
+          "Stromversorgung",
+          "Fordern Sie Angaben zu Nenneingangsbereich, Polarität, Spitzenverbrauch und typischem Verbrauch sowie Verdrahtungsanforderungen an."
+        ],
+        [
+          "Bauform und Installation",
+          "Kompaktes Gehäuse; wählen Sie Montage, Kabelführung und Wartungsfreiraum passend zur Installation."
+        ],
+        [
+          "Abmessungen und Masse",
+          "Beachten Sie die mechanische Zeichnung und die Produktspezifikation der jeweiligen Konfiguration."
+        ],
+        [
+          "Schnittstellen zu externen Geräten",
+          "Stimmen Sie die elektrischen I/O-Spezifikationen des Controllers auf jedes Messgerät, jeden Antrieb und jeden Laststeuerkreis ab."
+        ]
+      ]
+    },
+    {
+      "title": "Umgebung und Dokumentation",
+      "rows": [
+        [
+          "Installationsumgebung",
+          "Wählen Sie das Gerät und einen gegebenenfalls erforderlichen Schutzschrank entsprechend Temperatur, Luftfeuchtigkeit und äußeren Einflüssen am Standort."
+        ],
+        [
+          "Schutzart",
+          "Fordern Sie die Schutzart und die Installationsbedingungen für die gelieferte Gerätekonfiguration an."
+        ],
+        [
+          "Angaben zur Inbetriebnahme",
+          "Signalliste, Steuerungsberechtigungen, Anlagenrückmeldungen, Ferneinstellungen und Prüfungen zur Wiederherstellung."
+        ],
+        [
+          "Konformitätsunterlagen",
+          "Fordern Sie modell- und ziellandspezifische Erklärungen oder Prüfunterlagen für die bestellte Version an."
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Wofür ist die Serie HD20-2000 ausgelegt?",
+      "a": "Sie vereint Felddatenerfassung, Anlagenüberwachung und Steuerung in einer IoT-RTU. Digitale Eingänge erfassen Anlagenzustände, analoge Eingänge empfangen kompatible Messumformersignale und digitale Ausgänge werden an zulässige Steuerkreise angeschlossen. Edge-Verarbeitung, Cloud-Überwachung und Fernwartung unterstützen den betrieblichen Ablauf."
+    },
+    {
+      "q": "Welche I/O-Konfiguration ist verfügbar?",
+      "a": "Die vorliegenden Serieninformationen nennen eine Konfiguration mit 2DO + 2DI + 2AI: zwei digitale Ausgänge, zwei digitale Eingänge und zwei analoge Eingänge. Die Serie unterstützt unterschiedliche I/O-Konfigurationen. Wählen Sie die benötigte Kanalbelegung und fordern Sie die elektrische Spezifikation für die bestellte Konfiguration an; die Ziffern einer abgebildeten Modellbezeichnung ersetzen diese Spezifikation nicht."
+    },
+    {
+      "q": "Welche Signale können die digitalen und analogen Eingänge aufnehmen?",
+      "a": "DI-Punkte werden für kompatible digitale Anlagenzustände verwendet; AI-Punkte erfassen kompatible analoge Messumformersignale. Elektrische Logik, Eingangsbereiche, Isolation und Genauigkeitsbedingungen müssen zur gewählten Controllerkonfiguration und zum externen Messgerät passen. Geben Sie bei der Konfigurationsanfrage die Ausgangsspezifikation des Messgeräts an."
+    },
+    {
+      "q": "Welche Steuerungsarten werden unterstützt?",
+      "a": "Die Serie unterstützt lokale, ferngesteuerte und bedingungsabhängige Steuerung. Die Anwendung legt zulässige Aktionen, Betriebsbedingungen, Anlagenprioritäten und verfügbare Rückmeldungen fest. Die elektrische Kompatibilität der Ausgänge und unabhängige Schutzfunktionen der Anlage bleiben Bestandteil der Installationsplanung."
+    },
+    {
+      "q": "Was bedeuten Master-/Slave-Betriebsarten für die Integration?",
+      "a": "Sie stellen Betriebsrollen für eine projektspezifische Gerätekoordination bereit. Legen Sie fest, welches Gerät den Austausch initiiert, welches antwortet und welche Daten oder Befehle ausgetauscht werden. Die tatsächliche Schnittstelle, das Kommunikationsprotokoll und die unterstützten Vorgänge werden für das Projekt gewählt; die Rollenbeschreibung allein definiert kein bestimmtes Protokoll."
+    },
+    {
+      "q": "Kann ich in Hitelecom Cloud Überwachungsdaten einsehen und Meldungen erhalten?",
+      "a": "Ja. Hitelecom Cloud unterstützt die Online-Anzeige hochgeladener Überwachungsdaten sowie Meldungen bei Überschreitung konfigurierter Schwellenwerte. Konfigurieren Sie für die angeschlossenen Datenpunkte Maßeinheiten, die Bedeutung der Anlagenzustände, Grenzwerte und den Benachrichtigungsablauf. Datenverfügbarkeit und Benachrichtigungszeitpunkt hängen vom Datenübertragungsprofil des Geräts und von der Netzwerkverbindung ab."
+    },
+    {
+      "q": "Kann der Controller in eine Kundenplattform integriert werden?",
+      "a": "Der Umfang der Integration in eine Kundenplattform richtet sich nach der von der gewählten Konfiguration unterstützten Geräteschnittstelle. Stimmen Sie Protokoll, Nutzdaten- oder Datenpunktdefinitionen, zulässige Befehle und die Zuordnung der Anlagenrückmeldungen mit der empfangenden Plattform ab. Hitelecom kann diese Anforderungen bei der Projektprüfung bewerten."
+    },
+    {
+      "q": "Wozu dienen die zwei Watchdog-Mechanismen?",
+      "a": "Die Serie nutzt Hardware- und Software-Watchdog-Mechanismen, um die Wiederherstellung nach definierten Fehlern zu unterstützen. Diese Funktionen dienen der Gerätewiederherstellung und garantieren weder einen unterbrechungsfreien Betrieb noch ersetzen sie den Anlagenschutz. Bei der Inbetriebnahme sollten das zutreffende Rücksetzverhalten und die resultierenden Ausgangszustände geprüft werden."
+    },
+    {
+      "q": "Können Einstellungen und Firmware aus der Ferne gepflegt werden?",
+      "a": "Die Serie unterstützt Fernkonfiguration und Firmware-Upgrades aus der Ferne. Verwenden Sie die für die gelieferte Hardwarekonfiguration vorgesehenen Einstellungen und die entsprechende Firmware. Planen Sie die Wartung anhand des betrieblichen Verfahrens am Standort. Prüfen Sie nach der Änderung die erforderlichen Einstellungen und den Gerätebetrieb."
+    },
+    {
+      "q": "Was geschieht bei einer Unterbrechung der Kommunikation oder Stromversorgung?",
+      "a": "Lokale und bedingungsabhängige Steuerung sind unterstützte Betriebsarten. Der Betrieb bei Verbindungsabbruch, die Rückfallzustände der Ausgänge und die Wiederherstellung beim Start müssen jedoch für die gelieferte Konfiguration festgelegt werden. Ein Fernbefehlsweg und eine Online-Überwachungsansicht sind auf Konnektivität angewiesen. Testen Sie das vereinbarte Unterbrechungs- und Wiederherstellungsverhalten bei der Inbetriebnahme."
+    },
+    {
+      "q": "Kann ein digitaler Ausgang eine Pumpe, einen Lüfter oder ein Ventil direkt mit Strom versorgen?",
+      "a": "Wählen Sie den Anschluss anhand der elektrischen Ausgangsart, der zulässigen Last und der Anlagenschnittstelle. Ein geeigneter Motorstarter, ein Schütz, ein zwischengeschaltetes Schaltgerät oder ein Antriebssteuerkreis kann erforderlich sein. Die Aktivierung eines Ausgangs allein belegt nicht, dass ein Motor läuft oder ein Ventil seine Stellung erreicht hat; nutzen Sie verfügbare Anlagenrückmeldungen."
+    },
+    {
+      "q": "Welche Angaben werden zur Auswahl einer Installationskonfiguration benötigt?",
+      "a": "Nennen Sie Installationsland, Signalliste, Ausgangsspezifikationen der Messgeräte, Anlagensteuerungsschnittstellen, erforderliche Prioritäten für lokale Bedienung und Fernbedienung, Stromquelle und Standortbedingungen. Geben Sie außerdem die Zielplattform und das erwartete Verhalten bei Kommunikationsausfall oder Neustart an. Diese Angaben bestimmen I/O-Belegung, Integrationsumfang und gegebenenfalls erforderliche Anpassungen."
+    }
+  ],
+  "enquiryIntro": "Teilen Sie uns die Signalliste der Anlage, die Messgeräteausgänge, die erforderlichen Steuerungsaktionen und die Installationsbedingungen mit. Wir unterstützen Sie bei der Auswahl der I/O-Konfiguration, der Festlegung des Umfangs lokaler und ferngesteuerter Bedienung sowie der Planung einer Integration in Hitelecom Cloud oder eine Kundenplattform.",
+  "slug": "iot-controller-hd20-2000",
+  "kind": "Product",
+  "image": "hd20-4021gd-original.png",
+  "imageWidth": 1280,
+  "imageHeight": 1280
+}
