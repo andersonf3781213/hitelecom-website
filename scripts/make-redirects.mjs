@@ -38,6 +38,14 @@ for (const [id, slug] of pairs) {
   redirects.push([`/zh/product/show/id/${id}.html`, `/zh/product/${slug}`]);
 }
 
+// V138：气象/水文联分类目录页（cid 275/274）随 H600/H700 迁入 Custom Development（cid 256）后下线，七语种旧地址 301 到定制开发目录
+for (const pre of ['', '/zh', '/es', '/de', '/ja', '/fr', '/ru']) {
+  for (const cid of ['275', '274']) {
+    redirects.push([`${pre}/product/lists/cid/${cid}.html`, `${pre}/product/lists/cid/256`]);
+    redirects.push([`${pre}/product/lists/cid/${cid}`, `${pre}/product/lists/cid/256`]);
+  }
+}
+
 // ---------------------------------------------------------------- _redirects
 const cfLines = [
   '# Cloudflare Pages 301 重定向（本文件由 scripts/make-redirects.mjs 生成，勿手改）',

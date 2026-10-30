@@ -92,7 +92,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "257",
-   "label": "Weather Station",
+   "label": "IoT Controllers",
    "href": "/product/lists/cid/257"
   },
   {
@@ -124,7 +124,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "257",
-   "label": "气象站",
+   "label": "物联网控制器",
    "href": "/product/lists/cid/257"
   },
   {
@@ -156,7 +156,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "257",
-   "label": "Estación meteorológica",
+   "label": "Controladores IoT",
    "href": "/product/lists/cid/257"
   },
   {
@@ -188,7 +188,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "257",
-   "label": "Wetterstation",
+   "label": "IoT-Controller",
    "href": "/product/lists/cid/257"
   },
   {
@@ -220,7 +220,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "257",
-   "label": "気象ステーション",
+   "label": "IoTコントローラー",
    "href": "/product/lists/cid/257"
   },
   {
@@ -252,7 +252,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "257",
-   "label": "Station météorologique",
+   "label": "Contrôleurs IoT",
    "href": "/product/lists/cid/257"
   },
   {
@@ -284,7 +284,7 @@ export const productTabs: Record<Locale, ProductTab[]> = {
   },
   {
    "key": "257",
-   "label": "Метеостанция",
+   "label": "IoT-контроллеры",
    "href": "/product/lists/cid/257"
   },
   {

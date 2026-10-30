@@ -1,6 +1,6 @@
 ---
 const { catalog:c, locale='en', cid='257' }=Astro.props;
-const validCid=['257','275','274'].includes(String(cid))?String(cid):'257';
+const validCid='257';
 const prefix=locale==='en'?'':'/'+locale;
 const local=(path)=>prefix+path;
 const selected=c.categoryTitles[validCid];
@@ -8,11 +8,10 @@ const shown=c.products.filter(p=>validCid==='257'||p.categoryId===validCid);
 const countText=(n)=>c.search.resultCount.replace('{count}',String(n));
 const split=(s)=>s.split('\n');
 const heroHeading=validCid==='257'?c.heroHeading:c.categoryTitles[validCid];
-const types=[{id:'275',label:c.sidebar.weatherLabel,product:c.sidebar.weatherProductLabel,path:'/product/weather-station'},{id:'274',label:c.sidebar.hydrologyLabel,product:c.sidebar.hydrologyProductLabel,path:'/product/hydrology-monitoring-station'}];
 ---
 <link rel="stylesheet" href="/css/station-catalog.css"/>
 <main id="main" class="pclone station-catalog-page" data-station-catalog data-category={validCid}>
-  <section class="original-station-hero" aria-label={selected}><img src="/assets/banner-257.jpg" width="1920" height="1000" alt={selected} fetchpriority="high" loading="eager" decoding="async"/></section>
+  <section class="original-station-hero" aria-label={selected}><img src="/assets/sensor-hero-background.webp" width="1920" height="1090" alt={selected} fetchpriority="high" loading="eager" decoding="async"/></section>
   <h1 class="catalog-sr-only">{selected}</h1>
   <div id="cate" class="catalog-anchor"></div>
   <nav class="pro_1 pro_1_ser" aria-label={c.categoryNav.ariaLabel}>
@@ -28,7 +27,6 @@ const types=[{id:'275',label:c.sidebar.weatherLabel,product:c.sidebar.weatherPro
       </form>
       <nav class="pro_2_mid_left_mid_2" aria-label={c.sidebar.ariaLabel}><ul>
         <li><a class:list={['css3',{'on':validCid==='257'}]} href={local('/product/lists/cid/257#cate')} aria-current={validCid==='257'?'page':undefined}>{c.sidebar.allLabel}</a></li>
-        {types.map(type=><li><a class:list={['css3',{'on':validCid===type.id}]} href={local('/product/lists/cid/'+type.id+'#cate')} aria-current={validCid===type.id?'page':undefined}>{type.label}</a><ul class="sub-prods"><li><a href={local(type.path)}>{type.product}</a></li></ul></li>)}
         <li><a class="css3" href={local('/product/iot-controller-hd20-2000')}>{c.sidebar.controllerLabel}</a><ul class="sub-prods"><li><a href={local('/product/iot-controller-hd20-2000')}>{c.sidebar.controllerProductLabel}</a></li><li><a href={local('/product/iot-controller-hd20-4000')}>{c.sidebar.controllerProductLabelHd4000}</a></li><li><a href={local('/product/iot-controller-hr10')}>{c.sidebar.controllerProductLabelHr10}</a></li><li><a href={local('/product/iot-controller-hd20-1000')}>{c.sidebar.controllerProductLabelHd1000}</a></li></ul></li>
       </ul></nav>
     </div></aside>

@@ -18,7 +18,7 @@ const structured = { '@context': 'https://schema.org', '@graph': [
     additionalProperty: c.rows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value })) },
   { '@type': 'BreadcrumbList', itemListElement: [
     { '@type': 'ListItem', position: 1, name: u.home, item: origin + prefix + '/' },
-    { '@type': 'ListItem', position: 2, name: u.gatewayCatalog, item: origin + prefix + '/product/lists/cid/257' },
+    { '@type': 'ListItem', position: 2, name: u.customCatalog, item: origin + prefix + '/product/lists/cid/256' },
     { '@type': 'ListItem', position: 3, name: productName, item: canonical }] },
   { '@type': 'FAQPage', mainEntity: c.faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }
 ] };

@@ -1,4 +1,4 @@
-/** 气象/水文站目录页（V131）：cid 257 总目录、275 气象、274 水文，7 语种。
+/** 气象/水文站目录页（V131）：cid 257 IoT 控制器总目录，7 语种（V138：H600/H700 移至 Custom Development）。
  * 结构化数据 CollectionPage+ItemList+BreadcrumbList；卡片样式复用 product.css legacy 类。 */
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -22,7 +22,7 @@ const structured = { '@context': 'https://schema.org', '@graph': [
 const allLocales = ['en', 'zh', 'es', 'de', 'ja', 'fr', 'ru'];
 const langTargets = Object.fromEntries(allLocales.map(loc => [loc, `${loc === 'en' ? '' : `/${loc}`}/product/lists/cid/${cid}`]));
 ---
-<BaseLayout locale={locale} title={title} description={desc} socialImage="/assets/h700.webp" langOverrides={langTargets}>
+<BaseLayout locale={locale} title={title} description={desc} socialImage="/assets/hd20-4021gd-original.png" langOverrides={langTargets}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(structured).replace(/</g, '\\u003c')}></script>
   <StationCatalog catalog={c} locale={locale} cid={cid}/>
 </BaseLayout>

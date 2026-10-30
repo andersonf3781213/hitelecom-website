@@ -10,7 +10,7 @@ const icons=['M4 13a8 8 0 0 1 16 0M7 13a5 5 0 0 1 10 0M10 13a2 2 0 0 1 4 0M12 16
 <main id="main" class="ht-gateway" data-model={c.model}>
 <div class="hero-band">
 <img class="hero-background" src="/assets/sensor-hero-background.webp" width="1920" height="1090" alt="" aria-hidden="true" loading="eager" decoding="async"/>
-<div class="wrap breadcrumb" aria-label={u.breadcrumbAria}><a href={local('/')}>{u.home}</a><span>/</span><a href={local('/product/lists/cid/257#cate')}>{u.gatewayCatalog}</a><span>/</span><span>{u['productName'+c.model]}</span></div>
+<div class="wrap breadcrumb" aria-label={u.breadcrumbAria}><a href={local('/')}>{u.home}</a><span>/</span><a href={local('/product/lists/cid/256#cate')}>{u.customCatalog}</a><span>/</span><span>{u['productName'+c.model]}</span></div>
 <section class="hero wrap" aria-labelledby="hero-title">
 <div class="hero-heading"><h1 id="hero-title">{split(c.heroHeading).map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}<br/><span>{split(c.heroValue).map((line,i)=><Fragment>{i>0&&<br/>}{line}</Fragment>)}</span></h1></div>
 <figure class="hero-visual gateway-product"><img src={'/assets/'+c.image} width={c.imageWidth} height={c.imageHeight} alt={c.imageAlt} fetchpriority="high" loading="eager" decoding="async"/><figcaption><span class="live-dot" aria-hidden="true"></span>{c.caption}</figcaption></figure>
