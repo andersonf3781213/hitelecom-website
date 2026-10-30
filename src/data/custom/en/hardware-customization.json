@@ -1,0 +1,630 @@
+{
+  "id": "hardware-customization",
+  "slug": "hardware-customization",
+  "kind": "Service",
+  "name": "Hardware Customization",
+  "title": "Custom IoT Hardware Development & OEM Integration | Hitelecom",
+  "metaDescription": "Custom IoT hardware for measurement, connectivity and field installation. Explore sensor, power, enclosure and interface projects with defined prototypes, verification and production handover.",
+  "heroHeading": "Hardware\ncustomization.",
+  "heroValue": "The measurement.\nThe complete field device.",
+  "heroDescription": "Build the hardware specification around the measurement, installation and data path the project actually needs. Hitelecom assesses adaptations of existing device platforms and separately scoped new designs, covering selected sensing elements, electronics, power, communications and mechanical interfaces. The project defines the prototype, verification and production deliverables. Firmware, tooling, manufacturing and certification work are identified explicitly so a working prototype is not mistaken for a qualified production product.",
+  "caption": "Hardware Customization",
+  "imageAlt": "Hardware Customization",
+  "proof": [
+    {
+      "value": "Requirements",
+      "label": "Defined operating conditions",
+      "note": "Measurements, interfaces and installation"
+    },
+    {
+      "value": "Prototype",
+      "label": "A verified design baseline",
+      "note": "Agree tests and acceptance conditions"
+    },
+    {
+      "value": "Handover",
+      "label": "Contracted engineering files",
+      "note": "Specify production scope and ownership"
+    }
+  ],
+  "featureTitle": "Engineering the device.\nBeyond changing its enclosure.",
+  "featureIntro": "Resolve electrical, sensing, mechanical and manufacturing constraints as one design. Select the level of customisation that fits the requirement, then verify the resulting assembly.",
+  "features": [
+    {
+      "title": "Platform adaptation or new design",
+      "text": "Choose between modifying a suitable existing platform and developing a new architecture. Review what can be reused, what changes and which evidence must be repeated."
+    },
+    {
+      "title": "Sensing and measurement chain",
+      "text": "Select the sensing principle, analogue or digital interface, signal conditioning and probe construction. Define range, accuracy conditions, response and calibration needs as a complete chain."
+    },
+    {
+      "title": "Power architecture",
+      "text": "Scope battery, external supply or solar-assisted power with protection, charging and peripheral power domains where required. Evaluate peak loads and storage conditions as well as average consumption."
+    },
+    {
+      "title": "Communications and antennas",
+      "text": "Assess the chosen radio or wired interface, regional deployment and antenna installation. Match the enclosure, cable routing and power supply to the communications design."
+    },
+    {
+      "title": "Mechanical and process interfaces",
+      "text": "Define the envelope, mounting, access, connectors and cable entries. For process measurements, include wetted materials, pressure boundaries, probe insertion and thermal isolation."
+    },
+    {
+      "title": "Environmental verification",
+      "text": "Translate exposure into specific test requirements for the assembled device. Temperature, ingress, corrosion, impact and EMC targets require suitable design and supporting evidence."
+    },
+    {
+      "title": "Prototype and production tests",
+      "text": "Separate proof-of-function builds from design verification and production acceptance. Provide test points, programming access, fixtures and traceable limits within the agreed scope."
+    },
+    {
+      "title": "Supply and engineering handover",
+      "text": "Review component availability, substitutions and revision control. Agree CAD and manufacturing files, bill of materials, tooling rights, test documentation and subsequent supply responsibilities."
+    }
+  ],
+  "planningTitle": "Clarify the conditions.\nBefore selecting components.",
+  "planningIntro": "A useful hardware brief names the required outcomes and the conditions under which they will be verified.",
+  "planning": [
+    {
+      "title": "Define the use and constraints",
+      "text": "Document monitored quantities, installation, power, environment and regional deployment requirements.",
+      "brief": "Measurements · Installation · Power · Target markets"
+    },
+    {
+      "title": "Assess architecture and feasibility",
+      "text": "Review component availability, interfaces, enclosure approach and development risks before confirming the design scope.",
+      "brief": "Sensor choice · Electronics · Connectivity · Mechanical interfaces"
+    },
+    {
+      "title": "Agree verification and production scope",
+      "text": "Separate engineering prototypes from qualification, certification, tooling and volume supply.",
+      "brief": "Prototype tests · External approvals · Production files · Supply terms"
+    }
+  ],
+  "applicationsTitle": "A hardware brief.\nFor each physical requirement.",
+  "applicationsIntro": "These examples describe potential engineering scopes, not off-the-shelf product options or completed customer installations. Each links a physical use case to required design inputs, proposed outputs and verification evidence. Feasibility and supplied specifications are established for the final configuration.",
+  "groups": [
+    {
+      "id": "temperature",
+      "title": "Temperature probes and recording devices",
+      "intro": "Match the sensing assembly to the monitored surface, medium and handling conditions.",
+      "imageKey": "refrigerated-logistics",
+      "imageAlt": "Refrigerated delivery truck at a loading dock",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "External and remote probes",
+          "description": "Place the sensing element where the measurement is required while locating electronics appropriately.",
+          "inputs": "Temperature duty, medium, cable route and mounting envelope.",
+          "deliverables": "Probe, connector and cable-assembly design within the selected architecture.",
+          "acceptance": "Compare response and readings under the agreed operating conditions.",
+          "considerations": "Probe range and electronics ambient range must be stated separately."
+        },
+        {
+          "title": "Surface and pipe measurements",
+          "description": "Evaluate a contact assembly for installations where the process boundary remains intact.",
+          "inputs": "Surface material, temperature, access and permitted fixing method.",
+          "deliverables": "Contact geometry, mounting concept and cable strain relief.",
+          "acceptance": "Assess contact repeatability against the selected reference method.",
+          "considerations": "Thermal contact and ambient influence affect the measurement result."
+        },
+        {
+          "title": "Compact recorders and local displays",
+          "description": "Adapt the enclosure and user interface around the required handling workflow.",
+          "inputs": "Dimensions, display content, service access and storage environment.",
+          "deliverables": "Mechanical layout and component/interface selection.",
+          "acceptance": "Check fit, readability and access on representative prototypes.",
+          "considerations": "Logging, display behaviour and exports require the corresponding firmware scope."
+        }
+      ]
+    },
+    {
+      "id": "tilt",
+      "title": "Tilt devices for racks, poles and structures",
+      "intro": "Design a repeatable mechanical reference and an installation that can be inspected.",
+      "imageKey": "warehouse-aisle",
+      "imageAlt": "Warehouse aisle with shelving and stored goods",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Rack and equipment mounting",
+          "description": "Adapt fixing interfaces to the monitored structure and available installation space.",
+          "inputs": "Surface geometry, orientation, access and permitted attachment.",
+          "deliverables": "Bracket or mounting interface with installation drawing.",
+          "acceptance": "Check fit, orientation repeatability and retention against agreed loads.",
+          "considerations": "Attachment design does not establish structural adequacy of the monitored asset."
+        },
+        {
+          "title": "Outdoor pole and enclosure assemblies",
+          "description": "Coordinate enclosure sealing, antenna placement and installation access.",
+          "inputs": "Pole geometry, exposure, radio path and maintenance method.",
+          "deliverables": "Mounting, connector and enclosure assembly concept.",
+          "acceptance": "Verify assembled fit and the specified environmental tests.",
+          "considerations": "A component enclosure rating does not automatically cover the complete installation."
+        },
+        {
+          "title": "Multi-axis measurement configurations",
+          "description": "Select the sensing element and physical axis convention for the required duty.",
+          "inputs": "Angular envelope, axis references and relevant performance conditions.",
+          "deliverables": "Sensor/interface selection and documented orientation.",
+          "acceptance": "Compare specified positions with the agreed reference arrangement.",
+          "considerations": "Resolution, accuracy, drift and installed alignment are distinct properties."
+        }
+      ]
+    },
+    {
+      "id": "vibration",
+      "title": "Vibration and machine-condition hardware",
+      "intro": "Preserve the mechanical and electrical path between machine motion and recorded data.",
+      "imageKey": "manufacturing-floor",
+      "imageAlt": "Injection moulding machine in an orderly manufacturing area",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Machine-mounted sensor assemblies",
+          "description": "Develop an attachment suited to the monitored bearing housing or machine surface.",
+          "inputs": "Mounting point, vibration band, mass and environmental constraints.",
+          "deliverables": "Sensor assembly, attachment and installation concept.",
+          "acceptance": "Assess response and repeatability using the specified fixture.",
+          "considerations": "Mounting resonance and coupling can limit usable bandwidth."
+        },
+        {
+          "title": "Acquisition electronics",
+          "description": "Scope sensor interfaces and data acquisition around the required signal bandwidth.",
+          "inputs": "Sensor output, bandwidth, noise and processing-interface requirements.",
+          "deliverables": "Signal-chain architecture, PCB interfaces and component selection.",
+          "acceptance": "Measure noise and acquisition behaviour under defined test conditions.",
+          "considerations": "Sampling capability alone does not establish end-to-end measurement accuracy."
+        },
+        {
+          "title": "Separated probe and terminal layouts",
+          "description": "Place sensing and communication components according to access and exposure.",
+          "inputs": "Cable length, routing, machine clearance and electronics location.",
+          "deliverables": "Probe/terminal arrangement with cable and connector selection.",
+          "acceptance": "Test cable effects, continuity and installation fit.",
+          "considerations": "Cable construction, shielding and attachment are part of the verified assembly."
+        }
+      ]
+    },
+    {
+      "id": "air-gas",
+      "title": "Air-quality and gas instrument platforms",
+      "intro": "Address the interaction between sensing exposure, enclosure design and electrical demand.",
+      "imageKey": "office-air",
+      "imageAlt": "Daylit meeting room with windows and ceiling ventilation",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Multi-sensor indoor terminals",
+          "description": "Arrange selected environmental, particle and gas modules around sampling and service needs.",
+          "inputs": "Channel set, module dimensions, airflow and user-interface requirements.",
+          "deliverables": "Mechanical layout, sensing interfaces and power architecture.",
+          "acceptance": "Check module fit, airflow paths and channel operation on prototypes.",
+          "considerations": "Cross-sensitivity and sensor-specific maintenance remain selection requirements."
+        },
+        {
+          "title": "Outdoor sampling enclosures",
+          "description": "Separate protection of electronics from the exposure required by the sensor.",
+          "inputs": "Rain, dust, airflow, inlet and maintenance conditions.",
+          "deliverables": "Enclosure, inlet and service-access concept.",
+          "acceptance": "Evaluate the assembled design under agreed exposure and response tests.",
+          "considerations": "A sealed terminal does not imply a sealed air-sampling path."
+        },
+        {
+          "title": "Industrial gas sampling interfaces",
+          "description": "Assess the instrument interface to the specified sampled gas and installation.",
+          "inputs": "Gas composition, pressure, temperature, sampling method and area classification.",
+          "deliverables": "Materials, connection and sensor-interface design scope.",
+          "acceptance": "Verify the agreed mechanical, electrical and sampling conditions.",
+          "considerations": "Hazardous-area and process approvals apply only to a documented final assembly."
+        }
+      ]
+    },
+    {
+      "id": "pressure",
+      "title": "Pressure transmitters and process interfaces",
+      "intro": "Treat the sensing element, pressure boundary and medium compatibility as one specification.",
+      "imageKey": "gas-regulation",
+      "imageAlt": "Outdoor fuel-gas regulation skid with diaphragm regulators, yellow pipework and small instrument branches.",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Selected process connections",
+          "description": "Adapt the measurement connection to the specified process equipment.",
+          "inputs": "Pressure duty, thread/flange reference and wetted materials.",
+          "deliverables": "Connection and sensing-assembly specification.",
+          "acceptance": "Verify dimensions and agreed pressure-test conditions.",
+          "considerations": "Mechanical compatibility and permitted pressure must be established for the complete assembly."
+        },
+        {
+          "title": "Remote electronics placement",
+          "description": "Assess separation between process sensing and the communication terminal.",
+          "inputs": "Process heat, cable route, access and electronics ambient limits.",
+          "deliverables": "Probe/terminal arrangement and thermal separation concept.",
+          "acceptance": "Measure relevant temperatures and verify signal operation.",
+          "considerations": "Measured-medium temperature must not be applied to the electronics enclosure."
+        },
+        {
+          "title": "Multi-parameter process terminals",
+          "description": "Combine selected sensing interfaces within a defined installation envelope.",
+          "inputs": "Variables, sensor interfaces, mounting and maintenance access.",
+          "deliverables": "Channel and connector architecture with mechanical layout.",
+          "acceptance": "Check channel operation and cross-interface behaviour on prototypes.",
+          "considerations": "Shared electronics do not guarantee identical sensing locations or response times."
+        }
+      ]
+    },
+    {
+      "id": "level-water",
+      "title": "Level, distance and water-leak hardware",
+      "intro": "Choose the sensing geometry and installation interface before selecting the enclosure alone.",
+      "imageKey": "treatment-manifold",
+      "imageAlt": "Water-treatment vessels and connected process pipework",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Non-contact measurement supports",
+          "description": "Adapt the mounting arrangement around the sensing field and installation geometry.",
+          "inputs": "Measurement path, obstructions, target and mounting dimensions.",
+          "deliverables": "Mounting concept and enclosure/interface layout.",
+          "acceptance": "Check mechanical fit and readings at agreed reference positions.",
+          "considerations": "Beam geometry, target properties and environmental influence remain sensor-dependent."
+        },
+        {
+          "title": "Immersed or wetted probes",
+          "description": "Specify the cable, sealing and material interfaces exposed to the medium.",
+          "inputs": "Medium, depth/exposure conditions, cable route and service method.",
+          "deliverables": "Probe/cable assembly and sealing requirements.",
+          "acceptance": "Perform the specified leakage, ingress and functional checks.",
+          "considerations": "Depth, duration and medium compatibility must accompany any immersion requirement."
+        },
+        {
+          "title": "Leak-detection accessories",
+          "description": "Adapt point or cable detection interfaces to the monitored location.",
+          "inputs": "Detection surface, liquid, connector and cable-routing constraints.",
+          "deliverables": "Probe/accessory interface and installation arrangement.",
+          "acceptance": "Exercise wet, dry, disconnected and recovery conditions.",
+          "considerations": "Detection behaviour also depends on the selected sensing principle and firmware."
+        }
+      ]
+    },
+    {
+      "id": "tracking",
+      "title": "Asset-tracking and mobile-device enclosures",
+      "intro": "Balance antenna exposure, attachment and serviceability for the tracked asset.",
+      "imageKey": "container-terminal",
+      "imageAlt": "Shipping containers stacked in a coastal terminal yard",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Asset-specific attachment",
+          "description": "Adapt the device fixing to containers, equipment or returnable transport assets.",
+          "inputs": "Asset geometry, permitted fixings, impacts and access.",
+          "deliverables": "Mounting interface and mechanical retention concept.",
+          "acceptance": "Verify fit and agreed handling or retention tests.",
+          "considerations": "The installation must not impair the asset or expose personnel to loose parts."
+        },
+        {
+          "title": "Positioning and radio integration",
+          "description": "Arrange selected positioning and communications components within the physical design.",
+          "inputs": "Target markets, antennas, enclosure materials and installation orientation.",
+          "deliverables": "RF layout and antenna integration scope.",
+          "acceptance": "Evaluate representative installed reception and radio operation.",
+          "considerations": "No positioning accuracy or network coverage is implied without a defined test basis."
+        },
+        {
+          "title": "Service and energy access",
+          "description": "Choose battery, charging or sealed service arrangements around the use pattern.",
+          "inputs": "Service interval, supply option, handling and sealing requirements.",
+          "deliverables": "Power packaging and access design.",
+          "acceptance": "Check power peaks, charging where included and service reassembly.",
+          "considerations": "Runtime and protection ratings depend on the final verified operating profile."
+        }
+      ]
+    },
+    {
+      "id": "weather-soil",
+      "title": "Weather and agricultural field equipment",
+      "intro": "Design modular sensing and installation interfaces for exposed monitoring locations.",
+      "imageKey": "agriculture",
+      "imageAlt": "Agricultural growing environment",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Configurable sensor junctions",
+          "description": "Bring selected outdoor probes into a maintainable terminal assembly.",
+          "inputs": "Probe list, electrical interfaces, cables and supply demand.",
+          "deliverables": "Connector/channel architecture with identification and cable support.",
+          "acceptance": "Check each configured probe and connection on the prototype.",
+          "considerations": "Sensor exposure and terminal protection require separate consideration."
+        },
+        {
+          "title": "Soil and growing-area probes",
+          "description": "Adapt probe mechanics and cables to the monitored medium and installation.",
+          "inputs": "Soil or substrate, insertion arrangement, cleaning and cable route.",
+          "deliverables": "Probe/interface and installation concept.",
+          "acceptance": "Verify fit, sealing requirements and representative measurement behaviour.",
+          "considerations": "Soil contact and local variability are not solved by enclosure customisation."
+        },
+        {
+          "title": "Mast and service assemblies",
+          "description": "Coordinate terminal mounting, accessories and access around the sensing positions.",
+          "inputs": "Mast dimensions, sensor positions and maintenance access.",
+          "deliverables": "Bracket arrangement, cable routing and service layout.",
+          "acceptance": "Complete a representative assembly and service-access check.",
+          "considerations": "Mast strength and site civil works need a separately defined engineering responsibility."
+        }
+      ]
+    },
+    {
+      "id": "collectors",
+      "title": "Gateways and field-interface collectors",
+      "intro": "Match electrical interfaces, isolation and antenna integration to the connected equipment.",
+      "imageKey": "telecom-site",
+      "imageAlt": "Remote outdoor communications site with closed cabinets and accessible service paths",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Field I/O expansion",
+          "description": "Add selected analogue, pulse or discrete interfaces to an assessed platform.",
+          "inputs": "Signal type, voltage/current levels and channel requirements.",
+          "deliverables": "Interface circuitry and connector architecture.",
+          "acceptance": "Apply known inputs and relevant electrical boundary conditions.",
+          "considerations": "Adding channels may change power, enclosure and EMC requirements."
+        },
+        {
+          "title": "Wired equipment interfaces",
+          "description": "Scope serial or industrial data connections around the actual installation.",
+          "inputs": "Protocol hardware, cable lengths, grounding and isolation needs.",
+          "deliverables": "Physical interface and protection design.",
+          "acceptance": "Verify electrical operation with representative connected equipment.",
+          "considerations": "Protocol software and semantic mapping are separate, coordinated work items."
+        },
+        {
+          "title": "Radio and backhaul variants",
+          "description": "Assess selected modem or radio hardware for the intended region and mounting.",
+          "inputs": "Network technology, bands, antenna route and operator requirements.",
+          "deliverables": "Module, antenna and power-integration design scope.",
+          "acceptance": "Test representative connectivity and supply behaviour.",
+          "considerations": "A module approval does not automatically certify the finished gateway."
+        }
+      ]
+    },
+    {
+      "id": "remote-power",
+      "title": "Solar and externally powered remote terminals",
+      "intro": "Engineer the supply for measured loads, available energy and installation exposure.",
+      "imageKey": "solar",
+      "imageAlt": "Outdoor solar-energy installation",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Solar and storage integration",
+          "description": "Size the hardware architecture around a stated site and duty profile.",
+          "inputs": "Solar resource, sensor loads, communications peaks and autonomy objective.",
+          "deliverables": "Panel/storage/charging interface and protection specification.",
+          "acceptance": "Evaluate energy flow and operating limits under agreed conditions.",
+          "considerations": "No unattended runtime is promised without a complete energy assessment."
+        },
+        {
+          "title": "Industrial DC supply interfaces",
+          "description": "Adapt external power input and protection to the supplied site source.",
+          "inputs": "Nominal supply, tolerances, transients, grounding and connectors.",
+          "deliverables": "Input-stage and power-domain design.",
+          "acceptance": "Test the agreed supply boundaries and recovery conditions.",
+          "considerations": "Transient and EMC requirements must be included explicitly in verification."
+        },
+        {
+          "title": "Switched sensor power domains",
+          "description": "Provide controlled supplies for probes with different operating needs.",
+          "inputs": "Probe voltage/current, warm-up and switching requirements.",
+          "deliverables": "Power-domain architecture and hardware control interfaces.",
+          "acceptance": "Measure sequencing, peak demand and off-state leakage.",
+          "considerations": "Firmware timing must be coordinated with the final power design."
+        }
+      ]
+    },
+    {
+      "id": "equipment-interfaces",
+      "title": "Equipment controllers and actuator interfaces",
+      "intro": "Separate monitoring electronics from any proposed command or control function.",
+      "imageKey": "compressed-air",
+      "imageAlt": "Industrial compressor and compressed-air receiver",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Monitoring retrofit boards",
+          "description": "Adapt a sensing/data interface without changing the equipment control role.",
+          "inputs": "Existing circuit, allowed connections and equipment documentation.",
+          "deliverables": "A defined monitoring interface and installation method.",
+          "acceptance": "Verify interaction with representative equipment operating states.",
+          "considerations": "Modification must respect the equipment manufacturer and owner requirements."
+        },
+        {
+          "title": "Actuator interface assessment",
+          "description": "Evaluate a selected output stage where a command function is expressly requested.",
+          "inputs": "Load, supply, switching behaviour and isolation requirements.",
+          "deliverables": "Output-stage design and defined electrical limits.",
+          "acceptance": "Test representative loads and agreed fault conditions.",
+          "considerations": "Safety-related actuation needs a separately assessed control architecture."
+        },
+        {
+          "title": "Equipment status accessories",
+          "description": "Provide compatible connections for switches, feedback signals or service indicators.",
+          "inputs": "Signal levels, connector access and normal/fault states.",
+          "deliverables": "Accessory/interface circuit and mechanical arrangement.",
+          "acceptance": "Exercise electrical states and connection faults.",
+          "considerations": "A status indicator is not evidence that a process is safe or complete."
+        }
+      ]
+    },
+    {
+      "id": "oem-production",
+      "title": "OEM productisation and manufacturing transfer",
+      "intro": "Turn an assessed design into a traceable configuration that can be built and tested.",
+      "imageKey": "smt-production",
+      "imageAlt": "SMT pick-and-place machines on an electronics assembly line",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Enclosure and branding adaptations",
+          "description": "Scope label, colour, connector placement or mounting changes on an assessed platform.",
+          "inputs": "Brand files, dimensional constraints and retained product functions.",
+          "deliverables": "A controlled mechanical and identification revision.",
+          "acceptance": "Check assembly fit, markings and any affected performance tests.",
+          "considerations": "An apparently cosmetic change can still affect antennas, sealing or approvals."
+        },
+        {
+          "title": "Production test provisions",
+          "description": "Design access for programming, calibration and agreed end-of-line checks.",
+          "inputs": "Production flow, test limits, cycle needs and traceability requirements.",
+          "deliverables": "Test points, fixture interfaces and manufacturing test documentation.",
+          "acceptance": "Run representative units and defined fault cases through the proposed checks.",
+          "considerations": "Test coverage and calibration responsibilities are explicitly allocated."
+        },
+        {
+          "title": "Design and supply handover",
+          "description": "Document the parts, revisions and files required for the agreed production route.",
+          "inputs": "Manufacturing route, approved components and ownership requirements.",
+          "deliverables": "Contracted CAD/manufacturing files, bill of materials and revision records.",
+          "acceptance": "Review release completeness and build a controlled pilot configuration.",
+          "considerations": "Tooling, file ownership, substitutions and lifecycle support follow written terms."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Engineering scope.\nDefined by the project.",
+  "scopeIntro": "These items describe the development agreement, rather than universal product specifications.",
+  "rows": [
+    [
+      "Service type",
+      "Custom device hardware design or agreed adaptation"
+    ],
+    [
+      "Measurement requirements",
+      "Quantities, ranges, accuracy conditions and calibration needs"
+    ],
+    [
+      "Electrical architecture",
+      "Power input, sensing interfaces, processor and external connections"
+    ],
+    [
+      "Communication",
+      "Selected technology, regional requirements and integration scope"
+    ],
+    [
+      "Mechanical scope",
+      "Enclosure, mounting, connectors and installation constraints"
+    ],
+    [
+      "Prototype stage",
+      "Quantities, build scope and functional acceptance tests"
+    ],
+    [
+      "Qualification",
+      "Agreed environmental, EMC or other verification; external assessment identified separately"
+    ],
+    [
+      "Certification",
+      "Target market and applicable standards reviewed; no certificate implied before evidence"
+    ],
+    [
+      "Engineering deliverables",
+      "Design files, bill of materials, assembly and test documents as contracted"
+    ],
+    [
+      "Production and rights",
+      "Tooling, manufacturing, source files, ownership and support agreed in writing"
+    ]
+  ],
+  "handoverTitle": "From feasibility review.\nTo a documented baseline.",
+  "handoverIntro": "Define the design evidence and the next production decision at each stage.",
+  "handover": [
+    {
+      "title": "Requirements and feasibility",
+      "text": "Review constraints, interfaces and technical risks before confirming the development scope."
+    },
+    {
+      "title": "Design and prototype",
+      "text": "Develop the agreed design and evaluate prototypes against the documented acceptance conditions."
+    },
+    {
+      "title": "Handover or production transition",
+      "text": "Deliver the contracted engineering files and test information. Agree any subsequent qualification, tooling or manufacturing work separately."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What can be customised on an existing Hitelecom platform?",
+      "a": "Start with the required sensing channels, interfaces, power, antenna, enclosure and mounting changes. An assessment identifies the reusable baseline, changes to electronics or mechanics, and verification that the modification affects."
+    },
+    {
+      "q": "When is a new hardware design preferable to an adaptation?",
+      "a": "A new design may be appropriate when the measurement chain, interfaces, power or mechanical constraints cannot be met by a suitable baseline. Architecture, development effort and production requirements are reviewed before choosing the route."
+    },
+    {
+      "q": "How should measurement accuracy be specified?",
+      "a": "State the measured quantity, working range, reference conditions, allowable error and response requirements. Consider the sensing element, signal chain, probe, installation and calibration together; digital resolution is not the same as installed accuracy."
+    },
+    {
+      "q": "Can electronics be used at the probe measurement temperature?",
+      "a": "Not automatically. Probe/medium temperature and electronics ambient limits are separate. Cable, seals, mounting and thermal isolation must also suit the installation, and the supplied assembly defines the applicable limits."
+    },
+    {
+      "q": "Can an outdoor or immersion protection rating be requested?",
+      "a": "Yes, as an engineering requirement with defined exposure and test conditions. The complete assembled device, connectors and cable entries must support the claimed rating; an enclosure component rating alone is insufficient."
+    },
+    {
+      "q": "Can the design use cellular, NB-IoT or LoRa connectivity?",
+      "a": "The chosen technology is assessed against the intended market, available network, antenna arrangement and power budget. Exact bands, module versions, firmware and receiving path are specified. LoRa does not automatically mean LoRaWAN."
+    },
+    {
+      "q": "Does a pre-certified radio module approve the finished product?",
+      "a": "No blanket approval is implied. Finished-product integration, antennas, power, enclosure and target jurisdiction can introduce additional assessment requirements. Applicable tests and certification responsibilities are agreed for the final configuration."
+    },
+    {
+      "q": "Are hazardous-area designs and certificates included?",
+      "a": "Only an explicitly assessed scope can address the required market, area classification and protection concept. The product must not be represented as approved until suitable documentation covers the exact supplied configuration and installation conditions."
+    },
+    {
+      "q": "Does a functional prototype mean the product is production-ready?",
+      "a": "A prototype demonstrates the agreed functions. Production release can also require design verification, supply review, manufacturing tests, tooling, qualification and approval evidence. These are distinct milestones with separate acceptance criteria."
+    },
+    {
+      "q": "Are firmware, cloud and application development included?",
+      "a": "They are included only where stated in the project scope. Hardware interfaces must be coordinated with firmware behaviour and the receiving platform, but the engineering deliverables and responsibilities remain explicit."
+    },
+    {
+      "q": "Who receives the CAD files, bill of materials and tooling?",
+      "a": "File delivery, access rights, design ownership, tooling ownership and permitted reuse are defined in the agreement. Third-party components and intellectual property remain subject to their licences and commercial conditions."
+    },
+    {
+      "q": "Why is there no standard datasheet, price or development lead time?",
+      "a": "This is a project-specific service. The requirements, prototype quantities, verification, tooling, approvals and production route determine the quotation and schedule. A product datasheet follows a defined design and supported specification."
+    }
+  ],
+  "enquiryIntro": "Share the device functions, installation conditions and intended markets. Include interface requirements, estimated quantities and any existing design materials for feasibility review.",
+  "enquiryFields": [
+    {
+      "label": "Device and measurements",
+      "placeholder": "Required quantities, ranges, accuracy and functions"
+    },
+    {
+      "label": "Installation and power",
+      "placeholder": "Location, supply, mounting and environmental conditions"
+    },
+    {
+      "label": "Interfaces and markets",
+      "placeholder": "Communication, process connections and target countries"
+    },
+    {
+      "label": "Delivery requirements",
+      "placeholder": "Prototype quantity, production plan, design rights and verification"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-hardware-customization.webp",
+  "imageWidth": 500,
+  "imageHeight": 1328
+}

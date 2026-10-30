@@ -15,7 +15,7 @@ import { breadcrumbLd, itemListLd, SITE_URL } from '../../../../../utils/jsonld'
 import type { GetStaticPaths } from 'astro';
 
 export const getStaticPaths: GetStaticPaths = () =>
-  Object.keys(productContent.zh.lists).filter((cid) => !['257', '274', '275'].includes(cid)).map((cid) => ({ params: { cid } }));
+  Object.keys(productContent.zh.lists).filter((cid) => !['257', '274', '275', '256', '278', '279'].includes(cid)).map((cid) => ({ params: { cid } }));
 
 const { cid } = Astro.params;
 const pc = await getMergedProducts('zh');

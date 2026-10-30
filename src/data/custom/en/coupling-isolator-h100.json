@@ -1,0 +1,604 @@
+{
+  "id": "coupling-isolator-h100",
+  "slug": "coupling-isolator-h100",
+  "kind": "Product",
+  "name": "H100 Signal Coupling Isolator",
+  "title": "H100 Signal Coupling Isolator | 2.4 / 5.8 GHz | Hitelecom",
+  "metaDescription": "H100 RF signal coupling for selected 2.4 GHz / 5.8 GHz equipment assemblies. Specify radio interfaces, installed RF loss, mounting and applicable hazardous-area documentation.",
+  "heroHeading": "H100 signal\ncoupling isolator.",
+  "heroValue": "An RF interface.\nWithin your equipment design.",
+  "heroDescription": "The Hitelecom H100 is a signal coupling accessory for selected 2.4 GHz or 5.8 GHz RF paths. Use the connected radio, antenna, cable assembly and installation drawing to define the required component configuration. Applications range from packaged monitoring equipment to process-plant retrofits, with RF performance verified for the complete path. Hazardous-area use requires the applicable certificate, marking and installation conditions for the exact supplied assembly.",
+  "caption": "H100 Signal Coupling Isolator",
+  "imageAlt": "H100 Signal Coupling Isolator",
+  "proof": [
+    {
+      "value": "2.4 / 5.8 GHz",
+      "label": "Published signal bands",
+      "note": "Select the required band and verify RF compatibility"
+    },
+    {
+      "value": "RF accessory",
+      "label": "Defined system role",
+      "note": "Coupling path, rather than sensing or data processing"
+    },
+    {
+      "value": "Project review",
+      "label": "Installation suitability",
+      "note": "Interface and hazardous-area documentation checked per assembly"
+    }
+  ],
+  "featureTitle": "Specify the connection.\nVerify the installed RF path.",
+  "featureIntro": "An accessory belongs in a complete interface specification: the operating band, connected equipment, RF budget, mechanical arrangement and applicable installation documentation. The H100 provides no sensing, protocol conversion or cellular connection of its own.",
+  "features": [
+    {
+      "title": "Selected 2.4 GHz / 5.8 GHz paths",
+      "text": "Start with the actual radio operating frequencies. Identify the required version and usable bandwidth rather than assuming that every frequency between the two published bands is supported."
+    },
+    {
+      "title": "Defined equipment interfaces",
+      "text": "Specify connector series, gender, polarity, mating arrangement and cable construction. Include drawings of both connected ends so the component can be assessed as part of the assembly."
+    },
+    {
+      "title": "RF loss and matching criteria",
+      "text": "Set acceptance requirements for insertion loss and port matching over the operating band, together with permitted RF input power. Numerical H100 values require the corresponding technical record."
+    },
+    {
+      "title": "Antenna-path assessment",
+      "text": "Account for cables, connectors and antenna gain in the system design. Any applicable RF-power restrictions belong to the complete installation, not only to the coupling accessory."
+    },
+    {
+      "title": "Environmental assembly review",
+      "text": "IP68 is the published housing reference. Define immersion conditions, connector sealing, cable support and exposure for the installed version; a housing rating does not describe every joint."
+    },
+    {
+      "title": "Mechanical integration",
+      "text": "Published mounting options include lugs, pole clamps and slotted arrangements. Select the supplied hardware around connector access, cable bend radius, service clearance and mechanical loading."
+    },
+    {
+      "title": "Hazardous-area documentation",
+      "text": "Match the exact certificate, marking and instructions to the jurisdiction, gas or dust group, area classification and temperature requirements. The product name alone does not establish intrinsic safety or approval."
+    },
+    {
+      "title": "Repeatable configuration records",
+      "text": "Record the part revision, radio and antenna references, cable drawing and verification method. These details give prototype, installation and replacement work a common acceptance baseline."
+    }
+  ],
+  "planningTitle": "Define both ends.\nAssess the complete assembly.",
+  "planningIntro": "Bring the RF interface drawing and installation requirements into the same selection review. Keep component performance, system approval and communications coverage as separate engineering questions.",
+  "planning": [
+    {
+      "title": "Map the RF chain",
+      "text": "Identify the radio output, coupling component, cables, intermediate connectors and antenna. Record band, permitted input power, matching requirements and the loss allowed between the equipment and antenna.",
+      "brief": "Radio reference · Operating band · Antenna · Ports · Cable drawing · RF budget"
+    },
+    {
+      "title": "Review the installed environment",
+      "text": "Describe the mounting position, exposure, ambient limits, chemical contact and maintenance arrangements. For a classified area, supply the required approval basis and the complete equipment arrangement.",
+      "brief": "Location · Exposure · Assembly limits · Area classification · Applicable documentation"
+    },
+    {
+      "title": "Set an acceptance baseline",
+      "text": "Agree which RF measurements and installed-equipment checks demonstrate compatibility. Keep traceable settings, cable references and results so any replacement or design change can be compared with the accepted configuration.",
+      "brief": "Measurement method · Acceptance limits · Installed check · Revision record"
+    }
+  ],
+  "applicationsTitle": "Specific RF interfaces.\nAcross industrial equipment projects.",
+  "applicationsIntro": "Explore 36 equipment and retrofit duties in which an RF coupling component may be required. Each starts with compatible selected-band radio equipment; H100 suitability follows the actual interface and installation assessment. These are engineering use cases, not claims of completed customer installations.",
+  "groups": [
+    {
+      "id": "rotating-equipment",
+      "title": "Rotating-equipment monitoring",
+      "intro": "Define an RF interface for compatible equipment serving pumps, compressors and other rotating assets.",
+      "imageKey": "compressed-air",
+      "imageAlt": "Industrial compressor and compressed-air receiver",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Pump condition-monitoring assemblies",
+          "description": "Assess the coupling path between a selected monitoring radio and its antenna on a pump package.",
+          "inputs": "Radio, band and antenna position.",
+          "deliverables": "Component and cable interface schedule.",
+          "acceptance": "RF-path results meet agreed limits.",
+          "considerations": "Keep coupling performance separate from vibration sensing and diagnostics."
+        },
+        {
+          "title": "Compressor monitoring equipment",
+          "description": "Integrate the required RF component around compressor-package cabinets and accessible antenna connections.",
+          "inputs": "Cabinet drawing and RF budget.",
+          "deliverables": "Port arrangement and mounting proposal.",
+          "acceptance": "Installed path checked with selected equipment.",
+          "considerations": "Vibration, heat and classified-area requirements apply to the whole assembly."
+        },
+        {
+          "title": "Seal-monitoring equipment interfaces",
+          "description": "Evaluate an accessory requirement for compatible radio equipment associated with a seal-monitoring system.",
+          "inputs": "Equipment references and interface constraints.",
+          "deliverables": "Documented coupling and cable configuration.",
+          "acceptance": "Matching and loss verified as specified.",
+          "considerations": "The H100 does not measure seal condition or infer equipment health."
+        },
+        {
+          "title": "Fan and auxiliary-drive packages",
+          "description": "Review the RF path where a machine package uses an external antenna or revised connector arrangement.",
+          "inputs": "Package layout and radio reference.",
+          "deliverables": "Defined part and connector schedule.",
+          "acceptance": "Equipment link checked in installed position.",
+          "considerations": "Account for metal obstructions, cable support and service access."
+        }
+      ]
+    },
+    {
+      "id": "process-skids",
+      "title": "Process skids and modular plants",
+      "intro": "Treat the coupling component as an equipment interface within a repeatable skid design.",
+      "imageKey": "process-charging",
+      "imageAlt": "Closed process vessel with charging hose and containment tray",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Filtration and separation skids",
+          "description": "Specify a candidate coupling component for the monitoring radio fitted to a filtration package.",
+          "inputs": "Radio band and enclosure arrangement.",
+          "deliverables": "RF interface and cable drawing.",
+          "acceptance": "Bench checks followed by installed-equipment verification.",
+          "considerations": "Do not infer compatibility from the process skid type alone."
+        },
+        {
+          "title": "Mixing and blending modules",
+          "description": "Review the RF connection on a modular mixer with separately specified sensing and radio equipment.",
+          "inputs": "Connected devices and available mounting space.",
+          "deliverables": "Part, port and support arrangement.",
+          "acceptance": "Agreed RF limits met across operating frequencies.",
+          "considerations": "Media exposure and cleaning requirements concern the assembled connectors too."
+        },
+        {
+          "title": "Dosing and metering packages",
+          "description": "Assess the antenna path of a connected dosing package where the design calls for signal coupling.",
+          "inputs": "Equipment reference and cable route.",
+          "deliverables": "Installation-specific interface schedule.",
+          "acceptance": "RF check recorded before equipment handover.",
+          "considerations": "Dosing control and process measurement are functions of other equipment."
+        },
+        {
+          "title": "Thermal-service skids",
+          "description": "Review coupling interfaces on monitoring packages serving heating or cooling equipment.",
+          "inputs": "Radio specification and local thermal exposure.",
+          "deliverables": "Mounting and cable configuration.",
+          "acceptance": "Component and connected-equipment limits documented.",
+          "considerations": "Process temperature does not establish accessory ambient suitability."
+        }
+      ]
+    },
+    {
+      "id": "storage-transfer",
+      "title": "Storage tanks and transfer facilities",
+      "intro": "Coordinate tank-area RF interfaces with the equipment layout and site installation requirements.",
+      "imageKey": "tank-manifold",
+      "imageAlt": "Storage tank manifold with valves and access platform",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Tank-side monitoring cabinets",
+          "description": "Assess the coupling path between compatible cabinet radio equipment and its selected antenna.",
+          "inputs": "Cabinet, antenna and area-classification drawings.",
+          "deliverables": "Port layout and accessory schedule.",
+          "acceptance": "Installed RF path compared with acceptance baseline.",
+          "considerations": "Applicable documentation must cover the proposed assembly and location."
+        },
+        {
+          "title": "Loading-bay monitoring equipment",
+          "description": "Specify the RF accessory requirement for monitoring equipment near a liquid-transfer loading point.",
+          "inputs": "Operating band and connected hardware.",
+          "deliverables": "RF connection and mounting detail.",
+          "acceptance": "Connector fit and agreed RF measurements accepted.",
+          "considerations": "Protect cables from vehicle movement and loading operations."
+        },
+        {
+          "title": "Transfer-pump equipment packages",
+          "description": "Review the RF interface serving a packaged transfer-pump monitoring system.",
+          "inputs": "Radio, cable length and antenna arrangement.",
+          "deliverables": "Coupling version and cable assembly list.",
+          "acceptance": "Loss and equipment-link checks recorded.",
+          "considerations": "The accessory is not a pump control or emergency-stop device."
+        },
+        {
+          "title": "Terminal metering assemblies",
+          "description": "Assess an RF component within a separately specified remote metering equipment assembly.",
+          "inputs": "Metering-radio interface and RF budget.",
+          "deliverables": "Documented antenna-path configuration.",
+          "acceptance": "Equipment-level communication check completed.",
+          "considerations": "Meter accuracy and transaction functions are outside the coupling accessory."
+        }
+      ]
+    },
+    {
+      "id": "oil-gas",
+      "title": "Oil and gas field facilities",
+      "intro": "Assess selected-band radio paths around the actual wellsite, gathering or compression equipment.",
+      "imageKey": "oil-gas",
+      "imageAlt": "Oil pumpjack in an open landscape",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Wellsite instrument enclosures",
+          "description": "Review the coupling requirement between a wellsite radio enclosure and its antenna system.",
+          "inputs": "Equipment marking, band and enclosure drawing.",
+          "deliverables": "Configuration and applicable-document list.",
+          "acceptance": "RF and installation requirements checked together.",
+          "considerations": "Site classification and supply configuration determine suitability."
+        },
+        {
+          "title": "Gathering-station monitoring packages",
+          "description": "Assess RF compatibility when monitoring equipment is combined with a gathering-station antenna path.",
+          "inputs": "Connected radios and cable topology.",
+          "deliverables": "Coupling and cable interface schedule.",
+          "acceptance": "Measured path performance meets agreed criteria.",
+          "considerations": "Do not assume wide-area coverage from component selection."
+        },
+        {
+          "title": "Gas-compression package radios",
+          "description": "Define the component interface for compatible radio equipment within a compression package.",
+          "inputs": "Package layout and required RF limits.",
+          "deliverables": "Mounting, connector and cable arrangement.",
+          "acceptance": "Prototype and installed-equipment checks recorded.",
+          "considerations": "Approval, vibration and temperature conditions are assembly-specific."
+        },
+        {
+          "title": "Remote valve-station equipment",
+          "description": "Review an RF coupling requirement for a station monitoring cabinet and antenna arrangement.",
+          "inputs": "Radio reference, location and service constraints.",
+          "deliverables": "Installation drawing and component identification.",
+          "acceptance": "Selected equipment link verified at the site.",
+          "considerations": "Valve actuation and any safety functions need separate engineering."
+        }
+      ]
+    },
+    {
+      "id": "chemical-production",
+      "title": "Chemical and solvent production",
+      "intro": "Relate the RF component to specific equipment connections, rather than to a blanket hazardous-area promise.",
+      "imageKey": "chemical-transfer",
+      "imageAlt": "Chemical transfer pump and closed metal pipework with a diaphragm instrument branch, process tanks behind.",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Resin and batch-process equipment",
+          "description": "Assess the coupling interface of compatible monitoring radios around batch-process equipment.",
+          "inputs": "RF interfaces and classified-area requirements.",
+          "deliverables": "Part and installation configuration.",
+          "acceptance": "RF performance and required documentation accepted.",
+          "considerations": "Chemical exposure and assembly approval remain project-specific."
+        },
+        {
+          "title": "Coating and paint-line equipment",
+          "description": "Review a coupling requirement on connected equipment serving a coating or paint process.",
+          "inputs": "Selected radio and antenna connection.",
+          "deliverables": "RF component and cable arrangement.",
+          "acceptance": "Connection fit and agreed RF checks completed.",
+          "considerations": "The RF accessory does not assess solvent concentration or ventilation."
+        },
+        {
+          "title": "Solvent-recovery packages",
+          "description": "Define the antenna-path interface for a separately specified solvent-recovery monitoring package.",
+          "inputs": "Enclosure layout and operating band.",
+          "deliverables": "RF and mechanical interface drawing.",
+          "acceptance": "Installed path checked against the accepted configuration.",
+          "considerations": "Temperature, sealing and permitted equipment use need documented limits."
+        },
+        {
+          "title": "Batch-dispensing equipment",
+          "description": "Evaluate a coupling component required by a connected dispensing equipment design.",
+          "inputs": "Radio, connector and service requirements.",
+          "deliverables": "Configuration and replacement reference.",
+          "acceptance": "Equipment-level communication acceptance completed.",
+          "considerations": "Dispensing accuracy and process interlocks are separate system functions."
+        }
+      ]
+    },
+    {
+      "id": "utilities-treatment",
+      "title": "Utilities and treatment equipment",
+      "intro": "Assess RF paths in utility packages with the same interface discipline as process equipment.",
+      "imageKey": "treatment-manifold",
+      "imageAlt": "Water-treatment filter vessels and process pipework",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Chemical-dosing monitoring cabinets",
+          "description": "Review the connection between a selected cabinet radio and its antenna near dosing equipment.",
+          "inputs": "Band, cable path and chemical exposure.",
+          "deliverables": "Component, support and sealing schedule.",
+          "acceptance": "Assembled interface checked before handover.",
+          "considerations": "Keep any local classified-area requirements explicit."
+        },
+        {
+          "title": "Gas-collection utility equipment",
+          "description": "Assess an RF interface requirement around monitoring equipment serving a gas-collection utility.",
+          "inputs": "Equipment marking and installation drawing.",
+          "deliverables": "Assembly-specific RF connection proposal.",
+          "acceptance": "Required documentation and RF checks accepted.",
+          "considerations": "Gas or dust suitability cannot be inferred from the utility description."
+        },
+        {
+          "title": "Industrial-water pump stations",
+          "description": "Review antenna-path coupling where compatible station equipment requires the accessory.",
+          "inputs": "Radio and antenna references.",
+          "deliverables": "Port and cable arrangement.",
+          "acceptance": "Installed equipment link checked under agreed conditions.",
+          "considerations": "Humidity and washdown exposure apply to cable joints and connectors."
+        },
+        {
+          "title": "Compressed-air monitoring packages",
+          "description": "Define an RF component interface within a connected compressor or air-treatment package.",
+          "inputs": "RF budget and cabinet layout.",
+          "deliverables": "Coupling configuration and mounting detail.",
+          "acceptance": "Loss and fit measurements recorded.",
+          "considerations": "Air-pressure measurement and compressor controls remain separate."
+        }
+      ]
+    },
+    {
+      "id": "mining-equipment",
+      "title": "Mining and materials equipment",
+      "intro": "Distinguish surface processing from underground mining approval requirements.",
+      "imageKey": "mining",
+      "imageAlt": "Open-pit quarry and rock benches",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Surface pumping equipment",
+          "description": "Assess the coupling path for compatible radios on surface dewatering or service-pump packages.",
+          "inputs": "Equipment references and exposure.",
+          "deliverables": "Component and installation schedule.",
+          "acceptance": "Agreed path and equipment checks completed.",
+          "considerations": "Site dust, moisture and area classification govern selection."
+        },
+        {
+          "title": "Materials-processing equipment",
+          "description": "Review an RF component requirement on monitoring assemblies around screening or handling equipment.",
+          "inputs": "Band, antenna location and vibration conditions.",
+          "deliverables": "Supported connector and cable arrangement.",
+          "acceptance": "Installed fit and RF performance accepted.",
+          "considerations": "No dust-group approval is implied by this application."
+        },
+        {
+          "title": "Underground equipment assembly assessment",
+          "description": "Review a candidate RF interface only where the applicable mining documentation can be demonstrated.",
+          "inputs": "Required approval scheme and exact assembly.",
+          "deliverables": "Documented compatibility assessment.",
+          "acceptance": "Approval coverage established before equipment selection.",
+          "considerations": "General industrial or gas-area documentation is insufficient for mining approval."
+        },
+        {
+          "title": "Mining-equipment antenna interfaces",
+          "description": "Define the coupling connection for a documented equipment-and-antenna combination.",
+          "inputs": "Approved drawings and permitted RF conditions.",
+          "deliverables": "Controlled part and cable schedule.",
+          "acceptance": "Verification follows applicable equipment instructions.",
+          "considerations": "Installation location and grounding requirements follow the actual documentation."
+        }
+      ]
+    },
+    {
+      "id": "equipment-oem",
+      "title": "Equipment OEM integration",
+      "intro": "Use a controlled RF interface to support defined equipment variants and repeat orders.",
+      "imageKey": "electronics-workbench",
+      "imageAlt": "Technician working on a populated circuit board at an electronics workbench",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Embedded radio equipment designs",
+          "description": "Assess a coupling component within an OEM monitoring-device RF architecture.",
+          "inputs": "Radio reference and interface specification.",
+          "deliverables": "Selected part and port definition.",
+          "acceptance": "Agreed RF measurements on the prototype.",
+          "considerations": "No protocol or radio-frequency extension is assumed."
+        },
+        {
+          "title": "Enclosure and antenna variants",
+          "description": "Compare candidate coupling arrangements for equipment supplied in different enclosure layouts.",
+          "inputs": "Variant drawings and antenna references.",
+          "deliverables": "Variant-specific connection matrix.",
+          "acceptance": "Each supplied arrangement checked against RF limits.",
+          "considerations": "A verified variant does not automatically approve other arrangements."
+        },
+        {
+          "title": "Supplier and component substitutions",
+          "description": "Review an accessory change against an existing equipment interface baseline.",
+          "inputs": "Old and proposed parts with RF data.",
+          "deliverables": "Change assessment and revised configuration record.",
+          "acceptance": "Affected RF and installation checks repeated.",
+          "considerations": "Any certification impact requires the responsible equipment review."
+        },
+        {
+          "title": "Factory acceptance fixtures",
+          "description": "Define a repeatable setup for checking supplied RF assemblies during equipment production.",
+          "inputs": "Test band, port references and limits.",
+          "deliverables": "Agreed fixture and verification procedure.",
+          "acceptance": "Traceable results meet project acceptance criteria.",
+          "considerations": "Test capability and production scope are agreed separately."
+        }
+      ]
+    },
+    {
+      "id": "plant-retrofit",
+      "title": "Plant retrofit and equipment renewal",
+      "intro": "Assess the changed RF path when installation details or connected equipment are altered.",
+      "imageKey": "gas-regulation",
+      "imageAlt": "Outdoor fuel-gas regulation skid with diaphragm regulators, yellow pipework and small instrument branches.",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Antenna relocation projects",
+          "description": "Review the coupling and cable requirements when an antenna moves to a new mounting point.",
+          "inputs": "Existing baseline and proposed route.",
+          "deliverables": "Updated RF budget and cable drawing.",
+          "acceptance": "Installed path and equipment link rechecked.",
+          "considerations": "Relocation can change cable loss, exposure and approval conditions."
+        },
+        {
+          "title": "Radio equipment replacement",
+          "description": "Assess whether a revised radio remains compatible with the specified coupling arrangement.",
+          "inputs": "Old and new radio specifications.",
+          "deliverables": "Revised interface and permitted-input record.",
+          "acceptance": "New configuration meets agreed RF criteria.",
+          "considerations": "A matching connector does not establish electrical compatibility."
+        },
+        {
+          "title": "Cable and connector renewal",
+          "description": "Review replacement cable assemblies without losing the accepted RF interface definition.",
+          "inputs": "Cable type, length and connector details.",
+          "deliverables": "Replacement specification and part identification.",
+          "acceptance": "Measured loss and matching compared with the baseline.",
+          "considerations": "Sealing, strain relief and installation instructions still apply."
+        },
+        {
+          "title": "Maintenance component exchange",
+          "description": "Define the checks required after replacing a coupling component in an existing equipment assembly.",
+          "inputs": "Accepted part revision and maintenance record.",
+          "deliverables": "Replacement and verification checklist.",
+          "acceptance": "Affected checks recorded before return to service.",
+          "considerations": "No live-disconnection or hot-swap permission is asserted."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Published product references.\nAn order-specific RF interface.",
+  "scopeIntro": "The published bands and housing references support initial selection. The supplied configuration and its technical documentation define the usable RF, environmental and installation limits.",
+  "rows": [
+    [
+      "Product reference",
+      "H100 signal coupling isolator"
+    ],
+    [
+      "System function",
+      "High-frequency signal coupling; not a sensor, gateway, repeater or protocol converter"
+    ],
+    [
+      "Published signal bands",
+      "2.4 GHz / 5.8 GHz; selected version and compatibility to be confirmed"
+    ],
+    [
+      "RF interfaces",
+      "Connector type, impedance and cable assembly to be specified"
+    ],
+    [
+      "RF performance",
+      "Bandwidth, insertion loss, return loss or VSWR and permitted input power to be confirmed"
+    ],
+    [
+      "Housing protection",
+      "Published IP68 reference; immersion conditions and assembled connector sealing to be confirmed"
+    ],
+    [
+      "Published operating-temperature reference",
+      "-40°C to +125°C; confirm the supplied component and complete assembly limits"
+    ],
+    [
+      "Published storage-temperature reference",
+      "-40°C to +125°C; confirm the supplied configuration and storage conditions"
+    ],
+    [
+      "Mounting options",
+      "Mounting lugs, pole clamp or slotted mounting, depending on configuration"
+    ],
+    [
+      "Hazardous-area suitability",
+      "Applicable certificate, marking and installation conditions required for the exact configuration"
+    ],
+    [
+      "Installation documentation",
+      "Mechanical arrangement, connected equipment and verification scope agreed for the project"
+    ]
+  ],
+  "handoverTitle": "A documented component.\nA verified equipment interface.",
+  "handoverIntro": "Keep component identity, interface measurements and installation records together. The sensing and communications functions of the wider system are accepted against their own specifications.",
+  "handover": [
+    {
+      "title": "Freeze the interface schedule",
+      "text": "Record component version, operating band, connected equipment, ports, cable assemblies, mounting and relevant environmental limits. List the documents that govern the supplied configuration."
+    },
+    {
+      "title": "Verify the RF path",
+      "text": "Use the agreed setup and operating frequencies to check loss and matching where specified. Compare the installed equipment link with its project acceptance criteria without attributing system range to the coupler."
+    },
+    {
+      "title": "Handover the installation record",
+      "text": "Provide the agreed drawing, identification and verification results. Include applicable certification and installation instructions for classified-area work, plus the conditions under which a replacement requires re-evaluation."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What role does the H100 perform?",
+      "a": "It is a signal coupling accessory within a selected 2.4 GHz or 5.8 GHz RF path. The equipment specification identifies the radio, antenna, cable interfaces and required component performance."
+    },
+    {
+      "q": "Is the H100 a gateway, repeater or protocol converter?",
+      "a": "No. It does not collect measurements, amplify a radio link, provide LTE connectivity or send MQTT records. These are functions of separately specified connected equipment."
+    },
+    {
+      "q": "Does it support every frequency between 2.4 GHz and 5.8 GHz?",
+      "a": "That is not established by the published band references. Obtain the usable passband and RF performance record for the required version and operating frequencies."
+    },
+    {
+      "q": "Is it a galvanic isolator, directional coupler or flameproof connector transit?",
+      "a": "The public H100 reference does not establish its internal topology or any of those specific protection functions. Request the product technical documentation; these component types and their approval conditions must not be treated as interchangeable."
+    },
+    {
+      "q": "Does fitting the H100 make a radio system intrinsically safe?",
+      "a": "No such blanket claim is made. Any protection function requires the applicable certificate, marking and installation instructions for the exact configuration, together with an assessment of the complete equipment assembly."
+    },
+    {
+      "q": "Which certification should be requested for a classified area?",
+      "a": "Specify the target jurisdiction, gas or dust group, area classification, temperature requirements and equipment arrangement. Obtain the corresponding certificate and installation conditions for the exact supplied configuration before selection; certification availability must be established for the proposed equipment duty."
+    },
+    {
+      "q": "How should insertion loss and port matching be specified?",
+      "a": "State the operating band, reference impedance, cable and connector arrangement, permitted input power and test method. Agree acceptance values and compare measurements with the technical record for the supplied version."
+    },
+    {
+      "q": "Will it extend wireless range or improve coverage?",
+      "a": "Range is a system result involving the radio, antenna, installation and environment. The coupling component must fit the RF budget; it is not specified as a booster or a guaranteed coverage improvement."
+    },
+    {
+      "q": "Does the IP68 reference apply to connected cables and antennas?",
+      "a": "The published reference concerns the housing. Confirm immersion depth and duration, sealing and ratings for the supplied connector and cable assembly, with the connected equipment assessed separately."
+    },
+    {
+      "q": "Which temperature rating applies to the installed equipment?",
+      "a": "The published H100 operating and storage reference is -40°C to +125°C. Confirm the supplied component limits and connected cable, antenna and equipment limits before using this reference in the assembly design."
+    },
+    {
+      "q": "Can components be connected or exchanged while powered?",
+      "a": "Do not assume live connection, disconnection or hot swapping is permitted. Follow the exact equipment documentation and applicable site procedure for the supplied installation."
+    },
+    {
+      "q": "What is needed to assess an H100 configuration?",
+      "a": "Provide radio and antenna references, operating band, RF budget, ports, cable lengths, mechanical layout, exposure, required approvals and quantity. Include an existing acceptance baseline for retrofit or replacement work."
+    }
+  ],
+  "enquiryIntro": "Share the radio and antenna references, interface drawing, RF requirements and installation location. Hitelecom can then assess the H100 configuration against a specific equipment duty.",
+  "enquiryFields": [
+    {
+      "label": "Connected equipment and signal band",
+      "placeholder": "Radio references, 2.4 GHz or 5.8 GHz, antenna and cable arrangement"
+    },
+    {
+      "label": "RF and mechanical interfaces",
+      "placeholder": "Connector types, impedance, permitted power and mounting drawing"
+    },
+    {
+      "label": "Environment and area classification",
+      "placeholder": "Target market, required approval, zone or division and exposure"
+    },
+    {
+      "label": "Acceptance and quantity",
+      "placeholder": "RF checks, required documentation, prototype and production quantity"
+    }
+  ],
+  "datasheet": "/downloads/coupling-isolator-h100-datasheet.pdf",
+  "image": "original-hero-coupling-isolator-h100.webp",
+  "imageWidth": 627,
+  "imageHeight": 635
+}

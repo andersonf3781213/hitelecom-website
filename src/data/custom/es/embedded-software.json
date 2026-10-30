@@ -1,0 +1,630 @@
+{
+  "id": "embedded-software",
+  "slug": "embedded-software-development",
+  "kind": "Service",
+  "name": "Desarrollo de software embebido",
+  "title": "Desarrollo de firmware embebido para dispositivos IoT | Hitelecom",
+  "metaDescription": "Firmware IoT a medida para adquisición, envío de datos, gestión energética y recuperación en campo. Explore aplicaciones por dispositivo, requisitos de interfaz y pruebas de aceptación medibles.",
+  "heroHeading": "Desarrollo de\nsoftware embebido.",
+  "heroValue": "De las entradas de sensores.\nA un comportamiento fiable del dispositivo.",
+  "heroDescription": "Convierta un requisito de monitorización en firmware integrable, comprobable y mantenible sobre el hardware seleccionado. Hitelecom define adquisición, estados, comunicaciones y diagnósticos según la medida y el despliegue. Determine qué ocurre cuando un sensor no está disponible, se interrumpe una conexión o vuelve la alimentación. La configuración local, las actualizaciones remotas y la seguridad se diseñan cuando se requieren; su implementación depende de placa, memoria y sistema receptor.",
+  "caption": "Desarrollo de software embebido",
+  "imageAlt": "Desarrollo de software embebido",
+  "proof": [
+    {
+      "value": "Firmware",
+      "label": "Comportamiento definido del dispositivo",
+      "note": "Documente estados, interfaces y tiempos"
+    },
+    {
+      "value": "Integración",
+      "label": "Hardware y vías de datos",
+      "note": "Confirme componentes, protocolos y cargas útiles"
+    },
+    {
+      "value": "Verificación",
+      "label": "Pruebas de aceptación acordadas",
+      "note": "Cubra el funcionamiento previsto y los fallos pertinentes"
+    }
+  ],
+  "featureTitle": "Comportamiento del dispositivo.\nEspecificado para operar en campo.",
+  "featureIntro": "Un proyecto embebido necesita más que una trama válida. Especifique tiempos, transiciones de estado, datos conservados y recuperación que hacen útil al dispositivo en campo.",
+  "features": [
+    {
+      "title": "Adquisición y validez de datos",
+      "text": "Implemente controladores, estabilización, programas de muestreo, unidades y marcas temporales. Distinga una lectura válida del calentamiento, dato ausente, entrada fuera de rango o fallo del sensor."
+    },
+    {
+      "title": "Lógica de eventos y envío",
+      "text": "Separe medida, evaluación de eventos y envío periódico. Defina histéresis, persistencia, prioridad y repetición de notificaciones según el flujo operativo."
+    },
+    {
+      "title": "Ingeniería de estados de alimentación",
+      "text": "Coordine reposo del MCU, alimentación de periféricos y actividad del módem. Mida corriente por estado y evalúe el ciclo de trabajo en la placa real."
+    },
+    {
+      "title": "Ciclo de vida de las comunicaciones",
+      "text": "Especifique registro en red, gestión de sesiones, reintentos limitados y reconexión. Acuerde versiones de carga útil, unidades, identidad y vía receptora compatible."
+    },
+    {
+      "title": "Registros locales y continuidad",
+      "text": "Cuando la memoria lo permita, diseñe colas de registros, números de secuencia y comportamiento tras reinicio. Indique capacidad, reglas de sobrescritura y tratamiento de datos tardíos."
+    },
+    {
+      "title": "Puesta en marcha y configuración",
+      "text": "Defina ajustes de instalación, validaciones, acceso autorizado y restauración mediante la interfaz local o remota seleccionada. NFC o Bluetooth requieren hardware compatible."
+    },
+    {
+      "title": "Integridad y actualizaciones del firmware",
+      "text": "Cuando se incluyan, especifique autenticidad de imagen, compatibilidad de versión, almacenamiento de actualización y gestión de interrupciones. Cargador de arranque, reversión y protección de credenciales requieren un diseño revisado de hardware y software."
+    },
+    {
+      "title": "Diagnósticos y evidencias de versión",
+      "text": "Exponga causas de reinicio y estados de fallo útiles y genere una compilación controlada con resultados de prueba. Acuerde acceso al código, dependencias, instrucciones de carga y responsabilidades de mantenimiento."
+    }
+  ],
+  "planningTitle": "Documente el comportamiento.\nDespués, pruebe el dispositivo.",
+  "planningIntro": "Los requisitos de firmware deben relacionar cada necesidad con una interfaz de hardware y un método de verificación.",
+  "planning": [
+    {
+      "title": "Revise la base de hardware",
+      "text": "Confirme esquemas, componentes, memoria, interfaces y prototipos disponibles. Identifique dependencias de código de terceros o firmware de módulos.",
+      "brief": "Revisión de hardware · Componentes · Cadena de herramientas · Dependencias de terceros"
+    },
+    {
+      "title": "Especifique los estados operativos",
+      "text": "Describa la adquisición, el envío, los modos de consumo, la configuración y la recuperación ante fallos mediante condiciones de aceptación medibles.",
+      "brief": "Transiciones de estado · Tiempos · Objetivos de consumo · Casos de fallo"
+    },
+    {
+      "title": "Planifique la publicación y la entrega",
+      "text": "Acuerde los útiles de prueba, la carga de firmware, el control de versiones, los derechos sobre el código fuente y el soporte posterior a la publicación.",
+      "brief": "Evidencias de prueba · Paquete de versión · Condiciones del código fuente · Alcance del soporte"
+    }
+  ],
+  "applicationsTitle": "Firmware para dispositivos reales.\nTareas verificables.",
+  "applicationsIntro": "Explore requisitos de desarrollo específicos del dispositivo, no un paquete universal de firmware. Los ejemplos vinculan una tarea práctica con entradas necesarias, resultados de software propuestos y comprobaciones de aceptación. Los sensores, radios e interfaces se seleccionan por proyecto.",
+  "groups": [
+    {
+      "id": "cold-chain",
+      "title": "Registradores para cadena de frío y laboratorio",
+      "intro": "Conserve el significado y la secuencia de los registros de temperatura cuando cambien las condiciones de medida y conexión.",
+      "imageKey": "refrigerated-logistics",
+      "imageAlt": "Camión frigorífico en un muelle de carga",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Registros programados de temperatura",
+          "description": "Mantenga el ritmo de adquisición independiente del éxito del envío a la red.",
+          "inputs": "Interfaz de sonda, fuente de reloj e intervalos de muestreo y envío.",
+          "deliverables": "Registros fechados y máquina de estados de muestreo explícita.",
+          "acceptance": "Compare separación y marcas temporales de registros con el reloj de prueba.",
+          "considerations": "La corrección del reloj y el reinicio no deben cambiar silenciosamente las etiquetas de muestras antiguas."
+        },
+        {
+          "title": "Gestión de eventos de desviación",
+          "description": "Convierta un límite de temperatura configurado en un evento trazable del dispositivo.",
+          "inputs": "Límites, histéresis, persistencia y política de notificaciones.",
+          "deliverables": "Mensajes de inicio/fin de evento vinculados a las lecturas de origen.",
+          "acceptance": "Reproduzca temperaturas de prueba ascendentes y descendentes alrededor de cada límite.",
+          "considerations": "Un evento por umbral es información de monitorización, no cumplimiento reglamentario por sí solo."
+        },
+        {
+          "title": "Conservación de datos ante interrupciones del enlace",
+          "description": "Conserve el historial acordado cuando la vía receptora no esté disponible.",
+          "inputs": "Memoria disponible, duración de interrupción y política de sobrescritura.",
+          "deliverables": "Cola limitada con secuencia de registros y comportamiento de envío.",
+          "acceptance": "Desconecte, llene la cola, reinicie y concilie los registros entregados.",
+          "considerations": "Deben indicarse la capacidad y las excepciones de pérdida de datos."
+        }
+      ]
+    },
+    {
+      "id": "tilt",
+      "title": "Nodos de inclinación y monitorización estructural",
+      "intro": "Defina referencias y comportamiento de eventos para estanterías, postes y otras estructuras monitorizadas.",
+      "imageKey": "warehouse-aisle",
+      "imageAlt": "Pasillo de almacén con estanterías y mercancías almacenadas",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Gestión de referencia y cero",
+          "description": "Separe la referencia de instalación del movimiento medido posteriormente.",
+          "inputs": "Ejes del sensor, orientación de montaje y procedimiento de cero permitido.",
+          "deliverables": "Referencias almacenadas y registros de cambios de referencia.",
+          "acceptance": "Aplique cambios de orientación conocidos antes y después de reiniciar.",
+          "considerations": "Los cambios de cero requieren autorización y recuperación acordadas."
+        },
+        {
+          "title": "Eventos de movimiento persistente",
+          "description": "Distinga perturbaciones breves de la condición de movimiento que necesita comunicar el proyecto.",
+          "inputs": "Ángulos, tiempo de persistencia, histéresis y programa de medida.",
+          "deliverables": "Estados de evaluación configurables e identificadores de eventos.",
+          "acceptance": "Reproduzca secuencias angulares transitorias, persistentes y de recuperación.",
+          "considerations": "El filtrado no debe describirse como una evaluación de seguridad de ingeniería."
+        },
+        {
+          "title": "Transmisión prioritaria de eventos",
+          "description": "Envíe un evento de movimiento seleccionado sin perder la información de estado programada.",
+          "inputs": "Comportamiento de radio, prioridad de eventos y límites de reintentos.",
+          "deliverables": "Cola limitada de eventos y secuencia de envío.",
+          "acceptance": "Active un evento durante un envío programado y una interrupción del enlace.",
+          "considerations": "El retraso real depende del ritmo de detección y de la red disponible."
+        }
+      ]
+    },
+    {
+      "id": "vibration",
+      "title": "Nodos de vibración de motores y máquinas",
+      "intro": "Organice la adquisición de vibración según el sensor, régimen de máquina y procesamiento seleccionados.",
+      "imageKey": "manufacturing-floor",
+      "imageAlt": "Máquina de moldeo por inyección en una zona de fabricación ordenada",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Ventanas de adquisición definidas",
+          "description": "Capture bloques repetibles para la condición operativa acordada.",
+          "inputs": "Ancho de banda del sensor, frecuencia de muestreo, duración de ventana y ejes.",
+          "deliverables": "Programación de ventanas, búferes e indicadores de validez.",
+          "acceptance": "Compare muestras capturadas con el estímulo o referencia acordados.",
+          "considerations": "Aliasing, montaje del sensor y ancho de banda utilizable forman parte del diseño del sistema."
+        },
+        {
+          "title": "Características de señal calculadas en el dispositivo",
+          "description": "Implemente cálculos seleccionados en tiempo o frecuencia cuando se especifiquen.",
+          "inputs": "Características, unidades, ventanas y recursos de procesamiento requeridos.",
+          "deliverables": "Cálculos documentados y campos de resultados con versiones.",
+          "acceptance": "Procese formas de onda de referencia con la implementación y scripts de comparación.",
+          "considerations": "Los valores RMS o características espectrales no diagnostican por sí solos un fallo."
+        },
+        {
+          "title": "Registros activados y resúmenes",
+          "description": "Combine resúmenes rutinarios con grabaciones detalladas seleccionadas.",
+          "inputs": "Regla de activación, almacenamiento anterior/posterior al evento y capacidad de envío.",
+          "deliverables": "Política definida de transferencia de resúmenes, eventos y datos brutos.",
+          "acceptance": "Pruebe casos de reposo, marcha estable y activación.",
+          "considerations": "Memoria, procesamiento y radio limitan los datos brutos conservados."
+        }
+      ]
+    },
+    {
+      "id": "gas",
+      "title": "Instrumentos de gases y calidad del aire",
+      "intro": "Haga visible el estado de detección junto a concentraciones y canales ambientales.",
+      "imageKey": "gas-laboratory",
+      "imageAlt": "Laboratorio con recipientes criogénicos y bancos de trabajo",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Calentamiento y validez del sensor",
+          "description": "Evite mostrar medidas de arranque o no disponibles como concentraciones válidas.",
+          "inputs": "Estados de respuesta, requisitos de calentamiento y salidas de fallo del sensor.",
+          "deliverables": "Modelo de validez asociado a cada medida pertinente.",
+          "acceptance": "Pruebe arranque, retirada del sensor y respuestas de fallo especificadas.",
+          "considerations": "El principio de detección y la idoneidad para áreas peligrosas corresponden al hardware suministrado."
+        },
+        {
+          "title": "Temporización multicanal",
+          "description": "Coordine gases, temperatura, humedad y partículas con respuestas diferentes.",
+          "inputs": "Interfaces, tiempos de estabilización y programas de muestreo de canales.",
+          "deliverables": "Marcas temporales, unidades y estados por canal.",
+          "acceptance": "Compruebe alineación y gestión de canales no disponibles.",
+          "considerations": "La independencia de canales debe seguir siendo visible en el modelo de datos receptor."
+        },
+        {
+          "title": "Ajustes de mantenimiento y calibración",
+          "description": "Implemente gestión autorizada de coeficientes y estados de servicio cuando se incluya.",
+          "inputs": "Método de calibración, formato de coeficientes y reglas de acceso.",
+          "deliverables": "Ajustes con versión, comprobaciones de rango y registros de servicio.",
+          "acceptance": "Cargue ajustes válidos e inválidos y verifique la restauración.",
+          "considerations": "Los ajustes de firmware no sustituyen la calibración trazable ni la cualificación del sensor."
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "title": "Terminales de agua, presión y nivel",
+      "intro": "Represente medidas y eventos del emplazamiento sin ocultar fallos de interfaz o proceso.",
+      "imageKey": "water-indoor",
+      "imageAlt": "Equipos de bombeo interiores con tuberías de proceso",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Adquisición de canales de proceso",
+          "description": "Convierta entradas seleccionadas de presión, nivel y auxiliares en registros coherentes.",
+          "inputs": "Interfaz eléctrica, escalado, unidades y reglas de entradas inválidas.",
+          "deliverables": "Correspondencia de canales con valores brutos, estados y valores de ingeniería.",
+          "acceptance": "Aplique entradas eléctricas o de protocolo conocidas en el rango configurado.",
+          "considerations": "La exactitud del sensor y la idoneidad del proceso son independientes del escalado numérico."
+        },
+        {
+          "title": "Estabilidad de eventos de nivel",
+          "description": "Defina amortiguación y persistencia frente a cambios del nivel de agua.",
+          "inputs": "Fluctuaciones previstas, política de umbrales y necesidades de envío.",
+          "deliverables": "Estados de evento documentados con evaluación configurable.",
+          "acceptance": "Reproduzca oleaje, aumentos sostenidos y secuencias de recuperación.",
+          "considerations": "No oculte cambios rápidos sin un objetivo de medida acordado."
+        },
+        {
+          "title": "Totales de pulsos y variables de caudal",
+          "description": "Mantenga el comportamiento acordado de contador y desbordamiento para fuentes de pulsos compatibles.",
+          "inputs": "Características de pulsos, escalado, reglas de reinicio y puesta a cero.",
+          "deliverables": "Contadores, totales e identificación de reinicios en la carga útil.",
+          "acceptance": "Inyecte cantidades conocidas de pulsos en pruebas de reinicio y desbordamiento.",
+          "considerations": "La exactitud del caudal depende del medidor externo y de la instalación."
+        }
+      ]
+    },
+    {
+      "id": "tracking",
+      "title": "Localizadores de activos y equipos móviles",
+      "intro": "Equilibre adquisición de posición, eventos de movimiento y envío según el perfil operativo previsto.",
+      "imageKey": "container-terminal",
+      "imageAlt": "Contenedores apilados en una terminal portuaria costera",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Estados operativos basados en movimiento",
+          "description": "Cambie entre perfiles estacionario y móvil mediante la fuente de movimiento elegida.",
+          "inputs": "Entrada de movimiento, umbrales de estados y política de activación/reposo.",
+          "deliverables": "Máquina de estados de movimiento documentada y marcas temporales.",
+          "acceptance": "Ejecute secuencias de reposo, movimiento y movimiento intermitente.",
+          "considerations": "La capacidad de detectar movimiento depende del sensor instalado."
+        },
+        {
+          "title": "Presupuesto de adquisición de posición",
+          "description": "Limite intentos de adquisición y describa explícitamente resultados de posición no disponible.",
+          "inputs": "Hardware de posicionamiento, límite temporal y criterios de validez.",
+          "deliverables": "Registros de posición con origen, hora y estado de validez.",
+          "acceptance": "Pruebe posiciones válidas, recepción bloqueada y expiración de tiempos.",
+          "considerations": "El firmware no puede garantizar exactitud de ubicación ni visibilidad de satélites."
+        },
+        {
+          "title": "Continuidad de registros de trayecto",
+          "description": "Mantenga coherencia de hora, eventos y posiciones durante huecos de cobertura.",
+          "inputs": "Tipos de registros, capacidad de cola y límites de trayecto.",
+          "deliverables": "Registros ordenados con identidad y reglas para duplicados.",
+          "acceptance": "Reproduzca una ruta con interrupciones, reinicios y envíos retrasados.",
+          "considerations": "Los datos de ubicación y operación necesitan políticas acordadas de acceso y retención."
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Nodos de campo meteorológicos, de suelo y solares",
+      "intro": "Coordine sensores exteriores con restricciones de alimentación y temporización mantenible.",
+      "imageKey": "agriculture",
+      "imageAlt": "Entorno de cultivo agrícola",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Programación de sensores heterogéneos",
+          "description": "Programe sensores con distintas necesidades de encendido y estabilización.",
+          "inputs": "Lista de sensores, controles de alimentación y tiempos de medida.",
+          "deliverables": "Programa de canales y registros de validez por canal.",
+          "acceptance": "Observe secuenciación de alimentación y respuestas conocidas de sensores.",
+          "considerations": "Las sondas e interfaces compatibles forman parte de la base de hardware."
+        },
+        {
+          "title": "Envío adaptado a la alimentación",
+          "description": "Defina el comportamiento cuando cambia la energía disponible.",
+          "inputs": "Medida de alimentación, límites operativos y política de prioridades.",
+          "deliverables": "Estados normal, de actividad reducida y de recuperación cuando se especifiquen.",
+          "acceptance": "Varíe las condiciones de alimentación y verifique transiciones y ajustes conservados.",
+          "considerations": "Una política energética no acredita autonomía sin una evaluación de energía."
+        },
+        {
+          "title": "Comprobaciones de puesta en marcha en campo",
+          "description": "Proporcione visibilidad de canales y vía receptora durante la instalación.",
+          "inputs": "Interfaz de puesta en marcha, registros de prueba y ajustes permitidos.",
+          "deliverables": "Modo de servicio y lista de comprobación de instalación acordados.",
+          "acceptance": "Complete una prueba representativa del punto de medida a la plataforma.",
+          "considerations": "Deben definirse el acceso al modo de servicio y su efecto en registros normales."
+        }
+      ]
+    },
+    {
+      "id": "collectors",
+      "title": "Pasarelas y concentradores multidispositivo",
+      "intro": "Convierta registros de campo especificados conservando identidad, estado y tiempos.",
+      "imageKey": "telecom-site",
+      "imageAlt": "Emplazamiento de comunicaciones exterior remoto con armarios cerrados y accesos de servicio",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Correspondencia de protocolos de campo",
+          "description": "Convierta registros o tramas compatibles a un esquema de aplicación estable.",
+          "inputs": "Revisión del protocolo, mapa de registros y ejemplos de carga útil.",
+          "deliverables": "Correspondencia de canales con versiones y respuestas de error.",
+          "acceptance": "Pruebe valores normales, excepciones y campos no compatibles.",
+          "considerations": "Modbus u otros protocolos requieren hardware e implementación acordada correspondientes."
+        },
+        {
+          "title": "Tratamiento de registros de dispositivos de radio",
+          "description": "Gestione registros de los dispositivos y la configuración receptora especificados.",
+          "inputs": "Hardware de radio, definiciones de tramas e identificadores de dispositivos.",
+          "deliverables": "Reglas del analizador y asociaciones dispositivo-canal.",
+          "acceptance": "Introduzca tramas válidas, mal formadas, duplicadas y de dispositivos desconocidos.",
+          "considerations": "LoRa no equivale automáticamente a LoRaWAN; la compatibilidad se establece por sistema."
+        },
+        {
+          "title": "Recuperación de conexión de retorno y colas",
+          "description": "Separe la recogida de campo de la disponibilidad de la conexión de salida.",
+          "inputs": "Conexión de retorno, capacidad de cola y política de reconexión.",
+          "deliverables": "Colas limitadas, registros de estado y límites de reintentos.",
+          "acceptance": "Interrumpa la conexión de retorno mientras siguen llegando registros de campo.",
+          "considerations": "Las garantías de entrega deben corresponder al trayecto receptor completo."
+        }
+      ]
+    },
+    {
+      "id": "metering",
+      "title": "Contadores de servicios y entradas de armarios",
+      "intro": "Dé a contadores y estados discretos un significado eléctrico y temporal claro.",
+      "imageKey": "industrial",
+      "imageAlt": "Subestación eléctrica y armarios de equipos exteriores",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Conteo de pulsos de medidores",
+          "description": "Capture pulsos compatibles y conserve el estado del totalizador.",
+          "inputs": "Anchura, frecuencia y polaridad de pulsos, y requisito de persistencia.",
+          "deliverables": "Antirrebote, totalización y estrategia de almacenamiento no volátil.",
+          "acceptance": "Inyecte una secuencia contada en los límites de entrada acordados.",
+          "considerations": "Las características del medidor externo determinan los límites utilizables de entrada."
+        },
+        {
+          "title": "Eventos de estado de contactos",
+          "description": "Interprete de forma coherente entradas de puertas, contactos secos o estados de equipos.",
+          "inputs": "Circuito de entrada, estado normal, antirrebote y política de eventos.",
+          "deliverables": "Registros de transición con marcas temporales y gestión de fallos.",
+          "acceptance": "Pruebe rebotes, cambios repetidos y condiciones de reinicio.",
+          "considerations": "Una entrada de monitorización no es una función certificada de protección o enclavamiento."
+        },
+        {
+          "title": "Resúmenes de condiciones de armarios",
+          "description": "Combine estados de entradas y canales ambientales seleccionados en un registro.",
+          "inputs": "Prioridades de canales, combinaciones de estados y esquema de envío.",
+          "deliverables": "Resumen con versión y campos explícitos de datos ausentes.",
+          "acceptance": "Compare cada combinación de estados con la definición de interfaz.",
+          "considerations": "Separe las condiciones medidas de los estados de equipo inferidos."
+        }
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Dispositivos de monitorización de edificios e instalaciones",
+      "intro": "Coordine entradas ambientales y de presencia para un uso operativo acordado.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Edificio de campus y zona exterior ajardinada",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Dispositivos multifunción para salas",
+          "description": "Programe entradas ambientales, de luz y presencia conservando la identidad de cada canal.",
+          "inputs": "Sensores instalados, entradas de activación y requisitos de muestreo.",
+          "deliverables": "Registros de canales independientes y carga útil combinada definida.",
+          "acceptance": "Pruebe cada canal individualmente y en funcionamiento simultáneo.",
+          "considerations": "Los datos de presencia no acreditan identidad ni recuentos garantizados de ocupación."
+        },
+        {
+          "title": "Perfiles de configuración de instalación",
+          "description": "Aplique ajustes del emplazamiento mediante la interfaz de puesta en marcha compatible.",
+          "inputs": "Identificadores de salas, campos de configuración y herramientas permitidas.",
+          "deliverables": "Perfiles validados con revisión y comportamiento de restauración.",
+          "acceptance": "Cargue, rechace, conserve y restaure perfiles representativos.",
+          "considerations": "La configuración NFC, Bluetooth o cableada solo se incluye para hardware compatible."
+        },
+        {
+          "title": "Registros de excepciones y latidos",
+          "description": "Haga distinguibles en el receptor los estados sin conexión, desactualizados y anómalos.",
+          "inputs": "Intervalo de latidos, bits de estado y política de datos desactualizados.",
+          "deliverables": "Mensajes de estado del dispositivo e información de estado de canales.",
+          "acceptance": "Simule sensores no disponibles e interrupciones de comunicaciones.",
+          "considerations": "El receptor solo puede evaluar la conectividad tras el tiempo de espera acordado."
+        }
+      ]
+    },
+    {
+      "id": "retrofit",
+      "title": "Interfaces de modernización de equipos industriales",
+      "intro": "Integre datos de equipos existentes sin suponer implícitamente autoridad de control.",
+      "imageKey": "compressed-air",
+      "imageAlt": "Depósito de aire comprimido y compresor industriales",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Adquisición de datos de equipos existentes",
+          "description": "Lea la interfaz especificada del equipo y conviértala en registros de monitorización.",
+          "inputs": "Documentación de interfaces, niveles eléctricos y acceso permitido.",
+          "deliverables": "Vía de adquisición de solo lectura cuando se acuerde.",
+          "acceptance": "Compare valores representativos con la referencia del equipo.",
+          "considerations": "El acceso debe respetar límites del equipo y procedimientos operativos existentes."
+        },
+        {
+          "title": "Observaciones de contadores y ciclos",
+          "description": "Capture eventos de ciclo de señales compatibles para informes operativos.",
+          "inputs": "Señal de activación, definición de ciclo y gestión del reinicio.",
+          "deliverables": "Eventos fechados y contadores con reglas explícitas de puesta a cero.",
+          "acceptance": "Reproduzca ciclos representativos y secuencias interrumpidas.",
+          "considerations": "Observar ciclos no acredita automáticamente utilización ni calidad del proceso."
+        },
+        {
+          "title": "Límites de órdenes opcionales",
+          "description": "Si se incluyen órdenes remotas, defina solicitud, confirmación y tiempos de espera explícitos.",
+          "inputs": "Órdenes permitidas, autorización y protecciones del equipo.",
+          "deliverables": "Máquina de estados de órdenes documentada y campos de auditoría.",
+          "acceptance": "Pruebe órdenes aceptadas, rechazadas, repetidas y con tiempo agotado.",
+          "considerations": "El control relacionado con seguridad requiere una arquitectura evaluada por separado."
+        }
+      ]
+    },
+    {
+      "id": "oem",
+      "title": "Integración de dispositivos OEM y variantes de versión",
+      "intro": "Mantenga el comportamiento específico del cliente trazable al hardware y versión correctos.",
+      "imageKey": "electronics-workbench",
+      "imageAlt": "Técnico trabajando en una placa electrónica montada en un banco de electrónica",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Variantes de protocolo de clientes",
+          "description": "Adapte cargas útiles y configuración a una plataforma receptora identificada.",
+          "inputs": "Punto de conexión, esquema, autenticación y acceso de prueba.",
+          "deliverables": "Ajustes de integración con versiones y mensajes representativos.",
+          "acceptance": "Realice una prueba de interoperabilidad de extremo a extremo acordada.",
+          "considerations": "El acceso a servicios externos y las suscripciones periódicas se definen por separado."
+        },
+        {
+          "title": "Firmware de aprovisionamiento en fábrica",
+          "description": "Admite los pasos acordados de carga de identidades y verificación de producción.",
+          "inputs": "Reglas de serialización, interfaz del útil y límites de prueba.",
+          "deliverables": "Órdenes de aprovisionamiento y registros de aprobado/no aprobado.",
+          "acceptance": "Ejecute un lote definido de casos correctos y fallos conocidos.",
+          "considerations": "Las credenciales y el acceso de fabricación requieren gestión controlada."
+        },
+        {
+          "title": "Vías de actualización controladas",
+          "description": "Implemente el diseño de actualización y recuperación seleccionado para la plataforma.",
+          "inputs": "Distribución de memoria, firma de imágenes y requisitos ante interrupciones.",
+          "deliverables": "Lógica de arranque/actualización e instrucciones de versión según contrato.",
+          "acceptance": "Pruebe imágenes rechazadas, cortes eléctricos y recuperación en el hardware real.",
+          "considerations": "Reversión, arranque seguro y mantenimiento de vulnerabilidades no se incluyen automáticamente."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Alcance de desarrollo.\nVinculado a la revisión de hardware.",
+  "scopeIntro": "La especificación de firmware es propia de cada proyecto; estos aspectos definen el entregable de ingeniería.",
+  "rows": [
+    [
+      "Tipo de servicio",
+      "Firmware embebido a medida y trabajos de integración acordados"
+    ],
+    [
+      "Base de hardware",
+      "Revisión de placa identificada, componentes e interfaces compatibles"
+    ],
+    [
+      "Entorno de software",
+      "MCU o procesador, cadena de herramientas y enfoque RTOS o sin sistema operativo acordados"
+    ],
+    [
+      "Alcance funcional",
+      "Requisitos de adquisición, lógica de estados, configuración y comunicación"
+    ],
+    [
+      "Objetivos de consumo",
+      "Condiciones de aceptación medidas para el hardware y ciclo de trabajo especificados"
+    ],
+    [
+      "Recuperación ante fallos",
+      "Tiempos de espera, límites de reintentos, interacción con watchdog y registros de diagnóstico definidos"
+    ],
+    [
+      "Seguridad y actualizaciones",
+      "Requisitos y alcance de verificación expresamente incluidos en el contrato"
+    ],
+    [
+      "Pruebas",
+      "Hardware representativo, casos de prueba y evidencias requeridas"
+    ],
+    [
+      "Entregables",
+      "Binarios de firmware, instrucciones de carga y documentación según contrato"
+    ],
+    [
+      "Código fuente y soporte",
+      "Entrega del código fuente, licencias de terceros, mantenimiento y condiciones de cambio acordados por escrito"
+    ]
+  ],
+  "handoverTitle": "Del firmware de prototipo.\nA una versión controlada.",
+  "handoverIntro": "Acuerde las evidencias y los archivos necesarios para la integración y el mantenimiento.",
+  "handover": [
+    {
+      "title": "Confirme los requisitos",
+      "text": "Revise las interfaces y el comportamiento de estados según el hardware disponible y las prioridades del proyecto."
+    },
+    {
+      "title": "Integración y verificación",
+      "text": "Desarrolle sobre la plataforma acordada y pruebe el funcionamiento normal, los fallos pertinentes y las condiciones de recuperación."
+    },
+    {
+      "title": "Publicación y entrega",
+      "text": "Entregue el paquete de firmware contratado, la información de la versión y la documentación con condiciones explícitas sobre el código fuente y el soporte."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Puede ampliarse el firmware existente en lugar de reescribirlo?",
+      "a": "Sí, si se dispone del código, entorno de compilación, derechos de modificación y hardware adecuado de prueba. La revisión inicial identifica controladores y lógica reutilizables, dependencias de hardware y evidencias de verificación ausentes."
+    },
+    {
+      "q": "¿Qué información se necesita para presupuestar firmware?",
+      "a": "Aporte revisión de placa, esquemas, componentes, código existente si lo hay, documentación de interfaces y comportamiento de estados esperado. Incluya requisitos de tiempos, energía, retención y recuperación, así como el hardware propuesto para aceptación."
+    },
+    {
+      "q": "¿Cómo se separan muestreo, envío y alertas?",
+      "a": "El muestreo genera medidas, la lógica de eventos evalúa condiciones definidas y el envío transmite registros por la vía receptora. Cada función tiene sus propios tiempos y fallos; un evento no implica un retraso garantizado de notificación de extremo a extremo."
+    },
+    {
+      "q": "¿Puede el dispositivo conservar registros sin conexión?",
+      "a": "Puede definirse almacenamiento local cuando memoria y energía lo permitan. Especifique capacidad, secuencias, sobrescritura, reinicio y tratamiento por el receptor de registros tardíos o duplicados."
+    },
+    {
+      "q": "¿El desarrollo incluye procesamiento de señales?",
+      "a": "Pueden incluirse cálculos seleccionados con entradas, unidades y pruebas de referencia documentadas. La viabilidad depende de procesamiento, ancho de banda del sensor y calidad del dato. Extraer características es distinto de diagnosticar o predecir fallos con validación."
+    },
+    {
+      "q": "¿Puede el firmware aumentar la autonomía de batería o solar?",
+      "a": "Pueden evaluarse estados de energía y programación de comunicaciones en el hardware seleccionado. La autonomía depende de alimentación completa, cargas de sensores, red y entorno; requiere presupuesto energético y medidas de respaldo definidos."
+    },
+    {
+      "q": "¿Se incluyen automáticamente MQTT, Modbus o LoRaWAN?",
+      "a": "No. Seleccione protocolo y hardware compatible y defina revisión exacta, correspondencia de mensajes y puntos de prueba. Disponer de radio LoRa no acredita compatibilidad LoRaWAN."
+    },
+    {
+      "q": "¿Cómo se gestionan los fallos de actualización?",
+      "a": "El diseño debe definir verificación de imágenes, compatibilidad, distribución de memoria y recuperación tras interrupciones. La doble imagen o reversión necesitan memoria suficiente y un cargador implementado; se prueban en el hardware suministrado."
+    },
+    {
+      "q": "¿Qué trabajo de seguridad se incluye?",
+      "a": "Especifique autenticación, aprovisionamiento de credenciales, ajustes autorizados, verificación de imágenes y acceso de diagnóstico como requisitos. Pruebas de seguridad, respuesta a vulnerabilidades y certificación externa son entregables acordados por separado."
+    },
+    {
+      "q": "¿Recibiremos código fuente y una compilación reproducible?",
+      "a": "El acuerdo establece entrega de código, versiones de herramientas, instrucciones de compilación, dependencias y derechos de modificación. Los componentes externos mantienen sus licencias; un binario no determina la titularidad."
+    },
+    {
+      "q": "¿Cómo se acepta el firmware?",
+      "a": "Utilice una matriz de requisitos y pruebas sobre revisiones de hardware identificadas. Incluya operación normal, entradas límite, cortes de comunicaciones y alimentación, persistencia y recuperación, registrando resultados esperados y reales."
+    },
+    {
+      "q": "¿Por qué no hay una ficha estándar de producto?",
+      "a": "Es un servicio de desarrollo. Una especificación de requisitos de firmware, definición de interfaces y plan de aceptación definen el trabajo; una ficha fija no describiría correctamente hardware y comportamiento específicos del cliente."
+    }
+  ],
+  "enquiryIntro": "Comparta la revisión de placa, los componentes y el comportamiento requerido del dispositivo. Incluya el firmware disponible, los documentos de interfaces y las prioridades de aceptación para su evaluación técnica.",
+  "enquiryFields": [
+    {
+      "label": "Base de hardware",
+      "placeholder": "MCU, revisión de placa, sensores, módem e interfaces"
+    },
+    {
+      "label": "Comportamiento requerido",
+      "placeholder": "Muestreo, envío, estados de consumo y recuperación ante fallos"
+    },
+    {
+      "label": "Recursos existentes",
+      "placeholder": "Esquemas, estado del prototipo, código fuente y herramientas de compilación"
+    },
+    {
+      "label": "Requisitos de entrega",
+      "placeholder": "Evidencias de prueba, derechos sobre el código fuente, necesidades de actualización y soporte"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-embedded-software.webp",
+  "imageWidth": 400,
+  "imageHeight": 345
+}

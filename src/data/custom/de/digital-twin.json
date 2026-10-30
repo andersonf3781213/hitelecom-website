@@ -1,0 +1,632 @@
+{
+  "id": "digital-twin",
+  "slug": "digital-twin-development",
+  "kind": "Service",
+  "name": "Entwicklung digitaler Zwillinge",
+  "title": "Digital-Twin-Entwicklung | Vernetzte Anlagen- und Gebäudeansichten | Hitelecom",
+  "metaDescription": "Individuelle Entwicklung digitaler Zwillinge für Industrieanlagen, Gebäude, Lager und Infrastruktur. Verknüpfen Sie Anlagenmodelle, Überwachungsdaten und Wartungsabläufe.",
+  "heroHeading": "Entwicklung\ndigitaler Zwillinge.",
+  "heroValue": "Betrieblicher Kontext.\nMit Felddaten verbunden.",
+  "heroDescription": "Führen Sie Geräte, Räume und Überwachungsaufzeichnungen in einer navigierbaren digitalen Darstellung zusammen. Hitelecom definiert individuelle Anlagenmodelle, 2D- oder 3D-Ansichten, Telemetriezuordnungen und Bedienabläufe passend zu Ihren Anlagen und Datensystemen. Sehen Sie hochgeladene Überwachungsdaten über eine vereinbarte Hitelecom-Cloud-Integration oder Kundenplattform online ein und ordnen Sie konfigurierte Schwellenwertalarme dem Gerätekontext zu. Modelldetails, Datenverbindungen und Abnahme werden projektspezifisch festgelegt.",
+  "caption": "Entwicklung digitaler Zwillinge",
+  "imageAlt": "Entwicklung digitaler Zwillinge",
+  "proof": [
+    {
+      "value": "Anlagen",
+      "label": "Definierter digitaler Kontext",
+      "note": "Anlagenhierarchie und Modelldetail vereinbaren"
+    },
+    {
+      "value": "Daten",
+      "label": "Zugeordnete Telemetriedaten",
+      "note": "Quellen, Zeitstempel und Datenqualität definieren"
+    },
+    {
+      "value": "Umfang",
+      "label": "Projektbezogene Lieferung",
+      "note": "Funktionen, Hosting und Übergabe bestätigen"
+    }
+  ],
+  "featureTitle": "Von Modellansichten.\nZu nutzbaren Betriebsabläufen.",
+  "featureIntro": "Schaffen Sie den digitalen Kontext, den Bediener benötigen: Welche Anlage meldet, wohin gehört sie, was hat sich geändert und welche Aufzeichnungen unterstützen den nächsten Schritt? Beginnen Sie mit einem repräsentativen Anlagenumfang, bevor Sie das Modell erweitern.",
+  "features": [
+    {
+      "title": "Anlagenidentitäten und Beziehungen",
+      "text": "Strukturieren Sie Standorte, Gebäude, Systeme, Geräte und Messpunkte mit stabilen Kennungen. Erfassen Sie Beziehungen wie befindet-sich-in, versorgt oder überwacht-durch, damit Messwerte dem richtigen physischen Objekt zugeordnet werden."
+    },
+    {
+      "title": "Zweckmäßige 2D- und 3D-Ansichten",
+      "text": "Wählen Sie Grundrisse, Gerätediagramme oder ein 3D-Modell passend zur Aufgabe. Verwenden Sie lizenzierte CAD-/BIM-/Modelldaten nach Prüfung von Geometrie, Konvertierungsaufwand und Navigation auf den vorgesehenen Endgeräten."
+    },
+    {
+      "title": "Messwerte mit Herkunftsnachweis",
+      "text": "Zeigen Sie Messwert, Einheit, Zeitstempel und Quellenkennung gemeinsam. Unterscheiden Sie aktuelle, verspätete, fehlende und ungültige Datensätze, statt ein nicht meldendes Objekt als intakt zu kennzeichnen."
+    },
+    {
+      "title": "Schwellenwertkontext auf Anlagenebene",
+      "text": "Zeigen Sie empfangene Alarme beim betreffenden Raum, Bauteil oder Gerät. Definieren Sie Grenzen, Ereignispriorität, Quittierung und Benachrichtigungsintegration passend zum vereinbarten Überwachungsablauf."
+    },
+    {
+      "title": "Historische Untersuchung",
+      "text": "Definieren Sie Zeitraumauswahl, synchronisierte Trends und Verknüpfungen zwischen Beobachtungen und Ereignissen. Legen Sie Aufbewahrung und Abtastungssemantik fest, damit Lücken, Aggregation und historische Zustände verständlich bleiben."
+    },
+    {
+      "title": "Inspektions- und Wartungsverknüpfungen",
+      "text": "Verknüpfen Sie ausgewählte Anlagen über vereinbarte Kennungen und Berechtigungen mit Zeichnungen, Inspektionsfotos und Wartungsaufzeichnungen. Das Quellsystem bleibt für den maßgeblichen Arbeitsauftrag verantwortlich."
+    },
+    {
+      "title": "Rollenbezogene Betriebsansichten",
+      "text": "Definieren Sie zugängliche Standorte, Anlagendetails und Aktionen je Benutzer. Trennen Sie Bedieneruntersuchung, Managementübersichten und technische Administration, ohne fremde Anlagenaufzeichnungen offenzulegen."
+    },
+    {
+      "title": "Versionierte Integration und Übergabe",
+      "text": "Dokumentieren Sie Modellversionen, Messpunktzuordnungen, API-Verträge und Bereitstellungskonfiguration. Vereinbaren Sie Quellcode-/Modellrechte, Drittlizenzen und Wartungsverantwortung in der Leistungsbeschreibung."
+    }
+  ],
+  "planningTitle": "Das Modell definieren.\nDann seine Nutzung festlegen.",
+  "planningIntro": "Eine aussagekräftige Projektbeschreibung für einen digitalen Zwilling trennt die visuelle Szene, die Messdaten und etwaige Berechnungen oder Simulationen.",
+  "planning": [
+    {
+      "title": "Betriebliche Fragestellungen ermitteln",
+      "text": "Listen Sie die Entscheidungen, Benutzer und benötigten Informationen auf. Unterscheiden Sie eine betriebliche Visualisierung von Simulation, Prognose oder Steuerung.",
+      "brief": "Benutzer · Anlagen · Entscheidungen · Funktionsgrenzen"
+    },
+    {
+      "title": "Modelle und Quelldaten prüfen",
+      "text": "Bewerten Sie Modellformate, Geometrie, Berechtigungen und Verfügbarkeit von Telemetriedaten. Definieren Sie das Verhalten bei fehlenden und veralteten Daten.",
+      "brief": "Modellbeispiele · Quell-API · Kennungen · Datenqualität"
+    },
+    {
+      "title": "Abnahmebedingungen festlegen",
+      "text": "Vereinbaren Sie vor der Entwicklung repräsentative Datensätze, Interaktionsverhalten, unterstützte Geräte und Prüfszenarien.",
+      "brief": "Testdaten · Leistungsziele · Benutzerprüfung · Übergabe"
+    }
+  ],
+  "applicationsTitle": "Physische Anlagen.\nNützlicher digitaler Kontext.",
+  "applicationsIntro": "Entdecken Sie konkrete Abläufe in zwölf Betriebsumgebungen. Jedes Beispiel nennt Projekteingaben, vorgeschlagene Anwendungsergebnisse und eine Abnahmeprüfung. Dies sind Entwicklungsumfänge, keine Behauptungen über abgeschlossene Kundenprojekte.",
+  "groups": [
+    {
+      "id": "production",
+      "title": "Fertigungsanlagen und Prozessgeräte",
+      "intro": "Ordnen Sie Produktionsanlagen nach Linie, Zelle und Versorgungssystem, damit Bediener Zustände untersuchen können, ohne den Gerätekontext zu verlieren.",
+      "imageKey": "process-charging",
+      "imageAlt": "Prozessbehälter, angeschlossene Rohrleitungen und Wartungszugang",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Zustandsansicht einer Produktionslinie",
+          "description": "Navigieren Sie von der Produktionslinie zu den Geräten und Messpunkten einer Betriebsabweichung.",
+          "inputs": "Linienhierarchie, Gerätekennzeichen und Beispielsensordaten.",
+          "deliverables": "Navigation von Linie zu Gerät mit zeitgestempelten Messwerten.",
+          "acceptance": "Ein ausgewählter Messwert führt zum vereinbarten Gerätekennzeichen.",
+          "considerations": "Geräte- und Wartungszustand benötigen getrennte Definitionen."
+        },
+        {
+          "title": "Beziehungen gemeinsamer Versorgungssysteme",
+          "description": "Zeigen Sie, welche überwachten Kompressoren, Pumpen oder Versorgungszweige die modellierten Produktionsbereiche versorgen.",
+          "inputs": "Versorgungszeichnungen, Anlagenbeziehungen und verfügbare Messwerte.",
+          "deliverables": "Versorgungsbeziehungen mit verknüpften Zustandstrends.",
+          "acceptance": "Die Auswahl einer Versorgung identifiziert dokumentierte nachgelagerte Bereiche.",
+          "considerations": "Das Beziehungsmodell ist keine Prozesssimulation."
+        },
+        {
+          "title": "Arbeitsbereich zur Wartungsuntersuchung",
+          "description": "Führen Sie Zeichnungen, Ereignishistorie und Inspektionen des gewählten Objekts im selben Untersuchungspfad zusammen.",
+          "inputs": "Anlagenregister, Dokumentlinks und Wartungs-API-Beispiele.",
+          "deliverables": "Anlagendetail mit berechtigten Quellenverweisen.",
+          "acceptance": "Benutzer öffnen den richtigen Datensatz mit zugewiesenen Berechtigungen.",
+          "considerations": "Der benannte Ursprung bleibt für den Arbeitsauftrag verantwortlich."
+        }
+      ]
+    },
+    {
+      "id": "warehouse",
+      "title": "Lager und automatisierte Lagersysteme",
+      "intro": "Ordnen Sie Regalreihen, Lagerzonen und Fördertechnik den jeweiligen Messungen und Inspektionen zu.",
+      "imageKey": "warehouse-aisle",
+      "imageAlt": "Lagergang mit Regalen und eingelagerten Waren",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Überwachungskontext von Regalen und Gängen",
+          "description": "Lokalisieren Sie das Regalfach eines empfangenen Neigungs- oder Schwingungsereignisses und prüfen Sie dessen Messhistorie.",
+          "inputs": "Regalplan, Fachkennungen und verfügbare Neigungs-/Schwingungsdaten.",
+          "deliverables": "Regal-Messpunkt-Navigation mit Ereignis- und Trendansichten.",
+          "acceptance": "Ein Beispielereignis hebt ausschließlich das zugeordnete Regalfach hervor.",
+          "considerations": "Gemessene Bewegung belegt allein keine Tragwerkssicherheit."
+        },
+        {
+          "title": "Umgebungsansicht einer Lagerzone",
+          "description": "Zeigen Sie hochgeladene Temperatur- und Feuchtewerte im richtigen Lagerraum, Gang oder definierten Bereich.",
+          "inputs": "Zonengrenzen, Sensorpositionen und Umgebungsaufzeichnungen.",
+          "deliverables": "Zonenansichten mit Quellzeitstempeln und Trendlinks.",
+          "acceptance": "Fehlende oder veraltete Punkte bleiben von aktuellen Werten unterscheidbar.",
+          "considerations": "Ein Sensor repräsentiert nicht jeden Ort einer Zone."
+        },
+        {
+          "title": "Inspektionskontext der Fördertechnik",
+          "description": "Verknüpfen Sie Förderer, Lifte oder Shuttles mit Inspektionsnotizen und empfangenen Betriebszuständen.",
+          "inputs": "Gerätehierarchie, Inspektionsaufzeichnungen und freigegebene Schnittstellen.",
+          "deliverables": "Gerätenavigation mit verknüpften Inspektionsnachweisen.",
+          "acceptance": "Ein ausgewähltes Bauteil öffnet seinen passenden Inspektionsdatensatz.",
+          "considerations": "Maschinenbefehle und Sicherheitsfunktionen erfordern einen separaten Umfang."
+        }
+      ]
+    },
+    {
+      "id": "buildings",
+      "title": "Gewerbegebäude und Campusareale",
+      "intro": "Nutzen Sie die Hierarchie Gebäude–Geschoss–Raum, um Gebäudeinformationen und Serviceaufzeichnungen räumlich einzuordnen.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Campusgebäude und begrünter Innenhof",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Untersuchung des Raumklimas",
+          "description": "Wechseln Sie von der Geschossansicht zu Luftqualitäts- oder Temperaturmesspunkten eines gemeldeten Raumzustands.",
+          "inputs": "Lizenzierte Grundrisse, Raumkennungen und Sensor-Raum-Zuordnung.",
+          "deliverables": "Raumnavigation mit verfügbaren Umgebungsmessungen.",
+          "acceptance": "Ein ausgewählter Raum zeigt nur seine zugewiesenen Messpunkte.",
+          "considerations": "Sensorexposition und Raumgrenzen beeinflussen die Interpretation."
+        },
+        {
+          "title": "Gerätekontext im Technikraum",
+          "description": "Verknüpfen Sie HLK- und Wasserversorgungsgeräte mit versorgten Räumen und verfügbaren Zustandsdaten.",
+          "inputs": "Anlagenschemata, Gerätekennungen und Versorgungsbeziehungen.",
+          "deliverables": "Geräte-Raum-Beziehungen und Zustandsansichten.",
+          "acceptance": "Eine bekannte Versorgungsbeziehung erscheint in allen Ansichten konsistent.",
+          "considerations": "Wärme- oder Strömungssimulation ist eine gesonderte Entwicklungsaufgabe."
+        },
+        {
+          "title": "Navigation zu Gebäudeserviceaufzeichnungen",
+          "description": "Ermöglichen Sie Gebäudeteams den Zugriff auf Wartungsnotizen, Handbücher oder Inspektionsnachweise am Modellobjekt.",
+          "inputs": "Anlagendokumentenindex und Anforderungen an Zugriffsrollen.",
+          "deliverables": "Berechtigungsgesteuerte Links von Raum- und Geräteobjekten.",
+          "acceptance": "Unberechtigte Benutzer können geschützte Zusatzaufzeichnungen nicht öffnen.",
+          "considerations": "Dokumentrevision und Eigentumsrechte müssen nachvollziehbar sein."
+        }
+      ]
+    },
+    {
+      "id": "data-centres",
+      "title": "Rechenzentren und Technikräume",
+      "intro": "Verknüpfen Sie Reihen, Racks und Versorgungstechnik mit definierten Messpunkten für eine gezielte Betriebsprüfung.",
+      "imageKey": "data-center",
+      "imageAlt": "Modernes Rechenzentrum mit symmetrischen Serverschränken und sauberem zentralem Kühlgang",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Umgebungsabweichungen am Rack",
+          "description": "Lokalisieren Sie Rack oder Gang eines Temperatur- oder Feuchteschwellenereignisses.",
+          "inputs": "Rackregister, Messpunktpositionen und Beispielereignisdaten.",
+          "deliverables": "Ereignisauswahl und Umgebungstrends auf Rackebene.",
+          "acceptance": "Beispielereignisse führen zum zugeordneten Rack und Messpunkt.",
+          "considerations": "Die Punktposition ist relevant; eine Ansicht ist kein Kühlmodell."
+        },
+        {
+          "title": "Untersuchungskontext bei Wasserleckagen",
+          "description": "Zeigen Sie ein empfangenes Leckereignis im überwachten Raum, Gerätebereich oder Kabelverlauf.",
+          "inputs": "Leckpunktplan, Raummodell und Ereigniszuordnung.",
+          "deliverables": "Leckpunktkontext mit Zeitstempel und Inspektionslinks.",
+          "acceptance": "Das Ereignis hebt die zugeordnete Position hervor, ohne zusätzliche Abdeckung vorzutäuschen.",
+          "considerations": "Die Abdeckung hängt von der installierten Sensoranordnung ab."
+        },
+        {
+          "title": "Aufzeichnungsansichten für Versorgungstechnik",
+          "description": "Organisieren Sie Kühl-, Stromversorgungs- und Pumpenanlagen mit den verfügbaren Daten berechtigter Quellsysteme.",
+          "inputs": "Gerätebeziehungen und freigegebene Quellsystemschnittstellen.",
+          "deliverables": "Anlagenhierarchie mit Betriebs- und Wartungslinks.",
+          "acceptance": "Erfasste Geräteidentität entspricht dem ausgewählten Modellobjekt.",
+          "considerations": "Dies ersetzt weder DCIM noch Schutz- oder Steuerungssysteme."
+        }
+      ]
+    },
+    {
+      "id": "laboratories",
+      "title": "Laboratorien und pharmazeutische Lagerung",
+      "intro": "Stellen Sie überwachte Räume, Kammern und Lagereinrichtungen mit ihren erfassten Umgebungsbedingungen und Inspektionen dar.",
+      "imageKey": "laboratory-storage",
+      "imageAlt": "Laborarbeitsbereich mit Kühlschränken und Probenlagereinrichtungen",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Umgebungskontext kontrollierter Räume",
+          "description": "Prüfen Sie hochgeladene Bedingungen nach Laborraum oder Lagerbereich mit Quellzeitstempeln und Sensoridentität.",
+          "inputs": "Raumregister, Messpunktzuweisungen und Umgebungsdaten.",
+          "deliverables": "Raumansichten mit Trends und Qualitätskennzeichen der Quelle.",
+          "acceptance": "Benutzer unterscheiden gültige Messwerte von fehlenden oder verspäteten Daten.",
+          "considerations": "Visualisierung allein begründet keinen regulatorischen Validierungsnachweis."
+        },
+        {
+          "title": "Zugriff auf Kammer- und Gefrierschrankaufzeichnungen",
+          "description": "Verknüpfen Sie überwachte Kammern oder Gefrierschränke mit Zustandsaufzeichnungen, Kalibrierreferenzen und Wartungsdokumenten.",
+          "inputs": "Gerätekennungen, Messpunkte und Dokumentberechtigungen.",
+          "deliverables": "Geräteansichten mit freigegebenen Datensatz- und Dokumentlinks.",
+          "acceptance": "Ein Testobjekt öffnet seine zugewiesenen Mess- und Referenzaufzeichnungen.",
+          "considerations": "Datenintegrität und elektronische Signaturen erfordern einen ausdrücklichen Umfang."
+        },
+        {
+          "title": "Arbeitsbereich zur Abweichungsprüfung",
+          "description": "Zeigen Sie einen Abweichungszeitraum mit betroffenen Geräten und verfügbaren Untersuchungsaufzeichnungen.",
+          "inputs": "Ereigniszeitstempel, Gerätezuordnung und Untersuchungsreferenzen.",
+          "deliverables": "Zeitlich abgestimmte Trends mit kontextbezogenen Aufzeichnungslinks.",
+          "acceptance": "Das gewählte Zeitfenster entspricht den empfangenen Quelldatensätzen.",
+          "considerations": "Freigabeentscheidungen verbleiben beim zuständigen Qualitätsteam."
+        }
+      ]
+    },
+    {
+      "id": "water-supply",
+      "title": "Wasserpump- und Verteilanlagen",
+      "intro": "Stellen Sie Pumpentechnik, Behälter und überwachte Verbindungen auf Basis des gelieferten Anlagenregisters dar.",
+      "imageKey": "water-indoor",
+      "imageAlt": "Pumpentechnik, Behälter und Rohrleitungen in Innenräumen",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Zustandsprüfung einer Pumpstation",
+          "description": "Navigieren Sie zwischen überwachten Pumpen und ihren verfügbaren Druck-, Temperatur-, Schwingungs- oder Zustandsaufzeichnungen.",
+          "inputs": "Pumpenliste, Messpunktzuordnung und verfügbare Kanaldaten.",
+          "deliverables": "Pumpenbezogene Messwerte mit Zugriff auf historische Daten.",
+          "acceptance": "Eine ausgewählte Pumpe zeigt ihre geprüft zugeordneten Kanäle.",
+          "considerations": "Verfügbare Kanäle hängen von den installierten Instrumenten ab."
+        },
+        {
+          "title": "Tank- und Transfergerätekontext",
+          "description": "Ordnen Sie Tanks, Transferpumpen und Füllstandspunkte dem vom Betriebsteam verwendeten Anlagenlayout zu.",
+          "inputs": "Tankkennungen, Anschlusszeichnungen und Füllstandsaufzeichnungen.",
+          "deliverables": "Tank-Geräte-Beziehungen und Füllstandshistorien.",
+          "acceptance": "Modellbeziehungen entsprechen der abgenommenen Anlagenzeichnung.",
+          "considerations": "Hydraulische Modellierung und Fernbetätigung sind gesonderte Umfänge."
+        },
+        {
+          "title": "Zusammenführung von Inspektionen und Ereignissen",
+          "description": "Führen Sie ein Pumpen- oder Ventilereignis mit letzter dokumentierter Inspektion und Betriebsbeobachtungen zusammen.",
+          "inputs": "Ereignisreferenzen, Inspektionszeitstempel und Anlagenkennungen.",
+          "deliverables": "Untersuchungsansicht mit geordneten Quelldatensätzen.",
+          "acceptance": "Die Sortierung bewahrt Quellzeit und Ereignisidentität.",
+          "considerations": "Der Inspektionsstatus darf nicht allein aus Telemetrie abgeleitet werden."
+        }
+      ]
+    },
+    {
+      "id": "wastewater",
+      "title": "Abwasser- und Aufbereitungsanlagen",
+      "intro": "Verknüpfen Sie Behandlungseinheiten und überwachte Geräte mit Betriebsaufzeichnungen unter Wahrung von Prozess- und Datengrenzen.",
+      "imageKey": "treatment-manifold",
+      "imageAlt": "Wasseraufbereitungsbehälter und Edelstahlverteiler",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Messansicht einer Behandlungseinheit",
+          "description": "Ordnen Sie empfangene Messwerte den vom Betreiber benannten Behandlungseinheiten und Probenahmestellen zu.",
+          "inputs": "Einheitenhierarchie, Messpunktregister und Messdefinitionen.",
+          "deliverables": "Ansichten der Behandlungseinheiten mit Einheiten und Quellzeitstempeln.",
+          "acceptance": "Punktnamen, Einheiten und Anlagenzuordnungen entsprechen dem freigegebenen Register.",
+          "considerations": "Abgeleitete Behandlungsleistung benötigt eine vereinbarte Berechnungsgrundlage."
+        },
+        {
+          "title": "Aufzeichnungen für Chemikalienhandhabungsgeräte",
+          "description": "Verknüpfen Sie ausgewählte Dosiergeräte mit verfügbaren Druck-, Zustands- und Servicedaten.",
+          "inputs": "Dosieranlagenliste und berechtigte Geräteschnittstellen.",
+          "deliverables": "Dosiergerätekontext mit empfangenen Zustandsinformationen.",
+          "acceptance": "Ein Quelldatensatz erreicht das richtige Geräteobjekt.",
+          "considerations": "Dosiersteuerung und Ex-Bereichseignung sind separate Auslegungsfragen."
+        },
+        {
+          "title": "Kontext zur Wartungszugangsplanung",
+          "description": "Kombinieren Sie Anlagenansichten mit Zugangshinweisen und Inspektionsfotos für ausgewählte Wartungsarbeiten.",
+          "inputs": "Anlagenlayout, freigegebene Zugangshinweise und Inspektionsbilder.",
+          "deliverables": "Kontextbezogene Inspektions- und Zugangsinformationslinks.",
+          "acceptance": "Benutzer rufen den aktuellen freigegebenen Hinweis zum gewählten Objekt ab.",
+          "considerations": "Die Anwendung erteilt keine Zutritts- oder Wartungsfreigabe."
+        }
+      ]
+    },
+    {
+      "id": "solar-storage",
+      "title": "Solar- und Energiespeicherstandorte",
+      "intro": "Ordnen Sie Modulfelder, Wechselrichterstationen und Versorgungstechnik den verfügbaren Überwachungsinformationen des Eigentümers zu.",
+      "imageKey": "solar",
+      "imageAlt": "Solarmodulfelder an einem Energiestandort im Freien",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Überblick über Modulfeld- und Wechselrichterstandorte",
+          "description": "Lokalisieren Sie überwachte Geräte in der Standorthierarchie und prüfen Sie zuletzt verfügbare Umgebungs- oder Gerätedaten.",
+          "inputs": "Standortlayout, Gerätekennungen und freigegebene Telemetriefelder.",
+          "deliverables": "Navigation vom Modulfeld zum Gerät mit verfügbaren Datenansichten.",
+          "acceptance": "Gewählte Standort- und Gerätekennungen bleiben ansichtenübergreifend konsistent.",
+          "considerations": "Das visuelle Modell liefert keine Ertragsprognosen."
+        },
+        {
+          "title": "Umgebungskontext von Speichergehäusen",
+          "description": "Ordnen Sie verfügbare Temperatur-, Gas- oder Leckagebeobachtungen dem überwachten Gehäuse und Messpunkt zu.",
+          "inputs": "Gehäuseregister, Messpunktlayout und Messdefinitionen.",
+          "deliverables": "Mess- und Schwellenwertereignisansichten auf Gehäuseebene.",
+          "acceptance": "Ein Beispielereignis identifiziert seine konfigurierte Quelle und das Gehäuse.",
+          "considerations": "Überwachung ist von Brandschutz und Batteriesteuerung zu unterscheiden."
+        },
+        {
+          "title": "Kontext verteilter Wartung",
+          "description": "Verknüpfen Sie Geräte eines regionalen Portfolios mit Inspektionsbefunden und Wartungsreferenzen.",
+          "inputs": "Standort-Anlagen-Hierarchie und berechtigte Serviceendpunkte.",
+          "deliverables": "Portfolionavigation mit gerätebezogenen Servicelinks.",
+          "acceptance": "Benutzer erreichen den richtigen Standortdatensatz gemäß Zugriffsrolle.",
+          "considerations": "Anlagenzustand bedeutet nicht automatisch Fehlerdiagnose."
+        }
+      ]
+    },
+    {
+      "id": "wind",
+      "title": "Windparks und Turmausrüstung",
+      "intro": "Halten Sie Turbinen-, Turm- und Komponentenreferenzen mit Projektbeobachtungen und Inspektionsmaterial abgestimmt.",
+      "imageKey": "wind",
+      "imageAlt": "Windturbinen in offener Landschaft",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Kontext der Turmmessungen",
+          "description": "Ordnen Sie Turmneigungs- oder Schwingungsdaten der richtigen Turbine, dem Messpunkt und der Einbaureferenz zu.",
+          "inputs": "Turbinenkennungen, Punktausrichtung und Quellmessdaten.",
+          "deliverables": "Turmpunktansichten mit Ausrichtungs- und Trendreferenzen.",
+          "acceptance": "Angezeigte Punktausrichtung entspricht dem gelieferten Einbauplan.",
+          "considerations": "Eine Tragwerksbewertung erfordert das zuständige technische Verfahren."
+        },
+        {
+          "title": "Navigation zur Komponenteninspektion",
+          "description": "Navigieren Sie vom Turbinenobjekt zu ausgewählten Inspektionsnotizen oder Fotos seiner Komponenten.",
+          "inputs": "Komponentenregister und lizenzierte Inspektionsdokumentenquellen.",
+          "deliverables": "Komponentenbezogene Inspektionsnachweise und Revisionsdetails.",
+          "acceptance": "Eine Komponente öffnet ihre zugewiesene aktuelle Inspektionsreferenz.",
+          "considerations": "Modellgeometrie kann Komponenten außerhalb des vereinbarten Umfangs auslassen."
+        },
+        {
+          "title": "Standortwetterkontext für Untersuchungen",
+          "description": "Prüfen Sie lokale Wetteraufzeichnungen neben ausgewählten Geräteereignissen im Untersuchungszeitfenster.",
+          "inputs": "Wetterquellen, Anlagenereignisse und Zeitzonendefinitionen.",
+          "deliverables": "Zeitlich abgestimmte Geräte- und Wetterdatenansichten.",
+          "acceptance": "In den vereinbarten Ansichten wird derselbe Quellzeitraum gewählt.",
+          "considerations": "Korrelation belegt weder Ursache noch Fehlerdiagnose."
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Brücken, Tunnel und Verkehrsanlagen",
+      "intro": "Stellen Sie überwachte Tragwerkskomponenten und technische Anlagen mit Messungen und Inspektionsreferenzen dar.",
+      "imageKey": "bridge-infrastructure",
+      "imageAlt": "Straßenbrückendeck und Infrastruktur bei kaltem Wetter",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Navigation zu Brückenmesspunkten",
+          "description": "Lokalisieren Sie einen überwachten Pfeiler-, Lager- oder Deckpunkt und prüfen Sie verfügbare Bewegungs- oder Schwingungsdaten.",
+          "inputs": "Komponentenkennungen, Messpunktplan und Referenzzeichnungen.",
+          "deliverables": "Komponenten-Messwert-Navigation und Inspektionslinks.",
+          "acceptance": "Jeder Testpunkt führt zur abgenommenen Komponentenreferenz.",
+          "considerations": "Eine digitale Ansicht bescheinigt keine Tragwerkstauglichkeit."
+        },
+        {
+          "title": "Kontext technischer Tunnelausrüstung",
+          "description": "Ordnen Sie überwachte Pumpen, Umgebungspunkte und Technikräume entlang der definierten Tunnelstruktur an.",
+          "inputs": "Tunnelkilometrierung, Raumregister und Gerätezuordnungen.",
+          "deliverables": "Kilometrierungsbezogene Anlagen- und Geräteansichten.",
+          "acceptance": "Zugeordnete Anlagen erscheinen an vereinbarter Stationierung und im richtigen Raum.",
+          "considerations": "Vermessungsreferenz und Genauigkeit der Geräteposition benötigen Prüfung."
+        },
+        {
+          "title": "Arbeitsbereich für Inspektionshistorien",
+          "description": "Ordnen Sie ausgewählte Inspektionsbefunde einer Komponente und Messaufzeichnungen desselben Zeitraums zu.",
+          "inputs": "Inspektionsreferenzen, Komponentenkennungen und Beobachtungszeitstempel.",
+          "deliverables": "Komponentenhistorie mit nachvollziehbaren Quelldatenlinks.",
+          "acceptance": "Benutzer können einen angezeigten Befund zum Quelldatensatz zurückverfolgen.",
+          "considerations": "Technische Entscheidungen verbleiben bei qualifiziertem Projektpersonal."
+        }
+      ]
+    },
+    {
+      "id": "heritage",
+      "title": "Museen und historische Gebäude",
+      "intro": "Verknüpfen Sie Sammlungsräume, Bausubstanz und überwachte Umgebung, ohne Modelle als Erhaltungsnachweis darzustellen.",
+      "imageKey": "heritage-outdoor",
+      "imageAlt": "Historische steinerne Abteiruine mit umgebender Gartenanlage",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Umgebungskontext von Ausstellungs- und Depoträumen",
+          "description": "Navigieren Sie zwischen Sammlungsräumen und verfügbaren Temperatur-, Feuchte- oder Lichtaufzeichnungen.",
+          "inputs": "Raumpläne, Ausstellungs-/Lagerzonen und Messpunktzuweisungen.",
+          "deliverables": "Raumbezogene Umgebungstrends und Ereignisdaten.",
+          "acceptance": "Gewählte Raumgrenzen und Sensorzuweisungen entsprechen dem Register.",
+          "considerations": "Erhaltungsgrenzen legt die zuständige Fachperson fest."
+        },
+        {
+          "title": "Referenzen zur Überwachung der Bausubstanz",
+          "description": "Ordnen Sie vereinbarte Neigungs-, Schwingungs- oder Umgebungspunkte der betreffenden Wand, dem Turm oder Gebäudeelement zu.",
+          "inputs": "Gebäudeelementkennungen, Einbaureferenzen und Beobachtungsdaten.",
+          "deliverables": "Element-Messpunkt-Navigation mit Einbaudokumentenlinks.",
+          "acceptance": "Benutzer können jeden angezeigten Punkt anhand des Einbaunachweises prüfen.",
+          "considerations": "Gemessene Veränderung bedeutet nicht automatisch Schaden oder Instabilität."
+        },
+        {
+          "title": "Kontext der Konservierungsinspektion",
+          "description": "Ordnen Sie berechtigte Inspektionsnotizen und Fotos vereinbarten Räumen oder Gebäudeelementen zur gemeinsamen Prüfung zu.",
+          "inputs": "Inspektionsindex, Wiederverwendungsrechte und Zugriffsanforderungen.",
+          "deliverables": "Elementbezogene Erhaltungsaufzeichnungen mit Versionsreferenzen.",
+          "acceptance": "Das gewählte Element ruft seinen passenden freigegebenen Datensatz ab.",
+          "considerations": "Sensible Sammlungs- und Gebäudedaten erfordern Zugriffskontrollen."
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Gewächshäuser und Aquakulturanlagen",
+      "intro": "Strukturieren Sie Anbauabteile, Wassersysteme und überwachte Produktionszonen anhand aussagekräftiger Betriebsaufzeichnungen.",
+      "imageKey": "agriculture",
+      "imageAlt": "Gewächshauskonstruktion und Anbaureihen",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Aufzeichnungen nach Gewächshausabteil",
+          "description": "Zeigen Sie verfügbare Umgebungs- und Bodenmesswerte im zugehörigen Gewächshausabteil oder Anbaubereich.",
+          "inputs": "Abteilplan, Anbauzonenkennungen und Messpunktplan.",
+          "deliverables": "Zonennavigation mit hochgeladenen Umgebungs- und Bodendaten.",
+          "acceptance": "Jeder angezeigte Kanal behält Quelleinheit und Position bei.",
+          "considerations": "Ein Messpunkt belegt keine Bedingungen im gesamten Abteil."
+        },
+        {
+          "title": "Kontext von Aquakulturteichen und Geräten",
+          "description": "Verknüpfen Sie Teiche, Pumpen und verfügbare Wasserqualitätsdaten innerhalb der Anlagenstruktur des Eigentümers.",
+          "inputs": "Teichregister, Gerätebeziehungen und verfügbare Kanaldefinitionen.",
+          "deliverables": "Teich-Geräte-Ansichten mit nachvollziehbaren Überwachungsdaten.",
+          "acceptance": "Ein ausgewählter Teich zeigt seine zugewiesenen Probenahmereferenzen.",
+          "considerations": "Das visuelle Modell prognostiziert keine biologische Leistung.",
+          "imageKey": "aquaculture",
+          "imageAlt": "Aquakulturteiche im Freien mit Zugangswegen"
+        },
+        {
+          "title": "Anlageninspektions- und Servicehistorie",
+          "description": "Verknüpfen Sie Bewässerungs-, Lüftungs- oder Pumpenanlagen mit verfügbaren Inspektionen und Wartungsreferenzen.",
+          "inputs": "Anlagenhierarchie und berechtigte Inspektionsdatenquellen.",
+          "deliverables": "Geräteansichten mit quellenverknüpfter Servicehistorie.",
+          "acceptance": "Angezeigte Servicedatensätze entsprechen der ausgewählten Anlagenkennung.",
+          "considerations": "Aktuatorsteuerung erfordert eine eigens definierte Befehlsauslegung."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Projektumfang.\nVor der Umsetzung dokumentiert.",
+  "scopeIntro": "Diese Punkte sind in der Leistungsbeschreibung zu definieren und stellen keine feste Produktspezifikation dar.",
+  "rows": [
+    [
+      "Leistungsart",
+      "Kundenspezifische Softwareentwicklung; Funktionen werden je Projekt vereinbart"
+    ],
+    [
+      "Visueller Umfang",
+      "2D-, 3D- oder kombinierte Darstellung nach Prüfung von Modellen und Arbeitsabläufen"
+    ],
+    [
+      "Modelldaten",
+      "Vereinbarte Formate, Eigentum, Wiederverwendungsrechte und Konvertierungsumfang"
+    ],
+    [
+      "Datenintegration",
+      "Benannte Quellsysteme, Schnittstellen, Kennungen und Datenzuordnung"
+    ],
+    [
+      "Benutzerzugriff",
+      "Rollen, Authentifizierung und Berechtigungen gemäß Projektumfang"
+    ],
+    [
+      "Hosting",
+      "Kundenseitige oder vereinbarte Hosting-Umgebung; Betriebsverantwortlichkeiten werden festgelegt"
+    ],
+    [
+      "Verifizierung",
+      "Repräsentative Daten und dokumentierte Abnahmeszenarien"
+    ],
+    [
+      "Lieferumfang",
+      "Anwendungsbuild, Konfiguration und Dokumentation gemäß Vertrag"
+    ],
+    [
+      "Eigentum und Lizenzierung",
+      "Quellcode, Modelle, Drittanbieterlizenzen und Wiederverwendungsrechte werden schriftlich vereinbart"
+    ],
+    [
+      "Änderungsmanagement",
+      "Umfang, Zeitplan, Support und künftige Änderungen werden vertraglich vereinbart"
+    ]
+  ],
+  "handoverTitle": "Vom vereinbarten Umfang.\nZur dokumentierten Übergabe.",
+  "handoverIntro": "Legen Sie Lieferumfang und Betriebsverantwortlichkeiten gemeinsam fest.",
+  "handover": [
+    {
+      "title": "Prüfung und Prototyp",
+      "text": "Prüfen Sie repräsentative Modelle und Daten mit den vorgesehenen Nutzern, bevor der vollständige Visualisierungsumfang festgelegt wird."
+    },
+    {
+      "title": "Implementierung und Verifizierung",
+      "text": "Entwicklung der vereinbarten Schnittstellen und Ansichten mit anschließender Prüfung anhand der dokumentierten Abnahmeszenarien."
+    },
+    {
+      "title": "Übergabe und Support",
+      "text": "Bereitstellung des vertraglich vereinbarten Builds und der Dokumentation. Bereitstellung, Quellcoderechte, Wartung und Lizenzverantwortlichkeiten werden festgelegt."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Was liefert das erste Projekt?",
+      "a": "Eine definierte Anlagenstruktur, ausgewählte 2D- oder 3D-Ansichten, zugeordnete Datenverbindungen und vereinbarte Bedieninteraktionen. Die Leistungsbeschreibung benennt Modelldetails, Schnittstellen, Testszenarien und Übergabegegenstände für den ersten Anlagenumfang."
+    },
+    {
+      "q": "Ist dies eine Visualisierung oder eine physikalische Simulation?",
+      "a": "Die Dienstleistung beginnt mit vernetzter Anlagendarstellung und Betriebsvisualisierung. Physikalische Simulation, Zustandsschätzung, Prognosen oder Diagnosealgorithmen erfordern gesonderte Modelle, geeignete Eingaben und ausdrückliche Validierung."
+    },
+    {
+      "q": "Benötigen wir vor Beginn ein vollständiges 3D-Modell?",
+      "a": "Nein. Ein Projekt kann mit lizenzierten Grundrissen, Gerätediagrammen oder einem begrenzten Anlagenmodell beginnen. Der Detailgrad folgt der Betriebsaufgabe; ein komplexes Modell ist nur sinnvoll, wenn sein zusätzlicher Kontext diese Aufgabe unterstützt."
+    },
+    {
+      "q": "Können vorhandene BIM- oder CAD-Dateien weiterverwendet werden?",
+      "a": "Eigentum, erlaubte Wiederverwendung, Format, Geometriedetail und Konvertierungsaufwand können geprüft werden. Nach einer Konvertierung sollte die Zuordnung von Modellelementen zu betrieblichen Anlagenkennungen erhalten bleiben."
+    },
+    {
+      "q": "Können Hitelecom-Sensordaten im Modell erscheinen?",
+      "a": "Eine vereinbarte Hitelecom-Cloud- oder andere Empfangssystemintegration kann hochgeladene Überwachungsdaten und konfigurierte Schwellenwertereignisse liefern. Der Umfang definiert verfügbare Kanäle, Kennungszuordnung, Zeitstempel, Datenqualität und Aktualisierung."
+    },
+    {
+      "q": "Lassen sich SCADA-, BMS- oder Wartungssysteme des Kunden anbinden?",
+      "a": "Schnittstellen können anhand von API-Beispielen oder Datenauszügen und den Zugriffsanforderungen des Kunden bewertet werden. Protokollunterstützung, Authentifizierung, Lese-/Schreibgrenzen und maßgebliches Quellsystem werden je Integration definiert."
+    },
+    {
+      "q": "Wie werden verspätete oder fehlende Messwerte dargestellt?",
+      "a": "Der Datenvertrag definiert Quellzeitstempel, Qualitätskennzeichen und Veraltungsregeln. Diese Zustände sollten ausdrücklich angezeigt werden, statt eine ausbleibende Aktualisierung als normal oder sicher zu behandeln."
+    },
+    {
+      "q": "Entstehen Schwellenwertalarme im digitalen Zwilling?",
+      "a": "Sie können aus einer vorhandenen Überwachungsplattform oder einem separat definierten Regeldienst stammen. Das Projekt legt Auswertungsort, Ereigniszuführung zur Ansicht sowie Benachrichtigung und Quittierung fest."
+    },
+    {
+      "q": "Kann die Anwendung Geräte steuern?",
+      "a": "Steuerung gehört standardmäßig nicht zum Visualisierungsumfang. Jeder Befehlspfad benötigt eine ausdrückliche Funktionsauslegung, Berechtigungen, Verriegelungen, Betriebsverantwortung und gerätegerechte Prüfung."
+    },
+    {
+      "q": "Wie wird die Browserleistung abgenommen?",
+      "a": "Vereinbaren Sie repräsentatives Modell, Anlagenanzahl, Datenprofil, Zielgeräte und Interaktionen vor Entwicklungsbeginn. Prüfen Sie diese Szenarien mit der vorgeschlagenen Bereitstellungsarchitektur, statt pauschale Leistungsversprechen zu geben."
+    },
+    {
+      "q": "Wer erhält Quellcode, Modelle und Bereitstellungsunterlagen?",
+      "a": "Quellcodeübergabe, Modelleigentum, Wiederverwendungsrechte und Bereitstellungsdokumentation sind Vertragsgegenstände. Drittmodelle, Bibliotheken und Dienste behalten ihre Lizenzbedingungen; diese sollten vor Übergabe benannt sein."
+    },
+    {
+      "q": "Warum gibt es kein Produktdatenblatt oder einen festen Projektpreis?",
+      "a": "Dies ist eine individuelle Softwaredienstleistung. Leistungsbeschreibung, Schnittstellenliste, Liefergegenstände und Abnahmeplan definieren das Projekt; Kosten und Termin ergeben sich nach Prüfung dieses Umfangs."
+    }
+  ],
+  "enquiryIntro": "Teilen Sie uns die betrieblichen Fragestellungen, Modellbeispiele und verfügbaren Datenschnittstellen mit. Wir prüfen einen geeigneten Entwicklungsumfang und die für ein Angebot benötigten Angaben.",
+  "enquiryFields": [
+    {
+      "label": "Assets und Nutzer",
+      "placeholder": "Asset-Typen, Anzahl der Standorte und vorgesehene Nutzer"
+    },
+    {
+      "label": "Modelle und Visualisierungsumfang",
+      "placeholder": "CAD-/BIM-/2D-Ausgangsdaten, Rechte und benötigte Ansichten"
+    },
+    {
+      "label": "Datenquellen",
+      "placeholder": "Plattform, API-Beispiele, Kennungen und Aktualisierungsbedarf"
+    },
+    {
+      "label": "Lieferanforderungen",
+      "placeholder": "Hosting, Quellcoderechte und Abnahmeprioritäten"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-digital-twin.webp",
+  "imageWidth": 400,
+  "imageHeight": 345
+}

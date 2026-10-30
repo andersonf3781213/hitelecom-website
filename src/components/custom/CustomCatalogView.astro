@@ -1,0 +1,31 @@
+/** Custom Development 目录页（V132）：cid 256 总目录、278 软件开发、279 硬件开发与产品，7 语种。
+ * 结构化数据 CollectionPage+ItemList+BreadcrumbList。
+ * 注意：不得引入 product.css / sensor-catalog-layout.css（legacy 高优先级规则会压扁卡片，V131 教训）。 */
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CustomCatalog from './CustomCatalog.astro';
+import '../../styles/custom.css';
+import '../../styles/custom.css';
+const { catalog, ui, locale = 'en', cid = '256' } = Astro.props;
+const c = catalog;
+const prefix = locale === 'en' ? '' : `/${locale}`;
+const origin = 'https://www.hitelecom.com';
+const canonical = origin + prefix + '/product/lists/cid/' + cid;
+const shown = c.products.filter(p => String(cid) === '256' || p.categoryId === String(cid));
+const title = String(cid) === '256' ? c.title : c.categoryTitles[cid] + ' | Hitelecom';
+const desc = String(cid) === '256' ? c.metaDescription : c.categoryDescriptions[cid];
+const structured = { '@context': 'https://schema.org', '@graph': [
+  { '@type': 'CollectionPage', name: title, url: canonical },
+  { '@type': 'ItemList', name: c.categoryTitles[cid], numberOfItems: shown.length,
+    itemListElement: shown.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: origin + prefix + p.path })) },
+  { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: c.home, item: origin + prefix + '/' },
+    { '@type': 'ListItem', position: 2, name: c.categoryTitles[cid], item: canonical }] }
+] };
+const allLocales = ['en', 'zh', 'es', 'de', 'ja', 'fr', 'ru'];
+const langTargets = Object.fromEntries(allLocales.map(loc => [loc, `${loc === 'en' ? '' : `/${loc}`}/product/lists/cid/${cid}`]));
+---
+<BaseLayout locale={locale} title={title} description={desc} socialImage="/assets/original-hero-catalog.webp" langOverrides={langTargets}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(structured).replace(/</g, '\\u003c')}></script>
+  <CustomCatalog catalog={c} locale={locale} cid={cid}/>
+</BaseLayout>

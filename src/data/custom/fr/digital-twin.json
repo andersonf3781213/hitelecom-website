@@ -1,0 +1,632 @@
+{
+  "id": "digital-twin",
+  "slug": "digital-twin-development",
+  "kind": "Service",
+  "name": "Développement de jumeaux numériques",
+  "title": "Développement de jumeaux numériques | Vues connectées d’actifs et d’installations | Hitelecom",
+  "metaDescription": "Développement de jumeaux numériques sur mesure pour les actifs industriels, les bâtiments, les entrepôts et les infrastructures. Reliez modèles d’actifs, données de surveillance et processus de maintenance.",
+  "heroHeading": "Développement de\njumeaux numériques.",
+  "heroValue": "Le contexte d’exploitation.\nConnecté aux données de terrain.",
+  "heroDescription": "Réunissez équipements, espaces et relevés de surveillance dans une représentation numérique navigable. Hitelecom définit modèles d’actifs, vues 2D ou 3D, correspondances de télémesure et processus opérateurs selon vos installations et systèmes de données. Consultez les données transmises via une intégration convenue à Hitelecom Cloud ou à votre plateforme, avec les alarmes de seuil dans leur contexte matériel. Le détail du modèle, les connexions et la réception sont définis pour le projet.",
+  "caption": "Développement de jumeaux numériques",
+  "imageAlt": "Développement de jumeaux numériques",
+  "proof": [
+    {
+      "value": "Actifs",
+      "label": "Contexte numérique défini",
+      "note": "Convenir de la hiérarchie des actifs et du niveau de détail du modèle"
+    },
+    {
+      "value": "Données",
+      "label": "Télémétrie rattachée aux actifs",
+      "note": "Définir les sources, horodatages et critères de qualité des données"
+    },
+    {
+      "value": "Périmètre",
+      "label": "Livraison par projet",
+      "note": "Confirmer les fonctions, l’hébergement et les livrables"
+    }
+  ],
+  "featureTitle": "Des vues du modèle.\nÀ l’usage opérationnel.",
+  "featureIntro": "Construisez le contexte numérique utile aux opérateurs : quel actif transmet, où il se situe, ce qui a changé et quels relevés étayent l’action suivante. Commencez par un ensemble représentatif d’actifs avant d’étendre le modèle.",
+  "features": [
+    {
+      "title": "Identités et relations des actifs",
+      "text": "Structurez sites, bâtiments, systèmes, équipements et points de mesure avec des identifiants stables. Consignez les relations de localisation, d’alimentation ou de surveillance afin d’associer chaque valeur au bon actif physique."
+    },
+    {
+      "title": "Vues 2D et 3D adaptées à l’usage",
+      "text": "Choisissez plans d’étage, schémas d’équipement ou modèle 3D selon la tâche. Réutilisez les données CAO/BIM/modèles sous licence après examen de la géométrie, des conversions et de la navigation sur les appareils prévus."
+    },
+    {
+      "title": "Mesures avec provenance",
+      "text": "Présentez ensemble valeur, unité, horodatage et identité de la source. Distinguez les relevés actuels, retardés, absents et invalides au lieu d’afficher comme sain un actif qui ne transmet pas."
+    },
+    {
+      "title": "Contexte des seuils au niveau de l’actif",
+      "text": "Affichez les alarmes reçues à côté de la pièce, du composant ou de l’équipement concerné. Définissez limites, priorité, acquittement et intégration des notifications selon le processus de surveillance convenu."
+    },
+    {
+      "title": "Analyse historique",
+      "text": "Définissez sélection temporelle, tendances synchronisées et liens entre observations et événements enregistrés. Précisez conservation et sémantique d’échantillonnage pour comprendre lacunes, agrégations et états passés."
+    },
+    {
+      "title": "Liens d’inspection et de maintenance",
+      "text": "Reliez certains actifs aux plans, photos d’inspection et dossiers de maintenance par des identifiants et droits convenus. Le système source conserve la responsabilité de l’enregistrement de référence des ordres de travail."
+    },
+    {
+      "title": "Vues opérationnelles par rôle",
+      "text": "Définissez les sites, détails et actions accessibles à chaque utilisateur. Distinguez l’investigation opérateur, la synthèse de gestion et l’administration technique sans exposer les dossiers d’autres installations."
+    },
+    {
+      "title": "Intégration et transfert versionnés",
+      "text": "Documentez versions de modèle, correspondances des points, contrats API et configuration de déploiement. Convenez des droits sur le code et les modèles, des licences tierces et des responsabilités de maintenance dans le cahier des charges contractuel."
+    }
+  ],
+  "planningTitle": "Définissez le modèle.\nPuis son usage.",
+  "planningIntro": "Un cahier des charges utile distingue la scène visuelle, les données mesurées et les éventuels calculs ou simulations.",
+  "planning": [
+    {
+      "title": "Identifier les questions d’exploitation",
+      "text": "Recensez les décisions, utilisateurs et informations nécessaires. Distinguez visualisation opérationnelle, simulation, prévision et commande.",
+      "brief": "Utilisateurs · Actifs · Décisions · Limites fonctionnelles"
+    },
+    {
+      "title": "Examiner les modèles et données sources",
+      "text": "Évaluez les formats de modèles, géométries, autorisations et données de télémétrie disponibles. Définissez le comportement en présence de données manquantes ou obsolètes.",
+      "brief": "Exemples de modèles · API source · Identifiants · Qualité des données"
+    },
+    {
+      "title": "Définir les conditions de réception",
+      "text": "Convenez de jeux de données représentatifs, des interactions, des appareils pris en charge et des scénarios de revue avant développement.",
+      "brief": "Données d’essai · Objectifs de performance · Revue utilisateur · Remise des livrables"
+    }
+  ],
+  "applicationsTitle": "Des actifs physiques.\nUn contexte numérique utile.",
+  "applicationsIntro": "Découvrez des processus concrets dans douze environnements d’exploitation. Chaque exemple précise les données d’entrée, le résultat proposé et un contrôle de réception. Ce sont des périmètres de développement, pas des déploiements clients réalisés.",
+  "groups": [
+    {
+      "id": "production",
+      "title": "Usines et équipements de procédé",
+      "intro": "Organisez les actifs par ligne, cellule et utilité pour étudier les conditions sans perdre le contexte matériel.",
+      "imageKey": "process-charging",
+      "imageAlt": "Cuve de procédé, tuyauterie raccordée et accès de maintenance",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Vue d’état de ligne de production",
+          "description": "Naviguez d’une ligne vers les équipements et points de mesure associés à une anomalie d’exploitation.",
+          "inputs": "Hiérarchie des lignes, repères d’équipement et exemples de relevés.",
+          "deliverables": "Navigation ligne-équipement avec valeurs horodatées.",
+          "acceptance": "Une valeur sélectionnée correspond au repère d’équipement convenu.",
+          "considerations": "L’état opérationnel et l’état de maintenance nécessitent des définitions distinctes."
+        },
+        {
+          "title": "Relations des utilités partagées",
+          "description": "Montrez quels compresseurs, pompes ou branches d’utilités surveillés alimentent les zones représentées.",
+          "inputs": "Plans d’utilités, relations entre actifs et mesures disponibles.",
+          "deliverables": "Relations d’alimentation avec tendances d’état associées.",
+          "acceptance": "La sélection d’une utilité identifie ses zones aval documentées.",
+          "considerations": "Le modèle de relations n’est pas une simulation de procédé."
+        },
+        {
+          "title": "Espace d’investigation de maintenance",
+          "description": "Réunissez les plans, événements et inspections de l’actif choisi dans un même parcours d’analyse.",
+          "inputs": "Registre des actifs, liens documentaires et exemples d’API de maintenance.",
+          "deliverables": "Panneau de dossier d’actif avec liens sources autorisés.",
+          "acceptance": "Les utilisateurs ouvrent le bon dossier selon leurs droits.",
+          "considerations": "La responsabilité des ordres de travail reste au système source désigné."
+        }
+      ]
+    },
+    {
+      "id": "warehouse",
+      "title": "Entrepôts et stockage automatisé",
+      "intro": "Reliez rangées de racks, zones de stockage et équipements de manutention aux mesures et inspections de chaque emplacement.",
+      "imageKey": "warehouse-aisle",
+      "imageAlt": "Allée d’entrepôt avec rayonnages et marchandises",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Contexte de surveillance des racks et allées",
+          "description": "Localisez la travée associée à un événement d’inclinaison ou de vibration et consultez son historique de mesure.",
+          "inputs": "Plan des racks, identifiants de travées et relevés d’inclinaison/vibration.",
+          "deliverables": "Navigation rack-point avec événements et tendances.",
+          "acceptance": "Un événement d’essai de travée ne met en évidence que la travée correspondante.",
+          "considerations": "Un mouvement mesuré ne suffit pas à établir la sécurité structurelle."
+        },
+        {
+          "title": "Vue environnementale des zones de stockage",
+          "description": "Présentez les températures et humidités transmises dans les locaux, allées ou zones appropriés.",
+          "inputs": "Limites des zones, implantation des capteurs et relevés environnementaux.",
+          "deliverables": "Vues par zone avec horodatages sources et liens vers les tendances.",
+          "acceptance": "Les points absents ou périmés restent distincts des valeurs actuelles.",
+          "considerations": "Un capteur ne représente pas chaque emplacement d’une zone."
+        },
+        {
+          "title": "Contexte d’inspection des équipements de manutention",
+          "description": "Associez convoyeurs, élévateurs ou navettes aux notes d’inspection et états opérationnels reçus.",
+          "inputs": "Hiérarchie des équipements, inspections et interfaces approuvées.",
+          "deliverables": "Navigation par équipement avec preuves d’inspection associées.",
+          "acceptance": "Un composant sélectionné ouvre son dossier d’inspection correspondant.",
+          "considerations": "Les commandes machine et fonctions de sécurité nécessitent un périmètre distinct."
+        }
+      ]
+    },
+    {
+      "id": "buildings",
+      "title": "Bâtiments tertiaires et campus",
+      "intro": "Utilisez une structure bâtiment-étage-pièce pour contextualiser les observations et dossiers de service.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Bâtiment de campus et cour paysagée",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Investigation environnementale par pièce",
+          "description": "Passez d’un étage aux points de qualité d’air ou de température de la pièce signalée.",
+          "inputs": "Plans d’étage sous licence, identifiants des pièces et correspondances capteur-pièce.",
+          "deliverables": "Navigation par pièce avec mesures environnementales disponibles.",
+          "acceptance": "Une pièce sélectionnée n’affiche que ses points de mesure attribués.",
+          "considerations": "L’exposition des capteurs et les limites des pièces influencent l’interprétation."
+        },
+        {
+          "title": "Contexte des équipements de locaux techniques",
+          "description": "Reliez les équipements CVC et d’eau aux espaces desservis et à leurs relevés d’état disponibles.",
+          "inputs": "Schémas techniques, identifiants des équipements et relations de desserte.",
+          "deliverables": "Relations équipement-espace et panneaux d’état.",
+          "acceptance": "Une relation de desserte connue apparaît de manière cohérente dans les vues.",
+          "considerations": "La simulation thermique ou aéraulique constitue une tâche distincte."
+        },
+        {
+          "title": "Navigation des dossiers de service des installations",
+          "description": "Permettez à l’équipe d’accéder aux notes de maintenance, manuels ou inspections depuis l’objet concerné.",
+          "inputs": "Index documentaire des actifs et exigences de rôle d’accès.",
+          "deliverables": "Liens à accès contrôlé depuis les objets pièces et équipements.",
+          "acceptance": "Les utilisateurs non autorisés ne peuvent pas ouvrir les dossiers restreints.",
+          "considerations": "La révision et la responsabilité documentaire doivent être traçables."
+        }
+      ]
+    },
+    {
+      "id": "data-centres",
+      "title": "Centres de données et locaux techniques",
+      "intro": "Reliez rangées, baies et équipements de soutien à des points définis pour cibler l’analyse opérationnelle.",
+      "imageKey": "data-center",
+      "imageAlt": "Centre de données moderne avec baies symétriques et allée centrale de refroidissement dégagée",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Anomalies environnementales des baies",
+          "description": "Localisez la baie ou l’allée associée à un dépassement de température ou d’humidité.",
+          "inputs": "Registre des baies, positions des points et exemples d’événements.",
+          "deliverables": "Sélection d’événements par baie et tendances environnementales.",
+          "acceptance": "Les événements d’essai correspondent à la baie et au point attribués.",
+          "considerations": "L’emplacement du point est important ; la vue n’est pas un modèle de refroidissement."
+        },
+        {
+          "title": "Contexte d’investigation des fuites d’eau",
+          "description": "Affichez un événement de fuite reçu dans le contexte du local, de la zone ou du chemin de câble surveillé.",
+          "inputs": "Plan des points de fuite, modèle des pièces et correspondances d’événements.",
+          "deliverables": "Contexte du point de fuite avec horodatage et liens d’inspection.",
+          "acceptance": "L’événement met en évidence l’emplacement associé sans suggérer une couverture non observée.",
+          "considerations": "La couverture dépend de la disposition des capteurs installés."
+        },
+        {
+          "title": "Vues des dossiers d’équipements de soutien",
+          "description": "Organisez les actifs de refroidissement, d’alimentation auxiliaire et de pompage avec les dossiers sources autorisés.",
+          "inputs": "Relations entre équipements et interfaces sources approuvées.",
+          "deliverables": "Hiérarchie d’actifs avec liens opérationnels et de maintenance.",
+          "acceptance": "L’identité enregistrée correspond à l’objet sélectionné.",
+          "considerations": "Cette fonction ne remplace pas les systèmes DCIM, de protection ou de commande."
+        }
+      ]
+    },
+    {
+      "id": "laboratories",
+      "title": "Laboratoires et stockage pharmaceutique",
+      "intro": "Placez locaux, enceintes et équipements de stockage près de leurs conditions enregistrées et de leur historique d’inspection.",
+      "imageKey": "laboratory-storage",
+      "imageAlt": "Zone de laboratoire avec réfrigérateurs et équipements de stockage d’échantillons",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Contexte environnemental des locaux contrôlés",
+          "description": "Examinez les conditions transmises par local ou zone avec horodatages et identité des capteurs.",
+          "inputs": "Registre des pièces, attribution des points et données environnementales.",
+          "deliverables": "Panneaux par pièce avec tendances et indicateurs de qualité des sources.",
+          "acceptance": "Les utilisateurs distinguent les mesures valides des données absentes ou retardées.",
+          "considerations": "La visualisation seule n’implique aucune validation réglementaire."
+        },
+        {
+          "title": "Accès aux dossiers d’enceintes et de congélateurs",
+          "description": "Reliez les enceintes ou congélateurs surveillés aux conditions enregistrées, références d’étalonnage et documents de maintenance.",
+          "inputs": "Identifiants d’équipement, points de surveillance et droits documentaires.",
+          "deliverables": "Vues d’équipement avec liens approuvés vers relevés et documents.",
+          "acceptance": "Un actif d’essai ouvre ses relevés et références attribués.",
+          "considerations": "L’intégrité des données et la signature électronique nécessitent un périmètre explicite."
+        },
+        {
+          "title": "Espace d’analyse des excursions",
+          "description": "Présentez une période d’excursion avec les équipements concernés et les dossiers d’investigation disponibles.",
+          "inputs": "Horodatages d’événements, correspondances d’équipements et références d’investigation.",
+          "deliverables": "Tendances synchronisées et liens contextuels vers les relevés.",
+          "acceptance": "La fenêtre sélectionnée correspond aux relevés sources reçus.",
+          "considerations": "Les décisions de traitement restent à l’équipe qualité responsable."
+        }
+      ]
+    },
+    {
+      "id": "water-supply",
+      "title": "Installations de pompage et de distribution d’eau",
+      "intro": "Représentez pompes, réservoirs et raccordements surveillés à partir du registre d’actifs fourni.",
+      "imageKey": "water-indoor",
+      "imageAlt": "Équipements de pompage, réservoirs et tuyauteries en intérieur",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Analyse d’état des stations de pompage",
+          "description": "Naviguez entre les pompes surveillées et leurs relevés disponibles de pression, température, vibration ou état.",
+          "inputs": "Liste des pompes, correspondances des points et données de canaux disponibles.",
+          "deliverables": "Mesures par pompe avec accès à l’historique.",
+          "acceptance": "Une pompe sélectionnée affiche ses canaux associés vérifiés.",
+          "considerations": "Les canaux disponibles dépendent des instruments installés."
+        },
+        {
+          "title": "Contexte des réservoirs et équipements de transfert",
+          "description": "Reliez réservoirs, pompes de transfert et points de niveau au plan utilisé par l’exploitation.",
+          "inputs": "Identifiants de réservoirs, plans de raccordement et relevés de niveau.",
+          "deliverables": "Relations réservoir-équipement et panneaux d’historique de niveau.",
+          "acceptance": "Les relations du modèle correspondent au plan d’installation accepté.",
+          "considerations": "La modélisation hydraulique et l’actionnement distant sont des périmètres distincts."
+        },
+        {
+          "title": "Corrélation des inspections et événements",
+          "description": "Réunissez un événement de pompe ou de vanne, sa dernière inspection et ses observations d’exploitation.",
+          "inputs": "Références d’événements, dates d’inspection et identifiants d’actifs.",
+          "deliverables": "Panneau d’investigation avec relevés sources ordonnés.",
+          "acceptance": "L’ordre des relevés préserve l’heure source et l’identité des événements.",
+          "considerations": "La télémesure seule ne permet pas de déduire l’état d’inspection."
+        }
+      ]
+    },
+    {
+      "id": "wastewater",
+      "title": "Actifs d’assainissement et de traitement",
+      "intro": "Reliez unités de traitement et équipements aux relevés tout en préservant les limites des procédés et des données.",
+      "imageKey": "treatment-manifold",
+      "imageAlt": "Cuves de traitement d’eau et collecteurs en acier inoxydable",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Vue de mesure des unités de traitement",
+          "description": "Organisez les mesures reçues selon les unités et points d’échantillonnage identifiés par l’exploitant.",
+          "inputs": "Hiérarchie des unités, registre des points et définitions des mesures.",
+          "deliverables": "Panneaux d’unités avec unités de mesure et horodatages sources.",
+          "acceptance": "Noms, unités de mesure et associations correspondent au registre approuvé.",
+          "considerations": "Le calcul des performances de traitement nécessite une base convenue."
+        },
+        {
+          "title": "Dossiers des équipements de manipulation chimique",
+          "description": "Reliez les équipements de dosage aux relevés disponibles de pression, d’état et de maintenance.",
+          "inputs": "Liste des actifs de dosage et interfaces autorisées.",
+          "deliverables": "Contexte des équipements de dosage avec informations d’état reçues.",
+          "acceptance": "Un relevé source atteint le bon objet d’équipement.",
+          "considerations": "La commande du dosage et l’adéquation en atmosphère explosible sont des questions distinctes."
+        },
+        {
+          "title": "Contexte de préparation des accès de maintenance",
+          "description": "Associez vues d’installation, consignes d’accès et photos d’inspection pour certaines interventions.",
+          "inputs": "Plan d’installation, consignes d’accès approuvées et images d’inspection.",
+          "deliverables": "Liens contextuels vers inspections et informations d’accès.",
+          "acceptance": "Les utilisateurs retrouvent la consigne approuvée actuelle de l’actif sélectionné.",
+          "considerations": "L’application n’autorise ni l’accès ni les travaux de maintenance."
+        }
+      ]
+    },
+    {
+      "id": "solar-storage",
+      "title": "Sites solaires et de stockage d’énergie",
+      "intro": "Organisez champs solaires, stations d’onduleurs et équipements auxiliaires selon les informations disponibles.",
+      "imageKey": "solar",
+      "imageAlt": "Champ de panneaux solaires sur un site énergétique extérieur",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Vue d’ensemble des champs et onduleurs",
+          "description": "Localisez les équipements surveillés et examinez leurs derniers relevés environnementaux ou matériels disponibles.",
+          "inputs": "Plan du site, identifiants d’équipement et champs de télémesure approuvés.",
+          "deliverables": "Navigation champ-équipement avec panneaux de données disponibles.",
+          "acceptance": "Les identifiants des sites et équipements restent cohérents entre panneaux.",
+          "considerations": "Le modèle visuel ne permet pas de déduire des prévisions de rendement."
+        },
+        {
+          "title": "Contexte environnemental des enceintes de stockage",
+          "description": "Associez les observations de température, de gaz ou de fuite à leur enceinte et point de mesure.",
+          "inputs": "Registre des enceintes, implantation des points et définitions des mesures.",
+          "deliverables": "Vues des mesures et événements de seuil par enceinte.",
+          "acceptance": "Un événement d’essai identifie sa source et son enceinte configurées.",
+          "considerations": "La surveillance se distingue de la protection incendie et de la commande des batteries."
+        },
+        {
+          "title": "Contexte de maintenance répartie",
+          "description": "Reliez équipements, constats d’inspection et références de maintenance d’un parc régional.",
+          "inputs": "Hiérarchie site-actif et interfaces autorisées des dossiers de service.",
+          "deliverables": "Navigation dans le parc avec liens de maintenance par équipement.",
+          "acceptance": "Les utilisateurs accèdent au bon dossier de site selon leur rôle.",
+          "considerations": "Un état d’actif n’est pas automatiquement un diagnostic de défaillance."
+        }
+      ]
+    },
+    {
+      "id": "wind",
+      "title": "Parcs éoliens et équipements de mâts",
+      "intro": "Alignez les références de turbines, mâts et composants avec les observations et inspections fournies.",
+      "imageKey": "wind",
+      "imageAlt": "Éoliennes dans un paysage ouvert",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Contexte des mesures sur les mâts",
+          "description": "Associez les relevés d’inclinaison ou de vibration au bon aérogénérateur, point et dossier d’installation.",
+          "inputs": "Identifiants des turbines, orientation des points et données sources.",
+          "deliverables": "Vues des points du mât avec orientation et références de tendances.",
+          "acceptance": "L’orientation affichée correspond au tableau d’installation fourni.",
+          "considerations": "L’évaluation structurelle exige la méthode d’ingénierie appropriée."
+        },
+        {
+          "title": "Navigation des inspections de composants",
+          "description": "Naviguez d’une turbine vers les notes ou photos d’inspection de ses composants sélectionnés.",
+          "inputs": "Registre des composants et sources documentaires d’inspection sous licence.",
+          "deliverables": "Preuves d’inspection liées aux composants et détails de révision.",
+          "acceptance": "Un composant ouvre sa référence d’inspection actuelle attribuée.",
+          "considerations": "La géométrie peut omettre les composants hors périmètre convenu."
+        },
+        {
+          "title": "Contexte météorologique pour investigation",
+          "description": "Examinez les relevés météorologiques locaux disponibles aux côtés des événements pendant la période étudiée.",
+          "inputs": "Sources météo, événements des actifs et définitions des fuseaux horaires.",
+          "deliverables": "Panneaux synchronisés de relevés d’équipement et de météo.",
+          "acceptance": "La même période source est sélectionnée dans les panneaux convenus.",
+          "considerations": "Une corrélation ne prouve ni une cause ni un diagnostic."
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Ponts, tunnels et installations de transport",
+      "intro": "Représentez les éléments structurels et actifs techniques avec leurs mesures et références d’inspection.",
+      "imageKey": "bridge-infrastructure",
+      "imageAlt": "Tablier de pont routier et infrastructures par temps froid",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Navigation des points de surveillance de pont",
+          "description": "Localisez une pile, un appui ou un point de tablier surveillé et examinez son historique disponible de mouvement ou de vibration.",
+          "inputs": "Identifiants de composants, tableau des points et plans de référence.",
+          "deliverables": "Navigation composant-mesure et liens d’inspection.",
+          "acceptance": "Chaque point d’essai correspond à la référence de composant acceptée.",
+          "considerations": "Une vue numérique ne certifie pas l’aptitude structurelle."
+        },
+        {
+          "title": "Contexte des équipements techniques de tunnels",
+          "description": "Organisez pompes, points environnementaux et locaux selon la structure définie du tunnel.",
+          "inputs": "Chaînage du tunnel, registre des locaux et correspondances des équipements.",
+          "deliverables": "Vues d’installation et d’équipement liées au chaînage.",
+          "acceptance": "Les actifs apparaissent au chaînage et dans le local convenus.",
+          "considerations": "Le référentiel topographique et la précision de localisation doivent être examinés."
+        },
+        {
+          "title": "Espace d’historique des inspections",
+          "description": "Reliez des constats d’inspection à un composant et aux relevés disponibles sur la même période.",
+          "inputs": "Références d’inspection, identifiants de composants et horodatages d’observation.",
+          "deliverables": "Historique de composant avec liens traçables vers les relevés sources.",
+          "acceptance": "Les utilisateurs peuvent remonter du constat affiché au relevé source.",
+          "considerations": "Les décisions d’ingénierie restent aux personnes qualifiées du projet."
+        }
+      ]
+    },
+    {
+      "id": "heritage",
+      "title": "Musées et bâtiments patrimoniaux",
+      "intro": "Reliez espaces de collection, bâti et environnement surveillé sans présenter les modèles illustratifs comme preuves de conservation.",
+      "imageKey": "heritage-outdoor",
+      "imageAlt": "Ruines d’une abbaye en pierre et espaces paysagers environnants",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Contexte environnemental des galeries et réserves",
+          "description": "Naviguez entre les salles de collections et leurs relevés disponibles de température, d’humidité ou de lumière.",
+          "inputs": "Plans des salles, zones d’exposition/stockage et attribution des points.",
+          "deliverables": "Tendances environnementales et événements liés aux espaces.",
+          "acceptance": "Les limites des pièces et attributions des capteurs correspondent au registre.",
+          "considerations": "Le spécialiste responsable fixe les limites de conservation."
+        },
+        {
+          "title": "Références de surveillance du bâti",
+          "description": "Associez les points convenus d’inclinaison, de vibration ou d’environnement au mur, à la tour ou à l’élément concerné.",
+          "inputs": "Identifiants d’éléments bâtis, références d’installation et relevés d’observation.",
+          "deliverables": "Navigation élément-point avec liens vers les dossiers d’installation.",
+          "acceptance": "Chaque point affiché peut être vérifié dans son dossier d’installation.",
+          "considerations": "Une variation mesurée ne signifie pas automatiquement dommage ou instabilité."
+        },
+        {
+          "title": "Contexte des inspections de conservation",
+          "description": "Associez des notes et photos autorisées aux espaces ou éléments convenus pour un examen coordonné.",
+          "inputs": "Index d’inspections, droits de réutilisation et exigences d’accès.",
+          "deliverables": "Dossiers de conservation liés aux éléments avec références de version.",
+          "acceptance": "L’élément sélectionné récupère son dossier approuvé correspondant.",
+          "considerations": "Les dossiers sensibles des collections et bâtiments nécessitent un contrôle d’accès."
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Serres et installations aquacoles",
+      "intro": "Structurez compartiments de culture, systèmes d’eau et zones surveillées selon des relevés opérationnels utiles.",
+      "imageKey": "agriculture",
+      "imageAlt": "Structure de serre et rangées de cultures",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Relevés des compartiments de serre",
+          "description": "Présentez les mesures disponibles d’environnement et de sol dans les compartiments ou zones de culture.",
+          "inputs": "Plan des compartiments, identifiants de zones et tableau des points.",
+          "deliverables": "Navigation par zone avec relevés environnementaux et de sol transmis.",
+          "acceptance": "Chaque canal affiché conserve son unité source et sa position.",
+          "considerations": "Un point ne suffit pas à caractériser tout un compartiment."
+        },
+        {
+          "title": "Contexte des bassins et équipements aquacoles",
+          "description": "Associez bassins, pompes et relevés de qualité d’eau dans la structure de l’installation.",
+          "inputs": "Registre des bassins, relations entre équipements et canaux disponibles.",
+          "deliverables": "Vues bassin-équipement avec relevés de surveillance traçables.",
+          "acceptance": "Un bassin sélectionné affiche ses références de points d’échantillonnage.",
+          "considerations": "Le modèle visuel ne prédit pas les performances biologiques.",
+          "imageKey": "aquaculture",
+          "imageAlt": "Bassins aquacoles extérieurs avec chemins d’accès"
+        },
+        {
+          "title": "Historique d’inspection et de maintenance de l’installation",
+          "description": "Reliez actifs d’irrigation, de ventilation ou de pompage aux inspections et références disponibles.",
+          "inputs": "Hiérarchie des actifs et sources autorisées des dossiers d’inspection.",
+          "deliverables": "Vues d’équipement avec historique de service lié aux sources.",
+          "acceptance": "Les dossiers affichés correspondent à l’identifiant sélectionné.",
+          "considerations": "La commande d’actionneurs nécessite sa propre conception fonctionnelle."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Le périmètre du projet.\nDocumenté avant réalisation.",
+  "scopeIntro": "Ces éléments sont à définir dans le cahier des charges contractuel ; ils ne constituent pas une spécification produit standard.",
+  "rows": [
+    [
+      "Type de prestation",
+      "Développement logiciel sur mesure ; fonctions convenues par projet"
+    ],
+    [
+      "Périmètre visuel",
+      "Présentation 2D, 3D ou combinée après examen des modèles et processus"
+    ],
+    [
+      "Modèles fournis",
+      "Formats, propriété, droits de réutilisation et périmètre de conversion convenus"
+    ],
+    [
+      "Intégration des données",
+      "Systèmes sources nommés, interfaces, identifiants et correspondances de données"
+    ],
+    [
+      "Accès utilisateurs",
+      "Rôles, authentification et droits définis dans le périmètre du projet"
+    ],
+    [
+      "Hébergement",
+      "Environnement client ou hébergement convenu ; responsabilités d’exploitation précisées"
+    ],
+    [
+      "Vérification",
+      "Données représentatives et scénarios de réception documentés"
+    ],
+    [
+      "Livrables",
+      "Version de l’application, configuration et documentation prévues au contrat"
+    ],
+    [
+      "Propriété et licences",
+      "Code source, modèles, licences tierces et droits de réutilisation convenus par écrit"
+    ],
+    [
+      "Gestion des modifications",
+      "Périmètre, calendrier, support et évolutions futures convenus commercialement"
+    ]
+  ],
+  "handoverTitle": "Du périmètre convenu.\nÀ une remise documentée.",
+  "handoverIntro": "Définissez ensemble les livrables et les responsabilités d’exploitation.",
+  "handover": [
+    {
+      "title": "Revue et prototype",
+      "text": "Examinez des modèles et données représentatifs avec les utilisateurs concernés avant de valider tout le périmètre visuel."
+    },
+    {
+      "title": "Réalisation et vérification",
+      "text": "Développez les interfaces et vues convenues, puis testez-les selon les scénarios de réception documentés."
+    },
+    {
+      "title": "Remise et support",
+      "text": "Remettez la version et la documentation contractuelles. Précisez le déploiement, les droits sur le code source, la maintenance et les responsabilités de licence."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Que livrera le premier projet ?",
+      "a": "Une structure d’actifs définie, des vues 2D ou 3D choisies, des connexions de données associées et des interactions opérateurs convenues. Le cahier des charges contractuel identifie le détail du modèle, les interfaces, les scénarios d’essai et les éléments à remettre pour le premier ensemble d’actifs."
+    },
+    {
+      "q": "S’agit-il de visualisation ou de simulation physique ?",
+      "a": "Le service commence par une représentation connectée et une visualisation opérationnelle. Simulation physique, estimation d’état, prévisions ou diagnostics nécessitent des modèles distincts, des données adaptées et une validation explicite."
+    },
+    {
+      "q": "Faut-il un modèle 3D complet pour commencer ?",
+      "a": "Non. Le projet peut partir de plans d’étage sous licence, de schémas ou d’un modèle limité. Le détail suit la tâche opérationnelle ; un modèle complexe n’est utile que si son contexte supplémentaire sert cette tâche."
+    },
+    {
+      "q": "Peut-on réutiliser des fichiers BIM ou CAO existants ?",
+      "a": "Leur propriété, droits de réutilisation, format, détail géométrique et effort de conversion peuvent être évalués. Le projet doit conserver la correspondance entre éléments du modèle et identifiants opérationnels après conversion."
+    },
+    {
+      "q": "Les données des capteurs Hitelecom peuvent-elles apparaître dans le modèle ?",
+      "a": "Une intégration convenue à Hitelecom Cloud ou à un autre système récepteur peut fournir les relevés transmis et événements de seuil configurés. Le périmètre définit les canaux, les identités, horodatages, qualités de données et modalités de rafraîchissement."
+    },
+    {
+      "q": "Peut-on connecter les systèmes SCADA, GTB ou de maintenance du client ?",
+      "a": "Les interfaces peuvent être évaluées à l’aide d’exemples d’API ou d’extraits de données et des exigences d’accès du client. Protocoles, authentification, limites de lecture/écriture et système source responsable sont définis par intégration."
+    },
+    {
+      "q": "Comment afficher les mesures retardées ou absentes ?",
+      "a": "Le contrat de données définit horodatages sources, indicateurs de qualité et règles de péremption. L’interface doit afficher explicitement ces états sans assimiler une absence de mise à jour à une situation normale ou sûre."
+    },
+    {
+      "q": "Les alarmes de seuil sont-elles générées dans le jumeau numérique ?",
+      "a": "Elles peuvent provenir d’une plateforme de surveillance existante ou d’un moteur de règles spécifié séparément. Le projet définit où évaluer les seuils, comment transmettre les événements et comment notifier ou acquitter."
+    },
+    {
+      "q": "L’application peut-elle commander les équipements ?",
+      "a": "La commande n’appartient pas par défaut au périmètre de visualisation. Toute voie de commande nécessite une conception explicite, des droits, interverrouillages, responsabilités opérationnelles et vérifications adaptés."
+    },
+    {
+      "q": "Comment réceptionner les performances dans le navigateur ?",
+      "a": "Convenez avant développement du modèle représentatif, du nombre d’actifs, du profil de données, des appareils cibles et des interactions. Testez ces scénarios avec l’architecture prévue plutôt que promettre une performance universelle."
+    },
+    {
+      "q": "Qui reçoit le code source, les modèles et les éléments de déploiement ?",
+      "a": "La remise des sources, la propriété des modèles, les droits de réutilisation et les documents de déploiement relèvent du contrat. Les modèles, bibliothèques et services tiers conservent leurs licences, à identifier avant transfert."
+    },
+    {
+      "q": "Pourquoi n’y a-t-il ni fiche produit ni prix forfaitaire ?",
+      "a": "C’est un service logiciel sur mesure. Le cahier des charges, le tableau des interfaces, les livrables et le plan de réception définissent le projet réel ; coûts et délais suivent l’examen du périmètre."
+    }
+  ],
+  "enquiryIntro": "Présentez les questions d’exploitation, des exemples de modèles et les interfaces de données disponibles. Nous pourrons évaluer un périmètre adapté et les informations nécessaires à une proposition.",
+  "enquiryFields": [
+    {
+      "label": "Actifs et utilisateurs",
+      "placeholder": "Types d’actifs, nombre de sites et utilisateurs concernés"
+    },
+    {
+      "label": "Modèles et périmètre visuel",
+      "placeholder": "Données CAD/BIM/2D, droits et vues requises"
+    },
+    {
+      "label": "Sources de données",
+      "placeholder": "Plateforme, exemples d’API, identifiants et besoins d’actualisation"
+    },
+    {
+      "label": "Exigences de livraison",
+      "placeholder": "Hébergement, droits sur le code source et priorités de réception"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-digital-twin.webp",
+  "imageWidth": 400,
+  "imageHeight": 345
+}

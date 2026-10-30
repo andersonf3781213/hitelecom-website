@@ -1,0 +1,630 @@
+{
+  "id": "gis-dashboard",
+  "slug": "gis-dashboard-development",
+  "kind": "Service",
+  "name": "GIS Dashboard Development",
+  "title": "Custom GIS Dashboards | IoT Maps & Distributed Asset Views | Hitelecom",
+  "metaDescription": "Custom GIS dashboards for distributed assets and IoT monitoring. Define map layers, location sources, event workflows and platform integration for your operation.",
+  "heroHeading": "GIS dashboard\ndevelopment.",
+  "heroValue": "Location context.\nFor connected operations.",
+  "heroDescription": "Give distributed assets and monitoring events a shared geographic context. Hitelecom scopes custom GIS dashboards around your site register, location sources and operating workflow: find the relevant point, inspect its uploaded data, review its event history and pass the record to the responsible team. An agreed Hitelecom Cloud or customer-platform integration can provide online monitoring data and configured threshold notifications. Map functions, data sources and access are defined for each project.",
+  "caption": "GIS Dashboard Development",
+  "imageAlt": "GIS Dashboard Development",
+  "proof": [
+    {
+      "value": "Maps",
+      "label": "Agreed geographic context",
+      "note": "Specify layers, coordinates and usage rights"
+    },
+    {
+      "value": "Data",
+      "label": "Location-linked records",
+      "note": "Map identifiers, timestamps and quality"
+    },
+    {
+      "value": "Workflow",
+      "label": "Defined operator actions",
+      "note": "Agree filters, roles and event handling"
+    }
+  ],
+  "featureTitle": "An operational map.\nWith a defined data model.",
+  "featureIntro": "A useful operational map connects geographic position with trustworthy records and a clear next action. Define the layers and interactions around the team using the map, from a control-room overview to a mobile site visit.",
+  "features": [
+    {
+      "title": "Operational asset layers",
+      "text": "Structure facilities, equipment, monitoring points and defined operational areas as separate layers. Use stable asset identifiers so a map selection opens the correct source record and related measurements."
+    },
+    {
+      "title": "Coordinates and location quality",
+      "text": "Document coordinate reference systems, location sources, update timestamps and available quality indicators. Keep surveyed positions, estimated positions and last-reported mobile locations distinguishable."
+    },
+    {
+      "title": "Linked measurements and history",
+      "text": "Select a point to view available measurements, units, timestamps and historical records. Connect Hitelecom Cloud or an agreed customer source through documented identifiers and authorized interfaces."
+    },
+    {
+      "title": "Search, filters and map summaries",
+      "text": "Scope asset search, status filters, layer controls and agreed geographic summaries. Define how filtering changes map symbols, lists and counts so users see the same record set across the dashboard."
+    },
+    {
+      "title": "Events in their geographic context",
+      "text": "Place received threshold alarms and other agreed events at their mapped asset or location. Distinguish active, acknowledged and historical events according to the source workflow and user role."
+    },
+    {
+      "title": "Tracks and area-based rules",
+      "text": "Where suitable location records exist, scope track views, zone entry/exit or proximity checks. Define location uncertainty, boundary behavior and event timing; these functions do not improve the underlying positioning accuracy."
+    },
+    {
+      "title": "Field and control-room workflows",
+      "text": "Tailor map selection, detail panels and record handoff to desktop or mobile use. A mobile view can prioritize site information and inspection links rather than reproducing every control-room panel."
+    },
+    {
+      "title": "Deployment, licensing and access",
+      "text": "Specify the map service, tile/data rights, hosting arrangement, authentication and permission boundaries. Agree API usage, data retention, source-code delivery and third-party costs before implementation."
+    }
+  ],
+  "planningTitle": "Start with coordinates.\nFinish with clear decisions.",
+  "planningIntro": "Map appearance, data interpretation and operating responsibilities should be specified together.",
+  "planning": [
+    {
+      "title": "Define the operating geography",
+      "text": "List the areas, assets and users the map must support. Review coordinates, boundary data and location quality before choosing the base map and operational layers.",
+      "brief": "Coverage · Coordinate reference · Asset register · Location quality · Map rights"
+    },
+    {
+      "title": "Define the record and event contract",
+      "text": "Review sample data for asset identity, measurements, timestamps, quality, event status and history. Specify missing, duplicate, delayed and out-of-order record handling.",
+      "brief": "API samples · Identity mapping · Time semantics · Event states · Retention"
+    },
+    {
+      "title": "Verify the map workflow",
+      "text": "Choose representative sites, events, permissions and mobile tasks. Agree how map, lists, counts and record handoff should behave with that dataset and target devices.",
+      "brief": "User scenarios · Layer rules · Target devices · Acceptance dataset · Handover"
+    }
+  ],
+  "applicationsTitle": "Distributed assets.\nLocation-aware workflows.",
+  "applicationsIntro": "Twelve application areas show how site locations, monitoring records and operating workflows can be combined. Each task includes its data inputs, proposed output and acceptance check; source quality and map rights determine the implementation scope.",
+  "groups": [
+    {
+      "id": "water-network",
+      "title": "Water distribution and pumping networks",
+      "intro": "Give distributed water-service assets a consistent geographic reference without confusing map connectivity with a validated hydraulic model.",
+      "imageKey": "water",
+      "imageAlt": "Outdoor pumping station with blue pipework",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Pressure-monitoring district view",
+          "description": "Review uploaded pressure readings by the mapped monitoring points and the distribution areas defined by the operator.",
+          "inputs": "Point coordinates, area boundaries and pressure records.",
+          "deliverables": "District filters with linked point measurements and trends.",
+          "acceptance": "Filtered map, list and counts show the same point set.",
+          "considerations": "District boundaries and pressure reference come from the owner."
+        },
+        {
+          "title": "Distributed pump-station events",
+          "description": "Locate the pumping station associated with a received event and open its available condition records.",
+          "inputs": "Station register, equipment IDs and event source data.",
+          "deliverables": "Station event map with source-linked detail panels.",
+          "acceptance": "A test event selects the correct station and source record.",
+          "considerations": "The map is not a pump control or dispatch authority."
+        },
+        {
+          "title": "Field inspection site handoff",
+          "description": "Pass a selected valve, meter or monitored facility reference to the agreed field inspection workflow.",
+          "inputs": "Asset locations and authorized inspection-system links.",
+          "deliverables": "Asset detail with the agreed inspection handoff.",
+          "acceptance": "The receiving record retains the selected asset identifier.",
+          "considerations": "Site access instructions remain maintained by the asset owner."
+        }
+      ]
+    },
+    {
+      "id": "drainage",
+      "title": "Drainage, rivers and catchment monitoring",
+      "intro": "Organise drainage assets and environmental observations within the geographic areas used by the responsible operating team.",
+      "imageKey": "hydro-river",
+      "imageAlt": "River channel and surrounding landscape",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Drainage-point exception map",
+          "description": "Locate received level or water-leak events around drainage structures and monitored low points.",
+          "inputs": "Drainage register, point locations and event definitions.",
+          "deliverables": "Location-linked events with recent measurement history.",
+          "acceptance": "A sample level event resolves to its mapped sensing point.",
+          "considerations": "An observed level is not a flood forecast."
+        },
+        {
+          "title": "Catchment observation comparison",
+          "description": "Compare available rain and water-level records across the stations assigned to a catchment area.",
+          "inputs": "Catchment boundaries, station coordinates and time-series data.",
+          "deliverables": "Catchment selection with synchronized observation panels.",
+          "acceptance": "Chosen time periods and source units agree across panels.",
+          "considerations": "Station placement affects the representativeness of comparisons."
+        },
+        {
+          "title": "Inspection coverage review",
+          "description": "Display inspection dates and unresolved source records for the drainage assets in a selected area.",
+          "inputs": "Asset IDs, inspection dates and agreed record statuses.",
+          "deliverables": "Area-based inspection layer with record links.",
+          "acceptance": "Displayed coverage totals match the accepted input records.",
+          "considerations": "Inspection completeness is distinct from infrastructure condition."
+        }
+      ]
+    },
+    {
+      "id": "renewables",
+      "title": "Solar, wind and distributed energy sites",
+      "intro": "Navigate a regional portfolio while preserving the connection between each site, asset register and received operating information.",
+      "imageKey": "solar",
+      "imageAlt": "Solar-panel arrays at an outdoor energy site",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Regional site-status overview",
+          "description": "Filter renewable-energy sites by received event status, monitoring availability or the owner’s operating region.",
+          "inputs": "Site coordinates, regional boundaries and source-state definitions.",
+          "deliverables": "Regional map with linked site lists and status counts.",
+          "acceptance": "An agreed filter produces matching map and summary results.",
+          "considerations": "Displayed status follows the source system’s defined meaning."
+        },
+        {
+          "title": "Tower and station measurement map",
+          "description": "Locate monitored towers, inverter stations or supporting equipment and open the available condition records.",
+          "inputs": "Asset locations, sensing-point IDs and measurement data.",
+          "deliverables": "Asset details with uploaded readings and history.",
+          "acceptance": "A selected asset retains the correct point identity and units.",
+          "considerations": "Condition records do not automatically diagnose a fault."
+        },
+        {
+          "title": "Maintenance-area planning view",
+          "description": "Group selected service records geographically for review by the responsible regional team.",
+          "inputs": "Open service references and assigned operating areas.",
+          "deliverables": "Area-filtered service list with authorized record links.",
+          "acceptance": "Users see only records within their agreed area permissions.",
+          "considerations": "Optimized routing is a separate analytical scope."
+        }
+      ]
+    },
+    {
+      "id": "telecom",
+      "title": "Telecom towers and remote equipment sites",
+      "intro": "Put remote site identity, location and available monitoring data in one geographic investigation path.",
+      "imageKey": "telecom-site",
+      "imageAlt": "Remote outdoor communications site with closed cabinets and accessible service paths",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Tower-site condition investigation",
+          "description": "Find the site associated with a tilt, environmental or enclosure event and review its source readings.",
+          "inputs": "Tower register, point assignments and received monitoring records.",
+          "deliverables": "Tower detail panel with event and trend references.",
+          "acceptance": "A known site event opens its matching measurement source.",
+          "considerations": "Sensor installation and orientation govern interpretation."
+        },
+        {
+          "title": "Site communication-status review",
+          "description": "Distinguish sites with current uploads from those whose reported data is delayed or unavailable.",
+          "inputs": "Upload timestamps, site identities and stale-data policy.",
+          "deliverables": "Freshness layer and filtered site list.",
+          "acceptance": "A delayed test record appears in the agreed stale state.",
+          "considerations": "A missing upload alone does not identify the failure cause."
+        },
+        {
+          "title": "Contractor visit context",
+          "description": "Provide authorized visitors with a selected site reference, access notes and the agreed inspection link.",
+          "inputs": "Site documents, contractor roles and visit-system references.",
+          "deliverables": "Role-limited site information and inspection handoff.",
+          "acceptance": "Restricted site details remain inaccessible to unassigned users.",
+          "considerations": "Map access does not authorize physical entry."
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Road, rail and tunnel corridors",
+      "intro": "Use corridor references and monitored locations together so teams can find the source point behind a received observation.",
+      "imageKey": "bridge-infrastructure",
+      "imageAlt": "Road bridge deck and infrastructure in cold-weather conditions",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Corridor monitoring-point lookup",
+          "description": "Find a monitored point using its asset identifier, chainage or approved geographic position.",
+          "inputs": "Corridor alignment, chainage reference and point register.",
+          "deliverables": "Searchable monitoring layer with location details.",
+          "acceptance": "A test point resolves to the agreed corridor reference.",
+          "considerations": "Coordinate and chainage transformations need a defined reference."
+        },
+        {
+          "title": "Bridge and tunnel event location",
+          "description": "Display received movement, vibration or environmental events at their mapped structure or technical facility.",
+          "inputs": "Structure inventory, event IDs and point coordinates.",
+          "deliverables": "Structure event map with traceable source records.",
+          "acceptance": "The selected event links to its correct structure and point.",
+          "considerations": "The dashboard does not certify transport infrastructure safety."
+        },
+        {
+          "title": "Section-based inspection review",
+          "description": "Review source inspection records by corridor section and link users to the selected finding.",
+          "inputs": "Section boundaries, inspection register and access rules.",
+          "deliverables": "Section filters with document or work-order links.",
+          "acceptance": "Section totals reconcile with the supplied inspection dataset.",
+          "considerations": "Engineering priorities remain the responsible owner’s decision."
+        }
+      ]
+    },
+    {
+      "id": "construction",
+      "title": "Construction, slopes and temporary works",
+      "intro": "Keep measurement points and work-area boundaries aligned as a construction site or monitoring plan changes.",
+      "imageKey": "civil-earthworks",
+      "imageAlt": "Construction earthworks and exposed graded ground",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Work-zone monitoring overview",
+          "description": "Group tilt, vibration or environmental points by the work zones defined for the project.",
+          "inputs": "Work-zone boundaries, point register and available channels.",
+          "deliverables": "Zone-selectable monitoring map with source readings.",
+          "acceptance": "The chosen zone returns its agreed monitored point set.",
+          "considerations": "Zone changes require controlled updates to the data model."
+        },
+        {
+          "title": "Slope and embankment point context",
+          "description": "Locate monitoring points and their reference documents along a defined slope or embankment project.",
+          "inputs": "Surveyed point locations and installation-reference documents.",
+          "deliverables": "Point map with history and installation-record links.",
+          "acceptance": "Users can trace each displayed point to its source location.",
+          "considerations": "A point trend is not a stability assessment."
+        },
+        {
+          "title": "Monitoring-plan revision review",
+          "description": "Track the geographic effect of added, moved or retired monitoring points in an agreed plan revision.",
+          "inputs": "Versioned point schedules and effective-date records.",
+          "deliverables": "Revision comparison with point-state identification.",
+          "acceptance": "The accepted revision reproduces its documented active point set.",
+          "considerations": "Historical locations must not be silently overwritten."
+        }
+      ]
+    },
+    {
+      "id": "logistics",
+      "title": "Logistics yards, ports and mobile assets",
+      "intro": "Relate receiving locations, operational zones and reported asset positions using the identity and timing of each source record.",
+      "imageKey": "container-terminal",
+      "imageAlt": "Shipping containers stacked in a coastal terminal yard",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Yard asset-location lookup",
+          "description": "Find a container, trailer or reusable asset using its last available reported position and identity.",
+          "inputs": "Asset IDs, position records and location-quality fields.",
+          "deliverables": "Searchable asset map with last-report details.",
+          "acceptance": "Selected identity, timestamp and location match the input record.",
+          "considerations": "Last reported location is not a guaranteed current position."
+        },
+        {
+          "title": "Zone-entry and exit review",
+          "description": "Scope area events for mobile assets where the available positioning data supports the required zone rules.",
+          "inputs": "Licensed zone boundaries, track samples and rule definitions.",
+          "deliverables": "Agreed zone-event view with source-position references.",
+          "acceptance": "Representative boundary cases follow the accepted rule behavior.",
+          "considerations": "Uncertainty and upload intervals affect boundary-event interpretation."
+        },
+        {
+          "title": "Dwell and visit-record context",
+          "description": "Review recorded asset visits or agreed dwell calculations within selected yards or terminal areas.",
+          "inputs": "Timestamped positions and visit/aggregation definitions.",
+          "deliverables": "Area-based visit history with traceable calculation inputs.",
+          "acceptance": "Test visits reproduce the documented calculation rules.",
+          "considerations": "Calculated dwell depends on missing-data and time-gap rules."
+        }
+      ]
+    },
+    {
+      "id": "cold-chain",
+      "title": "Cold-chain routes and delivery locations",
+      "intro": "Show where received condition records were associated with a shipment, vehicle or handling location.",
+      "imageKey": "refrigerated-logistics",
+      "imageAlt": "Refrigerated delivery truck at a loading dock",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Shipment condition-and-location review",
+          "description": "Review uploaded temperature records alongside the available shipment identity and location history.",
+          "inputs": "Shipment IDs, temperature records and position sources.",
+          "deliverables": "Shipment map with time-aligned condition history.",
+          "acceptance": "A chosen record retains its source time, unit and location.",
+          "considerations": "Separate record clocks and sample intervals need reconciliation."
+        },
+        {
+          "title": "Delivery-point exception context",
+          "description": "Locate the reported handling point associated with a shipment condition exception or source event.",
+          "inputs": "Delivery locations, event references and handling timestamps.",
+          "deliverables": "Delivery-point event panel and linked source records.",
+          "acceptance": "A sample exception opens its corresponding handling reference.",
+          "considerations": "The map does not establish product disposition or compliance."
+        },
+        {
+          "title": "Route-history investigation",
+          "description": "Display received route positions and selected stops for an agreed investigation period.",
+          "inputs": "Position history, route identifiers and retention permissions.",
+          "deliverables": "Time-filtered tracks with recorded stop references.",
+          "acceptance": "Displayed track points match the accepted source dataset.",
+          "considerations": "Gaps must remain visible rather than inventing a travelled path."
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Agricultural land and irrigation districts",
+      "intro": "Organise field observations by the parcels, irrigation zones and managed facilities relevant to the farm operator.",
+      "imageKey": "agriculture",
+      "imageAlt": "Greenhouse structure and agricultural growing rows",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Field and parcel monitoring map",
+          "description": "Review available soil or local weather records against their assigned field parcels.",
+          "inputs": "Parcel boundaries, sensor locations and measurement units.",
+          "deliverables": "Parcel selection with point readings and history.",
+          "acceptance": "Selected parcels show only their agreed observation points.",
+          "considerations": "Point measurements do not establish full-field conditions."
+        },
+        {
+          "title": "Irrigation-asset location view",
+          "description": "Locate monitored irrigation tanks, pumps or control equipment and open the available operating records.",
+          "inputs": "Irrigation asset register and agreed source interfaces.",
+          "deliverables": "Asset layer with linked condition and service details.",
+          "acceptance": "A source equipment record resolves to the correct map asset.",
+          "considerations": "Irrigation control is a separately scoped function."
+        },
+        {
+          "title": "Inspection and seasonal-record context",
+          "description": "Review observations or service references by growing area and the selected operating period.",
+          "inputs": "Area IDs, inspection records and seasonal date definitions.",
+          "deliverables": "Area-based record filters with source-document links.",
+          "acceptance": "The selected period reproduces its agreed record selection.",
+          "considerations": "Agronomic recommendations require a separate analytical basis."
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "title": "Environmental observation networks",
+      "intro": "Connect sampling locations and station records with traceable map layers and measurement definitions.",
+      "imageKey": "hydro-reservoir",
+      "imageAlt": "Reservoir water and surrounding embankment",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Air and weather station network",
+          "description": "Locate observation stations and inspect the uploaded measurements available at each point.",
+          "inputs": "Station register, coordinates and channel definitions.",
+          "deliverables": "Station map with measurement and freshness panels.",
+          "acceptance": "Each displayed channel retains its original source and units.",
+          "considerations": "Representativeness depends on site exposure and sensor placement."
+        },
+        {
+          "title": "Water-sampling location records",
+          "description": "Associate sample or monitoring records with the relevant river, reservoir or discharge location.",
+          "inputs": "Sampling-point IDs, coordinates and laboratory/source references.",
+          "deliverables": "Sampling map with source-linked historical records.",
+          "acceptance": "Users can trace a displayed result to its sampling reference.",
+          "considerations": "A map view is not regulatory monitoring certification."
+        },
+        {
+          "title": "Area-based event investigation",
+          "description": "Review received threshold events within an agreed environmental management area and time window.",
+          "inputs": "Area boundaries, event definitions and record timestamps.",
+          "deliverables": "Spatial and temporal filters with traceable event details.",
+          "acceptance": "Map, list and exported selection reconcile for the test window.",
+          "considerations": "Notifications depend on the configured receiving-system workflow."
+        }
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Campuses and public-facility portfolios",
+      "intro": "Give facility teams a shared view of where monitored buildings, equipment and service records belong.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Campus building and landscaped outdoor area",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Building-portfolio monitoring map",
+          "description": "Filter monitored buildings by use, operator region or received environmental event state.",
+          "inputs": "Building footprints, ownership fields and event sources.",
+          "deliverables": "Building layers with shared filters and condition panels.",
+          "acceptance": "Filtered building totals agree with the accepted asset register.",
+          "considerations": "Aggregations need explicit rules for multi-point buildings."
+        },
+        {
+          "title": "Outdoor utility and lighting assets",
+          "description": "Locate monitored lighting poles, water-service points or other outdoor assets using the approved register.",
+          "inputs": "Asset coordinates, category definitions and source point IDs.",
+          "deliverables": "Searchable facility-asset layer with record drill-down.",
+          "acceptance": "The selected asset opens its correct measurement or service source.",
+          "considerations": "Installed measurement functions vary with each device."
+        },
+        {
+          "title": "Mobile maintenance visit information",
+          "description": "Provide a mobile user with the selected facility’s approved details and inspection handoff.",
+          "inputs": "Facility documents, mobile tasks and user-role definitions.",
+          "deliverables": "Mobile-focused detail panel with authorized source links.",
+          "acceptance": "Agreed field tasks remain usable on the target devices.",
+          "considerations": "Offline operation requires an explicit caching and security scope."
+        }
+      ]
+    },
+    {
+      "id": "parks-heritage",
+      "title": "Parks, tourism and heritage estates",
+      "intro": "Locate monitored public environments and maintenance assets while controlling access to sensitive facility information.",
+      "imageKey": "heritage-outdoor",
+      "imageAlt": "Historic stone abbey ruins and surrounding landscaped grounds",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Heritage-building monitoring locations",
+          "description": "Find the building or external point associated with a received environmental or movement observation.",
+          "inputs": "Building register, point coordinates and monitoring references.",
+          "deliverables": "Estate map with building-level source-record links.",
+          "acceptance": "Each displayed observation maps to its accepted building reference.",
+          "considerations": "Condition interpretation belongs to the responsible specialist."
+        },
+        {
+          "title": "Park equipment and environmental stations",
+          "description": "Review the locations and received records of monitored poles, equipment or environmental stations across a park.",
+          "inputs": "Park boundaries, asset register and available station data.",
+          "deliverables": "Category-filtered map with timestamped observations.",
+          "acceptance": "A selected category returns the agreed monitored asset set.",
+          "considerations": "The map does not imply coverage of unmonitored areas."
+        },
+        {
+          "title": "Visitor-area maintenance context",
+          "description": "Link reported service issues to the relevant visitor area and approved maintenance workflow.",
+          "inputs": "Visitor-area boundaries and authorized issue-record interfaces.",
+          "deliverables": "Area-based issue view with responsible-team references.",
+          "acceptance": "A test issue opens the correct source record and area.",
+          "considerations": "Public and internal views need separate information permissions."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Project scope.\nGeography and data together.",
+  "scopeIntro": "Define these items in the project statement of work; this service has no universal fixed specification.",
+  "rows": [
+    [
+      "Service type",
+      "Custom geographic dashboard and agreed data integration"
+    ],
+    [
+      "Coverage and reference",
+      "Geographic coverage, coordinate systems and location sources"
+    ],
+    [
+      "Base maps and layers",
+      "Selected provider, permitted usage, attribution and licence costs"
+    ],
+    [
+      "Source data",
+      "Agreed APIs, file inputs, identities, units and timestamps"
+    ],
+    [
+      "Functions",
+      "Views, filters, search and event workflows expressly included in scope"
+    ],
+    [
+      "User access",
+      "Authentication, roles and data permissions agreed per deployment"
+    ],
+    [
+      "Hosting and operation",
+      "Deployment environment, map access and operating responsibilities"
+    ],
+    [
+      "Verification",
+      "Representative locations, records and documented acceptance scenarios"
+    ],
+    [
+      "Deliverables and rights",
+      "Build, documentation and source-code terms as contracted"
+    ],
+    [
+      "Maintenance",
+      "Map-provider changes, data updates and support terms agreed separately"
+    ]
+  ],
+  "handoverTitle": "From data review.\nTo an operational map.",
+  "handoverIntro": "Confirm how the dashboard will be delivered and maintained.",
+  "handover": [
+    {
+      "title": "Review geographic inputs",
+      "text": "Inspect sample coordinates, layers and API records before confirming map functions."
+    },
+    {
+      "title": "Build and verify workflows",
+      "text": "Implement the agreed map interactions and test records, permissions and missing-data behaviour."
+    },
+    {
+      "title": "Document operation",
+      "text": "Handover the contracted application and mapping configuration, including licence and maintenance responsibilities."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What distinguishes a GIS dashboard from a general monitoring dashboard?",
+      "a": "A GIS dashboard makes geographic location and operational layers part of the investigation workflow. It connects selected assets or areas with measurements, events and source records; the map, lists and summaries should follow the same data selection."
+    },
+    {
+      "q": "Can fixed sensors and mobile assets appear on the same map?",
+      "a": "They can be scoped as separate layers with their own location sources and timestamp rules. A surveyed sensor position and a last-reported mobile location should remain distinguishable to the user."
+    },
+    {
+      "q": "Does the dashboard improve positioning accuracy?",
+      "a": "No. Accuracy comes from the positioning, survey or other location source. The project defines coordinate transformations and how available quality indicators, uncertainty and stale records are represented."
+    },
+    {
+      "q": "Can it use our existing map service and asset layers?",
+      "a": "They can be reviewed for supported interfaces, coverage, coordinate reference systems, access control and usage rights. Map tiles, commercial services and third-party datasets retain their licence and commercial conditions."
+    },
+    {
+      "q": "Can Hitelecom Cloud data be used?",
+      "a": "An agreed integration can provide uploaded monitoring data and configured threshold events from Hitelecom Cloud. Asset identity, point coordinates, channel definitions, units and timestamps are mapped to the dashboard’s layers."
+    },
+    {
+      "q": "Can the map display historical routes and condition records?",
+      "a": "Where authorized history is available, a project can scope time-filtered tracks and linked measurements. Retention, clock alignment, missing records and any interpolation or aggregation rules are defined before implementation."
+    },
+    {
+      "q": "Are geofences and dwell-time calculations standard features?",
+      "a": "They are project options rather than universal inclusions. Suitable position data, licensed boundaries, uncertainty handling, entry/exit rules and calculation semantics must support the intended use."
+    },
+    {
+      "q": "How are map alarms and notifications handled?",
+      "a": "Events may be received from an existing monitoring platform or generated by an expressly scoped rules service. The project identifies threshold ownership, event status, notification recipients and any acknowledgement or downstream handoff."
+    },
+    {
+      "q": "Can the map work on a phone or without connectivity?",
+      "a": "Mobile layouts are designed around the selected field tasks and target devices. Offline maps or cached records require a separate decision on licensing, storage, data freshness, synchronization and access security."
+    },
+    {
+      "q": "Can different customers or contractors see different sites?",
+      "a": "Access can be scoped by organization, region, site or role. Test the permitted map layers, detail records, exports and source-system links with representative user accounts before acceptance."
+    },
+    {
+      "q": "What information is needed for a quotation?",
+      "a": "Share the coverage area, asset register, sample coordinates, source API or record samples, map preference, user roles and desired workflows. Include expected dataset sizes, retention, target devices and the proposed deployment environment."
+    },
+    {
+      "q": "What documents and source rights are handed over?",
+      "a": "The contract defines the application build, configuration, layer schema, interface mapping, acceptance records and deployment instructions to be delivered. Source-code rights, map licences, third-party costs and support responsibilities are agreed explicitly."
+    }
+  ],
+  "enquiryIntro": "Share the sites, geographic layers and records you want to bring together. Include map preferences and sample data so the project scope can be assessed.",
+  "enquiryFields": [
+    {
+      "label": "Coverage and users",
+      "placeholder": "Countries, site count, user roles and target devices"
+    },
+    {
+      "label": "Maps and layers",
+      "placeholder": "Preferred provider, layer samples and usage rights"
+    },
+    {
+      "label": "Source data",
+      "placeholder": "Coordinates, asset identifiers, APIs and update requirements"
+    },
+    {
+      "label": "Delivery requirements",
+      "placeholder": "Hosting, licensing, source-code rights and acceptance needs"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-gis-dashboard.webp",
+  "imageWidth": 400,
+  "imageHeight": 345
+}

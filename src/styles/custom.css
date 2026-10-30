@@ -1,0 +1,16 @@
+/* Preserve the approved Sensor / Gateway typography and visual system. */
+.custom-detail :is(.enquiry-layout,.faq-layout,.section-heading,.gateway-spec-grid)>*{min-width:0}
+.custom-detail .service-visual img{max-width:100%;max-height:350px;object-fit:contain;border-radius:8px}
+.custom-detail .hero-proof>div{min-width:0}
+.custom-detail .application-jump-nav{margin-top:22px}
+@media(max-width:600px){.custom-detail :is(h1,h2,h3,h4,p,dd,dt,summary,label,button){overflow-wrap:anywhere;hyphens:auto}.custom-detail :is(.feature-grid,summary)>*{min-width:0}.custom-detail .hero-visual img{max-height:260px}}
+
+.station-catalog-page .catalog-eyebrow{color:rgba(255,255,255,.85)}
+
+.custom-detail .section-heading h2{white-space:pre-line}
+
+/* Protected original catalog banner: render the complete original bitmap. */
+.original-custom-hero{background:#4c71b4;width:100%}
+.original-custom-hero img{display:block;width:100%;height:auto;max-width:none;object-fit:contain}
+.original-catalog-title{color:#15283e;font-size:clamp(27px,3vw,42px);line-height:1.2;margin:0 0 18px}
+@media(max-width:600px){.original-custom-hero{padding-top:80px}}

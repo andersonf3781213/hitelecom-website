@@ -1,0 +1,630 @@
+{
+  "id": "gis-dashboard",
+  "slug": "gis-dashboard-development",
+  "kind": "Service",
+  "name": "Desarrollo de paneles GIS",
+  "title": "Paneles GIS a medida | Mapas IoT y vistas de activos distribuidos | Hitelecom",
+  "metaDescription": "Paneles GIS a medida para activos distribuidos y monitorización IoT. Defina capas cartográficas, fuentes de ubicación, flujos de eventos e integración con plataformas para su operación.",
+  "heroHeading": "Desarrollo de\npaneles GIS.",
+  "heroValue": "Contexto de ubicación.\nPara operaciones conectadas.",
+  "heroDescription": "Dé a activos distribuidos y eventos un contexto geográfico común. Hitelecom define paneles GIS a partir de su registro de emplazamientos, fuentes de ubicación y flujo operativo: localizar el punto pertinente, consultar sus datos subidos, revisar eventos y trasladar el registro al equipo responsable. Una integración acordada con Hitelecom Cloud o la plataforma del cliente puede proporcionar datos en línea y notificaciones por umbral. Funciones, fuentes y acceso se definen por proyecto.",
+  "caption": "Desarrollo de paneles GIS",
+  "imageAlt": "Desarrollo de paneles GIS",
+  "proof": [
+    {
+      "value": "Mapas",
+      "label": "Contexto geográfico acordado",
+      "note": "Especifique capas, coordenadas y derechos de uso"
+    },
+    {
+      "value": "Datos",
+      "label": "Registros vinculados a ubicaciones",
+      "note": "Asocie identificadores, marcas de tiempo y calidad"
+    },
+    {
+      "value": "Proceso de trabajo",
+      "label": "Acciones de operador definidas",
+      "note": "Acuerde filtros, roles y gestión de eventos"
+    }
+  ],
+  "featureTitle": "Un mapa operativo.\nCon un modelo de datos definido.",
+  "featureIntro": "Un mapa operativo útil conecta posición geográfica, registros fiables y una siguiente acción clara. Defina capas e interacciones según sus usuarios, desde la visión de sala de control hasta la visita móvil.",
+  "features": [
+    {
+      "title": "Capas operativas de activos",
+      "text": "Organice instalaciones, equipos, puntos y áreas operativas como capas separadas. Utilice identificadores estables para que una selección abra el registro de origen y las medidas correctos."
+    },
+    {
+      "title": "Coordenadas y calidad de ubicación",
+      "text": "Documente sistemas de referencia, fuentes de ubicación, marcas de actualización e indicadores de calidad disponibles. Distinga posiciones topográficas, estimadas y últimas posiciones móviles recibidas."
+    },
+    {
+      "title": "Medidas e historial vinculados",
+      "text": "Seleccione un punto para consultar medidas, unidades, marcas temporales e históricos disponibles. Conecte Hitelecom Cloud u otra fuente acordada mediante identificadores documentados e interfaces autorizadas."
+    },
+    {
+      "title": "Búsqueda, filtros y resúmenes cartográficos",
+      "text": "Defina búsquedas, filtros de estado, controles de capas y resúmenes geográficos. Determine cómo afectan los filtros a símbolos, listas y recuentos para mostrar los mismos registros en todo el panel."
+    },
+    {
+      "title": "Eventos en su contexto geográfico",
+      "text": "Sitúe alarmas por umbral y otros eventos acordados en su activo o ubicación vinculados. Distinga eventos activos, reconocidos e históricos según el flujo de origen y rol del usuario."
+    },
+    {
+      "title": "Trayectorias y reglas por zonas",
+      "text": "Cuando existan posiciones adecuadas, defina trayectorias, entrada/salida de zonas o proximidad. Establezca incertidumbre, comportamiento en límites y tiempos; estas funciones no mejoran la exactitud del posicionamiento de origen."
+    },
+    {
+      "title": "Flujos de campo y sala de control",
+      "text": "Adapte selección cartográfica, paneles y transferencia de registros a escritorio o móvil. La vista móvil puede priorizar información del emplazamiento e inspecciones sin reproducir todos los paneles de sala de control."
+    },
+    {
+      "title": "Despliegue, licencias y acceso",
+      "text": "Especifique servicio cartográfico, derechos de teselas/datos, alojamiento, autenticación y permisos. Acuerde uso de API, retención, entrega de código y costes de terceros antes de implementar."
+    }
+  ],
+  "planningTitle": "Empiece por las coordenadas.\nLlegue a decisiones claras.",
+  "planningIntro": "La apariencia del mapa, la interpretación de datos y las responsabilidades operativas deben especificarse conjuntamente.",
+  "planning": [
+    {
+      "title": "Defina la geografía operativa",
+      "text": "Enumere áreas, activos y usuarios. Revise coordenadas, límites y calidad de ubicación antes de elegir mapa base y capas operativas.",
+      "brief": "Cobertura · Referencia de coordenadas · Registro de activos · Calidad de ubicación · Derechos cartográficos"
+    },
+    {
+      "title": "Defina el contrato de registros y eventos",
+      "text": "Revise muestras de identidad de activos, medidas, marcas temporales, calidad, estado de eventos e historial. Especifique tratamiento de registros ausentes, duplicados, retrasados y desordenados.",
+      "brief": "Muestras de API · Correspondencia de identidades · Semántica temporal · Estados de eventos · Retención"
+    },
+    {
+      "title": "Verifique el flujo cartográfico",
+      "text": "Elija emplazamientos, eventos, permisos y tareas móviles representativos. Acuerde comportamiento de mapa, listas, recuentos y transferencia de registros con esos datos y dispositivos.",
+      "brief": "Escenarios de usuario · Reglas de capas · Dispositivos objetivo · Datos de aceptación · Entrega"
+    }
+  ],
+  "applicationsTitle": "Activos distribuidos.\nFlujos con contexto de ubicación.",
+  "applicationsIntro": "Doce áreas muestran cómo combinar ubicaciones, registros de monitorización y flujos operativos. Cada tarea incluye entradas, resultado propuesto y aceptación; la calidad de origen y los derechos cartográficos determinan el alcance.",
+  "groups": [
+    {
+      "id": "water-network",
+      "title": "Redes de distribución y bombeo de agua",
+      "intro": "Dé una referencia geográfica coherente a activos hídricos distribuidos, sin confundir conexiones cartográficas con un modelo hidráulico validado.",
+      "imageKey": "water",
+      "imageAlt": "Estación de bombeo exterior con tuberías azules",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Vista distrital de monitorización de presión",
+          "description": "Revise lecturas subidas según los puntos cartografiados y áreas de distribución definidas por el operador.",
+          "inputs": "Coordenadas de puntos, límites de áreas y registros de presión.",
+          "deliverables": "Filtros distritales con medidas y tendencias de puntos vinculadas.",
+          "acceptance": "Mapa, lista y recuentos filtrados muestran los mismos puntos.",
+          "considerations": "Los límites distritales y la referencia de presión proceden del propietario."
+        },
+        {
+          "title": "Eventos de estaciones de bombeo distribuidas",
+          "description": "Localice la estación asociada a un evento recibido y abra sus registros de condiciones disponibles.",
+          "inputs": "Registro de estaciones, identificadores de equipos y datos de eventos de origen.",
+          "deliverables": "Mapa de eventos de estaciones con paneles vinculados al origen.",
+          "acceptance": "Un evento de prueba selecciona la estación y registro de origen correctos.",
+          "considerations": "El mapa no controla bombas ni autoriza su despacho."
+        },
+        {
+          "title": "Transferencia de emplazamientos para inspección de campo",
+          "description": "Transfiera la referencia seleccionada de válvula, medidor o instalación al flujo de inspección acordado.",
+          "inputs": "Ubicaciones de activos y enlaces autorizados al sistema de inspección.",
+          "deliverables": "Detalle de activo con transferencia de inspección acordada.",
+          "acceptance": "El registro receptor conserva el identificador del activo seleccionado.",
+          "considerations": "El propietario mantiene las instrucciones de acceso al emplazamiento."
+        }
+      ]
+    },
+    {
+      "id": "drainage",
+      "title": "Drenaje, ríos y monitorización de cuencas",
+      "intro": "Organice activos de drenaje y observaciones ambientales dentro de las áreas geográficas utilizadas por el equipo responsable.",
+      "imageKey": "hydro-river",
+      "imageAlt": "Cauce fluvial y paisaje circundante",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Mapa de excepciones en puntos de drenaje",
+          "description": "Localice eventos de nivel o fuga recibidos en estructuras de drenaje y puntos bajos monitorizados.",
+          "inputs": "Registro de drenaje, ubicaciones de puntos y definiciones de eventos.",
+          "deliverables": "Eventos vinculados a ubicación con historial reciente de medidas.",
+          "acceptance": "Un evento de nivel de ejemplo conduce a su punto de medida cartografiado.",
+          "considerations": "Un nivel observado no es un pronóstico de inundación."
+        },
+        {
+          "title": "Comparación de observaciones de cuenca",
+          "description": "Compare lluvia y nivel disponibles en estaciones asignadas a una cuenca.",
+          "inputs": "Límites de cuenca, coordenadas de estaciones y series temporales.",
+          "deliverables": "Selección de cuenca con paneles de observaciones sincronizados.",
+          "acceptance": "Los periodos y unidades de origen elegidos coinciden entre paneles.",
+          "considerations": "La ubicación de estaciones afecta a la representatividad de las comparaciones."
+        },
+        {
+          "title": "Revisión de cobertura de inspecciones",
+          "description": "Muestre fechas de inspección y registros pendientes de activos de drenaje en un área seleccionada.",
+          "inputs": "Identificadores de activos, fechas de inspección y estados acordados.",
+          "deliverables": "Capa de inspecciones por área con enlaces a registros.",
+          "acceptance": "Los totales de cobertura coinciden con los registros de entrada aceptados.",
+          "considerations": "La integridad de inspecciones es distinta del estado de la infraestructura."
+        }
+      ]
+    },
+    {
+      "id": "renewables",
+      "title": "Instalaciones solares, eólicas y de energía distribuida",
+      "intro": "Navegue por una cartera regional conservando el vínculo de cada emplazamiento con sus activos e información operativa recibida.",
+      "imageKey": "solar",
+      "imageAlt": "Paneles solares en una instalación energética exterior",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Vista regional de estados de emplazamientos",
+          "description": "Filtre instalaciones renovables por estado de eventos, disponibilidad de monitorización o región operativa del propietario.",
+          "inputs": "Coordenadas, límites regionales y definiciones de estados de origen.",
+          "deliverables": "Mapa regional con listas vinculadas y recuentos de estados.",
+          "acceptance": "Un filtro acordado produce resultados coherentes en mapa y resumen.",
+          "considerations": "El estado mostrado sigue el significado definido por el sistema de origen."
+        },
+        {
+          "title": "Mapa de medidas de torres y estaciones",
+          "description": "Localice torres, estaciones de inversores o equipos auxiliares monitorizados y abra registros de condiciones disponibles.",
+          "inputs": "Ubicaciones de activos, identificadores de puntos y datos de medida.",
+          "deliverables": "Detalles de activos con lecturas subidas e historial.",
+          "acceptance": "Un activo seleccionado conserva identidad de punto y unidades correctas.",
+          "considerations": "Los registros de condiciones no diagnostican automáticamente una avería."
+        },
+        {
+          "title": "Vista de planificación de áreas de mantenimiento",
+          "description": "Agrupe geográficamente registros de servicio seleccionados para revisión del equipo regional responsable.",
+          "inputs": "Referencias de servicio abiertas y áreas operativas asignadas.",
+          "deliverables": "Lista de servicios filtrada por área con enlaces autorizados.",
+          "acceptance": "Los usuarios solo ven registros de áreas con permisos acordados.",
+          "considerations": "La optimización de rutas constituye un alcance analítico independiente."
+        }
+      ]
+    },
+    {
+      "id": "telecom",
+      "title": "Torres de telecomunicación y equipos remotos",
+      "intro": "Reúna identidad del emplazamiento, ubicación y datos disponibles en un mismo recorrido de investigación geográfica.",
+      "imageKey": "telecom-site",
+      "imageAlt": "Emplazamiento de comunicaciones exterior remoto con armarios cerrados y accesos de servicio",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Investigación de condiciones de emplazamientos de torres",
+          "description": "Localice el emplazamiento asociado a un evento de inclinación, ambiente o envolvente y revise sus lecturas.",
+          "inputs": "Registro de torres, asignación de puntos y registros recibidos.",
+          "deliverables": "Panel de torre con referencias de eventos y tendencias.",
+          "acceptance": "Un evento conocido del emplazamiento abre su fuente de medida correspondiente.",
+          "considerations": "La instalación y orientación del sensor determinan la interpretación."
+        },
+        {
+          "title": "Revisión de comunicaciones de emplazamientos",
+          "description": "Distinga emplazamientos con envíos actuales de aquellos cuyos datos están retrasados o no disponibles.",
+          "inputs": "Marcas temporales de envío, identidades y política de obsolescencia.",
+          "deliverables": "Capa de actualidad de datos y lista filtrada de emplazamientos.",
+          "acceptance": "Un registro retrasado de prueba aparece en el estado desactualizado acordado.",
+          "considerations": "La falta de envío no identifica por sí sola la causa del fallo."
+        },
+        {
+          "title": "Contexto de visitas de contratistas",
+          "description": "Facilite a visitantes autorizados referencia del emplazamiento, notas de acceso y enlace de inspección acordado.",
+          "inputs": "Documentos del emplazamiento, roles de contratistas y referencias del sistema de visitas.",
+          "deliverables": "Información restringida por rol y transferencia a inspección.",
+          "acceptance": "Los detalles restringidos permanecen inaccesibles para usuarios no asignados.",
+          "considerations": "El acceso al mapa no autoriza la entrada física."
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Corredores de carreteras, ferrocarriles y túneles",
+      "intro": "Combine referencias del corredor y ubicaciones monitorizadas para encontrar el punto de origen de cada observación.",
+      "imageKey": "bridge-infrastructure",
+      "imageAlt": "Tablero de puente viario e infraestructuras en condiciones de frío",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Búsqueda de puntos de monitorización de corredores",
+          "description": "Localice un punto mediante identificador, progresiva o posición geográfica aprobada.",
+          "inputs": "Trazado del corredor, referencia de progresiva y registro de puntos.",
+          "deliverables": "Capa de monitorización con búsqueda y detalles de ubicación.",
+          "acceptance": "Un punto de prueba conduce a la referencia acordada del corredor.",
+          "considerations": "Las transformaciones entre coordenadas y progresiva necesitan una referencia definida."
+        },
+        {
+          "title": "Ubicación de eventos en puentes y túneles",
+          "description": "Muestre eventos recibidos de movimiento, vibración o ambiente en su estructura o instalación técnica cartografiada.",
+          "inputs": "Inventario de estructuras, identificadores de eventos y coordenadas de puntos.",
+          "deliverables": "Mapa de eventos estructurales con registros de origen trazables.",
+          "acceptance": "El evento seleccionado enlaza con su estructura y punto correctos.",
+          "considerations": "El panel no certifica la seguridad de infraestructuras de transporte."
+        },
+        {
+          "title": "Revisión de inspecciones por tramo",
+          "description": "Revise registros de inspección de origen por tramo y enlace al hallazgo seleccionado.",
+          "inputs": "Límites de tramos, registro de inspecciones y reglas de acceso.",
+          "deliverables": "Filtros de tramo con enlaces documentales o de órdenes de trabajo.",
+          "acceptance": "Los totales por tramo concuerdan con los datos de inspección suministrados.",
+          "considerations": "Las prioridades de ingeniería siguen siendo decisión del propietario responsable."
+        }
+      ]
+    },
+    {
+      "id": "construction",
+      "title": "Construcción, taludes y obras temporales",
+      "intro": "Mantenga puntos y límites de obra alineados cuando cambien el emplazamiento o plan de monitorización.",
+      "imageKey": "civil-earthworks",
+      "imageAlt": "Obras de movimiento de tierras y terreno explanado descubierto",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Vista de monitorización por zonas de obra",
+          "description": "Agrupe puntos de inclinación, vibración o ambiente por zonas definidas del proyecto.",
+          "inputs": "Límites de obra, registro de puntos y canales disponibles.",
+          "deliverables": "Mapa seleccionable por zonas con lecturas de origen.",
+          "acceptance": "La zona elegida devuelve sus puntos monitorizados acordados.",
+          "considerations": "Los cambios de zona requieren actualizaciones controladas del modelo de datos."
+        },
+        {
+          "title": "Contexto de puntos en taludes y terraplenes",
+          "description": "Localice puntos y documentos de referencia a lo largo del proyecto definido de talud o terraplén.",
+          "inputs": "Ubicaciones topográficas de puntos y documentos de instalación.",
+          "deliverables": "Mapa de puntos con historial y enlaces de instalación.",
+          "acceptance": "Los usuarios pueden rastrear cada punto mostrado a su ubicación de origen.",
+          "considerations": "La tendencia de un punto no es una evaluación de estabilidad."
+        },
+        {
+          "title": "Revisión de versiones del plan de monitorización",
+          "description": "Revise el efecto geográfico de puntos añadidos, desplazados o retirados en una revisión acordada del plan.",
+          "inputs": "Relaciones de puntos con versiones y registros de fechas de vigencia.",
+          "deliverables": "Comparación de revisiones con identificación de estados de puntos.",
+          "acceptance": "La revisión aceptada reproduce sus puntos activos documentados.",
+          "considerations": "Las ubicaciones históricas no deben sobrescribirse silenciosamente."
+        }
+      ]
+    },
+    {
+      "id": "logistics",
+      "title": "Patios logísticos, puertos y activos móviles",
+      "intro": "Relacione ubicaciones de recepción, zonas operativas y posiciones comunicadas según identidad y tiempos de cada registro de origen.",
+      "imageKey": "container-terminal",
+      "imageAlt": "Contenedores apilados en una terminal portuaria costera",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Búsqueda de ubicación de activos en patios",
+          "description": "Encuentre un contenedor, remolque o activo reutilizable mediante su última posición comunicada disponible e identidad.",
+          "inputs": "Identificadores de activos, posiciones e indicadores de calidad de ubicación.",
+          "deliverables": "Mapa de activos con búsqueda y detalles del último envío.",
+          "acceptance": "Identidad, marca temporal y ubicación seleccionadas coinciden con la entrada.",
+          "considerations": "La última ubicación comunicada no garantiza una posición actual."
+        },
+        {
+          "title": "Revisión de entradas y salidas de zonas",
+          "description": "Defina eventos de áreas para activos móviles cuando el posicionamiento disponible permita las reglas necesarias.",
+          "inputs": "Límites de zonas con licencia, muestras de trayectorias y definiciones de reglas.",
+          "deliverables": "Vista acordada de eventos de zonas con posiciones de origen vinculadas.",
+          "acceptance": "Los casos representativos en límites siguen las reglas aceptadas.",
+          "considerations": "La incertidumbre y los intervalos de envío afectan a interpretar eventos de límites."
+        },
+        {
+          "title": "Contexto de permanencia y registros de visitas",
+          "description": "Revise visitas registradas o cálculos acordados de permanencia en patios o zonas de terminal seleccionados.",
+          "inputs": "Posiciones fechadas y definiciones de visitas/agregación.",
+          "deliverables": "Historial de visitas por área con entradas de cálculo trazables.",
+          "acceptance": "Las visitas de prueba reproducen las reglas de cálculo documentadas.",
+          "considerations": "La permanencia calculada depende de reglas de datos ausentes y huecos temporales."
+        }
+      ]
+    },
+    {
+      "id": "cold-chain",
+      "title": "Rutas de cadena de frío y puntos de entrega",
+      "intro": "Muestre dónde se asociaron registros recibidos de condiciones con un envío, vehículo o punto de manipulación.",
+      "imageKey": "refrigerated-logistics",
+      "imageAlt": "Camión frigorífico en un muelle de carga",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Revisión de condiciones y ubicación de envíos",
+          "description": "Revise temperaturas subidas junto con identidad del envío e historial de ubicación disponibles.",
+          "inputs": "Identificadores de envíos, temperaturas y fuentes de posición.",
+          "deliverables": "Mapa de envíos con historial de condiciones alineado temporalmente.",
+          "acceptance": "Un registro elegido conserva hora, unidad y ubicación de origen.",
+          "considerations": "Deben conciliarse relojes de registros e intervalos de muestreo independientes."
+        },
+        {
+          "title": "Contexto de excepciones en puntos de entrega",
+          "description": "Localice el punto de manipulación comunicado asociado a una excepción de condiciones o evento de origen del envío.",
+          "inputs": "Ubicaciones de entrega, referencias de eventos y marcas temporales de manipulación.",
+          "deliverables": "Panel de eventos del punto de entrega y registros de origen vinculados.",
+          "acceptance": "Una excepción de ejemplo abre su referencia de manipulación correspondiente.",
+          "considerations": "El mapa no determina disposición del producto ni cumplimiento normativo."
+        },
+        {
+          "title": "Investigación del historial de rutas",
+          "description": "Muestre posiciones recibidas y paradas seleccionadas de un periodo de investigación acordado.",
+          "inputs": "Historial de posiciones, identificadores de rutas y permisos de retención.",
+          "deliverables": "Trayectorias filtradas por tiempo con referencias de paradas registradas.",
+          "acceptance": "Los puntos mostrados coinciden con los datos de origen aceptados.",
+          "considerations": "Los huecos deben seguir visibles, sin inventar el recorrido realizado."
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Terrenos agrícolas y distritos de riego",
+      "intro": "Organice observaciones por parcelas, zonas de riego e instalaciones pertinentes para el operador agrícola.",
+      "imageKey": "agriculture",
+      "imageAlt": "Estructura de invernadero y filas de cultivo agrícola",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Mapa de monitorización de campos y parcelas",
+          "description": "Revise registros de suelo o meteorología local disponibles en sus parcelas asignadas.",
+          "inputs": "Límites de parcelas, ubicaciones de sensores y unidades de medida.",
+          "deliverables": "Selección de parcelas con lecturas e historial de puntos.",
+          "acceptance": "Las parcelas seleccionadas muestran solo sus puntos de observación acordados.",
+          "considerations": "Las medidas puntuales no acreditan las condiciones de todo el campo."
+        },
+        {
+          "title": "Vista de ubicación de activos de riego",
+          "description": "Localice depósitos, bombas o equipos de control monitorizados y abra sus registros operativos disponibles.",
+          "inputs": "Registro de activos de riego e interfaces de origen acordadas.",
+          "deliverables": "Capa de activos con detalles vinculados de condiciones y servicio.",
+          "acceptance": "Un registro de equipo de origen conduce al activo cartográfico correcto.",
+          "considerations": "El control del riego es una función de alcance independiente."
+        },
+        {
+          "title": "Contexto de inspecciones y registros estacionales",
+          "description": "Revise observaciones o referencias de servicio por zona de cultivo y periodo operativo seleccionado.",
+          "inputs": "Identificadores de áreas, inspecciones y definiciones de fechas estacionales.",
+          "deliverables": "Filtros de registros por área con enlaces documentales de origen.",
+          "acceptance": "El periodo seleccionado reproduce la selección de registros acordada.",
+          "considerations": "Las recomendaciones agronómicas requieren una base analítica independiente."
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "title": "Redes de observación ambiental",
+      "intro": "Conecte ubicaciones de muestreo y registros de estaciones con capas cartográficas trazables y definiciones de medidas.",
+      "imageKey": "hydro-reservoir",
+      "imageAlt": "Agua de embalse y terraplén circundante",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Red de estaciones de aire y meteorología",
+          "description": "Localice estaciones y examine las medidas subidas disponibles en cada punto.",
+          "inputs": "Registro de estaciones, coordenadas y definiciones de canales.",
+          "deliverables": "Mapa de estaciones con paneles de medidas y actualidad de datos.",
+          "acceptance": "Cada canal mostrado conserva origen y unidades originales.",
+          "considerations": "La representatividad depende de la exposición y ubicación del sensor."
+        },
+        {
+          "title": "Registros de ubicaciones de muestreo de agua",
+          "description": "Asocie registros de muestras o monitorización con su río, embalse o punto de descarga pertinente.",
+          "inputs": "Identificadores de muestreo, coordenadas y referencias de laboratorio/origen.",
+          "deliverables": "Mapa de muestreo con históricos vinculados al origen.",
+          "acceptance": "Los usuarios pueden rastrear un resultado hasta su referencia de muestreo.",
+          "considerations": "Una vista cartográfica no certifica monitorización reglamentaria."
+        },
+        {
+          "title": "Investigación de eventos por áreas",
+          "description": "Revise eventos por umbral recibidos dentro de un área de gestión ambiental y ventana temporal acordadas.",
+          "inputs": "Límites de áreas, definiciones de eventos y marcas temporales de registros.",
+          "deliverables": "Filtros espaciales y temporales con detalles de eventos trazables.",
+          "acceptance": "Mapa, lista y selección exportada concuerdan en la ventana de prueba.",
+          "considerations": "Las notificaciones dependen del flujo configurado del sistema receptor."
+        }
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Campus y carteras de instalaciones públicas",
+      "intro": "Proporcione una vista compartida de la ubicación de edificios, equipos monitorizados y registros de servicio.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Edificio de campus y zona exterior ajardinada",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Mapa de monitorización de carteras de edificios",
+          "description": "Filtre edificios por uso, región del operador o estado de eventos ambientales recibidos.",
+          "inputs": "Huellas de edificios, campos de titularidad y fuentes de eventos.",
+          "deliverables": "Capas de edificios con filtros compartidos y paneles de condiciones.",
+          "acceptance": "Los totales filtrados concuerdan con el registro de activos aceptado.",
+          "considerations": "La agregación requiere reglas explícitas para edificios con múltiples puntos."
+        },
+        {
+          "title": "Activos exteriores de servicios e iluminación",
+          "description": "Localice postes de iluminación, puntos de agua y otros activos monitorizados mediante el registro aprobado.",
+          "inputs": "Coordenadas, categorías e identificadores de puntos de origen.",
+          "deliverables": "Capa de activos de instalaciones con búsqueda y acceso a registros.",
+          "acceptance": "El activo seleccionado abre su fuente correcta de medidas o servicio.",
+          "considerations": "Las funciones de medida instaladas varían por dispositivo."
+        },
+        {
+          "title": "Información para visitas móviles de mantenimiento",
+          "description": "Proporcione al usuario móvil los detalles aprobados y la transferencia de inspección de la instalación elegida.",
+          "inputs": "Documentos de instalaciones, tareas móviles y definiciones de roles.",
+          "deliverables": "Panel centrado en móvil con enlaces autorizados al origen.",
+          "acceptance": "Las tareas de campo acordadas siguen utilizables en los dispositivos objetivo.",
+          "considerations": "El funcionamiento sin conexión requiere un alcance explícito de caché y seguridad."
+        }
+      ]
+    },
+    {
+      "id": "parks-heritage",
+      "title": "Parques, turismo y conjuntos patrimoniales",
+      "intro": "Localice entornos públicos monitorizados y activos de mantenimiento controlando el acceso a información sensible.",
+      "imageKey": "heritage-outdoor",
+      "imageAlt": "Ruinas de una abadía histórica de piedra y jardines circundantes",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Ubicaciones de monitorización de edificios patrimoniales",
+          "description": "Encuentre el edificio o punto exterior asociado a una observación ambiental o de movimiento recibida.",
+          "inputs": "Registro de edificios, coordenadas y referencias de monitorización.",
+          "deliverables": "Mapa del conjunto con enlaces de origen por edificio.",
+          "acceptance": "Cada observación mostrada se vincula con su referencia de edificio aceptada.",
+          "considerations": "La interpretación de condiciones corresponde al especialista responsable."
+        },
+        {
+          "title": "Equipos de parques y estaciones ambientales",
+          "description": "Revise ubicaciones y registros recibidos de postes, equipos o estaciones monitorizados en un parque.",
+          "inputs": "Límites del parque, activos y datos disponibles de estaciones.",
+          "deliverables": "Mapa filtrado por categorías con observaciones fechadas.",
+          "acceptance": "Una categoría seleccionada devuelve los activos monitorizados acordados.",
+          "considerations": "El mapa no implica cobertura de zonas no monitorizadas."
+        },
+        {
+          "title": "Contexto de mantenimiento de zonas de visitantes",
+          "description": "Vincule incidencias de servicio comunicadas con el área de visitantes y flujo de mantenimiento aprobados.",
+          "inputs": "Límites de áreas de visitantes e interfaces autorizadas de incidencias.",
+          "deliverables": "Vista de incidencias por área con referencias del equipo responsable.",
+          "acceptance": "Una incidencia de prueba abre el registro de origen y área correctos.",
+          "considerations": "Las vistas públicas e internas necesitan permisos de información independientes."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Alcance del proyecto.\nGeografía y datos en conjunto.",
+  "scopeIntro": "Defina estos aspectos en el alcance de trabajo del proyecto; este servicio no tiene una especificación fija universal.",
+  "rows": [
+    [
+      "Tipo de servicio",
+      "Panel geográfico a medida e integración de datos acordada"
+    ],
+    [
+      "Cobertura y referencia",
+      "Cobertura geográfica, sistemas de coordenadas y fuentes de ubicación"
+    ],
+    [
+      "Mapas base y capas",
+      "Proveedor seleccionado, usos permitidos, atribución y costes de licencia"
+    ],
+    [
+      "Datos de origen",
+      "API, archivos de entrada, identidades, unidades y marcas de tiempo acordados"
+    ],
+    [
+      "Funciones",
+      "Vistas, filtros, búsqueda y procesos de eventos expresamente incluidos en el alcance"
+    ],
+    [
+      "Acceso de usuarios",
+      "Autenticación, roles y permisos de datos acordados por despliegue"
+    ],
+    [
+      "Alojamiento y operación",
+      "Entorno de despliegue, acceso cartográfico y responsabilidades operativas"
+    ],
+    [
+      "Verificación",
+      "Ubicaciones y registros representativos y escenarios de aceptación documentados"
+    ],
+    [
+      "Entregables y derechos",
+      "Versión, documentación y condiciones del código fuente según contrato"
+    ],
+    [
+      "Mantenimiento",
+      "Cambios de proveedor cartográfico, actualizaciones de datos y soporte acordados por separado"
+    ]
+  ],
+  "handoverTitle": "De la revisión de datos.\nA un mapa operativo.",
+  "handoverIntro": "Confirme cómo se entregará y mantendrá el panel.",
+  "handover": [
+    {
+      "title": "Revise los datos geográficos de entrada",
+      "text": "Inspeccione muestras de coordenadas, capas y registros de API antes de confirmar las funciones cartográficas."
+    },
+    {
+      "title": "Desarrolle y verifique los procesos",
+      "text": "Implemente las interacciones cartográficas acordadas y pruebe los registros, los permisos y el comportamiento ante datos ausentes."
+    },
+    {
+      "title": "Documente la operación",
+      "text": "Entregue la aplicación y la configuración cartográfica contratadas, incluidas las responsabilidades de licencias y mantenimiento."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Qué distingue un panel GIS de un panel general de monitorización?",
+      "a": "Un panel GIS incorpora ubicación geográfica y capas operativas al flujo de investigación. Conecta activos o áreas con medidas, eventos y registros de origen; mapa, listas y resúmenes deben seguir la misma selección de datos."
+    },
+    {
+      "q": "¿Pueden aparecer sensores fijos y activos móviles en el mismo mapa?",
+      "a": "Pueden definirse como capas separadas con fuentes y reglas temporales propias. Una posición topográfica de sensor y la última ubicación móvil comunicada deben seguir siendo distinguibles."
+    },
+    {
+      "q": "¿Mejora el panel la exactitud del posicionamiento?",
+      "a": "No. La exactitud procede del posicionamiento, levantamiento u otra fuente de ubicación. El proyecto define transformaciones y cómo representar calidad disponible, incertidumbre y registros desactualizados."
+    },
+    {
+      "q": "¿Puede utilizar nuestro servicio cartográfico y capas existentes?",
+      "a": "Pueden revisarse interfaces, cobertura, sistemas de coordenadas, controles de acceso y derechos de uso. Teselas, servicios comerciales y datos externos conservan sus licencias y condiciones comerciales."
+    },
+    {
+      "q": "¿Pueden utilizarse datos de Hitelecom Cloud?",
+      "a": "Una integración acordada puede proporcionar datos subidos y eventos por umbral configurados de Hitelecom Cloud. Identidades, coordenadas de puntos, canales, unidades y marcas temporales se vinculan con las capas del panel."
+    },
+    {
+      "q": "¿Puede mostrar rutas históricas y registros de condiciones?",
+      "a": "Cuando exista historial autorizado, pueden definirse trayectorias filtradas por tiempo y medidas vinculadas. Retención, alineación de relojes, datos ausentes y reglas de interpolación o agregación se definen antes de implementar."
+    },
+    {
+      "q": "¿Las geocercas y el tiempo de permanencia son funciones estándar?",
+      "a": "Son opciones de proyecto, no inclusiones universales. Los datos de posición, límites con licencia, tratamiento de incertidumbre, reglas de entrada/salida y semántica de cálculo deben respaldar el uso previsto."
+    },
+    {
+      "q": "¿Cómo se gestionan alarmas y notificaciones del mapa?",
+      "a": "Los eventos pueden recibirse de una plataforma existente o generarse mediante un servicio de reglas expresamente definido. El proyecto identifica responsable de umbrales, estados, destinatarios y reconocimiento o transferencia posterior."
+    },
+    {
+      "q": "¿Funciona en un teléfono o sin conectividad?",
+      "a": "Los diseños móviles responden a tareas y dispositivos elegidos. Mapas sin conexión o registros en caché requieren decisiones específicas sobre licencias, almacenamiento, actualidad, sincronización y seguridad de acceso."
+    },
+    {
+      "q": "¿Pueden distintos clientes o contratistas ver emplazamientos diferentes?",
+      "a": "El acceso puede definirse por organización, región, emplazamiento o rol. Pruebe capas, detalles, exportaciones y enlaces permitidos con cuentas representativas antes de aceptar."
+    },
+    {
+      "q": "¿Qué información se necesita para un presupuesto?",
+      "a": "Comparta área de cobertura, activos, coordenadas de ejemplo, API o registros de origen, preferencia cartográfica, roles y flujos deseados. Incluya tamaños de datos previstos, retención, dispositivos y entorno de despliegue."
+    },
+    {
+      "q": "¿Qué documentos y derechos de código se entregan?",
+      "a": "El contrato define compilación de la aplicación, configuración, esquema de capas, correspondencias, registros de aceptación e instrucciones de despliegue entregables. Derechos del código, licencias cartográficas, costes externos y soporte se acuerdan explícitamente."
+    }
+  ],
+  "enquiryIntro": "Comparta las instalaciones, capas geográficas y registros que desea reunir. Incluya preferencias cartográficas y datos de ejemplo para evaluar el alcance del proyecto.",
+  "enquiryFields": [
+    {
+      "label": "Cobertura y usuarios",
+      "placeholder": "Países, número de instalaciones, roles de usuario y dispositivos de destino"
+    },
+    {
+      "label": "Mapas y capas",
+      "placeholder": "Proveedor preferido, muestras de capas y derechos de uso"
+    },
+    {
+      "label": "Datos de origen",
+      "placeholder": "Coordenadas, identificadores de activos, API y requisitos de actualización"
+    },
+    {
+      "label": "Requisitos de entrega",
+      "placeholder": "Alojamiento, licencias, derechos sobre el código fuente y necesidades de aceptación"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-gis-dashboard.webp",
+  "imageWidth": 400,
+  "imageHeight": 345
+}

@@ -1,0 +1,632 @@
+{
+  "id": "digital-twin",
+  "slug": "digital-twin-development",
+  "kind": "Service",
+  "name": "Desarrollo de gemelos digitales",
+  "title": "Desarrollo de gemelos digitales | Vistas conectadas de activos e instalaciones | Hitelecom",
+  "metaDescription": "Desarrollo de gemelos digitales a medida para activos industriales, edificios, almacenes e infraestructuras. Conecte modelos de activos, datos de monitorización y flujos de mantenimiento.",
+  "heroHeading": "Desarrollo de\ngemelos digitales.",
+  "heroValue": "Contexto operativo.\nConectado a datos de campo.",
+  "heroDescription": "Reúna equipos, espacios y registros de monitorización en una representación digital navegable. Hitelecom define modelos de activos, vistas 2D o 3D, correspondencias de telemetría y flujos de operadores a medida de sus instalaciones y sistemas de datos. Consulte datos subidos mediante una integración acordada con Hitelecom Cloud o la plataforma del cliente y sitúe las alarmas por umbral configuradas en su contexto de equipo. El detalle del modelo, las conexiones y la aceptación se definen por proyecto.",
+  "caption": "Desarrollo de gemelos digitales",
+  "imageAlt": "Desarrollo de gemelos digitales",
+  "proof": [
+    {
+      "value": "Activos",
+      "label": "Contexto digital definido",
+      "note": "Acuerde la jerarquía de activos y el nivel de detalle del modelo"
+    },
+    {
+      "value": "Datos",
+      "label": "Telemetría vinculada",
+      "note": "Defina las fuentes, las marcas de tiempo y la calidad de los datos"
+    },
+    {
+      "value": "Alcance",
+      "label": "Entrega según el proyecto",
+      "note": "Confirme las funciones, el alojamiento y la entrega"
+    }
+  ],
+  "featureTitle": "De las vistas del modelo.\nA una operación útil.",
+  "featureIntro": "Construya el contexto digital que necesita el operador: qué activo envía datos, dónde pertenece, qué cambió y qué registros respaldan la siguiente acción. Empiece con activos representativos antes de ampliar el modelo.",
+  "features": [
+    {
+      "title": "Identidades y relaciones de activos",
+      "text": "Organice emplazamientos, edificios, sistemas, equipos y puntos de medida mediante identificadores estables. Registre relaciones de ubicación, suministro o monitorización para que cada lectura aparezca en el activo físico correcto."
+    },
+    {
+      "title": "Vistas 2D y 3D con una finalidad",
+      "text": "Seleccione planos, diagramas de equipos o un modelo 3D según la tarea. Reutilice entradas CAD/BIM/modelos con licencia tras revisar geometría, conversión y navegación en los dispositivos previstos."
+    },
+    {
+      "title": "Medidas con trazabilidad de origen",
+      "text": "Muestre valor, unidad, marca temporal e identidad de origen conjuntamente. Distinga registros actuales, retrasados, ausentes e inválidos, en lugar de representar como saludable un activo sin datos."
+    },
+    {
+      "title": "Contexto de umbrales por activo",
+      "text": "Muestre las alarmas recibidas junto a la sala, componente o equipo pertinente. Defina límites, prioridad, reconocimiento e integración de notificaciones según el flujo de monitorización acordado."
+    },
+    {
+      "title": "Investigación histórica",
+      "text": "Defina selección temporal, tendencias sincronizadas y vínculos entre observaciones y eventos registrados. Especifique retención y significado del muestreo para interpretar huecos, agregaciones y estados históricos."
+    },
+    {
+      "title": "Vínculos de inspección y mantenimiento",
+      "text": "Conecte activos seleccionados con planos, fotos de inspección y registros de mantenimiento mediante identificadores y permisos acordados. El sistema de origen conserva la responsabilidad del registro autorizado de órdenes de trabajo."
+    },
+    {
+      "title": "Vistas operativas por rol",
+      "text": "Defina los emplazamientos, detalles y acciones accesibles para cada usuario. Separe investigación operativa, resúmenes de gestión y administración técnica sin exponer registros ajenos de instalaciones."
+    },
+    {
+      "title": "Integración y entrega con control de versiones",
+      "text": "Documente versiones de modelos, correspondencias de puntos, contratos de API y configuración de despliegue. Acuerde derechos de código fuente/modelos, licencias de terceros y responsabilidades de mantenimiento en el alcance contractual."
+    }
+  ],
+  "planningTitle": "Defina el modelo.\nDespués, defina su uso.",
+  "planningIntro": "Unos requisitos útiles para un gemelo digital distinguen la escena visual, los datos medidos y cualquier cálculo o simulación.",
+  "planning": [
+    {
+      "title": "Identifique las preguntas operativas",
+      "text": "Enumere las decisiones, los usuarios y la información necesarios. Distinga la visualización operativa de la simulación, la previsión o el control.",
+      "brief": "Usuarios · Activos · Decisiones · Límites funcionales"
+    },
+    {
+      "title": "Revise los modelos y los datos de origen",
+      "text": "Evalúe los formatos de modelo, la geometría, los permisos y la disponibilidad de telemetría. Defina el comportamiento ante datos ausentes o desactualizados.",
+      "brief": "Muestras de modelos · API de origen · Identificadores · Calidad de datos"
+    },
+    {
+      "title": "Establezca las condiciones de aceptación",
+      "text": "Acuerde conjuntos de datos representativos, el comportamiento de interacción, los dispositivos compatibles y los escenarios de revisión antes del desarrollo.",
+      "brief": "Datos de prueba · Objetivos de rendimiento · Revisión de usuarios · Entrega"
+    }
+  ],
+  "applicationsTitle": "Activos físicos.\nContexto digital útil.",
+  "applicationsIntro": "Explore flujos concretos en doce entornos operativos. Cada ejemplo identifica entradas del proyecto, resultado propuesto de la aplicación y una comprobación de aceptación. Son alcances de desarrollo, no afirmaciones de despliegues realizados en clientes.",
+  "groups": [
+    {
+      "id": "production",
+      "title": "Plantas de fabricación y equipos de proceso",
+      "intro": "Organice activos por línea, célula y sistema auxiliar para investigar condiciones conservando el contexto del equipo.",
+      "imageKey": "process-charging",
+      "imageAlt": "Recipiente de proceso, tuberías conectadas y acceso de mantenimiento",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Vista de condiciones de línea de producción",
+          "description": "Navegue desde una línea hasta los equipos y puntos de medida asociados a una excepción operativa.",
+          "inputs": "Jerarquía de líneas, etiquetas de equipos y muestras de registros de sensores.",
+          "deliverables": "Navegación de línea a equipo con lecturas fechadas.",
+          "acceptance": "Una lectura seleccionada conduce a la etiqueta de equipo acordada.",
+          "considerations": "El estado del equipo y el de mantenimiento necesitan definiciones independientes."
+        },
+        {
+          "title": "Relaciones de servicios compartidos",
+          "description": "Muestre qué compresores, bombas o ramales monitorizados suministran a las áreas representadas en el modelo.",
+          "inputs": "Planos de servicios, relaciones de activos y medidas disponibles.",
+          "deliverables": "Relaciones de suministro con tendencias de condiciones vinculadas.",
+          "acceptance": "Seleccionar un servicio identifica sus áreas abastecidas documentadas.",
+          "considerations": "El modelo de relaciones no es una simulación del proceso."
+        },
+        {
+          "title": "Espacio de investigación de mantenimiento",
+          "description": "Reúna planos, historial de eventos y registros de inspección del activo seleccionado en un mismo recorrido de investigación.",
+          "inputs": "Registro de activos, enlaces documentales y muestras de API de mantenimiento.",
+          "deliverables": "Panel de activo con enlaces autorizados a las fuentes.",
+          "acceptance": "Los usuarios abren el registro correcto con sus permisos asignados.",
+          "considerations": "La titularidad de las órdenes de trabajo permanece en el sistema de origen designado."
+        }
+      ]
+    },
+    {
+      "id": "warehouse",
+      "title": "Almacenes y almacenamiento automatizado",
+      "intro": "Relacione filas de estanterías, zonas de almacenamiento y equipos de manipulación con las medidas e inspecciones asignadas a cada ubicación.",
+      "imageKey": "warehouse-aisle",
+      "imageAlt": "Pasillo de almacén con estanterías y mercancías almacenadas",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Contexto de monitorización de estanterías y pasillos",
+          "description": "Localice el módulo de estantería de un evento de inclinación o vibración recibido y examine su historial.",
+          "inputs": "Plano de estanterías, identificadores de módulos y registros de inclinación/vibración disponibles.",
+          "deliverables": "Navegación de estantería a punto con paneles de eventos y tendencias.",
+          "acceptance": "Un evento de ejemplo resalta únicamente el módulo vinculado.",
+          "considerations": "El movimiento medido no acredita por sí solo seguridad estructural."
+        },
+        {
+          "title": "Vista ambiental de zonas de almacenamiento",
+          "description": "Presente las lecturas subidas de temperatura y humedad en sus salas, pasillos o zonas correctos.",
+          "inputs": "Límites de zonas, posiciones de sensores y registros ambientales.",
+          "deliverables": "Vistas de zonas con marcas temporales de origen y enlaces a tendencias.",
+          "acceptance": "Los puntos ausentes o desactualizados siguen siendo distinguibles de los valores actuales.",
+          "considerations": "Un sensor no representa todas las posiciones de una zona."
+        },
+        {
+          "title": "Contexto de inspección de equipos de manipulación",
+          "description": "Asocie transportadores, elevadores o lanzaderas con notas de inspección y registros operativos recibidos.",
+          "inputs": "Jerarquía de equipos, registros de inspección e interfaces aprobadas.",
+          "deliverables": "Navegación por equipo y evidencias de inspección vinculadas.",
+          "acceptance": "Un componente seleccionado abre su registro de inspección correspondiente.",
+          "considerations": "Las órdenes de máquina y funciones de seguridad requieren un alcance independiente."
+        }
+      ]
+    },
+    {
+      "id": "buildings",
+      "title": "Edificios comerciales y campus",
+      "intro": "Utilice una estructura edificio-planta-sala para situar observaciones y registros de servicio en su contexto espacial.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Edificio de campus y patio ajardinado",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Investigación ambiental por sala",
+          "description": "Pase de la vista de planta a los puntos de calidad del aire o temperatura de una sala con una incidencia.",
+          "inputs": "Planos con licencia, identificadores de salas y correspondencia sensor-sala.",
+          "deliverables": "Navegación por salas con medidas ambientales disponibles.",
+          "acceptance": "Una sala seleccionada muestra únicamente sus puntos de medida asignados.",
+          "considerations": "La exposición del sensor y los límites de la sala afectan a la interpretación."
+        },
+        {
+          "title": "Contexto de equipos de salas técnicas",
+          "description": "Conecte equipos HVAC y de agua con los espacios abastecidos y los registros de condiciones disponibles.",
+          "inputs": "Esquemas de instalaciones, identificadores de equipos y relaciones de servicio.",
+          "deliverables": "Relaciones equipo-espacio y paneles de condiciones.",
+          "acceptance": "Una relación de servicio conocida aparece de forma coherente en las vistas.",
+          "considerations": "La simulación térmica o de flujo de aire es una tarea de ingeniería independiente."
+        },
+        {
+          "title": "Navegación por registros de servicios de instalaciones",
+          "description": "Permita acceder a notas de mantenimiento, manuales o evidencias de inspección desde el objeto pertinente del modelo.",
+          "inputs": "Índice documental de activos y requisitos de roles de acceso.",
+          "deliverables": "Enlaces con permisos controlados desde objetos de salas y equipos.",
+          "acceptance": "Los usuarios no autorizados no pueden abrir registros de apoyo restringidos.",
+          "considerations": "La revisión documental y su titularidad deben ser trazables."
+        }
+      ]
+    },
+    {
+      "id": "data-centres",
+      "title": "Centros de datos y salas técnicas",
+      "intro": "Conecte filas, racks y equipos auxiliares con puntos de monitorización definidos para revisar la operación.",
+      "imageKey": "data-center",
+      "imageAlt": "Centro de datos moderno con racks simétricos y pasillo central de refrigeración despejado",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Excepciones ambientales en racks",
+          "description": "Localice el rack o pasillo asociado a un evento de umbral de temperatura o humedad.",
+          "inputs": "Registro de racks, ubicaciones de puntos y datos de eventos de ejemplo.",
+          "deliverables": "Selección de eventos por rack y tendencias ambientales.",
+          "acceptance": "Los eventos de ejemplo conducen al rack y punto asignados.",
+          "considerations": "La ubicación de puntos importa; una vista no es un modelo de refrigeración."
+        },
+        {
+          "title": "Contexto de investigación de fugas de agua",
+          "description": "Sitúe un evento de fuga recibido en la sala, zona de equipos o recorrido de cable monitorizados.",
+          "inputs": "Plano de puntos de fuga, modelo de sala y correspondencia de eventos.",
+          "deliverables": "Contexto del punto de fuga con marca temporal y enlaces de inspección.",
+          "acceptance": "El evento resalta la ubicación vinculada sin insinuar cobertura no observada.",
+          "considerations": "La cobertura depende de la disposición de sensores instalada."
+        },
+        {
+          "title": "Vistas de registros de equipos auxiliares",
+          "description": "Organice refrigeración, soporte eléctrico y bombeo con los registros disponibles de sistemas de origen autorizados.",
+          "inputs": "Relaciones de equipos e interfaces autorizadas de sistemas de origen.",
+          "deliverables": "Jerarquía de activos con enlaces operativos y de mantenimiento.",
+          "acceptance": "La identidad registrada del equipo coincide con el objeto seleccionado del modelo.",
+          "considerations": "Esto no sustituye a sistemas DCIM, de protección o de control."
+        }
+      ]
+    },
+    {
+      "id": "laboratories",
+      "title": "Laboratorios y almacenamiento farmacéutico",
+      "intro": "Sitúe salas, cámaras y equipos de almacenamiento monitorizados junto a sus condiciones registradas e historial de inspección.",
+      "imageKey": "laboratory-storage",
+      "imageAlt": "Zona de laboratorio con frigoríficos y equipos de almacenamiento de muestras",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Contexto ambiental de salas controladas",
+          "description": "Examine condiciones subidas por sala o zona de almacenamiento con marcas temporales e identidad del sensor.",
+          "inputs": "Registro de salas, asignación de puntos y datos ambientales.",
+          "deliverables": "Paneles de salas con tendencias e indicadores de calidad del dato de origen.",
+          "acceptance": "Los usuarios distinguen lecturas válidas de datos ausentes o retrasados.",
+          "considerations": "La visualización por sí sola no implica validación reglamentaria."
+        },
+        {
+          "title": "Acceso a registros de cámaras y congeladores",
+          "description": "Vincule cámaras o congeladores monitorizados con condiciones registradas, referencias de calibración y documentos de mantenimiento.",
+          "inputs": "Identificadores de equipos, puntos de monitorización y permisos documentales.",
+          "deliverables": "Vistas de equipos con enlaces aprobados a registros y documentos.",
+          "acceptance": "Un activo de prueba abre sus registros asignados de medida y referencia.",
+          "considerations": "La integridad de datos y la firma electrónica necesitan un alcance explícito."
+        },
+        {
+          "title": "Espacio de revisión de desviaciones",
+          "description": "Presente un periodo de desviación con el contexto del equipo afectado y los registros de investigación disponibles.",
+          "inputs": "Marcas temporales de eventos, correspondencia de equipos y referencias de investigación.",
+          "deliverables": "Tendencias alineadas en el tiempo con enlaces contextuales a registros.",
+          "acceptance": "La ventana seleccionada coincide con los registros de origen recibidos.",
+          "considerations": "Las decisiones de disposición corresponden al equipo de calidad responsable."
+        }
+      ]
+    },
+    {
+      "id": "water-supply",
+      "title": "Instalaciones de bombeo y distribución de agua",
+      "intro": "Represente bombas, recipientes y conexiones monitorizadas en una vista basada en el registro de activos suministrado.",
+      "imageKey": "water-indoor",
+      "imageAlt": "Equipos de bombeo interiores, recipientes y tuberías",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Revisión de condiciones de estaciones de bombeo",
+          "description": "Navegue entre bombas monitorizadas y sus registros disponibles de presión, temperatura, vibración o estado.",
+          "inputs": "Relación de bombas, correspondencia de puntos y datos de canales disponibles.",
+          "deliverables": "Medidas por bomba con acceso a registros históricos.",
+          "acceptance": "Una bomba seleccionada muestra sus canales vinculados verificados.",
+          "considerations": "Los canales disponibles dependen de los instrumentos instalados."
+        },
+        {
+          "title": "Contexto de depósitos y equipos de transferencia",
+          "description": "Relacione depósitos, bombas de transferencia y puntos de nivel con el plano usado por el equipo operativo.",
+          "inputs": "Identificadores de depósitos, planos de conexiones y registros de nivel.",
+          "deliverables": "Relaciones depósito-equipo y paneles de historial de nivel.",
+          "acceptance": "Las relaciones del modelo coinciden con el plano aceptado de la instalación.",
+          "considerations": "La modelización hidráulica y el accionamiento remoto tienen alcances independientes."
+        },
+        {
+          "title": "Correlación de inspecciones y eventos",
+          "description": "Reúna un evento de bomba o válvula con su última inspección registrada y observaciones operativas.",
+          "inputs": "Referencias de eventos, marcas temporales de inspección e identificadores de activos.",
+          "deliverables": "Panel de investigación del activo con registros de origen ordenados.",
+          "acceptance": "El orden de registros conserva la hora de origen y la identidad del evento.",
+          "considerations": "El estado de inspección no debe deducirse únicamente de la telemetría."
+        }
+      ]
+    },
+    {
+      "id": "wastewater",
+      "title": "Activos de aguas residuales y tratamiento",
+      "intro": "Conecte unidades de tratamiento y equipos monitorizados con registros operativos conservando los límites del proceso y de los datos.",
+      "imageKey": "treatment-manifold",
+      "imageAlt": "Recipientes de tratamiento de agua y colectores de acero inoxidable",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Vista de medidas por unidad de tratamiento",
+          "description": "Organice medidas recibidas según las unidades y puntos de muestreo identificados por el operador.",
+          "inputs": "Jerarquía de unidades, registro de puntos y definiciones de medidas.",
+          "deliverables": "Paneles de unidades de tratamiento con unidades de medida y marcas temporales de origen.",
+          "acceptance": "Nombres, unidades y asociaciones de puntos coinciden con el registro aprobado.",
+          "considerations": "El rendimiento de tratamiento calculado requiere una base de cálculo acordada."
+        },
+        {
+          "title": "Registros de equipos de manipulación química",
+          "description": "Vincule equipos de dosificación seleccionados con sus registros disponibles de presión, condiciones y servicio.",
+          "inputs": "Lista de activos de dosificación e interfaces autorizadas de equipos.",
+          "deliverables": "Contexto de equipos de dosificación con información de condiciones recibida.",
+          "acceptance": "Un registro de origen llega al objeto de equipo correcto.",
+          "considerations": "El control de dosificación y la idoneidad para áreas peligrosas son cuestiones de diseño independientes."
+        },
+        {
+          "title": "Contexto de planificación de accesos de servicio",
+          "description": "Combine vistas de instalaciones con notas de acceso y fotografías de inspección para actividades de mantenimiento seleccionadas.",
+          "inputs": "Plano de instalación, notas de acceso aprobadas e imágenes de inspección.",
+          "deliverables": "Enlaces contextuales a información de acceso e inspección.",
+          "acceptance": "Los usuarios recuperan la nota aprobada vigente del activo seleccionado.",
+          "considerations": "La aplicación no autoriza la entrada ni los trabajos de mantenimiento."
+        }
+      ]
+    },
+    {
+      "id": "solar-storage",
+      "title": "Instalaciones solares y de almacenamiento energético",
+      "intro": "Organice campos solares, estaciones de inversores y equipos auxiliares según la información de monitorización disponible para el propietario.",
+      "imageKey": "solar",
+      "imageAlt": "Paneles solares en una instalación energética exterior",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Vista de campos solares y estaciones de inversores",
+          "description": "Localice equipos monitorizados en la jerarquía del emplazamiento y revise los últimos registros ambientales o de equipo disponibles.",
+          "inputs": "Plano del emplazamiento, identificadores de equipos y campos de telemetría aprobados.",
+          "deliverables": "Navegación del campo solar al equipo con paneles de datos disponibles.",
+          "acceptance": "Los identificadores seleccionados de emplazamiento y equipo son coherentes entre paneles.",
+          "considerations": "El modelo visual no permite deducir previsiones de producción."
+        },
+        {
+          "title": "Contexto ambiental de envolventes de almacenamiento",
+          "description": "Sitúe las observaciones disponibles de temperatura, gas o fugas de agua en su envolvente y punto monitorizados.",
+          "inputs": "Registro de envolventes, disposición de puntos y definiciones de medidas.",
+          "deliverables": "Vistas de medidas y eventos por umbral a nivel de envolvente.",
+          "acceptance": "Un evento de ejemplo identifica su origen y envolvente configurados.",
+          "considerations": "La monitorización es distinta de la protección contra incendios o el control de baterías."
+        },
+        {
+          "title": "Contexto de mantenimiento distribuido",
+          "description": "Conecte equipos de emplazamientos con hallazgos de inspección y referencias de mantenimiento de una cartera regional.",
+          "inputs": "Jerarquía emplazamiento-activo y puntos de acceso autorizados a registros de servicio.",
+          "deliverables": "Navegación de cartera con enlaces de servicio por equipo.",
+          "acceptance": "Los usuarios acceden al registro correcto del emplazamiento según su rol.",
+          "considerations": "El estado de un activo no constituye automáticamente un diagnóstico de fallo."
+        }
+      ]
+    },
+    {
+      "id": "wind",
+      "title": "Parques eólicos y equipos de torres",
+      "intro": "Mantenga referencias de aerogeneradores, torres y componentes coherentes con las observaciones e inspecciones aportadas al proyecto.",
+      "imageKey": "wind",
+      "imageAlt": "Aerogeneradores en un paisaje abierto",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Contexto de medidas de torres",
+          "description": "Asocie registros de inclinación o vibración de una torre con el aerogenerador, punto y referencia de instalación correctos.",
+          "inputs": "Identificadores de aerogeneradores, orientación de puntos y datos de medida de origen.",
+          "deliverables": "Vistas de puntos de torre con orientación y referencias de tendencias.",
+          "acceptance": "La orientación mostrada coincide con la relación de instalación suministrada.",
+          "considerations": "La evaluación estructural requiere el método de ingeniería responsable."
+        },
+        {
+          "title": "Navegación por inspecciones de componentes",
+          "description": "Pase del objeto de un aerogenerador a notas o fotos de inspección de componentes seleccionados.",
+          "inputs": "Registro de componentes y fuentes documentales de inspección con licencia.",
+          "deliverables": "Evidencias de inspección vinculadas a componentes y datos de revisión.",
+          "acceptance": "Un componente abre su referencia vigente de inspección asignada.",
+          "considerations": "La geometría del modelo puede omitir componentes fuera del alcance acordado."
+        },
+        {
+          "title": "Contexto meteorológico para investigaciones",
+          "description": "Revise registros meteorológicos locales disponibles junto a eventos de equipos seleccionados en la ventana de investigación.",
+          "inputs": "Fuentes meteorológicas, eventos de activos y definiciones de zona horaria.",
+          "deliverables": "Paneles de registros de equipos y meteorología alineados temporalmente.",
+          "acceptance": "Se selecciona el mismo periodo de origen en los paneles acordados.",
+          "considerations": "La correlación no acredita una causa ni un diagnóstico de avería."
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Puentes, túneles e instalaciones de transporte",
+      "intro": "Represente componentes estructurales y activos técnicos monitorizados con sus medidas registradas y referencias de inspección.",
+      "imageKey": "bridge-infrastructure",
+      "imageAlt": "Tablero de puente viario e infraestructuras en condiciones de frío",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Navegación por puntos de monitorización de puentes",
+          "description": "Localice una pila, apoyo o punto del tablero monitorizado y revise su historial disponible de movimiento o vibración.",
+          "inputs": "Identificadores de componentes, relación de puntos y planos de referencia.",
+          "deliverables": "Navegación de componente a medida y enlaces de inspección.",
+          "acceptance": "Cada punto de prueba conduce a la referencia de componente aceptada.",
+          "considerations": "Una vista digital no certifica la aptitud estructural."
+        },
+        {
+          "title": "Contexto de equipos técnicos de túneles",
+          "description": "Organice bombas, puntos ambientales y salas técnicas monitorizados a lo largo de la estructura definida del túnel.",
+          "inputs": "Progresiva del túnel, registro de salas y correspondencias de equipos.",
+          "deliverables": "Vistas de instalaciones y equipos vinculadas a la progresiva.",
+          "acceptance": "Los activos vinculados aparecen en su progresiva y sala acordadas.",
+          "considerations": "Deben revisarse la referencia topográfica y la exactitud de ubicación de equipos."
+        },
+        {
+          "title": "Espacio de historial de inspecciones",
+          "description": "Relacione hallazgos de inspección seleccionados con un componente y los registros de medida del mismo periodo.",
+          "inputs": "Referencias de inspección, identificadores de componentes y marcas temporales de observaciones.",
+          "deliverables": "Historial del componente con enlaces trazables a registros de origen.",
+          "acceptance": "Los usuarios pueden rastrear un hallazgo mostrado hasta su registro de origen.",
+          "considerations": "Las decisiones de ingeniería corresponden al personal cualificado del proyecto."
+        }
+      ]
+    },
+    {
+      "id": "heritage",
+      "title": "Museos y edificios patrimoniales",
+      "intro": "Vincule espacios de colecciones, elementos constructivos y entorno monitorizado sin presentar modelos ilustrativos como evidencia de conservación.",
+      "imageKey": "heritage-outdoor",
+      "imageAlt": "Ruinas de una abadía histórica de piedra y jardines circundantes",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Contexto ambiental de salas y depósitos",
+          "description": "Navegue entre salas de colecciones y sus registros disponibles de temperatura, humedad o luz.",
+          "inputs": "Planos de salas, zonas de exposición/almacenamiento y asignación de puntos.",
+          "deliverables": "Tendencias ambientales y eventos vinculados a espacios.",
+          "acceptance": "Los límites de sala y sensores asignados coinciden con el registro.",
+          "considerations": "Los límites de conservación los establece el especialista responsable."
+        },
+        {
+          "title": "Referencias de monitorización de elementos constructivos",
+          "description": "Asocie puntos acordados de inclinación, vibración o ambiente con el muro, torre o elemento pertinente.",
+          "inputs": "Identificadores de elementos, referencias de instalación y registros de observación.",
+          "deliverables": "Navegación de elemento a punto con enlaces a documentos de instalación.",
+          "acceptance": "Los usuarios pueden contrastar cada punto mostrado con su registro de instalación.",
+          "considerations": "Un cambio medido no implica automáticamente daño o inestabilidad."
+        },
+        {
+          "title": "Contexto de inspecciones de conservación",
+          "description": "Adjunte notas y fotografías autorizadas de inspección a espacios o elementos acordados para su revisión coordinada.",
+          "inputs": "Índice de inspecciones, derechos de reutilización y requisitos de acceso.",
+          "deliverables": "Registros de conservación vinculados a elementos con referencias de versión.",
+          "acceptance": "El elemento seleccionado recupera su registro aprobado correspondiente.",
+          "considerations": "Los registros sensibles de colecciones y edificios necesitan controles de acceso."
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Invernaderos e instalaciones acuícolas",
+      "intro": "Organice compartimentos de cultivo, sistemas de agua y zonas productivas monitorizadas en torno a registros operativos relevantes.",
+      "imageKey": "agriculture",
+      "imageAlt": "Estructura de invernadero y filas de cultivo",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Registros de compartimentos de invernadero",
+          "description": "Presente lecturas ambientales y de suelo disponibles dentro de la estructura del compartimento o zona de cultivo.",
+          "inputs": "Plano de compartimentos, identificadores de zonas y relación de puntos de medida.",
+          "deliverables": "Navegación por zonas con registros ambientales y de suelo subidos.",
+          "acceptance": "Cada canal mostrado conserva su unidad y ubicación de origen.",
+          "considerations": "Un punto no acredita las condiciones de todo un compartimento."
+        },
+        {
+          "title": "Contexto de estanques y equipos acuícolas",
+          "description": "Asocie estanques, bombas y registros disponibles de calidad del agua dentro de la estructura de instalaciones del propietario.",
+          "inputs": "Registro de estanques, relaciones de equipos y definiciones de canales disponibles.",
+          "deliverables": "Vistas estanque-equipo con registros de monitorización trazables.",
+          "acceptance": "Un estanque seleccionado muestra sus referencias asignadas de puntos de muestreo.",
+          "considerations": "El modelo visual no predice el rendimiento biológico.",
+          "imageKey": "aquaculture",
+          "imageAlt": "Estanques de acuicultura al aire libre con caminos de acceso"
+        },
+        {
+          "title": "Historial de inspección y servicio de instalaciones",
+          "description": "Conecte activos de riego, ventilación o bombeo con sus inspecciones y referencias de mantenimiento disponibles.",
+          "inputs": "Jerarquía de activos y fuentes autorizadas de registros de inspección.",
+          "deliverables": "Vistas de equipos con historial de servicio vinculado a su origen.",
+          "acceptance": "Los registros mostrados coinciden con el identificador del activo seleccionado.",
+          "considerations": "El control de actuadores requiere su propio diseño de órdenes con alcance definido."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Alcance del proyecto.\nDocumentado antes del desarrollo.",
+  "scopeIntro": "Estos aspectos se definen en el alcance de trabajo, no constituyen una especificación fija de producto.",
+  "rows": [
+    [
+      "Tipo de servicio",
+      "Desarrollo de software a medida; funciones acordadas por proyecto"
+    ],
+    [
+      "Alcance visual",
+      "Presentación 2D, 3D o combinada tras revisar el modelo y el proceso de trabajo"
+    ],
+    [
+      "Datos de entrada del modelo",
+      "Formatos, titularidad, derechos de reutilización y alcance de conversión acordados"
+    ],
+    [
+      "Integración de datos",
+      "Sistemas de origen identificados, interfaces, identificadores y correspondencia de datos"
+    ],
+    [
+      "Acceso de usuarios",
+      "Roles, autenticación y permisos definidos en el alcance del proyecto"
+    ],
+    [
+      "Alojamiento",
+      "Entorno del cliente o alojamiento acordado; responsabilidades operativas especificadas"
+    ],
+    [
+      "Verificación",
+      "Datos representativos y escenarios de aceptación documentados"
+    ],
+    [
+      "Entregables",
+      "Versión de la aplicación, configuración y documentación según contrato"
+    ],
+    [
+      "Titularidad y licencias",
+      "Código fuente, modelos, licencias de terceros y derechos de reutilización acordados por escrito"
+    ],
+    [
+      "Control de cambios",
+      "Alcance, calendario, soporte y cambios futuros acordados comercialmente"
+    ]
+  ],
+  "handoverTitle": "Del alcance acordado.\nA una entrega documentada.",
+  "handoverIntro": "Defina conjuntamente los entregables y las responsabilidades operativas.",
+  "handover": [
+    {
+      "title": "Revisión y prototipo",
+      "text": "Revise modelos y datos representativos con los usuarios previstos antes de comprometer el alcance visual completo."
+    },
+    {
+      "title": "Implementación y verificación",
+      "text": "Desarrolle las interfaces y vistas acordadas y pruébelas según los escenarios de aceptación documentados."
+    },
+    {
+      "title": "Entrega y soporte",
+      "text": "Entregue la versión y la documentación contratadas. Especifique el despliegue, los derechos sobre el código fuente y las responsabilidades de mantenimiento y licencias."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Qué entregará el primer proyecto?",
+      "a": "Una estructura de activos definida, vistas 2D o 3D seleccionadas, conexiones de datos vinculadas e interacciones de operadores acordadas. El alcance contractual identifica detalle del modelo, interfaces, escenarios de prueba y elementos de entrega del conjunto inicial de activos."
+    },
+    {
+      "q": "¿Se trata de visualización o de simulación física?",
+      "a": "El servicio parte de la representación de activos conectados y la visualización operativa. La simulación física, estimación de estados, predicción o algoritmos de diagnóstico requieren modelos independientes, entradas adecuadas y validación explícita."
+    },
+    {
+      "q": "¿Necesitamos un modelo 3D completo para empezar?",
+      "a": "No. El proyecto puede empezar con planos con licencia, diagramas de equipos o un modelo limitado de activos. El nivel de detalle responde a la tarea operativa; un modelo complejo solo aporta valor si su contexto adicional sirve para esa tarea."
+    },
+    {
+      "q": "¿Pueden reutilizarse archivos BIM o CAD existentes?",
+      "a": "Se pueden revisar su titularidad, reutilización permitida, formato, detalle geométrico y esfuerzo de conversión. Después de convertirlos, debe mantenerse la correspondencia entre elementos del modelo e identificadores de activos operativos."
+    },
+    {
+      "q": "¿Pueden aparecer datos de sensores Hitelecom en el modelo?",
+      "a": "Una integración acordada con Hitelecom Cloud u otro sistema receptor puede proporcionar registros subidos y eventos por umbral configurados. El alcance define canales disponibles, correspondencia de identidades, marcas temporales, calidad y actualización de datos."
+    },
+    {
+      "q": "¿Pueden conectarse sistemas SCADA, BMS o de mantenimiento del cliente?",
+      "a": "Las interfaces pueden evaluarse con muestras de API o extractos de datos y los requisitos de acceso del cliente. Cada integración define protocolos, autenticación, límites de lectura/escritura y sistema de origen responsable."
+    },
+    {
+      "q": "¿Cómo se muestran medidas retrasadas o ausentes?",
+      "a": "El contrato de datos define marcas temporales de origen, indicadores de calidad y reglas de obsolescencia. La interfaz debe mostrar explícitamente esos estados sin tratar la falta de actualización como una condición normal o segura."
+    },
+    {
+      "q": "¿Se generan las alarmas por umbral dentro del gemelo digital?",
+      "a": "Pueden proceder de una plataforma de monitorización existente o de un servicio de reglas de alcance independiente. El proyecto define dónde se evalúan umbrales, cómo llegan los eventos a la vista y cómo se gestionan notificaciones o reconocimientos."
+    },
+    {
+      "q": "¿Puede la aplicación controlar equipos?",
+      "a": "El control no forma parte por defecto del alcance de visualización. Toda vía de órdenes necesita diseño funcional, permisos, enclavamientos, responsabilidad operativa y verificación explícitos y adecuados al equipo."
+    },
+    {
+      "q": "¿Cómo se acepta el rendimiento en el navegador?",
+      "a": "Acuerde modelo representativo, número de activos, perfil de datos, dispositivos e interacciones antes del desarrollo. Pruebe esos escenarios con la arquitectura propuesta en lugar de prometer rendimiento universal."
+    },
+    {
+      "q": "¿Quién recibe código fuente, modelos y materiales de despliegue?",
+      "a": "La entrega de código, titularidad de modelos, derechos de reutilización y documentación de despliegue son asuntos contractuales. Modelos, bibliotecas y servicios de terceros conservan sus licencias, que deben identificarse antes de la entrega."
+    },
+    {
+      "q": "¿Por qué no hay ficha de producto ni precio fijo?",
+      "a": "Es un servicio de software a medida. El alcance contractual, la relación de interfaces, la lista de entregables y el plan de aceptación definen el proyecto real; coste y plazos se determinan tras revisar ese alcance."
+    }
+  ],
+  "enquiryIntro": "Comparta las preguntas operativas, muestras de modelos y las interfaces de datos disponibles. Podemos evaluar un alcance de desarrollo adecuado y la información necesaria para elaborar una propuesta.",
+  "enquiryFields": [
+    {
+      "label": "Activos y usuarios",
+      "placeholder": "Tipos de activos, número de instalaciones y usuarios previstos"
+    },
+    {
+      "label": "Modelos y alcance visual",
+      "placeholder": "Datos CAD/BIM/2D, derechos y vistas requeridas"
+    },
+    {
+      "label": "Fuentes de datos",
+      "placeholder": "Plataforma, ejemplos de API, identificadores y necesidades de actualización"
+    },
+    {
+      "label": "Requisitos de entrega",
+      "placeholder": "Alojamiento, derechos sobre el código fuente y prioridades de aceptación"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-digital-twin.webp",
+  "imageWidth": 400,
+  "imageHeight": 345
+}

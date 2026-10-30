@@ -1,0 +1,43 @@
+/** Custom Development 产品/服务详情页（V132，2026-10-30 GPT6 包 v2.1，Kimi 审核集成）。
+ * 6 款：digital-twin / gis-dashboard / embedded-software / hardware-customization /
+ * coupling-isolator-h100 / explosion-proof-temperature-pressure-sensor；7 语种同 slug。
+ * 结构化数据 WebPage + Service|Product（均无 SKU）+ BreadcrumbList + FAQPage，本语言生成。
+ * #station-ui 合并 shell+ui（custom-interactions.js 依赖 shell 的 wechat/home 等键）。 */
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CustomBody from './CustomBody.astro';
+import protectedHeroes from '../../data/protected-heroes.json';
+const { content, ui, shell, locale = 'en' } = Astro.props;
+const c = content; const u = ui;
+const prefix = locale === 'en' ? '' : `/${locale}`;
+const origin = 'https://www.hitelecom.com';
+const canonical = origin + prefix + '/product/' + c.slug;
+const htmlLang = locale === 'zh' ? 'zh-CN' : locale;
+const originalHero = protectedHeroes[c.id];
+const entity = { '@type': c.kind, '@id': canonical + '#entity', name: c.name, description: c.metaDescription,
+  url: canonical, image: origin + '/assets/' + originalHero.file };
+if (c.kind === 'Product') {
+  entity.brand = { '@type': 'Brand', name: 'Hitelecom' };
+  entity.additionalProperty = c.rows.map(([name, value]) => ({ '@type': 'PropertyValue', name, value }));
+} else {
+  entity.provider = { '@type': 'Organization', name: 'Hitelecom', url: origin };
+  entity.serviceType = c.name;
+}
+const structured = { '@context': 'https://schema.org', '@graph': [
+  { '@type': 'WebPage', '@id': canonical + '#webpage', url: canonical, name: c.title, inLanguage: htmlLang, mainEntity: { '@id': canonical + '#entity' } },
+  entity,
+  { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: shell.home, item: origin + prefix + '/' },
+    { '@type': 'ListItem', position: 2, name: u.catalogName, item: origin + prefix + '/product/lists/cid/256' },
+    { '@type': 'ListItem', position: 3, name: c.name, item: canonical }] },
+  { '@type': 'FAQPage', inLanguage: htmlLang, mainEntity: c.faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }
+] };
+const allLocales = ['en', 'zh', 'es', 'de', 'ja', 'fr', 'ru'];
+const langTargets = Object.fromEntries(allLocales.map(loc => [loc, `${loc === 'en' ? '' : `/${loc}`}/product/${c.slug}`]));
+const stationUi = Object.assign({}, shell, u);
+---
+<BaseLayout locale={locale} title={c.title} description={c.metaDescription} socialImage={'/assets/' + originalHero.file} langOverrides={langTargets}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(structured).replace(/</g, '\\u003c')}></script>
+  <script id="station-ui" type="application/json" set:html={JSON.stringify(stationUi).replace(/</g, '\\u003c')}></script>
+  <CustomBody content={c} ui={u} shell={shell} locale={locale}/>
+</BaseLayout>

@@ -1,0 +1,630 @@
+{
+  "id": "gis-dashboard",
+  "slug": "gis-dashboard-development",
+  "kind": "Service",
+  "name": "Développement de tableaux de bord SIG",
+  "title": "Tableaux de bord SIG sur mesure | Cartes IoT et actifs répartis | Hitelecom",
+  "metaDescription": "Tableaux de bord SIG sur mesure pour les actifs répartis et la surveillance IoT. Définissez les couches cartographiques, les sources de position, le traitement des événements et l’intégration aux plateformes.",
+  "heroHeading": "Développement de\ntableaux de bord SIG.",
+  "heroValue": "Le contexte géographique.\nPour les opérations connectées.",
+  "heroDescription": "Donnez aux actifs répartis et aux événements un contexte géographique commun. Hitelecom définit les tableaux de bord selon votre registre, vos sources de position et votre exploitation : trouvez le point, consultez ses données, son historique et transmettez le dossier à l’équipe responsable. Une intégration convenue à Hitelecom Cloud ou à votre plateforme peut fournir données en ligne et notifications de seuil configurées. Fonctions cartographiques, sources et accès sont définis par projet.",
+  "caption": "Développement de tableaux de bord SIG",
+  "imageAlt": "Développement de tableaux de bord SIG",
+  "proof": [
+    {
+      "value": "Cartes",
+      "label": "Contexte géographique convenu",
+      "note": "Spécifier les couches, coordonnées et droits d’utilisation"
+    },
+    {
+      "value": "Données",
+      "label": "Enregistrements géolocalisés",
+      "note": "Rattacher les identifiants, horodatages et critères de qualité"
+    },
+    {
+      "value": "Processus",
+      "label": "Actions opérateurs définies",
+      "note": "Convenir des filtres, rôles et traitements des événements"
+    }
+  ],
+  "featureTitle": "Une carte opérationnelle.\nUn modèle de données défini.",
+  "featureIntro": "Une carte opérationnelle utile relie position, relevés fiables et action suivante claire. Définissez couches et interactions selon l’équipe, de la vue de supervision à la visite mobile.",
+  "features": [
+    {
+      "title": "Couches d’actifs opérationnelles",
+      "text": "Séparez installations, équipements, points et zones opérationnelles en couches. Utilisez des identifiants stables pour ouvrir le bon dossier source et ses mesures depuis la carte."
+    },
+    {
+      "title": "Coordonnées et qualité de localisation",
+      "text": "Documentez référentiels de coordonnées, sources, dates de mise à jour et indicateurs de qualité. Distinguez positions relevées, estimées et dernières positions mobiles transmises."
+    },
+    {
+      "title": "Mesures et historiques associés",
+      "text": "Sélectionnez un point pour consulter mesures, unités, horodatages et historiques disponibles. Reliez Hitelecom Cloud ou une source client par des identifiants documentés et interfaces autorisées."
+    },
+    {
+      "title": "Recherche, filtres et synthèses cartographiques",
+      "text": "Définissez recherche d’actifs, filtres d’état, gestion des couches et synthèses géographiques. Précisez leurs effets sur symboles, listes et totaux pour conserver le même ensemble de dossiers dans tout le tableau de bord."
+    },
+    {
+      "title": "Événements dans leur contexte géographique",
+      "text": "Placez alarmes de seuil reçues et événements convenus sur l’actif ou l’emplacement associé. Distinguez événements actifs, acquittés et historiques selon le processus source et le rôle utilisateur."
+    },
+    {
+      "title": "Trajectoires et règles géographiques",
+      "text": "Si les positions le permettent, définissez trajectoires, entrées/sorties de zone ou proximité. Précisez incertitude, comportement aux limites et temporisation ; ces fonctions n’améliorent pas la précision du positionnement source."
+    },
+    {
+      "title": "Processus terrain et salle de contrôle",
+      "text": "Adaptez sélection cartographique, détails et transfert de dossiers à l’ordinateur ou au mobile. Sur mobile, privilégiez informations du site et liens d’inspection plutôt que tous les panneaux de supervision."
+    },
+    {
+      "title": "Déploiement, licences et accès",
+      "text": "Spécifiez service cartographique, droits sur tuiles/données, hébergement, authentification et limites d’accès. Convenez des API, de la conservation, de la remise des sources et des coûts tiers avant réalisation."
+    }
+  ],
+  "planningTitle": "Partez des coordonnées.\nAboutissez à des décisions claires.",
+  "planningIntro": "L’apparence cartographique, l’interprétation des données et les responsabilités d’exploitation doivent être spécifiées ensemble.",
+  "planning": [
+    {
+      "title": "Définissez le territoire opérationnel",
+      "text": "Listez zones, actifs et utilisateurs. Examinez coordonnées, limites et qualité de localisation avant de choisir fond de carte et couches.",
+      "brief": "Couverture · Référentiel de coordonnées · Registre des actifs · Qualité de localisation · Droits cartographiques"
+    },
+    {
+      "title": "Définissez le contrat des relevés et événements",
+      "text": "Examinez des exemples d’identité, mesures, horodatages, qualité, états d’événement et historique. Spécifiez traitement des absences, doublons, retards et désordres temporels.",
+      "brief": "Exemples d’API · Correspondances d’identités · Sémantique temporelle · États d’événement · Conservation"
+    },
+    {
+      "title": "Vérifiez le processus cartographique",
+      "text": "Choisissez sites, événements, droits et tâches mobiles représentatifs. Convenez du comportement des cartes, listes, totaux et transferts avec ces données et appareils.",
+      "brief": "Scénarios utilisateurs · Règles des couches · Appareils cibles · Jeu de réception · Transfert"
+    }
+  ],
+  "applicationsTitle": "Des actifs répartis.\nDes processus géolocalisés.",
+  "applicationsIntro": "Douze domaines illustrent l’association des sites, relevés et processus. Chaque tâche précise entrées, résultat proposé et contrôle de réception ; qualité des sources et droits cartographiques déterminent le périmètre.",
+  "groups": [
+    {
+      "id": "water-network",
+      "title": "Réseaux de distribution et de pompage d’eau",
+      "intro": "Donnez aux actifs un référentiel géographique cohérent sans confondre connexions cartographiées et modèle hydraulique validé.",
+      "imageKey": "water",
+      "imageAlt": "Station de pompage extérieure avec tuyauteries bleues",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Vue des secteurs de surveillance de pression",
+          "description": "Examinez les pressions transmises selon les points et secteurs de distribution définis par l’exploitant.",
+          "inputs": "Coordonnées des points, limites des secteurs et relevés de pression.",
+          "deliverables": "Filtres par secteur avec mesures et tendances des points.",
+          "acceptance": "Carte filtrée, liste et totaux montrent les mêmes points.",
+          "considerations": "Limites de secteurs et référence de pression proviennent du propriétaire."
+        },
+        {
+          "title": "Événements des stations de pompage réparties",
+          "description": "Localisez la station liée à un événement et ouvrez ses relevés d’état disponibles.",
+          "inputs": "Registre des stations, identifiants d’équipements et données événementielles sources.",
+          "deliverables": "Carte d’événements avec détails liés aux sources.",
+          "acceptance": "Un événement d’essai sélectionne la bonne station et son relevé source.",
+          "considerations": "La carte n’est ni une commande de pompe ni une autorité d’intervention."
+        },
+        {
+          "title": "Transmission du site à l’inspection terrain",
+          "description": "Transmettez la référence d’une vanne, d’un compteur ou d’un site au processus d’inspection convenu.",
+          "inputs": "Positions des actifs et liens autorisés du système d’inspection.",
+          "deliverables": "Détail d’actif avec transfert d’inspection convenu.",
+          "acceptance": "Le dossier reçu conserve l’identifiant d’actif sélectionné.",
+          "considerations": "Le propriétaire de l’actif tient à jour les consignes d’accès au site."
+        }
+      ]
+    },
+    {
+      "id": "drainage",
+      "title": "Assainissement pluvial, rivières et bassins versants",
+      "intro": "Organisez actifs de drainage et observations dans les zones de l’équipe d’exploitation responsable.",
+      "imageKey": "hydro-river",
+      "imageAlt": "Cours d’eau et paysage environnant",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Carte des anomalies des points de drainage",
+          "description": "Localisez les événements reçus de niveau ou de fuite autour des ouvrages et points bas surveillés.",
+          "inputs": "Registre des ouvrages, positions des points et définitions d’événements.",
+          "deliverables": "Événements localisés avec historique récent des mesures.",
+          "acceptance": "Un événement de niveau d’essai correspond à son point de mesure cartographié.",
+          "considerations": "Un niveau observé n’est pas une prévision de crue."
+        },
+        {
+          "title": "Comparaison des observations d’un bassin versant",
+          "description": "Comparez pluie et niveaux disponibles entre les stations d’un bassin versant.",
+          "inputs": "Limites du bassin, coordonnées des stations et séries temporelles.",
+          "deliverables": "Sélection de bassin avec panneaux d’observation synchronisés.",
+          "acceptance": "Périodes et unités sources concordent entre panneaux.",
+          "considerations": "La position des stations influence la représentativité des comparaisons."
+        },
+        {
+          "title": "Analyse de la couverture des inspections",
+          "description": "Affichez dates d’inspection et dossiers non résolus des actifs de drainage d’une zone.",
+          "inputs": "Identifiants d’actifs, dates d’inspection et états convenus.",
+          "deliverables": "Couche d’inspection par zone avec liens de dossiers.",
+          "acceptance": "Les totaux de couverture correspondent aux relevés d’entrée acceptés.",
+          "considerations": "L’exhaustivité d’inspection se distingue de l’état des infrastructures."
+        }
+      ]
+    },
+    {
+      "id": "renewables",
+      "title": "Sites solaires, éoliens et énergétiques répartis",
+      "intro": "Naviguez dans un parc régional en conservant le lien entre site, registre et informations reçues.",
+      "imageKey": "solar",
+      "imageAlt": "Champ de panneaux solaires sur un site énergétique extérieur",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Vue régionale de l’état des sites",
+          "description": "Filtrez les sites renouvelables par état d’événement reçu, disponibilité de surveillance ou région d’exploitation.",
+          "inputs": "Coordonnées des sites, limites régionales et définitions des états sources.",
+          "deliverables": "Carte régionale avec listes de sites et totaux par état.",
+          "acceptance": "Un filtre convenu donne des résultats cohérents entre carte et synthèse.",
+          "considerations": "L’état affiché suit la signification définie par le système source."
+        },
+        {
+          "title": "Carte des mesures sur mâts et stations",
+          "description": "Localisez mâts, postes d’onduleurs ou équipements auxiliaires et ouvrez leurs relevés disponibles.",
+          "inputs": "Positions d’actifs, identifiants de points et données de mesure.",
+          "deliverables": "Détails d’actifs avec relevés transmis et historique.",
+          "acceptance": "L’actif sélectionné conserve les bonnes identités et unités de points.",
+          "considerations": "Les relevés d’état ne diagnostiquent pas automatiquement un défaut."
+        },
+        {
+          "title": "Vue de préparation des zones de maintenance",
+          "description": "Regroupez géographiquement les dossiers de service pour l’équipe régionale responsable.",
+          "inputs": "Références de service ouvertes et zones d’exploitation attribuées.",
+          "deliverables": "Liste de service filtrée par zone avec liens autorisés.",
+          "acceptance": "Les utilisateurs ne voient que les dossiers autorisés dans leur zone.",
+          "considerations": "L’optimisation des itinéraires est un périmètre analytique distinct."
+        }
+      ]
+    },
+    {
+      "id": "telecom",
+      "title": "Pylônes télécoms et sites d’équipements distants",
+      "intro": "Réunissez identité, position et surveillance du site dans un parcours géographique d’investigation.",
+      "imageKey": "telecom-site",
+      "imageAlt": "Site de communications extérieur distant avec armoires fermées et chemins de maintenance accessibles",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Investigation de l’état d’un site de pylône",
+          "description": "Trouvez le site d’un événement d’inclinaison, d’environnement ou de boîtier et examinez les mesures sources.",
+          "inputs": "Registre des pylônes, attribution des points et relevés reçus.",
+          "deliverables": "Panneau de pylône avec événements et tendances.",
+          "acceptance": "Un événement connu ouvre la source de mesure correspondante.",
+          "considerations": "L’installation et l’orientation des capteurs déterminent l’interprétation."
+        },
+        {
+          "title": "Analyse de l’état des communications du site",
+          "description": "Distinguez sites avec transmissions actuelles et sites dont les données sont retardées ou indisponibles.",
+          "inputs": "Horodatages de transmission, identités des sites et règles de péremption.",
+          "deliverables": "Couche de fraîcheur et liste de sites filtrée.",
+          "acceptance": "Un relevé d’essai retardé apparaît dans l’état périmé convenu.",
+          "considerations": "Une transmission manquante seule n’identifie pas la cause du défaut."
+        },
+        {
+          "title": "Contexte des visites de prestataires",
+          "description": "Fournissez aux visiteurs autorisés référence du site, consignes d’accès et lien d’inspection convenu.",
+          "inputs": "Documents du site, rôles des prestataires et références du système de visites.",
+          "deliverables": "Informations limitées par rôle et transfert vers l’inspection.",
+          "acceptance": "Les utilisateurs non affectés n’accèdent pas aux détails restreints.",
+          "considerations": "L’accès à la carte n’autorise pas l’entrée physique."
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Corridors routiers, ferroviaires et tunnels",
+      "intro": "Associez références de corridor et positions surveillées pour retrouver le point source d’une observation.",
+      "imageKey": "bridge-infrastructure",
+      "imageAlt": "Tablier de pont routier et infrastructures par temps froid",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Recherche des points de surveillance d’un corridor",
+          "description": "Trouvez un point par identifiant, chaînage ou position géographique approuvée.",
+          "inputs": "Tracé du corridor, référence de chaînage et registre des points.",
+          "deliverables": "Couche recherchable avec détails de localisation.",
+          "acceptance": "Un point d’essai correspond à la référence de corridor convenue.",
+          "considerations": "Les transformations de coordonnées et de chaînage nécessitent un référentiel défini."
+        },
+        {
+          "title": "Localisation des événements de ponts et tunnels",
+          "description": "Affichez événements de mouvement, vibration ou environnement sur l’ouvrage ou installation associés.",
+          "inputs": "Inventaire des ouvrages, identifiants d’événements et coordonnées des points.",
+          "deliverables": "Carte des événements d’ouvrages avec relevés sources traçables.",
+          "acceptance": "L’événement sélectionné renvoie au bon ouvrage et au bon point.",
+          "considerations": "Le tableau de bord ne certifie pas la sécurité des infrastructures de transport."
+        },
+        {
+          "title": "Analyse des inspections par section",
+          "description": "Examinez les inspections sources par section de corridor et ouvrez le constat sélectionné.",
+          "inputs": "Limites de sections, registre d’inspection et règles d’accès.",
+          "deliverables": "Filtres de section avec liens documentaires ou d’ordres de travail.",
+          "acceptance": "Les totaux par section concordent avec le jeu d’inspections fourni.",
+          "considerations": "Les priorités d’ingénierie restent la décision du propriétaire responsable."
+        }
+      ]
+    },
+    {
+      "id": "construction",
+      "title": "Chantiers, talus et ouvrages provisoires",
+      "intro": "Maintenez l’alignement des points et des zones lorsque le chantier ou le plan évolue.",
+      "imageKey": "civil-earthworks",
+      "imageAlt": "Terrassement de chantier et terrain nivelé exposé",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Vue d’ensemble de surveillance des zones de travaux",
+          "description": "Regroupez points d’inclinaison, de vibration ou d’environnement par zone du projet.",
+          "inputs": "Limites des zones, registre des points et canaux disponibles.",
+          "deliverables": "Carte de surveillance sélectionnable par zone avec mesures sources.",
+          "acceptance": "La zone choisie retourne son ensemble convenu de points surveillés.",
+          "considerations": "Les changements de zone exigent des mises à jour maîtrisées du modèle."
+        },
+        {
+          "title": "Contexte des points sur talus et remblais",
+          "description": "Localisez les points et leurs documents de référence le long du talus ou remblai défini.",
+          "inputs": "Positions topographiques des points et références d’installation.",
+          "deliverables": "Carte des points avec historique et liens d’installation.",
+          "acceptance": "Chaque point affiché peut être relié à sa position source.",
+          "considerations": "Une tendance ponctuelle n’est pas une évaluation de stabilité."
+        },
+        {
+          "title": "Analyse des révisions du plan de surveillance",
+          "description": "Suivez l’effet géographique des points ajoutés, déplacés ou retirés dans une révision convenue.",
+          "inputs": "Tableaux de points versionnés et dates d’effet.",
+          "deliverables": "Comparaison des révisions avec identification des états de points.",
+          "acceptance": "La révision acceptée reproduit son ensemble documenté de points actifs.",
+          "considerations": "Les positions historiques ne doivent pas être écrasées silencieusement."
+        }
+      ]
+    },
+    {
+      "id": "logistics",
+      "title": "Parcs logistiques, ports et actifs mobiles",
+      "intro": "Reliez lieux de réception, zones et positions transmises avec l’identité et l’heure de chaque relevé source.",
+      "imageKey": "container-terminal",
+      "imageAlt": "Conteneurs empilés dans une cour de terminal côtier",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Recherche de position des actifs du parc",
+          "description": "Trouvez conteneur, remorque ou actif réutilisable par sa dernière position disponible et son identité.",
+          "inputs": "Identifiants d’actifs, positions et champs de qualité de localisation.",
+          "deliverables": "Carte recherchable avec détails du dernier relevé.",
+          "acceptance": "Identité, horodatage et position sélectionnés correspondent à l’entrée.",
+          "considerations": "La dernière position transmise n’est pas une position actuelle garantie."
+        },
+        {
+          "title": "Analyse des entrées et sorties de zone",
+          "description": "Définissez les événements géographiques des actifs mobiles lorsque les positions disponibles permettent les règles requises.",
+          "inputs": "Limites de zones sous licence, exemples de trajectoires et règles.",
+          "deliverables": "Vue d’événements de zone avec références des positions sources.",
+          "acceptance": "Les cas limites représentatifs suivent les règles acceptées.",
+          "considerations": "Incertitude et intervalles de transmission influencent l’interprétation des franchissements."
+        },
+        {
+          "title": "Contexte des séjours et visites",
+          "description": "Examinez visites enregistrées ou durées convenues dans les parcs ou terminaux sélectionnés.",
+          "inputs": "Positions horodatées et définitions des visites/agrégations.",
+          "deliverables": "Historique des visites par zone avec entrées de calcul traçables.",
+          "acceptance": "Les visites d’essai reproduisent les règles de calcul documentées.",
+          "considerations": "Le séjour calculé dépend des règles de données absentes et d’intervalles temporels."
+        }
+      ]
+    },
+    {
+      "id": "cold-chain",
+      "title": "Itinéraires de chaîne du froid et livraisons",
+      "intro": "Montrez où les relevés reçus sont associés à une expédition, un véhicule ou un lieu de manutention.",
+      "imageKey": "refrigerated-logistics",
+      "imageAlt": "Camion frigorifique à un quai de chargement",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Analyse de l’état et de la position d’une expédition",
+          "description": "Examinez les températures transmises avec l’identité et l’historique de position disponibles.",
+          "inputs": "Identifiants d’expédition, températures et sources de position.",
+          "deliverables": "Carte d’expédition avec historique d’état synchronisé.",
+          "acceptance": "Un relevé choisi conserve heure, unité et position sources.",
+          "considerations": "Horloges et intervalles d’échantillonnage distincts nécessitent un rapprochement."
+        },
+        {
+          "title": "Contexte des anomalies au point de livraison",
+          "description": "Localisez le point de manutention signalé pour une anomalie d’état ou un événement source.",
+          "inputs": "Lieux de livraison, références d’événements et heures de manutention.",
+          "deliverables": "Panneau d’événement de livraison et relevés sources associés.",
+          "acceptance": "Une anomalie d’essai ouvre sa référence de manutention correspondante.",
+          "considerations": "La carte n’établit ni le devenir du produit ni sa conformité."
+        },
+        {
+          "title": "Investigation de l’historique d’itinéraire",
+          "description": "Affichez positions reçues et arrêts choisis pendant une période d’analyse convenue.",
+          "inputs": "Historique des positions, identifiants d’itinéraires et droits de conservation.",
+          "deliverables": "Trajectoires filtrées dans le temps avec références des arrêts enregistrés.",
+          "acceptance": "Les points affichés correspondent au jeu source accepté.",
+          "considerations": "Les lacunes restent visibles sans inventer de parcours effectué."
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Terres agricoles et périmètres d’irrigation",
+      "intro": "Organisez les observations par parcelle, zone irriguée et installation gérée utile à l’exploitant.",
+      "imageKey": "agriculture",
+      "imageAlt": "Structure de serre et rangées de cultures agricoles",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Carte de surveillance des champs et parcelles",
+          "description": "Examinez les relevés disponibles de sol ou météo locale dans leurs parcelles attribuées.",
+          "inputs": "Limites parcellaires, positions des capteurs et unités de mesure.",
+          "deliverables": "Sélection de parcelle avec mesures ponctuelles et historique.",
+          "acceptance": "Les parcelles choisies n’affichent que leurs points d’observation convenus.",
+          "considerations": "Les mesures ponctuelles ne caractérisent pas tout le champ."
+        },
+        {
+          "title": "Vue de localisation des actifs d’irrigation",
+          "description": "Localisez réservoirs, pompes ou équipements de commande surveillés et ouvrez leurs relevés disponibles.",
+          "inputs": "Registre des actifs d’irrigation et interfaces sources convenues.",
+          "deliverables": "Couche d’actifs avec détails d’état et de maintenance associés.",
+          "acceptance": "Un dossier source correspond au bon actif cartographique.",
+          "considerations": "La commande d’irrigation constitue un périmètre distinct."
+        },
+        {
+          "title": "Contexte des inspections et relevés saisonniers",
+          "description": "Examinez observations ou références de maintenance par zone de culture et période d’exploitation.",
+          "inputs": "Identifiants de zones, inspections et définitions des dates saisonnières.",
+          "deliverables": "Filtres de relevés par zone avec liens documentaires sources.",
+          "acceptance": "La période choisie reproduit la sélection convenue des relevés.",
+          "considerations": "Les recommandations agronomiques nécessitent une base analytique distincte."
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "title": "Réseaux d’observation environnementale",
+      "intro": "Reliez lieux d’échantillonnage et relevés de stations à des couches et définitions de mesure traçables.",
+      "imageKey": "hydro-reservoir",
+      "imageAlt": "Eau de réservoir et digue environnante",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Réseau de stations d’air et de météo",
+          "description": "Localisez les stations et consultez les mesures transmises disponibles à chaque point.",
+          "inputs": "Registre des stations, coordonnées et définitions des canaux.",
+          "deliverables": "Carte de stations avec panneaux de mesures et de fraîcheur.",
+          "acceptance": "Chaque canal conserve sa source d’origine et ses unités.",
+          "considerations": "La représentativité dépend de l’exposition du site et des capteurs."
+        },
+        {
+          "title": "Relevés des lieux d’échantillonnage d’eau",
+          "description": "Associez échantillons ou surveillance au lieu pertinent de rivière, réservoir ou rejet.",
+          "inputs": "Identifiants des points, coordonnées et références de laboratoire/source.",
+          "deliverables": "Carte d’échantillonnage avec historique lié aux sources.",
+          "acceptance": "Un résultat affiché est traçable jusqu’à sa référence d’échantillonnage.",
+          "considerations": "Une vue cartographique n’est pas une certification de surveillance réglementaire."
+        },
+        {
+          "title": "Investigation d’événements par zone",
+          "description": "Examinez les événements de seuil reçus dans la zone et la période environnementales convenues.",
+          "inputs": "Limites de zone, définitions d’événements et horodatages.",
+          "deliverables": "Filtres spatiaux et temporels avec détails d’événements traçables.",
+          "acceptance": "Carte, liste et export concordent pour la fenêtre d’essai.",
+          "considerations": "Les notifications dépendent du processus récepteur configuré."
+        }
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Campus et parcs d’équipements publics",
+      "intro": "Offrez aux équipes une vue partagée des bâtiments, équipements et dossiers surveillés.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Bâtiment de campus et espace extérieur paysager",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Carte de surveillance du parc immobilier",
+          "description": "Filtrez les bâtiments par usage, région d’exploitation ou état d’événement environnemental reçu.",
+          "inputs": "Emprises des bâtiments, champs de propriété et sources d’événements.",
+          "deliverables": "Couches de bâtiments avec filtres communs et panneaux d’état.",
+          "acceptance": "Les totaux filtrés concordent avec le registre accepté.",
+          "considerations": "Les agrégations de bâtiments multipoints nécessitent des règles explicites."
+        },
+        {
+          "title": "Actifs extérieurs d’utilités et d’éclairage",
+          "description": "Localisez mâts d’éclairage, points de service d’eau ou autres actifs à partir du registre approuvé.",
+          "inputs": "Coordonnées, catégories et identifiants des points sources.",
+          "deliverables": "Couche d’actifs recherchable avec accès aux dossiers.",
+          "acceptance": "L’actif choisi ouvre la bonne source de mesure ou de maintenance.",
+          "considerations": "Les fonctions de mesure installées varient selon l’appareil."
+        },
+        {
+          "title": "Informations mobiles pour les visites de maintenance",
+          "description": "Fournissez à l’utilisateur mobile détails approuvés et transfert d’inspection de l’installation choisie.",
+          "inputs": "Documents d’installation, tâches mobiles et rôles des utilisateurs.",
+          "deliverables": "Panneau adapté au mobile avec liens sources autorisés.",
+          "acceptance": "Les tâches terrain convenues restent utilisables sur les appareils cibles.",
+          "considerations": "Le fonctionnement hors connexion nécessite un périmètre explicite de cache et de sécurité."
+        }
+      ]
+    },
+    {
+      "id": "parks-heritage",
+      "title": "Parcs, sites touristiques et domaines patrimoniaux",
+      "intro": "Localisez espaces publics surveillés et actifs de maintenance en maîtrisant l’accès aux informations sensibles.",
+      "imageKey": "heritage-outdoor",
+      "imageAlt": "Ruines d’une abbaye en pierre et espaces paysagers environnants",
+      "imageCaption": "Environnement d’application représentatif. Le périmètre du projet et l’adéquation sont définis pour l’installation.",
+      "tasks": [
+        {
+          "title": "Positions de surveillance des bâtiments patrimoniaux",
+          "description": "Trouvez le bâtiment ou point extérieur associé à une observation d’environnement ou de mouvement reçue.",
+          "inputs": "Registre des bâtiments, coordonnées et références de surveillance.",
+          "deliverables": "Carte du domaine avec liens sources par bâtiment.",
+          "acceptance": "Chaque observation correspond à sa référence de bâtiment acceptée.",
+          "considerations": "Le spécialiste responsable interprète les conditions."
+        },
+        {
+          "title": "Équipements de parc et stations environnementales",
+          "description": "Examinez positions et relevés reçus des mâts, équipements ou stations d’un parc.",
+          "inputs": "Limites du parc, registre des actifs et données disponibles.",
+          "deliverables": "Carte filtrée par catégorie avec observations horodatées.",
+          "acceptance": "La catégorie choisie retourne l’ensemble convenu d’actifs surveillés.",
+          "considerations": "La carte ne suggère pas la couverture des zones non surveillées."
+        },
+        {
+          "title": "Contexte de maintenance des zones visiteurs",
+          "description": "Reliez les problèmes signalés à la zone visiteurs concernée et au processus de maintenance approuvé.",
+          "inputs": "Limites des zones visiteurs et interfaces autorisées des dossiers d’incidents.",
+          "deliverables": "Vue des incidents par zone avec équipes responsables.",
+          "acceptance": "Un incident d’essai ouvre le bon dossier source et la bonne zone.",
+          "considerations": "Vues publiques et internes nécessitent des droits distincts."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Le périmètre du projet.\nGéographie et données réunies.",
+  "scopeIntro": "Définissez ces éléments dans le cahier des charges contractuel ; cette prestation n’a pas de spécification fixe universelle.",
+  "rows": [
+    [
+      "Type de prestation",
+      "Tableau de bord géographique sur mesure et intégration de données convenue"
+    ],
+    [
+      "Couverture et référence",
+      "Couverture géographique, systèmes de coordonnées et sources de position"
+    ],
+    [
+      "Fonds de carte et couches",
+      "Fournisseur retenu, usages autorisés, mentions d’attribution et coûts de licence"
+    ],
+    [
+      "Données sources",
+      "API, fichiers d’entrée, identifiants, unités et horodatages convenus"
+    ],
+    [
+      "Fonctions",
+      "Vues, filtres, recherche et processus événementiels expressément inclus au périmètre"
+    ],
+    [
+      "Accès utilisateurs",
+      "Authentification, rôles et droits sur les données convenus par déploiement"
+    ],
+    [
+      "Hébergement et exploitation",
+      "Environnement de déploiement, accès cartographique et responsabilités d’exploitation"
+    ],
+    [
+      "Vérification",
+      "Positions et enregistrements représentatifs, scénarios de réception documentés"
+    ],
+    [
+      "Livrables et droits",
+      "Version, documentation et conditions sur le code source prévues au contrat"
+    ],
+    [
+      "Maintenance",
+      "Évolutions du fournisseur cartographique, actualisations des données et support convenus séparément"
+    ]
+  ],
+  "handoverTitle": "De la revue des données.\nÀ une carte opérationnelle.",
+  "handoverIntro": "Confirmez les modalités de livraison et de maintenance du tableau de bord.",
+  "handover": [
+    {
+      "title": "Examiner les données géographiques",
+      "text": "Examinez des coordonnées, couches et enregistrements API représentatifs avant de confirmer les fonctions cartographiques."
+    },
+    {
+      "title": "Réaliser et vérifier les parcours",
+      "text": "Mettez en œuvre les interactions convenues et testez les enregistrements, autorisations et comportements en cas de données manquantes."
+    },
+    {
+      "title": "Documenter l’exploitation",
+      "text": "Remettez l’application contractuelle et sa configuration cartographique, en précisant les responsabilités de licence et de maintenance."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Qu’est-ce qui distingue un tableau de bord SIG d’un tableau de surveillance général ?",
+      "a": "Un tableau SIG intègre géographie et couches opérationnelles au parcours d’analyse. Il relie actifs ou zones aux mesures, événements et dossiers ; carte, listes et synthèses doivent suivre la même sélection de données."
+    },
+    {
+      "q": "Capteurs fixes et actifs mobiles peuvent-ils partager la même carte ?",
+      "a": "Ils peuvent être définis comme couches distinctes avec leurs sources de position et règles temporelles. L’utilisateur doit distinguer une position topographique fixe d’une dernière position mobile transmise."
+    },
+    {
+      "q": "Le tableau améliore-t-il la précision de localisation ?",
+      "a": "Non. La précision provient du positionnement, du relevé topographique ou d’une autre source. Le projet définit transformations de coordonnées et représentation de la qualité, des incertitudes et données périmées."
+    },
+    {
+      "q": "Peut-il utiliser notre service cartographique et nos couches ?",
+      "a": "Ils peuvent être examinés pour les interfaces, couverture, référentiels, accès et droits d’usage. Tuiles, services commerciaux et jeux tiers conservent leurs licences et conditions commerciales."
+    },
+    {
+      "q": "Peut-on utiliser les données de Hitelecom Cloud ?",
+      "a": "Une intégration convenue peut fournir les relevés transmis et événements de seuil configurés de Hitelecom Cloud. Identités, coordonnées, canaux, unités et horodatages sont associés aux couches du tableau."
+    },
+    {
+      "q": "La carte peut-elle afficher historiques de parcours et relevés d’état ?",
+      "a": "Si l’historique autorisé existe, le projet peut définir trajectoires filtrées et mesures associées. Conservation, alignement temporel, lacunes, interpolation ou agrégation sont définis avant réalisation."
+    },
+    {
+      "q": "Géorepérage et calcul de séjour sont-ils standard ?",
+      "a": "Ce sont des options de projet, pas des inclusions universelles. Positions adaptées, limites sous licence, gestion d’incertitude, règles d’entrée/sortie et sémantique de calcul doivent convenir à l’usage."
+    },
+    {
+      "q": "Comment gérer alarmes et notifications cartographiques ?",
+      "a": "Les événements peuvent provenir d’une plateforme existante ou d’un moteur de règles expressément défini. Le projet identifie responsable des seuils, états, destinataires et acquittement ou transfert aval éventuels."
+    },
+    {
+      "q": "La carte fonctionne-t-elle sur téléphone ou sans connexion ?",
+      "a": "La présentation mobile suit les tâches terrain et appareils cibles. Cartes hors ligne ou cache exigent une décision distincte sur licences, stockage, fraîcheur, synchronisation et sécurité d’accès."
+    },
+    {
+      "q": "Clients ou prestataires peuvent-ils voir des sites différents ?",
+      "a": "Les accès peuvent être définis par organisation, région, site ou rôle. Testez couches, détails, exports et liens sources avec des comptes représentatifs avant réception."
+    },
+    {
+      "q": "Quelles informations faut-il pour un devis ?",
+      "a": "Communiquez zone couverte, registre, exemples de coordonnées, API ou relevés sources, préférence cartographique, rôles et processus. Ajoutez volumes, conservation, appareils cibles et environnement de déploiement proposé."
+    },
+    {
+      "q": "Quels documents et droits sur les sources sont remis ?",
+      "a": "Le contrat définit application, configuration, schéma de couches, correspondances d’interface, résultats de réception et instructions livrés. Droits sur le code, licences cartographiques, coûts tiers et assistance sont expressément convenus."
+    }
+  ],
+  "enquiryIntro": "Présentez les sites, couches géographiques et données à réunir. Joignez vos préférences cartographiques et des exemples de données pour permettre l’évaluation du périmètre.",
+  "enquiryFields": [
+    {
+      "label": "Couverture et utilisateurs",
+      "placeholder": "Pays, nombre de sites, rôles utilisateurs et appareils cibles"
+    },
+    {
+      "label": "Cartes et couches",
+      "placeholder": "Fournisseur souhaité, exemples de couches et droits d’utilisation"
+    },
+    {
+      "label": "Données sources",
+      "placeholder": "Coordonnées, identifiants d’actifs, API et besoins d’actualisation"
+    },
+    {
+      "label": "Exigences de livraison",
+      "placeholder": "Hébergement, licences, droits sur les sources et exigences de réception"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-gis-dashboard.webp",
+  "imageWidth": 400,
+  "imageHeight": 345
+}

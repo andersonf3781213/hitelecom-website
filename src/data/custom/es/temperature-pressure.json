@@ -1,0 +1,642 @@
+{
+  "id": "temperature-pressure",
+  "slug": "explosion-proof-temperature-pressure-sensor",
+  "kind": "Product",
+  "name": "Transmisor de temperatura y presión de la serie H",
+  "title": "Monitorización inalámbrica de temperatura y presión | Serie H | Hitelecom",
+  "metaDescription": "Especifique la monitorización conjunta de temperatura y presión para líneas de proceso, equipos modulares y servicios industriales. Seleccione sonda, escala de presión y variante inalámbrica, con consulta de datos y alertas por umbral en Hitelecom Cloud.",
+  "heroHeading": "Temperatura y presión.\nConfiguradas para el proceso.",
+  "heroValue": "Dos variables de proceso.\nUn registro operativo.",
+  "heroDescription": "Reúna lecturas de temperatura y presión de equipos de proceso en un flujo de monitorización. La Serie H se configura según medio, rango de trabajo, punto de medida y conexión disponible. Consulte lecturas subidas en Hitelecom Cloud y reciba notificaciones al superar umbrales configurados, o integre los registros acordados con una plataforma compatible del cliente. Seleccione escala de presión y sonda de temperatura independientemente; las instalaciones en áreas peligrosas requieren documentación del conjunto exacto suministrado.",
+  "caption": "Transmisor de temperatura y presión de la serie H",
+  "imageAlt": "Transmisor de temperatura y presión de la serie H",
+  "proof": [
+    {
+      "value": "2 variables",
+      "label": "Temperatura y presión",
+      "note": "Sonda e interfaces de proceso seleccionadas para la instalación"
+    },
+    {
+      "value": "±0.5% FS",
+      "label": "Precisión de presión publicada",
+      "note": "Confirme el rango, las condiciones de referencia y los requisitos de error total"
+    },
+    {
+      "value": "Variante de radio seleccionada",
+      "label": "Versión de comunicación configurada",
+      "note": "4G LTE, NB-IoT o LoRa; vía de recepción acordada por versión"
+    }
+  ],
+  "featureTitle": "Defina la medida.\nConstruya un registro operativo útil.",
+  "featureIntro": "Los datos útiles dependen de más que un rango anunciado. Adapte interfaces sensoras al medio, mantenga electrónica en sus límites ambientales y especifique cómo llegan las lecturas al equipo responsable de respuesta.",
+  "features": [
+    {
+      "title": "Dos variables, puntos de medida definidos",
+      "text": "Especifique la toma de presión y ubicación sensora de temperatura. La disposición puede adaptarse a una línea o conjunto; no se supone que ambas lecturas correspondan al mismo punto físico ni tiempo de respuesta."
+    },
+    {
+      "title": "Escala de presión ajustada a la aplicación",
+      "text": "Las opciones publicadas de fondo de escala son 1, 1.6, 3.5, 7, 10 y 20 MPa, con exactitud de referencia de ±0.5% FS. Seleccione según régimen normal, transitorios e incertidumbre requerida; referencia de presión y sobrecarga forman parte de la configuración."
+    },
+    {
+      "title": "Sonda de temperatura seleccionada para el medio",
+      "text": "El intervalo publicado de selección es de -200°C a +800°C entre configuraciones de sondas. La referencia ±0.5°C y adaptación opcional ±0.1°C requieren sonda, intervalo aplicable y pruebas definidos; no son garantías para todo el intervalo."
+    },
+    {
+      "title": "Interfaces de proceso evaluadas conjuntamente",
+      "text": "Defina medios, materiales mojados, conexión, inserción, acceso y requisitos de vaina o aislamiento. Interfaces higiénicas, compatibilidad química y configuraciones de alta temperatura se seleccionan por aplicación; no se suponen estándar."
+    },
+    {
+      "title": "Datos en línea y notificaciones por umbral",
+      "text": "Consulte datos subidos en Hitelecom Cloud. Configure umbrales y destinatarios acordados por variable y pruebe la respuesta en puesta en marcha. Muestreo, transmisión y tiempos de notificación son ajustes independientes del proyecto."
+    },
+    {
+      "title": "Una vía inalámbrica seleccionada",
+      "text": "Elija la variante 4G LTE, NB-IoT o LoRa disponible para el emplazamiento. La compatibilidad celular depende del módem y operador; LoRa necesita receptor compatible. MQTT se integra mediante la vía posterior compatible y acordada."
+    },
+    {
+      "title": "Condiciones de envolvente e instalación",
+      "text": "La referencia publicada de envolvente es IP68. Confirme sellos, entradas de sondas, conectores y condiciones de inmersión suministrados. La referencia -40°C a +125°C de funcionamiento/almacenamiento debe comprobarse para electrónica y conjunto reales, separadamente de la temperatura del proceso."
+    },
+    {
+      "title": "Configuración, actualizaciones y trazabilidad",
+      "text": "La configuración NFC y actualizaciones OTA figuran como opciones cuya disponibilidad depende de la configuración suministrada. Registre revisión de hardware/firmware, unidades, parámetros y procedimiento de actualización en la entrega."
+    }
+  ],
+  "planningTitle": "Empiece en la conexión del proceso.\nTermine en la plataforma receptora.",
+  "planningIntro": "Prepare una relación de puntos para la aplicación operativa prevista. Vincula instalación física, rendimiento aplicable y flujo de datos antes de seleccionar configuración.",
+  "planning": [
+    {
+      "title": "Defina los límites operativos",
+      "text": "Enumere condiciones normales, mínimas, máximas y transitorias por punto. Distinga requisitos de presión relativa o absoluta, exactitud en el punto de trabajo y ubicación de la sonda. Seleccione muestreo y envío según los cambios que se necesite observar.",
+      "brief": "Medio · Referencia de presión · Límites operativos · Puntos de exactitud · Muestreo y envío"
+    },
+    {
+      "title": "Diseñe la conexión instalada",
+      "text": "Aporte plano de conexión, materiales mojados, sonda y acceso de montaje. Revise calor hacia electrónica, vibración, pulsaciones, limpieza e ingreso ambiental. Cuando corresponda, contraste certificado y marcado exactos con mercado y clasificación del área.",
+      "brief": "Conexiones · Materiales · Inserción de sonda · Exposición ambiental · Documentos de aprobación aplicables"
+    },
+    {
+      "title": "Especifique el flujo de datos y respuesta",
+      "text": "Identifique activos y canales en la plataforma receptora. Defina unidades, marcas temporales, datos ausentes, umbrales y destinatarios. Compruebe una lectura representativa y un umbral acordado a través de radio y vía receptora reales.",
+      "brief": "Identidad del punto · Unidades y marcas temporales · Vía receptora compatible · Umbrales · Evidencias de aceptación"
+    }
+  ],
+  "applicationsTitle": "De líneas de proceso a plantas auxiliares.\nMedidas con una finalidad definida.",
+  "applicationsIntro": "Explore 12 grupos de aplicación y 36 tareas concretas de monitorización. Son contextos de selección técnica, no instalaciones de clientes realizadas. Cada tarea identifica entradas, resultado propuesto y comprobación práctica de puesta en marcha. El contacto con producto, los medios calientes y las zonas peligrosas requieren un conjunto apropiado y documentado.",
+  "groups": [
+    {
+      "id": "petrochemical",
+      "title": "Líneas de proceso petroquímico",
+      "intro": "Proporcione registros conjuntos en puntos seleccionados de proceso y circulación.",
+      "imageKey": "chemical-transfer",
+      "imageAlt": "Bomba de transferencia química y tuberías metálicas cerradas con una derivación de instrumentación con diafragma, y depósitos de proceso al fondo.",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Colectores de alimentación de proceso",
+          "description": "Registre presión y temperatura de alimentación junto a periodos operativos para revisar cambios en una entrada definida.",
+          "considerations": "Medios, pulsaciones y aislamiento de procesos calientes.",
+          "inputs": "Composición, régimen normal, sobrepresiones y plano de conexión.",
+          "deliverables": "Puntos de presión/temperatura identificados con tendencias y umbrales acordados.",
+          "acceptance": "Compare lecturas estables con referencias y verifique identidad de canales en línea."
+        },
+        {
+          "title": "Conexiones auxiliares de intercambiadores",
+          "description": "Observe presión y temperatura en conexiones auxiliares seleccionadas durante cambios de calentamiento o refrigeración.",
+          "considerations": "Distintas ubicaciones necesitan puntos especificados por separado.",
+          "inputs": "Ubicaciones de conexiones, medio auxiliar y transiciones térmicas previstas.",
+          "deliverables": "Lecturas fechadas de entradas o salidas seleccionadas.",
+          "acceptance": "Compruebe posición, respuesta y unidades de sonda con la relación de puntos."
+        },
+        {
+          "title": "Skids de recirculación de proceso",
+          "description": "Capture condiciones de circuitos de líquido recirculante en equipos integrados de proceso.",
+          "considerations": "Compatibilidad de sellos, pulsaciones de bomba y aislamiento de servicio.",
+          "inputs": "P&ID del skid, propiedades del fluido y etapas operativas.",
+          "deliverables": "Registros configurados vinculados al skid y función operativa pertinentes.",
+          "acceptance": "Verifique lecturas en una etapa acordada y pruebe notificaciones."
+        }
+      ]
+    },
+    {
+      "id": "batch-chemical",
+      "title": "Reactores por lotes y productos químicos especiales",
+      "intro": "Separe funciones de recipiente, camisa y transferencia en lugar de tratar todo el reactor como un punto.",
+      "imageKey": "process-charging",
+      "imageAlt": "Conexión de carga de proceso y tuberías de recipiente cerrado",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Camisas de calentamiento y refrigeración de reactores",
+          "description": "Siga presión y temperatura de camisa cuando cambie la secuencia térmica del lote.",
+          "considerations": "Las condiciones de camisa difieren de la temperatura del producto.",
+          "inputs": "Medio de camisa, conexiones y perfil del ciclo.",
+          "deliverables": "Registro operativo de camisa con intervalo de observación seleccionado.",
+          "acceptance": "Compare canales identificados en transiciones de calentamiento y refrigeración."
+        },
+        {
+          "title": "Líneas de carga y transferencia por lotes",
+          "description": "Observe presión y temperatura en líneas instrumentadas que alimentan o transfieren a un recipiente por lotes.",
+          "considerations": "Viscosidad, cristalización, lavado y acceso de limpieza.",
+          "inputs": "Propiedades de materiales, picos previstos y conexiones de proceso.",
+          "deliverables": "Configuración de puntos para la transferencia especificada.",
+          "acceptance": "Compruebe compatibilidad documentada y una lectura representativa de transferencia."
+        },
+        {
+          "title": "Equipos de recuperación de disolventes",
+          "description": "Monitorice conexiones auxiliares o de proceso seleccionadas de equipos de recuperación de disolventes.",
+          "considerations": "Clasificación del área, exposición a vapores y límites térmicos.",
+          "inputs": "Medios, plano de ubicación y certificado/marcado requeridos.",
+          "deliverables": "Configuración documentada del instrumento y correspondencias en el receptor.",
+          "acceptance": "Contraste documentos del conjunto con la instalación y verifique la vía de datos."
+        }
+      ]
+    },
+    {
+      "id": "pharma-bioprocess",
+      "title": "Servicios de apoyo farmacéutico y bioproceso",
+      "intro": "Empiece por servicios auxiliares; el contacto con producto necesita interfaz de proceso específicamente cualificada.",
+      "imageKey": "pharma-process",
+      "imageAlt": "Recipientes piloto de acero inoxidable, bomba de circulación y manómetro de colector en un laboratorio limpio",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Circuitos de agua auxiliar de producción",
+          "description": "Registre presión y temperatura en conexiones de apoyo de agua de producción seleccionadas.",
+          "considerations": "El contacto con producto y los requisitos higiénicos necesitan cualificación independiente.",
+          "inputs": "Especificación del agua, norma de conexión y limpieza.",
+          "deliverables": "Puntos definidos con requisitos de interfaz documentados.",
+          "acceptance": "Revise materiales suministrados y compare lecturas en puntos acordados."
+        },
+        {
+          "title": "Camisas auxiliares de biorreactores",
+          "description": "Observe el circuito térmico de apoyo de un biorreactor o recipiente de producción.",
+          "considerations": "Las lecturas auxiliares no sustituyen validar la temperatura del producto.",
+          "inputs": "Diseño de camisa, función térmica e intervalo de observación requerido.",
+          "deliverables": "Canales auxiliares separados identificados por recipiente y circuito.",
+          "acceptance": "Confirme ubicaciones y siga una transición térmica representativa."
+        },
+        {
+          "title": "Conexiones operativas de sistemas de filtración",
+          "description": "Recoja lecturas de presión y temperatura en puntos seleccionados de equipos auxiliares de filtración.",
+          "considerations": "Una lectura de presión no es una medida de presión diferencial.",
+          "inputs": "Disposición del filtro, puntos y contacto con el medio.",
+          "deliverables": "Registros operativos por punto y límites acordados.",
+          "acceptance": "Verifique referencia de presión, etiquetas y comparación instrumental."
+        }
+      ]
+    },
+    {
+      "id": "food-beverage",
+      "title": "Apoyo a procesos de alimentos y bebidas",
+      "intro": "Adapte cada función a su medio y limpieza antes de elegir una configuración en contacto con proceso.",
+      "imageKey": "process-food-beverage",
+      "imageAlt": "Bomba de proceso de bebidas de acero inoxidable y tubos con abrazaderas sanitarias y conjunto de instrumentación con diafragma.",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Circuitos de calentamiento y refrigeración",
+          "description": "Observe presión y temperatura en servicios auxiliares de equipos térmicos de producción.",
+          "considerations": "Respuesta térmica y exposición electrónica son diferentes.",
+          "inputs": "Tipo de servicio, posición de conexión y ciclo operativo.",
+          "deliverables": "Lecturas auxiliares conjuntas asociadas al equipo de producción.",
+          "acceptance": "Compruebe condiciones estables y un cambio térmico acordado."
+        },
+        {
+          "title": "Equipos auxiliares de transferencia y llenado",
+          "description": "Registre condiciones de líneas auxiliares compatibles donde ambas medidas apoyen la revisión operativa.",
+          "considerations": "No se presupone diseño higiénico ni materiales de contacto.",
+          "inputs": "Medio de producto o auxiliar, limpieza y plano de interfaz.",
+          "deliverables": "Configuración de medida acordada para la línea definida.",
+          "acceptance": "Verifique documentación e identidad del punto antes de comparar lecturas."
+        },
+        {
+          "title": "Evaluación de exposición a ciclos de limpieza",
+          "description": "Evalúe si el conjunto propuesto tolera presión, temperatura y sustancias del entorno de limpieza.",
+          "considerations": "Sin validación CIP/SIP ni certificación de esterilización automáticas.",
+          "inputs": "Sustancias de limpieza, tiempos de exposición y extremos del ciclo.",
+          "deliverables": "Límites documentados del conjunto y monitorización propuesta.",
+          "acceptance": "Revise compatibilidad y comprobaciones de medida posteriores al ciclo acordadas."
+        }
+      ]
+    },
+    {
+      "id": "oil-gas-production",
+      "title": "Equipos de producción de petróleo y gas",
+      "intro": "Especifique medidas de pozo y recolección según presión real y clasificación del área.",
+      "imageKey": "oil-gas",
+      "imageAlt": "Bomba de balancín petrolera en un paisaje abierto",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Monitorización de equipos de cabezal de pozo",
+          "description": "Revise presión operativa y punto térmico seleccionado en equipos asociados a pozos adecuados.",
+          "considerations": "Golpes de presión, medios sulfurosos y aprobación.",
+          "inputs": "Presión normal/máxima, medio, tomas y plano del área.",
+          "deliverables": "Conjunto de escala/sonda seleccionado y relación de puntos del emplazamiento.",
+          "acceptance": "Compruebe documentación y compare una lectura estable accesible."
+        },
+        {
+          "title": "Estaciones de líneas de recolección",
+          "description": "Incorpore registros seleccionados de presión y temperatura de recolección a la consulta remota acordada.",
+          "considerations": "Exposición exterior y conectividad intermitente.",
+          "inputs": "Medio de línea, disposición de estación y cobertura disponible.",
+          "deliverables": "Canales de estación identificados con envío y notificaciones acordados.",
+          "acceptance": "Verifique marcas temporales, unidades y recepción representativa en plataforma."
+        },
+        {
+          "title": "Líneas auxiliares de separación",
+          "description": "Observe líneas auxiliares o de circulación compatibles de equipos de separación.",
+          "considerations": "No es un dispositivo de alivio de presión ni parada de proceso.",
+          "inputs": "Aplicación del equipo, referencia de presión y límites de instalación.",
+          "deliverables": "Registros definidos del circuito auxiliar elegido.",
+          "acceptance": "Contraste etiquetas de puntos y pruebe el evento por umbral acordado."
+        }
+      ]
+    },
+    {
+      "id": "fuels-gas",
+      "title": "Almacenamiento de combustible y servicios de gas",
+      "intro": "Identifique el punto real de transferencia, regulación o circulación; el instrumento no establece nivel del depósito ni medición fiscal.",
+      "imageKey": "gas-regulation",
+      "imageAlt": "Skid exterior de regulación de gas combustible con reguladores de diafragma, tuberías amarillas y pequeñas derivaciones de instrumentación.",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Líneas de bombeo de transferencia de combustible",
+          "description": "Registre presión y temperatura en descargas o colectores de transferencia seleccionados.",
+          "considerations": "Medios inflamables, compatibilidad de sellos y transitorios de presión.",
+          "inputs": "Combustible, función de bomba, conexiones y clasificación del área.",
+          "deliverables": "Lecturas configuradas de transferencia y límites de notificación al operador.",
+          "acceptance": "Compare régimen estable y verifique identificación del punto en plataforma."
+        },
+        {
+          "title": "Observaciones de salida de regulación de gas",
+          "description": "Monitorice presión y temperatura seleccionadas aguas abajo cuando servicio y conjunto sean adecuados.",
+          "considerations": "Compatibilidad de gas, venteo y aprobaciones requeridas.",
+          "inputs": "Composición, referencia de presión y límites operativos de salida.",
+          "deliverables": "Monitorización revisada para el punto de salida especificado.",
+          "acceptance": "Verifique tipo de referencia y lecturas con el instrumento de puesta en marcha."
+        },
+        {
+          "title": "Circuitos térmicos asociados al almacenamiento",
+          "description": "Observe servicios de calentamiento o circulación de instalaciones de combustible.",
+          "considerations": "Las condiciones del medio térmico son distintas de la temperatura almacenada.",
+          "inputs": "Diagrama auxiliar, medio y límites de operación térmica.",
+          "deliverables": "Puntos auxiliares identificados vinculados al activo de almacenamiento.",
+          "acceptance": "Compruebe posiciones sensoras y registre una transición térmica acordada."
+        }
+      ]
+    },
+    {
+      "id": "compressed-air-gas",
+      "title": "Aire comprimido y gases industriales auxiliares",
+      "intro": "Revise condiciones operativas mediante presión y temperatura específicas de cada punto.",
+      "imageKey": "compressed-air",
+      "imageAlt": "Compresor industrial y depósito de aire comprimido",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Depósitos de aire y colectores de suministro",
+          "description": "Observe presión y temperatura de conexiones seleccionadas durante cambios normales de demanda.",
+          "considerations": "Condensación, pulsaciones de compresor y acceso seguro de servicio.",
+          "inputs": "Clasificación del depósito, ciclo de trabajo e intervalo de medida requerido.",
+          "deliverables": "Registro operativo del depósito/colector con umbrales acordados.",
+          "acceptance": "Compare presión estable y compruebe ubicación y respuesta térmica."
+        },
+        {
+          "title": "Observaciones de líneas de secadores y filtros",
+          "description": "Registre condiciones en puntos especificados de tratamiento de aire comprimido.",
+          "considerations": "No mide punto de rocío ni calcula automáticamente presión diferencial.",
+          "inputs": "Disposición de tratamiento, ubicaciones y estado operativo.",
+          "deliverables": "Registros identificados aguas arriba o aguas abajo.",
+          "acceptance": "Verifique cada punto físico y sus unidades de ingeniería mostradas."
+        },
+        {
+          "title": "Colectores compatibles de gases auxiliares",
+          "description": "Revise presión de suministro y temperatura seleccionada en un colector auxiliar ajeno al proceso definido.",
+          "considerations": "Oxígeno, hidrógeno y gases especiales necesitan evaluación específica de materiales/aprobación.",
+          "inputs": "Identidad y pureza del gas, flujo y conexiones requeridas.",
+          "deliverables": "Configuración documentada para el servicio aprobado.",
+          "acceptance": "Confirme compatibilidad documentada y comparación de referencia acordada."
+        }
+      ]
+    },
+    {
+      "id": "thermal-utilities",
+      "title": "Servicios de agua caliente, vapor y fluidos térmicos",
+      "intro": "Separe condiciones calientes del proceso de la temperatura permitida en la electrónica.",
+      "imageKey": "steam-hot-water",
+      "imageAlt": "Caldera industrial con tuberías de agua caliente y bombas de circulación",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Redes de circulación de agua caliente",
+          "description": "Registre presión y temperatura de impulsión o retorno en puntos seleccionados.",
+          "considerations": "Inmersión de sonda, aislamiento y química del agua.",
+          "inputs": "Plano del circuito, régimen normal y acceso de montaje.",
+          "deliverables": "Lecturas identificadas del circuito para revisión y notificaciones por umbral.",
+          "acceptance": "Compare con circulación estable y verifique etiquetas de puntos/retorno."
+        },
+        {
+          "title": "Puntos de monitorización de distribución de vapor",
+          "description": "Evalúe puntos de presión y temperatura de vapor con conexión y disposición térmica adecuadas.",
+          "considerations": "No se implica diagnóstico de purgadores ni medida de caudal de vapor.",
+          "inputs": "Condiciones de vapor, diseño de toma y refrigeración/aislamiento requeridos.",
+          "deliverables": "Conjunto revisado y puntos de monitorización de vapor definidos.",
+          "acceptance": "Revise límites instalados y compare tras estabilización acordada."
+        },
+        {
+          "title": "Circuitos de calentamiento por aceite térmico",
+          "description": "Observe presión y temperatura en puntos seleccionados de sistemas compatibles de circulación térmica.",
+          "considerations": "Materiales de sellos, dilatación y exposición electrónica al calor.",
+          "inputs": "Especificación del fluido, extremos operativos y plano de conexión.",
+          "deliverables": "Canales configurados y límites de proceso/ambiente documentados.",
+          "acceptance": "Verifique conjunto y lecturas durante régimen estable acordado."
+        }
+      ]
+    },
+    {
+      "id": "water-wastewater",
+      "title": "Procesos de plantas de agua y aguas residuales",
+      "intro": "Adapte la interfaz a la etapa, química del fluido y mantenimiento.",
+      "imageKey": "treatment-manifold",
+      "imageAlt": "Recipientes de filtración y tuberías de proceso para tratamiento de agua",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Descargas de bombas y conducciones de transferencia",
+          "description": "Registre presión y temperatura en descargas o conexiones de transferencia seleccionadas.",
+          "considerations": "Golpe de ariete, pulsaciones y acceso para aislamiento.",
+          "inputs": "Contexto de curva de bomba, picos y disposición de toma.",
+          "deliverables": "Registro definido del punto de transferencia y límites de alerta acordados.",
+          "acceptance": "Compare un régimen estable y verifique escalado del canal en línea."
+        },
+        {
+          "title": "Circuitos de circulación de filtros de tratamiento",
+          "description": "Observe condiciones en conexiones definidas de circulación o filtración durante cambios operativos.",
+          "considerations": "Ensuciamiento y limpieza pueden afectar a la interfaz sensora.",
+          "inputs": "Química del agua, filtros y exposición de limpieza.",
+          "deliverables": "Lecturas identificadas con periodos acordados de muestreo y revisión.",
+          "acceptance": "Compruebe puntos antes y después de un cambio operativo representativo."
+        },
+        {
+          "title": "Líneas auxiliares de dosificación química",
+          "description": "Evalúe monitorización conjunta en equipos auxiliares compatibles de dosificación o dilución.",
+          "considerations": "Corrosión, cristalización y compatibilidad de sellos.",
+          "inputs": "Concentración química, presión máxima y materiales requeridos.",
+          "deliverables": "Configuración sensora revisada y correspondencia de datos por punto.",
+          "acceptance": "Verifique materiales/conexiones documentados y una referencia accesible."
+        }
+      ]
+    },
+    {
+      "id": "mining-materials",
+      "title": "Servicios de minería y procesamiento mineral",
+      "intro": "Seleccione según abrasión ambiental, vibración del circuito y aprobación exacta de instalación.",
+      "imageKey": "mining",
+      "imageAlt": "Cantera a cielo abierto y bancos de roca",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Circuitos de bombeo de agua de mina",
+          "description": "Observe presión y temperatura en líneas seleccionadas de transferencia o achique de mina.",
+          "considerations": "Sedimentos, sobrepresiones y protección mecánica.",
+          "inputs": "Características del agua, presión de trabajo y plano de ubicación/acceso.",
+          "deliverables": "Canales de bombeo definidos con requisitos de envío acordados.",
+          "acceptance": "Verifique lecturas estables y recepción en el sistema receptor."
+        },
+        {
+          "title": "Circuitos hidráulicos auxiliares de equipos",
+          "description": "Revise presión y temperatura seleccionada en circuitos hidráulicos adecuados.",
+          "considerations": "Pulsaciones, compatibilidad de fluido y captura de transitorios.",
+          "inputs": "Medio hidráulico, picos y resolución temporal requerida.",
+          "deliverables": "Configuración de escala/sonda revisada para el circuito auxiliar.",
+          "acceptance": "Compare estados definidos; no presuponga captura de eventos rápidos."
+        },
+        {
+          "title": "Sistemas de agua de lavado de procesamiento mineral",
+          "description": "Registre condiciones en agua de lavado o circuitos auxiliares compatibles de planta.",
+          "considerations": "Exposición abrasiva y acceso de mantenimiento.",
+          "inputs": "Etapa de proceso, calidad del agua y conexiones.",
+          "deliverables": "Lecturas identificadas de agua auxiliar para revisión de planta.",
+          "acceptance": "Compruebe identidad, protección de conexiones y referencia acordada."
+        }
+      ]
+    },
+    {
+      "id": "manufacturing-auxiliaries",
+      "title": "Servicios auxiliares de equipos de fabricación",
+      "intro": "Instrumente circuitos definidos en lugar de deducir un diagnóstico integral de máquina de dos variables.",
+      "imageKey": "manufacturing-floor",
+      "imageAlt": "Máquina de moldeo por inyección en una zona de fabricación ordenada",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Circuitos de refrigeración de moldes y utillaje",
+          "description": "Observe presión y temperatura del circuito de refrigeración del utillaje productivo.",
+          "considerations": "Ubicación de sonda y respuesta al ciclo condicionan el registro.",
+          "inputs": "Refrigerante, circuito y duración del ciclo productivo.",
+          "deliverables": "Registros de puntos de refrigeración alineados con el intervalo acordado.",
+          "acceptance": "Compare condiciones estables/de ciclo y verifique resolución temporal seleccionada."
+        },
+        {
+          "title": "Servicios de lubricación e hidráulica de máquinas",
+          "description": "Evalúe monitorización conjunta en líneas auxiliares de fluidos compatibles.",
+          "considerations": "Viscosidad del aceite, picos y vibración en el montaje.",
+          "inputs": "Grado del fluido, régimen normal e interfaces de proceso.",
+          "deliverables": "Puntos auxiliares configurados y ajustes de umbral.",
+          "acceptance": "Compare estados de máquina acordados con referencias adecuadas."
+        },
+        {
+          "title": "Equipos industriales de agua refrigerada",
+          "description": "Registre condiciones seleccionadas junto a enfriadoras o skids de refrigeración de proceso.",
+          "considerations": "Condensación, aislamiento e ingreso en conexiones de sonda.",
+          "inputs": "Química del refrigerante, temperaturas previstas y exposición de montaje.",
+          "deliverables": "Puntos de circuito identificados con unidades y marcas temporales visibles.",
+          "acceptance": "Compruebe valores e inspeccione sellado en condiciones representativas."
+        }
+      ]
+    },
+    {
+      "id": "oem-commissioning",
+      "title": "Pruebas OEM, piloto y de aceptación de equipos",
+      "intro": "Defina qué se mide, cómo se compara y cómo se libera la configuración final.",
+      "imageKey": "tank-manifold",
+      "imageAlt": "Colector de tanque de almacenamiento con válvulas y plataforma de acceso",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Aceptación en fábrica de skids integrados",
+          "description": "Incluya el conjunto de presión/temperatura seleccionado en la relación de puntos y aceptación del skid.",
+          "considerations": "Las pruebas de fábrica pueden diferir de las condiciones de campo.",
+          "inputs": "P&ID del skid, puntos de prueba y tolerancias acordadas.",
+          "deliverables": "Configuración instrumental, correspondencia de puntos y registros de aceptación.",
+          "acceptance": "Compare cada punto especificado con el método de referencia acordado."
+        },
+        {
+          "title": "Ensayos de límites operativos de prototipos",
+          "description": "Evalúe lecturas en un ensayo definido antes de fijar la configuración productiva.",
+          "considerations": "No se presuponen resultados no especificados de fatiga, vida útil o certificación.",
+          "inputs": "Rango de ensayo, secuencia y referencias instrumentales.",
+          "deliverables": "Registro trazable de configuración y observaciones del ensayo.",
+          "acceptance": "Compruebe puntos de exactitud, estabilización e integridad de datos acordados."
+        },
+        {
+          "title": "Monitorización piloto distribuida",
+          "description": "Verifique el flujo completo en una instalación representativa antes del despliegue ampliado.",
+          "considerations": "Cobertura de radio, compatibilidad del operador y responsable de respuesta.",
+          "inputs": "Lista de emplazamientos, radio seleccionada, plataforma y destinatarios.",
+          "deliverables": "Lecturas en línea, etiquetas de puntos y notificaciones por umbral configuradas.",
+          "acceptance": "Presencie una comparación de lecturas y una prueba controlada de notificación."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Seleccione el rango.\nEspecifique el conjunto completo.",
+  "scopeIntro": "La tabla separa referencias publicadas de familia y requisitos del pedido. Un intervalo de selección familiar no acredita todas las sondas, exactitudes térmicas ni aprobaciones de instalación.",
+  "rows": [
+    [
+      "Familia de modelos publicada",
+      "H200 / H300 / H500; modelo exacto y variante de comunicación confirmados con el pedido"
+    ],
+    [
+      "Variables medidas",
+      "Temperatura y presión"
+    ],
+    [
+      "Opciones de fondo de escala de presión",
+      "1 / 1.6 / 3.5 / 7 / 10 / 20 MPa; referencia de presión y rango utilizable por confirmar"
+    ],
+    [
+      "Referencia de precisión de presión",
+      "±0.5% FS; confirme las condiciones de referencia y los requisitos de error total del rango seleccionado"
+    ],
+    [
+      "Intervalo de selección de temperatura",
+      "-200°C a +800°C entre configuraciones de sondas; no es un rango universal de una sola sonda"
+    ],
+    [
+      "Referencia de precisión de temperatura",
+      "±0.5°C publicado, con opción de personalización de ±0.1°C; confirme la sonda, el rango aplicable y las condiciones de prueba"
+    ],
+    [
+      "Opciones de comunicación",
+      "Versión seleccionada de 4G LTE, NB-IoT o LoRa; hardware, firmware y vía de recepción confirmados por proyecto"
+    ],
+    [
+      "Integración de plataforma",
+      "MQTT en configuraciones compatibles y con vía de recepción acordada; Hitelecom Cloud o plataforma de cliente compatible"
+    ],
+    [
+      "Referencia publicada de bandas LTE",
+      "TDD B34/B38/B39/B40/B41; FDD B1/B3/B5/B8, solo cuando sean compatibles con el hardware celular y el operador seleccionados"
+    ],
+    [
+      "Protección de la carcasa",
+      "Referencia IP68 publicada; condiciones de inmersión, conexiones de sonda y estanqueidad del conjunto por confirmar"
+    ],
+    [
+      "Referencia publicada de funcionamiento / almacenamiento",
+      "-40°C a +125°C; confirme los límites de electrónica, sonda, sellos y conjunto completo por separado de la temperatura de proceso"
+    ],
+    [
+      "Instalación en atmósferas potencialmente explosivas",
+      "Deben confirmarse el certificado exacto, el marcado, la cobertura de mercado y las condiciones de instalación antes de la selección"
+    ],
+    [
+      "Interfaces de proceso y montaje",
+      "Roscas, materiales en contacto con el medio, construcción de sonda y disposición de montaje suministrada acordados para el proyecto"
+    ]
+  ],
+  "handoverTitle": "Ponga en marcha la medida.\nVerifique el flujo operativo.",
+  "handoverIntro": "La aceptación debe cubrir el instrumento en el punto y los registros recibidos por el equipo operativo. Umbrales y notificaciones apoyan la monitorización; enclavamientos, paradas y validación reglamentaria requieren sistemas cualificados propios.",
+  "handover": [
+    {
+      "title": "Documente el instrumento suministrado",
+      "text": "Registre escala/referencia de presión, construcción y rango de sonda, condiciones de exactitud, materiales mojados, conexiones, envolvente y revisión de hardware/firmware. Incluya certificado e instrucciones aplicables cuando se requieran."
+    },
+    {
+      "title": "Compare medida y registro recibido",
+      "text": "Utilice el método de referencia acordado en puntos representativos. Verifique activo, canal, unidades y marcas temporales en plataforma. Pruebe muestreo/envío y tratamiento de datos ausentes o desactualizados mediante la conexión suministrada."
+    },
+    {
+      "title": "Pruebe notificaciones y mantenimiento",
+      "text": "Presencie un evento por umbral acordado y confirme la recepción por sus destinatarios. Entregue ajustes, responsabilidades de acceso, instrucciones y evidencias de calibración acordadas. Separe alertas de monitorización de seguridad y paradas de planta."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Qué aplicaciones son adecuadas para monitorizar temperatura y presión conjuntamente?",
+      "a": "Parta de una línea, skid o circuito auxiliar definidos donde ambas variables respalden una decisión operativa. Los ejemplos identifican aplicaciones posibles; medio, límites de presión, sonda, interfaces y documentación determinan su idoneidad."
+    },
+    {
+      "q": "¿Qué escalas y referencia de presión están disponibles?",
+      "a": "Las opciones de fondo de escala publicadas son 1, 1.6, 3.5, 7, 10 y 20 MPa. Referencia relativa/absoluta, rango útil, sobrecargas y error total deben especificarse para cada configuración; no se deducen solo del fondo de escala."
+    },
+    {
+      "q": "¿Qué significa ±0.5% FS al elegir una escala de presión?",
+      "a": "FS se refiere al fondo de escala seleccionado. El mismo porcentaje de una escala mayor representa un intervalo de presión mayor, relevante si la operación ocupa solo una pequeña parte. Acuerde condiciones de referencia e incertidumbre en los puntos reales."
+    },
+    {
+      "q": "¿Cubre una sonda de temperatura de -200°C a +800°C?",
+      "a": "No. Es un intervalo de selección entre configuraciones de sondas. Seleccione construcción, rango útil, inserción y respuesta para el proceso. Temperatura del proceso y ambiente permitido de electrónica tienen límites separados."
+    },
+    {
+      "q": "¿Puede utilizarse la exactitud opcional ±0.1°C en todo el intervalo térmico?",
+      "a": "No está acreditado ese rendimiento en todo el intervalo. Las referencias publicadas son ±0.5°C y adaptación opcional ±0.1°C. Sonda, intervalo aplicable, puntos de calibración y pruebas deben constar en oferta y criterios de aceptación."
+    },
+    {
+      "q": "¿Se miden presión y temperatura exactamente en el mismo punto?",
+      "a": "No necesariamente. Defina toma de presión y posición sensora en el plano. Inserción de sonda, geometría y respuesta afectan a interpretar y comparar ambas lecturas."
+    },
+    {
+      "q": "¿Puede instalarse el instrumento en mi área peligrosa?",
+      "a": "Obtenga certificado, marcado y condiciones del conjunto exacto propuesto. Contrástelos con mercado, clasificación del área, grupo de gas/polvo, clase térmica y restricciones ambientales. El nombre no acredita aprobación universal."
+    },
+    {
+      "q": "¿Puede usarse en alimentación, farmacia o limpieza in situ?",
+      "a": "Una aplicación representativa no acredita aprobación higiénica. El contacto con producto y CIP/SIP necesitan construcción, materiales, conexión, limpiabilidad y límites de temperatura/presión apropiados y documentados. Confírmelo antes de seleccionar."
+    },
+    {
+      "q": "¿Cómo funcionan consulta en línea y notificaciones por umbral?",
+      "a": "Los registros subidos pueden consultarse en Hitelecom Cloud, con notificaciones al superar umbrales configurados. Acuerde muestreo, transmisión, lógica y destinatarios por separado y pruebe el flujo completo. No se implica un retraso fijo de notificación."
+    },
+    {
+      "q": "¿Todas las variantes se conectan directamente a MQTT?",
+      "a": "No debe suponerse. Seleccione la variante disponible 4G LTE, NB-IoT o LoRa y su vía receptora compatible. MQTT se integra mediante la conexión posterior compatible y acordada a Hitelecom Cloud o una plataforma del cliente."
+    },
+    {
+      "q": "¿Proporcionan dos medidas caudal, nivel, diagnóstico de fugas o parada de seguridad?",
+      "a": "Estas funciones no se acreditan solo con temperatura y presión. Cálculos, diagnósticos o protecciones requieren equipos definidos por separado, lógica validada y cualificación apropiada. La página describe monitorización y notificaciones configurables."
+    },
+    {
+      "q": "¿Qué debe aportarse para presupuesto y puesta en marcha?",
+      "a": "Aporte medios, condiciones normales/extremas/transitorias, referencia de presión, puntos de exactitud, planos, sondas, exposición, aprobaciones, cobertura, plataforma, cantidad y método de aceptación. Una relación acordada de puntos aporta trazabilidad a oferta y entrega."
+    }
+  ],
+  "enquiryIntro": "Envíe relación de puntos, condiciones de proceso y plano de conexión. Incluya destino de datos y respuesta necesarios para revisar conjuntamente medida, instalación y comunicaciones.",
+  "enquiryFields": [
+    {
+      "label": "Aplicación de proceso y rendimiento requerido",
+      "placeholder": "Medios, condiciones normales/extremas/transitorias, referencia de presión y exactitud en puntos de trabajo"
+    },
+    {
+      "label": "Conexiones y ubicaciones de medida",
+      "placeholder": "P&ID o plano, roscas/bridas, materiales mojados, toma de presión e inserción de sonda"
+    },
+    {
+      "label": "Documentos de instalación y aprobación",
+      "placeholder": "Exposición ambiental, limpieza, mercado objetivo, clasificación del área y certificados requeridos"
+    },
+    {
+      "label": "Flujo de datos y aceptación",
+      "placeholder": "Variante de radio, número de emplazamientos, muestreo/envío, plataforma, destinatarios y método de referencia"
+    }
+  ],
+  "datasheet": "/downloads/explosion-proof-temperature-pressure-sensor-datasheet.pdf",
+  "image": "original-hero-temperature-pressure.webp",
+  "imageWidth": 627,
+  "imageHeight": 635
+}

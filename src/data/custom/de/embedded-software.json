@@ -1,0 +1,630 @@
+{
+  "id": "embedded-software",
+  "slug": "embedded-software-development",
+  "kind": "Service",
+  "name": "Embedded-Softwareentwicklung",
+  "title": "Entwicklung eingebetteter Firmware für IoT-Geräte | Hitelecom",
+  "metaDescription": "Individuelle IoT-Firmware für Messwerterfassung, Übertragung, Energieverwaltung und Wiederanlauf im Feld. Entdecken Sie gerätespezifische Anwendungen, Schnittstellenanforderungen und messbare Abnahmeprüfungen.",
+  "heroHeading": "Embedded-\nSoftwareentwicklung.",
+  "heroValue": "Von Sensoreingängen.\nZu zuverlässigem Geräteverhalten.",
+  "heroDescription": "Überführen Sie eine Überwachungsanforderung in Firmware, die auf der ausgewählten Hardware integrierbar, prüfbar und wartbar ist. Hitelecom definiert Erfassung, Gerätezustände, Kommunikation und Diagnoseverhalten passend zu Messung und Einsatz. Legen Sie das Verhalten bei fehlendem Sensor, unterbrochener Verbindung oder Spannungswiederkehr fest. Lokale Konfiguration, Fernupdates und Sicherheitsfunktionen werden bei Bedarf in das Projekt eingeplant; ihre Umsetzung hängt von Platine, Speicher und Empfangssystem ab.",
+  "caption": "Embedded-Softwareentwicklung",
+  "imageAlt": "Embedded-Softwareentwicklung",
+  "proof": [
+    {
+      "value": "Firmware",
+      "label": "Definiertes Geräteverhalten",
+      "note": "Zustände, Schnittstellen und Zeitverhalten dokumentieren"
+    },
+    {
+      "value": "Integration",
+      "label": "Hardware und Datenwege",
+      "note": "Komponenten, Protokolle und Nutzdaten bestätigen"
+    },
+    {
+      "value": "Verifizierung",
+      "label": "Vereinbarte Abnahmetests",
+      "note": "Vorgesehenen Betrieb und relevante Fehlerfälle abdecken"
+    }
+  ],
+  "featureTitle": "Geräteverhalten.\nFür den Feldeinsatz spezifiziert.",
+  "featureIntro": "Ein Embedded-Projekt benötigt mehr als eine funktionierende Nutzlast. Spezifizieren Sie Zeitverhalten, Zustandsübergänge, gespeicherte Daten und Wiederanlauf, damit das Gerät im Feld nutzbar ist.",
+  "features": [
+    {
+      "title": "Erfassung und Datengültigkeit",
+      "text": "Implementieren Sie Sensortreiber, Einschwingzeit, Abtastpläne, Einheiten und Zeitstempel. Unterscheiden Sie gültige Messwerte von Warmlauf, fehlenden Daten, Bereichsüberschreitung oder Sensorfehler."
+    },
+    {
+      "title": "Ereignis- und Übertragungslogik",
+      "text": "Trennen Sie Messung, Ereignisauswertung und periodische Übertragung. Definieren Sie Hysterese, Mindestdauer, Ereignispriorität und Wiederholungsbenachrichtigungen passend zum Betriebsablauf."
+    },
+    {
+      "title": "Auslegung der Energiezustände",
+      "text": "Koordinieren Sie MCU-Ruhezustand, Peripherieversorgung und Modemaktivität. Messen Sie Strom je Betriebszustand und bewerten Sie den Arbeitszyklus auf der tatsächlichen Platine."
+    },
+    {
+      "title": "Kommunikationslebenszyklus",
+      "text": "Spezifizieren Sie Netzeinbuchung, Sitzungsverwaltung, begrenzte Wiederholungen und Neuverbindung. Vereinbaren Sie Nutzlastversionen, Einheiten, Geräteidentität und kompatiblen Empfangspfad."
+    },
+    {
+      "title": "Lokale Aufzeichnungen und Kontinuität",
+      "text": "Entwerfen Sie bei ausreichendem Speicher Datensatzwarteschlangen, Sequenznummern und Neustartverhalten. Benennen Sie Pufferkapazität, Überschreibregeln und Umgang mit verspäteten Daten ausdrücklich."
+    },
+    {
+      "title": "Inbetriebnahme und Konfiguration",
+      "text": "Definieren Sie Einbaueinstellungen, Validierungsregeln, berechtigten Zugriff und Wiederherstellungsverhalten über die gewählte lokale oder entfernte Schnittstelle. NFC oder Bluetooth erfordert kompatible Hardware."
+    },
+    {
+      "title": "Firmwareintegrität und Updates",
+      "text": "Spezifizieren Sie gegebenenfalls Image-Authentizität, Versionskompatibilität, Updatespeicher und Unterbrechungsbehandlung. Bootloader, Rollback und Schutz von Zugangsdaten erfordern einen geprüften Hardware-/Softwareentwurf."
+    },
+    {
+      "title": "Diagnose- und Freigabenachweise",
+      "text": "Machen Sie relevante Neustartursachen und Fehlerzustände sichtbar und erstellen Sie einen kontrollierten Build mit Testergebnissen. Vereinbaren Sie Quellzugang, Abhängigkeitsnachweise, Ladeanweisungen und Wartungsverantwortung."
+    }
+  ],
+  "planningTitle": "Verhalten beschreiben.\nDann das Gerät testen.",
+  "planningIntro": "Eine Firmware-Leistungsbeschreibung sollte jede Anforderung mit einer Hardwareschnittstelle und einem Verifizierungsverfahren verknüpfen.",
+  "planning": [
+    {
+      "title": "Hardware-Ausgangsbasis prüfen",
+      "text": "Schaltpläne, Komponenten, Speicher, Schnittstellen und verfügbare Prototypen bestätigen. Abhängigkeiten von Drittanbietercode oder Modulfirmware identifizieren.",
+      "brief": "Hardware-Revision · Komponenten · Toolchain · Drittanbieterabhängigkeiten"
+    },
+    {
+      "title": "Betriebszustände spezifizieren",
+      "text": "Erfassung, Meldung, Energiemodi, Konfiguration und Fehlerbehebung mit messbaren Abnahmebedingungen beschreiben.",
+      "brief": "Zustandsübergänge · Zeitverhalten · Energieziele · Fehlerfälle"
+    },
+    {
+      "title": "Freigabe und Übergabe planen",
+      "text": "Prüfvorrichtungen, Firmware-Aufspielen, Versionskontrolle, Quellcoderechte und Support nach der Freigabe vereinbaren.",
+      "brief": "Prüfnachweise · Freigabepaket · Quellcodebedingungen · Supportumfang"
+    }
+  ],
+  "applicationsTitle": "Firmware für reale Geräte.\nPrüfbare Aufgaben.",
+  "applicationsIntro": "Entdecken Sie gerätespezifische Entwicklungsbriefings statt eines universellen Firmwarepakets. Die Beispiele verbinden konkrete Überwachungsaufgaben mit nötigen Eingaben, vorgeschlagenen Softwareergebnissen und Abnahmeprüfung. Unterstützte Sensoren, Funkgeräte und Schnittstellen werden projektspezifisch gewählt.",
+  "groups": [
+    {
+      "id": "cold-chain",
+      "title": "Kühlketten- und Laborlogger",
+      "intro": "Bewahren Sie Bedeutung und Reihenfolge von Temperaturaufzeichnungen bei wechselnden Mess- und Verbindungsbedingungen.",
+      "imageKey": "refrigerated-logistics",
+      "imageAlt": "Kühl-Lieferfahrzeug an einer Verladerampe",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Planmäßige Temperaturaufzeichnungen",
+          "description": "Halten Sie Erfassungszeitpunkte unabhängig vom Erfolg der Netzübertragung.",
+          "inputs": "Fühlerschnittstelle, Taktquelle, Mess- und Übertragungsintervalle.",
+          "deliverables": "Zeitgestempelte Daten und expliziter Abtastzustandsautomat.",
+          "acceptance": "Vergleichen Sie Datensatzabstände und Zeitstempel mit dem Prüftakt.",
+          "considerations": "Uhrkorrektur und Neustart dürfen ältere Messungen nicht unbemerkt umdatieren."
+        },
+        {
+          "title": "Behandlung von Grenzwertabweichungen",
+          "description": "Überführen Sie einen konfigurierten Temperaturgrenzwert in ein nachvollziehbares Geräteereignis.",
+          "inputs": "Grenzen, Hysterese, Mindestdauer und Benachrichtigungsregeln.",
+          "deliverables": "Beginn-/Endemeldungen eines Ereignisses mit zugehörigen Messwerten.",
+          "acceptance": "Spielen Sie steigende und fallende Prüftemperaturen um jeden Grenzwert ein.",
+          "considerations": "Ein Schwellenwertereignis ist Überwachungsinformation, für sich kein regulatorischer Konformitätsnachweis."
+        },
+        {
+          "title": "Datenerhalt bei Verbindungsunterbrechung",
+          "description": "Bewahren Sie die vereinbarte Datenhistorie bei ausgefallenem Empfangspfad.",
+          "inputs": "Verfügbarer Speicher, Ausfalldauer und Überschreibregel.",
+          "deliverables": "Begrenzte Warteschlange mit Datensatzfolge und Übertragungsverhalten.",
+          "acceptance": "Verbindung trennen, Warteschlange füllen, neu starten und empfangene Datensätze abgleichen.",
+          "considerations": "Speicherkapazität und mögliche Datenverlustausnahmen müssen benannt werden."
+        }
+      ]
+    },
+    {
+      "id": "tilt",
+      "title": "Knoten für Neigungs- und Strukturüberwachung",
+      "intro": "Definieren Sie Referenzeinstellungen und Ereignisverhalten für Regale, Masten und andere überwachte Strukturen.",
+      "imageKey": "warehouse-aisle",
+      "imageAlt": "Lagergang mit Regalen und eingelagerten Waren",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Referenz- und Nullpunktverwaltung",
+          "description": "Trennen Sie die Einbaureferenz von späterer gemessener Bewegung.",
+          "inputs": "Sensorachsen, Einbaurichtung und erlaubtes Nullpunktverfahren.",
+          "deliverables": "Gespeicherte Referenzeinstellungen und Nachweise von Referenzänderungen.",
+          "acceptance": "Wenden Sie bekannte Ausrichtungsänderungen vor und nach einem Neustart an.",
+          "considerations": "Nullpunktänderungen benötigen vereinbarte Berechtigungs- und Wiederherstellungsverfahren."
+        },
+        {
+          "title": "Ereignisse anhaltender Bewegung",
+          "description": "Unterscheiden Sie kurze Störungen vom zu meldenden Bewegungszustand.",
+          "inputs": "Winkel, Mindestdauer, Hysterese und Messplan.",
+          "deliverables": "Konfigurierbare Auswertungszustände und Ereigniskennungen.",
+          "acceptance": "Spielen Sie vorübergehende, anhaltende und rückläufige Winkelfolgen ein.",
+          "considerations": "Filterung darf nicht als technische Sicherheitsbewertung dargestellt werden."
+        },
+        {
+          "title": "Priorisierte Ereignisübertragung",
+          "description": "Melden Sie ein ausgewähltes Bewegungsereignis ohne Verlust planmäßiger Statusinformationen.",
+          "inputs": "Funkverhalten, Ereignispriorität und Wiederholungsgrenzen.",
+          "deliverables": "Begrenzte Ereigniswarteschlange und Übertragungsreihenfolge.",
+          "acceptance": "Lösen Sie ein Ereignis während planmäßiger Übertragung und Verbindungsausfall aus.",
+          "considerations": "Die tatsächliche Verzögerung hängt von Erfassungszeit und verfügbarem Netz ab."
+        }
+      ]
+    },
+    {
+      "id": "vibration",
+      "title": "Knoten für Motor- und Maschinenschwingungen",
+      "intro": "Richten Sie Schwingungserfassung nach ausgewähltem Sensor, Maschinenbetrieb und Verarbeitungsanforderungen aus.",
+      "imageKey": "manufacturing-floor",
+      "imageAlt": "Spritzgießmaschine in einem geordneten Fertigungsbereich",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Definierte Erfassungsfenster",
+          "description": "Erfassen Sie reproduzierbare Datenblöcke für den vereinbarten Betriebszustand.",
+          "inputs": "Sensorbandbreite, Abtastrate, Fensterlänge und Achsen.",
+          "deliverables": "Fensterplanung, Erfassungspuffer und Gültigkeitskennzeichen.",
+          "acceptance": "Vergleichen Sie aufgezeichnete Messungen mit vereinbartem Anregungssignal oder Referenz.",
+          "considerations": "Aliasing, Sensorbefestigung und nutzbare Bandbreite bleiben Teil des Systementwurfs."
+        },
+        {
+          "title": "Signalmerkmale auf dem Gerät",
+          "description": "Implementieren Sie vereinbarte Berechnungen im Zeit- oder Frequenzbereich.",
+          "inputs": "Erforderliche Merkmale, Einheiten, Fensterung und Verarbeitungsbudget.",
+          "deliverables": "Dokumentierte Berechnungen und versionierte Ergebnisfelder.",
+          "acceptance": "Prüfen Sie Referenzsignale mit Implementierung und Vergleichsskripten.",
+          "considerations": "RMS- oder Spektralmerkmale allein diagnostizieren keinen Fehler."
+        },
+        {
+          "title": "Ausgelöste Aufzeichnungen und Zusammenfassungen",
+          "description": "Kombinieren Sie Routineübersichten mit ausgewählten Detailaufzeichnungen.",
+          "inputs": "Auslöseregel, Vor-/Nachereignisspeicher und Übertragungskapazität.",
+          "deliverables": "Definierte Übertragung von Zusammenfassungen, Ereignissen und Rohdaten.",
+          "acceptance": "Prüfen Sie Ruhe-, stationäre Betriebs- und Auslöseszenarien.",
+          "considerations": "Speicher-, Rechen- und Funkbudgets begrenzen gespeicherte Rohdaten."
+        }
+      ]
+    },
+    {
+      "id": "gas",
+      "title": "Gas- und Luftqualitätsinstrumente",
+      "intro": "Zeigen Sie den Sensorstatus neben Konzentrationswerten und Umgebungskanälen.",
+      "imageKey": "gas-laboratory",
+      "imageAlt": "Laborraum mit kryogenen Dewargefäßen und Arbeitstischen",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Sensorwarmlauf und Gültigkeit",
+          "description": "Stellen Sie Anlauf- oder nicht verfügbare Messungen nicht als gültige Konzentrationen dar.",
+          "inputs": "Sensorreaktionszustände, Warmlaufanforderungen und Fehlerausgänge.",
+          "deliverables": "Gültigkeitsmodell mit jeder relevanten Messung.",
+          "acceptance": "Prüfen Sie Anlauf, Sensorentfernung und spezifizierte Fehlerreaktionen.",
+          "considerations": "Messprinzip und Ex-Bereichseignung gehören zur gelieferten Hardware."
+        },
+        {
+          "title": "Mehrkanal-Zeitsteuerung",
+          "description": "Koordinieren Sie Gas-, Temperatur-, Feuchte- und Partikelkanäle mit unterschiedlichem Reaktionsverhalten.",
+          "inputs": "Kanalschnittstellen, Einschwingzeiten und Abtastpläne.",
+          "deliverables": "Kanalspezifische Zeitstempel, Einheiten und Statusfelder.",
+          "acceptance": "Prüfen Sie Kanalabstimmung und Umgang mit nicht verfügbaren Kanälen.",
+          "considerations": "Kanalunabhängigkeit muss im empfangenden Datenmodell erkennbar bleiben."
+        },
+        {
+          "title": "Service- und Kalibriereinstellungen",
+          "description": "Implementieren Sie gegebenenfalls berechtigte Koeffizienten- und Servicezustandsverwaltung.",
+          "inputs": "Kalibrierverfahren, Koeffizientenformat und Zugriffsregeln.",
+          "deliverables": "Versionierte Einstellungen, Bereichsprüfungen und Servicenachweise.",
+          "acceptance": "Laden Sie gültige und ungültige Einstellungen und prüfen Sie die Wiederherstellung.",
+          "considerations": "Firmwareeinstellungen ersetzen weder rückführbare Kalibrierung noch Sensorqualifizierung."
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "title": "Wasser-, Druck- und Füllstandsterminals",
+      "intro": "Stellen Sie Messungen und Standortereignisse dar, ohne Schnittstellen- oder Prozessfehler zu verbergen.",
+      "imageKey": "water-indoor",
+      "imageAlt": "Pumpentechnik mit Prozessrohrleitungen in Innenräumen",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Erfassung von Prozesskanälen",
+          "description": "Überführen Sie ausgewählte Druck-, Füllstands- und Zusatzeingänge in konsistente Datensätze.",
+          "inputs": "Elektrische Schnittstelle, Skalierung, Einheiten und Regeln für ungültige Eingänge.",
+          "deliverables": "Kanalzuordnung mit Roh-/Status- und technischen Werten.",
+          "acceptance": "Speisen Sie bekannte elektrische oder Protokolleingaben über den konfigurierten Bereich ein.",
+          "considerations": "Sensorgenauigkeit und Prozesseignung sind von numerischer Skalierung zu trennen."
+        },
+        {
+          "title": "Stabilität von Füllstandsereignissen",
+          "description": "Definieren Sie Dämpfung und Mindestdauer für veränderliche Wasserstände.",
+          "inputs": "Erwartete Schwankungen, Schwellenwertregeln und Übertragungsbedarf.",
+          "deliverables": "Dokumentierte Ereigniszustände mit konfigurierbaren Auswertungseinstellungen.",
+          "acceptance": "Spielen Sie Wellen, anhaltende Anstiege und Rückkehrfolgen ein.",
+          "considerations": "Verbergen Sie schnelle Änderungen nicht ohne vereinbartes Messziel."
+        },
+        {
+          "title": "Impuls- und durchflussbezogene Summen",
+          "description": "Bewahren Sie vereinbartes Zähl- und Überlaufverhalten kompatibler Impulsquellen.",
+          "inputs": "Impulseigenschaften, Skalierung, Neustart- und Rücksetzregeln.",
+          "deliverables": "Zähler, Summen und Rücksetzkennzeichnung in der Nutzlast.",
+          "acceptance": "Speisen Sie bekannte Impulszahlen bei Neustart- und Überlaufprüfungen ein.",
+          "considerations": "Die Durchflussgenauigkeit hängt vom externen Messgerät und Einbau ab."
+        }
+      ]
+    },
+    {
+      "id": "tracking",
+      "title": "Asset-Tracker und mobile Geräte",
+      "intro": "Stimmen Sie Positionserfassung, Bewegungsereignisse und Übertragung auf das vorgesehene Betriebsprofil ab.",
+      "imageKey": "container-terminal",
+      "imageAlt": "Gestapelte Frachtcontainer auf einem küstennahen Terminalgelände",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Bewegungsabhängige Betriebszustände",
+          "description": "Wechseln Sie anhand der ausgewählten Bewegungsquelle zwischen Stillstands- und Bewegungsprofil.",
+          "inputs": "Bewegungseingang, Zustandsschwellen und Aufwach-/Ruhepolitik.",
+          "deliverables": "Dokumentierter Bewegungszustandsautomat und Zeitstempel.",
+          "acceptance": "Prüfen Sie Stillstand, Bewegung und unterbrochene Bewegungsfolgen.",
+          "considerations": "Bewegungserkennung hängt vom installierten Sensor ab."
+        },
+        {
+          "title": "Budget für die Positionserfassung",
+          "description": "Begrenzen Sie Erfassungsversuche und kennzeichnen Sie fehlende Positionsergebnisse ausdrücklich.",
+          "inputs": "Positionshardware, Zeitbudget und Gültigkeitskriterien.",
+          "deliverables": "Positionsdaten mit Quelle, Zeit und Gültigkeitsstatus.",
+          "acceptance": "Prüfen Sie gültige Positionslösungen, blockierten Empfang und Zeitüberschreitung.",
+          "considerations": "Die Firmware garantiert weder Positionsgenauigkeit noch Satellitensichtbarkeit."
+        },
+        {
+          "title": "Kontinuität von Fahrtaufzeichnungen",
+          "description": "Halten Sie Gerätezeit, Ereignisse und Positionsdaten bei Netzlücken konsistent.",
+          "inputs": "Datensatztypen, Warteschlangenbudget und Fahrtgrenzen.",
+          "deliverables": "Geordnete Datensätze mit Kennungen und Duplikatregeln.",
+          "acceptance": "Spielen Sie eine Route mit Ausfällen, Neustarts und verspäteten Übertragungen ein.",
+          "considerations": "Positions- und Betriebsdaten benötigen vereinbarte Zugriffs- und Aufbewahrungsregeln."
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Wetter-, Boden- und solare Feldknoten",
+      "intro": "Koordinieren Sie verschiedene Außensensoren unter Versorgungsgrenzen und wartbarer Messzeitsteuerung.",
+      "imageKey": "agriculture",
+      "imageAlt": "Landwirtschaftliche Anbauumgebung",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Planung gemischter Sensoren",
+          "description": "Planen Sie Sensoren mit unterschiedlichem Einschalt- und Einschwingbedarf.",
+          "inputs": "Sensorliste, Versorgungssteuerung und Messzeiten.",
+          "deliverables": "Kanalplan und kanalspezifische Gültigkeitsaufzeichnungen.",
+          "acceptance": "Beobachten Sie Versorgungssequenzen und bekannte Sensorreaktionen.",
+          "considerations": "Unterstützte Fühler und Schnittstellen gehören zur Hardwarebasis."
+        },
+        {
+          "title": "Versorgungsabhängige Übertragung",
+          "description": "Definieren Sie das Verhalten bei veränderlicher verfügbarer Energie.",
+          "inputs": "Versorgungsmessung, Betriebsgrenzen und Prioritätsregeln.",
+          "deliverables": "Normal-, Reduktions- und Wiederanlaufzustände gemäß Spezifikation.",
+          "acceptance": "Variieren Sie die Versorgung und prüfen Sie Übergänge und erhaltene Einstellungen.",
+          "considerations": "Eine Energiestrategie belegt keine autarke Laufzeit ohne Energiebewertung."
+        },
+        {
+          "title": "Prüfungen bei der Feldinbetriebnahme",
+          "description": "Machen Sie Kanäle und Empfangspfad während der Installation prüfbar.",
+          "inputs": "Inbetriebnahmeschnittstelle, Testdatensätze und erlaubte Einstellungen.",
+          "deliverables": "Vereinbarter Servicemodus und Einbauprüfliste.",
+          "acceptance": "Führen Sie einen repräsentativen Inbetriebnahmetest vom Messpunkt zur Plattform durch.",
+          "considerations": "Servicemoduszugang und Auswirkungen auf Normaldaten müssen definiert sein."
+        }
+      ]
+    },
+    {
+      "id": "collectors",
+      "title": "Gateways und Mehrgeräte-Datensammler",
+      "intro": "Überführen Sie spezifizierte Felddaten unter Erhalt von Identität, Status und Zeitbezug.",
+      "imageKey": "telecom-site",
+      "imageAlt": "Abgelegener Außenkommunikationsstandort mit geschlossenen Schränken und zugänglichen Wartungswegen",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Feldprotokollzuordnung",
+          "description": "Ordnen Sie unterstützte Feldregister oder Frames einem stabilen Anwendungsschema zu.",
+          "inputs": "Protokollrevision, Registerplan und Nutzlastbeispiele.",
+          "deliverables": "Versionierte Kanalzuordnung und Fehlerantworten.",
+          "acceptance": "Prüfen Sie Normalwerte, Ausnahmen und nicht unterstützte Felder.",
+          "considerations": "Modbus oder andere Protokolle erfordern passende Hardware und vereinbarte Umsetzung."
+        },
+        {
+          "title": "Verarbeitung von Funkgerätedaten",
+          "description": "Verarbeiten Sie Daten der spezifizierten Funkgeräte und Empfangskonfiguration.",
+          "inputs": "Funkhardware, Framedefinitionen und Gerätekennungen.",
+          "deliverables": "Parserregeln und Geräte-/Kanalzuordnungen.",
+          "acceptance": "Speisen Sie gültige, fehlerhafte, doppelte und unbekannte Geräteframes ein.",
+          "considerations": "LoRa ist nicht automatisch LoRaWAN; Kompatibilität wird systemspezifisch festgestellt."
+        },
+        {
+          "title": "Backhaul-Wiederanlauf und Warteschlangen",
+          "description": "Trennen Sie Felddatenerfassung von der Verfügbarkeit der Weiterverbindung.",
+          "inputs": "Backhaul, Warteschlangenkapazität und Neuverbindungsregeln.",
+          "deliverables": "Begrenzte Warteschlangen, Statusdaten und Wiederholungsgrenzen.",
+          "acceptance": "Unterbrechen Sie das Backhaul bei weiterhin eingehenden Felddaten.",
+          "considerations": "Zustellgarantien müssen zum vollständigen Empfangspfad passen."
+        }
+      ]
+    },
+    {
+      "id": "metering",
+      "title": "Versorgungszähler und Schrankeingänge",
+      "intro": "Geben Sie Zählern und diskreten Zuständen klare elektrische und zeitliche Bedeutung.",
+      "imageKey": "industrial",
+      "imageAlt": "Umspannwerk und Geräteschränke im Freien",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Zählen von Messgeräteimpulsen",
+          "description": "Erfassen Sie kompatible Zählerimpulse und erhalten Sie den Summenzustand.",
+          "inputs": "Impulsbreite, Frequenz, Polarität und Persistenzanforderung.",
+          "deliverables": "Entprellungs-, Summierungs- und nichtflüchtige Speicherstrategie.",
+          "acceptance": "Speisen Sie eine gezählte Folge an den vereinbarten Eingangsgrenzen ein.",
+          "considerations": "Die Eigenschaften des externen Zählers bestimmen den nutzbaren Eingangsbereich."
+        },
+        {
+          "title": "Kontaktzustandsereignisse",
+          "description": "Interpretieren Sie Tür-, potentialfreie Kontakt- oder Gerätezustandseingänge konsistent.",
+          "inputs": "Eingangsschaltung, Normalzustand, Entprellung und Ereignisregeln.",
+          "deliverables": "Zustandsübergangsdaten mit Zeitstempeln und Fehlerbehandlung.",
+          "acceptance": "Prüfen Sie Prellen, wiederholte Änderungen und Neustartbedingungen.",
+          "considerations": "Ein Überwachungseingang ist keine zertifizierte Schutz- oder Verriegelungsfunktion."
+        },
+        {
+          "title": "Zusammenfassungen des Schrankzustands",
+          "description": "Kombinieren Sie Eingangszustände und ausgewählte Umgebungskanäle in einem Datensatz.",
+          "inputs": "Kanalprioritäten, Statuskombinationen und Übertragungsschema.",
+          "deliverables": "Versionierte Zusammenfassung mit expliziten Feldern für fehlende Daten.",
+          "acceptance": "Vergleichen Sie jede Zustandskombination mit der Schnittstellendefinition.",
+          "considerations": "Trennen Sie gemessene Bedingungen von abgeleitetem Gerätestatus."
+        }
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Geräte für Gebäude- und Anlagenüberwachung",
+      "intro": "Koordinieren Sie Umgebungs- und belegungsbezogene Eingänge für einen vereinbarten Betriebszweck.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Campusgebäude und gestalteter Außenbereich",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Multifunktions-Raumgeräte",
+          "description": "Planen Sie Umgebungs-, Licht- und Anwesenheitseingänge unter Erhalt der Kanalidentität.",
+          "inputs": "Installierte Sensoren, Auslösereingänge und Messanforderungen.",
+          "deliverables": "Unabhängige Kanaldaten und definierte gemeinsame Nutzlast.",
+          "acceptance": "Prüfen Sie jeden Kanal einzeln und im gleichzeitigen Betrieb.",
+          "considerations": "Anwesenheitsdaten belegen weder Identität noch garantierte Personenzahlen."
+        },
+        {
+          "title": "Einbaukonfigurationsprofile",
+          "description": "Wenden Sie standortspezifische Einstellungen über die unterstützte Inbetriebnahmeschnittstelle an.",
+          "inputs": "Raumkennungen, Konfigurationsfelder und erlaubte Werkzeuge.",
+          "deliverables": "Validierte Profile mit Revision und Wiederherstellungsverhalten.",
+          "acceptance": "Laden, verwerfen, speichern und restaurieren Sie repräsentative Profile.",
+          "considerations": "NFC-, Bluetooth- oder Kabelkonfiguration wird nur bei kompatibler Hardware vorgesehen."
+        },
+        {
+          "title": "Ausnahme- und Heartbeat-Daten",
+          "description": "Machen Sie offline, veraltet und abnormal am Empfänger unterscheidbar.",
+          "inputs": "Heartbeat-Intervall, Statusbits und Veraltungsregeln.",
+          "deliverables": "Gerätestatusmeldungen und Informationen zum Kanalzustand.",
+          "acceptance": "Simulieren Sie nicht verfügbare Sensoren und Kommunikationsunterbrechungen.",
+          "considerations": "Ein Empfänger kann die Verbindung erst nach vereinbarter Wartezeit beurteilen."
+        }
+      ]
+    },
+    {
+      "id": "retrofit",
+      "title": "Schnittstellen zur Nachrüstung industrieller Geräte",
+      "intro": "Integrieren Sie vorhandene Gerätedaten, ohne stillschweigend Steuerungsbefugnis vorauszusetzen.",
+      "imageKey": "compressed-air",
+      "imageAlt": "Industrieller Druckluftbehälter und Kompressoranlage",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Datenerfassung aus Bestandsgeräten",
+          "description": "Lesen Sie die spezifizierte Geräteschnittstelle und erzeugen Sie Überwachungsdatensätze.",
+          "inputs": "Schnittstellenunterlagen, elektrische Pegel und erlaubter Zugriff.",
+          "deliverables": "Gegebenenfalls vereinbarter rein lesender Erfassungspfad.",
+          "acceptance": "Vergleichen Sie repräsentative Werte mit der Gerätereferenz.",
+          "considerations": "Zugriff muss Gerätegrenzen und bestehende Betriebsverfahren beachten."
+        },
+        {
+          "title": "Zähler- und Zyklusbeobachtungen",
+          "description": "Erfassen Sie Zyklusereignisse unterstützter Signale für Betriebsberichte.",
+          "inputs": "Auslösesignal, Zyklusdefinition und Neustartbehandlung.",
+          "deliverables": "Zeitgestempelte Ereignisse und Zähler mit expliziten Rücksetzregeln.",
+          "acceptance": "Spielen Sie repräsentative Betriebszyklen und unterbrochene Folgen ein.",
+          "considerations": "Zyklusbeobachtungen belegen nicht automatisch Auslastung oder Prozessqualität."
+        },
+        {
+          "title": "Grenzen optionaler Befehle",
+          "description": "Definieren Sie bei Fernbefehlen Anfrage-, Bestätigungs- und Timeout-Verhalten ausdrücklich.",
+          "inputs": "Erlaubte Befehle, Berechtigungen und Geräteschutzmaßnahmen.",
+          "deliverables": "Dokumentierter Befehlszustandsautomat und Prüffelder.",
+          "acceptance": "Prüfen Sie angenommene, abgelehnte, wiederholte und zeitüberschrittene Befehle.",
+          "considerations": "Sicherheitsbezogene Steuerung erfordert eine separat bewertete Architektur."
+        }
+      ]
+    },
+    {
+      "id": "oem",
+      "title": "OEM-Geräteintegration und Freigabevarianten",
+      "intro": "Halten Sie kundenspezifisches Verhalten zur richtigen Hardware und Freigabe nachvollziehbar.",
+      "imageKey": "electronics-workbench",
+      "imageAlt": "Techniker arbeitet an einer bestückten Leiterplatte auf einem Elektronikarbeitsplatz",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Kundenspezifische Protokollvarianten",
+          "description": "Passen Sie Nutzlast und Konfiguration für eine benannte Empfangsplattform an.",
+          "inputs": "Endpunkt, Schema, Authentifizierung und Testzugang.",
+          "deliverables": "Versionierte Integrationseinstellungen und Beispielnachrichten.",
+          "acceptance": "Führen Sie einen vereinbarten Ende-zu-Ende-Interoperabilitätstest durch.",
+          "considerations": "Drittanbieterzugänge und laufende Abonnements werden separat definiert."
+        },
+        {
+          "title": "Firmware zur Werksprovisionierung",
+          "description": "Unterstützen Sie vereinbarte Identitätsbeladung und Fertigungsprüfschritte.",
+          "inputs": "Serialisierungsregeln, Vorrichtungsschnittstelle und Prüfgrenzen.",
+          "deliverables": "Provisionierungsbefehle und Gut-/Schlecht-Ergebnisnachweise.",
+          "acceptance": "Prüfen Sie einen definierten Satz bekannter Gut- und Fehlerfälle.",
+          "considerations": "Zugangsdaten und Fertigungszugriff erfordern kontrollierte Handhabung."
+        },
+        {
+          "title": "Kontrollierte Updatepfade",
+          "description": "Implementieren Sie den gewählten Update- und Wiederherstellungsentwurf der Plattform.",
+          "inputs": "Speicherlayout, Image-Signierung und Anforderungen bei Updateunterbrechung.",
+          "deliverables": "Vertraglich vereinbarte Bootloader-/Updatelogik und Freigabeanweisungen.",
+          "acceptance": "Prüfen Sie abgelehnte Images, Stromunterbrechung und Wiederherstellung an echter Hardware.",
+          "considerations": "Rollback, Secure Boot und Schwachstellenpflege sind nicht automatisch enthalten."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Entwicklungsumfang.\nAn die Hardware-Revision gebunden.",
+  "scopeIntro": "Die Firmware-Spezifikation ist projektspezifisch; diese Punkte definieren die Entwicklungsleistung.",
+  "rows": [
+    [
+      "Leistungsart",
+      "Individuelle Embedded-Firmware und vereinbarte Integrationsarbeiten"
+    ],
+    [
+      "Hardware-Ausgangsbasis",
+      "Benannte Platinenrevision, Komponenten und unterstützte Schnittstellen"
+    ],
+    [
+      "Softwareumgebung",
+      "Vereinbarter MCU oder Prozessor, Toolchain sowie RTOS- oder Bare-Metal-Ansatz"
+    ],
+    [
+      "Funktionsumfang",
+      "Anforderungen an Erfassung, Zustandslogik, Konfiguration und Kommunikation"
+    ],
+    [
+      "Energieziele",
+      "Gemessene Abnahmebedingungen für die spezifizierte Hardware und den Arbeitszyklus"
+    ],
+    [
+      "Fehlerbehebung",
+      "Definierte Zeitüberschreitungen, Wiederholungsgrenzen, Watchdog-Zusammenspiel und Diagnoseaufzeichnungen"
+    ],
+    [
+      "Sicherheit und Updates",
+      "Im Vertrag ausdrücklich enthaltene Anforderungen und Verifizierungsumfang"
+    ],
+    [
+      "Prüfung",
+      "Repräsentative Hardware, Testfälle und erforderliche Nachweise"
+    ],
+    [
+      "Lieferumfang",
+      "Firmware-Binärdateien, Aufspielanleitung und Dokumentation gemäß Vertrag"
+    ],
+    [
+      "Quellcode und Support",
+      "Quellcodeübergabe, Drittanbieterlizenzen, Wartung und Änderungsbedingungen werden schriftlich vereinbart"
+    ]
+  ],
+  "handoverTitle": "Von der Prototyp-Firmware.\nZur kontrollierten Freigabe.",
+  "handoverIntro": "Vereinbaren Sie die für Integration und Wartung benötigten Nachweise und Dateien.",
+  "handover": [
+    {
+      "title": "Anforderungen bestätigen",
+      "text": "Schnittstellen und Zustandsverhalten anhand der verfügbaren Hardware und Projektprioritäten prüfen."
+    },
+    {
+      "title": "Integration und Verifizierung",
+      "text": "Auf der vereinbarten Plattform entwickeln und Normalbetrieb, relevante Fehlerfälle sowie Wiederherstellungsbedingungen testen."
+    },
+    {
+      "title": "Freigabe und Übergabe",
+      "text": "Das vertraglich vereinbarte Firmware-Paket, Freigabeinformationen und Dokumentation mit ausdrücklichen Quellcode- und Supportbedingungen übergeben."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Kann vorhandene Firmware erweitert statt neu geschrieben werden?",
+      "a": "Ja, wenn Quellcode, Buildumgebung, Änderungsrechte und geeignete Testhardware verfügbar sind. Die Erstprüfung identifiziert nutzbare Treiber und Anwendungslogik, Hardwareabhängigkeiten und fehlende Prüfnachweise."
+    },
+    {
+      "q": "Welche Angaben werden für ein Firmwareangebot benötigt?",
+      "a": "Stellen Sie Platinenrevision, Schaltpläne, Komponenten, gegebenenfalls vorhandenen Quellcode, Schnittstellenunterlagen und erwartetes Zustandsverhalten bereit. Nennen Sie Zeit-, Energie-, Datenhaltungs- und Wiederanlaufanforderungen mit vorgeschlagener Abnahmehardware."
+    },
+    {
+      "q": "Wie werden Messung, Übertragung und Alarme getrennt?",
+      "a": "Messung erzeugt Messwerte, Ereignislogik bewertet definierte Bedingungen und Übertragung sendet Datensätze über den Empfangspfad. Jeder Vorgang hat eigenes Zeit- und Fehlerverhalten; ein Ereignis garantiert keine Ende-zu-Ende-Benachrichtigungsverzögerung."
+    },
+    {
+      "q": "Kann ein Gerät offline Datensätze behalten?",
+      "a": "Lokale Pufferung kann bei ausreichendem Speicher und Energie eingeplant werden. Spezifizieren Sie Kapazität, Sequenzkennungen, Überschreibregel, Neustartverhalten und Behandlung verspäteter oder doppelter Daten im Empfangssystem."
+    },
+    {
+      "q": "Umfasst Firmwareentwicklung Signalverarbeitung?",
+      "a": "Ausgewählte Berechnungen können mit dokumentierten Eingaben, Einheiten und Referenztests enthalten sein. Rechenleistung, Sensorbandbreite und Datenqualität bestimmen die Machbarkeit. Merkmalsextraktion unterscheidet sich von validierter Fehlerdiagnose oder Prognose."
+    },
+    {
+      "q": "Kann Firmware die Batterie- oder Solarautonomie verlängern?",
+      "a": "Energiezustände und Kommunikationsplanung können auf ausgewählter Hardware bewertet werden. Laufzeit hängt vom gesamten Energiesystem, Sensorlasten, Netzbedingungen und Umgebung ab und erfordert ein definiertes Energiebudget mit Messnachweisen."
+    },
+    {
+      "q": "Sind MQTT, Modbus oder LoRaWAN automatisch enthalten?",
+      "a": "Nein. Wählen Sie Protokoll und kompatible Hardware projektspezifisch und definieren Sie Version, Nachrichtenzuordnung und Testendpunkte. LoRa-Funkunterstützung allein belegt keine LoRaWAN-Kompatibilität."
+    },
+    {
+      "q": "Wie werden Updatefehler behandelt?",
+      "a": "Der Updateentwurf sollte Imageprüfung, Versionskompatibilität, Speicherlayout und Wiederherstellung nach Unterbrechung festlegen. Dual-Image-Speicher oder Rollback benötigen ausreichenden Speicher und implementierten Bootloader; das Verhalten wird an gelieferter Hardware geprüft."
+    },
+    {
+      "q": "Welche Sicherheitsarbeiten sind enthalten?",
+      "a": "Definieren Sie Authentifizierung, Provisionierung von Zugangsdaten, berechtigte Einstellungen, Imageprüfung und Diagnosezugriff als Anforderungen. Sicherheitstests, Schwachstellenreaktion und externe Zertifizierung sind separat vereinbarte Liefergegenstände."
+    },
+    {
+      "q": "Erhalten wir Quellcode und einen reproduzierbaren Build?",
+      "a": "Quellcodeübergabe, Werkzeugkettenversionen, Buildanweisungen, Abhängigkeitsnachweise und Änderungsrechte stehen im Vertrag. Drittkomponenten unterliegen weiterhin ihren Lizenzen; Eigentum ergibt sich nicht aus einer Firmware-Binärdatei."
+    },
+    {
+      "q": "Wie wird Firmware abgenommen?",
+      "a": "Verwenden Sie eine Anforderungs-Prüf-Matrix auf benannten Hardwarerevisionen. Berücksichtigen Sie Normalbetrieb, Grenzeingaben, Kommunikationsausfälle, Spannungsunterbrechungen, Datenerhalt und Wiederanlauf mit dokumentierten Soll- und Istergebnissen."
+    },
+    {
+      "q": "Warum gibt es kein Standardproduktdatenblatt?",
+      "a": "Dies ist eine Entwicklungsdienstleistung. Firmwareanforderungen, Schnittstellendefinition und Abnahmeplan definieren die Arbeit; ein festes Datenblatt würde kundenspezifische Hardware und Verhalten nicht zutreffend beschreiben."
+    }
+  ],
+  "enquiryIntro": "Teilen Sie uns Platinenrevision, Komponenten und erforderliches Geräteverhalten mit. Fügen Sie verfügbare Firmware, Schnittstellenunterlagen und Abnahmeprioritäten zur technischen Prüfung bei.",
+  "enquiryFields": [
+    {
+      "label": "Hardware-Ausgangsbasis",
+      "placeholder": "MCU, Platinenrevision, Sensoren, Modem und Schnittstellen"
+    },
+    {
+      "label": "Erforderliches Verhalten",
+      "placeholder": "Abtastung, Meldung, Energiezustände und Fehlerbehebung"
+    },
+    {
+      "label": "Vorhandene Ressourcen",
+      "placeholder": "Schaltpläne, Prototypstatus, Quellcode und Build-Werkzeuge"
+    },
+    {
+      "label": "Lieferanforderungen",
+      "placeholder": "Prüfnachweise, Quellcoderechte, Update-Bedarf und Support"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-embedded-software.webp",
+  "imageWidth": 400,
+  "imageHeight": 345
+}

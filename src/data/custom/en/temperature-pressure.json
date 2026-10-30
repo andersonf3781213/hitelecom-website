@@ -1,0 +1,642 @@
+{
+  "id": "temperature-pressure",
+  "slug": "explosion-proof-temperature-pressure-sensor",
+  "kind": "Product",
+  "name": "H Series Temperature & Pressure Transmitter",
+  "title": "Wireless Temperature & Pressure Monitoring | H Series | Hitelecom",
+  "metaDescription": "Specify paired temperature and pressure monitoring for process lines, equipment skids and industrial utilities. Select the probe, pressure span and wireless version, with online data and threshold alerts in Hitelecom Cloud.",
+  "heroHeading": "Temperature and pressure.\nConfigured for the process.",
+  "heroValue": "Two process variables.\nOne operating record.",
+  "heroDescription": "Bring temperature and pressure readings from process equipment into one monitoring workflow. The H Series is configured around the medium, operating range, measurement location and available data connection. View uploaded readings online in Hitelecom Cloud and receive notifications when measurements exceed configured thresholds, or integrate the agreed records with a compatible customer platform. Select the pressure span and temperature probe independently; hazardous-area installations require documentation covering the exact supplied assembly.",
+  "caption": "H Series Temperature & Pressure Transmitter",
+  "imageAlt": "H Series Temperature & Pressure Transmitter",
+  "proof": [
+    {
+      "value": "2 variables",
+      "label": "Temperature and pressure",
+      "note": "Probe and process interfaces selected for the installation"
+    },
+    {
+      "value": "±0.5% FS",
+      "label": "Published pressure accuracy",
+      "note": "Confirm span, reference conditions and total error requirements"
+    },
+    {
+      "value": "Selected radio",
+      "label": "Configured communication version",
+      "note": "4G LTE, NB-IoT or LoRa; receiving path agreed per version"
+    }
+  ],
+  "featureTitle": "Define the measurement.\nBuild a useful operating record.",
+  "featureIntro": "Useful process data depends on more than a headline range. Match the sensing interfaces to the medium, keep the electronics within their own environmental limits, and specify how readings reach the team responsible for response.",
+  "features": [
+    {
+      "title": "Two variables, defined sensing points",
+      "text": "Specify where pressure is taken and where the temperature probe senses. The arrangement can suit a process line or equipment assembly; the two readings are not assumed to represent an identical physical point or response time."
+    },
+    {
+      "title": "Pressure span matched to the duty",
+      "text": "Published full-scale choices are 1, 1.6, 3.5, 7, 10 and 20 MPa at a reference accuracy of ±0.5% FS. Select against normal duty, transients and required operating-point uncertainty; pressure reference and overload limits form part of the configuration."
+    },
+    {
+      "title": "Temperature probe selected for the medium",
+      "text": "The published selection envelope is -200°C to +800°C across probe configurations. The listed ±0.5°C reference and optional ±0.1°C customization require a defined probe, applicable temperature interval and test conditions; they are not full-envelope guarantees."
+    },
+    {
+      "title": "Process interfaces reviewed together",
+      "text": "Define media, wetted materials, connection type, insertion depth, access and any thermowell or isolation requirement. Hygienic interfaces, chemical compatibility and high-temperature arrangements are application-specific selections, not assumed standard features."
+    },
+    {
+      "title": "Online data and threshold notifications",
+      "text": "View uploaded monitoring data online in Hitelecom Cloud. Set the agreed thresholds and notification recipients for each variable, and test the response workflow during commissioning. Sampling, transmission and notification timing are separate project settings."
+    },
+    {
+      "title": "A selected wireless data path",
+      "text": "Choose the available 4G LTE, NB-IoT or LoRa version for the site. Cellular compatibility depends on the modem and operator; LoRa requires compatible receiving equipment. MQTT integration applies through the supported, agreed onward data path."
+    },
+    {
+      "title": "Enclosure and installation conditions",
+      "text": "The published enclosure reference is IP68. Confirm the supplied seals, probe entries, connector assembly and immersion conditions. The published -40°C to +125°C operating/storage reference must be checked for the actual electronics and complete assembly, separately from process temperature."
+    },
+    {
+      "title": "Configuration, updates and traceability",
+      "text": "NFC setup and OTA firmware updates are listed options whose availability depends on the supplied configuration. Record the hardware and firmware revision, measurement units, parameter settings and update procedure with the handover documentation."
+    }
+  ],
+  "planningTitle": "Start at the process connection.\nFinish at the receiving platform.",
+  "planningIntro": "Prepare a measurement-point schedule for the intended operating duty. It links the physical installation, applicable performance conditions and data workflow before a configuration is selected.",
+  "planning": [
+    {
+      "title": "Define the operating envelope",
+      "text": "List normal, minimum, maximum and transient process conditions for each point. Distinguish gauge or absolute pressure requirements, measurement accuracy at the working point, and the temperature probe location. Select sampling and reporting intervals around the operating changes that need to be observed.",
+      "brief": "Medium · Pressure reference · Operating envelope · Accuracy points · Sampling and reporting"
+    },
+    {
+      "title": "Design the installed connection",
+      "text": "Provide a process connection drawing, wetted-material requirements, probe construction and mounting access. Review heat transfer to the electronics, vibration, pressure pulsation, cleaning exposure and local ingress conditions. Where applicable, match the exact certificate and marking to the target market and area classification.",
+      "brief": "Connections · Materials · Probe insertion · Ambient exposure · Applicable approval documents"
+    },
+    {
+      "title": "Specify the data and response workflow",
+      "text": "Identify each asset and measurement channel at the receiving platform. Define engineering units, timestamps, missing-data treatment, threshold settings and notification recipients. Commission a representative reading and an agreed threshold test through the actual radio and receiving path.",
+      "brief": "Point identity · Units and timestamps · Compatible receiving path · Thresholds · Acceptance evidence"
+    }
+  ],
+  "applicationsTitle": "From process lines to utility plants.\nMeasurements with a defined purpose.",
+  "applicationsIntro": "Explore 12 application groups and 36 specific monitoring duties. These are engineering selection contexts, not claims of completed customer installations. Each duty identifies the required inputs, proposed monitoring output and a practical commissioning check. Direct product contact, hot media and hazardous locations require an appropriate, documented assembly.",
+  "groups": [
+    {
+      "id": "petrochemical",
+      "title": "Petrochemical process lines",
+      "intro": "Give operators a paired operating record at selected process and circulation points.",
+      "imageKey": "chemical-transfer",
+      "imageAlt": "Chemical transfer pump and closed metal pipework with a diaphragm instrument branch, process tanks behind.",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Process feed headers",
+          "description": "Record feed-line pressure and temperature alongside operating periods to review changes at a defined process inlet.",
+          "considerations": "Media, pulsation and hot-process isolation.",
+          "inputs": "Feed composition, normal duty, surge pressure and connection drawing.",
+          "deliverables": "Identified pressure/temperature points with agreed trend and threshold settings.",
+          "acceptance": "Compare stable readings with references and verify channel identity online."
+        },
+        {
+          "title": "Heat-exchanger utility connections",
+          "description": "Observe pressure and temperature at selected exchanger utility connections during heating or cooling changes.",
+          "considerations": "Multiple locations require separately specified measurement points.",
+          "inputs": "Connection locations, utility medium and expected temperature transitions.",
+          "deliverables": "Time-identified readings for the selected inlet or outlet points.",
+          "acceptance": "Check probe position, response and units against the point schedule."
+        },
+        {
+          "title": "Process recirculation skids",
+          "description": "Capture the conditions on recirculating liquid circuits used by packaged process equipment.",
+          "considerations": "Seal compatibility, pump pulses and service isolation.",
+          "inputs": "Skid P&ID, fluid properties and operating stages.",
+          "deliverables": "Configured records linked to the relevant skid and operating duty.",
+          "acceptance": "Verify readings during an agreed operating stage and test notifications."
+        }
+      ]
+    },
+    {
+      "id": "batch-chemical",
+      "title": "Batch reactors and specialty chemicals",
+      "intro": "Separate vessel, jacket and transfer duties instead of treating an entire reactor as one measurement point.",
+      "imageKey": "process-charging",
+      "imageAlt": "Process charging connection and closed vessel pipework",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Reactor heating and cooling jackets",
+          "description": "Track jacket pressure and temperature as the batch heating or cooling sequence changes.",
+          "considerations": "Jacket conditions differ from product temperature.",
+          "inputs": "Jacket medium, connection arrangement and cycle profile.",
+          "deliverables": "A jacket operating record with the selected observation interval.",
+          "acceptance": "Compare identified channels during heating and cooling transitions."
+        },
+        {
+          "title": "Batch charging and transfer lines",
+          "description": "Observe pressure and temperature on instrumented feed or transfer lines serving a batch vessel.",
+          "considerations": "Viscosity, crystallization, flushing and cleaning access.",
+          "inputs": "Material properties, expected peaks and process connection details.",
+          "deliverables": "Measurement-point configuration for the specified transfer duty.",
+          "acceptance": "Check process compatibility documents and a representative transfer reading."
+        },
+        {
+          "title": "Solvent recovery equipment",
+          "description": "Monitor selected utility or process connections associated with solvent recovery equipment.",
+          "considerations": "Area classification, vapour exposure and temperature limits.",
+          "inputs": "Media, location drawing and required certificate/marking.",
+          "deliverables": "A documented instrument configuration and receiving-system point mapping.",
+          "acceptance": "Match assembly documents to the installation and verify the data path."
+        }
+      ]
+    },
+    {
+      "id": "pharma-bioprocess",
+      "title": "Pharmaceutical and bioprocess support",
+      "intro": "Begin with equipment utilities; product-contact duties require a specifically qualified process interface.",
+      "imageKey": "pharma-process",
+      "imageAlt": "Pilot-scale stainless process vessels, circulation pump and manifold pressure gauge in a clean laboratory",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Production water utility loops",
+          "description": "Record pressure and temperature at selected production-water support connections.",
+          "considerations": "Product-contact and hygienic requirements need separate qualification.",
+          "inputs": "Water specification, connection standard and cleaning conditions.",
+          "deliverables": "Defined monitoring points with documented interface requirements.",
+          "acceptance": "Review supplied materials and compare readings at agreed test points."
+        },
+        {
+          "title": "Bioreactor utility jackets",
+          "description": "Observe the heating or cooling circuit supporting a bioreactor or production vessel.",
+          "considerations": "Utility readings do not replace product-temperature validation.",
+          "inputs": "Jacket design, thermal duty and required observation interval.",
+          "deliverables": "Separate utility channels identified by vessel and circuit.",
+          "acceptance": "Confirm channel locations and follow one representative temperature transition."
+        },
+        {
+          "title": "Filter-system operating connections",
+          "description": "Collect readings at selected pressure and temperature points on filter support equipment.",
+          "considerations": "A single pressure reading is not differential-pressure measurement.",
+          "inputs": "Filter arrangement, point locations and media-contact requirements.",
+          "deliverables": "Point-specific operating records and agreed limits.",
+          "acceptance": "Verify pressure reference, point labels and an instrument comparison."
+        }
+      ]
+    },
+    {
+      "id": "food-beverage",
+      "title": "Food and beverage process support",
+      "intro": "Match each duty to its medium and cleaning exposure before selecting a process-contact configuration.",
+      "imageKey": "process-food-beverage",
+      "imageAlt": "Stainless beverage-process pump and sanitary clamp-connected tubing with a diaphragm instrument assembly.",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Heating and cooling circuits",
+          "description": "Observe pressure and temperature on utility circuits supplying production heating or cooling equipment.",
+          "considerations": "Thermal response and electronics exposure differ.",
+          "inputs": "Utility type, connection position and operating cycle.",
+          "deliverables": "Paired utility readings associated with the production equipment.",
+          "acceptance": "Check stable conditions and one agreed heating/cooling change."
+        },
+        {
+          "title": "Transfer and filling support equipment",
+          "description": "Record conditions on compatible transfer or filling support lines where paired measurements aid operating review.",
+          "considerations": "Hygienic design and contact materials are not assumed.",
+          "inputs": "Product or utility medium, cleaning regime and interface drawing.",
+          "deliverables": "An agreed measurement configuration for the defined line.",
+          "acceptance": "Verify interface documentation and point identity before comparing readings."
+        },
+        {
+          "title": "Cleaning-cycle exposure assessment",
+          "description": "Evaluate whether a proposed assembly tolerates the pressure, temperature and chemicals of the cleaning environment.",
+          "considerations": "No automatic CIP/SIP validation or sterilization certification.",
+          "inputs": "Cleaning chemicals, exposure times and cycle extremes.",
+          "deliverables": "Documented assembly limits and a proposed monitoring arrangement.",
+          "acceptance": "Review compatibility and agreed post-cycle measurement checks."
+        }
+      ]
+    },
+    {
+      "id": "oil-gas-production",
+      "title": "Oil and gas production equipment",
+      "intro": "Specify wellsite and gathering-line measurements against the real pressure envelope and area classification.",
+      "imageKey": "oil-gas",
+      "imageAlt": "Oil pumpjack in an open landscape",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Wellhead equipment monitoring",
+          "description": "Review operating pressure and the selected temperature point on suitable wellhead-associated equipment.",
+          "considerations": "Pressure shocks, sour media and approval conditions.",
+          "inputs": "Normal/max pressure, medium, tapping points and area drawing.",
+          "deliverables": "A selected span/probe assembly and site monitoring-point schedule.",
+          "acceptance": "Check assembly documentation and compare an accessible stable reading."
+        },
+        {
+          "title": "Gathering-line stations",
+          "description": "Bring selected gathering-line pressure and temperature records into the agreed remote viewing workflow.",
+          "considerations": "Outdoor exposure and intermittent connectivity.",
+          "inputs": "Line medium, station layout and available radio coverage.",
+          "deliverables": "Named station channels with agreed reporting and notification settings.",
+          "acceptance": "Verify timestamps, units and representative data reception at the platform."
+        },
+        {
+          "title": "Separation-system auxiliary lines",
+          "description": "Observe compatible auxiliary or circulation lines around separation equipment.",
+          "considerations": "Not a pressure-relief or process shutdown device.",
+          "inputs": "Equipment duty, pressure reference and installation boundaries.",
+          "deliverables": "Defined monitoring records for the selected auxiliary circuit.",
+          "acceptance": "Match point tags and test the agreed monitoring threshold event."
+        }
+      ]
+    },
+    {
+      "id": "fuels-gas",
+      "title": "Fuel storage and gas utility equipment",
+      "intro": "Identify the actual transfer, regulation or circulation point; the instrument does not establish tank level or custody transfer.",
+      "imageKey": "gas-regulation",
+      "imageAlt": "Outdoor fuel-gas regulation skid with diaphragm regulators, yellow pipework and small instrument branches.",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Bulk fuel transfer pump lines",
+          "description": "Record pressure and temperature at selected pump discharge or transfer-manifold connections.",
+          "considerations": "Flammable media, seal compatibility and pressure transients.",
+          "inputs": "Fuel type, pump duty, process connections and area classification.",
+          "deliverables": "Configured transfer-point readings and operator notification limits.",
+          "acceptance": "Compare steady conditions and verify point identification in the platform."
+        },
+        {
+          "title": "Gas regulation outlet observations",
+          "description": "Monitor selected downstream pressure and temperature where the gas service and assembly are suitable.",
+          "considerations": "Gas compatibility, venting and approval requirements.",
+          "inputs": "Gas composition, reference pressure and outlet operating envelope.",
+          "deliverables": "A reviewed monitoring arrangement for the specified outlet point.",
+          "acceptance": "Verify reference type and readings against the commissioning instrument."
+        },
+        {
+          "title": "Storage-associated heating circuits",
+          "description": "Observe heating or circulation utilities serving fuel storage installations.",
+          "considerations": "Heating-medium conditions are separate from stored-product temperature.",
+          "inputs": "Utility circuit diagram, medium and thermal operating limits.",
+          "deliverables": "Named utility measurement points linked to the storage asset.",
+          "acceptance": "Check sensing positions and record an agreed heating transition."
+        }
+      ]
+    },
+    {
+      "id": "compressed-air-gas",
+      "title": "Compressed air and industrial gas utilities",
+      "intro": "Use point-specific pressure and temperature data to review utility operating conditions.",
+      "imageKey": "compressed-air",
+      "imageAlt": "Industrial compressor and compressed-air receiver",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Air receivers and supply headers",
+          "description": "Observe pressure and temperature at selected receiver or supply-header connections during normal demand changes.",
+          "considerations": "Condensate, compressor pulses and safe service access.",
+          "inputs": "Receiver rating, duty cycle and required measurement interval.",
+          "deliverables": "A receiver/header operating record with agreed threshold settings.",
+          "acceptance": "Compare steady pressure and check temperature location and response."
+        },
+        {
+          "title": "Dryer and filter line observations",
+          "description": "Record conditions at specified points around compressed-air treatment equipment.",
+          "considerations": "Does not measure dew point or automatically calculate differential pressure.",
+          "inputs": "Treatment layout, point locations and operating-state information.",
+          "deliverables": "Tagged upstream or downstream measurement records.",
+          "acceptance": "Verify each physical point and its displayed engineering units."
+        },
+        {
+          "title": "Compatible utility gas headers",
+          "description": "Review supply pressure and selected temperature on a defined non-process gas utility header.",
+          "considerations": "Oxygen, hydrogen and special gases need specific material/approval review.",
+          "inputs": "Gas identity, purity, flow conditions and connection requirements.",
+          "deliverables": "A documented monitoring configuration for the approved service.",
+          "acceptance": "Confirm compatibility records and an agreed reference comparison."
+        }
+      ]
+    },
+    {
+      "id": "thermal-utilities",
+      "title": "Hot water, steam and thermal-fluid utilities",
+      "intro": "Separate hot process conditions from the temperature allowed at the transmitter electronics.",
+      "imageKey": "steam-hot-water",
+      "imageAlt": "Industrial boiler with hot-water pipework and circulation pumps",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Hot-water circulation networks",
+          "description": "Record supply or return pressure and temperature at selected circulation points.",
+          "considerations": "Probe immersion, insulation and water chemistry.",
+          "inputs": "Circuit drawing, normal duty and mounting access.",
+          "deliverables": "Identified loop readings for operating review and threshold notifications.",
+          "acceptance": "Compare at stable circulation and verify point/return labels."
+        },
+        {
+          "title": "Steam distribution monitoring points",
+          "description": "Assess selected pressure and temperature points on steam service with a suitable connection and thermal arrangement.",
+          "considerations": "No steam-trap diagnosis or steam-flow measurement is implied.",
+          "inputs": "Steam conditions, tapping design and required cooling/isolation arrangement.",
+          "deliverables": "A reviewed assembly and defined steam-service monitoring points.",
+          "acceptance": "Review installation limits and compare after the agreed stabilization period."
+        },
+        {
+          "title": "Thermal-oil heating circuits",
+          "description": "Observe selected pressure and temperature locations on compatible thermal-fluid circulation systems.",
+          "considerations": "Seal materials, thermal expansion and electronics heat exposure.",
+          "inputs": "Fluid specification, operating extremes and connection drawing.",
+          "deliverables": "Configured channels and documented process/ambient limits.",
+          "acceptance": "Verify the supplied assembly and readings during agreed steady duty."
+        }
+      ]
+    },
+    {
+      "id": "water-wastewater",
+      "title": "Water and wastewater plant processes",
+      "intro": "Match the interface to the treatment stage, fluid chemistry and maintenance method.",
+      "imageKey": "treatment-manifold",
+      "imageAlt": "Water-treatment filter vessels and process pipework",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Pump discharge and transfer mains",
+          "description": "Record pressure and temperature on selected pump discharge or transfer connections.",
+          "considerations": "Water hammer, pulsation and access for isolation.",
+          "inputs": "Pump curve context, pressure peaks and tapping arrangement.",
+          "deliverables": "A defined transfer-point record and agreed alert limits.",
+          "acceptance": "Compare a steady duty point and verify channel scaling online."
+        },
+        {
+          "title": "Treatment filter circulation loops",
+          "description": "Observe conditions at defined circulation or filter-system connections during operating changes.",
+          "considerations": "Fouling and cleaning can affect the sensing interface.",
+          "inputs": "Water chemistry, filter layout and cleaning exposure.",
+          "deliverables": "Tagged readings with agreed sampling and review periods.",
+          "acceptance": "Check sensing points before and after a representative operating change."
+        },
+        {
+          "title": "Chemical-dosing support lines",
+          "description": "Assess paired monitoring on compatible dosing or dilution support equipment.",
+          "considerations": "Corrosion, crystallization and seal compatibility.",
+          "inputs": "Chemical concentration, maximum pressure and material requirements.",
+          "deliverables": "A reviewed sensing configuration and point-level data mapping.",
+          "acceptance": "Verify materials/connection documents and an accessible reference reading."
+        }
+      ]
+    },
+    {
+      "id": "mining-materials",
+      "title": "Mining and mineral-processing utilities",
+      "intro": "Select against abrasive surroundings, circuit vibration and the exact installation approval requirements.",
+      "imageKey": "mining",
+      "imageAlt": "Open-pit quarry and rock benches",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Mine-water pumping circuits",
+          "description": "Observe pressure and temperature on selected mine-water transfer or dewatering pump lines.",
+          "considerations": "Sediment, surges and mechanical protection.",
+          "inputs": "Water characteristics, duty pressure and location/access plan.",
+          "deliverables": "Defined pumping-point channels with agreed reporting requirements.",
+          "acceptance": "Verify stable duty readings and data reception at the receiving system."
+        },
+        {
+          "title": "Equipment hydraulic auxiliaries",
+          "description": "Review pressure and selected temperature on suitable hydraulic auxiliary circuits.",
+          "considerations": "Pulsation, fluid compatibility and transient capture requirements.",
+          "inputs": "Hydraulic medium, operating peaks and required time resolution.",
+          "deliverables": "A reviewed span/probe configuration for the auxiliary circuit.",
+          "acceptance": "Compare defined operating states; do not assume fast-event capture."
+        },
+        {
+          "title": "Mineral-processing wash-water systems",
+          "description": "Record conditions on wash-water or compatible plant-service circuits.",
+          "considerations": "Abrasive exposure and maintenance access.",
+          "inputs": "Process stage, water quality and connection arrangement.",
+          "deliverables": "Named service-water readings for plant operating review.",
+          "acceptance": "Check point identity, connection protection and an agreed reference comparison."
+        }
+      ]
+    },
+    {
+      "id": "manufacturing-auxiliaries",
+      "title": "Manufacturing equipment auxiliaries",
+      "intro": "Instrument defined fluid circuits rather than infer a complete machine-health diagnosis from two variables.",
+      "imageKey": "manufacturing-floor",
+      "imageAlt": "Injection moulding machine in an orderly manufacturing area",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Mould and tooling cooling circuits",
+          "description": "Observe cooling-circuit pressure and temperature serving production tooling.",
+          "considerations": "Probe placement and cycle response shape the record.",
+          "inputs": "Coolant, circuit layout and production cycle duration.",
+          "deliverables": "Identified cooling-point records aligned to the agreed observation interval.",
+          "acceptance": "Compare steady/cycle conditions and verify the selected time resolution."
+        },
+        {
+          "title": "Machine lubrication and hydraulic services",
+          "description": "Assess paired monitoring on compatible machine auxiliary-fluid lines.",
+          "considerations": "Oil viscosity, pressure peaks and vibration at the mounting point.",
+          "inputs": "Fluid grade, normal duty and process interface details.",
+          "deliverables": "Configured auxiliary-line measurement points and threshold settings.",
+          "acceptance": "Compare agreed machine states with suitable reference instruments."
+        },
+        {
+          "title": "Industrial chilled-water equipment",
+          "description": "Record selected loop conditions around chillers or process cooling skids.",
+          "considerations": "Condensation, insulation and ingress at probe connections.",
+          "inputs": "Coolant chemistry, expected temperatures and mounting exposure.",
+          "deliverables": "Named loop points with visible units and data timestamps.",
+          "acceptance": "Check measurement values and inspect sealing under representative conditions."
+        }
+      ]
+    },
+    {
+      "id": "oem-commissioning",
+      "title": "Equipment OEM, pilot and acceptance testing",
+      "intro": "Define what is measured, how it is compared and how the final monitoring configuration is released.",
+      "imageKey": "tank-manifold",
+      "imageAlt": "Storage tank manifold with valves and access platform",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Packaged-skid factory acceptance",
+          "description": "Include the selected pressure/temperature assembly in the skid measurement-point schedule and acceptance procedure.",
+          "considerations": "Factory test conditions may differ from field conditions.",
+          "inputs": "Skid P&ID, test points and agreed tolerances.",
+          "deliverables": "Instrument configuration, point mapping and acceptance records.",
+          "acceptance": "Compare each specified test point against the agreed reference method."
+        },
+        {
+          "title": "Prototype operating-envelope trials",
+          "description": "Evaluate readings over a defined equipment trial before finalizing the production configuration.",
+          "considerations": "No unspecified fatigue, lifetime or certification result is assumed.",
+          "inputs": "Trial range, test sequence and reference instruments.",
+          "deliverables": "A traceable record of configuration and trial observations.",
+          "acceptance": "Check agreed accuracy points, stabilization and data completeness."
+        },
+        {
+          "title": "Distributed pilot monitoring",
+          "description": "Verify the end-to-end workflow on a representative installation before a wider rollout.",
+          "considerations": "Radio coverage, operator compatibility and response ownership.",
+          "inputs": "Site list, selected radio version, platform and recipients.",
+          "deliverables": "Online readings, point labels and configured threshold notifications.",
+          "acceptance": "Witness a reading comparison and a controlled threshold-notification test."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Select the range.\nSpecify the complete assembly.",
+  "scopeIntro": "The table separates published product-family references from order-specific requirements. A family selection envelope does not establish every probe, temperature accuracy or installation approval.",
+  "rows": [
+    [
+      "Published model family",
+      "H200 / H300 / H500; exact model and communication variant confirmed with the order"
+    ],
+    [
+      "Measured variables",
+      "Temperature and pressure"
+    ],
+    [
+      "Pressure full-scale options",
+      "1 / 1.6 / 3.5 / 7 / 10 / 20 MPa; pressure reference and usable span to be confirmed"
+    ],
+    [
+      "Pressure accuracy reference",
+      "±0.5% FS; confirm reference conditions and total error requirements for the selected span"
+    ],
+    [
+      "Temperature selection envelope",
+      "-200°C to +800°C across probe configurations; not a universal single-probe range"
+    ],
+    [
+      "Temperature accuracy reference",
+      "Published ±0.5°C, with ±0.1°C customization listed; confirm probe, applicable range and test conditions"
+    ],
+    [
+      "Communication options",
+      "Selected 4G LTE, NB-IoT or LoRa version; hardware, firmware and receiving path confirmed per project"
+    ],
+    [
+      "Platform integration",
+      "MQTT for supported configurations and agreed receiving path; Hitelecom Cloud or compatible customer platform"
+    ],
+    [
+      "Published LTE band reference",
+      "TDD B34/B38/B39/B40/B41; FDD B1/B3/B5/B8, only where supported by the selected cellular hardware and operator"
+    ],
+    [
+      "Housing protection",
+      "Published IP68 reference; immersion conditions, probe connections and assembled sealing to be confirmed"
+    ],
+    [
+      "Published operating / storage reference",
+      "-40°C to +125°C; confirm electronics, probe, seals and complete assembly limits independently of process temperature"
+    ],
+    [
+      "Hazardous-area installation",
+      "Exact certificate, marking, market coverage and installation conditions must be confirmed before selection"
+    ],
+    [
+      "Process and mounting interfaces",
+      "Threads, wetted materials, probe construction and supplied mounting arrangement agreed for the project"
+    ]
+  ],
+  "handoverTitle": "Commission the measurement.\nVerify the operating workflow.",
+  "handoverIntro": "Acceptance should cover the instrument at the sensing point and the records received by the operating team. The thresholds and notifications support monitoring; safety interlocks, shutdown functions and regulatory process validation require their own qualified systems.",
+  "handover": [
+    {
+      "title": "Document the supplied instrument",
+      "text": "Record the selected pressure span/reference, probe construction and range, applicable accuracy conditions, wetted materials, process connections, enclosure assembly and hardware/firmware revision. Include the applicable certificate and installation instructions where required."
+    },
+    {
+      "title": "Compare the measurement and received record",
+      "text": "Use the agreed reference method at representative operating points. Verify that the platform displays the correct asset, channel, units and timestamps. Test sampling/reporting behavior and treatment of unavailable or stale data through the supplied communication path."
+    },
+    {
+      "title": "Test the notification and maintenance workflow",
+      "text": "Witness an agreed threshold event and confirm the intended recipients receive the notification. Hand over settings, access responsibilities, maintenance instructions and any agreed calibration evidence. Keep monitoring alerts distinct from the plant safety and shutdown systems."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Which operating duties are suitable for combined temperature and pressure monitoring?",
+      "a": "Start with a defined process line, equipment skid or utility circuit where both variables support an operating decision. The application examples identify possible duties; the medium, pressure envelope, temperature probe, interfaces and installation documentation determine suitability."
+    },
+    {
+      "q": "Which pressure spans and pressure reference are available?",
+      "a": "The published full-scale choices are 1, 1.6, 3.5, 7, 10 and 20 MPa. Gauge/absolute reference, usable span, overload conditions and total error requirements must be specified for the selected configuration; they are not implied by the full-scale number alone."
+    },
+    {
+      "q": "What does ±0.5% FS mean when selecting a pressure span?",
+      "a": "FS refers to the selected full scale. A given percentage of a larger span represents a larger pressure interval, which matters when normal operation occupies only a small part of that span. Agree reference conditions and the required uncertainty at the actual operating points."
+    },
+    {
+      "q": "Does one temperature probe cover -200°C to +800°C?",
+      "a": "No. The published number is a selection envelope across probe configurations. Select probe construction, usable range, insertion and response for the process. Process temperature and the allowable environment of the electronics are separate limits."
+    },
+    {
+      "q": "Can the optional ±0.1°C accuracy be used across the whole temperature envelope?",
+      "a": "That full-envelope performance is not established. The published references are ±0.5°C and optional ±0.1°C customization. The selected probe, applicable interval, calibration points and test conditions need to be stated in the quotation and acceptance criteria."
+    },
+    {
+      "q": "Are pressure and temperature measured at exactly the same point?",
+      "a": "Not necessarily. Define the pressure tapping and temperature sensing positions on the installation drawing. Probe insertion, pipe geometry and response time affect how the two readings should be interpreted and compared."
+    },
+    {
+      "q": "Can the instrument be installed in my hazardous area?",
+      "a": "Obtain the certificate, marking and installation conditions for the exact proposed assembly. Match them to the target market, area classification, gas or dust group, temperature class and ambient restrictions before selection. The product name does not establish universal hazardous-area approval."
+    },
+    {
+      "q": "Can it be used in food, pharmaceutical or cleaning-in-place processes?",
+      "a": "A representative industry application does not establish hygienic approval. Direct product contact and CIP/SIP exposure require a suitable, documented construction, materials, connection, cleanability and temperature/pressure limits. Confirm these requirements before selecting the assembly."
+    },
+    {
+      "q": "How do online viewing and threshold notifications work?",
+      "a": "Uploaded monitoring records can be viewed online in Hitelecom Cloud, with notifications when measurements exceed configured thresholds. Agree sampling, transmission, threshold logic and recipients separately, then test the end-to-end workflow. No fixed notification delay is implied."
+    },
+    {
+      "q": "Does every version connect directly to MQTT?",
+      "a": "No such assumption should be made. Select the available 4G LTE, NB-IoT or LoRa version and its compatible receiving path. MQTT integration is provided through the supported, agreed onward connection to Hitelecom Cloud or a compatible customer platform."
+    },
+    {
+      "q": "Do two measurements provide flow, level, leak diagnosis or a safety shutdown?",
+      "a": "Those functions are not established by the temperature/pressure readings alone. Any calculation, diagnostic method or protective action requires separately specified equipment, validated logic and appropriate qualification. This product page describes monitoring and configurable notifications."
+    },
+    {
+      "q": "What should be supplied for quotation and commissioning?",
+      "a": "Provide process media, normal/extreme/transient conditions, pressure reference, required accuracy points, connection drawings, probe requirements, installation exposure, approval requirements, radio coverage, receiving platform, quantity and acceptance method. An agreed point schedule makes the quotation and handover traceable."
+    }
+  ],
+  "enquiryIntro": "Send the measurement-point schedule, process conditions and connection drawing. Include the required data destination and response workflow so sensing, installation and communication can be reviewed together.",
+  "enquiryFields": [
+    {
+      "label": "Process duty and required performance",
+      "placeholder": "Media, normal/extreme/transient conditions, pressure reference and accuracy at working points"
+    },
+    {
+      "label": "Connections and sensing locations",
+      "placeholder": "P&ID or drawing, thread/flange requirements, wetted materials, pressure tapping and probe insertion"
+    },
+    {
+      "label": "Installation and approval documents",
+      "placeholder": "Ambient exposure, cleaning conditions, target market, area classification and required certificates"
+    },
+    {
+      "label": "Data workflow and acceptance",
+      "placeholder": "Radio version, site count, sampling/reporting, platform, alert recipients and reference-test method"
+    }
+  ],
+  "datasheet": "/downloads/explosion-proof-temperature-pressure-sensor-datasheet.pdf",
+  "image": "original-hero-temperature-pressure.webp",
+  "imageWidth": 627,
+  "imageHeight": 635
+}

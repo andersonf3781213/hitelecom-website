@@ -1,0 +1,630 @@
+{
+  "id": "embedded-software",
+  "slug": "embedded-software-development",
+  "kind": "Service",
+  "name": "Embedded Software Development",
+  "title": "Embedded Firmware Development for IoT Devices | Hitelecom",
+  "metaDescription": "Custom IoT firmware for sensing, reporting, power management and field recovery. Explore device-specific applications, interface requirements and measurable acceptance tests.",
+  "heroHeading": "Embedded software\ndevelopment.",
+  "heroValue": "From sensor inputs.\nTo dependable device behaviour.",
+  "heroDescription": "Translate a monitoring requirement into firmware that can be integrated, tested and maintained on the selected hardware. Hitelecom scopes acquisition, device states, communications and diagnostic behaviour around the measurement and deployment. Define what happens when a sensor is unavailable, a connection is interrupted or power returns. Local configuration, remote updates and security functions are designed into the project where required; their implementation depends on the board, memory and receiving system.",
+  "caption": "Embedded Software Development",
+  "imageAlt": "Embedded Software Development",
+  "proof": [
+    {
+      "value": "Firmware",
+      "label": "Defined device behaviour",
+      "note": "Document states, interfaces and timing"
+    },
+    {
+      "value": "Integration",
+      "label": "Hardware and data paths",
+      "note": "Confirm components, protocols and payloads"
+    },
+    {
+      "value": "Verification",
+      "label": "Agreed acceptance tests",
+      "note": "Cover expected operation and relevant faults"
+    }
+  ],
+  "featureTitle": "Device behaviour.\nSpecified for field operation.",
+  "featureIntro": "An embedded project needs more than a working payload. Specify the timing, state transitions, retained data and recovery behaviour that make the device useful in the field.",
+  "features": [
+    {
+      "title": "Acquisition and data validity",
+      "text": "Implement sensor drivers, settling time, sampling schedules, units and timestamps. Distinguish a valid reading from warm-up, missing data, out-of-range input or a sensor fault."
+    },
+    {
+      "title": "Event and reporting logic",
+      "text": "Separate measurement, event evaluation and periodic reporting. Define hysteresis, persistence, event priority and repeat notifications around the operating workflow."
+    },
+    {
+      "title": "Power-state engineering",
+      "text": "Coordinate MCU sleep, peripheral supplies and modem activity. Measure current by operating state and evaluate the duty cycle on the actual board."
+    },
+    {
+      "title": "Communication lifecycle",
+      "text": "Specify network attachment, session management, bounded retries and reconnection. Agree payload versions, units, device identity and the compatible receiving path."
+    },
+    {
+      "title": "Local records and continuity",
+      "text": "Where memory permits, design record queues, sequence numbers and restart behaviour. Make buffer capacity, overwrite rules and handling of late data explicit."
+    },
+    {
+      "title": "Commissioning and configuration",
+      "text": "Define installation settings, validation rules, authorised access and restore behaviour through the selected local or remote interface. NFC or Bluetooth requires compatible hardware."
+    },
+    {
+      "title": "Firmware integrity and updates",
+      "text": "Where included, specify image authenticity, version compatibility, update storage and interruption handling. Bootloader, rollback and credential protection require a reviewed hardware/software design."
+    },
+    {
+      "title": "Diagnostics and release evidence",
+      "text": "Expose useful reset causes and fault states, and produce a controlled build with test results. Agree source access, dependency records, loading instructions and maintenance responsibilities."
+    }
+  ],
+  "planningTitle": "Write the behaviour.\nThen test the device.",
+  "planningIntro": "A firmware brief should connect each requirement to a hardware interface and a verification method.",
+  "planning": [
+    {
+      "title": "Review the hardware baseline",
+      "text": "Confirm schematics, components, memory, interfaces and available prototypes. Identify dependencies on third-party code or module firmware.",
+      "brief": "Hardware revision · Components · Toolchain · Third-party dependencies"
+    },
+    {
+      "title": "Specify operational states",
+      "text": "Describe acquisition, reporting, power modes, configuration and fault recovery with measurable acceptance conditions.",
+      "brief": "State transitions · Timing · Power targets · Fault cases"
+    },
+    {
+      "title": "Plan release and handover",
+      "text": "Agree test fixtures, firmware loading, version control, source rights and post-release support.",
+      "brief": "Test evidence · Release package · Source terms · Support scope"
+    }
+  ],
+  "applicationsTitle": "Firmware for real devices.\nTasks that can be verified.",
+  "applicationsIntro": "Explore device-specific development briefs rather than a universal firmware package. The examples connect a practical monitoring task to required inputs, proposed software outputs and an acceptance check. Supported sensors, radios and interfaces are selected for each project.",
+  "groups": [
+    {
+      "id": "cold-chain",
+      "title": "Cold-chain and laboratory recorders",
+      "intro": "Preserve the meaning and sequence of temperature records during changing measurement and connection conditions.",
+      "imageKey": "refrigerated-logistics",
+      "imageAlt": "Refrigerated delivery truck at a loading dock",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Scheduled temperature records",
+          "description": "Keep acquisition timing independent of when a network upload succeeds.",
+          "inputs": "Probe interface, clock source, sample and report intervals.",
+          "deliverables": "Timestamped records and an explicit sampling state machine.",
+          "acceptance": "Compare record spacing and timestamps against the test clock.",
+          "considerations": "Clock correction and restart must not silently relabel older samples."
+        },
+        {
+          "title": "Excursion event handling",
+          "description": "Turn a configured temperature limit into a traceable device event.",
+          "inputs": "Limits, hysteresis, persistence and notification policy.",
+          "deliverables": "Event start/clear messages linked to the underlying readings.",
+          "acceptance": "Replay rising and falling test temperatures around each limit.",
+          "considerations": "A threshold event is monitoring information, not regulatory compliance by itself."
+        },
+        {
+          "title": "Interrupted-link data retention",
+          "description": "Retain the agreed record history while the receiving path is unavailable.",
+          "inputs": "Available memory, outage duration and overwrite policy.",
+          "deliverables": "A bounded queue with record sequence and upload behaviour.",
+          "acceptance": "Disconnect, fill the queue, restart and reconcile delivered records.",
+          "considerations": "Storage capacity and any data-loss exceptions must be stated."
+        }
+      ]
+    },
+    {
+      "id": "tilt",
+      "title": "Tilt and structural monitoring nodes",
+      "intro": "Define reference settings and event behaviour for racks, poles and other monitored structures.",
+      "imageKey": "warehouse-aisle",
+      "imageAlt": "Warehouse aisle with shelving and stored goods",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Reference and zero management",
+          "description": "Keep the installation reference separate from subsequent measured movement.",
+          "inputs": "Sensor axes, mounting direction and allowed zero procedure.",
+          "deliverables": "Stored reference settings and reference-change records.",
+          "acceptance": "Apply known orientation changes before and after a restart.",
+          "considerations": "Zero changes require an agreed authorisation and recovery procedure."
+        },
+        {
+          "title": "Persistent movement events",
+          "description": "Distinguish brief disturbances from the movement condition the project needs to report.",
+          "inputs": "Angles, persistence time, hysteresis and measurement schedule.",
+          "deliverables": "Configurable evaluation states and event identifiers.",
+          "acceptance": "Replay transient, persistent and recovering angle sequences.",
+          "considerations": "Filtering must not be described as an engineering safety assessment."
+        },
+        {
+          "title": "Priority event transmission",
+          "description": "Report a selected movement event without losing scheduled status information.",
+          "inputs": "Radio behaviour, event priority and retry constraints.",
+          "deliverables": "A bounded event queue and reporting sequence.",
+          "acceptance": "Trigger an event during a scheduled upload and a link outage.",
+          "considerations": "Actual delay depends on detection timing and the available network."
+        }
+      ]
+    },
+    {
+      "id": "vibration",
+      "title": "Motor and machine vibration nodes",
+      "intro": "Structure vibration acquisition around the selected sensor, machine duty and processing requirements.",
+      "imageKey": "manufacturing-floor",
+      "imageAlt": "Injection moulding machine in an orderly manufacturing area",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Defined acquisition windows",
+          "description": "Capture repeatable data blocks for the agreed operating condition.",
+          "inputs": "Sensor bandwidth, sampling rate, window length and axes.",
+          "deliverables": "Window scheduling, acquisition buffers and data-validity flags.",
+          "acceptance": "Compare captured samples with the agreed stimulus or reference.",
+          "considerations": "Aliasing, sensor mounting and usable bandwidth remain part of system design."
+        },
+        {
+          "title": "On-device signal features",
+          "description": "Implement selected time- or frequency-domain calculations where specified.",
+          "inputs": "Required features, units, windowing and processing budget.",
+          "deliverables": "Documented calculations and versioned result fields.",
+          "acceptance": "Run reference waveforms through implementation and comparison scripts.",
+          "considerations": "RMS or spectral features do not by themselves diagnose a failure."
+        },
+        {
+          "title": "Triggered records and summaries",
+          "description": "Combine routine summaries with selected detailed recordings.",
+          "inputs": "Trigger rule, pre/post-event storage and uplink capacity.",
+          "deliverables": "A defined summary/event/raw-record transfer policy.",
+          "acceptance": "Exercise quiet, steady-running and triggered test cases.",
+          "considerations": "Memory, processing and radio budgets limit retained raw data."
+        }
+      ]
+    },
+    {
+      "id": "gas",
+      "title": "Gas and air-quality instruments",
+      "intro": "Make sensing status visible alongside concentration values and environmental channels.",
+      "imageKey": "gas-laboratory",
+      "imageAlt": "Laboratory room with cryogenic dewars and work benches",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Sensor warm-up and validity",
+          "description": "Avoid presenting start-up or unavailable measurements as valid concentrations.",
+          "inputs": "Sensor response states, warm-up requirements and fault outputs.",
+          "deliverables": "A validity model carried with every relevant measurement.",
+          "acceptance": "Test start-up, sensor removal and specified fault responses.",
+          "considerations": "Detection principle and hazardous-area suitability belong to the supplied hardware."
+        },
+        {
+          "title": "Multi-channel timing",
+          "description": "Coordinate gas, temperature, humidity and particle channels with different response behaviour.",
+          "inputs": "Channel interfaces, settling times and sample schedules.",
+          "deliverables": "Per-channel timestamps, units and status fields.",
+          "acceptance": "Check channel alignment and unavailable-channel handling.",
+          "considerations": "Channel independence must remain visible in the receiving data model."
+        },
+        {
+          "title": "Service and calibration settings",
+          "description": "Implement authorised coefficient and service-state handling where included.",
+          "inputs": "Calibration method, coefficient format and access rules.",
+          "deliverables": "Versioned settings, range checks and service records.",
+          "acceptance": "Load valid and invalid settings and verify restore behaviour.",
+          "considerations": "Firmware settings do not replace traceable calibration or sensor qualification."
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "title": "Water, pressure and level terminals",
+      "intro": "Represent measurements and site events without hiding interface or process failures.",
+      "imageKey": "water-indoor",
+      "imageAlt": "Indoor pumping equipment with process pipework",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Process-channel acquisition",
+          "description": "Convert selected pressure, level and auxiliary inputs into consistent records.",
+          "inputs": "Electrical interface, scaling, units and invalid-input rules.",
+          "deliverables": "Channel mapping with raw/status and engineering values.",
+          "acceptance": "Apply known electrical or protocol inputs across the configured range.",
+          "considerations": "Sensor accuracy and process suitability are separate from numeric scaling."
+        },
+        {
+          "title": "Level-event stability",
+          "description": "Scope damping and persistence around changing water-level conditions.",
+          "inputs": "Expected fluctuations, threshold policy and reporting needs.",
+          "deliverables": "Documented event states with configurable evaluation settings.",
+          "acceptance": "Replay waves, sustained rises and recovery sequences.",
+          "considerations": "Do not hide rapid changes without an agreed measurement objective."
+        },
+        {
+          "title": "Pulse and flow-related totals",
+          "description": "Maintain the agreed counter and rollover behaviour for compatible pulse sources.",
+          "inputs": "Pulse characteristics, scaling, restart and reset rules.",
+          "deliverables": "Counters, totals and reset identification in the payload.",
+          "acceptance": "Inject known pulse counts through restart and rollover tests.",
+          "considerations": "Flow accuracy depends on the external meter and installation."
+        }
+      ]
+    },
+    {
+      "id": "tracking",
+      "title": "Asset trackers and mobile equipment",
+      "intro": "Balance position acquisition, movement events and reporting against the intended operating profile.",
+      "imageKey": "container-terminal",
+      "imageAlt": "Shipping containers stacked in a coastal terminal yard",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Movement-based operating states",
+          "description": "Switch between stationary and moving profiles using the selected motion source.",
+          "inputs": "Motion input, state thresholds and wake/sleep policy.",
+          "deliverables": "A documented movement state machine and timestamps.",
+          "acceptance": "Run stationary, movement and intermittent-motion sequences.",
+          "considerations": "Motion detection capability depends on the installed sensor."
+        },
+        {
+          "title": "Position acquisition budget",
+          "description": "Limit acquisition attempts and describe unavailable-position results explicitly.",
+          "inputs": "Positioning hardware, time budget and validity criteria.",
+          "deliverables": "Position records with source, time and validity status.",
+          "acceptance": "Test valid fixes, blocked reception and timeout behaviour.",
+          "considerations": "The firmware cannot guarantee location accuracy or satellite visibility."
+        },
+        {
+          "title": "Journey record continuity",
+          "description": "Keep device time, events and position records coherent during coverage gaps.",
+          "inputs": "Record types, queue budget and journey boundaries.",
+          "deliverables": "Ordered records with identity and duplicate-handling rules.",
+          "acceptance": "Replay a route with outages, restarts and delayed uploads.",
+          "considerations": "Location and operational data need agreed access and retention policies."
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Weather, soil and solar field nodes",
+      "intro": "Coordinate multiple outdoor sensors with supply constraints and maintainable measurement timing.",
+      "imageKey": "agriculture",
+      "imageAlt": "Agricultural growing environment",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Mixed-sensor scheduling",
+          "description": "Schedule sensors with different power-up and settling needs.",
+          "inputs": "Sensor list, supply controls and measurement timings.",
+          "deliverables": "A channel schedule and per-channel validity records.",
+          "acceptance": "Observe supply sequencing and known sensor responses.",
+          "considerations": "Supported probes and interfaces are part of the hardware baseline."
+        },
+        {
+          "title": "Supply-aware reporting",
+          "description": "Define behaviour when available energy changes.",
+          "inputs": "Supply measurement, operating limits and priority policy.",
+          "deliverables": "Normal, reduced-duty and recovery states where specified.",
+          "acceptance": "Sweep supply conditions and verify transitions and retained settings.",
+          "considerations": "A power policy does not establish unattended runtime without an energy assessment."
+        },
+        {
+          "title": "Field commissioning checks",
+          "description": "Provide installation-time visibility of channels and the receiving path.",
+          "inputs": "Commissioning interface, test records and permitted settings.",
+          "deliverables": "An agreed service mode and installation checklist.",
+          "acceptance": "Complete a representative point-to-platform commissioning test.",
+          "considerations": "Service mode access and its effect on normal records must be defined."
+        }
+      ]
+    },
+    {
+      "id": "collectors",
+      "title": "Gateways and multi-device collectors",
+      "intro": "Translate specified field records while preserving identity, status and timing.",
+      "imageKey": "telecom-site",
+      "imageAlt": "Remote outdoor communications site with closed cabinets and accessible service paths",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Field protocol mapping",
+          "description": "Map supported field registers or frames to a stable application schema.",
+          "inputs": "Protocol revision, register map and payload examples.",
+          "deliverables": "Versioned channel mapping and error responses.",
+          "acceptance": "Exercise normal values, exceptions and unsupported fields.",
+          "considerations": "Modbus or other protocols require the corresponding hardware and agreed implementation."
+        },
+        {
+          "title": "Radio-device record handling",
+          "description": "Handle records from the specified radio devices and receiving configuration.",
+          "inputs": "Radio hardware, frame definitions and device identifiers.",
+          "deliverables": "Parser rules and device/channel associations.",
+          "acceptance": "Feed valid, malformed, duplicate and unknown-device frames.",
+          "considerations": "LoRa is not automatically LoRaWAN; compatibility is established per system."
+        },
+        {
+          "title": "Backhaul recovery and queues",
+          "description": "Separate field collection from onward connection availability.",
+          "inputs": "Backhaul, queue capacity and reconnect policy.",
+          "deliverables": "Bounded queues, status records and retry limits.",
+          "acceptance": "Interrupt backhaul while field records continue to arrive.",
+          "considerations": "Delivery guarantees must match the complete receiving path."
+        }
+      ]
+    },
+    {
+      "id": "metering",
+      "title": "Utility meters and cabinet inputs",
+      "intro": "Give counters and discrete states clear electrical and temporal meaning.",
+      "imageKey": "industrial",
+      "imageAlt": "Electrical substation and outdoor equipment cabinets",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Meter pulse counting",
+          "description": "Capture compatible meter pulses and preserve totaliser state.",
+          "inputs": "Pulse width, frequency, polarity and persistence requirement.",
+          "deliverables": "Debounce, totalisation and non-volatile storage strategy.",
+          "acceptance": "Inject a counted sequence at the agreed input limits.",
+          "considerations": "External meter characteristics set the usable input envelope."
+        },
+        {
+          "title": "Contact-state events",
+          "description": "Interpret door, dry-contact or equipment-state inputs consistently.",
+          "inputs": "Input circuit, normal state, debounce and event policy.",
+          "deliverables": "State transition records with timestamps and fault handling.",
+          "acceptance": "Test bounce, repeated changes and restart conditions.",
+          "considerations": "A monitoring input is not a certified protection or interlock function."
+        },
+        {
+          "title": "Cabinet condition summaries",
+          "description": "Combine input states and selected environmental channels in one record.",
+          "inputs": "Channel priorities, status combinations and report schema.",
+          "deliverables": "A versioned summary with explicit missing-data fields.",
+          "acceptance": "Compare each state combination with the interface definition.",
+          "considerations": "Keep measured conditions separate from inferred equipment status."
+        }
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Building and facility monitoring devices",
+      "intro": "Coordinate environmental and occupancy-related inputs around an agreed operational use.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Campus building and landscaped outdoor area",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Multi-function room devices",
+          "description": "Schedule environmental, light and presence inputs without losing channel identity.",
+          "inputs": "Installed sensors, trigger inputs and sample requirements.",
+          "deliverables": "Independent channel records and a defined combined payload.",
+          "acceptance": "Exercise each channel alone and in concurrent operation.",
+          "considerations": "Presence data does not establish identity or guaranteed occupancy counts."
+        },
+        {
+          "title": "Installation configuration profiles",
+          "description": "Apply site-specific settings through the supported commissioning interface.",
+          "inputs": "Room identifiers, configuration fields and permitted tools.",
+          "deliverables": "Validated profiles with revision and restore behaviour.",
+          "acceptance": "Load, reject, retain and restore representative profiles.",
+          "considerations": "NFC, Bluetooth or wired setup is included only for compatible hardware."
+        },
+        {
+          "title": "Exception and heartbeat records",
+          "description": "Make offline, stale and abnormal states distinguishable at the receiver.",
+          "inputs": "Heartbeat interval, status bits and stale-data policy.",
+          "deliverables": "Device status messages and channel-health information.",
+          "acceptance": "Simulate unavailable sensors and interrupted communications.",
+          "considerations": "A receiver can only assess connectivity after its agreed timeout."
+        }
+      ]
+    },
+    {
+      "id": "retrofit",
+      "title": "Industrial equipment retrofit interfaces",
+      "intro": "Integrate existing equipment data without silently assuming control authority.",
+      "imageKey": "compressed-air",
+      "imageAlt": "Industrial compressed-air receiver and compressor equipment",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Legacy data acquisition",
+          "description": "Read the specified equipment interface and convert it into monitoring records.",
+          "inputs": "Interface documents, electrical levels and permitted access.",
+          "deliverables": "A read-only acquisition path where agreed.",
+          "acceptance": "Compare representative values with the equipment reference.",
+          "considerations": "Access must respect equipment limits and existing operating procedures."
+        },
+        {
+          "title": "Counter and cycle observations",
+          "description": "Capture cycle events from supported signals for operational reporting.",
+          "inputs": "Trigger signal, cycle definition and restart handling.",
+          "deliverables": "Timestamped events and counters with explicit reset rules.",
+          "acceptance": "Replay representative operating cycles and interrupted sequences.",
+          "considerations": "Cycle observations do not automatically establish utilisation or process quality."
+        },
+        {
+          "title": "Optional command boundaries",
+          "description": "Define explicit request, acknowledgement and timeout behaviour if remote commands are included.",
+          "inputs": "Allowed commands, authorisation and equipment safeguards.",
+          "deliverables": "A documented command state machine and audit fields.",
+          "acceptance": "Exercise accepted, rejected, repeated and timed-out commands.",
+          "considerations": "Safety-related control requires a separately assessed architecture."
+        }
+      ]
+    },
+    {
+      "id": "oem",
+      "title": "OEM device integration and release variants",
+      "intro": "Keep customer-specific behaviour traceable to the correct hardware and release.",
+      "imageKey": "electronics-workbench",
+      "imageAlt": "Technician working on a populated circuit board at an electronics workbench",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Customer protocol variants",
+          "description": "Adapt payloads and configuration for a named receiving platform.",
+          "inputs": "Endpoint, schema, authentication and test access.",
+          "deliverables": "Versioned integration settings and representative messages.",
+          "acceptance": "Perform an agreed end-to-end interoperability test.",
+          "considerations": "Third-party service access and ongoing subscriptions are separately defined."
+        },
+        {
+          "title": "Factory provisioning firmware",
+          "description": "Support agreed identity loading and production verification steps.",
+          "inputs": "Serialisation rules, fixture interface and test limits.",
+          "deliverables": "Provisioning commands and pass/fail result records.",
+          "acceptance": "Run a defined batch of known-good and known-fault cases.",
+          "considerations": "Credentials and manufacturing access require controlled handling."
+        },
+        {
+          "title": "Controlled update paths",
+          "description": "Implement the update and recovery design selected for the platform.",
+          "inputs": "Memory layout, image signing and interrupted-update requirements.",
+          "deliverables": "Bootloader/update logic and release instructions as contracted.",
+          "acceptance": "Test rejected images, power interruption and recovery on actual hardware.",
+          "considerations": "Rollback, secure boot and vulnerability maintenance are not automatic inclusions."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Development scope.\nTied to the hardware revision.",
+  "scopeIntro": "The firmware specification is project-specific; these items define the engineering deliverable.",
+  "rows": [
+    [
+      "Service type",
+      "Custom embedded firmware and agreed integration work"
+    ],
+    [
+      "Hardware baseline",
+      "Named board revision, components and supported interfaces"
+    ],
+    [
+      "Software environment",
+      "Agreed MCU or processor, toolchain, RTOS or bare-metal approach"
+    ],
+    [
+      "Functional scope",
+      "Acquisition, state logic, configuration and communication requirements"
+    ],
+    [
+      "Power targets",
+      "Measured acceptance conditions for the specified hardware and duty cycle"
+    ],
+    [
+      "Fault recovery",
+      "Defined timeouts, retry limits, watchdog interaction and diagnostic records"
+    ],
+    [
+      "Security and updates",
+      "Requirements and verification scope expressly included in the contract"
+    ],
+    [
+      "Testing",
+      "Representative hardware, test cases and required evidence"
+    ],
+    [
+      "Deliverables",
+      "Firmware binaries, loading instructions and documentation as contracted"
+    ],
+    [
+      "Source and support",
+      "Source delivery, third-party licences, maintenance and change terms agreed in writing"
+    ]
+  ],
+  "handoverTitle": "From prototype firmware.\nTo a controlled release.",
+  "handoverIntro": "Agree the evidence and files needed for integration and maintenance.",
+  "handover": [
+    {
+      "title": "Confirm requirements",
+      "text": "Review interfaces and state behaviour against the available hardware and project priorities."
+    },
+    {
+      "title": "Integrate and verify",
+      "text": "Develop on the agreed platform and test normal operation, relevant faults and recovery conditions."
+    },
+    {
+      "title": "Release and handover",
+      "text": "Deliver the contracted firmware package, release information and documentation with explicit source and support terms."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can existing firmware be extended rather than rewritten?",
+      "a": "Yes, where the source, build environment, modification rights and suitable test hardware are available. The initial review identifies reusable drivers and application logic, hardware dependencies and missing verification evidence."
+    },
+    {
+      "q": "What information is needed to quote a firmware project?",
+      "a": "Provide the board revision, schematics, components, existing source if available, interface documents and expected state behaviour. Include timing, power, record-retention and recovery requirements with the proposed acceptance hardware."
+    },
+    {
+      "q": "How are sampling, reporting and alerts separated?",
+      "a": "Sampling creates measurements, event logic evaluates defined conditions, and reporting sends records through the receiving path. Each has its own timing and failure behaviour; an event does not imply a guaranteed end-to-end notification delay."
+    },
+    {
+      "q": "Can a device retain records while offline?",
+      "a": "Local buffering can be scoped where storage and power permit. Specify capacity, sequence identifiers, overwrite policy, restart behaviour and how late or duplicate records are handled by the receiving system."
+    },
+    {
+      "q": "Does firmware development include signal processing?",
+      "a": "Selected calculations can be included with documented inputs, units and reference tests. Processing capacity, sensor bandwidth and data quality determine feasibility. Feature extraction is distinct from validated fault diagnosis or prediction."
+    },
+    {
+      "q": "Can firmware extend battery or solar autonomy?",
+      "a": "Power-state and communication scheduling can be evaluated on the selected hardware. Runtime depends on the complete power system, sensing loads, network conditions and environment; it requires a defined energy budget and supporting measurements."
+    },
+    {
+      "q": "Are MQTT, Modbus or LoRaWAN automatically included?",
+      "a": "No. Select the protocol and compatible hardware for the project, then define the exact revision, message mapping and test endpoints. LoRa radio support alone does not establish LoRaWAN compatibility."
+    },
+    {
+      "q": "How are update failures handled?",
+      "a": "The update design should define image verification, version compatibility, storage layout and recovery after interruption. Dual-image storage or rollback needs sufficient memory and an implemented bootloader; its behaviour is tested on the supplied hardware."
+    },
+    {
+      "q": "What security work is included?",
+      "a": "Specify authentication, credential provisioning, authorised settings, image verification and diagnostic access as requirements. Security testing, vulnerability response and any external certification are separately agreed deliverables."
+    },
+    {
+      "q": "Will we receive source code and a reproducible build?",
+      "a": "Source delivery, toolchain versions, build instructions, dependency records and modification rights are stated in the agreement. Third-party components remain subject to their licences; ownership is not inferred from a firmware binary."
+    },
+    {
+      "q": "How is firmware accepted?",
+      "a": "Use a requirements-to-test matrix on named hardware revisions. Include normal operation, boundary inputs, communication outages, power interruptions, persistence and recovery, with recorded expected and actual results."
+    },
+    {
+      "q": "Why is there no standard product datasheet?",
+      "a": "This is a development service. A firmware requirements specification, interface definition and acceptance plan define the work; a fixed product datasheet would not describe the customer-specific hardware and behaviour accurately."
+    }
+  ],
+  "enquiryIntro": "Share the board revision, components and required device behaviour. Include available firmware, interface documents and acceptance priorities for technical assessment.",
+  "enquiryFields": [
+    {
+      "label": "Hardware baseline",
+      "placeholder": "MCU, board revision, sensors, modem and interfaces"
+    },
+    {
+      "label": "Required behaviour",
+      "placeholder": "Sampling, reporting, power states and fault recovery"
+    },
+    {
+      "label": "Existing resources",
+      "placeholder": "Schematics, prototype status, source and build tools"
+    },
+    {
+      "label": "Delivery requirements",
+      "placeholder": "Test evidence, source rights, update needs and support"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-embedded-software.webp",
+  "imageWidth": 400,
+  "imageHeight": 345
+}

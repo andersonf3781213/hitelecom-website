@@ -1,0 +1,630 @@
+{
+  "id": "hardware-customization",
+  "slug": "hardware-customization",
+  "kind": "Service",
+  "name": "Personalización de hardware",
+  "title": "Desarrollo de hardware IoT a medida e integración OEM | Hitelecom",
+  "metaDescription": "Hardware IoT a medida para medida, conectividad e instalación en campo. Explore proyectos de sensores, alimentación, envolventes e interfaces con prototipos, verificación y transferencia a producción definidos.",
+  "heroHeading": "Personalización\nde hardware.",
+  "heroValue": "La medida.\nEl dispositivo de campo completo.",
+  "heroDescription": "Construya la especificación a partir de la medida, instalación y conexión que requiere el proyecto. Hitelecom evalúa adaptaciones de plataformas existentes y diseños nuevos de alcance independiente, con elementos sensores, electrónica, alimentación, comunicaciones e interfaces mecánicas seleccionados. El proyecto define prototipos, verificación y entregables de producción. Firmware, utillaje, fabricación y certificación se identifican expresamente para no confundir un prototipo funcional con un producto cualificado para producción.",
+  "caption": "Personalización de hardware",
+  "imageAlt": "Personalización de hardware",
+  "proof": [
+    {
+      "value": "Requisitos",
+      "label": "Condiciones de funcionamiento definidas",
+      "note": "Mediciones, interfaces e instalación"
+    },
+    {
+      "value": "Prototipo",
+      "label": "Una base de diseño verificada",
+      "note": "Acuerde pruebas y condiciones de aceptación"
+    },
+    {
+      "value": "Entrega",
+      "label": "Archivos de ingeniería contratados",
+      "note": "Especifique el alcance de producción y la titularidad"
+    }
+  ],
+  "featureTitle": "Ingeniería del dispositivo.\nMás allá de cambiar la envolvente.",
+  "featureIntro": "Resuelva restricciones eléctricas, de medida, mecánicas y de fabricación como un único diseño. Seleccione el grado de adaptación adecuado y verifique el conjunto resultante.",
+  "features": [
+    {
+      "title": "Adaptación de plataforma o diseño nuevo",
+      "text": "Elija entre modificar una plataforma adecuada y desarrollar una arquitectura nueva. Revise elementos reutilizables, cambios y evidencias que deban repetirse."
+    },
+    {
+      "title": "Cadena de detección y medida",
+      "text": "Seleccione principio sensor, interfaz analógica o digital, acondicionamiento y sonda. Defina rango, condiciones de exactitud, respuesta y calibración de la cadena completa."
+    },
+    {
+      "title": "Arquitectura de alimentación",
+      "text": "Defina batería, fuente externa o apoyo solar con protección, carga y dominios de periféricos cuando se requieran. Evalúe picos y almacenamiento además del consumo medio."
+    },
+    {
+      "title": "Comunicaciones y antenas",
+      "text": "Evalúe radio o interfaz cableada elegidas, región e instalación de antena. Adapte envolvente, cables y alimentación al diseño de comunicaciones."
+    },
+    {
+      "title": "Interfaces mecánicas y de proceso",
+      "text": "Defina dimensiones, montaje, acceso, conectores y entradas de cables. Para procesos, incluya materiales mojados, límites de presión, inserción de sonda y aislamiento térmico."
+    },
+    {
+      "title": "Verificación ambiental",
+      "text": "Convierta la exposición en requisitos de prueba del dispositivo montado. Los objetivos de temperatura, ingreso, corrosión, impacto y EMC necesitan diseño y evidencias adecuados."
+    },
+    {
+      "title": "Pruebas de prototipo y producción",
+      "text": "Separe demostración funcional, verificación de diseño y aceptación de producción. Incluya puntos de prueba, programación, útiles y límites trazables en el alcance acordado."
+    },
+    {
+      "title": "Suministro y transferencia de ingeniería",
+      "text": "Revise disponibilidad, sustituciones y control de revisiones. Acuerde archivos CAD y de fabricación, lista de materiales, derechos del utillaje, documentación de pruebas y suministro posterior."
+    }
+  ],
+  "planningTitle": "Aclare las condiciones.\nAntes de seleccionar componentes.",
+  "planningIntro": "Unos requisitos útiles de hardware identifican los resultados necesarios y las condiciones en que se verificarán.",
+  "planning": [
+    {
+      "title": "Defina el uso y las limitaciones",
+      "text": "Documente las magnitudes monitorizadas, la instalación, la alimentación, el entorno y los requisitos regionales de despliegue.",
+      "brief": "Mediciones · Instalación · Alimentación · Mercados de destino"
+    },
+    {
+      "title": "Evalúe la arquitectura y la viabilidad",
+      "text": "Revise la disponibilidad de componentes, las interfaces, el enfoque de carcasa y los riesgos de desarrollo antes de confirmar el alcance del diseño.",
+      "brief": "Selección de sensores · Electrónica · Conectividad · Interfaces mecánicas"
+    },
+    {
+      "title": "Acuerde la verificación y el alcance de producción",
+      "text": "Distinga los prototipos de ingeniería de la cualificación, la certificación, los utillajes y el suministro en serie.",
+      "brief": "Pruebas de prototipo · Aprobaciones externas · Archivos de producción · Condiciones de suministro"
+    }
+  ],
+  "applicationsTitle": "Un documento de requisitos de hardware.\nPara cada necesidad física.",
+  "applicationsIntro": "Estos ejemplos describen posibles alcances de ingeniería, no opciones estándar ni instalaciones de clientes realizadas. Cada uno vincula un uso físico con entradas, resultados propuestos y evidencias de verificación. La viabilidad y las especificaciones suministradas se establecen para la configuración final.",
+  "groups": [
+    {
+      "id": "temperature",
+      "title": "Sondas de temperatura y registradores",
+      "intro": "Adapte el conjunto sensor a la superficie, medio y manipulación monitorizados.",
+      "imageKey": "refrigerated-logistics",
+      "imageAlt": "Camión frigorífico en un muelle de carga",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Sondas externas y remotas",
+          "description": "Sitúe el elemento sensor donde se necesita medir y la electrónica donde corresponda.",
+          "inputs": "Régimen térmico, medio, recorrido del cable y espacio de montaje.",
+          "deliverables": "Diseño de sonda, conector y cable dentro de la arquitectura elegida.",
+          "acceptance": "Compare respuesta y lecturas en las condiciones operativas acordadas.",
+          "considerations": "Deben indicarse por separado rango de sonda y rango ambiental de electrónica."
+        },
+        {
+          "title": "Medidas en superficies y tuberías",
+          "description": "Evalúe un conjunto de contacto para instalaciones que mantienen intacto el límite del proceso.",
+          "inputs": "Material superficial, temperatura, acceso y fijación permitida.",
+          "deliverables": "Geometría de contacto, concepto de montaje y alivio de tensión del cable.",
+          "acceptance": "Evalúe repetibilidad del contacto frente al método de referencia elegido.",
+          "considerations": "El contacto térmico y el ambiente afectan al resultado."
+        },
+        {
+          "title": "Registradores compactos y pantallas locales",
+          "description": "Adapte envolvente e interfaz de usuario al flujo de manipulación requerido.",
+          "inputs": "Dimensiones, contenido de pantalla, acceso de servicio y entorno de almacenamiento.",
+          "deliverables": "Distribución mecánica y selección de componentes e interfaces.",
+          "acceptance": "Compruebe ajuste, legibilidad y acceso en prototipos representativos.",
+          "considerations": "Registro, pantalla y exportaciones necesitan el alcance de firmware correspondiente."
+        }
+      ]
+    },
+    {
+      "id": "tilt",
+      "title": "Dispositivos de inclinación para estanterías, postes y estructuras",
+      "intro": "Diseñe una referencia mecánica repetible y una instalación inspeccionable.",
+      "imageKey": "warehouse-aisle",
+      "imageAlt": "Pasillo de almacén con estanterías y mercancías almacenadas",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Montaje en estanterías y equipos",
+          "description": "Adapte fijaciones a la estructura monitorizada y al espacio disponible.",
+          "inputs": "Geometría superficial, orientación, acceso y fijación permitida.",
+          "deliverables": "Soporte o interfaz de montaje con plano de instalación.",
+          "acceptance": "Compruebe ajuste, repetibilidad de orientación y retención frente a cargas acordadas.",
+          "considerations": "El diseño de fijación no acredita aptitud estructural del activo monitorizado."
+        },
+        {
+          "title": "Conjuntos exteriores de poste y envolvente",
+          "description": "Coordine sellado, antena y acceso de instalación.",
+          "inputs": "Geometría de poste, exposición, trayecto de radio y mantenimiento.",
+          "deliverables": "Concepto del conjunto de montaje, conectores y envolvente.",
+          "acceptance": "Verifique ajuste montado y pruebas ambientales especificadas.",
+          "considerations": "La protección de una envolvente no cubre automáticamente toda la instalación."
+        },
+        {
+          "title": "Configuraciones de medida multieje",
+          "description": "Seleccione elemento sensor y convención física de ejes según la aplicación.",
+          "inputs": "Rango angular, referencias de ejes y condiciones de rendimiento pertinentes.",
+          "deliverables": "Selección de sensor/interfaz y orientación documentada.",
+          "acceptance": "Compare posiciones especificadas con la disposición de referencia acordada.",
+          "considerations": "Resolución, exactitud, deriva y alineación instalada son propiedades distintas."
+        }
+      ]
+    },
+    {
+      "id": "vibration",
+      "title": "Hardware de vibración y estado de máquinas",
+      "intro": "Conserve el trayecto mecánico y eléctrico entre movimiento de máquina y dato registrado.",
+      "imageKey": "manufacturing-floor",
+      "imageAlt": "Máquina de moldeo por inyección en una zona de fabricación ordenada",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Conjuntos sensores montados en máquinas",
+          "description": "Desarrolle una fijación adecuada para el alojamiento de rodamiento o superficie monitorizados.",
+          "inputs": "Punto de montaje, banda de vibración, masa y restricciones ambientales.",
+          "deliverables": "Conjunto sensor, fijación y concepto de instalación.",
+          "acceptance": "Evalúe respuesta y repetibilidad con el útil especificado.",
+          "considerations": "La resonancia y el acoplamiento del montaje pueden limitar el ancho de banda útil."
+        },
+        {
+          "title": "Electrónica de adquisición",
+          "description": "Defina interfaces y adquisición según el ancho de banda requerido.",
+          "inputs": "Salida del sensor, ancho de banda, ruido e interfaz de procesamiento.",
+          "deliverables": "Arquitectura de señal, interfaces PCB y selección de componentes.",
+          "acceptance": "Mida ruido y adquisición en condiciones de prueba definidas.",
+          "considerations": "La capacidad de muestreo no acredita la exactitud integral de medida."
+        },
+        {
+          "title": "Disposiciones de sonda y terminal separados",
+          "description": "Ubique componentes de medida y comunicación según acceso y exposición.",
+          "inputs": "Longitud y recorrido del cable, espacio de máquina y ubicación electrónica.",
+          "deliverables": "Disposición de sonda/terminal con selección de cables y conectores.",
+          "acceptance": "Pruebe efectos del cable, continuidad y ajuste de instalación.",
+          "considerations": "Construcción, apantallamiento y fijación del cable forman parte del conjunto verificado."
+        }
+      ]
+    },
+    {
+      "id": "air-gas",
+      "title": "Plataformas de instrumentos de aire y gases",
+      "intro": "Aborde la interacción entre exposición del sensor, envolvente y demanda eléctrica.",
+      "imageKey": "office-air",
+      "imageAlt": "Sala de reuniones iluminada con ventanas y ventilación en el techo",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Terminales interiores multisensor",
+          "description": "Distribuya módulos ambientales, de partículas y gases según muestreo y mantenimiento.",
+          "inputs": "Canales, dimensiones de módulos, flujo de aire e interfaz de usuario.",
+          "deliverables": "Distribución mecánica, interfaces sensoras y arquitectura de alimentación.",
+          "acceptance": "Compruebe ajuste, recorridos de aire y operación de canales en prototipos.",
+          "considerations": "La sensibilidad cruzada y el mantenimiento específico siguen siendo requisitos de selección."
+        },
+        {
+          "title": "Envolventes para muestreo exterior",
+          "description": "Separe la protección electrónica de la exposición que necesita el sensor.",
+          "inputs": "Condiciones de lluvia, polvo, aire, entrada y mantenimiento.",
+          "deliverables": "Concepto de envolvente, entrada y acceso de servicio.",
+          "acceptance": "Evalúe el diseño montado mediante pruebas acordadas de exposición y respuesta.",
+          "considerations": "Un terminal sellado no implica un trayecto de muestreo de aire sellado."
+        },
+        {
+          "title": "Interfaces de muestreo de gases industriales",
+          "description": "Evalúe la interfaz del instrumento con el gas muestreado y la instalación especificados.",
+          "inputs": "Composición, presión y temperatura del gas, método de muestreo y clasificación del área.",
+          "deliverables": "Alcance de diseño de materiales, conexiones e interfaz de sensor.",
+          "acceptance": "Verifique las condiciones mecánicas, eléctricas y de muestreo acordadas.",
+          "considerations": "Las aprobaciones de proceso y áreas peligrosas solo se aplican a un conjunto final documentado."
+        }
+      ]
+    },
+    {
+      "id": "pressure",
+      "title": "Transmisores de presión e interfaces de proceso",
+      "intro": "Trate elemento sensor, límite de presión y compatibilidad del medio como una sola especificación.",
+      "imageKey": "gas-regulation",
+      "imageAlt": "Skid exterior de regulación de gas combustible con reguladores de diafragma, tuberías amarillas y pequeñas derivaciones de instrumentación.",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Conexiones de proceso seleccionadas",
+          "description": "Adapte la conexión de medida al equipo de proceso especificado.",
+          "inputs": "Régimen de presión, referencia de rosca/brida y materiales mojados.",
+          "deliverables": "Especificación de conexión y conjunto sensor.",
+          "acceptance": "Verifique dimensiones y condiciones de prueba de presión acordadas.",
+          "considerations": "La compatibilidad mecánica y presión permitida deben establecerse para el conjunto completo."
+        },
+        {
+          "title": "Ubicación de electrónica remota",
+          "description": "Evalúe separación entre la medida del proceso y el terminal de comunicación.",
+          "inputs": "Calor de proceso, recorrido del cable, acceso y límites ambientales electrónicos.",
+          "deliverables": "Disposición sonda/terminal y concepto de separación térmica.",
+          "acceptance": "Mida temperaturas pertinentes y verifique funcionamiento de señales.",
+          "considerations": "La temperatura del medio medido no debe aplicarse a la envolvente electrónica."
+        },
+        {
+          "title": "Terminales de proceso multiparámetro",
+          "description": "Combine interfaces de sensores seleccionados dentro de unas dimensiones de instalación definidas.",
+          "inputs": "Variables, interfaces, montaje y acceso de mantenimiento.",
+          "deliverables": "Arquitectura de canales y conectores con distribución mecánica.",
+          "acceptance": "Compruebe operación de canales e interacción entre interfaces en prototipos.",
+          "considerations": "Compartir electrónica no garantiza ubicaciones ni tiempos de respuesta idénticos."
+        }
+      ]
+    },
+    {
+      "id": "level-water",
+      "title": "Hardware de nivel, distancia y fugas de agua",
+      "intro": "Elija geometría de medida e interfaz de instalación antes de seleccionar solo la envolvente.",
+      "imageKey": "treatment-manifold",
+      "imageAlt": "Recipientes de tratamiento de agua y tuberías de proceso conectadas",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Soportes para medida sin contacto",
+          "description": "Adapte el montaje al campo sensor y a la geometría de instalación.",
+          "inputs": "Trayecto de medida, obstáculos, objetivo y dimensiones de montaje.",
+          "deliverables": "Concepto de montaje y distribución de envolvente e interfaces.",
+          "acceptance": "Compruebe ajuste mecánico y lecturas en posiciones de referencia acordadas.",
+          "considerations": "Geometría del haz, propiedades del objetivo e influencia ambiental dependen del sensor."
+        },
+        {
+          "title": "Sondas sumergidas o en contacto con el medio",
+          "description": "Especifique cables, sellado y materiales expuestos al medio.",
+          "inputs": "Medio, profundidad/exposición, recorrido del cable y método de servicio.",
+          "deliverables": "Conjunto de sonda/cable y requisitos de sellado.",
+          "acceptance": "Realice las comprobaciones especificadas de fugas, ingreso y funcionamiento.",
+          "considerations": "Todo requisito de inmersión debe incluir profundidad, duración y compatibilidad del medio."
+        },
+        {
+          "title": "Accesorios de detección de fugas",
+          "description": "Adapte interfaces de detección puntual o por cable a la ubicación monitorizada.",
+          "inputs": "Superficie de detección, líquido, conector y restricciones de recorrido de cable.",
+          "deliverables": "Interfaz de sonda/accesorio y disposición de instalación.",
+          "acceptance": "Pruebe estados mojado, seco, desconectado y recuperación.",
+          "considerations": "El comportamiento también depende del principio sensor y firmware seleccionados."
+        }
+      ]
+    },
+    {
+      "id": "tracking",
+      "title": "Envolventes de localizadores y dispositivos móviles",
+      "intro": "Equilibre exposición de antena, fijación y mantenimiento del activo localizado.",
+      "imageKey": "container-terminal",
+      "imageAlt": "Contenedores apilados en una terminal portuaria costera",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Fijación específica del activo",
+          "description": "Adapte la fijación a contenedores, equipos o activos de transporte retornables.",
+          "inputs": "Geometría, fijaciones permitidas, impactos y acceso del activo.",
+          "deliverables": "Interfaz de montaje y concepto de retención mecánica.",
+          "acceptance": "Verifique ajuste y pruebas acordadas de manipulación o retención.",
+          "considerations": "La instalación no debe dañar el activo ni exponer a personas a piezas sueltas."
+        },
+        {
+          "title": "Integración de posicionamiento y radio",
+          "description": "Distribuya componentes de posicionamiento y comunicaciones dentro del diseño físico.",
+          "inputs": "Mercados objetivo, antenas, materiales de envolvente y orientación instalada.",
+          "deliverables": "Alcance de distribución RF e integración de antena.",
+          "acceptance": "Evalúe recepción instalada y operación de radio representativas.",
+          "considerations": "No se implica exactitud de posicionamiento ni cobertura sin una base de prueba definida."
+        },
+        {
+          "title": "Acceso de servicio y energía",
+          "description": "Elija batería, carga o servicio sellado según el patrón de uso.",
+          "inputs": "Intervalo de servicio, alimentación, manipulación y requisitos de sellado.",
+          "deliverables": "Integración física de alimentación y diseño de acceso.",
+          "acceptance": "Compruebe picos de consumo, carga cuando se incluya y montaje tras el servicio.",
+          "considerations": "Autonomía y protección dependen del perfil final verificado de operación."
+        }
+      ]
+    },
+    {
+      "id": "weather-soil",
+      "title": "Equipos meteorológicos y agrícolas de campo",
+      "intro": "Diseñe interfaces modulares de sensores e instalación para puntos expuestos.",
+      "imageKey": "agriculture",
+      "imageAlt": "Entorno de cultivo agrícola",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Conexiones de sensores configurables",
+          "description": "Integre sondas exteriores seleccionadas en un terminal mantenible.",
+          "inputs": "Lista de sondas, interfaces eléctricas, cables y demanda de alimentación.",
+          "deliverables": "Arquitectura de conectores/canales con identificación y soporte de cables.",
+          "acceptance": "Compruebe cada sonda y conexión configuradas en el prototipo.",
+          "considerations": "La exposición del sensor y protección del terminal deben tratarse por separado."
+        },
+        {
+          "title": "Sondas para suelo y zonas de cultivo",
+          "description": "Adapte mecánica y cables de sondas al medio y la instalación monitorizados.",
+          "inputs": "Suelo o sustrato, inserción, limpieza y recorrido de cable.",
+          "deliverables": "Concepto de sonda/interfaz e instalación.",
+          "acceptance": "Verifique ajuste, sellado y comportamiento representativo de medida.",
+          "considerations": "Adaptar la envolvente no resuelve contacto con suelo ni variabilidad local."
+        },
+        {
+          "title": "Conjuntos de mástil y servicio",
+          "description": "Coordine montaje del terminal, accesorios y acceso según las posiciones de sensores.",
+          "inputs": "Dimensiones del mástil, posiciones de sensores y acceso de mantenimiento.",
+          "deliverables": "Soportes, recorrido de cables y distribución de servicio.",
+          "acceptance": "Complete un montaje representativo y una comprobación de acceso de servicio.",
+          "considerations": "La resistencia del mástil y obras civiles requieren responsabilidad de ingeniería definida por separado."
+        }
+      ]
+    },
+    {
+      "id": "collectors",
+      "title": "Pasarelas y concentradores de interfaces de campo",
+      "intro": "Adapte interfaces eléctricas, aislamiento y antenas a los equipos conectados.",
+      "imageKey": "telecom-site",
+      "imageAlt": "Emplazamiento de comunicaciones exterior remoto con armarios cerrados y accesos de servicio",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Ampliación de E/S de campo",
+          "description": "Añada interfaces analógicas, de pulsos o discretas seleccionadas a una plataforma evaluada.",
+          "inputs": "Tipo de señal, niveles de tensión/corriente y requisitos de canales.",
+          "deliverables": "Circuitos de interfaz y arquitectura de conectores.",
+          "acceptance": "Aplique entradas conocidas y condiciones eléctricas límite pertinentes.",
+          "considerations": "Añadir canales puede cambiar requisitos de alimentación, envolvente y EMC."
+        },
+        {
+          "title": "Interfaces cableadas de equipos",
+          "description": "Defina conexiones serie o industriales según la instalación real.",
+          "inputs": "Hardware de protocolo, longitudes de cables, tierra y aislamiento.",
+          "deliverables": "Diseño de interfaz física y protección.",
+          "acceptance": "Verifique funcionamiento eléctrico con equipos conectados representativos.",
+          "considerations": "Software de protocolo y correspondencia semántica son trabajos independientes y coordinados."
+        },
+        {
+          "title": "Variantes de radio y conexión de retorno",
+          "description": "Evalúe módem o radio seleccionados según región y montaje previstos.",
+          "inputs": "Tecnología de red, bandas, recorrido de antena y requisitos del operador.",
+          "deliverables": "Alcance de integración de módulo, antena y alimentación.",
+          "acceptance": "Pruebe conectividad y comportamiento de alimentación representativos.",
+          "considerations": "Aprobar un módulo no certifica automáticamente la pasarela terminada."
+        }
+      ]
+    },
+    {
+      "id": "remote-power",
+      "title": "Terminales remotos solares y con alimentación externa",
+      "intro": "Diseñe la alimentación para cargas medidas, energía disponible y exposición instalada.",
+      "imageKey": "solar",
+      "imageAlt": "Instalación de energía solar exterior",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Integración solar y almacenamiento",
+          "description": "Dimensione la arquitectura según un emplazamiento y perfil de trabajo declarados.",
+          "inputs": "Recurso solar, cargas de sensores, picos de comunicaciones y objetivo de autonomía.",
+          "deliverables": "Especificación de interfaces y protección de panel, almacenamiento y carga.",
+          "acceptance": "Evalúe flujo energético y límites operativos en condiciones acordadas.",
+          "considerations": "No se promete autonomía sin supervisión sin una evaluación energética completa."
+        },
+        {
+          "title": "Interfaces industriales de alimentación CC",
+          "description": "Adapte entrada externa y protección a la fuente del emplazamiento.",
+          "inputs": "Alimentación nominal, tolerancias, transitorios, tierra y conectores.",
+          "deliverables": "Diseño de etapa de entrada y dominios de alimentación.",
+          "acceptance": "Pruebe límites de alimentación y recuperación acordados.",
+          "considerations": "Los requisitos de transitorios y EMC deben incluirse explícitamente en la verificación."
+        },
+        {
+          "title": "Dominios de alimentación conmutada de sensores",
+          "description": "Proporcione fuentes controladas para sondas con distintas necesidades.",
+          "inputs": "Tensión/corriente, calentamiento y conmutación de sondas.",
+          "deliverables": "Arquitectura de dominios e interfaces de control de hardware.",
+          "acceptance": "Mida secuenciación, demanda máxima y fugas en apagado.",
+          "considerations": "La temporización del firmware debe coordinarse con el diseño final de alimentación."
+        }
+      ]
+    },
+    {
+      "id": "equipment-interfaces",
+      "title": "Controladores de equipos e interfaces de actuadores",
+      "intro": "Separe la electrónica de monitorización de las funciones propuestas de órdenes o control.",
+      "imageKey": "compressed-air",
+      "imageAlt": "Compresor industrial y depósito de aire comprimido",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Placas de modernización de monitorización",
+          "description": "Adapte una interfaz de sensores/datos sin cambiar la función de control del equipo.",
+          "inputs": "Circuito existente, conexiones permitidas y documentación del equipo.",
+          "deliverables": "Interfaz de monitorización y método de instalación definidos.",
+          "acceptance": "Verifique interacción con estados operativos representativos del equipo.",
+          "considerations": "La modificación debe respetar requisitos del fabricante y propietario del equipo."
+        },
+        {
+          "title": "Evaluación de interfaces de actuadores",
+          "description": "Evalúe una etapa de salida seleccionada cuando se solicite expresamente una función de órdenes.",
+          "inputs": "Carga, alimentación, conmutación y requisitos de aislamiento.",
+          "deliverables": "Diseño de etapa de salida y límites eléctricos definidos.",
+          "acceptance": "Pruebe cargas representativas y condiciones de fallo acordadas.",
+          "considerations": "La actuación relacionada con seguridad requiere arquitectura de control evaluada por separado."
+        },
+        {
+          "title": "Accesorios de estado de equipos",
+          "description": "Proporcione conexiones compatibles para interruptores, realimentación o indicadores de servicio.",
+          "inputs": "Niveles de señal, acceso a conectores y estados normal/fallo.",
+          "deliverables": "Circuito de accesorio/interfaz y disposición mecánica.",
+          "acceptance": "Pruebe estados eléctricos y fallos de conexión.",
+          "considerations": "Un indicador de estado no acredita que un proceso sea seguro o esté completado."
+        }
+      ]
+    },
+    {
+      "id": "oem-production",
+      "title": "Industrialización OEM y transferencia a fabricación",
+      "intro": "Convierta un diseño evaluado en una configuración trazable que pueda fabricarse y probarse.",
+      "imageKey": "smt-production",
+      "imageAlt": "Máquinas SMT de colocación de componentes en una línea de montaje electrónico",
+      "imageCaption": "Entorno de aplicación representativo. El alcance y la idoneidad se definen para la instalación.",
+      "tasks": [
+        {
+          "title": "Adaptaciones de envolvente y marca",
+          "description": "Defina cambios de etiqueta, color, conectores o montaje sobre una plataforma evaluada.",
+          "inputs": "Archivos de marca, restricciones dimensionales y funciones conservadas.",
+          "deliverables": "Revisión controlada de mecánica e identificación.",
+          "acceptance": "Compruebe montaje, marcados y pruebas de rendimiento afectadas.",
+          "considerations": "Un cambio aparentemente estético puede afectar a antenas, sellado o aprobaciones."
+        },
+        {
+          "title": "Preparación para pruebas de producción",
+          "description": "Diseñe accesos para programación, calibración y controles finales acordados.",
+          "inputs": "Flujo de producción, límites, necesidades de ciclo y trazabilidad.",
+          "deliverables": "Puntos de prueba, interfaces de útiles y documentación de ensayos de fabricación.",
+          "acceptance": "Pruebe unidades representativas y fallos definidos mediante las comprobaciones propuestas.",
+          "considerations": "La cobertura de pruebas y responsabilidades de calibración se asignan explícitamente."
+        },
+        {
+          "title": "Transferencia de diseño y suministro",
+          "description": "Documente piezas, revisiones y archivos necesarios para la vía de producción acordada.",
+          "inputs": "Vía de fabricación, componentes aprobados y requisitos de titularidad.",
+          "deliverables": "Archivos CAD/fabricación contratados, lista de materiales y registros de revisión.",
+          "acceptance": "Revise integridad de la versión y fabrique una configuración piloto controlada.",
+          "considerations": "Utillaje, titularidad de archivos, sustituciones y soporte de ciclo de vida siguen términos escritos."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Alcance de ingeniería.\nDefinido por el proyecto.",
+  "scopeIntro": "Estos aspectos describen el acuerdo de desarrollo, no especificaciones universales de producto.",
+  "rows": [
+    [
+      "Tipo de servicio",
+      "Diseño de hardware de dispositivo a medida o adaptación acordada"
+    ],
+    [
+      "Requisitos de medición",
+      "Magnitudes, rangos, condiciones de precisión y necesidades de calibración"
+    ],
+    [
+      "Arquitectura eléctrica",
+      "Entrada de alimentación, interfaces de adquisición, procesador y conexiones externas"
+    ],
+    [
+      "Comunicación",
+      "Tecnología seleccionada, requisitos regionales y alcance de integración"
+    ],
+    [
+      "Alcance mecánico",
+      "Carcasa, montaje, conectores y limitaciones de instalación"
+    ],
+    [
+      "Fase de prototipo",
+      "Cantidades, alcance del montaje y pruebas de aceptación funcional"
+    ],
+    [
+      "Cualificación",
+      "Verificación ambiental, EMC u otras acordadas; evaluación externa identificada por separado"
+    ],
+    [
+      "Certificación",
+      "Mercado de destino y normas aplicables revisados; no se presupone un certificado sin evidencias"
+    ],
+    [
+      "Entregables de ingeniería",
+      "Archivos de diseño, lista de materiales y documentos de montaje y prueba según contrato"
+    ],
+    [
+      "Producción y derechos",
+      "Utillajes, fabricación, archivos fuente, titularidad y soporte acordados por escrito"
+    ]
+  ],
+  "handoverTitle": "De la revisión de viabilidad.\nA una base documentada.",
+  "handoverIntro": "Defina las evidencias de diseño y la siguiente decisión de producción en cada fase.",
+  "handover": [
+    {
+      "title": "Requisitos y viabilidad",
+      "text": "Revise las limitaciones, las interfaces y los riesgos técnicos antes de confirmar el alcance de desarrollo."
+    },
+    {
+      "title": "Diseño y prototipo",
+      "text": "Desarrolle el diseño acordado y evalúe los prototipos según las condiciones de aceptación documentadas."
+    },
+    {
+      "title": "Entrega o transición a producción",
+      "text": "Entregue los archivos de ingeniería y la información de pruebas contratados. Acuerde por separado cualquier trabajo posterior de cualificación, utillaje o fabricación."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "¿Qué puede adaptarse en una plataforma Hitelecom existente?",
+      "a": "Parta de los canales de medida, interfaces, alimentación, antena, envolvente y montaje necesarios. La evaluación identifica la base reutilizable, los cambios electrónicos o mecánicos y la verificación afectada por la modificación."
+    },
+    {
+      "q": "¿Cuándo conviene un diseño nuevo en lugar de adaptar?",
+      "a": "Puede convenir si una base adecuada no satisface la cadena de medida, interfaces, alimentación o restricciones mecánicas. Se revisan arquitectura, esfuerzo de desarrollo y producción antes de elegir."
+    },
+    {
+      "q": "¿Cómo debe especificarse la exactitud de medida?",
+      "a": "Indique magnitud, rango de trabajo, condiciones de referencia, error permitido y respuesta. Evalúe conjuntamente sensor, cadena de señal, sonda, instalación y calibración; resolución digital y exactitud instalada no son lo mismo."
+    },
+    {
+      "q": "¿Puede utilizarse la electrónica a la temperatura de medida de la sonda?",
+      "a": "No automáticamente. Temperatura de sonda/medio y límites ambientales electrónicos son independientes. Cables, sellos, montaje y aislamiento deben ser adecuados; el conjunto suministrado define los límites aplicables."
+    },
+    {
+      "q": "¿Puede solicitarse protección exterior o de inmersión?",
+      "a": "Sí, como requisito de ingeniería con exposición y pruebas definidas. Dispositivo montado, conectores y entradas deben respaldar la protección declarada; no basta la clasificación de una envolvente aislada."
+    },
+    {
+      "q": "¿Puede utilizarse conectividad celular, NB-IoT o LoRa?",
+      "a": "Se evalúa según mercado, red disponible, antena y presupuesto energético. Se especifican bandas, módulos, firmware y vía receptora exactos. LoRa no significa automáticamente LoRaWAN."
+    },
+    {
+      "q": "¿Un módulo de radio precertificado aprueba el producto terminado?",
+      "a": "No se implica aprobación general. Integración, antenas, alimentación, envolvente y jurisdicción pueden exigir evaluaciones adicionales. Las pruebas y responsabilidades de certificación se acuerdan para la configuración final."
+    },
+    {
+      "q": "¿Se incluyen diseños y certificados para atmósferas potencialmente explosivas?",
+      "a": "Solo un alcance evaluado explícitamente puede abordar mercado, clasificación del área y concepto de protección. No debe presentarse el producto como aprobado hasta que documentación adecuada cubra configuración e instalación exactas."
+    },
+    {
+      "q": "¿Un prototipo funcional significa que está listo para producción?",
+      "a": "El prototipo demuestra funciones acordadas. La liberación a producción puede necesitar además verificación, suministro, pruebas de fabricación, utillaje, cualificación y evidencias de aprobación. Son hitos distintos con criterios propios."
+    },
+    {
+      "q": "¿Se incluyen firmware, nube y desarrollo de aplicaciones?",
+      "a": "Solo cuando figuren en el alcance del proyecto. Las interfaces de hardware deben coordinarse con firmware y plataforma receptora, manteniendo explícitos entregables y responsabilidades de ingeniería."
+    },
+    {
+      "q": "¿Quién recibe archivos CAD, lista de materiales y utillaje?",
+      "a": "Entrega, acceso, titularidad del diseño y utillaje, y reutilización permitida se definen en el acuerdo. Componentes y propiedad intelectual de terceros mantienen sus licencias y condiciones comerciales."
+    },
+    {
+      "q": "¿Por qué no hay ficha, precio o plazo de desarrollo estándar?",
+      "a": "Es un servicio específico de proyecto. Requisitos, cantidades de prototipos, verificación, utillaje, aprobaciones y producción determinan presupuesto y calendario. La ficha de producto sigue a un diseño definido y especificación respaldada."
+    }
+  ],
+  "enquiryIntro": "Comparta las funciones del dispositivo, las condiciones de instalación y los mercados previstos. Incluya requisitos de interfaces, cantidades estimadas y cualquier material de diseño existente para revisar la viabilidad.",
+  "enquiryFields": [
+    {
+      "label": "Dispositivo y mediciones",
+      "placeholder": "Magnitudes, rangos, precisión y funciones requeridos"
+    },
+    {
+      "label": "Instalación y alimentación",
+      "placeholder": "Ubicación, suministro, montaje y condiciones ambientales"
+    },
+    {
+      "label": "Interfaces y mercados",
+      "placeholder": "Comunicación, conexiones de proceso y países de destino"
+    },
+    {
+      "label": "Requisitos de entrega",
+      "placeholder": "Cantidad de prototipos, plan de producción, derechos de diseño y verificación"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-hardware-customization.webp",
+  "imageWidth": 500,
+  "imageHeight": 1328
+}

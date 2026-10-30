@@ -1,0 +1,630 @@
+{
+  "id": "gis-dashboard",
+  "slug": "gis-dashboard-development",
+  "kind": "Service",
+  "name": "Entwicklung von GIS-Dashboards",
+  "title": "Individuelle GIS-Dashboards | IoT-Karten und Ansichten verteilter Anlagen | Hitelecom",
+  "metaDescription": "Individuelle GIS-Dashboards für verteilte Anlagen und IoT-Überwachung. Definieren Sie Kartenebenen, Positionsquellen, Ereignisabläufe und Plattformintegration für Ihren Betrieb.",
+  "heroHeading": "GIS-Dashboard-\nEntwicklung.",
+  "heroValue": "Geografischer Kontext.\nFür vernetzte Betriebsabläufe.",
+  "heroDescription": "Geben Sie verteilten Anlagen und Überwachungsereignissen einen gemeinsamen geografischen Kontext. Hitelecom definiert individuelle GIS-Dashboards anhand Ihres Standortregisters, Ihrer Positionsquellen und Betriebsabläufe: relevanten Punkt finden, hochgeladene Daten prüfen, Ereignishistorie ansehen und den Datensatz an das zuständige Team übergeben. Eine vereinbarte Hitelecom-Cloud- oder Kundenplattformintegration kann Online-Überwachungsdaten und konfigurierte Schwellenwertbenachrichtigungen liefern. Kartenfunktionen, Datenquellen und Zugriff werden projektspezifisch festgelegt.",
+  "caption": "Entwicklung von GIS-Dashboards",
+  "imageAlt": "Entwicklung von GIS-Dashboards",
+  "proof": [
+    {
+      "value": "Karten",
+      "label": "Vereinbarter geografischer Kontext",
+      "note": "Layer, Koordinaten und Nutzungsrechte spezifizieren"
+    },
+    {
+      "value": "Daten",
+      "label": "Standortbezogene Datensätze",
+      "note": "Kennungen, Zeitstempel und Qualität zuordnen"
+    },
+    {
+      "value": "Arbeitsablauf",
+      "label": "Definierte Bedienhandlungen",
+      "note": "Filter, Rollen und Ereignisverarbeitung vereinbaren"
+    }
+  ],
+  "featureTitle": "Eine betriebliche Karte.\nMit definiertem Datenmodell.",
+  "featureIntro": "Eine nützliche Betriebskarte verbindet geografische Position mit verlässlichen Datensätzen und einem klaren nächsten Schritt. Definieren Sie Ebenen und Interaktionen passend zum Nutzerteam, von der Leitstellenübersicht bis zum mobilen Standortbesuch.",
+  "features": [
+    {
+      "title": "Betriebliche Anlagenebenen",
+      "text": "Strukturieren Sie Einrichtungen, Geräte, Messpunkte und definierte Betriebsbereiche als getrennte Ebenen. Stabile Anlagenkennungen sorgen dafür, dass eine Kartenauswahl den richtigen Quelldatensatz und zugehörige Messwerte öffnet."
+    },
+    {
+      "title": "Koordinaten und Positionsqualität",
+      "text": "Dokumentieren Sie Koordinatenreferenzsysteme, Positionsquellen, Aktualisierungszeitstempel und verfügbare Qualitätsindikatoren. Vermessene, geschätzte und zuletzt gemeldete mobile Positionen bleiben unterscheidbar."
+    },
+    {
+      "title": "Verknüpfte Messwerte und Historie",
+      "text": "Wählen Sie einen Punkt für verfügbare Messwerte, Einheiten, Zeitstempel und Historien. Binden Sie Hitelecom Cloud oder eine vereinbarte Kundenquelle über dokumentierte Kennungen und berechtigte Schnittstellen an."
+    },
+    {
+      "title": "Suche, Filter und Kartenübersichten",
+      "text": "Definieren Sie Anlagensuche, Statusfilter, Ebenensteuerung und geografische Zusammenfassungen. Legen Sie fest, wie Filter Kartensymbole, Listen und Zählwerte ändern, damit das Dashboard denselben Datensatzumfang zeigt."
+    },
+    {
+      "title": "Ereignisse im geografischen Kontext",
+      "text": "Ordnen Sie empfangene Schwellenwertalarme und andere vereinbarte Ereignisse dem zugeordneten Objekt oder Ort zu. Unterscheiden Sie aktive, quittierte und historische Ereignisse gemäß Quellablauf und Benutzerrolle."
+    },
+    {
+      "title": "Spuren und gebietsbezogene Regeln",
+      "text": "Definieren Sie bei geeigneten Positionsdaten Spuransichten, Gebietsein-/austritte oder Näheprüfungen. Legen Sie Positionsunsicherheit, Grenzverhalten und Ereigniszeit fest; diese Funktionen verbessern nicht die zugrunde liegende Positionsgenauigkeit."
+    },
+    {
+      "title": "Feld- und Leitstellenabläufe",
+      "text": "Passen Sie Kartenauswahl, Detailansichten und Datensatzübergabe an Desktop- oder Mobilnutzung an. Eine mobile Ansicht kann Standortinformationen und Inspektionslinks priorisieren statt sämtliche Leitstellenansichten zu wiederholen."
+    },
+    {
+      "title": "Bereitstellung, Lizenzierung und Zugriff",
+      "text": "Spezifizieren Sie Kartendienst, Kachel-/Datenrechte, Hosting, Authentifizierung und Berechtigungsgrenzen. Vereinbaren Sie API-Nutzung, Datenaufbewahrung, Quellcodeübergabe und Drittkosten vor der Umsetzung."
+    }
+  ],
+  "planningTitle": "Bei Koordinaten beginnen.\nZu klaren Entscheidungen kommen.",
+  "planningIntro": "Kartendarstellung, Dateninterpretation und Betriebsverantwortlichkeiten sollten gemeinsam festgelegt werden.",
+  "planning": [
+    {
+      "title": "Betriebsgeografie definieren",
+      "text": "Nennen Sie die zu unterstützenden Bereiche, Anlagen und Nutzer. Prüfen Sie Koordinaten, Grenzdaten und Positionsqualität vor Auswahl von Basiskarte und Betriebsebenen.",
+      "brief": "Abdeckung · Koordinatenreferenz · Anlagenregister · Positionsqualität · Kartenrechte"
+    },
+    {
+      "title": "Daten- und Ereignisvertrag definieren",
+      "text": "Prüfen Sie Beispieldaten auf Anlagenidentität, Messwerte, Zeitstempel, Qualität, Ereignisstatus und Historie. Definieren Sie Behandlung fehlender, doppelter, verspäteter und umsortierter Datensätze.",
+      "brief": "API-Beispiele · Kennungszuordnung · Zeitsemantik · Ereigniszustände · Aufbewahrung"
+    },
+    {
+      "title": "Kartenablauf prüfen",
+      "text": "Wählen Sie repräsentative Standorte, Ereignisse, Berechtigungen und mobile Aufgaben. Vereinbaren Sie Karten-, Listen-, Zähl- und Übergabeverhalten für diesen Datensatz und die Zielgeräte.",
+      "brief": "Nutzerszenarien · Ebenenregeln · Zielgeräte · Abnahmedatensatz · Übergabe"
+    }
+  ],
+  "applicationsTitle": "Verteilte Anlagen.\nStandortbezogene Abläufe.",
+  "applicationsIntro": "Zwölf Anwendungsbereiche zeigen die Verbindung von Standorten, Überwachungsdaten und Betriebsabläufen. Jede Aufgabe benennt Eingabedaten, vorgeschlagenes Ergebnis und Abnahmeprüfung; Quellenqualität und Kartenrechte bestimmen den Umsetzungsumfang.",
+  "groups": [
+    {
+      "id": "water-network",
+      "title": "Wasserverteil- und Pumpennetzwerke",
+      "intro": "Geben Sie verteilten Wasserversorgungsanlagen eine einheitliche geografische Referenz, ohne Kartenverbindungen mit validierter hydraulischer Modellierung gleichzusetzen.",
+      "imageKey": "water",
+      "imageAlt": "Pumpstation im Freien mit blauen Rohrleitungen",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Ansicht eines Drucküberwachungsbezirks",
+          "description": "Prüfen Sie hochgeladene Druckwerte nach zugeordneten Messpunkten und vom Betreiber definierten Versorgungsgebieten.",
+          "inputs": "Punktkoordinaten, Gebietsgrenzen und Druckaufzeichnungen.",
+          "deliverables": "Bezirksfilter mit verknüpften Messwerten und Trends.",
+          "acceptance": "Gefilterte Karte, Liste und Zählwerte zeigen denselben Punktsatz.",
+          "considerations": "Bezirksgrenzen und Druckreferenz stammen vom Eigentümer."
+        },
+        {
+          "title": "Ereignisse verteilter Pumpstationen",
+          "description": "Lokalisieren Sie die Pumpstation eines empfangenen Ereignisses und öffnen Sie verfügbare Zustandsaufzeichnungen.",
+          "inputs": "Stationsregister, Gerätekennungen und Ereignisquelldaten.",
+          "deliverables": "Stationsereigniskarte mit quellenverknüpften Details.",
+          "acceptance": "Ein Testereignis wählt die richtige Station und Quelle.",
+          "considerations": "Die Karte ist weder Pumpensteuerung noch Dispositionsbefugnis."
+        },
+        {
+          "title": "Standortübergabe zur Feldinspektion",
+          "description": "Übergeben Sie die Referenz eines Ventils, Zählers oder überwachten Standorts an den vereinbarten Feldinspektionsablauf.",
+          "inputs": "Anlagenpositionen und berechtigte Inspektionssystemlinks.",
+          "deliverables": "Anlagendetail mit vereinbarter Inspektionsübergabe.",
+          "acceptance": "Der empfangende Datensatz behält die gewählte Anlagenkennung bei.",
+          "considerations": "Zugangshinweise pflegt weiterhin der Anlagenbesitzer."
+        }
+      ]
+    },
+    {
+      "id": "drainage",
+      "title": "Entwässerungs-, Fluss- und Einzugsgebietsüberwachung",
+      "intro": "Ordnen Sie Entwässerungsanlagen und Umweltbeobachtungen den geografischen Arbeitsbereichen des zuständigen Betriebsteams zu.",
+      "imageKey": "hydro-river",
+      "imageAlt": "Flusslauf und umgebende Landschaft",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Abweichungskarte für Entwässerungspunkte",
+          "description": "Lokalisieren Sie empfangene Pegel- oder Wasserleckereignisse an Entwässerungsbauwerken und überwachten Tiefpunkten.",
+          "inputs": "Entwässerungsregister, Punktpositionen und Ereignisdefinitionen.",
+          "deliverables": "Ortsbezogene Ereignisse mit jüngster Messhistorie.",
+          "acceptance": "Ein Pegelbeispielereignis führt zum zugeordneten Messpunkt.",
+          "considerations": "Ein beobachteter Pegel ist keine Hochwasserprognose."
+        },
+        {
+          "title": "Vergleich von Einzugsgebietsbeobachtungen",
+          "description": "Vergleichen Sie verfügbare Regen- und Pegeldaten der einem Einzugsgebiet zugeordneten Stationen.",
+          "inputs": "Einzugsgebietsgrenzen, Stationskoordinaten und Zeitreihendaten.",
+          "deliverables": "Einzugsgebietsauswahl mit synchronisierten Beobachtungsansichten.",
+          "acceptance": "Gewählte Zeiträume und Quelleinheiten stimmen ansichtenübergreifend überein.",
+          "considerations": "Stationspositionen beeinflussen die Aussagekraft von Vergleichen."
+        },
+        {
+          "title": "Prüfung der Inspektionsabdeckung",
+          "description": "Zeigen Sie Inspektionsdaten und offene Quelldatensätze für Entwässerungsanlagen eines ausgewählten Gebiets.",
+          "inputs": "Anlagenkennungen, Inspektionsdaten und vereinbarte Datensatzstatus.",
+          "deliverables": "Gebietsbezogene Inspektionsebene mit Datensatzlinks.",
+          "acceptance": "Angezeigte Abdeckungssummen entsprechen den abgenommenen Eingangsdaten.",
+          "considerations": "Inspektionsvollständigkeit ist vom Infrastrukturzustand zu unterscheiden."
+        }
+      ]
+    },
+    {
+      "id": "renewables",
+      "title": "Solar-, Wind- und verteilte Energiestandorte",
+      "intro": "Navigieren Sie im regionalen Portfolio unter Erhalt der Verbindung zwischen Standort, Anlagenregister und empfangenen Betriebsinformationen.",
+      "imageKey": "solar",
+      "imageAlt": "Solarmodulfelder an einem Energiestandort im Freien",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Regionale Standortstatusübersicht",
+          "description": "Filtern Sie erneuerbare Energiestandorte nach Ereignisstatus, Überwachungsverfügbarkeit oder Betreiberregion.",
+          "inputs": "Standortkoordinaten, Regionalgrenzen und Quellzustandsdefinitionen.",
+          "deliverables": "Regionalkarte mit verknüpften Standortlisten und Statuszahlen.",
+          "acceptance": "Ein vereinbarter Filter erzeugt übereinstimmende Karten- und Übersichtsergebnisse.",
+          "considerations": "Angezeigter Status folgt der Bedeutung des Quellsystems."
+        },
+        {
+          "title": "Messkarte für Türme und Stationen",
+          "description": "Lokalisieren Sie überwachte Türme, Wechselrichterstationen oder Versorgungstechnik und öffnen Sie verfügbare Zustandsdaten.",
+          "inputs": "Anlagenpositionen, Messpunktkennungen und Messdaten.",
+          "deliverables": "Anlagendetails mit hochgeladenen Messungen und Historie.",
+          "acceptance": "Ein ausgewähltes Objekt behält korrekte Punktidentität und Einheiten bei.",
+          "considerations": "Zustandsaufzeichnungen diagnostizieren nicht automatisch einen Fehler."
+        },
+        {
+          "title": "Planungsansicht für Wartungsgebiete",
+          "description": "Gruppieren Sie ausgewählte Serviceaufzeichnungen geografisch zur Prüfung durch das regionale Team.",
+          "inputs": "Offene Servicereferenzen und zugewiesene Betriebsbereiche.",
+          "deliverables": "Gebietsgefilterte Serviceliste mit berechtigten Datensatzlinks.",
+          "acceptance": "Benutzer sehen nur Daten innerhalb vereinbarter Gebietsberechtigungen.",
+          "considerations": "Optimierte Routenplanung ist ein gesonderter Analyseumfang."
+        }
+      ]
+    },
+    {
+      "id": "telecom",
+      "title": "Telekommunikationstürme und abgelegene Gerätestandorte",
+      "intro": "Führen Sie Standortidentität, Position und verfügbare Überwachungsdaten in einem geografischen Untersuchungspfad zusammen.",
+      "imageKey": "telecom-site",
+      "imageAlt": "Abgelegener Außenkommunikationsstandort mit geschlossenen Schränken und zugänglichen Wartungswegen",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Untersuchung des Turmstandortzustands",
+          "description": "Finden Sie den Standort eines Neigungs-, Umgebungs- oder Gehäuseereignisses und prüfen Sie die Quellmessungen.",
+          "inputs": "Turmregister, Messpunktzuweisungen und empfangene Überwachungsdaten.",
+          "deliverables": "Turmdetail mit Ereignis- und Trendreferenzen.",
+          "acceptance": "Ein bekanntes Standortereignis öffnet die zugehörige Messquelle.",
+          "considerations": "Sensoreinbau und Ausrichtung bestimmen die Interpretation."
+        },
+        {
+          "title": "Prüfung des Standortkommunikationsstatus",
+          "description": "Unterscheiden Sie Standorte mit aktuellen Uploads von verspäteten oder nicht verfügbaren Meldungen.",
+          "inputs": "Uploadzeitstempel, Standortidentitäten und Veraltungsregeln.",
+          "deliverables": "Aktualitätsebene und gefilterte Standortliste.",
+          "acceptance": "Ein verspäteter Testdatensatz erscheint im vereinbarten veralteten Zustand.",
+          "considerations": "Ein fehlender Upload allein identifiziert keine Fehlerursache."
+        },
+        {
+          "title": "Kontext für Dienstleisterbesuche",
+          "description": "Stellen Sie berechtigten Besuchern Standortreferenz, Zugangshinweise und vereinbarten Inspektionslink bereit.",
+          "inputs": "Standortunterlagen, Dienstleisterrollen und Besuchssystemreferenzen.",
+          "deliverables": "Rollenbegrenzte Standortinformationen und Inspektionsübergabe.",
+          "acceptance": "Geschützte Standortdetails bleiben nicht zugewiesenen Benutzern verborgen.",
+          "considerations": "Kartenzugriff erteilt keine physische Zutrittsberechtigung."
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Straßen-, Schienen- und Tunnelkorridore",
+      "intro": "Nutzen Sie Korridorreferenzen und Messpunktpositionen gemeinsam, damit Teams die Quelle einer empfangenen Beobachtung finden.",
+      "imageKey": "bridge-infrastructure",
+      "imageAlt": "Straßenbrückendeck und Infrastruktur bei kaltem Wetter",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Suche nach Korridormesspunkten",
+          "description": "Finden Sie Messpunkte über Anlagenkennung, Stationierung oder freigegebene geografische Position.",
+          "inputs": "Korridortrasse, Stationierungsreferenz und Messpunktregister.",
+          "deliverables": "Durchsuchbare Überwachungsebene mit Positionsdetails.",
+          "acceptance": "Ein Testpunkt führt zur vereinbarten Korridorreferenz.",
+          "considerations": "Koordinaten- und Stationierungstransformationen benötigen eine definierte Referenz."
+        },
+        {
+          "title": "Ereignisort an Brücken und Tunneln",
+          "description": "Zeigen Sie empfangene Bewegungs-, Schwingungs- oder Umgebungsereignisse am zugeordneten Bauwerk oder Technikstandort.",
+          "inputs": "Bauwerksinventar, Ereigniskennungen und Punktkoordinaten.",
+          "deliverables": "Bauwerksereigniskarte mit nachvollziehbaren Quelldaten.",
+          "acceptance": "Das ausgewählte Ereignis verweist auf richtiges Bauwerk und Messpunkt.",
+          "considerations": "Das Dashboard bescheinigt keine Sicherheit von Verkehrsinfrastruktur."
+        },
+        {
+          "title": "Abschnittsbezogene Inspektionsprüfung",
+          "description": "Prüfen Sie Inspektionen nach Korridorabschnitt und verlinken Sie den ausgewählten Befund.",
+          "inputs": "Abschnittsgrenzen, Inspektionsregister und Zugriffsregeln.",
+          "deliverables": "Abschnittsfilter mit Dokument- oder Arbeitsauftragslinks.",
+          "acceptance": "Abschnittssummen stimmen mit dem gelieferten Inspektionsdatensatz überein.",
+          "considerations": "Technische Prioritäten bestimmt weiterhin der zuständige Eigentümer."
+        }
+      ]
+    },
+    {
+      "id": "construction",
+      "title": "Baustellen, Hänge und temporäre Bauwerke",
+      "intro": "Halten Sie Messpunkte und Arbeitsbereichsgrenzen bei Änderungen von Baustelle oder Überwachungsplan abgestimmt.",
+      "imageKey": "civil-earthworks",
+      "imageAlt": "Bauerdarbeiten und freigelegter, profilierter Boden",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Überwachungsübersicht nach Arbeitszone",
+          "description": "Gruppieren Sie Neigungs-, Schwingungs- oder Umgebungspunkte nach den definierten Projektarbeitszonen.",
+          "inputs": "Arbeitszonengrenzen, Messpunktregister und verfügbare Kanäle.",
+          "deliverables": "Zonenwählbare Überwachungskarte mit Quellmessungen.",
+          "acceptance": "Die gewählte Zone liefert den vereinbarten überwachten Punktsatz.",
+          "considerations": "Zonenänderungen benötigen kontrollierte Datenmodellaktualisierungen."
+        },
+        {
+          "title": "Kontext von Hang- und Dammpunkten",
+          "description": "Lokalisieren Sie Messpunkte und Referenzunterlagen entlang eines definierten Hang- oder Dammprojekts.",
+          "inputs": "Vermessene Punktpositionen und Einbaureferenzunterlagen.",
+          "deliverables": "Punktkarte mit Historie und Einbaunachweislinks.",
+          "acceptance": "Jeder angezeigte Punkt ist zu seiner Quellposition rückverfolgbar.",
+          "considerations": "Ein Punkttrend ist keine Stabilitätsbewertung."
+        },
+        {
+          "title": "Revisionsprüfung des Überwachungsplans",
+          "description": "Verfolgen Sie geografische Auswirkungen hinzugefügter, versetzter oder stillgelegter Punkte einer vereinbarten Planrevision.",
+          "inputs": "Versionierte Punktlisten und Wirksamkeitsdaten.",
+          "deliverables": "Revisionsvergleich mit Punktzustandsidentifikation.",
+          "acceptance": "Die abgenommene Revision reproduziert den dokumentierten aktiven Punktsatz.",
+          "considerations": "Historische Positionen dürfen nicht stillschweigend überschrieben werden."
+        }
+      ]
+    },
+    {
+      "id": "logistics",
+      "title": "Logistikgelände, Häfen und mobile Güter",
+      "intro": "Verknüpfen Sie Empfangsorte, Betriebszonen und gemeldete Objektpositionen anhand von Kennung und Zeit jedes Quelldatensatzes.",
+      "imageKey": "container-terminal",
+      "imageAlt": "Gestapelte Frachtcontainer auf einem küstennahen Terminalgelände",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Suche nach Objektpositionen auf dem Betriebsgelände",
+          "description": "Finden Sie Container, Anhänger oder Mehrwegobjekte anhand zuletzt gemeldeter Position und Identität.",
+          "inputs": "Objektkennungen, Positionsdaten und Positionsqualitätsfelder.",
+          "deliverables": "Durchsuchbare Objektkarte mit letzter Meldung.",
+          "acceptance": "Ausgewählte Identität, Zeitstempel und Position entsprechen dem Eingangssatz.",
+          "considerations": "Die zuletzt gemeldete Position garantiert keinen aktuellen Aufenthaltsort."
+        },
+        {
+          "title": "Prüfung von Gebietsein- und -austritten",
+          "description": "Definieren Sie Gebietsereignisse mobiler Objekte, soweit Positionsdaten die benötigten Zonenregeln tragen.",
+          "inputs": "Lizenzierte Zonengrenzen, Spurbeispiele und Regeldefinitionen.",
+          "deliverables": "Vereinbarte Zonenereignisansicht mit Quellpositionsreferenzen.",
+          "acceptance": "Repräsentative Grenzfälle folgen dem abgenommenen Regelverhalten.",
+          "considerations": "Unsicherheit und Uploadintervalle beeinflussen die Interpretation von Grenzereignissen."
+        },
+        {
+          "title": "Kontext von Aufenthalts- und Besuchsaufzeichnungen",
+          "description": "Prüfen Sie erfasste Objektbesuche oder vereinbarte Aufenthaltsberechnungen in ausgewählten Gelände- oder Terminalbereichen.",
+          "inputs": "Zeitgestempelte Positionen und Besuchs-/Aggregationsdefinitionen.",
+          "deliverables": "Gebietsbezogene Besuchshistorie mit nachvollziehbaren Berechnungseingaben.",
+          "acceptance": "Testbesuche reproduzieren dokumentierte Berechnungsregeln.",
+          "considerations": "Berechnete Aufenthaltsdauer hängt von Regeln für Fehlwerte und Zeitlücken ab."
+        }
+      ]
+    },
+    {
+      "id": "cold-chain",
+      "title": "Kühlkettenrouten und Lieferorte",
+      "intro": "Zeigen Sie die Positionen, denen empfangene Zustandsdaten einer Sendung, eines Fahrzeugs oder Umschlagorts zugeordnet wurden.",
+      "imageKey": "refrigerated-logistics",
+      "imageAlt": "Kühl-Lieferfahrzeug an einer Verladerampe",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Prüfung von Sendungszustand und Position",
+          "description": "Prüfen Sie hochgeladene Temperaturdaten zusammen mit verfügbarer Sendungsidentität und Positionshistorie.",
+          "inputs": "Sendungskennungen, Temperaturdaten und Positionsquellen.",
+          "deliverables": "Sendungskarte mit zeitlich abgestimmter Zustandshistorie.",
+          "acceptance": "Ein gewählter Datensatz behält Quellzeit, Einheit und Position bei.",
+          "considerations": "Getrennte Aufzeichnungsuhren und Abtastintervalle müssen abgeglichen werden."
+        },
+        {
+          "title": "Abweichungskontext am Lieferpunkt",
+          "description": "Lokalisieren Sie den gemeldeten Umschlagpunkt einer Sendungszustandsabweichung oder eines Quellereignisses.",
+          "inputs": "Lieferpositionen, Ereignisreferenzen und Umschlagzeitstempel.",
+          "deliverables": "Lieferpunktereignisansicht und verknüpfte Quelldaten.",
+          "acceptance": "Eine Beispielabweichung öffnet ihre passende Umschlagreferenz.",
+          "considerations": "Die Karte entscheidet weder Produktfreigabe noch Konformität."
+        },
+        {
+          "title": "Untersuchung historischer Routen",
+          "description": "Zeigen Sie empfangene Routenpositionen und ausgewählte Stopps eines vereinbarten Untersuchungszeitraums.",
+          "inputs": "Positionshistorie, Routenkennungen und Aufbewahrungsberechtigungen.",
+          "deliverables": "Zeitgefilterte Spuren mit erfassten Stoppreferenzen.",
+          "acceptance": "Angezeigte Spurpunkte entsprechen dem abgenommenen Quelldatensatz.",
+          "considerations": "Lücken bleiben sichtbar; eine Fahrtstrecke wird nicht erfunden."
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Agrarflächen und Bewässerungsbezirke",
+      "intro": "Ordnen Sie Feldbeobachtungen den betrieblich relevanten Parzellen, Bewässerungszonen und bewirtschafteten Einrichtungen zu.",
+      "imageKey": "agriculture",
+      "imageAlt": "Gewächshauskonstruktion und landwirtschaftliche Anbaureihen",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Überwachungskarte für Felder und Parzellen",
+          "description": "Prüfen Sie verfügbare Boden- oder lokale Wetterdaten an den zugewiesenen Feldparzellen.",
+          "inputs": "Parzellengrenzen, Sensorpositionen und Maßeinheiten.",
+          "deliverables": "Parzellenauswahl mit Punktmessungen und Historie.",
+          "acceptance": "Ausgewählte Parzellen zeigen nur ihre vereinbarten Beobachtungspunkte.",
+          "considerations": "Punktmessungen belegen keine Bedingungen auf der gesamten Fläche."
+        },
+        {
+          "title": "Positionsansicht von Bewässerungsanlagen",
+          "description": "Lokalisieren Sie überwachte Bewässerungstanks, Pumpen oder Steuergeräte und öffnen Sie verfügbare Betriebsdaten.",
+          "inputs": "Bewässerungsanlagenregister und vereinbarte Quellschnittstellen.",
+          "deliverables": "Anlagenebene mit verknüpften Zustands- und Servicedetails.",
+          "acceptance": "Ein Gerätequelldatensatz führt zum richtigen Kartenobjekt.",
+          "considerations": "Bewässerungssteuerung ist eine separat definierte Funktion."
+        },
+        {
+          "title": "Kontext von Inspektions- und Saisonaufzeichnungen",
+          "description": "Prüfen Sie Beobachtungen oder Servicereferenzen nach Anbaugebiet und gewähltem Betriebszeitraum.",
+          "inputs": "Gebietskennungen, Inspektionsdaten und saisonale Datumsdefinitionen.",
+          "deliverables": "Gebietsbezogene Datenfilter mit Quelldokumentenlinks.",
+          "acceptance": "Der gewählte Zeitraum reproduziert die vereinbarte Datensatzauswahl.",
+          "considerations": "Agronomische Empfehlungen benötigen eine gesonderte Analysegrundlage."
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "title": "Umweltbeobachtungsnetze",
+      "intro": "Verknüpfen Sie Probenahmeorte und Stationsdaten mit nachvollziehbaren Kartenebenen und Messdefinitionen.",
+      "imageKey": "hydro-reservoir",
+      "imageAlt": "Stauseewasser und angrenzender Damm",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Luft- und Wetterstationsnetz",
+          "description": "Lokalisieren Sie Beobachtungsstationen und prüfen Sie die verfügbaren hochgeladenen Messwerte jedes Punkts.",
+          "inputs": "Stationsregister, Koordinaten und Kanaldefinitionen.",
+          "deliverables": "Stationskarte mit Mess- und Aktualitätsansichten.",
+          "acceptance": "Jeder angezeigte Kanal behält ursprüngliche Quelle und Einheiten bei.",
+          "considerations": "Repräsentativität hängt von Standortexposition und Sensorposition ab."
+        },
+        {
+          "title": "Aufzeichnungen nach Wasserprobenahmeort",
+          "description": "Ordnen Sie Proben- oder Überwachungsdaten dem betreffenden Fluss-, Stausee- oder Einleitungsort zu.",
+          "inputs": "Probenahmepunktkennungen, Koordinaten und Labor-/Quellreferenzen.",
+          "deliverables": "Probenahmekarte mit quellenverknüpfter Historie.",
+          "acceptance": "Ein angezeigtes Ergebnis ist zur Probenahmereferenz rückverfolgbar.",
+          "considerations": "Eine Kartenansicht ist keine regulatorische Überwachungszertifizierung."
+        },
+        {
+          "title": "Gebietsbezogene Ereignisuntersuchung",
+          "description": "Prüfen Sie empfangene Schwellenwertereignisse innerhalb eines vereinbarten Umweltmanagementgebiets und Zeitfensters.",
+          "inputs": "Gebietsgrenzen, Ereignisdefinitionen und Datensatzzeitstempel.",
+          "deliverables": "Räumliche und zeitliche Filter mit nachvollziehbaren Ereignisdetails.",
+          "acceptance": "Karte, Liste und exportierte Auswahl stimmen im Testfenster überein.",
+          "considerations": "Benachrichtigungen hängen vom konfigurierten Empfangssystemablauf ab."
+        }
+      ]
+    },
+    {
+      "id": "facilities",
+      "title": "Campusareale und öffentliche Gebäudeportfolios",
+      "intro": "Geben Sie Gebäudeteams eine gemeinsame Sicht auf die Zuordnung überwachter Gebäude, Geräte und Serviceaufzeichnungen.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Campusgebäude und gestalteter Außenbereich",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Überwachungskarte für Gebäudeportfolios",
+          "description": "Filtern Sie überwachte Gebäude nach Nutzung, Betreiberregion oder empfangenem Umgebungsereignisstatus.",
+          "inputs": "Gebäudegrundrisse, Eigentumsfelder und Ereignisquellen.",
+          "deliverables": "Gebäudeebenen mit gemeinsamen Filtern und Zustandsansichten.",
+          "acceptance": "Gefilterte Gebäudesummen entsprechen dem abgenommenen Anlagenregister.",
+          "considerations": "Aggregationen brauchen explizite Regeln bei Gebäuden mit mehreren Punkten."
+        },
+        {
+          "title": "Außenversorgungs- und Beleuchtungsanlagen",
+          "description": "Lokalisieren Sie überwachte Lichtmasten, Wasserversorgungspunkte oder andere Außenanlagen anhand des freigegebenen Registers.",
+          "inputs": "Anlagenkoordinaten, Kategoriedefinitionen und Quellpunktkennungen.",
+          "deliverables": "Durchsuchbare Gebäudeanlagenebene mit Datensatznavigation.",
+          "acceptance": "Das ausgewählte Objekt öffnet seine richtige Mess- oder Servicequelle.",
+          "considerations": "Installierte Messfunktionen unterscheiden sich je Gerät."
+        },
+        {
+          "title": "Informationen für mobile Wartungsbesuche",
+          "description": "Stellen Sie mobilen Benutzern freigegebene Details und Inspektionsübergabe des ausgewählten Standorts bereit.",
+          "inputs": "Standortunterlagen, mobile Aufgaben und Rollenfestlegungen.",
+          "deliverables": "Mobil ausgerichtete Detailansicht mit berechtigten Quelllinks.",
+          "acceptance": "Vereinbarte Feldaufgaben bleiben auf den Zielgeräten nutzbar.",
+          "considerations": "Offlinebetrieb erfordert einen ausdrücklichen Cache- und Sicherheitsumfang."
+        }
+      ]
+    },
+    {
+      "id": "parks-heritage",
+      "title": "Parks, Tourismus- und Denkmalareale",
+      "intro": "Lokalisieren Sie überwachte öffentliche Umgebungen und Wartungsobjekte unter Kontrolle sensibler Standortinformationen.",
+      "imageKey": "heritage-outdoor",
+      "imageAlt": "Historische steinerne Abteiruine mit umgebender Gartenanlage",
+      "imageCaption": "Beispielhafte Anwendungsumgebung. Projektumfang und Eignung werden für die Installation festgelegt.",
+      "tasks": [
+        {
+          "title": "Messorte historischer Gebäude",
+          "description": "Finden Sie Gebäude oder Außenpunkt einer empfangenen Umgebungs- oder Bewegungsbeobachtung.",
+          "inputs": "Gebäuderegister, Punktkoordinaten und Überwachungsreferenzen.",
+          "deliverables": "Arealkarte mit gebäudebezogenen Quelldatenlinks.",
+          "acceptance": "Jede angezeigte Beobachtung entspricht der abgenommenen Gebäudereferenz.",
+          "considerations": "Die Zustandsinterpretation obliegt der zuständigen Fachperson."
+        },
+        {
+          "title": "Parkausrüstung und Umweltstationen",
+          "description": "Prüfen Sie Positionen und empfangene Daten überwachter Masten, Geräte oder Umweltstationen im Park.",
+          "inputs": "Parkgrenzen, Anlagenregister und verfügbare Stationsdaten.",
+          "deliverables": "Kategoriegefilterte Karte mit zeitgestempelten Beobachtungen.",
+          "acceptance": "Eine ausgewählte Kategorie liefert den vereinbarten überwachten Anlagenumfang.",
+          "considerations": "Die Karte impliziert keine Abdeckung unüberwachter Bereiche."
+        },
+        {
+          "title": "Wartungskontext von Besucherbereichen",
+          "description": "Verknüpfen Sie gemeldete Serviceprobleme mit betreffendem Besucherbereich und freigegebenem Wartungsablauf.",
+          "inputs": "Besucherbereichsgrenzen und berechtigte Problemdatenschnittstellen.",
+          "deliverables": "Gebietsbezogene Problemansicht mit Zuständigkeitsreferenzen.",
+          "acceptance": "Ein Testproblem öffnet den richtigen Quelldatensatz und Bereich.",
+          "considerations": "Öffentliche und interne Ansichten benötigen getrennte Informationsberechtigungen."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Projektumfang.\nGeografie und Daten gemeinsam.",
+  "scopeIntro": "Definieren Sie diese Punkte in der Projektleistungsbeschreibung; dieser Service hat keine universelle feste Spezifikation.",
+  "rows": [
+    [
+      "Leistungsart",
+      "Individuelles geografisches Dashboard und vereinbarte Datenintegration"
+    ],
+    [
+      "Abdeckung und Referenz",
+      "Geografische Abdeckung, Koordinatensysteme und Positionsquellen"
+    ],
+    [
+      "Basiskarten und Layer",
+      "Ausgewählter Anbieter, zulässige Nutzung, Quellenangaben und Lizenzkosten"
+    ],
+    [
+      "Quelldaten",
+      "Vereinbarte APIs, Dateieingaben, Identitäten, Einheiten und Zeitstempel"
+    ],
+    [
+      "Funktionen",
+      "Im Umfang ausdrücklich enthaltene Ansichten, Filter, Suche und Ereignisabläufe"
+    ],
+    [
+      "Benutzerzugriff",
+      "Authentifizierung, Rollen und Datenberechtigungen je Bereitstellung vereinbart"
+    ],
+    [
+      "Hosting und Betrieb",
+      "Bereitstellungsumgebung, Kartenzugriff und Betriebsverantwortlichkeiten"
+    ],
+    [
+      "Verifizierung",
+      "Repräsentative Standorte, Datensätze und dokumentierte Abnahmeszenarien"
+    ],
+    [
+      "Lieferumfang und Rechte",
+      "Build, Dokumentation und Quellcodebedingungen gemäß Vertrag"
+    ],
+    [
+      "Wartung",
+      "Änderungen des Kartenanbieters, Datenaktualisierungen und Supportbedingungen werden separat vereinbart"
+    ]
+  ],
+  "handoverTitle": "Von der Datenprüfung.\nZur betrieblichen Karte.",
+  "handoverIntro": "Bestätigen Sie, wie das Dashboard bereitgestellt und gewartet wird.",
+  "handover": [
+    {
+      "title": "Geografische Eingaben prüfen",
+      "text": "Beispielkoordinaten, Layer und API-Datensätze vor der Bestätigung von Kartenfunktionen prüfen."
+    },
+    {
+      "title": "Arbeitsabläufe erstellen und verifizieren",
+      "text": "Die vereinbarten Karteninteraktionen implementieren und Datensätze, Berechtigungen sowie das Verhalten bei fehlenden Daten testen."
+    },
+    {
+      "title": "Betrieb dokumentieren",
+      "text": "Die vertraglich vereinbarte Anwendung und Kartenkonfiguration einschließlich Lizenz- und Wartungsverantwortlichkeiten übergeben."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Was unterscheidet ein GIS-Dashboard von einem allgemeinen Überwachungsdashboard?",
+      "a": "Ein GIS-Dashboard integriert geografische Position und Betriebsebenen in den Untersuchungsablauf. Es verknüpft Anlagen oder Gebiete mit Messwerten, Ereignissen und Quelldaten; Karte, Listen und Übersichten sollten derselben Datenauswahl folgen."
+    },
+    {
+      "q": "Können feste Sensoren und mobile Objekte auf derselben Karte erscheinen?",
+      "a": "Sie können als getrennte Ebenen mit eigenen Positionsquellen und Zeitstempelregeln definiert werden. Vermessene Sensorpositionen und zuletzt gemeldete mobile Positionen sollten unterscheidbar bleiben."
+    },
+    {
+      "q": "Verbessert das Dashboard die Positionsgenauigkeit?",
+      "a": "Nein. Genauigkeit stammt aus Positionierung, Vermessung oder anderer Positionsquelle. Das Projekt definiert Koordinatentransformationen und Darstellung verfügbarer Qualitätsindikatoren, Unsicherheit und veralteter Datensätze."
+    },
+    {
+      "q": "Kann es vorhandene Kartendienste und Anlagenebenen verwenden?",
+      "a": "Unterstützte Schnittstellen, Abdeckung, Koordinatenreferenzsysteme, Zugriffskontrolle und Nutzungsrechte können geprüft werden. Kartenkacheln, kommerzielle Dienste und Drittdaten behalten ihre Lizenz- und Geschäftsbedingungen."
+    },
+    {
+      "q": "Können Daten aus Hitelecom Cloud genutzt werden?",
+      "a": "Eine vereinbarte Integration kann hochgeladene Überwachungsdaten und konfigurierte Schwellenwertereignisse aus Hitelecom Cloud liefern. Anlagenidentität, Punktkoordinaten, Kanaldefinitionen, Einheiten und Zeitstempel werden den Dashboardebenen zugeordnet."
+    },
+    {
+      "q": "Kann die Karte historische Routen und Zustandsdaten zeigen?",
+      "a": "Bei berechtigtem Zugriff auf Historien können zeitgefilterte Spuren und verknüpfte Messungen definiert werden. Aufbewahrung, Uhrenabgleich, Fehlwerte sowie Interpolations- oder Aggregationsregeln werden vor Umsetzung festgelegt."
+    },
+    {
+      "q": "Sind Geofences und Aufenthaltsberechnungen Standardfunktionen?",
+      "a": "Sie sind Projektoptionen, keine pauschalen Bestandteile. Geeignete Positionsdaten, lizenzierte Grenzen, Unsicherheitsbehandlung, Eintritts-/Austrittsregeln und Berechnungssemantik müssen zum vorgesehenen Einsatz passen."
+    },
+    {
+      "q": "Wie werden Kartenalarme und Benachrichtigungen behandelt?",
+      "a": "Ereignisse können aus einer vorhandenen Überwachungsplattform oder einem ausdrücklich definierten Regeldienst stammen. Das Projekt benennt Schwellenwertverantwortung, Ereignisstatus, Empfänger sowie Quittierung oder nachgelagerte Übergabe."
+    },
+    {
+      "q": "Funktioniert die Karte auf dem Telefon oder ohne Verbindung?",
+      "a": "Mobile Layouts richten sich nach ausgewählten Feldaufgaben und Zielgeräten. Offlinekarten oder zwischengespeicherte Daten erfordern gesonderte Entscheidungen zu Lizenzierung, Speicher, Aktualität, Synchronisierung und Zugriffssicherheit."
+    },
+    {
+      "q": "Können verschiedene Kunden oder Auftragnehmer unterschiedliche Standorte sehen?",
+      "a": "Zugriff lässt sich nach Organisation, Region, Standort oder Rolle definieren. Prüfen Sie erlaubte Ebenen, Detaildaten, Exporte und Quellsystemlinks vor Abnahme mit repräsentativen Benutzerkonten."
+    },
+    {
+      "q": "Welche Informationen werden für ein Angebot benötigt?",
+      "a": "Teilen Sie Abdeckungsgebiet, Anlagenregister, Beispielkoordinaten, Quell-API oder Beispieldaten, Kartenpräferenz, Benutzerrollen und gewünschte Abläufe mit. Ergänzen Sie erwartete Datensatzgrößen, Aufbewahrung, Zielgeräte und Bereitstellungsumgebung."
+    },
+    {
+      "q": "Welche Unterlagen und Quellrechte werden übergeben?",
+      "a": "Der Vertrag definiert Anwendungsbuild, Konfiguration, Ebenenschema, Schnittstellenzuordnung, Abnahmenachweise und Bereitstellungsanweisungen. Quellcoderechte, Kartenlizenzen, Drittkosten und Supportverantwortung werden ausdrücklich vereinbart."
+    }
+  ],
+  "enquiryIntro": "Teilen Sie uns die Standorte, geografischen Layer und Datensätze mit, die Sie zusammenführen möchten. Fügen Sie Kartenpräferenzen und Beispieldaten bei, damit der Projektumfang geprüft werden kann.",
+  "enquiryFields": [
+    {
+      "label": "Abdeckung und Nutzer",
+      "placeholder": "Länder, Anzahl der Standorte, Nutzerrollen und Zielgeräte"
+    },
+    {
+      "label": "Karten und Layer",
+      "placeholder": "Bevorzugter Anbieter, Layer-Beispiele und Nutzungsrechte"
+    },
+    {
+      "label": "Quelldaten",
+      "placeholder": "Koordinaten, Asset-Kennungen, APIs und Aktualisierungsanforderungen"
+    },
+    {
+      "label": "Lieferanforderungen",
+      "placeholder": "Hosting, Lizenzierung, Quellcoderechte und Abnahmebedarf"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-gis-dashboard.webp",
+  "imageWidth": 400,
+  "imageHeight": 345
+}

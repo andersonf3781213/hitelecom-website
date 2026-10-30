@@ -1,0 +1,632 @@
+{
+  "id": "digital-twin",
+  "slug": "digital-twin-development",
+  "kind": "Service",
+  "name": "Digital Twin Development",
+  "title": "Digital Twin Development | Connected Asset & Facility Views | Hitelecom",
+  "metaDescription": "Custom digital twin development for industrial assets, buildings, warehouses and infrastructure. Connect asset models, monitoring data and maintenance workflows.",
+  "heroHeading": "Digital twin\ndevelopment.",
+  "heroValue": "Operational context.\nConnected to field data.",
+  "heroDescription": "Bring equipment, spaces and monitoring records into a navigable digital representation. Hitelecom scopes custom asset models, 2D or 3D views, telemetry mapping and operator workflows around your facilities and data systems. View uploaded monitoring data online through an agreed Hitelecom Cloud integration or customer platform, and place configured threshold alarms in their equipment context. Model detail, data connections and acceptance are defined for the project.",
+  "caption": "Digital Twin Development",
+  "imageAlt": "Digital Twin Development",
+  "proof": [
+    {
+      "value": "Assets",
+      "label": "Defined digital context",
+      "note": "Agree the asset hierarchy and model detail"
+    },
+    {
+      "value": "Data",
+      "label": "Mapped telemetry",
+      "note": "Define sources, timestamps and data quality"
+    },
+    {
+      "value": "Scope",
+      "label": "Project-based delivery",
+      "note": "Confirm functions, hosting and handover"
+    }
+  ],
+  "featureTitle": "From model views.\nTo useful operations.",
+  "featureIntro": "Build the digital context operators need: which asset is reporting, where it belongs, what changed, and which records support the next action. Start with a representative asset set before expanding the model.",
+  "features": [
+    {
+      "title": "Asset identities and relationships",
+      "text": "Structure sites, buildings, systems, equipment and measurement points with stable identifiers. Record relationships such as located-in, supplies or monitored-by so a reading appears against the correct physical asset."
+    },
+    {
+      "title": "Purposeful 2D and 3D views",
+      "text": "Select floor plans, equipment diagrams or a 3D model according to the task. Reuse licensed CAD/BIM/model inputs after reviewing geometry, conversion effort and navigation on the intended devices."
+    },
+    {
+      "title": "Measurements with provenance",
+      "text": "Show the measured value, unit, timestamp and source identity together. Distinguish current, delayed, missing and invalid records instead of colouring an unreported asset as healthy."
+    },
+    {
+      "title": "Asset-level threshold context",
+      "text": "Display received alarms beside the relevant room, component or equipment. Define limits, event priority, acknowledgement and notification integration around the agreed monitoring workflow."
+    },
+    {
+      "title": "Historical investigation",
+      "text": "Scope time-range selection, synchronized trends and links between observations and recorded events. Specify retention and sampling semantics so operators understand gaps, aggregation and historical state."
+    },
+    {
+      "title": "Inspection and maintenance links",
+      "text": "Connect selected assets to drawings, inspection photographs and maintenance records through agreed identifiers and permissions. Keep the source system responsible for its authoritative work-order record."
+    },
+    {
+      "title": "Role-based operating views",
+      "text": "Define the sites, asset details and actions each user may access. Separate operator investigation, management summaries and engineering administration without exposing unrelated facility records."
+    },
+    {
+      "title": "Versioned integration and handover",
+      "text": "Document model versions, point mappings, API contracts and deployment configuration. Agree source-code/model rights, third-party licences and maintenance responsibilities in the statement of work."
+    }
+  ],
+  "planningTitle": "Define the model.\nThen define its use.",
+  "planningIntro": "A useful digital twin brief separates the visual scene, the measured data and any calculation or simulation.",
+  "planning": [
+    {
+      "title": "Identify the operating questions",
+      "text": "List the decisions, users and information needed. Distinguish an operational visualisation from simulation, forecasting or control.",
+      "brief": "Users · Assets · Decisions · Functional boundaries"
+    },
+    {
+      "title": "Review models and source data",
+      "text": "Assess model formats, geometry, permissions and telemetry availability. Define missing-data and stale-data behaviour.",
+      "brief": "Model samples · Source API · Identifiers · Data quality"
+    },
+    {
+      "title": "Set acceptance conditions",
+      "text": "Agree representative datasets, interaction behaviour, supported devices and review scenarios before development.",
+      "brief": "Test data · Performance targets · User review · Handover"
+    }
+  ],
+  "applicationsTitle": "Physical assets.\nUseful digital context.",
+  "applicationsIntro": "Explore specific workflows across twelve operating environments. Each example identifies project inputs, the proposed application output and an acceptance check. These are development scopes, not claims of completed customer deployments.",
+  "groups": [
+    {
+      "id": "production",
+      "title": "Manufacturing plants and process equipment",
+      "intro": "Organise production assets by line, cell and utility system so operators can investigate conditions without losing equipment context.",
+      "imageKey": "process-charging",
+      "imageAlt": "Process vessel, connected pipework and service access",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Production-line condition view",
+          "description": "Navigate from a production line to the equipment and measurement points associated with an operating exception.",
+          "inputs": "Line hierarchy, equipment tags and sample sensor records.",
+          "deliverables": "Line-to-equipment drill-down with timestamped readings.",
+          "acceptance": "A selected reading resolves to the agreed equipment tag.",
+          "considerations": "Equipment state and maintenance state need separate definitions."
+        },
+        {
+          "title": "Shared utility relationships",
+          "description": "Show which monitored compressors, pumps or utility branches supply the production areas represented in the model.",
+          "inputs": "Utility drawings, asset relationships and available measurements.",
+          "deliverables": "Supply relationships with linked condition trends.",
+          "acceptance": "Selecting a utility identifies its documented downstream areas.",
+          "considerations": "The relationship model is not a process simulation."
+        },
+        {
+          "title": "Maintenance investigation workspace",
+          "description": "Bring the selected asset’s drawings, event history and inspection records into the same investigation path.",
+          "inputs": "Asset register, document links and maintenance API samples.",
+          "deliverables": "Asset record panel with authorized source links.",
+          "acceptance": "Users open the correct record with their assigned permissions.",
+          "considerations": "Work-order ownership remains with the nominated source system."
+        }
+      ]
+    },
+    {
+      "id": "warehouse",
+      "title": "Warehouses and automated storage",
+      "intro": "Relate rack rows, storage zones and handling equipment to the measurements and inspections assigned to each location.",
+      "imageKey": "warehouse-aisle",
+      "imageAlt": "Warehouse aisle with shelving and stored goods",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Rack and aisle monitoring context",
+          "description": "Locate the rack bay associated with a received tilt or vibration event and review its measurement history.",
+          "inputs": "Rack map, bay IDs and available tilt/vibration records.",
+          "deliverables": "Rack-to-point navigation with event and trend panels.",
+          "acceptance": "A sample bay event highlights only the mapped bay.",
+          "considerations": "Measured movement does not by itself establish structural safety."
+        },
+        {
+          "title": "Storage-zone environmental view",
+          "description": "Present uploaded temperature and humidity readings within the correct storage rooms, aisles or defined zones.",
+          "inputs": "Zone boundaries, sensor placements and environmental records.",
+          "deliverables": "Zone views with source timestamps and trend links.",
+          "acceptance": "Missing or stale points remain distinguishable from current values.",
+          "considerations": "One sensor does not represent every location in a zone."
+        },
+        {
+          "title": "Handling-equipment inspection context",
+          "description": "Associate conveyors, lifts or shuttles with inspection notes and received operating-state records.",
+          "inputs": "Equipment hierarchy, inspection records and approved interfaces.",
+          "deliverables": "Equipment drill-down and linked inspection evidence.",
+          "acceptance": "A selected component opens its matching inspection record.",
+          "considerations": "Machine command and safety functions require separate scope."
+        }
+      ]
+    },
+    {
+      "id": "buildings",
+      "title": "Commercial buildings and campuses",
+      "intro": "Use a building-to-floor-to-room structure to put facility observations and service records in their spatial context.",
+      "imageKey": "campus-outdoor",
+      "imageAlt": "Campus building and landscaped courtyard",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Room-level environmental investigation",
+          "description": "Move from a floor view to the air-quality or temperature points serving a reported room condition.",
+          "inputs": "Licensed floor plans, room IDs and sensor-to-room mapping.",
+          "deliverables": "Room navigation with available environmental measurements.",
+          "acceptance": "A selected room shows only its assigned measurement points.",
+          "considerations": "Sensor exposure and room boundaries affect interpretation."
+        },
+        {
+          "title": "Plant-room equipment context",
+          "description": "Connect HVAC and water-service equipment to the spaces they serve and their available condition records.",
+          "inputs": "Plant schematics, equipment IDs and service relationships.",
+          "deliverables": "Equipment-space relationships and condition panels.",
+          "acceptance": "A known service relationship appears consistently across views.",
+          "considerations": "Thermal or airflow simulation is a separate engineering task."
+        },
+        {
+          "title": "Facility service-record navigation",
+          "description": "Let a facility team reach maintenance notes, manuals or inspection evidence from the relevant model object.",
+          "inputs": "Asset document index and access-role requirements.",
+          "deliverables": "Permission-controlled links from room and equipment objects.",
+          "acceptance": "Unauthorized users cannot open restricted supporting records.",
+          "considerations": "Document revision and ownership must be traceable."
+        }
+      ]
+    },
+    {
+      "id": "data-centres",
+      "title": "Data centres and technical rooms",
+      "intro": "Connect rows, racks and support equipment to defined monitoring points for focused operating review.",
+      "imageKey": "data-center",
+      "imageAlt": "Modern data center with symmetrical server racks and a clean central cooling aisle",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Rack environmental exceptions",
+          "description": "Locate the rack or aisle associated with a temperature or humidity threshold event.",
+          "inputs": "Rack register, point locations and event sample data.",
+          "deliverables": "Rack-level event selection and environmental trends.",
+          "acceptance": "Sample events resolve to their assigned rack and point.",
+          "considerations": "Point placement matters; a view is not a cooling model."
+        },
+        {
+          "title": "Water-leak investigation context",
+          "description": "Show a received leak event against the monitored room, equipment zone or cable route.",
+          "inputs": "Leak-point layout, room model and event mapping.",
+          "deliverables": "Leak-point context with timestamp and inspection links.",
+          "acceptance": "The event highlights the mapped location without implying unseen coverage.",
+          "considerations": "Coverage depends on the installed sensing arrangement."
+        },
+        {
+          "title": "Support-equipment record views",
+          "description": "Organise cooling, power-support and pumping assets with the records available from authorized source systems.",
+          "inputs": "Equipment relationships and approved source-system interfaces.",
+          "deliverables": "Asset hierarchy with operational and maintenance links.",
+          "acceptance": "Recorded equipment identity matches the selected model object.",
+          "considerations": "This does not replace DCIM, protection or control systems."
+        }
+      ]
+    },
+    {
+      "id": "laboratories",
+      "title": "Laboratories and pharmaceutical storage",
+      "intro": "Put monitored rooms, chambers and storage equipment beside their recorded environmental conditions and inspection history.",
+      "imageKey": "laboratory-storage",
+      "imageAlt": "Laboratory work area with refrigerators and sample-storage equipment",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Controlled-room environmental context",
+          "description": "Review uploaded conditions by laboratory room or storage area with source timestamps and sensor identity.",
+          "inputs": "Room register, point assignments and environmental data.",
+          "deliverables": "Room panels with trends and source-quality indicators.",
+          "acceptance": "Users distinguish valid readings from missing or delayed data.",
+          "considerations": "No regulatory validation claim follows from visualization alone."
+        },
+        {
+          "title": "Chamber and freezer record access",
+          "description": "Link monitored chambers or freezers to recorded conditions, calibration references and maintenance documents.",
+          "inputs": "Equipment IDs, monitoring points and document permissions.",
+          "deliverables": "Equipment views with approved record and document links.",
+          "acceptance": "A test asset opens its assigned measurement and reference records.",
+          "considerations": "Data integrity and electronic-signature requirements need explicit scope."
+        },
+        {
+          "title": "Excursion review workspace",
+          "description": "Present an excursion period with its affected equipment context and available investigation records.",
+          "inputs": "Event timestamps, equipment mapping and investigation references.",
+          "deliverables": "Time-aligned trends with contextual record links.",
+          "acceptance": "The selected time window matches the received source records.",
+          "considerations": "Disposition decisions remain with the responsible quality team."
+        }
+      ]
+    },
+    {
+      "id": "water-supply",
+      "title": "Water pumping and distribution facilities",
+      "intro": "Represent pumping equipment, vessels and monitored connections in a facility view grounded in the supplied asset register.",
+      "imageKey": "water-indoor",
+      "imageAlt": "Indoor pumping equipment, vessels and pipework",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Pump-station condition review",
+          "description": "Navigate between monitored pump assets and their available pressure, temperature, vibration or status records.",
+          "inputs": "Pump schedule, point mapping and available channel data.",
+          "deliverables": "Pump-level measurements with historical record access.",
+          "acceptance": "A selected pump shows its verified mapped channels.",
+          "considerations": "Available channels depend on the installed instruments."
+        },
+        {
+          "title": "Tank and transfer-equipment context",
+          "description": "Relate tanks, transfer pumps and level points to the facility layout used by the operating team.",
+          "inputs": "Tank IDs, connection drawings and level records.",
+          "deliverables": "Tank-equipment relationships and level-history panels.",
+          "acceptance": "Model relationships match the accepted facility drawing.",
+          "considerations": "Hydraulic modelling and remote actuation are separate scopes."
+        },
+        {
+          "title": "Inspection and event correlation",
+          "description": "Bring a pump or valve event together with its latest recorded inspection and operating observations.",
+          "inputs": "Event references, inspection timestamps and asset identifiers.",
+          "deliverables": "Asset investigation panel with ordered source records.",
+          "acceptance": "Record ordering preserves source time and event identity.",
+          "considerations": "Inspection status must not be inferred from telemetry alone."
+        }
+      ]
+    },
+    {
+      "id": "wastewater",
+      "title": "Wastewater and treatment assets",
+      "intro": "Connect treatment units and monitored equipment with operating records while preserving process and data boundaries.",
+      "imageKey": "treatment-manifold",
+      "imageAlt": "Water-treatment vessels and stainless-steel manifolds",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Treatment-unit measurement view",
+          "description": "Organise received measurements around the treatment units and sampling points identified by the operator.",
+          "inputs": "Unit hierarchy, point register and measurement definitions.",
+          "deliverables": "Treatment-unit panels with units and source timestamps.",
+          "acceptance": "Point names, units and unit associations match the approved register.",
+          "considerations": "Derived treatment performance needs an agreed calculation basis."
+        },
+        {
+          "title": "Chemical-handling equipment records",
+          "description": "Link selected dosing equipment to its available pressure, condition and service records.",
+          "inputs": "Dosing-asset list and authorized equipment interfaces.",
+          "deliverables": "Dosing-equipment context with received condition information.",
+          "acceptance": "A source record reaches the correct equipment object.",
+          "considerations": "Dosing control and hazardous-area suitability are separate design matters."
+        },
+        {
+          "title": "Service-access planning context",
+          "description": "Combine facility views with access notes and inspection photographs for selected maintenance activities.",
+          "inputs": "Facility layout, approved access notes and inspection images.",
+          "deliverables": "Contextual inspection and access-information links.",
+          "acceptance": "Users retrieve the current approved note for the selected asset.",
+          "considerations": "The application does not authorize entry or maintenance work."
+        }
+      ]
+    },
+    {
+      "id": "solar-storage",
+      "title": "Solar and energy-storage sites",
+      "intro": "Organise arrays, inverter stations and supporting equipment around the monitoring information available to the owner.",
+      "imageKey": "solar",
+      "imageAlt": "Solar-panel arrays at an outdoor energy site",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Array and inverter-site overview",
+          "description": "Locate monitored equipment within the site hierarchy and review the latest available environmental or equipment records.",
+          "inputs": "Site layout, equipment IDs and approved telemetry fields.",
+          "deliverables": "Array-to-equipment navigation with available data panels.",
+          "acceptance": "Selected site and equipment IDs stay consistent across panels.",
+          "considerations": "Yield forecasts are not inferred from the visual model."
+        },
+        {
+          "title": "Storage-enclosure environmental context",
+          "description": "Place available temperature, gas or water-leak observations against their monitored enclosure and sensing point.",
+          "inputs": "Enclosure register, point layout and measurement definitions.",
+          "deliverables": "Enclosure-level measurement and threshold-event views.",
+          "acceptance": "A sample event identifies its configured source and enclosure.",
+          "considerations": "Monitoring is distinct from fire protection or battery control."
+        },
+        {
+          "title": "Distributed maintenance context",
+          "description": "Connect site equipment to inspection findings and maintenance references across a regional portfolio.",
+          "inputs": "Site-asset hierarchy and authorized service-record endpoints.",
+          "deliverables": "Portfolio drill-down with equipment-level service links.",
+          "acceptance": "Users reach the proper site record under their access role.",
+          "considerations": "Asset condition is not automatically a failure diagnosis."
+        }
+      ]
+    },
+    {
+      "id": "wind",
+      "title": "Wind farms and tower equipment",
+      "intro": "Keep turbine, tower and component references aligned with the observations and inspection material supplied for the project.",
+      "imageKey": "wind",
+      "imageAlt": "Wind turbines in an open landscape",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Tower measurement context",
+          "description": "Associate tower tilt or vibration records with the correct turbine, sensing point and installation reference.",
+          "inputs": "Turbine IDs, point orientation and source measurement data.",
+          "deliverables": "Tower-point views with orientation and trend references.",
+          "acceptance": "Displayed point orientation matches the supplied installation schedule.",
+          "considerations": "Structural assessment requires the responsible engineering method."
+        },
+        {
+          "title": "Component inspection navigation",
+          "description": "Navigate from a turbine object to selected component inspection notes or photographs.",
+          "inputs": "Component register and licensed inspection-document sources.",
+          "deliverables": "Component-linked inspection evidence and revision details.",
+          "acceptance": "A component opens its assigned current inspection reference.",
+          "considerations": "Model geometry may omit components outside the agreed scope."
+        },
+        {
+          "title": "Site-weather context for investigation",
+          "description": "Review available local weather records beside selected equipment events during an investigation window.",
+          "inputs": "Weather sources, asset events and time-zone definitions.",
+          "deliverables": "Time-aligned equipment and weather record panels.",
+          "acceptance": "The same source period is selected across agreed data panels.",
+          "considerations": "Correlation does not establish a cause or fault diagnosis."
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Bridges, tunnels and transport facilities",
+      "intro": "Represent monitored structural components and technical assets with their recorded measurements and inspection references.",
+      "imageKey": "bridge-infrastructure",
+      "imageAlt": "Road bridge deck and infrastructure in cold-weather conditions",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Bridge monitoring-point navigation",
+          "description": "Locate a monitored pier, bearing or deck point and review its available movement or vibration history.",
+          "inputs": "Component IDs, point schedule and reference drawings.",
+          "deliverables": "Component-to-measurement navigation and inspection links.",
+          "acceptance": "Each test point resolves to the accepted component reference.",
+          "considerations": "A digital view does not certify structural fitness."
+        },
+        {
+          "title": "Tunnel technical-equipment context",
+          "description": "Organise monitored pumps, environmental points and equipment rooms along the defined tunnel structure.",
+          "inputs": "Tunnel chainage, room register and equipment mappings.",
+          "deliverables": "Chainage-linked facility and equipment views.",
+          "acceptance": "Mapped assets appear at their agreed chainage and room.",
+          "considerations": "Survey reference and equipment-location accuracy need review."
+        },
+        {
+          "title": "Inspection-history workspace",
+          "description": "Relate selected inspection findings to a component and the measurement records available for the same period.",
+          "inputs": "Inspection references, component IDs and observation timestamps.",
+          "deliverables": "Component history with traceable source-record links.",
+          "acceptance": "Users can trace a displayed finding to its source record.",
+          "considerations": "Engineering decisions remain with qualified project personnel."
+        }
+      ]
+    },
+    {
+      "id": "heritage",
+      "title": "Museums and heritage buildings",
+      "intro": "Link collection spaces, building fabric and monitored surroundings without presenting illustrative models as conservation evidence.",
+      "imageKey": "heritage-outdoor",
+      "imageAlt": "Historic stone abbey ruins and surrounding landscaped grounds",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Gallery and store environmental context",
+          "description": "Navigate between collection rooms and their available temperature, humidity or light records.",
+          "inputs": "Room plans, display/storage zones and point assignments.",
+          "deliverables": "Space-linked environmental trends and event records.",
+          "acceptance": "Selected room boundaries and sensor assignments match the register.",
+          "considerations": "Conservation limits are set by the responsible specialist."
+        },
+        {
+          "title": "Building-fabric monitoring references",
+          "description": "Associate agreed tilt, vibration or environmental points with the relevant wall, tower or building element.",
+          "inputs": "Building-element IDs, installation references and observation records.",
+          "deliverables": "Element-to-point navigation with installation-document links.",
+          "acceptance": "Users can verify each displayed point against its installation record.",
+          "considerations": "Measured change is not automatically damage or instability."
+        },
+        {
+          "title": "Conservation inspection context",
+          "description": "Attach authorized inspection notes and photographs to agreed spaces or building elements for coordinated review.",
+          "inputs": "Inspection index, reuse rights and access requirements.",
+          "deliverables": "Element-linked conservation records with version references.",
+          "acceptance": "The selected element retrieves its corresponding approved record.",
+          "considerations": "Sensitive collection and building records require access controls."
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Greenhouses and aquaculture facilities",
+      "intro": "Structure growing compartments, water systems and monitored production zones around meaningful operating records.",
+      "imageKey": "agriculture",
+      "imageAlt": "Greenhouse structure and crop-growing rows",
+      "imageCaption": "Representative application environment. Project scope and suitability are defined for the installation.",
+      "tasks": [
+        {
+          "title": "Greenhouse compartment records",
+          "description": "Present available environmental and soil readings within the greenhouse compartment or growing-zone structure.",
+          "inputs": "Compartment layout, crop-zone IDs and sensing-point schedule.",
+          "deliverables": "Zone navigation with uploaded environmental and soil records.",
+          "acceptance": "Each displayed channel retains its source unit and location.",
+          "considerations": "One point does not establish conditions throughout a compartment."
+        },
+        {
+          "title": "Aquaculture pond and equipment context",
+          "description": "Associate ponds, pumps and available water-quality records within the owner’s facility structure.",
+          "inputs": "Pond register, equipment relationships and available channel definitions.",
+          "deliverables": "Pond-equipment views with traceable monitoring records.",
+          "acceptance": "A selected pond shows its assigned sampling-point references.",
+          "considerations": "Biological performance is not predicted by the visual model.",
+          "imageKey": "aquaculture",
+          "imageAlt": "Outdoor aquaculture ponds with access paths"
+        },
+        {
+          "title": "Facility inspection and service history",
+          "description": "Connect irrigation, ventilation or pumping assets to their available inspections and maintenance references.",
+          "inputs": "Asset hierarchy and authorized inspection-record sources.",
+          "deliverables": "Equipment views with source-linked service history.",
+          "acceptance": "Displayed service records match the selected asset identifier.",
+          "considerations": "Actuator control requires its own scoped command design."
+        }
+      ]
+    }
+  ],
+  "scopeTitle": "Project scope.\nWritten before build.",
+  "scopeIntro": "These are items to define in the statement of work, not a fixed product specification.",
+  "rows": [
+    [
+      "Service type",
+      "Custom software development; functions agreed per project"
+    ],
+    [
+      "Visual scope",
+      "2D, 3D or combined presentation after model and workflow review"
+    ],
+    [
+      "Model inputs",
+      "Agreed formats, ownership, reuse rights and conversion scope"
+    ],
+    [
+      "Data integration",
+      "Named source systems, interfaces, identifiers and data mapping"
+    ],
+    [
+      "User access",
+      "Roles, authentication and permissions defined in the project scope"
+    ],
+    [
+      "Hosting",
+      "Customer or agreed hosting environment; operating responsibilities specified"
+    ],
+    [
+      "Verification",
+      "Representative data and documented acceptance scenarios"
+    ],
+    [
+      "Deliverables",
+      "Application build, configuration and documentation as contracted"
+    ],
+    [
+      "Ownership and licensing",
+      "Source code, models, third-party licences and reuse rights agreed in writing"
+    ],
+    [
+      "Change control",
+      "Scope, schedule, support and future changes agreed commercially"
+    ]
+  ],
+  "handoverTitle": "From agreed scope.\nTo documented handover.",
+  "handoverIntro": "Define the deliverables and operating responsibilities together.",
+  "handover": [
+    {
+      "title": "Review and prototype",
+      "text": "Review representative models and data with the intended users before committing to the full visual scope."
+    },
+    {
+      "title": "Implement and verify",
+      "text": "Develop the agreed interfaces and views, then test them against the documented acceptance scenarios."
+    },
+    {
+      "title": "Handover and support",
+      "text": "Deliver the contracted build and documentation. Specify deployment, source-code rights, maintenance and licence responsibilities."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What will the first project deliver?",
+      "a": "A defined asset structure, selected 2D or 3D views, mapped data connections and agreed operator interactions. The statement of work identifies the model detail, interfaces, test scenarios and handover items for the initial asset set."
+    },
+    {
+      "q": "Is this a visualization project or a physical simulation?",
+      "a": "This service starts with connected asset representation and operational visualization. Physical simulation, state estimation, forecasting or diagnostic algorithms require separate models, suitable inputs and explicit validation."
+    },
+    {
+      "q": "Do we need a complete 3D model before starting?",
+      "a": "No. A project can begin with licensed floor plans, equipment diagrams or a limited asset model. The appropriate detail follows the operating task; a complex model is useful only when its additional context serves that task."
+    },
+    {
+      "q": "Can existing BIM or CAD files be reused?",
+      "a": "They can be reviewed for ownership, permitted reuse, format, geometry detail and conversion effort. The project should retain a mapping between model elements and operational asset identifiers after any conversion."
+    },
+    {
+      "q": "Can Hitelecom sensor data appear in the model?",
+      "a": "An agreed Hitelecom Cloud or other receiving-system integration can provide uploaded monitoring records and configured threshold events. The scope defines available channels, identity mapping, timestamps, data quality and refresh behavior."
+    },
+    {
+      "q": "Can customer SCADA, BMS or maintenance systems be connected?",
+      "a": "The interfaces can be assessed using sample APIs or data extracts and the customer’s access requirements. Protocol support, authentication, read/write boundaries and the responsible source system are defined per integration."
+    },
+    {
+      "q": "How are delayed or missing measurements shown?",
+      "a": "The data contract defines source timestamps, quality flags and stale-data rules. The user interface should display these states explicitly rather than treating a missing update as a normal or safe condition."
+    },
+    {
+      "q": "Are threshold alarms generated inside the digital twin?",
+      "a": "They may come from an existing monitoring platform or a separately scoped rules service. The project defines where thresholds are evaluated, how events reach the view and how notification or acknowledgement is handled."
+    },
+    {
+      "q": "Can the application control equipment?",
+      "a": "Control is not part of the visualization scope by default. Any command path needs an explicit functional design, permissions, interlocks, operational responsibility and verification appropriate to the equipment."
+    },
+    {
+      "q": "How is browser performance accepted?",
+      "a": "Agree the representative model, asset count, data profile, target devices and interactions before development. Test those scenarios with the proposed deployment architecture instead of making a universal performance promise."
+    },
+    {
+      "q": "Who receives source code, models and deployment materials?",
+      "a": "Source delivery, model ownership, reuse rights and deployment documentation are contractual items. Third-party models, libraries and services retain their licence terms; these should be identified before handover."
+    },
+    {
+      "q": "Why is there no product datasheet or fixed project price?",
+      "a": "This is a custom software service. A statement of work, interface schedule, deliverables list and acceptance plan define the actual project; cost and timing follow review of that scope."
+    }
+  ],
+  "enquiryIntro": "Share the operational questions, model samples and available data interfaces. We can assess a suitable development scope and the information needed for a proposal.",
+  "enquiryFields": [
+    {
+      "label": "Assets and users",
+      "placeholder": "Asset types, site count and intended users"
+    },
+    {
+      "label": "Models and visual scope",
+      "placeholder": "CAD/BIM/2D inputs, rights and required views"
+    },
+    {
+      "label": "Data sources",
+      "placeholder": "Platform, API samples, identifiers and refresh needs"
+    },
+    {
+      "label": "Delivery requirements",
+      "placeholder": "Hosting, source-code rights and acceptance priorities"
+    }
+  ],
+  "datasheet": null,
+  "image": "original-hero-digital-twin.webp",
+  "imageWidth": 400,
+  "imageHeight": 345
+}
