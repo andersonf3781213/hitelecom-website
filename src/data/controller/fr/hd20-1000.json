@@ -1,0 +1,734 @@
+{
+  "family": "HD20-1000 Series",
+  "model": "HD20-1000 Series",
+  "picturedModel": "HD20-1000 Series reference illustration",
+  "title": "Contrôleur IoT et RTU 4G HD20-1000 | Modbus TCP | Hitelecom",
+  "metaDescription": "Contrôleur IoT HD20-1000 avec DO, DI et AI configurables, acquisition et traitement local, commande locale, distante et conditionnelle, Modbus TCP et supervision Hitelecom Cloud.",
+  "heroHeading": "Contrôleur IoT et RTU.",
+  "heroValue": "Acquérez les données de terrain.\nCoordonnez la commande des équipements.",
+  "heroDescription": "La série Hitelecom HD20-1000 associe acquisition de données de terrain, supervision des équipements et commande définie pour le projet dans une RTU 4G LTE. Sélectionnez les configurations de DO, DI et AI et les raccordements d’instruments compatibles à partir de la liste des signaux de l’installation. Le traitement local, la commande locale, distante et conditionnelle, l’intégration Modbus TCP et les rôles de fonctionnement maître/esclave accompagnent les processus opérationnels des équipements. Configurez les paramètres pris en charge et mettez le micrologiciel à niveau à distance. Consultez en ligne les données de supervision transmises à Hitelecom Cloud et recevez des alertes lorsque les seuils configurés sont dépassés.",
+  "reviewNotice": "Les quantités d’E/S, les types électriques, les liaisons série installées, les rôles de protocole et les opérations prises en charge dépendent de la configuration fournie. Vérifiez cette configuration à partir de la liste des signaux des instruments et équipements avant de commander.",
+  "interfaceCards": [
+    {
+      "type": "DO · DI · AI",
+      "title": "E/S de terrain configurables",
+      "text": "Affectez les sorties numériques, les entrées numériques et les entrées analogiques à la liste des signaux de l’installation. Confirmez le type électrique des sorties et la charge autorisée, les définitions d’état des entrées, les plages analogiques et le nombre de points de la version commandée.",
+      "examples": [
+        "Circuits de commande d’équipement documentés",
+        "Retours de marche, de défaut et de position",
+        "Signaux de mesure externes compatibles"
+      ]
+    },
+    {
+      "type": "RS232 · RS485",
+      "title": "Liaisons série des équipements",
+      "text": "Intégrez les instruments et équipements compatibles via les liaisons série installées. Définissez le raccordement électrique, le brochage approuvé, les paramètres série, le protocole de l’appareil et la correspondance des données sources avant le raccordement.",
+      "examples": [
+        "Liaisons de données des instruments et équipements",
+        "Informations des contrôleurs existants",
+        "Échanges de commandes et lectures de confirmation pris en charge"
+      ]
+    },
+    {
+      "type": "Modbus TCP",
+      "title": "Échange de données Modbus TCP",
+      "text": "Définissez le chemin réseau, les rôles de fonctionnement pris en charge et la table de données de l’intégration Modbus TCP retenue. Précisez les interfaces physiques, les rôles de communication et les opérations de lecture ou d’écriture autorisées dans la conception du projet.",
+      "examples": [
+        "Correspondance documentée des données des équipements",
+        "Rôles d’initiation et de réponse définis",
+        "Échanges de données de supervision autorisés"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "E/S numériques et analogiques configurables",
+      "text": "Sélectionnez les configurations de DO, DI et AI à partir de la liste réelle des points de terrain. Adaptez les circuits de commande, les retours d’état et les mesures externes aux quantités de voies et aux caractéristiques électriques fournies."
+    },
+    {
+      "title": "Acquisition multipoint et traitement local",
+      "text": "Intégrez les mesures sélectionnées et les états d’équipement de plusieurs sources de terrain au processus d’acquisition et de traitement. Définissez l’identité des sources, les unités physiques, la mise à l’échelle et les besoins de mise à jour dans les limites des E/S et interfaces fournies."
+    },
+    {
+      "title": "Intégration série et Modbus TCP",
+      "text": "Intégrez les équipements compatibles à un chemin de données documenté via les liaisons série installées et les fonctions Modbus TCP prises en charge. Confirmez le protocole de l’appareil, l’architecture réseau et la correspondance des points pour chaque intégration."
+    },
+    {
+      "title": "Rôles de fonctionnement maître/esclave",
+      "text": "Configurez les rôles de coordination des appareils pris en charge pour le projet. Identifiez le nœud qui initie un échange, celui qui répond, ainsi que les données ou commandes autorisées pour l’interface et le protocole retenus."
+    },
+    {
+      "title": "Commande locale, distante et conditionnelle",
+      "text": "Définissez le mode de commande de chaque action autorisée, y compris sa condition de déclenchement, la priorité locale et les retours d’état disponibles. L’équipement connecté conserve ses séquences de fonctionnement, ses verrouillages et sa protection indépendante."
+    },
+    {
+      "title": "Données en ligne et alertes sur seuil",
+      "text": "Consultez en ligne les données de supervision transmises à Hitelecom Cloud et recevez des alertes lorsque les seuils configurés sont dépassés. Configurez les noms d’actifs, les unités physiques, les limites de supervision et le circuit de notification."
+    },
+    {
+      "title": "Configuration distante et mises à niveau du micrologiciel",
+      "text": "Réglez à distance les paramètres pris en charge et mettez à niveau le micrologiciel approuvé. Planifiez la maintenance selon le matériel livré, la version logicielle et la procédure du site, puis vérifiez la configuration et le fonctionnement après modification."
+    },
+    {
+      "title": "Chiens de garde matériel et logiciel",
+      "text": "Les mécanismes de surveillance matériel et logiciel contribuent à rétablir le fonctionnement après des états anormaux définis. Vérifiez la réinitialisation, la reconnexion et le comportement qui en résulte aux interfaces des équipements pour la configuration fournie."
+    }
+  ],
+  "workflow": [
+    {
+      "title": "Acquérir les points de terrain définis",
+      "text": "Identifiez la source du signal, l’interface installée et la signification opérationnelle de chaque point. Définissez les états numériques normaux, la mise à l’échelle analogique et toute table de données série avant la mise en service."
+    },
+    {
+      "title": "Évaluer les conditions et autorisations",
+      "text": "Choisissez le fonctionnement local, distant ou conditionnel pour la tâche autorisée. Définissez la condition de déclenchement, la priorité des commandes, les autorisations de l’équipement et les reprises locales nécessaires."
+    },
+    {
+      "title": "Émettre la commande prise en charge",
+      "text": "Transmettez l’action convenue par une interface d’équipement compatible sur les plans électrique et logique. Maintenez les séquences propres à l’équipement, ses verrouillages et sa protection indépendante."
+    },
+    {
+      "title": "Vérifier les retours d’état et les résultats en ligne",
+      "text": "Vérifiez les retours physiques ou les lectures de confirmation de l’appareil indépendamment de la transmission de la commande. Comparez les valeurs de supervision transmises avec l’instrument source et testez les alertes sur seuil configurées dans Hitelecom Cloud."
+    }
+  ],
+  "applicationsIntro": "Huit domaines d’application, comprenant chacun cinq tâches d’ingénierie, illustrent la connexion des mesures de terrain, des états d’équipement et des actions de commande autorisées. Ces 40 tâches sont des exemples de sélection, et non 40 voies ni la promesse que toutes les tâches fonctionnent sur un seul appareil. Affectez les points sélectionnés selon la configuration d’E/S et de liaisons série commandée, puis définissez la table de correspondance du protocole, les autorisations de commande et les retours d’état de l’installation.",
+  "groups": [
+    {
+      "id": "vending",
+      "title": "Distributeurs automatiques et équipements en libre-service",
+      "intro": "Raccordez les signaux de machine et les mesures externes sélectionnés à un processus de service défini pour les équipements de vente sans personnel. Utilisez les E/S fournies et les interfaces prises en charge pour la supervision et les actions auxiliaires autorisées ; la distribution des produits, les paiements et les transactions restent gérés par leurs systèmes dédiés.",
+      "imageKey": "hd1000-vending-availability",
+      "imageAlt": "Distributeurs automatiques sans marque dans un espace intérieur en libre-service",
+      "tasks": [
+        {
+          "title": "Disponibilité des machines et remontée des anomalies",
+          "text": "Regroupez les indications documentées de disponibilité, de fonctionnement et de service afin que l’opérateur distingue une machine utilisable d’une machine nécessitant une intervention.",
+          "interface": "Affectez les signaux DI compatibles ou les données d’équipement prises en charge à une liste d’états convenue ; définissez la signification normale de chaque point.",
+          "control": "Configurez la transmission des événements et les notifications de service. Toute demande distante doit être prise en charge par le fournisseur de la machine et autorisée par ses conditions locales de fonctionnement.",
+          "verification": "Comparez chaque état à la machine source et testez séparément les situations d’indisponibilité, de maintenance et de défaut.",
+          "imageKey": "hd1000-vending-availability",
+          "imageAlt": "Distributeurs automatiques sans marque dans un espace intérieur en libre-service"
+        },
+        {
+          "title": "Mesure de réfrigération et réponse sur seuil",
+          "text": "Ajoutez une mesure externe de température du compartiment à la vue de supervision, avec la condition de fonctionnement correspondante de la machine.",
+          "interface": "Adaptez la plage AI fournie ou l’interface de données d’instrument prise en charge au transmetteur externe de température et à l’identité du compartiment.",
+          "control": "Utilisez les seuils configurés pour les notifications dans le cloud ou une réponse auxiliaire locale convenue. L’unité frigorifique conserve la régulation de température et la protection du compresseur.",
+          "verification": "Vérifiez les mesures sources, l’emplacement de la sonde et la réception des notifications ; distinguez un défaut de transmetteur d’un événement frigorifique réel.",
+          "imageKey": "hd1000-vending-refrigeration",
+          "imageAlt": "Compartiment réfrigéré de distributeur automatique avec sonde de température externe"
+        },
+        {
+          "title": "Événements d’accès de service et maintenance autorisée",
+          "text": "Enregistrez les événements sélectionnés de porte de service ou d’accès pour aider l’opérateur à rapprocher une visite de la machine de ses données.",
+          "interface": "Utilisez un contact de porte électriquement compatible via la configuration DI fournie, ou l’interface documentée d’état d’accès de la machine.",
+          "control": "Définissez les événements d’accès qui doivent prévenir l’équipe de service et les autorisations locales de maintenance applicables ; ne présumez pas d’un système de contrôle d’accès.",
+          "verification": "Actionnez la porte réelle et vérifiez l’état source, l’identité de l’actif et le comportement des notifications, y compris pendant la maintenance planifiée.",
+          "imageKey": "hd1000-vending-service-access",
+          "imageAlt": "Porte de maintenance de distributeur automatique et contact de porte"
+        },
+        {
+          "title": "Gestion des condensats et des événements de fuite",
+          "text": "Surveillez un niveau externe de condensats ou un signal de fuite dans le compartiment de service avant d’affecter l’intervention nécessaire.",
+          "interface": "Sélectionnez une indication DI compatible ou l’acquisition d’un transmetteur par AI selon le détecteur et la spécification d’interface fournie.",
+          "control": "Émettez une notification ou une demande auxiliaire autorisée selon le fonctionnement local, distant ou conditionnel défini ; conservez la protection indépendante de la machine.",
+          "verification": "Testez la zone de détection et vérifiez séparément l’événement source et toute réponse auxiliaire physique.",
+          "imageKey": "hd1000-vending-condensate",
+          "imageAlt": "Bac à condensats et tube d’évacuation dans le compartiment de maintenance d’un distributeur automatique"
+        },
+        {
+          "title": "Éclairage auxiliaire de présentation et signalisation de service",
+          "text": "Définissez les demandes d’éclairage ou de signalisation de service séparément de la séquence de distribution des produits.",
+          "interface": "Raccordez une DO fournie à un circuit de commande auxiliaire électriquement compatible et identifiez les retours d’état disponibles lors de la sélection.",
+          "control": "Définissez les priorités locales et distantes ainsi que toute condition de fonctionnement convenue. Excluez les paiements, la distribution et les fonctions de sécurité de cette tâche auxiliaire.",
+          "verification": "Vérifiez la réponse physique de l’éclairage ou de l’indicateur et la reprise locale ; une commande de sortie ne confirme pas à elle seule l’éclairage.",
+          "imageKey": "hd1000-vending-indication",
+          "imageAlt": "Vitrine éclairée de distributeur automatique et voyant de maintenance distinct"
+        }
+      ]
+    },
+    {
+      "id": "shelving",
+      "title": "Rayonnages électroniques et mobilier commercial",
+      "intro": "Rendez visibles les contrôleurs de rayonnages, les services du mobilier et les points d’instrumentation sélectionnés en magasin. L’intégration utilise des signaux externes documentés ou des échanges de données pris en charge ; le raccordement d’un meuble ne définit pas une compatibilité native avec un réseau d’étiquettes électroniques de prix ou une plateforme tarifaire.",
+      "imageKey": "hd1000-shelf-controller",
+      "imageAlt": "Rayonnages et équipements de vente dans un magasin sans marque identifiable",
+      "tasks": [
+        {
+          "title": "Consolidation des états de service des contrôleurs de rayonnages",
+          "text": "Collectez les informations sélectionnées de disponibilité, de maintenance ou de défaut général des contrôleurs de rayonnages et du mobilier commercial connectés du magasin.",
+          "interface": "Définissez les sorties externes d’état disponibles ou les points de données pris en charge par le contrôleur et affectez-les aux interfaces fournies.",
+          "control": "Utilisez l’état transmis pour acheminer une notification de service. Les mises à jour de prix et la gestion des étiquettes électroniques restent assurées par la plateforme commerciale concernée.",
+          "verification": "Comparez l’état transmis au contrôleur source et à la zone correcte du mobilier avant d’attribuer une priorité d’intervention.",
+          "imageKey": "hd1000-shelf-controller",
+          "imageAlt": "Rayonnages et équipements de vente dans un magasin sans marque identifiable"
+        },
+        {
+          "title": "Données environnementales des zones de rayonnage",
+          "text": "Associez les mesures externes de température ou d’humidité à la zone de rayonnage et à la hauteur de stockage qu’elles représentent.",
+          "interface": "Adaptez chaque sortie de transmetteur ou échange de données d’instrument pris en charge à l’interface d’acquisition fournie et aux unités physiques.",
+          "control": "Configurez les limites de supervision retenues pour le site et le circuit de notification ; toute demande de ventilation nécessite une interface de commande du mobilier définie séparément.",
+          "verification": "Vérifiez la mesure source et l’emplacement physique. Un seul point de mesure ne définit pas les conditions de tout le magasin.",
+          "imageKey": "hd1000-shelf-environment",
+          "imageAlt": "Sonde de température et d’humidité près d’une zone de rayonnages commerciaux"
+        },
+        {
+          "title": "Services basse tension et demandes d’éclairage",
+          "text": "Surveillez les indications sélectionnées des services basse tension et définissez les demandes d’éclairage auxiliaire du compartiment de service d’un mobilier commercial.",
+          "interface": "Identifiez les signaux compatibles d’alimentation ou d’état de service et le circuit de commande auxiliaire autorisé pour la configuration d’E/S fournie.",
+          "control": "Distinguez une alarme d’alimentation surveillée d’une commande d’éclairage ; maintenez l’accès local de service et la protection électrique du mobilier.",
+          "verification": "Vérifiez l’alarme source et la réponse réelle de l’éclairage, puis documentez l’état normal avant d’activer le fonctionnement distant.",
+          "imageKey": "hd1000-retail-fixture-services",
+          "imageAlt": "Compartiment de service d’un mobilier commercial avec alimentation basse tension et raccordements d’éclairage"
+        },
+        {
+          "title": "Accès à la vitrine et contexte de maintenance",
+          "text": "Reliez une indication d’accès à la vitrine aux mesures et données de fonctionnement du mobilier pour interpréter les visites de service dans leur contexte.",
+          "interface": "Utilisez un contact d’accès compatible ou un état documenté du contrôleur de vitrine et définissez sa signification électrique et opérationnelle normale.",
+          "control": "Configurez les notifications de maintenance et les demandes de service autorisées sans remplacer les commandes dédiées d’accès ou de réfrigération.",
+          "verification": "Vérifiez les événements d’ouverture et de fermeture sur la porte de service réelle, en distinguant la maintenance planifiée d’un événement inattendu.",
+          "imageKey": "hd1000-retail-cabinet-access",
+          "imageAlt": "Porte de maintenance d’une vitrine de vente et contact de verrou"
+        },
+        {
+          "title": "Informations de sous-comptage des circuits commerciaux",
+          "text": "Lisez les mesures électriques sélectionnées d’un compteur externe compatible mesurant les paramètres du circuit du mobilier ou d’un circuit de services du magasin.",
+          "interface": "Définissez l’interface prise en charge par le compteur, les données et les unités physiques ; ne déduisez pas un protocole ou un nombre de voies de la photo de l’armoire.",
+          "control": "Utilisez les mesures retenues pour l’analyse opérationnelle et les notifications configurées. La facturation, la tarification et la coupure nécessitent une intégration spécifique définie.",
+          "verification": "Comparez les mesures à l’affichage du compteur et identifiez le circuit et la période de mesure source représentés par chaque valeur.",
+          "imageKey": "hd1000-retail-meter-data",
+          "imageAlt": "Sous-compteurs électriques et câblage de borniers dans un tableau de service"
+        }
+      ]
+    },
+    {
+      "id": "plc-controls",
+      "title": "PLC et automatisation existante",
+      "intro": "Étendez la supervision et les fonctions de commande de niveau supérieur autorisées des équipements de contrôle existants via des interfaces d’E/S et de données définies. Précisez les rôles des appareils et les opérations Modbus TCP prises en charge, le cas échéant ; la RTU complète le contrôleur installé sans remplacer ses séquences temps réel ni ses fonctions de sécurité.",
+      "imageKey": "hd1000-plc-selected-data",
+      "imageAlt": "Armoire de commande industrielle avec équipements PLC et câblage de borniers",
+      "tasks": [
+        {
+          "title": "Données sélectionnées du contrôleur et états des équipements",
+          "text": "Exposez un sous-ensemble documenté de valeurs du contrôleur et d’états de fonctionnement pour rendre les équipements visibles à distance.",
+          "interface": "Définissez les échanges de données pris en charge ou les signaux externes d’état compatibles, les points concernés et les rôles de communication attribués.",
+          "control": "Séparez la supervision en lecture seule des accès en écriture ou de commande autorisés ; conservez les séquences et les priorités opérationnelles du contrôleur existant.",
+          "verification": "Comparez les valeurs retenues à l’interface du contrôleur et vérifiez que le chemin de supervision ajouté ne modifie pas la séquence normale.",
+          "imageKey": "hd1000-plc-selected-data",
+          "imageAlt": "Armoire de commande industrielle avec équipements PLC et câblage de borniers"
+        },
+        {
+          "title": "Extension des points d’instrumentation externes",
+          "text": "Ajoutez des mesures d’instruments compatibles au processus de supervision lorsque le point requis n’est pas déjà disponible dans le contrôleur existant.",
+          "interface": "Adaptez chaque transmetteur externe ou instrument série documenté à l’interface d’acquisition installée et à la table de données convenue.",
+          "control": "Utilisez une condition opérationnelle choisie pour une notification ou une demande de commande de niveau supérieur autorisée ; la protection du procédé reste dans le système de contrôle dédié.",
+          "verification": "Validez les unités sources et la mise à l’échelle, puis comparez la valeur distante à l’instrument physique dans des conditions représentatives.",
+          "imageKey": "hd1000-plc-instrument-expansion",
+          "imageAlt": "Instruments industriels externes et câblage de borniers dans une armoire de service"
+        },
+        {
+          "title": "Collecte d’événements des étapes du procédé",
+          "text": "Relevez les indications sélectionnées de fin d’étape, de présence de produit ou d’état de fonctionnement pour situer un procédé dans son cycle normal.",
+          "interface": "Utilisez des points DI compatibles ou les données documentées du contrôleur ; définissez le sens de l’événement et l’actif source de chaque indication retenue.",
+          "control": "Transmettez les événements de procédé et les anomalies de service convenus. La commande de mouvement, les arrêts d’urgence et les verrouillages de sécurité restent dans le système de la machine.",
+          "verification": "Observez la séquence réelle et confirmez chaque étape signalée ; un capteur connecté ou un message ne prouve pas l’achèvement de la production.",
+          "imageKey": "hd1000-plc-stage-events",
+          "imageAlt": "Convoyeur avec capteurs d’état de procédé et infrastructure de commande"
+        },
+        {
+          "title": "Demandes de commande de niveau supérieur avec autorisations locales",
+          "text": "Fournissez une demande distante convenue d’autorisation ou de fonctionnement auxiliaire à un équipement disposant déjà d’une interface de supervision documentée.",
+          "interface": "Sélectionnez un circuit de commande DO compatible ou une opération de données prise en charge, puis identifiez les indications d’autorisation et de réponse disponibles.",
+          "control": "Définissez la reprise locale, la priorité des commandes et la condition de déclenchement avant d’activer le fonctionnement local, distant ou conditionnel.",
+          "verification": "Testez séparément la demande et la réponse de l’équipement, y compris le refus en l’absence d’autorisation locale.",
+          "imageKey": "hd1000-plc-supervisory-requests",
+          "imageAlt": "Pupitre de commande de machine avec boutons de commande auxiliaires"
+        },
+        {
+          "title": "Coordination des demandes de service et acquittements",
+          "text": "Coordonnez une demande de service ou un acquittement sélectionné avec la procédure de maintenance existante de l’équipement.",
+          "interface": "Définissez l’opération de commande externe prise en charge et les informations d’état confirmant son acceptation par l’équipement source.",
+          "control": "Limitez l’action à la fonction auxiliaire documentée. Un acquittement ne supprime pas un défaut physique et ne réarme pas une protection indépendante.",
+          "verification": "Vérifiez l’indication source avant et après l’action, en distinguant clairement l’acquittement de la disparition du défaut.",
+          "imageKey": "hd1000-plc-service-acknowledgement",
+          "imageAlt": "Commandes auxiliaires de demande d’intervention et d’acquittement sur une armoire"
+        }
+      ]
+    },
+    {
+      "id": "environmental-monitoring",
+      "title": "Installations de supervision environnementale",
+      "intro": "Regroupez les mesures compatibles des procédés de traitement, les données d’instruments et les états d’équipement dans un processus de supervision défini. La RTU raccorde les interfaces de mesure externes et de commande autorisée ; l’étalonnage des analyseurs, la protection du procédé et la conformité environnementale restent sous la responsabilité des instruments et procédures d’exploitation concernés.",
+      "imageKey": "hd1000-treatment-process",
+      "imageAlt": "Installation de traitement de l’eau avec instruments de procédé, réservoirs et tuyauteries",
+      "tasks": [
+        {
+          "title": "Variables du procédé de traitement de l’eau",
+          "text": "Collectez les valeurs sélectionnées de pression, de niveau ou d’autres instruments compatibles d’une installation de traitement et associez-les à l’actif de procédé concerné.",
+          "interface": "Adaptez la sortie de l’instrument externe ou les données d’équipement prises en charge à l’AI ou à l’interface de communication fournie et à la plage physique.",
+          "control": "Configurez les seuils de supervision et la notification opérationnelle requise. Toute demande liée au procédé doit utiliser une interface locale d’équipement approuvée.",
+          "verification": "Comparez la valeur transmise à l’instrument source et confirmez ses unités, son emplacement et sa signification opérationnelle valide.",
+          "imageKey": "hd1000-treatment-process",
+          "imageAlt": "Installation de traitement de l’eau avec instruments de procédé, réservoirs et tuyauteries"
+        },
+        {
+          "title": "Mesures d’échantillons de qualité de l’eau",
+          "text": "Ajoutez les valeurs sélectionnées d’analyseurs ou de transmetteurs d’un banc d’échantillonnage à la vue de supervision de l’installation.",
+          "interface": "Définissez la sortie de l’instrument, les données et les informations de validité de la source pour la configuration d’acquisition installée.",
+          "control": "Définissez les limites de supervision configurées et le circuit de notification ; le nettoyage et l’étalonnage suivent la procédure propre à l’analyseur.",
+          "verification": "Comparez les mesures affichées et transmises et identifiez les états de préchauffage, de maintenance ou d’étalonnage avant d’interpréter un dépassement.",
+          "imageKey": "hd1000-water-quality-sampling",
+          "imageAlt": "Rack d’échantillonnage de qualité de l’eau avec cellules de mesure en circulation"
+        },
+        {
+          "title": "Signaux de marche et d’anomalie des unités de traitement",
+          "text": "Regroupez les informations sélectionnées de marche, de mode local et de défaut général d’une unité pour appuyer une réponse de service définie.",
+          "interface": "Sélectionnez les sorties compatibles d’état d’équipement ou les données documentées de l’unité et identifiez l’état normal de chaque point.",
+          "control": "Émettez une demande auxiliaire autorisée uniquement via la commande prise en charge par l’unité, en conservant les priorités et protections locales.",
+          "verification": "Vérifiez l’état réel de l’unité et les retours d’état disponibles ; une demande de démarrage ne prouve pas que le traitement ou la circulation a lieu.",
+          "imageKey": "hd1000-treatment-package",
+          "imageAlt": "Module de traitement avec pompe et indications locales de fonctionnement"
+        },
+        {
+          "title": "Événements d’extraction et d’état des filtres",
+          "text": "Surveillez les indications sélectionnées de pression différentielle ou d’équipement autour d’une installation de filtration et d’extraction.",
+          "interface": "Adaptez les signaux compatibles des transmetteurs externes et les retours de fonctionnement disponibles à l’interface fournie et à la plage source.",
+          "control": "Utilisez les conditions convenues pour les notifications d’inspection ou une demande auxiliaire de ventilation autorisée ; les protections dédiées du ventilateur et du procédé restent actives.",
+          "verification": "Vérifiez les mesures sources et les raccordements de détection et distinguez un défaut d’instrument d’une condition réelle du filtre ou du débit d’air.",
+          "imageKey": "hd1000-extraction-filter",
+          "imageAlt": "Caisson de filtre et conduit d’extraction avec points externes de mesure de pression"
+        },
+        {
+          "title": "Demandes et confirmation des unités d’échantillonnage",
+          "text": "Supervisez une unité d’échantillonnage sélectionnée via son interface de mesure, d’état de marche ou de commande documentée.",
+          "interface": "Définissez les points d’acquisition installés, le circuit de demande ou l’opération de données autorisés et les retours de débit ou d’équipement disponibles.",
+          "control": "Appliquez les demandes locales, distantes ou conditionnelles uniquement dans le périmètre opérationnel documenté et les autorisations de maintenance de l’unité.",
+          "verification": "Confirmez séparément le résultat physique de l’échantillonnage ou le retour de l’instrument ; l’acceptation d’un message ne prouve pas que l’échantillon est arrivé à destination.",
+          "imageKey": "hd1000-sampling-package",
+          "imageAlt": "Pompe de prélèvement externe et tubes d’instrumentation"
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Agriculture intelligente et irrigation",
+      "intro": "Raccordez les instruments agricoles externes et les signaux sélectionnés des actionneurs ou unités à des tâches de supervision et de commande définies pour le site. Adaptez les E/S fournies, les autorisations d’exploitation et les retours d’état à l’installation ; les décisions agronomiques, les procédures de dosage et la protection indépendante restent dans leurs systèmes dédiés.",
+      "imageKey": "hd1000-greenhouse-actuator",
+      "imageAlt": "Actionneur de ventilation de serre et dispositifs de position d’ouvrant",
+      "tasks": [
+        {
+          "title": "Ventilation de serre et retour de position",
+          "text": "Reliez une mesure externe de serre à une demande de ventilation autorisée et à l’indication de position disponible de l’actionneur.",
+          "interface": "Sélectionnez des mesures AI compatibles, les interfaces de commande de l’actionneur et les signaux DI de position dans les limites de la configuration d’E/S installée.",
+          "control": "Définissez la demande locale, distante ou conditionnelle et conservez les priorités locales d’exploitation et la protection des équipements de la serre.",
+          "verification": "Observez la course réelle de l’ouvrant et le retour de position disponible ; l’état de la commande ne confirme pas à lui seul l’ouverture ou la fermeture.",
+          "imageKey": "hd1000-greenhouse-actuator",
+          "imageAlt": "Actionneur de ventilation de serre et dispositifs de position d’ouvrant"
+        },
+        {
+          "title": "Autorisations des vannes d’irrigation et position confirmée",
+          "text": "Supervisez une vanne d’irrigation sélectionnée avec une demande de commande autorisée et l’indication de fin de course ou de débit disponible.",
+          "interface": "Adaptez la DO fournie à un circuit de commande d’actionneur compatible et identifiez les retours DI ou d’instrument pris en charge pour la vanne retenue.",
+          "control": "Définissez la reprise locale, l’autorisation de fonctionnement et la condition pouvant initier une demande ; la capacité d’entraînement direct du moteur n’est pas présumée.",
+          "verification": "Vérifiez le mouvement physique de la vanne et les retours disponibles dans les conditions d’exploitation convenues, y compris la commande manuelle.",
+          "imageKey": "hd1000-irrigation-valve",
+          "imageAlt": "Vanne d’irrigation motorisée et collecteur de distribution"
+        },
+        {
+          "title": "Pression d’irrigation et contexte opérationnel",
+          "text": "Surveillez une mesure externe de pression avec les informations sélectionnées d’une pompe ou d’une vanne pour interpréter les conditions d’irrigation.",
+          "interface": "Adaptez la sortie du transmetteur, la plage physique et les indications d’état disponibles à la configuration d’acquisition fournie.",
+          "control": "Configurez des notifications de pression ou une demande de commande de niveau supérieur convenue ; le système local d’irrigation conserve ses séquences et protections.",
+          "verification": "Comparez les mesures locales et distantes dans les états d’exploitation convenus et distinguez un défaut de mesure d’un événement réel de pression.",
+          "imageKey": "hd1000-irrigation-pressure",
+          "imageAlt": "Instruments de pression sur un collecteur de distribution d’irrigation"
+        },
+        {
+          "title": "Niveau d’eau stockée et autorisations de transfert",
+          "text": "Associez une mesure de niveau de stockage à l’état de la pompe concernée et aux autorisations nécessaires pour une demande de transfert.",
+          "interface": "Utilisez l’acquisition compatible d’un transmetteur de niveau et les signaux d’état d’équipement disponibles, en documentant la plage source et les états normaux.",
+          "control": "Définissez les notifications de niveau configurées et les conditions de transfert autorisées. Les séquences de pompage, la protection contre la marche à sec et la priorité manuelle restent dans l’installation.",
+          "verification": "Vérifiez la référence de niveau et la réponse réelle de la pompe indépendamment de toute commande, y compris les indications sources non valides ou indisponibles.",
+          "imageKey": "hd1000-agricultural-water-storage",
+          "imageAlt": "Réservoir de stockage d’eau agricole avec pompe de transfert adjacente"
+        },
+        {
+          "title": "Mesures aquacoles et état de l’aération",
+          "text": "Intégrez les mesures compatibles d’instruments d’eau et les états sélectionnés d’équipements d’aération au processus de supervision du site.",
+          "interface": "Définissez les sorties des analyseurs ou transmetteurs externes et les retours d’équipement disponibles pour les interfaces fournies.",
+          "control": "Utilisez les notifications configurées ou une demande de supervision documentée ; les décisions de traitement et la protection de l’aération restent assurées par le système de commande local.",
+          "verification": "Comparez les mesures à l’instrument source, enregistrez les événements de maintenance et confirmez l’aération réelle indépendamment d’une demande distante.",
+          "imageKey": "hd1000-aquaculture-supervision",
+          "imageAlt": "Bassins d’aquaculture avec équipements d’aération et infrastructure de rive"
+        }
+      ]
+    },
+    {
+      "id": "remote-stations",
+      "title": "Stations sans personnel et sites distants",
+      "intro": "Raccordez les points sélectionnés d’accès, de services et d’équipement des stations réparties à un processus opérationnel défini. Délimitez le service cellulaire, le câblage de terrain et la protection de l’installation selon le site. La visibilité distante aide les opérateurs tout en conservant les priorités locales et les protections indépendantes.",
+      "imageKey": "hd1000-station-service-access",
+      "imageAlt": "Porte de service d’une armoire de station sans personnel avec contact et commandes locales de service",
+      "tasks": [
+        {
+          "title": "Accès de service aux stations et autorisations locales",
+          "text": "Enregistrez un événement sélectionné de porte d’armoire et associez-le à une action locale de service ou une condition de maintenance d’une station sans personnel.",
+          "interface": "Adaptez le contact d’accès et tout signal documenté d’état de service à la configuration DI fournie et aux définitions sources.",
+          "control": "Définissez le traitement des interventions planifiées, les notifications et toute demande auxiliaire autorisée sans remplacer le contrôle d’accès dédié du site.",
+          "verification": "Actionnez la porte réelle et le dispositif local de service, puis vérifiez l’identité du point et l’état transmis avant d’activer l’utilisation distante.",
+          "imageKey": "hd1000-station-service-access",
+          "imageAlt": "Porte de service d’une armoire de station sans personnel avec contact et commandes locales de service"
+        },
+        {
+          "title": "Alarmes des conditions d’alimentation des stations",
+          "text": "Collectez les indications sélectionnées du contrôleur d’alimentation afin que le personnel distingue fonctionnement normal, maintenance et anomalie d’équipement.",
+          "interface": "Utilisez les signaux externes d’état compatibles ou les données documentées de l’équipement ; identifiez le sens et l’état normal de chaque point retenu.",
+          "control": "Acheminez les notifications configurées vers le processus de maintenance ; le transfert d’alimentation, la charge et la protection des charges restent dans le système électrique dédié.",
+          "verification": "Comparez les conditions transmises au contrôleur source et testez le circuit de notification convenu selon une procédure de service autorisée.",
+          "imageKey": "hd1000-station-power",
+          "imageAlt": "Équipements d’alimentation de secours et contacts d’alarme sur un site distant"
+        },
+        {
+          "title": "Demandes de ventilation d’armoire et retour du ventilateur",
+          "text": "Associez une mesure externe de température d’armoire aux informations disponibles de ventilation pour une tâche auxiliaire définie.",
+          "interface": "Sélectionnez une acquisition de mesure compatible, le retour d’état du ventilateur et une interface de commande auxiliaire autorisée lorsqu’elle est installée.",
+          "control": "Appliquez la demande locale, distante ou conditionnelle convenue et définissez la reprise locale avant d’activer la supervision distante.",
+          "verification": "Vérifiez les mesures sources et le fonctionnement réel du ventilateur, puis sélectionnez l’armoire et la protection d’installation selon les conditions du site.",
+          "imageKey": "hd1000-station-ventilation",
+          "imageAlt": "Ventilateur et sonde environnementale dans une armoire de terrain"
+        },
+        {
+          "title": "Points de mesure des batteries et des services",
+          "text": "Transmettez les valeurs sélectionnées d’un transducteur externe de batterie ou de services avec le contexte opérationnel de la station.",
+          "interface": "Adaptez la sortie du transducteur ou l’interface de données documentée à la version fournie, aux unités et au point physique de mesure.",
+          "control": "Utilisez les alertes de supervision configurées pour les valeurs retenues ; la charge, l’équilibrage et la protection électrique restent dans le système de batterie ou d’alimentation.",
+          "verification": "Vérifiez la mesure source et la mise à l’échelle. Une seule valeur de télémétrie ne définit pas l’état de santé ni la durée de vie restante d’une batterie.",
+          "imageKey": "hd1000-station-battery",
+          "imageAlt": "Transducteur externe de surveillance de batteries près du parc de batteries d’une station"
+        },
+        {
+          "title": "Événements de fuite en local technique et réponse auxiliaire",
+          "text": "Surveillez une indication externe de fuite compatible dans le local technique et définissez l’intervention nécessaire.",
+          "interface": "Sélectionnez le détecteur et l’interface DI ou de transmetteur compatibles ; le raccordement direct d’une sonde passive sans son interface requise n’est pas présumé.",
+          "control": "Utilisez des notifications configurées ou une demande auxiliaire de drainage approuvée tout en conservant les autorisations d’exploitation du contrôleur local.",
+          "verification": "Testez la zone physique de détection et vérifiez séparément l’événement source, la notification et toute réponse auxiliaire réelle.",
+          "imageKey": "hd1000-station-leakage",
+          "imageAlt": "Zone de détection de fuites au sol d’un local technique distant"
+        }
+      ]
+    },
+    {
+      "id": "industrial-equipment",
+      "title": "Équipements industriels et commande auxiliaire",
+      "intro": "Intégrez les mesures sélectionnées des machines, les signaux d’état et les commandes auxiliaires autorisées à un processus opérationnel défini. Choisissez les E/S fournies et les échanges de données pris en charge selon la liste réelle des points ; la RTU ne remplace pas les séquences des machines, les commandes de sécurité ni la protection dédiée du procédé.",
+      "imageKey": "hd1000-machine-operation",
+      "imageAlt": "Machine industrielle et équipements auxiliaires dans un atelier de production",
+      "tasks": [
+        {
+          "title": "Fonctionnement des machines et anomalies de service",
+          "text": "Collectez un ensemble sélectionné d’indications de marche, de mode local et de défaut général d’une machine ou d’une unité auxiliaire.",
+          "interface": "Utilisez des signaux externes d’état compatibles ou des données d’équipement prises en charge, en reliant chaque point au bon actif et à sa signification opérationnelle normale.",
+          "control": "Configurez les notifications de service et les demandes auxiliaires autorisées dans le périmètre de commande documenté par le fournisseur de la machine.",
+          "verification": "Comparez les états transmis au fonctionnement réel de la machine et à l’interface locale, y compris la maintenance planifiée et la perte d’un signal source.",
+          "imageKey": "hd1000-machine-operation",
+          "imageAlt": "Machine industrielle et équipements auxiliaires dans un atelier de production"
+        },
+        {
+          "title": "Demandes de fonctionnement des unités de compression",
+          "text": "Supervisez les mesures et états de fonctionnement sélectionnés du compresseur avant de définir toute demande autorisée à l’unité.",
+          "interface": "Définissez les sorties compatibles de mesure ou d’état, l’interface de commande et les retours pris en charge par la configuration livrée.",
+          "control": "Définissez la demande autorisée et la priorité locale ; les séquences du compresseur, les conditions de redémarrage et l’arrêt de protection restent gérés par le contrôleur de l’unité.",
+          "verification": "Vérifiez séparément la commande et la réponse opérationnelle réelle, puis contrôlez la signification des indications de défaut sources.",
+          "imageKey": "hd1000-compressor-control",
+          "imageAlt": "Groupe compresseur industriel et indicateurs locaux de fonctionnement"
+        },
+        {
+          "title": "Mesures et retours d’état de circulation frigorifique",
+          "text": "Reliez les mesures externes de pression ou de température aux informations de marche disponibles d’un auxiliaire de refroidissement ou de circulation.",
+          "interface": "Adaptez les sorties compatibles des instruments et les retours d’état des équipements à l’interface d’acquisition fournie et au circuit physique.",
+          "control": "Utilisez les conditions convenues pour les notifications ou une demande de commande de niveau supérieur autorisée ; les protections indépendantes du procédé et des équipements restent actives.",
+          "verification": "Comparez les mesures aux instruments sources et vérifiez la circulation réelle ou les retours d’état indépendamment de la demande de sortie.",
+          "imageKey": "hd1000-cooling-circulation",
+          "imageAlt": "Pompe de circulation de refroidissement et tuyauterie d’échangeur de chaleur"
+        },
+        {
+          "title": "Course d’actionneur et vérification des fins de course",
+          "text": "Supervisez la relation entre une demande autorisée à l’actionneur et les signaux de fin de course disponibles sur une vanne industrielle.",
+          "interface": "Sélectionnez des interfaces de commande et de retour électriquement compatibles avec les E/S fournies et le circuit de commande de l’actionneur.",
+          "control": "Définissez la demande de mouvement autorisée, la reprise locale et l’autorisation de fonctionnement ; ne considérez pas l’activation d’une sortie comme une position établie de la vanne.",
+          "verification": "Observez la course de l’actionneur et les retours de fin de course lors de la mise en service, y compris une demande non exécutée ou interrompue.",
+          "imageKey": "hd1000-actuator-travel",
+          "imageAlt": "Actionneur de vanne industrielle avec boîtier de contacts de fin de course"
+        },
+        {
+          "title": "Auxiliaires industriels de ventilation et de circuits hydrauliques thermiques",
+          "text": "Raccordez les valeurs sélectionnées d’instruments de traitement d’air ou de circuits hydrauliques thermiques et les états disponibles d’équipements auxiliaires à un processus opérationnel.",
+          "interface": "Adaptez les sorties de transmetteurs externes et les retours d’équipement pris en charge aux interfaces fournies et à la liste des points.",
+          "control": "Appliquez les demandes de commande de niveau supérieur autorisées ou les notifications configurées ; la régulation de température, la protection antigel et les verrouillages restent locaux.",
+          "verification": "Vérifiez les emplacements de mesure et la réponse auxiliaire réelle, en distinguant une mise à jour d’état d’un résultat physique vérifié.",
+          "imageKey": "hd1000-industrial-hvac",
+          "imageAlt": "Équipement de traitement d’air avec tuyauterie hydraulique et instruments externes"
+        }
+      ]
+    },
+    {
+      "id": "transport-infrastructure",
+      "title": "Installations auxiliaires de transport et de bord de route",
+      "intro": "Supervisez les armoires de bord de route, les instruments de terrain et les auxiliaires d’installations de transport sélectionnés via des interfaces externes documentées. Le périmètre couvre la visibilité opérationnelle et les actions auxiliaires autorisées ; les phases des feux, les enclenchements ferroviaires, la commande d’urgence et les autres fonctions de sécurité restent dans leurs systèmes dédiés.",
+      "imageKey": "hd1000-roadside-cabinet",
+      "imageAlt": "Armoire d’infrastructure routière dans une installation de transport",
+      "tasks": [
+        {
+          "title": "Événements des armoires de services routières",
+          "text": "Associez les accès d’armoire et les anomalies d’équipement sélectionnés au bon actif de bord de route pour une réponse de service définie.",
+          "interface": "Sélectionnez des signaux compatibles d’accès ou d’état d’équipement, ou des données de contrôleur prises en charge, et documentez la signification normale de chaque point.",
+          "control": "Configurez les notifications de maintenance et la signalisation locale de service autorisée sans reprendre les fonctions de commande de circulation ou de sécurité.",
+          "verification": "Testez les événements sources sur l’armoire réelle et vérifiez l’identité de l’actif et le circuit de notification convenu.",
+          "imageKey": "hd1000-roadside-cabinet",
+          "imageAlt": "Armoire d’infrastructure routière dans une installation de transport"
+        },
+        {
+          "title": "Température des enveloppes et demandes de ventilation",
+          "text": "Associez une mesure externe de température d’armoire à l’état de ventilation disponible d’une enveloppe d’équipements de bord de route.",
+          "interface": "Adaptez l’acquisition compatible du transmetteur, le retour du ventilateur et un circuit de commande auxiliaire autorisé à la version fournie.",
+          "control": "Utilisez les conditions d’exploitation convenues pour les notifications ou demandes de ventilation tout en conservant la reprise locale et la protection des équipements.",
+          "verification": "Vérifiez la réponse réelle du ventilateur et les mesures sources, puis sélectionnez la protection du site selon les conditions d’exposition de l’installation.",
+          "imageKey": "hd1000-roadside-ventilation",
+          "imageAlt": "Ventilateur et sonde de température d’une armoire d’équipements routiers"
+        },
+        {
+          "title": "Données d’instruments météorologiques externes de terrain",
+          "text": "Acquérez les valeurs sélectionnées d’instruments météorologiques externes compatibles pour fournir aux opérateurs un contexte environnemental local.",
+          "interface": "Définissez la sortie de l’instrument, la représentation des données, les unités et l’emplacement pour la configuration d’acquisition ou de communication fournie.",
+          "control": "Configurez les notifications selon les limites d’observation retenues ; la prévision et les décisions automatiques de fermeture de route nécessitent des systèmes définis séparément.",
+          "verification": "Comparez les mesures à l’instrument source et examinez son implantation et son exposition avant d’interpréter une évolution locale.",
+          "imageKey": "hd1000-transport-weather",
+          "imageAlt": "Instruments météorologiques externes près d’une infrastructure de transport"
+        },
+        {
+          "title": "Niveau de drainage et retour des pompes",
+          "text": "Raccordez les indications sélectionnées de niveau de puisard et de contrôleur de pompe d’une installation de drainage de tunnel ou de transport.",
+          "interface": "Adaptez le transmetteur externe de niveau et les états d’équipement ou données de contrôleur disponibles aux interfaces installées.",
+          "control": "Utilisez les notifications de niveau configurées ou une demande de commande de niveau supérieur autorisée ; les séquences de drainage, la protection contre la marche à sec et la priorité locale restent dans le système de pompage.",
+          "verification": "Vérifiez les niveaux sources et la réponse réelle des pompes séparément d’une demande transmise ; cette télémétrie ne constitue pas une prévision des inondations.",
+          "imageKey": "hd1000-transport-drainage",
+          "imageAlt": "Puisard de drainage et installation de pompage d’une infrastructure de transport"
+        },
+        {
+          "title": "Éclairage auxiliaire des installations de maintenance",
+          "text": "Définissez une demande auxiliaire d’éclairage de service et les retours d’état disponibles dans une installation de maintenance des transports.",
+          "interface": "Sélectionnez une interface de commande d’éclairage compatible et toute indication d’état documentée pour la configuration d’E/S fournie.",
+          "control": "Définissez l’usage auxiliaire local, distant ou conditionnel et maintenez la priorité manuelle. Les phases des feux routiers et l’éclairage de secours sont exclus de cette tâche.",
+          "verification": "Vérifiez la réponse physique de l’éclairage et la commande locale ; un état distant de sortie ne prouve pas à lui seul l’éclairage.",
+          "imageKey": "hd1000-transport-lighting",
+          "imageAlt": "Éclairage de service dans un centre de maintenance d’infrastructures de transport"
+        }
+      ]
+    }
+  ],
+  "platformTitle": "Les données de vos équipements.\nVisibles dans Hitelecom Cloud.",
+  "platformIntro": "Consultez en ligne les données de supervision transmises et recevez des alertes lorsque les seuils configurés sont dépassés. Associez les mesures et les états d’équipement à des noms d’actifs clairs, des unités et un comportement de mise à jour défini. Délimitez l’intégration à la plateforme du client selon les méthodes de communication, les tables de données et les opérations autorisées par la configuration fournie.",
+  "platformBullets": [
+    "Données en ligne : consultez les mesures et les états d’équipement transmis dans la vue de supervision sélectionnée, avec l’identité de la source, les unités et la signification opérationnelle définies pour chaque point.",
+    "Alertes sur seuil : définissez les limites de supervision et le circuit de notification. Vérifiez le déclenchement, le destinataire et la réception lors de la mise en service ; la disponibilité en ligne dépend du profil de transmission et de la connexion réseau.",
+    "Commande et intégration : définissez les actions distantes autorisées, les priorités locales et les retours d’état disponibles. Spécifiez les rôles de protocole et la table de données, puis vérifiez le résultat physique indépendamment de la transmission de la commande."
+  ],
+  "specsIntro": "La série HD20-1000 prend en charge des configurations de DO, DI et AI, des raccordements d’instruments et des processus de commande sélectionnés pour le projet. Les quantités d’E/S, les ports série installés, les limites électriques et les opérations de protocole prises en charge dépendent de la version commandée. Sélectionnez les interfaces et le périmètre de commande à partir de la liste des signaux du projet.",
+  "specGroups": [
+    {
+      "title": "Produit et raccordements de terrain",
+      "rows": [
+        [
+          "Famille de produits",
+          "Contrôleur IoT / RTU de la série HD20-1000"
+        ],
+        [
+          "Illustration du produit",
+          "Appareil Hitelecom portant l’inscription 4G LTE RTU ; illustration de référence de la série."
+        ],
+        [
+          "Configuration des E/S de terrain",
+          "DO / DI / AI ; les quantités, combinaisons et types électriques dépendent de la version commandée."
+        ],
+        [
+          "Sorties numériques",
+          "Confirmez le type électrique de sortie, la charge autorisée, le circuit de raccordement et l’affectation des points."
+        ],
+        [
+          "Entrées numériques",
+          "Confirmez la logique électrique, les seuils, les états normaux et les points de retour d’état disponibles."
+        ],
+        [
+          "Entrées analogiques",
+          "Confirmez les plages de mesure prises en charge, la mise à l’échelle, les conditions de précision, le câblage et le nombre de points."
+        ],
+        [
+          "Références des liaisons série",
+          "RS232 / RS485 ; confirmez les ports installés, le brochage approuvé, les paramètres série et les protocoles d’appareil pris en charge."
+        ],
+        [
+          "Référence du raccordement 4–20 mA",
+          "Confirmez le sens du signal, le câblage de la boucle, l’alimentation du transmetteur, la plage utilisable et la précision dans la spécification de raccordement fournie."
+        ]
+      ]
+    },
+    {
+      "title": "Traitement et commande",
+      "rows": [
+        [
+          "Acquisition et traitement local",
+          "Pris en charge ; l’interprétation des sources, les fonctions de traitement et le comportement de mise à jour dépendent de l’application sélectionnée."
+        ],
+        [
+          "Modes de commande",
+          "Local / distant / conditionnel ; définissez le périmètre des actions, les conditions, les priorités et les retours d’état."
+        ],
+        [
+          "Rôles de fonctionnement",
+          "Modes maître/esclave ; les rôles et échanges pris en charge dépendent de l’interface et du protocole retenus."
+        ],
+        [
+          "Mécanismes de surveillance",
+          "Chiens de garde matériel et logiciel. Confirmez la réinitialisation, la reconnexion et le comportement de rétablissement de la configuration livrée."
+        ],
+        [
+          "Acquisition et transmission",
+          "Définissez séparément l’acquisition à la source, la transmission en ligne, le traitement des événements et la réponse requise aux commandes."
+        ],
+        [
+          "Comportement au redémarrage ou à la perte de liaison",
+          "Spécifiez les états des interfaces d’équipement, les actions locales autorisées et les vérifications de rétablissement de la configuration fournie."
+        ]
+      ]
+    },
+    {
+      "title": "Communication et plateforme",
+      "rows": [
+        [
+          "Communication cellulaire",
+          "4G LTE ; confirmez le module régional, les bandes de fréquences, la disposition des antennes et le service SIM."
+        ],
+        [
+          "Modbus TCP",
+          "Pris en charge ; définissez le chemin réseau, les rôles de fonctionnement, la table de données et les opérations autorisées pour la configuration retenue."
+        ],
+        [
+          "Hitelecom Cloud",
+          "Consultation en ligne des données de supervision transmises et alertes au dépassement des seuils configurés."
+        ],
+        [
+          "Intégration à la plateforme du client",
+          "Définissez les méthodes de communication prises en charge, le logiciel de l’appareil et la correspondance des données des équipements."
+        ],
+        [
+          "Configuration distante",
+          "Prise en charge pour les paramètres applicables de l’appareil et la version logicielle livrée."
+        ],
+        [
+          "Mise à niveau distante du micrologiciel",
+          "Prise en charge ; utilisez le micrologiciel approuvé et la procédure de maintenance du site."
+        ]
+      ]
+    },
+    {
+      "title": "Alimentation et installation",
+      "rows": [
+        [
+          "Alimentation",
+          "Demandez les valeurs nominales d’alimentation, la polarité, la consommation et les exigences de câblage de la version commandée."
+        ],
+        [
+          "Montage et caractéristiques mécaniques",
+          "Confirmez les dimensions, la masse, le montage et les dégagements de maintenance dans le plan propre à la configuration."
+        ],
+        [
+          "Instruments externes et circuits de commande",
+          "Adaptez chaque raccordement à la spécification électrique fournie ; les indications d’interface ne définissent ni une sortie d’alimentation ni une capacité de commande directe d’une charge."
+        ],
+        [
+          "Documentation des bornes",
+          "Utilisez le schéma de câblage approuvé de la version fournie avant l’installation."
+        ]
+      ]
+    },
+    {
+      "title": "Environnement et documentation",
+      "rows": [
+        [
+          "Environnement d’installation",
+          "Sélectionnez la protection de l’appareil et toute armoire externe selon la température, l’humidité et l’exposition du site."
+        ],
+        [
+          "Indice de protection",
+          "Demandez l’indice et les conditions d’installation de la configuration fournie."
+        ],
+        [
+          "Informations de mise en service",
+          "Liste des points de terrain, table des données sources, mise à l’échelle, autorisations de commande, priorités locales, paramètres distants et vérifications de rétablissement."
+        ],
+        [
+          "Documentation de conformité",
+          "Demandez les déclarations ou documents d’essai propres au modèle et à la destination pour la version commandée."
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "À quoi est destinée la série HD20-1000 ?",
+      "a": "Elle associe acquisition de données de terrain, supervision des équipements et commande définie pour le projet dans une RTU 4G LTE. Les configurations de DO, DI et AI retenues raccordent commandes d’équipement, états et mesures externes. Le traitement local, l’intégration Modbus TCP, les modes de commande configurables, la supervision dans le cloud et la maintenance distante accompagnent le processus opérationnel."
+    },
+    {
+      "q": "Combien de points numériques et analogiques sont disponibles ?",
+      "a": "La série prend en charge des configurations de DO, DI et AI, mais les quantités installées et leur combinaison dépendent de la version commandée. Fournissez la liste des signaux et demandez la spécification électrique propre à la configuration. Les 40 tâches d’application sont des exemples de sélection, et non 40 voies simultanées ; une liste de points plus importante peut nécessiter une autre configuration ou des contrôleurs supplémentaires."
+    },
+    {
+      "q": "Quel est le lien entre RS232, RS485 et Modbus TCP ?",
+      "a": "Les interfaces série et Modbus TCP interviennent à des couches différentes de la connexion. Confirmez les ports série installés, les paramètres électriques et le protocole de l’appareil séparément du chemin réseau, des rôles et de la table de données Modbus TCP. La description du produit ne définit pas à elle seule un port Ethernet ni une fonction de conversion de RS485 vers Modbus TCP."
+    },
+    {
+      "q": "La prise en charge de Modbus TCP implique-t-elle une détection automatique ou une compatibilité universelle ?",
+      "a": "Non. Spécifiez l’architecture réseau, les rôles de communication, la table d’adresses ou de registres, la représentation des données et les opérations autorisées pour la configuration retenue. Vérifiez la compatibilité dans la documentation de l’équipement connecté. La prise en charge de Modbus TCP ne définit pas à elle seule une détection automatique, une reconnaissance automatique des tables ni un accès en écriture sans restriction."
+    },
+    {
+      "q": "Que signifient les modes maître/esclave dans un projet ?",
+      "a": "Ils décrivent les rôles pris en charge pour la coordination des appareils. Identifiez le nœud initiateur et le nœud répondant, l’interface ou le protocole retenus, ainsi que les données ou commandes échangées. Obtenez la description du rôle applicable à la version livrée ; ce terme ne définit pas un fonctionnement simultané dans tous les rôles ni une conversion de protocole particulière."
+    },
+    {
+      "q": "Quels modes de commande sont pris en charge et comment vérifier les actions ?",
+      "a": "La série prend en charge la commande locale, distante et conditionnelle. Définissez l’action, sa condition de déclenchement, la priorité locale, les autorisations et les retours d’état disponibles. Une commande transmise ou une sortie active ne confirme pas la réponse physique de l’équipement. Maintenez ses séquences de fonctionnement, ses verrouillages et sa protection indépendante, et définissez le comportement en cas de perte de communication ou de redémarrage."
+    },
+    {
+      "q": "Puis-je consulter les données de supervision et recevoir des alertes dans Hitelecom Cloud ?",
+      "a": "Oui. Hitelecom Cloud permet de consulter en ligne les données de supervision transmises et de recevoir des alertes lorsque les seuils configurés sont dépassés. Configurez les noms d’actifs, les unités sources, les limites de supervision et le circuit de notification. La disponibilité des données et le délai de notification dépendent du profil d’acquisition et de transmission, de l’alimentation et de la connexion réseau."
+    },
+    {
+      "q": "Les paramètres et le micrologiciel peuvent-ils être maintenus à distance ?",
+      "a": "La configuration distante et les mises à niveau du micrologiciel sont prises en charge pour les paramètres applicables et la version matérielle/logicielle livrée. Utilisez le micrologiciel approuvé et la procédure de maintenance du site. Après une modification, vérifiez la configuration, la communication avec les instruments, les mesures transmises et les fonctions de commande autorisées."
+    },
+    {
+      "q": "Que fournissent les chiens de garde matériel et logiciel ?",
+      "a": "Ils contribuent à rétablir le fonctionnement après des états opérationnels anormaux définis. Vérifiez la réinitialisation, la reconnexion et le comportement aux interfaces des équipements pour la configuration retenue lors de la mise en service. Les chiens de garde ne remplacent pas la protection des équipements et ne garantissent pas une communication ininterrompue."
+    },
+    {
+      "q": "Les indications sur les bornes constituent-elles une spécification de câblage complète ?",
+      "a": "Utilisez le plan des bornes et la spécification électrique approuvés de la version fournie. Confirmez le sens des signaux, le brochage, les niveaux logiques, les conditions d’entrée analogique, la mise à la terre et l’alimentation des instruments. Une indication 4–20 mA ou série ne définit pas à elle seule l’isolation, une sortie d’alimentation, une capacité de charge ni un câblage complet."
+    },
+    {
+      "q": "Une sortie numérique peut-elle actionner directement une pompe, un ventilateur ou une vanne ?",
+      "a": "Raccordez chaque sortie à un circuit de commande d’équipement électriquement compatible et vérifiez la charge autorisée pour la configuration commandée. Un démarreur, un contacteur ou un dispositif de commutation intermédiaire approprié peut être nécessaire. L’activation d’une sortie ne confirme pas à elle seule la marche d’un moteur ou la position d’une vanne ; utilisez les retours d’état disponibles."
+    },
+    {
+      "q": "Quelles informations faut-il fournir pour sélectionner une configuration ?",
+      "a": "Indiquez le pays d’installation, la liste des points de terrain, les spécifications des instruments, les manuels de communication des équipements et les tables de données. Précisez les actions de commande requises, les priorités locales, les points de retour d’état, l’alimentation, les conditions du site, les besoins de transmission et la plateforme cible. Ces informations définissent l’affectation des E/S, le périmètre réseau et protocole, la documentation de câblage et les vérifications de mise en service."
+    }
+  ],
+  "enquiryIntro": "Transmettez la liste des points de terrain, les sorties des instruments, les interfaces des équipements et les actions de commande autorisées. Nous examinerons la configuration des E/S, l’intégration série et Modbus TCP, les priorités locales, les retours d’état et la connexion à Hitelecom Cloud ou à la plateforme du client pour l’installation.",
+  "slug": "iot-controller-hd20-1000",
+  "kind": "Product",
+  "image": "hd20-1000-original.png",
+  "imageWidth": 1280,
+  "imageHeight": 2021,
+  "datasheet": "/downloads/hd20-1000-iot-controller-datasheet-en.pdf"
+}

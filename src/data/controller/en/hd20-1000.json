@@ -1,0 +1,734 @@
+{
+  "family": "HD20-1000 Series",
+  "model": "HD20-1000 Series",
+  "picturedModel": "HD20-1000 Series reference illustration",
+  "title": "HD20-1000 IoT Controller & 4G RTU | Modbus TCP | Hitelecom",
+  "metaDescription": "HD20-1000 IoT controller with configurable DO, DI and AI, edge acquisition, local, remote and condition-based control, Modbus TCP and Hitelecom Cloud monitoring.",
+  "heroHeading": "IoT Controller & RTU.",
+  "heroValue": "Acquire field data.\nCoordinate equipment control.",
+  "heroDescription": "The Hitelecom HD20-1000 series combines field data acquisition, equipment monitoring and project-defined control in a 4G LTE RTU. Select DO, DI and AI arrangements and compatible instrument connections around the installation’s signal list. Edge processing, local, remote and condition-based control, Modbus TCP integration and master/slave working roles support equipment workflows. Configure supported settings and upgrade firmware remotely. View uploaded monitoring data online in Hitelecom Cloud and receive alerts when configured thresholds are exceeded.",
+  "reviewNotice": "I/O quantities, electrical types, fitted serial connections, protocol roles and supported operations follow the supplied configuration. Confirm the arrangement against the instrument and equipment signal list before ordering.",
+  "interfaceCards": [
+    {
+      "type": "DO · DI · AI",
+      "title": "Configurable field I/O",
+      "text": "Allocate digital outputs, digital inputs and analogue inputs to the installation’s signal list. Confirm output electrical type and permitted load, input-state definitions, analogue ranges and point quantities for the ordered version.",
+      "examples": [
+        "Documented equipment command circuits",
+        "Running, fault and position feedback",
+        "Compatible external measurement signals"
+      ]
+    },
+    {
+      "type": "RS232 · RS485",
+      "title": "Serial equipment connections",
+      "text": "Integrate compatible instruments and equipment through the fitted serial connections. Agree the electrical arrangement, approved pin assignment, serial settings, device protocol and source-data mapping before connection.",
+      "examples": [
+        "Instrument and equipment data links",
+        "Existing controller information",
+        "Supported command and readback exchanges"
+      ]
+    },
+    {
+      "type": "Modbus TCP",
+      "title": "Modbus TCP data exchange",
+      "text": "Define the network path, supported working roles and data map for the selected Modbus TCP integration. Keep physical interfaces, communication roles and permitted read or write operations explicit in the project design.",
+      "examples": [
+        "Documented equipment data mapping",
+        "Defined initiating and responding roles",
+        "Permitted supervisory data exchanges"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Configurable digital and analogue I/O",
+      "text": "Select DO, DI and AI arrangements around the actual field-point list. Match command circuits, equipment feedback and external measurements to the supplied channel quantities and electrical specification."
+    },
+    {
+      "title": "Multi-point acquisition and edge processing",
+      "text": "Bring selected measurements and equipment-state data from multiple field sources into the acquisition and processing workflow. Define source identities, engineering units, scaling and update requirements within the supplied I/O and interface allocation."
+    },
+    {
+      "title": "Serial and Modbus TCP integration",
+      "text": "Bring compatible equipment into a documented data path using the fitted serial connections and supported Modbus TCP functions. Confirm the device protocol, network arrangement and point mapping for each integration."
+    },
+    {
+      "title": "Master/slave working roles",
+      "text": "Configure the supported device-coordination roles for the project. Identify which node initiates an exchange, which responds and which data or commands are permitted for the selected interface and protocol."
+    },
+    {
+      "title": "Local, remote and condition-based control",
+      "text": "Define the control mode for each permitted action, including its initiating condition, local priority and available feedback. The connected equipment retains its sequencing, interlocks and independent protection."
+    },
+    {
+      "title": "Online data and threshold alerts",
+      "text": "View uploaded monitoring data online in Hitelecom Cloud and receive alerts when configured thresholds are exceeded. Configure asset names, engineering units, monitoring limits and the notification workflow."
+    },
+    {
+      "title": "Remote configuration and firmware upgrades",
+      "text": "Adjust supported device settings and upgrade approved firmware remotely. Plan maintenance around the delivered hardware, software version and site procedure, then verify configuration and operation after the change."
+    },
+    {
+      "title": "Hardware and software watchdogs",
+      "text": "Hardware and software watchdog mechanisms support recovery from defined abnormal operating states. Verify reset, reconnection and the resulting equipment-interface behaviour for the supplied configuration."
+    }
+  ],
+  "workflow": [
+    {
+      "title": "Acquire the defined field points",
+      "text": "Identify the signal source, fitted interface and operating meaning of each point. Define digital normal states, analogue scaling and any serial data map before commissioning."
+    },
+    {
+      "title": "Evaluate conditions and permissions",
+      "text": "Select local, remote or condition-based operation for the permitted task. Agree the initiating condition, command priority, equipment permissions and the required local overrides."
+    },
+    {
+      "title": "Issue the supported command",
+      "text": "Send the agreed action through an electrically and logically compatible equipment interface. Keep the equipment’s own sequence, interlocks and independent protection active."
+    },
+    {
+      "title": "Verify feedback and online results",
+      "text": "Check available physical feedback or device readback independently from command transmission. Compare uploaded monitoring values with the source instrument and test configured threshold alerts in Hitelecom Cloud."
+    }
+  ],
+  "applicationsIntro": "Eight application areas, each with five engineering tasks, show how the controller can connect field measurements, equipment states and permitted control actions. These 40 tasks are selection examples, not 40 channels or a promise that every task runs in one unit. Allocate the selected points against the ordered I/O and serial configuration, then define protocol mapping, control permissions and equipment feedback for the installation.",
+  "groups": [
+    {
+      "id": "vending",
+      "title": "Vending & Self-Service Equipment",
+      "intro": "Connect selected machine signals and external measurements to a defined service workflow for unattended retail equipment. Use the supplied I/O and supported equipment interfaces for monitoring and permitted auxiliary actions; dispensing, payment and transaction processing remain with their dedicated systems.",
+      "imageKey": "hd1000-vending-availability",
+      "imageAlt": "Unbranded vending machines in an indoor self-service area",
+      "tasks": [
+        {
+          "title": "Machine availability and exception reporting",
+          "text": "Combine documented machine-ready, operating and service indications so an operator can distinguish a usable machine from one requiring attention.",
+          "interface": "Assign compatible DI signals or supported equipment data to an agreed state list; define the normal meaning of each point.",
+          "control": "Configure event reporting and service notifications. Any remote request must be supported by the machine supplier and its local operating permissions.",
+          "verification": "Compare each state with the source machine and test unavailable, maintenance and fault conditions separately.",
+          "imageKey": "hd1000-vending-availability",
+          "imageAlt": "Unbranded vending machines in an indoor self-service area"
+        },
+        {
+          "title": "Refrigeration measurement and threshold response",
+          "text": "Bring an external compartment-temperature measurement into the monitoring view alongside the relevant machine operating condition.",
+          "interface": "Match the supplied AI range or supported instrument data interface to the external temperature transmitter and compartment identity.",
+          "control": "Use configured thresholds for cloud notifications or an agreed local auxiliary response. The refrigeration unit retains temperature regulation and compressor protection.",
+          "verification": "Check source readings, probe location and notification delivery; distinguish a transmitter fault from an actual refrigeration event.",
+          "imageKey": "hd1000-vending-refrigeration",
+          "imageAlt": "Refrigerated vending compartment with an external temperature probe"
+        },
+        {
+          "title": "Service-access events and authorised maintenance",
+          "text": "Record selected service-door or access events to help operators relate a machine visit to its equipment data.",
+          "interface": "Use an electrically compatible door contact through the supplied DI arrangement, or the machine’s documented access-state interface.",
+          "control": "Define when an access event should notify the service team and which local maintenance permissions apply; do not infer an access-control system.",
+          "verification": "Operate the actual door and verify source state, asset identity and notification behaviour, including planned maintenance.",
+          "imageKey": "hd1000-vending-service-access",
+          "imageAlt": "Vending-machine service door and contact switch"
+        },
+        {
+          "title": "Condensate and leak-event handling",
+          "text": "Monitor an external condensate level or leakage signal in the machine service bay before assigning the required service response.",
+          "interface": "Select compatible DI indication or AI transmitter acquisition according to the sensing device and supplied interface specification.",
+          "control": "Issue a notification or a permitted auxiliary request using the defined local, remote or condition-based arrangement; retain the machine’s independent protection.",
+          "verification": "Test the sensing area and verify the source event and any physical auxiliary response as separate results.",
+          "imageKey": "hd1000-vending-condensate",
+          "imageAlt": "Condensate tray and drain tubing in a vending-machine service bay"
+        },
+        {
+          "title": "Auxiliary display lighting and service indication",
+          "text": "Define service lighting or indication requests separately from the machine’s product-dispensing sequence.",
+          "interface": "Connect a supplied DO through an electrically compatible auxiliary control circuit, with available equipment feedback identified during selection.",
+          "control": "Set local and remote priorities and any agreed operating condition. Keep payment, dispensing and safety-related functions outside this auxiliary task.",
+          "verification": "Check the actual light or indicator response and local override; an output command alone does not confirm illumination.",
+          "imageKey": "hd1000-vending-indication",
+          "imageAlt": "Illuminated vending display and separate service indicator"
+        }
+      ]
+    },
+    {
+      "id": "shelving",
+      "title": "Electronic Shelving & Retail Fixtures",
+      "intro": "Add visibility to selected shelf controllers, fixture services and store-side instrument points. The integration uses documented external signals or supported data exchanges; connection to a shelf fixture does not establish native compatibility with an electronic price-tag network or a pricing platform.",
+      "imageKey": "hd1000-shelf-controller",
+      "imageAlt": "Retail shelving and store fixtures in an unbranded shop interior",
+      "tasks": [
+        {
+          "title": "Shelf-controller service-state consolidation",
+          "text": "Collect selected controller-ready, maintenance or common-fault information for the store’s connected shelving and retail fixtures.",
+          "interface": "Agree the available external status outputs or supported controller data points and allocate them to the supplied interface arrangement.",
+          "control": "Use the reported state to route a service notification. Price updates and electronic shelf-label management remain with the relevant retail platform.",
+          "verification": "Compare the reported condition with the source controller and the correct fixture zone before assigning service priority.",
+          "imageKey": "hd1000-shelf-controller",
+          "imageAlt": "Retail shelving and store fixtures in an unbranded shop interior"
+        },
+        {
+          "title": "Shelf-zone environmental data",
+          "text": "Associate external temperature or humidity measurements with the shelf zone and storage height they represent.",
+          "interface": "Match each transmitter output or supported instrument data exchange to the supplied acquisition interface and engineering units.",
+          "control": "Configure site-selected monitoring limits and the notification workflow; any ventilation request needs a separately agreed fixture-control interface.",
+          "verification": "Check the source reading and physical location. A single instrument point does not establish conditions across the entire shop.",
+          "imageKey": "hd1000-shelf-environment",
+          "imageAlt": "Temperature and humidity probe beside a retail shelf zone"
+        },
+        {
+          "title": "Low-voltage fixture services and lighting requests",
+          "text": "Monitor selected low-voltage service indications and define auxiliary lighting requests for a retail fixture service compartment.",
+          "interface": "Identify compatible power-supply or service-state signals and the permitted auxiliary control circuit for the supplied I/O configuration.",
+          "control": "Separate a monitored supply alarm from a lighting command; retain local service access and electrical protection in the fixture installation.",
+          "verification": "Verify the source alarm and actual lighting response, and document the normal condition before enabling remote operation.",
+          "imageKey": "hd1000-retail-fixture-services",
+          "imageAlt": "Retail-fixture service compartment with a low-voltage power supply and lighting connections"
+        },
+        {
+          "title": "Display-cabinet access and service context",
+          "text": "Link a cabinet-access indication to the fixture’s measurement and operating data so service visits can be interpreted in context.",
+          "interface": "Use a compatible access contact or a documented cabinet-controller state and define its normal electrical and operational meaning.",
+          "control": "Configure maintenance notifications and permitted service requests without replacing the cabinet’s dedicated access or refrigeration controls.",
+          "verification": "Check opening and closing events at the actual service door, including the distinction between planned service and an unexpected event.",
+          "imageKey": "hd1000-retail-cabinet-access",
+          "imageAlt": "Retail display-cabinet service door and latch contact"
+        },
+        {
+          "title": "Retail branch-meter information",
+          "text": "Read selected electrical measurements from a compatible external meter serving the fixture or retail service branch.",
+          "interface": "Agree the meter’s supported interface, data definitions and engineering units; do not infer a protocol or channel quantity from the cabinet image.",
+          "control": "Use the selected measurements for operating review and configured notifications. Billing, tariff logic and disconnection require their own defined integration.",
+          "verification": "Compare readings with the meter display and identify the circuit and source measurement period represented by each value.",
+          "imageKey": "hd1000-retail-meter-data",
+          "imageAlt": "Electrical submeters and terminal wiring in a service panel"
+        }
+      ]
+    },
+    {
+      "id": "plc-controls",
+      "title": "PLC & Existing Automation",
+      "intro": "Extend the monitoring and permitted supervisory functions of existing control equipment through defined I/O and data interfaces. Agree device roles and supported Modbus TCP operations where applicable; the RTU complements the installed controller and does not replace its real-time sequence or safety functions.",
+      "imageKey": "hd1000-plc-selected-data",
+      "imageAlt": "Industrial control cabinet with PLC equipment and terminal wiring",
+      "tasks": [
+        {
+          "title": "Selected controller data and equipment states",
+          "text": "Expose a documented subset of controller values and operating states for remote equipment visibility.",
+          "interface": "Agree supported data exchanges or compatible external status signals, including the point definitions and the assigned communication roles.",
+          "control": "Separate read-only monitoring from permitted write or command access; retain the existing controller’s sequence and operating priorities.",
+          "verification": "Compare the selected values with the controller interface and verify that the added monitoring path does not change the normal sequence.",
+          "imageKey": "hd1000-plc-selected-data",
+          "imageAlt": "Industrial control cabinet with PLC equipment and terminal wiring"
+        },
+        {
+          "title": "External instrument-point expansion",
+          "text": "Add compatible instrument measurements to an equipment monitoring workflow when the required point is not already available from the existing controller.",
+          "interface": "Match each external transmitter or documented serial instrument to the fitted acquisition interface and agreed data map.",
+          "control": "Use a selected operating condition for notification or a permitted supervisory request; process protection remains in the dedicated control system.",
+          "verification": "Validate source units and scaling, then compare the remote value with the physical instrument at representative conditions.",
+          "imageKey": "hd1000-plc-instrument-expansion",
+          "imageAlt": "External industrial instruments and terminal wiring in a service cabinet"
+        },
+        {
+          "title": "Process-stage event collection",
+          "text": "Capture selected stage-complete, product-present or operating-state indications to explain where a process is in its normal cycle.",
+          "interface": "Use compatible DI points or documented controller data; define the event meaning and source asset for each selected indication.",
+          "control": "Report agreed process events and service exceptions. Motion control, emergency stops and safety interlocks remain with the machine system.",
+          "verification": "Observe the actual sequence and confirm each reported stage; a connected sensor or message does not prove production completion.",
+          "imageKey": "hd1000-plc-stage-events",
+          "imageAlt": "Conveyor equipment with process-state sensors and control infrastructure"
+        },
+        {
+          "title": "Supervisory requests with local permissions",
+          "text": "Provide an agreed remote enable or auxiliary operating request to equipment that already exposes a documented supervisory interface.",
+          "interface": "Select a compatible DO command circuit or supported data operation, and identify the available permission and response indications.",
+          "control": "Define local override, command priority and the initiating condition before enabling local, remote or condition-based use.",
+          "verification": "Test the request and the equipment response separately, including rejection when the local permission is absent.",
+          "imageKey": "hd1000-plc-supervisory-requests",
+          "imageAlt": "Machine operator panel with auxiliary control buttons"
+        },
+        {
+          "title": "Service requests and acknowledgement coordination",
+          "text": "Coordinate a selected service request or acknowledgement with the equipment’s existing maintenance procedure.",
+          "interface": "Agree the supported external control operation and the status information that confirms the source equipment accepted it.",
+          "control": "Limit the action to the documented auxiliary function. Acknowledgement does not remove a physical fault or reset an independent protection system.",
+          "verification": "Verify the source indication before and after the action and retain a clear distinction between acknowledgement and fault clearance.",
+          "imageKey": "hd1000-plc-service-acknowledgement",
+          "imageAlt": "Auxiliary service-request and acknowledgement controls on a cabinet"
+        }
+      ]
+    },
+    {
+      "id": "environmental-monitoring",
+      "title": "Environmental Monitoring Facilities",
+      "intro": "Combine compatible treatment-process measurements, instrument data and equipment-state signals in a defined monitoring workflow. The RTU connects external measurement and permitted control interfaces; analyser calibration, process protection and environmental compliance responsibilities remain with the relevant instruments and operating procedures.",
+      "imageKey": "hd1000-treatment-process",
+      "imageAlt": "Water-treatment facility with process instruments, vessels and pipework",
+      "tasks": [
+        {
+          "title": "Water-treatment process variables",
+          "text": "Collect selected pressure, level or other compatible instrument values from a treatment facility and relate them to the relevant process asset.",
+          "interface": "Match the external instrument output or supported equipment data to the supplied AI or communication interface and engineering range.",
+          "control": "Configure monitoring thresholds and the required operational notification. Any process request must use an approved local equipment interface.",
+          "verification": "Compare the uploaded value with the source instrument and confirm its units, location and valid operating meaning.",
+          "imageKey": "hd1000-treatment-process",
+          "imageAlt": "Water-treatment facility with process instruments, vessels and pipework"
+        },
+        {
+          "title": "Water-quality sample measurements",
+          "text": "Bring selected analyser or transmitter values from a sampling rack into the facility’s monitoring view.",
+          "interface": "Agree the instrument output, data definitions and source-validity information for the fitted acquisition arrangement.",
+          "control": "Set the configured monitoring limits and notification route; instrument cleaning and calibration follow the analyser’s own procedure.",
+          "verification": "Compare displayed and uploaded readings, and identify warm-up, maintenance or calibration states before interpreting an excursion.",
+          "imageKey": "hd1000-water-quality-sampling",
+          "imageAlt": "Water-quality sampling rack with instrument flow cells"
+        },
+        {
+          "title": "Treatment-package running and exception signals",
+          "text": "Combine selected package-running, local-mode and common-fault information to support a defined service response.",
+          "interface": "Select compatible equipment-state outputs or documented package data and identify the normal condition of each point.",
+          "control": "Provide a permitted auxiliary request only through the package’s supported control arrangement, with local priorities and protection retained.",
+          "verification": "Check the actual package state and available feedback; a start request is not evidence that treatment or circulation is occurring.",
+          "imageKey": "hd1000-treatment-package",
+          "imageAlt": "Treatment skid with pump and local operating indications"
+        },
+        {
+          "title": "Extraction and filter-condition events",
+          "text": "Monitor selected differential-pressure or equipment indications around a filter and extraction installation.",
+          "interface": "Match compatible external transmitter signals and available operating feedback to the supplied interface and source range.",
+          "control": "Use agreed conditions for inspection notifications or a permitted auxiliary ventilation request; dedicated fan and process protection remain active.",
+          "verification": "Check source readings and sensing connections and distinguish an instrument fault from a genuine filter or airflow condition.",
+          "imageKey": "hd1000-extraction-filter",
+          "imageAlt": "Filter housing and extraction duct with external pressure-sensing points"
+        },
+        {
+          "title": "Sampling-package requests and confirmation",
+          "text": "Supervise a selected sampling package using its measurement, running-state or documented command interface.",
+          "interface": "Define the fitted acquisition points, permitted request circuit or data operation, and available flow or equipment feedback.",
+          "control": "Apply local, remote or condition-based requests only within the package’s documented operating scope and maintenance permissions.",
+          "verification": "Confirm the physical sampling result or instrument feedback independently; message acceptance does not establish that a sample reached its destination.",
+          "imageKey": "hd1000-sampling-package",
+          "imageAlt": "External sampling pump and instrument tubing"
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "title": "Smart Agriculture & Irrigation",
+      "intro": "Connect external agricultural instruments and selected actuator or package signals to site-defined monitoring and control tasks. Match the supplied I/O, operating permissions and feedback to the installation; crop decisions, dosing procedures and independent equipment protection stay with their dedicated systems.",
+      "imageKey": "hd1000-greenhouse-actuator",
+      "imageAlt": "Greenhouse ventilation actuator and window-position hardware",
+      "tasks": [
+        {
+          "title": "Greenhouse ventilation and position feedback",
+          "text": "Relate an external greenhouse measurement to a permitted ventilation request and the available actuator position indication.",
+          "interface": "Select compatible AI measurements, actuator command interfaces and DI position signals within the fitted I/O arrangement.",
+          "control": "Define the local, remote or condition-based request and retain the greenhouse’s local operating priorities and equipment protection.",
+          "verification": "Observe the actual vent travel and available position feedback; the command state alone does not establish an open or closed vent.",
+          "imageKey": "hd1000-greenhouse-actuator",
+          "imageAlt": "Greenhouse ventilation actuator and window-position hardware"
+        },
+        {
+          "title": "Irrigation valve permissions and confirmed position",
+          "text": "Supervise a selected irrigation valve using a permitted control request and the available end-position or flow indication.",
+          "interface": "Match the supplied DO to a compatible actuator control circuit and identify supported DI or instrument feedback for the selected valve.",
+          "control": "Agree local override, operating permission and the condition that can initiate a request; direct motor-driving capability is not assumed.",
+          "verification": "Check physical valve movement and the available feedback under the agreed operating conditions, including manual operation.",
+          "imageKey": "hd1000-irrigation-valve",
+          "imageAlt": "Motorized irrigation valve and distribution manifold"
+        },
+        {
+          "title": "Irrigation pressure and operating context",
+          "text": "Monitor an external pressure measurement together with selected pump or valve information to interpret irrigation conditions.",
+          "interface": "Match the transmitter output, engineering range and available state indications to the supplied acquisition arrangement.",
+          "control": "Configure pressure notifications or an agreed supervisory request; the local irrigation system retains its sequencing and protection.",
+          "verification": "Compare local and remote readings at agreed operating states and distinguish a measurement fault from a genuine pressure event.",
+          "imageKey": "hd1000-irrigation-pressure",
+          "imageAlt": "Pressure instruments on an irrigation distribution header"
+        },
+        {
+          "title": "Stored-water level and transfer permissions",
+          "text": "Associate a storage-level measurement with the relevant pump status and the permissions required for a transfer request.",
+          "interface": "Use compatible level-transmitter acquisition and available equipment-state signals, with the source range and normal states documented.",
+          "control": "Set configured level notifications and permitted transfer conditions. Pump sequencing, dry-run protection and manual priority remain in the installation.",
+          "verification": "Check the level reference and actual pump response separately from any command, including invalid or unavailable source indications.",
+          "imageKey": "hd1000-agricultural-water-storage",
+          "imageAlt": "Farm water-storage tank with adjacent transfer pump"
+        },
+        {
+          "title": "Aquaculture measurements and aeration status",
+          "text": "Bring compatible water-instrument readings and selected aeration-equipment states into a site monitoring workflow.",
+          "interface": "Agree the external analyser or transmitter outputs and available equipment feedback for the supplied interfaces.",
+          "control": "Use configured notifications or a documented supervisory request; treatment decisions and aeration protection remain with the local control arrangement.",
+          "verification": "Compare readings with the source instrument, record maintenance events, and confirm actual aeration independently of a remote request.",
+          "imageKey": "hd1000-aquaculture-supervision",
+          "imageAlt": "Aquaculture ponds with aeration equipment and waterside infrastructure"
+        }
+      ]
+    },
+    {
+      "id": "remote-stations",
+      "title": "Unattended & Remote Stations",
+      "intro": "Connect selected access, utility and equipment points at distributed stations to a defined operating workflow. Scope the cellular service, field wiring and protective installation for the site. Remote visibility supports operators while local equipment priorities and independent protection remain in place.",
+      "imageKey": "hd1000-station-service-access",
+      "imageAlt": "Unattended-station cabinet service door with a contact and local service controls",
+      "tasks": [
+        {
+          "title": "Station service access and local permissions",
+          "text": "Record a selected cabinet-door event and relate it to a local service action or maintenance condition at an unattended station.",
+          "interface": "Match the access contact and any documented service-state signal to the supplied DI arrangement and source definitions.",
+          "control": "Define planned-service handling, notifications and any permitted auxiliary request without replacing dedicated site access control.",
+          "verification": "Operate the actual door and local service device, then verify point identity and the reported state before enabling remote use.",
+          "imageKey": "hd1000-station-service-access",
+          "imageAlt": "Unattended-station cabinet service door with a contact and local service controls"
+        },
+        {
+          "title": "Station power-condition alarms",
+          "text": "Collect selected power-controller indications so service staff can distinguish normal operation, maintenance and an equipment exception.",
+          "interface": "Use compatible external state signals or documented equipment data; identify the meaning and normal condition of each selected point.",
+          "control": "Route configured notifications to the maintenance workflow; power transfer, charging and load protection remain in the dedicated power system.",
+          "verification": "Compare reported conditions with the source controller and test the agreed notification path under an authorised service procedure.",
+          "imageKey": "hd1000-station-power",
+          "imageAlt": "Backup power equipment and alarm contacts at a remote station"
+        },
+        {
+          "title": "Cabinet ventilation requests and fan feedback",
+          "text": "Combine an external cabinet-temperature measurement with available ventilation-equipment information for a defined auxiliary task.",
+          "interface": "Select compatible measurement acquisition, fan-state feedback and a permitted auxiliary command interface where fitted.",
+          "control": "Apply the agreed local, remote or condition-based request and define local override before enabling remote supervision.",
+          "verification": "Verify source readings and actual fan operation, and select the enclosure and installation protection for the site conditions.",
+          "imageKey": "hd1000-station-ventilation",
+          "imageAlt": "Ventilation fan and environmental probe in a field cabinet"
+        },
+        {
+          "title": "Battery and utility measurement points",
+          "text": "Upload selected values from an external battery or utility transducer alongside the station’s operating context.",
+          "interface": "Match the transducer output or documented data interface to the supplied version, units and physical measurement point.",
+          "control": "Use configured monitoring alerts for the selected values; charging, balancing and electrical protection remain with the battery or power system.",
+          "verification": "Verify the source measurement and scaling. A single telemetry value does not establish battery health or remaining service life.",
+          "imageKey": "hd1000-station-battery",
+          "imageAlt": "External battery-monitoring transducer near a station battery bank"
+        },
+        {
+          "title": "Equipment-room leak events and auxiliary response",
+          "text": "Monitor a compatible external leakage indication in the equipment room and define the required service response.",
+          "interface": "Select the sensing device and compatible DI or transmitter interface; a passive probe is not assumed to connect directly without its required interface.",
+          "control": "Use configured notifications or an approved auxiliary drainage request while retaining the local drainage controller’s operating permissions.",
+          "verification": "Test the physical sensing area and verify the source event, notification and any actual auxiliary response as separate checks.",
+          "imageKey": "hd1000-station-leakage",
+          "imageAlt": "Leakage sensing area on a remote equipment-room floor"
+        }
+      ]
+    },
+    {
+      "id": "industrial-equipment",
+      "title": "Industrial Equipment & Auxiliary Control",
+      "intro": "Bring selected machine measurements, state signals and permitted auxiliary commands into one defined equipment workflow. Choose the supplied I/O and supported data exchanges against the actual point list; the RTU does not replace machine sequencing, safety-related control or dedicated process protection.",
+      "imageKey": "hd1000-machine-operation",
+      "imageAlt": "Industrial machine and auxiliary equipment on a manufacturing floor",
+      "tasks": [
+        {
+          "title": "Machine operation and service exceptions",
+          "text": "Collect a selected set of running, local-mode and common-fault indications from a machine or auxiliary package.",
+          "interface": "Use compatible external status signals or supported equipment data with each point tied to the correct asset and normal operating meaning.",
+          "control": "Configure service notifications and permitted auxiliary requests within the machine supplier’s documented control scope.",
+          "verification": "Compare reported states with actual machine operation and the local interface, including planned maintenance and loss of a source signal.",
+          "imageKey": "hd1000-machine-operation",
+          "imageAlt": "Industrial machine and auxiliary equipment on a manufacturing floor"
+        },
+        {
+          "title": "Compressor-package operating requests",
+          "text": "Supervise selected compressor measurements and operating states before defining any permitted package request.",
+          "interface": "Agree the compatible measurement or state outputs, command interface and feedback supported by the delivered arrangement.",
+          "control": "Define the authorised request and local priority; compressor sequencing, restart conditions and protective shutdown remain with the package controller.",
+          "verification": "Verify the command and actual operating response separately and check the meaning of the source fault indications.",
+          "imageKey": "hd1000-compressor-control",
+          "imageAlt": "Industrial compressor package and local operating indicators"
+        },
+        {
+          "title": "Cooling-circulation measurements and feedback",
+          "text": "Relate external pressure or temperature measurements to the running information available from a cooling or circulation auxiliary.",
+          "interface": "Match compatible instrument outputs and equipment-state feedback to the supplied acquisition interface and physical circuit.",
+          "control": "Use agreed conditions for notification or a permitted supervisory request; independent process and equipment protection remain active.",
+          "verification": "Compare measurements with the source instruments and verify actual circulation or equipment feedback independently of the output request.",
+          "imageKey": "hd1000-cooling-circulation",
+          "imageAlt": "Cooling circulation pump and heat-exchanger pipework"
+        },
+        {
+          "title": "Actuator travel and end-position verification",
+          "text": "Supervise the relationship between a permitted actuator request and the available end-position signals on an industrial valve.",
+          "interface": "Select electrically compatible command and feedback interfaces for the supplied I/O arrangement and actuator control circuit.",
+          "control": "Define the allowed movement request, local override and operating permission; do not treat output activation as an established valve position.",
+          "verification": "Observe the actuator travel and end-position feedback during commissioning, including an unfulfilled or interrupted request.",
+          "imageKey": "hd1000-actuator-travel",
+          "imageAlt": "Industrial valve actuator with end-position switch housing"
+        },
+        {
+          "title": "Industrial ventilation and hydronic auxiliaries",
+          "text": "Connect selected air-handling or hydronic instrument values and available auxiliary-equipment states to an operating workflow.",
+          "interface": "Match external transmitter outputs and supported equipment feedback to the supplied interface arrangement and point schedule.",
+          "control": "Apply permitted supervisory requests or configured notifications; temperature regulation, frost protection and equipment interlocks remain local.",
+          "verification": "Check measurement locations and actual auxiliary response, and distinguish an equipment-state update from a verified physical result.",
+          "imageKey": "hd1000-industrial-hvac",
+          "imageAlt": "Air-handling equipment with hydronic pipework and external instruments"
+        }
+      ]
+    },
+    {
+      "id": "transport-infrastructure",
+      "title": "Transport & Roadside Auxiliary Facilities",
+      "intro": "Monitor selected roadside cabinets, field instruments and transport-facility auxiliaries through documented external interfaces. The scope is operational visibility and permitted auxiliary actions; traffic-signal phases, railway interlocking, emergency control and other safety functions remain with their dedicated systems.",
+      "imageKey": "hd1000-roadside-cabinet",
+      "imageAlt": "Roadside infrastructure cabinet at a transport facility",
+      "tasks": [
+        {
+          "title": "Roadside utility-cabinet events",
+          "text": "Associate selected cabinet access and equipment exceptions with the correct roadside asset for a defined service response.",
+          "interface": "Choose compatible access or equipment-state signals, or supported controller data, and document the normal meaning of each selected point.",
+          "control": "Configure maintenance notifications and permitted local service indication without taking over traffic-control or safety functions.",
+          "verification": "Test source events at the actual cabinet and verify asset identity and the agreed notification workflow.",
+          "imageKey": "hd1000-roadside-cabinet",
+          "imageAlt": "Roadside infrastructure cabinet at a transport facility"
+        },
+        {
+          "title": "Enclosure temperature and ventilation requests",
+          "text": "Combine an external cabinet-temperature measurement with available ventilation status for a roadside equipment enclosure.",
+          "interface": "Match compatible transmitter acquisition, fan feedback and a permitted auxiliary command circuit to the supplied version.",
+          "control": "Use agreed operating conditions for notifications or ventilation requests while retaining local override and equipment protection.",
+          "verification": "Verify actual fan response and source measurements, and select site protection against the installation’s exposure conditions.",
+          "imageKey": "hd1000-roadside-ventilation",
+          "imageAlt": "Roadside equipment-cabinet ventilation fan and temperature probe"
+        },
+        {
+          "title": "External field-weather instrument data",
+          "text": "Acquire selected values from compatible external weather instruments to give operators local environmental context.",
+          "interface": "Define the instrument output, data representation, units and installation location for the supplied acquisition or communication arrangement.",
+          "control": "Configure notifications for the selected observation limits; forecasting and automatic road-closure decisions require separately defined systems.",
+          "verification": "Compare readings with the source instrument and review siting and exposure before interpreting a change in local conditions.",
+          "imageKey": "hd1000-transport-weather",
+          "imageAlt": "External weather instruments beside a transport facility"
+        },
+        {
+          "title": "Drainage level and pump feedback",
+          "text": "Connect selected sump-level and pump-controller indications at a tunnel or transport drainage installation.",
+          "interface": "Match the external level transmitter and available equipment-state or controller data to the fitted interface arrangement.",
+          "control": "Use configured level notifications or a permitted supervisory request; drainage sequencing, dry-run protection and local priority remain in the pump system.",
+          "verification": "Verify source levels and actual pump response separately from a transmitted request; the telemetry task does not establish flood prediction.",
+          "imageKey": "hd1000-transport-drainage",
+          "imageAlt": "Transport-facility drainage sump and pump installation"
+        },
+        {
+          "title": "Maintenance-facility auxiliary lighting",
+          "text": "Define an auxiliary service-lighting request and the available feedback at a transport maintenance facility.",
+          "interface": "Select a compatible lighting control interface and any documented state indication for the supplied I/O arrangement.",
+          "control": "Agree local, remote or condition-based auxiliary use and retain manual priority. Road-signal phases and emergency lighting functions are outside this task.",
+          "verification": "Check the physical lighting response and local operation; a remote output state alone does not prove illumination.",
+          "imageKey": "hd1000-transport-lighting",
+          "imageAlt": "Service lighting at a transport maintenance facility"
+        }
+      ]
+    }
+  ],
+  "platformTitle": "Your equipment data.\nVisible in Hitelecom Cloud.",
+  "platformIntro": "View uploaded monitoring data online and receive alerts when configured thresholds are exceeded. Associate measurements and equipment states with clear asset names, units and update behaviour. Scope customer-platform integration around the communication methods, data maps and permitted operations supported by the supplied device configuration.",
+  "platformBullets": [
+    "Online data: review uploaded measurements and equipment-state information in the selected monitoring view, with source identities, units and operating meanings defined for each point.",
+    "Threshold alerts: set the monitoring limits and notification workflow. Verify the trigger, recipient and delivery during commissioning; online availability depends on the reporting profile and network connection.",
+    "Control and integration: define the permitted remote actions, local priorities and available feedback. Specify the protocol roles and data map, then verify the physical result separately from command transmission."
+  ],
+  "specsIntro": "The HD20-1000 series supports project-selected DO, DI and AI configurations, instrument connections and control workflows. I/O quantities, fitted serial ports, electrical limits and supported protocol operations follow the ordered version. Select the interface arrangement and control scope against the project signal list.",
+  "specGroups": [
+    {
+      "title": "Product & Field Connections",
+      "rows": [
+        [
+          "Product family",
+          "HD20-1000 Series IoT Controller / RTU"
+        ],
+        [
+          "Product illustration",
+          "Hitelecom unit marked 4G LTE RTU; series reference illustration."
+        ],
+        [
+          "Field I/O configuration",
+          "DO / DI / AI; quantities, combinations and electrical types follow the ordered version."
+        ],
+        [
+          "Digital outputs",
+          "Confirm output electrical type, permitted load, connection circuit and point allocation."
+        ],
+        [
+          "Digital inputs",
+          "Confirm electrical logic, thresholds, normal states and the available feedback points."
+        ],
+        [
+          "Analogue inputs",
+          "Confirm supported measurement ranges, scaling, accuracy conditions, wiring and point quantities."
+        ],
+        [
+          "Serial connection references",
+          "RS232 / RS485; confirm fitted ports, approved pin assignment, serial settings and supported device protocols."
+        ],
+        [
+          "4–20 mA connection reference",
+          "Confirm signal direction, loop wiring, transmitter supply, usable range and accuracy in the supplied connection specification."
+        ]
+      ]
+    },
+    {
+      "title": "Processing & Control",
+      "rows": [
+        [
+          "Edge acquisition and processing",
+          "Supported; source interpretation, processing functions and update behaviour follow the selected application."
+        ],
+        [
+          "Control modes",
+          "Local / remote / condition-based; agree action scope, conditions, priorities and feedback."
+        ],
+        [
+          "Working roles",
+          "Master/slave working modes; supported roles and exchanges follow the selected interface and protocol."
+        ],
+        [
+          "Watchdog mechanisms",
+          "Hardware and software watchdogs. Confirm reset, reconnection and recovery behaviour for the delivered configuration."
+        ],
+        [
+          "Acquisition and reporting",
+          "Define source acquisition, online reporting, event processing and required command-response behaviour separately."
+        ],
+        [
+          "Restart and lost-link behaviour",
+          "Specify equipment-interface states, permitted local actions and recovery checks for the supplied configuration."
+        ]
+      ]
+    },
+    {
+      "title": "Communication & Platform",
+      "rows": [
+        [
+          "Cellular communication",
+          "4G LTE; confirm the regional module, bands, antenna arrangement and SIM service."
+        ],
+        [
+          "Modbus TCP",
+          "Supported; agree the network path, working roles, data map and permitted operations for the selected configuration."
+        ],
+        [
+          "Hitelecom Cloud",
+          "Online viewing of uploaded monitoring data and alerts above configured thresholds."
+        ],
+        [
+          "Customer-platform integration",
+          "Agree supported communication methods, device software and equipment data mapping."
+        ],
+        [
+          "Remote configuration",
+          "Supported for the applicable device settings and delivered software version."
+        ],
+        [
+          "Remote firmware upgrade",
+          "Supported; use the approved firmware and site maintenance procedure."
+        ]
+      ]
+    },
+    {
+      "title": "Power & Installation",
+      "rows": [
+        [
+          "Power supply",
+          "Request rated input, polarity, consumption and wiring requirements for the ordered version."
+        ],
+        [
+          "Mounting and mechanical details",
+          "Confirm dimensions, mass, mounting and service clearance from the configuration-specific drawing."
+        ],
+        [
+          "External instruments and command circuits",
+          "Match each connection to the supplied electrical specification; interface labels do not establish a power output or direct load rating."
+        ],
+        [
+          "Terminal documentation",
+          "Use the approved wiring schedule for the supplied version before installation."
+        ]
+      ]
+    },
+    {
+      "title": "Environment & Documentation",
+      "rows": [
+        [
+          "Installation environment",
+          "Select device protection and any external enclosure for site temperature, humidity and exposure."
+        ],
+        [
+          "Ingress protection",
+          "Request the rating and installation conditions for the supplied configuration."
+        ],
+        [
+          "Commissioning information",
+          "Field-point list, source data map, scaling, control permissions, local priorities, remote settings and recovery checks."
+        ],
+        [
+          "Conformity documentation",
+          "Request model- and destination-specific declarations or test documentation for the ordered version."
+        ]
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the HD20-1000 series designed to do?",
+      "a": "It combines field data acquisition, equipment monitoring and project-defined control in a 4G LTE RTU. Selected DO, DI and AI arrangements connect equipment commands, states and external measurements. Edge processing, Modbus TCP integration, configurable control modes, cloud monitoring and remote maintenance support the operating workflow."
+    },
+    {
+      "q": "How many digital and analogue points are available?",
+      "a": "The series supports DO, DI and AI configurations, but the fitted quantities and combination are defined by the ordered version. Submit the signal list and obtain the configuration-specific electrical specification. The 40 application tasks are selection examples, not 40 simultaneous channels; larger point lists may require another configuration or additional controllers."
+    },
+    {
+      "q": "How do RS232 and RS485 relate to Modbus TCP?",
+      "a": "Serial interfaces and Modbus TCP operate at different layers of the connection. Confirm the fitted serial ports, electrical settings and device protocol separately from the Modbus TCP network path, roles and data map. The product description does not by itself establish an Ethernet port or an RS485-to-Modbus TCP conversion function."
+    },
+    {
+      "q": "Does Modbus TCP support mean automatic device discovery or universal compatibility?",
+      "a": "No. Specify the supported network arrangement, communication roles, address or register map, data representation and permitted operations for the selected configuration. Compatibility must be checked against the connected equipment documentation. Modbus TCP support alone does not establish automatic discovery, automatic map recognition or unrestricted write access."
+    },
+    {
+      "q": "What do master/slave working modes mean for a project?",
+      "a": "They describe supported device-coordination roles. Identify the initiating and responding node, the selected interface or protocol and the data or commands exchanged. Obtain the applicable role description for the delivered version; the term does not establish simultaneous operation in every role or a particular protocol conversion."
+    },
+    {
+      "q": "Which control modes are supported, and how are actions verified?",
+      "a": "The series supports local, remote and condition-based control. Define the action, initiating condition, local priority, permissions and available equipment feedback. A transmitted command or active output does not confirm the physical equipment response. Keep the equipment sequence, interlocks and independent protection in place, and agree behaviour during lost communication or restart."
+    },
+    {
+      "q": "Can I view monitoring data and receive alerts in Hitelecom Cloud?",
+      "a": "Yes. Hitelecom Cloud supports online viewing of uploaded monitoring data and alerts when configured thresholds are exceeded. Configure asset names, source units, monitoring limits and the notification workflow. Data availability and notification timing depend on the acquisition/reporting profile, power and network connection."
+    },
+    {
+      "q": "Can settings and firmware be maintained remotely?",
+      "a": "Remote configuration and firmware upgrades are supported for the applicable settings and delivered hardware/software version. Use approved firmware and the site maintenance procedure. Verify the configuration, instrument communication, uploaded measurements and permitted control functions after a change."
+    },
+    {
+      "q": "What do the hardware and software watchdogs provide?",
+      "a": "They support recovery from defined abnormal operating states. Confirm reset, reconnection and equipment-interface behaviour for the selected configuration during commissioning. Watchdogs do not replace equipment protection or establish uninterrupted communication."
+    },
+    {
+      "q": "Can the terminal labels be used as a complete wiring specification?",
+      "a": "Use the approved terminal drawing and electrical specification for the supplied version. Confirm signal direction, pin assignment, logic levels, analogue input conditions, grounding and instrument power arrangements. A 4–20 mA or serial label alone does not establish isolation, a supply output, a load rating or a complete wiring definition."
+    },
+    {
+      "q": "Can a digital output directly operate a pump, fan or valve?",
+      "a": "Connect each output to an electrically compatible equipment-control circuit and verify the permitted load for the ordered configuration. A suitable starter, contactor or intermediate switching device may be required. Output activation alone does not establish motor operation or valve position; use available equipment feedback."
+    },
+    {
+      "q": "What information is needed to select a configuration?",
+      "a": "Provide the installation country, field-point list, instrument specifications, equipment communication manuals and data maps. Include required control actions, local priorities, feedback points, power, site conditions, reporting needs and target platform. These details establish the I/O allocation, network and protocol scope, wiring documentation and commissioning checks."
+    }
+  ],
+  "enquiryIntro": "Share the field-point list, instrument outputs, equipment interfaces and permitted control actions. We will review the I/O arrangement, serial and Modbus TCP integration, local priorities, feedback and Hitelecom Cloud or customer-platform connection for the installation.",
+  "slug": "iot-controller-hd20-1000",
+  "kind": "Product",
+  "image": "hd20-1000-original.png",
+  "imageWidth": 1280,
+  "imageHeight": 2021,
+  "datasheet": "/downloads/hd20-1000-iot-controller-datasheet-en.pdf"
+}
