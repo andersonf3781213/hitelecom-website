@@ -32,7 +32,6 @@ const structured = { '@context': 'https://schema.org', '@graph': [product,
 const allLocales = ['en', 'zh', 'es', 'de', 'ja', 'fr', 'ru'];
 const langTargets = Object.fromEntries(allLocales.map(loc => [loc, `${loc === 'en' ? '' : `/${loc}`}/product/${slug}`]));
 ---
----
 <BaseLayout locale={locale} title={c.title} description={c.metaDescription} socialImage={'/assets/' + c.image} langOverrides={langTargets}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(structured).replace(/</g, '\\u003c')}></script>
   <GatewayBody content={c} ui={ui} prefix={prefix}/>

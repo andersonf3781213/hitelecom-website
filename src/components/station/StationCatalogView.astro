@@ -22,7 +22,6 @@ const structured = { '@context': 'https://schema.org', '@graph': [
 const allLocales = ['en', 'zh', 'es', 'de', 'ja', 'fr', 'ru'];
 const langTargets = Object.fromEntries(allLocales.map(loc => [loc, `${loc === 'en' ? '' : `/${loc}`}/product/lists/cid/${cid}`]));
 ---
----
 <BaseLayout locale={locale} title={title} description={desc} socialImage="/assets/h700.webp" langOverrides={langTargets}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(structured).replace(/</g, '\\u003c')}></script>
   <StationCatalog catalog={c} locale={locale} cid={cid}/>

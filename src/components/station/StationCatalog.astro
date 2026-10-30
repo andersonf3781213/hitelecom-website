@@ -32,7 +32,7 @@ const types=[{id:'275',label:c.sidebar.weatherLabel,product:c.sidebar.weatherPro
       </ul></nav>
     </div></aside>
     <div class="pro_2_mid_right">
-      <div class="catalog-intro"><h2>{c.catalogHeading}</h2><p>{c.catalogIntro}</p><p class="catalog-count" role="status" aria-live="polite" data-result-count data-count-template={c.search.resultCount}>{countText(shown.length)}</p></div>
+      <p class="catalog-count catalog-sr-only" role="status" aria-live="polite" data-result-count data-count-template={c.search.resultCount}>{countText(shown.length)}</p>
       <div class="pro_2_mid_right_2 sensor-catalog"><ul>
         {shown.map(product=><li data-station-card data-model={product.model} data-name={[product.model,product.name,product.subtitle,product.summary].join(' ').toLocaleLowerCase(locale==='zh'?'zh-CN':locale)}><a href={local(product.path)}>
           <div class="pro_2_mid_right_1_mid"><div class="pro_2_mid_right_1_mid_1"><img src={'/assets/'+product.image} alt={product.imageAlt} width="627" height="635" loading="lazy" decoding="async"/></div>
@@ -41,7 +41,6 @@ const types=[{id:'275',label:c.sidebar.weatherLabel,product:c.sidebar.weatherPro
         </a></li>)}
       </ul></div>
       <div class="catalog-empty" data-station-empty hidden><p>{c.search.noResults}</p><button type="button" data-station-reset>{c.search.reset}</button></div>
-      <p class="catalog-config-note">{c.sharedConfigNote}</p>
     </div>
   </div></section>
 </main>
