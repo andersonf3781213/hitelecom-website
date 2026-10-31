@@ -46,12 +46,6 @@ for (const pre of ['', '/zh', '/es', '/de', '/ja', '/fr', '/ru']) {
   }
 }
 
-// V142：Solutions 第二页内容合并进英文总览，七语种旧分页地址 301 到本语言总览
-for (const pre of ['', '/zh', '/es', '/de', '/ja', '/fr', '/ru']) {
-  redirects.push([`${pre}/solution/page/2.html`, `${pre}/solution`]);
-  redirects.push([`${pre}/solution/page/2`, `${pre}/solution`]);
-}
-
 // ---------------------------------------------------------------- _redirects
 const cfLines = [
   '# Cloudflare Pages 301 重定向（本文件由 scripts/make-redirects.mjs 生成，勿手改）',
