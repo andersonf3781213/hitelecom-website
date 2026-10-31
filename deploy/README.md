@@ -27,7 +27,7 @@ location = /_headers  { return 404; }
 
 ## meta refresh 跳转页的角色
 
-dist 中 `/product/show/id/{数字}.html`（共 66 个，含 `/zh/` 变体）是
+dist 中 `/product/show/id/{数字}.html`（共 80 个，含 `/zh/` 变体）是
 meta refresh + canonical 的**软跳转兜底页**：在任何不支持服务器重写的环境
 （OSS、纯静态虚拟主机）也能把老访客带到新地址。但搜索引擎按 302 类信号处理、
 权重传递不完整，**正式环境务必用上表中的服务器级 301**，跳转页仅作为兜底共存，

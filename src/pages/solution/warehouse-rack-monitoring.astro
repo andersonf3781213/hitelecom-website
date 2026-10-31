@@ -1,0 +1,37 @@
+---
+/**
+ * V142: 仓库货架监测页（英文，/solution/warehouse-rack-monitoring）。
+ * 独立路由的监测任务页（非行业页），数据在 en.details.json 的 warehouse 条目。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SolutionDetail from '../../components/solutions/SolutionDetail.astro';
+import { SITE_URL } from '../../utils/jsonld';
+import hubData from '../../data/solutions/en.json';
+import details from '../../data/solutions/en.details.json';
+
+const ui = hubData.ui;
+const d = (details as any).warehouse;
+
+const webPageLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: d.title,
+  description: d.metaDescription,
+  url: `${SITE_URL}${d.url}`,
+  inLanguage: 'en',
+};
+---
+
+<BaseLayout
+  locale="en"
+  title={d.title}
+  description={d.metaDescription}
+  preloadImage={d.heroImg}
+  alternates={['en']}
+>
+  <SolutionDetail d={d} ui={ui} fields={hubData.enquiry.fields} applicationOptions={hubData.enquiry.applicationOptions} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(webPageLd)} />
+  <script>
+    import '../../components/solutions/solutions-interactions.js';
+  </script>
+</BaseLayout>

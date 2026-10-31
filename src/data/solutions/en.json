@@ -1,0 +1,166 @@
+{
+  "ui": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "discuss": "Discuss your project",
+    "explore": "Explore solutions",
+    "prepare": "Prepare my enquiry",
+    "openEmail": "Open in your email app",
+    "copyBrief": "Copy the brief",
+    "copied": "Copied to clipboard.",
+    "copyFallback": "Copy the text above manually.",
+    "ready": "Your enquiry draft is ready",
+    "reviewHint": "Review the brief below, then send it with your own email app. Nothing is sent automatically.",
+    "emailIntro": "This opens a draft in your email app addressed to our sales team. No message is sent until you choose to send it.",
+    "emailSubject": "Solution enquiry — {name}",
+    "directEmail": "Prefer email? Write to us directly at",
+    "briefLabel": "Enquiry brief",
+    "required": "required",
+    "backToSolutions": "Back to all solutions",
+    "relatedTitle": "Related solutions and products",
+    "challengeTitle": "Operational challenges",
+    "monitorTitle": "What to monitor",
+    "deployTitle": "Typical deployment",
+    "systemTitle": "Recommended system",
+    "systemBase": "Core devices",
+    "systemOptional": "Add as required",
+    "dataTitle": "Data and alerts",
+    "installTitle": "Installation and commissioning",
+    "faqTitle": "Practical questions before you deploy",
+    "evidenceTitle": "Evidence and resources",
+    "tablePoint": "Monitoring point",
+    "tableMeasurement": "Measurement",
+    "tableDevice": "Device family",
+    "tableRequirement": "Planning requirement"
+  },
+  "title": "Industrial IoT Monitoring Solutions | Hitelecom",
+  "metaDescription": "Explore wireless monitoring for warehouses, infrastructure, water systems and industrial sites, with Hitelecom sensors, gateways and platform integration.",
+  "breadcrumbName": "Solutions",
+  "eyebrow": "INDUSTRIAL IOT SOLUTIONS",
+  "h1": "Wireless Monitoring Solutions for Industrial Assets and Environments",
+  "heroIntro": "Connect measurements from warehouses, infrastructure, water systems and industrial sites to remote monitoring and configurable alerts. Hitelecom combines sensors, gateways and platform integration around the conditions at your site.",
+  "heroTagline": "Field data. Clearer decisions.",
+  "ctaPrimary": "Discuss your project",
+  "ctaSecondary": "Explore solutions",
+  "supportLabels": ["Sensors & gateways", "Cloud & integration", "OEM / ODM"],
+  "featured": {
+    "h2": "Start with the asset you need to monitor.",
+    "intro": "Choose a monitoring task to explore measurement points, suitable devices and a practical route from field readings to your platform.",
+    "cards": [
+      {
+        "title": "Warehouse Rack Monitoring",
+        "desc": "Follow local inclination at selected rack uprights and add environmental monitoring where storage conditions matter. Bring changes and threshold events into your inspection workflow.",
+        "measurements": "Tilt · Temperature · Humidity · Water presence",
+        "cta": "Explore rack monitoring",
+        "href": "/solution/warehouse-rack-monitoring"
+      },
+      {
+        "title": "Pole & Tower Tilt Monitoring",
+        "desc": "Track inclination at defined points on poles, towers and support structures. Review trends against the installation baseline to help prioritize site inspections.",
+        "measurements": "Tilt · Supporting environmental measurements",
+        "cta": "Explore pole & tower monitoring",
+        "href": "/solution/show/id/57"
+      },
+      {
+        "title": "Water & Pump Station Monitoring",
+        "desc": "Bring pressure, level, vibration, temperature and water-presence data from selected pump-station assets into a shared monitoring view. Configure thresholds for the conditions your team needs to review.",
+        "measurements": "Pressure · Level · Vibration · Temperature",
+        "cta": "Explore water monitoring",
+        "href": "/solution/show/id/67"
+      }
+    ]
+  },
+  "industries": {
+    "h2": "Explore solutions by industry.",
+    "intro": "Find monitoring applications for your operating environment, then match the sensing, power, connectivity and data requirements to the project.",
+    "items": [
+      { "id": "58", "title": "Industrial Equipment & Process Monitoring", "copy": "Monitor temperature, pressure, vibration and selected operating conditions across equipment and plant utilities. Connect readings to maintenance and inspection decisions." },
+      { "id": "65", "title": "Agriculture & Irrigation Monitoring", "copy": "Collect soil, weather and water-level measurements to inform irrigation planning and field management. Select the sensor set and communication route for each location." },
+      { "id": "64", "title": "Buildings & Campus Monitoring", "copy": "Observe indoor air, temperature, humidity and water presence across occupied spaces and facility areas, with alerts configured for the conditions that matter." },
+      { "id": "60", "title": "Industrial Park & Site Monitoring", "copy": "Bring environmental measurements and supported facility data from multiple buildings and remote points into a consistent monitoring workflow." },
+      { "id": "59", "title": "Energy Asset Monitoring", "copy": "Monitor selected structural, thermal and equipment conditions around energy assets. Add compatible status-monitoring devices where the project requires them." },
+      { "id": "57", "title": "Urban Infrastructure Monitoring", "copy": "Follow tilt, environmental conditions and selected asset status across poles, roadside structures and other distributed urban infrastructure." },
+      { "id": "66", "title": "Heritage & Visitor Site Monitoring", "copy": "Observe microclimate, light and local structural inclination around collections, historic buildings and visitor sites, with mounting chosen for the conservation setting." },
+      { "id": "67", "title": "Water & Pump Station Monitoring", "copy": "Connect pressure, level, temperature and supported equipment-condition measurements across pump stations, pipelines, tanks and drainage assets." }
+    ]
+  },
+  "topics": {
+    "h2": "What do you need to monitor?",
+    "intro": "Start with the measurement. We help align the device, installation and data path with your monitoring task.",
+    "items": [
+      { "title": "Tilt & local rotation", "desc": "Inclination at a defined mounting point, reviewed against an installation baseline.", "href": "/product/tilt-sensor" },
+      { "title": "Vibration & equipment condition", "desc": "Vibration trends and threshold events on selected rotating or structural assets.", "href": "/product/vibration-sensor" },
+      { "title": "Temperature, humidity & air", "desc": "Environmental conditions in storage, indoor and outdoor monitoring locations.", "href": "/product/temperature-humidity-sensor" },
+      { "title": "Pressure, distance & level", "desc": "Pipeline pressure, liquid level and defined distance measurements at selected points.", "href": "/product/pressure-sensor" },
+      { "title": "Asset location", "desc": "Position and status of movable and reusable assets, with location source per model.", "href": "/product/asset-tracking-sensor" },
+      { "title": "VOCs & selected gases", "desc": "TVOC and project-defined gas monitoring with the measuring method confirmed per model.", "href": "/product/tvoc-sensor" }
+    ]
+  },
+  "architecture": {
+    "h2": "From field measurements to site action.",
+    "intro": "Select the network around the site layout, available coverage, power arrangement and platform receiving your data.",
+    "blocks": [
+      { "title": "Cellular monitoring for distributed sites", "body": "Selected 4G LTE and NB-IoT devices send readings through a compatible mobile network to Hitelecom Cloud or an agreed customer platform. Confirm regional bands, operator availability and coverage at the mounting position." },
+      { "title": "Gateway-based monitoring within a site", "body": "Compatible LoRa devices communicate with a receiver or gateway that forwards data to the destination platform. LoRaWAN deployments require compatible devices, gateways and network-server arrangements. Select the complete path together." },
+      { "title": "Your data destination", "body": "Use Hitelecom Cloud or plan an integration with your existing platform. Confirm the protocol, authentication, payload fields, units and timestamps for the selected equipment before deployment." }
+    ],
+    "cta": "Discuss connectivity and integration"
+  },
+  "evidence": {
+    "h2": "Evidence for your deployment.",
+    "intro": "Evaluate the installation, measurements and data workflow that matter to your project. Ask about relevant installation examples, product documentation and configuration-specific test information.",
+    "items": [
+      { "title": "Installation examples", "desc": "Mounting position, orientation, fixing method and site conditions for comparable deployments. Ask us for the material available for your application." },
+      { "title": "Measurement and test information", "desc": "Configuration-specific test records and product documentation for the selected models. We share what applies to your configuration." },
+      { "title": "Platform and payload examples", "desc": "Data fields, units and notification workflow for the agreed platform connection. Sample payloads are reviewed together during project planning." }
+    ],
+    "cta": "Discuss your evidence requirements"
+  },
+  "steps": {
+    "h2": "Plan your deployment.",
+    "items": [
+      { "title": "Define the monitoring points.", "desc": "Identify the assets, measurements, installation conditions and changes your team needs to review." },
+      { "title": "Match the system.", "desc": "Select the sensing, mounting, power, wireless route and destination platform." },
+      { "title": "Verify a pilot.", "desc": "Check coverage, readings, reporting and the notification workflow at representative points." },
+      { "title": "Expand with a clear configuration.", "desc": "Document the approved settings, installation records and operating responsibilities before a wider rollout." }
+    ]
+  },
+  "faq": {
+    "h2": "Practical questions before you deploy",
+    "items": [
+      { "q": "Do I need a gateway?", "a": "Cellular configurations use a compatible mobile network and normally do not require a local LoRa gateway. LoRa configurations need a compatible receiver or gateway. The required network components depend on the supplied device protocol and the destination platform." },
+      { "q": "How should I choose between 4G, NB-IoT and LoRa?", "a": "Compare coverage at the measurement point, the number and distribution of devices, the required reporting schedule and the power arrangement. Cellular and private gateway-based networks suit different site conditions; verify the proposed route in a representative pilot." },
+      { "q": "Can the devices connect to our existing platform?", "a": "Integration is assessed for the selected device and platform. Share your endpoint, protocol, authentication and payload requirements so we can confirm the supported data path and test a sample message." },
+      { "q": "Are measurement, reporting and alert intervals the same?", "a": "They are separate requirements. A device can measure more frequently than it sends scheduled reports. Event handling and notification timing depend on device configuration, network conditions and the platform workflow. Specify each interval during project planning." },
+      { "q": "Can you adapt the hardware for our project?", "a": "OEM and ODM work can cover sensing, connectivity, power, enclosures, mounting and firmware, subject to technical assessment. Share the operating environment and intended deployment so the configuration can be reviewed." },
+      { "q": "What information should we provide first?", "a": "Start with the asset or environment to monitor, installation country, approximate number of points and preferred data destination. Site photos, measurement requirements and the deployment schedule help define a suitable configuration." }
+    ]
+  },
+  "enquiry": {
+    "h2": "Tell us what you need to monitor.",
+    "intro": "Share your application, installation country and approximate number of monitoring points. Add the measurements and platform requirements you already know, and we can review the next steps for your project.",
+    "cta": "Discuss your project",
+    "formName": "Solutions overview enquiry",
+    "fields": {
+      "name": "Name *",
+      "company": "Company *",
+      "email": "Business email *",
+      "country": "Country or region",
+      "application": "Monitoring application",
+      "points": "Estimated monitoring points",
+      "requirements": "Project requirements *"
+    },
+    "applicationOptions": [
+      "Warehouse rack monitoring",
+      "Industrial equipment & process",
+      "Agriculture & irrigation",
+      "Buildings & campus",
+      "Industrial park & site",
+      "Energy assets",
+      "Urban infrastructure",
+      "Heritage & visitor sites",
+      "Water & pump stations",
+      "Other / not sure yet"
+    ]
+  }
+}

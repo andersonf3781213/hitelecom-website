@@ -1,0 +1,764 @@
+{
+  "warehouse": {
+    "url": "/solution/warehouse-rack-monitoring",
+    "title": "Warehouse Rack Tilt Monitoring | Hitelecom",
+    "metaDescription": "Monitor local inclination at selected warehouse rack uprights, add temperature, humidity and water-presence sensing, and connect readings to your inspection workflow.",
+    "breadcrumbName": "Warehouse Rack Monitoring",
+    "eyebrow": "MONITORING TASK",
+    "h1": "Wireless Monitoring for Warehouse Racks and Storage Conditions",
+    "heroIntro": "Monitor local inclination at selected rack uprights and add temperature, humidity or water-presence sensing where storage conditions require it. Connect readings to asset locations, review changes against the installation baseline and use configured alerts to help prioritize inspections.",
+    "heroImg": "/assets/solution/65-banner-0.jpg",
+    "heroImgAlt": "Warehouse aisle with pallet racks selected for tilt and environmental monitoring points",
+    "heroCaption": "Application illustration. Mounting positions and sensor configurations are confirmed per project.",
+    "ctaPrimary": "Plan your warehouse monitoring",
+    "challenges": {
+      "h2": "Understand what is changing at each monitored point",
+      "items": [
+        { "title": "Rack condition is checked only during periodic inspections", "desc": "Impacts and gradual changes between inspections can go unrecorded. A defined measurement point creates a continuous record the team can review." },
+        { "title": "Storage conditions vary across zones", "desc": "Temperature and humidity near doors, cold areas or upper levels can differ from the rest of the building. Representative measurement locations show the actual conditions." },
+        { "title": "Water ingress is discovered late", "desc": "Leaks and condensation at floor level are often found after goods are affected. Water-presence detection at vulnerable points supports a faster response." }
+      ]
+    },
+    "monitor": {
+      "h2": "Choose the measurements for your site",
+      "rows": [
+        { "point": "Selected rack upright", "measurement": "Local inclination and change from baseline, in degrees", "device": "Wireless tilt sensor", "requirement": "Approved mounting position, axis orientation and rack location ID" },
+        { "point": "Selected storage zone", "measurement": "Temperature and relative humidity", "device": "Temperature and humidity sensor", "requirement": "Storage requirements and a representative measurement location" },
+        { "point": "Selected vulnerable floor area", "measurement": "Water presence", "device": "Water leak sensor", "requirement": "Detection coverage and an agreed inspection response" }
+      ]
+    },
+    "deploy": {
+      "h2": "Connect the measurement points to your monitoring platform",
+      "blocks": [
+        { "title": "Gateway-based deployment", "body": "For a compatible LoRa configuration, devices communicate with an agreed receiver or gateway and an onward platform connection. Check coverage among the racks at representative mounting points, including the effect of stored goods and metal structures." },
+        { "title": "Cellular deployment", "body": "Cellular options use a compatible 4G or NB-IoT service and normally do not require a local gateway. Confirm regional bands and operator coverage inside the building before rollout." }
+      ]
+    },
+    "system": {
+      "h2": "Build the system around the project",
+      "base": [
+        { "name": "Wireless tilt sensor", "href": "/product/tilt-sensor", "why": "Measures local inclination at selected rack uprights and reports change against the commissioning baseline." }
+      ],
+      "optional": [
+        { "name": "Temperature and humidity sensor", "href": "/product/temperature-humidity-sensor", "why": "Adds zone-level storage-condition records where goods require them." },
+        { "name": "Water leak sensor", "href": "/product/water-leakage-sensor", "why": "Detects water presence at vulnerable floor areas to support a faster inspection response." },
+        { "name": "IoT gateway", "href": "/product/lists/cid/258", "why": "Required where the selected wireless route is gateway-based; forwards device data to the destination platform." }
+      ]
+    },
+    "data": {
+      "h2": "Set a baseline and define the response",
+      "p": "Record the asset ID, mounting position, axes, initial readings and commissioning date. Keep measurement intervals and reporting intervals separate. Agree event handling, notification requirements and inspection responsibilities before the pilot is accepted.",
+      "bullets": [
+        "An inclination reading describes local rotation where the sensor is mounted. It does not establish rack load capacity or replace a competent rack inspection.",
+        "Set review thresholds within the site's engineering and inspection process.",
+        "Notification timing depends on device configuration, network conditions and the platform workflow."
+      ]
+    },
+    "install": {
+      "h2": "Verify the pilot before a wider rollout",
+      "items": [
+        "Check mounting, axis orientation and fixing at each selected upright.",
+        "Record baseline readings and commissioning date for every point.",
+        "Confirm wireless coverage at representative positions, including the effect of stored goods.",
+        "Verify scheduled reports and run a controlled test of the agreed notification workflow.",
+        "Retain the approved device configuration and point-location records for later installations."
+      ]
+    },
+    "faq": [
+      { "q": "Does tilt monitoring tell us whether a rack is safe to load?", "a": "No. An inclination reading describes local rotation at the mounting point and supports inspection prioritization and records. Rack safety assessment still requires load, design and a competent rack inspection." },
+      { "q": "How many sensors does a warehouse need?", "a": "There is no fixed number. The layout, rack types, zones and monitoring objectives define the points. Share your rack layout and we can review a suitable configuration together." },
+      { "q": "Can the data go to our own platform?", "a": "Integration is assessed for the selected device and platform. Share your endpoint, protocol, authentication and payload requirements so we can confirm the supported data path and test a sample message." }
+    ],
+    "enquiry": {
+      "h2": "Share your rack layout and monitoring requirements.",
+      "intro": "Tell us the installation country, rack types, approximate monitoring points and preferred platform. A layout or site photo will help review mounting and coverage requirements.",
+      "formName": "Warehouse rack monitoring enquiry",
+      "application": "Warehouse rack monitoring"
+    },
+    "relatedLinks": [
+      { "label": "Wireless tilt sensor", "href": "/product/tilt-sensor" },
+      { "label": "Temperature and humidity sensor", "href": "/product/temperature-humidity-sensor" },
+      { "label": "Water leak sensor", "href": "/product/water-leakage-sensor" },
+      { "label": "Industrial Equipment & Process Monitoring", "href": "/solution/show/id/58" }
+    ]
+  },
+  "58": {
+    "url": "/solution/show/id/58",
+    "title": "Industrial Equipment Condition Monitoring | Hitelecom",
+    "metaDescription": "Monitor temperature, pressure, vibration and selected operating conditions across industrial equipment and plant utilities with Hitelecom wireless sensors and gateways.",
+    "breadcrumbName": "Industrial Equipment & Process Monitoring",
+    "eyebrow": "INDUSTRY SOLUTION",
+    "h1": "Industrial Equipment & Process Monitoring",
+    "heroIntro": "Monitor temperature, pressure, vibration and selected operating conditions across equipment and plant utilities. Connect readings to maintenance and inspection decisions through a wireless sensing layer matched to your site.",
+    "heroImg": "/assets/solution/58-banner-0.jpg",
+    "heroImgAlt": "Industrial plant equipment with selected points for temperature, pressure and vibration monitoring",
+    "heroCaption": "Application illustration. Device selection and mounting are confirmed per project.",
+    "ctaPrimary": "Discuss your project",
+    "challenges": {
+      "h2": "Where more data supports maintenance decisions",
+      "items": [
+        { "title": "Equipment condition is reviewed only during rounds", "desc": "Manual rounds leave gaps between readings. Continuous measurement at selected points shows how conditions develop between visits." },
+        { "title": "Process values sit in separate systems", "desc": "Temperature, pressure and vibration records kept apart make trends harder to review. A shared monitoring view brings selected values together." },
+        { "title": "Cold-chain and storage records need to be reliable", "desc": "Where temperature-sensitive goods are stored, exceedance events and retention records matter. Networked and local recording routes are planned separately." }
+      ]
+    },
+    "monitor": {
+      "h2": "What to monitor",
+      "rows": [
+        { "point": "Selected equipment surface or pipe", "measurement": "Surface temperature, in °C", "device": "Temperature sensor", "requirement": "Surface-mount method and thermal contact reviewed per installation" },
+        { "point": "Selected pipeline", "measurement": "Process pressure, unit per configured range", "device": "Pressure sensor", "requirement": "Process connection, medium compatibility and range confirmed per model" },
+        { "point": "Selected rotating equipment", "measurement": "Vibration indicators within the supported band", "device": "Vibration sensor", "requirement": "Mounting position and measurement band matched to the machine" },
+        { "point": "Storage or cold-chain zone", "measurement": "Temperature and relative humidity", "device": "Temperature and humidity sensor, or H100 local logger", "requirement": "Networked reporting and local recording are separate configurations" }
+      ]
+    },
+    "deploy": {
+      "h2": "Typical deployment",
+      "blocks": [
+        { "title": "Within one plant", "body": "Compatible LoRa devices report to a receiver or gateway that forwards data to the destination platform. Gateway placement and backhaul are planned around the building structure." },
+        { "title": "Across distributed sites", "body": "Cellular 4G LTE or NB-IoT devices send readings through a compatible mobile network without a local gateway. Confirm bands and operator coverage at each mounting position." }
+      ]
+    },
+    "system": {
+      "h2": "Recommended system",
+      "base": [
+        { "name": "Temperature sensor", "href": "/product/temperature-sensor", "why": "Surface temperature on selected equipment and pipes, with the mounting method reviewed per installation." },
+        { "name": "Pressure sensor", "href": "/product/pressure-sensor", "why": "Process pressure at selected points, with connection and range confirmed per model." },
+        { "name": "Vibration sensor", "href": "/product/vibration-sensor", "why": "Vibration trends and threshold events on selected machines; not a bearing-fault classification or remaining-life prediction." }
+      ],
+      "optional": [
+        { "name": "Temperature and humidity data logger (H100)", "href": "/product/temperature-humidity-data-logger", "why": "Local recording where networked reporting is not required; readout and export follow the product's actual interfaces." },
+        { "name": "IoT controller", "href": "/product/lists/cid/257", "why": "Signal acquisition and control where the interface and electrical capability are confirmed for the task." },
+        { "name": "IoT gateway", "href": "/product/lists/cid/258", "why": "Forwards device data to the platform where a gateway-based route is selected." }
+      ]
+    },
+    "data": {
+      "h2": "Data and alerts",
+      "p": "Measurement, scheduled reporting and event handling are configured separately. Thresholds are agreed against the operating range of each asset, and notification timing depends on device configuration, network conditions and the platform workflow.",
+      "bullets": [
+        "Vibration trends and exceedance events support maintenance planning; they are not AI fault prediction.",
+        "Data fields, units and timestamps are confirmed for the selected platform before deployment.",
+        "Local logger records are retrieved through the product's supported readout process, not wireless cloud upload."
+      ]
+    },
+    "install": {
+      "h2": "Installation and commissioning",
+      "items": [
+        "Confirm mounting method, position and orientation for each measurement point.",
+        "Verify process connections and range settings for pressure points before service.",
+        "Check wireless coverage at representative positions inside the plant.",
+        "Record baseline readings and commissioning date per point.",
+        "Test scheduled reporting and the agreed notification workflow before acceptance."
+      ]
+    },
+    "faq": [
+      { "q": "Does vibration monitoring predict machine failures?", "a": "No. The sensors provide vibration measurements, trends and threshold events within the supported band. Fault classification, remaining-life estimates and predictive maintenance require separate analysis and are not claimed here." },
+      { "q": "Can surface temperature be measured without process intrusion?", "a": "Surface-mounted sensors measure at the contact point and need a reviewed mounting method. Readings reflect the surface condition, not necessarily the internal medium temperature." },
+      { "q": "Is the H100 logger a wireless cloud device?", "a": "No. The H100 is a local recording product. Data readout and export follow its actual interfaces; it is not part of the wireless continuous-upload path." }
+    ],
+    "enquiry": {
+      "h2": "Tell us about your equipment and plant conditions.",
+      "intro": "Share the assets and measurements you need, the installation country, approximate points and your preferred data destination. We will review a suitable configuration.",
+      "formName": "Industrial equipment monitoring enquiry",
+      "application": "Industrial equipment & process"
+    },
+    "relatedLinks": [
+      { "label": "Vibration sensor", "href": "/product/vibration-sensor" },
+      { "label": "Pressure sensor", "href": "/product/pressure-sensor" },
+      { "label": "Temperature sensor", "href": "/product/temperature-sensor" },
+      { "label": "Warehouse Rack Monitoring", "href": "/solution/warehouse-rack-monitoring" }
+    ]
+  },
+  "65": {
+    "url": "/solution/show/id/65",
+    "title": "Agriculture & Irrigation Monitoring | Hitelecom",
+    "metaDescription": "Collect soil, weather and water-level measurements to inform irrigation planning and field management with Hitelecom wireless sensors and gateways.",
+    "breadcrumbName": "Agriculture & Irrigation Monitoring",
+    "eyebrow": "INDUSTRY SOLUTION",
+    "h1": "Agriculture & Irrigation Monitoring",
+    "heroIntro": "Collect soil, weather and water-level measurements to inform irrigation planning and field management. Select the sensor set and communication route for each location, from single fields to distributed sites.",
+    "heroImg": "/assets/solution/65-banner-0.jpg",
+    "heroImgAlt": "Irrigated field with soil and weather monitoring points",
+    "heroCaption": "Application illustration. Sensor set and mounting are confirmed per project.",
+    "ctaPrimary": "Discuss your project",
+    "challenges": {
+      "h2": "Where field data supports irrigation decisions",
+      "items": [
+        { "title": "Irrigation is scheduled without soil data", "desc": "Fixed schedules can miss actual soil conditions. Soil moisture readings at representative depths show when water is needed." },
+        { "title": "Weather conditions differ across sites", "desc": "Regional forecasts do not describe each field. On-site weather measurements support local planning." },
+        { "title": "Water sources are checked manually", "desc": "Tank and channel levels at remote points take time to visit. Remote level readings reduce unnecessary trips." }
+      ]
+    },
+    "monitor": {
+      "h2": "What to monitor",
+      "rows": [
+        { "point": "Representative soil profile", "measurement": "Soil moisture, temperature and EC per model", "device": "Soil moisture sensor", "requirement": "Installation depth and soil contact reviewed per crop and soil type" },
+        { "point": "Field weather point", "measurement": "Air temperature, humidity, rainfall and wind per configuration", "device": "Weather station", "requirement": "Open mounting position and site exposure reviewed" },
+        { "point": "Tank, reservoir or channel", "measurement": "Liquid level, unit per configured range", "device": "Liquid level sensor", "requirement": "Mounting method and range confirmed per installation" }
+      ]
+    },
+    "deploy": {
+      "h2": "Typical deployment",
+      "blocks": [
+        { "title": "Cellular across distributed fields", "body": "4G LTE or NB-IoT devices send readings through a compatible mobile network, suiting scattered plots without local network infrastructure. Confirm operator coverage at each point." },
+        { "title": "Gateway-based within one site", "body": "Compatible LoRa devices report to a gateway on site, which forwards data onward. Gateway power and backhaul are part of the deployment plan." }
+      ]
+    },
+    "system": {
+      "h2": "Recommended system",
+      "base": [
+        { "name": "Soil moisture sensor", "href": "/product/soil-moisture-sensor", "why": "Soil moisture, temperature and EC per model at representative depths for irrigation planning." },
+        { "name": "Weather station", "href": "/product/weather-station", "why": "On-site weather measurements matched to the field location." },
+        { "name": "Liquid level sensor", "href": "/product/liquid-level-sensor", "why": "Level readings at tanks, reservoirs and channels supplying irrigation." }
+      ],
+      "optional": [
+        { "name": "IoT controller", "href": "/product/lists/cid/257", "why": "Control functions such as valve or pump interfaces are confirmed per interface and electrical capability before inclusion." },
+        { "name": "IoT gateway", "href": "/product/lists/cid/258", "why": "Required where a gateway-based LoRa route is selected." }
+      ]
+    },
+    "data": {
+      "h2": "Data and alerts",
+      "p": "Readings are associated with field locations and time, and reporting schedules are configured per point. Thresholds for soil moisture or level support irrigation review; control actions follow the confirmed interface configuration.",
+      "bullets": [
+        "Measurement and reporting intervals are configured separately per device.",
+        "Control capability depends on the selected controller interface and is confirmed per project.",
+        "Data fields and units are agreed with the destination platform before deployment."
+      ]
+    },
+    "install": {
+      "h2": "Installation and commissioning",
+      "items": [
+        "Select representative soil and weather points with the field team.",
+        "Install soil sensors at the agreed depths with good soil contact.",
+        "Check wireless coverage at each point, including vegetation effects.",
+        "Record baseline readings, point IDs and commissioning dates.",
+        "Verify scheduled reports and notification workflow at representative points."
+      ]
+    },
+    "faq": [
+      { "q": "Can the system control irrigation valves directly?", "a": "Control functions depend on the selected controller's interface and electrical capability and are confirmed per project. Monitoring alone does not imply control capability." },
+      { "q": "Which wireless route suits scattered fields?", "a": "Cellular 4G or NB-IoT usually suits distributed points without local infrastructure, subject to operator coverage. A LoRa gateway route can suit a single managed site. Verify coverage in a pilot." },
+      { "q": "Are water-quality parameters included?", "a": "Soil moisture, temperature and EC are covered per model. Other water-quality parameters depend on the selected configuration and are confirmed individually." }
+    ],
+    "enquiry": {
+      "h2": "Tell us about your fields and water sources.",
+      "intro": "Share the crops or sites, installation country, approximate points and preferred platform. We will review the sensor set and communication route.",
+      "formName": "Agriculture monitoring enquiry",
+      "application": "Agriculture & irrigation"
+    },
+    "relatedLinks": [
+      { "label": "Soil moisture sensor", "href": "/product/soil-moisture-sensor" },
+      { "label": "Weather station", "href": "/product/weather-station" },
+      { "label": "Liquid level sensor", "href": "/product/liquid-level-sensor" },
+      { "label": "Water & Pump Station Monitoring", "href": "/solution/show/id/67" }
+    ]
+  },
+  "64": {
+    "url": "/solution/show/id/64",
+    "title": "Buildings & Campus Monitoring | Hitelecom",
+    "metaDescription": "Observe indoor air, temperature, humidity and water presence across occupied spaces and facility areas with Hitelecom wireless sensors and configurable alerts.",
+    "breadcrumbName": "Buildings & Campus Monitoring",
+    "eyebrow": "INDUSTRY SOLUTION",
+    "h1": "Buildings & Campus Monitoring",
+    "heroIntro": "Observe indoor air, temperature, humidity and water presence across occupied spaces and facility areas, with alerts configured for the conditions that matter to your team.",
+    "heroImg": "/assets/solution/64-banner-0.jpg",
+    "heroImgAlt": "Building interior with indoor air and environmental monitoring points",
+    "heroCaption": "Application illustration. Sensor set and placement are confirmed per project.",
+    "ctaPrimary": "Discuss your project",
+    "challenges": {
+      "h2": "Where building data supports facility teams",
+      "items": [
+        { "title": "Indoor conditions are only checked on complaint", "desc": "Without measurement, air quality and comfort issues surface late. Continuous readings show conditions across occupied spaces." },
+        { "title": "Leaks in service areas are found after damage", "desc": "Plant rooms, basements and risers are rarely visited. Water-presence detection at vulnerable points supports earlier response." },
+        { "title": "Facility areas are spread across buildings", "desc": "Multiple buildings mean many small checks. A shared monitoring view brings selected points into one workflow." }
+      ]
+    },
+    "monitor": {
+      "h2": "What to monitor",
+      "rows": [
+        { "point": "Occupied rooms and shared areas", "measurement": "CO₂, particulates, temperature and humidity per model", "device": "Air quality sensor", "requirement": "Measured parameters depend on the selected model; placement at breathing height reviewed" },
+        { "point": "Storage and archive rooms", "measurement": "Temperature and relative humidity", "device": "Temperature and humidity sensor", "requirement": "Representative placement away from direct airflow sources" },
+        { "point": "Plant rooms, basements and risers", "measurement": "Water presence", "device": "Water leak sensor", "requirement": "Detection coverage and agreed response per area" }
+      ]
+    },
+    "deploy": {
+      "h2": "Typical deployment",
+      "blocks": [
+        { "title": "Gateway-based within a building", "body": "Compatible LoRa devices report to a gateway that forwards data onward, suiting multi-room coverage within one building or campus. Gateway placement is planned around floor layouts." },
+        { "title": "Cellular for standalone points", "body": "4G LTE or NB-IoT devices suit standalone or hard-to-wire points, sending readings through a compatible mobile network without local infrastructure." }
+      ]
+    },
+    "system": {
+      "h2": "Recommended system",
+      "base": [
+        { "name": "Air quality sensor", "href": "/product/air-quality-sensor", "why": "Indoor air measurements per model for occupied spaces, with parameters confirmed per selected device." },
+        { "name": "Temperature and humidity sensor", "href": "/product/temperature-humidity-sensor", "why": "Condition records for storage, archive and technical rooms." },
+        { "name": "Water leak sensor", "href": "/product/water-leakage-sensor", "why": "Water-presence detection at vulnerable facility points." }
+      ],
+      "optional": [
+        { "name": "IoT gateway", "href": "/product/lists/cid/258", "why": "Required where a gateway-based LoRa route is selected within the building." }
+      ]
+    },
+    "data": {
+      "h2": "Data and alerts",
+      "p": "Thresholds are configured for the conditions your team needs to review, from air-quality levels to water-presence events. Notifications follow the agreed platform workflow; delivery timing depends on device configuration and network conditions.",
+      "bullets": [
+        "Measured air parameters vary by model and are confirmed before selection.",
+        "Measurement, reporting and notification intervals are configured separately.",
+        "Data fields and units are agreed with the destination platform."
+      ]
+    },
+    "install": {
+      "h2": "Installation and commissioning",
+      "items": [
+        "Select representative rooms and facility points with the site team.",
+        "Place air sensors away from direct supply-air flow and confirm mounting height.",
+        "Check wireless coverage across floors and building materials.",
+        "Record baseline readings and commissioning dates per point.",
+        "Test the agreed notification workflow before acceptance."
+      ]
+    },
+    "faq": [
+      { "q": "Which air parameters can be measured?", "a": "Parameters such as CO₂, particulates, temperature and humidity depend on the selected model. We confirm the exact set per device before you decide." },
+      { "q": "Can sensors connect to our building platform?", "a": "Integration is assessed for the selected device and platform. Share your endpoint, protocol, authentication and payload requirements so we can confirm the supported data path." },
+      { "q": "Do we need a gateway in every building?", "a": "Gateway-based routes need coverage in each building served; cellular devices need none. The route is chosen per site layout and coverage conditions." }
+    ],
+    "enquiry": {
+      "h2": "Tell us about your buildings and facility areas.",
+      "intro": "Share the spaces and conditions you need to monitor, the installation country and approximate points. We will review a suitable configuration.",
+      "formName": "Buildings monitoring enquiry",
+      "application": "Buildings & campus"
+    },
+    "relatedLinks": [
+      { "label": "Air quality sensor", "href": "/product/air-quality-sensor" },
+      { "label": "Temperature and humidity sensor", "href": "/product/temperature-humidity-sensor" },
+      { "label": "Water leak sensor", "href": "/product/water-leakage-sensor" },
+      { "label": "Industrial Park & Site Monitoring", "href": "/solution/show/id/60" }
+    ]
+  },
+  "60": {
+    "url": "/solution/show/id/60",
+    "title": "Industrial Park & Site Monitoring | Hitelecom",
+    "metaDescription": "Bring environmental measurements and supported facility data from multiple buildings and remote points into a consistent monitoring workflow with Hitelecom.",
+    "breadcrumbName": "Industrial Park & Site Monitoring",
+    "eyebrow": "INDUSTRY SOLUTION",
+    "h1": "Industrial Park & Site Monitoring",
+    "heroIntro": "Bring environmental measurements and supported facility data from multiple buildings and remote points into a consistent monitoring workflow, including TVOC and project-defined gas monitoring where required.",
+    "heroImg": "/assets/solution/60-banner-0.jpg",
+    "heroImgAlt": "Industrial park with distributed environmental monitoring points across buildings",
+    "heroCaption": "Application illustration. Sensor set and network route are confirmed per project.",
+    "ctaPrimary": "Discuss your project",
+    "challenges": {
+      "h2": "Where site-wide data supports park operations",
+      "items": [
+        { "title": "Conditions differ across buildings and zones", "desc": "A park-wide picture needs points in each area, not one central station. Distributed measurements show actual local conditions." },
+        { "title": "VOC concerns need defined measurements", "desc": "Where processes or traffic raise VOC questions, the measured gases, ranges and methods must be defined per project rather than assumed." },
+        { "title": "Remote points are expensive to patrol", "desc": "Perimeter, storage and utility points take time to visit. Remote readings reduce routine trips and focus site visits." }
+      ]
+    },
+    "monitor": {
+      "h2": "What to monitor",
+      "rows": [
+        { "point": "Selected outdoor or process-adjacent points", "measurement": "TVOC with the measuring method confirmed per model", "device": "TVOC sensor or solar pipeline TVOC sensor", "requirement": "TVOC is not a regulatory total-VOC figure; gases and ranges defined per project" },
+        { "point": "Project-defined gas points", "measurement": "Selected gas within the confirmed range", "device": "Custom gas sensor", "requirement": "Target gas, method and range agreed before configuration" },
+        { "point": "Buildings and storage areas", "measurement": "Temperature, humidity and water presence", "device": "Temperature and humidity sensor, water leak sensor", "requirement": "Representative placement per area" }
+      ]
+    },
+    "deploy": {
+      "h2": "Typical deployment",
+      "blocks": [
+        { "title": "Gateway-based across the park", "body": "Compatible LoRa devices report to one or more gateways that forward data to the destination platform. Gateway siting and backhaul are planned around buildings and open areas." },
+        { "title": "Cellular for remote points", "body": "4G LTE or NB-IoT devices suit isolated points beyond gateway coverage, sending readings through a compatible mobile network." }
+      ]
+    },
+    "system": {
+      "h2": "Recommended system",
+      "base": [
+        { "name": "TVOC sensor", "href": "/product/tvoc-sensor", "why": "TVOC measurement at selected points with the method and range confirmed per model." },
+        { "name": "Solar pipeline TVOC sensor", "href": "/product/solar-pipeline-tvoc-sensor", "why": "Outdoor TVOC monitoring where a solar-powered configuration suits the point." },
+        { "name": "Custom gas sensor", "href": "/product/custom-gas-sensor", "why": "Project-defined gas monitoring where the target gas and range are agreed." }
+      ],
+      "optional": [
+        { "name": "Temperature and humidity sensor", "href": "/product/temperature-humidity-sensor", "why": "Environmental context for storage and facility areas." },
+        { "name": "Water leak sensor", "href": "/product/water-leakage-sensor", "why": "Water-presence detection at vulnerable facility points." },
+        { "name": "IoT gateway", "href": "/product/lists/cid/258", "why": "Required where a gateway-based LoRa route is selected." }
+      ]
+    },
+    "data": {
+      "h2": "Data and alerts",
+      "p": "Gas and environmental readings are associated with locations and time, with thresholds agreed per project. Event handling and notification timing depend on device configuration, network conditions and the platform workflow.",
+      "bullets": [
+        "TVOC readings do not equal a regulatory total-VOC measurement; the target gases and method are defined per project.",
+        "Measurement, reporting and notification intervals are configured separately.",
+        "Data fields, units and timestamps are confirmed with the destination platform."
+      ]
+    },
+    "install": {
+      "h2": "Installation and commissioning",
+      "items": [
+        "Agree monitoring points with the park operations team, including gas points defined per project.",
+        "Confirm power arrangements, including solar configurations where selected.",
+        "Check wireless coverage across buildings and open areas.",
+        "Record baseline readings and commissioning dates per point.",
+        "Test scheduled reports and the agreed notification workflow."
+      ]
+    },
+    "faq": [
+      { "q": "Does a TVOC sensor measure all VOCs?", "a": "No. TVOC readings reflect the sensor's measuring method and range per model and do not equal a regulatory total-VOC figure. Target gases and methods are defined per project." },
+      { "q": "Can you monitor a gas not in the standard range?", "a": "Project-defined gas monitoring is available through the custom gas route, subject to technical assessment of the target gas, method and range." },
+      { "q": "How are remote points connected?", "a": "Gateway-based LoRa suits coverage within the park; cellular 4G or NB-IoT suits isolated points. The route is confirmed per site layout and coverage." }
+    ],
+    "enquiry": {
+      "h2": "Tell us about your park and monitoring points.",
+      "intro": "Share the areas and measurements you need, including any defined gases, the installation country and approximate points. We will review a suitable configuration.",
+      "formName": "Industrial park monitoring enquiry",
+      "application": "Industrial park & site"
+    },
+    "relatedLinks": [
+      { "label": "TVOC sensor", "href": "/product/tvoc-sensor" },
+      { "label": "Solar pipeline TVOC sensor", "href": "/product/solar-pipeline-tvoc-sensor" },
+      { "label": "Custom gas sensor", "href": "/product/custom-gas-sensor" },
+      { "label": "Industrial Equipment & Process Monitoring", "href": "/solution/show/id/58" }
+    ]
+  },
+  "59": {
+    "url": "/solution/show/id/59",
+    "title": "Energy Asset Monitoring | Hitelecom",
+    "metaDescription": "Monitor selected structural, thermal and equipment conditions around energy assets, including tilt, temperature, vibration and SPD status, with Hitelecom wireless sensors.",
+    "breadcrumbName": "Energy Asset Monitoring",
+    "eyebrow": "INDUSTRY SOLUTION",
+    "h1": "Energy Asset Monitoring",
+    "heroIntro": "Monitor selected structural, thermal and equipment conditions around energy assets such as solar mounting structures and support towers. Add compatible status-monitoring devices, including SPD status, where the project requires them.",
+    "heroImg": "/assets/solution/59-banner-0.jpg",
+    "heroImgAlt": "Energy site with support structures selected for tilt and equipment-condition monitoring",
+    "heroCaption": "Application illustration. Device selection and mounting are confirmed per project.",
+    "ctaPrimary": "Discuss your project",
+    "challenges": {
+      "h2": "Where monitoring supports energy asset operations",
+      "items": [
+        { "title": "Support structures are inspected infrequently", "desc": "Mounting structures and towers are visited on long cycles. Tilt readings at defined points show change between inspections." },
+        { "title": "Equipment temperature rises are noticed late", "desc": "Connections and equipment can heat before failure. Temperature points support earlier review." },
+        { "title": "Surge protection status is unknown until checked", "desc": "SPD condition is typically confirmed on site. Status monitoring brings the information into the maintenance workflow." }
+      ]
+    },
+    "monitor": {
+      "h2": "What to monitor",
+      "rows": [
+        { "point": "Selected support structure or tower", "measurement": "Local inclination and change from baseline, in degrees", "device": "Wireless tilt sensor", "requirement": "Approved mounting position, axis orientation and asset ID" },
+        { "point": "Selected equipment or connection point", "measurement": "Temperature, in °C", "device": "Temperature sensor", "requirement": "Mounting method and thermal contact reviewed per installation" },
+        { "point": "Selected rotating equipment", "measurement": "Vibration indicators within the supported band", "device": "Vibration sensor", "requirement": "Mounting position and measurement band matched to the machine" },
+        { "point": "Surge protection devices", "measurement": "SPD status", "device": "SPD monitoring terminal", "requirement": "2/4/8-channel configurations per project; status only, no service-life estimate" }
+      ]
+    },
+    "deploy": {
+      "h2": "Typical deployment",
+      "blocks": [
+        { "title": "Cellular across distributed assets", "body": "Energy assets are often spread out. 4G LTE or NB-IoT devices send readings through a compatible mobile network; confirm bands and coverage at each position." },
+        { "title": "Gateway-based within a plant", "body": "Where assets cluster within one site, compatible LoRa devices report to a gateway that forwards data onward." }
+      ]
+    },
+    "system": {
+      "h2": "Recommended system",
+      "base": [
+        { "name": "Wireless tilt sensor", "href": "/product/tilt-sensor", "why": "Local inclination at selected structural points, reviewed against the installation baseline." },
+        { "name": "Temperature sensor", "href": "/product/temperature-sensor", "why": "Temperature at selected equipment and connection points." },
+        { "name": "SPD monitoring terminal", "href": "/product/spd-monitoring-terminal", "why": "SPD status monitoring in 2/4/8-channel configurations; supports maintenance replacement workflow." }
+      ],
+      "optional": [
+        { "name": "Vibration sensor", "href": "/product/vibration-sensor", "why": "Vibration trends and threshold events on selected rotating equipment." },
+        { "name": "IoT gateway", "href": "/product/lists/cid/258", "why": "Required where a gateway-based LoRa route is selected." }
+      ]
+    },
+    "data": {
+      "h2": "Data and alerts",
+      "p": "Readings are reviewed against installation baselines and agreed thresholds. An inclination reading describes local rotation at the mounting point; it does not establish settlement, load capacity or remaining structural life.",
+      "bullets": [
+        "SPD data covers status monitoring and maintenance replacement support; no service-life estimation is provided.",
+        "Vibration trends support maintenance planning and are not AI fault prediction.",
+        "Notification timing depends on device configuration, network conditions and the platform workflow."
+      ]
+    },
+    "install": {
+      "h2": "Installation and commissioning",
+      "items": [
+        "Confirm mounting positions and axis orientation on each structure.",
+        "Record baseline readings, asset IDs and commissioning dates.",
+        "Check wireless coverage at each position, including remote assets.",
+        "Configure SPD channel assignments per the project wiring.",
+        "Test scheduled reports and the agreed notification workflow."
+      ]
+    },
+    "faq": [
+      { "q": "Does tilt monitoring assess structural safety?", "a": "No. Inclination readings describe local rotation at the mounting point and support inspection prioritization. Structural assessment requires load, design and professional inspection." },
+      { "q": "What does SPD monitoring provide?", "a": "Status monitoring for surge protection devices in 2/4/8-channel configurations, supporting maintenance and replacement workflows. It does not provide service-life estimation." },
+      { "q": "Which wireless route suits distributed energy assets?", "a": "Cellular 4G or NB-IoT usually suits scattered assets, subject to coverage. Gateway-based LoRa suits clustered sites. Verify the route in a representative pilot." }
+    ],
+    "enquiry": {
+      "h2": "Tell us about your energy assets.",
+      "intro": "Share the asset types and measurements you need, the installation country and approximate points. We will review a suitable configuration.",
+      "formName": "Energy asset monitoring enquiry",
+      "application": "Energy assets"
+    },
+    "relatedLinks": [
+      { "label": "Wireless tilt sensor", "href": "/product/tilt-sensor" },
+      { "label": "SPD monitoring terminal", "href": "/product/spd-monitoring-terminal" },
+      { "label": "Temperature sensor", "href": "/product/temperature-sensor" },
+      { "label": "Urban Infrastructure Monitoring", "href": "/solution/show/id/57" }
+    ]
+  },
+  "57": {
+    "url": "/solution/show/id/57",
+    "title": "Urban Infrastructure Monitoring | Hitelecom",
+    "metaDescription": "Follow tilt, environmental conditions and selected asset status across poles, roadside structures, bridges and other distributed urban infrastructure with Hitelecom.",
+    "breadcrumbName": "Urban Infrastructure Monitoring",
+    "eyebrow": "INDUSTRY SOLUTION",
+    "h1": "Urban Infrastructure Monitoring",
+    "heroIntro": "Follow tilt, environmental conditions and selected asset status across poles, roadside structures, bridges and other distributed urban infrastructure. Review changes against installation baselines to help prioritize site inspections.",
+    "heroImg": "/assets/solution/57-banner-0.jpg",
+    "heroImgAlt": "Urban poles and roadside structures selected for tilt and condition monitoring",
+    "heroCaption": "Application illustration. Monitoring points are defined per project engineering review.",
+    "ctaPrimary": "Discuss your project",
+    "challenges": {
+      "h2": "Where data supports infrastructure inspection",
+      "items": [
+        { "title": "Distributed assets are inspected on long cycles", "desc": "Poles, towers and roadside structures number in the hundreds. Tilt readings at defined points highlight where change is occurring." },
+        { "title": "Bridge and structure checks need defined points", "desc": "Component-level measurements at agreed positions support the inspection program without claiming whole-structure assessment." },
+        { "title": "Weather context is missing at the asset", "desc": "Wind and environmental conditions at the site help interpret structural readings; weather measurement is added per project." }
+      ]
+    },
+    "monitor": {
+      "h2": "What to monitor",
+      "rows": [
+        { "point": "Poles, towers and sign supports", "measurement": "Local inclination and change from baseline, in degrees", "device": "Wireless tilt sensor", "requirement": "Approved mounting position, axis orientation and asset ID" },
+        { "point": "Defined bridge components", "measurement": "Inclination at agreed positions; vibration where applicable", "device": "Tilt sensor, vibration sensor", "requirement": "Points defined with the project's engineering review" },
+        { "point": "Defined reference points", "measurement": "Distance change within the confirmed range and surface conditions", "device": "Radar distance sensor", "requirement": "Target, reference and mounting direction confirmed; not whole-structure 3D displacement" },
+        { "point": "Site environment", "measurement": "Wind and weather parameters per configuration", "device": "Weather station", "requirement": "Open mounting position reviewed per site" }
+      ]
+    },
+    "deploy": {
+      "h2": "Typical deployment",
+      "blocks": [
+        { "title": "Cellular for city-wide assets", "body": "4G LTE or NB-IoT devices suit widely distributed urban assets, sending readings through a compatible mobile network. Confirm operator coverage at each mounting position." },
+        { "title": "Gateway-based for grouped assets", "body": "Where assets cluster, such as a bridge site, compatible LoRa devices can report to a local gateway that forwards data onward." }
+      ]
+    },
+    "system": {
+      "h2": "Recommended system",
+      "base": [
+        { "name": "Wireless tilt sensor", "href": "/product/tilt-sensor", "why": "Local inclination on poles, towers and support structures, reviewed against the installation baseline." },
+        { "name": "Triaxial high-precision tilt sensor", "href": "/product/triaxial-high-precision-tilt-sensor", "why": "Where the project requires three-axis measurement at defined structural points." },
+        { "name": "Vibration sensor", "href": "/product/vibration-sensor", "why": "Vibration trends on applicable components, within the supported band." }
+      ],
+      "optional": [
+        { "name": "Radar distance sensor", "href": "/product/radar-distance-sensor", "why": "Distance change at defined reference points with confirmed target and surface conditions." },
+        { "name": "Weather station", "href": "/product/weather-station", "why": "Site wind and weather context to support interpretation of structural readings." }
+      ]
+    },
+    "data": {
+      "h2": "Data and alerts",
+      "p": "Readings are reviewed against installation baselines to help prioritize inspections. An inclination reading describes local rotation at the mounting point; it does not establish settlement, overall deformation or remaining capacity.",
+      "bullets": [
+        "Radar distance readings reflect the defined target and reference; they are not whole-structure 3D displacement.",
+        "Measurement, reporting and notification intervals are configured separately.",
+        "Slope and embankment points require an engineering design; this solution does not replace a geotechnical instrumentation program."
+      ]
+    },
+    "install": {
+      "h2": "Installation and commissioning",
+      "items": [
+        "Define monitoring points with the project's engineering review.",
+        "Confirm mounting positions and axis orientation; record asset IDs.",
+        "Check wireless coverage at each position across the urban environment.",
+        "Record baseline readings and commissioning dates.",
+        "Test scheduled reports and the agreed notification workflow."
+      ]
+    },
+    "faq": [
+      { "q": "Does tilt monitoring replace structural inspection?", "a": "No. Inclination readings support inspection prioritization and records. Structural safety assessment requires load, design and professional inspection." },
+      { "q": "Can radar distance measure overall structural displacement?", "a": "No. A distance reading reflects the defined target, reference and mounting direction within the confirmed range. Whole-structure 3D displacement is not claimed." },
+      { "q": "Which assets are typically covered?", "a": "Poles, towers, roadside structures, sign supports and defined bridge components. Points are agreed per project engineering review." }
+    ],
+    "enquiry": {
+      "h2": "Tell us about your infrastructure assets.",
+      "intro": "Share the asset types and locations, the installation country and approximate points. We will review a suitable configuration and communication route.",
+      "formName": "Urban infrastructure monitoring enquiry",
+      "application": "Urban infrastructure"
+    },
+    "relatedLinks": [
+      { "label": "Wireless tilt sensor", "href": "/product/tilt-sensor" },
+      { "label": "Triaxial high-precision tilt sensor", "href": "/product/triaxial-high-precision-tilt-sensor" },
+      { "label": "Radar distance sensor", "href": "/product/radar-distance-sensor" },
+      { "label": "Energy Asset Monitoring", "href": "/solution/show/id/59" }
+    ]
+  },
+  "66": {
+    "url": "/solution/show/id/66",
+    "title": "Museum and Heritage Monitoring | Hitelecom",
+    "metaDescription": "Observe microclimate, light and local structural inclination around collections, historic buildings and visitor sites with Hitelecom wireless sensors.",
+    "breadcrumbName": "Heritage & Visitor Site Monitoring",
+    "eyebrow": "INDUSTRY SOLUTION",
+    "h1": "Heritage & Visitor Site Monitoring",
+    "heroIntro": "Observe microclimate, light and local structural inclination around collections, historic buildings and visitor sites, with mounting chosen for the conservation setting and alerts configured for the conditions that matter.",
+    "heroImg": "/assets/solution/66-banner-0.jpg",
+    "heroImgAlt": "Museum or heritage interior with discreet environmental monitoring points",
+    "heroCaption": "Application illustration. Mounting is chosen to suit the conservation setting.",
+    "ctaPrimary": "Discuss your project",
+    "challenges": {
+      "h2": "Where monitoring supports conservation work",
+      "items": [
+        { "title": "Microclimate varies between rooms and cases", "desc": "Temperature, humidity and light differ across galleries and storage. Representative points show actual conditions around the collection." },
+        { "title": "Historic structures change gradually", "desc": "Local inclination at agreed points adds a measurement record alongside periodic structural surveys." },
+        { "title": "Wiring is restricted in historic fabric", "desc": "Wireless, battery-powered devices reduce installation impact where cabling is not acceptable." }
+      ]
+    },
+    "monitor": {
+      "h2": "What to monitor",
+      "rows": [
+        { "point": "Galleries, storage and display areas", "measurement": "Temperature, relative humidity and light per model", "device": "Temperature and humidity sensor", "requirement": "Placement reviewed with conservation staff; parameters confirmed per model" },
+        { "point": "Selected historic structure points", "measurement": "Local inclination and change from baseline, in degrees", "device": "Wireless tilt sensor", "requirement": "Mounting agreed with the conservation and engineering team" },
+        { "point": "Sensitive rooms or cases", "measurement": "Vibration where applicable, within the supported band", "device": "Vibration sensor", "requirement": "Applicability reviewed per object and location" }
+      ]
+    },
+    "deploy": {
+      "h2": "Typical deployment",
+      "blocks": [
+        { "title": "Gateway-based within the site", "body": "Compatible LoRa devices report to a gateway that forwards data onward, suiting a museum or heritage site with many points in a defined area. Gateway placement respects the building fabric." },
+        { "title": "Cellular for standalone buildings", "body": "4G LTE or NB-IoT devices suit standalone or remote structures where a local gateway is not practical." }
+      ]
+    },
+    "system": {
+      "h2": "Recommended system",
+      "base": [
+        { "name": "Temperature and humidity sensor", "href": "/product/temperature-humidity-sensor", "why": "Microclimate records for galleries, storage and display areas, with parameters confirmed per model." },
+        { "name": "Wireless tilt sensor", "href": "/product/tilt-sensor", "why": "Local inclination at agreed points on historic structures, with mounting chosen for the setting." }
+      ],
+      "optional": [
+        { "name": "Vibration sensor", "href": "/product/vibration-sensor", "why": "Vibration measurement where applicable, within the supported band." },
+        { "name": "Temperature and humidity data logger (H100)", "href": "/product/temperature-humidity-data-logger", "why": "Local recording where networked reporting is not required; readout follows the product's actual interfaces." },
+        { "name": "IoT gateway", "href": "/product/lists/cid/258", "why": "Required where a gateway-based LoRa route is selected." }
+      ]
+    },
+    "data": {
+      "h2": "Data and alerts",
+      "p": "Thresholds for temperature, humidity and light support the conservation team's review. Inclination readings describe local rotation at the mounting point and complement, not replace, structural surveys.",
+      "bullets": [
+        "Measured parameters vary by model and are confirmed before selection.",
+        "Measurement, reporting and notification intervals are configured separately.",
+        "Local logger records are retrieved through the product's supported readout process."
+      ]
+    },
+    "install": {
+      "h2": "Installation and commissioning",
+      "items": [
+        "Agree points and mounting methods with conservation staff.",
+        "Use fixing methods appropriate to historic fabric; avoid unnecessary alteration.",
+        "Check wireless coverage through thick walls and floors.",
+        "Record baseline readings and commissioning dates per point.",
+        "Test the agreed notification workflow before acceptance."
+      ]
+    },
+    "faq": [
+      { "q": "Can devices be installed without damaging historic surfaces?", "a": "Mounting methods are agreed with the conservation team for each point, choosing fixings appropriate to the fabric. Wireless devices reduce cabling impact." },
+      { "q": "Does tilt monitoring assess the safety of a historic building?", "a": "No. Inclination readings describe local rotation at the mounting point and complement periodic structural surveys; they do not replace professional assessment." },
+      { "q": "Which environmental parameters are covered?", "a": "Temperature, relative humidity and light are covered per model. The exact parameter set is confirmed for the selected device." }
+    ],
+    "enquiry": {
+      "h2": "Tell us about your site and collections.",
+      "intro": "Share the spaces and structures you need to monitor, the installation country and approximate points. We will review a configuration suited to the conservation setting.",
+      "formName": "Heritage monitoring enquiry",
+      "application": "Heritage & visitor sites"
+    },
+    "relatedLinks": [
+      { "label": "Temperature and humidity sensor", "href": "/product/temperature-humidity-sensor" },
+      { "label": "Wireless tilt sensor", "href": "/product/tilt-sensor" },
+      { "label": "Temperature and humidity data logger", "href": "/product/temperature-humidity-data-logger" },
+      { "label": "Buildings & Campus Monitoring", "href": "/solution/show/id/64" }
+    ]
+  },
+  "67": {
+    "url": "/solution/show/id/67",
+    "title": "Water and Pump Station Monitoring | Hitelecom",
+    "metaDescription": "Connect pressure, level, vibration, temperature and water-presence measurements across pump stations, pipelines, tanks and drainage assets with Hitelecom.",
+    "breadcrumbName": "Water & Pump Station Monitoring",
+    "eyebrow": "INDUSTRY SOLUTION",
+    "h1": "Water & Pump Station Monitoring",
+    "heroIntro": "Bring pressure, level, vibration, temperature and water-presence data from selected pump-station assets into a shared monitoring view. Configure thresholds for the conditions your team needs to review.",
+    "heroImg": "/assets/solution/67-banner-0.jpg",
+    "heroImgAlt": "Pump station with pumps and pipework selected for pressure, level and vibration monitoring",
+    "heroCaption": "Application illustration. Device selection and process connections are confirmed per project.",
+    "ctaPrimary": "Plan your pump station monitoring",
+    "challenges": {
+      "h2": "Where data supports water operations",
+      "items": [
+        { "title": "Pump condition is assessed only on site", "desc": "Vibration and temperature trends between visits are invisible. Measurements at selected pumps support maintenance planning." },
+        { "title": "Pressure and level are read locally", "desc": "Local gauges require visits and give no history. Remote readings bring pressure and level into one view." },
+        { "title": "Flooding in stations is found late", "desc": "Water ingress in sumps and plant areas can damage equipment. Water-presence detection supports faster response." }
+      ]
+    },
+    "monitor": {
+      "h2": "What to monitor",
+      "rows": [
+        { "point": "Selected pump sets", "measurement": "Vibration indicators within the supported band", "device": "Vibration sensor", "requirement": "Mounting position and measurement band matched to the machine" },
+        { "point": "Pump and motor surfaces", "measurement": "Temperature, in °C", "device": "Temperature sensor", "requirement": "Mounting method and thermal contact reviewed per installation" },
+        { "point": "Inlet and outlet pipework", "measurement": "Pressure, unit per configured range", "device": "Pressure sensor", "requirement": "Process connection, medium compatibility and range confirmed per model" },
+        { "point": "Wet well, tank or reservoir", "measurement": "Liquid level, unit per configured range", "device": "Liquid level sensor", "requirement": "Mounting method and range confirmed per installation" },
+        { "point": "Sump and vulnerable floor areas", "measurement": "Water presence", "device": "Water leak sensor", "requirement": "Detection coverage and agreed response per area" }
+      ]
+    },
+    "deploy": {
+      "h2": "Typical deployment",
+      "blocks": [
+        { "title": "Gateway-based within a station", "body": "Compatible LoRa devices report to a gateway that forwards data to the destination platform, suiting stations with several points in one building. Check coverage around pumps, pipework and metal structures." },
+        { "title": "Cellular for remote stations", "body": "Unattended or remote stations use 4G LTE or NB-IoT devices sending readings through a compatible mobile network, with no local gateway required." }
+      ]
+    },
+    "system": {
+      "h2": "Recommended system",
+      "base": [
+        { "name": "Pressure sensor", "href": "/product/pressure-sensor", "why": "Pressure at inlet and outlet pipework, with connection and range confirmed per model." },
+        { "name": "Liquid level sensor", "href": "/product/liquid-level-sensor", "why": "Level in wet wells, tanks and reservoirs supplying or served by the station." },
+        { "name": "Vibration sensor", "href": "/product/vibration-sensor", "why": "Vibration trends and threshold events on selected pump sets; not a bearing-fault classification or remaining-life prediction." },
+        { "name": "Temperature sensor", "href": "/product/temperature-sensor", "why": "Surface temperature at pump and motor points." }
+      ],
+      "optional": [
+        { "name": "Water leak sensor", "href": "/product/water-leakage-sensor", "why": "Water-presence detection at sumps and vulnerable floor areas." },
+        { "name": "IoT gateway", "href": "/product/lists/cid/258", "why": "Required where a gateway-based LoRa route is selected." }
+      ]
+    },
+    "data": {
+      "h2": "Data and alerts",
+      "p": "Pressure, level, vibration and temperature readings are associated with assets and time, with thresholds agreed per operating range. Event handling and notification timing depend on device configuration, network conditions and the platform workflow.",
+      "bullets": [
+        "Vibration trends support maintenance planning; they are not AI fault prediction.",
+        "Measurement, scheduled reporting and event handling are configured separately.",
+        "Data fields, units and timestamps are confirmed with the destination platform before deployment."
+      ]
+    },
+    "install": {
+      "h2": "Installation and commissioning",
+      "items": [
+        "Confirm process connections and ranges for pressure and level points.",
+        "Mount vibration and temperature sensors at the agreed positions.",
+        "Check wireless coverage inside the station, including metal structures.",
+        "Record baseline readings, asset IDs and commissioning dates.",
+        "Test scheduled reports and the agreed notification workflow."
+      ]
+    },
+    "faq": [
+      { "q": "Does pump vibration monitoring predict failures?", "a": "No. The sensors provide vibration measurements, trends and threshold events within the supported band. Fault classification and remaining-life prediction are not claimed." },
+      { "q": "Can remote stations run without local network infrastructure?", "a": "Yes. Cellular 4G or NB-IoT devices send readings through a compatible mobile network. Confirm operator coverage at the station during the pilot." },
+      { "q": "Which assets does a typical station configuration cover?", "a": "Selected pump sets, inlet and outlet pipework, wet wells or tanks, and vulnerable floor areas. The point list is agreed per station." }
+    ],
+    "enquiry": {
+      "h2": "Tell us about your stations and pipelines.",
+      "intro": "Share the station count, measurements you need, installation country and preferred platform. We will review a suitable configuration.",
+      "formName": "Water & pump station monitoring enquiry",
+      "application": "Water & pump stations"
+    },
+    "relatedLinks": [
+      { "label": "Pressure sensor", "href": "/product/pressure-sensor" },
+      { "label": "Liquid level sensor", "href": "/product/liquid-level-sensor" },
+      { "label": "Vibration sensor", "href": "/product/vibration-sensor" },
+      { "label": "Agriculture & Irrigation Monitoring", "href": "/solution/show/id/65" }
+    ]
+  }
+}

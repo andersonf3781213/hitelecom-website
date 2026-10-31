@@ -12,7 +12,8 @@
   /* vw 尺寸在超宽屏（容器已封顶而 vw 继续增大）会导致卡片超高/页脚重叠，
      全部垂直 vw 值按 1680px 断点封顶（V127 修复）。 */
   row-gap: min(1.19792vw, 20.1px);
-  align-items: stretch;
+  /* V143：卡片高度贴合内容，不再拉伸整行 */
+  align-items: start;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -44,8 +45,9 @@
   width: 100%;
   min-width: 0;
   height: auto;
-  min-height: min(28.125vw, 472.5px);
-  padding: min(3.33333vw, 56px) 0 1.5em;
+  /* V143：取消强制最小高度与顶部大留白，卡片紧凑贴合内容 */
+  min-height: 0;
+  padding: min(1.6vw, 26px) 0 1.5em;
   position: relative;
 }
 

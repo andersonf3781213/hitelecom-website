@@ -1,0 +1,81 @@
+---
+/**
+ * V142: Solutions 询盘表单（英文）。
+ * 纯前端生成询盘草稿（mailto），不发送任何数据；name 属性保持英文。
+ * enquiry 数据：{ h2, intro, formName, application?, fields }
+ * applicationOptions：下拉选项（总览数据里的一份，全站共用）
+ * ui 数据：review 文案 / 按钮文案（来自 solutions/en.json 的 ui 块）
+ */
+interface Props {
+  enquiry: {
+    h2: string;
+    intro: string;
+    formName: string;
+    application?: string;
+  };
+  fields: Record<string, string>;
+  applicationOptions: string[];
+  ui: Record<string, string>;
+}
+
+const { enquiry, fields, applicationOptions, ui } = Astro.props;
+const f = fields;
+const options = applicationOptions;
+const siteEmail = 'sales@hitelecom.cn';
+---
+
+<section class="enquiry" id="enquiry">
+  <div class="wrap">
+    <h2>{enquiry.h2}</h2>
+    <p class="sec-intro">{enquiry.intro}</p>
+    <form class="brief">
+      <div>
+        <label for="eq-name" data-brief-field="Name" data-brief-label="Name">{f.name ?? 'Name *'}</label>
+        <input id="eq-name" name="Name" type="text" required autocomplete="name" />
+      </div>
+      <div>
+        <label for="eq-company" data-brief-field="Company" data-brief-label="Company">{f.company ?? 'Company *'}</label>
+        <input id="eq-company" name="Company" type="text" required autocomplete="organization" />
+      </div>
+      <div>
+        <label for="eq-email" data-brief-field="Email" data-brief-label="Business email">{f.email ?? 'Business email *'}</label>
+        <input id="eq-email" name="Email" type="email" required autocomplete="email" />
+      </div>
+      <div>
+        <label for="eq-country" data-brief-field="Country" data-brief-label="Country or region">{f.country ?? 'Country or region'}</label>
+        <input id="eq-country" name="Country" type="text" autocomplete="country-name" />
+      </div>
+      <div>
+        <label for="eq-app" data-brief-field="Application" data-brief-label="Monitoring application">{f.application ?? 'Monitoring application'}</label>
+        <select id="eq-app" name="Application" required data-preset={enquiry.application}>
+          <option value="" disabled selected>—</option>
+          {options.map((opt) => (
+            <option value={opt} selected={opt === enquiry.application}>{opt}</option>
+          ))}
+        </select>
+      </div>
+      <div>
+        <label for="eq-points" data-brief-field="Points" data-brief-label="Estimated monitoring points">{f.points ?? 'Estimated monitoring points'}</label>
+        <input id="eq-points" name="Points" type="text" inputmode="numeric" />
+      </div>
+      <div class="full">
+        <label for="eq-req" data-brief-field="Requirements" data-brief-label="Project requirements">{f.requirements ?? 'Project requirements *'}</label>
+        <textarea id="eq-req" name="Requirements" required></textarea>
+      </div>
+      <div class="full form-actions">
+        <button type="submit" class="btn btn-primary">{ui.prepare}<span class="arr">→</span></button>
+      </div>
+    </form>
+    <div id="enquiry-review" aria-live="polite">
+      <h3>{ui.ready}</h3>
+      <p class="hint">{ui.reviewHint}</p>
+      <pre></pre>
+      <div class="row">
+        <a class="btn btn-primary" href="#">{ui.openEmail}<span class="arr">→</span></a>
+        <button type="button" class="btn btn-outline" data-copied={ui.copied} data-fallback={ui.copyFallback}>{ui.copyBrief}</button>
+        <span class="copied"></span>
+      </div>
+    </div>
+    <p class="form-note">{ui.emailIntro} {ui.directEmail} <a href={`mailto:${siteEmail}`}>{siteEmail}</a>.</p>
+  </div>
+</section>

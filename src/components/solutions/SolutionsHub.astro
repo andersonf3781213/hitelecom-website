@@ -1,0 +1,195 @@
+---
+/**
+ * V142: Solutions 总览页组件（英文，/solution）。
+ * 内容全部来自 src/data/solutions/en.json；卡片/文章/FAQ 均为静态渲染。
+ */
+import EnquiryForm from './EnquiryForm.astro';
+import '../../styles/gateway.css';
+import '../../styles/solutions.css';
+import { SITE_URL } from '../../utils/jsonld';
+
+interface Props {
+  d: any;
+}
+
+const { d } = Astro.props;
+const ui = d.ui;
+
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: d.industries.items.map((it: any, i: number) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: it.title,
+    url: `${SITE_URL}/solution/show/id/${it.id}`,
+  })),
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Solutions' },
+  ],
+};
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: d.faq.items.map((f: any) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<div
+  class="ht-gateway ht-solutions"
+  data-name={d.enquiry.formName}
+  data-email-subject={ui.emailSubject}
+  data-email="sales@hitelecom.cn"
+>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">{d.eyebrow}</div>
+        <h1>{d.h1}</h1>
+        <p class="tagline">{d.heroTagline}</p>
+        <p class="lead">{d.heroIntro}</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#enquiry">{d.ctaPrimary}<span class="arr">→</span></a>
+          <a class="btn btn-outline" href="#featured">{d.ctaSecondary}</a>
+        </div>
+        <div class="hero-labels">
+          {d.supportLabels.map((s: string) => <span>{s}</span>)}
+        </div>
+      </div>
+      <figure class="hero-fig">
+        <img
+          src="/assets/solution/index-banner.jpg"
+          alt="Industrial monitoring deployment: sensors and gateways connecting field measurements to a cloud platform"
+          width="880"
+          height="560"
+          fetchpriority="high"
+        />
+      </figure>
+    </div>
+  </section>
+
+  <section id="featured">
+    <div class="wrap">
+      <h2>{d.featured.h2}</h2>
+      <p class="sec-intro">{d.featured.intro}</p>
+      <div class="grid3">
+        {d.featured.cards.map((c: any) => (
+          <a class="card" href={c.href}>
+            <h3>{c.title}</h3>
+            <p>{c.desc}</p>
+            <div class="meas">{c.measurements}</div>
+            <span class="card-cta">{c.cta}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="industries">
+    <div class="wrap">
+      <h2>{d.industries.h2}</h2>
+      <p class="sec-intro">{d.industries.intro}</p>
+      <div class="grid4">
+        {d.industries.items.map((it: any) => (
+          <a class="card" href={`/solution/show/id/${it.id}`}>
+            <h3>{it.title}</h3>
+            <p>{it.copy}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="topics">
+    <div class="wrap">
+      <h2>{d.topics.h2}</h2>
+      <p class="sec-intro">{d.topics.intro}</p>
+      <div class="topics">
+        {d.topics.items.map((t: any) => (
+          <a href={t.href}>
+            <h3>{t.title}</h3>
+            <p>{t.desc}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="architecture">
+    <div class="wrap">
+      <h2>{d.architecture.h2}</h2>
+      <p class="sec-intro">{d.architecture.intro}</p>
+      <div class="arch">
+        {d.architecture.blocks.map((b: any) => (
+          <article>
+            <h3>{b.title}</h3>
+            <p>{b.body}</p>
+          </article>
+        ))}
+      </div>
+      <a class="btn btn-outline" href="#enquiry">{d.architecture.cta}<span class="arr">→</span></a>
+    </div>
+  </section>
+
+  <section id="evidence">
+    <div class="wrap">
+      <h2>{d.evidence.h2}</h2>
+      <p class="sec-intro">{d.evidence.intro}</p>
+      <div class="grid3 evi">
+        {d.evidence.items.map((e: any) => (
+          <article>
+            <h3>{e.title}</h3>
+            <p>{e.desc}</p>
+          </article>
+        ))}
+      </div>
+      <p style="margin-top:26px">
+        <a class="btn btn-outline" href="#enquiry">{d.evidence.cta}<span class="arr">→</span></a>
+      </p>
+    </div>
+  </section>
+
+  <section class="alt" id="steps">
+    <div class="wrap">
+      <h2>{d.steps.h2}</h2>
+      <ol class="steps">
+        {d.steps.items.map((s: any, i: number) => (
+          <li>
+            <span class="num">{i + 1}</span>
+            <h3>{s.title}</h3>
+            <p>{s.desc}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>{d.faq.h2}</h2>
+      {d.faq.items.map((f: any) => (
+        <details class="faq">
+          <summary>{f.q}</summary>
+          <div class="a">{f.a}</div>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <EnquiryForm enquiry={d.enquiry} fields={d.enquiry.fields} applicationOptions={d.enquiry.applicationOptions} ui={ui} />
+</div>
+
+<script slot="head" type="application/ld+json" set:html={JSON.stringify(itemListLd)} />
+<script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+<script slot="head" type="application/ld+json" set:html={JSON.stringify(faqLd)} />
