@@ -85,11 +85,8 @@
   overflow-wrap: anywhere;
 }
 
-@media (max-width: 1680px) {
-  .pclone .pro_2_mid_right_2.sensor-catalog .pro_2_mid_right_1_mid {
-    min-height: min(30vw, 504px);
-  }
-}
+/* V145：删除旧的 ≤1680px 强制最小高度（min(30vw,504px)）——
+   它与 V143 冲突，在 IoT Custom 等目录页重新撑出上下空白带。 */
 
 /* 中间宽度统一预留长标题空间，覆盖所有产品，避免品类特例。 */
 @media (min-width: 641px) and (max-width: 1150px) {
