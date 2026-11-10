@@ -1,0 +1,21 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import './sensor-catalog-layout.css';
+
+type Props = HTMLAttributes<'div'>;
+
+const { class: className, ...attrs } = Astro.props;
+const isAllSensorsCatalog =
+  /(?:^|\/)product\/lists\/cid\/261(?:\.html)?\/?$/.test(Astro.url.pathname);
+---
+
+<div
+  {...attrs}
+  class:list={[
+    'pro_2_mid',
+    className,
+    { 'sensor-catalog-layout': isAllSensorsCatalog },
+  ]}
+>
+  <slot />
+</div>

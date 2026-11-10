@@ -1,0 +1,23 @@
+/* cid/261: keep space between the complete catalog section and the footer. */
+.pclone .pro_2_mid.sensor-catalog-layout {
+  padding-bottom: clamp(24px, 2vw, 40px);
+}
+
+/* Let the taller card set the height of both cards in its row. */
+.pclone .sensor-catalog-layout .pro_2_mid_right_2.sensor-catalog > ul {
+  align-items: stretch;
+}
+
+@media screen and (width > 950px) {
+  .pclone .pro_2_mid.sensor-catalog-layout {
+    display: grid;
+    grid-template-columns: 324px minmax(0, 1fr);
+    align-items: start;
+    padding-left: 0;
+  }
+
+  /* The sidebar must contribute to section height after a keyword filter. */
+  .pclone .pro_2_mid.sensor-catalog-layout > .pro_2_mid_left {
+    position: static;
+  }
+}

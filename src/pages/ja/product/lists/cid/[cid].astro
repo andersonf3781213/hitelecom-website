@@ -7,6 +7,7 @@ import BaseLayout from '../../../../../layouts/BaseLayout.astro';
 import ProductShell from '../../../../../components/product/ProductShell.astro';
 import CategoryTabs from '../../../../../components/product/CategoryTabs.astro';
 import ListSidebar from '../../../../../components/product/ListSidebar.astro';
+import SensorCatalogLayout from '../../../../../components/catalog/SensorCatalogLayout.astro';
 import ProductCard from '../../../../../components/product/ProductCard.astro';
 import { productContent, listParent, productTabs, listSeo, productPath, getMergedProducts } from '../../../../../data/product';
 import { applyCatalog } from '../../../../../lib/catalog-site';
@@ -79,7 +80,7 @@ const listLd = itemListLd(
 
     <div class="clearfix pro_2">
       <div class="indexmid">
-        <div class="pro_2_mid">
+        <SensorCatalogLayout>
           <ListSidebar locale="ja" subcats={page.subcats} sideProds={sideProds} parentCid={parent} />
           <div class="pro_2_mid_right">
             <div class:list={["clearfix pro_2_mid_right_2", listParent[cid] === "261" && "sensor-catalog"]}>
@@ -88,7 +89,7 @@ const listLd = itemListLd(
               </ul>
             </div>
           </div>
-        </div>
+        </SensorCatalogLayout>
       </div>
     </div>
   </ProductShell>
