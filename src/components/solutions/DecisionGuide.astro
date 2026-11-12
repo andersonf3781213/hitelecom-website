@@ -1,0 +1,9 @@
+---
+import '../../styles/decision-guide.css';
+import { taskRows } from '../../data/buyer-content.en';
+import Icon from './Icon.astro';
+---
+<section class="buyer-selection" id="task-selection" aria-labelledby="task-selection-title"><div class="wrap">
+  <div class="buyer-heading"><div><p class="eyebrow">MEASUREMENT SELECTION</p><h2 id="task-selection-title">Monitoring tasks.<br/><span>Matched to the asset.</span></h2></div><p>Match the physical quantity to the operational question, then explore the sensor family and application details.</p></div>
+  <table class="buyer-table"><caption class="buyer-table-caption">Measurement channels, ranges and communication options vary by model. Product specifications govern the supplied configuration.</caption><thead><tr><th scope="col">Task</th><th scope="col">Measurement</th><th scope="col">Sensor family</th><th scope="col">Operational use</th></tr></thead><tbody>{taskRows.map(row=><tr><th scope="row" data-label="Task"><a href={`#${row.programId}`}>{row.name}<Icon name="arrow"/></a></th><td data-label="Measurement">{row.measurement}</td><td data-label="Sensors"><a href={row.product.url}>{row.product.name}<Icon name="arrow"/></a></td><td data-label="Use">{row.response}</td></tr>)}</tbody></table>
+</div></section>

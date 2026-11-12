@@ -1,0 +1,52 @@
+---
+import { additionalApplications } from '../../data/additional-applications.en';
+import { programs } from '../../data/programs.en';
+import MonitoringProgram from './MonitoringProgram.astro';
+import ResponsiveImage from './ResponsiveImage.astro';
+import Icon from './Icon.astro';
+import '../../styles/more-solutions.css';
+---
+<details class="more-solutions" id="more-solutions">
+  <summary class="more-solutions-toggle">
+    <span class="more-solutions-button">
+      <span class="more-label-closed">View all solutions</span>
+      <span class="more-label-open">Show less</span>
+      <svg class="more-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+    </span>
+  </summary>
+  <div class="more-solutions-content">
+    <div class="more-solutions-grid">
+      {additionalApplications.map((application, index) => <details class="more-application" id={application.id}>
+        <summary class="more-application-cover">
+          <ResponsiveImage imageKey={application.image} alt={application.alt} sizes={index === additionalApplications.length - 1 && additionalApplications.length % 2 === 1 ? '(max-width:700px) calc(100vw - 40px), 1240px' : '(max-width:700px) calc(100vw - 40px), 608px'}/>
+          <span class="scene-shade" aria-hidden="true"></span>
+          <span class="scene-number">{application.number} / SOLUTIONS</span>
+          <span class="scene-caption">
+            <span class="scene-title">{application.title}</span>
+            <span class="scene-description">{application.intro}</span>
+            <span class="scene-tags">{application.tags.map(tag => <span>{tag}</span>)}</span>
+          </span>
+          <span class="scene-open"><span>Explore</span><span class="round-arrow"><Icon name="arrow"/></span></span>
+          <span class="sr-only">Open measurement, point setup and response details</span>
+        </summary>
+        <div class="more-application-body">
+          {'programId' in application ? programs.filter(program => program.id === application.programId).map(program => <MonitoringProgram program={program}/>) : <Fragment>
+          <dl>
+            <div><dt>Measurement</dt><dd>{application.measurement}</dd></div>
+            <div><dt>Point setup</dt><dd>{application.pointSetup}</dd></div>
+            <div><dt>Response</dt><dd>{application.response}</dd></div>
+          </dl>
+          <p class="more-application-boundary">{application.boundary}</p>
+          <div class="more-application-links">
+            {application.related && <a class="text-link" href={application.related.href}>{application.related.text}<Icon name="arrow"/></a>}
+            {'product' in application && <a class="text-link" href={application.product.href}>{application.product.text}<Icon name="arrow"/></a>}
+            <a class="text-link" href="#enquiry" data-interest={application.interest}>Discuss this application<Icon name="arrow"/></a>
+          </div>
+          </Fragment>}
+        </div>
+      </details>)}
+    </div>
+    <div class="more-solutions-end"><button class="more-solutions-button more-solutions-close" type="button" data-more-close hidden><span>Show less</span><svg class="more-toggle-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div>
+  </div>
+</details>
+<script>import '../../scripts/more-solutions.js';</script>

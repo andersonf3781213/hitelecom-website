@@ -1,0 +1,40 @@
+/* More solutions：独立扩展区，保留既有五张场景大图和正文样式。 */
+:where(.ht-solutions) .more-solutions{margin-top:30px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+:where(.ht-solutions) .more-solutions-toggle{display:flex;align-items:center;justify-content:center;min-height:112px;padding:28px 16px}
+/* 顶部原生 summary 与底部 button 共用尺寸；按钮内的小箭头不再独立成圆。 */
+:where(.ht-solutions) .more-solutions-button{display:inline-grid;grid-template-columns:minmax(0,1fr) 18px;align-items:center;gap:14px;width:280px;max-width:100%;min-height:56px;padding:0 24px;border:1px solid #d7e0eb;border-radius:999px;background:#fff;color:var(--ink);font-family:inherit;font-size:14px;font-weight:550;line-height:1.4;text-align:center;transition:background .18s,border-color .18s}
+:where(.ht-solutions) .more-toggle-icon{display:block;width:18px;height:18px;fill:none;stroke:var(--blue);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .18s}
+:where(.ht-solutions) .more-solutions-toggle:hover .more-solutions-button,:where(.ht-solutions) .more-solutions-close:hover{background:#f5f8fe;border-color:#9ab8e4}
+:where(.ht-solutions) .more-solutions-toggle:focus-visible{outline:none}
+:where(.ht-solutions) .more-solutions-toggle:focus-visible .more-solutions-button{outline:3px solid #6ba7ff;outline-offset:5px}
+:where(.ht-solutions) .more-label-open{display:none}
+:where(.ht-solutions) .more-solutions[open]>.more-solutions-toggle .more-label-closed{display:none}
+:where(.ht-solutions) .more-solutions[open]>.more-solutions-toggle .more-label-open{display:inline}
+:where(.ht-solutions) .more-solutions[open]>.more-solutions-toggle .more-toggle-icon{transform:rotate(180deg)}
+:where(.ht-solutions) .more-solutions-content{padding:0 0 10px}
+:where(.ht-solutions) .more-solutions-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:24px}
+:where(.ht-solutions) .more-application{min-width:0;background:#f4f7fb;border-radius:20px;overflow:hidden}
+:where(.ht-solutions) .more-application:last-child:nth-child(odd){grid-column:1/-1}
+:where(.ht-solutions) .more-application-cover{display:block;position:relative;isolation:isolate;height:420px;color:#fff;overflow:hidden}
+:where(.ht-solutions) .more-application-cover>picture{position:absolute;inset:0;z-index:-3;display:block}
+:where(.ht-solutions) .more-application-cover>picture img{width:100%;height:100%;object-fit:cover}
+:where(.ht-solutions) .more-application-cover .scene-caption{bottom:86px}
+:where(.ht-solutions) .more-application-cover:hover .round-arrow{background:#fff;color:var(--ink)}
+:where(.ht-solutions) .more-application[open]>.more-application-cover .round-arrow .icon{transform:rotate(180deg)}
+:where(.ht-solutions) .more-application-cover .scene-title{font-size:clamp(30px,2.8vw,40px)}
+:where(.ht-solutions) .more-application-cover .scene-description{max-width:490px}
+:where(.ht-solutions) .more-application-body{padding:26px 30px 25px;border:1px solid #e4e9f0;border-top:0;border-radius:0 0 20px 20px}
+:where(.ht-solutions) .more-application-body dl{display:grid;gap:15px;margin:0;font-size:12px;line-height:1.75}
+:where(.ht-solutions) .more-application-body dl>div{display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px}
+:where(.ht-solutions) .more-application-body dt{font-size:10px;font-weight:650;color:#3a69ad}
+:where(.ht-solutions) .more-application-body dd{margin:0;color:#55667c}
+:where(.ht-solutions) .more-application-boundary{margin-top:20px;padding-left:12px;border-left:2px solid #9db5d9;font-size:11px;line-height:1.75;color:#647186}
+:where(.ht-solutions) .more-application-links{display:flex;flex-wrap:wrap;gap:0 20px;margin-top:13px}
+:where(.ht-solutions) .more-application-links .text-link{font-size:11px}
+:where(.ht-solutions) .more-solutions-end{display:flex;justify-content:center;padding:28px 16px 18px}
+:where(.ht-solutions) .more-solutions-close .more-toggle-icon{transform:rotate(180deg)}
+@media(max-width:900px){:where(.ht-solutions) .more-application-body{padding:23px}:where(.ht-solutions) .more-application-body dl>div{grid-template-columns:1fr;gap:3px}}
+@media(max-width:700px){:where(.ht-solutions) .more-solutions{margin-top:24px}:where(.ht-solutions) .more-solutions-toggle{min-height:82px}:where(.ht-solutions) .more-solutions-grid{grid-template-columns:1fr;gap:24px}:where(.ht-solutions) .more-application-cover{height:390px}:where(.ht-solutions) .more-application-cover .scene-number{left:24px}:where(.ht-solutions) .more-application-cover .scene-caption{left:24px;right:24px;bottom:86px}:where(.ht-solutions) .more-application-cover .scene-open{left:24px;right:24px}:where(.ht-solutions) .more-application-cover .scene-title{font-size:34px}:where(.ht-solutions) .more-application-body dl>div{grid-template-columns:78px minmax(0,1fr);gap:10px}}
+@media(max-width:380px){:where(.ht-solutions) .more-application-body dl>div{grid-template-columns:1fr;gap:3px}:where(.ht-solutions) .more-application-cover .scene-title{font-size:31px}}
+@media(max-width:700px){:where(.ht-solutions) .more-solutions-toggle{min-height:104px;padding-block:26px}:where(.ht-solutions) .more-solutions-button{width:252px;min-height:52px;font-size:13px;padding-inline:22px}}
+@media(prefers-reduced-motion:reduce){:where(.ht-solutions) .more-solutions-button,:where(.ht-solutions) .more-toggle-icon{transition:none}}
