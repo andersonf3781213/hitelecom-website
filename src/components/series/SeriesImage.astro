@@ -1,0 +1,9 @@
+---
+import images from '../../data/series-images.json';
+const { imageKey, alt, priority=false, sizes='(min-width: 900px) 50vw, 100vw', class:className } = Astro.props;
+const item=images[imageKey];
+if(!item) throw new Error(`Missing series image: ${imageKey}`);
+const variants=item.variants.filter(v=>v.format==='webp');
+const fallback=variants.at(-1);
+---
+<picture class={className}><img src={fallback.url} srcset={variants.map(v=>`${v.url} ${v.width}w`).join(', ')} sizes={sizes} width={item.width} height={item.height} alt={alt} loading={priority?'eager':'lazy'} decoding="async" fetchpriority={priority?'high':undefined}/></picture>

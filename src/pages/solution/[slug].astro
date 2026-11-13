@@ -1,0 +1,8 @@
+---
+import {solutions} from '../../data/solution-catalog';
+import SeriesFrame from '../../components/series/SeriesFrame.astro';
+import SeriesPage from '../../components/series/SeriesPage.astro';
+export function getStaticPaths(){return solutions.map((solution,index)=>({params:{slug:solution.slug},props:{solution,next:solutions[index+1]}}));}
+const {solution,next}=Astro.props;
+---
+<SeriesFrame solution={solution}><SeriesPage solution={solution} next={next}/></SeriesFrame>

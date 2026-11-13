@@ -1,0 +1,68 @@
+---
+import SeriesImage from './SeriesImage.astro';
+import SeriesDiagram from './SeriesDiagram.astro';
+import SensorArchitecture from './SensorArchitecture.astro';
+import '../../styles/series.css';
+import '../../styles/warehouse-faq-v17.css';
+import '../../styles/warehouse-enquiry-v17.css';
+const {solution:s,next}=Astro.props;
+const logger=s.platform.mode==='logger';
+const tracking=s.platform.mode==='tracking';
+---
+<main class="scope-v2 warehouse-v7 solution-series" id="main" data-solution={s.number}>
+<section class="series-hero" aria-labelledby="solution-title">
+ <div class="v2-wrap">
+  <nav class="series-breadcrumb" aria-label="Breadcrumb"><a href="https://www.hitelecom.com/solution">Solutions</a><span aria-hidden="true">/</span><span>{s.number} · {s.title}</span></nav>
+  <div class="hero-layout">
+   <div class="hero-copy"><p class="series-eyebrow">{s.number} / SOLUTIONS · {s.hero.eyebrow.replace(/^\d{2}\s*\/\s*/, '')}</p><h1 id="solution-title">{s.hero.heading}<em>{s.hero.accent}</em></h1><p class="hero-intro">{s.hero.intro}</p><div class="hero-actions"><a class="series-button white" href="#enquiry">{s.hero.cta}<i class="series-arrow" aria-hidden="true"/></a><a class="series-text-link" href="#measurement">Explore the approach<i class="series-arrow" aria-hidden="true"/></a></div></div>
+   <figure class="hero-picture"><SeriesImage imageKey={s.hero.image} alt={s.hero.alt} priority={true}/><figcaption><span>HITELECOM / {s.number}</span><span>Application illustration</span></figcaption></figure>
+  </div>
+  <div class="hero-proof">{s.hero.proof.map((p,index)=><div><span class="proof-index">0{index+1}</span><div><strong>{p.value}</strong><span>{p.label}</span></div></div>)}</div>
+ </div>
+</section>
+<nav class="series-anchor-nav" aria-label="On this page"><div class="v2-wrap"><a href="#priorities">Operational priorities</a><a href="#sensor-plan">Sensor plan</a><a href="#measurement">Monitoring approach</a><a href="#applications">Applications</a><a href="#system">{logger?'Recording workflow':'Data & response'}</a><a href="#deployment">Deployment</a><a href="#faq">FAQ</a></div></nav>
+<section class="series-section" id="priorities">
+ <div class="v2-wrap"><div class="series-section-head"><div><p class="series-eyebrow">{s.problem.eyebrow}</p><h2>{s.problem.heading}</h2></div><p>{s.problem.intro}</p></div>
+ <div class="problem-grid">{s.problem.cards.map((c,i)=><article><span class="line-number">0{i+1}</span><h3>{c.title}</h3><p>{c.body}</p></article>)}</div><p class="series-takeaway"><span>THE OPERATIONAL QUESTION</span>{s.problem.takeaway}</p></div>
+</section>
+{s.architecture && <SensorArchitecture architecture={s.architecture}/>}
+<section class="series-section series-pale" id="measurement">
+ <div class="v2-wrap"><div class="series-section-head"><div><p class="series-eyebrow">{s.focus.eyebrow}</p><h2>{s.focus.heading}</h2></div><p>{s.focus.intro}</p></div>
+ <div class="focus-layout"><SeriesDiagram type={s.focus.diagram}/><ol class="focus-stages">{s.focus.stages.map((stage,i)=><li><span>0{i+1}</span><div><h3>{stage.title}</h3><p>{stage.body}</p></div></li>)}</ol></div>
+ <div class="focus-bottom"><p class="series-note">{s.focus.note}</p><details class="technical-detail"><summary>{s.focus.detailTitle}<span aria-hidden="true"/></summary><p>{s.focus.detail}</p></details></div>
+ </div>
+</section>
+<section class="series-section" id="applications">
+ <div class="v2-wrap"><div class="series-section-head"><div><p class="series-eyebrow">APPLICATIONS / SITE-SPECIFIC MONITORING</p><h2>{s.applications.heading}</h2></div><p>{s.applications.intro}</p></div>
+ <div class="applications-grid">{s.applications.cards.map((c,i)=><article class="application-card"><figure><SeriesImage imageKey={c.image} alt={c.alt}/><figcaption><span>0{i+1} / APPLICATION</span><h3>{c.title}</h3></figcaption></figure><div class="application-body"><p class="application-task">{c.task}</p><dl><div><dt>Where to measure</dt><dd>{c.placement}</dd></div><div><dt>What the team does</dt><dd>{c.response}</dd></div></dl></div></article>)}</div><p class="image-note">Application illustrations. Monitoring points and supplied configurations are defined for each site.</p>
+ </div>
+</section>
+<section class="series-section series-pale" id="selection">
+ <div class="v2-wrap"><div class="series-section-head"><div><p class="series-eyebrow">POINTS / DEVICES / DECISIONS</p><h2>{s.measurements.heading}</h2></div><p>{s.measurements.intro}</p></div>
+ <div class="measurement-table"><div class="measurement-table-head"><span>MONITORING POINT</span><span>MEASUREMENT</span><span>OPERATIONAL USE</span><span>SELECTION CHECK</span></div>{s.measurements.rows.map(row=><article><h3>{row.point}</h3><p data-label="Measurement">{row.measure}</p><p data-label="Operational use">{row.decision}</p><p data-label="Selection check">{row.selection}</p></article>)}</div><p class="series-note selection-boundary">{s.measurements.boundary}</p>
+ <div class="product-links">{s.products.map(product=><a href={product.url}><span><strong>{product.name}</strong><small>{product.role}</small></span><i class="series-arrow" aria-hidden="true"/></a>)}</div>
+ </div>
+</section>
+<section class="series-section series-system" id="system">
+ <div class="v2-wrap"><div class="series-section-head"><div><p class="series-eyebrow">{logger?'RECORDING / REVIEW / HANDOVER':'HITELECOM CLOUD / PROJECT INTEGRATION'}</p><h2>{s.platform.heading}</h2></div><p>{s.platform.intro}</p></div>
+ <div class="platform-layout"><div class="platform-preview"><div class="platform-top"><strong>{logger?'SHIPMENT REVIEW':'HITELECOM CLOUD'}</strong><span>ILLUSTRATIVE {logger?'RECORD':'VIEW'}</span></div><div class="platform-point"><span>{s.platform.assetLabel}</span><span class="platform-state">{s.platform.status}</span></div><div class="platform-reading"><div><span>{s.platform.metricLabel}</span><strong>{s.platform.metricValue}</strong></div><div class="platform-reading-note">{s.platform.insight}</div></div><div class="platform-record"><span>{logger?'Record → review → disposition':tracking?'Fix time → receipt time → field confirmation':'Measurement → review → response'}</span><div class="platform-record-line"><span/><span/><span/></div><div class="platform-record-labels"><span>{logger?'Local record':tracking?'Position fix':'Reported reading'}</span><span>{logger?'Receipt check':tracking?'Latest report':'Review context'}</span><span>{logger?'Quality decision':'Assigned action'}</span></div></div><p class="platform-demo-note">{logger?'Example review layout; data is retrieved after recording.':'Interface concept with illustrative data; delivered views and integrations depend on project scope.'}</p></div>
+ <ol class="platform-steps">{s.platform.steps.map((step,i)=><li><span>0{i+1}</span><div><h3>{step.title}</h3><p>{step.body}</p></div></li>)}</ol></div>
+ <div class="connection-strip">
+  {logger?<><div><span>ON THE SHIPMENT</span><strong>H100 local recording</strong><p>Configure the recording job, identify the pack and keep the record with the consignment.</p></div><div><span>AT RECEIPT</span><strong>USB / compatible software</strong><p>Retrieve the record, review excursions and retain the report with the shipment decision.</p></div></>:<><div><span>CELLULAR ROUTE</span><strong>4G / NB-IoT</strong><p>Selected sensor or tracker → available operator network → Hitelecom Cloud or an agreed platform.</p></div>{tracking?<div><span>LOCATION CONTEXT</span><strong>Fix quality & report age</strong><p>Review the reported position, time and device state before dispatching a team or confirming an asset movement.</p></div>:<div><span>GATEWAY ROUTE</span><strong>LoRa + compatible gateway</strong><p>Selected LoRa devices → compatible gateway → cloud or an agreed local system. Confirm protocol and interface support.</p></div>}</>}
+ </div>{s.platform.companion && <aside class="connection-companion"><span>{s.platform.companion.label}</span><div><strong>{s.platform.companion.title}</strong><p>{s.platform.companion.body}</p></div></aside>}<p class="system-channels">{s.platform.channels}</p><p class="series-note">{s.platform.boundary}</p>
+ </div>
+</section>
+<section class="series-section" id="deployment">
+ <div class="v2-wrap"><div class="series-section-head"><div><p class="series-eyebrow">FROM SITE BRIEF TO A WORKING RECORD</p><h2>{s.deployment.heading}</h2></div><p>Agree the measurement, test it at the site, and give the operating team a clear handover.</p></div>
+ <ol class="deployment-grid">{s.deployment.steps.map((step,i)=><li><span class="deployment-number">0{i+1}</span><h3>{step.title}</h3><p>{step.body}</p></li>)}</ol>
+ <div class="acceptance"><p>WHAT TO VERIFY BEFORE HANDOVER</p><ul>{s.deployment.acceptance.map(check=><li><span aria-hidden="true">✓</span>{check}</li>)}</ul></div>
+ <details class="source-detail"><summary>Technical references used for this solution<span aria-hidden="true"/></summary><ul>{s.sources.map(source=><li><a href={source.url} target="_blank" rel="noopener">{source.title}<i class="series-arrow" aria-hidden="true"/></a><p>{source.note}</p></li>)}</ul></details>
+ </div>
+</section>
+<section class="w17-faq" id="faq" aria-labelledby="faq-title"><div class="v2-wrap w17-faq-layout"><div class="w17-faq-heading"><p class="series-eyebrow">ANSWERS FOR YOUR PROJECT</p><h2 id="faq-title">Practical questions.<br/>Clear answers.</h2><a class="w17-faq-link" href="#enquiry">Discuss your application<i class="series-arrow" aria-hidden="true"/></a></div><div class="w17-faq-list">{s.faq.map((faq,i)=><details id={`faq-${i+1}`}><summary><span>{faq.q}</span><i aria-hidden="true"/></summary><div class="w17-faq-answer" data-faq-answer><p>{faq.a}</p></div></details>)}</div></div></section>
+<section class="w17-enquiry" id="enquiry" aria-labelledby="enquiry-title"><div class="v2-wrap w17-enquiry-layout"><div class="w17-enquiry-intro"><p class="series-eyebrow">LET’S PLAN YOUR PROJECT</p><h2 id="enquiry-title">{s.cta.heading}</h2><p class="w17-enquiry-lead">{s.cta.body}</p><a class="w17-enquiry-email" href="mailto:sales@hitelecom.cn">sales@hitelecom.cn<i class="series-arrow" aria-hidden="true"/></a><ul class="w17-enquiry-features"><li>Application-led selection</li><li>Defined interfaces</li><li>Practical site evaluation</li></ul></div>
+ <div class="w17-enquiry-card"><h3>Prepare your project brief</h3><form data-series-enquiry data-solution={s.title}><fieldset disabled><legend class="w17-sr-only">{s.title} enquiry</legend><div class="w17-enquiry-fields"><label for="project-name">Name *<input id="project-name" name="name" required autocomplete="name" maxlength="100" placeholder="Your name"/></label><label for="project-company">Company<input id="project-company" name="company" autocomplete="organization" maxlength="200" placeholder="Your company"/></label><label class="w17-field-full" for="project-email">Business email *<input id="project-email" name="email" type="email" required autocomplete="email" maxlength="180" placeholder="you@company.com"/></label><label class="w17-field-full" for="project-requirements">What would you like to monitor? *<textarea id="project-requirements" name="requirements" required rows="4" maxlength="1200" placeholder={s.cta.placeholder}/></label></div><button type="submit" class="w17-enquiry-button">Prepare my enquiry<i class="series-arrow" aria-hidden="true"/></button><p class="w17-enquiry-note">Review and send in your email app.</p><p class="w17-enquiry-status" role="status" aria-live="polite"/></fieldset><noscript><p class="w17-enquiry-fallback">Email your requirements to <a href="mailto:sales@hitelecom.cn">sales@hitelecom.cn</a>.</p></noscript></form></div>
+ </div></section>
+<aside class="w17-next-solution" aria-label="Explore another solution"><div class="v2-wrap w17-next-inner"><span>{next?'EXPLORE ANOTHER SOLUTION':'EXPLORE THE SOLUTION PORTFOLIO'}</span><a href={next?`/solution/${next.slug}`:'https://www.hitelecom.com/solution'}>{next?`${next.number} / ${next.title}`:'All monitoring solutions'}<i class="series-arrow" aria-hidden="true"/></a></div></aside>
+</main>
+<script>import '../../scripts/series-enquiry.js';</script>

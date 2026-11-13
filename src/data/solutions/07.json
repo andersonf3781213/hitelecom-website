@@ -1,0 +1,346 @@
+{
+  "number": "07",
+  "slug": "shipment-condition-recording",
+  "title": "Smart Logistics",
+  "metaTitle": "Smart Logistics | Shipment Conditions & Handover | Hitelecom",
+  "description": "Combine shipment temperature and humidity with separately selected shock, tilt, door-event and location evidence for practical cargo receiving and exception review.",
+  "hero": {
+    "eyebrow": "07 / SMART LOGISTICS",
+    "heading": "Smart Logistics.",
+    "accent": "Understand the journey.",
+    "intro": "Record cargo conditions. Add handling, opening and location evidence where the goods require it. Give logistics and quality teams a clear timeline for investigating damage, exposure or a disputed handover.",
+    "image": "07-hero",
+    "alt": "Illustrative transport cases beside a delivery vehicle",
+    "proof": [
+      {
+        "label": "Cargo quality",
+        "value": "Temperature & humidity"
+      },
+      {
+        "label": "Journey context",
+        "value": "Location & handling"
+      },
+      {
+        "label": "Receiving decision",
+        "value": "One shipment reference"
+      }
+    ],
+    "cta": "Plan your logistics monitoring"
+  },
+  "problem": {
+    "eyebrow": "FOR LOGISTICS & QUALITY TEAMS",
+    "heading": "What happened to this shipment?",
+    "intro": "Warm cargo, a tipped crate and an unexplained opening require different evidence. Select the measurements around what could make this shipment unacceptable.",
+    "cards": [
+      {
+        "title": "Exposure between checkpoints",
+        "body": "A normal arrival reading can conceal an earlier warm period or moisture exposure. Retain the conditions throughout the planned journey, at a documented position."
+      },
+      {
+        "title": "A delay without context",
+        "body": "A temperature curve cannot locate a vehicle or explain a missed handover. Add independent tracking where the team needs to organise collection or investigate route delays."
+      },
+      {
+        "title": "Mishandled or opened in transit",
+        "body": "Fragile equipment can be struck or tipped; a sealed case may be opened between handovers. Select shock, tilt or opening-event recording where those risks affect the receiving check."
+      }
+    ],
+    "takeaway": "Build the evidence around the goods: condition, journey context and a named receiving reviewer."
+  },
+  "focus": {
+    "eyebrow": "CONDITIONS + CONTEXT + CUSTODY",
+    "heading": "Build the shipment record.\nThen make the decision.",
+    "intro": "Keep sensor observations and business events on the same timeline, with their original timestamps and measurement locations.",
+    "diagram": "shipment",
+    "stages": [
+      {
+        "title": "Define the cargo risks",
+        "body": "Identify environmental, impact, tipping and opening risks. Decide which evidence changes the receiving inspection or response."
+      },
+      {
+        "title": "Assign the devices",
+        "body": "Link each logger and optional tracker to the consignment. Record placement, clocks and the planned journey duration."
+      },
+      {
+        "title": "Collect the evidence",
+        "body": "Retrieve H100 by USB. Align separate tracking, handling and opening-event records with the same consignment and time convention."
+      },
+      {
+        "title": "Review the exception",
+        "body": "Compare timing and exposure with the shipment procedure. The authorised reviewer records acceptance, investigation or other disposition."
+      }
+    ],
+    "note": "H100 records temperature and humidity locally. Shock, tilt, opening and positioning require separately specified equipment; recording an event and transmitting an alert are separate requirements.",
+    "detailTitle": "Make different records comparable",
+    "detail": "Use a consistent shipment ID and time-zone convention. Keep the observation time separate from the time a file or message was received. Record whether a sensor represents package air, room air or a carrier position. Check clock differences, gaps and retrieval completeness before correlating an event with a handover. A map position and a temperature excursion close in time can guide an investigation; they do not, by themselves, establish cause or responsibility."
+  },
+  "applications": {
+    "heading": "Different goods.\nDifferent evidence to collect.",
+    "intro": "Four practical applications show how condition records, location and handling evidence complement each other.",
+    "cards": [
+      {
+        "title": "Insulated parcel dispatch",
+        "image": "07-scene-1",
+        "alt": "Illustrative packing area with insulated shipping boxes",
+        "task": "Record package temperature and humidity throughout the planned journey.",
+        "placement": "Inside the approved packing position, with the sensing openings exposed.",
+        "response": "Receiving staff compare exposure periods with the goods-specific acceptance procedure."
+      },
+      {
+        "title": "Last-mile delivery cases",
+        "image": "07-scene-2",
+        "alt": "Illustrative transport cases beside a delivery van",
+        "task": "Pair condition recording with independent tracking; add a door contact where unplanned opening must be investigated.",
+        "placement": "Document the logger position; separately validate tracker reception and any door-contact fixing and data path.",
+        "response": "Logistics checks delays and opening events; quality reviews the retrieved condition history before disposition."
+      },
+      {
+        "title": "Cold-store transfers",
+        "image": "07-scene-3",
+        "alt": "Illustrative pallet storage in a cold room",
+        "task": "Compare shipment history with selected dispatch and receiving-room conditions.",
+        "placement": "Use an agreed pack point; confirm cold-duty and condensation suitability before placing fixed sensors in the transfer area.",
+        "response": "Quality and warehouse teams investigate exposure during staging, loading and transfer."
+      },
+      {
+        "title": "Fragile or upright-only cargo",
+        "image": "07-scene-4",
+        "alt": "Illustrative warehouse loading and service dock",
+        "task": "Add shock and tilt-event recording when a dropped or tipped crate requires targeted inspection.",
+        "placement": "Fix the specialist recorder to the approved package or load point; document its axes and allowed handling orientation.",
+        "response": "Identify the event period, inspect the relevant goods and retain seal checks and handover photographs."
+      }
+    ]
+  },
+  "measurements": {
+    "heading": "Specify the evidence\nbefore selecting the device.",
+    "intro": "The sensor, recording method and response should match the question your team needs to answer.",
+    "rows": [
+      {
+        "point": "Package / load zone",
+        "measure": "Local temperature and relative humidity history",
+        "decision": "Which exposure periods need quality review?",
+        "selection": "Sensing position, interval, accuracy, storage and expected journey duration."
+      },
+      {
+        "point": "Carrier / transport case",
+        "measure": "Position and fix time from an independent tracker",
+        "decision": "Where was the shipment last reported?",
+        "selection": "Antenna exposure, cellular service and required report freshness."
+      },
+      {
+        "point": "Dispatch / receiving area",
+        "measure": "Connected fixed-point temperature and humidity",
+        "decision": "Could staging or room conditions explain an exposure?",
+        "selection": "Representative indoor point and aligned timestamps."
+      },
+      {
+        "point": "Fragile / upright-only cargo",
+        "measure": "Separate shock acceleration and tilt-event history",
+        "decision": "Was the crate struck or tipped during an identifiable handling stage?",
+        "selection": "Event threshold, sample capture, range, orientation, mounting and retrieval; not machinery RMS."
+      },
+      {
+        "point": "Case / trailer opening",
+        "measure": "Separate door-contact or validated light-change event",
+        "decision": "Does an opening need to be checked against the authorised handover?",
+        "selection": "Contact gap or light placement, timestamps, event storage and any required transmission path."
+      },
+      {
+        "point": "Handover record",
+        "measure": "Consignment ID, seal check, photographs and receipt time",
+        "decision": "Which goods and responsible handover belong to this record?",
+        "selection": "Documented identities, clock convention and compatible software fields."
+      }
+    ],
+    "boundary": "Sensor records support the receiving assessment. Product release, rejection and damage attribution remain decisions for the authorised team."
+  },
+  "platform": {
+    "heading": "Different data routes.\nOne shipment reference.",
+    "intro": "Retrieve H100 records on the receiving PC. Where specified, align independent tracker reports and handling events with the same consignment in the agreed record system.",
+    "assetLabel": "Shipment EX-072 / Logger H100-01",
+    "metricLabel": "Illustrative receiving record",
+    "metricValue": "History retrieved",
+    "status": "Quality review pending",
+    "insight": "Bring the original condition export, last known position and handover notes together without losing their individual timestamps.",
+    "steps": [
+      {
+        "title": "Receiving team",
+        "body": "Verify identities, retrieve the local record and attach package or handling observations."
+      },
+      {
+        "title": "Quality reviewer",
+        "body": "Assess exposure and relevant handling evidence against the goods-specific acceptance procedure."
+      },
+      {
+        "title": "Logistics owner",
+        "body": "Use location and handover context to investigate the affected route stage and record the follow-up."
+      }
+    ],
+    "mode": "logger",
+    "channels": "Link the local condition record and any independent connected data through the consignment ID.",
+    "boundary": "Joining these records requires an agreed manual or software workflow. No automatic H100 cloud upload or live temperature alarm is implied.",
+    "companion": {
+      "label": "OPTIONAL CONNECTED PATH",
+      "title": "Independent asset tracker",
+      "body": "Selected H300 4G or H500 NB-IoT → supported operator network → agreed platform. Join records by shipment ID and observation time."
+    }
+  },
+  "deployment": {
+    "heading": "Test the complete\ndispatch-to-receipt workflow.",
+    "steps": [
+      {
+        "title": "Define the lane & decision",
+        "body": "List cargo sensitivities, packing, route, handovers and the evidence needed by the receiving reviewer."
+      },
+      {
+        "title": "Trial the selected instruments",
+        "body": "Check local retrieval, then trial any separate tracker, shock / tilt recorder and door input. Verify clocks, event capture and agreed notifications."
+      },
+      {
+        "title": "Assign review & follow-up",
+        "body": "Agree dispatch checks, receiving tasks, exception ownership and record retention with the carrier and quality team."
+      }
+    ],
+    "acceptance": [
+      "Device IDs and placement match the consignment.",
+      "The planned recording period is complete and retrievable.",
+      "Handling, opening and location events match the correct consignment and observation time.",
+      "A trial exception reaches the named reviewer."
+    ]
+  },
+  "products": [
+    {
+      "name": "H100 temperature & humidity data logger",
+      "role": "Local condition history; NFC setup and USB / PC retrieval.",
+      "url": "https://www.hitelecom.com/product/temperature-humidity-data-logger"
+    },
+    {
+      "name": "H300 / H500 asset tracker",
+      "role": "An independent location-reporting option for selected routes and carriers.",
+      "url": "https://www.hitelecom.com/product/asset-tracking-sensor"
+    },
+    {
+      "name": "Indoor environmental sensors",
+      "role": "Connected conditions at suitable dispatch and receiving-room points.",
+      "url": "https://www.hitelecom.com/product/temperature-humidity-sensor"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which sensors belong in a smart logistics solution?",
+      "a": "Start with what can affect acceptance of the goods. Temperature and humidity document environmental exposure. Fragile or upright-only cargo may justify a dedicated shock and tilt-event recorder. A door contact or suitably placed light sensor can add opening evidence; a separate tracker adds journey context. Select only the measurements that change inspection, handling or the receiving decision."
+    },
+    {
+      "q": "Can H100 report location or send temperature alerts during transport?",
+      "a": "No. H100 stores temperature and humidity for later USB retrieval. It does not provide GPS, shock recording or wireless temperature alerts. Independent tracking can supply location reports. If remote condition alerts are essential, specify and validate a separate connected design for the route."
+    },
+    {
+      "q": "Does an excursion or impact mean the goods must be rejected?",
+      "a": "Not automatically. The authorised reviewer considers the goods, exposure duration, packaging, visual inspection and relevant product information. An event helps identify what to investigate; it does not determine product suitability or prove damage. Keep the decision and its supporting evidence with the receiving record."
+    },
+    {
+      "q": "How should shock and tilt be recorded for fragile shipments?",
+      "a": "Use a specialist event recorder with an agreed acceleration range, event capture method, orientation and mounting. Define what handling event requires inspection with the packaging and goods owner. A warehouse tilt sensor or machine vibration RMS reading is not automatically a transport shock record. Correlate events with photographs and handover times; a recorded event alone does not establish damage or liability."
+    },
+    {
+      "q": "Can a light sensor or door contact prove unauthorised opening?",
+      "a": "A correctly installed contact can report a door state; a light sensor reports illumination at its location. Loading, gaps, lighting changes or handling can affect interpretation. Compare the event with authorised handovers, seal checks and other evidence. Specify local storage and any remote alert requirement separately, including the communications coverage expected on the route."
+    },
+    {
+      "q": "How are local records and connected reports brought together?",
+      "a": "Match them using consignment IDs, device IDs and observation timestamps. Keep retrieval and platform receipt times separate. Agree whether staff attach exports manually or a software interface maps them into the quality, warehouse or transport system. Validate sample records before using them in routine decisions."
+    },
+    {
+      "q": "Where should each device be installed?",
+      "a": "Place the logger in the package air space selected for assessment and document the position. Choose the tracker location for reliable reception and retained mounting. A specialist impact recorder needs its own approved fixing and orientation. One mounting point rarely serves all three measurement purposes equally well."
+    },
+    {
+      "q": "What is the difference between smart logistics and smart asset tracking?",
+      "a": "Smart logistics evaluates the shipment journey and receiving evidence for the goods. Smart asset tracking manages where reusable equipment, carriers and containers are, and where they should go next. A carrier may participate in both workflows, while cargo acceptance and asset availability remain separate decisions."
+    }
+  ],
+  "cta": {
+    "heading": "Make every handover\nbetter informed.",
+    "body": "Share the goods, route and receiving decision. We will help define the condition record, any supporting measurements and the handover workflow.",
+    "placeholder": "Goods, packaging, route duration, temperature / humidity concerns, shock / tipping or opening risks, location needs, quantities and receiving process…"
+  },
+  "sources": [
+    {
+      "title": "Hitelecom H100 data logger",
+      "url": "https://www.hitelecom.com/product/temperature-humidity-data-logger",
+      "note": "Local temperature/humidity recording, NFC setup and USB / PC retrieval; no wireless temperature reporting."
+    },
+    {
+      "title": "Hitelecom H300 / H500 asset tracking",
+      "url": "https://www.hitelecom.com/product/asset-tracking-sensor",
+      "note": "Separate cellular location reporting, with positioning and installation scoped to the asset."
+    },
+    {
+      "title": "Hitelecom indoor environmental sensing",
+      "url": "https://www.hitelecom.com/product/temperature-humidity-sensor",
+      "note": "Connected fixed indoor conditions; probe, enclosure and installation suitability must be confirmed."
+    },
+    {
+      "title": "GS1 EPCIS / CBV implementation guideline",
+      "url": "https://ref.gs1.org/guidelines/epcis-cbv/",
+      "note": "Reference for linking identities, business events and sensor observations; no turnkey EPCIS conformance claimed."
+    }
+  ],
+  "architecture": {
+    "heading": "Cargo conditions. Journey context.\nA connected handover.",
+    "intro": "Choose complementary measurements for the cargo and the decisions required. Local recorders, connected trackers and specialist handling instruments remain distinct devices.",
+    "layers": [
+      {
+        "label": "CORE MEASUREMENTS",
+        "title": "Protect the condition record",
+        "items": [
+          {
+            "name": "Temperature history",
+            "purpose": "Identify exposure periods inside the selected package or load zone."
+          },
+          {
+            "name": "Relative humidity history",
+            "purpose": "Review moisture conditions around humidity-sensitive goods."
+          }
+        ],
+        "note": "H100 records these two quantities locally. Configure by NFC; retrieve records through USB and PC software."
+      },
+      {
+        "label": "SUPPORTING MEASUREMENTS",
+        "title": "Explain the journey",
+        "items": [
+          {
+            "name": "Independent asset positioning",
+            "purpose": "Locate the carrier at supported route stages and investigate delayed handovers."
+          },
+          {
+            "name": "Fixed-site temperature & humidity",
+            "purpose": "Compare dispatch or receiving-room conditions with the shipment record."
+          }
+        ],
+        "note": "Specify a separate H300/H500 tracker and suitable fixed indoor sensors where these decisions need connected data."
+      },
+      {
+        "label": "PROJECT INTEGRATION",
+        "title": "Complete the evidence",
+        "items": [
+          {
+            "name": "Shock & tilt-event recorder",
+            "purpose": "Identify handling periods requiring inspection of fragile or upright-only cargo."
+          },
+          {
+            "name": "Door contact / opening evidence",
+            "purpose": "Compare recorded openings with authorised loading and delivery times."
+          },
+          {
+            "name": "Seal checks & WMS / TMS records",
+            "purpose": "Link custody, photographs and receiving decisions to the same consignment."
+          }
+        ],
+        "note": "Select these separately where the cargo risk justifies them. A light change is contextual evidence, not proof of opening or tampering; agree device interfaces and event retrieval."
+      }
+    ],
+    "outcome": "One consignment ID links the measurements. The receiving team can see which period, package and handover need investigation."
+  }
+}

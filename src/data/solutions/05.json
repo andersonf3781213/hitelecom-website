@@ -1,0 +1,375 @@
+{
+  "number": "05",
+  "slug": "soil-moisture-irrigation",
+  "title": "Smart Irrigation",
+  "metaTitle": "Smart Irrigation: Soil Monitoring & Remote Control | Hitelecom",
+  "description": "Connect soil moisture, pressure, flow and weather with Hitelecom IoT controllers. Operate compatible irrigation valves and pumps, then verify water delivery.",
+  "hero": {
+    "eyebrow": "05 / SMART IRRIGATION",
+    "heading": "Smart irrigation.",
+    "accent": "Monitor. Switch. Verify delivery.",
+    "intro": "Know when a block needs water, operate compatible valves or pump controls through Hitelecom IoT controllers, and check the result with position, flow, pressure and root-zone feedback.",
+    "image": "05-hero",
+    "alt": "Open agricultural fields with crop rows and irrigation management zones",
+    "proof": [
+      {
+        "label": "Demand",
+        "value": "Soil moisture & local weather"
+      },
+      {
+        "label": "Operation",
+        "value": "Remote valve / pump commands"
+      },
+      {
+        "label": "Confirmation",
+        "value": "Position, flow & soil response"
+      }
+    ],
+    "cta": "Plan your irrigation system"
+  },
+  "problem": {
+    "eyebrow": "THE GROWER’S OPERATING QUESTION",
+    "heading": "The schedule ran.\nDid the field receive the water?",
+    "intro": "Match three pieces of evidence: what the soil needed, what the system delivered and how the root zone responded.",
+    "cards": [
+      {
+        "title": "Demand varies across the field",
+        "body": "Soil texture, crop stage and root depth change watering needs. One timer or one probe cannot represent every management block."
+      },
+      {
+        "title": "A command is not delivered water",
+        "body": "An open command cannot confirm valve position, pump operation or flow. Feedback distinguishes a missed action from poor distribution."
+      },
+      {
+        "title": "Supply and weather can change",
+        "body": "A low tank, new rainfall or a pressure loss can make the planned cycle unsuitable. Check those conditions before the next operation."
+      }
+    ],
+    "takeaway": "Which block needs water, which needs a delivery inspection, and what evidence supports that choice?"
+  },
+  "focus": {
+    "eyebrow": "SENSE → OPERATE → VERIFY",
+    "heading": "From a dry root zone\nto a verified watering cycle.",
+    "intro": "Link the zone measurement, the authorised command and the physical result. Keep each irrigation block identifiable throughout.",
+    "diagram": "soil",
+    "stages": [
+      {
+        "title": "Measure the need",
+        "body": "Read representative root-zone moisture, rainfall and available water. Use crop-specific references to decide whether to irrigate."
+      },
+      {
+        "title": "Operate the selected zone",
+        "body": "Use a commissioned Hitelecom IoT controller to command compatible valve actuators or pump control circuits, remotely or through configured rules."
+      },
+      {
+        "title": "Verify delivery",
+        "body": "Check valve position or pump run feedback, then flow, pressure and the root-zone response. Investigate any mismatch."
+      }
+    ],
+    "note": "Controller output, valve position and water flow are different signals. A command acknowledgement alone does not prove that irrigation occurred.",
+    "detailTitle": "What makes a remote irrigation loop dependable?",
+    "detail": "Specify the valve or pump interface, output electrical limits, position or run feedback and the meter data route. Agree any schedule or condition-based logic, maximum run time, manual override, dry-run protection and loss-of-network or power behaviour. Keep necessary local interlocks with the host equipment. Test start, stop, failed feedback and restoration on a representative zone before enabling unattended operation."
+  },
+  "applications": {
+    "heading": "Four field settings.\nOne accountable watering decision.",
+    "intro": "Use the same measurement logic with a different point layout for each crop and irrigation system.",
+    "cards": [
+      {
+        "title": "Row-crop irrigation blocks",
+        "image": "05-scene-1",
+        "alt": "Open crop field with long planted rows",
+        "task": "Use soil moisture and rainfall to select the block, command a compatible valve or pump circuit, and check delivery.",
+        "placement": "Representative soil profiles and rated pressure points serving the same irrigation block.",
+        "response": "The operator compares flow, pressure and root-zone response before the next cycle."
+      },
+      {
+        "title": "Orchards & vineyards",
+        "image": "05-scene-2",
+        "alt": "Cultivated orchard rows with drip irrigation",
+        "task": "Pair drip-zone pressure and flow with root-zone moisture; remotely operate selected valve groups through the commissioned controller.",
+        "placement": "Documented positions relative to trees, emitters, soil layers and pressure-regulating stations.",
+        "response": "Check a failed valve movement or changed flow before adjusting irrigation time."
+      },
+      {
+        "title": "Open-field vegetable beds",
+        "image": "05-scene-3",
+        "alt": "Open vegetable beds arranged in parallel rows",
+        "task": "Manage separate watering zones with soil readings, valve commands and actual position or run feedback.",
+        "placement": "Separate valve groups and representative beds; protect soil probes and cables from cultivation.",
+        "response": "Confirm which zone received water and record any delivery or agronomy follow-up."
+      },
+      {
+        "title": "Landscape & tree establishment",
+        "image": "05-scene-4",
+        "alt": "Managed planted landscape and young trees",
+        "task": "Use root-zone moisture and rainfall to prioritise watering, with remote switching where a compatible controlled supply is installed.",
+        "placement": "Representative tree pits and planting beds with distinct soil or supply conditions.",
+        "response": "Grounds staff confirm supply and wetting response, reducing unnecessary return visits."
+      }
+    ]
+  },
+  "measurements": {
+    "heading": "Every channel answers\nan operating question.",
+    "intro": "Keep sensing depths and delivery points tied to the same irrigation zone.",
+    "rows": [
+      {
+        "point": "Crop block",
+        "measure": "Root-zone moisture; selected soil temperature",
+        "decision": "Does this block need water, and did the roots receive it?",
+        "selection": "Soil or medium, depth, contact and field reference."
+      },
+      {
+        "point": "Supply / valve group",
+        "measure": "Pressure and integrated flow / volume",
+        "decision": "Did the commanded cycle deliver the expected water?",
+        "selection": "Rated connection, compatible meter interface and common zone ID."
+      },
+      {
+        "point": "Tank / supply reservoir",
+        "measure": "Selected liquid level; low-level switch input",
+        "decision": "Is sufficient water available before operating the pump?",
+        "selection": "Tank geometry, sensing method and separately engineered local pump protection."
+      },
+      {
+        "point": "Valve / pump controls",
+        "measure": "Output command, valve end position, run / fault feedback",
+        "decision": "Did the equipment reach the requested operating state?",
+        "selection": "HD20 digital I/O or a documented equipment interface; matched electrical ratings."
+      },
+      {
+        "point": "Field weather point",
+        "measure": "Configured rainfall, temperature, humidity and wind",
+        "decision": "Should the next cycle be delayed or reviewed?",
+        "selection": "Representative exposure and required station channels."
+      },
+      {
+        "point": "Agronomy reference point",
+        "measure": "Selected soil EC / pH",
+        "decision": "Does the soil-condition trend require investigation?",
+        "selection": "Site-suitable probes and independent reference testing."
+      }
+    ],
+    "boundary": "Select flow meters, valve actuators and feedback switches for the installation. Soil readings do not independently prescribe fertiliser doses or replace pump protection."
+  },
+  "platform": {
+    "heading": "A command, a confirmation,\nand the water delivered.",
+    "intro": "Use Hitelecom Cloud or the agreed customer platform to review measurements and issue supported controller commands. Keep command status, physical feedback and water-delivery records tied to the same block.",
+    "assetLabel": "FIELD-B / ZONE-03 / DEPTH-02",
+    "metricLabel": "Root-zone moisture",
+    "metricValue": "24.6%",
+    "status": "Verify delivery",
+    "insight": "An acknowledged command still needs valve or pump feedback, delivery evidence and a root-zone check.",
+    "steps": [
+      {
+        "title": "Authorised operator",
+        "body": "Selects the irrigation zone and issues the permitted start, stop or valve command."
+      },
+      {
+        "title": "Controller & field equipment",
+        "body": "Execute the configured command through compatible circuits; return the available position, run and fault inputs."
+      },
+      {
+        "title": "Irrigation manager",
+        "body": "Reviews flow, pressure and soil response, then records completion or a delivery investigation."
+      }
+    ],
+    "mode": "connected",
+    "channels": "Choose a supplied 4G or NB-IoT variant, or LoRa with a compatible gateway and agreed data destination. Verify the notification route during commissioning.",
+    "boundary": "Schedules and condition-based operation are commissioned functions. Define manual override, local protection and behaviour on stale data, power loss or network loss before handover."
+  },
+  "deployment": {
+    "heading": "Make the first irrigation cycle\nyour acceptance test.",
+    "steps": [
+      {
+        "title": "Map demand & delivery",
+        "body": "Share crop blocks, water source, valve and pump electrical interfaces, existing meters and required remote operating tasks."
+      },
+      {
+        "title": "Install & align the records",
+        "body": "Map soil, pressure, flow and level to each zone. Configure controller I/O, permitted commands and feedback; retain required local safeguards."
+      },
+      {
+        "title": "Observe a working cycle",
+        "body": "Test start and stop, position or run confirmation, water delivery and soil response. Demonstrate manual override and agreed failure behaviour."
+      }
+    ],
+    "acceptance": [
+      "Soil points, sensing depths and delivery points match the same zone plan.",
+      "Soil and pressure reference checks are recorded; weather exposure is appropriate.",
+      "Start / stop, physical feedback, maximum run time and agreed failure-response tests are documented.",
+      "The operator verifies delivery and soil response during a real cycle; control permissions and local protection are handed over."
+    ]
+  },
+  "products": [
+    {
+      "name": "HD20 IoT controller",
+      "role": "Compatible valve / pump command circuits, digital feedback and selected analogue inputs.",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000"
+    },
+    {
+      "name": "Wireless soil sensors",
+      "role": "Project-selected moisture, EC, pH and soil-temperature channels.",
+      "url": "https://www.hitelecom.com/product/soil-moisture-sensor"
+    },
+    {
+      "name": "H600 weather station",
+      "role": "Configured rainfall and weather channels around the field objective.",
+      "url": "https://www.hitelecom.com/product/weather-station"
+    },
+    {
+      "name": "Wireless pressure sensors",
+      "role": "Supply and irrigation-zone pressure at a suitable process connection.",
+      "url": "https://www.hitelecom.com/product/pressure-sensor"
+    },
+    {
+      "name": "Liquid-level sensors",
+      "role": "Selected tank or reservoir-level measurement for supply visibility.",
+      "url": "https://www.hitelecom.com/product/liquid-level-sensor"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What does Smart Irrigation include beyond a soil-moisture sensor?",
+      "a": "The solution can combine representative soil points, pressure, a compatible flow meter, rainfall and tank level with a Hitelecom IoT controller. The operator can command a compatible zone and verify valve or pump feedback, actual delivery and soil response. Select the measurements around the irrigation layout; every point does not need every sensor."
+    },
+    {
+      "q": "Can one moisture threshold work across the whole farm?",
+      "a": "Usually not. Soil, root depth, crop stage and delivery capacity change how a reading should be interpreted. Set review levels with the grower or agronomist using site references. Keep separate management blocks where conditions differ, and review the levels as the crop develops."
+    },
+    {
+      "q": "How can the team distinguish poor delivery from a dry soil trend?",
+      "a": "Compare the soil response with pressure, any available flow record and the irrigation event for that block. A mismatch identifies where to investigate; it does not identify the fault by itself. Check emitters, valves, probe contact and local soil conditions before changing the schedule."
+    },
+    {
+      "q": "Can Hitelecom remotely switch irrigation valves and pumps?",
+      "a": "Yes, through a suitable Hitelecom IoT controller and compatible equipment interface. The HD20-4000 reference configuration includes digital outputs for command circuits, digital inputs for position or run/fault feedback, and analogue inputs. It is not a universal direct power supply for valves or motors. Match the electrical interface, actuator power, control permissions and local interlocks to the installed equipment."
+    },
+    {
+      "q": "Can watering use a schedule or soil-moisture rule?",
+      "a": "Scheduled or condition-based operation can be configured within the supplied control scope. Define the crop reference, data freshness, maximum run time, available water, manual override and independent local pump protection. Verify loss-of-network and loss-of-power behaviour with the actual controller and host equipment; the presence of an IoT controller alone does not confirm an autonomous offline irrigation programme."
+    },
+    {
+      "q": "What confirms that a remote command worked?",
+      "a": "Use a valve end-position or pump run input where available, then compare flow and pressure with the expected cycle. These confirm different parts of the process. A command acknowledgement shows communications or command handling; it does not establish physical valve movement or delivered volume. The later soil response adds evidence at the monitored root zone."
+    },
+    {
+      "q": "Can EC, pH or nutrient measurements determine fertiliser dosing?",
+      "a": "These channels can support a soil investigation when their configuration, range and reference method suit the site. They do not replace an agronomic testing programme. Fertiliser or fertigation decisions need the crop plan, appropriate soil or solution tests and the responsible agronomist’s interpretation."
+    },
+    {
+      "q": "How does this differ from Smart Greenhouses?",
+      "a": "Smart Irrigation centres on field blocks, water delivery and root-zone response. Smart Greenhouses also examines the enclosed growing climate: canopy temperature, humidity, selected CO₂, outside weather and climate-system context. Substrate-based growing needs its own probe suitability and reference checks."
+    }
+  ],
+  "cta": {
+    "heading": "Connect the field.\nControl the watering task.",
+    "body": "Share your zones, valve and pump interfaces, water source and monitoring needs. We will help define the sensing, control and verification points.",
+    "placeholder": "Crop, zones, soil, water source, valves / pumps, electrical interfaces, flow meters, required commands and feedback…"
+  },
+  "sources": [
+    {
+      "title": "Hitelecom wireless soil sensors",
+      "url": "https://www.hitelecom.com/product/soil-moisture-sensor",
+      "note": "Channel and probe selection; soil temperature only where confirmed in the supplied configuration."
+    },
+    {
+      "title": "Hitelecom H600 weather station",
+      "url": "https://www.hitelecom.com/product/weather-station",
+      "note": "Configurable local weather measurements and supported data routes."
+    },
+    {
+      "title": "Hitelecom wireless pressure sensors",
+      "url": "https://www.hitelecom.com/product/pressure-sensor",
+      "note": "Pressure range, process connection and reporting selection."
+    },
+    {
+      "title": "University of Minnesota: Soil moisture sensors for irrigation scheduling",
+      "url": "https://extension.umn.edu/natural-resources/conservation/agricultural-soil-and-water/irrigation/soil-moisture-sensors-for-irrigation-scheduling",
+      "note": "Soil measurement basis, placement and site-specific irrigation interpretation."
+    },
+    {
+      "title": "University of Minnesota: Digging or expanding a well",
+      "url": "https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/digging-or-expanding-a-well",
+      "note": "Pressure and flow as evidence of irrigation delivery."
+    },
+    {
+      "title": "Hitelecom HD20-4000 IoT controller",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000",
+      "note": "Existing controller; reference digital and analogue I/O, remote/local/condition-based tasks and physical feedback. Electrical limits and host protection are project-specific."
+    },
+    {
+      "title": "Hitelecom HR10 communication controller",
+      "url": "https://www.hitelecom.com/product/iot-controller-hr10",
+      "note": "Supported equipment data and commands through documented interfaces; not interchangeable with relay I/O."
+    },
+    {
+      "title": "Hitelecom liquid-level sensors",
+      "url": "https://www.hitelecom.com/product/liquid-level-sensor",
+      "note": "Select the appropriate tank measurement method and supplied configuration."
+    }
+  ],
+  "architecture": {
+    "heading": "Measure the need.\nControl and confirm the delivery.",
+    "intro": "A practical irrigation system connects the root zone, the water supply and the equipment that moves the water.",
+    "layers": [
+      {
+        "label": "CORE MEASUREMENTS",
+        "title": "Demand & water delivery",
+        "items": [
+          {
+            "name": "Soil moisture",
+            "purpose": "Follow the root-zone response at representative depths."
+          },
+          {
+            "name": "Pressure & flow",
+            "purpose": "Compare supply conditions and delivered volume through a suitable meter interface."
+          },
+          {
+            "name": "Tank / reservoir level",
+            "purpose": "Identify available water before a planned watering cycle."
+          }
+        ],
+        "note": "Hitelecom soil, pressure and selected level devices form the sensing base; flow meters are selected or integrated for the project."
+      },
+      {
+        "label": "SUPPORTING MEASUREMENTS",
+        "title": "When the plan should change",
+        "items": [
+          {
+            "name": "Rainfall & weather",
+            "purpose": "Relate watering to current rainfall and local atmospheric conditions."
+          },
+          {
+            "name": "Soil temperature / EC / pH",
+            "purpose": "Add selected soil-condition channels where the agronomy question needs them."
+          },
+          {
+            "name": "Valve / pump feedback",
+            "purpose": "Return end position, run, fault or low-level switch states through compatible inputs."
+          }
+        ],
+        "note": "Use meaningful field zones and suitable reference checks. A command state is not physical feedback."
+      },
+      {
+        "label": "CONTROL & INTEGRATION",
+        "title": "Operate the selected zone",
+        "items": [
+          {
+            "name": "Hitelecom HD20 controller",
+            "purpose": "Issue supported valve or pump-control commands from the agreed platform."
+          },
+          {
+            "name": "Configured operating rules",
+            "purpose": "Commission schedules or condition-based tasks with manual override and local safeguards."
+          },
+          {
+            "name": "Delivery verification",
+            "purpose": "Relate each command to feedback, flow, pressure and soil response."
+          }
+        ],
+        "note": "Match I/O ratings, actuator power and equipment interfaces. Define dry-run protection and power / network-loss behaviour with the integrator."
+      }
+    ],
+    "outcome": "The operator can see which zone needs water, operate the agreed equipment and check whether water reached the monitored roots."
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "number": "06",
+  "slug": "tvoc-pipework-monitoring",
+  "title": "Smart Pipework Monitoring",
+  "metaTitle": "Smart Pipework: VOC, Pressure & Temperature | Hitelecom",
+  "description": "Combine pipework TVOC, gas-specific channels, temperature, pressure and compatible water-leak points. Add flow and valve feedback for investigation and permitted control.",
+  "hero": {
+    "eyebrow": "06 / SMART PIPEWORK MONITORING",
+    "heading": "Smart pipework.\nMore context at every point.",
+    "accent": "VOC. Temperature. Pressure.",
+    "intro": "Connect air around the line with temperature, pressure and selected leakage points. Add flow, valve position and equipment feedback so operations can investigate the condition and verify a permitted action.",
+    "image": "06-hero",
+    "alt": "Industrial pipework with accessible valves and flanged connections",
+    "proof": [
+      {
+        "label": "Around the line",
+        "value": "Ambient VOC trends"
+      },
+      {
+        "label": "At the process",
+        "value": "Temperature & pressure"
+      },
+      {
+        "label": "During operation",
+        "value": "Flow, status & feedback"
+      }
+    ],
+    "cta": "Discuss your pipework"
+  },
+  "problem": {
+    "eyebrow": "THE OPERATING TEAM’S INVESTIGATION",
+    "heading": "A changed reading\nneeds more than one perspective.",
+    "intro": "A vapor trend, thermal deviation or pressure change may have several explanations. Link the right observations to the same line and operating step.",
+    "cards": [
+      {
+        "title": "Connections and transfer points",
+        "body": "Match vapor sensing to the actual substance; TVOC does not cover every gas. For water services, place contact sensors on likely spill paths. Each event directs an inspection without proving the source."
+      },
+      {
+        "title": "Changing thermal or pressure duty",
+        "body": "Startup, cleaning and changing demand can alter pipe conditions. Compare selected temperature and pressure points with equivalent operating states before escalating a deviation."
+      },
+      {
+        "title": "Airflow and adjacent machinery",
+        "body": "A command does not prove a valve moved or a pump delivered flow. Add the appropriate flow, position and run / fault feedback to separate an operating request from the physical result."
+      }
+    ],
+    "takeaway": "Associate complementary readings with a named line, equipment item and operating step so the team knows what to investigate."
+  },
+  "focus": {
+    "eyebrow": "AIR POINT + PIPE POINT + OPERATING STATE",
+    "heading": "Measure different quantities.\nReview one operating event.",
+    "intro": "Give each observation its own physical meaning, then compare records from the same process period.",
+    "diagram": "tvoc",
+    "stages": [
+      {
+        "title": "Define the process concern",
+        "body": "Identify the medium, chemistry, equipment and operating change the team needs to investigate."
+      },
+      {
+        "title": "Separate the measurement points",
+        "body": "Specify the gas or liquid, air location, surface contact and process port. Add a water-contact point only for confirmed compatible liquids."
+      },
+      {
+        "title": "Match the time and duty",
+        "body": "Align readings with flow, valve-position and extraction states. Give every permitted controller command a separate equipment-feedback check."
+      },
+      {
+        "title": "Investigate with the right discipline",
+        "body": "Operations supplies context; maintenance or EHS selects the inspection and any specialist follow-up."
+      }
+    ],
+    "note": "TVOC, surface temperature and pressure support investigation. They do not by themselves confirm a leak, pipe integrity or a safe atmosphere.",
+    "detailTitle": "How to compare different measurements responsibly",
+    "detail": "Use common line IDs and timestamps without treating unlike quantities as interchangeable. Pipe-wall temperature differs from fluid temperature; periodic pressure reports may miss short transients. Ambient TVOC depends on detectable compounds and airflow. Vibration requires a suitable machine point and bandwidth. Review the acquisition profile and operating state before comparing channels, and keep cause confirmation with the site’s inspection or specialist assessment process."
+  },
+  "applications": {
+    "heading": "Process-area monitoring.\nFrom the line to its equipment.",
+    "intro": "The same platform can organise several measurements. The site design determines which ones are useful at each location.",
+    "cards": [
+      {
+        "title": "Valve groups & flanged lines",
+        "image": "06-scene-1",
+        "alt": "Accessible industrial valve manifold and flanged pipe connections",
+        "task": "Review TVOC or selected gas response, pipe temperature and pressure alongside valve command and position feedback.",
+        "placement": "Separate air positions, repeatable surface contacts and approved process ports.",
+        "response": "Operations compares the event with valve duty and material before directing an inspection."
+      },
+      {
+        "title": "Pump seals & transfer skids",
+        "image": "06-scene-2",
+        "alt": "Industrial liquid transfer pump and associated pipework",
+        "task": "Combine vapor, pressure and machinery trends; add compatible water-contact detection beneath water-service seals or connections.",
+        "placement": "Air around the skid, approved process connections and rigid machinery measurement points.",
+        "response": "Maintenance checks the named skid and actual transfer flow; any permitted control request retains the host equipment’s interlocks."
+      },
+      {
+        "title": "Solvent charging connections",
+        "image": "06-scene-3",
+        "alt": "Controlled solvent charging connection in an industrial process area",
+        "task": "Match the gas channel to the solvent, then compare air readings with transfer flow, pressure and valve position.",
+        "placement": "Air points and approved process interfaces chosen with process and EHS personnel.",
+        "response": "The team checks connection practices, material changes and extraction; specialist assessment follows where needed."
+      },
+      {
+        "title": "Recovery & extraction interfaces",
+        "image": "06-scene-4",
+        "alt": "Solvent recovery equipment with ducting and connected pipework",
+        "task": "Relate selected gas and temperature trends to extraction run / fault states and suitable airflow or differential-pressure instruments.",
+        "placement": "Approved ambient or specified duct point, plus suitable temperature and external status inputs.",
+        "response": "Operations investigates changed duty, airflow and maintenance condition using the agreed procedure."
+      }
+    ]
+  },
+  "measurements": {
+    "heading": "Different measurements.\nDistinct installation requirements.",
+    "intro": "Specify the sensing location and operating question together. Each quantity has its own probe, reference and acquisition requirements.",
+    "rows": [
+      {
+        "point": "Air around pipe connections",
+        "measure": "Selected TVOC response",
+        "decision": "Investigate changed detectable-vapor conditions.",
+        "selection": "Compounds, sensing principle, calibration basis, airflow and service access."
+      },
+      {
+        "point": "Pipe-wall contact",
+        "measure": "Surface temperature",
+        "decision": "Review thermal deviations at comparable operating duty.",
+        "selection": "Probe contact, insulation arrangement and distinction from fluid temperature."
+      },
+      {
+        "point": "Approved process port",
+        "measure": "Pressure",
+        "decision": "Review changes in the line’s operating pressure.",
+        "selection": "Medium, reference, span, rated connection and required acquisition speed."
+      },
+      {
+        "point": "Associated pump / motor",
+        "measure": "Selected machinery vibration",
+        "decision": "Compare the rotating equipment under equivalent speed and load.",
+        "selection": "Rigid point, axis, bandwidth and acquisition profile."
+      },
+      {
+        "point": "Process-area context",
+        "measure": "Ambient conditions and agreed external status inputs",
+        "decision": "Relate the change to material, duty, extraction or maintenance.",
+        "selection": "Suitable environmental configuration; explicit interface and timestamp mapping."
+      },
+      {
+        "point": "Assessed gas release point",
+        "measure": "Gas-specific selected channel",
+        "decision": "Observe the identified gas when TVOC does not answer the question.",
+        "selection": "Substance, concentration units, response duty, interfering gases and required approval."
+      },
+      {
+        "point": "Water-service tray / low point",
+        "measure": "H Series water-contact detection",
+        "decision": "Locate water reaching a monitored skid or pipe-service point.",
+        "selection": "Actual water or condensate mixture; not a general oil or solvent detector."
+      },
+      {
+        "point": "Transfer / extraction / valve",
+        "measure": "External flow or differential pressure + position / run feedback",
+        "decision": "Check whether delivery or extraction follows the permitted command.",
+        "selection": "Compatible instruments, HD20 / HR-10 interface and independently verified equipment state."
+      }
+    ],
+    "boundary": "Choose acquisition timing for the behaviour being investigated. Routine wireless reports must not be assumed to capture fast pressure or vibration events."
+  },
+  "platform": {
+    "heading": "One process-area record.\nSeveral useful observations.",
+    "intro": "Review selected gas, water-contact, temperature and pressure points with flow and equipment states. Use a commissioned Hitelecom controller interface for permitted operating requests and retain independent response feedback.",
+    "assetLabel": "PROCESS 02 / TRANSFER SKID / AIR POINT 03",
+    "metricLabel": "Reported TVOC response",
+    "metricValue": "0.84 ppm",
+    "status": "Review against the agreed process profile",
+    "insight": "Compare the VOC trend with line pressure, surface temperature and the transfer record before assigning a cause.",
+    "steps": [
+      {
+        "title": "Operations sets the context",
+        "body": "Identify the active material, line state and transfer or cleaning step."
+      },
+      {
+        "title": "Investigate or issue a permitted request",
+        "body": "The responsible team reviews the condition and operating limits. Any control request uses the host equipment’s approved interface."
+      },
+      {
+        "title": "Verify the physical result",
+        "body": "Compare valve position, flow or run feedback with the request. Retain inspection findings and corrective work against the same line ID."
+      }
+    ],
+    "mode": "connected",
+    "channels": "Choose 4G / NB-IoT or an agreed LoRa receiver / gateway route; configure platform notifications for the responsible recipients.",
+    "boundary": "Dedicated gas safety, occupational exposure assessment and emergency functions remain separate from the operational trend view."
+  },
+  "deployment": {
+    "heading": "Define the points.\nCommission the whole record.",
+    "steps": [
+      {
+        "title": "Agree measurements and site suitability",
+        "body": "List the substances, water services, process points, external instruments and permitted command interfaces for the line."
+      },
+      {
+        "title": "Install and verify each interface",
+        "body": "Check ambient placement, probe contact, pressure connections, power and radio delivery against the supplied specifications."
+      },
+      {
+        "title": "Handover an investigation workflow",
+        "body": "Test notifications and timestamps; assign inspection, calibration and review responsibilities when the process changes."
+      }
+    ],
+    "acceptance": [
+      "Line, equipment and point IDs identify the actual measurement.",
+      "Chemical response, probe contact and process interfaces are confirmed.",
+      "Each channel’s timing and configured notifications are tested.",
+      "Calibration, servicing and external-system responsibilities are assigned.",
+      "External instrument values, command permissions, actual feedback and communication-loss behaviour are checked."
+    ]
+  },
+  "products": [
+    {
+      "name": "Industrial TVOC sensor",
+      "role": "Selected ambient VOC response around the process area.",
+      "url": "https://www.hitelecom.com/product/tvoc-sensor"
+    },
+    {
+      "name": "Wireless temperature sensor",
+      "role": "A suitable contact-probe configuration for defined pipe-wall points.",
+      "url": "https://www.hitelecom.com/product/temperature-sensor"
+    },
+    {
+      "name": "Wireless pressure sensor",
+      "role": "A medium-compatible assembly for approved process ports.",
+      "url": "https://www.hitelecom.com/product/pressure-sensor"
+    },
+    {
+      "name": "Machinery vibration sensor",
+      "role": "Additional monitoring at suitable associated pump or motor points.",
+      "url": "https://www.hitelecom.com/product/vibration-sensor"
+    },
+    {
+      "name": "Custom gas sensors",
+      "role": "Select the actual gas and measurement duty; confirm the supplied detector and approval.",
+      "url": "https://www.hitelecom.com/product/custom-gas-sensor"
+    },
+    {
+      "name": "Wireless water leak sensors",
+      "role": "Add water-presence points on confirmed compatible water-service paths.",
+      "url": "https://www.hitelecom.com/product/water-leakage-sensor"
+    },
+    {
+      "name": "HD20 IoT Controller",
+      "role": "Acquire compatible state and analogue inputs; issue permitted commands and check feedback.",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000"
+    },
+    {
+      "name": "HR-10 Controller & DTU",
+      "role": "Connect compatible external flow, pressure or other instruments through selected interfaces.",
+      "url": "https://www.hitelecom.com/product/iot-controller-hr10"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What does Smart Pipework Monitoring include?",
+      "a": "Select ambient TVOC or a gas-specific channel around the actual substance, then combine appropriate pipe-surface temperature, pressure and equipment data. Add water-contact points for compatible water services and external flow, valve or extraction feedback where they answer a real operating question. Sensors, instruments and control interfaces are selected separately."
+    },
+    {
+      "q": "How is this different from Smart Water Monitoring?",
+      "a": "This page focuses on industrial process-area investigation: detectable vapors around pipework, thermal behaviour, pressure and associated equipment. Smart Water Monitoring focuses on water levels, accumulation, conveyance and supply conditions. The right category follows the operator’s task; individual sensor families may be shared."
+    },
+    {
+      "q": "Can these readings confirm the source of a leak?",
+      "a": "They can help prioritise an investigation, but a changed trend is not source confirmation. Airflow affects ambient TVOC; pressure and temperature also change with normal operation. Use the named points and common timing to guide the site’s inspection, then record the confirmed source and any additional specialist measurements."
+    },
+    {
+      "q": "Does pipe-surface temperature measure the fluid temperature?",
+      "a": "It measures the contact point on the pipe wall. Wall material, contact quality, insulation, ambient conditions and operating changes influence the result. Define what the surface trend should show. If the decision needs fluid temperature, specify an appropriate process probe and approved installation separately."
+    },
+    {
+      "q": "Can the system provide gas safety or exposure compliance?",
+      "a": "Those requirements need an explicitly designed assessment or protection system. Confirm the substances, measurement method, response duty and any required certification for the exact equipment. An ambient TVOC trend and a general monitoring platform do not establish exposure compliance, %LEL coverage or an emergency shutdown function."
+    },
+    {
+      "q": "What should be agreed for the multi-sensor installation?",
+      "a": "Agree the point layout, chemistry, probe and process interfaces, supply, acquisition profile and reporting path for every device. Keep calibration and maintenance access practical. Confirm external-system mappings and test the notification workflow, so each observation has a known meaning and an assigned response."
+    },
+    {
+      "q": "Can TVOC or the water-leak sensor detect every leak?",
+      "a": "No. TVOC depends on the selected sensing principle and detectable substances. CH₄, H₂, NH₃, O₂ or another specific duty requires an appropriately selected channel. The water sensor detects compatible liquid reaching its sensing point; oil, solvent and low-conductivity or treated-water duties require a verified sensing method. Select the medium before specifying the detector."
+    },
+    {
+      "q": "Can the controller operate valves or extraction equipment?",
+      "a": "HD20 can issue permitted commands through compatible equipment circuits and read available feedback; HR-10 can support approved commands through a documented instrument or equipment interface. Confirm output type, electrical rating, local priority and communication-loss behaviour. Host sequencing, interlocks and protection remain active. Emergency shutdown is not assumed to be provided by this monitoring integration."
+    }
+  ],
+  "cta": {
+    "heading": "Bring the process.\nDefine the useful measurements.",
+    "body": "Share the pipework, medium and operating concern. We will help scope complementary sensing points and a practical investigation workflow.",
+    "placeholder": "Medium / compounds, pipework or skid, pressure and temperature duty, VOC concern, site classification and existing systems…"
+  },
+  "sources": [
+    {
+      "title": "Hitelecom industrial TVOC sensor",
+      "url": "https://www.hitelecom.com/product/tvoc-sensor",
+      "note": "Compound-led configuration; current reference uses external 9–24 V power."
+    },
+    {
+      "title": "Hitelecom wireless temperature sensor",
+      "url": "https://www.hitelecom.com/product/temperature-sensor",
+      "note": "Select the sensing arrangement and installation for the actual measurement point."
+    },
+    {
+      "title": "Hitelecom wireless pressure sensor",
+      "url": "https://www.hitelecom.com/product/pressure-sensor",
+      "note": "Medium, pressure reference, process connection and measurement timing must be specified."
+    },
+    {
+      "title": "Hitelecom machinery vibration sensor",
+      "url": "https://www.hitelecom.com/product/vibration-sensor",
+      "note": "Machinery-mounted probe and acquisition requirements; no universal fault diagnosis claimed."
+    },
+    {
+      "title": "ION Science: PID response factors",
+      "url": "https://ionscience.com/en/ion-science-pid-response-factors/",
+      "note": "A mixed detectable response does not resolve every individual compound."
+    },
+    {
+      "title": "Hitelecom custom gas sensors",
+      "url": "https://www.hitelecom.com/product/custom-gas-sensor",
+      "note": "Target-specific gas channels, supplied approvals and operating duties require selection."
+    },
+    {
+      "title": "Hitelecom water leak sensors",
+      "url": "https://www.hitelecom.com/product/water-leakage-sensor",
+      "note": "Point sensing for water and confirmed compatible liquids; no blanket oil / solvent claim."
+    },
+    {
+      "title": "Hitelecom HD20 IoT Controller",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000",
+      "note": "Permitted command circuits plus separately acquired equipment-state feedback."
+    },
+    {
+      "title": "Hitelecom HR-10 Controller & DTU",
+      "url": "https://www.hitelecom.com/product/iot-controller-hr10",
+      "note": "Selected interfaces for compatible external instruments; physical interface does not imply protocol compatibility."
+    }
+  ],
+  "architecture": {
+    "heading": "Three views\nof the same process area.",
+    "intro": "Select the quantities that explain your operating concern. Keep ambient air, pipe-surface and process-connected measurements clearly identified.",
+    "layers": [
+      {
+        "label": "CORE MEASUREMENTS",
+        "title": "Air & pipe conditions",
+        "items": [
+          {
+            "name": "Ambient TVOC",
+            "purpose": "Follow the selected VOC response around defined process-area points."
+          },
+          {
+            "name": "Pipe-surface temperature",
+            "purpose": "Compare thermal behaviour at repeatable contact locations."
+          },
+          {
+            "name": "Process pressure",
+            "purpose": "Track pressure at approved ports during comparable operating states."
+          }
+        ],
+        "note": "Hitelecom offers these sensor families separately. Specify compounds, probe contact, wetted materials, process connection and timing for each point."
+      },
+      {
+        "label": "SUPPORTING MEASUREMENTS",
+        "title": "Equipment & environment",
+        "items": [
+          {
+            "name": "Gas-specific channels",
+            "purpose": "Select the actual gas and duty when a TVOC response is not sufficient."
+          },
+          {
+            "name": "Compatible water-leak points",
+            "purpose": "Observe selected water-service seal, tray and pipe-connection paths."
+          },
+          {
+            "name": "Machinery & local climate",
+            "purpose": "Use suitable vibration and environmental points to explain associated equipment conditions."
+          }
+        ],
+        "note": "Water, oil, solvent and gas detection need different selection. Confirm the medium, sensing principle and supplied installation conditions."
+      },
+      {
+        "label": "PROJECT INTEGRATION",
+        "title": "Flow, state & permitted action",
+        "items": [
+          {
+            "name": "Flow / extraction measurements",
+            "purpose": "Read selected external flow or differential-pressure instruments and equipment states."
+          },
+          {
+            "name": "Hitelecom IoT Controller",
+            "purpose": "Issue permitted requests and check valve position or run / fault feedback separately."
+          },
+          {
+            "name": "Dedicated protection / maintenance",
+            "purpose": "Retain approved safety-system events, source confirmation and corrective work."
+          }
+        ],
+        "note": "External instruments and HD20 / HR-10 interfaces are separately configured. Protection and emergency functions retain their dedicated design."
+      }
+    ],
+    "outcome": "A common timeline helps operations distinguish a changed condition from a confirmed cause and assign the next inspection."
+  }
+}

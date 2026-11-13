@@ -1,0 +1,380 @@
+{
+  "number": "09",
+  "slug": "pipeline-level-blockage-monitoring",
+  "title": "Smart Water Monitoring",
+  "metaTitle": "Smart Water Monitoring: Level, Pressure & Overflow | Hitelecom",
+  "description": "Connect level, pressure, rainfall and selected flow measurements with pump and valve feedback. Support water-asset investigation and commissioned remote control.",
+  "hero": {
+    "eyebrow": "09 / SMART WATER MONITORING",
+    "heading": "Smart water\nmonitoring.",
+    "accent": "Level. Flow context. Controlled response.",
+    "intro": "Monitor water level and pressure, add rainfall and measured-flow context, and connect pump or valve feedback. Support targeted inspections and commissioned remote operations across chambers, channels and tanks.",
+    "image": "09-hero",
+    "alt": "Drainage and water-level monitoring application at an outdoor channel and pipe system",
+    "proof": [
+      {
+        "label": "Chambers, channels and tanks",
+        "value": "Level & rise patterns"
+      },
+      {
+        "label": "Selected pressurised connections",
+        "value": "Operating pressure"
+      },
+      {
+        "label": "Through compatible instruments and controls",
+        "value": "Flow & pump / valve feedback"
+      }
+    ],
+    "cta": "Discuss your water assets"
+  },
+  "problem": {
+    "eyebrow": "THE WATER OPERATIONS TEAM’S PRIORITIES",
+    "heading": "Know where water is rising.\nUnderstand what changed.",
+    "intro": "Bring a level or pressure exception together with the operating conditions that explain what to inspect next.",
+    "cards": [
+      {
+        "title": "Rising water between visits",
+        "body": "A chamber, tank or sump can change while the site is unattended. Select measurement and reporting times around the rate of rise and the response the team can make."
+      },
+      {
+        "title": "Several causes, similar symptoms",
+        "body": "Rainfall, pumping, downstream surcharge and debris can all influence level. Pressure changes may reflect demand or valve operation. Add the relevant context before labelling a restriction or leak."
+      },
+      {
+        "title": "A command is not an outcome",
+        "body": "A pump can fail to start or a valve can fail to reach position. Bring run/fault, end-position and measured-flow feedback into the event record before assuming the water system responded."
+      }
+    ],
+    "takeaway": "A useful event connects the water asset, measured change, operating context and next inspection."
+  },
+  "focus": {
+    "eyebrow": "FROM MEASUREMENT TO A SITE RESPONSE",
+    "heading": "Measure the water.\nReview the system.",
+    "intro": "Treat the reading, reference and operating context as one record for the named water asset.",
+    "diagram": "radar",
+    "stages": [
+      {
+        "title": "Define the operating question",
+        "body": "Select storage level, suspected restriction, pressure variation or local water ingress as the monitoring task."
+      },
+      {
+        "title": "Choose the sensing arrangement",
+        "body": "Match radar, immersed level or pressure to the target, liquid, access and exposure."
+      },
+      {
+        "title": "Connect operating evidence",
+        "body": "Compare rainfall and neighbouring levels with measured flow, pump run/fault and valve position where relevant."
+      },
+      {
+        "title": "Respond and verify",
+        "body": "Assign inspection or a commissioned remote command; check independent feedback and the resulting water conditions."
+      }
+    ],
+    "note": "Level patterns can support a suspected-restriction review. Confirming a blockage, leak location or cause requires additional evidence.",
+    "detailTitle": "How are level, pressure and flow kept distinct?",
+    "detail": "Radar measures distance to a suitable target; a known installation reference allows level conversion. An immersed arrangement measures level using its selected sensing principle and reference. A pressure point reports conditions at its process connection. Flow requires an appropriate meter or a validated hydraulic relationship—not a universal conversion from level or pressure. Keep measured and derived quantities identified in the record, with units, timestamps and the assumptions behind any calculation."
+  },
+  "applications": {
+    "heading": "Water assets with\ndifferent operating questions.",
+    "intro": "Use the appropriate sensing arrangement, supported by relevant network and control records.",
+    "cards": [
+      {
+        "title": "Drainage chambers & sewer nodes",
+        "image": "09-scene-1",
+        "alt": "Accessible drainage chamber with an open water-level observation point",
+        "task": "Follow local level and sustained rise with available rainfall and neighbouring observations.",
+        "placement": "A suitable overhead radar view or immersed arrangement, with radio coverage checked under the closed cover.",
+        "response": "Review the event context, then arrange an authorised inspection for surcharge or a suspected restriction."
+      },
+      {
+        "title": "Culverts & open channels",
+        "image": "09-scene-2",
+        "alt": "Open drainage channel and culvert inlet in outdoor infrastructure",
+        "task": "Compare level at selected inlet or outlet points with rainfall and downstream conditions.",
+        "placement": "Stable mounting and an agreed channel datum; add separate points where the hydraulic question requires them.",
+        "response": "Inspect debris or downstream restrictions when the observed pattern warrants a field check."
+      },
+      {
+        "title": "Tanks, sumps & collection pits",
+        "image": "09-scene-3",
+        "alt": "Industrial collection tank and sump area with level monitoring access",
+        "task": "Combine level and feed pressure with independent high-level status, measured flow and pump run/fault feedback.",
+        "placement": "Suitable level point and approved process connections, each referenced to the same asset.",
+        "response": "Investigate filling or drawdown; use commissioned pump or valve commands only with local protection and confirmed feedback."
+      },
+      {
+        "title": "Screens & treatment inlets",
+        "image": "09-scene-4",
+        "alt": "Water-treatment inlet channel and screening area",
+        "task": "Compare upstream and downstream level with available flow and screen-operation records.",
+        "placement": "Separate points with compatible datums, representative surfaces and aligned data timing.",
+        "response": "Review level difference and measured flow before assigning cleaning or an authorised screen-control action."
+      }
+    ]
+  },
+  "measurements": {
+    "heading": "A precise quantity.\nA practical operating use.",
+    "intro": "Choose the sensor and reference around the way water is stored, conveyed or supplied.",
+    "rows": [
+      {
+        "point": "Open chamber / channel",
+        "measure": "Radar distance converted to referenced level",
+        "decision": "Is the level rising or approaching an agreed review point?",
+        "selection": "Clear path, datum, surface behaviour and timing"
+      },
+      {
+        "point": "Tank / sump / well",
+        "measure": "Appropriate immersed level arrangement",
+        "decision": "How are filling and drawdown progressing?",
+        "selection": "Liquid, probe span, density / reference where applicable"
+      },
+      {
+        "point": "Pressurised connection",
+        "measure": "Selected process pressure",
+        "decision": "Has the supply or discharge pattern changed?",
+        "selection": "Normal / maximum pressure, medium and connection"
+      },
+      {
+        "point": "Site weather / dry locations",
+        "measure": "Configured rainfall or project-selected water presence",
+        "decision": "What local conditions coincide with the event?",
+        "selection": "Representative exposure and defined sensing coverage"
+      },
+      {
+        "point": "Flow meter / local controls",
+        "measure": "Measured flow, pump run/fault and valve end-position",
+        "decision": "Did water move as intended after the operating event?",
+        "selection": "Meter selection, confirmed I/O or protocol, command and feedback timestamps"
+      },
+      {
+        "point": "High-level protection contact",
+        "measure": "Independent switch or designated protection-system status",
+        "decision": "Has the separate high-level function operated?",
+        "selection": "Separate device and protection design; approved status interface"
+      }
+    ],
+    "boundary": "This scope supports water-asset operations. Equipment vibration and machine-health investigations are covered by Smart Equipment Monitoring."
+  },
+  "platform": {
+    "heading": "See the water condition.\nVerify the response.",
+    "intro": "Combine Hitelecom level, pressure and water-leak readings with configured rainfall, meter and control feedback. Add authorised remote commands through a commissioned Hitelecom IoT Controller where the operating plan requires them.",
+    "assetLabel": "DRAINAGE / CHAMBER-07",
+    "metricLabel": "Level above site datum",
+    "metricValue": "1.65 m",
+    "status": "Review sustained rise",
+    "insight": "Review rise history with neighbouring levels, rainfall and available pump records before assigning the cause.",
+    "steps": [
+      {
+        "title": "Review the event",
+        "body": "Check level, pressure, rainfall, measured flow and current pump or valve feedback."
+      },
+      {
+        "title": "Take the authorised action",
+        "body": "Assign a field inspection or use a commissioned controller command with the site’s local controls and protection."
+      },
+      {
+        "title": "Check the actual result",
+        "body": "Confirm run/fault or end-position feedback and the resulting level or flow; retain the completed action."
+      }
+    ],
+    "mode": "connected",
+    "channels": "Choose 4G / NB-IoT for suitable network coverage or LoRa through a compatible gateway; test reception with covers and enclosures in their normal position.",
+    "boundary": "Local high-level protection and access safety remain independent. Select equipment for the atmosphere and exposure; cloud control is not an emergency or overfill safeguard."
+  },
+  "deployment": {
+    "heading": "Build the plan\naround the water asset.",
+    "steps": [
+      {
+        "title": "Describe the operating conditions",
+        "body": "Share asset geometry, liquids, rise rates, available flow meters, local protection and the required pump or valve actions."
+      },
+      {
+        "title": "Validate sensing and coverage",
+        "body": "Confirm references, representative readings, exposure and the radio path; use supported NFC setup for the selected devices."
+      },
+      {
+        "title": "Test the response route",
+        "body": "Test alarms and stale data; where control is included, verify local/remote priority, feedback, timeouts and the agreed communications-loss state."
+      }
+    ],
+    "acceptance": [
+      "Verified level datum and any derived calculation",
+      "Suitable liquid / pressure / exposure configuration",
+      "Coverage tested in the installed condition",
+      "Tested event routing and, where supplied, command/feedback plus local protection"
+    ]
+  },
+  "products": [
+    {
+      "name": "Radar distance sensors",
+      "role": "Non-contact level at suitable surfaces and observation points.",
+      "url": "https://www.hitelecom.com/product/radar-distance-sensor"
+    },
+    {
+      "name": "Liquid level sensors",
+      "role": "An immersed arrangement selected for the liquid and site.",
+      "url": "https://www.hitelecom.com/product/liquid-level-sensor"
+    },
+    {
+      "name": "Pressure sensors",
+      "role": "Selected supply, discharge and pressurised-pipe measurements.",
+      "url": "https://www.hitelecom.com/product/pressure-sensor"
+    },
+    {
+      "name": "H600 weather stations",
+      "role": "Configured rainfall and relevant site-weather channels.",
+      "url": "https://www.hitelecom.com/product/weather-station"
+    },
+    {
+      "name": "Water-leak sensors",
+      "role": "Detect water at selected dry-floor, drip-tray or equipment-base points.",
+      "url": "https://www.hitelecom.com/product/water-leakage-sensor"
+    },
+    {
+      "name": "HD20 IoT Controller",
+      "role": "Connect compatible feedback inputs and commissioned remote switching commands.",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which sensors are included in Smart Water Monitoring?",
+      "a": "Choose radar or immersed level for the observation point and pressure for the relevant pressurised service. Add Hitelecom water-leak sensing at normally dry locations and configured H600 rainfall where it explains the event. A separate suitable flow meter, pump run/fault signal, valve end-position input or high-level contact adds operating evidence. Water-quality instruments are selected only when quality is part of the objective."
+    },
+    {
+      "q": "Does a rising level prove that a pipe is blocked?",
+      "a": "No. A sustained rise or a suitable upstream/downstream difference can justify a suspected-restriction review. Rainfall, pumping, downstream surcharge and other conditions may produce similar patterns. Compare the available context and confirm the cause through authorised field inspection or another suitable diagnostic method."
+    },
+    {
+      "q": "Can radar measure through a closed metal pipe?",
+      "a": "The described radar arrangement needs a suitable path to the selected surface or target. Typical points are open chambers, channels and tanks. A fully flooded pressurised pipe needs a different arrangement, such as appropriate pressure or flow instrumentation. Confirm the geometry and task before choosing the sensing method."
+    },
+    {
+      "q": "Can level or pressure be converted directly into flow?",
+      "a": "Not universally. Flow requires a suitable meter or a hydraulic relationship whose geometry and assumptions are valid for the site. Keep measured level or pressure separate from derived flow and overflow-volume claims. Validate the complete calculation and identify its reference conditions when it is included in the project."
+    },
+    {
+      "q": "Can Hitelecom remotely operate pumps or valves?",
+      "a": "Yes, as a commissioned control scope using a suitable Hitelecom IoT Controller and compatible plant interfaces. An HD20 output can issue a command through an appropriately rated control circuit; independent inputs should confirm pump run/fault or valve end-position. Define permissions, local/remote priority, response timing and communications-loss behaviour. Retain local overload, dry-running and high-level protection in their designated systems; remote commands do not guarantee overflow prevention."
+    },
+    {
+      "q": "How do underground sites affect the deployment?",
+      "a": "Check radio coverage with the cover closed, mounting access, maximum water exposure and every component’s limits. Select the measurement and reporting intervals for the rate of change that matters. Hazardous-atmosphere and access requirements must be assessed for the actual installation, with the appropriate equipment and procedures."
+    },
+    {
+      "q": "Why add a separate high-level contact if level is already measured?",
+      "a": "A continuous level reading provides the operating trend. Where the site protection design requires an independent high-level switch or alarm, bring its status into the record through an approved interface while keeping its local function independent. Two values on the same cloud screen are not, by themselves, an independent protection architecture."
+    }
+  ],
+  "cta": {
+    "heading": "Plan your water\nmonitoring points.",
+    "body": "Share the assets, operating concerns and data already available. We will help define the sensing arrangements and the event review your team needs.",
+    "placeholder": "Chambers / channels / tanks / pressure points, operating concerns, available rainfall or control records…"
+  },
+  "sources": [
+    {
+      "title": "Hitelecom — radar distance sensor",
+      "url": "https://www.hitelecom.com/product/radar-distance-sensor",
+      "note": "Non-contact target distance and referenced level; configuration and installation requirements."
+    },
+    {
+      "title": "Hitelecom — liquid level sensor",
+      "url": "https://www.hitelecom.com/product/liquid-level-sensor",
+      "note": "Immersed level configuration, liquid compatibility and reference selection."
+    },
+    {
+      "title": "Hitelecom — pressure sensor",
+      "url": "https://www.hitelecom.com/product/pressure-sensor",
+      "note": "Pressure at a suitable process connection; not a direct leak-location or flow measurement."
+    },
+    {
+      "title": "Hitelecom — H600 weather station",
+      "url": "https://www.hitelecom.com/product/weather-station",
+      "note": "Configured site-weather channels, including rainfall; channel schedule and exposure are project-specific."
+    },
+    {
+      "title": "VEGA — sewer network level measurement",
+      "url": "https://www.vega.com/en-br/industries/water-wastewater/wastewater-treatment/sewer-network",
+      "note": "Industry context for observations at selected network points; product performance is vendor-specific."
+    },
+    {
+      "title": "Hitelecom — water-leakage sensor",
+      "url": "https://www.hitelecom.com/product/water-leakage-sensor",
+      "note": "Existing water-leak product family. Select water contact points and coverage; not a universal oil or chemical detector."
+    },
+    {
+      "title": "Hitelecom — HD20-4000 IoT Controller",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000",
+      "note": "Reference 4DO/4DI/4AI configuration. Map command outputs, independent status feedback and compatible analogue inputs; verify the supplied electrical ratings."
+    },
+    {
+      "title": "Hitelecom — IoT cloud platform",
+      "url": "https://www.hitelecom.com/product",
+      "note": "Configured device commands and rule-based operation depend on connected equipment support and the engineered control scope."
+    }
+  ],
+  "architecture": {
+    "heading": "Measure the water.\nConfirm what the equipment did.",
+    "intro": "Choose measurements for storage, conveyance and service conditions, then add the context needed to interpret an exception.",
+    "layers": [
+      {
+        "label": "CORE MEASUREMENTS",
+        "title": "Level & pressure",
+        "items": [
+          {
+            "name": "Radar distance / derived level",
+            "purpose": "Observe a suitable surface without an immersed probe."
+          },
+          {
+            "name": "Immersed liquid level",
+            "purpose": "Use an appropriate probe where the liquid and installation favour immersion."
+          },
+          {
+            "name": "Pressure",
+            "purpose": "Track selected supply, discharge or pressurised-pipe connections."
+          }
+        ],
+        "note": "Hitelecom product families provide these options. Select radar or immersion for the actual point; both are not always required."
+      },
+      {
+        "label": "SUPPORTING MEASUREMENTS",
+        "title": "Local conditions",
+        "items": [
+          {
+            "name": "Rainfall · configured H600",
+            "purpose": "Relate rising water to a local rainfall event."
+          },
+          {
+            "name": "Water-leak sensors",
+            "purpose": "Identify water at equipment bases or other normally dry locations."
+          },
+          {
+            "name": "Independent high-level contact · selected",
+            "purpose": "Bring in the status of a separately designed local high-level function."
+          }
+        ],
+        "note": "Hitelecom rainfall and water-leak options provide local context. Any independent level switch and protection interface must be specified separately."
+      },
+      {
+        "label": "PROJECT INTEGRATION",
+        "title": "Delivery & control",
+        "items": [
+          {
+            "name": "Flow measurement · separate instrument",
+            "purpose": "Check conveyed water using a suitable meter or a site-validated hydraulic calculation."
+          },
+          {
+            "name": "Hitelecom IoT Controller",
+            "purpose": "Issue commissioned pump or valve commands through compatible control circuits."
+          },
+          {
+            "name": "Pump / valve feedback",
+            "purpose": "Verify run/fault and end-position independently of the requested command."
+          }
+        ],
+        "note": "Define the meter, I/O and local protection before enabling control. Temperature or specialist water-quality channels are added where the operating objective requires them."
+      }
+    ],
+    "outcome": "Level and pressure show the change; flow and equipment feedback help verify whether an authorised response achieved the intended result."
+  }
+}

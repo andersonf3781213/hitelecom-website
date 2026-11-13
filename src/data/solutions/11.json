@@ -1,0 +1,396 @@
+{
+  "number": "11",
+  "slug": "greenhouse-climate-monitoring",
+  "title": "Smart Greenhouses",
+  "metaTitle": "Smart Greenhouses: Climate Monitoring & IoT Control | Hitelecom",
+  "description": "Connect canopy climate, root-zone moisture and delivery measurements with supported fan, vent, shade and irrigation commands through Hitelecom IoT controllers.",
+  "hero": {
+    "eyebrow": "11 / SMART GREENHOUSES",
+    "heading": "Smart greenhouses.",
+    "accent": "See the whole growing zone.",
+    "intro": "Connect canopy climate and root-zone conditions with the equipment serving each growing zone. Monitor water delivery, issue supported ventilation or irrigation commands, and verify the response.",
+    "image": "11-hero",
+    "alt": "Commercial greenhouse with planted rows and overhead ventilation equipment",
+    "proof": [
+      {
+        "label": "Canopy",
+        "value": "Air conditions by growing zone"
+      },
+      {
+        "label": "Root zone",
+        "value": "Moisture & selected soil channels"
+      },
+      {
+        "label": "Operation",
+        "value": "Supported control & feedback"
+      }
+    ],
+    "cta": "Plan your greenhouse monitoring"
+  },
+  "problem": {
+    "eyebrow": "THE GROWER’S CLIMATE QUESTION",
+    "heading": "The controller has a setting.\nWhat do the plants experience?",
+    "intro": "Combine the conditions at crop level with root-zone response and the actions taken by the operating team.",
+    "cards": [
+      {
+        "title": "One house has several climates",
+        "body": "Doors, fans, heating pipes and crop density create local differences. A controller reference may not represent every bay or canopy height."
+      },
+      {
+        "title": "Air and roots interact",
+        "body": "Watering changes the root environment and can affect humidity. Review both records when a growing zone repeatedly needs adjustment."
+      },
+      {
+        "title": "A setting can hide an equipment problem",
+        "body": "A fan command, valve command or vent setting does not prove movement or delivery. Actual status and the growing-zone response complete the picture."
+      }
+    ],
+    "takeaway": "Which growing zone needs attention, and should the team review climate operation, irrigation or the measurement position?"
+  },
+  "focus": {
+    "eyebrow": "GROWING CONDITIONS → CONTROL → FEEDBACK",
+    "heading": "Observe the crop zone.\nAct through the right equipment.",
+    "intro": "Pair the growing conditions with supported commands and physical feedback from the relevant irrigation or climate equipment.",
+    "diagram": "greenhouse",
+    "stages": [
+      {
+        "title": "Define the crop zones",
+        "body": "Identify houses, bays, crop heights and irrigation groups. Select points representative of each management question."
+      },
+      {
+        "title": "Connect the operating equipment",
+        "body": "Use a suitable Hitelecom controller for compatible fan, vent, shade or irrigation interfaces, or integrate the existing climate computer."
+      },
+      {
+        "title": "Check what actually changed",
+        "body": "Compare run or position feedback and water delivery with the resulting canopy and root-zone conditions."
+      }
+    ],
+    "note": "Measurements support growing decisions. They do not diagnose crop disease or make an indoor sensor suitable for condensation and spray exposure.",
+    "detailTitle": "Define the hardware and calculations for the crop",
+    "detail": "Specify sensor suitability for condensation, spray and cleaning. Confirm crop-zone placement, CO₂ range and root-medium references. PAR, leaf wetness and nutrient-solution EC/pH need suitable instruments; a soil probe is not automatically a solution probe. Configure supported controller commands with electrical ratings, actuator travel limits, local interlocks, manual override and data-age checks. VPD, dew point and light integrals are derived values requiring agreed inputs and software."
+  },
+  "applications": {
+    "heading": "Different growing systems.\nPurposeful sensing positions.",
+    "intro": "Retain the crop context when comparing zones; a shared dashboard does not mean identical targets for every house.",
+    "cards": [
+      {
+        "title": "High-wire vegetable houses",
+        "image": "11-scene-1",
+        "alt": "Commercial vegetable greenhouse with tall crop rows",
+        "task": "Combine canopy climate and selected CO₂ with supported fan or vent commands and actual run / position feedback.",
+        "placement": "Representative bays at agreed crop heights, with protected root-zone probes and a separate outside reference.",
+        "response": "Review climate distribution and equipment feedback before changing the growing programme."
+      },
+      {
+        "title": "Propagation & nursery zones",
+        "image": "11-scene-2",
+        "alt": "Greenhouse propagation benches with young plants",
+        "task": "Follow air and medium conditions through misting and ventilation; add a leaf-wetness instrument where surface wetness matters.",
+        "placement": "Representative benches away from direct spray; sensing assemblies selected for the humid environment.",
+        "response": "The propagation team checks the zone before adjusting its growing programme."
+      },
+      {
+        "title": "Substrate growing systems",
+        "image": "11-scene-3",
+        "alt": "Greenhouse crop rows in substrate grow bags with drip irrigation",
+        "task": "Compare medium moisture with measured irrigation delivery and separately specified nutrient-solution EC / pH where required.",
+        "placement": "Verified probes in the actual substrate and container arrangement; identified air points above the crop.",
+        "response": "The grower checks delivery and reference samples before changing the fertigation programme."
+      },
+      {
+        "title": "Naturally ventilated houses",
+        "image": "11-scene-4",
+        "alt": "Ventilated agricultural growing house with planted beds",
+        "task": "Relate inside climate to outside wind / rain, with supported vent or shade commands and travel feedback.",
+        "placement": "Comparable interior bays plus a properly exposed external weather point.",
+        "response": "Confirm actuator response and retain locally engineered travel, weather and personnel safeguards."
+      }
+    ]
+  },
+  "measurements": {
+    "heading": "Measure the crop environment.\nKeep control decisions explicit.",
+    "intro": "Select the quantities needed for a particular growing decision and agree where each record is produced.",
+    "rows": [
+      {
+        "point": "Canopy zone",
+        "measure": "Air temperature, RH and selected CO₂",
+        "decision": "Does this bay behave differently through the operating cycle?",
+        "selection": "Range, shielding, condensation tolerance and crop-height placement."
+      },
+      {
+        "point": "Root zone",
+        "measure": "Moisture; selected temperature, EC or pH",
+        "decision": "How did the monitored medium respond to watering?",
+        "selection": "Probe suitability, sensing volume, substrate and reference samples."
+      },
+      {
+        "point": "Outside reference",
+        "measure": "Configured weather channels",
+        "decision": "Could outside conditions explain the house response?",
+        "selection": "Exposure, station channel list and aligned timestamps."
+      },
+      {
+        "point": "Lighting zone",
+        "measure": "Lux; PAR through a separately specified instrument",
+        "decision": "Has light exposure changed, and is the measurement suitable for the crop decision?",
+        "selection": "Illuminance and PAR use different quantities and instruments."
+      },
+      {
+        "point": "Fans / vents / screens / valves",
+        "measure": "Supported command and actual run / position / fault feedback",
+        "decision": "Did the intended equipment action occur?",
+        "selection": "HD20 I/O, HR10 documented equipment interface or existing climate-computer integration."
+      },
+      {
+        "point": "Irrigation supply",
+        "measure": "Pressure, integrated flow and selected tank level",
+        "decision": "Is water available, and did the crop zone receive it?",
+        "selection": "Process connection, meter interface and pump protection arrangement."
+      },
+      {
+        "point": "Wet-canopy / nutrient process",
+        "measure": "Specialist leaf wetness or solution EC / pH",
+        "decision": "Is an additional crop-management check required?",
+        "selection": "Select an instrument for the surface or liquid, with calibration and crop context."
+      }
+    ],
+    "boundary": "Choose greenhouse-suitable assemblies. Crop-light, leaf-wetness and nutrient-solution instruments are separately specified; control permissions and local protection need commissioning."
+  },
+  "platform": {
+    "heading": "A growing-zone record.\nShared by the people operating it.",
+    "intro": "View uploaded growing-zone measurements in Hitelecom Cloud or the agreed platform. Send supported controller commands and review actual equipment feedback alongside the resulting climate or watering record.",
+    "assetLabel": "HOUSE-02 / BAY-04 / CANOPY",
+    "metricLabel": "Canopy temperature / RH",
+    "metricValue": "24.1°C / 74%",
+    "status": "Growing-zone review",
+    "insight": "Compare the command and actual fan / vent status with canopy conditions; check flow and pressure for irrigation tasks.",
+    "steps": [
+      {
+        "title": "Grower",
+        "body": "Interprets the combined growing-zone evidence against the crop programme."
+      },
+      {
+        "title": "Climate / irrigation team",
+        "body": "Uses the commissioned command interface, verifies equipment feedback and investigates any mismatch."
+      },
+      {
+        "title": "Monitoring owner",
+        "body": "Maintains sensors, references and mappings as crop height or the house layout changes."
+      }
+    ],
+    "mode": "connected",
+    "channels": "Use the supplied 4G or NB-IoT configuration, or a compatible LoRa gateway route; agree platform access and notification recipients for each growing area.",
+    "boundary": "Use the existing climate computer or local equipment controls for their assigned protective and sequencing functions. Commission any remote or condition-based task, including loss-of-data behaviour."
+  },
+  "deployment": {
+    "heading": "Validate the installation\nthrough a growing cycle.",
+    "steps": [
+      {
+        "title": "Define the growing questions",
+        "body": "Share crops, houses, climate equipment, irrigation groups, substrate and the differences the team needs to investigate."
+      },
+      {
+        "title": "Select & verify the assemblies",
+        "body": "Verify greenhouse exposure and probe references. Match controller interfaces, command permissions, actuator travel limits and actual feedback."
+      },
+      {
+        "title": "Observe a representative cycle",
+        "body": "Observe day/night and watering response. Test selected commands, feedback, manual override and agreed network or power-loss behaviour."
+      }
+    ],
+    "acceptance": [
+      "Each point is associated with the correct house, bay, crop height or root zone.",
+      "Supplied probes and enclosures suit the expected moisture, temperature and cleaning exposure.",
+      "Reference checks, timestamps and agreed data paths are demonstrated.",
+      "The grower reviews an operating cycle; each enabled command, feedback and local safeguard has a documented acceptance test."
+    ]
+  },
+  "products": [
+    {
+      "name": "HD20 IoT controller",
+      "role": "Compatible fan, valve, vent or shade command circuits and digital feedback.",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000"
+    },
+    {
+      "name": "Temperature, humidity & custom sensors",
+      "role": "Select a suitable sensing assembly for the greenhouse exposure.",
+      "url": "https://www.hitelecom.com/product/temperature-humidity-sensor"
+    },
+    {
+      "name": "Air quality & CO₂ configurations",
+      "role": "Confirm the CO₂ channel, range and installation environment for the project.",
+      "url": "https://www.hitelecom.com/product/air-quality-sensor"
+    },
+    {
+      "name": "Wireless soil sensors",
+      "role": "Selected root-zone channels, verified in the actual growing medium.",
+      "url": "https://www.hitelecom.com/product/soil-moisture-sensor"
+    },
+    {
+      "name": "H600 weather station",
+      "role": "Outside weather measurements chosen to explain house conditions.",
+      "url": "https://www.hitelecom.com/product/weather-station"
+    },
+    {
+      "name": "HR10 communication controller",
+      "role": "Read equipment data and issue supported commands through documented interfaces.",
+      "url": "https://www.hitelecom.com/product/iot-controller-hr10"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which sensors belong in a Smart Greenhouse solution?",
+      "a": "Start with canopy temperature and humidity, suitable root-zone moisture points and the measurements needed to verify irrigation delivery. Add selected CO₂, outside weather or tank level for the operating programme. Hitelecom controllers can connect compatible climate or irrigation equipment. PAR, leaf wetness and nutrient-solution instruments are selected separately when the crop task needs them."
+    },
+    {
+      "q": "Can the standard indoor sensor be installed anywhere in a greenhouse?",
+      "a": "No. Confirm the sensing assembly for expected condensation, direct spray, cleaning chemicals and temperature before selection. Shield and position the sensor to represent the intended air zone. Published indoor reference products provide a starting point for configuration, not blanket approval for all greenhouse exposures."
+    },
+    {
+      "q": "Can lux measurements be used as a crop-light recipe?",
+      "a": "Lux records visible illuminance for human vision. Crop-light tasks such as photon flux or daily light integral need an appropriate PAR instrument and defined calculations. Use the selected light channel only for the quantity it measures; agree specialist sensing separately when the crop programme requires it."
+    },
+    {
+      "q": "Do temperature and humidity records diagnose disease?",
+      "a": "No. They describe conditions that the grower can review with crop inspection and the agronomic programme. Leaf wetness, disease models or VPD calculations need suitable additional inputs and validation. A high-humidity period is a reason to investigate the crop environment, not a diagnosis."
+    },
+    {
+      "q": "Can Hitelecom operate fans, vents, screens and irrigation equipment?",
+      "a": "A suitable Hitelecom IoT controller can issue supported commands through compatible equipment interfaces. HD20 provides reference digital I/O and analogue inputs; HR10 communicates with equipment through documented interfaces rather than providing universal relay switching. Specify output ratings, actuator power, travel limits, feedback, permissions and manual override. Existing climate computers and equipment controls retain their assigned sequencing and protective functions."
+    },
+    {
+      "q": "Which extra sensors are useful for a more demanding growing programme?",
+      "a": "Flow and pressure help verify irrigation; tank level shows the available supply. A suitable PAR instrument answers crop-light questions, a leaf-wetness instrument records surface wetness, and purpose-built solution EC/pH probes support nutrient-process checks. Add these through a suitable third-party interface or a separately agreed custom configuration. Define the quantity, range, environmental protection and calibration for the task."
+    },
+    {
+      "q": "Does a fan or valve command confirm the equipment is working?",
+      "a": "No. Use an appropriate run, position or fault input where available. Flow and pressure add evidence for watering tasks; canopy and root-zone trends show the local response over time. Commission the expected feedback and what the operator should do when a command and its result disagree."
+    },
+    {
+      "q": "How does Smart Greenhouses differ from Smart Irrigation?",
+      "a": "This solution follows the enclosed growing environment: canopy climate, selected CO₂, root-zone conditions and climate-equipment context. Smart Irrigation focuses on field blocks, soil response and water delivery. Both use identified measurement points, but their placement, targets and operating decisions differ."
+    }
+  ],
+  "cta": {
+    "heading": "Bring your growing zones\ninto the same conversation.",
+    "body": "Share the crop, growing zones and climate or watering equipment. We will help map the sensors, supported controls and feedback needed for each task.",
+    "placeholder": "Crop, houses / bays, medium, fan / vent / shade / valve interfaces, flow and tank conditions, required controls and specialist measurements…"
+  },
+  "sources": [
+    {
+      "title": "Hitelecom temperature, humidity & custom sensors",
+      "url": "https://www.hitelecom.com/product/temperature-humidity-sensor",
+      "note": "Indoor THL reference; greenhouse exposure and custom assembly require confirmation."
+    },
+    {
+      "title": "Hitelecom air quality & CO₂ configurations",
+      "url": "https://www.hitelecom.com/product/air-quality-sensor",
+      "note": "Current core channels and optional configuration; confirm application environment."
+    },
+    {
+      "title": "Hitelecom wireless soil sensors",
+      "url": "https://www.hitelecom.com/product/soil-moisture-sensor",
+      "note": "Selected channels and medium-specific verification."
+    },
+    {
+      "title": "Hitelecom H600 weather station",
+      "url": "https://www.hitelecom.com/product/weather-station",
+      "note": "Configured outside weather channels and installation planning."
+    },
+    {
+      "title": "UMass Amherst: Reducing Humidity in the Greenhouse",
+      "url": "https://www.umass.edu/agriculture-food-environment/greenhouse-floriculture/fact-sheets/reducing-humidity-in-greenhouse",
+      "note": "Temperature, humidity, condensation and greenhouse operating context."
+    },
+    {
+      "title": "Hitelecom HD20-4000 IoT controller",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000",
+      "note": "Compatible command circuits and actual digital feedback, with electrical and local-protection limits specified per task."
+    },
+    {
+      "title": "Hitelecom HR10 communication controller",
+      "url": "https://www.hitelecom.com/product/iot-controller-hr10",
+      "note": "Documented equipment interfaces and supported commands; not a default relay switching unit."
+    },
+    {
+      "title": "UMass Amherst: Weather stations for ornamental growers",
+      "url": "https://www.umass.edu/agriculture-food-environment/landscape/fact-sheets/what-is-weather-station-can-it-benefit-ornamental-growers",
+      "note": "Rainfall and leaf-wetness measurements answer different growing questions."
+    },
+    {
+      "title": "Penn State: A water quality toolkit for greenhouse and nursery production",
+      "url": "https://extension.psu.edu/a-water-quality-toolkit-for-greenhouse-and-nursery-production",
+      "note": "Water and nutrient-process EC/pH require suitable measurements and reference testing."
+    },
+    {
+      "title": "Michigan State University: Tips for using light sensors",
+      "url": "https://www.canr.msu.edu/uploads/resources/pdfs/tipsforusinglightsensors.pdf",
+      "note": "Crop-height placement and distinct instantaneous / integrated crop-light measurements."
+    }
+  ],
+  "architecture": {
+    "heading": "Climate and roots.\nEquipment and feedback.",
+    "intro": "Connect the growing conditions with the equipment that can change them, using commands and feedback defined for each zone.",
+    "layers": [
+      {
+        "label": "CORE MEASUREMENTS",
+        "title": "What the crop experiences",
+        "items": [
+          {
+            "name": "Canopy temperature & humidity",
+            "purpose": "Track conditions at representative crop heights and bays."
+          },
+          {
+            "name": "CO₂ · selected configuration",
+            "purpose": "Review concentration alongside ventilation and the growing programme."
+          },
+          {
+            "name": "Root-zone moisture",
+            "purpose": "Follow wetting and drying in verified soil or growing media."
+          }
+        ],
+        "note": "Select assemblies for condensation, spray and cleaning exposure; verify probe suitability in the actual medium."
+      },
+      {
+        "label": "SUPPORTING MEASUREMENTS",
+        "title": "Supply, weather & crop context",
+        "items": [
+          {
+            "name": "Pressure, flow & tank level",
+            "purpose": "Check irrigation delivery and available water."
+          },
+          {
+            "name": "Outside weather & selected soil channels",
+            "purpose": "Relate local climate and soil EC / pH to the operating record."
+          },
+          {
+            "name": "PAR / leaf wetness / solution EC-pH",
+            "purpose": "Add purpose-built instruments when the growing task requires them."
+          }
+        ],
+        "note": "Specialist instruments and flow meters are separately selected. Lux is not PAR; soil and solution probes are not interchangeable."
+      },
+      {
+        "label": "CONTROL & INTEGRATION",
+        "title": "Operate and verify",
+        "items": [
+          {
+            "name": "Hitelecom IoT controllers",
+            "purpose": "Issue supported fan, vent, shade or irrigation commands through compatible interfaces."
+          },
+          {
+            "name": "Run, position & fault inputs",
+            "purpose": "Confirm the actual state of connected equipment."
+          },
+          {
+            "name": "Existing climate computer",
+            "purpose": "Align events and retain its assigned control and protection functions."
+          }
+        ],
+        "note": "Match I/O and actuator requirements. Commission limits, manual override, local protection and network / power-loss behaviour."
+      }
+    ],
+    "outcome": "The grower can connect a changed crop environment to the equipment action, its physical feedback and the next recorded decision."
+  }
+}

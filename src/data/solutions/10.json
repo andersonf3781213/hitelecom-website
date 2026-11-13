@@ -1,0 +1,359 @@
+{
+  "number": "10",
+  "slug": "outdoor-asset-tracking",
+  "title": "Smart Asset Tracking",
+  "metaTitle": "Smart Asset Tracking | Location & Equipment Context | Hitelecom",
+  "description": "Locate outdoor assets, review configured movement and separately selected door or tamper events, and link equipment condition and service records to collection and redeployment.",
+  "hero": {
+    "eyebrow": "10 / SMART ASSET TRACKING",
+    "heading": "Smart Asset\nTracking.",
+    "accent": "Locate. Assess. Redeploy.",
+    "intro": "Find the last reported site. Check unexpected movement, selected access events and service information before collecting or redeploying the unit. Keep every observation tied to the asset and its time.",
+    "image": "10-hero",
+    "alt": "Illustrative mobile generator and towing equipment in an outdoor yard",
+    "proof": [
+      {
+        "label": "Location",
+        "value": "Find the correct unit"
+      },
+      {
+        "label": "Condition",
+        "value": "Check what matters"
+      },
+      {
+        "label": "Next action",
+        "value": "Collect or redeploy"
+      }
+    ],
+    "cta": "Plan your asset monitoring"
+  },
+  "problem": {
+    "eyebrow": "FOR FLEET, RENTAL & EQUIPMENT TEAMS",
+    "heading": "The asset is found.\nIs it ready for the next job?",
+    "intro": "Location starts the decision. Add the event or condition that tells dispatch, the custodian or maintenance what to check next.",
+    "cards": [
+      {
+        "title": "Equipment is spread across sites",
+        "body": "A generator, trailer or reusable carrier can stay at a customer location after the job ends. Connect the reported site to the return plan and responsible contact."
+      },
+      {
+        "title": "Available does not mean service-ready",
+        "body": "A map cannot show whether powered equipment needs attention or sensitive contents experienced unsuitable conditions. Add the measurement that informs the actual redeployment decision."
+      },
+      {
+        "title": "An unexpected move or opening",
+        "body": "A transfer outside the agreed plan or an opened equipment case needs follow-up. Specify movement, door or tamper events around the asset, then verify them with the responsible site."
+      }
+    ],
+    "takeaway": "Combine the reported location with the evidence your team needs to release the asset for its next task."
+  },
+  "focus": {
+    "eyebrow": "LOCATION + CONDITION + SERVICE CONTEXT",
+    "heading": "Make the next move\nan informed one.",
+    "intro": "Use the asset identity to connect different records, while preserving when and where each observation was made.",
+    "diagram": "tracking",
+    "stages": [
+      {
+        "title": "Locate & check age",
+        "body": "Read the latest available position with its observation time, receipt time and available validity information."
+      },
+      {
+        "title": "Review relevant condition",
+        "body": "Add selected machine or case-environment records where they affect the next use. Compare readings under suitable operating conditions."
+      },
+      {
+        "title": "Check service & custody",
+        "body": "Compare configured movement and any separately supplied opening events with the rental, service and site-handover records."
+      },
+      {
+        "title": "Assign the next action",
+        "body": "Confirm collection, inspection or redeployment with the team that owns the decision."
+      }
+    ],
+    "note": "A location report cannot establish equipment serviceability. Additional sensor records and the required inspection inform that separate decision.",
+    "detailTitle": "Keep each observation in its proper context",
+    "detail": "A parked asset may report position less often than one in transfer. Vibration measurements on powered equipment need a defined mounting point and comparable speed or load; transport movement is a different measurement task. A case logger measures its local air, not every stored item. Link records through the asset ID, keep observation timestamps and identify stale or missing data before presenting an operational status."
+  },
+  "applications": {
+    "heading": "One asset record.\nDifferent operating decisions.",
+    "intro": "Start with what the team needs to locate, collect or return to service. Add supporting measurements around that decision.",
+    "cards": [
+      {
+        "title": "Mobile generators & pumps",
+        "image": "10-scene-1",
+        "alt": "Illustrative towable mobile generator in an outdoor equipment yard",
+        "task": "Link location with independent vibration, temperature or run-hour data when powered equipment needs a service review.",
+        "placement": "Tracker on a suitable frame; separate condition sensors at approved machine points and run status from a documented interface.",
+        "response": "Service staff compare operating trends, inspect as required and confirm readiness for the next assignment."
+      },
+      {
+        "title": "Rental plant & portable machinery",
+        "image": "10-scene-2",
+        "alt": "Illustrative rental yard with excavators and portable light towers",
+        "task": "Review reported sites alongside compatible operating-hour and maintenance records.",
+        "placement": "Protected tracker mounting; existing machine data integrated only through supported, agreed interfaces.",
+        "response": "The rental coordinator checks collection dates and service status before assigning another contract."
+      },
+      {
+        "title": "Containers & reusable carriers",
+        "image": "10-scene-3",
+        "alt": "Illustrative container depot with a freight trailer",
+        "task": "Locate the carrier; add a door contact for custody checks or local environmental recording for sensitive contents.",
+        "placement": "Validate tracker reception, door-contact mounting and each separate recorder’s sensing position and data path.",
+        "response": "The pool manager confirms return and opening history; the goods owner reviews any relevant exposure record."
+      },
+      {
+        "title": "Equipment shared across depots",
+        "image": "10-scene-4",
+        "alt": "Illustrative overview of an outdoor logistics campus",
+        "task": "Check report age, configured movement and separately specified tamper events against the planned depot transfer.",
+        "placement": "Controlled device-to-asset identification and a validated mounting position on each unit.",
+        "response": "Dispatch checks any unexpected transfer or device removal with the custodian before arranging collection."
+      }
+    ]
+  },
+  "measurements": {
+    "heading": "Each field should support\nan asset decision.",
+    "intro": "Select the record around collection, condition review or service planning—not the number of available channels.",
+    "rows": [
+      {
+        "point": "Outdoor asset / carrier",
+        "measure": "Position, positioning method and observation time",
+        "decision": "Which site should the collection team contact?",
+        "selection": "Specified positioning, antenna exposure, network support and update profile."
+      },
+      {
+        "point": "Configured site boundary",
+        "measure": "Movement or geofence event with supporting history",
+        "decision": "Does a transfer need confirmation?",
+        "selection": "Event logic, reporting gaps, site geometry and named recipient."
+      },
+      {
+        "point": "Container door / device mount",
+        "measure": "Separately supplied door, light or tamper input",
+        "decision": "Does an opening or possible device removal need a custody check?",
+        "selection": "Sensor type, fixing, permitted access periods, compatible input and event notification path."
+      },
+      {
+        "point": "Powered equipment",
+        "measure": "Separate machine vibration / temperature at defined operating states",
+        "decision": "Does maintenance need to inspect before redeployment?",
+        "selection": "Sensor placement, measured quantity and comparable speed / load; machine run-time from a suitable independent input."
+      },
+      {
+        "point": "Sensitive case / carrier",
+        "measure": "Separate local temperature and humidity history",
+        "decision": "Does the stored equipment or cargo need exposure review?",
+        "selection": "Sensing position, recording duration and planned retrieval."
+      },
+      {
+        "point": "Asset service record",
+        "measure": "Supplied tracker power status, machine operating hours and maintenance records",
+        "decision": "What must be serviced or verified before the next job?",
+        "selection": "Confirm each payload field; tracker battery is not machine battery condition, and movement time is not engine run-time."
+      }
+    ],
+    "boundary": "Tracking and condition review support operational decisions. Required equipment inspections, machine protection and personnel safety remain with the appropriate systems and procedures."
+  },
+  "platform": {
+    "heading": "Hitelecom Cloud.\nAn asset record with context.",
+    "intro": "Scope location, selected condition views and service references around the asset ID. Integrate the agreed fields with your existing fleet or maintenance system where required.",
+    "assetLabel": "Trailer TR-042 / Customer yard B",
+    "metricLabel": "Last reported location",
+    "metricValue": "Yard B · east zone",
+    "status": "Confirm collection with site",
+    "insight": "Check position age alongside the service and condition records needed for collection. The site contact confirms physical availability.",
+    "steps": [
+      {
+        "title": "Dispatch",
+        "body": "Check the reported site and data age; review configured transfer events before assigning collection."
+      },
+      {
+        "title": "Maintenance",
+        "body": "Review selected condition history with service records and complete the required inspection."
+      },
+      {
+        "title": "Site or pool manager",
+        "body": "Check any reported opening or tamper event, confirm custody and access, then record the handover."
+      }
+    ],
+    "mode": "tracking",
+    "channels": "H300 4G or H500 NB-IoT supports the selected location-reporting route. Additional sensors retain their specified data paths.",
+    "boundary": "Combined views require agreed fields and interfaces. A tracker does not provide automatic immobilisation, personnel rescue or equipment protection."
+  },
+  "deployment": {
+    "heading": "Validate the complete\nasset workflow.",
+    "steps": [
+      {
+        "title": "Select the decisions",
+        "body": "List asset types, collection needs and condition or service evidence required before the next assignment."
+      },
+      {
+        "title": "Test representative assets",
+        "body": "Test reception and data age on representative assets. Verify each additional door / tamper input, machine sensor and running-state record."
+      },
+      {
+        "title": "Connect the responsible teams",
+        "body": "Agree asset identity, system fields, service rules and recipients. Run a collection or redeployment trial from end to end."
+      }
+    ],
+    "acceptance": [
+      "Every device and data record belongs to the correct asset.",
+      "Representative sites, loads and route stages are tested.",
+      "Location and condition observations retain their own timestamps.",
+      "A trial exception reaches dispatch, maintenance or the named site contact."
+    ]
+  },
+  "products": [
+    {
+      "name": "H300 / H500 asset tracker",
+      "role": "Selected outdoor positioning and cellular reporting for collection and deployment.",
+      "url": "https://www.hitelecom.com/product/asset-tracking-sensor"
+    },
+    {
+      "name": "Machine vibration sensor",
+      "role": "A separate machine-mounted measurement for suitably scoped powered-equipment applications.",
+      "url": "https://www.hitelecom.com/product/vibration-sensor"
+    },
+    {
+      "name": "H100 temperature & humidity logger",
+      "role": "Optional local environment history for selected equipment cases and reusable carriers.",
+      "url": "https://www.hitelecom.com/product/temperature-humidity-data-logger"
+    },
+    {
+      "name": "Hitelecom Cloud & integration",
+      "role": "Agreed location, condition and service fields organised around the asset identity.",
+      "url": "https://www.hitelecom.com/product"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which sensors are useful beyond the asset tracker?",
+      "a": "Choose the addition around a decision. Separate machine vibration or temperature can focus maintenance checks. Door or tamper sensing can prompt a custody check. Local temperature and humidity recording can document a sensitive case environment. Actual run-time may come from an approved machine interface. These additions need confirmed hardware and data paths; they are not built-in channels in every tracker."
+    },
+    {
+      "q": "Is the displayed position the asset’s current location?",
+      "a": "It is the latest position available to the platform. Show its observation time and receipt time because they can differ. Compare the age with the expected reporting schedule. If the position is stale or uncertain, confirm the asset with the responsible site before dispatching a collection."
+    },
+    {
+      "q": "How do we choose H300 4G or H500 NB-IoT?",
+      "a": "Choose around actual sites and routes, the required update profile and operator support. Confirm bands, SIM service and any roaming requirement. Test mounting and reception on representative assets. Additional sensor data may use a different connection or local retrieval workflow; it is not automatically carried by the tracker."
+    },
+    {
+      "q": "Can one vibration sensor measure machine condition and transport impacts?",
+      "a": "Not by assumption. The published machine sensor measures vibration velocity RMS within its specified frequency band. Transport shock recording needs suitable event capture, range and mounting. Define the quantity and operating context first, then select the instrument that supplies the evidence required for that task."
+    },
+    {
+      "q": "Are door, tamper and shock functions included in H300 / H500?",
+      "a": "Do not assume this from the tracker name. Confirm the supplied hardware, inputs, event logic and platform fields. Door contacts, removal detection and shock recording may need separate devices or a project-specific design. Specify what constitutes an event, who receives it and how it is checked. An opening or light change does not by itself prove theft."
+    },
+    {
+      "q": "Can motion or tracker battery data tell us machine operating hours?",
+      "a": "Movement is not the same as engine or pump operation. Use a documented run-status, machine telemetry or another validated input for operating hours. Tracker power status describes the tracker; equipment battery voltage or state of charge needs its own suitable measurement or BMS interface. Keep these fields separate so maintenance is scheduled from the correct evidence."
+    },
+    {
+      "q": "Does a location or condition alert prove theft or unsafe equipment?",
+      "a": "No. An event identifies something for the responsible team to check. Confirm site transfers and authorised openings, inspect the equipment and review supporting records under the agreed procedure. No remote immobilisation, machine protection or personnel safety function is implied by this tracking page."
+    },
+    {
+      "q": "How does this differ from the Smart Logistics solution?",
+      "a": "Asset tracking focuses on reusable equipment and carriers: location, custody, maintenance and the next deployment. Smart Logistics focuses on what a particular shipment experienced and its receiving decision. They can share IDs and selected observations while keeping equipment readiness and cargo acceptance as separate workflows."
+    },
+    {
+      "q": "Can all records appear in our existing asset platform?",
+      "a": "A combined view can be scoped around supported interfaces. Agree asset IDs, units, observation and receipt timestamps, available health fields and access controls. Local logger exports need a separate retrieval and import process. Test delayed, missing and duplicate records before relying on a combined operational status."
+    }
+  ],
+  "cta": {
+    "heading": "Find the asset.\nPrepare its next job.",
+    "body": "Share the assets, sites and decisions your team needs to make. We will help define tracking, useful supporting measurements and the required system connections.",
+    "placeholder": "Asset types, sites or routes, collection needs, movement / door / tamper events, machine condition or run-hours, update frequency and existing asset system…"
+  },
+  "sources": [
+    {
+      "title": "Hitelecom H300 / H500 asset tracking",
+      "url": "https://www.hitelecom.com/product/asset-tracking-sensor",
+      "note": "Current cellular models; positioning, events, local setup, mounting and integration are configuration-specific."
+    },
+    {
+      "title": "Hitelecom machine vibration sensor",
+      "url": "https://www.hitelecom.com/product/vibration-sensor",
+      "note": "Separate vibration velocity RMS measurement for defined machine points; no transport-impact capability inferred."
+    },
+    {
+      "title": "Hitelecom H100 data logger",
+      "url": "https://www.hitelecom.com/product/temperature-humidity-data-logger",
+      "note": "Optional local environmental history, retrieved by USB rather than relayed automatically through an asset tracker."
+    },
+    {
+      "title": "GPS.gov — GPS accuracy",
+      "url": "https://archive.gps.gov/systems/gps/performance/accuracy/",
+      "note": "Primary background on signal obstruction and reflected signals; no product-specific precision inferred."
+    },
+    {
+      "title": "GS1 EPCIS / CBV implementation guideline",
+      "url": "https://ref.gs1.org/guidelines/epcis-cbv/",
+      "note": "Reference for keeping object identity, business context and sensor observation times distinct; no conformance claim."
+    }
+  ],
+  "architecture": {
+    "heading": "Location leads.\nCondition adds context.",
+    "intro": "Build an asset-specific monitoring package. Tracking remains the core; additional sensors are selected only when they change maintenance, storage or deployment decisions.",
+    "layers": [
+      {
+        "label": "CORE MEASUREMENTS",
+        "title": "Locate the asset",
+        "items": [
+          {
+            "name": "Specified GPS / BeiDou position",
+            "purpose": "Identify the last reported outdoor site or holding area."
+          },
+          {
+            "name": "Position time & specified movement events",
+            "purpose": "Identify stale reports and check transfers against the agreed site boundary."
+          }
+        ],
+        "note": "H300 4G or H500 NB-IoT provides the selected reporting route; positioning and event functions are configuration-dependent."
+      },
+      {
+        "label": "SUPPORTING MEASUREMENTS",
+        "title": "Check the asset context",
+        "items": [
+          {
+            "name": "Machine vibration / temperature",
+            "purpose": "Use separate sensors at approved points to focus service checks on powered equipment."
+          },
+          {
+            "name": "Separate temperature / humidity recorder",
+            "purpose": "Review conditions in sensitive equipment cases or reusable cargo carriers."
+          },
+          {
+            "name": "Supplied tracker health fields",
+            "purpose": "Review power and reporting status to plan tracker service; distinguish it from the machine’s condition."
+          }
+        ],
+        "note": "Additional measurements use separately selected devices or supplied status fields. They are not standard sensing channels inside every tracker."
+      },
+      {
+        "label": "PROJECT INTEGRATION",
+        "title": "Plan the next job",
+        "items": [
+          {
+            "name": "Door / tamper sensing · separately specified",
+            "purpose": "Check unusual access or possible tracker removal with the responsible custodian."
+          },
+          {
+            "name": "Machine run-time & equipment telemetry",
+            "purpose": "Schedule maintenance using actual running evidence from a compatible interface."
+          },
+          {
+            "name": "Rental, service & handover records",
+            "purpose": "Confirm custody, access, service completion and the next assigned job."
+          }
+        ],
+        "note": "Confirm additional hardware and supported inputs in the supplied design. Door / tamper sensing and machine hours are not default H300 / H500 channels."
+      }
+    ],
+    "outcome": "Dispatch can find the unit; maintenance can assess relevant evidence; the site contact confirms the handover."
+  }
+}

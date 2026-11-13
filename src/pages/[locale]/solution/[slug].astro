@@ -1,0 +1,14 @@
+---
+import {locales} from '../../../i18n/config';
+import {solutions} from '../../../data/solution-catalog';
+import SeriesFrame from '../../../components/series/SeriesFrame.astro';
+import SeriesPage from '../../../components/series/SeriesPage.astro';
+// 01 仓储页由静态路由 /{locale}/solution/warehouse-monitoring.astro（V152 七语整页组件）提供，不在此动态路由重复生成。
+export function getStaticPaths(){
+  return locales.filter(l=>l.code!=='en').flatMap(locale=>
+    solutions.map((solution,index)=>({params:{locale:locale.prefix.slice(1),slug:solution.slug},props:{solution,next:solutions[index+1]}}))
+  );
+}
+const {solution,next}=Astro.props;
+---
+<SeriesFrame solution={solution}><SeriesPage solution={solution} next={next}/></SeriesFrame>

@@ -1,0 +1,389 @@
+{
+  "number": "03",
+  "slug": "equipment-water-monitoring",
+  "title": "Smart Equipment Monitoring",
+  "metaTitle": "Smart Equipment Monitoring: Vibration, Leaks & Control | Hitelecom",
+  "description": "Combine vibration, temperature, pressure and water-leak monitoring with flow, electrical feedback and commissioned control for pumps and utility equipment.",
+  "hero": {
+    "eyebrow": "03 / SMART EQUIPMENT MONITORING",
+    "heading": "Smart equipment\nmonitoring.",
+    "accent": "Machine health. Leaks. Verified action.",
+    "intro": "Watch machine condition and the water around it. Combine vibration, temperature, pressure and leak sensing with operating feedback to focus maintenance and support authorised remote actions.",
+    "image": "03-hero",
+    "alt": "Industrial pump and electric motor in a water equipment installation",
+    "proof": [
+      {
+        "label": "At the mechanical point",
+        "value": "Vibration & temperature"
+      },
+      {
+        "label": "At seals, trays and floors",
+        "value": "Leaks & liquid level"
+      },
+      {
+        "label": "With connected meters and controls",
+        "value": "Flow, load & feedback"
+      }
+    ],
+    "cta": "Discuss your equipment"
+  },
+  "problem": {
+    "eyebrow": "THE MAINTENANCE TEAM’S PRIORITIES",
+    "heading": "A running pump can still\nleave a service at risk.",
+    "intro": "Check the machine, the delivered service and the surrounding area—not just whether the motor is running.",
+    "cards": [
+      {
+        "title": "Mechanical changes between rounds",
+        "body": "A new vibration or housing-temperature pattern can justify a closer look. Use repeatable mounting points so a changed installation is not mistaken for a changed machine."
+      },
+      {
+        "title": "Running does not mean delivering",
+        "body": "A run signal alone does not prove useful flow. Compare pressure, measured flow and electrical load before investigating supply loss, a valve position or a changed duty."
+      },
+      {
+        "title": "Leaks outside the process",
+        "body": "Water can collect below pump seals, cooling lines or condensate trays while vibration remains normal. Place leak sensing where escaping water is likely to reach, then assign a named response."
+      }
+    ],
+    "takeaway": "Know which machine changed, whether it still delivers the required service, and where water needs attention."
+  },
+  "focus": {
+    "eyebrow": "MACHINE + SERVICE + SURROUNDINGS",
+    "heading": "Measure the condition.\nVerify the outcome.",
+    "intro": "Link each observation to a maintenance decision, and every remote command to independent feedback.",
+    "diagram": "equipment",
+    "stages": [
+      {
+        "title": "Map the consequential risks",
+        "body": "Identify critical machines, water escape paths, supply limits and the service affected by an interruption."
+      },
+      {
+        "title": "Measure at the right point",
+        "body": "Use rigid machine mounts, suitable process connections and leak probes at defined dry locations."
+      },
+      {
+        "title": "Compare delivered service",
+        "body": "Bring in flow, run/fault, current or power records from compatible meters, drives and controls."
+      },
+      {
+        "title": "Act and check the result",
+        "body": "Inspect the cause or issue a commissioned controller command, then confirm equipment state and service recovery."
+      }
+    ],
+    "note": "Overall condition trends guide investigation. Specific fault diagnosis and equipment protection require their own suitable methods.",
+    "detailTitle": "Why distinguish a command, a run signal and useful flow?",
+    "detail": "An output command records what was requested. A separate run/fault input or drive status reports equipment state, while a suitable flow meter shows the water delivered. Current alone does not measure real electrical power or prove hydraulic performance. Use approved interfaces and aligned timestamps to compare these records. For a remote action, define permissions, local/remote selection, start permissives, timeout handling and loss-of-communications behaviour. Existing machine protection and emergency stops remain local and effective."
+  },
+  "applications": {
+    "heading": "Equipment in service.\nThe context to maintain it.",
+    "intro": "Focus the sensor set on the machine, its process connections and the service the team needs to sustain.",
+    "cards": [
+      {
+        "title": "Building booster pump sets",
+        "image": "03-scene-1",
+        "alt": "Building water booster installation with pumps and distribution pipework",
+        "task": "Track vibration, temperature and discharge pressure; add water-leak points beneath seals and connections.",
+        "placement": "Rigid motor points, approved process ports and normally dry floor or drip-tray locations.",
+        "response": "Investigate the affected unit and leak location; verify run/fault and measured delivery before returning it to service."
+      },
+      {
+        "title": "Industrial circulation pumps",
+        "image": "03-scene-2",
+        "alt": "Industrial pump and motor serving a process-water circulation loop",
+        "task": "Compare vibration and temperature with pressure, measured flow and drive current or power.",
+        "placement": "Repeatable bearing points, process ports and compatible meter or drive interfaces.",
+        "response": "Distinguish a changed load from reduced delivery; confirm the cause before maintenance or an authorised operating change."
+      },
+      {
+        "title": "Cooling-water & HVAC utilities",
+        "image": "03-scene-3",
+        "alt": "Cooling-water plant room with accessible pump and pipe installations",
+        "task": "Watch cooling-water leaks, condensate overflow, reserve level and the condition of circulation pumps.",
+        "placement": "Tray outlets, equipment bases and selected pipe routes; use separate level and temperature points.",
+        "response": "Locate the wet area, check drainage and supplies, and verify any commissioned isolation or pump command through feedback."
+      },
+      {
+        "title": "Wastewater lift-station equipment",
+        "image": "03-scene-4",
+        "alt": "Water treatment pump equipment in an industrial service area",
+        "task": "Combine accessible pump vibration, wet-well level, run/fault status and an independent high-level contact where required.",
+        "placement": "Suitable machine and level points; approved contacts from the station control or protection system.",
+        "response": "Check duty/standby operation and local protection; investigate failed starts or rising water under the station procedure."
+      }
+    ]
+  },
+  "measurements": {
+    "heading": "A condition signal.\nThe context to interpret it.",
+    "intro": "Keep the mechanical point and its operating state identifiable in every record.",
+    "rows": [
+      {
+        "point": "Motor / pump bearing area",
+        "measure": "Configured vibration velocity RMS",
+        "decision": "Has the comparable machine trend changed?",
+        "selection": "Rigid mounting, sensing axis and relevant frequency range"
+      },
+      {
+        "point": "Equipment or process point",
+        "measure": "Selected surface or immersed temperature",
+        "decision": "Where is thermal behaviour departing from the baseline?",
+        "selection": "Correct probe, contact method and operating range"
+      },
+      {
+        "point": "Process connections",
+        "measure": "Suction, discharge or utility pressure",
+        "decision": "Has the operating pressure pattern changed?",
+        "selection": "Range, pressure reference, medium and connection"
+      },
+      {
+        "point": "Seals, trays & dry floors",
+        "measure": "Water at the selected leak-sensing point",
+        "decision": "Where should the team investigate escaping water?",
+        "selection": "Wet-test coverage, drainage routes, cleaning and nuisance exposure"
+      },
+      {
+        "point": "Reserve / collection vessel",
+        "measure": "Liquid level from the appropriate arrangement",
+        "decision": "Could supply or collection conditions explain the behaviour?",
+        "selection": "Datum, liquid suitability and rate of change"
+      },
+      {
+        "point": "Meters, drive & controller",
+        "measure": "Flow, current / power, run/fault and end-position feedback",
+        "decision": "Was the service delivered and the command completed?",
+        "selection": "Compatible instrument, defined I/O, time alignment and command timeout"
+      }
+    ],
+    "boundary": "A water-leak probe detects water at its sensing point. Oil, fuel and chemical leakage need separately selected, compatible detection; neither a dry point nor a normal vibration trend proves the whole installation is leak-free."
+  },
+  "platform": {
+    "heading": "From an exception\nto a checked response.",
+    "intro": "View machine trends, water-leak events and connected operating feedback in Hitelecom Cloud. Where commissioned, use a Hitelecom IoT Controller for authorised equipment or valve commands.",
+    "assetLabel": "PUMP-02 / MOTOR / DRIVE-END",
+    "metricLabel": "Vibration velocity RMS",
+    "metricValue": "3.2 mm/s",
+    "status": "Compare with equivalent duty",
+    "insight": "Check comparable duty, the leak location and measured service. For a remote command, confirm independent run or end-position feedback.",
+    "steps": [
+      {
+        "title": "Find the affected point",
+        "body": "Identify the machine or wet zone, event time and data freshness before assigning the investigation."
+      },
+      {
+        "title": "Respond through the agreed route",
+        "body": "Dispatch maintenance or issue an authorised command through the commissioned HD20 or compatible control interface."
+      },
+      {
+        "title": "Verify service recovery",
+        "body": "Check run/fault or valve feedback, pressure and measured flow; retain the finding and action against the asset."
+      }
+    ],
+    "mode": "connected",
+    "channels": "Configure 4G / NB-IoT reporting or a compatible LoRa gateway route, with project-specific platform and notification settings.",
+    "boundary": "Remote control uses a separately commissioned electrical interface and local protection. A cloud command acknowledgement is not proof that a motor ran or a valve moved."
+  },
+  "deployment": {
+    "heading": "Start with critical duty.\nBuild a repeatable record.",
+    "steps": [
+      {
+        "title": "Define the equipment set",
+        "body": "Share critical duty, leak paths, fluids, process limits and available meters, drive data or local controls."
+      },
+      {
+        "title": "Install and establish baselines",
+        "body": "Confirm probe mounting, process compatibility, model-supported NFC setup, communications and representative normal-state readings."
+      },
+      {
+        "title": "Prove the review workflow",
+        "body": "Wet-test leak points; verify event routing and, where supplied, command permissions, independent feedback and local/remote behaviour."
+      }
+    ],
+    "acceptance": [
+      "Documented points, sensing directions and probe mounting",
+      "Verified operating states and normal-state reference",
+      "Pressure / temperature connections suitable for the process",
+      "Wet-tested leak coverage; verified commands, feedback and local protection where control is included"
+    ]
+  },
+  "products": [
+    {
+      "name": "High-frequency vibration sensors",
+      "role": "Machine-mounted probe with wireless reporting of configured vibration readings.",
+      "url": "https://www.hitelecom.com/product/vibration-sensor"
+    },
+    {
+      "name": "Pressure sensors",
+      "role": "Process pressure at selected liquid or gas connections.",
+      "url": "https://www.hitelecom.com/product/pressure-sensor"
+    },
+    {
+      "name": "Temperature sensors",
+      "role": "Specified surface or process-temperature points.",
+      "url": "https://www.hitelecom.com/product/temperature-sensor"
+    },
+    {
+      "name": "Liquid level sensors",
+      "role": "Reserve, replenishment or collection context where required.",
+      "url": "https://www.hitelecom.com/product/liquid-level-sensor"
+    },
+    {
+      "name": "Water-leak sensors",
+      "role": "Detect water at selected dry-floor, drip-tray or equipment-base points.",
+      "url": "https://www.hitelecom.com/product/water-leakage-sensor"
+    },
+    {
+      "name": "HD20 IoT Controller",
+      "role": "Connect compatible feedback inputs and commissioned remote switching commands.",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which sensors are needed for Smart Equipment Monitoring?",
+      "a": "For pumps and motors, start with vibration, temperature and pressure. Add water-leak sensors at consequential dry locations, liquid level where supply or collection matters, and flow or electrical feedback where delivered service must be checked. The equipment risk and maintenance decision determine the combination; every sensor is not required on every machine."
+    },
+    {
+      "q": "Where should water-leak sensors be installed, and can they detect oil?",
+      "a": "Place water-leak probes where escaped water is likely to reach: below pump seals or flanges, in normally dry drip trays, around cooling-water equipment and beside condensate routes. Test the actual water path and account for washdown or routine drainage. Water-contact detection does not identify the leak source or automatically detect oil, fuel or chemicals; those liquids need a separately selected sensing method and compatibility assessment."
+    },
+    {
+      "q": "Can a vibration value identify a specific fault?",
+      "a": "An overall RMS trend shows a change to investigate. It does not uniquely distinguish imbalance, misalignment, looseness or other causes. Check comparable speed and load, mounting condition and related process measurements. Specialist diagnosis may need additional acquisition, spectra or other evidence beyond the supplied overall trend."
+    },
+    {
+      "q": "Where should the vibration probe be installed?",
+      "a": "Use an approved rigid point near the relevant bearing and document its sensing direction. Avoid flexible covers and unverified adapters. For the external-probe arrangement, secure the cable and locate the wireless terminal where access, exposure limits and radio coverage are appropriate for the supplied assembly."
+    },
+    {
+      "q": "Can current, flow and PLC status appear with the sensor data?",
+      "a": "Yes, through selected instruments and a defined interface. An HD20 IoT Controller can collect compatible status and analogue signals; supported serial equipment may use an appropriately configured HR10 interface. Confirm signal type, electrical limits, channel count, protocol, units and timestamps. A controller input does not replace the flow meter or current/power transducer that produces the measurement."
+    },
+    {
+      "q": "Can Hitelecom remotely switch equipment or valves?",
+      "a": "A commissioned HD20 or compatible controller interface can support authorised commands to a pump starter, valve control or other suitable equipment. Select an interposing relay, contactor or actuator interface where the load requires it; do not assume a controller output can directly power a motor. Define local/remote selection, permissives, protection, command timeouts and independent run or end-position feedback. Remote monitoring and control do not replace the machine protection system."
+    },
+    {
+      "q": "How should alarms and reporting intervals be set?",
+      "a": "Base them on the machine type, expected duty and time available to respond. Define acquisition separately from wireless reporting, and agree persistence and escalation with maintenance staff. Avoid one threshold or interval for every pump; verify the chosen configuration during representative operating conditions."
+    },
+    {
+      "q": "Why add flow and electrical measurements to vibration?",
+      "a": "They help establish whether a running machine is delivering its intended service at a comparable duty. A suitable flow meter measures delivery; drive or current data adds load context; a power meter is needed when real electrical power or energy is the question. Compare these with pressure and temperature before assigning a fault. A single changed value does not uniquely diagnose dry running, blockage or leakage."
+    }
+  ],
+  "cta": {
+    "heading": "Build your equipment\nmonitoring plan.",
+    "body": "Share the machines, their duty and the operating data you already have. We will help define practical sensing points and a review workflow for your team.",
+    "placeholder": "Equipment types, operating duty, vibration / temperature / pressure concerns, available PLC or meter data…"
+  },
+  "sources": [
+    {
+      "title": "Hitelecom — high-frequency vibration sensor",
+      "url": "https://www.hitelecom.com/product/vibration-sensor",
+      "note": "Current external-probe arrangement, RMS metric, 10–5,000 Hz bandwidth and configuration scope."
+    },
+    {
+      "title": "Hitelecom — pressure sensor",
+      "url": "https://www.hitelecom.com/product/pressure-sensor",
+      "note": "Process interfaces, range selection and pressure reporting."
+    },
+    {
+      "title": "Hitelecom — temperature sensor",
+      "url": "https://www.hitelecom.com/product/temperature-sensor",
+      "note": "Distinction between surface, air and immersion temperature."
+    },
+    {
+      "title": "ifm — vibration installation guidelines",
+      "url": "https://www.ifm.com/us/en/us/learn-more/vibration/vvb3/vvb3-io-link-vibration-sensor-installation-guidelines",
+      "note": "Industry context: rigid bearing-area mounting, sensing direction and installation effects; not Hitelecom-specific accessories."
+    },
+    {
+      "title": "Hitelecom — water-leakage sensor",
+      "url": "https://www.hitelecom.com/product/water-leakage-sensor",
+      "note": "Existing water-leak product family. Select water contact points and coverage; not a universal oil or chemical detector."
+    },
+    {
+      "title": "Hitelecom — HD20-4000 IoT Controller",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000",
+      "note": "Reference 4DO/4DI/4AI configuration. Map command outputs, independent status feedback and compatible analogue inputs; verify the supplied electrical ratings."
+    },
+    {
+      "title": "Hitelecom — HR10 IoT Controller",
+      "url": "https://www.hitelecom.com/product/iot-controller-hr10",
+      "note": "Configured data and command interface to compatible equipment; not a default motor-power relay."
+    },
+    {
+      "title": "ifm — smart pump monitoring",
+      "url": "https://www.ifm.com/us/en/shared/successstories/usecases/moneo/condition-monitoring-pump",
+      "note": "Industry example of matching flow with speed, pump pressure and vibration; no transfer of ifm diagnostic features to Hitelecom."
+    },
+    {
+      "title": "ifm — hydraulic unit monitoring",
+      "url": "https://www.ifm.com/sg/en/shared/landingpages/mining/solutions/hydraulic-units",
+      "note": "Pressure, flow and temperature as process context; oil condition requires oil-specific instruments."
+    }
+  ],
+  "architecture": {
+    "heading": "The machine. The service.\nThe space around it.",
+    "intro": "Start with mechanical and process condition, then close the gaps in leakage detection, delivered service and authorised response.",
+    "layers": [
+      {
+        "label": "CORE MEASUREMENTS",
+        "title": "At the equipment",
+        "items": [
+          {
+            "name": "Vibration",
+            "purpose": "Trend configured machine vibration at repeatable rigid points."
+          },
+          {
+            "name": "Temperature",
+            "purpose": "Track selected bearing-housing, motor-surface or process-temperature points."
+          },
+          {
+            "name": "Pressure",
+            "purpose": "Observe suction, discharge or utility pressure at approved process connections."
+          }
+        ],
+        "note": "Use the appropriate Hitelecom vibration, temperature and pressure configurations; specify each point and operating range."
+      },
+      {
+        "label": "SUPPORTING MEASUREMENTS",
+        "title": "Leaks & delivery",
+        "items": [
+          {
+            "name": "Water-leak sensors",
+            "purpose": "Locate water below seals, in trays and around cooling-water or condensate equipment."
+          },
+          {
+            "name": "Liquid level",
+            "purpose": "Check reserve or collection conditions that affect pump operation."
+          },
+          {
+            "name": "Flow & electrical measurements · selected",
+            "purpose": "Use separate meters or drive data to compare delivery, load and energy where required."
+          }
+        ],
+        "note": "Hitelecom water-leak and level families cover suitable points. Flow, current and power require compatible instruments or existing data; oil and chemicals need dedicated detection."
+      },
+      {
+        "label": "PROJECT INTEGRATION",
+        "title": "Control & confirmation",
+        "items": [
+          {
+            "name": "Hitelecom IoT Controller",
+            "purpose": "Connect compatible signals and commissioned commands to suitable pump or valve controls."
+          },
+          {
+            "name": "Run/fault & valve feedback",
+            "purpose": "Confirm equipment state independently of the command sent."
+          },
+          {
+            "name": "Maintenance records",
+            "purpose": "Keep the leak location, inspection, action and service recovery with the asset."
+          }
+        ],
+        "note": "Specify I/O, output/load interfaces, local/remote authority and protection. Use feedback to verify operation; command delivery alone is insufficient."
+      }
+    ],
+    "outcome": "A useful response identifies the changed point, checks the operating consequence and records whether the service recovered."
+  }
+}

@@ -1,0 +1,22 @@
+---
+import SiteHeader from '../solutions/SiteHeader.astro';
+import SiteFooter from '../solutions/SiteFooter.astro';
+import '../../styles/scope-v2.css';
+import images from '../../data/series-images.json';
+const { solution:s }=Astro.props;
+const canonical=`https://www.hitelecom.com/solution/${s.slug}`;
+const ogImage='https://www.hitelecom.com'+images[s.hero.image].variants.filter(v=>v.format==='webp').at(-1).url;
+const graph={'@context':'https://schema.org','@graph':[
+ {'@type':'WebPage','@id':canonical+'#webpage',url:canonical,name:s.metaTitle,description:s.description,inLanguage:'en',publisher:{'@id':'https://www.hitelecom.com/#organization'},breadcrumb:{'@id':canonical+'#breadcrumb'}},
+ {'@type':'BreadcrumbList','@id':canonical+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://www.hitelecom.com/'},{'@type':'ListItem',position:2,name:'Solutions',item:'https://www.hitelecom.com/solution'},{'@type':'ListItem',position:3,name:s.title,item:canonical}]},
+ {'@type':'Organization','@id':'https://www.hitelecom.com/#organization',name:'Hitelecom',url:'https://www.hitelecom.com/'},
+ {'@type':'FAQPage','@id':canonical+'#faq',mainEntity:s.faq.map(item=>({'@type':'Question',name:item.q,acceptedAnswer:{'@type':'Answer',text:item.a}}))}
+]};
+---
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#092339"/>
+<title>{s.metaTitle}</title><meta name="description" content={s.description}/><meta name="robots" content="index, follow, max-image-preview:large"/>
+<link rel="canonical" href={canonical}/><meta property="og:type" content="website"/><meta property="og:site_name" content="Hitelecom"/><meta property="og:title" content={s.metaTitle}/><meta property="og:description" content={s.description}/><meta property="og:url" content={canonical}/><meta property="og:image" content={ogImage}/><meta property="og:image:alt" content={s.hero.alt}/>
+<meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={s.metaTitle}/><meta name="twitter:description" content={s.description}/><meta name="twitter:image" content={ogImage}/>
+<script type="application/ld+json" set:html={JSON.stringify(graph).replace(/</g,'\\u003c')}/>
+</head><body><a class="v2-skip" href="#main">Skip to content</a><SiteHeader/><slot/><SiteFooter/></body></html>

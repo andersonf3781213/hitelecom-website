@@ -1,0 +1,11 @@
+---
+import {diagrams} from '../../data/series-diagrams';
+const {type}=Astro.props;
+const diagram=diagrams[type];
+if(!diagram) throw new Error('Unknown diagram: '+type);
+---
+<figure class="series-diagram">
+ <div class="diagram-top"><span>MEASUREMENT IN CONTEXT</span><span>CONCEPT DIAGRAM</span></div>
+ <svg viewBox="0 0 680 365" role="img" aria-labelledby="diagram-title diagram-description"><title id="diagram-title">{diagram.title}</title><desc id="diagram-description">{diagram.description}</desc><g set:html={diagram.markup}/></svg>
+ <figcaption>{diagram.title}</figcaption>
+</figure>

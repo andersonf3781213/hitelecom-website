@@ -1,0 +1,387 @@
+{
+  "number": "04",
+  "slug": "buildings-indoor-monitoring",
+  "title": "Smart Buildings",
+  "metaTitle": "Smart Buildings: Air, Water & Connected Operations | Hitelecom",
+  "description": "Connect room air, climate, water leaks and equipment feedback. Add selected metering and permitted control for practical building operations.",
+  "hero": {
+    "eyebrow": "04 / SMART BUILDINGS",
+    "heading": "Smart buildings.\nKnow each space.",
+    "accent": "Act on the right condition.",
+    "intro": "Bring room air, water leaks and equipment feedback into a location-based operating view. Add selected energy records and permitted control so facilities teams can investigate, respond and verify the result.",
+    "image": "04-hero",
+    "alt": "Modern occupied building interior with daylight and ceiling ventilation",
+    "proof": [
+      {
+        "label": "Occupied rooms",
+        "value": "Air & comfort"
+      },
+      {
+        "label": "Vulnerable spaces",
+        "value": "Water & moisture"
+      },
+      {
+        "label": "Connected services",
+        "value": "Status & verified action"
+      }
+    ],
+    "cta": "Discuss your building"
+  },
+  "problem": {
+    "eyebrow": "THE FACILITIES TEAM’S PRIORITIES",
+    "heading": "Air complaints. Water leaks.\nEvents that need a response.",
+    "intro": "A building contains different rooms, activities and services. Link each issue to the measurements and operating record that can help explain it.",
+    "cards": [
+      {
+        "title": "Recurring room complaints",
+        "body": "Stuffy meetings, uneven temperatures and changing use need room-level evidence. Compare air conditions with the ventilation and occupancy schedule before changing the whole floor."
+      },
+      {
+        "title": "Moisture in the wrong place",
+        "body": "Humid interiors, condensate and plumbing leaks require different observations. Pair environmental readings with water-contact points where vulnerable equipment or contents justify them."
+      },
+      {
+        "title": "Conditions without a clear next step",
+        "body": "A room reading or water event needs the correct location, report time and responsible team. Compare it with equipment feedback and maintenance records to decide what to check next."
+      }
+    ],
+    "takeaway": "Identify the affected room, select the relevant measurements and give the responsible team a specific investigation task."
+  },
+  "focus": {
+    "eyebrow": "ROOM → SERVICES → RESPONSIBLE TEAM",
+    "heading": "Give every zone\na useful monitoring plan.",
+    "intro": "Measure conditions where people or vulnerable assets are affected. Add service context only when it helps determine the next action.",
+    "diagram": "building",
+    "stages": [
+      {
+        "title": "Define the zone",
+        "body": "Map room use, ventilation, water services and vulnerable equipment. Separate spaces that behave differently."
+      },
+      {
+        "title": "Choose complementary points",
+        "body": "Match room air, water contacts and selected gas points to the zone. Use light and motion readings where they help explain room-use patterns."
+      },
+      {
+        "title": "Connect status and permitted control",
+        "body": "Read approved equipment and meter signals. Use a commissioned IoT Controller interface for permitted lighting, ventilation or water-service commands."
+      },
+      {
+        "title": "Review the intervention",
+        "body": "Confirm equipment feedback and compare conditions after the action. Record rejected commands, recurring faults and completed work."
+      }
+    ],
+    "note": "Dedicated fire and gas protection remain responsible for their alarm and emergency functions. Operational commands use approved equipment interfaces with local priority.",
+    "detailTitle": "How to make room comparisons meaningful",
+    "detail": "Use representative air positions and avoid direct breath, supply jets and heat sources. Distinguish ambient pressure from differential pressure. PIR indicates detected motion, not headcount. Treat water-contact points as a separate coverage layout. Compare readings with known room use and equipment schedules; verify interface timestamps before combining systems. A high CO₂ value may justify a ventilation review, while a water event requires a different callout. Keep these response rules distinct."
+  },
+  "applications": {
+    "heading": "A different plan\nfor each occupied space.",
+    "intro": "Prioritise rooms with recurring concerns, varied use or vulnerable services. Expand the measurement set around the actual operating problem.",
+    "cards": [
+      {
+        "title": "Offices & meeting rooms",
+        "image": "04-scene-1",
+        "alt": "Contemporary office meeting room with a meeting table and ventilation",
+        "task": "Compare CO₂, temperature and humidity; add light / motion context and approved lighting or ventilation control.",
+        "placement": "Representative room air and an unobstructed light or motion position.",
+        "response": "Facilities checks the command against equipment feedback and room conditions, then reviews energy records where available."
+      },
+      {
+        "title": "Classrooms & training rooms",
+        "image": "04-scene-2",
+        "alt": "Daylit classroom with desks and operable windows",
+        "task": "Follow CO₂, temperature and humidity through lessons and breaks; add light or detected-motion context where useful.",
+        "placement": "One plan per room and ventilation arrangement; optional particle measurement where outdoor entry matters.",
+        "response": "Facilities reviews room conditions against the teaching schedule and checks the result of ventilation changes."
+      },
+      {
+        "title": "Hotels & refurbished interiors",
+        "image": "04-scene-3",
+        "alt": "Modern hotel guest room with new furnishings and daylight",
+        "task": "Review room climate, selected TVOC / HCHO and water contacts near bathroom or condensate services.",
+        "placement": "Room air and separately selected plumbing or condensate paths.",
+        "response": "Property staff investigate sources, service leaks or recurring humidity; specialist testing follows when required."
+      },
+      {
+        "title": "Retail & public interiors",
+        "image": "04-scene-4",
+        "alt": "Shopping centre interior with seating and daylight",
+        "task": "Compare air and climate by zone, with plant-room water detection, meter inputs and selected CO points where the site assessment requires them.",
+        "placement": "Distinct occupied zones and surveyed water paths, each with an assigned location ID.",
+        "response": "Facilities prioritises ventilation, filtration, lighting reviews or maintenance by the affected zone."
+      }
+    ]
+  },
+  "measurements": {
+    "heading": "From a measurement\nto a facilities decision.",
+    "intro": "Specify each channel and its purpose. The monitoring plan connects room conditions, vulnerable services and relevant building records.",
+    "rows": [
+      {
+        "point": "Occupied room",
+        "measure": "CO₂ + temperature + relative humidity",
+        "decision": "Review ventilation and thermal patterns during known room use.",
+        "selection": "Representative air position and repeatable comparison period."
+      },
+      {
+        "point": "Refurbished / activity zone",
+        "measure": "Optional PM, TVOC or dedicated HCHO",
+        "decision": "Investigate a selected air-quality concern.",
+        "selection": "Target substances or particle outputs; configuration and calibration basis."
+      },
+      {
+        "point": "Plumbing / cooling service",
+        "measure": "H Series water-contact detection",
+        "decision": "Dispatch maintenance to the named leak point.",
+        "selection": "Liquid, water path, detector coverage and a controlled wet / recovery test."
+      },
+      {
+        "point": "Room-use context",
+        "measure": "Optional illuminance / PIR",
+        "decision": "Compare light and detected activity with operating schedules.",
+        "selection": "Sensing direction and coverage; PIR is not headcount."
+      },
+      {
+        "point": "Monitoring continuity",
+        "measure": "Last received report + expected reporting interval",
+        "decision": "Check that the room or water reading is current before acting.",
+        "selection": "Defined reporting profile, point identity and follow-up when reports are overdue."
+      },
+      {
+        "point": "Parking / combustion-service area",
+        "measure": "Selected gas-specific CO channel",
+        "decision": "Investigate the specified gas condition with the responsible team.",
+        "selection": "Separate gas assessment, detector approval and response duty; not a CO₂ or TVOC substitute."
+      },
+      {
+        "point": "Plant / lighting / service access",
+        "measure": "Meter data, door contacts and equipment run / fault feedback",
+        "decision": "Compare consumption and service states; verify a permitted control action.",
+        "selection": "External instruments and switches; HD20 I/O allocation or HR-10 instrument interface by configuration."
+      }
+    ],
+    "boundary": "Ambient atmospheric pressure is not room-to-room differential pressure. Specify a separate measurement if pressure relationships are the requirement."
+  },
+  "platform": {
+    "heading": "The room, the services\nand the next action.",
+    "intro": "4G sensors send their measured data directly to Hitelecom Cloud or the agreed receiving platform. Add selected meter records and a defined HD20 or HR-10 equipment interface where the operating task requires them.",
+    "assetLabel": "BUILDING A / LEVEL 02 / MEETING 04",
+    "metricLabel": "Reported CO₂",
+    "metricValue": "1,120 ppm",
+    "status": "Review occupied-period pattern",
+    "insight": "Review the room schedule and ventilation record. Water-contact events use a separate location and response rule.",
+    "steps": [
+      {
+        "title": "Locate the affected zone",
+        "body": "Review the relevant air, climate or water event with its timestamp and device status."
+      },
+      {
+        "title": "Respond through the right system",
+        "body": "Assign the callout or send a permitted operational command through the configured equipment interface."
+      },
+      {
+        "title": "Verify state, then outcome",
+        "body": "Check actual run / stop or position feedback independently of the command. Review the affected room and record completed work."
+      }
+    ],
+    "mode": "connected",
+    "channels": "4G sensors report directly to the receiving platform. Select NB-IoT or a compatible LoRa gateway path only for the corresponding supplied configuration.",
+    "boundary": "A command acknowledgement is not proof of equipment operation. Commission permissions, local override, loss-of-communication behaviour and independent equipment feedback."
+  },
+  "deployment": {
+    "heading": "Start with a representative zone.\nMake the comparison repeatable.",
+    "steps": [
+      {
+        "title": "Survey rooms and services",
+        "body": "Map room issues, water paths, gas-specific needs, meters and permitted control interfaces."
+      },
+      {
+        "title": "Commission each measurement",
+        "body": "Verify sensor readings, wet / recovery events, device identities, equipment feedback and command handling."
+      },
+      {
+        "title": "Agree the facilities workflow",
+        "body": "Set separate review and notification rules for air, climate, water and missing data; assign the responsible teams."
+      }
+    ],
+    "acceptance": [
+      "Room and service-zone IDs match the site plan.",
+      "Ordered sensor channels, water-detection coverage and configured equipment points are confirmed.",
+      "Sensor reports and agreed external inputs retain their timestamps.",
+      "Assigned staff can receive, investigate and close a test event.",
+      "Permitted commands, actual feedback, local priority and communication-loss behaviour are tested."
+    ]
+  },
+  "products": [
+    {
+      "name": "Indoor air quality sensors",
+      "role": "Core room measurements with optional pollutant, light and motion channels.",
+      "url": "https://www.hitelecom.com/product/air-quality-sensor"
+    },
+    {
+      "name": "Temperature, humidity & light sensor",
+      "role": "Focused room-climate and illuminance measurements.",
+      "url": "https://www.hitelecom.com/product/temperature-humidity-sensor"
+    },
+    {
+      "name": "Wireless water leak sensors",
+      "role": "H300-WL002A 4G, with H200 LoRa and H500 NB-IoT family options; confirm the sensing assembly.",
+      "url": "https://www.hitelecom.com/product/water-leakage-sensor"
+    },
+    {
+      "name": "HD20 IoT Controller",
+      "role": "Connect compatible status inputs and permitted equipment command circuits.",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000"
+    },
+    {
+      "name": "HR-10 Controller & DTU",
+      "role": "Bring compatible serial instruments or 4–20 mA transmitter data online.",
+      "url": "https://www.hitelecom.com/product/iot-controller-hr10"
+    },
+    {
+      "name": "Custom gas sensors",
+      "role": "Select a CO-specific or other gas channel where the site assessment requires it.",
+      "url": "https://www.hitelecom.com/product/custom-gas-sensor"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What does a Smart Buildings monitoring plan include?",
+      "a": "Start with the building’s actual risks and operating tasks: air and climate in occupied rooms, water contacts near vulnerable services, and selected equipment or meter feedback. Add CO or another specific gas only where the site assessment calls for it. Each zone needs a useful set, not every sensor."
+    },
+    {
+      "q": "Does a CO₂ reading show whether a room is safe?",
+      "a": "CO₂ can support a ventilation review in suitable occupied spaces, but it does not describe every pollutant or establish safe air. Interpret its pattern with room use and ventilation. For a specific chemical or process concern, select the appropriate measurement and assessment method with the responsible specialist."
+    },
+    {
+      "q": "Can the same device provide every measurement?",
+      "a": "No. The ordered air-quality configuration provides its selected room channels. H Series water-leak devices monitor separate sensing locations. Metering, door states and permitted control actions use separately selected instruments and controller interfaces. Give every point a clear purpose and source."
+    },
+    {
+      "q": "Does PIR measure occupancy or provide personnel protection?",
+      "a": "PIR records detected motion within its coverage. It is not a reliable headcount or a personnel-protection function. Use it as activity context where suitable. People counting, access control, fire detection and emergency systems require their own appropriate equipment and responsibilities."
+    },
+    {
+      "q": "Can this connect to our BMS and control the HVAC?",
+      "a": "Yes, through a defined and commissioned interface. HD20 offers a 4DO + 4DI + 4AI reference configuration for compatible commands, state feedback and measurements; HR-10 provides selected serial or current-loop connections. Allocate the actual points, electrical interfaces and protocols. Check local priority, permissions and returned equipment state; do not directly switch a load beyond the supplied output rating."
+    },
+    {
+      "q": "How do water events and air-quality notifications differ?",
+      "a": "They answer different questions and need different response rules. A water-contact event should identify the sensing position and the duty team’s callout procedure. An air or climate trend normally needs context before an intervention. Commission both workflows, including what staff should do when reports are missing."
+    },
+    {
+      "q": "Does air-quality monitoring replace fire detection?",
+      "a": "No. CO₂, particles, TVOC and room-temperature measurements are not a dedicated fire-detection system. This solution uses sensor data reporting, including direct 4G transmission; fire-alarm panel integration is not included. Fire detection, local warning and emergency response remain separate building provisions."
+    },
+    {
+      "q": "Which extra points are useful in parking and service areas?",
+      "a": "Select CO or other gas channels from the actual vehicle, fuel or process exposure. Add water contacts near vulnerable plumbing, compatible door switches for service access, and meters for circuits the operator needs to review. Gas detector duties, metering accuracy and switch interfaces require specific selection; none is implied by an indoor air sensor alone."
+    }
+  ],
+  "cta": {
+    "heading": "Plan the monitoring\naround your building.",
+    "body": "Share the layout, recurring issues and systems already in use. We will help define the measurements, interfaces and facilities response.",
+    "placeholder": "Building type, rooms, air or moisture concerns, water services, existing BMS and preferred platform…"
+  },
+  "sources": [
+    {
+      "title": "Hitelecom indoor air quality sensors",
+      "url": "https://www.hitelecom.com/product/air-quality-sensor",
+      "note": "Four-channel core with separately selected pollutant, light and motion options."
+    },
+    {
+      "title": "Hitelecom temperature, humidity and light sensor",
+      "url": "https://www.hitelecom.com/product/temperature-humidity-sensor",
+      "note": "Indoor environmental measurements and connectivity selected by model."
+    },
+    {
+      "title": "HSE: using CO₂ monitors",
+      "url": "https://www.hse.gov.uk/ventilation/using-co2-monitors.htm",
+      "note": "Representative placement and ventilation interpretation, rather than a blanket safety assessment."
+    },
+    {
+      "title": "US EPA moisture control guidance",
+      "url": "https://www.epa.gov/indoor-air-quality-iaq/moisture-control-guidance-building-design-construction-and-maintenance-0",
+      "note": "Moisture sources, building services and maintenance verification context."
+    },
+    {
+      "title": "Hitelecom H Series water leak sensor",
+      "url": "https://www.hitelecom.com/product/water-leakage-sensor",
+      "note": "Live official product: H300-WL002A 4G and H200 / H500 family options. Replaces the older custom-only description."
+    },
+    {
+      "title": "Hitelecom HD20-4000 IoT Controller",
+      "url": "https://www.hitelecom.com/product/iot-controller-hd20-4000",
+      "note": "4DO + 4DI + 4AI reference; permitted local, remote and condition-based control with independent feedback."
+    },
+    {
+      "title": "Hitelecom HR-10 Controller & DTU",
+      "url": "https://www.hitelecom.com/product/iot-controller-hr10",
+      "note": "Selected RS485, TTL and 4–20 mA acquisition; compatibility and permitted commands are project-specific."
+    },
+    {
+      "title": "Hitelecom custom gas sensors",
+      "url": "https://www.hitelecom.com/product/custom-gas-sensor",
+      "note": "CO-specific and other gas channels selected by duty, approval, range and installation."
+    }
+  ],
+  "architecture": {
+    "heading": "The building,\nseen through connected measurements.",
+    "intro": "Cover occupied rooms, vulnerable water services and equipment conditions. Add feedback and permitted control where it gives the facilities team a useful next action.",
+    "layers": [
+      {
+        "label": "CORE MEASUREMENTS",
+        "title": "Air & room conditions",
+        "items": [
+          {
+            "name": "CO₂",
+            "purpose": "Review ventilation patterns during known room use."
+          },
+          {
+            "name": "Temperature & humidity",
+            "purpose": "Locate recurring thermal differences and moisture-condition changes."
+          }
+        ],
+        "note": "H310-AQ041 includes CO₂, temperature, humidity and ambient atmospheric pressure. Indoor THL devices provide focused climate and light measurements."
+      },
+      {
+        "label": "SUPPORTING MEASUREMENTS",
+        "title": "The issue-specific layer",
+        "items": [
+          {
+            "name": "Water-leak points",
+            "purpose": "Detect water on selected plumbing, condensate and service-room paths."
+          },
+          {
+            "name": "Optional PM / TVOC / HCHO",
+            "purpose": "Add the pollutant channel required by the room investigation."
+          },
+          {
+            "name": "Light / motion / selected CO",
+            "purpose": "Use light and motion for room context; select separate CO sensing for assessed combustion or vehicle areas."
+          }
+        ],
+        "note": "Use H Series water-leak devices and selected environmental or gas configurations. CO, CO₂ and TVOC are different measurements."
+      },
+      {
+        "label": "PROJECT INTEGRATION",
+        "title": "Equipment context & permitted action",
+        "items": [
+          {
+            "name": "Room schedules / maintenance records",
+            "purpose": "Compare the reported condition with room use and completed work at the same location."
+          },
+          {
+            "name": "Meters / doors / equipment state",
+            "purpose": "Read selected consumption, service-access and run / fault signals."
+          },
+          {
+            "name": "Hitelecom IoT Controller",
+            "purpose": "Issue permitted operational commands and check independent equipment feedback."
+          }
+        ],
+        "note": "HD20 / HR-10 interfaces, external meters and switches are selected for the project. Confirm the supplied signals, local priority and equipment feedback."
+      }
+    ],
+    "outcome": "Locate the issue, reach the responsible team and verify the equipment or maintenance result against the same zone record."
+  }
+}
