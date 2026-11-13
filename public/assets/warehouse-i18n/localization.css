@@ -1,0 +1,36 @@
+/* Only wrapping and accessibility adjustments; the live page's visual system is retained. */
+html{scroll-padding-top:100px}
+body{margin:0}
+.warehouse-ops :is(h1,h2,h3,h4,p,a,summary,span,strong,dd,dt){overflow-wrap:anywhere;hyphens:auto}
+.warehouse-ops :is(.ops-hero-copy,.ops-heading>*,.ops-product-copy,.ops-risk-intro>*,.ops-cloud-heading>*){min-width:0}
+.warehouse-ops .ops-scenes figure{height:auto;min-height:345px;display:flex;flex-direction:column;justify-content:flex-end;padding:120px 29px 27px}
+.warehouse-ops .ops-scenes figcaption{position:static}
+.warehouse-ops .ops-cloud-demo-top{flex-wrap:wrap}
+.warehouse-ops .ops-cloud-demo-badge,.warehouse-ops .ops-cloud-review-status{white-space:normal}
+.warehouse-ops .ops-outcomes>a{padding-right:40px}
+.warehouse-ops .ops-outcomes strong{line-height:1.5}
+.warehouse-ops .ops-spec-strip strong{overflow-wrap:normal}
+footer a{overflow-wrap:anywhere;hyphens:auto}
+html:lang(zh),html:lang(ja){word-break:normal}
+html:lang(zh) .warehouse-ops,html:lang(ja) .warehouse-ops{line-break:strict}
+html:lang(ja) body{font-family:Poppins,'Noto Sans JP','Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif}
+.mobile-menu-foot a[data-locale][aria-current=page]{color:white;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1100px){
+ .warehouse-ops .ops-hero h1{font-size:clamp(38px,4.4vw,52px)}
+ .warehouse-ops .ops-scenes figure{min-height:320px}
+}
+@media(max-width:800px){
+ .warehouse-ops .ops-scenes figure{min-height:300px;padding:100px 23px 24px}
+ .warehouse-ops .ops-cloud-panel-heading{flex-wrap:wrap;gap:6px}
+ .warehouse-ops .ops-spec-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:600px){
+ .warehouse-ops .ops-hero h1{font-size:clamp(34px,8.5vw,43px)}
+ .warehouse-ops .ops-outcomes>a,.warehouse-ops .ops-outcomes>a+a{padding-right:0;gap:14px}
+ .warehouse-ops .ops-outcomes span{min-width:0;flex:0 0 90px}
+ .warehouse-ops .ops-cloud-reading>span{font-size:10px;min-height:0}
+ .warehouse-ops .ops-cloud-readings{gap:10px;align-items:end}
+ .warehouse-ops .ops-cloud-demo-badge{max-width:100%}
+ .warehouse-ops .w17-next-inner>a{font-size:clamp(18px,5vw,24px)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}

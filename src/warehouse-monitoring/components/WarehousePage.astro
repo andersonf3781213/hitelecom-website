@@ -1,0 +1,11 @@
+---
+import {renderPage,type Locale} from '../lib/render';
+interface Props {locale:Locale}
+const {locale}=Astro.props;
+const {head,body,lang}=renderPage(locale);
+---
+<!doctype html>
+<html lang={lang}>
+  <head><Fragment set:html={head} /></head>
+  <body style="margin:0" set:html={body} />
+</html>
