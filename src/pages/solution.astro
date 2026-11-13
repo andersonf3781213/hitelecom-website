@@ -70,6 +70,7 @@ const structuredData = JSON.stringify({
   title={site.title}
   description={site.description}
   socialImage="/assets/solutions/og-solutions.webp"
+  bodyClass="ht-site-shell"
 >
   <script slot="head" type="application/ld+json" set:html={structuredData} />
   <SolutionsHome landmark={false} />

@@ -31,9 +31,11 @@ interface Props {
   langBase?: string;
   /** 语言菜单按语言单独覆盖目标地址（优先于 langBase；用于部分语言已上线的页面） */
   langOverrides?: Partial<Record<Locale, string>>;
+  /** 附加 body class（如 Solutions 首页响应式补丁的 ht-site-shell 作用域） */
+  bodyClass?: string;
 }
 
-const { locale, title, description, keywords, socialImage, preloadImage, headerSolid = false, robots, v18Grid = false, alternates, langBase, langOverrides } = Astro.props;
+const { locale, title, description, keywords, socialImage, preloadImage, headerSolid = false, robots, v18Grid = false, alternates, langBase, langOverrides, bodyClass } = Astro.props;
 const seo = defaultSeo[locale];
 // SEO 长度收敛（验收报告：67 页 description >160、24 页 title >70）：
 // 超长时在词边界截断并补省略号，避免被 Google 截在中途；CJK 按字符截断。
@@ -216,7 +218,7 @@ const siteJsonLd = {
     </script>
     <slot name="head" />
   </head>
-  <body class:list={[{ 'v18-grid': v18Grid }]}>
+  <body class:list={[{ 'v18-grid': v18Grid }, bodyClass]}>
     <Header locale={locale} solid={headerSolid} langBase={langBase} langOverrides={langOverrides} />
     <main id="main">
       <slot />
