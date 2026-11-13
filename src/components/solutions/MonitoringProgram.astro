@@ -1,8 +1,0 @@
----
-import type { programs } from '../../data/programs.en';
-import Icon from './Icon.astro';
-interface Props { program: (typeof programs)[number]; }
-const { program } = Astro.props;
-// 十项任务复用同一份静态渲染，移动展示入口时保留真实锚点与询盘意向。
----
-<article class="monitoring-program" id={program.id}><h3>{program.name}</h3><p class="program-object">{program.object}</p><dl><div><dt>Measure</dt><dd>{program.measure}</dd></div><div><dt>System</dt><dd>{program.kit}</dd></div><div><dt>Installation</dt><dd>{program.placement}</dd></div><div><dt>Response</dt><dd>{program.action}</dd></div><div><dt>Validation check</dt><dd>{program.pilot}</dd></div></dl><p class="program-boundary">{program.boundary}</p><div class="program-products">{program.products.map(product=><a href={product.url}>{product.name}<Icon name="arrow"/></a>)}</div><a href="#enquiry" class="text-link" data-interest={program.name}>Request this solution<Icon name="arrow"/></a></article>
