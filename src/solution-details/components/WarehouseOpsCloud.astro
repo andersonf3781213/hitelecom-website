@@ -1,0 +1,70 @@
+---
+import '../styles/warehouse-ops-cloud.css';
+// All values below are illustrative. This component does not connect to a live platform.
+const responsibilities = [
+  {number:'01', role:'Warehouse supervisor', title:'Control the affected area.', text:'Confirm the location. Organise access restrictions, traffic diversion and a safe inspection window.'},
+  {number:'02', role:'EHS lead', title:'Coordinate the response.', text:'Review personnel exposure, agree control measures and escalate to the responsible specialists.'},
+  {number:'03', role:'Rack specialist', title:'Inspect. Repair. Reassess.', text:'Check damage and alignment, define repairs and provide the evidence for authorised return to use.'}
+];
+---
+<section class="ops-cloud" id="wh-cloud" data-module="04" aria-labelledby="ops-cloud-title">
+  <div class="ops-wrap">
+    <div class="ops-cloud-heading">
+      <div><p class="ops-cloud-eyebrow">04 / HITELECOM CLOUD</p><h2 id="ops-cloud-title">An alert needs<br/>an owner.</h2></div>
+      <p class="ops-cloud-intro">The exact upright. The change from baseline. The last reported time. Give the next shift a record it can act on.</p>
+    </div>
+
+    <figure class="ops-cloud-demo" aria-labelledby="ops-cloud-demo-caption">
+      <div class="ops-cloud-demo-top"><span class="ops-cloud-wordmark">HITELECOM <b>CLOUD</b></span><span class="ops-cloud-demo-badge">ILLUSTRATIVE DATA</span></div>
+      <div class="ops-cloud-demo-layout">
+        <aside class="ops-cloud-sidebar" aria-label="Illustrative warehouse context">
+          <p class="ops-cloud-sidebar-caption">WAREHOUSE A</p>
+          <ul><li>Site overview</li><li class="ops-cloud-selected">Rack monitoring</li><li>Event records</li><li>Device status</li></ul>
+          <div class="ops-cloud-site-note"><span>SELECTED POINT</span><strong>Row 03<br/>Bay 02 · Upright 01</strong></div>
+        </aside>
+        <div class="ops-cloud-workspace">
+          <header class="ops-cloud-point-heading"><div><p>RACK MONITORING / POINT DETAIL</p><h3>WH-A / R03 / B02 / U01</h3></div><span class="ops-cloud-review-status"><i aria-hidden="true"></i>Review requested</span></header>
+          <div class="ops-cloud-readings">
+            <div class="ops-cloud-reading ops-cloud-reading-main"><span>Reported X-axis angle</span><strong>+0.24<small>°</small></strong></div>
+            <div class="ops-cloud-reading"><span>Commissioning baseline</span><strong>+0.12<small>°</small></strong></div>
+            <div class="ops-cloud-reading"><span>Change from baseline</span><strong class="ops-cloud-change">+0.12<small>°</small></strong></div>
+          </div>
+          <p class="ops-cloud-received">Last valid report <time datetime="2026-11-10T10:32:00Z">10 Nov 2026 · 10:32 UTC</time><span>Sample timestamp</span></p>
+          <div class="ops-cloud-evidence-grid">
+            <div class="ops-cloud-trend">
+              <div class="ops-cloud-panel-heading"><h4>Reported angle trend</h4><span>X axis · illustrative</span></div>
+              <svg class="ops-cloud-chart" viewBox="0 0 620 238" role="img" aria-labelledby="ops-cloud-chart-title ops-cloud-chart-desc">
+                <title id="ops-cloud-chart-title">Illustrative X-axis angle change</title>
+                <desc id="ops-cloud-chart-desc">A simulated angle trace stays close to the 0.12 degree baseline before rising to a reported 0.24 degrees. The line does not show a safety limit or actual device data.</desc>
+                <defs><linearGradient id="ops-cloud-chart-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2e65dd" stop-opacity=".16"/><stop offset="100%" stop-color="#2e65dd" stop-opacity="0"/></linearGradient></defs>
+                <g class="ops-cloud-chart-grid"><path d="M48 33H596M48 88H596M48 143H596M48 198H596"/></g>
+                <g class="ops-cloud-chart-axis"><text x="0" y="37">0.30°</text><text x="0" y="92">0.24°</text><text x="0" y="147">0.18°</text><text x="0" y="202">0.12°</text><text x="48" y="229">Earlier reports</text><text x="498" y="229">Latest report</text></g>
+                <path d="M48 198L83 196L118 200L153 195L188 198L223 196L258 201L293 196L328 196L363 165L398 140L433 114L468 95L503 91L538 89L581 88L581 208L48 208Z" fill="url(#ops-cloud-chart-fill)"/>
+                <path class="ops-cloud-chart-baseline" d="M48 198H596"/>
+                <path class="ops-cloud-chart-line" d="M48 198L83 196L118 200L153 195L188 198L223 196L258 201L293 196L328 196L363 165L398 140L433 114L468 95L503 91L538 89L581 88"/>
+                <circle cx="581" cy="88" r="7" fill="#2e65dd" stroke="#fff" stroke-width="3"/>
+              </svg>
+              <p class="ops-cloud-trend-legend"><span></span>Commissioning baseline · not a safety threshold</p>
+            </div>
+            <aside class="ops-cloud-handover" aria-label="Illustrative response record">
+              <p class="ops-cloud-handover-kicker">RESPONSE RECORD</p><h4>Pending field review</h4>
+              <dl><div><dt>Responsible role</dt><dd>Duty supervisor</dd></div><div><dt>Next action</dt><dd>Check the identified upright</dd></div><div><dt>Handover record</dt><dd>Location, trend and inspection findings</dd></div></dl>
+              <span class="ops-cloud-handover-note">No return-to-use approval recorded</span>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <figcaption id="ops-cloud-demo-caption">Illustrative Hitelecom Cloud layout and simulated readings. Point fields, notification channels and response records are agreed for each project.</figcaption>
+    </figure>
+
+    <div class="ops-cloud-routes" aria-label="Connectivity options">
+      <article><span class="ops-cloud-route-number">A / CELLULAR</span><h3>4G / NB-IoT</h3><p class="ops-cloud-route-flow"><span>Sensor</span><i aria-hidden="true">→</i><span>Operator network</span><i aria-hidden="true">→</i><strong>Hitelecom Cloud</strong></p><p class="ops-cloud-route-note">Verify point coverage, SIM service and message delivery.</p></article>
+      <article><span class="ops-cloud-route-number">B / GATEWAY</span><h3>LoRa + compatible gateway</h3><p class="ops-cloud-route-flow"><span>Sensor</span><i aria-hidden="true">→</i><span>Gateway</span><i aria-hidden="true">→</i><strong>Cloud / local system</strong></p><p class="ops-cloud-route-note">Local storage and interfaces require a project-agreed system. Verify gateway power and backhaul.</p></article>
+    </div>
+    <p class="ops-cloud-data-note">Web / app views and app, SMS or local alerts are selected and verified per project. The display updates when valid reports arrive; test notification delivery and escalation across the complete device and network path.</p>
+
+    <div class="ops-cloud-responsibility-heading"><p class="ops-cloud-eyebrow">RESPONSIBILITIES AFTER AN ALERT</p><h3>One event. Clear responsibilities.</h3></div>
+    <div class="ops-cloud-responsibilities">{responsibilities.map(item=><article><p><span>{item.number}</span>{item.role}</p><h4>{item.title}</h4><p class="ops-cloud-role-text">{item.text}</p></article>)}</div>
+    <p class="ops-cloud-scope-note">Monitoring supports the site’s response process. Access control, inspection and authorised return to use remain site responsibilities; an alert is not an automatic safety interlock.</p>
+  </div>
+</section>

@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "number": "02",
+    "key": "infrastructure-monitoring",
+    "title": "Infrastructure Monitoring | Bridges, Tunnels & Drainage | Hitelecom",
+    "description": "Plan point-based monitoring for bridges, tunnels, rail corridors, slopes, drainage and roadside supports. Match tilt, target distance and water-level measurements to site inspections.",
+    "heroImage": "infrastructure-hero",
+    "heroAlt": "Application illustration of a bridge and its supporting civil infrastructure",
+    "nextLabel": "01 / Warehouse monitoring",
+    "nextPath": "/solution/warehouse-monitoring"
+  },
+  "lead": "Connect selected points on bridges, tunnels, rail corridors, drainage assets and support structures. Follow local rotation, reference-target distance or water level, then bring the readings into the inspection process for that asset.",
+  "navigation": [
+    {
+      "id": "bridges-walls",
+      "name": "Bridges & walls"
+    },
+    {
+      "id": "tunnels",
+      "name": "Tunnels"
+    },
+    {
+      "id": "rail-corridors",
+      "name": "Rail corridors"
+    },
+    {
+      "id": "slopes-dams",
+      "name": "Slopes & dams"
+    },
+    {
+      "id": "drainage",
+      "name": "Drainage"
+    },
+    {
+      "id": "poles-towers",
+      "name": "Poles & towers"
+    }
+  ],
+  "duties": [
+    {
+      "symbol": "\u00b0",
+      "title": "Local rotation",
+      "text": "Measure inclination at the chosen member. A recorded mounting direction and baseline make angle changes comparable at that point.",
+      "device": "Wireless tilt sensor"
+    },
+    {
+      "symbol": "\u2194",
+      "title": "Reference-target distance",
+      "text": "Observe a defined target along one axis. Structural movement projects need validated geometry, a suitable reference and installed repeatability.",
+      "device": "Radar \u00b7 reference-target project"
+    },
+    {
+      "symbol": "\u2248",
+      "title": "Water level",
+      "text": "Measure an exposed surface from above, or select an immersion probe. Relate the reading to the site's level datum and operating range.",
+      "device": "Radar or liquid level sensor"
+    }
+  ],
+  "bridge": {
+    "title": "Bridges & retaining walls",
+    "intro": "Give a selected pier, abutment, bearing area or wall section a repeatable observation point. Compare changes with loading, temperature, nearby construction and the wider inspection record.",
+    "points": [
+      {
+        "name": "Pier, abutment or wall member",
+        "point": "An engineer-selected rigid mounting position on the structural element.",
+        "measurement": "Local inclination and change from the recorded baseline, in degrees.",
+        "action": "Review the named member and its fixing when a persistent change calls for inspection."
+      },
+      {
+        "name": "Bearing area or approved wall target",
+        "point": "A protected path to an attached target, with the reference arrangement documented.",
+        "measurement": "Distance along the selected axis; relative gap or local movement only after geometry and field validation.",
+        "action": "Compare the trend with bearing checks or independent survey observations under comparable conditions."
+      }
+    ]
+  },
+  "tunnel": {
+    "title": "Tunnels & underground structures",
+    "intro": "Organize observations by tunnel section and monitored element, rather than treating the whole tunnel as one sensor location.",
+    "point": "Selected lining segments, structural supports or station columns; approved targets where a distance project is required.",
+    "measurement": "Local rotation; selected-axis target distance or relative joint movement after installation review.",
+    "action": "Compare the point history with excavation stages, temperature, maintenance and the tunnel survey. Inspect the corresponding segment or support."
+  },
+  "rail": {
+    "title": "Rail corridors & trackside supports",
+    "intro": "Keep the asset number, chainage and monitored member together so observations lead to the right section of the route.",
+    "point": "Approved catenary mast sections, trackside retaining walls and other stationary support members.",
+    "measurement": "Local inclination relative to the mounting reference, with observations made under documented conditions.",
+    "action": "Review persistent changes against nearby works, inspection rounds and maintenance activity at the identified location."
+  },
+  "slope": {
+    "title": "Slopes, embankments & dam structures",
+    "intro": "Select the surface structure or attached target you intend to observe. Add water-level context where it helps interpret changes at the site.",
+    "point": "Designated retaining or facing members, approved slope targets, dam blocks or abutments, and separately defined water-level points.",
+    "measurement": "Local inclination; validated single-axis target distance; water level at its own surveyed datum.",
+    "action": "Review these distinct records with rainfall, drainage observations and the geotechnical or dam inspection programme."
+  },
+  "drainage": {
+    "title": "Drainage, chambers & culverts",
+    "intro": "Find the locations that rise unusually, remain high or recover slowly after a rainfall or pumping event.",
+    "points": [
+      {
+        "name": "Chamber, channel or culvert inlet",
+        "point": "A fixed upper mounting position with a clear view of the water, or a suitable immersed level probe.",
+        "measurement": "Water level relative to a documented datum, with time-aligned upstream and downstream points where specified.",
+        "action": "Review rainfall, pump operation and downstream conditions before arranging inspection or cleaning."
+      },
+      {
+        "name": "Dry or drawn-down catchpit",
+        "point": "An exposed deposit surface observed against a known clean-pit reference.",
+        "measurement": "Local exposed deposit height where the target return and measuring range are suitable.",
+        "action": "Prioritize cleaning at the observed location and confirm deposit conditions during the visit."
+      }
+    ],
+    "boundary": "A water-surface reading does not locate a pipe blockage or measure submerged sludge thickness. Those questions need separate investigation or instrumentation."
+  },
+  "poles": {
+    "title": "Poles, towers & roadside supports",
+    "intro": "One part of the infrastructure portfolio: lighting poles, telecom members, billboard supports and sign structures.",
+    "point": "A designated rigid section or structural member, linked to its pole, tower or sign ID.",
+    "measurement": "Local inclination and baseline change along the agreed sensor axes.",
+    "action": "Use point-linked records to prioritize checks after weather, equipment servicing or nearby works."
+  },
+  "response": [
+    {
+      "title": "Record the site event",
+      "text": "Identify the rainfall period, nearby excavation, loading change or maintenance activity relevant to the asset."
+    },
+    {
+      "title": "Review the related points",
+      "text": "Compare timestamps, references and measurement trends. Check whether the observation conditions remain comparable."
+    },
+    {
+      "title": "Direct the field check",
+      "text": "Give the team the asset, section and point IDs. Record the finding in the owner's agreed inspection process."
+    }
+  ],
+  "extensions": [
+    {
+      "name": "Station rooms & service spaces",
+      "measurement": "Temperature and relative humidity at representative indoor locations.",
+      "selection": "Match the sensing range and exposure to the room. An indoor combined sensor is not automatically an outdoor cabinet configuration.",
+      "url": "https://www.hitelecom.com/product/temperature-humidity-sensor",
+      "link": "Review indoor environmental sensing"
+    },
+    {
+      "name": "Water ingress at vulnerable points",
+      "measurement": "Water presence at defined floor, chamber or equipment-area locations.",
+      "selection": "Configure the probe, coverage and inspection response as a custom project; confirm enclosure and wiring conditions.",
+      "url": "https://www.hitelecom.com/service",
+      "link": "Discuss water-presence sensing"
+    },
+    {
+      "name": "Site-specific gas monitoring",
+      "measurement": "Selected gas channels such as O\u2082, H\u2082S, CH\u2084 or CO where the actual site requires them.",
+      "selection": "A project-specific fixed detector arrangement: agree gas, range, environment, local warnings and external 9\u201324 V DC power.",
+      "url": "https://www.hitelecom.com/product/custom-gas-sensor",
+      "link": "Review custom gas configurations"
+    },
+    {
+      "name": "Supporting pumps & fans",
+      "measurement": "Machinery vibration with temperature or pressure at separately selected equipment points.",
+      "selection": "The high-frequency machinery sensor is selected for the motor or pump. It is not assumed to be a bridge-dynamics or seismic instrument.",
+      "url": "https://www.hitelecom.com/product/vibration-sensor",
+      "link": "Review machinery vibration sensing"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does every infrastructure site need the same sensor set?",
+      "answer": "No. Start with the asset and the question: local rotation, target distance, water level or a supporting equipment condition. Specify only the points and channels that contribute to that monitoring objective."
+    },
+    {
+      "question": "Can radar distance be used for structural movement?",
+      "answer": "A reference-target project can compare distance to the same approved target along a defined axis. The engineer confirms the reference arrangement, geometry, working range and installed repeatability. Relative member separation and absolute movement require different reference designs."
+    },
+    {
+      "question": "How are underground and remote points connected?",
+      "answer": "Review a compatible cellular or LoRa route at the actual installation points, including the gateway, power and backhaul where needed. Underground coverage, regional radio settings, reporting profiles and any LoRaWAN requirement are checked explicitly."
+    },
+    {
+      "question": "Do these readings determine the condition of the whole structure?",
+      "answer": "They describe the selected measurement points. Overall condition, foundations, load capacity and the cause of a change require the owner's wider engineering, survey and inspection evidence."
+    }
+  ]
+}

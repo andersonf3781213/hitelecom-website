@@ -1,0 +1,55 @@
+---
+/**
+ * 方案详情：仓储货架倾斜监测（英文）/solution/warehouse-monitoring
+ * GPT6 2026-11-10 包接入现网 BaseLayout：
+ * - 复用官网页头、页脚、浮动联系栏；正文限定 .warehouse-ops 命名空间
+ * - 页面为英文单语：alternates=[] 避免输出指向不存在译页的假 hreflang
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WarehousePage from '../../solution-details/components/WarehouseOpsPage.astro';
+import '../../solution-details/styles/scope-v2.css';
+
+const canonical = 'https://www.hitelecom.com/solution/warehouse-monitoring';
+const title = 'Warehouse Rack Tilt Monitoring for Operations & EHS | Hitelecom';
+const description = 'Record rack angle changes between inspections. Locate the upright, review events in Hitelecom Cloud and support an accountable warehouse inspection and response process.';
+const structuredData = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': canonical + '#webpage',
+      url: canonical,
+      name: title,
+      description,
+      inLanguage: 'en',
+      publisher: { '@id': 'https://www.hitelecom.com/#organization' },
+      breadcrumb: { '@id': canonical + '#breadcrumb' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': canonical + '#breadcrumb',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Solutions', item: 'https://www.hitelecom.com/solution' },
+        { '@type': 'ListItem', position: 3, name: 'Warehouse Rack Tilt Monitoring for Operations & EHS', item: canonical },
+      ],
+    },
+  ],
+}).replace(/</g, '\\u003c');
+---
+
+<BaseLayout
+  locale="en"
+  title={title}
+  description={description}
+  socialImage="/assets/solutions/warehouse-hero-1280.webp"
+  alternates={[]}
+  langBase="/solution"
+  bodyClass="ht-site-shell"
+>
+  <script slot="head" type="application/ld+json" set:html={structuredData} />
+  <WarehousePage />
+</BaseLayout>
+<script>
+  import '../../solution-details/scripts/detail.js';
+</script>

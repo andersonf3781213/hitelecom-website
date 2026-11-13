@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "number": "01",
+    "key": "warehouse-monitoring",
+    "title": "Warehouse Safety & Condition Monitoring | Hitelecom",
+    "description": "Monitor rack tilt, storage temperature and humidity, leaks and machine condition. Locate each event and connect fire and personnel-safety interfaces to a defined response.",
+    "heroImage": "warehouse-hero",
+    "heroAlt": "Application illustration of a high-bay warehouse with pallet racks and a clear operating aisle",
+    "nextLabel": "02 / Infrastructure monitoring",
+    "nextPath": "/solution/infrastructure-monitoring"
+  },
+  "hero": {
+    "eyebrow": "WAREHOUSE SAFETY & CONDITION MONITORING",
+    "h1": "Warehouse monitoring.\nFrom alert to action.",
+    "lead": "Monitor rack tilt, storage conditions, water leaks and equipment changes. Connect fire and personnel-safety events to the team responsible.",
+    "primaryCta": "Request a monitoring plan",
+    "secondaryCta": "See where sensors go",
+    "tags": [
+      {
+        "label": "Rack tilt",
+        "href": "#wh6-installation"
+      },
+      {
+        "label": "Storage conditions",
+        "href": "#wh6-event-stock"
+      },
+      {
+        "label": "Leaks & equipment",
+        "href": "#wh6-events"
+      },
+      {
+        "label": "Personnel EHS",
+        "href": "#wh6-event-ehs"
+      }
+    ]
+  },
+  "installation": {
+    "eyebrow": "WHERE THE MONITORING GOES",
+    "title": "Where the sensors go.",
+    "lead": "Match the measurement to the location: a rack upright, storage zone, leak-prone floor point, machine or personnel-help point.",
+    "proofTitle": "See the tilt. Take action.",
+    "proofCaption": "Field installation reference — rack point, device and mounting.",
+    "photoNote": "Retouched field photographs supplied for this project. The installation shows a monitoring point; rack safety still requires inspection and assessment.",
+    "locations": [
+      {
+        "title": "Rack uprights",
+        "signal": "Local inclination",
+        "use": "Link an angle change to the row and bay that needs inspection."
+      },
+      {
+        "title": "Goods zones & cold rooms",
+        "signal": "Temperature / required humidity",
+        "use": "Locate storage excursions and review the affected goods."
+      },
+      {
+        "title": "Floor low points & pipe joints",
+        "signal": "Water presence",
+        "use": "Find the wet zone and investigate the water source."
+      },
+      {
+        "title": "Motors, pumps & conveyors",
+        "signal": "Vibration / temperature / run or fault",
+        "use": "Direct maintenance to the machine and operating condition."
+      },
+      {
+        "title": "Crossings, docks & help points",
+        "signal": "Dedicated safety-system events",
+        "use": "Connect an identified event to the designated EHS or operations team."
+      }
+    ],
+    "sourceNote": "Hitelecom sensors measure the selected conditions. Fire, dock, proximity and personnel-help events use compatible interfaces to their dedicated systems."
+  },
+  "events": {
+    "eyebrow": "FROM AN EVENT TO THE NEXT ACTION",
+    "title": "What happens after an alert.",
+    "lead": "Each example links an event to its location and the person responsible for checking it.",
+    "rows": [
+      {
+        "event": "Rack angle changes",
+        "location": "Identified row and bay",
+        "action": "The rack lead follows the site procedure, checks the affected area and records the inspection decision.",
+        "source": "Tilt sensor",
+        "id": "wh6-event-rack"
+      },
+      {
+        "event": "Storage temperature moves outside the agreed range",
+        "location": "Goods zone or cold room",
+        "action": "Quality or warehouse operations reviews the duration, affected stock and refrigeration or door conditions.",
+        "source": "Temperature / humidity sensing",
+        "id": "wh6-event-stock"
+      },
+      {
+        "event": "Water reaches a sensing point",
+        "location": "Named floor or collection point",
+        "action": "Facilities checks the source, arranges drainage and coordinates protection of stock and access routes.",
+        "source": "Water-presence sensor",
+        "id": "wh6-event-water"
+      },
+      {
+        "event": "Machine condition or running state changes",
+        "location": "Identified motor, conveyor, pump or fan",
+        "action": "Maintenance compares the operating context and inspects the machine before deciding the next work.",
+        "source": "Condition sensing / equipment interface",
+        "id": "wh6-event-equipment"
+      },
+      {
+        "event": "A personnel-help or safety-system event is reported",
+        "location": "Named dock, crossing or work zone",
+        "action": "The designated operations or EHS team follows the local response route. Dedicated local warnings and protective functions retain their duties.",
+        "source": "Dedicated EHS / fire-system interface",
+        "id": "wh6-event-ehs"
+      }
+    ],
+    "note": "Illustrative response paths. Define the thresholds, receiving roles and local protective duties for your installation."
+  },
+  "connection": {
+    "eyebrow": "HOW THE INFORMATION REACHES THE TEAM",
+    "title": "How the system connects.",
+    "lead": "Readings and events reach the platform through the configured network. The receiving team uses the location and history to respond.",
+    "steps": [
+      {
+        "title": "Measure at the point",
+        "text": "A selected sensor or agreed system interface supplies the reading or event."
+      },
+      {
+        "title": "See the location and history",
+        "text": "Use Hitelecom Cloud or your platform to review point identity, reported condition, time and configured alerts."
+      },
+      {
+        "title": "Record the response",
+        "text": "Agree the receiving role and how inspection, stock decisions or corrective actions are retained."
+      }
+    ],
+    "note": "Cellular terminals and compatible LoRa gateway routes are configured for the site. H100 is a separate local USB/PC recorder."
+  },
+  "details": {
+    "eyebrow": "FOR THE PROJECT REVIEW",
+    "title": "Engineering & selection details.",
+    "lead": "Open the topics relevant to your warehouse.",
+    "groups": [
+      {
+        "id": "assets",
+        "title": "Goods handling, opening, location & occupancy"
+      },
+      {
+        "id": "safety",
+        "title": "Gas, smoke and personnel-safety interfaces"
+      },
+      {
+        "id": "engineering",
+        "title": "Wireless coverage, power & offline behavior"
+      },
+      {
+        "id": "platform",
+        "title": "Platform rules, records & WMS / ERP integration"
+      },
+      {
+        "id": "lifecycle",
+        "title": "Warehouse types, calibration & maintenance"
+      }
+    ]
+  },
+  "cta": {
+    "title": "What does your warehouse need to monitor?",
+    "text": "Tell us the warehouse type, goods and the problem you want to see more clearly. Share the layout and existing systems if available."
+  }
+}

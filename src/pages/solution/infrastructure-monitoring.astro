@@ -1,0 +1,56 @@
+---
+/**
+ * 方案详情：基础设施监测（英文）/solution/infrastructure-monitoring
+ * GPT6 2026-11-10 包接入现网 BaseLayout（仓储页的“下一方案”入口目标）。
+ * 页面为英文单语：alternates=[] 避免假 hreflang。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InfrastructurePage from '../../solution-details/components/InfrastructurePage.astro';
+import ProjectContactV2 from '../../solution-details/components/ProjectContactV2.astro';
+import infrastructure from '../../solution-details/data/infrastructure-v2.json';
+import '../../solution-details/styles/scope-v2.css';
+
+const canonical = 'https://www.hitelecom.com/solution/infrastructure-monitoring';
+const { title, description } = infrastructure.meta;
+const structuredData = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': canonical + '#webpage',
+      url: canonical,
+      name: title,
+      description,
+      inLanguage: 'en',
+      publisher: { '@id': 'https://www.hitelecom.com/#organization' },
+      breadcrumb: { '@id': canonical + '#breadcrumb' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': canonical + '#breadcrumb',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Solutions', item: 'https://www.hitelecom.com/solution' },
+        { '@type': 'ListItem', position: 3, name: 'Infrastructure Monitoring', item: canonical },
+      ],
+    },
+  ],
+}).replace(/</g, '\\u003c');
+---
+
+<BaseLayout
+  locale="en"
+  title={title}
+  description={description}
+  socialImage="/assets/solutions/infrastructure-hero-1280.webp"
+  alternates={[]}
+  langBase="/solution"
+  bodyClass="ht-site-shell"
+>
+  <script slot="head" type="application/ld+json" set:html={structuredData} />
+  <InfrastructurePage />
+  <ProjectContactV2 meta={infrastructure.meta} />
+</BaseLayout>
+<script>
+  import '../../solution-details/scripts/detail.js';
+</script>

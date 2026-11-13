@@ -1,0 +1,45 @@
+---
+import '../styles/warehouse-enquiry-v17.css';
+// 模块08只保留四项基础信息；脚本由页面入口启用并在本地准备邮件草稿。
+const features=['Rack tilt monitoring','Operations & EHS','Cloud or local'];
+---
+<section class="w7-section w17-enquiry" id="enquiry" data-module="08" aria-labelledby="enquiry-title">
+  <div class="v2-wrap">
+    <div class="w17-enquiry-layout">
+      <div class="w17-enquiry-intro">
+        <p class="w7-eyebrow">08 / YOUR WAREHOUSE PROJECT</p>
+        <h2 id="enquiry-title">Give your next<br/>inspection more context.</h2>
+        <p class="w17-enquiry-lead">Tell us about your racks, handling conditions and inspection priorities. We’ll help define the measurement points, response workflow and a practical site evaluation.</p>
+        <a class="w17-enquiry-email" href="mailto:sales@hitelecom.cn">sales@hitelecom.cn<span aria-hidden="true">↗</span></a>
+        <ul class="w17-enquiry-features" aria-label="Monitoring options">
+          {features.map(feature=><li><svg viewBox="0 0 18 18" aria-hidden="true"><path d="m4 9 3 3 7-7"/></svg>{feature}</li>)}
+        </ul>
+      </div>
+      <div class="w17-enquiry-card">
+        <h3>Prepare your project brief</h3>
+        <form id="warehouse-enquiry-simple">
+          <fieldset disabled>
+            <legend class="w17-sr-only">Warehouse monitoring enquiry</legend>
+            <div class="w17-enquiry-fields">
+              <label for="warehouse-name">Name <span aria-hidden="true">*</span><input id="warehouse-name" name="name" required autocomplete="name" maxlength="100" placeholder="Your name"/></label>
+              <label for="warehouse-company">Company<input id="warehouse-company" name="company" autocomplete="organization" maxlength="200" placeholder="Your company"/></label>
+              <label class="w17-field-full" for="warehouse-email">Business email <span aria-hidden="true">*</span><input id="warehouse-email" name="email" type="email" required autocomplete="email" maxlength="180" placeholder="you@company.com"/></label>
+              <label class="w17-field-full" for="warehouse-requirements">What would you like to monitor? <span aria-hidden="true">*</span><textarea id="warehouse-requirements" name="requirements" required rows="4" maxlength="1200" placeholder="Rack type, monitoring needs and installation location…"></textarea></label>
+            </div>
+            <button type="submit" class="w17-enquiry-button">Prepare my enquiry<span aria-hidden="true">↗</span></button>
+            <p class="w17-enquiry-note">Review and send in your email app.</p>
+            <p class="w17-enquiry-status" id="warehouse-enquiry-status" role="status" aria-live="polite"></p>
+          </fieldset>
+          <noscript><p class="w17-enquiry-fallback">Email your name, company and monitoring requirements to <a href="mailto:sales@hitelecom.cn">sales@hitelecom.cn</a>.</p></noscript>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<aside class="w17-next-solution" aria-label="Explore another solution">
+  <div class="v2-wrap w17-next-inner">
+    <span>EXPLORE ANOTHER SOLUTION</span>
+    <a href="/solution/infrastructure-monitoring">02 / Infrastructure monitoring<span aria-hidden="true">↗</span></a>
+  </div>
+</aside>
