@@ -79,6 +79,18 @@ RewriteRule ^ru/product/lists/cid/274\.html$ /ru/product/lists/cid/256 [R=301,L]
 RewriteRule ^ru/product/lists/cid/274$ /ru/product/lists/cid/256 [R=301,L]
 RewriteRule ^service/page/2$ /service [R=301,L]
 RewriteRule ^service/page/2\.html$ /service [R=301,L]
+RewriteRule ^zh/service/page/2$ /zh/service [R=301,L]
+RewriteRule ^zh/service/page/2\.html$ /zh/service [R=301,L]
+RewriteRule ^es/service/page/2$ /es/service [R=301,L]
+RewriteRule ^es/service/page/2\.html$ /es/service [R=301,L]
+RewriteRule ^de/service/page/2$ /de/service [R=301,L]
+RewriteRule ^de/service/page/2\.html$ /de/service [R=301,L]
+RewriteRule ^ja/service/page/2$ /ja/service [R=301,L]
+RewriteRule ^ja/service/page/2\.html$ /ja/service [R=301,L]
+RewriteRule ^fr/service/page/2$ /fr/service [R=301,L]
+RewriteRule ^fr/service/page/2\.html$ /fr/service [R=301,L]
+RewriteRule ^ru/service/page/2$ /ru/service [R=301,L]
+RewriteRule ^ru/service/page/2\.html$ /ru/service [R=301,L]
 
 # === 1b. 无扩展名 URL → .html 文件（与 Cloudflare Pages 行为对齐） ===
 RewriteCond %{REQUEST_FILENAME} !-f

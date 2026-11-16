@@ -1,0 +1,15 @@
+/* 保留 V9 的图文层级，处理翻译后较长词语；不截断正文。 */
+html:lang(zh-CN) .ht-support,html:lang(ja) .ht-support {font-family:-apple-system,BlinkMacSystemFont,"Noto Sans CJK SC","Noto Sans CJK JP","Microsoft YaHei","Hiragino Kaku Gothic ProN",sans-serif}
+html:lang(zh-CN) .ht-support .hero-copy h1,html:lang(ja) .ht-support .hero-copy h1 {font-size:clamp(42px,5.2vw,88px);line-height:1.2;letter-spacing:-.045em}
+html:lang(de) .ht-support .hero-copy h1,html:lang(fr) .ht-support .hero-copy h1,html:lang(ru) .ht-support .hero-copy h1,html:lang(es) .ht-support .hero-copy h1 {font-size:clamp(46px,6.4vw,104px);overflow-wrap:anywhere}
+.ht-support :is(h2,h3,h4,dt,.button,.text-link,.resource-open),.ht-site-shell :is(a,button) {overflow-wrap:anywhere}
+.ht-support :is(.hero-copy,.section-heading>div,.field-workflow>article,.customization-grid>article,.support-channel-grid>article,.contact-copy,.support-form-card){min-width:0}
+.ht-support .resource-language-note {font-size:12px;line-height:1.8;color:#687a91;margin-top:18px}
+:lang(de) .ht-support h2,:lang(ru) .ht-support h2 {font-size:clamp(32px,4.5vw,72px)}
+:lang(zh-CN) .ht-support .eyebrow,:lang(ja) .ht-support .eyebrow {letter-spacing:.12em}
+.ht-site-shell :is(.main-nav a,.lang-btn,.show-online){white-space:nowrap}
+@media(max-width:1280px){html:not(:lang(en)) .ht-site-shell .main-nav{display:none}html:not(:lang(en)) .ht-site-shell .menu-open{display:flex}}
+@media(max-width:800px){.ht-support .actions{flex-wrap:wrap}.ht-support .actions .button{max-width:100%;white-space:normal;text-align:left}.ht-support .field-workflow dl>div{min-width:0}.ht-support .entry-band strong{font-size:clamp(14px,2vw,18px)}.ht-support .customization-grid dl>div{grid-template-columns:1fr;gap:5px}}
+@media(max-width:480px){html:lang(de) .ht-support .hero-copy h1,html:lang(fr) .ht-support .hero-copy h1,html:lang(ru) .ht-support .hero-copy h1,html:lang(es) .ht-support .hero-copy h1{font-size:44px}.ht-site-shell .show-online{font-size:11px;padding-inline:10px}.ht-site-shell .header-inner{gap:10px}.ht-site-shell .header-actions{gap:8px}}
+
+html:not(:lang(en)) .ht-support .hero-copy h1{white-space:normal;overflow-wrap:anywhere}

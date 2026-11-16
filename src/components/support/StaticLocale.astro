@@ -1,0 +1,7 @@
+---
+import {localizeHtml} from '../../i18n/support/localize';
+const {locale='en'}=Astro.props;
+const source=await Astro.slots.render('default');
+const output=localizeHtml(source,locale);
+---
+<Fragment set:html={output}/>

@@ -47,9 +47,14 @@ for (const pre of ['', '/zh', '/es', '/de', '/ja', '/fr', '/ru']) {
 }
 
 // V159：Support V9 上线后资料不再分页，英文旧分页 /service/page/2 301 到 /service
-//（hash 不随 301 传递，落地页内另有回退跳转；其它语言分页保留不变）
+//（hash 不随 301 传递，落地页内另有回退跳转）
 redirects.push(['/service/page/2', '/service']);
 redirects.push(['/service/page/2.html', '/service']);
+// V160：Support 七语上线，六语旧分页同样 301 到本语言服务页
+for (const pre of ['/zh', '/es', '/de', '/ja', '/fr', '/ru']) {
+  redirects.push([`${pre}/service/page/2`, `${pre}/service`]);
+  redirects.push([`${pre}/service/page/2.html`, `${pre}/service`]);
+}
 
 // ---------------------------------------------------------------- _redirects
 const cfLines = [

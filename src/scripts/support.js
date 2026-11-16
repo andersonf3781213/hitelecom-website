@@ -1,5 +1,8 @@
 /** Progressive enhancement only: resource discovery and a local email draft. */
 function initSupportPage() {
+  const copyNode = document.getElementById('support-i18n');
+  const messages = copyNode ? JSON.parse(copyNode.textContent) : {};
+  const t = (key, vars = {}) => (messages[key] || key).replace(/\{(\w+)\}/g, (_, name) => String(vars[name] ?? ''));
   const search = document.querySelector('#resource-search');
   const rows = Array.from(document.querySelectorAll('[data-resource]'));
   const filters = Array.from(document.querySelectorAll('.resource-filter'));
@@ -35,13 +38,13 @@ function initSupportPage() {
         button.classList.toggle('active', active);
       }
       if (count) count.textContent = isFiltering
-        ? `${visible} ${visible === 1 ? 'resource' : 'resources'} found`
-        : `Showing ${visible} of ${rows.length} resources`;
+        ? t('{count} resources found', {count:visible})
+        : t('Showing {count} of {total} resources', {count:visible,total:rows.length});
       if (empty) empty.hidden = visible > 0;
       if (clear) clear.hidden = !isFiltering && !expanded;
       if (more) {
         more.hidden = isFiltering || !rows.some((row) => row.dataset.featured !== 'true');
-        more.textContent = expanded ? 'Show featured resources' : 'Show all resources';
+        more.textContent = expanded ? t('Show featured resources') : t('Show all resources');
         more.setAttribute('aria-expanded', String(expanded));
       }
     }
@@ -112,7 +115,7 @@ function initSupportPage() {
         if (!values[key]) {
           const field = form.elements.namedItem(key);
           if (field && 'setCustomValidity' in field) {
-            field.setCustomValidity('Please complete this field.');
+            field.setCustomValidity(t('Please complete this field.'));
             field.reportValidity();
             field.addEventListener('input', () => field.setCustomValidity(''), { once: true });
           }
@@ -120,18 +123,18 @@ function initSupportPage() {
         }
       }
       preparedText = [
-        'Hitelecom support request', '',
-        `Name: ${values.name}`, `Business email: ${values.email}`,
-        `Company: ${values.company || 'Not provided'}`,
-        `Topic: ${values.topic || 'General support'}`,
-        `Product / model: ${values.model || 'Not provided'}`,
-        '', 'Description:', values.message,
+        t('Hitelecom support request'), '',
+        `${t('Name')}: ${values.name}`, `${t('Business email')}: ${values.email}`,
+        `${t('Company')}: ${values.company || t('Not provided')}`,
+        `${t('Topic')}: ${form.elements.namedItem('topic').selectedOptions[0]?.textContent || t('General support')}`,
+        `${t('Product / model')}: ${values.model || t('Not provided')}`,
+        '', t('Description')+':', values.message,
       ].join('\n');
       draft.textContent = preparedText;
-      const subject = ['Hitelecom support', values.topic, values.model].filter(Boolean).join(' — ');
+      const subject = [t('Hitelecom support'), form.elements.namedItem('topic').selectedOptions[0]?.textContent, values.model].filter(Boolean).join(' — ');
       email.setAttribute('href', `mailto:sales@hitelecom.cn?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(preparedText)}`);
       review.hidden = false;
-      if (copyStatus) copyStatus.textContent = 'Nothing has been sent. Review your draft before opening your email app.';
+      if (copyStatus) copyStatus.textContent = t('Nothing has been sent. Review your draft before opening your email app.');
       review.setAttribute('tabindex', '-1');
       review.focus({ preventScroll: true });
       review.scrollIntoView({ behavior: 'auto', block: 'nearest' });
@@ -160,8 +163,8 @@ function initSupportPage() {
         copy.focus();
       }
       if (copyStatus) copyStatus.textContent = copied
-        ? 'Draft copied. Nothing has been sent.'
-        : 'Copy is unavailable here. Select and copy the draft above. Nothing has been sent.';
+        ? t('Draft copied. Nothing has been sent.')
+        : t('Copy is unavailable here. Select and copy the draft above. Nothing has been sent.');
     });
   }
 }
