@@ -1,32 +1,47 @@
 ---
 /**
- * 支持服务页（英文，第 1 页）：/service
- * 与原站 1:1：横幅 + 锚点选项卡 + 技术支持六卡 + 软件区 + 文档下载（8 卡 + 分页）+ 售后表单
+ * 支持服务页（英文）：/service
+ * V159：接入 GPT6 Support V9 —— 技术支持（选型/安装/排查）+ 软硬件定制 +
+ * 远程/电话/现场支持 + 资料中心（17 项，渐进增强检索）+ 售后 + FAQ +
+ * 邮件草稿询盘（不自动发送）。复用 BaseLayout 公共外壳与 SEO 输出。
+ * 其它语言 /{locale}/service 保持原页面不变。
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ServiceShell from '../components/service/ServiceShell.astro';
-import ServiceBody from '../components/service/ServiceBody.astro';
-import { optimizedSrc } from '../utils/images';
+import SupportContent from '../components/support/SupportContent.astro';
+import { faq, title, description } from '../data/support';
 
-const breadcrumbLd = {
+const canonical = 'https://www.hitelecom.com/service';
+// BaseLayout 已输出 Organization/WebSite 实体图，这里仅补充面包屑与 FAQ
+const graph = {
   '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Service', item: 'https://www.hitelecom.com/service' },
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.hitelecom.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Support', item: canonical },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': canonical + '#faq',
+      mainEntity: faq.map((x) => ({
+        '@type': 'Question',
+        name: x.q,
+        acceptedAnswer: { '@type': 'Answer', text: x.a },
+      })),
+    },
   ],
 };
-const pageBanner = await optimizedSrc('service/banner.jpg', { width: 1920, quality: 82 });
 ---
 
 <BaseLayout
-  preloadImage={pageBanner}
   locale="en"
-  title="IoT Support & Custom Development | Hitelecom"
-  description="Get technical support, custom hardware and software development, remote assistance, product documents and after-sales service for IoT deployments."
+  title={title}
+  description={description}
+  socialImage="/assets/support/tilt-device.webp"
+  preloadImage="/assets/support/tilt-device.webp"
 >
-  <ServiceShell>
-    <script slot="head" type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
-    <ServiceBody locale="en" page={1} />
-  </ServiceShell>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(graph).replace(/</g, '\\u003c')} />
+  <SupportContent />
 </BaseLayout>

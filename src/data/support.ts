@@ -1,0 +1,11 @@
+export const faq = [
+{q:'What should I include in a support request?',a:'Include the product model, device ID if available, installation country and a brief description of the issue. Relevant timestamps, configuration details and screenshots help us understand what happened. Do not send passwords or access keys.'},
+{q:'How do I find the correct product documentation?',a:'Search the resource centre by product or model. Check that the document matches your device and configuration. For a custom configuration or a document not listed here, contact Hitelecom with the product identification.'},
+{q:'Can you help with NFC activation and connectivity?',a:'We provide guidance on NFC activation for supported models, network configuration and data delivery. The steps depend on the device, its communication option and the deployment. Confirm the first received reading before completing commissioning.'},
+{q:'Can Hitelecom devices connect to our platform?',a:'API, MQTT and device data routes depend on the selected product and system. Share your platform requirements, data format and authentication method so the integration scope can be reviewed.'},
+{q:'How are repair or replacement requests handled?',a:'Contact Hitelecom with the product identification, purchase information and fault description. Applicable service options, costs and return arrangements are confirmed after review. Please obtain return instructions before shipping equipment.'},
+{q:'Can you customize hardware and software for our application?',a:'Hardware development can cover sensing, connectivity, power, interfaces and enclosures. Software development can cover firmware, dashboards, APIs, data models and platform integration. Share the application and requirements; technical feasibility, deliverables and development scope are agreed before work starts.'},
+{q:'Is on-site technical support available?',a:'On-site assistance can be discussed where remote support is insufficient. Availability, location, scope and commercial terms are agreed for the project.'}
+];
+export const title='IoT Technical Support & Customization | Hitelecom';
+export const description='Get IoT sensor selection, installation and troubleshooting support. Explore hardware and software customization, product documentation and after-sales service.';

@@ -1,0 +1,15 @@
+/* V6: installation scene and installed sensor, from the supplied field leaflet. */
+.field-support-evidence{margin:0}
+.field-support-grid{display:grid;grid-template-columns:1.45fr 1fr;overflow:hidden;border-radius:8px;background:#edf3f8}
+.field-support-scene{min-width:0;height:clamp(440px,43vw,650px)}
+.field-support-scene>img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 71%}
+.field-support-detail{display:flex;flex-direction:column;justify-content:center;gap:28px;padding:clamp(28px,3.2vw,56px)}
+.field-support-detail .eyebrow{margin:0;font-size:10px;letter-spacing:.16em;color:#3c627f}
+.field-support-detail>img{display:block;width:100%;max-width:424px;height:auto;align-self:center;border-radius:6px}
+.field-support-detail h3{margin:0 0 12px;font-size:clamp(25px,2.1vw,34px);font-weight:600;letter-spacing:-.035em;line-height:1.15;color:#122c43}
+.field-support-detail p:not(.eyebrow){margin:0;max-width:350px;font-size:15px;line-height:1.7;color:#5c7185}
+.field-support-evidence>figcaption{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:20px 0;border-bottom:1px solid #dce4ec;font-size:12px;line-height:1.6;color:#62758b}
+.field-support-evidence>figcaption a{display:flex;align-items:center;gap:18px;color:#285d97;white-space:nowrap}
+.field-photo-note{color:#758596}
+@media(max-width:800px){.field-support-grid{grid-template-columns:1.2fr 1fr}.field-support-scene{height:490px}.field-support-detail{padding:24px;gap:24px}.field-support-detail p:not(.eyebrow){font-size:14px}.field-photo-note{display:block}.field-support-evidence>figcaption{font-size:11px}}
+@media(max-width:540px){.field-support-grid{grid-template-columns:1fr}.field-support-scene{height:440px}.field-support-scene>img{object-position:50% 73%}.field-support-detail{display:grid;grid-template-columns:115px 1fr;gap:14px 20px;padding:24px}.field-support-detail .eyebrow{grid-column:1/-1;font-size:9px}.field-support-detail>img{width:115px}.field-support-detail h3{font-size:22px;margin-bottom:8px}.field-support-detail p:not(.eyebrow){font-size:12px;line-height:1.6}.field-support-evidence>figcaption{align-items:flex-start;font-size:10px;gap:15px}.field-support-evidence>figcaption a{white-space:normal;max-width:116px;gap:8px}.field-support-evidence>figcaption svg{flex:none;width:17px}}

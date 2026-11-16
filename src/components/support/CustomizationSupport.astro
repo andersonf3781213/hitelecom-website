@@ -1,0 +1,16 @@
+---
+const services = [
+ {id:'hardware-customization', number:'01', label:'HARDWARE / OEM & ODM', title:'Hardware customization', text:'Adapt the device to the measurement, operating environment and installation.', rows:[['Sensing','Measurement range, accuracy and probe options.'],['Connectivity & power','Radio options, power supply and reporting needs.'],['Interfaces & enclosure','Electrical interfaces, housing and mounting.']], cta:'Discuss hardware requirements',topic:'Hardware customization'},
+ {id:'software-customization', number:'02', label:'SOFTWARE / DATA & INTEGRATION', title:'Software customization', text:'Define the firmware, data and interface requirements around your workflow.', rows:[['Firmware','Device behaviour, configuration and data reporting.'],['Dashboards & data models','Views, field definitions, units and data structure.'],['APIs & platform integration','Data exchange, authentication and customer systems.']], cta:'Discuss software requirements',topic:'Software customization'}
+];
+---
+<section id="customization" class="section customization-support" aria-labelledby="customization-title"><div class="wrap">
+ <div class="section-heading"><div><p class="eyebrow">CUSTOMIZATION &amp; INTEGRATION</p><h2 id="customization-title">Your application.<br/><span>Your requirements.</span></h2></div><p class="lead">For requirements beyond standard products, discuss hardware and software together.</p></div>
+ <div class="customization-grid">{services.map(s => <article id={s.id}>
+  <div class="customization-topline"><p>{s.label}</p><span aria-hidden="true">{s.number}</span></div>
+  <h3>{s.title}</h3><p class="customization-intro">{s.text}</p>
+  <dl>{s.rows.map(([term,detail])=><div><dt>{term}</dt><dd>{detail}</dd></div>)}</dl>
+  <a href="#contact" class="text-link" data-support-topic={s.topic}>{s.cta}<svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.5"/></svg></a>
+ </article>)}</div>
+ <p class="customization-note"><span>FROM REQUIREMENT TO SCOPE</span> Custom development follows technical feasibility review and an agreed project scope.</p>
+</div></section>

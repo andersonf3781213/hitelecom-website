@@ -1,0 +1,16 @@
+---
+const channels = [
+ { id: 'remote-support', icon: 'remote', title: 'Remote support', text: 'Guidance on configuration, connectivity and troubleshooting. Share device details, readings and site photos to help us identify the next checks.', cta: 'Discuss remote support', topic: 'Remote support' },
+ { id: 'telephone-support', icon: 'phone', title: 'Telephone support', text: 'Talk through installation or troubleshooting questions by phone. Have the model and issue details ready for technical guidance and follow-up.', cta: 'Call our team', href: 'tel:+86-18616602589' },
+ { id: 'onsite-support', icon: 'site', title: 'On-site support', text: 'When remote assistance is insufficient, discuss a site visit. Location, scope, availability and costs are agreed for the project.', cta: 'Discuss a site visit', topic: 'On-site support' }
+];
+---
+<div class="support-channels" id="support-channels" aria-labelledby="channels-title">
+ <div class="channels-heading"><div><p class="eyebrow">WAYS WE SUPPORT YOU</p><h3 id="channels-title">The right support.<br/><span>For the task at hand.</span></h3></div><p>Choose how to discuss your installation,<br/>configuration or device issue.</p></div>
+ <div class="channels-grid">{channels.map(c => <article id={c.id}>
+  <div class="channel-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+   {c.icon === 'remote' ? <><rect x="4" y="5" width="24" height="17" rx="2"/><path d="M11 27h10M16 22v5M9 14h4l3-5 3 9 2-4h3"/></> : c.icon === 'phone' ? <path d="M10 4H6a2 2 0 0 0-2 2c0 12 10 22 22 22a2 2 0 0 0 2-2v-4l-7-3-3 3a22 22 0 0 1-8-8l3-3-3-7Z"/> : <><path d="M16 29s10-9 10-17a10 10 0 0 0-20 0c0 8 10 17 10 17Z"/><circle cx="16" cy="12" r="3.5"/></>}
+  </svg></div>
+  <h4>{c.title}</h4><p>{c.text}</p><a class="text-link" href={c.href || '#contact'} data-support-topic={c.topic}>{c.cta}<svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.5"/></svg></a>
+ </article>)}</div>
+</div>

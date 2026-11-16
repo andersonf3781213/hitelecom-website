@@ -77,6 +77,8 @@ RewriteRule ^ru/product/lists/cid/275\.html$ /ru/product/lists/cid/256 [R=301,L]
 RewriteRule ^ru/product/lists/cid/275$ /ru/product/lists/cid/256 [R=301,L]
 RewriteRule ^ru/product/lists/cid/274\.html$ /ru/product/lists/cid/256 [R=301,L]
 RewriteRule ^ru/product/lists/cid/274$ /ru/product/lists/cid/256 [R=301,L]
+RewriteRule ^service/page/2$ /service [R=301,L]
+RewriteRule ^service/page/2\.html$ /service [R=301,L]
 
 # === 1b. 无扩展名 URL → .html 文件（与 Cloudflare Pages 行为对齐） ===
 RewriteCond %{REQUEST_FILENAME} !-f

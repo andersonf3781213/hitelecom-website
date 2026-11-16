@@ -1,0 +1,30 @@
+---
+import '../../styles/support-v8.css';
+import SupportChannels from './SupportChannels.astro';
+const steps = [
+ {id:'sensor-selection',n:'01',label:'SELECTION',title:'Select for the site.',body:'Start with the measurement and operating conditions. Then match the sensor, mounting and connection.',checks:[['Measurement','Range, accuracy and required readings.'],['Site','Environment, fixing space and power.'],['Connection','Network coverage and data destination.']],cta:'Explore sensor families',href:'https://www.hitelecom.com/product/lists/cid/261'},
+ {id:'sensor-installation',n:'02',label:'INSTALLATION',title:'Install. Set. Verify.',body:'Confirm the mounting and measurement direction. Check configuration, initial readings and data delivery.',checks:[['Mount','Position, orientation and mechanical fixing.'],['Set','Device identity, network and reporting.'],['Verify','Reference reading and platform record.']],cta:'Device setup & software',href:'#page2'},
+ {id:'sensor-diagnostics',n:'03',label:'TROUBLESHOOTING',title:'Trace the issue.',body:'Separate the measurement, connection and platform checks. Use site evidence to focus the next step.',checks:[['Reading','Value, unit, timestamp and reference.'],['Device','Model, device ID and available status.'],['Context','Installation photos and recent changes.']],cta:'Discuss a technical issue',href:'#contact'}
+];
+const questions = [
+ {q:'No data on the platform?',a:'Check activation, power and network settings, then the destination and device identity. Share the model, device ID, last received timestamp and available connection status. Include gateway status where applicable.'},
+ {q:'A reading looks unexpected?',a:'Record the value, unit, time and operating conditions. Check the mounting and measurement direction. Share an installation photo and a suitable reference reading before changing the baseline or configuration.'},
+ {q:'Data arrives intermittently?',a:'Compare the gaps with the configured reporting schedule. Check whether one device or several are affected. Share time-stamped examples, available signal and power information, and gateway status where applicable.'}
+];
+---
+<section id="page1" class="section technical editorial-technical field-support"><div class="wrap">
+ <div class="section-heading"><div><p class="eyebrow">01 / TECHNICAL SUPPORT</p><h2>Selection, installation<br/>and troubleshooting.</h2></div><p class="lead">From choosing a sensor to understanding a reading. Practical support, grounded in your site.</p></div>
+ <nav class="field-stage-nav" aria-label="Technical support stages">{steps.map(s=><a href={'#'+s.id}><span>{s.n}</span>{s.label}<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 4v16m-6-6 6 6 6-6" stroke="currentColor" stroke-width="1.5"/></svg></a>)}</nav>
+ <div class="field-story" aria-label="Warehouse and chamber field photographs">
+  <figure class="field-image field-installers"><div class="field-image-window"><img src="/assets/support/field-installation-v6.webp" width="1048" height="1501" alt="Installation personnel working at a warehouse rack upright; retouched field photograph" loading="lazy" decoding="async"/><span class="field-image-label">WAREHOUSE / INSTALLATION</span></div><figcaption><span>01</span> Work at the monitoring point.</figcaption></figure>
+  <div class="field-details">
+   <figure class="field-image field-sensor"><div class="field-image-window"><img src="/assets/support/tilt-field-detail-v8.webp" width="1396" height="1127" alt="Close view of a black Hitelecom wireless tilt sensor at a blue warehouse rack; retouched field photograph" loading="lazy" decoding="async"/><span class="field-image-label">TILT SENSOR / DETAIL</span></div><figcaption><span>02</span> See the device in context.</figcaption></figure>
+   <figure class="field-image field-chamber"><div class="field-image-window"><img src="/assets/support/chamber-mount-v8.webp" width="1080" height="1920" alt="Sensor and bracket attached to the wall inside a chamber above the water" loading="lazy" decoding="async"/><span class="field-image-label">CHAMBER / MOUNTING</span></div><figcaption><span>03</span> Review the mounting.</figcaption></figure>
+  </div>
+  <figure class="field-image field-check"><div class="field-image-window"><img src="/assets/support/chamber-check-v8.webp" width="1094" height="2048" alt="Handheld device check beside an open chamber with a laptop at the site" loading="lazy" decoding="async"/><span class="field-image-label">FIELD / DEVICE CHECK</span></div><figcaption><span>04</span> Bring the site into the review.</figcaption></figure>
+ </div>
+ <div class="field-credit"><span>FIELD PHOTOGRAPHY</span><p>Warehouse photographs retouched. Chamber photographs supplied from site. Installation arrangements vary by project.</p></div>
+ <div class="field-workflow">{steps.map(s=><article id={s.id}><div class="field-step-title"><span>{s.n}</span><p>{s.label}</p></div><h3>{s.title}</h3><p class="field-step-body">{s.body}</p><dl>{s.checks.map(([term,detail])=><div><dt>{term}</dt><dd>{detail}</dd></div>)}</dl><a class="text-link" href={s.href}>{s.cta}<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.5"/></svg></a></article>)}</div>
+ <div class="field-diagnostics"><div class="field-diagnostics-title"><p class="eyebrow">WHEN SOMETHING CHANGES</p><h3>Start with<br/>the symptom.</h3><p>A clear record helps us<br/>identify the next checks.</p><a href="#contact">Talk to technical support <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M5 5h14v14" stroke="currentColor" stroke-width="1.5"/></svg></a></div><div class="field-diagnostics-list">{questions.map(q=><details><summary>{q.q}<span aria-hidden="true"></span></summary><p>{q.a}</p></details>)}<div class="field-evidence"><span>USEFUL TO SHARE</span><p>Model &amp; device ID · Installation photo · Time-stamped readings</p></div></div></div>
+<SupportChannels />
+</div></section>

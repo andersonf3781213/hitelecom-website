@@ -1,0 +1,8 @@
+/* V7: one full-width technical support scene. */
+.technical-photo{margin:0}
+.technical-photo>img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;border-radius:8px}
+.technical-photo>figcaption{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:20px 0;border-bottom:1px solid #dce4ec;font-size:12px;line-height:1.6;color:#62758b}
+.technical-photo>figcaption a{display:flex;align-items:center;gap:18px;color:#285d97;white-space:nowrap}
+.technical-photo-note{color:#758596}
+@media(max-width:800px){.technical-photo>figcaption{font-size:11px}}
+@media(max-width:540px){.technical-photo>img{aspect-ratio:4/3;object-position:25% center}.technical-photo>figcaption{align-items:flex-start;font-size:10px;gap:15px}.technical-photo-note{display:block}.technical-photo>figcaption a{white-space:normal;max-width:116px;gap:8px}.technical-photo>figcaption svg{flex:none;width:17px}}
